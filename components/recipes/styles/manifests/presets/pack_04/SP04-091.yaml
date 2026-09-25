@@ -3,7 +3,7 @@ id: SP04-091
 packId: pack_04
 name: Architecture Massing Model
 category: 4. Concept Art
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,65 +12,28 @@ tags:
   - illustration-and-graphic-novel
   - concept-art
 visualDna:
-  aesthetic: >-
-    Architecture Massing Model acts as a transferable illustration router: start from Handmade
-    architectural massing model study, Volumetric hierarchy, scale cues, handcrafted assembly traces
-    and production concept-art system built from iteration discipline, silhouette testing, material
-    exploration, design readability, and pitch-ready visual decisions, then apply the visual
-    behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Blocky volumetric planes with rough-cut contour fidelity;
-    preserve the requested subject while routing it through design exploration, asset logic, value
-    blocking, scale cues, iteration rows, paintover marks, or production-readability constraints,
-    keeping the requested identity, silhouette, pose, object function, or setting legible.
-  color_and_tone: >-
-    Build color with Neutral model-shop tones (foam white, chipboard gray, wood tan); use color as
-    concept decision-making: mood scripts, material swatches, faction accents, environment
-    atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping,
-    accent control, and process-specific limits rather than a generic palette wash.
-  lighting_and_shadow: >-
-    Handle light through Simple studio top/side light to emphasize shadow mass separation; shape
-    light for ideation clarity through value block-in, keyframe contrast, material test highlights,
-    callout illumination, or pitch-frame atmosphere, so value structure supports the illustration
-    process and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Visible foam core edges, wood grain hints, glue seam artifacts; surface detail should
-    reveal brush passes, photobash integration, low-poly facets, callout texture, massing blocks,
-    costume fabrics, foliage clusters, or weapon material tiers when named, keeping material scale
-    coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Scale-model compression with contextual block simplification;
-    compose through production hierarchy, variants, orthographic logic, isometric staging,
-    silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished
-    illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Workshop-iterative, practical, form-discovery focus, mood carried by Architecture
-    Massing Model craft, material pressure, and visual restraint; derive mood from exploration,
-    worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or
-    production-room clarity, letting the style alter interpretation without demanding a specific
-    story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Early-phase physical prototype realism with low-finish honesty; finish with
-    concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy
-    wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where
-    appropriate, and enough process evidence to make the style recognizable.
-  key_features: >-
-    Handmade architectural massing model study; Volumetric hierarchy, scale cues, handcrafted
-    assembly traces; Neutral model-shop tones (foam white, chipboard gray, wood tan); Visible foam
-    core edges, wood grain hints, glue seam artifacts; Scale-model compression with contextual block
-    simplification
-  creative_brief: >-
-    Apply Architecture Massing Model as an illustration preset over prompt X: preserve the user's
-    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
-    through Handmade architectural massing model study, Volumetric hierarchy, scale cues,
-    handcrafted assembly traces, Visible foam core edges, wood grain hints, glue seam artifacts
-    without requiring the card image's original subject.
+  aesthetic: 'Architectural massing model: the subject rebuilt as a handmade study model of white foam board, chipboard and basswood blocks on a flat base.'
+  subject_treatment: Keep the prompt subject, its layout and the requested view, and rebuild every volume as a simplified study model block without facades, furniture or interiors.
+  color_and_tone: Foam white, chipboard grey-brown and basswood tan, with one colored acrylic block marking the focal volume.
+  lighting_and_shadow: Soft window daylight or a single desk lamp raking across the model, crisp small shadows revealing the volumes.
+  texture_and_material: Visible cut foam edges, glue seams, pin heads, blade-scored window lines and tiny unpainted scale figures.
+  camera_and_composition: Keep the requested view, framed as a photograph of the model on its base with shallow depth of field.
+  atmosphere_and_mood: Thoughtful and tactile, ideas tested in cardboard.
+  rendering_and_quality: Real physical model look with no finished facades, no rendered materials and no dollhouse interior.
+  key_features: white foam and chipboard volumes; basswood blocks; glue seams and pin heads; one colored focal block; photographed on a base
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Architecture Massing Model as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - readable annotations
+  - readable text
+  - brand logo
+  - franchise likeness
+  - lone cloaked figure on a cliff edge
+  - dollhouse cutaway
+  - finished interior
+  - painted facades
   - detailed
   - rendered
   - textured
-  - realistic
-  - photo
   - final building
   - polished
   - interior
@@ -87,14 +50,16 @@ avoidRules:
   - overpolished final render
   - unclear design callouts
   - random kitbash clutter
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-091.webp
 attributes:
-  negativePrompt: >-
-    detailed, rendered, textured, realistic, photo, final building, polished, interior, furniture,
-    official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake
-    text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy
-    wallpaper, overpolished final render, unclear design callouts, random kitbash clutter
+  negativePrompt: readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, dollhouse cutaway, finished interior, painted facades, detailed, rendered, textured, final building, polished, interior, furniture, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

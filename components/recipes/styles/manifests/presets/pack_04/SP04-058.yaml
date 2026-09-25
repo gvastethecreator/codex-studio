@@ -3,7 +3,7 @@ id: SP04-058
 packId: pack_04
 name: Low Poly Concept
 category: 4. Concept Art
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,66 +12,25 @@ tags:
   - illustration-and-graphic-novel
   - concept-art
 visualDna:
-  aesthetic: >-
-    Low Poly Concept acts as a transferable illustration router: start from Early low-poly 3D
-    concept style defined by geometric economy, hardware-era constraints, and nostalgic polygonal
-    abstraction, Polygons, unfiltered textures, affine warping and production concept-art system
-    built from iteration discipline, silhouette testing, material exploration, design readability,
-    and pitch-ready visual decisions, then apply the visual behavior to prompt X instead of
-    recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Triangle-dominant faceting with minimal smoothing,
-    hard-edge silhouette readability, and UV-era shape simplification; preserve the requested
-    subject while routing it through design exploration, asset logic, value blocking, scale cues,
-    iteration rows, paintover marks, or production-readability constraints, keeping the requested
-    identity, silhouette, pose, object function, or setting legible.
-  color_and_tone: >-
-    Build color with Flat shading, vertex-colored, low-spec palette; use color as concept
-    decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset
-    tier contrast, or readable pass separation, with deliberate value grouping, accent control, and
-    process-specific limits rather than a generic palette wash.
-  lighting_and_shadow: >-
-    Handle light through Vertex light, gouraud shading, no real-time lighting; shape light for
-    ideation clarity through value block-in, keyframe contrast, material test highlights, callout
-    illumination, or pitch-frame atmosphere, so value structure supports the illustration process
-    and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Pixelated, production design clarity, iteration logic, silhouette readability, material
-    exploration, and concept-art decision pressure; surface detail should reveal brush passes,
-    photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics,
-    foliage clusters, or weapon material tiers when named, keeping material scale coherent and
-    avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Blocky, scale rhythm, edge hierarchy, spacing, and composition rules
-    specific to Low Poly Concept; compose through production hierarchy, variants, orthographic
-    logic, isometric staging, silhouette grids, iteration boards, or cinematic keyframe balance
-    without locking one finished illustration, with scale, spacing, edge rhythm, and visual
-    hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Nostalgic, simple, CD-ROM childhood, fifth-gen warmth; derive mood from
-    exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility,
-    cinematic intent, or production-room clarity, letting the style alter interpretation without
-    demanding a specific story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Retro first-gen 3D rendering fidelity emphasizing constrained geometry, affine-era
-    texture behavior, and deliberate technical limitation aesthetics; finish with concept-art
-    usefulness, readable decisions, controlled roughness, and no generic fantasy wallpaper or
-    overpolished final render when iteration is intended, clean denoised surfaces where appropriate,
-    and enough process evidence to make the style recognizable.
-  key_features: >-
-    Early low-poly 3D concept style defined by geometric economy, hardware-era constraints, and
-    nostalgic polygonal abstraction; Polygons, unfiltered textures, affine warping; Flat shading,
-    vertex-colored, low-spec palette; Pixelated, production design clarity, iteration logic,
-    silhouette readability, material exploration, and concept-art decision pressure; Blocky, scale
-    rhythm, edge hierarchy, spacing, and composition rules specific to Low Poly Concept
-  creative_brief: >-
-    Apply Low Poly Concept as an illustration preset over prompt X: preserve the user's requested
-    subject, then route mark-making, palette, surface, composition, mood, and final craft through
-    Early low-poly 3D concept style defined by geometric economy, hardware-era constraints, and
-    nostalgic polygonal abstraction, Polygons, unfiltered textures, affine warping, Pixelated,
-    production design clarity, iteration logic, silhouette readability, material exploration, and
-    concept-art decision pressure without requiring the card image's original subject.
+  aesthetic: 'Low-poly blockout concept: the scene modeled as coarse proxy geometry of a few hundred flat-shaded facets, then painted over with quick light, fog and color notes.'
+  subject_treatment: Keep the prompt subject, action, setting and camera, and repaint them with this concept-art method; the method sets marks, values and finish but never adds a sheet, grid or panel layout.
+  color_and_tone: Muted clay-grey or single-tint geometry with loose painted color zones laid over it and one saturated light color.
+  lighting_and_shadow: Real-time sun and flat facet shading from the blockout, plus hand-painted glows, fog gradients and light shafts on top.
+  texture_and_material: Untextured facets with visible polygon edges, and brush strokes crossing facet boundaries wherever the paintover sits.
+  camera_and_composition: Keep the requested view; a slightly wide game-camera perspective keeps the massing readable.
+  atmosphere_and_mood: Early and promising, a space that already feels playable in grey boxes.
+  rendering_and_quality: Hybrid finish, crisp facet geometry underneath and loose paint marks on top; not a polished low-poly art render.
+  key_features: coarse flat-shaded proxy geometry; clay-grey facets; painted glow and fog over the mesh; strokes crossing facet edges; game-camera view
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Low Poly Concept as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - readable annotations
+  - readable text
+  - brand logo
+  - franchise likeness
+  - lone cloaked figure on a cliff edge
+  - polished low-poly art render
+  - voxel cubes
+  - papercraft
   - smooth
   - high res
   - official card scene
@@ -86,13 +45,16 @@ avoidRules:
   - overpolished final render
   - unclear design callouts
   - random kitbash clutter
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-058.webp
 attributes:
-  negativePrompt: >-
-    smooth, high res, official card scene, fixed thumbnail subject, prompt replaced by sample image,
-    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic
-    fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter
+  negativePrompt: readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, polished low-poly art render, voxel cubes, papercraft, smooth, high res, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

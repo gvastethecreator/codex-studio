@@ -3,7 +3,7 @@ id: SP04-088
 packId: pack_04
 name: Rough Environment Pass
 category: 4. Concept Art
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,65 +12,24 @@ tags:
   - illustration-and-graphic-novel
   - concept-art
 visualDna:
-  aesthetic: >-
-    Rough Environment Pass acts as a transferable illustration router: start from Rough environment
-    blockout with macro-shape worldbuilding focus and painterly pre-production scale, Big-shape
-    hierarchy, focal light anchor, layered recession planes, small-read composition study legibility
-    and production concept-art system built from iteration discipline, silhouette testing, material
-    exploration, design readability, and pitch-ready visual decisions, then apply the visual
-    behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Broad brush masses, low-detail edge control, minimal
-    explicit linework; preserve the requested subject while routing it through design exploration,
-    asset logic, value blocking, scale cues, iteration rows, paintover marks, or
-    production-readability constraints, keeping the requested identity, silhouette, pose, object
-    function, or setting legible.
-  color_and_tone: >-
-    Build color with Depth-driven warm/cool separation with fog-desaturated distance bands; use
-    color as concept decision-making: mood scripts, material swatches, faction accents, environment
-    atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping,
-    accent control, and process-specific limits rather than a generic palette wash.
-  lighting_and_shadow: >-
-    Handle light through Single clear key direction with volumetric atmosphere indication; shape
-    light for ideation clarity through value block-in, keyframe contrast, material test highlights,
-    callout illumination, or pitch-frame atmosphere, so value structure supports the illustration
-    process and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Painterly large-stroke texture and soft haze transitions; surface detail should reveal
-    brush passes, photobash integration, low-poly facets, callout texture, massing blocks, costume
-    fabrics, foliage clusters, or weapon material tiers when named, keeping material scale coherent
-    and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through near field exaggeration and atmospheric compression for depth
-    readability; compose through production hierarchy, variants, orthographic logic, isometric
-    staging, silhouette grids, iteration boards, or cinematic keyframe balance without locking one
-    finished illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style
-    work.
-  atmosphere_and_mood: >-
-    Keep the mood Expansive, exploratory, pre-production wonder, mood carried by Rough Environment
-    Pass craft, material pressure, and visual restraint; derive mood from exploration, worldbuilding
-    pressure, tactical design, creature unease, kitbash utility, cinematic intent, or
-    production-room clarity, letting the style alter interpretation without demanding a specific
-    story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Early environment pass prioritizing composition, scale, and mood; finish with
-    concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy
-    wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where
-    appropriate, and enough process evidence to make the style recognizable.
-  key_features: >-
-    Rough environment blockout with macro-shape worldbuilding focus and painterly pre-production
-    scale; Big-shape hierarchy, focal light anchor, layered recession planes, small-read composition
-    study legibility; Depth-driven warm/cool separation with fog-desaturated distance bands;
-    Painterly large-stroke texture and soft haze transitions; near field exaggeration and
-    atmospheric compression for depth readability
-  creative_brief: >-
-    Apply Rough Environment Pass as an illustration preset over prompt X: preserve the user's
-    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
-    through Rough environment blockout with macro-shape worldbuilding focus and painterly
-    pre-production scale, Big-shape hierarchy, focal light anchor, layered recession planes,
-    small-read composition study legibility, Painterly large-stroke texture and soft haze
-    transitions without requiring the card image's original subject.
+  aesthetic: 'Rough environment pass: the location blocked in with three to five flat lasso-cut value planes stacked in depth, one focal light and almost no texture.'
+  subject_treatment: Keep the prompt subject, action, setting and camera, and repaint them with this concept-art method; the method sets marks, values and finish but never adds a sheet, grid or panel layout.
+  color_and_tone: Near-monochrome planes stepping from dark foreground to pale background, one tint per plane and a single bright focal light.
+  lighting_and_shadow: One large light source such as a sky gap, sun shaft or glow defines the focal point, planes silhouetted against it.
+  texture_and_material: Hard lasso edges and gradient fills, a touch of textured brush at plane edges, no surface detail.
+  camera_and_composition: Keep the requested view; big-shape hierarchy with a dark foreground framing mass and strong recession.
+  atmosphere_and_mood: Monumental and quiet, scale decided before detail.
+  rendering_and_quality: Early blockout finish, shapes readable at thumbnail size and nothing resolved; distinct from brush-led speedpainting.
+  key_features: three to five flat value planes; lasso-cut edges; gradient fills; single focal light; no surface detail
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rough Environment Pass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - readable annotations
+  - readable text
+  - brand logo
+  - franchise likeness
+  - lone cloaked figure on a cliff edge
+  - visible brush strokes everywhere
+  - fine surface texture
   - detailed
   - finished
   - character-focused
@@ -91,14 +50,16 @@ avoidRules:
   - overpolished final render
   - unclear design callouts
   - random kitbash clutter
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-088.webp
 attributes:
-  negativePrompt: >-
-    detailed, finished, character-focused, close-up, tight brushwork, polished, small scale,
-    intimate, official card scene, fixed thumbnail subject, prompt replaced by sample image,
-    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic
-    fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter
+  negativePrompt: readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, visible brush strokes everywhere, fine surface texture, detailed, finished, character-focused, close-up, tight brushwork, polished, small scale, intimate, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

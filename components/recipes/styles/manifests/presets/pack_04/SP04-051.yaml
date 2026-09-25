@@ -3,7 +3,7 @@ id: SP04-051
 packId: pack_04
 name: Creature Design
 category: 4. Concept Art
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,68 +12,24 @@ tags:
   - illustration-and-graphic-novel
   - concept-art
 visualDna:
-  aesthetic: >-
-    organism designs Design acts as a transferable illustration router: start from organism
-    designs-concept development style driven by ecological plausibility, adaptive morphology, and
-    silhouette threat readability, Silhouette, anatomical breakdown, adaptive feature and production
-    concept-art system built from iteration discipline, silhouette testing, material exploration,
-    design readability, and pitch-ready visual decisions, then apply the visual behavior to prompt X
-    instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Anatomical construction logic with biomechanical cue
-    layering, functional limb articulation, and predator-profile contour control; preserve the
-    requested subject while routing it through design exploration, asset logic, value blocking,
-    scale cues, iteration rows, paintover marks, or production-readability constraints, keeping the
-    requested identity, silhouette, pose, object function, or setting legible.
-  color_and_tone: >-
-    Build color with Skin tones, organic chromatics, organism designs-flesh spectrum; use color as
-    concept decision-making: mood scripts, material swatches, faction accents, environment
-    atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping,
-    accent control, and process-specific limits rather than a generic palette wash.
-  lighting_and_shadow: >-
-    Handle light through Rim light, silhouette reveal, ambient dread; shape light for ideation
-    clarity through value block-in, keyframe contrast, material test highlights, callout
-    illumination, or pitch-frame atmosphere, so value structure supports the illustration process
-    and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Scales, fur, production design clarity, iteration logic, silhouette readability, material
-    exploration, and concept-art decision pressure; surface detail should reveal brush passes,
-    photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics,
-    foliage clusters, or weapon material tiers when named, keeping material scale coherent and
-    avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Speculative anatomy distortions guided by functional adaptation, not
-    random mutation, with balanced asymmetry control; compose through production hierarchy,
-    variants, orthographic logic, isometric staging, silhouette grids, iteration boards, or
-    cinematic keyframe balance without locking one finished illustration, with scale, spacing, edge
-    rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Dangerous, alive, predatory stillness, ecological tension; derive mood from
-    exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility,
-    cinematic intent, or production-room clarity, letting the style alter interpretation without
-    demanding a specific story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Scary, biological, anatomical conviction, apex-predator presence; finish with
-    concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy
-    wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where
-    appropriate, and enough process evidence to make the style recognizable.
-  key_features: >-
-    organism designs-concept development style driven by ecological plausibility, adaptive
-    morphology, and silhouette threat readability; Silhouette, anatomical breakdown, adaptive
-    feature; Skin tones, organic chromatics, organism designs-flesh spectrum; Scales, fur,
-    production design clarity, iteration logic, silhouette readability, material exploration, and
-    concept-art decision pressure; Speculative anatomy distortions guided by functional adaptation,
-    not random mutation, with balanced asymmetry control
-  creative_brief: >-
-    Apply organism designs Design as an illustration preset over prompt X: preserve the user's
-    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
-    through organism designs-concept development style driven by ecological plausibility, adaptive
-    morphology, and silhouette threat readability, Silhouette, anatomical breakdown, adaptive
-    feature, Scales, fur, production design clarity, iteration logic, silhouette readability,
-    material exploration, and concept-art decision pressure without requiring the card image's
-    original subject.
+  aesthetic: 'Creature design study: one painted creature in a readable hero pose, surrounded by anatomical inset studies of skull, limb mechanics and skin.'
+  subject_treatment: 'Keep the prompt subject and its identity as the thing being designed; this deliverable owns a creature study sheet: one painted hero pose with graphite anatomy insets and a small human silhouette for scale, and that layout replaces the requested framing.'
+  color_and_tone: Natural biological palette with camouflage logic, warning colors only where they would evolve, on a warm parchment-grey sheet.
+  lighting_and_shadow: Soft overhead key with a thin rim light that separates the silhouette from the sheet ground.
+  texture_and_material: Painted skin, scales, keratin and wet membranes at believable scale; inset studies in graphite line with light washes.
+  camera_and_composition: Hero creature in three-quarter view filling two thirds of the sheet, insets arranged in the remaining third, a small human silhouette for scale.
+  atmosphere_and_mood: Plausible and unsettling, an animal that could have evolved somewhere.
+  rendering_and_quality: Hero painted near finish, insets deliberately looser, callout lines that carry no words.
+  key_features: one painted hero pose; graphite anatomy insets; skull and limb studies; human scale silhouette; evolved camouflage palette
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Creature Design as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
-  - human
+  - readable annotations
+  - readable text
+  - brand logo
+  - franchise likeness
+  - lone cloaked figure on a cliff edge
+  - several unrelated creatures
+  - cartoon mascot proportions
   - cute
   - official card scene
   - fixed thumbnail subject
@@ -87,13 +43,16 @@ avoidRules:
   - overpolished final render
   - unclear design callouts
   - random kitbash clutter
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-051.webp
 attributes:
-  negativePrompt: >-
-    human, cute, official card scene, fixed thumbnail subject, prompt replaced by sample image,
-    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic
-    fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter
+  negativePrompt: readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, several unrelated creatures, cartoon mascot proportions, cute, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

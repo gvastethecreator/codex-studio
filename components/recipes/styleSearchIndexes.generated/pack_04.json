@@ -877,7 +877,8 @@
     },
     {
       "id": "SP04-046",
-      "name": "Speedpaint",
+      "name": "Value-Block Speedpaint",
+      "styleAnchors": ["Value-Block Speedpaint", "Speedpaint"],
       "ref": "pack_04/SP04-046.yaml",
       "packId": "pack_04",
       "packName": "Illustration & Graphic Novel",
@@ -885,7 +886,7 @@
       "categoryName": "4. Concept Art",
       "tags": ["illustration-and-graphic-novel", "concept-art"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp04-046 speedpaint 4. concept art concept development pack_04 illustration & graphic novel concept-art illustration-and-graphic-novel concept-art"
+      "searchableText": "sp04-046 value-block speedpaint speedpaint 4. concept art concept development pack_04 illustration & graphic novel concept-art illustration-and-graphic-novel concept-art"
     },
     {
       "id": "SP04-047",

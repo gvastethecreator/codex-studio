@@ -3,7 +3,7 @@ id: SP04-052
 packId: pack_04
 name: Isometric Game Art
 category: 4. Concept Art
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,70 +12,27 @@ tags:
   - illustration-and-graphic-novel
   - concept-art
 visualDna:
-  aesthetic: >-
-    Isometric Game Art acts as a transferable illustration router: start from Isometric systems-art
-    style with modular worldbuilding clarity, playful simulation readability, and toy-scale urban
-    abstraction, Isometric angle discipline, modular tile-grid composition, systems readability
-    hierarchy, toy-scale abstraction and production concept-art system built from iteration
-    discipline, silhouette testing, material exploration, design readability, and pitch-ready visual
-    decisions, then apply the visual behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Clean vector-pixel hybrid contours, grid-disciplined shape
-    language, and module-first construction logic; preserve the requested subject while routing it
-    through design exploration, asset logic, value blocking, scale cues, iteration rows, paintover
-    marks, or production-readability constraints, keeping the requested identity, silhouette, pose,
-    object function, or setting legible.
-  color_and_tone: >-
-    Build color with Bright ordered saturation with zone-based hue grouping, clear functional
-    contrast, and tile-friendly color separation; use color as concept decision-making: mood
-    scripts, material swatches, faction accents, environment atmosphere, asset tier contrast, or
-    readable pass separation, with deliberate value grouping, accent control, and process-specific
-    limits rather than a generic palette wash.
-  lighting_and_shadow: >-
-    Handle light through Consistent directional isometric lighting with uniform shadow logic and
-    readability-first highlight placement; shape light for ideation clarity through value block-in,
-    keyframe contrast, material test highlights, callout illumination, or pitch-frame atmosphere, so
-    value structure supports the illustration process and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Tile-ready clean surfaces with subtle pattern repetition cues and low-noise asset
-    cohesion; surface detail should reveal brush passes, photobash integration, low-poly facets,
-    callout texture, massing blocks, costume fabrics, foliage clusters, or weapon material tiers
-    when named, keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Isometric orthographic logic with fixed-angle depth mapping and no
-    perspective convergence; compose through production hierarchy, variants, orthographic logic,
-    isometric staging, silhouette grids, iteration boards, or cinematic keyframe balance without
-    locking one finished illustration, with scale, spacing, edge rhythm, and visual hierarchy doing
-    the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Ordered, playful, clean, constructive, serene; derive mood from exploration,
-    worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or
-    production-room clarity, letting the style alter interpretation without demanding a specific
-    story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Production-grade simulation asset finish emphasizing legibility at scale, modular
-    coherence, and system clarity; finish with concept-art usefulness, readable decisions,
-    controlled roughness, and no generic fantasy wallpaper or overpolished final render when
-    iteration is intended, clean denoised surfaces where appropriate, and enough process evidence to
-    make the style recognizable.
-  key_features: >-
-    Isometric systems-art style with modular worldbuilding clarity, playful simulation readability,
-    and toy-scale urban abstraction; Isometric angle discipline, modular tile-grid composition,
-    systems readability hierarchy, toy-scale abstraction; Bright ordered saturation with zone-based
-    hue grouping, clear functional contrast, and tile-friendly color separation; Tile-ready clean
-    surfaces with subtle pattern repetition cues and low-noise asset cohesion; Isometric
-    orthographic logic with fixed-angle depth mapping and no perspective convergence
-  creative_brief: >-
-    Apply Isometric Game Art as an illustration preset over prompt X: preserve the user's requested
-    subject, then route mark-making, palette, surface, composition, mood, and final craft through
-    Isometric systems-art style with modular worldbuilding clarity, playful simulation readability,
-    and toy-scale urban abstraction, Isometric angle discipline, modular tile-grid composition,
-    systems readability hierarchy, toy-scale abstraction, Tile-ready clean surfaces with subtle
-    pattern repetition cues and low-noise asset cohesion without requiring the card image's original
-    subject.
+  aesthetic: 'Hand-painted 2D isometric game art: the scene assembled from modular diamond tiles with painted top faces and darker side faces, like a builder game map.'
+  subject_treatment: Keep the prompt subject and its identity as the thing being designed; this deliverable owns a 2:1 dimetric tile view in which the subject sits on an exposed chunk of ground tiles, and that layout replaces the requested framing.
+  color_and_tone: Saturated game palette where each terrain type owns one hue family and every side face steps darker by a fixed value.
+  lighting_and_shadow: Fixed top-left light on every asset, with soft painted ambient occlusion where tiles and buildings meet.
+  texture_and_material: Soft painted brush texture inside crisp tile edges, repeating modular pieces with small hand-painted variations.
+  camera_and_composition: Parallel 2:1 dimetric projection without perspective, the scene resting on a floating chunk of tiles with visible soil sides.
+  atmosphere_and_mood: Cozy, orderly and systemic, a small world you want to manage.
+  rendering_and_quality: Crisp tile silhouettes and painted surfaces, no 3D render sheen, no interface elements.
+  key_features: 2:1 diamond tile grid; painted top faces with darker sides; fixed top-left light; floating ground chunk; modular repeated assets
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Isometric Game Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - readable annotations
+  - readable text
+  - brand logo
+  - franchise likeness
+  - lone cloaked figure on a cliff edge
+  - 3d render sheen
+  - HUD icons
+  - interface panels
+  - known game assets
   - perspective
-  - flat
   - official card scene
   - fixed thumbnail subject
   - prompt replaced by sample image
@@ -88,14 +45,16 @@ avoidRules:
   - overpolished final render
   - unclear design callouts
   - random kitbash clutter
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-052.webp
 attributes:
-  negativePrompt: >-
-    perspective, flat, official card scene, fixed thumbnail subject, prompt replaced by sample
-    image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop,
-    generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash
-    clutter
+  negativePrompt: readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, 3d render sheen, HUD icons, interface panels, known game assets, perspective, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

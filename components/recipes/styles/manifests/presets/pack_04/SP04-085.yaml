@@ -3,7 +3,7 @@ id: SP04-085
 packId: pack_04
 name: Mood Color Script Pass
 category: 4. Concept Art
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,63 +12,24 @@ tags:
   - illustration-and-graphic-novel
   - concept-art
 visualDna:
-  aesthetic: >-
-    Mood Color Script Pass acts as a transferable illustration router: start from Color-script
-    environmental painting driven by temporal light progression, Multi-frame mood continuity,
-    temperature mapping, depth via fog stratification and production concept-art system built from
-    iteration discipline, silhouette testing, material exploration, design readability, and
-    pitch-ready visual decisions, then apply the visual behavior to prompt X instead of recreating a
-    fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Soft mass blocking with low line dependency and edge
-    hierarchy by depth; preserve the requested subject while routing it through design exploration,
-    asset logic, value blocking, scale cues, iteration rows, paintover marks, or
-    production-readability constraints, keeping the requested identity, silhouette, pose, object
-    function, or setting legible.
-  color_and_tone: >-
-    Build color with Sequenced temperature arcs from cool dawn to warm noon to nocturnal
-    desaturation; use color as concept decision-making: mood scripts, material swatches, faction
-    accents, environment atmosphere, asset tier contrast, or readable pass separation, with
-    deliberate value grouping, accent control, and process-specific limits rather than a generic
-    palette wash.
-  lighting_and_shadow: >-
-    Handle light through Volumetric scattering, shadow temperature contrast, time-of-day key shifts;
-    shape light for ideation clarity through value block-in, keyframe contrast, material test
-    highlights, callout illumination, or pitch-frame atmosphere, so value structure supports the
-    illustration process and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Haze layers, particulate glow, diffuse cloud/fog transitions; surface detail should
-    reveal brush passes, photobash integration, low-poly facets, callout texture, massing blocks,
-    costume fabrics, foliage clusters, or weapon material tiers when named, keeping material scale
-    coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Space defined through color recession and layered atmospheric
-    perspective; compose through production hierarchy, variants, orthographic logic, isometric
-    staging, silhouette grids, iteration boards, or cinematic keyframe balance without locking one
-    finished illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style
-    work.
-  atmosphere_and_mood: >-
-    Keep the mood Cinematic, emotive, transitional, light-led storytelling; derive mood from
-    exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility,
-    cinematic intent, or production-room clarity, letting the style alter interpretation without
-    demanding a specific story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Atmospheric study pass prioritizing mood continuity over detail finish; finish with
-    concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy
-    wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where
-    appropriate, and enough process evidence to make the style recognizable.
-  key_features: >-
-    Color-script environmental painting driven by temporal light progression; Multi-frame mood
-    continuity, temperature mapping, depth via fog stratification; Sequenced temperature arcs from
-    cool dawn to warm noon to nocturnal desaturation; Haze layers, particulate glow, diffuse
-    cloud/fog transitions; Space defined through color recession and layered atmospheric perspective
-  creative_brief: >-
-    Apply Mood Color Script Pass as an illustration preset over prompt X: preserve the user's
-    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
-    through Color-script environmental painting driven by temporal light progression, Multi-frame
-    mood continuity, temperature mapping, depth via fog stratification, Haze layers, particulate
-    glow, diffuse cloud/fog transitions without requiring the card image's original subject.
+  aesthetic: 'Color script: a sequence of eight to twelve small, loosely painted frames tracing how color and light change through a story.'
+  subject_treatment: Keep the prompt subject and its identity as the thing being designed; this deliverable owns a strip of small frames in story order through which the subject travels, and that layout replaces the requested framing.
+  color_and_tone: Each frame dominated by one or two flat hues, the palette shifting beat by beat from calm cool to tense warm to climax red to pale aftermath.
+  lighting_and_shadow: Light reduced to one key shape per frame, with color temperature doing the storytelling.
+  texture_and_material: Flat opaque gouache-like digital shapes with visible brush edges and no surface detail.
+  camera_and_composition: Frames of equal size in two or three rows with thin dark gutters, same aspect ratio, story reading left to right.
+  atmosphere_and_mood: An emotional arc readable at a single glance.
+  rendering_and_quality: Tiny simplified frames, figures reduced to specks and shapes, no linework.
+  key_features: eight to twelve small frames; one or two hues per frame; beat-by-beat palette shift; dark gutters; gouache-like flat shapes
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mood Color Script Pass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - readable annotations
+  - readable text
+  - brand logo
+  - franchise likeness
+  - lone cloaked figure on a cliff edge
+  - single large painting
+  - detailed figures
   - detailed linework
   - finished rendering
   - sharp focus
@@ -87,14 +48,16 @@ avoidRules:
   - overpolished final render
   - unclear design callouts
   - random kitbash clutter
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-085.webp
 attributes:
-  negativePrompt: >-
-    detailed linework, finished rendering, sharp focus, character close-up, subject-dominant, tight
-    composition, official card scene, fixed thumbnail subject, prompt replaced by sample image,
-    readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic
-    fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter
+  negativePrompt: readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, single large painting, detailed figures, detailed linework, finished rendering, sharp focus, character close-up, subject-dominant, tight composition, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

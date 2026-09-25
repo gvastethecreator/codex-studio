@@ -3,7 +3,7 @@ id: SP04-098
 packId: pack_04
 name: World Map Concept
 category: 4. Concept Art
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,71 +12,24 @@ tags:
   - illustration-and-graphic-novel
   - concept-art
 visualDna:
-  aesthetic: >-
-    World Map Concept acts as a transferable illustration router: start from Mythic hand-drafted
-    cartographic illustration with ornamental navigation grammar and editorial worldbuilding
-    clarity, Compass geometry motifs, rhumb-line rhythm, cartouche typography framing, etched
-    terrain icon system, weathered paper patina and production concept-art system built from
-    iteration discipline, silhouette testing, material exploration, design readability, and
-    pitch-ready visual decisions, then apply the visual behavior to prompt X instead of recreating a
-    fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Calligraphic contour hierarchy, iconographic terrain
-    symbols, radial navigation geometry, decorative border cadence; preserve the requested subject
-    while routing it through design exploration, asset logic, value blocking, scale cues, iteration
-    rows, paintover marks, or production-readability constraints, keeping the requested identity,
-    silhouette, pose, object function, or setting legible.
-  color_and_tone: >-
-    Build color with Aged parchment neutrals, iron-gall sepia ink, oxidized teal accents, muted
-    mineral greens, restrained vermillion highlights; use color as concept decision-making: mood
-    scripts, material swatches, faction accents, environment atmosphere, asset tier contrast, or
-    readable pass separation, with deliberate value grouping, accent control, and process-specific
-    limits rather than a generic palette wash.
-  lighting_and_shadow: >-
-    Handle light through Uniform document-style illumination, low-specular paper response, subtle
-    edge-vignette to emphasize plate readability; shape light for ideation clarity through value
-    block-in, keyframe contrast, material test highlights, callout illumination, or pitch-frame
-    atmosphere, so value structure supports the illustration process and does not overwrite the
-    requested content.
-  texture_and_material: >-
-    Render Fibrous vellum grain, dry-ink bleed, pressure-variant line deposition, fold-memory wear,
-    wax-like residue details; surface detail should reveal brush passes, photobash integration,
-    low-poly facets, callout texture, massing blocks, costume fabrics, foliage clusters, or weapon
-    material tiers when named, keeping material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Orthographic map-plane logic with symbolic scale compression and
-    layered annotation depth; compose through production hierarchy, variants, orthographic logic,
-    isometric staging, silhouette grids, iteration boards, or cinematic keyframe balance without
-    locking one finished illustration, with scale, spacing, edge rhythm, and visual hierarchy doing
-    the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Scholarly, arcane, exploratory, archival, crafted for interpretive reading rather
-    than literal realism; derive mood from exploration, worldbuilding pressure, tactical design,
-    creature unease, kitbash utility, cinematic intent, or production-room clarity, letting the
-    style alter interpretation without demanding a specific story, location, or actor.
-  rendering_and_quality: >-
-    Finish with High-fidelity illustrated atlas plate finish with controlled print-era imperfections
-    and deliberate artisan irregularity; finish with concept-art usefulness, readable decisions,
-    controlled roughness, and no generic fantasy wallpaper or overpolished final render when
-    iteration is intended, clean denoised surfaces where appropriate, and enough process evidence to
-    make the style recognizable.
-  key_features: >-
-    Mythic hand-drafted cartographic illustration with ornamental navigation grammar and editorial
-    worldbuilding clarity; Compass geometry motifs, rhumb-line rhythm, cartouche typography framing,
-    etched terrain icon system, weathered paper patina; Aged parchment neutrals, iron-gall sepia
-    ink, oxidized teal accents, muted mineral greens, restrained vermillion highlights; Fibrous
-    vellum grain, dry-ink bleed, pressure-variant line deposition, fold-memory wear, wax-like
-    residue details; Orthographic map-plane logic with symbolic scale compression and layered
-    annotation depth
-  creative_brief: >-
-    Apply World Map Concept as an illustration preset over prompt X: preserve the user's requested
-    subject, then route mark-making, palette, surface, composition, mood, and final craft through
-    Mythic hand-drafted cartographic illustration with ornamental navigation grammar and editorial
-    worldbuilding clarity, Compass geometry motifs, rhumb-line rhythm, cartouche typography framing,
-    etched terrain icon system, weathered paper patina, Fibrous vellum grain, dry-ink bleed,
-    pressure-variant line deposition, fold-memory wear, wax-like residue details without requiring
-    the card image's original subject.
+  aesthetic: 'Fantasy world map concept: a hand-drawn ink and watercolor map on aged paper with pictorial mountains, forests and hatched coastlines.'
+  subject_treatment: Keep the prompt subject and its identity as the thing being designed; this deliverable owns a top-down hand-drawn map of the region or realm the subject implies, and that layout replaces the requested framing.
+  color_and_tone: 'Sepia ink and muted watercolor washes on tea-stained paper: sage lowlands, ochre highlands, grey-blue sea.'
+  lighting_and_shadow: No cast light; relief shown with side-lit pictorial mountain symbols and hachures.
+  texture_and_material: Dip-pen lines, hachures, stippled coastlines, paper creases and foxing spots.
+  camera_and_composition: Top-down map with a compass rose and an empty decorative cartouche, landmasses filling the sheet.
+  atmosphere_and_mood: Inviting to adventure, a realm waiting to be explored.
+  rendering_and_quality: Hand-crafted finish; place names replaced by blank space or illegible scribble.
+  key_features: dip-pen and watercolor; pictorial mountains and forests; hatched coastlines; compass rose; blank cartouche
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies World Map Concept as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - readable annotations
+  - readable text
+  - brand logo
+  - franchise likeness
+  - lone cloaked figure on a cliff edge
+  - readable place names
+  - satellite imagery
   - accurate
   - satellite
   - photo
@@ -100,14 +53,16 @@ avoidRules:
   - overpolished final render
   - unclear design callouts
   - random kitbash clutter
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-098.webp
 attributes:
-  negativePrompt: >-
-    accurate, satellite, photo, modern map, GPS, clean, clinical, boring, flat, atlas, political
-    borders, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable
-    fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy
-    wallpaper, overpolished final render, unclear design callouts, random kitbash clutter
+  negativePrompt: readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, readable place names, satellite imagery, accurate, satellite, photo, modern map, GPS, clean, clinical, boring, flat, atlas, political borders, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

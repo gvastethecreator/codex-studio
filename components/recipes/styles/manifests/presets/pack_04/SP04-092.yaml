@@ -3,7 +3,7 @@ id: SP04-092
 packId: pack_04
 name: Costume Design Exploration Board
 category: 4. Concept Art
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,62 +12,24 @@ tags:
   - illustration-and-graphic-novel
   - concept-art
 visualDna:
-  aesthetic: >-
-    Costume Design Exploration Board acts as a transferable illustration router: start from Costume
-    exploration board combining silhouette, fabric, and colorway studies, Silhouette matrices,
-    swatch clusters, trim notes, color strip comparisons and production concept-art system built
-    from iteration discipline, silhouette testing, material exploration, design readability, and
-    pitch-ready visual decisions, then apply the visual behavior to prompt X instead of recreating a
-    fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Clean croquis-based variants with annotation leaders and
-    modular panel layout; preserve the requested subject while routing it through design
-    exploration, asset logic, value blocking, scale cues, iteration rows, paintover marks, or
-    production-readability constraints, keeping the requested identity, silhouette, pose, object
-    function, or setting legible.
-  color_and_tone: >-
-    Build color with Multi-fabric palette families organized by role, era, and accent logic; use
-    color as concept decision-making: mood scripts, material swatches, faction accents, environment
-    atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping,
-    accent control, and process-specific limits rather than a generic palette wash.
-  lighting_and_shadow: >-
-    Handle light through Neutral comparison lighting with controlled sheen read on textiles; shape
-    light for ideation clarity through value block-in, keyframe contrast, material test highlights,
-    callout illumination, or pitch-frame atmosphere, so value structure supports the illustration
-    process and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Swatch-forward surface representation (weave, nap, grain, luster); surface detail should
-    reveal brush passes, photobash integration, low-poly facets, callout texture, massing blocks,
-    costume fabrics, foliage clusters, or weapon material tiers when named, keeping material scale
-    coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Grid/pinboard organization for side-by-side option evaluation;
-    compose through production hierarchy, variants, orthographic logic, isometric staging,
-    silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished
-    illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Iterative studio workflow, design-review readiness; derive mood from exploration,
-    worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or
-    production-room clarity, letting the style alter interpretation without demanding a specific
-    story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Concept-development board clarity over final-fashion polish; finish with concept-art
-    usefulness, readable decisions, controlled roughness, and no generic fantasy wallpaper or
-    overpolished final render when iteration is intended, clean denoised surfaces where appropriate,
-    and enough process evidence to make the style recognizable.
-  key_features: >-
-    Costume exploration board combining silhouette, fabric, and colorway studies; Silhouette
-    matrices, swatch clusters, trim notes, color strip comparisons; Multi-fabric palette families
-    organized by role, era, and accent logic; Swatch-forward surface representation (weave, nap,
-    grain, luster); Grid/pinboard organization for side-by-side option evaluation
-  creative_brief: >-
-    Apply Costume Design Exploration Board as an illustration preset over prompt X: preserve the
-    user's requested subject, then route mark-making, palette, surface, composition, mood, and final
-    craft through Costume exploration board combining silhouette, fabric, and colorway studies,
-    Silhouette matrices, swatch clusters, trim notes, color strip comparisons, Swatch-forward
-    surface representation (weave, nap, grain, luster) without requiring the card image's original
-    subject.
+  aesthetic: 'Costume design board: one figure in a hero costume drawing with alternate colorways and fabric swatches pinned around it.'
+  subject_treatment: Keep the prompt subject and its identity as the thing being designed; this deliverable owns a costume plate with a full-length hero figure, a row of colorway mini-figures and pinned swatches, and that layout replaces the requested framing.
+  color_and_tone: Three or four colorway alternatives shown as small repeat figures, and true fabric colors in the swatches.
+  lighting_and_shadow: Even studio light on the figure; swatches lie flat with slight pin shadows.
+  texture_and_material: 'Pencil and watercolor figure with real fabric scraps pinned beside it: wool, brocade, leather, chainmail and trim.'
+  camera_and_composition: Hero figure full length at center, colorway mini-figures in a row, swatches clustered along one side.
+  atmosphere_and_mood: Tactile and theatrical, a costume about to be cut and sewn.
+  rendering_and_quality: Watercolor costume illustration with photo-real swatches; distinct from an orthographic turnaround.
+  key_features: full-length costume plate; colorway mini-figures; pinned fabric swatches; pencil and watercolor; theatrical silhouette
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Costume Design Exploration Board as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - readable annotations
+  - readable text
+  - brand logo
+  - franchise likeness
+  - lone cloaked figure on a cliff edge
+  - orthographic turnaround layout
+  - modern streetwear
   - finished
   - one version
   - no comparison
@@ -88,14 +50,16 @@ avoidRules:
   - overpolished final render
   - unclear design callouts
   - random kitbash clutter
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-092.webp
 attributes:
-  negativePrompt: >-
-    finished, one version, no comparison, no swatches, unlabeled, vague, single option, no fabric,
-    official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake
-    text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy
-    wallpaper, overpolished final render, unclear design callouts, random kitbash clutter
+  negativePrompt: readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, orthographic turnaround layout, modern streetwear, finished, one version, no comparison, no swatches, unlabeled, vague, single option, no fabric, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

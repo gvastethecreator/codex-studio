@@ -3,7 +3,7 @@ id: SP04-048
 packId: pack_04
 name: Character Sheet
 category: 4. Concept Art
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,68 +12,25 @@ tags:
   - illustration-and-graphic-novel
   - concept-art
 visualDna:
-  aesthetic: >-
-    designed subjects Sheet acts as a transferable illustration router: start from Production
-    designed subjects-turnaround style focused on design legibility, neutral presentation, and
-    pipeline handoff clarity, Scale, turnaround views, callout annotations and production
-    concept-art system built from iteration discipline, silhouette testing, material exploration,
-    design readability, and pitch-ready visual decisions, then apply the visual behavior to prompt X
-    instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Clean contour hierarchy with construction-line discipline,
-    silhouette consistency, and annotation-friendly edge clarity; preserve the requested subject
-    while routing it through design exploration, asset logic, value blocking, scale cues, iteration
-    rows, paintover marks, or production-readability constraints, keeping the requested identity,
-    silhouette, pose, object function, or setting legible.
-  color_and_tone: >-
-    Build color with Flat + Occlusion, neutral reference palette, material IDs; use color as concept
-    decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset
-    tier contrast, or readable pass separation, with deliberate value grouping, accent control, and
-    process-specific limits rather than a generic palette wash.
-  lighting_and_shadow: >-
-    Handle light through Neutral, studio-reference, shadow-accurate fidelity, process-led value
-    structure, readable highlights, and style-specific shadow behavior; shape light for ideation
-    clarity through value block-in, keyframe contrast, material test highlights, callout
-    illumination, or pitch-frame atmosphere, so value structure supports the illustration process
-    and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Material callouts, production design clarity, iteration logic, silhouette readability,
-    material exploration, and concept-art decision pressure; surface detail should reveal brush
-    passes, photobash integration, low-poly facets, callout texture, massing blocks, costume
-    fabrics, foliage clusters, or weapon material tiers when named, keeping material scale coherent
-    and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Neutral stance consistency with proportion-locked turnaround
-    consistency across orthographic views; compose through production hierarchy, variants,
-    orthographic logic, isometric staging, silhouette grids, iteration boards, or cinematic keyframe
-    balance without locking one finished illustration, with scale, spacing, edge rhythm, and visual
-    hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Neutral, design, professional review, iterative feedback; derive mood from
-    exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility,
-    cinematic intent, or production-room clarity, letting the style alter interpretation without
-    demanding a specific story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Production ready, pipeline clarity, handoff precision; finish with concept-art
-    usefulness, readable decisions, controlled roughness, and no generic fantasy wallpaper or
-    overpolished final render when iteration is intended, clean denoised surfaces where appropriate,
-    and enough process evidence to make the style recognizable.
-  key_features: >-
-    Production designed subjects-turnaround style focused on design legibility, neutral
-    presentation, and pipeline handoff clarity; Scale, turnaround views, callout annotations; Flat +
-    Occlusion, neutral reference palette, material IDs; Material callouts, production design
-    clarity, iteration logic, silhouette readability, material exploration, and concept-art decision
-    pressure; Neutral stance consistency with proportion-locked turnaround consistency across
-    orthographic views
-  creative_brief: >-
-    Apply designed subjects Sheet as an illustration preset over prompt X: preserve the user's
-    requested subject, then route mark-making, palette, surface, composition, mood, and final craft
-    through Production designed subjects-turnaround style focused on design legibility, neutral
-    presentation, and pipeline handoff clarity, Scale, turnaround views, callout annotations,
-    Material callouts, production design clarity, iteration logic, silhouette readability, material
-    exploration, and concept-art decision pressure without requiring the card image's original
-    subject.
+  aesthetic: 'Production character turnaround: clean line with flat color and a single occlusion pass, one design shown in front, three-quarter, side and back views.'
+  subject_treatment: Keep the prompt subject and its identity as the thing being designed; this deliverable owns a turnaround layout of front, three-quarter, side and back views at one height, plus a row of expression heads, and that layout replaces the requested framing.
+  color_and_tone: Flat local colors with one soft occlusion pass on a neutral mid-grey ground, plus a strip of unlabeled palette chips.
+  lighting_and_shadow: Neutral frontal studio light with only ambient occlusion in the recesses, so colors read identically in every view.
+  texture_and_material: Crisp consistent linework; fabric, leather and metal described with minimal shorthand so every seam, strap and fastening stays legible.
+  camera_and_composition: Orthographic views aligned on shared guide lines for head, waist and feet, evenly spaced, with small expression heads in a row below.
+  atmosphere_and_mood: Neutral and exact, a calm handoff to modelers and animators.
+  rendering_and_quality: Identical proportions in every view with no perspective drift; callout lines point to details without any words.
+  key_features: front, three-quarter, side and back views; shared height guide lines; flat color plus occlusion; expression head row; unlabeled palette chips
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Character Sheet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - readable annotations
+  - readable text
+  - brand logo
+  - franchise likeness
+  - lone cloaked figure on a cliff edge
+  - dynamic action pose
+  - perspective drift between views
+  - scenic background
   - background
   - action
   - official card scene
@@ -88,14 +45,16 @@ avoidRules:
   - overpolished final render
   - unclear design callouts
   - random kitbash clutter
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-048.webp
 attributes:
-  negativePrompt: >-
-    background, action, official card scene, fixed thumbnail subject, prompt replaced by sample
-    image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop,
-    generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash
-    clutter
+  negativePrompt: readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, dynamic action pose, perspective drift between views, scenic background, background, action, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

@@ -5,31 +5,33 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP04-046',
-    name: 'Speedpaint',
+    name: 'Value-Block Speedpaint',
+    displayName: 'Value-Block Speedpaint',
+    styleAnchors: ['Value-Block Speedpaint', 'Speedpaint'],
     category: '4. Concept Art',
     negativePrompt:
-      'detailed, polished, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter',
+      'readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, smooth airbrush blending, uniform detail everywhere, photoreal render, detailed, polished, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Speedpaint acts as a transferable illustration router: start from Rapid concept-speedpainting style focused on ideation clarity, mood-first block-in, and exploratory visual decision-making, Value-block workflow, gestural stroke hierarchy, composition-first framing, selective detail suppression and production concept-art system built from iteration discipline, silhouette testing, material exploration, design readability, and pitch-ready visual decisions, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Digital speedpaint finished in under an hour: big flat value blocks laid with a hard round and a textured chalk brush, detail placed only at the focal point.',
       subject_treatment:
-        'Transform any prompt subject through Gestural brush massing with minimal contour commitment, directional stroke flow, and value-shape-first structure; preserve the requested subject while routing it through design exploration, asset logic, value blocking, scale cues, iteration rows, paintover marks, or production-readability constraints, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject, action, setting and camera, and repaint them with this concept-art method; the method sets marks, values and finish but never adds a sheet, grid or panel layout.',
       color_and_tone:
-        'Build color with Mood-driven tonal clusters with controlled atmospheric bleed and broad hue families for fast read hierarchy; use color as concept decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Three or four value groups in one dominant hue family, with a single complementary accent reserved for the focal point and unmixed edges between hue areas.',
       lighting_and_shadow:
-        'Handle light through Ambient atmospheric lighting established through large value masses and early-stage contrast anchors; shape light for ideation clarity through value block-in, keyframe contrast, material test highlights, callout illumination, or pitch-frame atmosphere, so value structure supports the illustration process and does not overwrite the requested content.',
+        'One light direction decided in the first minutes; shadow shapes merged into single dark masses and highlights struck in with a few opaque strokes.',
       texture_and_material:
-        'Render Visible digital brush grain with layered opacity passes, rough-edge blending, and process-forward stroke evidence; surface detail should reveal brush passes, photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics, foliage clusters, or weapon material tiers when named, keeping material scale coherent and avoiding noisy filler texture.',
+        'Visible hard-edged brush strokes, dry chalk-brush drag, lasso-cut edges and unblended strokes left raw toward the periphery.',
       camera_and_composition:
-        'Structure the image through Intentionally unresolved edge zones with simplified depth grouping and suggestive form abstraction; compose through production hierarchy, variants, orthographic logic, isometric staging, silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+        'Keep the requested framing; the focal area is sharpened while the canvas edges dissolve into loose strokes and untouched block-in.',
       atmosphere_and_mood:
-        'Keep the mood Energetic, exploratory, rough, expressive, iterative; derive mood from exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or production-room clarity, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Urgent and decisive, the energy of fast choices left visible on the canvas.',
       rendering_and_quality:
-        'Finish with Loose concept-stage rendering emphasizing composition testing, readable silhouettes, and iterative velocity over polish; finish with concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Deliberately unfinished: detail density drops sharply outside the focal point, with no smoothing pass and no rendered texture maps.',
       key_features:
-        'Rapid concept-speedpainting style focused on ideation clarity, mood-first block-in, and exploratory visual decision-making; Value-block workflow, gestural stroke hierarchy, composition-first framing, selective detail suppression; Mood-driven tonal clusters with controlled atmospheric bleed and broad hue families for fast read hierarchy; Visible digital brush grain with layered opacity passes, rough-edge blending, and process-forward stroke evidence; Intentionally unresolved edge zones with simplified depth grouping and suggestive form abstraction',
+        'three or four value groups; hard round and chalk brush strokes; detail only at the focal point; canvas edges left as block-in; one complementary accent',
       creative_brief:
-        "Apply Speedpaint as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Rapid concept-speedpainting style focused on ideation clarity, mood-first block-in, and exploratory visual decision-making, Value-block workflow, gestural stroke hierarchy, composition-first framing, selective detail suppression, Visible digital brush grain with layered opacity passes, rough-edge blending, and process-forward stroke evidence without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Value-Block Speedpaint as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -37,28 +39,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Matte Painting',
     category: '4. Concept Art',
     negativePrompt:
-      'cartoon, sketch, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter',
+      'readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, visible brushstrokes, sketchy finish, mismatched shadow directions, tilt-shift blur, cartoon, sketch, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Matte Painting acts as a transferable illustration router: start from Movie depth field, Matte Painting production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure, Horizon line, depth layering, atmospheric haze and production concept-art system built from iteration discipline, silhouette testing, material exploration, design readability, and pitch-ready visual decisions, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Film matte painting: a photoreal digital painting made to extend a live-action plate, with invisible seams between painted architecture, photo texture and sky.',
       subject_treatment:
-        "Transform any prompt subject through Treat subjects through Matte Painting's signature cues: Horizon line, depth layering, atmospheric haze; preserve the requested subject while routing it through design exploration, asset logic, value blocking, scale cues, iteration rows, paintover marks, or production-readability constraints, keeping the requested identity, silhouette, pose, object function, or setting legible.",
+        'Keep the prompt subject, action, setting and camera, and repaint them with this concept-art method; the method sets marks, values and finish but never adds a sheet, grid or panel layout.',
       color_and_tone:
-        'Build color with Photorealistic, natural-world spectrum, cinematic grade; use color as concept decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Filmic grade with strong atmospheric perspective: distant planes lifted toward the sky color and desaturated, the foreground holding the deepest blacks.',
       lighting_and_shadow:
-        'Handle light through Cinematic, God-light rays, atmospheric perspective; shape light for ideation clarity through value block-in, keyframe contrast, material test highlights, callout illumination, or pitch-frame atmosphere, so value structure supports the illustration process and does not overwrite the requested content.',
+        'One sun or moon direction shared by every element, soft haze scatter, and cast shadows matched in hardness and temperature across all layers.',
       texture_and_material:
-        'Render Photo bash, production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure; surface detail should reveal brush passes, photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics, foliage clusters, or weapon material tiers when named, keeping material scale coherent and avoiding noisy filler texture.',
+        'Photographic-scale surface detail near camera, simplified painted detail with distance, crisp rooflines and ridge silhouettes, fine aerial haze.',
       camera_and_composition:
-        'Structure the image through Compose for Matte Painting using its key spatial cues: Horizon line, depth layering, atmospheric haze; compose through production hierarchy, variants, orthographic logic, isometric staging, silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Vast, invisible, suspension-of-disbelief, epic silence; derive mood from exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or production-room clarity, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Keep the requested view; build it from five or more receding depth planes with a clear horizon and a believable lens.',
+      atmosphere_and_mood: 'Vast, still and believable, a place that seems to have always existed.',
       rendering_and_quality:
-        'Finish with Epic, detailed, world-building scale, invisible compositing; finish with concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Seamless photoreal finish with no visible brushwork in the near field; depth is carried by haze and value, never by blur.',
       key_features:
-        'Movie depth field, Matte Painting production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure; Horizon line, depth layering, atmospheric haze; Photorealistic, natural-world spectrum, cinematic grade; Photo bash, production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure',
+        'invisible plate seams; five or more haze planes; one shared light direction; photographic near detail; photoreal finish',
       creative_brief:
-        "Apply Matte Painting as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Movie depth field, Matte Painting production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure, Horizon line, depth layering, atmospheric haze, Photo bash, production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Matte Painting as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -66,28 +67,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Character Sheet',
     category: '4. Concept Art',
     negativePrompt:
-      'background, action, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter',
+      'readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, dynamic action pose, perspective drift between views, scenic background, background, action, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'designed subjects Sheet acts as a transferable illustration router: start from Production designed subjects-turnaround style focused on design legibility, neutral presentation, and pipeline handoff clarity, Scale, turnaround views, callout annotations and production concept-art system built from iteration discipline, silhouette testing, material exploration, design readability, and pitch-ready visual decisions, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Production character turnaround: clean line with flat color and a single occlusion pass, one design shown in front, three-quarter, side and back views.',
       subject_treatment:
-        'Transform any prompt subject through Clean contour hierarchy with construction-line discipline, silhouette consistency, and annotation-friendly edge clarity; preserve the requested subject while routing it through design exploration, asset logic, value blocking, scale cues, iteration rows, paintover marks, or production-readability constraints, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject and its identity as the thing being designed; this deliverable owns a turnaround layout of front, three-quarter, side and back views at one height, plus a row of expression heads, and that layout replaces the requested framing.',
       color_and_tone:
-        'Build color with Flat + Occlusion, neutral reference palette, material IDs; use color as concept decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Flat local colors with one soft occlusion pass on a neutral mid-grey ground, plus a strip of unlabeled palette chips.',
       lighting_and_shadow:
-        'Handle light through Neutral, studio-reference, shadow-accurate fidelity, process-led value structure, readable highlights, and style-specific shadow behavior; shape light for ideation clarity through value block-in, keyframe contrast, material test highlights, callout illumination, or pitch-frame atmosphere, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Neutral frontal studio light with only ambient occlusion in the recesses, so colors read identically in every view.',
       texture_and_material:
-        'Render Material callouts, production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure; surface detail should reveal brush passes, photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics, foliage clusters, or weapon material tiers when named, keeping material scale coherent and avoiding noisy filler texture.',
+        'Crisp consistent linework; fabric, leather and metal described with minimal shorthand so every seam, strap and fastening stays legible.',
       camera_and_composition:
-        'Structure the image through Neutral stance consistency with proportion-locked turnaround consistency across orthographic views; compose through production hierarchy, variants, orthographic logic, isometric staging, silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Neutral, design, professional review, iterative feedback; derive mood from exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or production-room clarity, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Orthographic views aligned on shared guide lines for head, waist and feet, evenly spaced, with small expression heads in a row below.',
+      atmosphere_and_mood: 'Neutral and exact, a calm handoff to modelers and animators.',
       rendering_and_quality:
-        'Finish with Production ready, pipeline clarity, handoff precision; finish with concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Identical proportions in every view with no perspective drift; callout lines point to details without any words.',
       key_features:
-        'Production designed subjects-turnaround style focused on design legibility, neutral presentation, and pipeline handoff clarity; Scale, turnaround views, callout annotations; Flat + Occlusion, neutral reference palette, material IDs; Material callouts, production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure; Neutral stance consistency with proportion-locked turnaround consistency across orthographic views',
+        'front, three-quarter, side and back views; shared height guide lines; flat color plus occlusion; expression head row; unlabeled palette chips',
       creative_brief:
-        "Apply designed subjects Sheet as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Production designed subjects-turnaround style focused on design legibility, neutral presentation, and pipeline handoff clarity, Scale, turnaround views, callout annotations, Material callouts, production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Character Sheet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -95,28 +95,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Environment Concept',
     category: '4. Concept Art',
     negativePrompt:
-      'character focus, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter',
+      'readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, character close-up, subject filling the frame, character focus, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Environment Concept acts as a transferable illustration router: start from Environment concept-development style with mood-led worldbuilding, navigable composition logic, and place-first visual storytelling, Scale silhouette subjects, perspective grid, environmental storytelling and production concept-art system built from iteration discipline, silhouette testing, material exploration, design readability, and pitch-ready visual decisions, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Environment design painting: a place designed for production in semi-finished digital paint, with clear paths, a landmark and a tiny figure for scale.',
       subject_treatment:
-        'Transform any prompt subject through Perspective-grid anchored block design with readable silhouette layering and path-guided spatial rhythm; preserve the requested subject while routing it through design exploration, asset logic, value blocking, scale cues, iteration rows, paintover marks, or production-readability constraints, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject and its identity as the thing being designed; this deliverable owns a wide establishing view in which the subject becomes a navigable place with a route, a landmark and a tiny scale figure, and that layout replaces the requested framing.',
       color_and_tone:
-        'Build color with Atmospheric, mood-grade spectrum, location-feel depth; use color as concept decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Palette organized by depth: warm saturated foreground, desaturated cool middle ground, pale background, with the landmark carrying the key accent.',
       lighting_and_shadow:
-        'Handle light through Key light, dramatic spotlight, environmental storytelling; shape light for ideation clarity through value block-in, keyframe contrast, material test highlights, callout illumination, or pitch-frame atmosphere, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Directional light used to guide travel: a lit path leading to the landmark, shadowed flanks framing it on both sides.',
       texture_and_material:
-        'Render Painted, production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure; surface detail should reveal brush passes, photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics, foliage clusters, or weapon material tiers when named, keeping material scale coherent and avoiding noisy filler texture.',
+        'Textured-brush shorthand for stone, timber, water and foliage, enough to read each material and no more.',
       camera_and_composition:
-        'Structure the image through Compose for Environment Concept using its key spatial cues: Scale silhouette subjects, perspective grid, environmental storytelling; compose through production hierarchy, variants, orthographic logic, isometric staging, silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Adventure, place, exploration wonder, threshold excitement; derive mood from exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or production-room clarity, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Wide eye-level or slightly raised view with a readable ground plane, a visible route through the space, and a human figure under a twentieth of frame height.',
+      atmosphere_and_mood: 'Inviting to explore, every path hinting where to go next.',
       rendering_and_quality:
-        'Finish with Immersive, vast, sense-of-place conviction, environmental narrative; finish with concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Semi-finished production painting, architecture resolved at the landmark and loosening toward the frame edges.',
       key_features:
-        'Environment concept-development style with mood-led worldbuilding, navigable composition logic, and place-first visual storytelling; Scale silhouette subjects, perspective grid, environmental storytelling; Atmospheric, mood-grade spectrum, location-feel depth; Painted, production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure',
+        'readable route through the space; lit landmark; tiny scale figure; warm-to-cool depth palette; semi-finished paint',
       creative_brief:
-        "Apply Environment Concept as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Environment concept-development style with mood-led worldbuilding, navigable composition logic, and place-first visual storytelling, Scale silhouette subjects, perspective grid, environmental storytelling, Painted, production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Environment Concept as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -124,28 +123,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Vehicle Design',
     category: '4. Concept Art',
     negativePrompt:
-      'organic, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter',
+      'readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, photoreal CGI car render, brand badges, known film vehicles, city background, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'transport designs Design acts as a transferable illustration router: start from Futurist transport designs concept style balancing industrial plausibility with aspirational speed-form language, Perspective, technical form-language, callout detail and production concept-art system built from iteration discipline, silhouette testing, material exploration, design readability, and pitch-ready visual decisions, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Industrial vehicle design sketch: alcohol marker and colored pencil on grey toned paper, with confident ellipses, construction lines and white gouache highlights.',
       subject_treatment:
-        'Transform any prompt subject through Technical line discipline with aerodynamic panel segmentation, functional contour logic, and engineering-forward silhouette design; preserve the requested subject while routing it through design exploration, asset logic, value blocking, scale cues, iteration rows, paintover marks, or production-readability constraints, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject and its identity as the thing being designed; this deliverable owns a vehicle design sheet with a low three-quarter hero view and a smaller side elevation on one ground line, and that layout replaces the requested framing.',
       color_and_tone:
-        'Build color with Industrial, gunmetal primaries, functional-finish spectrum; use color as concept decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Grey paper ground, cool grey marker ramps, one bold body color, black tires and glazing, white pencil and gouache highlights.',
       lighting_and_shadow:
-        'Handle light through Studio, product-shot key, technical highlight; shape light for ideation clarity through value block-in, keyframe contrast, material test highlights, callout illumination, or pitch-frame atmosphere, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Studio sketch convention: body sides fade from lit top to dark lower edge, and the glazing carries one crisp horizon reflection line.',
       texture_and_material:
-        'Render Metal, dirt, production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure; surface detail should reveal brush passes, photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics, foliage clusters, or weapon material tiers when named, keeping material scale coherent and avoiding noisy filler texture.',
+        'Streaky overlapping marker passes, visible construction ellipses, pastel-dust gradients on large panels, crisp ink in panel gaps.',
       camera_and_composition:
-        'Structure the image through Compose for transport designs Design using its key spatial cues: Perspective, technical form-language, callout detail; compose through production hierarchy, variants, orthographic logic, isometric staging, silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+        'Low three-quarter hero view with an exaggerated wide stance, a smaller side elevation below, wheels or tracks sitting on a shared ground line.',
       atmosphere_and_mood:
-        'Keep the mood Fast, tech, prototype adrenaline, engineering cool; derive mood from exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or production-room clarity, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Fast, confident and aspirational, a machine that already wants to move.',
       rendering_and_quality:
-        'Finish with High-fidelity industrial concept rendering emphasizing material separation, manufacturable form language, and mobility-focused intent; finish with concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Design-studio sketch finish: construction lines left visible, a quick marker drop shadow, no photographic environment.',
       key_features:
-        'Futurist transport designs concept style balancing industrial plausibility with aspirational speed-form language; Perspective, technical form-language, callout detail; Industrial, gunmetal primaries, functional-finish spectrum; Metal, dirt, production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure',
+        'alcohol marker on grey paper; white gouache highlights; construction ellipses; hero three-quarter plus side elevation; one bold body color',
       creative_brief:
-        "Apply transport designs Design as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Futurist transport designs concept style balancing industrial plausibility with aspirational speed-form language, Perspective, technical form-language, callout detail, Metal, dirt, production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Vehicle Design as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -153,28 +152,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Creature Design',
     category: '4. Concept Art',
     negativePrompt:
-      'human, cute, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter',
+      'readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, several unrelated creatures, cartoon mascot proportions, cute, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'organism designs Design acts as a transferable illustration router: start from organism designs-concept development style driven by ecological plausibility, adaptive morphology, and silhouette threat readability, Silhouette, anatomical breakdown, adaptive feature and production concept-art system built from iteration discipline, silhouette testing, material exploration, design readability, and pitch-ready visual decisions, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Creature design study: one painted creature in a readable hero pose, surrounded by anatomical inset studies of skull, limb mechanics and skin.',
       subject_treatment:
-        'Transform any prompt subject through Anatomical construction logic with biomechanical cue layering, functional limb articulation, and predator-profile contour control; preserve the requested subject while routing it through design exploration, asset logic, value blocking, scale cues, iteration rows, paintover marks, or production-readability constraints, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject and its identity as the thing being designed; this deliverable owns a creature study sheet: one painted hero pose with graphite anatomy insets and a small human silhouette for scale, and that layout replaces the requested framing.',
       color_and_tone:
-        'Build color with Skin tones, organic chromatics, organism designs-flesh spectrum; use color as concept decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Natural biological palette with camouflage logic, warning colors only where they would evolve, on a warm parchment-grey sheet.',
       lighting_and_shadow:
-        'Handle light through Rim light, silhouette reveal, ambient dread; shape light for ideation clarity through value block-in, keyframe contrast, material test highlights, callout illumination, or pitch-frame atmosphere, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Soft overhead key with a thin rim light that separates the silhouette from the sheet ground.',
       texture_and_material:
-        'Render Scales, fur, production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure; surface detail should reveal brush passes, photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics, foliage clusters, or weapon material tiers when named, keeping material scale coherent and avoiding noisy filler texture.',
+        'Painted skin, scales, keratin and wet membranes at believable scale; inset studies in graphite line with light washes.',
       camera_and_composition:
-        'Structure the image through Speculative anatomy distortions guided by functional adaptation, not random mutation, with balanced asymmetry control; compose through production hierarchy, variants, orthographic logic, isometric staging, silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Dangerous, alive, predatory stillness, ecological tension; derive mood from exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or production-room clarity, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Hero creature in three-quarter view filling two thirds of the sheet, insets arranged in the remaining third, a small human silhouette for scale.',
+      atmosphere_and_mood: 'Plausible and unsettling, an animal that could have evolved somewhere.',
       rendering_and_quality:
-        'Finish with Scary, biological, anatomical conviction, apex-predator presence; finish with concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Hero painted near finish, insets deliberately looser, callout lines that carry no words.',
       key_features:
-        'organism designs-concept development style driven by ecological plausibility, adaptive morphology, and silhouette threat readability; Silhouette, anatomical breakdown, adaptive feature; Skin tones, organic chromatics, organism designs-flesh spectrum; Scales, fur, production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure; Speculative anatomy distortions guided by functional adaptation, not random mutation, with balanced asymmetry control',
+        'one painted hero pose; graphite anatomy insets; skull and limb studies; human scale silhouette; evolved camouflage palette',
       creative_brief:
-        "Apply organism designs Design as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through organism designs-concept development style driven by ecological plausibility, adaptive morphology, and silhouette threat readability, Silhouette, anatomical breakdown, adaptive feature, Scales, fur, production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Creature Design as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -182,28 +180,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Isometric Game Art',
     category: '4. Concept Art',
     negativePrompt:
-      'perspective, flat, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter',
+      'readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, 3d render sheen, HUD icons, interface panels, known game assets, perspective, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Isometric Game Art acts as a transferable illustration router: start from Isometric systems-art style with modular worldbuilding clarity, playful simulation readability, and toy-scale urban abstraction, Isometric angle discipline, modular tile-grid composition, systems readability hierarchy, toy-scale abstraction and production concept-art system built from iteration discipline, silhouette testing, material exploration, design readability, and pitch-ready visual decisions, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Hand-painted 2D isometric game art: the scene assembled from modular diamond tiles with painted top faces and darker side faces, like a builder game map.',
       subject_treatment:
-        'Transform any prompt subject through Clean vector-pixel hybrid contours, grid-disciplined shape language, and module-first construction logic; preserve the requested subject while routing it through design exploration, asset logic, value blocking, scale cues, iteration rows, paintover marks, or production-readability constraints, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject and its identity as the thing being designed; this deliverable owns a 2:1 dimetric tile view in which the subject sits on an exposed chunk of ground tiles, and that layout replaces the requested framing.',
       color_and_tone:
-        'Build color with Bright ordered saturation with zone-based hue grouping, clear functional contrast, and tile-friendly color separation; use color as concept decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Saturated game palette where each terrain type owns one hue family and every side face steps darker by a fixed value.',
       lighting_and_shadow:
-        'Handle light through Consistent directional isometric lighting with uniform shadow logic and readability-first highlight placement; shape light for ideation clarity through value block-in, keyframe contrast, material test highlights, callout illumination, or pitch-frame atmosphere, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Fixed top-left light on every asset, with soft painted ambient occlusion where tiles and buildings meet.',
       texture_and_material:
-        'Render Tile-ready clean surfaces with subtle pattern repetition cues and low-noise asset cohesion; surface detail should reveal brush passes, photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics, foliage clusters, or weapon material tiers when named, keeping material scale coherent and avoiding noisy filler texture.',
+        'Soft painted brush texture inside crisp tile edges, repeating modular pieces with small hand-painted variations.',
       camera_and_composition:
-        'Structure the image through Isometric orthographic logic with fixed-angle depth mapping and no perspective convergence; compose through production hierarchy, variants, orthographic logic, isometric staging, silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Ordered, playful, clean, constructive, serene; derive mood from exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or production-room clarity, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Parallel 2:1 dimetric projection without perspective, the scene resting on a floating chunk of tiles with visible soil sides.',
+      atmosphere_and_mood: 'Cozy, orderly and systemic, a small world you want to manage.',
       rendering_and_quality:
-        'Finish with Production-grade simulation asset finish emphasizing legibility at scale, modular coherence, and system clarity; finish with concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Crisp tile silhouettes and painted surfaces, no 3D render sheen, no interface elements.',
       key_features:
-        'Isometric systems-art style with modular worldbuilding clarity, playful simulation readability, and toy-scale urban abstraction; Isometric angle discipline, modular tile-grid composition, systems readability hierarchy, toy-scale abstraction; Bright ordered saturation with zone-based hue grouping, clear functional contrast, and tile-friendly color separation; Tile-ready clean surfaces with subtle pattern repetition cues and low-noise asset cohesion; Isometric orthographic logic with fixed-angle depth mapping and no perspective convergence',
+        '2:1 diamond tile grid; painted top faces with darker sides; fixed top-left light; floating ground chunk; modular repeated assets',
       creative_brief:
-        "Apply Isometric Game Art as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Isometric systems-art style with modular worldbuilding clarity, playful simulation readability, and toy-scale urban abstraction, Isometric angle discipline, modular tile-grid composition, systems readability hierarchy, toy-scale abstraction, Tile-ready clean surfaces with subtle pattern repetition cues and low-noise asset cohesion without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Isometric Game Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -211,28 +208,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Storyboard Sketch',
     category: '4. Concept Art',
     negativePrompt:
-      'color, detailed, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter',
+      'readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, readable shot notes, speech balloons, finished rendering, detailed, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Storyboard Sketch acts as a transferable illustration router: start from Storyboard previsualization style prioritizing shot communication, camera intent, and narrative beat sequencing, Frame border, camera arrows, shot description and production concept-art system built from iteration discipline, silhouette testing, material exploration, design readability, and pitch-ready visual decisions, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Film storyboard page: rough pencil and grey-marker panels drawn for shot communication, with camera arrows and motion arrows.',
       subject_treatment:
-        'Transform any prompt subject through Loose pencil-marker shorthand with fast gesture notation, camera-arrow semantics, and frame-priority readability; preserve the requested subject while routing it through design exploration, asset logic, value blocking, scale cues, iteration rows, paintover marks, or production-readability constraints, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject and its identity as the thing being designed; this deliverable owns a storyboard page of four to six panels in reading order that break the action into shots, and that layout replaces the requested framing.',
       color_and_tone:
-        'Build color with Greyscale + Arrows, monochrome clarity, directional red accent; use color as concept decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Greyscale graphite and two or three cool grey marker tones, with one red pencil reserved for movement and camera arrows.',
       lighting_and_shadow:
-        'Handle light through Value study, light-plan sweep, shot-design intent; shape light for ideation clarity through value block-in, keyframe contrast, material test highlights, callout illumination, or pitch-frame atmosphere, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Just enough value to separate foreground, subject and background in each panel, with bold shadow shapes for drama.',
       texture_and_material:
-        'Render Paper, production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure; surface detail should reveal brush passes, photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics, foliage clusters, or weapon material tiers when named, keeping material scale coherent and avoiding noisy filler texture.',
+        'Fast pencil contours, quick marker fills, loose hatching, and panels ruled with a slightly wobbly marker border.',
       camera_and_composition:
-        'Structure the image through Motion blur lines, scale rhythm, edge hierarchy, spacing, and composition rules specific to Storyboard Sketch; compose through production hierarchy, variants, orthographic logic, isometric staging, silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Action, plan, pre-vis intensity, production hustle; derive mood from exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or production-room clarity, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Four to six framed panels with varied shot sizes (wide, medium, insert close-up) and arrows for pans, pushes and subject motion.',
+      atmosphere_and_mood: 'Kinetic and clear, a sequence you can already hear.',
       rendering_and_quality:
-        'Finish with Cinematic flow, directorial shorthand, shot-language clarity; finish with concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Quick and legible drawing with simplified figures, no rendered finish, blank margins instead of written shot notes.',
       key_features:
-        'Storyboard previsualization style prioritizing shot communication, camera intent, and narrative beat sequencing; Frame border, camera arrows, shot description; Greyscale + Arrows, monochrome clarity, directional red accent; Paper, production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure; Motion blur lines, scale rhythm, edge hierarchy, spacing, and composition rules specific to Storyboard Sketch',
+        'four to six ruled panels; varied shot sizes; red pencil motion arrows; grey marker values; blank note margins',
       creative_brief:
-        "Apply Storyboard Sketch as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Storyboard previsualization style prioritizing shot communication, camera intent, and narrative beat sequencing, Frame border, camera arrows, shot description, Paper, production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Storyboard Sketch as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -240,28 +236,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Prop Design',
     category: '4. Concept Art',
     negativePrompt:
-      'background, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter',
+      'readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, environment background, several unrelated props, background, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Prop Design acts as a transferable illustration router: start from Prop-design presentation style with isolated artifact focus, material storytelling, and game-ready readability, Isolated, orthographic view, material breakdown and production concept-art system built from iteration discipline, silhouette testing, material exploration, design readability, and pitch-ready visual decisions, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Prop design presentation: one object painted to production detail in a three-quarter hero view, with smaller orthographic views and detail zooms.',
       subject_treatment:
-        'Transform any prompt subject through Clean technical-art contouring with form-break accents, silhouette-first readability, and callout-friendly structure; preserve the requested subject while routing it through design exploration, asset logic, value blocking, scale cues, iteration rows, paintover marks, or production-readability constraints, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject and its identity as the thing being designed; this deliverable owns a prop sheet with one isolated object in a hero view, front and side views and round detail zooms, and that layout replaces the requested framing.',
       color_and_tone:
-        'Build color with Material render, PBR-reference, asset-library spectrum; use color as concept decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'True material colors on a neutral light-grey ground, with wear and patina described through small color shifts.',
       lighting_and_shadow:
-        'Handle light through Studio, product-isolation light, neutral-pedestal, process-led value structure, readable highlights, and style-specific shadow behavior; shape light for ideation clarity through value block-in, keyframe contrast, material test highlights, callout illumination, or pitch-frame atmosphere, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Soft upper-left key and neutral fill, with a distinct specular response per material so metal, leather and wood separate.',
       texture_and_material:
-        'Render Wear and tear, production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure; surface detail should reveal brush passes, photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics, foliage clusters, or weapon material tiers when named, keeping material scale coherent and avoiding noisy filler texture.',
+        'Legible material breakdown: grain direction, edge wear, stitching, rivets and scratches placed where hands would touch.',
       camera_and_composition:
-        'Structure the image through Compose for Prop Design using its key spatial cues: Isolated, orthographic view, material breakdown; compose through production hierarchy, variants, orthographic logic, isometric staging, silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Valuable, useful, item-card significance, inventory worth; derive mood from exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or production-room clarity, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Hero three-quarter view on the left, front and side orthographic views on the right, two circular detail zooms; no environment.',
+      atmosphere_and_mood: 'Tactile and storied, an object that has clearly been used.',
       rendering_and_quality:
-        'Finish with RPG item, detailed, asset-sheet polish, loot-table charm; finish with concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Clean production finish with unlabeled callout lines, each material readable at thumbnail size.',
       key_features:
-        'Prop-design presentation style with isolated artifact focus, material storytelling, and game-ready readability; Isolated, orthographic view, material breakdown; Material render, PBR-reference, asset-library spectrum; Wear and tear, production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure',
+        'isolated hero three-quarter view; front and side orthographics; circular detail zooms; wear placed by use; neutral grey ground',
       creative_brief:
-        "Apply Prop Design as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Prop-design presentation style with isolated artifact focus, material storytelling, and game-ready readability, Isolated, orthographic view, material breakdown, Wear and tear, production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Prop Design as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -269,28 +264,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Keyframe Art',
     category: '4. Concept Art',
     negativePrompt:
-      'sketchy, rough, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter',
+      'readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, static posed portrait, flat even lighting, sketchy, rough, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Keyframe Art acts as a transferable illustration router: start from Narrative keyframe concept style central on emotional turning-point composition and cinematic visual impact, 16:9 ratio, letterbox framing, cinematic composition and production concept-art system built from iteration discipline, silhouette testing, material exploration, design readability, and pitch-ready visual decisions, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Narrative keyframe: a polished cinematic painting of one turning-point moment, composed and lit like a single film frame.',
       subject_treatment:
-        'Transform any prompt subject through Shape-led cinematic blocking with selective edge control, focal hierarchy, and frame-rhythm precision; preserve the requested subject while routing it through design exploration, asset logic, value blocking, scale cues, iteration rows, paintover marks, or production-readability constraints, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject and its identity as the thing being designed; this deliverable owns a widescreen letterboxed film frame that stages the subject at its decisive story moment, and that layout replaces the requested framing.',
       color_and_tone:
-        'Build color with Color graded, cinematic LUT, emotional-tone timing; use color as concept decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Graded palette with one clear color story, such as teal shadows against a single warm story accent, contrast peaking at the emotional focus.',
       lighting_and_shadow:
-        'Handle light through Cinematic, framed intent, motivated light source; shape light for ideation clarity through value block-in, keyframe contrast, material test highlights, callout illumination, or pitch-frame atmosphere, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Motivated dramatic light such as fire, lightning or a shaft through a breach, pointing at the story beat while deep shadows stay simple.',
       texture_and_material:
-        'Render Painted, production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure; surface detail should reveal brush passes, photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics, foliage clusters, or weapon material tiers when named, keeping material scale coherent and avoiding noisy filler texture.',
+        'Painterly but resolved surfaces, with embers, dust or rain particles adding depth between planes.',
       camera_and_composition:
-        'Structure the image through Compose for Keyframe Art using its key spatial cues: 16:9 ratio, letterbox framing, cinematic composition; compose through production hierarchy, variants, orthographic logic, isometric staging, silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Story beat, narrative tension, turning-point weight; derive mood from exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or production-room clarity, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Widescreen cinematic framing with letterbox proportions, foreground occluders and the focal figure placed on a third.',
+      atmosphere_and_mood: 'Charged and decisive, the instant before everything changes.',
       rendering_and_quality:
-        'Finish with Movie still, emotional, screen-grab gravity, story-beat resonance; finish with concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Near-final painting quality at the focal point, softened background, film-like depth and grade.',
       key_features:
-        'Narrative keyframe concept style central on emotional turning-point composition and cinematic visual impact; 16:9 ratio, letterbox framing, cinematic composition; Color graded, cinematic LUT, emotional-tone timing; Painted, production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure',
+        'widescreen letterbox frame; one turning-point moment; motivated dramatic light; foreground occluders; graded color story',
       creative_brief:
-        "Apply Keyframe Art as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Narrative keyframe concept style central on emotional turning-point composition and cinematic visual impact, 16:9 ratio, letterbox framing, cinematic composition, Painted, production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Keyframe Art as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -298,28 +292,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Photobash',
     category: '4. Concept Art',
     negativePrompt:
-      'painted, cartoon, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter',
+      'readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, clean CG render, fully hand-painted look, cartoon, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Photobash acts as a transferable illustration router: start from Photobash concept style using multi-source realism synthesis with fast iteration and art-direction cohesion, Texture clash, photo-fragment seam, value-unify grading and production concept-art system built from iteration discipline, silhouette testing, material exploration, design readability, and pitch-ready visual decisions, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Photobash concept: the subject assembled from cut photographic fragments of rock, metal, foliage and architecture, warped into perspective and unified with painted light.',
       subject_treatment:
-        'Transform any prompt subject through Hybrid photo-paint seam management with compositional masking, perspective harmonization, and silhouette cleanup passes; preserve the requested subject while routing it through design exploration, asset logic, value blocking, scale cues, iteration rows, paintover marks, or production-readability constraints, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject, action, setting and camera, and repaint them with this concept-art method; the method sets marks, values and finish but never adds a sheet, grid or panel layout.',
       color_and_tone:
-        'Build color with Unified grading, photobash-comped, multi-source harmony; use color as concept decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'One unifying color grade over mismatched photo sources, slight saturation differences still visible under a cohesive overall temperature.',
       lighting_and_shadow:
-        'Handle light through Realistic, ambient-match, multi-photo consistency, process-led value structure, readable highlights, and style-specific shadow behavior; shape light for ideation clarity through value block-in, keyframe contrast, material test highlights, callout illumination, or pitch-frame atmosphere, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Painted overlay light passes pull the sources to one direction, while a few photo shadows still disagree subtly.',
       texture_and_material:
-        'Render Photo, production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure; surface detail should reveal brush passes, photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics, foliage clusters, or weapon material tiers when named, keeping material scale coherent and avoiding noisy filler texture.',
+        'Photographic micro-detail at real scale, visible cut edges, repeated cloned textures and perspective-warped fragments.',
       camera_and_composition:
-        'Structure the image through Controlled source-scale mismatches intentionally corrected through grading, edge treatment, and depth harmonization; compose through production hierarchy, variants, orthographic logic, isometric staging, silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Realism, concept, speculative design, art-department urgency; derive mood from exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or production-room clarity, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Keep the requested view; strong perspective hides seams and detail density gathers at the focal areas.',
+      atmosphere_and_mood: 'Gritty and tangible, realism assembled at speed for a pitch.',
       rendering_and_quality:
-        'Finish with Realistic, fast, iterative pitching, concept-development speed; finish with concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Photoreal-feeling surfaces with visible seams and paint glue in places, never a clean CG render.',
       key_features:
-        'Photobash concept style using multi-source realism synthesis with fast iteration and art-direction cohesion; Texture clash, photo-fragment seam, value-unify grading; Unified grading, photobash-comped, multi-source harmony; Photo, production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure; Controlled source-scale mismatches intentionally corrected through grading, edge treatment, and depth harmonization',
+        'cut photo fragments; perspective warping; one unifying grade; visible seams and clone repeats; painted light glue',
       creative_brief:
-        "Apply Photobash as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Photobash concept style using multi-source realism synthesis with fast iteration and art-direction cohesion, Texture clash, photo-fragment seam, value-unify grading, Photo, production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Photobash as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -327,28 +320,28 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Low Poly Concept',
     category: '4. Concept Art',
     negativePrompt:
-      'smooth, high res, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter',
+      'readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, polished low-poly art render, voxel cubes, papercraft, smooth, high res, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Low Poly Concept acts as a transferable illustration router: start from Early low-poly 3D concept style defined by geometric economy, hardware-era constraints, and nostalgic polygonal abstraction, Polygons, unfiltered textures, affine warping and production concept-art system built from iteration discipline, silhouette testing, material exploration, design readability, and pitch-ready visual decisions, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Low-poly blockout concept: the scene modeled as coarse proxy geometry of a few hundred flat-shaded facets, then painted over with quick light, fog and color notes.',
       subject_treatment:
-        'Transform any prompt subject through Triangle-dominant faceting with minimal smoothing, hard-edge silhouette readability, and UV-era shape simplification; preserve the requested subject while routing it through design exploration, asset logic, value blocking, scale cues, iteration rows, paintover marks, or production-readability constraints, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject, action, setting and camera, and repaint them with this concept-art method; the method sets marks, values and finish but never adds a sheet, grid or panel layout.',
       color_and_tone:
-        'Build color with Flat shading, vertex-colored, low-spec palette; use color as concept decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Muted clay-grey or single-tint geometry with loose painted color zones laid over it and one saturated light color.',
       lighting_and_shadow:
-        'Handle light through Vertex light, gouraud shading, no real-time lighting; shape light for ideation clarity through value block-in, keyframe contrast, material test highlights, callout illumination, or pitch-frame atmosphere, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Real-time sun and flat facet shading from the blockout, plus hand-painted glows, fog gradients and light shafts on top.',
       texture_and_material:
-        'Render Pixelated, production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure; surface detail should reveal brush passes, photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics, foliage clusters, or weapon material tiers when named, keeping material scale coherent and avoiding noisy filler texture.',
+        'Untextured facets with visible polygon edges, and brush strokes crossing facet boundaries wherever the paintover sits.',
       camera_and_composition:
-        'Structure the image through Blocky, scale rhythm, edge hierarchy, spacing, and composition rules specific to Low Poly Concept; compose through production hierarchy, variants, orthographic logic, isometric staging, silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
+        'Keep the requested view; a slightly wide game-camera perspective keeps the massing readable.',
       atmosphere_and_mood:
-        'Keep the mood Nostalgic, simple, CD-ROM childhood, fifth-gen warmth; derive mood from exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or production-room clarity, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Early and promising, a space that already feels playable in grey boxes.',
       rendering_and_quality:
-        'Finish with Retro first-gen 3D rendering fidelity emphasizing constrained geometry, affine-era texture behavior, and deliberate technical limitation aesthetics; finish with concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Hybrid finish, crisp facet geometry underneath and loose paint marks on top; not a polished low-poly art render.',
       key_features:
-        'Early low-poly 3D concept style defined by geometric economy, hardware-era constraints, and nostalgic polygonal abstraction; Polygons, unfiltered textures, affine warping; Flat shading, vertex-colored, low-spec palette; Pixelated, production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure; Blocky, scale rhythm, edge hierarchy, spacing, and composition rules specific to Low Poly Concept',
+        'coarse flat-shaded proxy geometry; clay-grey facets; painted glow and fog over the mesh; strokes crossing facet edges; game-camera view',
       creative_brief:
-        "Apply Low Poly Concept as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Early low-poly 3D concept style defined by geometric economy, hardware-era constraints, and nostalgic polygonal abstraction, Polygons, unfiltered textures, affine warping, Pixelated, production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Low Poly Concept as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -356,28 +349,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Weapon Design',
     category: '4. Concept Art',
     negativePrompt:
-      'soft, toy, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter',
+      'readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, action pose, glowing magic effects, perspective view, soft, toy, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'equipment silhouettes Design acts as a transferable illustration router: start from equipment silhouettes concept-sheet style with functional lethality readability, industrial precision, and controlled silhouette authority, Side view, mechanical detail, magazine/guard and production concept-art system built from iteration discipline, silhouette testing, material exploration, design readability, and pitch-ready visual decisions, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Weapon design orthographic: one weapon drawn in strict side elevation at full length, painted in greyscale over clean line, with cross-section slices.',
       subject_treatment:
-        'Transform any prompt subject through Mechanical contour logic with component segmentation, ergonomic line flow, and side-profile specification clarity; preserve the requested subject while routing it through design exploration, asset logic, value blocking, scale cues, iteration rows, paintover marks, or production-readability constraints, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject and its identity as the thing being designed; this deliverable owns a strict side-elevation weapon sheet with cross-section slices and a hand silhouette for scale, and that layout replaces the requested framing.',
       color_and_tone:
-        'Build color with Gunmetal, tactical finish, equipment silhouettes-grade metals; use color as concept decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Mostly neutral steel greys and dark grip materials with one material accent such as brass, bone or enamel, on a mid-grey ground.',
       lighting_and_shadow:
-        'Handle light through Rim light, barrel gleam, tactical edge highlight; shape light for ideation clarity through value block-in, keyframe contrast, material test highlights, callout illumination, or pitch-frame atmosphere, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Flat studio light raking slightly from above to reveal bevels, fullers and the edge grind.',
       texture_and_material:
-        'Render Scratched metal, production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure; surface detail should reveal brush passes, photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics, foliage clusters, or weapon material tiers when named, keeping material scale coherent and avoiding noisy filler texture.',
+        'Forge marks, grind lines, leather or cord wrapped at the grip and pinned rivets, each material clearly separated.',
       camera_and_composition:
-        'Structure the image through Compose for equipment silhouettes Design using its key spatial cues: Side view, mechanical detail, magazine/guard; compose through production hierarchy, variants, orthographic logic, isometric staging, silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Dangerous, heavy, trigger discipline, combat-readiness; derive mood from exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or production-room clarity, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Exact side view spanning the frame horizontally, small section slices beneath it and a hand silhouette for scale.',
+      atmosphere_and_mood: 'Functional and heavy, a form dictated by how it strikes.',
       rendering_and_quality:
-        'Finish with FPS game, lethal, armory-model rigor, equipment silhouettes-fan detail; finish with concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Precise production finish with clean edges, no motion effects and no background scene.',
       key_features:
-        'equipment silhouettes concept-sheet style with functional lethality readability, industrial precision, and controlled silhouette authority; Side view, mechanical detail, magazine/guard; Gunmetal, tactical finish, equipment silhouettes-grade metals; Scratched metal, production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure',
+        'strict side elevation; full length across the frame; cross-section slices; hand silhouette for scale; one accent material',
       creative_brief:
-        "Apply equipment silhouettes Design as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through equipment silhouettes concept-sheet style with functional lethality readability, industrial precision, and controlled silhouette authority, Side view, mechanical detail, magazine/guard, Scratched metal, production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Weapon Design as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -385,28 +377,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Thumbnail Silhouette Exploration',
     category: '4. Concept Art',
     negativePrompt:
-      'detailed, polished, colored, finished, rendered, final, clean, refined, tight, one version, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter',
+      'readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, rigid grid of identical poses, internal detail, detailed, polished, colored, finished, rendered, final, clean, refined, tight, one version, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'small-read composition study Silhouette Exploration acts as a transferable illustration router: start from Value-small-read composition study silhouette ideation focused on shape readability and rapid production-design iteration, Multi-variant silhouette grid, negative-space testing, high read-at-a-glance contrast and production concept-art system built from iteration discipline, silhouette testing, material exploration, design readability, and pitch-ready visual decisions, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Pose silhouette thumbnails: the subject drawn as a scatter of small solid brush-pen silhouettes in different poses and actions, testing gesture readability.',
       subject_treatment:
-        'Transform any prompt subject through Bold filled contours with minimal or no internal linework; preserve the requested subject while routing it through design exploration, asset logic, value blocking, scale cues, iteration rows, paintover marks, or production-readability constraints, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject and its identity as the thing being designed; this deliverable owns a sketchbook spread of ten to fifteen pose silhouettes of the same subject, each in a different action, and that layout replaces the requested framing.',
       color_and_tone:
-        'Build color with Strict 3-value grayscale (black, mid gray, white); use color as concept decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Black brush-pen fills on warm toned sketchbook paper, with one grey marker for ground shadows and overlaps.',
       lighting_and_shadow:
-        'Handle light through Light logic expressed only through value grouping and rim separation; shape light for ideation clarity through value block-in, keyframe contrast, material test highlights, callout illumination, or pitch-frame atmosphere, so value structure supports the illustration process and does not overwrite the requested content.',
+        'No modeled light; readability comes only from outline and the negative space between limbs.',
       texture_and_material:
-        'Render Matte digital block-fill with slight brush-edge variance; surface detail should reveal brush passes, photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics, foliage clusters, or weapon material tiers when named, keeping material scale coherent and avoiding noisy filler texture.',
+        'Brush-pen edges with dry-brush breaks, varied thumbnail sizes, faint pencil construction under some of the ink.',
       camera_and_composition:
-        'Structure the image through Controlled proportion and mass variation across comparative grid; compose through production hierarchy, variants, orthographic logic, isometric staging, silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Exploratory, energetic, design-lab momentum, mood carried by small-read composition study Silhouette Exploration craft, material pressure, and visual restraint; derive mood from exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or production-room clarity, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Ten to fifteen thumbnails scattered across a sketchbook spread, each standing on a small shadow ellipse, varied in scale and energy.',
+      atmosphere_and_mood: 'Quick and searching, hunting for the one pose that reads.',
       rendering_and_quality:
-        'Finish with Deliberately rough ideation pass prioritizing quantity and clarity; finish with concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Rough ink thumbnails only, no internal detail, no rendering, no finished figure.',
       key_features:
-        'Value-small-read composition study silhouette ideation focused on shape readability and rapid production-design iteration; Multi-variant silhouette grid, negative-space testing, high read-at-a-glance contrast; Strict 3-value grayscale (black, mid gray, white); Matte digital block-fill with slight brush-edge variance; Controlled proportion and mass variation across comparative grid',
+        'scattered pose silhouettes; black brush-pen fills; toned sketchbook paper; grey ground-shadow ellipses; gesture readability test',
       creative_brief:
-        "Apply small-read composition study Silhouette Exploration as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Value-small-read composition study silhouette ideation focused on shape readability and rapid production-design iteration, Multi-variant silhouette grid, negative-space testing, high read-at-a-glance contrast, Matte digital block-fill with slight brush-edge variance without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Thumbnail Silhouette Exploration as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -414,28 +405,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Photobash Paintover Iteration',
     category: '4. Concept Art',
     negativePrompt:
-      'clean, pure illustration, single medium, hand-painted only, smooth, finished, final, one-pass, unlayered, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter',
+      'readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, two different compositions, single untouched image, pure illustration, single medium, hand-painted only, one-pass, unlayered, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Photobash Paintover Iteration acts as a transferable illustration router: start from Hybrid photobash-and-paintover concept rendering, Photobash Paintover Iteration production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure, Composite seam blending, adjustment-grade cohesion, overpainted focal hierarchy and production concept-art system built from iteration discipline, silhouette testing, material exploration, design readability, and pitch-ready visual decisions, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Paintover demonstration: the same frame shown as a raw photobash collage and then as a painted-over concept, side by side.',
       subject_treatment:
-        'Transform any prompt subject through Cutout-based structural edges softened by targeted paint integration; preserve the requested subject while routing it through design exploration, asset logic, value blocking, scale cues, iteration rows, paintover marks, or production-readability constraints, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject and its identity as the thing being designed; this deliverable owns a split frame, the raw photo collage on one side and the resolved paintover of the identical composition on the other, and that layout replaces the requested framing.',
       color_and_tone:
-        'Build color with Source-photo gamut unified by global grade and paint harmonization; use color as concept decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Raw half with mismatched photo color and exposure; painted half pulled into one grade and simplified value groups.',
       lighting_and_shadow:
-        'Handle light through Mixed-source lighting normalized through paint corrections and value balancing; shape light for ideation clarity through value block-in, keyframe contrast, material test highlights, callout illumination, or pitch-frame atmosphere, so value structure supports the illustration process and does not overwrite the requested content.',
+        'The raw collage shows conflicting light directions; the paintover resolves them into one dominant key and clean shadows.',
       texture_and_material:
-        'Render Photo-detail patches with visible brush unification passes; surface detail should reveal brush passes, photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics, foliage clusters, or weapon material tiers when named, keeping material scale coherent and avoiding noisy filler texture.',
+        'Hard cut edges and visible stock seams on the raw side; painted strokes knitting fragments together and removing noise on the other.',
       camera_and_composition:
-        'Structure the image through Perspective reconciliation of disparate source fragments; compose through production hierarchy, variants, orthographic logic, isometric staging, silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Pragmatic, production-driven, high-iteration studio workflow; derive mood from exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or production-room clarity, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Identical composition repeated in two halves or three stages across, same horizon and perspective, so the progress reads instantly.',
+      atmosphere_and_mood: 'Instructive and satisfying, chaos resolved into intent.',
       rendering_and_quality:
-        'Finish with Fast mixed-media visualization with controlled seam management; finish with concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Process-demonstration finish, the paintover side at concept-final level and the raw side left deliberately crude.',
       key_features:
-        'Hybrid photobash-and-paintover concept rendering, Photobash Paintover Iteration production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure; Composite seam blending, adjustment-grade cohesion, overpainted focal hierarchy; Source-photo gamut unified by global grade and paint harmonization; Photo-detail patches with visible brush unification passes; Perspective reconciliation of disparate source fragments',
+        'split before-and-after frame; raw photo collage with seams; resolved paintover; identical composition; one unifying grade',
       creative_brief:
-        "Apply Photobash Paintover Iteration as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Hybrid photobash-and-paintover concept rendering, Photobash Paintover Iteration production design clarity, iteration logic, silhouette readability, material exploration, and concept-art decision pressure, Composite seam blending, adjustment-grade cohesion, overpainted focal hierarchy, Photo-detail patches with visible brush unification passes without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Photobash Paintover Iteration as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -443,28 +433,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Loose Gesture Energy Sketch',
     category: '4. Concept Art',
     negativePrompt:
-      'tight, clean, finished, rendered, precise, controlled, refined, polished, perfect, measured, careful, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter',
+      'readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, clean vector line, rendered shading, tight, clean, finished, rendered, precise, controlled, refined, polished, perfect, measured, careful, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Loose Gesture Energy Sketch acts as a transferable illustration router: start from Kinetic gesture sketch language with motion-first drawing priority and animation rough energy, Motion trails, layered search marks, anatomy-suggestive rather than anatomical detail and production concept-art system built from iteration discipline, silhouette testing, material exploration, design readability, and pitch-ready visual decisions, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Gesture energy sketch: fast charcoal pencil and brush-pen lines chasing the action, with repeated search lines, a line of action and motion trails.',
       subject_treatment:
-        'Transform any prompt subject through Long sweeping arcs, repeated search lines, pressure-led scribble massing; preserve the requested subject while routing it through design exploration, asset logic, value blocking, scale cues, iteration rows, paintover marks, or production-readability constraints, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject, action, setting and camera, and repaint them with this concept-art method; the method sets marks, values and finish but never adds a sheet, grid or panel layout.',
       color_and_tone:
-        'Build color with Monochrome drawing media on warm paper base; use color as concept decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Monochrome graphite or charcoal on cream paper, with one red or blue col-erase pencil for the line of action.',
       lighting_and_shadow:
-        'Handle light through Value implied by stroke density rather than rendered light; shape light for ideation clarity through value block-in, keyframe contrast, material test highlights, callout illumination, or pitch-frame atmosphere, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Minimal value: a few dark accents at weight-bearing points and folds, no modeled light.',
       texture_and_material:
-        'Render Dry graphite/charcoal drag, smudge trails, tooth-sensitive mark breakup; surface detail should reveal brush passes, photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics, foliage clusters, or weapon material tiers when named, keeping material scale coherent and avoiding noisy filler texture.',
+        'Layered search lines, smudged charcoal, broken contours and whip-fast tapering strokes.',
       camera_and_composition:
-        'Structure the image through Dynamic foreshortening and action-curve exaggeration; compose through production hierarchy, variants, orthographic logic, isometric staging, silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Urgent, alive, improvisational studio energy; derive mood from exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or production-room clarity, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Keep the requested view; the figure sits large on the page with motion arcs carrying past the edges.',
+      atmosphere_and_mood: 'Explosive, loose and alive, movement caught mid-breath.',
       rendering_and_quality:
-        'Finish with Loose and energetic draft quality emphasizing movement over finish; finish with concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Unfinished drawing, energy placed before anatomy, no clean-up pass or rendering.',
       key_features:
-        'Kinetic gesture sketch language with motion-first drawing priority and animation rough energy; Motion trails, layered search marks, anatomy-suggestive rather than anatomical detail; Monochrome drawing media on warm paper base; Dry graphite/charcoal drag, smudge trails, tooth-sensitive mark breakup; Dynamic foreshortening and action-curve exaggeration',
+        'layered search lines; colored line of action; charcoal smudges; motion arcs off the page; no clean-up',
       creative_brief:
-        "Apply Loose Gesture Energy Sketch as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Kinetic gesture sketch language with motion-first drawing priority and animation rough energy, Motion trails, layered search marks, anatomy-suggestive rather than anatomical detail, Dry graphite/charcoal drag, smudge trails, tooth-sensitive mark breakup without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Loose Gesture Energy Sketch as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -472,28 +461,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Material Texture Exploration Sheet',
     category: '4. Concept Art',
     negativePrompt:
-      'uniform, single material, untextured, flat, smooth, same everywhere, homogeneous, finished piece, single surface, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter',
+      'readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, known film robot likeness, one flat material everywhere, uniform, single material, untextured, flat, smooth, same everywhere, homogeneous, finished piece, single surface, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Material Texture Exploration Sheet acts as a transferable illustration router: start from Material-study board integrating design sketch and comparative swatches, Swatch matrix, labeled material zones, detail zooms, controlled comparison framework and production concept-art system built from iteration discipline, silhouette testing, material exploration, design readability, and pitch-ready visual decisions, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Material exploration board: a design sketch of the subject beside a grid of candidate swatches and material spheres, each testing a different surface.',
       subject_treatment:
-        'Transform any prompt subject through Precise contour drawing with leader-line callouts and inset annotations; preserve the requested subject while routing it through design exploration, asset logic, value blocking, scale cues, iteration rows, paintover marks, or production-readability constraints, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject and its identity as the thing being designed; this deliverable owns a material board with a central subject study flanked by a swatch matrix and zoom callouts, and that layout replaces the requested framing.',
       color_and_tone:
-        'Build color with Material-true hues organized by functional group; use color as concept decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Material-true hues grouped by role (primary, secondary, trim) on a neutral grey board.',
       lighting_and_shadow:
-        'Handle light through Consistent neutral studio lighting for cross-material comparison; shape light for ideation clarity through value block-in, keyframe contrast, material test highlights, callout illumination, or pitch-frame atmosphere, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Identical studio lighting on every swatch and sphere so gloss, roughness and translucency compare fairly.',
       texture_and_material:
-        'Render Macro texture insets (grain, weave, brushed metal, translucency, patina); surface detail should reveal brush passes, photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics, foliage clusters, or weapon material tiers when named, keeping material scale coherent and avoiding noisy filler texture.',
+        'Each swatch a distinct surface such as hammered copper, crazed enamel, oiled leather, frosted glass or lichen-crusted stone.',
       camera_and_composition:
-        'Structure the image through Orthogonal layout with magnified callout circles and structured grid spacing; compose through production hierarchy, variants, orthographic logic, isometric staging, silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Analytical, didactic, workshop-reference clarity, mood carried by Material Texture Exploration Sheet craft, material pressure, and visual restraint; derive mood from exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or production-room clarity, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Subject study at center or left, swatch squares and spheres in a tidy grid, circular zoom callouts on the subject.',
+      atmosphere_and_mood: 'Analytical and tactile, searching for the right skin.',
       rendering_and_quality:
-        'Finish with Technical-art hybrid sheet optimized for readability and handoff; finish with concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Swatches physically rendered, the subject sketch semi-finished with materials applied in zones.',
       key_features:
-        'Material-study board integrating design sketch and comparative swatches; Swatch matrix, labeled material zones, detail zooms, controlled comparison framework; Material-true hues organized by functional group; Macro texture insets (grain, weave, brushed metal, translucency, patina); Orthogonal layout with magnified callout circles and structured grid spacing',
+        'swatch grid; material spheres; central semi-finished subject study; identical swatch lighting; circular zoom callouts',
       creative_brief:
-        "Apply Material Texture Exploration Sheet as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Material-study board integrating design sketch and comparative swatches, Swatch matrix, labeled material zones, detail zooms, controlled comparison framework, Macro texture insets (grain, weave, brushed metal, translucency, patina) without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Material Texture Exploration Sheet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -501,28 +489,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Mood Color Script Pass',
     category: '4. Concept Art',
     negativePrompt:
-      'detailed linework, finished rendering, sharp focus, character close-up, subject-dominant, tight composition, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter',
+      'readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, single large painting, detailed figures, detailed linework, finished rendering, sharp focus, character close-up, subject-dominant, tight composition, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Mood Color Script Pass acts as a transferable illustration router: start from Color-script environmental painting driven by temporal light progression, Multi-frame mood continuity, temperature mapping, depth via fog stratification and production concept-art system built from iteration discipline, silhouette testing, material exploration, design readability, and pitch-ready visual decisions, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Color script: a sequence of eight to twelve small, loosely painted frames tracing how color and light change through a story.',
       subject_treatment:
-        'Transform any prompt subject through Soft mass blocking with low line dependency and edge hierarchy by depth; preserve the requested subject while routing it through design exploration, asset logic, value blocking, scale cues, iteration rows, paintover marks, or production-readability constraints, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject and its identity as the thing being designed; this deliverable owns a strip of small frames in story order through which the subject travels, and that layout replaces the requested framing.',
       color_and_tone:
-        'Build color with Sequenced temperature arcs from cool dawn to warm noon to nocturnal desaturation; use color as concept decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Each frame dominated by one or two flat hues, the palette shifting beat by beat from calm cool to tense warm to climax red to pale aftermath.',
       lighting_and_shadow:
-        'Handle light through Volumetric scattering, shadow temperature contrast, time-of-day key shifts; shape light for ideation clarity through value block-in, keyframe contrast, material test highlights, callout illumination, or pitch-frame atmosphere, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Light reduced to one key shape per frame, with color temperature doing the storytelling.',
       texture_and_material:
-        'Render Haze layers, particulate glow, diffuse cloud/fog transitions; surface detail should reveal brush passes, photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics, foliage clusters, or weapon material tiers when named, keeping material scale coherent and avoiding noisy filler texture.',
+        'Flat opaque gouache-like digital shapes with visible brush edges and no surface detail.',
       camera_and_composition:
-        'Structure the image through Space defined through color recession and layered atmospheric perspective; compose through production hierarchy, variants, orthographic logic, isometric staging, silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Cinematic, emotive, transitional, light-led storytelling; derive mood from exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or production-room clarity, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Frames of equal size in two or three rows with thin dark gutters, same aspect ratio, story reading left to right.',
+      atmosphere_and_mood: 'An emotional arc readable at a single glance.',
       rendering_and_quality:
-        'Finish with Atmospheric study pass prioritizing mood continuity over detail finish; finish with concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Tiny simplified frames, figures reduced to specks and shapes, no linework.',
       key_features:
-        'Color-script environmental painting driven by temporal light progression; Multi-frame mood continuity, temperature mapping, depth via fog stratification; Sequenced temperature arcs from cool dawn to warm noon to nocturnal desaturation; Haze layers, particulate glow, diffuse cloud/fog transitions; Space defined through color recession and layered atmospheric perspective',
+        'eight to twelve small frames; one or two hues per frame; beat-by-beat palette shift; dark gutters; gouache-like flat shapes',
       creative_brief:
-        "Apply Mood Color Script Pass as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Color-script environmental painting driven by temporal light progression, Multi-frame mood continuity, temperature mapping, depth via fog stratification, Haze layers, particulate glow, diffuse cloud/fog transitions without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Mood Color Script Pass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -530,28 +517,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Silhouette Iteration Sheet',
     category: '4. Concept Art',
     negativePrompt:
-      'detailed, rendered, colored, one design, final, finished, internal detail, texture, single silhouette, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter',
+      'readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, scattered loose layout, gradients, detailed, rendered, colored, one design, final, finished, internal detail, texture, single silhouette, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Silhouette Iteration Sheet acts as a transferable illustration router: start from Comparative silhouette iteration board for shape-language selection, High-contrast silhouette matrix, archetype spread (round/square/triangular/spiky), immediate read testing and production concept-art system built from iteration discipline, silhouette testing, material exploration, design readability, and pitch-ready visual decisions, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Silhouette iteration sheet: design variants of the subject as pure black fills on white, same pose and scale, only the outline changing.',
       subject_treatment:
-        'Transform any prompt subject through Filled contour-only forms with zero interior detail dependency; preserve the requested subject while routing it through design exploration, asset logic, value blocking, scale cues, iteration rows, paintover marks, or production-readability constraints, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject and its identity as the thing being designed; this deliverable owns a rigid grid of twelve to sixteen outline variants of the subject at identical scale and pose, and that layout replaces the requested framing.',
       color_and_tone:
-        'Build color with Binary black-white with optional neutral gray grouping aids; use color as concept decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Binary black on white, with at most one grey fill marking the selected variant.',
       lighting_and_shadow:
-        'Handle light through Non-rendered; readability entirely silhouette-based, process-led value structure, readable highlights, and style-specific shadow behavior; shape light for ideation clarity through value block-in, keyframe contrast, material test highlights, callout illumination, or pitch-frame atmosphere, so value structure supports the illustration process and does not overwrite the requested content.',
+        'No light or interior value at all; every decision lives in the outline.',
       texture_and_material:
-        'Render Flat fill blocks with crisp edge control; surface detail should reveal brush passes, photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics, foliage clusters, or weapon material tiers when named, keeping material scale coherent and avoiding noisy filler texture.',
+        'Crisp vector-clean or lasso-cut edges, shape language varied between round, square, triangular and spiked.',
       camera_and_composition:
-        'Structure the image through Normalized scale grid enabling direct mass/proportion comparison; compose through production hierarchy, variants, orthographic logic, isometric staging, silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Methodical, exploratory, selection-oriented, mood carried by Silhouette Iteration Sheet craft, material pressure, and visual restraint; derive mood from exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or production-room clarity, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Four-by-four or three-by-four grid with equal cells, a shared baseline in each cell, identical camera angle throughout.',
+      atmosphere_and_mood: 'Decisive and comparative, shape language on trial.',
       rendering_and_quality:
-        'Finish with Systematic early-stage design study emphasizing variation breadth; finish with concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Solid flat silhouettes with zero internal detail, no texture and no rendering.',
       key_features:
-        'Comparative silhouette iteration board for shape-language selection; High-contrast silhouette matrix, archetype spread (round/square/triangular/spiky), immediate read testing; Binary black-white with optional neutral gray grouping aids; Flat fill blocks with crisp edge control; Normalized scale grid enabling direct mass/proportion comparison',
+        'pure black silhouettes; rigid equal grid; same pose and scale; varied shape language; outline-only design',
       creative_brief:
-        "Apply Silhouette Iteration Sheet as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Comparative silhouette iteration board for shape-language selection, High-contrast silhouette matrix, archetype spread (round/square/triangular/spiky), immediate read testing, Flat fill blocks with crisp edge control without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Silhouette Iteration Sheet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -559,28 +545,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Rough Environment Pass',
     category: '4. Concept Art',
     negativePrompt:
-      'detailed, finished, character-focused, close-up, tight brushwork, polished, small scale, intimate, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter',
+      'readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, visible brush strokes everywhere, fine surface texture, detailed, finished, character-focused, close-up, tight brushwork, polished, small scale, intimate, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Rough Environment Pass acts as a transferable illustration router: start from Rough environment blockout with macro-shape worldbuilding focus and painterly pre-production scale, Big-shape hierarchy, focal light anchor, layered recession planes, small-read composition study legibility and production concept-art system built from iteration discipline, silhouette testing, material exploration, design readability, and pitch-ready visual decisions, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Rough environment pass: the location blocked in with three to five flat lasso-cut value planes stacked in depth, one focal light and almost no texture.',
       subject_treatment:
-        'Transform any prompt subject through Broad brush masses, low-detail edge control, minimal explicit linework; preserve the requested subject while routing it through design exploration, asset logic, value blocking, scale cues, iteration rows, paintover marks, or production-readability constraints, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject, action, setting and camera, and repaint them with this concept-art method; the method sets marks, values and finish but never adds a sheet, grid or panel layout.',
       color_and_tone:
-        'Build color with Depth-driven warm/cool separation with fog-desaturated distance bands; use color as concept decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Near-monochrome planes stepping from dark foreground to pale background, one tint per plane and a single bright focal light.',
       lighting_and_shadow:
-        'Handle light through Single clear key direction with volumetric atmosphere indication; shape light for ideation clarity through value block-in, keyframe contrast, material test highlights, callout illumination, or pitch-frame atmosphere, so value structure supports the illustration process and does not overwrite the requested content.',
+        'One large light source such as a sky gap, sun shaft or glow defines the focal point, planes silhouetted against it.',
       texture_and_material:
-        'Render Painterly large-stroke texture and soft haze transitions; surface detail should reveal brush passes, photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics, foliage clusters, or weapon material tiers when named, keeping material scale coherent and avoiding noisy filler texture.',
+        'Hard lasso edges and gradient fills, a touch of textured brush at plane edges, no surface detail.',
       camera_and_composition:
-        'Structure the image through near field exaggeration and atmospheric compression for depth readability; compose through production hierarchy, variants, orthographic logic, isometric staging, silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Expansive, exploratory, pre-production wonder, mood carried by Rough Environment Pass craft, material pressure, and visual restraint; derive mood from exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or production-room clarity, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Keep the requested view; big-shape hierarchy with a dark foreground framing mass and strong recession.',
+      atmosphere_and_mood: 'Monumental and quiet, scale decided before detail.',
       rendering_and_quality:
-        'Finish with Early environment pass prioritizing composition, scale, and mood; finish with concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Early blockout finish, shapes readable at thumbnail size and nothing resolved; distinct from brush-led speedpainting.',
       key_features:
-        'Rough environment blockout with macro-shape worldbuilding focus and painterly pre-production scale; Big-shape hierarchy, focal light anchor, layered recession planes, small-read composition study legibility; Depth-driven warm/cool separation with fog-desaturated distance bands; Painterly large-stroke texture and soft haze transitions; near field exaggeration and atmospheric compression for depth readability',
+        'three to five flat value planes; lasso-cut edges; gradient fills; single focal light; no surface detail',
       creative_brief:
-        "Apply Rough Environment Pass as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Rough environment blockout with macro-shape worldbuilding focus and painterly pre-production scale, Big-shape hierarchy, focal light anchor, layered recession planes, small-read composition study legibility, Painterly large-stroke texture and soft haze transitions without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Rough Environment Pass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -588,28 +573,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Creature Design Iteration',
     category: '4. Concept Art',
     negativePrompt:
-      'human, normal, domestic, cute, ordinary, recognizable, existing animal, final render, single version, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter',
+      'readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, single finished creature, painted hero render, cute, existing animal, final render, single version, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'organism designs Design Iteration acts as a transferable illustration router: start from Speculative organism designs-design sheet with layered anatomical logic and believable biological imagination, Anatomy callouts, adaptation variants, transparent layer studies, locomotion-read checks and production concept-art system built from iteration discipline, silhouette testing, material exploration, design readability, and pitch-ready visual decisions, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Creature iteration page: six to nine quick graphite and grey-marker variants of one creature concept, each testing a different adaptation.',
       subject_treatment:
-        'Transform any prompt subject through Construction underdrawings, skeletal overlays, muscular contour notes; preserve the requested subject while routing it through design exploration, asset logic, value blocking, scale cues, iteration rows, paintover marks, or production-readability constraints, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject and its identity as the thing being designed; this deliverable owns a page of six to nine variants of the subject as a creature, one circled as the pick, and that layout replaces the requested framing.',
       color_and_tone:
-        'Build color with Neutral sketch tones with limited functional overlay coding; use color as concept decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Graphite grey and cool grey markers on off-white bond paper, one flat color wash only on the selected variant.',
       lighting_and_shadow:
-        'Handle light through Form-reading study light with selective translucency cues; shape light for ideation clarity through value block-in, keyframe contrast, material test highlights, callout illumination, or pitch-frame atmosphere, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Simple top-light shading on each variant, with shadows laid as single marker tones.',
       texture_and_material:
-        'Render Mixed biological surfaces (scale, fur, membrane, carapace) as comparative tests; surface detail should reveal brush passes, photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics, foliage clusters, or weapon material tiers when named, keeping material scale coherent and avoiding noisy filler texture.',
+        'Loose searching graphite lines, marker bleed, eraser corrections and overlapping construction.',
       camera_and_composition:
-        'Structure the image through Multi-pose and layered ghost-view layout for structural analysis; compose through production hierarchy, variants, orthographic logic, isometric staging, silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Scientific, exploratory, speculative naturalism, mood carried by organism designs Design Iteration craft, material pressure, and visual restraint; derive mood from exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or production-room clarity, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Variants in a loose grid at matching scale and the same three-quarter angle, the favorite ringed with a pen circle.',
+      atmosphere_and_mood: 'Curious and generative, a creature evolving on the page.',
       rendering_and_quality:
-        'Finish with Iterative concept-study fidelity prioritizing function over polish; finish with concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Rough exploratory drawings, none finished, the chosen one slightly more developed than the rest.',
       key_features:
-        'Speculative organism designs-design sheet with layered anatomical logic and believable biological imagination; Anatomy callouts, adaptation variants, transparent layer studies, locomotion-read checks; Neutral sketch tones with limited functional overlay coding; Mixed biological surfaces (scale, fur, membrane, carapace) as comparative tests; Multi-pose and layered ghost-view layout for structural analysis',
+        'six to nine creature variants; graphite and grey marker; one color-washed pick; pen circle; matching angle and scale',
       creative_brief:
-        "Apply organism designs Design Iteration as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Speculative organism designs-design sheet with layered anatomical logic and believable biological imagination, Anatomy callouts, adaptation variants, transparent layer studies, locomotion-read checks, Mixed biological surfaces (scale, fur, membrane, carapace) as comparative tests without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Creature Design Iteration as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -617,28 +601,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Prop Variant Design Sheet',
     category: '4. Concept Art',
     negativePrompt:
-      'one version, single design, no comparison, no annotation, unclear, vague, floating, contextless, unlabeled, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter',
+      'readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, single design, variants at different scales, one version, no comparison, no annotation, unclear, vague, floating, contextless, unlabeled, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Prop Variant Design Sheet acts as a transferable illustration router: start from Prop-variant design sheet with progression and function-first comparison, Variant taxonomy, functional callouts, scale references, modular part breakdown and production concept-art system built from iteration discipline, silhouette testing, material exploration, design readability, and pitch-ready visual decisions, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Prop variant sheet: one prop type redesigned five to seven times side by side, each version changing function, culture or material on a shared base proportion.',
       subject_treatment:
-        'Transform any prompt subject through Clean orthographic contours, aligned variant rows, leader-line annotations; preserve the requested subject while routing it through design exploration, asset logic, value blocking, scale cues, iteration rows, paintover marks, or production-readability constraints, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject and its identity as the thing being designed; this deliverable owns a lineup of five to seven variants of the subject on one baseline at identical scale, and that layout replaces the requested framing.',
       color_and_tone:
-        'Build color with Material-coded neutrals with restrained accent hierarchy for tier differentiation; use color as concept decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Neutral ground with a restrained material-coded palette per variant and one accent hue that marks faction or function.',
       lighting_and_shadow:
-        'Handle light through Controlled neutral lighting to preserve apples-to-apples comparison; shape light for ideation clarity through value block-in, keyframe contrast, material test highlights, callout illumination, or pitch-frame atmosphere, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Uniform soft top-left light on every variant, each with the same small contact shadow so they compare fairly.',
       texture_and_material:
-        'Render Controlled finish studies (grain, brushed metal, wrap, wear, inset materials); surface detail should reveal brush passes, photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics, foliage clusters, or weapon material tiers when named, keeping material scale coherent and avoiding noisy filler texture.',
+        'Painted material shorthand, crisp silhouettes, and modular parts visibly swapped between versions.',
       camera_and_composition:
-        'Structure the image through Grid-aligned side views with detail magnification and exploded subsets; compose through production hierarchy, variants, orthographic logic, isometric staging, silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Methodical, engineering-aware, iterative craft discipline; derive mood from exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or production-room clarity, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Straight front or side orthographic view, variants lined up on a baseline at identical scale with a small hand silhouette.',
+      atmosphere_and_mood: 'Systematic and inventive, choices laid out for a decision.',
       rendering_and_quality:
-        'Finish with Production-oriented iterative sheet balancing readability and specificity; finish with concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Medium finish with every variant at equal detail, numbered only by simple dots instead of labels.',
       key_features:
-        'Prop-variant design sheet with progression and function-first comparison; Variant taxonomy, functional callouts, scale references, modular part breakdown; Material-coded neutrals with restrained accent hierarchy for tier differentiation; Controlled finish studies (grain, brushed metal, wrap, wear, inset materials); Grid-aligned side views with detail magnification and exploded subsets',
+        'five to seven variants in a row; shared base proportion; identical scale and light; faction accent hue; swapped modular parts',
       creative_brief:
-        "Apply Prop Variant Design Sheet as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Prop-variant design sheet with progression and function-first comparison, Variant taxonomy, functional callouts, scale references, modular part breakdown, Controlled finish studies (grain, brushed metal, wrap, wear, inset materials) without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Prop Variant Design Sheet as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -646,28 +629,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Architecture Massing Model',
     category: '4. Concept Art',
     negativePrompt:
-      'detailed, rendered, textured, realistic, photo, final building, polished, interior, furniture, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter',
+      'readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, dollhouse cutaway, finished interior, painted facades, detailed, rendered, textured, final building, polished, interior, furniture, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Architecture Massing Model acts as a transferable illustration router: start from Handmade architectural massing model study, Volumetric hierarchy, scale cues, handcrafted assembly traces and production concept-art system built from iteration discipline, silhouette testing, material exploration, design readability, and pitch-ready visual decisions, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Architectural massing model: the subject rebuilt as a handmade study model of white foam board, chipboard and basswood blocks on a flat base.',
       subject_treatment:
-        'Transform any prompt subject through Blocky volumetric planes with rough-cut contour fidelity; preserve the requested subject while routing it through design exploration, asset logic, value blocking, scale cues, iteration rows, paintover marks, or production-readability constraints, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject, its layout and the requested view, and rebuild every volume as a simplified study model block without facades, furniture or interiors.',
       color_and_tone:
-        'Build color with Neutral model-shop tones (foam white, chipboard gray, wood tan); use color as concept decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Foam white, chipboard grey-brown and basswood tan, with one colored acrylic block marking the focal volume.',
       lighting_and_shadow:
-        'Handle light through Simple studio top/side light to emphasize shadow mass separation; shape light for ideation clarity through value block-in, keyframe contrast, material test highlights, callout illumination, or pitch-frame atmosphere, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Soft window daylight or a single desk lamp raking across the model, crisp small shadows revealing the volumes.',
       texture_and_material:
-        'Render Visible foam core edges, wood grain hints, glue seam artifacts; surface detail should reveal brush passes, photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics, foliage clusters, or weapon material tiers when named, keeping material scale coherent and avoiding noisy filler texture.',
+        'Visible cut foam edges, glue seams, pin heads, blade-scored window lines and tiny unpainted scale figures.',
       camera_and_composition:
-        'Structure the image through Scale-model compression with contextual block simplification; compose through production hierarchy, variants, orthographic logic, isometric staging, silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Workshop-iterative, practical, form-discovery focus, mood carried by Architecture Massing Model craft, material pressure, and visual restraint; derive mood from exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or production-room clarity, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Keep the requested view, framed as a photograph of the model on its base with shallow depth of field.',
+      atmosphere_and_mood: 'Thoughtful and tactile, ideas tested in cardboard.',
       rendering_and_quality:
-        'Finish with Early-phase physical prototype realism with low-finish honesty; finish with concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Real physical model look with no finished facades, no rendered materials and no dollhouse interior.',
       key_features:
-        'Handmade architectural massing model study; Volumetric hierarchy, scale cues, handcrafted assembly traces; Neutral model-shop tones (foam white, chipboard gray, wood tan); Visible foam core edges, wood grain hints, glue seam artifacts; Scale-model compression with contextual block simplification',
+        'white foam and chipboard volumes; basswood blocks; glue seams and pin heads; one colored focal block; photographed on a base',
       creative_brief:
-        "Apply Architecture Massing Model as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Handmade architectural massing model study, Volumetric hierarchy, scale cues, handcrafted assembly traces, Visible foam core edges, wood grain hints, glue seam artifacts without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Architecture Massing Model as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -675,28 +657,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Costume Design Exploration Board',
     category: '4. Concept Art',
     negativePrompt:
-      'finished, one version, no comparison, no swatches, unlabeled, vague, single option, no fabric, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter',
+      'readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, orthographic turnaround layout, modern streetwear, finished, one version, no comparison, no swatches, unlabeled, vague, single option, no fabric, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Costume Design Exploration Board acts as a transferable illustration router: start from Costume exploration board combining silhouette, fabric, and colorway studies, Silhouette matrices, swatch clusters, trim notes, color strip comparisons and production concept-art system built from iteration discipline, silhouette testing, material exploration, design readability, and pitch-ready visual decisions, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Costume design board: one figure in a hero costume drawing with alternate colorways and fabric swatches pinned around it.',
       subject_treatment:
-        'Transform any prompt subject through Clean croquis-based variants with annotation leaders and modular panel layout; preserve the requested subject while routing it through design exploration, asset logic, value blocking, scale cues, iteration rows, paintover marks, or production-readability constraints, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject and its identity as the thing being designed; this deliverable owns a costume plate with a full-length hero figure, a row of colorway mini-figures and pinned swatches, and that layout replaces the requested framing.',
       color_and_tone:
-        'Build color with Multi-fabric palette families organized by role, era, and accent logic; use color as concept decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Three or four colorway alternatives shown as small repeat figures, and true fabric colors in the swatches.',
       lighting_and_shadow:
-        'Handle light through Neutral comparison lighting with controlled sheen read on textiles; shape light for ideation clarity through value block-in, keyframe contrast, material test highlights, callout illumination, or pitch-frame atmosphere, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Even studio light on the figure; swatches lie flat with slight pin shadows.',
       texture_and_material:
-        'Render Swatch-forward surface representation (weave, nap, grain, luster); surface detail should reveal brush passes, photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics, foliage clusters, or weapon material tiers when named, keeping material scale coherent and avoiding noisy filler texture.',
+        'Pencil and watercolor figure with real fabric scraps pinned beside it: wool, brocade, leather, chainmail and trim.',
       camera_and_composition:
-        'Structure the image through Grid/pinboard organization for side-by-side option evaluation; compose through production hierarchy, variants, orthographic logic, isometric staging, silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Iterative studio workflow, design-review readiness; derive mood from exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or production-room clarity, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Hero figure full length at center, colorway mini-figures in a row, swatches clustered along one side.',
+      atmosphere_and_mood: 'Tactile and theatrical, a costume about to be cut and sewn.',
       rendering_and_quality:
-        'Finish with Concept-development board clarity over final-fashion polish; finish with concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Watercolor costume illustration with photo-real swatches; distinct from an orthographic turnaround.',
       key_features:
-        'Costume exploration board combining silhouette, fabric, and colorway studies; Silhouette matrices, swatch clusters, trim notes, color strip comparisons; Multi-fabric palette families organized by role, era, and accent logic; Swatch-forward surface representation (weave, nap, grain, luster); Grid/pinboard organization for side-by-side option evaluation',
+        'full-length costume plate; colorway mini-figures; pinned fabric swatches; pencil and watercolor; theatrical silhouette',
       creative_brief:
-        "Apply Costume Design Exploration Board as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Costume exploration board combining silhouette, fabric, and colorway studies, Silhouette matrices, swatch clusters, trim notes, color strip comparisons, Swatch-forward surface representation (weave, nap, grain, luster) without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Costume Design Exploration Board as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -704,28 +685,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Lighting Scenario Pass',
     category: '4. Concept Art',
     negativePrompt:
-      'single lighting, one time of day, consistent mood, no comparison, flat, character focused, subject prominent, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter',
+      'readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, changing camera between panels, single image, single lighting, one time of day, consistent mood, no comparison, flat, character focused, subject prominent, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Lighting Scenario Pass acts as a transferable illustration router: start from Iterative color-script style focused on controlled multi-pass illumination studies and mood transfer through light alone, Multi-pass lighting matrix, color-temperature progression, shadow-arc logic, atmospheric phase control, mood-through-illumination methodology and production concept-art system built from iteration discipline, silhouette testing, material exploration, design readability, and pitch-ready visual decisions, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Lighting scenario pass: the same fixed view painted four times under different light, like a lighting artist testing times of day and weather.',
       subject_treatment:
-        'Transform any prompt subject through Stable compositional scaffold with constant geometry, variation expressed through light patterning, edge softness, and shadow behavior; preserve the requested subject while routing it through design exploration, asset logic, value blocking, scale cues, iteration rows, paintover marks, or production-readability constraints, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject and its identity as the thing being designed; this deliverable owns a two-by-two grid of the identical composition in which only light and weather change, and that layout replaces the requested framing.',
       color_and_tone:
-        'Build color with Phase-based palette families from cool pre-dawn violets to warm amber daylight, magenta dusk transitions, and deep nocturnal indigos; use color as concept decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Each panel a different temperature story: cool dawn mist, harsh neutral noon, red dusk, torchlit or moonlit night.',
       lighting_and_shadow:
-        'Handle light through Systematic key-angle sweeps, temperature-shift ladders, variable diffusion density, calibrated contrast steps across render passes; shape light for ideation clarity through value block-in, keyframe contrast, material test highlights, callout illumination, or pitch-frame atmosphere, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Shadow direction, length and hardness change consistently per panel while the geometry stays identical.',
       texture_and_material:
-        'Render Per-pass volumetric response variation, haze density modulation, shadow hardness tuning, reflective intensity mapping; surface detail should reveal brush passes, photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics, foliage clusters, or weapon material tiers when named, keeping material scale coherent and avoiding noisy filler texture.',
+        'Loose painterly surfaces kept the same in every panel so only the light response differs.',
       camera_and_composition:
-        'Structure the image through Fixed camera and structure with depth perception driven by atmosphere and luminance distribution changes; compose through production hierarchy, variants, orthographic logic, isometric staging, silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Analytical yet emotional, cinematic, temporal, expressive, study-driven; derive mood from exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or production-room clarity, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Two-by-two grid of identical framing, same horizon and camera, with thin gutters between panels.',
+      atmosphere_and_mood: 'Comparative and atmospheric, one place with four moods.',
       rendering_and_quality:
-        'Finish with Production-grade lighting development board aesthetic with coherent comparability between passes and disciplined cinematic polish; finish with concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Medium-finish paintings of equal detail; the contrast between panels is the whole point.',
       key_features:
-        'Iterative color-script style focused on controlled multi-pass illumination studies and mood transfer through light alone; Multi-pass lighting matrix, color-temperature progression, shadow-arc logic, atmospheric phase control, mood-through-illumination methodology; Phase-based palette families from cool pre-dawn violets to warm amber daylight, magenta dusk transitions, and deep nocturnal indigos; Per-pass volumetric response variation, haze density modulation, shadow hardness tuning, reflective intensity mapping; Fixed camera and structure with depth perception driven by atmosphere and luminance distribution changes',
+        'two-by-two grid; identical composition; four times of day or weather; consistent shadow logic; equal finish',
       creative_brief:
-        "Apply Lighting Scenario Pass as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Iterative color-script style focused on controlled multi-pass illumination studies and mood transfer through light alone, Multi-pass lighting matrix, color-temperature progression, shadow-arc logic, atmospheric phase control, mood-through-illumination methodology, Per-pass volumetric response variation, haze density modulation, shadow hardness tuning, reflective intensity mapping without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Lighting Scenario Pass as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -733,28 +713,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Foliage Design Kit',
     category: '4. Concept Art',
     negativePrompt:
-      'bare, dead, no plants, desert, empty, urban, concrete, interior, no vegetation, sterile, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter',
+      'readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, full landscape scene, overlapping plants, no plants, no vegetation, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Foliage Design Kit acts as a transferable illustration router: start from Vegetation design kit with broad botanical shape-library coverage, natural poetry, and production readability, Silhouette readability sets, species variation matrices, season-state alternatives and production concept-art system built from iteration discipline, silhouette testing, material exploration, design readability, and pitch-ready visual decisions, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Foliage design kit: a library sheet of isolated plant assets, from trees to groundcover, designed as one family sharing a shape language.',
       subject_treatment:
-        'Transform any prompt subject through Organic contour families spanning canopy, shrub, vine, and groundcover archetypes; preserve the requested subject while routing it through design exploration, asset logic, value blocking, scale cues, iteration rows, paintover marks, or production-readability constraints, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject and its identity as the thing being designed; this deliverable owns an asset-library sheet of isolated vegetation arranged in rows by size, themed after the subject or biome, and that layout replaces the requested framing.',
       color_and_tone:
-        'Build color with Seasonal green-driven spectrum with bark/flower accent channels; use color as concept decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Species palette with seasonal or blight variants side by side on a neutral light ground.',
       lighting_and_shadow:
-        'Handle light through Dappled canopy light with subsurface hints and cool understory shadow; shape light for ideation clarity through value block-in, keyframe contrast, material test highlights, callout illumination, or pitch-frame atmosphere, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Consistent top-left daylight on every plant with flat, small contact shadows.',
       texture_and_material:
-        'Render Differentiated plant surface behaviors (waxy, fibrous, rough bark, soft moss); surface detail should reveal brush passes, photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics, foliage clusters, or weapon material tiers when named, keeping material scale coherent and avoiding noisy filler texture.',
+        'Painted leaf clusters grouped into readable masses, bark and stem detail only at close scale.',
       camera_and_composition:
-        'Structure the image through Layered ecosystem depth from near field clusters to atmospheric canopy fade; compose through production hierarchy, variants, orthographic logic, isometric staging, silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Lush, breathable, ecosystem-rich, mood carried by Foliage Design Kit craft, material pressure, and visual restraint; derive mood from exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or production-room clarity, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Assets in rows from tall trees to small groundcover, all at one scale with a human silhouette, no scene around them.',
+      atmosphere_and_mood: 'Lush and organized, a biome sorted for building.',
       rendering_and_quality:
-        'Finish with Reference-oriented foliage exploration balancing stylization and realism; finish with concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Game-art painted finish, crisp silhouettes, each asset ready to cut out.',
       key_features:
-        'Vegetation design kit with broad botanical shape-library coverage, natural poetry, and production readability; Silhouette readability sets, species variation matrices, season-state alternatives; Seasonal green-driven spectrum with bark/flower accent channels; Differentiated plant surface behaviors (waxy, fibrous, rough bark, soft moss); Layered ecosystem depth from near field clusters to atmospheric canopy fade',
+        'isolated plant assets in rows; one shared shape language; seasonal variants; human scale silhouette; neutral ground',
       creative_brief:
-        "Apply Foliage Design Kit as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Vegetation design kit with broad botanical shape-library coverage, natural poetry, and production readability, Silhouette readability sets, species variation matrices, season-state alternatives, Differentiated plant surface behaviors (waxy, fibrous, rough bark, soft moss) without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Foliage Design Kit as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -762,28 +741,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Weapon Tier Progression',
     category: '4. Concept Art',
     negativePrompt:
-      'one version, static, no comparison, flat, no materials, unlabeled, single option, no evolution, just final, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter',
+      'readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, unrelated items per tier, glow on every tier, one version, static, no comparison, flat, no materials, unlabeled, single option, no evolution, just final, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'equipment silhouettes Tier Progression acts as a transferable illustration router: start from Tiered equipment progression sheet emphasizing upgrade readability, Multi-tier continuity, rarity-coded visual jumps, consistent proportion baseline and production concept-art system built from iteration discipline, silhouette testing, material exploration, design readability, and pitch-ready visual decisions, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Upgrade progression sheet: the same weapon or item shown in four or five tiers side by side, growing from crude utility to ornate masterwork.',
       subject_treatment:
-        'Transform any prompt subject through Stable base silhouette with controlled complexity increase per tier; preserve the requested subject while routing it through design exploration, asset logic, value blocking, scale cues, iteration rows, paintover marks, or production-readability constraints, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject and its identity as the thing being designed; this deliverable owns a row of four or five upgrade tiers of the subject on one baseline, crude on the left and masterwork on the right, and that layout replaces the requested framing.',
       color_and_tone:
-        'Build color with Structured rarity progression from muted utilitarian to luminous high-tier accents; use color as concept decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Tier-coded palette: raw iron and wood first, then steel, then gilt and enamel, the final tier with one controlled glowing accent.',
       lighting_and_shadow:
-        'Handle light through Controlled comparison light with incremental specular/emissive escalation; shape light for ideation clarity through value block-in, keyframe contrast, material test highlights, callout illumination, or pitch-frame atmosphere, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Identical soft light on every tier, the final tier adding its own restrained inner glow.',
       texture_and_material:
-        'Render Progressive material sophistication (wear, polish, inlay, arcane finish); surface detail should reveal brush passes, photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics, foliage clusters, or weapon material tiers when named, keeping material scale coherent and avoiding noisy filler texture.',
+        'Materials upgrade step by step: rust and splinters, polished steel, engraved gold and set gems.',
       camera_and_composition:
-        'Structure the image through Fixed-view horizontal evolution layout with optional detail insets; compose through production hierarchy, variants, orthographic logic, isometric staging, silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Aspirational, reward-centric, game-economy legibility, mood carried by equipment silhouettes Tier Progression craft, material pressure, and visual restraint; derive mood from exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or production-room clarity, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Tiers lined up at the same scale and angle with even spacing on a shared baseline.',
+      atmosphere_and_mood: 'Rewarding and aspirational, progress readable at a glance.',
       rendering_and_quality:
-        'Finish with Comparative design board optimized for progression clarity; finish with concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Game-asset paint finish with a consistent proportion baseline, so each upgrade reads as evolution.',
       key_features:
-        'Tiered equipment progression sheet emphasizing upgrade readability; Multi-tier continuity, rarity-coded visual jumps, consistent proportion baseline; Structured rarity progression from muted utilitarian to luminous high-tier accents; Progressive material sophistication (wear, polish, inlay, arcane finish); Fixed-view horizontal evolution layout with optional detail insets',
+        'four or five tiers; crude to masterwork progression; tier-coded materials; shared baseline; one glowing final accent',
       creative_brief:
-        "Apply equipment silhouettes Tier Progression as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Tiered equipment progression sheet emphasizing upgrade readability, Multi-tier continuity, rarity-coded visual jumps, consistent proportion baseline, Progressive material sophistication (wear, polish, inlay, arcane finish) without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Weapon Tier Progression as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -791,28 +769,25 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Composition Thumbnail Grid',
     category: '4. Concept Art',
     negativePrompt:
-      'rendered, polished, detailed, one frame, single composition, finished, color, loud, busy, tight, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter',
+      'readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, twelve different scenes, rendered frames, rendered, polished, detailed, one frame, single composition, finished, color, loud, busy, tight, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'Composition small-read composition study Grid acts as a transferable illustration router: start from Composition small-read composition study grid for shot-language exploration and suspense-focused camera grammar, Shot-size variety, perspective alternation, compositional cadence mapping and production concept-art system built from iteration discipline, silhouette testing, material exploration, design readability, and pitch-ready visual decisions, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Composition thumbnail grid: the same scene explored in twelve small pencil-framed rectangles, each testing a different camera and shot size.',
       subject_treatment:
-        'Transform any prompt subject through Loose value thumbnails with framing guides and camera-angle markers; preserve the requested subject while routing it through design exploration, asset logic, value blocking, scale cues, iteration rows, paintover marks, or production-readability constraints, keeping the requested identity, silhouette, pose, object function, or setting legible.',
-      color_and_tone:
-        'Build color with Predominantly grayscale with optional restrained warm/cool key differentiation; use color as concept decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Keep the prompt subject and its identity as the thing being designed; this deliverable owns a grid of twelve framing studies of the one subject and scene, and that layout replaces the requested framing.',
+      color_and_tone: 'Three grey values per thumbnail, graphite on white bond paper, no color.',
       lighting_and_shadow:
-        'Handle light through Per-frame key direction studies using simple value grouping; shape light for ideation clarity through value block-in, keyframe contrast, material test highlights, callout illumination, or pitch-frame atmosphere, so value structure supports the illustration process and does not overwrite the requested content.',
+        'Light simplified to one lit shape against dark masses in each thumbnail to test focal pull.',
       texture_and_material:
-        'Render Marker/pencil roughness retained for planning immediacy; surface detail should reveal brush passes, photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics, foliage clusters, or weapon material tiers when named, keeping material scale coherent and avoiding noisy filler texture.',
+        'Soft graphite blocking, marker-grey fills, ruled rectangle frames drawn freehand.',
       camera_and_composition:
-        'Structure the image through Multi-panel grid enabling rapid comparison of lens/angle/depth setups; compose through production hierarchy, variants, orthographic logic, isometric staging, silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Analytical, cinematic, pre-production momentum, mood carried by Composition small-read composition study Grid craft, material pressure, and visual restraint; derive mood from exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or production-room clarity, letting the style alter interpretation without demanding a specific story, location, or actor.',
-      rendering_and_quality:
-        'Finish with Previsualization-grade roughs prioritizing sequence rhythm over polish; finish with concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Twelve equal rectangles in a three-by-four grid: worm’s-eye, overhead, dutch angle, extreme wide, over-the-shoulder and tight close framings of one scene.',
+      atmosphere_and_mood: 'Analytical and suspenseful, searching for the strongest shot.',
+      rendering_and_quality: 'Stamp-size value studies only, no detail, no finished frame.',
       key_features:
-        'Composition small-read composition study grid for shot-language exploration and suspense-focused camera grammar; Shot-size variety, perspective alternation, compositional cadence mapping; Predominantly grayscale with optional restrained warm/cool key differentiation; Marker/pencil roughness retained for planning immediacy; Multi-panel grid enabling rapid comparison of lens/angle/depth setups',
+        'three-by-four thumbnail grid; one scene in twelve framings; three grey values; freehand frames; varied camera heights',
       creative_brief:
-        "Apply Composition small-read composition study Grid as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Composition small-read composition study grid for shot-language exploration and suspense-focused camera grammar, Shot-size variety, perspective alternation, compositional cadence mapping, Marker/pencil roughness retained for planning immediacy without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Composition Thumbnail Grid as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
   {
@@ -820,28 +795,27 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'World Map Concept',
     category: '4. Concept Art',
     negativePrompt:
-      'accurate, satellite, photo, modern map, GPS, clean, clinical, boring, flat, atlas, political borders, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter',
+      'readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, readable place names, satellite imagery, accurate, satellite, photo, modern map, GPS, clean, clinical, boring, flat, atlas, political borders, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
-        'World Map Concept acts as a transferable illustration router: start from Mythic hand-drafted cartographic illustration with ornamental navigation grammar and editorial worldbuilding clarity, Compass geometry motifs, rhumb-line rhythm, cartouche typography framing, etched terrain icon system, weathered paper patina and production concept-art system built from iteration discipline, silhouette testing, material exploration, design readability, and pitch-ready visual decisions, then apply the visual behavior to prompt X instead of recreating a fixed demo image.',
+        'Fantasy world map concept: a hand-drawn ink and watercolor map on aged paper with pictorial mountains, forests and hatched coastlines.',
       subject_treatment:
-        'Transform any prompt subject through Calligraphic contour hierarchy, iconographic terrain symbols, radial navigation geometry, decorative border cadence; preserve the requested subject while routing it through design exploration, asset logic, value blocking, scale cues, iteration rows, paintover marks, or production-readability constraints, keeping the requested identity, silhouette, pose, object function, or setting legible.',
+        'Keep the prompt subject and its identity as the thing being designed; this deliverable owns a top-down hand-drawn map of the region or realm the subject implies, and that layout replaces the requested framing.',
       color_and_tone:
-        'Build color with Aged parchment neutrals, iron-gall sepia ink, oxidized teal accents, muted mineral greens, restrained vermillion highlights; use color as concept decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping, accent control, and process-specific limits rather than a generic palette wash.',
+        'Sepia ink and muted watercolor washes on tea-stained paper: sage lowlands, ochre highlands, grey-blue sea.',
       lighting_and_shadow:
-        'Handle light through Uniform document-style illumination, low-specular paper response, subtle edge-vignette to emphasize plate readability; shape light for ideation clarity through value block-in, keyframe contrast, material test highlights, callout illumination, or pitch-frame atmosphere, so value structure supports the illustration process and does not overwrite the requested content.',
+        'No cast light; relief shown with side-lit pictorial mountain symbols and hachures.',
       texture_and_material:
-        'Render Fibrous vellum grain, dry-ink bleed, pressure-variant line deposition, fold-memory wear, wax-like residue details; surface detail should reveal brush passes, photobash integration, low-poly facets, callout texture, massing blocks, costume fabrics, foliage clusters, or weapon material tiers when named, keeping material scale coherent and avoiding noisy filler texture.',
+        'Dip-pen lines, hachures, stippled coastlines, paper creases and foxing spots.',
       camera_and_composition:
-        'Structure the image through Orthographic map-plane logic with symbolic scale compression and layered annotation depth; compose through production hierarchy, variants, orthographic logic, isometric staging, silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.',
-      atmosphere_and_mood:
-        'Keep the mood Scholarly, arcane, exploratory, archival, crafted for interpretive reading rather than literal realism; derive mood from exploration, worldbuilding pressure, tactical design, creature unease, kitbash utility, cinematic intent, or production-room clarity, letting the style alter interpretation without demanding a specific story, location, or actor.',
+        'Top-down map with a compass rose and an empty decorative cartouche, landmasses filling the sheet.',
+      atmosphere_and_mood: 'Inviting to adventure, a realm waiting to be explored.',
       rendering_and_quality:
-        'Finish with High-fidelity illustrated atlas plate finish with controlled print-era imperfections and deliberate artisan irregularity; finish with concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where appropriate, and enough process evidence to make the style recognizable.',
+        'Hand-crafted finish; place names replaced by blank space or illegible scribble.',
       key_features:
-        'Mythic hand-drafted cartographic illustration with ornamental navigation grammar and editorial worldbuilding clarity; Compass geometry motifs, rhumb-line rhythm, cartouche typography framing, etched terrain icon system, weathered paper patina; Aged parchment neutrals, iron-gall sepia ink, oxidized teal accents, muted mineral greens, restrained vermillion highlights; Fibrous vellum grain, dry-ink bleed, pressure-variant line deposition, fold-memory wear, wax-like residue details; Orthographic map-plane logic with symbolic scale compression and layered annotation depth',
+        'dip-pen and watercolor; pictorial mountains and forests; hatched coastlines; compass rose; blank cartouche',
       creative_brief:
-        "Apply World Map Concept as an illustration preset over prompt X: preserve the user's requested subject, then route mark-making, palette, surface, composition, mood, and final craft through Mythic hand-drafted cartographic illustration with ornamental navigation grammar and editorial worldbuilding clarity, Compass geometry motifs, rhumb-line rhythm, cartouche typography framing, etched terrain icon system, weathered paper patina, Fibrous vellum grain, dry-ink bleed, pressure-variant line deposition, fold-memory wear, wax-like residue details without requiring the card image's original subject.",
+        "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies World Map Concept as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

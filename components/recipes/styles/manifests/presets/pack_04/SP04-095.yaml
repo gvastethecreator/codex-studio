@@ -3,7 +3,7 @@ id: SP04-095
 packId: pack_04
 name: Foliage Design Kit
 category: 4. Concept Art
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,74 +12,26 @@ tags:
   - illustration-and-graphic-novel
   - concept-art
 visualDna:
-  aesthetic: >-
-    Foliage Design Kit acts as a transferable illustration router: start from Vegetation design kit
-    with broad botanical shape-library coverage, natural poetry, and production readability,
-    Silhouette readability sets, species variation matrices, season-state alternatives and
-    production concept-art system built from iteration discipline, silhouette testing, material
-    exploration, design readability, and pitch-ready visual decisions, then apply the visual
-    behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Organic contour families spanning canopy, shrub, vine, and
-    groundcover archetypes; preserve the requested subject while routing it through design
-    exploration, asset logic, value blocking, scale cues, iteration rows, paintover marks, or
-    production-readability constraints, keeping the requested identity, silhouette, pose, object
-    function, or setting legible.
-  color_and_tone: >-
-    Build color with Seasonal green-driven spectrum with bark/flower accent channels; use color as
-    concept decision-making: mood scripts, material swatches, faction accents, environment
-    atmosphere, asset tier contrast, or readable pass separation, with deliberate value grouping,
-    accent control, and process-specific limits rather than a generic palette wash.
-  lighting_and_shadow: >-
-    Handle light through Dappled canopy light with subsurface hints and cool understory shadow;
-    shape light for ideation clarity through value block-in, keyframe contrast, material test
-    highlights, callout illumination, or pitch-frame atmosphere, so value structure supports the
-    illustration process and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Differentiated plant surface behaviors (waxy, fibrous, rough bark, soft moss); surface
-    detail should reveal brush passes, photobash integration, low-poly facets, callout texture,
-    massing blocks, costume fabrics, foliage clusters, or weapon material tiers when named, keeping
-    material scale coherent and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Layered ecosystem depth from near field clusters to atmospheric
-    canopy fade; compose through production hierarchy, variants, orthographic logic, isometric
-    staging, silhouette grids, iteration boards, or cinematic keyframe balance without locking one
-    finished illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style
-    work.
-  atmosphere_and_mood: >-
-    Keep the mood Lush, breathable, ecosystem-rich, mood carried by Foliage Design Kit craft,
-    material pressure, and visual restraint; derive mood from exploration, worldbuilding pressure,
-    tactical design, creature unease, kitbash utility, cinematic intent, or production-room clarity,
-    letting the style alter interpretation without demanding a specific story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Reference-oriented foliage exploration balancing stylization and realism; finish
-    with concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy
-    wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where
-    appropriate, and enough process evidence to make the style recognizable.
-  key_features: >-
-    Vegetation design kit with broad botanical shape-library coverage, natural poetry, and
-    production readability; Silhouette readability sets, species variation matrices, season-state
-    alternatives; Seasonal green-driven spectrum with bark/flower accent channels; Differentiated
-    plant surface behaviors (waxy, fibrous, rough bark, soft moss); Layered ecosystem depth from
-    near field clusters to atmospheric canopy fade
-  creative_brief: >-
-    Apply Foliage Design Kit as an illustration preset over prompt X: preserve the user's requested
-    subject, then route mark-making, palette, surface, composition, mood, and final craft through
-    Vegetation design kit with broad botanical shape-library coverage, natural poetry, and
-    production readability, Silhouette readability sets, species variation matrices, season-state
-    alternatives, Differentiated plant surface behaviors (waxy, fibrous, rough bark, soft moss)
-    without requiring the card image's original subject.
+  aesthetic: 'Foliage design kit: a library sheet of isolated plant assets, from trees to groundcover, designed as one family sharing a shape language.'
+  subject_treatment: Keep the prompt subject and its identity as the thing being designed; this deliverable owns an asset-library sheet of isolated vegetation arranged in rows by size, themed after the subject or biome, and that layout replaces the requested framing.
+  color_and_tone: Species palette with seasonal or blight variants side by side on a neutral light ground.
+  lighting_and_shadow: Consistent top-left daylight on every plant with flat, small contact shadows.
+  texture_and_material: Painted leaf clusters grouped into readable masses, bark and stem detail only at close scale.
+  camera_and_composition: Assets in rows from tall trees to small groundcover, all at one scale with a human silhouette, no scene around them.
+  atmosphere_and_mood: Lush and organized, a biome sorted for building.
+  rendering_and_quality: Game-art painted finish, crisp silhouettes, each asset ready to cut out.
+  key_features: isolated plant assets in rows; one shared shape language; seasonal variants; human scale silhouette; neutral ground
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Foliage Design Kit as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
-  - bare
-  - dead
+  - readable annotations
+  - readable text
+  - brand logo
+  - franchise likeness
+  - lone cloaked figure on a cliff edge
+  - full landscape scene
+  - overlapping plants
   - no plants
-  - desert
-  - empty
-  - urban
-  - concrete
-  - interior
   - no vegetation
-  - sterile
   - official card scene
   - fixed thumbnail subject
   - prompt replaced by sample image
@@ -92,14 +44,16 @@ avoidRules:
   - overpolished final render
   - unclear design callouts
   - random kitbash clutter
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-095.webp
 attributes:
-  negativePrompt: >-
-    bare, dead, no plants, desert, empty, urban, concrete, interior, no vegetation, sterile,
-    official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake
-    text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy
-    wallpaper, overpolished final render, unclear design callouts, random kitbash clutter
+  negativePrompt: readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, full landscape scene, overlapping plants, no plants, no vegetation, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

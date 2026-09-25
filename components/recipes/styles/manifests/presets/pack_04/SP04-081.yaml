@@ -3,7 +3,7 @@ id: SP04-081
 packId: pack_04
 name: Thumbnail Silhouette Exploration
 category: 4. Concept Art
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,63 +12,24 @@ tags:
   - illustration-and-graphic-novel
   - concept-art
 visualDna:
-  aesthetic: >-
-    small-read composition study Silhouette Exploration acts as a transferable illustration router:
-    start from Value-small-read composition study silhouette ideation focused on shape readability
-    and rapid production-design iteration, Multi-variant silhouette grid, negative-space testing,
-    high read-at-a-glance contrast and production concept-art system built from iteration
-    discipline, silhouette testing, material exploration, design readability, and pitch-ready visual
-    decisions, then apply the visual behavior to prompt X instead of recreating a fixed demo image.
-  subject_treatment: >-
-    Transform any prompt subject through Bold filled contours with minimal or no internal linework;
-    preserve the requested subject while routing it through design exploration, asset logic, value
-    blocking, scale cues, iteration rows, paintover marks, or production-readability constraints,
-    keeping the requested identity, silhouette, pose, object function, or setting legible.
-  color_and_tone: >-
-    Build color with Strict 3-value grayscale (black, mid gray, white); use color as concept
-    decision-making: mood scripts, material swatches, faction accents, environment atmosphere, asset
-    tier contrast, or readable pass separation, with deliberate value grouping, accent control, and
-    process-specific limits rather than a generic palette wash.
-  lighting_and_shadow: >-
-    Handle light through Light logic expressed only through value grouping and rim separation; shape
-    light for ideation clarity through value block-in, keyframe contrast, material test highlights,
-    callout illumination, or pitch-frame atmosphere, so value structure supports the illustration
-    process and does not overwrite the requested content.
-  texture_and_material: >-
-    Render Matte digital block-fill with slight brush-edge variance; surface detail should reveal
-    brush passes, photobash integration, low-poly facets, callout texture, massing blocks, costume
-    fabrics, foliage clusters, or weapon material tiers when named, keeping material scale coherent
-    and avoiding noisy filler texture.
-  camera_and_composition: >-
-    Structure the image through Controlled proportion and mass variation across comparative grid;
-    compose through production hierarchy, variants, orthographic logic, isometric staging,
-    silhouette grids, iteration boards, or cinematic keyframe balance without locking one finished
-    illustration, with scale, spacing, edge rhythm, and visual hierarchy doing the style work.
-  atmosphere_and_mood: >-
-    Keep the mood Exploratory, energetic, design-lab momentum, mood carried by small-read
-    composition study Silhouette Exploration craft, material pressure, and visual restraint; derive
-    mood from exploration, worldbuilding pressure, tactical design, creature unease, kitbash
-    utility, cinematic intent, or production-room clarity, letting the style alter interpretation
-    without demanding a specific story, location, or actor.
-  rendering_and_quality: >-
-    Finish with Deliberately rough ideation pass prioritizing quantity and clarity; finish with
-    concept-art usefulness, readable decisions, controlled roughness, and no generic fantasy
-    wallpaper or overpolished final render when iteration is intended, clean denoised surfaces where
-    appropriate, and enough process evidence to make the style recognizable.
-  key_features: >-
-    Value-small-read composition study silhouette ideation focused on shape readability and rapid
-    production-design iteration; Multi-variant silhouette grid, negative-space testing, high
-    read-at-a-glance contrast; Strict 3-value grayscale (black, mid gray, white); Matte digital
-    block-fill with slight brush-edge variance; Controlled proportion and mass variation across
-    comparative grid
-  creative_brief: >-
-    Apply small-read composition study Silhouette Exploration as an illustration preset over prompt
-    X: preserve the user's requested subject, then route mark-making, palette, surface, composition,
-    mood, and final craft through Value-small-read composition study silhouette ideation focused on
-    shape readability and rapid production-design iteration, Multi-variant silhouette grid,
-    negative-space testing, high read-at-a-glance contrast, Matte digital block-fill with slight
-    brush-edge variance without requiring the card image's original subject.
+  aesthetic: 'Pose silhouette thumbnails: the subject drawn as a scatter of small solid brush-pen silhouettes in different poses and actions, testing gesture readability.'
+  subject_treatment: Keep the prompt subject and its identity as the thing being designed; this deliverable owns a sketchbook spread of ten to fifteen pose silhouettes of the same subject, each in a different action, and that layout replaces the requested framing.
+  color_and_tone: Black brush-pen fills on warm toned sketchbook paper, with one grey marker for ground shadows and overlaps.
+  lighting_and_shadow: No modeled light; readability comes only from outline and the negative space between limbs.
+  texture_and_material: Brush-pen edges with dry-brush breaks, varied thumbnail sizes, faint pencil construction under some of the ink.
+  camera_and_composition: Ten to fifteen thumbnails scattered across a sketchbook spread, each standing on a small shadow ellipse, varied in scale and energy.
+  atmosphere_and_mood: Quick and searching, hunting for the one pose that reads.
+  rendering_and_quality: Rough ink thumbnails only, no internal detail, no rendering, no finished figure.
+  key_features: scattered pose silhouettes; black brush-pen fills; toned sketchbook paper; grey ground-shadow ellipses; gesture readability test
+  creative_brief: "Apply this as a reusable style router after prompt X: prompt X supplies subject, action, setting, tone, and intensity, while this preset supplies Thumbnail Silhouette Exploration as medium, palette, mark language, composition logic, material behavior, and finish. Preserve the user's subject instead of forcing this preset's sample-card subject, fixed character, fixed prop, readable text, or a repeated thumbnail formula."
 avoidRules:
+  - readable annotations
+  - readable text
+  - brand logo
+  - franchise likeness
+  - lone cloaked figure on a cliff edge
+  - rigid grid of identical poses
+  - internal detail
   - detailed
   - polished
   - colored
@@ -91,14 +52,16 @@ avoidRules:
   - overpolished final render
   - unclear design callouts
   - random kitbash clutter
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - real person likeness
+  - prompt literal card reuse
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-081.webp
 attributes:
-  negativePrompt: >-
-    detailed, polished, colored, finished, rendered, final, clean, refined, tight, one version,
-    official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake
-    text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy
-    wallpaper, overpolished final render, unclear design callouts, random kitbash clutter
+  negativePrompt: readable annotations, readable text, brand logo, franchise likeness, lone cloaked figure on a cliff edge, rigid grid of identical poses, internal detail, detailed, polished, colored, finished, rendered, final, clean, refined, tight, one version, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic fantasy wallpaper, overpolished final render, unclear design callouts, random kitbash clutter, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel
