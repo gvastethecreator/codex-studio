@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP15-132
+packId: pack_15
+name: Telegraphpunk
+styleAnchors:
+  - Telegraphpunk
+  - telegraph wire age punk
+  - overhead wire webs
+displayName: Telegraphpunk
+category: 1. Classic Industrial Punks
+domain: telegraph wire age punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - classic-industrial-punks
+  - telegraphpunk
+  - punk
+  - industrial
+visualDna:
+  aesthetic: 'Telegraphpunk: a world wired by telegraph lines, where messages hum along poles, operators tap keys and cities are laced with overhead wires.'
+  subject_treatment: Keep the prompt's subject and setting; string telegraph wires, poles and relay stations through it, with signals as sparks along the lines.
+  color_and_tone: Weathered wood brown, copper wire orange and grey sky with small blue signal sparks.
+  lighting_and_shadow: Flat overcast light with little blue sparks traveling along wires.
+  texture_and_material: Wooden poles, glass insulators, copper wire, brass telegraph keys and paper tape.
+  camera_and_composition: Dense webs of wires criss-crossing the sky above streets and plains.
+  atmosphere_and_mood: Connected and restless, news racing across a continent faster than any rider.
+  rendering_and_quality: Precise period illustration with fine line wires and small spark accents.
+  creative_brief: "Telegraphpunk: a world wired by telegraph lines, where messages hum along poles, operators tap keys and cities are laced with overhead wires. Carry it through overhead wire webs, poles and insulators, telegraph keys, signal sparks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: overhead wire webs; poles and insulators; telegraph keys; signal sparks
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - generic brass gears everywhere
+  - real brand or company logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic brass gears everywhere, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: classic-industrial-punks
+  categoryName: 1. Classic Industrial Punks
+  tags:
+    - curation-v2
+    - classic-industrial-punks
+    - telegraphpunk
+    - punk
+    - industrial
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: telegraph wire age punk

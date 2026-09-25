@@ -93,4 +93,564 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP15-123',
+    name: 'Teslapunk',
+    displayName: 'Teslapunk',
+    styleAnchors: ['Teslapunk', 'early electrical age punk', 'tesla coils'],
+    category: '1. Classic Industrial Punks',
+    domain: 'early electrical age punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic brass gears everywhere, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Teslapunk: the dawn of electricity as wonder and danger, with coil towers, crackling arcs, glass insulators and lightning harnessed in laboratories.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; power it with visible early electricity (coils, arcs, glass insulators, copper wiring) instead of steam.",
+      color_and_tone:
+        'Deep night blue and copper with violet-white electric arcs and warm filament amber.',
+      lighting_and_shadow:
+        'Arc light flashing hard shadows in all directions, bulbs glowing amber and blue sparks at contacts.',
+      texture_and_material:
+        'Copper coils, porcelain insulators, glass bulbs, varnished wood panels and braided cloth wire.',
+      camera_and_composition:
+        'Towering coil structures framed from below, arcs cutting diagonally across the frame.',
+      atmosphere_and_mood:
+        'Electric and awe-struck, genius and danger crackling in the same laboratory air.',
+      rendering_and_quality:
+        'Detailed period illustration with luminous arc effects and precise electrical hardware.',
+      creative_brief:
+        "Teslapunk: the dawn of electricity as wonder and danger, with coil towers, crackling arcs, glass insulators and lightning harnessed in laboratories. Carry it through tesla coils, violet arcs, glass insulators, copper wiring. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'tesla coils; violet arcs; glass insulators; copper wiring',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-124',
+    name: 'Gaslamp Fantasy Punk',
+    displayName: 'Gaslamp Fantasy Punk',
+    styleAnchors: ['Gaslamp Fantasy Punk', 'gaslit fantasy city punk', 'gaslight pools'],
+    category: '1. Classic Industrial Punks',
+    domain: 'gaslit fantasy city punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic brass gears everywhere, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Gaslamp fantasy punk: a fog-bound 19th-century city where gas lamps, street magic, clockmakers and fae markets mix in narrow cobbled lanes.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; place it in gaslit fog with one quiet touch of magic hidden in ordinary Victorian life.",
+      color_and_tone:
+        'Fog grey and soot brown with warm gaslight yellow and small emerald or violet magical accents.',
+      lighting_and_shadow:
+        'Pools of gaslight in thick fog, silhouettes appearing between lamps and soft haloes.',
+      texture_and_material:
+        'Wet cobbles, soot-stained brick, wrought iron lamps, wool coats and top hats.',
+      camera_and_composition:
+        'Narrow street perspectives receding into fog with figures caught between lamps.',
+      atmosphere_and_mood:
+        'Mysterious and cozy, a city where every alley might hide a small enchantment.',
+      rendering_and_quality:
+        'Painterly period illustration with soft fog gradients and crisp gaslight glows.',
+      creative_brief:
+        "Gaslamp fantasy punk: a fog-bound 19th-century city where gas lamps, street magic, clockmakers and fae markets mix in narrow cobbled lanes. Carry it through gaslight pools, thick fog, cobbled lanes, hidden magic. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'gaslight pools; thick fog; cobbled lanes; hidden magic',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-125',
+    name: 'Sailpunk',
+    displayName: 'Sailpunk',
+    styleAnchors: ['Sailpunk', 'age of sail technology punk', 'sails everywhere'],
+    category: '1. Classic Industrial Punks',
+    domain: 'age of sail technology punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic brass gears everywhere, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Sailpunk: an alternate age of sail where wind power drives everything, from rigged cities and sail-carts to kite-drawn airships.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; rig it with sails, masts, pulleys and rope so wind is the visible power source.",
+      color_and_tone:
+        'Canvas cream, tarred wood brown and sea blue with faded red and ochre pennants.',
+      lighting_and_shadow:
+        'Bright sea light, sails glowing translucent where the sun passes through them.',
+      texture_and_material:
+        'Canvas, hemp rope, blocks and tackle, tarred planks and salt-stained brass.',
+      camera_and_composition:
+        'Upward views through rigging and wide horizons with sails catching wind.',
+      atmosphere_and_mood:
+        'Free and weathered, a world that moves only as fast as the wind allows.',
+      rendering_and_quality:
+        'Crisp nautical illustration with accurate rigging and luminous canvas.',
+      creative_brief:
+        "Sailpunk: an alternate age of sail where wind power drives everything, from rigged cities and sail-carts to kite-drawn airships. Carry it through sails everywhere, rope rigging, wind power, glowing canvas. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'sails everywhere; rope rigging; wind power; glowing canvas',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-126',
+    name: 'Foundrypunk',
+    displayName: 'Foundrypunk',
+    styleAnchors: ['Foundrypunk', 'iron casting industry punk', 'molten pours'],
+    category: '1. Classic Industrial Punks',
+    domain: 'iron casting industry punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic brass gears everywhere, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Foundrypunk: an iron-casting civilization of blast furnaces, molten pours, sand molds and giant cast-iron structures glowing in the dark.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; build it from heavy cast iron and show molten metal being poured or cooled nearby.",
+      color_and_tone:
+        'Soot black and iron grey with molten orange, yellow-white pours and red glow.',
+      lighting_and_shadow:
+        'Molten metal as the main light source, casting hot orange rims and deep black shadow.',
+      texture_and_material:
+        'Rough cast iron, sand molds, slag, scale and sweat-soaked leather aprons.',
+      camera_and_composition:
+        'Low angles beside pouring ladles and huge silhouetted furnace towers.',
+      atmosphere_and_mood:
+        'Hellish and proud, heavy labor producing things that are meant to last centuries.',
+      rendering_and_quality:
+        'Dramatic industrial illustration with intense glow and heavy material weight.',
+      creative_brief:
+        "Foundrypunk: an iron-casting civilization of blast furnaces, molten pours, sand molds and giant cast-iron structures glowing in the dark. Carry it through molten pours, cast iron, furnace glow, sand molds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'molten pours; cast iron; furnace glow; sand molds',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-127',
+    name: 'Railpunk',
+    displayName: 'Railpunk',
+    styleAnchors: ['Railpunk', 'railway empire punk', 'converging tracks'],
+    category: '1. Classic Industrial Punks',
+    domain: 'railway empire punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic brass gears everywhere, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Railpunk: a civilization built on railways, with rolling cities, locomotive fortresses, station cathedrals and tracks crossing every landscape.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; put it on, beside or inside rail infrastructure so tracks and locomotives define the world.",
+      color_and_tone: 'Soot black, oxblood red, brass and cream with steam-white skies.',
+      lighting_and_shadow:
+        'Headlamps cutting through steam, station skylights and firebox glow on engineers.',
+      texture_and_material:
+        'Riveted locomotive plates, iron rails, wooden sleepers, cinders and glass station roofs.',
+      camera_and_composition:
+        'Converging track perspectives to the horizon and huge locomotives framed head-on.',
+      atmosphere_and_mood:
+        'Relentless and grand, a world that never stops moving along its iron lines.',
+      rendering_and_quality:
+        'Detailed period illustration with strong perspective and billowing steam.',
+      creative_brief:
+        "Railpunk: a civilization built on railways, with rolling cities, locomotive fortresses, station cathedrals and tracks crossing every landscape. Carry it through converging tracks, locomotive fortresses, steam, station cathedrals. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'converging tracks; locomotive fortresses; steam; station cathedrals',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-128',
+    name: 'Loompunk',
+    displayName: 'Loompunk',
+    styleAnchors: ['Loompunk', 'textile machine age punk', 'punch-card looms'],
+    category: '1. Classic Industrial Punks',
+    domain: 'textile machine age punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic brass gears everywhere, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Loompunk: a textile-mill world where punch-card looms compute, thread is data and whole cities are woven on colossal machines.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; weave it into looms, thread and punch-card mechanisms so pattern becomes the technology.",
+      color_and_tone:
+        'Undyed linen cream, indigo, madder red and polished wood with bright thread accents.',
+      lighting_and_shadow:
+        'Tall mill windows throwing parallel beams across rows of looms and floating fibers.',
+      texture_and_material: 'Warp threads, punch cards, shuttles, wooden frames and cloth bolts.',
+      camera_and_composition:
+        'Long rows of looms receding in perspective and close views of threads crossing.',
+      atmosphere_and_mood:
+        'Rhythmic and industrious, the clatter of machines weaving patterns that think.',
+      rendering_and_quality: 'Intricate period illustration with precise thread and card detail.',
+      creative_brief:
+        "Loompunk: a textile-mill world where punch-card looms compute, thread is data and whole cities are woven on colossal machines. Carry it through punch-card looms, warp threads, mill windows, woven patterns. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'punch-card looms; warp threads; mill windows; woven patterns',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-129',
+    name: 'Coalpunk',
+    displayName: 'Coalpunk',
+    styleAnchors: ['Coalpunk', 'coal mining age punk', 'lamp pools'],
+    category: '1. Classic Industrial Punks',
+    domain: 'coal mining age punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic brass gears everywhere, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Coalpunk: underground mining cities of lamp-lit tunnels, coal carts, pit ponies, pumping engines and soot-blackened faces.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; take it underground or into a mining town, lit by lamps and dusted with coal.",
+      color_and_tone: 'Coal black and slate grey with small warm lamp pools and ember red.',
+      lighting_and_shadow:
+        'Helmet and hand lamps as the only light, tiny circles in overwhelming darkness.',
+      texture_and_material: 'Coal seams, timber props, rail carts, soot and sweat on skin.',
+      camera_and_composition:
+        'Tunnel perspectives lit only by lamps, and tight framing on faces in the dark.',
+      atmosphere_and_mood:
+        'Claustrophobic and communal, danger shared by people who trust each other with their lives.',
+      rendering_and_quality: 'Low-key period illustration with heavy darks and precise lamp glows.',
+      creative_brief:
+        "Coalpunk: underground mining cities of lamp-lit tunnels, coal carts, pit ponies, pumping engines and soot-blackened faces. Carry it through lamp pools, coal seams, timber props, soot. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'lamp pools; coal seams; timber props; soot',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-130',
+    name: 'Balloonpunk',
+    displayName: 'Balloonpunk',
+    styleAnchors: ['Balloonpunk', 'hot-air balloon age punk', 'patched envelopes'],
+    category: '1. Classic Industrial Punks',
+    domain: 'hot-air balloon age punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic brass gears everywhere, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Balloonpunk: a sky society of patched hot-air balloons, wicker gondolas, sandbag ballast and floating markets tethered above the clouds.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; lift it into the air on balloons, gondolas and tethers, with ropes and ballast visible.",
+      color_and_tone:
+        'Striped balloon reds, mustard and teal against pale sky blue and cloud white.',
+      lighting_and_shadow:
+        'Bright high-altitude sun with burner flames glowing inside the envelopes.',
+      texture_and_material:
+        'Patched silk envelopes, wicker baskets, hemp nets, sandbags and brass burners.',
+      camera_and_composition:
+        'Views up at clustered balloons and down from gondolas over tiny landscapes.',
+      atmosphere_and_mood:
+        'Buoyant and adventurous, a whole community drifting slowly wherever the wind decides.',
+      rendering_and_quality:
+        'Airy period illustration with bright envelopes and crisp rigging detail.',
+      creative_brief:
+        "Balloonpunk: a sky society of patched hot-air balloons, wicker gondolas, sandbag ballast and floating markets tethered above the clouds. Carry it through patched envelopes, wicker gondolas, tethers, burner glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'patched envelopes; wicker gondolas; tethers; burner glow',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-131',
+    name: 'Diverpunk',
+    displayName: 'Diverpunk',
+    styleAnchors: ['Diverpunk', 'hard-hat diving age punk', 'copper hard hats'],
+    category: '1. Classic Industrial Punks',
+    domain: 'hard-hat diving age punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic brass gears everywhere, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Diverpunk: an undersea industrial age of copper hard-hat divers, air hoses, diving bells and riveted underwater stations.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; take it underwater with hard-hat diving gear, air hoses and riveted structures.",
+      color_and_tone:
+        'Deep sea green and blue with polished copper, brass and pale shafts of light.',
+      lighting_and_shadow: 'Sunbeams from the surface and lamp beams from helmets in murky water.',
+      texture_and_material:
+        'Copper helmets with bolted faceplates, canvas suits, rubber hoses and barnacled iron.',
+      camera_and_composition: 'Low seafloor views looking up at hoses rising to the surface.',
+      atmosphere_and_mood: 'Slow and weighty, every step an effort in a silent, dangerous world.',
+      rendering_and_quality:
+        'Moody period illustration with suspended particles and gleaming copper.',
+      creative_brief:
+        "Diverpunk: an undersea industrial age of copper hard-hat divers, air hoses, diving bells and riveted underwater stations. Carry it through copper hard hats, air hoses, diving bells, riveted stations. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'copper hard hats; air hoses; diving bells; riveted stations',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-132',
+    name: 'Telegraphpunk',
+    displayName: 'Telegraphpunk',
+    styleAnchors: ['Telegraphpunk', 'telegraph wire age punk', 'overhead wire webs'],
+    category: '1. Classic Industrial Punks',
+    domain: 'telegraph wire age punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic brass gears everywhere, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Telegraphpunk: a world wired by telegraph lines, where messages hum along poles, operators tap keys and cities are laced with overhead wires.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; string telegraph wires, poles and relay stations through it, with signals as sparks along the lines.",
+      color_and_tone:
+        'Weathered wood brown, copper wire orange and grey sky with small blue signal sparks.',
+      lighting_and_shadow: 'Flat overcast light with little blue sparks traveling along wires.',
+      texture_and_material:
+        'Wooden poles, glass insulators, copper wire, brass telegraph keys and paper tape.',
+      camera_and_composition:
+        'Dense webs of wires criss-crossing the sky above streets and plains.',
+      atmosphere_and_mood:
+        'Connected and restless, news racing across a continent faster than any rider.',
+      rendering_and_quality:
+        'Precise period illustration with fine line wires and small spark accents.',
+      creative_brief:
+        "Telegraphpunk: a world wired by telegraph lines, where messages hum along poles, operators tap keys and cities are laced with overhead wires. Carry it through overhead wire webs, poles and insulators, telegraph keys, signal sparks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'overhead wire webs; poles and insulators; telegraph keys; signal sparks',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-133',
+    name: 'Polar Steam Expedition Punk',
+    displayName: 'Polar Steam Expedition Punk',
+    styleAnchors: [
+      'Polar Steam Expedition Punk',
+      'arctic expedition machine punk',
+      'steam ice crawlers',
+    ],
+    category: '1. Classic Industrial Punks',
+    domain: 'arctic expedition machine punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic brass gears everywhere, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Polar expedition punk: steam-powered ice crawlers, fur-clad explorers, frozen ships and heated tents on endless white.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; send it into polar cold with steam machines, sledges and frost on every surface.",
+      color_and_tone:
+        'Blinding white and ice blue with tarred black machines and warm lantern orange.',
+      lighting_and_shadow:
+        'Low polar sun with long blue shadows and lamps glowing inside frosted windows.',
+      texture_and_material: 'Frost-covered iron, fur parkas, canvas tents, sled runners and ice.',
+      camera_and_composition:
+        'Tiny expeditions against vast white horizons, or close frosted faces.',
+      atmosphere_and_mood:
+        'Brave and freezing, stubborn explorers pushing machines into places that do not want them.',
+      rendering_and_quality: 'Crisp cold illustration with frost detail and warm light accents.',
+      creative_brief:
+        "Polar expedition punk: steam-powered ice crawlers, fur-clad explorers, frozen ships and heated tents on endless white. Carry it through steam ice crawlers, frost, fur parkas, lantern-lit tents. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'steam ice crawlers; frost; fur parkas; lantern-lit tents',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-134',
+    name: 'Petropunk',
+    displayName: 'Petropunk',
+    styleAnchors: ['Petropunk', 'early oil age punk', 'wooden derricks'],
+    category: '1. Classic Industrial Punks',
+    domain: 'early oil age punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic brass gears everywhere, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Petropunk: the early oil boom as an alternate world of derricks, gushers, pipelines, refineries and oil-soaked frontier towns.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; surround it with derricks, pipelines and crude oil, glossy black on everything.",
+      color_and_tone:
+        'Glossy black crude, dusty ochre plains, rust and flare orange against pale sky.',
+      lighting_and_shadow:
+        'Harsh prairie sun and gas flare glow at night, glossy highlights on oil.',
+      texture_and_material: 'Wooden derricks, riveted tanks, pipelines, oil-soaked cloth and mud.',
+      camera_and_composition:
+        'Forests of derricks on the horizon and low angles under gushing wells.',
+      atmosphere_and_mood:
+        'Greedy and exhilarating, fortunes rising and falling with every new gusher.',
+      rendering_and_quality: 'Gritty period illustration with glossy oil and dusty atmosphere.',
+      creative_brief:
+        "Petropunk: the early oil boom as an alternate world of derricks, gushers, pipelines, refineries and oil-soaked frontier towns. Carry it through wooden derricks, gushers, pipelines, flare glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'wooden derricks; gushers; pipelines; flare glow',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-135',
+    name: 'Printpunk',
+    displayName: 'Printpunk',
+    styleAnchors: ['Printpunk', 'printing press revolution punk', 'rotary presses'],
+    category: '1. Classic Industrial Punks',
+    domain: 'printing press revolution punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic brass gears everywhere, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Printpunk: a world driven by printing presses, where pamphlets, posters and giant rotary presses power revolutions and city life.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; fill it with presses, paper stacks, ink rollers and blank posters (no readable text).",
+      color_and_tone: 'Paper cream, black ink and oxblood red with steel press grey.',
+      lighting_and_shadow:
+        'Workshop lamps and skylights over presses, crisp shadows of hanging sheets.',
+      texture_and_material:
+        'Metal type blocks, ink rollers, paper stacks, iron presses and ink-stained aprons.',
+      camera_and_composition:
+        'Crowded workshops with sheets hanging overhead and presses in the foreground.',
+      atmosphere_and_mood:
+        'Urgent and rebellious, ideas spreading faster than anyone can stop them.',
+      rendering_and_quality: 'Engraving-like period illustration with crisp lines and ink texture.',
+      creative_brief:
+        "Printpunk: a world driven by printing presses, where pamphlets, posters and giant rotary presses power revolutions and city life. Carry it through rotary presses, hanging sheets, ink rollers, blank posters. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'rotary presses; hanging sheets; ink rollers; blank posters',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-136',
+    name: 'Millpunk',
+    displayName: 'Millpunk',
+    styleAnchors: ['Millpunk', 'water and wind mill punk', 'water wheels'],
+    category: '1. Classic Industrial Punks',
+    domain: 'water and wind mill punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic brass gears everywhere, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Millpunk: a countryside of water wheels, windmills and wooden gearing driving saws, pumps and grinders in every village.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; power it with visible wooden wheels, sails and gears turned by water or wind.",
+      color_and_tone: 'Oak brown, millstone grey and green countryside with river blue.',
+      lighting_and_shadow:
+        'Soft daylight with spray glittering off water wheels and sails casting sweeping shadows.',
+      texture_and_material:
+        'Wooden cog wheels, millstones, sail cloth, mossy stone and flowing water.',
+      camera_and_composition: 'Rustic village views with wheels and sails dominating the skyline.',
+      atmosphere_and_mood:
+        'Pastoral and ingenious, humble wooden machines doing the work of giants.',
+      rendering_and_quality:
+        'Warm rustic illustration with accurate, believable wooden mechanisms and water spray.',
+      creative_brief:
+        "Millpunk: a countryside of water wheels, windmills and wooden gearing driving saws, pumps and grinders in every village. Carry it through water wheels, windmill sails, wooden gearing, millstones. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'water wheels; windmill sails; wooden gearing; millstones',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-137',
+    name: 'Automaton Salonpunk',
+    displayName: 'Automaton Salonpunk',
+    styleAnchors: ['Automaton Salonpunk', 'aristocratic automata punk', 'porcelain automata'],
+    category: '1. Classic Industrial Punks',
+    domain: 'aristocratic automata punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic brass gears everywhere, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Automaton salonpunk: 18th-century salons full of elegant mechanical automata that write, play music and serve tea among powdered aristocrats.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; place it among delicate automata with porcelain faces, silk clothing and visible inner mechanisms.",
+      color_and_tone: 'Pastel rococo pinks and blues, gilt gold and porcelain white.',
+      lighting_and_shadow: 'Candlelit chandeliers and soft window light in gilded salons.',
+      texture_and_material:
+        'Porcelain faces, silk, gilt frames, fine brass mechanisms under open panels.',
+      camera_and_composition:
+        'Elegant salon interiors with the automata posed among the guests like people.',
+      atmosphere_and_mood:
+        'Refined and uncanny, beauty and clockwork precision hiding something slightly eerie.',
+      rendering_and_quality:
+        'Delicate rococo illustration with fine mechanical detail visible under open panels.',
+      creative_brief:
+        "Automaton salonpunk: 18th-century salons full of elegant mechanical automata that write, play music and serve tea among powdered aristocrats. Carry it through porcelain automata, rococo salon, open panels, candlelight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'porcelain automata; rococo salon; open panels; candlelight',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-138',
+    name: 'Paddlewheelpunk',
+    displayName: 'Paddlewheelpunk',
+    styleAnchors: ['Paddlewheelpunk', 'river steamboat punk', 'paddle wheels'],
+    category: '1. Classic Industrial Punks',
+    domain: 'river steamboat punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic brass gears everywhere, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Paddlewheelpunk: wide rivers ruled by towering paddle steamers, floating casinos, dock towns and mechanical river fortresses.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; put it on or beside a great river with paddle steamers and docks.",
+      color_and_tone: 'Muddy river brown, white-painted decks and red wheels with sunset gold.',
+      lighting_and_shadow:
+        'Hazy river sunlight, deck lanterns at dusk and reflections on brown water.',
+      texture_and_material:
+        'Painted wooden decks, huge paddle wheels, smokestacks, ropes and mud banks.',
+      camera_and_composition:
+        'Wide river views with steamers passing and low shots near churning wheels.',
+      atmosphere_and_mood:
+        'Lazy and grand, fortunes gambled on slow boats drifting down wide water.',
+      rendering_and_quality:
+        'Warm period illustration with glowing water reflections and drifting river haze.',
+      creative_brief:
+        "Paddlewheelpunk: wide rivers ruled by towering paddle steamers, floating casinos, dock towns and mechanical river fortresses. Carry it through paddle wheels, twin smokestacks, river docks, lantern decks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'paddle wheels; twin smokestacks; river docks; lantern decks',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP15-139',
+    name: 'Canalpunk',
+    displayName: 'Canalpunk',
+    styleAnchors: ['Canalpunk', 'canal age engineering punk', 'lock staircases'],
+    category: '1. Classic Industrial Punks',
+    domain: 'canal age engineering punk',
+    negativePrompt:
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic brass gears everywhere, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Canalpunk: a country of engineered canals with lock staircases, aqueducts over valleys, boat lifts and horse-drawn narrowboats.',
+      subject_treatment:
+        "Keep the prompt's subject and setting; route water through it with locks, aqueducts and narrowboats as the main infrastructure.",
+      color_and_tone:
+        'Brick red, canal green water, painted narrowboat colors and mossy stone grey.',
+      lighting_and_shadow: 'Soft English daylight with reflections doubled in still canal water.',
+      texture_and_material:
+        'Brick aqueducts, wooden lock gates, painted boats and iron winding gear.',
+      camera_and_composition:
+        'Long canal perspectives, stepped locks and aqueducts spanning valleys.',
+      atmosphere_and_mood:
+        'Patient and peaceful, a slow engineered world that runs at walking pace.',
+      rendering_and_quality:
+        'Gentle detailed illustration with calm reflections and precise engineering.',
+      creative_brief:
+        "Canalpunk: a country of engineered canals with lock staircases, aqueducts over valleys, boat lifts and horse-drawn narrowboats. Carry it through lock staircases, aqueducts, narrowboats, still reflections. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'lock staircases; aqueducts; narrowboats; still reflections',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

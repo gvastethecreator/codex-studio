@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP15-128
+packId: pack_15
+name: Loompunk
+styleAnchors:
+  - Loompunk
+  - textile machine age punk
+  - punch-card looms
+displayName: Loompunk
+category: 1. Classic Industrial Punks
+domain: textile machine age punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - classic-industrial-punks
+  - loompunk
+  - punk
+  - industrial
+visualDna:
+  aesthetic: 'Loompunk: a textile-mill world where punch-card looms compute, thread is data and whole cities are woven on colossal machines.'
+  subject_treatment: Keep the prompt's subject and setting; weave it into looms, thread and punch-card mechanisms so pattern becomes the technology.
+  color_and_tone: Undyed linen cream, indigo, madder red and polished wood with bright thread accents.
+  lighting_and_shadow: Tall mill windows throwing parallel beams across rows of looms and floating fibers.
+  texture_and_material: Warp threads, punch cards, shuttles, wooden frames and cloth bolts.
+  camera_and_composition: Long rows of looms receding in perspective and close views of threads crossing.
+  atmosphere_and_mood: Rhythmic and industrious, the clatter of machines weaving patterns that think.
+  rendering_and_quality: Intricate period illustration with precise thread and card detail.
+  creative_brief: "Loompunk: a textile-mill world where punch-card looms compute, thread is data and whole cities are woven on colossal machines. Carry it through punch-card looms, warp threads, mill windows, woven patterns. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: punch-card looms; warp threads; mill windows; woven patterns
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - generic brass gears everywhere
+  - real brand or company logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic brass gears everywhere, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: classic-industrial-punks
+  categoryName: 1. Classic Industrial Punks
+  tags:
+    - curation-v2
+    - classic-industrial-punks
+    - loompunk
+    - punk
+    - industrial
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: textile machine age punk

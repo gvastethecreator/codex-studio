@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP15-131
+packId: pack_15
+name: Diverpunk
+styleAnchors:
+  - Diverpunk
+  - hard-hat diving age punk
+  - copper hard hats
+displayName: Diverpunk
+category: 1. Classic Industrial Punks
+domain: hard-hat diving age punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - classic-industrial-punks
+  - diverpunk
+  - punk
+  - industrial
+visualDna:
+  aesthetic: 'Diverpunk: an undersea industrial age of copper hard-hat divers, air hoses, diving bells and riveted underwater stations.'
+  subject_treatment: Keep the prompt's subject and setting; take it underwater with hard-hat diving gear, air hoses and riveted structures.
+  color_and_tone: Deep sea green and blue with polished copper, brass and pale shafts of light.
+  lighting_and_shadow: Sunbeams from the surface and lamp beams from helmets in murky water.
+  texture_and_material: Copper helmets with bolted faceplates, canvas suits, rubber hoses and barnacled iron.
+  camera_and_composition: Low seafloor views looking up at hoses rising to the surface.
+  atmosphere_and_mood: Slow and weighty, every step an effort in a silent, dangerous world.
+  rendering_and_quality: Moody period illustration with suspended particles and gleaming copper.
+  creative_brief: "Diverpunk: an undersea industrial age of copper hard-hat divers, air hoses, diving bells and riveted underwater stations. Carry it through copper hard hats, air hoses, diving bells, riveted stations. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: copper hard hats; air hoses; diving bells; riveted stations
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - generic brass gears everywhere
+  - real brand or company logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic brass gears everywhere, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: classic-industrial-punks
+  categoryName: 1. Classic Industrial Punks
+  tags:
+    - curation-v2
+    - classic-industrial-punks
+    - diverpunk
+    - punk
+    - industrial
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: hard-hat diving age punk

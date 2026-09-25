@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP15-126
+packId: pack_15
+name: Foundrypunk
+styleAnchors:
+  - Foundrypunk
+  - iron casting industry punk
+  - molten pours
+displayName: Foundrypunk
+category: 1. Classic Industrial Punks
+domain: iron casting industry punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - classic-industrial-punks
+  - foundrypunk
+  - punk
+  - industrial
+visualDna:
+  aesthetic: 'Foundrypunk: an iron-casting civilization of blast furnaces, molten pours, sand molds and giant cast-iron structures glowing in the dark.'
+  subject_treatment: Keep the prompt's subject and setting; build it from heavy cast iron and show molten metal being poured or cooled nearby.
+  color_and_tone: Soot black and iron grey with molten orange, yellow-white pours and red glow.
+  lighting_and_shadow: Molten metal as the main light source, casting hot orange rims and deep black shadow.
+  texture_and_material: Rough cast iron, sand molds, slag, scale and sweat-soaked leather aprons.
+  camera_and_composition: Low angles beside pouring ladles and huge silhouetted furnace towers.
+  atmosphere_and_mood: Hellish and proud, heavy labor producing things that are meant to last centuries.
+  rendering_and_quality: Dramatic industrial illustration with intense glow and heavy material weight.
+  creative_brief: "Foundrypunk: an iron-casting civilization of blast furnaces, molten pours, sand molds and giant cast-iron structures glowing in the dark. Carry it through molten pours, cast iron, furnace glow, sand molds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: molten pours; cast iron; furnace glow; sand molds
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - generic brass gears everywhere
+  - real brand or company logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic brass gears everywhere, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: classic-industrial-punks
+  categoryName: 1. Classic Industrial Punks
+  tags:
+    - curation-v2
+    - classic-industrial-punks
+    - foundrypunk
+    - punk
+    - industrial
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: iron casting industry punk

@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP15-130
+packId: pack_15
+name: Balloonpunk
+styleAnchors:
+  - Balloonpunk
+  - hot-air balloon age punk
+  - patched envelopes
+displayName: Balloonpunk
+category: 1. Classic Industrial Punks
+domain: hot-air balloon age punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - classic-industrial-punks
+  - balloonpunk
+  - punk
+  - industrial
+visualDna:
+  aesthetic: 'Balloonpunk: a sky society of patched hot-air balloons, wicker gondolas, sandbag ballast and floating markets tethered above the clouds.'
+  subject_treatment: Keep the prompt's subject and setting; lift it into the air on balloons, gondolas and tethers, with ropes and ballast visible.
+  color_and_tone: Striped balloon reds, mustard and teal against pale sky blue and cloud white.
+  lighting_and_shadow: Bright high-altitude sun with burner flames glowing inside the envelopes.
+  texture_and_material: Patched silk envelopes, wicker baskets, hemp nets, sandbags and brass burners.
+  camera_and_composition: Views up at clustered balloons and down from gondolas over tiny landscapes.
+  atmosphere_and_mood: Buoyant and adventurous, a whole community drifting slowly wherever the wind decides.
+  rendering_and_quality: Airy period illustration with bright envelopes and crisp rigging detail.
+  creative_brief: "Balloonpunk: a sky society of patched hot-air balloons, wicker gondolas, sandbag ballast and floating markets tethered above the clouds. Carry it through patched envelopes, wicker gondolas, tethers, burner glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: patched envelopes; wicker gondolas; tethers; burner glow
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - generic brass gears everywhere
+  - real brand or company logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic brass gears everywhere, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: classic-industrial-punks
+  categoryName: 1. Classic Industrial Punks
+  tags:
+    - curation-v2
+    - classic-industrial-punks
+    - balloonpunk
+    - punk
+    - industrial
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: hot-air balloon age punk

@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP15-123
+packId: pack_15
+name: Teslapunk
+styleAnchors:
+  - Teslapunk
+  - early electrical age punk
+  - tesla coils
+displayName: Teslapunk
+category: 1. Classic Industrial Punks
+domain: early electrical age punk
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - classic-industrial-punks
+  - teslapunk
+  - punk
+  - industrial
+visualDna:
+  aesthetic: 'Teslapunk: the dawn of electricity as wonder and danger, with coil towers, crackling arcs, glass insulators and lightning harnessed in laboratories.'
+  subject_treatment: Keep the prompt's subject and setting; power it with visible early electricity (coils, arcs, glass insulators, copper wiring) instead of steam.
+  color_and_tone: Deep night blue and copper with violet-white electric arcs and warm filament amber.
+  lighting_and_shadow: Arc light flashing hard shadows in all directions, bulbs glowing amber and blue sparks at contacts.
+  texture_and_material: Copper coils, porcelain insulators, glass bulbs, varnished wood panels and braided cloth wire.
+  camera_and_composition: Towering coil structures framed from below, arcs cutting diagonally across the frame.
+  atmosphere_and_mood: Electric and awe-struck, genius and danger crackling in the same laboratory air.
+  rendering_and_quality: Detailed period illustration with luminous arc effects and precise electrical hardware.
+  creative_brief: "Teslapunk: the dawn of electricity as wonder and danger, with coil towers, crackling arcs, glass insulators and lightning harnessed in laboratories. Carry it through tesla coils, violet arcs, glass insulators, copper wiring. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: tesla coils; violet arcs; glass insulators; copper wiring
+avoidRules:
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - generic brass gears everywhere
+  - real brand or company logo
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, generic brass gears everywhere, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_15
+  packName: Punk Spectrum Vault
+  categoryId: classic-industrial-punks
+  categoryName: 1. Classic Industrial Punks
+  tags:
+    - curation-v2
+    - classic-industrial-punks
+    - teslapunk
+    - punk
+    - industrial
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: early electrical age punk
