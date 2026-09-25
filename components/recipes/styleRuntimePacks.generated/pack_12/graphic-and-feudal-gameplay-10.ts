@@ -11,21 +11,21 @@ export const GENERATED_STYLE_PRESETS = [
       'unrequested use of War, Ruin, named enemies, exact level layouts or promotional key art, changing the requested camera into isometric or side-scrolling gameplay, unrequested combat effects, copied health bars or fabricated interface labels, modern rendering upgrades presented as the 2010 original',
     style: {
       aesthetic:
-        "Represent a Darksiders (2010)-era third-person action-adventure frame: a substantial controllable figure inhabits the lower foreground, with ruined city or dungeon scale opening in front of the player. Keep the character's graphic armor silhouette, sword-sized equipment and environment legible as real-time 3D game content rather than converting the frame into comic-panel illustration.",
+        'Darksiders (2010) stylized real-time action adventure: immense comic-book heroic anatomy, small heads, enormous wedge-shaped upper bodies, narrow waists and oversized hands and weapons. Broad angular armor planes amplify the living anatomy rather than enclosing it in a rounded suit. Graphic sculpted shape design leads over surface realism.',
       subject_treatment:
-        'Keep the requested playable subject and opponents distinct by silhouette, facing and distance. Armor and cloth may be broad and angular, with an oversized weapon readable against the environment. A red garment or blue-steel plate is a Darksiders-like cue only when it fits the requested design; never substitute War or a named enemy.',
+        'Preserve requested identity and action. Where humanoids fit, emphasize gigantic shoulders, forearms and fists, narrow waist and conspicuously small head, with visibly articulated living anatomy between a few oversized angular plates. Use sharp silhouette breaks, thick bevels and forceful weight shifts; avoid spherical pauldrons, inflated tubular limbs and sealed space-marine armor. Respect explicit proportion constraints.',
       color_and_tone:
-        "Use the source's grounded ruined-city range of weathered grey stone, muted green growth and blue-steel armor, with a selective red cloth accent or small warm effect. Let daylight, fire or supernatural energy follow the scene; do not apply the illustration preset's palette as a fixed filter.",
+        'Use weathered blue-steel, deep red cloth, broken gray stone, and restrained green growth, with a localized warm effect when the action calls for it. Avoid a uniform orange cast or monochrome gray-brown wash.',
       lighting_and_shadow:
         'Use period-appropriate real-time 3D ambient light, firm contact shadows and readable highlights on armor and stone. Keep the game-world exposure coherent; avoid drawn contour shadows, modern ray-traced gloss or oversized promotional glow.',
       texture_and_material:
-        'Original-era action-adventure 3D materials: broad hand-painted stone and metal texture planes, simplified bevels, substantial cloth folds and localized wear. Sculptural chunky forms dominate over modern scanned microdetail.',
+        'Use broad hand-painted stone and metal planes, simplified bevels, substantial cloth folds, and localized wear. Keep surfaces designed and chunky; avoid smooth photoreal PBR microdetail.',
       camera_and_composition:
         'Lock to a trailing third-person camera a little above and behind the playable character, looking into the traversable space. Keep the hero large in the near field, typically left or center-left, with ground plane and route ahead visible; use a long sword or nearby architecture as leading diagonals. Do not switch to isometric, side-view or a detached cinematic establishing shot.',
       atmosphere_and_mood:
         'Suggest exploration through a devastated but navigable urban or dungeon environment, with monumental remnants and small signs of life such as weeds or distant lights. Keep a playable moment and requested tone, not a posed key-art confrontation.',
       rendering_and_quality:
-        'Read as a 2010 console-generation 3D gameplay capture with stylized proportions, textured surfaces and practical scene lighting. Preserve navigable spatial depth and clear character-environment scale. Interface elements are contextual and appear only when requested or present in the chosen reference; never invent HUD text.',
+        'Read as stylized 2010 console-generation 3D: clear comic proportions, bold plane changes, and hard figure-to-ruin separation. Avoid modern Soulslike realism and generic science-fiction armor.',
     },
     ui: {
       kind: 'representation_profile',
@@ -95,20 +95,20 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'For Honor Third-Person Melee Capture',
     category: '10. Graphic & Feudal Gameplay',
     negativePrompt:
-      'unrequested use of named heroes, faction gear, emblems or live-service event scenes, switching the third-person view to a side-on fighting-game plane, unrequested blood, objective markers, combat text or fabricated HUD, cinematic blur that hides guard direction or combat spacing',
+      'unrequested named heroes, copied emblems or live-service event scenes; retain characteristic base-game equipment construction, switching the third-person view to a side-on fighting-game plane, unrequested blood, objective markers, combat text or fabricated HUD, cinematic blur that hides guard direction or combat spacing',
     style: {
       aesthetic:
         'For Honor (2017) third-person melee capture with heavy practical armor, massive fortified terrain and clear guarded combat spacing under natural battlefield light.',
       subject_treatment:
-        'Keep the controlled subject, opponent and any immediate combat lane distinguishable at play distance. Preserve the requested identity; do not use a named Ubisoft hero or faction as a substitute.',
+        "Preserve requested actors and action. For humanoid warriors, use For Honor's heavy, broad-shouldered game silhouettes, layered armor mass and weight-bearing stance. When a duel is requested, make the attack lane and responding guard legible; do not invent an opponent or attack in an unrelated scene.",
       color_and_tone:
-        'Let the chosen environment and prompt control palette. Keep combatants separable by value and local color without importing mandatory blue/red team coding.',
+        'Use base-game earth, weathered iron and slate with restrained ochre or burgundy cloth accents, cool overcast stone and warm local fire. Preserve explicit requested colors; otherwise avoid uniformly beige armor and terrain or jewel-lit high fantasy. Separate the controlled silhouette from its opponent by value and local color.',
       lighting_and_shadow:
         'Use plausible game-scene lighting that keeps weapons, guard direction and bodies legible. Avoid dramatic key-art spotlights that erase the battlefield.',
       texture_and_material:
-        "Render armor, cloth, leather, ground and debris with the base game's real-time 3D level of detail. Avoid later seasonal cosmetic designs unless the request names them.",
+        'Build equipment from substantial overlapping plate, mail at articulated joints, strapped leather and coarse padded cloth. Show hammered steel, localized chipped paint, edge wear and compressed cloth as distinct surfaces. Base-game knight, Viking and samurai construction vocabularies may guide original gear; avoid thin decorative fantasy armor, polished cosplay and uniform micro-scratches.',
       camera_and_composition:
-        'Use a third-person gameplay view anchored behind or just above the controlled fighter. In a duel frame, keep both fighters and weapon lanes readable; in an objective battle, show enough terrain to explain movement. Choose one mode per frame rather than mixing layouts.',
+        'Third-person gameplay view anchored behind or just above the controlled subject. For a duel, keep both full combat silhouettes and crossing weapon lanes readable; for objective movement, retain surrounding traversable terrain. Preserve the requested mode instead of forcing every frame into a duel.',
       atmosphere_and_mood:
         "Show an active playable exchange, guard read or objective movement. Preserve the prompt's stakes; do not force a kill, siege or capture-point event.",
       rendering_and_quality:
@@ -124,24 +124,24 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Mortal Kombat 1 2.5D Fighting Capture',
     category: '10. Graphic & Feudal Gameplay',
     negativePrompt:
-      'unrequested use of franchise characters, costumes, exact arena or signature fatality, switching the match plane to third-person roaming or a 2D pixel treatment, unrequested gore, move names, round text or fabricated health bars, key-art posing that hides playable spacing',
+      'unrequested named roster characters, copied exact arenas or signature fatalities; retain the reference game costume and equipment design vocabulary, switching the match plane to third-person roaming or a 2D pixel treatment, unrequested gore, move names, round text or fabricated health bars, key-art posing that hides playable spacing',
     style: {
       aesthetic:
         'Mortal Kombat 1 (2023) polished real-time fighting-game frame with naturalistic fighters, ornate martial costume, jewel-toned scenery and precisely readable side-on action.',
       subject_treatment:
-        'Keep the requested playable subject and opponent distinct, with limbs, pose and distance readable at match scale. Preserve identity; do not replace either fighter with a named character.',
+        'Preserve requested fighter identities and action while giving each a distinct martial silhouette: close-fitted layered tunics, crossed torso panels, segmented bracers, reinforced boots, varied collars or combat masks, and readable athletic anatomy. Assign equipment and supernatural power design by character role instead of dressing everyone in smooth wuxia robes. Include a secondary assist fighter only when requested.',
       color_and_tone:
-        'Let stage and character colors follow the prompt. Preserve contrast between two subjects and their background without imposing franchise team colors or a particular arena.',
+        'Distinct fighter color identities—such as crimson and black, icy blue and steel, or ivory and dark violet—separate against lush jewel-toned stage scenery and luminous natural skies. Honor explicit colors. Avoid reducing the entire roster to jade, gold silk and amber magic.',
       lighting_and_shadow:
         'Use stage lighting that shapes bodies and action while keeping silhouettes and contact points readable. Do not add fatality lighting or effects unless requested.',
       texture_and_material:
-        'Use 2023 real-time 3D detail in skin, fabric, metal and stage surfaces, with action-ready animation rather than a flat 2D sprite or painted tableau.',
+        'Differentiate stitched woven fabric, folded leather bindings, satin accent panels, fitted engraved metal and natural skin under 2023 real-time stage lighting. Concentrate ornament at functional collars, bracers and belts; retain large costume color blocks rather than covering everything with gold filigree or making it generic robe fabric.',
       camera_and_composition:
         'Use a side-on fighting plane with enough horizontal room to show the active pair, their spacing and the ground line. Keep the playfield level and action readable; do not turn the frame into a third-person camera or cinematic close-up.',
       atmosphere_and_mood:
         'Show a plausible exchange, wind-up or recovery beat. Match the requested intensity and do not force gore, a finishing move or a tournament narrative.',
       rendering_and_quality:
-        'Keep the frame in the 2023 real-time 3D generation with clear bodies, contact points and arena depth. Health bars, round indicators and other interface appear only when the user asks for a gameplay screenshot with UI.',
+        'Use high-detail, semi-realistic 3D game-character rendering: sculpted anatomy, textured skin, stitched and wrapped cloth, scuffed hard armor, and sharp impact lighting. Keep power effects compact and tied to a visible hit or block.',
     },
     ui: {
       kind: 'representation_profile',

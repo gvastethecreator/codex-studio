@@ -3,7 +3,7 @@ id: SP12-087
 packId: pack_12
 name: Darksiders Third-Person Gameplay Capture
 category: 10. Graphic & Feudal Gameplay
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,29 +17,27 @@ tags:
   - visual-evaluation-pending
 visualDna:
   aesthetic: >-
-    Represent a Darksiders (2010)-era third-person action-adventure frame: a substantial
-    controllable figure inhabits the lower foreground, with ruined city or dungeon scale opening in
-    front of the player. Keep the character's graphic armor silhouette, sword-sized equipment and
-    environment legible as real-time 3D game content rather than converting the frame into
-    comic-panel illustration.
+    Darksiders (2010) stylized real-time action adventure: immense comic-book heroic anatomy, small
+    heads, enormous wedge-shaped upper bodies, narrow waists and oversized hands and weapons. Broad
+    angular armor planes amplify the living anatomy rather than enclosing it in a rounded suit.
+    Graphic sculpted shape design leads over surface realism.
   subject_treatment: >-
-    Keep the requested playable subject and opponents distinct by silhouette, facing and distance.
-    Armor and cloth may be broad and angular, with an oversized weapon readable against the
-    environment. A red garment or blue-steel plate is a Darksiders-like cue only when it fits the
-    requested design; never substitute War or a named enemy.
+    Preserve requested identity and action. Where humanoids fit, emphasize gigantic shoulders,
+    forearms and fists, narrow waist and conspicuously small head, with visibly articulated living
+    anatomy between a few oversized angular plates. Use sharp silhouette breaks, thick bevels and
+    forceful weight shifts; avoid spherical pauldrons, inflated tubular limbs and sealed
+    space-marine armor. Respect explicit proportion constraints.
   color_and_tone: >-
-    Use the source's grounded ruined-city range of weathered grey stone, muted green growth and
-    blue-steel armor, with a selective red cloth accent or small warm effect. Let daylight, fire or
-    supernatural energy follow the scene; do not apply the illustration preset's palette as a fixed
-    filter.
+    Use weathered blue-steel, deep red cloth, broken gray stone, and restrained green growth, with a
+    localized warm effect when the action calls for it. Avoid a uniform orange cast or monochrome
+    gray-brown wash.
   lighting_and_shadow: >-
     Use period-appropriate real-time 3D ambient light, firm contact shadows and readable highlights
     on armor and stone. Keep the game-world exposure coherent; avoid drawn contour shadows, modern
     ray-traced gloss or oversized promotional glow.
   texture_and_material: >-
-    Original-era action-adventure 3D materials: broad hand-painted stone and metal texture planes,
-    simplified bevels, substantial cloth folds and localized wear. Sculptural chunky forms dominate
-    over modern scanned microdetail.
+    Use broad hand-painted stone and metal planes, simplified bevels, substantial cloth folds, and
+    localized wear. Keep surfaces designed and chunky; avoid smooth photoreal PBR microdetail.
   camera_and_composition: >-
     Lock to a trailing third-person camera a little above and behind the playable character, looking
     into the traversable space. Keep the hero large in the near field, typically left or
@@ -51,10 +49,9 @@ visualDna:
     monumental remnants and small signs of life such as weeds or distant lights. Keep a playable
     moment and requested tone, not a posed key-art confrontation.
   rendering_and_quality: >-
-    Read as a 2010 console-generation 3D gameplay capture with stylized proportions, textured
-    surfaces and practical scene lighting. Preserve navigable spatial depth and clear
-    character-environment scale. Interface elements are contextual and appear only when requested or
-    present in the chosen reference; never invent HUD text.
+    Read as stylized 2010 console-generation 3D: clear comic proportions, bold plane changes, and
+    hard figure-to-ruin separation. Avoid modern Soulslike realism and generic science-fiction
+    armor.
 avoidRules:
   - unrequested use of War, Ruin, named enemies, exact level layouts or promotional key art
   - changing the requested camera into isometric or side-scrolling gameplay

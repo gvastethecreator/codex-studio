@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
-  "source_commit": "27043c5ac6013dca910513aea7c540d0335a561d",
+  "source_commit": "cd55b71e382960243fc5248e2b8b2088ce7026a9",
   "working_tree_dirty": true,
-  "generated_at": "2026-09-25T00:19:27Z",
-  "generation_id": "6e17549a1460fc355d0a58e9b010cc1ce1a011d5bb0e3de97058fc30604adb13",
+  "generated_at": "2026-09-25T01:21:58Z",
+  "generation_id": "617ed7944bbd2f9141d6e6aa1fcc6e786de5ddae4bcceb2363e4b83923af6f23",
   "analysis": {
     "version": "syntax-1",
     "digest": "f254907343def68e42baabf08b179db9817a145bc24eaad26add0adf05d75581"
@@ -2706,7 +2706,7 @@
         "path": "components/recipes/stylePresetManifests.test.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "7b987e23af29d4c1ca6f50533a913c8ca69b8996bc4e4d958360fa7715727bc4",
+        "digest": "1e7fe21163fea6ba934f86ae3b855cd10880f17261e90c7579b58b5ce0248cc9",
         "size": 23726
       },
       {
@@ -2741,8 +2741,8 @@
         "path": "components/recipes/styleRuntimeData.generated.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "bade737fae5c0242c6b0c82623e6dfe1c35c4f4dd593085c379278330e77e548",
-        "size": 13773
+        "digest": "847ce4b697f26a2bf770e40421cd713ce34dba60fc10be6c98d332e809d1c474",
+        "size": 13774
       },
       {
         "path": "components/recipes/styleRuntimePackRequirements.test.ts",
@@ -3371,15 +3371,15 @@
         "path": "components/recipes/styleRuntimePacks.generated/pack_12/gothic-and-dungeon-gameplay-9.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "178dd8e0fc11fc59b9bf24c7a5a86bffb841421535fa2ff91b673925d517ca01",
-        "size": 15650
+        "digest": "c36f01b8d53c8d1ee35c15baba1e02e3b58e4e2012bb11af072ca26ed902bb0f",
+        "size": 15873
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_12/graphic-and-feudal-gameplay-10.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "6df139a00b7b927cc854d639460e4b863bfe35dc636ffbbf94d9598d9a33c949",
-        "size": 16854
+        "digest": "695b858df33de67a7bd21a7d4bdb06b249875bed6fed4a649ad7770351d38ef6",
+        "size": 17829
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_12/heists-horror-and-underworld-runs-8.ts",
@@ -3399,8 +3399,8 @@
         "path": "components/recipes/styleRuntimePacks.generated/pack_12/psychological-and-tactical-gameplay-11.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "d1b898ec771d67f940a104a633d17a36b6cf697652252fc56439dc2e68f76369",
-        "size": 12748
+        "digest": "5b6f9f9ef68edcfa415c3e7c92ffe2bc70365bfea650662fe25079f0c5a66e7c",
+        "size": 13262
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_12/puzzle-chambers-and-adventure-setpieces-4.ts",
@@ -3700,8 +3700,8 @@
         "path": "components/recipes/styleRuntimePacks.generated/pack_17/dungeon-zine-and-risograph-prints-2.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "dd879d3183b8b0f51562b50e696443ec301f3dc4efceb6eb47b836a81af3394c",
-        "size": 31222
+        "digest": "eda62524c6ebb02f9106c06c1da320b66448034b249da373c463ccb40dc1db3f",
+        "size": 71154
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_17/dungeon-zine-assemblage-and-stampwork-6.ts",
@@ -3721,8 +3721,8 @@
         "path": "components/recipes/styleRuntimePacks.generated/pack_17/graphic-and-feudal-art-directions-10.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "2048ecb097db4983add20f8e6b288267668697473236dc93093b56dc658ac535",
-        "size": 16476
+        "digest": "20168ebe5d14e542437e6b745e44ead77bc63ebcd61a7a329d6c46be7aa57eb4",
+        "size": 17960
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_17/grimdark-game-systems-and-tabletop-5.ts",
@@ -3735,8 +3735,8 @@
         "path": "components/recipes/styleRuntimePacks.generated/pack_17/ink-tarot-and-bestiary-plates-3.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "eff55867d762ddf903ed98a134db2a6c6d4fc328026cd88df490a9c939af3e9b",
-        "size": 50996
+        "digest": "678f9630d534c8427d79a573860a741d16a9bf65a0fd4b7c66e4d62824dcea65",
+        "size": 87349
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_17/medieval-fantasy-drawing-media-8.ts",
@@ -3749,8 +3749,8 @@
         "path": "components/recipes/styleRuntimePacks.generated/pack_17/pulp-fantasy-painting-7.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "2435cb8c0ac2d8afd1ace28418fc2a14c691d236437b3aadc20bd5085bbd61a3",
-        "size": 4645
+        "digest": "c742cd5c017f7db9a76ae0097e525b0bbf2664f21dd93fc39d23a3506405af9e",
+        "size": 5101
       },
       {
         "path": "components/recipes/styleRuntimePacks.generated/pack_17/rune-tech-and-apocalyptic-warfronts-4.ts",
@@ -6164,8 +6164,8 @@
         "path": "lib/styleLandingFolderIndex.generated.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "d6c9fe1c3174a4010423fda2d0ab5f794f07831a1461307062393d4476e002cb",
-        "size": 12316
+        "digest": "c07cc3efbf575d75ff886224b2a8ea73a1e744d5c32b4c44f1f88990bde9d30e",
+        "size": 12318
       },
       {
         "path": "lib/stylePresetVisuals.test.ts",
@@ -6283,8 +6283,8 @@
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_12.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "28031ec647fd8d798186e65b5930a6300dd937b6b95f8c37f472f8c6be734a9a",
-        "size": 58104
+        "digest": "53bbd7b462cf796e9a02129fd6491f405daf400d1d39606c285c79b87755a908",
+        "size": 58938
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_13.ts",
@@ -6318,8 +6318,8 @@
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_17.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "a2352d563096d58347006631bbb8392bd1bf3a5b6032c392238f2b3ddf8d8d2e",
-        "size": 45446
+        "digest": "293dbdd384799d3c6d4bb1f534cdcc23fa32b9af9f574bcf99213a6a65c9878e",
+        "size": 51243
       },
       {
         "path": "lib/styleThumbnailPacks.generated/thumbnail_group_18.ts",
@@ -7193,8 +7193,8 @@
         "path": "scripts/generate-style-defaults.ts",
         "origin": "tracked",
         "state": "present",
-        "digest": "dd4f0112851c362e95248ce2c8235599c08c0e7a905b10dc2cbbb0323a0b1fcf",
-        "size": 1126204
+        "digest": "eb4c18ca87c66283e4b3164e1f4e3220962543fc424e528d4b0915f9b29e8541",
+        "size": 1126740
       },
       {
         "path": "scripts/generate-style-runtime-data.ts",
@@ -8310,12 +8310,12 @@
         "size": 710
       }
     ],
-    "digest": "7d1e411d7b70836776aa27cc4705447ba80cacacf05ae47332c667a3f69a96c2"
+    "digest": "ca0dbc3eee0680e46fe999062c6793ffb030b6cfcc0d2d715db17f9e92a33973"
   },
-  "source_digest": "707a42264ed62ad6746bbb1253dfe82d08d28b7259b751d25a3e09dd7b9c84a9",
+  "source_digest": "092c4bc84d48fa527519134b48c0f512a0618220224f624537b4159ccf45d8dd",
   "artifact_hashes": {
-    "codemap.json": "2b9cdb7c710d165f5668aba25dc526076f8867f2bd4aca2056a4902b9f48f966",
-    "codemap.md": "ea06947028ef624ea0641748577a6eb0925315be7d90b3e5947c9385d65b7754",
-    "codemap.html": "f062bca61a264ae8f93ee57735218c94a7087ac728f922b2780e8a7731060fd1"
+    "codemap.json": "b4e02cb8c91a2b76002467cd59daea69804a24af474101deac1ceba8eb9b6d18",
+    "codemap.md": "6cd395df1c594807fb4a3ac03ecb05ee9c3f816f03cfc5193157cd3e11f75bd2",
+    "codemap.html": "7272b66b681ff237bfea04478397d48f9b3f42ebaf1fb7fee4adbba542e1aaa6"
   }
 }

@@ -3,7 +3,7 @@ id: SP12-083
 packId: pack_12
 name: Bloodborne Third-Person Hunt Capture
 category: 9. Gothic & Dungeon Gameplay
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -21,21 +21,21 @@ visualDna:
     immediately behind the playable hunter. The environment rises around a human-scale figure
     instead of being reduced to an elevated ARPG playfield.
   subject_treatment: >-
-    Preserve the requested actor, action, and objects. When a playable figure is included, keep it
-    in the near foreground at close third-person scale; retain a clear silhouette and the relation
-    between the figure, weapon if requested, and nearby architecture without adding an opponent.
+    Preserve the requested subjects and action. When hunters are appropriate, favor a lean elongated
+    silhouette, layered worn leather coat tails, high collar, compact headwear and asymmetrical
+    equipment. Keep the active arm, weapon shape and footing readable against nearby threats.
+    Trick-weapon construction may characterize requested equipment; do not force a hunter, enemy or
+    specific weapon into unrelated subjects.
   color_and_tone: >-
-    Use deep blue-gray and blue-black shadow, soot-dark wood or stone, and restrained umber. Small
-    amber candle or gaslight points and cool window light can separate planes; avoid a uniform
-    crimson tint.
+    Retain blue-gray and blue-black shadow, soot-dark stone and timber, and restrained umber; add
+    small amber gaslight or candle points and scene-dependent warm sky or blood accents. Avoid an
+    unbroken clean cyan cast.
   lighting_and_shadow: >-
-    Favor low-key real-time lighting with strong local contrast: the inspected interior has cool
-    beams entering high windows and sparse warm lights against deep architecture shadow. Keep enough
-    midtone on the character and route for gameplay reading.
+    Use low-key 2015-era real-time light with cool high-window beams and sparse warm practicals.
+    Preserve midtone on the coat, weapon, footing, and route so the hunt reads as play.
   texture_and_material: >-
-    Show game-scale stone, timber, iron, glass, and worn cloth with the restrained detail of an
-    original PS4-era frame. Let light reveal the material transitions; wetness is scene-dependent
-    rather than a global surface treatment.
+    Bring out worn leather, stained cloth, iron, old glass, damp stone, and soot in localized areas.
+    Keep the Gothic architecture varied and weathered instead of uniformly pristine blue glass.
   camera_and_composition: >-
     Use a close over-the-shoulder third-person camera at human height. Place the playable figure
     near the lower foreground and let rails, floor lines, tall windows, and columns lead forward
@@ -44,10 +44,8 @@ visualDna:
     Keep immediate architectural oppression and uncertain depth around the player while leaving the
     route and requested action legible. A hunt, enemy, or attack is not mandatory.
   rendering_and_quality: >-
-    Read as interpreted 2015-era real-time PS4 gameplay with stable third-person perspective,
-    low-light environment detail, and clean actor-to-architecture separation. Include HUD or
-    captions only when explicitly requested; preserve requested text or interface rather than
-    banning it.
+    Keep restrained PS4-era real-time detail and stable human-height camera scale; avoid a smooth
+    promotional monster portrait or a spotless cinematic cathedral.
 avoidRules:
   - isometric or first-person view
   - static fashion portrait in place of gameplay-scale framing

@@ -3,7 +3,7 @@ id: SP12-090
 packId: pack_12
 name: For Honor Third-Person Melee Capture
 category: 10. Graphic & Feudal Gameplay
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,22 +20,29 @@ visualDna:
     For Honor (2017) third-person melee capture with heavy practical armor, massive fortified
     terrain and clear guarded combat spacing under natural battlefield light.
   subject_treatment: >-
-    Keep the controlled subject, opponent and any immediate combat lane distinguishable at play
-    distance. Preserve the requested identity; do not use a named Ubisoft hero or faction as a
-    substitute.
+    Preserve requested actors and action. For humanoid warriors, use For Honor's heavy,
+    broad-shouldered game silhouettes, layered armor mass and weight-bearing stance. When a duel is
+    requested, make the attack lane and responding guard legible; do not invent an opponent or
+    attack in an unrelated scene.
   color_and_tone: >-
-    Let the chosen environment and prompt control palette. Keep combatants separable by value and
-    local color without importing mandatory blue/red team coding.
+    Use base-game earth, weathered iron and slate with restrained ochre or burgundy cloth accents,
+    cool overcast stone and warm local fire. Preserve explicit requested colors; otherwise avoid
+    uniformly beige armor and terrain or jewel-lit high fantasy. Separate the controlled silhouette
+    from its opponent by value and local color.
   lighting_and_shadow: >-
     Use plausible game-scene lighting that keeps weapons, guard direction and bodies legible. Avoid
     dramatic key-art spotlights that erase the battlefield.
   texture_and_material: >-
-    Render armor, cloth, leather, ground and debris with the base game's real-time 3D level of
-    detail. Avoid later seasonal cosmetic designs unless the request names them.
+    Build equipment from substantial overlapping plate, mail at articulated joints, strapped leather
+    and coarse padded cloth. Show hammered steel, localized chipped paint, edge wear and compressed
+    cloth as distinct surfaces. Base-game knight, Viking and samurai construction vocabularies may
+    guide original gear; avoid thin decorative fantasy armor, polished cosplay and uniform
+    micro-scratches.
   camera_and_composition: >-
-    Use a third-person gameplay view anchored behind or just above the controlled fighter. In a duel
-    frame, keep both fighters and weapon lanes readable; in an objective battle, show enough terrain
-    to explain movement. Choose one mode per frame rather than mixing layouts.
+    Third-person gameplay view anchored behind or just above the controlled subject. For a duel,
+    keep both full combat silhouettes and crossing weapon lanes readable; for objective movement,
+    retain surrounding traversable terrain. Preserve the requested mode instead of forcing every
+    frame into a duel.
   atmosphere_and_mood: >-
     Show an active playable exchange, guard read or objective movement. Preserve the prompt's
     stakes; do not force a kill, siege or capture-point event.
@@ -43,7 +50,9 @@ visualDna:
     Maintain real-time 2017 game-capture clarity and combat scale. Add objective markers, player
     labels or combat UI only if specifically requested and supported by the selected mode.
 avoidRules:
-  - unrequested use of named heroes, faction gear, emblems or live-service event scenes
+  - >-
+    unrequested named heroes, copied emblems or live-service event scenes; retain characteristic
+    base-game equipment construction
   - switching the third-person view to a side-on fighting-game plane
   - unrequested blood, objective markers, combat text or fabricated HUD
   - cinematic blur that hides guard direction or combat spacing
@@ -51,9 +60,10 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-090.webp
 attributes:
   negativePrompt: >-
-    unrequested use of named heroes, faction gear, emblems or live-service event scenes, switching
-    the third-person view to a side-on fighting-game plane, unrequested blood, objective markers,
-    combat text or fabricated HUD, cinematic blur that hides guard direction or combat spacing
+    unrequested named heroes, copied emblems or live-service event scenes; retain characteristic
+    base-game equipment construction, switching the third-person view to a side-on fighting-game
+    plane, unrequested blood, objective markers, combat text or fabricated HUD, cinematic blur that
+    hides guard direction or combat spacing
   referenceGame: >-
     For Honor (2017 original release; use base-game combat grammar and leave live-service cosmetics
     out)
@@ -89,7 +99,9 @@ attributes:
         group: camera
         value: for-honor gameplay view
     avoidRules:
-      - text: unrequested use of named heroes, faction gear, emblems or live-service event scenes
+      - text: >-
+          unrequested named heroes, copied emblems or live-service event scenes; retain
+          characteristic base-game equipment construction
         field: global
       - text: switching the third-person view to a side-on fighting-game plane
         field: global

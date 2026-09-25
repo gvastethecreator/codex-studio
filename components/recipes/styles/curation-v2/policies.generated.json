@@ -209,7 +209,7 @@
         "field": "global"
       }
     ],
-    "presetVersion": 1,
+    "presetVersion": 2,
     "packId": "pack_12",
     "name": "Bloodborne Third-Person Hunt Capture"
   },
@@ -380,7 +380,7 @@
         "field": "global"
       }
     ],
-    "presetVersion": 1,
+    "presetVersion": 2,
     "packId": "pack_12",
     "name": "Amnesia: The Dark Descent First-Person Gameplay Capture"
   },
@@ -429,7 +429,7 @@
         "field": "global"
       }
     ],
-    "presetVersion": 1,
+    "presetVersion": 2,
     "packId": "pack_12",
     "name": "Darksiders Third-Person Gameplay Capture"
   },
@@ -560,7 +560,7 @@
     ],
     "avoidRules": [
       {
-        "text": "unrequested use of named heroes, faction gear, emblems or live-service event scenes",
+        "text": "unrequested named heroes, copied emblems or live-service event scenes; retain characteristic base-game equipment construction",
         "field": "global"
       },
       {
@@ -576,7 +576,7 @@
         "field": "global"
       }
     ],
-    "presetVersion": 1,
+    "presetVersion": 2,
     "packId": "pack_12",
     "name": "For Honor Third-Person Melee Capture"
   },
@@ -609,7 +609,7 @@
     ],
     "avoidRules": [
       {
-        "text": "unrequested use of franchise characters, costumes, exact arena or signature fatality",
+        "text": "unrequested named roster characters, copied exact arenas or signature fatalities; retain the reference game costume and equipment design vocabulary",
         "field": "global"
       },
       {
@@ -625,7 +625,7 @@
         "field": "global"
       }
     ],
-    "presetVersion": 1,
+    "presetVersion": 2,
     "packId": "pack_12",
     "name": "Mortal Kombat 1 2.5D Fighting Capture"
   },
@@ -919,7 +919,7 @@
         "field": "global"
       }
     ],
-    "presetVersion": 1,
+    "presetVersion": 2,
     "packId": "pack_12",
     "name": "Metal Gear Solid 3 (2004) Overhead Gameplay"
   },

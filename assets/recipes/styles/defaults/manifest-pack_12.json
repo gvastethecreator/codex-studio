@@ -1236,13 +1236,13 @@
     "packName": "Video Game Originals Vault",
     "category": "9. Gothic & Dungeon Gameplay",
     "file": "assets/recipes/styles/defaults/SP12-083.webp",
-    "jobId": "ed7986b2-00bc-4e1b-874b-a0232db2cc69",
+    "jobId": "601bac11-09c4-4757-b6f6-5279cc52ebcd",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-083.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-24T23:32:45.766Z"
+    "generatedAt": "2026-09-25T01:15:46.772Z"
   },
   {
     "presetId": "SP12-084",
@@ -1281,13 +1281,13 @@
     "packName": "Video Game Originals Vault",
     "category": "9. Gothic & Dungeon Gameplay",
     "file": "assets/recipes/styles/defaults/SP12-086.webp",
-    "jobId": "3641e9b5-bcd4-4f8a-abe1-460e09916c97",
+    "jobId": "79fffd5b-af21-4f02-ada6-71dc027dda46",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-086.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-24T23:32:42.563Z"
+    "generatedAt": "2026-09-25T01:14:33.029Z"
   },
   {
     "presetId": "SP12-087",
@@ -1296,13 +1296,13 @@
     "packName": "Video Game Originals Vault",
     "category": "10. Graphic & Feudal Gameplay",
     "file": "assets/recipes/styles/defaults/SP12-087.webp",
-    "jobId": "22894001-cc66-4db6-8259-661f07777be4",
+    "jobId": "abd20449-ca0a-4b25-b0bd-b29e6753393a",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-087.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-24T23:41:43.374Z"
+    "generatedAt": "2026-09-25T01:14:43.121Z"
   },
   {
     "presetId": "SP12-088",
@@ -1341,13 +1341,13 @@
     "packName": "Video Game Originals Vault",
     "category": "10. Graphic & Feudal Gameplay",
     "file": "assets/recipes/styles/defaults/SP12-090.webp",
-    "jobId": "36a6d73c-ea07-4d29-8d54-cd5f85493f0f",
+    "jobId": "a5218200-2094-4f5a-9b40-73e539c1ce1e",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-090.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-24T23:17:58.092Z"
+    "generatedAt": "2026-09-25T01:14:50.199Z"
   },
   {
     "presetId": "SP12-091",
@@ -1356,13 +1356,13 @@
     "packName": "Video Game Originals Vault",
     "category": "10. Graphic & Feudal Gameplay",
     "file": "assets/recipes/styles/defaults/SP12-091.webp",
-    "jobId": "94940cd4-f1fe-4e43-ac34-fd5219542b7a",
+    "jobId": "accae2a9-d1f5-46be-af9f-24674e0cf54d",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-091.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-24T23:17:54.426Z"
+    "generatedAt": "2026-09-25T01:15:32.549Z"
   },
   {
     "presetId": "SP12-092",
@@ -1446,13 +1446,13 @@
     "packName": "Video Game Originals Vault",
     "category": "11. Psychological & Tactical Gameplay",
     "file": "assets/recipes/styles/defaults/SP12-097.webp",
-    "jobId": "5b5a0065-f4df-4deb-8ba9-d41cb3f542d0",
+    "jobId": "daa6c6cb-8a96-4f78-a890-8909d04c4517",
     "sourceAsset": "assets/recipes/styles/defaults/SP12-097.webp",
     "generationMode": "text-to-image",
     "providerId": "chatgpt",
     "model": "gpt-5.5",
     "reasoningEffort": "provider_default",
-    "generatedAt": "2026-09-24T23:17:46.620Z"
+    "generatedAt": "2026-09-25T01:15:20.205Z"
   },
   {
     "presetId": "SP12-098",

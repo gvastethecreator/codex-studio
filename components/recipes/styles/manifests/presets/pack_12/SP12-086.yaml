@@ -3,7 +3,7 @@ id: SP12-086
 packId: pack_12
 name: 'Amnesia: The Dark Descent First-Person Gameplay Capture'
 category: 9. Gothic & Dungeon Gameplay
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,28 +17,32 @@ tags:
   - visual-evaluation-pending
 visualDna:
   aesthetic: >-
-    Amnesia: The Dark Descent (2010) first-person survival-horror frame: tactile HPL2-era masonry,
-    small failing lamplight and strong occlusion hiding the next space.
+    Anchor the preset in Amnesia: The Dark Descent's 2010 HPL2 first-person survival-horror
+    presentation: plain physically handled spaces, simple geometry, modest diffuse textures, and
+    darkness that limits what the player can know.
   color_and_tone: >-
-    Keep most of the frame in subdued stone, wood and umber values. A small warm lantern or candle
-    pool can reveal a nearby interaction while leaving farther areas uncertain; avoid a full-screen
-    amber filter.
+    Use subdued stone gray, old wood, and umber, with a small wick-amber pool against cool,
+    uncertain darkness. Avoid a broad amber grade or rich high-contrast fantasy color.
   lighting_and_shadow: >-
-    Use one practical light source and strong distance falloff. Keep the immediate interaction
-    legible and allow the background to lose information gradually, not to pure black.
+    A small practical lantern or candle produces steep light falloff over nearby surfaces; faint
+    cool ambient light may separate far silhouettes. Keep a requested immediate interaction legible
+    while the far space loses detail. Avoid modern ray-traced gloss, full-screen amber grading and
+    black-crushed foregrounds.
   texture_and_material: >-
-    Show simple 2010-generation real-time stone, timber, metal and cloth, with localized physical
-    details and modest texture resolution. Do not add modern microdetail or generalized gore.
+    Use simple stone, timber, iron, and cloth with restrained 2010 diffuse texture resolution and
+    localized stains. Avoid modern PBR sheen, dense microtexture, and generalized gore.
   camera_and_composition: >-
     Use a human eye-level first-person gameplay camera and keep the requested near-field action
     legible. Do not add a door, lantern or interaction object unless the prompt calls for it.
   rendering_and_quality: >-
-    Read as an authentic 2010 PC-era real-time screenshot translated to a crisp card: plain
-    geometry, restrained texture resolution, practical light falloff and stable first-person
-    perspective.
+    Keep an authentic HPL2-era real-time image: simple meshes, soft diffuse surfaces, practical
+    light, and stable first-person scale. Avoid cinematic depth-of-field and contemporary
+    high-detail corridor rendering.
   subject_treatment: >-
-    Preserve the prompt's subject and action. Visible hands or a held light may enter the frame only
-    when the requested action uses them; do not add Daniel or a threat.
+    Preserve requested subject and action in first person. Use near-field physics-object scale and a
+    vulnerable exploration relationship to space. A held light or hands belong only where the
+    requested action needs them; do not introduce a named protagonist, threat or weapon fight by
+    default.
   atmosphere_and_mood: >-
     Maintain vulnerable first-person perception and limited visibility while preserving the
     requested event; combat and monster reveal are not required.
@@ -69,6 +73,8 @@ attributes:
       url: https://frictionalgames.com/2010-02-amnesia-the-dark-descent-teaser-web-site-pre-order/
     - title: Closer Look at Teaser and More — Frictional Games
       url: https://frictionalgames.com/2010-02-closer-look-at-teaser-and-more/
+    - title: 'Amnesia: The Dark Descent official screenshot folder — Frictional Games'
+      url: https://drive.google.com/drive/folders/0B46VxpjfO5WCd0g1a2FtT2psdWc
   intentionalPolicy:
     schemaVersion: 1
     kind: representation_profile

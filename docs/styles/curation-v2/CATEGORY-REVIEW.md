@@ -1998,7 +1998,7 @@ Evidence [SP15-122](../../../components/recipes/styles/manifests/presets/pack_15
 
 **Problem:** Game camera and renderer must be explicit without locking the request to a named protagonist or one level.
 **Retain:** Reference-specific silhouettes, color relationships, material construction, emotional tone and rendering; explicit subject choices remain authoritative.
-**Proposed action:** Keep researched illustration and gameplay counterparts separate. Activate characteristic design vocabulary by default without copying canonical scenes or overriding explicit content. Root reviewed Luna proposals and revised diluted definitions.
+**Proposed action:** Root-reviewed targeted repair of game-specific anatomy, equipment construction, material response, palette and original rendering era. Representative gameplay events stay in card briefs. Preserve existing cameras and explicit requested actors/actions; avoid generic modern fantasy rendering and blanket exclusion of characteristic equipment.
 **Image acceptance check:** Review the generated card for playable spatial logic and the specified game camera. Cross-subject and reference-lock checks remain pending.
 
 Evidence [SP12-081](../../../components/recipes/styles/manifests/presets/pack_12/SP12-081.yaml) — Diablo II: Resurrected Isometric Gameplay Capture: `Use a stable elevated three-quarter/isometric ARPG view. Keep the playable figure small relative to the area, with a diagonal floor plane and nearby targets arranged as a readable local encounter; avoid a free camera, shoulder-level follow view, or portrait cr`…
@@ -2012,7 +2012,7 @@ Evidence [SP12-083](../../../components/recipes/styles/manifests/presets/pack_12
 
 **Problem:** Game camera and renderer must be explicit without locking the request to a named protagonist or one level.
 **Retain:** Reference-specific silhouettes, color relationships, material construction, emotional tone and rendering; explicit subject choices remain authoritative.
-**Proposed action:** Keep researched illustration and gameplay counterparts separate. Activate characteristic design vocabulary by default without copying canonical scenes or overriding explicit content. Root reviewed Luna proposals and revised diluted definitions.
+**Proposed action:** Root-reviewed targeted repair of game-specific anatomy, equipment construction, material response, palette and original rendering era. Representative gameplay events stay in card briefs. Preserve existing cameras and explicit requested actors/actions; avoid generic modern fantasy rendering and blanket exclusion of characteristic equipment.
 **Image acceptance check:** Review the generated card for playable spatial logic and the specified game camera. Cross-subject and reference-lock checks remain pending.
 
 Evidence [SP12-087](../../../components/recipes/styles/manifests/presets/pack_12/SP12-087.yaml) — Darksiders Third-Person Gameplay Capture: `Lock to a trailing third-person camera a little above and behind the playable character, looking into the traversable space. Keep the hero large in the near field, typically left or center-left, with ground plane and route ahead visible; use a long sword or ne`…
@@ -2026,7 +2026,7 @@ Evidence [SP12-089](../../../components/recipes/styles/manifests/presets/pack_12
 
 **Problem:** Game camera and renderer must be explicit without locking the request to a named protagonist or one level.
 **Retain:** Reference-specific silhouettes, color relationships, material construction, emotional tone and rendering; explicit subject choices remain authoritative.
-**Proposed action:** Keep researched illustration and gameplay counterparts separate. Activate characteristic design vocabulary by default without copying canonical scenes or overriding explicit content. Root reviewed Luna proposals and revised diluted definitions.
+**Proposed action:** Root-reviewed targeted repair of game-specific anatomy, equipment construction, material response, palette and original rendering era. Representative gameplay events stay in card briefs. Preserve existing cameras and explicit requested actors/actions; avoid generic modern fantasy rendering and blanket exclusion of characteristic equipment.
 **Image acceptance check:** Review the generated card for playable spatial logic and the specified game camera. Cross-subject and reference-lock checks remain pending.
 
 Evidence [SP12-093](../../../components/recipes/styles/manifests/presets/pack_12/SP12-093.yaml) — Silent Hill f — Showa Folklore Gameplay: `Third-person camera behind or slightly above the playable subject, small-to-medium in frame; preserve forward traversal space and glimpses of town architecture.`

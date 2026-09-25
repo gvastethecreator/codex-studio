@@ -3,7 +3,7 @@ id: SP12-091
 packId: pack_12
 name: Mortal Kombat 1 2.5D Fighting Capture
 category: 10. Graphic & Feudal Gameplay
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,18 +20,23 @@ visualDna:
     Mortal Kombat 1 (2023) polished real-time fighting-game frame with naturalistic fighters, ornate
     martial costume, jewel-toned scenery and precisely readable side-on action.
   subject_treatment: >-
-    Keep the requested playable subject and opponent distinct, with limbs, pose and distance
-    readable at match scale. Preserve identity; do not replace either fighter with a named
-    character.
+    Preserve requested fighter identities and action while giving each a distinct martial
+    silhouette: close-fitted layered tunics, crossed torso panels, segmented bracers, reinforced
+    boots, varied collars or combat masks, and readable athletic anatomy. Assign equipment and
+    supernatural power design by character role instead of dressing everyone in smooth wuxia robes.
+    Include a secondary assist fighter only when requested.
   color_and_tone: >-
-    Let stage and character colors follow the prompt. Preserve contrast between two subjects and
-    their background without imposing franchise team colors or a particular arena.
+    Distinct fighter color identities—such as crimson and black, icy blue and steel, or ivory and
+    dark violet—separate against lush jewel-toned stage scenery and luminous natural skies. Honor
+    explicit colors. Avoid reducing the entire roster to jade, gold silk and amber magic.
   lighting_and_shadow: >-
     Use stage lighting that shapes bodies and action while keeping silhouettes and contact points
     readable. Do not add fatality lighting or effects unless requested.
   texture_and_material: >-
-    Use 2023 real-time 3D detail in skin, fabric, metal and stage surfaces, with action-ready
-    animation rather than a flat 2D sprite or painted tableau.
+    Differentiate stitched woven fabric, folded leather bindings, satin accent panels, fitted
+    engraved metal and natural skin under 2023 real-time stage lighting. Concentrate ornament at
+    functional collars, bracers and belts; retain large costume color blocks rather than covering
+    everything with gold filigree or making it generic robe fabric.
   camera_and_composition: >-
     Use a side-on fighting plane with enough horizontal room to show the active pair, their spacing
     and the ground line. Keep the playfield level and action readable; do not turn the frame into a
@@ -40,11 +45,13 @@ visualDna:
     Show a plausible exchange, wind-up or recovery beat. Match the requested intensity and do not
     force gore, a finishing move or a tournament narrative.
   rendering_and_quality: >-
-    Keep the frame in the 2023 real-time 3D generation with clear bodies, contact points and arena
-    depth. Health bars, round indicators and other interface appear only when the user asks for a
-    gameplay screenshot with UI.
+    Use high-detail, semi-realistic 3D game-character rendering: sculpted anatomy, textured skin,
+    stitched and wrapped cloth, scuffed hard armor, and sharp impact lighting. Keep power effects
+    compact and tied to a visible hit or block.
 avoidRules:
-  - unrequested use of franchise characters, costumes, exact arena or signature fatality
+  - >-
+    unrequested named roster characters, copied exact arenas or signature fatalities; retain the
+    reference game costume and equipment design vocabulary
   - switching the match plane to third-person roaming or a 2D pixel treatment
   - unrequested gore, move names, round text or fabricated health bars
   - key-art posing that hides playable spacing
@@ -52,9 +59,10 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-091.webp
 attributes:
   negativePrompt: >-
-    unrequested use of franchise characters, costumes, exact arena or signature fatality, switching
-    the match plane to third-person roaming or a 2D pixel treatment, unrequested gore, move names,
-    round text or fabricated health bars, key-art posing that hides playable spacing
+    unrequested named roster characters, copied exact arenas or signature fatalities; retain the
+    reference game costume and equipment design vocabulary, switching the match plane to
+    third-person roaming or a 2D pixel treatment, unrequested gore, move names, round text or
+    fabricated health bars, key-art posing that hides playable spacing
   referenceGame: >-
     Mortal Kombat 1 (2023 initial release by NetherRealm Studios and QLOC; ignore later DLC-specific
     designs unless requested)
@@ -90,7 +98,9 @@ attributes:
         group: camera
         value: mortal-kombat-1-2023 gameplay view
     avoidRules:
-      - text: unrequested use of franchise characters, costumes, exact arena or signature fatality
+      - text: >-
+          unrequested named roster characters, copied exact arenas or signature fatalities; retain
+          the reference game costume and equipment design vocabulary
         field: global
       - text: switching the match plane to third-person roaming or a 2D pixel treatment
         field: global

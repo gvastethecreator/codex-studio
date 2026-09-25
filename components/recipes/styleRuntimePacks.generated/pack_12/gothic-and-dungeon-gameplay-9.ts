@@ -71,19 +71,19 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'A 2015 PS4-generation real-time action-horror frame whose Gothic environment is experienced from immediately behind the playable hunter. The environment rises around a human-scale figure instead of being reduced to an elevated ARPG playfield.',
       subject_treatment:
-        'Preserve the requested actor, action, and objects. When a playable figure is included, keep it in the near foreground at close third-person scale; retain a clear silhouette and the relation between the figure, weapon if requested, and nearby architecture without adding an opponent.',
+        'Preserve the requested subjects and action. When hunters are appropriate, favor a lean elongated silhouette, layered worn leather coat tails, high collar, compact headwear and asymmetrical equipment. Keep the active arm, weapon shape and footing readable against nearby threats. Trick-weapon construction may characterize requested equipment; do not force a hunter, enemy or specific weapon into unrelated subjects.',
       color_and_tone:
-        'Use deep blue-gray and blue-black shadow, soot-dark wood or stone, and restrained umber. Small amber candle or gaslight points and cool window light can separate planes; avoid a uniform crimson tint.',
+        'Retain blue-gray and blue-black shadow, soot-dark stone and timber, and restrained umber; add small amber gaslight or candle points and scene-dependent warm sky or blood accents. Avoid an unbroken clean cyan cast.',
       lighting_and_shadow:
-        'Favor low-key real-time lighting with strong local contrast: the inspected interior has cool beams entering high windows and sparse warm lights against deep architecture shadow. Keep enough midtone on the character and route for gameplay reading.',
+        'Use low-key 2015-era real-time light with cool high-window beams and sparse warm practicals. Preserve midtone on the coat, weapon, footing, and route so the hunt reads as play.',
       texture_and_material:
-        'Show game-scale stone, timber, iron, glass, and worn cloth with the restrained detail of an original PS4-era frame. Let light reveal the material transitions; wetness is scene-dependent rather than a global surface treatment.',
+        'Bring out worn leather, stained cloth, iron, old glass, damp stone, and soot in localized areas. Keep the Gothic architecture varied and weathered instead of uniformly pristine blue glass.',
       camera_and_composition:
         'Use a close over-the-shoulder third-person camera at human height. Place the playable figure near the lower foreground and let rails, floor lines, tall windows, and columns lead forward into the playable space; do not switch to an isometric or first-person view.',
       atmosphere_and_mood:
         'Keep immediate architectural oppression and uncertain depth around the player while leaving the route and requested action legible. A hunt, enemy, or attack is not mandatory.',
       rendering_and_quality:
-        'Read as interpreted 2015-era real-time PS4 gameplay with stable third-person perspective, low-light environment detail, and clean actor-to-architecture separation. Include HUD or captions only when explicitly requested; preserve requested text or interface rather than banning it.',
+        'Keep restrained PS4-era real-time detail and stable human-height camera scale; avoid a smooth promotional monster portrait or a spotless cinematic cathedral.',
     },
     ui: {
       kind: 'representation_profile',
@@ -156,19 +156,19 @@ export const GENERATED_STYLE_PRESETS = [
       'third-person portrait, isometric view or cinematic cutaway, mandatory monster, chase, castle landmark or named character, bright modern PBR gloss, dense microtexture or exaggerated film grain, total-black near field or unreadable requested action, unrequested sanity meter, oil gauge, HUD, crosshair, interface, logo or captions; preserve explicitly requested UI and text, anime, manga or cel-shaded grammar',
     style: {
       aesthetic:
-        'Amnesia: The Dark Descent (2010) first-person survival-horror frame: tactile HPL2-era masonry, small failing lamplight and strong occlusion hiding the next space.',
+        "Anchor the preset in Amnesia: The Dark Descent's 2010 HPL2 first-person survival-horror presentation: plain physically handled spaces, simple geometry, modest diffuse textures, and darkness that limits what the player can know.",
       color_and_tone:
-        'Keep most of the frame in subdued stone, wood and umber values. A small warm lantern or candle pool can reveal a nearby interaction while leaving farther areas uncertain; avoid a full-screen amber filter.',
+        'Use subdued stone gray, old wood, and umber, with a small wick-amber pool against cool, uncertain darkness. Avoid a broad amber grade or rich high-contrast fantasy color.',
       lighting_and_shadow:
-        'Use one practical light source and strong distance falloff. Keep the immediate interaction legible and allow the background to lose information gradually, not to pure black.',
+        'A small practical lantern or candle produces steep light falloff over nearby surfaces; faint cool ambient light may separate far silhouettes. Keep a requested immediate interaction legible while the far space loses detail. Avoid modern ray-traced gloss, full-screen amber grading and black-crushed foregrounds.',
       texture_and_material:
-        'Show simple 2010-generation real-time stone, timber, metal and cloth, with localized physical details and modest texture resolution. Do not add modern microdetail or generalized gore.',
+        'Use simple stone, timber, iron, and cloth with restrained 2010 diffuse texture resolution and localized stains. Avoid modern PBR sheen, dense microtexture, and generalized gore.',
       camera_and_composition:
         'Use a human eye-level first-person gameplay camera and keep the requested near-field action legible. Do not add a door, lantern or interaction object unless the prompt calls for it.',
       rendering_and_quality:
-        'Read as an authentic 2010 PC-era real-time screenshot translated to a crisp card: plain geometry, restrained texture resolution, practical light falloff and stable first-person perspective.',
+        'Keep an authentic HPL2-era real-time image: simple meshes, soft diffuse surfaces, practical light, and stable first-person scale. Avoid cinematic depth-of-field and contemporary high-detail corridor rendering.',
       subject_treatment:
-        "Preserve the prompt's subject and action. Visible hands or a held light may enter the frame only when the requested action uses them; do not add Daniel or a threat.",
+        'Preserve requested subject and action in first person. Use near-field physics-object scale and a vulnerable exploration relationship to space. A held light or hands belong only where the requested action needs them; do not introduce a named protagonist, threat or weapon fight by default.',
       atmosphere_and_mood:
         'Maintain vulnerable first-person perception and limited visibility while preserving the requested event; combat and monster reveal are not required.',
     },

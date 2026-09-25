@@ -129,7 +129,7 @@ export const GENERATED_STYLE_PRESETS = [
       aesthetic:
         'Metal Gear Solid 3: Snake Eater (original 2004 PS2) overhead stealth gameplay: olive-yellow camouflage, compact modeled figures, layered alpha-card foliage and softly blurred diffuse textures.',
       subject_treatment:
-        'Preserve the requested identity, count and action while expressing the selected gameplay view. Keep a small playable figure identifiable; leaves, rocks, and trunks may interrupt its silhouette.',
+        'Preserve the requested identity, count and action. Keep the playable operative readable as a compact modeled figure with clear joint bends and silhouette separation from foliage. For military subjects, late-Cold-War camouflage fatigues, webbing, small utility pouches and matte field equipment define the practical silhouette; do not replace the actor with a named character.',
       color_and_tone:
         'Muted terrain-matched greens, khaki, brown, and stone, without modern-remake saturation/sharpness.',
       lighting_and_shadow:
@@ -137,11 +137,11 @@ export const GENERATED_STYLE_PRESETS = [
       texture_and_material:
         'Compact PS2-era foliage/ground textures, simple material transitions, low-resolution rendering.',
       camera_and_composition:
-        'Use the original 2004 elevated overhead third-person camera, looking diagonally down onto a small playable figure and surrounding cover. Show tactical sightlines and route choices from above; do not use the later Subsistence free-orbit camera or a Delta shoulder view.',
+        'Original elevated overhead third-person stealth camera, diagonally down onto a compact but readable controlled figure, surrounding cover and navigable routes. Keep the player about one-sixth to one-fifth of the image height in a representative card and show tactical sightlines; preserve explicit composition requests. No later Subsistence free-orbit or Delta shoulder camera.',
       atmosphere_and_mood:
         'Watchful survival and concealment, tension from exposure and proximity rather than horror fog.',
       rendering_and_quality:
-        'Original PS2-era real-time rendering with restrained polygon detail, soft texture sampling, baked-looking mottled ground shade and limited specular response. No Delta photoreal terrain or modern shoulder camera.',
+        'Original 2004 PlayStation 2 real-time rendering: visible angular limb and terrain meshes, soft low-resolution diffuse texture sampling, planar alpha-cut leaf clusters, baked-looking mottled shade, limited specular response and modest draw distance. Preserve the authored game image rather than laying a pixel filter over modern photorealistic forest art. No Delta PBR terrain, photogrammetry, cinematic bokeh or modern shoulder camera.',
     },
     ui: {
       kind: 'representation_profile',

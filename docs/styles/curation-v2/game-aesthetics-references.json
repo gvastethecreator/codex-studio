@@ -1187,5 +1187,307 @@
         "observed": "Museum explanation used to check that controlled hatching builds drawn volume; the fantasy composition is an authored choice, not sourced from the museum."
       }
     ]
+  },
+  "gameplayCardCritique": {
+    "date": "2026-09-25",
+    "userFeedback": "Several gameplay captures still look like generic GPT imagery. Strengthen the aesthetic details that define each reference game, not merely the scene or camera.",
+    "reviewed": 18,
+    "reworked": ["SP12-083", "SP12-086", "SP12-087", "SP12-090", "SP12-091", "SP12-097"],
+    "retained": [
+      "SP12-081",
+      "SP12-082",
+      "SP12-084",
+      "SP12-085",
+      "SP12-088",
+      "SP12-089",
+      "SP12-092",
+      "SP12-093",
+      "SP12-094",
+      "SP12-095",
+      "SP12-096",
+      "SP12-098"
+    ],
+    "agentReview": "Two bounded Luna 6 Max category audits; root inspected the rendered contact sheets and reviewed proposals before source integration.",
+    "promptFinding": "The ChatGPT card compiler blanket-excluded recognizable costumes and props even when they expressed the selected game. Pack 12 now retains characteristic equipment construction, silhouettes, materials and rendering era while requesting new actors and situations. This is a plausible contributing conflict, not a proved sole cause of the prior images.",
+    "rootCorrections": [
+      "For Honor keeps both duel and objective-movement framing. Combat is conditional on the request; equipment construction and restrained material palette remain distinctive defaults.",
+      "MK1 gains constructed role-specific equipment, separated material response and distinct fighter palettes. The representative card uses two clear silhouettes; a Kameo is optional, not a mandatory third actor.",
+      "MGS3 preserves the original overhead camera and 2004 PS2 geometry, alpha-card foliage and diffuse texture scale, with a more legible player. No Delta material or lens upgrade.",
+      "Darksiders uses angular comic anatomy and hand-painted game surfaces instead of rounded marine armor. Bloodborne keeps a readable lean hunter silhouette, worn layered materials and gameplay-scale melee.",
+      "Amnesia uses near-field door/crate occlusion, modest 2010 HPL2 texture detail and practical light falloff; no mandatory hand animation or weapon fight."
+    ],
+    "visualReview": {
+      "status": "root-reviewed",
+      "provider": "chatgpt",
+      "completed": 6,
+      "failed": 0,
+      "codexTurns": 0,
+      "userAcceptance": "pending",
+      "crossSubjectValidation": "pending",
+      "evidence": [
+        {
+          "presetId": "SP12-090",
+          "jobId": "a5218200-2094-4f5a-9b40-73e539c1ce1e"
+        },
+        {
+          "presetId": "SP12-091",
+          "jobId": "accae2a9-d1f5-46be-af9f-24674e0cf54d"
+        },
+        {
+          "presetId": "SP12-097",
+          "jobId": "daa6c6cb-8a96-4f78-a890-8909d04c4517"
+        },
+        {
+          "presetId": "SP12-087",
+          "jobId": "abd20449-ca0a-4b25-b0bd-b29e6753393a"
+        },
+        {
+          "presetId": "SP12-083",
+          "jobId": "601bac11-09c4-4757-b6f6-5279cc52ebcd"
+        },
+        {
+          "presetId": "SP12-086",
+          "jobId": "79fffd5b-af21-4f02-ada6-71dc027dda46"
+        }
+      ],
+      "observations": [
+        "Bloodborne now places a legible hunter and weapon on the combat lane with worn urban Gothic materials; the prior blue cathedral monster composition is retained as an alternate.",
+        "Amnesia now shows a near-field door/crate hiding relationship with visibly simpler materials and short-range lantern illumination. Darkness remains deliberate.",
+        "Darksiders replaces rounded marine armor with articulated muscular arms, angular equipment and split red cloth. This is a stylized approximation, not a verified reproduction of an original game frame.",
+        "For Honor now makes the attack/guard contact readable; MK1 separates equipment and power identities on a level match plane. Exact franchise fidelity remains a human visual judgment.",
+        "MGS3 now has a larger readable operative and visibly simplified terrain/foliage rendering in the original elevated camera.",
+        "All six previous primary images and pre-existing variants were retained as ordered alternatives; no historical jobs or catalog assets were rewritten."
+      ]
+    },
+    "sources": [
+      {
+        "presetId": "SP12-087",
+        "title": "Darksiders Warmastered official screenshot 01 — THQ Nordic",
+        "url": "https://darksiders.thqnordic.com/game-sites/darksiders/content/screenshots/screenshot-01.jpg",
+        "observed": "Opened the publisher screenshot. It shows a readable blue-gray armored figure with red cloth moving through a broken city with green growth and a more stylized, broad-form presentation than the reviewed marine-like card. The image is from the official Warmastered page, a remaster of the original; it is evidence for the game's visual identity, not a frame-for-frame 2010 render specification."
+      },
+      {
+        "presetId": "SP12-087",
+        "title": "Darksiders Warmastered Edition — THQ Nordic",
+        "url": "https://darksiders.thqnordic.com/",
+        "observed": "Official game page identifies Warmastered as a version of the original Darksiders and describes the ruined-world action-adventure."
+      },
+      {
+        "presetId": "SP12-083",
+        "title": "New Bloodborne environments, characters and weapons unveiled — PlayStation.Blog",
+        "url": "https://blog.playstation.com/archive/2014/11/20/new-bloodborne-environments-characters-weapons-unveiled",
+        "observed": "The official producer post describes abandoned Yharnam, Cainhurst fog, a slightly more modern Gothic setting, hunters, transforming weapons, and proactive combat. The post links to official screenshots; its descriptive text was readable in this audit."
+      },
+      {
+        "presetId": "SP12-083",
+        "title": "Bloodborne — Castle_1 — PlayStation Europe",
+        "url": "https://www.flickr.com/photos/playstationblogeurope/15213968804/",
+        "observed": "The official screenshot page opened, but its image did not render in the browser used for this audit. The card verdict therefore relies on the local card plus the publisher's written description; image-level comparison remains limited."
+      },
+      {
+        "presetId": "SP12-086",
+        "title": "Frictional Games Press Kit — Amnesia: The Dark Descent",
+        "url": "https://frictionalgames.com/press-kit/",
+        "observed": "The developer identifies the 2010 game as first-person survival horror, lists HPL2, and describes immersion, discovery, hiding, running, and using wits rather than fighting."
+      },
+      {
+        "presetId": "SP12-086",
+        "title": "Amnesia: The Dark Descent official screenshot folder — Frictional Games",
+        "url": "https://drive.google.com/drive/folders/0B46VxpjfO5WCd0g1a2FtT2psdWc",
+        "observed": "Viewed the publisher-owned screens folder and the 1280x720 file 2010_sep_unknown_awaits.jpg. It shows a very dark, simple stone interior and a small central silhouette; the card's sharp, detailed empty hallway does not carry the same rough 2010 texture scale or active first-person interaction."
+      },
+      {
+        "presetId": "SP12-090",
+        "type": "official",
+        "url": "https://news.ubisoft.com/en-us/article/3Y7pyV1e0BCI6fVWFqQc4C/for-honor-unveiled",
+        "finding": "Ubisoft's Art of Battle description confirms directional weapon stance and direction-matched blocking."
+      },
+      {
+        "presetId": "SP12-091",
+        "type": "official",
+        "url": "https://warnerbrosgames.com/article/mk1",
+        "finding": "Warner Bros. describes a separate Kameo Fighter roster that assists during matches."
+      },
+      {
+        "presetId": "SP12-097",
+        "url": "https://www.konami.com/mg/archive/mgs3/uk/system_main.html",
+        "observed": "Root read the original Konami system page: camouflage combines environment-matched gear and face paint; jungle concealment and CQC are gameplay mechanisms. The proposed capture is an original composition."
+      }
+    ],
+    "limitations": [
+      "The official Bloodborne post's screenshot page did not render its photo in the browser, so the Bloodborne source comparison is based on the publisher's written description and the local image.",
+      "The Lords of the Fallen official page opened and described screenshots, but linked image URLs redirected to a 404; SP12-085 is kept based on the local image, the manifest's documented dual-realm/material cues, and its readable lantern-led traversal event."
+    ]
+  },
+  "claudeCurationReview": {
+    "date": "2026-09-25",
+    "requestedBy": "Cristian explicitly asked root to study Claude's stronger execution, changes and additions.",
+    "scope": "Observed concurrently authored SP17-096 through SP17-125; reviewed read-only and preserved outside root-owned commits.",
+    "additions": [
+      {
+        "id": "SP17-096",
+        "name": "Teal Tangerine Overprint Riso",
+        "category": "2. Dungeon Zine & Risograph Prints"
+      },
+      {
+        "id": "SP17-097",
+        "name": "Ballpoint Scrawl Copier Zine",
+        "category": "2. Dungeon Zine & Risograph Prints"
+      },
+      {
+        "id": "SP17-098",
+        "name": "Blackout Toner Doom Zine",
+        "category": "2. Dungeon Zine & Risograph Prints"
+      },
+      {
+        "id": "SP17-099",
+        "name": "Fluoro Pink Federal Blue Riso",
+        "category": "2. Dungeon Zine & Risograph Prints"
+      },
+      {
+        "id": "SP17-100",
+        "name": "Mimeograph Violet Ditto Zine",
+        "category": "2. Dungeon Zine & Risograph Prints"
+      },
+      {
+        "id": "SP17-101",
+        "name": "Gocco Gold Leaf Micro Print",
+        "category": "2. Dungeon Zine & Risograph Prints"
+      },
+      {
+        "id": "SP17-102",
+        "name": "Crust Linocut Copier Rag",
+        "category": "2. Dungeon Zine & Risograph Prints"
+      },
+      {
+        "id": "SP17-103",
+        "name": "Split Fountain Dusk Riso",
+        "category": "2. Dungeon Zine & Risograph Prints"
+      },
+      {
+        "id": "SP17-104",
+        "name": "Grease Pencil Monster Fanzine",
+        "category": "2. Dungeon Zine & Risograph Prints"
+      },
+      {
+        "id": "SP17-105",
+        "name": "Misregistered CMY Chaos Print",
+        "category": "2. Dungeon Zine & Risograph Prints"
+      },
+      {
+        "id": "SP17-106",
+        "name": "Herbal Almanac Moss Riso",
+        "category": "2. Dungeon Zine & Risograph Prints"
+      },
+      {
+        "id": "SP17-107",
+        "name": "Thermal Fax Decay Zine",
+        "category": "2. Dungeon Zine & Risograph Prints"
+      },
+      {
+        "id": "SP17-108",
+        "name": "Gold Ember Black Stock Riso",
+        "category": "2. Dungeon Zine & Risograph Prints"
+      },
+      {
+        "id": "SP17-109",
+        "name": "Squat Stencil Spray Zine",
+        "category": "2. Dungeon Zine & Risograph Prints"
+      },
+      {
+        "id": "SP17-110",
+        "name": "Sun Faded Newsprint Riso",
+        "category": "2. Dungeon Zine & Risograph Prints"
+      },
+      {
+        "id": "SP17-111",
+        "name": "Copperplate Burin Engraving",
+        "category": "3. Ink, Tarot & Bestiary Plates"
+      },
+      {
+        "id": "SP17-112",
+        "name": "Mezzotint Abyss Plate",
+        "category": "3. Ink, Tarot & Bestiary Plates"
+      },
+      {
+        "id": "SP17-113",
+        "name": "Drypoint Burr Nightmare",
+        "category": "3. Ink, Tarot & Bestiary Plates"
+      },
+      {
+        "id": "SP17-114",
+        "name": "Sepia Aquatint Wash Plate",
+        "category": "3. Ink, Tarot & Bestiary Plates"
+      },
+      {
+        "id": "SP17-115",
+        "name": "Sanguine Iron Gall Study",
+        "category": "3. Ink, Tarot & Bestiary Plates"
+      },
+      {
+        "id": "SP17-116",
+        "name": "Gold Ink Indigo Paper Plate",
+        "category": "3. Ink, Tarot & Bestiary Plates"
+      },
+      {
+        "id": "SP17-117",
+        "name": "Frantic Quill Blot Plate",
+        "category": "3. Ink, Tarot & Bestiary Plates"
+      },
+      {
+        "id": "SP17-118",
+        "name": "Soft Ground Crayon Etching",
+        "category": "3. Ink, Tarot & Bestiary Plates"
+      },
+      {
+        "id": "SP17-119",
+        "name": "Vermilion Rubrication Plate",
+        "category": "3. Ink, Tarot & Bestiary Plates"
+      },
+      {
+        "id": "SP17-120",
+        "name": "Chiaroscuro Tone Block Woodcut",
+        "category": "3. Ink, Tarot & Bestiary Plates"
+      },
+      {
+        "id": "SP17-121",
+        "name": "Inked Copper Matrix Plate",
+        "category": "3. Ink, Tarot & Bestiary Plates"
+      },
+      {
+        "id": "SP17-122",
+        "name": "Walnut Ink Bleed Brushplate",
+        "category": "3. Ink, Tarot & Bestiary Plates"
+      },
+      {
+        "id": "SP17-123",
+        "name": "Obsessive Stipple Plate",
+        "category": "3. Ink, Tarot & Bestiary Plates"
+      },
+      {
+        "id": "SP17-124",
+        "name": "Blood Rust Monotype Ghost",
+        "category": "3. Ink, Tarot & Bestiary Plates"
+      },
+      {
+        "id": "SP17-125",
+        "name": "Grotesque Satire Etching",
+        "category": "3. Ink, Tarot & Bestiary Plates"
+      }
+    ],
+    "evidence": {
+      "source": "Claude scratchpad session 7849d5c6-c18b-478b-9c6b-13cf44285213: presets.ts, gen.ts, briefs-v2.json, fix108.ts, flip.ts, reviews.ts, cards.log and cards-v2.log.",
+      "visual": "Root inspected zine2.jpg and plate2.jpg contact sheets covering the thirty added presets.",
+      "runs": "Both inspected generation logs report provider=chatgpt, generated=30, attempted=30, failed=0. These counts are not a complete timing, usage or cost comparison."
+    },
+    "observedStrengths": [
+      "A single imaginative premise leads each card: flooded cathedral and submerged saint face; a well-bottom view of an executioner; a castle carried by a beetle.",
+      "Viewpoint, scale, foreground framing and focal hierarchy make the premise legible rather than accumulating several equally loud events.",
+      "Each ink has a defined role in contour, light, shadow or overprint; medium behavior is operational rather than an adjective appended to a generic painting.",
+      "The set varies intimacy, dread, sacred stillness, grotesque humor and spectacle; many strong cards do not depend on combat.",
+      "The SP17-108 revision repairs both definition and brief after a print drifts toward painted modeling: flat spot ink, bare black shadows, no realistic skin shading."
+    ],
+    "adoptedReviewCriteria": "Judge each card first by its visual premise, mood and focal hierarchy, then by the visible medium or game rendering. Keep sample stories out of reusable style definitions. Reject generic polish and repetitive combat even if the image is technically clean.",
+    "limitations": "No blanket acceptance of all Claude changes or portability claim. Root did not alter or commit Claude's new presets during this comparison; ongoing shared-file writes and validation belong to the live integration state."
   }
 }
