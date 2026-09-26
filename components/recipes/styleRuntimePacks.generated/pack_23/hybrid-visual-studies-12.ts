@@ -177,4 +177,481 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP23-227',
+    name: 'Pixel Figure in Oil Painting',
+    displayName: 'Pixel Figure in Oil Painting',
+    styleAnchors: [
+      'Pixel Figure in Oil Painting',
+      'pixel sprite inside classical oil',
+      'pixel sprite',
+    ],
+    category: '12. Hybrid Visual Studies',
+    domain: 'pixel sprite inside classical oil',
+    negativePrompt:
+      'blending the two media into one generic finish, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Pixel figure in oil painting: a crisp low-resolution pixel sprite placed inside a rich classical oil painting, the two media kept sharply distinct.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the main figure as a crisp pixel sprite and everything around it as classical oil painting.',
+      color_and_tone: 'Warm varnished oil tones around a bright pixel palette.',
+      lighting_and_shadow: 'Old-master chiaroscuro in the painting, flat sprite light.',
+      texture_and_material: 'Oil brushwork and craquelure against hard pixel edges.',
+      camera_and_composition: 'Classical composition with the sprite as focal point.',
+      atmosphere_and_mood:
+        'Keep the requested mood with witty anachronism, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Both media fully convincing side by side, kept consistent across the whole image.',
+      creative_brief:
+        "Pixel figure in oil painting: a crisp low-resolution pixel sprite placed inside a rich classical oil painting, the two media kept sharply distinct. Carry it through pixel sprite, classical oil, hard contrast of media, craquelure. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'pixel sprite; classical oil; hard contrast of media; craquelure',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-228',
+    name: 'Ink Creatures on Old Photograph',
+    displayName: 'Ink Creatures on Old Photograph',
+    styleAnchors: [
+      'Ink Creatures on Old Photograph',
+      'drawn creatures on vintage photos',
+      'sepia photo',
+    ],
+    category: '12. Hybrid Visual Studies',
+    domain: 'drawn creatures on vintage photos',
+    negativePrompt:
+      'blending the two media into one generic finish, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Ink creatures on old photograph: faded sepia photographs of ordinary places with fantastical creatures drawn directly on top in black and white ink.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; draw the subject in ink over a faded real photograph.',
+      color_and_tone: 'Faded sepia photo with crisp black and white ink.',
+      lighting_and_shadow:
+        'Photographic light below, drawn shadows above, kept consistent across the whole image.',
+      texture_and_material: 'Photo grain, creases and pen lines on the print surface.',
+      camera_and_composition:
+        'Ordinary old photo composition invaded by drawings, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with uncanny playful intrusion.',
+      rendering_and_quality:
+        'Clear separation of photo and ink, kept consistent across the whole image.',
+      creative_brief:
+        "Ink creatures on old photograph: faded sepia photographs of ordinary places with fantastical creatures drawn directly on top in black and white ink. Carry it through sepia photo, ink drawings on top, creases, uncanny intrusion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'sepia photo; ink drawings on top; creases; uncanny intrusion',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-229',
+    name: 'Neon-Lit Woodcut',
+    displayName: 'Neon-Lit Woodcut',
+    styleAnchors: ['Neon-Lit Woodcut', 'woodcut with neon color', 'black woodcut'],
+    category: '12. Hybrid Visual Studies',
+    domain: 'woodcut with neon color',
+    negativePrompt:
+      'blending the two media into one generic finish, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Neon-lit woodcut: a traditional black relief woodcut with its carved lines lit by glowing neon color, as if the print were plugged in.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; carve the subject as a black woodcut and let neon color glow from its lines.',
+      color_and_tone: 'Black ink and paper with hot pink, cyan and acid green glow.',
+      lighting_and_shadow:
+        'Neon glow emanating from carved lines, kept consistent across the whole image.',
+      texture_and_material: 'Wood grain, gouge marks and luminous color bleed.',
+      camera_and_composition: 'Bold relief composition, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with electric folk energy.',
+      rendering_and_quality:
+        'Crisp woodcut structure with clean glow, kept consistent across the whole image.',
+      creative_brief:
+        "Neon-lit woodcut: a traditional black relief woodcut with its carved lines lit by glowing neon color, as if the print were plugged in. Carry it through black woodcut, neon glow, carved lines, wood grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'black woodcut; neon glow; carved lines; wood grain',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-230',
+    name: 'Illuminated Futurism',
+    displayName: 'Illuminated Futurism',
+    styleAnchors: [
+      'Illuminated Futurism',
+      'medieval illumination of future tech',
+      'medieval miniature',
+    ],
+    category: '12. Hybrid Visual Studies',
+    domain: 'medieval illumination of future tech',
+    negativePrompt:
+      'readable script, blending the two media into one generic finish, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Illuminated futurism: spaceships, robots and futuristic cities painted as a medieval illuminated miniature, with gold leaf, flat perspective and vellum.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; paint futuristic subjects with medieval miniature conventions and gold leaf.',
+      color_and_tone: 'Lapis, vermilion, green and burnished gold on vellum.',
+      lighting_and_shadow:
+        'Flat medieval modeling with gold highlights, kept consistent across the whole image.',
+      texture_and_material: 'Pigment on vellum, gold leaf and fine contours.',
+      camera_and_composition:
+        'Flattened medieval space with patterned ground, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with solemn anachronistic wonder.',
+      rendering_and_quality:
+        'Convincing illumination technique for modern subjects, kept consistent across the whole image.',
+      creative_brief:
+        "Illuminated futurism: spaceships, robots and futuristic cities painted as a medieval illuminated miniature, with gold leaf, flat perspective and vellum. Carry it through medieval miniature, futuristic subjects, gold leaf, flat perspective. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'medieval miniature; futuristic subjects; gold leaf; flat perspective',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-231',
+    name: 'Watercolor Over Wireframe',
+    displayName: 'Watercolor Over Wireframe',
+    styleAnchors: ['Watercolor Over Wireframe', 'paint washes over 3d wireframe', 'wireframe mesh'],
+    category: '12. Hybrid Visual Studies',
+    domain: 'paint washes over 3d wireframe',
+    negativePrompt:
+      'blending the two media into one generic finish, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Watercolor over wireframe: a visible 3D wireframe mesh with loose watercolor washes painted over it, the grid lines still showing through the pigment.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject as a wireframe mesh partly covered by loose watercolor.',
+      color_and_tone: 'Soft washes over thin cyan or black mesh lines.',
+      lighting_and_shadow: 'Wash density suggests light, kept consistent across the whole image.',
+      texture_and_material:
+        'Mesh lines, wet blooms and paper grain, kept consistent across the whole image.',
+      camera_and_composition:
+        'Subject centered, washes spilling past the mesh, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with half-built dreaminess, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Crisp mesh and loose paint both visible, kept consistent across the whole image.',
+      creative_brief:
+        "Watercolor over wireframe: a visible 3D wireframe mesh with loose watercolor washes painted over it, the grid lines still showing through the pigment. Carry it through wireframe mesh, loose watercolor, grid showing through, blooms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'wireframe mesh; loose watercolor; grid showing through; blooms',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-232',
+    name: 'Cross-Stitch Pixel Sprite',
+    displayName: 'Cross-Stitch Pixel Sprite',
+    styleAnchors: ['Cross-Stitch Pixel Sprite', 'embroidered pixel character', 'cross stitches'],
+    category: '12. Hybrid Visual Studies',
+    domain: 'embroidered pixel character',
+    negativePrompt:
+      'blending the two media into one generic finish, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Cross-stitch pixel sprite: a game-style sprite embroidered in cross-stitch on aida cloth, each pixel a tiny X of thread, framed in an embroidery hoop.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; stitch the subject as a pixel sprite in cross-stitch on cloth.',
+      color_and_tone: 'Bright thread colors on cream or white aida cloth.',
+      lighting_and_shadow:
+        'Soft light raking across raised stitches, kept consistent across the whole image.',
+      texture_and_material: 'X stitches, cloth weave, loose threads and hoop.',
+      camera_and_composition: 'Close view of the hoop with the sprite centered.',
+      atmosphere_and_mood: 'Keep the requested mood with cozy handmade nostalgia.',
+      rendering_and_quality:
+        'Convincing needlework texture, kept consistent across the whole image.',
+      creative_brief:
+        "Cross-stitch pixel sprite: a game-style sprite embroidered in cross-stitch on aida cloth, each pixel a tiny X of thread, framed in an embroidery hoop. Carry it through cross stitches, pixel sprite, aida cloth, embroidery hoop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'cross stitches; pixel sprite; aida cloth; embroidery hoop',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-233',
+    name: 'Creature Patent Drawing',
+    displayName: 'Creature Patent Drawing',
+    styleAnchors: [
+      'Creature Patent Drawing',
+      'victorian patent diagram of a creature',
+      'patent diagram',
+    ],
+    category: '12. Hybrid Visual Studies',
+    domain: 'victorian patent diagram of a creature',
+    negativePrompt:
+      'readable text or numbers, blending the two media into one generic finish, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Creature patent drawing: a fantastical creature drawn as a Victorian patent diagram, precise line, numbered part leaders without text and multiple views.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; draw the subject as a precise patent diagram with front and side views.',
+      color_and_tone: 'Black line on aged cream paper, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Line hatching only, technical shading, kept consistent across the whole image.',
+      texture_and_material: 'Fine technical pen line, leaders and paper aging.',
+      camera_and_composition:
+        'Multiple views arranged on a sheet, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with deadpan inventiveness, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Precise technical drawing with no readable text, kept consistent across the whole image.',
+      creative_brief:
+        "Creature patent drawing: a fantastical creature drawn as a Victorian patent diagram, precise line, numbered part leaders without text and multiple views. Carry it through patent diagram, multiple views, technical line, aged paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'patent diagram; multiple views; technical line; aged paper',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-234',
+    name: 'Glitched Tapestry Weave',
+    displayName: 'Glitched Tapestry Weave',
+    styleAnchors: [
+      'Glitched Tapestry Weave',
+      'medieval tapestry with digital glitch',
+      'woven tapestry',
+    ],
+    category: '12. Hybrid Visual Studies',
+    domain: 'medieval tapestry with digital glitch',
+    negativePrompt:
+      'blending the two media into one generic finish, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Glitched tapestry weave: a medieval woven tapestry scene broken by digital glitches, displaced bands, pixel-sorted threads and color channel shifts woven into wool.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; weave the subject into a tapestry that is partly shifted by digital glitches.',
+      color_and_tone: 'Faded tapestry reds, blues and greens with RGB shift bands.',
+      lighting_and_shadow:
+        'Soft woven shading with no real light, kept consistent across the whole image.',
+      texture_and_material: 'Wool weave, stretched thread bands and displaced rows.',
+      camera_and_composition:
+        'Tapestry panel with glitch bands crossing it, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with eerie corrupted history.',
+      rendering_and_quality:
+        'Convincing weave with deliberate glitch, kept consistent across the whole image.',
+      creative_brief:
+        "Glitched tapestry weave: a medieval woven tapestry scene broken by digital glitches, displaced bands, pixel-sorted threads and color channel shifts woven into wool. Carry it through woven tapestry, glitch bands, displaced threads, RGB shift. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'woven tapestry; glitch bands; displaced threads; RGB shift',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-235',
+    name: 'Clay-Pressed Pixel Sprites',
+    displayName: 'Clay-Pressed Pixel Sprites',
+    styleAnchors: [
+      'Clay-Pressed Pixel Sprites',
+      'sprites made of pressed clay cubes',
+      'clay squares',
+    ],
+    category: '12. Hybrid Visual Studies',
+    domain: 'sprites made of pressed clay cubes',
+    negativePrompt:
+      'blending the two media into one generic finish, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Clay-pressed pixel sprites: game sprites built from tiny squares of colored modeling clay pressed onto a board, each pixel slightly squashed and fingerprinted.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; build the subject as a pixel sprite from pressed squares of clay.',
+      color_and_tone: 'Bright matte clay colors on a wooden or white board.',
+      lighting_and_shadow:
+        'Soft tabletop light with small clay shadows, kept consistent across the whole image.',
+      texture_and_material:
+        'Squashed clay squares, fingerprints and uneven edges, kept consistent across the whole image.',
+      camera_and_composition: 'Top-down or low-angle view of the clay board.',
+      atmosphere_and_mood:
+        'Keep the requested mood with handmade playfulness, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Convincing tactile clay texture, kept consistent across the whole image.',
+      creative_brief:
+        "Clay-pressed pixel sprites: game sprites built from tiny squares of colored modeling clay pressed onto a board, each pixel slightly squashed and fingerprinted. Carry it through clay squares, pixel grid, fingerprints, tabletop board. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'clay squares; pixel grid; fingerprints; tabletop board',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-236',
+    name: 'Ink Wash with Gold-Leaf Clouds',
+    displayName: 'Ink Wash with Gold-Leaf Clouds',
+    styleAnchors: [
+      'Ink Wash with Gold-Leaf Clouds',
+      'sumi ink with gilded cloud bands',
+      'ink wash',
+    ],
+    category: '12. Hybrid Visual Studies',
+    domain: 'sumi ink with gilded cloud bands',
+    negativePrompt:
+      'blending the two media into one generic finish, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Ink wash with gold-leaf clouds: monochrome brush ink painting interrupted by bands of flat gold-leaf clouds, like a folding screen where gold hides parts of the scene.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; paint the subject in ink wash with flat gold clouds cutting across the scene.',
+      color_and_tone: 'Black and grey ink with shining flat gold bands.',
+      lighting_and_shadow:
+        'Ink wash tones with reflective gold, kept consistent across the whole image.',
+      texture_and_material: 'Brush ink, gold leaf squares and paper grain.',
+      camera_and_composition:
+        'Wide composition with gold clouds hiding parts, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with elegant concealed drama.',
+      rendering_and_quality:
+        'Crisp gold edges against soft ink, kept consistent across the whole image.',
+      creative_brief:
+        "Ink wash with gold-leaf clouds: monochrome brush ink painting interrupted by bands of flat gold-leaf clouds, like a folding screen where gold hides parts of the scene. Carry it through ink wash, gold cloud bands, hidden scene parts, folding screen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'ink wash; gold cloud bands; hidden scene parts; folding screen',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-237',
+    name: 'Real Object in Cartoon World',
+    displayName: 'Real Object in Cartoon World',
+    styleAnchors: [
+      'Real Object in Cartoon World',
+      'photoreal object inside cartoon scene',
+      'flat cartoon scene',
+    ],
+    category: '12. Hybrid Visual Studies',
+    domain: 'photoreal object inside cartoon scene',
+    negativePrompt:
+      'blending the two media into one generic finish, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Real object in cartoon world: a flat hand-drawn cartoon scene where one single object is a photorealistic real thing, lit and textured like a photograph.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; draw everything as flat cartoon except one photorealistic object.',
+      color_and_tone: 'Bright flat cartoon colors with one realistic object.',
+      lighting_and_shadow: 'Flat cartoon light, real photographic light on the object.',
+      texture_and_material:
+        'Clean cartoon lines against real material texture, kept consistent across the whole image.',
+      camera_and_composition: 'Cartoon composition with the real object as focus.',
+      atmosphere_and_mood: 'Keep the requested mood with surreal comic dissonance.',
+      rendering_and_quality:
+        'Both styles fully convincing, kept consistent across the whole image.',
+      creative_brief:
+        "Real object in cartoon world: a flat hand-drawn cartoon scene where one single object is a photorealistic real thing, lit and textured like a photograph. Carry it through flat cartoon scene, one photoreal object, media clash, focal object. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'flat cartoon scene; one photoreal object; media clash; focal object',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-238',
+    name: 'Graphite Sketch with Glow Paint',
+    displayName: 'Graphite Sketch with Glow Paint',
+    styleAnchors: [
+      'Graphite Sketch with Glow Paint',
+      'pencil drawing with luminous paint',
+      'graphite sketch',
+    ],
+    category: '12. Hybrid Visual Studies',
+    domain: 'pencil drawing with luminous paint',
+    negativePrompt:
+      'blending the two media into one generic finish, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Graphite sketch with glow paint: a grey pencil drawing where only the magical or luminous parts are painted in bright glowing color that seems to shine off the paper.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; draw the subject in graphite and paint only its light sources in glowing color.',
+      color_and_tone: 'Grey graphite with luminous cyan, gold or magenta accents.',
+      lighting_and_shadow:
+        'Glow spilling onto nearby pencil lines, kept consistent across the whole image.',
+      texture_and_material:
+        'Pencil grain, smudges and glossy luminous paint, kept consistent across the whole image.',
+      camera_and_composition:
+        'Sketch composition with a glowing focal point, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with quiet magical reveal.',
+      rendering_and_quality:
+        'Clean pencil with convincing glow, kept consistent across the whole image.',
+      creative_brief:
+        "Graphite sketch with glow paint: a grey pencil drawing where only the magical or luminous parts are painted in bright glowing color that seems to shine off the paper. Carry it through graphite sketch, glowing paint accents, light spill, paper grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'graphite sketch; glowing paint accents; light spill; paper grain',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-239',
+    name: 'Rendered Figure in Manuscript Margin',
+    displayName: 'Rendered Figure in Manuscript Margin',
+    styleAnchors: [
+      'Rendered Figure in Manuscript Margin',
+      '3d render in medieval margin',
+      'manuscript margin',
+    ],
+    category: '12. Hybrid Visual Studies',
+    domain: '3d render in medieval margin',
+    negativePrompt:
+      'readable script, blending the two media into one generic finish, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Rendered figure in manuscript margin: a small glossy modern 3D render of a creature or object sitting in the painted margin of a medieval manuscript page.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject as a glossy 3D object sitting on a medieval manuscript margin.',
+      color_and_tone: 'Vellum, painted gold and pigment with glossy 3D colors.',
+      lighting_and_shadow: 'Realistic 3D shadow cast onto the flat page.',
+      texture_and_material:
+        'Vellum, painted ornament and smooth 3D surfaces, kept consistent across the whole image.',
+      camera_and_composition: 'Page view with the render in the margin.',
+      atmosphere_and_mood: 'Keep the requested mood with playful time collision.',
+      rendering_and_quality:
+        'Convincing render and convincing manuscript, kept consistent across the whole image.',
+      creative_brief:
+        "Rendered figure in manuscript margin: a small glossy modern 3D render of a creature or object sitting in the painted margin of a medieval manuscript page. Carry it through manuscript margin, glossy 3D render, cast shadow, vellum. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'manuscript margin; glossy 3D render; cast shadow; vellum',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-240',
+    name: 'Charcoal Figure with Pixel Glitch',
+    displayName: 'Charcoal Figure with Pixel Glitch',
+    styleAnchors: [
+      'Charcoal Figure with Pixel Glitch',
+      'charcoal drawing breaking into pixels',
+      'smudged charcoal',
+    ],
+    category: '12. Hybrid Visual Studies',
+    domain: 'charcoal drawing breaking into pixels',
+    negativePrompt:
+      'blending the two media into one generic finish, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Charcoal figure with pixel glitch: a moody smudged charcoal drawing where part of the figure breaks apart into crisp square pixel blocks and scan lines.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; draw the subject in charcoal with one part breaking into crisp pixel blocks.',
+      color_and_tone: 'Charcoal blacks and greys with a few colored pixel blocks.',
+      lighting_and_shadow:
+        'Dramatic smudged charcoal shading, kept consistent across the whole image.',
+      texture_and_material: 'Charcoal smudge, paper tooth and sharp pixel squares.',
+      camera_and_composition:
+        'Figure focus with glitch at one edge, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with unsettling disintegration, kept consistent across the whole image.',
+      rendering_and_quality: 'Clear contrast of soft charcoal and hard pixels.',
+      creative_brief:
+        "Charcoal figure with pixel glitch: a moody smudged charcoal drawing where part of the figure breaks apart into crisp square pixel blocks and scan lines. Carry it through smudged charcoal, pixel breakup, scan lines, figure focus. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'smudged charcoal; pixel breakup; scan lines; figure focus',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

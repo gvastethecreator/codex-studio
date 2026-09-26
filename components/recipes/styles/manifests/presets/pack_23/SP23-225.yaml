@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP23-225
+packId: pack_23
+name: Crosshatch-Shaded 3D
+styleAnchors:
+  - Crosshatch-Shaded 3D
+  - hatching shader 3d render
+  - crosshatch shader
+displayName: Crosshatch-Shaded 3D
+category: 11. Modern Visual Techniques
+domain: hatching shader 3d render
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - modern-visual-techniques
+  - hatch-shader
+  - modern-game-render
+  - portable-style-study
+visualDna:
+  aesthetic: 'Crosshatch-shaded 3D: 3D scenes shaded with pen-and-ink crosshatching that follows the forms, like an etching come to life.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; render the subject in 3D with form-following crosshatch shading.
+  color_and_tone: Black ink hatching on cream paper, optional sepia.
+  lighting_and_shadow: Hatch density follows light and shadow, kept consistent across the whole image.
+  texture_and_material: Crosshatch strokes, paper grain and ink lines, kept consistent across the whole image.
+  camera_and_composition: Cinematic 3D view with depth, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with old-book adventure, kept consistent across the whole image.
+  rendering_and_quality: Consistent hatch shader over 3D forms, kept consistent across the whole image.
+  creative_brief: "Crosshatch-shaded 3D: 3D scenes shaded with pen-and-ink crosshatching that follows the forms, like an etching come to life. Carry it through crosshatch shader, form-following strokes, cream paper, 3D depth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: crosshatch shader; form-following strokes; cream paper; 3D depth
+avoidRules:
+  - interface or HUD
+  - existing game characters or logos
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: modern-visual-techniques
+  categoryName: 11. Modern Visual Techniques
+  tags:
+    - curation-v2
+    - modern-visual-techniques
+    - hatch-shader
+    - modern-game-render
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: hatching shader 3d render

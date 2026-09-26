@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-219
+packId: pack_23
+name: Cozy Isometric Room Render
+styleAnchors:
+  - Cozy Isometric Room Render
+  - small isometric interior render
+  - isometric cut-away
+displayName: Cozy Isometric Room Render
+category: 11. Modern Visual Techniques
+domain: small isometric interior render
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - modern-visual-techniques
+  - iso-room
+  - modern-game-render
+  - portable-style-study
+visualDna:
+  aesthetic: 'Cozy isometric room render: a single cut-away room seen from an isometric angle, packed with small furniture, plants and warm lamps like a tiny dollhouse.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; place the subject in a single cozy isometric cut-away room.
+  color_and_tone: Warm lamp amber, wood tones and soft pastels.
+  lighting_and_shadow: Warm interior lights and soft shadows, kept consistent across the whole image.
+  texture_and_material: Clean low-poly or smooth models with small details.
+  camera_and_composition: Isometric cut-away room floating on a plain background.
+  atmosphere_and_mood: Keep the requested mood with snug domestic calm.
+  rendering_and_quality: Tidy detailed miniature render, kept consistent across the whole image.
+  creative_brief: "Cozy isometric room render: a single cut-away room seen from an isometric angle, packed with small furniture, plants and warm lamps like a tiny dollhouse. Carry it through isometric cut-away, tiny furniture, warm lamps, plain background. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: isometric cut-away; tiny furniture; warm lamps; plain background
+avoidRules:
+  - readable book titles
+  - interface or HUD
+  - existing game characters or logos
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable book titles, interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: modern-visual-techniques
+  categoryName: 11. Modern Visual Techniques
+  tags:
+    - curation-v2
+    - modern-visual-techniques
+    - iso-room
+    - modern-game-render
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: small isometric interior render

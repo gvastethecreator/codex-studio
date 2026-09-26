@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-206
+packId: pack_23
+name: Gamebook Ink Illustration
+styleAnchors:
+  - Gamebook Ink Illustration
+  - choose-your-path book ink art
+  - full-page ink
+displayName: Gamebook Ink Illustration
+category: 10. Tabletop Illustration Studies
+domain: choose-your-path book ink art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - tabletop-illustration-studies
+  - gamebook-ink
+  - tabletop
+  - portable-style-study
+visualDna:
+  aesthetic: 'Gamebook ink illustration: the full-page black-and-white ink illustrations of eighties choose-your-path adventure books, dense hatching, lurid monsters and dramatic perspective.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; draw the subject as a dramatic full-page black ink moment of choice or danger.
+  color_and_tone: Black ink on white with dense tonal hatching.
+  lighting_and_shadow: High-contrast hatching and solid black shadows, kept consistent across the whole image.
+  texture_and_material: Pen hatching, stippling and paper grain, kept consistent across the whole image.
+  camera_and_composition: Dramatic perspective from the reader's point of view.
+  atmosphere_and_mood: Keep the requested mood with pulpy second-person peril.
+  rendering_and_quality: Dense energetic ink with clear focal action, kept consistent across the whole image.
+  creative_brief: "Gamebook ink illustration: the full-page black-and-white ink illustrations of eighties choose-your-path adventure books, dense hatching, lurid monsters and dramatic perspective. Carry it through full-page ink, dense hatching, reader viewpoint, lurid monsters. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: full-page ink; dense hatching; reader viewpoint; lurid monsters
+avoidRules:
+  - section numbers
+  - readable titles, rules text or numbers
+  - existing game brands or characters
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: section numbers, readable titles, rules text or numbers, existing game brands or characters, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: tabletop-illustration-studies
+  categoryName: 10. Tabletop Illustration Studies
+  tags:
+    - curation-v2
+    - tabletop-illustration-studies
+    - gamebook-ink
+    - tabletop
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: choose-your-path book ink art

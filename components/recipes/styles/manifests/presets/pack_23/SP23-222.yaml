@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP23-222
+packId: pack_23
+name: Unlit Gradient Low-Poly
+styleAnchors:
+  - Unlit Gradient Low-Poly
+  - flat unlit gradient 3d landscapes
+  - unlit polygons
+displayName: Unlit Gradient Low-Poly
+category: 11. Modern Visual Techniques
+domain: flat unlit gradient 3d landscapes
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - modern-visual-techniques
+  - unlit-gradient
+  - modern-game-render
+  - portable-style-study
+visualDna:
+  aesthetic: 'Unlit gradient low-poly: minimalist 3D landscapes with flat unlit polygons, soft sky gradients and atmospheric color fog, calm and meditative.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; render the subject as simple unlit low-poly shapes in gradient color fog.
+  color_and_tone: Sunset gradients of orange, pink and violet fog.
+  lighting_and_shadow: No lighting; color fog creates depth, kept consistent across the whole image.
+  texture_and_material: Flat untextured polygons, kept consistent across the whole image.
+  camera_and_composition: Wide horizon with small figures and layered hills.
+  atmosphere_and_mood: Keep the requested mood with meditative stillness, kept consistent across the whole image.
+  rendering_and_quality: Clean minimal shapes and smooth gradients, kept consistent across the whole image.
+  creative_brief: "Unlit gradient low-poly: minimalist 3D landscapes with flat unlit polygons, soft sky gradients and atmospheric color fog, calm and meditative. Carry it through unlit polygons, gradient fog, flat shapes, meditative horizon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: unlit polygons; gradient fog; flat shapes; meditative horizon
+avoidRules:
+  - interface or HUD
+  - existing game characters or logos
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: modern-visual-techniques
+  categoryName: 11. Modern Visual Techniques
+  tags:
+    - curation-v2
+    - modern-visual-techniques
+    - unlit-gradient
+    - modern-game-render
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: flat unlit gradient 3d landscapes

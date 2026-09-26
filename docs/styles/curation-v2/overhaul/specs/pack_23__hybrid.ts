@@ -1,0 +1,278 @@
+import type { Create, Spec } from '../tools/apply';
+import { STYLE_AVOID } from './_style';
+import { dna } from './_strict';
+
+// Medieval atlas hybrid visual studies: deliberate collisions of two media in one image, each
+// keeping its own marks. Six originals get card briefs; fourteen new studies add pixel figures in
+// oil paintings, ink creatures on old photographs, neon-lit woodcuts, illuminated futurism,
+// watercolor over wireframe, cross-stitch sprites, creature patent drawings, glitched tapestry,
+// clay-pressed sprites, ink wash with gold-leaf clouds, real objects in cartoon worlds, graphite
+// with glow paint, rendered figures in manuscript margins and charcoal with pixel glitches.
+const study = (
+  name: string,
+  domain: string,
+  tag: string,
+  fields: Parameters<typeof dna>[0],
+  avoid: string[],
+  briefs: [string, string, string],
+): Create => ({
+  name,
+  domain,
+  tags: [tag, 'hybrid-media', 'portable-style-study'],
+  dna: dna(fields),
+  avoid: [...avoid, 'blending the two media into one generic finish', 'readable text', ...STYLE_AVOID],
+  briefs,
+});
+
+const keep = 'Preserve the requested identity, count, pose and action with original characters';
+
+const spec: Spec = {
+  pack: 'pack_23',
+  category: '12. Hybrid Visual Studies',
+  updates: {
+    'SP23-053': { briefs: [
+      'Towering over a harbor at dusk, a lighthouse golem strides into the sea with broad opaque color planes for its stone body and tiny crisp pixel clusters only in its lantern eye. No readable text or logo.',
+      'Standing proudly in a broad flat-painted meadow, a scarecrow wears a tiny hat rendered in crisp pixel accents, and every crow nearby is deeply impressed. No readable text or logo.',
+      'Sitting in a quiet room of wide opaque color, a figure holds a letter, and only the small pixel-sharp seal on the envelope is in focus. No readable text or logo.',
+    ] },
+    'SP23-054': { briefs: [
+      'Charging through a snowstorm, a war mammoth is modeled with curving strokes that follow its fur, each stroke broken into a crisp stepped pixel rhythm. No readable text or logo.',
+      "Built from stepped strokes that follow its round form, a fat pigeon sits on a castle battlement, deeply satisfied with itself. No readable text or logo.",
+      'Following the curve of a spiral staircase, stepped strokes wind down into the dark, and at the bottom they stop following the stairs. No readable text or logo.',
+    ] },
+    'SP23-055': { briefs: [
+      'Diving through a storm of rain drawn as flowing mark groups, a sea eagle snatches a silver fish, its wing edges sharpened by compact stepped clusters. No readable text or logo.',
+      'Galloping across a field of flowing mark groups, a goat has stolen a farmer\'s entire laundry line and wears it like a victory cape. No readable text or logo.',
+      "Following the grain of an old oak table, flowing marks trace a spilled line of wine that, at its end, has pooled into the shape of a small crouching animal. No readable text or logo.",
+    ] },
+    'SP23-056': { briefs: [
+      'Kneeling beside a knight\'s tomb, a stone angel is carved in plain clean forms, and only its folded wings carry a fine powdery porous pigment surface. No readable text or logo.',
+      'Sitting on a plain smooth shelf, a fat ceramic cat has one paw finished in rich dusty pigment, as if it stepped in paint and refused to wash. No readable text or logo.',
+      "Resting in a plain white room, a single cello has been given a soft porous pigment finish, and its strings are still trembling as if someone just stopped playing. No readable text or logo.",
+    ] },
+    'SP23-057': { briefs: [
+      'Rearing on a cliff above a burning valley, a griffin is described in simple sharp color facets aligned to its muscles and feathers, with thin bright edge accents. No readable text or logo.',
+      "Posing for a portrait in simple opaque facets, a dignified camel has clearly insisted on wearing its best faceted hat. No readable text or logo.",
+      'Sitting at the end of a long jetty, a small figure is made of a few sharp flat facets, and its reflection in the water has many more. No readable text or logo.',
+    ] },
+    'SP23-058': { briefs: [
+      'Emerging from a cliff face in low carved depth, a sleeping giant\'s face is traced with delicate drawing lines and dry pigment dust caught in every crease. No readable text or logo.',
+      'Pressed gently into the surface like a coin, a pompous duke is carved in low depth while a tiny drawn fly sits on his nose. No readable text or logo.',
+      "Carved in low depth into an old wall, a row of saints is outlined with delicate drawn lines, and dry pigment has gathered under one saint's eyes like tears. No readable text or logo.",
+    ] },
+  },
+  creates: [
+    study('Pixel Figure in Oil Painting', 'pixel sprite inside classical oil', 'pixel-in-oil', {
+      aesthetic: 'Pixel figure in oil painting: a crisp low-resolution pixel sprite placed inside a rich classical oil painting, the two media kept sharply distinct.',
+      subject_treatment: `${keep}; render the main figure as a crisp pixel sprite and everything around it as classical oil painting.`,
+      color_and_tone: 'Warm varnished oil tones around a bright pixel palette.',
+      lighting_and_shadow: 'Old-master chiaroscuro in the painting, flat sprite light.',
+      texture_and_material: 'Oil brushwork and craquelure against hard pixel edges.',
+      camera_and_composition: 'Classical composition with the sprite as focal point.',
+      atmosphere_and_mood: "Keep the requested mood with witty anachronism, kept consistent across the whole image.",
+      rendering_and_quality: "Both media fully convincing side by side, kept consistent across the whole image.",
+      key_features: 'pixel sprite; classical oil; hard contrast of media; craquelure',
+    }, [], [
+      'Standing in a vast stormy seascape painted in dark varnished oil, a tiny crisp pixel knight raises his sword at a sea monster painted with old-master grandeur. No readable text or logo.',
+      'At a candlelit banquet of classical oil nobles, one guest is a tiny pixel goblin sprite who has already eaten the entire roast. No readable text or logo.',
+      'Hanging in a dark oil-painted gallery, a portrait frame holds only a small pixel face that is looking directly at the viewer. No readable text or logo.',
+    ]),
+    study('Ink Creatures on Old Photograph', 'drawn creatures on vintage photos', 'ink-on-photo', {
+      aesthetic: 'Ink creatures on old photograph: faded sepia photographs of ordinary places with fantastical creatures drawn directly on top in black and white ink.',
+      subject_treatment: `${keep}; draw the subject in ink over a faded real photograph.`,
+      color_and_tone: 'Faded sepia photo with crisp black and white ink.',
+      lighting_and_shadow: "Photographic light below, drawn shadows above, kept consistent across the whole image.",
+      texture_and_material: 'Photo grain, creases and pen lines on the print surface.',
+      camera_and_composition: "Ordinary old photo composition invaded by drawings, kept consistent across the whole image.",
+      atmosphere_and_mood: 'Keep the requested mood with uncanny playful intrusion.',
+      rendering_and_quality: "Clear separation of photo and ink, kept consistent across the whole image.",
+      key_features: 'sepia photo; ink drawings on top; creases; uncanny intrusion',
+    }, [], [
+      'Towering behind a stiff family posing outside their farmhouse in a faded sepia photo, a huge inked dragon has its chin resting on the roof. No readable text or logo.',
+      "Across an old seaside photograph, someone has drawn a small ink octopus stealing an ice cream from a serious gentleman. No readable text or logo.",
+      'Standing in an empty sepia photo of a school corridor, a tall ink figure has been drawn at the far end, and it is the only thing in focus. No readable text or logo.',
+    ]),
+    study('Neon-Lit Woodcut', 'woodcut with neon color', 'neon-woodcut', {
+      aesthetic: 'Neon-lit woodcut: a traditional black relief woodcut with its carved lines lit by glowing neon color, as if the print were plugged in.',
+      subject_treatment: `${keep}; carve the subject as a black woodcut and let neon color glow from its lines.`,
+      color_and_tone: 'Black ink and paper with hot pink, cyan and acid green glow.',
+      lighting_and_shadow: "Neon glow emanating from carved lines, kept consistent across the whole image.",
+      texture_and_material: 'Wood grain, gouge marks and luminous color bleed.',
+      camera_and_composition: "Bold relief composition, kept consistent across the whole image.",
+      atmosphere_and_mood: 'Keep the requested mood with electric folk energy.',
+      rendering_and_quality: "Crisp woodcut structure with clean glow, kept consistent across the whole image.",
+      key_features: 'black woodcut; neon glow; carved lines; wood grain',
+    }, [], [
+      'Riding across a carved midnight sky, a folk-tale witch on a broom leaves a trail of hot pink glow through the gouges of the black block. No readable text or logo.',
+      'Carved in heavy black relief, a village rooster crows at dawn and every line of his feathers lights up in acid green like a sign. No readable text or logo.',
+      'Cut in black relief, a lonely road leads to a house whose single window glows cyan through the carved grain. No readable text or logo.',
+    ]),
+    study('Illuminated Futurism', 'medieval illumination of future tech', 'illuminated-future', {
+      aesthetic: 'Illuminated futurism: spaceships, robots and futuristic cities painted as a medieval illuminated miniature, with gold leaf, flat perspective and vellum.',
+      subject_treatment: `${keep}; paint futuristic subjects with medieval miniature conventions and gold leaf.`,
+      color_and_tone: 'Lapis, vermilion, green and burnished gold on vellum.',
+      lighting_and_shadow: "Flat medieval modeling with gold highlights, kept consistent across the whole image.",
+      texture_and_material: 'Pigment on vellum, gold leaf and fine contours.',
+      camera_and_composition: "Flattened medieval space with patterned ground, kept consistent across the whole image.",
+      atmosphere_and_mood: 'Keep the requested mood with solemn anachronistic wonder.',
+      rendering_and_quality: "Convincing illumination technique for modern subjects, kept consistent across the whole image.",
+      key_features: 'medieval miniature; futuristic subjects; gold leaf; flat perspective',
+    }, ['readable script'], [
+      'Descending on a gold-leaf sky, a vast starship is received by monks and peasants kneeling in a flattened field of lapis flowers. No readable text or logo.',
+      'Painted like a solemn saint, a robot vacuum cleaner receives a golden halo while a cat watches with deep suspicion. No readable text or logo.',
+      'Standing alone in a vellum landscape, an astronaut in a white suit faces a tiny painted castle, and the castle gate is closing. No readable text or logo.',
+    ]),
+    study('Watercolor Over Wireframe', 'paint washes over 3d wireframe', 'wash-wireframe', {
+      aesthetic: 'Watercolor over wireframe: a visible 3D wireframe mesh with loose watercolor washes painted over it, the grid lines still showing through the pigment.',
+      subject_treatment: `${keep}; show the subject as a wireframe mesh partly covered by loose watercolor.`,
+      color_and_tone: 'Soft washes over thin cyan or black mesh lines.',
+      lighting_and_shadow: "Wash density suggests light, kept consistent across the whole image.",
+      texture_and_material: "Mesh lines, wet blooms and paper grain, kept consistent across the whole image.",
+      camera_and_composition: "Subject centered, washes spilling past the mesh, kept consistent across the whole image.",
+      atmosphere_and_mood: "Keep the requested mood with half-built dreaminess, kept consistent across the whole image.",
+      rendering_and_quality: "Crisp mesh and loose paint both visible, kept consistent across the whole image.",
+      key_features: 'wireframe mesh; loose watercolor; grid showing through; blooms',
+    }, [], [
+      'Spreading enormous wings over a valley, a phoenix exists only as a thin mesh of lines while bright watercolor flames bloom across half its body. No readable text or logo.',
+      'Half painted and half just lines, a horse stands in a field looking at its own unpainted legs with great concern. No readable text or logo.',
+      "Floating in a pale wash, a sailing ship has only been painted up to its waterline, and the unpainted mesh of its hull below the water is full of swimming fish. No readable text or logo.",
+    ]),
+    study('Cross-Stitch Pixel Sprite', 'embroidered pixel character', 'cross-stitch-sprite', {
+      aesthetic: 'Cross-stitch pixel sprite: a game-style sprite embroidered in cross-stitch on aida cloth, each pixel a tiny X of thread, framed in an embroidery hoop.',
+      subject_treatment: `${keep}; stitch the subject as a pixel sprite in cross-stitch on cloth.`,
+      color_and_tone: 'Bright thread colors on cream or white aida cloth.',
+      lighting_and_shadow: "Soft light raking across raised stitches, kept consistent across the whole image.",
+      texture_and_material: 'X stitches, cloth weave, loose threads and hoop.',
+      camera_and_composition: 'Close view of the hoop with the sprite centered.',
+      atmosphere_and_mood: 'Keep the requested mood with cozy handmade nostalgia.',
+      rendering_and_quality: "Convincing needlework texture, kept consistent across the whole image.",
+      key_features: 'cross stitches; pixel sprite; aida cloth; embroidery hoop',
+    }, [], [
+      'Stitched in a wooden hoop, a pixel dragon breathes a long flame of orange and yellow crosses toward a tiny stitched hero holding a thread-shield. No readable text or logo.',
+      'Half finished in a hoop, a cross-stitched frog wizard is missing his legs, and a needle is still hanging from the thread beside him. No readable text or logo.',
+      'On a cloth in an embroidery hoop, a stitched house has one dark window where the thread has been carefully pulled out. No readable text or logo.',
+    ]),
+    study('Creature Patent Drawing', 'victorian patent diagram of a creature', 'creature-patent', {
+      aesthetic: 'Creature patent drawing: a fantastical creature drawn as a Victorian patent diagram, precise line, numbered part leaders without text and multiple views.',
+      subject_treatment: `${keep}; draw the subject as a precise patent diagram with front and side views.`,
+      color_and_tone: "Black line on aged cream paper, kept consistent across the whole image.",
+      lighting_and_shadow: "Line hatching only, technical shading, kept consistent across the whole image.",
+      texture_and_material: 'Fine technical pen line, leaders and paper aging.',
+      camera_and_composition: "Multiple views arranged on a sheet, kept consistent across the whole image.",
+      atmosphere_and_mood: "Keep the requested mood with deadpan inventiveness, kept consistent across the whole image.",
+      rendering_and_quality: "Precise technical drawing with no readable text, kept consistent across the whole image.",
+      key_features: 'patent diagram; multiple views; technical line; aged paper',
+    }, ['readable text or numbers'], [
+      'Laid out on an aged patent sheet, a clockwork griffin is shown in side view and cutaway, its gears, wings and ticking heart diagrammed in precise line. No readable text or logo.',
+      "Drawn as a formal patent diagram, a serious machine exists solely to scratch a dragon behind the ear. No readable text or logo.",
+      'On a yellowed patent sheet, a creature is drawn from front and side, and in a third view it is looking directly out of the page. No readable text or logo.',
+    ]),
+    study('Glitched Tapestry Weave', 'medieval tapestry with digital glitch', 'glitch-tapestry', {
+      aesthetic: 'Glitched tapestry weave: a medieval woven tapestry scene broken by digital glitches, displaced bands, pixel-sorted threads and color channel shifts woven into wool.',
+      subject_treatment: `${keep}; weave the subject into a tapestry that is partly shifted by digital glitches.`,
+      color_and_tone: 'Faded tapestry reds, blues and greens with RGB shift bands.',
+      lighting_and_shadow: "Soft woven shading with no real light, kept consistent across the whole image.",
+      texture_and_material: 'Wool weave, stretched thread bands and displaced rows.',
+      camera_and_composition: "Tapestry panel with glitch bands crossing it, kept consistent across the whole image.",
+      atmosphere_and_mood: 'Keep the requested mood with eerie corrupted history.',
+      rendering_and_quality: "Convincing weave with deliberate glitch, kept consistent across the whole image.",
+      key_features: 'woven tapestry; glitch bands; displaced threads; RGB shift',
+    }, [], [
+      'Charging across a woven battlefield, a troop of knights is sliced by a horizontal glitch band that drags their horses sideways into streaks of wool. No readable text or logo.',
+      "In an old woven hunt scene, the rabbit has glitched into ten copies of itself, and the hounds are confused. No readable text or logo.",
+      'On a faded tapestry, a lady stands at a castle window, and a glitch band has replaced her face with shifted threads of pure blue. No readable text or logo.',
+    ]),
+    study('Clay-Pressed Pixel Sprites', 'sprites made of pressed clay cubes', 'clay-pixel', {
+      aesthetic: 'Clay-pressed pixel sprites: game sprites built from tiny squares of colored modeling clay pressed onto a board, each pixel slightly squashed and fingerprinted.',
+      subject_treatment: `${keep}; build the subject as a pixel sprite from pressed squares of clay.`,
+      color_and_tone: 'Bright matte clay colors on a wooden or white board.',
+      lighting_and_shadow: "Soft tabletop light with small clay shadows, kept consistent across the whole image.",
+      texture_and_material: "Squashed clay squares, fingerprints and uneven edges, kept consistent across the whole image.",
+      camera_and_composition: 'Top-down or low-angle view of the clay board.',
+      atmosphere_and_mood: "Keep the requested mood with handmade playfulness, kept consistent across the whole image.",
+      rendering_and_quality: "Convincing tactile clay texture, kept consistent across the whole image.",
+      key_features: 'clay squares; pixel grid; fingerprints; tabletop board',
+    }, [], [
+      'Pressed square by square onto a wooden board, a sprite of a giant squid attacks a clay-pixel ship, each tentacle made of slightly squashed purple cubes. No readable text or logo.',
+      "Built from fingerprinted squares of modeling clay, a sprite wizard is missing one pixel of his pointed hat, and a real clay crumb lies beside him. No readable text or logo.",
+      'On a board of pressed squares, one small sprite ghost has been made from white clay, and its shadow on the table is much larger than it should be. No readable text or logo.',
+    ]),
+    study('Ink Wash with Gold-Leaf Clouds', 'sumi ink with gilded cloud bands', 'ink-gold-clouds', {
+      aesthetic: 'Ink wash with gold-leaf clouds: monochrome brush ink painting interrupted by bands of flat gold-leaf clouds, like a folding screen where gold hides parts of the scene.',
+      subject_treatment: `${keep}; paint the subject in ink wash with flat gold clouds cutting across the scene.`,
+      color_and_tone: 'Black and grey ink with shining flat gold bands.',
+      lighting_and_shadow: "Ink wash tones with reflective gold, kept consistent across the whole image.",
+      texture_and_material: 'Brush ink, gold leaf squares and paper grain.',
+      camera_and_composition: "Wide composition with gold clouds hiding parts, kept consistent across the whole image.",
+      atmosphere_and_mood: 'Keep the requested mood with elegant concealed drama.',
+      rendering_and_quality: "Crisp gold edges against soft ink, kept consistent across the whole image.",
+      key_features: 'ink wash; gold cloud bands; hidden scene parts; folding screen',
+    }, [], [
+      'Coiling through a mountain valley in wet grey ink, a great river dragon is half hidden by flat bands of gold-leaf cloud, only its head and tail visible. No readable text or logo.',
+      "Painted in quick ink strokes, a samurai prepares a dramatic duel, but a flat gold cloud has covered his opponent, revealing only a pair of small feet. No readable text or logo.",
+      'In a quiet ink landscape, a house is almost entirely hidden by gold-leaf clouds, and only a single open window shows through. No readable text or logo.',
+    ]),
+    study('Real Object in Cartoon World', 'photoreal object inside cartoon scene', 'real-in-cartoon', {
+      aesthetic: 'Real object in cartoon world: a flat hand-drawn cartoon scene where one single object is a photorealistic real thing, lit and textured like a photograph.',
+      subject_treatment: `${keep}; draw everything as flat cartoon except one photorealistic object.`,
+      color_and_tone: 'Bright flat cartoon colors with one realistic object.',
+      lighting_and_shadow: 'Flat cartoon light, real photographic light on the object.',
+      texture_and_material: "Clean cartoon lines against real material texture, kept consistent across the whole image.",
+      camera_and_composition: 'Cartoon composition with the real object as focus.',
+      atmosphere_and_mood: 'Keep the requested mood with surreal comic dissonance.',
+      rendering_and_quality: "Both styles fully convincing, kept consistent across the whole image.",
+      key_features: 'flat cartoon scene; one photoreal object; media clash; focal object',
+    }, [], [
+      'Guarding a flat cartoon treasure cave, a cartoon dragon sleeps on a pile of drawn gold coins around one real, photorealistic antique sword glinting in actual light. No readable text or logo.',
+      'Sitting in a flat cartoon kitchen, a cartoon knight stares in horror at a real, photorealistic raw onion on his plate. No readable text or logo.',
+      "In a simple cartoon bedroom, everything is drawn flat except one real photographed spider on the ceiling, lit by a very real lamp. No readable text or logo.",
+    ]),
+    study('Graphite Sketch with Glow Paint', 'pencil drawing with luminous paint', 'graphite-glow', {
+      aesthetic: 'Graphite sketch with glow paint: a grey pencil drawing where only the magical or luminous parts are painted in bright glowing color that seems to shine off the paper.',
+      subject_treatment: `${keep}; draw the subject in graphite and paint only its light sources in glowing color.`,
+      color_and_tone: 'Grey graphite with luminous cyan, gold or magenta accents.',
+      lighting_and_shadow: "Glow spilling onto nearby pencil lines, kept consistent across the whole image.",
+      texture_and_material: "Pencil grain, smudges and glossy luminous paint, kept consistent across the whole image.",
+      camera_and_composition: "Sketch composition with a glowing focal point, kept consistent across the whole image.",
+      atmosphere_and_mood: 'Keep the requested mood with quiet magical reveal.',
+      rendering_and_quality: "Clean pencil with convincing glow, kept consistent across the whole image.",
+      key_features: 'graphite sketch; glowing paint accents; light spill; paper grain',
+    }, [], [
+      'Opening a treasure chest in a quiet pencil-drawn crypt, a thief is bathed in the only color on the page, a blazing golden light pouring from inside. No readable text or logo.',
+      'Drawn in soft grey pencil, a wizard proudly shows his spell, which is one tiny glowing pink spark the size of a firefly. No readable text or logo.',
+      'Sketched in grey pencil, a dark forest path has a single pair of glowing cyan eyes painted between the trees. No readable text or logo.',
+    ]),
+    study('Rendered Figure in Manuscript Margin', '3d render in medieval margin', 'render-in-margin', {
+      aesthetic: 'Rendered figure in manuscript margin: a small glossy modern 3D render of a creature or object sitting in the painted margin of a medieval manuscript page.',
+      subject_treatment: `${keep}; render the subject as a glossy 3D object sitting on a medieval manuscript margin.`,
+      color_and_tone: 'Vellum, painted gold and pigment with glossy 3D colors.',
+      lighting_and_shadow: 'Realistic 3D shadow cast onto the flat page.',
+      texture_and_material: "Vellum, painted ornament and smooth 3D surfaces, kept consistent across the whole image.",
+      camera_and_composition: 'Page view with the render in the margin.',
+      atmosphere_and_mood: 'Keep the requested mood with playful time collision.',
+      rendering_and_quality: "Convincing render and convincing manuscript, kept consistent across the whole image.",
+      key_features: 'manuscript margin; glossy 3D render; cast shadow; vellum',
+    }, ['readable script'], [
+      'Climbing out of a painted vine border, a glossy 3D render of a small dragon casts a real shadow across the flat gold ornament of a medieval page. No readable text or logo.',
+      "Sitting in a manuscript margin among painted snails and knights, a shiny 3D rubber duck looks pleased to be included. No readable text or logo.",
+      'On a vellum page, a painted monk points at a small glossy 3D sphere in the margin, which reflects a room that is not on the page. No readable text or logo.',
+    ]),
+    study('Charcoal Figure with Pixel Glitch', 'charcoal drawing breaking into pixels', 'charcoal-glitch', {
+      aesthetic: 'Charcoal figure with pixel glitch: a moody smudged charcoal drawing where part of the figure breaks apart into crisp square pixel blocks and scan lines.',
+      subject_treatment: `${keep}; draw the subject in charcoal with one part breaking into crisp pixel blocks.`,
+      color_and_tone: 'Charcoal blacks and greys with a few colored pixel blocks.',
+      lighting_and_shadow: "Dramatic smudged charcoal shading, kept consistent across the whole image.",
+      texture_and_material: 'Charcoal smudge, paper tooth and sharp pixel squares.',
+      camera_and_composition: "Figure focus with glitch at one edge, kept consistent across the whole image.",
+      atmosphere_and_mood: "Keep the requested mood with unsettling disintegration, kept consistent across the whole image.",
+      rendering_and_quality: 'Clear contrast of soft charcoal and hard pixels.',
+      key_features: 'smudged charcoal; pixel breakup; scan lines; figure focus',
+    }, [], [
+      "Running out of a smudged dark forest, a great grey wolf breaks apart into crisp square blocks along its tail, as if it is being called away somewhere else. No readable text or logo.",
+      'Drawn in heavy smudged charcoal, a proud rooster crows so loudly that its head has turned into scattered bright pixel blocks. No readable text or logo.',
+      'Seated in a dark charcoal portrait, a woman\'s hands are softly drawn, but her face has broken into small grey pixels that are drifting off the page. No readable text or logo.',
+    ]),
+  ],
+};
+
+export default spec;

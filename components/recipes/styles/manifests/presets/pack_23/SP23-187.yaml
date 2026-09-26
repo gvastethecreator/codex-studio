@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-187
+packId: pack_23
+name: Ink-Wash Strategy Scroll
+styleAnchors:
+  - Ink-Wash Strategy Scroll
+  - east asian ink tactical painting
+  - ink landscape
+displayName: Ink-Wash Strategy Scroll
+category: 9. Painted RPG & Tactics
+domain: east asian ink tactical painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - painted-rpg-and-tactics
+  - ink-strategy
+  - painted-rpg
+  - portable-style-study
+visualDna:
+  aesthetic: 'Ink-wash strategy scroll: sweeping monochrome ink landscapes with armies as tiny brush dots moving through mountains and rivers, splashes of red for banners.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; render the subject as tiny brushwork figures in a vast ink landscape.
+  color_and_tone: Black and grey ink washes with small red accents.
+  lighting_and_shadow: Mist and wash gradients create depth, kept consistent across the whole image.
+  texture_and_material: Rice-paper texture, wet ink blooms and dry brush.
+  camera_and_composition: Wide horizontal landscape with armies as small marks.
+  atmosphere_and_mood: Keep the requested mood with grand strategic scale.
+  rendering_and_quality: Expressive ink with clear army movements, kept consistent across the whole image.
+  creative_brief: "Ink-wash strategy scroll: sweeping monochrome ink landscapes with armies as tiny brush dots moving through mountains and rivers, splashes of red for banners. Carry it through ink landscape, tiny army dots, red banners, misty mountains. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: ink landscape; tiny army dots; red banners; misty mountains
+avoidRules:
+  - readable calligraphy
+  - interface, menus or health bars
+  - existing game characters or logos
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable calligraphy, interface, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: painted-rpg-and-tactics
+  categoryName: 9. Painted RPG & Tactics
+  tags:
+    - curation-v2
+    - painted-rpg-and-tactics
+    - ink-strategy
+    - painted-rpg
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: east asian ink tactical painting

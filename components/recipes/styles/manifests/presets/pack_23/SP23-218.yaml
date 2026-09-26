@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP23-218
+packId: pack_23
+name: Glowing Forest Silhouette Layers
+styleAnchors:
+  - Glowing Forest Silhouette Layers
+  - backlit silhouette platformer art
+  - layered silhouettes
+displayName: Glowing Forest Silhouette Layers
+category: 11. Modern Visual Techniques
+domain: backlit silhouette platformer art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - modern-visual-techniques
+  - glow-silhouette
+  - modern-game-render
+  - portable-style-study
+visualDna:
+  aesthetic: 'Glowing forest silhouette layers: layered dark silhouettes of forest and creatures against glowing blue and teal light, luminous spirits and soft bloom, like a lyrical platformer.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; render the subject as a dark or softly glowing silhouette among layered backlit forest.
+  color_and_tone: Deep indigo silhouettes with teal, cyan and gold glows.
+  lighting_and_shadow: Strong backlight and soft bloom between layers, kept consistent across the whole image.
+  texture_and_material: Clean silhouettes, glowing particles and misty layers, kept consistent across the whole image.
+  camera_and_composition: Side-view layered depth with a small central figure.
+  atmosphere_and_mood: Keep the requested mood with lyrical luminous melancholy.
+  rendering_and_quality: Clean layered glow without harsh noise, kept consistent across the whole image.
+  creative_brief: "Glowing forest silhouette layers: layered dark silhouettes of forest and creatures against glowing blue and teal light, luminous spirits and soft bloom, like a lyrical platformer. Carry it through layered silhouettes, backlit glow, spirit particles, side view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: layered silhouettes; backlit glow; spirit particles; side view
+avoidRules:
+  - interface or HUD
+  - existing game characters or logos
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: modern-visual-techniques
+  categoryName: 11. Modern Visual Techniques
+  tags:
+    - curation-v2
+    - modern-visual-techniques
+    - glow-silhouette
+    - modern-game-render
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: backlit silhouette platformer art

@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-212
+packId: pack_23
+name: Game-Master Screen Panorama
+styleAnchors:
+  - Game-Master Screen Panorama
+  - wide folding screen illustration
+  - panoramic painting
+displayName: Game-Master Screen Panorama
+category: 10. Tabletop Illustration Studies
+domain: wide folding screen illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - tabletop-illustration-studies
+  - gm-screen
+  - tabletop
+  - portable-style-study
+visualDna:
+  aesthetic: 'Game-master screen panorama: a long continuous painting stretched across three or four folding panels, a sweeping fantasy vista with visible panel creases.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; spread the subject across a long panoramic scene divided by folding panel creases.
+  color_and_tone: Rich cinematic palette across a wide horizon, kept consistent across the whole image.
+  lighting_and_shadow: Consistent dramatic light across all panels, kept consistent across the whole image.
+  texture_and_material: Printed card panels, creases and slight edge wear.
+  camera_and_composition: Very wide panorama split by three vertical creases.
+  atmosphere_and_mood: Keep the requested mood with grand campaign scale.
+  rendering_and_quality: Continuous painting with no tables or text, kept consistent across the whole image.
+  creative_brief: "Game-master screen panorama: a long continuous painting stretched across three or four folding panels, a sweeping fantasy vista with visible panel creases. Carry it through panoramic painting, folding creases, wide vista, campaign scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: panoramic painting; folding creases; wide vista; campaign scale
+avoidRules:
+  - rules tables
+  - readable titles, rules text or numbers
+  - existing game brands or characters
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: rules tables, readable titles, rules text or numbers, existing game brands or characters, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: tabletop-illustration-studies
+  categoryName: 10. Tabletop Illustration Studies
+  tags:
+    - curation-v2
+    - tabletop-illustration-studies
+    - gm-screen
+    - tabletop
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: wide folding screen illustration

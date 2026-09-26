@@ -148,4 +148,490 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP23-198',
+    name: 'Old-School Module Cover',
+    displayName: 'Old-School Module Cover',
+    styleAnchors: [
+      'Old-School Module Cover',
+      'vintage adventure module cover art',
+      'flat colored border',
+    ],
+    category: '10. Tabletop Illustration Studies',
+    domain: 'vintage adventure module cover art',
+    negativePrompt:
+      'readable titles, rules text or numbers, existing game brands or characters, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Old-school module cover: late-seventies and early-eighties adventure booklet covers, a single dramatic ink-and-paint scene framed by a flat colored border with blank title space.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; stage the subject as one dramatic dungeon or wilderness moment inside a flat colored border.',
+      color_and_tone:
+        'Limited palette with one flat border color such as monochrome blue, orange or green.',
+      lighting_and_shadow:
+        'Dramatic torchlit or moonlit ink shading, kept consistent across the whole image.',
+      texture_and_material: 'Ink line, cross-hatching, flat printed color and paper grain.',
+      camera_and_composition: 'Framed scene below a blank band left for a title.',
+      atmosphere_and_mood: 'Keep the requested mood with pulpy dungeon adventure.',
+      rendering_and_quality:
+        'Earnest period illustration with no lettering, kept consistent across the whole image.',
+      creative_brief:
+        "Old-school module cover: late-seventies and early-eighties adventure booklet covers, a single dramatic ink-and-paint scene framed by a flat colored border with blank title space. Carry it through flat colored border, blank title band, ink scene, dramatic moment. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'flat colored border; blank title band; ink scene; dramatic moment',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-199',
+    name: 'Creature Compendium Ink Plate',
+    displayName: 'Creature Compendium Ink Plate',
+    styleAnchors: [
+      'Creature Compendium Ink Plate',
+      'monster book ink illustration',
+      'isolated creature',
+    ],
+    category: '10. Tabletop Illustration Studies',
+    domain: 'monster book ink illustration',
+    negativePrompt:
+      'labels or stat blocks, readable titles, rules text or numbers, existing game brands or characters, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Creature compendium ink plate: a single black-ink monster illustration from an old role-playing bestiary book, stippling and hatching, the creature posed on a small patch of ground.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject as one creature illustrated in black ink on a small patch of ground.',
+      color_and_tone: 'Black ink on off-white paper, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Hatching and stippling for form and shadow, kept consistent across the whole image.',
+      texture_and_material:
+        'Fine pen line, stipple dots and cross-hatching, kept consistent across the whole image.',
+      camera_and_composition:
+        'Isolated creature with white space around it, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with strange encyclopedic menace.',
+      rendering_and_quality:
+        'Clean detailed ink with no labels, kept consistent across the whole image.',
+      creative_brief:
+        "Creature compendium ink plate: a single black-ink monster illustration from an old role-playing bestiary book, stippling and hatching, the creature posed on a small patch of ground. Carry it through isolated creature, stipple and hatch, ground patch, white space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'isolated creature; stipple and hatch; ground patch; white space',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-200',
+    name: 'Hex-Crawl Wilderness Map',
+    displayName: 'Hex-Crawl Wilderness Map',
+    styleAnchors: ['Hex-Crawl Wilderness Map', 'hand-drawn hex exploration map', 'hex grid'],
+    category: '10. Tabletop Illustration Studies',
+    domain: 'hand-drawn hex exploration map',
+    negativePrompt:
+      'readable place names or numbers, readable titles, rules text or numbers, existing game brands or characters, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Hex-crawl wilderness map: a hand-drawn overland map on a hex grid, tiny icon mountains, forests, ruins and lairs inked in each cell, some cells still blank and unexplored.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject as tiny inked icons or a lair within a hex-grid wilderness.',
+      color_and_tone: 'Ink on cream paper with a few colored pencil washes.',
+      lighting_and_shadow:
+        'Flat map drawing without light, kept consistent across the whole image.',
+      texture_and_material: 'Hex grid lines, tiny inked icons, pencil color and erasures.',
+      camera_and_composition:
+        'Top-down map filling the card, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with the lure of unexplored cells.',
+      rendering_and_quality:
+        'Clear hand-drawn icons with no place names, kept consistent across the whole image.',
+      creative_brief:
+        "Hex-crawl wilderness map: a hand-drawn overland map on a hex grid, tiny icon mountains, forests, ruins and lairs inked in each cell, some cells still blank and unexplored. Carry it through hex grid, inked terrain icons, blank cells, hand-drawn map. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'hex grid; inked terrain icons; blank cells; hand-drawn map',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-201',
+    name: 'Blue-Grid Dungeon Map',
+    displayName: 'Blue-Grid Dungeon Map',
+    styleAnchors: ['Blue-Grid Dungeon Map', 'classic blue graph dungeon map', 'solid blue fill'],
+    category: '10. Tabletop Illustration Studies',
+    domain: 'classic blue graph dungeon map',
+    negativePrompt:
+      'room numbers or labels, readable titles, rules text or numbers, existing game brands or characters, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Blue-grid dungeon map: a classic dungeon floor plan drawn in solid blue on graph paper, rooms, corridors, doors and stairs as crisp white shapes cut from blue.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; express the subject as rooms and features on a crisp blue-grid dungeon plan.',
+      color_and_tone: 'Solid cyan-blue with white rooms and grid lines.',
+      lighting_and_shadow:
+        'Flat diagrammatic, no lighting, kept consistent across the whole image.',
+      texture_and_material: 'Graph grid, crisp room shapes and small door symbols.',
+      camera_and_composition:
+        'Top-down plan filling the card, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with cool methodical mystery.',
+      rendering_and_quality:
+        'Crisp clean map with no room numbers, kept consistent across the whole image.',
+      creative_brief:
+        "Blue-grid dungeon map: a classic dungeon floor plan drawn in solid blue on graph paper, rooms, corridors, doors and stairs as crisp white shapes cut from blue. Carry it through solid blue fill, white rooms, graph grid, door symbols. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'solid blue fill; white rooms; graph grid; door symbols',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-202',
+    name: 'Tabletop Miniature Box Painting',
+    displayName: 'Tabletop Miniature Box Painting',
+    styleAnchors: [
+      'Tabletop Miniature Box Painting',
+      'painted box art for miniatures',
+      'heroic warband',
+    ],
+    category: '10. Tabletop Illustration Studies',
+    domain: 'painted box art for miniatures',
+    negativePrompt:
+      'product logo, readable titles, rules text or numbers, existing game brands or characters, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Tabletop miniature box painting: dramatic painted box art for fantasy miniatures, a rugged hero group or monster in a heroic stance against a smoky battlefield glow.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; paint the subject as a heroic group or monster in dramatic box-art pose.',
+      color_and_tone: 'Smoky oranges, deep shadows and saturated armor colors.',
+      lighting_and_shadow:
+        'Backlit glow with strong rim light, kept consistent across the whole image.',
+      texture_and_material: 'Painted armor, fur and weapons with gritty detail.',
+      camera_and_composition: 'Low heroic angle with figures filling the frame.',
+      atmosphere_and_mood: 'Keep the requested mood with gritty warband pride.',
+      rendering_and_quality:
+        'Polished painted box art with no logo, kept consistent across the whole image.',
+      creative_brief:
+        "Tabletop miniature box painting: dramatic painted box art for fantasy miniatures, a rugged hero group or monster in a heroic stance against a smoky battlefield glow. Carry it through heroic warband, backlit glow, low angle, gritty detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'heroic warband; backlit glow; low angle; gritty detail',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-203',
+    name: 'Fantasy Card Game Art Window',
+    displayName: 'Fantasy Card Game Art Window',
+    styleAnchors: ['Fantasy Card Game Art Window', 'trading card game illustration', 'art window'],
+    category: '10. Tabletop Illustration Studies',
+    domain: 'trading card game illustration',
+    negativePrompt:
+      'card frame text, mana symbols, readable titles, rules text or numbers, existing game brands or characters, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Fantasy card game art window: the illustration from a fantasy trading card, a single dramatic painted moment in a wide landscape-format window, rich and clean for small size.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; paint the subject as one dramatic readable moment for a small card window.',
+      color_and_tone: 'Saturated focal colors with a clear value structure.',
+      lighting_and_shadow:
+        'Strong focal light that reads small, kept consistent across the whole image.',
+      texture_and_material:
+        'Clean digital or oil paint finish, kept consistent across the whole image.',
+      camera_and_composition:
+        'Landscape-format window with one clear focal point, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with instant card-table drama.',
+      rendering_and_quality: 'Clean readable art without card frame or text.',
+      creative_brief:
+        "Fantasy card game art window: the illustration from a fantasy trading card, a single dramatic painted moment in a wide landscape-format window, rich and clean for small size. Carry it through art window, one focal moment, strong values, small-size clarity. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'art window; one focal moment; strong values; small-size clarity',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-204',
+    name: 'Board-Game Terrain Tile',
+    displayName: 'Board-Game Terrain Tile',
+    styleAnchors: ['Board-Game Terrain Tile', 'illustrated board-game tile', 'top-down tile'],
+    category: '10. Tabletop Illustration Studies',
+    domain: 'illustrated board-game tile',
+    negativePrompt:
+      'icons or numbers, readable titles, rules text or numbers, existing game brands or characters, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Board-game terrain tile: a square or hex cardboard tile illustrated top-down with forest, river, road or ruin that can connect to neighboring tiles at its edges.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; illustrate the subject top-down on a single connectable terrain tile.',
+      color_and_tone:
+        'Bright clear terrain colors with defined edges, kept consistent across the whole image.',
+      lighting_and_shadow: 'Soft top-down shading, kept consistent across the whole image.',
+      texture_and_material: 'Printed cardboard, rounded corners and slight edge wear.',
+      camera_and_composition: 'Single tile seen from directly above on a table.',
+      atmosphere_and_mood: 'Keep the requested mood with cozy game-night clarity.',
+      rendering_and_quality: 'Clean readable tile with no icons or numbers.',
+      creative_brief:
+        "Board-game terrain tile: a square or hex cardboard tile illustrated top-down with forest, river, road or ruin that can connect to neighboring tiles at its edges. Carry it through top-down tile, connecting edges, cardboard, terrain illustration. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'top-down tile; connecting edges; cardboard; terrain illustration',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-205',
+    name: 'Punch-Out Cardboard Standee',
+    displayName: 'Punch-Out Cardboard Standee',
+    styleAnchors: [
+      'Punch-Out Cardboard Standee',
+      'die-cut cardboard game figure',
+      'die-cut cardboard',
+    ],
+    category: '10. Tabletop Illustration Studies',
+    domain: 'die-cut cardboard game figure',
+    negativePrompt:
+      'readable titles, rules text or numbers, existing game brands or characters, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Punch-out cardboard standee: a flat illustrated game figure die-cut from thick cardboard, standing in a small plastic base, printed on both sides with visible layered board edges.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; turn the subject into a flat die-cut cardboard figure standing in a plastic base.',
+      color_and_tone:
+        'Bright printed illustration with grey board edges, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Tabletop light with small cast shadow, kept consistent across the whole image.',
+      texture_and_material: 'Layered cardboard edges, print sheen and plastic base.',
+      camera_and_composition:
+        'Close tabletop view at low angle, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with playful tabletop charm.',
+      rendering_and_quality:
+        'Convincing physical cardboard object, kept consistent across the whole image.',
+      creative_brief:
+        "Punch-out cardboard standee: a flat illustrated game figure die-cut from thick cardboard, standing in a small plastic base, printed on both sides with visible layered board edges. Carry it through die-cut cardboard, plastic base, board edges, tabletop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'die-cut cardboard; plastic base; board edges; tabletop',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-206',
+    name: 'Gamebook Ink Illustration',
+    displayName: 'Gamebook Ink Illustration',
+    styleAnchors: ['Gamebook Ink Illustration', 'choose-your-path book ink art', 'full-page ink'],
+    category: '10. Tabletop Illustration Studies',
+    domain: 'choose-your-path book ink art',
+    negativePrompt:
+      'section numbers, readable titles, rules text or numbers, existing game brands or characters, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Gamebook ink illustration: the full-page black-and-white ink illustrations of eighties choose-your-path adventure books, dense hatching, lurid monsters and dramatic perspective.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; draw the subject as a dramatic full-page black ink moment of choice or danger.',
+      color_and_tone: 'Black ink on white with dense tonal hatching.',
+      lighting_and_shadow:
+        'High-contrast hatching and solid black shadows, kept consistent across the whole image.',
+      texture_and_material:
+        'Pen hatching, stippling and paper grain, kept consistent across the whole image.',
+      camera_and_composition: "Dramatic perspective from the reader's point of view.",
+      atmosphere_and_mood: 'Keep the requested mood with pulpy second-person peril.',
+      rendering_and_quality:
+        'Dense energetic ink with clear focal action, kept consistent across the whole image.',
+      creative_brief:
+        "Gamebook ink illustration: the full-page black-and-white ink illustrations of eighties choose-your-path adventure books, dense hatching, lurid monsters and dramatic perspective. Carry it through full-page ink, dense hatching, reader viewpoint, lurid monsters. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'full-page ink; dense hatching; reader viewpoint; lurid monsters',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-207',
+    name: 'Character-Sheet Margin Sketch',
+    displayName: 'Character-Sheet Margin Sketch',
+    styleAnchors: ['Character-Sheet Margin Sketch', 'player doodle portrait', 'player doodle'],
+    category: '10. Tabletop Illustration Studies',
+    domain: 'player doodle portrait',
+    negativePrompt:
+      'written stats, readable titles, rules text or numbers, existing game brands or characters, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Character-sheet margin sketch: a quick pencil or ballpoint portrait a player drew of their character in the corner of a sheet, eager, imperfect and full of personality.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; draw the subject as an eager imperfect player sketch in pencil or ballpoint.',
+      color_and_tone:
+        'Graphite or blue ballpoint on off-white paper, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Scribbled shading and uneven hatching, kept consistent across the whole image.',
+      texture_and_material: 'Pencil smudges, eraser marks and lined paper edges.',
+      camera_and_composition: 'Bust or full figure squeezed into a box on the page.',
+      atmosphere_and_mood: 'Keep the requested mood with heartfelt amateur devotion.',
+      rendering_and_quality:
+        'Charming imperfect sketch with no written stats, kept consistent across the whole image.',
+      creative_brief:
+        "Character-sheet margin sketch: a quick pencil or ballpoint portrait a player drew of their character in the corner of a sheet, eager, imperfect and full of personality. Carry it through player doodle, ballpoint or pencil, eraser marks, boxed portrait. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'player doodle; ballpoint or pencil; eraser marks; boxed portrait',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-208',
+    name: 'Game-Night Table Still Life',
+    displayName: 'Game-Night Table Still Life',
+    styleAnchors: ['Game-Night Table Still Life', 'photographed tabletop session', 'wooden table'],
+    category: '10. Tabletop Illustration Studies',
+    domain: 'photographed tabletop session',
+    negativePrompt:
+      'readable character sheets, readable titles, rules text or numbers, existing game brands or characters, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Game-night table still life: a warm photograph of a tabletop session in progress, dice, miniatures, maps, snacks and candles scattered across a wooden table.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject as miniatures or props within a warm tabletop session.',
+      color_and_tone: 'Warm lamp tones, wood browns and bright dice colors.',
+      lighting_and_shadow:
+        'Warm overhead lamp and candle glow, kept consistent across the whole image.',
+      texture_and_material: 'Wood grain, paper maps, painted minis and glossy dice.',
+      camera_and_composition: 'Close angled table view with shallow depth of field.',
+      atmosphere_and_mood: 'Keep the requested mood with cozy shared imagination.',
+      rendering_and_quality:
+        'Natural photographic realism with no readable sheets, kept consistent across the whole image.',
+      creative_brief:
+        "Game-night table still life: a warm photograph of a tabletop session in progress, dice, miniatures, maps, snacks and candles scattered across a wooden table. Carry it through wooden table, dice and miniatures, warm lamp, shallow focus. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'wooden table; dice and miniatures; warm lamp; shallow focus',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-209',
+    name: 'Rulebook Chapter Splash',
+    displayName: 'Rulebook Chapter Splash',
+    styleAnchors: ['Rulebook Chapter Splash', 'full-bleed rulebook opener art', 'full-bleed scene'],
+    category: '10. Tabletop Illustration Studies',
+    domain: 'full-bleed rulebook opener art',
+    negativePrompt:
+      'heading text, readable titles, rules text or numbers, existing game brands or characters, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Rulebook chapter splash: a full-bleed painted illustration opening a chapter in a fantasy rulebook, a sweeping establishing scene with a large dark area left for a heading.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; present the subject as a sweeping establishing scene with calm negative space.',
+      color_and_tone: 'Cinematic painted color with a darker open area.',
+      lighting_and_shadow:
+        'Atmospheric light with deep shadow zones, kept consistent across the whole image.',
+      texture_and_material:
+        'Rich painted environment with fine detail, kept consistent across the whole image.',
+      camera_and_composition: 'Wide full-bleed scene with open space at top or side.',
+      atmosphere_and_mood:
+        'Keep the requested mood with epic world-building, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Polished painted splash with no heading text, kept consistent across the whole image.',
+      creative_brief:
+        "Rulebook chapter splash: a full-bleed painted illustration opening a chapter in a fantasy rulebook, a sweeping establishing scene with a large dark area left for a heading. Carry it through full-bleed scene, open heading space, establishing view, painted. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'full-bleed scene; open heading space; establishing view; painted',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-210',
+    name: 'Unpainted Pewter Miniature',
+    displayName: 'Unpainted Pewter Miniature',
+    styleAnchors: ['Unpainted Pewter Miniature', 'bare metal tabletop figure', 'bare pewter'],
+    category: '10. Tabletop Illustration Studies',
+    domain: 'bare metal tabletop figure',
+    negativePrompt:
+      'paint, readable titles, rules text or numbers, existing game brands or characters, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Unpainted pewter miniature: a bare grey metal tabletop figure fresh from the blister pack, mold lines, a slotta tab base and fine sculpted detail catching soft light.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; cast the subject as a small bare pewter miniature on a slotted base.',
+      color_and_tone:
+        'Soft silver grey with dark recesses, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Soft studio light showing sculpted detail, kept consistent across the whole image.',
+      texture_and_material: 'Bare pewter, mold lines, flash and a slotted base.',
+      camera_and_composition:
+        'Macro close-up on a hobby mat, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with collector anticipation, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Convincing macro product realism, kept consistent across the whole image.',
+      creative_brief:
+        "Unpainted pewter miniature: a bare grey metal tabletop figure fresh from the blister pack, mold lines, a slotta tab base and fine sculpted detail catching soft light. Carry it through bare pewter, mold lines, slotted base, macro view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'bare pewter; mold lines; slotted base; macro view',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-211',
+    name: 'Fantasy Calendar Oil Painting',
+    displayName: 'Fantasy Calendar Oil Painting',
+    styleAnchors: ['Fantasy Calendar Oil Painting', 'eighties fantasy calendar art', 'lush oil'],
+    category: '10. Tabletop Illustration Studies',
+    domain: 'eighties fantasy calendar art',
+    negativePrompt:
+      'dates or calendar grid, readable titles, rules text or numbers, existing game brands or characters, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Fantasy calendar oil painting: lush seventies and eighties fantasy calendar paintings, heroic figures, gleaming dragons, glowing skies and meticulous oil rendering.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; paint the subject in a lush heroic fantasy scene with meticulous oil finish.',
+      color_and_tone: 'Glowing sunset skies, emerald dragons and warm skin tones.',
+      lighting_and_shadow:
+        'Dramatic golden light with deep painted shadows, kept consistent across the whole image.',
+      texture_and_material:
+        'Smooth oil glazes, gleaming scales and armor, kept consistent across the whole image.',
+      camera_and_composition:
+        'Grand horizontal composition with a heroic focus, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with lush romantic fantasy.',
+      rendering_and_quality: 'Meticulous commercial oil finish, no dates or text.',
+      creative_brief:
+        "Fantasy calendar oil painting: lush seventies and eighties fantasy calendar paintings, heroic figures, gleaming dragons, glowing skies and meticulous oil rendering. Carry it through lush oil, glowing sky, heroic fantasy, gleaming creatures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'lush oil; glowing sky; heroic fantasy; gleaming creatures',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-212',
+    name: 'Game-Master Screen Panorama',
+    displayName: 'Game-Master Screen Panorama',
+    styleAnchors: [
+      'Game-Master Screen Panorama',
+      'wide folding screen illustration',
+      'panoramic painting',
+    ],
+    category: '10. Tabletop Illustration Studies',
+    domain: 'wide folding screen illustration',
+    negativePrompt:
+      'rules tables, readable titles, rules text or numbers, existing game brands or characters, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Game-master screen panorama: a long continuous painting stretched across three or four folding panels, a sweeping fantasy vista with visible panel creases.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; spread the subject across a long panoramic scene divided by folding panel creases.',
+      color_and_tone:
+        'Rich cinematic palette across a wide horizon, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Consistent dramatic light across all panels, kept consistent across the whole image.',
+      texture_and_material: 'Printed card panels, creases and slight edge wear.',
+      camera_and_composition: 'Very wide panorama split by three vertical creases.',
+      atmosphere_and_mood: 'Keep the requested mood with grand campaign scale.',
+      rendering_and_quality:
+        'Continuous painting with no tables or text, kept consistent across the whole image.',
+      creative_brief:
+        "Game-master screen panorama: a long continuous painting stretched across three or four folding panels, a sweeping fantasy vista with visible panel creases. Carry it through panoramic painting, folding creases, wide vista, campaign scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'panoramic painting; folding creases; wide vista; campaign scale',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

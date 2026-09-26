@@ -177,4 +177,470 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP23-213',
+    name: 'Soft Pastel Toy-Town 3D',
+    displayName: 'Soft Pastel Toy-Town 3D',
+    styleAnchors: ['Soft Pastel Toy-Town 3D', 'rounded cozy pastel game 3d', 'pastel palette'],
+    category: '11. Modern Visual Techniques',
+    domain: 'rounded cozy pastel game 3d',
+    negativePrompt:
+      'interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Soft pastel toy-town 3D: cozy rounded real-time 3D with pastel colors, chunky soft shapes, gentle ambient light and a slightly curved miniature world.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject as chunky rounded pastel shapes in a cozy miniature world.',
+      color_and_tone: 'Mint, peach, butter yellow and sky blue pastels.',
+      lighting_and_shadow:
+        'Soft ambient light with gentle occlusion, kept consistent across the whole image.',
+      texture_and_material:
+        'Smooth matte surfaces and simple painted details, kept consistent across the whole image.',
+      camera_and_composition: 'Slightly high three-quarter view on a curved ground.',
+      atmosphere_and_mood: 'Keep the requested mood with warm cozy safety.',
+      rendering_and_quality: 'Clean soft real-time render, kept consistent across the whole image.',
+      creative_brief:
+        "Soft pastel toy-town 3D: cozy rounded real-time 3D with pastel colors, chunky soft shapes, gentle ambient light and a slightly curved miniature world. Carry it through pastel palette, chunky round shapes, curved world, soft ambient light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'pastel palette; chunky round shapes; curved world; soft ambient light',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-214',
+    name: 'Anime Toon-Ramp 3D',
+    displayName: 'Anime Toon-Ramp 3D',
+    styleAnchors: ['Anime Toon-Ramp 3D', 'anime-shaded real-time 3d', 'toon ramp shading'],
+    category: '11. Modern Visual Techniques',
+    domain: 'anime-shaded real-time 3d',
+    negativePrompt:
+      'interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Anime toon-ramp 3D: real-time 3D characters shaded with crisp anime ramps, hard shadow edges, painted faces, rim light and bright stylized skies.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject as a 3D model with crisp two-step anime shading and painted details.',
+      color_and_tone:
+        'Bright saturated colors with cool shadow tones, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Hard-edged ramp shadows and bright rim light, kept consistent across the whole image.',
+      texture_and_material: 'Clean painted textures, hair clumps and crisp highlights.',
+      camera_and_composition:
+        'Dynamic low-angle action or wide scenic shot, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with bright adventurous energy.',
+      rendering_and_quality: 'Clean anime-like 3D render, kept consistent across the whole image.',
+      creative_brief:
+        "Anime toon-ramp 3D: real-time 3D characters shaded with crisp anime ramps, hard shadow edges, painted faces, rim light and bright stylized skies. Carry it through toon ramp shading, rim light, painted textures, bright sky. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'toon ramp shading; rim light; painted textures; bright sky',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-215',
+    name: 'Watercolor-Shaded 3D',
+    displayName: 'Watercolor-Shaded 3D',
+    styleAnchors: ['Watercolor-Shaded 3D', 'real-time watercolor shader', 'watercolor shader'],
+    category: '11. Modern Visual Techniques',
+    domain: 'real-time watercolor shader',
+    negativePrompt:
+      'interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Watercolor-shaded 3D: 3D scenes rendered to look like watercolor, pigment pooling at edges, paper texture and soft bleeding washes applied to moving geometry.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject in 3D with watercolor edge pooling and paper texture.',
+      color_and_tone: 'Transparent washes with darker pigment at the edges.',
+      lighting_and_shadow:
+        'Soft light expressed through wash density, kept consistent across the whole image.',
+      texture_and_material:
+        'Paper grain, edge darkening and wet blooms, kept consistent across the whole image.',
+      camera_and_composition:
+        'Scenic 3D view with painterly depth, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with gentle storybook motion.',
+      rendering_and_quality:
+        'Convincing watercolor look over 3D forms, kept consistent across the whole image.',
+      creative_brief:
+        "Watercolor-shaded 3D: 3D scenes rendered to look like watercolor, pigment pooling at edges, paper texture and soft bleeding washes applied to moving geometry. Carry it through watercolor shader, edge pooling, paper grain, 3D depth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'watercolor shader; edge pooling; paper grain; 3D depth',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-216',
+    name: 'Ink-Wash Shaded 3D',
+    displayName: 'Ink-Wash Shaded 3D',
+    styleAnchors: ['Ink-Wash Shaded 3D', 'sumi ink shader render', 'brush outlines'],
+    category: '11. Modern Visual Techniques',
+    domain: 'sumi ink shader render',
+    negativePrompt:
+      'readable calligraphy, interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Ink-wash shaded 3D: 3D worlds rendered like sumi ink painting, bold brush outlines, grey wash shading and paper white skies, with celestial color accents.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject in 3D with brush-ink outlines and grey wash shading.',
+      color_and_tone: 'Ink black, wash greys, paper white and a few bright accents.',
+      lighting_and_shadow: 'Shading as ink wash density, kept consistent across the whole image.',
+      texture_and_material:
+        'Brush outlines, dry brush and rice-paper grain, kept consistent across the whole image.',
+      camera_and_composition:
+        'Wide scenic view with calligraphic motion, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with mythic brush energy.',
+      rendering_and_quality:
+        'Clean ink shader over 3D forms, kept consistent across the whole image.',
+      creative_brief:
+        "Ink-wash shaded 3D: 3D worlds rendered like sumi ink painting, bold brush outlines, grey wash shading and paper white skies, with celestial color accents. Carry it through brush outlines, ink wash shading, paper white sky, bright accents. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'brush outlines; ink wash shading; paper white sky; bright accents',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-217',
+    name: 'Clear-Line 3D Render',
+    displayName: 'Clear-Line 3D Render',
+    styleAnchors: ['Clear-Line 3D Render', 'ligne claire shader 3d', 'even black outlines'],
+    category: '11. Modern Visual Techniques',
+    domain: 'ligne claire shader 3d',
+    negativePrompt:
+      'interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Clear-line 3D render: 3D worlds rendered with even black outlines and flat colors like European clear-line comics, wide deserts and pale skies.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject in 3D with even black outlines and flat unshaded colors.',
+      color_and_tone: 'Flat pale sand, sky blue and muted pastel planes.',
+      lighting_and_shadow:
+        'Minimal flat shadows, mostly unshaded, kept consistent across the whole image.',
+      texture_and_material:
+        'Uniform outlines and clean flat fills, kept consistent across the whole image.',
+      camera_and_composition:
+        'Wide cinematic landscapes with small figures, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with vast calm exploration.',
+      rendering_and_quality:
+        'Crisp outline render with flat clean color, kept consistent across the whole image.',
+      creative_brief:
+        "Clear-line 3D render: 3D worlds rendered with even black outlines and flat colors like European clear-line comics, wide deserts and pale skies. Carry it through even black outlines, flat colors, vast landscapes, pale sky. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'even black outlines; flat colors; vast landscapes; pale sky',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-218',
+    name: 'Glowing Forest Silhouette Layers',
+    displayName: 'Glowing Forest Silhouette Layers',
+    styleAnchors: [
+      'Glowing Forest Silhouette Layers',
+      'backlit silhouette platformer art',
+      'layered silhouettes',
+    ],
+    category: '11. Modern Visual Techniques',
+    domain: 'backlit silhouette platformer art',
+    negativePrompt:
+      'interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Glowing forest silhouette layers: layered dark silhouettes of forest and creatures against glowing blue and teal light, luminous spirits and soft bloom, like a lyrical platformer.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject as a dark or softly glowing silhouette among layered backlit forest.',
+      color_and_tone: 'Deep indigo silhouettes with teal, cyan and gold glows.',
+      lighting_and_shadow:
+        'Strong backlight and soft bloom between layers, kept consistent across the whole image.',
+      texture_and_material:
+        'Clean silhouettes, glowing particles and misty layers, kept consistent across the whole image.',
+      camera_and_composition: 'Side-view layered depth with a small central figure.',
+      atmosphere_and_mood: 'Keep the requested mood with lyrical luminous melancholy.',
+      rendering_and_quality:
+        'Clean layered glow without harsh noise, kept consistent across the whole image.',
+      creative_brief:
+        "Glowing forest silhouette layers: layered dark silhouettes of forest and creatures against glowing blue and teal light, luminous spirits and soft bloom, like a lyrical platformer. Carry it through layered silhouettes, backlit glow, spirit particles, side view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'layered silhouettes; backlit glow; spirit particles; side view',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-219',
+    name: 'Cozy Isometric Room Render',
+    displayName: 'Cozy Isometric Room Render',
+    styleAnchors: [
+      'Cozy Isometric Room Render',
+      'small isometric interior render',
+      'isometric cut-away',
+    ],
+    category: '11. Modern Visual Techniques',
+    domain: 'small isometric interior render',
+    negativePrompt:
+      'readable book titles, interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Cozy isometric room render: a single cut-away room seen from an isometric angle, packed with small furniture, plants and warm lamps like a tiny dollhouse.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; place the subject in a single cozy isometric cut-away room.',
+      color_and_tone: 'Warm lamp amber, wood tones and soft pastels.',
+      lighting_and_shadow:
+        'Warm interior lights and soft shadows, kept consistent across the whole image.',
+      texture_and_material: 'Clean low-poly or smooth models with small details.',
+      camera_and_composition: 'Isometric cut-away room floating on a plain background.',
+      atmosphere_and_mood: 'Keep the requested mood with snug domestic calm.',
+      rendering_and_quality:
+        'Tidy detailed miniature render, kept consistent across the whole image.',
+      creative_brief:
+        "Cozy isometric room render: a single cut-away room seen from an isometric angle, packed with small furniture, plants and warm lamps like a tiny dollhouse. Carry it through isometric cut-away, tiny furniture, warm lamps, plain background. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'isometric cut-away; tiny furniture; warm lamps; plain background',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-220',
+    name: 'One-Bit Dithered 3D',
+    displayName: 'One-Bit Dithered 3D',
+    styleAnchors: ['One-Bit Dithered 3D', 'monochrome dithered 3d shader', 'one-bit dither'],
+    category: '11. Modern Visual Techniques',
+    domain: 'monochrome dithered 3d shader',
+    negativePrompt:
+      'grey tones, interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'One-bit dithered 3D: 3D scenes rendered in only black and white pixels, shading made of ordered dither, like an old desktop engraving brought to life.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject in 3D using only black and white dithered pixels.',
+      color_and_tone: 'Pure black and white, or two tinted tones.',
+      lighting_and_shadow:
+        'Dither density shows light and shadow, kept consistent across the whole image.',
+      texture_and_material:
+        'Crisp ordered dither patterns on 3D surfaces, kept consistent across the whole image.',
+      camera_and_composition:
+        'First-person or cinematic 3D view, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with cold eerie precision.',
+      rendering_and_quality:
+        'Crisp one-bit dithering without gray, kept consistent across the whole image.',
+      creative_brief:
+        "One-bit dithered 3D: 3D scenes rendered in only black and white pixels, shading made of ordered dither, like an old desktop engraving brought to life. Carry it through one-bit dither, black and white, 3D scene, ordered pattern. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'one-bit dither; black and white; 3D scene; ordered pattern',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-221',
+    name: 'Rotoscoped Flat-Color Motion',
+    displayName: 'Rotoscoped Flat-Color Motion',
+    styleAnchors: [
+      'Rotoscoped Flat-Color Motion',
+      'traced live-action animation frame',
+      'traced motion',
+    ],
+    category: '11. Modern Visual Techniques',
+    domain: 'traced live-action animation frame',
+    negativePrompt:
+      'interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Rotoscoped flat-color motion: animation frames traced over real movement, lifelike motion in flat simple colors with slightly wobbly outlines.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject with realistic traced motion in flat color and wobbly outline.',
+      color_and_tone:
+        'Flat limited colors with realistic silhouettes, kept consistent across the whole image.',
+      lighting_and_shadow: 'Simple flat shadow shapes traced from real light.',
+      texture_and_material:
+        'Slightly wobbly outlines and flat fills, kept consistent across the whole image.',
+      camera_and_composition:
+        'Cinematic frame with natural motion, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with uncanny lifelike motion.',
+      rendering_and_quality: 'Convincing rotoscope frame, kept consistent across the whole image.',
+      creative_brief:
+        "Rotoscoped flat-color motion: animation frames traced over real movement, lifelike motion in flat simple colors with slightly wobbly outlines. Carry it through traced motion, flat color, wobbly outlines, lifelike pose. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'traced motion; flat color; wobbly outlines; lifelike pose',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-222',
+    name: 'Unlit Gradient Low-Poly',
+    displayName: 'Unlit Gradient Low-Poly',
+    styleAnchors: [
+      'Unlit Gradient Low-Poly',
+      'flat unlit gradient 3d landscapes',
+      'unlit polygons',
+    ],
+    category: '11. Modern Visual Techniques',
+    domain: 'flat unlit gradient 3d landscapes',
+    negativePrompt:
+      'interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Unlit gradient low-poly: minimalist 3D landscapes with flat unlit polygons, soft sky gradients and atmospheric color fog, calm and meditative.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject as simple unlit low-poly shapes in gradient color fog.',
+      color_and_tone: 'Sunset gradients of orange, pink and violet fog.',
+      lighting_and_shadow:
+        'No lighting; color fog creates depth, kept consistent across the whole image.',
+      texture_and_material: 'Flat untextured polygons, kept consistent across the whole image.',
+      camera_and_composition: 'Wide horizon with small figures and layered hills.',
+      atmosphere_and_mood:
+        'Keep the requested mood with meditative stillness, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean minimal shapes and smooth gradients, kept consistent across the whole image.',
+      creative_brief:
+        "Unlit gradient low-poly: minimalist 3D landscapes with flat unlit polygons, soft sky gradients and atmospheric color fog, calm and meditative. Carry it through unlit polygons, gradient fog, flat shapes, meditative horizon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'unlit polygons; gradient fog; flat shapes; meditative horizon',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-223',
+    name: '2D Skeletal Cutout Character',
+    displayName: '2D Skeletal Cutout Character',
+    styleAnchors: ['2D Skeletal Cutout Character', 'jointed flat 2d rig art', 'flat parts'],
+    category: '11. Modern Visual Techniques',
+    domain: 'jointed flat 2d rig art',
+    negativePrompt:
+      'interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        '2D skeletal cutout character: flat painted character pieces joined at visible pivots like a digital puppet, crisp edges and slight overlaps at elbows and knees.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; build the subject from flat painted parts joined at pivots like a puppet.',
+      color_and_tone:
+        'Bold painted colors on each flat part, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Painted-in shading on each piece, kept consistent across the whole image.',
+      texture_and_material:
+        'Crisp cut edges, overlaps and pivot joints, kept consistent across the whole image.',
+      camera_and_composition:
+        'Side view in an action pose, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with bouncy puppet charm.',
+      rendering_and_quality: 'Clean rigged-part look, kept consistent across the whole image.',
+      creative_brief:
+        "2D skeletal cutout character: flat painted character pieces joined at visible pivots like a digital puppet, crisp edges and slight overlaps at elbows and knees. Carry it through flat parts, pivot joints, overlapping limbs, action pose. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'flat parts; pivot joints; overlapping limbs; action pose',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-224',
+    name: 'Stylized Magic VFX Burst',
+    displayName: 'Stylized Magic VFX Burst',
+    styleAnchors: [
+      'Stylized Magic VFX Burst',
+      'hand-crafted game spell effect',
+      'stylized spell shapes',
+    ],
+    category: '11. Modern Visual Techniques',
+    domain: 'hand-crafted game spell effect',
+    negativePrompt:
+      'realistic smoke, interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Stylized magic VFX burst: hand-designed game spell effects, sharp swirling shapes, glowing ribbons and crystal shards bursting with bold stylized color.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; wrap the subject in a bold stylized burst of spell effects.',
+      color_and_tone: 'Hot magenta, cyan and gold against dark surroundings.',
+      lighting_and_shadow:
+        'Emissive effect light illuminating the figure, kept consistent across the whole image.',
+      texture_and_material:
+        'Sharp stylized flame shapes, ribbons and shards, kept consistent across the whole image.',
+      camera_and_composition:
+        'Dynamic centered burst with figure in action, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with explosive magical power.',
+      rendering_and_quality:
+        'Crisp stylized effects, not realistic smoke, kept consistent across the whole image.',
+      creative_brief:
+        "Stylized magic VFX burst: hand-designed game spell effects, sharp swirling shapes, glowing ribbons and crystal shards bursting with bold stylized color. Carry it through stylized spell shapes, glowing ribbons, crystal shards, emissive light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'stylized spell shapes; glowing ribbons; crystal shards; emissive light',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-225',
+    name: 'Crosshatch-Shaded 3D',
+    displayName: 'Crosshatch-Shaded 3D',
+    styleAnchors: ['Crosshatch-Shaded 3D', 'hatching shader 3d render', 'crosshatch shader'],
+    category: '11. Modern Visual Techniques',
+    domain: 'hatching shader 3d render',
+    negativePrompt:
+      'interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Crosshatch-shaded 3D: 3D scenes shaded with pen-and-ink crosshatching that follows the forms, like an etching come to life.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject in 3D with form-following crosshatch shading.',
+      color_and_tone: 'Black ink hatching on cream paper, optional sepia.',
+      lighting_and_shadow:
+        'Hatch density follows light and shadow, kept consistent across the whole image.',
+      texture_and_material:
+        'Crosshatch strokes, paper grain and ink lines, kept consistent across the whole image.',
+      camera_and_composition:
+        'Cinematic 3D view with depth, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with old-book adventure, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Consistent hatch shader over 3D forms, kept consistent across the whole image.',
+      creative_brief:
+        "Crosshatch-shaded 3D: 3D scenes shaded with pen-and-ink crosshatching that follows the forms, like an etching come to life. Carry it through crosshatch shader, form-following strokes, cream paper, 3D depth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'crosshatch shader; form-following strokes; cream paper; 3D depth',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-226',
+    name: 'Wind-Swept Stylized Grassland',
+    displayName: 'Wind-Swept Stylized Grassland',
+    styleAnchors: [
+      'Wind-Swept Stylized Grassland',
+      'painterly wind grass real-time scene',
+      'wind-swept grass',
+    ],
+    category: '11. Modern Visual Techniques',
+    domain: 'painterly wind grass real-time scene',
+    negativePrompt:
+      'interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Wind-swept stylized grassland: vast real-time fields of painterly grass and flowers bending in the wind, glowing golden light and drifting leaves.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; place the subject in a vast field of painterly grass bending in the wind.',
+      color_and_tone:
+        'Golden grass, red flowers and warm sky, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Low golden sun with rim-lit grass, kept consistent across the whole image.',
+      texture_and_material:
+        'Stylized grass blades, petals and drifting leaves, kept consistent across the whole image.',
+      camera_and_composition:
+        'Wide cinematic field with a lone figure, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with windswept longing, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Painterly real-time field with coherent wind, kept consistent across the whole image.',
+      creative_brief:
+        "Wind-swept stylized grassland: vast real-time fields of painterly grass and flowers bending in the wind, glowing golden light and drifting leaves. Carry it through wind-swept grass, golden light, drifting leaves, lone figure. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'wind-swept grass; golden light; drifting leaves; lone figure',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

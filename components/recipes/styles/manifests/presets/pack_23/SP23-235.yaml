@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP23-235
+packId: pack_23
+name: Clay-Pressed Pixel Sprites
+styleAnchors:
+  - Clay-Pressed Pixel Sprites
+  - sprites made of pressed clay cubes
+  - clay squares
+displayName: Clay-Pressed Pixel Sprites
+category: 12. Hybrid Visual Studies
+domain: sprites made of pressed clay cubes
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - hybrid-visual-studies
+  - clay-pixel
+  - hybrid-media
+  - portable-style-study
+visualDna:
+  aesthetic: 'Clay-pressed pixel sprites: game sprites built from tiny squares of colored modeling clay pressed onto a board, each pixel slightly squashed and fingerprinted.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; build the subject as a pixel sprite from pressed squares of clay.
+  color_and_tone: Bright matte clay colors on a wooden or white board.
+  lighting_and_shadow: Soft tabletop light with small clay shadows, kept consistent across the whole image.
+  texture_and_material: Squashed clay squares, fingerprints and uneven edges, kept consistent across the whole image.
+  camera_and_composition: Top-down or low-angle view of the clay board.
+  atmosphere_and_mood: Keep the requested mood with handmade playfulness, kept consistent across the whole image.
+  rendering_and_quality: Convincing tactile clay texture, kept consistent across the whole image.
+  creative_brief: "Clay-pressed pixel sprites: game sprites built from tiny squares of colored modeling clay pressed onto a board, each pixel slightly squashed and fingerprinted. Carry it through clay squares, pixel grid, fingerprints, tabletop board. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: clay squares; pixel grid; fingerprints; tabletop board
+avoidRules:
+  - blending the two media into one generic finish
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: blending the two media into one generic finish, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: hybrid-visual-studies
+  categoryName: 12. Hybrid Visual Studies
+  tags:
+    - curation-v2
+    - hybrid-visual-studies
+    - clay-pixel
+    - hybrid-media
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: sprites made of pressed clay cubes

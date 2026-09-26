@@ -197,6 +197,21 @@ categories:
       - pack_23/SP23-039.yaml
       - pack_23/SP23-040.yaml
       - pack_23/SP23-041.yaml
+      - pack_23/SP23-183.yaml
+      - pack_23/SP23-184.yaml
+      - pack_23/SP23-185.yaml
+      - pack_23/SP23-186.yaml
+      - pack_23/SP23-187.yaml
+      - pack_23/SP23-188.yaml
+      - pack_23/SP23-189.yaml
+      - pack_23/SP23-190.yaml
+      - pack_23/SP23-191.yaml
+      - pack_23/SP23-192.yaml
+      - pack_23/SP23-193.yaml
+      - pack_23/SP23-194.yaml
+      - pack_23/SP23-195.yaml
+      - pack_23/SP23-196.yaml
+      - pack_23/SP23-197.yaml
   - id: tabletop-illustration-studies
     name: 10. Tabletop Illustration Studies
     presetRefs:
@@ -205,6 +220,21 @@ categories:
       - pack_23/SP23-044.yaml
       - pack_23/SP23-045.yaml
       - pack_23/SP23-046.yaml
+      - pack_23/SP23-198.yaml
+      - pack_23/SP23-199.yaml
+      - pack_23/SP23-200.yaml
+      - pack_23/SP23-201.yaml
+      - pack_23/SP23-202.yaml
+      - pack_23/SP23-203.yaml
+      - pack_23/SP23-204.yaml
+      - pack_23/SP23-205.yaml
+      - pack_23/SP23-206.yaml
+      - pack_23/SP23-207.yaml
+      - pack_23/SP23-208.yaml
+      - pack_23/SP23-209.yaml
+      - pack_23/SP23-210.yaml
+      - pack_23/SP23-211.yaml
+      - pack_23/SP23-212.yaml
   - id: modern-visual-techniques
     name: 11. Modern Visual Techniques
     presetRefs:
@@ -214,6 +244,20 @@ categories:
       - pack_23/SP23-050.yaml
       - pack_23/SP23-051.yaml
       - pack_23/SP23-052.yaml
+      - pack_23/SP23-213.yaml
+      - pack_23/SP23-214.yaml
+      - pack_23/SP23-215.yaml
+      - pack_23/SP23-216.yaml
+      - pack_23/SP23-217.yaml
+      - pack_23/SP23-218.yaml
+      - pack_23/SP23-219.yaml
+      - pack_23/SP23-220.yaml
+      - pack_23/SP23-221.yaml
+      - pack_23/SP23-222.yaml
+      - pack_23/SP23-223.yaml
+      - pack_23/SP23-224.yaml
+      - pack_23/SP23-225.yaml
+      - pack_23/SP23-226.yaml
   - id: hybrid-visual-studies
     name: 12. Hybrid Visual Studies
     presetRefs:
@@ -223,6 +267,20 @@ categories:
       - pack_23/SP23-056.yaml
       - pack_23/SP23-057.yaml
       - pack_23/SP23-058.yaml
+      - pack_23/SP23-227.yaml
+      - pack_23/SP23-228.yaml
+      - pack_23/SP23-229.yaml
+      - pack_23/SP23-230.yaml
+      - pack_23/SP23-231.yaml
+      - pack_23/SP23-232.yaml
+      - pack_23/SP23-233.yaml
+      - pack_23/SP23-234.yaml
+      - pack_23/SP23-235.yaml
+      - pack_23/SP23-236.yaml
+      - pack_23/SP23-237.yaml
+      - pack_23/SP23-238.yaml
+      - pack_23/SP23-239.yaml
+      - pack_23/SP23-240.yaml
 presetRefs:
   - pack_23/SP23-001.yaml
   - pack_23/SP23-002.yaml
@@ -389,20 +447,78 @@ presetRefs:
   - pack_23/SP23-039.yaml
   - pack_23/SP23-040.yaml
   - pack_23/SP23-041.yaml
+  - pack_23/SP23-183.yaml
+  - pack_23/SP23-184.yaml
+  - pack_23/SP23-185.yaml
+  - pack_23/SP23-186.yaml
+  - pack_23/SP23-187.yaml
+  - pack_23/SP23-188.yaml
+  - pack_23/SP23-189.yaml
+  - pack_23/SP23-190.yaml
+  - pack_23/SP23-191.yaml
+  - pack_23/SP23-192.yaml
+  - pack_23/SP23-193.yaml
+  - pack_23/SP23-194.yaml
+  - pack_23/SP23-195.yaml
+  - pack_23/SP23-196.yaml
+  - pack_23/SP23-197.yaml
   - pack_23/SP23-042.yaml
   - pack_23/SP23-043.yaml
   - pack_23/SP23-044.yaml
   - pack_23/SP23-045.yaml
   - pack_23/SP23-046.yaml
+  - pack_23/SP23-198.yaml
+  - pack_23/SP23-199.yaml
+  - pack_23/SP23-200.yaml
+  - pack_23/SP23-201.yaml
+  - pack_23/SP23-202.yaml
+  - pack_23/SP23-203.yaml
+  - pack_23/SP23-204.yaml
+  - pack_23/SP23-205.yaml
+  - pack_23/SP23-206.yaml
+  - pack_23/SP23-207.yaml
+  - pack_23/SP23-208.yaml
+  - pack_23/SP23-209.yaml
+  - pack_23/SP23-210.yaml
+  - pack_23/SP23-211.yaml
+  - pack_23/SP23-212.yaml
   - pack_23/SP23-047.yaml
   - pack_23/SP23-048.yaml
   - pack_23/SP23-049.yaml
   - pack_23/SP23-050.yaml
   - pack_23/SP23-051.yaml
   - pack_23/SP23-052.yaml
+  - pack_23/SP23-213.yaml
+  - pack_23/SP23-214.yaml
+  - pack_23/SP23-215.yaml
+  - pack_23/SP23-216.yaml
+  - pack_23/SP23-217.yaml
+  - pack_23/SP23-218.yaml
+  - pack_23/SP23-219.yaml
+  - pack_23/SP23-220.yaml
+  - pack_23/SP23-221.yaml
+  - pack_23/SP23-222.yaml
+  - pack_23/SP23-223.yaml
+  - pack_23/SP23-224.yaml
+  - pack_23/SP23-225.yaml
+  - pack_23/SP23-226.yaml
   - pack_23/SP23-053.yaml
   - pack_23/SP23-054.yaml
   - pack_23/SP23-055.yaml
   - pack_23/SP23-056.yaml
   - pack_23/SP23-057.yaml
   - pack_23/SP23-058.yaml
+  - pack_23/SP23-227.yaml
+  - pack_23/SP23-228.yaml
+  - pack_23/SP23-229.yaml
+  - pack_23/SP23-230.yaml
+  - pack_23/SP23-231.yaml
+  - pack_23/SP23-232.yaml
+  - pack_23/SP23-233.yaml
+  - pack_23/SP23-234.yaml
+  - pack_23/SP23-235.yaml
+  - pack_23/SP23-236.yaml
+  - pack_23/SP23-237.yaml
+  - pack_23/SP23-238.yaml
+  - pack_23/SP23-239.yaml
+  - pack_23/SP23-240.yaml

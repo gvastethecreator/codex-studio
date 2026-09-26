@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-207
+packId: pack_23
+name: Character-Sheet Margin Sketch
+styleAnchors:
+  - Character-Sheet Margin Sketch
+  - player doodle portrait
+  - player doodle
+displayName: Character-Sheet Margin Sketch
+category: 10. Tabletop Illustration Studies
+domain: player doodle portrait
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - tabletop-illustration-studies
+  - sheet-sketch
+  - tabletop
+  - portable-style-study
+visualDna:
+  aesthetic: 'Character-sheet margin sketch: a quick pencil or ballpoint portrait a player drew of their character in the corner of a sheet, eager, imperfect and full of personality.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; draw the subject as an eager imperfect player sketch in pencil or ballpoint.
+  color_and_tone: Graphite or blue ballpoint on off-white paper, kept consistent across the whole image.
+  lighting_and_shadow: Scribbled shading and uneven hatching, kept consistent across the whole image.
+  texture_and_material: Pencil smudges, eraser marks and lined paper edges.
+  camera_and_composition: Bust or full figure squeezed into a box on the page.
+  atmosphere_and_mood: Keep the requested mood with heartfelt amateur devotion.
+  rendering_and_quality: Charming imperfect sketch with no written stats, kept consistent across the whole image.
+  creative_brief: "Character-sheet margin sketch: a quick pencil or ballpoint portrait a player drew of their character in the corner of a sheet, eager, imperfect and full of personality. Carry it through player doodle, ballpoint or pencil, eraser marks, boxed portrait. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: player doodle; ballpoint or pencil; eraser marks; boxed portrait
+avoidRules:
+  - written stats
+  - readable titles, rules text or numbers
+  - existing game brands or characters
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: written stats, readable titles, rules text or numbers, existing game brands or characters, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: tabletop-illustration-studies
+  categoryName: 10. Tabletop Illustration Studies
+  tags:
+    - curation-v2
+    - tabletop-illustration-studies
+    - sheet-sketch
+    - tabletop
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: player doodle portrait

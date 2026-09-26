@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP23-229
+packId: pack_23
+name: Neon-Lit Woodcut
+styleAnchors:
+  - Neon-Lit Woodcut
+  - woodcut with neon color
+  - black woodcut
+displayName: Neon-Lit Woodcut
+category: 12. Hybrid Visual Studies
+domain: woodcut with neon color
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - hybrid-visual-studies
+  - neon-woodcut
+  - hybrid-media
+  - portable-style-study
+visualDna:
+  aesthetic: 'Neon-lit woodcut: a traditional black relief woodcut with its carved lines lit by glowing neon color, as if the print were plugged in.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; carve the subject as a black woodcut and let neon color glow from its lines.
+  color_and_tone: Black ink and paper with hot pink, cyan and acid green glow.
+  lighting_and_shadow: Neon glow emanating from carved lines, kept consistent across the whole image.
+  texture_and_material: Wood grain, gouge marks and luminous color bleed.
+  camera_and_composition: Bold relief composition, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with electric folk energy.
+  rendering_and_quality: Crisp woodcut structure with clean glow, kept consistent across the whole image.
+  creative_brief: "Neon-lit woodcut: a traditional black relief woodcut with its carved lines lit by glowing neon color, as if the print were plugged in. Carry it through black woodcut, neon glow, carved lines, wood grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: black woodcut; neon glow; carved lines; wood grain
+avoidRules:
+  - blending the two media into one generic finish
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: blending the two media into one generic finish, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: hybrid-visual-studies
+  categoryName: 12. Hybrid Visual Studies
+  tags:
+    - curation-v2
+    - hybrid-visual-studies
+    - neon-woodcut
+    - hybrid-media
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: woodcut with neon color

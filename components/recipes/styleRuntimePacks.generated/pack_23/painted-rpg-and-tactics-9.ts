@@ -148,4 +148,507 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP23-183',
+    name: 'Hand-Painted Tactics Map',
+    displayName: 'Hand-Painted Tactics Map',
+    styleAnchors: ['Hand-Painted Tactics Map', 'painted grid battle map', 'faint grid'],
+    category: '9. Painted RPG & Tactics',
+    domain: 'painted grid battle map',
+    negativePrompt:
+      'interface, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Hand-painted tactics map: a top-down painted battlefield of hills, rivers and ruins with a faint square or hex grid, small painted unit figures placed like pieces on a board.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; place the subject as small painted units on a gridded top-down battlefield.',
+      color_and_tone: 'Earthy greens and ochres with bright unit colors.',
+      lighting_and_shadow:
+        'Soft overhead light with small unit shadows, kept consistent across the whole image.',
+      texture_and_material: 'Painterly terrain, faint grid lines and crisp unit figures.',
+      camera_and_composition: 'High top-down or steep angled view of the field.',
+      atmosphere_and_mood: 'Keep the requested mood with calculated strategic tension.',
+      rendering_and_quality:
+        'Readable terrain and units without interface, kept consistent across the whole image.',
+      creative_brief:
+        "Hand-painted tactics map: a top-down painted battlefield of hills, rivers and ruins with a faint square or hex grid, small painted unit figures placed like pieces on a board. Carry it through faint grid, painted terrain, small units, top-down battlefield. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'faint grid; painted terrain; small units; top-down battlefield',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-184',
+    name: 'Parchment Unit Portrait Card',
+    displayName: 'Parchment Unit Portrait Card',
+    styleAnchors: [
+      'Parchment Unit Portrait Card',
+      'painted unit portrait on parchment',
+      'half-length portrait',
+    ],
+    category: '9. Painted RPG & Tactics',
+    domain: 'painted unit portrait on parchment',
+    negativePrompt:
+      'stats or labels, interface, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Parchment unit portrait card: a painted half-length portrait of a soldier, mage or creature on aged parchment with soft vignette edges, as used to present units in strategy games.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; paint the subject as a half-length portrait on aged parchment.',
+      color_and_tone:
+        'Warm parchment beige with muted painted colors, kept consistent across the whole image.',
+      lighting_and_shadow: 'Soft side light with a vignette fading to parchment.',
+      texture_and_material:
+        'Paper fibers, oil-like brushwork and stained edges, kept consistent across the whole image.',
+      camera_and_composition:
+        'Half-length figure centered with fading edges, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with seasoned soldierly character.',
+      rendering_and_quality:
+        'Refined portrait with no stats or labels, kept consistent across the whole image.',
+      creative_brief:
+        "Parchment unit portrait card: a painted half-length portrait of a soldier, mage or creature on aged parchment with soft vignette edges, as used to present units in strategy games. Carry it through half-length portrait, aged parchment, vignette edges, unit character. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'half-length portrait; aged parchment; vignette edges; unit character',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-185',
+    name: 'Chibi Watercolor Party Sketch',
+    displayName: 'Chibi Watercolor Party Sketch',
+    styleAnchors: [
+      'Chibi Watercolor Party Sketch',
+      'cute watercolor adventurer group',
+      'chibi proportions',
+    ],
+    category: '9. Painted RPG & Tactics',
+    domain: 'cute watercolor adventurer group',
+    negativePrompt:
+      'interface, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Chibi watercolor party sketch: a loose watercolor and pencil sketch of a small adventuring party drawn with big heads and tiny bodies, soft washes and playful poses.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; draw the subject as chibi figures with big heads and small bodies in soft wash.',
+      color_and_tone:
+        'Soft pastel watercolor washes with pencil lines, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Light airy washes with few shadows, kept consistent across the whole image.',
+      texture_and_material:
+        'Pencil lines, watercolor blooms and white paper, kept consistent across the whole image.',
+      camera_and_composition: 'Group of figures loosely arranged on white paper.',
+      atmosphere_and_mood: 'Keep the requested mood with warm playful camaraderie.',
+      rendering_and_quality:
+        'Loose charming sketch with clear expressions, kept consistent across the whole image.',
+      creative_brief:
+        "Chibi watercolor party sketch: a loose watercolor and pencil sketch of a small adventuring party drawn with big heads and tiny bodies, soft washes and playful poses. Carry it through chibi proportions, pencil and watercolor, adventuring party, white paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'chibi proportions; pencil and watercolor; adventuring party; white paper',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-186',
+    name: 'Painted Tarot Class Card',
+    displayName: 'Painted Tarot Class Card',
+    styleAnchors: ['Painted Tarot Class Card', 'character class in tarot frame', 'tarot frame'],
+    category: '9. Painted RPG & Tactics',
+    domain: 'character class in tarot frame',
+    negativePrompt:
+      'card numbers or titles, interface, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Painted tarot class card: a character class painted as a tall tarot-style card with an ornamental border, symbolic props and a single emblematic pose.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; paint the subject in a single emblematic pose framed like a tarot card.',
+      color_and_tone:
+        'Rich jewel tones with gold border lines, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Soft dramatic light on the central figure, kept consistent across the whole image.',
+      texture_and_material: 'Painterly figure, gilded border and aged card surface.',
+      camera_and_composition: 'Tall vertical card with centered figure and symbols.',
+      atmosphere_and_mood:
+        'Keep the requested mood with mystic destiny, kept consistent across the whole image.',
+      rendering_and_quality: 'Clear emblematic composition with no numbers or titles.',
+      creative_brief:
+        "Painted tarot class card: a character class painted as a tall tarot-style card with an ornamental border, symbolic props and a single emblematic pose. Carry it through tarot frame, emblematic pose, symbolic props, gilded border. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'tarot frame; emblematic pose; symbolic props; gilded border',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-187',
+    name: 'Ink-Wash Strategy Scroll',
+    displayName: 'Ink-Wash Strategy Scroll',
+    styleAnchors: ['Ink-Wash Strategy Scroll', 'east asian ink tactical painting', 'ink landscape'],
+    category: '9. Painted RPG & Tactics',
+    domain: 'east asian ink tactical painting',
+    negativePrompt:
+      'readable calligraphy, interface, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Ink-wash strategy scroll: sweeping monochrome ink landscapes with armies as tiny brush dots moving through mountains and rivers, splashes of red for banners.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject as tiny brushwork figures in a vast ink landscape.',
+      color_and_tone: 'Black and grey ink washes with small red accents.',
+      lighting_and_shadow:
+        'Mist and wash gradients create depth, kept consistent across the whole image.',
+      texture_and_material: 'Rice-paper texture, wet ink blooms and dry brush.',
+      camera_and_composition: 'Wide horizontal landscape with armies as small marks.',
+      atmosphere_and_mood: 'Keep the requested mood with grand strategic scale.',
+      rendering_and_quality:
+        'Expressive ink with clear army movements, kept consistent across the whole image.',
+      creative_brief:
+        "Ink-wash strategy scroll: sweeping monochrome ink landscapes with armies as tiny brush dots moving through mountains and rivers, splashes of red for banners. Carry it through ink landscape, tiny army dots, red banners, misty mountains. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'ink landscape; tiny army dots; red banners; misty mountains',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-188',
+    name: 'Painted Hub-Town Backdrop',
+    displayName: 'Painted Hub-Town Backdrop',
+    styleAnchors: [
+      'Painted Hub-Town Backdrop',
+      'painted game town background',
+      'painted town square',
+    ],
+    category: '9. Painted RPG & Tactics',
+    domain: 'painted game town background',
+    negativePrompt:
+      'readable shop signs, interface, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Painted hub-town backdrop: a lush painted town square where adventurers rest between quests, shops, fountains and banners arranged like a stage set waiting for characters.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; set the subject in a detailed painted town square like a stage backdrop.',
+      color_and_tone: 'Warm afternoon golds, terracotta roofs and green ivy.',
+      lighting_and_shadow:
+        'Warm late light with long soft shadows, kept consistent across the whole image.',
+      texture_and_material: 'Painterly stone, wood signs, cloth awnings and foliage.',
+      camera_and_composition:
+        'Frontal or slightly elevated stage-like view, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with cozy safe haven.',
+      rendering_and_quality: 'Rich detailed backdrop with no text on signs.',
+      creative_brief:
+        "Painted hub-town backdrop: a lush painted town square where adventurers rest between quests, shops, fountains and banners arranged like a stage set waiting for characters. Carry it through painted town square, shop fronts, fountain, stage-like view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'painted town square; shop fronts; fountain; stage-like view',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-189',
+    name: 'Sprites on Painted Diorama',
+    displayName: 'Sprites on Painted Diorama',
+    styleAnchors: [
+      'Sprites on Painted Diorama',
+      'pixel sprites in painterly 3d diorama',
+      'pixel sprites',
+    ],
+    category: '9. Painted RPG & Tactics',
+    domain: 'pixel sprites in painterly 3d diorama',
+    negativePrompt:
+      'interface, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Sprites on painted diorama: crisp pixel-art characters standing inside a soft painterly 3D miniature world with tilt-shift depth of field, bloom and warm light.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render characters as crisp pixel sprites inside a soft 3D miniature world.',
+      color_and_tone: 'Warm glowing lights and rich painterly environment colors.',
+      lighting_and_shadow: 'Soft bloom, point lights and shallow depth blur.',
+      texture_and_material:
+        'Pixel sprites against painted 3D textures, kept consistent across the whole image.',
+      camera_and_composition:
+        'Elevated three-quarter diorama view with blurred edges, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with nostalgic storybook warmth.',
+      rendering_and_quality:
+        'Crisp sprites contrasted with soft 3D depth, kept consistent across the whole image.',
+      creative_brief:
+        "Sprites on painted diorama: crisp pixel-art characters standing inside a soft painterly 3D miniature world with tilt-shift depth of field, bloom and warm light. Carry it through pixel sprites, painted 3D diorama, depth blur, warm bloom. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'pixel sprites; painted 3D diorama; depth blur; warm bloom',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-190',
+    name: 'Ornate Codex Character Plate',
+    displayName: 'Ornate Codex Character Plate',
+    styleAnchors: [
+      'Ornate Codex Character Plate',
+      'ornamental character art plate',
+      'ornamental frame',
+    ],
+    category: '9. Painted RPG & Tactics',
+    domain: 'ornamental character art plate',
+    negativePrompt:
+      'captions, interface, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Ornate codex character plate: a full-length character painting set in an ornamental frame of filigree and gems, like a collectible codex entry, with a pale patterned backdrop.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; paint the subject full-length inside an ornamental filigree frame.',
+      color_and_tone: 'Soft pastel backdrop with rich costume colors and gold ornament.',
+      lighting_and_shadow:
+        'Even soft light with delicate highlights, kept consistent across the whole image.',
+      texture_and_material: 'Fine painterly costume detail and gilded filigree frame.',
+      camera_and_composition:
+        'Full-length centered figure in a tall frame, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with elegant collectible pride.',
+      rendering_and_quality:
+        'Polished detailed figure with no captions, kept consistent across the whole image.',
+      creative_brief:
+        "Ornate codex character plate: a full-length character painting set in an ornamental frame of filigree and gems, like a collectible codex entry, with a pale patterned backdrop. Carry it through ornamental frame, full-length figure, filigree, patterned backdrop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'ornamental frame; full-length figure; filigree; patterned backdrop',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-191',
+    name: 'Painted Campfire Rest Scene',
+    displayName: 'Painted Campfire Rest Scene',
+    styleAnchors: [
+      'Painted Campfire Rest Scene',
+      'rpg rest by campfire painting',
+      'campfire circle',
+    ],
+    category: '9. Painted RPG & Tactics',
+    domain: 'rpg rest by campfire painting',
+    negativePrompt:
+      'interface, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Painted campfire rest scene: a small party resting around a campfire at night, warm firelight on faces and gear, dark forest pressing in, painted with quiet intimacy.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; gather the subject around a campfire in a warm pool of light.',
+      color_and_tone:
+        'Warm orange firelight against deep blue night, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Firelight from below with deep surrounding darkness, kept consistent across the whole image.',
+      texture_and_material:
+        'Painterly faces, leather gear, smoke and sparks, kept consistent across the whole image.',
+      camera_and_composition: 'Circle of figures around the fire at eye level.',
+      atmosphere_and_mood: 'Keep the requested mood with fragile nighttime comfort.',
+      rendering_and_quality:
+        'Intimate painterly scene with readable faces, kept consistent across the whole image.',
+      creative_brief:
+        "Painted campfire rest scene: a small party resting around a campfire at night, warm firelight on faces and gear, dark forest pressing in, painted with quiet intimacy. Carry it through campfire circle, warm firelight, dark forest, resting party. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'campfire circle; warm firelight; dark forest; resting party',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-192',
+    name: 'Diagonal Skirmish Oil Sketch',
+    displayName: 'Diagonal Skirmish Oil Sketch',
+    styleAnchors: ['Diagonal Skirmish Oil Sketch', 'loose oil battle sketch', 'diagonal clash'],
+    category: '9. Painted RPG & Tactics',
+    domain: 'loose oil battle sketch',
+    negativePrompt:
+      'gore, interface, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Diagonal skirmish oil sketch: a loose fast oil sketch of a fantasy clash, bodies and banners thrown along a strong diagonal, broken color and dust.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; throw the subject into a loose diagonal clash of bodies, banners and dust.',
+      color_and_tone: 'Dusty ochres, steel greys and splashes of banner red.',
+      lighting_and_shadow:
+        'Harsh sun through dust, strong value contrast, kept consistent across the whole image.',
+      texture_and_material: 'Loose oil strokes, dragged paint and dust haze.',
+      camera_and_composition:
+        'Strong diagonal from corner to corner, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with chaotic momentum, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Energetic sketchy finish, not polished, kept consistent across the whole image.',
+      creative_brief:
+        "Diagonal skirmish oil sketch: a loose fast oil sketch of a fantasy clash, bodies and banners thrown along a strong diagonal, broken color and dust. Carry it through diagonal clash, loose oil strokes, dust haze, banners. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'diagonal clash; loose oil strokes; dust haze; banners',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-193',
+    name: 'Sepia Costume Concept Sheet',
+    displayName: 'Sepia Costume Concept Sheet',
+    styleAnchors: [
+      'Sepia Costume Concept Sheet',
+      'game costume design sheet',
+      'costume variations',
+    ],
+    category: '9. Painted RPG & Tactics',
+    domain: 'game costume design sheet',
+    negativePrompt:
+      'written notes or labels, interface, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Sepia costume concept sheet: a production sheet of one character in several costume variations, pencil and sepia wash with small detail callouts drawn as sketches, not words.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject in three or four costume variations side by side.',
+      color_and_tone: 'Sepia and warm grey washes with one accent color.',
+      lighting_and_shadow:
+        'Simple consistent light for design clarity, kept consistent across the whole image.',
+      texture_and_material:
+        'Pencil lines, sepia wash and toned paper, kept consistent across the whole image.',
+      camera_and_composition: 'Row of full-length figures with small detail sketches.',
+      atmosphere_and_mood: 'Keep the requested mood with focused design exploration.',
+      rendering_and_quality:
+        'Clear design sheet with no written notes, kept consistent across the whole image.',
+      creative_brief:
+        "Sepia costume concept sheet: a production sheet of one character in several costume variations, pencil and sepia wash with small detail callouts drawn as sketches, not words. Carry it through costume variations, sepia wash, detail sketches, toned paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'costume variations; sepia wash; detail sketches; toned paper',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-194',
+    name: 'Candlelit Oil Party Portrait',
+    displayName: 'Candlelit Oil Party Portrait',
+    styleAnchors: [
+      'Candlelit Oil Party Portrait',
+      'group portrait in candlelight',
+      'group portrait',
+    ],
+    category: '9. Painted RPG & Tactics',
+    domain: 'group portrait in candlelight',
+    negativePrompt:
+      'interface, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Candlelit oil party portrait: a formal oil group portrait of an adventuring party posed in a dark hall by candlelight, rich chiaroscuro and varnished shadows.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; pose the subject as a formal group portrait lit by candles.',
+      color_and_tone: 'Deep umber shadows, warm candle gold and rich fabrics.',
+      lighting_and_shadow:
+        'Candlelight chiaroscuro with dark backgrounds, kept consistent across the whole image.',
+      texture_and_material:
+        'Varnished oil, velvet, metal glints and crackle, kept consistent across the whole image.',
+      camera_and_composition: 'Group arranged in tiers like a formal portrait.',
+      atmosphere_and_mood: 'Keep the requested mood with solemn legendary pride.',
+      rendering_and_quality:
+        'Rich old-master finish with readable faces, kept consistent across the whole image.',
+      creative_brief:
+        "Candlelit oil party portrait: a formal oil group portrait of an adventuring party posed in a dark hall by candlelight, rich chiaroscuro and varnished shadows. Carry it through group portrait, candlelight, chiaroscuro, varnished oil. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'group portrait; candlelight; chiaroscuro; varnished oil',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-195',
+    name: 'Pastel Twilight Journey Painting',
+    displayName: 'Pastel Twilight Journey Painting',
+    styleAnchors: ['Pastel Twilight Journey Painting', 'soft pastel travel painting', 'pastel sky'],
+    category: '9. Painted RPG & Tactics',
+    domain: 'soft pastel travel painting',
+    negativePrompt:
+      'interface, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Pastel twilight journey painting: soft chalk-pastel landscapes of a lonely journey at dusk, blended skies of peach and lavender, tiny travelers on long roads.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; place the subject small on a long road beneath a vast blended pastel sky.',
+      color_and_tone:
+        'Peach, lavender, dusty rose and soft teal, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Glowing twilight with soft blended shadows, kept consistent across the whole image.',
+      texture_and_material: 'Chalk pastel grain, blended skies and paper tooth.',
+      camera_and_composition:
+        'Wide landscape, road leading to the horizon, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with gentle melancholy wandering.',
+      rendering_and_quality:
+        'Soft blended finish with clear small figures, kept consistent across the whole image.',
+      creative_brief:
+        "Pastel twilight journey painting: soft chalk-pastel landscapes of a lonely journey at dusk, blended skies of peach and lavender, tiny travelers on long roads. Carry it through pastel sky, long road, tiny travelers, chalk grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'pastel sky; long road; tiny travelers; chalk grain',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-196',
+    name: 'Painted Loot Still Life',
+    displayName: 'Painted Loot Still Life',
+    styleAnchors: ['Painted Loot Still Life', 'treasure item painting', 'treasure still life'],
+    category: '9. Painted RPG & Tactics',
+    domain: 'treasure item painting',
+    negativePrompt:
+      'readable map labels, interface, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Painted loot still life: a rich painterly still life of adventuring treasure, swords, potions, maps and coins arranged on a table like a Dutch still life.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; arrange the subject as treasure in a rich painted still life.',
+      color_and_tone: 'Deep shadows with gleaming gold, glass and gem colors.',
+      lighting_and_shadow:
+        'Single window light with rich reflections, kept consistent across the whole image.',
+      texture_and_material:
+        'Glass bottles, metal, leather, parchment and velvet, kept consistent across the whole image.',
+      camera_and_composition:
+        'Table-top arrangement against a dark background, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with tempting abundance, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Painterly realism with convincing materials, kept consistent across the whole image.',
+      creative_brief:
+        "Painted loot still life: a rich painterly still life of adventuring treasure, swords, potions, maps and coins arranged on a table like a Dutch still life. Carry it through treasure still life, glass potions, gold, dark background. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'treasure still life; glass potions; gold; dark background',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-197',
+    name: 'Class Line-Up Wash Drawing',
+    displayName: 'Class Line-Up Wash Drawing',
+    styleAnchors: ['Class Line-Up Wash Drawing', 'character class lineup drawing', 'class line-up'],
+    category: '9. Painted RPG & Tactics',
+    domain: 'character class lineup drawing',
+    negativePrompt:
+      'labels, interface, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Class line-up wash drawing: a row of different character classes standing side by side on a shared ground line, drawn in graphite with transparent color washes.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; line the subject up with other classes on a shared ground line.',
+      color_and_tone:
+        'Graphite greys with soft transparent color accents, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Consistent soft light and small ground shadows, kept consistent across the whole image.',
+      texture_and_material:
+        'Graphite lines, color washes and white paper, kept consistent across the whole image.',
+      camera_and_composition:
+        'Horizontal row of full-length figures, same scale, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with confident ensemble character.',
+      rendering_and_quality:
+        'Clear silhouettes that read distinctly, kept consistent across the whole image.',
+      creative_brief:
+        "Class line-up wash drawing: a row of different character classes standing side by side on a shared ground line, drawn in graphite with transparent color washes. Carry it through class line-up, shared ground line, graphite and wash, distinct silhouettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'class line-up; shared ground line; graphite and wash; distinct silhouettes',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

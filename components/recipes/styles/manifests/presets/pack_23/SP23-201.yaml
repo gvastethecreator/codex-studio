@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-201
+packId: pack_23
+name: Blue-Grid Dungeon Map
+styleAnchors:
+  - Blue-Grid Dungeon Map
+  - classic blue graph dungeon map
+  - solid blue fill
+displayName: Blue-Grid Dungeon Map
+category: 10. Tabletop Illustration Studies
+domain: classic blue graph dungeon map
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - tabletop-illustration-studies
+  - blue-grid-map
+  - tabletop
+  - portable-style-study
+visualDna:
+  aesthetic: 'Blue-grid dungeon map: a classic dungeon floor plan drawn in solid blue on graph paper, rooms, corridors, doors and stairs as crisp white shapes cut from blue.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; express the subject as rooms and features on a crisp blue-grid dungeon plan.
+  color_and_tone: Solid cyan-blue with white rooms and grid lines.
+  lighting_and_shadow: Flat diagrammatic, no lighting, kept consistent across the whole image.
+  texture_and_material: Graph grid, crisp room shapes and small door symbols.
+  camera_and_composition: Top-down plan filling the card, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with cool methodical mystery.
+  rendering_and_quality: Crisp clean map with no room numbers, kept consistent across the whole image.
+  creative_brief: "Blue-grid dungeon map: a classic dungeon floor plan drawn in solid blue on graph paper, rooms, corridors, doors and stairs as crisp white shapes cut from blue. Carry it through solid blue fill, white rooms, graph grid, door symbols. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: solid blue fill; white rooms; graph grid; door symbols
+avoidRules:
+  - room numbers or labels
+  - readable titles, rules text or numbers
+  - existing game brands or characters
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: room numbers or labels, readable titles, rules text or numbers, existing game brands or characters, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: tabletop-illustration-studies
+  categoryName: 10. Tabletop Illustration Studies
+  tags:
+    - curation-v2
+    - tabletop-illustration-studies
+    - blue-grid-map
+    - tabletop
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: classic blue graph dungeon map

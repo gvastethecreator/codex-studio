@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-211
+packId: pack_23
+name: Fantasy Calendar Oil Painting
+styleAnchors:
+  - Fantasy Calendar Oil Painting
+  - eighties fantasy calendar art
+  - lush oil
+displayName: Fantasy Calendar Oil Painting
+category: 10. Tabletop Illustration Studies
+domain: eighties fantasy calendar art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - tabletop-illustration-studies
+  - fantasy-calendar
+  - tabletop
+  - portable-style-study
+visualDna:
+  aesthetic: 'Fantasy calendar oil painting: lush seventies and eighties fantasy calendar paintings, heroic figures, gleaming dragons, glowing skies and meticulous oil rendering.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; paint the subject in a lush heroic fantasy scene with meticulous oil finish.
+  color_and_tone: Glowing sunset skies, emerald dragons and warm skin tones.
+  lighting_and_shadow: Dramatic golden light with deep painted shadows, kept consistent across the whole image.
+  texture_and_material: Smooth oil glazes, gleaming scales and armor, kept consistent across the whole image.
+  camera_and_composition: Grand horizontal composition with a heroic focus, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with lush romantic fantasy.
+  rendering_and_quality: Meticulous commercial oil finish, no dates or text.
+  creative_brief: "Fantasy calendar oil painting: lush seventies and eighties fantasy calendar paintings, heroic figures, gleaming dragons, glowing skies and meticulous oil rendering. Carry it through lush oil, glowing sky, heroic fantasy, gleaming creatures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: lush oil; glowing sky; heroic fantasy; gleaming creatures
+avoidRules:
+  - dates or calendar grid
+  - readable titles, rules text or numbers
+  - existing game brands or characters
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: dates or calendar grid, readable titles, rules text or numbers, existing game brands or characters, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: tabletop-illustration-studies
+  categoryName: 10. Tabletop Illustration Studies
+  tags:
+    - curation-v2
+    - tabletop-illustration-studies
+    - fantasy-calendar
+    - tabletop
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: eighties fantasy calendar art

@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP23-194
+packId: pack_23
+name: Candlelit Oil Party Portrait
+styleAnchors:
+  - Candlelit Oil Party Portrait
+  - group portrait in candlelight
+  - group portrait
+displayName: Candlelit Oil Party Portrait
+category: 9. Painted RPG & Tactics
+domain: group portrait in candlelight
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - painted-rpg-and-tactics
+  - party-portrait
+  - painted-rpg
+  - portable-style-study
+visualDna:
+  aesthetic: 'Candlelit oil party portrait: a formal oil group portrait of an adventuring party posed in a dark hall by candlelight, rich chiaroscuro and varnished shadows.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; pose the subject as a formal group portrait lit by candles.
+  color_and_tone: Deep umber shadows, warm candle gold and rich fabrics.
+  lighting_and_shadow: Candlelight chiaroscuro with dark backgrounds, kept consistent across the whole image.
+  texture_and_material: Varnished oil, velvet, metal glints and crackle, kept consistent across the whole image.
+  camera_and_composition: Group arranged in tiers like a formal portrait.
+  atmosphere_and_mood: Keep the requested mood with solemn legendary pride.
+  rendering_and_quality: Rich old-master finish with readable faces, kept consistent across the whole image.
+  creative_brief: "Candlelit oil party portrait: a formal oil group portrait of an adventuring party posed in a dark hall by candlelight, rich chiaroscuro and varnished shadows. Carry it through group portrait, candlelight, chiaroscuro, varnished oil. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: group portrait; candlelight; chiaroscuro; varnished oil
+avoidRules:
+  - interface, menus or health bars
+  - existing game characters or logos
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: interface, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: painted-rpg-and-tactics
+  categoryName: 9. Painted RPG & Tactics
+  tags:
+    - curation-v2
+    - painted-rpg-and-tactics
+    - party-portrait
+    - painted-rpg
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: group portrait in candlelight

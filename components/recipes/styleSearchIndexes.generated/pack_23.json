@@ -3,7 +3,7 @@
     {
       "id": "pack_23",
       "name": "Medieval Visual Atlas",
-      "presetCount": 182
+      "presetCount": 240
     }
   ],
   "presets": [
@@ -2904,6 +2904,288 @@
       "searchableText": "sp23-041 compact pixel-cluster illustration 9. painted rpg & tactics painted rpg & tactics pack_23 medieval visual atlas painted-rpg-and-tactics medieval-visual-atlas painted-rpg-and-tactics"
     },
     {
+      "id": "SP23-183",
+      "name": "Hand-Painted Tactics Map",
+      "styleAnchors": ["Hand-Painted Tactics Map", "painted grid battle map", "faint grid"],
+      "ref": "pack_23/SP23-183.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "painted-rpg-and-tactics",
+      "categoryName": "9. Painted RPG & Tactics",
+      "domain": "painted grid battle map",
+      "tags": ["medieval-visual-atlas", "painted-rpg-and-tactics", "painted-grid-battle-map"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-183 hand-painted tactics map painted grid battle map faint grid 9. painted rpg & tactics painted rpg & tactics painted grid battle map pack_23 medieval visual atlas painted-rpg-and-tactics medieval-visual-atlas painted-rpg-and-tactics painted-grid-battle-map"
+    },
+    {
+      "id": "SP23-184",
+      "name": "Parchment Unit Portrait Card",
+      "styleAnchors": [
+        "Parchment Unit Portrait Card",
+        "painted unit portrait on parchment",
+        "half-length portrait"
+      ],
+      "ref": "pack_23/SP23-184.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "painted-rpg-and-tactics",
+      "categoryName": "9. Painted RPG & Tactics",
+      "domain": "painted unit portrait on parchment",
+      "tags": [
+        "medieval-visual-atlas",
+        "painted-rpg-and-tactics",
+        "painted-unit-portrait-on-parchment"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-184 parchment unit portrait card painted unit portrait on parchment half-length portrait 9. painted rpg & tactics painted rpg & tactics painted unit portrait on parchment pack_23 medieval visual atlas painted-rpg-and-tactics medieval-visual-atlas painted-rpg-and-tactics painted-unit-portrait-on-parchment"
+    },
+    {
+      "id": "SP23-185",
+      "name": "Chibi Watercolor Party Sketch",
+      "styleAnchors": [
+        "Chibi Watercolor Party Sketch",
+        "cute watercolor adventurer group",
+        "chibi proportions"
+      ],
+      "ref": "pack_23/SP23-185.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "painted-rpg-and-tactics",
+      "categoryName": "9. Painted RPG & Tactics",
+      "domain": "cute watercolor adventurer group",
+      "tags": [
+        "medieval-visual-atlas",
+        "painted-rpg-and-tactics",
+        "cute-watercolor-adventurer-group"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-185 chibi watercolor party sketch cute watercolor adventurer group chibi proportions 9. painted rpg & tactics painted rpg & tactics cute watercolor adventurer group pack_23 medieval visual atlas painted-rpg-and-tactics medieval-visual-atlas painted-rpg-and-tactics cute-watercolor-adventurer-group"
+    },
+    {
+      "id": "SP23-186",
+      "name": "Painted Tarot Class Card",
+      "styleAnchors": ["Painted Tarot Class Card", "character class in tarot frame", "tarot frame"],
+      "ref": "pack_23/SP23-186.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "painted-rpg-and-tactics",
+      "categoryName": "9. Painted RPG & Tactics",
+      "domain": "character class in tarot frame",
+      "tags": [
+        "medieval-visual-atlas",
+        "painted-rpg-and-tactics",
+        "character-class-in-tarot-frame"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-186 painted tarot class card character class in tarot frame tarot frame 9. painted rpg & tactics painted rpg & tactics character class in tarot frame pack_23 medieval visual atlas painted-rpg-and-tactics medieval-visual-atlas painted-rpg-and-tactics character-class-in-tarot-frame"
+    },
+    {
+      "id": "SP23-187",
+      "name": "Ink-Wash Strategy Scroll",
+      "styleAnchors": [
+        "Ink-Wash Strategy Scroll",
+        "east asian ink tactical painting",
+        "ink landscape"
+      ],
+      "ref": "pack_23/SP23-187.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "painted-rpg-and-tactics",
+      "categoryName": "9. Painted RPG & Tactics",
+      "domain": "east asian ink tactical painting",
+      "tags": [
+        "medieval-visual-atlas",
+        "painted-rpg-and-tactics",
+        "east-asian-ink-tactical-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-187 ink-wash strategy scroll east asian ink tactical painting ink landscape 9. painted rpg & tactics painted rpg & tactics east asian ink tactical painting pack_23 medieval visual atlas painted-rpg-and-tactics medieval-visual-atlas painted-rpg-and-tactics east-asian-ink-tactical-painting"
+    },
+    {
+      "id": "SP23-188",
+      "name": "Painted Hub-Town Backdrop",
+      "styleAnchors": [
+        "Painted Hub-Town Backdrop",
+        "painted game town background",
+        "painted town square"
+      ],
+      "ref": "pack_23/SP23-188.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "painted-rpg-and-tactics",
+      "categoryName": "9. Painted RPG & Tactics",
+      "domain": "painted game town background",
+      "tags": ["medieval-visual-atlas", "painted-rpg-and-tactics", "painted-game-town-background"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-188 painted hub-town backdrop painted game town background painted town square 9. painted rpg & tactics painted rpg & tactics painted game town background pack_23 medieval visual atlas painted-rpg-and-tactics medieval-visual-atlas painted-rpg-and-tactics painted-game-town-background"
+    },
+    {
+      "id": "SP23-189",
+      "name": "Sprites on Painted Diorama",
+      "styleAnchors": [
+        "Sprites on Painted Diorama",
+        "pixel sprites in painterly 3d diorama",
+        "pixel sprites"
+      ],
+      "ref": "pack_23/SP23-189.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "painted-rpg-and-tactics",
+      "categoryName": "9. Painted RPG & Tactics",
+      "domain": "pixel sprites in painterly 3d diorama",
+      "tags": [
+        "medieval-visual-atlas",
+        "painted-rpg-and-tactics",
+        "pixel-sprites-in-painterly-3d-diorama"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-189 sprites on painted diorama pixel sprites in painterly 3d diorama pixel sprites 9. painted rpg & tactics painted rpg & tactics pixel sprites in painterly 3d diorama pack_23 medieval visual atlas painted-rpg-and-tactics medieval-visual-atlas painted-rpg-and-tactics pixel-sprites-in-painterly-3d-diorama"
+    },
+    {
+      "id": "SP23-190",
+      "name": "Ornate Codex Character Plate",
+      "styleAnchors": [
+        "Ornate Codex Character Plate",
+        "ornamental character art plate",
+        "ornamental frame"
+      ],
+      "ref": "pack_23/SP23-190.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "painted-rpg-and-tactics",
+      "categoryName": "9. Painted RPG & Tactics",
+      "domain": "ornamental character art plate",
+      "tags": [
+        "medieval-visual-atlas",
+        "painted-rpg-and-tactics",
+        "ornamental-character-art-plate"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-190 ornate codex character plate ornamental character art plate ornamental frame 9. painted rpg & tactics painted rpg & tactics ornamental character art plate pack_23 medieval visual atlas painted-rpg-and-tactics medieval-visual-atlas painted-rpg-and-tactics ornamental-character-art-plate"
+    },
+    {
+      "id": "SP23-191",
+      "name": "Painted Campfire Rest Scene",
+      "styleAnchors": [
+        "Painted Campfire Rest Scene",
+        "rpg rest by campfire painting",
+        "campfire circle"
+      ],
+      "ref": "pack_23/SP23-191.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "painted-rpg-and-tactics",
+      "categoryName": "9. Painted RPG & Tactics",
+      "domain": "rpg rest by campfire painting",
+      "tags": ["medieval-visual-atlas", "painted-rpg-and-tactics", "rpg-rest-by-campfire-painting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-191 painted campfire rest scene rpg rest by campfire painting campfire circle 9. painted rpg & tactics painted rpg & tactics rpg rest by campfire painting pack_23 medieval visual atlas painted-rpg-and-tactics medieval-visual-atlas painted-rpg-and-tactics rpg-rest-by-campfire-painting"
+    },
+    {
+      "id": "SP23-192",
+      "name": "Diagonal Skirmish Oil Sketch",
+      "styleAnchors": ["Diagonal Skirmish Oil Sketch", "loose oil battle sketch", "diagonal clash"],
+      "ref": "pack_23/SP23-192.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "painted-rpg-and-tactics",
+      "categoryName": "9. Painted RPG & Tactics",
+      "domain": "loose oil battle sketch",
+      "tags": ["medieval-visual-atlas", "painted-rpg-and-tactics", "loose-oil-battle-sketch"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-192 diagonal skirmish oil sketch loose oil battle sketch diagonal clash 9. painted rpg & tactics painted rpg & tactics loose oil battle sketch pack_23 medieval visual atlas painted-rpg-and-tactics medieval-visual-atlas painted-rpg-and-tactics loose-oil-battle-sketch"
+    },
+    {
+      "id": "SP23-193",
+      "name": "Sepia Costume Concept Sheet",
+      "styleAnchors": [
+        "Sepia Costume Concept Sheet",
+        "game costume design sheet",
+        "costume variations"
+      ],
+      "ref": "pack_23/SP23-193.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "painted-rpg-and-tactics",
+      "categoryName": "9. Painted RPG & Tactics",
+      "domain": "game costume design sheet",
+      "tags": ["medieval-visual-atlas", "painted-rpg-and-tactics", "game-costume-design-sheet"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-193 sepia costume concept sheet game costume design sheet costume variations 9. painted rpg & tactics painted rpg & tactics game costume design sheet pack_23 medieval visual atlas painted-rpg-and-tactics medieval-visual-atlas painted-rpg-and-tactics game-costume-design-sheet"
+    },
+    {
+      "id": "SP23-194",
+      "name": "Candlelit Oil Party Portrait",
+      "styleAnchors": [
+        "Candlelit Oil Party Portrait",
+        "group portrait in candlelight",
+        "group portrait"
+      ],
+      "ref": "pack_23/SP23-194.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "painted-rpg-and-tactics",
+      "categoryName": "9. Painted RPG & Tactics",
+      "domain": "group portrait in candlelight",
+      "tags": ["medieval-visual-atlas", "painted-rpg-and-tactics", "group-portrait-in-candlelight"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-194 candlelit oil party portrait group portrait in candlelight group portrait 9. painted rpg & tactics painted rpg & tactics group portrait in candlelight pack_23 medieval visual atlas painted-rpg-and-tactics medieval-visual-atlas painted-rpg-and-tactics group-portrait-in-candlelight"
+    },
+    {
+      "id": "SP23-195",
+      "name": "Pastel Twilight Journey Painting",
+      "styleAnchors": [
+        "Pastel Twilight Journey Painting",
+        "soft pastel travel painting",
+        "pastel sky"
+      ],
+      "ref": "pack_23/SP23-195.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "painted-rpg-and-tactics",
+      "categoryName": "9. Painted RPG & Tactics",
+      "domain": "soft pastel travel painting",
+      "tags": ["medieval-visual-atlas", "painted-rpg-and-tactics", "soft-pastel-travel-painting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-195 pastel twilight journey painting soft pastel travel painting pastel sky 9. painted rpg & tactics painted rpg & tactics soft pastel travel painting pack_23 medieval visual atlas painted-rpg-and-tactics medieval-visual-atlas painted-rpg-and-tactics soft-pastel-travel-painting"
+    },
+    {
+      "id": "SP23-196",
+      "name": "Painted Loot Still Life",
+      "styleAnchors": ["Painted Loot Still Life", "treasure item painting", "treasure still life"],
+      "ref": "pack_23/SP23-196.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "painted-rpg-and-tactics",
+      "categoryName": "9. Painted RPG & Tactics",
+      "domain": "treasure item painting",
+      "tags": ["medieval-visual-atlas", "painted-rpg-and-tactics", "treasure-item-painting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-196 painted loot still life treasure item painting treasure still life 9. painted rpg & tactics painted rpg & tactics treasure item painting pack_23 medieval visual atlas painted-rpg-and-tactics medieval-visual-atlas painted-rpg-and-tactics treasure-item-painting"
+    },
+    {
+      "id": "SP23-197",
+      "name": "Class Line-Up Wash Drawing",
+      "styleAnchors": [
+        "Class Line-Up Wash Drawing",
+        "character class lineup drawing",
+        "class line-up"
+      ],
+      "ref": "pack_23/SP23-197.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "painted-rpg-and-tactics",
+      "categoryName": "9. Painted RPG & Tactics",
+      "domain": "character class lineup drawing",
+      "tags": [
+        "medieval-visual-atlas",
+        "painted-rpg-and-tactics",
+        "character-class-lineup-drawing"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-197 class line-up wash drawing character class lineup drawing class line-up 9. painted rpg & tactics painted rpg & tactics character class lineup drawing pack_23 medieval visual atlas painted-rpg-and-tactics medieval-visual-atlas painted-rpg-and-tactics character-class-lineup-drawing"
+    },
+    {
       "id": "SP23-042",
       "name": "High-Contrast Overprint",
       "ref": "pack_23/SP23-042.yaml",
@@ -2962,6 +3244,316 @@
       "tags": ["medieval-visual-atlas", "tabletop-illustration-studies"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp23-046 expressive contour and fill 10. tabletop illustration studies tabletop illustration studies pack_23 medieval visual atlas tabletop-illustration-studies medieval-visual-atlas tabletop-illustration-studies"
+    },
+    {
+      "id": "SP23-198",
+      "name": "Old-School Module Cover",
+      "styleAnchors": [
+        "Old-School Module Cover",
+        "vintage adventure module cover art",
+        "flat colored border"
+      ],
+      "ref": "pack_23/SP23-198.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "tabletop-illustration-studies",
+      "categoryName": "10. Tabletop Illustration Studies",
+      "domain": "vintage adventure module cover art",
+      "tags": [
+        "medieval-visual-atlas",
+        "tabletop-illustration-studies",
+        "vintage-adventure-module-cover-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-198 old-school module cover vintage adventure module cover art flat colored border 10. tabletop illustration studies tabletop illustration studies vintage adventure module cover art pack_23 medieval visual atlas tabletop-illustration-studies medieval-visual-atlas tabletop-illustration-studies vintage-adventure-module-cover-art"
+    },
+    {
+      "id": "SP23-199",
+      "name": "Creature Compendium Ink Plate",
+      "styleAnchors": [
+        "Creature Compendium Ink Plate",
+        "monster book ink illustration",
+        "isolated creature"
+      ],
+      "ref": "pack_23/SP23-199.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "tabletop-illustration-studies",
+      "categoryName": "10. Tabletop Illustration Studies",
+      "domain": "monster book ink illustration",
+      "tags": [
+        "medieval-visual-atlas",
+        "tabletop-illustration-studies",
+        "monster-book-ink-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-199 creature compendium ink plate monster book ink illustration isolated creature 10. tabletop illustration studies tabletop illustration studies monster book ink illustration pack_23 medieval visual atlas tabletop-illustration-studies medieval-visual-atlas tabletop-illustration-studies monster-book-ink-illustration"
+    },
+    {
+      "id": "SP23-200",
+      "name": "Hex-Crawl Wilderness Map",
+      "styleAnchors": ["Hex-Crawl Wilderness Map", "hand-drawn hex exploration map", "hex grid"],
+      "ref": "pack_23/SP23-200.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "tabletop-illustration-studies",
+      "categoryName": "10. Tabletop Illustration Studies",
+      "domain": "hand-drawn hex exploration map",
+      "tags": [
+        "medieval-visual-atlas",
+        "tabletop-illustration-studies",
+        "hand-drawn-hex-exploration-map"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-200 hex-crawl wilderness map hand-drawn hex exploration map hex grid 10. tabletop illustration studies tabletop illustration studies hand-drawn hex exploration map pack_23 medieval visual atlas tabletop-illustration-studies medieval-visual-atlas tabletop-illustration-studies hand-drawn-hex-exploration-map"
+    },
+    {
+      "id": "SP23-201",
+      "name": "Blue-Grid Dungeon Map",
+      "styleAnchors": [
+        "Blue-Grid Dungeon Map",
+        "classic blue graph dungeon map",
+        "solid blue fill"
+      ],
+      "ref": "pack_23/SP23-201.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "tabletop-illustration-studies",
+      "categoryName": "10. Tabletop Illustration Studies",
+      "domain": "classic blue graph dungeon map",
+      "tags": [
+        "medieval-visual-atlas",
+        "tabletop-illustration-studies",
+        "classic-blue-graph-dungeon-map"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-201 blue-grid dungeon map classic blue graph dungeon map solid blue fill 10. tabletop illustration studies tabletop illustration studies classic blue graph dungeon map pack_23 medieval visual atlas tabletop-illustration-studies medieval-visual-atlas tabletop-illustration-studies classic-blue-graph-dungeon-map"
+    },
+    {
+      "id": "SP23-202",
+      "name": "Tabletop Miniature Box Painting",
+      "styleAnchors": [
+        "Tabletop Miniature Box Painting",
+        "painted box art for miniatures",
+        "heroic warband"
+      ],
+      "ref": "pack_23/SP23-202.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "tabletop-illustration-studies",
+      "categoryName": "10. Tabletop Illustration Studies",
+      "domain": "painted box art for miniatures",
+      "tags": [
+        "medieval-visual-atlas",
+        "tabletop-illustration-studies",
+        "painted-box-art-for-miniatures"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-202 tabletop miniature box painting painted box art for miniatures heroic warband 10. tabletop illustration studies tabletop illustration studies painted box art for miniatures pack_23 medieval visual atlas tabletop-illustration-studies medieval-visual-atlas tabletop-illustration-studies painted-box-art-for-miniatures"
+    },
+    {
+      "id": "SP23-203",
+      "name": "Fantasy Card Game Art Window",
+      "styleAnchors": [
+        "Fantasy Card Game Art Window",
+        "trading card game illustration",
+        "art window"
+      ],
+      "ref": "pack_23/SP23-203.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "tabletop-illustration-studies",
+      "categoryName": "10. Tabletop Illustration Studies",
+      "domain": "trading card game illustration",
+      "tags": [
+        "medieval-visual-atlas",
+        "tabletop-illustration-studies",
+        "trading-card-game-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-203 fantasy card game art window trading card game illustration art window 10. tabletop illustration studies tabletop illustration studies trading card game illustration pack_23 medieval visual atlas tabletop-illustration-studies medieval-visual-atlas tabletop-illustration-studies trading-card-game-illustration"
+    },
+    {
+      "id": "SP23-204",
+      "name": "Board-Game Terrain Tile",
+      "styleAnchors": ["Board-Game Terrain Tile", "illustrated board-game tile", "top-down tile"],
+      "ref": "pack_23/SP23-204.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "tabletop-illustration-studies",
+      "categoryName": "10. Tabletop Illustration Studies",
+      "domain": "illustrated board-game tile",
+      "tags": [
+        "medieval-visual-atlas",
+        "tabletop-illustration-studies",
+        "illustrated-board-game-tile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-204 board-game terrain tile illustrated board-game tile top-down tile 10. tabletop illustration studies tabletop illustration studies illustrated board-game tile pack_23 medieval visual atlas tabletop-illustration-studies medieval-visual-atlas tabletop-illustration-studies illustrated-board-game-tile"
+    },
+    {
+      "id": "SP23-205",
+      "name": "Punch-Out Cardboard Standee",
+      "styleAnchors": [
+        "Punch-Out Cardboard Standee",
+        "die-cut cardboard game figure",
+        "die-cut cardboard"
+      ],
+      "ref": "pack_23/SP23-205.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "tabletop-illustration-studies",
+      "categoryName": "10. Tabletop Illustration Studies",
+      "domain": "die-cut cardboard game figure",
+      "tags": [
+        "medieval-visual-atlas",
+        "tabletop-illustration-studies",
+        "die-cut-cardboard-game-figure"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-205 punch-out cardboard standee die-cut cardboard game figure die-cut cardboard 10. tabletop illustration studies tabletop illustration studies die-cut cardboard game figure pack_23 medieval visual atlas tabletop-illustration-studies medieval-visual-atlas tabletop-illustration-studies die-cut-cardboard-game-figure"
+    },
+    {
+      "id": "SP23-206",
+      "name": "Gamebook Ink Illustration",
+      "styleAnchors": [
+        "Gamebook Ink Illustration",
+        "choose-your-path book ink art",
+        "full-page ink"
+      ],
+      "ref": "pack_23/SP23-206.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "tabletop-illustration-studies",
+      "categoryName": "10. Tabletop Illustration Studies",
+      "domain": "choose-your-path book ink art",
+      "tags": [
+        "medieval-visual-atlas",
+        "tabletop-illustration-studies",
+        "choose-your-path-book-ink-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-206 gamebook ink illustration choose-your-path book ink art full-page ink 10. tabletop illustration studies tabletop illustration studies choose-your-path book ink art pack_23 medieval visual atlas tabletop-illustration-studies medieval-visual-atlas tabletop-illustration-studies choose-your-path-book-ink-art"
+    },
+    {
+      "id": "SP23-207",
+      "name": "Character-Sheet Margin Sketch",
+      "styleAnchors": ["Character-Sheet Margin Sketch", "player doodle portrait", "player doodle"],
+      "ref": "pack_23/SP23-207.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "tabletop-illustration-studies",
+      "categoryName": "10. Tabletop Illustration Studies",
+      "domain": "player doodle portrait",
+      "tags": ["medieval-visual-atlas", "tabletop-illustration-studies", "player-doodle-portrait"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-207 character-sheet margin sketch player doodle portrait player doodle 10. tabletop illustration studies tabletop illustration studies player doodle portrait pack_23 medieval visual atlas tabletop-illustration-studies medieval-visual-atlas tabletop-illustration-studies player-doodle-portrait"
+    },
+    {
+      "id": "SP23-208",
+      "name": "Game-Night Table Still Life",
+      "styleAnchors": [
+        "Game-Night Table Still Life",
+        "photographed tabletop session",
+        "wooden table"
+      ],
+      "ref": "pack_23/SP23-208.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "tabletop-illustration-studies",
+      "categoryName": "10. Tabletop Illustration Studies",
+      "domain": "photographed tabletop session",
+      "tags": [
+        "medieval-visual-atlas",
+        "tabletop-illustration-studies",
+        "photographed-tabletop-session"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-208 game-night table still life photographed tabletop session wooden table 10. tabletop illustration studies tabletop illustration studies photographed tabletop session pack_23 medieval visual atlas tabletop-illustration-studies medieval-visual-atlas tabletop-illustration-studies photographed-tabletop-session"
+    },
+    {
+      "id": "SP23-209",
+      "name": "Rulebook Chapter Splash",
+      "styleAnchors": [
+        "Rulebook Chapter Splash",
+        "full-bleed rulebook opener art",
+        "full-bleed scene"
+      ],
+      "ref": "pack_23/SP23-209.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "tabletop-illustration-studies",
+      "categoryName": "10. Tabletop Illustration Studies",
+      "domain": "full-bleed rulebook opener art",
+      "tags": [
+        "medieval-visual-atlas",
+        "tabletop-illustration-studies",
+        "full-bleed-rulebook-opener-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-209 rulebook chapter splash full-bleed rulebook opener art full-bleed scene 10. tabletop illustration studies tabletop illustration studies full-bleed rulebook opener art pack_23 medieval visual atlas tabletop-illustration-studies medieval-visual-atlas tabletop-illustration-studies full-bleed-rulebook-opener-art"
+    },
+    {
+      "id": "SP23-210",
+      "name": "Unpainted Pewter Miniature",
+      "styleAnchors": ["Unpainted Pewter Miniature", "bare metal tabletop figure", "bare pewter"],
+      "ref": "pack_23/SP23-210.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "tabletop-illustration-studies",
+      "categoryName": "10. Tabletop Illustration Studies",
+      "domain": "bare metal tabletop figure",
+      "tags": [
+        "medieval-visual-atlas",
+        "tabletop-illustration-studies",
+        "bare-metal-tabletop-figure"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-210 unpainted pewter miniature bare metal tabletop figure bare pewter 10. tabletop illustration studies tabletop illustration studies bare metal tabletop figure pack_23 medieval visual atlas tabletop-illustration-studies medieval-visual-atlas tabletop-illustration-studies bare-metal-tabletop-figure"
+    },
+    {
+      "id": "SP23-211",
+      "name": "Fantasy Calendar Oil Painting",
+      "styleAnchors": [
+        "Fantasy Calendar Oil Painting",
+        "eighties fantasy calendar art",
+        "lush oil"
+      ],
+      "ref": "pack_23/SP23-211.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "tabletop-illustration-studies",
+      "categoryName": "10. Tabletop Illustration Studies",
+      "domain": "eighties fantasy calendar art",
+      "tags": [
+        "medieval-visual-atlas",
+        "tabletop-illustration-studies",
+        "eighties-fantasy-calendar-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-211 fantasy calendar oil painting eighties fantasy calendar art lush oil 10. tabletop illustration studies tabletop illustration studies eighties fantasy calendar art pack_23 medieval visual atlas tabletop-illustration-studies medieval-visual-atlas tabletop-illustration-studies eighties-fantasy-calendar-art"
+    },
+    {
+      "id": "SP23-212",
+      "name": "Game-Master Screen Panorama",
+      "styleAnchors": [
+        "Game-Master Screen Panorama",
+        "wide folding screen illustration",
+        "panoramic painting"
+      ],
+      "ref": "pack_23/SP23-212.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "tabletop-illustration-studies",
+      "categoryName": "10. Tabletop Illustration Studies",
+      "domain": "wide folding screen illustration",
+      "tags": [
+        "medieval-visual-atlas",
+        "tabletop-illustration-studies",
+        "wide-folding-screen-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-212 game-master screen panorama wide folding screen illustration panoramic painting 10. tabletop illustration studies tabletop illustration studies wide folding screen illustration pack_23 medieval visual atlas tabletop-illustration-studies medieval-visual-atlas tabletop-illustration-studies wide-folding-screen-illustration"
     },
     {
       "id": "SP23-047",
@@ -3036,6 +3628,254 @@
       "searchableText": "sp23-052 fluid geometric cel rendering 11. modern visual techniques modern visual techniques pack_23 medieval visual atlas modern-visual-techniques medieval-visual-atlas modern-visual-techniques"
     },
     {
+      "id": "SP23-213",
+      "name": "Soft Pastel Toy-Town 3D",
+      "styleAnchors": ["Soft Pastel Toy-Town 3D", "rounded cozy pastel game 3d", "pastel palette"],
+      "ref": "pack_23/SP23-213.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "modern-visual-techniques",
+      "categoryName": "11. Modern Visual Techniques",
+      "domain": "rounded cozy pastel game 3d",
+      "tags": ["medieval-visual-atlas", "modern-visual-techniques", "rounded-cozy-pastel-game-3d"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-213 soft pastel toy-town 3d rounded cozy pastel game 3d pastel palette 11. modern visual techniques modern visual techniques rounded cozy pastel game 3d pack_23 medieval visual atlas modern-visual-techniques medieval-visual-atlas modern-visual-techniques rounded-cozy-pastel-game-3d"
+    },
+    {
+      "id": "SP23-214",
+      "name": "Anime Toon-Ramp 3D",
+      "styleAnchors": ["Anime Toon-Ramp 3D", "anime-shaded real-time 3d", "toon ramp shading"],
+      "ref": "pack_23/SP23-214.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "modern-visual-techniques",
+      "categoryName": "11. Modern Visual Techniques",
+      "domain": "anime-shaded real-time 3d",
+      "tags": ["medieval-visual-atlas", "modern-visual-techniques", "anime-shaded-real-time-3d"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-214 anime toon-ramp 3d anime-shaded real-time 3d toon ramp shading 11. modern visual techniques modern visual techniques anime-shaded real-time 3d pack_23 medieval visual atlas modern-visual-techniques medieval-visual-atlas modern-visual-techniques anime-shaded-real-time-3d"
+    },
+    {
+      "id": "SP23-215",
+      "name": "Watercolor-Shaded 3D",
+      "styleAnchors": ["Watercolor-Shaded 3D", "real-time watercolor shader", "watercolor shader"],
+      "ref": "pack_23/SP23-215.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "modern-visual-techniques",
+      "categoryName": "11. Modern Visual Techniques",
+      "domain": "real-time watercolor shader",
+      "tags": ["medieval-visual-atlas", "modern-visual-techniques", "real-time-watercolor-shader"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-215 watercolor-shaded 3d real-time watercolor shader watercolor shader 11. modern visual techniques modern visual techniques real-time watercolor shader pack_23 medieval visual atlas modern-visual-techniques medieval-visual-atlas modern-visual-techniques real-time-watercolor-shader"
+    },
+    {
+      "id": "SP23-216",
+      "name": "Ink-Wash Shaded 3D",
+      "styleAnchors": ["Ink-Wash Shaded 3D", "sumi ink shader render", "brush outlines"],
+      "ref": "pack_23/SP23-216.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "modern-visual-techniques",
+      "categoryName": "11. Modern Visual Techniques",
+      "domain": "sumi ink shader render",
+      "tags": ["medieval-visual-atlas", "modern-visual-techniques", "sumi-ink-shader-render"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-216 ink-wash shaded 3d sumi ink shader render brush outlines 11. modern visual techniques modern visual techniques sumi ink shader render pack_23 medieval visual atlas modern-visual-techniques medieval-visual-atlas modern-visual-techniques sumi-ink-shader-render"
+    },
+    {
+      "id": "SP23-217",
+      "name": "Clear-Line 3D Render",
+      "styleAnchors": ["Clear-Line 3D Render", "ligne claire shader 3d", "even black outlines"],
+      "ref": "pack_23/SP23-217.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "modern-visual-techniques",
+      "categoryName": "11. Modern Visual Techniques",
+      "domain": "ligne claire shader 3d",
+      "tags": ["medieval-visual-atlas", "modern-visual-techniques", "ligne-claire-shader-3d"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-217 clear-line 3d render ligne claire shader 3d even black outlines 11. modern visual techniques modern visual techniques ligne claire shader 3d pack_23 medieval visual atlas modern-visual-techniques medieval-visual-atlas modern-visual-techniques ligne-claire-shader-3d"
+    },
+    {
+      "id": "SP23-218",
+      "name": "Glowing Forest Silhouette Layers",
+      "styleAnchors": [
+        "Glowing Forest Silhouette Layers",
+        "backlit silhouette platformer art",
+        "layered silhouettes"
+      ],
+      "ref": "pack_23/SP23-218.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "modern-visual-techniques",
+      "categoryName": "11. Modern Visual Techniques",
+      "domain": "backlit silhouette platformer art",
+      "tags": [
+        "medieval-visual-atlas",
+        "modern-visual-techniques",
+        "backlit-silhouette-platformer-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-218 glowing forest silhouette layers backlit silhouette platformer art layered silhouettes 11. modern visual techniques modern visual techniques backlit silhouette platformer art pack_23 medieval visual atlas modern-visual-techniques medieval-visual-atlas modern-visual-techniques backlit-silhouette-platformer-art"
+    },
+    {
+      "id": "SP23-219",
+      "name": "Cozy Isometric Room Render",
+      "styleAnchors": [
+        "Cozy Isometric Room Render",
+        "small isometric interior render",
+        "isometric cut-away"
+      ],
+      "ref": "pack_23/SP23-219.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "modern-visual-techniques",
+      "categoryName": "11. Modern Visual Techniques",
+      "domain": "small isometric interior render",
+      "tags": [
+        "medieval-visual-atlas",
+        "modern-visual-techniques",
+        "small-isometric-interior-render"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-219 cozy isometric room render small isometric interior render isometric cut-away 11. modern visual techniques modern visual techniques small isometric interior render pack_23 medieval visual atlas modern-visual-techniques medieval-visual-atlas modern-visual-techniques small-isometric-interior-render"
+    },
+    {
+      "id": "SP23-220",
+      "name": "One-Bit Dithered 3D",
+      "styleAnchors": ["One-Bit Dithered 3D", "monochrome dithered 3d shader", "one-bit dither"],
+      "ref": "pack_23/SP23-220.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "modern-visual-techniques",
+      "categoryName": "11. Modern Visual Techniques",
+      "domain": "monochrome dithered 3d shader",
+      "tags": [
+        "medieval-visual-atlas",
+        "modern-visual-techniques",
+        "monochrome-dithered-3d-shader"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-220 one-bit dithered 3d monochrome dithered 3d shader one-bit dither 11. modern visual techniques modern visual techniques monochrome dithered 3d shader pack_23 medieval visual atlas modern-visual-techniques medieval-visual-atlas modern-visual-techniques monochrome-dithered-3d-shader"
+    },
+    {
+      "id": "SP23-221",
+      "name": "Rotoscoped Flat-Color Motion",
+      "styleAnchors": [
+        "Rotoscoped Flat-Color Motion",
+        "traced live-action animation frame",
+        "traced motion"
+      ],
+      "ref": "pack_23/SP23-221.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "modern-visual-techniques",
+      "categoryName": "11. Modern Visual Techniques",
+      "domain": "traced live-action animation frame",
+      "tags": [
+        "medieval-visual-atlas",
+        "modern-visual-techniques",
+        "traced-live-action-animation-frame"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-221 rotoscoped flat-color motion traced live-action animation frame traced motion 11. modern visual techniques modern visual techniques traced live-action animation frame pack_23 medieval visual atlas modern-visual-techniques medieval-visual-atlas modern-visual-techniques traced-live-action-animation-frame"
+    },
+    {
+      "id": "SP23-222",
+      "name": "Unlit Gradient Low-Poly",
+      "styleAnchors": [
+        "Unlit Gradient Low-Poly",
+        "flat unlit gradient 3d landscapes",
+        "unlit polygons"
+      ],
+      "ref": "pack_23/SP23-222.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "modern-visual-techniques",
+      "categoryName": "11. Modern Visual Techniques",
+      "domain": "flat unlit gradient 3d landscapes",
+      "tags": [
+        "medieval-visual-atlas",
+        "modern-visual-techniques",
+        "flat-unlit-gradient-3d-landscapes"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-222 unlit gradient low-poly flat unlit gradient 3d landscapes unlit polygons 11. modern visual techniques modern visual techniques flat unlit gradient 3d landscapes pack_23 medieval visual atlas modern-visual-techniques medieval-visual-atlas modern-visual-techniques flat-unlit-gradient-3d-landscapes"
+    },
+    {
+      "id": "SP23-223",
+      "name": "2D Skeletal Cutout Character",
+      "styleAnchors": ["2D Skeletal Cutout Character", "jointed flat 2d rig art", "flat parts"],
+      "ref": "pack_23/SP23-223.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "modern-visual-techniques",
+      "categoryName": "11. Modern Visual Techniques",
+      "domain": "jointed flat 2d rig art",
+      "tags": ["medieval-visual-atlas", "modern-visual-techniques", "jointed-flat-2d-rig-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-223 2d skeletal cutout character jointed flat 2d rig art flat parts 11. modern visual techniques modern visual techniques jointed flat 2d rig art pack_23 medieval visual atlas modern-visual-techniques medieval-visual-atlas modern-visual-techniques jointed-flat-2d-rig-art"
+    },
+    {
+      "id": "SP23-224",
+      "name": "Stylized Magic VFX Burst",
+      "styleAnchors": [
+        "Stylized Magic VFX Burst",
+        "hand-crafted game spell effect",
+        "stylized spell shapes"
+      ],
+      "ref": "pack_23/SP23-224.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "modern-visual-techniques",
+      "categoryName": "11. Modern Visual Techniques",
+      "domain": "hand-crafted game spell effect",
+      "tags": [
+        "medieval-visual-atlas",
+        "modern-visual-techniques",
+        "hand-crafted-game-spell-effect"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-224 stylized magic vfx burst hand-crafted game spell effect stylized spell shapes 11. modern visual techniques modern visual techniques hand-crafted game spell effect pack_23 medieval visual atlas modern-visual-techniques medieval-visual-atlas modern-visual-techniques hand-crafted-game-spell-effect"
+    },
+    {
+      "id": "SP23-225",
+      "name": "Crosshatch-Shaded 3D",
+      "styleAnchors": ["Crosshatch-Shaded 3D", "hatching shader 3d render", "crosshatch shader"],
+      "ref": "pack_23/SP23-225.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "modern-visual-techniques",
+      "categoryName": "11. Modern Visual Techniques",
+      "domain": "hatching shader 3d render",
+      "tags": ["medieval-visual-atlas", "modern-visual-techniques", "hatching-shader-3d-render"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-225 crosshatch-shaded 3d hatching shader 3d render crosshatch shader 11. modern visual techniques modern visual techniques hatching shader 3d render pack_23 medieval visual atlas modern-visual-techniques medieval-visual-atlas modern-visual-techniques hatching-shader-3d-render"
+    },
+    {
+      "id": "SP23-226",
+      "name": "Wind-Swept Stylized Grassland",
+      "styleAnchors": [
+        "Wind-Swept Stylized Grassland",
+        "painterly wind grass real-time scene",
+        "wind-swept grass"
+      ],
+      "ref": "pack_23/SP23-226.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "modern-visual-techniques",
+      "categoryName": "11. Modern Visual Techniques",
+      "domain": "painterly wind grass real-time scene",
+      "tags": [
+        "medieval-visual-atlas",
+        "modern-visual-techniques",
+        "painterly-wind-grass-real-time-scene"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-226 wind-swept stylized grassland painterly wind grass real-time scene wind-swept grass 11. modern visual techniques modern visual techniques painterly wind grass real-time scene pack_23 medieval visual atlas modern-visual-techniques medieval-visual-atlas modern-visual-techniques painterly-wind-grass-real-time-scene"
+    },
+    {
       "id": "SP23-053",
       "name": "Opaque Plane and Raster Accents",
       "ref": "pack_23/SP23-053.yaml",
@@ -3106,7 +3946,295 @@
       "tags": ["medieval-visual-atlas", "hybrid-visual-studies"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp23-058 shallow relief and fine marks 12. hybrid visual studies hybrid visual studies pack_23 medieval visual atlas hybrid-visual-studies medieval-visual-atlas hybrid-visual-studies"
+    },
+    {
+      "id": "SP23-227",
+      "name": "Pixel Figure in Oil Painting",
+      "styleAnchors": [
+        "Pixel Figure in Oil Painting",
+        "pixel sprite inside classical oil",
+        "pixel sprite"
+      ],
+      "ref": "pack_23/SP23-227.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "hybrid-visual-studies",
+      "categoryName": "12. Hybrid Visual Studies",
+      "domain": "pixel sprite inside classical oil",
+      "tags": [
+        "medieval-visual-atlas",
+        "hybrid-visual-studies",
+        "pixel-sprite-inside-classical-oil"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-227 pixel figure in oil painting pixel sprite inside classical oil pixel sprite 12. hybrid visual studies hybrid visual studies pixel sprite inside classical oil pack_23 medieval visual atlas hybrid-visual-studies medieval-visual-atlas hybrid-visual-studies pixel-sprite-inside-classical-oil"
+    },
+    {
+      "id": "SP23-228",
+      "name": "Ink Creatures on Old Photograph",
+      "styleAnchors": [
+        "Ink Creatures on Old Photograph",
+        "drawn creatures on vintage photos",
+        "sepia photo"
+      ],
+      "ref": "pack_23/SP23-228.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "hybrid-visual-studies",
+      "categoryName": "12. Hybrid Visual Studies",
+      "domain": "drawn creatures on vintage photos",
+      "tags": [
+        "medieval-visual-atlas",
+        "hybrid-visual-studies",
+        "drawn-creatures-on-vintage-photos"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-228 ink creatures on old photograph drawn creatures on vintage photos sepia photo 12. hybrid visual studies hybrid visual studies drawn creatures on vintage photos pack_23 medieval visual atlas hybrid-visual-studies medieval-visual-atlas hybrid-visual-studies drawn-creatures-on-vintage-photos"
+    },
+    {
+      "id": "SP23-229",
+      "name": "Neon-Lit Woodcut",
+      "styleAnchors": ["Neon-Lit Woodcut", "woodcut with neon color", "black woodcut"],
+      "ref": "pack_23/SP23-229.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "hybrid-visual-studies",
+      "categoryName": "12. Hybrid Visual Studies",
+      "domain": "woodcut with neon color",
+      "tags": ["medieval-visual-atlas", "hybrid-visual-studies", "woodcut-with-neon-color"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-229 neon-lit woodcut woodcut with neon color black woodcut 12. hybrid visual studies hybrid visual studies woodcut with neon color pack_23 medieval visual atlas hybrid-visual-studies medieval-visual-atlas hybrid-visual-studies woodcut-with-neon-color"
+    },
+    {
+      "id": "SP23-230",
+      "name": "Illuminated Futurism",
+      "styleAnchors": [
+        "Illuminated Futurism",
+        "medieval illumination of future tech",
+        "medieval miniature"
+      ],
+      "ref": "pack_23/SP23-230.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "hybrid-visual-studies",
+      "categoryName": "12. Hybrid Visual Studies",
+      "domain": "medieval illumination of future tech",
+      "tags": [
+        "medieval-visual-atlas",
+        "hybrid-visual-studies",
+        "medieval-illumination-of-future-tech"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-230 illuminated futurism medieval illumination of future tech medieval miniature 12. hybrid visual studies hybrid visual studies medieval illumination of future tech pack_23 medieval visual atlas hybrid-visual-studies medieval-visual-atlas hybrid-visual-studies medieval-illumination-of-future-tech"
+    },
+    {
+      "id": "SP23-231",
+      "name": "Watercolor Over Wireframe",
+      "styleAnchors": [
+        "Watercolor Over Wireframe",
+        "paint washes over 3d wireframe",
+        "wireframe mesh"
+      ],
+      "ref": "pack_23/SP23-231.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "hybrid-visual-studies",
+      "categoryName": "12. Hybrid Visual Studies",
+      "domain": "paint washes over 3d wireframe",
+      "tags": ["medieval-visual-atlas", "hybrid-visual-studies", "paint-washes-over-3d-wireframe"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-231 watercolor over wireframe paint washes over 3d wireframe wireframe mesh 12. hybrid visual studies hybrid visual studies paint washes over 3d wireframe pack_23 medieval visual atlas hybrid-visual-studies medieval-visual-atlas hybrid-visual-studies paint-washes-over-3d-wireframe"
+    },
+    {
+      "id": "SP23-232",
+      "name": "Cross-Stitch Pixel Sprite",
+      "styleAnchors": [
+        "Cross-Stitch Pixel Sprite",
+        "embroidered pixel character",
+        "cross stitches"
+      ],
+      "ref": "pack_23/SP23-232.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "hybrid-visual-studies",
+      "categoryName": "12. Hybrid Visual Studies",
+      "domain": "embroidered pixel character",
+      "tags": ["medieval-visual-atlas", "hybrid-visual-studies", "embroidered-pixel-character"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-232 cross-stitch pixel sprite embroidered pixel character cross stitches 12. hybrid visual studies hybrid visual studies embroidered pixel character pack_23 medieval visual atlas hybrid-visual-studies medieval-visual-atlas hybrid-visual-studies embroidered-pixel-character"
+    },
+    {
+      "id": "SP23-233",
+      "name": "Creature Patent Drawing",
+      "styleAnchors": [
+        "Creature Patent Drawing",
+        "victorian patent diagram of a creature",
+        "patent diagram"
+      ],
+      "ref": "pack_23/SP23-233.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "hybrid-visual-studies",
+      "categoryName": "12. Hybrid Visual Studies",
+      "domain": "victorian patent diagram of a creature",
+      "tags": [
+        "medieval-visual-atlas",
+        "hybrid-visual-studies",
+        "victorian-patent-diagram-of-a-creature"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-233 creature patent drawing victorian patent diagram of a creature patent diagram 12. hybrid visual studies hybrid visual studies victorian patent diagram of a creature pack_23 medieval visual atlas hybrid-visual-studies medieval-visual-atlas hybrid-visual-studies victorian-patent-diagram-of-a-creature"
+    },
+    {
+      "id": "SP23-234",
+      "name": "Glitched Tapestry Weave",
+      "styleAnchors": [
+        "Glitched Tapestry Weave",
+        "medieval tapestry with digital glitch",
+        "woven tapestry"
+      ],
+      "ref": "pack_23/SP23-234.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "hybrid-visual-studies",
+      "categoryName": "12. Hybrid Visual Studies",
+      "domain": "medieval tapestry with digital glitch",
+      "tags": [
+        "medieval-visual-atlas",
+        "hybrid-visual-studies",
+        "medieval-tapestry-with-digital-glitch"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-234 glitched tapestry weave medieval tapestry with digital glitch woven tapestry 12. hybrid visual studies hybrid visual studies medieval tapestry with digital glitch pack_23 medieval visual atlas hybrid-visual-studies medieval-visual-atlas hybrid-visual-studies medieval-tapestry-with-digital-glitch"
+    },
+    {
+      "id": "SP23-235",
+      "name": "Clay-Pressed Pixel Sprites",
+      "styleAnchors": [
+        "Clay-Pressed Pixel Sprites",
+        "sprites made of pressed clay cubes",
+        "clay squares"
+      ],
+      "ref": "pack_23/SP23-235.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "hybrid-visual-studies",
+      "categoryName": "12. Hybrid Visual Studies",
+      "domain": "sprites made of pressed clay cubes",
+      "tags": [
+        "medieval-visual-atlas",
+        "hybrid-visual-studies",
+        "sprites-made-of-pressed-clay-cubes"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-235 clay-pressed pixel sprites sprites made of pressed clay cubes clay squares 12. hybrid visual studies hybrid visual studies sprites made of pressed clay cubes pack_23 medieval visual atlas hybrid-visual-studies medieval-visual-atlas hybrid-visual-studies sprites-made-of-pressed-clay-cubes"
+    },
+    {
+      "id": "SP23-236",
+      "name": "Ink Wash with Gold-Leaf Clouds",
+      "styleAnchors": [
+        "Ink Wash with Gold-Leaf Clouds",
+        "sumi ink with gilded cloud bands",
+        "ink wash"
+      ],
+      "ref": "pack_23/SP23-236.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "hybrid-visual-studies",
+      "categoryName": "12. Hybrid Visual Studies",
+      "domain": "sumi ink with gilded cloud bands",
+      "tags": [
+        "medieval-visual-atlas",
+        "hybrid-visual-studies",
+        "sumi-ink-with-gilded-cloud-bands"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-236 ink wash with gold-leaf clouds sumi ink with gilded cloud bands ink wash 12. hybrid visual studies hybrid visual studies sumi ink with gilded cloud bands pack_23 medieval visual atlas hybrid-visual-studies medieval-visual-atlas hybrid-visual-studies sumi-ink-with-gilded-cloud-bands"
+    },
+    {
+      "id": "SP23-237",
+      "name": "Real Object in Cartoon World",
+      "styleAnchors": [
+        "Real Object in Cartoon World",
+        "photoreal object inside cartoon scene",
+        "flat cartoon scene"
+      ],
+      "ref": "pack_23/SP23-237.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "hybrid-visual-studies",
+      "categoryName": "12. Hybrid Visual Studies",
+      "domain": "photoreal object inside cartoon scene",
+      "tags": [
+        "medieval-visual-atlas",
+        "hybrid-visual-studies",
+        "photoreal-object-inside-cartoon-scene"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-237 real object in cartoon world photoreal object inside cartoon scene flat cartoon scene 12. hybrid visual studies hybrid visual studies photoreal object inside cartoon scene pack_23 medieval visual atlas hybrid-visual-studies medieval-visual-atlas hybrid-visual-studies photoreal-object-inside-cartoon-scene"
+    },
+    {
+      "id": "SP23-238",
+      "name": "Graphite Sketch with Glow Paint",
+      "styleAnchors": [
+        "Graphite Sketch with Glow Paint",
+        "pencil drawing with luminous paint",
+        "graphite sketch"
+      ],
+      "ref": "pack_23/SP23-238.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "hybrid-visual-studies",
+      "categoryName": "12. Hybrid Visual Studies",
+      "domain": "pencil drawing with luminous paint",
+      "tags": [
+        "medieval-visual-atlas",
+        "hybrid-visual-studies",
+        "pencil-drawing-with-luminous-paint"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-238 graphite sketch with glow paint pencil drawing with luminous paint graphite sketch 12. hybrid visual studies hybrid visual studies pencil drawing with luminous paint pack_23 medieval visual atlas hybrid-visual-studies medieval-visual-atlas hybrid-visual-studies pencil-drawing-with-luminous-paint"
+    },
+    {
+      "id": "SP23-239",
+      "name": "Rendered Figure in Manuscript Margin",
+      "styleAnchors": [
+        "Rendered Figure in Manuscript Margin",
+        "3d render in medieval margin",
+        "manuscript margin"
+      ],
+      "ref": "pack_23/SP23-239.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "hybrid-visual-studies",
+      "categoryName": "12. Hybrid Visual Studies",
+      "domain": "3d render in medieval margin",
+      "tags": ["medieval-visual-atlas", "hybrid-visual-studies", "3d-render-in-medieval-margin"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-239 rendered figure in manuscript margin 3d render in medieval margin manuscript margin 12. hybrid visual studies hybrid visual studies 3d render in medieval margin pack_23 medieval visual atlas hybrid-visual-studies medieval-visual-atlas hybrid-visual-studies 3d-render-in-medieval-margin"
+    },
+    {
+      "id": "SP23-240",
+      "name": "Charcoal Figure with Pixel Glitch",
+      "styleAnchors": [
+        "Charcoal Figure with Pixel Glitch",
+        "charcoal drawing breaking into pixels",
+        "smudged charcoal"
+      ],
+      "ref": "pack_23/SP23-240.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "hybrid-visual-studies",
+      "categoryName": "12. Hybrid Visual Studies",
+      "domain": "charcoal drawing breaking into pixels",
+      "tags": [
+        "medieval-visual-atlas",
+        "hybrid-visual-studies",
+        "charcoal-drawing-breaking-into-pixels"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-240 charcoal figure with pixel glitch charcoal drawing breaking into pixels smudged charcoal 12. hybrid visual studies hybrid visual studies charcoal drawing breaking into pixels pack_23 medieval visual atlas hybrid-visual-studies medieval-visual-atlas hybrid-visual-studies charcoal-drawing-breaking-into-pixels"
     }
   ],
-  "totalPresetCount": 182
+  "totalPresetCount": 240
 }

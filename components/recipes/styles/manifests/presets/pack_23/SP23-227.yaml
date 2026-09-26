@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP23-227
+packId: pack_23
+name: Pixel Figure in Oil Painting
+styleAnchors:
+  - Pixel Figure in Oil Painting
+  - pixel sprite inside classical oil
+  - pixel sprite
+displayName: Pixel Figure in Oil Painting
+category: 12. Hybrid Visual Studies
+domain: pixel sprite inside classical oil
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - hybrid-visual-studies
+  - pixel-in-oil
+  - hybrid-media
+  - portable-style-study
+visualDna:
+  aesthetic: 'Pixel figure in oil painting: a crisp low-resolution pixel sprite placed inside a rich classical oil painting, the two media kept sharply distinct.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; render the main figure as a crisp pixel sprite and everything around it as classical oil painting.
+  color_and_tone: Warm varnished oil tones around a bright pixel palette.
+  lighting_and_shadow: Old-master chiaroscuro in the painting, flat sprite light.
+  texture_and_material: Oil brushwork and craquelure against hard pixel edges.
+  camera_and_composition: Classical composition with the sprite as focal point.
+  atmosphere_and_mood: Keep the requested mood with witty anachronism, kept consistent across the whole image.
+  rendering_and_quality: Both media fully convincing side by side, kept consistent across the whole image.
+  creative_brief: "Pixel figure in oil painting: a crisp low-resolution pixel sprite placed inside a rich classical oil painting, the two media kept sharply distinct. Carry it through pixel sprite, classical oil, hard contrast of media, craquelure. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: pixel sprite; classical oil; hard contrast of media; craquelure
+avoidRules:
+  - blending the two media into one generic finish
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: blending the two media into one generic finish, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: hybrid-visual-studies
+  categoryName: 12. Hybrid Visual Studies
+  tags:
+    - curation-v2
+    - hybrid-visual-studies
+    - pixel-in-oil
+    - hybrid-media
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: pixel sprite inside classical oil

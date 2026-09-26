@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP23-237
+packId: pack_23
+name: Real Object in Cartoon World
+styleAnchors:
+  - Real Object in Cartoon World
+  - photoreal object inside cartoon scene
+  - flat cartoon scene
+displayName: Real Object in Cartoon World
+category: 12. Hybrid Visual Studies
+domain: photoreal object inside cartoon scene
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - hybrid-visual-studies
+  - real-in-cartoon
+  - hybrid-media
+  - portable-style-study
+visualDna:
+  aesthetic: 'Real object in cartoon world: a flat hand-drawn cartoon scene where one single object is a photorealistic real thing, lit and textured like a photograph.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; draw everything as flat cartoon except one photorealistic object.
+  color_and_tone: Bright flat cartoon colors with one realistic object.
+  lighting_and_shadow: Flat cartoon light, real photographic light on the object.
+  texture_and_material: Clean cartoon lines against real material texture, kept consistent across the whole image.
+  camera_and_composition: Cartoon composition with the real object as focus.
+  atmosphere_and_mood: Keep the requested mood with surreal comic dissonance.
+  rendering_and_quality: Both styles fully convincing, kept consistent across the whole image.
+  creative_brief: "Real object in cartoon world: a flat hand-drawn cartoon scene where one single object is a photorealistic real thing, lit and textured like a photograph. Carry it through flat cartoon scene, one photoreal object, media clash, focal object. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: flat cartoon scene; one photoreal object; media clash; focal object
+avoidRules:
+  - blending the two media into one generic finish
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: blending the two media into one generic finish, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: hybrid-visual-studies
+  categoryName: 12. Hybrid Visual Studies
+  tags:
+    - curation-v2
+    - hybrid-visual-studies
+    - real-in-cartoon
+    - hybrid-media
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: photoreal object inside cartoon scene

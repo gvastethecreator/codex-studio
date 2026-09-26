@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP23-189
+packId: pack_23
+name: Sprites on Painted Diorama
+styleAnchors:
+  - Sprites on Painted Diorama
+  - pixel sprites in painterly 3d diorama
+  - pixel sprites
+displayName: Sprites on Painted Diorama
+category: 9. Painted RPG & Tactics
+domain: pixel sprites in painterly 3d diorama
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - painted-rpg-and-tactics
+  - sprite-diorama
+  - painted-rpg
+  - portable-style-study
+visualDna:
+  aesthetic: 'Sprites on painted diorama: crisp pixel-art characters standing inside a soft painterly 3D miniature world with tilt-shift depth of field, bloom and warm light.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; render characters as crisp pixel sprites inside a soft 3D miniature world.
+  color_and_tone: Warm glowing lights and rich painterly environment colors.
+  lighting_and_shadow: Soft bloom, point lights and shallow depth blur.
+  texture_and_material: Pixel sprites against painted 3D textures, kept consistent across the whole image.
+  camera_and_composition: Elevated three-quarter diorama view with blurred edges, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with nostalgic storybook warmth.
+  rendering_and_quality: Crisp sprites contrasted with soft 3D depth, kept consistent across the whole image.
+  creative_brief: "Sprites on painted diorama: crisp pixel-art characters standing inside a soft painterly 3D miniature world with tilt-shift depth of field, bloom and warm light. Carry it through pixel sprites, painted 3D diorama, depth blur, warm bloom. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: pixel sprites; painted 3D diorama; depth blur; warm bloom
+avoidRules:
+  - interface, menus or health bars
+  - existing game characters or logos
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: interface, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: painted-rpg-and-tactics
+  categoryName: 9. Painted RPG & Tactics
+  tags:
+    - curation-v2
+    - painted-rpg-and-tactics
+    - sprite-diorama
+    - painted-rpg
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: pixel sprites in painterly 3d diorama

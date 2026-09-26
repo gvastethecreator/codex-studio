@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-220
+packId: pack_23
+name: One-Bit Dithered 3D
+styleAnchors:
+  - One-Bit Dithered 3D
+  - monochrome dithered 3d shader
+  - one-bit dither
+displayName: One-Bit Dithered 3D
+category: 11. Modern Visual Techniques
+domain: monochrome dithered 3d shader
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - modern-visual-techniques
+  - one-bit-3d
+  - modern-game-render
+  - portable-style-study
+visualDna:
+  aesthetic: 'One-bit dithered 3D: 3D scenes rendered in only black and white pixels, shading made of ordered dither, like an old desktop engraving brought to life.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; render the subject in 3D using only black and white dithered pixels.
+  color_and_tone: Pure black and white, or two tinted tones.
+  lighting_and_shadow: Dither density shows light and shadow, kept consistent across the whole image.
+  texture_and_material: Crisp ordered dither patterns on 3D surfaces, kept consistent across the whole image.
+  camera_and_composition: First-person or cinematic 3D view, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with cold eerie precision.
+  rendering_and_quality: Crisp one-bit dithering without gray, kept consistent across the whole image.
+  creative_brief: "One-bit dithered 3D: 3D scenes rendered in only black and white pixels, shading made of ordered dither, like an old desktop engraving brought to life. Carry it through one-bit dither, black and white, 3D scene, ordered pattern. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: one-bit dither; black and white; 3D scene; ordered pattern
+avoidRules:
+  - grey tones
+  - interface or HUD
+  - existing game characters or logos
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: grey tones, interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: modern-visual-techniques
+  categoryName: 11. Modern Visual Techniques
+  tags:
+    - curation-v2
+    - modern-visual-techniques
+    - one-bit-3d
+    - modern-game-render
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: monochrome dithered 3d shader

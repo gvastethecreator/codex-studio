@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP23-238
+packId: pack_23
+name: Graphite Sketch with Glow Paint
+styleAnchors:
+  - Graphite Sketch with Glow Paint
+  - pencil drawing with luminous paint
+  - graphite sketch
+displayName: Graphite Sketch with Glow Paint
+category: 12. Hybrid Visual Studies
+domain: pencil drawing with luminous paint
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - hybrid-visual-studies
+  - graphite-glow
+  - hybrid-media
+  - portable-style-study
+visualDna:
+  aesthetic: 'Graphite sketch with glow paint: a grey pencil drawing where only the magical or luminous parts are painted in bright glowing color that seems to shine off the paper.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; draw the subject in graphite and paint only its light sources in glowing color.
+  color_and_tone: Grey graphite with luminous cyan, gold or magenta accents.
+  lighting_and_shadow: Glow spilling onto nearby pencil lines, kept consistent across the whole image.
+  texture_and_material: Pencil grain, smudges and glossy luminous paint, kept consistent across the whole image.
+  camera_and_composition: Sketch composition with a glowing focal point, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with quiet magical reveal.
+  rendering_and_quality: Clean pencil with convincing glow, kept consistent across the whole image.
+  creative_brief: "Graphite sketch with glow paint: a grey pencil drawing where only the magical or luminous parts are painted in bright glowing color that seems to shine off the paper. Carry it through graphite sketch, glowing paint accents, light spill, paper grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: graphite sketch; glowing paint accents; light spill; paper grain
+avoidRules:
+  - blending the two media into one generic finish
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: blending the two media into one generic finish, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: hybrid-visual-studies
+  categoryName: 12. Hybrid Visual Studies
+  tags:
+    - curation-v2
+    - hybrid-visual-studies
+    - graphite-glow
+    - hybrid-media
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: pencil drawing with luminous paint

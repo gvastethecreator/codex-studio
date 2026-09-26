@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-184
+packId: pack_23
+name: Parchment Unit Portrait Card
+styleAnchors:
+  - Parchment Unit Portrait Card
+  - painted unit portrait on parchment
+  - half-length portrait
+displayName: Parchment Unit Portrait Card
+category: 9. Painted RPG & Tactics
+domain: painted unit portrait on parchment
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - painted-rpg-and-tactics
+  - unit-portrait
+  - painted-rpg
+  - portable-style-study
+visualDna:
+  aesthetic: 'Parchment unit portrait card: a painted half-length portrait of a soldier, mage or creature on aged parchment with soft vignette edges, as used to present units in strategy games.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; paint the subject as a half-length portrait on aged parchment.
+  color_and_tone: Warm parchment beige with muted painted colors, kept consistent across the whole image.
+  lighting_and_shadow: Soft side light with a vignette fading to parchment.
+  texture_and_material: Paper fibers, oil-like brushwork and stained edges, kept consistent across the whole image.
+  camera_and_composition: Half-length figure centered with fading edges, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with seasoned soldierly character.
+  rendering_and_quality: Refined portrait with no stats or labels, kept consistent across the whole image.
+  creative_brief: "Parchment unit portrait card: a painted half-length portrait of a soldier, mage or creature on aged parchment with soft vignette edges, as used to present units in strategy games. Carry it through half-length portrait, aged parchment, vignette edges, unit character. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: half-length portrait; aged parchment; vignette edges; unit character
+avoidRules:
+  - stats or labels
+  - interface, menus or health bars
+  - existing game characters or logos
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: stats or labels, interface, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: painted-rpg-and-tactics
+  categoryName: 9. Painted RPG & Tactics
+  tags:
+    - curation-v2
+    - painted-rpg-and-tactics
+    - unit-portrait
+    - painted-rpg
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: painted unit portrait on parchment

@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-224
+packId: pack_23
+name: Stylized Magic VFX Burst
+styleAnchors:
+  - Stylized Magic VFX Burst
+  - hand-crafted game spell effect
+  - stylized spell shapes
+displayName: Stylized Magic VFX Burst
+category: 11. Modern Visual Techniques
+domain: hand-crafted game spell effect
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - modern-visual-techniques
+  - magic-vfx
+  - modern-game-render
+  - portable-style-study
+visualDna:
+  aesthetic: 'Stylized magic VFX burst: hand-designed game spell effects, sharp swirling shapes, glowing ribbons and crystal shards bursting with bold stylized color.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; wrap the subject in a bold stylized burst of spell effects.
+  color_and_tone: Hot magenta, cyan and gold against dark surroundings.
+  lighting_and_shadow: Emissive effect light illuminating the figure, kept consistent across the whole image.
+  texture_and_material: Sharp stylized flame shapes, ribbons and shards, kept consistent across the whole image.
+  camera_and_composition: Dynamic centered burst with figure in action, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with explosive magical power.
+  rendering_and_quality: Crisp stylized effects, not realistic smoke, kept consistent across the whole image.
+  creative_brief: "Stylized magic VFX burst: hand-designed game spell effects, sharp swirling shapes, glowing ribbons and crystal shards bursting with bold stylized color. Carry it through stylized spell shapes, glowing ribbons, crystal shards, emissive light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: stylized spell shapes; glowing ribbons; crystal shards; emissive light
+avoidRules:
+  - realistic smoke
+  - interface or HUD
+  - existing game characters or logos
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: realistic smoke, interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: modern-visual-techniques
+  categoryName: 11. Modern Visual Techniques
+  tags:
+    - curation-v2
+    - modern-visual-techniques
+    - magic-vfx
+    - modern-game-render
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: hand-crafted game spell effect

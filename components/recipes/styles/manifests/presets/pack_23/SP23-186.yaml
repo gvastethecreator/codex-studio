@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-186
+packId: pack_23
+name: Painted Tarot Class Card
+styleAnchors:
+  - Painted Tarot Class Card
+  - character class in tarot frame
+  - tarot frame
+displayName: Painted Tarot Class Card
+category: 9. Painted RPG & Tactics
+domain: character class in tarot frame
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - painted-rpg-and-tactics
+  - tarot-class
+  - painted-rpg
+  - portable-style-study
+visualDna:
+  aesthetic: 'Painted tarot class card: a character class painted as a tall tarot-style card with an ornamental border, symbolic props and a single emblematic pose.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; paint the subject in a single emblematic pose framed like a tarot card.
+  color_and_tone: Rich jewel tones with gold border lines, kept consistent across the whole image.
+  lighting_and_shadow: Soft dramatic light on the central figure, kept consistent across the whole image.
+  texture_and_material: Painterly figure, gilded border and aged card surface.
+  camera_and_composition: Tall vertical card with centered figure and symbols.
+  atmosphere_and_mood: Keep the requested mood with mystic destiny, kept consistent across the whole image.
+  rendering_and_quality: Clear emblematic composition with no numbers or titles.
+  creative_brief: "Painted tarot class card: a character class painted as a tall tarot-style card with an ornamental border, symbolic props and a single emblematic pose. Carry it through tarot frame, emblematic pose, symbolic props, gilded border. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: tarot frame; emblematic pose; symbolic props; gilded border
+avoidRules:
+  - card numbers or titles
+  - interface, menus or health bars
+  - existing game characters or logos
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: card numbers or titles, interface, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: painted-rpg-and-tactics
+  categoryName: 9. Painted RPG & Tactics
+  tags:
+    - curation-v2
+    - painted-rpg-and-tactics
+    - tarot-class
+    - painted-rpg
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: character class in tarot frame

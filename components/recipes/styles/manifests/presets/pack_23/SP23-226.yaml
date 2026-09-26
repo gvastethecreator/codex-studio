@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP23-226
+packId: pack_23
+name: Wind-Swept Stylized Grassland
+styleAnchors:
+  - Wind-Swept Stylized Grassland
+  - painterly wind grass real-time scene
+  - wind-swept grass
+displayName: Wind-Swept Stylized Grassland
+category: 11. Modern Visual Techniques
+domain: painterly wind grass real-time scene
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - modern-visual-techniques
+  - wind-grass
+  - modern-game-render
+  - portable-style-study
+visualDna:
+  aesthetic: 'Wind-swept stylized grassland: vast real-time fields of painterly grass and flowers bending in the wind, glowing golden light and drifting leaves.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; place the subject in a vast field of painterly grass bending in the wind.
+  color_and_tone: Golden grass, red flowers and warm sky, kept consistent across the whole image.
+  lighting_and_shadow: Low golden sun with rim-lit grass, kept consistent across the whole image.
+  texture_and_material: Stylized grass blades, petals and drifting leaves, kept consistent across the whole image.
+  camera_and_composition: Wide cinematic field with a lone figure, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with windswept longing, kept consistent across the whole image.
+  rendering_and_quality: Painterly real-time field with coherent wind, kept consistent across the whole image.
+  creative_brief: "Wind-swept stylized grassland: vast real-time fields of painterly grass and flowers bending in the wind, glowing golden light and drifting leaves. Carry it through wind-swept grass, golden light, drifting leaves, lone figure. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: wind-swept grass; golden light; drifting leaves; lone figure
+avoidRules:
+  - interface or HUD
+  - existing game characters or logos
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: modern-visual-techniques
+  categoryName: 11. Modern Visual Techniques
+  tags:
+    - curation-v2
+    - modern-visual-techniques
+    - wind-grass
+    - modern-game-render
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: painterly wind grass real-time scene

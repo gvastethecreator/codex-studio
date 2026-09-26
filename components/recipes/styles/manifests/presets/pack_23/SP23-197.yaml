@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-197
+packId: pack_23
+name: Class Line-Up Wash Drawing
+styleAnchors:
+  - Class Line-Up Wash Drawing
+  - character class lineup drawing
+  - class line-up
+displayName: Class Line-Up Wash Drawing
+category: 9. Painted RPG & Tactics
+domain: character class lineup drawing
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - painted-rpg-and-tactics
+  - class-lineup
+  - painted-rpg
+  - portable-style-study
+visualDna:
+  aesthetic: 'Class line-up wash drawing: a row of different character classes standing side by side on a shared ground line, drawn in graphite with transparent color washes.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; line the subject up with other classes on a shared ground line.
+  color_and_tone: Graphite greys with soft transparent color accents, kept consistent across the whole image.
+  lighting_and_shadow: Consistent soft light and small ground shadows, kept consistent across the whole image.
+  texture_and_material: Graphite lines, color washes and white paper, kept consistent across the whole image.
+  camera_and_composition: Horizontal row of full-length figures, same scale, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with confident ensemble character.
+  rendering_and_quality: Clear silhouettes that read distinctly, kept consistent across the whole image.
+  creative_brief: "Class line-up wash drawing: a row of different character classes standing side by side on a shared ground line, drawn in graphite with transparent color washes. Carry it through class line-up, shared ground line, graphite and wash, distinct silhouettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: class line-up; shared ground line; graphite and wash; distinct silhouettes
+avoidRules:
+  - labels
+  - interface, menus or health bars
+  - existing game characters or logos
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: labels, interface, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: painted-rpg-and-tactics
+  categoryName: 9. Painted RPG & Tactics
+  tags:
+    - curation-v2
+    - painted-rpg-and-tactics
+    - class-lineup
+    - painted-rpg
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: character class lineup drawing

@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP23-215
+packId: pack_23
+name: Watercolor-Shaded 3D
+styleAnchors:
+  - Watercolor-Shaded 3D
+  - real-time watercolor shader
+  - watercolor shader
+displayName: Watercolor-Shaded 3D
+category: 11. Modern Visual Techniques
+domain: real-time watercolor shader
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - modern-visual-techniques
+  - watercolor-shader
+  - modern-game-render
+  - portable-style-study
+visualDna:
+  aesthetic: 'Watercolor-shaded 3D: 3D scenes rendered to look like watercolor, pigment pooling at edges, paper texture and soft bleeding washes applied to moving geometry.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; render the subject in 3D with watercolor edge pooling and paper texture.
+  color_and_tone: Transparent washes with darker pigment at the edges.
+  lighting_and_shadow: Soft light expressed through wash density, kept consistent across the whole image.
+  texture_and_material: Paper grain, edge darkening and wet blooms, kept consistent across the whole image.
+  camera_and_composition: Scenic 3D view with painterly depth, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with gentle storybook motion.
+  rendering_and_quality: Convincing watercolor look over 3D forms, kept consistent across the whole image.
+  creative_brief: "Watercolor-shaded 3D: 3D scenes rendered to look like watercolor, pigment pooling at edges, paper texture and soft bleeding washes applied to moving geometry. Carry it through watercolor shader, edge pooling, paper grain, 3D depth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: watercolor shader; edge pooling; paper grain; 3D depth
+avoidRules:
+  - interface or HUD
+  - existing game characters or logos
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: modern-visual-techniques
+  categoryName: 11. Modern Visual Techniques
+  tags:
+    - curation-v2
+    - modern-visual-techniques
+    - watercolor-shader
+    - modern-game-render
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: real-time watercolor shader

@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-210
+packId: pack_23
+name: Unpainted Pewter Miniature
+styleAnchors:
+  - Unpainted Pewter Miniature
+  - bare metal tabletop figure
+  - bare pewter
+displayName: Unpainted Pewter Miniature
+category: 10. Tabletop Illustration Studies
+domain: bare metal tabletop figure
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - tabletop-illustration-studies
+  - pewter-mini
+  - tabletop
+  - portable-style-study
+visualDna:
+  aesthetic: 'Unpainted pewter miniature: a bare grey metal tabletop figure fresh from the blister pack, mold lines, a slotta tab base and fine sculpted detail catching soft light.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; cast the subject as a small bare pewter miniature on a slotted base.
+  color_and_tone: Soft silver grey with dark recesses, kept consistent across the whole image.
+  lighting_and_shadow: Soft studio light showing sculpted detail, kept consistent across the whole image.
+  texture_and_material: Bare pewter, mold lines, flash and a slotted base.
+  camera_and_composition: Macro close-up on a hobby mat, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with collector anticipation, kept consistent across the whole image.
+  rendering_and_quality: Convincing macro product realism, kept consistent across the whole image.
+  creative_brief: "Unpainted pewter miniature: a bare grey metal tabletop figure fresh from the blister pack, mold lines, a slotta tab base and fine sculpted detail catching soft light. Carry it through bare pewter, mold lines, slotted base, macro view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: bare pewter; mold lines; slotted base; macro view
+avoidRules:
+  - paint
+  - readable titles, rules text or numbers
+  - existing game brands or characters
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: paint, readable titles, rules text or numbers, existing game brands or characters, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: tabletop-illustration-studies
+  categoryName: 10. Tabletop Illustration Studies
+  tags:
+    - curation-v2
+    - tabletop-illustration-studies
+    - pewter-mini
+    - tabletop
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: bare metal tabletop figure

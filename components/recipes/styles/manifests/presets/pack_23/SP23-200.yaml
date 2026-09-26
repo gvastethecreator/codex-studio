@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-200
+packId: pack_23
+name: Hex-Crawl Wilderness Map
+styleAnchors:
+  - Hex-Crawl Wilderness Map
+  - hand-drawn hex exploration map
+  - hex grid
+displayName: Hex-Crawl Wilderness Map
+category: 10. Tabletop Illustration Studies
+domain: hand-drawn hex exploration map
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - tabletop-illustration-studies
+  - hex-map
+  - tabletop
+  - portable-style-study
+visualDna:
+  aesthetic: 'Hex-crawl wilderness map: a hand-drawn overland map on a hex grid, tiny icon mountains, forests, ruins and lairs inked in each cell, some cells still blank and unexplored.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject as tiny inked icons or a lair within a hex-grid wilderness.
+  color_and_tone: Ink on cream paper with a few colored pencil washes.
+  lighting_and_shadow: Flat map drawing without light, kept consistent across the whole image.
+  texture_and_material: Hex grid lines, tiny inked icons, pencil color and erasures.
+  camera_and_composition: Top-down map filling the card, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with the lure of unexplored cells.
+  rendering_and_quality: Clear hand-drawn icons with no place names, kept consistent across the whole image.
+  creative_brief: "Hex-crawl wilderness map: a hand-drawn overland map on a hex grid, tiny icon mountains, forests, ruins and lairs inked in each cell, some cells still blank and unexplored. Carry it through hex grid, inked terrain icons, blank cells, hand-drawn map. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: hex grid; inked terrain icons; blank cells; hand-drawn map
+avoidRules:
+  - readable place names or numbers
+  - readable titles, rules text or numbers
+  - existing game brands or characters
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable place names or numbers, readable titles, rules text or numbers, existing game brands or characters, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: tabletop-illustration-studies
+  categoryName: 10. Tabletop Illustration Studies
+  tags:
+    - curation-v2
+    - tabletop-illustration-studies
+    - hex-map
+    - tabletop
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: hand-drawn hex exploration map
