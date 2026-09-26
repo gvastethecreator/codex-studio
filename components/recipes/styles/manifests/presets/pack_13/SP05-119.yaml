@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-119
 packId: pack_13
-name: Chalk-Dust Slate Sketch
+name: Yusei Matsui - Chalk-Dust Slate Sketch
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,34 +11,21 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Use broken pale strokes, powder halos, smudge ghosts and erased traces against a dark slate-like
-    value field.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: keep a limited pale-on-dark
-    palette unless the prompt specifies other colors.
-  lighting_and_shadow: >-
-    Use chalk highlights and soft powder falloff to reveal form; avoid polished specular light.
-  texture_and_material: >-
-    Show chalk dust, drag, gaps and erasure memory; preserve the underlying material in the drawn
-    form.
-  camera_and_composition: >-
-    Let broken marks and open dark field shape the composition; maintain the requested crop and
-    placement.
-  atmosphere_and_mood: >-
-    Fragile contour and erased traces suggest impermanence without adding a written message.
-  rendering_and_quality: >-
-    Use chalk mark behavior on any subject; add no letters, formulae, chalkboard or diagram. Keep
-    important silhouettes and joins legible; no watermark, unrequested text or interface.
-  key_features: >-
-    Broken chalk cadence; powder halo; smudge ghost; erasure trace; slate-grain field.
-  creative_brief: 'Apply this visual treatment to the requested content: Broken chalk cadence; powder halo; smudge ghost; erasure trace; slate-grain field. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Yusei Matsui manga look as in Assassination Classroom: chalkboard classrooms, simple round comedic faces and sketchy chalk gags.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Matsui designs, simple faces and classroom clothes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Slate green and chalk white, true to the Yusei Matsui palette.
+  lighting_and_shadow: Classroom light, lit the way Yusei Matsui lights its scenes.
+  texture_and_material: Chalk-dust strokes on slate, with the surface finish of Yusei Matsui.
+  camera_and_composition: Classroom compositions, framed the way Yusei Matsui composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with playful chalky comedy.
+  rendering_and_quality: Chalk-sketch comedy illustration, in the recognizable hand of Yusei Matsui.
+  key_features: Yusei Matsui chalkboards; round faces; chalk gags
+  creative_brief: "Yusei Matsui manga look as in Assassination Classroom: chalkboard classrooms, simple round comedic faces and sketchy chalk gags. Carry it through Yusei Matsui chalkboards, round faces, chalk gags. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a yellow octopus teacher with a graduation cap
+  - existing franchise characters
   - photoreal cosplay rendering
   - 3D render look
   - plastic airbrush gloss obscuring the style's defining marks
@@ -52,16 +39,20 @@ avoidRules:
   - unbroken contours erasing chalk-stroke breaks
   - glossy highlights hiding powder texture
   - erasure smudges masking essential forms
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-119.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, unbroken contours erasing chalk-stroke breaks, glossy
-    highlights hiding powder texture, erasure smudges masking essential forms
+  negativePrompt: a yellow octopus teacher with a graduation cap, existing franchise characters, photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, unbroken contours erasing chalk-stroke breaks, glossy highlights hiding powder texture, erasure smudges masking essential forms, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -70,8 +61,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Yusei Matsui - Chalk-Dust Slate Sketch
+styleAnchors:
+  - Yusei Matsui - Chalk-Dust Slate Sketch

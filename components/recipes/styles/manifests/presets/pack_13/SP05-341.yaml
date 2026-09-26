@@ -3,7 +3,7 @@ id: SP05-341
 packId: pack_13
 name: Hiromu Arakawa - Mechanical Warmth Ensemble
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,35 +13,16 @@ tags:
   - anime-style-spectrum
   - reference-title
 visualDna:
-  aesthetic: >-
-    A drawing technique, not a copy of any work: sturdy, hand-drawn contours, clearly articulated
-    joins and practical mechanical detail balanced by human warmth.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: use warm ochre, brass or earth
-    accents where useful, while keeping the prompt's colors and material distinctions.
-  lighting_and_shadow: >-
-    Use readable cel shadows and warm reflected accents; maintain the light direction requested.
-  texture_and_material: >-
-    Give constructed parts clear seams, joints and wear only when those parts exist; keep linework
-    sturdy rather than cold or clinical.
-  camera_and_composition: >-
-    Use ensemble-like clarity to separate parts and figures already present; preserve count,
-    placement and framing.
-  atmosphere_and_mood: >-
-    Mechanical warmth balances competence and approachability; do not force grimness, armor or
-    sentiment into the prompt.
-  rendering_and_quality: >-
-    Apply the line and structural clarity to any subject; do not add armor, machinery, characters or
-    a copied scene. Keep important silhouettes and joins legible; no watermark, unrequested text or
-    interface.
-  key_features: >-
-    Sturdy contour; articulated joins; practical mechanical detail; warm accents; readable ensemble
-    staging.
-  creative_brief: 'Apply this visual treatment to the requested content: Sturdy contour; articulated joins; practical mechanical detail; warm accents; readable ensemble staging. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Hiromu Arakawa manga look as in Fullmetal Alchemist and Silver Spoon: sturdy warm characters, clear expressive faces, detailed mechanical limbs and ensemble camaraderie.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Arakawa designs, sturdy bodies, expressive faces and practical clothes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Black ink with warm tones in color pages.
+  lighting_and_shadow: Warm campfire and daylight, lit the way Hiromu Arakawa lights its scenes.
+  texture_and_material: Clean confident ink line and mechanical detail, with the surface finish of Hiromu Arakawa.
+  camera_and_composition: Ensemble compositions, framed the way Hiromu Arakawa composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with warm mechanical camaraderie.
+  rendering_and_quality: Warm clear manga illustration, in the recognizable hand of Hiromu Arakawa.
+  key_features: Hiromu Arakawa warmth; mechanical limbs; ensemble
+  creative_brief: "Hiromu Arakawa manga look as in Fullmetal Alchemist and Silver Spoon: sturdy warm characters, clear expressive faces, detailed mechanical limbs and ensemble camaraderie. Carry it through Hiromu Arakawa warmth, mechanical limbs, ensemble. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look
@@ -58,18 +39,12 @@ avoidRules:
   - structural detail invented on unconstructed forms
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-341.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, unreadable joins on constructed parts, sterile plastic
-    sheen obscuring drawn contour, structural detail invented on unconstructed forms, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, unreadable joins on constructed parts, sterile plastic sheen obscuring drawn contour, structural detail invented on unconstructed forms, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -84,3 +59,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Hiromu Arakawa - Mechanical Warmth Ensemble
+styleAnchors:
+  - Hiromu Arakawa - Mechanical Warmth Ensemble

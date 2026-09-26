@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-063
 packId: pack_13
-name: Seaside Summer Haze Anime
+name: Nagi-Asu P.A. Works - Seaside Summer Haze Anime
 styleAnchors:
-  - Seaside Summer Haze Anime
+  - Nagi-Asu P.A. Works - Seaside Summer Haze Anime
   - summer seaside anime
   - cumulus towers
-displayName: Seaside Summer Haze Anime
+displayName: Nagi-Asu P.A. Works - Seaside Summer Haze Anime
 category: 2. Slice Of Life, School And Music
 domain: summer seaside anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - summer
   - seaside
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Seaside summer haze anime: saturated blue skies, towering cumulus clouds, heat shimmer and bright white light.'
-  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: clean simple lines, sun-squinting faces, sweat beads, hair and shirts moving in sea wind."
-  color_and_tone: Saturated cobalt sky, white clouds, sea teal and sun-bleached colors.
-  lighting_and_shadow: Harsh midday sun with heat haze and deep short shadows.
-  texture_and_material: Cel with painted clouds and shimmer, visible at a glance as the signature of the style.
-  camera_and_composition: Wide horizon frames with big sky, arranged so the subject still reads at a glance.
-  atmosphere_and_mood: Free, lazy, nostalgic and bright, driven by the construction, color and rhythm.
-  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  creative_brief: "Seaside summer haze anime: saturated blue skies, towering cumulus clouds, heat shimmer and bright white light. Carry it through cumulus towers, heat haze, cobalt sky, sea wind. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: cumulus towers; heat haze; cobalt sky; sea wind
+  aesthetic: 'P.A. Works Nagi-Asu: A Lull in the Sea look (2013): shimmering seaside towns, underwater villages, summer haze and luminous blue water light.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with soft P.A. Works designs, big clear eyes, summer clothes and sea-dweller features. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Luminous sea blue, cumulus white, sandy beige and coral.
+  lighting_and_shadow: Shimmering summer haze above the harbor and caustic underwater light below.
+  texture_and_material: Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.
+  camera_and_composition: Harbor walls, big cumulus skies and underwater views.
+  atmosphere_and_mood: Keep the requested mood with shimmering summer longing.
+  rendering_and_quality: Luminous P.A. Works seaside frame with glowing water and summer skies.
+  creative_brief: "P.A. Works Nagi-Asu: A Lull in the Sea look (2013): shimmering seaside towns, underwater villages, summer haze and luminous blue water light. Carry it through Nagi-Asu sea light, summer haze, seaside towns, underwater villages. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Nagi-Asu sea light; summer haze; seaside towns; underwater villages
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -45,9 +46,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -62,6 +67,7 @@ taxonomy:
     - summer
     - seaside
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -3,7 +3,7 @@ id: SP05-335
 packId: pack_13
 name: Haruko Ichikawa - Mineral Void Serenity
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,35 +13,16 @@ tags:
   - anime-style-spectrum
   - reference-title
 visualDna:
-  aesthetic: >-
-    A drawing technique, not a copy of any work: fine fragile contours, pale mineral planes,
-    translucent edge values and large areas of deliberate void.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: use cool pale mineral hues and
-    clear light/dark separation; respect requested color and do not muddy the palette.
-  lighting_and_shadow: >-
-    Let light pass along edges and through thin-looking planes; avoid opaque plastic shine and
-    preserve the prompt's lighting.
-  texture_and_material: >-
-    Use fine line, softly faceted mineral shading and sparse surface detail; keep the depicted
-    material recognizable.
-  camera_and_composition: >-
-    Balance delicate forms against open negative space without changing the source crop or
-    simplifying away requested elements.
-  atmosphere_and_mood: >-
-    Serenity comes from pale planes and empty space; keep the prompt's emotional meaning and avoid
-    adding spiritual symbolism.
-  rendering_and_quality: >-
-    Keep the method subject-neutral and material-aware; do not turn a subject into crystal or copy a
-    character or panel. Keep important silhouettes and joins legible; no watermark, unrequested text
-    or interface.
-  key_features: >-
-    Fine fragile contour; pale mineral planes; translucent edges; broad void; quiet faceting.
-  creative_brief: 'Apply this visual treatment to the requested content: Fine fragile contour; pale mineral planes; translucent edges; broad void; quiet faceting. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Haruko Ichikawa manga look as in Land of the Lustrous: delicate sparse lines, vast white voids, translucent mineral bodies and serene minimal compositions.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw figures as translucent mineral beings with delicate sparse lines. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Pale mineral tints and vast white, true to the Haruko Ichikawa palette.
+  lighting_and_shadow: Bright white void light, lit the way Haruko Ichikawa lights its scenes.
+  texture_and_material: Delicate sparse ink line, with the surface finish of Haruko Ichikawa.
+  camera_and_composition: Minimal compositions with vast empty space, framed the way Haruko Ichikawa composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with serene mineral solitude.
+  rendering_and_quality: Minimal delicate manga illustration, in the recognizable hand of Haruko Ichikawa.
+  key_features: Haruko Ichikawa voids; mineral bodies; sparse line
+  creative_brief: "Haruko Ichikawa manga look as in Land of the Lustrous: delicate sparse lines, vast white voids, translucent mineral bodies and serene minimal compositions. Carry it through Haruko Ichikawa voids, mineral bodies, sparse line. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look
@@ -58,18 +39,12 @@ avoidRules:
   - ornament crowding negative space
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-335.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, opaque highlights hiding mineral edge transmission,
-    muddy values collapsing pale planes, ornament crowding negative space, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, opaque highlights hiding mineral edge transmission, muddy values collapsing pale planes, ornament crowding negative space, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -84,3 +59,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Haruko Ichikawa - Mineral Void Serenity
+styleAnchors:
+  - Haruko Ichikawa - Mineral Void Serenity

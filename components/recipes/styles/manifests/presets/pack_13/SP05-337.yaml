@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-337
 packId: pack_13
-name: Technomagic Draftsmanship Burst
+name: Yoh Yoshinari - Technomagic Draftsmanship Burst
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,36 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Combine precise drafting contours with radial arcs, loose construction marks and a sparse glow;
-    derive all technical or arcane geometry from prompt forms.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: use restrained dark/light
-    contrast and a few luminous accents; keep prompt colors and avoid blanket neon.
-  lighting_and_shadow: >-
-    Place a narrow glow on existing edges or focal intersections; respect source, direction and
-    exposure.
-  texture_and_material: >-
-    Mix crisp construction lines with lightly sketched guides; do not turn effects into literal
-    glyphs or interface.
-  camera_and_composition: >-
-    Let arcs and guides follow the existing structure and perspective; keep framing and subject
-    scale unchanged.
-  atmosphere_and_mood: >-
-    Wonder comes from the meeting of precise drawing and loose energy; do not invent magic,
-    machinery or action.
-  rendering_and_quality: >-
-    Transfer the mark language to any subject without adding runes, diagrams, devices or a fantasy
-    scenario. Keep important silhouettes and joins legible; no watermark, unrequested text or
-    interface.
-  key_features: >-
-    Drafting contours; radial arcs; loose construction marks; sparse edge glow; clean perspective.
-  creative_brief: 'Apply this visual treatment to the requested content: Drafting contours; radial arcs; loose construction marks; sparse edge glow; clean perspective. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Yoh Yoshinari animation look as in Little Witch Academia: bouncy elastic magic, firework effects, blueprint-like technical magic and bright joyful draftsmanship.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yoshinari designs, bouncy shapes and expressive faces. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Bright magic colors and blueprint cyan, true to the Yoh Yoshinari palette.
+  lighting_and_shadow: Firework magic light, lit the way Yoh Yoshinari lights its scenes.
+  texture_and_material: Clean energetic line and effects, with the surface finish of Yoh Yoshinari.
+  camera_and_composition: Dynamic magic bursts, framed the way Yoh Yoshinari composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with joyful technomagic energy.
+  rendering_and_quality: Energetic Trigger-style animation frame, in the recognizable hand of Yoh Yoshinari.
+  key_features: Yoh Yoshinari magic; fireworks; blueprint arcs
+  creative_brief: "Yoh Yoshinari animation look as in Little Witch Academia: bouncy elastic magic, firework effects, blueprint-like technical magic and bright joyful draftsmanship. Carry it through Yoh Yoshinari magic, fireworks, blueprint arcs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look
@@ -55,16 +37,14 @@ avoidRules:
   - construction lines obscuring source contours
   - glow obscuring precise geometry
   - unrequested glyph-like marks
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-337.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, construction lines obscuring source contours, glow
-    obscuring precise geometry, unrequested glyph-like marks
+  negativePrompt: photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, construction lines obscuring source contours, glow obscuring precise geometry, unrequested glyph-like marks, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -73,8 +53,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Yoh Yoshinari - Technomagic Draftsmanship Burst
+styleAnchors:
+  - Yoh Yoshinari - Technomagic Draftsmanship Burst

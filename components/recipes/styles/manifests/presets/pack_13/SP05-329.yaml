@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-329
 packId: pack_13
-name: Spiral Panic Engraving
+name: Kazuo Umezz - Spiral Panic Engraving
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,34 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Use winding hatch arcs, scratched line and ink pools to build graphic pressure around an
-    existing focal point; do not add a literal spiral or vortex.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: keep a compressed dark palette
-    with controlled high-value accents; preserve requested colors.
-  lighting_and_shadow: >-
-    Shape pressure with converging value and ink density, not invented light or flame.
-  texture_and_material: >-
-    Layer engraved hatch and scratch in arcs that follow existing forms; keep detail deliberate and
-    readable.
-  camera_and_composition: >-
-    Concentrate mark direction toward the prompt's existing focus while keeping the composition
-    stable.
-  atmosphere_and_mood: >-
-    Unease comes from the engraving rhythm; keep panic at the level requested by the prompt.
-  rendering_and_quality: >-
-    Use the arc logic on any subject without adding spirals, eyes, a vortex, distortion or threat.
-    Keep important silhouettes and joins legible; no watermark, unrequested text or interface.
-  key_features: >-
-    Winding hatch arcs; scratched engraving; ink pools; directional pressure; focused dark/light
-    contrast.
-  creative_brief: 'Apply this visual treatment to the requested content: Winding hatch arcs; scratched engraving; ink pools; directional pressure; focused dark/light contrast. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Kazuo Umezz horror manga look: wide screaming faces with hands on cheeks, dense engraving-like hatching, spiraling dread and sixties-seventies horror energy.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Umezz designs, huge terrified eyes, screaming mouths and hands pressed to faces. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Black ink with dense hatching, true to the Kazuo Umezz palette.
+  lighting_and_shadow: Harsh horror shadows, lit the way Kazuo Umezz lights its scenes.
+  texture_and_material: Engraving-like hatching and spiral lines, with the surface finish of Kazuo Umezz.
+  camera_and_composition: Screaming close-ups and spiraling layouts, framed the way Kazuo Umezz composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with screaming spiral panic.
+  rendering_and_quality: Classic horror manga illustration, in the recognizable hand of Kazuo Umezz.
+  key_features: Kazuo Umezz screams; hatching; spiral dread
+  creative_brief: "Kazuo Umezz horror manga look: wide screaming faces with hands on cheeks, dense engraving-like hatching, spiraling dread and sixties-seventies horror energy. Carry it through Kazuo Umezz screams, hatching, spiral dread. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look
@@ -53,16 +37,14 @@ avoidRules:
   - hatch arcs obscuring the focal contour
   - scratch marks unrelated to form direction
   - spiral-like distortion altering source geometry
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-329.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, hatch arcs obscuring the focal contour, scratch marks
-    unrelated to form direction, spiral-like distortion altering source geometry
+  negativePrompt: photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, hatch arcs obscuring the focal contour, scratch marks unrelated to form direction, spiral-like distortion altering source geometry, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -71,8 +53,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Kazuo Umezz - Spiral Panic Engraving
+styleAnchors:
+  - Kazuo Umezz - Spiral Panic Engraving

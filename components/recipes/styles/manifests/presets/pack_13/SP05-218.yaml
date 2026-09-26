@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-218
 packId: pack_13
-name: Incremental-Ascent Confidence Light
+name: Yama no Susume 8bit - Incremental-Ascent Confidence Light
 category: 4. Slice Of Life & Moe
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,17 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
+  - reference-title
 visualDna:
-  aesthetic: 'Clean geometric color planes shift in measured brightness along existing contours, with precise lit edges and controlled gradients.'
-  subject_treatment: 'Retain the exact forms, proportions, gesture, and count; sharpen edges of existing focal shapes without changing posture.'
-  color_and_tone: "Build gradual value steps from darker support to brighter accents using requested hues; preserve the prompt's palette and contrast."
-  lighting_and_shadow: 'Follow the source direction and create progression of light across existing planes; add no beam or new source.'
-  texture_and_material: 'Use smooth fills and compact material details; preserve surface qualities named in the prompt.'
-  camera_and_composition: 'Keep crop, viewpoint, scale, spacing, and count; create hierarchy through tonal progression, not upward framing or a reveal.'
-  atmosphere_and_mood: 'Preserve the requested emotional tone; directional light does not assign a new one.'
-  rendering_and_quality: 'Keep light boundaries crisp and gradients subtle; separate forms without excessive glow.'
-  key_features: 'Geometric color planes; progressive value steps; crisp lit edges; controlled gradients; clear focal hierarchy.'
-  creative_brief: 'Use a measured light-to-shadow progression along existing shapes to build hierarchy. Preserve subject, action, count, camera, and mood without shifting composition. Use it as a reusable look on any subject.'
+  aesthetic: 'Eight Bit Encouragement of Climb look (2013): mountain hiking, scenic summits, sunrise light and small steps of confidence.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with soft cute designs, hiking gear and determined faces. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Mountain green, sunrise gold and sky blue, true to the Yama no Susume 8bit palette.
+  lighting_and_shadow: Summit sunrise light, lit the way Yama no Susume 8bit lights its scenes.
+  texture_and_material: Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.
+  camera_and_composition: Scenic trail and summit compositions, framed the way Yama no Susume 8bit composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with incremental ascending confidence.
+  rendering_and_quality: Scenic hiking television frame, in the recognizable hand of Yama no Susume 8bit.
+  key_features: Yama no Susume hiking; summits; sunrise
+  creative_brief: "Eight Bit Encouragement of Climb look (2013): mountain hiking, scenic summits, sunrise light and small steps of confidence. Carry it through Yama no Susume hiking, summits, sunrise. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -44,15 +45,14 @@ avoidRules:
   - generic anime filter
   - prompt literal card reuse
   - fake UI
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-218.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock,
-    canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic
-    anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied
-    franchise costume, logo
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -61,8 +61,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - slice-of-life-and-moe
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Yama no Susume 8bit - Incremental-Ascent Confidence Light
+styleAnchors:
+  - Yama no Susume 8bit - Incremental-Ascent Confidence Light

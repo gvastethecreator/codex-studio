@@ -3,7 +3,7 @@ id: SP05-192
 packId: pack_13
 name: Maid Sama! - Secret Uniform Double Life
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,27 +13,16 @@ tags:
   - shojo-magical-girl-and-visionary-classics
   - reference-title
 visualDna:
-  aesthetic: >-
-    Precise anime contour contrasts straight structured edges with small ruffle-like rhythms
-    and cel shadows.
-  subject_treatment: >-
-    Preserve age, identity, action, clothing; detail trim only when already present.
-  color_and_tone: >-
-    Black, ivory, plum, sharp red; contrast serves legibility, not a role change.
-  lighting_and_shadow: >-
-    Clear directional light and smooth shadows; no split identity or spotlight.
-  texture_and_material: >-
-    Satin only where shown; otherwise matte fills and patterns confined to present surfaces.
-  camera_and_composition: >-
-    Keep layout; distinguish existing shapes through value, not panels or staged duality.
-  atmosphere_and_mood: >-
-    Poise or playfulness follows the requested mood; impose no disguise or dominance.
-  rendering_and_quality: >-
-    Refined edges, prompt-led materials, sparse details, no costume motifs.
-  key_features: >-
-    Structured contour, ruffle rhythm, black-ivory-red values, contrast without wardrobe
-    change
-  creative_brief: 'Apply a visual treatment centered on structured contour, ruffle rhythm, black-ivory-red values, contrast without wardrobe change. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'Hiro Fujiwara Maid Sama! look: comedic double-life romance, maid cafe frills, bold confident heroines and teasing rivals.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Fujiwara designs, confident faces, maid cafe outfits and uniforms. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Frilly pink, black and white and cafe pastels.
+  lighting_and_shadow: Bright cafe light, lit the way Maid Sama! lights its scenes.
+  texture_and_material: Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.
+  camera_and_composition: Comic double-life reveals, framed the way Maid Sama! composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with teasing comic romance.
+  rendering_and_quality: Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.
+  key_features: Maid Sama frills; double life; teasing romance
+  creative_brief: "Hiro Fujiwara Maid Sama! look: comedic double-life romance, maid cafe frills, bold confident heroines and teasing rivals. Carry it through Maid Sama frills, double life, teasing romance. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -58,17 +47,12 @@ avoidRules:
   - fake UI
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-192.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -83,3 +67,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Maid Sama! - Secret Uniform Double Life
+styleAnchors:
+  - Maid Sama! - Secret Uniform Double Life

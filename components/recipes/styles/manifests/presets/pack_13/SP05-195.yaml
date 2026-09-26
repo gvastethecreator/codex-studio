@@ -3,7 +3,7 @@ id: SP05-195
 packId: pack_13
 name: Neighborhood Story - Harajuku Handmade Romance
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,28 +13,16 @@ tags:
   - shojo-magical-girl-and-visionary-classics
   - reference-title
 visualDna:
-  aesthetic: >-
-    Hand-drawn anime line uses elastic contours, hand-cut color blocks, and small pattern
-    accents.
-  subject_treatment: >-
-    Retain age, clothing, accessories, action, count; pattern only existing surfaces.
-  color_and_tone: >-
-    Turquoise, sunshine yellow, cherry red, violet, charcoal in balanced groups.
-  lighting_and_shadow: >-
-    Flat ambient values with crisp local highlights; imply no specific light source.
-  texture_and_material: >-
-    Textile pattern or marker grain only on fabric or surfaces named in prompt.
-  camera_and_composition: >-
-    Respect composition; stagger color masses within existing forms, add no group or
-    accessories.
-  atmosphere_and_mood: >-
-    DIY energy is optional; match the requested mood and setting.
-  rendering_and_quality: >-
-    Crisp edges, slight hand-drawn irregularity, no distressed print wear.
-  key_features: >-
-    Elastic hand-drawn contour, bright color blocks, local surface pattern, slight line
-    irregularity
-  creative_brief: 'Apply a visual treatment centered on elastic hand-drawn contour, bright color blocks, local surface pattern, slight line irregularity. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'Ai Yazawa Neighborhood Story look: nineties Harajuku handmade fashion, art school energy, colorful accessories and youthful romance.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yazawa designs, slender figures and handmade eclectic fashion. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Colorful handmade pastels and bright accents, true to the Neighborhood Story palette.
+  lighting_and_shadow: Bright Harajuku daylight, lit the way Neighborhood Story lights its scenes.
+  texture_and_material: Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.
+  camera_and_composition: Fashion street compositions, framed the way Neighborhood Story composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with playful handmade romance.
+  rendering_and_quality: Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.
+  key_features: Neighborhood Story Harajuku; handmade fashion; art school
+  creative_brief: "Ai Yazawa Neighborhood Story look: nineties Harajuku handmade fashion, art school energy, colorful accessories and youthful romance. Carry it through Neighborhood Story Harajuku, handmade fashion, art school. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -59,17 +47,12 @@ avoidRules:
   - fake UI
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-195.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -84,3 +67,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Neighborhood Story - Harajuku Handmade Romance
+styleAnchors:
+  - Neighborhood Story - Harajuku Handmade Romance

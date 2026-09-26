@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-321
 packId: pack_13
-name: Ether-Wisp Gothic Ornament
+name: Yoshitaka Amano - Ether-Wisp Gothic Ornament
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,36 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Stretch existing contours into pointed, elongated accents and add feathered ink wisps with
-    sparse gilded detail against generous void.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: use ink-dark values and
-    restrained gold; preserve prompt colors that identify the subject.
-  lighting_and_shadow: >-
-    Let thin edge highlights emerge from the dark field; avoid adding a moon, candle or magical glow
-    source.
-  texture_and_material: >-
-    Use fine ornamental hatching and tapering wisps; keep marks attached to existing shapes rather
-    than adding motifs.
-  camera_and_composition: >-
-    Balance pointed detail with open negative space inside the original framing; do not add gothic
-    architecture.
-  atmosphere_and_mood: >-
-    Gothic tension comes from line, void and taper; preserve the prompt's tone and meaning.
-  rendering_and_quality: >-
-    Apply ornamental pressure to any requested subject without adding religious symbols, costume,
-    architecture or sigils. Keep important silhouettes and joins legible; no watermark, unrequested
-    text or interface.
-  key_features: >-
-    Elongated contours; decorative ink wisps; feathered ornament; sparse gold; void-rich
-    composition.
-  creative_brief: 'Apply this visual treatment to the requested content: Elongated contours; decorative ink wisps; feathered ornament; sparse gold; void-rich composition. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Yoshitaka Amano illustration look: ethereal wispy ink lines, elongated pale figures dissolving into ornamental swirls, gothic decadence and watercolor washes of gold and violet.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Amano elegance, elongated pale faces, flowing wispy hair and ornate gothic garments that dissolve into line. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Pale watercolor washes of gold, violet, rose and ink black on ivory paper.
+  lighting_and_shadow: Ethereal glowing light suggested by blank paper, lit the way Yoshitaka Amano lights its scenes.
+  texture_and_material: Wispy fine ink line, watercolor bleed and ornamental swirls.
+  camera_and_composition: Tall vertical ornamental compositions, framed the way Yoshitaka Amano composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with ethereal gothic decadence.
+  rendering_and_quality: Ethereal ink-and-watercolor illustration, in the recognizable hand of Yoshitaka Amano.
+  key_features: Yoshitaka Amano wisps; elongated figures; gothic ornament; watercolor
+  creative_brief: "Yoshitaka Amano illustration look: ethereal wispy ink lines, elongated pale figures dissolving into ornamental swirls, gothic decadence and watercolor washes of gold and violet. Carry it through Yoshitaka Amano wisps, elongated figures, gothic ornament, watercolor. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look
@@ -55,16 +37,14 @@ avoidRules:
   - blunt contours obscuring pointed taper
   - ornamental hatching merging into silhouette
   - unrequested ornament competing with source forms
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-321.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, blunt contours obscuring pointed taper, ornamental
-    hatching merging into silhouette, unrequested ornament competing with source forms
+  negativePrompt: photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, blunt contours obscuring pointed taper, ornamental hatching merging into silhouette, unrequested ornament competing with source forms, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -73,8 +53,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Yoshitaka Amano - Ether-Wisp Gothic Ornament
+styleAnchors:
+  - Yoshitaka Amano - Ether-Wisp Gothic Ornament

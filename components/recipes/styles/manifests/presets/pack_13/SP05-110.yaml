@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-110
 packId: pack_13
-name: Surreal Dream Logic
+name: Keiichi Tanaami - Surreal Dream Logic
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,36 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Create a limited spatial contradiction among existing planes, alignments or light cues; keep the
-    dream effect legible and do not add disconnected objects.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: retain a coherent base palette
-    with selective shifts at the contradictory plane; preserve prompt colors.
-  lighting_and_shadow: >-
-    Keep the original light cues and introduce only a subtle mismatch where the prompt's own forms
-    meet.
-  texture_and_material: >-
-    Use clean edges with localized soft transitions to make one relationship feel impossible; retain
-    material and silhouette.
-  camera_and_composition: >-
-    Keep the source camera and content stable while gently disturbing perspective or adjacency; no
-    infinite loops by default.
-  atmosphere_and_mood: >-
-    Dream logic comes from one precise mismatch, not a new dreamscape; preserve requested mood.
-  rendering_and_quality: >-
-    Apply the spatial treatment to any subject without adding architecture, floating objects,
-    duplicate forms or a new setting. Keep important silhouettes and joins legible; no watermark,
-    unrequested text or interface.
-  key_features: >-
-    Offset planes; contradictory alignment or light; restrained spatial loop; stable recognizable
-    forms.
-  creative_brief: 'Apply this visual treatment to the requested content: Offset planes; contradictory alignment or light; restrained spatial loop; stable recognizable forms. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Keiichi Tanaami psychedelic pop art look: surreal collage, vivid flat colors, repeating motifs, dream logic and pop explosions.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw figures as flat pop shapes within surreal collage worlds. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Vivid psychedelic pop colors, true to the Keiichi Tanaami palette.
+  lighting_and_shadow: Flat pop light, lit the way Keiichi Tanaami lights its scenes.
+  texture_and_material: Flat collage shapes, with the surface finish of Keiichi Tanaami.
+  camera_and_composition: Surreal collage compositions, framed the way Keiichi Tanaami composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with surreal dream logic.
+  rendering_and_quality: Psychedelic pop illustration, in the recognizable hand of Keiichi Tanaami.
+  key_features: Tanaami psychedelia; collage; dream logic
+  creative_brief: "Keiichi Tanaami psychedelic pop art look: surreal collage, vivid flat colors, repeating motifs, dream logic and pop explosions. Carry it through Tanaami psychedelia, collage, dream logic. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look
@@ -55,17 +37,14 @@ avoidRules:
   - spatial contradiction making the subject unreadable
   - unrequested floating or duplicate forms
   - perspective discontinuity unrelated to existing geometry
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-110.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, spatial contradiction making the subject unreadable,
-    unrequested floating or duplicate forms, perspective discontinuity unrelated to existing
-    geometry
+  negativePrompt: photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, spatial contradiction making the subject unreadable, unrequested floating or duplicate forms, perspective discontinuity unrelated to existing geometry, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -74,8 +53,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Keiichi Tanaami - Surreal Dream Logic
+styleAnchors:
+  - Keiichi Tanaami - Surreal Dream Logic

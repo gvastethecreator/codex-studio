@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP13-016
 packId: pack_13
-name: Battle Mage Stormcast
+name: Sorcerous Stabber Orphen - Battle Mage Stormcast
 category: 1. Core Anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,17 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Battle mage anime: spell-combat frames with storm magic, layered glowing circles and dynamic casting poses.'
-  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: dynamic casting poses, flowing robes, layered glowing circles and jagged lightning drawn as bright cel shapes."
-  color_and_tone: Storm blue, violet and electric white, used consistently across subject and background.
-  lighting_and_shadow: Magic glow lighting faces from below, expressed through the style rather than photographic lighting.
-  texture_and_material: Cel with bright effect layers and debris, visible at a glance as the signature of the style.
-  camera_and_composition: Dynamic low and high angles, arranged so the subject still reads at a glance.
-  atmosphere_and_mood: Powerful, dramatic, electric and fierce, driven by the construction, color and rhythm.
-  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  key_features: lightning cel shapes; layered circles; casting poses
-  creative_brief: "Battle mage anime: spell-combat frames with storm magic, layered glowing circles and dynamic casting poses. Carry it through lightning cel shapes, layered circles, casting poses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'J.C.Staff Sorcerous Stabber Orphen look (1998): late-nineties fantasy sorcerers with long coats, glowing layered spell circles, lightning magic and dusty fortress towns.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with late-nineties fantasy designs, long coats, pendants, spiky hair and confident casting poses. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Storm blue, lightning white, dusty tan stone and crimson coat accents.
+  lighting_and_shadow: Crackling lightning bolts and stacked glowing spell circles lighting the scene.
+  texture_and_material: Late analog cel with glowing effect layers and soft grain.
+  camera_and_composition: Heroic casting poses on fortress walls and dramatic storm wide shots.
+  atmosphere_and_mood: Keep the requested mood with defiant stormy sorcery.
+  rendering_and_quality: Late-1990s fantasy television frame with glowing lightning magic.
+  key_features: Orphen sorcery; layered spell circles; lightning; nineties fantasy
+  creative_brief: "J.C.Staff Sorcerous Stabber Orphen look (1998): late-nineties fantasy sorcerers with long coats, glowing layered spell circles, lightning magic and dusty fortress towns. Carry it through Orphen sorcery, layered spell circles, lightning, nineties fantasy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -47,10 +48,14 @@ avoidRules:
   - UI overlay
   - franchise likeness
   - real person likeness
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-016.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, low contrast, muddy fx, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, low contrast, muddy fx, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -59,8 +64,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Sorcerous Stabber Orphen - Battle Mage Stormcast
+styleAnchors:
+  - Sorcerous Stabber Orphen - Battle Mage Stormcast

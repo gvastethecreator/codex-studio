@@ -3,7 +3,7 @@ id: SP05-162
 packId: pack_13
 name: Sailor Moon - Moonlit Ribbon Justice
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,35 +13,19 @@ tags:
   - shojo-magical-girl-and-visionary-classics
   - reference-title
 visualDna:
-  aesthetic: >-
-    Classic anime transformation-profile drawing uses fluid arcs, crisp cel panels, and
-    jewel-bright accents; stages are conditional on an explicit sequence request.
-  subject_treatment: >-
-    Preserve identity, anatomy, age, and count; only for an explicit transformation show
-    requested stages and change only named elements.
-  color_and_tone: >-
-    Amethyst, ivory, cobalt, emerald, warm gold; compact jewel accents, no fixed costume
-    palette.
-  lighting_and_shadow: >-
-    Halo-like edges and phased shadows only when the requested sequence or effect calls for
-    them; otherwise match prompt light.
-  texture_and_material: >-
-    Smooth cel color with translucent motion accents; add no ribbons, particles, symbols, or
-    effects unless requested.
-  camera_and_composition: >-
-    Keep crop and viewpoint; show multiple stages only when asked, preserving sequence order
-    and identity.
-  atmosphere_and_mood: >-
-    Use ceremonial lift only when the requested action supports it; otherwise retain prompt
-    mood.
-  rendering_and_quality: >-
-    Stable outlines, distinct requested phases, clear materials, sparse effects, no
-    lettering.
-  key_features: >-
-    Fluid transformation arcs when requested, continuous subject identity, jewel accents,
-    clean cel phases
-  creative_brief: 'Apply a transformation-profile layer centered on fluid arcs, jewel accents, and clean cel phases. Preserve the exact subject, action, count, age, setting, camera, and mood. Only when a transformation sequence is explicitly requested, keep one identity through the requested stages and change only elements named in the prompt; otherwise draw one requested state. Add no unrequested costume, accessory, emblem, effect, place, prop, or text. Use it as a reusable look on any subject.'
+  aesthetic: 'Toei Sailor Moon anime look (1992) with Kazuko Tadano designs: long-legged nineties magical girls, sparkling transformation ribbons, moonlit Tokyo rooftops and pastel glittering cel.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Tadano nineties designs, long slender legs, big shining eyes and sailor-collar or ribboned costumes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Pastel pink, moon gold, navy night and sparkling white.
+  lighting_and_shadow: Moonlight halos, sparkle bursts and transformation glows, lit the way Sailor Moon lights its scenes.
+  texture_and_material: Late analog hand-painted cel over painted backgrounds, with soft film grain and gentle cel edge softness.
+  camera_and_composition: Transformation spins and heroic rooftop poses under the moon.
+  atmosphere_and_mood: Keep the requested mood with sparkling moonlit justice.
+  rendering_and_quality: Glittering early-1990s Toei magical girl frame with moonlit sparkle.
+  key_features: Sailor Moon nineties cel; Tadano designs; ribbons; moonlit rooftops
+  creative_brief: "Toei Sailor Moon anime look (1992) with Kazuko Tadano designs: long-legged nineties magical girls, sparkling transformation ribbons, moonlit Tokyo rooftops and pastel glittering cel. Carry it through Sailor Moon nineties cel, Tadano designs, ribbons, moonlit rooftops. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - blonde twin buns with a crescent moon tiara
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -63,19 +47,19 @@ avoidRules:
   - generic anime filter
   - prompt literal card reuse
   - fake UI
-  - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-162.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: blonde twin buns with a crescent moon tiara, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, noisy compression artifacts
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -90,3 +74,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Sailor Moon - Moonlit Ribbon Justice
+styleAnchors:
+  - Sailor Moon - Moonlit Ribbon Justice

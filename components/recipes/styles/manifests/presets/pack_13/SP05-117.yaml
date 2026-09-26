@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-117
 packId: pack_13
-name: Phosphor Sensor-Vision Grain
+name: Patlabor 2 Oshii - Phosphor Sensor-Vision Grain
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,37 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Render in high-gain monochrome with intensifier grain, lens vignette and a faint alignment echo;
-    any reticle-like cue stays abstract and peripheral, never interface text.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: use phosphor monochrome with a
-    restrained green or amber bias only if compatible with the prompt; no natural-color conversion.
-  lighting_and_shadow: >-
-    Apply sensor-like edge bloom and luminance falloff without claiming an actual heat or infrared
-    reading.
-  texture_and_material: >-
-    Use fine electronic grain, mild vignette and restrained edge echo; preserve the underlying
-    material and silhouette.
-  camera_and_composition: >-
-    Keep the original framing; suggest sensor mediation with peripheral alignment marks rather than
-    a fake screen.
-  atmosphere_and_mood: >-
-    Surveillance-like distance comes from signal texture; retain the prompt's mood without inventing
-    a device or operator.
-  rendering_and_quality: >-
-    Apply sensor texture to any subject without adding a camera, HUD, readable reticle, device or
-    surveillance scene. Keep important silhouettes and joins legible; no watermark, unrequested text
-    or interface.
-  key_features: >-
-    Phosphor monochrome; intensifier grain; lens vignette; faint alignment echo; restrained
-    infrared-like points.
-  creative_brief: 'Apply this visual treatment to the requested content: Phosphor monochrome; intensifier grain; lens vignette; faint alignment echo; restrained infrared-like points. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Mamoru Oshii Patlabor 2 film look (1993): sensor screens, night-vision green, military surveillance and cold tactical stillness.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with realistic sober designs and military gear. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Phosphor green monochrome, true to the Patlabor 2 Oshii palette.
+  lighting_and_shadow: Night-vision glow, lit the way Patlabor 2 Oshii lights its scenes.
+  texture_and_material: Sensor grain and scanlines, with the surface finish of Patlabor 2 Oshii.
+  camera_and_composition: Surveillance sensor compositions, framed the way Patlabor 2 Oshii composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with cold tactical stillness.
+  rendering_and_quality: Grainy sensor-view film frame, in the recognizable hand of Patlabor 2 Oshii.
+  key_features: Patlabor 2 sensors; night vision; surveillance
+  creative_brief: "Mamoru Oshii Patlabor 2 film look (1993): sensor screens, night-vision green, military surveillance and cold tactical stillness. Carry it through Patlabor 2 sensors, night vision, surveillance. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look
@@ -56,16 +37,14 @@ avoidRules:
   - grain obscuring silhouette or fine details
   - vignette crushing important values
   - alignment marks resembling an unrequested interface
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-117.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, grain obscuring silhouette or fine details, vignette
-    crushing important values, alignment marks resembling an unrequested interface
+  negativePrompt: photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, grain obscuring silhouette or fine details, vignette crushing important values, alignment marks resembling an unrequested interface, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -74,8 +53,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Patlabor 2 Oshii - Phosphor Sensor-Vision Grain
+styleAnchors:
+  - Patlabor 2 Oshii - Phosphor Sensor-Vision Grain

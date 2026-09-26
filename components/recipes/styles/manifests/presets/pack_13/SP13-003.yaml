@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP13-003
 packId: pack_13
-name: Soft Shojo Spring
+name: Arina Tanemura - Soft Shojo Spring
 category: 2. Slice Of Life, School And Music
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,17 +12,18 @@ tags:
   - anime-character-and-lifestyle
   - anime
   - slice-of-life
+  - reference-title
 visualDna:
-  aesthetic: 'Soft shojo spring anime: airy pastel frames with fine elegant lines, sparkling eyes and drifting petals.'
-  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: fine thin contours, tall slender figures, large glossy eyes with many highlights, petals and light sparkles drifting through the frame."
-  color_and_tone: Pastel pink, mint, cream and pale sky blue, used consistently across subject and background.
-  lighting_and_shadow: Soft diffused spring daylight with gentle bloom, expressed through the style rather than photographic lighting.
-  texture_and_material: Light cel with soft painted gradients and screentone-like sparkle.
-  camera_and_composition: Intimate close and mid shots with lots of air.
-  atmosphere_and_mood: Tender, hopeful, shy and dreamy, driven by the construction, color and rhythm.
-  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  key_features: fine lines; sparkling eyes; drifting petals; pastel bloom
-  creative_brief: "Soft shojo spring anime: airy pastel frames with fine elegant lines, sparkling eyes and drifting petals. Carry it through fine lines, sparkling eyes, drifting petals, pastel bloom. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Arina Tanemura shojo manga look: enormous sparkling eyes with many highlights, flowing ribbon-like hair, floral frames, lace and dreamy pastel romance.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Tanemura designs, huge sparkling eyes, long flowing hair, delicate hands and frilly romantic clothing. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Pastel cherry pink, lavender, mint and cream with sparkling white highlights everywhere.
+  lighting_and_shadow: Dreamy diffuse glow with sparkles, petals and soft halos around the figures.
+  texture_and_material: Delicate fine shojo line, floral borders, lace, sparkle tones and screentone petals.
+  camera_and_composition: Romantic framed close-ups surrounded by flowers, petals and decorative borders.
+  atmosphere_and_mood: Keep the requested mood with sweet blossoming romance.
+  rendering_and_quality: Ornate sparkling shojo manga illustration with dreamy pastel romance.
+  key_features: Arina Tanemura sparkle eyes; flowing hair; floral frames; pastel romance
+  creative_brief: "Arina Tanemura shojo manga look: enormous sparkling eyes with many highlights, flowing ribbon-like hair, floral frames, lace and dreamy pastel romance. Carry it through Arina Tanemura sparkle eyes, flowing hair, floral frames, pastel romance. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -49,10 +50,14 @@ avoidRules:
   - UI overlay
   - franchise likeness
   - real person likeness
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-003.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, gritty, horror, watermark, text, logo, classroom dependency, idol stage dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, gritty, horror, watermark, text, logo, classroom dependency, idol stage dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -62,8 +67,12 @@ taxonomy:
     - anime-character-and-lifestyle
     - anime
     - slice-of-life
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Arina Tanemura - Soft Shojo Spring
+styleAnchors:
+  - Arina Tanemura - Soft Shojo Spring

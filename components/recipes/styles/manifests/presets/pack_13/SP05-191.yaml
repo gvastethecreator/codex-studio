@@ -3,7 +3,7 @@ id: SP05-191
 packId: pack_13
 name: Say I Love You - Night-Walk Intimacy
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,27 +13,16 @@ tags:
   - shojo-magical-girl-and-visionary-classics
   - reference-title
 visualDna:
-  aesthetic: >-
-    Anime line combines rounded contours, selectively pooled dark shapes, and small
-    reflective accents.
-  subject_treatment: >-
-    Keep relationships, distance, pose, count; assume no couple, walk, or night scene.
-  color_and_tone: >-
-    Deep teal, amber, pewter blue, natural subject neutrals, restrained contrast.
-  lighting_and_shadow: >-
-    Warm accents against cool values only when supported; otherwise retain prompt lighting.
-  texture_and_material: >-
-    Broken reflections only on wet or glossy surfaces already depicted; dry forms stay
-    matte.
-  camera_and_composition: >-
-    Preserve crop and spacing; neither close in nor separate subjects unless requested.
-  atmosphere_and_mood: >-
-    Intimacy only if requested; retain humor, action, or distance as intended.
-  rendering_and_quality: >-
-    Small highlights, open blacks, clean contours, no rain haze or cinematic blur.
-  key_features: >-
-    Rounded contour, teal-amber accent, localized reflections, spacing follows the prompt
-  creative_brief: 'Apply a visual treatment centered on rounded contour, teal-amber accent, localized reflections, spacing follows the prompt. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'Kanae Hazuki Say I Love You look: quiet intimate shojo romance, soft grey tones, night walks and tender closeness.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hazuki designs, soft faces, long hair and casual clothes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Soft grey, night blue and warm lamp light.
+  lighting_and_shadow: Streetlamp glow at night, lit the way Say I Love You lights its scenes.
+  texture_and_material: Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.
+  camera_and_composition: Intimate two-shots at night, framed the way Say I Love You composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with quiet intimate tenderness.
+  rendering_and_quality: Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.
+  key_features: Kanae Hazuki intimacy; night walks; soft grey
+  creative_brief: "Kanae Hazuki Say I Love You look: quiet intimate shojo romance, soft grey tones, night walks and tender closeness. Carry it through Kanae Hazuki intimacy, night walks, soft grey. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -58,17 +47,12 @@ avoidRules:
   - fake UI
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-191.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -83,3 +67,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Say I Love You - Night-Walk Intimacy
+styleAnchors:
+  - Say I Love You - Night-Walk Intimacy

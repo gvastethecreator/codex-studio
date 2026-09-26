@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP13-011
 packId: pack_13
-name: Meikyuu Dungeon Glow
+name: Delicious in Dungeon Trigger - Meikyuu Dungeon Glow
 category: 1. Core Anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,18 +11,22 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Dungeon glow anime: torchlit labyrinth frames with glowing magic circles, dark stone and stylized monsters.'
-  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: clean lines, strong cel shadow, magic drawn as glowing shapes, monsters stylized with readable silhouettes."
-  color_and_tone: Deep blue stone with torch orange and magic teal.
-  lighting_and_shadow: Torch and magic glow in darkness, expressed through the style rather than photographic lighting.
-  texture_and_material: Cel with glowing effect overlays, visible at a glance as the signature of the style.
-  camera_and_composition: Corridor and chamber frames with depth, arranged so the subject still reads at a glance.
-  atmosphere_and_mood: Tense, adventurous, eerie and exciting, driven by the construction, color and rhythm.
-  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  key_features: torchlight; magic glow; dark stone; stylized monsters
-  creative_brief: "Dungeon glow anime: torchlit labyrinth frames with glowing magic circles, dark stone and stylized monsters. Carry it through torchlight, magic glow, dark stone, stylized monsters. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Studio Trigger Delicious in Dungeon anime look (2024): crisp warm designs, glowing layered dungeon architecture, detailed monster ecology and cozy adventuring party dynamics.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Trigger designs, expressive faces, practical adventurer gear, and monsters with believable anatomy. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Dungeon teal glow, warm torch amber and cool stone grey through deep halls.
+  lighting_and_shadow: Teal magic circles glowing far below and warm torchlight in deep stone halls.
+  texture_and_material: Contemporary digital television cel with clean outlines, crisp highlights and composited painted backgrounds.
+  camera_and_composition: Spiral descents, glowing labyrinth wide shots and cozy party close-ups.
+  atmosphere_and_mood: Keep the requested mood with curious glowing descent.
+  rendering_and_quality: Warm polished Trigger frame with detailed dungeon glow and ecology.
+  key_features: Dungeon Meshi Trigger; glowing labyrinths; monster ecology; cozy party
+  creative_brief: "Studio Trigger Delicious in Dungeon anime look (2024): crisp warm designs, glowing layered dungeon architecture, detailed monster ecology and cozy adventuring party dynamics. Carry it through Dungeon Meshi Trigger, glowing labyrinths, monster ecology, cozy party. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a short-haired elf mage with a staff
+  - a bearded dwarf cook
+  - existing franchise characters
   - existing anime character likeness
   - studio or franchise logo
   - readable text
@@ -47,10 +51,13 @@ avoidRules:
   - UI overlay
   - franchise likeness
   - real person likeness
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-011.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, daylight, flat color only, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts
+  negativePrompt: a short-haired elf mage with a staff, a bearded dwarf cook, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, daylight, flat color only, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -59,8 +66,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Delicious in Dungeon Trigger - Meikyuu Dungeon Glow
+styleAnchors:
+  - Delicious in Dungeon Trigger - Meikyuu Dungeon Glow

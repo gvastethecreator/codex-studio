@@ -5,118 +5,113 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-324',
-    name: 'Elastic Rom-Com Slapstick Timing',
+    name: 'Rumiko Takahashi - Elastic Rom-Com Slapstick Timing',
+    displayName: 'Rumiko Takahashi - Elastic Rom-Com Slapstick Timing',
+    styleAnchors: ['Rumiko Takahashi - Elastic Rom-Com Slapstick Timing'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, identity-changing squash-and-stretch, smear trails detached from prompted motion, motion blur obscuring contour, grain obscuring the clean rounded line",
+      "a pigtailed martial artist in a red Chinese shirt, existing franchise characters, photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, identity-changing squash-and-stretch, smear trails detached from prompted motion, motion blur obscuring contour, grain obscuring the clean rounded line, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'Round, elastic contours pair with brief squash-and-stretch and short comic smears; make reaction timing and buoyant affection the drawing rhythm, without inventing a gag or relationship.',
+        'Rumiko Takahashi manga look as in Ranma 1/2: round clean faces, elastic slapstick bodies, martial-arts comedy, quick panel timing and cheerful romantic chaos.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
-      color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: bright, clean cel values with cheerful pastel accents and clear separation between subject and ground; keep the accent colors attached to the prompt.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Takahashi designs, round faces, big simple eyes and springy energetic bodies. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Black ink with light tone, and bright flat color in color pages.',
       lighting_and_shadow:
-        'Use crisp cel shadow shapes and a small rim highlight to punctuate an existing expression or impact; do not turn stillness into motion.',
+        'Flat bright comic light, lit the way Rumiko Takahashi lights its scenes.',
       texture_and_material:
-        'Keep outlines smooth and rounded; reserve smear marks for motion already present, and keep fills clean rather than gritty.',
+        'Clean round brush-pen line and light tone, with the surface finish of Rumiko Takahashi.',
       camera_and_composition:
-        'Let contour compression and extension emphasize the existing pose; keep the prompted crop, silhouette and layout.',
-      atmosphere_and_mood:
-        'Playful timing and warm buoyancy come from the line rhythm; preserve whatever emotional register the prompt requests.',
+        'Quick comic panels and slapstick action, framed the way Rumiko Takahashi composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with bouncy romantic slapstick.',
       rendering_and_quality:
-        'Keep deformation local and reversible: preserve recognizable identity and construction, and add no blush, hearts, props or reaction marks unless requested. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Comic smears; expressive reaction timing; controlled squash-and-stretch; readable rounded silhouettes; buoyant tension; bright cartoon clarity.',
+        'Clean lively comedy manga illustration, in the recognizable hand of Rumiko Takahashi.',
+      key_features: 'Rumiko Takahashi roundness; slapstick; rom-com; martial comedy',
       creative_brief:
-        'Apply this visual treatment to the requested content: Comic smears; expressive reaction timing; controlled squash-and-stretch; readable rounded silhouettes; buoyant tension; bright cartoon clarity. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Rumiko Takahashi manga look as in Ranma 1/2: round clean faces, elastic slapstick bodies, martial-arts comedy, quick panel timing and cheerful romantic chaos. Carry it through Rumiko Takahashi roundness, slapstick, rom-com, martial comedy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-323',
-    name: 'Prism-Glamour Transformation Polish',
+    name: 'Naoko Takeuchi - Prism-Glamour Transformation Polish',
+    displayName: 'Naoko Takeuchi - Prism-Glamour Transformation Polish',
+    styleAnchors: ['Naoko Takeuchi - Prism-Glamour Transformation Polish'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, coarse ink obscuring tapered contour, opaque overlays hiding prismatic facets, specular glare erasing edge detail",
+      "blonde twin buns with a crescent moon tiara, existing franchise characters, photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, coarse ink obscuring tapered contour, opaque overlays hiding prismatic facets, specular glare erasing edge detail, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'Fine tapered lines and layered translucent ribbons sweep around the subject; prismatic facets and polished shoujo glamour create the signature transformation sheen without requiring a transformation scene.',
+        'Naoko Takeuchi manga art: fashion-illustration magical girls with very long legs, watercolor color pages, jewels, crescent moons, prism light and glamorous transformation.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
-      color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: use luminous jewel and pastel hues with small prismatic shifts at overlaps; retain explicit colors and avoid blanket sparkle.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Takeuchi designs, very long legs, slender bodies, big jeweled eyes and glamorous fashion-inspired costumes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Watercolor pastel pinks, lavender, silver and prism rainbows.',
       lighting_and_shadow:
-        'Soft backlight and crisp glints belong at ribbon crossings and facets; respect the prompted light direction.',
+        'Prism light and sparkling jewel glints, lit the way Naoko Takeuchi lights its scenes.',
       texture_and_material:
-        'Keep ribbon-like forms as graphic line paths and translucent glazes, not new physical accessories; use fine clean contours and a polished surface.',
+        'Watercolor washes and fine fashion-illustration line, with the surface finish of Naoko Takeuchi.',
       camera_and_composition:
-        'Use flowing arcs to guide attention around the requested form; keep the original crop, pose and silhouette legible.',
-      atmosphere_and_mood:
-        'Tender celestial polish is conveyed by layered light and graceful rhythm; do not add a romantic relationship or magical event.',
+        'Fashion-plate full-body compositions, framed the way Naoko Takeuchi composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with glamorous prism transformation.',
       rendering_and_quality:
-        'Apply the glow and flowing contour to any requested subject without adding jewelry, costume, stars, wings or transformation props. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Prismatic sparkle; tapered contour; ribbon-like motion; gem-light accents; layered translucent facets; polished shoujo finish.',
+        'Glamorous watercolor manga illustration, in the recognizable hand of Naoko Takeuchi.',
+      key_features: 'Naoko Takeuchi fashion; long legs; watercolor; prism glamour',
       creative_brief:
-        'Apply this visual treatment to the requested content: Prismatic sparkle; tapered contour; ribbon-like motion; gem-light accents; layered translucent facets; polished shoujo finish. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Naoko Takeuchi manga art: fashion-illustration magical girls with very long legs, watercolor color pages, jewels, crescent moons, prism light and glamorous transformation. Carry it through Naoko Takeuchi fashion, long legs, watercolor, prism glamour. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-331',
-    name: 'Chrome Impact Spectacle',
+    name: 'Yusuke Murata - Chrome Impact Hero Frame',
+    displayName: 'Yusuke Murata - Chrome Impact Hero Frame',
+    styleAnchors: ['Yusuke Murata - Chrome Impact Hero Frame'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, shard accents obscuring the source silhouette, uniform chrome conversion replacing source materials, bloom erasing mirror-edge detail, impact vectors unrelated to prompted force",
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, shard accents obscuring the source silhouette, uniform chrome conversion replacing source materials, bloom erasing mirror-edge detail, impact vectors unrelated to prompted force, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'Angular cel cuts, mirror-edge glints and shard-like cyan/magenta accents give this style its high-contrast impact; keep chrome as a highlight language rather than changing every material to metal.',
+        'Yusuke Murata manga art as in One-Punch Man: hyper-detailed dynamic action, chrome reflections, impossible perspective and virtuoso destruction.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
-      color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: anchor the palette in black, white and hard value cuts, with controlled cyan and magenta shards; preserve prompt-specified colors where they identify the subject.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Murata detail, athletic heroes and hyper-detailed armor. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Black ink with chrome tones and cyan-magenta glints in color.',
       lighting_and_shadow:
-        'Use sharp specular edge glints only on surfaces that plausibly catch light; hard cel shadows carry impact without generic bloom.',
+        'Chrome glints and impact flashes, lit the way Yusuke Murata lights its scenes.',
       texture_and_material:
-        'Favor crisp angular contours, reflective edge accents and a few graphic shards; preserve the source material cues and avoid noisy metallic texture everywhere.',
+        'Hyper-detailed ink and debris, with the surface finish of Yusuke Murata.',
       camera_and_composition:
-        'Use diagonal cuts and directional accents to energize the existing composition; do not add movement or reframe a quiet prompt as an action shot.',
-      atmosphere_and_mood:
-        'Spectacular tension comes from contrast and edge rhythm; honor a calm or restrained prompt when specified.',
+        'Impossible dynamic perspective, framed the way Yusuke Murata composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with virtuoso heroic impact.',
       rendering_and_quality:
-        'Retain the source pose, object structure and material identity; no forced chrome conversion, shards, explosion or speed lines. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Angular cel-shadow cuts; mirror-edge glints; black-and-white value blocks; cyan/magenta shards; high-impact contour.',
+        'Virtuoso action manga illustration, in the recognizable hand of Yusuke Murata.',
+      key_features: 'Yusuke Murata detail; chrome; dynamic perspective; destruction',
       creative_brief:
-        'Apply this visual treatment to the requested content: Angular cel-shadow cuts; mirror-edge glints; black-and-white value blocks; cyan/magenta shards; high-impact contour. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Yusuke Murata manga art as in One-Punch Man: hyper-detailed dynamic action, chrome reflections, impossible perspective and virtuoso destruction. Carry it through Yusuke Murata detail, chrome, dynamic perspective, destruction. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-334',
-    name: 'Emergency Storyboard Tension',
+    name: 'Hideaki Anno - Emergency Storyboard Tension',
+    displayName: 'Hideaki Anno - Emergency Storyboard Tension',
+    styleAnchors: ['Hideaki Anno - Emergency Storyboard Tension'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, shadow masses merging into unreadable black, unstructured pencil noise obscuring contours, blurred action vectors",
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, shadow masses merging into unreadable black, unstructured pencil noise obscuring contours, blurred action vectors, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'Rough graphite and brush contours break and restart around compressed shadow masses; a few cyan and rust-red accents create urgent storyboard tension without drawing literal panels.',
+        'Hideaki Anno storyboard and layout look: rough graphite storyboards, bureaucratic emergency staging, telephoto compositions and tense quick cutting.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
-      color_and_tone:
-        "Palette defaults apply only where the prompt leaves color open: restrict color to soot-dark values with sparse cyan and rust-red notes; follow the prompt's palette when color carries meaning.",
-      lighting_and_shadow:
-        'Use broad, compressed shadow blocks and selective hard light to clarify the existing focal action; respect requested light and exposure.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people as rough graphite figures in tense emergency scenes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Graphite grey and warning orange, true to the Hideaki Anno palette.',
+      lighting_and_shadow: 'Harsh emergency light, lit the way Hideaki Anno lights its scenes.',
       texture_and_material:
-        'Show searching pencil, dry brush and uneven ink at contour breaks; let construction remain visible but keep it controlled.',
+        'Rough graphite storyboard lines, with the surface finish of Hideaki Anno.',
       camera_and_composition:
-        'Build pressure with tight value grouping and interrupted edges; preserve camera, crop and action rather than imposing a storyboard frame.',
-      atmosphere_and_mood:
-        'Urgency is carried by the shadow mass and broken line; do not add panic, danger or a new event to a quiet subject.',
+        'Telephoto staging and quick cuts, framed the way Hideaki Anno composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with tense emergency urgency.',
       rendering_and_quality:
-        'Use storyboard mark-making on any prompted subject without adding panels, captions, props or an emergency scenario. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Rough graphite/ink; compressed black masses; interrupted contours; sparse cyan/rust accents; storyboard-like economy.',
+        'Rough storyboard illustration, in the recognizable hand of Hideaki Anno.',
+      key_features: 'Anno storyboards; graphite; emergency staging',
       creative_brief:
-        'Apply this visual treatment to the requested content: Rough graphite/ink; compressed black masses; interrupted contours; sparse cyan/rust accents; storyboard-like economy. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Hideaki Anno storyboard and layout look: rough graphite storyboards, bureaucratic emergency staging, telephoto compositions and tense quick cutting. Carry it through Anno storyboards, graphite, emergency staging. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
@@ -152,1074 +147,1018 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP05-342',
-    name: 'Reality-Slip Reflection Continuity',
+    name: 'Satoshi Kon - Reality-Slip Reflection Continuity',
+    displayName: 'Satoshi Kon - Reality-Slip Reflection Continuity',
+    styleAnchors: ['Satoshi Kon - Reality-Slip Reflection Continuity'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, multiple reflection echoes obscuring source form, alignment slip altering subject identity, unrequested duplicate forms",
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, multiple reflection echoes obscuring source form, alignment slip altering subject identity, unrequested duplicate forms, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'Create a small warm/cool edge echo across an existing reflective boundary or adjacent contour; a slight continuity slip should disturb a stable image without becoming a dream collage.',
+        'Satoshi Kon manga and film look: grounded realistic adults, mirrors and reflections, seamless match-cuts where reality slips into illusion.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kon realism, grounded adult faces and ordinary clothes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: keep the base palette coherent and shift only the echoed edge between warm and cool; preserve prompt color.',
+        'Muted realistic tones with uncanny accents, true to the Satoshi Kon palette.',
       lighting_and_shadow:
-        'Use controlled reflected highlights and a narrow offset glint; do not invent a light source or reflective surface.',
-      texture_and_material:
-        'Retain original materials; use a fine doubled edge or shifted reflection rather than blur, distortion or added objects.',
+        'Ordinary light with uncanny reflections, lit the way Satoshi Kon lights its scenes.',
+      texture_and_material: 'Precise realist line, with the surface finish of Satoshi Kon.',
       camera_and_composition:
-        'Keep the composition stable while allowing a localized alignment drift at an existing boundary; preserve the original crop.',
-      atmosphere_and_mood:
-        'Uncanny continuity comes from a nearly correct reflection; do not add surreal events or chaos.',
+        'Mirror compositions and match-cut continuity, framed the way Satoshi Kon composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with uncanny reality slip.',
       rendering_and_quality:
-        'If no reflective plane is present, use a subtle contour echo on an existing boundary; add no mirror, duplicate subject or collage. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Offset reflection edge; warm/cool echo; localized alignment slip; stable surrounding forms; restrained uncanny detail.',
+        'Precise uncanny realist illustration, in the recognizable hand of Satoshi Kon.',
+      key_features: 'Satoshi Kon mirrors; reality slips; match cuts',
       creative_brief:
-        'Apply this visual treatment to the requested content: Offset reflection edge; warm/cool echo; localized alignment slip; stable surrounding forms; restrained uncanny detail. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Satoshi Kon manga and film look: grounded realistic adults, mirrors and reflections, seamless match-cuts where reality slips into illusion. Carry it through Satoshi Kon mirrors, reality slips, match cuts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-333',
     name: 'Hiroyuki Okiura - Quiet Human Naturalism',
+    displayName: 'Hiroyuki Okiura - Quiet Human Naturalism',
+    styleAnchors: ['Hiroyuki Okiura - Quiet Human Naturalism'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
       "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, distorted proportions obscuring observed weight, decorative effects concealing naturalistic contour, surface glare masking material cues, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'A drawing technique, not a copy of any work: observational naturalism, believable weight, quiet contour economy and environmental detail integrated into the same visual space.',
+        'Hiroyuki Okiura animation look as in A Letter to Momo: meticulous realistic acting, accurate anatomy, quiet everyday gestures and warm natural light.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
-      color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: use restrained, natural color and nuanced values; keep skin, object and setting colors faithful to the prompt.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Okiura realism, accurate anatomy and natural gestures. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Warm natural everyday tones, true to the Hiroyuki Okiura palette.',
       lighting_and_shadow:
-        'Favor plausible ambient daylight and soft contact shadows; follow the stated source and time of day.',
-      texture_and_material:
-        'Use fine, economical line and small grounded texture; detail the environment only where it is already present.',
+        'Soft natural morning light, lit the way Hiroyuki Okiura lights its scenes.',
+      texture_and_material: 'Precise realistic cel, with the surface finish of Hiroyuki Okiura.',
       camera_and_composition:
-        'Compose with patient observation and natural spacing; do not force a human-centered shot or landscape.',
-      atmosphere_and_mood:
-        'Quiet realism comes from observed form and weight; preserve the requested tone rather than making every subject solemn.',
+        'Quiet observational compositions, framed the way Hiroyuki Okiura composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with quiet human warmth.',
       rendering_and_quality:
-        'Apply the drawing and observation method to any subject; do not copy a character, shot, costume or scene from the referenced artist. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Observational naturalism; economical contour; believable weight; quiet environmental integration; nuanced light.',
+        'Meticulous naturalist animation frame, in the recognizable hand of Hiroyuki Okiura.',
+      key_features: 'Okiura naturalism; precise acting; everyday gestures',
       creative_brief:
-        'Apply this visual treatment to the requested content: Observational naturalism; economical contour; believable weight; quiet environmental integration; nuanced light. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Hiroyuki Okiura animation look as in A Letter to Momo: meticulous realistic acting, accurate anatomy, quiet everyday gestures and warm natural light. Carry it through Okiura naturalism, precise acting, everyday gestures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-335',
     name: 'Haruko Ichikawa - Mineral Void Serenity',
+    displayName: 'Haruko Ichikawa - Mineral Void Serenity',
+    styleAnchors: ['Haruko Ichikawa - Mineral Void Serenity'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
       "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, opaque highlights hiding mineral edge transmission, muddy values collapsing pale planes, ornament crowding negative space, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'A drawing technique, not a copy of any work: fine fragile contours, pale mineral planes, translucent edge values and large areas of deliberate void.',
+        'Haruko Ichikawa manga look as in Land of the Lustrous: delicate sparse lines, vast white voids, translucent mineral bodies and serene minimal compositions.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
-      color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: use cool pale mineral hues and clear light/dark separation; respect requested color and do not muddy the palette.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw figures as translucent mineral beings with delicate sparse lines. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Pale mineral tints and vast white, true to the Haruko Ichikawa palette.',
       lighting_and_shadow:
-        "Let light pass along edges and through thin-looking planes; avoid opaque plastic shine and preserve the prompt's lighting.",
-      texture_and_material:
-        'Use fine line, softly faceted mineral shading and sparse surface detail; keep the depicted material recognizable.',
+        'Bright white void light, lit the way Haruko Ichikawa lights its scenes.',
+      texture_and_material: 'Delicate sparse ink line, with the surface finish of Haruko Ichikawa.',
       camera_and_composition:
-        'Balance delicate forms against open negative space without changing the source crop or simplifying away requested elements.',
-      atmosphere_and_mood:
-        "Serenity comes from pale planes and empty space; keep the prompt's emotional meaning and avoid adding spiritual symbolism.",
+        'Minimal compositions with vast empty space, framed the way Haruko Ichikawa composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with serene mineral solitude.',
       rendering_and_quality:
-        'Keep the method subject-neutral and material-aware; do not turn a subject into crystal or copy a character or panel. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Fine fragile contour; pale mineral planes; translucent edges; broad void; quiet faceting.',
+        'Minimal delicate manga illustration, in the recognizable hand of Haruko Ichikawa.',
+      key_features: 'Haruko Ichikawa voids; mineral bodies; sparse line',
       creative_brief:
-        'Apply this visual treatment to the requested content: Fine fragile contour; pale mineral planes; translucent edges; broad void; quiet faceting. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Haruko Ichikawa manga look as in Land of the Lustrous: delicate sparse lines, vast white voids, translucent mineral bodies and serene minimal compositions. Carry it through Haruko Ichikawa voids, mineral bodies, sparse line. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-341',
     name: 'Hiromu Arakawa - Mechanical Warmth Ensemble',
+    displayName: 'Hiromu Arakawa - Mechanical Warmth Ensemble',
+    styleAnchors: ['Hiromu Arakawa - Mechanical Warmth Ensemble'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
       "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, unreadable joins on constructed parts, sterile plastic sheen obscuring drawn contour, structural detail invented on unconstructed forms, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'A drawing technique, not a copy of any work: sturdy, hand-drawn contours, clearly articulated joins and practical mechanical detail balanced by human warmth.',
+        'Hiromu Arakawa manga look as in Fullmetal Alchemist and Silver Spoon: sturdy warm characters, clear expressive faces, detailed mechanical limbs and ensemble camaraderie.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
-      color_and_tone:
-        "Palette defaults apply only where the prompt leaves color open: use warm ochre, brass or earth accents where useful, while keeping the prompt's colors and material distinctions.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Arakawa designs, sturdy bodies, expressive faces and practical clothes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Black ink with warm tones in color pages.',
       lighting_and_shadow:
-        'Use readable cel shadows and warm reflected accents; maintain the light direction requested.',
+        'Warm campfire and daylight, lit the way Hiromu Arakawa lights its scenes.',
       texture_and_material:
-        'Give constructed parts clear seams, joints and wear only when those parts exist; keep linework sturdy rather than cold or clinical.',
+        'Clean confident ink line and mechanical detail, with the surface finish of Hiromu Arakawa.',
       camera_and_composition:
-        'Use ensemble-like clarity to separate parts and figures already present; preserve count, placement and framing.',
-      atmosphere_and_mood:
-        'Mechanical warmth balances competence and approachability; do not force grimness, armor or sentiment into the prompt.',
+        'Ensemble compositions, framed the way Hiromu Arakawa composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with warm mechanical camaraderie.',
       rendering_and_quality:
-        'Apply the line and structural clarity to any subject; do not add armor, machinery, characters or a copied scene. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Sturdy contour; articulated joins; practical mechanical detail; warm accents; readable ensemble staging.',
+        'Warm clear manga illustration, in the recognizable hand of Hiromu Arakawa.',
+      key_features: 'Hiromu Arakawa warmth; mechanical limbs; ensemble',
       creative_brief:
-        'Apply this visual treatment to the requested content: Sturdy contour; articulated joins; practical mechanical detail; warm accents; readable ensemble staging. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Hiromu Arakawa manga look as in Fullmetal Alchemist and Silver Spoon: sturdy warm characters, clear expressive faces, detailed mechanical limbs and ensemble camaraderie. Carry it through Hiromu Arakawa warmth, mechanical limbs, ensemble. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-328',
-    name: 'Retrofuture Distance Melancholy',
+    name: 'Leiji Matsumoto - Retrofuture Distance Melancholy',
+    displayName: 'Leiji Matsumoto - Retrofuture Distance Melancholy',
+    styleAnchors: ['Leiji Matsumoto - Retrofuture Distance Melancholy'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, flattened depth obscuring layered distance, grain obscuring near-form contours, blur collapsing near/far separation",
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, flattened depth obscuring layered distance, grain obscuring near-form contours, blur collapsing near/far separation, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'Layer cool, faded forms through analogue distance: soft atmospheric separation, muted retrofuture color and a restrained film-like grain, without requiring machines or a city.',
+        'Leiji Matsumoto manga look: gaunt romantic figures, tall elegant women with long lashes, stubby comic men, mechanical gauges and melancholy starry retrofuture.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
-      color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: favor muted steel blue, cyan and violet with gentle value falloff; retain any prompt-specified focal color.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Leiji contrast, tall elegant long-lashed figures and short stubby men in coats. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Black ink with starry tone and deep blue in color.',
       lighting_and_shadow:
-        'Use diffused, low-contrast light and distant haze only where the scene supports depth; respect the prompted illumination.',
+        'Starlight and gauge glow, lit the way Leiji Matsumoto lights its scenes.',
       texture_and_material:
-        'Apply fine analogue grain and softened far contours, keeping near details and actual materials readable.',
+        'Dense mechanical gauges and fine ink, with the surface finish of Leiji Matsumoto.',
       camera_and_composition:
-        'Create depth through layered value and edge softness, not added architecture or a forced wide shot.',
-      atmosphere_and_mood:
-        "Melancholy comes from distance and faded color; preserve the prompt's emotional register.",
+        'Lonely distant compositions, framed the way Leiji Matsumoto composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with lonely retrofuture melancholy.',
       rendering_and_quality:
-        'Transfer the distance treatment to any subject without adding technology, skyline, vehicle or retro props. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Muted retrofuture palette; analogue grain; layered distance; softened far contours; quiet atmospheric separation.',
+        'Romantic retrofuture manga illustration, in the recognizable hand of Leiji Matsumoto.',
+      key_features: 'Leiji Matsumoto gauges; tall elegant women; stubby men; stars',
       creative_brief:
-        'Apply this visual treatment to the requested content: Muted retrofuture palette; analogue grain; layered distance; softened far contours; quiet atmospheric separation. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Leiji Matsumoto manga look: gaunt romantic figures, tall elegant women with long lashes, stubby comic men, mechanical gauges and melancholy starry retrofuture. Carry it through Leiji Matsumoto gauges, tall elegant women, stubby men, stars. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-109',
-    name: 'Kinetic Impact-Line Choreography',
+    name: 'Masashi Kishimoto - Kinetic Impact-Line Choreography',
+    displayName: 'Masashi Kishimoto - Kinetic Impact-Line Choreography',
+    styleAnchors: ['Masashi Kishimoto - Kinetic Impact-Line Choreography'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, speed lines unrelated to prompted motion, afterimage trails detached from moving forms, impact radials obscuring silhouette",
+      "an orange jumpsuit ninja with whisker marks, a leaf headband emblem, existing franchise characters, photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, speed lines unrelated to prompted motion, afterimage trails detached from moving forms, impact radials obscuring silhouette, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'Use radial speed lines, afterimage trails and impact bursts only to describe motion or force already present; keep the vectors directional and the subject readable.',
+        'Masashi Kishimoto manga look: dynamic ninja action choreography, radial impact lines, afterimages and sharp detailed panels.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
-      color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: preserve the prompt palette and reserve high-contrast accents for force paths and contact points.',
-      lighting_and_shadow:
-        'Use sharp value bursts and brief edge highlights to clarify the existing vector; do not add an energy aura by default.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kishimoto designs, sharp eyes and dynamic action poses. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Black ink with dynamic tone, true to the Masashi Kishimoto palette.',
+      lighting_and_shadow: 'Impact flashes, lit the way Masashi Kishimoto lights its scenes.',
       texture_and_material:
-        'Keep speed marks fine and directional, with sparse afterimages; avoid filling the whole frame with line noise.',
+        'Sharp ink and radial lines, with the surface finish of Masashi Kishimoto.',
       camera_and_composition:
-        'Align radiating marks to the prompted movement or impact while preserving pose, camera and layout.',
-      atmosphere_and_mood:
-        'Kinetic intensity is a graphic rendering of the requested action, not permission to invent action.',
+        'Dynamic action choreography, framed the way Masashi Kishimoto composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with kinetic martial energy.',
       rendering_and_quality:
-        'For still subjects, retain a still composition and use line rhythm only as a subtle graphic treatment; add no aura or impact event. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Directional speed-line forests; impact radials; restrained afterimage trails; force vectors; clear silhouette.',
+        'Dynamic action manga illustration, in the recognizable hand of Masashi Kishimoto.',
+      key_features: 'Kishimoto choreography; impact lines; afterimages',
       creative_brief:
-        'Apply this visual treatment to the requested content: Directional speed-line forests; impact radials; restrained afterimage trails; force vectors; clear silhouette. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Masashi Kishimoto manga look: dynamic ninja action choreography, radial impact lines, afterimages and sharp detailed panels. Carry it through Kishimoto choreography, impact lines, afterimages. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-336',
     name: 'Takeshi Koike - Razorline Velocity Poster',
+    displayName: 'Takeshi Koike - Razorline Velocity Poster',
+    styleAnchors: ['Takeshi Koike - Razorline Velocity Poster'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
       "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, slashes misaligned with requested action direction, black cutouts erasing subject-defining detail, hard color blocks merging adjacent forms, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'A drawing technique, not a copy of any work: razor-edged silhouettes, long graphic slashes, dense black cutouts and a flat vermilion/cream/navy poster palette.',
+        'Takeshi Koike illustration look as in his Lupin films: razor-thin sharp lines, huge black shadow shapes, long angular figures and cool poster compositions.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Koike stylization, long angular bodies and hard black shadows. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: use vermilion, cream, navy and decisive black masses; preserve prompt-critical colors and keep the palette flat.',
+        'Saturated flat color with massive blacks, true to the Takeshi Koike palette.',
       lighting_and_shadow:
-        'Hard, graphic light and shadow carve planes; any glint or highlight follows the prompted material.',
+        'Hard graphic light with black shadow shapes, lit the way Takeshi Koike lights its scenes.',
       texture_and_material:
-        'Favor sharp contour, clean flat fills and selective rough ink edges; no generic metallic gloss.',
+        'Razor-thin line and flat color, with the surface finish of Takeshi Koike.',
       camera_and_composition:
-        'Use long diagonals to reinforce the existing direction of action; preserve crop and do not impose a racing angle.',
-      atmosphere_and_mood:
-        'Velocity is conveyed by slashing line and poster contrast; keep still or quiet prompts still when requested.',
+        'Cool poster-like compositions, framed the way Takeshi Koike composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with cool razor velocity.',
       rendering_and_quality:
-        'Apply graphic edge and palette logic to any subject; add no vehicle, weapon, action pose or copied frame. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Razorline silhouette; black cutout pools; vermilion/cream/navy blocks; long slashes; poster-value contrast.',
+        'Stylish graphic poster illustration, in the recognizable hand of Takeshi Koike.',
+      key_features: 'Takeshi Koike razor line; black shadows; poster cool',
       creative_brief:
-        'Apply this visual treatment to the requested content: Razorline silhouette; black cutout pools; vermilion/cream/navy blocks; long slashes; poster-value contrast. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Takeshi Koike illustration look as in his Lupin films: razor-thin sharp lines, huge black shadow shapes, long angular figures and cool poster compositions. Carry it through Takeshi Koike razor line, black shadows, poster cool. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-322',
-    name: 'Celestial Vertical Ornament',
+    name: 'CLAMP - Celestial Vertical Ornament',
+    displayName: 'CLAMP - Celestial Vertical Ornament',
+    styleAnchors: ['CLAMP - Celestial Vertical Ornament'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, ornamental geometry obscuring source silhouette, heavy contour overwhelming fine geometry, ornament altering source proportions",
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, ornamental geometry obscuring source silhouette, heavy contour overwhelming fine geometry, ornament altering source proportions, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'Elongate existing contour accents and use fine celestial geometry, silver/navy/gold detail and poised spacing; do not alter anatomy or force a portrait crop.',
+        'CLAMP manga look as in X and Tsubasa: extremely elongated elegant figures, flowing robes and hair, celestial ornament, feathers and dramatic vertical page layouts.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
-      color_and_tone:
-        "Palette defaults apply only where the prompt leaves color open: use silver, deep navy and restrained gold accents around the prompt's own palette.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with CLAMP proportions, very long limbs, narrow faces, flowing robes and hair falling in long vertical lines. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Black ink with delicate tone, and pale gold and silver in color art.',
       lighting_and_shadow:
-        'Choose moonlike edge light only when compatible with the requested illumination; keep shadows delicate and legible.',
+        'Celestial glow and soft starlight, lit the way CLAMP lights its scenes.',
       texture_and_material:
-        'Render ornament as fine line and small geometric marks, not extra jewelry, clothing or symbols.',
+        'Fine elegant ink line, feathers and ornament, with the surface finish of CLAMP.',
       camera_and_composition:
-        'Use vertical spacing and slender accents inside the given composition; preserve aspect, crop and subject proportions.',
-      atmosphere_and_mood:
-        "Poised distance comes from spacing and delicate ornament; retain the prompt's mood rather than enforcing aloofness.",
+        'Tall vertical compositions spanning the page, framed the way CLAMP composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with celestial elegant destiny.',
       rendering_and_quality:
-        'Transfer the vertical line language to any subject without changing its proportions or adding a moon, halo or costume. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Elongated contour accents; fine celestial geometry; silver/navy/gold; poised negative space; restrained ornament.',
+        'Elegant ornamental manga illustration, in the recognizable hand of CLAMP.',
+      key_features: 'CLAMP elongation; celestial ornament; feathers; vertical layout',
       creative_brief:
-        'Apply this visual treatment to the requested content: Elongated contour accents; fine celestial geometry; silver/navy/gold; poised negative space; restrained ornament. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "CLAMP manga look as in X and Tsubasa: extremely elongated elegant figures, flowing robes and hair, celestial ornament, feathers and dramatic vertical page layouts. Carry it through CLAMP elongation, celestial ornament, feathers, vertical layout. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-332',
-    name: 'Ritual Allegory Icon System',
+    name: 'Kunihiko Ikuhara - Ritual Allegory Icon System',
+    displayName: 'Kunihiko Ikuhara - Ritual Allegory Icon System',
+    styleAnchors: ['Kunihiko Ikuhara - Ritual Allegory Icon System'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, prompt-unrelated repeated symbols, mark clutter obscuring emblematic hierarchy, unrequested invented iconography",
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, prompt-unrelated repeated symbols, mark clutter obscuring emblematic hierarchy, unrequested invented iconography, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        "Organize the prompt's existing forms into a clear emblematic silhouette and repeat only shapes already present; use flat ink and gold to create allegorical hierarchy without inventing symbols.",
+        'Kunihiko Ikuhara direction look as in Mawaru Penguindrum and Yurikuma: flat pictogram icons, repeated symbolic stock shots, theatrical allegory and bold graphic signage.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
-      color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: keep a compact ink, paper and gold palette, adapting it to explicit prompt colors.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with stylized elegant designs and pictogram-like symbolic figures. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Bold flat pink, red, black and white, true to the Kunihiko Ikuhara palette.',
       lighting_and_shadow:
-        'Use flat light/dark separation and restrained gold-like highlights; avoid cinematic lighting that obscures the emblematic read.',
+        'Theatrical flat lighting, lit the way Kunihiko Ikuhara lights its scenes.',
       texture_and_material:
-        'Favor flat areas, clean silhouette edges and repeated prompt-derived geometry; keep material cues legible.',
+        'Flat graphic pictograms and clean cel, with the surface finish of Kunihiko Ikuhara.',
       camera_and_composition:
-        'Give existing forms ordered visual hierarchy and balanced spacing without adding altar, frame or icon.',
-      atmosphere_and_mood:
-        "Ritual tone is a compositional cadence, not a new belief system or story; preserve the user's meaning.",
+        'Symmetrical symbolic compositions, framed the way Kunihiko Ikuhara composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with ritual allegorical theater.',
       rendering_and_quality:
-        'Use only geometry found in the supplied subject; add no religious sign, sigil, prop, label or ritual scene. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Emblematic silhouette; repeated prompt-derived shape; flat ink/gold contrast; ordered spacing; icon-like hierarchy.',
+        'Graphic allegorical animation frame, in the recognizable hand of Kunihiko Ikuhara.',
+      key_features: 'Ikuhara pictograms; allegory; symbolic repetition',
       creative_brief:
-        'Apply this visual treatment to the requested content: Emblematic silhouette; repeated prompt-derived shape; flat ink/gold contrast; ordered spacing; icon-like hierarchy. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Kunihiko Ikuhara direction look as in Mawaru Penguindrum and Yurikuma: flat pictogram icons, repeated symbolic stock shots, theatrical allegory and bold graphic signage. Carry it through Ikuhara pictograms, allegory, symbolic repetition. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-337',
-    name: 'Technomagic Draftsmanship Burst',
+    name: 'Yoh Yoshinari - Technomagic Draftsmanship Burst',
+    displayName: 'Yoh Yoshinari - Technomagic Draftsmanship Burst',
+    styleAnchors: ['Yoh Yoshinari - Technomagic Draftsmanship Burst'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, construction lines obscuring source contours, glow obscuring precise geometry, unrequested glyph-like marks",
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, construction lines obscuring source contours, glow obscuring precise geometry, unrequested glyph-like marks, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'Combine precise drafting contours with radial arcs, loose construction marks and a sparse glow; derive all technical or arcane geometry from prompt forms.',
+        'Yoh Yoshinari animation look as in Little Witch Academia: bouncy elastic magic, firework effects, blueprint-like technical magic and bright joyful draftsmanship.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
-      color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: use restrained dark/light contrast and a few luminous accents; keep prompt colors and avoid blanket neon.',
-      lighting_and_shadow:
-        'Place a narrow glow on existing edges or focal intersections; respect source, direction and exposure.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yoshinari designs, bouncy shapes and expressive faces. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Bright magic colors and blueprint cyan, true to the Yoh Yoshinari palette.',
+      lighting_and_shadow: 'Firework magic light, lit the way Yoh Yoshinari lights its scenes.',
       texture_and_material:
-        'Mix crisp construction lines with lightly sketched guides; do not turn effects into literal glyphs or interface.',
+        'Clean energetic line and effects, with the surface finish of Yoh Yoshinari.',
       camera_and_composition:
-        'Let arcs and guides follow the existing structure and perspective; keep framing and subject scale unchanged.',
-      atmosphere_and_mood:
-        'Wonder comes from the meeting of precise drawing and loose energy; do not invent magic, machinery or action.',
+        'Dynamic magic bursts, framed the way Yoh Yoshinari composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with joyful technomagic energy.',
       rendering_and_quality:
-        'Transfer the mark language to any subject without adding runes, diagrams, devices or a fantasy scenario. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Drafting contours; radial arcs; loose construction marks; sparse edge glow; clean perspective.',
+        'Energetic Trigger-style animation frame, in the recognizable hand of Yoh Yoshinari.',
+      key_features: 'Yoh Yoshinari magic; fireworks; blueprint arcs',
       creative_brief:
-        'Apply this visual treatment to the requested content: Drafting contours; radial arcs; loose construction marks; sparse edge glow; clean perspective. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Yoh Yoshinari animation look as in Little Witch Academia: bouncy elastic magic, firework effects, blueprint-like technical magic and bright joyful draftsmanship. Carry it through Yoh Yoshinari magic, fireworks, blueprint arcs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-111',
-    name: 'Ukiyo-e Woodblock Anime',
+    name: 'Miss Hokusai Production I.G - Ukiyo-e Woodblock Anime',
+    displayName: 'Miss Hokusai Production I.G - Ukiyo-e Woodblock Anime',
+    styleAnchors: ['Miss Hokusai Production I.G - Ukiyo-e Woodblock Anime'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, uncontrolled gradients erasing printed color boundaries, blurred contour erasing carved edges, hatching unrelated to the underlying form",
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, uncontrolled gradients erasing printed color boundaries, blurred contour erasing carved edges, hatching unrelated to the underlying form, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'Use carved contour, flat decorative color planes, bokashi bands and parallel line rhythm as a printmaking language; do not require waves, rain or Japanese scenery.',
+        'Production I.G Miss Hokusai look (2015) by Keiichi Hara: Edo woodblock world, graded indigo skies, painters’ studios and ukiyo-e staging.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Edo-period designs and kimono in ukiyo-e staging. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: keep flat color separations and restrained bokashi gradients; preserve the prompt palette and cultural details.',
+        'Graded indigo, vermilion and paper beige, true to the Miss Hokusai Production I.G palette.',
       lighting_and_shadow:
-        'Use printed value bands and clean silhouette contrast rather than photographic light; obey requested lighting cues.',
+        'Graded woodblock sky light, lit the way Miss Hokusai Production I.G lights its scenes.',
       texture_and_material:
-        'Simulate cut-line edges, slight ink variation and paper grain; keep hatching parallel and deliberate.',
+        'Woodblock-inspired flat color and line, with the surface finish of Miss Hokusai Production I.G.',
       camera_and_composition:
-        'Arrange line and color rhythm around the existing forms; do not impose landscape, horizon or decorative border.',
-      atmosphere_and_mood:
-        "Print-like clarity is the style; retain the prompt's mood and subject without adding cultural motifs.",
+        'Ukiyo-e compositions, framed the way Miss Hokusai Production I.G composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with Edo artistic wonder.',
       rendering_and_quality:
-        'Apply the printmaking mechanics to any requested subject without adding waves, rain, costume or symbols. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Woodblock contour; bokashi gradient fields; flat color planes; parallel carved marks; paper texture.',
+        'Woodblock-inspired feature frame, in the recognizable hand of Miss Hokusai Production I.G.',
+      key_features: 'Miss Hokusai Edo; woodblock gradients; ukiyo-e',
       creative_brief:
-        'Apply this visual treatment to the requested content: Woodblock contour; bokashi gradient fields; flat color planes; parallel carved marks; paper texture. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Production I.G Miss Hokusai look (2015) by Keiichi Hara: Edo woodblock world, graded indigo skies, painters’ studios and ukiyo-e staging. Carry it through Miss Hokusai Edo, woodblock gradients, ukiyo-e. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-327',
     name: 'Osamu Dezaki - Postcard Memory Freeze',
+    displayName: 'Osamu Dezaki - Postcard Memory Freeze',
+    styleAnchors: ['Osamu Dezaki - Postcard Memory Freeze'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
       "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, muddy value blocks hiding the held silhouette, distant-plane detail competing with focal form, rim highlights clipping the contour, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'A drawing technique, not a copy of any work: hold the existing beat as a poster-like freeze with bold silhouette, grouped values, selective rim and light film grain.',
+        'Osamu Dezaki direction look as in Ashita no Joe 2 and Aim for the Ace: painted pastel postcard freeze frames, triple-take zooms, split screens and harmonica-light melancholy.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with seventies-eighties realistic designs, strong faces and sporting clothes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: use a compact, emotionally clear palette with deliberate value groups; retain prompt-specific colors.',
+        'Pastel chalk postcard colors over dramatic darks, true to the Osamu Dezaki palette.',
       lighting_and_shadow:
-        "Add a selective rim only where the prompt's light supports it; keep shadow blocks broad and readable.",
+        'Dramatic backlight and hazy glow, lit the way Osamu Dezaki lights its scenes.',
       texture_and_material:
-        'Use painterly poster edges and subtle grain, not a literal postcard surface or frame.',
+        'Painted pastel-chalk freeze frames over cel, with the surface finish of Osamu Dezaki.',
       camera_and_composition:
-        'Emphasize the existing pose and pause; preserve requested camera, crop and surrounding content.',
-      atmosphere_and_mood:
-        'A suspended beat carries memory; do not imply a past event or romantic scene absent from the prompt.',
+        'Triple-take zooms and split screens, framed the way Osamu Dezaki composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with melancholy frozen memory.',
       rendering_and_quality:
-        'Apply the pause treatment to any subject without adding a postcard border, text, character or scene. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Held-beat freeze; bold silhouette; poster-value grouping; selective rim; subtle film grain.',
+        'Painterly postcard freeze-frame illustration, in the recognizable hand of Osamu Dezaki.',
+      key_features: 'Dezaki postcard freeze; triple takes; split screens',
       creative_brief:
-        'Apply this visual treatment to the requested content: Held-beat freeze; bold silhouette; poster-value grouping; selective rim; subtle film grain. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Osamu Dezaki direction look as in Ashita no Joe 2 and Aim for the Ace: painted pastel postcard freeze frames, triple-take zooms, split screens and harmonica-light melancholy. Carry it through Dezaki postcard freeze, triple takes, split screens. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-340',
-    name: 'Velvet Lash Refined Tension',
+    name: 'Akio Sugino - Velvet Lash Refined Tension',
+    displayName: 'Akio Sugino - Velvet Lash Refined Tension',
+    styleAnchors: ['Akio Sugino - Velvet Lash Refined Tension'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, thick contours obscuring delicate taper, highlights flattening line-weight variation, tangled marks obscuring source form",
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, thick contours obscuring delicate taper, highlights flattening line-weight variation, tangled marks obscuring source form, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'Use fine tapered contours, delicate line-weight changes and restrained soft shadow to create refined tension; do not apply lash or facial detail to non-facial forms.',
+        'Akio Sugino animation design look as in Rose of Versailles and Cat’s Eye: elegant long-lashed faces, refined eighties glamour and tense restrained drama.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
-      color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: choose muted, rich color and controlled contrast; honor requested colors without defaulting to monochrome.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Sugino elegance, long lashes, refined faces and elegant clothes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Velvet red, candle gold and deep shadow, true to the Akio Sugino palette.',
       lighting_and_shadow:
-        'Keep light soft and local, with a crisp accent only at existing focal edges.',
-      texture_and_material:
-        'Use smooth fine ink and soft tonal transitions; avoid plush texture that obscures the underlying material.',
+        'Candlelight and soft glamour glow, lit the way Akio Sugino lights its scenes.',
+      texture_and_material: 'Refined hand-drawn cel line, with the surface finish of Akio Sugino.',
       camera_and_composition:
-        'Guide attention with elegant taper and quiet spacing while preserving the original crop and layout.',
-      atmosphere_and_mood:
-        'Refinement is carried by control and line rhythm; follow the prompted mood and avoid forced sensuality.',
+        'Elegant dramatic close-ups, framed the way Akio Sugino composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with refined tense elegance.',
       rendering_and_quality:
-        'Transfer the contour method to any form without adding eyelashes, eyes, makeup, pose or persona. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Tapered contour; delicate line weight; restrained shadow; muted richness; quiet refined tension.',
+        'Elegant eighties animation frame, in the recognizable hand of Akio Sugino.',
+      key_features: 'Akio Sugino lashes; refined glamour; tension',
       creative_brief:
-        'Apply this visual treatment to the requested content: Tapered contour; delicate line weight; restrained shadow; muted richness; quiet refined tension. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Akio Sugino animation design look as in Rose of Versailles and Cat’s Eye: elegant long-lashed faces, refined eighties glamour and tense restrained drama. Carry it through Akio Sugino lashes, refined glamour, tension. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-325',
-    name: 'Scratchy Concrete-Poetry Drift',
+    name: 'Taiyo Matsumoto - Scratchy Concrete-Poetry Drift',
+    displayName: 'Taiyo Matsumoto - Scratchy Concrete-Poetry Drift',
+    styleAnchors: ['Taiyo Matsumoto - Scratchy Concrete-Poetry Drift'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, uniform smoothing erasing scraped-stroke texture, grain obscuring angled form direction, ornament covering the rough silhouette",
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, uniform smoothing erasing scraped-stroke texture, grain obscuring angled form direction, ornament covering the rough silhouette, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'Use coarse scraped marks, blocky angled lines and imperfect contour to create tactile graphic friction; let any tilt come from existing form rather than changing the composition.',
+        'Taiyo Matsumoto manga look as in Tekkonkinkreet and Sunny: wobbly scratchy pen lines, distorted perspective, lopsided figures and poetic urban melancholy.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
-      color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: favor ash, charcoal and small rust accents while respecting prompt-specified colors.',
-      lighting_and_shadow:
-        'Use hard-edged value blocks and dusty reflected light; do not impose a city or night scene.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Matsumoto designs, lopsided heads, lanky limbs and scruffy clothes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Black ink with scratchy tone and faded watercolor.',
+      lighting_and_shadow: 'Hazy poetic city light, lit the way Taiyo Matsumoto lights its scenes.',
       texture_and_material:
-        'Layer rough dry marks and concrete-like grain as a surface treatment without replacing the depicted material.',
+        'Scratchy wobbly pen lines and hatching, with the surface finish of Taiyo Matsumoto.',
       camera_and_composition:
-        'Let line angles create drift inside the existing layout; maintain camera, silhouette and perspective.',
-      atmosphere_and_mood:
-        'Poetic unease comes from roughness and imbalance; preserve the requested emotional meaning.',
+        'Distorted fisheye urban compositions, framed the way Taiyo Matsumoto composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with poetic urban melancholy.',
       rendering_and_quality:
-        'Use the material marks on any subject; do not add civic icons, buildings, sacred imagery or urban props. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Scraped strokes; coarse grain; angled/blocky contour; ash and rust accents; tactile graphic friction.',
+        'Idiosyncratic scratchy manga illustration, in the recognizable hand of Taiyo Matsumoto.',
+      key_features: 'Taiyo Matsumoto wobbly line; distorted perspective; urban poetry',
       creative_brief:
-        'Apply this visual treatment to the requested content: Scraped strokes; coarse grain; angled/blocky contour; ash and rust accents; tactile graphic friction. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Taiyo Matsumoto manga look as in Tekkonkinkreet and Sunny: wobbly scratchy pen lines, distorted perspective, lopsided figures and poetic urban melancholy. Carry it through Taiyo Matsumoto wobbly line, distorted perspective, urban poetry. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-118',
-    name: 'Backlit Contour Longing',
+    name: 'Hiroshi Nagai - Backlit Contour Longing',
+    displayName: 'Hiroshi Nagai - Backlit Contour Longing',
+    styleAnchors: ['Hiroshi Nagai - Backlit Contour Longing'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, rim bloom washing out silhouette detail, flare crossing the focal contour, edge light conflicting with prompted light direction",
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, rim bloom washing out silhouette detail, flare crossing the focal contour, edge light conflicting with prompted light direction, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        "Separate the subject from its ground with a warm rim contour and restrained flare haze; use silhouette only where the prompt's lighting supports it.",
+        'Hiroshi Nagai city pop illustration look: flat clean color, glowing sunsets, pools and palm trees, crisp backlit contours and nostalgic longing.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
-      color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: build a warm-to-cool transition around the rim while retaining the prompted palette and readable interior values.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people as small clean flat figures with glowing backlit contours. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Sunset orange, pool blue and palm green, true to the Hiroshi Nagai palette.',
       lighting_and_shadow:
-        'Keep backlight direction consistent with the prompt; use small bloom and soft falloff, not a forced sunset.',
-      texture_and_material:
-        'Use clean silhouette edges, delicate rim color and minimal haze; keep material texture visible.',
+        'Strong backlit sunset glow, lit the way Hiroshi Nagai lights its scenes.',
+      texture_and_material: 'Flat clean acrylic color, with the surface finish of Hiroshi Nagai.',
       camera_and_composition:
-        'Use sky-like negative space only when the source composition includes open background; do not add a horizon or reframe.',
-      atmosphere_and_mood:
-        "Longing is conveyed through separation and light falloff; preserve the prompt's mood and facial detail if requested.",
+        'Clean wide city pop compositions, framed the way Hiroshi Nagai composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with nostalgic backlit longing.',
       rendering_and_quality:
-        'Apply the backlight treatment to any requested form without forcing a sky, sunset, person or romantic pose. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Warm rim contour; silhouette separation; restrained flare haze; twilight color transition; posture-led emphasis.',
+        'Clean city pop illustration, in the recognizable hand of Hiroshi Nagai.',
+      key_features: 'Hiroshi Nagai city pop; backlit sunsets; flat color',
       creative_brief:
-        'Apply this visual treatment to the requested content: Warm rim contour; silhouette separation; restrained flare haze; twilight color transition; posture-led emphasis. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Hiroshi Nagai city pop illustration look: flat clean color, glowing sunsets, pools and palm trees, crisp backlit contours and nostalgic longing. Carry it through Hiroshi Nagai city pop, backlit sunsets, flat color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-113',
-    name: 'Leaded Jewel-Light Segmentation',
+    name: 'Madoka Magica SHAFT - Leaded Jewel-Light Segmentation',
+    displayName: 'Madoka Magica SHAFT - Leaded Jewel-Light Segmentation',
+    styleAnchors: ['Madoka Magica SHAFT - Leaded Jewel-Light Segmentation'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, pane fill hiding lead-like seam boundaries, bloom washing out segmentation, unprompted rosette geometry",
+      "a pink-haired magical girl with twin bows, a white cat-like creature with red eyes, existing franchise characters, photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, pane fill hiding lead-like seam boundaries, bloom washing out segmentation, unprompted rosette geometry, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'Segment existing forms with dark lead-like seams and luminous color panes; suggest transmitted light without converting every object into literal glass.',
+        'SHAFT Puella Magi Madoka Magica look (2011): stained-glass segmentation, cute Ume Aoki designs, jewel light and ominous symbolism.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
-      color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: use jewel-toned panes and clean boundaries while retaining prompt-critical color and local material cues.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Ume Aoki designs, big round eyes and costumes segmented like stained glass. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Jewel pink, violet, gold and dark glass lead lines.',
       lighting_and_shadow:
-        'Let light pass through pane-like color regions and catch seam edges; preserve the actual lighting setup.',
+        'Stained-glass jewel light, lit the way Madoka Magica SHAFT lights its scenes.',
       texture_and_material:
-        'Draw strong seam contours, small glass-like imperfections and rosette rhythms only when the source geometry supports them.',
+        'Leaded stained-glass segmentation, with the surface finish of Madoka Magica SHAFT.',
       camera_and_composition:
-        'Use segmentation to clarify existing shape planes; keep crop, silhouette and spatial layout intact.',
-      atmosphere_and_mood:
-        'Illuminated color feels crafted and quiet; honor requested darkness or subtlety by lowering glow, not deleting seams.',
+        'Symmetrical stained-glass compositions, framed the way Madoka Magica SHAFT composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with ominous jeweled beauty.',
       rendering_and_quality:
-        'Render the pane logic as a visual treatment while preserving material identity; add no window, rosette or stained-glass object. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Leaded segmentation; jewel translucency; transmitted color; seam highlights; controlled glass imperfection.',
+        'Stained-glass animation frame, in the recognizable hand of Madoka Magica SHAFT.',
+      key_features: 'Madoka stained glass; jewel light; symbolism',
       creative_brief:
-        'Apply this visual treatment to the requested content: Leaded segmentation; jewel translucency; transmitted color; seam highlights; controlled glass imperfection. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "SHAFT Puella Magi Madoka Magica look (2011): stained-glass segmentation, cute Ume Aoki designs, jewel light and ominous symbolism. Carry it through Madoka stained glass, jewel light, symbolism. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-326',
     name: 'Masaaki Yuasa - Rubber Reality Sprint',
+    displayName: 'Masaaki Yuasa - Rubber Reality Sprint',
+    styleAnchors: ['Masaaki Yuasa - Rubber Reality Sprint'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
       "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, elastic distortion changing identity or construction, bent planes breaking requested perspective, brush noise obscuring silhouette, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        "A drawing technique, not a copy of any work: loose, fluctuating contour, elastic drawing rhythm, bent planes and brushy spatial push/pull; preserve the subject's recognizable structure.",
+        'Masaaki Yuasa animation look: rubbery elastic bodies, reality bending with emotion, flat bold colors and exhilarating long sprints.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yuasa elasticity, stretchy limbs and simplified faces. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: use bold, simple color planes and flexible value shifts; retain the prompt palette.',
-      lighting_and_shadow:
-        'Let shadow shapes bend with the existing pose and lighting; avoid adding a sprint or kinetic blur by default.',
-      texture_and_material:
-        'Alternate clean and rough brush edges with elastic contour changes; do not morph material identity.',
+        'Flat bold colors and sudden psychedelic shifts, true to the Masaaki Yuasa palette.',
+      lighting_and_shadow: 'Flat graphic light, lit the way Masaaki Yuasa lights its scenes.',
+      texture_and_material: 'Loose lines and flat color, with the surface finish of Masaaki Yuasa.',
       camera_and_composition:
-        'Push and pull the existing forms within the given camera and layout; preserve count, pose intent and perspective.',
-      atmosphere_and_mood:
-        'Lively distortion belongs to the rendering, not a new action or character; follow the requested energy level.',
+        'Warping sprint compositions, framed the way Masaaki Yuasa composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with exhilarating rubbery freedom.',
       rendering_and_quality:
-        'Apply controlled drawing elasticity to any subject; add no limbs, expressions, sprint, gag or copied scene. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features: 'Elastic contour; bent plane rhythm; loose brush marks; graphic push/pull.',
+        'Elastic expressive animation frame, in the recognizable hand of Masaaki Yuasa.',
+      key_features: 'Masaaki Yuasa elasticity; warping reality; sprints',
       creative_brief:
-        'Apply this visual treatment to the requested content: Elastic contour; bent plane rhythm; loose brush marks; graphic push/pull. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Masaaki Yuasa animation look: rubbery elastic bodies, reality bending with emotion, flat bold colors and exhilarating long sprints. Carry it through Masaaki Yuasa elasticity, warping reality, sprints. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-116',
-    name: 'Sumi-e Impact Brushstroke',
+    name: 'Sawaki Takeyasu - Sumi-e Impact Brushstroke',
+    displayName: 'Sawaki Takeyasu - Sumi-e Impact Brushstroke',
+    styleAnchors: ['Sawaki Takeyasu - Sumi-e Impact Brushstroke'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, uniform fills erasing wet-pool and dry-bristle contrast, cel shading replacing pressure-variable strokes, weak value separation collapsing ink structure",
+      "a white wolf with red markings, existing franchise characters, photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, uniform fills erasing wet-pool and dry-bristle contrast, cel shading replacing pressure-variable strokes, weak value separation collapsing ink structure, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'Build form through pressure-variable ink strokes, wet pools, dry-bristle breaks and deliberate rice-paper negative space.',
+        'Sawaki Takeyasu sumi-e illustration look as in Okami: bold ink brushstrokes, celestial brush art, ukiyo-e inspired forms and sweeping impact strokes.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with bold brush strokes and ukiyo-e inspired forms. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: keep ink monochrome by default, allowing only colors explicitly requested by the prompt.',
-      lighting_and_shadow:
-        "Use the ink's density and paper reserve as light and shadow; do not add a separate cinematic light source.",
+        'Ink black, paper white and red accents, true to the Sawaki Takeyasu palette.',
+      lighting_and_shadow: 'Paper-white glow, lit the way Sawaki Takeyasu lights its scenes.',
       texture_and_material:
-        'Show absorbent paper edges, pooled ink and bristle drag; keep strokes few and purposeful.',
+        'Bold sumi-e brush and paper grain, with the surface finish of Sawaki Takeyasu.',
       camera_and_composition:
-        'Let negative space carry equal weight to the marked form; preserve the source composition.',
-      atmosphere_and_mood:
-        "Impact comes from the contrast of a decisive stroke and open paper; retain the prompt's meaning.",
+        'Sweeping brush compositions, framed the way Sawaki Takeyasu composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with bold brush impact.',
       rendering_and_quality:
-        'Translate any subject into ink value and stroke pressure without adding calligraphy, writing or a new gesture. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Pressure-variable sumi strokes; dry-bristle splinters; wet ink pools; rice-paper texture; negative-space impact.',
+        'Sumi-e brush illustration, in the recognizable hand of Sawaki Takeyasu.',
+      key_features: 'Sawaki Takeyasu sumi-e; brush strokes; ukiyo-e',
       creative_brief:
-        'Apply this visual treatment to the requested content: Pressure-variable sumi strokes; dry-bristle splinters; wet ink pools; rice-paper texture; negative-space impact. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Sawaki Takeyasu sumi-e illustration look as in Okami: bold ink brushstrokes, celestial brush art, ukiyo-e inspired forms and sweeping impact strokes. Carry it through Sawaki Takeyasu sumi-e, brush strokes, ukiyo-e. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-104',
-    name: 'Minimalist Indie Quiet',
+    name: 'Seiichi Hayashi - Minimalist Indie Quiet',
+    displayName: 'Seiichi Hayashi - Minimalist Indie Quiet',
+    styleAnchors: ['Seiichi Hayashi - Minimalist Indie Quiet'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, decorative marks obscuring minimal contour hierarchy, negative space removing required subject detail, weak values merging essential forms",
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, decorative marks obscuring minimal contour hierarchy, negative space removing required subject detail, weak values merging essential forms, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'Reduce contours to the smallest set that still identifies the requested form; use a broad quiet value field and one muted accent where it helps.',
+        'Seiichi Hayashi manga look as in Red Colored Elegy: minimalist alternative gekiga, sparse lines, large empty spaces and quiet poetic emotion.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
-      color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: favor restrained values and a single muted accent; preserve colors essential to the prompt.',
-      lighting_and_shadow:
-        'Use soft, broad value transitions and minimal shadow; keep requested lighting recognizable.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with sparse minimal lines and simple forms. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Sparse black ink and a single red accent.',
+      lighting_and_shadow: 'Quiet flat light, lit the way Seiichi Hayashi lights its scenes.',
       texture_and_material:
-        'Keep surfaces clean and marks sparse, leaving deliberate negative space rather than adding decorative texture.',
+        'Sparse minimal brush line, with the surface finish of Seiichi Hayashi.',
       camera_and_composition:
-        'Preserve framing and scale; let empty space emerge around existing forms without deleting requested elements.',
-      atmosphere_and_mood:
-        'Quietness is visual economy, not a forced calm mood; honor the requested emotion.',
+        'Minimal compositions with much empty space, framed the way Seiichi Hayashi composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with quiet poetic minimalism.',
       rendering_and_quality:
-        'Simplify rendering only; preserve identity, count, detail the prompt requires and all compositional relationships. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Minimal line count; broad value field; one muted accent; negative space; humble scale.',
+        'Minimal alternative manga illustration, in the recognizable hand of Seiichi Hayashi.',
+      key_features: 'Seiichi Hayashi minimalism; empty space; poetry',
       creative_brief:
-        'Apply this visual treatment to the requested content: Minimal line count; broad value field; one muted accent; negative space; humble scale. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Seiichi Hayashi manga look as in Red Colored Elegy: minimalist alternative gekiga, sparse lines, large empty spaces and quiet poetic emotion. Carry it through Seiichi Hayashi minimalism, empty space, poetry. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-112',
-    name: 'Spray-Drip Wildstyle Anime',
+    name: 'Dead Leaves Imaishi - Spray-Drip Wildstyle Anime',
+    displayName: 'Dead Leaves Imaishi - Spray-Drip Wildstyle Anime',
+    styleAnchors: ['Dead Leaves Imaishi - Spray-Drip Wildstyle Anime'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, uniform airbrush edges erasing stencil cuts, overspray obscuring source contours, gravity-inconsistent drips",
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, uniform airbrush edges erasing stencil cuts, overspray obscuring source contours, gravity-inconsistent drips, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'Combine sharp stencil edges, overspray halos, gravity-led drips and particulate grain; keep the marks energetic without introducing letters or tags.',
+        'Hiroyuki Imaishi Dead Leaves look (2004): punk graffiti energy, spray drips, crude wild shapes and hyperactive color.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
-      color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: use punchy cyan/magenta accents where compatible, with prompt colors remaining readable.',
-      lighting_and_shadow:
-        'Use flat painted values with a soft overspray halo around selected edges; avoid simulated neon light unless requested.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with crude punk designs and wild poses. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Hyperactive spray colors, true to the Dead Leaves Imaishi palette.',
+      lighting_and_shadow: 'Flat punk light, lit the way Dead Leaves Imaishi lights its scenes.',
       texture_and_material:
-        'Layer stencil-cut shapes, atomized pigment, drips and rough grain; keep these as rendering marks, not new objects.',
+        'Spray drips and crude lines, with the surface finish of Dead Leaves Imaishi.',
       camera_and_composition:
-        'Let the spray marks follow existing silhouettes and directional emphasis; do not force a mural wall or recompose the frame.',
-      atmosphere_and_mood:
-        "Wildstyle energy comes from edge and pigment contrast; preserve the prompt's tone, including gentle subjects.",
+        'Chaotic graffiti compositions, framed the way Dead Leaves Imaishi composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with wild punk chaos.',
       rendering_and_quality:
-        'Apply the spray technique to any subject without adding graffiti letters, wall, logo, tag or lettering. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Stencil edge; overspray halo; paint drips; particulate grain; bold contour energy; cyan/magenta accents.',
+        'Crude punk graffiti animation frame, in the recognizable hand of Dead Leaves Imaishi.',
+      key_features: 'Dead Leaves punk; spray drips; wildstyle',
       creative_brief:
-        'Apply this visual treatment to the requested content: Stencil edge; overspray halo; paint drips; particulate grain; bold contour energy; cyan/magenta accents. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Hiroyuki Imaishi Dead Leaves look (2004): punk graffiti energy, spray drips, crude wild shapes and hyperactive color. Carry it through Dead Leaves punk, spray drips, wildstyle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-119',
-    name: 'Chalk-Dust Slate Sketch',
+    name: 'Yusei Matsui - Chalk-Dust Slate Sketch',
+    displayName: 'Yusei Matsui - Chalk-Dust Slate Sketch',
+    styleAnchors: ['Yusei Matsui - Chalk-Dust Slate Sketch'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, unbroken contours erasing chalk-stroke breaks, glossy highlights hiding powder texture, erasure smudges masking essential forms",
+      "a yellow octopus teacher with a graduation cap, existing franchise characters, photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, unbroken contours erasing chalk-stroke breaks, glossy highlights hiding powder texture, erasure smudges masking essential forms, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'Use broken pale strokes, powder halos, smudge ghosts and erased traces against a dark slate-like value field.',
+        'Yusei Matsui manga look as in Assassination Classroom: chalkboard classrooms, simple round comedic faces and sketchy chalk gags.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
-      color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: keep a limited pale-on-dark palette unless the prompt specifies other colors.',
-      lighting_and_shadow:
-        'Use chalk highlights and soft powder falloff to reveal form; avoid polished specular light.',
-      texture_and_material:
-        'Show chalk dust, drag, gaps and erasure memory; preserve the underlying material in the drawn form.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Matsui designs, simple faces and classroom clothes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Slate green and chalk white, true to the Yusei Matsui palette.',
+      lighting_and_shadow: 'Classroom light, lit the way Yusei Matsui lights its scenes.',
+      texture_and_material: 'Chalk-dust strokes on slate, with the surface finish of Yusei Matsui.',
       camera_and_composition:
-        'Let broken marks and open dark field shape the composition; maintain the requested crop and placement.',
-      atmosphere_and_mood:
-        'Fragile contour and erased traces suggest impermanence without adding a written message.',
+        'Classroom compositions, framed the way Yusei Matsui composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with playful chalky comedy.',
       rendering_and_quality:
-        'Use chalk mark behavior on any subject; add no letters, formulae, chalkboard or diagram. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Broken chalk cadence; powder halo; smudge ghost; erasure trace; slate-grain field.',
+        'Chalk-sketch comedy illustration, in the recognizable hand of Yusei Matsui.',
+      key_features: 'Yusei Matsui chalkboards; round faces; chalk gags',
       creative_brief:
-        'Apply this visual treatment to the requested content: Broken chalk cadence; powder halo; smudge ghost; erasure trace; slate-grain field. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Yusei Matsui manga look as in Assassination Classroom: chalkboard classrooms, simple round comedic faces and sketchy chalk gags. Carry it through Yusei Matsui chalkboards, round faces, chalk gags. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-102',
-    name: 'Gritty Realist Seinen',
+    name: 'Minoru Furuya - Gritty Realist Seinen',
+    displayName: 'Minoru Furuya - Gritty Realist Seinen',
+    styleAnchors: ['Minoru Furuya - Gritty Realist Seinen'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, generic grime obscuring material-specific wear, over-smoothed contours removing grounded structure, hatching merging important planes",
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, generic grime obscuring material-specific wear, over-smoothed contours removing grounded structure, hatching merging important planes, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'Ground proportions and weight in fine wear, selective hatching and practical surface detail; do not add age, fatigue, injury or labor history.',
+        'Minoru Furuya manga look as in Himizu: gritty realism, awkward ordinary faces, grimy settings and bleak dark humor.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
-      color_and_tone:
-        "Palette defaults apply only where the prompt leaves color open: keep colors subdued but preserve the prompt's palette and the natural color of important materials.",
-      lighting_and_shadow:
-        'Use practical hard light and grounded cast shadows, following the requested direction and exposure.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Furuya realism, awkward faces and worn clothes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Black ink with grimy tone, true to the Minoru Furuya palette.',
+      lighting_and_shadow: 'Dim gritty light, lit the way Minoru Furuya lights its scenes.',
       texture_and_material:
-        'Add fine scuffs and hatching only where form or source material supports them; avoid generic grime.',
+        'Gritty realistic line and tone, with the surface finish of Minoru Furuya.',
       camera_and_composition:
-        'Use unsentimental framing and stable perspective while preserving the supplied crop and focal point.',
-      atmosphere_and_mood:
-        "Realist restraint is a rendering choice, not a mandate for bleakness; keep the prompt's emotional register.",
+        'Bleak realistic compositions, framed the way Minoru Furuya composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with gritty bleak realism.',
       rendering_and_quality:
-        'Apply physical clarity to any form without aging, distressing, masculinizing or injuring the subject. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Grounded proportions; selective wear; fine hatching; practical hard light; material realism; composed restraint.',
+        'Gritty realist seinen illustration, in the recognizable hand of Minoru Furuya.',
+      key_features: 'Minoru Furuya grit; awkward faces; bleak humor',
       creative_brief:
-        'Apply this visual treatment to the requested content: Grounded proportions; selective wear; fine hatching; practical hard light; material realism; composed restraint. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Minoru Furuya manga look as in Himizu: gritty realism, awkward ordinary faces, grimy settings and bleak dark humor. Carry it through Minoru Furuya grit, awkward faces, bleak humor. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-321',
-    name: 'Ether-Wisp Gothic Ornament',
+    name: 'Yoshitaka Amano - Ether-Wisp Gothic Ornament',
+    displayName: 'Yoshitaka Amano - Ether-Wisp Gothic Ornament',
+    styleAnchors: ['Yoshitaka Amano - Ether-Wisp Gothic Ornament'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, blunt contours obscuring pointed taper, ornamental hatching merging into silhouette, unrequested ornament competing with source forms",
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, blunt contours obscuring pointed taper, ornamental hatching merging into silhouette, unrequested ornament competing with source forms, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'Stretch existing contours into pointed, elongated accents and add feathered ink wisps with sparse gilded detail against generous void.',
+        'Yoshitaka Amano illustration look: ethereal wispy ink lines, elongated pale figures dissolving into ornamental swirls, gothic decadence and watercolor washes of gold and violet.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
-      color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: use ink-dark values and restrained gold; preserve prompt colors that identify the subject.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Amano elegance, elongated pale faces, flowing wispy hair and ornate gothic garments that dissolve into line. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Pale watercolor washes of gold, violet, rose and ink black on ivory paper.',
       lighting_and_shadow:
-        'Let thin edge highlights emerge from the dark field; avoid adding a moon, candle or magical glow source.',
-      texture_and_material:
-        'Use fine ornamental hatching and tapering wisps; keep marks attached to existing shapes rather than adding motifs.',
+        'Ethereal glowing light suggested by blank paper, lit the way Yoshitaka Amano lights its scenes.',
+      texture_and_material: 'Wispy fine ink line, watercolor bleed and ornamental swirls.',
       camera_and_composition:
-        'Balance pointed detail with open negative space inside the original framing; do not add gothic architecture.',
-      atmosphere_and_mood:
-        "Gothic tension comes from line, void and taper; preserve the prompt's tone and meaning.",
+        'Tall vertical ornamental compositions, framed the way Yoshitaka Amano composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with ethereal gothic decadence.',
       rendering_and_quality:
-        'Apply ornamental pressure to any requested subject without adding religious symbols, costume, architecture or sigils. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Elongated contours; decorative ink wisps; feathered ornament; sparse gold; void-rich composition.',
+        'Ethereal ink-and-watercolor illustration, in the recognizable hand of Yoshitaka Amano.',
+      key_features: 'Yoshitaka Amano wisps; elongated figures; gothic ornament; watercolor',
       creative_brief:
-        'Apply this visual treatment to the requested content: Elongated contours; decorative ink wisps; feathered ornament; sparse gold; void-rich composition. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Yoshitaka Amano illustration look: ethereal wispy ink lines, elongated pale figures dissolving into ornamental swirls, gothic decadence and watercolor washes of gold and violet. Carry it through Yoshitaka Amano wisps, elongated figures, gothic ornament, watercolor. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-110',
-    name: 'Surreal Dream Logic',
+    name: 'Keiichi Tanaami - Surreal Dream Logic',
+    displayName: 'Keiichi Tanaami - Surreal Dream Logic',
+    styleAnchors: ['Keiichi Tanaami - Surreal Dream Logic'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, spatial contradiction making the subject unreadable, unrequested floating or duplicate forms, perspective discontinuity unrelated to existing geometry",
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, spatial contradiction making the subject unreadable, unrequested floating or duplicate forms, perspective discontinuity unrelated to existing geometry, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'Create a limited spatial contradiction among existing planes, alignments or light cues; keep the dream effect legible and do not add disconnected objects.',
+        'Keiichi Tanaami psychedelic pop art look: surreal collage, vivid flat colors, repeating motifs, dream logic and pop explosions.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
-      color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: retain a coherent base palette with selective shifts at the contradictory plane; preserve prompt colors.',
-      lighting_and_shadow:
-        "Keep the original light cues and introduce only a subtle mismatch where the prompt's own forms meet.",
-      texture_and_material:
-        'Use clean edges with localized soft transitions to make one relationship feel impossible; retain material and silhouette.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw figures as flat pop shapes within surreal collage worlds. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Vivid psychedelic pop colors, true to the Keiichi Tanaami palette.',
+      lighting_and_shadow: 'Flat pop light, lit the way Keiichi Tanaami lights its scenes.',
+      texture_and_material: 'Flat collage shapes, with the surface finish of Keiichi Tanaami.',
       camera_and_composition:
-        'Keep the source camera and content stable while gently disturbing perspective or adjacency; no infinite loops by default.',
-      atmosphere_and_mood:
-        'Dream logic comes from one precise mismatch, not a new dreamscape; preserve requested mood.',
+        'Surreal collage compositions, framed the way Keiichi Tanaami composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with surreal dream logic.',
       rendering_and_quality:
-        'Apply the spatial treatment to any subject without adding architecture, floating objects, duplicate forms or a new setting. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Offset planes; contradictory alignment or light; restrained spatial loop; stable recognizable forms.',
+        'Psychedelic pop illustration, in the recognizable hand of Keiichi Tanaami.',
+      key_features: 'Tanaami psychedelia; collage; dream logic',
       creative_brief:
-        'Apply this visual treatment to the requested content: Offset planes; contradictory alignment or light; restrained spatial loop; stable recognizable forms. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Keiichi Tanaami psychedelic pop art look: surreal collage, vivid flat colors, repeating motifs, dream logic and pop explosions. Carry it through Tanaami psychedelia, collage, dream logic. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-108',
-    name: 'Fairy-Tale Storybook Soft',
+    name: 'Kazuo Oga - Fairy-Tale Storybook Soft',
+    displayName: 'Kazuo Oga - Fairy-Tale Storybook Soft',
+    styleAnchors: ['Kazuo Oga - Fairy-Tale Storybook Soft'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, hard unmodulated edges cutting through gouache glaze, plastic sheen obscuring paper and pigment texture, contour loss obscuring subject identity",
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, hard unmodulated edges cutting through gouache glaze, plastic sheen obscuring paper and pigment texture, contour loss obscuring subject identity, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'Use curved fine contours, pastel gouache glaze and lace-like edge rhythm to soften existing forms; do not add flowers, ribbons or sparkle props.',
+        'Kazuo Oga background painting look as in Totoro: lush soft gouache forests, dappled light, gentle storybook atmosphere and painterly nature.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
-      color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: use softly layered pastel colors with enough value contrast to keep forms clear; honor requested dark or saturated palettes.',
-      lighting_and_shadow:
-        "Favor diffused light and gentle edge bloom only when consistent with the prompt's lighting.",
-      texture_and_material:
-        'Combine fine ink contours, translucent gouache and light paper tooth; keep the depicted material identifiable.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw figures small and simple within lush painted nature. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Lush gouache greens and soft warm light, true to the Kazuo Oga palette.',
+      lighting_and_shadow: 'Dappled forest light, lit the way Kazuo Oga lights its scenes.',
+      texture_and_material: 'Painterly gouache brushwork, with the surface finish of Kazuo Oga.',
       camera_and_composition:
-        'Let soft curves guide the eye through the given layout; preserve crop, pose and structural detail.',
-      atmosphere_and_mood:
-        'Storybook softness is a surface quality, not a requirement for innocence or a happy ending.',
+        'Lush storybook landscapes, framed the way Kazuo Oga composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with soft storybook wonder.',
       rendering_and_quality:
-        'Apply the soft rendering to any subject and mood without adding a fairy, flower, ribbon, costume or storybook scene. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Curved contour; pastel gouache glaze; lace-like edge rhythm; soft light; fine paper tooth.',
+        'Painterly gouache background illustration, in the recognizable hand of Kazuo Oga.',
+      key_features: 'Kazuo Oga gouache; lush forests; storybook',
       creative_brief:
-        'Apply this visual treatment to the requested content: Curved contour; pastel gouache glaze; lace-like edge rhythm; soft light; fine paper tooth. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Kazuo Oga background painting look as in Totoro: lush soft gouache forests, dappled light, gentle storybook atmosphere and painterly nature. Carry it through Kazuo Oga gouache, lush forests, storybook. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-106',
-    name: 'Deco-Inspired Geometric Anime',
+    name: 'The Big O Sunrise - Deco-Inspired Geometric Anime',
+    displayName: 'The Big O Sunrise - Deco-Inspired Geometric Anime',
+    styleAnchors: ['The Big O Sunrise - Deco-Inspired Geometric Anime'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, ruler lines misaligned with source perspective, facets obscuring the original silhouette, forced symmetry changing the requested composition",
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, ruler lines misaligned with source perspective, facets obscuring the original silhouette, forced symmetry changing the requested composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'Use fan-like geometry, ruler-straight lines and faceted color cells to articulate existing forms; preserve their natural asymmetry rather than staging symmetry.',
+        'Sunrise The Big O look (1999) by Keiichi Sato: art deco retro city, geometric architecture, noir gentlemen and giant retro robots.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
-      color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: separate a compact set of jewel colors into clean cells while keeping prompt-specific colors.',
-      lighting_and_shadow:
-        'Use crisp value bands and small facet highlights; follow the actual light direction.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Sato designs, noir suits and elegant retro dresses. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Deco gold, black and muted sepia, true to the The Big O Sunrise palette.',
+      lighting_and_shadow: 'Noir city light, lit the way The Big O Sunrise lights its scenes.',
       texture_and_material:
-        'Keep edges clean and geometric with selective stained-glass-like separation; do not convert materials to glass.',
+        'Analog cel with geometric deco architecture, with the surface finish of The Big O Sunrise.',
       camera_and_composition:
-        'Fit geometric accents to the supplied composition without adding a frame or changing viewpoint.',
-      atmosphere_and_mood:
-        "Deco poise comes from measured line and facet balance; keep the user's mood and subject.",
+        'Geometric noir compositions, framed the way The Big O Sunrise composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with noir art deco elegance.',
       rendering_and_quality:
-        'Use geometric organization on any subject without adding architecture, ornament, costume or a symmetrical poster layout. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Geometric fan shapes; ruler-straight contour; faceted focal areas; jewel-color cells; asymmetry preserved.',
+        'Retro deco television frame, in the recognizable hand of The Big O Sunrise.',
+      key_features: 'The Big O art deco; geometric city; noir',
       creative_brief:
-        'Apply this visual treatment to the requested content: Geometric fan shapes; ruler-straight contour; faceted focal areas; jewel-color cells; asymmetry preserved. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Sunrise The Big O look (1999) by Keiichi Sato: art deco retro city, geometric architecture, noir gentlemen and giant retro robots. Carry it through The Big O art deco, geometric city, noir. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-330',
-    name: 'Folkloric Deadpan Ink Catalog',
+    name: 'Shigeru Mizuki - Folkloric Deadpan Ink Catalog',
+    displayName: 'Shigeru Mizuki - Folkloric Deadpan Ink Catalog',
+    styleAnchors: ['Shigeru Mizuki - Folkloric Deadpan Ink Catalog'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, polished sheen erasing dry-ink irregularity, hatch marks obscuring subject contours, unrequested cultural motif or label",
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, polished sheen erasing dry-ink irregularity, hatch marks obscuring subject contours, unrequested cultural motif or label, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'Use dry, uneven ink, a compact flat palette, repeated small hatch marks and catalog-like spacing; derive pattern only from forms already present.',
+        'Shigeru Mizuki yokai manga look: cartoony simple characters against extremely detailed stippled realistic backgrounds, catalog-like yokai portraits and deadpan folklore.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people cartoony and simple, and spirits as odd deadpan yokai. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: keep colors flat and limited, preserving prompt-critical hues and material identity.',
+        'Black ink with dense stipple and hatching, true to the Shigeru Mizuki palette.',
       lighting_and_shadow:
-        'Use simple flat values and minimal shadow; do not add theatrical light.',
+        'Dim eerie light via stippling, lit the way Shigeru Mizuki lights its scenes.',
       texture_and_material:
-        'Show slightly irregular ink edges and a few repeated hatches; no labels or fabricated cultural ornament.',
+        'Dense stippled backgrounds and simple cartoon figures, with the surface finish of Shigeru Mizuki.',
       camera_and_composition:
-        'Separate existing forms with clear breathing room while preserving layout and count; do not create a page or display.',
-      atmosphere_and_mood:
-        'Deadpan folklore is carried by dry line and repetition, not by assigning a culture or mythology.',
+        'Catalog-like portraits and detailed scenes, framed the way Shigeru Mizuki composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with deadpan folkloric eeriness.',
       rendering_and_quality:
-        'Apply the mark system without inventing cultural motifs, labels, folk costume, props or a catalog page. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Dry uneven ink; compact flats; repeated small hatch; catalog-like spacing; deadpan restraint.',
+        'Classic yokai manga illustration, in the recognizable hand of Shigeru Mizuki.',
+      key_features: 'Shigeru Mizuki stipple; cartoon figures; yokai catalog',
       creative_brief:
-        'Apply this visual treatment to the requested content: Dry uneven ink; compact flats; repeated small hatch; catalog-like spacing; deadpan restraint. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Shigeru Mizuki yokai manga look: cartoony simple characters against extremely detailed stippled realistic backgrounds, catalog-like yokai portraits and deadpan folklore. Carry it through Shigeru Mizuki stipple, cartoon figures, yokai catalog. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-114',
-    name: 'Threadbare Textile Patchwork',
+    name: 'Gankutsuou Gonzo - Threadbare Textile Patchwork',
+    displayName: 'Gankutsuou Gonzo - Threadbare Textile Patchwork',
+    styleAnchors: ['Gankutsuou Gonzo - Threadbare Textile Patchwork'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, weave marks obscuring nontextile material cues, stitches detached from existing seams, fray replacing the source silhouette",
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, weave marks obscuring nontextile material cues, stitches detached from existing seams, fray replacing the source silhouette, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'Use stitched contour accents, crosswise weave marks, seam breaks and frayed edges only where the source form supports a textile reading.',
+        'Gonzo Gankutsuou look (2004) by Mahiro Maeda: characters filled with static textile patterns, ornate fabric textures and baroque sci-fi opulence.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
-      color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: retain the source palette and use thread-like accents sparingly; do not recolor every surface as cloth.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Maeda designs whose clothes and hair are filled with flat static textile patterns. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Ornate jewel textile colors, true to the Gankutsuou Gonzo palette.',
       lighting_and_shadow:
-        "Use soft diffuse value and small seam shadows; respect the prompt's actual illumination.",
+        'Opulent theatrical light, lit the way Gankutsuou Gonzo lights its scenes.',
       texture_and_material:
-        'Show thread, weave, stitch and fray as controlled mark vocabulary while preserving each depicted material.',
+        'Static textile patterns inside shapes, with the surface finish of Gankutsuou Gonzo.',
       camera_and_composition:
-        'Let seams clarify existing construction and boundaries; preserve camera, silhouette and arrangement.',
-      atmosphere_and_mood:
-        'Tactility comes from the stitch rhythm; do not turn every object into fabric or add a frame.',
+        'Baroque opulent compositions, framed the way Gankutsuou Gonzo composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with opulent patterned intrigue.',
       rendering_and_quality:
-        'Transfer textile marks selectively to any subject without adding hoop, garment, cloth prop or embroidery motif. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Stitched contour; crosswise weave/hatch; patch seams; selective fray; sashiko-like rhythm only when source pattern supports it.',
+        'Patterned textile animation frame, in the recognizable hand of Gankutsuou Gonzo.',
+      key_features: 'Gankutsuou textiles; static patterns; baroque',
       creative_brief:
-        'Apply this visual treatment to the requested content: Stitched contour; crosswise weave/hatch; patch seams; selective fray; sashiko-like rhythm only when source pattern supports it. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Gonzo Gankutsuou look (2004) by Mahiro Maeda: characters filled with static textile patterns, ornate fabric textures and baroque sci-fi opulence. Carry it through Gankutsuou textiles, static patterns, baroque. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-329',
-    name: 'Spiral Panic Engraving',
+    name: 'Kazuo Umezz - Spiral Panic Engraving',
+    displayName: 'Kazuo Umezz - Spiral Panic Engraving',
+    styleAnchors: ['Kazuo Umezz - Spiral Panic Engraving'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, hatch arcs obscuring the focal contour, scratch marks unrelated to form direction, spiral-like distortion altering source geometry",
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, hatch arcs obscuring the focal contour, scratch marks unrelated to form direction, spiral-like distortion altering source geometry, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'Use winding hatch arcs, scratched line and ink pools to build graphic pressure around an existing focal point; do not add a literal spiral or vortex.',
+        'Kazuo Umezz horror manga look: wide screaming faces with hands on cheeks, dense engraving-like hatching, spiraling dread and sixties-seventies horror energy.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
-      color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: keep a compressed dark palette with controlled high-value accents; preserve requested colors.',
-      lighting_and_shadow:
-        'Shape pressure with converging value and ink density, not invented light or flame.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Umezz designs, huge terrified eyes, screaming mouths and hands pressed to faces. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Black ink with dense hatching, true to the Kazuo Umezz palette.',
+      lighting_and_shadow: 'Harsh horror shadows, lit the way Kazuo Umezz lights its scenes.',
       texture_and_material:
-        'Layer engraved hatch and scratch in arcs that follow existing forms; keep detail deliberate and readable.',
+        'Engraving-like hatching and spiral lines, with the surface finish of Kazuo Umezz.',
       camera_and_composition:
-        "Concentrate mark direction toward the prompt's existing focus while keeping the composition stable.",
-      atmosphere_and_mood:
-        'Unease comes from the engraving rhythm; keep panic at the level requested by the prompt.',
+        'Screaming close-ups and spiraling layouts, framed the way Kazuo Umezz composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with screaming spiral panic.',
       rendering_and_quality:
-        'Use the arc logic on any subject without adding spirals, eyes, a vortex, distortion or threat. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Winding hatch arcs; scratched engraving; ink pools; directional pressure; focused dark/light contrast.',
+        'Classic horror manga illustration, in the recognizable hand of Kazuo Umezz.',
+      key_features: 'Kazuo Umezz screams; hatching; spiral dread',
       creative_brief:
-        'Apply this visual treatment to the requested content: Winding hatch arcs; scratched engraving; ink pools; directional pressure; focused dark/light contrast. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Kazuo Umezz horror manga look: wide screaming faces with hands on cheeks, dense engraving-like hatching, spiraling dread and sixties-seventies horror energy. Carry it through Kazuo Umezz screams, hatching, spiral dread. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-338',
-    name: 'Angular Combustion Iconography',
+    name: 'Atsushi Ohkubo - Angular Combustion Iconography',
+    displayName: 'Atsushi Ohkubo - Angular Combustion Iconography',
+    styleAnchors: ['Atsushi Ohkubo - Angular Combustion Iconography'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, ember glow obscuring angular shadow cuts, unprompted flame or smoke effects, angular cuts damaging subject-defining edges",
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, ember glow obscuring angular shadow cuts, unprompted flame or smoke effects, angular cuts damaging subject-defining edges, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'Use acute contour cuts, hard cel-shadow planes and restrained ember accents to suggest combustion through shape language without depicting fire.',
+        'Atsushi Ohkubo manga look as in Fire Force: angular graphic designs, triangle grins, bold ember effects and stylish street-level combustion.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
-      color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: keep a high-contrast base with small ember colors; preserve prompt-specific color and avoid blanket orange.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Ohkubo designs, triangular grins, angular bodies and stylish uniforms. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Ember orange, soot black and white, true to the Atsushi Ohkubo palette.',
       lighting_and_shadow:
-        'Use sharp shadow cuts and tiny hot-edge accents only where supported by the prompt light.',
+        'Flame light and ember glow, lit the way Atsushi Ohkubo lights its scenes.',
       texture_and_material:
-        'Keep fill surfaces clean and angular; do not melt, char or transform materials unless requested.',
+        'Bold angular ink and ember effects, with the surface finish of Atsushi Ohkubo.',
       camera_and_composition:
-        'Align angular accents with existing forms and action; preserve layout and avoid an explosion composition.',
-      atmosphere_and_mood:
-        'Combustion is an angular visual rhythm, not an added event; honor calm or still prompts.',
+        'Angular dynamic compositions, framed the way Atsushi Ohkubo composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with blazing angular bravado.',
       rendering_and_quality:
-        'Apply the angular treatment to any subject without adding flames, smoke, melting, blast or damage. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Acute angular cuts; hard cel shadows; restrained ember accents; icon-like contrast; crisp contour.',
+        'Bold graphic action manga illustration, in the recognizable hand of Atsushi Ohkubo.',
+      key_features: 'Ohkubo angular grins; embers; combustion',
       creative_brief:
-        'Apply this visual treatment to the requested content: Acute angular cuts; hard cel shadows; restrained ember accents; icon-like contrast; crisp contour. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Atsushi Ohkubo manga look as in Fire Force: angular graphic designs, triangle grins, bold ember effects and stylish street-level combustion. Carry it through Ohkubo angular grins, embers, combustion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-105',
-    name: 'Textured Hand-Drawn Rough',
+    name: 'Takashi Nakamura - Textured Hand-Drawn Rough',
+    displayName: 'Takashi Nakamura - Textured Hand-Drawn Rough',
+    styleAnchors: ['Takashi Nakamura - Textured Hand-Drawn Rough'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, smoothed contours erasing graphite and pencil marks, smudges obscuring subject-defining details, registration marks intruding into the subject",
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, smoothed contours erasing graphite and pencil marks, smudges obscuring subject-defining details, registration marks intruding into the subject, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'Retain visible graphite underdrawing, colored-pencil fill, paper tooth and occasional registration marks at the margins.',
+        'Takashi Nakamura animation look as in A Tree of Palme: textured rough hand-drawn lines, visible pencil energy and whimsical organic fantasy.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
-      color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: use layered pencil color with slight unevenness; preserve the prompt palette.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Nakamura designs and rough textured lines. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Earthy muted fantasy tones, true to the Takashi Nakamura palette.',
       lighting_and_shadow:
-        'Use hand-built value with visible pencil direction; follow specified light and keep form readable.',
+        'Soft warm workshop light, lit the way Takashi Nakamura lights its scenes.',
       texture_and_material:
-        'Keep sketch, ink and pencil layers distinguishable; registration marks stay peripheral and sparse.',
+        'Rough visible pencil texture, with the surface finish of Takashi Nakamura.',
       camera_and_composition:
-        'Preserve the source composition and perspective; show process texture without shifting objects or adding sheet borders.',
-      atmosphere_and_mood:
-        'Human irregularity comes from drawn marks; retain the requested polish and mood.',
+        'Whimsical cluttered compositions, framed the way Takashi Nakamura composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with whimsical handmade warmth.',
       rendering_and_quality:
-        'Apply the hand-drawn surface to any subject without adding extra figures, animation cels, peg bars or page labels. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Graphite underdrawing; smudge marks; colored-pencil fill; paper tooth; sparse margin registration.',
+        'Rough textured hand-drawn frame, in the recognizable hand of Takashi Nakamura.',
+      key_features: 'Takashi Nakamura rough texture; pencil energy; whimsy',
       creative_brief:
-        'Apply this visual treatment to the requested content: Graphite underdrawing; smudge marks; colored-pencil fill; paper tooth; sparse margin registration. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Takashi Nakamura animation look as in A Tree of Palme: textured rough hand-drawn lines, visible pencil energy and whimsical organic fantasy. Carry it through Takashi Nakamura rough texture, pencil energy, whimsy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-101',
-    name: 'Abstract Fluid Painterly Anime',
+    name: 'Koji Yamamura - Abstract Fluid Painterly Anime',
+    displayName: 'Koji Yamamura - Abstract Fluid Painterly Anime',
+    styleAnchors: ['Koji Yamamura - Abstract Fluid Painterly Anime'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, uniform opaque fills erasing pigment blooms, continuous hard outlines enclosing every form, wash bleed obscuring the silhouette",
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, uniform opaque fills erasing pigment blooms, continuous hard outlines enclosing every form, wash bleed obscuring the silhouette, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'Let watercolor blooms, pigment granulation and wet-paper movement soften or dissolve selected contours; preserve the subject through value and silhouette.',
+        'Koji Yamamura independent animation look as in Mt. Head: hand-drawn fluid pencil and watercolor, abstract flowing forms and painterly metamorphosis.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
-      color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: use translucent washes and natural pigment mixing; preserve prompt colors and avoid flattening everything into solid fills.',
-      lighting_and_shadow:
-        'Allow blooms and edge loss where wash gathers; keep requested light direction and focal values legible.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw figures with fluid hand-drawn lines that melt into abstract painterly forms. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Watercolor blues, sepia and soft washes, true to the Koji Yamamura palette.',
+      lighting_and_shadow: 'Soft painterly light, lit the way Koji Yamamura lights its scenes.',
       texture_and_material:
-        'Show paper tooth, ink pooling, granulation and selective disappearing linework; leave deliberate unpainted space.',
+        'Pencil and watercolor texture, with the surface finish of Koji Yamamura.',
       camera_and_composition:
-        'Keep the source layout stable while washes flow within existing forms; do not turn abstractions into new objects.',
-      atmosphere_and_mood:
-        "Fluidity comes from pigment behavior and negative space; retain the prompt's mood and readability.",
+        'Flowing metamorphic compositions, framed the way Koji Yamamura composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with fluid dreamy metamorphosis.',
       rendering_and_quality:
-        'Apply the wet-media mechanics to any subject without adding water, scenery or abstract forms absent from the prompt. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Watercolor blooms; disappearing contour; ink pools; pigment granulation; wet-paper texture; negative space.',
+        'Painterly independent animation frame, in the recognizable hand of Koji Yamamura.',
+      key_features: 'Koji Yamamura fluidity; watercolor; metamorphosis',
       creative_brief:
-        'Apply this visual treatment to the requested content: Watercolor blooms; disappearing contour; ink pools; pigment granulation; wet-paper texture; negative space. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Koji Yamamura independent animation look as in Mt. Head: hand-drawn fluid pencil and watercolor, abstract flowing forms and painterly metamorphosis. Carry it through Koji Yamamura fluidity, watercolor, metamorphosis. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-115',
-    name: 'Ice-Crystal Refractive',
+    name: 'Studio Orange CG - Ice-Crystal Refractive',
+    displayName: 'Studio Orange CG - Ice-Crystal Refractive',
+    styleAnchors: ['Studio Orange CG - Ice-Crystal Refractive'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, refraction bloom obscuring facet boundaries, frost marks replacing source material cues, facets changing source geometry",
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, refraction bloom obscuring facet boundaries, frost marks replacing source material cues, facets changing source geometry, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'Use faceted contour shading, internal refraction and narrow prismatic edge splits as a cool refractive rendering; do not freeze or crystallize the subject.',
+        'Studio Orange cel-shaded CG crystal rendering as in its gemstone work: translucent refractive surfaces, prismatic splits and crisp faceted light.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
-      color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: favor an icy blue range with small spectral accents while retaining colors necessary to identify the subject.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people as cel-shaded CG figures with crystalline refractive details. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Icy prismatic blues and white, true to the Studio Orange CG palette.',
       lighting_and_shadow:
-        "Use transmitted highlights and restrained refractive bloom; obey the prompt's light source and keep shadow detail.",
+        'Prismatic refractive light, lit the way Studio Orange CG lights its scenes.',
       texture_and_material:
-        'Render crisp facets and fine frost-like branching as surface marks, not physical ice replacing the material.',
+        'Faceted translucent CG surfaces, with the surface finish of Studio Orange CG.',
       camera_and_composition:
-        'Facet the existing planes without imposing hexagonal symmetry or changing camera and silhouette.',
-      atmosphere_and_mood:
-        'Cool clarity is the visual treatment; preserve warmth, darkness or texture requested by the prompt.',
+        'Crisp faceted compositions, framed the way Studio Orange CG composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with crystalline icy clarity.',
       rendering_and_quality:
-        'Apply refraction as a drawing effect while preserving material, temperature and identity; add no ice, snow or frozen setting. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Faceted shading; internal refraction; icy blue bias; restrained prism edges; fine frost-like surface marks.',
+        'Crystalline cel-shaded CG frame, in the recognizable hand of Studio Orange CG.',
+      key_features: 'Studio Orange crystal; refraction; faceted light',
       creative_brief:
-        'Apply this visual treatment to the requested content: Faceted shading; internal refraction; icy blue bias; restrained prism edges; fine frost-like surface marks. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Studio Orange cel-shaded CG crystal rendering as in its gemstone work: translucent refractive surfaces, prismatic splits and crisp faceted light. Carry it through Studio Orange crystal, refraction, faceted light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-107',
-    name: 'Visceral Guro Horror',
+    name: 'Gou Tanabe - Visceral Guro Horror',
+    displayName: 'Gou Tanabe - Visceral Guro Horror',
+    styleAnchors: ['Gou Tanabe - Visceral Guro Horror'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, anatomical patterning added where no anatomy is visible, dense cross-contour obscuring source silhouette",
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, anatomical patterning added where no anatomy is visible, dense cross-contour obscuring source silhouette, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'Use dense organic cross-contour, anatomical patterning and carmine/bone/black contrast only on visible forms; do not invent wounds, organs or gore.',
+        'Gou Tanabe manga look as in his Lovecraft adaptations: dense organic crosshatching, cosmic horror, grotesque bodies and heavy black atmosphere.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
-      color_and_tone:
-        "Palette defaults apply only where the prompt leaves color open: keep carmine, bone and black as restrained graphic accents; preserve prompt colors and the depicted subject's material.",
-      lighting_and_shadow:
-        'Use hard clinical value contrast with detail concentrated where anatomy or structure is already visible.',
-      texture_and_material:
-        'Build unease through tightly interwoven contour and fine organic marks, never through added injury or anatomy.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Tanabe realism, dense hatching and grotesque organic forms. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Black ink with dense hatching, true to the Gou Tanabe palette.',
+      lighting_and_shadow: 'Candle and eldritch glow, lit the way Gou Tanabe lights its scenes.',
+      texture_and_material: 'Dense organic crosshatching, with the surface finish of Gou Tanabe.',
       camera_and_composition:
-        'Keep the source pose, composition and amount of visible content; do not crop in to manufacture gore.',
-      atmosphere_and_mood:
-        'Visceral tension is a pattern and contrast language; preserve the requested content and intensity.',
+        'Oppressive horror compositions, framed the way Gou Tanabe composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with visceral cosmic horror.',
       rendering_and_quality:
-        'Use the pattern treatment without adding blood, wounds, dismemberment, organs or anatomical features to nonliving subjects. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Dense organic cross-contour; anatomical pattern density; carmine/bone/black; biological precision; controlled dread.',
+        'Dense cosmic horror manga illustration, in the recognizable hand of Gou Tanabe.',
+      key_features: 'Gou Tanabe hatching; cosmic horror; grotesque',
       creative_brief:
-        'Apply this visual treatment to the requested content: Dense organic cross-contour; anatomical pattern density; carmine/bone/black; biological precision; controlled dread. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Gou Tanabe manga look as in his Lovecraft adaptations: dense organic crosshatching, cosmic horror, grotesque bodies and heavy black atmosphere. Carry it through Gou Tanabe hatching, cosmic horror, grotesque. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-117',
-    name: 'Phosphor Sensor-Vision Grain',
+    name: 'Patlabor 2 Oshii - Phosphor Sensor-Vision Grain',
+    displayName: 'Patlabor 2 Oshii - Phosphor Sensor-Vision Grain',
+    styleAnchors: ['Patlabor 2 Oshii - Phosphor Sensor-Vision Grain'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, grain obscuring silhouette or fine details, vignette crushing important values, alignment marks resembling an unrequested interface",
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, grain obscuring silhouette or fine details, vignette crushing important values, alignment marks resembling an unrequested interface, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'Render in high-gain monochrome with intensifier grain, lens vignette and a faint alignment echo; any reticle-like cue stays abstract and peripheral, never interface text.',
+        'Mamoru Oshii Patlabor 2 film look (1993): sensor screens, night-vision green, military surveillance and cold tactical stillness.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
-      color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: use phosphor monochrome with a restrained green or amber bias only if compatible with the prompt; no natural-color conversion.',
-      lighting_and_shadow:
-        'Apply sensor-like edge bloom and luminance falloff without claiming an actual heat or infrared reading.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with realistic sober designs and military gear. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Phosphor green monochrome, true to the Patlabor 2 Oshii palette.',
+      lighting_and_shadow: 'Night-vision glow, lit the way Patlabor 2 Oshii lights its scenes.',
       texture_and_material:
-        'Use fine electronic grain, mild vignette and restrained edge echo; preserve the underlying material and silhouette.',
+        'Sensor grain and scanlines, with the surface finish of Patlabor 2 Oshii.',
       camera_and_composition:
-        'Keep the original framing; suggest sensor mediation with peripheral alignment marks rather than a fake screen.',
-      atmosphere_and_mood:
-        "Surveillance-like distance comes from signal texture; retain the prompt's mood without inventing a device or operator.",
+        'Surveillance sensor compositions, framed the way Patlabor 2 Oshii composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with cold tactical stillness.',
       rendering_and_quality:
-        'Apply sensor texture to any subject without adding a camera, HUD, readable reticle, device or surveillance scene. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'Phosphor monochrome; intensifier grain; lens vignette; faint alignment echo; restrained infrared-like points.',
+        'Grainy sensor-view film frame, in the recognizable hand of Patlabor 2 Oshii.',
+      key_features: 'Patlabor 2 sensors; night vision; surveillance',
       creative_brief:
-        'Apply this visual treatment to the requested content: Phosphor monochrome; intensifier grain; lens vignette; faint alignment echo; restrained infrared-like points. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Mamoru Oshii Patlabor 2 film look (1993): sensor screens, night-vision green, military surveillance and cold tactical stillness. Carry it through Patlabor 2 sensors, night vision, surveillance. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-120',
-    name: 'Thermal-Heat-Signature Vision',
+    name: 'Ghost in the Shell SAC_2045 - Thermal-Heat-Signature Vision',
+    displayName: 'Ghost in the Shell SAC_2045 - Thermal-Heat-Signature Vision',
+    styleAnchors: ['Ghost in the Shell SAC_2045 - Thermal-Heat-Signature Vision'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, thermal bands collapsing into indistinguishable values, bloom obscuring signal segmentation, unrequested HUD, labels or temperature claims",
+      "a purple-haired cyborg major, existing franchise characters, photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, thermal bands collapsing into indistinguishable values, bloom obscuring signal segmentation, unrequested HUD, labels or temperature claims, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        'Map value into white-hot through red/amber to blue false-color bands with restrained bloom and sparse edge calibration ticks; this is a visual mapping, not factual temperature.',
+        'Production I.G and Sola Ghost in the Shell SAC_2045 look (2020): cel-shaded CG, tactical thermal views, heat signatures and cold cyber operations.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw figures as cel-shaded CG operatives seen through thermal vision. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: use the thermal false-color ramp while preserving shape boundaries and prompt-critical identifiers.',
+        'Thermal white, red, amber and cold blue, true to the Ghost in the Shell SAC_2045 palette.',
       lighting_and_shadow:
-        'Let bloom cluster around the brightest mapped areas; calibration marks stay thin and peripheral.',
+        'Heat-signature glow, lit the way Ghost in the Shell SAC_2045 lights its scenes.',
       texture_and_material:
-        'Keep the color bands clean, with slight sensor grain only; do not add emissive light to the depicted materials.',
+        'Cel-shaded CG with thermal gradients, with the surface finish of Ghost in the Shell SAC_2045.',
       camera_and_composition:
-        'Preserve the original framing and form boundaries; do not imply a scanner or interface.',
-      atmosphere_and_mood:
-        'The false-color image reads as a stylized signal; do not assert heat, health or material properties.',
+        'Tactical thermal compositions, framed the way Ghost in the Shell SAC_2045 composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with cold tactical scan.',
       rendering_and_quality:
-        'Apply the mapping to any subject without adding a HUD, scanner, labels or temperature claim. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'White-hot to blue bands; ironbow false color; restrained heat bloom; sparse calibration ticks; clear segmentation.',
+        'Cel-shaded thermal CG frame, in the recognizable hand of Ghost in the Shell SAC_2045.',
+      key_features: 'SAC_2045 thermal; heat signatures; tactical',
       creative_brief:
-        'Apply this visual treatment to the requested content: White-hot to blue bands; ironbow false color; restrained heat bloom; sparse calibration ticks; clear segmentation. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Production I.G and Sola Ghost in the Shell SAC_2045 look (2020): cel-shaded CG, tactical thermal views, heat signatures and cold cyber operations. Carry it through SAC_2045 thermal, heat signatures, tactical. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-103',
-    name: 'Neon Hyperpop Anime',
+    name: 'Mika Pikazo - Neon Hyperpop Anime',
+    displayName: 'Mika Pikazo - Neon Hyperpop Anime',
+    styleAnchors: ['Mika Pikazo - Neon Hyperpop Anime'],
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, RGB channels misregistered enough to duplicate the silhouette, glitch pixels obscuring subject details, spectral bloom washing out channel separation",
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, RGB channels misregistered enough to duplicate the silhouette, glitch pixels obscuring subject details, spectral bloom washing out channel separation, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
-        "Use RGB edge separation, small glitch pixels and spectral holographic sheen over crisp anime contours; keep the subject's identifying edges stable.",
+        'Mika Pikazo illustration look: hyper-saturated neon pop, rainbow gradients, graphic stickers, bold character designs and explosive color.',
       subject_treatment:
-        'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
-      color_and_tone:
-        'Palette defaults apply only where the prompt leaves color open: use saturated neon and channel-split accents while preserving prompt-critical color and contrast.',
-      lighting_and_shadow:
-        'Keep chromatic glow tight to edges and bright intersections; avoid flooding the frame with bloom.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Pikazo designs, bold hair colors, graphic outfits and energetic poses. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Hyper-saturated rainbow neon, true to the Mika Pikazo palette.',
+      lighting_and_shadow: 'Neon glow and RGB splits, lit the way Mika Pikazo lights its scenes.',
       texture_and_material:
-        'Use small digital offsets, clean gradients and limited glitch artifacts; do not add interface chrome.',
+        'Glossy digital paint and graphic shapes, with the surface finish of Mika Pikazo.',
       camera_and_composition:
-        'Follow existing silhouette and motion direction with color-channel echoes; preserve crop and layout.',
-      atmosphere_and_mood:
-        'Hyperpop energy comes from color and controlled signal noise; preserve quiet, dark or restrained moods when requested.',
+        'Energetic poster compositions, framed the way Mika Pikazo composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with explosive neon pop.',
       rendering_and_quality:
-        'Apply digital color treatment to any subject without adding memes, text, UI, logos or stock internet imagery. Keep important silhouettes and joins legible; no watermark, unrequested text or interface.',
-      key_features:
-        'RGB channel split; chromatic edge aberration; small glitch pixels; spectral sheen; saturated but controlled color.',
+        'Hyper-saturated digital illustration, in the recognizable hand of Mika Pikazo.',
+      key_features: 'Mika Pikazo neon; rainbow gradients; hyperpop',
       creative_brief:
-        'Apply this visual treatment to the requested content: RGB channel split; chromatic edge aberration; small glitch pixels; spectral sheen; saturated but controlled color. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.',
+        "Mika Pikazo illustration look: hyper-saturated neon pop, rainbow gradients, graphic stickers, bold character designs and explosive color. Carry it through Mika Pikazo neon, rainbow gradients, hyperpop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

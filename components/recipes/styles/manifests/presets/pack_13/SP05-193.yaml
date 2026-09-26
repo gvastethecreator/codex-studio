@@ -3,7 +3,7 @@ id: SP05-193
 packId: pack_13
 name: Snow White with the Red Hair - Herbal Courtship Fantasy
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,29 +13,19 @@ tags:
   - shojo-magical-girl-and-visionary-classics
   - reference-title
 visualDna:
-  aesthetic: >-
-    Anime line blends clean tapered contours with fine botanical-style strokes and polished
-    cel planes.
-  subject_treatment: >-
-    Preserve subject and surfaces; vein-like marks only on existing plants or requested
-    ornament.
-  color_and_tone: >-
-    Terracotta, sage, warm ivory, ink blue, muted gold, distinct dark anchor.
-  lighting_and_shadow: >-
-    Warm highlights and cool shadows follow the prompt's actual light direction.
-  texture_and_material: >-
-    Transparent wash and paper softness over crisp edges; no added containers or botanicals.
-  camera_and_composition: >-
-    Respect camera; curved line rhythm follows existing forms, no garden or court.
-  atmosphere_and_mood: >-
-    Warmth or courtesy follows prompt; botanical detail is technique, not content.
-  rendering_and_quality: >-
-    Local detail, crisp silhouettes, subdued pigment, no decorative clutter.
-  key_features: >-
-    Tapered botanical-style line, terracotta-sage palette, crisp cel edges, details on
-    existing forms
-  creative_brief: 'Apply a visual treatment centered on tapered botanical-style line, terracotta-sage palette, crisp cel edges, details on existing forms. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'Sorata Akizuki Snow White with the Red Hair look: gentle court fantasy, vivid red hair, herbalist gardens and courteous romance.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Akizuki designs, gentle faces, vivid red hair and court clothes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Vivid red, herb green and cream, true to the Snow White with the Red Hair palette.
+  lighting_and_shadow: Soft garden light, lit the way Snow White with the Red Hair lights its scenes.
+  texture_and_material: Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.
+  camera_and_composition: Herb garden compositions, framed the way Snow White with the Red Hair composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with gentle courteous romance.
+  rendering_and_quality: Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.
+  key_features: Akizuki court fantasy; red hair; herb gardens
+  creative_brief: "Sorata Akizuki Snow White with the Red Hair look: gentle court fantasy, vivid red hair, herbalist gardens and courteous romance. Carry it through Akizuki court fantasy, red hair, herb gardens. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a red-haired herbalist girl in an apron
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -57,19 +47,19 @@ avoidRules:
   - generic anime filter
   - prompt literal card reuse
   - fake UI
-  - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-193.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: a red-haired herbalist girl in an apron, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, noisy compression artifacts
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -84,3 +74,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Snow White with the Red Hair - Herbal Courtship Fantasy
+styleAnchors:
+  - Snow White with the Red Hair - Herbal Courtship Fantasy

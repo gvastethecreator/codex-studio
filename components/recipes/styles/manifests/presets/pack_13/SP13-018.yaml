@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP13-018
 packId: pack_13
-name: Festival Lantern Summer
+name: The Eccentric Family P.A. Works - Festival Lantern Summer
 category: 2. Slice Of Life, School And Music
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,17 +12,18 @@ tags:
   - anime-character-and-lifestyle
   - anime
   - slice-of-life
+  - reference-title
 visualDna:
-  aesthetic: 'Festival lantern summer anime: warm summer-night frames with rows of lanterns, yukata-like robes and firefly glow.'
-  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: soft lines, flowing robes and sleeves, faces lit warmly from lanterns, fireworks drawn as soft bursts."
-  color_and_tone: Lantern orange, deep indigo night and firework colors, used consistently across subject and background.
-  lighting_and_shadow: Lantern and firework light on faces, expressed through the style rather than photographic lighting.
-  texture_and_material: Cel with bokeh lantern glows, visible at a glance as the signature of the style.
-  camera_and_composition: Crowd-level frames with lanterns receding, arranged so the subject still reads at a glance.
-  atmosphere_and_mood: Nostalgic, warm, romantic and fleeting, driven by the construction, color and rhythm.
-  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  key_features: lantern rows; fireworks; warm faces; summer night
-  creative_brief: "Festival lantern summer anime: warm summer-night frames with rows of lanterns, yukata-like robes and firefly glow. Carry it through lantern rows, fireworks, warm faces, summer night. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'P.A. Works The Eccentric Family look (2013): vivid Kyoto nights, tanuki and tengu shapeshifters, festival lanterns, flying tea houses and stylized painted cityscapes.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with stylized simple designs, kimono and yukata, and shapeshifting animals with expressive faces. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Lantern red, festival gold, Kyoto night indigo and vivid greens.
+  lighting_and_shadow: Warm paper lantern light on summer nights and glowing festival stalls.
+  texture_and_material: Clean flat cel with stylized photo-derived Kyoto backgrounds and bold color.
+  camera_and_composition: Festival street wides and whimsical flying scenes over Kyoto rooftops.
+  atmosphere_and_mood: Keep the requested mood with whimsical summer festivity.
+  rendering_and_quality: Vivid P.A. Works frame with stylized Kyoto festival nights.
+  key_features: Eccentric Family Kyoto; tanuki and tengu; lanterns; flying tea houses
+  creative_brief: "P.A. Works The Eccentric Family look (2013): vivid Kyoto nights, tanuki and tengu shapeshifters, festival lanterns, flying tea houses and stylized painted cityscapes. Carry it through Eccentric Family Kyoto, tanuki and tengu, lanterns, flying tea houses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -49,10 +50,14 @@ avoidRules:
   - UI overlay
   - franchise likeness
   - real person likeness
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-018.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, bleak horror, low detail, watermark, text, logo, classroom dependency, idol stage dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, bleak horror, low detail, watermark, text, logo, classroom dependency, idol stage dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -62,8 +67,12 @@ taxonomy:
     - anime-character-and-lifestyle
     - anime
     - slice-of-life
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: The Eccentric Family P.A. Works - Festival Lantern Summer
+styleAnchors:
+  - The Eccentric Family P.A. Works - Festival Lantern Summer

@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-199
 packId: pack_13
-name: Yona of the Dawn - Crimson Princess Resolve
+name: Yona of the Dawn Pierrot - Crimson Princess Resolve
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,28 +13,19 @@ tags:
   - shojo-magical-girl-and-visionary-classics
   - reference-title
 visualDna:
-  aesthetic: >-
-    Anime drawing uses long tapered contours, weathered edge marks, and firm cel shadows for
-    direction.
-  subject_treatment: >-
-    Preserve silhouette, clothing, action, count; motion marks follow only stated gesture.
-  color_and_tone: >-
-    Burnt vermilion, sage, dusty blue, charcoal, ochre; earthy mids and one accent.
-  lighting_and_shadow: >-
-    Separate warm and cool planes with neutral direction; imply no wilderness or sunset.
-  texture_and_material: >-
-    Dry-brush scuffs on selected edges only; smooth base color, no blanket wear.
-  camera_and_composition: >-
-    Keep view; directional balance without requiring profile pose or entourage.
-  atmosphere_and_mood: >-
-    Resolve only if called for; otherwise preserve emotional register.
-  rendering_and_quality: >-
-    Long clear contours, selective texture, readable action, no unrequested debris.
-  key_features: >-
-    Long directional contour, earthy cel planes, selective dry-brush, motion follows the
-    prompt
-  creative_brief: 'Apply a visual treatment centered on long directional contour, earthy cel planes, selective dry-brush, motion follows the prompt. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'Studio Pierrot Yona of the Dawn anime look (2014): Korean-inspired fantasy kingdoms, vivid crimson hair, loyal dragon warriors and sweeping journeys.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with modern shojo designs, vivid red hair, travel clothes and warriors. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Crimson, earth brown, sky blue and gold, true to the Yona of the Dawn Pierrot palette.
+  lighting_and_shadow: Warm dawn light and campfire glow, lit the way Yona of the Dawn Pierrot lights its scenes.
+  texture_and_material: Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.
+  camera_and_composition: Sweeping journey wides and campfire scenes, framed the way Yona of the Dawn Pierrot composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with resolute crimson journey.
+  rendering_and_quality: Polished Pierrot fantasy television frame, in the recognizable hand of Yona of the Dawn Pierrot.
+  key_features: Yona anime crimson hair; fantasy kingdoms; loyal warriors
+  creative_brief: "Studio Pierrot Yona of the Dawn anime look (2014): Korean-inspired fantasy kingdoms, vivid crimson hair, loyal dragon warriors and sweeping journeys. Carry it through Yona anime crimson hair, fantasy kingdoms, loyal warriors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a red-haired princess with a hairpin and bow
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -56,19 +47,19 @@ avoidRules:
   - generic anime filter
   - prompt literal card reuse
   - fake UI
-  - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-199.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: a red-haired princess with a hairpin and bow, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, noisy compression artifacts
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -83,3 +74,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Yona of the Dawn Pierrot - Crimson Princess Resolve
+styleAnchors:
+  - Yona of the Dawn Pierrot - Crimson Princess Resolve

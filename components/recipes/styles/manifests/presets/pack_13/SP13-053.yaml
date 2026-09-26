@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-053
 packId: pack_13
-name: Monster Tamer Adventure Anime
+name: Ken Sugimori - Monster Tamer Adventure Anime
 styleAnchors:
-  - Monster Tamer Adventure Anime
+  - Ken Sugimori - Monster Tamer Adventure Anime
   - creature companion anime
   - creature companions
-displayName: Monster Tamer Adventure Anime
+displayName: Ken Sugimori - Monster Tamer Adventure Anime
 category: 1. Core Anime
 domain: creature companion anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,18 +20,23 @@ tags:
   - monster-tamer
   - creatures
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Monster tamer anime: bright creature-companion adventures with round readable creature designs and energetic kids.'
-  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: round readable creatures with simple markings, energetic young tamers, clear action effects."
-  color_and_tone: Bright primaries and fresh greens, used consistently across subject and background.
-  lighting_and_shadow: Sunny daylight, expressed through the style rather than photographic lighting.
-  texture_and_material: Clean cel, visible at a glance as the signature of the style.
-  camera_and_composition: Dynamic mid shots with creature and tamer, arranged so the subject still reads at a glance.
-  atmosphere_and_mood: Energetic, friendly, brave and fun, driven by the construction, color and rhythm.
-  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  creative_brief: "Monster tamer anime: bright creature-companion adventures with round readable creature designs and energetic kids. Carry it through creature companions, round designs, bright action. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: creature companions; round designs; bright action
+  aesthetic: 'Ken Sugimori creature and character design look: clean watercolor-like illustrations, simple rounded creature shapes, bright friendly adventure and partnership between tamers and monsters.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Sugimori simplicity, clean faces, caps and backpacks, alongside entirely original creatures. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Bright watercolor greens, reds and blues on light airy backgrounds.
+  lighting_and_shadow: Bright clean daylight with soft watercolor shading on creatures.
+  texture_and_material: Clean line with light watercolor-like washes and soft edges.
+  camera_and_composition: Clear readable adventure compositions pairing each tamer with their creature partner.
+  atmosphere_and_mood: Keep the requested mood with bright companionable adventure.
+  rendering_and_quality: Clean watercolor-style creature illustration with friendly clarity and bright color.
+  creative_brief: "Ken Sugimori creature and character design look: clean watercolor-like illustrations, simple rounded creature shapes, bright friendly adventure and partnership between tamers and monsters. Carry it through Ken Sugimori clean creatures, watercolor washes, tamer partnership. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Ken Sugimori clean creatures; watercolor washes; tamer partnership
 avoidRules:
+  - existing pocket monster species
+  - red and white capture balls
+  - yellow electric mouse
+  - existing franchise characters
   - existing anime character likeness
   - studio or franchise logo
   - readable text
@@ -45,9 +50,12 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing pocket monster species, red and white capture balls, yellow electric mouse, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -62,6 +70,7 @@ taxonomy:
     - monster-tamer
     - creatures
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

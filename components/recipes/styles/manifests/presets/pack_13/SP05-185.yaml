@@ -3,7 +3,7 @@ id: SP05-185
 packId: pack_13
 name: Paradise Kiss - Runway Heartbreak Chic
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,27 +13,16 @@ tags:
   - shojo-magical-girl-and-visionary-classics
   - reference-title
 visualDna:
-  aesthetic: >-
-    Fashion-illustration anime line combines long angular strokes, crisp silhouette cuts,
-    and narrow seam detail.
-  subject_treatment: >-
-    Keep figure, garment, and pose; draw seams only on clothing the prompt supplies.
-  color_and_tone: >-
-    Black, electric teal, acid lime, muted violet, silver; bright planes stay selective.
-  lighting_and_shadow: >-
-    Hard specular accents against matte shadows; reflections only on supporting surfaces.
-  texture_and_material: >-
-    Fine stitches on existing textiles and matte treatment elsewhere; no wardrobe
-    substitution.
-  camera_and_composition: >-
-    Preserve crop; diagonal silhouette rhythm only where requested gesture allows.
-  atmosphere_and_mood: >-
-    Let line contrast suggest elegance or abrasion without imposing a runway scene.
-  rendering_and_quality: >-
-    Sharp edges, thin accents, controlled reflectance, no all-over gloss.
-  key_features: >-
-    Angular editorial line, selective stitch detail, electric accents, matte-gloss contrast
-  creative_brief: 'Apply a visual treatment centered on angular editorial line, selective stitch detail, electric accents, matte-gloss contrast. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'Ai Yazawa Paradise Kiss look: high fashion shojo, runway glamour, hand-made gowns, stylish designers and chic heartbreak.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yazawa designs, tall models, long legs and elaborate fashion. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Black, white, gold and runway pastels, true to the Paradise Kiss palette.
+  lighting_and_shadow: Runway spotlights and glamorous glow, lit the way Paradise Kiss lights its scenes.
+  texture_and_material: Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.
+  camera_and_composition: Fashion runway compositions and close-ups, framed the way Paradise Kiss composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with chic runway heartbreak.
+  rendering_and_quality: Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.
+  key_features: Paradise Kiss fashion; runway glamour; tall models; chic
+  creative_brief: "Ai Yazawa Paradise Kiss look: high fashion shojo, runway glamour, hand-made gowns, stylish designers and chic heartbreak. Carry it through Paradise Kiss fashion, runway glamour, tall models, chic. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -58,17 +47,12 @@ avoidRules:
   - fake UI
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-185.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -83,3 +67,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Paradise Kiss - Runway Heartbreak Chic
+styleAnchors:
+  - Paradise Kiss - Runway Heartbreak Chic

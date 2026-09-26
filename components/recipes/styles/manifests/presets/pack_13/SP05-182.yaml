@@ -3,7 +3,7 @@ id: SP05-182
 packId: pack_13
 name: Nana - Black-Lace Apartment Heartbreak
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,29 +13,19 @@ tags:
   - shojo-magical-girl-and-visionary-classics
   - reference-title
 visualDna:
-  aesthetic: >-
-    Expressive anime ink alternates dense black shapes with fine fashion-illustration
-    strokes and edge accents.
-  subject_treatment: >-
-    Keep identity, pose, clothing; detail actual fabric and faces without adding a performer
-    or companion.
-  color_and_tone: >-
-    Black, smoke violet, ivory, oxblood, cold blue; separate deep values from material mids.
-  lighting_and_shadow: >-
-    Narrow warm highlights against cool shadows only where prompt lighting supports them.
-  texture_and_material: >-
-    Velvet or lace only on present materials; otherwise matte ink and sparse dry brush.
-  camera_and_composition: >-
-    Respect camera and count; balance one focal area with open space, no interior setting.
-  atmosphere_and_mood: >-
-    Intimate tension only when requested; no automatic heartbreak, night, or confrontation.
-  rendering_and_quality: >-
-    Control blacks with thin highlights and clear mids; no gritty smears or costume
-    injection.
-  key_features: >-
-    Dense expressive blacks, smoke-violet mids, selective fabric detail, precise highlights
-  creative_brief: 'Apply a visual treatment centered on dense expressive blacks, smoke-violet mids, selective fabric detail, precise highlights. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'Ai Yazawa Nana manga look: fashion-illustration elegance, long slender bodies, punk and Vivienne-style fashion, smoky apartments and heartbreak.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yazawa designs, tall slender bodies, long legs, heavy eyeliner and fashionable punk outfits. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Black ink with grey tone and occasional crimson.
+  lighting_and_shadow: Smoky apartment light and night city glow, lit the way Nana lights its scenes.
+  texture_and_material: Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.
+  camera_and_composition: Fashion-editorial compositions and emotional close-ups, framed the way Nana composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with aching punk heartbreak.
+  rendering_and_quality: Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.
+  key_features: Ai Yazawa fashion elegance; punk; smoky apartments; heartbreak
+  creative_brief: "Ai Yazawa Nana manga look: fashion-illustration elegance, long slender bodies, punk and Vivienne-style fashion, smoky apartments and heartbreak. Carry it through Ai Yazawa fashion elegance, punk, smoky apartments, heartbreak. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a punk singer with a spiked choker and black lipstick named character
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -57,19 +47,19 @@ avoidRules:
   - generic anime filter
   - prompt literal card reuse
   - fake UI
-  - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-182.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: a punk singer with a spiked choker and black lipstick named character, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, noisy compression artifacts
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -84,3 +74,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Nana - Black-Lace Apartment Heartbreak
+styleAnchors:
+  - Nana - Black-Lace Apartment Heartbreak

@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-090
 packId: pack_13
-name: Memory-Washed Melodrama Softness
+name: Itaru Hinoue Key - Memory-Washed Melodrama Softness
 category: 4. Slice Of Life & Moe
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,17 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
+  - reference-title
 visualDna:
-  aesthetic: 'Soft ink contours sit under translucent tonal veils, with selected focal edges kept crisp against gentler color transitions.'
-  subject_treatment: 'Preserve identity, proportions, expression, and action; soften contour edges and shadow transitions, never age, pose, or facial structure.'
-  color_and_tone: 'Use subdued warm and cool midtones with gently faded transitions; retain explicit colors and avoid an automatic vintage cast.'
-  lighting_and_shadow: 'Follow the requested light direction and soften shadow boundaries without changing their source or adding backlight.'
-  texture_and_material: 'Layer smooth color glazing over subtle pencil grain; preserve the texture and reflectance of each described material.'
-  camera_and_composition: 'Hold crop, viewpoint, distance, and count; create depth with tonal softness rather than an added vignette or focal object.'
-  atmosphere_and_mood: 'Keep the requested mood and intensity; haze changes edge softness, not the story or emotional reading.'
-  rendering_and_quality: 'Blend shadows gently while maintaining decisive contours and readable values; avoid blur over the whole image.'
-  key_features: 'Translucent tonal veils; faded but prompt-led color; selective crisp contours; soft shadow transitions; faint pencil grain.'
-  creative_brief: "Use translucent color and softened edges around a few decisive lines. Preserve the user's subject, action, count, camera, and emotional tone without adding a narrative filter. Use it as a reusable look on any subject."
+  aesthetic: 'Itaru Hinoue Key visual novel art as in Clannad and Kanon: very large soft eyes, small faces, pastel memory-washed light and tearful melodrama.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hinoue designs, huge soft eyes, small noses, long hair and simple clothes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Soft pastel wash, sakura pink and pale gold.
+  lighting_and_shadow: Memory-washed soft glowing light, lit the way Itaru Hinoue Key lights its scenes.
+  texture_and_material: Soft digital illustration with pastel gradients, with the surface finish of Itaru Hinoue Key.
+  camera_and_composition: Tearful close-ups and wistful town views, framed the way Itaru Hinoue Key composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with memory-washed tender melodrama.
+  rendering_and_quality: Soft visual-novel illustration look, in the recognizable hand of Itaru Hinoue Key.
+  key_features: Itaru Hinoue huge eyes; pastel washes; Key melodrama
+  creative_brief: "Itaru Hinoue Key visual novel art as in Clannad and Kanon: very large soft eyes, small faces, pastel memory-washed light and tearful melodrama. Carry it through Itaru Hinoue huge eyes, pastel washes, Key melodrama. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -44,15 +45,14 @@ avoidRules:
   - generic anime filter
   - prompt literal card reuse
   - fake UI
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-090.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock,
-    canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic
-    anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied
-    franchise costume, logo
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -61,8 +61,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - slice-of-life-and-moe
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Itaru Hinoue Key - Memory-Washed Melodrama Softness
+styleAnchors:
+  - Itaru Hinoue Key - Memory-Washed Melodrama Softness

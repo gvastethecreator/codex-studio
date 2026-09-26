@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-115
 packId: pack_13
-name: Ice-Crystal Refractive
+name: Studio Orange CG - Ice-Crystal Refractive
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,36 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Use faceted contour shading, internal refraction and narrow prismatic edge splits as a cool
-    refractive rendering; do not freeze or crystallize the subject.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: favor an icy blue range with
-    small spectral accents while retaining colors necessary to identify the subject.
-  lighting_and_shadow: >-
-    Use transmitted highlights and restrained refractive bloom; obey the prompt's light source and
-    keep shadow detail.
-  texture_and_material: >-
-    Render crisp facets and fine frost-like branching as surface marks, not physical ice replacing
-    the material.
-  camera_and_composition: >-
-    Facet the existing planes without imposing hexagonal symmetry or changing camera and silhouette.
-  atmosphere_and_mood: >-
-    Cool clarity is the visual treatment; preserve warmth, darkness or texture requested by the
-    prompt.
-  rendering_and_quality: >-
-    Apply refraction as a drawing effect while preserving material, temperature and identity; add no
-    ice, snow or frozen setting. Keep important silhouettes and joins legible; no watermark,
-    unrequested text or interface.
-  key_features: >-
-    Faceted shading; internal refraction; icy blue bias; restrained prism edges; fine frost-like
-    surface marks.
-  creative_brief: 'Apply this visual treatment to the requested content: Faceted shading; internal refraction; icy blue bias; restrained prism edges; fine frost-like surface marks. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Studio Orange cel-shaded CG crystal rendering as in its gemstone work: translucent refractive surfaces, prismatic splits and crisp faceted light.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people as cel-shaded CG figures with crystalline refractive details. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Icy prismatic blues and white, true to the Studio Orange CG palette.
+  lighting_and_shadow: Prismatic refractive light, lit the way Studio Orange CG lights its scenes.
+  texture_and_material: Faceted translucent CG surfaces, with the surface finish of Studio Orange CG.
+  camera_and_composition: Crisp faceted compositions, framed the way Studio Orange CG composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with crystalline icy clarity.
+  rendering_and_quality: Crystalline cel-shaded CG frame, in the recognizable hand of Studio Orange CG.
+  key_features: Studio Orange crystal; refraction; faceted light
+  creative_brief: "Studio Orange cel-shaded CG crystal rendering as in its gemstone work: translucent refractive surfaces, prismatic splits and crisp faceted light. Carry it through Studio Orange crystal, refraction, faceted light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look
@@ -55,16 +37,14 @@ avoidRules:
   - refraction bloom obscuring facet boundaries
   - frost marks replacing source material cues
   - facets changing source geometry
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-115.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, refraction bloom obscuring facet boundaries, frost
-    marks replacing source material cues, facets changing source geometry
+  negativePrompt: photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, refraction bloom obscuring facet boundaries, frost marks replacing source material cues, facets changing source geometry, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -73,8 +53,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Studio Orange CG - Ice-Crystal Refractive
+styleAnchors:
+  - Studio Orange CG - Ice-Crystal Refractive

@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-057
 packId: pack_13
-name: Afterschool Golden Hour Anime
+name: Tsukigakirei feel. - Afterschool Golden Hour Anime
 styleAnchors:
-  - Afterschool Golden Hour Anime
+  - Tsukigakirei feel. - Afterschool Golden Hour Anime
   - late afternoon light anime
   - orange shafts
-displayName: Afterschool Golden Hour Anime
+displayName: Tsukigakirei feel. - Afterschool Golden Hour Anime
 category: 2. Slice Of Life, School And Music
 domain: late afternoon light anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - golden-hour
   - nostalgia
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Afterschool golden hour anime: long orange light through windows, dust motes and long shadows at the end of the day.'
-  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: simple quiet poses, long cast shadows, window frames and silhouettes against the light."
-  color_and_tone: Deep orange and amber with violet shadows, used consistently across subject and background.
-  lighting_and_shadow: Low sun through windows with bright shafts, expressed through the style rather than photographic lighting.
-  texture_and_material: Cel with painted light shafts and floating dust, visible at a glance as the signature of the style.
-  camera_and_composition: Wide still frames with strong window geometry, arranged so the subject still reads at a glance.
-  atmosphere_and_mood: Nostalgic, bittersweet, quiet and warm, driven by the construction, color and rhythm.
-  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  creative_brief: "Afterschool golden hour anime: long orange light through windows, dust motes and long shadows at the end of the day. Carry it through orange shafts, long shadows, dust motes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: orange shafts; long shadows; dust motes
+  aesthetic: 'feel. Tsukigakirei look (2017): understated realistic school romance, golden hour light through classrooms, soft grain and gentle rotoscope-like acting.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with understated realistic designs, simple faces, uniforms and shy natural gestures. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Golden hour orange, soft classroom beige and dusty blue shadows.
+  lighting_and_shadow: Long golden afternoon light through windows and floating dust motes.
+  texture_and_material: Soft grainy digital cel with realistic painted classrooms.
+  camera_and_composition: Quiet classroom framing and long unhurried afternoon shots in empty halls.
+  atmosphere_and_mood: Keep the requested mood with shy golden tenderness.
+  rendering_and_quality: Understated realistic school frame with golden hour glow.
+  creative_brief: "feel. Tsukigakirei look (2017): understated realistic school romance, golden hour light through classrooms, soft grain and gentle rotoscope-like acting. Carry it through Tsukigakirei golden hour, understated realism, dust motes, shyness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Tsukigakirei golden hour; understated realism; dust motes; shyness
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -45,9 +46,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -62,6 +67,7 @@ taxonomy:
     - golden-hour
     - nostalgia
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

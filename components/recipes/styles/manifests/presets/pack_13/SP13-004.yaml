@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP13-004
 packId: pack_13
-name: Mecha Hangar Ignition
+name: Gundam Unicorn Sunrise - Mecha Hangar Ignition
 category: 1. Core Anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,18 +11,21 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Mecha hangar anime: giant robots drawn with precise mechanical line work, panel lines and industrial lighting.'
-  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: hard-edged mechanical line work with panel lines, bolts and vents, humans tiny beside machines, sparks and steam as cel effects."
-  color_and_tone: Gunmetal, hazard orange, off-white and teal accents, used consistently across subject and background.
-  lighting_and_shadow: Industrial floodlights, sparks and visor glow, expressed through the style rather than photographic lighting.
-  texture_and_material: Crisp cel metal with sharp highlight blocks, visible at a glance as the signature of the style.
-  camera_and_composition: Low angle up at the machine with tiny figures for scale.
-  atmosphere_and_mood: Tense, powerful, mechanical and awe-struck, driven by the construction, color and rhythm.
-  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  key_features: panel lines; floodlights; sparks; scale contrast
-  creative_brief: "Mecha hangar anime: giant robots drawn with precise mechanical line work, panel lines and industrial lighting. Carry it through panel lines, floodlights, sparks, scale contrast. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Sunrise Mobile Suit Gundam Unicorn OVA look (2010): meticulously detailed hand-drawn mobile suits, cathedral-like hangars, glowing frame light and cinematic mecha grandeur.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yasuhiko-derived designs, serious faces, pilot suits and crew uniforms dwarfed by detailed machines. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Hangar steel grey, white armor plates, teal frame glow and warning yellow stripes.
+  lighting_and_shadow: Dramatic hangar floodlights cutting through steam haze and teal glowing frame light.
+  texture_and_material: Meticulously hand-drawn mechanical detail with glossy panel highlights and soft grain.
+  camera_and_composition: Low monumental angles of giant robots in hangars and slow cinematic reveals.
+  atmosphere_and_mood: Keep the requested mood with awe-struck mechanical grandeur.
+  rendering_and_quality: Lavish 2010 OVA frame with meticulous hand-drawn mecha detail and cinematic lighting.
+  key_features: Unicorn mecha detail; cathedral hangars; glowing frame light; cinematic grandeur
+  creative_brief: "Sunrise Mobile Suit Gundam Unicorn OVA look (2010): meticulously detailed hand-drawn mobile suits, cathedral-like hangars, glowing frame light and cinematic mecha grandeur. Carry it through Unicorn mecha detail, cathedral hangars, glowing frame light, cinematic grandeur. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a white mobile suit with a single horn that splits into a V-fin
+  - existing franchise characters
   - existing anime character likeness
   - studio or franchise logo
   - readable text
@@ -47,10 +50,13 @@ avoidRules:
   - UI overlay
   - franchise likeness
   - real person likeness
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-004.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, toy like, lowres, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts
+  negativePrompt: a white mobile suit with a single horn that splits into a V-fin, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, toy like, lowres, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -59,8 +65,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Gundam Unicorn Sunrise - Mecha Hangar Ignition
+styleAnchors:
+  - Gundam Unicorn Sunrise - Mecha Hangar Ignition

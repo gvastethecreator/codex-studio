@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-019
 packId: pack_13
-name: Wired Existential Glitch
+name: Yoshitoshi ABe - Wired Existential Glitch
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,28 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Anime ink uses deliberate signal breaks, slight contour offsets, and small blank gaps.
-  subject_treatment: >-
-    Keep the original silhouette; displace only a thin local edge, never duplicate a
-    subject.
-  color_and_tone: >-
-    Carbon black, steel blue, pale graphite, with sparse cyan or vermilion signal accents.
-  lighting_and_shadow: >-
-    Level cool fill, isolated bright edges, and simple shadows without invented light
-    sources.
-  texture_and_material: >-
-    Fine scanline-like grain and broken strokes stay local; large planes remain clean.
-  camera_and_composition: >-
-    Keep crop and viewpoint; asymmetric gaps suggest interference without panels or scenery.
-  atmosphere_and_mood: >-
-    Quiet interruption creates unease only when that tone is requested.
-  rendering_and_quality: >-
-    Readable forms, sparse signal artifacts, and no fake text or full-frame static.
-  key_features: >-
-    Broken contour rhythm, local scanline grain, cyan signal accents, asymmetric pauses
-  creative_brief: 'Apply a visual treatment centered on broken contour rhythm, local scanline grain, cyan signal accents, asymmetric pauses. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'Yoshitoshi ABe illustration look as in his art books: soft thin pencil-like lines, washed-out pastel color, power lines and quiet melancholy figures dissolving into digital noise.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with ABe designs, small quiet faces, short hair and plain clothes, rendered with soft thin lines. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Washed-out pastel, power-line grey, faint pink and digital cyan.
+  lighting_and_shadow: Pale dusk light with glitch artifacts, lit the way Yoshitoshi ABe lights its scenes.
+  texture_and_material: Soft pencil-like lines, watercolor washes and digital noise.
+  camera_and_composition: Lonely figures under power lines and empty skies.
+  atmosphere_and_mood: Keep the requested mood with quiet existential drift.
+  rendering_and_quality: Soft melancholy digital illustration with glitch artifacts, in the recognizable hand of Yoshitoshi ABe.
+  key_features: Yoshitoshi ABe soft line; power lines; pastel melancholy; glitch
+  creative_brief: "Yoshitoshi ABe illustration look as in his art books: soft thin pencil-like lines, washed-out pastel color, power lines and quiet melancholy figures dissolving into digital noise. Carry it through Yoshitoshi ABe soft line, power lines, pastel melancholy, glitch. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -55,15 +45,14 @@ avoidRules:
   - generic anime filter
   - prompt literal card reuse
   - fake UI
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-019.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -72,8 +61,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - shojo-magical-girl-and-visionary-classics
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Yoshitoshi ABe - Wired Existential Glitch
+styleAnchors:
+  - Yoshitoshi ABe - Wired Existential Glitch

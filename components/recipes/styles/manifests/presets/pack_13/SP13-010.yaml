@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP13-010
 packId: pack_13
-name: Isekai Forest Caravan
+name: Yako Gureishi - Isekai Forest Caravan
 category: 1. Core Anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,17 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Isekai caravan anime: bright fantasy-adventure frames of travelers, carts, odd beasts and lush landscapes.'
-  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: friendly character designs, clean lines, soft cel shading, rich painted fantasy backgrounds."
-  color_and_tone: Lush greens, sky blue and warm earth, used consistently across subject and background.
-  lighting_and_shadow: Sunny daylight through leaves, expressed through the style rather than photographic lighting.
-  texture_and_material: Painted backgrounds with clean cel characters, visible at a glance as the signature of the style.
-  camera_and_composition: Wide travel frames, arranged so the subject still reads at a glance.
-  atmosphere_and_mood: Adventurous, cozy, curious and bright, driven by the construction, color and rhythm.
-  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  key_features: caravan; lush painted backgrounds; clean cel; odd beasts
-  creative_brief: "Isekai caravan anime: bright fantasy-adventure frames of travelers, carts, odd beasts and lush landscapes. Carry it through caravan, lush painted backgrounds, clean cel, odd beasts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Yako Gureishi Somali and the Forest Spirit look: gentle watercolor fantasy travel, soft monsters and golems, quiet caravans through mushroom forests and tender companionship.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with gentle soft designs, round faces and travel cloaks, and monsters with kindly rounded shapes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Soft watercolor greens, glowing mushroom cyan and warm lantern amber in the forest.
+  lighting_and_shadow: Soft dappled forest light and gentle mushroom glow along the caravan path.
+  texture_and_material: Watercolor-like painted backgrounds with soft line work and gentle grain.
+  camera_and_composition: Quiet travel compositions with caravans on winding forest paths.
+  atmosphere_and_mood: Keep the requested mood with gentle wandering wonder.
+  rendering_and_quality: Soft watercolor fantasy illustration with tender unhurried pacing.
+  key_features: Somali gentleness; watercolor forests; kindly monsters; caravans
+  creative_brief: "Yako Gureishi Somali and the Forest Spirit look: gentle watercolor fantasy travel, soft monsters and golems, quiet caravans through mushroom forests and tender companionship. Carry it through Somali gentleness, watercolor forests, kindly monsters, caravans. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -47,10 +48,14 @@ avoidRules:
   - UI overlay
   - franchise likeness
   - real person likeness
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-010.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, sci fi city, low detail, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, sci fi city, low detail, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -59,8 +64,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Yako Gureishi - Isekai Forest Caravan
+styleAnchors:
+  - Yako Gureishi - Isekai Forest Caravan

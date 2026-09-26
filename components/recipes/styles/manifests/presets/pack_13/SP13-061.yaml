@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-061
 packId: pack_13
-name: Garage Band Grit Anime
+name: Girls Band Cry Toei - Garage Band Grit Anime
 styleAnchors:
-  - Garage Band Grit Anime
+  - Girls Band Cry Toei - Garage Band Grit Anime
   - rough rock band anime
   - rough lines
-displayName: Garage Band Grit Anime
+displayName: Girls Band Cry Toei - Garage Band Grit Anime
 category: 2. Slice Of Life, School And Music
 domain: rough rock band anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - garage-band
   - rock
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Garage band anime: raw, energetic frames with rough lines, amp glow, sweat and cramped rehearsal spaces.'
-  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: rough energetic lines, loose expressive faces, instruments slightly distorted by motion."
-  color_and_tone: Grimy greys with amp red and bulb yellow, used consistently across subject and background.
-  lighting_and_shadow: Bare bulb and amp glow, expressed through the style rather than photographic lighting.
-  texture_and_material: Rough cel with grain, visible at a glance as the signature of the style.
-  camera_and_composition: Cramped low angles, arranged so the subject still reads at a glance.
-  atmosphere_and_mood: Raw, loud, messy and passionate, driven by the construction, color and rhythm.
-  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  creative_brief: "Garage band anime: raw, energetic frames with rough lines, amp glow, sweat and cramped rehearsal spaces. Carry it through rough lines, amp glow, sweat. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: rough lines; amp glow; sweat
+  aesthetic: 'Toei Girls Band Cry look (2024): expressive cel-shaded 3D with hand-drawn feel, raw rock band grit, cramped rehearsal spaces and messy emotional honesty.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people as cel-shaded 3D figures with expressive faces, band tees and worn instruments. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Grimy garage browns, amp black, neon pink and fluorescent white.
+  lighting_and_shadow: Bare bulb garage light and harsh stage spots.
+  texture_and_material: Cel-shaded 3D figures with hand-drawn line accents and expressive faces.
+  camera_and_composition: Cramped rehearsal-room framing and sweaty live stage shots in tiny venues.
+  atmosphere_and_mood: Keep the requested mood with raw emotional grit.
+  rendering_and_quality: Expressive cel-shaded rock band frame with raw emotional energy.
+  creative_brief: "Toei Girls Band Cry look (2024): expressive cel-shaded 3D with hand-drawn feel, raw rock band grit, cramped rehearsal spaces and messy emotional honesty. Carry it through Girls Band Cry grit, cel-shaded 3D, rehearsal rooms, raw emotion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Girls Band Cry grit; cel-shaded 3D; rehearsal rooms; raw emotion
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -45,9 +46,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -62,6 +67,7 @@ taxonomy:
     - garage-band
     - rock
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

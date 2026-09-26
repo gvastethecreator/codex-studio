@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-058
 packId: pack_13
-name: Winter Breath Quiet Anime
+name: Makoto Shinkai 5cm - Winter Breath Quiet Anime
 styleAnchors:
-  - Winter Breath Quiet Anime
+  - Makoto Shinkai 5cm - Winter Breath Quiet Anime
   - winter slice of life anime
   - visible breath
-displayName: Winter Breath Quiet Anime
+displayName: Makoto Shinkai 5cm - Winter Breath Quiet Anime
 category: 2. Slice Of Life, School And Music
 domain: winter slice of life anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - winter
   - quiet
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Winter breath anime: hushed snowy frames with visible breath, red noses, scarves and pale blue light.'
-  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: soft lines, bundled clothes, visible breath clouds, rosy cheeks and falling snow."
-  color_and_tone: Pale blue, white and a warm red accent, used consistently across subject and background.
-  lighting_and_shadow: Soft overcast snow light, expressed through the style rather than photographic lighting.
-  texture_and_material: Cel with painted snow and soft glow, visible at a glance as the signature of the style.
-  camera_and_composition: Quiet mid shots with snow falling, arranged so the subject still reads at a glance.
-  atmosphere_and_mood: Hushed, tender, cold and cozy, driven by the construction, color and rhythm.
-  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  creative_brief: "Winter breath anime: hushed snowy frames with visible breath, red noses, scarves and pale blue light. Carry it through visible breath, scarves, falling snow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: visible breath; scarves; falling snow
+  aesthetic: 'Makoto Shinkai 5 Centimeters per Second look (2007): heavy snowfall, lonely train stations, visible breath, glowing streetlights and melancholy distance.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with early Shinkai designs, simple faces, winter coats and scarves, small in wide scenes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Snow white, night blue, streetlight amber and train-window glow.
+  lighting_and_shadow: Glowing streetlights in heavy snow and warm windows at night.
+  texture_and_material: Painterly digital backgrounds with dense detailed snowfall and glowing windows.
+  camera_and_composition: Lonely wide shots of tiny rural stations and endless snowfields at night.
+  atmosphere_and_mood: Keep the requested mood with quiet melancholy distance.
+  rendering_and_quality: Painterly early Makoto Shinkai frame with snowy lonely melancholy.
+  creative_brief: "Makoto Shinkai 5 Centimeters per Second look (2007): heavy snowfall, lonely train stations, visible breath, glowing streetlights and melancholy distance. Carry it through Shinkai 5cm snow, lonely stations, visible breath, distance. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Shinkai 5cm snow; lonely stations; visible breath; distance
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -45,9 +46,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -62,6 +67,7 @@ taxonomy:
     - winter
     - quiet
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

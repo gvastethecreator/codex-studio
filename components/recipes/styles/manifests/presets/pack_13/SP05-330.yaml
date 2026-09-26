@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-330
 packId: pack_13
-name: Folkloric Deadpan Ink Catalog
+name: Shigeru Mizuki - Folkloric Deadpan Ink Catalog
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,34 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Use dry, uneven ink, a compact flat palette, repeated small hatch marks and catalog-like
-    spacing; derive pattern only from forms already present.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: keep colors flat and limited,
-    preserving prompt-critical hues and material identity.
-  lighting_and_shadow: >-
-    Use simple flat values and minimal shadow; do not add theatrical light.
-  texture_and_material: >-
-    Show slightly irregular ink edges and a few repeated hatches; no labels or fabricated cultural
-    ornament.
-  camera_and_composition: >-
-    Separate existing forms with clear breathing room while preserving layout and count; do not
-    create a page or display.
-  atmosphere_and_mood: >-
-    Deadpan folklore is carried by dry line and repetition, not by assigning a culture or mythology.
-  rendering_and_quality: >-
-    Apply the mark system without inventing cultural motifs, labels, folk costume, props or a
-    catalog page. Keep important silhouettes and joins legible; no watermark, unrequested text or
-    interface.
-  key_features: >-
-    Dry uneven ink; compact flats; repeated small hatch; catalog-like spacing; deadpan restraint.
-  creative_brief: 'Apply this visual treatment to the requested content: Dry uneven ink; compact flats; repeated small hatch; catalog-like spacing; deadpan restraint. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Shigeru Mizuki yokai manga look: cartoony simple characters against extremely detailed stippled realistic backgrounds, catalog-like yokai portraits and deadpan folklore.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people cartoony and simple, and spirits as odd deadpan yokai. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Black ink with dense stipple and hatching, true to the Shigeru Mizuki palette.
+  lighting_and_shadow: Dim eerie light via stippling, lit the way Shigeru Mizuki lights its scenes.
+  texture_and_material: Dense stippled backgrounds and simple cartoon figures, with the surface finish of Shigeru Mizuki.
+  camera_and_composition: Catalog-like portraits and detailed scenes, framed the way Shigeru Mizuki composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with deadpan folkloric eeriness.
+  rendering_and_quality: Classic yokai manga illustration, in the recognizable hand of Shigeru Mizuki.
+  key_features: Shigeru Mizuki stipple; cartoon figures; yokai catalog
+  creative_brief: "Shigeru Mizuki yokai manga look: cartoony simple characters against extremely detailed stippled realistic backgrounds, catalog-like yokai portraits and deadpan folklore. Carry it through Shigeru Mizuki stipple, cartoon figures, yokai catalog. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look
@@ -53,16 +37,14 @@ avoidRules:
   - polished sheen erasing dry-ink irregularity
   - hatch marks obscuring subject contours
   - unrequested cultural motif or label
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-330.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, polished sheen erasing dry-ink irregularity, hatch
-    marks obscuring subject contours, unrequested cultural motif or label
+  negativePrompt: photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, polished sheen erasing dry-ink irregularity, hatch marks obscuring subject contours, unrequested cultural motif or label, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -71,8 +53,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Shigeru Mizuki - Folkloric Deadpan Ink Catalog
+styleAnchors:
+  - Shigeru Mizuki - Folkloric Deadpan Ink Catalog

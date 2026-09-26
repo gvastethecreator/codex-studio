@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-048
 packId: pack_13
-name: Crimson Hair Quest Romance
+name: Mizuho Kusanagi - Crimson Hair Quest Romance
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,28 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Decisive anime contours shift from firm outer strokes to fast tapered accents and cel
-    shadows.
-  subject_treatment: >-
-    Retain anatomy, costume, gesture; follow existing movement without adding adventure
-    props.
-  color_and_tone: >-
-    Clay red, deep blue, sand, cool gray; red is an accent, not hair color.
-  lighting_and_shadow: >-
-    Brisk directional light against firm cool shadows; reflections stay on visible surfaces.
-  texture_and_material: >-
-    Smooth opaque color with sparse dry-brush edges; no simulated wind or dust.
-  camera_and_composition: >-
-    Preserve camera and count; use diagonals only when action supports them.
-  atmosphere_and_mood: >-
-    Resolve comes through a clear silhouette when appropriate; do not impose romance.
-  rendering_and_quality: >-
-    Legible action, crisp cel bands, sparse texture, no unrequested motion blur.
-  key_features: >-
-    Decisive tapered line, clay-red accent, firm cel shadows, gesture-led diagonals
-  creative_brief: 'Apply a visual treatment centered on decisive tapered line, clay-red accent, firm cel shadows, gesture-led diagonals. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'Mizuho Kusanagi Yona of the Dawn manga art: vivid crimson flowing hair, fierce resolve, beautiful warriors and dramatic fantasy panels.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kusanagi designs, flowing hair, fierce eyes and fantasy robes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Crimson, ink black and gold accents, true to the Mizuho Kusanagi palette.
+  lighting_and_shadow: Dramatic fire and dawn light, lit the way Mizuho Kusanagi lights its scenes.
+  texture_and_material: Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.
+  camera_and_composition: Dramatic cliff and battle compositions, framed the way Mizuho Kusanagi composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with fierce romantic resolve.
+  rendering_and_quality: Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.
+  key_features: Mizuho Kusanagi crimson hair; fierce resolve; fantasy
+  creative_brief: "Mizuho Kusanagi Yona of the Dawn manga art: vivid crimson flowing hair, fierce resolve, beautiful warriors and dramatic fantasy panels. Carry it through Mizuho Kusanagi crimson hair, fierce resolve, fantasy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -55,15 +45,14 @@ avoidRules:
   - generic anime filter
   - prompt literal card reuse
   - fake UI
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-048.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -72,8 +61,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - shojo-magical-girl-and-visionary-classics
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Mizuho Kusanagi - Crimson Hair Quest Romance
+styleAnchors:
+  - Mizuho Kusanagi - Crimson Hair Quest Romance

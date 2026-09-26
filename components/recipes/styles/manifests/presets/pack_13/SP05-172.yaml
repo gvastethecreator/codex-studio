@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-172
 packId: pack_13
-name: The Vision of Escaflowne - Tarot Mecha Fantasy
+name: The Vision of Escaflowne Film - Tarot Mecha Fantasy
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,28 +13,19 @@ tags:
   - shojo-magical-girl-and-visionary-classics
   - reference-title
 visualDna:
-  aesthetic: >-
-    Anime linework pairs fine engraved contours with crisp beveled planes and measured
-    geometry.
-  subject_treatment: >-
-    Retain subject and materials; mechanical detail only on shown mechanisms, no divination
-    symbols by default.
-  color_and_tone: >-
-    Slate, steel blue, muted gold, plum, warm neutral; metallic accents localized.
-  lighting_and_shadow: >-
-    Precise edge highlights and firm cool shadows; gleam only on actual metal.
-  texture_and_material: >-
-    Restrained crosshatch and grain within selected planes; no synthetic metal texture.
-  camera_and_composition: >-
-    Keep viewpoint; balance existing forms with geometric space, no skyline or symbols.
-  atmosphere_and_mood: >-
-    Suspended tension only where prompt supports it; preserve the requested tone.
-  rendering_and_quality: >-
-    Crisp edges, controlled facets, sparse line detail, no fake inscriptions.
-  key_features: >-
-    Engraved contour, beveled value planes, localized metal accents, restrained geometry
-  creative_brief: 'Apply a visual treatment centered on engraved contour, beveled value planes, localized metal accents, restrained geometry. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'BONES and Sunrise Escaflowne film look (2000): darker painterly fantasy, engraved armored guymelefs, tarot symbolism and moody candlelit medieval sky kingdoms.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with sharper film designs, long faces, long hair and medieval armor or robes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Deep crimson, brass, midnight blue and candle gold.
+  lighting_and_shadow: Candlelit interiors and moody dusk skies, lit the way The Vision of Escaflowne Film lights its scenes.
+  texture_and_material: Painterly film cel with engraved mechanical detail, with the surface finish of The Vision of Escaflowne Film.
+  camera_and_composition: Moody cathedral compositions and soaring sky battles, framed the way The Vision of Escaflowne Film composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with dark tarot destiny.
+  rendering_and_quality: Painterly 2000 feature frame with engraved mecha fantasy.
+  key_features: Escaflowne film; engraved guymelefs; tarot symbolism; candlelight
+  creative_brief: "BONES and Sunrise Escaflowne film look (2000): darker painterly fantasy, engraved armored guymelefs, tarot symbolism and moody candlelit medieval sky kingdoms. Carry it through Escaflowne film, engraved guymelefs, tarot symbolism, candlelight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a white dragon-shaped mech with a sword
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -56,19 +47,19 @@ avoidRules:
   - generic anime filter
   - prompt literal card reuse
   - fake UI
-  - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-172.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: a white dragon-shaped mech with a sword, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, noisy compression artifacts
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -83,3 +74,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: The Vision of Escaflowne Film - Tarot Mecha Fantasy
+styleAnchors:
+  - The Vision of Escaflowne Film - Tarot Mecha Fantasy

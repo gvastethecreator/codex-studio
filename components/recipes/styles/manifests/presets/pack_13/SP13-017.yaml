@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP13-017
 packId: pack_13
-name: Ink Noir Detective
+name: Natsume Ono - Ink Noir Detective
 category: 1. Core Anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,17 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Ink noir detective anime: black-ink shadows, stark white highlights and a single accent color in hard-boiled mystery frames.'
-  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: heavy solid black shadows, sharp white highlights, lean angular faces, smoke and rain drawn in ink."
-  color_and_tone: Black and white with one accent color, usually red.
-  lighting_and_shadow: Hard single-source light through blinds or a streetlamp, expressed through the style rather than photographic lighting.
-  texture_and_material: Ink fills with light screentone, visible at a glance as the signature of the style.
-  camera_and_composition: Canted angles and deep shadow frames, arranged so the subject still reads at a glance.
-  atmosphere_and_mood: Moody, suspicious, weary and cool, driven by the construction, color and rhythm.
-  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  key_features: solid black shadows; single accent color; hard light
-  creative_brief: "Ink noir detective anime: black-ink shadows, stark white highlights and a single accent color in hard-boiled mystery frames. Carry it through solid black shadows, single accent color, hard light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Natsume Ono manga look as in ACCA and House of Five Leaves: thin wobbly ink lines, sleepy half-lidded eyes, elegant understated noir, cigarettes and quiet conspiracies.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Ono designs, long faces, sleepy half-lidded eyes, thin lips and elegant suits. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Muted sepia, ink black and soft grey tones with little saturation.
+  lighting_and_shadow: Soft noir light through window blinds and warm desk-lamp glow.
+  texture_and_material: Thin wobbly ink line and flat muted tone fills.
+  camera_and_composition: Understated noir framing and quiet conversations across desks.
+  atmosphere_and_mood: Keep the requested mood with quiet understated intrigue.
+  rendering_and_quality: Elegant minimal noir manga illustration with understated charm.
+  key_features: Natsume Ono thin line; sleepy eyes; understated noir; elegance
+  creative_brief: "Natsume Ono manga look as in ACCA and House of Five Leaves: thin wobbly ink lines, sleepy half-lidded eyes, elegant understated noir, cigarettes and quiet conspiracies. Carry it through Natsume Ono thin line, sleepy eyes, understated noir, elegance. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -47,10 +48,14 @@ avoidRules:
   - UI overlay
   - franchise likeness
   - real person likeness
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-017.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, colorful rainbow, 3d render, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, colorful rainbow, 3d render, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -59,8 +64,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Natsume Ono - Ink Noir Detective
+styleAnchors:
+  - Natsume Ono - Ink Noir Detective

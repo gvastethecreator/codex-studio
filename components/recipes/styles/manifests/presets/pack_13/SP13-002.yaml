@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP13-002
 packId: pack_13
-name: Neon City Vigil
+name: Akudama Drive Pierrot - Neon City Vigil
 category: 1. Core Anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,17 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Neon city vigil anime: rain-soaked cyber-city night frames with sharp lines, wet reflections and lonely figures.'
-  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: crisp thin lines, hard cel shadows, faces lit by colored signs, rain streaks drawn as straight white lines."
-  color_and_tone: Magenta, cyan and violet neon on deep navy black.
-  lighting_and_shadow: Neon signs as key light with wet reflections, expressed through the style rather than photographic lighting.
-  texture_and_material: Flat cel with glossy painted reflections and rain streaks.
-  camera_and_composition: Street-level wide shots and tight lonely close-ups, arranged so the subject still reads at a glance.
-  atmosphere_and_mood: Lonely, cool, watchful and melancholic, driven by the construction, color and rhythm.
-  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  key_features: neon key light; wet reflections; rain lines; lonely figure
-  creative_brief: "Neon city vigil anime: rain-soaked cyber-city night frames with sharp lines, wet reflections and lonely figures. Carry it through neon key light, wet reflections, rain lines, lonely figure. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Studio Pierrot Akudama Drive look (2020) with Rui Komatsuzaki designs: hyper-stylized neon cyberpunk Kansai, bold graphic outlines, candy neon signage and flamboyant criminal archetypes.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Komatsuzaki designs, bold graphic silhouettes, striking hair colors and flamboyant streetwear with tech details. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Candy neon pink, electric cyan, acid yellow and deep night black across the whole city.
+  lighting_and_shadow: Saturated neon signage light, holographic glow and hard graphic shadows at night.
+  texture_and_material: Bold graphic outlines, flat saturated color blocks and sharp neon glow effects on every surface.
+  camera_and_composition: Graphic dramatic angles through neon alleys, with stylized poses framed by signage.
+  atmosphere_and_mood: Keep the requested mood with stylish neon tension.
+  rendering_and_quality: Hyper-stylized neon cyberpunk television frame with bold graphic design and saturation.
+  key_features: Akudama Drive neon; Komatsuzaki designs; graphic outlines; cyberpunk Kansai
+  creative_brief: "Studio Pierrot Akudama Drive look (2020) with Rui Komatsuzaki designs: hyper-stylized neon cyberpunk Kansai, bold graphic outlines, candy neon signage and flamboyant criminal archetypes. Carry it through Akudama Drive neon, Komatsuzaki designs, graphic outlines, cyberpunk Kansai. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -47,10 +48,14 @@ avoidRules:
   - UI overlay
   - franchise likeness
   - real person likeness
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-002.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, watercolor, low detail, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, watercolor, low detail, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -59,8 +64,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Akudama Drive Pierrot - Neon City Vigil
+styleAnchors:
+  - Akudama Drive Pierrot - Neon City Vigil

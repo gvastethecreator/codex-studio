@@ -3,7 +3,7 @@ id: SP05-183
 packId: pack_13
 name: Kimi ni Todoke - Shy Hallway Bloom
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,26 +13,16 @@ tags:
   - shojo-magical-girl-and-visionary-classics
   - reference-title
 visualDna:
-  aesthetic: >-
-    Fine anime contour favors rounded transitions, restrained interior marks, and soft cel
-    shading.
-  subject_treatment: >-
-    Preserve subject and count; detail visible faces only, never require a pair or hallway.
-  color_and_tone: >-
-    Pale aqua, clear blue, cream, graphite, restrained coral; natural cheeks and shadows.
-  lighting_and_shadow: >-
-    Even diffuse illumination and short soft shadows; imply no room or time.
-  texture_and_material: >-
-    Smooth cel fill with slight wash at selected edges; minimal surface chatter.
-  camera_and_composition: >-
-    Maintain framing; leave measured air around focal shapes only where layout allows.
-  atmosphere_and_mood: >-
-    Gentleness through line softness only when compatible with the prompt's mood.
-  rendering_and_quality: >-
-    Clean edge hierarchy, low-noise detail, stable features, no bloom.
-  key_features: >-
-    Fine rounded contour, pale aqua-blue, soft cel transitions, measured open space
-  creative_brief: 'Apply a visual treatment centered on fine rounded contour, pale aqua-blue, soft cel transitions, measured open space. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'Karuho Shiina Kimi ni Todoke manga look: gentle sparkling shojo, soft flower-filled backgrounds, blushing shy faces and delicate lines.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Shiina designs, soft faces, long straight hair, big gentle eyes and simple clothes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Soft pinks, sakura white and gentle pastel blue.
+  lighting_and_shadow: Soft glowing light with sparkles, lit the way Kimi ni Todoke lights its scenes.
+  texture_and_material: Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.
+  camera_and_composition: Gentle close-ups and hallway compositions, framed the way Kimi ni Todoke composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with shy blooming warmth.
+  rendering_and_quality: Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.
+  key_features: Karuho Shiina softness; blushing faces; flower backgrounds; sparkles
+  creative_brief: "Karuho Shiina Kimi ni Todoke manga look: gentle sparkling shojo, soft flower-filled backgrounds, blushing shy faces and delicate lines. Carry it through Karuho Shiina softness, blushing faces, flower backgrounds, sparkles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -57,17 +47,12 @@ avoidRules:
   - fake UI
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-183.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -82,3 +67,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Kimi ni Todoke - Shy Hallway Bloom
+styleAnchors:
+  - Kimi ni Todoke - Shy Hallway Bloom

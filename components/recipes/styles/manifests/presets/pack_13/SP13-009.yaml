@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP13-009
 packId: pack_13
-name: Magical Girl Prism Burst
+name: Precure Toei - Magical Girl Prism Burst
 category: 1. Core Anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,17 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Magical girl prism anime: transformation-sequence sparkle, ribbons, stars and rainbow prism light.'
-  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: big shining eyes, flowing ribbons, star and heart sparkles, spinning transformation poses with bursts of light."
-  color_and_tone: Pastel pinks, lilac, gold and rainbow prisms, used consistently across subject and background.
-  lighting_and_shadow: Radiant backlight and prism flares, expressed through the style rather than photographic lighting.
-  texture_and_material: Glossy cel with sparkle overlays, visible at a glance as the signature of the style.
-  camera_and_composition: Centered spinning pose on a starry background, arranged so the subject still reads at a glance.
-  atmosphere_and_mood: Magical, joyful, radiant and brave, driven by the construction, color and rhythm.
-  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  key_features: ribbons; prism flares; sparkles; transformation pose
-  creative_brief: "Magical girl prism anime: transformation-sequence sparkle, ribbons, stars and rainbow prism light. Carry it through ribbons, prism flares, sparkles, transformation pose. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Toei Pretty Cure look: bright action-heavy magical transformations, sparkling ribbon costumes, rainbow prism bursts and punchy martial-arts magic battles.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Precure designs, big sparkling eyes, voluminous colorful hair and ribboned transformation outfits. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Rainbow prism colors with bright pink, cyan, gold and white sparkle everywhere.
+  lighting_and_shadow: Prism flares, rainbow glows and sparkle bursts radiating from the transforming figure.
+  texture_and_material: Contemporary digital television cel with clean outlines, crisp highlights and composited painted backgrounds.
+  camera_and_composition: Spinning transformation sequences and dynamic martial-arts battle poses in the sky.
+  atmosphere_and_mood: Keep the requested mood with bright heroic sparkle.
+  rendering_and_quality: Bright Toei magical girl frame with rainbow transformation effects and punchy action.
+  key_features: Precure transformations; ribbon costumes; rainbow prisms; magical battles
+  creative_brief: "Toei Pretty Cure look: bright action-heavy magical transformations, sparkling ribbon costumes, rainbow prism bursts and punchy martial-arts magic battles. Carry it through Precure transformations, ribbon costumes, rainbow prisms, magical battles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -47,10 +48,14 @@ avoidRules:
   - UI overlay
   - franchise likeness
   - real person likeness
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-009.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, gritty, dark horror, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, gritty, dark horror, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -59,8 +64,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Precure Toei - Magical Girl Prism Burst
+styleAnchors:
+  - Precure Toei - Magical Girl Prism Burst

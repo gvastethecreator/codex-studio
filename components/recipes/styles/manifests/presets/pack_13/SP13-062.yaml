@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-062
 packId: pack_13
-name: Classical Recital Hush Anime
+name: Makoto Isshiki - Classical Recital Hush Anime
 styleAnchors:
-  - Classical Recital Hush Anime
+  - Makoto Isshiki - Classical Recital Hush Anime
   - classical music anime
   - polished instruments
-displayName: Classical Recital Hush Anime
+displayName: Makoto Isshiki - Classical Recital Hush Anime
 category: 2. Slice Of Life, School And Music
 domain: classical music anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - recital
   - classical
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Classical recital anime: hushed concert-hall frames, polished instruments, soft spotlight and suspended breath.'
-  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: elegant restrained lines, precise hands on instruments, formal clothing."
-  color_and_tone: Deep wood browns, black, cream and gold, used consistently across subject and background.
-  lighting_and_shadow: Soft spotlight in a dark hall, expressed through the style rather than photographic lighting.
-  texture_and_material: Cel with polished reflections, visible at a glance as the signature of the style.
-  camera_and_composition: Stage framing, arranged so the subject still reads at a glance.
-  atmosphere_and_mood: Hushed, elegant, intense and emotional, driven by the construction, color and rhythm.
-  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  creative_brief: "Classical recital anime: hushed concert-hall frames, polished instruments, soft spotlight and suspended breath. Carry it through polished instruments, spotlight, hush. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: polished instruments; spotlight; hush
+  aesthetic: 'Makoto Isshiki Forest of Piano look: piano prodigies, forests of music, elegant concert halls and hushed intense performances.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Isshiki designs, elegant pianists with long fingers, concert clothes and focused faces. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Concert black, piano gloss, forest green and warm stage gold.
+  lighting_and_shadow: Single soft spotlight and reflections on glossy piano.
+  texture_and_material: Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.
+  camera_and_composition: Hushed concert hall wides and close-ups on hands.
+  atmosphere_and_mood: Keep the requested mood with hushed intense focus.
+  rendering_and_quality: Elegant classical music television frame with hushed tension and focus.
+  creative_brief: "Makoto Isshiki Forest of Piano look: piano prodigies, forests of music, elegant concert halls and hushed intense performances. Carry it through Forest of Piano, concert halls, hands on keys, hush. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Forest of Piano; concert halls; hands on keys; hush
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -45,9 +46,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -62,6 +67,7 @@ taxonomy:
     - recital
     - classical
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

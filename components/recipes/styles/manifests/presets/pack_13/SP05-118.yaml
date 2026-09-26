@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-118
 packId: pack_13
-name: Backlit Contour Longing
+name: Hiroshi Nagai - Backlit Contour Longing
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,36 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Separate the subject from its ground with a warm rim contour and restrained flare haze; use
-    silhouette only where the prompt's lighting supports it.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: build a warm-to-cool transition
-    around the rim while retaining the prompted palette and readable interior values.
-  lighting_and_shadow: >-
-    Keep backlight direction consistent with the prompt; use small bloom and soft falloff, not a
-    forced sunset.
-  texture_and_material: >-
-    Use clean silhouette edges, delicate rim color and minimal haze; keep material texture visible.
-  camera_and_composition: >-
-    Use sky-like negative space only when the source composition includes open background; do not
-    add a horizon or reframe.
-  atmosphere_and_mood: >-
-    Longing is conveyed through separation and light falloff; preserve the prompt's mood and facial
-    detail if requested.
-  rendering_and_quality: >-
-    Apply the backlight treatment to any requested form without forcing a sky, sunset, person or
-    romantic pose. Keep important silhouettes and joins legible; no watermark, unrequested text or
-    interface.
-  key_features: >-
-    Warm rim contour; silhouette separation; restrained flare haze; twilight color transition;
-    posture-led emphasis.
-  creative_brief: 'Apply this visual treatment to the requested content: Warm rim contour; silhouette separation; restrained flare haze; twilight color transition; posture-led emphasis. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Hiroshi Nagai city pop illustration look: flat clean color, glowing sunsets, pools and palm trees, crisp backlit contours and nostalgic longing.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people as small clean flat figures with glowing backlit contours. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Sunset orange, pool blue and palm green, true to the Hiroshi Nagai palette.
+  lighting_and_shadow: Strong backlit sunset glow, lit the way Hiroshi Nagai lights its scenes.
+  texture_and_material: Flat clean acrylic color, with the surface finish of Hiroshi Nagai.
+  camera_and_composition: Clean wide city pop compositions, framed the way Hiroshi Nagai composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with nostalgic backlit longing.
+  rendering_and_quality: Clean city pop illustration, in the recognizable hand of Hiroshi Nagai.
+  key_features: Hiroshi Nagai city pop; backlit sunsets; flat color
+  creative_brief: "Hiroshi Nagai city pop illustration look: flat clean color, glowing sunsets, pools and palm trees, crisp backlit contours and nostalgic longing. Carry it through Hiroshi Nagai city pop, backlit sunsets, flat color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look
@@ -55,16 +37,14 @@ avoidRules:
   - rim bloom washing out silhouette detail
   - flare crossing the focal contour
   - edge light conflicting with prompted light direction
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-118.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, rim bloom washing out silhouette detail, flare
-    crossing the focal contour, edge light conflicting with prompted light direction
+  negativePrompt: photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, rim bloom washing out silhouette detail, flare crossing the focal contour, edge light conflicting with prompted light direction, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -73,8 +53,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Hiroshi Nagai - Backlit Contour Longing
+styleAnchors:
+  - Hiroshi Nagai - Backlit Contour Longing

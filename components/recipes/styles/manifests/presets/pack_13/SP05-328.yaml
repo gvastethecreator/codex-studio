@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-328
 packId: pack_13
-name: Retrofuture Distance Melancholy
+name: Leiji Matsumoto - Retrofuture Distance Melancholy
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,36 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Layer cool, faded forms through analogue distance: soft atmospheric separation, muted
-    retrofuture color and a restrained film-like grain, without requiring machines or a city.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: favor muted steel blue, cyan and
-    violet with gentle value falloff; retain any prompt-specified focal color.
-  lighting_and_shadow: >-
-    Use diffused, low-contrast light and distant haze only where the scene supports depth; respect
-    the prompted illumination.
-  texture_and_material: >-
-    Apply fine analogue grain and softened far contours, keeping near details and actual materials
-    readable.
-  camera_and_composition: >-
-    Create depth through layered value and edge softness, not added architecture or a forced wide
-    shot.
-  atmosphere_and_mood: >-
-    Melancholy comes from distance and faded color; preserve the prompt's emotional register.
-  rendering_and_quality: >-
-    Transfer the distance treatment to any subject without adding technology, skyline, vehicle or
-    retro props. Keep important silhouettes and joins legible; no watermark, unrequested text or
-    interface.
-  key_features: >-
-    Muted retrofuture palette; analogue grain; layered distance; softened far contours; quiet
-    atmospheric separation.
-  creative_brief: 'Apply this visual treatment to the requested content: Muted retrofuture palette; analogue grain; layered distance; softened far contours; quiet atmospheric separation. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Leiji Matsumoto manga look: gaunt romantic figures, tall elegant women with long lashes, stubby comic men, mechanical gauges and melancholy starry retrofuture.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Leiji contrast, tall elegant long-lashed figures and short stubby men in coats. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Black ink with starry tone and deep blue in color.
+  lighting_and_shadow: Starlight and gauge glow, lit the way Leiji Matsumoto lights its scenes.
+  texture_and_material: Dense mechanical gauges and fine ink, with the surface finish of Leiji Matsumoto.
+  camera_and_composition: Lonely distant compositions, framed the way Leiji Matsumoto composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with lonely retrofuture melancholy.
+  rendering_and_quality: Romantic retrofuture manga illustration, in the recognizable hand of Leiji Matsumoto.
+  key_features: Leiji Matsumoto gauges; tall elegant women; stubby men; stars
+  creative_brief: "Leiji Matsumoto manga look: gaunt romantic figures, tall elegant women with long lashes, stubby comic men, mechanical gauges and melancholy starry retrofuture. Carry it through Leiji Matsumoto gauges, tall elegant women, stubby men, stars. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look
@@ -55,16 +37,14 @@ avoidRules:
   - flattened depth obscuring layered distance
   - grain obscuring near-form contours
   - blur collapsing near/far separation
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-328.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, flattened depth obscuring layered distance, grain
-    obscuring near-form contours, blur collapsing near/far separation
+  negativePrompt: photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, flattened depth obscuring layered distance, grain obscuring near-form contours, blur collapsing near/far separation, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -73,8 +53,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Leiji Matsumoto - Retrofuture Distance Melancholy
+styleAnchors:
+  - Leiji Matsumoto - Retrofuture Distance Melancholy

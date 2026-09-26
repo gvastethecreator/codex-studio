@@ -33,23 +33,40 @@ export interface AuthorLook {
   briefs?: [string, string, string];
 }
 
-export const au = (id: string, name: string, a: AuthorLook): [string, Update] => [
-  id,
-  {
-    name,
-    dna: dna({
-      aesthetic: a.look,
-      // The author's drawing of faces and bodies always applies; its wardrobe is only a default.
-      subject_treatment: `Preserve the requested identity, count, pose, action and any requested clothing; ${a.subject} Wardrobe details apply only when the prompt leaves clothing open.`,
-      color_and_tone: a.color,
-      lighting_and_shadow: a.light,
-      texture_and_material: a.texture,
-      camera_and_composition: a.camera,
-      atmosphere_and_mood: `Keep the requested mood with ${a.mood}.`,
-      rendering_and_quality: a.render,
-      key_features: a.key,
-    }),
-    ...(a.avoid ? { avoid: a.avoid } : {}),
-    briefs: a.briefs ?? keep(id),
-  },
-];
+const words = (t: string) => t.split(/\s+/).filter(Boolean).length;
+
+// A terse field is anchored to the named author or work instead of padded: the anchor tells the
+// model whose palette, light, finish, framing or hand to reproduce.
+const ANCHOR = {
+  color: (ref: string) => `true to the ${ref} palette`,
+  light: (ref: string) => `lit the way ${ref} lights its scenes`,
+  texture: (ref: string) => `with the surface finish of ${ref}`,
+  camera: (ref: string) => `framed the way ${ref} composes its shots and pages`,
+  render: (ref: string) => `in the recognizable hand of ${ref}`,
+};
+const anchored = (text: string, kind: keyof typeof ANCHOR, ref: string) =>
+  words(text) >= 8 ? text : `${text.replace(/\.$/, '')}, ${ANCHOR[kind](ref)}.`;
+
+export const au = (id: string, name: string, a: AuthorLook): [string, Update] => {
+  const ref = name.split(' - ')[0];
+  return [
+    id,
+    {
+      name,
+      dna: dna({
+        aesthetic: a.look,
+        // The author's drawing of faces and bodies always applies; its wardrobe is only a default.
+        subject_treatment: `Preserve the requested identity, count, pose, action and any requested clothing; ${a.subject} Wardrobe details apply only when the prompt leaves clothing open.`,
+        color_and_tone: anchored(a.color, 'color', ref),
+        lighting_and_shadow: anchored(a.light, 'light', ref),
+        texture_and_material: anchored(a.texture, 'texture', ref),
+        camera_and_composition: anchored(a.camera, 'camera', ref),
+        atmosphere_and_mood: `Keep the requested mood with ${a.mood}.`,
+        rendering_and_quality: anchored(a.render, 'render', ref),
+        key_features: a.key,
+      }),
+      ...(a.avoid ? { avoid: a.avoid } : {}),
+      briefs: a.briefs ?? keep(id),
+    },
+  ];
+};

@@ -3,7 +3,7 @@ id: SP05-194
 packId: pack_13
 name: Rose of Versailles - Court Portrait Revolution
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,26 +13,19 @@ tags:
   - shojo-magical-girl-and-visionary-classics
   - reference-title
 visualDna:
-  aesthetic: >-
-    Ornate anime ink layers fine engraved contours over broad black and pale cel planes.
-  subject_treatment: >-
-    Keep pose, garments, proportions; enrich only surfaces already present.
-  color_and_tone: >-
-    Black, bone, deep scarlet, antique gold, pale blue in distinct value-led blocks.
-  lighting_and_shadow: >-
-    High-contrast directional light with crisp boundaries; add no dramatic source.
-  texture_and_material: >-
-    Sparse hatch and polished highlights only where shown material supports them.
-  camera_and_composition: >-
-    Preserve framing; use opposing diagonals inside existing forms, no forced portrait pose.
-  atmosphere_and_mood: >-
-    Boldness comes from line contrast, not a court or conflict scene.
-  rendering_and_quality: >-
-    Legible outer contour, sparse layered ornament, no decorative frame.
-  key_features: >-
-    Engraved contour, black-bone contrast, scarlet-gold accents, disciplined diagonals
-  creative_brief: 'Apply a visual treatment centered on engraved contour, black-bone contrast, scarlet-gold accents, disciplined diagonals. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'Riyoko Ikeda Rose of Versailles manga art: baroque shojo, long-lashed sparkling eyes, voluminous golden hair, lavish court gowns and revolution.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Ikeda designs, sparkling star eyes, long lashes, voluminous hair and baroque clothing. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Rose, gold, royal blue and cream, true to the Rose of Versailles palette.
+  lighting_and_shadow: Sparkling glow and dramatic backlight, lit the way Rose of Versailles lights its scenes.
+  texture_and_material: Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.
+  camera_and_composition: Baroque portrait compositions and revolutionary drama, framed the way Rose of Versailles composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with passionate baroque drama.
+  rendering_and_quality: Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.
+  key_features: Riyoko Ikeda baroque; sparkling eyes; court gowns; revolution
+  creative_brief: "Riyoko Ikeda Rose of Versailles manga art: baroque shojo, long-lashed sparkling eyes, voluminous golden hair, lavish court gowns and revolution. Carry it through Riyoko Ikeda baroque, sparkling eyes, court gowns, revolution. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a blonde commander in a white military uniform with epaulettes
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -54,19 +47,19 @@ avoidRules:
   - generic anime filter
   - prompt literal card reuse
   - fake UI
-  - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-194.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: a blonde commander in a white military uniform with epaulettes, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, noisy compression artifacts
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -81,3 +74,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Rose of Versailles - Court Portrait Revolution
+styleAnchors:
+  - Rose of Versailles - Court Portrait Revolution

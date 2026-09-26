@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-064
 packId: pack_13
-name: Dawn Practice Mist Anime
+name: Vagabond - Dawn Practice Mist Anime
 styleAnchors:
-  - Dawn Practice Mist Anime
+  - Vagabond - Dawn Practice Mist Anime
   - early morning practice anime
   - mist layers
-displayName: Dawn Practice Mist Anime
+displayName: Vagabond - Dawn Practice Mist Anime
 category: 2. Slice Of Life, School And Music
 domain: early morning practice anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,18 +20,21 @@ tags:
   - dawn
   - practice
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Dawn practice anime: cold blue early mornings, mist on fields, breath and determined solitary training.'
-  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: focused determined faces, repeated practice poses, mist drawn in soft layers."
-  color_and_tone: Cold blue-grey with the first pale gold on the horizon.
-  lighting_and_shadow: Pre-dawn blue light turning gold, expressed through the style rather than photographic lighting.
-  texture_and_material: Cel with soft mist layers, visible at a glance as the signature of the style.
-  camera_and_composition: Wide lonely frames with small figures, arranged so the subject still reads at a glance.
-  atmosphere_and_mood: Determined, lonely, quiet and hopeful, driven by the construction, color and rhythm.
-  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  creative_brief: "Dawn practice anime: cold blue early mornings, mist on fields, breath and determined solitary training. Carry it through mist layers, pre-dawn blue, solitary practice. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: mist layers; pre-dawn blue; solitary practice
+  aesthetic: 'Takehiko Inoue Vagabond look: masterful brush ink and wash, misty landscapes, realistic sweating swordsmen and meditative discipline.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Inoue realism, lean bodies, sweat, wild hair and simple period clothes painted with brush. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Ink black and grey wash with pale mist white.
+  lighting_and_shadow: Pale dawn mist light rendered entirely by soft ink wash gradients.
+  texture_and_material: Masterful brush strokes, dry brush and ink wash.
+  camera_and_composition: Misty wide landscapes and close brush-painted faces full of sweat and focus.
+  atmosphere_and_mood: Keep the requested mood with meditative disciplined focus.
+  rendering_and_quality: Masterful brush-ink manga illustration with meditative realism and misty depth.
+  creative_brief: "Takehiko Inoue Vagabond look: masterful brush ink and wash, misty landscapes, realistic sweating swordsmen and meditative discipline. Carry it through Vagabond brush ink, mist, realistic swordsmen, meditation. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Vagabond brush ink; mist; realistic swordsmen; meditation
 avoidRules:
+  - a wild-haired swordsman with two swords
+  - existing franchise characters
   - existing anime character likeness
   - studio or franchise logo
   - readable text
@@ -45,9 +48,12 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a wild-haired swordsman with two swords, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -62,6 +68,7 @@ taxonomy:
     - dawn
     - practice
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

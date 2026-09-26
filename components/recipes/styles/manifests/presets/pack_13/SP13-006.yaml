@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP13-006
 packId: pack_13
-name: Spirit Shrine Twilight
+name: Isao Takahata Kaguya - Spirit Shrine Twilight
 category: 1. Core Anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,17 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Spirit shrine twilight anime: quiet supernatural frames with soft glowing spirits, lanterns and painted dusk skies.'
-  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: soft thin lines, gentle cel shading, spirits drawn translucent with glowing edges, richly painted backgrounds."
-  color_and_tone: Dusky violet, lantern orange and spirit teal, used consistently across subject and background.
-  lighting_and_shadow: Twilight sky with lantern and spirit glow, expressed through the style rather than photographic lighting.
-  texture_and_material: Painted backgrounds with soft cel characters and glowing particles.
-  camera_and_composition: Calm wide frames with small figures, arranged so the subject still reads at a glance.
-  atmosphere_and_mood: Mysterious, gentle, sacred and wistful, driven by the construction, color and rhythm.
-  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  key_features: translucent spirits; lanterns; painted dusk; soft glow
-  creative_brief: "Spirit shrine twilight anime: quiet supernatural frames with soft glowing spirits, lanterns and painted dusk skies. Carry it through translucent spirits, lanterns, painted dusk, soft glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Isao Takahata The Tale of the Princess Kaguya look (2013): charcoal-sketch lines and delicate watercolor washes, empty paper space, and figures that dissolve into loose strokes when emotion peaks.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with loose charcoal contours, simple gentle faces and watercolor-washed clothing, leaving much of each figure unfinished. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Pale watercolor washes of moss green, dusk rose and ink grey on warm white paper.
+  lighting_and_shadow: Soft twilight suggested only by pale washes and the glow of untouched paper around figures.
+  texture_and_material: Charcoal and brush sketch lines, watercolor bleed and visible warm paper grain.
+  camera_and_composition: Airy compositions with wide empty paper space around figures and spirits.
+  atmosphere_and_mood: Keep the requested mood with fragile tender reverence.
+  rendering_and_quality: Delicate hand-drawn feature frame that looks sketched and washed directly on paper.
+  key_features: Takahata charcoal line; watercolor wash; empty paper; dissolving strokes
+  creative_brief: "Isao Takahata The Tale of the Princess Kaguya look (2013): charcoal-sketch lines and delicate watercolor washes, empty paper space, and figures that dissolve into loose strokes when emotion peaks. Carry it through Takahata charcoal line, watercolor wash, empty paper, dissolving strokes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -46,10 +47,14 @@ avoidRules:
   - UI overlay
   - franchise likeness
   - real person likeness
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-006.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, sci fi ui, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, sci fi ui, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -58,8 +63,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Isao Takahata Kaguya - Spirit Shrine Twilight
+styleAnchors:
+  - Isao Takahata Kaguya - Spirit Shrine Twilight

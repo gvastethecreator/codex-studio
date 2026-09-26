@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-120
 packId: pack_13
-name: Thermal-Heat-Signature Vision
+name: Ghost in the Shell SAC_2045 - Thermal-Heat-Signature Vision
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,35 +11,21 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Map value into white-hot through red/amber to blue false-color bands with restrained bloom and
-    sparse edge calibration ticks; this is a visual mapping, not factual temperature.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: use the thermal false-color ramp
-    while preserving shape boundaries and prompt-critical identifiers.
-  lighting_and_shadow: >-
-    Let bloom cluster around the brightest mapped areas; calibration marks stay thin and peripheral.
-  texture_and_material: >-
-    Keep the color bands clean, with slight sensor grain only; do not add emissive light to the
-    depicted materials.
-  camera_and_composition: >-
-    Preserve the original framing and form boundaries; do not imply a scanner or interface.
-  atmosphere_and_mood: >-
-    The false-color image reads as a stylized signal; do not assert heat, health or material
-    properties.
-  rendering_and_quality: >-
-    Apply the mapping to any subject without adding a HUD, scanner, labels or temperature claim.
-    Keep important silhouettes and joins legible; no watermark, unrequested text or interface.
-  key_features: >-
-    White-hot to blue bands; ironbow false color; restrained heat bloom; sparse calibration ticks;
-    clear segmentation.
-  creative_brief: 'Apply this visual treatment to the requested content: White-hot to blue bands; ironbow false color; restrained heat bloom; sparse calibration ticks; clear segmentation. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Production I.G and Sola Ghost in the Shell SAC_2045 look (2020): cel-shaded CG, tactical thermal views, heat signatures and cold cyber operations.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw figures as cel-shaded CG operatives seen through thermal vision. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Thermal white, red, amber and cold blue, true to the Ghost in the Shell SAC_2045 palette.
+  lighting_and_shadow: Heat-signature glow, lit the way Ghost in the Shell SAC_2045 lights its scenes.
+  texture_and_material: Cel-shaded CG with thermal gradients, with the surface finish of Ghost in the Shell SAC_2045.
+  camera_and_composition: Tactical thermal compositions, framed the way Ghost in the Shell SAC_2045 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with cold tactical scan.
+  rendering_and_quality: Cel-shaded thermal CG frame, in the recognizable hand of Ghost in the Shell SAC_2045.
+  key_features: SAC_2045 thermal; heat signatures; tactical
+  creative_brief: "Production I.G and Sola Ghost in the Shell SAC_2045 look (2020): cel-shaded CG, tactical thermal views, heat signatures and cold cyber operations. Carry it through SAC_2045 thermal, heat signatures, tactical. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a purple-haired cyborg major
+  - existing franchise characters
   - photoreal cosplay rendering
   - 3D render look
   - plastic airbrush gloss obscuring the style's defining marks
@@ -53,16 +39,20 @@ avoidRules:
   - thermal bands collapsing into indistinguishable values
   - bloom obscuring signal segmentation
   - unrequested HUD, labels or temperature claims
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-120.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, thermal bands collapsing into indistinguishable
-    values, bloom obscuring signal segmentation, unrequested HUD, labels or temperature claims
+  negativePrompt: a purple-haired cyborg major, existing franchise characters, photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, thermal bands collapsing into indistinguishable values, bloom obscuring signal segmentation, unrequested HUD, labels or temperature claims, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -71,8 +61,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Ghost in the Shell SAC_2045 - Thermal-Heat-Signature Vision
+styleAnchors:
+  - Ghost in the Shell SAC_2045 - Thermal-Heat-Signature Vision

@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-045
 packId: pack_13
-name: Rose-Petal Comedy Club
+name: Kaguya-sama A-1 - Rose-Petal Comedy Club
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,27 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Bright anime cel craft pairs refined outlines with elastic marks at expressive focal
-    details.
-  subject_treatment: >-
-    Preserve identity and proportions; vary existing expression without changing anatomy.
-  color_and_tone: >-
-    Golden cream, dark teal, brick red, plum; warm highlights against cool shadows.
-  lighting_and_shadow: >-
-    Clear even illumination with short shadow snaps at focal edges, no spotlight.
-  texture_and_material: >-
-    Clean opaque fills and tiny decorative marks only where supported by the prompt.
-  camera_and_composition: >-
-    Respect frame and count; time the image with alternating open and dense space.
-  atmosphere_and_mood: >-
-    Humor appears only when the requested action is comic.
-  rendering_and_quality: >-
-    Polished edges, restrained ornament, stable structure, no automatic sparkle.
-  key_features: >-
-    Elastic focal marks, polished cel fill, warm-cool contrast, timing through space
-  creative_brief: 'Apply a visual treatment centered on elastic focal marks, polished cel fill, warm-cool contrast, timing through space. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'A-1 Pictures Kaguya-sama: Love Is War look (2019): theatrical mind-game comedy, dramatic narration staging, rose petals, dutch angles and gag reactions.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Aka Akasaka-derived designs, elegant faces, sharp eyes and school uniforms. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Dramatic red, rose pink and cool blue, true to the Kaguya-sama A-1 palette.
+  lighting_and_shadow: Dramatic spotlights and comic flashes, lit the way Kaguya-sama A-1 lights its scenes.
+  texture_and_material: Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.
+  camera_and_composition: Theatrical dutch angles and gag cuts, framed the way Kaguya-sama A-1 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with theatrical comic scheming.
+  rendering_and_quality: Theatrical A-1 comedy frame, in the recognizable hand of Kaguya-sama A-1.
+  key_features: Kaguya-sama theatrics; mind games; roses; gag reactions
+  creative_brief: "A-1 Pictures Kaguya-sama: Love Is War look (2019): theatrical mind-game comedy, dramatic narration staging, rose petals, dutch angles and gag reactions. Carry it through Kaguya-sama theatrics, mind games, roses, gag reactions. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -54,15 +45,14 @@ avoidRules:
   - generic anime filter
   - prompt literal card reuse
   - fake UI
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-045.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -71,8 +61,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - shojo-magical-girl-and-visionary-classics
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Kaguya-sama A-1 - Rose-Petal Comedy Club
+styleAnchors:
+  - Kaguya-sama A-1 - Rose-Petal Comedy Club

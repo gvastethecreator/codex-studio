@@ -128,9 +128,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A young witch spins as ribbons of light wrap into armored skirts, and the prism flare from her wand splits the storm clouds open. No readable text or logo.",
-        "The monster has sat down on a bench to eat a sandwich because the heroine's sparkling transformation is taking so long. No readable text or logo.",
-        "In a hospital parking lot a heroine in her forties transforms one last time, prism light glancing off every windshield. No readable text or logo.",
+        "Spinning on a rooftop in a thunderstorm, a grown-up witch in her thirties transforms as ribbons of light wrap into armored skirts, and the prism flare from her wand splits the storm clouds into rainbow shards. No readable text or logo.",
+        "Two retired magical heroines in sparkling transformed costumes argue over a parking space outside the supermarket, rainbow sparkles flying with every gesture. No readable text or logo.",
+        "On a quiet windowsill at dawn, a small crystal brooch catches the sunrise and throws a tiny rainbow across a sleeping cat. No readable text or logo.",
       ],
     },
     'SP13-010': {
@@ -182,9 +182,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A crimson mecha draws a beam sword over a burning space colony, hand-painted highlight streaks sliding down its armor like tears. No readable text or logo.",
-        "Two giant mechas pause their duel in orbit to let a slow cargo ship pass politely between them. No readable text or logo.",
-        "A pilot's helmet visor reflects an entire colony exploding in silence, the light smeared by tape grain and color bleed. No readable text or logo.",
+        "Drawing a glowing beam sword over a burning space colony, an olive-green mecha with hand-painted highlight streaks sliding down its armor turns toward a squadron of rivals as VHS grain softens the flames. No readable text or logo.",
+        "In a quiet hangar during a lull in the battle, a mechanic in grease-stained overalls repaints a dent on a mech’s shoulder while a radio crackles beside her. No readable text or logo.",
+        "In orbit above a blue planet, a single drifting mech helmet catches the sunlight, its cracked visor softened by grainy analog color. No readable text or logo.",
       ],
     },
     'SP13-014': {
@@ -337,9 +337,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "A young tamer sends her small fire salamander leaping at a stone golem in a forest clearing, its tail flame lighting the whole grove. No readable text or logo.",
-        "A tamer's tiny round creature evolves mid-battle into something enormous and immediately gets wedged between two trees. No readable text or logo.",
-        "At night a tamer sleeps in an open field while twenty glowing creatures keep watch around her in a perfect circle. No readable text or logo.",
+        "In a sunlit forest clearing, a grown-up tamer in a worn cap sends her moss-covered armadillo rolling like a boulder at a lumbering clay golem while fireflies scatter around them. No readable text or logo.",
+        "On a sunny farmhouse porch, a retired tamer naps in a rocking chair while his giant tortoise creature carries a tiny vegetable garden on its shell. No readable text or logo.",
+        "At dusk at the end of a quiet pier, a small creature made of paper lanterns waits patiently for its tamer to come home from the sea. No readable text or logo.",
       ],
     },
     {
@@ -379,7 +379,7 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'real car brand'],
       briefs: [
-        "A boxy sports car drifts through a hairpin on a misty mountain road at 2 a.m., its headlights cutting the fog into glowing blades. No readable text or logo.",
+        "Drifting through a hairpin on a misty mountain road at 2 a.m., a battered old station wagon full of rice sacks cuts its headlights through the fog as a sleek rival sports car struggles to keep up. No readable text or logo.",
         "A retired racer delivering vegetables in a tiny kei truck overtakes a pack of sports cars downhill, carrots bouncing in the back. No readable text or logo.",
         "On a deserted mountain pass at night a single red taillight glows in the fog where no car has been seen for years. No readable text or logo.",
       ],

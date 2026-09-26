@@ -9,7 +9,7 @@ styleAnchors:
 displayName: Kentaro Miura - Cursed Blade Dark Fantasy
 category: 1. Core Anime
 domain: grim sword anime
-version: 3
+version: 4
 supportedTasks:
   - image_generate
   - image_edit

@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-050
 packId: pack_13
-name: Cozy Sign-Language Romance
+name: A Sign of Affection Ajia-do - Cozy Sign-Language Romance
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,27 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Responsive anime line gives small gestures crisp contours in a calm matte cel finish.
-  subject_treatment: >-
-    Keep action and count; clarify only existing gestures without forcing hands or a close
-    view.
-  color_and_tone: >-
-    Warm ivory, slate, mineral teal, muted copper; prioritize recognition and clear values.
-  lighting_and_shadow: >-
-    Neutral broad light, small clean highlights, simple readable shadows.
-  texture_and_material: >-
-    Smooth matte fills with tactile stipple only at relevant edges or surfaces.
-  camera_and_composition: >-
-    Preserve camera and layout; maintain gaps among existing forms without rearranging.
-  atmosphere_and_mood: >-
-    Attentive calm only when it fits; otherwise keep the requested mood.
-  rendering_and_quality: >-
-    Legible contours, uncluttered detail, even color, no blur or ornament.
-  key_features: >-
-    Gesture-readable contour, matte cel planes, teal-copper accents, clarity through spacing
-  creative_brief: 'Apply a visual treatment centered on gesture-readable contour, matte cel planes, teal-copper accents, clarity through spacing. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'Ajia-do A Sign of Affection look (2024) from suu Morishita: soft pastel romance, sign language hands, snowy cafes and gentle closeness.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with soft designs, expressive hands and cozy winter clothes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Soft pastel pink, snow white and cafe warmth.
+  lighting_and_shadow: Soft cafe light and snowy glow, lit the way A Sign of Affection Ajia-do lights its scenes.
+  texture_and_material: Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.
+  camera_and_composition: Close-ups on signing hands and gentle faces, framed the way A Sign of Affection Ajia-do composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with cozy tender romance.
+  rendering_and_quality: Soft pastel romance television frame, in the recognizable hand of A Sign of Affection Ajia-do.
+  key_features: A Sign of Affection; signing hands; pastel romance; snow
+  creative_brief: "Ajia-do A Sign of Affection look (2024) from suu Morishita: soft pastel romance, sign language hands, snowy cafes and gentle closeness. Carry it through A Sign of Affection, signing hands, pastel romance, snow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -54,15 +45,14 @@ avoidRules:
   - generic anime filter
   - prompt literal card reuse
   - fake UI
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-050.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -71,8 +61,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - shojo-magical-girl-and-visionary-classics
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: A Sign of Affection Ajia-do - Cozy Sign-Language Romance
+styleAnchors:
+  - A Sign of Affection Ajia-do - Cozy Sign-Language Romance

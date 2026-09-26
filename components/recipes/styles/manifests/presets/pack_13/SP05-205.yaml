@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-205
 packId: pack_13
-name: Breezy Brush-Reinvention Summer
+name: Satsuki Yoshino - Breezy Brush-Reinvention Summer
 category: 4. Slice Of Life & Moe
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,17 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
+  - reference-title
 visualDna:
-  aesthetic: 'Loose brush contours, open paper gaps, and simple geometric underpainting give forms a fresh hand-painted energy.'
-  subject_treatment: 'Preserve the prompted design, proportions, pose, and action; vary stroke edges without reshaping the figure or object.'
-  color_and_tone: 'Balance a light base with a few confident saturated accents; let the user set the hue and avoid a fixed seasonal palette.'
-  lighting_and_shadow: 'Use broad light planes with broken brush shadow edges; follow the described source and keep depth readable.'
-  texture_and_material: 'Show dry-brush skips and sparse pencil grain as surface treatment; render existing materials recognizably beneath the marks.'
-  camera_and_composition: 'Keep exact framing, viewpoint, scale, and count; use asymmetry within existing shapes without rearranging the composition.'
-  atmosphere_and_mood: 'Preserve the requested feeling; loose marks describe brushwork, not a required emotion.'
-  rendering_and_quality: 'Leave a controlled handmade edge while keeping anatomy and object boundaries legible; avoid a uniformly rough finish.'
-  key_features: 'Loose directional brushwork; geometric underpainting; visible paper gaps; broken shadow edges; selective pencil grain.'
-  creative_brief: 'Combine confident brush edges with simple color geometry and visible gaps. Keep the original subject, action, count, camera, and mood unchanged. Use it as a reusable look on any subject.'
+  aesthetic: 'Satsuki Yoshino Barakamon look: sunny island life, bold calligraphy brush energy, rustic villages and breezy summer comedy.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yoshino designs, casual island clothes and expressive faces. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Island green, sea blue, ink black and sun white.
+  lighting_and_shadow: Bright island sunlight, lit the way Satsuki Yoshino lights its scenes.
+  texture_and_material: Clean line with bold ink brush accents, with the surface finish of Satsuki Yoshino.
+  camera_and_composition: Island village compositions, framed the way Satsuki Yoshino composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with breezy summer reinvention.
+  rendering_and_quality: Sunny island comedy illustration, in the recognizable hand of Satsuki Yoshino.
+  key_features: Barakamon island; calligraphy brush; summer
+  creative_brief: "Satsuki Yoshino Barakamon look: sunny island life, bold calligraphy brush energy, rustic villages and breezy summer comedy. Carry it through Barakamon island, calligraphy brush, summer. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -44,15 +45,14 @@ avoidRules:
   - generic anime filter
   - prompt literal card reuse
   - fake UI
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-205.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock,
-    canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic
-    anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied
-    franchise costume, logo
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -61,8 +61,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - slice-of-life-and-moe
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Satsuki Yoshino - Breezy Brush-Reinvention Summer
+styleAnchors:
+  - Satsuki Yoshino - Breezy Brush-Reinvention Summer

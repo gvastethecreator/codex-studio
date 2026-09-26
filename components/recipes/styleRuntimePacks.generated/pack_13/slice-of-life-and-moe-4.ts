@@ -35,843 +35,798 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP05-202',
-    name: 'Market-Festival Community Softness',
+    name: 'Tamako Market Kyoto Animation - Market-Festival Community Softness',
+    displayName: 'Tamako Market Kyoto Animation - Market-Festival Community Softness',
+    styleAnchors: ['Tamako Market Kyoto Animation - Market-Festival Community Softness'],
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Rounded contours and modular color shapes overlap with slight edge variation like layered print, creating graphic rhythm across existing forms.',
+        'Kyoto Animation Tamako Market look (2013) by Naoko Yamada with Yukiko Horiguchi designs: soft rounded faces, warm shopping-street community, mochi shops and gentle festival days.',
       subject_treatment:
-        'Retain each prompted silhouette, pose, and count; soften contour joins without making figures childlike or adding a group.',
-      color_and_tone:
-        'Arrange warm and cool local colors in alternating blocks; use a pale paper tint only when it fits the supplied palette.',
-      lighting_and_shadow:
-        'Keep illumination diffuse and forms readable; use simple overlapping shadow planes while following the stated light.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Horiguchi designs, soft round faces, simple bangs, small hands and cozy shopkeeper aprons. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Warm peach, mochi cream, shop-awning red and soft sky blue.',
+      lighting_and_shadow: 'Soft warm afternoon light along a covered shopping street.',
       texture_and_material:
-        'Add restrained paper grain and lightly uneven pigment edges to existing surfaces; retain the named material underneath.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.',
       camera_and_composition:
-        'Hold crop, viewpoint, spacing, and count; let repeated color shapes support the supplied arrangement without changing it.',
-      atmosphere_and_mood:
-        'Follow the requested mood; rounded shape rhythm contributes graphic structure without prescribing emotion.',
+        'Community street compositions and small tender close-ups, framed the way Tamako Market Kyoto Animation composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with soft communal warmth.',
       rendering_and_quality:
-        'Use clean color separations with soft layered overlaps; preserve crisp edges where the prompt requires precision.',
-      key_features:
-        'Rounded ink joins; modular color blocks; layered print edges; alternating warm and cool accents; light surface grain.',
+        'Gentle Kyoto Animation frame with shopping-street coziness, in the recognizable hand of Tamako Market Kyoto Animation.',
+      key_features: 'Tamako Market softness; shopping street; Horiguchi designs; festivals',
       creative_brief:
-        'Use overlapping color shapes and rounded contour joins to create a gentle graphic rhythm. Keep the requested subject, action, count, camera, and mood. Use it as a reusable look on any subject.',
+        "Kyoto Animation Tamako Market look (2013) by Naoko Yamada with Yukiko Horiguchi designs: soft rounded faces, warm shopping-street community, mochi shops and gentle festival days. Carry it through Tamako Market softness, shopping street, Horiguchi designs, festivals. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-208',
-    name: 'Beginner-Made DIY Glow',
+    name: 'Do It Yourself!! EGG FIRM - Beginner-Made DIY Glow',
+    displayName: 'Do It Yourself!! EGG FIRM - Beginner-Made DIY Glow',
+    styleAnchors: ['Do It Yourself!! EGG FIRM - Beginner-Made DIY Glow'],
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Hand-drawn outlines wobble slightly and color fills meet them with small irregularities, suggesting assembled shapes without losing clarity.',
+        'EGG FIRM Do It Yourself!! look (2022): pastel watercolor textures, handmade DIY projects, gentle club camaraderie and soft glowing afternoons.',
       subject_treatment:
-        'Preserve identity, proportions, gesture, and count; use gentle line variation rather than misshapen anatomy or altered design.',
-      color_and_tone:
-        'Keep a clear base palette with lightly mixed accents and visible color variation; explicit user colors take precedence.',
-      lighting_and_shadow:
-        'Use broad simple light and soft-edged shadows; follow the specified lighting without adding a glow.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with soft pastel designs, overalls, tool belts and proud clumsy gestures. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Pastel watercolor mint, lemon, peach and sawdust tan.',
+      lighting_and_shadow: 'Soft glowing afternoon light in a cluttered workshop.',
       texture_and_material:
-        'Show sparse dry-brush strokes, uneven pigment edges, and overlapping passes while retaining the actual material.',
+        'Soft cel with watercolor-textured backgrounds and visible paper grain.',
       camera_and_composition:
-        'Keep crop, viewpoint, scale, spacing, and count; let irregular line edges create a handmade feel without changing layout.',
-      atmosphere_and_mood:
-        'Preserve the requested mood; imperfect surface marks describe the drawing process and do not limit quality or emotion.',
+        'Workbench compositions with half-built projects, framed the way Do It Yourself!! EGG FIRM composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with proud handmade joy.',
       rendering_and_quality:
-        'Keep structure carefully readable beneath imperfect edges; this is intentionally hand-drawn, not low-resolution or careless.',
-      key_features:
-        'Slightly wavering ink; irregular fill edges; overlapping pigment passes; broad simple shadows; clear assembled silhouettes.',
+        'Soft pastel watercolor television frame, in the recognizable hand of Do It Yourself!! EGG FIRM.',
+      key_features: 'DIY pastel watercolor; workshops; handmade projects; camaraderie',
       creative_brief:
-        'Use controlled line wobble and uneven pigment at the surface while keeping forms structurally sound. Keep subject, action, count, camera, and mood from the request. Use it as a reusable look on any subject.',
+        "EGG FIRM Do It Yourself!! look (2022): pastel watercolor textures, handmade DIY projects, gentle club camaraderie and soft glowing afternoons. Carry it through DIY pastel watercolor, workshops, handmade projects, camaraderie. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-086',
-    name: 'Cold-Warm Restorative Comfort',
+    name: 'Yuru Camp C-Station - Cold-Warm Restorative Comfort',
+    displayName: 'Yuru Camp C-Station - Cold-Warm Restorative Comfort',
+    styleAnchors: ['Yuru Camp C-Station - Cold-Warm Restorative Comfort'],
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Rounded ink contours and broad color planes are separated by cool ambient values and warmer local highlights, creating depth through temperature.',
+        'C-Station Laid-Back Camp anime look (2018): cold clear winter landscapes around Mount Fuji, warm tents and campfires, cozy blankets and relaxed solo camping.',
       subject_treatment:
-        "Preserve each subject's identity, pose, proportion, and action; use soft edge accents and clear silhouette breaks without adding expression or contact.",
-      color_and_tone:
-        'Contrast cool blue-gray or green neutrals with limited warm accents where the palette permits; do not impose an emotional cast through color.',
-      lighting_and_shadow:
-        'Keep the stated light source and direction; use a broad soft key and warmer bounce only when existing light supports it.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with soft rounded designs, puffy winter jackets, knit hats and relaxed contented faces. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Winter blue sky, lake teal, campfire orange and cozy wool tones.',
+      lighting_and_shadow: 'Crisp clear winter daylight and warm campfire glow at dusk.',
       texture_and_material:
-        'Favor matte color and fine material-specific strokes; texture describes only surfaces specified in the request.',
-      camera_and_composition:
-        'Maintain crop, viewpoint, spacing, and count; use warm and cool planes to separate existing layers, not rearrange them.',
-      atmosphere_and_mood:
-        'Preserve the requested tone; color temperature is a visual relationship, not an emotional instruction.',
-      rendering_and_quality:
-        'Use smooth fill transitions, rounded contour joins, and soft-edged shadows with readable value boundaries.',
-      key_features:
-        'Cool ambient planes against warm accents; rounded contour joins; soft value transitions; clear layered separation; matte finish.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.',
+      camera_and_composition: 'Scenic lakeside camp wides and cozy close-ups on hot food.',
+      atmosphere_and_mood: 'Keep the requested mood with cold-warm restorative comfort.',
+      rendering_and_quality: 'Cozy scenic C-Station frame with winter camping calm.',
+      key_features: 'Yuru Camp scenery; campfires; winter jackets; restorative calm',
       creative_brief:
-        'Build separation with cool ambient color and measured warm accents while following the supplied light. Keep subject, action, count, camera, and mood unchanged. Use it as a reusable look on any subject.',
+        "C-Station Laid-Back Camp anime look (2018): cold clear winter landscapes around Mount Fuji, warm tents and campfires, cozy blankets and relaxed solo camping. Carry it through Yuru Camp scenery, campfires, winter jackets, restorative calm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-207',
-    name: 'Deadline-Cheer Workflow Density',
+    name: 'Shirobako P.A. Works - Deadline-Cheer Workflow Density',
+    displayName: 'Shirobako P.A. Works - Deadline-Cheer Workflow Density',
+    styleAnchors: ['Shirobako P.A. Works - Deadline-Cheer Workflow Density'],
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Ordered clusters of thin marks alternate with open flat color areas, giving the drawing a dense but controlled working rhythm.',
+        'P.A. Works Shirobako look (2014): busy anime studio workplaces, cluttered desks, production meetings, dense ensemble casts and cheerful deadline stress.',
       subject_treatment:
-        'Retain the exact prompted forms and action; concentrate detail on surfaces already present and add no clutter or participants.',
-      color_and_tone:
-        'Use a disciplined base with a small number of brighter accents; keep explicit colors and maintain clear separation.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with P.A. Works designs, office casual clothes, lanyards and determined tired expressions. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Office fluorescent white, desk clutter colors and warm late-night lamps.',
       lighting_and_shadow:
-        'Keep one coherent light direction and simple contact shadows; avoid urgency lighting or a time-of-day cue.',
+        'Fluorescent office light and late-night desk lamps, lit the way Shirobako P.A. Works lights its scenes.',
       texture_and_material:
-        'Vary density through short repeated strokes and clean patches; marks follow described surfaces and never introduce new content.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.',
       camera_and_composition:
-        'Preserve view, crop, scale, spacing, and count; create dense-to-open rhythm within the layout without panels or camera movement.',
-      atmosphere_and_mood:
-        "Keep the prompt's mood; organized detail density does not prescribe an emotional state.",
+        'Dense office ensemble compositions and meeting-room shots, framed the way Shirobako P.A. Works composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with cheerful deadline hustle.',
       rendering_and_quality:
-        'Separate detailed and quiet areas decisively; keep contours legible and avoid scribbles that resemble text.',
-      key_features:
-        'Alternating dense and open mark fields; ordered thin strokes; restrained bright accents; coherent shadows; crisp boundaries.',
+        'Detailed P.A. Works workplace frame, in the recognizable hand of Shirobako P.A. Works.',
+      key_features: 'Shirobako studio; cluttered desks; ensemble; deadlines',
       creative_brief:
-        'Vary detail density across existing forms to create a deliberate working rhythm. Preserve content and camera; add no new content or frame marks. Use it as a reusable look on any subject.',
+        "P.A. Works Shirobako look (2014): busy anime studio workplaces, cluttered desks, production meetings, dense ensemble casts and cheerful deadline stress. Carry it through Shirobako studio, cluttered desks, ensemble, deadlines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-211',
-    name: 'Utilitarian Quiet-Freedom Minimalism',
+    name: 'Super Cub Studio Kai - Utilitarian Quiet-Freedom Minimalism',
+    displayName: 'Super Cub Studio Kai - Utilitarian Quiet-Freedom Minimalism',
+    styleAnchors: ['Super Cub Studio Kai - Utilitarian Quiet-Freedom Minimalism'],
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Structural contours, broad quiet color fields, and a small number of crisp value boundaries create an economical graphic finish.',
+        'Studio Kai Super Cub look (2021): muted near-grey world that blooms into color with freedom, quiet solitary motorbike rides and precise mechanical detail.',
       subject_treatment:
-        'Preserve all prompted forms, proportions, and meaningful details; simplify surface marks only, never remove structural information.',
-      color_and_tone:
-        'Use a restrained range of neutral or cool values with an accent drawn from the prompt; do not default to gray.',
-      lighting_and_shadow:
-        'Keep the stated light direction and organize shadows into a few clear shapes; retain nuance when requested.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with quiet simple designs, plain clothes, helmets and careful practical gestures. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Muted grey that shifts into soft color when the rider feels free.',
+      lighting_and_shadow: 'Soft natural daylight on quiet roads and garages.',
       texture_and_material:
-        'Use matte fills with material-specific edge marks in small doses; avoid implying a new material from the finish.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.',
       camera_and_composition:
-        'Keep crop, viewpoint, perspective, spacing, and count; separate existing forms rather than adding negative space.',
-      atmosphere_and_mood:
-        'Let the prompt set the emotion; sparse rendering does not impose a mood.',
+        'Quiet road compositions and mechanical close-ups, framed the way Super Cub Studio Kai composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with quiet utilitarian freedom.',
       rendering_and_quality:
-        'Use deliberate line breaks, clean shape edges, and enough contrast for each form to remain identifiable.',
-      key_features:
-        'Structural contours; broad quiet fills; few clear shadow groups; limited surface noise; precise material accents.',
+        'Understated Studio Kai frame with minimal restraint, in the recognizable hand of Super Cub Studio Kai.',
+      key_features: 'Super Cub muted palette; motorbike freedom; quiet solitude',
       creative_brief:
-        'Reduce surface noise and organize values around the structure of existing forms. Preserve subject, action, count, camera, and mood without adding props. Use it as a reusable look on any subject.',
+        "Studio Kai Super Cub look (2021): muted near-grey world that blooms into color with freedom, quiet solitary motorbike rides and precise mechanical detail. Carry it through Super Cub muted palette, motorbike freedom, quiet solitude. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-215',
-    name: 'Looped-Routine Healing Pastel',
+    name: 'Slow Loop Connect - Looped-Routine Healing Pastel',
+    displayName: 'Slow Loop Connect - Looped-Routine Healing Pastel',
+    styleAnchors: ['Slow Loop Connect - Looped-Routine Healing Pastel'],
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Repeated small contour and value motifs create a visual cycle across existing forms, paired with smooth color transitions.',
+        'Connect Slow Loop look (2022): pastel seaside fishing days, gentle family healing, soft rounded designs and calm routines.',
       subject_treatment:
-        'Preserve subject, proportions, action, and count; repeat a mark or tonal cue only, never an object, pose, or image sequence.',
-      color_and_tone:
-        'Rotate a small set of related accents through the prompted palette; do not impose pastel hues or soften requested contrast.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with soft rounded designs, fishing hats and casual seaside clothes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Pastel sea blue, sand beige and soft coral.',
       lighting_and_shadow:
-        'Keep one consistent source and repeat its highlight shape only on surfaces that already receive it.',
+        'Soft seaside daylight and gentle sunsets, lit the way Slow Loop Connect lights its scenes.',
       texture_and_material:
-        'Use matte fills with recurring fine grain or line rhythms; respect material differences and keep treatment specific to each surface.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.',
       camera_and_composition:
-        'Keep camera and layout exact; rhythm comes from marks inside the supplied composition, not repeated panels or scenes.',
-      atmosphere_and_mood:
-        "Retain the prompt's emotional tone; a recurring visual motif does not prescribe a mood.",
+        'Riverside and seaside fishing compositions, framed the way Slow Loop Connect composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with gentle healing routine.',
       rendering_and_quality:
-        'Balance repeated accents with clear breaks so subjects stay distinct; maintain legible details and stable forms.',
-      key_features:
-        'Recurring line motifs; repeated highlight shapes; limited color rotation; smooth matte fills; clear rhythm with visual breaks.',
+        'Pastel healing slice-of-life frame, in the recognizable hand of Slow Loop Connect.',
+      key_features: 'Slow Loop pastel fishing; seaside; healing routine',
       creative_brief:
-        'Echo line and color motifs across existing forms without repeating depicted content. Preserve subject, action, count, camera, and mood. Use it as a reusable look on any subject.',
+        "Connect Slow Loop look (2022): pastel seaside fishing days, gentle family healing, soft rounded designs and calm routines. Carry it through Slow Loop pastel fishing, seaside, healing routine. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-216',
-    name: 'Bundled Warmth Pocket',
+    name: 'Afro - Bundled Warmth Pocket',
+    displayName: 'Afro - Bundled Warmth Pocket',
+    styleAnchors: ['Afro - Bundled Warmth Pocket'],
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Soft substantial outer contours surround finely drawn interior folds and edges, creating two scales of line texture with warm and cool balance.',
+        'Afro Laid-Back Camp manga art: simple clean line with round faces, detailed camping gear, winter scenery and warm cozy humor.',
       subject_treatment:
-        'Keep identity, proportions, pose, materials, and count; vary line weight without changing the depicted forms.',
-      color_and_tone:
-        'Set cool neutral planes against small warm accents only where suitable; preserve the exact palette if specified.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Afro designs, round faces, bundled winter layers and detailed camp gear. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Black ink with light tone, and soft winter color on covers.',
       lighting_and_shadow:
-        'Use a soft broad source with a narrow highlight boundary; do not add warmth or cold as a lighting scenario.',
-      texture_and_material:
-        'Use short interwoven strokes only on prompted woven surfaces; keep other materials smooth and distinct.',
+        'Crisp winter light and warm stove glow, lit the way Afro lights its scenes.',
+      texture_and_material: 'Clean simple manga line, light tone and detailed gear drawing.',
       camera_and_composition:
-        'Preserve crop, viewpoint, perspective, spacing, and count; use line weight to separate existing depth layers.',
-      atmosphere_and_mood:
-        'Follow the requested mood; line softness and color temperature do not assign an emotion.',
+        'Cozy tent and stove compositions, framed the way Afro composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with bundled cozy warmth.',
       rendering_and_quality:
-        'Keep heavy outer contours clean and interior marks sparse; prevent the two line scales from muddying small details.',
-      key_features:
-        'Soft substantial outline; fine interior marks; cool and warm separation; localized textile strokes; clear depth boundaries.',
+        'Clean cozy camping manga illustration, in the recognizable hand of Afro.',
+      key_features: 'Afro clean line; camping gear; bundled warmth; winter',
       creative_brief:
-        'Contrast a rounded outer line with finer internal strokes and measured color temperature. Keep subject, action, count, camera, and mood user-defined. Use it as a reusable look on any subject.',
+        "Afro Laid-Back Camp manga art: simple clean line with round faces, detailed camping gear, winter scenery and warm cozy humor. Carry it through Afro clean line, camping gear, bundled warmth, winter. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-217',
-    name: 'Rough-Ideation Motion Overlay',
+    name: 'Eizouken Science SARU - Rough-Ideation Motion Overlay',
+    displayName: 'Eizouken Science SARU - Rough-Ideation Motion Overlay',
+    styleAnchors: ['Eizouken Science SARU - Rough-Ideation Motion Overlay'],
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'An intentionally unfinished concept drawing combines visible construction lines, loose contour passes, and sparse action-tracing marks over restrained flat color.',
+        'Science SARU Keep Your Hands Off Eizouken! look (2020) by Masaaki Yuasa: rough pencil sketch imagination overlays, concept-art worlds bursting from notebooks and lively animation passion.',
       subject_treatment:
-        'Preserve subject, pose, action, and count; rough guide strokes and brief contour replays may track the same silhouette but do not create a second pose or figure.',
-      color_and_tone:
-        'Use mostly open linework and quiet fill with a limited marker-like accent; retain user colors and avoid decorative bursts.',
-      lighting_and_shadow:
-        'Keep lighting simple and diagrammatic, following the prompt; define form with line and a few shadow planes rather than polished glow.',
-      texture_and_material:
-        'Show pencil or ink stroke grain, unfinished edge variation, and sparse hatching; keep depicted materials readable.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Sumito Owara-derived designs, expressive faces and casual clothes, with rough sketch fantasies around them. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Flat everyday colors with rough watercolor imagination overlays.',
+      lighting_and_shadow: 'Everyday light that shifts into imaginative sketch worlds.',
+      texture_and_material: 'Rough pencil sketch lines layered over clean cel.',
       camera_and_composition:
-        'Maintain the requested main crop, viewpoint, scale, and count; keep study marks within the same frame and tied to the same forms and prompted action.',
-      atmosphere_and_mood:
-        "Preserve the supplied mood; an ideation surface does not change the action's energy or emotional tone.",
-      rendering_and_quality:
-        'Leave guide marks visible where they trace the same forms; keep the underlying silhouette clear and avoid lettering, interface marks, or watermarks.',
-      key_features:
-        'Visible construction lines; contour replays on the same forms; sparse gesture ticks tied to requested motion; restrained flat color; unfinished edges.',
+        'Imagination transitions from desks into sketch worlds, framed the way Eizouken Science SARU composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with giddy creative imagination.',
+      rendering_and_quality: 'Energetic Science SARU frame with rough sketch overlays.',
+      key_features: 'Eizouken sketch overlays; imagination; concept art; passion',
       creative_brief:
-        'Keep concept-stage linework visible around the same clear drawing; guide strokes trace prompted forms and motion only. Preserve subject, action, count, main camera, and mood; add no scene or words. Use it as a reusable look on any subject.',
+        "Science SARU Keep Your Hands Off Eizouken! look (2020) by Masaaki Yuasa: rough pencil sketch imagination overlays, concept-art worlds bursting from notebooks and lively animation passion. Carry it through Eizouken sketch overlays, imagination, concept art, passion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-082',
-    name: 'Deadpan-Explosion Absurd Timing',
+    name: 'Keiichi Arawi - Deadpan-Explosion Absurd Timing',
+    displayName: 'Keiichi Arawi - Deadpan-Explosion Absurd Timing',
+    styleAnchors: ['Keiichi Arawi - Deadpan-Explosion Absurd Timing'],
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'A two-tempo ink drawing keeps steady thin contours at rest and switches to sharp wedges or localized elastic arcs at action peaks already present in the request.',
+        'Keiichi Arawi Nichijou manga look: very simple clean rounded designs, flat pastel color, deadpan stillness exploding into absurd over-the-top gags.',
       subject_treatment:
-        'Keep identity, anatomy, and silhouette; bend only existing contour segments when the requested gesture supports it, never duplicating or resizing the subject.',
-      color_and_tone:
-        'Use a quiet middle-value base with brief high-chroma accents on existing forms; the prompt controls the palette and its emotional meaning.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Arawi simplicity, round faces, dot eyes and plain clothes, deadpan until chaos erupts. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Flat pastel blues, pinks and creams, true to the Keiichi Arawi palette.',
       lighting_and_shadow:
-        'Set flat cel planes against crisp hard shadow cuts; keep contrast local and invent no additional light source.',
+        'Flat even light with sudden explosion flashes, lit the way Keiichi Arawi lights its scenes.',
       texture_and_material:
-        'Keep fills smooth and edges clean; add a few short gesture marks only along movement the prompt already describes.',
+        'Very clean simple line and flat color, with the surface finish of Keiichi Arawi.',
       camera_and_composition:
-        'Lock crop, viewpoint, scale, spacing, and count; create impact through local contrast rather than a new angle, insert, or zoom.',
-      atmosphere_and_mood:
-        'Preserve the source mood; sharpen a requested comic beat through line timing without making neutral action comedic.',
+        'Deadpan still framing suddenly exploding into chaos, framed the way Keiichi Arawi composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with deadpan absurd chaos.',
       rendering_and_quality:
-        'Keep resting forms stable and readable; confine elastic distortion to small contour accents and return immediately to the original shape.',
-      key_features:
-        'Steady resting line against sharp gesture marks; localized elastic arcs; short action accents; flat shadows with abrupt value contrast.',
+        'Clean absurdist gag manga illustration, in the recognizable hand of Keiichi Arawi.',
+      key_features: 'Keiichi Arawi simplicity; deadpan; absurd explosions; pastel',
       creative_brief:
-        'Use still contours and quick elastic marks to distinguish existing action peaks. Preserve subject, action, count, camera, and mood; add no punchline prop, duplicate, or forced expression. Use it as a reusable look on any subject.',
+        "Keiichi Arawi Nichijou manga look: very simple clean rounded designs, flat pastel color, deadpan stillness exploding into absurd over-the-top gags. Carry it through Keiichi Arawi simplicity, deadpan, absurd explosions, pastel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-083',
-    name: 'Low-Stakes Banter Flatness',
+    name: 'Kagami Yoshimizu - Low-Stakes Banter Flatness',
+    displayName: 'Kagami Yoshimizu - Low-Stakes Banter Flatness',
+    styleAnchors: ['Kagami Yoshimizu - Low-Stakes Banter Flatness'],
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Thin, even contour lines and flat low-contrast cel fields give forms a calm, economical finish; expression changes stay small and clearly drawn.',
+        'Kagami Yoshimizu Lucky Star art: flat cute four-panel designs, big simple eyes, pastel color and low-stakes otaku chatter.',
       subject_treatment:
-        'Retain the requested design and pose; keep facial features restrained and proportionate, with no added reactions or assumed relationships.',
-      color_and_tone:
-        'Choose a narrow, muted range with neighboring hues and gentle value steps; preserve explicit colors and avoid a fixed pastel scheme.',
-      lighting_and_shadow:
-        'Use broad even illumination and only shallow shadow shapes; preserve harder shadows when the prompt calls for them.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yoshimizu designs, big simple eyes, small mouths and casual clothes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Flat pastel pink, blue and lilac, true to the Kagami Yoshimizu palette.',
+      lighting_and_shadow: 'Flat even light, lit the way Kagami Yoshimizu lights its scenes.',
       texture_and_material:
-        'Keep surfaces smooth and detail sparse, with faint grain only where it does not obscure the original material.',
+        'Clean simple four-panel manga line with light screentone and plenty of white space around figures.',
       camera_and_composition:
-        'Keep the exact requested framing and count; support readable spacing inside the layout the user supplies.',
-      atmosphere_and_mood:
-        'Let the requested emotion set facial intensity and contrast; low-key rendering must not flatten a strong expression.',
+        'Four-panel chatter compositions, framed the way Kagami Yoshimizu composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with low-stakes chatty comfort.',
       rendering_and_quality:
-        'Favor precise line closure, simple shadow grouping, and consistent edge weight; retain enough detail to identify every prompted form.',
-      key_features:
-        'Uniform fine contours; low-contrast color blocks; shallow shadow shapes; restrained feature marks; relaxed detail density.',
+        'Flat cute four-panel illustration, in the recognizable hand of Kagami Yoshimizu.',
+      key_features: 'Kagami Yoshimizu flat cute; four-panel; chatter',
       creative_brief:
-        'Render with quiet line weight and narrow value steps, letting small feature changes carry expression. Preserve the prompted subject, action, count, camera, and mood. Use it as a reusable look on any subject.',
+        "Kagami Yoshimizu Lucky Star art: flat cute four-panel designs, big simple eyes, pastel color and low-stakes otaku chatter. Carry it through Kagami Yoshimizu flat cute, four-panel, chatter. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-084',
-    name: 'Ordinary-Cosmic Whimsy Pivot',
+    name: 'Noizi Ito - Ordinary-Cosmic Whimsy Pivot',
+    displayName: 'Noizi Ito - Ordinary-Cosmic Whimsy Pivot',
+    styleAnchors: ['Noizi Ito - Ordinary-Cosmic Whimsy Pivot'],
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Precisely inked forms sit in clean planar color, with selective luminous edges and a clear value break attached to forms already in the image.',
+        'Noizi Ito illustration look as in her light novel art: crisp clean designs, bright energetic eyes, school settings flipping into cosmic whimsy.',
       subject_treatment:
-        'Keep the prompted subject and proportions intact; apply light or edge contrast only to existing forms, without adding another form.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Noizi Ito designs, bright big eyes, ribbons and energetic poses. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Balance grounded midtones with a limited vivid accent; any unusual hue belongs to a prompted element and never replaces explicit colors.',
+        'Bright school colors with cosmic violet accents, true to the Noizi Ito palette.',
       lighting_and_shadow:
-        'Separate flat cel shadows from soft localized light; use a glow only when the source content or prompt supplies a luminous element.',
-      texture_and_material:
-        'Use smooth, controlled fills with a fine line edge and restrained halo where justified; avoid grain that changes the material.',
+        'Clean bright illustration light with cosmic glow, lit the way Noizi Ito lights its scenes.',
+      texture_and_material: 'Crisp digital illustration line and soft cel shading.',
       camera_and_composition:
-        'Preserve crop, viewpoint, scale, count, and spacing; express a visual pivot through value and color contrast inside the requested frame.',
-      atmosphere_and_mood:
-        'Follow the requested mood; let contrast affect visual emphasis only, not the emotional reading.',
+        'Energetic illustration compositions, framed the way Noizi Ito composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with ordinary cosmic whimsy.',
       rendering_and_quality:
-        'Keep forms crisp beside a soft light accent when one is requested; add no new graphic event.',
-      key_features:
-        'Precise contour; flat color planes; selective edge luminosity; localized value pivot; restrained effects.',
+        'Crisp light-novel illustration, in the recognizable hand of Noizi Ito.',
+      key_features: 'Noizi Ito designs; bright eyes; cosmic whimsy',
       creative_brief:
-        'Contrast stable inked shapes with a small, justified luminous accent. Preserve subject, action, count, camera, and mood; add no narrative event. Use it as a reusable look on any subject.',
+        "Noizi Ito illustration look as in her light novel art: crisp clean designs, bright energetic eyes, school settings flipping into cosmic whimsy. Carry it through Noizi Ito designs, bright eyes, cosmic whimsy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-087',
-    name: 'Pastoral Breathing-Room Stillness',
+    name: 'Non Non Biyori Silver Link - Pastoral Breathing-Room Stillness',
+    displayName: 'Non Non Biyori Silver Link - Pastoral Breathing-Room Stillness',
+    styleAnchors: ['Non Non Biyori Silver Link - Pastoral Breathing-Room Stillness'],
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Fine unbroken outlines, broad pale color washes, and low surface-detail density give the image an airy hand-painted finish without changing layout.',
+        'Silver Link Non Non Biyori look (2013): lush painted rural Japan, long still shots of fields and cicadas, tiny figures and gentle countryside life.',
       subject_treatment:
-        'Retain the exact prompted design and gesture; keep internal marks selective and never simplify away a meaningful feature or material.',
-      color_and_tone:
-        'Use open, lightly saturated color relationships with clear focal values; greens, creams, or blues appear only when the requested palette allows.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with soft cute designs, simple country clothes and relaxed poses. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Lush green fields, blue sky and warm earth tones.',
       lighting_and_shadow:
-        "Render broad diffuse light with soft shadow edges and clear contact points; follow the prompt's stated conditions.",
-      texture_and_material:
-        'Concentrate subtle grain and fine strokes on existing focal surfaces; keep secondary areas quiet without removing their forms.',
-      camera_and_composition:
-        "Preserve framing, viewpoint, scale, spacing, and count; maintain the input's negative space instead of enlarging it or moving the subject.",
-      atmosphere_and_mood:
-        'Keep the requested mood; stillness comes from sparse marks and gentle contrast, not an imposed setting or emotion.',
+        'Warm rural sunlight and soft summer haze, lit the way Non Non Biyori Silver Link lights its scenes.',
+      texture_and_material: 'Lush detailed painted countryside backgrounds with soft cel.',
+      camera_and_composition: 'Long still shots of landscapes with tiny figures.',
+      atmosphere_and_mood: 'Keep the requested mood with pastoral breathing-room stillness.',
       rendering_and_quality:
-        'Use clean edge control, softened distance only where present, and enough local detail to keep all prompted elements distinct.',
-      key_features:
-        'Fine contour; broad light washes; low detail density; diffuse shadow edges; selective focal texture.',
+        'Lush pastoral Silver Link frame, in the recognizable hand of Non Non Biyori Silver Link.',
+      key_features: 'Non Non Biyori countryside; long still shots; lush fields',
       creative_brief:
-        "Let pale washes and spare surface marks provide breathing room within the user's composition. Preserve the requested subject, action, count, camera, and mood. Use it as a reusable look on any subject.",
+        "Silver Link Non Non Biyori look (2013): lush painted rural Japan, long still shots of fields and cicadas, tiny figures and gentle countryside life. Carry it through Non Non Biyori countryside, long still shots, lush fields. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-090',
-    name: 'Memory-Washed Melodrama Softness',
+    name: 'Itaru Hinoue Key - Memory-Washed Melodrama Softness',
+    displayName: 'Itaru Hinoue Key - Memory-Washed Melodrama Softness',
+    styleAnchors: ['Itaru Hinoue Key - Memory-Washed Melodrama Softness'],
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Soft ink contours sit under translucent tonal veils, with selected focal edges kept crisp against gentler color transitions.',
+        'Itaru Hinoue Key visual novel art as in Clannad and Kanon: very large soft eyes, small faces, pastel memory-washed light and tearful melodrama.',
       subject_treatment:
-        'Preserve identity, proportions, expression, and action; soften contour edges and shadow transitions, never age, pose, or facial structure.',
-      color_and_tone:
-        'Use subdued warm and cool midtones with gently faded transitions; retain explicit colors and avoid an automatic vintage cast.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hinoue designs, huge soft eyes, small noses, long hair and simple clothes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Soft pastel wash, sakura pink and pale gold.',
       lighting_and_shadow:
-        'Follow the requested light direction and soften shadow boundaries without changing their source or adding backlight.',
+        'Memory-washed soft glowing light, lit the way Itaru Hinoue Key lights its scenes.',
       texture_and_material:
-        'Layer smooth color glazing over subtle pencil grain; preserve the texture and reflectance of each described material.',
+        'Soft digital illustration with pastel gradients, with the surface finish of Itaru Hinoue Key.',
       camera_and_composition:
-        'Hold crop, viewpoint, distance, and count; create depth with tonal softness rather than an added vignette or focal object.',
-      atmosphere_and_mood:
-        'Keep the requested mood and intensity; haze changes edge softness, not the story or emotional reading.',
+        'Tearful close-ups and wistful town views, framed the way Itaru Hinoue Key composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with memory-washed tender melodrama.',
       rendering_and_quality:
-        'Blend shadows gently while maintaining decisive contours and readable values; avoid blur over the whole image.',
-      key_features:
-        'Translucent tonal veils; faded but prompt-led color; selective crisp contours; soft shadow transitions; faint pencil grain.',
+        'Soft visual-novel illustration look, in the recognizable hand of Itaru Hinoue Key.',
+      key_features: 'Itaru Hinoue huge eyes; pastel washes; Key melodrama',
       creative_brief:
-        "Use translucent color and softened edges around a few decisive lines. Preserve the user's subject, action, count, camera, and emotional tone without adding a narrative filter. Use it as a reusable look on any subject.",
+        "Itaru Hinoue Key visual novel art as in Clannad and Kanon: very large soft eyes, small faces, pastel memory-washed light and tearful melodrama. Carry it through Itaru Hinoue huge eyes, pastel washes, Key melodrama. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-201',
-    name: 'Tea-Light Observational Mystery',
+    name: 'Hyouka Kyoto Animation - Tea-Light Observational Mystery',
+    displayName: 'Hyouka Kyoto Animation - Tea-Light Observational Mystery',
+    styleAnchors: ['Hyouka Kyoto Animation - Tea-Light Observational Mystery'],
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Observational linework uses fine, precise contours and sharply resolved microdetails against quieter color fields, without changing the point of attention.',
+        'Kyoto Animation Hyouka look (2012): detailed school club rooms, curious flower-petal imagination sequences, warm tea light and quiet observational mysteries.',
       subject_treatment:
-        'Keep every prompted form and action; clarify small features already present without adding narrative symbols or gestures.',
-      color_and_tone:
-        'Use neutral midtones with one measured warm or cool accent; retain stated colors and keep small details from becoming oversaturated.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with KyoAni designs, expressive curious eyes, school uniforms and precise small gestures. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Warm tea amber, old book brown and soft classroom light.',
       lighting_and_shadow:
-        'Follow the actual light source; use compact highlights and contact shadows to define existing details.',
+        'Warm afternoon light and imaginative flower-petal glows, lit the way Hyouka Kyoto Animation lights its scenes.',
       texture_and_material:
-        'Vary mark scale by material: smooth where clean, fine grain where rough, and no implied object from a texture cue.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.',
       camera_and_composition:
-        'Preserve crop, viewpoint, scale, and count; strengthen the existing focal hierarchy without moving it or requiring close-up framing.',
-      atmosphere_and_mood:
-        'Keep the requested mood; line precision should not alter the emotional reading.',
+        'Club-room compositions and imaginative petal sequences, framed the way Hyouka Kyoto Animation composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with curious observational calm.',
       rendering_and_quality:
-        'Separate thin contour, local detail, and background values cleanly; keep extra graphic marks sparse and nonverbal.',
-      key_features:
-        'Precise fine contours; selectively sharp microdetail; quiet supporting color fields; compact highlights; material-specific mark scale.',
+        'Refined Kyoto Animation mystery frame, in the recognizable hand of Hyouka Kyoto Animation.',
+      key_features: 'Hyouka curiosity; club rooms; flower-petal imagination; mysteries',
       creative_brief:
-        'Give existing focal details crisp line priority against calmer surrounding marks. Preserve subject, camera, and mood; add no extra graphic motif. Use it as a reusable look on any subject.',
+        "Kyoto Animation Hyouka look (2012): detailed school club rooms, curious flower-petal imagination sequences, warm tea light and quiet observational mysteries. Carry it through Hyouka curiosity, club rooms, flower-petal imagination, mysteries. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-204',
-    name: 'Reflective Breeze Healing Reverie',
+    name: 'Kozue Amano Aria - Reflective Breeze Healing Reverie',
+    displayName: 'Kozue Amano Aria - Reflective Breeze Healing Reverie',
+    styleAnchors: ['Kozue Amano Aria - Reflective Breeze Healing Reverie'],
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Transparent glaze layers and softly echoed values create a fluid finish while every depicted shape stays single and sharply identifiable.',
+        'Kozue Amano Aria look: Neo-Venezia canals on terraformed Mars, gondoliers, sunlit water reflections, breezy calm and healing wonder.',
       subject_treatment:
-        'Keep the original identity, pose, and count; soften selected edge transitions but never mirror, duplicate, or rearrange forms.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Amano designs, gentle faces, gondolier uniforms and relaxed poses. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Blend nearby cool and warm values through translucent layers; honor explicit colors and avoid imposing a blue or restorative palette.',
+        'Canal blue, terracotta, white and sunlit gold, true to the Kozue Amano Aria palette.',
       lighting_and_shadow:
-        'Follow the supplied source with soft tonal echoes; do not duplicate forms or add a light source.',
+        'Sparkling canal reflections and breezy sunlight, lit the way Kozue Amano Aria lights its scenes.',
       texture_and_material:
-        'Use fine wash granulation and delicate brush edges over existing materials; keep each material distinct rather than applying one surface treatment everywhere.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.',
       camera_and_composition:
-        'Preserve crop, viewpoint, scale, and spacing; use soft value echoes inside the frame without shifting the focal point.',
-      atmosphere_and_mood:
-        "Maintain the requested emotion; fluid transitions affect surface and value only, not the scene's emotional reading.",
+        'Canal and gondola compositions, framed the way Kozue Amano Aria composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with reflective healing reverie.',
       rendering_and_quality:
-        'Keep one decisive contour on focal forms and softer transitions elsewhere; no full-frame blur or duplicated reflection.',
-      key_features:
-        'Translucent glazing; soft value echoes; fine wash grain; selective decisive contours; single readable silhouettes.',
+        'Breezy healing canal frame, in the recognizable hand of Kozue Amano Aria.',
+      key_features: 'Aria Neo-Venezia; canals; gondoliers; healing',
       creative_brief:
-        'Layer soft tonal echoes around clear forms using transparency, without duplicating shapes. Keep the prompted subject, action, count, camera, and mood. Use it as a reusable look on any subject.',
+        "Kozue Amano Aria look: Neo-Venezia canals on terraformed Mars, gondoliers, sunlit water reflections, breezy calm and healing wonder. Carry it through Aria Neo-Venezia, canals, gondoliers, healing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-205',
-    name: 'Breezy Brush-Reinvention Summer',
+    name: 'Satsuki Yoshino - Breezy Brush-Reinvention Summer',
+    displayName: 'Satsuki Yoshino - Breezy Brush-Reinvention Summer',
+    styleAnchors: ['Satsuki Yoshino - Breezy Brush-Reinvention Summer'],
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Loose brush contours, open paper gaps, and simple geometric underpainting give forms a fresh hand-painted energy.',
+        'Satsuki Yoshino Barakamon look: sunny island life, bold calligraphy brush energy, rustic villages and breezy summer comedy.',
       subject_treatment:
-        'Preserve the prompted design, proportions, pose, and action; vary stroke edges without reshaping the figure or object.',
-      color_and_tone:
-        'Balance a light base with a few confident saturated accents; let the user set the hue and avoid a fixed seasonal palette.',
-      lighting_and_shadow:
-        'Use broad light planes with broken brush shadow edges; follow the described source and keep depth readable.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yoshino designs, casual island clothes and expressive faces. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Island green, sea blue, ink black and sun white.',
+      lighting_and_shadow: 'Bright island sunlight, lit the way Satsuki Yoshino lights its scenes.',
       texture_and_material:
-        'Show dry-brush skips and sparse pencil grain as surface treatment; render existing materials recognizably beneath the marks.',
+        'Clean line with bold ink brush accents, with the surface finish of Satsuki Yoshino.',
       camera_and_composition:
-        'Keep exact framing, viewpoint, scale, and count; use asymmetry within existing shapes without rearranging the composition.',
-      atmosphere_and_mood:
-        'Preserve the requested feeling; loose marks describe brushwork, not a required emotion.',
+        'Island village compositions, framed the way Satsuki Yoshino composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with breezy summer reinvention.',
       rendering_and_quality:
-        'Leave a controlled handmade edge while keeping anatomy and object boundaries legible; avoid a uniformly rough finish.',
-      key_features:
-        'Loose directional brushwork; geometric underpainting; visible paper gaps; broken shadow edges; selective pencil grain.',
+        'Sunny island comedy illustration, in the recognizable hand of Satsuki Yoshino.',
+      key_features: 'Barakamon island; calligraphy brush; summer',
       creative_brief:
-        'Combine confident brush edges with simple color geometry and visible gaps. Keep the original subject, action, count, camera, and mood unchanged. Use it as a reusable look on any subject.',
+        "Satsuki Yoshino Barakamon look: sunny island life, bold calligraphy brush energy, rustic villages and breezy summer comedy. Carry it through Barakamon island, calligraphy brush, summer. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-206',
-    name: 'Everyday-Care Gesture Intimacy',
+    name: 'Yumi Unita - Everyday-Care Gesture Intimacy',
+    displayName: 'Yumi Unita - Everyday-Care Gesture Intimacy',
+    styleAnchors: ['Yumi Unita - Everyday-Care Gesture Intimacy'],
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Fine contour detail concentrates where existing forms touch, while neighboring edges remain soft and economical.',
+        'Yumi Unita Usagi Drop look: soft watercolor-like gentle illustration, everyday caregiving, tender small gestures and warm homes.',
       subject_treatment:
-        "Keep the user's subjects, relation, gesture, age, and count; render existing contact points without changing their intent.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Unita designs, soft faces, simple home clothes and caring gestures. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        "Use natural midtones and restrained warm highlights balanced by the prompt's other colors; avoid an exclusively pastel cast.",
-      lighting_and_shadow:
-        'Give overlapping forms clear contact shadows under the supplied light; keep the edge soft where forms separate.',
+        'Soft watercolor pastels and warm home tones, true to the Yumi Unita palette.',
+      lighting_and_shadow: 'Soft warm home light, lit the way Yumi Unita lights its scenes.',
       texture_and_material:
-        'Add small tactile strokes only for materials already specified; do not suggest other materials.',
+        'Soft watercolor-like washes and gentle lines, with the surface finish of Yumi Unita.',
       camera_and_composition:
-        'Keep the exact crop, viewpoint, scale, spacing, and count; contact detail works at any distance and must not force a close-up.',
-      atmosphere_and_mood:
-        "Follow the requested emotional intensity; delicate detail must not change the scene's emotional reading.",
+        'Intimate home compositions, framed the way Yumi Unita composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with tender everyday care.',
       rendering_and_quality:
-        'Keep fine local edges crisp while broad forms stay smooth; maintain readable overlaps when they exist.',
-      key_features:
-        'Fine contact-point contours; precise overlap shadows; smooth broad forms; restrained warm accents; material-specific tactile marks.',
+        'Gentle watercolor slice-of-life illustration, in the recognizable hand of Yumi Unita.',
+      key_features: 'Yumi Unita watercolor; caregiving; tender gestures',
       creative_brief:
-        'Focus line detail at contact points already present in the image, keeping all relations user-defined. Preserve subject, action, count, camera, and mood. Use it as a reusable look on any subject.',
+        "Yumi Unita Usagi Drop look: soft watercolor-like gentle illustration, everyday caregiving, tender small gestures and warm homes. Carry it through Yumi Unita watercolor, caregiving, tender gestures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-209',
-    name: 'Sugar-Cotton Hospitality Miniature',
+    name: 'Koi Gochiusa - Sugar-Cotton Hospitality Miniature',
+    displayName: 'Koi Gochiusa - Sugar-Cotton Hospitality Miniature',
+    styleAnchors: ['Koi Gochiusa - Sugar-Cotton Hospitality Miniature'],
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Delicate contour lines and tiny, controlled highlight points give existing forms a finely finished, compact surface detail.',
+        'Koi Is the Order a Rabbit? look: sugar-cotton cafe town of half-timbered houses, fluffy rabbits, frilly cafe uniforms and pastel sweetness.',
       subject_treatment:
-        'Keep exact proportions, age, silhouette, and count; render small details finely without shrinking the subject or changing its character.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Koi designs, big gentle eyes, fluffy hair and frilly cafe uniforms. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Use gentle tonal steps and a restrained light palette only when the prompt allows; preserve explicit colors and strong contrast.',
-      lighting_and_shadow:
-        'Use smooth highlights and soft shadow transitions with precise contact edges; follow the actual light direction.',
+        'Sugar pastel pink, cream, lavender and mint, true to the Koi Gochiusa palette.',
+      lighting_and_shadow: 'Soft sweet cafe light, lit the way Koi Gochiusa lights its scenes.',
       texture_and_material:
-        'Use fine grain and small highlights only to describe materials named in the prompt.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.',
       camera_and_composition:
-        'Preserve view, crop, scale, spacing, and count; apply compact detail within the image, not a miniature camera or symmetric layout.',
-      atmosphere_and_mood:
-        'Retain the requested feeling; delicate rendering does not assign an emotional tone.',
-      rendering_and_quality:
-        'Use crisp microdetail, clean contours, and small highlight accents without overdecorating the frame.',
-      key_features:
-        'Delicate contour; tiny highlights; fine material detail; gentle tonal steps; compact precision without scale change.',
+        'Cafe and European town compositions, framed the way Koi Gochiusa composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with sugary cozy hospitality.',
+      rendering_and_quality: 'Sweet pastel cafe frame, in the recognizable hand of Koi Gochiusa.',
+      key_features: 'Gochiusa pastel cafe; half-timbered town; rabbits',
       creative_brief:
-        'Make fine surface marks and small highlights carry the detail without miniaturizing forms. Preserve subject, action, count, camera, and mood. Use it as a reusable look on any subject.',
+        "Koi Is the Order a Rabbit? look: sugar-cotton cafe town of half-timbered houses, fluffy rabbits, frilly cafe uniforms and pastel sweetness. Carry it through Gochiusa pastel cafe, half-timbered town, rabbits. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-212',
-    name: 'Immaculate Social-Jitter Comedy',
+    name: 'Komi Can’t Communicate OLM - Immaculate Social-Jitter Comedy',
+    displayName: 'Komi Can’t Communicate OLM - Immaculate Social-Jitter Comedy',
+    styleAnchors: ['Komi Can’t Communicate OLM - Immaculate Social-Jitter Comedy'],
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'a long black-haired girl with a notebook, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Evenly weighted fine outlines and immaculate flat planes are interrupted by one tiny alignment shift in an existing edge or repeated mark.',
+        'OLM Komi Can’t Communicate look (2021): immaculate elegant designs, chalkboard gag cards, soft pastel comedy and social anxiety humor.',
       subject_treatment:
-        'Retain every prompted form, pose, expression, and count; jitter stays at a contour or color edge, never in anatomy or action.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with elegant designs, long straight hair, calm faces and nervous body language. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Keep relationships orderly and mostly restrained, with one limited accent where the prompt allows it.',
+        'Soft pastels and chalkboard green, true to the Komi Can’t Communicate OLM palette.',
       lighting_and_shadow:
-        'Use even fill and compact crisp shadows; preserve supplied lighting without inventing another source.',
+        'Soft school light, lit the way Komi Can’t Communicate OLM lights its scenes.',
       texture_and_material:
-        'Favor clean polished fills; add fine grain only when an existing material calls for it.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.',
       camera_and_composition:
-        'Preserve crop, viewpoint, scale, spacing, and count; create tension through tiny internal misalignment, not a new layout.',
-      atmosphere_and_mood:
-        'Keep the requested mood; a small visual stutter does not set the emotional reading.',
+        'Comedy cut-ins and elegant still compositions, framed the way Komi Can’t Communicate OLM composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with jittery social comedy.',
       rendering_and_quality:
-        'Maintain sharp boundaries, smooth fields, and one deliberate irregularity; avoid unprompted surface marks.',
-      key_features:
-        'Even contour weight; immaculate color planes; crisp compact shadows; localized alignment shift; limited accent color.',
+        'Polished pastel comedy frame, in the recognizable hand of Komi Can’t Communicate OLM.',
+      key_features: 'Komi elegance; social jitters; chalkboard gags',
       creative_brief:
-        'Set precise, clean drawing against a single restrained edge irregularity. Keep subject, action, count, camera, and mood; add no new motif. Use it as a reusable look on any subject.',
+        "OLM Komi Can’t Communicate look (2021): immaculate elegant designs, chalkboard gag cards, soft pastel comedy and social anxiety humor. Carry it through Komi elegance, social jitters, chalkboard gags. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-213',
-    name: 'Shift-Comedy Choreography Warmth',
+    name: 'Karino Takatsu - Shift-Comedy Choreography Warmth',
+    displayName: 'Karino Takatsu - Shift-Comedy Choreography Warmth',
+    styleAnchors: ['Karino Takatsu - Shift-Comedy Choreography Warmth'],
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Clear action contours follow existing overlaps, with rounded ink joins and distinct planes that make the depicted motion easy to read.',
+        'Karino Takatsu Working!! look: bright family restaurant comedy, four-panel roots, uniforms and choreographed shift chaos.',
       subject_treatment:
-        'Preserve the exact action, identity, anatomy, and count; clarify existing overlaps without inventing a handoff, interaction, or gesture.',
-      color_and_tone:
-        'Use distinct local colors and moderate saturation to separate forms; follow explicit palette and avoid mandatory warmth.',
-      lighting_and_shadow:
-        'Keep contact shadows clear under the provided source; use clean value edges where forms overlap.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Takatsu designs, restaurant uniforms and expressive comic faces. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Bright restaurant warm tones, true to the Karino Takatsu palette.',
+      lighting_and_shadow: 'Bright restaurant light, lit the way Karino Takatsu lights its scenes.',
       texture_and_material:
-        'Use smooth fills with brief material-specific brush marks; imply no new material or object.',
+        'Clean simple four-panel manga line with light screentone and plenty of white space around figures.',
       camera_and_composition:
-        'Keep framing, viewpoint, scale, spacing, and count; guide the eye along movement already in the prompt without changing blocking.',
-      atmosphere_and_mood:
-        'Retain the requested mood; kinetic linework does not assign an emotional tone or relationship.',
+        'Choreographed shift comedy compositions, framed the way Karino Takatsu composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with warm shift comedy.',
       rendering_and_quality:
-        'Keep contours continuous where needed and motion accents sparse; maintain clear object boundaries.',
-      key_features:
-        'Directional action contours; rounded joins; clear overlap planes; moderate color separation; sparse material marks.',
+        'Bright workplace comedy illustration, in the recognizable hand of Karino Takatsu.',
+      key_features: 'Working!! restaurant; shift comedy; uniforms',
       creative_brief:
-        'Clarify movement and overlaps already present with directional linework and readable color planes. Preserve scene, count, camera, and mood; add no new interaction. Use it as a reusable look on any subject.',
+        "Karino Takatsu Working!! look: bright family restaurant comedy, four-panel roots, uniforms and choreographed shift chaos. Carry it through Working!! restaurant, shift comedy, uniforms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-214',
-    name: 'Breeze-Drift Beautiful Inertia',
+    name: 'Tanaka-kun Silver Link - Breeze-Drift Beautiful Inertia',
+    displayName: 'Tanaka-kun Silver Link - Breeze-Drift Beautiful Inertia',
+    styleAnchors: ['Tanaka-kun Silver Link - Breeze-Drift Beautiful Inertia'],
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Long fluid contours and low-frequency color transitions give the image a light drifting surface while forms remain as still or active as requested.',
+        'Silver Link Tanaka-kun Is Always Listless look (2016): soft breezy pastel, lethargic comedy, sunlit windows and beautiful laziness.',
       subject_treatment:
-        'Keep the original pose, proportions, action, and count; soften line cadence and tonal edges without changing posture or direction.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with soft designs, sleepy half-lidded eyes and relaxed slouched poses. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Use gentle neighboring hues and low contrast where allowed; preserve strong or saturated colors explicitly requested.',
+        'Soft breezy pastel green and sky blue, true to the Tanaka-kun Silver Link palette.',
       lighting_and_shadow:
-        'Use broad soft transitions while maintaining the stated light direction and enough shadow structure to describe form.',
+        'Sunlit breezy windows, lit the way Tanaka-kun Silver Link lights its scenes.',
       texture_and_material:
-        'Keep surfaces smooth with thin brush trails along existing edges; do not imply movement that is absent from the prompt.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.',
       camera_and_composition:
-        "Preserve crop, viewpoint, scale, spacing, and count; maintain the input's balance without forcing open space or a paused composition.",
-      atmosphere_and_mood:
-        "Follow the requested emotional intensity; softness does not alter the scene's energy.",
+        'Lethargic still compositions, framed the way Tanaka-kun Silver Link composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with breezy beautiful inertia.',
       rendering_and_quality:
-        'Keep essential boundaries crisp beneath gentle transitions; avoid a uniform blur or low-detail wash.',
-      key_features:
-        'Long fluid contours; neighboring color shifts; broad soft transitions; sparse edge trails; stable form boundaries.',
+        'Soft breezy comedy frame, in the recognizable hand of Tanaka-kun Silver Link.',
+      key_features: 'Tanaka-kun lethargy; breezy pastels; laziness',
       creative_brief:
-        'Apply gentle contour flow and tonal drift without changing pose or motion. Keep subject, action, count, camera, and mood as requested. Use it as a reusable look on any subject.',
+        "Silver Link Tanaka-kun Is Always Listless look (2016): soft breezy pastel, lethargic comedy, sunlit windows and beautiful laziness. Carry it through Tanaka-kun lethargy, breezy pastels, laziness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-218',
-    name: 'Incremental-Ascent Confidence Light',
+    name: 'Yama no Susume 8bit - Incremental-Ascent Confidence Light',
+    displayName: 'Yama no Susume 8bit - Incremental-Ascent Confidence Light',
+    styleAnchors: ['Yama no Susume 8bit - Incremental-Ascent Confidence Light'],
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Clean geometric color planes shift in measured brightness along existing contours, with precise lit edges and controlled gradients.',
+        'Eight Bit Encouragement of Climb look (2013): mountain hiking, scenic summits, sunrise light and small steps of confidence.',
       subject_treatment:
-        'Retain the exact forms, proportions, gesture, and count; sharpen edges of existing focal shapes without changing posture.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with soft cute designs, hiking gear and determined faces. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        "Build gradual value steps from darker support to brighter accents using requested hues; preserve the prompt's palette and contrast.",
+        'Mountain green, sunrise gold and sky blue, true to the Yama no Susume 8bit palette.',
       lighting_and_shadow:
-        'Follow the source direction and create progression of light across existing planes; add no beam or new source.',
+        'Summit sunrise light, lit the way Yama no Susume 8bit lights its scenes.',
       texture_and_material:
-        'Use smooth fills and compact material details; preserve surface qualities named in the prompt.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.',
       camera_and_composition:
-        'Keep crop, viewpoint, scale, spacing, and count; create hierarchy through tonal progression, not upward framing or a reveal.',
-      atmosphere_and_mood:
-        'Preserve the requested emotional tone; directional light does not assign a new one.',
+        'Scenic trail and summit compositions, framed the way Yama no Susume 8bit composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with incremental ascending confidence.',
       rendering_and_quality:
-        'Keep light boundaries crisp and gradients subtle; separate forms without excessive glow.',
-      key_features:
-        'Geometric color planes; progressive value steps; crisp lit edges; controlled gradients; clear focal hierarchy.',
+        'Scenic hiking television frame, in the recognizable hand of Yama no Susume 8bit.',
+      key_features: 'Yama no Susume hiking; summits; sunrise',
       creative_brief:
-        'Use a measured light-to-shadow progression along existing shapes to build hierarchy. Preserve subject, action, count, camera, and mood without shifting composition. Use it as a reusable look on any subject.',
+        "Eight Bit Encouragement of Climb look (2013): mountain hiking, scenic summits, sunrise light and small steps of confidence. Carry it through Yama no Susume hiking, summits, sunrise. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-219',
-    name: 'Mundane Absurdist Theater',
+    name: 'Daily Lives of High School Boys Sunrise - Mundane Absurdist Theater',
+    displayName: 'Daily Lives of High School Boys Sunrise - Mundane Absurdist Theater',
+    styleAnchors: ['Daily Lives of High School Boys Sunrise - Mundane Absurdist Theater'],
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Plain graphic planes, thin even contours, and blunt shadow shapes give the drawing restrained flat clarity.',
+        'Sunrise Daily Lives of High School Boys look (2012): mundane absurdist comedy, deadpan dramatic staging of trivial moments, realistic plain designs.',
       subject_treatment:
-        'Preserve identity, proportions, pose, action, and count; stylize shadow edges without distorting expression or altering count.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with plain realistic designs and deadpan dramatic poses. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Use simple color relationships and controlled contrast; the prompt sets hue and saturation rather than a fixed palette.',
+        'Plain everyday school colors, true to the Daily Lives of High School Boys Sunrise palette.',
       lighting_and_shadow:
-        'Keep stated lighting direction; define one or two firm shadow shapes without inventing another light source.',
+        'Dramatic lighting on mundane moments, lit the way Daily Lives of High School Boys Sunrise lights its scenes.',
       texture_and_material:
-        'Favor smooth color fields and minimal surface grain; retain material detail needed to recognize each form.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.',
       camera_and_composition:
-        'Keep camera, crop, scale, spacing, and count; clarity comes from plane separation within the given arrangement.',
-      atmosphere_and_mood:
-        'Follow the requested mood; understated graphics do not prescribe an emotional tone.',
+        'Overly dramatic staging of trivial moments, framed the way Daily Lives of High School Boys Sunrise composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with mundane absurdist theater.',
       rendering_and_quality:
-        'Use clean shapes and limited shadow edges with no unfinished marks or added glow.',
-      key_features:
-        'Thin even contour; plain color planes; blunt shadow shapes; low surface grain; restrained flat clarity.',
+        'Deadpan comedy television frame, in the recognizable hand of Daily Lives of High School Boys Sunrise.',
+      key_features: 'Mundane absurdity; dramatic staging; deadpan',
       creative_brief:
-        'Separate forms with plain color planes and deliberate shadows. Keep subject, action, count, camera, and mood as requested; add no new motif. Use it as a reusable look on any subject.',
+        "Sunrise Daily Lives of High School Boys look (2012): mundane absurdist comedy, deadpan dramatic staging of trivial moments, realistic plain designs. Carry it through Mundane absurdity, dramatic staging, deadpan. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-220',
-    name: 'Observational Watercolor Drift',
+    name: 'Totan Kobako - Observational Watercolor Drift',
+    displayName: 'Totan Kobako - Observational Watercolor Drift',
+    styleAnchors: ['Totan Kobako - Observational Watercolor Drift'],
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Transparent watercolor washes, soft pigment blooms, and paper-tooth granulation sit beneath selective pencil or ink contours.',
+        'Totan Kobako Sketchbook look: gentle observational sketching, watercolor wash, stray cats, quiet afternoons and small discoveries.',
       subject_treatment:
-        'Preserve identity, proportions, pose, and count; let wash edges soften surfaces without losing the requested silhouette or action.',
-      color_and_tone:
-        "Layer diluted color with visible overlap and natural edge variation; honor the user's palette and avoid a fixed seasonal cast.",
-      lighting_and_shadow:
-        'Follow stated light through transparent washes and soft-edged shadows; do not add sunlight or haze as a scene cue.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with soft gentle designs, sketchbooks and quiet observing poses. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Soft watercolor pastels, true to the Totan Kobako palette.',
+      lighting_and_shadow: 'Quiet afternoon light, lit the way Totan Kobako lights its scenes.',
       texture_and_material:
-        'Show pigment granulation and watercolor blooms as the image medium; keep depicted material texture separate and recognizable.',
+        'Watercolor washes and gentle pencil lines, with the surface finish of Totan Kobako.',
       camera_and_composition:
-        'Preserve crop, viewpoint, scale, spacing, and count; vary wash density without defocusing or rearranging content.',
-      atmosphere_and_mood:
-        'Retain the requested mood; watercolor softness does not assign an emotional tone.',
+        'Quiet observation compositions, framed the way Totan Kobako composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with gentle observational drift.',
       rendering_and_quality:
-        'Keep focal contours crisp enough to read, with organic wash boundaries and no digital blur across the whole image.',
-      key_features:
-        'Transparent washes; pigment blooms; paper-tooth granulation; selective ink edges; diluted layered color.',
+        'Soft watercolor sketchbook illustration, in the recognizable hand of Totan Kobako.',
+      key_features: 'Sketchbook watercolor; stray cats; observation',
       creative_brief:
-        'Use visible watercolor texture and transparent overlapping washes while retaining crisp focal contours. Preserve subject, action, count, camera, and mood; add no new content or light source. Use it as a reusable look on any subject.',
+        "Totan Kobako Sketchbook look: gentle observational sketching, watercolor wash, stray cats, quiet afternoons and small discoveries. Carry it through Sketchbook watercolor, stray cats, observation. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-088',
-    name: 'Domestic-Fantasy Scale Chaos',
+    name: 'Coolkyousinnjya - Domestic-Fantasy Scale Chaos',
+    displayName: 'Coolkyousinnjya - Domestic-Fantasy Scale Chaos',
+    styleAnchors: ['Coolkyousinnjya - Domestic-Fantasy Scale Chaos'],
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'a red-haired dragon maid with horns and a tail, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Large clear silhouettes contrast with tiny internal marks and fine edge details; scale variation belongs to line weight and detail density, not object size.',
+        'Coolkyousinnjya Miss Kobayashi’s Dragon Maid manga look: simple rounded designs, dragons in maid outfits, domestic comedy and huge-scale fantasy chaos.',
       subject_treatment:
-        'Keep proportions, silhouettes, ages, and counts as requested; use small detail against simple forms without adding new forms or changing scale.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Coolkyousinnjya designs, simple round faces, horns and tails on dragons, and casual office clothes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Set a restrained base against a limited bright accent on an existing focal form; the prompt controls hue and saturation.',
-      lighting_and_shadow:
-        'Separate flat ambient values from a crisp rim or highlight only when supported by the supplied light.',
+        'Bright domestic pastels and dragon colors, true to the Coolkyousinnjya palette.',
+      lighting_and_shadow: 'Bright apartment light, lit the way Coolkyousinnjya lights its scenes.',
       texture_and_material:
-        'Contrast smooth broad fills with precise fine strokes on existing surfaces; avoid glow unless the prompt requests light effects.',
+        'Simple clean manga line with flat color, with the surface finish of Coolkyousinnjya.',
       camera_and_composition:
-        'Keep crop, viewpoint, perspective, spacing, and count; create scale contrast through mark size and detail, not framing or proportion changes.',
-      atmosphere_and_mood:
-        'Follow the requested feeling; contrast affects visual emphasis only and does not assign a new tone.',
+        'Domestic scenes exploding into giant-scale chaos, framed the way Coolkyousinnjya composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with domestic fantasy chaos.',
       rendering_and_quality:
-        'Preserve clear silhouette edges while keeping microdetail sparse; do not blur or ornament the whole image.',
-      key_features:
-        'Bold simplified silhouette; tiny internal line detail; restrained bright accent; clean layers; scale contrast through mark density.',
+        'Simple cheerful comedy manga illustration, in the recognizable hand of Coolkyousinnjya.',
+      key_features: 'Dragon Maid domestic; dragons; scale chaos',
       creative_brief:
-        'Juxtapose broad clean shapes with fine marks to create visual scale tension. Do not enlarge or add anything; preserve subject, action, count, camera, and mood. Use it as a reusable look on any subject.',
+        "Coolkyousinnjya Miss Kobayashi’s Dragon Maid manga look: simple rounded designs, dragons in maid outfits, domestic comedy and huge-scale fantasy chaos. Carry it through Dragon Maid domestic, dragons, scale chaos. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-210',
-    name: 'Sunshine-Scribble Soft Geometry',
+    name: 'Ume Aoki - Sunshine-Scribble Soft Geometry',
+    displayName: 'Ume Aoki - Sunshine-Scribble Soft Geometry',
+    styleAnchors: ['Ume Aoki - Sunshine-Scribble Soft Geometry'],
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Soft geometric color patches sit beneath loose colored-pencil contours and short scribbled accents, balancing structure with hand-drawn variation.',
+        'Ume Aoki Hidamari Sketch look: round simple faces, art school dorm life, playful geometric scribble backgrounds and sunny pastel color.',
       subject_treatment:
-        'Keep the requested silhouette, anatomy, pose, and count; let sketch marks sit on existing edges without changing the design.',
-      color_and_tone:
-        'Use a light paper-like base and a few soft geometric color areas; the requested palette and contrast remain in control.',
-      lighting_and_shadow:
-        'Favor flat, lightly tinted planes with clear contact shadows; follow the requested light without implying sunshine.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Aoki designs, round faces, big eyes and art school clothes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Sunny pastels, lemon, sky blue and pink, true to the Ume Aoki palette.',
+      lighting_and_shadow: 'Bright sunny light, lit the way Ume Aoki lights its scenes.',
       texture_and_material:
-        'Show pencil grain, short cross marks, and uneven color boundaries selectively; avoid making every material look like paper.',
+        'Soft line with scribbled geometric backgrounds, with the surface finish of Ume Aoki.',
       camera_and_composition:
-        'Hold framing, viewpoint, scale, and count; integrate color patches into existing forms without decorative shapes or sketch panels.',
-      atmosphere_and_mood:
-        'Keep the supplied emotional tone; loose line texture does not require a particular activity or feeling.',
-      rendering_and_quality:
-        'Retain clean silhouettes under rough accents; keep sketch detail intentional and geometry soft but stable.',
-      key_features:
-        'Loose pencil contour; soft geometric underpainting; short scribble marks; paper-like tonal base; stable readable silhouettes.',
+        'Playful geometric compositions, framed the way Ume Aoki composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with sunny scribbled cheer.',
+      rendering_and_quality: 'Playful pastel illustration, in the recognizable hand of Ume Aoki.',
+      key_features: 'Ume Aoki round faces; scribble geometry; art dorm',
       creative_brief:
-        'Place loose pencil marks over gentle geometric color fields, tying both to forms already present. Preserve subject, action, count, camera, and mood. Use it as a reusable look on any subject.',
+        "Ume Aoki Hidamari Sketch look: round simple faces, art school dorm life, playful geometric scribble backgrounds and sunny pastel color. Carry it through Ume Aoki round faces, scribble geometry, art dorm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-085',
-    name: 'Anxiety-Glitch Catharsis Comedy',
+    name: 'Bocchi the Rock! CloverWorks - Anxiety-Glitch Catharsis Comedy',
+    displayName: 'Bocchi the Rock! CloverWorks - Anxiety-Glitch Catharsis Comedy',
+    styleAnchors: ['Bocchi the Rock! CloverWorks - Anxiety-Glitch Catharsis Comedy'],
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'a pink-haired guitarist in a pink tracksuit, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Stable anime contours are interrupted by small broken segments and offset color edges; graphic disregistration sits on the surface rather than replacing the form.',
+        'CloverWorks Bocchi the Rock! look (2022): wild mixed-media anxiety gags, style switches into clay, photos and pixel art, and cathartic live-house rock.',
       subject_treatment:
-        'Preserve identity, anatomy, expression, and count; confine offsets to the same silhouette so they never read as another pose or duplicate subject.',
-      color_and_tone:
-        'Pair quiet base values with abrupt saturated patches attached to existing shapes; keep the requested palette and contrast.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with soft cute designs, tracksuits and band gear, dissolving into wild style switches when anxious. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Soft pink, live-house blue and sudden glitch colors.',
       lighting_and_shadow:
-        'Use clean flat shadows and hard-edged color blocks; follow the given light without adding a burst.',
-      texture_and_material:
-        'Add sparse pixel-like breaks and misregistered pigment edges over smooth fills; preserve the surface material beneath them.',
+        'Live-house stage lights and comedic glitch flashes, lit the way Bocchi the Rock! CloverWorks lights its scenes.',
+      texture_and_material: 'Clean cel mixed with clay, photo and pixel-art gag inserts.',
       camera_and_composition:
-        'Keep the supplied crop, viewpoint, scale, layout, and count; vary edge density locally without creating panels, insets, or objects.',
-      atmosphere_and_mood:
-        'Retain the requested emotional state; graphic interruptions are a drawing treatment, not an instruction to prescribe a new emotion.',
+        'Anxiety close-ups and live performance wides, framed the way Bocchi the Rock! CloverWorks composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with anxious cathartic comedy.',
       rendering_and_quality:
-        'Keep the base drawing clean and readable beneath controlled edge breaks; avoid marks resembling text, interface elements, or watermarks.',
-      key_features:
-        'Broken contour segments; slight color registration offsets; sparse pixel-like marks; saturated patches against stable base values.',
+        'Inventive CloverWorks frame with mixed-media gags, in the recognizable hand of Bocchi the Rock! CloverWorks.',
+      key_features: 'Bocchi mixed media; anxiety gags; live houses; catharsis',
       creative_brief:
-        'Layer controlled misregistration over a legible drawing, keeping each offset attached to an existing form. Preserve subject, action, count, camera, and mood; add no text or props. Use it as a reusable look on any subject.',
+        "CloverWorks Bocchi the Rock! look (2022): wild mixed-media anxiety gags, style switches into clay, photos and pixel art, and cathartic live-house rock. Carry it through Bocchi mixed media, anxiety gags, live houses, catharsis. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-089',
-    name: 'Soft-Surreal Deadpan Drift',
+    name: 'Kiyohiko Azuma - Soft-Surreal Deadpan Drift',
+    displayName: 'Kiyohiko Azuma - Soft-Surreal Deadpan Drift',
+    styleAnchors: ['Kiyohiko Azuma - Soft-Surreal Deadpan Drift'],
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Smooth ink contours drift by a fraction at selected edges, while main forms and shadow masses remain calm, complete, and legible.',
+        'Kiyohiko Azuma Azumanga Daioh and Yotsuba&! look: clean soft line, simple faces, deadpan surreal humor and gentle everyday wonder.',
       subject_treatment:
-        "Keep the user's exact forms, anatomy, pose, and count; allow a slight edge echo without warping proportions or duplicating a shape.",
-      color_and_tone:
-        "Use quiet middle values with a narrow cool or warm tint at the edges; honor the prompt's colors and avoid automatic desaturation.",
-      lighting_and_shadow:
-        'Keep light direction stable and shadows soft-edged; edge echoes must not read as a second light source or reflected object.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Azuma designs, simple faces, dot eyes and casual clothes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Soft pastels and clean white, true to the Kiyohiko Azuma palette.',
+      lighting_and_shadow: 'Soft everyday light, lit the way Kiyohiko Azuma lights its scenes.',
       texture_and_material:
-        'Use smooth matte fills with a few irregular boundary marks; do not apply the same distortion across every surface.',
+        'Clean simple four-panel manga line with light screentone and plenty of white space around figures.',
       camera_and_composition:
-        'Maintain framing, viewpoint, scale, and spacing; make slight dislocation a contour event, not a camera or layout change.',
-      atmosphere_and_mood:
-        'Preserve the requested emotion; quiet line drift may feel unusual without forcing deadpan humor or surreal content.',
+        'Deadpan still compositions, framed the way Kiyohiko Azuma composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with soft surreal deadpan.',
       rendering_and_quality:
-        'Keep silhouettes and focal details crisp; use small controlled edge variation against otherwise stable drawing.',
-      key_features:
-        'Calm continuous silhouettes; slight contour drift; soft shadow edges; localized boundary irregularity; stable interior forms.',
+        'Clean gentle comedy manga illustration, in the recognizable hand of Kiyohiko Azuma.',
+      key_features: 'Kiyohiko Azuma clean line; deadpan; everyday wonder',
       creative_brief:
-        'Introduce restrained contour drift while leaving shapes intact and readable. Keep subject, action, count, camera, and mood from the prompt; add no surreal object or duplicate. Use it as a reusable look on any subject.',
+        "Kiyohiko Azuma Azumanga Daioh and Yotsuba&! look: clean soft line, simple faces, deadpan surreal humor and gentle everyday wonder. Carry it through Kiyohiko Azuma clean line, deadpan, everyday wonder. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-203',
-    name: 'Horizon-Forward Youth Momentum',
+    name: 'A Place Further Than the Universe Madhouse - Horizon-Forward Youth Momentum',
+    displayName: 'A Place Further Than the Universe Madhouse - Horizon-Forward Youth Momentum',
+    styleAnchors: ['A Place Further Than the Universe Madhouse - Horizon-Forward Youth Momentum'],
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Tapered contours and broad clean gradients give existing forms forward visual direction, with bright edge accents following supplied pose or motion.',
+        'Madhouse A Place Further Than the Universe look (2018): vivid journey to Antarctica, icebergs and auroras, bright expressive faces and horizon-forward momentum.',
       subject_treatment:
-        'Preserve identity, body proportions, action, and count; direct line accents along movement already shown without changing the gesture.',
-      color_and_tone:
-        'Use clear high values and a limited bright accent against cooler or neutral mids; follow the requested hues.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with bright expressive designs, expedition parkas and determined faces. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Iceberg blue, aurora green, snow white and expedition orange.',
       lighting_and_shadow:
-        'Keep the stated light direction and place crisp highlights on existing edges; use smooth gradients without adding sunbeams.',
+        'Bright polar sunlight and aurora glow, lit the way A Place Further Than the Universe Madhouse lights its scenes.',
       texture_and_material:
-        'Keep surfaces clean with a few long brushlike strokes aligned to existing contours; add no atmospheric scenery.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.',
       camera_and_composition:
-        'Preserve framing, perspective, scale, and count; create momentum inside the original composition without changing crop or viewpoint.',
-      atmosphere_and_mood:
-        'Retain the requested mood; directional energy does not set the emotional tone.',
+        'Vast polar horizons and ship-deck compositions, framed the way A Place Further Than the Universe Madhouse composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with bright horizon-forward momentum.',
       rendering_and_quality:
-        'Keep gradients broad and controlled, contour ends sharp, and focal forms distinct from surrounding planes.',
-      key_features:
-        'Tapered directional contours; broad clean gradients; crisp edge accents; bright value openings; motion aligned to existing forms.',
+        'Vivid Madhouse journey frame, in the recognizable hand of A Place Further Than the Universe Madhouse.',
+      key_features: 'Antarctic journey; icebergs; auroras; momentum',
       creative_brief:
-        'Let directional linework and clear gradients follow movement already in the prompt. Preserve subject, action, count, camera, and mood; add no new motion or narrative beat. Use it as a reusable look on any subject.',
+        "Madhouse A Place Further Than the Universe look (2018): vivid journey to Antarctica, icebergs and auroras, bright expressive faces and horizon-forward momentum. Carry it through Antarctic journey, icebergs, auroras, momentum. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

@@ -5,1117 +5,1114 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP05-013',
-    name: 'Psychological Biomech Drama',
+    name: 'Mohiro Kitoh - Psychological Biomech Drama',
+    displayName: 'Mohiro Kitoh - Psychological Biomech Drama',
+    styleAnchors: ['Mohiro Kitoh - Psychological Biomech Drama'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Tapered anime contour joins organic curves to segmented engineered seams over compact cel planes.',
+        'Mohiro Kitoh manga look as in Bokurano and Narutaru: simple plain faces and thin clean lines set against enormous eerie biomechanical giants, cold detachment and psychological dread.',
       subject_treatment:
-        'Keep silhouette and proportions; segment only forms that support mechanical detail.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kitoh simplicity, plain small faces, thin bodies and ordinary clothes, dwarfed by vast strange machines. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Iron charcoal, mineral teal, muted ochre; three clear value bands and one warm accent.',
+        'Pale overcast greys, cold white and a single dull red in black-and-white manga tone.',
       lighting_and_shadow:
-        'One hard key, broad shadows, and narrow edge light only along existing contours.',
-      texture_and_material:
-        'Smooth cel fills with sparse etched seams and short hatch; no blanket noise.',
+        'Flat pale overcast light that makes the giants look uncanny and indifferent.',
+      texture_and_material: 'Thin clean pen lines, sparse screentone and huge empty sky spaces.',
       camera_and_composition:
-        'Respect camera; clipped diagonals and bounded negative space carry tension without added walls.',
-      atmosphere_and_mood:
-        'Interrupted edges and compressed spacing suggest pressure; the requested mood leads.',
+        'Tiny figures beneath colossal silent machines in wide empty cityscapes.',
+      atmosphere_and_mood: 'Keep the requested mood with cold psychological dread.',
       rendering_and_quality:
-        'Stable anatomy and crisp micro-detail, restrained cel bands, no gloss.',
-      key_features:
-        'Organic-mechanical contours, compact cel shadows, mineral teal, compressed negative space',
+        'Unsettling minimal manga illustration with colossal biomechanical scale.',
+      key_features: 'Mohiro Kitoh plain faces; colossal biomech giants; cold dread; empty skies',
       creative_brief:
-        'Apply a visual treatment centered on organic-mechanical contours, compact cel shadows, mineral teal, compressed negative space. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "Mohiro Kitoh manga look as in Bokurano and Narutaru: simple plain faces and thin clean lines set against enormous eerie biomechanical giants, cold detachment and psychological dread. Carry it through Mohiro Kitoh plain faces, colossal biomech giants, cold dread, empty skies. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-162',
     name: 'Sailor Moon - Moonlit Ribbon Justice',
+    displayName: 'Sailor Moon - Moonlit Ribbon Justice',
+    styleAnchors: ['Sailor Moon - Moonlit Ribbon Justice'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'blonde twin buns with a crescent moon tiara, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'Classic anime transformation-profile drawing uses fluid arcs, crisp cel panels, and jewel-bright accents; stages are conditional on an explicit sequence request.',
+        'Toei Sailor Moon anime look (1992) with Kazuko Tadano designs: long-legged nineties magical girls, sparkling transformation ribbons, moonlit Tokyo rooftops and pastel glittering cel.',
       subject_treatment:
-        'Preserve identity, anatomy, age, and count; only for an explicit transformation show requested stages and change only named elements.',
-      color_and_tone:
-        'Amethyst, ivory, cobalt, emerald, warm gold; compact jewel accents, no fixed costume palette.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Tadano nineties designs, long slender legs, big shining eyes and sailor-collar or ribboned costumes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Pastel pink, moon gold, navy night and sparkling white.',
       lighting_and_shadow:
-        'Halo-like edges and phased shadows only when the requested sequence or effect calls for them; otherwise match prompt light.',
+        'Moonlight halos, sparkle bursts and transformation glows, lit the way Sailor Moon lights its scenes.',
       texture_and_material:
-        'Smooth cel color with translucent motion accents; add no ribbons, particles, symbols, or effects unless requested.',
-      camera_and_composition:
-        'Keep crop and viewpoint; show multiple stages only when asked, preserving sequence order and identity.',
-      atmosphere_and_mood:
-        'Use ceremonial lift only when the requested action supports it; otherwise retain prompt mood.',
-      rendering_and_quality:
-        'Stable outlines, distinct requested phases, clear materials, sparse effects, no lettering.',
-      key_features:
-        'Fluid transformation arcs when requested, continuous subject identity, jewel accents, clean cel phases',
+        'Late analog hand-painted cel over painted backgrounds, with soft film grain and gentle cel edge softness.',
+      camera_and_composition: 'Transformation spins and heroic rooftop poses under the moon.',
+      atmosphere_and_mood: 'Keep the requested mood with sparkling moonlit justice.',
+      rendering_and_quality: 'Glittering early-1990s Toei magical girl frame with moonlit sparkle.',
+      key_features: 'Sailor Moon nineties cel; Tadano designs; ribbons; moonlit rooftops',
       creative_brief:
-        'Apply a transformation-profile layer centered on fluid arcs, jewel accents, and clean cel phases. Preserve the exact subject, action, count, age, setting, camera, and mood. Only when a transformation sequence is explicitly requested, keep one identity through the requested stages and change only elements named in the prompt; otherwise draw one requested state. Add no unrequested costume, accessory, emblem, effect, place, prop, or text. Use it as a reusable look on any subject.',
+        "Toei Sailor Moon anime look (1992) with Kazuko Tadano designs: long-legged nineties magical girls, sparkling transformation ribbons, moonlit Tokyo rooftops and pastel glittering cel. Carry it through Sailor Moon nineties cel, Tadano designs, ribbons, moonlit rooftops. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-168',
     name: 'Neon Genesis Evangelion - Red Alert Psychological Collapse',
+    displayName: 'Neon Genesis Evangelion - Red Alert Psychological Collapse',
+    styleAnchors: ['Neon Genesis Evangelion - Red Alert Psychological Collapse'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a purple and green horned biomech, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'High-contrast anime cel illustration cuts silhouettes sharply and uses sparse technical accents and controlled red marks.',
+        'Gainax Neon Genesis Evangelion TV look (1995): Yoshiyuki Sadamoto designs, long static shots, red emergency lighting, power lines and psychological collapse into stark abstract frames.',
       subject_treatment:
-        'Keep subject and proportions; use angular articulation without adding blasts, crosses, interfaces, or props.',
-      color_and_tone: 'Charcoal, blue gray, bone; signal red is a small focal accent.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Sadamoto designs, slim bodies, big anxious eyes and plain clothes or plugsuit-like suits. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Emergency red, sunset orange, purple and cold grey.',
       lighting_and_shadow:
-        'Hard directional key, broken shadow blocks, sparse highlights, no screen glow.',
+        'Red emergency light and harsh sunset silhouettes, lit the way Neon Genesis Evangelion lights its scenes.',
       texture_and_material:
-        'Clean flat cels with fine hatch in selected dark planes; no grid overlay.',
-      camera_and_composition: 'Respect camera; pressure comes from compressed spacing, not panels.',
-      atmosphere_and_mood: 'Constrained visual pressure only when it suits the requested tone.',
+        'Late analog hand-painted cel over painted backgrounds, with soft film grain and gentle cel edge softness.',
+      camera_and_composition: 'Long static shots, power lines and stark silhouettes.',
+      atmosphere_and_mood: 'Keep the requested mood with anxious psychological collapse.',
       rendering_and_quality:
-        'Crisp separation, readable mids, sparse red, precise lines, no fake UI text.',
-      key_features:
-        'Hard-cut silhouette, compressed negative space, sparse signal red, precise cel shadows',
+        'Iconic mid-1990s Gainax frame with psychological stillness, in the recognizable hand of Neon Genesis Evangelion.',
+      key_features: 'Evangelion red alerts; Sadamoto designs; long static shots; power lines',
       creative_brief:
-        'Apply a visual treatment centered on hard-cut silhouette, compressed negative space, sparse signal red, precise cel shadows. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "Gainax Neon Genesis Evangelion TV look (1995): Yoshiyuki Sadamoto designs, long static shots, red emergency lighting, power lines and psychological collapse into stark abstract frames. Carry it through Evangelion red alerts, Sadamoto designs, long static shots, power lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-171',
     name: 'Slayers - Arcane Chaos Roadtrip',
+    displayName: 'Slayers - Arcane Chaos Roadtrip',
+    styleAnchors: ['Slayers - Arcane Chaos Roadtrip'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a red-haired sorceress with shoulder spikes and a dragon slave spell, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'Elastic anime contour swings between broad rounded strokes and quick tapered marks over compact cel shadows.',
+        'J.C.Staff Slayers look (1995) with Rui Araizumi designs: bright nineties fantasy comedy, huge explosive spells, super-deformed gags and colorful roadside inns.',
       subject_treatment:
-        'Keep form and action; exaggerate only existing expression or movement, never add spells or flames.',
-      color_and_tone:
-        'Vermilion, cobalt, sunlit yellow, charcoal; distinct blocks and neutral mids.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Araizumi designs, big eyes, wild hair, capes, shoulder pads and fantasy adventurer gear. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Bright red, spell gold, sky blue and forest green.',
       lighting_and_shadow:
-        'Separate warm and cool planes with simple light; no flame-shaped lighting unless present.',
+        'Explosive spell light and cheerful fantasy daylight, lit the way Slayers lights its scenes.',
       texture_and_material:
-        'Smooth flat fills, selective dry brush, radial marks only for requested effects.',
+        'Late analog hand-painted cel over painted backgrounds, with soft film grain and gentle cel edge softness.',
       camera_and_composition:
-        'Preserve crop; off-center energy follows only motion already in the prompt.',
-      atmosphere_and_mood: 'Comic chaos only when requested; preserve any other emotional tone.',
+        'Explosive comedic wides and super-deformed reaction shots, framed the way Slayers composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with chaotic arcane comedy.',
       rendering_and_quality:
-        'Separated forms, local effects, no particle noise or smeared shadows.',
-      key_features:
-        'Elastic contour, warm-cool blocks, quick tapered marks, effects tied to requested action',
+        'Lively mid-1990s fantasy comedy television frame, in the recognizable hand of Slayers.',
+      key_features: 'Slayers explosions; Araizumi designs; SD gags; nineties fantasy',
       creative_brief:
-        'Apply a visual treatment centered on elastic contour, warm-cool blocks, quick tapered marks, effects tied to requested action. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "J.C.Staff Slayers look (1995) with Rui Araizumi designs: bright nineties fantasy comedy, huge explosive spells, super-deformed gags and colorful roadside inns. Carry it through Slayers explosions, Araizumi designs, SD gags, nineties fantasy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-172',
-    name: 'The Vision of Escaflowne - Tarot Mecha Fantasy',
+    name: 'The Vision of Escaflowne Film - Tarot Mecha Fantasy',
+    displayName: 'The Vision of Escaflowne Film - Tarot Mecha Fantasy',
+    styleAnchors: ['The Vision of Escaflowne Film - Tarot Mecha Fantasy'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a white dragon-shaped mech with a sword, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'Anime linework pairs fine engraved contours with crisp beveled planes and measured geometry.',
+        'BONES and Sunrise Escaflowne film look (2000): darker painterly fantasy, engraved armored guymelefs, tarot symbolism and moody candlelit medieval sky kingdoms.',
       subject_treatment:
-        'Retain subject and materials; mechanical detail only on shown mechanisms, no divination symbols by default.',
-      color_and_tone:
-        'Slate, steel blue, muted gold, plum, warm neutral; metallic accents localized.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with sharper film designs, long faces, long hair and medieval armor or robes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Deep crimson, brass, midnight blue and candle gold.',
       lighting_and_shadow:
-        'Precise edge highlights and firm cool shadows; gleam only on actual metal.',
+        'Candlelit interiors and moody dusk skies, lit the way The Vision of Escaflowne Film lights its scenes.',
       texture_and_material:
-        'Restrained crosshatch and grain within selected planes; no synthetic metal texture.',
+        'Painterly film cel with engraved mechanical detail, with the surface finish of The Vision of Escaflowne Film.',
       camera_and_composition:
-        'Keep viewpoint; balance existing forms with geometric space, no skyline or symbols.',
-      atmosphere_and_mood:
-        'Suspended tension only where prompt supports it; preserve the requested tone.',
-      rendering_and_quality:
-        'Crisp edges, controlled facets, sparse line detail, no fake inscriptions.',
-      key_features:
-        'Engraved contour, beveled value planes, localized metal accents, restrained geometry',
+        'Moody cathedral compositions and soaring sky battles, framed the way The Vision of Escaflowne Film composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with dark tarot destiny.',
+      rendering_and_quality: 'Painterly 2000 feature frame with engraved mecha fantasy.',
+      key_features: 'Escaflowne film; engraved guymelefs; tarot symbolism; candlelight',
       creative_brief:
-        'Apply a visual treatment centered on engraved contour, beveled value planes, localized metal accents, restrained geometry. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "BONES and Sunrise Escaflowne film look (2000): darker painterly fantasy, engraved armored guymelefs, tarot symbolism and moody candlelit medieval sky kingdoms. Carry it through Escaflowne film, engraved guymelefs, tarot symbolism, candlelight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-176',
-    name: 'Magic Knight Rayearth - Jewel Armor Quest',
+    name: 'CLAMP Rayearth - Jewel Armor Quest',
+    displayName: 'CLAMP Rayearth - Jewel Armor Quest',
+    styleAnchors: ['CLAMP Rayearth - Jewel Armor Quest'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Bold anime contour surrounds polygonal cel facets, with jewel-like accents confined to existing forms.',
+        'CLAMP Magic Knight Rayearth manga art: elegant elongated figures, huge luminous eyes, ornate jeweled armor, flowing hair and decorative fantasy framing.',
       subject_treatment:
-        'Keep subject, anatomy, costume, and count; facet armor or surfaces only when requested.',
-      color_and_tone: 'Cerulean, turquoise, amber, muted coral, deep blue; facets clarify values.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with CLAMP proportions, very long limbs, huge luminous eyes, flowing hair and ornate jeweled armor. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Ruby, sapphire, emerald and gold with soft pastel washes.',
       lighting_and_shadow:
-        'Bright broad illumination and hard bevel highlights; add no magical light source.',
+        'Gem light and soft decorative glows, lit the way CLAMP Rayearth lights its scenes.',
       texture_and_material:
-        'Smooth cel planes with small facets; no runes, jewels, or effects unless requested.',
+        'Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.',
       camera_and_composition:
-        'Respect framing; diagonals may follow motion but never force a quest pose or team.',
-      atmosphere_and_mood:
-        'Forward momentum only when the specified action is dynamic; otherwise retain mood.',
+        'Elegant vertical compositions and ornate framing, framed the way CLAMP Rayearth composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with ornate heroic quest.',
       rendering_and_quality:
-        'Bold outlines, few shadow bands, legible facets, localized highlights.',
-      key_features:
-        'Polygonal cel facets, bold outline, cerulean-amber contrast, accents on existing surfaces',
+        'Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.',
+      key_features: 'CLAMP elongation; jeweled armor; luminous eyes; ornate framing',
       creative_brief:
-        'Apply a visual treatment centered on polygonal cel facets, bold outline, cerulean-amber contrast, accents on existing surfaces. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "CLAMP Magic Knight Rayearth manga art: elegant elongated figures, huge luminous eyes, ornate jeweled armor, flowing hair and decorative fantasy framing. Carry it through CLAMP elongation, jeweled armor, luminous eyes, ornate framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-177',
     name: 'Martian Successor Nadesico - Cheerful Bridge-Deck Mecha',
+    displayName: 'Martian Successor Nadesico - Cheerful Bridge-Deck Mecha',
+    styleAnchors: ['Martian Successor Nadesico - Cheerful Bridge-Deck Mecha'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Precise anime line uses crisp mechanical geometry where relevant and clean silhouette hierarchy.',
+        'Xebec Martian Successor Nadesico look (1996) with Keiji Goto designs: cheerful parody space opera, colorful bridge crews, super robot homage and nineties comedy.',
       subject_treatment:
-        'Preserve forms, group size, and action; render machines only as supplied, add no bridge or interface.',
-      color_and_tone: 'Navy, warm white, orange, teal in distinct fields with neutral separation.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Goto designs, big bright eyes, colorful hair and crisp starship uniforms. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Bright bridge white, mecha pink, navy space and yellow.',
       lighting_and_shadow:
-        'Broad cool fill and small warm edge accents; no control-panel glow or new source.',
+        'Bright bridge lighting and explosion flashes, lit the way Martian Successor Nadesico lights its scenes.',
       texture_and_material:
-        'Smooth cel surfaces; parallel hatch only on hard surfaces already depicted.',
+        'Late analog hand-painted cel over painted backgrounds, with soft film grain and gentle cel edge softness.',
       camera_and_composition:
-        'Hold camera and count; rhythm comes from existing scale and spacing.',
-      atmosphere_and_mood:
-        'Playful cadence only if requested; preserve serious or quiet moods equally.',
+        'Crowded bridge compositions and mecha battle wides, framed the way Martian Successor Nadesico composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with cheerful parody spirit.',
       rendering_and_quality:
-        'Exact contours, clean flats, legible hard surfaces, no UI or fake text.',
-      key_features:
-        'Crisp mechanical line when relevant, navy-orange balance, smooth flats, spacing-led group rhythm',
+        'Bright mid-1990s space comedy television frame, in the recognizable hand of Martian Successor Nadesico.',
+      key_features: 'Nadesico bridge crew; Keiji Goto designs; parody mecha; nineties comedy',
       creative_brief:
-        'Apply a visual treatment centered on crisp mechanical line when relevant, navy-orange balance, smooth flats, spacing-led group rhythm. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "Xebec Martian Successor Nadesico look (1996) with Keiji Goto designs: cheerful parody space opera, colorful bridge crews, super robot homage and nineties comedy. Carry it through Nadesico bridge crew, Keiji Goto designs, parody mecha, nineties comedy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-178',
-    name: 'Blue Seed - Mythic Tokyo Purge',
+    name: 'Yuzo Takada - Mythic Tokyo Purge',
+    displayName: 'Yuzo Takada - Mythic Tokyo Purge',
+    styleAnchors: ['Yuzo Takada - Mythic Tokyo Purge'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Inked anime forms combine organic contour flow, abrupt cross-lines, and separated color shapes.',
+        'Yuzo Takada Blue Seed look: nineties Japanese mythology horror-action in Tokyo, plant-like monsters, shrine maidens and soft rounded Takada character designs.',
       subject_treatment:
-        'Preserve the depicted subject; fragment marks only forms that already contain that structure.',
-      color_and_tone:
-        'Pine green, blue green, burnt vermilion, parchment, charcoal; warm note compact.',
-      lighting_and_shadow:
-        'Contained saturated accents over neutral shadows; imply no city, alarm, or night.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Takada designs, round faces, big eyes, work uniforms and shrine clothes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Monster green, blood-red accents, Tokyo grey and shrine white.',
+      lighting_and_shadow: 'Eerie green monster glow and city night lights.',
       texture_and_material:
-        'Irregular hatch on existing organic surfaces, smooth fills elsewhere; keep treatments distinct.',
-      camera_and_composition:
-        'Respect layout; directional negative space within existing forms, no scenery.',
-      atmosphere_and_mood:
-        'Contour contrast suggests unease only when fitting; no threat narrative.',
+        'Late analog hand-painted cel over painted backgrounds, with soft film grain and gentle cel edge softness.',
+      camera_and_composition: 'Monster reveals in Tokyo streets and shrine interiors.',
+      atmosphere_and_mood: 'Keep the requested mood with mythic urban horror.',
       rendering_and_quality:
-        'Local distortion, readable silhouettes, purposeful marks, no blanket fragmentation.',
-      key_features:
-        'Organic-angular contour, pine-vermilion palette, localized hatch, controlled negative space',
+        'Mid-1990s horror-action television frame, in the recognizable hand of Yuzo Takada.',
+      key_features: 'Yuzo Takada designs; Japanese myth; plant monsters; Tokyo',
       creative_brief:
-        'Apply a visual treatment centered on organic-angular contour, pine-vermilion palette, localized hatch, controlled negative space. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "Yuzo Takada Blue Seed look: nineties Japanese mythology horror-action in Tokyo, plant-like monsters, shrine maidens and soft rounded Takada character designs. Carry it through Yuzo Takada designs, Japanese myth, plant monsters, Tokyo. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-019',
-    name: 'Wired Existential Glitch',
+    name: 'Yoshitoshi ABe - Wired Existential Glitch',
+    displayName: 'Yoshitoshi ABe - Wired Existential Glitch',
+    styleAnchors: ['Yoshitoshi ABe - Wired Existential Glitch'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Anime ink uses deliberate signal breaks, slight contour offsets, and small blank gaps.',
+        'Yoshitoshi ABe illustration look as in his art books: soft thin pencil-like lines, washed-out pastel color, power lines and quiet melancholy figures dissolving into digital noise.',
       subject_treatment:
-        'Keep the original silhouette; displace only a thin local edge, never duplicate a subject.',
-      color_and_tone:
-        'Carbon black, steel blue, pale graphite, with sparse cyan or vermilion signal accents.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with ABe designs, small quiet faces, short hair and plain clothes, rendered with soft thin lines. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Washed-out pastel, power-line grey, faint pink and digital cyan.',
       lighting_and_shadow:
-        'Level cool fill, isolated bright edges, and simple shadows without invented light sources.',
-      texture_and_material:
-        'Fine scanline-like grain and broken strokes stay local; large planes remain clean.',
-      camera_and_composition:
-        'Keep crop and viewpoint; asymmetric gaps suggest interference without panels or scenery.',
-      atmosphere_and_mood: 'Quiet interruption creates unease only when that tone is requested.',
+        'Pale dusk light with glitch artifacts, lit the way Yoshitoshi ABe lights its scenes.',
+      texture_and_material: 'Soft pencil-like lines, watercolor washes and digital noise.',
+      camera_and_composition: 'Lonely figures under power lines and empty skies.',
+      atmosphere_and_mood: 'Keep the requested mood with quiet existential drift.',
       rendering_and_quality:
-        'Readable forms, sparse signal artifacts, and no fake text or full-frame static.',
-      key_features:
-        'Broken contour rhythm, local scanline grain, cyan signal accents, asymmetric pauses',
+        'Soft melancholy digital illustration with glitch artifacts, in the recognizable hand of Yoshitoshi ABe.',
+      key_features: 'Yoshitoshi ABe soft line; power lines; pastel melancholy; glitch',
       creative_brief:
-        'Apply a visual treatment centered on broken contour rhythm, local scanline grain, cyan signal accents, asymmetric pauses. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "Yoshitoshi ABe illustration look as in his art books: soft thin pencil-like lines, washed-out pastel color, power lines and quiet melancholy figures dissolving into digital noise. Carry it through Yoshitoshi ABe soft line, power lines, pastel melancholy, glitch. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-020',
-    name: 'Dream Card Enchanter',
+    name: 'Kazuki Takahashi - Dream Card Enchanter',
+    displayName: 'Kazuki Takahashi - Dream Card Enchanter',
+    styleAnchors: ['Kazuki Takahashi - Dream Card Enchanter'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'existing card-game monsters, millennium puzzle pendant, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Polished anime cel drawing combines continuous curves, emblem-like geometry, and soft peripheral glow.',
+        'Kazuki Takahashi manga look: sharp angular faces, spiky dramatic hair, intense card duels and colossal original monsters summoned from glowing cards.',
       subject_treatment:
-        'Keep the prompted form; use fine internal motifs only on details already present.',
-      color_and_tone:
-        'Warm ivory, lavender, lapis, pale yellow; strong dark anchor, restrained pastel notes.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Takahashi designs, angular jaws, intense eyes, spiky hair and dramatic coats. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Dramatic purple, gold, black and glowing card light.',
       lighting_and_shadow:
-        'Broad soft highlight beside crisp cel shadows; bloom only on existing luminous details.',
-      texture_and_material:
-        'Smooth fills, translucent flecks, and curved marks; no added cards, ribbons, or particles.',
+        'Glowing card light and dramatic backlit summons, lit the way Kazuki Takahashi lights its scenes.',
+      texture_and_material: 'Sharp inked lines, screentone and dramatic effect lines.',
       camera_and_composition:
-        'Respect crop; existing forms may follow a calm radial rhythm without card framing.',
-      atmosphere_and_mood:
-        'Delicate wonder comes from ornament only when it fits the requested mood.',
+        'Low dramatic angles with giant summoned creatures, framed the way Kazuki Takahashi composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with dramatic summoning intensity.',
       rendering_and_quality:
-        'Crisp silhouettes, restrained glow, legible ornament, clean flat color.',
-      key_features: 'Curved emblem line, soft local bloom, precise ornament, lapis and ivory',
+        'Dramatic card-battle manga illustration, in the recognizable hand of Kazuki Takahashi.',
+      key_features: 'Kazuki Takahashi angles; spiky hair; card summons; giant monsters',
       creative_brief:
-        'Apply a visual treatment centered on curved emblem line, soft local bloom, precise ornament, lapis and ivory. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "Kazuki Takahashi manga look: sharp angular faces, spiky dramatic hair, intense card duels and colossal original monsters summoned from glowing cards. Carry it through Kazuki Takahashi angles, spiky hair, card summons, giant monsters. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-183',
     name: 'Kimi ni Todoke - Shy Hallway Bloom',
+    displayName: 'Kimi ni Todoke - Shy Hallway Bloom',
+    styleAnchors: ['Kimi ni Todoke - Shy Hallway Bloom'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Fine anime contour favors rounded transitions, restrained interior marks, and soft cel shading.',
+        'Karuho Shiina Kimi ni Todoke manga look: gentle sparkling shojo, soft flower-filled backgrounds, blushing shy faces and delicate lines.',
       subject_treatment:
-        'Preserve subject and count; detail visible faces only, never require a pair or hallway.',
-      color_and_tone:
-        'Pale aqua, clear blue, cream, graphite, restrained coral; natural cheeks and shadows.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Shiina designs, soft faces, long straight hair, big gentle eyes and simple clothes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Soft pinks, sakura white and gentle pastel blue.',
       lighting_and_shadow:
-        'Even diffuse illumination and short soft shadows; imply no room or time.',
+        'Soft glowing light with sparkles, lit the way Kimi ni Todoke lights its scenes.',
       texture_and_material:
-        'Smooth cel fill with slight wash at selected edges; minimal surface chatter.',
+        'Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.',
       camera_and_composition:
-        'Maintain framing; leave measured air around focal shapes only where layout allows.',
-      atmosphere_and_mood:
-        "Gentleness through line softness only when compatible with the prompt's mood.",
-      rendering_and_quality: 'Clean edge hierarchy, low-noise detail, stable features, no bloom.',
-      key_features:
-        'Fine rounded contour, pale aqua-blue, soft cel transitions, measured open space',
+        'Gentle close-ups and hallway compositions, framed the way Kimi ni Todoke composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with shy blooming warmth.',
+      rendering_and_quality:
+        'Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.',
+      key_features: 'Karuho Shiina softness; blushing faces; flower backgrounds; sparkles',
       creative_brief:
-        'Apply a visual treatment centered on fine rounded contour, pale aqua-blue, soft cel transitions, measured open space. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "Karuho Shiina Kimi ni Todoke manga look: gentle sparkling shojo, soft flower-filled backgrounds, blushing shy faces and delicate lines. Carry it through Karuho Shiina softness, blushing faces, flower backgrounds, sparkles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-190',
     name: 'Ao Haru Ride - Clean Uniform Reunion Ache',
+    displayName: 'Ao Haru Ride - Clean Uniform Reunion Ache',
+    styleAnchors: ['Ao Haru Ride - Clean Uniform Reunion Ache'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Contemporary anime line is smooth and precise, with modest weight shifts and broad quiet values.',
+        'Io Sakisaka Ao Haru Ride manga look: clean crisp lines, powder-blue melancholy, handsome understated faces and bittersweet reunions.',
       subject_treatment:
-        'Preserve identity, clothing, expression, pose; restrained detail without imposing a uniform.',
-      color_and_tone: 'Powder blue, charcoal, cream, compact ochre, neutral mids.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Sakisaka designs, clean faces, neat hair and simple uniforms or casual clothes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Powder blue, soft grey and gentle white, true to the Ao Haru Ride palette.',
       lighting_and_shadow:
-        'Broad neutral illumination and soft shadows; no sunrise or artificial source.',
+        'Soft dusk light with gentle glow, lit the way Ao Haru Ride lights its scenes.',
       texture_and_material:
-        'Matte surfaces, clean cel fills, slight paper softness; no lens blur or gloss.',
+        'Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.',
       camera_and_composition:
-        'Respect crop; open spacing only within requested arrangement, no forced close-up or pair.',
-      atmosphere_and_mood: 'Stay calm or intense as prompted; no reunion or romantic tension.',
-      rendering_and_quality: 'Two-to-three-band values, crisp contours, stable small details.',
-      key_features:
-        'Smooth precise contour, powder-blue neutrals, matte cel planes, context-led open spacing',
+        'Quiet reunion compositions and close-ups, framed the way Ao Haru Ride composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with bittersweet reunion ache.',
+      rendering_and_quality:
+        'Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.',
+      key_features: 'Io Sakisaka clean line; powder blue; bittersweet reunions',
       creative_brief:
-        'Apply a visual treatment centered on smooth precise contour, powder-blue neutrals, matte cel planes, context-led open spacing. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "Io Sakisaka Ao Haru Ride manga look: clean crisp lines, powder-blue melancholy, handsome understated faces and bittersweet reunions. Carry it through Io Sakisaka clean line, powder blue, bittersweet reunions. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-181',
     name: 'Fruits Basket - Zodiac Warmth and Grief',
+    displayName: 'Fruits Basket - Zodiac Warmth and Grief',
+    styleAnchors: ['Fruits Basket - Zodiac Warmth and Grief'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a girl with long brown hair and a pink hat among zodiac boys, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'Gentle anime cel drawing uses rounded fine contours, understated shadows, and open focal detail.',
+        'Natsuki Takaya Fruits Basket manga look: gentle rounded faces with big eyes, soft sad smiles, zodiac animal motifs and warm grief.',
       subject_treatment:
-        'Preserve subject, action, count; soften requested edges without adding animals, symbols, or embraces.',
-      color_and_tone:
-        'Warm ochre, sky blue, moss green, cream, brick red; balance warm and cool mids.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Takaya designs, round faces, big expressive eyes and simple cozy clothes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Warm peach, soft green, gentle brown and pastel.',
       lighting_and_shadow:
-        'Broad gentle light and low-contrast shadows; neutral unless prompt supplies a source.',
+        'Soft warm household light, lit the way Fruits Basket lights its scenes.',
       texture_and_material:
-        'Light pigment wash and fine pencil-like contour; no seasonal debris or sparkle.',
+        'Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.',
       camera_and_composition:
-        'Maintain composition; overlaps and closeness follow only requested relationships.',
-      atmosphere_and_mood:
-        'Compassion or grief only when present; softness is rendering, not plot.',
+        'Warm family compositions and tearful close-ups, framed the way Fruits Basket composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with warm tender grief.',
       rendering_and_quality:
-        'Stable anatomy, delicate contours, distinct mids, no haze or oversoften.',
-      key_features:
-        'Rounded fine contour, warm-cool values, subtle wash, closeness only when requested',
+        'Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.',
+      key_features: 'Natsuki Takaya warmth; zodiac motifs; soft sad smiles',
       creative_brief:
-        'Apply a visual treatment centered on rounded fine contour, warm-cool values, subtle wash, closeness only when requested. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "Natsuki Takaya Fruits Basket manga look: gentle rounded faces with big eyes, soft sad smiles, zodiac animal motifs and warm grief. Carry it through Natsuki Takaya warmth, zodiac motifs, soft sad smiles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-182',
     name: 'Nana - Black-Lace Apartment Heartbreak',
+    displayName: 'Nana - Black-Lace Apartment Heartbreak',
+    styleAnchors: ['Nana - Black-Lace Apartment Heartbreak'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a punk singer with a spiked choker and black lipstick named character, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'Expressive anime ink alternates dense black shapes with fine fashion-illustration strokes and edge accents.',
+        'Ai Yazawa Nana manga look: fashion-illustration elegance, long slender bodies, punk and Vivienne-style fashion, smoky apartments and heartbreak.',
       subject_treatment:
-        'Keep identity, pose, clothing; detail actual fabric and faces without adding a performer or companion.',
-      color_and_tone:
-        'Black, smoke violet, ivory, oxblood, cold blue; separate deep values from material mids.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yazawa designs, tall slender bodies, long legs, heavy eyeliner and fashionable punk outfits. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Black ink with grey tone and occasional crimson.',
       lighting_and_shadow:
-        'Narrow warm highlights against cool shadows only where prompt lighting supports them.',
+        'Smoky apartment light and night city glow, lit the way Nana lights its scenes.',
       texture_and_material:
-        'Velvet or lace only on present materials; otherwise matte ink and sparse dry brush.',
+        'Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.',
       camera_and_composition:
-        'Respect camera and count; balance one focal area with open space, no interior setting.',
-      atmosphere_and_mood:
-        'Intimate tension only when requested; no automatic heartbreak, night, or confrontation.',
+        'Fashion-editorial compositions and emotional close-ups, framed the way Nana composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with aching punk heartbreak.',
       rendering_and_quality:
-        'Control blacks with thin highlights and clear mids; no gritty smears or costume injection.',
-      key_features:
-        'Dense expressive blacks, smoke-violet mids, selective fabric detail, precise highlights',
+        'Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.',
+      key_features: 'Ai Yazawa fashion elegance; punk; smoky apartments; heartbreak',
       creative_brief:
-        'Apply a visual treatment centered on dense expressive blacks, smoke-violet mids, selective fabric detail, precise highlights. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "Ai Yazawa Nana manga look: fashion-illustration elegance, long slender bodies, punk and Vivienne-style fashion, smoky apartments and heartbreak. Carry it through Ai Yazawa fashion elegance, punk, smoky apartments, heartbreak. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-184',
     name: 'Ouran High School Host Club - Rose-Cloud Flirt Theater',
+    displayName: 'Ouran High School Host Club - Rose-Cloud Flirt Theater',
+    styleAnchors: ['Ouran High School Host Club - Rose-Cloud Flirt Theater'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Refined anime outlines and polished cel planes use small ornamental accents and clean graphic timing.',
-      subject_treatment: 'Retain subject and wardrobe; decorate only existing trim and surfaces.',
-      color_and_tone: 'Ivory, dark teal, gilded ochre, brick red; warm palette without pink wash.',
+        'Bisco Hatori Ouran manga look: sparkling bishonen, rose clouds, elegant academy salons and exaggerated comedic reactions.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hatori designs, elegant faces, sparkling eyes and tailored suits. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        'Rose pink, gold, white and pastel, true to the Ouran High School Host Club palette.',
       lighting_and_shadow:
-        'Broad even illumination with one crisp accent; add no spotlight or artificial glow.',
+        'Sparkling glow and rose light, lit the way Ouran High School Host Club lights its scenes.',
       texture_and_material:
-        'Smooth opaque surfaces; bead-like details only on materials already shown.',
+        'Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.',
       camera_and_composition:
-        'Respect camera and count; balance existing forms without a set or host cast.',
-      atmosphere_and_mood:
-        'Buoyant elegance only when requested; no automatic flirtation or comedy.',
+        'Posed salon compositions and comedy panels, framed the way Ouran High School Host Club composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with flirty comedic theater.',
       rendering_and_quality:
-        'Precise edges, local decoration, uncluttered values, no decorative clouds.',
-      key_features:
-        'Refined cel polish, ivory-teal contrast, local trim detail, clean graphic timing',
+        'Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.',
+      key_features: 'Bisco Hatori sparkle; rose clouds; bishonen; comedy',
       creative_brief:
-        'Apply a visual treatment centered on refined cel polish, ivory-teal contrast, local trim detail, clean graphic timing. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "Bisco Hatori Ouran manga look: sparkling bishonen, rose clouds, elegant academy salons and exaggerated comedic reactions. Carry it through Bisco Hatori sparkle, rose clouds, bishonen, comedy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-185',
     name: 'Paradise Kiss - Runway Heartbreak Chic',
+    displayName: 'Paradise Kiss - Runway Heartbreak Chic',
+    styleAnchors: ['Paradise Kiss - Runway Heartbreak Chic'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Fashion-illustration anime line combines long angular strokes, crisp silhouette cuts, and narrow seam detail.',
+        'Ai Yazawa Paradise Kiss look: high fashion shojo, runway glamour, hand-made gowns, stylish designers and chic heartbreak.',
       subject_treatment:
-        'Keep figure, garment, and pose; draw seams only on clothing the prompt supplies.',
-      color_and_tone:
-        'Black, electric teal, acid lime, muted violet, silver; bright planes stay selective.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yazawa designs, tall models, long legs and elaborate fashion. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Black, white, gold and runway pastels, true to the Paradise Kiss palette.',
       lighting_and_shadow:
-        'Hard specular accents against matte shadows; reflections only on supporting surfaces.',
+        'Runway spotlights and glamorous glow, lit the way Paradise Kiss lights its scenes.',
       texture_and_material:
-        'Fine stitches on existing textiles and matte treatment elsewhere; no wardrobe substitution.',
+        'Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.',
       camera_and_composition:
-        'Preserve crop; diagonal silhouette rhythm only where requested gesture allows.',
-      atmosphere_and_mood:
-        'Let line contrast suggest elegance or abrasion without imposing a runway scene.',
+        'Fashion runway compositions and close-ups, framed the way Paradise Kiss composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with chic runway heartbreak.',
       rendering_and_quality:
-        'Sharp edges, thin accents, controlled reflectance, no all-over gloss.',
-      key_features:
-        'Angular editorial line, selective stitch detail, electric accents, matte-gloss contrast',
+        'Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.',
+      key_features: 'Paradise Kiss fashion; runway glamour; tall models; chic',
       creative_brief:
-        'Apply a visual treatment centered on angular editorial line, selective stitch detail, electric accents, matte-gloss contrast. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "Ai Yazawa Paradise Kiss look: high fashion shojo, runway glamour, hand-made gowns, stylish designers and chic heartbreak. Carry it through Paradise Kiss fashion, runway glamour, tall models, chic. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-186',
     name: 'Lovely Complex - Height-Gap Comedy Romance',
+    displayName: 'Lovely Complex - Height-Gap Comedy Romance',
+    styleAnchors: ['Lovely Complex - Height-Gap Comedy Romance'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Comedic anime drawing varies contour weight and spacing for readable beats without changing scale.',
+        'Aya Nakahara Lovely Complex look: Osaka comedy romance, exaggerated reactions, height-gap gags and bright energetic shojo.',
       subject_treatment:
-        'Keep proportions and identity; exaggerate only requested expression or gesture, never height contrast.',
-      color_and_tone:
-        'Sun yellow, turquoise, tomato red, ivory, charcoal in bold separated blocks.',
-      lighting_and_shadow: 'Bright even cel light and one dark anchor; no stage-like lighting.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Nakahara designs, expressive comic faces and casual clothes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Bright warm pastels and comedy colors, true to the Lovely Complex palette.',
+      lighting_and_shadow: 'Bright cheerful light, lit the way Lovely Complex lights its scenes.',
       texture_and_material:
-        'Clean color surfaces with short accent hatch; no symbols without a prompt cue.',
+        'Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.',
       camera_and_composition:
-        'Respect framing and count; alternate dense and open areas without resizing forms.',
-      atmosphere_and_mood: 'Humor only when requested; preserve quiet or serious moods when asked.',
+        'Comedic reaction panels and height-gap compositions, framed the way Lovely Complex composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with rowdy comic romance.',
       rendering_and_quality:
-        'Crisp silhouette, squash limited to expression, no stars or excess effects.',
-      key_features:
-        'Variable contour rhythm, vivid color blocks, timing through space, expression without scale change',
+        'Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.',
+      key_features: 'Lovely Complex comedy; height gags; energetic shojo',
       creative_brief:
-        'Apply a visual treatment centered on variable contour rhythm, vivid color blocks, timing through space, expression without scale change. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "Aya Nakahara Lovely Complex look: Osaka comedy romance, exaggerated reactions, height-gap gags and bright energetic shojo. Carry it through Lovely Complex comedy, height gags, energetic shojo. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-187',
     name: 'Skip Beat! - Revenge Idol Stardom Spark',
+    displayName: 'Skip Beat! - Revenge Idol Stardom Spark',
+    styleAnchors: ['Skip Beat! - Revenge Idol Stardom Spark'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Performance-ready anime illustration sharpens contours and shadow cutouts, with precise glints on flat color.',
+        'Yoshiki Nakamura Skip Beat! look: showbusiness shojo, dramatic acting transformations, dark grudge spirits comedy and glamorous idols.',
       subject_treatment:
-        'Preserve face, clothing, and action; increase edge contrast without masks or stage elements.',
-      color_and_tone: 'Ink violet, warm ivory, muted gold, compact red accent, clear neutral mids.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Nakamura designs, expressive faces, stylish clothes and dramatic acting poses. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        'Glamour gold, dark grudge purple and pastel, true to the Skip Beat! palette.',
       lighting_and_shadow:
-        'Narrow edge light only if prompt includes a source; simple shadows elsewhere.',
+        'Spotlights and ominous comic auras, lit the way Skip Beat! lights its scenes.',
       texture_and_material:
-        'Clean cel fills with few highlights; no stars or metallic texture by default.',
+        'Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.',
       camera_and_composition:
-        'Keep view and count; radiating marks only if requested action contains radiance.',
-      atmosphere_and_mood:
-        'Drama, confidence, or humor follow prompt; imply no fame or performance.',
+        'Dramatic acting compositions and comedy panels, framed the way Skip Beat! composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with fierce showbiz spark.',
       rendering_and_quality:
-        'Hard contour, selective accents, stable details, no visual spectacle.',
-      key_features:
-        'Sharp silhouette, ink-violet values, selective glints, radiance only when requested',
+        'Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.',
+      key_features: 'Skip Beat showbiz; acting transformations; grudge comedy',
       creative_brief:
-        'Apply a visual treatment centered on sharp silhouette, ink-violet values, selective glints, radiance only when requested. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "Yoshiki Nakamura Skip Beat! look: showbusiness shojo, dramatic acting transformations, dark grudge spirits comedy and glamorous idols. Carry it through Skip Beat showbiz, acting transformations, grudge comedy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-188',
     name: 'Boys Over Flowers - Elite Campus Melodrama',
+    displayName: 'Boys Over Flowers - Elite Campus Melodrama',
+    styleAnchors: ['Boys Over Flowers - Elite Campus Melodrama'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Polished anime drawing contrasts precise straight edges with rounded contours and quiet cel shadow.',
+        'Yoko Kamio Boys Over Flowers look: nineties elite academy melodrama, curly-haired arrogant heirs, fashionable rich kids and fiery underdog romance.',
       subject_treatment:
-        'Retain subject, clothing, arrangement; show hierarchy through edge and value, not social role.',
-      color_and_tone: 'Deep indigo, graphite, warm ivory, muted brass, small burgundy note.',
-      lighting_and_shadow:
-        'Cool directional shadows and restrained pale edge; no rain or invented source.',
-      texture_and_material: 'Clean matte planes; fine trim only on existing ornament.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kamio designs, tall stylish figures, curly hair and luxury fashion. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Luxury gold, rose red and cream, true to the Boys Over Flowers palette.',
+      lighting_and_shadow: 'Glamorous gala light, lit the way Boys Over Flowers lights its scenes.',
+      texture_and_material:
+        'Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.',
       camera_and_composition:
-        'Respect camera and count; vertical alignment only if composition supports it.',
-      atmosphere_and_mood:
-        'Formal restraint shapes line only; class tension and melodrama are optional.',
-      rendering_and_quality: 'Polished edges, modest contrast, reserved shine, no uniform cues.',
-      key_features:
-        'Precise edge hierarchy, indigo-brass palette, contextual vertical rhythm, restrained cel finish',
+        'Dramatic melodrama compositions, framed the way Boys Over Flowers composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with fiery elite melodrama.',
+      rendering_and_quality:
+        'Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.',
+      key_features: 'Yoko Kamio melodrama; elite academy; curly heirs; underdog',
       creative_brief:
-        'Apply a visual treatment centered on precise edge hierarchy, indigo-brass palette, contextual vertical rhythm, restrained cel finish. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "Yoko Kamio Boys Over Flowers look: nineties elite academy melodrama, curly-haired arrogant heirs, fashionable rich kids and fiery underdog romance. Carry it through Yoko Kamio melodrama, elite academy, curly heirs, underdog. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-189',
     name: 'Orange - Sunset Regret Letter Drama',
+    displayName: 'Orange - Sunset Regret Letter Drama',
+    styleAnchors: ['Orange - Sunset Regret Letter Drama'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Anime cel and watercolor hybrid softens selected contours into translucent overlap while focal lines stay clear.',
+        'Ichigo Takano Orange manga look: soft gentle lines, sunset orange light, letters from the future and bittersweet regret.',
       subject_treatment:
-        'Preserve subject, action, number; repeat imagery only if memory or echo is explicitly requested.',
-      color_and_tone:
-        'Warm ochre, dusty blue, faded lilac, muted coral, charcoal; gradients stay local.',
-      lighting_and_shadow: 'Warm-cool value drift within forms; no sunset or time-of-day light.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Takano designs, gentle faces, simple clothes and quiet emotion. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Sunset orange, soft pink and dusk blue, true to the Orange palette.',
+      lighting_and_shadow: 'Warm sunset glow, lit the way Orange lights its scenes.',
       texture_and_material:
-        'Diluted wash, subtle paper tooth, controlled pigment edges; keep major forms legible.',
+        'Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.',
       camera_and_composition:
-        'Keep camera; open space, no extra letters, clocks, or duplicate figures.',
-      atmosphere_and_mood:
-        'Wistfulness only when requested, through softened edges rather than story cues.',
-      rendering_and_quality: 'Clear focal contour, quiet layers, no global bloom or sepia.',
-      key_features: 'Translucent overlap, warm-cool wash, soft edge intervals, clear focal contour',
+        'Quiet sunset compositions, framed the way Orange composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with gentle regretful longing.',
+      rendering_and_quality:
+        'Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.',
+      key_features: 'Ichigo Takano soft line; sunset orange; regret; letters',
       creative_brief:
-        'Apply a visual treatment centered on translucent overlap, warm-cool wash, soft edge intervals, clear focal contour. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "Ichigo Takano Orange manga look: soft gentle lines, sunset orange light, letters from the future and bittersweet regret. Carry it through Ichigo Takano soft line, sunset orange, regret, letters. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-191',
     name: 'Say I Love You - Night-Walk Intimacy',
+    displayName: 'Say I Love You - Night-Walk Intimacy',
+    styleAnchors: ['Say I Love You - Night-Walk Intimacy'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Anime line combines rounded contours, selectively pooled dark shapes, and small reflective accents.',
+        'Kanae Hazuki Say I Love You look: quiet intimate shojo romance, soft grey tones, night walks and tender closeness.',
       subject_treatment:
-        'Keep relationships, distance, pose, count; assume no couple, walk, or night scene.',
-      color_and_tone:
-        'Deep teal, amber, pewter blue, natural subject neutrals, restrained contrast.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hazuki designs, soft faces, long hair and casual clothes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Soft grey, night blue and warm lamp light.',
       lighting_and_shadow:
-        'Warm accents against cool values only when supported; otherwise retain prompt lighting.',
+        'Streetlamp glow at night, lit the way Say I Love You lights its scenes.',
       texture_and_material:
-        'Broken reflections only on wet or glossy surfaces already depicted; dry forms stay matte.',
+        'Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.',
       camera_and_composition:
-        'Preserve crop and spacing; neither close in nor separate subjects unless requested.',
-      atmosphere_and_mood:
-        'Intimacy only if requested; retain humor, action, or distance as intended.',
+        'Intimate two-shots at night, framed the way Say I Love You composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with quiet intimate tenderness.',
       rendering_and_quality:
-        'Small highlights, open blacks, clean contours, no rain haze or cinematic blur.',
-      key_features:
-        'Rounded contour, teal-amber accent, localized reflections, spacing follows the prompt',
+        'Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.',
+      key_features: 'Kanae Hazuki intimacy; night walks; soft grey',
       creative_brief:
-        'Apply a visual treatment centered on rounded contour, teal-amber accent, localized reflections, spacing follows the prompt. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "Kanae Hazuki Say I Love You look: quiet intimate shojo romance, soft grey tones, night walks and tender closeness. Carry it through Kanae Hazuki intimacy, night walks, soft grey. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-192',
     name: 'Maid Sama! - Secret Uniform Double Life',
+    displayName: 'Maid Sama! - Secret Uniform Double Life',
+    styleAnchors: ['Maid Sama! - Secret Uniform Double Life'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Precise anime contour contrasts straight structured edges with small ruffle-like rhythms and cel shadows.',
+        'Hiro Fujiwara Maid Sama! look: comedic double-life romance, maid cafe frills, bold confident heroines and teasing rivals.',
       subject_treatment:
-        'Preserve age, identity, action, clothing; detail trim only when already present.',
-      color_and_tone:
-        'Black, ivory, plum, sharp red; contrast serves legibility, not a role change.',
-      lighting_and_shadow:
-        'Clear directional light and smooth shadows; no split identity or spotlight.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Fujiwara designs, confident faces, maid cafe outfits and uniforms. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Frilly pink, black and white and cafe pastels.',
+      lighting_and_shadow: 'Bright cafe light, lit the way Maid Sama! lights its scenes.',
       texture_and_material:
-        'Satin only where shown; otherwise matte fills and patterns confined to present surfaces.',
+        'Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.',
       camera_and_composition:
-        'Keep layout; distinguish existing shapes through value, not panels or staged duality.',
-      atmosphere_and_mood:
-        'Poise or playfulness follows the requested mood; impose no disguise or dominance.',
+        'Comic double-life reveals, framed the way Maid Sama! composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with teasing comic romance.',
       rendering_and_quality:
-        'Refined edges, prompt-led materials, sparse details, no costume motifs.',
-      key_features:
-        'Structured contour, ruffle rhythm, black-ivory-red values, contrast without wardrobe change',
+        'Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.',
+      key_features: 'Maid Sama frills; double life; teasing romance',
       creative_brief:
-        'Apply a visual treatment centered on structured contour, ruffle rhythm, black-ivory-red values, contrast without wardrobe change. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "Hiro Fujiwara Maid Sama! look: comedic double-life romance, maid cafe frills, bold confident heroines and teasing rivals. Carry it through Maid Sama frills, double life, teasing romance. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-194',
     name: 'Rose of Versailles - Court Portrait Revolution',
+    displayName: 'Rose of Versailles - Court Portrait Revolution',
+    styleAnchors: ['Rose of Versailles - Court Portrait Revolution'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a blonde commander in a white military uniform with epaulettes, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'Ornate anime ink layers fine engraved contours over broad black and pale cel planes.',
-      subject_treatment: 'Keep pose, garments, proportions; enrich only surfaces already present.',
-      color_and_tone:
-        'Black, bone, deep scarlet, antique gold, pale blue in distinct value-led blocks.',
+        'Riyoko Ikeda Rose of Versailles manga art: baroque shojo, long-lashed sparkling eyes, voluminous golden hair, lavish court gowns and revolution.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Ikeda designs, sparkling star eyes, long lashes, voluminous hair and baroque clothing. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Rose, gold, royal blue and cream, true to the Rose of Versailles palette.',
       lighting_and_shadow:
-        'High-contrast directional light with crisp boundaries; add no dramatic source.',
+        'Sparkling glow and dramatic backlight, lit the way Rose of Versailles lights its scenes.',
       texture_and_material:
-        'Sparse hatch and polished highlights only where shown material supports them.',
+        'Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.',
       camera_and_composition:
-        'Preserve framing; use opposing diagonals inside existing forms, no forced portrait pose.',
-      atmosphere_and_mood: 'Boldness comes from line contrast, not a court or conflict scene.',
-      rendering_and_quality: 'Legible outer contour, sparse layered ornament, no decorative frame.',
-      key_features:
-        'Engraved contour, black-bone contrast, scarlet-gold accents, disciplined diagonals',
+        'Baroque portrait compositions and revolutionary drama, framed the way Rose of Versailles composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with passionate baroque drama.',
+      rendering_and_quality:
+        'Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.',
+      key_features: 'Riyoko Ikeda baroque; sparkling eyes; court gowns; revolution',
       creative_brief:
-        'Apply a visual treatment centered on engraved contour, black-bone contrast, scarlet-gold accents, disciplined diagonals. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "Riyoko Ikeda Rose of Versailles manga art: baroque shojo, long-lashed sparkling eyes, voluminous golden hair, lavish court gowns and revolution. Carry it through Riyoko Ikeda baroque, sparkling eyes, court gowns, revolution. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-195',
     name: 'Neighborhood Story - Harajuku Handmade Romance',
+    displayName: 'Neighborhood Story - Harajuku Handmade Romance',
+    styleAnchors: ['Neighborhood Story - Harajuku Handmade Romance'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Hand-drawn anime line uses elastic contours, hand-cut color blocks, and small pattern accents.',
+        'Ai Yazawa Neighborhood Story look: nineties Harajuku handmade fashion, art school energy, colorful accessories and youthful romance.',
       subject_treatment:
-        'Retain age, clothing, accessories, action, count; pattern only existing surfaces.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yazawa designs, slender figures and handmade eclectic fashion. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Turquoise, sunshine yellow, cherry red, violet, charcoal in balanced groups.',
+        'Colorful handmade pastels and bright accents, true to the Neighborhood Story palette.',
       lighting_and_shadow:
-        'Flat ambient values with crisp local highlights; imply no specific light source.',
+        'Bright Harajuku daylight, lit the way Neighborhood Story lights its scenes.',
       texture_and_material:
-        'Textile pattern or marker grain only on fabric or surfaces named in prompt.',
+        'Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.',
       camera_and_composition:
-        'Respect composition; stagger color masses within existing forms, add no group or accessories.',
-      atmosphere_and_mood: 'DIY energy is optional; match the requested mood and setting.',
+        'Fashion street compositions, framed the way Neighborhood Story composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with playful handmade romance.',
       rendering_and_quality:
-        'Crisp edges, slight hand-drawn irregularity, no distressed print wear.',
-      key_features:
-        'Elastic hand-drawn contour, bright color blocks, local surface pattern, slight line irregularity',
+        'Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.',
+      key_features: 'Neighborhood Story Harajuku; handmade fashion; art school',
       creative_brief:
-        'Apply a visual treatment centered on elastic hand-drawn contour, bright color blocks, local surface pattern, slight line irregularity. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "Ai Yazawa Neighborhood Story look: nineties Harajuku handmade fashion, art school energy, colorful accessories and youthful romance. Carry it through Neighborhood Story Harajuku, handmade fashion, art school. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-196',
     name: 'Honey and Clover - Art-School Spring Ache',
+    displayName: 'Honey and Clover - Art-School Spring Ache',
+    styleAnchors: ['Honey and Clover - Art-School Spring Ache'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Anime illustration combines visible pencil underdrawing, diluted gouache, and clear ink on warm paper.',
+        'Chica Umino Honey and Clover look: loose airy lines, art school life, spring breezes, bittersweet unrequited love and whimsical interludes.',
       subject_treatment:
-        'Preserve subject and action; sketch existing contours and materials, add no tools.',
-      color_and_tone:
-        'Paper cream, faded indigo, moss green, amber; quiet mids and one dark anchor.',
-      lighting_and_shadow:
-        'Gentle warm-cool variation without implying spring, sunset, room, or window.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Umino designs, loose lanky figures, messy hair and art-school clothes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Soft spring pastels and clover green, true to the Honey and Clover palette.',
+      lighting_and_shadow: 'Airy spring light, lit the way Honey and Clover lights its scenes.',
       texture_and_material:
-        'Pencil grain, transparent wash, selective dry edges; underlying form remains readable.',
+        'Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.',
       camera_and_composition:
-        'Keep framing; slight line asymmetry without rearranging subjects or scene.',
-      atmosphere_and_mood:
-        "Analog softness is surface only; preserve the prompt's tone and intensity.",
+        'Airy art-school compositions, framed the way Honey and Clover composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with bittersweet spring ache.',
       rendering_and_quality:
-        'Visible drawing marks, controlled washes, no overgloss or fake paper damage.',
-      key_features:
-        'Pencil underdrawing, transparent gouache, warm paper, asymmetry within supplied framing',
+        'Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.',
+      key_features: 'Chica Umino airy line; art school; spring; unrequited love',
       creative_brief:
-        'Apply a visual treatment centered on pencil underdrawing, transparent gouache, warm paper, asymmetry within supplied framing. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "Chica Umino Honey and Clover look: loose airy lines, art school life, spring breezes, bittersweet unrequited love and whimsical interludes. Carry it through Chica Umino airy line, art school, spring, unrequited love. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-197',
     name: 'Kamisama Kiss - Shrine Romance and Fox Familiar',
+    displayName: 'Kamisama Kiss - Shrine Romance and Fox Familiar',
+    styleAnchors: ['Kamisama Kiss - Shrine Romance and Fox Familiar'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a silver-haired fox spirit with a purple kimono, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'Bold anime ink meets flat mineral color and small seal-like marks on restrained paper.',
+        'Julietta Suzuki Kamisama Kiss look: shrine romance, fox spirit familiars, flowing kimono, sakura and playful yokai.',
       subject_treatment:
-        'Preserve subject and design; add symbolic motifs only when prompt includes them.',
-      color_and_tone: 'Vermilion, pine, charcoal, warm ivory, muted brass with separated values.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Suzuki designs, big eyes, flowing hair and kimono. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Sakura pink, shrine red and soft gold, true to the Kamisama Kiss palette.',
       lighting_and_shadow:
-        'One clear highlight direction and firm shadows; imply no moonlight or sacred setting.',
+        'Soft shrine light with foxfire glows, lit the way Kamisama Kiss lights its scenes.',
       texture_and_material:
-        'Dry-brush edges and slight paper grain; graphic marks sparse and non-symbolic by default.',
+        'Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.',
       camera_and_composition:
-        'Respect crop; vertical emphasis only if the supplied composition supports it.',
-      atmosphere_and_mood:
-        'Mythic or playful mood follows prompt; no creature, contract, or ritual is implied.',
-      rendering_and_quality: 'Thick-to-thin line, crisp cel blocks, no invented iconography.',
-      key_features:
-        'Bold mineral ink, vermilion-pine palette, restrained paper grain, symbols only when prompted',
+        'Shrine compositions with spirits, framed the way Kamisama Kiss composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with playful shrine romance.',
+      rendering_and_quality:
+        'Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.',
+      key_features: 'Julietta Suzuki shrines; fox familiars; kimono; yokai',
       creative_brief:
-        'Apply a visual treatment centered on bold mineral ink, vermilion-pine palette, restrained paper grain, symbols only when prompted. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "Julietta Suzuki Kamisama Kiss look: shrine romance, fox spirit familiars, flowing kimono, sakura and playful yokai. Carry it through Julietta Suzuki shrines, fox familiars, kimono, yokai. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-198',
     name: 'Princess Jellyfish - Jelly-Color Otaku Makeover',
+    displayName: 'Princess Jellyfish - Jelly-Color Otaku Makeover',
+    styleAnchors: ['Princess Jellyfish - Jelly-Color Otaku Makeover'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Anime cel drawing uses translucent contour layers, pearly transitions, and delicate filament marks.',
+        'Akiko Higashimura Princess Jellyfish look: otaku women comedy, jellyfish dresses, crude comic faces and dazzling makeovers.',
       subject_treatment:
-        'Keep silhouette and materials; transparency only on parts already described as translucent.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Higashimura designs, crude comic faces, frumpy clothes and dazzling transformations. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Sea-glass teal, violet, pearl, citron, deep blue; cool highlights and clear shadows.',
+        'Jelly translucent pastels and aquarium blue, true to the Princess Jellyfish palette.',
       lighting_and_shadow:
-        'Transmitted light only for depicted transparent forms; opaque parts use firm cel shadows.',
+        'Aquarium glow and makeover sparkle, lit the way Princess Jellyfish lights its scenes.',
       texture_and_material:
-        'Soft wash and fine accents locally; no tentacles, aquatic subjects, clutter, or makeover details.',
+        'Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.',
       camera_and_composition:
-        'Preserve camera; airy overlap only among shapes already in the prompt.',
-      atmosphere_and_mood:
-        'Wonder or playfulness follows prompt; surface treatment works on ordinary subjects too.',
+        'Comic reactions and makeover reveals, framed the way Princess Jellyfish composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with giddy otaku makeover.',
       rendering_and_quality:
-        'Separate translucent accents from opaque planes; avoid muddy gradients and excess ornament.',
-      key_features:
-        'Pearly translucent layers, sea-glass-violet palette, local filament marks, clear opaque forms',
+        'Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.',
+      key_features: 'Higashimura comedy; jellyfish dresses; makeovers',
       creative_brief:
-        'Apply a visual treatment centered on pearly translucent layers, sea-glass-violet palette, local filament marks, clear opaque forms. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "Akiko Higashimura Princess Jellyfish look: otaku women comedy, jellyfish dresses, crude comic faces and dazzling makeovers. Carry it through Higashimura comedy, jellyfish dresses, makeovers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-200',
     name: 'Sukitte Ii na yo - Rainy Umbrella Confession',
+    displayName: 'Sukitte Ii na yo - Rainy Umbrella Confession',
+    styleAnchors: ['Sukitte Ii na yo - Rainy Umbrella Confession'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Anime linework layers smooth curved planes with refracted color accents and crisp cel edges.',
+        'Kanae Hazuki Sukitte Ii na yo anime look (Zexcs 2012): muted grey rainy romance, soft realistic designs and quiet confessions.',
       subject_treatment:
-        'Keep subject, spacing, materials; reflections only on wet or glossy surfaces already present.',
-      color_and_tone: 'Deep teal, amber, pearl gray, muted burgundy, compact pale highlights.',
-      lighting_and_shadow:
-        'Warm-cool contrast only when supported; otherwise follow prompt lighting without inventing night.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with soft designs, gentle faces, school or casual clothes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Rainy grey, soft blue and warm skin, true to the Sukitte Ii na yo palette.',
+      lighting_and_shadow: 'Soft rainy daylight, lit the way Sukitte Ii na yo lights its scenes.',
       texture_and_material:
-        'Broken reflective strokes on existing glass or wet surfaces; dry forms stay matte.',
-      camera_and_composition: 'Preserve crop; curved overlaps come only from forms already shown.',
-      atmosphere_and_mood:
-        'Stillness or intimacy is never presumed; retain the requested mood and relationships.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.',
+      camera_and_composition:
+        'Umbrella two-shots in rain, framed the way Sukitte Ii na yo composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with quiet rainy confession.',
       rendering_and_quality:
-        'Clear planes, small highlight masks, stable contours, no rain haze or blur.',
-      key_features:
-        'Curved plane layering, deep-teal-amber contrast, local reflected strokes, prompt-led mood and spacing',
+        'Quiet rainy romance television frame, in the recognizable hand of Sukitte Ii na yo.',
+      key_features: 'Rainy romance; umbrellas; muted grey; confessions',
       creative_brief:
-        'Apply a visual treatment centered on curved plane layering, deep-teal-amber contrast, local reflected strokes, prompt-led mood and spacing. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "Kanae Hazuki Sukitte Ii na yo anime look (Zexcs 2012): muted grey rainy romance, soft realistic designs and quiet confessions. Carry it through Rainy romance, umbrellas, muted grey, confessions. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-193',
     name: 'Snow White with the Red Hair - Herbal Courtship Fantasy',
+    displayName: 'Snow White with the Red Hair - Herbal Courtship Fantasy',
+    styleAnchors: ['Snow White with the Red Hair - Herbal Courtship Fantasy'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a red-haired herbalist girl in an apron, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'Anime line blends clean tapered contours with fine botanical-style strokes and polished cel planes.',
+        'Sorata Akizuki Snow White with the Red Hair look: gentle court fantasy, vivid red hair, herbalist gardens and courteous romance.',
       subject_treatment:
-        'Preserve subject and surfaces; vein-like marks only on existing plants or requested ornament.',
-      color_and_tone: 'Terracotta, sage, warm ivory, ink blue, muted gold, distinct dark anchor.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Akizuki designs, gentle faces, vivid red hair and court clothes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        'Vivid red, herb green and cream, true to the Snow White with the Red Hair palette.',
       lighting_and_shadow:
-        "Warm highlights and cool shadows follow the prompt's actual light direction.",
+        'Soft garden light, lit the way Snow White with the Red Hair lights its scenes.',
       texture_and_material:
-        'Transparent wash and paper softness over crisp edges; no added containers or botanicals.',
+        'Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.',
       camera_and_composition:
-        'Respect camera; curved line rhythm follows existing forms, no garden or court.',
-      atmosphere_and_mood:
-        'Warmth or courtesy follows prompt; botanical detail is technique, not content.',
+        'Herb garden compositions, framed the way Snow White with the Red Hair composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with gentle courteous romance.',
       rendering_and_quality:
-        'Local detail, crisp silhouettes, subdued pigment, no decorative clutter.',
-      key_features:
-        'Tapered botanical-style line, terracotta-sage palette, crisp cel edges, details on existing forms',
+        'Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.',
+      key_features: 'Akizuki court fantasy; red hair; herb gardens',
       creative_brief:
-        'Apply a visual treatment centered on tapered botanical-style line, terracotta-sage palette, crisp cel edges, details on existing forms. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "Sorata Akizuki Snow White with the Red Hair look: gentle court fantasy, vivid red hair, herbalist gardens and courteous romance. Carry it through Akizuki court fantasy, red hair, herb gardens. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-199',
-    name: 'Yona of the Dawn - Crimson Princess Resolve',
+    name: 'Yona of the Dawn Pierrot - Crimson Princess Resolve',
+    displayName: 'Yona of the Dawn Pierrot - Crimson Princess Resolve',
+    styleAnchors: ['Yona of the Dawn Pierrot - Crimson Princess Resolve'],
+    category: '3. Shojo, Magical Girl & Visionary Classics',
+    negativePrompt:
+      'a red-haired princess with a hairpin and bow, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Studio Pierrot Yona of the Dawn anime look (2014): Korean-inspired fantasy kingdoms, vivid crimson hair, loyal dragon warriors and sweeping journeys.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with modern shojo designs, vivid red hair, travel clothes and warriors. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        'Crimson, earth brown, sky blue and gold, true to the Yona of the Dawn Pierrot palette.',
+      lighting_and_shadow:
+        'Warm dawn light and campfire glow, lit the way Yona of the Dawn Pierrot lights its scenes.',
+      texture_and_material:
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.',
+      camera_and_composition:
+        'Sweeping journey wides and campfire scenes, framed the way Yona of the Dawn Pierrot composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with resolute crimson journey.',
+      rendering_and_quality:
+        'Polished Pierrot fantasy television frame, in the recognizable hand of Yona of the Dawn Pierrot.',
+      key_features: 'Yona anime crimson hair; fantasy kingdoms; loyal warriors',
+      creative_brief:
+        "Studio Pierrot Yona of the Dawn anime look (2014): Korean-inspired fantasy kingdoms, vivid crimson hair, loyal dragon warriors and sweeping journeys. Carry it through Yona anime crimson hair, fantasy kingdoms, loyal warriors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+    },
+  },
+  {
+    id: 'SP05-047',
+    name: 'Kazune Kawahara - Airy First-Love Tenderness',
+    displayName: 'Kazune Kawahara - Airy First-Love Tenderness',
+    styleAnchors: ['Kazune Kawahara - Airy First-Love Tenderness'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Anime drawing uses long tapered contours, weathered edge marks, and firm cel shadows for direction.',
+        'Kazune Kawahara My Love Story look: sweet airy first-love comedy, huge gentle giant guys, tiny blushing partners and warm light.',
       subject_treatment:
-        'Preserve silhouette, clothing, action, count; motion marks follow only stated gesture.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kawahara designs, contrasting body sizes, blushing faces and simple clothes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Burnt vermilion, sage, dusty blue, charcoal, ochre; earthy mids and one accent.',
-      lighting_and_shadow:
-        'Separate warm and cool planes with neutral direction; imply no wilderness or sunset.',
+        'Airy pastels, blossom pink and warm sky, true to the Kazune Kawahara palette.',
+      lighting_and_shadow: 'Soft warm spring light, lit the way Kazune Kawahara lights its scenes.',
       texture_and_material:
-        'Dry-brush scuffs on selected edges only; smooth base color, no blanket wear.',
+        'Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.',
       camera_and_composition:
-        'Keep view; directional balance without requiring profile pose or entourage.',
-      atmosphere_and_mood: 'Resolve only if called for; otherwise preserve emotional register.',
+        'Sweet two-shots under blossoms, framed the way Kazune Kawahara composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with airy first-love tenderness.',
       rendering_and_quality:
-        'Long clear contours, selective texture, readable action, no unrequested debris.',
-      key_features:
-        'Long directional contour, earthy cel planes, selective dry-brush, motion follows the prompt',
+        'Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.',
+      key_features: 'Kazune Kawahara sweetness; gentle giants; blushing; blossoms',
       creative_brief:
-        'Apply a visual treatment centered on long directional contour, earthy cel planes, selective dry-brush, motion follows the prompt. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
-    },
-  },
-  {
-    id: 'SP05-047',
-    name: 'Airy First-Love Tenderness',
-    category: '3. Shojo, Magical Girl & Visionary Classics',
-    negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
-    style: {
-      aesthetic:
-        'Airy anime linework uses light tapered strokes, open shapes, and softened focal transitions.',
-      subject_treatment:
-        'Preserve expression, age, proportions, and relationships; do not force blush or romance.',
-      color_and_tone:
-        'Pale blue, warm cream, graphite anchors, restrained coral; clean highlights.',
-      lighting_and_shadow:
-        'Broad soft illumination and small glints with enough shadow to read every form.',
-      texture_and_material:
-        'Smooth surfaces with slight wash-softening at selected edges; no glitter or bloom.',
-      camera_and_composition: 'Respect crop; leave air around forms only where composition allows.',
-      atmosphere_and_mood: 'Tenderness comes from pauses only when it matches the requested mood.',
-      rendering_and_quality:
-        'Sparse detail, clear contour hierarchy, quiet separation, no airbrushed structure.',
-      key_features:
-        'Feathered line, pale cool-warm balance, clean focal glints, controlled open spacing',
-      creative_brief:
-        'Apply a visual treatment centered on feathered line, pale cool-warm balance, clean focal glints, controlled open spacing. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "Kazune Kawahara My Love Story look: sweet airy first-love comedy, huge gentle giant guys, tiny blushing partners and warm light. Carry it through Kazune Kawahara sweetness, gentle giants, blushing, blossoms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-041',
-    name: 'Ornate Palace Shojo',
+    name: 'Keiko Takemiya - Ornate Palace Shojo',
+    displayName: 'Keiko Takemiya - Ornate Palace Shojo',
+    styleAnchors: ['Keiko Takemiya - Ornate Palace Shojo'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Elegant anime cel illustration uses long tapered contours, fine ornamental turns, and nested shapes.',
+        'Keiko Takemiya classic seventies shojo look: ornate European palaces, flowing hair, flowers, elaborate costumes and lyrical melodrama.',
       subject_treatment:
-        'Keep anatomy and costume as prompted; place filigree only along existing edges or surfaces.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Takemiya designs, delicate faces, flowing hair and ornate period gowns. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Warm ivory, peacock teal, jade, cobalt, antique gold; decisive dark anchors.',
+        'Ornate gold, rose, ivory and palace blue, true to the Keiko Takemiya palette.',
       lighting_and_shadow:
-        'Broad even light with small warm edge notes and crisp separating shadows.',
+        'Soft palace light and dramatic glow, lit the way Keiko Takemiya lights its scenes.',
       texture_and_material:
-        'Fine line and matte cel fill; detail textiles or metals only when shown.',
+        'Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.',
       camera_and_composition:
-        'Maintain the camera; measured vertical rhythm and balanced space, no added architecture.',
-      atmosphere_and_mood:
-        'Refinement comes through poised line spacing; preserve the requested emotion.',
+        'Ornate palace compositions, framed the way Keiko Takemiya composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with lyrical ornate grandeur.',
       rendering_and_quality:
-        'Clean thin-to-thick contour, selective ornament, stable values, no crowded trim.',
-      key_features:
-        'Tapered ornamental contour, nested cel shapes, jade-cobalt accents, measured vertical balance',
+        'Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.',
+      key_features: 'Keiko Takemiya ornate; seventies shojo; palaces; flowing hair',
       creative_brief:
-        'Apply a visual treatment centered on tapered ornamental contour, nested cel shapes, jade-cobalt accents, measured vertical balance. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "Keiko Takemiya classic seventies shojo look: ornate European palaces, flowing hair, flowers, elaborate costumes and lyrical melodrama. Carry it through Keiko Takemiya ornate, seventies shojo, palaces, flowing hair. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-042',
-    name: 'Theatrical Duel Symbolism',
+    name: 'Chiho Saito - Theatrical Duel Symbolism',
+    displayName: 'Chiho Saito - Theatrical Duel Symbolism',
+    styleAnchors: ['Chiho Saito - Theatrical Duel Symbolism'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Graphic anime ink sets opposed forms against sharply divided planes and broad black contours.',
+        'Chiho Saito manga look as in Revolutionary Girl Utena and Bride of Deimos: elegant elongated figures, roses, princely duelists and theatrical symbolism.',
       subject_treatment:
-        'Preserve pose and form; sharpen existing angles without adding a duel, emblem, or prop.',
-      color_and_tone: 'Black, paper ivory, oxblood, small vermilion; value split leads over color.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Saito designs, long elegant limbs, sharp lashes and princely uniforms. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Rose, black, white and gold, true to the Chiho Saito palette.',
       lighting_and_shadow:
-        'Directional hard light and decisive shadow blocks; accents only on depicted surfaces.',
+        'Theatrical spotlight and petal glows, lit the way Chiho Saito lights its scenes.',
       texture_and_material:
-        'Opaque cel masses with sparse engraved hatch; ornament only when already requested.',
+        'Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.',
       camera_and_composition:
-        'Respect framing; counterbalance existing shapes with diagonals, never a stage layout.',
-      atmosphere_and_mood:
-        "Visual opposition and pauses add tension while preserving the prompt's mood.",
-      rendering_and_quality: 'Forceful contours, flat shadows, few accents, no decorative clutter.',
-      key_features:
-        'Opposed value planes, emphatic ink, diagonal counterbalance, vermilion accents',
+        'Symmetrical duel compositions, framed the way Chiho Saito composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with theatrical symbolic duel.',
+      rendering_and_quality:
+        'Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.',
+      key_features: 'Chiho Saito elegance; roses; princely duels; symbolism',
       creative_brief:
-        'Apply a visual treatment centered on opposed value planes, emphatic ink, diagonal counterbalance, vermilion accents. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "Chiho Saito manga look as in Revolutionary Girl Utena and Bride of Deimos: elegant elongated figures, roses, princely duelists and theatrical symbolism. Carry it through Chiho Saito elegance, roses, princely duels, symbolism. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-043',
-    name: 'Soft Healing Ensemble',
+    name: 'Flying Witch J.C.Staff - Soft Healing Ensemble',
+    displayName: 'Flying Witch J.C.Staff - Soft Healing Ensemble',
+    styleAnchors: ['Flying Witch J.C.Staff - Soft Healing Ensemble'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Soft anime illustration favors round contour turns, low-contrast cel planes, and matte edges.',
+        'J.C.Staff Flying Witch look (2016): gentle rural witch life, soft pastel countryside, herb gardens and relaxed healing slice of life.',
       subject_treatment:
-        'Retain subject and count; soften selected contours while keeping structure and expression clear.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with soft gentle designs, relaxed faces and casual country clothes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Sage, cream, cloudy blue, muted ochre; low saturation and one warm focal note.',
+        'Soft green, sky blue and warm cream, true to the Flying Witch J.C.Staff palette.',
       lighting_and_shadow:
-        'Broad diffuse illumination and shallow shadows; imply no room or time of day.',
+        'Gentle spring sunlight, lit the way Flying Witch J.C.Staff lights its scenes.',
       texture_and_material:
-        'Smooth matte fills with barely visible paper grain; no sparkle or wet shine.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.',
       camera_and_composition:
-        'Keep framing; open space and gentle overlap organize only subjects already present.',
-      atmosphere_and_mood:
-        'Reassurance comes from breathing room when compatible with the requested emotion.',
+        'Relaxed garden and countryside compositions, framed the way Flying Witch J.C.Staff composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with gentle healing calm.',
       rendering_and_quality:
-        'Few readable value tiers, soft stable edges, sparse detail, no obscuring haze.',
-      key_features:
-        'Rounded contours, low-contrast cel values, sage-ochre palette, generous breathing room',
+        'Soft relaxed slice-of-life television frame, in the recognizable hand of Flying Witch J.C.Staff.',
+      key_features: 'Flying Witch gentleness; herb gardens; rural calm',
       creative_brief:
-        'Apply a visual treatment centered on rounded contours, low-contrast cel values, sage-ochre palette, generous breathing room. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "J.C.Staff Flying Witch look (2016): gentle rural witch life, soft pastel countryside, herb gardens and relaxed healing slice of life. Carry it through Flying Witch gentleness, herb gardens, rural calm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-044',
-    name: 'Punk Romance Drama',
+    name: 'Moyoco Anno - Punk Romance Drama',
+    displayName: 'Moyoco Anno - Punk Romance Drama',
+    styleAnchors: ['Moyoco Anno - Punk Romance Drama'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Expressive anime drawing mixes heavy variable ink, angular cuts, and short dry strokes.',
+        'Moyoco Anno manga look as in Happy Mania and Sakuran: bold graphic fashion lines, sharp sexy josei heroines, punk energy and heartbreak.',
       subject_treatment:
-        'Keep proportions and clothing; direct sharp marks along existing gesture, add no gear.',
-      color_and_tone:
-        'Coal black, electric blue, acid yellow, hot coral; bright color stays selective.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Anno designs, sharp eyes, bold lips and fashionable edgy clothes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Black ink with bold fashion accents, true to the Moyoco Anno palette.',
       lighting_and_shadow:
-        'Hard key, compact rim accents, broad dark masses; no performance lights.',
-      texture_and_material: 'Scuffed brush texture only at chosen edges; leave large fills clean.',
+        'Nightlife light and rainy gloom, lit the way Moyoco Anno lights its scenes.',
+      texture_and_material:
+        'Bold graphic fashion lines and tone, with the surface finish of Moyoco Anno.',
       camera_and_composition:
-        'Preserve crop and action; tilted spacing only follows existing gesture.',
-      atmosphere_and_mood:
-        'Intensity comes from line-weight shifts and color friction; mood stays prompt-led.',
+        'Fashion-forward compositions, framed the way Moyoco Anno composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with edgy punk romance.',
       rendering_and_quality:
-        'Crisp silhouette, limited scratches, readable mids, no blanket distress.',
-      key_features: 'Heavy variable ink, angular cuts, electric accents, localized dry-brush',
+        'Bold graphic josei manga illustration, in the recognizable hand of Moyoco Anno.',
+      key_features: 'Moyoco Anno bold line; josei; punk fashion; heartbreak',
       creative_brief:
-        'Apply a visual treatment centered on heavy variable ink, angular cuts, electric accents, localized dry-brush. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "Moyoco Anno manga look as in Happy Mania and Sakuran: bold graphic fashion lines, sharp sexy josei heroines, punk energy and heartbreak. Carry it through Moyoco Anno bold line, josei, punk fashion, heartbreak. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-045',
-    name: 'Rose-Petal Comedy Club',
+    name: 'Kaguya-sama A-1 - Rose-Petal Comedy Club',
+    displayName: 'Kaguya-sama A-1 - Rose-Petal Comedy Club',
+    styleAnchors: ['Kaguya-sama A-1 - Rose-Petal Comedy Club'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Bright anime cel craft pairs refined outlines with elastic marks at expressive focal details.',
+        'A-1 Pictures Kaguya-sama: Love Is War look (2019): theatrical mind-game comedy, dramatic narration staging, rose petals, dutch angles and gag reactions.',
       subject_treatment:
-        'Preserve identity and proportions; vary existing expression without changing anatomy.',
-      color_and_tone:
-        'Golden cream, dark teal, brick red, plum; warm highlights against cool shadows.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Aka Akasaka-derived designs, elegant faces, sharp eyes and school uniforms. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Dramatic red, rose pink and cool blue, true to the Kaguya-sama A-1 palette.',
       lighting_and_shadow:
-        'Clear even illumination with short shadow snaps at focal edges, no spotlight.',
+        'Dramatic spotlights and comic flashes, lit the way Kaguya-sama A-1 lights its scenes.',
       texture_and_material:
-        'Clean opaque fills and tiny decorative marks only where supported by the prompt.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.',
       camera_and_composition:
-        'Respect frame and count; time the image with alternating open and dense space.',
-      atmosphere_and_mood: 'Humor appears only when the requested action is comic.',
+        'Theatrical dutch angles and gag cuts, framed the way Kaguya-sama A-1 composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with theatrical comic scheming.',
       rendering_and_quality:
-        'Polished edges, restrained ornament, stable structure, no automatic sparkle.',
-      key_features:
-        'Elastic focal marks, polished cel fill, warm-cool contrast, timing through space',
+        'Theatrical A-1 comedy frame, in the recognizable hand of Kaguya-sama A-1.',
+      key_features: 'Kaguya-sama theatrics; mind games; roses; gag reactions',
       creative_brief:
-        'Apply a visual treatment centered on elastic focal marks, polished cel fill, warm-cool contrast, timing through space. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "A-1 Pictures Kaguya-sama: Love Is War look (2019): theatrical mind-game comedy, dramatic narration staging, rose petals, dutch angles and gag reactions. Carry it through Kaguya-sama theatrics, mind games, roses, gag reactions. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-046',
-    name: 'Luminous Letter Drama',
+    name: 'Maquia P.A. Works - Luminous Letter Drama',
+    displayName: 'Maquia P.A. Works - Luminous Letter Drama',
+    styleAnchors: ['Maquia P.A. Works - Luminous Letter Drama'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Fine anime ink contour sits over translucent watercolor wash with delicate interior strokes.',
+        'P.A. Works Maquia look (2018) by Mari Okada: luminous fantasy drama, woven cloth of memory, glowing light, tender farewells and painterly beauty.',
       subject_treatment:
-        'Keep subject, clothing, and gesture; describe existing folds without adding letters or props.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yuriko Ishii-derived designs, delicate faces and flowing fantasy clothes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Muted amber, slate blue, warm ivory, faded indigo; soft mids and a dark anchor.',
+        'Luminous white, soft gold and pale blue, true to the Maquia P.A. Works palette.',
       lighting_and_shadow:
-        'Warm-cool value drift across forms; broad shadows, no invented lamp or window.',
+        'Luminous glowing light and soft dusk, lit the way Maquia P.A. Works lights its scenes.',
       texture_and_material:
-        'Light paper tooth, diluted pigment edges, selective dry brush; no writing by default.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.',
       camera_and_composition:
-        'Maintain viewpoint; use quiet margins without letter-writing composition.',
-      atmosphere_and_mood:
-        'Stillness comes through restrained contrast; the requested mood sets the tone.',
-      rendering_and_quality: 'Thin wash, legible ink, subtle paper texture; no global sepia haze.',
-      key_features: 'Fine ink contour, transparent pigment wash, amber-slate palette, open margins',
+        'Emotional close-ups and luminous wides, framed the way Maquia P.A. Works composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with luminous tender farewell.',
+      rendering_and_quality:
+        'Luminous painterly P.A. Works feature frame, in the recognizable hand of Maquia P.A. Works.',
+      key_features: 'Maquia luminosity; woven memories; farewells',
       creative_brief:
-        'Apply a visual treatment centered on fine ink contour, transparent pigment wash, amber-slate palette, open margins. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "P.A. Works Maquia look (2018) by Mari Okada: luminous fantasy drama, woven cloth of memory, glowing light, tender farewells and painterly beauty. Carry it through Maquia luminosity, woven memories, farewells. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-050',
-    name: 'Cozy Sign-Language Romance',
+    name: 'A Sign of Affection Ajia-do - Cozy Sign-Language Romance',
+    displayName: 'A Sign of Affection Ajia-do - Cozy Sign-Language Romance',
+    styleAnchors: ['A Sign of Affection Ajia-do - Cozy Sign-Language Romance'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Responsive anime line gives small gestures crisp contours in a calm matte cel finish.',
+        'Ajia-do A Sign of Affection look (2024) from suu Morishita: soft pastel romance, sign language hands, snowy cafes and gentle closeness.',
       subject_treatment:
-        'Keep action and count; clarify only existing gestures without forcing hands or a close view.',
-      color_and_tone:
-        'Warm ivory, slate, mineral teal, muted copper; prioritize recognition and clear values.',
-      lighting_and_shadow: 'Neutral broad light, small clean highlights, simple readable shadows.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with soft designs, expressive hands and cozy winter clothes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Soft pastel pink, snow white and cafe warmth.',
+      lighting_and_shadow:
+        'Soft cafe light and snowy glow, lit the way A Sign of Affection Ajia-do lights its scenes.',
       texture_and_material:
-        'Smooth matte fills with tactile stipple only at relevant edges or surfaces.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.',
       camera_and_composition:
-        'Preserve camera and layout; maintain gaps among existing forms without rearranging.',
-      atmosphere_and_mood: 'Attentive calm only when it fits; otherwise keep the requested mood.',
+        'Close-ups on signing hands and gentle faces, framed the way A Sign of Affection Ajia-do composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with cozy tender romance.',
       rendering_and_quality:
-        'Legible contours, uncluttered detail, even color, no blur or ornament.',
-      key_features:
-        'Gesture-readable contour, matte cel planes, teal-copper accents, clarity through spacing',
+        'Soft pastel romance television frame, in the recognizable hand of A Sign of Affection Ajia-do.',
+      key_features: 'A Sign of Affection; signing hands; pastel romance; snow',
       creative_brief:
-        'Apply a visual treatment centered on gesture-readable contour, matte cel planes, teal-copper accents, clarity through spacing. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "Ajia-do A Sign of Affection look (2024) from suu Morishita: soft pastel romance, sign language hands, snowy cafes and gentle closeness. Carry it through A Sign of Affection, signing hands, pastel romance, snow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-048',
-    name: 'Crimson Hair Quest Romance',
+    name: 'Mizuho Kusanagi - Crimson Hair Quest Romance',
+    displayName: 'Mizuho Kusanagi - Crimson Hair Quest Romance',
+    styleAnchors: ['Mizuho Kusanagi - Crimson Hair Quest Romance'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Decisive anime contours shift from firm outer strokes to fast tapered accents and cel shadows.',
+        'Mizuho Kusanagi Yona of the Dawn manga art: vivid crimson flowing hair, fierce resolve, beautiful warriors and dramatic fantasy panels.',
       subject_treatment:
-        'Retain anatomy, costume, gesture; follow existing movement without adding adventure props.',
-      color_and_tone: 'Clay red, deep blue, sand, cool gray; red is an accent, not hair color.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kusanagi designs, flowing hair, fierce eyes and fantasy robes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Crimson, ink black and gold accents, true to the Mizuho Kusanagi palette.',
       lighting_and_shadow:
-        'Brisk directional light against firm cool shadows; reflections stay on visible surfaces.',
+        'Dramatic fire and dawn light, lit the way Mizuho Kusanagi lights its scenes.',
       texture_and_material:
-        'Smooth opaque color with sparse dry-brush edges; no simulated wind or dust.',
+        'Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.',
       camera_and_composition:
-        'Preserve camera and count; use diagonals only when action supports them.',
-      atmosphere_and_mood:
-        'Resolve comes through a clear silhouette when appropriate; do not impose romance.',
+        'Dramatic cliff and battle compositions, framed the way Mizuho Kusanagi composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with fierce romantic resolve.',
       rendering_and_quality:
-        'Legible action, crisp cel bands, sparse texture, no unrequested motion blur.',
-      key_features:
-        'Decisive tapered line, clay-red accent, firm cel shadows, gesture-led diagonals',
+        'Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.',
+      key_features: 'Mizuho Kusanagi crimson hair; fierce resolve; fantasy',
       creative_brief:
-        'Apply a visual treatment centered on decisive tapered line, clay-red accent, firm cel shadows, gesture-led diagonals. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "Mizuho Kusanagi Yona of the Dawn manga art: vivid crimson flowing hair, fierce resolve, beautiful warriors and dramatic fantasy panels. Carry it through Mizuho Kusanagi crimson hair, fierce resolve, fantasy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP05-049',
-    name: 'Velvet Gothic Academy',
+    name: 'Kaori Yuki - Velvet Gothic Academy',
+    displayName: 'Kaori Yuki - Velvet Gothic Academy',
+    styleAnchors: ['Kaori Yuki - Velvet Gothic Academy'],
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Nocturne-leaning anime illustration uses fine black contours, dense matte masses, and silver edges.',
+        'Kaori Yuki gothic manga look as in Angel Sanctuary and Godchild: ornate gothic fashion, angels and demons, lace, crosses and decadent melancholy.',
       subject_treatment:
-        'Preserve subject and wardrobe; apply fabric detail only to textiles already present.',
-      color_and_tone:
-        'Black, plum, cool silver, muted sea green; distinguish darks from material mids.',
-      lighting_and_shadow:
-        'Narrow edge highlights over quiet shadows; add no architectural or night setting.',
-      texture_and_material:
-        'Velvet or lace detail only on those existing materials; otherwise matte ink and cel fill.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yuki designs, slender elegant bodies, ornate gothic fashion and dramatic hair. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Black ink with gothic tone and crimson accents.',
+      lighting_and_shadow: 'Moonlit gothic light, lit the way Kaori Yuki lights its scenes.',
+      texture_and_material: 'Ornate fine line with lace and gothic ornament.',
       camera_and_composition:
-        'Respect camera; balance dense dark shapes with open space, no architectural frame.',
-      atmosphere_and_mood:
-        'Severity through contrast only when requested; do not darken a light mood.',
+        'Dramatic gothic compositions, framed the way Kaori Yuki composes its shots and pages.',
+      atmosphere_and_mood: 'Keep the requested mood with decadent gothic melancholy.',
       rendering_and_quality:
-        'Deliberate blacks, selective fine detail, open mids, no ornate border.',
-      key_features:
-        'Dense matte silhouette, cool silver edge, dark plum values, selective material ornament',
+        'Ornate gothic manga illustration, in the recognizable hand of Kaori Yuki.',
+      key_features: 'Kaori Yuki gothic; angels and demons; lace; decadence',
       creative_brief:
-        'Apply a visual treatment centered on dense matte silhouette, cool silver edge, dark plum values, selective material ornament. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.',
+        "Kaori Yuki gothic manga look as in Angel Sanctuary and Godchild: ornate gothic fashion, angels and demons, lace, crosses and decadent melancholy. Carry it through Kaori Yuki gothic, angels and demons, lace, decadence. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
 ] as unknown as StyleRuntimePreset[];

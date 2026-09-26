@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-066
 packId: pack_13
-name: Late Train Window Anime
+name: Gisaburo Sugii - Late Train Window Anime
 styleAnchors:
-  - Late Train Window Anime
+  - Gisaburo Sugii - Late Train Window Anime
   - night train melancholy anime
   - window reflections
-displayName: Late Train Window Anime
+displayName: Gisaburo Sugii - Late Train Window Anime
 category: 2. Slice Of Life, School And Music
 domain: night train melancholy anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - train
   - night
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Late train anime: night commuter frames with window reflections, passing lights and tired quiet passengers.'
-  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: still tired poses, reflections layered over faces, streaked passing lights."
-  color_and_tone: Deep blue night, fluorescent green-white and warm passing lights.
-  lighting_and_shadow: Train interior light and passing streetlights, expressed through the style rather than photographic lighting.
-  texture_and_material: Cel with reflective glass layers, visible at a glance as the signature of the style.
-  camera_and_composition: Seat-level frames through windows, arranged so the subject still reads at a glance.
-  atmosphere_and_mood: Melancholic, tired, reflective and quiet, driven by the construction, color and rhythm.
-  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  creative_brief: "Late train anime: night commuter frames with window reflections, passing lights and tired quiet passengers. Carry it through window reflections, streaked lights, tired passengers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: window reflections; streaked lights; tired passengers
+  aesthetic: 'Gisaburo Sugii Night on the Galactic Railroad look (1985): melancholy trains through starry night, quiet contemplative pacing, soft cel and dreamlike reflections.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with gentle simple designs, quiet faces and period clothing, seen through train windows. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Deep starry navy, window amber and soft grey-blue.
+  lighting_and_shadow: Warm carriage lamp light mixed with starlight reflections on the glass.
+  texture_and_material: Soft analog cel with deep painted night skies full of stars.
+  camera_and_composition: Train-window framing with layered reflections of faces and passing lights.
+  atmosphere_and_mood: Keep the requested mood with quiet melancholy reverie.
+  rendering_and_quality: Contemplative 1985 feature frame with dreamlike melancholy pacing.
+  creative_brief: "Gisaburo Sugii Night on the Galactic Railroad look (1985): melancholy trains through starry night, quiet contemplative pacing, soft cel and dreamlike reflections. Carry it through Galactic Railroad melancholy, train windows, starlight, reflections. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Galactic Railroad melancholy; train windows; starlight; reflections
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -45,9 +46,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -62,6 +67,7 @@ taxonomy:
     - train
     - night
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

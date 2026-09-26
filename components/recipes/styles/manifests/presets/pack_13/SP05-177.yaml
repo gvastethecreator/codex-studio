@@ -3,7 +3,7 @@ id: SP05-177
 packId: pack_13
 name: Martian Successor Nadesico - Cheerful Bridge-Deck Mecha
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,28 +13,16 @@ tags:
   - shojo-magical-girl-and-visionary-classics
   - reference-title
 visualDna:
-  aesthetic: >-
-    Precise anime line uses crisp mechanical geometry where relevant and clean silhouette
-    hierarchy.
-  subject_treatment: >-
-    Preserve forms, group size, and action; render machines only as supplied, add no bridge
-    or interface.
-  color_and_tone: >-
-    Navy, warm white, orange, teal in distinct fields with neutral separation.
-  lighting_and_shadow: >-
-    Broad cool fill and small warm edge accents; no control-panel glow or new source.
-  texture_and_material: >-
-    Smooth cel surfaces; parallel hatch only on hard surfaces already depicted.
-  camera_and_composition: >-
-    Hold camera and count; rhythm comes from existing scale and spacing.
-  atmosphere_and_mood: >-
-    Playful cadence only if requested; preserve serious or quiet moods equally.
-  rendering_and_quality: >-
-    Exact contours, clean flats, legible hard surfaces, no UI or fake text.
-  key_features: >-
-    Crisp mechanical line when relevant, navy-orange balance, smooth flats, spacing-led
-    group rhythm
-  creative_brief: 'Apply a visual treatment centered on crisp mechanical line when relevant, navy-orange balance, smooth flats, spacing-led group rhythm. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'Xebec Martian Successor Nadesico look (1996) with Keiji Goto designs: cheerful parody space opera, colorful bridge crews, super robot homage and nineties comedy.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Goto designs, big bright eyes, colorful hair and crisp starship uniforms. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Bright bridge white, mecha pink, navy space and yellow.
+  lighting_and_shadow: Bright bridge lighting and explosion flashes, lit the way Martian Successor Nadesico lights its scenes.
+  texture_and_material: Late analog hand-painted cel over painted backgrounds, with soft film grain and gentle cel edge softness.
+  camera_and_composition: Crowded bridge compositions and mecha battle wides, framed the way Martian Successor Nadesico composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with cheerful parody spirit.
+  rendering_and_quality: Bright mid-1990s space comedy television frame, in the recognizable hand of Martian Successor Nadesico.
+  key_features: Nadesico bridge crew; Keiji Goto designs; parody mecha; nineties comedy
+  creative_brief: "Xebec Martian Successor Nadesico look (1996) with Keiji Goto designs: cheerful parody space opera, colorful bridge crews, super robot homage and nineties comedy. Carry it through Nadesico bridge crew, Keiji Goto designs, parody mecha, nineties comedy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -59,17 +47,12 @@ avoidRules:
   - fake UI
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-177.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -84,3 +67,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Martian Successor Nadesico - Cheerful Bridge-Deck Mecha
+styleAnchors:
+  - Martian Successor Nadesico - Cheerful Bridge-Deck Mecha

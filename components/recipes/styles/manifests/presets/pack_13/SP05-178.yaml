@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-178
 packId: pack_13
-name: Blue Seed - Mythic Tokyo Purge
+name: Yuzo Takada - Mythic Tokyo Purge
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,29 +13,16 @@ tags:
   - shojo-magical-girl-and-visionary-classics
   - reference-title
 visualDna:
-  aesthetic: >-
-    Inked anime forms combine organic contour flow, abrupt cross-lines, and separated color
-    shapes.
-  subject_treatment: >-
-    Preserve the depicted subject; fragment marks only forms that already contain that
-    structure.
-  color_and_tone: >-
-    Pine green, blue green, burnt vermilion, parchment, charcoal; warm note compact.
-  lighting_and_shadow: >-
-    Contained saturated accents over neutral shadows; imply no city, alarm, or night.
-  texture_and_material: >-
-    Irregular hatch on existing organic surfaces, smooth fills elsewhere; keep treatments
-    distinct.
-  camera_and_composition: >-
-    Respect layout; directional negative space within existing forms, no scenery.
-  atmosphere_and_mood: >-
-    Contour contrast suggests unease only when fitting; no threat narrative.
-  rendering_and_quality: >-
-    Local distortion, readable silhouettes, purposeful marks, no blanket fragmentation.
-  key_features: >-
-    Organic-angular contour, pine-vermilion palette, localized hatch, controlled negative
-    space
-  creative_brief: 'Apply a visual treatment centered on organic-angular contour, pine-vermilion palette, localized hatch, controlled negative space. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'Yuzo Takada Blue Seed look: nineties Japanese mythology horror-action in Tokyo, plant-like monsters, shrine maidens and soft rounded Takada character designs.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Takada designs, round faces, big eyes, work uniforms and shrine clothes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Monster green, blood-red accents, Tokyo grey and shrine white.
+  lighting_and_shadow: Eerie green monster glow and city night lights.
+  texture_and_material: Late analog hand-painted cel over painted backgrounds, with soft film grain and gentle cel edge softness.
+  camera_and_composition: Monster reveals in Tokyo streets and shrine interiors.
+  atmosphere_and_mood: Keep the requested mood with mythic urban horror.
+  rendering_and_quality: Mid-1990s horror-action television frame, in the recognizable hand of Yuzo Takada.
+  key_features: Yuzo Takada designs; Japanese myth; plant monsters; Tokyo
+  creative_brief: "Yuzo Takada Blue Seed look: nineties Japanese mythology horror-action in Tokyo, plant-like monsters, shrine maidens and soft rounded Takada character designs. Carry it through Yuzo Takada designs, Japanese myth, plant monsters, Tokyo. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -60,17 +47,12 @@ avoidRules:
   - fake UI
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-178.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -85,3 +67,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Yuzo Takada - Mythic Tokyo Purge
+styleAnchors:
+  - Yuzo Takada - Mythic Tokyo Purge

@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-108
 packId: pack_13
-name: Fairy-Tale Storybook Soft
+name: Kazuo Oga - Fairy-Tale Storybook Soft
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,34 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Use curved fine contours, pastel gouache glaze and lace-like edge rhythm to soften existing
-    forms; do not add flowers, ribbons or sparkle props.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: use softly layered pastel colors
-    with enough value contrast to keep forms clear; honor requested dark or saturated palettes.
-  lighting_and_shadow: >-
-    Favor diffused light and gentle edge bloom only when consistent with the prompt's lighting.
-  texture_and_material: >-
-    Combine fine ink contours, translucent gouache and light paper tooth; keep the depicted material
-    identifiable.
-  camera_and_composition: >-
-    Let soft curves guide the eye through the given layout; preserve crop, pose and structural
-    detail.
-  atmosphere_and_mood: >-
-    Storybook softness is a surface quality, not a requirement for innocence or a happy ending.
-  rendering_and_quality: >-
-    Apply the soft rendering to any subject and mood without adding a fairy, flower, ribbon, costume
-    or storybook scene. Keep important silhouettes and joins legible; no watermark, unrequested text
-    or interface.
-  key_features: >-
-    Curved contour; pastel gouache glaze; lace-like edge rhythm; soft light; fine paper tooth.
-  creative_brief: 'Apply this visual treatment to the requested content: Curved contour; pastel gouache glaze; lace-like edge rhythm; soft light; fine paper tooth. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Kazuo Oga background painting look as in Totoro: lush soft gouache forests, dappled light, gentle storybook atmosphere and painterly nature.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw figures small and simple within lush painted nature. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Lush gouache greens and soft warm light, true to the Kazuo Oga palette.
+  lighting_and_shadow: Dappled forest light, lit the way Kazuo Oga lights its scenes.
+  texture_and_material: Painterly gouache brushwork, with the surface finish of Kazuo Oga.
+  camera_and_composition: Lush storybook landscapes, framed the way Kazuo Oga composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with soft storybook wonder.
+  rendering_and_quality: Painterly gouache background illustration, in the recognizable hand of Kazuo Oga.
+  key_features: Kazuo Oga gouache; lush forests; storybook
+  creative_brief: "Kazuo Oga background painting look as in Totoro: lush soft gouache forests, dappled light, gentle storybook atmosphere and painterly nature. Carry it through Kazuo Oga gouache, lush forests, storybook. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look
@@ -53,16 +37,14 @@ avoidRules:
   - hard unmodulated edges cutting through gouache glaze
   - plastic sheen obscuring paper and pigment texture
   - contour loss obscuring subject identity
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-108.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, hard unmodulated edges cutting through gouache glaze,
-    plastic sheen obscuring paper and pigment texture, contour loss obscuring subject identity
+  negativePrompt: photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, hard unmodulated edges cutting through gouache glaze, plastic sheen obscuring paper and pigment texture, contour loss obscuring subject identity, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -71,8 +53,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Kazuo Oga - Fairy-Tale Storybook Soft
+styleAnchors:
+  - Kazuo Oga - Fairy-Tale Storybook Soft

@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-083
 packId: pack_13
-name: Low-Stakes Banter Flatness
+name: Kagami Yoshimizu - Low-Stakes Banter Flatness
 category: 4. Slice Of Life & Moe
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,17 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
+  - reference-title
 visualDna:
-  aesthetic: 'Thin, even contour lines and flat low-contrast cel fields give forms a calm, economical finish; expression changes stay small and clearly drawn.'
-  subject_treatment: 'Retain the requested design and pose; keep facial features restrained and proportionate, with no added reactions or assumed relationships.'
-  color_and_tone: 'Choose a narrow, muted range with neighboring hues and gentle value steps; preserve explicit colors and avoid a fixed pastel scheme.'
-  lighting_and_shadow: 'Use broad even illumination and only shallow shadow shapes; preserve harder shadows when the prompt calls for them.'
-  texture_and_material: 'Keep surfaces smooth and detail sparse, with faint grain only where it does not obscure the original material.'
-  camera_and_composition: 'Keep the exact requested framing and count; support readable spacing inside the layout the user supplies.'
-  atmosphere_and_mood: 'Let the requested emotion set facial intensity and contrast; low-key rendering must not flatten a strong expression.'
-  rendering_and_quality: 'Favor precise line closure, simple shadow grouping, and consistent edge weight; retain enough detail to identify every prompted form.'
-  key_features: 'Uniform fine contours; low-contrast color blocks; shallow shadow shapes; restrained feature marks; relaxed detail density.'
-  creative_brief: 'Render with quiet line weight and narrow value steps, letting small feature changes carry expression. Preserve the prompted subject, action, count, camera, and mood. Use it as a reusable look on any subject.'
+  aesthetic: 'Kagami Yoshimizu Lucky Star art: flat cute four-panel designs, big simple eyes, pastel color and low-stakes otaku chatter.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yoshimizu designs, big simple eyes, small mouths and casual clothes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Flat pastel pink, blue and lilac, true to the Kagami Yoshimizu palette.
+  lighting_and_shadow: Flat even light, lit the way Kagami Yoshimizu lights its scenes.
+  texture_and_material: Clean simple four-panel manga line with light screentone and plenty of white space around figures.
+  camera_and_composition: Four-panel chatter compositions, framed the way Kagami Yoshimizu composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with low-stakes chatty comfort.
+  rendering_and_quality: Flat cute four-panel illustration, in the recognizable hand of Kagami Yoshimizu.
+  key_features: Kagami Yoshimizu flat cute; four-panel; chatter
+  creative_brief: "Kagami Yoshimizu Lucky Star art: flat cute four-panel designs, big simple eyes, pastel color and low-stakes otaku chatter. Carry it through Kagami Yoshimizu flat cute, four-panel, chatter. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -44,15 +45,14 @@ avoidRules:
   - generic anime filter
   - prompt literal card reuse
   - fake UI
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-083.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock,
-    canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic
-    anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied
-    franchise costume, logo
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -61,8 +61,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - slice-of-life-and-moe
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Kagami Yoshimizu - Low-Stakes Banter Flatness
+styleAnchors:
+  - Kagami Yoshimizu - Low-Stakes Banter Flatness

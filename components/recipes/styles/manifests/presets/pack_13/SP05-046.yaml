@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-046
 packId: pack_13
-name: Luminous Letter Drama
+name: Maquia P.A. Works - Luminous Letter Drama
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,28 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Fine anime ink contour sits over translucent watercolor wash with delicate interior
-    strokes.
-  subject_treatment: >-
-    Keep subject, clothing, and gesture; describe existing folds without adding letters or
-    props.
-  color_and_tone: >-
-    Muted amber, slate blue, warm ivory, faded indigo; soft mids and a dark anchor.
-  lighting_and_shadow: >-
-    Warm-cool value drift across forms; broad shadows, no invented lamp or window.
-  texture_and_material: >-
-    Light paper tooth, diluted pigment edges, selective dry brush; no writing by default.
-  camera_and_composition: >-
-    Maintain viewpoint; use quiet margins without letter-writing composition.
-  atmosphere_and_mood: >-
-    Stillness comes through restrained contrast; the requested mood sets the tone.
-  rendering_and_quality: >-
-    Thin wash, legible ink, subtle paper texture; no global sepia haze.
-  key_features: >-
-    Fine ink contour, transparent pigment wash, amber-slate palette, open margins
-  creative_brief: 'Apply a visual treatment centered on fine ink contour, transparent pigment wash, amber-slate palette, open margins. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'P.A. Works Maquia look (2018) by Mari Okada: luminous fantasy drama, woven cloth of memory, glowing light, tender farewells and painterly beauty.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yuriko Ishii-derived designs, delicate faces and flowing fantasy clothes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Luminous white, soft gold and pale blue, true to the Maquia P.A. Works palette.
+  lighting_and_shadow: Luminous glowing light and soft dusk, lit the way Maquia P.A. Works lights its scenes.
+  texture_and_material: Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.
+  camera_and_composition: Emotional close-ups and luminous wides, framed the way Maquia P.A. Works composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with luminous tender farewell.
+  rendering_and_quality: Luminous painterly P.A. Works feature frame, in the recognizable hand of Maquia P.A. Works.
+  key_features: Maquia luminosity; woven memories; farewells
+  creative_brief: "P.A. Works Maquia look (2018) by Mari Okada: luminous fantasy drama, woven cloth of memory, glowing light, tender farewells and painterly beauty. Carry it through Maquia luminosity, woven memories, farewells. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -55,15 +45,14 @@ avoidRules:
   - generic anime filter
   - prompt literal card reuse
   - fake UI
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-046.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -72,8 +61,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - shojo-magical-girl-and-visionary-classics
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Maquia P.A. Works - Luminous Letter Drama
+styleAnchors:
+  - Maquia P.A. Works - Luminous Letter Drama

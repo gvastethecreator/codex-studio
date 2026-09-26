@@ -3,7 +3,7 @@ id: SP05-333
 packId: pack_13
 name: Hiroyuki Okiura - Quiet Human Naturalism
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,36 +13,16 @@ tags:
   - anime-style-spectrum
   - reference-title
 visualDna:
-  aesthetic: >-
-    A drawing technique, not a copy of any work: observational naturalism, believable weight,
-    quiet contour economy and environmental detail integrated into the same visual space.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: use restrained, natural color
-    and nuanced values; keep skin, object and setting colors faithful to the prompt.
-  lighting_and_shadow: >-
-    Favor plausible ambient daylight and soft contact shadows; follow the stated source and time of
-    day.
-  texture_and_material: >-
-    Use fine, economical line and small grounded texture; detail the environment only where it is
-    already present.
-  camera_and_composition: >-
-    Compose with patient observation and natural spacing; do not force a human-centered shot or
-    landscape.
-  atmosphere_and_mood: >-
-    Quiet realism comes from observed form and weight; preserve the requested tone rather than
-    making every subject solemn.
-  rendering_and_quality: >-
-    Apply the drawing and observation method to any subject; do not copy a character, shot, costume
-    or scene from the referenced artist. Keep important silhouettes and joins legible; no watermark,
-    unrequested text or interface.
-  key_features: >-
-    Observational naturalism; economical contour; believable weight; quiet environmental
-    integration; nuanced light.
-  creative_brief: 'Apply this visual treatment to the requested content: Observational naturalism; economical contour; believable weight; quiet environmental integration; nuanced light. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Hiroyuki Okiura animation look as in A Letter to Momo: meticulous realistic acting, accurate anatomy, quiet everyday gestures and warm natural light.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Okiura realism, accurate anatomy and natural gestures. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Warm natural everyday tones, true to the Hiroyuki Okiura palette.
+  lighting_and_shadow: Soft natural morning light, lit the way Hiroyuki Okiura lights its scenes.
+  texture_and_material: Precise realistic cel, with the surface finish of Hiroyuki Okiura.
+  camera_and_composition: Quiet observational compositions, framed the way Hiroyuki Okiura composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with quiet human warmth.
+  rendering_and_quality: Meticulous naturalist animation frame, in the recognizable hand of Hiroyuki Okiura.
+  key_features: Okiura naturalism; precise acting; everyday gestures
+  creative_brief: "Hiroyuki Okiura animation look as in A Letter to Momo: meticulous realistic acting, accurate anatomy, quiet everyday gestures and warm natural light. Carry it through Okiura naturalism, precise acting, everyday gestures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look
@@ -59,18 +39,12 @@ avoidRules:
   - surface glare masking material cues
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-333.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, distorted proportions obscuring observed weight,
-    decorative effects concealing naturalistic contour, surface glare masking material cues, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, distorted proportions obscuring observed weight, decorative effects concealing naturalistic contour, surface glare masking material cues, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -85,3 +59,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Hiroyuki Okiura - Quiet Human Naturalism
+styleAnchors:
+  - Hiroyuki Okiura - Quiet Human Naturalism

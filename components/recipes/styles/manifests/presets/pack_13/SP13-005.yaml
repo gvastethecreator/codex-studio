@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP13-005
 packId: pack_13
-name: Rainy Slice of Life
+name: Hanasaku Iroha P.A. Works - Rainy Slice of Life
 category: 2. Slice Of Life, School And Music
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,17 +12,18 @@ tags:
   - anime-character-and-lifestyle
   - anime
   - slice-of-life
+  - reference-title
 visualDna:
-  aesthetic: 'Rainy slice of life anime: quiet everyday frames with rain on glass, muted color and small gestures.'
-  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: restrained expressions, small hand gestures, detailed rain drops on glass and puddles, simple clean lines."
-  color_and_tone: Muted blue-grey with warm interior amber, used consistently across subject and background.
-  lighting_and_shadow: Overcast daylight or warm indoor lamps against rain, expressed through the style rather than photographic lighting.
-  texture_and_material: Painted rain streaks, droplets and wet reflections, visible at a glance as the signature of the style.
-  camera_and_composition: Framed through windows and doorways, arranged so the subject still reads at a glance.
-  atmosphere_and_mood: Calm, reflective, lonely and cozy, driven by the construction, color and rhythm.
-  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  key_features: rain on glass; muted palette; small gestures; warm interiors
-  creative_brief: "Rainy slice of life anime: quiet everyday frames with rain on glass, muted color and small gestures. Carry it through rain on glass, muted palette, small gestures, warm interiors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'P.A. Works Hanasaku Iroha look (2011): traditional hot-spring inn life, lush detailed painted interiors, soft rain and warm working-life drama.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with P.A. Works designs, soft expressive faces, inn kimono or work aprons and natural gestures. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Rain grey, warm wood amber, tatami gold and soft green garden tones.
+  lighting_and_shadow: Soft rainy window light and warm lamps glowing inside the wooden inn.
+  texture_and_material: Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.
+  camera_and_composition: Quiet interior compositions through sliding doors and rainy garden views.
+  atmosphere_and_mood: Keep the requested mood with warm rainy diligence.
+  rendering_and_quality: Detailed P.A. Works television frame with lush painted interiors.
+  key_features: Hanasaku Iroha inn; painted interiors; rain; warm working life
+  creative_brief: "P.A. Works Hanasaku Iroha look (2011): traditional hot-spring inn life, lush detailed painted interiors, soft rain and warm working-life drama. Carry it through Hanasaku Iroha inn, painted interiors, rain, warm working life. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -49,10 +50,14 @@ avoidRules:
   - UI overlay
   - franchise likeness
   - real person likeness
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-005.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, action chaos, neon heavy, watermark, text, logo, classroom dependency, idol stage dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, action chaos, neon heavy, watermark, text, logo, classroom dependency, idol stage dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -62,8 +67,12 @@ taxonomy:
     - anime-character-and-lifestyle
     - anime
     - slice-of-life
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Hanasaku Iroha P.A. Works - Rainy Slice of Life
+styleAnchors:
+  - Hanasaku Iroha P.A. Works - Rainy Slice of Life

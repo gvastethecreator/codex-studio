@@ -5,171 +5,167 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-003',
-    name: 'Soft Shojo Spring',
+    name: 'Arina Tanemura - Soft Shojo Spring',
+    displayName: 'Arina Tanemura - Soft Shojo Spring',
+    styleAnchors: ['Arina Tanemura - Soft Shojo Spring'],
     category: '2. Slice Of Life, School And Music',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, gritty, horror, watermark, text, logo, classroom dependency, idol stage dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, gritty, horror, watermark, text, logo, classroom dependency, idol stage dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Soft shojo spring anime: airy pastel frames with fine elegant lines, sparkling eyes and drifting petals.',
+        'Arina Tanemura shojo manga look: enormous sparkling eyes with many highlights, flowing ribbon-like hair, floral frames, lace and dreamy pastel romance.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: fine thin contours, tall slender figures, large glossy eyes with many highlights, petals and light sparkles drifting through the frame.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Tanemura designs, huge sparkling eyes, long flowing hair, delicate hands and frilly romantic clothing. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Pastel pink, mint, cream and pale sky blue, used consistently across subject and background.',
+        'Pastel cherry pink, lavender, mint and cream with sparkling white highlights everywhere.',
       lighting_and_shadow:
-        'Soft diffused spring daylight with gentle bloom, expressed through the style rather than photographic lighting.',
-      texture_and_material: 'Light cel with soft painted gradients and screentone-like sparkle.',
-      camera_and_composition: 'Intimate close and mid shots with lots of air.',
-      atmosphere_and_mood:
-        'Tender, hopeful, shy and dreamy, driven by the construction, color and rhythm.',
+        'Dreamy diffuse glow with sparkles, petals and soft halos around the figures.',
+      texture_and_material:
+        'Delicate fine shojo line, floral borders, lace, sparkle tones and screentone petals.',
+      camera_and_composition:
+        'Romantic framed close-ups surrounded by flowers, petals and decorative borders.',
+      atmosphere_and_mood: 'Keep the requested mood with sweet blossoming romance.',
       rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
-      key_features: 'fine lines; sparkling eyes; drifting petals; pastel bloom',
+        'Ornate sparkling shojo manga illustration with dreamy pastel romance.',
+      key_features: 'Arina Tanemura sparkle eyes; flowing hair; floral frames; pastel romance',
       creative_brief:
-        "Soft shojo spring anime: airy pastel frames with fine elegant lines, sparkling eyes and drifting petals. Carry it through fine lines, sparkling eyes, drifting petals, pastel bloom. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Arina Tanemura shojo manga look: enormous sparkling eyes with many highlights, flowing ribbon-like hair, floral frames, lace and dreamy pastel romance. Carry it through Arina Tanemura sparkle eyes, flowing hair, floral frames, pastel romance. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-005',
-    name: 'Rainy Slice of Life',
+    name: 'Hanasaku Iroha P.A. Works - Rainy Slice of Life',
+    displayName: 'Hanasaku Iroha P.A. Works - Rainy Slice of Life',
+    styleAnchors: ['Hanasaku Iroha P.A. Works - Rainy Slice of Life'],
     category: '2. Slice Of Life, School And Music',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, action chaos, neon heavy, watermark, text, logo, classroom dependency, idol stage dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, action chaos, neon heavy, watermark, text, logo, classroom dependency, idol stage dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Rainy slice of life anime: quiet everyday frames with rain on glass, muted color and small gestures.',
+        'P.A. Works Hanasaku Iroha look (2011): traditional hot-spring inn life, lush detailed painted interiors, soft rain and warm working-life drama.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: restrained expressions, small hand gestures, detailed rain drops on glass and puddles, simple clean lines.",
-      color_and_tone:
-        'Muted blue-grey with warm interior amber, used consistently across subject and background.',
-      lighting_and_shadow:
-        'Overcast daylight or warm indoor lamps against rain, expressed through the style rather than photographic lighting.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with P.A. Works designs, soft expressive faces, inn kimono or work aprons and natural gestures. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Rain grey, warm wood amber, tatami gold and soft green garden tones.',
+      lighting_and_shadow: 'Soft rainy window light and warm lamps glowing inside the wooden inn.',
       texture_and_material:
-        'Painted rain streaks, droplets and wet reflections, visible at a glance as the signature of the style.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.',
       camera_and_composition:
-        'Framed through windows and doorways, arranged so the subject still reads at a glance.',
-      atmosphere_and_mood:
-        'Calm, reflective, lonely and cozy, driven by the construction, color and rhythm.',
-      rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
-      key_features: 'rain on glass; muted palette; small gestures; warm interiors',
+        'Quiet interior compositions through sliding doors and rainy garden views.',
+      atmosphere_and_mood: 'Keep the requested mood with warm rainy diligence.',
+      rendering_and_quality: 'Detailed P.A. Works television frame with lush painted interiors.',
+      key_features: 'Hanasaku Iroha inn; painted interiors; rain; warm working life',
       creative_brief:
-        "Rainy slice of life anime: quiet everyday frames with rain on glass, muted color and small gestures. Carry it through rain on glass, muted palette, small gestures, warm interiors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "P.A. Works Hanasaku Iroha look (2011): traditional hot-spring inn life, lush detailed painted interiors, soft rain and warm working-life drama. Carry it through Hanasaku Iroha inn, painted interiors, rain, warm working life. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-013',
-    name: 'Backstage Nerves Anime',
-    displayName: 'Backstage Nerves Anime',
-    styleAnchors: ['Backstage Nerves Anime'],
+    name: 'Oshi no Ko Doga Kobo - Backstage Nerves Anime',
+    displayName: 'Oshi no Ko Doga Kobo - Backstage Nerves Anime',
+    styleAnchors: ['Oshi no Ko Doga Kobo - Backstage Nerves Anime'],
     category: '2. Slice Of Life, School And Music',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, gritty horror, low detail, watermark, text, logo, classroom dependency, idol stage dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
+      'a purple-haired idol with star pupils, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, gritty horror, low detail, watermark, text, logo, classroom dependency, idol stage dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Backstage nerves anime: the look of the minutes before a performance, dim wings, mirror bulbs and a slice of stage light.',
+        'Doga Kobo Oshi no Ko look (2023): glittering idol showbusiness, star-shaped highlights in eyes, dazzling stage lights and dark backstage ambition.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: tight faces and hands, small nervous gestures, costumes half-done, the stage glimpsed as a bright strip.",
-      color_and_tone:
-        'Dim backstage browns with mirror-bulb warm white and stage-light color spill.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with glossy idol designs, big eyes with star-shaped highlights, stage costumes and nervous or ambitious expressions. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Stage pink, gold glitter, deep backstage shadow and mirror-bulb white.',
       lighting_and_shadow:
-        'Mirror bulbs and stage light leaking through curtains, expressed through the style rather than photographic lighting.',
+        'Bulb-ringed mirror light, dazzling stage spotlights and dim backstage shadow.',
       texture_and_material:
-        'Cel with soft glow and dust in light, visible at a glance as the signature of the style.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.',
       camera_and_composition:
-        'Close framing among curtains, cables and mirrors, arranged so the subject still reads at a glance.',
-      atmosphere_and_mood:
-        'Nervous, private, hopeful and tense, driven by the construction, color and rhythm.',
-      rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
-      key_features: 'mirror bulbs; stage light strip; nervous hands',
+        'Mirror compositions in cramped dressing rooms and dazzling wide shots of the stage.',
+      atmosphere_and_mood: 'Keep the requested mood with glittering anxious ambition.',
+      rendering_and_quality: 'Glossy Doga Kobo frame with idol sparkle and backstage darkness.',
+      key_features: 'Oshi no Ko star eyes; idol stages; mirror bulbs; dark ambition',
       creative_brief:
-        "Backstage nerves anime: the look of the minutes before a performance, dim wings, mirror bulbs and a slice of stage light. Carry it through mirror bulbs, stage light strip, nervous hands. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Doga Kobo Oshi no Ko look (2023): glittering idol showbusiness, star-shaped highlights in eyes, dazzling stage lights and dark backstage ambition. Carry it through Oshi no Ko star eyes, idol stages, mirror bulbs, dark ambition. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-015',
-    name: 'Dessert Cafe Comedy',
+    name: 'Restaurant to Another World - Dessert Cafe Comedy',
+    displayName: 'Restaurant to Another World - Dessert Cafe Comedy',
+    styleAnchors: ['Restaurant to Another World - Dessert Cafe Comedy'],
     category: '2. Slice Of Life, School And Music',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, horror, dark gritty, watermark, text, logo, classroom dependency, idol stage dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, horror, dark gritty, watermark, text, logo, classroom dependency, idol stage dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Dessert cafe comedy anime: warm, sugary comedic frames with glossy desserts and big reaction faces.',
+        'Silver Link Restaurant to Another World look (2017): cozy Western-style restaurant, glistening food close-ups and fantasy patrons blissfully tasting modern dishes.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: rounded friendly designs, exaggerated reaction faces, chibi moments, glossy dessert close-ups.",
-      color_and_tone:
-        'Cream, strawberry pink, caramel and mint, used consistently across subject and background.',
-      lighting_and_shadow:
-        'Warm cozy cafe light, expressed through the style rather than photographic lighting.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with soft fantasy designs, knights, elves and dragons as patrons, with blissful tasting expressions. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Warm wood brown, cream, strawberry red and glossy food highlights.',
+      lighting_and_shadow: 'Warm restaurant lamplight with glossy highlights on desserts.',
       texture_and_material:
-        'Soft cel with glossy dessert highlights, visible at a glance as the signature of the style.',
-      camera_and_composition:
-        'Table-level framing with desserts in the foreground, arranged so the subject still reads at a glance.',
-      atmosphere_and_mood:
-        'Sweet, silly, cozy and cheerful, driven by the construction, color and rhythm.',
-      rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
-      key_features: 'glossy desserts; reaction faces; warm light',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.',
+      camera_and_composition: 'Food close-ups and blissful reaction shots at restaurant tables.',
+      atmosphere_and_mood: 'Keep the requested mood with cozy blissful comedy.',
+      rendering_and_quality: 'Warm cozy fantasy television frame with glistening food.',
+      key_features: 'Restaurant to Another World; glistening desserts; fantasy patrons; bliss',
       creative_brief:
-        "Dessert cafe comedy anime: warm, sugary comedic frames with glossy desserts and big reaction faces. Carry it through glossy desserts, reaction faces, warm light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Silver Link Restaurant to Another World look (2017): cozy Western-style restaurant, glistening food close-ups and fantasy patrons blissfully tasting modern dishes. Carry it through Restaurant to Another World, glistening desserts, fantasy patrons, bliss. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-018',
-    name: 'Festival Lantern Summer',
+    name: 'The Eccentric Family P.A. Works - Festival Lantern Summer',
+    displayName: 'The Eccentric Family P.A. Works - Festival Lantern Summer',
+    styleAnchors: ['The Eccentric Family P.A. Works - Festival Lantern Summer'],
     category: '2. Slice Of Life, School And Music',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, bleak horror, low detail, watermark, text, logo, classroom dependency, idol stage dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, bleak horror, low detail, watermark, text, logo, classroom dependency, idol stage dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Festival lantern summer anime: warm summer-night frames with rows of lanterns, yukata-like robes and firefly glow.',
+        'P.A. Works The Eccentric Family look (2013): vivid Kyoto nights, tanuki and tengu shapeshifters, festival lanterns, flying tea houses and stylized painted cityscapes.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: soft lines, flowing robes and sleeves, faces lit warmly from lanterns, fireworks drawn as soft bursts.",
-      color_and_tone:
-        'Lantern orange, deep indigo night and firework colors, used consistently across subject and background.',
-      lighting_and_shadow:
-        'Lantern and firework light on faces, expressed through the style rather than photographic lighting.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with stylized simple designs, kimono and yukata, and shapeshifting animals with expressive faces. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Lantern red, festival gold, Kyoto night indigo and vivid greens.',
+      lighting_and_shadow: 'Warm paper lantern light on summer nights and glowing festival stalls.',
       texture_and_material:
-        'Cel with bokeh lantern glows, visible at a glance as the signature of the style.',
+        'Clean flat cel with stylized photo-derived Kyoto backgrounds and bold color.',
       camera_and_composition:
-        'Crowd-level frames with lanterns receding, arranged so the subject still reads at a glance.',
-      atmosphere_and_mood:
-        'Nostalgic, warm, romantic and fleeting, driven by the construction, color and rhythm.',
-      rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
-      key_features: 'lantern rows; fireworks; warm faces; summer night',
+        'Festival street wides and whimsical flying scenes over Kyoto rooftops.',
+      atmosphere_and_mood: 'Keep the requested mood with whimsical summer festivity.',
+      rendering_and_quality: 'Vivid P.A. Works frame with stylized Kyoto festival nights.',
+      key_features: 'Eccentric Family Kyoto; tanuki and tengu; lanterns; flying tea houses',
       creative_brief:
-        "Festival lantern summer anime: warm summer-night frames with rows of lanterns, yukata-like robes and firefly glow. Carry it through lantern rows, fireworks, warm faces, summer night. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "P.A. Works The Eccentric Family look (2013): vivid Kyoto nights, tanuki and tengu shapeshifters, festival lanterns, flying tea houses and stylized painted cityscapes. Carry it through Eccentric Family Kyoto, tanuki and tengu, lanterns, flying tea houses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-056',
-    name: 'Concert Spotlight Anime',
-    displayName: 'Concert Spotlight Anime',
-    styleAnchors: ['Concert Spotlight Anime', 'live performance anime', 'spotlights'],
+    name: 'Carole and Tuesday BONES - Concert Spotlight Anime',
+    displayName: 'Carole and Tuesday BONES - Concert Spotlight Anime',
+    styleAnchors: [
+      'Carole and Tuesday BONES - Concert Spotlight Anime',
+      'live performance anime',
+      'spotlights',
+    ],
     category: '2. Slice Of Life, School And Music',
     domain: 'live performance anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Concert spotlight anime: live-performance frames with blazing spotlights, lens flares, sweat and silhouetted crowds.',
+        'BONES Carole and Tuesday look (2019): future Mars music scene, soft realistic designs, detailed instruments, warm concert lights and heartfelt performances.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: dynamic performing poses, flying sweat and hair, instruments drawn precisely, crowd as silhouettes with raised hands.",
-      color_and_tone: 'Saturated stage colors: magenta, blue and gold against black.',
-      lighting_and_shadow:
-        'Spotlights, backlight and lens flares, expressed through the style rather than photographic lighting.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with soft realistic designs, expressive faces, stage clothes and precisely drawn instruments. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Warm stage amber, Mars dusk orange, spotlight white and soft blue.',
+      lighting_and_shadow: 'Blazing spotlights, lens flares and warm crowd glow.',
       texture_and_material:
-        'Cel with glow, haze and flare overlays, visible at a glance as the signature of the style.',
-      camera_and_composition: 'Low angle from the crowd or wide from behind the band.',
-      atmosphere_and_mood:
-        'Euphoric, loud, sweaty and alive, driven by the construction, color and rhythm.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.',
+      camera_and_composition:
+        'Concert stage wide shots and emotional close-ups of performers mid-song.',
+      atmosphere_and_mood: 'Keep the requested mood with heartfelt musical triumph.',
       rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+        'Polished BONES television frame with detailed musical performance animation.',
       creative_brief:
-        "Concert spotlight anime: live-performance frames with blazing spotlights, lens flares, sweat and silhouetted crowds. Carry it through spotlights, lens flares, sweat, crowd silhouettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'spotlights; lens flares; sweat; crowd silhouettes',
+        "BONES Carole and Tuesday look (2019): future Mars music scene, soft realistic designs, detailed instruments, warm concert lights and heartfelt performances. Carry it through Carole and Tuesday concerts, detailed instruments, spotlights, heartfelt. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Carole and Tuesday concerts; detailed instruments; spotlights; heartfelt',
     },
     ui: {
       previewStatus: 'pending',
@@ -177,33 +173,32 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-057',
-    name: 'Afterschool Golden Hour Anime',
-    displayName: 'Afterschool Golden Hour Anime',
-    styleAnchors: ['Afterschool Golden Hour Anime', 'late afternoon light anime', 'orange shafts'],
+    name: 'Tsukigakirei feel. - Afterschool Golden Hour Anime',
+    displayName: 'Tsukigakirei feel. - Afterschool Golden Hour Anime',
+    styleAnchors: [
+      'Tsukigakirei feel. - Afterschool Golden Hour Anime',
+      'late afternoon light anime',
+      'orange shafts',
+    ],
     category: '2. Slice Of Life, School And Music',
     domain: 'late afternoon light anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Afterschool golden hour anime: long orange light through windows, dust motes and long shadows at the end of the day.',
+        'feel. Tsukigakirei look (2017): understated realistic school romance, golden hour light through classrooms, soft grain and gentle rotoscope-like acting.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: simple quiet poses, long cast shadows, window frames and silhouettes against the light.",
-      color_and_tone:
-        'Deep orange and amber with violet shadows, used consistently across subject and background.',
-      lighting_and_shadow:
-        'Low sun through windows with bright shafts, expressed through the style rather than photographic lighting.',
-      texture_and_material:
-        'Cel with painted light shafts and floating dust, visible at a glance as the signature of the style.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with understated realistic designs, simple faces, uniforms and shy natural gestures. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Golden hour orange, soft classroom beige and dusty blue shadows.',
+      lighting_and_shadow: 'Long golden afternoon light through windows and floating dust motes.',
+      texture_and_material: 'Soft grainy digital cel with realistic painted classrooms.',
       camera_and_composition:
-        'Wide still frames with strong window geometry, arranged so the subject still reads at a glance.',
-      atmosphere_and_mood:
-        'Nostalgic, bittersweet, quiet and warm, driven by the construction, color and rhythm.',
-      rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+        'Quiet classroom framing and long unhurried afternoon shots in empty halls.',
+      atmosphere_and_mood: 'Keep the requested mood with shy golden tenderness.',
+      rendering_and_quality: 'Understated realistic school frame with golden hour glow.',
       creative_brief:
-        "Afterschool golden hour anime: long orange light through windows, dust motes and long shadows at the end of the day. Carry it through orange shafts, long shadows, dust motes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'orange shafts; long shadows; dust motes',
+        "feel. Tsukigakirei look (2017): understated realistic school romance, golden hour light through classrooms, soft grain and gentle rotoscope-like acting. Carry it through Tsukigakirei golden hour, understated realism, dust motes, shyness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Tsukigakirei golden hour; understated realism; dust motes; shyness',
     },
     ui: {
       previewStatus: 'pending',
@@ -211,33 +206,33 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-058',
-    name: 'Winter Breath Quiet Anime',
-    displayName: 'Winter Breath Quiet Anime',
-    styleAnchors: ['Winter Breath Quiet Anime', 'winter slice of life anime', 'visible breath'],
+    name: 'Makoto Shinkai 5cm - Winter Breath Quiet Anime',
+    displayName: 'Makoto Shinkai 5cm - Winter Breath Quiet Anime',
+    styleAnchors: [
+      'Makoto Shinkai 5cm - Winter Breath Quiet Anime',
+      'winter slice of life anime',
+      'visible breath',
+    ],
     category: '2. Slice Of Life, School And Music',
     domain: 'winter slice of life anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Winter breath anime: hushed snowy frames with visible breath, red noses, scarves and pale blue light.',
+        'Makoto Shinkai 5 Centimeters per Second look (2007): heavy snowfall, lonely train stations, visible breath, glowing streetlights and melancholy distance.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: soft lines, bundled clothes, visible breath clouds, rosy cheeks and falling snow.",
-      color_and_tone:
-        'Pale blue, white and a warm red accent, used consistently across subject and background.',
-      lighting_and_shadow:
-        'Soft overcast snow light, expressed through the style rather than photographic lighting.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with early Shinkai designs, simple faces, winter coats and scarves, small in wide scenes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Snow white, night blue, streetlight amber and train-window glow.',
+      lighting_and_shadow: 'Glowing streetlights in heavy snow and warm windows at night.',
       texture_and_material:
-        'Cel with painted snow and soft glow, visible at a glance as the signature of the style.',
+        'Painterly digital backgrounds with dense detailed snowfall and glowing windows.',
       camera_and_composition:
-        'Quiet mid shots with snow falling, arranged so the subject still reads at a glance.',
-      atmosphere_and_mood:
-        'Hushed, tender, cold and cozy, driven by the construction, color and rhythm.',
-      rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+        'Lonely wide shots of tiny rural stations and endless snowfields at night.',
+      atmosphere_and_mood: 'Keep the requested mood with quiet melancholy distance.',
+      rendering_and_quality: 'Painterly early Makoto Shinkai frame with snowy lonely melancholy.',
       creative_brief:
-        "Winter breath anime: hushed snowy frames with visible breath, red noses, scarves and pale blue light. Carry it through visible breath, scarves, falling snow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'visible breath; scarves; falling snow',
+        "Makoto Shinkai 5 Centimeters per Second look (2007): heavy snowfall, lonely train stations, visible breath, glowing streetlights and melancholy distance. Carry it through Shinkai 5cm snow, lonely stations, visible breath, distance. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Shinkai 5cm snow; lonely stations; visible breath; distance',
     },
     ui: {
       previewStatus: 'pending',
@@ -245,33 +240,31 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-059',
-    name: 'Night Study Lamp Anime',
-    displayName: 'Night Study Lamp Anime',
-    styleAnchors: ['Night Study Lamp Anime', 'late-night study anime', 'lamp pool'],
+    name: 'Kamome Shirahama - Night Study Lamp Anime',
+    displayName: 'Kamome Shirahama - Night Study Lamp Anime',
+    styleAnchors: [
+      'Kamome Shirahama - Night Study Lamp Anime',
+      'late-night study anime',
+      'lamp pool',
+    ],
     category: '2. Slice Of Life, School And Music',
     domain: 'late-night study anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'glowing written runes, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Night study lamp anime: small pools of warm desk light in dark rooms, tired eyes and late-night focus.',
+        'Kamome Shirahama Witch Hat Atelier look: exquisite fine-line illustration, magic drawn with ink, ornate art nouveau details, cozy witch studios and wonder.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: tired soft faces, messy hair, hands with pens, cluttered desks drawn in detail.",
-      color_and_tone:
-        'Warm lamp yellow in deep blue darkness, used consistently across subject and background.',
-      lighting_and_shadow:
-        'Single desk lamp pool of light, expressed through the style rather than photographic lighting.',
-      texture_and_material:
-        'Cel with soft glow, visible at a glance as the signature of the style.',
-      camera_and_composition:
-        'Close desk framing, arranged so the subject still reads at a glance.',
-      atmosphere_and_mood:
-        'Quiet, tired, focused and intimate, driven by the construction, color and rhythm.',
-      rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Shirahama designs, delicate faces, flowing hair, pointed hats and ornate robes drawn in fine ink. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Warm lamp amber, ink black, soft teal and parchment tones.',
+      lighting_and_shadow: 'Warm brass lamp glow and glowing magical ink sigils.',
+      texture_and_material: 'Exquisite fine pen lines, hatching and art nouveau ornament.',
+      camera_and_composition: 'Cozy studio compositions filled with detailed tools and books.',
+      atmosphere_and_mood: 'Keep the requested mood with cozy studious wonder.',
+      rendering_and_quality: 'Exquisite fine-line fantasy illustration with art nouveau ornament.',
       creative_brief:
-        "Night study lamp anime: small pools of warm desk light in dark rooms, tired eyes and late-night focus. Carry it through lamp pool, darkness, tired focus. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'lamp pool; darkness; tired focus',
+        "Kamome Shirahama Witch Hat Atelier look: exquisite fine-line illustration, magic drawn with ink, ornate art nouveau details, cozy witch studios and wonder. Carry it through Kamome Shirahama fine line, ink magic, art nouveau, cozy studios. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Kamome Shirahama fine line; ink magic; art nouveau; cozy studios',
     },
     ui: {
       previewStatus: 'pending',
@@ -279,33 +272,34 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-060',
-    name: 'Nineties School Cel Nostalgia',
-    displayName: 'Nineties School Cel Nostalgia',
-    styleAnchors: ['Nineties School Cel Nostalgia', '90s cel anime look', 'film grain'],
+    name: 'Marmalade Boy Toei - Nineties School Cel Nostalgia',
+    displayName: 'Marmalade Boy Toei - Nineties School Cel Nostalgia',
+    styleAnchors: [
+      'Marmalade Boy Toei - Nineties School Cel Nostalgia',
+      '90s cel anime look',
+      'film grain',
+    ],
     category: '2. Slice Of Life, School And Music',
     domain: '90s cel anime look',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        '90s cel anime: hand-painted cel look with muted palette, slightly soft film grain and classic character proportions.',
+        'Toei Marmalade Boy look (1994): nineties shojo romance cel, big glossy eyes, pastel skies, seaside towns and warm nostalgic color.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: classic 90s proportions, thin lines, hard two-tone cel shadows and slightly soft film transfer.",
-      color_and_tone:
-        'Muted pastels with film warmth, used consistently across subject and background.',
-      lighting_and_shadow:
-        'Soft film light, expressed through the style rather than photographic lighting.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Akemi Yoshizumi-derived nineties designs, big glossy eyes, flowing hair and casual nineties clothes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Pastel sky, sunset peach, sea blue and warm nostalgic tones.',
+      lighting_and_shadow: 'Warm nostalgic sunset light with soft cel shadows.',
       texture_and_material:
-        'Film grain and cel paint, visible at a glance as the signature of the style.',
+        'Late analog hand-painted cel over painted backgrounds, with soft film grain and gentle cel edge softness.',
       camera_and_composition:
-        'Classic TV framing, arranged so the subject still reads at a glance.',
-      atmosphere_and_mood:
-        'Nostalgic, warm, simple and sincere, driven by the construction, color and rhythm.',
+        'Romantic seaside walks at sunset and nostalgic views over small towns.',
+      atmosphere_and_mood: 'Keep the requested mood with warm nostalgic romance.',
       rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+        'Nostalgic mid-1990s shojo television frame with glossy romantic eyes.',
       creative_brief:
-        "90s cel anime: hand-painted cel look with muted palette, slightly soft film grain and classic character proportions. Carry it through film grain, muted cel, 90s proportions. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'film grain; muted cel; 90s proportions',
+        "Toei Marmalade Boy look (1994): nineties shojo romance cel, big glossy eyes, pastel skies, seaside towns and warm nostalgic color. Carry it through Marmalade Boy nineties cel, glossy eyes, seaside towns, nostalgia. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Marmalade Boy nineties cel; glossy eyes; seaside towns; nostalgia',
     },
     ui: {
       previewStatus: 'pending',
@@ -313,33 +307,33 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-061',
-    name: 'Garage Band Grit Anime',
-    displayName: 'Garage Band Grit Anime',
-    styleAnchors: ['Garage Band Grit Anime', 'rough rock band anime', 'rough lines'],
+    name: 'Girls Band Cry Toei - Garage Band Grit Anime',
+    displayName: 'Girls Band Cry Toei - Garage Band Grit Anime',
+    styleAnchors: [
+      'Girls Band Cry Toei - Garage Band Grit Anime',
+      'rough rock band anime',
+      'rough lines',
+    ],
     category: '2. Slice Of Life, School And Music',
     domain: 'rough rock band anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Garage band anime: raw, energetic frames with rough lines, amp glow, sweat and cramped rehearsal spaces.',
+        'Toei Girls Band Cry look (2024): expressive cel-shaded 3D with hand-drawn feel, raw rock band grit, cramped rehearsal spaces and messy emotional honesty.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: rough energetic lines, loose expressive faces, instruments slightly distorted by motion.",
-      color_and_tone:
-        'Grimy greys with amp red and bulb yellow, used consistently across subject and background.',
-      lighting_and_shadow:
-        'Bare bulb and amp glow, expressed through the style rather than photographic lighting.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people as cel-shaded 3D figures with expressive faces, band tees and worn instruments. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Grimy garage browns, amp black, neon pink and fluorescent white.',
+      lighting_and_shadow: 'Bare bulb garage light and harsh stage spots.',
       texture_and_material:
-        'Rough cel with grain, visible at a glance as the signature of the style.',
+        'Cel-shaded 3D figures with hand-drawn line accents and expressive faces.',
       camera_and_composition:
-        'Cramped low angles, arranged so the subject still reads at a glance.',
-      atmosphere_and_mood:
-        'Raw, loud, messy and passionate, driven by the construction, color and rhythm.',
-      rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+        'Cramped rehearsal-room framing and sweaty live stage shots in tiny venues.',
+      atmosphere_and_mood: 'Keep the requested mood with raw emotional grit.',
+      rendering_and_quality: 'Expressive cel-shaded rock band frame with raw emotional energy.',
       creative_brief:
-        "Garage band anime: raw, energetic frames with rough lines, amp glow, sweat and cramped rehearsal spaces. Carry it through rough lines, amp glow, sweat. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'rough lines; amp glow; sweat',
+        "Toei Girls Band Cry look (2024): expressive cel-shaded 3D with hand-drawn feel, raw rock band grit, cramped rehearsal spaces and messy emotional honesty. Carry it through Girls Band Cry grit, cel-shaded 3D, rehearsal rooms, raw emotion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Girls Band Cry grit; cel-shaded 3D; rehearsal rooms; raw emotion',
     },
     ui: {
       previewStatus: 'pending',
@@ -347,32 +341,33 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-062',
-    name: 'Classical Recital Hush Anime',
-    displayName: 'Classical Recital Hush Anime',
-    styleAnchors: ['Classical Recital Hush Anime', 'classical music anime', 'polished instruments'],
+    name: 'Makoto Isshiki - Classical Recital Hush Anime',
+    displayName: 'Makoto Isshiki - Classical Recital Hush Anime',
+    styleAnchors: [
+      'Makoto Isshiki - Classical Recital Hush Anime',
+      'classical music anime',
+      'polished instruments',
+    ],
     category: '2. Slice Of Life, School And Music',
     domain: 'classical music anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Classical recital anime: hushed concert-hall frames, polished instruments, soft spotlight and suspended breath.',
+        'Makoto Isshiki Forest of Piano look: piano prodigies, forests of music, elegant concert halls and hushed intense performances.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: elegant restrained lines, precise hands on instruments, formal clothing.",
-      color_and_tone:
-        'Deep wood browns, black, cream and gold, used consistently across subject and background.',
-      lighting_and_shadow:
-        'Soft spotlight in a dark hall, expressed through the style rather than photographic lighting.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Isshiki designs, elegant pianists with long fingers, concert clothes and focused faces. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Concert black, piano gloss, forest green and warm stage gold.',
+      lighting_and_shadow: 'Single soft spotlight and reflections on glossy piano.',
       texture_and_material:
-        'Cel with polished reflections, visible at a glance as the signature of the style.',
-      camera_and_composition: 'Stage framing, arranged so the subject still reads at a glance.',
-      atmosphere_and_mood:
-        'Hushed, elegant, intense and emotional, driven by the construction, color and rhythm.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.',
+      camera_and_composition: 'Hushed concert hall wides and close-ups on hands.',
+      atmosphere_and_mood: 'Keep the requested mood with hushed intense focus.',
       rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+        'Elegant classical music television frame with hushed tension and focus.',
       creative_brief:
-        "Classical recital anime: hushed concert-hall frames, polished instruments, soft spotlight and suspended breath. Carry it through polished instruments, spotlight, hush. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'polished instruments; spotlight; hush',
+        "Makoto Isshiki Forest of Piano look: piano prodigies, forests of music, elegant concert halls and hushed intense performances. Carry it through Forest of Piano, concert halls, hands on keys, hush. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Forest of Piano; concert halls; hands on keys; hush',
     },
     ui: {
       previewStatus: 'pending',
@@ -380,31 +375,34 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-063',
-    name: 'Seaside Summer Haze Anime',
-    displayName: 'Seaside Summer Haze Anime',
-    styleAnchors: ['Seaside Summer Haze Anime', 'summer seaside anime', 'cumulus towers'],
+    name: 'Nagi-Asu P.A. Works - Seaside Summer Haze Anime',
+    displayName: 'Nagi-Asu P.A. Works - Seaside Summer Haze Anime',
+    styleAnchors: [
+      'Nagi-Asu P.A. Works - Seaside Summer Haze Anime',
+      'summer seaside anime',
+      'cumulus towers',
+    ],
     category: '2. Slice Of Life, School And Music',
     domain: 'summer seaside anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Seaside summer haze anime: saturated blue skies, towering cumulus clouds, heat shimmer and bright white light.',
+        'P.A. Works Nagi-Asu: A Lull in the Sea look (2013): shimmering seaside towns, underwater villages, summer haze and luminous blue water light.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: clean simple lines, sun-squinting faces, sweat beads, hair and shirts moving in sea wind.",
-      color_and_tone: 'Saturated cobalt sky, white clouds, sea teal and sun-bleached colors.',
-      lighting_and_shadow: 'Harsh midday sun with heat haze and deep short shadows.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with soft P.A. Works designs, big clear eyes, summer clothes and sea-dweller features. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Luminous sea blue, cumulus white, sandy beige and coral.',
+      lighting_and_shadow:
+        'Shimmering summer haze above the harbor and caustic underwater light below.',
       texture_and_material:
-        'Cel with painted clouds and shimmer, visible at a glance as the signature of the style.',
-      camera_and_composition:
-        'Wide horizon frames with big sky, arranged so the subject still reads at a glance.',
-      atmosphere_and_mood:
-        'Free, lazy, nostalgic and bright, driven by the construction, color and rhythm.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.',
+      camera_and_composition: 'Harbor walls, big cumulus skies and underwater views.',
+      atmosphere_and_mood: 'Keep the requested mood with shimmering summer longing.',
       rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+        'Luminous P.A. Works seaside frame with glowing water and summer skies.',
       creative_brief:
-        "Seaside summer haze anime: saturated blue skies, towering cumulus clouds, heat shimmer and bright white light. Carry it through cumulus towers, heat haze, cobalt sky, sea wind. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'cumulus towers; heat haze; cobalt sky; sea wind',
+        "P.A. Works Nagi-Asu: A Lull in the Sea look (2013): shimmering seaside towns, underwater villages, summer haze and luminous blue water light. Carry it through Nagi-Asu sea light, summer haze, seaside towns, underwater villages. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Nagi-Asu sea light; summer haze; seaside towns; underwater villages',
     },
     ui: {
       previewStatus: 'pending',
@@ -412,32 +410,33 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-064',
-    name: 'Dawn Practice Mist Anime',
-    displayName: 'Dawn Practice Mist Anime',
-    styleAnchors: ['Dawn Practice Mist Anime', 'early morning practice anime', 'mist layers'],
+    name: 'Vagabond - Dawn Practice Mist Anime',
+    displayName: 'Vagabond - Dawn Practice Mist Anime',
+    styleAnchors: [
+      'Vagabond - Dawn Practice Mist Anime',
+      'early morning practice anime',
+      'mist layers',
+    ],
     category: '2. Slice Of Life, School And Music',
     domain: 'early morning practice anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a wild-haired swordsman with two swords, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Dawn practice anime: cold blue early mornings, mist on fields, breath and determined solitary training.',
+        'Takehiko Inoue Vagabond look: masterful brush ink and wash, misty landscapes, realistic sweating swordsmen and meditative discipline.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: focused determined faces, repeated practice poses, mist drawn in soft layers.",
-      color_and_tone: 'Cold blue-grey with the first pale gold on the horizon.',
-      lighting_and_shadow:
-        'Pre-dawn blue light turning gold, expressed through the style rather than photographic lighting.',
-      texture_and_material:
-        'Cel with soft mist layers, visible at a glance as the signature of the style.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Inoue realism, lean bodies, sweat, wild hair and simple period clothes painted with brush. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Ink black and grey wash with pale mist white.',
+      lighting_and_shadow: 'Pale dawn mist light rendered entirely by soft ink wash gradients.',
+      texture_and_material: 'Masterful brush strokes, dry brush and ink wash.',
       camera_and_composition:
-        'Wide lonely frames with small figures, arranged so the subject still reads at a glance.',
-      atmosphere_and_mood:
-        'Determined, lonely, quiet and hopeful, driven by the construction, color and rhythm.',
+        'Misty wide landscapes and close brush-painted faces full of sweat and focus.',
+      atmosphere_and_mood: 'Keep the requested mood with meditative disciplined focus.',
       rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+        'Masterful brush-ink manga illustration with meditative realism and misty depth.',
       creative_brief:
-        "Dawn practice anime: cold blue early mornings, mist on fields, breath and determined solitary training. Carry it through mist layers, pre-dawn blue, solitary practice. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'mist layers; pre-dawn blue; solitary practice',
+        "Takehiko Inoue Vagabond look: masterful brush ink and wash, misty landscapes, realistic sweating swordsmen and meditative discipline. Carry it through Vagabond brush ink, mist, realistic swordsmen, meditation. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Vagabond brush ink; mist; realistic swordsmen; meditation',
     },
     ui: {
       previewStatus: 'pending',
@@ -445,32 +444,29 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-065',
-    name: 'Rooftop Wind Anime',
-    displayName: 'Rooftop Wind Anime',
-    styleAnchors: ['Rooftop Wind Anime', 'wind and sky anime', 'windblown cloth'],
+    name: 'Studio Colorido - Rooftop Wind Anime',
+    displayName: 'Studio Colorido - Rooftop Wind Anime',
+    styleAnchors: ['Studio Colorido - Rooftop Wind Anime', 'wind and sky anime', 'windblown cloth'],
     category: '2. Slice Of Life, School And Music',
     domain: 'wind and sky anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Rooftop wind anime: sky-dominated frames with strong wind, flapping clothes and hair, and sweeping clouds.',
+        'Studio Colorido look as in Penguin Highway and A Whisker Away: bright airy summer towns, strong wind, fluffy clouds, cheerful designs and whimsical motion.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: dynamic windblown hair and cloth, open body poses, speed of clouds drawn with long strokes.",
-      color_and_tone: 'Bright sky blue and white with small warm accents.',
-      lighting_and_shadow:
-        'Clear daylight with fast cloud shadows, expressed through the style rather than photographic lighting.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with soft cheerful designs, rounded faces, fluttering clothes and windswept hair. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Bright sky blue, cloud white, fresh green and warm sun.',
+      lighting_and_shadow: 'Bright airy summer light with wind-tossed shadows and glowing clouds.',
       texture_and_material:
-        'Cel with painted streaking clouds, visible at a glance as the signature of the style.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.',
       camera_and_composition:
-        'Low angles with most of the frame sky, arranged so the subject still reads at a glance.',
-      atmosphere_and_mood:
-        'Free, restless, open and youthful, driven by the construction, color and rhythm.',
-      rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+        'Rooftop and hillside wide shots with hats, papers and kites flying in the wind.',
+      atmosphere_and_mood: 'Keep the requested mood with breezy whimsical freedom.',
+      rendering_and_quality: 'Bright airy Studio Colorido frame with playful windswept motion.',
       creative_brief:
-        "Rooftop wind anime: sky-dominated frames with strong wind, flapping clothes and hair, and sweeping clouds. Carry it through windblown cloth, big sky, streaking clouds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'windblown cloth; big sky; streaking clouds',
+        "Studio Colorido look as in Penguin Highway and A Whisker Away: bright airy summer towns, strong wind, fluffy clouds, cheerful designs and whimsical motion. Carry it through Studio Colorido wind, airy summer, fluffy clouds, whimsy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Studio Colorido wind; airy summer; fluffy clouds; whimsy',
     },
     ui: {
       previewStatus: 'pending',
@@ -478,32 +474,33 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-066',
-    name: 'Late Train Window Anime',
-    displayName: 'Late Train Window Anime',
-    styleAnchors: ['Late Train Window Anime', 'night train melancholy anime', 'window reflections'],
+    name: 'Gisaburo Sugii - Late Train Window Anime',
+    displayName: 'Gisaburo Sugii - Late Train Window Anime',
+    styleAnchors: [
+      'Gisaburo Sugii - Late Train Window Anime',
+      'night train melancholy anime',
+      'window reflections',
+    ],
     category: '2. Slice Of Life, School And Music',
     domain: 'night train melancholy anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Late train anime: night commuter frames with window reflections, passing lights and tired quiet passengers.',
+        'Gisaburo Sugii Night on the Galactic Railroad look (1985): melancholy trains through starry night, quiet contemplative pacing, soft cel and dreamlike reflections.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: still tired poses, reflections layered over faces, streaked passing lights.",
-      color_and_tone: 'Deep blue night, fluorescent green-white and warm passing lights.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with gentle simple designs, quiet faces and period clothing, seen through train windows. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Deep starry navy, window amber and soft grey-blue.',
       lighting_and_shadow:
-        'Train interior light and passing streetlights, expressed through the style rather than photographic lighting.',
-      texture_and_material:
-        'Cel with reflective glass layers, visible at a glance as the signature of the style.',
+        'Warm carriage lamp light mixed with starlight reflections on the glass.',
+      texture_and_material: 'Soft analog cel with deep painted night skies full of stars.',
       camera_and_composition:
-        'Seat-level frames through windows, arranged so the subject still reads at a glance.',
-      atmosphere_and_mood:
-        'Melancholic, tired, reflective and quiet, driven by the construction, color and rhythm.',
-      rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+        'Train-window framing with layered reflections of faces and passing lights.',
+      atmosphere_and_mood: 'Keep the requested mood with quiet melancholy reverie.',
+      rendering_and_quality: 'Contemplative 1985 feature frame with dreamlike melancholy pacing.',
       creative_brief:
-        "Late train anime: night commuter frames with window reflections, passing lights and tired quiet passengers. Carry it through window reflections, streaked lights, tired passengers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'window reflections; streaked lights; tired passengers',
+        "Gisaburo Sugii Night on the Galactic Railroad look (1985): melancholy trains through starry night, quiet contemplative pacing, soft cel and dreamlike reflections. Carry it through Galactic Railroad melancholy, train windows, starlight, reflections. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Galactic Railroad melancholy; train windows; starlight; reflections',
     },
     ui: {
       previewStatus: 'pending',
@@ -511,33 +508,29 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-067',
-    name: 'Soft Focus Letter Anime',
-    displayName: 'Soft Focus Letter Anime',
-    styleAnchors: ['Soft Focus Letter Anime', 'soft focus romantic anime', 'bokeh'],
+    name: 'Josee BONES - Soft Focus Letter Anime',
+    displayName: 'Josee BONES - Soft Focus Letter Anime',
+    styleAnchors: ['Josee BONES - Soft Focus Letter Anime', 'soft focus romantic anime', 'bokeh'],
     category: '2. Slice Of Life, School And Music',
     domain: 'soft focus romantic anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Soft focus anime: dreamy frames with shallow depth, glowing bokeh and gentle blur, like remembered moments.',
+        'BONES Josee, the Tiger and the Fish look (2020): soft focus romance, dreamy bokeh, shimmering light, art and the sea, and tender emotional realism.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: sharp focus on one small detail (hands, a letter, eyes) with everything else melting into bokeh.",
-      color_and_tone:
-        'Soft creams, rose and pale gold, used consistently across subject and background.',
-      lighting_and_shadow:
-        'Backlit glow with bokeh circles, expressed through the style rather than photographic lighting.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with soft realistic designs, gentle faces and simple clothing. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Soft summer window light, pastel sea blue and warm skin tones.',
+      lighting_and_shadow: 'Glowing summer bokeh and shimmering soft light around faces and hands.',
       texture_and_material:
-        'Cel with blur and glow layers, visible at a glance as the signature of the style.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.',
       camera_and_composition:
-        'Very shallow depth close-ups, arranged so the subject still reads at a glance.',
-      atmosphere_and_mood:
-        'Tender, nostalgic, dreamy and intimate, driven by the construction, color and rhythm.',
-      rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+        'Shallow focus close-ups on hands and letters with glowing blurred backgrounds.',
+      atmosphere_and_mood: 'Keep the requested mood with tender dreamy romance.',
+      rendering_and_quality: 'Soft glowing BONES romance frame with tender emotional realism.',
       creative_brief:
-        "Soft focus anime: dreamy frames with shallow depth, glowing bokeh and gentle blur, like remembered moments. Carry it through bokeh, shallow focus, glowing backlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'bokeh; shallow focus; glowing backlight',
+        "BONES Josee, the Tiger and the Fish look (2020): soft focus romance, dreamy bokeh, shimmering light, art and the sea, and tender emotional realism. Carry it through Josee soft focus, bokeh, tender realism, summer light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Josee soft focus; bokeh; tender realism; summer light',
     },
     ui: {
       previewStatus: 'pending',
@@ -545,32 +538,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-068',
-    name: 'Club Room Clutter Comedy',
-    displayName: 'Club Room Clutter Comedy',
-    styleAnchors: ['Club Room Clutter Comedy', 'cluttered comedy anime', 'dense clutter'],
+    name: 'Genshiken Palm Studio - Club Room Clutter Comedy',
+    displayName: 'Genshiken Palm Studio - Club Room Clutter Comedy',
+    styleAnchors: [
+      'Genshiken Palm Studio - Club Room Clutter Comedy',
+      'cluttered comedy anime',
+      'dense clutter',
+    ],
     category: '2. Slice Of Life, School And Music',
     domain: 'cluttered comedy anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Club room clutter comedy: dense, busy frames packed with props, posters and chaotic group reactions.',
+        'Palm Studio Genshiken look (2004): cluttered otaku club rooms, realistic nerdy adults, stacks of manga and models, and warm observational comedy.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: dense background detail, chibi reactions, comedic sweat drops and exaggerated poses.",
-      color_and_tone:
-        'Busy colorful props with warm light, used consistently across subject and background.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with grounded otaku designs, glasses, casual clothes and expressive comic reactions. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Cluttered warm browns, fluorescent white and poster color accents.',
       lighting_and_shadow:
-        'Flat warm light, expressed through the style rather than photographic lighting.',
+        'Fluorescent club-room light mixed with warm afternoon light from the window.',
       texture_and_material:
-        'Cel with dense line detail, visible at a glance as the signature of the style.',
-      camera_and_composition: 'Wide busy frames, arranged so the subject still reads at a glance.',
-      atmosphere_and_mood:
-        'Chaotic, silly, cozy and lively, driven by the construction, color and rhythm.',
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.',
+      camera_and_composition:
+        'Crowded club-room compositions stuffed with books, models, posters and snacks.',
+      atmosphere_and_mood: 'Keep the requested mood with warm nerdy comedy.',
       rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+        'Observational mid-2000s comedy television frame with warm nerdy detail.',
       creative_brief:
-        "Club room clutter comedy: dense, busy frames packed with props, posters and chaotic group reactions. Carry it through dense clutter, chibi reactions, group chaos. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'dense clutter; chibi reactions; group chaos',
+        "Palm Studio Genshiken look (2004): cluttered otaku club rooms, realistic nerdy adults, stacks of manga and models, and warm observational comedy. Carry it through Genshiken clutter, otaku club room, grounded nerds, comedy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Genshiken clutter; otaku club room; grounded nerds; comedy',
     },
     ui: {
       previewStatus: 'pending',
@@ -578,33 +574,33 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-069',
-    name: 'Library Sunbeam Quiet Anime',
-    displayName: 'Library Sunbeam Quiet Anime',
-    styleAnchors: ['Library Sunbeam Quiet Anime', 'quiet library light anime', 'sun shafts'],
+    name: 'Yoshifumi Kondo - Library Sunbeam Quiet Anime',
+    displayName: 'Yoshifumi Kondo - Library Sunbeam Quiet Anime',
+    styleAnchors: [
+      'Yoshifumi Kondo - Library Sunbeam Quiet Anime',
+      'quiet library light anime',
+      'sun shafts',
+    ],
     category: '2. Slice Of Life, School And Music',
     domain: 'quiet library light anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Library sunbeam anime: hushed frames with shafts of sun, floating dust and quiet readers.',
+        'Yoshifumi Kondo Whisper of the Heart look (1995): Ghibli realism of everyday life, libraries and hillside towns, golden sunbeams and quiet creative longing.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: quiet relaxed poses, turning pages, soft lines.",
-      color_and_tone:
-        'Warm wood, cream and dusty gold, used consistently across subject and background.',
-      lighting_and_shadow:
-        'Shafts of sun through high windows, expressed through the style rather than photographic lighting.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kondo realism, natural faces, simple clothes and quiet studious gestures. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Warm library wood, sunbeam gold and hillside green.',
+      lighting_and_shadow: 'Golden sunbeams through tall library windows lighting drifting dust.',
       texture_and_material:
-        'Cel with painted light shafts and dust, visible at a glance as the signature of the style.',
+        'Classic hand-drawn cel with detailed painted hillside towns and interiors.',
       camera_and_composition:
-        'Tall frames with shelves and beams, arranged so the subject still reads at a glance.',
-      atmosphere_and_mood:
-        'Quiet, peaceful, studious and warm, driven by the construction, color and rhythm.',
-      rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+        'Quiet library interiors among shelves and sweeping hillside town views.',
+      atmosphere_and_mood: 'Keep the requested mood with quiet creative longing.',
+      rendering_and_quality: 'Warm classic hand-drawn Ghibli feature frame with everyday realism.',
       creative_brief:
-        "Library sunbeam anime: hushed frames with shafts of sun, floating dust and quiet readers. Carry it through sun shafts, dust motes, quiet readers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'sun shafts; dust motes; quiet readers',
+        "Yoshifumi Kondo Whisper of the Heart look (1995): Ghibli realism of everyday life, libraries and hillside towns, golden sunbeams and quiet creative longing. Carry it through Whisper of the Heart realism, libraries, sunbeams, hillside towns. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Whisper of the Heart realism; libraries; sunbeams; hillside towns',
     },
     ui: {
       previewStatus: 'pending',
@@ -612,31 +608,29 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-070',
-    name: 'Choir Harmony Light Anime',
-    displayName: 'Choir Harmony Light Anime',
-    styleAnchors: ['Choir Harmony Light Anime', 'choir anime', 'rows'],
+    name: 'Tari Tari P.A. Works - Choir Harmony Light Anime',
+    displayName: 'Tari Tari P.A. Works - Choir Harmony Light Anime',
+    styleAnchors: ['Tari Tari P.A. Works - Choir Harmony Light Anime', 'choir anime', 'rows'],
     category: '2. Slice Of Life, School And Music',
     domain: 'choir anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Choir harmony anime: rows of singers bathed in soft light, open mouths, uplifted faces and warm glow.',
+        'P.A. Works Tari Tari look (2012): choir club harmony, seaside Kamakura towns, luminous skies and heartfelt group performances.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: uplifted faces, open mouths, rows of figures, soft lines.",
-      color_and_tone:
-        'Warm cream and gold with soft blue, used consistently across subject and background.',
-      lighting_and_shadow:
-        'Soft glow from above, expressed through the style rather than photographic lighting.',
-      texture_and_material: 'Cel with glow, visible at a glance as the signature of the style.',
-      camera_and_composition: 'Rows of singers, arranged so the subject still reads at a glance.',
-      atmosphere_and_mood:
-        'Uplifting, warm, together and moving, driven by the construction, color and rhythm.',
-      rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with P.A. Works designs, clear eyes, simple clothes and singing expressions. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Luminous sky blue, warm gold and soft seaside tones.',
+      lighting_and_shadow: 'Luminous warm light filling chapels, halls and seaside classrooms.',
+      texture_and_material:
+        'Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.',
+      camera_and_composition:
+        'Group choir compositions with open singing faces and seaside town wide shots.',
+      atmosphere_and_mood: 'Keep the requested mood with heartfelt harmonious joy.',
+      rendering_and_quality: 'Luminous P.A. Works television frame with choir warmth and harmony.',
       creative_brief:
-        "Choir harmony anime: rows of singers bathed in soft light, open mouths, uplifted faces and warm glow. Carry it through rows, uplifted faces, soft glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'rows; uplifted faces; soft glow',
+        "P.A. Works Tari Tari look (2012): choir club harmony, seaside Kamakura towns, luminous skies and heartfelt group performances. Carry it through Tari Tari choir, Kamakura seaside, luminous light, harmony. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Tari Tari choir; Kamakura seaside; luminous light; harmony',
     },
     ui: {
       previewStatus: 'pending',

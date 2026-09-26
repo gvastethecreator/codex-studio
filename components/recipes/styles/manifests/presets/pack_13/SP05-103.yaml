@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-103
 packId: pack_13
-name: Neon Hyperpop Anime
+name: Mika Pikazo - Neon Hyperpop Anime
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,37 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Use RGB edge separation, small glitch pixels and spectral holographic sheen over crisp anime
-    contours; keep the subject's identifying edges stable.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: use saturated neon and
-    channel-split accents while preserving prompt-critical color and contrast.
-  lighting_and_shadow: >-
-    Keep chromatic glow tight to edges and bright intersections; avoid flooding the frame with
-    bloom.
-  texture_and_material: >-
-    Use small digital offsets, clean gradients and limited glitch artifacts; do not add interface
-    chrome.
-  camera_and_composition: >-
-    Follow existing silhouette and motion direction with color-channel echoes; preserve crop and
-    layout.
-  atmosphere_and_mood: >-
-    Hyperpop energy comes from color and controlled signal noise; preserve quiet, dark or restrained
-    moods when requested.
-  rendering_and_quality: >-
-    Apply digital color treatment to any subject without adding memes, text, UI, logos or stock
-    internet imagery. Keep important silhouettes and joins legible; no watermark, unrequested text
-    or interface.
-  key_features: >-
-    RGB channel split; chromatic edge aberration; small glitch pixels; spectral sheen; saturated but
-    controlled color.
-  creative_brief: 'Apply this visual treatment to the requested content: RGB channel split; chromatic edge aberration; small glitch pixels; spectral sheen; saturated but controlled color. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Mika Pikazo illustration look: hyper-saturated neon pop, rainbow gradients, graphic stickers, bold character designs and explosive color.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Pikazo designs, bold hair colors, graphic outfits and energetic poses. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Hyper-saturated rainbow neon, true to the Mika Pikazo palette.
+  lighting_and_shadow: Neon glow and RGB splits, lit the way Mika Pikazo lights its scenes.
+  texture_and_material: Glossy digital paint and graphic shapes, with the surface finish of Mika Pikazo.
+  camera_and_composition: Energetic poster compositions, framed the way Mika Pikazo composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with explosive neon pop.
+  rendering_and_quality: Hyper-saturated digital illustration, in the recognizable hand of Mika Pikazo.
+  key_features: Mika Pikazo neon; rainbow gradients; hyperpop
+  creative_brief: "Mika Pikazo illustration look: hyper-saturated neon pop, rainbow gradients, graphic stickers, bold character designs and explosive color. Carry it through Mika Pikazo neon, rainbow gradients, hyperpop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look
@@ -56,17 +37,14 @@ avoidRules:
   - RGB channels misregistered enough to duplicate the silhouette
   - glitch pixels obscuring subject details
   - spectral bloom washing out channel separation
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-103.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, RGB channels misregistered enough to duplicate the
-    silhouette, glitch pixels obscuring subject details, spectral bloom washing out channel
-    separation
+  negativePrompt: photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, RGB channels misregistered enough to duplicate the silhouette, glitch pixels obscuring subject details, spectral bloom washing out channel separation, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -75,8 +53,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Mika Pikazo - Neon Hyperpop Anime
+styleAnchors:
+  - Mika Pikazo - Neon Hyperpop Anime

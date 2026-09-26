@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-331
 packId: pack_13
-name: Chrome Impact Spectacle
+name: Yusuke Murata - Chrome Impact Hero Frame
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,39 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Angular cel cuts, mirror-edge glints and shard-like cyan/magenta accents give this style its
-    high-contrast impact; keep chrome as a highlight language rather than changing every material to
-    metal.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: anchor the palette in black,
-    white and hard value cuts, with controlled cyan and magenta shards; preserve prompt-specified
-    colors where they identify the subject.
-  lighting_and_shadow: >-
-    Use sharp specular edge glints only on surfaces that plausibly catch light; hard cel shadows
-    carry impact without generic bloom.
-  texture_and_material: >-
-    Favor crisp angular contours, reflective edge accents and a few graphic shards; preserve the
-    source material cues and avoid noisy metallic texture everywhere.
-  camera_and_composition: >-
-    Use diagonal cuts and directional accents to energize the existing composition; do not add
-    movement or reframe a quiet prompt as an action shot.
-  atmosphere_and_mood: >-
-    Spectacular tension comes from contrast and edge rhythm; honor a calm or restrained prompt when
-    specified.
-  rendering_and_quality: >-
-    Retain the source pose, object structure and material identity; no forced chrome conversion,
-    shards, explosion or speed lines. Keep important silhouettes and joins legible; no watermark,
-    unrequested text or interface.
-  key_features: >-
-    Angular cel-shadow cuts; mirror-edge glints; black-and-white value blocks; cyan/magenta shards;
-    high-impact contour.
-  creative_brief: 'Apply this visual treatment to the requested content: Angular cel-shadow cuts; mirror-edge glints; black-and-white value blocks; cyan/magenta shards; high-impact contour. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Yusuke Murata manga art as in One-Punch Man: hyper-detailed dynamic action, chrome reflections, impossible perspective and virtuoso destruction.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Murata detail, athletic heroes and hyper-detailed armor. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Black ink with chrome tones and cyan-magenta glints in color.
+  lighting_and_shadow: Chrome glints and impact flashes, lit the way Yusuke Murata lights its scenes.
+  texture_and_material: Hyper-detailed ink and debris, with the surface finish of Yusuke Murata.
+  camera_and_composition: Impossible dynamic perspective, framed the way Yusuke Murata composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with virtuoso heroic impact.
+  rendering_and_quality: Virtuoso action manga illustration, in the recognizable hand of Yusuke Murata.
+  key_features: Yusuke Murata detail; chrome; dynamic perspective; destruction
+  creative_brief: "Yusuke Murata manga art as in One-Punch Man: hyper-detailed dynamic action, chrome reflections, impossible perspective and virtuoso destruction. Carry it through Yusuke Murata detail, chrome, dynamic perspective, destruction. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look
@@ -59,17 +38,14 @@ avoidRules:
   - uniform chrome conversion replacing source materials
   - bloom erasing mirror-edge detail
   - impact vectors unrelated to prompted force
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-331.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, shard accents obscuring the source silhouette, uniform
-    chrome conversion replacing source materials, bloom erasing mirror-edge detail, impact vectors
-    unrelated to prompted force
+  negativePrompt: photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, shard accents obscuring the source silhouette, uniform chrome conversion replacing source materials, bloom erasing mirror-edge detail, impact vectors unrelated to prompted force, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -78,8 +54,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Yusuke Murata - Chrome Impact Hero Frame
+styleAnchors:
+  - Yusuke Murata - Chrome Impact Hero Frame

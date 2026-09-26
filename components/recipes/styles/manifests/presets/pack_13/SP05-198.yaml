@@ -3,7 +3,7 @@ id: SP05-198
 packId: pack_13
 name: Princess Jellyfish - Jelly-Color Otaku Makeover
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,31 +13,16 @@ tags:
   - shojo-magical-girl-and-visionary-classics
   - reference-title
 visualDna:
-  aesthetic: >-
-    Anime cel drawing uses translucent contour layers, pearly transitions, and delicate
-    filament marks.
-  subject_treatment: >-
-    Keep silhouette and materials; transparency only on parts already described as
-    translucent.
-  color_and_tone: >-
-    Sea-glass teal, violet, pearl, citron, deep blue; cool highlights and clear shadows.
-  lighting_and_shadow: >-
-    Transmitted light only for depicted transparent forms; opaque parts use firm cel
-    shadows.
-  texture_and_material: >-
-    Soft wash and fine accents locally; no tentacles, aquatic subjects, clutter, or makeover
-    details.
-  camera_and_composition: >-
-    Preserve camera; airy overlap only among shapes already in the prompt.
-  atmosphere_and_mood: >-
-    Wonder or playfulness follows prompt; surface treatment works on ordinary subjects too.
-  rendering_and_quality: >-
-    Separate translucent accents from opaque planes; avoid muddy gradients and excess
-    ornament.
-  key_features: >-
-    Pearly translucent layers, sea-glass-violet palette, local filament marks, clear opaque
-    forms
-  creative_brief: 'Apply a visual treatment centered on pearly translucent layers, sea-glass-violet palette, local filament marks, clear opaque forms. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'Akiko Higashimura Princess Jellyfish look: otaku women comedy, jellyfish dresses, crude comic faces and dazzling makeovers.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Higashimura designs, crude comic faces, frumpy clothes and dazzling transformations. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Jelly translucent pastels and aquarium blue, true to the Princess Jellyfish palette.
+  lighting_and_shadow: Aquarium glow and makeover sparkle, lit the way Princess Jellyfish lights its scenes.
+  texture_and_material: Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.
+  camera_and_composition: Comic reactions and makeover reveals, framed the way Princess Jellyfish composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with giddy otaku makeover.
+  rendering_and_quality: Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.
+  key_features: Higashimura comedy; jellyfish dresses; makeovers
+  creative_brief: "Akiko Higashimura Princess Jellyfish look: otaku women comedy, jellyfish dresses, crude comic faces and dazzling makeovers. Carry it through Higashimura comedy, jellyfish dresses, makeovers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -62,17 +47,12 @@ avoidRules:
   - fake UI
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-198.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -87,3 +67,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Princess Jellyfish - Jelly-Color Otaku Makeover
+styleAnchors:
+  - Princess Jellyfish - Jelly-Color Otaku Makeover

@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-041
 packId: pack_13
-name: Ornate Palace Shojo
+name: Keiko Takemiya - Ornate Palace Shojo
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,29 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Elegant anime cel illustration uses long tapered contours, fine ornamental turns, and
-    nested shapes.
-  subject_treatment: >-
-    Keep anatomy and costume as prompted; place filigree only along existing edges or
-    surfaces.
-  color_and_tone: >-
-    Warm ivory, peacock teal, jade, cobalt, antique gold; decisive dark anchors.
-  lighting_and_shadow: >-
-    Broad even light with small warm edge notes and crisp separating shadows.
-  texture_and_material: >-
-    Fine line and matte cel fill; detail textiles or metals only when shown.
-  camera_and_composition: >-
-    Maintain the camera; measured vertical rhythm and balanced space, no added architecture.
-  atmosphere_and_mood: >-
-    Refinement comes through poised line spacing; preserve the requested emotion.
-  rendering_and_quality: >-
-    Clean thin-to-thick contour, selective ornament, stable values, no crowded trim.
-  key_features: >-
-    Tapered ornamental contour, nested cel shapes, jade-cobalt accents, measured vertical
-    balance
-  creative_brief: 'Apply a visual treatment centered on tapered ornamental contour, nested cel shapes, jade-cobalt accents, measured vertical balance. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'Keiko Takemiya classic seventies shojo look: ornate European palaces, flowing hair, flowers, elaborate costumes and lyrical melodrama.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Takemiya designs, delicate faces, flowing hair and ornate period gowns. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Ornate gold, rose, ivory and palace blue, true to the Keiko Takemiya palette.
+  lighting_and_shadow: Soft palace light and dramatic glow, lit the way Keiko Takemiya lights its scenes.
+  texture_and_material: Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.
+  camera_and_composition: Ornate palace compositions, framed the way Keiko Takemiya composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with lyrical ornate grandeur.
+  rendering_and_quality: Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.
+  key_features: Keiko Takemiya ornate; seventies shojo; palaces; flowing hair
+  creative_brief: "Keiko Takemiya classic seventies shojo look: ornate European palaces, flowing hair, flowers, elaborate costumes and lyrical melodrama. Carry it through Keiko Takemiya ornate, seventies shojo, palaces, flowing hair. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -56,15 +45,14 @@ avoidRules:
   - generic anime filter
   - prompt literal card reuse
   - fake UI
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-041.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -73,8 +61,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - shojo-magical-girl-and-visionary-classics
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Keiko Takemiya - Ornate Palace Shojo
+styleAnchors:
+  - Keiko Takemiya - Ornate Palace Shojo

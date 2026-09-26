@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-013
 packId: pack_13
-name: Psychological Biomech Drama
+name: Mohiro Kitoh - Psychological Biomech Drama
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,29 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Tapered anime contour joins organic curves to segmented engineered seams over compact
-    cel planes.
-  subject_treatment: >-
-    Keep silhouette and proportions; segment only forms that support mechanical detail.
-  color_and_tone: >-
-    Iron charcoal, mineral teal, muted ochre; three clear value bands and one warm accent.
-  lighting_and_shadow: >-
-    One hard key, broad shadows, and narrow edge light only along existing contours.
-  texture_and_material: >-
-    Smooth cel fills with sparse etched seams and short hatch; no blanket noise.
-  camera_and_composition: >-
-    Respect camera; clipped diagonals and bounded negative space carry tension without added
-    walls.
-  atmosphere_and_mood: >-
-    Interrupted edges and compressed spacing suggest pressure; the requested mood leads.
-  rendering_and_quality: >-
-    Stable anatomy and crisp micro-detail, restrained cel bands, no gloss.
-  key_features: >-
-    Organic-mechanical contours, compact cel shadows, mineral teal, compressed negative
-    space
-  creative_brief: 'Apply a visual treatment centered on organic-mechanical contours, compact cel shadows, mineral teal, compressed negative space. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'Mohiro Kitoh manga look as in Bokurano and Narutaru: simple plain faces and thin clean lines set against enormous eerie biomechanical giants, cold detachment and psychological dread.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kitoh simplicity, plain small faces, thin bodies and ordinary clothes, dwarfed by vast strange machines. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Pale overcast greys, cold white and a single dull red in black-and-white manga tone.
+  lighting_and_shadow: Flat pale overcast light that makes the giants look uncanny and indifferent.
+  texture_and_material: Thin clean pen lines, sparse screentone and huge empty sky spaces.
+  camera_and_composition: Tiny figures beneath colossal silent machines in wide empty cityscapes.
+  atmosphere_and_mood: Keep the requested mood with cold psychological dread.
+  rendering_and_quality: Unsettling minimal manga illustration with colossal biomechanical scale.
+  key_features: Mohiro Kitoh plain faces; colossal biomech giants; cold dread; empty skies
+  creative_brief: "Mohiro Kitoh manga look as in Bokurano and Narutaru: simple plain faces and thin clean lines set against enormous eerie biomechanical giants, cold detachment and psychological dread. Carry it through Mohiro Kitoh plain faces, colossal biomech giants, cold dread, empty skies. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -56,15 +45,14 @@ avoidRules:
   - generic anime filter
   - prompt literal card reuse
   - fake UI
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-013.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -73,8 +61,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - shojo-magical-girl-and-visionary-classics
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Mohiro Kitoh - Psychological Biomech Drama
+styleAnchors:
+  - Mohiro Kitoh - Psychological Biomech Drama

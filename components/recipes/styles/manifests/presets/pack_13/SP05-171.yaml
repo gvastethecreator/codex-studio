@@ -3,7 +3,7 @@ id: SP05-171
 packId: pack_13
 name: Slayers - Arcane Chaos Roadtrip
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,29 +13,19 @@ tags:
   - shojo-magical-girl-and-visionary-classics
   - reference-title
 visualDna:
-  aesthetic: >-
-    Elastic anime contour swings between broad rounded strokes and quick tapered marks over
-    compact cel shadows.
-  subject_treatment: >-
-    Keep form and action; exaggerate only existing expression or movement, never add spells
-    or flames.
-  color_and_tone: >-
-    Vermilion, cobalt, sunlit yellow, charcoal; distinct blocks and neutral mids.
-  lighting_and_shadow: >-
-    Separate warm and cool planes with simple light; no flame-shaped lighting unless
-    present.
-  texture_and_material: >-
-    Smooth flat fills, selective dry brush, radial marks only for requested effects.
-  camera_and_composition: >-
-    Preserve crop; off-center energy follows only motion already in the prompt.
-  atmosphere_and_mood: >-
-    Comic chaos only when requested; preserve any other emotional tone.
-  rendering_and_quality: >-
-    Separated forms, local effects, no particle noise or smeared shadows.
-  key_features: >-
-    Elastic contour, warm-cool blocks, quick tapered marks, effects tied to requested action
-  creative_brief: 'Apply a visual treatment centered on elastic contour, warm-cool blocks, quick tapered marks, effects tied to requested action. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'J.C.Staff Slayers look (1995) with Rui Araizumi designs: bright nineties fantasy comedy, huge explosive spells, super-deformed gags and colorful roadside inns.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Araizumi designs, big eyes, wild hair, capes, shoulder pads and fantasy adventurer gear. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Bright red, spell gold, sky blue and forest green.
+  lighting_and_shadow: Explosive spell light and cheerful fantasy daylight, lit the way Slayers lights its scenes.
+  texture_and_material: Late analog hand-painted cel over painted backgrounds, with soft film grain and gentle cel edge softness.
+  camera_and_composition: Explosive comedic wides and super-deformed reaction shots, framed the way Slayers composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with chaotic arcane comedy.
+  rendering_and_quality: Lively mid-1990s fantasy comedy television frame, in the recognizable hand of Slayers.
+  key_features: Slayers explosions; Araizumi designs; SD gags; nineties fantasy
+  creative_brief: "J.C.Staff Slayers look (1995) with Rui Araizumi designs: bright nineties fantasy comedy, huge explosive spells, super-deformed gags and colorful roadside inns. Carry it through Slayers explosions, Araizumi designs, SD gags, nineties fantasy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a red-haired sorceress with shoulder spikes and a dragon slave spell
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -57,19 +47,19 @@ avoidRules:
   - generic anime filter
   - prompt literal card reuse
   - fake UI
-  - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-171.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: a red-haired sorceress with shoulder spikes and a dragon slave spell, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, noisy compression artifacts
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -84,3 +74,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Slayers - Arcane Chaos Roadtrip
+styleAnchors:
+  - Slayers - Arcane Chaos Roadtrip

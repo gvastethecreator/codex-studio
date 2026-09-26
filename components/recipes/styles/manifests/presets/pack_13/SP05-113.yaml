@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-113
 packId: pack_13
-name: Leaded Jewel-Light Segmentation
+name: Madoka Magica SHAFT - Leaded Jewel-Light Segmentation
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,38 +11,22 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Segment existing forms with dark lead-like seams and luminous color panes; suggest transmitted
-    light without converting every object into literal glass.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: use jewel-toned panes and clean
-    boundaries while retaining prompt-critical color and local material cues.
-  lighting_and_shadow: >-
-    Let light pass through pane-like color regions and catch seam edges; preserve the actual
-    lighting setup.
-  texture_and_material: >-
-    Draw strong seam contours, small glass-like imperfections and rosette rhythms only when the
-    source geometry supports them.
-  camera_and_composition: >-
-    Use segmentation to clarify existing shape planes; keep crop, silhouette and spatial layout
-    intact.
-  atmosphere_and_mood: >-
-    Illuminated color feels crafted and quiet; honor requested darkness or subtlety by lowering
-    glow, not deleting seams.
-  rendering_and_quality: >-
-    Render the pane logic as a visual treatment while preserving material identity; add no window,
-    rosette or stained-glass object. Keep important silhouettes and joins legible; no watermark,
-    unrequested text or interface.
-  key_features: >-
-    Leaded segmentation; jewel translucency; transmitted color; seam highlights; controlled glass
-    imperfection.
-  creative_brief: 'Apply this visual treatment to the requested content: Leaded segmentation; jewel translucency; transmitted color; seam highlights; controlled glass imperfection. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'SHAFT Puella Magi Madoka Magica look (2011): stained-glass segmentation, cute Ume Aoki designs, jewel light and ominous symbolism.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Ume Aoki designs, big round eyes and costumes segmented like stained glass. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Jewel pink, violet, gold and dark glass lead lines.
+  lighting_and_shadow: Stained-glass jewel light, lit the way Madoka Magica SHAFT lights its scenes.
+  texture_and_material: Leaded stained-glass segmentation, with the surface finish of Madoka Magica SHAFT.
+  camera_and_composition: Symmetrical stained-glass compositions, framed the way Madoka Magica SHAFT composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with ominous jeweled beauty.
+  rendering_and_quality: Stained-glass animation frame, in the recognizable hand of Madoka Magica SHAFT.
+  key_features: Madoka stained glass; jewel light; symbolism
+  creative_brief: "SHAFT Puella Magi Madoka Magica look (2011): stained-glass segmentation, cute Ume Aoki designs, jewel light and ominous symbolism. Carry it through Madoka stained glass, jewel light, symbolism. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a pink-haired magical girl with twin bows
+  - a white cat-like creature with red eyes
+  - existing franchise characters
   - photoreal cosplay rendering
   - 3D render look
   - plastic airbrush gloss obscuring the style's defining marks
@@ -56,16 +40,20 @@ avoidRules:
   - pane fill hiding lead-like seam boundaries
   - bloom washing out segmentation
   - unprompted rosette geometry
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-113.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, pane fill hiding lead-like seam boundaries, bloom
-    washing out segmentation, unprompted rosette geometry
+  negativePrompt: a pink-haired magical girl with twin bows, a white cat-like creature with red eyes, existing franchise characters, photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, pane fill hiding lead-like seam boundaries, bloom washing out segmentation, unprompted rosette geometry, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -74,8 +62,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Madoka Magica SHAFT - Leaded Jewel-Light Segmentation
+styleAnchors:
+  - Madoka Magica SHAFT - Leaded Jewel-Light Segmentation

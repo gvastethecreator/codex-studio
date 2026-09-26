@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-084
 packId: pack_13
-name: Ordinary-Cosmic Whimsy Pivot
+name: Noizi Ito - Ordinary-Cosmic Whimsy Pivot
 category: 4. Slice Of Life & Moe
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,17 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
+  - reference-title
 visualDna:
-  aesthetic: 'Precisely inked forms sit in clean planar color, with selective luminous edges and a clear value break attached to forms already in the image.'
-  subject_treatment: 'Keep the prompted subject and proportions intact; apply light or edge contrast only to existing forms, without adding another form.'
-  color_and_tone: 'Balance grounded midtones with a limited vivid accent; any unusual hue belongs to a prompted element and never replaces explicit colors.'
-  lighting_and_shadow: 'Separate flat cel shadows from soft localized light; use a glow only when the source content or prompt supplies a luminous element.'
-  texture_and_material: 'Use smooth, controlled fills with a fine line edge and restrained halo where justified; avoid grain that changes the material.'
-  camera_and_composition: 'Preserve crop, viewpoint, scale, count, and spacing; express a visual pivot through value and color contrast inside the requested frame.'
-  atmosphere_and_mood: 'Follow the requested mood; let contrast affect visual emphasis only, not the emotional reading.'
-  rendering_and_quality: 'Keep forms crisp beside a soft light accent when one is requested; add no new graphic event.'
-  key_features: 'Precise contour; flat color planes; selective edge luminosity; localized value pivot; restrained effects.'
-  creative_brief: 'Contrast stable inked shapes with a small, justified luminous accent. Preserve subject, action, count, camera, and mood; add no narrative event. Use it as a reusable look on any subject.'
+  aesthetic: 'Noizi Ito illustration look as in her light novel art: crisp clean designs, bright energetic eyes, school settings flipping into cosmic whimsy.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Noizi Ito designs, bright big eyes, ribbons and energetic poses. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Bright school colors with cosmic violet accents, true to the Noizi Ito palette.
+  lighting_and_shadow: Clean bright illustration light with cosmic glow, lit the way Noizi Ito lights its scenes.
+  texture_and_material: Crisp digital illustration line and soft cel shading.
+  camera_and_composition: Energetic illustration compositions, framed the way Noizi Ito composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with ordinary cosmic whimsy.
+  rendering_and_quality: Crisp light-novel illustration, in the recognizable hand of Noizi Ito.
+  key_features: Noizi Ito designs; bright eyes; cosmic whimsy
+  creative_brief: "Noizi Ito illustration look as in her light novel art: crisp clean designs, bright energetic eyes, school settings flipping into cosmic whimsy. Carry it through Noizi Ito designs, bright eyes, cosmic whimsy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -44,15 +45,14 @@ avoidRules:
   - generic anime filter
   - prompt literal card reuse
   - fake UI
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-084.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock,
-    canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic
-    anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied
-    franchise costume, logo
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -61,8 +61,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - slice-of-life-and-moe
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Noizi Ito - Ordinary-Cosmic Whimsy Pivot
+styleAnchors:
+  - Noizi Ito - Ordinary-Cosmic Whimsy Pivot

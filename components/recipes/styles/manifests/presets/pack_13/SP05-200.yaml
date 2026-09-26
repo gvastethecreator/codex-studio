@@ -3,7 +3,7 @@ id: SP05-200
 packId: pack_13
 name: Sukitte Ii na yo - Rainy Umbrella Confession
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,29 +13,16 @@ tags:
   - shojo-magical-girl-and-visionary-classics
   - reference-title
 visualDna:
-  aesthetic: >-
-    Anime linework layers smooth curved planes with refracted color accents and crisp cel
-    edges.
-  subject_treatment: >-
-    Keep subject, spacing, materials; reflections only on wet or glossy surfaces already
-    present.
-  color_and_tone: >-
-    Deep teal, amber, pearl gray, muted burgundy, compact pale highlights.
-  lighting_and_shadow: >-
-    Warm-cool contrast only when supported; otherwise follow prompt lighting without
-    inventing night.
-  texture_and_material: >-
-    Broken reflective strokes on existing glass or wet surfaces; dry forms stay matte.
-  camera_and_composition: >-
-    Preserve crop; curved overlaps come only from forms already shown.
-  atmosphere_and_mood: >-
-    Stillness or intimacy is never presumed; retain the requested mood and relationships.
-  rendering_and_quality: >-
-    Clear planes, small highlight masks, stable contours, no rain haze or blur.
-  key_features: >-
-    Curved plane layering, deep-teal-amber contrast, local reflected strokes, prompt-led
-    mood and spacing
-  creative_brief: 'Apply a visual treatment centered on curved plane layering, deep-teal-amber contrast, local reflected strokes, prompt-led mood and spacing. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'Kanae Hazuki Sukitte Ii na yo anime look (Zexcs 2012): muted grey rainy romance, soft realistic designs and quiet confessions.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with soft designs, gentle faces, school or casual clothes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Rainy grey, soft blue and warm skin, true to the Sukitte Ii na yo palette.
+  lighting_and_shadow: Soft rainy daylight, lit the way Sukitte Ii na yo lights its scenes.
+  texture_and_material: Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.
+  camera_and_composition: Umbrella two-shots in rain, framed the way Sukitte Ii na yo composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with quiet rainy confession.
+  rendering_and_quality: Quiet rainy romance television frame, in the recognizable hand of Sukitte Ii na yo.
+  key_features: Rainy romance; umbrellas; muted grey; confessions
+  creative_brief: "Kanae Hazuki Sukitte Ii na yo anime look (Zexcs 2012): muted grey rainy romance, soft realistic designs and quiet confessions. Carry it through Rainy romance, umbrellas, muted grey, confessions. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -60,17 +47,12 @@ avoidRules:
   - fake UI
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-200.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -85,3 +67,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Sukitte Ii na yo - Rainy Umbrella Confession
+styleAnchors:
+  - Sukitte Ii na yo - Rainy Umbrella Confession

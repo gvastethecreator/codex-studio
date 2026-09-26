@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-323
 packId: pack_13
-name: Prism-Glamour Transformation Polish
+name: Naoko Takeuchi - Prism-Glamour Transformation Polish
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,39 +11,21 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Fine tapered lines and layered translucent ribbons sweep around the subject; prismatic facets
-    and polished shoujo glamour create the signature transformation sheen without requiring a
-    transformation scene.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: use luminous jewel and pastel
-    hues with small prismatic shifts at overlaps; retain explicit colors and avoid blanket sparkle.
-  lighting_and_shadow: >-
-    Soft backlight and crisp glints belong at ribbon crossings and facets; respect the prompted
-    light direction.
-  texture_and_material: >-
-    Keep ribbon-like forms as graphic line paths and translucent glazes, not new physical
-    accessories; use fine clean contours and a polished surface.
-  camera_and_composition: >-
-    Use flowing arcs to guide attention around the requested form; keep the original crop, pose and
-    silhouette legible.
-  atmosphere_and_mood: >-
-    Tender celestial polish is conveyed by layered light and graceful rhythm; do not add a romantic
-    relationship or magical event.
-  rendering_and_quality: >-
-    Apply the glow and flowing contour to any requested subject without adding jewelry, costume,
-    stars, wings or transformation props. Keep important silhouettes and joins legible; no
-    watermark, unrequested text or interface.
-  key_features: >-
-    Prismatic sparkle; tapered contour; ribbon-like motion; gem-light accents; layered translucent
-    facets; polished shoujo finish.
-  creative_brief: 'Apply this visual treatment to the requested content: Prismatic sparkle; tapered contour; ribbon-like motion; gem-light accents; layered translucent facets; polished shoujo finish. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Naoko Takeuchi manga art: fashion-illustration magical girls with very long legs, watercolor color pages, jewels, crescent moons, prism light and glamorous transformation.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Takeuchi designs, very long legs, slender bodies, big jeweled eyes and glamorous fashion-inspired costumes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Watercolor pastel pinks, lavender, silver and prism rainbows.
+  lighting_and_shadow: Prism light and sparkling jewel glints, lit the way Naoko Takeuchi lights its scenes.
+  texture_and_material: Watercolor washes and fine fashion-illustration line, with the surface finish of Naoko Takeuchi.
+  camera_and_composition: Fashion-plate full-body compositions, framed the way Naoko Takeuchi composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with glamorous prism transformation.
+  rendering_and_quality: Glamorous watercolor manga illustration, in the recognizable hand of Naoko Takeuchi.
+  key_features: Naoko Takeuchi fashion; long legs; watercolor; prism glamour
+  creative_brief: "Naoko Takeuchi manga art: fashion-illustration magical girls with very long legs, watercolor color pages, jewels, crescent moons, prism light and glamorous transformation. Carry it through Naoko Takeuchi fashion, long legs, watercolor, prism glamour. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - blonde twin buns with a crescent moon tiara
+  - existing franchise characters
   - photoreal cosplay rendering
   - 3D render look
   - plastic airbrush gloss obscuring the style's defining marks
@@ -57,16 +39,20 @@ avoidRules:
   - coarse ink obscuring tapered contour
   - opaque overlays hiding prismatic facets
   - specular glare erasing edge detail
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-323.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, coarse ink obscuring tapered contour, opaque overlays
-    hiding prismatic facets, specular glare erasing edge detail
+  negativePrompt: blonde twin buns with a crescent moon tiara, existing franchise characters, photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, coarse ink obscuring tapered contour, opaque overlays hiding prismatic facets, specular glare erasing edge detail, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -75,8 +61,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Naoko Takeuchi - Prism-Glamour Transformation Polish
+styleAnchors:
+  - Naoko Takeuchi - Prism-Glamour Transformation Polish

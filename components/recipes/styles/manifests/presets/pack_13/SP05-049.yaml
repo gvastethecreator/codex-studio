@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-049
 packId: pack_13
-name: Velvet Gothic Academy
+name: Kaori Yuki - Velvet Gothic Academy
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,28 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Nocturne-leaning anime illustration uses fine black contours, dense matte masses, and
-    silver edges.
-  subject_treatment: >-
-    Preserve subject and wardrobe; apply fabric detail only to textiles already present.
-  color_and_tone: >-
-    Black, plum, cool silver, muted sea green; distinguish darks from material mids.
-  lighting_and_shadow: >-
-    Narrow edge highlights over quiet shadows; add no architectural or night setting.
-  texture_and_material: >-
-    Velvet or lace detail only on those existing materials; otherwise matte ink and cel
-    fill.
-  camera_and_composition: >-
-    Respect camera; balance dense dark shapes with open space, no architectural frame.
-  atmosphere_and_mood: >-
-    Severity through contrast only when requested; do not darken a light mood.
-  rendering_and_quality: >-
-    Deliberate blacks, selective fine detail, open mids, no ornate border.
-  key_features: >-
-    Dense matte silhouette, cool silver edge, dark plum values, selective material ornament
-  creative_brief: 'Apply a visual treatment centered on dense matte silhouette, cool silver edge, dark plum values, selective material ornament. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'Kaori Yuki gothic manga look as in Angel Sanctuary and Godchild: ornate gothic fashion, angels and demons, lace, crosses and decadent melancholy.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yuki designs, slender elegant bodies, ornate gothic fashion and dramatic hair. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Black ink with gothic tone and crimson accents.
+  lighting_and_shadow: Moonlit gothic light, lit the way Kaori Yuki lights its scenes.
+  texture_and_material: Ornate fine line with lace and gothic ornament.
+  camera_and_composition: Dramatic gothic compositions, framed the way Kaori Yuki composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with decadent gothic melancholy.
+  rendering_and_quality: Ornate gothic manga illustration, in the recognizable hand of Kaori Yuki.
+  key_features: Kaori Yuki gothic; angels and demons; lace; decadence
+  creative_brief: "Kaori Yuki gothic manga look as in Angel Sanctuary and Godchild: ornate gothic fashion, angels and demons, lace, crosses and decadent melancholy. Carry it through Kaori Yuki gothic, angels and demons, lace, decadence. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -55,15 +45,14 @@ avoidRules:
   - generic anime filter
   - prompt literal card reuse
   - fake UI
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-049.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -72,8 +61,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - shojo-magical-girl-and-visionary-classics
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Kaori Yuki - Velvet Gothic Academy
+styleAnchors:
+  - Kaori Yuki - Velvet Gothic Academy

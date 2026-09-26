@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-111
 packId: pack_13
-name: Ukiyo-e Woodblock Anime
+name: Miss Hokusai Production I.G - Ukiyo-e Woodblock Anime
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,37 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Use carved contour, flat decorative color planes, bokashi bands and parallel line rhythm as a
-    printmaking language; do not require waves, rain or Japanese scenery.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: keep flat color separations and
-    restrained bokashi gradients; preserve the prompt palette and cultural details.
-  lighting_and_shadow: >-
-    Use printed value bands and clean silhouette contrast rather than photographic light; obey
-    requested lighting cues.
-  texture_and_material: >-
-    Simulate cut-line edges, slight ink variation and paper grain; keep hatching parallel and
-    deliberate.
-  camera_and_composition: >-
-    Arrange line and color rhythm around the existing forms; do not impose landscape, horizon or
-    decorative border.
-  atmosphere_and_mood: >-
-    Print-like clarity is the style; retain the prompt's mood and subject without adding cultural
-    motifs.
-  rendering_and_quality: >-
-    Apply the printmaking mechanics to any requested subject without adding waves, rain, costume or
-    symbols. Keep important silhouettes and joins legible; no watermark, unrequested text or
-    interface.
-  key_features: >-
-    Woodblock contour; bokashi gradient fields; flat color planes; parallel carved marks; paper
-    texture.
-  creative_brief: 'Apply this visual treatment to the requested content: Woodblock contour; bokashi gradient fields; flat color planes; parallel carved marks; paper texture. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Production I.G Miss Hokusai look (2015) by Keiichi Hara: Edo woodblock world, graded indigo skies, painters’ studios and ukiyo-e staging.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Edo-period designs and kimono in ukiyo-e staging. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Graded indigo, vermilion and paper beige, true to the Miss Hokusai Production I.G palette.
+  lighting_and_shadow: Graded woodblock sky light, lit the way Miss Hokusai Production I.G lights its scenes.
+  texture_and_material: Woodblock-inspired flat color and line, with the surface finish of Miss Hokusai Production I.G.
+  camera_and_composition: Ukiyo-e compositions, framed the way Miss Hokusai Production I.G composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with Edo artistic wonder.
+  rendering_and_quality: Woodblock-inspired feature frame, in the recognizable hand of Miss Hokusai Production I.G.
+  key_features: Miss Hokusai Edo; woodblock gradients; ukiyo-e
+  creative_brief: "Production I.G Miss Hokusai look (2015) by Keiichi Hara: Edo woodblock world, graded indigo skies, painters’ studios and ukiyo-e staging. Carry it through Miss Hokusai Edo, woodblock gradients, ukiyo-e. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look
@@ -56,16 +37,14 @@ avoidRules:
   - uncontrolled gradients erasing printed color boundaries
   - blurred contour erasing carved edges
   - hatching unrelated to the underlying form
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-111.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, uncontrolled gradients erasing printed color
-    boundaries, blurred contour erasing carved edges, hatching unrelated to the underlying form
+  negativePrompt: photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, uncontrolled gradients erasing printed color boundaries, blurred contour erasing carved edges, hatching unrelated to the underlying form, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -74,8 +53,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Miss Hokusai Production I.G - Ukiyo-e Woodblock Anime
+styleAnchors:
+  - Miss Hokusai Production I.G - Ukiyo-e Woodblock Anime

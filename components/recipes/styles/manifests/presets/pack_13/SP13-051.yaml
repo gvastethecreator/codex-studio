@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-051
 packId: pack_13
-name: Sky Pirate Airship Anime
+name: Last Exile Gonzo - Sky Pirate Airship Anime
 styleAnchors:
-  - Sky Pirate Airship Anime
+  - Last Exile Gonzo - Sky Pirate Airship Anime
   - airship adventure anime
   - airships
-displayName: Sky Pirate Airship Anime
+displayName: Last Exile Gonzo - Sky Pirate Airship Anime
 category: 1. Core Anime
 domain: airship adventure anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - sky-pirates
   - airship
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Sky pirate anime: swashbuckling airship adventure with wind, clouds, ropes and bright wood-and-brass ships.'
-  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: lively poses with ropes and cutlasses, clothes snapping in the wind, detailed ships with patched sails."
-  color_and_tone: Sky blue, cloud white, brass gold and red sails.
-  lighting_and_shadow: Bright sun above clouds, expressed through the style rather than photographic lighting.
-  texture_and_material: Cel with painted clouds, visible at a glance as the signature of the style.
-  camera_and_composition: Wide sky shots with ships and falling figures, arranged so the subject still reads at a glance.
-  atmosphere_and_mood: Adventurous, free, cheeky and bright, driven by the construction, color and rhythm.
-  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  creative_brief: "Sky pirate anime: swashbuckling airship adventure with wind, clouds, ropes and bright wood-and-brass ships. Carry it through airships, clouds, ropes, cutlasses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: airships; clouds; ropes; cutlasses
+  aesthetic: 'Gonzo Last Exile look (2003) with Range Murata designs: steampunk vanships and battleships in the sky, Edwardian uniforms, sepia skies and a blend of 2D and early CG.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Range Murata designs, goggles, Edwardian flight uniforms and elegant long coats. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Sepia sky, polished brass, deep navy and cloud cream.
+  lighting_and_shadow: Warm sepia sunlight breaking through towering clouds and glinting on brass hulls.
+  texture_and_material: Early 2000s cel mixed with CG airships and painted clouds.
+  camera_and_composition: Aerial chases between vanships and battleships across vast layered cloudscapes.
+  atmosphere_and_mood: Keep the requested mood with soaring steampunk adventure.
+  rendering_and_quality: Distinctive 2003 Gonzo frame with steampunk skies and airships.
+  creative_brief: "Gonzo Last Exile look (2003) with Range Murata designs: steampunk vanships and battleships in the sky, Edwardian uniforms, sepia skies and a blend of 2D and early CG. Carry it through Range Murata designs, vanships, sepia skies, steampunk. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Range Murata designs; vanships; sepia skies; steampunk
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -45,9 +46,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -62,6 +67,7 @@ taxonomy:
     - sky-pirates
     - airship
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

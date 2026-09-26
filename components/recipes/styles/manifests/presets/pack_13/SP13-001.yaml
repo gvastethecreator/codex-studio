@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP13-001
 packId: pack_13
-name: Cel Heroic Dawn
+name: Moribito Production I.G - Cel Heroic Dawn
 category: 1. Core Anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,18 +11,21 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Heroic dawn cel anime: bold adventure-series key art with strong silhouettes, two-step cel shading and warm sunrise light.'
-  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: confident thick outer contours, thinner inner lines, two-step cel shadows, heroic low-angle poses with windblown hair and cloth."
-  color_and_tone: Warm gold, peach and orange against cool blue shadow.
-  lighting_and_shadow: Low sunrise backlight with a bright rim on hair and armor.
-  texture_and_material: Flat cel fills with softly painted sky gradients, visible at a glance as the signature of the style.
-  camera_and_composition: Low heroic angle with the sky behind, arranged so the subject still reads at a glance.
-  atmosphere_and_mood: Brave, hopeful, determined and bright, driven by the construction, color and rhythm.
-  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  key_features: thick contours; two-step cel; sunrise rim light; heroic pose
-  creative_brief: "Heroic dawn cel anime: bold adventure-series key art with strong silhouettes, two-step cel shading and warm sunrise light. Carry it through thick contours, two-step cel, sunrise rim light, heroic pose. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Production I.G Moribito: Guardian of the Spirit look (2007) by Kenji Kamiyama: grounded realistic fantasy, weathered spear-wielding heroes, lush painted Asian-inspired landscapes and precise martial choreography.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with realistic grounded designs, weathered adult faces, practical traveling clothes and accurate martial stances. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Earthy greens, dawn gold, weathered brown and soft sky blue across wide painted landscapes.
+  lighting_and_shadow: Natural dawn light spilling over ridges, soft realistic shadows and warm rim light on figures.
+  texture_and_material: Contemporary digital television cel with clean outlines, crisp highlights and composited painted backgrounds.
+  camera_and_composition: Wide cinematic landscape shots with small heroic figures, then grounded martial close-ups.
+  atmosphere_and_mood: Keep the requested mood with quiet grounded heroism.
+  rendering_and_quality: Grounded cinematic Production I.G television frame with realistic fantasy detail.
+  key_features: Moribito realism; painted landscapes; weathered heroes; martial choreography
+  creative_brief: "Production I.G Moribito: Guardian of the Spirit look (2007) by Kenji Kamiyama: grounded realistic fantasy, weathered spear-wielding heroes, lush painted Asian-inspired landscapes and precise martial choreography. Carry it through Moribito realism, painted landscapes, weathered heroes, martial choreography. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a spear-wielding bodyguard woman in a blue traveling cloak
+  - existing franchise characters
   - existing anime character likeness
   - studio or franchise logo
   - readable text
@@ -48,10 +51,13 @@ avoidRules:
   - UI overlay
   - franchise likeness
   - real person likeness
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-001.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, western comic, 3d render, watermark, text, logo, low quality, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts
+  negativePrompt: a spear-wielding bodyguard woman in a blue traveling cloak, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, western comic, 3d render, watermark, text, logo, low quality, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -60,8 +66,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Moribito Production I.G - Cel Heroic Dawn
+styleAnchors:
+  - Moribito Production I.G - Cel Heroic Dawn

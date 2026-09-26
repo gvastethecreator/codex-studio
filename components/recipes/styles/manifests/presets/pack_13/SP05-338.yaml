@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-338
 packId: pack_13
-name: Angular Combustion Iconography
+name: Atsushi Ohkubo - Angular Combustion Iconography
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,34 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Use acute contour cuts, hard cel-shadow planes and restrained ember accents to suggest
-    combustion through shape language without depicting fire.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: keep a high-contrast base with
-    small ember colors; preserve prompt-specific color and avoid blanket orange.
-  lighting_and_shadow: >-
-    Use sharp shadow cuts and tiny hot-edge accents only where supported by the prompt light.
-  texture_and_material: >-
-    Keep fill surfaces clean and angular; do not melt, char or transform materials unless requested.
-  camera_and_composition: >-
-    Align angular accents with existing forms and action; preserve layout and avoid an explosion
-    composition.
-  atmosphere_and_mood: >-
-    Combustion is an angular visual rhythm, not an added event; honor calm or still prompts.
-  rendering_and_quality: >-
-    Apply the angular treatment to any subject without adding flames, smoke, melting, blast or
-    damage. Keep important silhouettes and joins legible; no watermark, unrequested text or
-    interface.
-  key_features: >-
-    Acute angular cuts; hard cel shadows; restrained ember accents; icon-like contrast; crisp
-    contour.
-  creative_brief: 'Apply this visual treatment to the requested content: Acute angular cuts; hard cel shadows; restrained ember accents; icon-like contrast; crisp contour. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Atsushi Ohkubo manga look as in Fire Force: angular graphic designs, triangle grins, bold ember effects and stylish street-level combustion.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Ohkubo designs, triangular grins, angular bodies and stylish uniforms. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Ember orange, soot black and white, true to the Atsushi Ohkubo palette.
+  lighting_and_shadow: Flame light and ember glow, lit the way Atsushi Ohkubo lights its scenes.
+  texture_and_material: Bold angular ink and ember effects, with the surface finish of Atsushi Ohkubo.
+  camera_and_composition: Angular dynamic compositions, framed the way Atsushi Ohkubo composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with blazing angular bravado.
+  rendering_and_quality: Bold graphic action manga illustration, in the recognizable hand of Atsushi Ohkubo.
+  key_features: Ohkubo angular grins; embers; combustion
+  creative_brief: "Atsushi Ohkubo manga look as in Fire Force: angular graphic designs, triangle grins, bold ember effects and stylish street-level combustion. Carry it through Ohkubo angular grins, embers, combustion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look
@@ -53,16 +37,14 @@ avoidRules:
   - ember glow obscuring angular shadow cuts
   - unprompted flame or smoke effects
   - angular cuts damaging subject-defining edges
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-338.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, ember glow obscuring angular shadow cuts, unprompted
-    flame or smoke effects, angular cuts damaging subject-defining edges
+  negativePrompt: photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, ember glow obscuring angular shadow cuts, unprompted flame or smoke effects, angular cuts damaging subject-defining edges, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -71,8 +53,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Atsushi Ohkubo - Angular Combustion Iconography
+styleAnchors:
+  - Atsushi Ohkubo - Angular Combustion Iconography

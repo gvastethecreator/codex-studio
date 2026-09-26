@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP13-014
 packId: pack_13
-name: Ronin Alley Duel
+name: Ryoichi Ikegami - Ronin Alley Duel
 category: 1. Core Anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,17 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Ronin duel anime: period samurai frames with long stillness, ink-brush accents and sudden white slash arcs.'
-  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: sharp restrained lines, faces half in shadow, slashes drawn as white arcs, ink-brush accents in the backgrounds."
-  color_and_tone: Muted indigo, grey and blood red, used consistently across subject and background.
-  lighting_and_shadow: Moonlight or lantern light, expressed through the style rather than photographic lighting.
-  texture_and_material: Cel with ink-wash backgrounds, visible at a glance as the signature of the style.
-  camera_and_composition: Wide standoff frames and extreme close-ups of eyes and hilts.
-  atmosphere_and_mood: Tense, still, lethal and poetic, driven by the construction, color and rhythm.
-  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  key_features: standoff; white slash arcs; ink wash; half-shadow faces
-  creative_brief: "Ronin duel anime: period samurai frames with long stillness, ink-brush accents and sudden white slash arcs. Carry it through standoff, white slash arcs, ink wash, half-shadow faces. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Ryoichi Ikegami gekiga look as in Crying Freeman and Sanctuary: hyper-realistic handsome faces, precise anatomy, cinematic noir lighting and cool deadly stillness.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Ikegami realism, sculpted handsome faces, precise anatomy and elegant clothing. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Black ink with fine grey tone and hard noir contrast, no bright color at all.
+  lighting_and_shadow: Cinematic noir light from a single swinging lantern in the rain.
+  texture_and_material: Precise realistic pen line and fine hatching on faces and fabric.
+  camera_and_composition: Cinematic standoff compositions in narrow rainy alleys at night.
+  atmosphere_and_mood: Keep the requested mood with cool deadly stillness.
+  rendering_and_quality: Hyper-realistic gekiga illustration with cinematic noir restraint and sculpted faces.
+  key_features: Ryoichi Ikegami realism; noir light; handsome faces; deadly stillness
+  creative_brief: "Ryoichi Ikegami gekiga look as in Crying Freeman and Sanctuary: hyper-realistic handsome faces, precise anatomy, cinematic noir lighting and cool deadly stillness. Carry it through Ryoichi Ikegami realism, noir light, handsome faces, deadly stillness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -47,10 +48,14 @@ avoidRules:
   - UI overlay
   - franchise likeness
   - real person likeness
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-014.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, goofy chibi, modern guns, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, goofy chibi, modern guns, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -59,8 +64,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Ryoichi Ikegami - Ronin Alley Duel
+styleAnchors:
+  - Ryoichi Ikegami - Ronin Alley Duel

@@ -3,7 +3,7 @@ id: SP05-189
 packId: pack_13
 name: Orange - Sunset Regret Letter Drama
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,27 +13,16 @@ tags:
   - shojo-magical-girl-and-visionary-classics
   - reference-title
 visualDna:
-  aesthetic: >-
-    Anime cel and watercolor hybrid softens selected contours into translucent overlap while
-    focal lines stay clear.
-  subject_treatment: >-
-    Preserve subject, action, number; repeat imagery only if memory or echo is explicitly
-    requested.
-  color_and_tone: >-
-    Warm ochre, dusty blue, faded lilac, muted coral, charcoal; gradients stay local.
-  lighting_and_shadow: >-
-    Warm-cool value drift within forms; no sunset or time-of-day light.
-  texture_and_material: >-
-    Diluted wash, subtle paper tooth, controlled pigment edges; keep major forms legible.
-  camera_and_composition: >-
-    Keep camera; open space, no extra letters, clocks, or duplicate figures.
-  atmosphere_and_mood: >-
-    Wistfulness only when requested, through softened edges rather than story cues.
-  rendering_and_quality: >-
-    Clear focal contour, quiet layers, no global bloom or sepia.
-  key_features: >-
-    Translucent overlap, warm-cool wash, soft edge intervals, clear focal contour
-  creative_brief: 'Apply a visual treatment centered on translucent overlap, warm-cool wash, soft edge intervals, clear focal contour. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'Ichigo Takano Orange manga look: soft gentle lines, sunset orange light, letters from the future and bittersweet regret.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Takano designs, gentle faces, simple clothes and quiet emotion. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Sunset orange, soft pink and dusk blue, true to the Orange palette.
+  lighting_and_shadow: Warm sunset glow, lit the way Orange lights its scenes.
+  texture_and_material: Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.
+  camera_and_composition: Quiet sunset compositions, framed the way Orange composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with gentle regretful longing.
+  rendering_and_quality: Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.
+  key_features: Ichigo Takano soft line; sunset orange; regret; letters
+  creative_brief: "Ichigo Takano Orange manga look: soft gentle lines, sunset orange light, letters from the future and bittersweet regret. Carry it through Ichigo Takano soft line, sunset orange, regret, letters. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -58,17 +47,12 @@ avoidRules:
   - fake UI
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-189.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -83,3 +67,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Orange - Sunset Regret Letter Drama
+styleAnchors:
+  - Orange - Sunset Regret Letter Drama

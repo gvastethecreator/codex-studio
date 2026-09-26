@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-106
 packId: pack_13
-name: Deco-Inspired Geometric Anime
+name: The Big O Sunrise - Deco-Inspired Geometric Anime
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,34 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Use fan-like geometry, ruler-straight lines and faceted color cells to articulate existing
-    forms; preserve their natural asymmetry rather than staging symmetry.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: separate a compact set of jewel
-    colors into clean cells while keeping prompt-specific colors.
-  lighting_and_shadow: >-
-    Use crisp value bands and small facet highlights; follow the actual light direction.
-  texture_and_material: >-
-    Keep edges clean and geometric with selective stained-glass-like separation; do not convert
-    materials to glass.
-  camera_and_composition: >-
-    Fit geometric accents to the supplied composition without adding a frame or changing viewpoint.
-  atmosphere_and_mood: >-
-    Deco poise comes from measured line and facet balance; keep the user's mood and subject.
-  rendering_and_quality: >-
-    Use geometric organization on any subject without adding architecture, ornament, costume or a
-    symmetrical poster layout. Keep important silhouettes and joins legible; no watermark,
-    unrequested text or interface.
-  key_features: >-
-    Geometric fan shapes; ruler-straight contour; faceted focal areas; jewel-color cells; asymmetry
-    preserved.
-  creative_brief: 'Apply this visual treatment to the requested content: Geometric fan shapes; ruler-straight contour; faceted focal areas; jewel-color cells; asymmetry preserved. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Sunrise The Big O look (1999) by Keiichi Sato: art deco retro city, geometric architecture, noir gentlemen and giant retro robots.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Sato designs, noir suits and elegant retro dresses. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Deco gold, black and muted sepia, true to the The Big O Sunrise palette.
+  lighting_and_shadow: Noir city light, lit the way The Big O Sunrise lights its scenes.
+  texture_and_material: Analog cel with geometric deco architecture, with the surface finish of The Big O Sunrise.
+  camera_and_composition: Geometric noir compositions, framed the way The Big O Sunrise composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with noir art deco elegance.
+  rendering_and_quality: Retro deco television frame, in the recognizable hand of The Big O Sunrise.
+  key_features: The Big O art deco; geometric city; noir
+  creative_brief: "Sunrise The Big O look (1999) by Keiichi Sato: art deco retro city, geometric architecture, noir gentlemen and giant retro robots. Carry it through The Big O art deco, geometric city, noir. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look
@@ -53,16 +37,14 @@ avoidRules:
   - ruler lines misaligned with source perspective
   - facets obscuring the original silhouette
   - forced symmetry changing the requested composition
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-106.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, ruler lines misaligned with source perspective, facets
-    obscuring the original silhouette, forced symmetry changing the requested composition
+  negativePrompt: photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, ruler lines misaligned with source perspective, facets obscuring the original silhouette, forced symmetry changing the requested composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -71,8 +53,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: The Big O Sunrise - Deco-Inspired Geometric Anime
+styleAnchors:
+  - The Big O Sunrise - Deco-Inspired Geometric Anime

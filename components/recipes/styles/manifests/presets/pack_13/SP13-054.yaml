@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-054
 packId: pack_13
-name: Mythic Beast-Rider Anime
+name: Bahamut MAPPA - Mythic Beast-Rider Anime
 styleAnchors:
-  - Mythic Beast-Rider Anime
+  - Bahamut MAPPA - Mythic Beast-Rider Anime
   - epic mount anime
   - riders
-displayName: Mythic Beast-Rider Anime
+displayName: Bahamut MAPPA - Mythic Beast-Rider Anime
 category: 1. Core Anime
 domain: epic mount anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - beast-rider
   - epic
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Beast-rider anime: epic sky and battle frames of riders on dragons, griffins and giant wolves.'
-  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: sweeping poses, flowing manes and wings, riders in light armor, huge creature scale."
-  color_and_tone: Sky blues, dragon scale colors and gold, used consistently across subject and background.
-  lighting_and_shadow: Dramatic sunset or storm light, expressed through the style rather than photographic lighting.
-  texture_and_material: Cel with painted skies, visible at a glance as the signature of the style.
-  camera_and_composition: Wide aerial and low heroic angles, arranged so the subject still reads at a glance.
-  atmosphere_and_mood: Epic, free, fierce and noble, driven by the construction, color and rhythm.
-  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  creative_brief: "Beast-rider anime: epic sky and battle frames of riders on dragons, griffins and giant wolves. Carry it through riders, wings, epic scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: riders; wings; epic scale
+  aesthetic: 'MAPPA Rage of Bahamut: Genesis look (2014): lavish high fantasy with dragons and demons, detailed CG-assisted beasts, painterly skies and swashbuckling riders.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with high fantasy designs, flowing cloaks, armor and confident rider poses. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Storm grey, silver scales, burning orange and deep sky blue.
+  lighting_and_shadow: Storm lightning, burning fire glow and dramatic painterly skies.
+  texture_and_material: Contemporary digital television cel with clean outlines, crisp highlights and composited painted backgrounds.
+  camera_and_composition: Diving dragon flights and sweeping aerial battle wide shots.
+  atmosphere_and_mood: Keep the requested mood with swashbuckling mythic fury.
+  rendering_and_quality: Lavish MAPPA fantasy frame with dragon spectacle and painterly skies.
+  creative_brief: "MAPPA Rage of Bahamut: Genesis look (2014): lavish high fantasy with dragons and demons, detailed CG-assisted beasts, painterly skies and swashbuckling riders. Carry it through Bahamut dragons, high fantasy riders, lavish skies, spectacle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Bahamut dragons; high fantasy riders; lavish skies; spectacle
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -45,9 +46,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -62,6 +67,7 @@ taxonomy:
     - beast-rider
     - epic
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

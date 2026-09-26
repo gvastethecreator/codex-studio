@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP13-007
 packId: pack_13
-name: Sports Climax Arena
+name: Yoichi Takahashi - Sports Climax Arena
 category: 1. Core Anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,18 +11,21 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Sports climax anime: explosive match-point frames with speed lines, sweat, impact frames and extreme perspective.'
-  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: extreme foreshortening, speed lines, impact flashes, sweat drops and gritted faces at the peak of motion."
-  color_and_tone: Bright team colors with white impact flashes, used consistently across subject and background.
-  lighting_and_shadow: Arena lights and hard rim light, expressed through the style rather than photographic lighting.
-  texture_and_material: Cel with speed-line overlays and motion smears, visible at a glance as the signature of the style.
-  camera_and_composition: Extreme angles close to the action, arranged so the subject still reads at a glance.
-  atmosphere_and_mood: Intense, triumphant, sweaty and electric, driven by the construction, color and rhythm.
-  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  key_features: speed lines; foreshortening; impact flash; sweat
-  creative_brief: "Sports climax anime: explosive match-point frames with speed lines, sweat, impact frames and extreme perspective. Carry it through speed lines, foreshortening, impact flash, sweat. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Yoichi Takahashi Captain Tsubasa look: impossibly long football fields, dramatic extreme-perspective kicks and dives, flying sweat and eighties shonen sports melodrama.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Takahashi designs, lean athletic bodies, large determined eyes, flowing hair and classic football kits. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Grass green, sky blue, crisp kit white and bright sunset orange across the stadium.
+  lighting_and_shadow: Strong stadium sunlight and dramatic backlight burning behind players at the climax moment.
+  texture_and_material: Clean manga-derived line with speed lines, flying sweat droplets and torn grass.
+  camera_and_composition: Extreme perspective with the ball filling the frame and endless curving fields behind.
+  atmosphere_and_mood: Keep the requested mood with soaring match-point drama.
+  rendering_and_quality: Dramatic sports manga-style frame with exaggerated perspective and eighties melodrama.
+  key_features: Captain Tsubasa perspective; flying sweat; endless fields; climax kicks
+  creative_brief: "Yoichi Takahashi Captain Tsubasa look: impossibly long football fields, dramatic extreme-perspective kicks and dives, flying sweat and eighties shonen sports melodrama. Carry it through Captain Tsubasa perspective, flying sweat, endless fields, climax kicks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a number ten football captain in a white kit
+  - existing franchise characters
   - existing anime character likeness
   - studio or franchise logo
   - readable text
@@ -47,10 +50,13 @@ avoidRules:
   - UI overlay
   - franchise likeness
   - real person likeness
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-007.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, muddy motion, low detail, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts
+  negativePrompt: a number ten football captain in a white kit, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, muddy motion, low detail, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -59,8 +65,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Yoichi Takahashi - Sports Climax Arena
+styleAnchors:
+  - Yoichi Takahashi - Sports Climax Arena

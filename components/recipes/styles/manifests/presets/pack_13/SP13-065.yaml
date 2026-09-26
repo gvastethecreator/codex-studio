@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-065
 packId: pack_13
-name: Rooftop Wind Anime
+name: Studio Colorido - Rooftop Wind Anime
 styleAnchors:
-  - Rooftop Wind Anime
+  - Studio Colorido - Rooftop Wind Anime
   - wind and sky anime
   - windblown cloth
-displayName: Rooftop Wind Anime
+displayName: Studio Colorido - Rooftop Wind Anime
 category: 2. Slice Of Life, School And Music
 domain: wind and sky anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - wind
   - sky
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Rooftop wind anime: sky-dominated frames with strong wind, flapping clothes and hair, and sweeping clouds.'
-  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: dynamic windblown hair and cloth, open body poses, speed of clouds drawn with long strokes."
-  color_and_tone: Bright sky blue and white with small warm accents.
-  lighting_and_shadow: Clear daylight with fast cloud shadows, expressed through the style rather than photographic lighting.
-  texture_and_material: Cel with painted streaking clouds, visible at a glance as the signature of the style.
-  camera_and_composition: Low angles with most of the frame sky, arranged so the subject still reads at a glance.
-  atmosphere_and_mood: Free, restless, open and youthful, driven by the construction, color and rhythm.
-  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  creative_brief: "Rooftop wind anime: sky-dominated frames with strong wind, flapping clothes and hair, and sweeping clouds. Carry it through windblown cloth, big sky, streaking clouds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: windblown cloth; big sky; streaking clouds
+  aesthetic: 'Studio Colorido look as in Penguin Highway and A Whisker Away: bright airy summer towns, strong wind, fluffy clouds, cheerful designs and whimsical motion.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with soft cheerful designs, rounded faces, fluttering clothes and windswept hair. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Bright sky blue, cloud white, fresh green and warm sun.
+  lighting_and_shadow: Bright airy summer light with wind-tossed shadows and glowing clouds.
+  texture_and_material: Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.
+  camera_and_composition: Rooftop and hillside wide shots with hats, papers and kites flying in the wind.
+  atmosphere_and_mood: Keep the requested mood with breezy whimsical freedom.
+  rendering_and_quality: Bright airy Studio Colorido frame with playful windswept motion.
+  creative_brief: "Studio Colorido look as in Penguin Highway and A Whisker Away: bright airy summer towns, strong wind, fluffy clouds, cheerful designs and whimsical motion. Carry it through Studio Colorido wind, airy summer, fluffy clouds, whimsy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Studio Colorido wind; airy summer; fluffy clouds; whimsy
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -45,9 +46,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -62,6 +67,7 @@ taxonomy:
     - wind
     - sky
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-109
 packId: pack_13
-name: Kinetic Impact-Line Choreography
+name: Masashi Kishimoto - Kinetic Impact-Line Choreography
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,38 +11,22 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Use radial speed lines, afterimage trails and impact bursts only to describe motion or force
-    already present; keep the vectors directional and the subject readable.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: preserve the prompt palette and
-    reserve high-contrast accents for force paths and contact points.
-  lighting_and_shadow: >-
-    Use sharp value bursts and brief edge highlights to clarify the existing vector; do not add an
-    energy aura by default.
-  texture_and_material: >-
-    Keep speed marks fine and directional, with sparse afterimages; avoid filling the whole frame
-    with line noise.
-  camera_and_composition: >-
-    Align radiating marks to the prompted movement or impact while preserving pose, camera and
-    layout.
-  atmosphere_and_mood: >-
-    Kinetic intensity is a graphic rendering of the requested action, not permission to invent
-    action.
-  rendering_and_quality: >-
-    For still subjects, retain a still composition and use line rhythm only as a subtle graphic
-    treatment; add no aura or impact event. Keep important silhouettes and joins legible; no
-    watermark, unrequested text or interface.
-  key_features: >-
-    Directional speed-line forests; impact radials; restrained afterimage trails; force vectors;
-    clear silhouette.
-  creative_brief: 'Apply this visual treatment to the requested content: Directional speed-line forests; impact radials; restrained afterimage trails; force vectors; clear silhouette. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Masashi Kishimoto manga look: dynamic ninja action choreography, radial impact lines, afterimages and sharp detailed panels.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kishimoto designs, sharp eyes and dynamic action poses. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Black ink with dynamic tone, true to the Masashi Kishimoto palette.
+  lighting_and_shadow: Impact flashes, lit the way Masashi Kishimoto lights its scenes.
+  texture_and_material: Sharp ink and radial lines, with the surface finish of Masashi Kishimoto.
+  camera_and_composition: Dynamic action choreography, framed the way Masashi Kishimoto composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with kinetic martial energy.
+  rendering_and_quality: Dynamic action manga illustration, in the recognizable hand of Masashi Kishimoto.
+  key_features: Kishimoto choreography; impact lines; afterimages
+  creative_brief: "Masashi Kishimoto manga look: dynamic ninja action choreography, radial impact lines, afterimages and sharp detailed panels. Carry it through Kishimoto choreography, impact lines, afterimages. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - an orange jumpsuit ninja with whisker marks
+  - a leaf headband emblem
+  - existing franchise characters
   - photoreal cosplay rendering
   - 3D render look
   - plastic airbrush gloss obscuring the style's defining marks
@@ -56,16 +40,20 @@ avoidRules:
   - speed lines unrelated to prompted motion
   - afterimage trails detached from moving forms
   - impact radials obscuring silhouette
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-109.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, speed lines unrelated to prompted motion, afterimage
-    trails detached from moving forms, impact radials obscuring silhouette
+  negativePrompt: an orange jumpsuit ninja with whisker marks, a leaf headband emblem, existing franchise characters, photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, speed lines unrelated to prompted motion, afterimage trails detached from moving forms, impact radials obscuring silhouette, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -74,8 +62,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Masashi Kishimoto - Kinetic Impact-Line Choreography
+styleAnchors:
+  - Masashi Kishimoto - Kinetic Impact-Line Choreography

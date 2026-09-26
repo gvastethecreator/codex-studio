@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-324
 packId: pack_13
-name: Elastic Rom-Com Slapstick Timing
+name: Rumiko Takahashi - Elastic Rom-Com Slapstick Timing
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,39 +11,21 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Round, elastic contours pair with brief squash-and-stretch and short comic smears; make reaction
-    timing and buoyant affection the drawing rhythm, without inventing a gag or relationship.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: bright, clean cel values with
-    cheerful pastel accents and clear separation between subject and ground; keep the accent colors
-    attached to the prompt.
-  lighting_and_shadow: >-
-    Use crisp cel shadow shapes and a small rim highlight to punctuate an existing expression or
-    impact; do not turn stillness into motion.
-  texture_and_material: >-
-    Keep outlines smooth and rounded; reserve smear marks for motion already present, and keep fills
-    clean rather than gritty.
-  camera_and_composition: >-
-    Let contour compression and extension emphasize the existing pose; keep the prompted crop,
-    silhouette and layout.
-  atmosphere_and_mood: >-
-    Playful timing and warm buoyancy come from the line rhythm; preserve whatever emotional register
-    the prompt requests.
-  rendering_and_quality: >-
-    Keep deformation local and reversible: preserve recognizable identity and construction, and add
-    no blush, hearts, props or reaction marks unless requested. Keep important silhouettes and joins
-    legible; no watermark, unrequested text or interface.
-  key_features: >-
-    Comic smears; expressive reaction timing; controlled squash-and-stretch; readable rounded
-    silhouettes; buoyant tension; bright cartoon clarity.
-  creative_brief: 'Apply this visual treatment to the requested content: Comic smears; expressive reaction timing; controlled squash-and-stretch; readable rounded silhouettes; buoyant tension; bright cartoon clarity. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Rumiko Takahashi manga look as in Ranma 1/2: round clean faces, elastic slapstick bodies, martial-arts comedy, quick panel timing and cheerful romantic chaos.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Takahashi designs, round faces, big simple eyes and springy energetic bodies. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Black ink with light tone, and bright flat color in color pages.
+  lighting_and_shadow: Flat bright comic light, lit the way Rumiko Takahashi lights its scenes.
+  texture_and_material: Clean round brush-pen line and light tone, with the surface finish of Rumiko Takahashi.
+  camera_and_composition: Quick comic panels and slapstick action, framed the way Rumiko Takahashi composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with bouncy romantic slapstick.
+  rendering_and_quality: Clean lively comedy manga illustration, in the recognizable hand of Rumiko Takahashi.
+  key_features: Rumiko Takahashi roundness; slapstick; rom-com; martial comedy
+  creative_brief: "Rumiko Takahashi manga look as in Ranma 1/2: round clean faces, elastic slapstick bodies, martial-arts comedy, quick panel timing and cheerful romantic chaos. Carry it through Rumiko Takahashi roundness, slapstick, rom-com, martial comedy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a pigtailed martial artist in a red Chinese shirt
+  - existing franchise characters
   - photoreal cosplay rendering
   - 3D render look
   - plastic airbrush gloss obscuring the style's defining marks
@@ -58,17 +40,20 @@ avoidRules:
   - smear trails detached from prompted motion
   - motion blur obscuring contour
   - grain obscuring the clean rounded line
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-324.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, identity-changing squash-and-stretch, smear trails
-    detached from prompted motion, motion blur obscuring contour, grain obscuring the clean
-    rounded line
+  negativePrompt: a pigtailed martial artist in a red Chinese shirt, existing franchise characters, photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, identity-changing squash-and-stretch, smear trails detached from prompted motion, motion blur obscuring contour, grain obscuring the clean rounded line, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -77,8 +62,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Rumiko Takahashi - Elastic Rom-Com Slapstick Timing
+styleAnchors:
+  - Rumiko Takahashi - Elastic Rom-Com Slapstick Timing

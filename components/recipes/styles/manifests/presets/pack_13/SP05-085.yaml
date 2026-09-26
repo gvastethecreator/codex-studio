@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-085
 packId: pack_13
-name: Anxiety-Glitch Catharsis Comedy
+name: Bocchi the Rock! CloverWorks - Anxiety-Glitch Catharsis Comedy
 category: 4. Slice Of Life & Moe
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,18 +11,21 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
+  - reference-title
 visualDna:
-  aesthetic: 'Stable anime contours are interrupted by small broken segments and offset color edges; graphic disregistration sits on the surface rather than replacing the form.'
-  subject_treatment: 'Preserve identity, anatomy, expression, and count; confine offsets to the same silhouette so they never read as another pose or duplicate subject.'
-  color_and_tone: 'Pair quiet base values with abrupt saturated patches attached to existing shapes; keep the requested palette and contrast.'
-  lighting_and_shadow: 'Use clean flat shadows and hard-edged color blocks; follow the given light without adding a burst.'
-  texture_and_material: 'Add sparse pixel-like breaks and misregistered pigment edges over smooth fills; preserve the surface material beneath them.'
-  camera_and_composition: 'Keep the supplied crop, viewpoint, scale, layout, and count; vary edge density locally without creating panels, insets, or objects.'
-  atmosphere_and_mood: 'Retain the requested emotional state; graphic interruptions are a drawing treatment, not an instruction to prescribe a new emotion.'
-  rendering_and_quality: 'Keep the base drawing clean and readable beneath controlled edge breaks; avoid marks resembling text, interface elements, or watermarks.'
-  key_features: 'Broken contour segments; slight color registration offsets; sparse pixel-like marks; saturated patches against stable base values.'
-  creative_brief: 'Layer controlled misregistration over a legible drawing, keeping each offset attached to an existing form. Preserve subject, action, count, camera, and mood; add no text or props. Use it as a reusable look on any subject.'
+  aesthetic: 'CloverWorks Bocchi the Rock! look (2022): wild mixed-media anxiety gags, style switches into clay, photos and pixel art, and cathartic live-house rock.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with soft cute designs, tracksuits and band gear, dissolving into wild style switches when anxious. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Soft pink, live-house blue and sudden glitch colors.
+  lighting_and_shadow: Live-house stage lights and comedic glitch flashes, lit the way Bocchi the Rock! CloverWorks lights its scenes.
+  texture_and_material: Clean cel mixed with clay, photo and pixel-art gag inserts.
+  camera_and_composition: Anxiety close-ups and live performance wides, framed the way Bocchi the Rock! CloverWorks composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with anxious cathartic comedy.
+  rendering_and_quality: Inventive CloverWorks frame with mixed-media gags, in the recognizable hand of Bocchi the Rock! CloverWorks.
+  key_features: Bocchi mixed media; anxiety gags; live houses; catharsis
+  creative_brief: "CloverWorks Bocchi the Rock! look (2022): wild mixed-media anxiety gags, style switches into clay, photos and pixel art, and cathartic live-house rock. Carry it through Bocchi mixed media, anxiety gags, live houses, catharsis. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a pink-haired guitarist in a pink tracksuit
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -44,15 +47,19 @@ avoidRules:
   - generic anime filter
   - prompt literal card reuse
   - fake UI
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-085.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock,
-    canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic
-    anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied
-    franchise costume, logo
+  negativePrompt: a pink-haired guitarist in a pink tracksuit, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -61,8 +68,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - slice-of-life-and-moe
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Bocchi the Rock! CloverWorks - Anxiety-Glitch Catharsis Comedy
+styleAnchors:
+  - Bocchi the Rock! CloverWorks - Anxiety-Glitch Catharsis Comedy

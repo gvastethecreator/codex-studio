@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-206
 packId: pack_13
-name: Everyday-Care Gesture Intimacy
+name: Yumi Unita - Everyday-Care Gesture Intimacy
 category: 4. Slice Of Life & Moe
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,17 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
+  - reference-title
 visualDna:
-  aesthetic: 'Fine contour detail concentrates where existing forms touch, while neighboring edges remain soft and economical.'
-  subject_treatment: "Keep the user's subjects, relation, gesture, age, and count; render existing contact points without changing their intent."
-  color_and_tone: "Use natural midtones and restrained warm highlights balanced by the prompt's other colors; avoid an exclusively pastel cast."
-  lighting_and_shadow: 'Give overlapping forms clear contact shadows under the supplied light; keep the edge soft where forms separate.'
-  texture_and_material: 'Add small tactile strokes only for materials already specified; do not suggest other materials.'
-  camera_and_composition: 'Keep the exact crop, viewpoint, scale, spacing, and count; contact detail works at any distance and must not force a close-up.'
-  atmosphere_and_mood: "Follow the requested emotional intensity; delicate detail must not change the scene's emotional reading."
-  rendering_and_quality: 'Keep fine local edges crisp while broad forms stay smooth; maintain readable overlaps when they exist.'
-  key_features: 'Fine contact-point contours; precise overlap shadows; smooth broad forms; restrained warm accents; material-specific tactile marks.'
-  creative_brief: 'Focus line detail at contact points already present in the image, keeping all relations user-defined. Preserve subject, action, count, camera, and mood. Use it as a reusable look on any subject.'
+  aesthetic: 'Yumi Unita Usagi Drop look: soft watercolor-like gentle illustration, everyday caregiving, tender small gestures and warm homes.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Unita designs, soft faces, simple home clothes and caring gestures. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Soft watercolor pastels and warm home tones, true to the Yumi Unita palette.
+  lighting_and_shadow: Soft warm home light, lit the way Yumi Unita lights its scenes.
+  texture_and_material: Soft watercolor-like washes and gentle lines, with the surface finish of Yumi Unita.
+  camera_and_composition: Intimate home compositions, framed the way Yumi Unita composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with tender everyday care.
+  rendering_and_quality: Gentle watercolor slice-of-life illustration, in the recognizable hand of Yumi Unita.
+  key_features: Yumi Unita watercolor; caregiving; tender gestures
+  creative_brief: "Yumi Unita Usagi Drop look: soft watercolor-like gentle illustration, everyday caregiving, tender small gestures and warm homes. Carry it through Yumi Unita watercolor, caregiving, tender gestures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -44,15 +45,14 @@ avoidRules:
   - generic anime filter
   - prompt literal card reuse
   - fake UI
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-206.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock,
-    canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic
-    anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied
-    franchise costume, logo
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -61,8 +61,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - slice-of-life-and-moe
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Yumi Unita - Everyday-Care Gesture Intimacy
+styleAnchors:
+  - Yumi Unita - Everyday-Care Gesture Intimacy

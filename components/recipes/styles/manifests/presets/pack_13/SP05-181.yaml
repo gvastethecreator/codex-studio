@@ -3,7 +3,7 @@ id: SP05-181
 packId: pack_13
 name: Fruits Basket - Zodiac Warmth and Grief
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,28 +13,19 @@ tags:
   - shojo-magical-girl-and-visionary-classics
   - reference-title
 visualDna:
-  aesthetic: >-
-    Gentle anime cel drawing uses rounded fine contours, understated shadows, and open focal
-    detail.
-  subject_treatment: >-
-    Preserve subject, action, count; soften requested edges without adding animals, symbols,
-    or embraces.
-  color_and_tone: >-
-    Warm ochre, sky blue, moss green, cream, brick red; balance warm and cool mids.
-  lighting_and_shadow: >-
-    Broad gentle light and low-contrast shadows; neutral unless prompt supplies a source.
-  texture_and_material: >-
-    Light pigment wash and fine pencil-like contour; no seasonal debris or sparkle.
-  camera_and_composition: >-
-    Maintain composition; overlaps and closeness follow only requested relationships.
-  atmosphere_and_mood: >-
-    Compassion or grief only when present; softness is rendering, not plot.
-  rendering_and_quality: >-
-    Stable anatomy, delicate contours, distinct mids, no haze or oversoften.
-  key_features: >-
-    Rounded fine contour, warm-cool values, subtle wash, closeness only when requested
-  creative_brief: 'Apply a visual treatment centered on rounded fine contour, warm-cool values, subtle wash, closeness only when requested. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'Natsuki Takaya Fruits Basket manga look: gentle rounded faces with big eyes, soft sad smiles, zodiac animal motifs and warm grief.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Takaya designs, round faces, big expressive eyes and simple cozy clothes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Warm peach, soft green, gentle brown and pastel.
+  lighting_and_shadow: Soft warm household light, lit the way Fruits Basket lights its scenes.
+  texture_and_material: Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.
+  camera_and_composition: Warm family compositions and tearful close-ups, framed the way Fruits Basket composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with warm tender grief.
+  rendering_and_quality: Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.
+  key_features: Natsuki Takaya warmth; zodiac motifs; soft sad smiles
+  creative_brief: "Natsuki Takaya Fruits Basket manga look: gentle rounded faces with big eyes, soft sad smiles, zodiac animal motifs and warm grief. Carry it through Natsuki Takaya warmth, zodiac motifs, soft sad smiles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a girl with long brown hair and a pink hat among zodiac boys
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -56,19 +47,19 @@ avoidRules:
   - generic anime filter
   - prompt literal card reuse
   - fake UI
-  - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-181.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: a girl with long brown hair and a pink hat among zodiac boys, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, noisy compression artifacts
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -83,3 +74,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Fruits Basket - Zodiac Warmth and Grief
+styleAnchors:
+  - Fruits Basket - Zodiac Warmth and Grief

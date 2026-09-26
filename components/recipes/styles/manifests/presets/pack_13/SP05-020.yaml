@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-020
 packId: pack_13
-name: Dream Card Enchanter
+name: Kazuki Takahashi - Dream Card Enchanter
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,29 +11,22 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Polished anime cel drawing combines continuous curves, emblem-like geometry, and soft
-    peripheral glow.
-  subject_treatment: >-
-    Keep the prompted form; use fine internal motifs only on details already present.
-  color_and_tone: >-
-    Warm ivory, lavender, lapis, pale yellow; strong dark anchor, restrained pastel notes.
-  lighting_and_shadow: >-
-    Broad soft highlight beside crisp cel shadows; bloom only on existing luminous details.
-  texture_and_material: >-
-    Smooth fills, translucent flecks, and curved marks; no added cards, ribbons, or
-    particles.
-  camera_and_composition: >-
-    Respect crop; existing forms may follow a calm radial rhythm without card framing.
-  atmosphere_and_mood: >-
-    Delicate wonder comes from ornament only when it fits the requested mood.
-  rendering_and_quality: >-
-    Crisp silhouettes, restrained glow, legible ornament, clean flat color.
-  key_features: >-
-    Curved emblem line, soft local bloom, precise ornament, lapis and ivory
-  creative_brief: 'Apply a visual treatment centered on curved emblem line, soft local bloom, precise ornament, lapis and ivory. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'Kazuki Takahashi manga look: sharp angular faces, spiky dramatic hair, intense card duels and colossal original monsters summoned from glowing cards.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Takahashi designs, angular jaws, intense eyes, spiky hair and dramatic coats. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Dramatic purple, gold, black and glowing card light.
+  lighting_and_shadow: Glowing card light and dramatic backlit summons, lit the way Kazuki Takahashi lights its scenes.
+  texture_and_material: Sharp inked lines, screentone and dramatic effect lines.
+  camera_and_composition: Low dramatic angles with giant summoned creatures, framed the way Kazuki Takahashi composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with dramatic summoning intensity.
+  rendering_and_quality: Dramatic card-battle manga illustration, in the recognizable hand of Kazuki Takahashi.
+  key_features: Kazuki Takahashi angles; spiky hair; card summons; giant monsters
+  creative_brief: "Kazuki Takahashi manga look: sharp angular faces, spiky dramatic hair, intense card duels and colossal original monsters summoned from glowing cards. Carry it through Kazuki Takahashi angles, spiky hair, card summons, giant monsters. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - existing card-game monsters
+  - millennium puzzle pendant
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -55,15 +48,19 @@ avoidRules:
   - generic anime filter
   - prompt literal card reuse
   - fake UI
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-020.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo
+  negativePrompt: existing card-game monsters, millennium puzzle pendant, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -72,8 +69,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - shojo-magical-girl-and-visionary-classics
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Kazuki Takahashi - Dream Card Enchanter
+styleAnchors:
+  - Kazuki Takahashi - Dream Card Enchanter

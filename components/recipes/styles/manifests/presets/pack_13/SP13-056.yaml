@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-056
 packId: pack_13
-name: Concert Spotlight Anime
+name: Carole and Tuesday BONES - Concert Spotlight Anime
 styleAnchors:
-  - Concert Spotlight Anime
+  - Carole and Tuesday BONES - Concert Spotlight Anime
   - live performance anime
   - spotlights
-displayName: Concert Spotlight Anime
+displayName: Carole and Tuesday BONES - Concert Spotlight Anime
 category: 2. Slice Of Life, School And Music
 domain: live performance anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - concert
   - stage-light
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Concert spotlight anime: live-performance frames with blazing spotlights, lens flares, sweat and silhouetted crowds.'
-  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: dynamic performing poses, flying sweat and hair, instruments drawn precisely, crowd as silhouettes with raised hands."
-  color_and_tone: 'Saturated stage colors: magenta, blue and gold against black.'
-  lighting_and_shadow: Spotlights, backlight and lens flares, expressed through the style rather than photographic lighting.
-  texture_and_material: Cel with glow, haze and flare overlays, visible at a glance as the signature of the style.
-  camera_and_composition: Low angle from the crowd or wide from behind the band.
-  atmosphere_and_mood: Euphoric, loud, sweaty and alive, driven by the construction, color and rhythm.
-  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  creative_brief: "Concert spotlight anime: live-performance frames with blazing spotlights, lens flares, sweat and silhouetted crowds. Carry it through spotlights, lens flares, sweat, crowd silhouettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: spotlights; lens flares; sweat; crowd silhouettes
+  aesthetic: 'BONES Carole and Tuesday look (2019): future Mars music scene, soft realistic designs, detailed instruments, warm concert lights and heartfelt performances.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with soft realistic designs, expressive faces, stage clothes and precisely drawn instruments. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Warm stage amber, Mars dusk orange, spotlight white and soft blue.
+  lighting_and_shadow: Blazing spotlights, lens flares and warm crowd glow.
+  texture_and_material: Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.
+  camera_and_composition: Concert stage wide shots and emotional close-ups of performers mid-song.
+  atmosphere_and_mood: Keep the requested mood with heartfelt musical triumph.
+  rendering_and_quality: Polished BONES television frame with detailed musical performance animation.
+  creative_brief: "BONES Carole and Tuesday look (2019): future Mars music scene, soft realistic designs, detailed instruments, warm concert lights and heartfelt performances. Carry it through Carole and Tuesday concerts, detailed instruments, spotlights, heartfelt. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Carole and Tuesday concerts; detailed instruments; spotlights; heartfelt
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -45,9 +46,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -62,6 +67,7 @@ taxonomy:
     - concert
     - stage-light
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

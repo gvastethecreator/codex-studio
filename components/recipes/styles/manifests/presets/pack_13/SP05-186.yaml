@@ -3,7 +3,7 @@ id: SP05-186
 packId: pack_13
 name: Lovely Complex - Height-Gap Comedy Romance
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,28 +13,16 @@ tags:
   - shojo-magical-girl-and-visionary-classics
   - reference-title
 visualDna:
-  aesthetic: >-
-    Comedic anime drawing varies contour weight and spacing for readable beats without
-    changing scale.
-  subject_treatment: >-
-    Keep proportions and identity; exaggerate only requested expression or gesture, never
-    height contrast.
-  color_and_tone: >-
-    Sun yellow, turquoise, tomato red, ivory, charcoal in bold separated blocks.
-  lighting_and_shadow: >-
-    Bright even cel light and one dark anchor; no stage-like lighting.
-  texture_and_material: >-
-    Clean color surfaces with short accent hatch; no symbols without a prompt cue.
-  camera_and_composition: >-
-    Respect framing and count; alternate dense and open areas without resizing forms.
-  atmosphere_and_mood: >-
-    Humor only when requested; preserve quiet or serious moods when asked.
-  rendering_and_quality: >-
-    Crisp silhouette, squash limited to expression, no stars or excess effects.
-  key_features: >-
-    Variable contour rhythm, vivid color blocks, timing through space, expression without
-    scale change
-  creative_brief: 'Apply a visual treatment centered on variable contour rhythm, vivid color blocks, timing through space, expression without scale change. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'Aya Nakahara Lovely Complex look: Osaka comedy romance, exaggerated reactions, height-gap gags and bright energetic shojo.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Nakahara designs, expressive comic faces and casual clothes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Bright warm pastels and comedy colors, true to the Lovely Complex palette.
+  lighting_and_shadow: Bright cheerful light, lit the way Lovely Complex lights its scenes.
+  texture_and_material: Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.
+  camera_and_composition: Comedic reaction panels and height-gap compositions, framed the way Lovely Complex composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with rowdy comic romance.
+  rendering_and_quality: Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.
+  key_features: Lovely Complex comedy; height gags; energetic shojo
+  creative_brief: "Aya Nakahara Lovely Complex look: Osaka comedy romance, exaggerated reactions, height-gap gags and bright energetic shojo. Carry it through Lovely Complex comedy, height gags, energetic shojo. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -59,17 +47,12 @@ avoidRules:
   - fake UI
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-186.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -84,3 +67,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Lovely Complex - Height-Gap Comedy Romance
+styleAnchors:
+  - Lovely Complex - Height-Gap Comedy Romance

@@ -3,7 +3,7 @@ id: SP05-327
 packId: pack_13
 name: Osamu Dezaki - Postcard Memory Freeze
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,33 +13,16 @@ tags:
   - anime-style-spectrum
   - reference-title
 visualDna:
-  aesthetic: >-
-    A drawing technique, not a copy of any work: hold the existing beat as a poster-like freeze
-    with bold silhouette, grouped values, selective rim and light film grain.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: use a compact, emotionally clear
-    palette with deliberate value groups; retain prompt-specific colors.
-  lighting_and_shadow: >-
-    Add a selective rim only where the prompt's light supports it; keep shadow blocks broad and
-    readable.
-  texture_and_material: >-
-    Use painterly poster edges and subtle grain, not a literal postcard surface or frame.
-  camera_and_composition: >-
-    Emphasize the existing pose and pause; preserve requested camera, crop and surrounding content.
-  atmosphere_and_mood: >-
-    A suspended beat carries memory; do not imply a past event or romantic scene absent from the
-    prompt.
-  rendering_and_quality: >-
-    Apply the pause treatment to any subject without adding a postcard border, text, character or
-    scene. Keep important silhouettes and joins legible; no watermark, unrequested text or
-    interface.
-  key_features: >-
-    Held-beat freeze; bold silhouette; poster-value grouping; selective rim; subtle film grain.
-  creative_brief: 'Apply this visual treatment to the requested content: Held-beat freeze; bold silhouette; poster-value grouping; selective rim; subtle film grain. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Osamu Dezaki direction look as in Ashita no Joe 2 and Aim for the Ace: painted pastel postcard freeze frames, triple-take zooms, split screens and harmonica-light melancholy.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with seventies-eighties realistic designs, strong faces and sporting clothes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Pastel chalk postcard colors over dramatic darks, true to the Osamu Dezaki palette.
+  lighting_and_shadow: Dramatic backlight and hazy glow, lit the way Osamu Dezaki lights its scenes.
+  texture_and_material: Painted pastel-chalk freeze frames over cel, with the surface finish of Osamu Dezaki.
+  camera_and_composition: Triple-take zooms and split screens, framed the way Osamu Dezaki composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with melancholy frozen memory.
+  rendering_and_quality: Painterly postcard freeze-frame illustration, in the recognizable hand of Osamu Dezaki.
+  key_features: Dezaki postcard freeze; triple takes; split screens
+  creative_brief: "Osamu Dezaki direction look as in Ashita no Joe 2 and Aim for the Ace: painted pastel postcard freeze frames, triple-take zooms, split screens and harmonica-light melancholy. Carry it through Dezaki postcard freeze, triple takes, split screens. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look
@@ -56,18 +39,12 @@ avoidRules:
   - rim highlights clipping the contour
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-327.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, muddy value blocks hiding the held silhouette,
-    distant-plane detail competing with focal form, rim highlights clipping the contour, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, muddy value blocks hiding the held silhouette, distant-plane detail competing with focal form, rim highlights clipping the contour, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -82,3 +59,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Osamu Dezaki - Postcard Memory Freeze
+styleAnchors:
+  - Osamu Dezaki - Postcard Memory Freeze

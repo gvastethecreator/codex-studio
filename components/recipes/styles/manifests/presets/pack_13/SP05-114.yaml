@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-114
 packId: pack_13
-name: Threadbare Textile Patchwork
+name: Gankutsuou Gonzo - Threadbare Textile Patchwork
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,35 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Use stitched contour accents, crosswise weave marks, seam breaks and frayed edges only where the
-    source form supports a textile reading.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: retain the source palette and
-    use thread-like accents sparingly; do not recolor every surface as cloth.
-  lighting_and_shadow: >-
-    Use soft diffuse value and small seam shadows; respect the prompt's actual illumination.
-  texture_and_material: >-
-    Show thread, weave, stitch and fray as controlled mark vocabulary while preserving each depicted
-    material.
-  camera_and_composition: >-
-    Let seams clarify existing construction and boundaries; preserve camera, silhouette and
-    arrangement.
-  atmosphere_and_mood: >-
-    Tactility comes from the stitch rhythm; do not turn every object into fabric or add a frame.
-  rendering_and_quality: >-
-    Transfer textile marks selectively to any subject without adding hoop, garment, cloth prop or
-    embroidery motif. Keep important silhouettes and joins legible; no watermark, unrequested text
-    or interface.
-  key_features: >-
-    Stitched contour; crosswise weave/hatch; patch seams; selective fray; sashiko-like rhythm only
-    when source pattern supports it.
-  creative_brief: 'Apply this visual treatment to the requested content: Stitched contour; crosswise weave/hatch; patch seams; selective fray; sashiko-like rhythm only when source pattern supports it. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Gonzo Gankutsuou look (2004) by Mahiro Maeda: characters filled with static textile patterns, ornate fabric textures and baroque sci-fi opulence.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Maeda designs whose clothes and hair are filled with flat static textile patterns. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Ornate jewel textile colors, true to the Gankutsuou Gonzo palette.
+  lighting_and_shadow: Opulent theatrical light, lit the way Gankutsuou Gonzo lights its scenes.
+  texture_and_material: Static textile patterns inside shapes, with the surface finish of Gankutsuou Gonzo.
+  camera_and_composition: Baroque opulent compositions, framed the way Gankutsuou Gonzo composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with opulent patterned intrigue.
+  rendering_and_quality: Patterned textile animation frame, in the recognizable hand of Gankutsuou Gonzo.
+  key_features: Gankutsuou textiles; static patterns; baroque
+  creative_brief: "Gonzo Gankutsuou look (2004) by Mahiro Maeda: characters filled with static textile patterns, ornate fabric textures and baroque sci-fi opulence. Carry it through Gankutsuou textiles, static patterns, baroque. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look
@@ -54,16 +37,14 @@ avoidRules:
   - weave marks obscuring nontextile material cues
   - stitches detached from existing seams
   - fray replacing the source silhouette
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-114.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, weave marks obscuring nontextile material cues,
-    stitches detached from existing seams, fray replacing the source silhouette
+  negativePrompt: photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, weave marks obscuring nontextile material cues, stitches detached from existing seams, fray replacing the source silhouette, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -72,8 +53,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Gankutsuou Gonzo - Threadbare Textile Patchwork
+styleAnchors:
+  - Gankutsuou Gonzo - Threadbare Textile Patchwork

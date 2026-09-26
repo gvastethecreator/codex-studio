@@ -9,7 +9,8 @@
   "presets": [
     {
       "id": "SP13-001",
-      "name": "Cel Heroic Dawn",
+      "name": "Moribito Production I.G - Cel Heroic Dawn",
+      "styleAnchors": ["Moribito Production I.G - Cel Heroic Dawn"],
       "ref": "pack_13/SP13-001.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -17,11 +18,12 @@
       "categoryName": "1. Core Anime",
       "tags": ["anime-02-anime-character-and-lifestyle", "core-anime"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-001 cel heroic dawn 1. core anime cel fundamentals pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime"
+      "searchableText": "sp13-001 moribito production i.g - cel heroic dawn 1. core anime cel fundamentals pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime"
     },
     {
       "id": "SP13-002",
-      "name": "Neon City Vigil",
+      "name": "Akudama Drive Pierrot - Neon City Vigil",
+      "styleAnchors": ["Akudama Drive Pierrot - Neon City Vigil"],
       "ref": "pack_13/SP13-002.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -29,11 +31,12 @@
       "categoryName": "1. Core Anime",
       "tags": ["anime-02-anime-character-and-lifestyle", "core-anime"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-002 neon city vigil 1. core anime cel fundamentals pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime"
+      "searchableText": "sp13-002 akudama drive pierrot - neon city vigil 1. core anime cel fundamentals pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime"
     },
     {
       "id": "SP13-004",
-      "name": "Mecha Hangar Ignition",
+      "name": "Gundam Unicorn Sunrise - Mecha Hangar Ignition",
+      "styleAnchors": ["Gundam Unicorn Sunrise - Mecha Hangar Ignition"],
       "ref": "pack_13/SP13-004.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -41,11 +44,12 @@
       "categoryName": "1. Core Anime",
       "tags": ["anime-02-anime-character-and-lifestyle", "core-anime"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-004 mecha hangar ignition 1. core anime cel fundamentals pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime"
+      "searchableText": "sp13-004 gundam unicorn sunrise - mecha hangar ignition 1. core anime cel fundamentals pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime"
     },
     {
       "id": "SP13-006",
-      "name": "Spirit Shrine Twilight",
+      "name": "Isao Takahata Kaguya - Spirit Shrine Twilight",
+      "styleAnchors": ["Isao Takahata Kaguya - Spirit Shrine Twilight"],
       "ref": "pack_13/SP13-006.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -53,11 +57,12 @@
       "categoryName": "1. Core Anime",
       "tags": ["anime-02-anime-character-and-lifestyle", "core-anime"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-006 spirit shrine twilight 1. core anime cel fundamentals pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime"
+      "searchableText": "sp13-006 isao takahata kaguya - spirit shrine twilight 1. core anime cel fundamentals pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime"
     },
     {
       "id": "SP13-007",
-      "name": "Sports Climax Arena",
+      "name": "Yoichi Takahashi - Sports Climax Arena",
+      "styleAnchors": ["Yoichi Takahashi - Sports Climax Arena"],
       "ref": "pack_13/SP13-007.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -65,11 +70,12 @@
       "categoryName": "1. Core Anime",
       "tags": ["anime-02-anime-character-and-lifestyle", "core-anime"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-007 sports climax arena 1. core anime cel fundamentals pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime"
+      "searchableText": "sp13-007 yoichi takahashi - sports climax arena 1. core anime cel fundamentals pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime"
     },
     {
       "id": "SP13-008",
-      "name": "Gothic Vampire Manor",
+      "name": "Matsuri Hino - Gothic Vampire Manor",
+      "styleAnchors": ["Matsuri Hino - Gothic Vampire Manor"],
       "ref": "pack_13/SP13-008.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -77,11 +83,12 @@
       "categoryName": "1. Core Anime",
       "tags": ["anime-02-anime-character-and-lifestyle", "core-anime"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-008 gothic vampire manor 1. core anime cel fundamentals pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime"
+      "searchableText": "sp13-008 matsuri hino - gothic vampire manor 1. core anime cel fundamentals pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime"
     },
     {
       "id": "SP13-009",
-      "name": "Magical Girl Prism Burst",
+      "name": "Precure Toei - Magical Girl Prism Burst",
+      "styleAnchors": ["Precure Toei - Magical Girl Prism Burst"],
       "ref": "pack_13/SP13-009.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -89,11 +96,12 @@
       "categoryName": "1. Core Anime",
       "tags": ["anime-02-anime-character-and-lifestyle", "core-anime"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-009 magical girl prism burst 1. core anime cel fundamentals pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime"
+      "searchableText": "sp13-009 precure toei - magical girl prism burst 1. core anime cel fundamentals pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime"
     },
     {
       "id": "SP13-010",
-      "name": "Isekai Forest Caravan",
+      "name": "Yako Gureishi - Isekai Forest Caravan",
+      "styleAnchors": ["Yako Gureishi - Isekai Forest Caravan"],
       "ref": "pack_13/SP13-010.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -101,11 +109,12 @@
       "categoryName": "1. Core Anime",
       "tags": ["anime-02-anime-character-and-lifestyle", "core-anime"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-010 isekai forest caravan 1. core anime cel fundamentals pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime"
+      "searchableText": "sp13-010 yako gureishi - isekai forest caravan 1. core anime cel fundamentals pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime"
     },
     {
       "id": "SP13-011",
-      "name": "Meikyuu Dungeon Glow",
+      "name": "Delicious in Dungeon Trigger - Meikyuu Dungeon Glow",
+      "styleAnchors": ["Delicious in Dungeon Trigger - Meikyuu Dungeon Glow"],
       "ref": "pack_13/SP13-011.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -113,11 +122,12 @@
       "categoryName": "1. Core Anime",
       "tags": ["anime-02-anime-character-and-lifestyle", "core-anime"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-011 meikyuu dungeon glow 1. core anime cel fundamentals pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime"
+      "searchableText": "sp13-011 delicious in dungeon trigger - meikyuu dungeon glow 1. core anime cel fundamentals pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime"
     },
     {
       "id": "SP13-012",
-      "name": "Retro Mecha VHS Grain",
+      "name": "Gundam 0083 Sunrise - Retro Mecha VHS Grain",
+      "styleAnchors": ["Gundam 0083 Sunrise - Retro Mecha VHS Grain"],
       "ref": "pack_13/SP13-012.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -125,11 +135,12 @@
       "categoryName": "1. Core Anime",
       "tags": ["anime-02-anime-character-and-lifestyle", "core-anime"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-012 retro mecha vhs grain 1. core anime cel fundamentals pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime"
+      "searchableText": "sp13-012 gundam 0083 sunrise - retro mecha vhs grain 1. core anime cel fundamentals pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime"
     },
     {
       "id": "SP13-014",
-      "name": "Ronin Alley Duel",
+      "name": "Ryoichi Ikegami - Ronin Alley Duel",
+      "styleAnchors": ["Ryoichi Ikegami - Ronin Alley Duel"],
       "ref": "pack_13/SP13-014.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -137,11 +148,12 @@
       "categoryName": "1. Core Anime",
       "tags": ["anime-02-anime-character-and-lifestyle", "core-anime"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-014 ronin alley duel 1. core anime cel fundamentals pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime"
+      "searchableText": "sp13-014 ryoichi ikegami - ronin alley duel 1. core anime cel fundamentals pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime"
     },
     {
       "id": "SP13-016",
-      "name": "Battle Mage Stormcast",
+      "name": "Sorcerous Stabber Orphen - Battle Mage Stormcast",
+      "styleAnchors": ["Sorcerous Stabber Orphen - Battle Mage Stormcast"],
       "ref": "pack_13/SP13-016.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -149,11 +161,12 @@
       "categoryName": "1. Core Anime",
       "tags": ["anime-02-anime-character-and-lifestyle", "core-anime"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-016 battle mage stormcast 1. core anime cel fundamentals pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime"
+      "searchableText": "sp13-016 sorcerous stabber orphen - battle mage stormcast 1. core anime cel fundamentals pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime"
     },
     {
       "id": "SP13-017",
-      "name": "Ink Noir Detective",
+      "name": "Natsume Ono - Ink Noir Detective",
+      "styleAnchors": ["Natsume Ono - Ink Noir Detective"],
       "ref": "pack_13/SP13-017.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -161,11 +174,12 @@
       "categoryName": "1. Core Anime",
       "tags": ["anime-02-anime-character-and-lifestyle", "core-anime"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-017 ink noir detective 1. core anime cel fundamentals pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime"
+      "searchableText": "sp13-017 natsume ono - ink noir detective 1. core anime cel fundamentals pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime"
     },
     {
       "id": "SP13-019",
-      "name": "Forest Spirit Courier",
+      "name": "Studio Ponoc - Forest Spirit Courier",
+      "styleAnchors": ["Studio Ponoc - Forest Spirit Courier"],
       "ref": "pack_13/SP13-019.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -173,11 +187,12 @@
       "categoryName": "1. Core Anime",
       "tags": ["anime-02-anime-character-and-lifestyle", "core-anime"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-019 forest spirit courier 1. core anime cel fundamentals pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime"
+      "searchableText": "sp13-019 studio ponoc - forest spirit courier 1. core anime cel fundamentals pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime"
     },
     {
       "id": "SP13-020",
-      "name": "Final Episode Closure",
+      "name": "Your Lie in April A-1 - Final Episode Closure",
+      "styleAnchors": ["Your Lie in April A-1 - Final Episode Closure"],
       "ref": "pack_13/SP13-020.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -185,12 +200,16 @@
       "categoryName": "1. Core Anime",
       "tags": ["anime-02-anime-character-and-lifestyle", "core-anime"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-020 final episode closure 1. core anime cel fundamentals pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime"
+      "searchableText": "sp13-020 your lie in april a-1 - final episode closure 1. core anime cel fundamentals pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime"
     },
     {
       "id": "SP13-051",
-      "name": "Sky Pirate Airship Anime",
-      "styleAnchors": ["Sky Pirate Airship Anime", "airship adventure anime", "airships"],
+      "name": "Last Exile Gonzo - Sky Pirate Airship Anime",
+      "styleAnchors": [
+        "Last Exile Gonzo - Sky Pirate Airship Anime",
+        "airship adventure anime",
+        "airships"
+      ],
       "ref": "pack_13/SP13-051.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -199,7 +218,7 @@
       "domain": "airship adventure anime",
       "tags": ["anime-02-anime-character-and-lifestyle", "core-anime", "airship-adventure-anime"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-051 sky pirate airship anime airship adventure anime airships 1. core anime cel fundamentals airship adventure anime pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime airship-adventure-anime"
+      "searchableText": "sp13-051 last exile gonzo - sky pirate airship anime airship adventure anime airships 1. core anime cel fundamentals airship adventure anime pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime airship-adventure-anime"
     },
     {
       "id": "SP13-052",
@@ -221,9 +240,9 @@
     },
     {
       "id": "SP13-053",
-      "name": "Monster Tamer Adventure Anime",
+      "name": "Ken Sugimori - Monster Tamer Adventure Anime",
       "styleAnchors": [
-        "Monster Tamer Adventure Anime",
+        "Ken Sugimori - Monster Tamer Adventure Anime",
         "creature companion anime",
         "creature companions"
       ],
@@ -235,12 +254,12 @@
       "domain": "creature companion anime",
       "tags": ["anime-02-anime-character-and-lifestyle", "core-anime", "creature-companion-anime"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-053 monster tamer adventure anime creature companion anime creature companions 1. core anime cel fundamentals creature companion anime pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime creature-companion-anime"
+      "searchableText": "sp13-053 ken sugimori - monster tamer adventure anime creature companion anime creature companions 1. core anime cel fundamentals creature companion anime pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime creature-companion-anime"
     },
     {
       "id": "SP13-054",
-      "name": "Mythic Beast-Rider Anime",
-      "styleAnchors": ["Mythic Beast-Rider Anime", "epic mount anime", "riders"],
+      "name": "Bahamut MAPPA - Mythic Beast-Rider Anime",
+      "styleAnchors": ["Bahamut MAPPA - Mythic Beast-Rider Anime", "epic mount anime", "riders"],
       "ref": "pack_13/SP13-054.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -249,12 +268,16 @@
       "domain": "epic mount anime",
       "tags": ["anime-02-anime-character-and-lifestyle", "core-anime", "epic-mount-anime"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-054 mythic beast-rider anime epic mount anime riders 1. core anime cel fundamentals epic mount anime pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime epic-mount-anime"
+      "searchableText": "sp13-054 bahamut mappa - mythic beast-rider anime epic mount anime riders 1. core anime cel fundamentals epic mount anime pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime epic-mount-anime"
     },
     {
       "id": "SP13-055",
-      "name": "Midnight Mountain Racing Anime",
-      "styleAnchors": ["Midnight Mountain Racing Anime", "street racing anime", "drift smoke"],
+      "name": "Shuichi Shigeno - Midnight Mountain Racing Anime",
+      "styleAnchors": [
+        "Shuichi Shigeno - Midnight Mountain Racing Anime",
+        "street racing anime",
+        "drift smoke"
+      ],
       "ref": "pack_13/SP13-055.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -263,11 +286,12 @@
       "domain": "street racing anime",
       "tags": ["anime-02-anime-character-and-lifestyle", "core-anime", "street-racing-anime"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-055 midnight mountain racing anime street racing anime drift smoke 1. core anime cel fundamentals street racing anime pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime street-racing-anime"
+      "searchableText": "sp13-055 shuichi shigeno - midnight mountain racing anime street racing anime drift smoke 1. core anime cel fundamentals street racing anime pack_13 anime 02 — anime character & lifestyle core-anime anime-02-anime-character-and-lifestyle core-anime street-racing-anime"
     },
     {
       "id": "SP13-003",
-      "name": "Soft Shojo Spring",
+      "name": "Arina Tanemura - Soft Shojo Spring",
+      "styleAnchors": ["Arina Tanemura - Soft Shojo Spring"],
       "ref": "pack_13/SP13-003.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -275,11 +299,12 @@
       "categoryName": "2. Slice Of Life, School And Music",
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-school-and-music"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-003 soft shojo spring 2. slice of life, school and music everyday anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music"
+      "searchableText": "sp13-003 arina tanemura - soft shojo spring 2. slice of life, school and music everyday anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music"
     },
     {
       "id": "SP13-005",
-      "name": "Rainy Slice of Life",
+      "name": "Hanasaku Iroha P.A. Works - Rainy Slice of Life",
+      "styleAnchors": ["Hanasaku Iroha P.A. Works - Rainy Slice of Life"],
       "ref": "pack_13/SP13-005.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -287,12 +312,12 @@
       "categoryName": "2. Slice Of Life, School And Music",
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-school-and-music"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-005 rainy slice of life 2. slice of life, school and music everyday anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music"
+      "searchableText": "sp13-005 hanasaku iroha p.a. works - rainy slice of life 2. slice of life, school and music everyday anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music"
     },
     {
       "id": "SP13-013",
-      "name": "Backstage Nerves Anime",
-      "styleAnchors": ["Backstage Nerves Anime"],
+      "name": "Oshi no Ko Doga Kobo - Backstage Nerves Anime",
+      "styleAnchors": ["Oshi no Ko Doga Kobo - Backstage Nerves Anime"],
       "ref": "pack_13/SP13-013.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -300,11 +325,12 @@
       "categoryName": "2. Slice Of Life, School And Music",
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-school-and-music"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-013 backstage nerves anime 2. slice of life, school and music everyday anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music"
+      "searchableText": "sp13-013 oshi no ko doga kobo - backstage nerves anime 2. slice of life, school and music everyday anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music"
     },
     {
       "id": "SP13-015",
-      "name": "Dessert Cafe Comedy",
+      "name": "Restaurant to Another World - Dessert Cafe Comedy",
+      "styleAnchors": ["Restaurant to Another World - Dessert Cafe Comedy"],
       "ref": "pack_13/SP13-015.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -312,11 +338,12 @@
       "categoryName": "2. Slice Of Life, School And Music",
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-school-and-music"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-015 dessert cafe comedy 2. slice of life, school and music everyday anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music"
+      "searchableText": "sp13-015 restaurant to another world - dessert cafe comedy 2. slice of life, school and music everyday anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music"
     },
     {
       "id": "SP13-018",
-      "name": "Festival Lantern Summer",
+      "name": "The Eccentric Family P.A. Works - Festival Lantern Summer",
+      "styleAnchors": ["The Eccentric Family P.A. Works - Festival Lantern Summer"],
       "ref": "pack_13/SP13-018.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -324,12 +351,16 @@
       "categoryName": "2. Slice Of Life, School And Music",
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-school-and-music"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-018 festival lantern summer 2. slice of life, school and music everyday anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music"
+      "searchableText": "sp13-018 the eccentric family p.a. works - festival lantern summer 2. slice of life, school and music everyday anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music"
     },
     {
       "id": "SP13-056",
-      "name": "Concert Spotlight Anime",
-      "styleAnchors": ["Concert Spotlight Anime", "live performance anime", "spotlights"],
+      "name": "Carole and Tuesday BONES - Concert Spotlight Anime",
+      "styleAnchors": [
+        "Carole and Tuesday BONES - Concert Spotlight Anime",
+        "live performance anime",
+        "spotlights"
+      ],
       "ref": "pack_13/SP13-056.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -342,13 +373,13 @@
         "live-performance-anime"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-056 concert spotlight anime live performance anime spotlights 2. slice of life, school and music everyday anime live performance anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music live-performance-anime"
+      "searchableText": "sp13-056 carole and tuesday bones - concert spotlight anime live performance anime spotlights 2. slice of life, school and music everyday anime live performance anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music live-performance-anime"
     },
     {
       "id": "SP13-057",
-      "name": "Afterschool Golden Hour Anime",
+      "name": "Tsukigakirei feel. - Afterschool Golden Hour Anime",
       "styleAnchors": [
-        "Afterschool Golden Hour Anime",
+        "Tsukigakirei feel. - Afterschool Golden Hour Anime",
         "late afternoon light anime",
         "orange shafts"
       ],
@@ -364,12 +395,16 @@
         "late-afternoon-light-anime"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-057 afterschool golden hour anime late afternoon light anime orange shafts 2. slice of life, school and music everyday anime late afternoon light anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music late-afternoon-light-anime"
+      "searchableText": "sp13-057 tsukigakirei feel. - afterschool golden hour anime late afternoon light anime orange shafts 2. slice of life, school and music everyday anime late afternoon light anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music late-afternoon-light-anime"
     },
     {
       "id": "SP13-058",
-      "name": "Winter Breath Quiet Anime",
-      "styleAnchors": ["Winter Breath Quiet Anime", "winter slice of life anime", "visible breath"],
+      "name": "Makoto Shinkai 5cm - Winter Breath Quiet Anime",
+      "styleAnchors": [
+        "Makoto Shinkai 5cm - Winter Breath Quiet Anime",
+        "winter slice of life anime",
+        "visible breath"
+      ],
       "ref": "pack_13/SP13-058.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -382,12 +417,16 @@
         "winter-slice-of-life-anime"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-058 winter breath quiet anime winter slice of life anime visible breath 2. slice of life, school and music everyday anime winter slice of life anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music winter-slice-of-life-anime"
+      "searchableText": "sp13-058 makoto shinkai 5cm - winter breath quiet anime winter slice of life anime visible breath 2. slice of life, school and music everyday anime winter slice of life anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music winter-slice-of-life-anime"
     },
     {
       "id": "SP13-059",
-      "name": "Night Study Lamp Anime",
-      "styleAnchors": ["Night Study Lamp Anime", "late-night study anime", "lamp pool"],
+      "name": "Kamome Shirahama - Night Study Lamp Anime",
+      "styleAnchors": [
+        "Kamome Shirahama - Night Study Lamp Anime",
+        "late-night study anime",
+        "lamp pool"
+      ],
       "ref": "pack_13/SP13-059.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -400,12 +439,16 @@
         "late-night-study-anime"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-059 night study lamp anime late-night study anime lamp pool 2. slice of life, school and music everyday anime late-night study anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music late-night-study-anime"
+      "searchableText": "sp13-059 kamome shirahama - night study lamp anime late-night study anime lamp pool 2. slice of life, school and music everyday anime late-night study anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music late-night-study-anime"
     },
     {
       "id": "SP13-060",
-      "name": "Nineties School Cel Nostalgia",
-      "styleAnchors": ["Nineties School Cel Nostalgia", "90s cel anime look", "film grain"],
+      "name": "Marmalade Boy Toei - Nineties School Cel Nostalgia",
+      "styleAnchors": [
+        "Marmalade Boy Toei - Nineties School Cel Nostalgia",
+        "90s cel anime look",
+        "film grain"
+      ],
       "ref": "pack_13/SP13-060.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -418,12 +461,16 @@
         "90s-cel-anime-look"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-060 nineties school cel nostalgia 90s cel anime look film grain 2. slice of life, school and music everyday anime 90s cel anime look pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music 90s-cel-anime-look"
+      "searchableText": "sp13-060 marmalade boy toei - nineties school cel nostalgia 90s cel anime look film grain 2. slice of life, school and music everyday anime 90s cel anime look pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music 90s-cel-anime-look"
     },
     {
       "id": "SP13-061",
-      "name": "Garage Band Grit Anime",
-      "styleAnchors": ["Garage Band Grit Anime", "rough rock band anime", "rough lines"],
+      "name": "Girls Band Cry Toei - Garage Band Grit Anime",
+      "styleAnchors": [
+        "Girls Band Cry Toei - Garage Band Grit Anime",
+        "rough rock band anime",
+        "rough lines"
+      ],
       "ref": "pack_13/SP13-061.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -436,13 +483,13 @@
         "rough-rock-band-anime"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-061 garage band grit anime rough rock band anime rough lines 2. slice of life, school and music everyday anime rough rock band anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music rough-rock-band-anime"
+      "searchableText": "sp13-061 girls band cry toei - garage band grit anime rough rock band anime rough lines 2. slice of life, school and music everyday anime rough rock band anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music rough-rock-band-anime"
     },
     {
       "id": "SP13-062",
-      "name": "Classical Recital Hush Anime",
+      "name": "Makoto Isshiki - Classical Recital Hush Anime",
       "styleAnchors": [
-        "Classical Recital Hush Anime",
+        "Makoto Isshiki - Classical Recital Hush Anime",
         "classical music anime",
         "polished instruments"
       ],
@@ -458,12 +505,16 @@
         "classical-music-anime"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-062 classical recital hush anime classical music anime polished instruments 2. slice of life, school and music everyday anime classical music anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music classical-music-anime"
+      "searchableText": "sp13-062 makoto isshiki - classical recital hush anime classical music anime polished instruments 2. slice of life, school and music everyday anime classical music anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music classical-music-anime"
     },
     {
       "id": "SP13-063",
-      "name": "Seaside Summer Haze Anime",
-      "styleAnchors": ["Seaside Summer Haze Anime", "summer seaside anime", "cumulus towers"],
+      "name": "Nagi-Asu P.A. Works - Seaside Summer Haze Anime",
+      "styleAnchors": [
+        "Nagi-Asu P.A. Works - Seaside Summer Haze Anime",
+        "summer seaside anime",
+        "cumulus towers"
+      ],
       "ref": "pack_13/SP13-063.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -476,12 +527,16 @@
         "summer-seaside-anime"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-063 seaside summer haze anime summer seaside anime cumulus towers 2. slice of life, school and music everyday anime summer seaside anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music summer-seaside-anime"
+      "searchableText": "sp13-063 nagi-asu p.a. works - seaside summer haze anime summer seaside anime cumulus towers 2. slice of life, school and music everyday anime summer seaside anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music summer-seaside-anime"
     },
     {
       "id": "SP13-064",
-      "name": "Dawn Practice Mist Anime",
-      "styleAnchors": ["Dawn Practice Mist Anime", "early morning practice anime", "mist layers"],
+      "name": "Vagabond - Dawn Practice Mist Anime",
+      "styleAnchors": [
+        "Vagabond - Dawn Practice Mist Anime",
+        "early morning practice anime",
+        "mist layers"
+      ],
       "ref": "pack_13/SP13-064.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -494,12 +549,16 @@
         "early-morning-practice-anime"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-064 dawn practice mist anime early morning practice anime mist layers 2. slice of life, school and music everyday anime early morning practice anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music early-morning-practice-anime"
+      "searchableText": "sp13-064 vagabond - dawn practice mist anime early morning practice anime mist layers 2. slice of life, school and music everyday anime early morning practice anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music early-morning-practice-anime"
     },
     {
       "id": "SP13-065",
-      "name": "Rooftop Wind Anime",
-      "styleAnchors": ["Rooftop Wind Anime", "wind and sky anime", "windblown cloth"],
+      "name": "Studio Colorido - Rooftop Wind Anime",
+      "styleAnchors": [
+        "Studio Colorido - Rooftop Wind Anime",
+        "wind and sky anime",
+        "windblown cloth"
+      ],
       "ref": "pack_13/SP13-065.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -512,13 +571,13 @@
         "wind-and-sky-anime"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-065 rooftop wind anime wind and sky anime windblown cloth 2. slice of life, school and music everyday anime wind and sky anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music wind-and-sky-anime"
+      "searchableText": "sp13-065 studio colorido - rooftop wind anime wind and sky anime windblown cloth 2. slice of life, school and music everyday anime wind and sky anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music wind-and-sky-anime"
     },
     {
       "id": "SP13-066",
-      "name": "Late Train Window Anime",
+      "name": "Gisaburo Sugii - Late Train Window Anime",
       "styleAnchors": [
-        "Late Train Window Anime",
+        "Gisaburo Sugii - Late Train Window Anime",
         "night train melancholy anime",
         "window reflections"
       ],
@@ -534,12 +593,16 @@
         "night-train-melancholy-anime"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-066 late train window anime night train melancholy anime window reflections 2. slice of life, school and music everyday anime night train melancholy anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music night-train-melancholy-anime"
+      "searchableText": "sp13-066 gisaburo sugii - late train window anime night train melancholy anime window reflections 2. slice of life, school and music everyday anime night train melancholy anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music night-train-melancholy-anime"
     },
     {
       "id": "SP13-067",
-      "name": "Soft Focus Letter Anime",
-      "styleAnchors": ["Soft Focus Letter Anime", "soft focus romantic anime", "bokeh"],
+      "name": "Josee BONES - Soft Focus Letter Anime",
+      "styleAnchors": [
+        "Josee BONES - Soft Focus Letter Anime",
+        "soft focus romantic anime",
+        "bokeh"
+      ],
       "ref": "pack_13/SP13-067.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -552,12 +615,16 @@
         "soft-focus-romantic-anime"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-067 soft focus letter anime soft focus romantic anime bokeh 2. slice of life, school and music everyday anime soft focus romantic anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music soft-focus-romantic-anime"
+      "searchableText": "sp13-067 josee bones - soft focus letter anime soft focus romantic anime bokeh 2. slice of life, school and music everyday anime soft focus romantic anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music soft-focus-romantic-anime"
     },
     {
       "id": "SP13-068",
-      "name": "Club Room Clutter Comedy",
-      "styleAnchors": ["Club Room Clutter Comedy", "cluttered comedy anime", "dense clutter"],
+      "name": "Genshiken Palm Studio - Club Room Clutter Comedy",
+      "styleAnchors": [
+        "Genshiken Palm Studio - Club Room Clutter Comedy",
+        "cluttered comedy anime",
+        "dense clutter"
+      ],
       "ref": "pack_13/SP13-068.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -570,12 +637,16 @@
         "cluttered-comedy-anime"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-068 club room clutter comedy cluttered comedy anime dense clutter 2. slice of life, school and music everyday anime cluttered comedy anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music cluttered-comedy-anime"
+      "searchableText": "sp13-068 genshiken palm studio - club room clutter comedy cluttered comedy anime dense clutter 2. slice of life, school and music everyday anime cluttered comedy anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music cluttered-comedy-anime"
     },
     {
       "id": "SP13-069",
-      "name": "Library Sunbeam Quiet Anime",
-      "styleAnchors": ["Library Sunbeam Quiet Anime", "quiet library light anime", "sun shafts"],
+      "name": "Yoshifumi Kondo - Library Sunbeam Quiet Anime",
+      "styleAnchors": [
+        "Yoshifumi Kondo - Library Sunbeam Quiet Anime",
+        "quiet library light anime",
+        "sun shafts"
+      ],
       "ref": "pack_13/SP13-069.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -588,12 +659,12 @@
         "quiet-library-light-anime"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-069 library sunbeam quiet anime quiet library light anime sun shafts 2. slice of life, school and music everyday anime quiet library light anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music quiet-library-light-anime"
+      "searchableText": "sp13-069 yoshifumi kondo - library sunbeam quiet anime quiet library light anime sun shafts 2. slice of life, school and music everyday anime quiet library light anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music quiet-library-light-anime"
     },
     {
       "id": "SP13-070",
-      "name": "Choir Harmony Light Anime",
-      "styleAnchors": ["Choir Harmony Light Anime", "choir anime", "rows"],
+      "name": "Tari Tari P.A. Works - Choir Harmony Light Anime",
+      "styleAnchors": ["Tari Tari P.A. Works - Choir Harmony Light Anime", "choir anime", "rows"],
       "ref": "pack_13/SP13-070.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -606,11 +677,12 @@
         "choir-anime"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp13-070 choir harmony light anime choir anime rows 2. slice of life, school and music everyday anime choir anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music choir-anime"
+      "searchableText": "sp13-070 tari tari p.a. works - choir harmony light anime choir anime rows 2. slice of life, school and music everyday anime choir anime pack_13 anime 02 — anime character & lifestyle slice-of-life-school-and-music anime-02-anime-character-and-lifestyle slice-of-life-school-and-music choir-anime"
     },
     {
       "id": "SP05-013",
-      "name": "Psychological Biomech Drama",
+      "name": "Mohiro Kitoh - Psychological Biomech Drama",
+      "styleAnchors": ["Mohiro Kitoh - Psychological Biomech Drama"],
       "ref": "pack_13/SP05-013.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -621,11 +693,12 @@
         "shojo-magical-girl-and-visionary-classics"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-013 psychological biomech drama 3. shojo, magical girl & visionary classics expressive anime pack_13 anime 02 — anime character & lifestyle shojo-magical-girl-and-visionary-classics anime-02-anime-character-and-lifestyle shojo-magical-girl-and-visionary-classics"
+      "searchableText": "sp05-013 mohiro kitoh - psychological biomech drama 3. shojo, magical girl & visionary classics expressive anime pack_13 anime 02 — anime character & lifestyle shojo-magical-girl-and-visionary-classics anime-02-anime-character-and-lifestyle shojo-magical-girl-and-visionary-classics"
     },
     {
       "id": "SP05-162",
       "name": "Sailor Moon - Moonlit Ribbon Justice",
+      "styleAnchors": ["Sailor Moon - Moonlit Ribbon Justice"],
       "ref": "pack_13/SP05-162.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -641,6 +714,7 @@
     {
       "id": "SP05-168",
       "name": "Neon Genesis Evangelion - Red Alert Psychological Collapse",
+      "styleAnchors": ["Neon Genesis Evangelion - Red Alert Psychological Collapse"],
       "ref": "pack_13/SP05-168.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -656,6 +730,7 @@
     {
       "id": "SP05-171",
       "name": "Slayers - Arcane Chaos Roadtrip",
+      "styleAnchors": ["Slayers - Arcane Chaos Roadtrip"],
       "ref": "pack_13/SP05-171.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -670,7 +745,8 @@
     },
     {
       "id": "SP05-172",
-      "name": "The Vision of Escaflowne - Tarot Mecha Fantasy",
+      "name": "The Vision of Escaflowne Film - Tarot Mecha Fantasy",
+      "styleAnchors": ["The Vision of Escaflowne Film - Tarot Mecha Fantasy"],
       "ref": "pack_13/SP05-172.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -681,11 +757,12 @@
         "shojo-magical-girl-and-visionary-classics"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-172 the vision of escaflowne - tarot mecha fantasy 3. shojo, magical girl & visionary classics expressive anime pack_13 anime 02 — anime character & lifestyle shojo-magical-girl-and-visionary-classics anime-02-anime-character-and-lifestyle shojo-magical-girl-and-visionary-classics"
+      "searchableText": "sp05-172 the vision of escaflowne film - tarot mecha fantasy 3. shojo, magical girl & visionary classics expressive anime pack_13 anime 02 — anime character & lifestyle shojo-magical-girl-and-visionary-classics anime-02-anime-character-and-lifestyle shojo-magical-girl-and-visionary-classics"
     },
     {
       "id": "SP05-176",
-      "name": "Magic Knight Rayearth - Jewel Armor Quest",
+      "name": "CLAMP Rayearth - Jewel Armor Quest",
+      "styleAnchors": ["CLAMP Rayearth - Jewel Armor Quest"],
       "ref": "pack_13/SP05-176.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -696,11 +773,12 @@
         "shojo-magical-girl-and-visionary-classics"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-176 magic knight rayearth - jewel armor quest 3. shojo, magical girl & visionary classics expressive anime pack_13 anime 02 — anime character & lifestyle shojo-magical-girl-and-visionary-classics anime-02-anime-character-and-lifestyle shojo-magical-girl-and-visionary-classics"
+      "searchableText": "sp05-176 clamp rayearth - jewel armor quest 3. shojo, magical girl & visionary classics expressive anime pack_13 anime 02 — anime character & lifestyle shojo-magical-girl-and-visionary-classics anime-02-anime-character-and-lifestyle shojo-magical-girl-and-visionary-classics"
     },
     {
       "id": "SP05-177",
       "name": "Martian Successor Nadesico - Cheerful Bridge-Deck Mecha",
+      "styleAnchors": ["Martian Successor Nadesico - Cheerful Bridge-Deck Mecha"],
       "ref": "pack_13/SP05-177.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -715,7 +793,8 @@
     },
     {
       "id": "SP05-178",
-      "name": "Blue Seed - Mythic Tokyo Purge",
+      "name": "Yuzo Takada - Mythic Tokyo Purge",
+      "styleAnchors": ["Yuzo Takada - Mythic Tokyo Purge"],
       "ref": "pack_13/SP05-178.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -726,11 +805,12 @@
         "shojo-magical-girl-and-visionary-classics"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-178 blue seed - mythic tokyo purge 3. shojo, magical girl & visionary classics expressive anime pack_13 anime 02 — anime character & lifestyle shojo-magical-girl-and-visionary-classics anime-02-anime-character-and-lifestyle shojo-magical-girl-and-visionary-classics"
+      "searchableText": "sp05-178 yuzo takada - mythic tokyo purge 3. shojo, magical girl & visionary classics expressive anime pack_13 anime 02 — anime character & lifestyle shojo-magical-girl-and-visionary-classics anime-02-anime-character-and-lifestyle shojo-magical-girl-and-visionary-classics"
     },
     {
       "id": "SP05-019",
-      "name": "Wired Existential Glitch",
+      "name": "Yoshitoshi ABe - Wired Existential Glitch",
+      "styleAnchors": ["Yoshitoshi ABe - Wired Existential Glitch"],
       "ref": "pack_13/SP05-019.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -741,11 +821,12 @@
         "shojo-magical-girl-and-visionary-classics"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-019 wired existential glitch 3. shojo, magical girl & visionary classics expressive anime pack_13 anime 02 — anime character & lifestyle shojo-magical-girl-and-visionary-classics anime-02-anime-character-and-lifestyle shojo-magical-girl-and-visionary-classics"
+      "searchableText": "sp05-019 yoshitoshi abe - wired existential glitch 3. shojo, magical girl & visionary classics expressive anime pack_13 anime 02 — anime character & lifestyle shojo-magical-girl-and-visionary-classics anime-02-anime-character-and-lifestyle shojo-magical-girl-and-visionary-classics"
     },
     {
       "id": "SP05-020",
-      "name": "Dream Card Enchanter",
+      "name": "Kazuki Takahashi - Dream Card Enchanter",
+      "styleAnchors": ["Kazuki Takahashi - Dream Card Enchanter"],
       "ref": "pack_13/SP05-020.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -756,11 +837,12 @@
         "shojo-magical-girl-and-visionary-classics"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-020 dream card enchanter 3. shojo, magical girl & visionary classics expressive anime pack_13 anime 02 — anime character & lifestyle shojo-magical-girl-and-visionary-classics anime-02-anime-character-and-lifestyle shojo-magical-girl-and-visionary-classics"
+      "searchableText": "sp05-020 kazuki takahashi - dream card enchanter 3. shojo, magical girl & visionary classics expressive anime pack_13 anime 02 — anime character & lifestyle shojo-magical-girl-and-visionary-classics anime-02-anime-character-and-lifestyle shojo-magical-girl-and-visionary-classics"
     },
     {
       "id": "SP05-183",
       "name": "Kimi ni Todoke - Shy Hallway Bloom",
+      "styleAnchors": ["Kimi ni Todoke - Shy Hallway Bloom"],
       "ref": "pack_13/SP05-183.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -776,6 +858,7 @@
     {
       "id": "SP05-190",
       "name": "Ao Haru Ride - Clean Uniform Reunion Ache",
+      "styleAnchors": ["Ao Haru Ride - Clean Uniform Reunion Ache"],
       "ref": "pack_13/SP05-190.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -791,6 +874,7 @@
     {
       "id": "SP05-181",
       "name": "Fruits Basket - Zodiac Warmth and Grief",
+      "styleAnchors": ["Fruits Basket - Zodiac Warmth and Grief"],
       "ref": "pack_13/SP05-181.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -806,6 +890,7 @@
     {
       "id": "SP05-182",
       "name": "Nana - Black-Lace Apartment Heartbreak",
+      "styleAnchors": ["Nana - Black-Lace Apartment Heartbreak"],
       "ref": "pack_13/SP05-182.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -821,6 +906,7 @@
     {
       "id": "SP05-184",
       "name": "Ouran High School Host Club - Rose-Cloud Flirt Theater",
+      "styleAnchors": ["Ouran High School Host Club - Rose-Cloud Flirt Theater"],
       "ref": "pack_13/SP05-184.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -836,6 +922,7 @@
     {
       "id": "SP05-185",
       "name": "Paradise Kiss - Runway Heartbreak Chic",
+      "styleAnchors": ["Paradise Kiss - Runway Heartbreak Chic"],
       "ref": "pack_13/SP05-185.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -851,6 +938,7 @@
     {
       "id": "SP05-186",
       "name": "Lovely Complex - Height-Gap Comedy Romance",
+      "styleAnchors": ["Lovely Complex - Height-Gap Comedy Romance"],
       "ref": "pack_13/SP05-186.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -866,6 +954,7 @@
     {
       "id": "SP05-187",
       "name": "Skip Beat! - Revenge Idol Stardom Spark",
+      "styleAnchors": ["Skip Beat! - Revenge Idol Stardom Spark"],
       "ref": "pack_13/SP05-187.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -881,6 +970,7 @@
     {
       "id": "SP05-188",
       "name": "Boys Over Flowers - Elite Campus Melodrama",
+      "styleAnchors": ["Boys Over Flowers - Elite Campus Melodrama"],
       "ref": "pack_13/SP05-188.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -896,6 +986,7 @@
     {
       "id": "SP05-189",
       "name": "Orange - Sunset Regret Letter Drama",
+      "styleAnchors": ["Orange - Sunset Regret Letter Drama"],
       "ref": "pack_13/SP05-189.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -911,6 +1002,7 @@
     {
       "id": "SP05-191",
       "name": "Say I Love You - Night-Walk Intimacy",
+      "styleAnchors": ["Say I Love You - Night-Walk Intimacy"],
       "ref": "pack_13/SP05-191.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -926,6 +1018,7 @@
     {
       "id": "SP05-192",
       "name": "Maid Sama! - Secret Uniform Double Life",
+      "styleAnchors": ["Maid Sama! - Secret Uniform Double Life"],
       "ref": "pack_13/SP05-192.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -941,6 +1034,7 @@
     {
       "id": "SP05-194",
       "name": "Rose of Versailles - Court Portrait Revolution",
+      "styleAnchors": ["Rose of Versailles - Court Portrait Revolution"],
       "ref": "pack_13/SP05-194.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -956,6 +1050,7 @@
     {
       "id": "SP05-195",
       "name": "Neighborhood Story - Harajuku Handmade Romance",
+      "styleAnchors": ["Neighborhood Story - Harajuku Handmade Romance"],
       "ref": "pack_13/SP05-195.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -971,6 +1066,7 @@
     {
       "id": "SP05-196",
       "name": "Honey and Clover - Art-School Spring Ache",
+      "styleAnchors": ["Honey and Clover - Art-School Spring Ache"],
       "ref": "pack_13/SP05-196.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -986,6 +1082,7 @@
     {
       "id": "SP05-197",
       "name": "Kamisama Kiss - Shrine Romance and Fox Familiar",
+      "styleAnchors": ["Kamisama Kiss - Shrine Romance and Fox Familiar"],
       "ref": "pack_13/SP05-197.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1001,6 +1098,7 @@
     {
       "id": "SP05-198",
       "name": "Princess Jellyfish - Jelly-Color Otaku Makeover",
+      "styleAnchors": ["Princess Jellyfish - Jelly-Color Otaku Makeover"],
       "ref": "pack_13/SP05-198.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1016,6 +1114,7 @@
     {
       "id": "SP05-200",
       "name": "Sukitte Ii na yo - Rainy Umbrella Confession",
+      "styleAnchors": ["Sukitte Ii na yo - Rainy Umbrella Confession"],
       "ref": "pack_13/SP05-200.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1031,6 +1130,7 @@
     {
       "id": "SP05-193",
       "name": "Snow White with the Red Hair - Herbal Courtship Fantasy",
+      "styleAnchors": ["Snow White with the Red Hair - Herbal Courtship Fantasy"],
       "ref": "pack_13/SP05-193.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1045,7 +1145,8 @@
     },
     {
       "id": "SP05-199",
-      "name": "Yona of the Dawn - Crimson Princess Resolve",
+      "name": "Yona of the Dawn Pierrot - Crimson Princess Resolve",
+      "styleAnchors": ["Yona of the Dawn Pierrot - Crimson Princess Resolve"],
       "ref": "pack_13/SP05-199.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1056,11 +1157,12 @@
         "shojo-magical-girl-and-visionary-classics"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-199 yona of the dawn - crimson princess resolve 3. shojo, magical girl & visionary classics expressive anime pack_13 anime 02 — anime character & lifestyle shojo-magical-girl-and-visionary-classics anime-02-anime-character-and-lifestyle shojo-magical-girl-and-visionary-classics"
+      "searchableText": "sp05-199 yona of the dawn pierrot - crimson princess resolve 3. shojo, magical girl & visionary classics expressive anime pack_13 anime 02 — anime character & lifestyle shojo-magical-girl-and-visionary-classics anime-02-anime-character-and-lifestyle shojo-magical-girl-and-visionary-classics"
     },
     {
       "id": "SP05-047",
-      "name": "Airy First-Love Tenderness",
+      "name": "Kazune Kawahara - Airy First-Love Tenderness",
+      "styleAnchors": ["Kazune Kawahara - Airy First-Love Tenderness"],
       "ref": "pack_13/SP05-047.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1071,11 +1173,12 @@
         "shojo-magical-girl-and-visionary-classics"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-047 airy first-love tenderness 3. shojo, magical girl & visionary classics expressive anime pack_13 anime 02 — anime character & lifestyle shojo-magical-girl-and-visionary-classics anime-02-anime-character-and-lifestyle shojo-magical-girl-and-visionary-classics"
+      "searchableText": "sp05-047 kazune kawahara - airy first-love tenderness 3. shojo, magical girl & visionary classics expressive anime pack_13 anime 02 — anime character & lifestyle shojo-magical-girl-and-visionary-classics anime-02-anime-character-and-lifestyle shojo-magical-girl-and-visionary-classics"
     },
     {
       "id": "SP05-041",
-      "name": "Ornate Palace Shojo",
+      "name": "Keiko Takemiya - Ornate Palace Shojo",
+      "styleAnchors": ["Keiko Takemiya - Ornate Palace Shojo"],
       "ref": "pack_13/SP05-041.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1086,11 +1189,12 @@
         "shojo-magical-girl-and-visionary-classics"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-041 ornate palace shojo 3. shojo, magical girl & visionary classics expressive anime pack_13 anime 02 — anime character & lifestyle shojo-magical-girl-and-visionary-classics anime-02-anime-character-and-lifestyle shojo-magical-girl-and-visionary-classics"
+      "searchableText": "sp05-041 keiko takemiya - ornate palace shojo 3. shojo, magical girl & visionary classics expressive anime pack_13 anime 02 — anime character & lifestyle shojo-magical-girl-and-visionary-classics anime-02-anime-character-and-lifestyle shojo-magical-girl-and-visionary-classics"
     },
     {
       "id": "SP05-042",
-      "name": "Theatrical Duel Symbolism",
+      "name": "Chiho Saito - Theatrical Duel Symbolism",
+      "styleAnchors": ["Chiho Saito - Theatrical Duel Symbolism"],
       "ref": "pack_13/SP05-042.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1101,11 +1205,12 @@
         "shojo-magical-girl-and-visionary-classics"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-042 theatrical duel symbolism 3. shojo, magical girl & visionary classics expressive anime pack_13 anime 02 — anime character & lifestyle shojo-magical-girl-and-visionary-classics anime-02-anime-character-and-lifestyle shojo-magical-girl-and-visionary-classics"
+      "searchableText": "sp05-042 chiho saito - theatrical duel symbolism 3. shojo, magical girl & visionary classics expressive anime pack_13 anime 02 — anime character & lifestyle shojo-magical-girl-and-visionary-classics anime-02-anime-character-and-lifestyle shojo-magical-girl-and-visionary-classics"
     },
     {
       "id": "SP05-043",
-      "name": "Soft Healing Ensemble",
+      "name": "Flying Witch J.C.Staff - Soft Healing Ensemble",
+      "styleAnchors": ["Flying Witch J.C.Staff - Soft Healing Ensemble"],
       "ref": "pack_13/SP05-043.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1116,11 +1221,12 @@
         "shojo-magical-girl-and-visionary-classics"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-043 soft healing ensemble 3. shojo, magical girl & visionary classics expressive anime pack_13 anime 02 — anime character & lifestyle shojo-magical-girl-and-visionary-classics anime-02-anime-character-and-lifestyle shojo-magical-girl-and-visionary-classics"
+      "searchableText": "sp05-043 flying witch j.c.staff - soft healing ensemble 3. shojo, magical girl & visionary classics expressive anime pack_13 anime 02 — anime character & lifestyle shojo-magical-girl-and-visionary-classics anime-02-anime-character-and-lifestyle shojo-magical-girl-and-visionary-classics"
     },
     {
       "id": "SP05-044",
-      "name": "Punk Romance Drama",
+      "name": "Moyoco Anno - Punk Romance Drama",
+      "styleAnchors": ["Moyoco Anno - Punk Romance Drama"],
       "ref": "pack_13/SP05-044.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1131,11 +1237,12 @@
         "shojo-magical-girl-and-visionary-classics"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-044 punk romance drama 3. shojo, magical girl & visionary classics expressive anime pack_13 anime 02 — anime character & lifestyle shojo-magical-girl-and-visionary-classics anime-02-anime-character-and-lifestyle shojo-magical-girl-and-visionary-classics"
+      "searchableText": "sp05-044 moyoco anno - punk romance drama 3. shojo, magical girl & visionary classics expressive anime pack_13 anime 02 — anime character & lifestyle shojo-magical-girl-and-visionary-classics anime-02-anime-character-and-lifestyle shojo-magical-girl-and-visionary-classics"
     },
     {
       "id": "SP05-045",
-      "name": "Rose-Petal Comedy Club",
+      "name": "Kaguya-sama A-1 - Rose-Petal Comedy Club",
+      "styleAnchors": ["Kaguya-sama A-1 - Rose-Petal Comedy Club"],
       "ref": "pack_13/SP05-045.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1146,11 +1253,12 @@
         "shojo-magical-girl-and-visionary-classics"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-045 rose-petal comedy club 3. shojo, magical girl & visionary classics expressive anime pack_13 anime 02 — anime character & lifestyle shojo-magical-girl-and-visionary-classics anime-02-anime-character-and-lifestyle shojo-magical-girl-and-visionary-classics"
+      "searchableText": "sp05-045 kaguya-sama a-1 - rose-petal comedy club 3. shojo, magical girl & visionary classics expressive anime pack_13 anime 02 — anime character & lifestyle shojo-magical-girl-and-visionary-classics anime-02-anime-character-and-lifestyle shojo-magical-girl-and-visionary-classics"
     },
     {
       "id": "SP05-046",
-      "name": "Luminous Letter Drama",
+      "name": "Maquia P.A. Works - Luminous Letter Drama",
+      "styleAnchors": ["Maquia P.A. Works - Luminous Letter Drama"],
       "ref": "pack_13/SP05-046.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1161,11 +1269,12 @@
         "shojo-magical-girl-and-visionary-classics"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-046 luminous letter drama 3. shojo, magical girl & visionary classics expressive anime pack_13 anime 02 — anime character & lifestyle shojo-magical-girl-and-visionary-classics anime-02-anime-character-and-lifestyle shojo-magical-girl-and-visionary-classics"
+      "searchableText": "sp05-046 maquia p.a. works - luminous letter drama 3. shojo, magical girl & visionary classics expressive anime pack_13 anime 02 — anime character & lifestyle shojo-magical-girl-and-visionary-classics anime-02-anime-character-and-lifestyle shojo-magical-girl-and-visionary-classics"
     },
     {
       "id": "SP05-050",
-      "name": "Cozy Sign-Language Romance",
+      "name": "A Sign of Affection Ajia-do - Cozy Sign-Language Romance",
+      "styleAnchors": ["A Sign of Affection Ajia-do - Cozy Sign-Language Romance"],
       "ref": "pack_13/SP05-050.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1176,11 +1285,12 @@
         "shojo-magical-girl-and-visionary-classics"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-050 cozy sign-language romance 3. shojo, magical girl & visionary classics expressive anime pack_13 anime 02 — anime character & lifestyle shojo-magical-girl-and-visionary-classics anime-02-anime-character-and-lifestyle shojo-magical-girl-and-visionary-classics"
+      "searchableText": "sp05-050 a sign of affection ajia-do - cozy sign-language romance 3. shojo, magical girl & visionary classics expressive anime pack_13 anime 02 — anime character & lifestyle shojo-magical-girl-and-visionary-classics anime-02-anime-character-and-lifestyle shojo-magical-girl-and-visionary-classics"
     },
     {
       "id": "SP05-048",
-      "name": "Crimson Hair Quest Romance",
+      "name": "Mizuho Kusanagi - Crimson Hair Quest Romance",
+      "styleAnchors": ["Mizuho Kusanagi - Crimson Hair Quest Romance"],
       "ref": "pack_13/SP05-048.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1191,11 +1301,12 @@
         "shojo-magical-girl-and-visionary-classics"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-048 crimson hair quest romance 3. shojo, magical girl & visionary classics expressive anime pack_13 anime 02 — anime character & lifestyle shojo-magical-girl-and-visionary-classics anime-02-anime-character-and-lifestyle shojo-magical-girl-and-visionary-classics"
+      "searchableText": "sp05-048 mizuho kusanagi - crimson hair quest romance 3. shojo, magical girl & visionary classics expressive anime pack_13 anime 02 — anime character & lifestyle shojo-magical-girl-and-visionary-classics anime-02-anime-character-and-lifestyle shojo-magical-girl-and-visionary-classics"
     },
     {
       "id": "SP05-049",
-      "name": "Velvet Gothic Academy",
+      "name": "Kaori Yuki - Velvet Gothic Academy",
+      "styleAnchors": ["Kaori Yuki - Velvet Gothic Academy"],
       "ref": "pack_13/SP05-049.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1206,7 +1317,7 @@
         "shojo-magical-girl-and-visionary-classics"
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-049 velvet gothic academy 3. shojo, magical girl & visionary classics expressive anime pack_13 anime 02 — anime character & lifestyle shojo-magical-girl-and-visionary-classics anime-02-anime-character-and-lifestyle shojo-magical-girl-and-visionary-classics"
+      "searchableText": "sp05-049 kaori yuki - velvet gothic academy 3. shojo, magical girl & visionary classics expressive anime pack_13 anime 02 — anime character & lifestyle shojo-magical-girl-and-visionary-classics anime-02-anime-character-and-lifestyle shojo-magical-girl-and-visionary-classics"
     },
     {
       "id": "SP05-081",
@@ -1223,7 +1334,8 @@
     },
     {
       "id": "SP05-202",
-      "name": "Market-Festival Community Softness",
+      "name": "Tamako Market Kyoto Animation - Market-Festival Community Softness",
+      "styleAnchors": ["Tamako Market Kyoto Animation - Market-Festival Community Softness"],
       "ref": "pack_13/SP05-202.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1231,11 +1343,12 @@
       "categoryName": "4. Slice Of Life & Moe",
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-and-moe"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-202 market-festival community softness 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
+      "searchableText": "sp05-202 tamako market kyoto animation - market-festival community softness 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
     },
     {
       "id": "SP05-208",
-      "name": "Beginner-Made DIY Glow",
+      "name": "Do It Yourself!! EGG FIRM - Beginner-Made DIY Glow",
+      "styleAnchors": ["Do It Yourself!! EGG FIRM - Beginner-Made DIY Glow"],
       "ref": "pack_13/SP05-208.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1243,11 +1356,12 @@
       "categoryName": "4. Slice Of Life & Moe",
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-and-moe"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-208 beginner-made diy glow 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
+      "searchableText": "sp05-208 do it yourself!! egg firm - beginner-made diy glow 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
     },
     {
       "id": "SP05-086",
-      "name": "Cold-Warm Restorative Comfort",
+      "name": "Yuru Camp C-Station - Cold-Warm Restorative Comfort",
+      "styleAnchors": ["Yuru Camp C-Station - Cold-Warm Restorative Comfort"],
       "ref": "pack_13/SP05-086.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1255,11 +1369,12 @@
       "categoryName": "4. Slice Of Life & Moe",
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-and-moe"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-086 cold-warm restorative comfort 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
+      "searchableText": "sp05-086 yuru camp c-station - cold-warm restorative comfort 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
     },
     {
       "id": "SP05-207",
-      "name": "Deadline-Cheer Workflow Density",
+      "name": "Shirobako P.A. Works - Deadline-Cheer Workflow Density",
+      "styleAnchors": ["Shirobako P.A. Works - Deadline-Cheer Workflow Density"],
       "ref": "pack_13/SP05-207.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1267,11 +1382,12 @@
       "categoryName": "4. Slice Of Life & Moe",
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-and-moe"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-207 deadline-cheer workflow density 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
+      "searchableText": "sp05-207 shirobako p.a. works - deadline-cheer workflow density 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
     },
     {
       "id": "SP05-211",
-      "name": "Utilitarian Quiet-Freedom Minimalism",
+      "name": "Super Cub Studio Kai - Utilitarian Quiet-Freedom Minimalism",
+      "styleAnchors": ["Super Cub Studio Kai - Utilitarian Quiet-Freedom Minimalism"],
       "ref": "pack_13/SP05-211.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1279,11 +1395,12 @@
       "categoryName": "4. Slice Of Life & Moe",
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-and-moe"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-211 utilitarian quiet-freedom minimalism 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
+      "searchableText": "sp05-211 super cub studio kai - utilitarian quiet-freedom minimalism 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
     },
     {
       "id": "SP05-215",
-      "name": "Looped-Routine Healing Pastel",
+      "name": "Slow Loop Connect - Looped-Routine Healing Pastel",
+      "styleAnchors": ["Slow Loop Connect - Looped-Routine Healing Pastel"],
       "ref": "pack_13/SP05-215.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1291,11 +1408,12 @@
       "categoryName": "4. Slice Of Life & Moe",
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-and-moe"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-215 looped-routine healing pastel 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
+      "searchableText": "sp05-215 slow loop connect - looped-routine healing pastel 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
     },
     {
       "id": "SP05-216",
-      "name": "Bundled Warmth Pocket",
+      "name": "Afro - Bundled Warmth Pocket",
+      "styleAnchors": ["Afro - Bundled Warmth Pocket"],
       "ref": "pack_13/SP05-216.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1303,11 +1421,12 @@
       "categoryName": "4. Slice Of Life & Moe",
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-and-moe"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-216 bundled warmth pocket 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
+      "searchableText": "sp05-216 afro - bundled warmth pocket 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
     },
     {
       "id": "SP05-217",
-      "name": "Rough-Ideation Motion Overlay",
+      "name": "Eizouken Science SARU - Rough-Ideation Motion Overlay",
+      "styleAnchors": ["Eizouken Science SARU - Rough-Ideation Motion Overlay"],
       "ref": "pack_13/SP05-217.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1315,11 +1434,12 @@
       "categoryName": "4. Slice Of Life & Moe",
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-and-moe"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-217 rough-ideation motion overlay 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
+      "searchableText": "sp05-217 eizouken science saru - rough-ideation motion overlay 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
     },
     {
       "id": "SP05-082",
-      "name": "Deadpan-Explosion Absurd Timing",
+      "name": "Keiichi Arawi - Deadpan-Explosion Absurd Timing",
+      "styleAnchors": ["Keiichi Arawi - Deadpan-Explosion Absurd Timing"],
       "ref": "pack_13/SP05-082.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1327,11 +1447,12 @@
       "categoryName": "4. Slice Of Life & Moe",
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-and-moe"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-082 deadpan-explosion absurd timing 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
+      "searchableText": "sp05-082 keiichi arawi - deadpan-explosion absurd timing 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
     },
     {
       "id": "SP05-083",
-      "name": "Low-Stakes Banter Flatness",
+      "name": "Kagami Yoshimizu - Low-Stakes Banter Flatness",
+      "styleAnchors": ["Kagami Yoshimizu - Low-Stakes Banter Flatness"],
       "ref": "pack_13/SP05-083.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1339,11 +1460,12 @@
       "categoryName": "4. Slice Of Life & Moe",
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-and-moe"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-083 low-stakes banter flatness 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
+      "searchableText": "sp05-083 kagami yoshimizu - low-stakes banter flatness 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
     },
     {
       "id": "SP05-084",
-      "name": "Ordinary-Cosmic Whimsy Pivot",
+      "name": "Noizi Ito - Ordinary-Cosmic Whimsy Pivot",
+      "styleAnchors": ["Noizi Ito - Ordinary-Cosmic Whimsy Pivot"],
       "ref": "pack_13/SP05-084.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1351,11 +1473,12 @@
       "categoryName": "4. Slice Of Life & Moe",
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-and-moe"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-084 ordinary-cosmic whimsy pivot 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
+      "searchableText": "sp05-084 noizi ito - ordinary-cosmic whimsy pivot 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
     },
     {
       "id": "SP05-087",
-      "name": "Pastoral Breathing-Room Stillness",
+      "name": "Non Non Biyori Silver Link - Pastoral Breathing-Room Stillness",
+      "styleAnchors": ["Non Non Biyori Silver Link - Pastoral Breathing-Room Stillness"],
       "ref": "pack_13/SP05-087.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1363,11 +1486,12 @@
       "categoryName": "4. Slice Of Life & Moe",
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-and-moe"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-087 pastoral breathing-room stillness 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
+      "searchableText": "sp05-087 non non biyori silver link - pastoral breathing-room stillness 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
     },
     {
       "id": "SP05-090",
-      "name": "Memory-Washed Melodrama Softness",
+      "name": "Itaru Hinoue Key - Memory-Washed Melodrama Softness",
+      "styleAnchors": ["Itaru Hinoue Key - Memory-Washed Melodrama Softness"],
       "ref": "pack_13/SP05-090.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1375,11 +1499,12 @@
       "categoryName": "4. Slice Of Life & Moe",
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-and-moe"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-090 memory-washed melodrama softness 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
+      "searchableText": "sp05-090 itaru hinoue key - memory-washed melodrama softness 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
     },
     {
       "id": "SP05-201",
-      "name": "Tea-Light Observational Mystery",
+      "name": "Hyouka Kyoto Animation - Tea-Light Observational Mystery",
+      "styleAnchors": ["Hyouka Kyoto Animation - Tea-Light Observational Mystery"],
       "ref": "pack_13/SP05-201.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1387,11 +1512,12 @@
       "categoryName": "4. Slice Of Life & Moe",
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-and-moe"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-201 tea-light observational mystery 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
+      "searchableText": "sp05-201 hyouka kyoto animation - tea-light observational mystery 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
     },
     {
       "id": "SP05-204",
-      "name": "Reflective Breeze Healing Reverie",
+      "name": "Kozue Amano Aria - Reflective Breeze Healing Reverie",
+      "styleAnchors": ["Kozue Amano Aria - Reflective Breeze Healing Reverie"],
       "ref": "pack_13/SP05-204.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1399,11 +1525,12 @@
       "categoryName": "4. Slice Of Life & Moe",
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-and-moe"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-204 reflective breeze healing reverie 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
+      "searchableText": "sp05-204 kozue amano aria - reflective breeze healing reverie 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
     },
     {
       "id": "SP05-205",
-      "name": "Breezy Brush-Reinvention Summer",
+      "name": "Satsuki Yoshino - Breezy Brush-Reinvention Summer",
+      "styleAnchors": ["Satsuki Yoshino - Breezy Brush-Reinvention Summer"],
       "ref": "pack_13/SP05-205.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1411,11 +1538,12 @@
       "categoryName": "4. Slice Of Life & Moe",
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-and-moe"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-205 breezy brush-reinvention summer 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
+      "searchableText": "sp05-205 satsuki yoshino - breezy brush-reinvention summer 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
     },
     {
       "id": "SP05-206",
-      "name": "Everyday-Care Gesture Intimacy",
+      "name": "Yumi Unita - Everyday-Care Gesture Intimacy",
+      "styleAnchors": ["Yumi Unita - Everyday-Care Gesture Intimacy"],
       "ref": "pack_13/SP05-206.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1423,11 +1551,12 @@
       "categoryName": "4. Slice Of Life & Moe",
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-and-moe"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-206 everyday-care gesture intimacy 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
+      "searchableText": "sp05-206 yumi unita - everyday-care gesture intimacy 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
     },
     {
       "id": "SP05-209",
-      "name": "Sugar-Cotton Hospitality Miniature",
+      "name": "Koi Gochiusa - Sugar-Cotton Hospitality Miniature",
+      "styleAnchors": ["Koi Gochiusa - Sugar-Cotton Hospitality Miniature"],
       "ref": "pack_13/SP05-209.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1435,11 +1564,12 @@
       "categoryName": "4. Slice Of Life & Moe",
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-and-moe"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-209 sugar-cotton hospitality miniature 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
+      "searchableText": "sp05-209 koi gochiusa - sugar-cotton hospitality miniature 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
     },
     {
       "id": "SP05-212",
-      "name": "Immaculate Social-Jitter Comedy",
+      "name": "Komi Can’t Communicate OLM - Immaculate Social-Jitter Comedy",
+      "styleAnchors": ["Komi Can’t Communicate OLM - Immaculate Social-Jitter Comedy"],
       "ref": "pack_13/SP05-212.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1447,11 +1577,12 @@
       "categoryName": "4. Slice Of Life & Moe",
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-and-moe"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-212 immaculate social-jitter comedy 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
+      "searchableText": "sp05-212 komi can’t communicate olm - immaculate social-jitter comedy 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
     },
     {
       "id": "SP05-213",
-      "name": "Shift-Comedy Choreography Warmth",
+      "name": "Karino Takatsu - Shift-Comedy Choreography Warmth",
+      "styleAnchors": ["Karino Takatsu - Shift-Comedy Choreography Warmth"],
       "ref": "pack_13/SP05-213.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1459,11 +1590,12 @@
       "categoryName": "4. Slice Of Life & Moe",
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-and-moe"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-213 shift-comedy choreography warmth 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
+      "searchableText": "sp05-213 karino takatsu - shift-comedy choreography warmth 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
     },
     {
       "id": "SP05-214",
-      "name": "Breeze-Drift Beautiful Inertia",
+      "name": "Tanaka-kun Silver Link - Breeze-Drift Beautiful Inertia",
+      "styleAnchors": ["Tanaka-kun Silver Link - Breeze-Drift Beautiful Inertia"],
       "ref": "pack_13/SP05-214.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1471,11 +1603,12 @@
       "categoryName": "4. Slice Of Life & Moe",
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-and-moe"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-214 breeze-drift beautiful inertia 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
+      "searchableText": "sp05-214 tanaka-kun silver link - breeze-drift beautiful inertia 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
     },
     {
       "id": "SP05-218",
-      "name": "Incremental-Ascent Confidence Light",
+      "name": "Yama no Susume 8bit - Incremental-Ascent Confidence Light",
+      "styleAnchors": ["Yama no Susume 8bit - Incremental-Ascent Confidence Light"],
       "ref": "pack_13/SP05-218.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1483,11 +1616,12 @@
       "categoryName": "4. Slice Of Life & Moe",
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-and-moe"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-218 incremental-ascent confidence light 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
+      "searchableText": "sp05-218 yama no susume 8bit - incremental-ascent confidence light 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
     },
     {
       "id": "SP05-219",
-      "name": "Mundane Absurdist Theater",
+      "name": "Daily Lives of High School Boys Sunrise - Mundane Absurdist Theater",
+      "styleAnchors": ["Daily Lives of High School Boys Sunrise - Mundane Absurdist Theater"],
       "ref": "pack_13/SP05-219.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1495,11 +1629,12 @@
       "categoryName": "4. Slice Of Life & Moe",
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-and-moe"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-219 mundane absurdist theater 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
+      "searchableText": "sp05-219 daily lives of high school boys sunrise - mundane absurdist theater 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
     },
     {
       "id": "SP05-220",
-      "name": "Observational Watercolor Drift",
+      "name": "Totan Kobako - Observational Watercolor Drift",
+      "styleAnchors": ["Totan Kobako - Observational Watercolor Drift"],
       "ref": "pack_13/SP05-220.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1507,11 +1642,12 @@
       "categoryName": "4. Slice Of Life & Moe",
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-and-moe"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-220 observational watercolor drift 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
+      "searchableText": "sp05-220 totan kobako - observational watercolor drift 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
     },
     {
       "id": "SP05-088",
-      "name": "Domestic-Fantasy Scale Chaos",
+      "name": "Coolkyousinnjya - Domestic-Fantasy Scale Chaos",
+      "styleAnchors": ["Coolkyousinnjya - Domestic-Fantasy Scale Chaos"],
       "ref": "pack_13/SP05-088.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1519,11 +1655,12 @@
       "categoryName": "4. Slice Of Life & Moe",
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-and-moe"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-088 domestic-fantasy scale chaos 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
+      "searchableText": "sp05-088 coolkyousinnjya - domestic-fantasy scale chaos 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
     },
     {
       "id": "SP05-210",
-      "name": "Sunshine-Scribble Soft Geometry",
+      "name": "Ume Aoki - Sunshine-Scribble Soft Geometry",
+      "styleAnchors": ["Ume Aoki - Sunshine-Scribble Soft Geometry"],
       "ref": "pack_13/SP05-210.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1531,11 +1668,12 @@
       "categoryName": "4. Slice Of Life & Moe",
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-and-moe"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-210 sunshine-scribble soft geometry 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
+      "searchableText": "sp05-210 ume aoki - sunshine-scribble soft geometry 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
     },
     {
       "id": "SP05-085",
-      "name": "Anxiety-Glitch Catharsis Comedy",
+      "name": "Bocchi the Rock! CloverWorks - Anxiety-Glitch Catharsis Comedy",
+      "styleAnchors": ["Bocchi the Rock! CloverWorks - Anxiety-Glitch Catharsis Comedy"],
       "ref": "pack_13/SP05-085.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1543,11 +1681,12 @@
       "categoryName": "4. Slice Of Life & Moe",
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-and-moe"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-085 anxiety-glitch catharsis comedy 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
+      "searchableText": "sp05-085 bocchi the rock! cloverworks - anxiety-glitch catharsis comedy 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
     },
     {
       "id": "SP05-089",
-      "name": "Soft-Surreal Deadpan Drift",
+      "name": "Kiyohiko Azuma - Soft-Surreal Deadpan Drift",
+      "styleAnchors": ["Kiyohiko Azuma - Soft-Surreal Deadpan Drift"],
       "ref": "pack_13/SP05-089.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1555,11 +1694,14 @@
       "categoryName": "4. Slice Of Life & Moe",
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-and-moe"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-089 soft-surreal deadpan drift 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
+      "searchableText": "sp05-089 kiyohiko azuma - soft-surreal deadpan drift 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
     },
     {
       "id": "SP05-203",
-      "name": "Horizon-Forward Youth Momentum",
+      "name": "A Place Further Than the Universe Madhouse - Horizon-Forward Youth Momentum",
+      "styleAnchors": [
+        "A Place Further Than the Universe Madhouse - Horizon-Forward Youth Momentum"
+      ],
       "ref": "pack_13/SP05-203.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1567,11 +1709,12 @@
       "categoryName": "4. Slice Of Life & Moe",
       "tags": ["anime-02-anime-character-and-lifestyle", "slice-of-life-and-moe"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-203 horizon-forward youth momentum 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
+      "searchableText": "sp05-203 a place further than the universe madhouse - horizon-forward youth momentum 4. slice of life & moe quiet character animation pack_13 anime 02 — anime character & lifestyle slice-of-life-and-moe anime-02-anime-character-and-lifestyle slice-of-life-and-moe"
     },
     {
       "id": "SP05-324",
-      "name": "Elastic Rom-Com Slapstick Timing",
+      "name": "Rumiko Takahashi - Elastic Rom-Com Slapstick Timing",
+      "styleAnchors": ["Rumiko Takahashi - Elastic Rom-Com Slapstick Timing"],
       "ref": "pack_13/SP05-324.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1579,11 +1722,12 @@
       "categoryName": "5. Anime Style Spectrum",
       "tags": ["anime-02-anime-character-and-lifestyle", "anime-style-spectrum"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-324 elastic rom-com slapstick timing 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
+      "searchableText": "sp05-324 rumiko takahashi - elastic rom-com slapstick timing 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     },
     {
       "id": "SP05-323",
-      "name": "Prism-Glamour Transformation Polish",
+      "name": "Naoko Takeuchi - Prism-Glamour Transformation Polish",
+      "styleAnchors": ["Naoko Takeuchi - Prism-Glamour Transformation Polish"],
       "ref": "pack_13/SP05-323.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1591,11 +1735,12 @@
       "categoryName": "5. Anime Style Spectrum",
       "tags": ["anime-02-anime-character-and-lifestyle", "anime-style-spectrum"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-323 prism-glamour transformation polish 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
+      "searchableText": "sp05-323 naoko takeuchi - prism-glamour transformation polish 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     },
     {
       "id": "SP05-331",
-      "name": "Chrome Impact Spectacle",
+      "name": "Yusuke Murata - Chrome Impact Hero Frame",
+      "styleAnchors": ["Yusuke Murata - Chrome Impact Hero Frame"],
       "ref": "pack_13/SP05-331.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1603,11 +1748,12 @@
       "categoryName": "5. Anime Style Spectrum",
       "tags": ["anime-02-anime-character-and-lifestyle", "anime-style-spectrum"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-331 chrome impact spectacle 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
+      "searchableText": "sp05-331 yusuke murata - chrome impact hero frame 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     },
     {
       "id": "SP05-334",
-      "name": "Emergency Storyboard Tension",
+      "name": "Hideaki Anno - Emergency Storyboard Tension",
+      "styleAnchors": ["Hideaki Anno - Emergency Storyboard Tension"],
       "ref": "pack_13/SP05-334.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1615,7 +1761,7 @@
       "categoryName": "5. Anime Style Spectrum",
       "tags": ["anime-02-anime-character-and-lifestyle", "anime-style-spectrum"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-334 emergency storyboard tension 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
+      "searchableText": "sp05-334 hideaki anno - emergency storyboard tension 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     },
     {
       "id": "SP05-339",
@@ -1632,7 +1778,8 @@
     },
     {
       "id": "SP05-342",
-      "name": "Reality-Slip Reflection Continuity",
+      "name": "Satoshi Kon - Reality-Slip Reflection Continuity",
+      "styleAnchors": ["Satoshi Kon - Reality-Slip Reflection Continuity"],
       "ref": "pack_13/SP05-342.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1640,11 +1787,12 @@
       "categoryName": "5. Anime Style Spectrum",
       "tags": ["anime-02-anime-character-and-lifestyle", "anime-style-spectrum"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-342 reality-slip reflection continuity 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
+      "searchableText": "sp05-342 satoshi kon - reality-slip reflection continuity 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     },
     {
       "id": "SP05-333",
       "name": "Hiroyuki Okiura - Quiet Human Naturalism",
+      "styleAnchors": ["Hiroyuki Okiura - Quiet Human Naturalism"],
       "ref": "pack_13/SP05-333.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1657,6 +1805,7 @@
     {
       "id": "SP05-335",
       "name": "Haruko Ichikawa - Mineral Void Serenity",
+      "styleAnchors": ["Haruko Ichikawa - Mineral Void Serenity"],
       "ref": "pack_13/SP05-335.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1669,6 +1818,7 @@
     {
       "id": "SP05-341",
       "name": "Hiromu Arakawa - Mechanical Warmth Ensemble",
+      "styleAnchors": ["Hiromu Arakawa - Mechanical Warmth Ensemble"],
       "ref": "pack_13/SP05-341.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1680,7 +1830,8 @@
     },
     {
       "id": "SP05-328",
-      "name": "Retrofuture Distance Melancholy",
+      "name": "Leiji Matsumoto - Retrofuture Distance Melancholy",
+      "styleAnchors": ["Leiji Matsumoto - Retrofuture Distance Melancholy"],
       "ref": "pack_13/SP05-328.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1688,11 +1839,12 @@
       "categoryName": "5. Anime Style Spectrum",
       "tags": ["anime-02-anime-character-and-lifestyle", "anime-style-spectrum"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-328 retrofuture distance melancholy 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
+      "searchableText": "sp05-328 leiji matsumoto - retrofuture distance melancholy 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     },
     {
       "id": "SP05-109",
-      "name": "Kinetic Impact-Line Choreography",
+      "name": "Masashi Kishimoto - Kinetic Impact-Line Choreography",
+      "styleAnchors": ["Masashi Kishimoto - Kinetic Impact-Line Choreography"],
       "ref": "pack_13/SP05-109.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1700,11 +1852,12 @@
       "categoryName": "5. Anime Style Spectrum",
       "tags": ["anime-02-anime-character-and-lifestyle", "anime-style-spectrum"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-109 kinetic impact-line choreography 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
+      "searchableText": "sp05-109 masashi kishimoto - kinetic impact-line choreography 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     },
     {
       "id": "SP05-336",
       "name": "Takeshi Koike - Razorline Velocity Poster",
+      "styleAnchors": ["Takeshi Koike - Razorline Velocity Poster"],
       "ref": "pack_13/SP05-336.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1716,7 +1869,8 @@
     },
     {
       "id": "SP05-322",
-      "name": "Celestial Vertical Ornament",
+      "name": "CLAMP - Celestial Vertical Ornament",
+      "styleAnchors": ["CLAMP - Celestial Vertical Ornament"],
       "ref": "pack_13/SP05-322.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1724,11 +1878,12 @@
       "categoryName": "5. Anime Style Spectrum",
       "tags": ["anime-02-anime-character-and-lifestyle", "anime-style-spectrum"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-322 celestial vertical ornament 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
+      "searchableText": "sp05-322 clamp - celestial vertical ornament 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     },
     {
       "id": "SP05-332",
-      "name": "Ritual Allegory Icon System",
+      "name": "Kunihiko Ikuhara - Ritual Allegory Icon System",
+      "styleAnchors": ["Kunihiko Ikuhara - Ritual Allegory Icon System"],
       "ref": "pack_13/SP05-332.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1736,11 +1891,12 @@
       "categoryName": "5. Anime Style Spectrum",
       "tags": ["anime-02-anime-character-and-lifestyle", "anime-style-spectrum"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-332 ritual allegory icon system 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
+      "searchableText": "sp05-332 kunihiko ikuhara - ritual allegory icon system 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     },
     {
       "id": "SP05-337",
-      "name": "Technomagic Draftsmanship Burst",
+      "name": "Yoh Yoshinari - Technomagic Draftsmanship Burst",
+      "styleAnchors": ["Yoh Yoshinari - Technomagic Draftsmanship Burst"],
       "ref": "pack_13/SP05-337.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1748,11 +1904,12 @@
       "categoryName": "5. Anime Style Spectrum",
       "tags": ["anime-02-anime-character-and-lifestyle", "anime-style-spectrum"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-337 technomagic draftsmanship burst 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
+      "searchableText": "sp05-337 yoh yoshinari - technomagic draftsmanship burst 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     },
     {
       "id": "SP05-111",
-      "name": "Ukiyo-e Woodblock Anime",
+      "name": "Miss Hokusai Production I.G - Ukiyo-e Woodblock Anime",
+      "styleAnchors": ["Miss Hokusai Production I.G - Ukiyo-e Woodblock Anime"],
       "ref": "pack_13/SP05-111.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1760,11 +1917,12 @@
       "categoryName": "5. Anime Style Spectrum",
       "tags": ["anime-02-anime-character-and-lifestyle", "anime-style-spectrum"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-111 ukiyo-e woodblock anime 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
+      "searchableText": "sp05-111 miss hokusai production i.g - ukiyo-e woodblock anime 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     },
     {
       "id": "SP05-327",
       "name": "Osamu Dezaki - Postcard Memory Freeze",
+      "styleAnchors": ["Osamu Dezaki - Postcard Memory Freeze"],
       "ref": "pack_13/SP05-327.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1776,7 +1934,8 @@
     },
     {
       "id": "SP05-340",
-      "name": "Velvet Lash Refined Tension",
+      "name": "Akio Sugino - Velvet Lash Refined Tension",
+      "styleAnchors": ["Akio Sugino - Velvet Lash Refined Tension"],
       "ref": "pack_13/SP05-340.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1784,11 +1943,12 @@
       "categoryName": "5. Anime Style Spectrum",
       "tags": ["anime-02-anime-character-and-lifestyle", "anime-style-spectrum"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-340 velvet lash refined tension 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
+      "searchableText": "sp05-340 akio sugino - velvet lash refined tension 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     },
     {
       "id": "SP05-325",
-      "name": "Scratchy Concrete-Poetry Drift",
+      "name": "Taiyo Matsumoto - Scratchy Concrete-Poetry Drift",
+      "styleAnchors": ["Taiyo Matsumoto - Scratchy Concrete-Poetry Drift"],
       "ref": "pack_13/SP05-325.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1796,11 +1956,12 @@
       "categoryName": "5. Anime Style Spectrum",
       "tags": ["anime-02-anime-character-and-lifestyle", "anime-style-spectrum"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-325 scratchy concrete-poetry drift 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
+      "searchableText": "sp05-325 taiyo matsumoto - scratchy concrete-poetry drift 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     },
     {
       "id": "SP05-118",
-      "name": "Backlit Contour Longing",
+      "name": "Hiroshi Nagai - Backlit Contour Longing",
+      "styleAnchors": ["Hiroshi Nagai - Backlit Contour Longing"],
       "ref": "pack_13/SP05-118.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1808,11 +1969,12 @@
       "categoryName": "5. Anime Style Spectrum",
       "tags": ["anime-02-anime-character-and-lifestyle", "anime-style-spectrum"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-118 backlit contour longing 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
+      "searchableText": "sp05-118 hiroshi nagai - backlit contour longing 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     },
     {
       "id": "SP05-113",
-      "name": "Leaded Jewel-Light Segmentation",
+      "name": "Madoka Magica SHAFT - Leaded Jewel-Light Segmentation",
+      "styleAnchors": ["Madoka Magica SHAFT - Leaded Jewel-Light Segmentation"],
       "ref": "pack_13/SP05-113.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1820,11 +1982,12 @@
       "categoryName": "5. Anime Style Spectrum",
       "tags": ["anime-02-anime-character-and-lifestyle", "anime-style-spectrum"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-113 leaded jewel-light segmentation 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
+      "searchableText": "sp05-113 madoka magica shaft - leaded jewel-light segmentation 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     },
     {
       "id": "SP05-326",
       "name": "Masaaki Yuasa - Rubber Reality Sprint",
+      "styleAnchors": ["Masaaki Yuasa - Rubber Reality Sprint"],
       "ref": "pack_13/SP05-326.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1836,7 +1999,8 @@
     },
     {
       "id": "SP05-116",
-      "name": "Sumi-e Impact Brushstroke",
+      "name": "Sawaki Takeyasu - Sumi-e Impact Brushstroke",
+      "styleAnchors": ["Sawaki Takeyasu - Sumi-e Impact Brushstroke"],
       "ref": "pack_13/SP05-116.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1844,11 +2008,12 @@
       "categoryName": "5. Anime Style Spectrum",
       "tags": ["anime-02-anime-character-and-lifestyle", "anime-style-spectrum"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-116 sumi-e impact brushstroke 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
+      "searchableText": "sp05-116 sawaki takeyasu - sumi-e impact brushstroke 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     },
     {
       "id": "SP05-104",
-      "name": "Minimalist Indie Quiet",
+      "name": "Seiichi Hayashi - Minimalist Indie Quiet",
+      "styleAnchors": ["Seiichi Hayashi - Minimalist Indie Quiet"],
       "ref": "pack_13/SP05-104.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1856,11 +2021,12 @@
       "categoryName": "5. Anime Style Spectrum",
       "tags": ["anime-02-anime-character-and-lifestyle", "anime-style-spectrum"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-104 minimalist indie quiet 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
+      "searchableText": "sp05-104 seiichi hayashi - minimalist indie quiet 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     },
     {
       "id": "SP05-112",
-      "name": "Spray-Drip Wildstyle Anime",
+      "name": "Dead Leaves Imaishi - Spray-Drip Wildstyle Anime",
+      "styleAnchors": ["Dead Leaves Imaishi - Spray-Drip Wildstyle Anime"],
       "ref": "pack_13/SP05-112.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1868,11 +2034,12 @@
       "categoryName": "5. Anime Style Spectrum",
       "tags": ["anime-02-anime-character-and-lifestyle", "anime-style-spectrum"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-112 spray-drip wildstyle anime 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
+      "searchableText": "sp05-112 dead leaves imaishi - spray-drip wildstyle anime 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     },
     {
       "id": "SP05-119",
-      "name": "Chalk-Dust Slate Sketch",
+      "name": "Yusei Matsui - Chalk-Dust Slate Sketch",
+      "styleAnchors": ["Yusei Matsui - Chalk-Dust Slate Sketch"],
       "ref": "pack_13/SP05-119.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1880,11 +2047,12 @@
       "categoryName": "5. Anime Style Spectrum",
       "tags": ["anime-02-anime-character-and-lifestyle", "anime-style-spectrum"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-119 chalk-dust slate sketch 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
+      "searchableText": "sp05-119 yusei matsui - chalk-dust slate sketch 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     },
     {
       "id": "SP05-102",
-      "name": "Gritty Realist Seinen",
+      "name": "Minoru Furuya - Gritty Realist Seinen",
+      "styleAnchors": ["Minoru Furuya - Gritty Realist Seinen"],
       "ref": "pack_13/SP05-102.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1892,11 +2060,12 @@
       "categoryName": "5. Anime Style Spectrum",
       "tags": ["anime-02-anime-character-and-lifestyle", "anime-style-spectrum"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-102 gritty realist seinen 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
+      "searchableText": "sp05-102 minoru furuya - gritty realist seinen 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     },
     {
       "id": "SP05-321",
-      "name": "Ether-Wisp Gothic Ornament",
+      "name": "Yoshitaka Amano - Ether-Wisp Gothic Ornament",
+      "styleAnchors": ["Yoshitaka Amano - Ether-Wisp Gothic Ornament"],
       "ref": "pack_13/SP05-321.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1904,11 +2073,12 @@
       "categoryName": "5. Anime Style Spectrum",
       "tags": ["anime-02-anime-character-and-lifestyle", "anime-style-spectrum"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-321 ether-wisp gothic ornament 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
+      "searchableText": "sp05-321 yoshitaka amano - ether-wisp gothic ornament 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     },
     {
       "id": "SP05-110",
-      "name": "Surreal Dream Logic",
+      "name": "Keiichi Tanaami - Surreal Dream Logic",
+      "styleAnchors": ["Keiichi Tanaami - Surreal Dream Logic"],
       "ref": "pack_13/SP05-110.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1916,11 +2086,12 @@
       "categoryName": "5. Anime Style Spectrum",
       "tags": ["anime-02-anime-character-and-lifestyle", "anime-style-spectrum"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-110 surreal dream logic 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
+      "searchableText": "sp05-110 keiichi tanaami - surreal dream logic 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     },
     {
       "id": "SP05-108",
-      "name": "Fairy-Tale Storybook Soft",
+      "name": "Kazuo Oga - Fairy-Tale Storybook Soft",
+      "styleAnchors": ["Kazuo Oga - Fairy-Tale Storybook Soft"],
       "ref": "pack_13/SP05-108.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1928,11 +2099,12 @@
       "categoryName": "5. Anime Style Spectrum",
       "tags": ["anime-02-anime-character-and-lifestyle", "anime-style-spectrum"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-108 fairy-tale storybook soft 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
+      "searchableText": "sp05-108 kazuo oga - fairy-tale storybook soft 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     },
     {
       "id": "SP05-106",
-      "name": "Deco-Inspired Geometric Anime",
+      "name": "The Big O Sunrise - Deco-Inspired Geometric Anime",
+      "styleAnchors": ["The Big O Sunrise - Deco-Inspired Geometric Anime"],
       "ref": "pack_13/SP05-106.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1940,11 +2112,12 @@
       "categoryName": "5. Anime Style Spectrum",
       "tags": ["anime-02-anime-character-and-lifestyle", "anime-style-spectrum"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-106 deco-inspired geometric anime 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
+      "searchableText": "sp05-106 the big o sunrise - deco-inspired geometric anime 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     },
     {
       "id": "SP05-330",
-      "name": "Folkloric Deadpan Ink Catalog",
+      "name": "Shigeru Mizuki - Folkloric Deadpan Ink Catalog",
+      "styleAnchors": ["Shigeru Mizuki - Folkloric Deadpan Ink Catalog"],
       "ref": "pack_13/SP05-330.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1952,11 +2125,12 @@
       "categoryName": "5. Anime Style Spectrum",
       "tags": ["anime-02-anime-character-and-lifestyle", "anime-style-spectrum"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-330 folkloric deadpan ink catalog 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
+      "searchableText": "sp05-330 shigeru mizuki - folkloric deadpan ink catalog 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     },
     {
       "id": "SP05-114",
-      "name": "Threadbare Textile Patchwork",
+      "name": "Gankutsuou Gonzo - Threadbare Textile Patchwork",
+      "styleAnchors": ["Gankutsuou Gonzo - Threadbare Textile Patchwork"],
       "ref": "pack_13/SP05-114.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1964,11 +2138,12 @@
       "categoryName": "5. Anime Style Spectrum",
       "tags": ["anime-02-anime-character-and-lifestyle", "anime-style-spectrum"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-114 threadbare textile patchwork 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
+      "searchableText": "sp05-114 gankutsuou gonzo - threadbare textile patchwork 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     },
     {
       "id": "SP05-329",
-      "name": "Spiral Panic Engraving",
+      "name": "Kazuo Umezz - Spiral Panic Engraving",
+      "styleAnchors": ["Kazuo Umezz - Spiral Panic Engraving"],
       "ref": "pack_13/SP05-329.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1976,11 +2151,12 @@
       "categoryName": "5. Anime Style Spectrum",
       "tags": ["anime-02-anime-character-and-lifestyle", "anime-style-spectrum"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-329 spiral panic engraving 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
+      "searchableText": "sp05-329 kazuo umezz - spiral panic engraving 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     },
     {
       "id": "SP05-338",
-      "name": "Angular Combustion Iconography",
+      "name": "Atsushi Ohkubo - Angular Combustion Iconography",
+      "styleAnchors": ["Atsushi Ohkubo - Angular Combustion Iconography"],
       "ref": "pack_13/SP05-338.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -1988,11 +2164,12 @@
       "categoryName": "5. Anime Style Spectrum",
       "tags": ["anime-02-anime-character-and-lifestyle", "anime-style-spectrum"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-338 angular combustion iconography 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
+      "searchableText": "sp05-338 atsushi ohkubo - angular combustion iconography 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     },
     {
       "id": "SP05-105",
-      "name": "Textured Hand-Drawn Rough",
+      "name": "Takashi Nakamura - Textured Hand-Drawn Rough",
+      "styleAnchors": ["Takashi Nakamura - Textured Hand-Drawn Rough"],
       "ref": "pack_13/SP05-105.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -2000,11 +2177,12 @@
       "categoryName": "5. Anime Style Spectrum",
       "tags": ["anime-02-anime-character-and-lifestyle", "anime-style-spectrum"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-105 textured hand-drawn rough 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
+      "searchableText": "sp05-105 takashi nakamura - textured hand-drawn rough 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     },
     {
       "id": "SP05-101",
-      "name": "Abstract Fluid Painterly Anime",
+      "name": "Koji Yamamura - Abstract Fluid Painterly Anime",
+      "styleAnchors": ["Koji Yamamura - Abstract Fluid Painterly Anime"],
       "ref": "pack_13/SP05-101.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -2012,11 +2190,12 @@
       "categoryName": "5. Anime Style Spectrum",
       "tags": ["anime-02-anime-character-and-lifestyle", "anime-style-spectrum"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-101 abstract fluid painterly anime 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
+      "searchableText": "sp05-101 koji yamamura - abstract fluid painterly anime 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     },
     {
       "id": "SP05-115",
-      "name": "Ice-Crystal Refractive",
+      "name": "Studio Orange CG - Ice-Crystal Refractive",
+      "styleAnchors": ["Studio Orange CG - Ice-Crystal Refractive"],
       "ref": "pack_13/SP05-115.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -2024,11 +2203,12 @@
       "categoryName": "5. Anime Style Spectrum",
       "tags": ["anime-02-anime-character-and-lifestyle", "anime-style-spectrum"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-115 ice-crystal refractive 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
+      "searchableText": "sp05-115 studio orange cg - ice-crystal refractive 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     },
     {
       "id": "SP05-107",
-      "name": "Visceral Guro Horror",
+      "name": "Gou Tanabe - Visceral Guro Horror",
+      "styleAnchors": ["Gou Tanabe - Visceral Guro Horror"],
       "ref": "pack_13/SP05-107.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -2036,11 +2216,12 @@
       "categoryName": "5. Anime Style Spectrum",
       "tags": ["anime-02-anime-character-and-lifestyle", "anime-style-spectrum"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-107 visceral guro horror 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
+      "searchableText": "sp05-107 gou tanabe - visceral guro horror 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     },
     {
       "id": "SP05-117",
-      "name": "Phosphor Sensor-Vision Grain",
+      "name": "Patlabor 2 Oshii - Phosphor Sensor-Vision Grain",
+      "styleAnchors": ["Patlabor 2 Oshii - Phosphor Sensor-Vision Grain"],
       "ref": "pack_13/SP05-117.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -2048,11 +2229,12 @@
       "categoryName": "5. Anime Style Spectrum",
       "tags": ["anime-02-anime-character-and-lifestyle", "anime-style-spectrum"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-117 phosphor sensor-vision grain 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
+      "searchableText": "sp05-117 patlabor 2 oshii - phosphor sensor-vision grain 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     },
     {
       "id": "SP05-120",
-      "name": "Thermal-Heat-Signature Vision",
+      "name": "Ghost in the Shell SAC_2045 - Thermal-Heat-Signature Vision",
+      "styleAnchors": ["Ghost in the Shell SAC_2045 - Thermal-Heat-Signature Vision"],
       "ref": "pack_13/SP05-120.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -2060,11 +2242,12 @@
       "categoryName": "5. Anime Style Spectrum",
       "tags": ["anime-02-anime-character-and-lifestyle", "anime-style-spectrum"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-120 thermal-heat-signature vision 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
+      "searchableText": "sp05-120 ghost in the shell sac_2045 - thermal-heat-signature vision 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     },
     {
       "id": "SP05-103",
-      "name": "Neon Hyperpop Anime",
+      "name": "Mika Pikazo - Neon Hyperpop Anime",
+      "styleAnchors": ["Mika Pikazo - Neon Hyperpop Anime"],
       "ref": "pack_13/SP05-103.yaml",
       "packId": "pack_13",
       "packName": "Anime 02 — Anime Character & Lifestyle",
@@ -2072,7 +2255,7 @@
       "categoryName": "5. Anime Style Spectrum",
       "tags": ["anime-02-anime-character-and-lifestyle", "anime-style-spectrum"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-103 neon hyperpop anime 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
+      "searchableText": "sp05-103 mika pikazo - neon hyperpop anime 5. anime style spectrum anime rendering spectrum pack_13 anime 02 — anime character & lifestyle anime-style-spectrum anime-02-anime-character-and-lifestyle anime-style-spectrum"
     }
   ],
   "totalPresetCount": 152

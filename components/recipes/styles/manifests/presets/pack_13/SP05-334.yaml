@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-334
 packId: pack_13
-name: Emergency Storyboard Tension
+name: Hideaki Anno - Emergency Storyboard Tension
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,38 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Rough graphite and brush contours break and restart around compressed shadow masses; a few cyan
-    and rust-red accents create urgent storyboard tension without drawing literal panels.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: restrict color to soot-dark
-    values with sparse cyan and rust-red notes; follow the prompt's palette when color carries
-    meaning.
-  lighting_and_shadow: >-
-    Use broad, compressed shadow blocks and selective hard light to clarify the existing focal
-    action; respect requested light and exposure.
-  texture_and_material: >-
-    Show searching pencil, dry brush and uneven ink at contour breaks; let construction remain
-    visible but keep it controlled.
-  camera_and_composition: >-
-    Build pressure with tight value grouping and interrupted edges; preserve camera, crop and action
-    rather than imposing a storyboard frame.
-  atmosphere_and_mood: >-
-    Urgency is carried by the shadow mass and broken line; do not add panic, danger or a new event
-    to a quiet subject.
-  rendering_and_quality: >-
-    Use storyboard mark-making on any prompted subject without adding panels, captions, props or an
-    emergency scenario. Keep important silhouettes and joins legible; no watermark, unrequested text
-    or interface.
-  key_features: >-
-    Rough graphite/ink; compressed black masses; interrupted contours; sparse cyan/rust accents;
-    storyboard-like economy.
-  creative_brief: 'Apply this visual treatment to the requested content: Rough graphite/ink; compressed black masses; interrupted contours; sparse cyan/rust accents; storyboard-like economy. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Hideaki Anno storyboard and layout look: rough graphite storyboards, bureaucratic emergency staging, telephoto compositions and tense quick cutting.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people as rough graphite figures in tense emergency scenes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Graphite grey and warning orange, true to the Hideaki Anno palette.
+  lighting_and_shadow: Harsh emergency light, lit the way Hideaki Anno lights its scenes.
+  texture_and_material: Rough graphite storyboard lines, with the surface finish of Hideaki Anno.
+  camera_and_composition: Telephoto staging and quick cuts, framed the way Hideaki Anno composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with tense emergency urgency.
+  rendering_and_quality: Rough storyboard illustration, in the recognizable hand of Hideaki Anno.
+  key_features: Anno storyboards; graphite; emergency staging
+  creative_brief: "Hideaki Anno storyboard and layout look: rough graphite storyboards, bureaucratic emergency staging, telephoto compositions and tense quick cutting. Carry it through Anno storyboards, graphite, emergency staging. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look
@@ -57,16 +37,14 @@ avoidRules:
   - shadow masses merging into unreadable black
   - unstructured pencil noise obscuring contours
   - blurred action vectors
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-334.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, shadow masses merging into unreadable black,
-    unstructured pencil noise obscuring contours, blurred action vectors
+  negativePrompt: photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, shadow masses merging into unreadable black, unstructured pencil noise obscuring contours, blurred action vectors, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -75,8 +53,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Hideaki Anno - Emergency Storyboard Tension
+styleAnchors:
+  - Hideaki Anno - Emergency Storyboard Tension

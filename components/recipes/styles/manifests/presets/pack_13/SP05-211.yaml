@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-211
 packId: pack_13
-name: Utilitarian Quiet-Freedom Minimalism
+name: Super Cub Studio Kai - Utilitarian Quiet-Freedom Minimalism
 category: 4. Slice Of Life & Moe
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,17 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
+  - reference-title
 visualDna:
-  aesthetic: 'Structural contours, broad quiet color fields, and a small number of crisp value boundaries create an economical graphic finish.'
-  subject_treatment: 'Preserve all prompted forms, proportions, and meaningful details; simplify surface marks only, never remove structural information.'
-  color_and_tone: 'Use a restrained range of neutral or cool values with an accent drawn from the prompt; do not default to gray.'
-  lighting_and_shadow: 'Keep the stated light direction and organize shadows into a few clear shapes; retain nuance when requested.'
-  texture_and_material: 'Use matte fills with material-specific edge marks in small doses; avoid implying a new material from the finish.'
-  camera_and_composition: 'Keep crop, viewpoint, perspective, spacing, and count; separate existing forms rather than adding negative space.'
-  atmosphere_and_mood: 'Let the prompt set the emotion; sparse rendering does not impose a mood.'
-  rendering_and_quality: 'Use deliberate line breaks, clean shape edges, and enough contrast for each form to remain identifiable.'
-  key_features: 'Structural contours; broad quiet fills; few clear shadow groups; limited surface noise; precise material accents.'
-  creative_brief: 'Reduce surface noise and organize values around the structure of existing forms. Preserve subject, action, count, camera, and mood without adding props. Use it as a reusable look on any subject.'
+  aesthetic: 'Studio Kai Super Cub look (2021): muted near-grey world that blooms into color with freedom, quiet solitary motorbike rides and precise mechanical detail.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with quiet simple designs, plain clothes, helmets and careful practical gestures. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Muted grey that shifts into soft color when the rider feels free.
+  lighting_and_shadow: Soft natural daylight on quiet roads and garages.
+  texture_and_material: Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.
+  camera_and_composition: Quiet road compositions and mechanical close-ups, framed the way Super Cub Studio Kai composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with quiet utilitarian freedom.
+  rendering_and_quality: Understated Studio Kai frame with minimal restraint, in the recognizable hand of Super Cub Studio Kai.
+  key_features: Super Cub muted palette; motorbike freedom; quiet solitude
+  creative_brief: "Studio Kai Super Cub look (2021): muted near-grey world that blooms into color with freedom, quiet solitary motorbike rides and precise mechanical detail. Carry it through Super Cub muted palette, motorbike freedom, quiet solitude. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -44,15 +45,14 @@ avoidRules:
   - generic anime filter
   - prompt literal card reuse
   - fake UI
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-211.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock,
-    canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic
-    anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied
-    franchise costume, logo
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -61,8 +61,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - slice-of-life-and-moe
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Super Cub Studio Kai - Utilitarian Quiet-Freedom Minimalism
+styleAnchors:
+  - Super Cub Studio Kai - Utilitarian Quiet-Freedom Minimalism

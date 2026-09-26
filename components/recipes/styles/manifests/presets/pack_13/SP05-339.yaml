@@ -3,7 +3,7 @@ id: SP05-339
 packId: pack_13
 name: Naoki Urasawa - Adult Suspense Microgesture
 category: 5. Anime Style Spectrum
-version: 4
+version: 5
 supportedTasks:
   - image_generate
   - image_edit

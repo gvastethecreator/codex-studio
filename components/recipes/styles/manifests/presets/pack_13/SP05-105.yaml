@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-105
 packId: pack_13
-name: Textured Hand-Drawn Rough
+name: Takashi Nakamura - Textured Hand-Drawn Rough
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,36 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Retain visible graphite underdrawing, colored-pencil fill, paper tooth and occasional
-    registration marks at the margins.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: use layered pencil color with
-    slight unevenness; preserve the prompt palette.
-  lighting_and_shadow: >-
-    Use hand-built value with visible pencil direction; follow specified light and keep form
-    readable.
-  texture_and_material: >-
-    Keep sketch, ink and pencil layers distinguishable; registration marks stay peripheral and
-    sparse.
-  camera_and_composition: >-
-    Preserve the source composition and perspective; show process texture without shifting objects
-    or adding sheet borders.
-  atmosphere_and_mood: >-
-    Human irregularity comes from drawn marks; retain the requested polish and mood.
-  rendering_and_quality: >-
-    Apply the hand-drawn surface to any subject without adding extra figures, animation cels, peg
-    bars or page labels. Keep important silhouettes and joins legible; no watermark, unrequested
-    text or interface.
-  key_features: >-
-    Graphite underdrawing; smudge marks; colored-pencil fill; paper tooth; sparse margin
-    registration.
-  creative_brief: 'Apply this visual treatment to the requested content: Graphite underdrawing; smudge marks; colored-pencil fill; paper tooth; sparse margin registration. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Takashi Nakamura animation look as in A Tree of Palme: textured rough hand-drawn lines, visible pencil energy and whimsical organic fantasy.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Nakamura designs and rough textured lines. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Earthy muted fantasy tones, true to the Takashi Nakamura palette.
+  lighting_and_shadow: Soft warm workshop light, lit the way Takashi Nakamura lights its scenes.
+  texture_and_material: Rough visible pencil texture, with the surface finish of Takashi Nakamura.
+  camera_and_composition: Whimsical cluttered compositions, framed the way Takashi Nakamura composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with whimsical handmade warmth.
+  rendering_and_quality: Rough textured hand-drawn frame, in the recognizable hand of Takashi Nakamura.
+  key_features: Takashi Nakamura rough texture; pencil energy; whimsy
+  creative_brief: "Takashi Nakamura animation look as in A Tree of Palme: textured rough hand-drawn lines, visible pencil energy and whimsical organic fantasy. Carry it through Takashi Nakamura rough texture, pencil energy, whimsy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look
@@ -55,16 +37,14 @@ avoidRules:
   - smoothed contours erasing graphite and pencil marks
   - smudges obscuring subject-defining details
   - registration marks intruding into the subject
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-105.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, smoothed contours erasing graphite and pencil marks,
-    smudges obscuring subject-defining details, registration marks intruding into the subject
+  negativePrompt: photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, smoothed contours erasing graphite and pencil marks, smudges obscuring subject-defining details, registration marks intruding into the subject, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -73,8 +53,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Takashi Nakamura - Textured Hand-Drawn Rough
+styleAnchors:
+  - Takashi Nakamura - Textured Hand-Drawn Rough

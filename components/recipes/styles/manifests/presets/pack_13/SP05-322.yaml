@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-322
 packId: pack_13
-name: Celestial Vertical Ornament
+name: CLAMP - Celestial Vertical Ornament
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,36 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Elongate existing contour accents and use fine celestial geometry, silver/navy/gold detail and
-    poised spacing; do not alter anatomy or force a portrait crop.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: use silver, deep navy and
-    restrained gold accents around the prompt's own palette.
-  lighting_and_shadow: >-
-    Choose moonlike edge light only when compatible with the requested illumination; keep shadows
-    delicate and legible.
-  texture_and_material: >-
-    Render ornament as fine line and small geometric marks, not extra jewelry, clothing or symbols.
-  camera_and_composition: >-
-    Use vertical spacing and slender accents inside the given composition; preserve aspect, crop and
-    subject proportions.
-  atmosphere_and_mood: >-
-    Poised distance comes from spacing and delicate ornament; retain the prompt's mood rather than
-    enforcing aloofness.
-  rendering_and_quality: >-
-    Transfer the vertical line language to any subject without changing its proportions or adding a
-    moon, halo or costume. Keep important silhouettes and joins legible; no watermark, unrequested
-    text or interface.
-  key_features: >-
-    Elongated contour accents; fine celestial geometry; silver/navy/gold; poised negative space;
-    restrained ornament.
-  creative_brief: 'Apply this visual treatment to the requested content: Elongated contour accents; fine celestial geometry; silver/navy/gold; poised negative space; restrained ornament. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'CLAMP manga look as in X and Tsubasa: extremely elongated elegant figures, flowing robes and hair, celestial ornament, feathers and dramatic vertical page layouts.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with CLAMP proportions, very long limbs, narrow faces, flowing robes and hair falling in long vertical lines. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Black ink with delicate tone, and pale gold and silver in color art.
+  lighting_and_shadow: Celestial glow and soft starlight, lit the way CLAMP lights its scenes.
+  texture_and_material: Fine elegant ink line, feathers and ornament, with the surface finish of CLAMP.
+  camera_and_composition: Tall vertical compositions spanning the page, framed the way CLAMP composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with celestial elegant destiny.
+  rendering_and_quality: Elegant ornamental manga illustration, in the recognizable hand of CLAMP.
+  key_features: CLAMP elongation; celestial ornament; feathers; vertical layout
+  creative_brief: "CLAMP manga look as in X and Tsubasa: extremely elongated elegant figures, flowing robes and hair, celestial ornament, feathers and dramatic vertical page layouts. Carry it through CLAMP elongation, celestial ornament, feathers, vertical layout. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look
@@ -55,16 +37,14 @@ avoidRules:
   - ornamental geometry obscuring source silhouette
   - heavy contour overwhelming fine geometry
   - ornament altering source proportions
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-322.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, ornamental geometry obscuring source silhouette, heavy
-    contour overwhelming fine geometry, ornament altering source proportions
+  negativePrompt: photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, ornamental geometry obscuring source silhouette, heavy contour overwhelming fine geometry, ornament altering source proportions, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -73,8 +53,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: CLAMP - Celestial Vertical Ornament
+styleAnchors:
+  - CLAMP - Celestial Vertical Ornament

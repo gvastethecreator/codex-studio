@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-044
 packId: pack_13
-name: Punk Romance Drama
+name: Moyoco Anno - Punk Romance Drama
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,26 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Expressive anime drawing mixes heavy variable ink, angular cuts, and short dry strokes.
-  subject_treatment: >-
-    Keep proportions and clothing; direct sharp marks along existing gesture, add no gear.
-  color_and_tone: >-
-    Coal black, electric blue, acid yellow, hot coral; bright color stays selective.
-  lighting_and_shadow: >-
-    Hard key, compact rim accents, broad dark masses; no performance lights.
-  texture_and_material: >-
-    Scuffed brush texture only at chosen edges; leave large fills clean.
-  camera_and_composition: >-
-    Preserve crop and action; tilted spacing only follows existing gesture.
-  atmosphere_and_mood: >-
-    Intensity comes from line-weight shifts and color friction; mood stays prompt-led.
-  rendering_and_quality: >-
-    Crisp silhouette, limited scratches, readable mids, no blanket distress.
-  key_features: >-
-    Heavy variable ink, angular cuts, electric accents, localized dry-brush
-  creative_brief: 'Apply a visual treatment centered on heavy variable ink, angular cuts, electric accents, localized dry-brush. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'Moyoco Anno manga look as in Happy Mania and Sakuran: bold graphic fashion lines, sharp sexy josei heroines, punk energy and heartbreak.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Anno designs, sharp eyes, bold lips and fashionable edgy clothes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Black ink with bold fashion accents, true to the Moyoco Anno palette.
+  lighting_and_shadow: Nightlife light and rainy gloom, lit the way Moyoco Anno lights its scenes.
+  texture_and_material: Bold graphic fashion lines and tone, with the surface finish of Moyoco Anno.
+  camera_and_composition: Fashion-forward compositions, framed the way Moyoco Anno composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with edgy punk romance.
+  rendering_and_quality: Bold graphic josei manga illustration, in the recognizable hand of Moyoco Anno.
+  key_features: Moyoco Anno bold line; josei; punk fashion; heartbreak
+  creative_brief: "Moyoco Anno manga look as in Happy Mania and Sakuran: bold graphic fashion lines, sharp sexy josei heroines, punk energy and heartbreak. Carry it through Moyoco Anno bold line, josei, punk fashion, heartbreak. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -53,15 +45,14 @@ avoidRules:
   - generic anime filter
   - prompt literal card reuse
   - fake UI
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-044.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -70,8 +61,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - shojo-magical-girl-and-visionary-classics
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Moyoco Anno - Punk Romance Drama
+styleAnchors:
+  - Moyoco Anno - Punk Romance Drama

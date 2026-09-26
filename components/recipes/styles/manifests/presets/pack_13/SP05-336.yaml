@@ -3,7 +3,7 @@ id: SP05-336
 packId: pack_13
 name: Takeshi Koike - Razorline Velocity Poster
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,35 +13,16 @@ tags:
   - anime-style-spectrum
   - reference-title
 visualDna:
-  aesthetic: >-
-    A drawing technique, not a copy of any work: razor-edged silhouettes, long graphic slashes,
-    dense black cutouts and a flat vermilion/cream/navy poster palette.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: use vermilion, cream, navy and
-    decisive black masses; preserve prompt-critical colors and keep the palette flat.
-  lighting_and_shadow: >-
-    Hard, graphic light and shadow carve planes; any glint or highlight follows the prompted
-    material.
-  texture_and_material: >-
-    Favor sharp contour, clean flat fills and selective rough ink edges; no generic metallic gloss.
-  camera_and_composition: >-
-    Use long diagonals to reinforce the existing direction of action; preserve crop and do not
-    impose a racing angle.
-  atmosphere_and_mood: >-
-    Velocity is conveyed by slashing line and poster contrast; keep still or quiet prompts still
-    when requested.
-  rendering_and_quality: >-
-    Apply graphic edge and palette logic to any subject; add no vehicle, weapon, action pose or
-    copied frame. Keep important silhouettes and joins legible; no watermark, unrequested text or
-    interface.
-  key_features: >-
-    Razorline silhouette; black cutout pools; vermilion/cream/navy blocks; long slashes;
-    poster-value contrast.
-  creative_brief: 'Apply this visual treatment to the requested content: Razorline silhouette; black cutout pools; vermilion/cream/navy blocks; long slashes; poster-value contrast. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Takeshi Koike illustration look as in his Lupin films: razor-thin sharp lines, huge black shadow shapes, long angular figures and cool poster compositions.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Koike stylization, long angular bodies and hard black shadows. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Saturated flat color with massive blacks, true to the Takeshi Koike palette.
+  lighting_and_shadow: Hard graphic light with black shadow shapes, lit the way Takeshi Koike lights its scenes.
+  texture_and_material: Razor-thin line and flat color, with the surface finish of Takeshi Koike.
+  camera_and_composition: Cool poster-like compositions, framed the way Takeshi Koike composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with cool razor velocity.
+  rendering_and_quality: Stylish graphic poster illustration, in the recognizable hand of Takeshi Koike.
+  key_features: Takeshi Koike razor line; black shadows; poster cool
+  creative_brief: "Takeshi Koike illustration look as in his Lupin films: razor-thin sharp lines, huge black shadow shapes, long angular figures and cool poster compositions. Carry it through Takeshi Koike razor line, black shadows, poster cool. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look
@@ -58,18 +39,12 @@ avoidRules:
   - hard color blocks merging adjacent forms
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-336.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, slashes misaligned with requested action direction,
-    black cutouts erasing subject-defining detail, hard color blocks merging adjacent forms, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, slashes misaligned with requested action direction, black cutouts erasing subject-defining detail, hard color blocks merging adjacent forms, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -84,3 +59,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Takeshi Koike - Razorline Velocity Poster
+styleAnchors:
+  - Takeshi Koike - Razorline Velocity Poster

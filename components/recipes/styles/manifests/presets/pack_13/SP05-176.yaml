@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-176
 packId: pack_13
-name: Magic Knight Rayearth - Jewel Armor Quest
+name: CLAMP Rayearth - Jewel Armor Quest
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,27 +13,16 @@ tags:
   - shojo-magical-girl-and-visionary-classics
   - reference-title
 visualDna:
-  aesthetic: >-
-    Bold anime contour surrounds polygonal cel facets, with jewel-like accents confined to
-    existing forms.
-  subject_treatment: >-
-    Keep subject, anatomy, costume, and count; facet armor or surfaces only when requested.
-  color_and_tone: >-
-    Cerulean, turquoise, amber, muted coral, deep blue; facets clarify values.
-  lighting_and_shadow: >-
-    Bright broad illumination and hard bevel highlights; add no magical light source.
-  texture_and_material: >-
-    Smooth cel planes with small facets; no runes, jewels, or effects unless requested.
-  camera_and_composition: >-
-    Respect framing; diagonals may follow motion but never force a quest pose or team.
-  atmosphere_and_mood: >-
-    Forward momentum only when the specified action is dynamic; otherwise retain mood.
-  rendering_and_quality: >-
-    Bold outlines, few shadow bands, legible facets, localized highlights.
-  key_features: >-
-    Polygonal cel facets, bold outline, cerulean-amber contrast, accents on existing
-    surfaces
-  creative_brief: 'Apply a visual treatment centered on polygonal cel facets, bold outline, cerulean-amber contrast, accents on existing surfaces. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'CLAMP Magic Knight Rayearth manga art: elegant elongated figures, huge luminous eyes, ornate jeweled armor, flowing hair and decorative fantasy framing.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with CLAMP proportions, very long limbs, huge luminous eyes, flowing hair and ornate jeweled armor. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Ruby, sapphire, emerald and gold with soft pastel washes.
+  lighting_and_shadow: Gem light and soft decorative glows, lit the way CLAMP Rayearth lights its scenes.
+  texture_and_material: Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.
+  camera_and_composition: Elegant vertical compositions and ornate framing, framed the way CLAMP Rayearth composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with ornate heroic quest.
+  rendering_and_quality: Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.
+  key_features: CLAMP elongation; jeweled armor; luminous eyes; ornate framing
+  creative_brief: "CLAMP Magic Knight Rayearth manga art: elegant elongated figures, huge luminous eyes, ornate jeweled armor, flowing hair and decorative fantasy framing. Carry it through CLAMP elongation, jeweled armor, luminous eyes, ornate framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -58,17 +47,12 @@ avoidRules:
   - fake UI
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-176.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -83,3 +67,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: CLAMP Rayearth - Jewel Armor Quest
+styleAnchors:
+  - CLAMP Rayearth - Jewel Armor Quest

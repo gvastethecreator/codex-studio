@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-101
 packId: pack_13
-name: Abstract Fluid Painterly Anime
+name: Koji Yamamura - Abstract Fluid Painterly Anime
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,37 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Let watercolor blooms, pigment granulation and wet-paper movement soften or dissolve selected
-    contours; preserve the subject through value and silhouette.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: use translucent washes and
-    natural pigment mixing; preserve prompt colors and avoid flattening everything into solid fills.
-  lighting_and_shadow: >-
-    Allow blooms and edge loss where wash gathers; keep requested light direction and focal values
-    legible.
-  texture_and_material: >-
-    Show paper tooth, ink pooling, granulation and selective disappearing linework; leave deliberate
-    unpainted space.
-  camera_and_composition: >-
-    Keep the source layout stable while washes flow within existing forms; do not turn abstractions
-    into new objects.
-  atmosphere_and_mood: >-
-    Fluidity comes from pigment behavior and negative space; retain the prompt's mood and
-    readability.
-  rendering_and_quality: >-
-    Apply the wet-media mechanics to any subject without adding water, scenery or abstract forms
-    absent from the prompt. Keep important silhouettes and joins legible; no watermark, unrequested
-    text or interface.
-  key_features: >-
-    Watercolor blooms; disappearing contour; ink pools; pigment granulation; wet-paper texture;
-    negative space.
-  creative_brief: 'Apply this visual treatment to the requested content: Watercolor blooms; disappearing contour; ink pools; pigment granulation; wet-paper texture; negative space. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Koji Yamamura independent animation look as in Mt. Head: hand-drawn fluid pencil and watercolor, abstract flowing forms and painterly metamorphosis.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw figures with fluid hand-drawn lines that melt into abstract painterly forms. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Watercolor blues, sepia and soft washes, true to the Koji Yamamura palette.
+  lighting_and_shadow: Soft painterly light, lit the way Koji Yamamura lights its scenes.
+  texture_and_material: Pencil and watercolor texture, with the surface finish of Koji Yamamura.
+  camera_and_composition: Flowing metamorphic compositions, framed the way Koji Yamamura composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with fluid dreamy metamorphosis.
+  rendering_and_quality: Painterly independent animation frame, in the recognizable hand of Koji Yamamura.
+  key_features: Koji Yamamura fluidity; watercolor; metamorphosis
+  creative_brief: "Koji Yamamura independent animation look as in Mt. Head: hand-drawn fluid pencil and watercolor, abstract flowing forms and painterly metamorphosis. Carry it through Koji Yamamura fluidity, watercolor, metamorphosis. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look
@@ -56,16 +37,14 @@ avoidRules:
   - uniform opaque fills erasing pigment blooms
   - continuous hard outlines enclosing every form
   - wash bleed obscuring the silhouette
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-101.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, uniform opaque fills erasing pigment blooms,
-    continuous hard outlines enclosing every form, wash bleed obscuring the silhouette
+  negativePrompt: photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, uniform opaque fills erasing pigment blooms, continuous hard outlines enclosing every form, wash bleed obscuring the silhouette, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -74,8 +53,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Koji Yamamura - Abstract Fluid Painterly Anime
+styleAnchors:
+  - Koji Yamamura - Abstract Fluid Painterly Anime

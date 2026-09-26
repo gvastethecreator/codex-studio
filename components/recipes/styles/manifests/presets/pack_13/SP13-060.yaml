@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-060
 packId: pack_13
-name: Nineties School Cel Nostalgia
+name: Marmalade Boy Toei - Nineties School Cel Nostalgia
 styleAnchors:
-  - Nineties School Cel Nostalgia
+  - Marmalade Boy Toei - Nineties School Cel Nostalgia
   - 90s cel anime look
   - film grain
-displayName: Nineties School Cel Nostalgia
+displayName: Marmalade Boy Toei - Nineties School Cel Nostalgia
 category: 2. Slice Of Life, School And Music
 domain: 90s cel anime look
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - 90s
   - cel
   - anime
+  - reference-title
 visualDna:
-  aesthetic: '90s cel anime: hand-painted cel look with muted palette, slightly soft film grain and classic character proportions.'
-  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: classic 90s proportions, thin lines, hard two-tone cel shadows and slightly soft film transfer."
-  color_and_tone: Muted pastels with film warmth, used consistently across subject and background.
-  lighting_and_shadow: Soft film light, expressed through the style rather than photographic lighting.
-  texture_and_material: Film grain and cel paint, visible at a glance as the signature of the style.
-  camera_and_composition: Classic TV framing, arranged so the subject still reads at a glance.
-  atmosphere_and_mood: Nostalgic, warm, simple and sincere, driven by the construction, color and rhythm.
-  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  creative_brief: "90s cel anime: hand-painted cel look with muted palette, slightly soft film grain and classic character proportions. Carry it through film grain, muted cel, 90s proportions. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: film grain; muted cel; 90s proportions
+  aesthetic: 'Toei Marmalade Boy look (1994): nineties shojo romance cel, big glossy eyes, pastel skies, seaside towns and warm nostalgic color.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Akemi Yoshizumi-derived nineties designs, big glossy eyes, flowing hair and casual nineties clothes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Pastel sky, sunset peach, sea blue and warm nostalgic tones.
+  lighting_and_shadow: Warm nostalgic sunset light with soft cel shadows.
+  texture_and_material: Late analog hand-painted cel over painted backgrounds, with soft film grain and gentle cel edge softness.
+  camera_and_composition: Romantic seaside walks at sunset and nostalgic views over small towns.
+  atmosphere_and_mood: Keep the requested mood with warm nostalgic romance.
+  rendering_and_quality: Nostalgic mid-1990s shojo television frame with glossy romantic eyes.
+  creative_brief: "Toei Marmalade Boy look (1994): nineties shojo romance cel, big glossy eyes, pastel skies, seaside towns and warm nostalgic color. Carry it through Marmalade Boy nineties cel, glossy eyes, seaside towns, nostalgia. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Marmalade Boy nineties cel; glossy eyes; seaside towns; nostalgia
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -45,9 +46,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -62,6 +67,7 @@ taxonomy:
     - 90s
     - cel
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

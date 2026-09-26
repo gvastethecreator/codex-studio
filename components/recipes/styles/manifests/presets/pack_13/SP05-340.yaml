@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-340
 packId: pack_13
-name: Velvet Lash Refined Tension
+name: Akio Sugino - Velvet Lash Refined Tension
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,34 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Use fine tapered contours, delicate line-weight changes and restrained soft shadow to create
-    refined tension; do not apply lash or facial detail to non-facial forms.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: choose muted, rich color and
-    controlled contrast; honor requested colors without defaulting to monochrome.
-  lighting_and_shadow: >-
-    Keep light soft and local, with a crisp accent only at existing focal edges.
-  texture_and_material: >-
-    Use smooth fine ink and soft tonal transitions; avoid plush texture that obscures the underlying
-    material.
-  camera_and_composition: >-
-    Guide attention with elegant taper and quiet spacing while preserving the original crop and
-    layout.
-  atmosphere_and_mood: >-
-    Refinement is carried by control and line rhythm; follow the prompted mood and avoid forced
-    sensuality.
-  rendering_and_quality: >-
-    Transfer the contour method to any form without adding eyelashes, eyes, makeup, pose or persona.
-    Keep important silhouettes and joins legible; no watermark, unrequested text or interface.
-  key_features: >-
-    Tapered contour; delicate line weight; restrained shadow; muted richness; quiet refined tension.
-  creative_brief: 'Apply this visual treatment to the requested content: Tapered contour; delicate line weight; restrained shadow; muted richness; quiet refined tension. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Akio Sugino animation design look as in Rose of Versailles and Cat’s Eye: elegant long-lashed faces, refined eighties glamour and tense restrained drama.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Sugino elegance, long lashes, refined faces and elegant clothes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Velvet red, candle gold and deep shadow, true to the Akio Sugino palette.
+  lighting_and_shadow: Candlelight and soft glamour glow, lit the way Akio Sugino lights its scenes.
+  texture_and_material: Refined hand-drawn cel line, with the surface finish of Akio Sugino.
+  camera_and_composition: Elegant dramatic close-ups, framed the way Akio Sugino composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with refined tense elegance.
+  rendering_and_quality: Elegant eighties animation frame, in the recognizable hand of Akio Sugino.
+  key_features: Akio Sugino lashes; refined glamour; tension
+  creative_brief: "Akio Sugino animation design look as in Rose of Versailles and Cat’s Eye: elegant long-lashed faces, refined eighties glamour and tense restrained drama. Carry it through Akio Sugino lashes, refined glamour, tension. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look
@@ -53,16 +37,14 @@ avoidRules:
   - thick contours obscuring delicate taper
   - highlights flattening line-weight variation
   - tangled marks obscuring source form
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-340.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, thick contours obscuring delicate taper, highlights
-    flattening line-weight variation, tangled marks obscuring source form
+  negativePrompt: photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, thick contours obscuring delicate taper, highlights flattening line-weight variation, tangled marks obscuring source form, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -71,8 +53,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Akio Sugino - Velvet Lash Refined Tension
+styleAnchors:
+  - Akio Sugino - Velvet Lash Refined Tension

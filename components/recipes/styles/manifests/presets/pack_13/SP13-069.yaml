@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-069
 packId: pack_13
-name: Library Sunbeam Quiet Anime
+name: Yoshifumi Kondo - Library Sunbeam Quiet Anime
 styleAnchors:
-  - Library Sunbeam Quiet Anime
+  - Yoshifumi Kondo - Library Sunbeam Quiet Anime
   - quiet library light anime
   - sun shafts
-displayName: Library Sunbeam Quiet Anime
+displayName: Yoshifumi Kondo - Library Sunbeam Quiet Anime
 category: 2. Slice Of Life, School And Music
 domain: quiet library light anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - library
   - sunbeam
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Library sunbeam anime: hushed frames with shafts of sun, floating dust and quiet readers.'
-  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: quiet relaxed poses, turning pages, soft lines."
-  color_and_tone: Warm wood, cream and dusty gold, used consistently across subject and background.
-  lighting_and_shadow: Shafts of sun through high windows, expressed through the style rather than photographic lighting.
-  texture_and_material: Cel with painted light shafts and dust, visible at a glance as the signature of the style.
-  camera_and_composition: Tall frames with shelves and beams, arranged so the subject still reads at a glance.
-  atmosphere_and_mood: Quiet, peaceful, studious and warm, driven by the construction, color and rhythm.
-  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  creative_brief: "Library sunbeam anime: hushed frames with shafts of sun, floating dust and quiet readers. Carry it through sun shafts, dust motes, quiet readers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: sun shafts; dust motes; quiet readers
+  aesthetic: 'Yoshifumi Kondo Whisper of the Heart look (1995): Ghibli realism of everyday life, libraries and hillside towns, golden sunbeams and quiet creative longing.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kondo realism, natural faces, simple clothes and quiet studious gestures. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Warm library wood, sunbeam gold and hillside green.
+  lighting_and_shadow: Golden sunbeams through tall library windows lighting drifting dust.
+  texture_and_material: Classic hand-drawn cel with detailed painted hillside towns and interiors.
+  camera_and_composition: Quiet library interiors among shelves and sweeping hillside town views.
+  atmosphere_and_mood: Keep the requested mood with quiet creative longing.
+  rendering_and_quality: Warm classic hand-drawn Ghibli feature frame with everyday realism.
+  creative_brief: "Yoshifumi Kondo Whisper of the Heart look (1995): Ghibli realism of everyday life, libraries and hillside towns, golden sunbeams and quiet creative longing. Carry it through Whisper of the Heart realism, libraries, sunbeams, hillside towns. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Whisper of the Heart realism; libraries; sunbeams; hillside towns
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -45,9 +46,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -62,6 +67,7 @@ taxonomy:
     - library
     - sunbeam
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-112
 packId: pack_13
-name: Spray-Drip Wildstyle Anime
+name: Dead Leaves Imaishi - Spray-Drip Wildstyle Anime
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,37 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Combine sharp stencil edges, overspray halos, gravity-led drips and particulate grain; keep the
-    marks energetic without introducing letters or tags.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: use punchy cyan/magenta accents
-    where compatible, with prompt colors remaining readable.
-  lighting_and_shadow: >-
-    Use flat painted values with a soft overspray halo around selected edges; avoid simulated neon
-    light unless requested.
-  texture_and_material: >-
-    Layer stencil-cut shapes, atomized pigment, drips and rough grain; keep these as rendering
-    marks, not new objects.
-  camera_and_composition: >-
-    Let the spray marks follow existing silhouettes and directional emphasis; do not force a mural
-    wall or recompose the frame.
-  atmosphere_and_mood: >-
-    Wildstyle energy comes from edge and pigment contrast; preserve the prompt's tone, including
-    gentle subjects.
-  rendering_and_quality: >-
-    Apply the spray technique to any subject without adding graffiti letters, wall, logo, tag or
-    lettering. Keep important silhouettes and joins legible; no watermark, unrequested text or
-    interface.
-  key_features: >-
-    Stencil edge; overspray halo; paint drips; particulate grain; bold contour energy; cyan/magenta
-    accents.
-  creative_brief: 'Apply this visual treatment to the requested content: Stencil edge; overspray halo; paint drips; particulate grain; bold contour energy; cyan/magenta accents. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Hiroyuki Imaishi Dead Leaves look (2004): punk graffiti energy, spray drips, crude wild shapes and hyperactive color.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with crude punk designs and wild poses. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Hyperactive spray colors, true to the Dead Leaves Imaishi palette.
+  lighting_and_shadow: Flat punk light, lit the way Dead Leaves Imaishi lights its scenes.
+  texture_and_material: Spray drips and crude lines, with the surface finish of Dead Leaves Imaishi.
+  camera_and_composition: Chaotic graffiti compositions, framed the way Dead Leaves Imaishi composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with wild punk chaos.
+  rendering_and_quality: Crude punk graffiti animation frame, in the recognizable hand of Dead Leaves Imaishi.
+  key_features: Dead Leaves punk; spray drips; wildstyle
+  creative_brief: "Hiroyuki Imaishi Dead Leaves look (2004): punk graffiti energy, spray drips, crude wild shapes and hyperactive color. Carry it through Dead Leaves punk, spray drips, wildstyle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look
@@ -56,16 +37,14 @@ avoidRules:
   - uniform airbrush edges erasing stencil cuts
   - overspray obscuring source contours
   - gravity-inconsistent drips
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-112.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, uniform airbrush edges erasing stencil cuts, overspray
-    obscuring source contours, gravity-inconsistent drips
+  negativePrompt: photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, uniform airbrush edges erasing stencil cuts, overspray obscuring source contours, gravity-inconsistent drips, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -74,8 +53,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Dead Leaves Imaishi - Spray-Drip Wildstyle Anime
+styleAnchors:
+  - Dead Leaves Imaishi - Spray-Drip Wildstyle Anime

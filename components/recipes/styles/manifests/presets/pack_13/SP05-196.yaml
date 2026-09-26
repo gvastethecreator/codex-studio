@@ -3,7 +3,7 @@ id: SP05-196
 packId: pack_13
 name: Honey and Clover - Art-School Spring Ache
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,26 +13,16 @@ tags:
   - shojo-magical-girl-and-visionary-classics
   - reference-title
 visualDna:
-  aesthetic: >-
-    Anime illustration combines visible pencil underdrawing, diluted gouache, and clear ink
-    on warm paper.
-  subject_treatment: >-
-    Preserve subject and action; sketch existing contours and materials, add no tools.
-  color_and_tone: >-
-    Paper cream, faded indigo, moss green, amber; quiet mids and one dark anchor.
-  lighting_and_shadow: >-
-    Gentle warm-cool variation without implying spring, sunset, room, or window.
-  texture_and_material: >-
-    Pencil grain, transparent wash, selective dry edges; underlying form remains readable.
-  camera_and_composition: >-
-    Keep framing; slight line asymmetry without rearranging subjects or scene.
-  atmosphere_and_mood: >-
-    Analog softness is surface only; preserve the prompt's tone and intensity.
-  rendering_and_quality: >-
-    Visible drawing marks, controlled washes, no overgloss or fake paper damage.
-  key_features: >-
-    Pencil underdrawing, transparent gouache, warm paper, asymmetry within supplied framing
-  creative_brief: 'Apply a visual treatment centered on pencil underdrawing, transparent gouache, warm paper, asymmetry within supplied framing. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'Chica Umino Honey and Clover look: loose airy lines, art school life, spring breezes, bittersweet unrequited love and whimsical interludes.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Umino designs, loose lanky figures, messy hair and art-school clothes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Soft spring pastels and clover green, true to the Honey and Clover palette.
+  lighting_and_shadow: Airy spring light, lit the way Honey and Clover lights its scenes.
+  texture_and_material: Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.
+  camera_and_composition: Airy art-school compositions, framed the way Honey and Clover composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with bittersweet spring ache.
+  rendering_and_quality: Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.
+  key_features: Chica Umino airy line; art school; spring; unrequited love
+  creative_brief: "Chica Umino Honey and Clover look: loose airy lines, art school life, spring breezes, bittersweet unrequited love and whimsical interludes. Carry it through Chica Umino airy line, art school, spring, unrequited love. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -57,17 +47,12 @@ avoidRules:
   - fake UI
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-196.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -82,3 +67,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Honey and Clover - Art-School Spring Ache
+styleAnchors:
+  - Honey and Clover - Art-School Spring Ache

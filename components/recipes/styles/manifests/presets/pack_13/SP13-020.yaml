@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP13-020
 packId: pack_13
-name: Final Episode Closure
+name: Your Lie in April A-1 - Final Episode Closure
 category: 1. Core Anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,17 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Final episode anime: the soft, emotional look of a series finale, golden light, tears and wide quiet farewells.'
-  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: gentle expressive faces, glistening eyes, soft lines, lingering held poses."
-  color_and_tone: Warm gold and rose with soft blue, used consistently across subject and background.
-  lighting_and_shadow: Golden hour light and lens bloom, expressed through the style rather than photographic lighting.
-  texture_and_material: Soft painted light and particles, visible at a glance as the signature of the style.
-  camera_and_composition: Wide farewells and intimate close-ups, arranged so the subject still reads at a glance.
-  atmosphere_and_mood: Tender, bittersweet, grateful and final, driven by the construction, color and rhythm.
-  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  key_features: golden hour; tears; farewell framing
-  creative_brief: "Final episode anime: the soft, emotional look of a series finale, golden light, tears and wide quiet farewells. Carry it through golden hour, tears, farewell framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'A-1 Pictures Your Lie in April look (2014): sparkling pastel light, colorful emotional music scenes, flowers and petals, and bittersweet finales bursting with color.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with soft modern designs, expressive eyes and simple clothes, surrounded by bursts of color. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Pastel pinks, sky blue, golden light and bursting wildflower colors.
+  lighting_and_shadow: Sparkling bokeh, warm sunset glow and highlights on drifting petals.
+  texture_and_material: Contemporary digital television cel with clean outlines, crisp highlights and composited painted backgrounds.
+  camera_and_composition: Emotional wide shots and color-burst transitions between moments.
+  atmosphere_and_mood: Keep the requested mood with bittersweet colorful farewell.
+  rendering_and_quality: Sparkling A-1 Pictures frame with emotional color bursts.
+  key_features: Your Lie in April color; petals; sparkling light; bittersweet finale
+  creative_brief: "A-1 Pictures Your Lie in April look (2014): sparkling pastel light, colorful emotional music scenes, flowers and petals, and bittersweet finales bursting with color. Carry it through Your Lie in April color, petals, sparkling light, bittersweet finale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -47,10 +48,14 @@ avoidRules:
   - UI overlay
   - franchise likeness
   - real person likeness
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-020.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, comedy chibi, lowres, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, comedy chibi, lowres, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -59,8 +64,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Your Lie in April A-1 - Final Episode Closure
+styleAnchors:
+  - Your Lie in April A-1 - Final Episode Closure

@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-042
 packId: pack_13
-name: Theatrical Duel Symbolism
+name: Chiho Saito - Theatrical Duel Symbolism
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,27 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Graphic anime ink sets opposed forms against sharply divided planes and broad black
-    contours.
-  subject_treatment: >-
-    Preserve pose and form; sharpen existing angles without adding a duel, emblem, or prop.
-  color_and_tone: >-
-    Black, paper ivory, oxblood, small vermilion; value split leads over color.
-  lighting_and_shadow: >-
-    Directional hard light and decisive shadow blocks; accents only on depicted surfaces.
-  texture_and_material: >-
-    Opaque cel masses with sparse engraved hatch; ornament only when already requested.
-  camera_and_composition: >-
-    Respect framing; counterbalance existing shapes with diagonals, never a stage layout.
-  atmosphere_and_mood: >-
-    Visual opposition and pauses add tension while preserving the prompt's mood.
-  rendering_and_quality: >-
-    Forceful contours, flat shadows, few accents, no decorative clutter.
-  key_features: >-
-    Opposed value planes, emphatic ink, diagonal counterbalance, vermilion accents
-  creative_brief: 'Apply a visual treatment centered on opposed value planes, emphatic ink, diagonal counterbalance, vermilion accents. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'Chiho Saito manga look as in Revolutionary Girl Utena and Bride of Deimos: elegant elongated figures, roses, princely duelists and theatrical symbolism.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Saito designs, long elegant limbs, sharp lashes and princely uniforms. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Rose, black, white and gold, true to the Chiho Saito palette.
+  lighting_and_shadow: Theatrical spotlight and petal glows, lit the way Chiho Saito lights its scenes.
+  texture_and_material: Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.
+  camera_and_composition: Symmetrical duel compositions, framed the way Chiho Saito composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with theatrical symbolic duel.
+  rendering_and_quality: Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.
+  key_features: Chiho Saito elegance; roses; princely duels; symbolism
+  creative_brief: "Chiho Saito manga look as in Revolutionary Girl Utena and Bride of Deimos: elegant elongated figures, roses, princely duelists and theatrical symbolism. Carry it through Chiho Saito elegance, roses, princely duels, symbolism. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -54,15 +45,14 @@ avoidRules:
   - generic anime filter
   - prompt literal card reuse
   - fake UI
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-042.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -71,8 +61,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - shojo-magical-girl-and-visionary-classics
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Chiho Saito - Theatrical Duel Symbolism
+styleAnchors:
+  - Chiho Saito - Theatrical Duel Symbolism

@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-332
 packId: pack_13
-name: Ritual Allegory Icon System
+name: Kunihiko Ikuhara - Ritual Allegory Icon System
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,38 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Organize the prompt's existing forms into a clear emblematic silhouette and repeat only shapes
-    already present; use flat ink and gold to create allegorical hierarchy without inventing
-    symbols.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: keep a compact ink, paper and
-    gold palette, adapting it to explicit prompt colors.
-  lighting_and_shadow: >-
-    Use flat light/dark separation and restrained gold-like highlights; avoid cinematic lighting
-    that obscures the emblematic read.
-  texture_and_material: >-
-    Favor flat areas, clean silhouette edges and repeated prompt-derived geometry; keep material
-    cues legible.
-  camera_and_composition: >-
-    Give existing forms ordered visual hierarchy and balanced spacing without adding altar, frame or
-    icon.
-  atmosphere_and_mood: >-
-    Ritual tone is a compositional cadence, not a new belief system or story; preserve the user's
-    meaning.
-  rendering_and_quality: >-
-    Use only geometry found in the supplied subject; add no religious sign, sigil, prop, label or
-    ritual scene. Keep important silhouettes and joins legible; no watermark, unrequested text or
-    interface.
-  key_features: >-
-    Emblematic silhouette; repeated prompt-derived shape; flat ink/gold contrast; ordered spacing;
-    icon-like hierarchy.
-  creative_brief: 'Apply this visual treatment to the requested content: Emblematic silhouette; repeated prompt-derived shape; flat ink/gold contrast; ordered spacing; icon-like hierarchy. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Kunihiko Ikuhara direction look as in Mawaru Penguindrum and Yurikuma: flat pictogram icons, repeated symbolic stock shots, theatrical allegory and bold graphic signage.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with stylized elegant designs and pictogram-like symbolic figures. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Bold flat pink, red, black and white, true to the Kunihiko Ikuhara palette.
+  lighting_and_shadow: Theatrical flat lighting, lit the way Kunihiko Ikuhara lights its scenes.
+  texture_and_material: Flat graphic pictograms and clean cel, with the surface finish of Kunihiko Ikuhara.
+  camera_and_composition: Symmetrical symbolic compositions, framed the way Kunihiko Ikuhara composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with ritual allegorical theater.
+  rendering_and_quality: Graphic allegorical animation frame, in the recognizable hand of Kunihiko Ikuhara.
+  key_features: Ikuhara pictograms; allegory; symbolic repetition
+  creative_brief: "Kunihiko Ikuhara direction look as in Mawaru Penguindrum and Yurikuma: flat pictogram icons, repeated symbolic stock shots, theatrical allegory and bold graphic signage. Carry it through Ikuhara pictograms, allegory, symbolic repetition. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look
@@ -57,16 +37,14 @@ avoidRules:
   - prompt-unrelated repeated symbols
   - mark clutter obscuring emblematic hierarchy
   - unrequested invented iconography
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-332.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, prompt-unrelated repeated symbols, mark clutter
-    obscuring emblematic hierarchy, unrequested invented iconography
+  negativePrompt: photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, prompt-unrelated repeated symbols, mark clutter obscuring emblematic hierarchy, unrequested invented iconography, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -75,8 +53,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Kunihiko Ikuhara - Ritual Allegory Icon System
+styleAnchors:
+  - Kunihiko Ikuhara - Ritual Allegory Icon System

@@ -3,7 +3,7 @@ id: SP05-188
 packId: pack_13
 name: Boys Over Flowers - Elite Campus Melodrama
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,28 +13,16 @@ tags:
   - shojo-magical-girl-and-visionary-classics
   - reference-title
 visualDna:
-  aesthetic: >-
-    Polished anime drawing contrasts precise straight edges with rounded contours and quiet
-    cel shadow.
-  subject_treatment: >-
-    Retain subject, clothing, arrangement; show hierarchy through edge and value, not social
-    role.
-  color_and_tone: >-
-    Deep indigo, graphite, warm ivory, muted brass, small burgundy note.
-  lighting_and_shadow: >-
-    Cool directional shadows and restrained pale edge; no rain or invented source.
-  texture_and_material: >-
-    Clean matte planes; fine trim only on existing ornament.
-  camera_and_composition: >-
-    Respect camera and count; vertical alignment only if composition supports it.
-  atmosphere_and_mood: >-
-    Formal restraint shapes line only; class tension and melodrama are optional.
-  rendering_and_quality: >-
-    Polished edges, modest contrast, reserved shine, no uniform cues.
-  key_features: >-
-    Precise edge hierarchy, indigo-brass palette, contextual vertical rhythm, restrained cel
-    finish
-  creative_brief: 'Apply a visual treatment centered on precise edge hierarchy, indigo-brass palette, contextual vertical rhythm, restrained cel finish. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'Yoko Kamio Boys Over Flowers look: nineties elite academy melodrama, curly-haired arrogant heirs, fashionable rich kids and fiery underdog romance.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kamio designs, tall stylish figures, curly hair and luxury fashion. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Luxury gold, rose red and cream, true to the Boys Over Flowers palette.
+  lighting_and_shadow: Glamorous gala light, lit the way Boys Over Flowers lights its scenes.
+  texture_and_material: Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.
+  camera_and_composition: Dramatic melodrama compositions, framed the way Boys Over Flowers composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with fiery elite melodrama.
+  rendering_and_quality: Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.
+  key_features: Yoko Kamio melodrama; elite academy; curly heirs; underdog
+  creative_brief: "Yoko Kamio Boys Over Flowers look: nineties elite academy melodrama, curly-haired arrogant heirs, fashionable rich kids and fiery underdog romance. Carry it through Yoko Kamio melodrama, elite academy, curly heirs, underdog. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -59,17 +47,12 @@ avoidRules:
   - fake UI
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-188.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -84,3 +67,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Boys Over Flowers - Elite Campus Melodrama
+styleAnchors:
+  - Boys Over Flowers - Elite Campus Melodrama

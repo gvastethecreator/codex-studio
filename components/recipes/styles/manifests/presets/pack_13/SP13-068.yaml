@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-068
 packId: pack_13
-name: Club Room Clutter Comedy
+name: Genshiken Palm Studio - Club Room Clutter Comedy
 styleAnchors:
-  - Club Room Clutter Comedy
+  - Genshiken Palm Studio - Club Room Clutter Comedy
   - cluttered comedy anime
   - dense clutter
-displayName: Club Room Clutter Comedy
+displayName: Genshiken Palm Studio - Club Room Clutter Comedy
 category: 2. Slice Of Life, School And Music
 domain: cluttered comedy anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - comedy
   - clutter
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Club room clutter comedy: dense, busy frames packed with props, posters and chaotic group reactions.'
-  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: dense background detail, chibi reactions, comedic sweat drops and exaggerated poses."
-  color_and_tone: Busy colorful props with warm light, used consistently across subject and background.
-  lighting_and_shadow: Flat warm light, expressed through the style rather than photographic lighting.
-  texture_and_material: Cel with dense line detail, visible at a glance as the signature of the style.
-  camera_and_composition: Wide busy frames, arranged so the subject still reads at a glance.
-  atmosphere_and_mood: Chaotic, silly, cozy and lively, driven by the construction, color and rhythm.
-  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  creative_brief: "Club room clutter comedy: dense, busy frames packed with props, posters and chaotic group reactions. Carry it through dense clutter, chibi reactions, group chaos. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: dense clutter; chibi reactions; group chaos
+  aesthetic: 'Palm Studio Genshiken look (2004): cluttered otaku club rooms, realistic nerdy adults, stacks of manga and models, and warm observational comedy.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with grounded otaku designs, glasses, casual clothes and expressive comic reactions. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Cluttered warm browns, fluorescent white and poster color accents.
+  lighting_and_shadow: Fluorescent club-room light mixed with warm afternoon light from the window.
+  texture_and_material: Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.
+  camera_and_composition: Crowded club-room compositions stuffed with books, models, posters and snacks.
+  atmosphere_and_mood: Keep the requested mood with warm nerdy comedy.
+  rendering_and_quality: Observational mid-2000s comedy television frame with warm nerdy detail.
+  creative_brief: "Palm Studio Genshiken look (2004): cluttered otaku club rooms, realistic nerdy adults, stacks of manga and models, and warm observational comedy. Carry it through Genshiken clutter, otaku club room, grounded nerds, comedy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Genshiken clutter; otaku club room; grounded nerds; comedy
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -45,9 +46,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -62,6 +67,7 @@ taxonomy:
     - comedy
     - clutter
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

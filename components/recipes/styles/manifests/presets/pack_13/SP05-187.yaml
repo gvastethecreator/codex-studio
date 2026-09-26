@@ -3,7 +3,7 @@ id: SP05-187
 packId: pack_13
 name: Skip Beat! - Revenge Idol Stardom Spark
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,27 +13,16 @@ tags:
   - shojo-magical-girl-and-visionary-classics
   - reference-title
 visualDna:
-  aesthetic: >-
-    Performance-ready anime illustration sharpens contours and shadow cutouts, with precise
-    glints on flat color.
-  subject_treatment: >-
-    Preserve face, clothing, and action; increase edge contrast without masks or stage
-    elements.
-  color_and_tone: >-
-    Ink violet, warm ivory, muted gold, compact red accent, clear neutral mids.
-  lighting_and_shadow: >-
-    Narrow edge light only if prompt includes a source; simple shadows elsewhere.
-  texture_and_material: >-
-    Clean cel fills with few highlights; no stars or metallic texture by default.
-  camera_and_composition: >-
-    Keep view and count; radiating marks only if requested action contains radiance.
-  atmosphere_and_mood: >-
-    Drama, confidence, or humor follow prompt; imply no fame or performance.
-  rendering_and_quality: >-
-    Hard contour, selective accents, stable details, no visual spectacle.
-  key_features: >-
-    Sharp silhouette, ink-violet values, selective glints, radiance only when requested
-  creative_brief: 'Apply a visual treatment centered on sharp silhouette, ink-violet values, selective glints, radiance only when requested. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'Yoshiki Nakamura Skip Beat! look: showbusiness shojo, dramatic acting transformations, dark grudge spirits comedy and glamorous idols.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Nakamura designs, expressive faces, stylish clothes and dramatic acting poses. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Glamour gold, dark grudge purple and pastel, true to the Skip Beat! palette.
+  lighting_and_shadow: Spotlights and ominous comic auras, lit the way Skip Beat! lights its scenes.
+  texture_and_material: Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.
+  camera_and_composition: Dramatic acting compositions and comedy panels, framed the way Skip Beat! composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with fierce showbiz spark.
+  rendering_and_quality: Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.
+  key_features: Skip Beat showbiz; acting transformations; grudge comedy
+  creative_brief: "Yoshiki Nakamura Skip Beat! look: showbusiness shojo, dramatic acting transformations, dark grudge spirits comedy and glamorous idols. Carry it through Skip Beat showbiz, acting transformations, grudge comedy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -58,17 +47,12 @@ avoidRules:
   - fake UI
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-187.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -83,3 +67,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Skip Beat! - Revenge Idol Stardom Spark
+styleAnchors:
+  - Skip Beat! - Revenge Idol Stardom Spark

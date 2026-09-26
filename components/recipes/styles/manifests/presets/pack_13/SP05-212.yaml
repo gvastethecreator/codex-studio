@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-212
 packId: pack_13
-name: Immaculate Social-Jitter Comedy
+name: Komi Can’t Communicate OLM - Immaculate Social-Jitter Comedy
 category: 4. Slice Of Life & Moe
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,18 +11,21 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
+  - reference-title
 visualDna:
-  aesthetic: 'Evenly weighted fine outlines and immaculate flat planes are interrupted by one tiny alignment shift in an existing edge or repeated mark.'
-  subject_treatment: 'Retain every prompted form, pose, expression, and count; jitter stays at a contour or color edge, never in anatomy or action.'
-  color_and_tone: 'Keep relationships orderly and mostly restrained, with one limited accent where the prompt allows it.'
-  lighting_and_shadow: 'Use even fill and compact crisp shadows; preserve supplied lighting without inventing another source.'
-  texture_and_material: 'Favor clean polished fills; add fine grain only when an existing material calls for it.'
-  camera_and_composition: 'Preserve crop, viewpoint, scale, spacing, and count; create tension through tiny internal misalignment, not a new layout.'
-  atmosphere_and_mood: 'Keep the requested mood; a small visual stutter does not set the emotional reading.'
-  rendering_and_quality: 'Maintain sharp boundaries, smooth fields, and one deliberate irregularity; avoid unprompted surface marks.'
-  key_features: 'Even contour weight; immaculate color planes; crisp compact shadows; localized alignment shift; limited accent color.'
-  creative_brief: 'Set precise, clean drawing against a single restrained edge irregularity. Keep subject, action, count, camera, and mood; add no new motif. Use it as a reusable look on any subject.'
+  aesthetic: 'OLM Komi Can’t Communicate look (2021): immaculate elegant designs, chalkboard gag cards, soft pastel comedy and social anxiety humor.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with elegant designs, long straight hair, calm faces and nervous body language. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Soft pastels and chalkboard green, true to the Komi Can’t Communicate OLM palette.
+  lighting_and_shadow: Soft school light, lit the way Komi Can’t Communicate OLM lights its scenes.
+  texture_and_material: Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.
+  camera_and_composition: Comedy cut-ins and elegant still compositions, framed the way Komi Can’t Communicate OLM composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with jittery social comedy.
+  rendering_and_quality: Polished pastel comedy frame, in the recognizable hand of Komi Can’t Communicate OLM.
+  key_features: Komi elegance; social jitters; chalkboard gags
+  creative_brief: "OLM Komi Can’t Communicate look (2021): immaculate elegant designs, chalkboard gag cards, soft pastel comedy and social anxiety humor. Carry it through Komi elegance, social jitters, chalkboard gags. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a long black-haired girl with a notebook
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -44,15 +47,19 @@ avoidRules:
   - generic anime filter
   - prompt literal card reuse
   - fake UI
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-212.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock,
-    canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic
-    anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied
-    franchise costume, logo
+  negativePrompt: a long black-haired girl with a notebook, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -61,8 +68,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - slice-of-life-and-moe
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Komi Can’t Communicate OLM - Immaculate Social-Jitter Comedy
+styleAnchors:
+  - Komi Can’t Communicate OLM - Immaculate Social-Jitter Comedy

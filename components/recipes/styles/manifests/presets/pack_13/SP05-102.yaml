@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-102
 packId: pack_13
-name: Gritty Realist Seinen
+name: Minoru Furuya - Gritty Realist Seinen
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,37 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Ground proportions and weight in fine wear, selective hatching and practical surface detail; do
-    not add age, fatigue, injury or labor history.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: keep colors subdued but preserve
-    the prompt's palette and the natural color of important materials.
-  lighting_and_shadow: >-
-    Use practical hard light and grounded cast shadows, following the requested direction and
-    exposure.
-  texture_and_material: >-
-    Add fine scuffs and hatching only where form or source material supports them; avoid generic
-    grime.
-  camera_and_composition: >-
-    Use unsentimental framing and stable perspective while preserving the supplied crop and focal
-    point.
-  atmosphere_and_mood: >-
-    Realist restraint is a rendering choice, not a mandate for bleakness; keep the prompt's
-    emotional register.
-  rendering_and_quality: >-
-    Apply physical clarity to any form without aging, distressing, masculinizing or injuring the
-    subject. Keep important silhouettes and joins legible; no watermark, unrequested text or
-    interface.
-  key_features: >-
-    Grounded proportions; selective wear; fine hatching; practical hard light; material realism;
-    composed restraint.
-  creative_brief: 'Apply this visual treatment to the requested content: Grounded proportions; selective wear; fine hatching; practical hard light; material realism; composed restraint. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Minoru Furuya manga look as in Himizu: gritty realism, awkward ordinary faces, grimy settings and bleak dark humor.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Furuya realism, awkward faces and worn clothes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Black ink with grimy tone, true to the Minoru Furuya palette.
+  lighting_and_shadow: Dim gritty light, lit the way Minoru Furuya lights its scenes.
+  texture_and_material: Gritty realistic line and tone, with the surface finish of Minoru Furuya.
+  camera_and_composition: Bleak realistic compositions, framed the way Minoru Furuya composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with gritty bleak realism.
+  rendering_and_quality: Gritty realist seinen illustration, in the recognizable hand of Minoru Furuya.
+  key_features: Minoru Furuya grit; awkward faces; bleak humor
+  creative_brief: "Minoru Furuya manga look as in Himizu: gritty realism, awkward ordinary faces, grimy settings and bleak dark humor. Carry it through Minoru Furuya grit, awkward faces, bleak humor. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look
@@ -56,16 +37,14 @@ avoidRules:
   - generic grime obscuring material-specific wear
   - over-smoothed contours removing grounded structure
   - hatching merging important planes
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-102.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, generic grime obscuring material-specific wear,
-    over-smoothed contours removing grounded structure, hatching merging important planes
+  negativePrompt: photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, generic grime obscuring material-specific wear, over-smoothed contours removing grounded structure, hatching merging important planes, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -74,8 +53,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Minoru Furuya - Gritty Realist Seinen
+styleAnchors:
+  - Minoru Furuya - Gritty Realist Seinen

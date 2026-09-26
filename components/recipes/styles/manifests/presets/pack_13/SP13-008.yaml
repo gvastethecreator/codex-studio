@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP13-008
 packId: pack_13
-name: Gothic Vampire Manor
+name: Matsuri Hino - Gothic Vampire Manor
 category: 1. Core Anime
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,17 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Gothic vampire anime: elegant dark frames with long thin lines, pale faces, crimson accents and moonlit shadows.'
-  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: long elegant lines, sharp eyes and chins, flowing capes and lace, large solid black shadow shapes."
-  color_and_tone: Black, crimson, bone white and moon blue, used consistently across subject and background.
-  lighting_and_shadow: Moonlight and candlelight with deep shadows, expressed through the style rather than photographic lighting.
-  texture_and_material: Cel with fine lace and velvet detail, visible at a glance as the signature of the style.
-  camera_and_composition: Tall vertical frames and dramatic angles, arranged so the subject still reads at a glance.
-  atmosphere_and_mood: Elegant, dangerous, romantic and cold, driven by the construction, color and rhythm.
-  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  key_features: long lines; pale faces; crimson accents; moonlight
-  creative_brief: "Gothic vampire anime: elegant dark frames with long thin lines, pale faces, crimson accents and moonlit shadows. Carry it through long lines, pale faces, crimson accents, moonlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Matsuri Hino Vampire Knight look: gothic shojo romance, pale elegant vampires with long lashes, crimson eyes, roses, lace and moonlit academy architecture.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hino designs, pale elegant faces, long lashes, crimson eyes and gothic formal clothing trimmed with lace. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Moonlit black, blood crimson, rose red and pale ivory with silver highlights.
+  lighting_and_shadow: Cold moonlight, flickering candle glow and small crimson gleams in the eyes.
+  texture_and_material: Delicate shojo line, intricate lace detail and rose ornament around figures.
+  camera_and_composition: Romantic gothic compositions on moonlit balconies and grand staircases.
+  atmosphere_and_mood: Keep the requested mood with dark gothic romance.
+  rendering_and_quality: Elegant gothic shojo illustration with moonlit drama and delicate ornament.
+  key_features: Matsuri Hino gothic shojo; pale vampires; roses and lace; crimson eyes
+  creative_brief: "Matsuri Hino Vampire Knight look: gothic shojo romance, pale elegant vampires with long lashes, crimson eyes, roses, lace and moonlit academy architecture. Carry it through Matsuri Hino gothic shojo, pale vampires, roses and lace, crimson eyes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -47,10 +48,14 @@ avoidRules:
   - UI overlay
   - franchise likeness
   - real person likeness
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-008.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, cute chibi, daylight, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, cute chibi, daylight, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -59,8 +64,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Matsuri Hino - Gothic Vampire Manor
+styleAnchors:
+  - Matsuri Hino - Gothic Vampire Manor

@@ -3,7 +3,7 @@ id: SP05-190
 packId: pack_13
 name: Ao Haru Ride - Clean Uniform Reunion Ache
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,28 +13,16 @@ tags:
   - shojo-magical-girl-and-visionary-classics
   - reference-title
 visualDna:
-  aesthetic: >-
-    Contemporary anime line is smooth and precise, with modest weight shifts and broad quiet
-    values.
-  subject_treatment: >-
-    Preserve identity, clothing, expression, pose; restrained detail without imposing a
-    uniform.
-  color_and_tone: >-
-    Powder blue, charcoal, cream, compact ochre, neutral mids.
-  lighting_and_shadow: >-
-    Broad neutral illumination and soft shadows; no sunrise or artificial source.
-  texture_and_material: >-
-    Matte surfaces, clean cel fills, slight paper softness; no lens blur or gloss.
-  camera_and_composition: >-
-    Respect crop; open spacing only within requested arrangement, no forced close-up or
-    pair.
-  atmosphere_and_mood: >-
-    Stay calm or intense as prompted; no reunion or romantic tension.
-  rendering_and_quality: >-
-    Two-to-three-band values, crisp contours, stable small details.
-  key_features: >-
-    Smooth precise contour, powder-blue neutrals, matte cel planes, context-led open spacing
-  creative_brief: 'Apply a visual treatment centered on smooth precise contour, powder-blue neutrals, matte cel planes, context-led open spacing. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'Io Sakisaka Ao Haru Ride manga look: clean crisp lines, powder-blue melancholy, handsome understated faces and bittersweet reunions.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Sakisaka designs, clean faces, neat hair and simple uniforms or casual clothes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Powder blue, soft grey and gentle white, true to the Ao Haru Ride palette.
+  lighting_and_shadow: Soft dusk light with gentle glow, lit the way Ao Haru Ride lights its scenes.
+  texture_and_material: Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.
+  camera_and_composition: Quiet reunion compositions and close-ups, framed the way Ao Haru Ride composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with bittersweet reunion ache.
+  rendering_and_quality: Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.
+  key_features: Io Sakisaka clean line; powder blue; bittersweet reunions
+  creative_brief: "Io Sakisaka Ao Haru Ride manga look: clean crisp lines, powder-blue melancholy, handsome understated faces and bittersweet reunions. Carry it through Io Sakisaka clean line, powder blue, bittersweet reunions. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -59,17 +47,12 @@ avoidRules:
   - fake UI
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-190.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -84,3 +67,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Ao Haru Ride - Clean Uniform Reunion Ache
+styleAnchors:
+  - Ao Haru Ride - Clean Uniform Reunion Ache

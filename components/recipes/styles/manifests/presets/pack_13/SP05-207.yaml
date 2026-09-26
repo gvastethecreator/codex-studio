@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-207
 packId: pack_13
-name: Deadline-Cheer Workflow Density
+name: Shirobako P.A. Works - Deadline-Cheer Workflow Density
 category: 4. Slice Of Life & Moe
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,17 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
+  - reference-title
 visualDna:
-  aesthetic: 'Ordered clusters of thin marks alternate with open flat color areas, giving the drawing a dense but controlled working rhythm.'
-  subject_treatment: 'Retain the exact prompted forms and action; concentrate detail on surfaces already present and add no clutter or participants.'
-  color_and_tone: 'Use a disciplined base with a small number of brighter accents; keep explicit colors and maintain clear separation.'
-  lighting_and_shadow: 'Keep one coherent light direction and simple contact shadows; avoid urgency lighting or a time-of-day cue.'
-  texture_and_material: 'Vary density through short repeated strokes and clean patches; marks follow described surfaces and never introduce new content.'
-  camera_and_composition: 'Preserve view, crop, scale, spacing, and count; create dense-to-open rhythm within the layout without panels or camera movement.'
-  atmosphere_and_mood: "Keep the prompt's mood; organized detail density does not prescribe an emotional state."
-  rendering_and_quality: 'Separate detailed and quiet areas decisively; keep contours legible and avoid scribbles that resemble text.'
-  key_features: 'Alternating dense and open mark fields; ordered thin strokes; restrained bright accents; coherent shadows; crisp boundaries.'
-  creative_brief: 'Vary detail density across existing forms to create a deliberate working rhythm. Preserve content and camera; add no new content or frame marks. Use it as a reusable look on any subject.'
+  aesthetic: 'P.A. Works Shirobako look (2014): busy anime studio workplaces, cluttered desks, production meetings, dense ensemble casts and cheerful deadline stress.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with P.A. Works designs, office casual clothes, lanyards and determined tired expressions. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Office fluorescent white, desk clutter colors and warm late-night lamps.
+  lighting_and_shadow: Fluorescent office light and late-night desk lamps, lit the way Shirobako P.A. Works lights its scenes.
+  texture_and_material: Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.
+  camera_and_composition: Dense office ensemble compositions and meeting-room shots, framed the way Shirobako P.A. Works composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with cheerful deadline hustle.
+  rendering_and_quality: Detailed P.A. Works workplace frame, in the recognizable hand of Shirobako P.A. Works.
+  key_features: Shirobako studio; cluttered desks; ensemble; deadlines
+  creative_brief: "P.A. Works Shirobako look (2014): busy anime studio workplaces, cluttered desks, production meetings, dense ensemble casts and cheerful deadline stress. Carry it through Shirobako studio, cluttered desks, ensemble, deadlines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -44,15 +45,14 @@ avoidRules:
   - generic anime filter
   - prompt literal card reuse
   - fake UI
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-207.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock,
-    canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic
-    anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied
-    franchise costume, logo
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -61,8 +61,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - slice-of-life-and-moe
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Shirobako P.A. Works - Deadline-Cheer Workflow Density
+styleAnchors:
+  - Shirobako P.A. Works - Deadline-Cheer Workflow Density

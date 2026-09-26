@@ -3,7 +3,7 @@ id: SP05-326
 packId: pack_13
 name: Masaaki Yuasa - Rubber Reality Sprint
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,35 +13,16 @@ tags:
   - anime-style-spectrum
   - reference-title
 visualDna:
-  aesthetic: >-
-    A drawing technique, not a copy of any work: loose, fluctuating contour, elastic drawing
-    rhythm, bent planes and brushy spatial push/pull; preserve the subject's recognizable structure.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: use bold, simple color planes
-    and flexible value shifts; retain the prompt palette.
-  lighting_and_shadow: >-
-    Let shadow shapes bend with the existing pose and lighting; avoid adding a sprint or kinetic
-    blur by default.
-  texture_and_material: >-
-    Alternate clean and rough brush edges with elastic contour changes; do not morph material
-    identity.
-  camera_and_composition: >-
-    Push and pull the existing forms within the given camera and layout; preserve count, pose intent
-    and perspective.
-  atmosphere_and_mood: >-
-    Lively distortion belongs to the rendering, not a new action or character; follow the requested
-    energy level.
-  rendering_and_quality: >-
-    Apply controlled drawing elasticity to any subject; add no limbs, expressions, sprint, gag or
-    copied scene. Keep important silhouettes and joins legible; no watermark, unrequested text or
-    interface.
-  key_features: >-
-    Elastic contour; bent plane rhythm; loose brush marks; graphic push/pull.
-  creative_brief: 'Apply this visual treatment to the requested content: Elastic contour; bent plane rhythm; loose brush marks; graphic push/pull. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Masaaki Yuasa animation look: rubbery elastic bodies, reality bending with emotion, flat bold colors and exhilarating long sprints.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yuasa elasticity, stretchy limbs and simplified faces. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Flat bold colors and sudden psychedelic shifts, true to the Masaaki Yuasa palette.
+  lighting_and_shadow: Flat graphic light, lit the way Masaaki Yuasa lights its scenes.
+  texture_and_material: Loose lines and flat color, with the surface finish of Masaaki Yuasa.
+  camera_and_composition: Warping sprint compositions, framed the way Masaaki Yuasa composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with exhilarating rubbery freedom.
+  rendering_and_quality: Elastic expressive animation frame, in the recognizable hand of Masaaki Yuasa.
+  key_features: Masaaki Yuasa elasticity; warping reality; sprints
+  creative_brief: "Masaaki Yuasa animation look: rubbery elastic bodies, reality bending with emotion, flat bold colors and exhilarating long sprints. Carry it through Masaaki Yuasa elasticity, warping reality, sprints. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look
@@ -58,18 +39,12 @@ avoidRules:
   - brush noise obscuring silhouette
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-326.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, elastic distortion changing identity or construction,
-    bent planes breaking requested perspective, brush noise obscuring silhouette, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, elastic distortion changing identity or construction, bent planes breaking requested perspective, brush noise obscuring silhouette, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -84,3 +59,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Masaaki Yuasa - Rubber Reality Sprint
+styleAnchors:
+  - Masaaki Yuasa - Rubber Reality Sprint

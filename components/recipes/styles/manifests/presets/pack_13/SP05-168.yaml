@@ -3,7 +3,7 @@ id: SP05-168
 packId: pack_13
 name: Neon Genesis Evangelion - Red Alert Psychological Collapse
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,28 +13,19 @@ tags:
   - shojo-magical-girl-and-visionary-classics
   - reference-title
 visualDna:
-  aesthetic: >-
-    High-contrast anime cel illustration cuts silhouettes sharply and uses sparse technical
-    accents and controlled red marks.
-  subject_treatment: >-
-    Keep subject and proportions; use angular articulation without adding blasts, crosses,
-    interfaces, or props.
-  color_and_tone: >-
-    Charcoal, blue gray, bone; signal red is a small focal accent.
-  lighting_and_shadow: >-
-    Hard directional key, broken shadow blocks, sparse highlights, no screen glow.
-  texture_and_material: >-
-    Clean flat cels with fine hatch in selected dark planes; no grid overlay.
-  camera_and_composition: >-
-    Respect camera; pressure comes from compressed spacing, not panels.
-  atmosphere_and_mood: >-
-    Constrained visual pressure only when it suits the requested tone.
-  rendering_and_quality: >-
-    Crisp separation, readable mids, sparse red, precise lines, no fake UI text.
-  key_features: >-
-    Hard-cut silhouette, compressed negative space, sparse signal red, precise cel shadows
-  creative_brief: 'Apply a visual treatment centered on hard-cut silhouette, compressed negative space, sparse signal red, precise cel shadows. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'Gainax Neon Genesis Evangelion TV look (1995): Yoshiyuki Sadamoto designs, long static shots, red emergency lighting, power lines and psychological collapse into stark abstract frames.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Sadamoto designs, slim bodies, big anxious eyes and plain clothes or plugsuit-like suits. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Emergency red, sunset orange, purple and cold grey.
+  lighting_and_shadow: Red emergency light and harsh sunset silhouettes, lit the way Neon Genesis Evangelion lights its scenes.
+  texture_and_material: Late analog hand-painted cel over painted backgrounds, with soft film grain and gentle cel edge softness.
+  camera_and_composition: Long static shots, power lines and stark silhouettes.
+  atmosphere_and_mood: Keep the requested mood with anxious psychological collapse.
+  rendering_and_quality: Iconic mid-1990s Gainax frame with psychological stillness, in the recognizable hand of Neon Genesis Evangelion.
+  key_features: Evangelion red alerts; Sadamoto designs; long static shots; power lines
+  creative_brief: "Gainax Neon Genesis Evangelion TV look (1995): Yoshiyuki Sadamoto designs, long static shots, red emergency lighting, power lines and psychological collapse into stark abstract frames. Carry it through Evangelion red alerts, Sadamoto designs, long static shots, power lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a purple and green horned biomech
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -56,19 +47,19 @@ avoidRules:
   - generic anime filter
   - prompt literal card reuse
   - fake UI
-  - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-168.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: a purple and green horned biomech, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, noisy compression artifacts
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -83,3 +74,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Neon Genesis Evangelion - Red Alert Psychological Collapse
+styleAnchors:
+  - Neon Genesis Evangelion - Red Alert Psychological Collapse

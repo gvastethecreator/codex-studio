@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-043
 packId: pack_13
-name: Soft Healing Ensemble
+name: Flying Witch J.C.Staff - Soft Healing Ensemble
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,28 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Soft anime illustration favors round contour turns, low-contrast cel planes, and matte
-    edges.
-  subject_treatment: >-
-    Retain subject and count; soften selected contours while keeping structure and
-    expression clear.
-  color_and_tone: >-
-    Sage, cream, cloudy blue, muted ochre; low saturation and one warm focal note.
-  lighting_and_shadow: >-
-    Broad diffuse illumination and shallow shadows; imply no room or time of day.
-  texture_and_material: >-
-    Smooth matte fills with barely visible paper grain; no sparkle or wet shine.
-  camera_and_composition: >-
-    Keep framing; open space and gentle overlap organize only subjects already present.
-  atmosphere_and_mood: >-
-    Reassurance comes from breathing room when compatible with the requested emotion.
-  rendering_and_quality: >-
-    Few readable value tiers, soft stable edges, sparse detail, no obscuring haze.
-  key_features: >-
-    Rounded contours, low-contrast cel values, sage-ochre palette, generous breathing room
-  creative_brief: 'Apply a visual treatment centered on rounded contours, low-contrast cel values, sage-ochre palette, generous breathing room. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'J.C.Staff Flying Witch look (2016): gentle rural witch life, soft pastel countryside, herb gardens and relaxed healing slice of life.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with soft gentle designs, relaxed faces and casual country clothes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Soft green, sky blue and warm cream, true to the Flying Witch J.C.Staff palette.
+  lighting_and_shadow: Gentle spring sunlight, lit the way Flying Witch J.C.Staff lights its scenes.
+  texture_and_material: Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.
+  camera_and_composition: Relaxed garden and countryside compositions, framed the way Flying Witch J.C.Staff composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with gentle healing calm.
+  rendering_and_quality: Soft relaxed slice-of-life television frame, in the recognizable hand of Flying Witch J.C.Staff.
+  key_features: Flying Witch gentleness; herb gardens; rural calm
+  creative_brief: "J.C.Staff Flying Witch look (2016): gentle rural witch life, soft pastel countryside, herb gardens and relaxed healing slice of life. Carry it through Flying Witch gentleness, herb gardens, rural calm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -55,15 +45,14 @@ avoidRules:
   - generic anime filter
   - prompt literal card reuse
   - fake UI
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-043.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -72,8 +61,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - shojo-magical-girl-and-visionary-classics
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Flying Witch J.C.Staff - Soft Healing Ensemble
+styleAnchors:
+  - Flying Witch J.C.Staff - Soft Healing Ensemble

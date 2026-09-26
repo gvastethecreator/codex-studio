@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-055
 packId: pack_13
-name: Midnight Mountain Racing Anime
+name: Shuichi Shigeno - Midnight Mountain Racing Anime
 styleAnchors:
-  - Midnight Mountain Racing Anime
+  - Shuichi Shigeno - Midnight Mountain Racing Anime
   - street racing anime
   - drift smoke
-displayName: Midnight Mountain Racing Anime
+displayName: Shuichi Shigeno - Midnight Mountain Racing Anime
 category: 1. Core Anime
 domain: street racing anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,18 +20,21 @@ tags:
   - racing
   - night
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Midnight mountain racing anime: late-night downhill racing with drifting cars, headlights and speed lines.'
-  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: precise car line work, drift smoke, speed lines, driver close-ups with focused eyes."
-  color_and_tone: Night blue with headlight white and taillight red, used consistently across subject and background.
-  lighting_and_shadow: Headlights and streetlamps, expressed through the style rather than photographic lighting.
-  texture_and_material: Cel with speed-line overlays, visible at a glance as the signature of the style.
-  camera_and_composition: Low angles on mountain roads, arranged so the subject still reads at a glance.
-  atmosphere_and_mood: Fast, tense, cool and electric, driven by the construction, color and rhythm.
-  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  creative_brief: "Midnight mountain racing anime: late-night downhill racing with drifting cars, headlights and speed lines. Carry it through drift smoke, headlights, speed lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: drift smoke; headlights; speed lines
+  aesthetic: 'Shuichi Shigeno manga look as in Initial D: detailed photo-real car drawings contrasted with simple character faces, mountain passes at night and speed-line drifting.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Shigeno simplicity, narrow eyes, plain faces and casual clothes, with cars drawn in precise detail. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Black ink with grey tone and bright headlight whites cutting the dark.
+  lighting_and_shadow: Headlight beams in fog and dark mountain nights.
+  texture_and_material: Precise mechanical car linework and dense speed lines.
+  camera_and_composition: Drift compositions sweeping through mountain hairpins with dense speed lines.
+  atmosphere_and_mood: Keep the requested mood with tense midnight speed.
+  rendering_and_quality: Detailed racing manga illustration with photo-precise cars and simple faces.
+  creative_brief: "Shuichi Shigeno manga look as in Initial D: detailed photo-real car drawings contrasted with simple character faces, mountain passes at night and speed-line drifting. Carry it through Shigeno car detail, simple faces, mountain hairpins, speed lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Shigeno car detail; simple faces; mountain hairpins; speed lines
 avoidRules:
+  - a white and black hatchback with a tofu shop door logo
+  - existing franchise characters
   - existing anime character likeness
   - studio or franchise logo
   - readable text
@@ -46,9 +49,12 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real car brand, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a white and black hatchback with a tofu shop door logo, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real car brand, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -63,6 +69,7 @@ taxonomy:
     - racing
     - night
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

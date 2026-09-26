@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-203
 packId: pack_13
-name: Horizon-Forward Youth Momentum
+name: A Place Further Than the Universe Madhouse - Horizon-Forward Youth Momentum
 category: 4. Slice Of Life & Moe
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,17 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
+  - reference-title
 visualDna:
-  aesthetic: 'Tapered contours and broad clean gradients give existing forms forward visual direction, with bright edge accents following supplied pose or motion.'
-  subject_treatment: 'Preserve identity, body proportions, action, and count; direct line accents along movement already shown without changing the gesture.'
-  color_and_tone: 'Use clear high values and a limited bright accent against cooler or neutral mids; follow the requested hues.'
-  lighting_and_shadow: 'Keep the stated light direction and place crisp highlights on existing edges; use smooth gradients without adding sunbeams.'
-  texture_and_material: 'Keep surfaces clean with a few long brushlike strokes aligned to existing contours; add no atmospheric scenery.'
-  camera_and_composition: 'Preserve framing, perspective, scale, and count; create momentum inside the original composition without changing crop or viewpoint.'
-  atmosphere_and_mood: 'Retain the requested mood; directional energy does not set the emotional tone.'
-  rendering_and_quality: 'Keep gradients broad and controlled, contour ends sharp, and focal forms distinct from surrounding planes.'
-  key_features: 'Tapered directional contours; broad clean gradients; crisp edge accents; bright value openings; motion aligned to existing forms.'
-  creative_brief: 'Let directional linework and clear gradients follow movement already in the prompt. Preserve subject, action, count, camera, and mood; add no new motion or narrative beat. Use it as a reusable look on any subject.'
+  aesthetic: 'Madhouse A Place Further Than the Universe look (2018): vivid journey to Antarctica, icebergs and auroras, bright expressive faces and horizon-forward momentum.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with bright expressive designs, expedition parkas and determined faces. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Iceberg blue, aurora green, snow white and expedition orange.
+  lighting_and_shadow: Bright polar sunlight and aurora glow, lit the way A Place Further Than the Universe Madhouse lights its scenes.
+  texture_and_material: Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.
+  camera_and_composition: Vast polar horizons and ship-deck compositions, framed the way A Place Further Than the Universe Madhouse composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with bright horizon-forward momentum.
+  rendering_and_quality: Vivid Madhouse journey frame, in the recognizable hand of A Place Further Than the Universe Madhouse.
+  key_features: Antarctic journey; icebergs; auroras; momentum
+  creative_brief: "Madhouse A Place Further Than the Universe look (2018): vivid journey to Antarctica, icebergs and auroras, bright expressive faces and horizon-forward momentum. Carry it through Antarctic journey, icebergs, auroras, momentum. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -44,15 +45,14 @@ avoidRules:
   - generic anime filter
   - prompt literal card reuse
   - fake UI
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-203.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock,
-    canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic
-    anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied
-    franchise costume, logo
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -61,8 +61,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - slice-of-life-and-moe
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: A Place Further Than the Universe Madhouse - Horizon-Forward Youth Momentum
+styleAnchors:
+  - A Place Further Than the Universe Madhouse - Horizon-Forward Youth Momentum

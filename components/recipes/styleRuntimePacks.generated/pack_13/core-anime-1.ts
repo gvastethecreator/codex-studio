@@ -5,442 +5,447 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP13-001',
-    name: 'Cel Heroic Dawn',
+    name: 'Moribito Production I.G - Cel Heroic Dawn',
+    displayName: 'Moribito Production I.G - Cel Heroic Dawn',
+    styleAnchors: ['Moribito Production I.G - Cel Heroic Dawn'],
     category: '1. Core Anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, western comic, 3d render, watermark, text, logo, low quality, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
+      'a spear-wielding bodyguard woman in a blue traveling cloak, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, western comic, 3d render, watermark, text, logo, low quality, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Heroic dawn cel anime: bold adventure-series key art with strong silhouettes, two-step cel shading and warm sunrise light.',
+        'Production I.G Moribito: Guardian of the Spirit look (2007) by Kenji Kamiyama: grounded realistic fantasy, weathered spear-wielding heroes, lush painted Asian-inspired landscapes and precise martial choreography.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: confident thick outer contours, thinner inner lines, two-step cel shadows, heroic low-angle poses with windblown hair and cloth.",
-      color_and_tone: 'Warm gold, peach and orange against cool blue shadow.',
-      lighting_and_shadow: 'Low sunrise backlight with a bright rim on hair and armor.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with realistic grounded designs, weathered adult faces, practical traveling clothes and accurate martial stances. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        'Earthy greens, dawn gold, weathered brown and soft sky blue across wide painted landscapes.',
+      lighting_and_shadow:
+        'Natural dawn light spilling over ridges, soft realistic shadows and warm rim light on figures.',
       texture_and_material:
-        'Flat cel fills with softly painted sky gradients, visible at a glance as the signature of the style.',
+        'Contemporary digital television cel with clean outlines, crisp highlights and composited painted backgrounds.',
       camera_and_composition:
-        'Low heroic angle with the sky behind, arranged so the subject still reads at a glance.',
-      atmosphere_and_mood:
-        'Brave, hopeful, determined and bright, driven by the construction, color and rhythm.',
+        'Wide cinematic landscape shots with small heroic figures, then grounded martial close-ups.',
+      atmosphere_and_mood: 'Keep the requested mood with quiet grounded heroism.',
       rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
-      key_features: 'thick contours; two-step cel; sunrise rim light; heroic pose',
+        'Grounded cinematic Production I.G television frame with realistic fantasy detail.',
+      key_features: 'Moribito realism; painted landscapes; weathered heroes; martial choreography',
       creative_brief:
-        "Heroic dawn cel anime: bold adventure-series key art with strong silhouettes, two-step cel shading and warm sunrise light. Carry it through thick contours, two-step cel, sunrise rim light, heroic pose. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Production I.G Moribito: Guardian of the Spirit look (2007) by Kenji Kamiyama: grounded realistic fantasy, weathered spear-wielding heroes, lush painted Asian-inspired landscapes and precise martial choreography. Carry it through Moribito realism, painted landscapes, weathered heroes, martial choreography. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-002',
-    name: 'Neon City Vigil',
+    name: 'Akudama Drive Pierrot - Neon City Vigil',
+    displayName: 'Akudama Drive Pierrot - Neon City Vigil',
+    styleAnchors: ['Akudama Drive Pierrot - Neon City Vigil'],
     category: '1. Core Anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, watercolor, low detail, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, watercolor, low detail, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Neon city vigil anime: rain-soaked cyber-city night frames with sharp lines, wet reflections and lonely figures.',
+        'Studio Pierrot Akudama Drive look (2020) with Rui Komatsuzaki designs: hyper-stylized neon cyberpunk Kansai, bold graphic outlines, candy neon signage and flamboyant criminal archetypes.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: crisp thin lines, hard cel shadows, faces lit by colored signs, rain streaks drawn as straight white lines.",
-      color_and_tone: 'Magenta, cyan and violet neon on deep navy black.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Komatsuzaki designs, bold graphic silhouettes, striking hair colors and flamboyant streetwear with tech details. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        'Candy neon pink, electric cyan, acid yellow and deep night black across the whole city.',
       lighting_and_shadow:
-        'Neon signs as key light with wet reflections, expressed through the style rather than photographic lighting.',
-      texture_and_material: 'Flat cel with glossy painted reflections and rain streaks.',
+        'Saturated neon signage light, holographic glow and hard graphic shadows at night.',
+      texture_and_material:
+        'Bold graphic outlines, flat saturated color blocks and sharp neon glow effects on every surface.',
       camera_and_composition:
-        'Street-level wide shots and tight lonely close-ups, arranged so the subject still reads at a glance.',
-      atmosphere_and_mood:
-        'Lonely, cool, watchful and melancholic, driven by the construction, color and rhythm.',
+        'Graphic dramatic angles through neon alleys, with stylized poses framed by signage.',
+      atmosphere_and_mood: 'Keep the requested mood with stylish neon tension.',
       rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
-      key_features: 'neon key light; wet reflections; rain lines; lonely figure',
+        'Hyper-stylized neon cyberpunk television frame with bold graphic design and saturation.',
+      key_features: 'Akudama Drive neon; Komatsuzaki designs; graphic outlines; cyberpunk Kansai',
       creative_brief:
-        "Neon city vigil anime: rain-soaked cyber-city night frames with sharp lines, wet reflections and lonely figures. Carry it through neon key light, wet reflections, rain lines, lonely figure. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Studio Pierrot Akudama Drive look (2020) with Rui Komatsuzaki designs: hyper-stylized neon cyberpunk Kansai, bold graphic outlines, candy neon signage and flamboyant criminal archetypes. Carry it through Akudama Drive neon, Komatsuzaki designs, graphic outlines, cyberpunk Kansai. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-004',
-    name: 'Mecha Hangar Ignition',
+    name: 'Gundam Unicorn Sunrise - Mecha Hangar Ignition',
+    displayName: 'Gundam Unicorn Sunrise - Mecha Hangar Ignition',
+    styleAnchors: ['Gundam Unicorn Sunrise - Mecha Hangar Ignition'],
     category: '1. Core Anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, toy like, lowres, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
+      'a white mobile suit with a single horn that splits into a V-fin, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, toy like, lowres, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Mecha hangar anime: giant robots drawn with precise mechanical line work, panel lines and industrial lighting.',
+        'Sunrise Mobile Suit Gundam Unicorn OVA look (2010): meticulously detailed hand-drawn mobile suits, cathedral-like hangars, glowing frame light and cinematic mecha grandeur.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: hard-edged mechanical line work with panel lines, bolts and vents, humans tiny beside machines, sparks and steam as cel effects.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Yasuhiko-derived designs, serious faces, pilot suits and crew uniforms dwarfed by detailed machines. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Gunmetal, hazard orange, off-white and teal accents, used consistently across subject and background.',
+        'Hangar steel grey, white armor plates, teal frame glow and warning yellow stripes.',
       lighting_and_shadow:
-        'Industrial floodlights, sparks and visor glow, expressed through the style rather than photographic lighting.',
+        'Dramatic hangar floodlights cutting through steam haze and teal glowing frame light.',
       texture_and_material:
-        'Crisp cel metal with sharp highlight blocks, visible at a glance as the signature of the style.',
-      camera_and_composition: 'Low angle up at the machine with tiny figures for scale.',
-      atmosphere_and_mood:
-        'Tense, powerful, mechanical and awe-struck, driven by the construction, color and rhythm.',
+        'Meticulously hand-drawn mechanical detail with glossy panel highlights and soft grain.',
+      camera_and_composition:
+        'Low monumental angles of giant robots in hangars and slow cinematic reveals.',
+      atmosphere_and_mood: 'Keep the requested mood with awe-struck mechanical grandeur.',
       rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
-      key_features: 'panel lines; floodlights; sparks; scale contrast',
+        'Lavish 2010 OVA frame with meticulous hand-drawn mecha detail and cinematic lighting.',
+      key_features:
+        'Unicorn mecha detail; cathedral hangars; glowing frame light; cinematic grandeur',
       creative_brief:
-        "Mecha hangar anime: giant robots drawn with precise mechanical line work, panel lines and industrial lighting. Carry it through panel lines, floodlights, sparks, scale contrast. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Sunrise Mobile Suit Gundam Unicorn OVA look (2010): meticulously detailed hand-drawn mobile suits, cathedral-like hangars, glowing frame light and cinematic mecha grandeur. Carry it through Unicorn mecha detail, cathedral hangars, glowing frame light, cinematic grandeur. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-006',
-    name: 'Spirit Shrine Twilight',
+    name: 'Isao Takahata Kaguya - Spirit Shrine Twilight',
+    displayName: 'Isao Takahata Kaguya - Spirit Shrine Twilight',
+    styleAnchors: ['Isao Takahata Kaguya - Spirit Shrine Twilight'],
     category: '1. Core Anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, sci fi ui, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, sci fi ui, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Spirit shrine twilight anime: quiet supernatural frames with soft glowing spirits, lanterns and painted dusk skies.',
+        'Isao Takahata The Tale of the Princess Kaguya look (2013): charcoal-sketch lines and delicate watercolor washes, empty paper space, and figures that dissolve into loose strokes when emotion peaks.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: soft thin lines, gentle cel shading, spirits drawn translucent with glowing edges, richly painted backgrounds.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with loose charcoal contours, simple gentle faces and watercolor-washed clothing, leaving much of each figure unfinished. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Dusky violet, lantern orange and spirit teal, used consistently across subject and background.',
+        'Pale watercolor washes of moss green, dusk rose and ink grey on warm white paper.',
       lighting_and_shadow:
-        'Twilight sky with lantern and spirit glow, expressed through the style rather than photographic lighting.',
-      texture_and_material: 'Painted backgrounds with soft cel characters and glowing particles.',
+        'Soft twilight suggested only by pale washes and the glow of untouched paper around figures.',
+      texture_and_material:
+        'Charcoal and brush sketch lines, watercolor bleed and visible warm paper grain.',
       camera_and_composition:
-        'Calm wide frames with small figures, arranged so the subject still reads at a glance.',
-      atmosphere_and_mood:
-        'Mysterious, gentle, sacred and wistful, driven by the construction, color and rhythm.',
+        'Airy compositions with wide empty paper space around figures and spirits.',
+      atmosphere_and_mood: 'Keep the requested mood with fragile tender reverence.',
       rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
-      key_features: 'translucent spirits; lanterns; painted dusk; soft glow',
+        'Delicate hand-drawn feature frame that looks sketched and washed directly on paper.',
+      key_features: 'Takahata charcoal line; watercolor wash; empty paper; dissolving strokes',
       creative_brief:
-        "Spirit shrine twilight anime: quiet supernatural frames with soft glowing spirits, lanterns and painted dusk skies. Carry it through translucent spirits, lanterns, painted dusk, soft glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Isao Takahata The Tale of the Princess Kaguya look (2013): charcoal-sketch lines and delicate watercolor washes, empty paper space, and figures that dissolve into loose strokes when emotion peaks. Carry it through Takahata charcoal line, watercolor wash, empty paper, dissolving strokes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-007',
-    name: 'Sports Climax Arena',
+    name: 'Yoichi Takahashi - Sports Climax Arena',
+    displayName: 'Yoichi Takahashi - Sports Climax Arena',
+    styleAnchors: ['Yoichi Takahashi - Sports Climax Arena'],
     category: '1. Core Anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, muddy motion, low detail, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
+      'a number ten football captain in a white kit, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, muddy motion, low detail, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Sports climax anime: explosive match-point frames with speed lines, sweat, impact frames and extreme perspective.',
+        'Yoichi Takahashi Captain Tsubasa look: impossibly long football fields, dramatic extreme-perspective kicks and dives, flying sweat and eighties shonen sports melodrama.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: extreme foreshortening, speed lines, impact flashes, sweat drops and gritted faces at the peak of motion.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Takahashi designs, lean athletic bodies, large determined eyes, flowing hair and classic football kits. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Bright team colors with white impact flashes, used consistently across subject and background.',
+        'Grass green, sky blue, crisp kit white and bright sunset orange across the stadium.',
       lighting_and_shadow:
-        'Arena lights and hard rim light, expressed through the style rather than photographic lighting.',
+        'Strong stadium sunlight and dramatic backlight burning behind players at the climax moment.',
       texture_and_material:
-        'Cel with speed-line overlays and motion smears, visible at a glance as the signature of the style.',
+        'Clean manga-derived line with speed lines, flying sweat droplets and torn grass.',
       camera_and_composition:
-        'Extreme angles close to the action, arranged so the subject still reads at a glance.',
-      atmosphere_and_mood:
-        'Intense, triumphant, sweaty and electric, driven by the construction, color and rhythm.',
+        'Extreme perspective with the ball filling the frame and endless curving fields behind.',
+      atmosphere_and_mood: 'Keep the requested mood with soaring match-point drama.',
       rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
-      key_features: 'speed lines; foreshortening; impact flash; sweat',
+        'Dramatic sports manga-style frame with exaggerated perspective and eighties melodrama.',
+      key_features: 'Captain Tsubasa perspective; flying sweat; endless fields; climax kicks',
       creative_brief:
-        "Sports climax anime: explosive match-point frames with speed lines, sweat, impact frames and extreme perspective. Carry it through speed lines, foreshortening, impact flash, sweat. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Yoichi Takahashi Captain Tsubasa look: impossibly long football fields, dramatic extreme-perspective kicks and dives, flying sweat and eighties shonen sports melodrama. Carry it through Captain Tsubasa perspective, flying sweat, endless fields, climax kicks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-008',
-    name: 'Gothic Vampire Manor',
+    name: 'Matsuri Hino - Gothic Vampire Manor',
+    displayName: 'Matsuri Hino - Gothic Vampire Manor',
+    styleAnchors: ['Matsuri Hino - Gothic Vampire Manor'],
     category: '1. Core Anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, cute chibi, daylight, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, cute chibi, daylight, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Gothic vampire anime: elegant dark frames with long thin lines, pale faces, crimson accents and moonlit shadows.',
+        'Matsuri Hino Vampire Knight look: gothic shojo romance, pale elegant vampires with long lashes, crimson eyes, roses, lace and moonlit academy architecture.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: long elegant lines, sharp eyes and chins, flowing capes and lace, large solid black shadow shapes.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Hino designs, pale elegant faces, long lashes, crimson eyes and gothic formal clothing trimmed with lace. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Black, crimson, bone white and moon blue, used consistently across subject and background.',
+        'Moonlit black, blood crimson, rose red and pale ivory with silver highlights.',
       lighting_and_shadow:
-        'Moonlight and candlelight with deep shadows, expressed through the style rather than photographic lighting.',
+        'Cold moonlight, flickering candle glow and small crimson gleams in the eyes.',
       texture_and_material:
-        'Cel with fine lace and velvet detail, visible at a glance as the signature of the style.',
+        'Delicate shojo line, intricate lace detail and rose ornament around figures.',
       camera_and_composition:
-        'Tall vertical frames and dramatic angles, arranged so the subject still reads at a glance.',
-      atmosphere_and_mood:
-        'Elegant, dangerous, romantic and cold, driven by the construction, color and rhythm.',
+        'Romantic gothic compositions on moonlit balconies and grand staircases.',
+      atmosphere_and_mood: 'Keep the requested mood with dark gothic romance.',
       rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
-      key_features: 'long lines; pale faces; crimson accents; moonlight',
+        'Elegant gothic shojo illustration with moonlit drama and delicate ornament.',
+      key_features: 'Matsuri Hino gothic shojo; pale vampires; roses and lace; crimson eyes',
       creative_brief:
-        "Gothic vampire anime: elegant dark frames with long thin lines, pale faces, crimson accents and moonlit shadows. Carry it through long lines, pale faces, crimson accents, moonlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Matsuri Hino Vampire Knight look: gothic shojo romance, pale elegant vampires with long lashes, crimson eyes, roses, lace and moonlit academy architecture. Carry it through Matsuri Hino gothic shojo, pale vampires, roses and lace, crimson eyes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-009',
-    name: 'Magical Girl Prism Burst',
+    name: 'Precure Toei - Magical Girl Prism Burst',
+    displayName: 'Precure Toei - Magical Girl Prism Burst',
+    styleAnchors: ['Precure Toei - Magical Girl Prism Burst'],
     category: '1. Core Anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, gritty, dark horror, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, gritty, dark horror, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Magical girl prism anime: transformation-sequence sparkle, ribbons, stars and rainbow prism light.',
+        'Toei Pretty Cure look: bright action-heavy magical transformations, sparkling ribbon costumes, rainbow prism bursts and punchy martial-arts magic battles.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: big shining eyes, flowing ribbons, star and heart sparkles, spinning transformation poses with bursts of light.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Precure designs, big sparkling eyes, voluminous colorful hair and ribboned transformation outfits. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Pastel pinks, lilac, gold and rainbow prisms, used consistently across subject and background.',
+        'Rainbow prism colors with bright pink, cyan, gold and white sparkle everywhere.',
       lighting_and_shadow:
-        'Radiant backlight and prism flares, expressed through the style rather than photographic lighting.',
+        'Prism flares, rainbow glows and sparkle bursts radiating from the transforming figure.',
       texture_and_material:
-        'Glossy cel with sparkle overlays, visible at a glance as the signature of the style.',
+        'Contemporary digital television cel with clean outlines, crisp highlights and composited painted backgrounds.',
       camera_and_composition:
-        'Centered spinning pose on a starry background, arranged so the subject still reads at a glance.',
-      atmosphere_and_mood:
-        'Magical, joyful, radiant and brave, driven by the construction, color and rhythm.',
+        'Spinning transformation sequences and dynamic martial-arts battle poses in the sky.',
+      atmosphere_and_mood: 'Keep the requested mood with bright heroic sparkle.',
       rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
-      key_features: 'ribbons; prism flares; sparkles; transformation pose',
+        'Bright Toei magical girl frame with rainbow transformation effects and punchy action.',
+      key_features: 'Precure transformations; ribbon costumes; rainbow prisms; magical battles',
       creative_brief:
-        "Magical girl prism anime: transformation-sequence sparkle, ribbons, stars and rainbow prism light. Carry it through ribbons, prism flares, sparkles, transformation pose. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Toei Pretty Cure look: bright action-heavy magical transformations, sparkling ribbon costumes, rainbow prism bursts and punchy martial-arts magic battles. Carry it through Precure transformations, ribbon costumes, rainbow prisms, magical battles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-010',
-    name: 'Isekai Forest Caravan',
+    name: 'Yako Gureishi - Isekai Forest Caravan',
+    displayName: 'Yako Gureishi - Isekai Forest Caravan',
+    styleAnchors: ['Yako Gureishi - Isekai Forest Caravan'],
     category: '1. Core Anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, sci fi city, low detail, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, sci fi city, low detail, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Isekai caravan anime: bright fantasy-adventure frames of travelers, carts, odd beasts and lush landscapes.',
+        'Yako Gureishi Somali and the Forest Spirit look: gentle watercolor fantasy travel, soft monsters and golems, quiet caravans through mushroom forests and tender companionship.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: friendly character designs, clean lines, soft cel shading, rich painted fantasy backgrounds.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with gentle soft designs, round faces and travel cloaks, and monsters with kindly rounded shapes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Lush greens, sky blue and warm earth, used consistently across subject and background.',
+        'Soft watercolor greens, glowing mushroom cyan and warm lantern amber in the forest.',
       lighting_and_shadow:
-        'Sunny daylight through leaves, expressed through the style rather than photographic lighting.',
+        'Soft dappled forest light and gentle mushroom glow along the caravan path.',
       texture_and_material:
-        'Painted backgrounds with clean cel characters, visible at a glance as the signature of the style.',
-      camera_and_composition:
-        'Wide travel frames, arranged so the subject still reads at a glance.',
-      atmosphere_and_mood:
-        'Adventurous, cozy, curious and bright, driven by the construction, color and rhythm.',
-      rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
-      key_features: 'caravan; lush painted backgrounds; clean cel; odd beasts',
+        'Watercolor-like painted backgrounds with soft line work and gentle grain.',
+      camera_and_composition: 'Quiet travel compositions with caravans on winding forest paths.',
+      atmosphere_and_mood: 'Keep the requested mood with gentle wandering wonder.',
+      rendering_and_quality: 'Soft watercolor fantasy illustration with tender unhurried pacing.',
+      key_features: 'Somali gentleness; watercolor forests; kindly monsters; caravans',
       creative_brief:
-        "Isekai caravan anime: bright fantasy-adventure frames of travelers, carts, odd beasts and lush landscapes. Carry it through caravan, lush painted backgrounds, clean cel, odd beasts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Yako Gureishi Somali and the Forest Spirit look: gentle watercolor fantasy travel, soft monsters and golems, quiet caravans through mushroom forests and tender companionship. Carry it through Somali gentleness, watercolor forests, kindly monsters, caravans. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-011',
-    name: 'Meikyuu Dungeon Glow',
+    name: 'Delicious in Dungeon Trigger - Meikyuu Dungeon Glow',
+    displayName: 'Delicious in Dungeon Trigger - Meikyuu Dungeon Glow',
+    styleAnchors: ['Delicious in Dungeon Trigger - Meikyuu Dungeon Glow'],
     category: '1. Core Anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, daylight, flat color only, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
+      'a short-haired elf mage with a staff, a bearded dwarf cook, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, daylight, flat color only, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Dungeon glow anime: torchlit labyrinth frames with glowing magic circles, dark stone and stylized monsters.',
+        'Studio Trigger Delicious in Dungeon anime look (2024): crisp warm designs, glowing layered dungeon architecture, detailed monster ecology and cozy adventuring party dynamics.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: clean lines, strong cel shadow, magic drawn as glowing shapes, monsters stylized with readable silhouettes.",
-      color_and_tone: 'Deep blue stone with torch orange and magic teal.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Trigger designs, expressive faces, practical adventurer gear, and monsters with believable anatomy. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Dungeon teal glow, warm torch amber and cool stone grey through deep halls.',
       lighting_and_shadow:
-        'Torch and magic glow in darkness, expressed through the style rather than photographic lighting.',
+        'Teal magic circles glowing far below and warm torchlight in deep stone halls.',
       texture_and_material:
-        'Cel with glowing effect overlays, visible at a glance as the signature of the style.',
+        'Contemporary digital television cel with clean outlines, crisp highlights and composited painted backgrounds.',
       camera_and_composition:
-        'Corridor and chamber frames with depth, arranged so the subject still reads at a glance.',
-      atmosphere_and_mood:
-        'Tense, adventurous, eerie and exciting, driven by the construction, color and rhythm.',
-      rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
-      key_features: 'torchlight; magic glow; dark stone; stylized monsters',
+        'Spiral descents, glowing labyrinth wide shots and cozy party close-ups.',
+      atmosphere_and_mood: 'Keep the requested mood with curious glowing descent.',
+      rendering_and_quality: 'Warm polished Trigger frame with detailed dungeon glow and ecology.',
+      key_features: 'Dungeon Meshi Trigger; glowing labyrinths; monster ecology; cozy party',
       creative_brief:
-        "Dungeon glow anime: torchlit labyrinth frames with glowing magic circles, dark stone and stylized monsters. Carry it through torchlight, magic glow, dark stone, stylized monsters. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Studio Trigger Delicious in Dungeon anime look (2024): crisp warm designs, glowing layered dungeon architecture, detailed monster ecology and cozy adventuring party dynamics. Carry it through Dungeon Meshi Trigger, glowing labyrinths, monster ecology, cozy party. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-012',
-    name: 'Retro Mecha VHS Grain',
+    name: 'Gundam 0083 Sunrise - Retro Mecha VHS Grain',
+    displayName: 'Gundam 0083 Sunrise - Retro Mecha VHS Grain',
+    styleAnchors: ['Gundam 0083 Sunrise - Retro Mecha VHS Grain'],
     category: '1. Core Anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, ultra clean digital, lowres, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
+      'a crimson mobile suit with a mono-eye, white mobile suits with V-fin antennas, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, ultra clean digital, lowres, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Retro mecha VHS anime: 80s-90s cel look with VHS grain, color bleed and hand-painted highlight streaks.',
+        'Sunrise Mobile Suit Gundam 0083 Stardust Memory OVA look (1991): hand-painted highlight streaks on mechs, densely detailed machines, VHS-era grain and dramatic space battles.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: thick line art, cel shading with hand-painted highlight streaks and gradient shadows, then VHS tracking noise over everything.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with early-nineties OVA designs, pilot suits and uniforms, beside heavily detailed mechs. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Faded saturated colors with red and cyan bleed, used consistently across subject and background.',
+        'Olive drab, steel grey, beam pink and deep space blue with soft VHS color bleed.',
       lighting_and_shadow:
-        'Dramatic backlight and explosions, expressed through the style rather than photographic lighting.',
+        'Beam flashes and hand-painted highlight streaks sliding along curved armor plates.',
       texture_and_material:
-        'VHS grain, scanlines, cel and paint streaks, visible at a glance as the signature of the style.',
+        'Analog cel with hand-painted highlights, soft VHS grain and scanline softness.',
       camera_and_composition:
-        'Dynamic mecha shots and tight cockpit close-ups, arranged so the subject still reads at a glance.',
-      atmosphere_and_mood:
-        'Nostalgic, dramatic, gritty and bold, driven by the construction, color and rhythm.',
+        'Dramatic space battle framing and tight mech close-ups against burning colonies.',
+      atmosphere_and_mood: 'Keep the requested mood with retro mechanical drama.',
       rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
-      key_features: 'VHS grain; painted highlight streaks; retro cel',
+        'Grainy 1991 OVA frame with hand-painted mecha highlights and space drama.',
+      key_features: 'Gundam 0083 highlights; detailed mechs; VHS grain; space battles',
       creative_brief:
-        "Retro mecha VHS anime: 80s-90s cel look with VHS grain, color bleed and hand-painted highlight streaks. Carry it through VHS grain, painted highlight streaks, retro cel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Sunrise Mobile Suit Gundam 0083 Stardust Memory OVA look (1991): hand-painted highlight streaks on mechs, densely detailed machines, VHS-era grain and dramatic space battles. Carry it through Gundam 0083 highlights, detailed mechs, VHS grain, space battles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-014',
-    name: 'Ronin Alley Duel',
+    name: 'Ryoichi Ikegami - Ronin Alley Duel',
+    displayName: 'Ryoichi Ikegami - Ronin Alley Duel',
+    styleAnchors: ['Ryoichi Ikegami - Ronin Alley Duel'],
     category: '1. Core Anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, goofy chibi, modern guns, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, goofy chibi, modern guns, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Ronin duel anime: period samurai frames with long stillness, ink-brush accents and sudden white slash arcs.',
+        'Ryoichi Ikegami gekiga look as in Crying Freeman and Sanctuary: hyper-realistic handsome faces, precise anatomy, cinematic noir lighting and cool deadly stillness.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: sharp restrained lines, faces half in shadow, slashes drawn as white arcs, ink-brush accents in the backgrounds.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Ikegami realism, sculpted handsome faces, precise anatomy and elegant clothing. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Muted indigo, grey and blood red, used consistently across subject and background.',
-      lighting_and_shadow:
-        'Moonlight or lantern light, expressed through the style rather than photographic lighting.',
-      texture_and_material:
-        'Cel with ink-wash backgrounds, visible at a glance as the signature of the style.',
-      camera_and_composition: 'Wide standoff frames and extreme close-ups of eyes and hilts.',
-      atmosphere_and_mood:
-        'Tense, still, lethal and poetic, driven by the construction, color and rhythm.',
+        'Black ink with fine grey tone and hard noir contrast, no bright color at all.',
+      lighting_and_shadow: 'Cinematic noir light from a single swinging lantern in the rain.',
+      texture_and_material: 'Precise realistic pen line and fine hatching on faces and fabric.',
+      camera_and_composition: 'Cinematic standoff compositions in narrow rainy alleys at night.',
+      atmosphere_and_mood: 'Keep the requested mood with cool deadly stillness.',
       rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
-      key_features: 'standoff; white slash arcs; ink wash; half-shadow faces',
+        'Hyper-realistic gekiga illustration with cinematic noir restraint and sculpted faces.',
+      key_features: 'Ryoichi Ikegami realism; noir light; handsome faces; deadly stillness',
       creative_brief:
-        "Ronin duel anime: period samurai frames with long stillness, ink-brush accents and sudden white slash arcs. Carry it through standoff, white slash arcs, ink wash, half-shadow faces. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Ryoichi Ikegami gekiga look as in Crying Freeman and Sanctuary: hyper-realistic handsome faces, precise anatomy, cinematic noir lighting and cool deadly stillness. Carry it through Ryoichi Ikegami realism, noir light, handsome faces, deadly stillness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-016',
-    name: 'Battle Mage Stormcast',
+    name: 'Sorcerous Stabber Orphen - Battle Mage Stormcast',
+    displayName: 'Sorcerous Stabber Orphen - Battle Mage Stormcast',
+    styleAnchors: ['Sorcerous Stabber Orphen - Battle Mage Stormcast'],
     category: '1. Core Anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, low contrast, muddy fx, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, low contrast, muddy fx, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Battle mage anime: spell-combat frames with storm magic, layered glowing circles and dynamic casting poses.',
+        'J.C.Staff Sorcerous Stabber Orphen look (1998): late-nineties fantasy sorcerers with long coats, glowing layered spell circles, lightning magic and dusty fortress towns.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: dynamic casting poses, flowing robes, layered glowing circles and jagged lightning drawn as bright cel shapes.",
-      color_and_tone:
-        'Storm blue, violet and electric white, used consistently across subject and background.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with late-nineties fantasy designs, long coats, pendants, spiky hair and confident casting poses. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Storm blue, lightning white, dusty tan stone and crimson coat accents.',
       lighting_and_shadow:
-        'Magic glow lighting faces from below, expressed through the style rather than photographic lighting.',
-      texture_and_material:
-        'Cel with bright effect layers and debris, visible at a glance as the signature of the style.',
+        'Crackling lightning bolts and stacked glowing spell circles lighting the scene.',
+      texture_and_material: 'Late analog cel with glowing effect layers and soft grain.',
       camera_and_composition:
-        'Dynamic low and high angles, arranged so the subject still reads at a glance.',
-      atmosphere_and_mood:
-        'Powerful, dramatic, electric and fierce, driven by the construction, color and rhythm.',
-      rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
-      key_features: 'lightning cel shapes; layered circles; casting poses',
+        'Heroic casting poses on fortress walls and dramatic storm wide shots.',
+      atmosphere_and_mood: 'Keep the requested mood with defiant stormy sorcery.',
+      rendering_and_quality: 'Late-1990s fantasy television frame with glowing lightning magic.',
+      key_features: 'Orphen sorcery; layered spell circles; lightning; nineties fantasy',
       creative_brief:
-        "Battle mage anime: spell-combat frames with storm magic, layered glowing circles and dynamic casting poses. Carry it through lightning cel shapes, layered circles, casting poses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "J.C.Staff Sorcerous Stabber Orphen look (1998): late-nineties fantasy sorcerers with long coats, glowing layered spell circles, lightning magic and dusty fortress towns. Carry it through Orphen sorcery, layered spell circles, lightning, nineties fantasy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-017',
-    name: 'Ink Noir Detective',
+    name: 'Natsume Ono - Ink Noir Detective',
+    displayName: 'Natsume Ono - Ink Noir Detective',
+    styleAnchors: ['Natsume Ono - Ink Noir Detective'],
     category: '1. Core Anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, colorful rainbow, 3d render, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, colorful rainbow, 3d render, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Ink noir detective anime: black-ink shadows, stark white highlights and a single accent color in hard-boiled mystery frames.',
+        'Natsume Ono manga look as in ACCA and House of Five Leaves: thin wobbly ink lines, sleepy half-lidded eyes, elegant understated noir, cigarettes and quiet conspiracies.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: heavy solid black shadows, sharp white highlights, lean angular faces, smoke and rain drawn in ink.",
-      color_and_tone: 'Black and white with one accent color, usually red.',
-      lighting_and_shadow:
-        'Hard single-source light through blinds or a streetlamp, expressed through the style rather than photographic lighting.',
-      texture_and_material:
-        'Ink fills with light screentone, visible at a glance as the signature of the style.',
-      camera_and_composition:
-        'Canted angles and deep shadow frames, arranged so the subject still reads at a glance.',
-      atmosphere_and_mood:
-        'Moody, suspicious, weary and cool, driven by the construction, color and rhythm.',
-      rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
-      key_features: 'solid black shadows; single accent color; hard light',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Ono designs, long faces, sleepy half-lidded eyes, thin lips and elegant suits. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Muted sepia, ink black and soft grey tones with little saturation.',
+      lighting_and_shadow: 'Soft noir light through window blinds and warm desk-lamp glow.',
+      texture_and_material: 'Thin wobbly ink line and flat muted tone fills.',
+      camera_and_composition: 'Understated noir framing and quiet conversations across desks.',
+      atmosphere_and_mood: 'Keep the requested mood with quiet understated intrigue.',
+      rendering_and_quality: 'Elegant minimal noir manga illustration with understated charm.',
+      key_features: 'Natsume Ono thin line; sleepy eyes; understated noir; elegance',
       creative_brief:
-        "Ink noir detective anime: black-ink shadows, stark white highlights and a single accent color in hard-boiled mystery frames. Carry it through solid black shadows, single accent color, hard light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Natsume Ono manga look as in ACCA and House of Five Leaves: thin wobbly ink lines, sleepy half-lidded eyes, elegant understated noir, cigarettes and quiet conspiracies. Carry it through Natsume Ono thin line, sleepy eyes, understated noir, elegance. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-019',
-    name: 'Forest Spirit Courier',
+    name: 'Studio Ponoc - Forest Spirit Courier',
+    displayName: 'Studio Ponoc - Forest Spirit Courier',
+    styleAnchors: ['Studio Ponoc - Forest Spirit Courier'],
     category: '1. Core Anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, sci fi neon, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, sci fi neon, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Forest courier anime: gentle hand-drawn frames of young couriers flying or cycling through lush countryside and small towns.',
+        'Studio Ponoc look as in Mary and the Witch’s Flower: Ghibli-lineage hand-drawn warmth, lush painted countryside, flying brooms and bicycles, and cheerful magical errands.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: soft thin lines, rounded friendly faces, careful everyday motion, wind in clothes and grass.",
-      color_and_tone: 'Leaf greens, sky blue, warm cream and red accents.',
-      lighting_and_shadow:
-        'Clear summer daylight with cloud shadows, expressed through the style rather than photographic lighting.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with soft round Ponoc designs, rosy cheeks, simple clothes and lively bouncy motion. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Lush green hills, sky blue, warm cream and magical flower violet.',
+      lighting_and_shadow: 'Bright countryside daylight with soft cel shadows and glinting sea.',
       texture_and_material:
-        'Richly painted watercolor-like backgrounds with soft cel characters, visible at a glance as the signature of the style.',
-      camera_and_composition:
-        'Wide sky-and-land frames, arranged so the subject still reads at a glance.',
-      atmosphere_and_mood:
-        'Gentle, free, hopeful and warm, driven by the construction, color and rhythm.',
+        'Hand-drawn cel characters over lush painted countryside and seaside village backgrounds.',
+      camera_and_composition: 'Hillside descents and village wide shots by the sea.',
+      atmosphere_and_mood: 'Keep the requested mood with cheerful magical errand.',
       rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
-      key_features: 'wind in grass; painted skies; soft lines; delivery journey',
+        'Warm hand-drawn feature frame with Ghibli-lineage countryside charm and bounce.',
+      key_features: 'Studio Ponoc warmth; painted countryside; magical errands; round designs',
       creative_brief:
-        "Forest courier anime: gentle hand-drawn frames of young couriers flying or cycling through lush countryside and small towns. Carry it through wind in grass, painted skies, soft lines, delivery journey. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "Studio Ponoc look as in Mary and the Witch’s Flower: Ghibli-lineage hand-drawn warmth, lush painted countryside, flying brooms and bicycles, and cheerful magical errands. Carry it through Studio Ponoc warmth, painted countryside, magical errands, round designs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-020',
-    name: 'Final Episode Closure',
+    name: 'Your Lie in April A-1 - Final Episode Closure',
+    displayName: 'Your Lie in April A-1 - Final Episode Closure',
+    styleAnchors: ['Your Lie in April A-1 - Final Episode Closure'],
     category: '1. Core Anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, comedy chibi, lowres, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, comedy chibi, lowres, watermark, text, logo, generic anime filter, canon cast copy, source frame look composition, canon character copy, title scene copy, literal sample card setup, fixed anime cast, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Final episode anime: the soft, emotional look of a series finale, golden light, tears and wide quiet farewells.',
+        'A-1 Pictures Your Lie in April look (2014): sparkling pastel light, colorful emotional music scenes, flowers and petals, and bittersweet finales bursting with color.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: gentle expressive faces, glistening eyes, soft lines, lingering held poses.",
-      color_and_tone:
-        'Warm gold and rose with soft blue, used consistently across subject and background.',
-      lighting_and_shadow:
-        'Golden hour light and lens bloom, expressed through the style rather than photographic lighting.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with soft modern designs, expressive eyes and simple clothes, surrounded by bursts of color. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Pastel pinks, sky blue, golden light and bursting wildflower colors.',
+      lighting_and_shadow: 'Sparkling bokeh, warm sunset glow and highlights on drifting petals.',
       texture_and_material:
-        'Soft painted light and particles, visible at a glance as the signature of the style.',
-      camera_and_composition:
-        'Wide farewells and intimate close-ups, arranged so the subject still reads at a glance.',
-      atmosphere_and_mood:
-        'Tender, bittersweet, grateful and final, driven by the construction, color and rhythm.',
-      rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
-      key_features: 'golden hour; tears; farewell framing',
+        'Contemporary digital television cel with clean outlines, crisp highlights and composited painted backgrounds.',
+      camera_and_composition: 'Emotional wide shots and color-burst transitions between moments.',
+      atmosphere_and_mood: 'Keep the requested mood with bittersweet colorful farewell.',
+      rendering_and_quality: 'Sparkling A-1 Pictures frame with emotional color bursts.',
+      key_features: 'Your Lie in April color; petals; sparkling light; bittersweet finale',
       creative_brief:
-        "Final episode anime: the soft, emotional look of a series finale, golden light, tears and wide quiet farewells. Carry it through golden hour, tears, farewell framing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+        "A-1 Pictures Your Lie in April look (2014): sparkling pastel light, colorful emotional music scenes, flowers and petals, and bittersweet finales bursting with color. Carry it through Your Lie in April color, petals, sparkling light, bittersweet finale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP13-051',
-    name: 'Sky Pirate Airship Anime',
-    displayName: 'Sky Pirate Airship Anime',
-    styleAnchors: ['Sky Pirate Airship Anime', 'airship adventure anime', 'airships'],
+    name: 'Last Exile Gonzo - Sky Pirate Airship Anime',
+    displayName: 'Last Exile Gonzo - Sky Pirate Airship Anime',
+    styleAnchors: [
+      'Last Exile Gonzo - Sky Pirate Airship Anime',
+      'airship adventure anime',
+      'airships',
+    ],
     category: '1. Core Anime',
     domain: 'airship adventure anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Sky pirate anime: swashbuckling airship adventure with wind, clouds, ropes and bright wood-and-brass ships.',
+        'Gonzo Last Exile look (2003) with Range Murata designs: steampunk vanships and battleships in the sky, Edwardian uniforms, sepia skies and a blend of 2D and early CG.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: lively poses with ropes and cutlasses, clothes snapping in the wind, detailed ships with patched sails.",
-      color_and_tone: 'Sky blue, cloud white, brass gold and red sails.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Range Murata designs, goggles, Edwardian flight uniforms and elegant long coats. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Sepia sky, polished brass, deep navy and cloud cream.',
       lighting_and_shadow:
-        'Bright sun above clouds, expressed through the style rather than photographic lighting.',
-      texture_and_material:
-        'Cel with painted clouds, visible at a glance as the signature of the style.',
+        'Warm sepia sunlight breaking through towering clouds and glinting on brass hulls.',
+      texture_and_material: 'Early 2000s cel mixed with CG airships and painted clouds.',
       camera_and_composition:
-        'Wide sky shots with ships and falling figures, arranged so the subject still reads at a glance.',
-      atmosphere_and_mood:
-        'Adventurous, free, cheeky and bright, driven by the construction, color and rhythm.',
-      rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+        'Aerial chases between vanships and battleships across vast layered cloudscapes.',
+      atmosphere_and_mood: 'Keep the requested mood with soaring steampunk adventure.',
+      rendering_and_quality: 'Distinctive 2003 Gonzo frame with steampunk skies and airships.',
       creative_brief:
-        "Sky pirate anime: swashbuckling airship adventure with wind, clouds, ropes and bright wood-and-brass ships. Carry it through airships, clouds, ropes, cutlasses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'airships; clouds; ropes; cutlasses',
+        "Gonzo Last Exile look (2003) with Range Murata designs: steampunk vanships and battleships in the sky, Edwardian uniforms, sepia skies and a blend of 2D and early CG. Carry it through Range Murata designs, vanships, sepia skies, steampunk. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Range Murata designs; vanships; sepia skies; steampunk',
     },
     ui: {
       previewStatus: 'pending',
@@ -487,36 +492,33 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-053',
-    name: 'Monster Tamer Adventure Anime',
-    displayName: 'Monster Tamer Adventure Anime',
+    name: 'Ken Sugimori - Monster Tamer Adventure Anime',
+    displayName: 'Ken Sugimori - Monster Tamer Adventure Anime',
     styleAnchors: [
-      'Monster Tamer Adventure Anime',
+      'Ken Sugimori - Monster Tamer Adventure Anime',
       'creature companion anime',
       'creature companions',
     ],
     category: '1. Core Anime',
     domain: 'creature companion anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing pocket monster species, red and white capture balls, yellow electric mouse, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Monster tamer anime: bright creature-companion adventures with round readable creature designs and energetic kids.',
+        'Ken Sugimori creature and character design look: clean watercolor-like illustrations, simple rounded creature shapes, bright friendly adventure and partnership between tamers and monsters.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: round readable creatures with simple markings, energetic young tamers, clear action effects.",
-      color_and_tone:
-        'Bright primaries and fresh greens, used consistently across subject and background.',
-      lighting_and_shadow:
-        'Sunny daylight, expressed through the style rather than photographic lighting.',
-      texture_and_material: 'Clean cel, visible at a glance as the signature of the style.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Sugimori simplicity, clean faces, caps and backpacks, alongside entirely original creatures. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Bright watercolor greens, reds and blues on light airy backgrounds.',
+      lighting_and_shadow: 'Bright clean daylight with soft watercolor shading on creatures.',
+      texture_and_material: 'Clean line with light watercolor-like washes and soft edges.',
       camera_and_composition:
-        'Dynamic mid shots with creature and tamer, arranged so the subject still reads at a glance.',
-      atmosphere_and_mood:
-        'Energetic, friendly, brave and fun, driven by the construction, color and rhythm.',
+        'Clear readable adventure compositions pairing each tamer with their creature partner.',
+      atmosphere_and_mood: 'Keep the requested mood with bright companionable adventure.',
       rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+        'Clean watercolor-style creature illustration with friendly clarity and bright color.',
       creative_brief:
-        "Monster tamer anime: bright creature-companion adventures with round readable creature designs and energetic kids. Carry it through creature companions, round designs, bright action. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'creature companions; round designs; bright action',
+        "Ken Sugimori creature and character design look: clean watercolor-like illustrations, simple rounded creature shapes, bright friendly adventure and partnership between tamers and monsters. Carry it through Ken Sugimori clean creatures, watercolor washes, tamer partnership. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Ken Sugimori clean creatures; watercolor washes; tamer partnership',
     },
     ui: {
       previewStatus: 'pending',
@@ -524,33 +526,29 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-054',
-    name: 'Mythic Beast-Rider Anime',
-    displayName: 'Mythic Beast-Rider Anime',
-    styleAnchors: ['Mythic Beast-Rider Anime', 'epic mount anime', 'riders'],
+    name: 'Bahamut MAPPA - Mythic Beast-Rider Anime',
+    displayName: 'Bahamut MAPPA - Mythic Beast-Rider Anime',
+    styleAnchors: ['Bahamut MAPPA - Mythic Beast-Rider Anime', 'epic mount anime', 'riders'],
     category: '1. Core Anime',
     domain: 'epic mount anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Beast-rider anime: epic sky and battle frames of riders on dragons, griffins and giant wolves.',
+        'MAPPA Rage of Bahamut: Genesis look (2014): lavish high fantasy with dragons and demons, detailed CG-assisted beasts, painterly skies and swashbuckling riders.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: sweeping poses, flowing manes and wings, riders in light armor, huge creature scale.",
-      color_and_tone:
-        'Sky blues, dragon scale colors and gold, used consistently across subject and background.',
-      lighting_and_shadow:
-        'Dramatic sunset or storm light, expressed through the style rather than photographic lighting.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with high fantasy designs, flowing cloaks, armor and confident rider poses. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Storm grey, silver scales, burning orange and deep sky blue.',
+      lighting_and_shadow: 'Storm lightning, burning fire glow and dramatic painterly skies.',
       texture_and_material:
-        'Cel with painted skies, visible at a glance as the signature of the style.',
-      camera_and_composition:
-        'Wide aerial and low heroic angles, arranged so the subject still reads at a glance.',
-      atmosphere_and_mood:
-        'Epic, free, fierce and noble, driven by the construction, color and rhythm.',
+        'Contemporary digital television cel with clean outlines, crisp highlights and composited painted backgrounds.',
+      camera_and_composition: 'Diving dragon flights and sweeping aerial battle wide shots.',
+      atmosphere_and_mood: 'Keep the requested mood with swashbuckling mythic fury.',
       rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+        'Lavish MAPPA fantasy frame with dragon spectacle and painterly skies.',
       creative_brief:
-        "Beast-rider anime: epic sky and battle frames of riders on dragons, griffins and giant wolves. Carry it through riders, wings, epic scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'riders; wings; epic scale',
+        "MAPPA Rage of Bahamut: Genesis look (2014): lavish high fantasy with dragons and demons, detailed CG-assisted beasts, painterly skies and swashbuckling riders. Carry it through Bahamut dragons, high fantasy riders, lavish skies, spectacle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Bahamut dragons; high fantasy riders; lavish skies; spectacle',
     },
     ui: {
       previewStatus: 'pending',
@@ -558,33 +556,33 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP13-055',
-    name: 'Midnight Mountain Racing Anime',
-    displayName: 'Midnight Mountain Racing Anime',
-    styleAnchors: ['Midnight Mountain Racing Anime', 'street racing anime', 'drift smoke'],
+    name: 'Shuichi Shigeno - Midnight Mountain Racing Anime',
+    displayName: 'Shuichi Shigeno - Midnight Mountain Racing Anime',
+    styleAnchors: [
+      'Shuichi Shigeno - Midnight Mountain Racing Anime',
+      'street racing anime',
+      'drift smoke',
+    ],
     category: '1. Core Anime',
     domain: 'street racing anime',
     negativePrompt:
-      'existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real car brand, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a white and black hatchback with a tofu shop door logo, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, real car brand, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Midnight mountain racing anime: late-night downhill racing with drifting cars, headlights and speed lines.',
+        'Shuichi Shigeno manga look as in Initial D: detailed photo-real car drawings contrasted with simple character faces, mountain passes at night and speed-line drifting.',
       subject_treatment:
-        "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: precise car line work, drift smoke, speed lines, driver close-ups with focused eyes.",
-      color_and_tone:
-        'Night blue with headlight white and taillight red, used consistently across subject and background.',
-      lighting_and_shadow:
-        'Headlights and streetlamps, expressed through the style rather than photographic lighting.',
-      texture_and_material:
-        'Cel with speed-line overlays, visible at a glance as the signature of the style.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; draw people with Shigeno simplicity, narrow eyes, plain faces and casual clothes, with cars drawn in precise detail. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Black ink with grey tone and bright headlight whites cutting the dark.',
+      lighting_and_shadow: 'Headlight beams in fog and dark mountain nights.',
+      texture_and_material: 'Precise mechanical car linework and dense speed lines.',
       camera_and_composition:
-        'Low angles on mountain roads, arranged so the subject still reads at a glance.',
-      atmosphere_and_mood:
-        'Fast, tense, cool and electric, driven by the construction, color and rhythm.',
+        'Drift compositions sweeping through mountain hairpins with dense speed lines.',
+      atmosphere_and_mood: 'Keep the requested mood with tense midnight speed.',
       rendering_and_quality:
-        'Clean on-model anime frame or key visual with deliberate line and cel decisions.',
+        'Detailed racing manga illustration with photo-precise cars and simple faces.',
       creative_brief:
-        "Midnight mountain racing anime: late-night downhill racing with drifting cars, headlights and speed lines. Carry it through drift smoke, headlights, speed lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'drift smoke; headlights; speed lines',
+        "Shuichi Shigeno manga look as in Initial D: detailed photo-real car drawings contrasted with simple character faces, mountain passes at night and speed-line drifting. Carry it through Shigeno car detail, simple faces, mountain hairpins, speed lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Shigeno car detail; simple faces; mountain hairpins; speed lines',
     },
     ui: {
       previewStatus: 'pending',

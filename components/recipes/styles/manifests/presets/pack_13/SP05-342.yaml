@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-342
 packId: pack_13
-name: Reality-Slip Reflection Continuity
+name: Satoshi Kon - Reality-Slip Reflection Continuity
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,36 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Create a small warm/cool edge echo across an existing reflective boundary or adjacent contour; a
-    slight continuity slip should disturb a stable image without becoming a dream collage.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: keep the base palette coherent
-    and shift only the echoed edge between warm and cool; preserve prompt color.
-  lighting_and_shadow: >-
-    Use controlled reflected highlights and a narrow offset glint; do not invent a light source or
-    reflective surface.
-  texture_and_material: >-
-    Retain original materials; use a fine doubled edge or shifted reflection rather than blur,
-    distortion or added objects.
-  camera_and_composition: >-
-    Keep the composition stable while allowing a localized alignment drift at an existing boundary;
-    preserve the original crop.
-  atmosphere_and_mood: >-
-    Uncanny continuity comes from a nearly correct reflection; do not add surreal events or chaos.
-  rendering_and_quality: >-
-    If no reflective plane is present, use a subtle contour echo on an existing boundary; add no
-    mirror, duplicate subject or collage. Keep important silhouettes and joins legible; no
-    watermark, unrequested text or interface.
-  key_features: >-
-    Offset reflection edge; warm/cool echo; localized alignment slip; stable surrounding forms;
-    restrained uncanny detail.
-  creative_brief: 'Apply this visual treatment to the requested content: Offset reflection edge; warm/cool echo; localized alignment slip; stable surrounding forms; restrained uncanny detail. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Satoshi Kon manga and film look: grounded realistic adults, mirrors and reflections, seamless match-cuts where reality slips into illusion.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Kon realism, grounded adult faces and ordinary clothes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Muted realistic tones with uncanny accents, true to the Satoshi Kon palette.
+  lighting_and_shadow: Ordinary light with uncanny reflections, lit the way Satoshi Kon lights its scenes.
+  texture_and_material: Precise realist line, with the surface finish of Satoshi Kon.
+  camera_and_composition: Mirror compositions and match-cut continuity, framed the way Satoshi Kon composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with uncanny reality slip.
+  rendering_and_quality: Precise uncanny realist illustration, in the recognizable hand of Satoshi Kon.
+  key_features: Satoshi Kon mirrors; reality slips; match cuts
+  creative_brief: "Satoshi Kon manga and film look: grounded realistic adults, mirrors and reflections, seamless match-cuts where reality slips into illusion. Carry it through Satoshi Kon mirrors, reality slips, match cuts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look
@@ -55,16 +37,14 @@ avoidRules:
   - multiple reflection echoes obscuring source form
   - alignment slip altering subject identity
   - unrequested duplicate forms
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-342.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, multiple reflection echoes obscuring source form,
-    alignment slip altering subject identity, unrequested duplicate forms
+  negativePrompt: photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, multiple reflection echoes obscuring source form, alignment slip altering subject identity, unrequested duplicate forms, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -73,8 +53,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Satoshi Kon - Reality-Slip Reflection Continuity
+styleAnchors:
+  - Satoshi Kon - Reality-Slip Reflection Continuity

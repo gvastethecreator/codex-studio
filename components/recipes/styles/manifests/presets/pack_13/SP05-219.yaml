@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-219
 packId: pack_13
-name: Mundane Absurdist Theater
+name: Daily Lives of High School Boys Sunrise - Mundane Absurdist Theater
 category: 4. Slice Of Life & Moe
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,17 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
+  - reference-title
 visualDna:
-  aesthetic: 'Plain graphic planes, thin even contours, and blunt shadow shapes give the drawing restrained flat clarity.'
-  subject_treatment: 'Preserve identity, proportions, pose, action, and count; stylize shadow edges without distorting expression or altering count.'
-  color_and_tone: 'Use simple color relationships and controlled contrast; the prompt sets hue and saturation rather than a fixed palette.'
-  lighting_and_shadow: 'Keep stated lighting direction; define one or two firm shadow shapes without inventing another light source.'
-  texture_and_material: 'Favor smooth color fields and minimal surface grain; retain material detail needed to recognize each form.'
-  camera_and_composition: 'Keep camera, crop, scale, spacing, and count; clarity comes from plane separation within the given arrangement.'
-  atmosphere_and_mood: 'Follow the requested mood; understated graphics do not prescribe an emotional tone.'
-  rendering_and_quality: 'Use clean shapes and limited shadow edges with no unfinished marks or added glow.'
-  key_features: 'Thin even contour; plain color planes; blunt shadow shapes; low surface grain; restrained flat clarity.'
-  creative_brief: 'Separate forms with plain color planes and deliberate shadows. Keep subject, action, count, camera, and mood as requested; add no new motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Sunrise Daily Lives of High School Boys look (2012): mundane absurdist comedy, deadpan dramatic staging of trivial moments, realistic plain designs.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with plain realistic designs and deadpan dramatic poses. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Plain everyday school colors, true to the Daily Lives of High School Boys Sunrise palette.
+  lighting_and_shadow: Dramatic lighting on mundane moments, lit the way Daily Lives of High School Boys Sunrise lights its scenes.
+  texture_and_material: Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.
+  camera_and_composition: Overly dramatic staging of trivial moments, framed the way Daily Lives of High School Boys Sunrise composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with mundane absurdist theater.
+  rendering_and_quality: Deadpan comedy television frame, in the recognizable hand of Daily Lives of High School Boys Sunrise.
+  key_features: Mundane absurdity; dramatic staging; deadpan
+  creative_brief: "Sunrise Daily Lives of High School Boys look (2012): mundane absurdist comedy, deadpan dramatic staging of trivial moments, realistic plain designs. Carry it through Mundane absurdity, dramatic staging, deadpan. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - realistic
   - 3d render
@@ -44,15 +45,14 @@ avoidRules:
   - generic anime filter
   - prompt literal card reuse
   - fake UI
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-219.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock,
-    canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic
-    anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied
-    franchise costume, logo
+  negativePrompt: realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -61,8 +61,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - slice-of-life-and-moe
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Daily Lives of High School Boys Sunrise - Mundane Absurdist Theater
+styleAnchors:
+  - Daily Lives of High School Boys Sunrise - Mundane Absurdist Theater

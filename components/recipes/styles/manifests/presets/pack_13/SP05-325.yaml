@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-325
 packId: pack_13
-name: Scratchy Concrete-Poetry Drift
+name: Taiyo Matsumoto - Scratchy Concrete-Poetry Drift
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,35 +11,18 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Use coarse scraped marks, blocky angled lines and imperfect contour to create tactile graphic
-    friction; let any tilt come from existing form rather than changing the composition.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: favor ash, charcoal and small
-    rust accents while respecting prompt-specified colors.
-  lighting_and_shadow: >-
-    Use hard-edged value blocks and dusty reflected light; do not impose a city or night scene.
-  texture_and_material: >-
-    Layer rough dry marks and concrete-like grain as a surface treatment without replacing the
-    depicted material.
-  camera_and_composition: >-
-    Let line angles create drift inside the existing layout; maintain camera, silhouette and
-    perspective.
-  atmosphere_and_mood: >-
-    Poetic unease comes from roughness and imbalance; preserve the requested emotional meaning.
-  rendering_and_quality: >-
-    Use the material marks on any subject; do not add civic icons, buildings, sacred imagery or
-    urban props. Keep important silhouettes and joins legible; no watermark, unrequested text or
-    interface.
-  key_features: >-
-    Scraped strokes; coarse grain; angled/blocky contour; ash and rust accents; tactile graphic
-    friction.
-  creative_brief: 'Apply this visual treatment to the requested content: Scraped strokes; coarse grain; angled/blocky contour; ash and rust accents; tactile graphic friction. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Taiyo Matsumoto manga look as in Tekkonkinkreet and Sunny: wobbly scratchy pen lines, distorted perspective, lopsided figures and poetic urban melancholy.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Matsumoto designs, lopsided heads, lanky limbs and scruffy clothes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Black ink with scratchy tone and faded watercolor.
+  lighting_and_shadow: Hazy poetic city light, lit the way Taiyo Matsumoto lights its scenes.
+  texture_and_material: Scratchy wobbly pen lines and hatching, with the surface finish of Taiyo Matsumoto.
+  camera_and_composition: Distorted fisheye urban compositions, framed the way Taiyo Matsumoto composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with poetic urban melancholy.
+  rendering_and_quality: Idiosyncratic scratchy manga illustration, in the recognizable hand of Taiyo Matsumoto.
+  key_features: Taiyo Matsumoto wobbly line; distorted perspective; urban poetry
+  creative_brief: "Taiyo Matsumoto manga look as in Tekkonkinkreet and Sunny: wobbly scratchy pen lines, distorted perspective, lopsided figures and poetic urban melancholy. Carry it through Taiyo Matsumoto wobbly line, distorted perspective, urban poetry. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look
@@ -54,16 +37,14 @@ avoidRules:
   - uniform smoothing erasing scraped-stroke texture
   - grain obscuring angled form direction
   - ornament covering the rough silhouette
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-325.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, uniform smoothing erasing scraped-stroke texture,
-    grain obscuring angled form direction, ornament covering the rough silhouette
+  negativePrompt: photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, uniform smoothing erasing scraped-stroke texture, grain obscuring angled form direction, ornament covering the rough silhouette, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -72,8 +53,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Taiyo Matsumoto - Scratchy Concrete-Poetry Drift
+styleAnchors:
+  - Taiyo Matsumoto - Scratchy Concrete-Poetry Drift

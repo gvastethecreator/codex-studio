@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-059
 packId: pack_13
-name: Night Study Lamp Anime
+name: Kamome Shirahama - Night Study Lamp Anime
 styleAnchors:
-  - Night Study Lamp Anime
+  - Kamome Shirahama - Night Study Lamp Anime
   - late-night study anime
   - lamp pool
-displayName: Night Study Lamp Anime
+displayName: Kamome Shirahama - Night Study Lamp Anime
 category: 2. Slice Of Life, School And Music
 domain: late-night study anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,18 +20,21 @@ tags:
   - night
   - lamp
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Night study lamp anime: small pools of warm desk light in dark rooms, tired eyes and late-night focus.'
-  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: tired soft faces, messy hair, hands with pens, cluttered desks drawn in detail."
-  color_and_tone: Warm lamp yellow in deep blue darkness, used consistently across subject and background.
-  lighting_and_shadow: Single desk lamp pool of light, expressed through the style rather than photographic lighting.
-  texture_and_material: Cel with soft glow, visible at a glance as the signature of the style.
-  camera_and_composition: Close desk framing, arranged so the subject still reads at a glance.
-  atmosphere_and_mood: Quiet, tired, focused and intimate, driven by the construction, color and rhythm.
-  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  creative_brief: "Night study lamp anime: small pools of warm desk light in dark rooms, tired eyes and late-night focus. Carry it through lamp pool, darkness, tired focus. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: lamp pool; darkness; tired focus
+  aesthetic: 'Kamome Shirahama Witch Hat Atelier look: exquisite fine-line illustration, magic drawn with ink, ornate art nouveau details, cozy witch studios and wonder.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Shirahama designs, delicate faces, flowing hair, pointed hats and ornate robes drawn in fine ink. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Warm lamp amber, ink black, soft teal and parchment tones.
+  lighting_and_shadow: Warm brass lamp glow and glowing magical ink sigils.
+  texture_and_material: Exquisite fine pen lines, hatching and art nouveau ornament.
+  camera_and_composition: Cozy studio compositions filled with detailed tools and books.
+  atmosphere_and_mood: Keep the requested mood with cozy studious wonder.
+  rendering_and_quality: Exquisite fine-line fantasy illustration with art nouveau ornament.
+  creative_brief: "Kamome Shirahama Witch Hat Atelier look: exquisite fine-line illustration, magic drawn with ink, ornate art nouveau details, cozy witch studios and wonder. Carry it through Kamome Shirahama fine line, ink magic, art nouveau, cozy studios. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Kamome Shirahama fine line; ink magic; art nouveau; cozy studios
 avoidRules:
+  - glowing written runes
+  - existing franchise characters
   - existing anime character likeness
   - studio or franchise logo
   - readable text
@@ -45,9 +48,12 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: glowing written runes, existing franchise characters, existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -62,6 +68,7 @@ taxonomy:
     - night
     - lamp
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

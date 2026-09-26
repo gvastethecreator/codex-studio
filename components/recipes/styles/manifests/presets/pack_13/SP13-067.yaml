@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP13-067
 packId: pack_13
-name: Soft Focus Letter Anime
+name: Josee BONES - Soft Focus Letter Anime
 styleAnchors:
-  - Soft Focus Letter Anime
+  - Josee BONES - Soft Focus Letter Anime
   - soft focus romantic anime
   - bokeh
-displayName: Soft Focus Letter Anime
+displayName: Josee BONES - Soft Focus Letter Anime
 category: 2. Slice Of Life, School And Music
 domain: soft focus romantic anime
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - soft-focus
   - romance
   - anime
+  - reference-title
 visualDna:
-  aesthetic: 'Soft focus anime: dreamy frames with shallow depth, glowing bokeh and gentle blur, like remembered moments.'
-  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: sharp focus on one small detail (hands, a letter, eyes) with everything else melting into bokeh."
-  color_and_tone: Soft creams, rose and pale gold, used consistently across subject and background.
-  lighting_and_shadow: Backlit glow with bokeh circles, expressed through the style rather than photographic lighting.
-  texture_and_material: Cel with blur and glow layers, visible at a glance as the signature of the style.
-  camera_and_composition: Very shallow depth close-ups, arranged so the subject still reads at a glance.
-  atmosphere_and_mood: Tender, nostalgic, dreamy and intimate, driven by the construction, color and rhythm.
-  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  creative_brief: "Soft focus anime: dreamy frames with shallow depth, glowing bokeh and gentle blur, like remembered moments. Carry it through bokeh, shallow focus, glowing backlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: bokeh; shallow focus; glowing backlight
+  aesthetic: 'BONES Josee, the Tiger and the Fish look (2020): soft focus romance, dreamy bokeh, shimmering light, art and the sea, and tender emotional realism.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with soft realistic designs, gentle faces and simple clothing. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Soft summer window light, pastel sea blue and warm skin tones.
+  lighting_and_shadow: Glowing summer bokeh and shimmering soft light around faces and hands.
+  texture_and_material: Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.
+  camera_and_composition: Shallow focus close-ups on hands and letters with glowing blurred backgrounds.
+  atmosphere_and_mood: Keep the requested mood with tender dreamy romance.
+  rendering_and_quality: Soft glowing BONES romance frame with tender emotional realism.
+  creative_brief: "BONES Josee, the Tiger and the Fish look (2020): soft focus romance, dreamy bokeh, shimmering light, art and the sea, and tender emotional realism. Carry it through Josee soft focus, bokeh, tender realism, summer light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Josee soft focus; bokeh; tender realism; summer light
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -45,9 +46,13 @@ avoidRules:
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -62,6 +67,7 @@ taxonomy:
     - soft-focus
     - romance
     - anime
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

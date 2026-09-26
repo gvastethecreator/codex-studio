@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP05-116
 packId: pack_13
-name: Sumi-e Impact Brushstroke
+name: Sawaki Takeyasu - Sumi-e Impact Brushstroke
 category: 5. Anime Style Spectrum
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -11,35 +11,21 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
-  aesthetic: >-
-    Build form through pressure-variable ink strokes, wet pools, dry-bristle breaks and deliberate
-    rice-paper negative space.
-  subject_treatment: >-
-    Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
-    treatment to the existing forms without substituting subjects, adding accessories or changing
-    their function.
-  color_and_tone: >-
-    Palette defaults apply only where the prompt leaves color open: keep ink monochrome by default,
-    allowing only colors explicitly requested by the prompt.
-  lighting_and_shadow: >-
-    Use the ink's density and paper reserve as light and shadow; do not add a separate cinematic
-    light source.
-  texture_and_material: >-
-    Show absorbent paper edges, pooled ink and bristle drag; keep strokes few and purposeful.
-  camera_and_composition: >-
-    Let negative space carry equal weight to the marked form; preserve the source composition.
-  atmosphere_and_mood: >-
-    Impact comes from the contrast of a decisive stroke and open paper; retain the prompt's meaning.
-  rendering_and_quality: >-
-    Translate any subject into ink value and stroke pressure without adding calligraphy, writing or
-    a new gesture. Keep important silhouettes and joins legible; no watermark, unrequested text or
-    interface.
-  key_features: >-
-    Pressure-variable sumi strokes; dry-bristle splinters; wet ink pools; rice-paper texture;
-    negative-space impact.
-  creative_brief: 'Apply this visual treatment to the requested content: Pressure-variable sumi strokes; dry-bristle splinters; wet ink pools; rice-paper texture; negative-space impact. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
+  aesthetic: 'Sawaki Takeyasu sumi-e illustration look as in Okami: bold ink brushstrokes, celestial brush art, ukiyo-e inspired forms and sweeping impact strokes.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with bold brush strokes and ukiyo-e inspired forms. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Ink black, paper white and red accents, true to the Sawaki Takeyasu palette.
+  lighting_and_shadow: Paper-white glow, lit the way Sawaki Takeyasu lights its scenes.
+  texture_and_material: Bold sumi-e brush and paper grain, with the surface finish of Sawaki Takeyasu.
+  camera_and_composition: Sweeping brush compositions, framed the way Sawaki Takeyasu composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with bold brush impact.
+  rendering_and_quality: Sumi-e brush illustration, in the recognizable hand of Sawaki Takeyasu.
+  key_features: Sawaki Takeyasu sumi-e; brush strokes; ukiyo-e
+  creative_brief: "Sawaki Takeyasu sumi-e illustration look as in Okami: bold ink brushstrokes, celestial brush art, ukiyo-e inspired forms and sweeping impact strokes. Carry it through Sawaki Takeyasu sumi-e, brush strokes, ukiyo-e. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a white wolf with red markings
+  - existing franchise characters
   - photoreal cosplay rendering
   - 3D render look
   - plastic airbrush gloss obscuring the style's defining marks
@@ -53,17 +39,20 @@ avoidRules:
   - uniform fills erasing wet-pool and dry-bristle contrast
   - cel shading replacing pressure-variable strokes
   - weak value separation collapsing ink structure
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-116.webp
 attributes:
-  negativePrompt: >-
-    photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's
-    defining marks, undifferentiated anime filter erasing the preset's signature mechanics,
-    unrequested default-image characters, costume details, props or setting, unrequested
-    default-image framing, garbled pseudo-text, unrequested interface overlay, watermark,
-    unrequested logo or signature artifact, uniform fills erasing wet-pool and dry-bristle
-    contrast, cel shading replacing pressure-variable strokes, weak value separation collapsing
-    ink structure
+  negativePrompt: a white wolf with red markings, existing franchise characters, photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, uniform fills erasing wet-pool and dry-bristle contrast, cel shading replacing pressure-variable strokes, weak value separation collapsing ink structure, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -72,8 +61,12 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Sawaki Takeyasu - Sumi-e Impact Brushstroke
+styleAnchors:
+  - Sawaki Takeyasu - Sumi-e Impact Brushstroke

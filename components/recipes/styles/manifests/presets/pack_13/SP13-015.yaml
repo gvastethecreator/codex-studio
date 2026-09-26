@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP13-015
 packId: pack_13
-name: Dessert Cafe Comedy
+name: Restaurant to Another World - Dessert Cafe Comedy
 category: 2. Slice Of Life, School And Music
-version: 2
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -12,17 +12,18 @@ tags:
   - anime-character-and-lifestyle
   - anime
   - slice-of-life
+  - reference-title
 visualDna:
-  aesthetic: 'Dessert cafe comedy anime: warm, sugary comedic frames with glossy desserts and big reaction faces.'
-  subject_treatment: "Rebuild the prompt's subject, action and setting through this construction while keeping them recognizable: redrawn as anime with these drawing rules: rounded friendly designs, exaggerated reaction faces, chibi moments, glossy dessert close-ups."
-  color_and_tone: Cream, strawberry pink, caramel and mint, used consistently across subject and background.
-  lighting_and_shadow: Warm cozy cafe light, expressed through the style rather than photographic lighting.
-  texture_and_material: Soft cel with glossy dessert highlights, visible at a glance as the signature of the style.
-  camera_and_composition: Table-level framing with desserts in the foreground, arranged so the subject still reads at a glance.
-  atmosphere_and_mood: Sweet, silly, cozy and cheerful, driven by the construction, color and rhythm.
-  rendering_and_quality: Clean on-model anime frame or key visual with deliberate line and cel decisions.
-  key_features: glossy desserts; reaction faces; warm light
-  creative_brief: "Dessert cafe comedy anime: warm, sugary comedic frames with glossy desserts and big reaction faces. Carry it through glossy desserts, reaction faces, warm light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  aesthetic: 'Silver Link Restaurant to Another World look (2017): cozy Western-style restaurant, glistening food close-ups and fantasy patrons blissfully tasting modern dishes.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with soft fantasy designs, knights, elves and dragons as patrons, with blissful tasting expressions. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Warm wood brown, cream, strawberry red and glossy food highlights.
+  lighting_and_shadow: Warm restaurant lamplight with glossy highlights on desserts.
+  texture_and_material: Contemporary digital television cel with clean outlines, soft gradient highlights and detailed painted backgrounds.
+  camera_and_composition: Food close-ups and blissful reaction shots at restaurant tables.
+  atmosphere_and_mood: Keep the requested mood with cozy blissful comedy.
+  rendering_and_quality: Warm cozy fantasy television frame with glistening food.
+  key_features: Restaurant to Another World; glistening desserts; fantasy patrons; bliss
+  creative_brief: "Silver Link Restaurant to Another World look (2017): cozy Western-style restaurant, glistening food close-ups and fantasy patrons blissfully tasting modern dishes. Carry it through Restaurant to Another World, glistening desserts, fantasy patrons, bliss. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
   - existing anime character likeness
   - studio or franchise logo
@@ -49,10 +50,14 @@ avoidRules:
   - UI overlay
   - franchise likeness
   - real person likeness
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP13-015.webp
 attributes:
-  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, horror, dark gritty, watermark, text, logo, classroom dependency, idol stage dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts
+  negativePrompt: existing anime character likeness, studio or franchise logo, readable text, muddy off-model anatomy, generic AI anime gloss, photoreal, horror, dark gritty, watermark, text, logo, classroom dependency, idol stage dependency, generic cute wallpaper, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, readable labels, UI overlay, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -62,8 +67,12 @@ taxonomy:
     - anime-character-and-lifestyle
     - anime
     - slice-of-life
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Restaurant to Another World - Dessert Cafe Comedy
+styleAnchors:
+  - Restaurant to Another World - Dessert Cafe Comedy

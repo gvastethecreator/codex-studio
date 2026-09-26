@@ -3,7 +3,7 @@ id: SP05-197
 packId: pack_13
 name: Kamisama Kiss - Shrine Romance and Fox Familiar
 category: 3. Shojo, Magical Girl & Visionary Classics
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -13,28 +13,19 @@ tags:
   - shojo-magical-girl-and-visionary-classics
   - reference-title
 visualDna:
-  aesthetic: >-
-    Bold anime ink meets flat mineral color and small seal-like marks on restrained paper.
-  subject_treatment: >-
-    Preserve subject and design; add symbolic motifs only when prompt includes them.
-  color_and_tone: >-
-    Vermilion, pine, charcoal, warm ivory, muted brass with separated values.
-  lighting_and_shadow: >-
-    One clear highlight direction and firm shadows; imply no moonlight or sacred setting.
-  texture_and_material: >-
-    Dry-brush edges and slight paper grain; graphic marks sparse and non-symbolic by
-    default.
-  camera_and_composition: >-
-    Respect crop; vertical emphasis only if the supplied composition supports it.
-  atmosphere_and_mood: >-
-    Mythic or playful mood follows prompt; no creature, contract, or ritual is implied.
-  rendering_and_quality: >-
-    Thick-to-thin line, crisp cel blocks, no invented iconography.
-  key_features: >-
-    Bold mineral ink, vermilion-pine palette, restrained paper grain, symbols only when
-    prompted
-  creative_brief: 'Apply a visual treatment centered on bold mineral ink, vermilion-pine palette, restrained paper grain, symbols only when prompted. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
+  aesthetic: 'Julietta Suzuki Kamisama Kiss look: shrine romance, fox spirit familiars, flowing kimono, sakura and playful yokai.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw people with Suzuki designs, big eyes, flowing hair and kimono. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Sakura pink, shrine red and soft gold, true to the Kamisama Kiss palette.
+  lighting_and_shadow: Soft shrine light with foxfire glows, lit the way Kamisama Kiss lights its scenes.
+  texture_and_material: Delicate shojo manga pen line with screentone gradients, sparkle tones, floral accents and clean white paper.
+  camera_and_composition: Shrine compositions with spirits, framed the way Kamisama Kiss composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with playful shrine romance.
+  rendering_and_quality: Refined shojo manga illustration with hand-drawn romantic detail and expressive emotional close-ups.
+  key_features: Julietta Suzuki shrines; fox familiars; kimono; yokai
+  creative_brief: "Julietta Suzuki Kamisama Kiss look: shrine romance, fox spirit familiars, flowing kimono, sakura and playful yokai. Carry it through Julietta Suzuki shrines, fox familiars, kimono, yokai. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a silver-haired fox spirit with a purple kimono
+  - existing franchise characters
   - realistic
   - 3d render
   - photo
@@ -56,19 +47,19 @@ avoidRules:
   - generic anime filter
   - prompt literal card reuse
   - fake UI
-  - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
+  - text
+  - readable labels
+  - logo
+  - UI overlay
+  - franchise likeness
+  - real person likeness
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-197.webp
 attributes:
-  negativePrompt: >-
-    realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
-    artifacts, watermark, signature, canon couple copy, readable magic text, title scene
-    reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime
-    cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render
-    look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: a silver-haired fox spirit with a purple kimono, existing franchise characters, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, noisy compression artifacts
 taxonomy:
   packId: pack_13
   packName: Anime Character & Lifestyle
@@ -83,3 +74,6 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
+displayName: Kamisama Kiss - Shrine Romance and Fox Familiar
+styleAnchors:
+  - Kamisama Kiss - Shrine Romance and Fox Familiar
