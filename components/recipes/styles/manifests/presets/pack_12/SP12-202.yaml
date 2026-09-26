@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-202
 packId: pack_12
-name: Comic-Panel Action Gameplay
+name: Comix Zone 1995 - Sega Comic Page Brawler
 styleAnchors:
-  - Comic-Panel Action Gameplay
+  - Comix Zone 1995 - Sega Comic Page Brawler
   - comic-book panel action gameplay
   - comic panels
-displayName: Comic-Panel Action Gameplay
+displayName: Comix Zone 1995 - Sega Comic Page Brawler
 category: 10. Graphic & Feudal Gameplay
 domain: comic-book panel action gameplay
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,22 +20,23 @@ tags:
   - comic-panel
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Comic-panel action gameplay: an original capture where the game world is split into comic-book panels, bold inks, halftone shading and action spilling across borders.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject fighting across comic-book panels with action breaking the borders.
-  color_and_tone: Bold inks with flat comic colors and halftone.
-  lighting_and_shadow: Heavy ink shadows, kept consistent across the whole image.
-  texture_and_material: Panel borders, halftone dots and paper, kept consistent across the whole image.
-  camera_and_composition: Multi-panel page with a dominant action panel, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with pulpy momentum, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no speech bubbles, kept consistent across the whole image.
-  creative_brief: "Comic-panel action gameplay: an original capture where the game world is split into comic-book panels, bold inks, halftone shading and action spilling across borders. Carry it through comic panels, halftone, action across borders, bold inks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: comic panels; halftone; action across borders; bold inks
+  aesthetic: 'Sega Technical Institute Comix Zone (1995) look: brawler set inside comic book pages, heroes jumping between panels, hand-drawn villains and halftone effects.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as comic-page heroes inside panels. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Comic print colors and halftone, true to the Comix Zone 1995 palette.
+  lighting_and_shadow: Flat comic light, lit the way Comix Zone 1995 lights its levels.
+  texture_and_material: Printed halftone and ink, with the in-engine surface finish of Comix Zone 1995.
+  camera_and_composition: Comic page panel view, framed the way Comix Zone 1995 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with rowdy comic-book action.
+  rendering_and_quality: Authentic Mega Drive comic brawler screen, matching real Comix Zone 1995 screenshots.
+  creative_brief: 'Sega Technical Institute Comix Zone (1995) look: brawler set inside comic book pages, heroes jumping between panels, hand-drawn villains and halftone effects. Carry it through Comix Zone panels, halftone, page brawl. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Comix Zone panels; halftone; page brawl
 avoidRules:
+  - a blond artist hero with a pet rat
   - speech bubbles or lettering
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -44,13 +45,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: speech bubbles or lettering, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a blond artist hero with a pet rat, speech bubbles or lettering, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -65,6 +69,7 @@ taxonomy:
     - comic-panel
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-191
 packId: pack_12
-name: Ghost Ship Boarding Gameplay
+name: Pillars of Eternity II 2018 - Obsidian Painted Deadfire
 styleAnchors:
-  - Ghost Ship Boarding Gameplay
+  - Pillars of Eternity II 2018 - Obsidian Painted Deadfire
   - haunted ship action gameplay
   - ghost ship
-displayName: Ghost Ship Boarding Gameplay
+displayName: Pillars of Eternity II 2018 - Obsidian Painted Deadfire
 category: 9. Gothic & Dungeon Gameplay
 domain: haunted ship action gameplay
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - ghost-ship
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Ghost ship boarding gameplay: an original third-person capture of boarding a spectral ship in fog, glowing ghost crew, rotting rigging and green lanterns.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject boarding a spectral ship in fog.
-  color_and_tone: Fog grey, ghost green and dark wood, kept consistent across the whole image.
-  lighting_and_shadow: Spectral glow and lantern light, kept consistent across the whole image.
-  texture_and_material: Rotting wood, torn sails and translucent spirits, kept consistent across the whole image.
-  camera_and_composition: Third-person from the rail or deck, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with eerie maritime dread.
-  rendering_and_quality: Clean capture with no UI, kept consistent across the whole image.
-  creative_brief: "Ghost ship boarding gameplay: an original third-person capture of boarding a spectral ship in fog, glowing ghost crew, rotting rigging and green lanterns. Carry it through ghost ship, spectral crew, fog, green lanterns. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: ghost ship; spectral crew; fog; green lanterns
+  aesthetic: 'Obsidian Entertainment Pillars of Eternity II: Deadfire (2018) look: painted isometric RPG of an archipelago, ship boarding, pirates, ghosts and rich painted scenes.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as small painted isometric pirates and ghosts. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Fog grey, ghost green and sea teal, true to the Pillars of Eternity II 2018 palette.
+  lighting_and_shadow: Painted fog light, lit the way Pillars of Eternity II 2018 lights its levels.
+  texture_and_material: Painted isometric scenes, with the in-engine surface finish of Pillars of Eternity II 2018.
+  camera_and_composition: Isometric deck view, framed the way Pillars of Eternity II 2018 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with eerie piratical adventure.
+  rendering_and_quality: Authentic painted isometric RPG screen, matching real Pillars of Eternity II 2018 screenshots.
+  creative_brief: 'Obsidian Entertainment Pillars of Eternity II: Deadfire (2018) look: painted isometric RPG of an archipelago, ship boarding, pirates, ghosts and rich painted scenes. Carry it through Deadfire painted isometric, pirates, ghosts. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Deadfire painted isometric; pirates; ghosts
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - ghost-ship
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

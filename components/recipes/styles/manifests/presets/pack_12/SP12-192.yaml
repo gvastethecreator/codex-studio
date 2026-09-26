@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-192
 packId: pack_12
-name: Cursed Forest Survival Gameplay
+name: Don't Starve 2013 - Klei Gothic Paper Cartoon
 styleAnchors:
-  - Cursed Forest Survival Gameplay
+  - Don't Starve 2013 - Klei Gothic Paper Cartoon
   - dark forest survival gameplay
   - campfire safe zone
-displayName: Cursed Forest Survival Gameplay
+displayName: Don't Starve 2013 - Klei Gothic Paper Cartoon
 category: 9. Gothic & Dungeon Gameplay
 domain: dark forest survival gameplay
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,22 @@ tags:
   - cursed-forest
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Cursed forest survival gameplay: an original third-person capture of a survivor in a dark twisted forest, campfire as the only safe zone and shapes between the trees.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject surviving near a campfire in a twisted dark forest.
-  color_and_tone: Black trees, ember orange and cold blue night.
-  lighting_and_shadow: Campfire light fading into darkness, kept consistent across the whole image.
-  texture_and_material: Twisted bark, dead leaves and ash, kept consistent across the whole image.
-  camera_and_composition: Third-person view from behind the fire, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with fragile safety, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no UI, kept consistent across the whole image.
-  creative_brief: "Cursed forest survival gameplay: an original third-person capture of a survivor in a dark twisted forest, campfire as the only safe zone and shapes between the trees. Carry it through campfire safe zone, twisted forest, darkness, shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: campfire safe zone; twisted forest; darkness; shapes
+  aesthetic: 'Klei Entertainment Don''t Starve (2013) look: gothic Tim Burton-like paper cartoon survival, scratchy ink lines, campfire circles, shadow creatures and twisted forests.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as scratchy gothic paper cartoon survivors. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Muted sepia and firelight, true to the Don't Starve 2013 palette.
+  lighting_and_shadow: Campfire circle in darkness, lit the way Don't Starve 2013 lights its levels.
+  texture_and_material: Scratchy ink and paper, with the in-engine surface finish of Don't Starve 2013.
+  camera_and_composition: Three-quarter overhead view, framed the way Don't Starve 2013 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with eerie gothic survival.
+  rendering_and_quality: Authentic gothic survival screen, matching real Don't Starve 2013 screenshots.
+  creative_brief: 'Klei Entertainment Don''t Starve (2013) look: gothic Tim Burton-like paper cartoon survival, scratchy ink lines, campfire circles, shadow creatures and twisted forests. Carry it through Don''t Starve paper, campfire, shadows. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Don't Starve paper; campfire; shadows
 avoidRules:
+  - a gentleman scientist with spiky hair
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a gentleman scientist with spiky hair, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +68,7 @@ taxonomy:
     - cursed-forest
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-139
 packId: pack_12
-name: Kart Racing Item Chaos Capture
+name: Crash Team Racing 2019 - Beenox Cartoon Kart
 styleAnchors:
-  - Kart Racing Item Chaos Capture
+  - Crash Team Racing 2019 - Beenox Cartoon Kart
   - cartoon kart racing screenshot
   - cartoon karts
-displayName: Kart Racing Item Chaos Capture
+displayName: Crash Team Racing 2019 - Beenox Cartoon Kart
 category: 5. Speed, Sport & Competitive Arenas
 domain: cartoon kart racing screenshot
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,18 +20,21 @@ tags:
   - kart-chaos
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Kart racing item chaos capture: an original cartoon kart race screenshot with bouncy karts, item explosions, banana peels and colorful tracks through fantasy lands.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject driving a cartoon kart amid flying items and rivals.
-  color_and_tone: Saturated primary colors and sunny skies, kept consistent across the whole image.
-  lighting_and_shadow: Bright cartoon light with small shadows, kept consistent across the whole image.
-  texture_and_material: Glossy karts, grass, candy-like tracks and explosions, kept consistent across the whole image.
-  camera_and_composition: Chase camera behind the kart with rivals nearby.
-  atmosphere_and_mood: Keep the requested mood with gleeful chaos, kept consistent across the whole image.
-  rendering_and_quality: Clean cartoon capture with no HUD text, kept consistent across the whole image.
-  creative_brief: "Kart racing item chaos capture: an original cartoon kart race screenshot with bouncy karts, item explosions, banana peels and colorful tracks through fantasy lands. Carry it through cartoon karts, item explosions, fantasy track, chase camera. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: cartoon karts; item explosions; fantasy track; chase camera
+  aesthetic: 'Beenox Crash Team Racing Nitro-Fueled (2019) look: bright cartoon kart racing, drifting sparks, item chaos, volcano and jungle tracks, and animated-film characters.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people and animals as cartoon kart racers with big expressions. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Bright jungle green, lava orange and sky blue.
+  lighting_and_shadow: Bright cartoon light with drift sparks, lit the way Crash Team Racing 2019 lights its levels.
+  texture_and_material: Glossy stylized cartoon surfaces, with the in-engine surface finish of Crash Team Racing 2019.
+  camera_and_composition: Chase camera behind the kart, framed the way Crash Team Racing 2019 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with chaotic kart fun.
+  rendering_and_quality: Authentic cartoon kart racer screen, matching real Crash Team Racing 2019 screenshots.
+  creative_brief: 'Beenox Crash Team Racing Nitro-Fueled (2019) look: bright cartoon kart racing, drifting sparks, item chaos, volcano and jungle tracks, and animated-film characters. Carry it through CTR cartoon karts, drift sparks, item chaos. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: CTR cartoon karts; drift sparks; item chaos
 avoidRules:
+  - an orange bandicoot
+  - existing kart racers
   - existing game characters, logos or levels
   - readable interface text
   - real brand sponsors
@@ -43,13 +46,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: an orange bandicoot, existing kart racers, existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +70,7 @@ taxonomy:
     - kart-chaos
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

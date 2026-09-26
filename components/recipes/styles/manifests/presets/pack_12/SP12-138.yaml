@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-138
 packId: pack_12
-name: Snowfield Artillery Duel Capture
+name: Valkyria Chronicles 2008 - Sega Canvas Watercolor War
 styleAnchors:
-  - Snowfield Artillery Duel Capture
+  - Valkyria Chronicles 2008 - Sega Canvas Watercolor War
   - winter artillery battle screenshot
   - snowfield
-displayName: Snowfield Artillery Duel Capture
+displayName: Valkyria Chronicles 2008 - Sega Canvas Watercolor War
 category: 4. Sieges, Warfronts & Last Stands
 domain: winter artillery battle screenshot
-version: 1
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,19 +20,20 @@ tags:
   - snow-artillery
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Snowfield artillery duel capture: an original third-person screenshot of cannons firing across a white snowfield, black smoke, fir trees and distant muzzle flashes.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject crewing or dodging cannons across a snowfield.
-  color_and_tone: White snow, black smoke and orange muzzle flash.
-  lighting_and_shadow: Overcast light with bright flashes, kept consistent across the whole image.
-  texture_and_material: Snow, cannon iron, wooden wheels and smoke, kept consistent across the whole image.
-  camera_and_composition: Wide view across the snowfield, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with cold booming tension.
-  rendering_and_quality: Clean capture without gore or HUD, kept consistent across the whole image.
-  creative_brief: "Snowfield artillery duel capture: an original third-person screenshot of cannons firing across a white snowfield, black smoke, fir trees and distant muzzle flashes. Carry it through snowfield, cannons, black smoke, muzzle flashes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: snowfield; cannons; black smoke; muzzle flashes
+  aesthetic: 'Sega Valkyria Chronicles (2008) look: CANVAS engine watercolor war, pencil hatching lines on 3D, paper texture, WWII-inspired European battlefields and giant iron land fortresses.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as anime soldiers with sketchy watercolor shading. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Soft watercolor snow, olive and sepia, true to the Valkyria Chronicles 2008 palette.
+  lighting_and_shadow: Watercolor wash light with paper grain, lit the way Valkyria Chronicles 2008 lights its levels.
+  texture_and_material: Pencil hatching over watercolor paper, with the in-engine surface finish of Valkyria Chronicles 2008.
+  camera_and_composition: Third-person tactical view, framed the way Valkyria Chronicles 2008 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with bittersweet wartime tactics.
+  rendering_and_quality: Authentic watercolor strategy screen, matching real Valkyria Chronicles 2008 screenshots.
+  creative_brief: 'Sega Valkyria Chronicles (2008) look: CANVAS engine watercolor war, pencil hatching lines on 3D, paper texture, WWII-inspired European battlefields and giant iron land fortresses. Carry it through Valkyria CANVAS watercolor, hatching, iron fortresses. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Valkyria CANVAS watercolor; hatching; iron fortresses
 avoidRules:
-  - gore
+  - a blue-haired Valkyria with a lance and shield
   - existing game characters, logos or levels
   - readable interface text
   - readable text
@@ -43,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: gore, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a blue-haired Valkyria with a lance and shield, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +68,7 @@ taxonomy:
     - snow-artillery
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

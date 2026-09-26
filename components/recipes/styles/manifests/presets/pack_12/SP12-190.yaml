@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-190
 packId: pack_12
-name: Pixel Roguelike Descent Gameplay
+name: Noita 2020 - Nolla Games Falling-Pixel Physics
 styleAnchors:
-  - Pixel Roguelike Descent Gameplay
+  - Noita 2020 - Nolla Games Falling-Pixel Physics
   - 2D pixel roguelike gameplay
   - pixel caverns
-displayName: Pixel Roguelike Descent Gameplay
+displayName: Noita 2020 - Nolla Games Falling-Pixel Physics
 category: 9. Gothic & Dungeon Gameplay
 domain: 2D pixel roguelike gameplay
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - pixel-roguelike
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Pixel roguelike descent gameplay: an original 2D pixel capture of a tiny adventurer descending through procedurally generated caverns full of traps and odd creatures.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject as a tiny pixel adventurer descending through caverns.
-  color_and_tone: Earthy pixel palette with bright treasure, kept consistent across the whole image.
-  lighting_and_shadow: Torch pixels and dark cave edges, kept consistent across the whole image.
-  texture_and_material: Chunky pixel rock, ropes and spikes, kept consistent across the whole image.
-  camera_and_composition: Side view of stacked cavern ledges, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with scrappy peril, kept consistent across the whole image.
-  rendering_and_quality: Crisp pixel capture with no UI, kept consistent across the whole image.
-  creative_brief: "Pixel roguelike descent gameplay: an original 2D pixel capture of a tiny adventurer descending through procedurally generated caverns full of traps and odd creatures. Carry it through pixel caverns, tiny adventurer, traps, descent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: pixel caverns; tiny adventurer; traps; descent
+  aesthetic: 'Nolla Games Noita (2020) look: side-view roguelite where every pixel is simulated, burning, flowing and falling, caves of liquid, fire and chaotic spells.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as tiny robed pixel wizards. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Deep cave dark with fire and toxic liquids.
+  lighting_and_shadow: Fire and spell glow, lit the way Noita 2020 lights its levels.
+  texture_and_material: Simulated pixel particles, with the in-engine surface finish of Noita 2020.
+  camera_and_composition: Side-view cave view, framed the way Noita 2020 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with chaotic alchemical danger.
+  rendering_and_quality: Authentic falling-pixel roguelite screen, matching real Noita 2020 screenshots.
+  creative_brief: 'Nolla Games Noita (2020) look: side-view roguelite where every pixel is simulated, burning, flowing and falling, caves of liquid, fire and chaotic spells. Carry it through Noita pixel physics, fire, liquids. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Noita pixel physics; fire; liquids
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - pixel-roguelike
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

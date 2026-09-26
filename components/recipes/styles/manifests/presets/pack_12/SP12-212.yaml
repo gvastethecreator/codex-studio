@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-212
 packId: pack_12
-name: Cargo-Laden Wasteland Trek Gameplay
+name: Jusant 2023 - Don't Nod Climbing Pilgrimage
 styleAnchors:
-  - Cargo-Laden Wasteland Trek Gameplay
+  - Jusant 2023 - Don't Nod Climbing Pilgrimage
   - burdened traversal gameplay
   - towering pack
-displayName: Cargo-Laden Wasteland Trek Gameplay
+displayName: Jusant 2023 - Don't Nod Climbing Pilgrimage
 category: 11. Psychological & Tactical Gameplay
 domain: burdened traversal gameplay
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - cargo-trek
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Cargo-laden wasteland trek gameplay: an original third-person capture of a lone porter carrying a towering pack across a vast empty landscape of rock and moss.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject burdened by a huge pack crossing a vast landscape.
-  color_and_tone: Muted greens, grey rock and pale sky, kept consistent across the whole image.
-  lighting_and_shadow: Overcast diffuse light, kept consistent across the whole image.
-  texture_and_material: Moss, wet rock, straps and cargo cases, kept consistent across the whole image.
-  camera_and_composition: Wide third-person with a small figure, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with lonely perseverance, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no UI, kept consistent across the whole image.
-  creative_brief: "Cargo-laden wasteland trek gameplay: an original third-person capture of a lone porter carrying a towering pack across a vast empty landscape of rock and moss. Carry it through towering pack, vast landscape, lone porter, moss and rock. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: towering pack; vast landscape; lone porter; moss and rock
+  aesthetic: 'Don''t Nod Jusant (2023) look: stylized painterly climbing up a huge tower in a drought world, a small climber with a pack, ropes, moss and whale-like creatures drifting in the air.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as small stylized climbers with big packs. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Soft stone, moss green and sky blue, true to the Jusant 2023 palette.
+  lighting_and_shadow: Soft painterly light, lit the way Jusant 2023 lights its levels.
+  texture_and_material: Painterly stone and cloth, with the in-engine surface finish of Jusant 2023.
+  camera_and_composition: Wide climbing view, framed the way Jusant 2023 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with quiet meditative ascent.
+  rendering_and_quality: Authentic painterly climbing screen, matching real Jusant 2023 screenshots.
+  creative_brief: 'Don''t Nod Jusant (2023) look: stylized painterly climbing up a huge tower in a drought world, a small climber with a pack, ropes, moss and whale-like creatures drifting in the air. Carry it through Jusant climbing, drought world, floating whales. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Jusant climbing; drought world; floating whales
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - cargo-trek
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP12-016
 packId: pack_12
-name: Dishonored Aristocrat Stealth
+name: Dishonored 2012 - Arkane Painterly Dunwall
 styleAnchors:
-  - Dishonored 2 gameplay screenshots
+  - Dishonored 2012 - Arkane Painterly Dunwall
   - Dishonored Aristocrat Stealth
-displayName: Dishonored Aristocrat Stealth
+displayName: Dishonored 2012 - Arkane Painterly Dunwall
 category: 7. Heists, Horror & Underworld Runs
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,48 +23,18 @@ tags:
   - hud-contextual-hud
   - reference-title
 visualDna:
-  aesthetic: 'In-game screenshot look informed by Dishonored 2 gameplay: first-person stealth immersive-sim capture with aristocratic interiors, mask-like silhouettes, vertical routes, and assassination sandbox clarity. It never recreates an exact official level, character, logo or marketing art.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable Dishonored 2-adjacent game
-    screenshot subject: keep clear role silhouette, player/enemy/object function, scale
-    relationship, hitbox-like readability, and interaction affordances without copying source
-    characters or named IP elements.
-  color_and_tone: >-
-    Use a Dishonored 2-informed palette: oil-paint teal, tobacco brown, brass gold, blood red,
-    marble cream, and cold moon blue. Keep value grouping legible at gameplay distance, with color
-    accents behaving like route, danger, pickup, team, magic, or objective cues rather than
-    decorative wash.
-  lighting_and_shadow: >-
-    Light the image through window shafts, candle pools, supernatural blue abilities, hard guard
-    silhouettes, and dusty indoor contrast. Lighting must clarify the playable route, threat, focal
-    subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from painted plaster, brass machinery, velvet curtains, worn stone, whale-oil
-    devices, masks, and aristocratic clutter. Materials should feel like in-engine game assets
-    captured during play, with enough texture identity to separate props, terrain, characters,
-    hazards, and interactables.
-  camera_and_composition: >-
-    Compose with first-person stealth framing with ledges, guard patrol sightlines, blink routes,
-    props, and alternate entry paths. The frame should read as a plausible gameplay capture; include
-    UI/HUD only when it matches the source game's visual logic and improves clarity.
-  atmosphere_and_mood: 'Dishonored 2-derived mood: decadent, predatory, conspiratorial, elegant, and violent; it follows the tone of the requested scene without forcing a fixed mission or story.'
-  rendering_and_quality: >-
-    Finish as a coherent in-engine screenshot style, not concept art: ability icons, mana/health
-    bars, objective markers, and stealth cues can appear if they feel like immersive-sim HUD.
-    Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake
-    logos, stock-photo polish, or random interface clutter.
-  key_features: >-
-    Dishonored 2 gameplay screenshots; first-person stealth immersive-sim capture with aristocratic
-    interiors, mask-like silhouettes, vertical routes, and assassination sandbox clarity; oil-paint
-    teal, tobacco brown, brass gold, blood red, marble cream, and cold moon blue; window shafts,
-    candle pools, supernatural blue abilities, hard guard silhouettes, and dusty indoor contrast;
-    painted plaster, brass machinery, velvet curtains, worn stone, whale-oil devices, masks, and
-    aristocratic clutter; first-person stealth framing with ledges, guard patrol sightlines, blink
-    routes, props, and alternate entry paths; decadent, predatory, conspiratorial, elegant, and
-    violent; HUD guidance: ability icons, mana/health bars, objective markers, and stealth cues can
-    appear if they feel like immersive-sim HUD
-  creative_brief: "Dishonored Aristocrat Stealth: in-game screenshot language informed by Dishonored 2, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'Arkane Studios Dishonored (2012) look: first-person stealth in a painterly whale-oil industrial city designed by Viktor Antonov, exaggerated faces, heavy brushstroke textures and supernatural powers.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people with painterly exaggerated faces, long jaws and Victorian industrial clothing, seen from first person. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Whale-oil amber, sickly green, bruised blue and aristocratic red.
+  lighting_and_shadow: Hazy whale-oil lamps and soft painterly shafts through smoke.
+  texture_and_material: Visible painterly brushstroke textures on stone, cloth and metal.
+  camera_and_composition: First-person view with a blade hand and a power hand.
+  atmosphere_and_mood: Keep the requested mood with decadent plague-city intrigue.
+  rendering_and_quality: Authentic early-2010s painterly immersive-sim screen, matching real Dishonored 2012 screenshots.
+  key_features: Dishonored painterly; whale-oil city; exaggerated faces
+  creative_brief: 'Arkane Studios Dishonored (2012) look: first-person stealth in a painterly whale-oil industrial city designed by Viktor Antonov, exaggerated faces, heavy brushstroke textures and supernatural powers. Carry it through Dishonored painterly, whale-oil city, exaggerated faces. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
+  - a metal skull mask with lenses
   - watermark
   - logo
   - copyright mark
@@ -91,23 +61,19 @@ avoidRules:
   - copied box art composition
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
+  - text
+  - readable labels
+  - franchise likeness
+  - real person likeness
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-016.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: a metal skull mask with lenses, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts
   referenceGame: Dishonored 2
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    ability icons, mana/health bars, objective markers, and stealth cues can appear if they feel
-    like immersive-sim HUD
+  hudGuidance: ability icons, mana/health bars, objective markers, and stealth cues can appear if they feel like immersive-sim HUD
   renderFamily: first-person-immersive
   cameraFamily: first-person
   hudMode: contextual-hud

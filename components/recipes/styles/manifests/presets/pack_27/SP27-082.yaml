@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Cyan Myst (1993) look: still pre-rendered 3D island scenes, early CGI surfaces, strange mechanical puzzles, libraries and quiet surreal emptiness.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a still pre-rendered early CGI scene of a quiet surreal island. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Early CGI greens, stone grey and brass, true to the Myst 1993 palette.
-  lighting_and_shadow: Soft early CGI lighting with ray-traced gloss, lit the way Myst 1993 lights its scenes.
+  lighting_and_shadow: Soft early CGI lighting with ray-traced gloss, lit the way Myst 1993 lights its levels.
   texture_and_material: Early nineties pre-rendered CGI with dithered 256 colors.
-  camera_and_composition: Still first-person node views, framed the way Myst 1993 composes its shots and pages.
+  camera_and_composition: Still first-person node views, framed the way Myst 1993 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with quiet surreal mystery.
-  rendering_and_quality: Pre-rendered early nineties CGI still, in the recognizable hand of Myst 1993.
+  rendering_and_quality: Pre-rendered early nineties CGI still, matching real Myst 1993 screenshots.
   creative_brief: 'Cyan Myst (1993) look: still pre-rendered 3D island scenes, early CGI surfaces, strange mechanical puzzles, libraries and quiet surreal emptiness. Carry it through Myst pre-rendered, still nodes, mechanical puzzles, island. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Myst pre-rendered; still nodes; mechanical puzzles; island
 avoidRules:
@@ -45,13 +45,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

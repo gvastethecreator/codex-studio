@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Sega AM2 Out Run (1986) look: sprite-scaled palm trees and roadside objects, branching sunny coastal roads, a red convertible from behind, bright blue skies and summer optimism.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject driving a sprite-scaled road from behind through sunny coastal scenery. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Bright sky blue, beach sand, palm green and convertible red.
-  lighting_and_shadow: Bright summer arcade sunlight, lit the way Out Run 1986 lights its scenes.
-  texture_and_material: Sprite-scaled pixel art with crisp CRT pixels, with the surface finish of Out Run 1986.
+  lighting_and_shadow: Bright summer arcade sunlight, lit the way Out Run 1986 lights its levels.
+  texture_and_material: Sprite-scaled pixel art with crisp CRT pixels, with the in-engine surface finish of Out Run 1986.
   camera_and_composition: Low chase view behind the vehicle on a curving road.
   atmosphere_and_mood: Keep the requested mood with breezy summer escape.
-  rendering_and_quality: Authentic mid-eighties arcade racing screen, in the recognizable hand of Out Run 1986.
+  rendering_and_quality: Authentic mid-eighties arcade racing screen, matching real Out Run 1986 screenshots.
   creative_brief: 'Sega AM2 Out Run (1986) look: sprite-scaled palm trees and roadside objects, branching sunny coastal roads, a red convertible from behind, bright blue skies and summer optimism. Carry it through Out Run sprite scaling, coastal road, palm trees, convertible. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Out Run sprite scaling; coastal road; palm trees; convertible
 avoidRules:
@@ -46,13 +46,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: a red Ferrari Testarossa convertible, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a red Ferrari Testarossa convertible, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

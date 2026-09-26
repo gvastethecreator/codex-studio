@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-149
 packId: pack_12
-name: Bow Hunt Stalking Capture
+name: Far Cry Primal 2016 - Ubisoft Stone Age Hunt
 styleAnchors:
-  - Bow Hunt Stalking Capture
+  - Far Cry Primal 2016 - Ubisoft Stone Age Hunt
   - first-person bow hunting screenshot
   - drawn bow
-displayName: Bow Hunt Stalking Capture
+displayName: Far Cry Primal 2016 - Ubisoft Stone Age Hunt
 category: 6. Wilderness Hunts & Harsh Frontiers
 domain: first-person bow hunting screenshot
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - bow-stalk
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Bow hunt stalking capture: an original first-person screenshot of drawing a bow in dense forest, arrow nocked, prey partially hidden in ferns and dappled light.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject from the hunter's first-person view with a drawn bow.
-  color_and_tone: Forest greens, bark browns and golden light shafts.
-  lighting_and_shadow: Dappled light through the canopy, kept consistent across the whole image.
-  texture_and_material: Bowstring, fletching, ferns and moss, kept consistent across the whole image.
-  camera_and_composition: First-person with bow in foreground, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with silent predatory patience.
-  rendering_and_quality: Clean capture without gore or HUD, kept consistent across the whole image.
-  creative_brief: "Bow hunt stalking capture: an original first-person screenshot of drawing a bow in dense forest, arrow nocked, prey partially hidden in ferns and dappled light. Carry it through drawn bow, first-person, dense forest, hidden prey. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: drawn bow; first-person; dense forest; hidden prey
+  aesthetic: 'Ubisoft Far Cry Primal (2016) look: first-person Stone Age hunting in lush Mesolithic valleys, bows and spears, megafauna, bone ornaments and fire.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as Stone Age hunters in furs and bone ornaments. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Forest green, fur brown and fire amber, true to the Far Cry Primal 2016 palette.
+  lighting_and_shadow: Dappled forest light, lit the way Far Cry Primal 2016 lights its levels.
+  texture_and_material: Realistic fur, bone and foliage, with the in-engine surface finish of Far Cry Primal 2016.
+  camera_and_composition: First-person bow view, framed the way Far Cry Primal 2016 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with primal tense stalking.
+  rendering_and_quality: Authentic open-world hunting screen, matching real Far Cry Primal 2016 screenshots.
+  creative_brief: 'Ubisoft Far Cry Primal (2016) look: first-person Stone Age hunting in lush Mesolithic valleys, bows and spears, megafauna, bone ornaments and fire. Carry it through Far Cry Primal hunt, Stone Age, bow. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Far Cry Primal hunt; Stone Age; bow
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - bow-stalk
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

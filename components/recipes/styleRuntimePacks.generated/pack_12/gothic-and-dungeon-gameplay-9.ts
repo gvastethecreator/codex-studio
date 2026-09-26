@@ -179,36 +179,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-179',
-    name: 'Top-Down Roguelite Crypt Gameplay',
-    displayName: 'Top-Down Roguelite Crypt Gameplay',
+    name: 'Children of Morta 2019 - Dead Mage Painterly Pixel',
+    displayName: 'Children of Morta 2019 - Dead Mage Painterly Pixel',
     styleAnchors: [
-      'Top-Down Roguelite Crypt Gameplay',
+      'Children of Morta 2019 - Dead Mage Painterly Pixel',
       'overhead roguelite dungeon gameplay',
       'overhead crypt',
     ],
     category: '9. Gothic & Dungeon Gameplay',
     domain: 'overhead roguelite dungeon gameplay',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Top-down roguelite crypt gameplay: an original overhead dungeon-run capture with a small hero, clustered enemies, glowing attack arcs and procedurally tiled crypt rooms.',
+        'Dead Mage Children of Morta (2019) look: top-down action roguelite in detailed painterly pixel art, family of heroes, crypts and caves with glowing spell effects.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject as a small overhead figure in a procedurally tiled crypt room.',
-      color_and_tone:
-        'Dark stone with vivid attack colors, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as detailed painterly pixel heroes seen from above. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Warm torch amber, crypt teal and spell glow.',
       lighting_and_shadow:
-        'Torch pools and glowing attack effects, kept consistent across the whole image.',
+        'Pixel torchlight and spell glow, lit the way Children of Morta 2019 lights its levels.',
       texture_and_material:
-        'Tiled floors, bones, urns and particle arcs, kept consistent across the whole image.',
+        'Painterly pixel art, with the in-engine surface finish of Children of Morta 2019.',
       camera_and_composition:
-        'Overhead view with room walls framing, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with frantic run-based tension.',
+        'Top-down roguelite view, framed the way Children of Morta 2019 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with warm heroic struggle.',
       rendering_and_quality:
-        'Clean gameplay capture with no UI text, kept consistent across the whole image.',
+        'Authentic pixel roguelite screen, matching real Children of Morta 2019 screenshots.',
       creative_brief:
-        "Top-down roguelite crypt gameplay: an original overhead dungeon-run capture with a small hero, clustered enemies, glowing attack arcs and procedurally tiled crypt rooms. Carry it through overhead crypt, glowing attack arcs, enemy clusters, tiled rooms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'overhead crypt; glowing attack arcs; enemy clusters; tiled rooms',
+        "Dead Mage Children of Morta (2019) look: top-down action roguelite in detailed painterly pixel art, family of heroes, crypts and caves with glowing spell effects. Carry it through Children of Morta pixels, crypts, spell glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Children of Morta pixels; crypts; spell glow',
     },
     ui: {
       previewStatus: 'pending',
@@ -216,35 +215,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-180',
-    name: 'Moonlit Castle Side-View Gameplay',
-    displayName: 'Moonlit Castle Side-View Gameplay',
+    name: 'Salt and Sanctuary 2016 - Ska Studios Grim Hand-Drawn',
+    displayName: 'Salt and Sanctuary 2016 - Ska Studios Grim Hand-Drawn',
     styleAnchors: [
-      'Moonlit Castle Side-View Gameplay',
+      'Salt and Sanctuary 2016 - Ska Studios Grim Hand-Drawn',
       'side-view gothic exploration gameplay',
       'side view',
     ],
     category: '9. Gothic & Dungeon Gameplay',
     domain: 'side-view gothic exploration gameplay',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Moonlit castle side-view gameplay: an original side-view exploration capture of a lone hero in towering gothic halls, stained moonlight, candles and hidden passages.',
+        'Ska Studios Salt and Sanctuary (2016) look: side-view hand-drawn grim fantasy, thick-lined gothic characters, towering bosses and moody castle halls.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject in a side-view gothic castle corridor.',
-      color_and_tone: 'Deep blue moonlight, crimson drapes and candle gold.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as thick-lined hand-drawn grim warriors. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        'Moonlit grey, rust and blood red, true to the Salt and Sanctuary 2016 palette.',
       lighting_and_shadow:
-        'Moonlight through tall windows and candle glow, kept consistent across the whole image.',
+        'Stained moonlight and shadows, lit the way Salt and Sanctuary 2016 lights its levels.',
       texture_and_material:
-        'Carved stone, velvet and iron, kept consistent across the whole image.',
+        'Hand-drawn inked textures, with the in-engine surface finish of Salt and Sanctuary 2016.',
       camera_and_composition:
-        'Side-on with parallax background halls, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with lonely gothic grandeur.',
+        'Side-view castle view, framed the way Salt and Sanctuary 2016 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with grim gothic dread.',
       rendering_and_quality:
-        'Clean gameplay capture with no UI text, kept consistent across the whole image.',
+        'Authentic hand-drawn action screen, matching real Salt and Sanctuary 2016 screenshots.',
       creative_brief:
-        "Moonlit castle side-view gameplay: an original side-view exploration capture of a lone hero in towering gothic halls, stained moonlight, candles and hidden passages. Carry it through side view, moonlit halls, parallax, candles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'side view; moonlit halls; parallax; candles',
+        "Ska Studios Salt and Sanctuary (2016) look: side-view hand-drawn grim fantasy, thick-lined gothic characters, towering bosses and moody castle halls. Carry it through Salt and Sanctuary hand-drawn, side-view, bosses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Salt and Sanctuary hand-drawn; side-view; bosses',
     },
     ui: {
       previewStatus: 'pending',
@@ -252,36 +252,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-181',
-    name: 'Real-Time First-Person Crypt Gameplay',
-    displayName: 'Real-Time First-Person Crypt Gameplay',
+    name: 'Legend of Grimrock 2012 - Almost Human Grid Dungeon',
+    displayName: 'Legend of Grimrock 2012 - Almost Human Grid Dungeon',
     styleAnchors: [
-      'Real-Time First-Person Crypt Gameplay',
+      'Legend of Grimrock 2012 - Almost Human Grid Dungeon',
       'first-person dungeon crawler gameplay',
       'first-person hands',
     ],
     category: '9. Gothic & Dungeon Gameplay',
     domain: 'first-person dungeon crawler gameplay',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Real-time first-person crypt gameplay: an original first-person dungeon crawler capture with a hand holding a torch and a weapon, crumbling crypt corridors and lurking shapes.',
+        'Almost Human Legend of Grimrock (2012) look: first-person grid dungeon crawler with stone corridors, torches, pressure plates and real-time monsters.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject from first person with a torch and weapon in a crypt.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people and monsters in stone corridors seen from first person. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Torch orange against cold grey stone, kept consistent across the whole image.',
-      lighting_and_shadow: 'Torch flicker and deep shadow, kept consistent across the whole image.',
+        'Torch amber, stone grey and moss green, true to the Legend of Grimrock 2012 palette.',
+      lighting_and_shadow:
+        'Torchlight in stone corridors, lit the way Legend of Grimrock 2012 lights its levels.',
       texture_and_material:
-        'Wet stone, cobwebs and old bones, kept consistent across the whole image.',
+        'Detailed stone and iron, with the in-engine surface finish of Legend of Grimrock 2012.',
       camera_and_composition:
-        'First-person with hands in view, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with claustrophobic danger, kept consistent across the whole image.',
+        'First-person grid view, framed the way Legend of Grimrock 2012 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with claustrophobic dungeon tension.',
       rendering_and_quality:
-        'Clean capture with no UI text, kept consistent across the whole image.',
+        'Authentic dungeon crawler screen, matching real Legend of Grimrock 2012 screenshots.',
       creative_brief:
-        "Real-time first-person crypt gameplay: an original first-person dungeon crawler capture with a hand holding a torch and a weapon, crumbling crypt corridors and lurking shapes. Carry it through first-person hands, torch, crypt corridor, lurking shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'first-person hands; torch; crypt corridor; lurking shapes',
+        "Almost Human Legend of Grimrock (2012) look: first-person grid dungeon crawler with stone corridors, torches, pressure plates and real-time monsters. Carry it through Grimrock grid dungeon, torches, stone corridors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Grimrock grid dungeon; torches; stone corridors',
     },
     ui: {
       previewStatus: 'pending',
@@ -289,35 +289,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-182',
-    name: 'Lock-On Boss Duel Gameplay',
-    displayName: 'Lock-On Boss Duel Gameplay',
+    name: 'Elden Ring 2022 - FromSoftware Lands Between',
+    displayName: 'Elden Ring 2022 - FromSoftware Lands Between',
     styleAnchors: [
-      'Lock-On Boss Duel Gameplay',
+      'Elden Ring 2022 - FromSoftware Lands Between',
       'third-person boss battle gameplay',
       'lock-on camera',
     ],
     category: '9. Gothic & Dungeon Gameplay',
     domain: 'third-person boss battle gameplay',
     negativePrompt:
-      'health bars, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing Elden Ring bosses, a giant golden tree, health bars, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Lock-on boss duel gameplay: an original third-person capture of a small warrior locked onto a colossal boss in a ruined arena, dodge roll, fog and dramatic scale.',
+        'FromSoftware Elden Ring (2022) look: third-person open-world dark fantasy, golden Erdtree light, colossal bosses, ruined arenas and lock-on duels.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject locked onto a huge boss in a third-person duel.',
-      color_and_tone: 'Grey fog, dark stone and one vivid boss accent.',
-      lighting_and_shadow: 'Dramatic backlight and dust, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as weathered Tarnished warriors in mixed armor. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        'Golden light, ash grey and flame orange, true to the Elden Ring 2022 palette.',
+      lighting_and_shadow:
+        'Golden tree glow and fire, lit the way Elden Ring 2022 lights its levels.',
       texture_and_material:
-        'Worn armor, ruined stone and boss hide, kept consistent across the whole image.',
+        'Weathered stone and armor, with the in-engine surface finish of Elden Ring 2022.',
       camera_and_composition:
-        'Over-the-shoulder with boss filling the frame, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with punishing grandeur, kept consistent across the whole image.',
+        'Third-person lock-on view, framed the way Elden Ring 2022 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with epic desperate duel.',
       rendering_and_quality:
-        'Clean capture with no health bars, kept consistent across the whole image.',
+        'Authentic modern dark fantasy screen, matching real Elden Ring 2022 screenshots.',
       creative_brief:
-        "Lock-on boss duel gameplay: an original third-person capture of a small warrior locked onto a colossal boss in a ruined arena, dodge roll, fog and dramatic scale. Carry it through lock-on camera, colossal boss, dodge roll, ruined arena. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'lock-on camera; colossal boss; dodge roll; ruined arena',
+        "FromSoftware Elden Ring (2022) look: third-person open-world dark fantasy, golden Erdtree light, colossal bosses, ruined arenas and lock-on duels. Carry it through Elden Ring bosses, golden light, lock-on. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Elden Ring bosses; golden light; lock-on',
     },
     ui: {
       previewStatus: 'pending',
@@ -325,37 +326,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-183',
-    name: 'Twin-Stick Dungeon Shooter Gameplay',
-    displayName: 'Twin-Stick Dungeon Shooter Gameplay',
+    name: 'Enter the Gungeon 2016 - Dodge Roll Pixel Bullet Hell',
+    displayName: 'Enter the Gungeon 2016 - Dodge Roll Pixel Bullet Hell',
     styleAnchors: [
-      'Twin-Stick Dungeon Shooter Gameplay',
+      'Enter the Gungeon 2016 - Dodge Roll Pixel Bullet Hell',
       'overhead dungeon shooter gameplay',
       'overhead',
     ],
     category: '9. Gothic & Dungeon Gameplay',
     domain: 'overhead dungeon shooter gameplay',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'bullet-shaped enemies with guns, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Twin-stick dungeon shooter gameplay: an original overhead capture of a hero firing magical bullets in every direction through a dungeon full of bullet-hell enemies.',
+        'Dodge Roll Enter the Gungeon (2016) look: top-down pixel bullet hell dungeon, gun puns, bullet-shaped enemies, spirals of glowing projectiles and dodge rolls.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject firing glowing projectiles from an overhead dungeon view.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as small pixel gunslingers seen from above. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Dark dungeon with neon bullet patterns, kept consistent across the whole image.',
+        'Dungeon grey and neon bullet colors, true to the Enter the Gungeon 2016 palette.',
       lighting_and_shadow:
-        'Glowing projectiles lighting the floor, kept consistent across the whole image.',
+        'Pixel light with bullet glow, lit the way Enter the Gungeon 2016 lights its levels.',
       texture_and_material:
-        'Pixel or low-poly dungeon tiles and particles, kept consistent across the whole image.',
+        'Detailed pixel art, with the in-engine surface finish of Enter the Gungeon 2016.',
       camera_and_composition:
-        'Overhead view with dense bullet patterns, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with frantic playfulness, kept consistent across the whole image.',
+        'Top-down dungeon view, framed the way Enter the Gungeon 2016 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with frantic bullet chaos.',
       rendering_and_quality:
-        'Clean capture with readable patterns, kept consistent across the whole image.',
+        'Authentic pixel bullet-hell screen, matching real Enter the Gungeon 2016 screenshots.',
       creative_brief:
-        "Twin-stick dungeon shooter gameplay: an original overhead capture of a hero firing magical bullets in every direction through a dungeon full of bullet-hell enemies. Carry it through overhead, bullet patterns, glowing shots, dungeon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'overhead; bullet patterns; glowing shots; dungeon',
+        "Dodge Roll Enter the Gungeon (2016) look: top-down pixel bullet hell dungeon, gun puns, bullet-shaped enemies, spirals of glowing projectiles and dodge rolls. Carry it through Gungeon pixel bullets, top-down, bosses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Gungeon pixel bullets; top-down; bosses',
     },
     ui: {
       previewStatus: 'pending',
@@ -363,35 +363,34 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-184',
-    name: 'Co-op Dungeon Brawler Gameplay',
-    displayName: 'Co-op Dungeon Brawler Gameplay',
+    name: 'Gauntlet 2014 - Arrowhead Co-op Dungeon',
+    displayName: 'Gauntlet 2014 - Arrowhead Co-op Dungeon',
     styleAnchors: [
-      'Co-op Dungeon Brawler Gameplay',
+      'Gauntlet 2014 - Arrowhead Co-op Dungeon',
       'four-player dungeon brawler gameplay',
       'four heroes',
     ],
     category: '9. Gothic & Dungeon Gameplay',
     domain: 'four-player dungeon brawler gameplay',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing Gauntlet heroes, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Co-op dungeon brawler gameplay: an original isometric capture of four color-coded heroes fighting side by side through a dungeon hall packed with monsters.',
+        'Arrowhead Game Studios Gauntlet (2014) look: isometric co-op dungeon brawler, four color-coded heroes, endless goblin swarms, spawners and treasure.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject as one of four color-coded heroes in a dungeon brawl.',
-      color_and_tone:
-        'Four distinct hero colors against dark stone, kept consistent across the whole image.',
-      lighting_and_shadow: 'Torchlight and spell flashes, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as four color-coded dungeon heroes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Hero red, blue, green and gold, true to the Gauntlet 2014 palette.',
+      lighting_and_shadow: 'Dungeon torchlight, lit the way Gauntlet 2014 lights its levels.',
       texture_and_material:
-        'Chunky armor, stone floors and loot, kept consistent across the whole image.',
+        'Stylized stone and gear, with the in-engine surface finish of Gauntlet 2014.',
       camera_and_composition:
-        'Isometric wide view of the party, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with rowdy teamwork, kept consistent across the whole image.',
-      rendering_and_quality: 'Clean capture with no UI, kept consistent across the whole image.',
+        'Isometric co-op view, framed the way Gauntlet 2014 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with chaotic co-op fun.',
+      rendering_and_quality:
+        'Authentic co-op dungeon screen, matching real Gauntlet 2014 screenshots.',
       creative_brief:
-        "Co-op dungeon brawler gameplay: an original isometric capture of four color-coded heroes fighting side by side through a dungeon hall packed with monsters. Carry it through four heroes, color-coded, isometric, monster horde. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'four heroes; color-coded; isometric; monster horde',
+        "Arrowhead Game Studios Gauntlet (2014) look: isometric co-op dungeon brawler, four color-coded heroes, endless goblin swarms, spawners and treasure. Carry it through Gauntlet co-op, four heroes, swarms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Gauntlet co-op; four heroes; swarms',
     },
     ui: {
       previewStatus: 'pending',
@@ -399,36 +398,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-185',
-    name: 'Tank-Control Manor Gameplay',
-    displayName: 'Tank-Control Manor Gameplay',
+    name: 'Alone in the Dark 1992 - Infogrames Polygon Manor',
+    displayName: 'Alone in the Dark 1992 - Infogrames Polygon Manor',
     styleAnchors: [
-      'Tank-Control Manor Gameplay',
+      'Alone in the Dark 1992 - Infogrames Polygon Manor',
       'classic survival horror gameplay',
       'pre-rendered rooms',
     ],
     category: '9. Gothic & Dungeon Gameplay',
     domain: 'classic survival horror gameplay',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Tank-control manor gameplay: an original classic survival-horror capture with pre-rendered manor rooms, a small 3D survivor and dramatic fixed angles.',
+        'Infogrames Alone in the Dark (1992) look: flat-shaded polygon characters over hand-drawn manor backgrounds, fixed camera angles and 1920s Lovecraftian dread.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject small in a pre-rendered manor room from a fixed camera.',
-      color_and_tone:
-        'Muted browns, greens and lamp amber, kept consistent across the whole image.',
-      lighting_and_shadow: 'Moody pre-rendered lighting, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as flat-shaded blocky polygon figures. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Muted manor browns and gloom, true to the Alone in the Dark 1992 palette.',
+      lighting_and_shadow:
+        'Painted gloom light, lit the way Alone in the Dark 1992 lights its levels.',
       texture_and_material:
-        'Detailed wallpaper, wood and dust, kept consistent across the whole image.',
+        'Flat polygons over painted art, with the in-engine surface finish of Alone in the Dark 1992.',
       camera_and_composition:
-        'Fixed dramatic angle from a corner, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with slow-building dread, kept consistent across the whole image.',
+        'Fixed high angle, framed the way Alone in the Dark 1992 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with Lovecraftian manor dread.',
       rendering_and_quality:
-        'Authentic classic horror capture, kept consistent across the whole image.',
+        'Authentic early-nineties 3D horror screen, matching real Alone in the Dark 1992 screenshots.',
       creative_brief:
-        "Tank-control manor gameplay: an original classic survival-horror capture with pre-rendered manor rooms, a small 3D survivor and dramatic fixed angles. Carry it through pre-rendered rooms, fixed camera, small survivor, manor. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'pre-rendered rooms; fixed camera; small survivor; manor',
+        "Infogrames Alone in the Dark (1992) look: flat-shaded polygon characters over hand-drawn manor backgrounds, fixed camera angles and 1920s Lovecraftian dread. Carry it through Alone in the Dark polygons, painted manor. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Alone in the Dark polygons; painted manor',
     },
     ui: {
       previewStatus: 'pending',
@@ -436,35 +434,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-186',
-    name: 'Crypt Thief Stealth Gameplay',
-    displayName: 'Crypt Thief Stealth Gameplay',
+    name: 'Thief The Dark Project 1998 - Looking Glass Shadow Stealth',
+    displayName: 'Thief The Dark Project 1998 - Looking Glass Shadow Stealth',
     styleAnchors: [
-      'Crypt Thief Stealth Gameplay',
+      'Thief The Dark Project 1998 - Looking Glass Shadow Stealth',
       'first-person thief stealth gameplay',
       'first-person stealth',
     ],
     category: '9. Gothic & Dungeon Gameplay',
     domain: 'first-person thief stealth gameplay',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Crypt thief stealth gameplay: an original first-person stealth capture of a thief in shadows, a glowing light indicator mood, guards with lanterns and gothic interiors.',
+        'Looking Glass Studios Thief: The Dark Project (1998) look: first-person stealth in a gothic steampunk city, deep shadows, lanterns and low-poly guards.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject from first person hidden in shadow among patrolling guards.',
-      color_and_tone: 'Deep shadow with lantern gold, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as low-poly guards and thieves. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        'Deep shadow and lantern amber, true to the Thief The Dark Project 1998 palette.',
       lighting_and_shadow:
-        'Pools of light and total darkness, kept consistent across the whole image.',
+        'Light gem darkness, lit the way Thief The Dark Project 1998 lights its levels.',
       texture_and_material:
-        'Stone, tapestries and polished loot, kept consistent across the whole image.',
+        'Low-resolution stone and wood, with the in-engine surface finish of Thief The Dark Project 1998.',
       camera_and_composition:
-        'First-person from a shadowed corner, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with breathless stealth, kept consistent across the whole image.',
-      rendering_and_quality: 'Clean capture with no UI, kept consistent across the whole image.',
+        'First-person shadow view, framed the way Thief The Dark Project 1998 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with tense sneaky patience.',
+      rendering_and_quality:
+        'Authentic late-nineties stealth screen, matching real Thief The Dark Project 1998 screenshots.',
       creative_brief:
-        "Crypt thief stealth gameplay: an original first-person stealth capture of a thief in shadows, a glowing light indicator mood, guards with lanterns and gothic interiors. Carry it through first-person stealth, shadows, guards with lanterns, loot. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'first-person stealth; shadows; guards with lanterns; loot',
+        "Looking Glass Studios Thief: The Dark Project (1998) look: first-person stealth in a gothic steampunk city, deep shadows, lanterns and low-poly guards. Carry it through Thief shadows, lanterns, gothic city. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Thief shadows; lanterns; gothic city',
     },
     ui: {
       previewStatus: 'pending',
@@ -472,34 +471,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-187',
-    name: 'Night Village Monster Hunt Gameplay',
-    displayName: 'Night Village Monster Hunt Gameplay',
+    name: 'Hunt Showdown 2019 - Crytek Bayou Hunt',
+    displayName: 'Hunt Showdown 2019 - Crytek Bayou Hunt',
     styleAnchors: [
-      'Night Village Monster Hunt Gameplay',
+      'Hunt Showdown 2019 - Crytek Bayou Hunt',
       'third-person monster hunter village gameplay',
       'night village',
     ],
     category: '9. Gothic & Dungeon Gameplay',
     domain: 'third-person monster hunter village gameplay',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Night village monster hunt gameplay: an original third-person capture of a hunter stalking a creature through a dark village, torches, fog and shuttered houses.',
+        'Crytek Hunt: Showdown (2019) look: 1895 Louisiana bayou hunting of monsters, fog villages, gritty period weapons and realistic lighting.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject hunting a creature through a foggy night village.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as gritty 1895 bounty hunters. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Blue night, torch orange and fog grey, kept consistent across the whole image.',
-      lighting_and_shadow: 'Torchlight and moon rims, kept consistent across the whole image.',
+        'Fog grey, swamp green and lamplight, true to the Hunt Showdown 2019 palette.',
+      lighting_and_shadow: 'Foggy dusk, lit the way Hunt Showdown 2019 lights its levels.',
       texture_and_material:
-        'Timber houses, mud, fog and silver weapons, kept consistent across the whole image.',
+        'Realistic wood and mud, with the in-engine surface finish of Hunt Showdown 2019.',
       camera_and_composition:
-        'Third-person over-the-shoulder down a lane, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with tense folk horror.',
-      rendering_and_quality: 'Clean capture with no UI, kept consistent across the whole image.',
+        'First-person hunting view, framed the way Hunt Showdown 2019 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with gritty monster hunt.',
+      rendering_and_quality:
+        'Authentic hunt shooter screen, matching real Hunt Showdown 2019 screenshots.',
       creative_brief:
-        "Night village monster hunt gameplay: an original third-person capture of a hunter stalking a creature through a dark village, torches, fog and shuttered houses. Carry it through night village, hunter, creature, fog. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'night village; hunter; creature; fog',
+        "Crytek Hunt: Showdown (2019) look: 1895 Louisiana bayou hunting of monsters, fog villages, gritty period weapons and realistic lighting. Carry it through Hunt Showdown bayou, fog, monsters. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Hunt Showdown bayou; fog; monsters',
     },
     ui: {
       previewStatus: 'pending',
@@ -507,36 +507,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-188',
-    name: 'Dungeon Overlord Build Gameplay',
-    displayName: 'Dungeon Overlord Build Gameplay',
+    name: 'Dungeon Keeper 1997 - Bullfrog Imp Dungeon',
+    displayName: 'Dungeon Keeper 1997 - Bullfrog Imp Dungeon',
     styleAnchors: [
-      'Dungeon Overlord Build Gameplay',
+      'Dungeon Keeper 1997 - Bullfrog Imp Dungeon',
       'dungeon management gameplay',
       'imps digging',
     ],
     category: '9. Gothic & Dungeon Gameplay',
     domain: 'dungeon management gameplay',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        "Dungeon overlord build gameplay: an original management capture of an evil overlord's dungeon seen from above, imps digging tunnels, traps and treasure rooms.",
+        'Bullfrog Productions Dungeon Keeper (1997) look: top-down dungeon building, imps digging rock, lava rivers, trap rooms and heroes invading.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject within a dungeon being built by imps from above.',
-      color_and_tone:
-        'Dark earth, lava orange and gold treasure, kept consistent across the whole image.',
-      lighting_and_shadow: 'Lava glow and torchlight, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as small cartoonish imps and heroes from above. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Lava orange and earth brown, true to the Dungeon Keeper 1997 palette.',
+      lighting_and_shadow:
+        'Lava glow in dungeon dark, lit the way Dungeon Keeper 1997 lights its levels.',
       texture_and_material:
-        'Dug earth, carved stone and gold piles, kept consistent across the whole image.',
+        'Chunky late-nineties textures, with the in-engine surface finish of Dungeon Keeper 1997.',
       camera_and_composition:
-        'Top-down angled view of the dungeon, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with mischievous villainy, kept consistent across the whole image.',
+        'Top-down dungeon view, framed the way Dungeon Keeper 1997 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with devilishly mischievous building.',
       rendering_and_quality:
-        'Clean management capture with no UI, kept consistent across the whole image.',
+        'Authentic late-nineties strategy screen, matching real Dungeon Keeper 1997 screenshots.',
       creative_brief:
-        "Dungeon overlord build gameplay: an original management capture of an evil overlord's dungeon seen from above, imps digging tunnels, traps and treasure rooms. Carry it through imps digging, traps, treasure rooms, overhead dungeon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'imps digging; traps; treasure rooms; overhead dungeon',
+        "Bullfrog Productions Dungeon Keeper (1997) look: top-down dungeon building, imps digging rock, lava rivers, trap rooms and heroes invading. Carry it through Dungeon Keeper imps, lava, traps. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Dungeon Keeper imps; lava; traps',
     },
     ui: {
       previewStatus: 'pending',
@@ -544,30 +543,34 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-189',
-    name: 'Necromancer Minion Gameplay',
-    displayName: 'Necromancer Minion Gameplay',
-    styleAnchors: ['Necromancer Minion Gameplay', 'isometric undead army gameplay', 'necromancer'],
+    name: 'Grim Dawn 2016 - Crate Gritty Isometric',
+    displayName: 'Grim Dawn 2016 - Crate Gritty Isometric',
+    styleAnchors: [
+      'Grim Dawn 2016 - Crate Gritty Isometric',
+      'isometric undead army gameplay',
+      'necromancer',
+    ],
     category: '9. Gothic & Dungeon Gameplay',
     domain: 'isometric undead army gameplay',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Necromancer minion gameplay: an original isometric capture of a necromancer commanding a swarm of skeleton minions through a graveyard battle.',
+        'Crate Entertainment Grim Dawn (2016) look: gritty Victorian dark fantasy isometric ARPG, necromancers, graveyards, grim ruins and heavy particle effects.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject leading a swarm of skeleton minions from an isometric view.',
-      color_and_tone: 'Sickly green magic, bone white and night blue.',
-      lighting_and_shadow:
-        'Green magic glow and moonlight, kept consistent across the whole image.',
-      texture_and_material: 'Bones, grave soil and robes, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as gritty Victorian dark fantasy heroes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Muted grey-brown with spell glows, true to the Grim Dawn 2016 palette.',
+      lighting_and_shadow: 'Grim overcast, lit the way Grim Dawn 2016 lights its levels.',
+      texture_and_material:
+        'Gritty isometric detail, with the in-engine surface finish of Grim Dawn 2016.',
       camera_and_composition:
-        'Isometric view with minion swarm, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with dark mischief, kept consistent across the whole image.',
-      rendering_and_quality: 'Clean capture with no UI, kept consistent across the whole image.',
+        'Isometric ARPG view, framed the way Grim Dawn 2016 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with grim desperate war.',
+      rendering_and_quality:
+        'Authentic isometric ARPG screen, matching real Grim Dawn 2016 screenshots.',
       creative_brief:
-        "Necromancer minion gameplay: an original isometric capture of a necromancer commanding a swarm of skeleton minions through a graveyard battle. Carry it through necromancer, skeleton swarm, graveyard, green magic. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'necromancer; skeleton swarm; graveyard; green magic',
+        "Crate Entertainment Grim Dawn (2016) look: gritty Victorian dark fantasy isometric ARPG, necromancers, graveyards, grim ruins and heavy particle effects. Carry it through Grim Dawn gritty, necromancer, isometric. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Grim Dawn gritty; necromancer; isometric',
     },
     ui: {
       previewStatus: 'pending',
@@ -575,37 +578,34 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-190',
-    name: 'Pixel Roguelike Descent Gameplay',
-    displayName: 'Pixel Roguelike Descent Gameplay',
+    name: 'Noita 2020 - Nolla Games Falling-Pixel Physics',
+    displayName: 'Noita 2020 - Nolla Games Falling-Pixel Physics',
     styleAnchors: [
-      'Pixel Roguelike Descent Gameplay',
+      'Noita 2020 - Nolla Games Falling-Pixel Physics',
       '2D pixel roguelike gameplay',
       'pixel caverns',
     ],
     category: '9. Gothic & Dungeon Gameplay',
     domain: '2D pixel roguelike gameplay',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Pixel roguelike descent gameplay: an original 2D pixel capture of a tiny adventurer descending through procedurally generated caverns full of traps and odd creatures.',
+        'Nolla Games Noita (2020) look: side-view roguelite where every pixel is simulated, burning, flowing and falling, caves of liquid, fire and chaotic spells.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject as a tiny pixel adventurer descending through caverns.',
-      color_and_tone:
-        'Earthy pixel palette with bright treasure, kept consistent across the whole image.',
-      lighting_and_shadow:
-        'Torch pixels and dark cave edges, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as tiny robed pixel wizards. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Deep cave dark with fire and toxic liquids.',
+      lighting_and_shadow: 'Fire and spell glow, lit the way Noita 2020 lights its levels.',
       texture_and_material:
-        'Chunky pixel rock, ropes and spikes, kept consistent across the whole image.',
+        'Simulated pixel particles, with the in-engine surface finish of Noita 2020.',
       camera_and_composition:
-        'Side view of stacked cavern ledges, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with scrappy peril, kept consistent across the whole image.',
+        'Side-view cave view, framed the way Noita 2020 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with chaotic alchemical danger.',
       rendering_and_quality:
-        'Crisp pixel capture with no UI, kept consistent across the whole image.',
+        'Authentic falling-pixel roguelite screen, matching real Noita 2020 screenshots.',
       creative_brief:
-        "Pixel roguelike descent gameplay: an original 2D pixel capture of a tiny adventurer descending through procedurally generated caverns full of traps and odd creatures. Carry it through pixel caverns, tiny adventurer, traps, descent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'pixel caverns; tiny adventurer; traps; descent',
+        "Nolla Games Noita (2020) look: side-view roguelite where every pixel is simulated, burning, flowing and falling, caves of liquid, fire and chaotic spells. Carry it through Noita pixel physics, fire, liquids. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Noita pixel physics; fire; liquids',
     },
     ui: {
       previewStatus: 'pending',
@@ -613,31 +613,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-191',
-    name: 'Ghost Ship Boarding Gameplay',
-    displayName: 'Ghost Ship Boarding Gameplay',
-    styleAnchors: ['Ghost Ship Boarding Gameplay', 'haunted ship action gameplay', 'ghost ship'],
+    name: 'Pillars of Eternity II 2018 - Obsidian Painted Deadfire',
+    displayName: 'Pillars of Eternity II 2018 - Obsidian Painted Deadfire',
+    styleAnchors: [
+      'Pillars of Eternity II 2018 - Obsidian Painted Deadfire',
+      'haunted ship action gameplay',
+      'ghost ship',
+    ],
     category: '9. Gothic & Dungeon Gameplay',
     domain: 'haunted ship action gameplay',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Ghost ship boarding gameplay: an original third-person capture of boarding a spectral ship in fog, glowing ghost crew, rotting rigging and green lanterns.',
+        'Obsidian Entertainment Pillars of Eternity II: Deadfire (2018) look: painted isometric RPG of an archipelago, ship boarding, pirates, ghosts and rich painted scenes.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject boarding a spectral ship in fog.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as small painted isometric pirates and ghosts. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Fog grey, ghost green and dark wood, kept consistent across the whole image.',
+        'Fog grey, ghost green and sea teal, true to the Pillars of Eternity II 2018 palette.',
       lighting_and_shadow:
-        'Spectral glow and lantern light, kept consistent across the whole image.',
+        'Painted fog light, lit the way Pillars of Eternity II 2018 lights its levels.',
       texture_and_material:
-        'Rotting wood, torn sails and translucent spirits, kept consistent across the whole image.',
+        'Painted isometric scenes, with the in-engine surface finish of Pillars of Eternity II 2018.',
       camera_and_composition:
-        'Third-person from the rail or deck, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with eerie maritime dread.',
-      rendering_and_quality: 'Clean capture with no UI, kept consistent across the whole image.',
+        'Isometric deck view, framed the way Pillars of Eternity II 2018 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with eerie piratical adventure.',
+      rendering_and_quality:
+        'Authentic painted isometric RPG screen, matching real Pillars of Eternity II 2018 screenshots.',
       creative_brief:
-        "Ghost ship boarding gameplay: an original third-person capture of boarding a spectral ship in fog, glowing ghost crew, rotting rigging and green lanterns. Carry it through ghost ship, spectral crew, fog, green lanterns. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'ghost ship; spectral crew; fog; green lanterns',
+        "Obsidian Entertainment Pillars of Eternity II: Deadfire (2018) look: painted isometric RPG of an archipelago, ship boarding, pirates, ghosts and rich painted scenes. Carry it through Deadfire painted isometric, pirates, ghosts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Deadfire painted isometric; pirates; ghosts',
     },
     ui: {
       previewStatus: 'pending',
@@ -645,35 +650,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-192',
-    name: 'Cursed Forest Survival Gameplay',
-    displayName: 'Cursed Forest Survival Gameplay',
+    name: "Don't Starve 2013 - Klei Gothic Paper Cartoon",
+    displayName: "Don't Starve 2013 - Klei Gothic Paper Cartoon",
     styleAnchors: [
-      'Cursed Forest Survival Gameplay',
+      "Don't Starve 2013 - Klei Gothic Paper Cartoon",
       'dark forest survival gameplay',
       'campfire safe zone',
     ],
     category: '9. Gothic & Dungeon Gameplay',
     domain: 'dark forest survival gameplay',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a gentleman scientist with spiky hair, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Cursed forest survival gameplay: an original third-person capture of a survivor in a dark twisted forest, campfire as the only safe zone and shapes between the trees.',
+        "Klei Entertainment Don't Starve (2013) look: gothic Tim Burton-like paper cartoon survival, scratchy ink lines, campfire circles, shadow creatures and twisted forests.",
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject surviving near a campfire in a twisted dark forest.',
-      color_and_tone: 'Black trees, ember orange and cold blue night.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as scratchy gothic paper cartoon survivors. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: "Muted sepia and firelight, true to the Don't Starve 2013 palette.",
       lighting_and_shadow:
-        'Campfire light fading into darkness, kept consistent across the whole image.',
+        "Campfire circle in darkness, lit the way Don't Starve 2013 lights its levels.",
       texture_and_material:
-        'Twisted bark, dead leaves and ash, kept consistent across the whole image.',
+        "Scratchy ink and paper, with the in-engine surface finish of Don't Starve 2013.",
       camera_and_composition:
-        'Third-person view from behind the fire, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with fragile safety, kept consistent across the whole image.',
-      rendering_and_quality: 'Clean capture with no UI, kept consistent across the whole image.',
+        "Three-quarter overhead view, framed the way Don't Starve 2013 frames its gameplay screens.",
+      atmosphere_and_mood: 'Keep the requested mood with eerie gothic survival.',
+      rendering_and_quality:
+        "Authentic gothic survival screen, matching real Don't Starve 2013 screenshots.",
       creative_brief:
-        "Cursed forest survival gameplay: an original third-person capture of a survivor in a dark twisted forest, campfire as the only safe zone and shapes between the trees. Carry it through campfire safe zone, twisted forest, darkness, shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'campfire safe zone; twisted forest; darkness; shapes',
+        "Klei Entertainment Don't Starve (2013) look: gothic Tim Burton-like paper cartoon survival, scratchy ink lines, campfire circles, shadow creatures and twisted forests. Carry it through Don't Starve paper, campfire, shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: "Don't Starve paper; campfire; shadows",
     },
     ui: {
       previewStatus: 'pending',

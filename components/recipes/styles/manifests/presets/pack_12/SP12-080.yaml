@@ -1,14 +1,14 @@
 schemaVersion: 1
 id: SP12-080
 packId: pack_12
-name: Hollow Keep Lock-On
+name: Demon's Souls 2009 - FromSoftware Boletarian Keep
 styleAnchors:
-  - classic old-gen soulslike gameplay screenshots
+  - Demon's Souls 2009 - FromSoftware Boletarian Keep
   - hostile ruined keep traversal-combat
   - Hollow Keep Lock-On
-displayName: Hollow Keep Lock-On
+displayName: Demon's Souls 2009 - FromSoftware Boletarian Keep
 category: 8. Puzzle Chambers & Adventure Setpieces
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -22,48 +22,18 @@ tags:
   - render-third-person-old-gen
   - camera-third-person-lock-on
   - hud-contextual-hud
+  - reference-title
 visualDna:
-  aesthetic: 'Original in-game screenshot look for classic soulslike captures: third-person old-gen action-RPG play with rough stone, narrow combat routes, fog-gate pressure, stamina spacing, hostile ruin geometry, understated HUD, and readable dungeon traversal. Borrow the lock-on camera discipline and material restraint associated with Dark Souls-era games, but land as a different fictional ruined keep with different enemies, props, architecture, UI icons, and route silhouettes.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable hollow-keep action-RPG screenshot
-    subject: keep clear role silhouette, enemy/player/object function, hitbox-like readability,
-    trap or route affordance, and scale relationship without copying source characters or named IP
-    elements.
-  color_and_tone: >-
-    Use a classic soulslike ruin palette: ash grey, dead green, damp stone blue, rust brown, dull
-    steel, faded leather, torch amber, and sickly fog white. Keep value grouping legible at gameplay
-    distance and avoid black-gold epic polish, neon fantasy accents, or clean heroic color scripts.
-  lighting_and_shadow: >-
-    Light the image through torch pools, overcast ruin light, fog-gate glow, weapon sparks, hollow
-    eyes, and shallow dungeon occlusion. Lighting must clarify the playable route, threat, trap,
-    ladder, doorway, or stamina-combat space and avoid eclipse backlight, cathedral god rays, and
-    cinematic bloom.
-  texture_and_material: >-
-    Build surfaces from rough stone blocks, moss, wet stairs, cracked plaster, tarnished chain, old
-    cloth, dull shields, rusty blades, simple wood, and old-gen asset limits. Materials should feel
-    like in-engine game assets captured during play, not modern ultra-detailed PBR concept art.
-  camera_and_composition: >-
-    Compose with third-person lock-on or traversal-combat framing: player low in frame, enemy or
-    trap ahead, narrow route, ledge/drop/fog gate/lever/ladder as affordance, readable dodge lane,
-    and modest HUD. The frame should feel played, not staged as a boss postcard or centered throne
-    reveal.
-  atmosphere_and_mood: 'Original hollow-keep soulslike mood: lonely, punishing, archaic, damp, hostile and quietly tragic; it follows the tone of the requested scene without forcing a fixed mission or story.'
-  rendering_and_quality: >-
-    Finish as a coherent in-engine gameplay screenshot style, not concept art: small classic souls
-    HUD can include health/stamina/focus bars, item slot shapes, lock-on cue, and boss bar only when
-    useful. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, old-gen
-    restraint, and no fake logos, modern fantasy key-art polish, or random interface clutter.
-  key_features: >-
-    original classic soulslike gameplay screenshots; third-person old-gen action-RPG capture with
-    rough stone, narrow combat routes, fog-gate pressure, stamina spacing, hostile ruin geometry,
-    understated HUD, and dungeon readability; ash grey, dead green, damp stone blue, rust brown,
-    dull steel, faded leather, torch amber, and sickly fog white; torch pools, overcast ruin light,
-    fog-gate glow, weapon sparks, hollow eyes, and shallow dungeon occlusion; rough stone blocks,
-    moss, wet stairs, cracked plaster, tarnished chain, old cloth, dull shields, rusty blades,
-    simple wood, and old-gen asset limits; third-person lock-on or traversal-combat framing with
-    route affordance and readable dodge lane; lonely, punishing, archaic, damp, hostile, and quietly
-    tragic; HUD guidance: small classic soulslike HUD only when useful
-  creative_brief: "Hollow Keep Lock-On: in-game screenshot language informed by classic soulslike capture references, covering third-person lock-on camera, old-gen material restraint, narrow route readability, fog-gate/trap affordances, stamina-combat spacing, and sparse HUD grammar. Avoid menus, logos, exact characters, exact levels, Dark Souls level cloning, Elden Ring-style eclipse throne imagery, modern cinematic key art, and promotional composition. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'FromSoftware Demon''s Souls (2009) look: grim third-person action in fog-choked ruined castles, dull grey-green palettes, fog gates, towering armored demons and lonely nexus light.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as lone weathered warriors in dented plate and mail. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Grey-green fog, cold stone and rust, true to the Demon's Souls 2009 palette.
+  lighting_and_shadow: Dull fog light with soul glow, lit the way Demon's Souls 2009 lights its levels.
+  texture_and_material: Worn stone and dented armor, with the in-engine surface finish of Demon's Souls 2009.
+  camera_and_composition: Third-person lock-on duel view, framed the way Demon's Souls 2009 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with grim oppressive dread.
+  rendering_and_quality: Authentic PS3 dark fantasy screen, matching real Demon's Souls 2009 screenshots.
+  key_features: Demon's Souls fog gates; ruined keep; grey-green
+  creative_brief: 'FromSoftware Demon''s Souls (2009) look: grim third-person action in fog-choked ruined castles, dull grey-green palettes, fog gates, towering armored demons and lonely nexus light. Carry it through Demon''s Souls fog gates, ruined keep, grey-green. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - watermark
   - logo
@@ -94,22 +64,17 @@ avoidRules:
   - modern fantasy key art
   - black-gold epic polish
   - Dark Souls level clone
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-080.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, Elden Ring eclipse throne imagery, centered boss postcard,
-    modern fantasy key art, black-gold epic polish, Dark Souls level clone
+  negativePrompt: watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, Elden Ring eclipse throne imagery, centered boss postcard, modern fantasy key art, black-gold epic polish, Dark Souls level clone, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Original classic soulslike, Dark Souls-informed
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    small classic souls HUD can include health/stamina/focus bars, item slot shapes, lock-on cue,
-    and boss bar only when useful
+  hudGuidance: small classic souls HUD can include health/stamina/focus bars, item slot shapes, lock-on cue, and boss bar only when useful
   renderFamily: third-person-old-gen
   cameraFamily: third-person-lock-on
   hudMode: contextual-hud
@@ -127,6 +92,7 @@ taxonomy:
     - render-third-person-old-gen
     - camera-third-person-lock-on
     - hud-contextual-hud
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

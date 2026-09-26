@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-170
 packId: pack_12
-name: Hand-Drawn Adventure Room Capture
+name: Simon the Sorcerer 1993 - Adventure Soft Painted Adventure
 styleAnchors:
-  - Hand-Drawn Adventure Room Capture
+  - Simon the Sorcerer 1993 - Adventure Soft Painted Adventure
   - point-and-click hand-drawn room screenshot
   - hand-drawn room
-displayName: Hand-Drawn Adventure Room Capture
+displayName: Simon the Sorcerer 1993 - Adventure Soft Painted Adventure
 category: 8. Puzzle Chambers & Adventure Setpieces
 domain: point-and-click hand-drawn room screenshot
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,18 +20,20 @@ tags:
   - adventure-room
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Hand-drawn adventure room capture: an original point-and-click adventure screenshot of a lovingly drawn cluttered room full of curious objects and a small hero.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; place the subject in a hand-drawn room full of curious clickable objects.
-  color_and_tone: Warm storybook colors with soft shading, kept consistent across the whole image.
-  lighting_and_shadow: Soft painted light from a window, kept consistent across the whole image.
-  texture_and_material: Hand-drawn lines, painted fills and clutter, kept consistent across the whole image.
-  camera_and_composition: Side-on stage view of a single room, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with witty curiosity, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no cursor or text, kept consistent across the whole image.
-  creative_brief: "Hand-drawn adventure room capture: an original point-and-click adventure screenshot of a lovingly drawn cluttered room full of curious objects and a small hero. Carry it through hand-drawn room, curious objects, small hero, stage view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: hand-drawn room; curious objects; small hero; stage view
+  aesthetic: 'Adventure Soft Simon the Sorcerer (1993) look: VGA point-and-click adventure with lush painted backgrounds, cluttered wizard rooms, cheeky cartoon characters and verb inventory.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as cheeky cartoon adventure characters in pointed hats and robes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Rich VGA purples, greens and warm browns, true to the Simon the Sorcerer 1993 palette.
+  lighting_and_shadow: Warm candle and window light, lit the way Simon the Sorcerer 1993 lights its levels.
+  texture_and_material: Painted VGA pixel art, with the in-engine surface finish of Simon the Sorcerer 1993.
+  camera_and_composition: Side-view adventure room, framed the way Simon the Sorcerer 1993 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with cheeky magical mischief.
+  rendering_and_quality: Authentic VGA adventure screen, matching real Simon the Sorcerer 1993 screenshots.
+  creative_brief: 'Adventure Soft Simon the Sorcerer (1993) look: VGA point-and-click adventure with lush painted backgrounds, cluttered wizard rooms, cheeky cartoon characters and verb inventory. Carry it through Simon the Sorcerer painted VGA, wizard rooms. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Simon the Sorcerer painted VGA; wizard rooms
 avoidRules:
+  - a boy wizard in a purple robe and hat
   - cursor or verbs
   - existing game characters, logos or levels
   - readable interface text
@@ -43,13 +45,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: cursor or verbs, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a boy wizard in a purple robe and hat, cursor or verbs, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +69,7 @@ taxonomy:
     - adventure-room
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP12-077
 packId: pack_12
-name: Oddworld Quarry Escape
+name: Oddworld Abe's Oddysee 1997 - Oddworld Inhabitants Pre-Rendered
 category: 8. Puzzle Chambers & Adventure Setpieces
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -19,48 +19,19 @@ tags:
   - hud-minimal-hud
   - reference-title
 visualDna:
-  aesthetic: "In-game screenshot look informed by Oddworld: New 'n' Tasty gameplay: cinematic side-view puzzle-platform capture with industrial quarries, alien worker silhouettes, foreground machinery, and escape-route timing. It never recreates an exact official level, character, logo or marketing art."
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable Oddworld: New 'n' Tasty-adjacent
-    game screenshot subject: keep clear role silhouette, player/enemy/object function, scale
-    relationship, hitbox-like readability, and interaction affordances without copying source
-    characters or named IP elements.
-  color_and_tone: >-
-    Use a Oddworld: New 'n' Tasty-informed palette: rust orange, toxic green, black machinery, dusty
-    tan, blue industrial light, and sickly yellow signage shapes. Keep value grouping legible at
-    gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or
-    objective cues rather than decorative wash.
-  lighting_and_shadow: >-
-    Light the image through factory lamps, furnace glow, searchlights, toxic pools, and deep machine
-    shadows. Lighting must clarify the playable route, threat, focal subject, or objective and avoid
-    generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from metal catwalks, rock quarry walls, pipes, conveyor belts, smoke, alien skin
-    shapes without exact character copy, and grimy machinery. Materials should feel like in-engine
-    game assets captured during play, with enough texture identity to separate props, terrain,
-    characters, hazards, and interactables.
-  camera_and_composition: >-
-    Compose with side-on cinematic platform framing with stealth timing, levers, patrols, vertical
-    shafts, and escape path readability. The frame should read as a plausible gameplay capture;
-    include UI/HUD only when it matches the source game's visual logic and improves clarity.
-  atmosphere_and_mood: "Oddworld: New 'n' Tasty-derived mood: oppressed, strange, industrial, comic-dark, and tense; it follows the tone of the requested scene without forcing a fixed mission or story."
-  rendering_and_quality: >-
-    Finish as a coherent in-engine screenshot style, not concept art: almost no HUD; small
-    interaction or possession cues can appear but the scene should feel cinematic-playable. Maintain
-    heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos,
-    stock-photo polish, or random interface clutter.
-  key_features: >-
-    Oddworld: New 'n' Tasty gameplay screenshots; cinematic side-view puzzle-platform capture with
-    industrial quarries, alien worker silhouettes, foreground machinery, and escape-route timing;
-    rust orange, toxic green, black machinery, dusty tan, blue industrial light, and sickly yellow
-    signage shapes; factory lamps, furnace glow, searchlights, toxic pools, and deep machine
-    shadows; metal catwalks, rock quarry walls, pipes, conveyor belts, smoke, alien skin shapes
-    without exact character copy, and grimy machinery; side-on cinematic platform framing with
-    stealth timing, levers, patrols, vertical shafts, and escape path readability; oppressed,
-    strange, industrial, comic-dark, and tense; HUD guidance: almost no HUD; small interaction or
-    possession cues can appear but the scene should feel cinematic-playable
-  creative_brief: "Oddworld Quarry Escape: in-game screenshot language informed by Oddworld: New 'n' Tasty, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'Oddworld Inhabitants Abe''s Oddysee (1997) look: side-view cinematic platformer with lush pre-rendered backgrounds, grotesque industrial factories, alien wilderness and dark satire.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as small pre-rendered alien workers with odd anatomy. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Industrial rust, smog orange and alien green, true to the Oddworld Abe's Oddysee 1997 palette.
+  lighting_and_shadow: Pre-rendered moody factory light, lit the way Oddworld Abe's Oddysee 1997 lights its levels.
+  texture_and_material: Pre-rendered CGI backgrounds, with the in-engine surface finish of Oddworld Abe's Oddysee 1997.
+  camera_and_composition: Side-view cinematic screen, framed the way Oddworld Abe's Oddysee 1997 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with grim satirical escape.
+  rendering_and_quality: Authentic PS1 pre-rendered platformer screen, matching real Oddworld Abe's Oddysee 1997 screenshots.
+  key_features: Oddworld pre-rendered; factory escape; satire
+  creative_brief: 'Oddworld Inhabitants Abe''s Oddysee (1997) look: side-view cinematic platformer with lush pre-rendered backgrounds, grotesque industrial factories, alien wilderness and dark satire. Carry it through Oddworld pre-rendered, factory escape, satire. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
+  - a thin green alien with sewn lips
+  - existing Oddworld species
   - watermark
   - logo
   - copyright mark
@@ -87,23 +58,19 @@ avoidRules:
   - copied box art composition
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
+  - text
+  - readable labels
+  - franchise likeness
+  - real person likeness
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-077.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
-  referenceGame: "Oddworld: New 'n' Tasty"
+  negativePrompt: a thin green alien with sewn lips, existing Oddworld species, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts
+  referenceGame: 'Oddworld: New ''n'' Tasty'
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    almost no HUD; small interaction or possession cues can appear but the scene should feel
-    cinematic-playable
+  hudGuidance: almost no HUD; small interaction or possession cues can appear but the scene should feel cinematic-playable
   renderFamily: two-d-side-view
   cameraFamily: side-view
   hudMode: minimal-hud
@@ -127,7 +94,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-displayName: Oddworld Quarry Escape
+displayName: Oddworld Abe's Oddysee 1997 - Oddworld Inhabitants Pre-Rendered
 styleAnchors:
-  - "Oddworld: New 'n' Tasty gameplay screenshots"
+  - Oddworld Abe's Oddysee 1997 - Oddworld Inhabitants Pre-Rendered
   - Oddworld Quarry Escape

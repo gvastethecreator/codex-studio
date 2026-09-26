@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-120
 packId: pack_12
-name: Weightless Station Drift Capture
+name: Prey 2017 - Arkane Talos Zero-G
 styleAnchors:
-  - Weightless Station Drift Capture
+  - Prey 2017 - Arkane Talos Zero-G
   - zero gravity space station screenshot
   - zero gravity
-displayName: Weightless Station Drift Capture
+displayName: Prey 2017 - Arkane Talos Zero-G
 category: 3. Sci-Fi Frontiers & Mech Zones
 domain: zero gravity space station screenshot
-version: 1
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,22 +20,23 @@ tags:
   - weightless-station
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Weightless station drift capture: an original screenshot inside a space station in zero gravity, floating crew, drifting objects, tethers and the planet in the window.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject floating weightless among drifting objects inside a station.
-  color_and_tone: Clean white modules, blue planet glow and warning orange.
-  lighting_and_shadow: Planet light through windows and panel glow, kept consistent across the whole image.
-  texture_and_material: Padded walls, cables, floating tools and tethers, kept consistent across the whole image.
-  camera_and_composition: Rotated camera with no fixed up direction, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with floating calm or peril.
-  rendering_and_quality: Clean capture with no readable labels, kept consistent across the whole image.
-  creative_brief: "Weightless station drift capture: an original screenshot inside a space station in zero gravity, floating crew, drifting objects, tethers and the planet in the window. Carry it through zero gravity, floating objects, station module, planet window. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: zero gravity; floating objects; station module; planet window
+  aesthetic: 'Arkane Studios Prey (2017) look: neo-deco space station interiors, zero-gravity drifting, shadowy shape-shifting aliens, wrenches and gloo, and Earth through large windows.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as station crew in jumpsuits floating in zero gravity. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Neo-deco gold, walnut wood and space black, true to the Prey 2017 palette.
+  lighting_and_shadow: Warm station light with cold space glow, lit the way Prey 2017 lights its levels.
+  texture_and_material: Polished deco panels, walnut and brushed metal, with the in-engine surface finish of Prey 2017.
+  camera_and_composition: First-person drifting view, framed the way Prey 2017 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with paranoid weightless unease.
+  rendering_and_quality: Authentic immersive-sim screen, matching real Prey 2017 screenshots.
+  creative_brief: 'Arkane Studios Prey (2017) look: neo-deco space station interiors, zero-gravity drifting, shadowy shape-shifting aliens, wrenches and gloo, and Earth through large windows. Carry it through Prey neo-deco station, zero gravity, alien shadows. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Prey neo-deco station; zero gravity; alien shadows
 avoidRules:
+  - black shadow mimic aliens
   - readable labels
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +44,16 @@ avoidRules:
   - muddy noisy texture
   - watermark
   - text
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: readable labels, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: black shadow mimic aliens, readable labels, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +68,7 @@ taxonomy:
     - weightless-station
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

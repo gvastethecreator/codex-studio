@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-168
 packId: pack_12
-name: Underworld Boat Crossing Capture
+name: Hades 2020 - Supergiant Painted Underworld
 styleAnchors:
-  - Underworld Boat Crossing Capture
+  - Hades 2020 - Supergiant Painted Underworld
   - river of the dead crossing screenshot
   - underworld river
-displayName: Underworld Boat Crossing Capture
+displayName: Hades 2020 - Supergiant Painted Underworld
 category: 7. Heists, Horror & Underworld Runs
 domain: river of the dead crossing screenshot
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,22 @@ tags:
   - underworld-boat
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Underworld boat crossing capture: an original screenshot of a ferry crossing a dark river of souls, lanterns, drifting spirits and a distant gate of the dead.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; place the subject on a ferry crossing a dark underworld river.
-  color_and_tone: Black water, pale ghost blue and lantern gold.
-  lighting_and_shadow: Lantern glow and faint spirit light, kept consistent across the whole image.
-  texture_and_material: Ancient wood, mist and translucent souls, kept consistent across the whole image.
-  camera_and_composition: Wide view across the river toward the gate.
-  atmosphere_and_mood: Keep the requested mood with solemn otherworldly calm.
-  rendering_and_quality: Clean capture with no HUD, kept consistent across the whole image.
-  creative_brief: "Underworld boat crossing capture: an original screenshot of a ferry crossing a dark river of souls, lanterns, drifting spirits and a distant gate of the dead. Carry it through underworld river, ferry, lanterns, drifting souls. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: underworld river; ferry; lanterns; drifting souls
+  aesthetic: 'Supergiant Games Hades (2020) look: isometric roguelike in Jen Zee painted art, bold inked Greek myth characters, glowing underworld chambers and ember colors.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as bold inked painted Greek myth figures. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Underworld crimson, ember orange and soul teal, true to the Hades 2020 palette.
+  lighting_and_shadow: Ember and soul glow in darkness, lit the way Hades 2020 lights its levels.
+  texture_and_material: Painted art with bold ink, with the in-engine surface finish of Hades 2020.
+  camera_and_composition: Isometric chamber view, framed the way Hades 2020 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with defiant mythic swagger.
+  rendering_and_quality: Authentic painted roguelike screen, matching real Hades 2020 screenshots.
+  creative_brief: 'Supergiant Games Hades (2020) look: isometric roguelike in Jen Zee painted art, bold inked Greek myth characters, glowing underworld chambers and ember colors. Carry it through Hades Jen Zee, underworld, Greek myth. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Hades Jen Zee; underworld; Greek myth
 avoidRules:
+  - a laurel-crowned prince with flaming feet
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a laurel-crowned prince with flaming feet, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +68,7 @@ taxonomy:
     - underworld-boat
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

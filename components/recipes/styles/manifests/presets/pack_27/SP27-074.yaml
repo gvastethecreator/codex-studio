@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Konami Contra (1987) look: jungle waterfalls, alien bases, running soldier sprites, spread-shot bullets and eighties action movie energy.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as running sprites in jungle and alien base stages. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Jungle green, waterfall blue and alien flesh red.
-  lighting_and_shadow: Flat bright arcade light, lit the way Contra 1987 lights its scenes.
+  lighting_and_shadow: Flat bright arcade light, lit the way Contra 1987 lights its levels.
   texture_and_material: Visible chunky pixels on a curved CRT with scanlines, slight bloom and phosphor glow.
-  camera_and_composition: Side-scrolling run-and-gun view, framed the way Contra 1987 composes its shots and pages.
+  camera_and_composition: Side-scrolling run-and-gun view, framed the way Contra 1987 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with explosive action bravado.
-  rendering_and_quality: Authentic eighties run-and-gun screen, in the recognizable hand of Contra 1987.
+  rendering_and_quality: Authentic eighties run-and-gun screen, matching real Contra 1987 screenshots.
   creative_brief: 'Konami Contra (1987) look: jungle waterfalls, alien bases, running soldier sprites, spread-shot bullets and eighties action movie energy. Carry it through Contra jungle, waterfalls, spread shot, alien bases. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Contra jungle; waterfalls; spread shot; alien bases
 avoidRules:
@@ -46,13 +46,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: two shirtless commandos with bandanas, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: two shirtless commandos with bandanas, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

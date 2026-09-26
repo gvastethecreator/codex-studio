@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP12-012
 packId: pack_12
-name: Stardew Tavern Pixel Hub
+name: Stardew Valley 2016 - ConcernedApe Pixel Farm Town
 styleAnchors:
-  - Stardew Valley gameplay screenshots
+  - Stardew Valley 2016 - ConcernedApe Pixel Farm Town
   - Stardew Tavern Pixel Hub
-displayName: Stardew Tavern Pixel Hub
+displayName: Stardew Valley 2016 - ConcernedApe Pixel Farm Town
 category: 8. Puzzle Chambers & Adventure Setpieces
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,47 +23,16 @@ tags:
   - hud-contextual-hud
   - reference-title
 visualDna:
-  aesthetic: 'In-game screenshot look informed by Stardew Valley gameplay: top-down pixel-life-sim capture with cozy interiors, tile-based props, NPC clusters, inventory bar, and readable village hub layout. It never recreates an exact official level, character, logo or marketing art.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable Stardew Valley-adjacent game
-    screenshot subject: keep clear role silhouette, player/enemy/object function, scale
-    relationship, hitbox-like readability, and interaction affordances without copying source
-    characters or named IP elements.
-  color_and_tone: >-
-    Use a Stardew Valley-informed palette: warm wood brown, soft lamp yellow, berry red, denim blue,
-    plant green, and muted pixel shadows. Keep value grouping legible at gameplay distance, with
-    color accents behaving like route, danger, pickup, team, magic, or objective cues rather than
-    decorative wash.
-  lighting_and_shadow: >-
-    Light the image through simple warm room pools, fireplace glow, window daylight blocks, and tiny
-    highlight pixels. Lighting must clarify the playable route, threat, focal subject, or objective
-    and avoid generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from 16-bit inspired tiles, simple furniture sprites, food icons, patterned rugs,
-    pixel portraits, and hand-placed clutter. Materials should feel like in-engine game assets
-    captured during play, with enough texture identity to separate props, terrain, characters,
-    hazards, and interactables.
-  camera_and_composition: >-
-    Compose with top-down room or town hub with grid clarity, interactable counters, social spacing,
-    and inventory-bar ergonomics. The frame should read as a plausible gameplay capture; include
-    UI/HUD only when it matches the source game's visual logic and improves clarity.
-  atmosphere_and_mood: 'Stardew Valley-derived mood: cozy, handmade, social, low-stakes, and quietly productive; it follows the tone of the requested scene without forcing a fixed mission or story.'
-  rendering_and_quality: >-
-    Finish as a coherent in-engine screenshot style, not concept art: inventory hotbar, clock,
-    money, stamina, and small interaction prompts are part of the style when kept pixel-clean.
-    Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake
-    logos, stock-photo polish, or random interface clutter.
-  key_features: >-
-    Stardew Valley gameplay screenshots; top-down pixel-life-sim capture with cozy interiors,
-    tile-based props, NPC clusters, inventory bar, and readable village hub layout; warm wood brown,
-    soft lamp yellow, berry red, denim blue, plant green, and muted pixel shadows; simple warm room
-    pools, fireplace glow, window daylight blocks, and tiny highlight pixels; 16-bit inspired tiles,
-    simple furniture sprites, food icons, patterned rugs, pixel portraits, and hand-placed clutter;
-    top-down room or town hub with grid clarity, interactable counters, social spacing, and
-    inventory-bar ergonomics; cozy, handmade, social, low-stakes, and quietly productive; HUD
-    guidance: inventory hotbar, clock, money, stamina, and small interaction prompts are part of the
-    style when kept pixel-clean
-  creative_brief: "Stardew Tavern Pixel Hub: in-game screenshot language informed by Stardew Valley, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'ConcernedApe Stardew Valley (2016) look: cozy top-down pixel farm town with warm saturated sprites, wooden interiors, seasonal festivals, crops and friendly villagers.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as small cozy pixel villagers with round heads and simple faces. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Warm wood amber, harvest orange, crop green and cozy lamp yellow.
+  lighting_and_shadow: Warm lamplight and flat pixel daylight, lit the way Stardew Valley 2016 lights its levels.
+  texture_and_material: Soft detailed pixel art tiles and sprites, with the in-engine surface finish of Stardew Valley 2016.
+  camera_and_composition: Top-down three-quarter pixel view, framed the way Stardew Valley 2016 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with cozy communal warmth.
+  rendering_and_quality: Authentic cozy pixel farm game screen, matching real Stardew Valley 2016 screenshots.
+  key_features: Stardew pixel town; cozy tavern; harvest festival
+  creative_brief: 'ConcernedApe Stardew Valley (2016) look: cozy top-down pixel farm town with warm saturated sprites, wooden interiors, seasonal festivals, crops and friendly villagers. Carry it through Stardew pixel town, cozy tavern, harvest festival. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - watermark
   - logo
@@ -91,23 +60,15 @@ avoidRules:
   - copied box art composition
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-012.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Stardew Valley
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    inventory hotbar, clock, money, stamina, and small interaction prompts are part of the style
-    when kept pixel-clean
+  hudGuidance: inventory hotbar, clock, money, stamina, and small interaction prompts are part of the style when kept pixel-clean
   renderFamily: retro-pixel-low-poly
   cameraFamily: isometric-top-down
   hudMode: contextual-hud

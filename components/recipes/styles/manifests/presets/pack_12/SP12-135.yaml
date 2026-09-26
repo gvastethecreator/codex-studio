@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-135
 packId: pack_12
-name: Lane-Battle Siege Capture
+name: Clash Royale 2016 - Supercell Cartoon Arena
 styleAnchors:
-  - Lane-Battle Siege Capture
+  - Clash Royale 2016 - Supercell Cartoon Arena
   - lane-based siege strategy screenshot
   - opposing castles
-displayName: Lane-Battle Siege Capture
+displayName: Clash Royale 2016 - Supercell Cartoon Arena
 category: 4. Sieges, Warfronts & Last Stands
 domain: lane-based siege strategy screenshot
-version: 1
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,22 @@ tags:
   - lane-siege
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Lane-battle siege capture: an original side-view strategy screenshot where two castles face each other across horizontal lanes and units march to clash in the middle.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject as units marching along lanes between two castles.
-  color_and_tone: Bright opposing team colors on green fields, kept consistent across the whole image.
-  lighting_and_shadow: Flat bright light, kept consistent across the whole image.
-  texture_and_material: Cartoon units, stone castles and grass lanes, kept consistent across the whole image.
-  camera_and_composition: Side view with castles at both edges, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with playful tug-of-war, kept consistent across the whole image.
-  rendering_and_quality: Clean readable capture with no UI text, kept consistent across the whole image.
-  creative_brief: "Lane-battle siege capture: an original side-view strategy screenshot where two castles face each other across horizontal lanes and units march to clash in the middle. Carry it through opposing castles, horizontal lanes, marching units, clash. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: opposing castles; horizontal lanes; marching units; clash
+  aesthetic: 'Supercell Clash Royale (2016) look: bright chunky cartoon mobile arena, two towers per side, lanes across a river bridge and tiny exaggerated units.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render every subject as a tiny chunky exaggerated cartoon unit. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Bright grass green, blue and red teams, true to the Clash Royale 2016 palette.
+  lighting_and_shadow: Bright flat cartoon daylight, lit the way Clash Royale 2016 lights its levels.
+  texture_and_material: Glossy chunky cartoon 3D, with the in-engine surface finish of Clash Royale 2016.
+  camera_and_composition: Top-down arena view, framed the way Clash Royale 2016 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with cheeky competitive chaos.
+  rendering_and_quality: Authentic mobile cartoon arena screen, matching real Clash Royale 2016 screenshots.
+  creative_brief: 'Supercell Clash Royale (2016) look: bright chunky cartoon mobile arena, two towers per side, lanes across a river bridge and tiny exaggerated units. Carry it through Clash Royale arena, chunky cartoon, lanes. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Clash Royale arena; chunky cartoon; lanes
 avoidRules:
+  - existing Clash units
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing Clash units, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +68,7 @@ taxonomy:
     - lane-siege
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

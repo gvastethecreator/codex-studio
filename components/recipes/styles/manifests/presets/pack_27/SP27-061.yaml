@@ -29,7 +29,7 @@ visualDna:
   texture_and_material: Visible chunky pixels on a curved CRT with scanlines, slight bloom and phosphor glow.
   camera_and_composition: Top-down maze view filling a vertical arcade screen.
   atmosphere_and_mood: Keep the requested mood with bright arcade chase.
-  rendering_and_quality: Authentic early-eighties arcade screen capture, in the recognizable hand of Pac-Man 1980.
+  rendering_and_quality: Authentic early-eighties arcade screen capture, matching real Pac-Man 1980 screenshots.
   creative_brief: 'Namco Pac-Man (1980) arcade look: glowing neon-blue maze walls on pure black, tiny round sprites, dotted paths, simple bright character colors and a glowing cabinet screen. Carry it through Pac-Man neon maze, dots, tiny sprites, black background. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Pac-Man neon maze; dots; tiny sprites; black background
 avoidRules:
@@ -47,13 +47,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: a yellow wedge-mouthed circle, four colorful ghosts with eyes, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a yellow wedge-mouthed circle, four colorful ghosts with eyes, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

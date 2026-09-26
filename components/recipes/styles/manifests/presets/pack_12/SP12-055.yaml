@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP12-055
 packId: pack_12
-name: Witness Orchid Puzzle Garden
+name: The Witness 2016 - Thekla Saturated Puzzle Island
 styleAnchors:
-  - The Witness gameplay screenshots
+  - The Witness 2016 - Thekla Saturated Puzzle Island
   - Witness Orchid Puzzle Garden
-displayName: Witness Orchid Puzzle Garden
+displayName: The Witness 2016 - Thekla Saturated Puzzle Island
 category: 2. Arcane Temples & Mythic Realms
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,46 +23,16 @@ tags:
   - hud-minimal-hud
   - reference-title
 visualDna:
-  aesthetic: 'In-game screenshot look informed by The Witness gameplay: first-person island-puzzle capture with saturated gardens, clean geometry, panel puzzles, environmental line sight, and serene route logic. It never recreates an exact official level, character, logo or marketing art.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable The Witness-adjacent game
-    screenshot subject: keep clear role silhouette, player/enemy/object function, scale
-    relationship, hitbox-like readability, and interaction affordances without copying source
-    characters or named IP elements.
-  color_and_tone: >-
-    Use a The Witness-informed palette: orchid pink, grass green, clean white panels, ocean blue,
-    yellow sunlight, and soft grey shadow. Keep value grouping legible at gameplay distance, with
-    color accents behaving like route, danger, pickup, team, magic, or objective cues rather than
-    decorative wash.
-  lighting_and_shadow: >-
-    Light the image through clear island daylight, garden bloom, panel glow, reflected water, and
-    simple readable shadows. Lighting must clarify the playable route, threat, focal subject, or
-    objective and avoid generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from smooth puzzle panels, manicured hedges, stone paths, colored glass, flowers,
-    and minimal architectural surfaces. Materials should feel like in-engine game assets captured
-    during play, with enough texture identity to separate props, terrain, characters, hazards, and
-    interactables.
-  camera_and_composition: >-
-    Compose with first-person puzzle framing with panel in foreground, environmental clue alignment,
-    open path, and landmark composition. The frame should read as a plausible gameplay capture;
-    include UI/HUD only when it matches the source game's visual logic and improves clarity.
-  atmosphere_and_mood: 'The Witness-derived mood: serene, cerebral, bright, quiet, and spatially precise; it follows the tone of the requested scene without forcing a fixed mission or story.'
-  rendering_and_quality: >-
-    Finish as a coherent in-engine screenshot style, not concept art: almost no HUD; puzzle panels
-    and environmental affordances should carry the interface. Maintain heavy-denoise clarity, crisp
-    focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random
-    interface clutter.
-  key_features: >-
-    The Witness gameplay screenshots; first-person island-puzzle capture with saturated gardens,
-    clean geometry, panel puzzles, environmental line sight, and serene route logic; orchid pink,
-    grass green, clean white panels, ocean blue, yellow sunlight, and soft grey shadow; clear island
-    daylight, garden bloom, panel glow, reflected water, and simple readable shadows; smooth puzzle
-    panels, manicured hedges, stone paths, colored glass, flowers, and minimal architectural
-    surfaces; first-person puzzle framing with panel in foreground, environmental clue alignment,
-    open path, and landmark composition; serene, cerebral, bright, quiet, and spatially precise; HUD
-    guidance: almost no HUD; puzzle panels and environmental affordances should carry the interface
-  creative_brief: "Witness Orchid Puzzle Garden: in-game screenshot language informed by The Witness, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'Thekla The Witness (2016) look: first-person puzzle island in saturated painterly color, simplified shapes, glowing line puzzle panels and silent monumental nature.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render every subject in clean simplified painterly shapes, seen from first person on a silent island. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Saturated orchid pink, grass green, sky blue and warm stone.
+  lighting_and_shadow: Bright clean sunlight with soft painterly shading, lit the way The Witness 2016 lights its levels.
+  texture_and_material: Simplified smooth shapes without grime, with the in-engine surface finish of The Witness 2016.
+  camera_and_composition: First-person view facing puzzle panels, framed the way The Witness 2016 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with quiet contemplative insight.
+  rendering_and_quality: Authentic painterly first-person puzzle screen, matching real The Witness 2016 screenshots.
+  key_features: The Witness saturated island; line puzzles; simplified shapes
+  creative_brief: 'Thekla The Witness (2016) look: first-person puzzle island in saturated painterly color, simplified shapes, glowing line puzzle panels and silent monumental nature. Carry it through The Witness saturated island, line puzzles, simplified shapes. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - watermark
   - logo
@@ -90,18 +60,12 @@ avoidRules:
   - copied box art composition
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-055.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: The Witness
   referenceMode: capture-derived gameplay screenshot style
   hudGuidance: almost no HUD; puzzle panels and environmental affordances should carry the interface

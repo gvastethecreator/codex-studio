@@ -1,14 +1,14 @@
 schemaVersion: 1
 id: SP12-036
 packId: pack_12
-name: Whitewall Gate Test Chamber
+name: Portal 2 2011 - Valve Aperture Test Chamber
 styleAnchors:
-  - first-person portal-puzzle gameplay screenshots
+  - Portal 2 2011 - Valve Aperture Test Chamber
   - clean test chamber traversal puzzle
   - Whitewall Gate Test Chamber
-displayName: Whitewall Gate Test Chamber
+displayName: Portal 2 2011 - Valve Aperture Test Chamber
 category: 8. Puzzle Chambers & Adventure Setpieces
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -22,47 +22,23 @@ tags:
   - render-first-person-puzzle
   - camera-first-person
   - hud-minimal-hud
+  - reference-title
 visualDna:
-  aesthetic: 'Original in-game screenshot look for first-person spatial puzzle captures: clean modular test rooms, linked gate surfaces, cubes or weighted props, light bridges, hazard pools, and readable traversal logic. Borrow the clinical puzzle readability of Portal-like games, but land as a different fictional test facility with different props, portal/gate visuals, UI icons, wall markings, and device design.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable first-person puzzle screenshot
-    subject: keep clear object function, gate relationship, route affordance, hazard, scale, and
-    next-action logic without copying source devices or room layouts.
-  color_and_tone: >-
-    Use a clean puzzle-lab palette: matte white panels, soft grey, orange/blue gate accents, hazard
-    green, black seams, and cool fluorescent light. Keep value grouping crisp and readable.
-  lighting_and_shadow: >-
-    Light the image through clinical overhead light, portal glow, laser beams, panel reflections,
-    and deep behind-wall shadow. Lighting must clarify the playable route, threat, focal subject, or
-    objective and avoid generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from modular wall panels, glass, cube edges, gel splashes, metal rails, cables,
-    and clean hard-surface test geometry. Materials should feel like in-engine game assets captured
-    during play, with enough texture identity to separate props, terrain, characters, hazards, and
-    interactables.
-  camera_and_composition: >-
-    Compose with first-person puzzle camera, foreground tool edge or hands only if useful, linked
-    gate surfaces, test prop, hazard, and one clear traversal solution. Avoid poster framing and
-    exact chamber copies.
-  atmosphere_and_mood: >-
-    Carry an original whitewall test mood: clinical, witty, lonely, spatial, precise, and quietly
-    dangerous.
-  rendering_and_quality: >-
-    Finish as coherent first-person puzzle screenshot style, not concept art: minimal HUD, reticle,
-    gate cues, object highlights, and hazard indicators can appear abstractly. Maintain
-    heavy-denoise clarity, crisp geometry, and no readable signage/logos.
-  key_features: >-
-    Portal 2 gameplay screenshots; first-person puzzle capture with clean test chambers, portal
-    surfaces, laser paths, weighted cubes, and sterile objective readability; white panels, grey
-    concrete, orange/blue portals, cyan laser lines, black mechanical gaps, and warning yellow;
-    clinical overhead light, portal glow, laser beams, panel reflections, and deep behind-wall
-    shadow; modular wall panels, glass, cube edges, gel splashes, metal rails, cables, and clean
-    hard-surface test geometry; first-person portal-gun framing with puzzle affordances, destination
-    sightlines, object relationships, and chamber logic visible; clinical, witty, spatial,
-    experimental, and cleanly mechanical; HUD guidance: almost no HUD; portal reticle and tiny
-    interaction cues are enough
-  creative_brief: "Whitewall Gate Test Chamber: in-game screenshot language informed by first-person spatial puzzle references, covering clean modular rooms, gate mechanics, traversal logic, object affordances, and minimal HUD. Avoid direct Portal cloning, exact chamber copies, readable signage, and recognizable device replicas. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'Valve Portal 2 (2011) look: first-person physics puzzle chambers, clean white modular panels, grey walls, robotic arms rearranging the room, laser emitters, light bridges and dry humor.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as test subjects in plain white jumpsuits and long-fall boots, seen from first person. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Clinical white, panel grey, laser red and light-bridge blue.
+  lighting_and_shadow: Clean even fluorescent light with glowing beams, lit the way Portal 2 2011 lights its levels.
+  texture_and_material: Matte white panels, brushed metal and glass, with the in-engine surface finish of Portal 2 2011.
+  camera_and_composition: First-person view in a test chamber, framed the way Portal 2 2011 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with dry clinical wit.
+  rendering_and_quality: Authentic Source engine puzzle screen, matching real Portal 2 2011 screenshots.
+  key_features: Portal 2 test chamber; white panels; robotic arms; lasers
+  creative_brief: 'Valve Portal 2 (2011) look: first-person physics puzzle chambers, clean white modular panels, grey walls, robotic arms rearranging the room, laser emitters, light bridges and dry humor. Carry it through Portal 2 test chamber, white panels, robotic arms, lasers. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
+  - a grey cube with a pink heart
+  - orange and blue portal ovals
+  - a hanging robotic AI with a yellow eye
+  - a white handheld device with a black claw tip
   - watermark
   - logo
   - copyright mark
@@ -91,17 +67,18 @@ avoidRules:
   - exact Aperture chamber copy
   - readable test signage
   - recognizable portal gun replica
+  - text
+  - readable labels
+  - franchise likeness
+  - real person likeness
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-036.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, direct Portal clone, exact Aperture chamber copy, readable
-    test signage, recognizable portal gun replica
+  negativePrompt: a grey cube with a pink heart, orange and blue portal ovals, a hanging robotic AI with a yellow eye, a white handheld device with a black claw tip, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Portal clone, exact Aperture chamber copy, readable test signage, recognizable portal gun replica, text, readable labels, franchise likeness, real person likeness, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   referenceGame: Original first-person portal puzzle, Portal-informed
   referenceMode: capture-derived gameplay screenshot style
   hudGuidance: almost no HUD; portal reticle and tiny interaction cues are enough
@@ -122,6 +99,7 @@ taxonomy:
     - render-first-person-puzzle
     - camera-first-person
     - hud-minimal-hud
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

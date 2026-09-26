@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-130
 packId: pack_12
-name: Trench Assault Camera Capture
+name: Battlefield 1 2016 - DICE Great War Trenches
 styleAnchors:
-  - Trench Assault Camera Capture
+  - Battlefield 1 2016 - DICE Great War Trenches
   - first-person trench assault screenshot
   - muddy trench
-displayName: Trench Assault Camera Capture
+displayName: Battlefield 1 2016 - DICE Great War Trenches
 category: 4. Sieges, Warfronts & Last Stands
 domain: first-person trench assault screenshot
-version: 1
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,19 +20,19 @@ tags:
   - trench-assault
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: "Trench assault camera capture: an original first-person screenshot climbing out of a muddy trench into a smoke-filled no-man's-land with flares overhead."
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject from first person in a muddy trench assault.
-  color_and_tone: Mud brown, smoke grey and flare red, kept consistent across the whole image.
-  lighting_and_shadow: Flare light and drifting smoke, kept consistent across the whole image.
-  texture_and_material: Mud, barbed wire, sandbags and craters, kept consistent across the whole image.
-  camera_and_composition: First-person over the trench lip, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with grim dreadful courage.
-  rendering_and_quality: Gritty capture without gore or HUD text, kept consistent across the whole image.
-  creative_brief: "Trench assault camera capture: an original first-person screenshot climbing out of a muddy trench into a smoke-filled no-man's-land with flares overhead. Carry it through muddy trench, flares, barbed wire, first-person. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: muddy trench; flares; barbed wire; first-person
+  aesthetic: 'DICE Battlefield 1 (2016) look: first-person Great War trenches, mud, barbed wire, early tanks, smoke, sepia-tinted skies and cinematic Frostbite lighting.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as Great War soldiers in wool uniforms, helmets and gas masks. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Mud brown, smoke grey and sepia sky, true to the Battlefield 1 2016 palette.
+  lighting_and_shadow: Cinematic haze and flare glow, lit the way Battlefield 1 2016 lights its levels.
+  texture_and_material: Mud, wire, wood and wool, with the in-engine surface finish of Battlefield 1 2016.
+  camera_and_composition: First-person view over a trench lip, framed the way Battlefield 1 2016 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with harrowing wartime dread.
+  rendering_and_quality: Authentic Frostbite first-person war screen, matching real Battlefield 1 2016 screenshots.
+  creative_brief: 'DICE Battlefield 1 (2016) look: first-person Great War trenches, mud, barbed wire, early tanks, smoke, sepia-tinted skies and cinematic Frostbite lighting. Carry it through Battlefield 1 trenches, mud, smoke, war machines. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Battlefield 1 trenches; mud; smoke; war machines
 avoidRules:
-  - gore
   - existing game characters, logos or levels
   - readable interface text
   - readable text
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: gore, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - trench-assault
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

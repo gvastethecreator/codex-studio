@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-171
 packId: pack_12
-name: Tilt Maze Rolling-Ball Capture
+name: Super Monkey Ball 2001 - Amusement Vision Tilt Stage
 styleAnchors:
-  - Tilt Maze Rolling-Ball Capture
+  - Super Monkey Ball 2001 - Amusement Vision Tilt Stage
   - tilting maze ball game screenshot
   - tilting maze
-displayName: Tilt Maze Rolling-Ball Capture
+displayName: Super Monkey Ball 2001 - Amusement Vision Tilt Stage
 category: 8. Puzzle Chambers & Adventure Setpieces
 domain: tilting maze ball game screenshot
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,18 +20,20 @@ tags:
   - tilt-maze
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Tilt maze rolling-ball capture: an original screenshot of a glossy ball rolling through a tilting maze board suspended in space, rails, holes and ramps.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject as a ball or rider inside a tilting maze board.
-  color_and_tone: Glossy candy colors on a dark sky, kept consistent across the whole image.
-  lighting_and_shadow: Bright reflections on the ball and rails, kept consistent across the whole image.
-  texture_and_material: Glossy ball, wooden or plastic board and rails.
-  camera_and_composition: Angled view of the tilted board, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with delicate balance, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no timer text, kept consistent across the whole image.
-  creative_brief: "Tilt maze rolling-ball capture: an original screenshot of a glossy ball rolling through a tilting maze board suspended in space, rails, holes and ramps. Carry it through tilting maze, glossy ball, floating board, holes and ramps. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: tilting maze; glossy ball; floating board; holes and ramps
+  aesthetic: 'Amusement Vision Super Monkey Ball (2001) look: bright tilting stages floating in the sky or space, a character sealed in a clear ball, bananas and goal gates.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as small figures sealed inside clear rolling balls. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Bright checker colors and starry skies, true to the Super Monkey Ball 2001 palette.
+  lighting_and_shadow: Bright arcade light, lit the way Super Monkey Ball 2001 lights its levels.
+  texture_and_material: Glossy clean surfaces, with the in-engine surface finish of Super Monkey Ball 2001.
+  camera_and_composition: Behind-the-ball tilt view, framed the way Super Monkey Ball 2001 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with tense playful balance.
+  rendering_and_quality: Authentic arcade tilt-maze screen, matching real Super Monkey Ball 2001 screenshots.
+  creative_brief: 'Amusement Vision Super Monkey Ball (2001) look: bright tilting stages floating in the sky or space, a character sealed in a clear ball, bananas and goal gates. Carry it through Monkey Ball tilt stages, ball, floating mazes. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Monkey Ball tilt stages; ball; floating mazes
 avoidRules:
+  - a monkey in a ball
   - existing game characters, logos or levels
   - readable interface text
   - readable text
@@ -42,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a monkey in a ball, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -63,6 +68,7 @@ taxonomy:
     - tilt-maze
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

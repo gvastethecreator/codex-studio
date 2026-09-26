@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-181
 packId: pack_12
-name: Real-Time First-Person Crypt Gameplay
+name: Legend of Grimrock 2012 - Almost Human Grid Dungeon
 styleAnchors:
-  - Real-Time First-Person Crypt Gameplay
+  - Legend of Grimrock 2012 - Almost Human Grid Dungeon
   - first-person dungeon crawler gameplay
   - first-person hands
-displayName: Real-Time First-Person Crypt Gameplay
+displayName: Legend of Grimrock 2012 - Almost Human Grid Dungeon
 category: 9. Gothic & Dungeon Gameplay
 domain: first-person dungeon crawler gameplay
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - fp-crypt
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Real-time first-person crypt gameplay: an original first-person dungeon crawler capture with a hand holding a torch and a weapon, crumbling crypt corridors and lurking shapes.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject from first person with a torch and weapon in a crypt.
-  color_and_tone: Torch orange against cold grey stone, kept consistent across the whole image.
-  lighting_and_shadow: Torch flicker and deep shadow, kept consistent across the whole image.
-  texture_and_material: Wet stone, cobwebs and old bones, kept consistent across the whole image.
-  camera_and_composition: First-person with hands in view, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with claustrophobic danger, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no UI text, kept consistent across the whole image.
-  creative_brief: "Real-time first-person crypt gameplay: an original first-person dungeon crawler capture with a hand holding a torch and a weapon, crumbling crypt corridors and lurking shapes. Carry it through first-person hands, torch, crypt corridor, lurking shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: first-person hands; torch; crypt corridor; lurking shapes
+  aesthetic: 'Almost Human Legend of Grimrock (2012) look: first-person grid dungeon crawler with stone corridors, torches, pressure plates and real-time monsters.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people and monsters in stone corridors seen from first person. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Torch amber, stone grey and moss green, true to the Legend of Grimrock 2012 palette.
+  lighting_and_shadow: Torchlight in stone corridors, lit the way Legend of Grimrock 2012 lights its levels.
+  texture_and_material: Detailed stone and iron, with the in-engine surface finish of Legend of Grimrock 2012.
+  camera_and_composition: First-person grid view, framed the way Legend of Grimrock 2012 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with claustrophobic dungeon tension.
+  rendering_and_quality: Authentic dungeon crawler screen, matching real Legend of Grimrock 2012 screenshots.
+  creative_brief: 'Almost Human Legend of Grimrock (2012) look: first-person grid dungeon crawler with stone corridors, torches, pressure plates and real-time monsters. Carry it through Grimrock grid dungeon, torches, stone corridors. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Grimrock grid dungeon; torches; stone corridors
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - fp-crypt
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-200
 packId: pack_12
-name: Hand-Drawn Feudal Brawler Gameplay
+name: Muramasa The Demon Blade 2009 - Vanillaware Painted Feudal
 styleAnchors:
-  - Hand-Drawn Feudal Brawler Gameplay
+  - Muramasa The Demon Blade 2009 - Vanillaware Painted Feudal
   - 2D hand-drawn feudal action gameplay
   - hand-drawn warriors
-displayName: Hand-Drawn Feudal Brawler Gameplay
+displayName: Muramasa The Demon Blade 2009 - Vanillaware Painted Feudal
 category: 10. Graphic & Feudal Gameplay
 domain: 2D hand-drawn feudal action gameplay
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - feudal-brawler
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Hand-drawn feudal brawler gameplay: an original side-scrolling capture with hand-animated warriors, bold outlines and painted feudal villages under attack.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject as a hand-drawn warrior in a side-scrolling feudal brawl.
-  color_and_tone: Warm painted backgrounds with bold character colors, kept consistent across the whole image.
-  lighting_and_shadow: Painted light and flat character shadows, kept consistent across the whole image.
-  texture_and_material: Hand-inked lines, painted wood and paper walls, kept consistent across the whole image.
-  camera_and_composition: Side-on lane with foreground and background, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with lively feudal action.
-  rendering_and_quality: Clean hand-drawn capture with no UI, kept consistent across the whole image.
-  creative_brief: "Hand-drawn feudal brawler gameplay: an original side-scrolling capture with hand-animated warriors, bold outlines and painted feudal villages under attack. Carry it through hand-drawn warriors, side-scrolling, painted village, bold outlines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: hand-drawn warriors; side-scrolling; painted village; bold outlines
+  aesthetic: 'Vanillaware Muramasa: The Demon Blade (2009) look: lush hand-painted 2D feudal Japan by George Kamitani, flowing sword arcs, layered scenery and yokai.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as elegant hand-painted feudal figures. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Lush green, sunset gold and cherry pink, true to the Muramasa The Demon Blade 2009 palette.
+  lighting_and_shadow: Painted glow and warm light, lit the way Muramasa The Demon Blade 2009 lights its levels.
+  texture_and_material: Hand-painted 2D art, with the in-engine surface finish of Muramasa The Demon Blade 2009.
+  camera_and_composition: Side-scrolling view, framed the way Muramasa The Demon Blade 2009 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with lush elegant adventure.
+  rendering_and_quality: Authentic hand-painted action screen, matching real Muramasa The Demon Blade 2009 screenshots.
+  creative_brief: 'Vanillaware Muramasa: The Demon Blade (2009) look: lush hand-painted 2D feudal Japan by George Kamitani, flowing sword arcs, layered scenery and yokai. Carry it through Muramasa painted, feudal Japan, sword arcs. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Muramasa painted; feudal Japan; sword arcs
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - feudal-brawler
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

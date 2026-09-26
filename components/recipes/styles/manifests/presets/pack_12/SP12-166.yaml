@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-166
 packId: pack_12
-name: Museum Laser Grid Heist Capture
+name: Sly Cooper 2002 - Sucker Punch Toon Heist
 styleAnchors:
-  - Museum Laser Grid Heist Capture
+  - Sly Cooper 2002 - Sucker Punch Toon Heist
   - museum laser security screenshot
   - laser grid
-displayName: Museum Laser Grid Heist Capture
+displayName: Sly Cooper 2002 - Sucker Punch Toon Heist
 category: 7. Heists, Horror & Underworld Runs
 domain: museum laser security screenshot
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,22 +20,23 @@ tags:
   - laser-heist
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Museum laser grid heist capture: an original stealth screenshot of a thief contorting through a grid of red security lasers toward a glowing exhibit case.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject slipping through a web of red security lasers in a museum.
-  color_and_tone: Dark gallery with red laser lines and case glow.
-  lighting_and_shadow: Laser beams in fog and exhibit spotlights, kept consistent across the whole image.
-  texture_and_material: Marble floors, glass cases and haze, kept consistent across the whole image.
-  camera_and_composition: Third-person low angle through the lasers, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with precise nerve, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no readable plaques, kept consistent across the whole image.
-  creative_brief: "Museum laser grid heist capture: an original stealth screenshot of a thief contorting through a grid of red security lasers toward a glowing exhibit case. Carry it through laser grid, museum gallery, glowing case, contorting thief. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: laser grid; museum gallery; glowing case; contorting thief
+  aesthetic: 'Sucker Punch Sly Cooper and the Thievius Raccoonus (2002) look: cel-shaded cartoon heist, animal thieves, blue night palettes, laser grids and sneaky poses.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as cel-shaded cartoon animal thieves with sneaky poses. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Night blue, laser red and gold, true to the Sly Cooper 2002 palette.
+  lighting_and_shadow: Cartoon night light with laser glow, lit the way Sly Cooper 2002 lights its levels.
+  texture_and_material: Cel shading with ink outlines, with the in-engine surface finish of Sly Cooper 2002.
+  camera_and_composition: Third-person sneak view, framed the way Sly Cooper 2002 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with sly playful heist.
+  rendering_and_quality: Authentic PS2 toon heist screen, matching real Sly Cooper 2002 screenshots.
+  creative_brief: 'Sucker Punch Sly Cooper and the Thievius Raccoonus (2002) look: cel-shaded cartoon heist, animal thieves, blue night palettes, laser grids and sneaky poses. Carry it through Sly Cooper cel, animal thieves, lasers. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Sly Cooper cel; animal thieves; lasers
 avoidRules:
+  - a raccoon thief in a blue hat with a cane
   - readable plaques
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -44,13 +45,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: readable plaques, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a raccoon thief in a blue hat with a cane, readable plaques, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -65,6 +69,7 @@ taxonomy:
     - laser-heist
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

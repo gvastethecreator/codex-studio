@@ -1,14 +1,14 @@
 schemaVersion: 1
 id: SP12-053
 packId: pack_12
-name: Bog Coven Contract
+name: The Witcher 3 2015 - CD Projekt Bog Hunt
 styleAnchors:
-  - grim folklore RPG gameplay screenshots
+  - The Witcher 3 2015 - CD Projekt Bog Hunt
   - third-person swamp monster contract
   - Bog Coven Contract
-displayName: Bog Coven Contract
+displayName: The Witcher 3 2015 - CD Projekt Bog Hunt
 category: 2. Arcane Temples & Mythic Realms
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -22,46 +22,21 @@ tags:
   - render-third-person-rpg
   - camera-third-person
   - hud-contextual-hud
+  - reference-title
 visualDna:
-  aesthetic: 'Original in-game screenshot look for grim folklore RPG captures: third-person swamp contract gameplay with wet village edges, occult props, monster telegraphs, grounded quest-combat readability, and adult muddy fantasy restraint. Borrow the folkloric material discipline of Witcher-like games, but land as a different fictional monster-contract RPG with different characters, creatures, villages, UI icons, and quest props.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable bog-coven RPG screenshot subject:
-    keep clear role silhouette, monster/player/object function, dodge or sign distance, route
-    affordance, and scale relationship without copying source characters or named IP elements.
-  color_and_tone: >-
-    Use a grim folklore RPG palette: mud brown, swamp green, corpse grey, candle yellow, dried blood
-    red, peat black, and stormy blue. Keep value grouping legible at gameplay distance and avoid
-    racing-sport brightness, glossy fantasy polish, or clean heroic color scripts.
-  lighting_and_shadow: >-
-    Light the image through overcast swamp light, torch pools, spell signs, moon haze, and
-    monster-eye glints. Lighting must clarify the playable route, threat, focal subject, or
-    objective and avoid generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from wet reeds, rotting wood, leather armor, bone charms, mud, witch huts, and
-    realistic creature skin. Materials should feel like in-engine game assets captured during play,
-    with enough texture identity to separate props, terrain, characters, hazards, and interactables.
-  camera_and_composition: >-
-    Compose with third-person action-RPG framing: weapon/sign distance, dodge space, monster
-    telegraph, bog route, and quest-location depth. The frame should read as a plausible gameplay
-    capture, not a racing shot, poster, or cinematic monster portrait.
-  atmosphere_and_mood: >-
-    Carry an original bog-coven contract mood: folkloric, grimy, adult, dangerous, humid, and
-    morally murky.
-  rendering_and_quality: >-
-    Finish as coherent in-engine third-person RPG screenshot style, not concept art: contextual RPG
-    HUD can include health/stamina, small minimap shape, potion icons, and non-readable quest
-    marker. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, no fake
-    logos, no racing camera, no exact monster contract UI, and no stock-photo polish.
-  key_features: >-
-    original grim folklore RPG gameplay screenshots; third-person swamp contract capture; wet
-    village edges, occult props, monster telegraphs, grounded quest-combat readability; mud brown,
-    swamp green, corpse grey, candle yellow, dried blood red, peat black, stormy blue; overcast
-    swamp light, torch pools, small spell signs, moon haze, monster-eye glints; wet reeds, rotting
-    wood, leather, bone charms, mud, witch huts, creature skin; third-person action-RPG framing with
-    dodge space and quest-location depth; adult, muddy, dangerous, morally murky; HUD guidance:
-    contextual RPG HUD only, no readable quest text
-  creative_brief: "Bog Coven Contract: in-game screenshot language informed by grim folklore RPG references, covering third-person camera, muddy material language, monster-contract readability, swamp route affordances, and restrained in-engine finish. Avoid menus, logos, exact characters, exact levels, direct Witcher cloning, racing-sport framing, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'CD Projekt Red The Witcher 3: Wild Hunt (2015) look: realistic dark Slavic fantasy, misty bogs and wet villages, monster contracts, muddy browns and eerie folklore.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as grounded Slavic peasants, hunters and folklore creatures in worn clothing and armor. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Bog green, muddy brown, grey fog and pale folklore light.
+  lighting_and_shadow: Diffuse misty light with lantern glow and eerie hues.
+  texture_and_material: Realistic mud, wet wood, leather and moss, with the in-engine surface finish of The Witcher 3 2015.
+  camera_and_composition: Third-person over-the-shoulder view in wet landscapes, framed the way The Witcher 3 2015 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with eerie folkloric dread.
+  rendering_and_quality: Authentic mid-2010s open-world RPG screen, matching real The Witcher 3 2015 screenshots.
+  key_features: Witcher 3 Slavic bog; monster contracts; misty folklore
+  creative_brief: 'CD Projekt Red The Witcher 3: Wild Hunt (2015) look: realistic dark Slavic fantasy, misty bogs and wet villages, monster contracts, muddy browns and eerie folklore. Carry it through Witcher 3 Slavic bog, monster contracts, misty folklore. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
+  - a white-haired hunter with two swords and cat eyes
+  - three crones of a bog
   - watermark
   - logo
   - copyright mark
@@ -89,22 +64,21 @@ avoidRules:
   - direct Witcher clone
   - racing sport camera
   - exact monster contract UI
+  - text
+  - readable labels
+  - franchise likeness
+  - real person likeness
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-053.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, direct Witcher clone, racing sport camera, exact monster
-    contract UI
+  negativePrompt: a white-haired hunter with two swords and cat eyes, three crones of a bog, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Witcher clone, racing sport camera, exact monster contract UI, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Original grim folklore RPG, Witcher-informed
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    RPG HUD can include health/stamina, minimap, potion icons, and small quest marker if not
-    text-heavy
+  hudGuidance: RPG HUD can include health/stamina, minimap, potion icons, and small quest marker if not text-heavy
   renderFamily: third-person-rpg
   cameraFamily: third-person
   hudMode: contextual-hud
@@ -122,6 +96,7 @@ taxonomy:
     - render-third-person-rpg
     - camera-third-person
     - hud-contextual-hud
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-126
 packId: pack_12
-name: Station Management Side-View
+name: Oxygen Not Included 2019 - Klei Colony Cutaway
 styleAnchors:
-  - Station Management Side-View
+  - Oxygen Not Included 2019 - Klei Colony Cutaway
   - space station management sim screenshot
   - station cross-section
-displayName: Station Management Side-View
+displayName: Oxygen Not Included 2019 - Klei Colony Cutaway
 category: 3. Sci-Fi Frontiers & Mech Zones
 domain: space station management sim screenshot
-version: 1
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - station-sideview
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Station management side-view: an original side-view cross-section screenshot of a space station, tiny crew in rooms, corridors, reactors and docking ships.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject as tiny crew in a side-view cross-section of a station.
-  color_and_tone: Clean module whites, reactor blue and hazard red.
-  lighting_and_shadow: Room lights with dark space around, kept consistent across the whole image.
-  texture_and_material: Modular rooms, pipes and tiny crew sprites, kept consistent across the whole image.
-  camera_and_composition: Side-view cutaway of many rooms, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with busy small-world charm.
-  rendering_and_quality: Tidy management capture with no readable UI, kept consistent across the whole image.
-  creative_brief: "Station management side-view: an original side-view cross-section screenshot of a space station, tiny crew in rooms, corridors, reactors and docking ships. Carry it through station cross-section, tiny crew, modular rooms, docking ships. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: station cross-section; tiny crew; modular rooms; docking ships
+  aesthetic: 'Klei Entertainment Oxygen Not Included (2019) look: side-view cartoon colony cutaway, tiny round-headed duplicants, pipes and gas overlays, cramped rooms and jaunty hand-drawn style.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as tiny round-headed cartoon colonists with big eyes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Muted earth, pipe teal and cartoon highlights, true to the Oxygen Not Included 2019 palette.
+  lighting_and_shadow: Flat cartoon light in cutaway rooms, lit the way Oxygen Not Included 2019 lights its levels.
+  texture_and_material: Hand-drawn Klei cartoon lines, with the in-engine surface finish of Oxygen Not Included 2019.
+  camera_and_composition: Side-view colony cutaway, framed the way Oxygen Not Included 2019 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with busy desperate charm.
+  rendering_and_quality: Authentic cartoon colony sim screen, matching real Oxygen Not Included 2019 screenshots.
+  creative_brief: 'Klei Entertainment Oxygen Not Included (2019) look: side-view cartoon colony cutaway, tiny round-headed duplicants, pipes and gas overlays, cramped rooms and jaunty hand-drawn style. Carry it through ONI cutaway, tiny colonists, pipes and rooms. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: ONI cutaway; tiny colonists; pipes and rooms
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - station-sideview
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

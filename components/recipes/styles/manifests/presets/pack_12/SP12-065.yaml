@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP12-065
 packId: pack_12
-name: Soulcalibur Crystal Duel Hall
+name: Soulcalibur VI 2018 - Project Soul Weapon Duel
 styleAnchors:
-  - Soulcalibur VI gameplay screenshots
+  - Soulcalibur VI 2018 - Project Soul Weapon Duel
   - Soulcalibur Crystal Duel Hall
-displayName: Soulcalibur Crystal Duel Hall
+displayName: Soulcalibur VI 2018 - Project Soul Weapon Duel
 category: 5. Speed, Sport & Competitive Arenas
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,48 +23,18 @@ tags:
   - hud-full-hud
   - reference-title
 visualDna:
-  aesthetic: 'In-game screenshot look informed by Soulcalibur VI gameplay: weapon-fighting game capture with ornate arenas, two-character duel spacing, dramatic camera, and crystal fantasy stage spectacle. It never recreates an exact official level, character, logo or marketing art.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable Soulcalibur VI-adjacent game
-    screenshot subject: keep clear role silhouette, player/enemy/object function, scale
-    relationship, hitbox-like readability, and interaction affordances without copying source
-    characters or named IP elements.
-  color_and_tone: >-
-    Use a Soulcalibur VI-informed palette: royal blue, crystal white, polished gold, crimson cloth,
-    black armor, and bright weapon trails. Keep value grouping legible at gameplay distance, with
-    color accents behaving like route, danger, pickup, team, magic, or objective cues rather than
-    decorative wash.
-  lighting_and_shadow: >-
-    Light the image through arena spotlights, magic hit sparks, rimmed armor, stage glow, and
-    cinematic super-move flare. Lighting must clarify the playable route, threat, focal subject, or
-    objective and avoid generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from polished stone, crystal pillars, ornate weapons, flowing cloth, armor
-    plates, and high-detail arena props. Materials should feel like in-engine game assets captured
-    during play, with enough texture identity to separate props, terrain, characters, hazards, and
-    interactables.
-  camera_and_composition: >-
-    Compose with side-biased 3D fighting camera with two combatants, health bars, ring-out edges,
-    and attack-impact clarity. The frame should read as a plausible gameplay capture; include UI/HUD
-    only when it matches the source game's visual logic and improves clarity.
-  atmosphere_and_mood: 'Soulcalibur VI-derived mood: duelist, flamboyant, heroic, competitive, and theatrical; it follows the tone of the requested scene without forcing a fixed mission or story.'
-  rendering_and_quality: >-
-    Finish as a coherent in-engine screenshot style, not concept art: fighting-game HUD is expected:
-    health bars, round timer, meter, player names as abstract blocks, and hit sparks. Maintain
-    heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos,
-    stock-photo polish, or random interface clutter.
-  key_features: >-
-    Soulcalibur VI gameplay screenshots; weapon-fighting game capture with ornate arenas,
-    two-character duel spacing, dramatic camera, and crystal fantasy stage spectacle; royal blue,
-    crystal white, polished gold, crimson cloth, black armor, and bright weapon trails; arena
-    spotlights, magic hit sparks, rimmed armor, stage glow, and cinematic super-move flare; polished
-    stone, crystal pillars, ornate weapons, flowing cloth, armor plates, and high-detail arena
-    props; side-biased 3D fighting camera with two combatants, health bars, ring-out edges, and
-    attack-impact clarity; duelist, flamboyant, heroic, competitive, and theatrical; HUD guidance:
-    fighting-game HUD is expected: health bars, round timer, meter, player names as abstract blocks,
-    and hit sparks
-  creative_brief: "Soulcalibur Crystal Duel Hall: in-game screenshot language informed by Soulcalibur VI, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'Bandai Namco Project Soul Soulcalibur VI (2018) look: 3D weapon fighting in ornate historical-fantasy stages, colorful weapon trails, dramatic sparks and flowing costumes.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as ornate weapon fighters in flowing historical-fantasy costumes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Crystal blue, gold and weapon trail colors, true to the Soulcalibur VI 2018 palette.
+  lighting_and_shadow: Dramatic stage light with sparks, lit the way Soulcalibur VI 2018 lights its levels.
+  texture_and_material: Polished costumes and ornate metal, with the in-engine surface finish of Soulcalibur VI 2018.
+  camera_and_composition: Side-on 3D fighting camera, framed the way Soulcalibur VI 2018 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with epic duelist grandeur.
+  rendering_and_quality: Authentic 3D fighter screen, matching real Soulcalibur VI 2018 screenshots.
+  key_features: Soulcalibur weapon trails; ornate stages
+  creative_brief: 'Bandai Namco Project Soul Soulcalibur VI (2018) look: 3D weapon fighting in ornate historical-fantasy stages, colorful weapon trails, dramatic sparks and flowing costumes. Carry it through Soulcalibur weapon trails, ornate stages. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
+  - existing Soulcalibur fighters
   - watermark
   - logo
   - copyright mark
@@ -91,23 +61,19 @@ avoidRules:
   - copied box art composition
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
+  - text
+  - readable labels
+  - franchise likeness
+  - real person likeness
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-065.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: existing Soulcalibur fighters, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts
   referenceGame: Soulcalibur VI
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    fighting-game HUD is expected: health bars, round timer, meter, player names as abstract blocks,
-    and hit sparks
+  hudGuidance: 'fighting-game HUD is expected: health bars, round timer, meter, player names as abstract blocks, and hit sparks'
   renderFamily: third-person-cinematic
   cameraFamily: hybrid-gameplay
   hudMode: full-hud

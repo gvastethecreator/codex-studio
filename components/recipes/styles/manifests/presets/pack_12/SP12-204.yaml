@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-204
 packId: pack_12
-name: Samurai Tactics Grid Gameplay
+name: Shogun Showdown 2023 - Roboatino Pixel Tactics
 styleAnchors:
-  - Samurai Tactics Grid Gameplay
+  - Shogun Showdown 2023 - Roboatino Pixel Tactics
   - feudal turn-based tactics gameplay
   - isometric grid
-displayName: Samurai Tactics Grid Gameplay
+displayName: Shogun Showdown 2023 - Roboatino Pixel Tactics
 category: 10. Graphic & Feudal Gameplay
 domain: feudal turn-based tactics gameplay
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - samurai-tactics
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Samurai tactics grid gameplay: an original isometric turn-based capture of feudal units on a grid in a mountain temple, clan banners and movement tiles.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject as feudal units on an isometric tactics grid.
-  color_and_tone: Earthy temple tones with clan color accents, kept consistent across the whole image.
-  lighting_and_shadow: Soft daylight and tile highlights, kept consistent across the whole image.
-  texture_and_material: Stone steps, wood, banners and grid tiles, kept consistent across the whole image.
-  camera_and_composition: Isometric grid view, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with patient strategy, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no UI numbers, kept consistent across the whole image.
-  creative_brief: "Samurai tactics grid gameplay: an original isometric turn-based capture of feudal units on a grid in a mountain temple, clan banners and movement tiles. Carry it through isometric grid, feudal units, clan banners, temple. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: isometric grid; feudal units; clan banners; temple
+  aesthetic: 'Roboatino Shogun Showdown (2023) look: turn-based pixel tactics on a line of feudal Japanese tiles, samurai, monks and oni in crisp sprites.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as crisp pixel samurai and oni. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Temple red, stone and night blue, true to the Shogun Showdown 2023 palette.
+  lighting_and_shadow: Flat pixel light, lit the way Shogun Showdown 2023 lights its levels.
+  texture_and_material: Crisp pixel art, with the in-engine surface finish of Shogun Showdown 2023.
+  camera_and_composition: Tactical side view, framed the way Shogun Showdown 2023 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with tight tactical tension.
+  rendering_and_quality: Authentic pixel tactics screen, matching real Shogun Showdown 2023 screenshots.
+  creative_brief: 'Roboatino Shogun Showdown (2023) look: turn-based pixel tactics on a line of feudal Japanese tiles, samurai, monks and oni in crisp sprites. Carry it through Shogun Showdown pixels, oni, tactics. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Shogun Showdown pixels; oni; tactics
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - samurai-tactics
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

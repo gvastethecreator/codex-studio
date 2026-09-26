@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-209
 packId: pack_12
-name: Looping Hallway Horror Gameplay
+name: P.T. 2014 - Kojima Productions Looping Hallway
 styleAnchors:
-  - Looping Hallway Horror Gameplay
+  - P.T. 2014 - Kojima Productions Looping Hallway
   - repeating corridor horror gameplay
   - looping hallway
-displayName: Looping Hallway Horror Gameplay
+displayName: P.T. 2014 - Kojima Productions Looping Hallway
 category: 11. Psychological & Tactical Gameplay
 domain: repeating corridor horror gameplay
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - looping-hallway
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Looping hallway horror gameplay: an original first-person capture of an ordinary house hallway that repeats endlessly, each loop subtly more wrong.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; place the subject in an endlessly repeating ordinary hallway.
-  color_and_tone: Dim warm hallway light turning sickly, kept consistent across the whole image.
-  lighting_and_shadow: A single ceiling lamp and dark doorways, kept consistent across the whole image.
-  texture_and_material: Plain wallpaper, wooden floors and framed photos, kept consistent across the whole image.
-  camera_and_composition: First-person down an L-shaped hallway, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with mounting wrongness, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no UI, kept consistent across the whole image.
-  creative_brief: "Looping hallway horror gameplay: an original first-person capture of an ordinary house hallway that repeats endlessly, each loop subtly more wrong. Carry it through looping hallway, first-person, subtle wrongness, ceiling lamp. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: looping hallway; first-person; subtle wrongness; ceiling lamp
+  aesthetic: 'Kojima Productions P.T. (2014) look: photoreal first-person L-shaped suburban hallway that repeats endlessly, a radio, family photos and flickering light.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as unseen first-person visitors in a domestic hallway. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Dim beige, sickly green and shadow, true to the P.T. 2014 palette.
+  lighting_and_shadow: Flickering hallway bulb, lit the way P.T. 2014 lights its levels.
+  texture_and_material: Photoreal domestic surfaces, with the in-engine surface finish of P.T. 2014.
+  camera_and_composition: First-person hallway view, framed the way P.T. 2014 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with looping domestic terror.
+  rendering_and_quality: Authentic photoreal horror screen, matching real P.T. 2014 screenshots.
+  creative_brief: 'Kojima Productions P.T. (2014) look: photoreal first-person L-shaped suburban hallway that repeats endlessly, a radio, family photos and flickering light. Carry it through P.T. looping hallway, photoreal, dread. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: P.T. looping hallway; photoreal; dread
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - looping-hallway
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

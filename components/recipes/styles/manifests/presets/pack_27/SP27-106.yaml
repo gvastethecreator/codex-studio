@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Retro Studios Metroid Prime (2002) look: first-person view through a curved combat visor with HUD arcs, rain and fog droplets on the glass, alien ruins, bioluminescent caverns and scan overlays.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject seen through a curved first-person visor with HUD arcs and droplets on the glass. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Alien teal, bioluminescent orange and visor green, true to the Metroid Prime 2002 palette.
-  lighting_and_shadow: Cave bioluminescence and reflected visor glow, lit the way Metroid Prime 2002 lights its scenes.
-  texture_and_material: Glass droplets, visor reflections and alien stone, with the surface finish of Metroid Prime 2002.
-  camera_and_composition: First-person through a curved helmet visor, framed the way Metroid Prime 2002 composes its shots and pages.
+  lighting_and_shadow: Cave bioluminescence and reflected visor glow, lit the way Metroid Prime 2002 lights its levels.
+  texture_and_material: Glass droplets, visor reflections and alien stone, with the in-engine surface finish of Metroid Prime 2002.
+  camera_and_composition: First-person through a curved helmet visor, framed the way Metroid Prime 2002 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with lonely alien exploration.
-  rendering_and_quality: Authentic GameCube first-person visor screen, in the recognizable hand of Metroid Prime 2002.
+  rendering_and_quality: Authentic GameCube first-person visor screen, matching real Metroid Prime 2002 screenshots.
   creative_brief: 'Retro Studios Metroid Prime (2002) look: first-person view through a curved combat visor with HUD arcs, rain and fog droplets on the glass, alien ruins, bioluminescent caverns and scan overlays. Carry it through Metroid Prime visor, droplets, scan overlay, alien ruins. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Metroid Prime visor; droplets; scan overlay; alien ruins
 avoidRules:
@@ -47,13 +47,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: an orange power suit with an arm cannon, floating jellyfish parasites, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: an orange power suit with an arm cannon, floating jellyfish parasites, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

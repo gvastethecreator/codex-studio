@@ -5,273 +5,257 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-002',
-    name: 'Pandora Jungle First-Person Hunt',
-    displayName: 'Pandora Jungle First-Person Hunt',
+    name: 'Avatar Frontiers of Pandora 2023 - Massive Bioluminescent Jungle',
+    displayName: 'Avatar Frontiers of Pandora 2023 - Massive Bioluminescent Jungle',
     styleAnchors: [
-      'Avatar: Frontiers of Pandora gameplay screenshots',
+      'Avatar Frontiers of Pandora 2023 - Massive Bioluminescent Jungle',
       'Pandora Jungle First-Person Hunt',
+    ],
+    category: '6. Wilderness Hunts & Harsh Frontiers',
+    negativePrompt:
+      'tall blue-skinned aliens with tails, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Massive Entertainment Avatar: Frontiers of Pandora (2023) look: first-person hunting in a towering alien rainforest, bioluminescent plants, floating flora, six-legged fauna and lush Snowdrop engine detail.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as hunters seen from first person with a bow, among giant alien plants. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Lush jungle green, bioluminescent cyan, violet and warm sunbeams.',
+      lighting_and_shadow: 'Dappled canopy sunlight by day and glowing bioluminescence at night.',
+      texture_and_material:
+        'Dense photoreal alien foliage, wet bark and translucent glowing plants.',
+      camera_and_composition: 'First-person view with a drawn bow in frame.',
+      atmosphere_and_mood: 'Keep the requested mood with lush alien wonder.',
+      rendering_and_quality:
+        'Authentic modern first-person open-world screen, matching real Avatar Frontiers of Pandora 2023 screenshots.',
+      key_features: 'Frontiers of Pandora jungle; bioluminescence; first-person bow',
+      creative_brief:
+        "Massive Entertainment Avatar: Frontiers of Pandora (2023) look: first-person hunting in a towering alien rainforest, bioluminescent plants, floating flora, six-legged fauna and lush Snowdrop engine detail. Carry it through Frontiers of Pandora jungle, bioluminescence, first-person bow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+    },
+  },
+  {
+    id: 'SP12-010',
+    name: 'Dark Souls 2011 - FromSoftware Grim Bonfire',
+    displayName: 'Dark Souls 2011 - FromSoftware Grim Bonfire',
+    styleAnchors: ['Dark Souls 2011 - FromSoftware Grim Bonfire', 'Dark Souls Smouldering Forge'],
+    category: '6. Wilderness Hunts & Harsh Frontiers',
+    negativePrompt:
+      'a knight in a bucket helm with a sun emblem, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'FromSoftware Dark Souls (2011) look: third-person dark fantasy of decayed kingdoms, muted desaturated palettes, heavy worn armor, towering demon bosses and lonely bonfires.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as heavy worn knights and hollowed wanderers in battered armor and rags. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Desaturated ash grey, ember orange, rust and deep shadow.',
+      lighting_and_shadow: 'Dim gloomy light with molten glows and bonfire warmth.',
+      texture_and_material:
+        'Worn armor, rough stone, ash and embers, with the in-engine surface finish of Dark Souls 2011.',
+      camera_and_composition:
+        'Third-person lock-on view facing a huge boss, framed the way Dark Souls 2011 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with bleak perilous endurance.',
+      rendering_and_quality:
+        'Authentic early-2010s dark fantasy action screen, matching real Dark Souls 2011 screenshots.',
+      key_features: 'Dark Souls decay; demon bosses; bonfires; worn armor',
+      creative_brief:
+        "FromSoftware Dark Souls (2011) look: third-person dark fantasy of decayed kingdoms, muted desaturated palettes, heavy worn armor, towering demon bosses and lonely bonfires. Carry it through Dark Souls decay, demon bosses, bonfires, worn armor. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+    },
+  },
+  {
+    id: 'SP12-022',
+    name: 'The Long Dark 2017 - Hinterland Painterly Wilderness',
+    displayName: 'The Long Dark 2017 - Hinterland Painterly Wilderness',
+    styleAnchors: [
+      'The Long Dark 2017 - Hinterland Painterly Wilderness',
+      'Long Dark Frozen Survival',
     ],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Avatar: Frontiers of Pandora gameplay: first-person open-world jungle capture with towering alien plants, dense vertical traversal, bows, gathering routes, and luminous predator paths. It never recreates an exact official level, character, logo or marketing art.',
+        'Hinterland Studio The Long Dark (2017) look: first-person survival in a painterly Canadian winter wilderness, flat brushstroke textures, soft gradients, cabins, wolves and aurora nights.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Avatar: Frontiers of Pandora-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Avatar: Frontiers of Pandora-informed palette: lush green, cyan bioluminescence, violet flowers, blue skin-adjacent accents without copying characters, and warm sun flecks. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as bundled survivors seen from first person in painterly winter light. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Painterly snow blue, pine green, sunset peach and cabin amber.',
       lighting_and_shadow:
-        'Light the image through canopy shafts, night-glow plants, wet leaf speculars, distant fire, and moonlit mist over traversal routes. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Soft painterly gradients with low winter sun, lit the way The Long Dark 2017 lights its levels.',
       texture_and_material:
-        'Build surfaces from fibrous bark, translucent leaves, glowing spores, woven gear, mud, water beads, and organic alien scale patterns. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Flat brushstroke textures and soft shapes, with the in-engine surface finish of The Long Dark 2017.',
       camera_and_composition:
-        "Compose with immersive first-person framing with hands, bow, scanning depth, climbable branches, and readable foreground-to-canopy route hierarchy. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Avatar: Frontiers of Pandora-derived mood: feral, awe-struck, stealthy, humid, and environmentally alive; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'First-person view across snowfields, framed the way The Long Dark 2017 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with quiet lonely survival.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: diegetic first-person HUD is allowed: small reticle, stealth markers, compass ticks, and resource pips should stay coherent and unobtrusive. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Avatar: Frontiers of Pandora gameplay screenshots; first-person open-world jungle capture with towering alien plants, dense vertical traversal, bows, gathering routes, and luminous predator paths; lush green, cyan bioluminescence, violet flowers, blue skin-adjacent accents without copying characters, and warm sun flecks; canopy shafts, night-glow plants, wet leaf speculars, distant fire, and moonlit mist over traversal routes; fibrous bark, translucent leaves, glowing spores, woven gear, mud, water beads, and organic alien scale patterns; immersive first-person framing with hands, bow, scanning depth, climbable branches, and readable foreground-to-canopy route hierarchy; feral, awe-struck, stealthy, humid, and environmentally alive; HUD guidance: diegetic first-person HUD is allowed: small reticle, stealth markers, compass ticks, and resource pips should stay coherent and unobtrusive',
+        'Authentic painterly survival screen, matching real The Long Dark 2017 screenshots.',
+      key_features: 'The Long Dark painterly snow; cabins; wolves',
       creative_brief:
-        "Pandora Jungle First-Person Hunt: in-game screenshot language informed by Avatar: Frontiers of Pandora, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
-    },
-  },
-  {
-    id: 'SP12-010',
-    name: 'Dark Souls Smouldering Forge',
-    displayName: 'Dark Souls Smouldering Forge',
-    styleAnchors: ['Dark Souls III gameplay screenshots', 'Dark Souls Smouldering Forge'],
-    category: '6. Wilderness Hunts & Harsh Frontiers',
-    negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
-    style: {
-      aesthetic:
-        'In-game screenshot look informed by Dark Souls III gameplay: third-person action-RPG capture with volcanic masonry, lock-on duel spacing, stamina tension, and oppressive medieval ruin depth. It never recreates an exact official level, character, logo or marketing art.',
-      subject_treatment:
-        "Preserve the user's subject and transform it into a playable Dark Souls III-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Dark Souls III-informed palette: ash grey, ember orange, charred black, dull brass, corpse beige, and muted blood red. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
-      lighting_and_shadow:
-        'Light the image through lava underglow, bonfire orange, smoky occlusion, rimmed armor edges, and stark boss-fire contrast. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
-      texture_and_material:
-        'Build surfaces from sooty stone, scorched metal, cracked shields, worn cloth, ember particles, and heavy weathered geometry. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
-      camera_and_composition:
-        "Compose with over-shoulder third-person combat framing with lock-on angle, boss scale, dodge lanes, stamina-space readability, and terrain traps. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Dark Souls III-derived mood: punishing, solemn, ruined, hot, and ritualistic; it follows the tone of the requested scene without forcing a fixed mission or story.',
-      rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: soulslike HUD can appear: health/stamina/focus bars, item slot, and boss bar, kept small and era-consistent. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Dark Souls III gameplay screenshots; third-person action-RPG capture with volcanic masonry, lock-on duel spacing, stamina tension, and oppressive medieval ruin depth; ash grey, ember orange, charred black, dull brass, corpse beige, and muted blood red; lava underglow, bonfire orange, smoky occlusion, rimmed armor edges, and stark boss-fire contrast; sooty stone, scorched metal, cracked shields, worn cloth, ember particles, and heavy weathered geometry; over-shoulder third-person combat framing with lock-on angle, boss scale, dodge lanes, stamina-space readability, and terrain traps; punishing, solemn, ruined, hot, and ritualistic; HUD guidance: soulslike HUD can appear: health/stamina/focus bars, item slot, and boss bar, kept small and era-consistent',
-      creative_brief:
-        "Dark Souls Smouldering Forge: in-game screenshot language informed by Dark Souls III, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
-    },
-  },
-  {
-    id: 'SP12-022',
-    name: 'Long Dark Frozen Survival',
-    displayName: 'Long Dark Frozen Survival',
-    styleAnchors: ['The Long Dark gameplay screenshots', 'Long Dark Frozen Survival'],
-    category: '6. Wilderness Hunts & Harsh Frontiers',
-    negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
-    style: {
-      aesthetic:
-        'In-game screenshot look informed by The Long Dark gameplay: first-person winter survival capture with sparse cabins, snowfields, simple painterly realism, resource scarcity, and weather danger. It never recreates an exact official level, character, logo or marketing art.',
-      subject_treatment:
-        "Preserve the user's subject and transform it into a playable The Long Dark-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a The Long Dark-informed palette: snow blue, pine green, cabin brown, muted red cloth, grey sky, and lantern amber. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
-      lighting_and_shadow:
-        'Light the image through overcast snowlight, aurora glow, flashlight beams, stove fire, and low-contrast blizzard fade. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
-      texture_and_material:
-        'Build surfaces from stylized snow, frosted wood, cloth gloves, simple tools, animal tracks, ice crystals, and painterly terrain planes. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
-      camera_and_composition:
-        "Compose with first-person exploration framing with hands/tools, distant shelter silhouette, trail logic, and survival-object readability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'The Long Dark-derived mood: isolated, cold, quiet, practical, and tense; it follows the tone of the requested scene without forcing a fixed mission or story.',
-      rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: survival meters, temperature icons, condition warnings, and small inventory cues can appear but should remain austere. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'The Long Dark gameplay screenshots; first-person winter survival capture with sparse cabins, snowfields, simple painterly realism, resource scarcity, and weather danger; snow blue, pine green, cabin brown, muted red cloth, grey sky, and lantern amber; overcast snowlight, aurora glow, flashlight beams, stove fire, and low-contrast blizzard fade; stylized snow, frosted wood, cloth gloves, simple tools, animal tracks, ice crystals, and painterly terrain planes; first-person exploration framing with hands/tools, distant shelter silhouette, trail logic, and survival-object readability; isolated, cold, quiet, practical, and tense; HUD guidance: survival meters, temperature icons, condition warnings, and small inventory cues can appear but should remain austere',
-      creative_brief:
-        "Long Dark Frozen Survival: in-game screenshot language informed by The Long Dark, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Hinterland Studio The Long Dark (2017) look: first-person survival in a painterly Canadian winter wilderness, flat brushstroke textures, soft gradients, cabins, wolves and aurora nights. Carry it through The Long Dark painterly snow, cabins, wolves. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-027',
-    name: 'Basalt Crew Extraction',
-    displayName: 'Basalt Crew Extraction',
+    name: 'Deep Rock Galactic 2020 - Ghost Ship Low-Poly Caves',
+    displayName: 'Deep Rock Galactic 2020 - Ghost Ship Low-Poly Caves',
     styleAnchors: [
-      'co-op first-person cavern extraction screenshots',
+      'Deep Rock Galactic 2020 - Ghost Ship Low-Poly Caves',
       'procedural mineral cave firefight',
       'Basalt Crew Extraction',
     ],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Deep Rock clone, retro pixel downgrade, exact dwarf miner silhouettes, readable mission UI',
+      'existing Deep Rock dwarves and their salute, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Deep Rock clone, retro pixel downgrade, exact dwarf miner silhouettes, readable mission UI, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Original in-game screenshot look for co-op cavern extraction captures: first-person cave traversal, mineral glow, team tools, creature pressure, drilling routes, extraction objective readability, and chunky stylized rock geometry. Borrow the co-op mining pressure of Deep Rock-like games, but land as a different fictional extraction crew with different suits, tools, creatures, UI icons, and cave motifs.',
+        'Ghost Ship Games Deep Rock Galactic (2020) look: first-person co-op mining in dark procedural caves, stylized low-poly rock, glowing minerals, flares and alien bug swarms.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable cavern extraction screenshot subject: keep clear team/object/threat role, tool scale, route affordance, mineral/resource logic, and enemy spacing without copying source classes or creatures.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as stout bearded space miners in chunky gear, seen from first person. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Use a basalt extraction palette: black rock, mineral cyan, hazard orange, worklight yellow, drill metal grey, fungus violet, and team-color accents. Keep value grouping legible in dark caves without pixel-art downgrade.',
+        'Cave darkness, flare orange and mineral cyan, true to the Deep Rock Galactic 2020 palette.',
       lighting_and_shadow:
-        'Light the image through thrown flares, headlamps, muzzle flashes, mineral luminescence, zipline glow, and darkness swallowed by cave depth. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Headlamps and thrown flares in darkness, lit the way Deep Rock Galactic 2020 lights its levels.',
       texture_and_material:
-        'Build surfaces from chunky voxel-like rock, crystals, dirt, drills, armor plates, bug carapace, and industrial mining tools. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Faceted low-poly rock and glowing crystals, with the in-engine surface finish of Deep Rock Galactic 2020.',
       camera_and_composition:
-        'Compose with first-person tool/weapon camera, foreground mining or combat affordance, mid-ground teammate/objective, cave route depth, and extraction pressure. Avoid strategy overview and generic cave concept art.',
-      atmosphere_and_mood:
-        'Carry an original basalt crew mood: rowdy, hazardous, subterranean, cooperative, crunchy, and resource-hungry.',
+        'First-person view in a cavern, framed the way Deep Rock Galactic 2020 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with rowdy cave camaraderie.',
       rendering_and_quality:
-        'Finish as coherent first-person co-op extraction screenshot style, not pixel art and not concept art: ammo/tool pips, teammate markers, mineral/objective icons, and hazard cues can appear abstractly. Maintain heavy-denoise clarity and readable silhouettes.',
-      key_features:
-        'Deep Rock Galactic gameplay screenshots; first-person co-op mining shooter capture with dwarven silhouettes, dark caves, mineral glow, extraction pressure, and class-based readability; black cave, neon green minerals, orange flares, blue shield lights, red hazard glow, and dusty grey rock; thrown flares, headlamps, muzzle flashes, mineral luminescence, zipline glow, and darkness swallowed by cave depth; chunky voxel-like rock, crystals, dirt, drills, armor plates, bug carapace, and industrial mining tools; first-person combat-mining composition with weapon/tool foreground, tunnel routes, swarm lanes, and objective minerals; rowdy, cooperative, subterranean, dangerous, and workmanlike; HUD guidance: class HUD, ammo, flares, objective counter, teammate outlines, and extraction timer can appear coherently',
+        'Authentic co-op cave shooter screen, matching real Deep Rock Galactic 2020 screenshots.',
+      key_features: 'Deep Rock low-poly caves; flares; mining crew',
       creative_brief:
-        "Basalt Crew Extraction: in-game screenshot language informed by co-op cavern extraction references, covering first-person tools, mineral glow, cave routes, team spacing, creature pressure, and extraction objective readability. Avoid direct Deep Rock cloning, exact class silhouettes, readable mission UI, and retro pixel downgrade. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Ghost Ship Games Deep Rock Galactic (2020) look: first-person co-op mining in dark procedural caves, stylized low-poly rock, glowing minerals, flares and alien bug swarms. Carry it through Deep Rock low-poly caves, flares, mining crew. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-029',
-    name: 'Subnautica Coral Reef Survival',
-    displayName: 'Subnautica Coral Reef Survival',
-    styleAnchors: ['Subnautica gameplay screenshots', 'Subnautica Coral Reef Survival'],
+    name: 'Subnautica 2018 - Unknown Worlds Alien Reef',
+    displayName: 'Subnautica 2018 - Unknown Worlds Alien Reef',
+    styleAnchors: ['Subnautica 2018 - Unknown Worlds Alien Reef', 'Subnautica Coral Reef Survival'],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'existing leviathan designs, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Subnautica gameplay: first-person underwater survival capture with alien reefs, submarine tools, oxygen pressure, creature scale, and readable swim depth. It never recreates an exact official level, character, logo or marketing art.',
+        'Unknown Worlds Subnautica (2018) look: first-person underwater survival on an alien ocean planet, luminous coral, leviathans, small submarines and handheld scanners.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Subnautica-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as divers seen from first person with scanners and small subs. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Use a Subnautica-informed palette: tropical cyan, coral orange, kelp green, deep blue, white suit plastic, and bioluminescent violet. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Alien turquoise, coral magenta and abyss blue, true to the Subnautica 2018 palette.',
       lighting_and_shadow:
-        'Light the image through sun shafts through water, flashlight cones, creature glow, base LEDs, and pressure-dark abyss gradients. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Filtered sun shafts and glowing reef, lit the way Subnautica 2018 lights its levels.',
       texture_and_material:
-        'Build surfaces from soft coral, glass domes, bubbles, fins, titanium tools, alien flora, wet plastic, and refracted water haze. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Stylized alien coral and water haze, with the in-engine surface finish of Subnautica 2018.',
       camera_and_composition:
-        "Compose with first-person swim framing with tool/hand foreground, oxygen-route urgency, reef silhouettes, and base/navigation landmarks. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Subnautica-derived mood: wonderful, vulnerable, aquatic, exploratory, and quietly terrifying; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'First-person dive view, framed the way Subnautica 2018 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with awe edged with fear.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: oxygen, depth, health/food/water, quick slots, and compass are essential if kept like survival-game UI. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Subnautica gameplay screenshots; first-person underwater survival capture with alien reefs, submarine tools, oxygen pressure, creature scale, and readable swim depth; tropical cyan, coral orange, kelp green, deep blue, white suit plastic, and bioluminescent violet; sun shafts through water, flashlight cones, creature glow, base LEDs, and pressure-dark abyss gradients; soft coral, glass domes, bubbles, fins, titanium tools, alien flora, wet plastic, and refracted water haze; first-person swim framing with tool/hand foreground, oxygen-route urgency, reef silhouettes, and base/navigation landmarks; wonderful, vulnerable, aquatic, exploratory, and quietly terrifying; HUD guidance: oxygen, depth, health/food/water, quick slots, and compass are essential if kept like survival-game UI',
+        'Authentic underwater survival screen, matching real Subnautica 2018 screenshots.',
+      key_features: 'Subnautica reef; leviathans; first-person dive',
       creative_brief:
-        "Subnautica Coral Reef Survival: in-game screenshot language informed by Subnautica, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Unknown Worlds Subnautica (2018) look: first-person underwater survival on an alien ocean planet, luminous coral, leviathans, small submarines and handheld scanners. Carry it through Subnautica reef, leviathans, first-person dive. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-034',
-    name: 'Canyon Marksman Contract',
-    displayName: 'Canyon Marksman Contract',
+    name: 'Sniper Ghost Warrior Contracts 2019 - CI Games Long Shot',
+    displayName: 'Sniper Ghost Warrior Contracts 2019 - CI Games Long Shot',
     styleAnchors: [
-      'tactical marksman first-person gameplay screenshots',
+      'Sniper Ghost Warrior Contracts 2019 - CI Games Long Shot',
       'long-range canyon overwatch',
       'Canyon Marksman Contract',
     ],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, strategy tactics camera, drone map view, generic military promo shot, readable scope UI text',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, strategy tactics camera, drone map view, generic military promo shot, readable scope UI text, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Original in-game screenshot look for tactical marksman shooter captures: first-person or scoped overwatch, canyon depth, wind/haze, target patrol spacing, stealth route planning, and ballistics-readable sightlines. Land as a fictional marksman contract, not a strategy map or military poster.',
+        'CI Games Sniper Ghost Warrior Contracts (2019) look: realistic first-person sniping over mountain canyons, scope with ranging marks, wind haze and distant convoys.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable marksman screenshot subject: keep clear distance relationship, target/object function, cover, route affordance, scope/optic framing, and stealth pressure without copying source missions or UI.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as distant realistic figures seen through a scope or a prone marksman. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Use a tactical canyon palette: dust beige, sun-bleached rock, cold optic blue, dry scrub green, muted metal grey, and warning red accents. Keep value grouping legible through atmospheric depth.',
+        'Canyon ochre, dusty green and sky haze, true to the Sniper Ghost Warrior Contracts 2019 palette.',
       lighting_and_shadow:
-        'Light the image through harsh noon sun, scope glare, dust haze, muzzle flash, and long terrain shadows. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Hot daylight with heat haze, lit the way Sniper Ghost Warrior Contracts 2019 lights its levels.',
       texture_and_material:
-        'Build surfaces from rock strata, tactical fabric, matte rifle metal, scrub brush, distant vehicles, heat shimmer, and sandy dust. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Realistic rock, dust and gear, with the in-engine surface finish of Sniper Ghost Warrior Contracts 2019.',
       camera_and_composition:
-        'Compose with first-person scope, binocular, or over-weapon camera; visible foreground cover; mid-distance patrol/objective; long sightline; and one clear tactical decision. Avoid isometric strategy overview.',
-      atmosphere_and_mood:
-        'Carry an original canyon marksman mood: patient, lethal, dry, quiet, tactical, and heat-hazed.',
+        'First-person prone scope view, framed the way Sniper Ghost Warrior Contracts 2019 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with patient lethal focus.',
       rendering_and_quality:
-        'Finish as coherent first-person tactical shooter screenshot style, not concept art: optic reticle, wind dots, range pips, objective markers, and minimap shapes can appear as abstract non-readable HUD. Maintain heavy-denoise clarity and no readable UI text.',
-      key_features:
-        'Sniper Ghost Warrior Contracts 2 gameplay screenshots; long-range tactical sniper capture with desert canyons, optic overlays, distant targets, wind/ballistics tension, and stealth approach routes; red canyon rock, tan sand, military olive, black scope vignette, pale sky, and small red target marks; harsh noon sun, scope glare, dust haze, muzzle flash, and long terrain shadows; rock strata, tactical fabric, matte rifle metal, scrub brush, distant vehicles, heat shimmer, and sandy dust; first-person scoped or over-watch composition with reticle logic, target depth, terrain cover, and ballistic lane readability; patient, lethal, dry, quiet, and tactical; HUD guidance: scope reticle, wind/elevation marks, objective distance, ammo, and detection indicators are allowed if precise',
+        'Authentic tactical sniper screen, matching real Sniper Ghost Warrior Contracts 2019 screenshots.',
+      key_features: 'Sniper contracts; scope view; canyon haze',
       creative_brief:
-        "Canyon Marksman Contract: in-game screenshot language informed by tactical marksman references, covering first-person optics, long sightlines, patrol spacing, cover, environmental haze, and readable stealth objective. Avoid strategy-tactics framing, readable scope text, and generic military promo composition. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "CI Games Sniper Ghost Warrior Contracts (2019) look: realistic first-person sniping over mountain canyons, scope with ranging marks, wind haze and distant convoys. Carry it through Sniper contracts, scope view, canyon haze. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-040',
-    name: 'Monster Hunter Thunder Plains',
-    displayName: 'Monster Hunter Thunder Plains',
-    styleAnchors: ['Monster Hunter: World gameplay screenshots', 'Monster Hunter Thunder Plains'],
+    name: 'Monster Hunter World 2018 - Capcom Ecosystem Hunt',
+    displayName: 'Monster Hunter World 2018 - Capcom Ecosystem Hunt',
+    styleAnchors: [
+      'Monster Hunter World 2018 - Capcom Ecosystem Hunt',
+      'Monster Hunter Thunder Plains',
+    ],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'existing Monster Hunter monsters, a cat companion in armor, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Monster Hunter: World gameplay: third-person beast-hunt capture with enormous creature scale, open biomes, weapon commitment, scout trails, and campsite expedition logic. It never recreates an exact official level, character, logo or marketing art.',
+        'Capcom Monster Hunter: World (2018) look: third-person hunting of huge living monsters across rich ecosystems, oversized weapons, layered armor made from monster parts and dramatic weather.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Monster Hunter: World-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as hunters in layered monster-part armor with oversized weapons. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Use a Monster Hunter: World-informed palette: storm grey, moss green, hide brown, bone white, lightning violet, and orange campfire accents. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Storm blue, electric yellow and natural earth, true to the Monster Hunter World 2018 palette.',
       lighting_and_shadow:
-        'Light the image through weather flashes, dappled forest/plains light, monster attack glow, camp torches, and dust from heavy movement. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Stormy light with lightning bursts, lit the way Monster Hunter World 2018 lights its levels.',
       texture_and_material:
-        'Build surfaces from scaled hides, giant weapons, leather straps, mud, grass, claws, field gear, and tactile creature anatomy. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Detailed scales, fur and forged armor, with the in-engine surface finish of Monster Hunter World 2018.',
       camera_and_composition:
-        "Compose with third-person hunt camera with player small against monster, attack telegraphs, terrain use, and readable chase paths. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Monster Hunter: World-derived mood: predatory, adventurous, physical, dangerous, and ecological; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Third-person view mid-attack, framed the way Monster Hunter World 2018 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with thrilling colossal hunt.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: health/stamina, minimap, item bar, monster status, and damage numbers can appear if they support hunt readability. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Monster Hunter: World gameplay screenshots; third-person beast-hunt capture with enormous creature scale, open biomes, weapon commitment, scout trails, and campsite expedition logic; storm grey, moss green, hide brown, bone white, lightning violet, and orange campfire accents; weather flashes, dappled forest/plains light, monster attack glow, camp torches, and dust from heavy movement; scaled hides, giant weapons, leather straps, mud, grass, claws, field gear, and tactile creature anatomy; third-person hunt camera with player small against monster, attack telegraphs, terrain use, and readable chase paths; predatory, adventurous, physical, dangerous, and ecological; HUD guidance: health/stamina, minimap, item bar, monster status, and damage numbers can appear if they support hunt readability',
+        'Authentic modern hunting action screen, matching real Monster Hunter World 2018 screenshots.',
+      key_features: 'Monster Hunter giant monsters; big weapons; ecosystems',
       creative_brief:
-        "Monster Hunter Thunder Plains: in-game screenshot language informed by Monster Hunter: World, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Capcom Monster Hunter: World (2018) look: third-person hunting of huge living monsters across rich ecosystems, oversized weapons, layered armor made from monster parts and dramatic weather. Carry it through Monster Hunter giant monsters, big weapons, ecosystems. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-041',
-    name: 'Emberwood Lookout Trail',
-    displayName: 'Emberwood Lookout Trail',
+    name: 'Firewatch 2016 - Campo Santo Olly Moss Palette',
+    displayName: 'Firewatch 2016 - Campo Santo Olly Moss Palette',
     styleAnchors: [
-      'painterly first-person wilderness exploration screenshots',
+      'Firewatch 2016 - Campo Santo Olly Moss Palette',
       'lookout trail dusk navigation',
       'Emberwood Lookout Trail',
     ],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Firewatch clone, retro pixel downgrade, exact lookout tower poster',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Firewatch clone, retro pixel downgrade, exact lookout tower poster, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Original in-game screenshot look for painterly first-person wilderness exploration captures: simplified landscape shapes, warm dusk smoke, trail navigation, lookout structures, radio-like intimacy, and readable route landmarks. Borrow the graphic color discipline of Firewatch-like games, but land as a different fictional wilderness with different terrain, props, UI icons, and palette variants.',
+        'Campo Santo Firewatch (2016) look: first-person Wyoming wilderness in Olly Moss poster palettes, flat painterly forests, fire lookouts, sunsets and layered ridges.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable wilderness exploration screenshot subject: keep clear trail/object function, landmark scale, hand/tool presence when useful, route affordance, and environmental readability without copying exact locations or posters.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as simple painterly figures seen from first person. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Use a painterly wilderness palette: ember orange, mauve sky, pine green, dusty violet, dry grass ochre, smoke blue, and dark bark silhouettes. Keep shapes broad and readable rather than pixelated or photoreal.',
+        'Sunset orange, coral pink and teal ridges, true to the Firewatch 2016 palette.',
       lighting_and_shadow:
-        'Light the image through golden-hour haze, flat graphic silhouettes, campfire warmth, radio glow, and atmospheric smoke layers. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Warm poster-like sunset gradients, lit the way Firewatch 2016 lights its levels.',
       texture_and_material:
-        'Build surfaces from painterly low-poly trees, wood cabins, paper maps, radios, trail signs without readable text, and dry grass. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Flat painterly shapes and soft gradients, with the in-engine surface finish of Firewatch 2016.',
       camera_and_composition:
-        'Compose with first-person trail view, foreground hand/map/radio/object only if useful, mid-ground landmark, route fork, and layered atmospheric landscape. Avoid retro-pixel rendering and static tourism poster framing.',
-      atmosphere_and_mood:
-        'Carry an original emberwood trail mood: lonely, warm, suspicious, contemplative, outdoorsy, and smoke-tinted.',
+        'First-person view from a lookout, framed the way Firewatch 2016 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with wistful lonely warmth.',
       rendering_and_quality:
-        'Finish as coherent first-person painterly exploration screenshot style, not pixel art and not concept art: minimal HUD, route/objective cue shapes, and clean color blocks can appear. Maintain denoised broad shapes and crisp navigation readability.',
-      key_features:
-        'Firewatch gameplay screenshots; first-person narrative exploration capture with stylized forest planes, ranger lookout towers, warm dusk, and environmental pathfinding; burnt orange sky, pine green, lavender shadow, wood brown, sunlit yellow, and smoky blue distance; golden-hour haze, flat graphic silhouettes, campfire warmth, radio glow, and atmospheric smoke layers; painterly low-poly trees, wood cabins, paper maps, radios, trail signs without readable text, and dry grass; first-person walking-sim framing with hands/tools, path curves, lookout landmark, and quiet navigational depth; lonely, warm, suspicious, contemplative, and outdoorsy; HUD guidance: minimal compass/objective cues or held map/radio interfaces are allowed; avoid gamey clutter',
+        'Authentic painterly first-person screen, matching real Firewatch 2016 screenshots.',
+      key_features: 'Firewatch Olly Moss palette; lookout; ridges',
       creative_brief:
-        "Emberwood Lookout Trail: in-game screenshot language informed by painterly wilderness exploration references, covering first-person camera, broad color blocking, trail landmarks, smoke/dusk light, and quiet route decisions. Avoid direct Firewatch cloning, exact tower-poster composition, and retro pixel downgrade. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Campo Santo Firewatch (2016) look: first-person Wyoming wilderness in Olly Moss poster palettes, flat painterly forests, fire lookouts, sunsets and layered ridges. Carry it through Firewatch Olly Moss palette, lookout, ridges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-067',
-    name: 'Total War Bronze Marsh Siege',
-    displayName: 'Total War Bronze Marsh Siege',
+    name: 'Total War Three Kingdoms 2019 - Creative Assembly Epic Battle',
+    displayName: 'Total War Three Kingdoms 2019 - Creative Assembly Epic Battle',
     styleAnchors: [
-      'Total War: Three Kingdoms gameplay screenshots',
+      'Total War Three Kingdoms 2019 - Creative Assembly Epic Battle',
       'Total War Bronze Marsh Siege',
     ],
     category: '6. Wilderness Hunts & Harsh Frontiers',
@@ -279,85 +263,88 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Total War: Three Kingdoms gameplay: large-scale strategy capture with massed units, siege camps, marsh terrain, formation banners, and command-camera battlefield hierarchy. It never recreates an exact official level, character, logo or marketing art.',
+        'Creative Assembly Total War: Three Kingdoms (2019) look: massive real-time battles of thousands of soldiers in ancient Chinese armies, banners, lacquered armor, marshes and fortresses.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Total War: Three Kingdoms-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Total War: Three Kingdoms-informed palette: bronze armor, marsh green, dusty tan, banner red, smoke grey, and muted gold. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as thousands of small soldiers in lacquered armor with banners. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Bronze marsh gold, banner red and mist grey.',
       lighting_and_shadow:
-        'Light the image through overcast campaign daylight, fire arrows, campfires, smoke haze, and armor glints. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Dawn mist light over armies, lit the way Total War Three Kingdoms 2019 lights its levels.',
       texture_and_material:
-        'Build surfaces from troop formations, polearms, muddy ground, siege towers, canvas camps, banners without readable script, and terrain clutter. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Detailed lacquered armor and reeds, with the in-engine surface finish of Total War Three Kingdoms 2019.',
       camera_and_composition:
-        "Compose with elevated battlefield camera with army lines, flanking routes, unit cards, minimap logic, and objective spacing. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Total War: Three Kingdoms-derived mood: historical, strategic, muddy, disciplined, and large-scale; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'High battle camera over armies, framed the way Total War Three Kingdoms 2019 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with epic martial grandeur.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: unit cards, formation markers, minimap, morale bars, and command icons can appear as coherent strategy UI. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Total War: Three Kingdoms gameplay screenshots; large-scale strategy capture with massed units, siege camps, marsh terrain, formation banners, and command-camera battlefield hierarchy; bronze armor, marsh green, dusty tan, banner red, smoke grey, and muted gold; overcast campaign daylight, fire arrows, campfires, smoke haze, and armor glints; troop formations, polearms, muddy ground, siege towers, canvas camps, banners without readable script, and terrain clutter; elevated battlefield camera with army lines, flanking routes, unit cards, minimap logic, and objective spacing; historical, strategic, muddy, disciplined, and large-scale; HUD guidance: unit cards, formation markers, minimap, morale bars, and command icons can appear as coherent strategy UI',
+        'Authentic grand battle strategy screen, matching real Total War Three Kingdoms 2019 screenshots.',
+      key_features: 'Total War massed armies; banners; marsh siege',
       creative_brief:
-        "Total War Bronze Marsh Siege: in-game screenshot language informed by Total War: Three Kingdoms, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Creative Assembly Total War: Three Kingdoms (2019) look: massive real-time battles of thousands of soldiers in ancient Chinese armies, banners, lacquered armor, marshes and fortresses. Carry it through Total War massed armies, banners, marsh siege. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-073',
-    name: 'Colossus Orchard Hunt',
-    displayName: 'Colossus Orchard Hunt',
-    styleAnchors: ['Shadow of the Colossus gameplay screenshots', 'Colossus Orchard Hunt'],
+    name: 'Shadow of the Colossus 2018 - Bluepoint Colossus Climb',
+    displayName: 'Shadow of the Colossus 2018 - Bluepoint Colossus Climb',
+    styleAnchors: [
+      'Shadow of the Colossus 2018 - Bluepoint Colossus Climb',
+      'Colossus Orchard Hunt',
+    ],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'existing colossi, a black horse with a young swordsman, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Shadow of the Colossus gameplay: third-person minimalist colossus hunt capture with tiny rider scale, vast landscape, monumental creature silhouettes, and quiet traversal. It never recreates an exact official level, character, logo or marketing art.',
+        'Bluepoint Games Shadow of the Colossus (2018) look: tiny riders climbing fur and stone of moving colossi, vast empty lands, soft bloom and melancholic grandeur.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Shadow of the Colossus-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as tiny figures clinging to colossal furred creatures. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Use a Shadow of the Colossus-informed palette: sun-bleached grass, stone grey, fur brown, pale sky, moss green, and muted magical blue. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Soft green, stone grey and sun haze, true to the Shadow of the Colossus 2018 palette.',
       lighting_and_shadow:
-        'Light the image through soft ancient daylight, dust haze, colossus rim light, weak-point glow, and broad landscape shadow. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Soft bloom and hazy sunlight, lit the way Shadow of the Colossus 2018 lights its levels.',
       texture_and_material:
-        'Build surfaces from weathered stone, fur, moss, leather straps, old ruins, wind grass, and simple worn gear. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Detailed fur, moss and ancient stone, with the in-engine surface finish of Shadow of the Colossus 2018.',
       camera_and_composition:
-        "Compose with cinematic third-person camera with player dwarfed by titan, climb routes, weak-point visibility, and lonely negative space. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Shadow of the Colossus-derived mood: awe-filled, tragic, ancient, lonely, and monumental; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Wide low view of a colossus, framed the way Shadow of the Colossus 2018 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with melancholic grand struggle.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: minimal grip/health/stamina cues are allowed; let scale and landscape carry the screenshot. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Shadow of the Colossus gameplay screenshots; third-person minimalist colossus hunt capture with tiny rider scale, vast landscape, monumental creature silhouettes, and quiet traversal; sun-bleached grass, stone grey, fur brown, pale sky, moss green, and muted magical blue; soft ancient daylight, dust haze, colossus rim light, weak-point glow, and broad landscape shadow; weathered stone, fur, moss, leather straps, old ruins, wind grass, and simple worn gear; cinematic third-person camera with player dwarfed by titan, climb routes, weak-point visibility, and lonely negative space; awe-filled, tragic, ancient, lonely, and monumental; HUD guidance: minimal grip/health/stamina cues are allowed; let scale and landscape carry the screenshot',
+        'Authentic modern remake adventure screen, matching real Shadow of the Colossus 2018 screenshots.',
+      key_features: 'Colossus climb; tiny rider; vast land',
       creative_brief:
-        "Colossus Orchard Hunt: in-game screenshot language informed by Shadow of the Colossus, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Bluepoint Games Shadow of the Colossus (2018) look: tiny riders climbing fur and stone of moving colossi, vast empty lands, soft bloom and melancholic grandeur. Carry it through Colossus climb, tiny rider, vast land. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-149',
-    name: 'Bow Hunt Stalking Capture',
-    displayName: 'Bow Hunt Stalking Capture',
-    styleAnchors: ['Bow Hunt Stalking Capture', 'first-person bow hunting screenshot', 'drawn bow'],
+    name: 'Far Cry Primal 2016 - Ubisoft Stone Age Hunt',
+    displayName: 'Far Cry Primal 2016 - Ubisoft Stone Age Hunt',
+    styleAnchors: [
+      'Far Cry Primal 2016 - Ubisoft Stone Age Hunt',
+      'first-person bow hunting screenshot',
+      'drawn bow',
+    ],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     domain: 'first-person bow hunting screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Bow hunt stalking capture: an original first-person screenshot of drawing a bow in dense forest, arrow nocked, prey partially hidden in ferns and dappled light.',
+        'Ubisoft Far Cry Primal (2016) look: first-person Stone Age hunting in lush Mesolithic valleys, bows and spears, megafauna, bone ornaments and fire.',
       subject_treatment:
-        "Preserve the requested identity, count, pose and action with original characters; show the subject from the hunter's first-person view with a drawn bow.",
-      color_and_tone: 'Forest greens, bark browns and golden light shafts.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as Stone Age hunters in furs and bone ornaments. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        'Forest green, fur brown and fire amber, true to the Far Cry Primal 2016 palette.',
       lighting_and_shadow:
-        'Dappled light through the canopy, kept consistent across the whole image.',
+        'Dappled forest light, lit the way Far Cry Primal 2016 lights its levels.',
       texture_and_material:
-        'Bowstring, fletching, ferns and moss, kept consistent across the whole image.',
+        'Realistic fur, bone and foliage, with the in-engine surface finish of Far Cry Primal 2016.',
       camera_and_composition:
-        'First-person with bow in foreground, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with silent predatory patience.',
+        'First-person bow view, framed the way Far Cry Primal 2016 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with primal tense stalking.',
       rendering_and_quality:
-        'Clean capture without gore or HUD, kept consistent across the whole image.',
+        'Authentic open-world hunting screen, matching real Far Cry Primal 2016 screenshots.',
       creative_brief:
-        "Bow hunt stalking capture: an original first-person screenshot of drawing a bow in dense forest, arrow nocked, prey partially hidden in ferns and dappled light. Carry it through drawn bow, first-person, dense forest, hidden prey. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'drawn bow; first-person; dense forest; hidden prey',
+        "Ubisoft Far Cry Primal (2016) look: first-person Stone Age hunting in lush Mesolithic valleys, bows and spears, megafauna, bone ornaments and fire. Carry it through Far Cry Primal hunt, Stone Age, bow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Far Cry Primal hunt; Stone Age; bow',
     },
     ui: {
       previewStatus: 'pending',
@@ -365,36 +352,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-150',
-    name: 'Blizzard Trek Survival Capture',
-    displayName: 'Blizzard Trek Survival Capture',
+    name: 'Never Alone 2014 - Upper One Arctic Folktale',
+    displayName: 'Never Alone 2014 - Upper One Arctic Folktale',
     styleAnchors: [
-      'Blizzard Trek Survival Capture',
+      'Never Alone 2014 - Upper One Arctic Folktale',
       'snowstorm survival trek screenshot',
       'blizzard',
     ],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     domain: 'snowstorm survival trek screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Blizzard trek survival capture: an original third-person screenshot of a lone traveler bent against a howling blizzard, rope trailing, lantern glow in white-out snow.',
+        'Upper One Games Never Alone (2014) look: side-view Arctic folktale platformer inspired by Iñupiaq art, scrimshaw-like spirit shapes, blizzards and ice.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject pushing through a blizzard with limited visibility.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as small bundled Arctic travelers in fur parkas. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'White-grey snow with warm lantern orange, kept consistent across the whole image.',
+        'Blizzard white, ice blue and spirit glow, true to the Never Alone 2014 palette.',
       lighting_and_shadow:
-        'Diffuse white-out and a small warm glow, kept consistent across the whole image.',
+        'Blizzard haze and spirit light, lit the way Never Alone 2014 lights its levels.',
       texture_and_material:
-        'Swirling snow, frosted fabric and ice, kept consistent across the whole image.',
+        'Stylized snow and scrimshaw spirit lines, with the in-engine surface finish of Never Alone 2014.',
       camera_and_composition:
-        'Third-person behind the traveler, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with desperate endurance, kept consistent across the whole image.',
-      rendering_and_quality: 'Clean capture with no HUD, kept consistent across the whole image.',
+        'Side-view platformer, framed the way Never Alone 2014 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with bitter folkloric endurance.',
+      rendering_and_quality:
+        'Authentic folktale platformer screen, matching real Never Alone 2014 screenshots.',
       creative_brief:
-        "Blizzard trek survival capture: an original third-person screenshot of a lone traveler bent against a howling blizzard, rope trailing, lantern glow in white-out snow. Carry it through blizzard, white-out, lantern, lone traveler. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'blizzard; white-out; lantern; lone traveler',
+        "Upper One Games Never Alone (2014) look: side-view Arctic folktale platformer inspired by Iñupiaq art, scrimshaw-like spirit shapes, blizzards and ice. Carry it through Never Alone Arctic, spirit shapes, blizzard. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Never Alone Arctic; spirit shapes; blizzard',
     },
     ui: {
       previewStatus: 'pending',
@@ -402,36 +389,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-151',
-    name: 'Safari Photo Expedition Capture',
-    displayName: 'Safari Photo Expedition Capture',
+    name: 'Afrika 2008 - Rhino Studios Safari Photography',
+    displayName: 'Afrika 2008 - Rhino Studios Safari Photography',
     styleAnchors: [
-      'Safari Photo Expedition Capture',
+      'Afrika 2008 - Rhino Studios Safari Photography',
       'wildlife photography game screenshot',
       'viewfinder frame',
     ],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     domain: 'wildlife photography game screenshot',
     negativePrompt:
-      'readable camera settings, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable camera settings, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Safari photo expedition capture: an original wildlife photography game screenshot through a camera viewfinder of strange creatures on a golden savanna.',
+        'Rhino Studios Afrika (2008) look: realistic safari photography with a camera viewfinder over the African savanna, herds at golden hour, jeeps and river crossings.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; frame the subject through a camera viewfinder on a wildlife expedition.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render every subject as wildlife framed through a camera viewfinder. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Golden grass, acacia greens and blue sky, kept consistent across the whole image.',
-      lighting_and_shadow: 'Warm late-afternoon sun, kept consistent across the whole image.',
+        'Savanna gold, sunset orange and river blue, true to the Afrika 2008 palette.',
+      lighting_and_shadow: 'Golden hour savanna light, lit the way Afrika 2008 lights its levels.',
       texture_and_material:
-        'Grass, dust, animal hides and viewfinder frame, kept consistent across the whole image.',
+        'Realistic grass and animal detail, with the in-engine surface finish of Afrika 2008.',
       camera_and_composition:
-        'Viewfinder crop lines around the subject, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with patient discovery, kept consistent across the whole image.',
+        'Viewfinder framing from a jeep, framed the way Afrika 2008 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with patient wild wonder.',
       rendering_and_quality:
-        'Clean capture with no readable settings, kept consistent across the whole image.',
+        'Authentic safari photography screen, matching real Afrika 2008 screenshots.',
       creative_brief:
-        "Safari photo expedition capture: an original wildlife photography game screenshot through a camera viewfinder of strange creatures on a golden savanna. Carry it through viewfinder frame, savanna, strange creatures, golden light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'viewfinder frame; savanna; strange creatures; golden light',
+        "Rhino Studios Afrika (2008) look: realistic safari photography with a camera viewfinder over the African savanna, herds at golden hour, jeeps and river crossings. Carry it through Afrika viewfinder, savanna, herds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Afrika viewfinder; savanna; herds',
     },
     ui: {
       previewStatus: 'pending',
@@ -439,29 +425,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-152',
-    name: 'Dog-Sled Frontier Run Capture',
-    displayName: 'Dog-Sled Frontier Run Capture',
-    styleAnchors: ['Dog-Sled Frontier Run Capture', 'sled dog race screenshot', 'sled dogs'],
+    name: 'Spirit of the North 2019 - Infuse Nordic Aurora',
+    displayName: 'Spirit of the North 2019 - Infuse Nordic Aurora',
+    styleAnchors: [
+      'Spirit of the North 2019 - Infuse Nordic Aurora',
+      'sled dog race screenshot',
+      'sled dogs',
+    ],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     domain: 'sled dog race screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Dog-sled frontier run capture: an original third-person screenshot of a sled team racing across a frozen frontier, spray of snow, aurora and pine forest.',
+        'Infuse Studio Spirit of the North (2019) look: stylized low-detail Nordic landscapes, green auroras, snowy rivers, spirit guardians and quiet wordless travel.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject racing a dog sled across frozen wilderness.',
-      color_and_tone: 'White snow, deep blue night and green aurora.',
-      lighting_and_shadow: 'Aurora glow and sled lantern, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people and animals as soft stylized figures in snowy landscapes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        'Aurora green, snow white and night blue, true to the Spirit of the North 2019 palette.',
+      lighting_and_shadow:
+        'Aurora glow and soft moonlight, lit the way Spirit of the North 2019 lights its levels.',
       texture_and_material:
-        'Snow spray, fur, wood runners and frost, kept consistent across the whole image.',
+        'Soft stylized snow and ice, with the in-engine surface finish of Spirit of the North 2019.',
       camera_and_composition:
-        'Low chase angle behind the team, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with wild frontier momentum.',
-      rendering_and_quality: 'Clean capture with no HUD, kept consistent across the whole image.',
+        'Third-person wide travel view, framed the way Spirit of the North 2019 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with serene northern mystery.',
+      rendering_and_quality:
+        'Authentic stylized adventure screen, matching real Spirit of the North 2019 screenshots.',
       creative_brief:
-        "Dog-sled frontier run capture: an original third-person screenshot of a sled team racing across a frozen frontier, spray of snow, aurora and pine forest. Carry it through sled dogs, frozen frontier, aurora, snow spray. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'sled dogs; frozen frontier; aurora; snow spray',
+        "Infuse Studio Spirit of the North (2019) look: stylized low-detail Nordic landscapes, green auroras, snowy rivers, spirit guardians and quiet wordless travel. Carry it through Spirit of the North aurora, Nordic snow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Spirit of the North aurora; Nordic snow',
     },
     ui: {
       previewStatus: 'pending',
@@ -469,35 +462,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-153',
-    name: 'Canyon Horseback Frontier Capture',
-    displayName: 'Canyon Horseback Frontier Capture',
+    name: 'Red Dead Redemption 2010 - Rockstar San Diego Frontier',
+    displayName: 'Red Dead Redemption 2010 - Rockstar San Diego Frontier',
     styleAnchors: [
-      'Canyon Horseback Frontier Capture',
+      'Red Dead Redemption 2010 - Rockstar San Diego Frontier',
       'western frontier riding screenshot',
       'horseback rider',
     ],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     domain: 'western frontier riding screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a scarred cowboy in a tan hat, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Canyon horseback frontier capture: an original third-person screenshot of a rider on horseback crossing red canyon country, vast mesas and dust at golden hour.',
+        'Rockstar San Diego Red Dead Redemption (2010) look: dusty frontier west, canyon rims, mesas, covered wagons, horseback riders and golden-hour haze.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject on horseback crossing a vast red canyon landscape.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as dusty frontier riders in hats and dusters. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Red rock, sage green and golden sky, kept consistent across the whole image.',
+        'Canyon red, dust gold and sage, true to the Red Dead Redemption 2010 palette.',
       lighting_and_shadow:
-        'Low golden sun and long shadows, kept consistent across the whole image.',
+        'Golden-hour haze, lit the way Red Dead Redemption 2010 lights its levels.',
       texture_and_material:
-        'Red rock, dust, leather tack and scrub, kept consistent across the whole image.',
+        'Dusty terrain and worn leather, with the in-engine surface finish of Red Dead Redemption 2010.',
       camera_and_composition:
-        'Wide cinematic view with rider small, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with lonesome frontier grandeur.',
-      rendering_and_quality: 'Clean capture with no HUD, kept consistent across the whole image.',
+        'Third-person riding view, framed the way Red Dead Redemption 2010 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with lonesome frontier grit.',
+      rendering_and_quality:
+        'Authentic Xbox 360 western screen, matching real Red Dead Redemption 2010 screenshots.',
       creative_brief:
-        "Canyon horseback frontier capture: an original third-person screenshot of a rider on horseback crossing red canyon country, vast mesas and dust at golden hour. Carry it through horseback rider, red canyons, mesas, golden hour. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'horseback rider; red canyons; mesas; golden hour',
+        "Rockstar San Diego Red Dead Redemption (2010) look: dusty frontier west, canyon rims, mesas, covered wagons, horseback riders and golden-hour haze. Carry it through Red Dead 2010 frontier, canyons, riders. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Red Dead 2010 frontier; canyons; riders',
     },
     ui: {
       previewStatus: 'pending',
@@ -505,35 +499,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-154',
-    name: 'Diving Bell Descent Capture',
-    displayName: 'Diving Bell Descent Capture',
+    name: 'Silt 2022 - Spiral Circus Monochrome Abyss',
+    displayName: 'Silt 2022 - Spiral Circus Monochrome Abyss',
     styleAnchors: [
-      'Diving Bell Descent Capture',
+      'Silt 2022 - Spiral Circus Monochrome Abyss',
       'deep-sea diving bell screenshot',
       'brass diving bell',
     ],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     domain: 'deep-sea diving bell screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Diving bell descent capture: an original screenshot of a brass diving bell lowered into black ocean depths, its lamps revealing strange creatures and ruins.',
+        'Spiral Circus Silt (2022) look: monochrome underwater puzzle adventure drawn in Mr Mead ink art, surreal abyssal creatures, diving suits and sunken ruins.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject inside or around a brass diving bell in the deep sea.',
-      color_and_tone:
-        'Black depths, brass gold and bioluminescent blue, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as small monochrome divers in heavy suits. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Monochrome black, white and grey, true to the Silt 2022 palette.',
       lighting_and_shadow:
-        'Bell lamps cutting into darkness, kept consistent across the whole image.',
+        'Ink shafts of light in darkness, lit the way Silt 2022 lights its levels.',
       texture_and_material:
-        'Riveted brass, round portholes and particles, kept consistent across the whole image.',
+        'Dense ink drawing and grain, with the in-engine surface finish of Silt 2022.',
       camera_and_composition:
-        'Bell in the center with darkness around, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with deep uneasy wonder.',
-      rendering_and_quality: 'Clean capture with no HUD, kept consistent across the whole image.',
+        'Side-view abyssal view, framed the way Silt 2022 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with surreal abyssal dread.',
+      rendering_and_quality:
+        'Authentic monochrome ink adventure screen, matching real Silt 2022 screenshots.',
       creative_brief:
-        "Diving bell descent capture: an original screenshot of a brass diving bell lowered into black ocean depths, its lamps revealing strange creatures and ruins. Carry it through brass diving bell, deep sea, lamp beams, strange creatures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'brass diving bell; deep sea; lamp beams; strange creatures',
+        "Spiral Circus Silt (2022) look: monochrome underwater puzzle adventure drawn in Mr Mead ink art, surreal abyssal creatures, diving suits and sunken ruins. Carry it through Silt monochrome ink, abyss, diving suit. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Silt monochrome ink; abyss; diving suit',
     },
     ui: {
       previewStatus: 'pending',
@@ -541,35 +535,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-155',
-    name: 'Volcanic Crater Expedition Capture',
-    displayName: 'Volcanic Crater Expedition Capture',
+    name: 'Uncharted 4 2016 - Naughty Dog Expedition',
+    displayName: 'Uncharted 4 2016 - Naughty Dog Expedition',
     styleAnchors: [
-      'Volcanic Crater Expedition Capture',
+      'Uncharted 4 2016 - Naughty Dog Expedition',
       'volcano exploration screenshot',
       'volcanic crater',
     ],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     domain: 'volcano exploration screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a treasure hunter in a henley shirt with a holster, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Volcanic crater expedition capture: an original third-person screenshot of explorers descending into an active crater, lava lakes, ash clouds and heat shimmer.',
+        "Naughty Dog Uncharted 4: A Thief's End (2016) look: cinematic third-person adventure, rope bridges, cliffs, lush detail, dramatic set pieces and warm realistic light.",
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject on an expedition into an active volcanic crater.',
-      color_and_tone: 'Black rock, glowing orange lava and ash grey.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as rugged realistic explorers in field gear. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        'Lava orange, rock grey and jungle green, true to the Uncharted 4 2016 palette.',
       lighting_and_shadow:
-        'Lava glow from below and ash haze, kept consistent across the whole image.',
+        'Cinematic warm light and lava glow, lit the way Uncharted 4 2016 lights its levels.',
       texture_and_material:
-        'Cooled lava crust, sulfur and heat shimmer, kept consistent across the whole image.',
+        'Realistic rock, rope and gear, with the in-engine surface finish of Uncharted 4 2016.',
       camera_and_composition:
-        'Wide view down into the crater, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with scorching peril, kept consistent across the whole image.',
-      rendering_and_quality: 'Clean capture with no HUD, kept consistent across the whole image.',
+        'Third-person cinematic view, framed the way Uncharted 4 2016 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with daring adventure thrill.',
+      rendering_and_quality:
+        'Authentic cinematic adventure screen, matching real Uncharted 4 2016 screenshots.',
       creative_brief:
-        "Volcanic crater expedition capture: an original third-person screenshot of explorers descending into an active crater, lava lakes, ash clouds and heat shimmer. Carry it through volcanic crater, lava lake, ash clouds, explorers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'volcanic crater; lava lake; ash clouds; explorers',
+        "Naughty Dog Uncharted 4: A Thief's End (2016) look: cinematic third-person adventure, rope bridges, cliffs, lush detail, dramatic set pieces and warm realistic light. Carry it through Uncharted 4 set pieces, rope bridges, cinematic. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Uncharted 4 set pieces; rope bridges; cinematic',
     },
     ui: {
       previewStatus: 'pending',
@@ -577,33 +572,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-156',
-    name: 'Swamp Canoe Tracker Capture',
-    displayName: 'Swamp Canoe Tracker Capture',
+    name: 'Black Book 2021 - Morteshka Slavic Folk Swamp',
+    displayName: 'Black Book 2021 - Morteshka Slavic Folk Swamp',
     styleAnchors: [
-      'Swamp Canoe Tracker Capture',
+      'Black Book 2021 - Morteshka Slavic Folk Swamp',
       'swamp canoe exploration screenshot',
       'canoe bow',
     ],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     domain: 'swamp canoe exploration screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Swamp canoe tracker capture: an original first-person screenshot paddling a canoe through a misty swamp, cypress knees, fireflies and ripples in dark water.',
+        'Morteshka Black Book (2021) look: dark Slavic folklore adventure, misty swamps, wooden villages, witches, demons and hand-painted folk art details.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject from a canoe gliding through a misty swamp.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as nineteenth-century Russian villagers and folk spirits. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Murky greens, mist grey and firefly gold, kept consistent across the whole image.',
-      lighting_and_shadow: 'Soft dusk light through mist, kept consistent across the whole image.',
-      texture_and_material: 'Still water, moss, cypress bark and paddle wood.',
+        'Swamp green, lantern amber and folk red, true to the Black Book 2021 palette.',
+      lighting_and_shadow:
+        'Misty swamp light and lanterns, lit the way Black Book 2021 lights its levels.',
+      texture_and_material:
+        'Painted folk art details and wet wood, with the in-engine surface finish of Black Book 2021.',
       camera_and_composition:
-        'First-person with the canoe bow in view, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with quiet uneasy tracking.',
-      rendering_and_quality: 'Clean capture with no HUD, kept consistent across the whole image.',
+        'Low canoe view into mist, framed the way Black Book 2021 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with eerie folkloric mystery.',
+      rendering_and_quality:
+        'Authentic folk adventure screen, matching real Black Book 2021 screenshots.',
       creative_brief:
-        "Swamp canoe tracker capture: an original first-person screenshot paddling a canoe through a misty swamp, cypress knees, fireflies and ripples in dark water. Carry it through canoe bow, misty swamp, fireflies, dark water. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'canoe bow; misty swamp; fireflies; dark water',
+        "Morteshka Black Book (2021) look: dark Slavic folklore adventure, misty swamps, wooden villages, witches, demons and hand-painted folk art details. Carry it through Black Book Slavic folklore, swamp, witches. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Black Book Slavic folklore; swamp; witches',
     },
     ui: {
       previewStatus: 'pending',
@@ -611,34 +609,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-157',
-    name: 'Crafting Camp Base Capture',
-    displayName: 'Crafting Camp Base Capture',
+    name: 'Valheim 2021 - Iron Gate Low-Poly Viking',
+    displayName: 'Valheim 2021 - Iron Gate Low-Poly Viking',
     styleAnchors: [
-      'Crafting Camp Base Capture',
+      'Valheim 2021 - Iron Gate Low-Poly Viking',
       'survival crafting base screenshot',
       'crafted base',
     ],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     domain: 'survival crafting base screenshot',
     negativePrompt:
-      'inventory UI, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'inventory UI, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Crafting camp base capture: an original survival-crafting screenshot of a handmade wilderness base, workbenches, campfire, drying racks and tools around a tent.',
+        'Iron Gate Valheim (2021) look: pixelated low-resolution textures with modern volumetric lighting, Viking survival camps, palisades, crafting benches and misty forests.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; place the subject in a handmade survival base full of crafted tools.',
-      color_and_tone: 'Warm fire orange, wood browns and forest green.',
-      lighting_and_shadow: 'Campfire glow at dusk, kept consistent across the whole image.',
-      texture_and_material: 'Rope lashings, hides, rough wood and stone tools.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as low-poly Viking survivors in furs and helmets. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Misty forest green, fire amber and dusk blue.',
+      lighting_and_shadow:
+        'Volumetric fog and campfire glow, lit the way Valheim 2021 lights its levels.',
+      texture_and_material:
+        'Low-resolution pixelated textures, with the in-engine surface finish of Valheim 2021.',
       camera_and_composition:
-        'Third-person view over the camp, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with scrappy self-reliance, kept consistent across the whole image.',
+        'Third-person survival view, framed the way Valheim 2021 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with rugged Viking survival.',
       rendering_and_quality:
-        'Clean capture with no inventory UI, kept consistent across the whole image.',
+        'Authentic low-poly survival screen, matching real Valheim 2021 screenshots.',
       creative_brief:
-        "Crafting camp base capture: an original survival-crafting screenshot of a handmade wilderness base, workbenches, campfire, drying racks and tools around a tent. Carry it through crafted base, workbenches, campfire, drying racks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'crafted base; workbenches; campfire; drying racks',
+        "Iron Gate Valheim (2021) look: pixelated low-resolution textures with modern volumetric lighting, Viking survival camps, palisades, crafting benches and misty forests. Carry it through Valheim pixel textures, volumetric fog, palisades. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Valheim pixel textures; volumetric fog; palisades',
     },
     ui: {
       previewStatus: 'pending',
@@ -646,34 +645,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-158',
-    name: 'Giant Beast Riding Capture',
-    displayName: 'Giant Beast Riding Capture',
+    name: 'Xenoblade Chronicles 2 2017 - Monolith Soft Titans',
+    displayName: 'Xenoblade Chronicles 2 2017 - Monolith Soft Titans',
     styleAnchors: [
-      'Giant Beast Riding Capture',
+      'Xenoblade Chronicles 2 2017 - Monolith Soft Titans',
       'riding a huge creature screenshot',
       'enormous mount',
     ],
     category: '6. Wilderness Hunts & Harsh Frontiers',
     domain: 'riding a huge creature screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing Xenoblade characters, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Giant beast riding capture: an original third-person screenshot of a rider on the back of an enormous tame creature, saddle platforms and a vast landscape below.',
+        'Monolith Soft Xenoblade Chronicles 2 (2017) look: anime JRPG where people live on giant Titan beasts crossing a cloud sea, vast vistas and colorful anime characters.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject riding on the back of an enormous creature.',
-      color_and_tone: 'Earthy creature tones and wide sky, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as colorful anime adventurers riding giant titans. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Cloud sea white, sky blue and titan green.',
       lighting_and_shadow:
-        'Open daylight with creature shadow, kept consistent across the whole image.',
-      texture_and_material: 'Hide, fur or scales, saddle ropes and platforms.',
+        'Bright open-sky anime light, lit the way Xenoblade Chronicles 2 2017 lights its levels.',
+      texture_and_material:
+        'Anime cel with detailed vistas, with the in-engine surface finish of Xenoblade Chronicles 2 2017.',
       camera_and_composition:
-        'Over-the-shoulder view from the saddle across the vast creature back.',
-      atmosphere_and_mood:
-        'Keep the requested mood with majestic companionship, kept consistent across the whole image.',
-      rendering_and_quality: 'Clean capture with no HUD, kept consistent across the whole image.',
+        'Wide third-person vista, framed the way Xenoblade Chronicles 2 2017 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with vast hopeful journey.',
+      rendering_and_quality:
+        'Authentic anime JRPG screen, matching real Xenoblade Chronicles 2 2017 screenshots.',
       creative_brief:
-        "Giant beast riding capture: an original third-person screenshot of a rider on the back of an enormous tame creature, saddle platforms and a vast landscape below. Carry it through enormous mount, saddle platform, vast landscape, rider. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'enormous mount; saddle platform; vast landscape; rider',
+        "Monolith Soft Xenoblade Chronicles 2 (2017) look: anime JRPG where people live on giant Titan beasts crossing a cloud sea, vast vistas and colorful anime characters. Carry it through Xenoblade titans, cloud sea, vast vistas. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Xenoblade titans; cloud sea; vast vistas',
     },
     ui: {
       previewStatus: 'pending',

@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-142
 packId: pack_12
-name: Digital Pinball Table Capture
+name: Pinball FX 2017 - Zen Studios Digital Tables
 styleAnchors:
-  - Digital Pinball Table Capture
+  - Pinball FX 2017 - Zen Studios Digital Tables
   - fantasy pinball game screenshot
   - pinball table
-displayName: Digital Pinball Table Capture
+displayName: Pinball FX 2017 - Zen Studios Digital Tables
 category: 5. Speed, Sport & Competitive Arenas
 domain: fantasy pinball game screenshot
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - digital-pinball
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Digital pinball table capture: an original screenshot of a glowing fantasy pinball table, ramps, bumpers, flippers and a chrome ball with light trails.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; turn the subject into the theme of a glowing pinball table.
-  color_and_tone: Glowing reds, golds and blues on dark playfield.
-  lighting_and_shadow: Bumper flashes and ramp glow, kept consistent across the whole image.
-  texture_and_material: Chrome ball, plastic ramps, printed playfield art, kept consistent across the whole image.
-  camera_and_composition: Angled top-down view of the whole table, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with flashing arcade thrill.
-  rendering_and_quality: Clean capture with no score text, kept consistent across the whole image.
-  creative_brief: "Digital pinball table capture: an original screenshot of a glowing fantasy pinball table, ramps, bumpers, flippers and a chrome ball with light trails. Carry it through pinball table, chrome ball, bumpers, ramps. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: pinball table; chrome ball; bumpers; ramps
+  aesthetic: 'Zen Studios Pinball FX3 (2017) look: digital pinball tables with animated 3D toys, chrome balls, lit ramps, flippers and themed sculpted beasts that move.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render every subject as a sculpted animated pinball toy on a lit table. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Chrome, glowing ramp neon and table art, true to the Pinball FX 2017 palette.
+  lighting_and_shadow: Table lights and flashing inserts, lit the way Pinball FX 2017 lights its levels.
+  texture_and_material: Chrome, glossy plastic and printed art, with the in-engine surface finish of Pinball FX 2017.
+  camera_and_composition: High table view down the playfield, framed the way Pinball FX 2017 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with flashy arcade thrill.
+  rendering_and_quality: Authentic digital pinball screen, matching real Pinball FX 2017 screenshots.
+  creative_brief: 'Zen Studios Pinball FX3 (2017) look: digital pinball tables with animated 3D toys, chrome balls, lit ramps, flippers and themed sculpted beasts that move. Carry it through Pinball FX tables, animated toys, chrome ball. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Pinball FX tables; animated toys; chrome ball
 avoidRules:
   - score text
   - existing game characters, logos or levels
@@ -44,13 +45,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: score text, existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: score text, existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -65,6 +69,7 @@ taxonomy:
     - digital-pinball
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

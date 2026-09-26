@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-101
 packId: pack_12
-name: Isometric Hacker Den Capture
+name: Shadowrun Returns 2013 - Harebrained Isometric Matrix
 styleAnchors:
-  - Isometric Hacker Den Capture
+  - Shadowrun Returns 2013 - Harebrained Isometric Matrix
   - isometric cyberpunk room screenshot
   - isometric room
-displayName: Isometric Hacker Den Capture
+displayName: Shadowrun Returns 2013 - Harebrained Isometric Matrix
 category: 1. Neon Urban & Night Ops
 domain: isometric cyberpunk room screenshot
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,22 +20,22 @@ tags:
   - hacker-den
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Isometric hacker den capture: an original isometric screenshot of a cramped cyberpunk room with glowing monitors, cables, and a character jacked into a terminal.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject in a cramped isometric room full of glowing screens and cables.
-  color_and_tone: Dark room with green, cyan and magenta monitor glow.
-  lighting_and_shadow: Monitor glow and small practical lights, kept consistent across the whole image.
-  texture_and_material: Cables, clutter, cracked screens and neon strips, kept consistent across the whole image.
-  camera_and_composition: Isometric cutaway room view, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with cramped digital obsession.
-  rendering_and_quality: Tidy isometric detail with no readable screen text.
-  creative_brief: "Isometric hacker den capture: an original isometric screenshot of a cramped cyberpunk room with glowing monitors, cables, and a character jacked into a terminal. Carry it through isometric room, glowing monitors, cables, terminal. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: isometric room; glowing monitors; cables; terminal
+  aesthetic: 'Harebrained Schemes Shadowrun Returns (2013) look: painted isometric cyberpunk-fantasy rooms, turn-based tactics, deckers jacked into a glowing Matrix and cluttered tech dens.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as small painted isometric characters with cyberware, jacked-in cables and street gear. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Painted grime brown, neon cyan and Matrix green.
+  lighting_and_shadow: Monitor glow and neon in dim painted rooms.
+  texture_and_material: Hand-painted isometric backgrounds with small 3D figures, with the in-engine surface finish of Shadowrun Returns 2013.
+  camera_and_composition: Fixed isometric tactics view of a room, framed the way Shadowrun Returns 2013 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with gritty tech-noir scheming.
+  rendering_and_quality: Authentic painted isometric RPG screen, matching real Shadowrun Returns 2013 screenshots.
+  creative_brief: 'Harebrained Schemes Shadowrun Returns (2013) look: painted isometric cyberpunk-fantasy rooms, turn-based tactics, deckers jacked into a glowing Matrix and cluttered tech dens. Carry it through Shadowrun isometric, painted dens, Matrix glow. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Shadowrun isometric; painted dens; Matrix glow
 avoidRules:
   - readable screen text
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -44,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: readable screen text, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable screen text, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -65,6 +68,7 @@ taxonomy:
     - hacker-den
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

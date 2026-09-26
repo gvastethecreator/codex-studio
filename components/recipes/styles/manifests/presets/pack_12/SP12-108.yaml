@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-108
 packId: pack_12
-name: Neon Rhythm Street Battle
+name: Hi-Fi Rush 2023 - Tango Gameworks Rhythm Cel
 styleAnchors:
-  - Neon Rhythm Street Battle
+  - Hi-Fi Rush 2023 - Tango Gameworks Rhythm Cel
   - music rhythm combat screenshot
   - beat rings
-displayName: Neon Rhythm Street Battle
+displayName: Hi-Fi Rush 2023 - Tango Gameworks Rhythm Cel
 category: 1. Neon Urban & Night Ops
 domain: music rhythm combat screenshot
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,22 @@ tags:
   - rhythm-battle
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Neon rhythm street battle: an original rhythm-action screenshot where fighters strike on the beat, pulsing neon streets, beat rings and speaker-stack cities.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject striking on the beat amid pulsing rings and speakers.
-  color_and_tone: Pulsing magenta, cyan and yellow on black, kept consistent across the whole image.
-  lighting_and_shadow: Beat-synced light pulses and neon rims, kept consistent across the whole image.
-  texture_and_material: Glossy streets, speaker stacks and light rings, kept consistent across the whole image.
-  camera_and_composition: Dynamic third-person arena with beat rings, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with musical kinetic joy.
-  rendering_and_quality: Clean vibrant capture with no readable text, kept consistent across the whole image.
-  creative_brief: "Neon rhythm street battle: an original rhythm-action screenshot where fighters strike on the beat, pulsing neon streets, beat rings and speaker-stack cities. Carry it through beat rings, neon pulses, speaker stacks, rhythmic strikes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: beat rings; neon pulses; speaker stacks; rhythmic strikes
+  aesthetic: 'Tango Gameworks Hi-Fi Rush (2023) look: bright comic cel-shaded 3D, thick outlines, halftone dots, everything in the world bouncing to the beat and big onomatopoeia-shaped effects.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as bright cel-shaded cartoon characters with thick outlines and bouncy poses. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Bright pop yellow, magenta, cyan and orange, true to the Hi-Fi Rush 2023 palette.
+  lighting_and_shadow: Flat cel light with halftone shadow dots, lit the way Hi-Fi Rush 2023 lights its levels.
+  texture_and_material: Cel shading, thick outlines and halftone, with the in-engine surface finish of Hi-Fi Rush 2023.
+  camera_and_composition: Third-person action view synced to the beat, framed the way Hi-Fi Rush 2023 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with rhythmic comic exuberance.
+  rendering_and_quality: Authentic modern comic cel-shaded action screen, matching real Hi-Fi Rush 2023 screenshots.
+  creative_brief: 'Tango Gameworks Hi-Fi Rush (2023) look: bright comic cel-shaded 3D, thick outlines, halftone dots, everything in the world bouncing to the beat and big onomatopoeia-shaped effects. Carry it through Hi-Fi Rush cel, halftone, beat-synced world. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Hi-Fi Rush cel; halftone; beat-synced world
 avoidRules:
+  - a spiky-haired guitarist with a robotic arm and a robot cat
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a spiky-haired guitarist with a robotic arm and a robot cat, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +68,7 @@ taxonomy:
     - rhythm-battle
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

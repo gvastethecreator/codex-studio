@@ -179,31 +179,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-207',
-    name: 'Fog-Town Radio Static Gameplay',
-    displayName: 'Fog-Town Radio Static Gameplay',
-    styleAnchors: ['Fog-Town Radio Static Gameplay', 'foggy town horror gameplay', 'thick fog'],
+    name: 'Silent Hill 1999 - Team Silent PS1 Fog',
+    displayName: 'Silent Hill 1999 - Team Silent PS1 Fog',
+    styleAnchors: [
+      'Silent Hill 1999 - Team Silent PS1 Fog',
+      'foggy town horror gameplay',
+      'thick fog',
+    ],
     category: '11. Psychological & Tactical Gameplay',
     domain: 'foggy town horror gameplay',
     negativePrompt:
-      'readable signs, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a pyramid-helmeted executioner, readable signs, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Fog-town radio static gameplay: an original third-person horror capture of a lone figure in a town drowned in white fog, with a crackling radio warning of nearby threats.',
+        'Team Silent Silent Hill (1999) look: PS1 horror with fog hiding a tiny draw distance, crackling radio, low-poly town streets, darkness and grainy flashlight.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject small in a fog-drowned town with limited visibility.',
-      color_and_tone:
-        'Grey-white fog, rust brown and muted colors, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as low-poly PS1 figures in the fog. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'White fog and rust, true to the Silent Hill 1999 palette.',
       lighting_and_shadow:
-        'Flat foggy daylight and a small flashlight, kept consistent across the whole image.',
-      texture_and_material: 'Wet asphalt, rusted signs without text and fog.',
+        'Fog and flashlight cone, lit the way Silent Hill 1999 lights its levels.',
+      texture_and_material:
+        'Low-poly PS1 textures, with the in-engine surface finish of Silent Hill 1999.',
       camera_and_composition:
-        'Third-person with figures fading into fog, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with lonely creeping dread.',
+        'Third-person fog view, framed the way Silent Hill 1999 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with unknowable foggy dread.',
       rendering_and_quality:
-        'Clean capture with no readable signs, kept consistent across the whole image.',
+        'Authentic PS1 horror screen, matching real Silent Hill 1999 screenshots.',
       creative_brief:
-        "Fog-town radio static gameplay: an original third-person horror capture of a lone figure in a town drowned in white fog, with a crackling radio warning of nearby threats. Carry it through thick fog, lone figure, empty town, radio crackle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'thick fog; lone figure; empty town; radio crackle',
+        "Team Silent Silent Hill (1999) look: PS1 horror with fog hiding a tiny draw distance, crackling radio, low-poly town streets, darkness and grainy flashlight. Carry it through Silent Hill 1999 fog, low-poly, radio. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Silent Hill 1999 fog; low-poly; radio',
     },
     ui: {
       previewStatus: 'pending',
@@ -211,37 +215,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-208',
-    name: 'Otherworld Rust Transition Gameplay',
-    displayName: 'Otherworld Rust Transition Gameplay',
+    name: 'Silent Hill Homecoming 2008 - Double Helix Peeling Otherworld',
+    displayName: 'Silent Hill Homecoming 2008 - Double Helix Peeling Otherworld',
     styleAnchors: [
-      'Otherworld Rust Transition Gameplay',
+      'Silent Hill Homecoming 2008 - Double Helix Peeling Otherworld',
       'reality-shift horror gameplay',
       'peeling reality',
     ],
     category: '11. Psychological & Tactical Gameplay',
     domain: 'reality-shift horror gameplay',
     negativePrompt:
-      'gore, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Otherworld rust transition gameplay: an original capture of a room peeling away into a rusted otherworld of grates, chains and sirens mid-transformation.',
+        'Double Helix Silent Hill: Homecoming (2008) look: walls peeling away like burning paper into a rusted otherworld of grates and chain link, sirens and industrial rot.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject as the world around them peels into a rusted nightmare version.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as survivors caught between normal rooms and rust. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Rust red, black grates and siren glow, kept consistent across the whole image.',
+        'Rust red, ash and dirty metal, true to the Silent Hill Homecoming 2008 palette.',
       lighting_and_shadow:
-        'Flickering light and deep dark grating, kept consistent across the whole image.',
+        'Siren-lit darkness, lit the way Silent Hill Homecoming 2008 lights its levels.',
       texture_and_material:
-        'Peeling walls, rusted metal and chain-link, kept consistent across the whole image.',
+        'Peeling paper, rust and grates, with the in-engine surface finish of Silent Hill Homecoming 2008.',
       camera_and_composition:
-        'Third-person as the room transforms, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with dreadful transformation, kept consistent across the whole image.',
+        'Third-person transition view, framed the way Silent Hill Homecoming 2008 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with screaming nightmare shift.',
       rendering_and_quality:
-        'Clean capture without gore or UI, kept consistent across the whole image.',
+        'Authentic horror transition screen, matching real Silent Hill Homecoming 2008 screenshots.',
       creative_brief:
-        "Otherworld rust transition gameplay: an original capture of a room peeling away into a rusted otherworld of grates, chains and sirens mid-transformation. Carry it through peeling reality, rust grates, sirens, transformation. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'peeling reality; rust grates; sirens; transformation',
+        "Double Helix Silent Hill: Homecoming (2008) look: walls peeling away like burning paper into a rusted otherworld of grates and chain link, sirens and industrial rot. Carry it through Homecoming peeling walls, rust otherworld, sirens. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Homecoming peeling walls; rust otherworld; sirens',
     },
     ui: {
       previewStatus: 'pending',
@@ -249,36 +252,34 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-209',
-    name: 'Looping Hallway Horror Gameplay',
-    displayName: 'Looping Hallway Horror Gameplay',
+    name: 'P.T. 2014 - Kojima Productions Looping Hallway',
+    displayName: 'P.T. 2014 - Kojima Productions Looping Hallway',
     styleAnchors: [
-      'Looping Hallway Horror Gameplay',
+      'P.T. 2014 - Kojima Productions Looping Hallway',
       'repeating corridor horror gameplay',
       'looping hallway',
     ],
     category: '11. Psychological & Tactical Gameplay',
     domain: 'repeating corridor horror gameplay',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Looping hallway horror gameplay: an original first-person capture of an ordinary house hallway that repeats endlessly, each loop subtly more wrong.',
+        'Kojima Productions P.T. (2014) look: photoreal first-person L-shaped suburban hallway that repeats endlessly, a radio, family photos and flickering light.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; place the subject in an endlessly repeating ordinary hallway.',
-      color_and_tone:
-        'Dim warm hallway light turning sickly, kept consistent across the whole image.',
-      lighting_and_shadow:
-        'A single ceiling lamp and dark doorways, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as unseen first-person visitors in a domestic hallway. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Dim beige, sickly green and shadow, true to the P.T. 2014 palette.',
+      lighting_and_shadow: 'Flickering hallway bulb, lit the way P.T. 2014 lights its levels.',
       texture_and_material:
-        'Plain wallpaper, wooden floors and framed photos, kept consistent across the whole image.',
+        'Photoreal domestic surfaces, with the in-engine surface finish of P.T. 2014.',
       camera_and_composition:
-        'First-person down an L-shaped hallway, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with mounting wrongness, kept consistent across the whole image.',
-      rendering_and_quality: 'Clean capture with no UI, kept consistent across the whole image.',
+        'First-person hallway view, framed the way P.T. 2014 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with looping domestic terror.',
+      rendering_and_quality:
+        'Authentic photoreal horror screen, matching real P.T. 2014 screenshots.',
       creative_brief:
-        "Looping hallway horror gameplay: an original first-person capture of an ordinary house hallway that repeats endlessly, each loop subtly more wrong. Carry it through looping hallway, first-person, subtle wrongness, ceiling lamp. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'looping hallway; first-person; subtle wrongness; ceiling lamp',
+        "Kojima Productions P.T. (2014) look: photoreal first-person L-shaped suburban hallway that repeats endlessly, a radio, family photos and flickering light. Carry it through P.T. looping hallway, photoreal, dread. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'P.T. looping hallway; photoreal; dread',
     },
     ui: {
       previewStatus: 'pending',
@@ -286,34 +287,34 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-210',
-    name: 'Camouflage Jungle Stealth Gameplay',
-    displayName: 'Camouflage Jungle Stealth Gameplay',
+    name: 'Crysis 2007 - Crytek Jungle Stealth',
+    displayName: 'Crysis 2007 - Crytek Jungle Stealth',
     styleAnchors: [
-      'Camouflage Jungle Stealth Gameplay',
+      'Crysis 2007 - Crytek Jungle Stealth',
       'overhead jungle stealth gameplay',
       'camouflage',
     ],
     category: '11. Psychological & Tactical Gameplay',
     domain: 'overhead jungle stealth gameplay',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a ribbed nanosuit, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Camouflage jungle stealth gameplay: an original overhead or third-person capture of a camouflaged soldier crawling through dense jungle past patrols.',
+        'Crytek Crysis (2007) look: first-person tropical island jungle in lush CryEngine detail, dense foliage, cloaking stealth, patrols and god rays.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject camouflaged and crawling through jungle past patrols.',
-      color_and_tone: 'Deep jungle greens with mud and sunlight flecks.',
-      lighting_and_shadow: 'Dappled jungle light, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as soldiers in face paint and jungle gear. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Lush jungle green and sun gold, true to the Crysis 2007 palette.',
+      lighting_and_shadow: 'God rays through foliage, lit the way Crysis 2007 lights its levels.',
       texture_and_material:
-        'Ferns, mud, face paint and camo fabric, kept consistent across the whole image.',
+        'Dense photoreal foliage, with the in-engine surface finish of Crysis 2007.',
       camera_and_composition:
-        'Low third-person in the undergrowth, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with patient infiltration, kept consistent across the whole image.',
-      rendering_and_quality: 'Clean capture with no UI, kept consistent across the whole image.',
+        'First-person jungle view, framed the way Crysis 2007 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with tense predatory stealth.',
+      rendering_and_quality:
+        'Authentic CryEngine jungle screen, matching real Crysis 2007 screenshots.',
       creative_brief:
-        "Camouflage jungle stealth gameplay: an original overhead or third-person capture of a camouflaged soldier crawling through dense jungle past patrols. Carry it through camouflage, jungle crawl, patrols, dappled light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'camouflage; jungle crawl; patrols; dappled light',
+        "Crytek Crysis (2007) look: first-person tropical island jungle in lush CryEngine detail, dense foliage, cloaking stealth, patrols and god rays. Carry it through Crysis jungle, foliage, stealth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Crysis jungle; foliage; stealth',
     },
     ui: {
       previewStatus: 'pending',
@@ -321,36 +322,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-211',
-    name: 'Guard Patrol Base Infiltration Gameplay',
-    displayName: 'Guard Patrol Base Infiltration Gameplay',
+    name: 'Metal Gear Solid 1998 - Konami Shadow Base',
+    displayName: 'Metal Gear Solid 1998 - Konami Shadow Base',
     styleAnchors: [
-      'Guard Patrol Base Infiltration Gameplay',
+      'Metal Gear Solid 1998 - Konami Shadow Base',
       'military base stealth gameplay',
       'searchlights',
     ],
     category: '11. Psychological & Tactical Gameplay',
     domain: 'military base stealth gameplay',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a soldier in a sneaking suit with a bandana, existing Metal Gear walkers, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Guard patrol base infiltration gameplay: an original third-person capture of sneaking into a floodlit military base at night, searchlights, fences and guard towers.',
+        'Konami Metal Gear Solid (1998) look: PS1 low-poly stealth at a snowy Alaskan base, overhead camera, searchlights, crates, guards and a giant walking tank.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject sneaking through a floodlit base at night.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as low-poly PS1 soldiers and guards. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Night blue, searchlight white and concrete grey, kept consistent across the whole image.',
+        'Snow white, steel grey and night blue, true to the Metal Gear Solid 1998 palette.',
       lighting_and_shadow:
-        'Sweeping searchlights and hard shadows, kept consistent across the whole image.',
+        'Searchlights at night, lit the way Metal Gear Solid 1998 lights its levels.',
       texture_and_material:
-        'Chain-link, concrete and crates, kept consistent across the whole image.',
+        'Low-poly PS1 textures, with the in-engine surface finish of Metal Gear Solid 1998.',
       camera_and_composition:
-        'Third-person from behind cover, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with taut stealth, kept consistent across the whole image.',
-      rendering_and_quality: 'Clean capture with no UI, kept consistent across the whole image.',
+        'Overhead stealth camera, framed the way Metal Gear Solid 1998 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with tense cold infiltration.',
+      rendering_and_quality:
+        'Authentic PS1 stealth screen, matching real Metal Gear Solid 1998 screenshots.',
       creative_brief:
-        "Guard patrol base infiltration gameplay: an original third-person capture of sneaking into a floodlit military base at night, searchlights, fences and guard towers. Carry it through searchlights, guard towers, fences, night base. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'searchlights; guard towers; fences; night base',
+        "Konami Metal Gear Solid (1998) look: PS1 low-poly stealth at a snowy Alaskan base, overhead camera, searchlights, crates, guards and a giant walking tank. Carry it through MGS1 base, searchlights, walking tank. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'MGS1 base; searchlights; walking tank',
     },
     ui: {
       previewStatus: 'pending',
@@ -358,35 +359,34 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-212',
-    name: 'Cargo-Laden Wasteland Trek Gameplay',
-    displayName: 'Cargo-Laden Wasteland Trek Gameplay',
+    name: "Jusant 2023 - Don't Nod Climbing Pilgrimage",
+    displayName: "Jusant 2023 - Don't Nod Climbing Pilgrimage",
     styleAnchors: [
-      'Cargo-Laden Wasteland Trek Gameplay',
+      "Jusant 2023 - Don't Nod Climbing Pilgrimage",
       'burdened traversal gameplay',
       'towering pack',
     ],
     category: '11. Psychological & Tactical Gameplay',
     domain: 'burdened traversal gameplay',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Cargo-laden wasteland trek gameplay: an original third-person capture of a lone porter carrying a towering pack across a vast empty landscape of rock and moss.',
+        "Don't Nod Jusant (2023) look: stylized painterly climbing up a huge tower in a drought world, a small climber with a pack, ropes, moss and whale-like creatures drifting in the air.",
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject burdened by a huge pack crossing a vast landscape.',
-      color_and_tone:
-        'Muted greens, grey rock and pale sky, kept consistent across the whole image.',
-      lighting_and_shadow: 'Overcast diffuse light, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as small stylized climbers with big packs. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Soft stone, moss green and sky blue, true to the Jusant 2023 palette.',
+      lighting_and_shadow: 'Soft painterly light, lit the way Jusant 2023 lights its levels.',
       texture_and_material:
-        'Moss, wet rock, straps and cargo cases, kept consistent across the whole image.',
+        'Painterly stone and cloth, with the in-engine surface finish of Jusant 2023.',
       camera_and_composition:
-        'Wide third-person with a small figure, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with lonely perseverance, kept consistent across the whole image.',
-      rendering_and_quality: 'Clean capture with no UI, kept consistent across the whole image.',
+        'Wide climbing view, framed the way Jusant 2023 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with quiet meditative ascent.',
+      rendering_and_quality:
+        'Authentic painterly climbing screen, matching real Jusant 2023 screenshots.',
       creative_brief:
-        "Cargo-laden wasteland trek gameplay: an original third-person capture of a lone porter carrying a towering pack across a vast empty landscape of rock and moss. Carry it through towering pack, vast landscape, lone porter, moss and rock. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'towering pack; vast landscape; lone porter; moss and rock',
+        "Don't Nod Jusant (2023) look: stylized painterly climbing up a huge tower in a drought world, a small climber with a pack, ropes, moss and whale-like creatures drifting in the air. Carry it through Jusant climbing, drought world, floating whales. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Jusant climbing; drought world; floating whales',
     },
     ui: {
       previewStatus: 'pending',
@@ -394,35 +394,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-213',
-    name: 'Sanity Distortion Gameplay',
-    displayName: 'Sanity Distortion Gameplay',
+    name: 'Layers of Fear 2016 - Bloober Team Shifting Rooms',
+    displayName: 'Layers of Fear 2016 - Bloober Team Shifting Rooms',
     styleAnchors: [
-      'Sanity Distortion Gameplay',
+      'Layers of Fear 2016 - Bloober Team Shifting Rooms',
       'psychological distortion gameplay',
       'warping walls',
     ],
     category: '11. Psychological & Tactical Gameplay',
     domain: 'psychological distortion gameplay',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        "Sanity distortion gameplay: an original first-person capture where the room warps, walls breathe and colors bleed as the character's grip on reality slips.",
+        'Bloober Team Layers of Fear (2016) look: first-person Victorian house that shifts behind you, a painter descending into madness, warped rooms and dripping paint.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject in a room that warps and breathes around them.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as haunted artists seen from first person. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Shifting desaturated tones with bleeding color, kept consistent across the whole image.',
-      lighting_and_shadow: 'Warping light and vignette, kept consistent across the whole image.',
+        'Victorian brown, oil paint and shadow, true to the Layers of Fear 2016 palette.',
+      lighting_and_shadow:
+        'Candle and warped light, lit the way Layers of Fear 2016 lights its levels.',
       texture_and_material:
-        'Stretched walls, doubled edges and chromatic fringes, kept consistent across the whole image.',
+        'Oil paint, wood and plaster, with the in-engine surface finish of Layers of Fear 2016.',
       camera_and_composition:
-        'First-person with warped perspective, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with unravelling perception, kept consistent across the whole image.',
-      rendering_and_quality: 'Clean distortion with no UI, kept consistent across the whole image.',
+        'First-person warped view, framed the way Layers of Fear 2016 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with unraveling artistic madness.',
+      rendering_and_quality:
+        'Authentic psychological horror screen, matching real Layers of Fear 2016 screenshots.',
       creative_brief:
-        "Sanity distortion gameplay: an original first-person capture where the room warps, walls breathe and colors bleed as the character's grip on reality slips. Carry it through warping walls, breathing room, color bleed, first-person. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'warping walls; breathing room; color bleed; first-person',
+        "Bloober Team Layers of Fear (2016) look: first-person Victorian house that shifts behind you, a painter descending into madness, warped rooms and dripping paint. Carry it through Layers of Fear shifting rooms, paint, madness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Layers of Fear shifting rooms; paint; madness',
     },
     ui: {
       previewStatus: 'pending',
@@ -430,37 +431,34 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-214',
-    name: 'Asylum Walkthrough Gameplay',
-    displayName: 'Asylum Walkthrough Gameplay',
+    name: 'Condemned 2005 - Monolith Derelict First-Person',
+    displayName: 'Condemned 2005 - Monolith Derelict First-Person',
     styleAnchors: [
-      'Asylum Walkthrough Gameplay',
+      'Condemned 2005 - Monolith Derelict First-Person',
       'abandoned asylum exploration gameplay',
       'abandoned asylum',
     ],
     category: '11. Psychological & Tactical Gameplay',
     domain: 'abandoned asylum exploration gameplay',
     negativePrompt:
-      'gore, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Asylum walkthrough gameplay: an original first-person capture of exploring an abandoned asylum ward, peeling paint, overturned wheelchairs and daylight through dirty windows.',
+        'Monolith Productions Condemned: Criminal Origins (2005) look: first-person grimy derelict buildings, forensic flashlight, melee pipes and gaunt figures in darkness.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject exploring an abandoned asylum ward.',
-      color_and_tone:
-        'Faded mint green, rust and grey daylight, kept consistent across the whole image.',
-      lighting_and_shadow:
-        'Dirty window light and dark rooms, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as gaunt figures in a grimy derelict interior. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Grimy green, flashlight white and rust, true to the Condemned 2005 palette.',
+      lighting_and_shadow: 'Flashlight in darkness, lit the way Condemned 2005 lights its levels.',
       texture_and_material:
-        'Peeling paint, tiles and old furniture, kept consistent across the whole image.',
+        'Grimy decay textures, with the in-engine surface finish of Condemned 2005.',
       camera_and_composition:
-        'First-person down a long ward, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with melancholy unease, kept consistent across the whole image.',
+        'First-person flashlight view, framed the way Condemned 2005 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with grimy lurking dread.',
       rendering_and_quality:
-        'Clean capture without gore or UI, kept consistent across the whole image.',
+        'Authentic mid-2000s horror screen, matching real Condemned 2005 screenshots.',
       creative_brief:
-        "Asylum walkthrough gameplay: an original first-person capture of exploring an abandoned asylum ward, peeling paint, overturned wheelchairs and daylight through dirty windows. Carry it through abandoned asylum, peeling paint, long ward, dirty windows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'abandoned asylum; peeling paint; long ward; dirty windows',
+        "Monolith Productions Condemned: Criminal Origins (2005) look: first-person grimy derelict buildings, forensic flashlight, melee pipes and gaunt figures in darkness. Carry it through Condemned grime, flashlight, derelict. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Condemned grime; flashlight; derelict',
     },
     ui: {
       previewStatus: 'pending',
@@ -468,37 +466,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-215',
-    name: 'Rainy Border Crossing Stealth Gameplay',
-    displayName: 'Rainy Border Crossing Stealth Gameplay',
+    name: 'Splinter Cell Chaos Theory 2005 - Ubisoft Montreal Night Stealth',
+    displayName: 'Splinter Cell Chaos Theory 2005 - Ubisoft Montreal Night Stealth',
     styleAnchors: [
-      'Rainy Border Crossing Stealth Gameplay',
+      'Splinter Cell Chaos Theory 2005 - Ubisoft Montreal Night Stealth',
       'wartime border stealth gameplay',
       'border post',
     ],
     category: '11. Psychological & Tactical Gameplay',
     domain: 'wartime border stealth gameplay',
     negativePrompt:
-      'readable signs, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'three green night-vision lenses, readable signs, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Rainy border crossing stealth gameplay: an original third-person capture of sneaking across a rain-soaked border post, barriers, flashlights and wet mud.',
+        'Ubisoft Montreal Splinter Cell: Chaos Theory (2005) look: third-person stealth in rain and darkness, light meters, green night-vision goggles and guards with flashlights.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject crossing a rain-soaked border post undetected.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as stealth operatives in dark gear. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Wet greys, yellow floodlights and dark green, kept consistent across the whole image.',
+        'Night black, goggle green and rain blue, true to the Splinter Cell Chaos Theory 2005 palette.',
       lighting_and_shadow:
-        'Floodlights through heavy rain, kept consistent across the whole image.',
+        'Darkness with flashlight sweeps, lit the way Splinter Cell Chaos Theory 2005 lights its levels.',
       texture_and_material:
-        'Mud, wet wood barriers and rain streaks, kept consistent across the whole image.',
+        'Wet gear and rain, with the in-engine surface finish of Splinter Cell Chaos Theory 2005.',
       camera_and_composition:
-        'Low third-person near the barrier, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with nervous determination, kept consistent across the whole image.',
+        'Third-person stealth view, framed the way Splinter Cell Chaos Theory 2005 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with tense silent infiltration.',
       rendering_and_quality:
-        'Clean capture with no readable signs, kept consistent across the whole image.',
+        'Authentic stealth screen, matching real Splinter Cell Chaos Theory 2005 screenshots.',
       creative_brief:
-        "Rainy border crossing stealth gameplay: an original third-person capture of sneaking across a rain-soaked border post, barriers, flashlights and wet mud. Carry it through border post, heavy rain, floodlights, barrier. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'border post; heavy rain; floodlights; barrier',
+        "Ubisoft Montreal Splinter Cell: Chaos Theory (2005) look: third-person stealth in rain and darkness, light meters, green night-vision goggles and guards with flashlights. Carry it through Splinter Cell darkness, goggles, rain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Splinter Cell darkness; goggles; rain',
     },
     ui: {
       previewStatus: 'pending',
@@ -506,34 +503,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-216',
-    name: 'Dream-Logic Puzzle Gameplay',
-    displayName: 'Dream-Logic Puzzle Gameplay',
+    name: 'LSD Dream Emulator 1998 - Asmik Ace PS1 Dreams',
+    displayName: 'LSD Dream Emulator 1998 - Asmik Ace PS1 Dreams',
     styleAnchors: [
-      'Dream-Logic Puzzle Gameplay',
+      'LSD Dream Emulator 1998 - Asmik Ace PS1 Dreams',
       'surreal dream puzzle gameplay',
       'impossible geometry',
     ],
     category: '11. Psychological & Tactical Gameplay',
     domain: 'surreal dream puzzle gameplay',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Dream-logic puzzle gameplay: an original first-person capture of an impossible dream space, doors in the sky, stairs that loop and furniture floating in soft light.',
+        'Asmik Ace LSD: Dream Emulator (1998) look: surreal PS1 dream exploration, low-poly pastel worlds, impossible links between places and uncanny textures.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; place the subject in an impossible dream space with looping stairs and floating rooms.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as low-poly dream figures. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Soft pastels with deep dreamy shadows, kept consistent across the whole image.',
-      lighting_and_shadow: 'Soft sourceless light, kept consistent across the whole image.',
+        'Pastel pink, sky blue and surreal colors, true to the LSD Dream Emulator 1998 palette.',
+      lighting_and_shadow:
+        'Flat dream light, lit the way LSD Dream Emulator 1998 lights its levels.',
       texture_and_material:
-        'Floating furniture, clouds and impossible geometry, kept consistent across the whole image.',
+        'Warped PS1 textures, with the in-engine surface finish of LSD Dream Emulator 1998.',
       camera_and_composition:
-        'First-person toward impossible architecture, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with gentle surreal wonder.',
-      rendering_and_quality: 'Clean capture with no UI, kept consistent across the whole image.',
+        'First-person dream view, framed the way LSD Dream Emulator 1998 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with uncanny dreamy drift.',
+      rendering_and_quality:
+        'Authentic PS1 dream screen, matching real LSD Dream Emulator 1998 screenshots.',
       creative_brief:
-        "Dream-logic puzzle gameplay: an original first-person capture of an impossible dream space, doors in the sky, stairs that loop and furniture floating in soft light. Carry it through impossible geometry, floating furniture, looping stairs, dream light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'impossible geometry; floating furniture; looping stairs; dream light',
+        "Asmik Ace LSD: Dream Emulator (1998) look: surreal PS1 dream exploration, low-poly pastel worlds, impossible links between places and uncanny textures. Carry it through LSD Dream Emulator, pastel, surreal PS1. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'LSD Dream Emulator; pastel; surreal PS1',
     },
     ui: {
       previewStatus: 'pending',
@@ -541,36 +540,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-217',
-    name: 'Lighthouse Isolation Gameplay',
-    displayName: 'Lighthouse Isolation Gameplay',
+    name: 'Dear Esther 2012 - The Chinese Room Island',
+    displayName: 'Dear Esther 2012 - The Chinese Room Island',
     styleAnchors: [
-      'Lighthouse Isolation Gameplay',
+      'Dear Esther 2012 - The Chinese Room Island',
       'isolated keeper narrative gameplay',
       'lighthouse interior',
     ],
     category: '11. Psychological & Tactical Gameplay',
     domain: 'isolated keeper narrative gameplay',
     negativePrompt:
-      'readable log text, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable log text, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Lighthouse isolation gameplay: an original first-person narrative capture inside a remote lighthouse during a storm, lamp room, logbook desk and churning sea.',
+        'The Chinese Room Dear Esther (2012) look: first-person walk across a lonely Hebridean island, lighthouses, storms, caves and melancholic narration.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject inside a remote lighthouse during a storm.',
-      color_and_tone:
-        'Storm grey, lamp gold and sea green, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as lonely wanderers seen from first person. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Storm grey, sea teal and lamp gold, true to the Dear Esther 2012 palette.',
       lighting_and_shadow:
-        'Sweeping lamp beam and lightning, kept consistent across the whole image.',
+        'Stormy light with lamp beams, lit the way Dear Esther 2012 lights its levels.',
       texture_and_material:
-        'Brass lamp, wet stone and wooden desk, kept consistent across the whole image.',
+        'Realistic rock and sea spray, with the in-engine surface finish of Dear Esther 2012.',
       camera_and_composition:
-        'First-person from inside the lamp room, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with isolated creeping paranoia.',
+        'First-person lamp room view, framed the way Dear Esther 2012 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with melancholic windswept isolation.',
       rendering_and_quality:
-        'Clean capture with no readable log text, kept consistent across the whole image.',
+        'Authentic walking-sim screen, matching real Dear Esther 2012 screenshots.',
       creative_brief:
-        "Lighthouse isolation gameplay: an original first-person narrative capture inside a remote lighthouse during a storm, lamp room, logbook desk and churning sea. Carry it through lighthouse interior, storm, sweeping beam, isolation. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'lighthouse interior; storm; sweeping beam; isolation',
+        "The Chinese Room Dear Esther (2012) look: first-person walk across a lonely Hebridean island, lighthouses, storms, caves and melancholic narration. Carry it through Dear Esther island, lighthouse, storm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Dear Esther island; lighthouse; storm',
     },
     ui: {
       previewStatus: 'pending',
@@ -578,36 +576,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-218',
-    name: 'Time-Loop Mansion Mystery Gameplay',
-    displayName: 'Time-Loop Mansion Mystery Gameplay',
+    name: 'Deathloop 2021 - Arkane Lyon Retro Loop',
+    displayName: 'Deathloop 2021 - Arkane Lyon Retro Loop',
     styleAnchors: [
-      'Time-Loop Mansion Mystery Gameplay',
+      'Deathloop 2021 - Arkane Lyon Retro Loop',
       'repeating day mystery gameplay',
       'time loop',
     ],
     category: '11. Psychological & Tactical Gameplay',
     domain: 'repeating day mystery gameplay',
     negativePrompt:
-      'readable clock numerals, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable clock numerals, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Time-loop mansion mystery gameplay: an original third-person capture of a mansion party where the same evening repeats, guests frozen in the same poses and clocks everywhere.',
+        'Arkane Lyon Deathloop (2021) look: sixties retro-futurist island party in a time loop, mod colors, masked partygoers and stylized painterly art.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; place the subject in a mansion party trapped in a repeating evening.',
-      color_and_tone:
-        'Warm party gold with cold clock-face silver, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as masked sixties partygoers. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Mod orange, teal and gold, true to the Deathloop 2021 palette.',
       lighting_and_shadow:
-        'Chandelier light and long shadows, kept consistent across the whole image.',
+        'Party lights at midnight, lit the way Deathloop 2021 lights its levels.',
       texture_and_material:
-        'Velvet, polished wood and ticking clocks, kept consistent across the whole image.',
+        'Stylized painterly surfaces, with the in-engine surface finish of Deathloop 2021.',
       camera_and_composition:
-        'Third-person through the ballroom crowd, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with mysterious déjà vu.',
+        'First-person party view, framed the way Deathloop 2021 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with stylish looping intrigue.',
       rendering_and_quality:
-        'Clean capture with no readable clock numerals, kept consistent across the whole image.',
+        'Authentic stylized loop screen, matching real Deathloop 2021 screenshots.',
       creative_brief:
-        "Time-loop mansion mystery gameplay: an original third-person capture of a mansion party where the same evening repeats, guests frozen in the same poses and clocks everywhere. Carry it through time loop, mansion party, clocks, frozen guests. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'time loop; mansion party; clocks; frozen guests',
+        "Arkane Lyon Deathloop (2021) look: sixties retro-futurist island party in a time loop, mod colors, masked partygoers and stylized painterly art. Carry it through Deathloop sixties, masks, time loop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Deathloop sixties; masks; time loop',
     },
     ui: {
       previewStatus: 'pending',
@@ -615,30 +612,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-219',
-    name: 'Forest Sniper Duel Gameplay',
-    displayName: 'Forest Sniper Duel Gameplay',
-    styleAnchors: ['Forest Sniper Duel Gameplay', 'patient sniper duel gameplay', 'sniper duel'],
+    name: 'STALKER Shadow of Chernobyl 2007 - GSC Zone Forest',
+    displayName: 'STALKER Shadow of Chernobyl 2007 - GSC Zone Forest',
+    styleAnchors: [
+      'STALKER Shadow of Chernobyl 2007 - GSC Zone Forest',
+      'patient sniper duel gameplay',
+      'sniper duel',
+    ],
     category: '11. Psychological & Tactical Gameplay',
     domain: 'patient sniper duel gameplay',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Forest sniper duel gameplay: an original first-person capture of a patient sniper duel in an old forest, scope glint, moss-covered hides and drifting mist.',
+        'GSC Game World S.T.A.L.K.E.R.: Shadow of Chernobyl (2007) look: first-person survival in the Zone, misty forests, anomalies, rusted Soviet ruins and snipers.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject in a patient sniper duel hidden in an old forest.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as stalkers in hoods and gas masks. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Mossy greens, mist grey and bark brown, kept consistent across the whole image.',
-      lighting_and_shadow: 'Soft forest light and a single scope glint.',
+        'Grey-green mist and rust, true to the STALKER Shadow of Chernobyl 2007 palette.',
+      lighting_and_shadow:
+        'Overcast mist, lit the way STALKER Shadow of Chernobyl 2007 lights its levels.',
       texture_and_material:
-        'Moss, ferns, mist and camo cloth, kept consistent across the whole image.',
+        'Grimy late-2000s textures, with the in-engine surface finish of STALKER Shadow of Chernobyl 2007.',
       camera_and_composition:
-        'First-person through a scope or foliage, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with patient hunter tension.',
-      rendering_and_quality: 'Clean capture with no UI, kept consistent across the whole image.',
+        'First-person scope view, framed the way STALKER Shadow of Chernobyl 2007 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with paranoid patient survival.',
+      rendering_and_quality:
+        'Authentic late-2000s survival screen, matching real STALKER Shadow of Chernobyl 2007 screenshots.',
       creative_brief:
-        "Forest sniper duel gameplay: an original first-person capture of a patient sniper duel in an old forest, scope glint, moss-covered hides and drifting mist. Carry it through sniper duel, scope glint, old forest, mist. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'sniper duel; scope glint; old forest; mist',
+        "GSC Game World S.T.A.L.K.E.R.: Shadow of Chernobyl (2007) look: first-person survival in the Zone, misty forests, anomalies, rusted Soviet ruins and snipers. Carry it through STALKER Zone, mist, anomalies. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'STALKER Zone; mist; anomalies',
     },
     ui: {
       previewStatus: 'pending',
@@ -646,35 +649,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-220',
-    name: 'Suburban Night Walk Horror Gameplay',
-    displayName: 'Suburban Night Walk Horror Gameplay',
+    name: 'Yomawari Night Alone 2015 - Nippon Ichi Night Walk',
+    displayName: 'Yomawari Night Alone 2015 - Nippon Ichi Night Walk',
     styleAnchors: [
-      'Suburban Night Walk Horror Gameplay',
+      'Yomawari Night Alone 2015 - Nippon Ichi Night Walk',
       'quiet suburb night horror gameplay',
       'empty suburb',
     ],
     category: '11. Psychological & Tactical Gameplay',
     domain: 'quiet suburb night horror gameplay',
     negativePrompt:
-      'readable signs, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable signs, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Suburban night walk horror gameplay: an original third-person capture of walking an empty suburb at night, porch lights, humming streetlamps and something wrong down the block.',
+        'Nippon Ichi Software Yomawari: Night Alone (2015) look: a small chibi girl with a flashlight walking a dark Japanese suburb at night, cute art and creeping spirits.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject walking an empty suburban street at night.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as small chibi figures with flashlights. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Orange streetlamps, dark lawns and blue night, kept consistent across the whole image.',
+        'Night blue with flashlight yellow, true to the Yomawari Night Alone 2015 palette.',
       lighting_and_shadow:
-        'Pools of streetlamp light between darkness, kept consistent across the whole image.',
-      texture_and_material: 'Asphalt, lawns, picket fences and mailboxes without text.',
+        'Flashlight cone in darkness, lit the way Yomawari Night Alone 2015 lights its levels.',
+      texture_and_material:
+        'Soft hand-drawn art, with the in-engine surface finish of Yomawari Night Alone 2015.',
       camera_and_composition:
-        'Third-person down the middle of the street, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with quiet domestic unease.',
+        'Top-down night walk view, framed the way Yomawari Night Alone 2015 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with cute creeping dread.',
       rendering_and_quality:
-        'Clean capture with no readable signs, kept consistent across the whole image.',
+        'Authentic chibi horror screen, matching real Yomawari Night Alone 2015 screenshots.',
       creative_brief:
-        "Suburban night walk horror gameplay: an original third-person capture of walking an empty suburb at night, porch lights, humming streetlamps and something wrong down the block. Carry it through empty suburb, streetlamps, porch lights, night walk. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'empty suburb; streetlamps; porch lights; night walk',
+        "Nippon Ichi Software Yomawari: Night Alone (2015) look: a small chibi girl with a flashlight walking a dark Japanese suburb at night, cute art and creeping spirits. Carry it through Yomawari night walk, chibi, spirits. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Yomawari night walk; chibi; spirits',
     },
     ui: {
       previewStatus: 'pending',

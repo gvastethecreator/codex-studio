@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-106
 packId: pack_12
-name: Arcade Night Racer Capture
+name: Horizon Chase Turbo 2018 - Aquiris Retro Arcade Racer
 styleAnchors:
-  - Arcade Night Racer Capture
+  - Horizon Chase Turbo 2018 - Aquiris Retro Arcade Racer
   - retro arcade night racing screenshot
   - behind-car camera
-displayName: Arcade Night Racer Capture
+displayName: Horizon Chase Turbo 2018 - Aquiris Retro Arcade Racer
 category: 1. Neon Urban & Night Ops
 domain: retro arcade night racing screenshot
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,22 +20,22 @@ tags:
   - arcade-racer
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Arcade night racer capture: an original behind-the-car arcade racing screenshot on a neon night highway, sunset gradients, palm silhouettes and speed streaks.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject racing from a behind-the-car arcade camera on a neon highway.
-  color_and_tone: Sunset magenta, violet and cyan with road lights.
-  lighting_and_shadow: Neon road lights and tail-light glow, kept consistent across the whole image.
-  texture_and_material: Glossy car paint, road stripes and speed lines.
-  camera_and_composition: Behind-the-car view with a vanishing road, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with euphoric retro speed.
-  rendering_and_quality: Clean arcade capture with no readable HUD text.
-  creative_brief: "Arcade night racer capture: an original behind-the-car arcade racing screenshot on a neon night highway, sunset gradients, palm silhouettes and speed streaks. Carry it through behind-car camera, neon highway, sunset gradient, speed streaks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: behind-car camera; neon highway; sunset gradient; speed streaks
+  aesthetic: 'Aquiris Horizon Chase Turbo (2018) look: low-poly flat-shaded retro arcade racing, rear view of the car, curving roads rising and falling toward huge gradient sunsets.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render every car and rider as a flat-shaded low-poly shape seen from behind. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Sunset orange, magenta and teal gradients, true to the Horizon Chase Turbo 2018 palette.
+  lighting_and_shadow: Huge gradient sunset light with flat shading, lit the way Horizon Chase Turbo 2018 lights its levels.
+  texture_and_material: Flat-shaded low-poly geometry without textures, with the in-engine surface finish of Horizon Chase Turbo 2018.
+  camera_and_composition: Rear arcade chase camera on curving roads, framed the way Horizon Chase Turbo 2018 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with nostalgic arcade joy.
+  rendering_and_quality: Authentic flat-shaded retro racer screen, matching real Horizon Chase Turbo 2018 screenshots.
+  creative_brief: 'Aquiris Horizon Chase Turbo (2018) look: low-poly flat-shaded retro arcade racing, rear view of the car, curving roads rising and falling toward huge gradient sunsets. Carry it through Horizon Chase low-poly, gradient sunsets, rear chase. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Horizon Chase low-poly; gradient sunsets; rear chase
 avoidRules:
   - car brand logos
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -44,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: car brand logos, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: car brand logos, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -65,6 +68,7 @@ taxonomy:
     - arcade-racer
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

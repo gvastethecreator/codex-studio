@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-211
 packId: pack_12
-name: Guard Patrol Base Infiltration Gameplay
+name: Metal Gear Solid 1998 - Konami Shadow Base
 styleAnchors:
-  - Guard Patrol Base Infiltration Gameplay
+  - Metal Gear Solid 1998 - Konami Shadow Base
   - military base stealth gameplay
   - searchlights
-displayName: Guard Patrol Base Infiltration Gameplay
+displayName: Metal Gear Solid 1998 - Konami Shadow Base
 category: 11. Psychological & Tactical Gameplay
 domain: military base stealth gameplay
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,23 @@ tags:
   - base-infiltration
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Guard patrol base infiltration gameplay: an original third-person capture of sneaking into a floodlit military base at night, searchlights, fences and guard towers.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject sneaking through a floodlit base at night.
-  color_and_tone: Night blue, searchlight white and concrete grey, kept consistent across the whole image.
-  lighting_and_shadow: Sweeping searchlights and hard shadows, kept consistent across the whole image.
-  texture_and_material: Chain-link, concrete and crates, kept consistent across the whole image.
-  camera_and_composition: Third-person from behind cover, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with taut stealth, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no UI, kept consistent across the whole image.
-  creative_brief: "Guard patrol base infiltration gameplay: an original third-person capture of sneaking into a floodlit military base at night, searchlights, fences and guard towers. Carry it through searchlights, guard towers, fences, night base. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: searchlights; guard towers; fences; night base
+  aesthetic: 'Konami Metal Gear Solid (1998) look: PS1 low-poly stealth at a snowy Alaskan base, overhead camera, searchlights, crates, guards and a giant walking tank.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as low-poly PS1 soldiers and guards. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Snow white, steel grey and night blue, true to the Metal Gear Solid 1998 palette.
+  lighting_and_shadow: Searchlights at night, lit the way Metal Gear Solid 1998 lights its levels.
+  texture_and_material: Low-poly PS1 textures, with the in-engine surface finish of Metal Gear Solid 1998.
+  camera_and_composition: Overhead stealth camera, framed the way Metal Gear Solid 1998 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with tense cold infiltration.
+  rendering_and_quality: Authentic PS1 stealth screen, matching real Metal Gear Solid 1998 screenshots.
+  creative_brief: 'Konami Metal Gear Solid (1998) look: PS1 low-poly stealth at a snowy Alaskan base, overhead camera, searchlights, crates, guards and a giant walking tank. Carry it through MGS1 base, searchlights, walking tank. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: MGS1 base; searchlights; walking tank
 avoidRules:
+  - a soldier in a sneaking suit with a bandana
+  - existing Metal Gear walkers
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +45,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a soldier in a sneaking suit with a bandana, existing Metal Gear walkers, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +69,7 @@ taxonomy:
     - base-infiltration
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

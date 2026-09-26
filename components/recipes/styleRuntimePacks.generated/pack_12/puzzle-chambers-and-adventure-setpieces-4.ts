@@ -5,361 +5,343 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-004',
-    name: 'Arcadia Cloudship JRPG',
-    displayName: 'Arcadia Cloudship JRPG',
-    styleAnchors: ['Skies of Arcadia gameplay screenshots', 'Arcadia Cloudship JRPG'],
+    name: 'Skies of Arcadia 2000 - Overworks Sky Pirates',
+    displayName: 'Skies of Arcadia 2000 - Overworks Sky Pirates',
+    styleAnchors: ['Skies of Arcadia 2000 - Overworks Sky Pirates', 'Arcadia Cloudship JRPG'],
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a sky pirate boy with an eyepatch strap and twin cutlasses, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Skies of Arcadia gameplay: Dreamcast-era skyfaring JRPG capture with bright airships, cloud ocean horizons, chunky low-poly fantasy machinery, and adventurous encounter staging. It never recreates an exact official level, character, logo or marketing art.',
+        'Overworks Skies of Arcadia (2000) look: bright Dreamcast JRPG of sky pirates, wooden airships over an endless cloud sea, floating islands, cheerful anime characters and huge sky beasts.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Skies of Arcadia-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Skies of Arcadia-informed palette: cloud white, sky blue, lacquer red, brass gold, emerald hull paint, and saturated heroic primary accents. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as cheerful low-poly anime sky pirates with goggles, sashes and big boots. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Sky blue, sunny gold, cloud white and warm ship wood.',
       lighting_and_shadow:
-        'Light the image through soft blue daylight, cloud bounce, simple specular highlights, engine glow, and theatrical battle flashes. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Bright open-sky sunshine with soft Dreamcast gradients, lit the way Skies of Arcadia 2000 lights its levels.',
       texture_and_material:
-        'Build surfaces from low-poly ship hulls, painted sails, brass trim, wooden decks, chunky character proportions, and clean early-console textures. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Early-2000s low-poly models with clean bright textures, with the in-engine surface finish of Skies of Arcadia 2000.',
       camera_and_composition:
-        "Compose with third-person exploration or turn-based battle framing with airship scale, readable menus if useful, and optimistic sky depth. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Skies of Arcadia-derived mood: buoyant, swashbuckling, colorful, and classic-console adventurous; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Third-person deck view over the cloud sea, framed the way Skies of Arcadia 2000 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with sunny swashbuckling adventure.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: JRPG command windows or battle meters are allowed when they feel like era-correct gameplay UI, not pasted text blocks. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Skies of Arcadia gameplay screenshots; Dreamcast-era skyfaring JRPG capture with bright airships, cloud ocean horizons, chunky low-poly fantasy machinery, and adventurous encounter staging; cloud white, sky blue, lacquer red, brass gold, emerald hull paint, and saturated heroic primary accents; soft blue daylight, cloud bounce, simple specular highlights, engine glow, and theatrical battle flashes; low-poly ship hulls, painted sails, brass trim, wooden decks, chunky character proportions, and clean early-console textures; third-person exploration or turn-based battle framing with airship scale, readable menus if useful, and optimistic sky depth; buoyant, swashbuckling, colorful, and classic-console adventurous; HUD guidance: JRPG command windows or battle meters are allowed when they feel like era-correct gameplay UI, not pasted text blocks',
+        'Authentic Dreamcast JRPG screen, matching real Skies of Arcadia 2000 screenshots.',
+      key_features: 'Skies of Arcadia airships; cloud sea; sky pirates',
       creative_brief:
-        "Arcadia Cloudship JRPG: in-game screenshot language informed by Skies of Arcadia, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Overworks Skies of Arcadia (2000) look: bright Dreamcast JRPG of sky pirates, wooden airships over an endless cloud sea, floating islands, cheerful anime characters and huge sky beasts. Carry it through Skies of Arcadia airships, cloud sea, sky pirates. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-012',
-    name: 'Stardew Tavern Pixel Hub',
-    displayName: 'Stardew Tavern Pixel Hub',
-    styleAnchors: ['Stardew Valley gameplay screenshots', 'Stardew Tavern Pixel Hub'],
+    name: 'Stardew Valley 2016 - ConcernedApe Pixel Farm Town',
+    displayName: 'Stardew Valley 2016 - ConcernedApe Pixel Farm Town',
+    styleAnchors: [
+      'Stardew Valley 2016 - ConcernedApe Pixel Farm Town',
+      'Stardew Tavern Pixel Hub',
+    ],
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt:
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Stardew Valley gameplay: top-down pixel-life-sim capture with cozy interiors, tile-based props, NPC clusters, inventory bar, and readable village hub layout. It never recreates an exact official level, character, logo or marketing art.',
+        'ConcernedApe Stardew Valley (2016) look: cozy top-down pixel farm town with warm saturated sprites, wooden interiors, seasonal festivals, crops and friendly villagers.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Stardew Valley-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Stardew Valley-informed palette: warm wood brown, soft lamp yellow, berry red, denim blue, plant green, and muted pixel shadows. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as small cozy pixel villagers with round heads and simple faces. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Warm wood amber, harvest orange, crop green and cozy lamp yellow.',
       lighting_and_shadow:
-        'Light the image through simple warm room pools, fireplace glow, window daylight blocks, and tiny highlight pixels. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Warm lamplight and flat pixel daylight, lit the way Stardew Valley 2016 lights its levels.',
       texture_and_material:
-        'Build surfaces from 16-bit inspired tiles, simple furniture sprites, food icons, patterned rugs, pixel portraits, and hand-placed clutter. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Soft detailed pixel art tiles and sprites, with the in-engine surface finish of Stardew Valley 2016.',
       camera_and_composition:
-        "Compose with top-down room or town hub with grid clarity, interactable counters, social spacing, and inventory-bar ergonomics. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Stardew Valley-derived mood: cozy, handmade, social, low-stakes, and quietly productive; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Top-down three-quarter pixel view, framed the way Stardew Valley 2016 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with cozy communal warmth.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: inventory hotbar, clock, money, stamina, and small interaction prompts are part of the style when kept pixel-clean. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Stardew Valley gameplay screenshots; top-down pixel-life-sim capture with cozy interiors, tile-based props, NPC clusters, inventory bar, and readable village hub layout; warm wood brown, soft lamp yellow, berry red, denim blue, plant green, and muted pixel shadows; simple warm room pools, fireplace glow, window daylight blocks, and tiny highlight pixels; 16-bit inspired tiles, simple furniture sprites, food icons, patterned rugs, pixel portraits, and hand-placed clutter; top-down room or town hub with grid clarity, interactable counters, social spacing, and inventory-bar ergonomics; cozy, handmade, social, low-stakes, and quietly productive; HUD guidance: inventory hotbar, clock, money, stamina, and small interaction prompts are part of the style when kept pixel-clean',
+        'Authentic cozy pixel farm game screen, matching real Stardew Valley 2016 screenshots.',
+      key_features: 'Stardew pixel town; cozy tavern; harvest festival',
       creative_brief:
-        "Stardew Tavern Pixel Hub: in-game screenshot language informed by Stardew Valley, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "ConcernedApe Stardew Valley (2016) look: cozy top-down pixel farm town with warm saturated sprites, wooden interiors, seasonal festivals, crops and friendly villagers. Carry it through Stardew pixel town, cozy tavern, harvest festival. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-036',
-    name: 'Whitewall Gate Test Chamber',
-    displayName: 'Whitewall Gate Test Chamber',
+    name: 'Portal 2 2011 - Valve Aperture Test Chamber',
+    displayName: 'Portal 2 2011 - Valve Aperture Test Chamber',
     styleAnchors: [
-      'first-person portal-puzzle gameplay screenshots',
+      'Portal 2 2011 - Valve Aperture Test Chamber',
       'clean test chamber traversal puzzle',
       'Whitewall Gate Test Chamber',
     ],
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Portal clone, exact Aperture chamber copy, readable test signage, recognizable portal gun replica',
+      'a grey cube with a pink heart, orange and blue portal ovals, a hanging robotic AI with a yellow eye, a white handheld device with a black claw tip, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Portal clone, exact Aperture chamber copy, readable test signage, recognizable portal gun replica, text, readable labels, franchise likeness, real person likeness, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Original in-game screenshot look for first-person spatial puzzle captures: clean modular test rooms, linked gate surfaces, cubes or weighted props, light bridges, hazard pools, and readable traversal logic. Borrow the clinical puzzle readability of Portal-like games, but land as a different fictional test facility with different props, portal/gate visuals, UI icons, wall markings, and device design.',
+        'Valve Portal 2 (2011) look: first-person physics puzzle chambers, clean white modular panels, grey walls, robotic arms rearranging the room, laser emitters, light bridges and dry humor.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable first-person puzzle screenshot subject: keep clear object function, gate relationship, route affordance, hazard, scale, and next-action logic without copying source devices or room layouts.",
-      color_and_tone:
-        'Use a clean puzzle-lab palette: matte white panels, soft grey, orange/blue gate accents, hazard green, black seams, and cool fluorescent light. Keep value grouping crisp and readable.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as test subjects in plain white jumpsuits and long-fall boots, seen from first person. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Clinical white, panel grey, laser red and light-bridge blue.',
       lighting_and_shadow:
-        'Light the image through clinical overhead light, portal glow, laser beams, panel reflections, and deep behind-wall shadow. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Clean even fluorescent light with glowing beams, lit the way Portal 2 2011 lights its levels.',
       texture_and_material:
-        'Build surfaces from modular wall panels, glass, cube edges, gel splashes, metal rails, cables, and clean hard-surface test geometry. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Matte white panels, brushed metal and glass, with the in-engine surface finish of Portal 2 2011.',
       camera_and_composition:
-        'Compose with first-person puzzle camera, foreground tool edge or hands only if useful, linked gate surfaces, test prop, hazard, and one clear traversal solution. Avoid poster framing and exact chamber copies.',
-      atmosphere_and_mood:
-        'Carry an original whitewall test mood: clinical, witty, lonely, spatial, precise, and quietly dangerous.',
+        'First-person view in a test chamber, framed the way Portal 2 2011 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with dry clinical wit.',
       rendering_and_quality:
-        'Finish as coherent first-person puzzle screenshot style, not concept art: minimal HUD, reticle, gate cues, object highlights, and hazard indicators can appear abstractly. Maintain heavy-denoise clarity, crisp geometry, and no readable signage/logos.',
-      key_features:
-        'Portal 2 gameplay screenshots; first-person puzzle capture with clean test chambers, portal surfaces, laser paths, weighted cubes, and sterile objective readability; white panels, grey concrete, orange/blue portals, cyan laser lines, black mechanical gaps, and warning yellow; clinical overhead light, portal glow, laser beams, panel reflections, and deep behind-wall shadow; modular wall panels, glass, cube edges, gel splashes, metal rails, cables, and clean hard-surface test geometry; first-person portal-gun framing with puzzle affordances, destination sightlines, object relationships, and chamber logic visible; clinical, witty, spatial, experimental, and cleanly mechanical; HUD guidance: almost no HUD; portal reticle and tiny interaction cues are enough',
+        'Authentic Source engine puzzle screen, matching real Portal 2 2011 screenshots.',
+      key_features: 'Portal 2 test chamber; white panels; robotic arms; lasers',
       creative_brief:
-        "Whitewall Gate Test Chamber: in-game screenshot language informed by first-person spatial puzzle references, covering clean modular rooms, gate mechanics, traversal logic, object affordances, and minimal HUD. Avoid direct Portal cloning, exact chamber copies, readable signage, and recognizable device replicas. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Valve Portal 2 (2011) look: first-person physics puzzle chambers, clean white modular panels, grey walls, robotic arms rearranging the room, laser emitters, light bridges and dry humor. Carry it through Portal 2 test chamber, white panels, robotic arms, lasers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-037',
-    name: 'Mario 3D World Toy Platformer',
-    displayName: 'Mario 3D World Toy Platformer',
-    styleAnchors: ['Super Mario 3D World gameplay screenshots', 'Mario 3D World Toy Platformer'],
+    name: 'Super Mario 3D World 2013 - Nintendo EAD Toy Platformer',
+    displayName: 'Super Mario 3D World 2013 - Nintendo EAD Toy Platformer',
+    styleAnchors: [
+      'Super Mario 3D World 2013 - Nintendo EAD Toy Platformer',
+      'Mario 3D World Toy Platformer',
+    ],
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a mustached plumber in red and blue, a cat suit with a bell, a spiked turtle king, question-mark blocks, flagpoles and green pipes, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Super Mario 3D World gameplay: bright diorama platformer capture with toy-like geometry, rounded hazards, readable jumps, coins, and family-friendly but polished obstacle design. It never recreates an exact official level, character, logo or marketing art.',
+        'Nintendo EAD Tokyo Super Mario 3D World (2013) look: bright toy-box 3D platformer, candy-colored floating blocks, glossy plastic surfaces, clean shadows and cheerful diorama levels.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Super Mario 3D World-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Super Mario 3D World-informed palette: sky blue, grass green, mushroom red, coin gold, cloud white, and toy-plastic primaries. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as tiny round glossy toy-like figures with big eyes and chunky shoes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Candy red, sky blue, grass green and sunny yellow.',
       lighting_and_shadow:
-        'Light the image through soft studio daylight, crisp platform shadows, sparkle pickups, and gentle rim on round forms. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Bright soft daylight with clean drop shadows, lit the way Super Mario 3D World 2013 lights its levels.',
       texture_and_material:
-        'Build surfaces from rounded blocks, glossy pipes, soft grass, simple brick, plush-like enemies without exact character copying, and toy prop materials. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Glossy plastic toy surfaces, with the in-engine surface finish of Super Mario 3D World 2013.',
       camera_and_composition:
-        "Compose with fixed/following 3D platform camera with obstacle lanes, collectibles, depth-safe jumps, and clean foreground-to-goal readability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Super Mario 3D World-derived mood: playful, precise, buoyant, colorful, and polished; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Three-quarter overhead platformer camera, framed the way Super Mario 3D World 2013 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with bouncy cheerful play.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: score, timer, lives, coins, and power-up icons can appear if they feel like classic platformer UI. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Super Mario 3D World gameplay screenshots; bright diorama platformer capture with toy-like geometry, rounded hazards, readable jumps, coins, and family-friendly but polished obstacle design; sky blue, grass green, mushroom red, coin gold, cloud white, and toy-plastic primaries; soft studio daylight, crisp platform shadows, sparkle pickups, and gentle rim on round forms; rounded blocks, glossy pipes, soft grass, simple brick, plush-like enemies without exact character copying, and toy prop materials; fixed/following 3D platform camera with obstacle lanes, collectibles, depth-safe jumps, and clean foreground-to-goal readability; playful, precise, buoyant, colorful, and polished; HUD guidance: score, timer, lives, coins, and power-up icons can appear if they feel like classic platformer UI',
+        'Authentic Wii U toy platformer screen, matching real Super Mario 3D World 2013 screenshots.',
+      key_features: 'Mario 3D World toy blocks; glossy plastic; diorama levels',
       creative_brief:
-        "Mario 3D World Toy Platformer: in-game screenshot language informed by Super Mario 3D World, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Nintendo EAD Tokyo Super Mario 3D World (2013) look: bright toy-box 3D platformer, candy-colored floating blocks, glossy plastic surfaces, clean shadows and cheerful diorama levels. Carry it through Mario 3D World toy blocks, glossy plastic, diorama levels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-051',
-    name: 'Relic Bazaar Deck Trial',
-    displayName: 'Relic Bazaar Deck Trial',
+    name: 'Slay the Spire 2019 - Mega Crit Card Climb',
+    displayName: 'Slay the Spire 2019 - Mega Crit Card Climb',
     styleAnchors: [
-      'roguelike deckbuilder gameplay screenshots',
+      'Slay the Spire 2019 - Mega Crit Card Climb',
       '2D relic card battle layout',
       'Relic Bazaar Deck Trial',
     ],
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Slay the Spire clone, readable card text, stat numbers, exact relic bar UI',
+      'existing Slay the Spire heroes, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Slay the Spire clone, readable card text, stat numbers, exact relic bar UI, text, readable labels, franchise likeness, real person likeness, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Original in-game screenshot look for relic deckbuilder captures: 2D card-battle layout with hand silhouettes, enemy intent icons, relic pips, merchant/bazaar staging, and readable turn choices. Borrow the clean strategic readability of Slay the Spire-like games, but land as a different fictional relic deckbuilder with different creatures, card anatomy, UI icons, map props, and relic silhouettes.',
+        'Mega Crit Slay the Spire (2019) look: 2D roguelike deckbuilder with hand-drawn cartoon heroes and monsters, card hands at the bottom and glowing intent icons above enemies.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable relic deckbuilder screenshot subject: keep clear enemy/player/object function, turn decision, card/resource pressure, intent cue, and scale relationship without copying source characters or named IP elements.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; render every subject as flat hand-drawn cartoon heroes, monsters and illustrated cards. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Use a relic deckbuilder palette: parchment beige, sapphire UI blue, monster red, poison green, dull gold, cave purple, bone white, and smoky black. Keep value grouping legible at gameplay distance, with color accents behaving like turn cost, danger, resource, intent, pickup, or objective cues rather than decorative wash.',
+        'Candle gold, card parchment and dungeon teal, true to the Slay the Spire 2019 palette.',
       lighting_and_shadow:
-        'Light the image through card glow, campfire or bazaar warmth, simple enemy stage light, relic sparkle, and clean UI contrast. Lighting must clarify turn decision, active threat, focal subject, or event objective and avoid generic cinematic bloom that destroys board readability.',
+        'Flat painted light and glowing card effects, lit the way Slay the Spire 2019 lights its levels.',
       texture_and_material:
-        'Build surfaces from painted card silhouettes, relic icons, rough creature sprites, parchment panels, coin piles, bone-market props, and flat stage backdrops. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate cards, enemies, relics, hazards, and interactables.',
+        'Hand-drawn 2D art and card frames, with the in-engine surface finish of Slay the Spire 2019.',
       camera_and_composition:
-        'Compose with 2D card-battle layout: hand at bottom, enemies or event object centered, intent icons above, relic/resource pips, and one clear turn decision. All cards and UI markings must stay wordless and numberless.',
-      atmosphere_and_mood:
-        'Carry an original relic bazaar deckbuilder mood: strategic, readable, weird, crunchy, mercantile, and tabletop-adjacent.',
+        'Side-on card battle layout, framed the way Slay the Spire 2019 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with strategic climbing tension.',
       rendering_and_quality:
-        'Finish as coherent in-engine relic deckbuilder screenshot style, not concept art: cards, energy/resource pips, relic row, potions, map/merchant panels, and enemy intent icons can appear, but no readable card text, no stat numbers, no exact relic bar UI, and no fake logos. Maintain heavy-denoise clarity and crisp focal hierarchy.',
-      key_features:
-        'original relic deckbuilder gameplay screenshots; 2D card-battle layout with hand silhouettes, enemy intent icons, relic pips, merchant or bazaar staging, readable turn choices; parchment beige, sapphire blue, monster red, poison green, dull gold, cave purple; card glow, bazaar warmth, clean UI contrast; painted card silhouettes, relic icons, rough creature sprites, parchment panels, coin piles; hand at bottom, enemies or event object centered, intent icons above, relic/resource pips; HUD guidance: cards, pips, relic row, potions, and enemy intent icons only, wordless and numberless',
+        'Authentic deckbuilder battle screen, matching real Slay the Spire 2019 screenshots.',
+      key_features: 'Slay the Spire cards; intent icons; hand-drawn foes',
       creative_brief:
-        "Relic Bazaar Deck Trial: original in-game screenshot language for relic deckbuilders, covering a 2D card-battle camera, abstract card grammar, intent icons, resource pressure, bazaar and event staging, and readable board state. Avoid menus, logos, exact characters, exact levels, direct cloning of any card game, readable text and stat numbers. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Mega Crit Slay the Spire (2019) look: 2D roguelike deckbuilder with hand-drawn cartoon heroes and monsters, card hands at the bottom and glowing intent icons above enemies. Carry it through Slay the Spire cards, intent icons, hand-drawn foes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-058',
-    name: 'Fez Echo Cavern Puzzle',
-    displayName: 'Fez Echo Cavern Puzzle',
-    styleAnchors: ['Fez gameplay screenshots', 'Fez Echo Cavern Puzzle'],
+    name: 'Fez 2012 - Polytron Rotating Pixel World',
+    displayName: 'Fez 2012 - Polytron Rotating Pixel World',
+    styleAnchors: ['Fez 2012 - Polytron Rotating Pixel World', 'Fez Echo Cavern Puzzle'],
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a small white creature in a red fez, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Fez gameplay: pixel-art perspective-puzzle capture with rotating 2D/3D spaces, blocky caverns, glyph-like forms, and tiny character scale. It never recreates an exact official level, character, logo or marketing art.',
+        'Polytron Fez (2012) look: 2D pixel platformer in a 3D world that rotates in quarter turns, bright pastel voxels, secret glyphs and serene exploration.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Fez-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Fez-informed palette: pastel sky blue, cave purple, moss green, golden cube glow, black pixel outlines, and soft pink highlights. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as tiny pastel pixel sprites in a rotating voxel world. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Bright pastel greens, sky blue and warm stone.',
       lighting_and_shadow:
-        'Light the image through simple ambient glow, cube sparkle, cave opening light, and flat pixel shadow. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
-      texture_and_material:
-        'Build surfaces from chunky pixel blocks, mossy tiles, ladders, doors, mysterious glyph shapes without readable text, and clean sprite edges. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Soft pixel daylight or starry night, lit the way Fez 2012 lights its levels.',
+      texture_and_material: 'Crisp pixel voxels, with the in-engine surface finish of Fez 2012.',
       camera_and_composition:
-        "Compose with orthographic puzzle-platform frame with vertical shafts, rotatable landmarks, hidden paths, and one-screen spatial clarity. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Fez-derived mood: mysterious, gentle, clever, retro, and contemplative; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Flat side view of a rotating world, framed the way Fez 2012 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with serene curious puzzling.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: very minimal HUD; small collected-cube indicators or map hints can appear but the puzzle space should dominate. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Fez gameplay screenshots; pixel-art perspective-puzzle capture with rotating 2D/3D spaces, blocky caverns, glyph-like forms, and tiny character scale; pastel sky blue, cave purple, moss green, golden cube glow, black pixel outlines, and soft pink highlights; simple ambient glow, cube sparkle, cave opening light, and flat pixel shadow; chunky pixel blocks, mossy tiles, ladders, doors, mysterious glyph shapes without readable text, and clean sprite edges; orthographic puzzle-platform frame with vertical shafts, rotatable landmarks, hidden paths, and one-screen spatial clarity; mysterious, gentle, clever, retro, and contemplative; HUD guidance: very minimal HUD; small collected-cube indicators or map hints can appear but the puzzle space should dominate',
+        'Authentic pixel puzzle-platformer screen, matching real Fez 2012 screenshots.',
+      key_features: 'Fez rotating world; pastel pixels; glyphs',
       creative_brief:
-        "Fez Echo Cavern Puzzle: in-game screenshot language informed by Fez, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Polytron Fez (2012) look: 2D pixel platformer in a 3D world that rotates in quarter turns, bright pastel voxels, secret glyphs and serene exploration. Carry it through Fez rotating world, pastel pixels, glyphs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-072',
-    name: 'Dakar Dust Cathedral Rally',
-    displayName: 'Dakar Dust Cathedral Rally',
-    styleAnchors: ['Dakar Desert Rally gameplay screenshots', 'Dakar Dust Cathedral Rally'],
+    name: 'Dakar Desert Rally 2022 - Big Moon Dune Run',
+    displayName: 'Dakar Desert Rally 2022 - Big Moon Dune Run',
+    styleAnchors: ['Dakar Desert Rally 2022 - Big Moon Dune Run', 'Dakar Dust Cathedral Rally'],
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt:
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Dakar Desert Rally gameplay: off-road rally capture with desert tracks, vehicle suspension, dust walls, checkpoint navigation, and long-distance terrain reading. It never recreates an exact official level, character, logo or marketing art.',
+        'Big Moon Entertainment Dakar Desert Rally (2022) look: realistic off-road rally across vast dunes, rally trucks and bikes airborne, sand plumes and dawn haze.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Dakar Desert Rally-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Dakar Desert Rally-informed palette: sand tan, cobalt sky, white vehicle panels, black tires, red checkpoint marks, and sunlit dust gold. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render vehicles as dusty rally trucks and bikes flying over dunes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Dune gold, dawn pink and dust, true to the Dakar Desert Rally 2022 palette.',
       lighting_and_shadow:
-        'Light the image through harsh sun, dust haze, headlight glints, reflective bodywork, and low-angle rally shadows. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Low dawn light with sand haze, lit the way Dakar Desert Rally 2022 lights its levels.',
       texture_and_material:
-        'Build surfaces from gravel, sand ruts, tire smoke, vehicle decals without readable brands, rock outcrops, and windblown terrain. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Realistic sand spray and dirty paint, with the in-engine surface finish of Dakar Desert Rally 2022.',
       camera_and_composition:
-        "Compose with third-person chase or cockpit camera with roadbook logic, waypoint depth, rivals, and terrain hazard readability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Dakar Desert Rally-derived mood: endurance-focused, dusty, physical, competitive, and expansive; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Chase camera during jumps, framed the way Dakar Desert Rally 2022 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with brutal endurance thrill.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: rally HUD can include speed, waypoint arrow, damage/status, position, and route markers. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Dakar Desert Rally gameplay screenshots; off-road rally capture with desert tracks, vehicle suspension, dust walls, checkpoint navigation, and long-distance terrain reading; sand tan, cobalt sky, white vehicle panels, black tires, red checkpoint marks, and sunlit dust gold; harsh sun, dust haze, headlight glints, reflective bodywork, and low-angle rally shadows; gravel, sand ruts, tire smoke, vehicle decals without readable brands, rock outcrops, and windblown terrain; third-person chase or cockpit camera with roadbook logic, waypoint depth, rivals, and terrain hazard readability; endurance-focused, dusty, physical, competitive, and expansive; HUD guidance: rally HUD can include speed, waypoint arrow, damage/status, position, and route markers',
+        'Authentic off-road rally screen, matching real Dakar Desert Rally 2022 screenshots.',
+      key_features: 'Dakar rally dunes; sand plumes; trucks airborne',
       creative_brief:
-        "Dakar Dust Cathedral Rally: in-game screenshot language informed by Dakar Desert Rally, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Big Moon Entertainment Dakar Desert Rally (2022) look: realistic off-road rally across vast dunes, rally trucks and bikes airborne, sand plumes and dawn haze. Carry it through Dakar rally dunes, sand plumes, trucks airborne. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-074',
-    name: 'Candlebone Deck Table',
-    displayName: 'Candlebone Deck Table',
+    name: 'Inscryption 2021 - Daniel Mullins Cabin Cards',
+    displayName: 'Inscryption 2021 - Daniel Mullins Cabin Cards',
     styleAnchors: [
-      'analog occult deckbuilder gameplay screenshots',
+      'Inscryption 2021 - Daniel Mullins Cabin Cards',
       'low-fi candlelit card table',
       'Candlebone Deck Table',
     ],
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, readable card text, stat numbers, life point numbers, official trading-card UI, glossy esports card arena, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Inscryption clone',
+      'a looming dealer with glowing eyes and masks, squirrel cards, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, readable card text, stat numbers, life point numbers, official trading-card UI, glossy esports card arena, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Inscryption clone, text, readable labels, franchise likeness, real person likeness, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Original in-game screenshot look for analog occult deckbuilder captures: tactile horror tabletop play with candlelit surfaces, low-fi card lanes, physical counters, oppressive darkness, escape-room board logic, and hand-scale card decisions. Borrow the candlelit decision-state clarity of games like Inscryption, but land as a different fictional game with different props, card anatomy, symbols, board layout, and opponent staging.',
+        'Daniel Mullins Games Inscryption (2021) look: first-person card game in a dark wooden cabin, a looming dealer in shadow, carved creature cards, candles and grainy unsettling horror.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable candlebone deck-table state: the subject can become card tokens, table hazards, carved icons, small encounter figures, scale/counter pressure, or board affordances while keeping clear role silhouette and decision logic. Avoid turning every prompt into a fixed cabin story or copying named game characters.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; render every subject as carved woodcut creature cards and shadowy figures. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Use an analog occult deckbuilder palette: soot black, candle amber, aged paper, bone ivory, oxidized green, dried blood red, desaturated wood brown, and dirty brass. Keep the image dark but denoised and readable, with color accents behaving like cost, danger, sacrifice, route, or objective cues rather than glossy decoration.',
+        'Candle amber, dark wood and blood red, true to the Inscryption 2021 palette.',
       lighting_and_shadow:
-        'Light the image through candle pools, desk-lamp falloff, weak moon spill, glowing sigil pips, and hard tabletop shadows. Lighting must clarify the current card-table decision, board lanes, active threat, or puzzle object and avoid neon bloom, arena spotlights, or cinematic fantasy glare.',
+        'Single candle glow in darkness, lit the way Inscryption 2021 lights its levels.',
       texture_and_material:
-        'Build surfaces from worn card stock, scratched wood, wax, bone or teeth counters, hand-inked symbols, tarnished metal clips, dusty tabletop props, and low-fi in-engine materials. Materials should feel captured during play, not like a polished trading-card renderer or glossy esports board.',
+        'Grainy film, wood and old paper, with the in-engine surface finish of Inscryption 2021.',
       camera_and_composition:
-        'Compose with a low first-person tabletop view or slightly angled locked card-table camera: hand cards, lane grid, draw pile, scale/counter object, sacrifice/energy tokens, and one active decision. The frame should read as a plausible gameplay capture; UI should be diegetic and wordless, built from table objects, icons, dots, pips, and silhouettes only.',
-      atmosphere_and_mood:
-        'Original candlebone deck-table mood: intimate, predatory, occult, analog, claustrophobic and puzzle-horror; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'First-person view across the table, framed the way Inscryption 2021 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with eerie unsettling dread.',
       rendering_and_quality:
-        'Finish as a coherent in-engine gameplay screenshot style, not concept art: analog card-table HUD is central, but all cards and counters must remain wordless and numberless. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, low-fi material restraint, and no fake logos, glossy arena boards, readable card text, stat numbers, or random interface clutter.',
-      key_features:
-        'original analog occult deckbuilder gameplay screenshots; tactile horror tabletop capture with candlelit surfaces, low-fi card lanes, analog counters, oppressive darkness, escape-room board state, and hand-scale card decisions; soot black, candle amber, aged paper, bone ivory, oxidized green, dried blood red, desaturated wood brown, and dirty brass; candle pools, desk-lamp falloff, weak moon spill, glowing sigil pips, and hard tabletop shadows; worn card stock, scratched wood, wax, bone or teeth counters, hand-inked symbols, tarnished metal clips, dusty tabletop props, and low-fi in-engine materials; low first-person tabletop view or slightly angled locked card-table camera; intimate, predatory, occult, analog, claustrophobic, and puzzle-horror; HUD guidance: diegetic card-table HUD built from table objects, icons, dots, pips, silhouettes, counters, and physical affordances only',
+        'Authentic horror card game screen, matching real Inscryption 2021 screenshots.',
+      key_features: 'Inscryption cabin; looming dealer; creature cards',
       creative_brief:
-        "Candlebone Deck Table: in-game screenshot language informed by analog horror deckbuilder references, covering tactile tabletop camera, physical card grammar, candlelit material language, decision-state readability, and low-fi in-engine finish. Coherent diegetic HUD is allowed when it belongs on the table; avoid menus, logos, exact cards, exact characters, glossy digital arena boards, readable text, stat numbers, direct Inscryption cloning, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Daniel Mullins Games Inscryption (2021) look: first-person card game in a dark wooden cabin, a looming dealer in shadow, carved creature cards, candles and grainy unsettling horror. Carry it through Inscryption cabin, looming dealer, creature cards. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-077',
-    name: 'Oddworld Quarry Escape',
-    displayName: 'Oddworld Quarry Escape',
-    styleAnchors: ["Oddworld: New 'n' Tasty gameplay screenshots", 'Oddworld Quarry Escape'],
+    name: "Oddworld Abe's Oddysee 1997 - Oddworld Inhabitants Pre-Rendered",
+    displayName: "Oddworld Abe's Oddysee 1997 - Oddworld Inhabitants Pre-Rendered",
+    styleAnchors: [
+      "Oddworld Abe's Oddysee 1997 - Oddworld Inhabitants Pre-Rendered",
+      'Oddworld Quarry Escape',
+    ],
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a thin green alien with sewn lips, existing Oddworld species, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        "In-game screenshot look informed by Oddworld: New 'n' Tasty gameplay: cinematic side-view puzzle-platform capture with industrial quarries, alien worker silhouettes, foreground machinery, and escape-route timing. It never recreates an exact official level, character, logo or marketing art.",
+        "Oddworld Inhabitants Abe's Oddysee (1997) look: side-view cinematic platformer with lush pre-rendered backgrounds, grotesque industrial factories, alien wilderness and dark satire.",
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Oddworld: New 'n' Tasty-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as small pre-rendered alien workers with odd anatomy. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        "Use a Oddworld: New 'n' Tasty-informed palette: rust orange, toxic green, black machinery, dusty tan, blue industrial light, and sickly yellow signage shapes. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.",
+        "Industrial rust, smog orange and alien green, true to the Oddworld Abe's Oddysee 1997 palette.",
       lighting_and_shadow:
-        'Light the image through factory lamps, furnace glow, searchlights, toxic pools, and deep machine shadows. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        "Pre-rendered moody factory light, lit the way Oddworld Abe's Oddysee 1997 lights its levels.",
       texture_and_material:
-        'Build surfaces from metal catwalks, rock quarry walls, pipes, conveyor belts, smoke, alien skin shapes without exact character copy, and grimy machinery. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        "Pre-rendered CGI backgrounds, with the in-engine surface finish of Oddworld Abe's Oddysee 1997.",
       camera_and_composition:
-        "Compose with side-on cinematic platform framing with stealth timing, levers, patrols, vertical shafts, and escape path readability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        "Oddworld: New 'n' Tasty-derived mood: oppressed, strange, industrial, comic-dark, and tense; it follows the tone of the requested scene without forcing a fixed mission or story.",
+        "Side-view cinematic screen, framed the way Oddworld Abe's Oddysee 1997 frames its gameplay screens.",
+      atmosphere_and_mood: 'Keep the requested mood with grim satirical escape.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: almost no HUD; small interaction or possession cues can appear but the scene should feel cinematic-playable. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        "Oddworld: New 'n' Tasty gameplay screenshots; cinematic side-view puzzle-platform capture with industrial quarries, alien worker silhouettes, foreground machinery, and escape-route timing; rust orange, toxic green, black machinery, dusty tan, blue industrial light, and sickly yellow signage shapes; factory lamps, furnace glow, searchlights, toxic pools, and deep machine shadows; metal catwalks, rock quarry walls, pipes, conveyor belts, smoke, alien skin shapes without exact character copy, and grimy machinery; side-on cinematic platform framing with stealth timing, levers, patrols, vertical shafts, and escape path readability; oppressed, strange, industrial, comic-dark, and tense; HUD guidance: almost no HUD; small interaction or possession cues can appear but the scene should feel cinematic-playable",
+        "Authentic PS1 pre-rendered platformer screen, matching real Oddworld Abe's Oddysee 1997 screenshots.",
+      key_features: 'Oddworld pre-rendered; factory escape; satire',
       creative_brief:
-        "Oddworld Quarry Escape: in-game screenshot language informed by Oddworld: New 'n' Tasty, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Oddworld Inhabitants Abe's Oddysee (1997) look: side-view cinematic platformer with lush pre-rendered backgrounds, grotesque industrial factories, alien wilderness and dark satire. Carry it through Oddworld pre-rendered, factory escape, satire. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-080',
-    name: 'Hollow Keep Lock-On',
-    displayName: 'Hollow Keep Lock-On',
+    name: "Demon's Souls 2009 - FromSoftware Boletarian Keep",
+    displayName: "Demon's Souls 2009 - FromSoftware Boletarian Keep",
     styleAnchors: [
-      'classic old-gen soulslike gameplay screenshots',
+      "Demon's Souls 2009 - FromSoftware Boletarian Keep",
       'hostile ruined keep traversal-combat',
       'Hollow Keep Lock-On',
     ],
     category: '8. Puzzle Chambers & Adventure Setpieces',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, Elden Ring eclipse throne imagery, centered boss postcard, modern fantasy key art, black-gold epic polish, Dark Souls level clone',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, Elden Ring eclipse throne imagery, centered boss postcard, modern fantasy key art, black-gold epic polish, Dark Souls level clone, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Original in-game screenshot look for classic soulslike captures: third-person old-gen action-RPG play with rough stone, narrow combat routes, fog-gate pressure, stamina spacing, hostile ruin geometry, understated HUD, and readable dungeon traversal. Borrow the lock-on camera discipline and material restraint associated with Dark Souls-era games, but land as a different fictional ruined keep with different enemies, props, architecture, UI icons, and route silhouettes.',
+        "FromSoftware Demon's Souls (2009) look: grim third-person action in fog-choked ruined castles, dull grey-green palettes, fog gates, towering armored demons and lonely nexus light.",
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable hollow-keep action-RPG screenshot subject: keep clear role silhouette, enemy/player/object function, hitbox-like readability, trap or route affordance, and scale relationship without copying source characters or named IP elements.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as lone weathered warriors in dented plate and mail. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Use a classic soulslike ruin palette: ash grey, dead green, damp stone blue, rust brown, dull steel, faded leather, torch amber, and sickly fog white. Keep value grouping legible at gameplay distance and avoid black-gold epic polish, neon fantasy accents, or clean heroic color scripts.',
+        "Grey-green fog, cold stone and rust, true to the Demon's Souls 2009 palette.",
       lighting_and_shadow:
-        'Light the image through torch pools, overcast ruin light, fog-gate glow, weapon sparks, hollow eyes, and shallow dungeon occlusion. Lighting must clarify the playable route, threat, trap, ladder, doorway, or stamina-combat space and avoid eclipse backlight, cathedral god rays, and cinematic bloom.',
+        "Dull fog light with soul glow, lit the way Demon's Souls 2009 lights its levels.",
       texture_and_material:
-        'Build surfaces from rough stone blocks, moss, wet stairs, cracked plaster, tarnished chain, old cloth, dull shields, rusty blades, simple wood, and old-gen asset limits. Materials should feel like in-engine game assets captured during play, not modern ultra-detailed PBR concept art.',
+        "Worn stone and dented armor, with the in-engine surface finish of Demon's Souls 2009.",
       camera_and_composition:
-        'Compose with third-person lock-on or traversal-combat framing: player low in frame, enemy or trap ahead, narrow route, ledge/drop/fog gate/lever/ladder as affordance, readable dodge lane, and modest HUD. The frame should feel played, not staged as a boss postcard or centered throne reveal.',
-      atmosphere_and_mood:
-        'Original hollow-keep soulslike mood: lonely, punishing, archaic, damp, hostile and quietly tragic; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        "Third-person lock-on duel view, framed the way Demon's Souls 2009 frames its gameplay screens.",
+      atmosphere_and_mood: 'Keep the requested mood with grim oppressive dread.',
       rendering_and_quality:
-        'Finish as a coherent in-engine gameplay screenshot style, not concept art: small classic souls HUD can include health/stamina/focus bars, item slot shapes, lock-on cue, and boss bar only when useful. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, old-gen restraint, and no fake logos, modern fantasy key-art polish, or random interface clutter.',
-      key_features:
-        'original classic soulslike gameplay screenshots; third-person old-gen action-RPG capture with rough stone, narrow combat routes, fog-gate pressure, stamina spacing, hostile ruin geometry, understated HUD, and dungeon readability; ash grey, dead green, damp stone blue, rust brown, dull steel, faded leather, torch amber, and sickly fog white; torch pools, overcast ruin light, fog-gate glow, weapon sparks, hollow eyes, and shallow dungeon occlusion; rough stone blocks, moss, wet stairs, cracked plaster, tarnished chain, old cloth, dull shields, rusty blades, simple wood, and old-gen asset limits; third-person lock-on or traversal-combat framing with route affordance and readable dodge lane; lonely, punishing, archaic, damp, hostile, and quietly tragic; HUD guidance: small classic soulslike HUD only when useful',
+        "Authentic PS3 dark fantasy screen, matching real Demon's Souls 2009 screenshots.",
+      key_features: "Demon's Souls fog gates; ruined keep; grey-green",
       creative_brief:
-        "Hollow Keep Lock-On: in-game screenshot language informed by classic soulslike capture references, covering third-person lock-on camera, old-gen material restraint, narrow route readability, fog-gate/trap affordances, stamina-combat spacing, and sparse HUD grammar. Avoid menus, logos, exact characters, exact levels, Dark Souls level cloning, Elden Ring-style eclipse throne imagery, modern cinematic key art, and promotional composition. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "FromSoftware Demon's Souls (2009) look: grim third-person action in fog-choked ruined castles, dull grey-green palettes, fog gates, towering armored demons and lonely nexus light. Carry it through Demon's Souls fog gates, ruined keep, grey-green. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-169',
-    name: 'Sliding-Block Temple Puzzle Capture',
-    displayName: 'Sliding-Block Temple Puzzle Capture',
+    name: 'Lara Croft GO 2015 - Square Enix Montreal Diorama Puzzles',
+    displayName: 'Lara Croft GO 2015 - Square Enix Montreal Diorama Puzzles',
     styleAnchors: [
-      'Sliding-Block Temple Puzzle Capture',
+      'Lara Croft GO 2015 - Square Enix Montreal Diorama Puzzles',
       'sliding block puzzle screenshot',
       'stone blocks',
     ],
     category: '8. Puzzle Chambers & Adventure Setpieces',
     domain: 'sliding block puzzle screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Sliding-block temple puzzle capture: an original top-down puzzle screenshot of heavy stone blocks pushed across a temple floor grid onto glowing pressure plates.',
+        'Square Enix Montreal Lara Croft GO (2015) look: turn-based puzzle dioramas in stylized low-poly ruins, node paths, pushable blocks, glowing plates and soft color gradients.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject pushing heavy stone blocks on a temple grid.',
-      color_and_tone: 'Sandstone ochre, moss green and glowing plate blue.',
-      lighting_and_shadow: 'Torchlight and plate glow, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as small stylized low-poly explorers on node paths. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Soft jade, sand and dusk gradients, true to the Lara Croft GO 2015 palette.',
+      lighting_and_shadow:
+        'Soft gradient ambient light, lit the way Lara Croft GO 2015 lights its levels.',
       texture_and_material:
-        'Carved stone, dust and grid lines, kept consistent across the whole image.',
+        'Clean low-poly shapes, with the in-engine surface finish of Lara Croft GO 2015.',
       camera_and_composition:
-        'Top-down view of the puzzle floor, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with patient cleverness, kept consistent across the whole image.',
+        'High diorama view, framed the way Lara Croft GO 2015 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with calm clever exploration.',
       rendering_and_quality:
-        'Clean readable puzzle layout, kept consistent across the whole image.',
+        'Authentic diorama puzzle screen, matching real Lara Croft GO 2015 screenshots.',
       creative_brief:
-        "Sliding-block temple puzzle capture: an original top-down puzzle screenshot of heavy stone blocks pushed across a temple floor grid onto glowing pressure plates. Carry it through stone blocks, pressure plates, temple grid, top-down. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'stone blocks; pressure plates; temple grid; top-down',
+        "Square Enix Montreal Lara Croft GO (2015) look: turn-based puzzle dioramas in stylized low-poly ruins, node paths, pushable blocks, glowing plates and soft color gradients. Carry it through Lara Croft GO dioramas, nodes, blocks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Lara Croft GO dioramas; nodes; blocks',
     },
     ui: {
       previewStatus: 'pending',
@@ -367,37 +349,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-170',
-    name: 'Hand-Drawn Adventure Room Capture',
-    displayName: 'Hand-Drawn Adventure Room Capture',
+    name: 'Simon the Sorcerer 1993 - Adventure Soft Painted Adventure',
+    displayName: 'Simon the Sorcerer 1993 - Adventure Soft Painted Adventure',
     styleAnchors: [
-      'Hand-Drawn Adventure Room Capture',
+      'Simon the Sorcerer 1993 - Adventure Soft Painted Adventure',
       'point-and-click hand-drawn room screenshot',
       'hand-drawn room',
     ],
     category: '8. Puzzle Chambers & Adventure Setpieces',
     domain: 'point-and-click hand-drawn room screenshot',
     negativePrompt:
-      'cursor or verbs, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a boy wizard in a purple robe and hat, cursor or verbs, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Hand-drawn adventure room capture: an original point-and-click adventure screenshot of a lovingly drawn cluttered room full of curious objects and a small hero.',
+        'Adventure Soft Simon the Sorcerer (1993) look: VGA point-and-click adventure with lush painted backgrounds, cluttered wizard rooms, cheeky cartoon characters and verb inventory.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; place the subject in a hand-drawn room full of curious clickable objects.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as cheeky cartoon adventure characters in pointed hats and robes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Warm storybook colors with soft shading, kept consistent across the whole image.',
+        'Rich VGA purples, greens and warm browns, true to the Simon the Sorcerer 1993 palette.',
       lighting_and_shadow:
-        'Soft painted light from a window, kept consistent across the whole image.',
+        'Warm candle and window light, lit the way Simon the Sorcerer 1993 lights its levels.',
       texture_and_material:
-        'Hand-drawn lines, painted fills and clutter, kept consistent across the whole image.',
+        'Painted VGA pixel art, with the in-engine surface finish of Simon the Sorcerer 1993.',
       camera_and_composition:
-        'Side-on stage view of a single room, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with witty curiosity, kept consistent across the whole image.',
+        'Side-view adventure room, framed the way Simon the Sorcerer 1993 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with cheeky magical mischief.',
       rendering_and_quality:
-        'Clean capture with no cursor or text, kept consistent across the whole image.',
+        'Authentic VGA adventure screen, matching real Simon the Sorcerer 1993 screenshots.',
       creative_brief:
-        "Hand-drawn adventure room capture: an original point-and-click adventure screenshot of a lovingly drawn cluttered room full of curious objects and a small hero. Carry it through hand-drawn room, curious objects, small hero, stage view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'hand-drawn room; curious objects; small hero; stage view',
+        "Adventure Soft Simon the Sorcerer (1993) look: VGA point-and-click adventure with lush painted backgrounds, cluttered wizard rooms, cheeky cartoon characters and verb inventory. Carry it through Simon the Sorcerer painted VGA, wizard rooms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Simon the Sorcerer painted VGA; wizard rooms',
     },
     ui: {
       previewStatus: 'pending',
@@ -405,35 +386,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-171',
-    name: 'Tilt Maze Rolling-Ball Capture',
-    displayName: 'Tilt Maze Rolling-Ball Capture',
+    name: 'Super Monkey Ball 2001 - Amusement Vision Tilt Stage',
+    displayName: 'Super Monkey Ball 2001 - Amusement Vision Tilt Stage',
     styleAnchors: [
-      'Tilt Maze Rolling-Ball Capture',
+      'Super Monkey Ball 2001 - Amusement Vision Tilt Stage',
       'tilting maze ball game screenshot',
       'tilting maze',
     ],
     category: '8. Puzzle Chambers & Adventure Setpieces',
     domain: 'tilting maze ball game screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a monkey in a ball, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Tilt maze rolling-ball capture: an original screenshot of a glossy ball rolling through a tilting maze board suspended in space, rails, holes and ramps.',
+        'Amusement Vision Super Monkey Ball (2001) look: bright tilting stages floating in the sky or space, a character sealed in a clear ball, bananas and goal gates.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject as a ball or rider inside a tilting maze board.',
-      color_and_tone: 'Glossy candy colors on a dark sky, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as small figures sealed inside clear rolling balls. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        'Bright checker colors and starry skies, true to the Super Monkey Ball 2001 palette.',
       lighting_and_shadow:
-        'Bright reflections on the ball and rails, kept consistent across the whole image.',
-      texture_and_material: 'Glossy ball, wooden or plastic board and rails.',
+        'Bright arcade light, lit the way Super Monkey Ball 2001 lights its levels.',
+      texture_and_material:
+        'Glossy clean surfaces, with the in-engine surface finish of Super Monkey Ball 2001.',
       camera_and_composition:
-        'Angled view of the tilted board, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with delicate balance, kept consistent across the whole image.',
+        'Behind-the-ball tilt view, framed the way Super Monkey Ball 2001 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with tense playful balance.',
       rendering_and_quality:
-        'Clean capture with no timer text, kept consistent across the whole image.',
+        'Authentic arcade tilt-maze screen, matching real Super Monkey Ball 2001 screenshots.',
       creative_brief:
-        "Tilt maze rolling-ball capture: an original screenshot of a glossy ball rolling through a tilting maze board suspended in space, rails, holes and ramps. Carry it through tilting maze, glossy ball, floating board, holes and ramps. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'tilting maze; glossy ball; floating board; holes and ramps',
+        "Amusement Vision Super Monkey Ball (2001) look: bright tilting stages floating in the sky or space, a character sealed in a clear ball, bananas and goal gates. Carry it through Monkey Ball tilt stages, ball, floating mazes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Monkey Ball tilt stages; ball; floating mazes',
     },
     ui: {
       previewStatus: 'pending',
@@ -441,32 +423,34 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-172',
-    name: 'Clockwork Tower Puzzle Capture',
-    displayName: 'Clockwork Tower Puzzle Capture',
-    styleAnchors: ['Clockwork Tower Puzzle Capture', 'gear puzzle tower screenshot', 'giant gears'],
+    name: 'Machinarium 2009 - Amanita Hand-Drawn Robots',
+    displayName: 'Machinarium 2009 - Amanita Hand-Drawn Robots',
+    styleAnchors: [
+      'Machinarium 2009 - Amanita Hand-Drawn Robots',
+      'gear puzzle tower screenshot',
+      'giant gears',
+    ],
     category: '8. Puzzle Chambers & Adventure Setpieces',
     domain: 'gear puzzle tower screenshot',
     negativePrompt:
-      'readable clock numerals, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a small robot with a stretching body and bowler hat, readable clock numerals, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Clockwork tower puzzle capture: an original screenshot inside a giant clock tower where the player repositions gears and pendulums to open the way up.',
+        'Amanita Design Machinarium (2009) look: hand-drawn rusty robot city, whimsical mechanical characters, sepia greens and point-and-click puzzles.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; place the subject among giant gears and pendulums inside a clock tower.',
-      color_and_tone: 'Brass, copper and warm dusty light, kept consistent across the whole image.',
-      lighting_and_shadow:
-        'Light through a clock face window, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as whimsical hand-drawn rusty robots. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Sepia green, rust and warm grey, true to the Machinarium 2009 palette.',
+      lighting_and_shadow: 'Soft hazy light, lit the way Machinarium 2009 lights its levels.',
       texture_and_material:
-        'Gears, chains, wooden beams and dust, kept consistent across the whole image.',
+        'Hand-drawn pencil and watercolor, with the in-engine surface finish of Machinarium 2009.',
       camera_and_composition:
-        'Vertical view up the tower interior, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with ticking ingenuity, kept consistent across the whole image.',
+        'Side-view scene, framed the way Machinarium 2009 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with wistful mechanical whimsy.',
       rendering_and_quality:
-        'Clean capture with no readable numerals, kept consistent across the whole image.',
+        'Authentic hand-drawn adventure screen, matching real Machinarium 2009 screenshots.',
       creative_brief:
-        "Clockwork tower puzzle capture: an original screenshot inside a giant clock tower where the player repositions gears and pendulums to open the way up. Carry it through giant gears, pendulums, clock face window, vertical tower. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'giant gears; pendulums; clock face window; vertical tower',
+        "Amanita Design Machinarium (2009) look: hand-drawn rusty robot city, whimsical mechanical characters, sepia greens and point-and-click puzzles. Carry it through Machinarium rusty robots, hand-drawn, sepia. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Machinarium rusty robots; hand-drawn; sepia',
     },
     ui: {
       previewStatus: 'pending',
@@ -474,37 +458,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-173',
-    name: 'Rotating Puzzle-Box Diorama Capture',
-    displayName: 'Rotating Puzzle-Box Diorama Capture',
+    name: 'Monument Valley 2014 - ustwo Impossible Geometry',
+    displayName: 'Monument Valley 2014 - ustwo Impossible Geometry',
     styleAnchors: [
-      'Rotating Puzzle-Box Diorama Capture',
+      'Monument Valley 2014 - ustwo Impossible Geometry',
       'isometric puzzle-box diorama screenshot',
       'puzzle box',
     ],
     category: '8. Puzzle Chambers & Adventure Setpieces',
     domain: 'isometric puzzle-box diorama screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a small princess in a white cone hat, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Rotating puzzle-box diorama capture: an original screenshot of a small isometric diorama world on a rotating box, secret panels, tiny rooms and hidden mechanisms.',
+        'ustwo games Monument Valley (2014) look: isometric impossible architecture that rotates, pastel minimalist palettes, tiny figures and Escher-like paths.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject tiny inside a rotating diorama puzzle box.',
-      color_and_tone:
-        'Warm wood tones with soft pastel accents, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as tiny minimalist figures on impossible paths. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Pastel coral, mint and lilac, true to the Monument Valley 2014 palette.',
       lighting_and_shadow:
-        'Soft studio light on a floating diorama, kept consistent across the whole image.',
+        'Soft flat gradient light, lit the way Monument Valley 2014 lights its levels.',
       texture_and_material:
-        'Wood, brass hinges and miniature details, kept consistent across the whole image.',
+        'Clean flat shapes, with the in-engine surface finish of Monument Valley 2014.',
       camera_and_composition:
-        'Isometric view of a floating box diorama, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with tactile secrecy, kept consistent across the whole image.',
+        'Isometric diorama view, framed the way Monument Valley 2014 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with serene puzzling wonder.',
       rendering_and_quality:
-        'Clean miniature capture with no UI, kept consistent across the whole image.',
+        'Authentic isometric puzzle screen, matching real Monument Valley 2014 screenshots.',
       creative_brief:
-        "Rotating puzzle-box diorama capture: an original screenshot of a small isometric diorama world on a rotating box, secret panels, tiny rooms and hidden mechanisms. Carry it through puzzle box, isometric diorama, secret panels, tiny rooms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'puzzle box; isometric diorama; secret panels; tiny rooms',
+        "ustwo games Monument Valley (2014) look: isometric impossible architecture that rotates, pastel minimalist palettes, tiny figures and Escher-like paths. Carry it through Monument Valley impossible geometry, pastel, isometric. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Monument Valley impossible geometry; pastel; isometric',
     },
     ui: {
       previewStatus: 'pending',
@@ -512,36 +494,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-174',
-    name: 'First-Person Escape Room Capture',
-    displayName: 'First-Person Escape Room Capture',
+    name: 'The Room 2012 - Fireproof Puzzle Box',
+    displayName: 'The Room 2012 - Fireproof Puzzle Box',
     styleAnchors: [
-      'First-Person Escape Room Capture',
+      'The Room 2012 - Fireproof Puzzle Box',
       'escape room puzzle game screenshot',
       'locked room',
     ],
     category: '8. Puzzle Chambers & Adventure Setpieces',
     domain: 'escape room puzzle game screenshot',
     negativePrompt:
-      'readable clue text, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable clue text, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'First-person escape room capture: an original first-person screenshot of a locked room full of clues, combination locks, hidden compartments and ticking dread.',
+        'Fireproof Games The Room (2012) look: first-person close-up puzzle boxes of dark wood and brass, hidden drawers, eyepiece reveals and occult glow.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject in a locked puzzle room full of clues and locks.',
-      color_and_tone: 'Warm lamp light with dark corners, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render every subject as intricate mechanical boxes and devices seen up close. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Dark wood, brass and occult blue, true to the The Room 2012 palette.',
       lighting_and_shadow:
-        'Desk lamp pools and shadowed corners, kept consistent across the whole image.',
+        'Single warm lamp with glow, lit the way The Room 2012 lights its levels.',
       texture_and_material:
-        'Locks, wooden drawers, papers without text, kept consistent across the whole image.',
+        'Polished wood, brass and leather, with the in-engine surface finish of The Room 2012.',
       camera_and_composition:
-        'First-person over a desk of clues, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with ticking urgency, kept consistent across the whole image.',
+        'First-person close-up view, framed the way The Room 2012 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with curious occult tension.',
       rendering_and_quality:
-        'Clean capture with no readable clues, kept consistent across the whole image.',
+        'Authentic mobile puzzle screen, matching real The Room 2012 screenshots.',
       creative_brief:
-        "First-person escape room capture: an original first-person screenshot of a locked room full of clues, combination locks, hidden compartments and ticking dread. Carry it through locked room, clues, combination locks, first-person. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'locked room; clues; combination locks; first-person',
+        "Fireproof Games The Room (2012) look: first-person close-up puzzle boxes of dark wood and brass, hidden drawers, eyepiece reveals and occult glow. Carry it through The Room puzzle box, brass, hidden drawers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'The Room puzzle box; brass; hidden drawers',
     },
     ui: {
       previewStatus: 'pending',
@@ -549,36 +530,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-175',
-    name: 'Minecart Chase Setpiece Capture',
-    displayName: 'Minecart Chase Setpiece Capture',
+    name: 'Rayman Legends 2013 - Ubisoft Montpellier UbiArt',
+    displayName: 'Rayman Legends 2013 - Ubisoft Montpellier UbiArt',
     styleAnchors: [
-      'Minecart Chase Setpiece Capture',
+      'Rayman Legends 2013 - Ubisoft Montpellier UbiArt',
       'minecart ride chase screenshot',
       'runaway minecart',
     ],
     category: '8. Puzzle Chambers & Adventure Setpieces',
     domain: 'minecart ride chase screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a limbless hero with floating hands, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Minecart chase setpiece capture: an original screenshot of a runaway minecart racing through a mine on rickety rails, sparks, drops and pursuing danger.',
+        'Ubisoft Montpellier Rayman Legends (2013) look: UbiArt hand-painted 2D platforming, lush storybook worlds, rubbery cartoon characters and speedy set-piece chases.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject in a runaway minecart on rickety mine rails.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as rubbery hand-painted cartoon characters. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Dark rock, lantern amber and crystal glints, kept consistent across the whole image.',
-      lighting_and_shadow:
-        'Sparks from the rails and lantern light, kept consistent across the whole image.',
+        'Lush storybook greens and warm golds, true to the Rayman Legends 2013 palette.',
+      lighting_and_shadow: 'Painterly glow, lit the way Rayman Legends 2013 lights its levels.',
       texture_and_material:
-        'Rickety wood, rusted rails and rock, kept consistent across the whole image.',
+        'Hand-painted 2D art, with the in-engine surface finish of Rayman Legends 2013.',
       camera_and_composition:
-        'Low chase angle behind the cart, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with breakneck adventure, kept consistent across the whole image.',
-      rendering_and_quality: 'Clean capture with no HUD, kept consistent across the whole image.',
+        'Side-scrolling chase view, framed the way Rayman Legends 2013 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with zany breathless chase.',
+      rendering_and_quality:
+        'Authentic hand-painted platformer screen, matching real Rayman Legends 2013 screenshots.',
       creative_brief:
-        "Minecart chase setpiece capture: an original screenshot of a runaway minecart racing through a mine on rickety rails, sparks, drops and pursuing danger. Carry it through runaway minecart, rickety rails, sparks, mine tunnels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'runaway minecart; rickety rails; sparks; mine tunnels',
+        "Ubisoft Montpellier Rayman Legends (2013) look: UbiArt hand-painted 2D platforming, lush storybook worlds, rubbery cartoon characters and speedy set-piece chases. Carry it through Rayman UbiArt, hand-painted chase, storybook. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Rayman UbiArt; hand-painted chase; storybook',
     },
     ui: {
       previewStatus: 'pending',
@@ -586,37 +566,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-176',
-    name: 'Collapsing Bridge Setpiece Capture',
-    displayName: 'Collapsing Bridge Setpiece Capture',
+    name: 'Indiana Jones Great Circle 2024 - MachineGames Pulp Adventure',
+    displayName: 'Indiana Jones Great Circle 2024 - MachineGames Pulp Adventure',
     styleAnchors: [
-      'Collapsing Bridge Setpiece Capture',
+      'Indiana Jones Great Circle 2024 - MachineGames Pulp Adventure',
       'bridge collapse action screenshot',
       'collapsing bridge',
     ],
     category: '8. Puzzle Chambers & Adventure Setpieces',
     domain: 'bridge collapse action screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a fedora-wearing archaeologist with a whip, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Collapsing bridge setpiece capture: an original cinematic screenshot of a hero sprinting across a bridge crumbling into a chasm, planks falling and dust rising.',
+        'MachineGames Indiana Jones and the Great Circle (2024) look: pulp 1930s adventure, jungle chasms, rope bridges, whips and ruins in rich cinematic light.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject racing across a bridge as it collapses behind them.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as 1930s explorers in khaki and leather. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Dusty ochres, deep chasm shadows and sky, kept consistent across the whole image.',
+        'Jungle green, khaki and sunlit gold, true to the Indiana Jones Great Circle 2024 palette.',
       lighting_and_shadow:
-        'Dramatic light with falling debris shadows, kept consistent across the whole image.',
+        'Cinematic dappled jungle light, lit the way Indiana Jones Great Circle 2024 lights its levels.',
       texture_and_material:
-        'Splintering wood, rope and falling stone, kept consistent across the whole image.',
+        'Realistic rope, wood and stone, with the in-engine surface finish of Indiana Jones Great Circle 2024.',
       camera_and_composition:
-        'Low angle facing the running hero, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with heart-pounding urgency, kept consistent across the whole image.',
+        'First-person action view, framed the way Indiana Jones Great Circle 2024 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with pulpy daring thrill.',
       rendering_and_quality:
-        'Clean cinematic capture with no HUD, kept consistent across the whole image.',
+        'Authentic modern adventure screen, matching real Indiana Jones Great Circle 2024 screenshots.',
       creative_brief:
-        "Collapsing bridge setpiece capture: an original cinematic screenshot of a hero sprinting across a bridge crumbling into a chasm, planks falling and dust rising. Carry it through collapsing bridge, chasm, falling planks, sprinting hero. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'collapsing bridge; chasm; falling planks; sprinting hero',
+        "MachineGames Indiana Jones and the Great Circle (2024) look: pulp 1930s adventure, jungle chasms, rope bridges, whips and ruins in rich cinematic light. Carry it through Great Circle pulp, rope bridges, ruins. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Great Circle pulp; rope bridges; ruins',
     },
     ui: {
       previewStatus: 'pending',
@@ -624,36 +603,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-177',
-    name: 'Treasure Island Dig Capture',
-    displayName: 'Treasure Island Dig Capture',
+    name: 'Return to Monkey Island 2022 - Terrible Toybox Paper Cutout',
+    displayName: 'Return to Monkey Island 2022 - Terrible Toybox Paper Cutout',
     styleAnchors: [
-      'Treasure Island Dig Capture',
+      'Return to Monkey Island 2022 - Terrible Toybox Paper Cutout',
       'pirate treasure digging screenshot',
       'tropical island',
     ],
     category: '8. Puzzle Chambers & Adventure Setpieces',
     domain: 'pirate treasure digging screenshot',
     negativePrompt:
-      'readable map labels, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a blond wannabe pirate, a ghost pirate captain, readable map labels, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Treasure island dig capture: an original third-person screenshot of digging on a tropical island at the spot marked on a map, palm trees, shovels and a glinting chest.',
+        'Terrible Toybox Return to Monkey Island (2022) look: paper-cutout storybook art with angular shapes, flat textures, pirate islands and comic adventure staging.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject digging for treasure on a tropical island.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as angular paper-cutout cartoon pirates. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Turquoise sea, white sand and palm green, kept consistent across the whole image.',
-      lighting_and_shadow: 'Bright tropical sun, kept consistent across the whole image.',
+        'Tropical teal, sand and sunset orange, true to the Return to Monkey Island 2022 palette.',
+      lighting_and_shadow:
+        'Flat storybook light, lit the way Return to Monkey Island 2022 lights its levels.',
       texture_and_material:
-        'Sand, wood, old maps and metal chests, kept consistent across the whole image.',
+        'Paper-cutout flat textures, with the in-engine surface finish of Return to Monkey Island 2022.',
       camera_and_composition:
-        'Third-person view over the dig site, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with adventurous greed, kept consistent across the whole image.',
+        'Side-view adventure scene, framed the way Return to Monkey Island 2022 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with wry piratical comedy.',
       rendering_and_quality:
-        'Clean capture with no readable map labels, kept consistent across the whole image.',
+        'Authentic storybook adventure screen, matching real Return to Monkey Island 2022 screenshots.',
       creative_brief:
-        "Treasure island dig capture: an original third-person screenshot of digging on a tropical island at the spot marked on a map, palm trees, shovels and a glinting chest. Carry it through tropical island, digging, treasure chest, palm trees. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'tropical island; digging; treasure chest; palm trees',
+        "Terrible Toybox Return to Monkey Island (2022) look: paper-cutout storybook art with angular shapes, flat textures, pirate islands and comic adventure staging. Carry it through Return to Monkey Island paper cutout, pirates. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Return to Monkey Island paper cutout; pirates',
     },
     ui: {
       previewStatus: 'pending',
@@ -661,36 +640,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-178',
-    name: 'Shadow-Casting Puzzle Capture',
-    displayName: 'Shadow-Casting Puzzle Capture',
+    name: 'Shadowmatic 2015 - Triada Shadow Puzzles',
+    displayName: 'Shadowmatic 2015 - Triada Shadow Puzzles',
     styleAnchors: [
-      'Shadow-Casting Puzzle Capture',
+      'Shadowmatic 2015 - Triada Shadow Puzzles',
       'light and shadow puzzle screenshot',
       'single lamp',
     ],
     category: '8. Puzzle Chambers & Adventure Setpieces',
     domain: 'light and shadow puzzle screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Shadow-casting puzzle capture: an original puzzle screenshot where objects are rotated in front of a lamp until their combined shadow forms a hidden shape on the wall.',
+        'Triada Studio Shadowmatic (2015) look: rotating abstract objects under a lamp to cast recognizable shadows on a wall, moody rooms and surreal reveals.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; arrange the subject so its shadow forms a surprising shape on a wall.',
-      color_and_tone: 'Dark room, warm lamp light and crisp shadows.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render every subject as abstract object clusters and the shadows they cast. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        'Moody sepia, wall cream and deep shadow, true to the Shadowmatic 2015 palette.',
       lighting_and_shadow:
-        'Single lamp casting a sharp shadow, kept consistent across the whole image.',
+        'Single lamp casting hard shadows, lit the way Shadowmatic 2015 lights its levels.',
       texture_and_material:
-        'Found objects, plaster wall and lamp glass, kept consistent across the whole image.',
+        'Clean matte objects, with the in-engine surface finish of Shadowmatic 2015.',
       camera_and_composition:
-        'Objects in foreground, shadow on the wall, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with quiet revelation, kept consistent across the whole image.',
+        'Front view of a lit wall, framed the way Shadowmatic 2015 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with quiet surreal discovery.',
       rendering_and_quality:
-        'Clean capture with a clear shadow shape, kept consistent across the whole image.',
+        'Authentic shadow puzzle screen, matching real Shadowmatic 2015 screenshots.',
       creative_brief:
-        "Shadow-casting puzzle capture: an original puzzle screenshot where objects are rotated in front of a lamp until their combined shadow forms a hidden shape on the wall. Carry it through single lamp, hidden shadow shape, rotated objects, wall. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'single lamp; hidden shadow shape; rotated objects; wall',
+        "Triada Studio Shadowmatic (2015) look: rotating abstract objects under a lamp to cast recognizable shadows on a wall, moody rooms and surreal reveals. Carry it through Shadowmatic shadows, lamp, abstract objects. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Shadowmatic shadows; lamp; abstract objects',
     },
     ui: {
       previewStatus: 'pending',

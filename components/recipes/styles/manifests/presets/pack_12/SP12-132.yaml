@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-132
 packId: pack_12
-name: Hex Wargame Board Capture
+name: Battle for Wesnoth 2005 - Wesnoth Painted Hex
 styleAnchors:
-  - Hex Wargame Board Capture
+  - Battle for Wesnoth 2005 - Wesnoth Painted Hex
   - digital hex wargame screenshot
   - hex grid
-displayName: Hex Wargame Board Capture
+displayName: Battle for Wesnoth 2005 - Wesnoth Painted Hex
 category: 4. Sieges, Warfronts & Last Stands
 domain: digital hex wargame screenshot
-version: 1
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,22 +20,22 @@ tags:
   - hex-wargame
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Hex wargame board capture: an original screenshot of a digital hex-grid wargame with terrain hexes, unit counters and a painted map beneath the grid.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject as unit counters on a painted hex-grid map.
-  color_and_tone: Muted map greens and browns with bold unit colors.
-  lighting_and_shadow: Flat board light, kept consistent across the whole image.
-  texture_and_material: Painted terrain, hex lines and counter chips, kept consistent across the whole image.
-  camera_and_composition: Top-down angled board view, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with cerebral grand strategy.
-  rendering_and_quality: Clean board with no readable numbers, kept consistent across the whole image.
-  creative_brief: "Hex wargame board capture: an original screenshot of a digital hex-grid wargame with terrain hexes, unit counters and a painted map beneath the grid. Carry it through hex grid, unit counters, painted map, top-down. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: hex grid; unit counters; painted map; top-down
+  aesthetic: 'Battle for Wesnoth (2005) look: turn-based fantasy strategy on painted hex maps, small painted unit sprites, rivers, castles and mountain hexes.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as small painted fantasy unit sprites standing on hexes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Painted greens, river blue and parchment, true to the Battle for Wesnoth 2005 palette.
+  lighting_and_shadow: Even top light on painted terrain, lit the way Battle for Wesnoth 2005 lights its levels.
+  texture_and_material: Painted hex tiles and sprite detail, with the in-engine surface finish of Battle for Wesnoth 2005.
+  camera_and_composition: Top-down hex map view, framed the way Battle for Wesnoth 2005 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with thoughtful tactical campaign.
+  rendering_and_quality: Authentic painted hex strategy screen, matching real Battle for Wesnoth 2005 screenshots.
+  creative_brief: 'Battle for Wesnoth (2005) look: turn-based fantasy strategy on painted hex maps, small painted unit sprites, rivers, castles and mountain hexes. Carry it through Wesnoth painted hexes, unit sprites, fantasy map. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Wesnoth painted hexes; unit sprites; fantasy map
 avoidRules:
   - readable counter numbers
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -44,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: readable counter numbers, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable counter numbers, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -65,6 +68,7 @@ taxonomy:
     - hex-wargame
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

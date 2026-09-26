@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-174
 packId: pack_12
-name: First-Person Escape Room Capture
+name: The Room 2012 - Fireproof Puzzle Box
 styleAnchors:
-  - First-Person Escape Room Capture
+  - The Room 2012 - Fireproof Puzzle Box
   - escape room puzzle game screenshot
   - locked room
-displayName: First-Person Escape Room Capture
+displayName: The Room 2012 - Fireproof Puzzle Box
 category: 8. Puzzle Chambers & Adventure Setpieces
 domain: escape room puzzle game screenshot
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - escape-room
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'First-person escape room capture: an original first-person screenshot of a locked room full of clues, combination locks, hidden compartments and ticking dread.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject in a locked puzzle room full of clues and locks.
-  color_and_tone: Warm lamp light with dark corners, kept consistent across the whole image.
-  lighting_and_shadow: Desk lamp pools and shadowed corners, kept consistent across the whole image.
-  texture_and_material: Locks, wooden drawers, papers without text, kept consistent across the whole image.
-  camera_and_composition: First-person over a desk of clues, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with ticking urgency, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no readable clues, kept consistent across the whole image.
-  creative_brief: "First-person escape room capture: an original first-person screenshot of a locked room full of clues, combination locks, hidden compartments and ticking dread. Carry it through locked room, clues, combination locks, first-person. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: locked room; clues; combination locks; first-person
+  aesthetic: 'Fireproof Games The Room (2012) look: first-person close-up puzzle boxes of dark wood and brass, hidden drawers, eyepiece reveals and occult glow.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render every subject as intricate mechanical boxes and devices seen up close. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Dark wood, brass and occult blue, true to the The Room 2012 palette.
+  lighting_and_shadow: Single warm lamp with glow, lit the way The Room 2012 lights its levels.
+  texture_and_material: Polished wood, brass and leather, with the in-engine surface finish of The Room 2012.
+  camera_and_composition: First-person close-up view, framed the way The Room 2012 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with curious occult tension.
+  rendering_and_quality: Authentic mobile puzzle screen, matching real The Room 2012 screenshots.
+  creative_brief: 'Fireproof Games The Room (2012) look: first-person close-up puzzle boxes of dark wood and brass, hidden drawers, eyepiece reveals and occult glow. Carry it through The Room puzzle box, brass, hidden drawers. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: The Room puzzle box; brass; hidden drawers
 avoidRules:
   - readable clue text
   - existing game characters, logos or levels
@@ -43,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: readable clue text, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable clue text, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +68,7 @@ taxonomy:
     - escape-room
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

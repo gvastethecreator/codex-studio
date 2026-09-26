@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-102
 packId: pack_12
-name: Hover-Taxi Chase Capture
+name: Jak II 2003 - Naughty Dog Haven City Hover Chase
 styleAnchors:
-  - Hover-Taxi Chase Capture
+  - Jak II 2003 - Naughty Dog Haven City Hover Chase
   - flying car chase game screenshot
   - flying taxi
-displayName: Hover-Taxi Chase Capture
+displayName: Jak II 2003 - Naughty Dog Haven City Hover Chase
 category: 1. Neon Urban & Night Ops
 domain: flying car chase game screenshot
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,22 @@ tags:
   - hover-chase
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Hover-taxi chase capture: an original chase-camera screenshot of a flying taxi weaving through vertical traffic lanes between megatowers, motion blur and holograms.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject in or around a flying vehicle from a chase camera.
-  color_and_tone: Night blue, taxi yellow and pink hologram light.
-  lighting_and_shadow: Traffic light streaks and hologram glow, kept consistent across the whole image.
-  texture_and_material: Glossy car panels, glass towers and rain streaks.
-  camera_and_composition: Chase camera behind the vehicle with speed lines.
-  atmosphere_and_mood: Keep the requested mood with breakneck urban thrill.
-  rendering_and_quality: Real-time capture with motion blur, no HUD text.
-  creative_brief: "Hover-taxi chase capture: an original chase-camera screenshot of a flying taxi weaving through vertical traffic lanes between megatowers, motion blur and holograms. Carry it through flying taxi, vertical traffic, chase camera, holograms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: flying taxi; vertical traffic; chase camera; holograms
+  aesthetic: 'Naughty Dog Jak II (2003) look: stylized PS2 third-person action in a dense futuristic walled city, hover zoomers flying traffic lanes, police gunships and warm cartoon proportions.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as stylized PS2 cartoon characters with big expressive faces riding hover vehicles. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Industrial teal, brass and warm amber glow, true to the Jak II 2003 palette.
+  lighting_and_shadow: Hazy PS2 atmospheric light and glowing traffic, lit the way Jak II 2003 lights its levels.
+  texture_and_material: Stylized PS2 textures and chunky vehicle models, with the in-engine surface finish of Jak II 2003.
+  camera_and_composition: Chase camera behind a hover zoomer, framed the way Jak II 2003 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with rebellious chase thrill.
+  rendering_and_quality: Authentic PS2 open-city action screen, matching real Jak II 2003 screenshots.
+  creative_brief: 'Naughty Dog Jak II (2003) look: stylized PS2 third-person action in a dense futuristic walled city, hover zoomers flying traffic lanes, police gunships and warm cartoon proportions. Carry it through Jak II hover zoomers, walled city, chase camera. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Jak II hover zoomers; walled city; chase camera
 avoidRules:
+  - a green-haired hero with goggles and an orange ottsel
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a green-haired hero with goggles and an orange ottsel, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +68,7 @@ taxonomy:
     - hover-chase
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP12-026
 packId: pack_12
-name: Tactics Ogre Verdant Ruins
+name: Tactics Ogre 1995 - Quest Isometric Sprite Tactics
 styleAnchors:
-  - 'Tactics Ogre: Reborn gameplay screenshots'
+  - Tactics Ogre 1995 - Quest Isometric Sprite Tactics
   - Tactics Ogre Verdant Ruins
-displayName: Tactics Ogre Verdant Ruins
+displayName: Tactics Ogre 1995 - Quest Isometric Sprite Tactics
 category: 4. Sieges, Warfronts & Last Stands
-version: 1
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,47 +23,16 @@ tags:
   - hud-contextual-hud
   - reference-title
 visualDna:
-  aesthetic: 'In-game screenshot look informed by Tactics Ogre: Reborn gameplay: isometric tactical-RPG capture with tile height, verdant ruins, small unit sprites, turn order, and readable strategy terrain. It never recreates an exact official level, character, logo or marketing art.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable Tactics Ogre: Reborn-adjacent game
-    screenshot subject: keep clear role silhouette, player/enemy/object function, scale
-    relationship, hitbox-like readability, and interaction affordances without copying source
-    characters or named IP elements.
-  color_and_tone: >-
-    Use a Tactics Ogre: Reborn-informed palette: moss green, old stone grey, parchment UI beige,
-    cobalt water, burgundy cloth, and brass item accents. Keep value grouping legible at gameplay
-    distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues
-    rather than decorative wash.
-  lighting_and_shadow: >-
-    Light the image through soft tactical daylight, simple sprite shadows, spell glows, and clean
-    value separation over tiles. Lighting must clarify the playable route, threat, focal subject, or
-    objective and avoid generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from pixel/HD-sprite units, stone blocks, overgrown grass, banners, armor glints,
-    and compact tactical UI panels. Materials should feel like in-engine game assets captured during
-    play, with enough texture identity to separate props, terrain, characters, hazards, and
-    interactables.
-  camera_and_composition: >-
-    Compose with isometric grid with height advantage, movement tiles, unit facing, spell range, and
-    clear objective structure. The frame should read as a plausible gameplay capture; include UI/HUD
-    only when it matches the source game's visual logic and improves clarity.
-  atmosphere_and_mood: 'Tactics Ogre: Reborn-derived mood: political, tactical, classic, serious, and readable; it follows the tone of the requested scene without forcing a fixed mission or story.'
-  rendering_and_quality: >-
-    Finish as a coherent in-engine screenshot style, not concept art: turn order, unit panels, tile
-    highlights, damage forecast, and command menus are allowed when clean and era-aware. Maintain
-    heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos,
-    stock-photo polish, or random interface clutter.
-  key_features: >-
-    Tactics Ogre: Reborn gameplay screenshots; isometric tactical-RPG capture with tile height,
-    verdant ruins, small unit sprites, turn order, and readable strategy terrain; moss green, old
-    stone grey, parchment UI beige, cobalt water, burgundy cloth, and brass item accents; soft
-    tactical daylight, simple sprite shadows, spell glows, and clean value separation over tiles;
-    pixel/HD-sprite units, stone blocks, overgrown grass, banners, armor glints, and compact
-    tactical UI panels; isometric grid with height advantage, movement tiles, unit facing, spell
-    range, and clear objective structure; political, tactical, classic, serious, and readable; HUD
-    guidance: turn order, unit panels, tile highlights, damage forecast, and command menus are
-    allowed when clean and era-aware
-  creative_brief: "Tactics Ogre Verdant Ruins: in-game screenshot language informed by Tactics Ogre: Reborn, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'Quest Tactics Ogre: Let Us Cling Together (1995) look: isometric tactical RPG with Akihiko Yoshida character designs as small detailed sprites on tiered tile maps of ruins and highlands.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as small detailed isometric sprites with Yoshida-style proportions. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Muted earth, vine green and faded medieval blue.
+  lighting_and_shadow: Soft even 16-bit light on tiered tiles, lit the way Tactics Ogre 1995 lights its levels.
+  texture_and_material: Detailed 16-bit sprites and textured tiles, with the in-engine surface finish of Tactics Ogre 1995.
+  camera_and_composition: Isometric view over tiered tile maps, framed the way Tactics Ogre 1995 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with grave political war.
+  rendering_and_quality: Authentic 16-bit isometric tactics screen, matching real Tactics Ogre 1995 screenshots.
+  key_features: Tactics Ogre isometric; Yoshida sprites; tiered ruins
+  creative_brief: 'Quest Tactics Ogre: Let Us Cling Together (1995) look: isometric tactical RPG with Akihiko Yoshida character designs as small detailed sprites on tiered tile maps of ruins and highlands. Carry it through Tactics Ogre isometric, Yoshida sprites, tiered ruins. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - watermark
   - logo
@@ -91,23 +60,15 @@ avoidRules:
   - copied box art composition
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-026.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: 'Tactics Ogre: Reborn'
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    turn order, unit panels, tile highlights, damage forecast, and command menus are allowed when
-    clean and era-aware
+  hudGuidance: turn order, unit panels, tile highlights, damage forecast, and command menus are allowed when clean and era-aware
   renderFamily: strategy-tactics
   cameraFamily: isometric-top-down
   hudMode: contextual-hud

@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-189
 packId: pack_12
-name: Necromancer Minion Gameplay
+name: Grim Dawn 2016 - Crate Gritty Isometric
 styleAnchors:
-  - Necromancer Minion Gameplay
+  - Grim Dawn 2016 - Crate Gritty Isometric
   - isometric undead army gameplay
   - necromancer
-displayName: Necromancer Minion Gameplay
+displayName: Grim Dawn 2016 - Crate Gritty Isometric
 category: 9. Gothic & Dungeon Gameplay
 domain: isometric undead army gameplay
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - necro-minions
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Necromancer minion gameplay: an original isometric capture of a necromancer commanding a swarm of skeleton minions through a graveyard battle.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject leading a swarm of skeleton minions from an isometric view.
-  color_and_tone: Sickly green magic, bone white and night blue.
-  lighting_and_shadow: Green magic glow and moonlight, kept consistent across the whole image.
-  texture_and_material: Bones, grave soil and robes, kept consistent across the whole image.
-  camera_and_composition: Isometric view with minion swarm, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with dark mischief, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no UI, kept consistent across the whole image.
-  creative_brief: "Necromancer minion gameplay: an original isometric capture of a necromancer commanding a swarm of skeleton minions through a graveyard battle. Carry it through necromancer, skeleton swarm, graveyard, green magic. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: necromancer; skeleton swarm; graveyard; green magic
+  aesthetic: 'Crate Entertainment Grim Dawn (2016) look: gritty Victorian dark fantasy isometric ARPG, necromancers, graveyards, grim ruins and heavy particle effects.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as gritty Victorian dark fantasy heroes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Muted grey-brown with spell glows, true to the Grim Dawn 2016 palette.
+  lighting_and_shadow: Grim overcast, lit the way Grim Dawn 2016 lights its levels.
+  texture_and_material: Gritty isometric detail, with the in-engine surface finish of Grim Dawn 2016.
+  camera_and_composition: Isometric ARPG view, framed the way Grim Dawn 2016 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with grim desperate war.
+  rendering_and_quality: Authentic isometric ARPG screen, matching real Grim Dawn 2016 screenshots.
+  creative_brief: 'Crate Entertainment Grim Dawn (2016) look: gritty Victorian dark fantasy isometric ARPG, necromancers, graveyards, grim ruins and heavy particle effects. Carry it through Grim Dawn gritty, necromancer, isometric. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Grim Dawn gritty; necromancer; isometric
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - necro-minions
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

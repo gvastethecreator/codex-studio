@@ -5,350 +5,336 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-008',
-    name: 'WipEout Night Speed Circuit',
-    displayName: 'WipEout Night Speed Circuit',
-    styleAnchors: ['WipEout Omega Collection gameplay screenshots', 'WipEout Night Speed Circuit'],
+    name: 'Wipeout HD 2008 - Studio Liverpool Anti-Grav Neon',
+    displayName: 'Wipeout HD 2008 - Studio Liverpool Anti-Grav Neon',
+    styleAnchors: [
+      'Wipeout HD 2008 - Studio Liverpool Anti-Grav Neon',
+      'WipEout Night Speed Circuit',
+    ],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'In-game screenshot look informed by WipEout Omega Collection gameplay: anti-gravity racing gameplay capture with clean hovercraft silhouettes, neon track guardrails, futuristic billboards, and velocity blur. It never recreates an exact official level, character, logo or marketing art.',
+        'Studio Liverpool Wipeout HD (2008) look: anti-gravity racing on futuristic neon circuits, sleek team craft, The Designers Republic graphic identity, weapon pads and blazing speed blur.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable WipEout Omega Collection-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a WipEout Omega Collection-informed palette: electric blue, hot magenta, black asphalt, white sponsor panels without readable logos, and amber boost trails. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
-      lighting_and_shadow:
-        'Light the image through trackside neon strips, engine bloom, reflective wet surfaces, tunnel strobes, and boost flare. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
-      texture_and_material:
-        'Build surfaces from sleek vehicle hulls, glossy track panels, translucent shields, holographic signage shapes, and high-speed particle streaks. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render vehicles as sleek anti-gravity racing craft with team liveries and glowing engines. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Neon cyan, magenta, electric yellow and night black.',
+      lighting_and_shadow: 'Track lights streaking past with bright weapon blasts.',
+      texture_and_material: 'Glossy craft hulls, clean track surfaces and speed blur.',
       camera_and_composition:
-        "Compose with third-person racing camera with vanishing-point track curves, rivals ahead, lap-line clarity, and speed-focused low horizon. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'WipEout Omega Collection-derived mood: clinical, fast, competitive, glossy, and late-night futuristic; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Low chase camera behind the craft, framed the way Wipeout HD 2008 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with electric breakneck speed.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: racing HUD is welcome: lap, speed, shield, weapon slot, and position markers can appear if clean and game-coherent. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'WipEout Omega Collection gameplay screenshots; anti-gravity racing gameplay capture with clean hovercraft silhouettes, neon track guardrails, futuristic billboards, and velocity blur; electric blue, hot magenta, black asphalt, white sponsor panels without readable logos, and amber boost trails; trackside neon strips, engine bloom, reflective wet surfaces, tunnel strobes, and boost flare; sleek vehicle hulls, glossy track panels, translucent shields, holographic signage shapes, and high-speed particle streaks; third-person racing camera with vanishing-point track curves, rivals ahead, lap-line clarity, and speed-focused low horizon; clinical, fast, competitive, glossy, and late-night futuristic; HUD guidance: racing HUD is welcome: lap, speed, shield, weapon slot, and position markers can appear if clean and game-coherent',
+        'Authentic late-2000s futuristic racer screen, matching real Wipeout HD 2008 screenshots.',
+      key_features: 'Wipeout anti-grav; Designers Republic; neon circuits',
       creative_brief:
-        "WipEout Night Speed Circuit: in-game screenshot language informed by WipEout Omega Collection, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Studio Liverpool Wipeout HD (2008) look: anti-gravity racing on futuristic neon circuits, sleek team craft, The Designers Republic graphic identity, weapon pads and blazing speed blur. Carry it through Wipeout anti-grav, Designers Republic, neon circuits. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-017',
-    name: 'Rollerdrome Arena Trick Combat',
-    displayName: 'Rollerdrome Arena Trick Combat',
-    styleAnchors: ['Rollerdrome gameplay screenshots', 'Rollerdrome Arena Trick Combat'],
+    name: 'Rollerdrome 2022 - Roll7 Comic Cel Skate Arena',
+    displayName: 'Rollerdrome 2022 - Roll7 Comic Cel Skate Arena',
+    styleAnchors: [
+      'Rollerdrome 2022 - Roll7 Comic Cel Skate Arena',
+      'Rollerdrome Arena Trick Combat',
+    ],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Rollerdrome gameplay: comic-shaded arena shooter capture with roller-skate trick lines, clean concrete arenas, stunt trajectories, and readable enemy targets. It never recreates an exact official level, character, logo or marketing art.',
+        'Roll7 Rollerdrome (2022) look: comic cel-shaded 3D with thick ink lines, seventies-futurist blood sport arenas, roller skaters firing pistols mid-trick and bullet time.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Rollerdrome-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as ink-lined comic figures on roller skates in bold sporty outfits. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Use a Rollerdrome-informed palette: cream concrete, black ink outlines, orange jumpsuit, red danger marks, teal shadows, and poster-flat sky colors. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Warm seventies orange, cream concrete and teal, true to the Rollerdrome 2022 palette.',
       lighting_and_shadow:
-        'Light the image through flat graphic daylight, rimmed outlines, explosion bursts, and stylized target highlights. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Flat comic light with ink shadows, lit the way Rollerdrome 2022 lights its levels.',
       texture_and_material:
-        'Build surfaces from cel-shaded ramps, arena rails, impact smoke, graphic blood, simple crowds, and crisp inked edges. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Thick ink lines and cel fills, with the in-engine surface finish of Rollerdrome 2022.',
       camera_and_composition:
-        "Compose with third-person action-sport framing with trick arcs, enemy spacing, ammo pickups, and readable arena loops. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Rollerdrome-derived mood: stylish, dangerous, sporty, satirical, and kinetic; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Third-person view mid-trick over bowls, framed the way Rollerdrome 2022 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with stylish deadly flow.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: score, combo, ammo, slow-mo, and enemy indicators are coherent here; keep them graphic and compact. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Rollerdrome gameplay screenshots; comic-shaded arena shooter capture with roller-skate trick lines, clean concrete arenas, stunt trajectories, and readable enemy targets; cream concrete, black ink outlines, orange jumpsuit, red danger marks, teal shadows, and poster-flat sky colors; flat graphic daylight, rimmed outlines, explosion bursts, and stylized target highlights; cel-shaded ramps, arena rails, impact smoke, graphic blood, simple crowds, and crisp inked edges; third-person action-sport framing with trick arcs, enemy spacing, ammo pickups, and readable arena loops; stylish, dangerous, sporty, satirical, and kinetic; HUD guidance: score, combo, ammo, slow-mo, and enemy indicators are coherent here; keep them graphic and compact',
+        'Authentic comic cel action screen, matching real Rollerdrome 2022 screenshots.',
+      key_features: 'Rollerdrome ink lines; skate arena; bullet time',
       creative_brief:
-        "Rollerdrome Arena Trick Combat: in-game screenshot language informed by Rollerdrome, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Roll7 Rollerdrome (2022) look: comic cel-shaded 3D with thick ink lines, seventies-futurist blood sport arenas, roller skaters firing pistols mid-trick and bullet time. Carry it through Rollerdrome ink lines, skate arena, bullet time. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-021',
-    name: 'Forza Sandstorm Drift Cup',
-    displayName: 'Forza Sandstorm Drift Cup',
-    styleAnchors: ['Forza Horizon 5 gameplay screenshots', 'Forza Sandstorm Drift Cup'],
+    name: 'Forza Horizon 5 2021 - Playground Festival Open Road',
+    displayName: 'Forza Horizon 5 2021 - Playground Festival Open Road',
+    styleAnchors: [
+      'Forza Horizon 5 2021 - Playground Festival Open Road',
+      'Forza Sandstorm Drift Cup',
+    ],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Forza Horizon 5 gameplay: third-person racing capture with desert roads, festival color, dust plumes, car paint reflections, and high-speed chase-camera readability. It never recreates an exact official level, character, logo or marketing art.',
+        'Playground Games Forza Horizon 5 (2021) look: photoreal open-world festival racing across Mexican deserts and jungles, sunsets, dust plumes, balloons and colorful festival sites.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Forza Horizon 5-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; render vehicles as photoreal cars with dust and motion, drivers inside. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Use a Forza Horizon 5-informed palette: sunlit sand, glossy car red, turquoise sky, black tire marks, festival pink, and golden dust. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Sunset gold, desert ochre and festival pink, true to the Forza Horizon 5 2021 palette.',
       lighting_and_shadow:
-        'Light the image through bright desert sun, windshield flare, dust haze, brake-light red, and reflective body highlights. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Golden sunset with volumetric dust, lit the way Forza Horizon 5 2021 lights its levels.',
       texture_and_material:
-        'Build surfaces from photoreal car paint, gravel, asphalt, dust clouds, cactus silhouettes, banners without readable branding, and road debris. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Photoreal car paint, dust and terrain, with the in-engine surface finish of Forza Horizon 5 2021.',
       camera_and_composition:
-        "Compose with chase camera with car centered low, racing line, opponents ahead, road curvature, and motion blur tuned for playability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Forza Horizon 5-derived mood: competitive, sunny, stylish, festival-like, and fast; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Chase camera behind drifting cars, framed the way Forza Horizon 5 2021 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with joyful festival freedom.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: racing HUD can include speedometer, minimap, position, checkpoint markers, and clean drift-score cues. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Forza Horizon 5 gameplay screenshots; third-person racing capture with desert roads, festival color, dust plumes, car paint reflections, and high-speed chase-camera readability; sunlit sand, glossy car red, turquoise sky, black tire marks, festival pink, and golden dust; bright desert sun, windshield flare, dust haze, brake-light red, and reflective body highlights; photoreal car paint, gravel, asphalt, dust clouds, cactus silhouettes, banners without readable branding, and road debris; chase camera with car centered low, racing line, opponents ahead, road curvature, and motion blur tuned for playability; competitive, sunny, stylish, festival-like, and fast; HUD guidance: racing HUD can include speedometer, minimap, position, checkpoint markers, and clean drift-score cues',
+        'Authentic modern open-world racer screen, matching real Forza Horizon 5 2021 screenshots.',
+      key_features: 'Forza Horizon festival; desert dust; photoreal cars',
       creative_brief:
-        "Forza Sandstorm Drift Cup: in-game screenshot language informed by Forza Horizon 5, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Playground Games Forza Horizon 5 (2021) look: photoreal open-world festival racing across Mexican deserts and jungles, sunsets, dust plumes, balloons and colorful festival sites. Carry it through Forza Horizon festival, desert dust, photoreal cars. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-031',
-    name: 'Into the Breach Astral Tactics',
-    displayName: 'Into the Breach Astral Tactics',
-    styleAnchors: ['Into the Breach gameplay screenshots', 'Into the Breach Astral Tactics'],
+    name: 'Into the Breach 2018 - Subset Pixel Mech Tactics',
+    displayName: 'Into the Breach 2018 - Subset Pixel Mech Tactics',
+    styleAnchors: [
+      'Into the Breach 2018 - Subset Pixel Mech Tactics',
+      'Into the Breach Astral Tactics',
+    ],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'existing Vek insect designs, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Into the Breach gameplay: compact pixel tactics capture with small grid islands, clear enemy intent arrows, mech silhouettes, and deterministic puzzle-combat readability. It never recreates an exact official level, character, logo or marketing art.',
+        'Subset Games Into the Breach (2018) look: compact isometric pixel grid tactics, small mechs pushing giant insects, clear tile warnings and a tiny island map.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Into the Breach-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Into the Breach-informed palette: muted teal water, rust mech metal, acid bug green, orange danger tiles, grey city blocks, and UI-blue grid markers. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render every subject as small crisp pixel mechs and giant insects on isometric tiles. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Muted tile greens, warning orange and deep ocean.',
       lighting_and_shadow:
-        'Light the image through flat tactical light, explosion flashes, laser lines, shield glows, and crisp tile-state highlights. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Flat pixel light with warning glows, lit the way Into the Breach 2018 lights its levels.',
       texture_and_material:
-        'Build surfaces from tiny pixel buildings, readable mechs, bugs, cracked ground, smoke tiles, and compact UI panels. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Crisp pixel art tiles and sprites, with the in-engine surface finish of Into the Breach 2018.',
       camera_and_composition:
-        "Compose with orthographic grid with 8x8-ish battlefield discipline, attack previews, push vectors, and civilian-objective clarity. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Into the Breach-derived mood: cerebral, compact, tense, deterministic, and elegant; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Isometric grid tactics view, framed the way Into the Breach 2018 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with tight strategic tension.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: grid markers, turn UI, unit panels, objective pips, and attack previews are central to the style. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Into the Breach gameplay screenshots; compact pixel tactics capture with small grid islands, clear enemy intent arrows, mech silhouettes, and deterministic puzzle-combat readability; muted teal water, rust mech metal, acid bug green, orange danger tiles, grey city blocks, and UI-blue grid markers; flat tactical light, explosion flashes, laser lines, shield glows, and crisp tile-state highlights; tiny pixel buildings, readable mechs, bugs, cracked ground, smoke tiles, and compact UI panels; orthographic grid with 8x8-ish battlefield discipline, attack previews, push vectors, and civilian-objective clarity; cerebral, compact, tense, deterministic, and elegant; HUD guidance: grid markers, turn UI, unit panels, objective pips, and attack previews are central to the style',
+        'Authentic pixel tactics screen, matching real Into the Breach 2018 screenshots.',
+      key_features: 'Into the Breach grid; pixel mechs; giant insects',
       creative_brief:
-        "Into the Breach Astral Tactics: in-game screenshot language informed by Into the Breach, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Subset Games Into the Breach (2018) look: compact isometric pixel grid tactics, small mechs pushing giant insects, clear tile warnings and a tiny island map. Carry it through Into the Breach grid, pixel mechs, giant insects. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-039',
-    name: 'Beatline Phantom Theater',
-    displayName: 'Beatline Phantom Theater',
+    name: 'No Straight Roads 2020 - Metronomik Rock Versus EDM',
+    displayName: 'No Straight Roads 2020 - Metronomik Rock Versus EDM',
     styleAnchors: [
-      'stylized rhythm-action gameplay screenshots',
+      'No Straight Roads 2020 - Metronomik Rock Versus EDM',
       'cel-shaded beat combat arena',
       'Beatline Phantom Theater',
     ],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Hi-Fi Rush clone, strategy tactics camera, readable rhythm text',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Hi-Fi Rush clone, strategy tactics camera, readable rhythm text, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Original in-game screenshot look for rhythm-action brawler captures: cel-shaded third-person arena play with beat-synced impacts, graphic motion accents, stage-like combat spaces, music-reactive UI shapes, and readable dodge/combo timing. Borrow the kinetic camera discipline and bold cel graphic language associated with Hi-Fi Rush-like games, but land as a different fictional beat-combat game with different characters, props, arena shapes, icons, and color motifs.',
+        'Metronomik No Straight Roads (2020) look: bright cel-shaded rhythm action, rock band heroes versus EDM empire bosses, stage-sized boss arenas and music-synced attacks.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable beat-combat screenshot subject: keep clear role silhouette, attack timing, enemy spacing, route or arena affordance, and hitbox-like readability without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a rhythm-action palette: punchy red, teal shadow, yellow hit sparks, violet stage light, white graphic accents, and black ink outlines. Keep value grouping legible at gameplay distance and avoid generic cyberpunk wash or tactical-strategy desaturation.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as bright cartoon musicians with big hair and instruments. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Neon purple, hot pink and lime, true to the No Straight Roads 2020 palette.',
       lighting_and_shadow:
-        'Light the image through concert-like rim lights, beat pulses, stylized spotlights, impact flashes, and clean cel shading. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Concert stage lights pulsing to music, lit the way No Straight Roads 2020 lights its levels.',
       texture_and_material:
-        'Build surfaces from cartoon metal, posters without readable text, stage props, robot parts, guitar-like weapons, and comic SFX shapes without text. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Clean cel shading with neon effects, with the in-engine surface finish of No Straight Roads 2020.',
       camera_and_composition:
-        'Compose with third-person arena camera, enemy spacing, beat lanes, combo timing, and readable dodges. The frame should read as a plausible playable rhythm-action capture, not an isometric strategy map or key art poster.',
-      atmosphere_and_mood:
-        'Carry an original beatline theater mood: loud, musical, rebellious, playful, adult enough to avoid kid-gloss, and kinetic.',
+        'Third-person stage arena view, framed the way No Straight Roads 2020 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with rebellious rock energy.',
       rendering_and_quality:
-        'Finish as coherent in-engine stylized rhythm-action screenshot style, not concept art: combo shapes, beat bars, health, timing prompts, and ability icons can appear as abstract synchronized UI. Maintain heavy-denoise clarity, crisp focal hierarchy, cel-shaded material discipline, readable gameplay scale, no fake logos, no readable lyric/text UI, and no strategy-tactics camera.',
-      key_features:
-        'original rhythm-action brawler gameplay screenshots; cel-shaded third-person arena play; beat-synced impacts; graphic motion accents; stage-like combat spaces; music-reactive abstract UI shapes; punchy red, teal shadow, yellow sparks, violet stage light, white accents, black ink outlines; third-person arena camera with enemy spacing and readable dodge/combo timing; loud, musical, rebellious, playful, kinetic; HUD guidance: abstract combo and beat UI only, no readable text',
+        'Authentic cel rhythm action screen, matching real No Straight Roads 2020 screenshots.',
+      key_features: 'No Straight Roads rock; stage arenas; beat attacks',
       creative_brief:
-        "Beatline Phantom Theater: in-game screenshot language informed by rhythm-action brawler references, covering cel-shaded combat camera, beat-synced effects, graphic timing UI, bold arena staging, and readable playable motion. Avoid menus, logos, exact characters, exact levels, direct Hi-Fi Rush cloning, and strategy-tactics framing. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Metronomik No Straight Roads (2020) look: bright cel-shaded rhythm action, rock band heroes versus EDM empire bosses, stage-sized boss arenas and music-synced attacks. Carry it through No Straight Roads rock, stage arenas, beat attacks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-047',
-    name: 'Quake Arena Obsidian Trial',
-    displayName: 'Quake Arena Obsidian Trial',
-    styleAnchors: ['Quake III Arena gameplay screenshots', 'Quake Arena Obsidian Trial'],
+    name: 'Quake III Arena 1999 - id Software Gothic Arena',
+    displayName: 'Quake III Arena 1999 - id Software Gothic Arena',
+    styleAnchors: ['Quake III Arena 1999 - id Software Gothic Arena', 'Quake Arena Obsidian Trial'],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Quake III Arena gameplay: retro arena-FPS capture with gothic sci-fi arenas, rocket jumps, saturated pickups, sharp corridors, and old-school HUD symmetry. It never recreates an exact official level, character, logo or marketing art.',
+        'id Software Quake III Arena (1999) look: first-person arena shooter with gothic sci-fi architecture, jump pads, lava pits, floating items and low-poly armored gladiators.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Quake III Arena-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Quake III Arena-informed palette: lava orange, gunmetal grey, blood red, toxic green pickups, electric blue armor, and black stone. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as low-poly armored gladiators seen from first person. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Gothic stone brown, lava orange and teal energy.',
       lighting_and_shadow:
-        'Light the image through hard colored arena lights, lava glow, weapon flashes, pickup glow, and simple baked shadow contrast. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Colored lightmaps and glowing lava, lit the way Quake III Arena 1999 lights its levels.',
       texture_and_material:
-        'Build surfaces from chunky late-90s 3D geometry, gothic metal, skull motifs without logos, jump pads, ammo boxes, and low-detail texture tiling. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Late-nineties textures of stone and metal, with the in-engine surface finish of Quake III Arena 1999.',
       camera_and_composition:
-        "Compose with first-person arena view with centered weapon, opponent sightlines, pickup route loops, vertical jumps, and speed lanes. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Quake III Arena-derived mood: aggressive, competitive, old-school, brutal, and fast; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'First-person view with weapon, framed the way Quake III Arena 1999 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with frantic arena bloodsport.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: classic FPS HUD is welcome: health/armor, ammo, weapon icon, crosshair, and score timer can appear. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Quake III Arena gameplay screenshots; retro arena-FPS capture with gothic sci-fi arenas, rocket jumps, saturated pickups, sharp corridors, and old-school HUD symmetry; lava orange, gunmetal grey, blood red, toxic green pickups, electric blue armor, and black stone; hard colored arena lights, lava glow, weapon flashes, pickup glow, and simple baked shadow contrast; chunky late-90s 3D geometry, gothic metal, skull motifs without logos, jump pads, ammo boxes, and low-detail texture tiling; first-person arena view with centered weapon, opponent sightlines, pickup route loops, vertical jumps, and speed lanes; aggressive, competitive, old-school, brutal, and fast; HUD guidance: classic FPS HUD is welcome: health/armor, ammo, weapon icon, crosshair, and score timer can appear',
+        'Authentic late-nineties arena shooter screen, matching real Quake III Arena 1999 screenshots.',
+      key_features: 'Quake III gothic arena; jump pads; lava',
       creative_brief:
-        "Quake Arena Obsidian Trial: in-game screenshot language informed by Quake III Arena, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "id Software Quake III Arena (1999) look: first-person arena shooter with gothic sci-fi architecture, jump pads, lava pits, floating items and low-poly armored gladiators. Carry it through Quake III gothic arena, jump pads, lava. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-059',
-    name: 'Dota Prismatic Hero Draft Arena',
-    displayName: 'Dota Prismatic Hero Draft Arena',
-    styleAnchors: ['Dota 2 gameplay screenshots', 'Dota Prismatic Hero Draft Arena'],
+    name: 'Dota 2 2013 - Valve Painted MOBA',
+    displayName: 'Dota 2 2013 - Valve Painted MOBA',
+    styleAnchors: ['Dota 2 2013 - Valve Painted MOBA', 'Dota Prismatic Hero Draft Arena'],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'existing Dota heroes, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Dota 2 gameplay: MOBA gameplay capture with isometric hero combat, lanes, ability bar, minimap, creep waves, and dense but disciplined teamfight readability. It never recreates an exact official level, character, logo or marketing art.',
+        'Valve Dota 2 (2013) look: isometric MOBA with painted stylized fantasy terrain, three lanes, towers, creep waves, glowing hero abilities and ancient structures.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Dota 2-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Dota 2-informed palette: Radiant green, Dire red, magic purple, gold UI accents, river blue, and dark terrain shadows. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as stylized painted fantasy heroes with glowing abilities. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Radiant green versus dire red earth, true to the Dota 2 2013 palette.',
       lighting_and_shadow:
-        'Light the image through spell effects, tower beams, hero glows, fog-of-war darkness, and crisp particle silhouettes. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Painted light with ability glows, lit the way Dota 2 2013 lights its levels.',
       texture_and_material:
-        'Build surfaces from fantasy terrain, hero equipment without copying exact heroes, creeps, towers, trees, stone paths, and polished ability effects. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Hand-painted stylized textures, with the in-engine surface finish of Dota 2 2013.',
       camera_and_composition:
-        "Compose with high isometric battlefield view with lane hierarchy, team spacing, ability ranges, minimap, and objective pressure. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Dota 2-derived mood: competitive, tactical, magical, high-information, and tense; it follows the tone of the requested scene without forcing a fixed mission or story.',
-      rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: MOBA HUD is central: ability bar, minimap, hero status, cooldowns, items, and teamfight markers can be visible. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Dota 2 gameplay screenshots; MOBA gameplay capture with isometric hero combat, lanes, ability bar, minimap, creep waves, and dense but disciplined teamfight readability; Radiant green, Dire red, magic purple, gold UI accents, river blue, and dark terrain shadows; spell effects, tower beams, hero glows, fog-of-war darkness, and crisp particle silhouettes; fantasy terrain, hero equipment without copying exact heroes, creeps, towers, trees, stone paths, and polished ability effects; high isometric battlefield view with lane hierarchy, team spacing, ability ranges, minimap, and objective pressure; competitive, tactical, magical, high-information, and tense; HUD guidance: MOBA HUD is central: ability bar, minimap, hero status, cooldowns, items, and teamfight markers can be visible',
+        'Isometric MOBA view, framed the way Dota 2 2013 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with fierce competitive clash.',
+      rendering_and_quality: 'Authentic MOBA screen, matching real Dota 2 2013 screenshots.',
+      key_features: 'Dota 2 painted lanes; towers; creep waves',
       creative_brief:
-        "Dota Prismatic Hero Draft Arena: in-game screenshot language informed by Dota 2, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Valve Dota 2 (2013) look: isometric MOBA with painted stylized fantasy terrain, three lanes, towers, creep waves, glowing hero abilities and ancient structures. Carry it through Dota 2 painted lanes, towers, creep waves. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-063',
-    name: 'F-Zero Obelisk Desert Race',
-    displayName: 'F-Zero Obelisk Desert Race',
-    styleAnchors: ['F-Zero GX gameplay screenshots', 'F-Zero Obelisk Desert Race'],
+    name: 'F-Zero GX 2003 - Amusement Vision Hyper Speed',
+    displayName: 'F-Zero GX 2003 - Amusement Vision Hyper Speed',
+    styleAnchors: ['F-Zero GX 2003 - Amusement Vision Hyper Speed', 'F-Zero Obelisk Desert Race'],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a blue hover racer with a pilot in a helmet and scarf, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'In-game screenshot look informed by F-Zero GX gameplay: GameCube-era anti-gravity racing capture with desert sci-fi tracks, high saturation, speed tunnels, and arcade HUD pressure. It never recreates an exact official level, character, logo or marketing art.',
+        'Amusement Vision F-Zero GX (2003) look: hyper-speed anti-gravity racing on twisting tubes and loops, saturated alien cities and deserts, thirty rival machines and extreme speed lines.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable F-Zero GX-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; render vehicles as sleek colorful hover machines at extreme speed. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Use a F-Zero GX-informed palette: sand gold, cobalt sky, chrome blue, hot magenta boost, black track, and bright orange hazard pads. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Saturated desert gold, neon blue and pink, true to the F-Zero GX 2003 palette.',
       lighting_and_shadow:
-        'Light the image through harsh desert sun, boost glow, tunnel strobe, reflective vehicle highlights, and saturated arcade bloom. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Bright GameCube bloom and track lights, lit the way F-Zero GX 2003 lights its levels.',
       texture_and_material:
-        'Build surfaces from early-2000s glossy track, low-poly desert monuments, hovering vehicles, energy pads, and bold texture panels. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Glossy machines with speed blur, with the in-engine surface finish of F-Zero GX 2003.',
       camera_and_composition:
-        "Compose with third-person racing chase camera with steep track curves, rivals, speed lines, and checkpoint/position readability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'F-Zero GX-derived mood: extreme, arcade-fast, futuristic, competitive, and slightly retro; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Low chase camera on twisting tracks, framed the way F-Zero GX 2003 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with dizzying hyper speed.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: speed, lap, position, boost meter, and track minimap can appear as arcade racing UI. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'F-Zero GX gameplay screenshots; GameCube-era anti-gravity racing capture with desert sci-fi tracks, high saturation, speed tunnels, and arcade HUD pressure; sand gold, cobalt sky, chrome blue, hot magenta boost, black track, and bright orange hazard pads; harsh desert sun, boost glow, tunnel strobe, reflective vehicle highlights, and saturated arcade bloom; early-2000s glossy track, low-poly desert monuments, hovering vehicles, energy pads, and bold texture panels; third-person racing chase camera with steep track curves, rivals, speed lines, and checkpoint/position readability; extreme, arcade-fast, futuristic, competitive, and slightly retro; HUD guidance: speed, lap, position, boost meter, and track minimap can appear as arcade racing UI',
+        'Authentic GameCube racer screen, matching real F-Zero GX 2003 screenshots.',
+      key_features: 'F-Zero GX loops; hover machines; hyper speed',
       creative_brief:
-        "F-Zero Obelisk Desert Race: in-game screenshot language informed by F-Zero GX, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Amusement Vision F-Zero GX (2003) look: hyper-speed anti-gravity racing on twisting tubes and loops, saturated alien cities and deserts, thirty rival machines and extreme speed lines. Carry it through F-Zero GX loops, hover machines, hyper speed. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-065',
-    name: 'Soulcalibur Crystal Duel Hall',
-    displayName: 'Soulcalibur Crystal Duel Hall',
-    styleAnchors: ['Soulcalibur VI gameplay screenshots', 'Soulcalibur Crystal Duel Hall'],
+    name: 'Soulcalibur VI 2018 - Project Soul Weapon Duel',
+    displayName: 'Soulcalibur VI 2018 - Project Soul Weapon Duel',
+    styleAnchors: [
+      'Soulcalibur VI 2018 - Project Soul Weapon Duel',
+      'Soulcalibur Crystal Duel Hall',
+    ],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'existing Soulcalibur fighters, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Soulcalibur VI gameplay: weapon-fighting game capture with ornate arenas, two-character duel spacing, dramatic camera, and crystal fantasy stage spectacle. It never recreates an exact official level, character, logo or marketing art.',
+        'Bandai Namco Project Soul Soulcalibur VI (2018) look: 3D weapon fighting in ornate historical-fantasy stages, colorful weapon trails, dramatic sparks and flowing costumes.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Soulcalibur VI-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as ornate weapon fighters in flowing historical-fantasy costumes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Use a Soulcalibur VI-informed palette: royal blue, crystal white, polished gold, crimson cloth, black armor, and bright weapon trails. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Crystal blue, gold and weapon trail colors, true to the Soulcalibur VI 2018 palette.',
       lighting_and_shadow:
-        'Light the image through arena spotlights, magic hit sparks, rimmed armor, stage glow, and cinematic super-move flare. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Dramatic stage light with sparks, lit the way Soulcalibur VI 2018 lights its levels.',
       texture_and_material:
-        'Build surfaces from polished stone, crystal pillars, ornate weapons, flowing cloth, armor plates, and high-detail arena props. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Polished costumes and ornate metal, with the in-engine surface finish of Soulcalibur VI 2018.',
       camera_and_composition:
-        "Compose with side-biased 3D fighting camera with two combatants, health bars, ring-out edges, and attack-impact clarity. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Soulcalibur VI-derived mood: duelist, flamboyant, heroic, competitive, and theatrical; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Side-on 3D fighting camera, framed the way Soulcalibur VI 2018 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with epic duelist grandeur.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: fighting-game HUD is expected: health bars, round timer, meter, player names as abstract blocks, and hit sparks. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Soulcalibur VI gameplay screenshots; weapon-fighting game capture with ornate arenas, two-character duel spacing, dramatic camera, and crystal fantasy stage spectacle; royal blue, crystal white, polished gold, crimson cloth, black armor, and bright weapon trails; arena spotlights, magic hit sparks, rimmed armor, stage glow, and cinematic super-move flare; polished stone, crystal pillars, ornate weapons, flowing cloth, armor plates, and high-detail arena props; side-biased 3D fighting camera with two combatants, health bars, ring-out edges, and attack-impact clarity; duelist, flamboyant, heroic, competitive, and theatrical; HUD guidance: fighting-game HUD is expected: health bars, round timer, meter, player names as abstract blocks, and hit sparks',
+        'Authentic 3D fighter screen, matching real Soulcalibur VI 2018 screenshots.',
+      key_features: 'Soulcalibur weapon trails; ornate stages',
       creative_brief:
-        "Soulcalibur Crystal Duel Hall: in-game screenshot language informed by Soulcalibur VI, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Bandai Namco Project Soul Soulcalibur VI (2018) look: 3D weapon fighting in ornate historical-fantasy stages, colorful weapon trails, dramatic sparks and flowing costumes. Carry it through Soulcalibur weapon trails, ornate stages. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-075',
-    name: 'Rocket League Cobalt Docks',
-    displayName: 'Rocket League Cobalt Docks',
-    styleAnchors: ['Rocket League gameplay screenshots', 'Rocket League Cobalt Docks'],
+    name: 'Rocket League 2015 - Psyonix Car Soccer',
+    displayName: 'Rocket League 2015 - Psyonix Car Soccer',
+    styleAnchors: ['Rocket League 2015 - Psyonix Car Soccer', 'Rocket League Cobalt Docks'],
     category: '5. Speed, Sport & Competitive Arenas',
     negativePrompt:
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Rocket League gameplay: car-soccer gameplay capture with arena ball, boost trails, goal geometry, team colors, and high-energy chase camera. It never recreates an exact official level, character, logo or marketing art.',
+        'Psyonix Rocket League (2015) look: rocket-powered cars flipping in enclosed stadiums, glowing ball, boost trails, curved walls and bright team colors.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Rocket League-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; render vehicles as small rocket cars with boost flames. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Use a Rocket League-informed palette: cobalt blue, orange team glow, green field, black tire rubber, white ball panels, and neon arena trim. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Team blue and orange with neon arenas, true to the Rocket League 2015 palette.',
       lighting_and_shadow:
-        'Light the image through stadium lights, boost flames, goal explosions, wet arena reflections, and glossy car highlights. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Stadium lights and boost glow, lit the way Rocket League 2015 lights its levels.',
       texture_and_material:
-        'Build surfaces from car paint, turf, glass boards, boost pads, ball panels, arena rails, and particle trails. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Glossy cars and arena turf, with the in-engine surface finish of Rocket League 2015.',
       camera_and_composition:
-        "Compose with third-person car camera with ball focus, goal depth, boost route, teammates/opponents, and field geometry readability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Rocket League-derived mood: competitive, sporty, explosive, glossy, and playful; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Chase camera behind the car, framed the way Rocket League 2015 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with boosted competitive fun.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: scoreboard, timer, boost meter, ball cam indicator, and team markers are coherent and useful. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Rocket League gameplay screenshots; car-soccer gameplay capture with arena ball, boost trails, goal geometry, team colors, and high-energy chase camera; cobalt blue, orange team glow, green field, black tire rubber, white ball panels, and neon arena trim; stadium lights, boost flames, goal explosions, wet arena reflections, and glossy car highlights; car paint, turf, glass boards, boost pads, ball panels, arena rails, and particle trails; third-person car camera with ball focus, goal depth, boost route, teammates/opponents, and field geometry readability; competitive, sporty, explosive, glossy, and playful; HUD guidance: scoreboard, timer, boost meter, ball cam indicator, and team markers are coherent and useful',
+        'Authentic car-soccer screen, matching real Rocket League 2015 screenshots.',
+      key_features: 'Rocket League stadium; boost trails; giant ball',
       creative_brief:
-        "Rocket League Cobalt Docks: in-game screenshot language informed by Rocket League, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Psyonix Rocket League (2015) look: rocket-powered cars flipping in enclosed stadiums, glowing ball, boost trails, curved walls and bright team colors. Carry it through Rocket League stadium, boost trails, giant ball. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-139',
-    name: 'Kart Racing Item Chaos Capture',
-    displayName: 'Kart Racing Item Chaos Capture',
+    name: 'Crash Team Racing 2019 - Beenox Cartoon Kart',
+    displayName: 'Crash Team Racing 2019 - Beenox Cartoon Kart',
     styleAnchors: [
-      'Kart Racing Item Chaos Capture',
+      'Crash Team Racing 2019 - Beenox Cartoon Kart',
       'cartoon kart racing screenshot',
       'cartoon karts',
     ],
     category: '5. Speed, Sport & Competitive Arenas',
     domain: 'cartoon kart racing screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'an orange bandicoot, existing kart racers, existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Kart racing item chaos capture: an original cartoon kart race screenshot with bouncy karts, item explosions, banana peels and colorful tracks through fantasy lands.',
+        'Beenox Crash Team Racing Nitro-Fueled (2019) look: bright cartoon kart racing, drifting sparks, item chaos, volcano and jungle tracks, and animated-film characters.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject driving a cartoon kart amid flying items and rivals.',
-      color_and_tone:
-        'Saturated primary colors and sunny skies, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people and animals as cartoon kart racers with big expressions. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Bright jungle green, lava orange and sky blue.',
       lighting_and_shadow:
-        'Bright cartoon light with small shadows, kept consistent across the whole image.',
+        'Bright cartoon light with drift sparks, lit the way Crash Team Racing 2019 lights its levels.',
       texture_and_material:
-        'Glossy karts, grass, candy-like tracks and explosions, kept consistent across the whole image.',
-      camera_and_composition: 'Chase camera behind the kart with rivals nearby.',
-      atmosphere_and_mood:
-        'Keep the requested mood with gleeful chaos, kept consistent across the whole image.',
+        'Glossy stylized cartoon surfaces, with the in-engine surface finish of Crash Team Racing 2019.',
+      camera_and_composition:
+        'Chase camera behind the kart, framed the way Crash Team Racing 2019 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with chaotic kart fun.',
       rendering_and_quality:
-        'Clean cartoon capture with no HUD text, kept consistent across the whole image.',
+        'Authentic cartoon kart racer screen, matching real Crash Team Racing 2019 screenshots.',
       creative_brief:
-        "Kart racing item chaos capture: an original cartoon kart race screenshot with bouncy karts, item explosions, banana peels and colorful tracks through fantasy lands. Carry it through cartoon karts, item explosions, fantasy track, chase camera. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'cartoon karts; item explosions; fantasy track; chase camera',
+        "Beenox Crash Team Racing Nitro-Fueled (2019) look: bright cartoon kart racing, drifting sparks, item chaos, volcano and jungle tracks, and animated-film characters. Carry it through CTR cartoon karts, drift sparks, item chaos. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'CTR cartoon karts; drift sparks; item chaos',
     },
     ui: {
       previewStatus: 'pending',
@@ -356,34 +342,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-140',
-    name: 'Street Skate Trick Line Capture',
-    displayName: 'Street Skate Trick Line Capture',
+    name: "Tony Hawk's Pro Skater 2 2000 - Neversoft Skate Lines",
+    displayName: "Tony Hawk's Pro Skater 2 2000 - Neversoft Skate Lines",
     styleAnchors: [
-      'Street Skate Trick Line Capture',
+      "Tony Hawk's Pro Skater 2 2000 - Neversoft Skate Lines",
       'skateboarding game screenshot',
       'mid-air trick',
     ],
     category: '5. Speed, Sport & Competitive Arenas',
     domain: 'skateboarding game screenshot',
     negativePrompt:
-      'readable graffiti, existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'real professional skaters, readable graffiti, existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Street skate trick line capture: an original skateboarding game screenshot of a mid-air trick over city stairs and rails, fisheye feel and sunny concrete.',
+        "Neversoft Tony Hawk's Pro Skater 2 (2000) look: PS1 low-poly skateboarding, sunny plazas, rails and fountains, big air combos and punk-era energy.",
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject mid-trick on a skateboard over urban features.',
-      color_and_tone:
-        'Sunny concrete greys with bold clothing colors, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as low-poly PS1 skaters in baggy clothes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Sunny plaza tan, sky blue and punk colors.',
       lighting_and_shadow:
-        'Bright afternoon sun and crisp shadows, kept consistent across the whole image.',
-      texture_and_material: 'Concrete, metal rails, grip tape and clean painted walls.',
+        "Bright flat PS1 daylight, lit the way Tony Hawk's Pro Skater 2 2000 lights its levels.",
+      texture_and_material:
+        "Low-poly surfaces with warped textures, with the in-engine surface finish of Tony Hawk's Pro Skater 2 2000.",
       camera_and_composition:
-        'Low fisheye-style follow camera, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with loose street freedom.',
-      rendering_and_quality: 'Clean capture with no trick names or scores.',
+        "Third-person chase view behind the skater, framed the way Tony Hawk's Pro Skater 2 2000 frames its gameplay screens.",
+      atmosphere_and_mood: 'Keep the requested mood with punk trick freedom.',
+      rendering_and_quality:
+        "Authentic PS1 skate screen, matching real Tony Hawk's Pro Skater 2 2000 screenshots.",
       creative_brief:
-        "Street skate trick line capture: an original skateboarding game screenshot of a mid-air trick over city stairs and rails, fisheye feel and sunny concrete. Carry it through mid-air trick, city stairs, fisheye, sunny concrete. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'mid-air trick; city stairs; fisheye; sunny concrete',
+        "Neversoft Tony Hawk's Pro Skater 2 (2000) look: PS1 low-poly skateboarding, sunny plazas, rails and fountains, big air combos and punk-era energy. Carry it through THPS2 low-poly, plazas, big air. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'THPS2 low-poly; plazas; big air',
     },
     ui: {
       previewStatus: 'pending',
@@ -391,36 +378,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-141',
-    name: 'Backcountry Snowboard Descent Capture',
-    displayName: 'Backcountry Snowboard Descent Capture',
+    name: 'SSX Tricky 2001 - EA Canada Big Air',
+    displayName: 'SSX Tricky 2001 - EA Canada Big Air',
     styleAnchors: [
-      'Backcountry Snowboard Descent Capture',
+      'SSX Tricky 2001 - EA Canada Big Air',
       'snowboard mountain game screenshot',
       'powder spray',
     ],
     category: '5. Speed, Sport & Competitive Arenas',
     domain: 'snowboard mountain game screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Backcountry snowboard descent capture: an original snowboarding screenshot of a rider carving deep powder down a vast mountain, snow spray and blue sky.',
+        'EA Canada SSX Tricky (2001) look: over-the-top snowboarding, impossible mountain courses, giant air tricks, bright character designs and glittering powder.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject carving or jumping on a snowboard down a vast slope.',
-      color_and_tone: 'Brilliant white, deep blue sky and bright outerwear.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as bold stylized snowboarders in colorful outfits. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        'Glittering white, sky blue and neon outfits, true to the SSX Tricky 2001 palette.',
       lighting_and_shadow:
-        'Hard alpine sun with blue snow shadows, kept consistent across the whole image.',
+        'Bright alpine light with glitter, lit the way SSX Tricky 2001 lights its levels.',
       texture_and_material:
-        'Powder spray, ice ridges and pine trees, kept consistent across the whole image.',
+        'PS2 snow and glossy boards, with the in-engine surface finish of SSX Tricky 2001.',
       camera_and_composition:
-        'Wide follow camera down the mountain, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with exhilarating freedom, kept consistent across the whole image.',
+        'Chase camera during big air, framed the way SSX Tricky 2001 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with wild big-air joy.',
       rendering_and_quality:
-        'Clean capture with no HUD text, kept consistent across the whole image.',
+        'Authentic PS2 snowboarding screen, matching real SSX Tricky 2001 screenshots.',
       creative_brief:
-        "Backcountry snowboard descent capture: an original snowboarding screenshot of a rider carving deep powder down a vast mountain, snow spray and blue sky. Carry it through powder spray, vast mountain, blue sky, carving rider. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'powder spray; vast mountain; blue sky; carving rider',
+        "EA Canada SSX Tricky (2001) look: over-the-top snowboarding, impossible mountain courses, giant air tricks, bright character designs and glittering powder. Carry it through SSX big air, impossible courses, powder. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'SSX big air; impossible courses; powder',
     },
     ui: {
       previewStatus: 'pending',
@@ -428,34 +415,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-142',
-    name: 'Digital Pinball Table Capture',
-    displayName: 'Digital Pinball Table Capture',
+    name: 'Pinball FX 2017 - Zen Studios Digital Tables',
+    displayName: 'Pinball FX 2017 - Zen Studios Digital Tables',
     styleAnchors: [
-      'Digital Pinball Table Capture',
+      'Pinball FX 2017 - Zen Studios Digital Tables',
       'fantasy pinball game screenshot',
       'pinball table',
     ],
     category: '5. Speed, Sport & Competitive Arenas',
     domain: 'fantasy pinball game screenshot',
     negativePrompt:
-      'score text, existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'score text, existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Digital pinball table capture: an original screenshot of a glowing fantasy pinball table, ramps, bumpers, flippers and a chrome ball with light trails.',
+        'Zen Studios Pinball FX3 (2017) look: digital pinball tables with animated 3D toys, chrome balls, lit ramps, flippers and themed sculpted beasts that move.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; turn the subject into the theme of a glowing pinball table.',
-      color_and_tone: 'Glowing reds, golds and blues on dark playfield.',
-      lighting_and_shadow: 'Bumper flashes and ramp glow, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render every subject as a sculpted animated pinball toy on a lit table. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        'Chrome, glowing ramp neon and table art, true to the Pinball FX 2017 palette.',
+      lighting_and_shadow:
+        'Table lights and flashing inserts, lit the way Pinball FX 2017 lights its levels.',
       texture_and_material:
-        'Chrome ball, plastic ramps, printed playfield art, kept consistent across the whole image.',
+        'Chrome, glossy plastic and printed art, with the in-engine surface finish of Pinball FX 2017.',
       camera_and_composition:
-        'Angled top-down view of the whole table, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with flashing arcade thrill.',
+        'High table view down the playfield, framed the way Pinball FX 2017 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with flashy arcade thrill.',
       rendering_and_quality:
-        'Clean capture with no score text, kept consistent across the whole image.',
+        'Authentic digital pinball screen, matching real Pinball FX 2017 screenshots.',
       creative_brief:
-        "Digital pinball table capture: an original screenshot of a glowing fantasy pinball table, ramps, bumpers, flippers and a chrome ball with light trails. Carry it through pinball table, chrome ball, bumpers, ramps. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'pinball table; chrome ball; bumpers; ramps',
+        "Zen Studios Pinball FX3 (2017) look: digital pinball tables with animated 3D toys, chrome balls, lit ramps, flippers and themed sculpted beasts that move. Carry it through Pinball FX tables, animated toys, chrome ball. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Pinball FX tables; animated toys; chrome ball',
     },
     ui: {
       previewStatus: 'pending',
@@ -463,36 +452,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-143',
-    name: 'Versus Stage Fighter Capture',
-    displayName: 'Versus Stage Fighter Capture',
+    name: 'Guilty Gear Strive 2021 - Arc System Works Anime 2.5D',
+    displayName: 'Guilty Gear Strive 2021 - Arc System Works Anime 2.5D',
     styleAnchors: [
-      'Versus Stage Fighter Capture',
+      'Guilty Gear Strive 2021 - Arc System Works Anime 2.5D',
       'two-player fighting game screenshot',
       'two fighters',
     ],
     category: '5. Speed, Sport & Competitive Arenas',
     domain: 'two-player fighting game screenshot',
     negativePrompt:
-      'health bars, existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing Guilty Gear fighters, health bars, existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Versus stage fighter capture: an original side-view fighting game screenshot of two fighters mid-clash on a dramatic stage with a watching crowd.',
+        'Arc System Works Guilty Gear Strive (2021) look: 3D rendered to look like hand-drawn anime, limited animation frames, heavy-metal stages and huge impact effects.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject as one of two fighters mid-clash on a side-view stage.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as anime fighters with sharp cel shading and bold silhouettes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Vivid fighter colors against a dramatic stage, kept consistent across the whole image.',
+        'Rock red, electric purple and bold contrast, true to the Guilty Gear Strive 2021 palette.',
       lighting_and_shadow:
-        'Impact flashes and stage light, kept consistent across the whole image.',
+        'Dramatic stage light with impact flashes, lit the way Guilty Gear Strive 2021 lights its levels.',
       texture_and_material:
-        'Detailed fighters, stage props and impact effects, kept consistent across the whole image.',
+        'Cel-shaded 3D that reads as 2D anime, with the in-engine surface finish of Guilty Gear Strive 2021.',
       camera_and_composition:
-        'Side-on camera with both fighters framed, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with explosive rivalry, kept consistent across the whole image.',
-      rendering_and_quality: 'Clean capture with no health bars or text.',
+        'Side-view 2.5D fighting camera, framed the way Guilty Gear Strive 2021 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with heavy-metal fighting intensity.',
+      rendering_and_quality:
+        'Authentic anime fighter screen, matching real Guilty Gear Strive 2021 screenshots.',
       creative_brief:
-        "Versus stage fighter capture: an original side-view fighting game screenshot of two fighters mid-clash on a dramatic stage with a watching crowd. Carry it through two fighters, side view, impact flash, dramatic stage. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'two fighters; side view; impact flash; dramatic stage',
+        "Arc System Works Guilty Gear Strive (2021) look: 3D rendered to look like hand-drawn anime, limited animation frames, heavy-metal stages and huge impact effects. Carry it through Guilty Gear anime 2.5D, impact effects, metal. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Guilty Gear anime 2.5D; impact effects; metal',
     },
     ui: {
       previewStatus: 'pending',
@@ -500,35 +489,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-144',
-    name: 'Wrestling Ring Entrance Capture',
-    displayName: 'Wrestling Ring Entrance Capture',
+    name: 'WWF No Mercy 2000 - AKI N64 Wrestling',
+    displayName: 'WWF No Mercy 2000 - AKI N64 Wrestling',
     styleAnchors: [
-      'Wrestling Ring Entrance Capture',
+      'WWF No Mercy 2000 - AKI N64 Wrestling',
       'pro wrestling entrance screenshot',
       'entrance ramp',
     ],
     category: '5. Speed, Sport & Competitive Arenas',
     domain: 'pro wrestling entrance screenshot',
     negativePrompt:
-      'name graphics, existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'real wrestlers, name graphics, existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Wrestling ring entrance capture: an original pro-wrestling screenshot of a wrestler making a dramatic entrance down a ramp, pyrotechnics, spotlights and roaring crowd.',
+        'AKI Corporation WWF No Mercy (2000) look: N64 low-poly wrestling with blocky bodies, ring ropes, entrance ramps with pyro and crowds of flat sprite fans.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject making a flamboyant entrance toward a wrestling ring.',
-      color_and_tone: 'Dark arena with bright spotlights and pyro colors.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as blocky low-poly N64 wrestlers with simple faces. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        'Arena purple, pyro green and ring white, true to the WWF No Mercy 2000 palette.',
       lighting_and_shadow:
-        'Spotlights, pyrotechnic flashes and haze, kept consistent across the whole image.',
+        'Arena spotlights and pyro bursts, lit the way WWF No Mercy 2000 lights its levels.',
       texture_and_material:
-        'Ring ropes, capes, sequins and smoke, kept consistent across the whole image.',
-      camera_and_composition: 'Low angle up the ramp, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with theatrical bravado, kept consistent across the whole image.',
+        'Blurry N64 textures, with the in-engine surface finish of WWF No Mercy 2000.',
+      camera_and_composition:
+        'Entrance ramp view, framed the way WWF No Mercy 2000 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with campy arena spectacle.',
       rendering_and_quality:
-        'Clean capture with no name graphics, kept consistent across the whole image.',
+        'Authentic N64 wrestling screen, matching real WWF No Mercy 2000 screenshots.',
       creative_brief:
-        "Wrestling ring entrance capture: an original pro-wrestling screenshot of a wrestler making a dramatic entrance down a ramp, pyrotechnics, spotlights and roaring crowd. Carry it through entrance ramp, pyrotechnics, spotlights, roaring crowd. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'entrance ramp; pyrotechnics; spotlights; roaring crowd',
+        "AKI Corporation WWF No Mercy (2000) look: N64 low-poly wrestling with blocky bodies, ring ropes, entrance ramps with pyro and crowds of flat sprite fans. Carry it through No Mercy N64, blocky wrestlers, pyro. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'No Mercy N64; blocky wrestlers; pyro',
     },
     ui: {
       previewStatus: 'pending',
@@ -536,32 +526,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-145',
-    name: 'Motocross Mud Jump Capture',
-    displayName: 'Motocross Mud Jump Capture',
-    styleAnchors: ['Motocross Mud Jump Capture', 'dirt bike racing screenshot', 'dirt bike'],
+    name: 'Motorstorm 2006 - Evolution Studios Mud Festival',
+    displayName: 'Motorstorm 2006 - Evolution Studios Mud Festival',
+    styleAnchors: [
+      'Motorstorm 2006 - Evolution Studios Mud Festival',
+      'dirt bike racing screenshot',
+      'dirt bike',
+    ],
     category: '5. Speed, Sport & Competitive Arenas',
     domain: 'dirt bike racing screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Motocross mud jump capture: an original dirt-bike racing screenshot of a rider mid-air over muddy whoops, flying clods of earth and a crowd on the hill.',
+        'Evolution Studios MotorStorm (2006) look: off-road festival racing in deep mud and dust, bikes, buggies and trucks crashing, persistent mud deformation.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject mid-air on a dirt bike over a muddy track.',
-      color_and_tone:
-        'Mud brown, bright jerseys and grey sky, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people and vehicles as mud-caked riders and machines. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Mud brown, storm grey and rust orange, true to the Motorstorm 2006 palette.',
       lighting_and_shadow:
-        'Overcast light with flying mud silhouettes, kept consistent across the whole image.',
+        'Storm light with flying mud, lit the way Motorstorm 2006 lights its levels.',
       texture_and_material:
-        'Mud clods, knobby tires and wet dirt, kept consistent across the whole image.',
-      camera_and_composition: 'Low angle under the jump, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with gritty adrenaline, kept consistent across the whole image.',
+        'Deformed mud and dirty metal, with the in-engine surface finish of Motorstorm 2006.',
+      camera_and_composition:
+        'Chase camera during jumps, framed the way Motorstorm 2006 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with brutal muddy chaos.',
       rendering_and_quality:
-        'Clean capture with no sponsor text, kept consistent across the whole image.',
+        'Authentic PS3 off-road racer screen, matching real Motorstorm 2006 screenshots.',
       creative_brief:
-        "Motocross mud jump capture: an original dirt-bike racing screenshot of a rider mid-air over muddy whoops, flying clods of earth and a crowd on the hill. Carry it through dirt bike, mid-air jump, flying mud, crowd. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'dirt bike; mid-air jump; flying mud; crowd',
+        "Evolution Studios MotorStorm (2006) look: off-road festival racing in deep mud and dust, bikes, buggies and trucks crashing, persistent mud deformation. Carry it through MotorStorm mud, crashes, off-road festival. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'MotorStorm mud; crashes; off-road festival',
     },
     ui: {
       previewStatus: 'pending',
@@ -569,36 +562,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-146',
-    name: 'Esports Stadium Broadcast Capture',
-    displayName: 'Esports Stadium Broadcast Capture',
+    name: 'League of Legends Worlds 2017 - Riot AR Stadium Show',
+    displayName: 'League of Legends Worlds 2017 - Riot AR Stadium Show',
     styleAnchors: [
-      'Esports Stadium Broadcast Capture',
+      'League of Legends Worlds 2017 - Riot AR Stadium Show',
       'esports arena broadcast screenshot',
       'glass booths',
     ],
     category: '5. Speed, Sport & Competitive Arenas',
     domain: 'esports arena broadcast screenshot',
     negativePrompt:
-      'readable team names, existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'real esports players, readable team names, existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Esports stadium broadcast capture: an original broadcast view of an esports arena, players in glass booths, giant screens and a roaring crowd in colored light.',
+        'Riot Games League of Legends World Championship (2017) broadcast look: esports stadium with glass player booths, giant screens and an augmented-reality dragon flying over the crowd.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject in an esports arena with booths and giant screens.',
-      color_and_tone: 'Dark arena with team blue and red light.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as anonymous crowds and players in team jerseys under huge screens. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        'Stadium blue, gold and dragon fire, true to the League of Legends Worlds 2017 palette.',
       lighting_and_shadow:
-        'Stage lights, screen glow and crowd lights, kept consistent across the whole image.',
+        'Stadium light with AR glow, lit the way League of Legends Worlds 2017 lights its levels.',
       texture_and_material:
-        'Glass booths, headsets and LED screens, kept consistent across the whole image.',
+        'Broadcast camera sharpness, with the in-engine surface finish of League of Legends Worlds 2017.',
       camera_and_composition:
-        'Wide broadcast angle across the arena, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with electric competition, kept consistent across the whole image.',
+        'Wide broadcast stadium shot, framed the way League of Legends Worlds 2017 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with electric grand final.',
       rendering_and_quality:
-        'Clean capture with no readable team names, kept consistent across the whole image.',
+        'Authentic esports broadcast frame, matching real League of Legends Worlds 2017 screenshots.',
       creative_brief:
-        "Esports stadium broadcast capture: an original broadcast view of an esports arena, players in glass booths, giant screens and a roaring crowd in colored light. Carry it through glass booths, giant screens, crowd, team lights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'glass booths; giant screens; crowd; team lights',
+        "Riot Games League of Legends World Championship (2017) broadcast look: esports stadium with glass player booths, giant screens and an augmented-reality dragon flying over the crowd. Carry it through Worlds AR dragon, stadium, broadcast. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Worlds AR dragon; stadium; broadcast',
     },
     ui: {
       previewStatus: 'pending',
@@ -606,37 +599,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-147',
-    name: 'Fantasy Golf Course Capture',
-    displayName: 'Fantasy Golf Course Capture',
+    name: "Everybody's Golf 2017 - Clap Hanz Cartoon Links",
+    displayName: "Everybody's Golf 2017 - Clap Hanz Cartoon Links",
     styleAnchors: [
-      'Fantasy Golf Course Capture',
+      "Everybody's Golf 2017 - Clap Hanz Cartoon Links",
       'magical golf game screenshot',
       'floating greens',
     ],
     category: '5. Speed, Sport & Competitive Arenas',
     domain: 'magical golf game screenshot',
     negativePrompt:
-      'distance numbers, existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'distance numbers, existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Fantasy golf course capture: an original golf game screenshot on a magical course with floating greens, castle hazards, lava bunkers and a bright shot trail.',
+        "Clap Hanz Everybody's Golf (2017) look: bright cartoon golf with big-headed golfers, lush fairways, shot arcs and cheerful exaggerated reactions.",
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject taking a shot on a magical golf course.',
-      color_and_tone:
-        'Lush greens, sky blue and magical accents, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as big-headed cheerful cartoon golfers. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: "Lush fairway green and sky blue, true to the Everybody's Golf 2017 palette.",
       lighting_and_shadow:
-        'Bright daylight with glowing shot trail, kept consistent across the whole image.',
+        "Bright cheerful daylight, lit the way Everybody's Golf 2017 lights its levels.",
       texture_and_material:
-        'Manicured grass, stone ruins and water, kept consistent across the whole image.',
+        "Soft stylized cartoon surfaces, with the in-engine surface finish of Everybody's Golf 2017.",
       camera_and_composition:
-        'Behind the golfer toward a distant green, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with whimsical leisure, kept consistent across the whole image.',
+        "Behind-the-golfer shot view, framed the way Everybody's Golf 2017 frames its gameplay screens.",
+      atmosphere_and_mood: 'Keep the requested mood with cheerful playful sport.',
       rendering_and_quality:
-        'Clean capture with no distance text, kept consistent across the whole image.',
+        "Authentic cartoon golf screen, matching real Everybody's Golf 2017 screenshots.",
       creative_brief:
-        "Fantasy golf course capture: an original golf game screenshot on a magical course with floating greens, castle hazards, lava bunkers and a bright shot trail. Carry it through floating greens, magical hazards, shot trail, golfer. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'floating greens; magical hazards; shot trail; golfer',
+        "Clap Hanz Everybody's Golf (2017) look: bright cartoon golf with big-headed golfers, lush fairways, shot arcs and cheerful exaggerated reactions. Carry it through Everybody's Golf cartoon, fairways, shot arcs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: "Everybody's Golf cartoon; fairways; shot arcs",
     },
     ui: {
       previewStatus: 'pending',
@@ -644,36 +635,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-148',
-    name: 'Sailing Regatta Race Capture',
-    displayName: 'Sailing Regatta Race Capture',
+    name: 'Assassins Creed IV Black Flag 2013 - Ubisoft Stormy Sailing',
+    displayName: 'Assassins Creed IV Black Flag 2013 - Ubisoft Stormy Sailing',
     styleAnchors: [
-      'Sailing Regatta Race Capture',
+      'Assassins Creed IV Black Flag 2013 - Ubisoft Stormy Sailing',
       'sailboat racing game screenshot',
       'heeling boats',
     ],
     category: '5. Speed, Sport & Competitive Arenas',
     domain: 'sailboat racing game screenshot',
     negativePrompt:
-      'sail numbers, existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a hooded assassin, sail numbers, existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Sailing regatta race capture: an original sailing race screenshot of sleek boats heeling in strong wind, spray, buoys and dramatic sky over the sea.',
+        "Ubisoft Assassin's Creed IV: Black Flag (2013) look: third-person tall-ship sailing on dynamic Caribbean oceans, storms, rogue waves, spray and sails full of wind.",
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject racing a sailboat in strong wind and spray.',
-      color_and_tone: 'Deep sea blue, white sails and bright hulls.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render vessels as sailing ships with crews on deck. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        'Storm teal, sail white and Caribbean blue, true to the Assassins Creed IV Black Flag 2013 palette.',
       lighting_and_shadow:
-        'Bright sun on spray with cloud shadows, kept consistent across the whole image.',
+        'Stormy light with sun breaks, lit the way Assassins Creed IV Black Flag 2013 lights its levels.',
       texture_and_material:
-        'Taut sails, wet decks and waves, kept consistent across the whole image.',
+        'Dynamic water spray and canvas, with the in-engine surface finish of Assassins Creed IV Black Flag 2013.',
       camera_and_composition:
-        'Low angle near the waterline, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with wind-whipped competition, kept consistent across the whole image.',
+        'Third-person ship camera, framed the way Assassins Creed IV Black Flag 2013 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with windswept seafaring daring.',
       rendering_and_quality:
-        'Clean capture with no sail numbers, kept consistent across the whole image.',
+        'Authentic naval sailing screen, matching real Assassins Creed IV Black Flag 2013 screenshots.',
       creative_brief:
-        "Sailing regatta race capture: an original sailing race screenshot of sleek boats heeling in strong wind, spray, buoys and dramatic sky over the sea. Carry it through heeling boats, spray, buoys, strong wind. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'heeling boats; spray; buoys; strong wind',
+        "Ubisoft Assassin's Creed IV: Black Flag (2013) look: third-person tall-ship sailing on dynamic Caribbean oceans, storms, rogue waves, spray and sails full of wind. Carry it through Black Flag ocean, storms, sails. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Black Flag ocean; storms; sails',
     },
     ui: {
       previewStatus: 'pending',

@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'LucasArts The Secret of Monkey Island (1990) look: moody painted pixel backgrounds, Caribbean pirate towns at night, small characters and witty verb interface.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as small pixel characters in moody painted Caribbean scenes. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Moody Caribbean night blue, tavern orange and sea teal.
-  lighting_and_shadow: Moonlit night and warm tavern windows, lit the way The Secret of Monkey Island 1990 lights its scenes.
-  texture_and_material: Painted VGA pixel art, with the surface finish of The Secret of Monkey Island 1990.
-  camera_and_composition: Side-view scenes with a verb interface, framed the way The Secret of Monkey Island 1990 composes its shots and pages.
+  lighting_and_shadow: Moonlit night and warm tavern windows, lit the way The Secret of Monkey Island 1990 lights its levels.
+  texture_and_material: Painted VGA pixel art, with the in-engine surface finish of The Secret of Monkey Island 1990.
+  camera_and_composition: Side-view scenes with a verb interface, framed the way The Secret of Monkey Island 1990 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with witty piratical adventure.
-  rendering_and_quality: Authentic VGA adventure screen, in the recognizable hand of The Secret of Monkey Island 1990.
+  rendering_and_quality: Authentic VGA adventure screen, matching real The Secret of Monkey Island 1990 screenshots.
   creative_brief: 'LucasArts The Secret of Monkey Island (1990) look: moody painted pixel backgrounds, Caribbean pirate towns at night, small characters and witty verb interface. Carry it through Monkey Island moody pixels, pirate towns, verb interface. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Monkey Island moody pixels; pirate towns; verb interface
 avoidRules:
@@ -47,13 +47,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: a blond wannabe pirate in a white shirt, a ghost pirate, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a blond wannabe pirate in a white shirt, a ghost pirate, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

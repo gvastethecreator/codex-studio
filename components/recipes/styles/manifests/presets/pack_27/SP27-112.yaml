@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Double Fine Psychonauts (2005) look: Scott Campbell cartoon designs with lopsided heads and spindly limbs, warped mindscape levels, surreal floating architecture and Tim Burton-like whimsy.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a lopsided spindly cartoon figure inside a warped surreal mindscape. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Muted camp greens with surreal mindscape purples, true to the Psychonauts 2005 palette.
-  lighting_and_shadow: Theatrical surreal lighting inside minds, lit the way Psychonauts 2005 lights its scenes.
-  texture_and_material: Painted cartoon textures and warped geometry, with the surface finish of Psychonauts 2005.
-  camera_and_composition: Third-person platformer camera, framed the way Psychonauts 2005 composes its shots and pages.
+  lighting_and_shadow: Theatrical surreal lighting inside minds, lit the way Psychonauts 2005 lights its levels.
+  texture_and_material: Painted cartoon textures and warped geometry, with the in-engine surface finish of Psychonauts 2005.
+  camera_and_composition: Third-person platformer camera, framed the way Psychonauts 2005 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with weird whimsical psychology.
-  rendering_and_quality: Authentic mid-2000s surreal platformer screen, in the recognizable hand of Psychonauts 2005.
+  rendering_and_quality: Authentic mid-2000s surreal platformer screen, matching real Psychonauts 2005 screenshots.
   creative_brief: 'Double Fine Psychonauts (2005) look: Scott Campbell cartoon designs with lopsided heads and spindly limbs, warped mindscape levels, surreal floating architecture and Tim Burton-like whimsy. Carry it through Psychonauts lopsided designs, warped mindscape, whimsy. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Psychonauts lopsided designs; warped mindscape; whimsy
 avoidRules:
@@ -46,13 +46,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: a goggled boy in a psychic suit, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a goggled boy in a psychic suit, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

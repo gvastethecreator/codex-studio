@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-216
 packId: pack_12
-name: Dream-Logic Puzzle Gameplay
+name: LSD Dream Emulator 1998 - Asmik Ace PS1 Dreams
 styleAnchors:
-  - Dream-Logic Puzzle Gameplay
+  - LSD Dream Emulator 1998 - Asmik Ace PS1 Dreams
   - surreal dream puzzle gameplay
   - impossible geometry
-displayName: Dream-Logic Puzzle Gameplay
+displayName: LSD Dream Emulator 1998 - Asmik Ace PS1 Dreams
 category: 11. Psychological & Tactical Gameplay
 domain: surreal dream puzzle gameplay
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - dream-logic
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Dream-logic puzzle gameplay: an original first-person capture of an impossible dream space, doors in the sky, stairs that loop and furniture floating in soft light.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; place the subject in an impossible dream space with looping stairs and floating rooms.
-  color_and_tone: Soft pastels with deep dreamy shadows, kept consistent across the whole image.
-  lighting_and_shadow: Soft sourceless light, kept consistent across the whole image.
-  texture_and_material: Floating furniture, clouds and impossible geometry, kept consistent across the whole image.
-  camera_and_composition: First-person toward impossible architecture, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with gentle surreal wonder.
-  rendering_and_quality: Clean capture with no UI, kept consistent across the whole image.
-  creative_brief: "Dream-logic puzzle gameplay: an original first-person capture of an impossible dream space, doors in the sky, stairs that loop and furniture floating in soft light. Carry it through impossible geometry, floating furniture, looping stairs, dream light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: impossible geometry; floating furniture; looping stairs; dream light
+  aesthetic: 'Asmik Ace LSD: Dream Emulator (1998) look: surreal PS1 dream exploration, low-poly pastel worlds, impossible links between places and uncanny textures.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as low-poly dream figures. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Pastel pink, sky blue and surreal colors, true to the LSD Dream Emulator 1998 palette.
+  lighting_and_shadow: Flat dream light, lit the way LSD Dream Emulator 1998 lights its levels.
+  texture_and_material: Warped PS1 textures, with the in-engine surface finish of LSD Dream Emulator 1998.
+  camera_and_composition: First-person dream view, framed the way LSD Dream Emulator 1998 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with uncanny dreamy drift.
+  rendering_and_quality: Authentic PS1 dream screen, matching real LSD Dream Emulator 1998 screenshots.
+  creative_brief: 'Asmik Ace LSD: Dream Emulator (1998) look: surreal PS1 dream exploration, low-poly pastel worlds, impossible links between places and uncanny textures. Carry it through LSD Dream Emulator, pastel, surreal PS1. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: LSD Dream Emulator; pastel; surreal PS1
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - dream-logic
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

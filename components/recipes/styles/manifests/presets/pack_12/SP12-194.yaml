@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-194
 packId: pack_12
-name: Ink-Brush Brawler Gameplay
+name: Sumioni 2012 - Acquire Ink Brush Brawler
 styleAnchors:
-  - Ink-Brush Brawler Gameplay
+  - Sumioni 2012 - Acquire Ink Brush Brawler
   - sumi-ink action gameplay
   - ink-painted fighters
-displayName: Ink-Brush Brawler Gameplay
+displayName: Sumioni 2012 - Acquire Ink Brush Brawler
 category: 10. Graphic & Feudal Gameplay
 domain: sumi-ink action gameplay
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - ink-brawler
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Ink-brush brawler gameplay: an original action capture where every character and strike is painted in wet black ink with splashes of red, on a rice-paper world.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; render the subject as a wet ink-painted fighter in an ink-wash world.
-  color_and_tone: Black ink, paper white and red accents, kept consistent across the whole image.
-  lighting_and_shadow: Ink density instead of light, kept consistent across the whole image.
-  texture_and_material: Brush splashes, dry brush and paper grain, kept consistent across the whole image.
-  camera_and_composition: Side-on action with splash effects, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with explosive calligraphic energy.
-  rendering_and_quality: Clean ink capture with no UI, kept consistent across the whole image.
-  creative_brief: "Ink-brush brawler gameplay: an original action capture where every character and strike is painted in wet black ink with splashes of red, on a rice-paper world. Carry it through ink-painted fighters, splash strikes, rice paper, red accents. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: ink-painted fighters; splash strikes; rice paper; red accents
+  aesthetic: 'Acquire Sumioni: Demon Arts (2012) look: side-view action painted in sumi-e ink on rice paper, drawn ink platforms, red accents and ink-blot demons.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as ink-brush figures with red accents. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Ink black, rice paper and red, true to the Sumioni 2012 palette.
+  lighting_and_shadow: Flat paper light, lit the way Sumioni 2012 lights its levels.
+  texture_and_material: Wet ink brush on paper, with the in-engine surface finish of Sumioni 2012.
+  camera_and_composition: Side-view brawler, framed the way Sumioni 2012 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with swift painted fury.
+  rendering_and_quality: Authentic ink-brush action screen, matching real Sumioni 2012 screenshots.
+  creative_brief: 'Acquire Sumioni: Demon Arts (2012) look: side-view action painted in sumi-e ink on rice paper, drawn ink platforms, red accents and ink-blot demons. Carry it through Sumioni ink, rice paper, red accents. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Sumioni ink; rice paper; red accents
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - ink-brawler
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

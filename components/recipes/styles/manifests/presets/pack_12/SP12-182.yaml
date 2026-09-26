@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-182
 packId: pack_12
-name: Lock-On Boss Duel Gameplay
+name: Elden Ring 2022 - FromSoftware Lands Between
 styleAnchors:
-  - Lock-On Boss Duel Gameplay
+  - Elden Ring 2022 - FromSoftware Lands Between
   - third-person boss battle gameplay
   - lock-on camera
-displayName: Lock-On Boss Duel Gameplay
+displayName: Elden Ring 2022 - FromSoftware Lands Between
 category: 9. Gothic & Dungeon Gameplay
 domain: third-person boss battle gameplay
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,22 +20,24 @@ tags:
   - lockon-duel
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Lock-on boss duel gameplay: an original third-person capture of a small warrior locked onto a colossal boss in a ruined arena, dodge roll, fog and dramatic scale.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject locked onto a huge boss in a third-person duel.
-  color_and_tone: Grey fog, dark stone and one vivid boss accent.
-  lighting_and_shadow: Dramatic backlight and dust, kept consistent across the whole image.
-  texture_and_material: Worn armor, ruined stone and boss hide, kept consistent across the whole image.
-  camera_and_composition: Over-the-shoulder with boss filling the frame, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with punishing grandeur, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no health bars, kept consistent across the whole image.
-  creative_brief: "Lock-on boss duel gameplay: an original third-person capture of a small warrior locked onto a colossal boss in a ruined arena, dodge roll, fog and dramatic scale. Carry it through lock-on camera, colossal boss, dodge roll, ruined arena. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: lock-on camera; colossal boss; dodge roll; ruined arena
+  aesthetic: 'FromSoftware Elden Ring (2022) look: third-person open-world dark fantasy, golden Erdtree light, colossal bosses, ruined arenas and lock-on duels.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as weathered Tarnished warriors in mixed armor. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Golden light, ash grey and flame orange, true to the Elden Ring 2022 palette.
+  lighting_and_shadow: Golden tree glow and fire, lit the way Elden Ring 2022 lights its levels.
+  texture_and_material: Weathered stone and armor, with the in-engine surface finish of Elden Ring 2022.
+  camera_and_composition: Third-person lock-on view, framed the way Elden Ring 2022 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with epic desperate duel.
+  rendering_and_quality: Authentic modern dark fantasy screen, matching real Elden Ring 2022 screenshots.
+  creative_brief: 'FromSoftware Elden Ring (2022) look: third-person open-world dark fantasy, golden Erdtree light, colossal bosses, ruined arenas and lock-on duels. Carry it through Elden Ring bosses, golden light, lock-on. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Elden Ring bosses; golden light; lock-on
 avoidRules:
+  - existing Elden Ring bosses
+  - a giant golden tree
   - health bars
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -44,13 +46,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: health bars, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing Elden Ring bosses, a giant golden tree, health bars, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -65,6 +70,7 @@ taxonomy:
     - lockon-duel
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

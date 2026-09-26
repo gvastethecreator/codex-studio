@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-150
 packId: pack_12
-name: Blizzard Trek Survival Capture
+name: Never Alone 2014 - Upper One Arctic Folktale
 styleAnchors:
-  - Blizzard Trek Survival Capture
+  - Never Alone 2014 - Upper One Arctic Folktale
   - snowstorm survival trek screenshot
   - blizzard
-displayName: Blizzard Trek Survival Capture
+displayName: Never Alone 2014 - Upper One Arctic Folktale
 category: 6. Wilderness Hunts & Harsh Frontiers
 domain: snowstorm survival trek screenshot
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - blizzard-trek
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Blizzard trek survival capture: an original third-person screenshot of a lone traveler bent against a howling blizzard, rope trailing, lantern glow in white-out snow.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject pushing through a blizzard with limited visibility.
-  color_and_tone: White-grey snow with warm lantern orange, kept consistent across the whole image.
-  lighting_and_shadow: Diffuse white-out and a small warm glow, kept consistent across the whole image.
-  texture_and_material: Swirling snow, frosted fabric and ice, kept consistent across the whole image.
-  camera_and_composition: Third-person behind the traveler, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with desperate endurance, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no HUD, kept consistent across the whole image.
-  creative_brief: "Blizzard trek survival capture: an original third-person screenshot of a lone traveler bent against a howling blizzard, rope trailing, lantern glow in white-out snow. Carry it through blizzard, white-out, lantern, lone traveler. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: blizzard; white-out; lantern; lone traveler
+  aesthetic: 'Upper One Games Never Alone (2014) look: side-view Arctic folktale platformer inspired by Iñupiaq art, scrimshaw-like spirit shapes, blizzards and ice.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as small bundled Arctic travelers in fur parkas. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Blizzard white, ice blue and spirit glow, true to the Never Alone 2014 palette.
+  lighting_and_shadow: Blizzard haze and spirit light, lit the way Never Alone 2014 lights its levels.
+  texture_and_material: Stylized snow and scrimshaw spirit lines, with the in-engine surface finish of Never Alone 2014.
+  camera_and_composition: Side-view platformer, framed the way Never Alone 2014 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with bitter folkloric endurance.
+  rendering_and_quality: Authentic folktale platformer screen, matching real Never Alone 2014 screenshots.
+  creative_brief: 'Upper One Games Never Alone (2014) look: side-view Arctic folktale platformer inspired by Iñupiaq art, scrimshaw-like spirit shapes, blizzards and ice. Carry it through Never Alone Arctic, spirit shapes, blizzard. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Never Alone Arctic; spirit shapes; blizzard
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - blizzard-trek
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

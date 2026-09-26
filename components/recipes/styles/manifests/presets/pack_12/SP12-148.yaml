@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-148
 packId: pack_12
-name: Sailing Regatta Race Capture
+name: Assassins Creed IV Black Flag 2013 - Ubisoft Stormy Sailing
 styleAnchors:
-  - Sailing Regatta Race Capture
+  - Assassins Creed IV Black Flag 2013 - Ubisoft Stormy Sailing
   - sailboat racing game screenshot
   - heeling boats
-displayName: Sailing Regatta Race Capture
+displayName: Assassins Creed IV Black Flag 2013 - Ubisoft Stormy Sailing
 category: 5. Speed, Sport & Competitive Arenas
 domain: sailboat racing game screenshot
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,18 +20,20 @@ tags:
   - regatta
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Sailing regatta race capture: an original sailing race screenshot of sleek boats heeling in strong wind, spray, buoys and dramatic sky over the sea.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject racing a sailboat in strong wind and spray.
-  color_and_tone: Deep sea blue, white sails and bright hulls.
-  lighting_and_shadow: Bright sun on spray with cloud shadows, kept consistent across the whole image.
-  texture_and_material: Taut sails, wet decks and waves, kept consistent across the whole image.
-  camera_and_composition: Low angle near the waterline, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with wind-whipped competition, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no sail numbers, kept consistent across the whole image.
-  creative_brief: "Sailing regatta race capture: an original sailing race screenshot of sleek boats heeling in strong wind, spray, buoys and dramatic sky over the sea. Carry it through heeling boats, spray, buoys, strong wind. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: heeling boats; spray; buoys; strong wind
+  aesthetic: 'Ubisoft Assassin''s Creed IV: Black Flag (2013) look: third-person tall-ship sailing on dynamic Caribbean oceans, storms, rogue waves, spray and sails full of wind.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render vessels as sailing ships with crews on deck. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Storm teal, sail white and Caribbean blue, true to the Assassins Creed IV Black Flag 2013 palette.
+  lighting_and_shadow: Stormy light with sun breaks, lit the way Assassins Creed IV Black Flag 2013 lights its levels.
+  texture_and_material: Dynamic water spray and canvas, with the in-engine surface finish of Assassins Creed IV Black Flag 2013.
+  camera_and_composition: Third-person ship camera, framed the way Assassins Creed IV Black Flag 2013 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with windswept seafaring daring.
+  rendering_and_quality: Authentic naval sailing screen, matching real Assassins Creed IV Black Flag 2013 screenshots.
+  creative_brief: 'Ubisoft Assassin''s Creed IV: Black Flag (2013) look: third-person tall-ship sailing on dynamic Caribbean oceans, storms, rogue waves, spray and sails full of wind. Carry it through Black Flag ocean, storms, sails. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Black Flag ocean; storms; sails
 avoidRules:
+  - a hooded assassin
   - sail numbers
   - existing game characters, logos or levels
   - readable interface text
@@ -44,13 +46,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: sail numbers, existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a hooded assassin, sail numbers, existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -65,6 +70,7 @@ taxonomy:
     - regatta
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

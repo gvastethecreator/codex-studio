@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP12-023
 packId: pack_12
-name: Surviving Mars Orbital Garden
+name: Surviving Mars 2018 - Haemimont Retro-Future Colony
 styleAnchors:
-  - Surviving Mars gameplay screenshots
+  - Surviving Mars 2018 - Haemimont Retro-Future Colony
   - Surviving Mars Orbital Garden
-displayName: Surviving Mars Orbital Garden
+displayName: Surviving Mars 2018 - Haemimont Retro-Future Colony
 category: 3. Sci-Fi Frontiers & Mech Zones
-version: 1
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,47 +23,16 @@ tags:
   - hud-contextual-hud
   - reference-title
 visualDna:
-  aesthetic: 'In-game screenshot look informed by Surviving Mars gameplay: colony-builder capture with domes, red terrain, resource pipes, garden interiors, drone paths, and readable management scale. It never recreates an exact official level, character, logo or marketing art.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable Surviving Mars-adjacent game
-    screenshot subject: keep clear role silhouette, player/enemy/object function, scale
-    relationship, hitbox-like readability, and interaction affordances without copying source
-    characters or named IP elements.
-  color_and_tone: >-
-    Use a Surviving Mars-informed palette: Mars red, dome glass blue, white habitat shells,
-    hydroponic green, yellow hazard marks, and shadowed basalt. Keep value grouping legible at
-    gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or
-    objective cues rather than decorative wash.
-  lighting_and_shadow: >-
-    Light the image through hard Martian sun, glass-dome reflections, night colony LEDs, dust storm
-    haze, and greenhouse glow. Lighting must clarify the playable route, threat, focal subject, or
-    objective and avoid generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from modular domes, cables, solar panels, rover tracks, pressurized corridors,
-    garden beds, and UI-like planning overlays. Materials should feel like in-engine game assets
-    captured during play, with enough texture identity to separate props, terrain, characters,
-    hazards, and interactables.
-  camera_and_composition: >-
-    Compose with elevated management camera with colony clusters, build nodes, resource lines, drone
-    movement, and infrastructure hierarchy. The frame should read as a plausible gameplay capture;
-    include UI/HUD only when it matches the source game's visual logic and improves clarity.
-  atmosphere_and_mood: 'Surviving Mars-derived mood: optimistic, technical, fragile, logistical, and frontier-scientific; it follows the tone of the requested scene without forcing a fixed mission or story.'
-  rendering_and_quality: >-
-    Finish as a coherent in-engine screenshot style, not concept art: builder HUD is allowed:
-    resource bars, build palette, dome status, and management overlays should look functional.
-    Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake
-    logos, stock-photo polish, or random interface clutter.
-  key_features: >-
-    Surviving Mars gameplay screenshots; colony-builder capture with domes, red terrain, resource
-    pipes, garden interiors, drone paths, and readable management scale; Mars red, dome glass blue,
-    white habitat shells, hydroponic green, yellow hazard marks, and shadowed basalt; hard Martian
-    sun, glass-dome reflections, night colony LEDs, dust storm haze, and greenhouse glow; modular
-    domes, cables, solar panels, rover tracks, pressurized corridors, garden beds, and UI-like
-    planning overlays; elevated management camera with colony clusters, build nodes, resource lines,
-    drone movement, and infrastructure hierarchy; optimistic, technical, fragile, logistical, and
-    frontier-scientific; HUD guidance: builder HUD is allowed: resource bars, build palette, dome
-    status, and management overlays should look functional
-  creative_brief: "Surviving Mars Orbital Garden: in-game screenshot language informed by Surviving Mars, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'Haemimont Games Surviving Mars (2018) look: retro-futurist colony builder on red Mars, glass domes linked by tubes, drones, rovers and optimistic fifties space-age design.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people and machines as tiny colonists, drones and rovers among retro-futurist domes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Mars red, dome glass teal and space-age white.
+  lighting_and_shadow: Dusty Mars daylight and dust storms, lit the way Surviving Mars 2018 lights its levels.
+  texture_and_material: Clean retro-futurist panels and red dust, with the in-engine surface finish of Surviving Mars 2018.
+  camera_and_composition: Overhead colony builder view, framed the way Surviving Mars 2018 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with optimistic frontier building.
+  rendering_and_quality: Authentic colony builder screen, matching real Surviving Mars 2018 screenshots.
+  key_features: Surviving Mars domes; retro-futurism; drones; red dust
+  creative_brief: 'Haemimont Games Surviving Mars (2018) look: retro-futurist colony builder on red Mars, glass domes linked by tubes, drones, rovers and optimistic fifties space-age design. Carry it through Surviving Mars domes, retro-futurism, drones, red dust. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - watermark
   - logo
@@ -91,23 +60,15 @@ avoidRules:
   - copied box art composition
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-023.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Surviving Mars
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    builder HUD is allowed: resource bars, build palette, dome status, and management overlays
-    should look functional
+  hudGuidance: 'builder HUD is allowed: resource bars, build palette, dome status, and management overlays should look functional'
   renderFamily: isometric-top-down
   cameraFamily: isometric-top-down
   hudMode: contextual-hud

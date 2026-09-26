@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-159
 packId: pack_12
-name: Bank Vault Crew Heist Capture
+name: Payday 2 2013 - Overkill Masked Crew
 styleAnchors:
-  - Bank Vault Crew Heist Capture
+  - Payday 2 2013 - Overkill Masked Crew
   - co-op bank heist screenshot
   - vault door
-displayName: Bank Vault Crew Heist Capture
+displayName: Payday 2 2013 - Overkill Masked Crew
 category: 7. Heists, Horror & Underworld Runs
 domain: co-op bank heist screenshot
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,22 @@ tags:
   - vault-heist
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Bank vault crew heist capture: an original first-person co-op heist screenshot of masked crew members drilling a massive vault door under flickering alarm lights.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject as part of a masked crew breaking into a bank vault.
-  color_and_tone: Marble whites, gold, and red alarm light, kept consistent across the whole image.
-  lighting_and_shadow: Flashing alarms and drill sparks, kept consistent across the whole image.
-  texture_and_material: Steel vault door, marble floors and cash stacks.
-  camera_and_composition: First-person with crew members in frame, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with tense criminal chaos.
-  rendering_and_quality: Clean capture with no HUD text, kept consistent across the whole image.
-  creative_brief: "Bank vault crew heist capture: an original first-person co-op heist screenshot of masked crew members drilling a massive vault door under flickering alarm lights. Carry it through vault door, masked crew, drill sparks, alarm lights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: vault door; masked crew; drill sparks; alarm lights
+  aesthetic: 'Overkill Software Payday 2 (2013) look: first-person co-op heists, masked crews in suits, vault drills, flashing alarms and police assaults.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as heist crew in suits and custom masks. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Alarm red, vault steel and suit black, true to the Payday 2 2013 palette.
+  lighting_and_shadow: Flashing alarms and fluorescent bank light, lit the way Payday 2 2013 lights its levels.
+  texture_and_material: Vault steel, suits and money, with the in-engine surface finish of Payday 2 2013.
+  camera_and_composition: First-person view at a vault, framed the way Payday 2 2013 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with tense heist adrenaline.
+  rendering_and_quality: Authentic co-op heist screen, matching real Payday 2 2013 screenshots.
+  creative_brief: 'Overkill Software Payday 2 (2013) look: first-person co-op heists, masked crews in suits, vault drills, flashing alarms and police assaults. Carry it through Payday vault drill, masked crew, alarms. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Payday vault drill; masked crew; alarms
 avoidRules:
+  - clown heist masks
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: clown heist masks, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +68,7 @@ taxonomy:
     - vault-heist
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-160
 packId: pack_12
-name: Casino Floor Infiltration Capture
+name: No One Lives Forever 2000 - Monolith Sixties Spy
 styleAnchors:
-  - Casino Floor Infiltration Capture
+  - No One Lives Forever 2000 - Monolith Sixties Spy
   - stealth casino heist screenshot
   - casino floor
-displayName: Casino Floor Infiltration Capture
+displayName: No One Lives Forever 2000 - Monolith Sixties Spy
 category: 7. Heists, Horror & Underworld Runs
 domain: stealth casino heist screenshot
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,22 +20,22 @@ tags:
   - casino-infiltration
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Casino floor infiltration capture: an original third-person stealth screenshot of a spy moving across a glittering casino floor, cameras, guards and chandeliers.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject blending into or sneaking across a glittering casino floor.
-  color_and_tone: Gold, deep red carpet and green felt, kept consistent across the whole image.
-  lighting_and_shadow: Chandelier glow and table lamps, kept consistent across the whole image.
-  texture_and_material: Velvet, polished brass, chips and cards, kept consistent across the whole image.
-  camera_and_composition: Third-person over-the-shoulder across the floor, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with glamorous tension, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no readable signs, kept consistent across the whole image.
-  creative_brief: "Casino floor infiltration capture: an original third-person stealth screenshot of a spy moving across a glittering casino floor, cameras, guards and chandeliers. Carry it through casino floor, disguised spy, security cameras, chandeliers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: casino floor; disguised spy; security cameras; chandeliers
+  aesthetic: 'Monolith Productions The Operative: No One Lives Forever (2000) look: groovy sixties spy fiction, mod fashion, casino glamour, gadgets and early-2000s low-poly interiors.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as groovy sixties spies in mod fashion and tuxedos. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Mod orange, casino red and gold, true to the No One Lives Forever 2000 palette.
+  lighting_and_shadow: Casino glamour lighting, lit the way No One Lives Forever 2000 lights its levels.
+  texture_and_material: Early-2000s low-poly textures, with the in-engine surface finish of No One Lives Forever 2000.
+  camera_and_composition: First-person casino view, framed the way No One Lives Forever 2000 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with groovy spy glamour.
+  rendering_and_quality: Authentic early-2000s spy shooter screen, matching real No One Lives Forever 2000 screenshots.
+  creative_brief: 'Monolith Productions The Operative: No One Lives Forever (2000) look: groovy sixties spy fiction, mod fashion, casino glamour, gadgets and early-2000s low-poly interiors. Carry it through NOLF sixties spy, mod fashion, casino. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: NOLF sixties spy; mod fashion; casino
 avoidRules:
   - readable signs
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -44,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: readable signs, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable signs, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -65,6 +68,7 @@ taxonomy:
     - casino-infiltration
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

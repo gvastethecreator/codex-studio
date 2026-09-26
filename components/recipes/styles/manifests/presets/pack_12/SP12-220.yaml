@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-220
 packId: pack_12
-name: Suburban Night Walk Horror Gameplay
+name: Yomawari Night Alone 2015 - Nippon Ichi Night Walk
 styleAnchors:
-  - Suburban Night Walk Horror Gameplay
+  - Yomawari Night Alone 2015 - Nippon Ichi Night Walk
   - quiet suburb night horror gameplay
   - empty suburb
-displayName: Suburban Night Walk Horror Gameplay
+displayName: Yomawari Night Alone 2015 - Nippon Ichi Night Walk
 category: 11. Psychological & Tactical Gameplay
 domain: quiet suburb night horror gameplay
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,22 +20,22 @@ tags:
   - suburban-night
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Suburban night walk horror gameplay: an original third-person capture of walking an empty suburb at night, porch lights, humming streetlamps and something wrong down the block.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject walking an empty suburban street at night.
-  color_and_tone: Orange streetlamps, dark lawns and blue night, kept consistent across the whole image.
-  lighting_and_shadow: Pools of streetlamp light between darkness, kept consistent across the whole image.
-  texture_and_material: Asphalt, lawns, picket fences and mailboxes without text.
-  camera_and_composition: Third-person down the middle of the street, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with quiet domestic unease.
-  rendering_and_quality: Clean capture with no readable signs, kept consistent across the whole image.
-  creative_brief: "Suburban night walk horror gameplay: an original third-person capture of walking an empty suburb at night, porch lights, humming streetlamps and something wrong down the block. Carry it through empty suburb, streetlamps, porch lights, night walk. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: empty suburb; streetlamps; porch lights; night walk
+  aesthetic: 'Nippon Ichi Software Yomawari: Night Alone (2015) look: a small chibi girl with a flashlight walking a dark Japanese suburb at night, cute art and creeping spirits.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as small chibi figures with flashlights. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Night blue with flashlight yellow, true to the Yomawari Night Alone 2015 palette.
+  lighting_and_shadow: Flashlight cone in darkness, lit the way Yomawari Night Alone 2015 lights its levels.
+  texture_and_material: Soft hand-drawn art, with the in-engine surface finish of Yomawari Night Alone 2015.
+  camera_and_composition: Top-down night walk view, framed the way Yomawari Night Alone 2015 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with cute creeping dread.
+  rendering_and_quality: Authentic chibi horror screen, matching real Yomawari Night Alone 2015 screenshots.
+  creative_brief: 'Nippon Ichi Software Yomawari: Night Alone (2015) look: a small chibi girl with a flashlight walking a dark Japanese suburb at night, cute art and creeping spirits. Carry it through Yomawari night walk, chibi, spirits. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Yomawari night walk; chibi; spirits
 avoidRules:
   - readable signs
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -44,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: readable signs, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable signs, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -65,6 +68,7 @@ taxonomy:
     - suburban-night
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

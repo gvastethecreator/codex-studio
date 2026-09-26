@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-205
 packId: pack_12
-name: Gladiator Arena Crowd Gameplay
+name: Ryse Son of Rome 2013 - Crytek Colosseum
 styleAnchors:
-  - Gladiator Arena Crowd Gameplay
+  - Ryse Son of Rome 2013 - Crytek Colosseum
   - arena combat gameplay
   - sand arena
-displayName: Gladiator Arena Crowd Gameplay
+displayName: Ryse Son of Rome 2013 - Crytek Colosseum
 category: 10. Graphic & Feudal Gameplay
 domain: arena combat gameplay
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,19 +20,19 @@ tags:
   - gladiator-arena
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Gladiator arena crowd gameplay: an original third-person capture of gladiators fighting in a sunlit sand arena, roaring crowd, beasts and emperor box.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject fighting in a sunlit sand arena before a crowd.
-  color_and_tone: Bright sand, sun gold and crowd colors, kept consistent across the whole image.
-  lighting_and_shadow: Harsh midday sun and dust, kept consistent across the whole image.
-  texture_and_material: Sand, bronze armor and stone tiers, kept consistent across the whole image.
-  camera_and_composition: Low angle with the crowd in the tiers.
-  atmosphere_and_mood: Keep the requested mood with roaring spectacle, kept consistent across the whole image.
-  rendering_and_quality: Clean capture without gore or UI, kept consistent across the whole image.
-  creative_brief: "Gladiator arena crowd gameplay: an original third-person capture of gladiators fighting in a sunlit sand arena, roaring crowd, beasts and emperor box. Carry it through sand arena, roaring crowd, gladiators, beasts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: sand arena; roaring crowd; gladiators; beasts
+  aesthetic: 'Crytek Ryse: Son of Rome (2013) look: third-person Roman gladiator combat in a sunlit colosseum, crowds, cinematic armor detail and dust.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as Roman gladiators and legionaries. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Sand gold, Roman red and bronze, true to the Ryse Son of Rome 2013 palette.
+  lighting_and_shadow: Hot sun and dust, lit the way Ryse Son of Rome 2013 lights its levels.
+  texture_and_material: Detailed bronze and leather, with the in-engine surface finish of Ryse Son of Rome 2013.
+  camera_and_composition: Third-person arena view, framed the way Ryse Son of Rome 2013 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with roaring arena spectacle.
+  rendering_and_quality: Authentic cinematic arena screen, matching real Ryse Son of Rome 2013 screenshots.
+  creative_brief: 'Crytek Ryse: Son of Rome (2013) look: third-person Roman gladiator combat in a sunlit colosseum, crowds, cinematic armor detail and dust. Carry it through Ryse colosseum, gladiators, crowds. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Ryse colosseum; gladiators; crowds
 avoidRules:
-  - gore
   - existing game characters, logos or levels
   - readable interface text
   - readable text
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: gore, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - gladiator-arena
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-123
 packId: pack_12
-name: Rover Photo-Mode Capture
+name: No Man's Sky 2016 - Hello Games Pulp Planets
 styleAnchors:
-  - Rover Photo-Mode Capture
+  - No Man's Sky 2016 - Hello Games Pulp Planets
   - planet rover photo mode screenshot
   - small rover
-displayName: Rover Photo-Mode Capture
+displayName: No Man's Sky 2016 - Hello Games Pulp Planets
 category: 3. Sci-Fi Frontiers & Mech Zones
 domain: planet rover photo mode screenshot
-version: 1
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - rover-photo
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Rover photo-mode capture: an original photo-mode screenshot of a small exploration rover on an alien landscape, cinematic depth of field and dramatic sky.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject beside or as an exploration rover in a cinematic alien vista.
-  color_and_tone: Alien sky colors, rust or teal ground and rover white.
-  lighting_and_shadow: Low alien sun and long shadows, kept consistent across the whole image.
-  texture_and_material: Regolith, rover panels, dust and rocks, kept consistent across the whole image.
-  camera_and_composition: Low cinematic angle with shallow focus, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with lonely discovery, kept consistent across the whole image.
-  rendering_and_quality: Polished photo-mode capture with no UI, kept consistent across the whole image.
-  creative_brief: "Rover photo-mode capture: an original photo-mode screenshot of a small exploration rover on an alien landscape, cinematic depth of field and dramatic sky. Carry it through small rover, alien vista, depth of field, low sun. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: small rover; alien vista; depth of field; low sun
+  aesthetic: 'Hello Games No Man''s Sky (2016) look: procedural alien planets in pulp sci-fi book cover colors, strange floating fauna, rovers, twin suns and saturated skies.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render explorers and rovers as small figures under saturated alien skies. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Pulp magenta, lime and cyan skies, true to the No Man's Sky 2016 palette.
+  lighting_and_shadow: Saturated alien sun with colored fog, lit the way No Man's Sky 2016 lights its levels.
+  texture_and_material: Procedural stylized alien terrain, with the in-engine surface finish of No Man's Sky 2016.
+  camera_and_composition: Wide photo-mode view, framed the way No Man's Sky 2016 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with wondrous pulp exploration.
+  rendering_and_quality: Authentic procedural exploration screen, matching real No Man's Sky 2016 screenshots.
+  creative_brief: 'Hello Games No Man''s Sky (2016) look: procedural alien planets in pulp sci-fi book cover colors, strange floating fauna, rovers, twin suns and saturated skies. Carry it through No Man''s Sky pulp colors, alien fauna, rovers. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: No Man's Sky pulp colors; alien fauna; rovers
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - rover-photo
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

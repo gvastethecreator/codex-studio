@@ -1,14 +1,14 @@
 schemaVersion: 1
 id: SP12-027
 packId: pack_12
-name: Basalt Crew Extraction
+name: Deep Rock Galactic 2020 - Ghost Ship Low-Poly Caves
 styleAnchors:
-  - co-op first-person cavern extraction screenshots
+  - Deep Rock Galactic 2020 - Ghost Ship Low-Poly Caves
   - procedural mineral cave firefight
   - Basalt Crew Extraction
-displayName: Basalt Crew Extraction
+displayName: Deep Rock Galactic 2020 - Ghost Ship Low-Poly Caves
 category: 6. Wilderness Hunts & Harsh Frontiers
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -22,49 +22,20 @@ tags:
   - render-first-person-coop-shooter
   - camera-first-person
   - hud-contextual-hud
+  - reference-title
 visualDna:
-  aesthetic: 'Original in-game screenshot look for co-op cavern extraction captures: first-person cave traversal, mineral glow, team tools, creature pressure, drilling routes, extraction objective readability, and chunky stylized rock geometry. Borrow the co-op mining pressure of Deep Rock-like games, but land as a different fictional extraction crew with different suits, tools, creatures, UI icons, and cave motifs.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable cavern extraction screenshot
-    subject: keep clear team/object/threat role, tool scale, route affordance, mineral/resource
-    logic, and enemy spacing without copying source classes or creatures.
-  color_and_tone: >-
-    Use a basalt extraction palette: black rock, mineral cyan, hazard orange, worklight yellow,
-    drill metal grey, fungus violet, and team-color accents. Keep value grouping legible in dark
-    caves without pixel-art downgrade.
-  lighting_and_shadow: >-
-    Light the image through thrown flares, headlamps, muzzle flashes, mineral luminescence, zipline
-    glow, and darkness swallowed by cave depth. Lighting must clarify the playable route, threat,
-    focal subject, or objective and avoid generic cinematic bloom that destroys screenshot
-    readability.
-  texture_and_material: >-
-    Build surfaces from chunky voxel-like rock, crystals, dirt, drills, armor plates, bug carapace,
-    and industrial mining tools. Materials should feel like in-engine game assets captured during
-    play, with enough texture identity to separate props, terrain, characters, hazards, and
-    interactables.
-  camera_and_composition: >-
-    Compose with first-person tool/weapon camera, foreground mining or combat affordance, mid-ground
-    teammate/objective, cave route depth, and extraction pressure. Avoid strategy overview and
-    generic cave concept art.
-  atmosphere_and_mood: >-
-    Carry an original basalt crew mood: rowdy, hazardous, subterranean, cooperative, crunchy, and
-    resource-hungry.
-  rendering_and_quality: >-
-    Finish as coherent first-person co-op extraction screenshot style, not pixel art and not concept
-    art: ammo/tool pips, teammate markers, mineral/objective icons, and hazard cues can appear
-    abstractly. Maintain heavy-denoise clarity and readable silhouettes.
-  key_features: >-
-    Deep Rock Galactic gameplay screenshots; first-person co-op mining shooter capture with dwarven
-    silhouettes, dark caves, mineral glow, extraction pressure, and class-based readability; black
-    cave, neon green minerals, orange flares, blue shield lights, red hazard glow, and dusty grey
-    rock; thrown flares, headlamps, muzzle flashes, mineral luminescence, zipline glow, and darkness
-    swallowed by cave depth; chunky voxel-like rock, crystals, dirt, drills, armor plates, bug
-    carapace, and industrial mining tools; first-person combat-mining composition with weapon/tool
-    foreground, tunnel routes, swarm lanes, and objective minerals; rowdy, cooperative,
-    subterranean, dangerous, and workmanlike; HUD guidance: class HUD, ammo, flares, objective
-    counter, teammate outlines, and extraction timer can appear coherently
-  creative_brief: "Basalt Crew Extraction: in-game screenshot language informed by co-op cavern extraction references, covering first-person tools, mineral glow, cave routes, team spacing, creature pressure, and extraction objective readability. Avoid direct Deep Rock cloning, exact class silhouettes, readable mission UI, and retro pixel downgrade. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'Ghost Ship Games Deep Rock Galactic (2020) look: first-person co-op mining in dark procedural caves, stylized low-poly rock, glowing minerals, flares and alien bug swarms.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as stout bearded space miners in chunky gear, seen from first person. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Cave darkness, flare orange and mineral cyan, true to the Deep Rock Galactic 2020 palette.
+  lighting_and_shadow: Headlamps and thrown flares in darkness, lit the way Deep Rock Galactic 2020 lights its levels.
+  texture_and_material: Faceted low-poly rock and glowing crystals, with the in-engine surface finish of Deep Rock Galactic 2020.
+  camera_and_composition: First-person view in a cavern, framed the way Deep Rock Galactic 2020 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with rowdy cave camaraderie.
+  rendering_and_quality: Authentic co-op cave shooter screen, matching real Deep Rock Galactic 2020 screenshots.
+  key_features: Deep Rock low-poly caves; flares; mining crew
+  creative_brief: 'Ghost Ship Games Deep Rock Galactic (2020) look: first-person co-op mining in dark procedural caves, stylized low-poly rock, glowing minerals, flares and alien bug swarms. Carry it through Deep Rock low-poly caves, flares, mining crew. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
+  - existing Deep Rock dwarves and their salute
   - watermark
   - logo
   - copyright mark
@@ -93,22 +64,21 @@ avoidRules:
   - retro pixel downgrade
   - exact dwarf miner silhouettes
   - readable mission UI
+  - text
+  - readable labels
+  - franchise likeness
+  - real person likeness
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-027.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, direct Deep Rock clone, retro pixel downgrade, exact dwarf
-    miner silhouettes, readable mission UI
+  negativePrompt: existing Deep Rock dwarves and their salute, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Deep Rock clone, retro pixel downgrade, exact dwarf miner silhouettes, readable mission UI, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Original co-op cavern extraction shooter, Deep Rock-informed
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    class HUD, ammo, flares, objective counter, teammate outlines, and extraction timer can appear
-    coherently
+  hudGuidance: class HUD, ammo, flares, objective counter, teammate outlines, and extraction timer can appear coherently
   renderFamily: first-person-coop-shooter
   cameraFamily: first-person
   hudMode: contextual-hud
@@ -126,6 +96,7 @@ taxonomy:
     - render-first-person-coop-shooter
     - camera-first-person
     - hud-contextual-hud
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

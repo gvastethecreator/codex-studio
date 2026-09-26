@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP12-006
 packId: pack_12
-name: Bloodstained Arcane Library Boss
+name: Bloodstained 2019 - ArtPlay 2.5D Gothic Castle
 styleAnchors:
-  - 'Bloodstained: Ritual of the Night gameplay screenshots'
+  - Bloodstained 2019 - ArtPlay 2.5D Gothic Castle
   - Bloodstained Arcane Library Boss
-displayName: Bloodstained Arcane Library Boss
+displayName: Bloodstained 2019 - ArtPlay 2.5D Gothic Castle
 category: 2. Arcane Temples & Mythic Realms
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,48 +23,18 @@ tags:
   - hud-contextual-hud
   - reference-title
 visualDna:
-  aesthetic: 'In-game screenshot look informed by Bloodstained: Ritual of the Night gameplay: gothic side-scrolling action-RPG capture with ornate libraries, spell effects, readable boss spacing, and layered parallax interiors. It never recreates an exact official level, character, logo or marketing art.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable Bloodstained: Ritual of the
-    Night-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object
-    function, scale relationship, hitbox-like readability, and interaction affordances without
-    copying source characters or named IP elements.
-  color_and_tone: >-
-    Use a Bloodstained: Ritual of the Night-informed palette: violet velvet, candle gold, book
-    brown, moon blue, crimson magic, and porcelain skin highlights without copying characters. Keep
-    value grouping legible at gameplay distance, with color accents behaving like route, danger,
-    pickup, team, magic, or objective cues rather than decorative wash.
-  lighting_and_shadow: >-
-    Light the image through candelabra pools, stained glass rim, spell bloom, boss hit flashes, and
-    deep library shadow bands. Lighting must clarify the playable route, threat, focal subject, or
-    objective and avoid generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from 2.5D gothic masonry, leather books, polished floors, embroidered costumes,
-    demon silhouettes, and clean effect particles. Materials should feel like in-engine game assets
-    captured during play, with enough texture identity to separate props, terrain, characters,
-    hazards, and interactables.
-  camera_and_composition: >-
-    Compose with side-view combat lane with boss arena symmetry, jump arcs, magic projectiles,
-    platforms, and health-bar readability. The frame should read as a plausible gameplay capture;
-    include UI/HUD only when it matches the source game's visual logic and improves clarity.
-  atmosphere_and_mood: 'Bloodstained: Ritual of the Night-derived mood: ornate, occult, dramatic, and arcade-readable; it follows the tone of the requested scene without forcing a fixed mission or story.'
-  rendering_and_quality: >-
-    Finish as a coherent in-engine screenshot style, not concept art: boss health bars, MP meters,
-    damage numbers, and item icons are allowed if they match a gothic action-RPG screenshot.
-    Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake
-    logos, stock-photo polish, or random interface clutter.
-  key_features: >-
-    Bloodstained: Ritual of the Night gameplay screenshots; gothic side-scrolling action-RPG capture
-    with ornate libraries, spell effects, readable boss spacing, and layered parallax interiors;
-    violet velvet, candle gold, book brown, moon blue, crimson magic, and porcelain skin highlights
-    without copying characters; candelabra pools, stained glass rim, spell bloom, boss hit flashes,
-    and deep library shadow bands; 2.5D gothic masonry, leather books, polished floors, embroidered
-    costumes, demon silhouettes, and clean effect particles; side-view combat lane with boss arena
-    symmetry, jump arcs, magic projectiles, platforms, and health-bar readability; ornate, occult,
-    dramatic, and arcade-readable; HUD guidance: boss health bars, MP meters, damage numbers, and
-    item icons are allowed if they match a gothic action-RPG screenshot
-  creative_brief: "Bloodstained Arcane Library Boss: in-game screenshot language informed by Bloodstained: Ritual of the Night, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'ArtPlay Bloodstained: Ritual of the Night (2019) look: 2.5D side-scrolling gothic castle in the Koji Igarashi Castlevania tradition, stylized 3D models on a flat plane, ornate libraries and giant demon bosses.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as stylized 3D gothic anime figures with ornate clothing, moving on a flat side-scrolling plane. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Gothic crimson, library gold, deep violet and cold moon blue.
+  lighting_and_shadow: Candelabra glow, stained-glass beams and bright spell flashes.
+  texture_and_material: Stylized painted 3D surfaces of carved wood, stone and velvet.
+  camera_and_composition: 2.5D side-scrolling view with parallax gothic depth, framed the way Bloodstained 2019 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with ornate gothic exploration.
+  rendering_and_quality: Authentic modern 2.5D metroidvania screen, matching real Bloodstained 2019 screenshots.
+  key_features: Bloodstained 2.5D; gothic castle; Igarashi metroidvania; demon bosses
+  creative_brief: 'ArtPlay Bloodstained: Ritual of the Night (2019) look: 2.5D side-scrolling gothic castle in the Koji Igarashi Castlevania tradition, stylized 3D models on a flat plane, ornate libraries and giant demon bosses. Carry it through Bloodstained 2.5D, gothic castle, Igarashi metroidvania, demon bosses. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
+  - a pale heroine with crystal shards on her back
   - watermark
   - logo
   - copyright mark
@@ -91,23 +61,19 @@ avoidRules:
   - copied box art composition
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
+  - text
+  - readable labels
+  - franchise likeness
+  - real person likeness
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-006.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: a pale heroine with crystal shards on her back, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts
   referenceGame: 'Bloodstained: Ritual of the Night'
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    boss health bars, MP meters, damage numbers, and item icons are allowed if they match a gothic
-    action-RPG screenshot
+  hudGuidance: boss health bars, MP meters, damage numbers, and item icons are allowed if they match a gothic action-RPG screenshot
   renderFamily: two-d-side-view
   cameraFamily: side-view
   hudMode: contextual-hud

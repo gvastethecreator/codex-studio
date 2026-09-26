@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-184
 packId: pack_12
-name: Co-op Dungeon Brawler Gameplay
+name: Gauntlet 2014 - Arrowhead Co-op Dungeon
 styleAnchors:
-  - Co-op Dungeon Brawler Gameplay
+  - Gauntlet 2014 - Arrowhead Co-op Dungeon
   - four-player dungeon brawler gameplay
   - four heroes
-displayName: Co-op Dungeon Brawler Gameplay
+displayName: Gauntlet 2014 - Arrowhead Co-op Dungeon
 category: 9. Gothic & Dungeon Gameplay
 domain: four-player dungeon brawler gameplay
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,22 @@ tags:
   - coop-brawler
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Co-op dungeon brawler gameplay: an original isometric capture of four color-coded heroes fighting side by side through a dungeon hall packed with monsters.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject as one of four color-coded heroes in a dungeon brawl.
-  color_and_tone: Four distinct hero colors against dark stone, kept consistent across the whole image.
-  lighting_and_shadow: Torchlight and spell flashes, kept consistent across the whole image.
-  texture_and_material: Chunky armor, stone floors and loot, kept consistent across the whole image.
-  camera_and_composition: Isometric wide view of the party, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with rowdy teamwork, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no UI, kept consistent across the whole image.
-  creative_brief: "Co-op dungeon brawler gameplay: an original isometric capture of four color-coded heroes fighting side by side through a dungeon hall packed with monsters. Carry it through four heroes, color-coded, isometric, monster horde. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: four heroes; color-coded; isometric; monster horde
+  aesthetic: 'Arrowhead Game Studios Gauntlet (2014) look: isometric co-op dungeon brawler, four color-coded heroes, endless goblin swarms, spawners and treasure.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as four color-coded dungeon heroes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Hero red, blue, green and gold, true to the Gauntlet 2014 palette.
+  lighting_and_shadow: Dungeon torchlight, lit the way Gauntlet 2014 lights its levels.
+  texture_and_material: Stylized stone and gear, with the in-engine surface finish of Gauntlet 2014.
+  camera_and_composition: Isometric co-op view, framed the way Gauntlet 2014 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with chaotic co-op fun.
+  rendering_and_quality: Authentic co-op dungeon screen, matching real Gauntlet 2014 screenshots.
+  creative_brief: 'Arrowhead Game Studios Gauntlet (2014) look: isometric co-op dungeon brawler, four color-coded heroes, endless goblin swarms, spawners and treasure. Carry it through Gauntlet co-op, four heroes, swarms. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Gauntlet co-op; four heroes; swarms
 avoidRules:
+  - existing Gauntlet heroes
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing Gauntlet heroes, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +68,7 @@ taxonomy:
     - coop-brawler
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

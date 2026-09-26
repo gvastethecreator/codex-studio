@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-217
 packId: pack_12
-name: Lighthouse Isolation Gameplay
+name: Dear Esther 2012 - The Chinese Room Island
 styleAnchors:
-  - Lighthouse Isolation Gameplay
+  - Dear Esther 2012 - The Chinese Room Island
   - isolated keeper narrative gameplay
   - lighthouse interior
-displayName: Lighthouse Isolation Gameplay
+displayName: Dear Esther 2012 - The Chinese Room Island
 category: 11. Psychological & Tactical Gameplay
 domain: isolated keeper narrative gameplay
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,22 +20,22 @@ tags:
   - lighthouse-isolation
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Lighthouse isolation gameplay: an original first-person narrative capture inside a remote lighthouse during a storm, lamp room, logbook desk and churning sea.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject inside a remote lighthouse during a storm.
-  color_and_tone: Storm grey, lamp gold and sea green, kept consistent across the whole image.
-  lighting_and_shadow: Sweeping lamp beam and lightning, kept consistent across the whole image.
-  texture_and_material: Brass lamp, wet stone and wooden desk, kept consistent across the whole image.
-  camera_and_composition: First-person from inside the lamp room, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with isolated creeping paranoia.
-  rendering_and_quality: Clean capture with no readable log text, kept consistent across the whole image.
-  creative_brief: "Lighthouse isolation gameplay: an original first-person narrative capture inside a remote lighthouse during a storm, lamp room, logbook desk and churning sea. Carry it through lighthouse interior, storm, sweeping beam, isolation. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: lighthouse interior; storm; sweeping beam; isolation
+  aesthetic: 'The Chinese Room Dear Esther (2012) look: first-person walk across a lonely Hebridean island, lighthouses, storms, caves and melancholic narration.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as lonely wanderers seen from first person. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Storm grey, sea teal and lamp gold, true to the Dear Esther 2012 palette.
+  lighting_and_shadow: Stormy light with lamp beams, lit the way Dear Esther 2012 lights its levels.
+  texture_and_material: Realistic rock and sea spray, with the in-engine surface finish of Dear Esther 2012.
+  camera_and_composition: First-person lamp room view, framed the way Dear Esther 2012 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with melancholic windswept isolation.
+  rendering_and_quality: Authentic walking-sim screen, matching real Dear Esther 2012 screenshots.
+  creative_brief: 'The Chinese Room Dear Esther (2012) look: first-person walk across a lonely Hebridean island, lighthouses, storms, caves and melancholic narration. Carry it through Dear Esther island, lighthouse, storm. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Dear Esther island; lighthouse; storm
 avoidRules:
   - readable log text
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -44,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: readable log text, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable log text, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -65,6 +68,7 @@ taxonomy:
     - lighthouse-isolation
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP12-009
 packId: pack_12
-name: Castle Crashers Co-op Siege
+name: Castle Crashers 2008 - The Behemoth Cartoon Brawl
 styleAnchors:
-  - Castle Crashers gameplay screenshots
+  - Castle Crashers 2008 - The Behemoth Cartoon Brawl
   - Castle Crashers Co-op Siege
-displayName: Castle Crashers Co-op Siege
+displayName: Castle Crashers 2008 - The Behemoth Cartoon Brawl
 category: 4. Sieges, Warfronts & Last Stands
-version: 1
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,49 +23,19 @@ tags:
   - hud-contextual-hud
   - reference-title
 visualDna:
-  aesthetic: 'In-game screenshot look informed by Castle Crashers gameplay: 2D co-op beat-em-up capture with thick cartoon outlines, side-scrolling castle lanes, chunky enemies, and four-player chaos readability. It never recreates an exact official level, character, logo or marketing art.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable Castle Crashers-adjacent game
-    screenshot subject: keep clear role silhouette, player/enemy/object function, scale
-    relationship, hitbox-like readability, and interaction affordances without copying source
-    characters or named IP elements.
-  color_and_tone: >-
-    Use a Castle Crashers-informed palette: flat knight primaries, grass green, castle grey, orange
-    fire, candy gore red, and simple shadow colors. Keep value grouping legible at gameplay
-    distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues
-    rather than decorative wash.
-  lighting_and_shadow: >-
-    Light the image through mostly flat stage lighting with spell pops, impact flashes, torch
-    accents, and no realistic global illumination. Lighting must clarify the playable route, threat,
-    focal subject, or objective and avoid generic cinematic bloom that destroys screenshot
-    readability.
-  texture_and_material: >-
-    Build surfaces from vector-like cartoon sprites, simple tiled ground, bold weapons, goofy armor
-    shapes, and exaggerated hit effects. Materials should feel like in-engine game assets captured
-    during play, with enough texture identity to separate props, terrain, characters, hazards, and
-    interactables.
-  camera_and_composition: >-
-    Compose with side-view brawler lane with multiplayer spacing, enemy crowds, pickup readability,
-    and foreground/background stage layers. The frame should read as a plausible gameplay capture;
-    include UI/HUD only when it matches the source game's visual logic and improves clarity.
-  atmosphere_and_mood: 'Castle Crashers-derived mood: violent, playful, chaotic, arcade-like, and comic without becoming childish; it follows the tone of the requested scene without forcing a fixed mission or story.'
-  rendering_and_quality: >-
-    Finish as a coherent in-engine screenshot style, not concept art: co-op health bars, player
-    icons, XP numbers, and pickup prompts are allowed when they support brawler screenshot logic.
-    Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake
-    logos, stock-photo polish, or random interface clutter.
-  key_features: >-
-    Castle Crashers gameplay screenshots; 2D co-op beat-em-up capture with thick cartoon outlines,
-    side-scrolling castle lanes, chunky enemies, and four-player chaos readability; flat knight
-    primaries, grass green, castle grey, orange fire, candy gore red, and simple shadow colors;
-    mostly flat stage lighting with spell pops, impact flashes, torch accents, and no realistic
-    global illumination; vector-like cartoon sprites, simple tiled ground, bold weapons, goofy armor
-    shapes, and exaggerated hit effects; side-view brawler lane with multiplayer spacing, enemy
-    crowds, pickup readability, and foreground/background stage layers; violent, playful, chaotic,
-    arcade-like, and comic without becoming childish; HUD guidance: co-op health bars, player icons,
-    XP numbers, and pickup prompts are allowed when they support brawler screenshot logic
-  creative_brief: "Castle Crashers Co-op Siege: in-game screenshot language informed by Castle Crashers, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'The Behemoth Castle Crashers (2008) look: Dan Paladin thick-outline 2D cartoon, round-headed characters with simple faces, bright flat colors and side-scrolling co-op brawling.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as round-headed thick-outline cartoon figures with tiny dot eyes and chunky gear. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Bright flat grass green, sky blue and primary colors.
+  lighting_and_shadow: Flat cartoon light with no gradients, lit the way Castle Crashers 2008 lights its levels.
+  texture_and_material: Thick outlines and flat vector fills, with the in-engine surface finish of Castle Crashers 2008.
+  camera_and_composition: Side-scrolling brawler view, framed the way Castle Crashers 2008 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with silly co-op mayhem.
+  rendering_and_quality: Authentic cartoon brawler screen, matching real Castle Crashers 2008 screenshots.
+  key_features: Castle Crashers thick outlines; round heads; co-op brawl
+  creative_brief: 'The Behemoth Castle Crashers (2008) look: Dan Paladin thick-outline 2D cartoon, round-headed characters with simple faces, bright flat colors and side-scrolling co-op brawling. Carry it through Castle Crashers thick outlines, round heads, co-op brawl. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
+  - four knights in red, green, blue and orange armor
+  - animal orb companions
   - watermark
   - logo
   - copyright mark
@@ -92,23 +62,19 @@ avoidRules:
   - copied box art composition
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
+  - text
+  - readable labels
+  - franchise likeness
+  - real person likeness
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-009.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: four knights in red, green, blue and orange armor, animal orb companions, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts
   referenceGame: Castle Crashers
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    co-op health bars, player icons, XP numbers, and pickup prompts are allowed when they support
-    brawler screenshot logic
+  hudGuidance: co-op health bars, player icons, XP numbers, and pickup prompts are allowed when they support brawler screenshot logic
   renderFamily: two-d-side-view
   cameraFamily: side-view
   hudMode: contextual-hud

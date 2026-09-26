@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-175
 packId: pack_12
-name: Minecart Chase Setpiece Capture
+name: Rayman Legends 2013 - Ubisoft Montpellier UbiArt
 styleAnchors:
-  - Minecart Chase Setpiece Capture
+  - Rayman Legends 2013 - Ubisoft Montpellier UbiArt
   - minecart ride chase screenshot
   - runaway minecart
-displayName: Minecart Chase Setpiece Capture
+displayName: Rayman Legends 2013 - Ubisoft Montpellier UbiArt
 category: 8. Puzzle Chambers & Adventure Setpieces
 domain: minecart ride chase screenshot
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,18 +20,20 @@ tags:
   - minecart-chase
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Minecart chase setpiece capture: an original screenshot of a runaway minecart racing through a mine on rickety rails, sparks, drops and pursuing danger.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject in a runaway minecart on rickety mine rails.
-  color_and_tone: Dark rock, lantern amber and crystal glints, kept consistent across the whole image.
-  lighting_and_shadow: Sparks from the rails and lantern light, kept consistent across the whole image.
-  texture_and_material: Rickety wood, rusted rails and rock, kept consistent across the whole image.
-  camera_and_composition: Low chase angle behind the cart, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with breakneck adventure, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no HUD, kept consistent across the whole image.
-  creative_brief: "Minecart chase setpiece capture: an original screenshot of a runaway minecart racing through a mine on rickety rails, sparks, drops and pursuing danger. Carry it through runaway minecart, rickety rails, sparks, mine tunnels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: runaway minecart; rickety rails; sparks; mine tunnels
+  aesthetic: 'Ubisoft Montpellier Rayman Legends (2013) look: UbiArt hand-painted 2D platforming, lush storybook worlds, rubbery cartoon characters and speedy set-piece chases.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as rubbery hand-painted cartoon characters. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Lush storybook greens and warm golds, true to the Rayman Legends 2013 palette.
+  lighting_and_shadow: Painterly glow, lit the way Rayman Legends 2013 lights its levels.
+  texture_and_material: Hand-painted 2D art, with the in-engine surface finish of Rayman Legends 2013.
+  camera_and_composition: Side-scrolling chase view, framed the way Rayman Legends 2013 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with zany breathless chase.
+  rendering_and_quality: Authentic hand-painted platformer screen, matching real Rayman Legends 2013 screenshots.
+  creative_brief: 'Ubisoft Montpellier Rayman Legends (2013) look: UbiArt hand-painted 2D platforming, lush storybook worlds, rubbery cartoon characters and speedy set-piece chases. Carry it through Rayman UbiArt, hand-painted chase, storybook. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Rayman UbiArt; hand-painted chase; storybook
 avoidRules:
+  - a limbless hero with floating hands
   - existing game characters, logos or levels
   - readable interface text
   - readable text
@@ -42,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a limbless hero with floating hands, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -63,6 +68,7 @@ taxonomy:
     - minecart-chase
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

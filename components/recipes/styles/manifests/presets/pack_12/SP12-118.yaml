@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-118
 packId: pack_12
-name: Moon Temple Night Trial Capture
+name: Gris 2018 - Nomada Watercolor Platforms
 styleAnchors:
-  - Moon Temple Night Trial Capture
+  - Gris 2018 - Nomada Watercolor Platforms
   - moonlit temple challenge screenshot
   - moonlit temple
-displayName: Moon Temple Night Trial Capture
+displayName: Gris 2018 - Nomada Watercolor Platforms
 category: 2. Arcane Temples & Mythic Realms
 domain: moonlit temple challenge screenshot
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,22 @@ tags:
   - moon-temple
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Moon temple night trial capture: an original third-person trial screenshot in a moonlit temple, silver light pools, moving moon mirrors and shadow platforms.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject in a moonlit temple trial with silver light and shifting shadows.
-  color_and_tone: Silver moonlight, deep blue and pale stone, kept consistent across the whole image.
-  lighting_and_shadow: Moonbeams redirected by mirrors, sharp shadows, kept consistent across the whole image.
-  texture_and_material: Pale stone, silver mirrors and water, kept consistent across the whole image.
-  camera_and_composition: Third-person view across the trial chamber, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with hushed lunar ritual.
-  rendering_and_quality: Clean capture with no HUD text, kept consistent across the whole image.
-  creative_brief: "Moon temple night trial capture: an original third-person trial screenshot in a moonlit temple, silver light pools, moving moon mirrors and shadow platforms. Carry it through moonlit temple, silver mirrors, shadow platforms, trial chamber. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: moonlit temple; silver mirrors; shadow platforms; trial chamber
+  aesthetic: 'Nomada Studio Gris (2018) look: side-view watercolor platformer with Conrad Roset art, washes of color, elegant thin figures, geometric ruins and flowing dress shapes.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as elegant thin watercolor figures with flowing shapes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Watercolor washes of silver, blue and rose, true to the Gris 2018 palette.
+  lighting_and_shadow: Soft washed light with moon glow, lit the way Gris 2018 lights its levels.
+  texture_and_material: Watercolor washes and ink lines, with the in-engine surface finish of Gris 2018.
+  camera_and_composition: Side-view platformer composition, framed the way Gris 2018 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with quiet grieving beauty.
+  rendering_and_quality: Authentic watercolor platformer screen, matching real Gris 2018 screenshots.
+  creative_brief: 'Nomada Studio Gris (2018) look: side-view watercolor platformer with Conrad Roset art, washes of color, elegant thin figures, geometric ruins and flowing dress shapes. Carry it through Gris watercolor, Conrad Roset, geometric ruins. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Gris watercolor; Conrad Roset; geometric ruins
 avoidRules:
+  - a blue-haired girl in a flowing dress
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a blue-haired girl in a flowing dress, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +68,7 @@ taxonomy:
     - moon-temple
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

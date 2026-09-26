@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-197
 packId: pack_12
-name: Third-Person Shinobi Stealth Gameplay
+name: Tenchu Stealth Assassins 1998 - Acquire PS1 Fog Ninja
 styleAnchors:
-  - Third-Person Shinobi Stealth Gameplay
+  - Tenchu Stealth Assassins 1998 - Acquire PS1 Fog Ninja
   - ninja stealth action gameplay
   - shinobi
-displayName: Third-Person Shinobi Stealth Gameplay
+displayName: Tenchu Stealth Assassins 1998 - Acquire PS1 Fog Ninja
 category: 10. Graphic & Feudal Gameplay
 domain: ninja stealth action gameplay
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - shinobi-stealth
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Third-person shinobi stealth gameplay: an original capture of a ninja crouched on castle rooftops at night, patrols below, grappling lines and moonlight.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject as a crouching shinobi above patrolling guards at night.
-  color_and_tone: Moonlit blue, tile black and lantern amber, kept consistent across the whole image.
-  lighting_and_shadow: Moonlight rims and guard lanterns, kept consistent across the whole image.
-  texture_and_material: Roof tiles, cloth wraps and grappling rope, kept consistent across the whole image.
-  camera_and_composition: Over-the-shoulder looking down on guards, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with silent precision, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no UI, kept consistent across the whole image.
-  creative_brief: "Third-person shinobi stealth gameplay: an original capture of a ninja crouched on castle rooftops at night, patrols below, grappling lines and moonlight. Carry it through shinobi, castle rooftops, patrols below, moonlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: shinobi; castle rooftops; patrols below; moonlight
+  aesthetic: 'Acquire Tenchu: Stealth Assassins (1998) look: PS1 low-poly ninja stealth on moonlit rooftops, heavy distance fog, grappling hooks and stealth kills.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as low-poly PS1 ninja. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Night blue fog and moon, true to the Tenchu Stealth Assassins 1998 palette.
+  lighting_and_shadow: Moonlight with heavy fog, lit the way Tenchu Stealth Assassins 1998 lights its levels.
+  texture_and_material: Low-poly PS1 textures, with the in-engine surface finish of Tenchu Stealth Assassins 1998.
+  camera_and_composition: Third-person rooftop view, framed the way Tenchu Stealth Assassins 1998 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with silent deadly patience.
+  rendering_and_quality: Authentic PS1 stealth screen, matching real Tenchu Stealth Assassins 1998 screenshots.
+  creative_brief: 'Acquire Tenchu: Stealth Assassins (1998) look: PS1 low-poly ninja stealth on moonlit rooftops, heavy distance fog, grappling hooks and stealth kills. Carry it through Tenchu fog, low-poly ninja, rooftops. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Tenchu fog; low-poly ninja; rooftops
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - shinobi-stealth
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

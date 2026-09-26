@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP12-073
 packId: pack_12
-name: Colossus Orchard Hunt
+name: Shadow of the Colossus 2018 - Bluepoint Colossus Climb
 category: 6. Wilderness Hunts & Harsh Frontiers
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -19,47 +19,19 @@ tags:
   - hud-contextual-hud
   - reference-title
 visualDna:
-  aesthetic: 'In-game screenshot look informed by Shadow of the Colossus gameplay: third-person minimalist colossus hunt capture with tiny rider scale, vast landscape, monumental creature silhouettes, and quiet traversal. It never recreates an exact official level, character, logo or marketing art.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable Shadow of the Colossus-adjacent
-    game screenshot subject: keep clear role silhouette, player/enemy/object function, scale
-    relationship, hitbox-like readability, and interaction affordances without copying source
-    characters or named IP elements.
-  color_and_tone: >-
-    Use a Shadow of the Colossus-informed palette: sun-bleached grass, stone grey, fur brown, pale
-    sky, moss green, and muted magical blue. Keep value grouping legible at gameplay distance, with
-    color accents behaving like route, danger, pickup, team, magic, or objective cues rather than
-    decorative wash.
-  lighting_and_shadow: >-
-    Light the image through soft ancient daylight, dust haze, colossus rim light, weak-point glow,
-    and broad landscape shadow. Lighting must clarify the playable route, threat, focal subject, or
-    objective and avoid generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from weathered stone, fur, moss, leather straps, old ruins, wind grass, and
-    simple worn gear. Materials should feel like in-engine game assets captured during play, with
-    enough texture identity to separate props, terrain, characters, hazards, and interactables.
-  camera_and_composition: >-
-    Compose with cinematic third-person camera with player dwarfed by titan, climb routes,
-    weak-point visibility, and lonely negative space. The frame should read as a plausible gameplay
-    capture; include UI/HUD only when it matches the source game's visual logic and improves
-    clarity.
-  atmosphere_and_mood: 'Shadow of the Colossus-derived mood: awe-filled, tragic, ancient, lonely, and monumental; it follows the tone of the requested scene without forcing a fixed mission or story.'
-  rendering_and_quality: >-
-    Finish as a coherent in-engine screenshot style, not concept art: minimal grip/health/stamina
-    cues are allowed; let scale and landscape carry the screenshot. Maintain heavy-denoise clarity,
-    crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random
-    interface clutter.
-  key_features: >-
-    Shadow of the Colossus gameplay screenshots; third-person minimalist colossus hunt capture with
-    tiny rider scale, vast landscape, monumental creature silhouettes, and quiet traversal;
-    sun-bleached grass, stone grey, fur brown, pale sky, moss green, and muted magical blue; soft
-    ancient daylight, dust haze, colossus rim light, weak-point glow, and broad landscape shadow;
-    weathered stone, fur, moss, leather straps, old ruins, wind grass, and simple worn gear;
-    cinematic third-person camera with player dwarfed by titan, climb routes, weak-point visibility,
-    and lonely negative space; awe-filled, tragic, ancient, lonely, and monumental; HUD guidance:
-    minimal grip/health/stamina cues are allowed; let scale and landscape carry the screenshot
-  creative_brief: "Colossus Orchard Hunt: in-game screenshot language informed by Shadow of the Colossus, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'Bluepoint Games Shadow of the Colossus (2018) look: tiny riders climbing fur and stone of moving colossi, vast empty lands, soft bloom and melancholic grandeur.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as tiny figures clinging to colossal furred creatures. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Soft green, stone grey and sun haze, true to the Shadow of the Colossus 2018 palette.
+  lighting_and_shadow: Soft bloom and hazy sunlight, lit the way Shadow of the Colossus 2018 lights its levels.
+  texture_and_material: Detailed fur, moss and ancient stone, with the in-engine surface finish of Shadow of the Colossus 2018.
+  camera_and_composition: Wide low view of a colossus, framed the way Shadow of the Colossus 2018 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with melancholic grand struggle.
+  rendering_and_quality: Authentic modern remake adventure screen, matching real Shadow of the Colossus 2018 screenshots.
+  key_features: Colossus climb; tiny rider; vast land
+  creative_brief: 'Bluepoint Games Shadow of the Colossus (2018) look: tiny riders climbing fur and stone of moving colossi, vast empty lands, soft bloom and melancholic grandeur. Carry it through Colossus climb, tiny rider, vast land. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
+  - existing colossi
+  - a black horse with a young swordsman
   - watermark
   - logo
   - copyright mark
@@ -86,18 +58,16 @@ avoidRules:
   - copied box art composition
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
+  - text
+  - readable labels
+  - franchise likeness
+  - real person likeness
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-073.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: existing colossi, a black horse with a young swordsman, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts
   referenceGame: Shadow of the Colossus
   referenceMode: capture-derived gameplay screenshot style
   hudGuidance: minimal grip/health/stamina cues are allowed; let scale and landscape carry the screenshot
@@ -124,7 +94,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-displayName: Colossus Orchard Hunt
+displayName: Shadow of the Colossus 2018 - Bluepoint Colossus Climb
 styleAnchors:
-  - Shadow of the Colossus gameplay screenshots
+  - Shadow of the Colossus 2018 - Bluepoint Colossus Climb
   - Colossus Orchard Hunt

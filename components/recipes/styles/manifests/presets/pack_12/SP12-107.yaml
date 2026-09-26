@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-107
 packId: pack_12
-name: Pixel Night Ninja Capture
+name: The Messenger 2018 - Sabotage 8-Bit Ninja
 styleAnchors:
-  - Pixel Night Ninja Capture
+  - The Messenger 2018 - Sabotage 8-Bit Ninja
   - retro pixel ninja action screenshot
   - pixel ninja
-displayName: Pixel Night Ninja Capture
+displayName: The Messenger 2018 - Sabotage 8-Bit Ninja
 category: 1. Neon Urban & Night Ops
 domain: retro pixel ninja action screenshot
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - pixel-ninja
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Pixel night ninja capture: an original retro pixel action screenshot of a ninja on moonlit rooftops, parallax skylines, small sprites and sharp colors.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; render the subject as a small pixel sprite in a moonlit rooftop action scene.
-  color_and_tone: Deep indigo night with moon yellow and red accents.
-  lighting_and_shadow: Moonlight rims and flat pixel shading, kept consistent across the whole image.
-  texture_and_material: Crisp pixel sprites, tile roofs and parallax layers.
-  camera_and_composition: Side-scrolling rooftop view, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with sharp retro action.
-  rendering_and_quality: Clean pixel capture with no readable HUD, kept consistent across the whole image.
-  creative_brief: "Pixel night ninja capture: an original retro pixel action screenshot of a ninja on moonlit rooftops, parallax skylines, small sprites and sharp colors. Carry it through pixel ninja, moonlit rooftops, parallax skyline, small sprites. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: pixel ninja; moonlit rooftops; parallax skyline; small sprites
+  aesthetic: 'Sabotage Studio The Messenger (2018) look: 8-bit NES-style pixel ninja platformer, tiny sprites, limited palette, pagoda rooftops under a big moon and flat color bands.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as tiny 8-bit ninja sprites with limited-palette pixels. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Limited 8-bit palette of night blue, moon yellow and red.
+  lighting_and_shadow: Flat 8-bit light with no gradients, lit the way The Messenger 2018 lights its levels.
+  texture_and_material: Chunky 8-bit pixels and tile patterns, with the in-engine surface finish of The Messenger 2018.
+  camera_and_composition: Side-scrolling platformer view, framed the way The Messenger 2018 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with playful retro ninja.
+  rendering_and_quality: Authentic modern 8-bit pixel platformer screen, matching real The Messenger 2018 screenshots.
+  creative_brief: 'Sabotage Studio The Messenger (2018) look: 8-bit NES-style pixel ninja platformer, tiny sprites, limited palette, pagoda rooftops under a big moon and flat color bands. Carry it through The Messenger 8-bit, tiny ninja sprites, big moon. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: The Messenger 8-bit; tiny ninja sprites; big moon
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - pixel-ninja
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

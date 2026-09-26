@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-179
 packId: pack_12
-name: Top-Down Roguelite Crypt Gameplay
+name: Children of Morta 2019 - Dead Mage Painterly Pixel
 styleAnchors:
-  - Top-Down Roguelite Crypt Gameplay
+  - Children of Morta 2019 - Dead Mage Painterly Pixel
   - overhead roguelite dungeon gameplay
   - overhead crypt
-displayName: Top-Down Roguelite Crypt Gameplay
+displayName: Children of Morta 2019 - Dead Mage Painterly Pixel
 category: 9. Gothic & Dungeon Gameplay
 domain: overhead roguelite dungeon gameplay
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - roguelite-crypt
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Top-down roguelite crypt gameplay: an original overhead dungeon-run capture with a small hero, clustered enemies, glowing attack arcs and procedurally tiled crypt rooms.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject as a small overhead figure in a procedurally tiled crypt room.
-  color_and_tone: Dark stone with vivid attack colors, kept consistent across the whole image.
-  lighting_and_shadow: Torch pools and glowing attack effects, kept consistent across the whole image.
-  texture_and_material: Tiled floors, bones, urns and particle arcs, kept consistent across the whole image.
-  camera_and_composition: Overhead view with room walls framing, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with frantic run-based tension.
-  rendering_and_quality: Clean gameplay capture with no UI text, kept consistent across the whole image.
-  creative_brief: "Top-down roguelite crypt gameplay: an original overhead dungeon-run capture with a small hero, clustered enemies, glowing attack arcs and procedurally tiled crypt rooms. Carry it through overhead crypt, glowing attack arcs, enemy clusters, tiled rooms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: overhead crypt; glowing attack arcs; enemy clusters; tiled rooms
+  aesthetic: 'Dead Mage Children of Morta (2019) look: top-down action roguelite in detailed painterly pixel art, family of heroes, crypts and caves with glowing spell effects.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as detailed painterly pixel heroes seen from above. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Warm torch amber, crypt teal and spell glow.
+  lighting_and_shadow: Pixel torchlight and spell glow, lit the way Children of Morta 2019 lights its levels.
+  texture_and_material: Painterly pixel art, with the in-engine surface finish of Children of Morta 2019.
+  camera_and_composition: Top-down roguelite view, framed the way Children of Morta 2019 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with warm heroic struggle.
+  rendering_and_quality: Authentic pixel roguelite screen, matching real Children of Morta 2019 screenshots.
+  creative_brief: 'Dead Mage Children of Morta (2019) look: top-down action roguelite in detailed painterly pixel art, family of heroes, crypts and caves with glowing spell effects. Carry it through Children of Morta pixels, crypts, spell glow. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Children of Morta pixels; crypts; spell glow
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - roguelite-crypt
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

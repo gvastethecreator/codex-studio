@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-145
 packId: pack_12
-name: Motocross Mud Jump Capture
+name: Motorstorm 2006 - Evolution Studios Mud Festival
 styleAnchors:
-  - Motocross Mud Jump Capture
+  - Motorstorm 2006 - Evolution Studios Mud Festival
   - dirt bike racing screenshot
   - dirt bike
-displayName: Motocross Mud Jump Capture
+displayName: Motorstorm 2006 - Evolution Studios Mud Festival
 category: 5. Speed, Sport & Competitive Arenas
 domain: dirt bike racing screenshot
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - motocross
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Motocross mud jump capture: an original dirt-bike racing screenshot of a rider mid-air over muddy whoops, flying clods of earth and a crowd on the hill.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject mid-air on a dirt bike over a muddy track.
-  color_and_tone: Mud brown, bright jerseys and grey sky, kept consistent across the whole image.
-  lighting_and_shadow: Overcast light with flying mud silhouettes, kept consistent across the whole image.
-  texture_and_material: Mud clods, knobby tires and wet dirt, kept consistent across the whole image.
-  camera_and_composition: Low angle under the jump, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with gritty adrenaline, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no sponsor text, kept consistent across the whole image.
-  creative_brief: "Motocross mud jump capture: an original dirt-bike racing screenshot of a rider mid-air over muddy whoops, flying clods of earth and a crowd on the hill. Carry it through dirt bike, mid-air jump, flying mud, crowd. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: dirt bike; mid-air jump; flying mud; crowd
+  aesthetic: 'Evolution Studios MotorStorm (2006) look: off-road festival racing in deep mud and dust, bikes, buggies and trucks crashing, persistent mud deformation.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people and vehicles as mud-caked riders and machines. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Mud brown, storm grey and rust orange, true to the Motorstorm 2006 palette.
+  lighting_and_shadow: Storm light with flying mud, lit the way Motorstorm 2006 lights its levels.
+  texture_and_material: Deformed mud and dirty metal, with the in-engine surface finish of Motorstorm 2006.
+  camera_and_composition: Chase camera during jumps, framed the way Motorstorm 2006 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with brutal muddy chaos.
+  rendering_and_quality: Authentic PS3 off-road racer screen, matching real Motorstorm 2006 screenshots.
+  creative_brief: 'Evolution Studios MotorStorm (2006) look: off-road festival racing in deep mud and dust, bikes, buggies and trucks crashing, persistent mud deformation. Carry it through MotorStorm mud, crashes, off-road festival. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: MotorStorm mud; crashes; off-road festival
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
@@ -43,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +68,7 @@ taxonomy:
     - motocross
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

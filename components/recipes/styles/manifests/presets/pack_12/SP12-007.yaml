@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP12-007
 packId: pack_12
-name: Banner Saga Glacier Tactics
+name: The Banner Saga 2014 - Stoic Hand-Painted Saga
 styleAnchors:
-  - The Banner Saga gameplay screenshots
+  - The Banner Saga 2014 - Stoic Hand-Painted Saga
   - Banner Saga Glacier Tactics
-displayName: Banner Saga Glacier Tactics
+displayName: The Banner Saga 2014 - Stoic Hand-Painted Saga
 category: 4. Sieges, Warfronts & Last Stands
-version: 1
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,50 +23,19 @@ tags:
   - hud-contextual-hud
   - reference-title
 visualDna:
-  aesthetic: 'In-game screenshot look informed by The Banner Saga gameplay: hand-painted tactical-RPG capture with icy strongholds, Viking silhouettes, square-grid positioning, and storybook battlefield clarity. It never recreates an exact official level, character, logo or marketing art.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable The Banner Saga-adjacent game
-    screenshot subject: keep clear role silhouette, player/enemy/object function, scale
-    relationship, hitbox-like readability, and interaction affordances without copying source
-    characters or named IP elements.
-  color_and_tone: >-
-    Use a The Banner Saga-informed palette: snow white, slate blue, oxblood cloth, muted gold, cold
-    grey armor, and warm campfire accents. Keep value grouping legible at gameplay distance, with
-    color accents behaving like route, danger, pickup, team, magic, or objective cues rather than
-    decorative wash.
-  lighting_and_shadow: >-
-    Light the image through flat overcast snowlight, torch pools, rimmed silhouettes, and painterly
-    value blocks rather than glossy 3D lighting. Lighting must clarify the playable route, threat,
-    focal subject, or objective and avoid generic cinematic bloom that destroys screenshot
-    readability.
-  texture_and_material: >-
-    Build surfaces from illustrated snow, wool cloaks, carved shields, old timber, simple armor
-    planes, and crisp 2D cutout edges. Materials should feel like in-engine game assets captured
-    during play, with enough texture identity to separate props, terrain, characters, hazards, and
-    interactables.
-  camera_and_composition: >-
-    Compose with isometric tactical grid with large readable units, threat spacing, turn-order
-    logic, and landscape silhouettes behind the fight. The frame should read as a plausible gameplay
-    capture; include UI/HUD only when it matches the source game's visual logic and improves
-    clarity.
-  atmosphere_and_mood: 'The Banner Saga-derived mood: grim, mythic, exhausted, noble, and winter-bound; it follows the tone of the requested scene without forcing a fixed mission or story.'
-  rendering_and_quality: >-
-    Finish as a coherent in-engine screenshot style, not concept art: turn-order cards, stat pips,
-    tile markers, and ability icons are allowed as part of tactical readability. Maintain
-    heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos,
-    stock-photo polish, or random interface clutter.
-  key_features: >-
-    The Banner Saga gameplay screenshots; hand-painted tactical-RPG capture with icy strongholds,
-    Viking silhouettes, square-grid positioning, and storybook battlefield clarity; snow white,
-    slate blue, oxblood cloth, muted gold, cold grey armor, and warm campfire accents; flat overcast
-    snowlight, torch pools, rimmed silhouettes, and painterly value blocks rather than glossy 3D
-    lighting; illustrated snow, wool cloaks, carved shields, old timber, simple armor planes, and
-    crisp 2D cutout edges; isometric tactical grid with large readable units, threat spacing,
-    turn-order logic, and landscape silhouettes behind the fight; grim, mythic, exhausted, noble,
-    and winter-bound; HUD guidance: turn-order cards, stat pips, tile markers, and ability icons are
-    allowed as part of tactical readability
-  creative_brief: "Banner Saga Glacier Tactics: in-game screenshot language informed by The Banner Saga, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'Stoic The Banner Saga (2014) look: hand-animated 2D in the Eyvind Earle and Sleeping Beauty tradition, flat painted Norse landscapes, caravans on snow and turn-based tactical grids.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as hand-animated Norse figures with clean flat shapes, fur, braids and weathered armor. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Muted snow blue, birch white, ochre and deep red banners.
+  lighting_and_shadow: Soft flat painted light with pale winter skies.
+  texture_and_material: Hand-painted flat backgrounds and clean hand-drawn animation lines.
+  camera_and_composition: Side tactical grid view or wide caravan landscape.
+  atmosphere_and_mood: Keep the requested mood with weary stoic endurance.
+  rendering_and_quality: Authentic hand-animated tactical RPG screen, matching real The Banner Saga 2014 screenshots.
+  key_features: Banner Saga Eyvind Earle painting; caravans; tactical grid
+  creative_brief: 'Stoic The Banner Saga (2014) look: hand-animated 2D in the Eyvind Earle and Sleeping Beauty tradition, flat painted Norse landscapes, caravans on snow and turn-based tactical grids. Carry it through Banner Saga Eyvind Earle painting, caravans, tactical grid. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
+  - horned giant warriors
+  - stone-armored invaders of the source game
   - watermark
   - logo
   - copyright mark
@@ -93,23 +62,19 @@ avoidRules:
   - copied box art composition
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
+  - text
+  - readable labels
+  - franchise likeness
+  - real person likeness
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-007.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: horned giant warriors, stone-armored invaders of the source game, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts
   referenceGame: The Banner Saga
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    turn-order cards, stat pips, tile markers, and ability icons are allowed as part of tactical
-    readability
+  hudGuidance: turn-order cards, stat pips, tile markers, and ability icons are allowed as part of tactical readability
   renderFamily: strategy-tactics
   cameraFamily: isometric-top-down
   hudMode: contextual-hud

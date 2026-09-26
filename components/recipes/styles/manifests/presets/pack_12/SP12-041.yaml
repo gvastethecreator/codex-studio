@@ -1,14 +1,14 @@
 schemaVersion: 1
 id: SP12-041
 packId: pack_12
-name: Emberwood Lookout Trail
+name: Firewatch 2016 - Campo Santo Olly Moss Palette
 styleAnchors:
-  - painterly first-person wilderness exploration screenshots
+  - Firewatch 2016 - Campo Santo Olly Moss Palette
   - lookout trail dusk navigation
   - Emberwood Lookout Trail
-displayName: Emberwood Lookout Trail
+displayName: Firewatch 2016 - Campo Santo Olly Moss Palette
 category: 6. Wilderness Hunts & Harsh Frontiers
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -22,46 +22,18 @@ tags:
   - render-first-person-painterly
   - camera-first-person
   - hud-contextual-hud
+  - reference-title
 visualDna:
-  aesthetic: 'Original in-game screenshot look for painterly first-person wilderness exploration captures: simplified landscape shapes, warm dusk smoke, trail navigation, lookout structures, radio-like intimacy, and readable route landmarks. Borrow the graphic color discipline of Firewatch-like games, but land as a different fictional wilderness with different terrain, props, UI icons, and palette variants.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable wilderness exploration screenshot
-    subject: keep clear trail/object function, landmark scale, hand/tool presence when useful, route
-    affordance, and environmental readability without copying exact locations or posters.
-  color_and_tone: >-
-    Use a painterly wilderness palette: ember orange, mauve sky, pine green, dusty violet, dry grass
-    ochre, smoke blue, and dark bark silhouettes. Keep shapes broad and readable rather than
-    pixelated or photoreal.
-  lighting_and_shadow: >-
-    Light the image through golden-hour haze, flat graphic silhouettes, campfire warmth, radio glow,
-    and atmospheric smoke layers. Lighting must clarify the playable route, threat, focal subject,
-    or objective and avoid generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from painterly low-poly trees, wood cabins, paper maps, radios, trail signs
-    without readable text, and dry grass. Materials should feel like in-engine game assets captured
-    during play, with enough texture identity to separate props, terrain, characters, hazards, and
-    interactables.
-  camera_and_composition: >-
-    Compose with first-person trail view, foreground hand/map/radio/object only if useful,
-    mid-ground landmark, route fork, and layered atmospheric landscape. Avoid retro-pixel rendering
-    and static tourism poster framing.
-  atmosphere_and_mood: >-
-    Carry an original emberwood trail mood: lonely, warm, suspicious, contemplative, outdoorsy, and
-    smoke-tinted.
-  rendering_and_quality: >-
-    Finish as coherent first-person painterly exploration screenshot style, not pixel art and not
-    concept art: minimal HUD, route/objective cue shapes, and clean color blocks can appear.
-    Maintain denoised broad shapes and crisp navigation readability.
-  key_features: >-
-    Firewatch gameplay screenshots; first-person narrative exploration capture with stylized forest
-    planes, ranger lookout towers, warm dusk, and environmental pathfinding; burnt orange sky, pine
-    green, lavender shadow, wood brown, sunlit yellow, and smoky blue distance; golden-hour haze,
-    flat graphic silhouettes, campfire warmth, radio glow, and atmospheric smoke layers; painterly
-    low-poly trees, wood cabins, paper maps, radios, trail signs without readable text, and dry
-    grass; first-person walking-sim framing with hands/tools, path curves, lookout landmark, and
-    quiet navigational depth; lonely, warm, suspicious, contemplative, and outdoorsy; HUD guidance:
-    minimal compass/objective cues or held map/radio interfaces are allowed; avoid gamey clutter
-  creative_brief: "Emberwood Lookout Trail: in-game screenshot language informed by painterly wilderness exploration references, covering first-person camera, broad color blocking, trail landmarks, smoke/dusk light, and quiet route decisions. Avoid direct Firewatch cloning, exact tower-poster composition, and retro pixel downgrade. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'Campo Santo Firewatch (2016) look: first-person Wyoming wilderness in Olly Moss poster palettes, flat painterly forests, fire lookouts, sunsets and layered ridges.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as simple painterly figures seen from first person. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Sunset orange, coral pink and teal ridges, true to the Firewatch 2016 palette.
+  lighting_and_shadow: Warm poster-like sunset gradients, lit the way Firewatch 2016 lights its levels.
+  texture_and_material: Flat painterly shapes and soft gradients, with the in-engine surface finish of Firewatch 2016.
+  camera_and_composition: First-person view from a lookout, framed the way Firewatch 2016 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with wistful lonely warmth.
+  rendering_and_quality: Authentic painterly first-person screen, matching real Firewatch 2016 screenshots.
+  key_features: Firewatch Olly Moss palette; lookout; ridges
+  creative_brief: 'Campo Santo Firewatch (2016) look: first-person Wyoming wilderness in Olly Moss poster palettes, flat painterly forests, fire lookouts, sunsets and layered ridges. Carry it through Firewatch Olly Moss palette, lookout, ridges. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - watermark
   - logo
@@ -90,17 +62,14 @@ avoidRules:
   - direct Firewatch clone
   - retro pixel downgrade
   - exact lookout tower poster
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-041.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, direct Firewatch clone, retro pixel downgrade, exact lookout
-    tower poster
+  negativePrompt: watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Firewatch clone, retro pixel downgrade, exact lookout tower poster, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Original painterly wilderness exploration, Firewatch-informed
   referenceMode: capture-derived gameplay screenshot style
   hudGuidance: minimal compass/objective cues or held map/radio interfaces are allowed; avoid gamey clutter
@@ -121,6 +90,7 @@ taxonomy:
     - render-first-person-painterly
     - camera-first-person
     - hud-contextual-hud
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

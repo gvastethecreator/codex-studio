@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-113
 packId: pack_12
-name: Spirit-World Shift Capture
+name: Soul Reaver 1999 - Crystal Dynamics Realm Shift
 styleAnchors:
-  - Spirit-World Shift Capture
+  - Soul Reaver 1999 - Crystal Dynamics Realm Shift
   - dual-realm world shift screenshot
   - split realms
-displayName: Spirit-World Shift Capture
+displayName: Soul Reaver 1999 - Crystal Dynamics Realm Shift
 category: 2. Arcane Temples & Mythic Realms
 domain: dual-realm world shift screenshot
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,22 @@ tags:
   - spirit-shift
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Spirit-world shift capture: an original screenshot where the image is split between the living world and a glowing spirit realm, the same place shown in both states.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; split the subject between a living realm and a glowing spirit realm.
-  color_and_tone: Warm natural half and cold glowing violet-teal half.
-  lighting_and_shadow: Normal daylight versus ethereal glow, kept consistent across the whole image.
-  texture_and_material: Solid materials versus translucent ghostly versions, kept consistent across the whole image.
-  camera_and_composition: Split or ripple transition across the frame, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with uncanny duality, kept consistent across the whole image.
-  rendering_and_quality: Clean effect with clear dual reading, kept consistent across the whole image.
-  creative_brief: "Spirit-world shift capture: an original screenshot where the image is split between the living world and a glowing spirit realm, the same place shown in both states. Carry it through split realms, ghostly glow, same place twice, ripple transition. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: split realms; ghostly glow; same place twice; ripple transition
+  aesthetic: 'Crystal Dynamics Legacy of Kain: Soul Reaver (1999) look: gothic PS1-era 3D where the material realm twists into a warped blue-green spectral realm, bending architecture and ghostly creatures.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as gaunt gothic figures shifting between a solid world and a warped spectral version. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Material earth tones against spectral blue-green, true to the Soul Reaver 1999 palette.
+  lighting_and_shadow: Dim gothic light shifting into sickly spectral glow.
+  texture_and_material: Low-poly gothic stone with warped spectral geometry, with the in-engine surface finish of Soul Reaver 1999.
+  camera_and_composition: Third-person view mid realm shift, framed the way Soul Reaver 1999 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with gothic spectral unease.
+  rendering_and_quality: Authentic late-nineties gothic 3D screen, matching real Soul Reaver 1999 screenshots.
+  creative_brief: 'Crystal Dynamics Legacy of Kain: Soul Reaver (1999) look: gothic PS1-era 3D where the material realm twists into a warped blue-green spectral realm, bending architecture and ghostly creatures. Carry it through Soul Reaver realm shift, warped geometry, spectral blue. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Soul Reaver realm shift; warped geometry; spectral blue
 avoidRules:
+  - a blue-skinned wraith with a tattered cape and claws
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a blue-skinned wraith with a tattered cape and claws, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +68,7 @@ taxonomy:
     - spirit-shift
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

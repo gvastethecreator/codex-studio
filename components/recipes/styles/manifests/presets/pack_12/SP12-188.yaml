@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-188
 packId: pack_12
-name: Dungeon Overlord Build Gameplay
+name: Dungeon Keeper 1997 - Bullfrog Imp Dungeon
 styleAnchors:
-  - Dungeon Overlord Build Gameplay
+  - Dungeon Keeper 1997 - Bullfrog Imp Dungeon
   - dungeon management gameplay
   - imps digging
-displayName: Dungeon Overlord Build Gameplay
+displayName: Dungeon Keeper 1997 - Bullfrog Imp Dungeon
 category: 9. Gothic & Dungeon Gameplay
 domain: dungeon management gameplay
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - dungeon-overlord
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: "Dungeon overlord build gameplay: an original management capture of an evil overlord's dungeon seen from above, imps digging tunnels, traps and treasure rooms."
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject within a dungeon being built by imps from above.
-  color_and_tone: Dark earth, lava orange and gold treasure, kept consistent across the whole image.
-  lighting_and_shadow: Lava glow and torchlight, kept consistent across the whole image.
-  texture_and_material: Dug earth, carved stone and gold piles, kept consistent across the whole image.
-  camera_and_composition: Top-down angled view of the dungeon, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with mischievous villainy, kept consistent across the whole image.
-  rendering_and_quality: Clean management capture with no UI, kept consistent across the whole image.
-  creative_brief: "Dungeon overlord build gameplay: an original management capture of an evil overlord's dungeon seen from above, imps digging tunnels, traps and treasure rooms. Carry it through imps digging, traps, treasure rooms, overhead dungeon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: imps digging; traps; treasure rooms; overhead dungeon
+  aesthetic: 'Bullfrog Productions Dungeon Keeper (1997) look: top-down dungeon building, imps digging rock, lava rivers, trap rooms and heroes invading.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as small cartoonish imps and heroes from above. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Lava orange and earth brown, true to the Dungeon Keeper 1997 palette.
+  lighting_and_shadow: Lava glow in dungeon dark, lit the way Dungeon Keeper 1997 lights its levels.
+  texture_and_material: Chunky late-nineties textures, with the in-engine surface finish of Dungeon Keeper 1997.
+  camera_and_composition: Top-down dungeon view, framed the way Dungeon Keeper 1997 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with devilishly mischievous building.
+  rendering_and_quality: Authentic late-nineties strategy screen, matching real Dungeon Keeper 1997 screenshots.
+  creative_brief: 'Bullfrog Productions Dungeon Keeper (1997) look: top-down dungeon building, imps digging rock, lava rivers, trap rooms and heroes invading. Carry it through Dungeon Keeper imps, lava, traps. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Dungeon Keeper imps; lava; traps
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - dungeon-overlord
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

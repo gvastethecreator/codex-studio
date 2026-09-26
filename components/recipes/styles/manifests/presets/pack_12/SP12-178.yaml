@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-178
 packId: pack_12
-name: Shadow-Casting Puzzle Capture
+name: Shadowmatic 2015 - Triada Shadow Puzzles
 styleAnchors:
-  - Shadow-Casting Puzzle Capture
+  - Shadowmatic 2015 - Triada Shadow Puzzles
   - light and shadow puzzle screenshot
   - single lamp
-displayName: Shadow-Casting Puzzle Capture
+displayName: Shadowmatic 2015 - Triada Shadow Puzzles
 category: 8. Puzzle Chambers & Adventure Setpieces
 domain: light and shadow puzzle screenshot
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - shadow-puzzle
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Shadow-casting puzzle capture: an original puzzle screenshot where objects are rotated in front of a lamp until their combined shadow forms a hidden shape on the wall.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; arrange the subject so its shadow forms a surprising shape on a wall.
-  color_and_tone: Dark room, warm lamp light and crisp shadows.
-  lighting_and_shadow: Single lamp casting a sharp shadow, kept consistent across the whole image.
-  texture_and_material: Found objects, plaster wall and lamp glass, kept consistent across the whole image.
-  camera_and_composition: Objects in foreground, shadow on the wall, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with quiet revelation, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with a clear shadow shape, kept consistent across the whole image.
-  creative_brief: "Shadow-casting puzzle capture: an original puzzle screenshot where objects are rotated in front of a lamp until their combined shadow forms a hidden shape on the wall. Carry it through single lamp, hidden shadow shape, rotated objects, wall. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: single lamp; hidden shadow shape; rotated objects; wall
+  aesthetic: 'Triada Studio Shadowmatic (2015) look: rotating abstract objects under a lamp to cast recognizable shadows on a wall, moody rooms and surreal reveals.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render every subject as abstract object clusters and the shadows they cast. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Moody sepia, wall cream and deep shadow, true to the Shadowmatic 2015 palette.
+  lighting_and_shadow: Single lamp casting hard shadows, lit the way Shadowmatic 2015 lights its levels.
+  texture_and_material: Clean matte objects, with the in-engine surface finish of Shadowmatic 2015.
+  camera_and_composition: Front view of a lit wall, framed the way Shadowmatic 2015 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with quiet surreal discovery.
+  rendering_and_quality: Authentic shadow puzzle screen, matching real Shadowmatic 2015 screenshots.
+  creative_brief: 'Triada Studio Shadowmatic (2015) look: rotating abstract objects under a lamp to cast recognizable shadows on a wall, moody rooms and surreal reveals. Carry it through Shadowmatic shadows, lamp, abstract objects. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Shadowmatic shadows; lamp; abstract objects
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
@@ -42,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -63,6 +67,7 @@ taxonomy:
     - shadow-puzzle
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -26,10 +26,10 @@ visualDna:
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a glowing translucent wireframe figure inside a pulsing vector network. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Black void with neon cyan, magenta and orange lines.
   lighting_and_shadow: Self-lit glowing vector lines that pulse to a beat.
-  texture_and_material: Clean wireframe polygons and particle bursts, with the surface finish of Rez 2001.
-  camera_and_composition: On-rails view behind the wireframe avatar, framed the way Rez 2001 composes its shots and pages.
+  texture_and_material: Clean wireframe polygons and particle bursts, with the in-engine surface finish of Rez 2001.
+  camera_and_composition: On-rails view behind the wireframe avatar, framed the way Rez 2001 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with trance-like digital rapture.
-  rendering_and_quality: Authentic early-2000s wireframe rhythm shooter screen, in the recognizable hand of Rez 2001.
+  rendering_and_quality: Authentic early-2000s wireframe rhythm shooter screen, matching real Rez 2001 screenshots.
   creative_brief: 'United Game Artists Rez (2001) look: glowing vector wireframe worlds inside a computer network, a translucent wireframe humanoid avatar, lock-on lasers and Kandinsky-inspired synesthesia. Carry it through Rez wireframe, lock-on lasers, synesthesia, neon void. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Rez wireframe; lock-on lasers; synesthesia; neon void
 avoidRules:
@@ -46,13 +46,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: existing avatar forms, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing avatar forms, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

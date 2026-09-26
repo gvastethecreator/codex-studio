@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Acornsoft Elite (1984) BBC Micro look: white wireframe spaceships with hidden-line removal, rotating space stations, a scanner radar below and black space.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as thin white wireframe forms floating in black space above a radar scanner. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: White and yellow wireframe lines on black, true to the Elite 1984 palette.
-  lighting_and_shadow: Pure wireframe line light on black, lit the way Elite 1984 lights its scenes.
-  texture_and_material: Thin monochrome wireframe lines and CRT pixels, with the surface finish of Elite 1984.
-  camera_and_composition: Cockpit view with a scanner console below, framed the way Elite 1984 composes its shots and pages.
+  lighting_and_shadow: Pure wireframe line light on black, lit the way Elite 1984 lights its levels.
+  texture_and_material: Thin monochrome wireframe lines and CRT pixels, with the in-engine surface finish of Elite 1984.
+  camera_and_composition: Cockpit view with a scanner console below, framed the way Elite 1984 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with lonely vast trading.
-  rendering_and_quality: Authentic eighties wireframe space screen, in the recognizable hand of Elite 1984.
+  rendering_and_quality: Authentic eighties wireframe space screen, matching real Elite 1984 screenshots.
   creative_brief: 'Acornsoft Elite (1984) BBC Micro look: white wireframe spaceships with hidden-line removal, rotating space stations, a scanner radar below and black space. Carry it through Elite wireframe, rotating station, scanner radar. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Elite wireframe; rotating station; scanner radar
 avoidRules:
@@ -45,13 +45,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

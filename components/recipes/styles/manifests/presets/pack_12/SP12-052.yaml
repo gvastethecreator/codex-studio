@@ -1,14 +1,14 @@
 schemaVersion: 1
 id: SP12-052
 packId: pack_12
-name: Class Clash Bridge Control
+name: Overwatch 2016 - Blizzard Hero Payload
 styleAnchors:
-  - class-based team shooter gameplay screenshots
+  - Overwatch 2016 - Blizzard Hero Payload
   - stylized bridge control point push
   - Class Clash Bridge Control
-displayName: Class Clash Bridge Control
+displayName: Overwatch 2016 - Blizzard Hero Payload
 category: 4. Sieges, Warfronts & Last Stands
-version: 1
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -22,48 +22,20 @@ tags:
   - render-first-person-stylized
   - camera-first-person
   - hud-contextual-hud
+  - reference-title
 visualDna:
-  aesthetic: 'Original in-game screenshot look for class-based team shooter captures: stylized first-person combat, readable team colors, chunky industrial bridge geometry, control-point pressure, projectile arcs, and comedy-violent arena clarity. Borrow the bold readability of Team Fortress-like games, but land as a different fictional class shooter with different silhouettes, props, UI icons, and map architecture.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable class-shooter screenshot subject:
-    keep clear class/object role, team spacing, objective pressure, projectile/hit readability,
-    cover affordance, and first-person scale without copying source classes or maps.
-  color_and_tone: >-
-    Use a stylized team-shooter palette: warm red, workwear blue, dusty tan, black metal, cream
-    signage shapes without text, muzzle orange, and clean shadow groups. Keep value grouping legible
-    and avoid military realism.
-  lighting_and_shadow: >-
-    Light the image through baked midday light, muzzle flashes, rocket trails, objective glow, and
-    soft cartoon shadows. Lighting must clarify the playable route, threat, focal subject, or
-    objective and avoid generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from painterly industrial props, wood planks, metal bridges, team-color panels,
-    simple weapons, and exaggerated character shapes without copying cast. Materials should feel
-    like in-engine game assets captured during play, with enough texture identity to separate props,
-    terrain, characters, hazards, and interactables.
-  camera_and_composition: >-
-    Compose with first-person weapon/tool camera, bridge or control-point route, allies/enemies
-    spaced around cover, projectile arcs, and one clear push/defend decision. Avoid isometric
-    strategy or tactical overview.
-  atmosphere_and_mood: >-
-    Carry an original class-clash mood: competitive, comic, industrial, tactical, noisy, and highly
-    readable.
-  rendering_and_quality: >-
-    Finish as coherent first-person stylized team-shooter screenshot style, not concept art:
-    health/ammo/objective icons can appear abstract and non-readable. Maintain heavy-denoise
-    clarity, crisp silhouettes, no exact class silhouettes, and no readable objective text.
-  key_features: >-
-    Team Fortress 2 gameplay screenshots; stylized team-shooter capture with bold silhouettes,
-    capture-point geometry, class-based spacing, and readable red-vs-blue battlefield color;
-    industrial red, worksite blue, dusty tan, black shadows, white UI blocks, and orange explosion
-    pops; baked midday light, muzzle flashes, rocket trails, objective glow, and soft cartoon
-    shadows; painterly industrial props, wood planks, metal bridges, team-color panels, simple
-    weapons, and exaggerated character shapes without copying cast; first-person or spectator
-    capture with objective point, team lanes, projectile arcs, and compact team HUD; competitive,
-    comic, industrial, tactical, and readable; HUD guidance: class shooter HUD is allowed: health,
-    ammo, capture meter, kill feed shape, and team indicators should be era-coherent
-  creative_brief: "Class Clash Bridge Control: in-game screenshot language informed by class-based team shooter references, covering first-person camera, team-color readability, chunky bridge geometry, projectile clarity, and control-point pressure. Avoid direct Team Fortress cloning, strategy-tactics framing, exact class silhouettes, and readable UI text. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'Blizzard Overwatch (2016) look: bright animated-film stylized 3D, chunky readable hero silhouettes, colorful near-future maps and payload escort objectives.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as colorful animated-film heroes with exaggerated readable silhouettes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Bright optimistic orange, teal and sunny whites, true to the Overwatch 2016 palette.
+  lighting_and_shadow: Warm clean daylight with soft bounce, lit the way Overwatch 2016 lights its levels.
+  texture_and_material: Stylized painted PBR surfaces, with the in-engine surface finish of Overwatch 2016.
+  camera_and_composition: First-person view with a stylized weapon, framed the way Overwatch 2016 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with hopeful team heroics.
+  rendering_and_quality: Authentic hero shooter screen, matching real Overwatch 2016 screenshots.
+  key_features: Overwatch animated-film heroes; payload; bright maps
+  creative_brief: 'Blizzard Overwatch (2016) look: bright animated-film stylized 3D, chunky readable hero silhouettes, colorful near-future maps and payload escort objectives. Carry it through Overwatch animated-film heroes, payload, bright maps. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
+  - existing Overwatch heroes
   - watermark
   - logo
   - copyright mark
@@ -92,22 +64,21 @@ avoidRules:
   - strategy tactics camera
   - readable objective text
   - exact class silhouettes
+  - text
+  - readable labels
+  - franchise likeness
+  - real person likeness
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-052.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, direct Team Fortress clone, strategy tactics camera,
-    readable objective text, exact class silhouettes
+  negativePrompt: existing Overwatch heroes, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Team Fortress clone, strategy tactics camera, readable objective text, exact class silhouettes, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Original class-based team shooter, Team Fortress-informed
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    class shooter HUD is allowed: health, ammo, capture meter, kill feed shape, and team indicators
-    should be era-coherent
+  hudGuidance: 'class shooter HUD is allowed: health, ammo, capture meter, kill feed shape, and team indicators should be era-coherent'
   renderFamily: first-person-stylized
   cameraFamily: first-person
   hudMode: contextual-hud
@@ -125,6 +96,7 @@ taxonomy:
     - render-first-person-stylized
     - camera-first-person
     - hud-contextual-hud
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

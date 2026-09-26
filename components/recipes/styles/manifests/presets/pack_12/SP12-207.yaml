@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-207
 packId: pack_12
-name: Fog-Town Radio Static Gameplay
+name: Silent Hill 1999 - Team Silent PS1 Fog
 styleAnchors:
-  - Fog-Town Radio Static Gameplay
+  - Silent Hill 1999 - Team Silent PS1 Fog
   - foggy town horror gameplay
   - thick fog
-displayName: Fog-Town Radio Static Gameplay
+displayName: Silent Hill 1999 - Team Silent PS1 Fog
 category: 11. Psychological & Tactical Gameplay
 domain: foggy town horror gameplay
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,22 +20,23 @@ tags:
   - fog-radio
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Fog-town radio static gameplay: an original third-person horror capture of a lone figure in a town drowned in white fog, with a crackling radio warning of nearby threats.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject small in a fog-drowned town with limited visibility.
-  color_and_tone: Grey-white fog, rust brown and muted colors, kept consistent across the whole image.
-  lighting_and_shadow: Flat foggy daylight and a small flashlight, kept consistent across the whole image.
-  texture_and_material: Wet asphalt, rusted signs without text and fog.
-  camera_and_composition: Third-person with figures fading into fog, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with lonely creeping dread.
-  rendering_and_quality: Clean capture with no readable signs, kept consistent across the whole image.
-  creative_brief: "Fog-town radio static gameplay: an original third-person horror capture of a lone figure in a town drowned in white fog, with a crackling radio warning of nearby threats. Carry it through thick fog, lone figure, empty town, radio crackle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: thick fog; lone figure; empty town; radio crackle
+  aesthetic: 'Team Silent Silent Hill (1999) look: PS1 horror with fog hiding a tiny draw distance, crackling radio, low-poly town streets, darkness and grainy flashlight.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as low-poly PS1 figures in the fog. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: White fog and rust, true to the Silent Hill 1999 palette.
+  lighting_and_shadow: Fog and flashlight cone, lit the way Silent Hill 1999 lights its levels.
+  texture_and_material: Low-poly PS1 textures, with the in-engine surface finish of Silent Hill 1999.
+  camera_and_composition: Third-person fog view, framed the way Silent Hill 1999 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with unknowable foggy dread.
+  rendering_and_quality: Authentic PS1 horror screen, matching real Silent Hill 1999 screenshots.
+  creative_brief: 'Team Silent Silent Hill (1999) look: PS1 horror with fog hiding a tiny draw distance, crackling radio, low-poly town streets, darkness and grainy flashlight. Carry it through Silent Hill 1999 fog, low-poly, radio. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Silent Hill 1999 fog; low-poly; radio
 avoidRules:
+  - a pyramid-helmeted executioner
   - readable signs
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -44,13 +45,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: readable signs, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a pyramid-helmeted executioner, readable signs, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -65,6 +69,7 @@ taxonomy:
     - fog-radio
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

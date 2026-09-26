@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-177
 packId: pack_12
-name: Treasure Island Dig Capture
+name: Return to Monkey Island 2022 - Terrible Toybox Paper Cutout
 styleAnchors:
-  - Treasure Island Dig Capture
+  - Return to Monkey Island 2022 - Terrible Toybox Paper Cutout
   - pirate treasure digging screenshot
   - tropical island
-displayName: Treasure Island Dig Capture
+displayName: Return to Monkey Island 2022 - Terrible Toybox Paper Cutout
 category: 8. Puzzle Chambers & Adventure Setpieces
 domain: pirate treasure digging screenshot
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,18 +20,21 @@ tags:
   - treasure-dig
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Treasure island dig capture: an original third-person screenshot of digging on a tropical island at the spot marked on a map, palm trees, shovels and a glinting chest.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject digging for treasure on a tropical island.
-  color_and_tone: Turquoise sea, white sand and palm green, kept consistent across the whole image.
-  lighting_and_shadow: Bright tropical sun, kept consistent across the whole image.
-  texture_and_material: Sand, wood, old maps and metal chests, kept consistent across the whole image.
-  camera_and_composition: Third-person view over the dig site, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with adventurous greed, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no readable map labels, kept consistent across the whole image.
-  creative_brief: "Treasure island dig capture: an original third-person screenshot of digging on a tropical island at the spot marked on a map, palm trees, shovels and a glinting chest. Carry it through tropical island, digging, treasure chest, palm trees. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: tropical island; digging; treasure chest; palm trees
+  aesthetic: 'Terrible Toybox Return to Monkey Island (2022) look: paper-cutout storybook art with angular shapes, flat textures, pirate islands and comic adventure staging.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as angular paper-cutout cartoon pirates. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Tropical teal, sand and sunset orange, true to the Return to Monkey Island 2022 palette.
+  lighting_and_shadow: Flat storybook light, lit the way Return to Monkey Island 2022 lights its levels.
+  texture_and_material: Paper-cutout flat textures, with the in-engine surface finish of Return to Monkey Island 2022.
+  camera_and_composition: Side-view adventure scene, framed the way Return to Monkey Island 2022 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with wry piratical comedy.
+  rendering_and_quality: Authentic storybook adventure screen, matching real Return to Monkey Island 2022 screenshots.
+  creative_brief: 'Terrible Toybox Return to Monkey Island (2022) look: paper-cutout storybook art with angular shapes, flat textures, pirate islands and comic adventure staging. Carry it through Return to Monkey Island paper cutout, pirates. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Return to Monkey Island paper cutout; pirates
 avoidRules:
+  - a blond wannabe pirate
+  - a ghost pirate captain
   - readable map labels
   - existing game characters, logos or levels
   - readable interface text
@@ -43,13 +46,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: readable map labels, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a blond wannabe pirate, a ghost pirate captain, readable map labels, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +70,7 @@ taxonomy:
     - treasure-dig
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

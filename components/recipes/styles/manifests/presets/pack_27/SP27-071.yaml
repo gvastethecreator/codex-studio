@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Konami Castlevania (1986) NES look: gothic castle staircases, candles to whip, bats and medusa heads, dark red and blue palette and horror movie homage.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a small sprite climbing gothic castle stairways lit by candles. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Dark red brick, night blue and candle yellow.
-  lighting_and_shadow: Flat NES light with candle flicker, lit the way Castlevania 1986 lights its scenes.
+  lighting_and_shadow: Flat NES light with candle flicker, lit the way Castlevania 1986 lights its levels.
   texture_and_material: Visible chunky pixels on a curved CRT with scanlines, slight bloom and phosphor glow.
-  camera_and_composition: Side-scrolling castle view with stairs, framed the way Castlevania 1986 composes its shots and pages.
+  camera_and_composition: Side-scrolling castle view with stairs, framed the way Castlevania 1986 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with gothic horror adventure.
-  rendering_and_quality: Authentic NES gothic platformer screen, in the recognizable hand of Castlevania 1986.
+  rendering_and_quality: Authentic NES gothic platformer screen, matching real Castlevania 1986 screenshots.
   creative_brief: 'Konami Castlevania (1986) NES look: gothic castle staircases, candles to whip, bats and medusa heads, dark red and blue palette and horror movie homage. Carry it through Castlevania stairs, candles, bats, gothic castle. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Castlevania stairs; candles; bats; gothic castle
 avoidRules:
@@ -47,13 +47,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: a whip-wielding vampire hunter, a caped vampire lord, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a whip-wielding vampire hunter, a caped vampire lord, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

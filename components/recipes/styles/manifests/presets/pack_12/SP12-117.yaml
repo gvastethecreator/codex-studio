@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-117
 packId: pack_12
-name: Cosmic Library Portal Capture
+name: Ratchet & Clank Rift Apart 2021 - Insomniac Rift Portals
 styleAnchors:
-  - Cosmic Library Portal Capture
+  - Ratchet & Clank Rift Apart 2021 - Insomniac Rift Portals
   - magical library portal screenshot
   - infinite shelves
-displayName: Cosmic Library Portal Capture
+displayName: Ratchet & Clank Rift Apart 2021 - Insomniac Rift Portals
 category: 2. Arcane Temples & Mythic Realms
 domain: magical library portal screenshot
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,22 +20,23 @@ tags:
   - cosmic-library
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Cosmic library portal capture: an original screenshot of an infinite magical library where bookshelves open into starfields, floating books and portal doorways.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; place the subject in an infinite library where shelves open into space.
-  color_and_tone: Warm wood and gold against deep starfield blues.
-  lighting_and_shadow: Candlelight mixed with cosmic glow, kept consistent across the whole image.
-  texture_and_material: Old wood, leather books and swirling nebula, kept consistent across the whole image.
-  camera_and_composition: Third-person view down endless shelves, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with scholarly cosmic awe.
-  rendering_and_quality: Clean capture with no readable book titles, kept consistent across the whole image.
-  creative_brief: "Cosmic library portal capture: an original screenshot of an infinite magical library where bookshelves open into starfields, floating books and portal doorways. Carry it through infinite shelves, floating books, starfield portals, candlelight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: infinite shelves; floating books; starfield portals; candlelight
+  aesthetic: 'Insomniac Games Ratchet & Clank: Rift Apart (2021) look: animated-film-quality stylized 3D, glowing purple dimensional rifts tearing open, dense detailed environments and cartoon characters.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as animated-film cartoon characters with expressive faces. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Rift purple, cyan and warm gold, true to the Ratchet & Clank Rift Apart 2021 palette.
+  lighting_and_shadow: Glowing rift light with cinematic bounce, lit the way Ratchet & Clank Rift Apart 2021 lights its levels.
+  texture_and_material: Animated-film-quality stylized surfaces, with the in-engine surface finish of Ratchet & Clank Rift Apart 2021.
+  camera_and_composition: Third-person action view near a rift, framed the way Ratchet & Clank Rift Apart 2021 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with zippy dimensional adventure.
+  rendering_and_quality: Authentic PS5 animated-film action screen, matching real Ratchet & Clank Rift Apart 2021 screenshots.
+  creative_brief: 'Insomniac Games Ratchet & Clank: Rift Apart (2021) look: animated-film-quality stylized 3D, glowing purple dimensional rifts tearing open, dense detailed environments and cartoon characters. Carry it through Rift Apart portals, animated-film 3D, purple rifts. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Rift Apart portals; animated-film 3D; purple rifts
 avoidRules:
+  - a furry lombax with a small robot on his back
   - readable book titles
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -44,13 +45,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: readable book titles, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a furry lombax with a small robot on his back, readable book titles, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -65,6 +69,7 @@ taxonomy:
     - cosmic-library
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

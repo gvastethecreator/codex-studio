@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'NanaOn-Sha PaRappa the Rapper (1996) look: paper-flat 2D characters by Rodney Greenblat in 3D worlds, bright pop colors and rhythm game energy.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as paper-flat cartoon cutouts in bright pop 3D worlds. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Bright pop pink, yellow, blue and green, true to the PaRappa the Rapper 1996 palette.
-  lighting_and_shadow: Flat cheerful light, lit the way PaRappa the Rapper 1996 lights its scenes.
+  lighting_and_shadow: Flat cheerful light, lit the way PaRappa the Rapper 1996 lights its levels.
   texture_and_material: Flat paper cutout characters in simple 3D sets.
-  camera_and_composition: Stage-like rhythm scenes, framed the way PaRappa the Rapper 1996 composes its shots and pages.
+  camera_and_composition: Stage-like rhythm scenes, framed the way PaRappa the Rapper 1996 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with cheerful rhythmic optimism.
-  rendering_and_quality: Authentic PS1 rhythm game screen, in the recognizable hand of PaRappa the Rapper 1996.
+  rendering_and_quality: Authentic PS1 rhythm game screen, matching real PaRappa the Rapper 1996 screenshots.
   creative_brief: 'NanaOn-Sha PaRappa the Rapper (1996) look: paper-flat 2D characters by Rodney Greenblat in 3D worlds, bright pop colors and rhythm game energy. Carry it through PaRappa paper-flat, Greenblat designs, pop colors. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: PaRappa paper-flat; Greenblat designs; pop colors
 avoidRules:
@@ -47,13 +47,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: a rapping dog in a knit hat, an onion martial arts master, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a rapping dog in a knit hat, an onion martial arts master, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

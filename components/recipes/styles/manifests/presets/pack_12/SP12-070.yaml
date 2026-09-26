@@ -1,14 +1,14 @@
 schemaVersion: 1
 id: SP12-070
 packId: pack_12
-name: Wild Shrine Bow Trial
+name: Breath of the Wild 2017 - Nintendo Painterly Open Air
 styleAnchors:
-  - open-air adventure shrine gameplay screenshots
+  - Breath of the Wild 2017 - Nintendo Painterly Open Air
   - third-person bow puzzle trial
   - Wild Shrine Bow Trial
-displayName: Wild Shrine Bow Trial
+displayName: Breath of the Wild 2017 - Nintendo Painterly Open Air
 category: 2. Arcane Temples & Mythic Realms
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -22,48 +22,22 @@ tags:
   - render-third-person-adventure
   - camera-third-person
   - hud-contextual-hud
+  - reference-title
 visualDna:
-  aesthetic: 'Original in-game screenshot look for open-air adventure shrine captures: third-person exploration-combat, bow or tool trial readability, clean cel-natural materials, puzzle routes, stamina/traversal spacing, and sacred outdoor architecture. Borrow the open-air readability of Breath of the Wild-like games, but land as a different fictional shrine-adventure with different props, symbols, UI icons, enemies, and architecture.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable shrine-adventure screenshot
-    subject: keep clear player/object/threat role, traversal affordance, bow/tool aim relationship,
-    puzzle route, and scale readability without copying source characters or named IP elements.
-  color_and_tone: >-
-    Use an open-air shrine palette: grass green, sky blue, warm stone, pale gold, slate shadow,
-    turquoise energy, and weathered wood. Keep value grouping legible and avoid tactical-strategy
-    desaturation.
-  lighting_and_shadow: >-
-    Light the image through soft open-world daylight, moonlight, shrine glow, arrow trails, and
-    gentle atmospheric haze. Lighting must clarify the playable route, threat, focal subject, or
-    objective and avoid generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from painted grass, ancient stone, glowing circuitry, cloth, wood bows, simple
-    physics props, and stylized terrain. Materials should feel like in-engine game assets captured
-    during play, with enough texture identity to separate props, terrain, characters, hazards, and
-    interactables.
-  camera_and_composition: >-
-    Compose with third-person adventure camera, player/tool line, shrine mechanism, traversal route,
-    enemy or target spacing, and one clear puzzle/combat decision. Avoid strategy overview and
-    box-art hero pose.
-  atmosphere_and_mood: >-
-    Carry an original wild-shrine adventure mood: quiet, airy, curious, lightly magical, open, and
-    exploratory.
-  rendering_and_quality: >-
-    Finish as coherent third-person adventure gameplay screenshot style, not concept art: sparse
-    contextual HUD, stamina/aim cues, item icons, and objective pips can appear abstract and
-    non-readable. Maintain heavy-denoise clarity and readable gameplay scale.
-  key_features: >-
-    The Legend of Zelda: Breath of the Wild gameplay screenshots; third-person open-air adventure
-    capture with cel-shaded terrain, shrine technology, bow aiming, and clean traversal affordances;
-    grass green, shrine blue, warm stone, sky cyan, moon silver, and orange camp glow; soft
-    open-world daylight, moonlight, shrine glow, arrow trails, and gentle atmospheric haze; painted
-    grass, ancient stone, glowing circuitry, cloth, wood bows, simple physics props, and stylized
-    terrain; third-person exploration/combat framing with bow reticle, climbable shapes, shrine
-    axes, and distant landmark readability; quiet, adventurous, airy, curious, and lightly magical;
-    HUD guidance: hearts, stamina wheel, minimap, temperature icons, and bow reticle can appear if
-    kept clean and authentic to open-world adventure
-  creative_brief: "Wild Shrine Bow Trial: in-game screenshot language informed by open-air adventure references, covering third-person camera, clean cel-natural materials, shrine mechanisms, bow/tool aiming, traversal routes, and readable puzzle-combat state. Avoid direct Zelda cloning, strategy-tactics framing, exact shrine UI, recognizable franchise props, and promotional composition. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'Nintendo The Legend of Zelda: Breath of the Wild (2017) look: soft painterly cel-shaded open air, watercolor-like grass, wind-blown plains, ancient shrines and gliding over vast landscapes.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as soft cel-shaded adventurers with simple shapes and painterly shading. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Soft grass green, sky blue, sunset gold and stone grey.
+  lighting_and_shadow: Soft open-air light with painterly haze, lit the way Breath of the Wild 2017 lights its levels.
+  texture_and_material: Painterly cel shading with watercolor-like grass, with the in-engine surface finish of Breath of the Wild 2017.
+  camera_and_composition: Third-person view across a vast open landscape, framed the way Breath of the Wild 2017 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with free open-air adventure.
+  rendering_and_quality: Authentic Switch painterly open-world screen, matching real Breath of the Wild 2017 screenshots.
+  key_features: BotW painterly cel; open plains; ancient shrines
+  creative_brief: 'Nintendo The Legend of Zelda: Breath of the Wild (2017) look: soft painterly cel-shaded open air, watercolor-like grass, wind-blown plains, ancient shrines and gliding over vast landscapes. Carry it through BotW painterly cel, open plains, ancient shrines. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
+  - a green-tunic elf hero
+  - one-eyed spider guardian machines
+  - blue Sheikah glyphs
   - watermark
   - logo
   - copyright mark
@@ -92,22 +66,21 @@ avoidRules:
   - strategy tactics camera
   - exact shrine UI
   - recognizable franchise props
+  - text
+  - readable labels
+  - franchise likeness
+  - real person likeness
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-070.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, direct Zelda clone, strategy tactics camera, exact shrine
-    UI, recognizable franchise props
+  negativePrompt: a green-tunic elf hero, one-eyed spider guardian machines, blue Sheikah glyphs, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Zelda clone, strategy tactics camera, exact shrine UI, recognizable franchise props, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Original open-air adventure shrine, Breath of the Wild-informed
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    hearts, stamina wheel, minimap, temperature icons, and bow reticle can appear if kept clean and
-    authentic to open-world adventure
+  hudGuidance: hearts, stamina wheel, minimap, temperature icons, and bow reticle can appear if kept clean and authentic to open-world adventure
   renderFamily: third-person-adventure
   cameraFamily: third-person
   hudMode: contextual-hud
@@ -125,6 +98,7 @@ taxonomy:
     - render-third-person-adventure
     - camera-third-person
     - hud-contextual-hud
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

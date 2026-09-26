@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP12-019
 packId: pack_12
-name: Metro Mutant Subway Horror
+name: Metro 2033 2010 - 4A Games Moscow Tunnels
 styleAnchors:
-  - Metro 2033 Redux gameplay screenshots
+  - Metro 2033 2010 - 4A Games Moscow Tunnels
   - Metro Mutant Subway Horror
-displayName: Metro Mutant Subway Horror
+displayName: Metro 2033 2010 - 4A Games Moscow Tunnels
 category: 7. Heists, Horror & Underworld Runs
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,48 +23,16 @@ tags:
   - hud-diegetic-hud
   - reference-title
 visualDna:
-  aesthetic: 'In-game screenshot look informed by Metro 2033 Redux gameplay: first-person post-apocalyptic subway capture with flashlight tunnels, gas masks, mutant silhouettes, and Soviet underground survival detail. It never recreates an exact official level, character, logo or marketing art.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable Metro 2033 Redux-adjacent game
-    screenshot subject: keep clear role silhouette, player/enemy/object function, scale
-    relationship, hitbox-like readability, and interaction affordances without copying source
-    characters or named IP elements.
-  color_and_tone: >-
-    Use a Metro 2033 Redux-informed palette: dirty concrete grey, rust brown, flashlight white,
-    toxic green, muzzle orange, and black tunnel void. Keep value grouping legible at gameplay
-    distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues
-    rather than decorative wash.
-  lighting_and_shadow: >-
-    Light the image through flashlight cones, headlamp beams, station fires, muzzle flash, and
-    sparse emergency bulbs. Lighting must clarify the playable route, threat, focal subject, or
-    objective and avoid generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from wet rails, cracked tile, patched weapons, gas-mask glass, old posters
-    without readable text, and grime-heavy pipes. Materials should feel like in-engine game assets
-    captured during play, with enough texture identity to separate props, terrain, characters,
-    hazards, and interactables.
-  camera_and_composition: >-
-    Compose with first-person tunnel framing with weapon, mask vignette, route choke points, enemy
-    approach lanes, and scavenged-object readability. The frame should read as a plausible gameplay
-    capture; include UI/HUD only when it matches the source game's visual logic and improves
-    clarity.
-  atmosphere_and_mood: 'Metro 2033 Redux-derived mood: claustrophobic, desperate, feral, cold, and underground; it follows the tone of the requested scene without forcing a fixed mission or story.'
-  rendering_and_quality: >-
-    Finish as a coherent in-engine screenshot style, not concept art: minimal survival HUD,
-    watch/gas-mask indicators, ammo checks, and diegetic device cues are allowed. Maintain
-    heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos,
-    stock-photo polish, or random interface clutter.
-  key_features: >-
-    Metro 2033 Redux gameplay screenshots; first-person post-apocalyptic subway capture with
-    flashlight tunnels, gas masks, mutant silhouettes, and Soviet underground survival detail; dirty
-    concrete grey, rust brown, flashlight white, toxic green, muzzle orange, and black tunnel void;
-    flashlight cones, headlamp beams, station fires, muzzle flash, and sparse emergency bulbs; wet
-    rails, cracked tile, patched weapons, gas-mask glass, old posters without readable text, and
-    grime-heavy pipes; first-person tunnel framing with weapon, mask vignette, route choke points,
-    enemy approach lanes, and scavenged-object readability; claustrophobic, desperate, feral, cold,
-    and underground; HUD guidance: minimal survival HUD, watch/gas-mask indicators, ammo checks, and
-    diegetic device cues are allowed
-  creative_brief: "Metro Mutant Subway Horror: in-game screenshot language informed by Metro 2033 Redux, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: '4A Games Metro 2033 (2010) look: first-person survival horror in post-apocalyptic Moscow metro tunnels, gas masks, hand-cranked lights, makeshift station towns and mutants.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as ragged metro survivors in gas masks and patched coats, seen from first person. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Tunnel black, flashlight white, rust and sickly green.
+  lighting_and_shadow: Flashlight beams in deep tunnel darkness and warm station fires.
+  texture_and_material: Grimy concrete, rust, condensation on the mask glass.
+  camera_and_composition: First-person view through a cracked gas mask, framed the way Metro 2033 2010 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with suffocating underground dread.
+  rendering_and_quality: Authentic early-2010s survival shooter screen, matching real Metro 2033 2010 screenshots.
+  key_features: Metro tunnels; gas masks; flashlight; station towns
+  creative_brief: '4A Games Metro 2033 (2010) look: first-person survival horror in post-apocalyptic Moscow metro tunnels, gas masks, hand-cranked lights, makeshift station towns and mutants. Carry it through Metro tunnels, gas masks, flashlight, station towns. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - watermark
   - logo
@@ -92,23 +60,15 @@ avoidRules:
   - copied box art composition
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-019.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Metro 2033 Redux
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    minimal survival HUD, watch/gas-mask indicators, ammo checks, and diegetic device cues are
-    allowed
+  hudGuidance: minimal survival HUD, watch/gas-mask indicators, ammo checks, and diegetic device cues are allowed
   renderFamily: first-person-immersive
   cameraFamily: first-person
   hudMode: diegetic-hud

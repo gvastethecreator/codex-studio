@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP12-015
 packId: pack_12
-name: Axiom Verge Ancient Tech Temple
+name: Axiom Verge 2015 - Thomas Happ Glitch Pixel Ruin
 styleAnchors:
-  - Axiom Verge gameplay screenshots
+  - Axiom Verge 2015 - Thomas Happ Glitch Pixel Ruin
   - Axiom Verge Ancient Tech Temple
-displayName: Axiom Verge Ancient Tech Temple
+displayName: Axiom Verge 2015 - Thomas Happ Glitch Pixel Ruin
 category: 2. Arcane Temples & Mythic Realms
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,48 +23,16 @@ tags:
   - hud-contextual-hud
   - reference-title
 visualDna:
-  aesthetic: 'In-game screenshot look informed by Axiom Verge gameplay: retro metroidvania capture with biomechanical ruins, alien machinery, side-view corridors, glitch weapons, and readable tile hazards. It never recreates an exact official level, character, logo or marketing art.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable Axiom Verge-adjacent game
-    screenshot subject: keep clear role silhouette, player/enemy/object function, scale
-    relationship, hitbox-like readability, and interaction affordances without copying source
-    characters or named IP elements.
-  color_and_tone: >-
-    Use a Axiom Verge-informed palette: deep purple, toxic green, rusty red, bone white, black void,
-    and electric blue glitch accents. Keep value grouping legible at gameplay distance, with color
-    accents behaving like route, danger, pickup, team, magic, or objective cues rather than
-    decorative wash.
-  lighting_and_shadow: >-
-    Light the image through pixel bloom from energy nodes, dark room contrast, weapon flashes, and
-    monitor-like color bands. Lighting must clarify the playable route, threat, focal subject, or
-    objective and avoid generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from pixelated bio-circuit walls, alien statues, ribbed machinery, corrupted
-    tiles, and crunchy particle bursts. Materials should feel like in-engine game assets captured
-    during play, with enough texture identity to separate props, terrain, characters, hazards, and
-    interactables.
-  camera_and_composition: >-
-    Compose with side-view exploration frame with platforms, doors, enemies, secret routes, and
-    small character scale against strange architecture. The frame should read as a plausible
-    gameplay capture; include UI/HUD only when it matches the source game's visual logic and
-    improves clarity.
-  atmosphere_and_mood: 'Axiom Verge-derived mood: lonely, alien, retro, corrupted, and exploratory; it follows the tone of the requested scene without forcing a fixed mission or story.'
-  rendering_and_quality: >-
-    Finish as a coherent in-engine screenshot style, not concept art: retro health bars, weapon
-    icons, map blocks, and glitch readouts are allowed if sparse and period-correct. Maintain
-    heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos,
-    stock-photo polish, or random interface clutter.
-  key_features: >-
-    Axiom Verge gameplay screenshots; retro metroidvania capture with biomechanical ruins, alien
-    machinery, side-view corridors, glitch weapons, and readable tile hazards; deep purple, toxic
-    green, rusty red, bone white, black void, and electric blue glitch accents; pixel bloom from
-    energy nodes, dark room contrast, weapon flashes, and monitor-like color bands; pixelated
-    bio-circuit walls, alien statues, ribbed machinery, corrupted tiles, and crunchy particle
-    bursts; side-view exploration frame with platforms, doors, enemies, secret routes, and small
-    character scale against strange architecture; lonely, alien, retro, corrupted, and exploratory;
-    HUD guidance: retro health bars, weapon icons, map blocks, and glitch readouts are allowed if
-    sparse and period-correct
-  creative_brief: "Axiom Verge Ancient Tech Temple: in-game screenshot language informed by Axiom Verge, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'Thomas Happ Axiom Verge (2015) look: 16-bit style pixel metroidvania in a biomechanical alien ruin, H.R. Giger-inspired organic machinery, glitch-gun corruption and scrambled pixels.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as small detailed pixel sprites in biomechanical ruins, with glitch effects scrambling nearby pixels. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Toxic purple, flesh pink, alien teal and corrupted neon.
+  lighting_and_shadow: Dark ruin interiors lit by glowing organic machinery.
+  texture_and_material: Dense 16-bit pixel art with biomechanical detail and glitch noise.
+  camera_and_composition: Side-view metroidvania room view, framed the way Axiom Verge 2015 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with eerie alien discovery.
+  rendering_and_quality: Authentic modern pixel metroidvania screen, matching real Axiom Verge 2015 screenshots.
+  key_features: Axiom Verge pixels; biomechanical ruin; glitch corruption
+  creative_brief: 'Thomas Happ Axiom Verge (2015) look: 16-bit style pixel metroidvania in a biomechanical alien ruin, H.R. Giger-inspired organic machinery, glitch-gun corruption and scrambled pixels. Carry it through Axiom Verge pixels, biomechanical ruin, glitch corruption. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - watermark
   - logo
@@ -92,23 +60,15 @@ avoidRules:
   - copied box art composition
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-015.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Axiom Verge
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    retro health bars, weapon icons, map blocks, and glitch readouts are allowed if sparse and
-    period-correct
+  hudGuidance: retro health bars, weapon icons, map blocks, and glitch readouts are allowed if sparse and period-correct
   renderFamily: retro-pixel-low-poly
   cameraFamily: side-view
   hudMode: contextual-hud

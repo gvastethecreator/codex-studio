@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP12-037
 packId: pack_12
-name: Mario 3D World Toy Platformer
+name: Super Mario 3D World 2013 - Nintendo EAD Toy Platformer
 styleAnchors:
-  - Super Mario 3D World gameplay screenshots
+  - Super Mario 3D World 2013 - Nintendo EAD Toy Platformer
   - Mario 3D World Toy Platformer
-displayName: Mario 3D World Toy Platformer
+displayName: Super Mario 3D World 2013 - Nintendo EAD Toy Platformer
 category: 8. Puzzle Chambers & Adventure Setpieces
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,49 +23,22 @@ tags:
   - hud-contextual-hud
   - reference-title
 visualDna:
-  aesthetic: 'In-game screenshot look informed by Super Mario 3D World gameplay: bright diorama platformer capture with toy-like geometry, rounded hazards, readable jumps, coins, and family-friendly but polished obstacle design. It never recreates an exact official level, character, logo or marketing art.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable Super Mario 3D World-adjacent game
-    screenshot subject: keep clear role silhouette, player/enemy/object function, scale
-    relationship, hitbox-like readability, and interaction affordances without copying source
-    characters or named IP elements.
-  color_and_tone: >-
-    Use a Super Mario 3D World-informed palette: sky blue, grass green, mushroom red, coin gold,
-    cloud white, and toy-plastic primaries. Keep value grouping legible at gameplay distance, with
-    color accents behaving like route, danger, pickup, team, magic, or objective cues rather than
-    decorative wash.
-  lighting_and_shadow: >-
-    Light the image through soft studio daylight, crisp platform shadows, sparkle pickups, and
-    gentle rim on round forms. Lighting must clarify the playable route, threat, focal subject, or
-    objective and avoid generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from rounded blocks, glossy pipes, soft grass, simple brick, plush-like enemies
-    without exact character copying, and toy prop materials. Materials should feel like in-engine
-    game assets captured during play, with enough texture identity to separate props, terrain,
-    characters, hazards, and interactables.
-  camera_and_composition: >-
-    Compose with fixed/following 3D platform camera with obstacle lanes, collectibles, depth-safe
-    jumps, and clean foreground-to-goal readability. The frame should read as a plausible gameplay
-    capture; include UI/HUD only when it matches the source game's visual logic and improves
-    clarity.
-  atmosphere_and_mood: 'Super Mario 3D World-derived mood: playful, precise, buoyant, colorful, and polished; it follows the tone of the requested scene without forcing a fixed mission or story.'
-  rendering_and_quality: >-
-    Finish as a coherent in-engine screenshot style, not concept art: score, timer, lives, coins,
-    and power-up icons can appear if they feel like classic platformer UI. Maintain heavy-denoise
-    clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish,
-    or random interface clutter.
-  key_features: >-
-    Super Mario 3D World gameplay screenshots; bright diorama platformer capture with toy-like
-    geometry, rounded hazards, readable jumps, coins, and family-friendly but polished obstacle
-    design; sky blue, grass green, mushroom red, coin gold, cloud white, and toy-plastic primaries;
-    soft studio daylight, crisp platform shadows, sparkle pickups, and gentle rim on round forms;
-    rounded blocks, glossy pipes, soft grass, simple brick, plush-like enemies without exact
-    character copying, and toy prop materials; fixed/following 3D platform camera with obstacle
-    lanes, collectibles, depth-safe jumps, and clean foreground-to-goal readability; playful,
-    precise, buoyant, colorful, and polished; HUD guidance: score, timer, lives, coins, and power-up
-    icons can appear if they feel like classic platformer UI
-  creative_brief: "Mario 3D World Toy Platformer: in-game screenshot language informed by Super Mario 3D World, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'Nintendo EAD Tokyo Super Mario 3D World (2013) look: bright toy-box 3D platformer, candy-colored floating blocks, glossy plastic surfaces, clean shadows and cheerful diorama levels.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as tiny round glossy toy-like figures with big eyes and chunky shoes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Candy red, sky blue, grass green and sunny yellow.
+  lighting_and_shadow: Bright soft daylight with clean drop shadows, lit the way Super Mario 3D World 2013 lights its levels.
+  texture_and_material: Glossy plastic toy surfaces, with the in-engine surface finish of Super Mario 3D World 2013.
+  camera_and_composition: Three-quarter overhead platformer camera, framed the way Super Mario 3D World 2013 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with bouncy cheerful play.
+  rendering_and_quality: Authentic Wii U toy platformer screen, matching real Super Mario 3D World 2013 screenshots.
+  key_features: Mario 3D World toy blocks; glossy plastic; diorama levels
+  creative_brief: 'Nintendo EAD Tokyo Super Mario 3D World (2013) look: bright toy-box 3D platformer, candy-colored floating blocks, glossy plastic surfaces, clean shadows and cheerful diorama levels. Carry it through Mario 3D World toy blocks, glossy plastic, diorama levels. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
+  - a mustached plumber in red and blue
+  - a cat suit with a bell
+  - a spiked turtle king
+  - question-mark blocks
+  - flagpoles and green pipes
   - watermark
   - logo
   - copyright mark
@@ -92,23 +65,19 @@ avoidRules:
   - copied box art composition
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
+  - text
+  - readable labels
+  - franchise likeness
+  - real person likeness
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-037.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: a mustached plumber in red and blue, a cat suit with a bell, a spiked turtle king, question-mark blocks, flagpoles and green pipes, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts
   referenceGame: Super Mario 3D World
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    score, timer, lives, coins, and power-up icons can appear if they feel like classic platformer
-    UI
+  hudGuidance: score, timer, lives, coins, and power-up icons can appear if they feel like classic platformer UI
   renderFamily: third-person-cinematic
   cameraFamily: hybrid-gameplay
   hudMode: contextual-hud

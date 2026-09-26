@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-136
 packId: pack_12
-name: Castle Builder Siege Overview
+name: Stronghold 2001 - Firefly Castle Sim
 styleAnchors:
-  - Castle Builder Siege Overview
+  - Stronghold 2001 - Firefly Castle Sim
   - castle management siege screenshot
   - castle town
-displayName: Castle Builder Siege Overview
+displayName: Stronghold 2001 - Firefly Castle Sim
 category: 4. Sieges, Warfronts & Last Stands
 domain: castle management siege screenshot
-version: 1
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - castle-builder
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Castle builder siege overview: an original top-down management screenshot of a castle town under siege, busy villagers, walls, farms and an army at the gates.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject within a busy castle town seen from above during a siege.
-  color_and_tone: Green fields, stone grey and banner colors, kept consistent across the whole image.
-  lighting_and_shadow: Soft daylight with small shadows, kept consistent across the whole image.
-  texture_and_material: Tiny villagers, fields, wooden houses and stone walls.
-  camera_and_composition: Top-down angled view over the whole town, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with busy defensive industry.
-  rendering_and_quality: Tidy detailed capture with no UI, kept consistent across the whole image.
-  creative_brief: "Castle builder siege overview: an original top-down management screenshot of a castle town under siege, busy villagers, walls, farms and an army at the gates. Carry it through castle town, tiny villagers, siege army, top-down. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: castle town; tiny villagers; siege army; top-down
+  aesthetic: 'Firefly Studios Stronghold (2001) look: isometric 2D castle-building simulation, tiny busy peasants, farms, walls and sieges on a medieval landscape.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as tiny busy medieval peasants and soldiers from above. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Pastoral green, stone grey and thatch gold, true to the Stronghold 2001 palette.
+  lighting_and_shadow: Soft daylight on isometric terrain, lit the way Stronghold 2001 lights its levels.
+  texture_and_material: Pre-rendered isometric sprites, with the in-engine surface finish of Stronghold 2001.
+  camera_and_composition: Isometric castle overview, framed the way Stronghold 2001 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with industrious medieval siege.
+  rendering_and_quality: Authentic early-2000s castle sim screen, matching real Stronghold 2001 screenshots.
+  creative_brief: 'Firefly Studios Stronghold (2001) look: isometric 2D castle-building simulation, tiny busy peasants, farms, walls and sieges on a medieval landscape. Carry it through Stronghold isometric, tiny peasants, castle walls. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Stronghold isometric; tiny peasants; castle walls
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - castle-builder
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

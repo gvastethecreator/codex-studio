@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-157
 packId: pack_12
-name: Crafting Camp Base Capture
+name: Valheim 2021 - Iron Gate Low-Poly Viking
 styleAnchors:
-  - Crafting Camp Base Capture
+  - Valheim 2021 - Iron Gate Low-Poly Viking
   - survival crafting base screenshot
   - crafted base
-displayName: Crafting Camp Base Capture
+displayName: Valheim 2021 - Iron Gate Low-Poly Viking
 category: 6. Wilderness Hunts & Harsh Frontiers
 domain: survival crafting base screenshot
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,22 +20,22 @@ tags:
   - crafting-camp
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Crafting camp base capture: an original survival-crafting screenshot of a handmade wilderness base, workbenches, campfire, drying racks and tools around a tent.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; place the subject in a handmade survival base full of crafted tools.
-  color_and_tone: Warm fire orange, wood browns and forest green.
-  lighting_and_shadow: Campfire glow at dusk, kept consistent across the whole image.
-  texture_and_material: Rope lashings, hides, rough wood and stone tools.
-  camera_and_composition: Third-person view over the camp, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with scrappy self-reliance, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no inventory UI, kept consistent across the whole image.
-  creative_brief: "Crafting camp base capture: an original survival-crafting screenshot of a handmade wilderness base, workbenches, campfire, drying racks and tools around a tent. Carry it through crafted base, workbenches, campfire, drying racks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: crafted base; workbenches; campfire; drying racks
+  aesthetic: 'Iron Gate Valheim (2021) look: pixelated low-resolution textures with modern volumetric lighting, Viking survival camps, palisades, crafting benches and misty forests.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as low-poly Viking survivors in furs and helmets. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Misty forest green, fire amber and dusk blue.
+  lighting_and_shadow: Volumetric fog and campfire glow, lit the way Valheim 2021 lights its levels.
+  texture_and_material: Low-resolution pixelated textures, with the in-engine surface finish of Valheim 2021.
+  camera_and_composition: Third-person survival view, framed the way Valheim 2021 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with rugged Viking survival.
+  rendering_and_quality: Authentic low-poly survival screen, matching real Valheim 2021 screenshots.
+  creative_brief: 'Iron Gate Valheim (2021) look: pixelated low-resolution textures with modern volumetric lighting, Viking survival camps, palisades, crafting benches and misty forests. Carry it through Valheim pixel textures, volumetric fog, palisades. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Valheim pixel textures; volumetric fog; palisades
 avoidRules:
   - inventory UI
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -44,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: inventory UI, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: inventory UI, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -65,6 +68,7 @@ taxonomy:
     - crafting-camp
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP12-079
 packId: pack_12
-name: Orbital Drop Citadel Hold
+name: Helldivers 2 2024 - Arrowhead Orbital Drop
 category: 4. Sieges, Warfronts & Last Stands
-version: 1
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,48 +17,20 @@ tags:
   - render-third-person-coop-shooter
   - camera-third-person
   - hud-contextual-hud
+  - reference-title
 visualDna:
-  aesthetic: 'Original in-game screenshot look for third-person co-op extraction shooter captures: orbital drop chaos, squad spacing, defensive objectives, projectile storms, alien or machine pressure, call-in effects, and readable retreat/hold routes. Borrow the co-op battlefield clarity of Helldivers-like games, but land as a different fictional drop-war game with different armor, factions, enemies, UI icons, and objective props.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable third-person co-op hold screenshot
-    subject: keep clear squad/object/threat function, cover, objective zone, incoming pressure,
-    call-in area, and extraction route without copying source factions or armor.
-  color_and_tone: >-
-    Use an orbital drop palette: dusty battlefield tan, warning red, tactical blue, smoke grey,
-    muzzle orange, alien green, and hard white objective light. Keep value grouping legible amid
-    chaos.
-  lighting_and_shadow: >-
-    Light the image through orbital strike glare, muzzle flashes, smoke, bug acid glow, objective
-    beacon light, and dusty sun haze. Lighting must clarify the playable route, threat, focal
-    subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from tactical armor, alien carapace, mud, concrete outposts, spent shells, smoke,
-    and sci-fi military equipment. Materials should feel like in-engine game assets captured during
-    play, with enough texture identity to separate props, terrain, characters, hazards, and
-    interactables.
-  camera_and_composition: >-
-    Compose with third-person squad camera, objective hold zone, ally/enemy spacing, incoming
-    projectile arcs, cover, and one clear defend/extract decision. Avoid isometric strategy
-    overview.
-  atmosphere_and_mood: >-
-    Carry an original orbital-drop mood: loud, desperate, satirical, militarized, cooperative, and
-    explosive.
-  rendering_and_quality: >-
-    Finish as coherent third-person co-op shooter screenshot style, not concept art: small
-    contextual HUD, ammo/ability pips, objective icons, and call-in markers can appear abstractly.
-    Maintain heavy-denoise clarity and no exact stratagem UI.
-  key_features: >-
-    Helldivers 2 gameplay screenshots; third-person co-op shooter capture with squad spacing, alien
-    swarms, stratagem chaos, defensive objectives, and friendly-fire battlefield readability; dusty
-    battlefield tan, black armor, yellow hazard UI, bug green, red warning lasers, and explosion
-    orange; orbital strike glare, muzzle flashes, smoke, bug acid glow, objective beacon light, and
-    dusty sun haze; tactical armor, alien carapace, mud, concrete outposts, spent shells, smoke, and
-    sci-fi military equipment; third-person squad camera with objective zone, incoming swarm lanes,
-    teammate markers, stratagem impact areas, and extraction pressure; chaotic, militarized,
-    satirical, desperate, and cooperative; HUD guidance: co-op HUD is welcome: ammo, stratagem
-    inputs, objective timer, squad icons, compass, and extraction markers
-  creative_brief: "Orbital Drop Citadel Hold: in-game screenshot language informed by third-person co-op extraction references, covering squad camera, objective pressure, orbital call-ins, projectile chaos, and readable hold/extract decisions. Avoid direct Helldivers cloning, strategy-tactics camera, exact armor/faction silhouettes, and exact stratagem UI. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'Arrowhead Game Studios Helldivers 2 (2024) look: third-person co-op shooter with satirical military propaganda tone, orbital drops, strategems beams, alien bug swarms and fiery skies.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as armored troopers in heavy helmets and capes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Fire orange, alien acid and military yellow, true to the Helldivers 2 2024 palette.
+  lighting_and_shadow: Burning skies and bright orbital strikes, lit the way Helldivers 2 2024 lights its levels.
+  texture_and_material: Gritty armor, dust and explosions, with the in-engine surface finish of Helldivers 2 2024.
+  camera_and_composition: Third-person over-the-shoulder view, framed the way Helldivers 2 2024 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with chaotic satirical heroism.
+  rendering_and_quality: Authentic modern co-op shooter screen, matching real Helldivers 2 2024 screenshots.
+  key_features: Helldivers orbital drop; bug swarm; beacons
+  creative_brief: 'Arrowhead Game Studios Helldivers 2 (2024) look: third-person co-op shooter with satirical military propaganda tone, orbital drops, strategems beams, alien bug swarms and fiery skies. Carry it through Helldivers orbital drop, bug swarm, beacons. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
+  - existing Helldiver armor and insignia
   - watermark
   - logo
   - copyright mark
@@ -87,22 +59,21 @@ avoidRules:
   - strategy tactics camera
   - exact stratagem UI
   - recognizable faction armor
+  - text
+  - readable labels
+  - franchise likeness
+  - real person likeness
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-079.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, direct Helldivers clone, strategy tactics camera, exact
-    stratagem UI, recognizable faction armor
+  negativePrompt: existing Helldiver armor and insignia, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Helldivers clone, strategy tactics camera, exact stratagem UI, recognizable faction armor, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Original third-person co-op extraction shooter, Helldivers-informed
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    co-op HUD is welcome: ammo, stratagem inputs, objective timer, squad icons, compass, and
-    extraction markers
+  hudGuidance: 'co-op HUD is welcome: ammo, stratagem inputs, objective timer, squad icons, compass, and extraction markers'
   renderFamily: third-person-coop-shooter
   cameraFamily: third-person
   hudMode: contextual-hud
@@ -120,13 +91,14 @@ taxonomy:
     - render-third-person-coop-shooter
     - camera-third-person
     - hud-contextual-hud
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-displayName: Orbital Drop Citadel Hold
+displayName: Helldivers 2 2024 - Arrowhead Orbital Drop
 styleAnchors:
-  - third-person co-op extraction shooter screenshots
+  - Helldivers 2 2024 - Arrowhead Orbital Drop
   - orbital drop defensive hold
   - Orbital Drop Citadel Hold

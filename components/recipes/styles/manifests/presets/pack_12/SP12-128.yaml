@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-128
 packId: pack_12
-name: Gravity-Flip Corridor Capture
+name: Gravity Rush 2012 - Project Siren Comic Gravity
 styleAnchors:
-  - Gravity-Flip Corridor Capture
+  - Gravity Rush 2012 - Project Siren Comic Gravity
   - gravity shifting puzzle screenshot
   - gravity zones
-displayName: Gravity-Flip Corridor Capture
+displayName: Gravity Rush 2012 - Project Siren Comic Gravity
 category: 3. Sci-Fi Frontiers & Mech Zones
 domain: gravity shifting puzzle screenshot
-version: 1
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,25 +20,26 @@ tags:
   - gravity-flip
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Gravity-flip corridor capture: an original screenshot of a sci-fi corridor where gravity points in different directions, characters walking on walls and ceilings.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; place the subject in a corridor where gravity changes direction.
-  color_and_tone: Clean white panels with orange and blue gravity zones.
-  lighting_and_shadow: Glowing gravity field panels, kept consistent across the whole image.
-  texture_and_material: Polished panels, floating dust and field glows, kept consistent across the whole image.
-  camera_and_composition: Disorienting angle with multiple floors in view, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with mind-bending playfulness, kept consistent across the whole image.
-  rendering_and_quality: Clean puzzle capture with no readable text, kept consistent across the whole image.
-  creative_brief: "Gravity-flip corridor capture: an original screenshot of a sci-fi corridor where gravity points in different directions, characters walking on walls and ceilings. Carry it through gravity zones, wall-walking, disorienting angle, clean panels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: gravity zones; wall-walking; disorienting angle; clean panels
+  aesthetic: 'Project Siren Gravity Rush (2012) look: cel-shaded comic book gravity shifting, characters falling sideways, floating European town, comic panels and ink crosshatching.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as cel-shaded comic figures with flowing hair and clothing affected by shifting gravity. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Warm Euro-town ochre, sky blue and ink black.
+  lighting_and_shadow: Soft comic light with ink shadows, lit the way Gravity Rush 2012 lights its levels.
+  texture_and_material: Cel shading with ink crosshatching, with the in-engine surface finish of Gravity Rush 2012.
+  camera_and_composition: Tilted sideways gravity view, framed the way Gravity Rush 2012 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with dreamy vertiginous freedom.
+  rendering_and_quality: Authentic comic cel-shaded screen, matching real Gravity Rush 2012 screenshots.
+  creative_brief: 'Project Siren Gravity Rush (2012) look: cel-shaded comic book gravity shifting, characters falling sideways, floating European town, comic panels and ink crosshatching. Carry it through Gravity Rush sideways gravity, comic cel, floating town. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Gravity Rush sideways gravity; comic cel; floating town
 avoidRules:
+  - a blonde gravity shifter with a black cat
   - orange and blue wall portals
   - weighted companion cube
   - white egg-shaped sentry turret
   - test subject in an orange jumpsuit
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -47,13 +48,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: orange and blue wall portals, weighted companion cube, white egg-shaped sentry turret, test subject in an orange jumpsuit, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a blonde gravity shifter with a black cat, orange and blue wall portals, weighted companion cube, white egg-shaped sentry turret, test subject in an orange jumpsuit, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -68,6 +72,7 @@ taxonomy:
     - gravity-flip
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

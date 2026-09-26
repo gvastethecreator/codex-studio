@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Jordan Mechner Prince of Persia (1989) look: fluid rotoscoped animation, dungeon stone corridors, spike traps, gates and torchlit platforming.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a fluid rotoscoped sprite in torchlit dungeon corridors with traps. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Dungeon blue-grey stone and torch orange, true to the Prince of Persia 1989 palette.
-  lighting_and_shadow: Flickering torchlight on stone, lit the way Prince of Persia 1989 lights its scenes.
-  texture_and_material: Low-resolution pixels with fluid rotoscoped motion, with the surface finish of Prince of Persia 1989.
-  camera_and_composition: Side-view dungeon rooms, framed the way Prince of Persia 1989 composes its shots and pages.
+  lighting_and_shadow: Flickering torchlight on stone, lit the way Prince of Persia 1989 lights its levels.
+  texture_and_material: Low-resolution pixels with fluid rotoscoped motion, with the in-engine surface finish of Prince of Persia 1989.
+  camera_and_composition: Side-view dungeon rooms, framed the way Prince of Persia 1989 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with tense fluid acrobatics.
-  rendering_and_quality: Authentic late-eighties computer platformer screen, in the recognizable hand of Prince of Persia 1989.
+  rendering_and_quality: Authentic late-eighties computer platformer screen, matching real Prince of Persia 1989 screenshots.
   creative_brief: 'Jordan Mechner Prince of Persia (1989) look: fluid rotoscoped animation, dungeon stone corridors, spike traps, gates and torchlit platforming. Carry it through Mechner rotoscoping, dungeon traps, torchlight. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Mechner rotoscoping; dungeon traps; torchlight
 avoidRules:
@@ -46,13 +46,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: a turbaned prince in white, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a turbaned prince in white, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

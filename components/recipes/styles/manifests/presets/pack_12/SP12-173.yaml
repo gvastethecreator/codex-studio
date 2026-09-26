@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-173
 packId: pack_12
-name: Rotating Puzzle-Box Diorama Capture
+name: Monument Valley 2014 - ustwo Impossible Geometry
 styleAnchors:
-  - Rotating Puzzle-Box Diorama Capture
+  - Monument Valley 2014 - ustwo Impossible Geometry
   - isometric puzzle-box diorama screenshot
   - puzzle box
-displayName: Rotating Puzzle-Box Diorama Capture
+displayName: Monument Valley 2014 - ustwo Impossible Geometry
 category: 8. Puzzle Chambers & Adventure Setpieces
 domain: isometric puzzle-box diorama screenshot
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,18 +20,20 @@ tags:
   - puzzle-box
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Rotating puzzle-box diorama capture: an original screenshot of a small isometric diorama world on a rotating box, secret panels, tiny rooms and hidden mechanisms.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject tiny inside a rotating diorama puzzle box.
-  color_and_tone: Warm wood tones with soft pastel accents, kept consistent across the whole image.
-  lighting_and_shadow: Soft studio light on a floating diorama, kept consistent across the whole image.
-  texture_and_material: Wood, brass hinges and miniature details, kept consistent across the whole image.
-  camera_and_composition: Isometric view of a floating box diorama, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with tactile secrecy, kept consistent across the whole image.
-  rendering_and_quality: Clean miniature capture with no UI, kept consistent across the whole image.
-  creative_brief: "Rotating puzzle-box diorama capture: an original screenshot of a small isometric diorama world on a rotating box, secret panels, tiny rooms and hidden mechanisms. Carry it through puzzle box, isometric diorama, secret panels, tiny rooms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: puzzle box; isometric diorama; secret panels; tiny rooms
+  aesthetic: 'ustwo games Monument Valley (2014) look: isometric impossible architecture that rotates, pastel minimalist palettes, tiny figures and Escher-like paths.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as tiny minimalist figures on impossible paths. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Pastel coral, mint and lilac, true to the Monument Valley 2014 palette.
+  lighting_and_shadow: Soft flat gradient light, lit the way Monument Valley 2014 lights its levels.
+  texture_and_material: Clean flat shapes, with the in-engine surface finish of Monument Valley 2014.
+  camera_and_composition: Isometric diorama view, framed the way Monument Valley 2014 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with serene puzzling wonder.
+  rendering_and_quality: Authentic isometric puzzle screen, matching real Monument Valley 2014 screenshots.
+  creative_brief: 'ustwo games Monument Valley (2014) look: isometric impossible architecture that rotates, pastel minimalist palettes, tiny figures and Escher-like paths. Carry it through Monument Valley impossible geometry, pastel, isometric. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Monument Valley impossible geometry; pastel; isometric
 avoidRules:
+  - a small princess in a white cone hat
   - existing game characters, logos or levels
   - readable interface text
   - readable text
@@ -42,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a small princess in a white cone hat, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -63,6 +68,7 @@ taxonomy:
     - puzzle-box
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

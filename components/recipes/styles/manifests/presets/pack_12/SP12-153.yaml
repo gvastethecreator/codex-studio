@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-153
 packId: pack_12
-name: Canyon Horseback Frontier Capture
+name: Red Dead Redemption 2010 - Rockstar San Diego Frontier
 styleAnchors:
-  - Canyon Horseback Frontier Capture
+  - Red Dead Redemption 2010 - Rockstar San Diego Frontier
   - western frontier riding screenshot
   - horseback rider
-displayName: Canyon Horseback Frontier Capture
+displayName: Red Dead Redemption 2010 - Rockstar San Diego Frontier
 category: 6. Wilderness Hunts & Harsh Frontiers
 domain: western frontier riding screenshot
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,22 @@ tags:
   - canyon-horse
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Canyon horseback frontier capture: an original third-person screenshot of a rider on horseback crossing red canyon country, vast mesas and dust at golden hour.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject on horseback crossing a vast red canyon landscape.
-  color_and_tone: Red rock, sage green and golden sky, kept consistent across the whole image.
-  lighting_and_shadow: Low golden sun and long shadows, kept consistent across the whole image.
-  texture_and_material: Red rock, dust, leather tack and scrub, kept consistent across the whole image.
-  camera_and_composition: Wide cinematic view with rider small, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with lonesome frontier grandeur.
-  rendering_and_quality: Clean capture with no HUD, kept consistent across the whole image.
-  creative_brief: "Canyon horseback frontier capture: an original third-person screenshot of a rider on horseback crossing red canyon country, vast mesas and dust at golden hour. Carry it through horseback rider, red canyons, mesas, golden hour. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: horseback rider; red canyons; mesas; golden hour
+  aesthetic: 'Rockstar San Diego Red Dead Redemption (2010) look: dusty frontier west, canyon rims, mesas, covered wagons, horseback riders and golden-hour haze.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as dusty frontier riders in hats and dusters. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Canyon red, dust gold and sage, true to the Red Dead Redemption 2010 palette.
+  lighting_and_shadow: Golden-hour haze, lit the way Red Dead Redemption 2010 lights its levels.
+  texture_and_material: Dusty terrain and worn leather, with the in-engine surface finish of Red Dead Redemption 2010.
+  camera_and_composition: Third-person riding view, framed the way Red Dead Redemption 2010 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with lonesome frontier grit.
+  rendering_and_quality: Authentic Xbox 360 western screen, matching real Red Dead Redemption 2010 screenshots.
+  creative_brief: 'Rockstar San Diego Red Dead Redemption (2010) look: dusty frontier west, canyon rims, mesas, covered wagons, horseback riders and golden-hour haze. Carry it through Red Dead 2010 frontier, canyons, riders. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Red Dead 2010 frontier; canyons; riders
 avoidRules:
+  - a scarred cowboy in a tan hat
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a scarred cowboy in a tan hat, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +68,7 @@ taxonomy:
     - canyon-horse
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

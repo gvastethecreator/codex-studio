@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Valve Half-Life (1998) look: first-person science facility corridors, orange and beige lab textures, flickering fluorescents, scientists in lab coats and resonance cascade chaos.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject in first-person science facility corridors with lab coats and flickering lights. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Facility beige, hazard orange and industrial grey, true to the Half-Life 1998 palette.
-  lighting_and_shadow: Flickering fluorescent lab lighting, lit the way Half-Life 1998 lights its scenes.
-  texture_and_material: Low-resolution facility textures and simple polygons, with the surface finish of Half-Life 1998.
-  camera_and_composition: First-person corridor view, framed the way Half-Life 1998 composes its shots and pages.
+  lighting_and_shadow: Flickering fluorescent lab lighting, lit the way Half-Life 1998 lights its levels.
+  texture_and_material: Low-resolution facility textures and simple polygons, with the in-engine surface finish of Half-Life 1998.
+  camera_and_composition: First-person corridor view, framed the way Half-Life 1998 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with unraveling facility dread.
-  rendering_and_quality: Authentic late-nineties PC shooter screen, in the recognizable hand of Half-Life 1998.
+  rendering_and_quality: Authentic late-nineties PC shooter screen, matching real Half-Life 1998 screenshots.
   creative_brief: 'Valve Half-Life (1998) look: first-person science facility corridors, orange and beige lab textures, flickering fluorescents, scientists in lab coats and resonance cascade chaos. Carry it through Half-Life facility, lab coats, flickering fluorescents. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Half-Life facility; lab coats; flickering fluorescents
 avoidRules:
@@ -47,13 +47,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: an orange hazard suit with a crowbar, a man in a blue suit with a briefcase, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: an orange hazard suit with a crowbar, a man in a blue suit with a briefcase, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

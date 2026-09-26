@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP12-020
 packId: pack_12
-name: Sunless Skies Celestial Trade
+name: Sunless Skies 2019 - Failbetter Gaslamp Void Trade
 styleAnchors:
-  - Sunless Skies gameplay screenshots
+  - Sunless Skies 2019 - Failbetter Gaslamp Void Trade
   - Sunless Skies Celestial Trade
-displayName: Sunless Skies Celestial Trade
+displayName: Sunless Skies 2019 - Failbetter Gaslamp Void Trade
 category: 2. Arcane Temples & Mythic Realms
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,48 +23,16 @@ tags:
   - hud-contextual-hud
   - reference-title
 visualDna:
-  aesthetic: 'In-game screenshot look informed by Sunless Skies gameplay: top-down gothic space-train exploration capture with black void, illustrated ports, trade-route menace, and strange celestial harbors. It never recreates an exact official level, character, logo or marketing art.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable Sunless Skies-adjacent game
-    screenshot subject: keep clear role silhouette, player/enemy/object function, scale
-    relationship, hitbox-like readability, and interaction affordances without copying source
-    characters or named IP elements.
-  color_and_tone: >-
-    Use a Sunless Skies-informed palette: inky black, tarnished brass, gaslight gold, deep teal
-    nebulae, sickly green fog, and red warning accents. Keep value grouping legible at gameplay
-    distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues
-    rather than decorative wash.
-  lighting_and_shadow: >-
-    Light the image through locomotive lamp cones, port lanterns, star glimmers, weapon flashes, and
-    fog-softened halos. Lighting must clarify the playable route, threat, focal subject, or
-    objective and avoid generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from painted locomotive metal, Victorian ornament, chart icons, void clouds,
-    cargo crates, and storybook UI panels. Materials should feel like in-engine game assets captured
-    during play, with enough texture identity to separate props, terrain, characters, hazards, and
-    interactables.
-  camera_and_composition: >-
-    Compose with top-down travel composition with ship/train silhouette, docking targets, enemy
-    arcs, and map-like navigational readability. The frame should read as a plausible gameplay
-    capture; include UI/HUD only when it matches the source game's visual logic and improves
-    clarity.
-  atmosphere_and_mood: 'Sunless Skies-derived mood: literary, gothic, mercantile, eerie, and cosmic; it follows the tone of the requested scene without forcing a fixed mission or story.'
-  rendering_and_quality: >-
-    Finish as a coherent in-engine screenshot style, not concept art: navigation HUD, fuel/supply
-    meters, chart panels, and small story windows are allowed when they feel like dark exploration
-    UI. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake
-    logos, stock-photo polish, or random interface clutter.
-  key_features: >-
-    Sunless Skies gameplay screenshots; top-down gothic space-train exploration capture with black
-    void, illustrated ports, trade-route menace, and strange celestial harbors; inky black,
-    tarnished brass, gaslight gold, deep teal nebulae, sickly green fog, and red warning accents;
-    locomotive lamp cones, port lanterns, star glimmers, weapon flashes, and fog-softened halos;
-    painted locomotive metal, Victorian ornament, chart icons, void clouds, cargo crates, and
-    storybook UI panels; top-down travel composition with ship/train silhouette, docking targets,
-    enemy arcs, and map-like navigational readability; literary, gothic, mercantile, eerie, and
-    cosmic; HUD guidance: navigation HUD, fuel/supply meters, chart panels, and small story windows
-    are allowed when they feel like dark exploration UI
-  creative_brief: "Sunless Skies Celestial Trade: in-game screenshot language informed by Sunless Skies, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'Failbetter Games Sunless Skies (2019) look: top-down painted gaslamp void, flying locomotives with lantern prows, Victorian space ports and gothic celestial horrors.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people and vessels as small painted steam locomotives and Victorian figures seen from above in a dark void. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Deep void black, lantern amber, cosmic teal and brass.
+  lighting_and_shadow: Lantern prow cones cutting through dark starry void.
+  texture_and_material: Hand-painted illustrative surfaces with gothic detail, with the in-engine surface finish of Sunless Skies 2019.
+  camera_and_composition: Top-down view of the locomotive in the void.
+  atmosphere_and_mood: Keep the requested mood with gothic cosmic wanderlust.
+  rendering_and_quality: Authentic painted top-down exploration screen, matching real Sunless Skies 2019 screenshots.
+  key_features: Sunless Skies void; flying locomotives; lantern prows
+  creative_brief: 'Failbetter Games Sunless Skies (2019) look: top-down painted gaslamp void, flying locomotives with lantern prows, Victorian space ports and gothic celestial horrors. Carry it through Sunless Skies void, flying locomotives, lantern prows. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - watermark
   - logo
@@ -92,23 +60,15 @@ avoidRules:
   - copied box art composition
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-020.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Sunless Skies
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    navigation HUD, fuel/supply meters, chart panels, and small story windows are allowed when they
-    feel like dark exploration UI
+  hudGuidance: navigation HUD, fuel/supply meters, chart panels, and small story windows are allowed when they feel like dark exploration UI
   renderFamily: strategy-tactics
   cameraFamily: isometric-top-down
   hudMode: contextual-hud

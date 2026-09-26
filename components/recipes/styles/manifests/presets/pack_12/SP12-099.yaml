@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-099
 packId: pack_12
-name: Top-Down Neon Twin-Stick Capture
+name: Geometry Wars 2003 - Bizarre Creations Neon Grid
 styleAnchors:
-  - Top-Down Neon Twin-Stick Capture
+  - Geometry Wars 2003 - Bizarre Creations Neon Grid
   - overhead neon shooter game screenshot
   - overhead camera
-displayName: Top-Down Neon Twin-Stick Capture
+displayName: Geometry Wars 2003 - Bizarre Creations Neon Grid
 category: 1. Neon Urban & Night Ops
 domain: overhead neon shooter game screenshot
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - topdown-neon
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Top-down neon twin-stick capture: an original overhead shooter screenshot with glowing enemies, bright projectile trails and dark grid floors, readable in a glance.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject from directly above as a readable player or enemy sprite among glowing projectiles.
-  color_and_tone: Black and deep blue floors with hot magenta, cyan and lime glows.
-  lighting_and_shadow: Emissive projectiles and enemies lighting the floor, kept consistent across the whole image.
-  texture_and_material: Clean vector-like sprites, grid floors and particle bursts.
-  camera_and_composition: Fixed overhead camera with the player centered, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with frantic arcade intensity.
-  rendering_and_quality: Crisp glowing game capture with minimal HUD, kept consistent across the whole image.
-  creative_brief: "Top-down neon twin-stick capture: an original overhead shooter screenshot with glowing enemies, bright projectile trails and dark grid floors, readable in a glance. Carry it through overhead camera, glowing projectiles, grid floor, swarm enemies. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: overhead camera; glowing projectiles; grid floor; swarm enemies
+  aesthetic: 'Bizarre Creations Geometry Wars (2003) look: top-down twin-stick shooter on a warping neon grid, glowing vector shapes, particle explosions and swarms of geometric enemies.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render every subject as a glowing neon vector shape or ship seen from directly above. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Black void with neon cyan, magenta, green and yellow glow.
+  lighting_and_shadow: Self-lit glowing vector lines and particle bursts, lit the way Geometry Wars 2003 lights its levels.
+  texture_and_material: Clean vector lines, bloom and particle sparks, with the in-engine surface finish of Geometry Wars 2003.
+  camera_and_composition: Top-down arena view over a warping grid, framed the way Geometry Wars 2003 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with hypnotic bullet frenzy.
+  rendering_and_quality: Authentic neon vector twin-stick shooter screen, matching real Geometry Wars 2003 screenshots.
+  creative_brief: 'Bizarre Creations Geometry Wars (2003) look: top-down twin-stick shooter on a warping neon grid, glowing vector shapes, particle explosions and swarms of geometric enemies. Carry it through Geometry Wars neon grid, vector shapes, particle bloom. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Geometry Wars neon grid; vector shapes; particle bloom
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - topdown-neon
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

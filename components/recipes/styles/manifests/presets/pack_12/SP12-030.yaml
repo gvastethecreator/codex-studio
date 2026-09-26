@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP12-030
 packId: pack_12
-name: Cuphead Carnival Boss
+name: Cuphead 2017 - Studio MDHR 1930s Rubber Hose
 styleAnchors:
-  - Cuphead gameplay screenshots
+  - Cuphead 2017 - Studio MDHR 1930s Rubber Hose
   - Cuphead Carnival Boss
-displayName: Cuphead Carnival Boss
+displayName: Cuphead 2017 - Studio MDHR 1930s Rubber Hose
 category: 7. Heists, Horror & Underworld Runs
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,48 +23,20 @@ tags:
   - hud-contextual-hud
   - reference-title
 visualDna:
-  aesthetic: 'In-game screenshot look informed by Cuphead gameplay: 1930s rubber-hose boss-fight capture with hand-inked characters, carnival props, flat stage lanes, and chaotic projectile readability. It never recreates an exact official level, character, logo or marketing art.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable Cuphead-adjacent game screenshot
-    subject: keep clear role silhouette, player/enemy/object function, scale relationship,
-    hitbox-like readability, and interaction affordances without copying source characters or named
-    IP elements.
-  color_and_tone: >-
-    Use a Cuphead-informed palette: aged paper cream, circus red, mustard yellow, black ink,
-    turquoise shadows, and candy pink highlights. Keep value grouping legible at gameplay distance,
-    with color accents behaving like route, danger, pickup, team, magic, or objective cues rather
-    than decorative wash.
-  lighting_and_shadow: >-
-    Light the image through flat animation lighting, painted stage glow, muzzle-flash pops, and
-    film-flicker value shifts. Lighting must clarify the playable route, threat, focal subject, or
-    objective and avoid generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from ink outlines, cel paint, watercolor backgrounds, film grain,
-    squash-and-stretch sprites, and hand-drawn projectile shapes. Materials should feel like
-    in-engine game assets captured during play, with enough texture identity to separate props,
-    terrain, characters, hazards, and interactables.
-  camera_and_composition: >-
-    Compose with side-view boss arena with bullet lanes, player jump space, phase props, and vintage
-    cartoon stage composition. The frame should read as a plausible gameplay capture; include UI/HUD
-    only when it matches the source game's visual logic and improves clarity.
-  atmosphere_and_mood: 'Cuphead-derived mood: manic, theatrical, cruelly playful, vintage, and precise; it follows the tone of the requested scene without forcing a fixed mission or story.'
-  rendering_and_quality: >-
-    Finish as a coherent in-engine screenshot style, not concept art: small health/cards/super meter
-    can appear as period-styled gameplay UI; avoid modern overlays. Maintain heavy-denoise clarity,
-    crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random
-    interface clutter.
-  key_features: >-
-    Cuphead gameplay screenshots; 1930s rubber-hose boss-fight capture with hand-inked characters,
-    carnival props, flat stage lanes, and chaotic projectile readability; aged paper cream, circus
-    red, mustard yellow, black ink, turquoise shadows, and candy pink highlights; flat animation
-    lighting, painted stage glow, muzzle-flash pops, and film-flicker value shifts; ink outlines,
-    cel paint, watercolor backgrounds, film grain, squash-and-stretch sprites, and hand-drawn
-    projectile shapes; side-view boss arena with bullet lanes, player jump space, phase props, and
-    vintage cartoon stage composition; manic, theatrical, cruelly playful, vintage, and precise; HUD
-    guidance: small health/cards/super meter can appear as period-styled gameplay UI; avoid modern
-    overlays
-  creative_brief: "Cuphead Carnival Boss: in-game screenshot language informed by Cuphead, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'Studio MDHR Cuphead (2017) look: hand-inked 1930s rubber-hose animation, watercolor backgrounds, film grain, run-and-gun boss fights and bouncing cartoon characters.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people and creatures as rubber-hose cartoon characters with pie-cut eyes and white gloves. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Faded 1930s watercolor palette with warm film tint.
+  lighting_and_shadow: Flat cartoon light with vintage film grain, lit the way Cuphead 2017 lights its levels.
+  texture_and_material: Hand-inked lines, watercolor backgrounds and film scratches, with the in-engine surface finish of Cuphead 2017.
+  camera_and_composition: Side-view run-and-gun boss arena, framed the way Cuphead 2017 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with jaunty frantic danger.
+  rendering_and_quality: Authentic hand-drawn boss-fight screen, matching real Cuphead 2017 screenshots.
+  key_features: Cuphead rubber hose; 1930s; watercolor; film grain
+  creative_brief: 'Studio MDHR Cuphead (2017) look: hand-inked 1930s rubber-hose animation, watercolor backgrounds, film grain, run-and-gun boss fights and bouncing cartoon characters. Carry it through Cuphead rubber hose, 1930s, watercolor, film grain. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
+  - a cup-headed hero
+  - a mug-headed hero
+  - the devil boss with a pitchfork
   - watermark
   - logo
   - copyright mark
@@ -91,18 +63,16 @@ avoidRules:
   - copied box art composition
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
+  - text
+  - readable labels
+  - franchise likeness
+  - real person likeness
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-030.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: a cup-headed hero, a mug-headed hero, the devil boss with a pitchfork, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts
   referenceGame: Cuphead
   referenceMode: capture-derived gameplay screenshot style
   hudGuidance: small health/cards/super meter can appear as period-styled gameplay UI; avoid modern overlays

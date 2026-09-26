@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-122
 packId: pack_12
-name: Asteroid Belt Dogfight Capture
+name: Everspace 2 2023 - Rockfish Asteroid Dogfight
 styleAnchors:
-  - Asteroid Belt Dogfight Capture
+  - Everspace 2 2023 - Rockfish Asteroid Dogfight
   - space fighter chase screenshot
   - asteroids
-displayName: Asteroid Belt Dogfight Capture
+displayName: Everspace 2 2023 - Rockfish Asteroid Dogfight
 category: 3. Sci-Fi Frontiers & Mech Zones
 domain: space fighter chase screenshot
-version: 1
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - asteroid-dogfight
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Asteroid belt dogfight capture: an original third-person space-fighter screenshot weaving through tumbling asteroids, laser streaks and engine trails.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject in a small fighter craft chasing or fleeing through asteroids.
-  color_and_tone: Black space with orange engine glow and red and green lasers.
-  lighting_and_shadow: Hard sunlight on asteroids, engine glow, kept consistent across the whole image.
-  texture_and_material: Rocky asteroids, sleek hulls and particle trails, kept consistent across the whole image.
-  camera_and_composition: Chase camera behind the fighter, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with high-speed daring, kept consistent across the whole image.
-  rendering_and_quality: Clean space capture with no HUD text, kept consistent across the whole image.
-  creative_brief: "Asteroid belt dogfight capture: an original third-person space-fighter screenshot weaving through tumbling asteroids, laser streaks and engine trails. Carry it through asteroids, laser streaks, chase camera, engine trails. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: asteroids; laser streaks; chase camera; engine trails
+  aesthetic: 'Rockfish Games Everspace 2 (2023) look: vivid space shooter among colorful nebulae and asteroid fields, chase camera behind small ships, flak bursts and salvage wrecks.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render pilots and ships as small agile craft seen from a chase camera. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Vivid nebula magenta, amber flak and rock grey.
+  lighting_and_shadow: Nebula glow and bright weapon flashes, lit the way Everspace 2 2023 lights its levels.
+  texture_and_material: Detailed ship hulls and rocky asteroids, with the in-engine surface finish of Everspace 2 2023.
+  camera_and_composition: Chase camera between asteroids, framed the way Everspace 2 2023 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with daring space action.
+  rendering_and_quality: Authentic modern space shooter screen, matching real Everspace 2 2023 screenshots.
+  creative_brief: 'Rockfish Games Everspace 2 (2023) look: vivid space shooter among colorful nebulae and asteroid fields, chase camera behind small ships, flak bursts and salvage wrecks. Carry it through Everspace nebulae, asteroid dogfight, chase camera. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Everspace nebulae; asteroid dogfight; chase camera
 avoidRules:
   - X-shaped wing fighters
   - red and green blaster bolts
@@ -38,7 +39,6 @@ avoidRules:
   - hexagonal-wing twin-ion fighters
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -47,13 +47,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: X-shaped wing fighters, red and green blaster bolts, giant space slug in an asteroid, hexagonal-wing twin-ion fighters, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: X-shaped wing fighters, red and green blaster bolts, giant space slug in an asteroid, hexagonal-wing twin-ion fighters, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -68,6 +71,7 @@ taxonomy:
     - asteroid-dogfight
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

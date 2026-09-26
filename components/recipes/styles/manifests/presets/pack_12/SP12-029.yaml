@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP12-029
 packId: pack_12
-name: Subnautica Coral Reef Survival
+name: Subnautica 2018 - Unknown Worlds Alien Reef
 category: 6. Wilderness Hunts & Harsh Frontiers
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -19,49 +19,18 @@ tags:
   - hud-full-hud
   - reference-title
 visualDna:
-  aesthetic: 'In-game screenshot look informed by Subnautica gameplay: first-person underwater survival capture with alien reefs, submarine tools, oxygen pressure, creature scale, and readable swim depth. It never recreates an exact official level, character, logo or marketing art.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable Subnautica-adjacent game screenshot
-    subject: keep clear role silhouette, player/enemy/object function, scale relationship,
-    hitbox-like readability, and interaction affordances without copying source characters or named
-    IP elements.
-  color_and_tone: >-
-    Use a Subnautica-informed palette: tropical cyan, coral orange, kelp green, deep blue, white
-    suit plastic, and bioluminescent violet. Keep value grouping legible at gameplay distance, with
-    color accents behaving like route, danger, pickup, team, magic, or objective cues rather than
-    decorative wash.
-  lighting_and_shadow: >-
-    Light the image through sun shafts through water, flashlight cones, creature glow, base LEDs,
-    and pressure-dark abyss gradients. Lighting must clarify the playable route, threat, focal
-    subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from soft coral, glass domes, bubbles, fins, titanium tools, alien flora, wet
-    plastic, and refracted water haze. Materials should feel like in-engine game assets captured
-    during play, with enough texture identity to separate props, terrain, characters, hazards, and
-    interactables.
-  camera_and_composition: >-
-    Compose with first-person swim framing with tool/hand foreground, oxygen-route urgency, reef
-    silhouettes, and base/navigation landmarks. The frame should read as a plausible gameplay
-    capture; include UI/HUD only when it matches the source game's visual logic and improves
-    clarity.
-  atmosphere_and_mood: 'Subnautica-derived mood: wonderful, vulnerable, aquatic, exploratory, and quietly terrifying; it follows the tone of the requested scene without forcing a fixed mission or story.'
-  rendering_and_quality: >-
-    Finish as a coherent in-engine screenshot style, not concept art: oxygen, depth,
-    health/food/water, quick slots, and compass are essential if kept like survival-game UI.
-    Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake
-    logos, stock-photo polish, or random interface clutter.
-  key_features: >-
-    Subnautica gameplay screenshots; first-person underwater survival capture with alien reefs,
-    submarine tools, oxygen pressure, creature scale, and readable swim depth; tropical cyan, coral
-    orange, kelp green, deep blue, white suit plastic, and bioluminescent violet; sun shafts through
-    water, flashlight cones, creature glow, base LEDs, and pressure-dark abyss gradients; soft
-    coral, glass domes, bubbles, fins, titanium tools, alien flora, wet plastic, and refracted water
-    haze; first-person swim framing with tool/hand foreground, oxygen-route urgency, reef
-    silhouettes, and base/navigation landmarks; wonderful, vulnerable, aquatic, exploratory, and
-    quietly terrifying; HUD guidance: oxygen, depth, health/food/water, quick slots, and compass are
-    essential if kept like survival-game UI
-  creative_brief: "Subnautica Coral Reef Survival: in-game screenshot language informed by Subnautica, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'Unknown Worlds Subnautica (2018) look: first-person underwater survival on an alien ocean planet, luminous coral, leviathans, small submarines and handheld scanners.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as divers seen from first person with scanners and small subs. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Alien turquoise, coral magenta and abyss blue, true to the Subnautica 2018 palette.
+  lighting_and_shadow: Filtered sun shafts and glowing reef, lit the way Subnautica 2018 lights its levels.
+  texture_and_material: Stylized alien coral and water haze, with the in-engine surface finish of Subnautica 2018.
+  camera_and_composition: First-person dive view, framed the way Subnautica 2018 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with awe edged with fear.
+  rendering_and_quality: Authentic underwater survival screen, matching real Subnautica 2018 screenshots.
+  key_features: Subnautica reef; leviathans; first-person dive
+  creative_brief: 'Unknown Worlds Subnautica (2018) look: first-person underwater survival on an alien ocean planet, luminous coral, leviathans, small submarines and handheld scanners. Carry it through Subnautica reef, leviathans, first-person dive. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
+  - existing leviathan designs
   - watermark
   - logo
   - copyright mark
@@ -88,23 +57,19 @@ avoidRules:
   - copied box art composition
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
+  - text
+  - readable labels
+  - franchise likeness
+  - real person likeness
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-029.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: existing leviathan designs, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts
   referenceGame: Subnautica
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    oxygen, depth, health/food/water, quick slots, and compass are essential if kept like
-    survival-game UI
+  hudGuidance: oxygen, depth, health/food/water, quick slots, and compass are essential if kept like survival-game UI
   renderFamily: first-person-immersive
   cameraFamily: first-person
   hudMode: full-hud
@@ -128,7 +93,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-displayName: Subnautica Coral Reef Survival
+displayName: Subnautica 2018 - Unknown Worlds Alien Reef
 styleAnchors:
-  - Subnautica gameplay screenshots
+  - Subnautica 2018 - Unknown Worlds Alien Reef
   - Subnautica Coral Reef Survival

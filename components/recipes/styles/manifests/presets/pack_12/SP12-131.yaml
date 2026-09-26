@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-131
 packId: pack_12
-name: Catapult Crew View Capture
+name: Chivalry 2 2021 - Torn Banner Siege Crew
 styleAnchors:
-  - Catapult Crew View Capture
+  - Chivalry 2 2021 - Torn Banner Siege Crew
   - siege engine crew screenshot
   - catapult arm
-displayName: Catapult Crew View Capture
+displayName: Chivalry 2 2021 - Torn Banner Siege Crew
 category: 4. Sieges, Warfronts & Last Stands
 domain: siege engine crew screenshot
-version: 1
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - catapult-crew
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Catapult crew view capture: an original third-person screenshot from behind a siege catapult crew as the arm fires toward a distant castle, projectile arc visible.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject operating or riding a siege engine as it fires.
-  color_and_tone: Earthy wood browns, sky blue and fire orange.
-  lighting_and_shadow: Daylight with burning projectile glow, kept consistent across the whole image.
-  texture_and_material: Wooden beams, rope, stone and dust, kept consistent across the whole image.
-  camera_and_composition: Behind the catapult toward the target, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with rowdy siege energy.
-  rendering_and_quality: Clean capture with a visible arc, no text.
-  creative_brief: "Catapult crew view capture: an original third-person screenshot from behind a siege catapult crew as the arm fires toward a distant castle, projectile arc visible. Carry it through catapult arm, projectile arc, crew, distant castle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: catapult arm; projectile arc; crew; distant castle
+  aesthetic: 'Torn Banner Studios Chivalry 2 (2021) look: chaotic medieval siege battles, catapults and trebuchets, burning castles, shouting crews and bright banners.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as grubby medieval soldiers and siege crews in padded jackets. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Banner red, siege fire orange and stone grey.
+  lighting_and_shadow: Bright day with fire glow, lit the way Chivalry 2 2021 lights its levels.
+  texture_and_material: Mud, wood, leather and smoke, with the in-engine surface finish of Chivalry 2 2021.
+  camera_and_composition: First-person view behind siege engines, framed the way Chivalry 2 2021 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with rowdy medieval chaos.
+  rendering_and_quality: Authentic medieval melee screen, matching real Chivalry 2 2021 screenshots.
+  creative_brief: 'Torn Banner Studios Chivalry 2 (2021) look: chaotic medieval siege battles, catapults and trebuchets, burning castles, shouting crews and bright banners. Carry it through Chivalry 2 siege, catapults, burning castles. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Chivalry 2 siege; catapults; burning castles
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - catapult-crew
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

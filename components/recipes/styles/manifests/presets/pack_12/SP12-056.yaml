@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP12-056
 packId: pack_12
-name: Ghostrunner Carbon Megacity
+name: Ghostrunner 2020 - One More Level Cyber Parkour
 styleAnchors:
-  - Ghostrunner gameplay screenshots
+  - Ghostrunner 2020 - One More Level Cyber Parkour
   - Ghostrunner Carbon Megacity
-displayName: Ghostrunner Carbon Megacity
+displayName: Ghostrunner 2020 - One More Level Cyber Parkour
 category: 1. Neon Urban & Night Ops
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,48 +23,16 @@ tags:
   - hud-contextual-hud
   - reference-title
 visualDna:
-  aesthetic: 'In-game screenshot look informed by Ghostrunner gameplay: first-person cyber-ninja parkour capture with wall-runs, one-hit combat, vertical megacity routes, and blade-forward speed. It never recreates an exact official level, character, logo or marketing art.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable Ghostrunner-adjacent game
-    screenshot subject: keep clear role silhouette, player/enemy/object function, scale
-    relationship, hitbox-like readability, and interaction affordances without copying source
-    characters or named IP elements.
-  color_and_tone: >-
-    Use a Ghostrunner-informed palette: black carbon, cyan neon, red enemy marks, toxic green
-    signage, steel grey, and white blade flashes. Keep value grouping legible at gameplay distance,
-    with color accents behaving like route, danger, pickup, team, magic, or objective cues rather
-    than decorative wash.
-  lighting_and_shadow: >-
-    Light the image through neon strips, hologram glow, blade trails, muzzle flashes, and deep
-    industrial shadows. Lighting must clarify the playable route, threat, focal subject, or
-    objective and avoid generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from slick carbon panels, rain metal, cables, concrete towers, katana steel,
-    cybernetic enemies, and hard-edged decals without readable text. Materials should feel like
-    in-engine game assets captured during play, with enough texture identity to separate props,
-    terrain, characters, hazards, and interactables.
-  camera_and_composition: >-
-    Compose with first-person sprint/slash framing with hands/blade, route markers, enemy
-    silhouettes, gap jumps, and high-rise depth. The frame should read as a plausible gameplay
-    capture; include UI/HUD only when it matches the source game's visual logic and improves
-    clarity.
-  atmosphere_and_mood: 'Ghostrunner-derived mood: brutal, precise, vertical, cybernetic, and breathless; it follows the tone of the requested scene without forcing a fixed mission or story.'
-  rendering_and_quality: >-
-    Finish as a coherent in-engine screenshot style, not concept art: minimal reticle, ability
-    cooldowns, target markers, and route highlights can appear as coherent action HUD. Maintain
-    heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos,
-    stock-photo polish, or random interface clutter.
-  key_features: >-
-    Ghostrunner gameplay screenshots; first-person cyber-ninja parkour capture with wall-runs,
-    one-hit combat, vertical megacity routes, and blade-forward speed; black carbon, cyan neon, red
-    enemy marks, toxic green signage, steel grey, and white blade flashes; neon strips, hologram
-    glow, blade trails, muzzle flashes, and deep industrial shadows; slick carbon panels, rain
-    metal, cables, concrete towers, katana steel, cybernetic enemies, and hard-edged decals without
-    readable text; first-person sprint/slash framing with hands/blade, route markers, enemy
-    silhouettes, gap jumps, and high-rise depth; brutal, precise, vertical, cybernetic, and
-    breathless; HUD guidance: minimal reticle, ability cooldowns, target markers, and route
-    highlights can appear as coherent action HUD
-  creative_brief: "Ghostrunner Carbon Megacity: in-game screenshot language informed by Ghostrunner, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'One More Level Ghostrunner (2020) look: first-person cyber-ninja parkour up a vertical megatower, katana in hand, red and cyan neon, dark industrial metal and one-hit deaths.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as cybernetic figures seen from first person, with a katana hand and chrome cyber limbs. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Black carbon metal, blood red neon, cyan highlights and orange sparks.
+  lighting_and_shadow: Harsh neon strips and sparks against dark industrial shafts.
+  texture_and_material: Carbon black metal, grime, cables and glossy neon reflections.
+  camera_and_composition: First-person wall-run view with the blade in frame.
+  atmosphere_and_mood: Keep the requested mood with razor-sharp vertical speed.
+  rendering_and_quality: Authentic modern Unreal first-person action screen, matching real Ghostrunner 2020 screenshots.
+  key_features: Ghostrunner first-person katana; wall-runs; red neon megatower
+  creative_brief: 'One More Level Ghostrunner (2020) look: first-person cyber-ninja parkour up a vertical megatower, katana in hand, red and cyan neon, dark industrial metal and one-hit deaths. Carry it through Ghostrunner first-person katana, wall-runs, red neon megatower. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - watermark
   - logo
@@ -92,23 +60,15 @@ avoidRules:
   - copied box art composition
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-056.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Ghostrunner
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    minimal reticle, ability cooldowns, target markers, and route highlights can appear as coherent
-    action HUD
+  hudGuidance: minimal reticle, ability cooldowns, target markers, and route highlights can appear as coherent action HUD
   renderFamily: first-person-immersive
   cameraFamily: first-person
   hudMode: contextual-hud

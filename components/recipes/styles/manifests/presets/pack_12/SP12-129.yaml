@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-129
 packId: pack_12
-name: Wall-Breach Horde Defense Capture
+name: Orcs Must Die 2011 - Robot Entertainment Trap Defense
 styleAnchors:
-  - Wall-Breach Horde Defense Capture
+  - Orcs Must Die 2011 - Robot Entertainment Trap Defense
   - wall defense against horde screenshot
   - wall breach
-displayName: Wall-Breach Horde Defense Capture
+displayName: Orcs Must Die 2011 - Robot Entertainment Trap Defense
 category: 4. Sieges, Warfronts & Last Stands
 domain: wall defense against horde screenshot
-version: 1
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - horde-defense
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Wall-breach horde defense capture: an original elevated screenshot of defenders on a stone wall as an overwhelming horde surges through a breach, torches and debris everywhere.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject defending a wall breach against an enormous horde.
-  color_and_tone: Torch orange, smoke grey and dark stone, kept consistent across the whole image.
-  lighting_and_shadow: Firelight on stone and silhouetted masses, kept consistent across the whole image.
-  texture_and_material: Stone rubble, wooden barricades and smoke, kept consistent across the whole image.
-  camera_and_composition: Elevated angle over the wall and the breach.
-  atmosphere_and_mood: Keep the requested mood with desperate last-stand pressure.
-  rendering_and_quality: Clear readable crowd action, no HUD text, kept consistent across the whole image.
-  creative_brief: "Wall-breach horde defense capture: an original elevated screenshot of defenders on a stone wall as an overwhelming horde surges through a breach, torches and debris everywhere. Carry it through wall breach, horde surge, torchlight, elevated view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: wall breach; horde surge; torchlight; elevated view
+  aesthetic: 'Robot Entertainment Orcs Must Die! (2011) look: comic stylized third-person trap defense, cartoon orc and goblin hordes, fortress corridors, traps and exaggerated effects.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as comic stylized cartoon defenders facing cartoon hordes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Warm torch orange, stone grey and goblin green.
+  lighting_and_shadow: Torch light and trap flashes, lit the way Orcs Must Die 2011 lights its levels.
+  texture_and_material: Stylized painted 3D surfaces, with the in-engine surface finish of Orcs Must Die 2011.
+  camera_and_composition: Third-person view behind the defender, framed the way Orcs Must Die 2011 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with gleeful horde defense.
+  rendering_and_quality: Authentic stylized trap-defense screen, matching real Orcs Must Die 2011 screenshots.
+  creative_brief: 'Robot Entertainment Orcs Must Die! (2011) look: comic stylized third-person trap defense, cartoon orc and goblin hordes, fortress corridors, traps and exaggerated effects. Carry it through Orcs Must Die hordes, trap defense, comic stylized. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Orcs Must Die hordes; trap defense; comic stylized
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - horde-defense
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

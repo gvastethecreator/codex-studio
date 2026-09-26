@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Ultimate Play the Game Knight Lore (1984) ZX Spectrum look: monochrome isometric castle rooms, detailed line sprites, single-color screens and Filmation 3D illusion.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a small detailed isometric sprite in a single-color castle room. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: One bright attribute color on black per room.
-  lighting_and_shadow: Flat single-color screen light, lit the way Knight Lore 1984 lights its scenes.
+  lighting_and_shadow: Flat single-color screen light, lit the way Knight Lore 1984 lights its levels.
   texture_and_material: ZX Spectrum pixels, monochrome line detail and color attributes.
   camera_and_composition: Isometric room view with stone walls and arches.
   atmosphere_and_mood: Keep the requested mood with mysterious isometric quest.
-  rendering_and_quality: Authentic ZX Spectrum isometric screen, in the recognizable hand of Knight Lore 1984.
+  rendering_and_quality: Authentic ZX Spectrum isometric screen, matching real Knight Lore 1984 screenshots.
   creative_brief: 'Ultimate Play the Game Knight Lore (1984) ZX Spectrum look: monochrome isometric castle rooms, detailed line sprites, single-color screens and Filmation 3D illusion. Carry it through Knight Lore isometric, monochrome rooms, Filmation. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Knight Lore isometric; monochrome rooms; Filmation
 avoidRules:
@@ -46,13 +46,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: a pith-helmeted explorer who turns into a werewolf, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a pith-helmeted explorer who turns into a werewolf, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

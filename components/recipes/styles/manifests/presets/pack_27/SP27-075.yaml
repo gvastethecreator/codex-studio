@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Epyx Impossible Mission (1984) Commodore 64 look: C64 muted palette, elevators and rooms, smooth somersaulting rotoscoped agent sprite, patrol robots and puzzle searching.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a smooth acrobatic sprite in C64 rooms with elevators and robots. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: 'Commodore 64 palette: muted brown, grey-blue, purple and green.'
-  lighting_and_shadow: Flat C64 screen light, lit the way Impossible Mission 1984 lights its scenes.
-  texture_and_material: Wide C64 pixels and scanlines, with the surface finish of Impossible Mission 1984.
-  camera_and_composition: Side-view rooms connected by elevators, framed the way Impossible Mission 1984 composes its shots and pages.
+  lighting_and_shadow: Flat C64 screen light, lit the way Impossible Mission 1984 lights its levels.
+  texture_and_material: Wide C64 pixels and scanlines, with the in-engine surface finish of Impossible Mission 1984.
+  camera_and_composition: Side-view rooms connected by elevators, framed the way Impossible Mission 1984 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with tense secret agent search.
-  rendering_and_quality: Authentic Commodore 64 screen capture, in the recognizable hand of Impossible Mission 1984.
+  rendering_and_quality: Authentic Commodore 64 screen capture, matching real Impossible Mission 1984 screenshots.
   creative_brief: 'Epyx Impossible Mission (1984) Commodore 64 look: C64 muted palette, elevators and rooms, smooth somersaulting rotoscoped agent sprite, patrol robots and puzzle searching. Carry it through C64 palette, elevators, somersault agent, robots. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: C64 palette; elevators; somersault agent; robots
 avoidRules:
@@ -45,13 +45,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP12-017
 packId: pack_12
-name: Rollerdrome Arena Trick Combat
+name: Rollerdrome 2022 - Roll7 Comic Cel Skate Arena
 styleAnchors:
-  - Rollerdrome gameplay screenshots
+  - Rollerdrome 2022 - Roll7 Comic Cel Skate Arena
   - Rollerdrome Arena Trick Combat
-displayName: Rollerdrome Arena Trick Combat
+displayName: Rollerdrome 2022 - Roll7 Comic Cel Skate Arena
 category: 5. Speed, Sport & Competitive Arenas
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,45 +23,16 @@ tags:
   - hud-contextual-hud
   - reference-title
 visualDna:
-  aesthetic: 'In-game screenshot look informed by Rollerdrome gameplay: comic-shaded arena shooter capture with roller-skate trick lines, clean concrete arenas, stunt trajectories, and readable enemy targets. It never recreates an exact official level, character, logo or marketing art.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable Rollerdrome-adjacent game
-    screenshot subject: keep clear role silhouette, player/enemy/object function, scale
-    relationship, hitbox-like readability, and interaction affordances without copying source
-    characters or named IP elements.
-  color_and_tone: >-
-    Use a Rollerdrome-informed palette: cream concrete, black ink outlines, orange jumpsuit, red
-    danger marks, teal shadows, and poster-flat sky colors. Keep value grouping legible at gameplay
-    distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues
-    rather than decorative wash.
-  lighting_and_shadow: >-
-    Light the image through flat graphic daylight, rimmed outlines, explosion bursts, and stylized
-    target highlights. Lighting must clarify the playable route, threat, focal subject, or objective
-    and avoid generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from cel-shaded ramps, arena rails, impact smoke, graphic blood, simple crowds,
-    and crisp inked edges. Materials should feel like in-engine game assets captured during play,
-    with enough texture identity to separate props, terrain, characters, hazards, and interactables.
-  camera_and_composition: >-
-    Compose with third-person action-sport framing with trick arcs, enemy spacing, ammo pickups, and
-    readable arena loops. The frame should read as a plausible gameplay capture; include UI/HUD only
-    when it matches the source game's visual logic and improves clarity.
-  atmosphere_and_mood: 'Rollerdrome-derived mood: stylish, dangerous, sporty, satirical, and kinetic; it follows the tone of the requested scene without forcing a fixed mission or story.'
-  rendering_and_quality: >-
-    Finish as a coherent in-engine screenshot style, not concept art: score, combo, ammo, slow-mo,
-    and enemy indicators are coherent here; keep them graphic and compact. Maintain heavy-denoise
-    clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish,
-    or random interface clutter.
-  key_features: >-
-    Rollerdrome gameplay screenshots; comic-shaded arena shooter capture with roller-skate trick
-    lines, clean concrete arenas, stunt trajectories, and readable enemy targets; cream concrete,
-    black ink outlines, orange jumpsuit, red danger marks, teal shadows, and poster-flat sky colors;
-    flat graphic daylight, rimmed outlines, explosion bursts, and stylized target highlights;
-    cel-shaded ramps, arena rails, impact smoke, graphic blood, simple crowds, and crisp inked
-    edges; third-person action-sport framing with trick arcs, enemy spacing, ammo pickups, and
-    readable arena loops; stylish, dangerous, sporty, satirical, and kinetic; HUD guidance: score,
-    combo, ammo, slow-mo, and enemy indicators are coherent here; keep them graphic and compact
-  creative_brief: "Rollerdrome Arena Trick Combat: in-game screenshot language informed by Rollerdrome, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'Roll7 Rollerdrome (2022) look: comic cel-shaded 3D with thick ink lines, seventies-futurist blood sport arenas, roller skaters firing pistols mid-trick and bullet time.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as ink-lined comic figures on roller skates in bold sporty outfits. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Warm seventies orange, cream concrete and teal, true to the Rollerdrome 2022 palette.
+  lighting_and_shadow: Flat comic light with ink shadows, lit the way Rollerdrome 2022 lights its levels.
+  texture_and_material: Thick ink lines and cel fills, with the in-engine surface finish of Rollerdrome 2022.
+  camera_and_composition: Third-person view mid-trick over bowls, framed the way Rollerdrome 2022 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with stylish deadly flow.
+  rendering_and_quality: Authentic comic cel action screen, matching real Rollerdrome 2022 screenshots.
+  key_features: Rollerdrome ink lines; skate arena; bullet time
+  creative_brief: 'Roll7 Rollerdrome (2022) look: comic cel-shaded 3D with thick ink lines, seventies-futurist blood sport arenas, roller skaters firing pistols mid-trick and bullet time. Carry it through Rollerdrome ink lines, skate arena, bullet time. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - watermark
   - logo
@@ -89,23 +60,15 @@ avoidRules:
   - copied box art composition
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-017.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Rollerdrome
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    score, combo, ammo, slow-mo, and enemy indicators are coherent here; keep them graphic and
-    compact
+  hudGuidance: score, combo, ammo, slow-mo, and enemy indicators are coherent here; keep them graphic and compact
   renderFamily: third-person-cinematic
   cameraFamily: third-person
   hudMode: contextual-hud

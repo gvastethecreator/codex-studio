@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-121
 packId: pack_12
-name: Planet Overview Colony Capture
+name: Stellaris 2016 - Paradox Orbital Planet View
 styleAnchors:
-  - Planet Overview Colony Capture
+  - Stellaris 2016 - Paradox Orbital Planet View
   - orbital strategy planet screenshot
   - small planet
-displayName: Planet Overview Colony Capture
+displayName: Stellaris 2016 - Paradox Orbital Planet View
 category: 3. Sci-Fi Frontiers & Mech Zones
 domain: orbital strategy planet screenshot
-version: 1
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - planet-overview
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Planet overview colony capture: an original strategy screenshot of a whole small planet seen from orbit, colonies, routes and weather drawn on its curved surface.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject as colonies and structures on a small planet seen from orbit.
-  color_and_tone: Planet blues, greens and deserts on black space.
-  lighting_and_shadow: Day-night terminator across the globe, kept consistent across the whole image.
-  texture_and_material: Clouds, city lights and glowing route lines, kept consistent across the whole image.
-  camera_and_composition: Orbital view of a curved planet, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with godlike overview, kept consistent across the whole image.
-  rendering_and_quality: Clean strategy capture with no readable UI, kept consistent across the whole image.
-  creative_brief: "Planet overview colony capture: an original strategy screenshot of a whole small planet seen from orbit, colonies, routes and weather drawn on its curved surface. Carry it through small planet, orbital view, colony lights, route lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: small planet; orbital view; colony lights; route lines
+  aesthetic: 'Paradox Development Studio Stellaris (2016) look: grand strategy planet view from orbit, glowing colony lights, sleek UI rings and route lines, deep space nebulae.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render every subject as planets, colonies and fleets seen from orbit. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Deep space blue, colony gold and nebula violet.
+  lighting_and_shadow: Starlight rim on planets with glowing cities, lit the way Stellaris 2016 lights its levels.
+  texture_and_material: Clean planet textures and soft nebulae, with the in-engine surface finish of Stellaris 2016.
+  camera_and_composition: Orbital planet overview, framed the way Stellaris 2016 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with vast galactic ambition.
+  rendering_and_quality: Authentic grand strategy planet screen, matching real Stellaris 2016 screenshots.
+  creative_brief: 'Paradox Development Studio Stellaris (2016) look: grand strategy planet view from orbit, glowing colony lights, sleek UI rings and route lines, deep space nebulae. Carry it through Stellaris orbit, colony lights, route lines. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Stellaris orbit; colony lights; route lines
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - planet-overview
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

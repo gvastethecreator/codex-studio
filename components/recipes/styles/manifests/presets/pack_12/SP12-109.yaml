@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-109
 packId: pack_12
-name: Floating-Island Sky Temple Capture
+name: Genshin Impact 2020 - miHoYo Anime Sky Isles
 styleAnchors:
-  - Floating-Island Sky Temple Capture
+  - Genshin Impact 2020 - miHoYo Anime Sky Isles
   - sky island adventure screenshot
   - floating islands
-displayName: Floating-Island Sky Temple Capture
+displayName: Genshin Impact 2020 - miHoYo Anime Sky Isles
 category: 2. Arcane Temples & Mythic Realms
 domain: sky island adventure screenshot
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,23 @@ tags:
   - sky-temple
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Floating-island sky temple capture: an original third-person adventure screenshot of temples on floating islands, waterfalls pouring into clouds and gliding heroes.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject exploring or gliding between floating temple islands.
-  color_and_tone: Sky blue, cloud white, mossy green and warm stone.
-  lighting_and_shadow: Bright sun with soft cloud shadows, kept consistent across the whole image.
-  texture_and_material: Ancient stone, moss, waterfalls and cloth gliders, kept consistent across the whole image.
-  camera_and_composition: Wide third-person camera with vertical depth, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with airy wonder, kept consistent across the whole image.
-  rendering_and_quality: Clean real-time capture with no HUD text, kept consistent across the whole image.
-  creative_brief: "Floating-island sky temple capture: an original third-person adventure screenshot of temples on floating islands, waterfalls pouring into clouds and gliding heroes. Carry it through floating islands, sky temples, waterfalls into clouds, gliding. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: floating islands; sky temples; waterfalls into clouds; gliding
+  aesthetic: 'miHoYo Genshin Impact (2020) look: bright anime cel-shaded open world, floating islands with waterfalls, gliding with wings, elemental particle effects and clean saturated skies.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as bright anime cel-shaded adventurers with detailed outfits and glowing elemental effects. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Saturated sky blue, grass green, gold and elemental colors.
+  lighting_and_shadow: Bright clean anime daylight with soft rim light.
+  texture_and_material: Clean anime cel shading on stylized 3D, with the in-engine surface finish of Genshin Impact 2020.
+  camera_and_composition: Third-person gliding view over islands, framed the way Genshin Impact 2020 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with bright heroic wonder.
+  rendering_and_quality: Authentic modern anime open-world screen, matching real Genshin Impact 2020 screenshots.
+  creative_brief: 'miHoYo Genshin Impact (2020) look: bright anime cel-shaded open world, floating islands with waterfalls, gliding with wings, elemental particle effects and clean saturated skies. Carry it through Genshin anime cel, floating isles, gliding, elements. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Genshin anime cel; floating isles; gliding; elements
 avoidRules:
+  - existing Genshin characters
+  - a floating fairy companion in white
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +45,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing Genshin characters, a floating fairy companion in white, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +69,7 @@ taxonomy:
     - sky-temple
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

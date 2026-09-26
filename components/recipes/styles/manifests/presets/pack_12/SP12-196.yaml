@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-196
 packId: pack_12
-name: Mounted Archery Plains Gameplay
+name: Ghost of Tsushima 2020 - Sucker Punch Wind and Leaves
 styleAnchors:
-  - Mounted Archery Plains Gameplay
+  - Ghost of Tsushima 2020 - Sucker Punch Wind and Leaves
   - horseback archery gameplay
   - horseback archery
-displayName: Mounted Archery Plains Gameplay
+displayName: Ghost of Tsushima 2020 - Sucker Punch Wind and Leaves
 category: 10. Graphic & Feudal Gameplay
 domain: horseback archery gameplay
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,22 @@ tags:
   - mounted-archery
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Mounted archery plains gameplay: an original third-person capture of a rider shooting arrows at full gallop across windswept steppe grass.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject shooting a bow from a galloping horse on open plains.
-  color_and_tone: Golden grass, wide blue sky and earth tones.
-  lighting_and_shadow: Low sun with long shadows, kept consistent across the whole image.
-  texture_and_material: Wind-bent grass, leather and horsehair, kept consistent across the whole image.
-  camera_and_composition: Chase camera beside the galloping horse, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with wild freedom, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no UI, kept consistent across the whole image.
-  creative_brief: "Mounted archery plains gameplay: an original third-person capture of a rider shooting arrows at full gallop across windswept steppe grass. Carry it through horseback archery, galloping, steppe grass, low sun. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: horseback archery; galloping; steppe grass; low sun
+  aesthetic: 'Sucker Punch Ghost of Tsushima (2020) look: third-person samurai open world with guiding wind, fields of pampas grass and flowers, falling leaves and painterly color.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as samurai and Mongol riders in period armor. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Pampas gold, maple red and sky, true to the Ghost of Tsushima 2020 palette.
+  lighting_and_shadow: Golden painterly light, lit the way Ghost of Tsushima 2020 lights its levels.
+  texture_and_material: Realistic grass, cloth and armor, with the in-engine surface finish of Ghost of Tsushima 2020.
+  camera_and_composition: Third-person riding view, framed the way Ghost of Tsushima 2020 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with windswept poetic combat.
+  rendering_and_quality: Authentic painterly open-world screen, matching real Ghost of Tsushima 2020 screenshots.
+  creative_brief: 'Sucker Punch Ghost of Tsushima (2020) look: third-person samurai open world with guiding wind, fields of pampas grass and flowers, falling leaves and painterly color. Carry it through Tsushima wind, pampas fields, falling leaves. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Tsushima wind; pampas fields; falling leaves
 avoidRules:
+  - a samurai with a white ghost mask
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a samurai with a white ghost mask, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +68,7 @@ taxonomy:
     - mounted-archery
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

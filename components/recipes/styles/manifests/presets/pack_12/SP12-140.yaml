@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-140
 packId: pack_12
-name: Street Skate Trick Line Capture
+name: Tony Hawk's Pro Skater 2 2000 - Neversoft Skate Lines
 styleAnchors:
-  - Street Skate Trick Line Capture
+  - Tony Hawk's Pro Skater 2 2000 - Neversoft Skate Lines
   - skateboarding game screenshot
   - mid-air trick
-displayName: Street Skate Trick Line Capture
+displayName: Tony Hawk's Pro Skater 2 2000 - Neversoft Skate Lines
 category: 5. Speed, Sport & Competitive Arenas
 domain: skateboarding game screenshot
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,18 +20,20 @@ tags:
   - skate-line
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Street skate trick line capture: an original skateboarding game screenshot of a mid-air trick over city stairs and rails, fisheye feel and sunny concrete.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject mid-trick on a skateboard over urban features.
-  color_and_tone: Sunny concrete greys with bold clothing colors, kept consistent across the whole image.
-  lighting_and_shadow: Bright afternoon sun and crisp shadows, kept consistent across the whole image.
-  texture_and_material: Concrete, metal rails, grip tape and clean painted walls.
-  camera_and_composition: Low fisheye-style follow camera, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with loose street freedom.
-  rendering_and_quality: Clean capture with no trick names or scores.
-  creative_brief: "Street skate trick line capture: an original skateboarding game screenshot of a mid-air trick over city stairs and rails, fisheye feel and sunny concrete. Carry it through mid-air trick, city stairs, fisheye, sunny concrete. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: mid-air trick; city stairs; fisheye; sunny concrete
+  aesthetic: 'Neversoft Tony Hawk''s Pro Skater 2 (2000) look: PS1 low-poly skateboarding, sunny plazas, rails and fountains, big air combos and punk-era energy.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as low-poly PS1 skaters in baggy clothes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Sunny plaza tan, sky blue and punk colors.
+  lighting_and_shadow: Bright flat PS1 daylight, lit the way Tony Hawk's Pro Skater 2 2000 lights its levels.
+  texture_and_material: Low-poly surfaces with warped textures, with the in-engine surface finish of Tony Hawk's Pro Skater 2 2000.
+  camera_and_composition: Third-person chase view behind the skater, framed the way Tony Hawk's Pro Skater 2 2000 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with punk trick freedom.
+  rendering_and_quality: Authentic PS1 skate screen, matching real Tony Hawk's Pro Skater 2 2000 screenshots.
+  creative_brief: 'Neversoft Tony Hawk''s Pro Skater 2 (2000) look: PS1 low-poly skateboarding, sunny plazas, rails and fountains, big air combos and punk-era energy. Carry it through THPS2 low-poly, plazas, big air. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: THPS2 low-poly; plazas; big air
 avoidRules:
+  - real professional skaters
   - readable graffiti
   - existing game characters, logos or levels
   - readable interface text
@@ -44,13 +46,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: readable graffiti, existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: real professional skaters, readable graffiti, existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -65,6 +70,7 @@ taxonomy:
     - skate-line
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

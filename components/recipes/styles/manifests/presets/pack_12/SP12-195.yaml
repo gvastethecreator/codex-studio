@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-195
 packId: pack_12
-name: Arena Combo Hack-and-Slash Gameplay
+name: Devil May Cry 5 2019 - Capcom Style Combo
 styleAnchors:
-  - Arena Combo Hack-and-Slash Gameplay
+  - Devil May Cry 5 2019 - Capcom Style Combo
   - stylish combo action gameplay
   - air juggle
-displayName: Arena Combo Hack-and-Slash Gameplay
+displayName: Devil May Cry 5 2019 - Capcom Style Combo
 category: 10. Graphic & Feudal Gameplay
 domain: stylish combo action gameplay
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,22 +20,24 @@ tags:
   - combo-arena
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Arena combo hack-and-slash gameplay: an original stylish action capture of a hero juggling enemies mid-air, flashy weapon trails and a gothic arena.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject mid-combo juggling enemies in a stylish arena.
-  color_and_tone: Dark arena with vivid weapon-trail colors, kept consistent across the whole image.
-  lighting_and_shadow: Flashy effect lighting and rim light, kept consistent across the whole image.
-  texture_and_material: Gothic stone, coat flare and weapon glow, kept consistent across the whole image.
-  camera_and_composition: Dynamic low angle in the air, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with swaggering flair, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no combo text, kept consistent across the whole image.
-  creative_brief: "Arena combo hack-and-slash gameplay: an original stylish action capture of a hero juggling enemies mid-air, flashy weapon trails and a gothic arena. Carry it through air juggle, weapon trails, stylish hero, gothic arena. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: air juggle; weapon trails; stylish hero; gothic arena
+  aesthetic: 'Capcom Devil May Cry 5 (2019) look: photoreal stylish action, gothic cities, air juggles, flashy weapon trails, demons and style meter swagger.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as stylish demon hunters in long coats. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Gothic red, black and neon trails, true to the Devil May Cry 5 2019 palette.
+  lighting_and_shadow: Dramatic gothic light with trails, lit the way Devil May Cry 5 2019 lights its levels.
+  texture_and_material: Photoreal leather and stone, with the in-engine surface finish of Devil May Cry 5 2019.
+  camera_and_composition: Third-person combo view, framed the way Devil May Cry 5 2019 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with cocky stylish mayhem.
+  rendering_and_quality: Authentic stylish action screen, matching real Devil May Cry 5 2019 screenshots.
+  creative_brief: 'Capcom Devil May Cry 5 (2019) look: photoreal stylish action, gothic cities, air juggles, flashy weapon trails, demons and style meter swagger. Carry it through DMC5 combos, weapon trails, gothic city. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: DMC5 combos; weapon trails; gothic city
 avoidRules:
+  - a white-haired hunter in a red coat with twin pistols
+  - a greatsword and twin pistols
   - combo text
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -44,13 +46,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: combo text, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a white-haired hunter in a red coat with twin pistols, a greatsword and twin pistols, combo text, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -65,6 +70,7 @@ taxonomy:
     - combo-arena
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

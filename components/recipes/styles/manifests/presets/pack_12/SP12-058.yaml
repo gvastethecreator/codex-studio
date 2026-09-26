@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP12-058
 packId: pack_12
-name: Fez Echo Cavern Puzzle
+name: Fez 2012 - Polytron Rotating Pixel World
 category: 8. Puzzle Chambers & Adventure Setpieces
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -19,49 +19,18 @@ tags:
   - hud-minimal-hud
   - reference-title
 visualDna:
-  aesthetic: 'In-game screenshot look informed by Fez gameplay: pixel-art perspective-puzzle capture with rotating 2D/3D spaces, blocky caverns, glyph-like forms, and tiny character scale. It never recreates an exact official level, character, logo or marketing art.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable Fez-adjacent game screenshot
-    subject: keep clear role silhouette, player/enemy/object function, scale relationship,
-    hitbox-like readability, and interaction affordances without copying source characters or named
-    IP elements.
-  color_and_tone: >-
-    Use a Fez-informed palette: pastel sky blue, cave purple, moss green, golden cube glow, black
-    pixel outlines, and soft pink highlights. Keep value grouping legible at gameplay distance, with
-    color accents behaving like route, danger, pickup, team, magic, or objective cues rather than
-    decorative wash.
-  lighting_and_shadow: >-
-    Light the image through simple ambient glow, cube sparkle, cave opening light, and flat pixel
-    shadow. Lighting must clarify the playable route, threat, focal subject, or objective and avoid
-    generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from chunky pixel blocks, mossy tiles, ladders, doors, mysterious glyph shapes
-    without readable text, and clean sprite edges. Materials should feel like in-engine game assets
-    captured during play, with enough texture identity to separate props, terrain, characters,
-    hazards, and interactables.
-  camera_and_composition: >-
-    Compose with orthographic puzzle-platform frame with vertical shafts, rotatable landmarks,
-    hidden paths, and one-screen spatial clarity. The frame should read as a plausible gameplay
-    capture; include UI/HUD only when it matches the source game's visual logic and improves
-    clarity.
-  atmosphere_and_mood: 'Fez-derived mood: mysterious, gentle, clever, retro, and contemplative; it follows the tone of the requested scene without forcing a fixed mission or story.'
-  rendering_and_quality: >-
-    Finish as a coherent in-engine screenshot style, not concept art: very minimal HUD; small
-    collected-cube indicators or map hints can appear but the puzzle space should dominate. Maintain
-    heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos,
-    stock-photo polish, or random interface clutter.
-  key_features: >-
-    Fez gameplay screenshots; pixel-art perspective-puzzle capture with rotating 2D/3D spaces,
-    blocky caverns, glyph-like forms, and tiny character scale; pastel sky blue, cave purple, moss
-    green, golden cube glow, black pixel outlines, and soft pink highlights; simple ambient glow,
-    cube sparkle, cave opening light, and flat pixel shadow; chunky pixel blocks, mossy tiles,
-    ladders, doors, mysterious glyph shapes without readable text, and clean sprite edges;
-    orthographic puzzle-platform frame with vertical shafts, rotatable landmarks, hidden paths, and
-    one-screen spatial clarity; mysterious, gentle, clever, retro, and contemplative; HUD guidance:
-    very minimal HUD; small collected-cube indicators or map hints can appear but the puzzle space
-    should dominate
-  creative_brief: "Fez Echo Cavern Puzzle: in-game screenshot language informed by Fez, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'Polytron Fez (2012) look: 2D pixel platformer in a 3D world that rotates in quarter turns, bright pastel voxels, secret glyphs and serene exploration.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as tiny pastel pixel sprites in a rotating voxel world. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Bright pastel greens, sky blue and warm stone.
+  lighting_and_shadow: Soft pixel daylight or starry night, lit the way Fez 2012 lights its levels.
+  texture_and_material: Crisp pixel voxels, with the in-engine surface finish of Fez 2012.
+  camera_and_composition: Flat side view of a rotating world, framed the way Fez 2012 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with serene curious puzzling.
+  rendering_and_quality: Authentic pixel puzzle-platformer screen, matching real Fez 2012 screenshots.
+  key_features: Fez rotating world; pastel pixels; glyphs
+  creative_brief: 'Polytron Fez (2012) look: 2D pixel platformer in a 3D world that rotates in quarter turns, bright pastel voxels, secret glyphs and serene exploration. Carry it through Fez rotating world, pastel pixels, glyphs. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
+  - a small white creature in a red fez
   - watermark
   - logo
   - copyright mark
@@ -88,23 +57,19 @@ avoidRules:
   - copied box art composition
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
+  - text
+  - readable labels
+  - franchise likeness
+  - real person likeness
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-058.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: a small white creature in a red fez, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts
   referenceGame: Fez
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    very minimal HUD; small collected-cube indicators or map hints can appear but the puzzle space
-    should dominate
+  hudGuidance: very minimal HUD; small collected-cube indicators or map hints can appear but the puzzle space should dominate
   renderFamily: retro-pixel-low-poly
   cameraFamily: isometric-top-down
   hudMode: minimal-hud
@@ -128,7 +93,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-displayName: Fez Echo Cavern Puzzle
+displayName: Fez 2012 - Polytron Rotating Pixel World
 styleAnchors:
-  - Fez gameplay screenshots
+  - Fez 2012 - Polytron Rotating Pixel World
   - Fez Echo Cavern Puzzle

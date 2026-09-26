@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-206
 packId: pack_12
-name: Horseback Lance Joust Gameplay
+name: Defender of the Crown 1986 - Cinemaware Painted Joust
 styleAnchors:
-  - Horseback Lance Joust Gameplay
+  - Defender of the Crown 1986 - Cinemaware Painted Joust
   - tournament joust gameplay
   - joust
-displayName: Horseback Lance Joust Gameplay
+displayName: Defender of the Crown 1986 - Cinemaware Painted Joust
 category: 10. Graphic & Feudal Gameplay
 domain: tournament joust gameplay
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - joust
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Horseback lance joust gameplay: an original first- or third-person capture of a tournament joust, lances lowered, splintering wood and banner-lined lists.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject charging in a tournament joust with lance lowered.
-  color_and_tone: Bright heraldic banners, green field and steel, kept consistent across the whole image.
-  lighting_and_shadow: Clear daylight and dust, kept consistent across the whole image.
-  texture_and_material: Splintering lances, caparisons and armor, kept consistent across the whole image.
-  camera_and_composition: Down the tilt barrier toward the opponent, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with chivalric impact, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no UI, kept consistent across the whole image.
-  creative_brief: "Horseback lance joust gameplay: an original first- or third-person capture of a tournament joust, lances lowered, splintering wood and banner-lined lists. Carry it through joust, lowered lances, tilt barrier, banners. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: joust; lowered lances; tilt barrier; banners
+  aesthetic: 'Cinemaware Defender of the Crown (1986) look: Amiga painted pixel art of medieval England, the famous jousting view down the tilt, banners and castles.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as painted Amiga pixel knights and nobles. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Rich Amiga banners and green fields, true to the Defender of the Crown 1986 palette.
+  lighting_and_shadow: Painted daylight, lit the way Defender of the Crown 1986 lights its levels.
+  texture_and_material: Painted Amiga pixel art, with the in-engine surface finish of Defender of the Crown 1986.
+  camera_and_composition: First-person joust view down the lists, framed the way Defender of the Crown 1986 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with chivalric romantic drama.
+  rendering_and_quality: Authentic Amiga painted screen, matching real Defender of the Crown 1986 screenshots.
+  creative_brief: 'Cinemaware Defender of the Crown (1986) look: Amiga painted pixel art of medieval England, the famous jousting view down the tilt, banners and castles. Carry it through Defender of the Crown joust, Amiga painting. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Defender of the Crown joust; Amiga painting
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - joust
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

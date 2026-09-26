@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Square Final Fantasy VII (1997) look: detailed pre-rendered CGI backdrops with blocky low-poly chibi characters walking in front, industrial steampunk cities and Tetsuya Nomura designs.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as blocky low-poly chibi figures standing in front of a detailed pre-rendered backdrop. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Mako green glow, rusty industrial browns and night blue.
-  lighting_and_shadow: Pre-rendered glowing lights and flat polygon shading, lit the way Final Fantasy VII 1997 lights its scenes.
-  texture_and_material: Blocky low-poly figures over detailed pre-rendered art, with the surface finish of Final Fantasy VII 1997.
-  camera_and_composition: Fixed cinematic angle of a pre-rendered scene, framed the way Final Fantasy VII 1997 composes its shots and pages.
+  lighting_and_shadow: Pre-rendered glowing lights and flat polygon shading, lit the way Final Fantasy VII 1997 lights its levels.
+  texture_and_material: Blocky low-poly figures over detailed pre-rendered art, with the in-engine surface finish of Final Fantasy VII 1997.
+  camera_and_composition: Fixed cinematic angle of a pre-rendered scene, framed the way Final Fantasy VII 1997 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with melancholy steampunk adventure.
-  rendering_and_quality: Authentic late-nineties PlayStation JRPG screen, in the recognizable hand of Final Fantasy VII 1997.
+  rendering_and_quality: Authentic late-nineties PlayStation JRPG screen, matching real Final Fantasy VII 1997 screenshots.
   creative_brief: 'Square Final Fantasy VII (1997) look: detailed pre-rendered CGI backdrops with blocky low-poly chibi characters walking in front, industrial steampunk cities and Tetsuya Nomura designs. Carry it through FF7 pre-rendered backdrops, chibi polygons, mako green. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: FF7 pre-rendered backdrops; chibi polygons; mako green
 avoidRules:
@@ -46,13 +46,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: a spiky blond soldier with a buster sword, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a spiky blond soldier with a buster sword, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-213
 packId: pack_12
-name: Sanity Distortion Gameplay
+name: Layers of Fear 2016 - Bloober Team Shifting Rooms
 styleAnchors:
-  - Sanity Distortion Gameplay
+  - Layers of Fear 2016 - Bloober Team Shifting Rooms
   - psychological distortion gameplay
   - warping walls
-displayName: Sanity Distortion Gameplay
+displayName: Layers of Fear 2016 - Bloober Team Shifting Rooms
 category: 11. Psychological & Tactical Gameplay
 domain: psychological distortion gameplay
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - sanity-distortion
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: "Sanity distortion gameplay: an original first-person capture where the room warps, walls breathe and colors bleed as the character's grip on reality slips."
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject in a room that warps and breathes around them.
-  color_and_tone: Shifting desaturated tones with bleeding color, kept consistent across the whole image.
-  lighting_and_shadow: Warping light and vignette, kept consistent across the whole image.
-  texture_and_material: Stretched walls, doubled edges and chromatic fringes, kept consistent across the whole image.
-  camera_and_composition: First-person with warped perspective, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with unravelling perception, kept consistent across the whole image.
-  rendering_and_quality: Clean distortion with no UI, kept consistent across the whole image.
-  creative_brief: "Sanity distortion gameplay: an original first-person capture where the room warps, walls breathe and colors bleed as the character's grip on reality slips. Carry it through warping walls, breathing room, color bleed, first-person. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: warping walls; breathing room; color bleed; first-person
+  aesthetic: 'Bloober Team Layers of Fear (2016) look: first-person Victorian house that shifts behind you, a painter descending into madness, warped rooms and dripping paint.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as haunted artists seen from first person. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Victorian brown, oil paint and shadow, true to the Layers of Fear 2016 palette.
+  lighting_and_shadow: Candle and warped light, lit the way Layers of Fear 2016 lights its levels.
+  texture_and_material: Oil paint, wood and plaster, with the in-engine surface finish of Layers of Fear 2016.
+  camera_and_composition: First-person warped view, framed the way Layers of Fear 2016 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with unraveling artistic madness.
+  rendering_and_quality: Authentic psychological horror screen, matching real Layers of Fear 2016 screenshots.
+  creative_brief: 'Bloober Team Layers of Fear (2016) look: first-person Victorian house that shifts behind you, a painter descending into madness, warped rooms and dripping paint. Carry it through Layers of Fear shifting rooms, paint, madness. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Layers of Fear shifting rooms; paint; madness
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - sanity-distortion
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-210
 packId: pack_12
-name: Camouflage Jungle Stealth Gameplay
+name: Crysis 2007 - Crytek Jungle Stealth
 styleAnchors:
-  - Camouflage Jungle Stealth Gameplay
+  - Crysis 2007 - Crytek Jungle Stealth
   - overhead jungle stealth gameplay
   - camouflage
-displayName: Camouflage Jungle Stealth Gameplay
+displayName: Crysis 2007 - Crytek Jungle Stealth
 category: 11. Psychological & Tactical Gameplay
 domain: overhead jungle stealth gameplay
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,22 @@ tags:
   - jungle-stealth
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Camouflage jungle stealth gameplay: an original overhead or third-person capture of a camouflaged soldier crawling through dense jungle past patrols.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject camouflaged and crawling through jungle past patrols.
-  color_and_tone: Deep jungle greens with mud and sunlight flecks.
-  lighting_and_shadow: Dappled jungle light, kept consistent across the whole image.
-  texture_and_material: Ferns, mud, face paint and camo fabric, kept consistent across the whole image.
-  camera_and_composition: Low third-person in the undergrowth, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with patient infiltration, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no UI, kept consistent across the whole image.
-  creative_brief: "Camouflage jungle stealth gameplay: an original overhead or third-person capture of a camouflaged soldier crawling through dense jungle past patrols. Carry it through camouflage, jungle crawl, patrols, dappled light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: camouflage; jungle crawl; patrols; dappled light
+  aesthetic: 'Crytek Crysis (2007) look: first-person tropical island jungle in lush CryEngine detail, dense foliage, cloaking stealth, patrols and god rays.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as soldiers in face paint and jungle gear. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Lush jungle green and sun gold, true to the Crysis 2007 palette.
+  lighting_and_shadow: God rays through foliage, lit the way Crysis 2007 lights its levels.
+  texture_and_material: Dense photoreal foliage, with the in-engine surface finish of Crysis 2007.
+  camera_and_composition: First-person jungle view, framed the way Crysis 2007 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with tense predatory stealth.
+  rendering_and_quality: Authentic CryEngine jungle screen, matching real Crysis 2007 screenshots.
+  creative_brief: 'Crytek Crysis (2007) look: first-person tropical island jungle in lush CryEngine detail, dense foliage, cloaking stealth, patrols and god rays. Carry it through Crysis jungle, foliage, stealth. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Crysis jungle; foliage; stealth
 avoidRules:
+  - a ribbed nanosuit
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a ribbed nanosuit, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +68,7 @@ taxonomy:
     - jungle-stealth
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

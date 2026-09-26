@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Capcom Mega Man 2 (1988) NES look: bright colorful robot-themed stages, chunky mechanical sprites, clean tile patterns and crisp platforming.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a chunky bright sprite platforming through a colorful mechanical stage. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Bright NES blues, oranges, greens and pinks, true to the Mega Man 2 1988 palette.
-  lighting_and_shadow: Flat bright NES light, lit the way Mega Man 2 1988 lights its scenes.
+  lighting_and_shadow: Flat bright NES light, lit the way Mega Man 2 1988 lights its levels.
   texture_and_material: Visible chunky pixels on a curved CRT with scanlines, slight bloom and phosphor glow.
-  camera_and_composition: Side-scrolling stage with clean tiles, framed the way Mega Man 2 1988 composes its shots and pages.
+  camera_and_composition: Side-scrolling stage with clean tiles, framed the way Mega Man 2 1988 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with bright heroic platforming.
-  rendering_and_quality: Authentic NES action platformer screen, in the recognizable hand of Mega Man 2 1988.
+  rendering_and_quality: Authentic NES action platformer screen, matching real Mega Man 2 1988 screenshots.
   creative_brief: 'Capcom Mega Man 2 (1988) NES look: bright colorful robot-themed stages, chunky mechanical sprites, clean tile patterns and crisp platforming. Carry it through Mega Man stages, chunky sprites, mechanical themes. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Mega Man stages; chunky sprites; mechanical themes
 avoidRules:
@@ -46,13 +46,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: a blue robot boy with an arm cannon, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a blue robot boy with an arm cannon, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

@@ -1,14 +1,14 @@
 schemaVersion: 1
 id: SP12-011
 packId: pack_12
-name: Drowned Deco Pressure Hall
+name: SOMA 2015 - Frictional Abyssal Station
 styleAnchors:
-  - immersive art-deco first-person gameplay screenshots
+  - SOMA 2015 - Frictional Abyssal Station
   - undersea pressure hall combat
   - Drowned Deco Pressure Hall
-displayName: Drowned Deco Pressure Hall
+displayName: SOMA 2015 - Frictional Abyssal Station
 category: 3. Sci-Fi Frontiers & Mech Zones
-version: 1
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -22,48 +22,18 @@ tags:
   - render-first-person-immersive
   - camera-first-person
   - hud-contextual-hud
+  - reference-title
 visualDna:
-  aesthetic: 'Original in-game screenshot look for immersive art-deco first-person shooter captures: undersea pressure halls, brass machinery, wet tile, plasmid-like ability effects, enemy silhouettes, and route/combat readability. Borrow the art-deco material pressure of BioShock-like games, but land as a different fictional drowned city with different signage shapes, enemies, weapons, UI icons, and architectural motifs.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable drowned-deco first-person
-    screenshot subject: keep clear threat/object function, route affordance, weapon or hand scale,
-    interactable pickup logic, and readable combat spacing without copying source characters or
-    named IP elements.
-  color_and_tone: >-
-    Use an immersive drowned-deco palette: oxidized teal, brass gold, wet black, nicotine amber,
-    coral red, sea green, and porcelain white. Keep value grouping legible at gameplay distance and
-    avoid pixel-art downgrade or generic sci-fi blue wash.
-  lighting_and_shadow: >-
-    Light the image through flickering deco lamps, watery caustics, electrical arcs, muzzle flashes,
-    and deep corridor shadows. Lighting must clarify the playable route, threat, focal subject, or
-    objective and avoid generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from brass deco trim, cracked tiles, wet glass, peeling posters without readable
-    slogans, riveted metal, and sea growth. Materials should feel like in-engine game assets
-    captured during play, with enough texture identity to separate props, terrain, characters,
-    hazards, and interactables.
-  camera_and_composition: >-
-    Compose with first-person camera, playable corridor/atrium route, weapon/hand edge, interactable
-    object, enemy spacing, and environmental cover. The frame should read as a captured gameplay
-    moment, not a retro sprite scene or poster.
-  atmosphere_and_mood: >-
-    Carry an original drowned-deco mood: decayed, theatrical, paranoid, wet, retro-futurist, and
-    pressure-sealed.
-  rendering_and_quality: >-
-    Finish as coherent first-person immersive shooter screenshot style, not pixel art and not
-    concept art: sparse contextual HUD, ability/weapon cues, pickup glow, and route lighting can
-    appear. Maintain heavy-denoise clarity, crisp focal hierarchy, and no readable signage/logos.
-  key_features: >-
-    BioShock gameplay screenshots; first-person immersive-sim capture with art-deco underwater
-    corridors, leaking glass, plasmid hands, and environmental horror staging; green seawater,
-    tarnished gold, rust orange, red alarm glow, black ocean void, and sickly neon signage shapes;
-    flickering deco lamps, watery caustics, electrical arcs, muzzle flashes, and deep corridor
-    shadows; brass deco trim, cracked tiles, wet glass, peeling posters without readable slogans,
-    riveted metal, and sea growth; first-person weapon/plasmid framing with corridor depth,
-    interactable props, enemy silhouettes, and resource pickup readability; decayed, theatrical,
-    paranoid, wet, and retro-futurist; HUD guidance: health/eve meters, ammo counters, plasmid
-    icons, and objective arrows are allowed if they match immersive-sim screenshot logic
-  creative_brief: "Drowned Deco Pressure Hall: in-game screenshot language informed by immersive art-deco shooter references, covering first-person camera, brass/wet-tile material language, pressure-hall lighting, ability effects, and playable route readability. Avoid direct BioShock cloning, exact signage, retro pixel downgrade, and promotional composition. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'Frictional Games SOMA (2015) look: first-person horror inside a deep-sea research station, flooded industrial corridors, flickering lights, leaking bulkheads and dark abyssal ocean beyond thick windows.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people and machines as uncanny figures in diving suits and cabled machinery, seen from first person. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Abyssal blue-black, sodium orange, rust and cold teal.
+  lighting_and_shadow: Flickering station lights and flashlight beams in dark water.
+  texture_and_material: Wet rusty metal, cables, algae and fogged glass.
+  camera_and_composition: First-person view through flooded corridors, framed the way SOMA 2015 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with crushing existential dread.
+  rendering_and_quality: Authentic mid-2010s undersea horror screen, matching real SOMA 2015 screenshots.
+  key_features: SOMA undersea station; flooded corridors; abyss windows
+  creative_brief: 'Frictional Games SOMA (2015) look: first-person horror inside a deep-sea research station, flooded industrial corridors, flickering lights, leaking bulkheads and dark abyssal ocean beyond thick windows. Carry it through SOMA undersea station, flooded corridors, abyss windows. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - watermark
   - logo
@@ -92,22 +62,17 @@ avoidRules:
   - direct BioShock clone
   - retro pixel downgrade
   - exact Rapture signage
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-011.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, direct BioShock clone, retro pixel downgrade, exact Rapture
-    signage
+  negativePrompt: watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct BioShock clone, retro pixel downgrade, exact Rapture signage, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Original immersive art-deco shooter, BioShock-informed
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    health/eve meters, ammo counters, plasmid icons, and objective arrows are allowed if they match
-    immersive-sim screenshot logic
+  hudGuidance: health/eve meters, ammo counters, plasmid icons, and objective arrows are allowed if they match immersive-sim screenshot logic
   renderFamily: first-person-immersive
   cameraFamily: first-person
   hudMode: contextual-hud
@@ -125,6 +90,7 @@ taxonomy:
     - render-first-person-immersive
     - camera-first-person
     - hud-contextual-hud
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

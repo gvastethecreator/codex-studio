@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-165
 packId: pack_12
-name: Getaway Car Chase Capture
+name: Driver 1999 - Reflections Seventies Chase
 styleAnchors:
-  - Getaway Car Chase Capture
+  - Driver 1999 - Reflections Seventies Chase
   - crime driving game screenshot
   - getaway car
-displayName: Getaway Car Chase Capture
+displayName: Driver 1999 - Reflections Seventies Chase
 category: 7. Heists, Horror & Underworld Runs
 domain: crime driving game screenshot
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,22 +20,22 @@ tags:
   - getaway-chase
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Getaway car chase capture: an original chase-camera screenshot of a getaway car tearing through city streets, police lights, sparks and flying debris.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject in a getaway car fleeing through city streets.
-  color_and_tone: Night streets with red and blue police light.
-  lighting_and_shadow: Headlights, sirens and street lamps, kept consistent across the whole image.
-  texture_and_material: Wet asphalt, sparks and crumpled metal, kept consistent across the whole image.
-  camera_and_composition: Chase camera behind the car, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with breakneck escape, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no HUD text, kept consistent across the whole image.
-  creative_brief: "Getaway car chase capture: an original chase-camera screenshot of a getaway car tearing through city streets, police lights, sparks and flying debris. Carry it through getaway car, police lights, sparks, chase camera. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: getaway car; police lights; sparks; chase camera
+  aesthetic: 'Reflections Interactive Driver (1999) look: PS1 low-poly seventies car chases, muscle cars, police lights, cinematic chase angles and film-inspired stunts.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render every car as a boxy low-poly seventies muscle car. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Night blue, police red and sodium orange, true to the Driver 1999 palette.
+  lighting_and_shadow: Police lights and street lamps, lit the way Driver 1999 lights its levels.
+  texture_and_material: Low-poly PS1 textures, with the in-engine surface finish of Driver 1999.
+  camera_and_composition: Chase camera behind the car, framed the way Driver 1999 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with gritty chase thrill.
+  rendering_and_quality: Authentic PS1 driving screen, matching real Driver 1999 screenshots.
+  creative_brief: 'Reflections Interactive Driver (1999) look: PS1 low-poly seventies car chases, muscle cars, police lights, cinematic chase angles and film-inspired stunts. Carry it through Driver 1999 low-poly, seventies chase, police lights. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Driver 1999 low-poly; seventies chase; police lights
 avoidRules:
   - car brand logos
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -44,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: car brand logos, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: car brand logos, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -65,6 +68,7 @@ taxonomy:
     - getaway-chase
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

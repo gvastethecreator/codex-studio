@@ -1,14 +1,14 @@
 schemaVersion: 1
 id: SP12-034
 packId: pack_12
-name: Canyon Marksman Contract
+name: Sniper Ghost Warrior Contracts 2019 - CI Games Long Shot
 styleAnchors:
-  - tactical marksman first-person gameplay screenshots
+  - Sniper Ghost Warrior Contracts 2019 - CI Games Long Shot
   - long-range canyon overwatch
   - Canyon Marksman Contract
-displayName: Canyon Marksman Contract
+displayName: Sniper Ghost Warrior Contracts 2019 - CI Games Long Shot
 category: 6. Wilderness Hunts & Harsh Frontiers
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -22,45 +22,18 @@ tags:
   - render-first-person-immersive
   - camera-first-person
   - hud-contextual-hud
+  - reference-title
 visualDna:
-  aesthetic: 'Original in-game screenshot look for tactical marksman shooter captures: first-person or scoped overwatch, canyon depth, wind/haze, target patrol spacing, stealth route planning, and ballistics-readable sightlines. Land as a fictional marksman contract, not a strategy map or military poster.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable marksman screenshot subject: keep
-    clear distance relationship, target/object function, cover, route affordance, scope/optic
-    framing, and stealth pressure without copying source missions or UI.
-  color_and_tone: >-
-    Use a tactical canyon palette: dust beige, sun-bleached rock, cold optic blue, dry scrub green,
-    muted metal grey, and warning red accents. Keep value grouping legible through atmospheric
-    depth.
-  lighting_and_shadow: >-
-    Light the image through harsh noon sun, scope glare, dust haze, muzzle flash, and long terrain
-    shadows. Lighting must clarify the playable route, threat, focal subject, or objective and avoid
-    generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from rock strata, tactical fabric, matte rifle metal, scrub brush, distant
-    vehicles, heat shimmer, and sandy dust. Materials should feel like in-engine game assets
-    captured during play, with enough texture identity to separate props, terrain, characters,
-    hazards, and interactables.
-  camera_and_composition: >-
-    Compose with first-person scope, binocular, or over-weapon camera; visible foreground cover;
-    mid-distance patrol/objective; long sightline; and one clear tactical decision. Avoid isometric
-    strategy overview.
-  atmosphere_and_mood: 'Carry an original canyon marksman mood: patient, lethal, dry, quiet, tactical, and heat-hazed.'
-  rendering_and_quality: >-
-    Finish as coherent first-person tactical shooter screenshot style, not concept art: optic
-    reticle, wind dots, range pips, objective markers, and minimap shapes can appear as abstract
-    non-readable HUD. Maintain heavy-denoise clarity and no readable UI text.
-  key_features: >-
-    Sniper Ghost Warrior Contracts 2 gameplay screenshots; long-range tactical sniper capture with
-    desert canyons, optic overlays, distant targets, wind/ballistics tension, and stealth approach
-    routes; red canyon rock, tan sand, military olive, black scope vignette, pale sky, and small red
-    target marks; harsh noon sun, scope glare, dust haze, muzzle flash, and long terrain shadows;
-    rock strata, tactical fabric, matte rifle metal, scrub brush, distant vehicles, heat shimmer,
-    and sandy dust; first-person scoped or over-watch composition with reticle logic, target depth,
-    terrain cover, and ballistic lane readability; patient, lethal, dry, quiet, and tactical; HUD
-    guidance: scope reticle, wind/elevation marks, objective distance, ammo, and detection
-    indicators are allowed if precise
-  creative_brief: "Canyon Marksman Contract: in-game screenshot language informed by tactical marksman references, covering first-person optics, long sightlines, patrol spacing, cover, environmental haze, and readable stealth objective. Avoid strategy-tactics framing, readable scope text, and generic military promo composition. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'CI Games Sniper Ghost Warrior Contracts (2019) look: realistic first-person sniping over mountain canyons, scope with ranging marks, wind haze and distant convoys.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as distant realistic figures seen through a scope or a prone marksman. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Canyon ochre, dusty green and sky haze, true to the Sniper Ghost Warrior Contracts 2019 palette.
+  lighting_and_shadow: Hot daylight with heat haze, lit the way Sniper Ghost Warrior Contracts 2019 lights its levels.
+  texture_and_material: Realistic rock, dust and gear, with the in-engine surface finish of Sniper Ghost Warrior Contracts 2019.
+  camera_and_composition: First-person prone scope view, framed the way Sniper Ghost Warrior Contracts 2019 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with patient lethal focus.
+  rendering_and_quality: Authentic tactical sniper screen, matching real Sniper Ghost Warrior Contracts 2019 screenshots.
+  key_features: Sniper contracts; scope view; canyon haze
+  creative_brief: 'CI Games Sniper Ghost Warrior Contracts (2019) look: realistic first-person sniping over mountain canyons, scope with ranging marks, wind haze and distant convoys. Carry it through Sniper contracts, scope view, canyon haze. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - watermark
   - logo
@@ -90,22 +63,17 @@ avoidRules:
   - drone map view
   - generic military promo shot
   - readable scope UI text
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-034.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, strategy tactics camera, drone map view, generic military
-    promo shot, readable scope UI text
+  negativePrompt: watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, strategy tactics camera, drone map view, generic military promo shot, readable scope UI text, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Original tactical marksman shooter, Sniper Contracts-informed
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    scope reticle, wind/elevation marks, objective distance, ammo, and detection indicators are
-    allowed if precise
+  hudGuidance: scope reticle, wind/elevation marks, objective distance, ammo, and detection indicators are allowed if precise
   renderFamily: first-person-immersive
   cameraFamily: first-person
   hudMode: contextual-hud
@@ -123,6 +91,7 @@ taxonomy:
     - render-first-person-immersive
     - camera-first-person
     - hud-contextual-hud
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-176
 packId: pack_12
-name: Collapsing Bridge Setpiece Capture
+name: Indiana Jones Great Circle 2024 - MachineGames Pulp Adventure
 styleAnchors:
-  - Collapsing Bridge Setpiece Capture
+  - Indiana Jones Great Circle 2024 - MachineGames Pulp Adventure
   - bridge collapse action screenshot
   - collapsing bridge
-displayName: Collapsing Bridge Setpiece Capture
+displayName: Indiana Jones Great Circle 2024 - MachineGames Pulp Adventure
 category: 8. Puzzle Chambers & Adventure Setpieces
 domain: bridge collapse action screenshot
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,18 +20,20 @@ tags:
   - bridge-collapse
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Collapsing bridge setpiece capture: an original cinematic screenshot of a hero sprinting across a bridge crumbling into a chasm, planks falling and dust rising.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject racing across a bridge as it collapses behind them.
-  color_and_tone: Dusty ochres, deep chasm shadows and sky, kept consistent across the whole image.
-  lighting_and_shadow: Dramatic light with falling debris shadows, kept consistent across the whole image.
-  texture_and_material: Splintering wood, rope and falling stone, kept consistent across the whole image.
-  camera_and_composition: Low angle facing the running hero, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with heart-pounding urgency, kept consistent across the whole image.
-  rendering_and_quality: Clean cinematic capture with no HUD, kept consistent across the whole image.
-  creative_brief: "Collapsing bridge setpiece capture: an original cinematic screenshot of a hero sprinting across a bridge crumbling into a chasm, planks falling and dust rising. Carry it through collapsing bridge, chasm, falling planks, sprinting hero. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: collapsing bridge; chasm; falling planks; sprinting hero
+  aesthetic: 'MachineGames Indiana Jones and the Great Circle (2024) look: pulp 1930s adventure, jungle chasms, rope bridges, whips and ruins in rich cinematic light.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as 1930s explorers in khaki and leather. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Jungle green, khaki and sunlit gold, true to the Indiana Jones Great Circle 2024 palette.
+  lighting_and_shadow: Cinematic dappled jungle light, lit the way Indiana Jones Great Circle 2024 lights its levels.
+  texture_and_material: Realistic rope, wood and stone, with the in-engine surface finish of Indiana Jones Great Circle 2024.
+  camera_and_composition: First-person action view, framed the way Indiana Jones Great Circle 2024 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with pulpy daring thrill.
+  rendering_and_quality: Authentic modern adventure screen, matching real Indiana Jones Great Circle 2024 screenshots.
+  creative_brief: 'MachineGames Indiana Jones and the Great Circle (2024) look: pulp 1930s adventure, jungle chasms, rope bridges, whips and ruins in rich cinematic light. Carry it through Great Circle pulp, rope bridges, ruins. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Great Circle pulp; rope bridges; ruins
 avoidRules:
+  - a fedora-wearing archaeologist with a whip
   - existing game characters, logos or levels
   - readable interface text
   - readable text
@@ -42,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a fedora-wearing archaeologist with a whip, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -63,6 +68,7 @@ taxonomy:
     - bridge-collapse
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

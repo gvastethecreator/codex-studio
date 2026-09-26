@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-125
 packId: pack_12
-name: Survey Visor Alien Flora Capture
+name: Starfield 2023 - Bethesda NASA-Punk Scanner
 styleAnchors:
-  - Survey Visor Alien Flora Capture
+  - Starfield 2023 - Bethesda NASA-Punk Scanner
   - scanner visor alien plants screenshot
   - scanning visor
-displayName: Survey Visor Alien Flora Capture
+displayName: Starfield 2023 - Bethesda NASA-Punk Scanner
 category: 3. Sci-Fi Frontiers & Mech Zones
 domain: scanner visor alien plants screenshot
-version: 1
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,22 +20,22 @@ tags:
   - survey-visor
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Survey visor alien flora capture: an original first-person screenshot through a scanning visor, alien plants and creatures outlined with soft analysis glows.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; view the subject through a scanning visor that outlines alien life.
-  color_and_tone: Lush alien colors with cyan scan outlines, kept consistent across the whole image.
-  lighting_and_shadow: Natural alien light with visor glow overlays, kept consistent across the whole image.
-  texture_and_material: Strange plants, glowing spores and visor glass, kept consistent across the whole image.
-  camera_and_composition: First-person view with a curved visor edge, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with curious alien discovery.
-  rendering_and_quality: Clean capture with no readable data, kept consistent across the whole image.
-  creative_brief: "Survey visor alien flora capture: an original first-person screenshot through a scanning visor, alien plants and creatures outlined with soft analysis glows. Carry it through scanning visor, alien flora, cyan outlines, first person. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: scanning visor; alien flora; cyan outlines; first person
+  aesthetic: 'Bethesda Game Studios Starfield (2023) look: NASA-punk space exploration, scanner visor overlay outlining alien flora and fauna, grounded spacesuits and alien planets.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as explorers in grounded NASA-punk spacesuits scanning alien life. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Scanner cyan outlines over natural alien palettes, true to the Starfield 2023 palette.
+  lighting_and_shadow: Natural alien sunlight with scan glow, lit the way Starfield 2023 lights its levels.
+  texture_and_material: Realistic alien terrain and suits, with the in-engine surface finish of Starfield 2023.
+  camera_and_composition: First-person scanner visor view, framed the way Starfield 2023 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with curious scientific discovery.
+  rendering_and_quality: Authentic modern space RPG screen, matching real Starfield 2023 screenshots.
+  creative_brief: 'Bethesda Game Studios Starfield (2023) look: NASA-punk space exploration, scanner visor overlay outlining alien flora and fauna, grounded spacesuits and alien planets. Carry it through Starfield scanner, NASA-punk, alien flora. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Starfield scanner; NASA-punk; alien flora
 avoidRules:
   - readable data
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -44,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: readable data, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable data, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -65,6 +68,7 @@ taxonomy:
     - survey-visor
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

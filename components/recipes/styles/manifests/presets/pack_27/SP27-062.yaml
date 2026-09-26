@@ -27,9 +27,9 @@ visualDna:
   color_and_tone: Glowing electric blue, yellow, red and green lines on black.
   lighting_and_shadow: Pure glowing vector light with bloom on black.
   texture_and_material: Thin glowing vector lines, phosphor trails and black glass.
-  camera_and_composition: Looking down a receding geometric vector tube, framed the way Tempest 1981 composes its shots and pages.
+  camera_and_composition: Looking down a receding geometric vector tube, framed the way Tempest 1981 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with electric abstract intensity.
-  rendering_and_quality: Authentic color vector arcade screen, in the recognizable hand of Tempest 1981.
+  rendering_and_quality: Authentic color vector arcade screen, matching real Tempest 1981 screenshots.
   creative_brief: 'Atari Tempest (1981) look: bright color vector lines on black, a geometric tube receding in perspective, crackling lines and glowing electric shapes climbing toward the player. Carry it through Tempest color vector, receding tube, glowing lines. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Tempest color vector; receding tube; glowing lines
 avoidRules:
@@ -45,13 +45,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

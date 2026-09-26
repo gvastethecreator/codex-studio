@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Team Ico ICO (2001) look: vast bleached stone castle, overexposed bloom, washed-out color, tiny figures lost in monumental architecture, soft misty sea light and silent melancholy.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as small figures lost in monumental bleached stone architecture with heavy bloom. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Bleached stone, faded moss green and pale sea grey.
-  lighting_and_shadow: Overexposed bloom light spilling through arches, lit the way ICO 2001 lights its scenes.
-  texture_and_material: Soft weathered stone and hazy washed-out textures, with the surface finish of ICO 2001.
-  camera_and_composition: Wide distant cinematic camera dwarfing the figures, framed the way ICO 2001 composes its shots and pages.
+  lighting_and_shadow: Overexposed bloom light spilling through arches, lit the way ICO 2001 lights its levels.
+  texture_and_material: Soft weathered stone and hazy washed-out textures, with the in-engine surface finish of ICO 2001.
+  camera_and_composition: Wide distant cinematic camera dwarfing the figures, framed the way ICO 2001 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with silent tender melancholy.
-  rendering_and_quality: Authentic PS2 bloom-lit adventure screen, in the recognizable hand of ICO 2001.
+  rendering_and_quality: Authentic PS2 bloom-lit adventure screen, matching real ICO 2001 screenshots.
   creative_brief: 'Team Ico ICO (2001) look: vast bleached stone castle, overexposed bloom, washed-out color, tiny figures lost in monumental architecture, soft misty sea light and silent melancholy. Carry it through ICO bleached castle, heavy bloom, tiny figures, melancholy. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: ICO bleached castle; heavy bloom; tiny figures; melancholy
 avoidRules:
@@ -46,13 +46,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: a horned boy and a glowing pale girl holding hands, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a horned boy and a glowing pale girl holding hands, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-198
 packId: pack_12
-name: Castle Siege Command Gameplay
+name: Age of Empires II 1999 - Ensemble Isometric Siege
 styleAnchors:
-  - Castle Siege Command Gameplay
+  - Age of Empires II 1999 - Ensemble Isometric Siege
   - feudal siege strategy gameplay
   - siege engines
-displayName: Castle Siege Command Gameplay
+displayName: Age of Empires II 1999 - Ensemble Isometric Siege
 category: 10. Graphic & Feudal Gameplay
 domain: feudal siege strategy gameplay
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - siege-command
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Castle siege command gameplay: an original strategy capture of commanding a feudal siege from above, battering rams, ladders, archers and burning towers.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject as units in a feudal siege seen from a commanding height.
-  color_and_tone: Earth tones, stone grey and fire orange, kept consistent across the whole image.
-  lighting_and_shadow: Smoke-filtered daylight and fire, kept consistent across the whole image.
-  texture_and_material: Stone walls, wooden siege engines and banners, kept consistent across the whole image.
-  camera_and_composition: High angled strategy view, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with commanding strategy, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no UI, kept consistent across the whole image.
-  creative_brief: "Castle siege command gameplay: an original strategy capture of commanding a feudal siege from above, battering rams, ladders, archers and burning towers. Carry it through siege engines, castle walls, archers, high view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: siege engines; castle walls; archers; high view
+  aesthetic: 'Ensemble Studios Age of Empires II (1999) look: isometric sprite RTS of medieval armies, castles, siege towers and rams, bright painted terrain.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as small isometric medieval unit sprites. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Grass green, castle stone and team colors, true to the Age of Empires II 1999 palette.
+  lighting_and_shadow: Bright even RTS light, lit the way Age of Empires II 1999 lights its levels.
+  texture_and_material: Pre-rendered isometric sprites, with the in-engine surface finish of Age of Empires II 1999.
+  camera_and_composition: High isometric RTS view, framed the way Age of Empires II 1999 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with grand strategic siege.
+  rendering_and_quality: Authentic late-nineties RTS screen, matching real Age of Empires II 1999 screenshots.
+  creative_brief: 'Ensemble Studios Age of Empires II (1999) look: isometric sprite RTS of medieval armies, castles, siege towers and rams, bright painted terrain. Carry it through AoE II isometric, siege, castles. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: AoE II isometric; siege; castles
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - siege-command
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

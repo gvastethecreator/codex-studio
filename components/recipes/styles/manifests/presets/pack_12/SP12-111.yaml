@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-111
 packId: pack_12
-name: Summoning Circle Cutscene Capture
+name: Final Fantasy X 2001 - Square Aeon Summon
 styleAnchors:
-  - Summoning Circle Cutscene Capture
+  - Final Fantasy X 2001 - Square Aeon Summon
   - in-engine summoning cutscene
   - glowing summoning circle
-displayName: Summoning Circle Cutscene Capture
+displayName: Final Fantasy X 2001 - Square Aeon Summon
 category: 2. Arcane Temples & Mythic Realms
 domain: in-engine summoning cutscene
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,22 +20,23 @@ tags:
   - summon-cutscene
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Summoning circle cutscene capture: an original in-engine cutscene frame of a magical summoning, glowing circles, swirling particles and a huge creature emerging.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; frame the subject as a summoner or summoned creature in a dramatic cutscene.
-  color_and_tone: Dark surroundings with bright magical circle glow, kept consistent across the whole image.
-  lighting_and_shadow: Glow from the circle lighting faces from below.
-  texture_and_material: Particle swirls, stone floors and flowing robes, kept consistent across the whole image.
-  camera_and_composition: Cinematic low angle toward the emerging creature, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with awe-struck spectacle, kept consistent across the whole image.
-  rendering_and_quality: Polished cutscene look with no subtitles, kept consistent across the whole image.
-  creative_brief: "Summoning circle cutscene capture: an original in-engine cutscene frame of a magical summoning, glowing circles, swirling particles and a huge creature emerging. Carry it through glowing summoning circle, emerging creature, particles, cutscene. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: glowing summoning circle; emerging creature; particles; cutscene
+  aesthetic: 'Square Final Fantasy X (2001) look: PS2 JRPG summoning cutscenes, glowing glyph circles, huge aeon beasts rising in bursts of light, detailed anime-realist characters and pyreflies.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as detailed anime-realist PS2 JRPG characters in ornate summoner robes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Mystic blue, summon gold and pyrefly green, true to the Final Fantasy X 2001 palette.
+  lighting_and_shadow: Bursting summon light and glowing glyphs, lit the way Final Fantasy X 2001 lights its levels.
+  texture_and_material: PS2 CG-cutscene polish with glowing particles, with the in-engine surface finish of Final Fantasy X 2001.
+  camera_and_composition: Low cinematic cutscene view of rising beasts, framed the way Final Fantasy X 2001 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with sacred grand spectacle.
+  rendering_and_quality: Authentic PS2 JRPG cutscene screen, matching real Final Fantasy X 2001 screenshots.
+  creative_brief: 'Square Final Fantasy X (2001) look: PS2 JRPG summoning cutscenes, glowing glyph circles, huge aeon beasts rising in bursts of light, detailed anime-realist characters and pyreflies. Carry it through FFX summon cutscene, glyph circle, rising aeon. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: FFX summon cutscene; glyph circle; rising aeon
 avoidRules:
+  - existing Final Fantasy summons
   - subtitles or readable glyphs
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -44,13 +45,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: subtitles or readable glyphs, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing Final Fantasy summons, subtitles or readable glyphs, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -65,6 +69,7 @@ taxonomy:
     - summon-cutscene
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

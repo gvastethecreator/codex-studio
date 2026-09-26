@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-214
 packId: pack_12
-name: Asylum Walkthrough Gameplay
+name: Condemned 2005 - Monolith Derelict First-Person
 styleAnchors:
-  - Asylum Walkthrough Gameplay
+  - Condemned 2005 - Monolith Derelict First-Person
   - abandoned asylum exploration gameplay
   - abandoned asylum
-displayName: Asylum Walkthrough Gameplay
+displayName: Condemned 2005 - Monolith Derelict First-Person
 category: 11. Psychological & Tactical Gameplay
 domain: abandoned asylum exploration gameplay
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,19 +20,19 @@ tags:
   - asylum-walk
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Asylum walkthrough gameplay: an original first-person capture of exploring an abandoned asylum ward, peeling paint, overturned wheelchairs and daylight through dirty windows.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject exploring an abandoned asylum ward.
-  color_and_tone: Faded mint green, rust and grey daylight, kept consistent across the whole image.
-  lighting_and_shadow: Dirty window light and dark rooms, kept consistent across the whole image.
-  texture_and_material: Peeling paint, tiles and old furniture, kept consistent across the whole image.
-  camera_and_composition: First-person down a long ward, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with melancholy unease, kept consistent across the whole image.
-  rendering_and_quality: Clean capture without gore or UI, kept consistent across the whole image.
-  creative_brief: "Asylum walkthrough gameplay: an original first-person capture of exploring an abandoned asylum ward, peeling paint, overturned wheelchairs and daylight through dirty windows. Carry it through abandoned asylum, peeling paint, long ward, dirty windows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: abandoned asylum; peeling paint; long ward; dirty windows
+  aesthetic: 'Monolith Productions Condemned: Criminal Origins (2005) look: first-person grimy derelict buildings, forensic flashlight, melee pipes and gaunt figures in darkness.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as gaunt figures in a grimy derelict interior. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Grimy green, flashlight white and rust, true to the Condemned 2005 palette.
+  lighting_and_shadow: Flashlight in darkness, lit the way Condemned 2005 lights its levels.
+  texture_and_material: Grimy decay textures, with the in-engine surface finish of Condemned 2005.
+  camera_and_composition: First-person flashlight view, framed the way Condemned 2005 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with grimy lurking dread.
+  rendering_and_quality: Authentic mid-2000s horror screen, matching real Condemned 2005 screenshots.
+  creative_brief: 'Monolith Productions Condemned: Criminal Origins (2005) look: first-person grimy derelict buildings, forensic flashlight, melee pipes and gaunt figures in darkness. Carry it through Condemned grime, flashlight, derelict. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Condemned grime; flashlight; derelict
 avoidRules:
-  - gore
   - existing game characters, logos or levels
   - readable interface text
   - readable text
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: gore, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - asylum-walk
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

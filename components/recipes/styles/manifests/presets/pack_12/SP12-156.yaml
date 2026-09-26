@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-156
 packId: pack_12
-name: Swamp Canoe Tracker Capture
+name: Black Book 2021 - Morteshka Slavic Folk Swamp
 styleAnchors:
-  - Swamp Canoe Tracker Capture
+  - Black Book 2021 - Morteshka Slavic Folk Swamp
   - swamp canoe exploration screenshot
   - canoe bow
-displayName: Swamp Canoe Tracker Capture
+displayName: Black Book 2021 - Morteshka Slavic Folk Swamp
 category: 6. Wilderness Hunts & Harsh Frontiers
 domain: swamp canoe exploration screenshot
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - swamp-canoe
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Swamp canoe tracker capture: an original first-person screenshot paddling a canoe through a misty swamp, cypress knees, fireflies and ripples in dark water.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject from a canoe gliding through a misty swamp.
-  color_and_tone: Murky greens, mist grey and firefly gold, kept consistent across the whole image.
-  lighting_and_shadow: Soft dusk light through mist, kept consistent across the whole image.
-  texture_and_material: Still water, moss, cypress bark and paddle wood.
-  camera_and_composition: First-person with the canoe bow in view, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with quiet uneasy tracking.
-  rendering_and_quality: Clean capture with no HUD, kept consistent across the whole image.
-  creative_brief: "Swamp canoe tracker capture: an original first-person screenshot paddling a canoe through a misty swamp, cypress knees, fireflies and ripples in dark water. Carry it through canoe bow, misty swamp, fireflies, dark water. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: canoe bow; misty swamp; fireflies; dark water
+  aesthetic: 'Morteshka Black Book (2021) look: dark Slavic folklore adventure, misty swamps, wooden villages, witches, demons and hand-painted folk art details.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as nineteenth-century Russian villagers and folk spirits. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Swamp green, lantern amber and folk red, true to the Black Book 2021 palette.
+  lighting_and_shadow: Misty swamp light and lanterns, lit the way Black Book 2021 lights its levels.
+  texture_and_material: Painted folk art details and wet wood, with the in-engine surface finish of Black Book 2021.
+  camera_and_composition: Low canoe view into mist, framed the way Black Book 2021 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with eerie folkloric mystery.
+  rendering_and_quality: Authentic folk adventure screen, matching real Black Book 2021 screenshots.
+  creative_brief: 'Morteshka Black Book (2021) look: dark Slavic folklore adventure, misty swamps, wooden villages, witches, demons and hand-painted folk art details. Carry it through Black Book Slavic folklore, swamp, witches. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Black Book Slavic folklore; swamp; witches
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - swamp-canoe
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

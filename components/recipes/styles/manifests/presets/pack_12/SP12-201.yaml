@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-201
 packId: pack_12
-name: Spirit Hunter Action Gameplay
+name: Pocky & Rocky 1992 - Natsume Shrine Maiden
 styleAnchors:
-  - Spirit Hunter Action Gameplay
+  - Pocky & Rocky 1992 - Natsume Shrine Maiden
   - folklore spirit hunting action gameplay
   - folklore spirits
-displayName: Spirit Hunter Action Gameplay
+displayName: Pocky & Rocky 1992 - Natsume Shrine Maiden
 category: 10. Graphic & Feudal Gameplay
 domain: folklore spirit hunting action gameplay
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,22 +20,23 @@ tags:
   - spirit-hunter
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Spirit hunter action gameplay: an original third-person capture of a hunter fighting folklore spirits in a moonlit shrine, talismans, glowing spirit trails and mist.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject battling folklore spirits in a moonlit shrine.
-  color_and_tone: Moonlit blue, spirit violet and talisman gold, kept consistent across the whole image.
-  lighting_and_shadow: Spirit glow and moonlight, kept consistent across the whole image.
-  texture_and_material: Shrine wood, paper talismans and mist, kept consistent across the whole image.
-  camera_and_composition: Third-person with spirits circling, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with eerie folklore action.
-  rendering_and_quality: Clean capture with no readable talismans, kept consistent across the whole image.
-  creative_brief: "Spirit hunter action gameplay: an original third-person capture of a hunter fighting folklore spirits in a moonlit shrine, talismans, glowing spirit trails and mist. Carry it through folklore spirits, moonlit shrine, talismans, spirit trails. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: folklore spirits; moonlit shrine; talismans; spirit trails
+  aesthetic: 'Natsume Pocky & Rocky (1992) look: top-down SNES shooter with shrine maidens hurling ofuda talismans at yokai, bright 16-bit shrines and spirit swarms.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as bright 16-bit shrine maidens and yokai sprites. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Shrine red, moon blue and foxfire, true to the Pocky & Rocky 1992 palette.
+  lighting_and_shadow: Flat 16-bit light, lit the way Pocky & Rocky 1992 lights its levels.
+  texture_and_material: Crisp 16-bit sprites, with the in-engine surface finish of Pocky & Rocky 1992.
+  camera_and_composition: Top-down shooter view, framed the way Pocky & Rocky 1992 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with spirited yokai chaos.
+  rendering_and_quality: Authentic SNES shooter screen, matching real Pocky & Rocky 1992 screenshots.
+  creative_brief: 'Natsume Pocky & Rocky (1992) look: top-down SNES shooter with shrine maidens hurling ofuda talismans at yokai, bright 16-bit shrines and spirit swarms. Carry it through Pocky & Rocky shrine, talismans, yokai. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Pocky & Rocky shrine; talismans; yokai
 avoidRules:
+  - a shrine maiden with a tanuki partner
   - readable talisman text
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -44,13 +45,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: readable talisman text, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a shrine maiden with a tanuki partner, readable talisman text, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -65,6 +69,7 @@ taxonomy:
     - spirit-hunter
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

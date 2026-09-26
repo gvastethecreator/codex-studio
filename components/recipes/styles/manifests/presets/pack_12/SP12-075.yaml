@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP12-075
 packId: pack_12
-name: Rocket League Cobalt Docks
+name: Rocket League 2015 - Psyonix Car Soccer
 category: 5. Speed, Sport & Competitive Arenas
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -19,46 +19,16 @@ tags:
   - hud-contextual-hud
   - reference-title
 visualDna:
-  aesthetic: 'In-game screenshot look informed by Rocket League gameplay: car-soccer gameplay capture with arena ball, boost trails, goal geometry, team colors, and high-energy chase camera. It never recreates an exact official level, character, logo or marketing art.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable Rocket League-adjacent game
-    screenshot subject: keep clear role silhouette, player/enemy/object function, scale
-    relationship, hitbox-like readability, and interaction affordances without copying source
-    characters or named IP elements.
-  color_and_tone: >-
-    Use a Rocket League-informed palette: cobalt blue, orange team glow, green field, black tire
-    rubber, white ball panels, and neon arena trim. Keep value grouping legible at gameplay
-    distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues
-    rather than decorative wash.
-  lighting_and_shadow: >-
-    Light the image through stadium lights, boost flames, goal explosions, wet arena reflections,
-    and glossy car highlights. Lighting must clarify the playable route, threat, focal subject, or
-    objective and avoid generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from car paint, turf, glass boards, boost pads, ball panels, arena rails, and
-    particle trails. Materials should feel like in-engine game assets captured during play, with
-    enough texture identity to separate props, terrain, characters, hazards, and interactables.
-  camera_and_composition: >-
-    Compose with third-person car camera with ball focus, goal depth, boost route,
-    teammates/opponents, and field geometry readability. The frame should read as a plausible
-    gameplay capture; include UI/HUD only when it matches the source game's visual logic and
-    improves clarity.
-  atmosphere_and_mood: 'Rocket League-derived mood: competitive, sporty, explosive, glossy, and playful; it follows the tone of the requested scene without forcing a fixed mission or story.'
-  rendering_and_quality: >-
-    Finish as a coherent in-engine screenshot style, not concept art: scoreboard, timer, boost
-    meter, ball cam indicator, and team markers are coherent and useful. Maintain heavy-denoise
-    clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish,
-    or random interface clutter.
-  key_features: >-
-    Rocket League gameplay screenshots; car-soccer gameplay capture with arena ball, boost trails,
-    goal geometry, team colors, and high-energy chase camera; cobalt blue, orange team glow, green
-    field, black tire rubber, white ball panels, and neon arena trim; stadium lights, boost flames,
-    goal explosions, wet arena reflections, and glossy car highlights; car paint, turf, glass
-    boards, boost pads, ball panels, arena rails, and particle trails; third-person car camera with
-    ball focus, goal depth, boost route, teammates/opponents, and field geometry readability;
-    competitive, sporty, explosive, glossy, and playful; HUD guidance: scoreboard, timer, boost
-    meter, ball cam indicator, and team markers are coherent and useful
-  creative_brief: "Rocket League Cobalt Docks: in-game screenshot language informed by Rocket League, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'Psyonix Rocket League (2015) look: rocket-powered cars flipping in enclosed stadiums, glowing ball, boost trails, curved walls and bright team colors.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render vehicles as small rocket cars with boost flames. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Team blue and orange with neon arenas, true to the Rocket League 2015 palette.
+  lighting_and_shadow: Stadium lights and boost glow, lit the way Rocket League 2015 lights its levels.
+  texture_and_material: Glossy cars and arena turf, with the in-engine surface finish of Rocket League 2015.
+  camera_and_composition: Chase camera behind the car, framed the way Rocket League 2015 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with boosted competitive fun.
+  rendering_and_quality: Authentic car-soccer screen, matching real Rocket League 2015 screenshots.
+  key_features: Rocket League stadium; boost trails; giant ball
+  creative_brief: 'Psyonix Rocket League (2015) look: rocket-powered cars flipping in enclosed stadiums, glowing ball, boost trails, curved walls and bright team colors. Carry it through Rocket League stadium, boost trails, giant ball. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - watermark
   - logo
@@ -86,18 +56,12 @@ avoidRules:
   - copied box art composition
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-075.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Rocket League
   referenceMode: capture-derived gameplay screenshot style
   hudGuidance: scoreboard, timer, boost meter, ball cam indicator, and team markers are coherent and useful
@@ -124,7 +88,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-displayName: Rocket League Cobalt Docks
+displayName: Rocket League 2015 - Psyonix Car Soccer
 styleAnchors:
-  - Rocket League gameplay screenshots
+  - Rocket League 2015 - Psyonix Car Soccer
   - Rocket League Cobalt Docks

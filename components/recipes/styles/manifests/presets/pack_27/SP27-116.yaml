@@ -26,10 +26,10 @@ visualDna:
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject in a first-person view of a decaying art deco underwater city. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Deco gold, deep ocean teal and flickering neon.
   lighting_and_shadow: Ocean light through glass and flickering deco neon.
-  texture_and_material: Wet marble, brass, leaking water and grime, with the surface finish of BioShock 2007.
-  camera_and_composition: First-person view with visible hands, framed the way BioShock 2007 composes its shots and pages.
+  texture_and_material: Wet marble, brass, leaking water and grime, with the in-engine surface finish of BioShock 2007.
+  camera_and_composition: First-person view with visible hands, framed the way BioShock 2007 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with decadent drowned menace.
-  rendering_and_quality: Authentic late-2000s first-person screen, in the recognizable hand of BioShock 2007.
+  rendering_and_quality: Authentic late-2000s first-person screen, matching real BioShock 2007 screenshots.
   creative_brief: 'Irrational Games BioShock (2007) look: decaying art deco underwater city, leaking glass tunnels, neon signs, ocean light through windows, first-person hands and retro-futurist menace. Carry it through BioShock deco, undersea city, leaking glass, neon. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: BioShock deco; undersea city; leaking glass; neon
 avoidRules:
@@ -47,13 +47,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: a diving-suit giant with a drill, little girls with glowing eyes, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a diving-suit giant with a drill, little girls with glowing eyes, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

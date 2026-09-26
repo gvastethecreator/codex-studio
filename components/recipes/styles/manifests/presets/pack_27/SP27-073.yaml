@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Konami Gradius (1985) look: horizontal-scrolling space shooter, volcanoes and Moai heads, starfield parallax, tiny spaceship sprites and power-up capsules.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as tiny spaceship sprites in a scrolling starfield with strange terrain. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Starfield black with bright sprite colors and orange volcanoes.
-  lighting_and_shadow: Flat arcade light and bright bullet sprites, lit the way Gradius 1985 lights its scenes.
+  lighting_and_shadow: Flat arcade light and bright bullet sprites, lit the way Gradius 1985 lights its levels.
   texture_and_material: Visible chunky pixels on a curved CRT with scanlines, slight bloom and phosphor glow.
-  camera_and_composition: Horizontal scrolling shooter view, framed the way Gradius 1985 composes its shots and pages.
+  camera_and_composition: Horizontal scrolling shooter view, framed the way Gradius 1985 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with intense scrolling battle.
-  rendering_and_quality: Authentic mid-eighties arcade shooter screen, in the recognizable hand of Gradius 1985.
+  rendering_and_quality: Authentic mid-eighties arcade shooter screen, matching real Gradius 1985 screenshots.
   creative_brief: 'Konami Gradius (1985) look: horizontal-scrolling space shooter, volcanoes and Moai heads, starfield parallax, tiny spaceship sprites and power-up capsules. Carry it through Gradius parallax, volcanoes, tiny ships, power-ups. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Gradius parallax; volcanoes; tiny ships; power-ups
 avoidRules:
@@ -47,13 +47,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: a Vic Viper ship, a big core boss, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a Vic Viper ship, a big core boss, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

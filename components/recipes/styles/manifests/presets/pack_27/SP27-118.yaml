@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Gearbox Borderlands (2009) look: thick black ink outlines and hand-drawn hatching on 3D, cel-shaded wasteland, rusty junk towns, punk bandits and dusty sun-bleached colors.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject with thick ink outlines and hand-drawn hatching over cel-shaded 3D in a dusty wasteland. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Sun-bleached tan, rust orange and sky blue, true to the Borderlands 2009 palette.
-  lighting_and_shadow: Hard desert sun with hatched shadows, lit the way Borderlands 2009 lights its scenes.
-  texture_and_material: Ink outlines and hand-drawn hatching textures, with the surface finish of Borderlands 2009.
+  lighting_and_shadow: Hard desert sun with hatched shadows, lit the way Borderlands 2009 lights its levels.
+  texture_and_material: Ink outlines and hand-drawn hatching textures, with the in-engine surface finish of Borderlands 2009.
   camera_and_composition: First-person view with a gun or dusty vistas.
   atmosphere_and_mood: Keep the requested mood with rowdy wasteland absurdity.
-  rendering_and_quality: Authentic late-2000s ink-shaded shooter screen, in the recognizable hand of Borderlands 2009.
+  rendering_and_quality: Authentic late-2000s ink-shaded shooter screen, matching real Borderlands 2009 screenshots.
   creative_brief: 'Gearbox Borderlands (2009) look: thick black ink outlines and hand-drawn hatching on 3D, cel-shaded wasteland, rusty junk towns, punk bandits and dusty sun-bleached colors. Carry it through Borderlands ink hatching, wasteland, junk towns. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Borderlands ink hatching; wasteland; junk towns
 avoidRules:
@@ -47,13 +47,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: a one-wheeled robot, masked psycho bandits, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a one-wheeled robot, masked psycho bandits, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-115
 packId: pack_12
-name: Cloud Monastery Glide Capture
+name: Sky Children of the Light 2019 - thatgamecompany Cape Glide
 styleAnchors:
-  - Cloud Monastery Glide Capture
+  - Sky Children of the Light 2019 - thatgamecompany Cape Glide
   - mountain monastery gliding screenshot
   - gliding
-displayName: Cloud Monastery Glide Capture
+displayName: Sky Children of the Light 2019 - thatgamecompany Cape Glide
 category: 2. Arcane Temples & Mythic Realms
 domain: mountain monastery gliding screenshot
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - cloud-glide
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Cloud monastery glide capture: an original third-person gliding screenshot over mountain monasteries in a sea of clouds, prayer flags, bells and wind currents.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject gliding on the wind above cloud-wrapped monasteries.
-  color_and_tone: Soft whites, sky blue and saffron prayer flags.
-  lighting_and_shadow: Golden morning light over the cloud sea, kept consistent across the whole image.
-  texture_and_material: Cloth wings, stone temples and swirling mist, kept consistent across the whole image.
-  camera_and_composition: Wide chase view over the cloud sea, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with serene freedom, kept consistent across the whole image.
-  rendering_and_quality: Clean airy real-time capture, kept consistent across the whole image.
-  creative_brief: "Cloud monastery glide capture: an original third-person gliding screenshot over mountain monasteries in a sea of clouds, prayer flags, bells and wind currents. Carry it through gliding, sea of clouds, mountain monasteries, prayer flags. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: gliding; sea of clouds; mountain monasteries; prayer flags
+  aesthetic: 'thatgamecompany Sky: Children of the Light (2019) look: soft glowing cloud kingdoms, children in capes gliding on wind, candle light, luminous spirits and floating temples.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as small soft figures in glowing capes gliding on the wind. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Soft peach, cloud white, dusk lilac and candle gold.
+  lighting_and_shadow: Soft glowing haze with warm candle light, lit the way Sky Children of the Light 2019 lights its levels.
+  texture_and_material: Soft stylized shapes with glow and haze, with the in-engine surface finish of Sky Children of the Light 2019.
+  camera_and_composition: Wide third-person view over clouds, framed the way Sky Children of the Light 2019 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with gentle luminous wonder.
+  rendering_and_quality: Authentic soft stylized mobile screen, matching real Sky Children of the Light 2019 screenshots.
+  creative_brief: 'thatgamecompany Sky: Children of the Light (2019) look: soft glowing cloud kingdoms, children in capes gliding on wind, candle light, luminous spirits and floating temples. Carry it through Sky capes, cloud kingdoms, candle glow. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Sky capes; cloud kingdoms; candle glow
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - cloud-glide
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

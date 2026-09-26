@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-154
 packId: pack_12
-name: Diving Bell Descent Capture
+name: Silt 2022 - Spiral Circus Monochrome Abyss
 styleAnchors:
-  - Diving Bell Descent Capture
+  - Silt 2022 - Spiral Circus Monochrome Abyss
   - deep-sea diving bell screenshot
   - brass diving bell
-displayName: Diving Bell Descent Capture
+displayName: Silt 2022 - Spiral Circus Monochrome Abyss
 category: 6. Wilderness Hunts & Harsh Frontiers
 domain: deep-sea diving bell screenshot
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - diving-bell
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Diving bell descent capture: an original screenshot of a brass diving bell lowered into black ocean depths, its lamps revealing strange creatures and ruins.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject inside or around a brass diving bell in the deep sea.
-  color_and_tone: Black depths, brass gold and bioluminescent blue, kept consistent across the whole image.
-  lighting_and_shadow: Bell lamps cutting into darkness, kept consistent across the whole image.
-  texture_and_material: Riveted brass, round portholes and particles, kept consistent across the whole image.
-  camera_and_composition: Bell in the center with darkness around, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with deep uneasy wonder.
-  rendering_and_quality: Clean capture with no HUD, kept consistent across the whole image.
-  creative_brief: "Diving bell descent capture: an original screenshot of a brass diving bell lowered into black ocean depths, its lamps revealing strange creatures and ruins. Carry it through brass diving bell, deep sea, lamp beams, strange creatures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: brass diving bell; deep sea; lamp beams; strange creatures
+  aesthetic: 'Spiral Circus Silt (2022) look: monochrome underwater puzzle adventure drawn in Mr Mead ink art, surreal abyssal creatures, diving suits and sunken ruins.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as small monochrome divers in heavy suits. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Monochrome black, white and grey, true to the Silt 2022 palette.
+  lighting_and_shadow: Ink shafts of light in darkness, lit the way Silt 2022 lights its levels.
+  texture_and_material: Dense ink drawing and grain, with the in-engine surface finish of Silt 2022.
+  camera_and_composition: Side-view abyssal view, framed the way Silt 2022 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with surreal abyssal dread.
+  rendering_and_quality: Authentic monochrome ink adventure screen, matching real Silt 2022 screenshots.
+  creative_brief: 'Spiral Circus Silt (2022) look: monochrome underwater puzzle adventure drawn in Mr Mead ink art, surreal abyssal creatures, diving suits and sunken ruins. Carry it through Silt monochrome ink, abyss, diving suit. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Silt monochrome ink; abyss; diving suit
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - diving-bell
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

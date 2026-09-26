@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP12-047
 packId: pack_12
-name: Quake Arena Obsidian Trial
+name: Quake III Arena 1999 - id Software Gothic Arena
 styleAnchors:
-  - Quake III Arena gameplay screenshots
+  - Quake III Arena 1999 - id Software Gothic Arena
   - Quake Arena Obsidian Trial
-displayName: Quake Arena Obsidian Trial
+displayName: Quake III Arena 1999 - id Software Gothic Arena
 category: 5. Speed, Sport & Competitive Arenas
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,47 +23,16 @@ tags:
   - hud-contextual-hud
   - reference-title
 visualDna:
-  aesthetic: 'In-game screenshot look informed by Quake III Arena gameplay: retro arena-FPS capture with gothic sci-fi arenas, rocket jumps, saturated pickups, sharp corridors, and old-school HUD symmetry. It never recreates an exact official level, character, logo or marketing art.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable Quake III Arena-adjacent game
-    screenshot subject: keep clear role silhouette, player/enemy/object function, scale
-    relationship, hitbox-like readability, and interaction affordances without copying source
-    characters or named IP elements.
-  color_and_tone: >-
-    Use a Quake III Arena-informed palette: lava orange, gunmetal grey, blood red, toxic green
-    pickups, electric blue armor, and black stone. Keep value grouping legible at gameplay distance,
-    with color accents behaving like route, danger, pickup, team, magic, or objective cues rather
-    than decorative wash.
-  lighting_and_shadow: >-
-    Light the image through hard colored arena lights, lava glow, weapon flashes, pickup glow, and
-    simple baked shadow contrast. Lighting must clarify the playable route, threat, focal subject,
-    or objective and avoid generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from chunky late-90s 3D geometry, gothic metal, skull motifs without logos, jump
-    pads, ammo boxes, and low-detail texture tiling. Materials should feel like in-engine game
-    assets captured during play, with enough texture identity to separate props, terrain,
-    characters, hazards, and interactables.
-  camera_and_composition: >-
-    Compose with first-person arena view with centered weapon, opponent sightlines, pickup route
-    loops, vertical jumps, and speed lanes. The frame should read as a plausible gameplay capture;
-    include UI/HUD only when it matches the source game's visual logic and improves clarity.
-  atmosphere_and_mood: 'Quake III Arena-derived mood: aggressive, competitive, old-school, brutal, and fast; it follows the tone of the requested scene without forcing a fixed mission or story.'
-  rendering_and_quality: >-
-    Finish as a coherent in-engine screenshot style, not concept art: classic FPS HUD is welcome:
-    health/armor, ammo, weapon icon, crosshair, and score timer can appear. Maintain heavy-denoise
-    clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish,
-    or random interface clutter.
-  key_features: >-
-    Quake III Arena gameplay screenshots; retro arena-FPS capture with gothic sci-fi arenas, rocket
-    jumps, saturated pickups, sharp corridors, and old-school HUD symmetry; lava orange, gunmetal
-    grey, blood red, toxic green pickups, electric blue armor, and black stone; hard colored arena
-    lights, lava glow, weapon flashes, pickup glow, and simple baked shadow contrast; chunky
-    late-90s 3D geometry, gothic metal, skull motifs without logos, jump pads, ammo boxes, and
-    low-detail texture tiling; first-person arena view with centered weapon, opponent sightlines,
-    pickup route loops, vertical jumps, and speed lanes; aggressive, competitive, old-school,
-    brutal, and fast; HUD guidance: classic FPS HUD is welcome: health/armor, ammo, weapon icon,
-    crosshair, and score timer can appear
-  creative_brief: "Quake Arena Obsidian Trial: in-game screenshot language informed by Quake III Arena, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'id Software Quake III Arena (1999) look: first-person arena shooter with gothic sci-fi architecture, jump pads, lava pits, floating items and low-poly armored gladiators.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as low-poly armored gladiators seen from first person. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Gothic stone brown, lava orange and teal energy.
+  lighting_and_shadow: Colored lightmaps and glowing lava, lit the way Quake III Arena 1999 lights its levels.
+  texture_and_material: Late-nineties textures of stone and metal, with the in-engine surface finish of Quake III Arena 1999.
+  camera_and_composition: First-person view with weapon, framed the way Quake III Arena 1999 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with frantic arena bloodsport.
+  rendering_and_quality: Authentic late-nineties arena shooter screen, matching real Quake III Arena 1999 screenshots.
+  key_features: Quake III gothic arena; jump pads; lava
+  creative_brief: 'id Software Quake III Arena (1999) look: first-person arena shooter with gothic sci-fi architecture, jump pads, lava pits, floating items and low-poly armored gladiators. Carry it through Quake III gothic arena, jump pads, lava. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - watermark
   - logo
@@ -91,23 +60,15 @@ avoidRules:
   - copied box art composition
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-047.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Quake III Arena
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    classic FPS HUD is welcome: health/armor, ammo, weapon icon, crosshair, and score timer can
-    appear
+  hudGuidance: 'classic FPS HUD is welcome: health/armor, ammo, weapon icon, crosshair, and score timer can appear'
   renderFamily: retro-pixel-low-poly
   cameraFamily: first-person
   hudMode: contextual-hud

@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP12-050
 packId: pack_12
-name: Signalis Polar Signal Outbreak
+name: Signalis 2022 - rose-engine Low-Poly Polar Horror
 styleAnchors:
-  - Signalis gameplay screenshots
+  - Signalis 2022 - rose-engine Low-Poly Polar Horror
   - Signalis Polar Signal Outbreak
-displayName: Signalis Polar Signal Outbreak
+displayName: Signalis 2022 - rose-engine Low-Poly Polar Horror
 category: 7. Heists, Horror & Underworld Runs
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,49 +23,18 @@ tags:
   - hud-contextual-hud
   - reference-title
 visualDna:
-  aesthetic: 'In-game screenshot look informed by Signalis gameplay: retro survival-horror capture with fixed/overhead rooms, low-poly industrial interiors, icy facilities, and analog interface dread. It never recreates an exact official level, character, logo or marketing art.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable Signalis-adjacent game screenshot
-    subject: keep clear role silhouette, player/enemy/object function, scale relationship,
-    hitbox-like readability, and interaction affordances without copying source characters or named
-    IP elements.
-  color_and_tone: >-
-    Use a Signalis-informed palette: black, off-white, hospital green, warning red, cold blue, and
-    rust-brown industrial stains. Keep value grouping legible at gameplay distance, with color
-    accents behaving like route, danger, pickup, team, magic, or objective cues rather than
-    decorative wash.
-  lighting_and_shadow: >-
-    Light the image through hard flashlight pools, red alarm panels, CRT glow, surgical fluorescent
-    strips, and deep fixed-camera darkness. Lighting must clarify the playable route, threat, focal
-    subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from PS1-like low-poly props, metal doors, tiled floors, paper notes without
-    readable text, snow grime, and analog machinery. Materials should feel like in-engine game
-    assets captured during play, with enough texture identity to separate props, terrain,
-    characters, hazards, and interactables.
-  camera_and_composition: >-
-    Compose with fixed-camera or top-down survival room framing with inventory pressure, locked
-    doors, enemy placement, and puzzle-object clarity. The frame should read as a plausible gameplay
-    capture; include UI/HUD only when it matches the source game's visual logic and improves
-    clarity.
-  atmosphere_and_mood: 'Signalis-derived mood: lonely, clinical, uncanny, cold, and oppressive; it follows the tone of the requested scene without forcing a fixed mission or story.'
-  rendering_and_quality: >-
-    Finish as a coherent in-engine screenshot style, not concept art: retro inventory/status panels,
-    health warning, and small interaction prompts can appear if they feel survival-horror coherent.
-    Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake
-    logos, stock-photo polish, or random interface clutter.
-  key_features: >-
-    Signalis gameplay screenshots; retro survival-horror capture with fixed/overhead rooms, low-poly
-    industrial interiors, icy facilities, and analog interface dread; black, off-white, hospital
-    green, warning red, cold blue, and rust-brown industrial stains; hard flashlight pools, red
-    alarm panels, CRT glow, surgical fluorescent strips, and deep fixed-camera darkness; PS1-like
-    low-poly props, metal doors, tiled floors, paper notes without readable text, snow grime, and
-    analog machinery; fixed-camera or top-down survival room framing with inventory pressure, locked
-    doors, enemy placement, and puzzle-object clarity; lonely, clinical, uncanny, cold, and
-    oppressive; HUD guidance: retro inventory/status panels, health warning, and small interaction
-    prompts can appear if they feel survival-horror coherent
-  creative_brief: "Signalis Polar Signal Outbreak: in-game screenshot language informed by Signalis, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'rose-engine Signalis (2022) look: PS1-style low-poly survival horror on a polar facility, anime-inspired android women, red emergency light, fixed overhead cameras and cosmic dread.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as low-poly anime android officers in uniforms. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Emergency red, cold white and black, true to the Signalis 2022 palette.
+  lighting_and_shadow: Harsh red emergency light, lit the way Signalis 2022 lights its levels.
+  texture_and_material: Low-poly PS1 textures with dithering, with the in-engine surface finish of Signalis 2022.
+  camera_and_composition: Fixed overhead survival horror camera, framed the way Signalis 2022 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with cold cosmic dread.
+  rendering_and_quality: Authentic retro survival horror screen, matching real Signalis 2022 screenshots.
+  key_features: Signalis low-poly; red emergency; overhead camera
+  creative_brief: 'rose-engine Signalis (2022) look: PS1-style low-poly survival horror on a polar facility, anime-inspired android women, red emergency light, fixed overhead cameras and cosmic dread. Carry it through Signalis low-poly, red emergency, overhead camera. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
+  - a blue-haired android officer with a scar
   - watermark
   - logo
   - copyright mark
@@ -92,23 +61,19 @@ avoidRules:
   - copied box art composition
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
+  - text
+  - readable labels
+  - franchise likeness
+  - real person likeness
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-050.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: a blue-haired android officer with a scar, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts
   referenceGame: Signalis
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    retro inventory/status panels, health warning, and small interaction prompts can appear if they
-    feel survival-horror coherent
+  hudGuidance: retro inventory/status panels, health warning, and small interaction prompts can appear if they feel survival-horror coherent
   renderFamily: retro-pixel-low-poly
   cameraFamily: isometric-top-down
   hudMode: contextual-hud

@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-155
 packId: pack_12
-name: Volcanic Crater Expedition Capture
+name: Uncharted 4 2016 - Naughty Dog Expedition
 styleAnchors:
-  - Volcanic Crater Expedition Capture
+  - Uncharted 4 2016 - Naughty Dog Expedition
   - volcano exploration screenshot
   - volcanic crater
-displayName: Volcanic Crater Expedition Capture
+displayName: Uncharted 4 2016 - Naughty Dog Expedition
 category: 6. Wilderness Hunts & Harsh Frontiers
 domain: volcano exploration screenshot
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,22 @@ tags:
   - crater-expedition
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Volcanic crater expedition capture: an original third-person screenshot of explorers descending into an active crater, lava lakes, ash clouds and heat shimmer.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject on an expedition into an active volcanic crater.
-  color_and_tone: Black rock, glowing orange lava and ash grey.
-  lighting_and_shadow: Lava glow from below and ash haze, kept consistent across the whole image.
-  texture_and_material: Cooled lava crust, sulfur and heat shimmer, kept consistent across the whole image.
-  camera_and_composition: Wide view down into the crater, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with scorching peril, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no HUD, kept consistent across the whole image.
-  creative_brief: "Volcanic crater expedition capture: an original third-person screenshot of explorers descending into an active crater, lava lakes, ash clouds and heat shimmer. Carry it through volcanic crater, lava lake, ash clouds, explorers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: volcanic crater; lava lake; ash clouds; explorers
+  aesthetic: 'Naughty Dog Uncharted 4: A Thief''s End (2016) look: cinematic third-person adventure, rope bridges, cliffs, lush detail, dramatic set pieces and warm realistic light.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as rugged realistic explorers in field gear. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Lava orange, rock grey and jungle green, true to the Uncharted 4 2016 palette.
+  lighting_and_shadow: Cinematic warm light and lava glow, lit the way Uncharted 4 2016 lights its levels.
+  texture_and_material: Realistic rock, rope and gear, with the in-engine surface finish of Uncharted 4 2016.
+  camera_and_composition: Third-person cinematic view, framed the way Uncharted 4 2016 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with daring adventure thrill.
+  rendering_and_quality: Authentic cinematic adventure screen, matching real Uncharted 4 2016 screenshots.
+  creative_brief: 'Naughty Dog Uncharted 4: A Thief''s End (2016) look: cinematic third-person adventure, rope bridges, cliffs, lush detail, dramatic set pieces and warm realistic light. Carry it through Uncharted 4 set pieces, rope bridges, cinematic. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Uncharted 4 set pieces; rope bridges; cinematic
 avoidRules:
+  - a treasure hunter in a henley shirt with a holster
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a treasure hunter in a henley shirt with a holster, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +68,7 @@ taxonomy:
     - crater-expedition
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

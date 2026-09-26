@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP12-076
 packId: pack_12
-name: Northgard Aurora Bastion Siege
+name: Northgard 2018 - Shiro Norse Isometric Clans
 category: 4. Sieges, Warfronts & Last Stands
-version: 1
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -19,47 +19,16 @@ tags:
   - hud-contextual-hud
   - reference-title
 visualDna:
-  aesthetic: 'In-game screenshot look informed by Northgard gameplay: isometric Viking strategy capture with snowy settlements, clan units, resource buildings, aurora skies, and territorial control readability. It never recreates an exact official level, character, logo or marketing art.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable Northgard-adjacent game screenshot
-    subject: keep clear role silhouette, player/enemy/object function, scale relationship,
-    hitbox-like readability, and interaction affordances without copying source characters or named
-    IP elements.
-  color_and_tone: >-
-    Use a Northgard-informed palette: snow blue, timber brown, aurora green, hearth orange, iron
-    grey, and muted clan-color banners. Keep value grouping legible at gameplay distance, with color
-    accents behaving like route, danger, pickup, team, magic, or objective cues rather than
-    decorative wash.
-  lighting_and_shadow: >-
-    Light the image through cold winter daylight, hearth pools, northern lights, torch edges, and
-    soft snow bounce. Lighting must clarify the playable route, threat, focal subject, or objective
-    and avoid generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from wood huts, palisades, snowy rocks, fur cloaks, axes, fields, animal tracks,
-    and compact strategy props. Materials should feel like in-engine game assets captured during
-    play, with enough texture identity to separate props, terrain, characters, hazards, and
-    interactables.
-  camera_and_composition: >-
-    Compose with isometric management/combat view with territories, unit clusters, resource
-    buildings, and defensive choke points. The frame should read as a plausible gameplay capture;
-    include UI/HUD only when it matches the source game's visual logic and improves clarity.
-  atmosphere_and_mood: 'Northgard-derived mood: settler-strategy, hardy, Nordic, cold, and quietly tense; it follows the tone of the requested scene without forcing a fixed mission or story.'
-  rendering_and_quality: >-
-    Finish as a coherent in-engine screenshot style, not concept art: resource bar, clan panels,
-    minimap, unit selection, and alert icons can appear as coherent RTS UI. Maintain heavy-denoise
-    clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish,
-    or random interface clutter.
-  key_features: >-
-    Northgard gameplay screenshots; isometric Viking strategy capture with snowy settlements, clan
-    units, resource buildings, aurora skies, and territorial control readability; snow blue, timber
-    brown, aurora green, hearth orange, iron grey, and muted clan-color banners; cold winter
-    daylight, hearth pools, northern lights, torch edges, and soft snow bounce; wood huts,
-    palisades, snowy rocks, fur cloaks, axes, fields, animal tracks, and compact strategy props;
-    isometric management/combat view with territories, unit clusters, resource buildings, and
-    defensive choke points; settler-strategy, hardy, Nordic, cold, and quietly tense; HUD guidance:
-    resource bar, clan panels, minimap, unit selection, and alert icons can appear as coherent RTS
-    UI
-  creative_brief: "Northgard Aurora Bastion Siege: in-game screenshot language informed by Northgard, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'Shiro Games Northgard (2018) look: stylized isometric Norse settlement strategy, cartoonish chunky villagers, snowy tiles, aurora skies and mythical creatures.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as chunky stylized Norse villagers and warriors. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Snow white, aurora green and warm hearth orange.
+  lighting_and_shadow: Soft winter light and aurora glow, lit the way Northgard 2018 lights its levels.
+  texture_and_material: Stylized painted low-poly surfaces, with the in-engine surface finish of Northgard 2018.
+  camera_and_composition: Isometric strategy view, framed the way Northgard 2018 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with hardy clan survival.
+  rendering_and_quality: Authentic stylized strategy screen, matching real Northgard 2018 screenshots.
+  key_features: Northgard isometric; Norse clans; aurora
+  creative_brief: 'Shiro Games Northgard (2018) look: stylized isometric Norse settlement strategy, cartoonish chunky villagers, snowy tiles, aurora skies and mythical creatures. Carry it through Northgard isometric, Norse clans, aurora. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - watermark
   - logo
@@ -87,23 +56,15 @@ avoidRules:
   - copied box art composition
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-076.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Northgard
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    resource bar, clan panels, minimap, unit selection, and alert icons can appear as coherent RTS
-    UI
+  hudGuidance: resource bar, clan panels, minimap, unit selection, and alert icons can appear as coherent RTS UI
   renderFamily: strategy-tactics
   cameraFamily: isometric-top-down
   hudMode: contextual-hud
@@ -127,7 +88,7 @@ taxonomy:
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-displayName: Northgard Aurora Bastion Siege
+displayName: Northgard 2018 - Shiro Norse Isometric Clans
 styleAnchors:
-  - Northgard gameplay screenshots
+  - Northgard 2018 - Shiro Norse Isometric Clans
   - Northgard Aurora Bastion Siege

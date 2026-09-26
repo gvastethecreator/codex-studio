@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-203
 packId: pack_12
-name: Directional Swordplay Duel Gameplay
+name: Kingdom Come Deliverance 2018 - Warhorse Realistic Medieval
 styleAnchors:
-  - Directional Swordplay Duel Gameplay
+  - Kingdom Come Deliverance 2018 - Warhorse Realistic Medieval
   - stance-based sword duel gameplay
   - heavy armor duel
-displayName: Directional Swordplay Duel Gameplay
+displayName: Kingdom Come Deliverance 2018 - Warhorse Realistic Medieval
 category: 10. Graphic & Feudal Gameplay
 domain: stance-based sword duel gameplay
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,22 +20,22 @@ tags:
   - stance-duel
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Directional swordplay duel gameplay: an original third-person capture of a tense sword duel where fighters shift stances high, left and right in heavy armor.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject in a tense heavy-armor sword duel of shifting stances.
-  color_and_tone: Steel grey, torchlight and faction colors, kept consistent across the whole image.
-  lighting_and_shadow: Torchlit courtyard with sparks, kept consistent across the whole image.
-  texture_and_material: Plate armor, chain mail and stone, kept consistent across the whole image.
-  camera_and_composition: Over-the-shoulder facing the opponent, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with measured tension, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no stance UI, kept consistent across the whole image.
-  creative_brief: "Directional swordplay duel gameplay: an original third-person capture of a tense sword duel where fighters shift stances high, left and right in heavy armor. Carry it through heavy armor duel, shifting stances, sparks, courtyard. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: heavy armor duel; shifting stances; sparks; courtyard
+  aesthetic: 'Warhorse Studios Kingdom Come: Deliverance (2018) look: realistic fifteenth-century Bohemia, historically accurate armor, torchlit courtyards and first-person swordplay.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as historically accurate medieval fighters. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Torch amber, steel and earth, true to the Kingdom Come Deliverance 2018 palette.
+  lighting_and_shadow: Torchlit night, lit the way Kingdom Come Deliverance 2018 lights its levels.
+  texture_and_material: Realistic steel and cloth, with the in-engine surface finish of Kingdom Come Deliverance 2018.
+  camera_and_composition: First-person duel view, framed the way Kingdom Come Deliverance 2018 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with grounded tense duel.
+  rendering_and_quality: Authentic realistic medieval screen, matching real Kingdom Come Deliverance 2018 screenshots.
+  creative_brief: 'Warhorse Studios Kingdom Come: Deliverance (2018) look: realistic fifteenth-century Bohemia, historically accurate armor, torchlit courtyards and first-person swordplay. Carry it through Kingdom Come realism, swordplay, Bohemia. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Kingdom Come realism; swordplay; Bohemia
 avoidRules:
   - stance indicators
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -44,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: stance indicators, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: stance indicators, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -65,6 +68,7 @@ taxonomy:
     - stance-duel
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

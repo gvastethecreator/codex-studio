@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Ubisoft Prince of Persia: The Sands of Time (2003) look: golden bloom haze, Persian palaces, acrobatic wall-running, sand swirling particles, silk curtains and dreamy soft focus.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject mid-acrobatics in golden hazy Persian palaces with drifting sand particles. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Golden sand, palace turquoise and dusk amber, true to the Prince of Persia Sands of Time 2003 palette.
-  lighting_and_shadow: Golden bloom haze and dreamy soft focus, lit the way Prince of Persia Sands of Time 2003 lights its scenes.
-  texture_and_material: Soft early-2000s textures with sand particles, with the surface finish of Prince of Persia Sands of Time 2003.
-  camera_and_composition: Third-person acrobatic camera along palace walls, framed the way Prince of Persia Sands of Time 2003 composes its shots and pages.
+  lighting_and_shadow: Golden bloom haze and dreamy soft focus, lit the way Prince of Persia Sands of Time 2003 lights its levels.
+  texture_and_material: Soft early-2000s textures with sand particles, with the in-engine surface finish of Prince of Persia Sands of Time 2003.
+  camera_and_composition: Third-person acrobatic camera along palace walls, framed the way Prince of Persia Sands of Time 2003 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with dreamy acrobatic legend.
-  rendering_and_quality: Authentic PS2 bloom action screen, in the recognizable hand of Prince of Persia Sands of Time 2003.
+  rendering_and_quality: Authentic PS2 bloom action screen, matching real Prince of Persia Sands of Time 2003 screenshots.
   creative_brief: 'Ubisoft Prince of Persia: The Sands of Time (2003) look: golden bloom haze, Persian palaces, acrobatic wall-running, sand swirling particles, silk curtains and dreamy soft focus. Carry it through Sands of Time golden haze, wall-running, palace, sand particles. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Sands of Time golden haze; wall-running; palace; sand particles
 avoidRules:
@@ -46,13 +46,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: a shirtless prince with a dagger of time, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a shirtless prince with a dagger of time, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-208
 packId: pack_12
-name: Otherworld Rust Transition Gameplay
+name: Silent Hill Homecoming 2008 - Double Helix Peeling Otherworld
 styleAnchors:
-  - Otherworld Rust Transition Gameplay
+  - Silent Hill Homecoming 2008 - Double Helix Peeling Otherworld
   - reality-shift horror gameplay
   - peeling reality
-displayName: Otherworld Rust Transition Gameplay
+displayName: Silent Hill Homecoming 2008 - Double Helix Peeling Otherworld
 category: 11. Psychological & Tactical Gameplay
 domain: reality-shift horror gameplay
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,19 +20,19 @@ tags:
   - rust-otherworld
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Otherworld rust transition gameplay: an original capture of a room peeling away into a rusted otherworld of grates, chains and sirens mid-transformation.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject as the world around them peels into a rusted nightmare version.
-  color_and_tone: Rust red, black grates and siren glow, kept consistent across the whole image.
-  lighting_and_shadow: Flickering light and deep dark grating, kept consistent across the whole image.
-  texture_and_material: Peeling walls, rusted metal and chain-link, kept consistent across the whole image.
-  camera_and_composition: Third-person as the room transforms, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with dreadful transformation, kept consistent across the whole image.
-  rendering_and_quality: Clean capture without gore or UI, kept consistent across the whole image.
-  creative_brief: "Otherworld rust transition gameplay: an original capture of a room peeling away into a rusted otherworld of grates, chains and sirens mid-transformation. Carry it through peeling reality, rust grates, sirens, transformation. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: peeling reality; rust grates; sirens; transformation
+  aesthetic: 'Double Helix Silent Hill: Homecoming (2008) look: walls peeling away like burning paper into a rusted otherworld of grates and chain link, sirens and industrial rot.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as survivors caught between normal rooms and rust. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Rust red, ash and dirty metal, true to the Silent Hill Homecoming 2008 palette.
+  lighting_and_shadow: Siren-lit darkness, lit the way Silent Hill Homecoming 2008 lights its levels.
+  texture_and_material: Peeling paper, rust and grates, with the in-engine surface finish of Silent Hill Homecoming 2008.
+  camera_and_composition: Third-person transition view, framed the way Silent Hill Homecoming 2008 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with screaming nightmare shift.
+  rendering_and_quality: Authentic horror transition screen, matching real Silent Hill Homecoming 2008 screenshots.
+  creative_brief: 'Double Helix Silent Hill: Homecoming (2008) look: walls peeling away like burning paper into a rusted otherworld of grates and chain link, sirens and industrial rot. Carry it through Homecoming peeling walls, rust otherworld, sirens. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Homecoming peeling walls; rust otherworld; sirens
 avoidRules:
-  - gore
   - existing game characters, logos or levels
   - readable interface text
   - readable text
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: gore, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - rust-otherworld
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

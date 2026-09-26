@@ -26,11 +26,11 @@ visualDna:
   aesthetic: 'Eighties painted video game box art look: dramatic airbrushed fantasy and sci-fi paintings wildly more detailed than the game, heroic poses, explosions and bold era packaging.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; paint the subject as an overly dramatic airbrushed heroic scene for a game box. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Airbrushed sunset orange, electric blue and chrome, true to the Eighties Painted Game Box Art palette.
-  lighting_and_shadow: Dramatic backlit airbrush glow, lit the way Eighties Painted Game Box Art lights its scenes.
-  texture_and_material: Airbrushed painting on glossy cardboard box, with the surface finish of Eighties Painted Game Box Art.
-  camera_and_composition: Dramatic heroic box-front composition, framed the way Eighties Painted Game Box Art composes its shots and pages.
+  lighting_and_shadow: Dramatic backlit airbrush glow, lit the way Eighties Painted Game Box Art lights its levels.
+  texture_and_material: Airbrushed painting on glossy cardboard box, with the in-engine surface finish of Eighties Painted Game Box Art.
+  camera_and_composition: Dramatic heroic box-front composition, framed the way Eighties Painted Game Box Art frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with overhyped heroic drama.
-  rendering_and_quality: Airbrushed eighties game box painting, in the recognizable hand of Eighties Painted Game Box Art.
+  rendering_and_quality: Airbrushed eighties game box painting, true to real eighties painted game box covers.
   creative_brief: 'Eighties painted video game box art look: dramatic airbrushed fantasy and sci-fi paintings wildly more detailed than the game, heroic poses, explosions and bold era packaging. Carry it through Eighties box art, airbrush, overhyped drama. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Eighties box art; airbrush; overhyped drama
 avoidRules:

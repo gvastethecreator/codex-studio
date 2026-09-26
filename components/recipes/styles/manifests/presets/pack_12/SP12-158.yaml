@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-158
 packId: pack_12
-name: Giant Beast Riding Capture
+name: Xenoblade Chronicles 2 2017 - Monolith Soft Titans
 styleAnchors:
-  - Giant Beast Riding Capture
+  - Xenoblade Chronicles 2 2017 - Monolith Soft Titans
   - riding a huge creature screenshot
   - enormous mount
-displayName: Giant Beast Riding Capture
+displayName: Xenoblade Chronicles 2 2017 - Monolith Soft Titans
 category: 6. Wilderness Hunts & Harsh Frontiers
 domain: riding a huge creature screenshot
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,22 @@ tags:
   - beast-riding
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Giant beast riding capture: an original third-person screenshot of a rider on the back of an enormous tame creature, saddle platforms and a vast landscape below.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject riding on the back of an enormous creature.
-  color_and_tone: Earthy creature tones and wide sky, kept consistent across the whole image.
-  lighting_and_shadow: Open daylight with creature shadow, kept consistent across the whole image.
-  texture_and_material: Hide, fur or scales, saddle ropes and platforms.
-  camera_and_composition: Over-the-shoulder view from the saddle across the vast creature back.
-  atmosphere_and_mood: Keep the requested mood with majestic companionship, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no HUD, kept consistent across the whole image.
-  creative_brief: "Giant beast riding capture: an original third-person screenshot of a rider on the back of an enormous tame creature, saddle platforms and a vast landscape below. Carry it through enormous mount, saddle platform, vast landscape, rider. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: enormous mount; saddle platform; vast landscape; rider
+  aesthetic: 'Monolith Soft Xenoblade Chronicles 2 (2017) look: anime JRPG where people live on giant Titan beasts crossing a cloud sea, vast vistas and colorful anime characters.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as colorful anime adventurers riding giant titans. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Cloud sea white, sky blue and titan green.
+  lighting_and_shadow: Bright open-sky anime light, lit the way Xenoblade Chronicles 2 2017 lights its levels.
+  texture_and_material: Anime cel with detailed vistas, with the in-engine surface finish of Xenoblade Chronicles 2 2017.
+  camera_and_composition: Wide third-person vista, framed the way Xenoblade Chronicles 2 2017 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with vast hopeful journey.
+  rendering_and_quality: Authentic anime JRPG screen, matching real Xenoblade Chronicles 2 2017 screenshots.
+  creative_brief: 'Monolith Soft Xenoblade Chronicles 2 (2017) look: anime JRPG where people live on giant Titan beasts crossing a cloud sea, vast vistas and colorful anime characters. Carry it through Xenoblade titans, cloud sea, vast vistas. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Xenoblade titans; cloud sea; vast vistas
 avoidRules:
+  - existing Xenoblade characters
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing Xenoblade characters, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +68,7 @@ taxonomy:
     - beast-riding
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

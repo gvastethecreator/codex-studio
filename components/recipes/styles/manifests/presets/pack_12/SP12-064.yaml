@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP12-064
 packId: pack_12
-name: They Are Billions Night Defense
+name: They Are Billions 2019 - Numantian Steampunk Horde
 styleAnchors:
-  - They Are Billions gameplay screenshots
+  - They Are Billions 2019 - Numantian Steampunk Horde
   - They Are Billions Night Defense
-displayName: They Are Billions Night Defense
+displayName: They Are Billions 2019 - Numantian Steampunk Horde
 category: 4. Sieges, Warfronts & Last Stands
-version: 1
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,46 +23,16 @@ tags:
   - hud-contextual-hud
   - reference-title
 visualDna:
-  aesthetic: 'In-game screenshot look informed by They Are Billions gameplay: isometric survival-RTS capture with colony walls, swarms, turret lines, steampunk buildings, and pressure-heavy base-defense readability. It never recreates an exact official level, character, logo or marketing art.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable They Are Billions-adjacent game
-    screenshot subject: keep clear role silhouette, player/enemy/object function, scale
-    relationship, hitbox-like readability, and interaction affordances without copying source
-    characters or named IP elements.
-  color_and_tone: >-
-    Use a They Are Billions-informed palette: sepia industrial, zombie grey-green, torch orange,
-    brass UI, dark forest, and warning red. Keep value grouping legible at gameplay distance, with
-    color accents behaving like route, danger, pickup, team, magic, or objective cues rather than
-    decorative wash.
-  lighting_and_shadow: >-
-    Light the image through lamp pools, muzzle flashes, turret beams, night fog, and swarm-edge
-    highlights. Lighting must clarify the playable route, threat, focal subject, or objective and
-    avoid generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from steampunk walls, tents, pipes, wooden barricades, infected crowds, smoke,
-    and compact building silhouettes. Materials should feel like in-engine game assets captured
-    during play, with enough texture identity to separate props, terrain, characters, hazards, and
-    interactables.
-  camera_and_composition: >-
-    Compose with isometric base view with defensive choke points, wall lines, unit groups, resource
-    buildings, and wave approach paths. The frame should read as a plausible gameplay capture;
-    include UI/HUD only when it matches the source game's visual logic and improves clarity.
-  atmosphere_and_mood: 'They Are Billions-derived mood: desperate, logistical, overrun, industrial, and strategic; it follows the tone of the requested scene without forcing a fixed mission or story.'
-  rendering_and_quality: >-
-    Finish as a coherent in-engine screenshot style, not concept art: RTS HUD can include resources,
-    command bar, unit selection, minimap, and wave warnings. Maintain heavy-denoise clarity, crisp
-    focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random
-    interface clutter.
-  key_features: >-
-    They Are Billions gameplay screenshots; isometric survival-RTS capture with colony walls,
-    swarms, turret lines, steampunk buildings, and pressure-heavy base-defense readability; sepia
-    industrial, zombie grey-green, torch orange, brass UI, dark forest, and warning red; lamp pools,
-    muzzle flashes, turret beams, night fog, and swarm-edge highlights; steampunk walls, tents,
-    pipes, wooden barricades, infected crowds, smoke, and compact building silhouettes; isometric
-    base view with defensive choke points, wall lines, unit groups, resource buildings, and wave
-    approach paths; desperate, logistical, overrun, industrial, and strategic; HUD guidance: RTS HUD
-    can include resources, command bar, unit selection, minimap, and wave warnings
-  creative_brief: "They Are Billions Night Defense: in-game screenshot language informed by They Are Billions, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'Numantian Games They Are Billions (2019) look: isometric steampunk colony defense with painted 2D units, wooden walls, turrets and hordes of thousands pouring out of the fog.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as tiny painted steampunk soldiers and colonists facing massive hordes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Steampunk brass, fog grey and night blue, true to the They Are Billions 2019 palette.
+  lighting_and_shadow: Night fog with turret flashes, lit the way They Are Billions 2019 lights its levels.
+  texture_and_material: Detailed painted isometric 2D, with the in-engine surface finish of They Are Billions 2019.
+  camera_and_composition: Isometric strategy view, framed the way They Are Billions 2019 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with desperate horde defense.
+  rendering_and_quality: Authentic isometric RTS screen, matching real They Are Billions 2019 screenshots.
+  key_features: They Are Billions hordes; steampunk walls; isometric
+  creative_brief: 'Numantian Games They Are Billions (2019) look: isometric steampunk colony defense with painted 2D units, wooden walls, turrets and hordes of thousands pouring out of the fog. Carry it through They Are Billions hordes, steampunk walls, isometric. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - watermark
   - logo
@@ -90,18 +60,12 @@ avoidRules:
   - copied box art composition
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-064.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: They Are Billions
   referenceMode: capture-derived gameplay screenshot style
   hudGuidance: RTS HUD can include resources, command bar, unit selection, minimap, and wave warnings

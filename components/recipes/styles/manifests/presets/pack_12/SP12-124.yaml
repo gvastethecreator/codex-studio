@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-124
 packId: pack_12
-name: Mech Garage Loadout Capture
+name: Armored Core VI 2023 - FromSoftware Mech Garage
 styleAnchors:
-  - Mech Garage Loadout Capture
+  - Armored Core VI 2023 - FromSoftware Mech Garage
   - mech customization garage screenshot
   - mech on gantry
-displayName: Mech Garage Loadout Capture
+displayName: Armored Core VI 2023 - FromSoftware Mech Garage
 category: 3. Sci-Fi Frontiers & Mech Zones
 domain: mech customization garage screenshot
-version: 1
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,22 +20,22 @@ tags:
   - mech-garage
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Mech garage loadout capture: an original screenshot of a giant mech on a service gantry in a garage, arms swapped out, sparks, crane rigs and technicians.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject on a service gantry in a mech workshop.
-  color_and_tone: Industrial greys with hazard yellow and welding blue.
-  lighting_and_shadow: Overhead floodlights and welding sparks, kept consistent across the whole image.
-  texture_and_material: Metal plates, cables, oil and scaffolds, kept consistent across the whole image.
-  camera_and_composition: Low angle up the gantry at the mech.
-  atmosphere_and_mood: Keep the requested mood with proud mechanical craft.
-  rendering_and_quality: Clean capture with no readable stat panels, kept consistent across the whole image.
-  creative_brief: "Mech garage loadout capture: an original screenshot of a giant mech on a service gantry in a garage, arms swapped out, sparks, crane rigs and technicians. Carry it through mech on gantry, swapped parts, sparks, technicians. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: mech on gantry; swapped parts; sparks; technicians
+  aesthetic: 'FromSoftware Armored Core VI: Fires of Rubicon (2023) look: heavy industrial mecha assembly, gantries, part swaps, sparks, grimy hangars and weathered paint.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render mechs as heavy customizable industrial machines with modular parts. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Industrial grey, hazard yellow and spark orange, true to the Armored Core VI 2023 palette.
+  lighting_and_shadow: Hangar floodlights with spark showers, lit the way Armored Core VI 2023 lights its levels.
+  texture_and_material: Weathered paint, bolts and industrial metal, with the in-engine surface finish of Armored Core VI 2023.
+  camera_and_composition: Low garage view up at a mech, framed the way Armored Core VI 2023 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with heavy mechanical pride.
+  rendering_and_quality: Authentic modern mecha screen, matching real Armored Core VI 2023 screenshots.
+  creative_brief: 'FromSoftware Armored Core VI: Fires of Rubicon (2023) look: heavy industrial mecha assembly, gantries, part swaps, sparks, grimy hangars and weathered paint. Carry it through Armored Core garage, modular mech, industrial. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Armored Core garage; modular mech; industrial
 avoidRules:
   - stat panels
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -44,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: stat panels, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: stat panels, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -65,6 +68,7 @@ taxonomy:
     - mech-garage
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

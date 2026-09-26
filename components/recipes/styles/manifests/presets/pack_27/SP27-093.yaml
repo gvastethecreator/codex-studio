@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Naughty Dog Crash Bandicoot (1996) look: cartoon 3D corridors into the screen, lush tropical islands, wooden crates, running-toward-camera chases and vibrant PS1 colors.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a cartoon 3D character running down lush tropical corridors. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Vibrant tropical green, crate brown and ocean blue.
-  lighting_and_shadow: Bright tropical PS1 lighting, lit the way Crash Bandicoot 1996 lights its scenes.
+  lighting_and_shadow: Bright tropical PS1 lighting, lit the way Crash Bandicoot 1996 lights its levels.
   texture_and_material: Low-polygon models with affine texture warping, blurry low-resolution textures and visible vertex jitter.
-  camera_and_composition: Behind-the-character corridor view, framed the way Crash Bandicoot 1996 composes its shots and pages.
+  camera_and_composition: Behind-the-character corridor view, framed the way Crash Bandicoot 1996 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with zany tropical fun.
-  rendering_and_quality: Authentic PS1 cartoon platformer screen, in the recognizable hand of Crash Bandicoot 1996.
+  rendering_and_quality: Authentic PS1 cartoon platformer screen, matching real Crash Bandicoot 1996 screenshots.
   creative_brief: 'Naughty Dog Crash Bandicoot (1996) look: cartoon 3D corridors into the screen, lush tropical islands, wooden crates, running-toward-camera chases and vibrant PS1 colors. Carry it through Crash corridors, crates, tropical islands, cartoon 3D. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Crash corridors; crates; tropical islands; cartoon 3D
 avoidRules:
@@ -46,13 +46,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: an orange bandicoot in jeans, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: an orange bandicoot in jeans, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

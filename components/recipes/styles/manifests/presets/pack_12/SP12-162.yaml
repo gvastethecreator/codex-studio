@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-162
 packId: pack_12
-name: Flashlight Corridor Horror Capture
+name: Alan Wake 2010 - Remedy Flashlight Horror
 styleAnchors:
-  - Flashlight Corridor Horror Capture
+  - Alan Wake 2010 - Remedy Flashlight Horror
   - flashlight exploration horror screenshot
   - flashlight cone
-displayName: Flashlight Corridor Horror Capture
+displayName: Alan Wake 2010 - Remedy Flashlight Horror
 category: 7. Heists, Horror & Underworld Runs
 domain: flashlight exploration horror screenshot
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,22 @@ tags:
   - flashlight-horror
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Flashlight corridor horror capture: an original first-person horror screenshot where a single flashlight cone is the only light in a long decaying corridor.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; reveal the subject only within a single flashlight beam in darkness.
-  color_and_tone: Near black with a warm white flashlight cone.
-  lighting_and_shadow: One hard flashlight beam and dense darkness, kept consistent across the whole image.
-  texture_and_material: Peeling wallpaper, dust motes and wet floors, kept consistent across the whole image.
-  camera_and_composition: First-person down a long corridor, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with creeping dread, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no HUD, kept consistent across the whole image.
-  creative_brief: "Flashlight corridor horror capture: an original first-person horror screenshot where a single flashlight cone is the only light in a long decaying corridor. Carry it through flashlight cone, long corridor, darkness, dust motes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: flashlight cone; long corridor; darkness; dust motes
+  aesthetic: 'Remedy Entertainment Alan Wake (2010) look: third-person psychological thriller where a flashlight beam burns away darkness, Pacific Northwest towns, fog and TV-episode tension.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as ordinary writers and townsfolk holding flashlights against the dark. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Night blue, flashlight white and fog grey, true to the Alan Wake 2010 palette.
+  lighting_and_shadow: Single hard flashlight beam in fog, lit the way Alan Wake 2010 lights its levels.
+  texture_and_material: Realistic wood, fog and shadow, with the in-engine surface finish of Alan Wake 2010.
+  camera_and_composition: Over-the-shoulder flashlight view, framed the way Alan Wake 2010 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with suspenseful psychological dread.
+  rendering_and_quality: Authentic thriller game screen, matching real Alan Wake 2010 screenshots.
+  creative_brief: 'Remedy Entertainment Alan Wake (2010) look: third-person psychological thriller where a flashlight beam burns away darkness, Pacific Northwest towns, fog and TV-episode tension. Carry it through Alan Wake flashlight, dark presence, fog. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Alan Wake flashlight; dark presence; fog
 avoidRules:
+  - a writer in a tweed jacket with elbow patches
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a writer in a tweed jacket with elbow patches, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +68,7 @@ taxonomy:
     - flashlight-horror
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

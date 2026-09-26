@@ -5,10 +5,10 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-003',
-    name: 'Kharak Desert Carrier RTS',
-    displayName: 'Kharak Desert Carrier RTS',
+    name: 'Deserts of Kharak 2016 - Blackbird Desert Carrier RTS',
+    displayName: 'Deserts of Kharak 2016 - Blackbird Desert Carrier RTS',
     styleAnchors: [
-      'Homeworld: Deserts of Kharak gameplay screenshots',
+      'Deserts of Kharak 2016 - Blackbird Desert Carrier RTS',
       'Kharak Desert Carrier RTS',
     ],
     category: '3. Sci-Fi Frontiers & Mech Zones',
@@ -16,348 +16,325 @@ export const GENERATED_STYLE_PRESETS = [
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Homeworld: Deserts of Kharak gameplay: desert RTS gameplay capture with colossal land carriers, small tracked units, sensor arcs, formation paths, and top-down tactical terrain. It never recreates an exact official level, character, logo or marketing art.',
+        'Blackbird Interactive Homeworld: Deserts of Kharak (2016) look: real-time strategy across vast desert dunes, colossal land carriers, tracked vehicles leaving dust trails and buried alien wrecks.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Homeworld: Deserts of Kharak-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Homeworld: Deserts of Kharak-informed palette: bleached sand, burnt orange shadows, military blue UI, dusty yellow metal, and green unit indicators. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
-      lighting_and_shadow:
-        'Light the image through high desert glare, long carrier shadows, dust haze, engine bloom, and radar-like selection glow. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
-      texture_and_material:
-        'Build surfaces from sand dunes, weathered armor plating, tire tracks, wreckage, antennae, heat shimmer, and utilitarian command hardware. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render vehicles and people as small detailed military sci-fi units seen from a high strategy camera. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Desert ochre, dusty tan, steel grey and signal orange.',
+      lighting_and_shadow: 'Harsh desert sun with long dune shadows and dust haze.',
+      texture_and_material: 'Weathered industrial metal, sand drifts and dust trails.',
       camera_and_composition:
-        "Compose with elevated strategy camera with readable unit groups, attack vectors, resource sites, minimap logic, and a clear battlefield objective axis. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Homeworld: Deserts of Kharak-derived mood: dry, strategic, convoy-heavy, lonely, and military-operational; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'High tilted RTS camera over the dunes, framed the way Deserts of Kharak 2016 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with vast lonely desert warfare.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: RTS HUD is part of the style: selection boxes, health bars, resource counters, ability icons, and minimap can appear if aligned to the camera. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Homeworld: Deserts of Kharak gameplay screenshots; desert RTS gameplay capture with colossal land carriers, small tracked units, sensor arcs, formation paths, and top-down tactical terrain; bleached sand, burnt orange shadows, military blue UI, dusty yellow metal, and green unit indicators; high desert glare, long carrier shadows, dust haze, engine bloom, and radar-like selection glow; sand dunes, weathered armor plating, tire tracks, wreckage, antennae, heat shimmer, and utilitarian command hardware; elevated strategy camera with readable unit groups, attack vectors, resource sites, minimap logic, and a clear battlefield objective axis; dry, strategic, convoy-heavy, lonely, and military-operational; HUD guidance: RTS HUD is part of the style: selection boxes, health bars, resource counters, ability icons, and minimap can appear if aligned to the camera',
+        'Authentic mid-2010s desert RTS screen, matching real Deserts of Kharak 2016 screenshots.',
+      key_features: 'Kharak land carriers; desert dunes; dust trails; RTS camera',
       creative_brief:
-        "Kharak Desert Carrier RTS: in-game screenshot language informed by Homeworld: Deserts of Kharak, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Blackbird Interactive Homeworld: Deserts of Kharak (2016) look: real-time strategy across vast desert dunes, colossal land carriers, tracked vehicles leaving dust trails and buried alien wrecks. Carry it through Kharak land carriers, desert dunes, dust trails, RTS camera. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-005',
-    name: 'Orbital Freight Breach',
-    displayName: 'Orbital Freight Breach',
+    name: 'Alien Isolation 2014 - Creative Assembly Lo-Fi Dread',
+    displayName: 'Alien Isolation 2014 - Creative Assembly Lo-Fi Dread',
     styleAnchors: [
-      'first-person survival-horror gameplay screenshots',
+      'Alien Isolation 2014 - Creative Assembly Lo-Fi Dread',
       'industrial orbital freight breach',
       'Orbital Freight Breach',
     ],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Alien Isolation clone, retro pixel downgrade, exact Sevastopol station copy, xenomorph silhouette copy',
+      'a black biomechanical alien with an elongated head, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Alien Isolation clone, retro pixel downgrade, exact Sevastopol station copy, xenomorph silhouette copy, text, readable labels, franchise likeness, real person likeness, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Original in-game screenshot look for first-person survival-horror captures: industrial orbital freight corridors, analog devices, emergency light, maintenance clutter, hostile unseen threat pressure, and diegetic survival readability. Borrow the restrained first-person tension of Alien Isolation-like games, but land as a different fictional station with different signage shapes, creature logic, tools, UI icons, and architecture.',
+        'Creative Assembly Alien: Isolation (2014) look: first-person survival horror on a 1979 lo-fi retro-futurist station, chunky CRT monitors, analog motion tracker, flickering corridors and film-grain dread.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable first-person survival-horror screenshot subject: keep clear threat/object function, hiding route, device/tool scale, interactable affordance, and escape decision without copying source creatures or locations.",
-      color_and_tone:
-        'Use an orbital survival palette: sodium amber, emergency red, dirty teal, gunmetal grey, pale screen green, wet black, and worn white panels. Keep value grouping legible without pixel-art downgrade.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as ordinary engineers and crew in worn seventies work clothes, seen from first person. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Sickly green CRT, emergency red, beige plastic and deep shadow.',
       lighting_and_shadow:
-        'Light the image through flickering tube lights, rotating alarm glow, flashlight cones, terminal phosphor, and occluded corridor darkness. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
-      texture_and_material:
-        'Build surfaces from worn bulkheads, cassette-future interfaces, condensation, rubber seals, scratched glass, cable bundles, and analog tech grime. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Flickering fluorescents, emergency strobes and dark vents, lit the way Alien Isolation 2014 lights its levels.',
+      texture_and_material: 'Chunky beige plastic, grimy metal, film grain and VHS noise.',
       camera_and_composition:
-        'Compose with first-person camera, foreground hand/device/tool, tight corridor or service room route, cover/hiding affordance, distant threat clue, and one survival decision. Avoid retro pixel rendering and cinematic poster framing.',
-      atmosphere_and_mood:
-        'Carry an original orbital breach mood: anxious, industrial, hunted, analog, claustrophobic, and quiet.',
+        'First-person view holding an analog motion tracker, framed the way Alien Isolation 2014 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with suffocating hunted dread.',
       rendering_and_quality:
-        'Finish as coherent first-person survival-horror screenshot style, not pixel art and not concept art: diegetic motion tracker/device pips, sparse status lights, and environmental objective cues can appear. Maintain heavy-denoise clarity, readable route, and no readable signage/logos.',
-      key_features:
-        'Alien: Isolation gameplay screenshots; retro-futurist space-station survival horror capture with narrow corridors, maintenance panels, emergency alarms, and vulnerable first-person stealth; dirty cream plastic, warning orange, medical green monitors, deep black vents, and cold fluorescent blue; flickering tube lights, rotating alarm glow, flashlight cones, terminal phosphor, and occluded corridor darkness; worn bulkheads, cassette-future interfaces, condensation, rubber seals, scratched glass, cable bundles, and analog tech grime; first-person corridor composition with motion-tracker depth, hiding spots, doorway silhouettes, and claustrophobic route uncertainty; anxious, analog, hunted, industrial, and breath-held; HUD guidance: coherent survival UI can include a motion tracker, small objective marker, or diegetic device screen; avoid arcade overlays',
+        'Authentic mid-2010s retro-futurist horror screen, matching real Alien Isolation 2014 screenshots.',
+      key_features: 'Alien Isolation lo-fi; motion tracker; CRT green; film grain',
       creative_brief:
-        "Orbital Freight Breach: in-game screenshot language informed by first-person survival-horror references, covering analog devices, industrial corridors, hostile unseen pressure, diegetic HUD, and playable escape/hiding decisions. Avoid direct Alien Isolation cloning, exact station copies, creature silhouette copying, and retro pixel downgrade. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Creative Assembly Alien: Isolation (2014) look: first-person survival horror on a 1979 lo-fi retro-futurist station, chunky CRT monitors, analog motion tracker, flickering corridors and film-grain dread. Carry it through Alien Isolation lo-fi, motion tracker, CRT green, film grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-011',
-    name: 'Drowned Deco Pressure Hall',
-    displayName: 'Drowned Deco Pressure Hall',
+    name: 'SOMA 2015 - Frictional Abyssal Station',
+    displayName: 'SOMA 2015 - Frictional Abyssal Station',
     styleAnchors: [
-      'immersive art-deco first-person gameplay screenshots',
+      'SOMA 2015 - Frictional Abyssal Station',
       'undersea pressure hall combat',
       'Drowned Deco Pressure Hall',
     ],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct BioShock clone, retro pixel downgrade, exact Rapture signage',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct BioShock clone, retro pixel downgrade, exact Rapture signage, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Original in-game screenshot look for immersive art-deco first-person shooter captures: undersea pressure halls, brass machinery, wet tile, plasmid-like ability effects, enemy silhouettes, and route/combat readability. Borrow the art-deco material pressure of BioShock-like games, but land as a different fictional drowned city with different signage shapes, enemies, weapons, UI icons, and architectural motifs.',
+        'Frictional Games SOMA (2015) look: first-person horror inside a deep-sea research station, flooded industrial corridors, flickering lights, leaking bulkheads and dark abyssal ocean beyond thick windows.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable drowned-deco first-person screenshot subject: keep clear threat/object function, route affordance, weapon or hand scale, interactable pickup logic, and readable combat spacing without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use an immersive drowned-deco palette: oxidized teal, brass gold, wet black, nicotine amber, coral red, sea green, and porcelain white. Keep value grouping legible at gameplay distance and avoid pixel-art downgrade or generic sci-fi blue wash.',
-      lighting_and_shadow:
-        'Light the image through flickering deco lamps, watery caustics, electrical arcs, muzzle flashes, and deep corridor shadows. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
-      texture_and_material:
-        'Build surfaces from brass deco trim, cracked tiles, wet glass, peeling posters without readable slogans, riveted metal, and sea growth. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people and machines as uncanny figures in diving suits and cabled machinery, seen from first person. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Abyssal blue-black, sodium orange, rust and cold teal.',
+      lighting_and_shadow: 'Flickering station lights and flashlight beams in dark water.',
+      texture_and_material: 'Wet rusty metal, cables, algae and fogged glass.',
       camera_and_composition:
-        'Compose with first-person camera, playable corridor/atrium route, weapon/hand edge, interactable object, enemy spacing, and environmental cover. The frame should read as a captured gameplay moment, not a retro sprite scene or poster.',
-      atmosphere_and_mood:
-        'Carry an original drowned-deco mood: decayed, theatrical, paranoid, wet, retro-futurist, and pressure-sealed.',
+        'First-person view through flooded corridors, framed the way SOMA 2015 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with crushing existential dread.',
       rendering_and_quality:
-        'Finish as coherent first-person immersive shooter screenshot style, not pixel art and not concept art: sparse contextual HUD, ability/weapon cues, pickup glow, and route lighting can appear. Maintain heavy-denoise clarity, crisp focal hierarchy, and no readable signage/logos.',
-      key_features:
-        'BioShock gameplay screenshots; first-person immersive-sim capture with art-deco underwater corridors, leaking glass, plasmid hands, and environmental horror staging; green seawater, tarnished gold, rust orange, red alarm glow, black ocean void, and sickly neon signage shapes; flickering deco lamps, watery caustics, electrical arcs, muzzle flashes, and deep corridor shadows; brass deco trim, cracked tiles, wet glass, peeling posters without readable slogans, riveted metal, and sea growth; first-person weapon/plasmid framing with corridor depth, interactable props, enemy silhouettes, and resource pickup readability; decayed, theatrical, paranoid, wet, and retro-futurist; HUD guidance: health/eve meters, ammo counters, plasmid icons, and objective arrows are allowed if they match immersive-sim screenshot logic',
+        'Authentic mid-2010s undersea horror screen, matching real SOMA 2015 screenshots.',
+      key_features: 'SOMA undersea station; flooded corridors; abyss windows',
       creative_brief:
-        "Drowned Deco Pressure Hall: in-game screenshot language informed by immersive art-deco shooter references, covering first-person camera, brass/wet-tile material language, pressure-hall lighting, ability effects, and playable route readability. Avoid direct BioShock cloning, exact signage, retro pixel downgrade, and promotional composition. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Frictional Games SOMA (2015) look: first-person horror inside a deep-sea research station, flooded industrial corridors, flickering lights, leaking bulkheads and dark abyssal ocean beyond thick windows. Carry it through SOMA undersea station, flooded corridors, abyss windows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-018',
-    name: 'Defense Grid Storm Citadel',
-    displayName: 'Defense Grid Storm Citadel',
-    styleAnchors: ['Defense Grid 2 gameplay screenshots', 'Defense Grid Storm Citadel'],
+    name: 'Defense Grid 2008 - Hidden Path Tower Defense',
+    displayName: 'Defense Grid 2008 - Hidden Path Tower Defense',
+    styleAnchors: ['Defense Grid 2008 - Hidden Path Tower Defense', 'Defense Grid Storm Citadel'],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Defense Grid 2 gameplay: tower-defense gameplay capture with elevated camera, winding paths, glowing turret ranges, alien waves, and base-defense geometry. It never recreates an exact official level, character, logo or marketing art.',
+        'Hidden Path Entertainment Defense Grid: The Awakening (2008) look: elevated 3D tower defense on sci-fi citadels, glowing turret beams, alien walkers on winding paths and a glowing power core.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Defense Grid 2-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Defense Grid 2-informed palette: cool steel blue, electric cyan, warning orange, alien green, dark storm grey, and white tactical highlights. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render every subject as tower-defense units, turrets and alien walkers seen from above. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Storm blue, turret orange, core cyan and steel grey.',
       lighting_and_shadow:
-        'Light the image through turret beams, shield glow, storm flashes, muzzle bursts, and path-edge illumination. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Stormy dark sky with bright turret beams, lit the way Defense Grid 2008 lights its levels.',
       texture_and_material:
-        'Build surfaces from sci-fi platforms, modular towers, energy pylons, storm-wet metal, alien carapace, and tileable base panels. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Clean sci-fi metal and glowing energy, with the in-engine surface finish of Defense Grid 2008.',
       camera_and_composition:
-        "Compose with isometric defense view with clear enemy path, turret placement nodes, resource counters, and wave-reading depth. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Defense Grid 2-derived mood: methodical, defensive, synthetic, urgent, and strategic; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Elevated tower-defense camera over paths, framed the way Defense Grid 2008 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with tense strategic defense.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: tower-defense HUD is allowed: wave info, resources, tower icons, range rings, and health cores should be cleanly integrated. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Defense Grid 2 gameplay screenshots; tower-defense gameplay capture with elevated camera, winding paths, glowing turret ranges, alien waves, and base-defense geometry; cool steel blue, electric cyan, warning orange, alien green, dark storm grey, and white tactical highlights; turret beams, shield glow, storm flashes, muzzle bursts, and path-edge illumination; sci-fi platforms, modular towers, energy pylons, storm-wet metal, alien carapace, and tileable base panels; isometric defense view with clear enemy path, turret placement nodes, resource counters, and wave-reading depth; methodical, defensive, synthetic, urgent, and strategic; HUD guidance: tower-defense HUD is allowed: wave info, resources, tower icons, range rings, and health cores should be cleanly integrated',
+        'Authentic late-2000s tower-defense screen, matching real Defense Grid 2008 screenshots.',
+      key_features: 'Defense Grid turrets; alien walkers; glowing core',
       creative_brief:
-        "Defense Grid Storm Citadel: in-game screenshot language informed by Defense Grid 2, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Hidden Path Entertainment Defense Grid: The Awakening (2008) look: elevated 3D tower defense on sci-fi citadels, glowing turret beams, alien walkers on winding paths and a glowing power core. Carry it through Defense Grid turrets, alien walkers, glowing core. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-023',
-    name: 'Surviving Mars Orbital Garden',
-    displayName: 'Surviving Mars Orbital Garden',
-    styleAnchors: ['Surviving Mars gameplay screenshots', 'Surviving Mars Orbital Garden'],
+    name: 'Surviving Mars 2018 - Haemimont Retro-Future Colony',
+    displayName: 'Surviving Mars 2018 - Haemimont Retro-Future Colony',
+    styleAnchors: [
+      'Surviving Mars 2018 - Haemimont Retro-Future Colony',
+      'Surviving Mars Orbital Garden',
+    ],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Surviving Mars gameplay: colony-builder capture with domes, red terrain, resource pipes, garden interiors, drone paths, and readable management scale. It never recreates an exact official level, character, logo or marketing art.',
+        'Haemimont Games Surviving Mars (2018) look: retro-futurist colony builder on red Mars, glass domes linked by tubes, drones, rovers and optimistic fifties space-age design.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Surviving Mars-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Surviving Mars-informed palette: Mars red, dome glass blue, white habitat shells, hydroponic green, yellow hazard marks, and shadowed basalt. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people and machines as tiny colonists, drones and rovers among retro-futurist domes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Mars red, dome glass teal and space-age white.',
       lighting_and_shadow:
-        'Light the image through hard Martian sun, glass-dome reflections, night colony LEDs, dust storm haze, and greenhouse glow. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Dusty Mars daylight and dust storms, lit the way Surviving Mars 2018 lights its levels.',
       texture_and_material:
-        'Build surfaces from modular domes, cables, solar panels, rover tracks, pressurized corridors, garden beds, and UI-like planning overlays. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Clean retro-futurist panels and red dust, with the in-engine surface finish of Surviving Mars 2018.',
       camera_and_composition:
-        "Compose with elevated management camera with colony clusters, build nodes, resource lines, drone movement, and infrastructure hierarchy. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Surviving Mars-derived mood: optimistic, technical, fragile, logistical, and frontier-scientific; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Overhead colony builder view, framed the way Surviving Mars 2018 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with optimistic frontier building.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: builder HUD is allowed: resource bars, build palette, dome status, and management overlays should look functional. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Surviving Mars gameplay screenshots; colony-builder capture with domes, red terrain, resource pipes, garden interiors, drone paths, and readable management scale; Mars red, dome glass blue, white habitat shells, hydroponic green, yellow hazard marks, and shadowed basalt; hard Martian sun, glass-dome reflections, night colony LEDs, dust storm haze, and greenhouse glow; modular domes, cables, solar panels, rover tracks, pressurized corridors, garden beds, and UI-like planning overlays; elevated management camera with colony clusters, build nodes, resource lines, drone movement, and infrastructure hierarchy; optimistic, technical, fragile, logistical, and frontier-scientific; HUD guidance: builder HUD is allowed: resource bars, build palette, dome status, and management overlays should look functional',
+        'Authentic colony builder screen, matching real Surviving Mars 2018 screenshots.',
+      key_features: 'Surviving Mars domes; retro-futurism; drones; red dust',
       creative_brief:
-        "Surviving Mars Orbital Garden: in-game screenshot language informed by Surviving Mars, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Haemimont Games Surviving Mars (2018) look: retro-futurist colony builder on red Mars, glass domes linked by tubes, drones, rovers and optimistic fifties space-age design. Carry it through Surviving Mars domes, retro-futurism, drones, red dust. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-033',
-    name: 'Plants vs Zombies Orchard Defense',
-    displayName: 'Plants vs Zombies Orchard Defense',
-    styleAnchors: ['Plants vs. Zombies gameplay screenshots', 'Plants vs Zombies Orchard Defense'],
+    name: 'Plants vs Zombies 2009 - PopCap Cartoon Lawn',
+    displayName: 'Plants vs Zombies 2009 - PopCap Cartoon Lawn',
+    styleAnchors: [
+      'Plants vs Zombies 2009 - PopCap Cartoon Lawn',
+      'Plants vs Zombies Orchard Defense',
+    ],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a green pea-shooting plant, existing zombie designs, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Plants vs. Zombies gameplay: cartoon lane-defense capture with garden rows, readable enemy waves, plant units, projectiles, and cheerful tower-defense clarity. It never recreates an exact official level, character, logo or marketing art.',
+        'PopCap Plants vs. Zombies (2009) look: bright cartoon lawn defense with grid rows, googly-eyed fighting plants, shambling goofy enemies and a suburban house at the left.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Plants vs. Zombies-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; render every subject as a goofy cartoon plant or shambling cartoon enemy with big eyes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Use a Plants vs. Zombies-informed palette: lawn green, sunflower yellow, zombie grey, roof red, pea green, and bright blue UI accents. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Lawn green, sunny yellow and dusk purple, true to the Plants vs Zombies 2009 palette.',
       lighting_and_shadow:
-        'Light the image through flat daylight, simple night-stage tint, projectile glow, explosion puffs, and friendly cartoon contrast. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Bright cartoon daylight or moonlight, lit the way Plants vs Zombies 2009 lights its levels.',
       texture_and_material:
-        'Build surfaces from bold 2D sprites, lawn tiles, soil rows, silly enemy shapes, plant textures, coins, and chunky projectiles. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Flat cartoon vectors with soft shading, with the in-engine surface finish of Plants vs Zombies 2009.',
       camera_and_composition:
-        "Compose with fixed orthographic lane view with left-to-right wave pressure, plant placement grid, resource sun, and readable path lanes. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Plants vs. Zombies-derived mood: absurd, defensive, charming, escalating, and tactically legible; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Side-on lawn grid view, framed the way Plants vs Zombies 2009 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with goofy spooky fun.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: seed packets, sun counter, progress meter, and lane indicators are expected as coherent gameplay UI. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Plants vs. Zombies gameplay screenshots; cartoon lane-defense capture with garden rows, readable enemy waves, plant units, projectiles, and cheerful tower-defense clarity; lawn green, sunflower yellow, zombie grey, roof red, pea green, and bright blue UI accents; flat daylight, simple night-stage tint, projectile glow, explosion puffs, and friendly cartoon contrast; bold 2D sprites, lawn tiles, soil rows, silly enemy shapes, plant textures, coins, and chunky projectiles; fixed orthographic lane view with left-to-right wave pressure, plant placement grid, resource sun, and readable path lanes; absurd, defensive, charming, escalating, and tactically legible; HUD guidance: seed packets, sun counter, progress meter, and lane indicators are expected as coherent gameplay UI',
+        'Authentic casual cartoon defense screen, matching real Plants vs Zombies 2009 screenshots.',
+      key_features: 'PvZ lawn grid; goofy plants; cartoon defense',
       creative_brief:
-        "Plants vs Zombies Orchard Defense: in-game screenshot language informed by Plants vs. Zombies, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "PopCap Plants vs. Zombies (2009) look: bright cartoon lawn defense with grid rows, googly-eyed fighting plants, shambling goofy enemies and a suburban house at the left. Carry it through PvZ lawn grid, goofy plants, cartoon defense. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-042',
-    name: 'Control Rift Laboratory',
-    displayName: 'Control Rift Laboratory',
-    styleAnchors: ['Control gameplay screenshots', 'Control Rift Laboratory'],
+    name: 'Control 2019 - Remedy Brutalist Bureau',
+    displayName: 'Control 2019 - Remedy Brutalist Bureau',
+    styleAnchors: ['Control 2019 - Remedy Brutalist Bureau', 'Control Rift Laboratory'],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a woman with a shape-shifting service weapon, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Control gameplay: third-person paranormal action capture with brutalist interiors, red astral corruption, floating debris, and supernatural combat geometry. It never recreates an exact official level, character, logo or marketing art.',
+        'Remedy Entertainment Control (2019) look: third-person paranormal action in a shifting brutalist government building, raw concrete, red astral corruption, telekinesis and floating debris.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Control-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Control-informed palette: concrete grey, Federal red, black office void, fluorescent white, amber desk lamps, and pale psychic blue. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as calm bureau agents in plain office clothes wielding telekinesis. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Raw concrete grey, corruption red and fluorescent white.',
       lighting_and_shadow:
-        'Light the image through overhead fluorescents, red threshold glow, object-of-power bloom, muzzle flashes, and deep brutalist shadow. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Clean office light with red glowing corruption, lit the way Control 2019 lights its levels.',
       texture_and_material:
-        'Build surfaces from concrete slabs, office furniture, papers, floating rubble, glass partitions, and bureaucratic paranormal material contrast. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Raw concrete, office clutter and particle debris, with the in-engine surface finish of Control 2019.',
       camera_and_composition:
-        "Compose with over-shoulder action camera with levitation depth, cover objects, enemy silhouettes, and architectural scale axes. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Control-derived mood: uncanny, bureaucratic, oppressive, clean, and reality-bent; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Third-person view in brutalist halls, framed the way Control 2019 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with uncanny bureaucratic dread.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: health/energy bars, objective markers, and ability reticles can appear but should remain sleek and minimal. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Control gameplay screenshots; third-person paranormal action capture with brutalist interiors, red astral corruption, floating debris, and supernatural combat geometry; concrete grey, Federal red, black office void, fluorescent white, amber desk lamps, and pale psychic blue; overhead fluorescents, red threshold glow, object-of-power bloom, muzzle flashes, and deep brutalist shadow; concrete slabs, office furniture, papers, floating rubble, glass partitions, and bureaucratic paranormal material contrast; over-shoulder action camera with levitation depth, cover objects, enemy silhouettes, and architectural scale axes; uncanny, bureaucratic, oppressive, clean, and reality-bent; HUD guidance: health/energy bars, objective markers, and ability reticles can appear but should remain sleek and minimal',
+        'Authentic modern ray-traced action screen, matching real Control 2019 screenshots.',
+      key_features: 'Control brutalism; telekinesis; red corruption; floating debris',
       creative_brief:
-        "Control Rift Laboratory: in-game screenshot language informed by Control, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Remedy Entertainment Control (2019) look: third-person paranormal action in a shifting brutalist government building, raw concrete, red astral corruption, telekinesis and floating debris. Carry it through Control brutalism, telekinesis, red corruption, floating debris. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-045',
-    name: 'Alloy Forest Ambush',
-    displayName: 'Alloy Forest Ambush',
+    name: 'Generation Zero 2019 - Avalanche Eighties Machine Hunt',
+    displayName: 'Generation Zero 2019 - Avalanche Eighties Machine Hunt',
     styleAnchors: [
-      'first-person retrofuturist mech survival screenshots',
+      'Generation Zero 2019 - Avalanche Eighties Machine Hunt',
       'rural machine ambush',
       'Alloy Forest Ambush',
     ],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, strategy tactics camera, generic robot forest render, exact Swedish village clone',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, strategy tactics camera, generic robot forest render, exact Swedish village clone, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Original in-game screenshot look for retrofuturist first-person mech survival captures: rural forest roads, abandoned utility structures, hostile machine silhouettes, scavenged weapons, weathered 1980s tech, and readable stealth/combat routes. Land as a fictional machine-survival setting, not an isometric tactics map.',
+        'Avalanche Studios Generation Zero (2019) look: first-person survival in 1980s rural Sweden, pine forests, red wooden houses and retrofuturist hunting machines with searchlights.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable first-person survival screenshot subject: keep clear threat/object role, foreground weapon/tool scale, cover, patrol spacing, loot/interactable affordance, and escape route without copying source locations or robots.",
-      color_and_tone:
-        'Use a rural mech-survival palette: pine green, cold sky grey, rust orange, old enamel red, wet asphalt blue, dull steel, and warning amber. Keep value grouping legible through forest clutter.',
-      lighting_and_shadow:
-        'Light the image through low Nordic sun, flashlight beams, robot sensor glow, muzzle flashes, and misty forest shadow. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as eighties Swedish survivors in windbreakers and denim, and machines as retrofuturist hunters. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Pine green, Swedish red cottage, grey sky and searchlight white.',
+      lighting_and_shadow: 'Overcast Nordic light or dusk with machine searchlights.',
       texture_and_material:
-        'Build surfaces from wet grass, concrete bunkers, robot hydraulics, backpacks, old cars, chipped paint, and rural decay. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Realistic pine forest and rusted machine panels, with the in-engine surface finish of Generation Zero 2019.',
       camera_and_composition:
-        'Compose with first-person weapon/tool camera, foreground cover, mid-distance machine or objective, route depth, and survival decision. Avoid strategy overview and generic robot promo framing.',
-      atmosphere_and_mood:
-        'Carry an original alloy-forest survival mood: lonely, tactical, rural, mechanical, uneasy, and scavenged.',
+        'First-person view hiding among trees, framed the way Generation Zero 2019 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with eerie rural invasion.',
       rendering_and_quality:
-        'Finish as coherent first-person immersive survival shooter screenshot style, not concept art: sparse HUD, detection pips, ammo/tool cues, and objective markers can appear abstractly. Maintain heavy-denoise clarity, readable silhouettes, and no readable signage/logos.',
-      key_features:
-        'Generation Zero gameplay screenshots; open-world robot-hunt capture with Scandinavian forests, abandoned roads, large machines, guerrilla gear, and distant threat silhouettes; pine green, fog grey, rust orange, warning red, military olive, and cold blue sky; low Nordic sun, flashlight beams, robot sensor glow, muzzle flashes, and misty forest shadow; wet grass, concrete bunkers, robot hydraulics, backpacks, old cars, chipped paint, and rural decay; first-person or third-person survival shooter framing with machine scale, cover routes, weak points, and ambush distance; lonely, tactical, rural, mechanical, and uneasy; HUD guidance: weapon/ammo HUD, compass, stealth markers, and machine tags can appear if modest and readable',
+        'Authentic open-world survival shooter screen, matching real Generation Zero 2019 screenshots.',
+      key_features: 'Generation Zero machines; Swedish pines; eighties rural',
       creative_brief:
-        "Alloy Forest Ambush: in-game screenshot language informed by retrofuturist mech-survival references, covering first-person camera, rural machine threats, scavenged materials, cover routes, and readable survival pressure. Avoid strategy-tactics framing, exact village copies, and generic robot forest renders. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Avalanche Studios Generation Zero (2019) look: first-person survival in 1980s rural Sweden, pine forests, red wooden houses and retrofuturist hunting machines with searchlights. Carry it through Generation Zero machines, Swedish pines, eighties rural. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-046',
-    name: 'Sable Solar Rail Nomads',
-    displayName: 'Sable Solar Rail Nomads',
-    styleAnchors: ['Sable gameplay screenshots', 'Sable Solar Rail Nomads'],
+    name: 'Sable 2021 - Shedworks Moebius Desert',
+    displayName: 'Sable 2021 - Shedworks Moebius Desert',
+    styleAnchors: ['Sable 2021 - Shedworks Moebius Desert', 'Sable Solar Rail Nomads'],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Sable gameplay: open-world desert exploration capture with ligne-claire outlines, hoverbike travel, nomad camps, giant ruins, and flat-color calm. It never recreates an exact official level, character, logo or marketing art.',
+        'Shedworks Sable (2021) look: open desert rendered in clean Moebius-style line art with flat color, hoverbikes, ancient beast skeletons, mask culture and huge ruins.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Sable-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Sable-informed palette: sand peach, muted red, sky cyan, black ink outlines, pale yellow, and dusty lavender shadows. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as clean-lined flat-color figures in masks and robes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Pale sand, sky blue, sunset orange and flat pastel.',
       lighting_and_shadow:
-        'Light the image through soft desert sun, flat cel shade, gentle sunset gradients, and minimal bloom. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Flat shading with clean line art, lit the way Sable 2021 lights its levels.',
       texture_and_material:
-        'Build surfaces from outlined tents, hoverbike panels, cloth wraps, ancient metal, smooth dunes, and hand-drawn environment edges. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Clean Moebius-style line and flat fills, with the in-engine surface finish of Sable 2021.',
       camera_and_composition:
-        "Compose with third-person travel camera with small rider scale, broad horizon, route landmarks, and sparse UI comfort. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Sable-derived mood: quiet, nomadic, contemplative, warm, and exploratory; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Wide third-person desert view, framed the way Sable 2021 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with serene coming-of-age wander.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: minimal compass/objective and stamina-like traversal indicators are acceptable; keep it airy. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Sable gameplay screenshots; open-world desert exploration capture with ligne-claire outlines, hoverbike travel, nomad camps, giant ruins, and flat-color calm; sand peach, muted red, sky cyan, black ink outlines, pale yellow, and dusty lavender shadows; soft desert sun, flat cel shade, gentle sunset gradients, and minimal bloom; outlined tents, hoverbike panels, cloth wraps, ancient metal, smooth dunes, and hand-drawn environment edges; third-person travel camera with small rider scale, broad horizon, route landmarks, and sparse UI comfort; quiet, nomadic, contemplative, warm, and exploratory; HUD guidance: minimal compass/objective and stamina-like traversal indicators are acceptable; keep it airy',
+        'Authentic line-art open-world screen, matching real Sable 2021 screenshots.',
+      key_features: 'Sable Moebius lines; flat color; hoverbike desert',
       creative_brief:
-        "Sable Solar Rail Nomads: in-game screenshot language informed by Sable, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Shedworks Sable (2021) look: open desert rendered in clean Moebius-style line art with flat color, hoverbikes, ancient beast skeletons, mask culture and huge ruins. Carry it through Sable Moebius lines, flat color, hoverbike desert. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-068',
-    name: 'Panzer Dragoon Skyforge Dock',
-    displayName: 'Panzer Dragoon Skyforge Dock',
-    styleAnchors: ['Panzer Dragoon: Remake gameplay screenshots', 'Panzer Dragoon Skyforge Dock'],
+    name: 'Panzer Dragoon 1995 - Team Andromeda Saturn Rail Flight',
+    displayName: 'Panzer Dragoon 1995 - Team Andromeda Saturn Rail Flight',
+    styleAnchors: [
+      'Panzer Dragoon 1995 - Team Andromeda Saturn Rail Flight',
+      'Panzer Dragoon Skyforge Dock',
+    ],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a blue armored dragon with a lone rider, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Panzer Dragoon: Remake gameplay: on-rails dragon shooter capture with ancient tech vistas, flying creature silhouette, lock-on targets, and surreal biomechanical skies. It never recreates an exact official level, character, logo or marketing art.',
+        'Team Andromeda Panzer Dragoon (1995) look: Sega Saturn on-rails flight in low-poly 3D with dithered textures, Moebius-inspired alien architecture, biomechanical creature design and hazy golden palettes.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Panzer Dragoon: Remake-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people and creatures as angular low-poly Saturn-era figures with Moebius costume lines and biomechanical shapes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Use a Panzer Dragoon: Remake-informed palette: dusty teal, rust orange, bone white, sky blue, violet shadow, and red lock-on marks. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Canyon gold, ruin teal and hazy sky, true to the Panzer Dragoon 1995 palette.',
       lighting_and_shadow:
-        'Light the image through sunlit sky haze, weapon lock glow, engine-like ancient lights, and atmospheric rim on wings. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Hazy Saturn-era light and glowing lock-ons, lit the way Panzer Dragoon 1995 lights its levels.',
       texture_and_material:
-        'Build surfaces from scaled dragon skin, ancient machinery, floating platforms, organic metal, desert ruins, and rail-shooter projectile effects. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Low-poly Saturn textures with dithering, with the in-engine surface finish of Panzer Dragoon 1995.',
       camera_and_composition:
-        "Compose with third-person behind-dragon rail camera with targets around the screen, sweeping horizon, and cinematic flight route. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Panzer Dragoon: Remake-derived mood: strange, majestic, lonely, arcade, and mythic sci-fi; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'On-rails flight view from behind and above the subject, with lock-on reticles.',
+      atmosphere_and_mood: 'Keep the requested mood with ancient mythic flight.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: lock-on reticles, health gauge, and target brackets are allowed as rail-shooter language. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Panzer Dragoon: Remake gameplay screenshots; on-rails dragon shooter capture with ancient tech vistas, flying creature silhouette, lock-on targets, and surreal biomechanical skies; dusty teal, rust orange, bone white, sky blue, violet shadow, and red lock-on marks; sunlit sky haze, weapon lock glow, engine-like ancient lights, and atmospheric rim on wings; scaled dragon skin, ancient machinery, floating platforms, organic metal, desert ruins, and rail-shooter projectile effects; third-person behind-dragon rail camera with targets around the screen, sweeping horizon, and cinematic flight route; strange, majestic, lonely, arcade, and mythic sci-fi; HUD guidance: lock-on reticles, health gauge, and target brackets are allowed as rail-shooter language',
+        'Authentic Sega Saturn rail shooter screen, matching real Panzer Dragoon 1995 screenshots.',
+      key_features: 'Panzer Dragoon rails; low-poly Saturn; Moebius ruins',
       creative_brief:
-        "Panzer Dragoon Skyforge Dock: in-game screenshot language informed by Panzer Dragoon: Remake, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Team Andromeda Panzer Dragoon (1995) look: Sega Saturn on-rails flight in low-poly 3D with dithered textures, Moebius-inspired alien architecture, biomechanical creature design and hazy golden palettes. Carry it through Panzer Dragoon rails, low-poly Saturn, Moebius ruins. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-119',
-    name: 'Mech Canopy View Capture',
-    displayName: 'Mech Canopy View Capture',
+    name: 'Titanfall 2 2016 - Respawn Titan Cockpit',
+    displayName: 'Titanfall 2 2016 - Respawn Titan Cockpit',
     styleAnchors: [
-      'Mech Canopy View Capture',
+      'Titanfall 2 2016 - Respawn Titan Cockpit',
       'first-person mech cockpit screenshot',
       'mech cockpit frame',
     ],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     domain: 'first-person mech cockpit screenshot',
     negativePrompt:
-      'readable instruments, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a titan with a single round blue eye, readable instruments, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Mech canopy view capture: an original first-person view from inside a giant mech canopy, framed by cockpit struts and glass, with the battlefield far below.',
+        'Respawn Entertainment Titanfall 2 (2016) look: first-person view from inside a giant titan mech cockpit, canopy framing, HUD brackets, rain on the glass and industrial frontier cities.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; frame the subject through the glass canopy of a towering mech.',
-      color_and_tone: 'Dim cockpit greys with bright battlefield light outside.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as pilots inside mech cockpits and machines as colossal industrial walkers. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        'Industrial grey, cockpit amber and rain blue, true to the Titanfall 2 2016 palette.',
       lighting_and_shadow:
-        'Backlit canopy glass and interior glow strips, kept consistent across the whole image.',
-      texture_and_material: 'Scratched glass, metal struts and rain on the canopy.',
+        'Cockpit instrument glow and rain light, lit the way Titanfall 2 2016 lights its levels.',
+      texture_and_material:
+        'Rain streaks, glass and worn industrial metal, with the in-engine surface finish of Titanfall 2 2016.',
       camera_and_composition:
-        'Cockpit frame with a wide view outside, kept consistent across the whole image.',
+        'First-person cockpit canopy view, framed the way Titanfall 2 2016 frames its gameplay screens.',
       atmosphere_and_mood: 'Keep the requested mood with heavy mechanical power.',
       rendering_and_quality:
-        'Clean capture with no readable instrument text, kept consistent across the whole image.',
+        'Authentic mid-2010s mech shooter screen, matching real Titanfall 2 2016 screenshots.',
       creative_brief:
-        "Mech canopy view capture: an original first-person view from inside a giant mech canopy, framed by cockpit struts and glass, with the battlefield far below. Carry it through mech cockpit frame, canopy glass, battlefield below, rain streaks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'mech cockpit frame; canopy glass; battlefield below; rain streaks',
+        "Respawn Entertainment Titanfall 2 (2016) look: first-person view from inside a giant titan mech cockpit, canopy framing, HUD brackets, rain on the glass and industrial frontier cities. Carry it through Titanfall cockpit, mech canopy, rain glass. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Titanfall cockpit; mech canopy; rain glass',
     },
     ui: {
       previewStatus: 'pending',
@@ -365,35 +342,34 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-120',
-    name: 'Weightless Station Drift Capture',
-    displayName: 'Weightless Station Drift Capture',
+    name: 'Prey 2017 - Arkane Talos Zero-G',
+    displayName: 'Prey 2017 - Arkane Talos Zero-G',
     styleAnchors: [
-      'Weightless Station Drift Capture',
+      'Prey 2017 - Arkane Talos Zero-G',
       'zero gravity space station screenshot',
       'zero gravity',
     ],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     domain: 'zero gravity space station screenshot',
     negativePrompt:
-      'readable labels, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'black shadow mimic aliens, readable labels, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Weightless station drift capture: an original screenshot inside a space station in zero gravity, floating crew, drifting objects, tethers and the planet in the window.',
+        'Arkane Studios Prey (2017) look: neo-deco space station interiors, zero-gravity drifting, shadowy shape-shifting aliens, wrenches and gloo, and Earth through large windows.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject floating weightless among drifting objects inside a station.',
-      color_and_tone: 'Clean white modules, blue planet glow and warning orange.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as station crew in jumpsuits floating in zero gravity. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Neo-deco gold, walnut wood and space black, true to the Prey 2017 palette.',
       lighting_and_shadow:
-        'Planet light through windows and panel glow, kept consistent across the whole image.',
+        'Warm station light with cold space glow, lit the way Prey 2017 lights its levels.',
       texture_and_material:
-        'Padded walls, cables, floating tools and tethers, kept consistent across the whole image.',
+        'Polished deco panels, walnut and brushed metal, with the in-engine surface finish of Prey 2017.',
       camera_and_composition:
-        'Rotated camera with no fixed up direction, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with floating calm or peril.',
-      rendering_and_quality:
-        'Clean capture with no readable labels, kept consistent across the whole image.',
+        'First-person drifting view, framed the way Prey 2017 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with paranoid weightless unease.',
+      rendering_and_quality: 'Authentic immersive-sim screen, matching real Prey 2017 screenshots.',
       creative_brief:
-        "Weightless station drift capture: an original screenshot inside a space station in zero gravity, floating crew, drifting objects, tethers and the planet in the window. Carry it through zero gravity, floating objects, station module, planet window. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'zero gravity; floating objects; station module; planet window',
+        "Arkane Studios Prey (2017) look: neo-deco space station interiors, zero-gravity drifting, shadowy shape-shifting aliens, wrenches and gloo, and Earth through large windows. Carry it through Prey neo-deco station, zero gravity, alien shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Prey neo-deco station; zero gravity; alien shadows',
     },
     ui: {
       previewStatus: 'pending',
@@ -401,36 +377,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-121',
-    name: 'Planet Overview Colony Capture',
-    displayName: 'Planet Overview Colony Capture',
+    name: 'Stellaris 2016 - Paradox Orbital Planet View',
+    displayName: 'Stellaris 2016 - Paradox Orbital Planet View',
     styleAnchors: [
-      'Planet Overview Colony Capture',
+      'Stellaris 2016 - Paradox Orbital Planet View',
       'orbital strategy planet screenshot',
       'small planet',
     ],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     domain: 'orbital strategy planet screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Planet overview colony capture: an original strategy screenshot of a whole small planet seen from orbit, colonies, routes and weather drawn on its curved surface.',
+        'Paradox Development Studio Stellaris (2016) look: grand strategy planet view from orbit, glowing colony lights, sleek UI rings and route lines, deep space nebulae.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject as colonies and structures on a small planet seen from orbit.',
-      color_and_tone: 'Planet blues, greens and deserts on black space.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render every subject as planets, colonies and fleets seen from orbit. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Deep space blue, colony gold and nebula violet.',
       lighting_and_shadow:
-        'Day-night terminator across the globe, kept consistent across the whole image.',
+        'Starlight rim on planets with glowing cities, lit the way Stellaris 2016 lights its levels.',
       texture_and_material:
-        'Clouds, city lights and glowing route lines, kept consistent across the whole image.',
+        'Clean planet textures and soft nebulae, with the in-engine surface finish of Stellaris 2016.',
       camera_and_composition:
-        'Orbital view of a curved planet, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with godlike overview, kept consistent across the whole image.',
+        'Orbital planet overview, framed the way Stellaris 2016 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with vast galactic ambition.',
       rendering_and_quality:
-        'Clean strategy capture with no readable UI, kept consistent across the whole image.',
+        'Authentic grand strategy planet screen, matching real Stellaris 2016 screenshots.',
       creative_brief:
-        "Planet overview colony capture: an original strategy screenshot of a whole small planet seen from orbit, colonies, routes and weather drawn on its curved surface. Carry it through small planet, orbital view, colony lights, route lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'small planet; orbital view; colony lights; route lines',
+        "Paradox Development Studio Stellaris (2016) look: grand strategy planet view from orbit, glowing colony lights, sleek UI rings and route lines, deep space nebulae. Carry it through Stellaris orbit, colony lights, route lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Stellaris orbit; colony lights; route lines',
     },
     ui: {
       previewStatus: 'pending',
@@ -438,32 +413,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-122',
-    name: 'Asteroid Belt Dogfight Capture',
-    displayName: 'Asteroid Belt Dogfight Capture',
-    styleAnchors: ['Asteroid Belt Dogfight Capture', 'space fighter chase screenshot', 'asteroids'],
+    name: 'Everspace 2 2023 - Rockfish Asteroid Dogfight',
+    displayName: 'Everspace 2 2023 - Rockfish Asteroid Dogfight',
+    styleAnchors: [
+      'Everspace 2 2023 - Rockfish Asteroid Dogfight',
+      'space fighter chase screenshot',
+      'asteroids',
+    ],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     domain: 'space fighter chase screenshot',
     negativePrompt:
-      'X-shaped wing fighters, red and green blaster bolts, giant space slug in an asteroid, hexagonal-wing twin-ion fighters, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'X-shaped wing fighters, red and green blaster bolts, giant space slug in an asteroid, hexagonal-wing twin-ion fighters, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Asteroid belt dogfight capture: an original third-person space-fighter screenshot weaving through tumbling asteroids, laser streaks and engine trails.',
+        'Rockfish Games Everspace 2 (2023) look: vivid space shooter among colorful nebulae and asteroid fields, chase camera behind small ships, flak bursts and salvage wrecks.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject in a small fighter craft chasing or fleeing through asteroids.',
-      color_and_tone: 'Black space with orange engine glow and red and green lasers.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render pilots and ships as small agile craft seen from a chase camera. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Vivid nebula magenta, amber flak and rock grey.',
       lighting_and_shadow:
-        'Hard sunlight on asteroids, engine glow, kept consistent across the whole image.',
+        'Nebula glow and bright weapon flashes, lit the way Everspace 2 2023 lights its levels.',
       texture_and_material:
-        'Rocky asteroids, sleek hulls and particle trails, kept consistent across the whole image.',
+        'Detailed ship hulls and rocky asteroids, with the in-engine surface finish of Everspace 2 2023.',
       camera_and_composition:
-        'Chase camera behind the fighter, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with high-speed daring, kept consistent across the whole image.',
+        'Chase camera between asteroids, framed the way Everspace 2 2023 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with daring space action.',
       rendering_and_quality:
-        'Clean space capture with no HUD text, kept consistent across the whole image.',
+        'Authentic modern space shooter screen, matching real Everspace 2 2023 screenshots.',
       creative_brief:
-        "Asteroid belt dogfight capture: an original third-person space-fighter screenshot weaving through tumbling asteroids, laser streaks and engine trails. Carry it through asteroids, laser streaks, chase camera, engine trails. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'asteroids; laser streaks; chase camera; engine trails',
+        "Rockfish Games Everspace 2 (2023) look: vivid space shooter among colorful nebulae and asteroid fields, chase camera behind small ships, flak bursts and salvage wrecks. Carry it through Everspace nebulae, asteroid dogfight, chase camera. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Everspace nebulae; asteroid dogfight; chase camera',
     },
     ui: {
       previewStatus: 'pending',
@@ -471,32 +449,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-123',
-    name: 'Rover Photo-Mode Capture',
-    displayName: 'Rover Photo-Mode Capture',
-    styleAnchors: ['Rover Photo-Mode Capture', 'planet rover photo mode screenshot', 'small rover'],
+    name: "No Man's Sky 2016 - Hello Games Pulp Planets",
+    displayName: "No Man's Sky 2016 - Hello Games Pulp Planets",
+    styleAnchors: [
+      "No Man's Sky 2016 - Hello Games Pulp Planets",
+      'planet rover photo mode screenshot',
+      'small rover',
+    ],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     domain: 'planet rover photo mode screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Rover photo-mode capture: an original photo-mode screenshot of a small exploration rover on an alien landscape, cinematic depth of field and dramatic sky.',
+        "Hello Games No Man's Sky (2016) look: procedural alien planets in pulp sci-fi book cover colors, strange floating fauna, rovers, twin suns and saturated skies.",
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject beside or as an exploration rover in a cinematic alien vista.',
-      color_and_tone: 'Alien sky colors, rust or teal ground and rover white.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render explorers and rovers as small figures under saturated alien skies. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: "Pulp magenta, lime and cyan skies, true to the No Man's Sky 2016 palette.",
       lighting_and_shadow:
-        'Low alien sun and long shadows, kept consistent across the whole image.',
+        "Saturated alien sun with colored fog, lit the way No Man's Sky 2016 lights its levels.",
       texture_and_material:
-        'Regolith, rover panels, dust and rocks, kept consistent across the whole image.',
+        "Procedural stylized alien terrain, with the in-engine surface finish of No Man's Sky 2016.",
       camera_and_composition:
-        'Low cinematic angle with shallow focus, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with lonely discovery, kept consistent across the whole image.',
+        "Wide photo-mode view, framed the way No Man's Sky 2016 frames its gameplay screens.",
+      atmosphere_and_mood: 'Keep the requested mood with wondrous pulp exploration.',
       rendering_and_quality:
-        'Polished photo-mode capture with no UI, kept consistent across the whole image.',
+        "Authentic procedural exploration screen, matching real No Man's Sky 2016 screenshots.",
       creative_brief:
-        "Rover photo-mode capture: an original photo-mode screenshot of a small exploration rover on an alien landscape, cinematic depth of field and dramatic sky. Carry it through small rover, alien vista, depth of field, low sun. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'small rover; alien vista; depth of field; low sun',
+        "Hello Games No Man's Sky (2016) look: procedural alien planets in pulp sci-fi book cover colors, strange floating fauna, rovers, twin suns and saturated skies. Carry it through No Man's Sky pulp colors, alien fauna, rovers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: "No Man's Sky pulp colors; alien fauna; rovers",
     },
     ui: {
       previewStatus: 'pending',
@@ -504,34 +485,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-124',
-    name: 'Mech Garage Loadout Capture',
-    displayName: 'Mech Garage Loadout Capture',
+    name: 'Armored Core VI 2023 - FromSoftware Mech Garage',
+    displayName: 'Armored Core VI 2023 - FromSoftware Mech Garage',
     styleAnchors: [
-      'Mech Garage Loadout Capture',
+      'Armored Core VI 2023 - FromSoftware Mech Garage',
       'mech customization garage screenshot',
       'mech on gantry',
     ],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     domain: 'mech customization garage screenshot',
     negativePrompt:
-      'stat panels, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'stat panels, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Mech garage loadout capture: an original screenshot of a giant mech on a service gantry in a garage, arms swapped out, sparks, crane rigs and technicians.',
+        'FromSoftware Armored Core VI: Fires of Rubicon (2023) look: heavy industrial mecha assembly, gantries, part swaps, sparks, grimy hangars and weathered paint.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject on a service gantry in a mech workshop.',
-      color_and_tone: 'Industrial greys with hazard yellow and welding blue.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render mechs as heavy customizable industrial machines with modular parts. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        'Industrial grey, hazard yellow and spark orange, true to the Armored Core VI 2023 palette.',
       lighting_and_shadow:
-        'Overhead floodlights and welding sparks, kept consistent across the whole image.',
+        'Hangar floodlights with spark showers, lit the way Armored Core VI 2023 lights its levels.',
       texture_and_material:
-        'Metal plates, cables, oil and scaffolds, kept consistent across the whole image.',
-      camera_and_composition: 'Low angle up the gantry at the mech.',
-      atmosphere_and_mood: 'Keep the requested mood with proud mechanical craft.',
+        'Weathered paint, bolts and industrial metal, with the in-engine surface finish of Armored Core VI 2023.',
+      camera_and_composition:
+        'Low garage view up at a mech, framed the way Armored Core VI 2023 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with heavy mechanical pride.',
       rendering_and_quality:
-        'Clean capture with no readable stat panels, kept consistent across the whole image.',
+        'Authentic modern mecha screen, matching real Armored Core VI 2023 screenshots.',
       creative_brief:
-        "Mech garage loadout capture: an original screenshot of a giant mech on a service gantry in a garage, arms swapped out, sparks, crane rigs and technicians. Carry it through mech on gantry, swapped parts, sparks, technicians. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'mech on gantry; swapped parts; sparks; technicians',
+        "FromSoftware Armored Core VI: Fires of Rubicon (2023) look: heavy industrial mecha assembly, gantries, part swaps, sparks, grimy hangars and weathered paint. Carry it through Armored Core garage, modular mech, industrial. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Armored Core garage; modular mech; industrial',
     },
     ui: {
       previewStatus: 'pending',
@@ -539,36 +522,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-125',
-    name: 'Survey Visor Alien Flora Capture',
-    displayName: 'Survey Visor Alien Flora Capture',
+    name: 'Starfield 2023 - Bethesda NASA-Punk Scanner',
+    displayName: 'Starfield 2023 - Bethesda NASA-Punk Scanner',
     styleAnchors: [
-      'Survey Visor Alien Flora Capture',
+      'Starfield 2023 - Bethesda NASA-Punk Scanner',
       'scanner visor alien plants screenshot',
       'scanning visor',
     ],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     domain: 'scanner visor alien plants screenshot',
     negativePrompt:
-      'readable data, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable data, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Survey visor alien flora capture: an original first-person screenshot through a scanning visor, alien plants and creatures outlined with soft analysis glows.',
+        'Bethesda Game Studios Starfield (2023) look: NASA-punk space exploration, scanner visor overlay outlining alien flora and fauna, grounded spacesuits and alien planets.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; view the subject through a scanning visor that outlines alien life.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as explorers in grounded NASA-punk spacesuits scanning alien life. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Lush alien colors with cyan scan outlines, kept consistent across the whole image.',
+        'Scanner cyan outlines over natural alien palettes, true to the Starfield 2023 palette.',
       lighting_and_shadow:
-        'Natural alien light with visor glow overlays, kept consistent across the whole image.',
+        'Natural alien sunlight with scan glow, lit the way Starfield 2023 lights its levels.',
       texture_and_material:
-        'Strange plants, glowing spores and visor glass, kept consistent across the whole image.',
+        'Realistic alien terrain and suits, with the in-engine surface finish of Starfield 2023.',
       camera_and_composition:
-        'First-person view with a curved visor edge, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with curious alien discovery.',
+        'First-person scanner visor view, framed the way Starfield 2023 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with curious scientific discovery.',
       rendering_and_quality:
-        'Clean capture with no readable data, kept consistent across the whole image.',
+        'Authentic modern space RPG screen, matching real Starfield 2023 screenshots.',
       creative_brief:
-        "Survey visor alien flora capture: an original first-person screenshot through a scanning visor, alien plants and creatures outlined with soft analysis glows. Carry it through scanning visor, alien flora, cyan outlines, first person. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'scanning visor; alien flora; cyan outlines; first person',
+        "Bethesda Game Studios Starfield (2023) look: NASA-punk space exploration, scanner visor overlay outlining alien flora and fauna, grounded spacesuits and alien planets. Carry it through Starfield scanner, NASA-punk, alien flora. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Starfield scanner; NASA-punk; alien flora',
     },
     ui: {
       previewStatus: 'pending',
@@ -576,35 +559,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-126',
-    name: 'Station Management Side-View',
-    displayName: 'Station Management Side-View',
+    name: 'Oxygen Not Included 2019 - Klei Colony Cutaway',
+    displayName: 'Oxygen Not Included 2019 - Klei Colony Cutaway',
     styleAnchors: [
-      'Station Management Side-View',
+      'Oxygen Not Included 2019 - Klei Colony Cutaway',
       'space station management sim screenshot',
       'station cross-section',
     ],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     domain: 'space station management sim screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Station management side-view: an original side-view cross-section screenshot of a space station, tiny crew in rooms, corridors, reactors and docking ships.',
+        'Klei Entertainment Oxygen Not Included (2019) look: side-view cartoon colony cutaway, tiny round-headed duplicants, pipes and gas overlays, cramped rooms and jaunty hand-drawn style.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject as tiny crew in a side-view cross-section of a station.',
-      color_and_tone: 'Clean module whites, reactor blue and hazard red.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as tiny round-headed cartoon colonists with big eyes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        'Muted earth, pipe teal and cartoon highlights, true to the Oxygen Not Included 2019 palette.',
       lighting_and_shadow:
-        'Room lights with dark space around, kept consistent across the whole image.',
+        'Flat cartoon light in cutaway rooms, lit the way Oxygen Not Included 2019 lights its levels.',
       texture_and_material:
-        'Modular rooms, pipes and tiny crew sprites, kept consistent across the whole image.',
+        'Hand-drawn Klei cartoon lines, with the in-engine surface finish of Oxygen Not Included 2019.',
       camera_and_composition:
-        'Side-view cutaway of many rooms, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with busy small-world charm.',
+        'Side-view colony cutaway, framed the way Oxygen Not Included 2019 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with busy desperate charm.',
       rendering_and_quality:
-        'Tidy management capture with no readable UI, kept consistent across the whole image.',
+        'Authentic cartoon colony sim screen, matching real Oxygen Not Included 2019 screenshots.',
       creative_brief:
-        "Station management side-view: an original side-view cross-section screenshot of a space station, tiny crew in rooms, corridors, reactors and docking ships. Carry it through station cross-section, tiny crew, modular rooms, docking ships. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'station cross-section; tiny crew; modular rooms; docking ships',
+        "Klei Entertainment Oxygen Not Included (2019) look: side-view cartoon colony cutaway, tiny round-headed duplicants, pipes and gas overlays, cramped rooms and jaunty hand-drawn style. Carry it through ONI cutaway, tiny colonists, pipes and rooms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'ONI cutaway; tiny colonists; pipes and rooms',
     },
     ui: {
       previewStatus: 'pending',
@@ -612,30 +596,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-127',
-    name: 'Ice Moon Outpost Capture',
-    displayName: 'Ice Moon Outpost Capture',
-    styleAnchors: ['Ice Moon Outpost Capture', 'frozen moon base screenshot', 'frozen moon'],
+    name: 'Lost Planet 2006 - Capcom Frozen Frontier',
+    displayName: 'Lost Planet 2006 - Capcom Frozen Frontier',
+    styleAnchors: [
+      'Lost Planet 2006 - Capcom Frozen Frontier',
+      'frozen moon base screenshot',
+      'frozen moon',
+    ],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     domain: 'frozen moon base screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Ice moon outpost capture: an original third-person screenshot of a small base on a frozen moon, a giant ringed planet in the sky, cracked ice and blue floodlights.',
+        'Capcom Lost Planet: Extreme Condition (2006) look: third-person snowy alien planet, blizzards, thermal energy, giant bug creatures under the ice and heavy mech suits.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; set the subject at a small outpost on a frozen moon under a giant ringed planet.',
-      color_and_tone: 'Ice blue, white and dim orange planet glow.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as bundled survivors in heavy parkas and mech suits. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        'Ice white, orange thermal and steel grey, true to the Lost Planet 2006 palette.',
       lighting_and_shadow:
-        'Floodlights on ice with deep blue shadows, kept consistent across the whole image.',
+        'Blizzard haze with orange thermal glow, lit the way Lost Planet 2006 lights its levels.',
       texture_and_material:
-        'Cracked ice, frosted metal and snow drifts, kept consistent across the whole image.',
-      camera_and_composition: 'Wide view with the planet dominating the sky.',
-      atmosphere_and_mood: 'Keep the requested mood with isolated frozen awe.',
+        'Snow particles, ice and metal, with the in-engine surface finish of Lost Planet 2006.',
+      camera_and_composition:
+        'Third-person view in snowstorms, framed the way Lost Planet 2006 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with frozen alien peril.',
       rendering_and_quality:
-        'Clean capture with no HUD text, kept consistent across the whole image.',
+        'Authentic late-2000s sci-fi shooter screen, matching real Lost Planet 2006 screenshots.',
       creative_brief:
-        "Ice moon outpost capture: an original third-person screenshot of a small base on a frozen moon, a giant ringed planet in the sky, cracked ice and blue floodlights. Carry it through frozen moon, ringed planet sky, floodlights, cracked ice. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'frozen moon; ringed planet sky; floodlights; cracked ice',
+        "Capcom Lost Planet: Extreme Condition (2006) look: third-person snowy alien planet, blizzards, thermal energy, giant bug creatures under the ice and heavy mech suits. Carry it through Lost Planet snow, giant bugs, thermal energy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Lost Planet snow; giant bugs; thermal energy',
     },
     ui: {
       previewStatus: 'pending',
@@ -643,35 +633,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-128',
-    name: 'Gravity-Flip Corridor Capture',
-    displayName: 'Gravity-Flip Corridor Capture',
+    name: 'Gravity Rush 2012 - Project Siren Comic Gravity',
+    displayName: 'Gravity Rush 2012 - Project Siren Comic Gravity',
     styleAnchors: [
-      'Gravity-Flip Corridor Capture',
+      'Gravity Rush 2012 - Project Siren Comic Gravity',
       'gravity shifting puzzle screenshot',
       'gravity zones',
     ],
     category: '3. Sci-Fi Frontiers & Mech Zones',
     domain: 'gravity shifting puzzle screenshot',
     negativePrompt:
-      'orange and blue wall portals, weighted companion cube, white egg-shaped sentry turret, test subject in an orange jumpsuit, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a blonde gravity shifter with a black cat, orange and blue wall portals, weighted companion cube, white egg-shaped sentry turret, test subject in an orange jumpsuit, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Gravity-flip corridor capture: an original screenshot of a sci-fi corridor where gravity points in different directions, characters walking on walls and ceilings.',
+        'Project Siren Gravity Rush (2012) look: cel-shaded comic book gravity shifting, characters falling sideways, floating European town, comic panels and ink crosshatching.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; place the subject in a corridor where gravity changes direction.',
-      color_and_tone: 'Clean white panels with orange and blue gravity zones.',
-      lighting_and_shadow: 'Glowing gravity field panels, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as cel-shaded comic figures with flowing hair and clothing affected by shifting gravity. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Warm Euro-town ochre, sky blue and ink black.',
+      lighting_and_shadow:
+        'Soft comic light with ink shadows, lit the way Gravity Rush 2012 lights its levels.',
       texture_and_material:
-        'Polished panels, floating dust and field glows, kept consistent across the whole image.',
+        'Cel shading with ink crosshatching, with the in-engine surface finish of Gravity Rush 2012.',
       camera_and_composition:
-        'Disorienting angle with multiple floors in view, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with mind-bending playfulness, kept consistent across the whole image.',
+        'Tilted sideways gravity view, framed the way Gravity Rush 2012 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with dreamy vertiginous freedom.',
       rendering_and_quality:
-        'Clean puzzle capture with no readable text, kept consistent across the whole image.',
+        'Authentic comic cel-shaded screen, matching real Gravity Rush 2012 screenshots.',
       creative_brief:
-        "Gravity-flip corridor capture: an original screenshot of a sci-fi corridor where gravity points in different directions, characters walking on walls and ceilings. Carry it through gravity zones, wall-walking, disorienting angle, clean panels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'gravity zones; wall-walking; disorienting angle; clean panels',
+        "Project Siren Gravity Rush (2012) look: cel-shaded comic book gravity shifting, characters falling sideways, floating European town, comic panels and ink crosshatching. Carry it through Gravity Rush sideways gravity, comic cel, floating town. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Gravity Rush sideways gravity; comic cel; floating town',
     },
     ui: {
       previewStatus: 'pending',

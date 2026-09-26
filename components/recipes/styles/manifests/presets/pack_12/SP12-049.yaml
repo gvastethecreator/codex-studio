@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP12-049
 packId: pack_12
-name: Symphony Thorn Castle Raid
+name: Symphony of the Night 1997 - Konami Gothic Sprite Castle
 styleAnchors:
-  - 'Castlevania: Symphony of the Night gameplay screenshots'
+  - Symphony of the Night 1997 - Konami Gothic Sprite Castle
   - Symphony Thorn Castle Raid
-displayName: Symphony Thorn Castle Raid
+displayName: Symphony of the Night 1997 - Konami Gothic Sprite Castle
 category: 7. Heists, Horror & Underworld Runs
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,46 +23,19 @@ tags:
   - hud-contextual-hud
   - reference-title
 visualDna:
-  aesthetic: 'In-game screenshot look informed by Castlevania: Symphony of the Night gameplay: gothic 2D metroidvania capture with moonlit castle halls, ornate enemies, side-view exploration, and crisp sprite combat. It never recreates an exact official level, character, logo or marketing art.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable Castlevania: Symphony of the
-    Night-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object
-    function, scale relationship, hitbox-like readability, and interaction affordances without
-    copying source characters or named IP elements.
-  color_and_tone: >-
-    Use a Castlevania: Symphony of the Night-informed palette: midnight blue, candle gold, crimson
-    drapery, stone grey, bone white, and violet magic. Keep value grouping legible at gameplay
-    distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues
-    rather than decorative wash.
-  lighting_and_shadow: >-
-    Light the image through candle flicker, moon windows, spell glows, hit flashes, and dark
-    parallax backgrounds. Lighting must clarify the playable route, threat, focal subject, or
-    objective and avoid generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from pixel stonework, thorn vines, gothic arches, capes, monsters, relic pickups,
-    and ornate tile patterns. Materials should feel like in-engine game assets captured during play,
-    with enough texture identity to separate props, terrain, characters, hazards, and interactables.
-  camera_and_composition: >-
-    Compose with side-scrolling room composition with platforms, enemy arcs, door exits, and compact
-    action-RPG HUD readability. The frame should read as a plausible gameplay capture; include
-    UI/HUD only when it matches the source game's visual logic and improves clarity.
-  atmosphere_and_mood: 'Castlevania: Symphony of the Night-derived mood: romantic, nocturnal, gothic, elegant, and dangerous; it follows the tone of the requested scene without forcing a fixed mission or story.'
-  rendering_and_quality: >-
-    Finish as a coherent in-engine screenshot style, not concept art: HP/MP bars, item icons, map
-    rooms, and small damage numbers are allowed as classic metroidvania UI. Maintain heavy-denoise
-    clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish,
-    or random interface clutter.
-  key_features: >-
-    Castlevania: Symphony of the Night gameplay screenshots; gothic 2D metroidvania capture with
-    moonlit castle halls, ornate enemies, side-view exploration, and crisp sprite combat; midnight
-    blue, candle gold, crimson drapery, stone grey, bone white, and violet magic; candle flicker,
-    moon windows, spell glows, hit flashes, and dark parallax backgrounds; pixel stonework, thorn
-    vines, gothic arches, capes, monsters, relic pickups, and ornate tile patterns; side-scrolling
-    room composition with platforms, enemy arcs, door exits, and compact action-RPG HUD readability;
-    romantic, nocturnal, gothic, elegant, and dangerous; HUD guidance: HP/MP bars, item icons, map
-    rooms, and small damage numbers are allowed as classic metroidvania UI
-  creative_brief: "Symphony Thorn Castle Raid: in-game screenshot language informed by Castlevania: Symphony of the Night, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'Konami Castlevania: Symphony of the Night (1997) look: lavish 2D gothic sprite art with Ayami Kojima inspired elegance, moonlit castle halls, huge animated bosses and rich backgrounds.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as elegant gothic sprites with long hair, capes and ornate clothing. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Moonlit indigo, blood crimson and gilded gold, true to the Symphony of the Night 1997 palette.
+  lighting_and_shadow: Moonlight through gothic windows and candles, lit the way Symphony of the Night 1997 lights its levels.
+  texture_and_material: Lavish 32-bit sprite art and painted backgrounds, with the in-engine surface finish of Symphony of the Night 1997.
+  camera_and_composition: Side-view metroidvania castle view, framed the way Symphony of the Night 1997 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with elegant gothic menace.
+  rendering_and_quality: Authentic PlayStation 2D gothic screen, matching real Symphony of the Night 1997 screenshots.
+  key_features: Symphony of the Night sprites; gothic castle; Kojima elegance
+  creative_brief: 'Konami Castlevania: Symphony of the Night (1997) look: lavish 2D gothic sprite art with Ayami Kojima inspired elegance, moonlit castle halls, huge animated bosses and rich backgrounds. Carry it through Symphony of the Night sprites, gothic castle, Kojima elegance. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
+  - a silver-haired dhampir with a black cape
+  - a whip-wielding vampire hunter in leather
   - watermark
   - logo
   - copyright mark
@@ -89,23 +62,19 @@ avoidRules:
   - copied box art composition
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
+  - text
+  - readable labels
+  - franchise likeness
+  - real person likeness
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-049.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: a silver-haired dhampir with a black cape, a whip-wielding vampire hunter in leather, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts
   referenceGame: 'Castlevania: Symphony of the Night'
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    HP/MP bars, item icons, map rooms, and small damage numbers are allowed as classic metroidvania
-    UI
+  hudGuidance: HP/MP bars, item icons, map rooms, and small damage numbers are allowed as classic metroidvania UI
   renderFamily: retro-pixel-low-poly
   cameraFamily: side-view
   hudMode: contextual-hud

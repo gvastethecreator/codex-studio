@@ -1,14 +1,14 @@
 schemaVersion: 1
 id: SP12-005
 packId: pack_12
-name: Orbital Freight Breach
+name: Alien Isolation 2014 - Creative Assembly Lo-Fi Dread
 styleAnchors:
-  - first-person survival-horror gameplay screenshots
+  - Alien Isolation 2014 - Creative Assembly Lo-Fi Dread
   - industrial orbital freight breach
   - Orbital Freight Breach
-displayName: Orbital Freight Breach
+displayName: Alien Isolation 2014 - Creative Assembly Lo-Fi Dread
 category: 3. Sci-Fi Frontiers & Mech Zones
-version: 1
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -22,50 +22,20 @@ tags:
   - render-first-person-survival-horror
   - camera-first-person
   - hud-diegetic-hud
+  - reference-title
 visualDna:
-  aesthetic: 'Original in-game screenshot look for first-person survival-horror captures: industrial orbital freight corridors, analog devices, emergency light, maintenance clutter, hostile unseen threat pressure, and diegetic survival readability. Borrow the restrained first-person tension of Alien Isolation-like games, but land as a different fictional station with different signage shapes, creature logic, tools, UI icons, and architecture.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable first-person survival-horror
-    screenshot subject: keep clear threat/object function, hiding route, device/tool scale,
-    interactable affordance, and escape decision without copying source creatures or locations.
-  color_and_tone: >-
-    Use an orbital survival palette: sodium amber, emergency red, dirty teal, gunmetal grey, pale
-    screen green, wet black, and worn white panels. Keep value grouping legible without pixel-art
-    downgrade.
-  lighting_and_shadow: >-
-    Light the image through flickering tube lights, rotating alarm glow, flashlight cones, terminal
-    phosphor, and occluded corridor darkness. Lighting must clarify the playable route, threat,
-    focal subject, or objective and avoid generic cinematic bloom that destroys screenshot
-    readability.
-  texture_and_material: >-
-    Build surfaces from worn bulkheads, cassette-future interfaces, condensation, rubber seals,
-    scratched glass, cable bundles, and analog tech grime. Materials should feel like in-engine game
-    assets captured during play, with enough texture identity to separate props, terrain,
-    characters, hazards, and interactables.
-  camera_and_composition: >-
-    Compose with first-person camera, foreground hand/device/tool, tight corridor or service room
-    route, cover/hiding affordance, distant threat clue, and one survival decision. Avoid retro
-    pixel rendering and cinematic poster framing.
-  atmosphere_and_mood: >-
-    Carry an original orbital breach mood: anxious, industrial, hunted, analog, claustrophobic, and
-    quiet.
-  rendering_and_quality: >-
-    Finish as coherent first-person survival-horror screenshot style, not pixel art and not concept
-    art: diegetic motion tracker/device pips, sparse status lights, and environmental objective cues
-    can appear. Maintain heavy-denoise clarity, readable route, and no readable signage/logos.
-  key_features: >-
-    Alien: Isolation gameplay screenshots; retro-futurist space-station survival horror capture with
-    narrow corridors, maintenance panels, emergency alarms, and vulnerable first-person stealth;
-    dirty cream plastic, warning orange, medical green monitors, deep black vents, and cold
-    fluorescent blue; flickering tube lights, rotating alarm glow, flashlight cones, terminal
-    phosphor, and occluded corridor darkness; worn bulkheads, cassette-future interfaces,
-    condensation, rubber seals, scratched glass, cable bundles, and analog tech grime; first-person
-    corridor composition with motion-tracker depth, hiding spots, doorway silhouettes, and
-    claustrophobic route uncertainty; anxious, analog, hunted, industrial, and breath-held; HUD
-    guidance: coherent survival UI can include a motion tracker, small objective marker, or diegetic
-    device screen; avoid arcade overlays
-  creative_brief: "Orbital Freight Breach: in-game screenshot language informed by first-person survival-horror references, covering analog devices, industrial corridors, hostile unseen pressure, diegetic HUD, and playable escape/hiding decisions. Avoid direct Alien Isolation cloning, exact station copies, creature silhouette copying, and retro pixel downgrade. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'Creative Assembly Alien: Isolation (2014) look: first-person survival horror on a 1979 lo-fi retro-futurist station, chunky CRT monitors, analog motion tracker, flickering corridors and film-grain dread.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as ordinary engineers and crew in worn seventies work clothes, seen from first person. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Sickly green CRT, emergency red, beige plastic and deep shadow.
+  lighting_and_shadow: Flickering fluorescents, emergency strobes and dark vents, lit the way Alien Isolation 2014 lights its levels.
+  texture_and_material: Chunky beige plastic, grimy metal, film grain and VHS noise.
+  camera_and_composition: First-person view holding an analog motion tracker, framed the way Alien Isolation 2014 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with suffocating hunted dread.
+  rendering_and_quality: Authentic mid-2010s retro-futurist horror screen, matching real Alien Isolation 2014 screenshots.
+  key_features: Alien Isolation lo-fi; motion tracker; CRT green; film grain
+  creative_brief: 'Creative Assembly Alien: Isolation (2014) look: first-person survival horror on a 1979 lo-fi retro-futurist station, chunky CRT monitors, analog motion tracker, flickering corridors and film-grain dread. Carry it through Alien Isolation lo-fi, motion tracker, CRT green, film grain. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
+  - a black biomechanical alien with an elongated head
   - watermark
   - logo
   - copyright mark
@@ -94,22 +64,21 @@ avoidRules:
   - retro pixel downgrade
   - exact Sevastopol station copy
   - xenomorph silhouette copy
+  - text
+  - readable labels
+  - franchise likeness
+  - real person likeness
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-005.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, direct Alien Isolation clone, retro pixel downgrade, exact
-    Sevastopol station copy, xenomorph silhouette copy
+  negativePrompt: a black biomechanical alien with an elongated head, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Alien Isolation clone, retro pixel downgrade, exact Sevastopol station copy, xenomorph silhouette copy, text, readable labels, franchise likeness, real person likeness, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   referenceGame: Original first-person survival horror, Alien Isolation-informed
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    coherent survival UI can include a motion tracker, small objective marker, or diegetic device
-    screen; avoid arcade overlays
+  hudGuidance: coherent survival UI can include a motion tracker, small objective marker, or diegetic device screen; avoid arcade overlays
   renderFamily: first-person-survival-horror
   cameraFamily: first-person
   hudMode: diegetic-hud
@@ -127,6 +96,7 @@ taxonomy:
     - render-first-person-survival-horror
     - camera-first-person
     - hud-diegetic-hud
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-110
 packId: pack_12
-name: Prism Chapel Puzzle Capture
+name: The Talos Principle 2014 - Croteam Ruin Puzzle
 styleAnchors:
-  - Prism Chapel Puzzle Capture
+  - The Talos Principle 2014 - Croteam Ruin Puzzle
   - light-refraction puzzle screenshot
   - colored beams
-displayName: Prism Chapel Puzzle Capture
+displayName: The Talos Principle 2014 - Croteam Ruin Puzzle
 category: 2. Arcane Temples & Mythic Realms
 domain: light-refraction puzzle screenshot
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,22 +20,22 @@ tags:
   - prism-puzzle
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Prism chapel puzzle capture: an original first-person puzzle screenshot in a chapel where beams of colored light are bent through prisms onto ancient symbols.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; place the subject among beams of colored light redirected through prisms.
-  color_and_tone: Dim stone with pure red, green and blue light beams.
-  lighting_and_shadow: Sharp colored beams and glowing targets, kept consistent across the whole image.
-  texture_and_material: Crystal prisms, polished stone and dust in the air.
-  camera_and_composition: First-person view along the beam paths, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with quiet clever discovery.
-  rendering_and_quality: Clean puzzle capture with no readable text, kept consistent across the whole image.
-  creative_brief: "Prism chapel puzzle capture: an original first-person puzzle screenshot in a chapel where beams of colored light are bent through prisms onto ancient symbols. Carry it through colored beams, prisms, symbol targets, chapel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: colored beams; prisms; symbol targets; chapel
+  aesthetic: 'Croteam The Talos Principle (2014) look: first-person philosophical puzzle ruins, photoreal ancient stone, beams of light and laser connectors, sealed doors and quiet sunlit decay.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render every subject as part of a first-person puzzle space of beams, pedestals and sealed stone doors. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Warm sunlit stone, cool shadow and colored beam light.
+  lighting_and_shadow: Sunlit ruins with clean colored light beams, lit the way The Talos Principle 2014 lights its levels.
+  texture_and_material: Photoreal weathered stone and brushed metal devices, with the in-engine surface finish of The Talos Principle 2014.
+  camera_and_composition: First-person view facing puzzle devices, framed the way The Talos Principle 2014 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with serene philosophical puzzling.
+  rendering_and_quality: Authentic first-person puzzle screen, matching real The Talos Principle 2014 screenshots.
+  creative_brief: 'Croteam The Talos Principle (2014) look: first-person philosophical puzzle ruins, photoreal ancient stone, beams of light and laser connectors, sealed doors and quiet sunlit decay. Carry it through Talos Principle ruins, light beams, sealed doors. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Talos Principle ruins; light beams; sealed doors
 avoidRules:
   - readable runes
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -44,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: readable runes, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable runes, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -65,6 +68,7 @@ taxonomy:
     - prism-puzzle
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Number None Braid (2008) look: David Hellman painted impressionistic backgrounds, soft watercolor clouds, glowing puzzle pieces, a small suited figure and dreamy time-rewinding shimmer.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a small figure in soft painted impressionistic side-view platform worlds. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Soft watercolor gold, green and dusk blue, true to the Braid 2008 palette.
-  lighting_and_shadow: Glowing dreamy light with shimmering haze, lit the way Braid 2008 lights its scenes.
-  texture_and_material: Painterly impressionistic brush textures, with the surface finish of Braid 2008.
-  camera_and_composition: Side-view platform scenes, framed the way Braid 2008 composes its shots and pages.
+  lighting_and_shadow: Glowing dreamy light with shimmering haze, lit the way Braid 2008 lights its levels.
+  texture_and_material: Painterly impressionistic brush textures, with the in-engine surface finish of Braid 2008.
+  camera_and_composition: Side-view platform scenes, framed the way Braid 2008 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with wistful dreamy regret.
-  rendering_and_quality: Authentic late-2000s painted indie platformer screen, in the recognizable hand of Braid 2008.
+  rendering_and_quality: Authentic late-2000s painted indie platformer screen, matching real Braid 2008 screenshots.
   creative_brief: 'Number None Braid (2008) look: David Hellman painted impressionistic backgrounds, soft watercolor clouds, glowing puzzle pieces, a small suited figure and dreamy time-rewinding shimmer. Carry it through Braid painted backgrounds, puzzle pieces, time shimmer. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Braid painted backgrounds; puzzle pieces; time shimmer
 avoidRules:
@@ -46,13 +46,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: a red-haired man in a suit and tie, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a red-haired man in a suit and tie, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-152
 packId: pack_12
-name: Dog-Sled Frontier Run Capture
+name: Spirit of the North 2019 - Infuse Nordic Aurora
 styleAnchors:
-  - Dog-Sled Frontier Run Capture
+  - Spirit of the North 2019 - Infuse Nordic Aurora
   - sled dog race screenshot
   - sled dogs
-displayName: Dog-Sled Frontier Run Capture
+displayName: Spirit of the North 2019 - Infuse Nordic Aurora
 category: 6. Wilderness Hunts & Harsh Frontiers
 domain: sled dog race screenshot
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - dog-sled
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Dog-sled frontier run capture: an original third-person screenshot of a sled team racing across a frozen frontier, spray of snow, aurora and pine forest.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject racing a dog sled across frozen wilderness.
-  color_and_tone: White snow, deep blue night and green aurora.
-  lighting_and_shadow: Aurora glow and sled lantern, kept consistent across the whole image.
-  texture_and_material: Snow spray, fur, wood runners and frost, kept consistent across the whole image.
-  camera_and_composition: Low chase angle behind the team, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with wild frontier momentum.
-  rendering_and_quality: Clean capture with no HUD, kept consistent across the whole image.
-  creative_brief: "Dog-sled frontier run capture: an original third-person screenshot of a sled team racing across a frozen frontier, spray of snow, aurora and pine forest. Carry it through sled dogs, frozen frontier, aurora, snow spray. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: sled dogs; frozen frontier; aurora; snow spray
+  aesthetic: 'Infuse Studio Spirit of the North (2019) look: stylized low-detail Nordic landscapes, green auroras, snowy rivers, spirit guardians and quiet wordless travel.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people and animals as soft stylized figures in snowy landscapes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Aurora green, snow white and night blue, true to the Spirit of the North 2019 palette.
+  lighting_and_shadow: Aurora glow and soft moonlight, lit the way Spirit of the North 2019 lights its levels.
+  texture_and_material: Soft stylized snow and ice, with the in-engine surface finish of Spirit of the North 2019.
+  camera_and_composition: Third-person wide travel view, framed the way Spirit of the North 2019 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with serene northern mystery.
+  rendering_and_quality: Authentic stylized adventure screen, matching real Spirit of the North 2019 screenshots.
+  creative_brief: 'Infuse Studio Spirit of the North (2019) look: stylized low-detail Nordic landscapes, green auroras, snowy rivers, spirit guardians and quiet wordless travel. Carry it through Spirit of the North aurora, Nordic snow. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Spirit of the North aurora; Nordic snow
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - dog-sled
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

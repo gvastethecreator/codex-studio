@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-187
 packId: pack_12
-name: Night Village Monster Hunt Gameplay
+name: Hunt Showdown 2019 - Crytek Bayou Hunt
 styleAnchors:
-  - Night Village Monster Hunt Gameplay
+  - Hunt Showdown 2019 - Crytek Bayou Hunt
   - third-person monster hunter village gameplay
   - night village
-displayName: Night Village Monster Hunt Gameplay
+displayName: Hunt Showdown 2019 - Crytek Bayou Hunt
 category: 9. Gothic & Dungeon Gameplay
 domain: third-person monster hunter village gameplay
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - night-village
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Night village monster hunt gameplay: an original third-person capture of a hunter stalking a creature through a dark village, torches, fog and shuttered houses.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject hunting a creature through a foggy night village.
-  color_and_tone: Blue night, torch orange and fog grey, kept consistent across the whole image.
-  lighting_and_shadow: Torchlight and moon rims, kept consistent across the whole image.
-  texture_and_material: Timber houses, mud, fog and silver weapons, kept consistent across the whole image.
-  camera_and_composition: Third-person over-the-shoulder down a lane, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with tense folk horror.
-  rendering_and_quality: Clean capture with no UI, kept consistent across the whole image.
-  creative_brief: "Night village monster hunt gameplay: an original third-person capture of a hunter stalking a creature through a dark village, torches, fog and shuttered houses. Carry it through night village, hunter, creature, fog. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: night village; hunter; creature; fog
+  aesthetic: 'Crytek Hunt: Showdown (2019) look: 1895 Louisiana bayou hunting of monsters, fog villages, gritty period weapons and realistic lighting.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as gritty 1895 bounty hunters. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Fog grey, swamp green and lamplight, true to the Hunt Showdown 2019 palette.
+  lighting_and_shadow: Foggy dusk, lit the way Hunt Showdown 2019 lights its levels.
+  texture_and_material: Realistic wood and mud, with the in-engine surface finish of Hunt Showdown 2019.
+  camera_and_composition: First-person hunting view, framed the way Hunt Showdown 2019 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with gritty monster hunt.
+  rendering_and_quality: Authentic hunt shooter screen, matching real Hunt Showdown 2019 screenshots.
+  creative_brief: 'Crytek Hunt: Showdown (2019) look: 1895 Louisiana bayou hunting of monsters, fog villages, gritty period weapons and realistic lighting. Carry it through Hunt Showdown bayou, fog, monsters. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Hunt Showdown bayou; fog; monsters
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - night-village
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

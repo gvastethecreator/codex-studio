@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-103
 packId: pack_12
-name: Night-Market Brawler Capture
+name: River City Girls 2019 - WayForward Pixel Brawler
 styleAnchors:
-  - Night-Market Brawler Capture
+  - River City Girls 2019 - WayForward Pixel Brawler
   - side-scrolling street fight screenshot
   - side-scrolling lane
-displayName: Night-Market Brawler Capture
+displayName: River City Girls 2019 - WayForward Pixel Brawler
 category: 1. Neon Urban & Night Ops
 domain: side-scrolling street fight screenshot
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - night-market
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Night-market brawler capture: an original side-scrolling beat-em-up screenshot in a crowded night market, food stalls, lanterns and breakable props.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject mid-fight in a side-scrolling night market lane.
-  color_and_tone: Warm lantern orange, steam white and neon pink.
-  lighting_and_shadow: Lantern and stall light with steam glow, kept consistent across the whole image.
-  texture_and_material: Food stalls, crates, steam and hand-drawn sprites, kept consistent across the whole image.
-  camera_and_composition: Side-on lane with enemies from both sides, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with rowdy festive chaos.
-  rendering_and_quality: Clean hand-drawn game capture, kept consistent across the whole image.
-  creative_brief: "Night-market brawler capture: an original side-scrolling beat-em-up screenshot in a crowded night market, food stalls, lanterns and breakable props. Carry it through side-scrolling lane, food stalls, lanterns, breakable props. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: side-scrolling lane; food stalls; lanterns; breakable props
+  aesthetic: 'WayForward River City Girls (2019) look: bright detailed pixel-art beat em up, anime-inspired character sprites, crowded Japanese streets and shops, comic hit effects and loud pop color.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as bright detailed pixel-art brawler sprites with anime proportions. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Loud pop pink, lemon, teal and warm lantern orange.
+  lighting_and_shadow: Bright lantern light and flashing hit effects, lit the way River City Girls 2019 lights its levels.
+  texture_and_material: Detailed modern pixel art with crisp dithering, with the in-engine surface finish of River City Girls 2019.
+  camera_and_composition: Side-scrolling brawler lane, framed the way River City Girls 2019 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with bratty chaotic fun.
+  rendering_and_quality: Authentic modern pixel-art brawler screen, matching real River City Girls 2019 screenshots.
+  creative_brief: 'WayForward River City Girls (2019) look: bright detailed pixel-art beat em up, anime-inspired character sprites, crowded Japanese streets and shops, comic hit effects and loud pop color. Carry it through River City Girls pixel art, pop colors, street brawl. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: River City Girls pixel art; pop colors; street brawl
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - night-market
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

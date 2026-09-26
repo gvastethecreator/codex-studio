@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-186
 packId: pack_12
-name: Crypt Thief Stealth Gameplay
+name: Thief The Dark Project 1998 - Looking Glass Shadow Stealth
 styleAnchors:
-  - Crypt Thief Stealth Gameplay
+  - Thief The Dark Project 1998 - Looking Glass Shadow Stealth
   - first-person thief stealth gameplay
   - first-person stealth
-displayName: Crypt Thief Stealth Gameplay
+displayName: Thief The Dark Project 1998 - Looking Glass Shadow Stealth
 category: 9. Gothic & Dungeon Gameplay
 domain: first-person thief stealth gameplay
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - crypt-thief
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Crypt thief stealth gameplay: an original first-person stealth capture of a thief in shadows, a glowing light indicator mood, guards with lanterns and gothic interiors.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject from first person hidden in shadow among patrolling guards.
-  color_and_tone: Deep shadow with lantern gold, kept consistent across the whole image.
-  lighting_and_shadow: Pools of light and total darkness, kept consistent across the whole image.
-  texture_and_material: Stone, tapestries and polished loot, kept consistent across the whole image.
-  camera_and_composition: First-person from a shadowed corner, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with breathless stealth, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no UI, kept consistent across the whole image.
-  creative_brief: "Crypt thief stealth gameplay: an original first-person stealth capture of a thief in shadows, a glowing light indicator mood, guards with lanterns and gothic interiors. Carry it through first-person stealth, shadows, guards with lanterns, loot. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: first-person stealth; shadows; guards with lanterns; loot
+  aesthetic: 'Looking Glass Studios Thief: The Dark Project (1998) look: first-person stealth in a gothic steampunk city, deep shadows, lanterns and low-poly guards.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as low-poly guards and thieves. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Deep shadow and lantern amber, true to the Thief The Dark Project 1998 palette.
+  lighting_and_shadow: Light gem darkness, lit the way Thief The Dark Project 1998 lights its levels.
+  texture_and_material: Low-resolution stone and wood, with the in-engine surface finish of Thief The Dark Project 1998.
+  camera_and_composition: First-person shadow view, framed the way Thief The Dark Project 1998 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with tense sneaky patience.
+  rendering_and_quality: Authentic late-nineties stealth screen, matching real Thief The Dark Project 1998 screenshots.
+  creative_brief: 'Looking Glass Studios Thief: The Dark Project (1998) look: first-person stealth in a gothic steampunk city, deep shadows, lanterns and low-poly guards. Carry it through Thief shadows, lanterns, gothic city. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Thief shadows; lanterns; gothic city
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - crypt-thief
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

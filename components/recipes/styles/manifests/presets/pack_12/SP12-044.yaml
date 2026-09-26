@@ -1,14 +1,14 @@
 schemaVersion: 1
 id: SP12-044
 packId: pack_12
-name: Velvet Mask Palace Run
+name: Persona 5 2016 - Atlus Red-Black Phantom Heist
 styleAnchors:
-  - stylized palace infiltration JRPG gameplay screenshots
+  - Persona 5 2016 - Atlus Red-Black Phantom Heist
   - masked heist palace route
   - Velvet Mask Palace Run
-displayName: Velvet Mask Palace Run
+displayName: Persona 5 2016 - Atlus Red-Black Phantom Heist
 category: 2. Arcane Temples & Mythic Realms
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -22,48 +22,21 @@ tags:
   - render-stylized-third-person-jrpg
   - camera-third-person
   - hud-contextual-hud
+  - reference-title
 visualDna:
-  aesthetic: 'Original in-game screenshot look for stylized palace infiltration JRPG captures: third-person stealth route, theatrical palace interiors, masked enemies, graphic UI accents, sharp color blocking, and readable ambush/combat transitions. Borrow the stylish readability of Persona-like palace gameplay, but land as a different fictional mask-heist JRPG with different costumes, symbols, UI icons, menus, and palace motifs.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable stylized palace run screenshot
-    subject: keep clear player/enemy/object function, stealth route, ambush distance, cover, and
-    interaction affordance without copying source costumes or characters.
-  color_and_tone: >-
-    Use a stylized palace palette: velvet red, black lacquer, ivory floor light, gold trim, cyan UI
-    accent, violet shadow, and theatrical spot color. Keep silhouettes crisp and graphic.
-  lighting_and_shadow: >-
-    Light the image through stage spotlights, palace glow, high-contrast cel shadows, attack
-    flashes, and stylized menu-like transitions. Lighting must clarify the playable route, threat,
-    focal subject, or objective and avoid generic cinematic bloom that destroys screenshot
-    readability.
-  texture_and_material: >-
-    Build surfaces from slick cel-shaded characters without copying cast likeness, ornate palace
-    props, masks, velvet, cards, and graphic overlays. Materials should feel like in-engine game
-    assets captured during play, with enough texture identity to separate props, terrain,
-    characters, hazards, and interactables.
-  camera_and_composition: >-
-    Compose with third-person infiltration or combat camera, palace route depth, enemy spacing,
-    cover/ambush affordance, and abstract UI shapes. Avoid board-command framing and menu-screen
-    composition.
-  atmosphere_and_mood: >-
-    Carry an original velvet-mask palace mood: stylish, theatrical, rebellious, sly, luxurious, and
-    kinetic.
-  rendering_and_quality: >-
-    Finish as coherent stylized third-person JRPG gameplay screenshot style, not concept art:
-    contextual action icons, turn/ambush cues, and graphic UI shapes can appear but must be
-    non-readable. Maintain heavy-denoise clarity, crisp silhouettes, and no readable menu text.
-  key_features: >-
-    Persona 5 Royal gameplay screenshots; stylish JRPG palace capture with angular UI energy,
-    red-black fashion, stealth ambush framing, and surreal luxury interiors; crimson red, black,
-    cream, gold, saturated blue shadows, and graphic white accents; stage spotlights, palace glow,
-    high-contrast cel shadows, attack flashes, and stylized menu-like transitions; slick cel-shaded
-    characters without copying cast likeness, ornate palace props, masks, velvet, cards, and graphic
-    overlays; third-person palace exploration or turn-based combat framing with ambush angles, enemy
-    weaknesses, and dramatic UI rhythm; rebellious, decadent, theatrical, sharp, and stylish; HUD
-    guidance: bold JRPG battle/exploration UI is part of the style: angular panels, turn icons, and
-    command shapes can appear without readable logo text
-  creative_brief: "Velvet Mask Palace Run: in-game screenshot language informed by stylized palace JRPG references, covering third-person stealth/combat camera, theatrical color blocking, masked enemies, palace route affordances, and abstract UI grammar. Avoid direct Persona cloning, exact costumes, board-command camera, and readable menu text. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'Atlus Persona 5 (2016) look: stylized anime cel 3D with a bold red, black and white graphic identity, torn paper shapes, halftone and theatrical palaces for heists.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as stylish cel-shaded anime characters with masks and dynamic heist poses. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Bold red, black and white only, true to the Persona 5 2016 palette.
+  lighting_and_shadow: Dramatic theatrical light with sharp black shadows, lit the way Persona 5 2016 lights its levels.
+  texture_and_material: Cel shading with halftone, torn paper and graphic shapes.
+  camera_and_composition: Dynamic tilted angles through palace interiors, framed the way Persona 5 2016 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with stylish rebellious heist.
+  rendering_and_quality: Authentic stylized anime JRPG screen, matching real Persona 5 2016 screenshots.
+  key_features: Persona 5 red and black; masked thieves; graphic flair
+  creative_brief: 'Atlus Persona 5 (2016) look: stylized anime cel 3D with a bold red, black and white graphic identity, torn paper shapes, halftone and theatrical palaces for heists. Carry it through Persona 5 red and black, masked thieves, graphic flair. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
+  - a black-haired thief in a long black coat and white mask
+  - a cat with a yellow scarf
   - watermark
   - logo
   - copyright mark
@@ -92,22 +65,21 @@ avoidRules:
   - board command camera
   - readable menu text
   - exact phantom thief costume
+  - text
+  - readable labels
+  - franchise likeness
+  - real person likeness
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-044.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, direct Persona clone, board command camera, readable menu
-    text, exact phantom thief costume
+  negativePrompt: a black-haired thief in a long black coat and white mask, a cat with a yellow scarf, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Persona clone, board command camera, readable menu text, exact phantom thief costume, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Original stylized palace JRPG, Persona-informed
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    bold JRPG battle/exploration UI is part of the style: angular panels, turn icons, and command
-    shapes can appear without readable logo text
+  hudGuidance: 'bold JRPG battle/exploration UI is part of the style: angular panels, turn icons, and command shapes can appear without readable logo text'
   renderFamily: stylized-third-person-jrpg
   cameraFamily: third-person
   hudMode: contextual-hud
@@ -125,6 +97,7 @@ taxonomy:
     - render-stylized-third-person-jrpg
     - camera-third-person
     - hud-contextual-hud
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

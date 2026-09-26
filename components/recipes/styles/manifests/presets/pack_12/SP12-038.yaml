@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP12-038
 packId: pack_12
-name: World of Warships Iron Reef
+name: World of Warships 2015 - Wargaming Naval Broadside
 styleAnchors:
-  - World of Warships gameplay screenshots
+  - World of Warships 2015 - Wargaming Naval Broadside
   - World of Warships Iron Reef
-displayName: World of Warships Iron Reef
+displayName: World of Warships 2015 - Wargaming Naval Broadside
 category: 4. Sieges, Warfronts & Last Stands
-version: 1
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,48 +23,16 @@ tags:
   - hud-full-hud
   - reference-title
 visualDna:
-  aesthetic: 'In-game screenshot look informed by World of Warships gameplay: naval combat capture with third-person warship camera, ocean scale, shell tracers, islands, torpedo lanes, and tactical HUD density. It never recreates an exact official level, character, logo or marketing art.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable World of Warships-adjacent game
-    screenshot subject: keep clear role silhouette, player/enemy/object function, scale
-    relationship, hitbox-like readability, and interaction affordances without copying source
-    characters or named IP elements.
-  color_and_tone: >-
-    Use a World of Warships-informed palette: steel grey, ocean blue, shell orange, smoke black, UI
-    green/red, and pale sky haze. Keep value grouping legible at gameplay distance, with color
-    accents behaving like route, danger, pickup, team, magic, or objective cues rather than
-    decorative wash.
-  lighting_and_shadow: >-
-    Light the image through open-sea daylight, muzzle flashes, fire plumes, water reflections, and
-    smoke-diffused contrast. Lighting must clarify the playable route, threat, focal subject, or
-    objective and avoid generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from warship armor, wet decks, waves, island cliffs, radar wakes, smoke, shell
-    splashes, and utilitarian naval detail. Materials should feel like in-engine game assets
-    captured during play, with enough texture identity to separate props, terrain, characters,
-    hazards, and interactables.
-  camera_and_composition: >-
-    Compose with third-person tactical camera with ship heading, target range, minimap, torpedo
-    indicators, and broad battle-space readability. The frame should read as a plausible gameplay
-    capture; include UI/HUD only when it matches the source game's visual logic and improves
-    clarity.
-  atmosphere_and_mood: 'World of Warships-derived mood: heavy, strategic, naval, explosive, and measured; it follows the tone of the requested scene without forcing a fixed mission or story.'
-  rendering_and_quality: >-
-    Finish as a coherent in-engine screenshot style, not concept art: naval HUD can be dense:
-    minimap, reticle, ship status, cooldowns, and target markers are coherent here. Maintain
-    heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos,
-    stock-photo polish, or random interface clutter.
-  key_features: >-
-    World of Warships gameplay screenshots; naval combat capture with third-person warship camera,
-    ocean scale, shell tracers, islands, torpedo lanes, and tactical HUD density; steel grey, ocean
-    blue, shell orange, smoke black, UI green/red, and pale sky haze; open-sea daylight, muzzle
-    flashes, fire plumes, water reflections, and smoke-diffused contrast; warship armor, wet decks,
-    waves, island cliffs, radar wakes, smoke, shell splashes, and utilitarian naval detail;
-    third-person tactical camera with ship heading, target range, minimap, torpedo indicators, and
-    broad battle-space readability; heavy, strategic, naval, explosive, and measured; HUD guidance:
-    naval HUD can be dense: minimap, reticle, ship status, cooldowns, and target markers are
-    coherent here
-  creative_brief: "World of Warships Iron Reef: in-game screenshot language informed by World of Warships, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'Wargaming World of Warships (2015) look: realistic naval combat with detailed WWII-style battleships, shell tracers arcing across open ocean, smoke screens and third-person ship camera.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render vessels as detailed realistic warships seen from a third-person camera. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Steel grey, ocean blue and tracer orange, true to the World of Warships 2015 palette.
+  lighting_and_shadow: Stormy daylight with muzzle flashes, lit the way World of Warships 2015 lights its levels.
+  texture_and_material: Realistic hulls, water spray and smoke, with the in-engine surface finish of World of Warships 2015.
+  camera_and_composition: Third-person naval camera, framed the way World of Warships 2015 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with thunderous naval clash.
+  rendering_and_quality: Authentic naval combat screen, matching real World of Warships 2015 screenshots.
+  key_features: World of Warships broadside; tracers; naval camera
+  creative_brief: 'Wargaming World of Warships (2015) look: realistic naval combat with detailed WWII-style battleships, shell tracers arcing across open ocean, smoke screens and third-person ship camera. Carry it through World of Warships broadside, tracers, naval camera. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - watermark
   - logo
@@ -92,23 +60,15 @@ avoidRules:
   - copied box art composition
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-038.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: World of Warships
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    naval HUD can be dense: minimap, reticle, ship status, cooldowns, and target markers are
-    coherent here
+  hudGuidance: 'naval HUD can be dense: minimap, reticle, ship status, cooldowns, and target markers are coherent here'
   renderFamily: strategy-tactics
   cameraFamily: third-person
   hudMode: full-hud

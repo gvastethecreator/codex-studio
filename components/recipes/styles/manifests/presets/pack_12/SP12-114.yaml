@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-114
 packId: pack_12
-name: Underwater Temple Dive Capture
+name: Abzu 2016 - Giant Squid Luminous Dive
 styleAnchors:
-  - Underwater Temple Dive Capture
+  - Abzu 2016 - Giant Squid Luminous Dive
   - sunken temple exploration screenshot
   - sunken temple
-displayName: Underwater Temple Dive Capture
+displayName: Abzu 2016 - Giant Squid Luminous Dive
 category: 2. Arcane Temples & Mythic Realms
 domain: sunken temple exploration screenshot
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - underwater-temple
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Underwater temple dive capture: an original third-person diving screenshot through a sunken temple, god rays, schools of fish, coral-covered statues and air bubbles.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject diving through a sunken temple with bubbles and light rays.
-  color_and_tone: Deep teal, turquoise light and coral pinks, kept consistent across the whole image.
-  lighting_and_shadow: Caustic god rays from the surface, kept consistent across the whole image.
-  texture_and_material: Coral, weathered stone, bubbles and kelp, kept consistent across the whole image.
-  camera_and_composition: Third-person behind the diver into depth, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with serene deep mystery.
-  rendering_and_quality: Clean underwater capture with no HUD text, kept consistent across the whole image.
-  creative_brief: "Underwater temple dive capture: an original third-person diving screenshot through a sunken temple, god rays, schools of fish, coral-covered statues and air bubbles. Carry it through sunken temple, god rays, fish schools, bubbles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: sunken temple; god rays; fish schools; bubbles
+  aesthetic: 'Giant Squid Abzu (2016) look: vivid underwater exploration with luminous schools of fish, clean stylized shapes, sunlit god rays, coral and ancient sunken temples.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as small stylized divers moving among vast shoals of fish. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Luminous turquoise, coral orange and deep blue, true to the Abzu 2016 palette.
+  lighting_and_shadow: Sunlit god rays through clear water, lit the way Abzu 2016 lights its levels.
+  texture_and_material: Smooth stylized shapes without grime, with the in-engine surface finish of Abzu 2016.
+  camera_and_composition: Third-person swimming view, framed the way Abzu 2016 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with meditative oceanic awe.
+  rendering_and_quality: Authentic stylized underwater screen, matching real Abzu 2016 screenshots.
+  creative_brief: 'Giant Squid Abzu (2016) look: vivid underwater exploration with luminous schools of fish, clean stylized shapes, sunlit god rays, coral and ancient sunken temples. Carry it through Abzu luminous shoals, god rays, sunken temples. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Abzu luminous shoals; god rays; sunken temples
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - underwater-temple
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

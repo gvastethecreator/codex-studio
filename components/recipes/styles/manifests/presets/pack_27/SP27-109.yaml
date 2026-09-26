@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Namco Katamari Damacy (2004) look: flat-shaded low-poly toy world, candy colors, a sticky ball rolling up everyday objects, tiny prince figures and absurdist cheer.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a flat-shaded low-poly toy figure among candy-colored everyday objects. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Candy pink, mint, lemon and sky blue, true to the Katamari Damacy 2004 palette.
-  lighting_and_shadow: Flat cheerful light with no harsh shadows, lit the way Katamari Damacy 2004 lights its scenes.
-  texture_and_material: Flat-shaded simple polygons with no texture detail, with the surface finish of Katamari Damacy 2004.
-  camera_and_composition: Third-person view behind a rolling ball, framed the way Katamari Damacy 2004 composes its shots and pages.
+  lighting_and_shadow: Flat cheerful light with no harsh shadows, lit the way Katamari Damacy 2004 lights its levels.
+  texture_and_material: Flat-shaded simple polygons with no texture detail, with the in-engine surface finish of Katamari Damacy 2004.
+  camera_and_composition: Third-person view behind a rolling ball, framed the way Katamari Damacy 2004 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with absurdist joyful chaos.
-  rendering_and_quality: Authentic PS2 flat-shaded screen, in the recognizable hand of Katamari Damacy 2004.
+  rendering_and_quality: Authentic PS2 flat-shaded screen, matching real Katamari Damacy 2004 screenshots.
   creative_brief: 'Namco Katamari Damacy (2004) look: flat-shaded low-poly toy world, candy colors, a sticky ball rolling up everyday objects, tiny prince figures and absurdist cheer. Carry it through Katamari flat low-poly, rolling ball, candy colors, absurd. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Katamari flat low-poly; rolling ball; candy colors; absurd
 avoidRules:
@@ -47,13 +47,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: a tiny green prince with a rod-shaped head, a giant king in tights, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a tiny green prince with a rod-shaped head, a giant king in tights, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

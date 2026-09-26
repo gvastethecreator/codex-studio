@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-133
 packId: pack_12
-name: Barricade Night Holdout Capture
+name: Resident Evil 7 2017 - Capcom Louisiana Farmhouse
 styleAnchors:
-  - Barricade Night Holdout Capture
+  - Resident Evil 7 2017 - Capcom Louisiana Farmhouse
   - survival barricade defense screenshot
   - boarded windows
-displayName: Barricade Night Holdout Capture
+displayName: Resident Evil 7 2017 - Capcom Louisiana Farmhouse
 category: 4. Sieges, Warfronts & Last Stands
 domain: survival barricade defense screenshot
-version: 1
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,19 +20,20 @@ tags:
   - barricade-holdout
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Barricade night holdout capture: an original third-person survival screenshot of survivors defending a boarded-up farmhouse at night, flashlights and silhouettes at the windows.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject defending a barricaded building at night.
-  color_and_tone: Dark blues with flashlight white and lamp amber.
-  lighting_and_shadow: Flashlight beams and window silhouettes, kept consistent across the whole image.
-  texture_and_material: Wooden boards, nails, broken glass and mud, kept consistent across the whole image.
-  camera_and_composition: Over-the-shoulder view toward the windows, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with tense survival dread.
-  rendering_and_quality: Clean capture without gore or HUD text, kept consistent across the whole image.
-  creative_brief: "Barricade night holdout capture: an original third-person survival screenshot of survivors defending a boarded-up farmhouse at night, flashlights and silhouettes at the windows. Carry it through boarded windows, flashlights, night, survivors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: boarded windows; flashlights; night; survivors
+  aesthetic: 'Capcom Resident Evil 7: Biohazard (2017) look: first-person horror in a rotting Louisiana farmhouse, photoreal decay, VHS found-footage grain, flashlight beams and humid dread.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as ordinary survivors in dirty everyday clothes, seen from first person. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Rotting brown, humid green and flashlight white, true to the Resident Evil 7 2017 palette.
+  lighting_and_shadow: Flashlight beam in heavy darkness, lit the way Resident Evil 7 2017 lights its levels.
+  texture_and_material: Photoreal rot, mold and wood, with the in-engine surface finish of Resident Evil 7 2017.
+  camera_and_composition: First-person view at boarded windows, framed the way Resident Evil 7 2017 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with humid claustrophobic terror.
+  rendering_and_quality: Authentic modern first-person horror screen, matching real Resident Evil 7 2017 screenshots.
+  creative_brief: 'Capcom Resident Evil 7: Biohazard (2017) look: first-person horror in a rotting Louisiana farmhouse, photoreal decay, VHS found-footage grain, flashlight beams and humid dread. Carry it through RE7 farmhouse, photoreal rot, flashlight. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: RE7 farmhouse; photoreal rot; flashlight
 avoidRules:
-  - gore
+  - existing Baker family members
   - existing game characters, logos or levels
   - readable interface text
   - readable text
@@ -43,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: gore, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing Baker family members, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +68,7 @@ taxonomy:
     - barricade-holdout
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

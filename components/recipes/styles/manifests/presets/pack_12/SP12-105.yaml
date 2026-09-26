@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-105
 packId: pack_12
-name: Drone Night Feed Capture
+name: Call of Duty 4 2007 - Infinity Ward Thermal Gunship Feed
 styleAnchors:
-  - Drone Night Feed Capture
+  - Call of Duty 4 2007 - Infinity Ward Thermal Gunship Feed
   - surveillance drone game screenshot
   - night vision
-displayName: Drone Night Feed Capture
+displayName: Call of Duty 4 2007 - Infinity Ward Thermal Gunship Feed
 category: 1. Neon Urban & Night Ops
 domain: surveillance drone game screenshot
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,22 +20,22 @@ tags:
   - drone-feed
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Drone night feed capture: an original surveillance-drone screenshot in grainy night vision, tagged silhouettes, scan lines and a wide overhead view.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject from above through a grainy drone night-vision feed.
-  color_and_tone: Green or thermal white-hot monochrome, kept consistent across the whole image.
-  lighting_and_shadow: Night-vision glow and hot thermal silhouettes, kept consistent across the whole image.
-  texture_and_material: Sensor grain, scan lines and blocky compression, kept consistent across the whole image.
-  camera_and_composition: Top-down or steep drone angle with markers, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with cold watchful distance.
-  rendering_and_quality: Convincing sensor feed with no readable data, kept consistent across the whole image.
-  creative_brief: "Drone night feed capture: an original surveillance-drone screenshot in grainy night vision, tagged silhouettes, scan lines and a wide overhead view. Carry it through night vision, drone angle, target brackets, scan lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: night vision; drone angle; target brackets; scan lines
+  aesthetic: 'Infinity Ward Call of Duty 4: Modern Warfare (2007) look: grainy black-and-white thermal gunship camera feed, white-hot figures, crosshair brackets and circling aerial perspective.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as white-hot thermal silhouettes seen from high above. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Monochrome white-hot on grey and black, true to the Call of Duty 4 2007 palette.
+  lighting_and_shadow: Thermal contrast with heat blooms, lit the way Call of Duty 4 2007 lights its levels.
+  texture_and_material: Grainy thermal noise and scan lines, with the in-engine surface finish of Call of Duty 4 2007.
+  camera_and_composition: Circling overhead thermal feed with brackets, framed the way Call of Duty 4 2007 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with detached surveillance dread.
+  rendering_and_quality: Authentic late-2000s thermal camera screen, matching real Call of Duty 4 2007 screenshots.
+  creative_brief: 'Infinity Ward Call of Duty 4: Modern Warfare (2007) look: grainy black-and-white thermal gunship camera feed, white-hot figures, crosshair brackets and circling aerial perspective. Carry it through Thermal gunship feed, white-hot figures, brackets. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Thermal gunship feed; white-hot figures; brackets
 avoidRules:
   - readable data text
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -44,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: readable data text, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable data text, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -65,6 +68,7 @@ taxonomy:
     - drone-feed
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

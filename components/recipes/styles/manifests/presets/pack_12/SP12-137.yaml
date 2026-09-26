@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-137
 packId: pack_12
-name: Massed Cavalry Charge Capture
+name: Mount & Blade II Bannerlord 2020 - TaleWorlds Cavalry
 styleAnchors:
-  - Massed Cavalry Charge Capture
+  - Mount & Blade II Bannerlord 2020 - TaleWorlds Cavalry
   - large-scale battle cavalry screenshot
   - hundreds of riders
-displayName: Massed Cavalry Charge Capture
+displayName: Mount & Blade II Bannerlord 2020 - TaleWorlds Cavalry
 category: 4. Sieges, Warfronts & Last Stands
 domain: large-scale battle cavalry screenshot
-version: 1
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,19 +20,19 @@ tags:
   - cavalry-charge
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Massed cavalry charge capture: an original large-scale battle screenshot of hundreds of horsemen charging across a plain into a pike line, dust and banners.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject in a vast cavalry charge with hundreds of riders.
-  color_and_tone: Dust ochre, banner colors and steel grey, kept consistent across the whole image.
-  lighting_and_shadow: Low sun through dust clouds, kept consistent across the whole image.
-  texture_and_material: Horse hides, armor, dust and grass, kept consistent across the whole image.
-  camera_and_composition: Low wide angle along the charging line, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with thundering momentum, kept consistent across the whole image.
-  rendering_and_quality: Epic crowd capture without gore or HUD, kept consistent across the whole image.
-  creative_brief: "Massed cavalry charge capture: an original large-scale battle screenshot of hundreds of horsemen charging across a plain into a pike line, dust and banners. Carry it through hundreds of riders, pike line, dust, banners. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: hundreds of riders; pike line; dust; banners
+  aesthetic: 'TaleWorlds Mount & Blade II: Bannerlord (2020) look: massive medieval field battles with hundreds of horsemen, dust, pike lines and sunset plains.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as medieval riders and infantry in mail and cloth. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Sunset gold, dust brown and banner colors, true to the Mount & Blade II Bannerlord 2020 palette.
+  lighting_and_shadow: Low sun through dust, lit the way Mount & Blade II Bannerlord 2020 lights its levels.
+  texture_and_material: Realistic mail, cloth and dust, with the in-engine surface finish of Mount & Blade II Bannerlord 2020.
+  camera_and_composition: Low third-person battle view, framed the way Mount & Blade II Bannerlord 2020 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with thunderous medieval clash.
+  rendering_and_quality: Authentic medieval battle screen, matching real Mount & Blade II Bannerlord 2020 screenshots.
+  creative_brief: 'TaleWorlds Mount & Blade II: Bannerlord (2020) look: massive medieval field battles with hundreds of horsemen, dust, pike lines and sunset plains. Carry it through Bannerlord cavalry, massed battle, dust. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Bannerlord cavalry; massed battle; dust
 avoidRules:
-  - gore
   - existing game characters, logos or levels
   - readable interface text
   - readable text
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: gore, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - cavalry-charge
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

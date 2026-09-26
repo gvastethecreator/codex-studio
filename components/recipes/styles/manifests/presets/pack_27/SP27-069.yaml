@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Nintendo The Legend of Zelda (1986) NES look: top-down tile overworld of trees, rocks and sand, limited NES palette, tiny hero sprite with a shield and screen-by-screen exploration.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a tiny top-down sprite exploring a tiled NES overworld. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: NES palette of forest green, sand beige and rock brown.
-  lighting_and_shadow: Flat NES screen light, lit the way The Legend of Zelda 1986 lights its scenes.
+  lighting_and_shadow: Flat NES screen light, lit the way The Legend of Zelda 1986 lights its levels.
   texture_and_material: Visible chunky pixels on a curved CRT with scanlines, slight bloom and phosphor glow.
-  camera_and_composition: Top-down single-screen overworld with a status bar, framed the way The Legend of Zelda 1986 composes its shots and pages.
+  camera_and_composition: Top-down single-screen overworld with a status bar, framed the way The Legend of Zelda 1986 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with curious open adventure.
-  rendering_and_quality: Authentic mid-eighties NES screen capture, in the recognizable hand of The Legend of Zelda 1986.
+  rendering_and_quality: Authentic mid-eighties NES screen capture, matching real The Legend of Zelda 1986 screenshots.
   creative_brief: 'Nintendo The Legend of Zelda (1986) NES look: top-down tile overworld of trees, rocks and sand, limited NES palette, tiny hero sprite with a shield and screen-by-screen exploration. Carry it through NES top-down, tiled overworld, tiny hero, exploration. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: NES top-down; tiled overworld; tiny hero; exploration
 avoidRules:
@@ -47,13 +47,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: a green-tunic elf hero with a sword, a triforce, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a green-tunic elf hero with a sword, a triforce, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

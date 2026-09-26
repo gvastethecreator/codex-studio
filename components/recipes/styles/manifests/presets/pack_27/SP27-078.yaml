@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Enix Dragon Quest (1986) NES look: top-down town and field tiles, first-person battle screens with a single monster on black, command menus and Akira Toriyama monster designs.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a first-person JRPG battle screen with one monster on black and a command window. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: NES palette with a black battle background, true to the Dragon Quest 1986 palette.
-  lighting_and_shadow: Flat NES light, lit the way Dragon Quest 1986 lights its scenes.
+  lighting_and_shadow: Flat NES light, lit the way Dragon Quest 1986 lights its levels.
   texture_and_material: Visible chunky pixels on a curved CRT with scanlines, slight bloom and phosphor glow.
-  camera_and_composition: First-person battle screen with windowed menus, framed the way Dragon Quest 1986 composes its shots and pages.
+  camera_and_composition: First-person battle screen with windowed menus, framed the way Dragon Quest 1986 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with humble heroic adventure.
-  rendering_and_quality: Authentic NES JRPG battle screen, in the recognizable hand of Dragon Quest 1986.
+  rendering_and_quality: Authentic NES JRPG battle screen, matching real Dragon Quest 1986 screenshots.
   creative_brief: 'Enix Dragon Quest (1986) NES look: top-down town and field tiles, first-person battle screens with a single monster on black, command menus and Akira Toriyama monster designs. Carry it through Dragon Quest battle screen, monster on black, command window. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Dragon Quest battle screen; monster on black; command window
 avoidRules:
@@ -46,13 +46,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: a blue teardrop slime with a smile, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a blue teardrop slime with a smile, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-143
 packId: pack_12
-name: Versus Stage Fighter Capture
+name: Guilty Gear Strive 2021 - Arc System Works Anime 2.5D
 styleAnchors:
-  - Versus Stage Fighter Capture
+  - Guilty Gear Strive 2021 - Arc System Works Anime 2.5D
   - two-player fighting game screenshot
   - two fighters
-displayName: Versus Stage Fighter Capture
+displayName: Guilty Gear Strive 2021 - Arc System Works Anime 2.5D
 category: 5. Speed, Sport & Competitive Arenas
 domain: two-player fighting game screenshot
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,18 +20,20 @@ tags:
   - versus-fighter
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Versus stage fighter capture: an original side-view fighting game screenshot of two fighters mid-clash on a dramatic stage with a watching crowd.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject as one of two fighters mid-clash on a side-view stage.
-  color_and_tone: Vivid fighter colors against a dramatic stage, kept consistent across the whole image.
-  lighting_and_shadow: Impact flashes and stage light, kept consistent across the whole image.
-  texture_and_material: Detailed fighters, stage props and impact effects, kept consistent across the whole image.
-  camera_and_composition: Side-on camera with both fighters framed, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with explosive rivalry, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no health bars or text.
-  creative_brief: "Versus stage fighter capture: an original side-view fighting game screenshot of two fighters mid-clash on a dramatic stage with a watching crowd. Carry it through two fighters, side view, impact flash, dramatic stage. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: two fighters; side view; impact flash; dramatic stage
+  aesthetic: 'Arc System Works Guilty Gear Strive (2021) look: 3D rendered to look like hand-drawn anime, limited animation frames, heavy-metal stages and huge impact effects.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as anime fighters with sharp cel shading and bold silhouettes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Rock red, electric purple and bold contrast, true to the Guilty Gear Strive 2021 palette.
+  lighting_and_shadow: Dramatic stage light with impact flashes, lit the way Guilty Gear Strive 2021 lights its levels.
+  texture_and_material: Cel-shaded 3D that reads as 2D anime, with the in-engine surface finish of Guilty Gear Strive 2021.
+  camera_and_composition: Side-view 2.5D fighting camera, framed the way Guilty Gear Strive 2021 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with heavy-metal fighting intensity.
+  rendering_and_quality: Authentic anime fighter screen, matching real Guilty Gear Strive 2021 screenshots.
+  creative_brief: 'Arc System Works Guilty Gear Strive (2021) look: 3D rendered to look like hand-drawn anime, limited animation frames, heavy-metal stages and huge impact effects. Carry it through Guilty Gear anime 2.5D, impact effects, metal. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Guilty Gear anime 2.5D; impact effects; metal
 avoidRules:
+  - existing Guilty Gear fighters
   - health bars
   - existing game characters, logos or levels
   - readable interface text
@@ -44,13 +46,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: health bars, existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing Guilty Gear fighters, health bars, existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -65,6 +70,7 @@ taxonomy:
     - versus-fighter
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

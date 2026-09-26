@@ -5,347 +5,314 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-001',
-    name: 'Katana Zero Neo-Noir Sideview',
-    displayName: 'Katana Zero Neo-Noir Sideview',
-    styleAnchors: ['Katana ZERO gameplay screenshots', 'Katana Zero Neo-Noir Sideview'],
+    name: 'Katana Zero 2019 - Askiisoft Neo-Noir Pixel Slash',
+    displayName: 'Katana Zero 2019 - Askiisoft Neo-Noir Pixel Slash',
+    styleAnchors: [
+      'Katana Zero 2019 - Askiisoft Neo-Noir Pixel Slash',
+      'Katana Zero Neo-Noir Sideview',
+    ],
     category: '1. Neon Urban & Night Ops',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a samurai in a long coat with a headband, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Katana ZERO gameplay: 2D neo-noir action-platformer capture with side-view rooms, instant-death combat spacing, motel interiors, glass partitions, and cinematic pixel staging. It never recreates an exact official level, character, logo or marketing art.',
+        'Askiisoft Katana Zero (2019) look: side-view pixel art at low resolution, neo-noir motel and club interiors, teal and magenta neon, VHS scanline glitches, slow-motion afterimages and one-hit sword kills.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Katana ZERO-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as small crisp pixel-art sprites with readable silhouettes, trailing afterimages and sharp slash arcs. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Use a Katana ZERO-informed palette: black hotel shadow, red blood accents, sodium amber, teal window light, magenta signage, and small white bullet highlights. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Teal window light, hot magenta neon, deep purple shadow and blood red accents.',
       lighting_and_shadow:
-        'Light the image through hard interior cuts, neon spill through windows, slash trails, muzzle flashes, and time-slow contrast pulses. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Flat neon pools on pixel floors with bright slash flashes and dark rooms between lights.',
       texture_and_material:
-        'Build surfaces from chunky pixel silhouettes, glossy tile, wood paneling, rain glass, smoke puffs, shattered props, and clean sprite edges. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Low-resolution pixel art with VHS scanlines, chromatic glitch and tape noise.',
       camera_and_composition:
-        "Compose with strict side-on room composition with readable platform lanes, enemy spacing, door exits, throwable props, and action freeze timing. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Katana ZERO-derived mood: stylish, brutal, nocturnal, tense, and choreographed like a one-screen execution puzzle; it follows the tone of the requested scene without forcing a fixed mission or story.',
-      rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: minimal HUD; use tiny combat prompts or replay/timer cues only when they help the screenshot feel playable. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Katana ZERO gameplay screenshots; 2D neo-noir action-platformer capture with side-view rooms, instant-death combat spacing, motel interiors, glass partitions, and cinematic pixel staging; black hotel shadow, red blood accents, sodium amber, teal window light, magenta signage, and small white bullet highlights; hard interior cuts, neon spill through windows, slash trails, muzzle flashes, and time-slow contrast pulses; chunky pixel silhouettes, glossy tile, wood paneling, rain glass, smoke puffs, shattered props, and clean sprite edges; strict side-on room composition with readable platform lanes, enemy spacing, door exits, throwable props, and action freeze timing; stylish, brutal, nocturnal, tense, and choreographed like a one-screen execution puzzle; HUD guidance: minimal HUD; use tiny combat prompts or replay/timer cues only when they help the screenshot feel playable',
+        'Flat side-view room cutaway with the whole fight readable in one screen.',
+      atmosphere_and_mood: 'Keep the requested mood with cool neo-noir slaughter.',
+      rendering_and_quality: 'Authentic indie pixel-art action screen with VHS replay glitch.',
+      key_features: 'Katana Zero pixel noir; VHS glitch; slow-motion afterimages; neon rooms',
       creative_brief:
-        "Katana Zero Neo-Noir Sideview: in-game screenshot language informed by Katana ZERO, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Askiisoft Katana Zero (2019) look: side-view pixel art at low resolution, neo-noir motel and club interiors, teal and magenta neon, VHS scanline glitches, slow-motion afterimages and one-hit sword kills. Carry it through Katana Zero pixel noir, VHS glitch, slow-motion afterimages, neon rooms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-014',
-    name: 'Mirrors Edge Rooftop Parkour',
-    displayName: 'Mirrors Edge Rooftop Parkour',
-    styleAnchors: ["Mirror's Edge Catalyst gameplay screenshots", 'Mirrors Edge Rooftop Parkour'],
-    category: '1. Neon Urban & Night Ops',
-    negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
-    style: {
-      aesthetic:
-        "In-game screenshot look informed by Mirror's Edge Catalyst gameplay: first-person parkour capture with white rooftop geometry, red route language, clean corporate city planes, and motion-forward traversal. It never recreates an exact official level, character, logo or marketing art.",
-      subject_treatment:
-        "Preserve the user's subject and transform it into a playable Mirror's Edge Catalyst-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        "Use a Mirror's Edge Catalyst-informed palette: white concrete, sky cyan, route red, glass blue, matte black, and occasional yellow safety accents. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.",
-      lighting_and_shadow:
-        'Light the image through bright daylight, hard rooftop shadows, reflective glass, and clean exposure with minimal grime. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
-      texture_and_material:
-        'Build surfaces from smooth concrete, painted pipes, vents, glass railings, red doors, gloves, and polished urban surfaces. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
-      camera_and_composition:
-        "Compose with first-person sprint framing with hands, jump arcs, wall-run lines, ledge targets, and direct route readability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        "Mirror's Edge Catalyst-derived mood: kinetic, sterile, rebellious, precise, and breathless; it follows the tone of the requested scene without forcing a fixed mission or story.",
-      rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: minimal runner vision, tiny objective marker, or reticle is allowed; avoid heavy shooter UI. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        "Mirror's Edge Catalyst gameplay screenshots; first-person parkour capture with white rooftop geometry, red route language, clean corporate city planes, and motion-forward traversal; white concrete, sky cyan, route red, glass blue, matte black, and occasional yellow safety accents; bright daylight, hard rooftop shadows, reflective glass, and clean exposure with minimal grime; smooth concrete, painted pipes, vents, glass railings, red doors, gloves, and polished urban surfaces; first-person sprint framing with hands, jump arcs, wall-run lines, ledge targets, and direct route readability; kinetic, sterile, rebellious, precise, and breathless; HUD guidance: minimal runner vision, tiny objective marker, or reticle is allowed; avoid heavy shooter UI",
-      creative_brief:
-        "Mirrors Edge Rooftop Parkour: in-game screenshot language informed by Mirror's Edge Catalyst, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
-    },
-  },
-  {
-    id: 'SP12-025',
-    name: 'Streets of Rage Neon Brawler',
-    displayName: 'Streets of Rage Neon Brawler',
-    styleAnchors: ['Streets of Rage 4 gameplay screenshots', 'Streets of Rage Neon Brawler'],
-    category: '1. Neon Urban & Night Ops',
-    negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
-    style: {
-      aesthetic:
-        'In-game screenshot look informed by Streets of Rage 4 gameplay: hand-drawn side-scrolling beat-em-up capture with neon streets, crowd-control spacing, big hit sparks, and arcade brawler lanes. It never recreates an exact official level, character, logo or marketing art.',
-      subject_treatment:
-        "Preserve the user's subject and transform it into a playable Streets of Rage 4-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Streets of Rage 4-informed palette: purple night, cyan signage, hot pink neon, yellow streetlight, denim blue, and saturated skin-tone highlights. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
-      lighting_and_shadow:
-        'Light the image through flat cel lighting, neon rim, arcade hit flashes, wet pavement bounce, and bold shadow shapes. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
-      texture_and_material:
-        'Build surfaces from clean comic outlines, painted urban props, brick walls, trash cans, leather jackets, and exaggerated impact effects. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
-      camera_and_composition:
-        "Compose with side-view brawler perspective with horizontal movement lanes, enemy clusters, pickup spacing, and readable co-op staging. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Streets of Rage 4-derived mood: streetwise, loud, physical, adult-arcade, and punchy; it follows the tone of the requested scene without forcing a fixed mission or story.',
-      rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: health bars, combo counters, score, lives, and player indicators are appropriate if styled like a modern beat-em-up. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Streets of Rage 4 gameplay screenshots; hand-drawn side-scrolling beat-em-up capture with neon streets, crowd-control spacing, big hit sparks, and arcade brawler lanes; purple night, cyan signage, hot pink neon, yellow streetlight, denim blue, and saturated skin-tone highlights; flat cel lighting, neon rim, arcade hit flashes, wet pavement bounce, and bold shadow shapes; clean comic outlines, painted urban props, brick walls, trash cans, leather jackets, and exaggerated impact effects; side-view brawler perspective with horizontal movement lanes, enemy clusters, pickup spacing, and readable co-op staging; streetwise, loud, physical, adult-arcade, and punchy; HUD guidance: health bars, combo counters, score, lives, and player indicators are appropriate if styled like a modern beat-em-up',
-      creative_brief:
-        "Streets of Rage Neon Brawler: in-game screenshot language informed by Streets of Rage 4, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
-    },
-  },
-  {
-    id: 'SP12-032',
-    name: 'Shadow Gambit Harbor Heist',
-    displayName: 'Shadow Gambit Harbor Heist',
+    name: "Mirror's Edge 2008 - DICE White Rooftop Runner",
+    displayName: "Mirror's Edge 2008 - DICE White Rooftop Runner",
     styleAnchors: [
-      'Shadow Gambit: The Cursed Crew gameplay screenshots',
-      'Shadow Gambit Harbor Heist',
+      "Mirror's Edge 2008 - DICE White Rooftop Runner",
+      'Mirrors Edge Rooftop Parkour',
     ],
     category: '1. Neon Urban & Night Ops',
     negativePrompt:
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Shadow Gambit: The Cursed Crew gameplay: isometric stealth-tactics capture with pirate harbors, patrol cones, crew ability timing, and layered infiltration routes. It never recreates an exact official level, character, logo or marketing art.',
+        "DICE Mirror's Edge (2008) look: first-person parkour across sterile white rooftops, runner vision painting the route red, clean blue sky, glass towers and graphic primary accents.",
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Shadow Gambit: The Cursed Crew-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as sleek athletic runners, seen mostly as first-person arms and legs reaching for ledges and pipes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Use a Shadow Gambit: The Cursed Crew-informed palette: moonlit teal, lantern gold, undead green, red patrol accents, worn wood brown, and tropical night blue. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Sterile white, clear sky blue, runner-vision red and small yellow and orange accents.',
       lighting_and_shadow:
-        'Light the image through lantern pools, moon shafts, ghost ability glow, stealth shadow pockets, and wet dock reflections. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Bright overexposed sun on white surfaces with soft global illumination and clean shadows.',
       texture_and_material:
-        'Build surfaces from wooden docks, ropes, barrels, pirate coats, colonial stone, mist, foliage, and stylized tactical geometry. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Clean matte white concrete, glass and polished metal with almost no grime.',
       camera_and_composition:
-        "Compose with elevated isometric stealth view with patrol paths, cover pockets, synchronized action space, and objective markers. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Shadow Gambit: The Cursed Crew-derived mood: sly, supernatural, nautical, tactical, and mischievous; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'First-person view with visible arms and legs, tilted in motion over rooftop gaps.',
+      atmosphere_and_mood: 'Keep the requested mood with clean vertigo freedom.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: patrol cones, ability icons, waypoint ghosts, and tactical pause cues are allowed if coherent. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Shadow Gambit: The Cursed Crew gameplay screenshots; isometric stealth-tactics capture with pirate harbors, patrol cones, crew ability timing, and layered infiltration routes; moonlit teal, lantern gold, undead green, red patrol accents, worn wood brown, and tropical night blue; lantern pools, moon shafts, ghost ability glow, stealth shadow pockets, and wet dock reflections; wooden docks, ropes, barrels, pirate coats, colonial stone, mist, foliage, and stylized tactical geometry; elevated isometric stealth view with patrol paths, cover pockets, synchronized action space, and objective markers; sly, supernatural, nautical, tactical, and mischievous; HUD guidance: patrol cones, ability icons, waypoint ghosts, and tactical pause cues are allowed if coherent',
+        'Authentic late-2000s Unreal Engine 3 first-person screen with baked lighting.',
+      key_features: "Mirror's Edge white city; runner vision red; first-person arms",
       creative_brief:
-        "Shadow Gambit Harbor Heist: in-game screenshot language informed by Shadow Gambit: The Cursed Crew, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "DICE Mirror's Edge (2008) look: first-person parkour across sterile white rooftops, runner vision painting the route red, clean blue sky, glass towers and graphic primary accents. Carry it through Mirror's Edge white city, runner vision red, first-person arms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+    },
+  },
+  {
+    id: 'SP12-025',
+    name: 'Streets of Rage 4 2020 - Lizardcube Hand-Drawn Brawler',
+    displayName: 'Streets of Rage 4 2020 - Lizardcube Hand-Drawn Brawler',
+    styleAnchors: [
+      'Streets of Rage 4 2020 - Lizardcube Hand-Drawn Brawler',
+      'Streets of Rage Neon Brawler',
+    ],
+    category: '1. Neon Urban & Night Ops',
+    negativePrompt:
+      'existing brawler heroes, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Lizardcube and Guard Crush Streets of Rage 4 (2020) look: hand-drawn 2D animation with thick brush outlines, flat cel color and soft painted neon streets in a side-scrolling beat em up.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as hand-drawn animated fighters with thick brush outlines, chunky proportions and big readable poses. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Neon pink, cyan and orange signs over deep blue night streets.',
+      lighting_and_shadow:
+        'Painted neon glow with flat cel shadows and soft rim light on fighters.',
+      texture_and_material:
+        'Hand-drawn 2D animation lines and flat painted fills over painted backgrounds.',
+      camera_and_composition:
+        'Side-scrolling beat em up view with a deep street lane for fighters.',
+      atmosphere_and_mood: 'Keep the requested mood with punchy street-brawl swagger.',
+      rendering_and_quality: 'Authentic modern hand-drawn 2D beat em up screen.',
+      key_features: 'Streets of Rage 4 hand-drawn; thick brush lines; neon street lane',
+      creative_brief:
+        "Lizardcube and Guard Crush Streets of Rage 4 (2020) look: hand-drawn 2D animation with thick brush outlines, flat cel color and soft painted neon streets in a side-scrolling beat em up. Carry it through Streets of Rage 4 hand-drawn, thick brush lines, neon street lane. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+    },
+  },
+  {
+    id: 'SP12-032',
+    name: 'Shadow Gambit 2023 - Mimimi Isometric Stealth',
+    displayName: 'Shadow Gambit 2023 - Mimimi Isometric Stealth',
+    styleAnchors: ['Shadow Gambit 2023 - Mimimi Isometric Stealth', 'Shadow Gambit Harbor Heist'],
+    category: '1. Neon Urban & Night Ops',
+    negativePrompt:
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+    style: {
+      aesthetic:
+        'Mimimi Games Shadow Gambit: The Cursed Crew (2023) look: isometric real-time stealth tactics, painterly stylized 3D, cursed pirate crews, green vision cones and glowing magic outlines.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as small stylized 3D characters with exaggerated silhouettes, readable from a high isometric angle. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Deep sea teal, lantern gold, cursed green glow and warm harbor wood.',
+      lighting_and_shadow: 'Moonlit night with lantern pools and bright green vision cones.',
+      texture_and_material: 'Painterly stylized textures on chunky low-detail 3D assets.',
+      camera_and_composition: 'High isometric tactics camera with vision cones and paths.',
+      atmosphere_and_mood: 'Keep the requested mood with sly cursed stealth.',
+      rendering_and_quality:
+        'Authentic modern isometric stealth tactics screen, matching real Shadow Gambit 2023 screenshots.',
+      key_features: 'Shadow Gambit isometric; vision cones; cursed pirates; painterly 3D',
+      creative_brief:
+        "Mimimi Games Shadow Gambit: The Cursed Crew (2023) look: isometric real-time stealth tactics, painterly stylized 3D, cursed pirate crews, green vision cones and glowing magic outlines. Carry it through Shadow Gambit isometric, vision cones, cursed pirates, painterly 3D. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-043',
-    name: 'EDF Harbor Kaiju Evacuation',
-    displayName: 'EDF Harbor Kaiju Evacuation',
-    styleAnchors: ['Earth Defense Force 5 gameplay screenshots', 'EDF Harbor Kaiju Evacuation'],
+    name: 'Earth Defense Force 5 2017 - Sandlot Arcade Kaiju Swarm',
+    displayName: 'Earth Defense Force 5 2017 - Sandlot Arcade Kaiju Swarm',
+    styleAnchors: [
+      'Earth Defense Force 5 2017 - Sandlot Arcade Kaiju Swarm',
+      'EDF Harbor Kaiju Evacuation',
+    ],
     category: '1. Neon Urban & Night Ops',
     negativePrompt:
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Earth Defense Force 5 gameplay: third-person arcade shooter capture with giant insects/kaiju scale, city harbor destruction, squad chaos, and unapologetic HUD readability. It never recreates an exact official level, character, logo or marketing art.',
+        'Sandlot Earth Defense Force 5 (2017) look: budget third-person arcade shooter, giant ants and kaiju swarming cities, huge explosions, simple textures, destructible buildings and B-movie chaos.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Earth Defense Force 5-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Earth Defense Force 5-informed palette: concrete grey, ocean blue, explosion orange, armor red/blue, monster green, and bright targeting UI. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
-      lighting_and_shadow:
-        'Light the image through daylight city exposure, rocket explosions, laser beams, smoke plumes, and monster-hit flashes. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as small generic armored soldiers dwarfed by giant insects and monsters in third person. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Hazy daylight blue, concrete grey, orange explosions and acid green.',
+      lighting_and_shadow: 'Flat daylight with bright explosions and dust clouds.',
       texture_and_material:
-        'Build surfaces from low-to-mid budget city assets, oversized creatures, military armor, rubble, water, and many projectile effects. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
-      camera_and_composition:
-        "Compose with third-person battlefield camera with player small against huge enemies, evacuation routes, squad markers, and urban scale chaos. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Earth Defense Force 5-derived mood: campy, massive, panicked, arcade-military, and destructive; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Simple low-detail textures, crumbling blocky buildings and particle debris.',
+      camera_and_composition: 'Third-person shoulder view looking up at giant enemies.',
+      atmosphere_and_mood: 'Keep the requested mood with gleeful B-movie mayhem.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: busy arcade HUD is coherent: health, weapon ammo, radar, ally markers, and target reticles can be visible. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Earth Defense Force 5 gameplay screenshots; third-person arcade shooter capture with giant insects/kaiju scale, city harbor destruction, squad chaos, and unapologetic HUD readability; concrete grey, ocean blue, explosion orange, armor red/blue, monster green, and bright targeting UI; daylight city exposure, rocket explosions, laser beams, smoke plumes, and monster-hit flashes; low-to-mid budget city assets, oversized creatures, military armor, rubble, water, and many projectile effects; third-person battlefield camera with player small against huge enemies, evacuation routes, squad markers, and urban scale chaos; campy, massive, panicked, arcade-military, and destructive; HUD guidance: busy arcade HUD is coherent: health, weapon ammo, radar, ally markers, and target reticles can be visible',
+        'Authentic budget arcade third-person shooter screen, matching real Earth Defense Force 5 2017 screenshots.',
+      key_features: 'EDF giant ants; B-movie kaiju; crumbling city; arcade chaos',
       creative_brief:
-        "EDF Harbor Kaiju Evacuation: in-game screenshot language informed by Earth Defense Force 5, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Sandlot Earth Defense Force 5 (2017) look: budget third-person arcade shooter, giant ants and kaiju swarming cities, huge explosions, simple textures, destructible buildings and B-movie chaos. Carry it through EDF giant ants, B-movie kaiju, crumbling city, arcade chaos. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-048',
-    name: 'Cloudpunk Crystal Metro Hoverline',
-    displayName: 'Cloudpunk Crystal Metro Hoverline',
-    styleAnchors: ['Cloudpunk gameplay screenshots', 'Cloudpunk Crystal Metro Hoverline'],
+    name: 'Cloudpunk 2020 - Ion Lands Voxel Rain City',
+    displayName: 'Cloudpunk 2020 - Ion Lands Voxel Rain City',
+    styleAnchors: [
+      'Cloudpunk 2020 - Ion Lands Voxel Rain City',
+      'Cloudpunk Crystal Metro Hoverline',
+    ],
     category: '1. Neon Urban & Night Ops',
     negativePrompt:
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Cloudpunk gameplay: voxel cyberpunk delivery capture with hovercars, stacked city canyons, rain, apartment lights, and readable route beacons. It never recreates an exact official level, character, logo or marketing art.',
+        'Ion Lands Cloudpunk (2020) look: dense voxel cyberpunk city of stacked towers, endless rain, neon signs, flying hovercars and misty depths far below.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Cloudpunk-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Cloudpunk-informed palette: deep blue night, orange windows, cyan signage, magenta haze, black rain, and voxel-lit road strips. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
-      lighting_and_shadow:
-        'Light the image through neon bloom, headlight cones, window grids, rainy reflections, and distant smog glow. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
-      texture_and_material:
-        'Build surfaces from voxel buildings, hovercar panels, wet platforms, delivery crates, glass towers, and pixel-like city clutter. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
-      camera_and_composition:
-        "Compose with third-person hover vehicle or pedestrian view with vertical city layers, route marker, landing pads, and delivery-path clarity. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Cloudpunk-derived mood: melancholy, urban, rainy, work-shift cyberpunk, and vertical; it follows the tone of the requested scene without forcing a fixed mission or story.',
-      rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: delivery objective, minimap, vehicle status, and route markers can appear when consistent with courier gameplay. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Cloudpunk gameplay screenshots; voxel cyberpunk delivery capture with hovercars, stacked city canyons, rain, apartment lights, and readable route beacons; deep blue night, orange windows, cyan signage, magenta haze, black rain, and voxel-lit road strips; neon bloom, headlight cones, window grids, rainy reflections, and distant smog glow; voxel buildings, hovercar panels, wet platforms, delivery crates, glass towers, and pixel-like city clutter; third-person hover vehicle or pedestrian view with vertical city layers, route marker, landing pads, and delivery-path clarity; melancholy, urban, rainy, work-shift cyberpunk, and vertical; HUD guidance: delivery objective, minimap, vehicle status, and route markers can appear when consistent with courier gameplay',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as small blocky voxel figures and hovercars built from visible cubes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Neon magenta, cyan and amber glowing through blue rain mist.',
+      lighting_and_shadow: 'Neon signs glowing through thick rain fog with deep dark canyons.',
+      texture_and_material: 'Visible voxel cubes, rain streaks and glowing volumetric fog.',
+      camera_and_composition: 'Third-person chase view behind a hovercar between towers.',
+      atmosphere_and_mood: 'Keep the requested mood with lonely rain-soaked melancholy.',
+      rendering_and_quality: 'Authentic voxel city indie screen with volumetric fog.',
+      key_features: 'Cloudpunk voxels; rain city; hovercars; neon fog',
       creative_brief:
-        "Cloudpunk Crystal Metro Hoverline: in-game screenshot language informed by Cloudpunk, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Ion Lands Cloudpunk (2020) look: dense voxel cyberpunk city of stacked towers, endless rain, neon signs, flying hovercars and misty depths far below. Carry it through Cloudpunk voxels, rain city, hovercars, neon fog. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-056',
-    name: 'Ghostrunner Carbon Megacity',
-    displayName: 'Ghostrunner Carbon Megacity',
-    styleAnchors: ['Ghostrunner gameplay screenshots', 'Ghostrunner Carbon Megacity'],
+    name: 'Ghostrunner 2020 - One More Level Cyber Parkour',
+    displayName: 'Ghostrunner 2020 - One More Level Cyber Parkour',
+    styleAnchors: [
+      'Ghostrunner 2020 - One More Level Cyber Parkour',
+      'Ghostrunner Carbon Megacity',
+    ],
     category: '1. Neon Urban & Night Ops',
     negativePrompt:
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Ghostrunner gameplay: first-person cyber-ninja parkour capture with wall-runs, one-hit combat, vertical megacity routes, and blade-forward speed. It never recreates an exact official level, character, logo or marketing art.',
+        'One More Level Ghostrunner (2020) look: first-person cyber-ninja parkour up a vertical megatower, katana in hand, red and cyan neon, dark industrial metal and one-hit deaths.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Ghostrunner-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Ghostrunner-informed palette: black carbon, cyan neon, red enemy marks, toxic green signage, steel grey, and white blade flashes. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
-      lighting_and_shadow:
-        'Light the image through neon strips, hologram glow, blade trails, muzzle flashes, and deep industrial shadows. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
-      texture_and_material:
-        'Build surfaces from slick carbon panels, rain metal, cables, concrete towers, katana steel, cybernetic enemies, and hard-edged decals without readable text. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
-      camera_and_composition:
-        "Compose with first-person sprint/slash framing with hands/blade, route markers, enemy silhouettes, gap jumps, and high-rise depth. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Ghostrunner-derived mood: brutal, precise, vertical, cybernetic, and breathless; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as cybernetic figures seen from first person, with a katana hand and chrome cyber limbs. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Black carbon metal, blood red neon, cyan highlights and orange sparks.',
+      lighting_and_shadow: 'Harsh neon strips and sparks against dark industrial shafts.',
+      texture_and_material: 'Carbon black metal, grime, cables and glossy neon reflections.',
+      camera_and_composition: 'First-person wall-run view with the blade in frame.',
+      atmosphere_and_mood: 'Keep the requested mood with razor-sharp vertical speed.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: minimal reticle, ability cooldowns, target markers, and route highlights can appear as coherent action HUD. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Ghostrunner gameplay screenshots; first-person cyber-ninja parkour capture with wall-runs, one-hit combat, vertical megacity routes, and blade-forward speed; black carbon, cyan neon, red enemy marks, toxic green signage, steel grey, and white blade flashes; neon strips, hologram glow, blade trails, muzzle flashes, and deep industrial shadows; slick carbon panels, rain metal, cables, concrete towers, katana steel, cybernetic enemies, and hard-edged decals without readable text; first-person sprint/slash framing with hands/blade, route markers, enemy silhouettes, gap jumps, and high-rise depth; brutal, precise, vertical, cybernetic, and breathless; HUD guidance: minimal reticle, ability cooldowns, target markers, and route highlights can appear as coherent action HUD',
+        'Authentic modern Unreal first-person action screen, matching real Ghostrunner 2020 screenshots.',
+      key_features: 'Ghostrunner first-person katana; wall-runs; red neon megatower',
       creative_brief:
-        "Ghostrunner Carbon Megacity: in-game screenshot language informed by Ghostrunner, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "One More Level Ghostrunner (2020) look: first-person cyber-ninja parkour up a vertical megatower, katana in hand, red and cyan neon, dark industrial metal and one-hit deaths. Carry it through Ghostrunner first-person katana, wall-runs, red neon megatower. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-062',
-    name: 'Yakuza Neon Koi District',
-    displayName: 'Yakuza Neon Koi District',
-    styleAnchors: ['Yakuza 0 gameplay screenshots', 'Yakuza Neon Koi District'],
+    name: 'Yakuza 0 2015 - RGG Kamurocho Street Brawl',
+    displayName: 'Yakuza 0 2015 - RGG Kamurocho Street Brawl',
+    styleAnchors: ['Yakuza 0 2015 - RGG Kamurocho Street Brawl', 'Yakuza Neon Koi District'],
     category: '1. Neon Urban & Night Ops',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a man in a grey suit with a red shirt, a man in a snakeskin jacket and eyepatch, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Yakuza 0 gameplay: third-person urban brawler/adventure capture with dense Japanese nightlife, street fights, karaoke warmth, and readable pedestrian scale. It never recreates an exact official level, character, logo or marketing art.',
+        'Ryu Ga Gotoku Studio Yakuza 0 (2015) look: realistic third-person brawling in dense Japanese nightlife streets of 1988, red lanterns, crowded signs, heat actions and melodramatic heat aura glow.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Yakuza 0-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Yakuza 0-informed palette: neon pink, koi red, warm storefront yellow, black suit fabric, wet asphalt, and electric blue signage shapes. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
-      lighting_and_shadow:
-        'Light the image through street neon, club lights, vending-machine glow, fight impact flashes, and rain reflections. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
-      texture_and_material:
-        'Build surfaces from urban pavement, suits, leather shoes, shopfronts without readable logos, bicycles, bottles, and crowded nightlife props. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
-      camera_and_composition:
-        "Compose with third-person street camera with brawler spacing, alley depth, NPC crowd edges, and nightlife landmark density. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Yakuza 0-derived mood: melodramatic, adult, funny, dangerous, and neon-social; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as realistic Japanese city characters in suits and street clothes, with heat aura glow during brawls. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Red lantern glow, neon sign color and warm wet asphalt.',
+      lighting_and_shadow: 'Dense sign light, lantern glow and bright heat-action flashes.',
+      texture_and_material: 'Realistic PS4-era textures of wet streets, suits and signage.',
+      camera_and_composition: 'Third-person brawl view in a crowded street ring.',
+      atmosphere_and_mood: 'Keep the requested mood with melodramatic street-fight bravado.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: health/heat bars, minimap, money/combo cues, and small objective markers can appear as coherent urban action UI. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Yakuza 0 gameplay screenshots; third-person urban brawler/adventure capture with dense Japanese nightlife, street fights, karaoke warmth, and readable pedestrian scale; neon pink, koi red, warm storefront yellow, black suit fabric, wet asphalt, and electric blue signage shapes; street neon, club lights, vending-machine glow, fight impact flashes, and rain reflections; urban pavement, suits, leather shoes, shopfronts without readable logos, bicycles, bottles, and crowded nightlife props; third-person street camera with brawler spacing, alley depth, NPC crowd edges, and nightlife landmark density; melodramatic, adult, funny, dangerous, and neon-social; HUD guidance: health/heat bars, minimap, money/combo cues, and small objective markers can appear as coherent urban action UI',
+        'Authentic PS4 third-person brawler screen, matching real Yakuza 0 2015 screenshots.',
+      key_features: 'Yakuza nightlife streets; heat aura; red lanterns; brawls',
       creative_brief:
-        "Yakuza Neon Koi District: in-game screenshot language informed by Yakuza 0, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Ryu Ga Gotoku Studio Yakuza 0 (2015) look: realistic third-person brawling in dense Japanese nightlife streets of 1988, red lanterns, crowded signs, heat actions and melodramatic heat aura glow. Carry it through Yakuza nightlife streets, heat aura, red lanterns, brawls. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-071',
-    name: 'Half-Life 2 Verdant Rebellion',
-    displayName: 'Half-Life 2 Verdant Rebellion',
-    styleAnchors: ['Half-Life 2 gameplay screenshots', 'Half-Life 2 Verdant Rebellion'],
+    name: 'Half-Life 2 2004 - Valve City 17 Resistance',
+    displayName: 'Half-Life 2 2004 - Valve City 17 Resistance',
+    styleAnchors: ['Half-Life 2 2004 - Valve City 17 Resistance', 'Half-Life 2 Verdant Rebellion'],
     category: '1. Neon Urban & Night Ops',
     negativePrompt:
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Half-Life 2 gameplay: first-person resistance shooter capture with City 17 infrastructure, canals, Combine geometry, physics props, and grounded route combat. It never recreates an exact official level, character, logo or marketing art.',
+        'Valve Half-Life 2 (2004) look: first-person Source engine view of an Eastern European city under alien occupation, brutalist citadel, canals, rusty metal and overgrown ruins.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Half-Life 2-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Half-Life 2-informed palette: concrete grey, hazard orange, resistance blue, industrial green, rust brown, and alien black metal. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
-      lighting_and_shadow:
-        'Light the image through overcast daylight, hard industrial shadows, muzzle flashes, scanner glow, and sodium streetlamp pools. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
-      texture_and_material:
-        'Build surfaces from concrete canals, cracked plaster, metal fences, wooden crates, physics debris, alien machinery, and utilitarian weapons. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
-      camera_and_composition:
-        "Compose with first-person shooter framing with weapon foreground, cover lanes, physics objects, enemy silhouettes, and navigable urban depth. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Half-Life 2-derived mood: oppressed, practical, rebellious, decayed, and grounded; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as tired resistance citizens in blue work clothes and scavenged gear, seen from first person. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Desaturated teal, concrete grey, rust brown and faded green.',
+      lighting_and_shadow: 'Overcast diffuse light with sharp Source engine shadows.',
+      texture_and_material: 'Source engine textures of rust, concrete, grime and scrap.',
+      camera_and_composition: 'First-person view with a weapon at screen right.',
+      atmosphere_and_mood: 'Keep the requested mood with grim occupied resistance.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: classic health/suit/ammo HUD and crosshair can appear, but avoid modern UI clutter. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Half-Life 2 gameplay screenshots; first-person resistance shooter capture with City 17 infrastructure, canals, Combine geometry, physics props, and grounded route combat; concrete grey, hazard orange, resistance blue, industrial green, rust brown, and alien black metal; overcast daylight, hard industrial shadows, muzzle flashes, scanner glow, and sodium streetlamp pools; concrete canals, cracked plaster, metal fences, wooden crates, physics debris, alien machinery, and utilitarian weapons; first-person shooter framing with weapon foreground, cover lanes, physics objects, enemy silhouettes, and navigable urban depth; oppressed, practical, rebellious, decayed, and grounded; HUD guidance: classic health/suit/ammo HUD and crosshair can appear, but avoid modern UI clutter',
+        'Authentic mid-2000s Source engine first-person screen, matching real Half-Life 2 2004 screenshots.',
+      key_features: 'Half-Life 2 City 17; citadel; canals; first-person',
       creative_brief:
-        "Half-Life 2 Verdant Rebellion: in-game screenshot language informed by Half-Life 2, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Valve Half-Life 2 (2004) look: first-person Source engine view of an Eastern European city under alien occupation, brutalist citadel, canals, rusty metal and overgrown ruins. Carry it through Half-Life 2 City 17, citadel, canals, first-person. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-078',
-    name: 'Mark of the Ninja Lotus Heist',
-    displayName: 'Mark of the Ninja Lotus Heist',
-    styleAnchors: ['Mark of the Ninja gameplay screenshots', 'Mark of the Ninja Lotus Heist'],
+    name: 'Mark of the Ninja 2012 - Klei Ink Stealth',
+    displayName: 'Mark of the Ninja 2012 - Klei Ink Stealth',
+    styleAnchors: ['Mark of the Ninja 2012 - Klei Ink Stealth', 'Mark of the Ninja Lotus Heist'],
     category: '1. Neon Urban & Night Ops',
     negativePrompt:
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Mark of the Ninja gameplay: 2D stealth side-view capture with black silhouettes, guard vision cones, inked interiors, and readable shadow mechanics. It never recreates an exact official level, character, logo or marketing art.',
+        'Klei Entertainment Mark of the Ninja (2012) look: side-view 2D stealth with hand-drawn cartoon animation, deep black silhouettes in shadow, bright lit zones and sound rings.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Mark of the Ninja-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Mark of the Ninja-informed palette: deep black, muted teal, blood red, paper beige, cool blue shadow, and small gold lamp accents. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
-      lighting_and_shadow:
-        'Light the image through hard stealth shadow, lantern cones, silhouette cutouts, alarm red, and graphic fog. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as hand-drawn cartoon characters, lit in color and flattened to black silhouettes in shadow. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Deep black shadow, warm lantern yellow and muted indigo.',
+      lighting_and_shadow: 'Hard light pools that turn figures into silhouettes when dark.',
       texture_and_material:
-        'Build surfaces from inked walls, tatami, paper screens, rooftops, cloth folds, traps, and crisp vector-like character silhouettes. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Hand-drawn Klei animation lines and flat fills, with the in-engine surface finish of Mark of the Ninja 2012.',
       camera_and_composition:
-        "Compose with side-view stealth composition with visibility zones, noise rings, patrol routes, vents, and multi-level infiltration paths. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Mark of the Ninja-derived mood: silent, lethal, elegant, graphic, and tactical; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Side-view cutaway of rooms and vents, framed the way Mark of the Ninja 2012 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with tense silent stealth.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: vision cones, noise indicators, ability icons, objective markers, and alert states are coherent stealth UI. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Mark of the Ninja gameplay screenshots; 2D stealth side-view capture with black silhouettes, guard vision cones, inked interiors, and readable shadow mechanics; deep black, muted teal, blood red, paper beige, cool blue shadow, and small gold lamp accents; hard stealth shadow, lantern cones, silhouette cutouts, alarm red, and graphic fog; inked walls, tatami, paper screens, rooftops, cloth folds, traps, and crisp vector-like character silhouettes; side-view stealth composition with visibility zones, noise rings, patrol routes, vents, and multi-level infiltration paths; silent, lethal, elegant, graphic, and tactical; HUD guidance: vision cones, noise indicators, ability icons, objective markers, and alert states are coherent stealth UI',
+        'Authentic early-2010s Klei hand-drawn stealth screen, matching real Mark of the Ninja 2012 screenshots.',
+      key_features: 'Mark of the Ninja silhouettes; light pools; sound rings',
       creative_brief:
-        "Mark of the Ninja Lotus Heist: in-game screenshot language informed by Mark of the Ninja, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Klei Entertainment Mark of the Ninja (2012) look: side-view 2D stealth with hand-drawn cartoon animation, deep black silhouettes in shadow, bright lit zones and sound rings. Carry it through Mark of the Ninja silhouettes, light pools, sound rings. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-099',
-    name: 'Top-Down Neon Twin-Stick Capture',
-    displayName: 'Top-Down Neon Twin-Stick Capture',
+    name: 'Geometry Wars 2003 - Bizarre Creations Neon Grid',
+    displayName: 'Geometry Wars 2003 - Bizarre Creations Neon Grid',
     styleAnchors: [
-      'Top-Down Neon Twin-Stick Capture',
+      'Geometry Wars 2003 - Bizarre Creations Neon Grid',
       'overhead neon shooter game screenshot',
       'overhead camera',
     ],
     category: '1. Neon Urban & Night Ops',
     domain: 'overhead neon shooter game screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Top-down neon twin-stick capture: an original overhead shooter screenshot with glowing enemies, bright projectile trails and dark grid floors, readable in a glance.',
+        'Bizarre Creations Geometry Wars (2003) look: top-down twin-stick shooter on a warping neon grid, glowing vector shapes, particle explosions and swarms of geometric enemies.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject from directly above as a readable player or enemy sprite among glowing projectiles.',
-      color_and_tone: 'Black and deep blue floors with hot magenta, cyan and lime glows.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render every subject as a glowing neon vector shape or ship seen from directly above. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Black void with neon cyan, magenta, green and yellow glow.',
       lighting_and_shadow:
-        'Emissive projectiles and enemies lighting the floor, kept consistent across the whole image.',
-      texture_and_material: 'Clean vector-like sprites, grid floors and particle bursts.',
+        'Self-lit glowing vector lines and particle bursts, lit the way Geometry Wars 2003 lights its levels.',
+      texture_and_material:
+        'Clean vector lines, bloom and particle sparks, with the in-engine surface finish of Geometry Wars 2003.',
       camera_and_composition:
-        'Fixed overhead camera with the player centered, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with frantic arcade intensity.',
+        'Top-down arena view over a warping grid, framed the way Geometry Wars 2003 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with hypnotic bullet frenzy.',
       rendering_and_quality:
-        'Crisp glowing game capture with minimal HUD, kept consistent across the whole image.',
+        'Authentic neon vector twin-stick shooter screen, matching real Geometry Wars 2003 screenshots.',
       creative_brief:
-        "Top-down neon twin-stick capture: an original overhead shooter screenshot with glowing enemies, bright projectile trails and dark grid floors, readable in a glance. Carry it through overhead camera, glowing projectiles, grid floor, swarm enemies. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'overhead camera; glowing projectiles; grid floor; swarm enemies',
+        "Bizarre Creations Geometry Wars (2003) look: top-down twin-stick shooter on a warping neon grid, glowing vector shapes, particle explosions and swarms of geometric enemies. Carry it through Geometry Wars neon grid, vector shapes, particle bloom. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Geometry Wars neon grid; vector shapes; particle bloom',
     },
     ui: {
       previewStatus: 'pending',
@@ -353,35 +320,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-100',
-    name: 'Rain-Slick Alley Stealth Capture',
-    displayName: 'Rain-Slick Alley Stealth Capture',
+    name: 'Deus Ex Human Revolution 2011 - Eidos Gold Cyber Stealth',
+    displayName: 'Deus Ex Human Revolution 2011 - Eidos Gold Cyber Stealth',
     styleAnchors: [
-      'Rain-Slick Alley Stealth Capture',
+      'Deus Ex Human Revolution 2011 - Eidos Gold Cyber Stealth',
       'third-person rainy stealth screenshot',
       'rain puddles',
     ],
     category: '1. Neon Urban & Night Ops',
     domain: 'third-person rainy stealth screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a bearded agent in sunglasses and a trench coat, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Rain-slick alley stealth capture: an original third-person stealth game screenshot in wet neon alleys, reflections on puddles, steam vents and guard flashlights.',
+        'Eidos Montreal Deus Ex: Human Revolution (2011) look: black-and-gold cyber-renaissance palette, third-person cover stealth in rainy alleys, augmented bodies and Renaissance-inspired clothing.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject crouched or hidden in a wet neon alley from an over-the-shoulder camera.',
-      color_and_tone: 'Wet black, sodium orange and teal neon reflections.',
-      lighting_and_shadow:
-        'Neon signs, flashlight cones and puddle reflections, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as augmented agents with sleek black clothing and glowing gold cyber details. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        'Black and warm gold with amber haze, true to the Deus Ex Human Revolution 2011 palette.',
+      lighting_and_shadow: 'Gold amber haze with flashlight sweeps and holograms.',
       texture_and_material:
-        'Wet asphalt, brick, steam and chain-link, kept consistent across the whole image.',
+        'Wet asphalt, leather, polished augment plating, with the in-engine surface finish of Deus Ex Human Revolution 2011.',
       camera_and_composition:
-        'Over-the-shoulder view with a clear sneaking route, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with taut rainy suspense.',
+        'Third-person cover view behind a crouched agent, framed the way Deus Ex Human Revolution 2011 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with conspiratorial gold noir.',
       rendering_and_quality:
-        'Real-time game look with readable stealth cues, kept consistent across the whole image.',
+        'Authentic early-2010s stealth screen, matching real Deus Ex Human Revolution 2011 screenshots.',
       creative_brief:
-        "Rain-slick alley stealth capture: an original third-person stealth game screenshot in wet neon alleys, reflections on puddles, steam vents and guard flashlights. Carry it through rain puddles, neon reflections, flashlight cones, over-shoulder view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'rain puddles; neon reflections; flashlight cones; over-shoulder view',
+        "Eidos Montreal Deus Ex: Human Revolution (2011) look: black-and-gold cyber-renaissance palette, third-person cover stealth in rainy alleys, augmented bodies and Renaissance-inspired clothing. Carry it through Deus Ex black and gold, cover stealth, augmented agents. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Deus Ex black and gold; cover stealth; augmented agents',
     },
     ui: {
       previewStatus: 'pending',
@@ -389,34 +356,34 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-101',
-    name: 'Isometric Hacker Den Capture',
-    displayName: 'Isometric Hacker Den Capture',
+    name: 'Shadowrun Returns 2013 - Harebrained Isometric Matrix',
+    displayName: 'Shadowrun Returns 2013 - Harebrained Isometric Matrix',
     styleAnchors: [
-      'Isometric Hacker Den Capture',
+      'Shadowrun Returns 2013 - Harebrained Isometric Matrix',
       'isometric cyberpunk room screenshot',
       'isometric room',
     ],
     category: '1. Neon Urban & Night Ops',
     domain: 'isometric cyberpunk room screenshot',
     negativePrompt:
-      'readable screen text, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable screen text, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Isometric hacker den capture: an original isometric screenshot of a cramped cyberpunk room with glowing monitors, cables, and a character jacked into a terminal.',
+        'Harebrained Schemes Shadowrun Returns (2013) look: painted isometric cyberpunk-fantasy rooms, turn-based tactics, deckers jacked into a glowing Matrix and cluttered tech dens.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject in a cramped isometric room full of glowing screens and cables.',
-      color_and_tone: 'Dark room with green, cyan and magenta monitor glow.',
-      lighting_and_shadow:
-        'Monitor glow and small practical lights, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as small painted isometric characters with cyberware, jacked-in cables and street gear. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Painted grime brown, neon cyan and Matrix green.',
+      lighting_and_shadow: 'Monitor glow and neon in dim painted rooms.',
       texture_and_material:
-        'Cables, clutter, cracked screens and neon strips, kept consistent across the whole image.',
+        'Hand-painted isometric backgrounds with small 3D figures, with the in-engine surface finish of Shadowrun Returns 2013.',
       camera_and_composition:
-        'Isometric cutaway room view, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with cramped digital obsession.',
-      rendering_and_quality: 'Tidy isometric detail with no readable screen text.',
+        'Fixed isometric tactics view of a room, framed the way Shadowrun Returns 2013 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with gritty tech-noir scheming.',
+      rendering_and_quality:
+        'Authentic painted isometric RPG screen, matching real Shadowrun Returns 2013 screenshots.',
       creative_brief:
-        "Isometric hacker den capture: an original isometric screenshot of a cramped cyberpunk room with glowing monitors, cables, and a character jacked into a terminal. Carry it through isometric room, glowing monitors, cables, terminal. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'isometric room; glowing monitors; cables; terminal',
+        "Harebrained Schemes Shadowrun Returns (2013) look: painted isometric cyberpunk-fantasy rooms, turn-based tactics, deckers jacked into a glowing Matrix and cluttered tech dens. Carry it through Shadowrun isometric, painted dens, Matrix glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Shadowrun isometric; painted dens; Matrix glow',
     },
     ui: {
       previewStatus: 'pending',
@@ -424,28 +391,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-102',
-    name: 'Hover-Taxi Chase Capture',
-    displayName: 'Hover-Taxi Chase Capture',
-    styleAnchors: ['Hover-Taxi Chase Capture', 'flying car chase game screenshot', 'flying taxi'],
+    name: 'Jak II 2003 - Naughty Dog Haven City Hover Chase',
+    displayName: 'Jak II 2003 - Naughty Dog Haven City Hover Chase',
+    styleAnchors: [
+      'Jak II 2003 - Naughty Dog Haven City Hover Chase',
+      'flying car chase game screenshot',
+      'flying taxi',
+    ],
     category: '1. Neon Urban & Night Ops',
     domain: 'flying car chase game screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a green-haired hero with goggles and an orange ottsel, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Hover-taxi chase capture: an original chase-camera screenshot of a flying taxi weaving through vertical traffic lanes between megatowers, motion blur and holograms.',
+        'Naughty Dog Jak II (2003) look: stylized PS2 third-person action in a dense futuristic walled city, hover zoomers flying traffic lanes, police gunships and warm cartoon proportions.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject in or around a flying vehicle from a chase camera.',
-      color_and_tone: 'Night blue, taxi yellow and pink hologram light.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as stylized PS2 cartoon characters with big expressive faces riding hover vehicles. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        'Industrial teal, brass and warm amber glow, true to the Jak II 2003 palette.',
       lighting_and_shadow:
-        'Traffic light streaks and hologram glow, kept consistent across the whole image.',
-      texture_and_material: 'Glossy car panels, glass towers and rain streaks.',
-      camera_and_composition: 'Chase camera behind the vehicle with speed lines.',
-      atmosphere_and_mood: 'Keep the requested mood with breakneck urban thrill.',
-      rendering_and_quality: 'Real-time capture with motion blur, no HUD text.',
+        'Hazy PS2 atmospheric light and glowing traffic, lit the way Jak II 2003 lights its levels.',
+      texture_and_material:
+        'Stylized PS2 textures and chunky vehicle models, with the in-engine surface finish of Jak II 2003.',
+      camera_and_composition:
+        'Chase camera behind a hover zoomer, framed the way Jak II 2003 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with rebellious chase thrill.',
+      rendering_and_quality:
+        'Authentic PS2 open-city action screen, matching real Jak II 2003 screenshots.',
       creative_brief:
-        "Hover-taxi chase capture: an original chase-camera screenshot of a flying taxi weaving through vertical traffic lanes between megatowers, motion blur and holograms. Carry it through flying taxi, vertical traffic, chase camera, holograms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'flying taxi; vertical traffic; chase camera; holograms',
+        "Naughty Dog Jak II (2003) look: stylized PS2 third-person action in a dense futuristic walled city, hover zoomers flying traffic lanes, police gunships and warm cartoon proportions. Carry it through Jak II hover zoomers, walled city, chase camera. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Jak II hover zoomers; walled city; chase camera',
     },
     ui: {
       previewStatus: 'pending',
@@ -453,35 +428,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-103',
-    name: 'Night-Market Brawler Capture',
-    displayName: 'Night-Market Brawler Capture',
+    name: 'River City Girls 2019 - WayForward Pixel Brawler',
+    displayName: 'River City Girls 2019 - WayForward Pixel Brawler',
     styleAnchors: [
-      'Night-Market Brawler Capture',
+      'River City Girls 2019 - WayForward Pixel Brawler',
       'side-scrolling street fight screenshot',
       'side-scrolling lane',
     ],
     category: '1. Neon Urban & Night Ops',
     domain: 'side-scrolling street fight screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Night-market brawler capture: an original side-scrolling beat-em-up screenshot in a crowded night market, food stalls, lanterns and breakable props.',
+        'WayForward River City Girls (2019) look: bright detailed pixel-art beat em up, anime-inspired character sprites, crowded Japanese streets and shops, comic hit effects and loud pop color.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject mid-fight in a side-scrolling night market lane.',
-      color_and_tone: 'Warm lantern orange, steam white and neon pink.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as bright detailed pixel-art brawler sprites with anime proportions. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Loud pop pink, lemon, teal and warm lantern orange.',
       lighting_and_shadow:
-        'Lantern and stall light with steam glow, kept consistent across the whole image.',
+        'Bright lantern light and flashing hit effects, lit the way River City Girls 2019 lights its levels.',
       texture_and_material:
-        'Food stalls, crates, steam and hand-drawn sprites, kept consistent across the whole image.',
+        'Detailed modern pixel art with crisp dithering, with the in-engine surface finish of River City Girls 2019.',
       camera_and_composition:
-        'Side-on lane with enemies from both sides, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with rowdy festive chaos.',
+        'Side-scrolling brawler lane, framed the way River City Girls 2019 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with bratty chaotic fun.',
       rendering_and_quality:
-        'Clean hand-drawn game capture, kept consistent across the whole image.',
+        'Authentic modern pixel-art brawler screen, matching real River City Girls 2019 screenshots.',
       creative_brief:
-        "Night-market brawler capture: an original side-scrolling beat-em-up screenshot in a crowded night market, food stalls, lanterns and breakable props. Carry it through side-scrolling lane, food stalls, lanterns, breakable props. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'side-scrolling lane; food stalls; lanterns; breakable props',
+        "WayForward River City Girls (2019) look: bright detailed pixel-art beat em up, anime-inspired character sprites, crowded Japanese streets and shops, comic hit effects and loud pop color. Carry it through River City Girls pixel art, pop colors, street brawl. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'River City Girls pixel art; pop colors; street brawl',
     },
     ui: {
       previewStatus: 'pending',
@@ -489,34 +464,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-104',
-    name: 'Rooftop Scope View Capture',
-    displayName: 'Rooftop Scope View Capture',
+    name: 'Hitman 2016 - IO Interactive Sniper Scope',
+    displayName: 'Hitman 2016 - IO Interactive Sniper Scope',
     styleAnchors: [
-      'Rooftop Scope View Capture',
+      'Hitman 2016 - IO Interactive Sniper Scope',
       'sniper scope night game screenshot',
       'scope circle',
     ],
     category: '1. Neon Urban & Night Ops',
     domain: 'sniper scope night game screenshot',
     negativePrompt:
-      'readable range numbers, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a bald man in a black suit with a red tie and a barcode tattoo, readable range numbers, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Rooftop scope view capture: an original first-person sniper screenshot through a round scope over a night city, reticle, lens glare and distant targets.',
+        'IO Interactive Hitman (2016) look: sleek realistic city rooftops, polished Glacier engine lighting, a round sniper scope view with reticle and calm clinical assassination tension.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; frame the subject through a circular scope with a reticle from a distant rooftop.',
-      color_and_tone: 'Dark vignette with cool city lights in the lens.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as realistic distant figures seen through a round scope reticle. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Night blue, sodium amber and clean scope black.',
       lighting_and_shadow:
-        'Lens glare and distant window light, kept consistent across the whole image.',
-      texture_and_material: 'Scope glass, reticle lines and night city detail.',
+        'Realistic city night light with window glow, lit the way Hitman 2016 lights its levels.',
+      texture_and_material:
+        'Realistic Glacier engine surfaces, with the in-engine surface finish of Hitman 2016.',
       camera_and_composition:
-        'Circular scope view with black surround, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with patient tense focus.',
+        'Round scope view with a thin reticle, framed the way Hitman 2016 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with cold patient focus.',
       rendering_and_quality:
-        'Clean scope capture with no readable numbers, kept consistent across the whole image.',
+        'Authentic modern stealth sniper screen, matching real Hitman 2016 screenshots.',
       creative_brief:
-        "Rooftop scope view capture: an original first-person sniper screenshot through a round scope over a night city, reticle, lens glare and distant targets. Carry it through scope circle, reticle, night city, lens glare. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'scope circle; reticle; night city; lens glare',
+        "IO Interactive Hitman (2016) look: sleek realistic city rooftops, polished Glacier engine lighting, a round sniper scope view with reticle and calm clinical assassination tension. Carry it through Hitman sniper scope, reticle, city rooftops. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Hitman sniper scope; reticle; city rooftops',
     },
     ui: {
       previewStatus: 'pending',
@@ -524,36 +500,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-105',
-    name: 'Drone Night Feed Capture',
-    displayName: 'Drone Night Feed Capture',
+    name: 'Call of Duty 4 2007 - Infinity Ward Thermal Gunship Feed',
+    displayName: 'Call of Duty 4 2007 - Infinity Ward Thermal Gunship Feed',
     styleAnchors: [
-      'Drone Night Feed Capture',
+      'Call of Duty 4 2007 - Infinity Ward Thermal Gunship Feed',
       'surveillance drone game screenshot',
       'night vision',
     ],
     category: '1. Neon Urban & Night Ops',
     domain: 'surveillance drone game screenshot',
     negativePrompt:
-      'readable data text, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable data text, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Drone night feed capture: an original surveillance-drone screenshot in grainy night vision, tagged silhouettes, scan lines and a wide overhead view.',
+        'Infinity Ward Call of Duty 4: Modern Warfare (2007) look: grainy black-and-white thermal gunship camera feed, white-hot figures, crosshair brackets and circling aerial perspective.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject from above through a grainy drone night-vision feed.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as white-hot thermal silhouettes seen from high above. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Green or thermal white-hot monochrome, kept consistent across the whole image.',
+        'Monochrome white-hot on grey and black, true to the Call of Duty 4 2007 palette.',
       lighting_and_shadow:
-        'Night-vision glow and hot thermal silhouettes, kept consistent across the whole image.',
+        'Thermal contrast with heat blooms, lit the way Call of Duty 4 2007 lights its levels.',
       texture_and_material:
-        'Sensor grain, scan lines and blocky compression, kept consistent across the whole image.',
+        'Grainy thermal noise and scan lines, with the in-engine surface finish of Call of Duty 4 2007.',
       camera_and_composition:
-        'Top-down or steep drone angle with markers, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with cold watchful distance.',
+        'Circling overhead thermal feed with brackets, framed the way Call of Duty 4 2007 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with detached surveillance dread.',
       rendering_and_quality:
-        'Convincing sensor feed with no readable data, kept consistent across the whole image.',
+        'Authentic late-2000s thermal camera screen, matching real Call of Duty 4 2007 screenshots.',
       creative_brief:
-        "Drone night feed capture: an original surveillance-drone screenshot in grainy night vision, tagged silhouettes, scan lines and a wide overhead view. Carry it through night vision, drone angle, target brackets, scan lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'night vision; drone angle; target brackets; scan lines',
+        "Infinity Ward Call of Duty 4: Modern Warfare (2007) look: grainy black-and-white thermal gunship camera feed, white-hot figures, crosshair brackets and circling aerial perspective. Carry it through Thermal gunship feed, white-hot figures, brackets. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Thermal gunship feed; white-hot figures; brackets',
     },
     ui: {
       previewStatus: 'pending',
@@ -561,33 +537,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-106',
-    name: 'Arcade Night Racer Capture',
-    displayName: 'Arcade Night Racer Capture',
+    name: 'Horizon Chase Turbo 2018 - Aquiris Retro Arcade Racer',
+    displayName: 'Horizon Chase Turbo 2018 - Aquiris Retro Arcade Racer',
     styleAnchors: [
-      'Arcade Night Racer Capture',
+      'Horizon Chase Turbo 2018 - Aquiris Retro Arcade Racer',
       'retro arcade night racing screenshot',
       'behind-car camera',
     ],
     category: '1. Neon Urban & Night Ops',
     domain: 'retro arcade night racing screenshot',
     negativePrompt:
-      'car brand logos, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'car brand logos, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Arcade night racer capture: an original behind-the-car arcade racing screenshot on a neon night highway, sunset gradients, palm silhouettes and speed streaks.',
+        'Aquiris Horizon Chase Turbo (2018) look: low-poly flat-shaded retro arcade racing, rear view of the car, curving roads rising and falling toward huge gradient sunsets.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject racing from a behind-the-car arcade camera on a neon highway.',
-      color_and_tone: 'Sunset magenta, violet and cyan with road lights.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render every car and rider as a flat-shaded low-poly shape seen from behind. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        'Sunset orange, magenta and teal gradients, true to the Horizon Chase Turbo 2018 palette.',
       lighting_and_shadow:
-        'Neon road lights and tail-light glow, kept consistent across the whole image.',
-      texture_and_material: 'Glossy car paint, road stripes and speed lines.',
+        'Huge gradient sunset light with flat shading, lit the way Horizon Chase Turbo 2018 lights its levels.',
+      texture_and_material:
+        'Flat-shaded low-poly geometry without textures, with the in-engine surface finish of Horizon Chase Turbo 2018.',
       camera_and_composition:
-        'Behind-the-car view with a vanishing road, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with euphoric retro speed.',
-      rendering_and_quality: 'Clean arcade capture with no readable HUD text.',
+        'Rear arcade chase camera on curving roads, framed the way Horizon Chase Turbo 2018 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with nostalgic arcade joy.',
+      rendering_and_quality:
+        'Authentic flat-shaded retro racer screen, matching real Horizon Chase Turbo 2018 screenshots.',
       creative_brief:
-        "Arcade night racer capture: an original behind-the-car arcade racing screenshot on a neon night highway, sunset gradients, palm silhouettes and speed streaks. Carry it through behind-car camera, neon highway, sunset gradient, speed streaks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'behind-car camera; neon highway; sunset gradient; speed streaks',
+        "Aquiris Horizon Chase Turbo (2018) look: low-poly flat-shaded retro arcade racing, rear view of the car, curving roads rising and falling toward huge gradient sunsets. Carry it through Horizon Chase low-poly, gradient sunsets, rear chase. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Horizon Chase low-poly; gradient sunsets; rear chase',
     },
     ui: {
       previewStatus: 'pending',
@@ -595,34 +574,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-107',
-    name: 'Pixel Night Ninja Capture',
-    displayName: 'Pixel Night Ninja Capture',
+    name: 'The Messenger 2018 - Sabotage 8-Bit Ninja',
+    displayName: 'The Messenger 2018 - Sabotage 8-Bit Ninja',
     styleAnchors: [
-      'Pixel Night Ninja Capture',
+      'The Messenger 2018 - Sabotage 8-Bit Ninja',
       'retro pixel ninja action screenshot',
       'pixel ninja',
     ],
     category: '1. Neon Urban & Night Ops',
     domain: 'retro pixel ninja action screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Pixel night ninja capture: an original retro pixel action screenshot of a ninja on moonlit rooftops, parallax skylines, small sprites and sharp colors.',
+        'Sabotage Studio The Messenger (2018) look: 8-bit NES-style pixel ninja platformer, tiny sprites, limited palette, pagoda rooftops under a big moon and flat color bands.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; render the subject as a small pixel sprite in a moonlit rooftop action scene.',
-      color_and_tone: 'Deep indigo night with moon yellow and red accents.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as tiny 8-bit ninja sprites with limited-palette pixels. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Limited 8-bit palette of night blue, moon yellow and red.',
       lighting_and_shadow:
-        'Moonlight rims and flat pixel shading, kept consistent across the whole image.',
-      texture_and_material: 'Crisp pixel sprites, tile roofs and parallax layers.',
+        'Flat 8-bit light with no gradients, lit the way The Messenger 2018 lights its levels.',
+      texture_and_material:
+        'Chunky 8-bit pixels and tile patterns, with the in-engine surface finish of The Messenger 2018.',
       camera_and_composition:
-        'Side-scrolling rooftop view, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with sharp retro action.',
+        'Side-scrolling platformer view, framed the way The Messenger 2018 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with playful retro ninja.',
       rendering_and_quality:
-        'Clean pixel capture with no readable HUD, kept consistent across the whole image.',
+        'Authentic modern 8-bit pixel platformer screen, matching real The Messenger 2018 screenshots.',
       creative_brief:
-        "Pixel night ninja capture: an original retro pixel action screenshot of a ninja on moonlit rooftops, parallax skylines, small sprites and sharp colors. Carry it through pixel ninja, moonlit rooftops, parallax skyline, small sprites. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'pixel ninja; moonlit rooftops; parallax skyline; small sprites',
+        "Sabotage Studio The Messenger (2018) look: 8-bit NES-style pixel ninja platformer, tiny sprites, limited palette, pagoda rooftops under a big moon and flat color bands. Carry it through The Messenger 8-bit, tiny ninja sprites, big moon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'The Messenger 8-bit; tiny ninja sprites; big moon',
     },
     ui: {
       previewStatus: 'pending',
@@ -630,32 +610,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-108',
-    name: 'Neon Rhythm Street Battle',
-    displayName: 'Neon Rhythm Street Battle',
-    styleAnchors: ['Neon Rhythm Street Battle', 'music rhythm combat screenshot', 'beat rings'],
+    name: 'Hi-Fi Rush 2023 - Tango Gameworks Rhythm Cel',
+    displayName: 'Hi-Fi Rush 2023 - Tango Gameworks Rhythm Cel',
+    styleAnchors: [
+      'Hi-Fi Rush 2023 - Tango Gameworks Rhythm Cel',
+      'music rhythm combat screenshot',
+      'beat rings',
+    ],
     category: '1. Neon Urban & Night Ops',
     domain: 'music rhythm combat screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a spiky-haired guitarist with a robotic arm and a robot cat, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Neon rhythm street battle: an original rhythm-action screenshot where fighters strike on the beat, pulsing neon streets, beat rings and speaker-stack cities.',
+        'Tango Gameworks Hi-Fi Rush (2023) look: bright comic cel-shaded 3D, thick outlines, halftone dots, everything in the world bouncing to the beat and big onomatopoeia-shaped effects.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject striking on the beat amid pulsing rings and speakers.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as bright cel-shaded cartoon characters with thick outlines and bouncy poses. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Pulsing magenta, cyan and yellow on black, kept consistent across the whole image.',
+        'Bright pop yellow, magenta, cyan and orange, true to the Hi-Fi Rush 2023 palette.',
       lighting_and_shadow:
-        'Beat-synced light pulses and neon rims, kept consistent across the whole image.',
+        'Flat cel light with halftone shadow dots, lit the way Hi-Fi Rush 2023 lights its levels.',
       texture_and_material:
-        'Glossy streets, speaker stacks and light rings, kept consistent across the whole image.',
+        'Cel shading, thick outlines and halftone, with the in-engine surface finish of Hi-Fi Rush 2023.',
       camera_and_composition:
-        'Dynamic third-person arena with beat rings, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with musical kinetic joy.',
+        'Third-person action view synced to the beat, framed the way Hi-Fi Rush 2023 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with rhythmic comic exuberance.',
       rendering_and_quality:
-        'Clean vibrant capture with no readable text, kept consistent across the whole image.',
+        'Authentic modern comic cel-shaded action screen, matching real Hi-Fi Rush 2023 screenshots.',
       creative_brief:
-        "Neon rhythm street battle: an original rhythm-action screenshot where fighters strike on the beat, pulsing neon streets, beat rings and speaker-stack cities. Carry it through beat rings, neon pulses, speaker stacks, rhythmic strikes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'beat rings; neon pulses; speaker stacks; rhythmic strikes',
+        "Tango Gameworks Hi-Fi Rush (2023) look: bright comic cel-shaded 3D, thick outlines, halftone dots, everything in the world bouncing to the beat and big onomatopoeia-shaped effects. Carry it through Hi-Fi Rush cel, halftone, beat-synced world. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Hi-Fi Rush cel; halftone; beat-synced world',
     },
     ui: {
       previewStatus: 'pending',

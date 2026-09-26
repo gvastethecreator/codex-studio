@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-163
 packId: pack_12
-name: Sewer Tunnel Crawl Capture
+name: A Plague Tale Innocence 2019 - Asobo Rat Swarm
 styleAnchors:
-  - Sewer Tunnel Crawl Capture
+  - A Plague Tale Innocence 2019 - Asobo Rat Swarm
   - sewer dungeon exploration screenshot
   - vaulted brick sewers
-displayName: Sewer Tunnel Crawl Capture
+displayName: A Plague Tale Innocence 2019 - Asobo Rat Swarm
 category: 7. Heists, Horror & Underworld Runs
 domain: sewer dungeon exploration screenshot
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,22 @@ tags:
   - sewer-crawl
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Sewer tunnel crawl capture: an original third-person screenshot of wading through vaulted brick sewers, green glowing water, rats and dripping pipes.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject wading through vaulted brick sewer tunnels.
-  color_and_tone: Murky green, brick brown and torch amber, kept consistent across the whole image.
-  lighting_and_shadow: Torch glow and green water glow, kept consistent across the whole image.
-  texture_and_material: Wet brick, grates, rust and sludge, kept consistent across the whole image.
-  camera_and_composition: Third-person behind the character down the tunnel, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with grimy menace, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no HUD, kept consistent across the whole image.
-  creative_brief: "Sewer tunnel crawl capture: an original third-person screenshot of wading through vaulted brick sewers, green glowing water, rats and dripping pipes. Carry it through vaulted brick sewers, green water, torchlight, rats. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: vaulted brick sewers; green water; torchlight; rats
+  aesthetic: 'Asobo Studio A Plague Tale: Innocence (2019) look: third-person medieval France under plague, torchlight against rat swarms, muddy villages and sewers.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as medieval commoners in worn wool. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Torch orange, mud brown and plague grey, true to the A Plague Tale Innocence 2019 palette.
+  lighting_and_shadow: Torchlight rings holding back darkness, lit the way A Plague Tale Innocence 2019 lights its levels.
+  texture_and_material: Mud, wet stone and fur, with the in-engine surface finish of A Plague Tale Innocence 2019.
+  camera_and_composition: Third-person view with torches, framed the way A Plague Tale Innocence 2019 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with desperate medieval dread.
+  rendering_and_quality: Authentic modern adventure screen, matching real A Plague Tale Innocence 2019 screenshots.
+  creative_brief: 'Asobo Studio A Plague Tale: Innocence (2019) look: third-person medieval France under plague, torchlight against rat swarms, muddy villages and sewers. Carry it through Plague Tale rat swarms, torchlight, sewers. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Plague Tale rat swarms; torchlight; sewers
 avoidRules:
+  - a young noble girl with a sling and her little brother
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a young noble girl with a sling and her little brother, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +68,7 @@ taxonomy:
     - sewer-crawl
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

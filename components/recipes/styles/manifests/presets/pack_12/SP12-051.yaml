@@ -1,14 +1,14 @@
 schemaVersion: 1
 id: SP12-051
 packId: pack_12
-name: Relic Bazaar Deck Trial
+name: Slay the Spire 2019 - Mega Crit Card Climb
 styleAnchors:
-  - roguelike deckbuilder gameplay screenshots
+  - Slay the Spire 2019 - Mega Crit Card Climb
   - 2D relic card battle layout
   - Relic Bazaar Deck Trial
-displayName: Relic Bazaar Deck Trial
+displayName: Slay the Spire 2019 - Mega Crit Card Climb
 category: 8. Puzzle Chambers & Adventure Setpieces
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -22,48 +22,20 @@ tags:
   - render-card-board-ui
   - camera-board-command-ui
   - hud-full-hud
+  - reference-title
 visualDna:
-  aesthetic: 'Original in-game screenshot look for relic deckbuilder captures: 2D card-battle layout with hand silhouettes, enemy intent icons, relic pips, merchant/bazaar staging, and readable turn choices. Borrow the clean strategic readability of Slay the Spire-like games, but land as a different fictional relic deckbuilder with different creatures, card anatomy, UI icons, map props, and relic silhouettes.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable relic deckbuilder screenshot
-    subject: keep clear enemy/player/object function, turn decision, card/resource pressure, intent
-    cue, and scale relationship without copying source characters or named IP elements.
-  color_and_tone: >-
-    Use a relic deckbuilder palette: parchment beige, sapphire UI blue, monster red, poison green,
-    dull gold, cave purple, bone white, and smoky black. Keep value grouping legible at gameplay
-    distance, with color accents behaving like turn cost, danger, resource, intent, pickup, or
-    objective cues rather than decorative wash.
-  lighting_and_shadow: >-
-    Light the image through card glow, campfire or bazaar warmth, simple enemy stage light, relic
-    sparkle, and clean UI contrast. Lighting must clarify turn decision, active threat, focal
-    subject, or event objective and avoid generic cinematic bloom that destroys board readability.
-  texture_and_material: >-
-    Build surfaces from painted card silhouettes, relic icons, rough creature sprites, parchment
-    panels, coin piles, bone-market props, and flat stage backdrops. Materials should feel like
-    in-engine game assets captured during play, with enough texture identity to separate cards,
-    enemies, relics, hazards, and interactables.
-  camera_and_composition: >-
-    Compose with 2D card-battle layout: hand at bottom, enemies or event object centered, intent
-    icons above, relic/resource pips, and one clear turn decision. All cards and UI markings must
-    stay wordless and numberless.
-  atmosphere_and_mood: >-
-    Carry an original relic bazaar deckbuilder mood: strategic, readable, weird, crunchy,
-    mercantile, and tabletop-adjacent.
-  rendering_and_quality: >-
-    Finish as coherent in-engine relic deckbuilder screenshot style, not concept art: cards,
-    energy/resource pips, relic row, potions, map/merchant panels, and enemy intent icons can
-    appear, but no readable card text, no stat numbers, no exact relic bar UI, and no fake logos.
-    Maintain heavy-denoise clarity and crisp focal hierarchy.
-  key_features: >-
-    original relic deckbuilder gameplay screenshots; 2D card-battle layout with hand silhouettes,
-    enemy intent icons, relic pips, merchant or bazaar staging, readable turn choices; parchment
-    beige, sapphire blue, monster red, poison green, dull gold, cave purple; card glow, bazaar
-    warmth, clean UI contrast; painted card silhouettes, relic icons, rough creature sprites,
-    parchment panels, coin piles; hand at bottom, enemies or event object centered, intent icons
-    above, relic/resource pips; HUD guidance: cards, pips, relic row, potions, and enemy intent
-    icons only, wordless and numberless
-  creative_brief: "Relic Bazaar Deck Trial: original in-game screenshot language for relic deckbuilders, covering a 2D card-battle camera, abstract card grammar, intent icons, resource pressure, bazaar and event staging, and readable board state. Avoid menus, logos, exact characters, exact levels, direct cloning of any card game, readable text and stat numbers. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'Mega Crit Slay the Spire (2019) look: 2D roguelike deckbuilder with hand-drawn cartoon heroes and monsters, card hands at the bottom and glowing intent icons above enemies.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render every subject as flat hand-drawn cartoon heroes, monsters and illustrated cards. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Candle gold, card parchment and dungeon teal, true to the Slay the Spire 2019 palette.
+  lighting_and_shadow: Flat painted light and glowing card effects, lit the way Slay the Spire 2019 lights its levels.
+  texture_and_material: Hand-drawn 2D art and card frames, with the in-engine surface finish of Slay the Spire 2019.
+  camera_and_composition: Side-on card battle layout, framed the way Slay the Spire 2019 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with strategic climbing tension.
+  rendering_and_quality: Authentic deckbuilder battle screen, matching real Slay the Spire 2019 screenshots.
+  key_features: Slay the Spire cards; intent icons; hand-drawn foes
+  creative_brief: 'Mega Crit Slay the Spire (2019) look: 2D roguelike deckbuilder with hand-drawn cartoon heroes and monsters, card hands at the bottom and glowing intent icons above enemies. Carry it through Slay the Spire cards, intent icons, hand-drawn foes. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
+  - existing Slay the Spire heroes
   - watermark
   - logo
   - copyright mark
@@ -92,22 +64,21 @@ avoidRules:
   - readable card text
   - stat numbers
   - exact relic bar UI
+  - text
+  - readable labels
+  - franchise likeness
+  - real person likeness
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-051.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, direct Slay the Spire clone, readable card text, stat
-    numbers, exact relic bar UI
+  negativePrompt: existing Slay the Spire heroes, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Slay the Spire clone, readable card text, stat numbers, exact relic bar UI, text, readable labels, franchise likeness, real person likeness, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   referenceGame: Original relic deckbuilder, Slay the Spire-informed
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    cards, energy, relic bar, potions, map/merchant panels, and enemy intent icons are essential to
-    the style
+  hudGuidance: cards, energy, relic bar, potions, map/merchant panels, and enemy intent icons are essential to the style
   renderFamily: card-board-ui
   cameraFamily: board-command-ui
   hudMode: full-hud
@@ -125,6 +96,7 @@ taxonomy:
     - render-card-board-ui
     - camera-board-command-ui
     - hud-full-hud
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

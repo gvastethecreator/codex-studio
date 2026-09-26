@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-119
 packId: pack_12
-name: Mech Canopy View Capture
+name: Titanfall 2 2016 - Respawn Titan Cockpit
 styleAnchors:
-  - Mech Canopy View Capture
+  - Titanfall 2 2016 - Respawn Titan Cockpit
   - first-person mech cockpit screenshot
   - mech cockpit frame
-displayName: Mech Canopy View Capture
+displayName: Titanfall 2 2016 - Respawn Titan Cockpit
 category: 3. Sci-Fi Frontiers & Mech Zones
 domain: first-person mech cockpit screenshot
-version: 1
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,22 +20,23 @@ tags:
   - mech-canopy
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Mech canopy view capture: an original first-person view from inside a giant mech canopy, framed by cockpit struts and glass, with the battlefield far below.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; frame the subject through the glass canopy of a towering mech.
-  color_and_tone: Dim cockpit greys with bright battlefield light outside.
-  lighting_and_shadow: Backlit canopy glass and interior glow strips, kept consistent across the whole image.
-  texture_and_material: Scratched glass, metal struts and rain on the canopy.
-  camera_and_composition: Cockpit frame with a wide view outside, kept consistent across the whole image.
+  aesthetic: 'Respawn Entertainment Titanfall 2 (2016) look: first-person view from inside a giant titan mech cockpit, canopy framing, HUD brackets, rain on the glass and industrial frontier cities.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as pilots inside mech cockpits and machines as colossal industrial walkers. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Industrial grey, cockpit amber and rain blue, true to the Titanfall 2 2016 palette.
+  lighting_and_shadow: Cockpit instrument glow and rain light, lit the way Titanfall 2 2016 lights its levels.
+  texture_and_material: Rain streaks, glass and worn industrial metal, with the in-engine surface finish of Titanfall 2 2016.
+  camera_and_composition: First-person cockpit canopy view, framed the way Titanfall 2 2016 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with heavy mechanical power.
-  rendering_and_quality: Clean capture with no readable instrument text, kept consistent across the whole image.
-  creative_brief: "Mech canopy view capture: an original first-person view from inside a giant mech canopy, framed by cockpit struts and glass, with the battlefield far below. Carry it through mech cockpit frame, canopy glass, battlefield below, rain streaks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: mech cockpit frame; canopy glass; battlefield below; rain streaks
+  rendering_and_quality: Authentic mid-2010s mech shooter screen, matching real Titanfall 2 2016 screenshots.
+  creative_brief: 'Respawn Entertainment Titanfall 2 (2016) look: first-person view from inside a giant titan mech cockpit, canopy framing, HUD brackets, rain on the glass and industrial frontier cities. Carry it through Titanfall cockpit, mech canopy, rain glass. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Titanfall cockpit; mech canopy; rain glass
 avoidRules:
+  - a titan with a single round blue eye
   - readable instruments
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -44,13 +45,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: readable instruments, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a titan with a single round blue eye, readable instruments, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -65,6 +69,7 @@ taxonomy:
     - mech-canopy
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

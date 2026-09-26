@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-100
 packId: pack_12
-name: Rain-Slick Alley Stealth Capture
+name: Deus Ex Human Revolution 2011 - Eidos Gold Cyber Stealth
 styleAnchors:
-  - Rain-Slick Alley Stealth Capture
+  - Deus Ex Human Revolution 2011 - Eidos Gold Cyber Stealth
   - third-person rainy stealth screenshot
   - rain puddles
-displayName: Rain-Slick Alley Stealth Capture
+displayName: Deus Ex Human Revolution 2011 - Eidos Gold Cyber Stealth
 category: 1. Neon Urban & Night Ops
 domain: third-person rainy stealth screenshot
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,22 @@ tags:
   - rain-stealth
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Rain-slick alley stealth capture: an original third-person stealth game screenshot in wet neon alleys, reflections on puddles, steam vents and guard flashlights.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject crouched or hidden in a wet neon alley from an over-the-shoulder camera.
-  color_and_tone: Wet black, sodium orange and teal neon reflections.
-  lighting_and_shadow: Neon signs, flashlight cones and puddle reflections, kept consistent across the whole image.
-  texture_and_material: Wet asphalt, brick, steam and chain-link, kept consistent across the whole image.
-  camera_and_composition: Over-the-shoulder view with a clear sneaking route, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with taut rainy suspense.
-  rendering_and_quality: Real-time game look with readable stealth cues, kept consistent across the whole image.
-  creative_brief: "Rain-slick alley stealth capture: an original third-person stealth game screenshot in wet neon alleys, reflections on puddles, steam vents and guard flashlights. Carry it through rain puddles, neon reflections, flashlight cones, over-shoulder view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: rain puddles; neon reflections; flashlight cones; over-shoulder view
+  aesthetic: 'Eidos Montreal Deus Ex: Human Revolution (2011) look: black-and-gold cyber-renaissance palette, third-person cover stealth in rainy alleys, augmented bodies and Renaissance-inspired clothing.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as augmented agents with sleek black clothing and glowing gold cyber details. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Black and warm gold with amber haze, true to the Deus Ex Human Revolution 2011 palette.
+  lighting_and_shadow: Gold amber haze with flashlight sweeps and holograms.
+  texture_and_material: Wet asphalt, leather, polished augment plating, with the in-engine surface finish of Deus Ex Human Revolution 2011.
+  camera_and_composition: Third-person cover view behind a crouched agent, framed the way Deus Ex Human Revolution 2011 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with conspiratorial gold noir.
+  rendering_and_quality: Authentic early-2010s stealth screen, matching real Deus Ex Human Revolution 2011 screenshots.
+  creative_brief: 'Eidos Montreal Deus Ex: Human Revolution (2011) look: black-and-gold cyber-renaissance palette, third-person cover stealth in rainy alleys, augmented bodies and Renaissance-inspired clothing. Carry it through Deus Ex black and gold, cover stealth, augmented agents. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Deus Ex black and gold; cover stealth; augmented agents
 avoidRules:
+  - a bearded agent in sunglasses and a trench coat
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a bearded agent in sunglasses and a trench coat, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +68,7 @@ taxonomy:
     - rain-stealth
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

@@ -5,357 +5,346 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-007',
-    name: 'Banner Saga Glacier Tactics',
-    displayName: 'Banner Saga Glacier Tactics',
-    styleAnchors: ['The Banner Saga gameplay screenshots', 'Banner Saga Glacier Tactics'],
+    name: 'The Banner Saga 2014 - Stoic Hand-Painted Saga',
+    displayName: 'The Banner Saga 2014 - Stoic Hand-Painted Saga',
+    styleAnchors: ['The Banner Saga 2014 - Stoic Hand-Painted Saga', 'Banner Saga Glacier Tactics'],
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'horned giant warriors, stone-armored invaders of the source game, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'In-game screenshot look informed by The Banner Saga gameplay: hand-painted tactical-RPG capture with icy strongholds, Viking silhouettes, square-grid positioning, and storybook battlefield clarity. It never recreates an exact official level, character, logo or marketing art.',
+        'Stoic The Banner Saga (2014) look: hand-animated 2D in the Eyvind Earle and Sleeping Beauty tradition, flat painted Norse landscapes, caravans on snow and turn-based tactical grids.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable The Banner Saga-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a The Banner Saga-informed palette: snow white, slate blue, oxblood cloth, muted gold, cold grey armor, and warm campfire accents. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
-      lighting_and_shadow:
-        'Light the image through flat overcast snowlight, torch pools, rimmed silhouettes, and painterly value blocks rather than glossy 3D lighting. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
-      texture_and_material:
-        'Build surfaces from illustrated snow, wool cloaks, carved shields, old timber, simple armor planes, and crisp 2D cutout edges. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
-      camera_and_composition:
-        "Compose with isometric tactical grid with large readable units, threat spacing, turn-order logic, and landscape silhouettes behind the fight. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'The Banner Saga-derived mood: grim, mythic, exhausted, noble, and winter-bound; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as hand-animated Norse figures with clean flat shapes, fur, braids and weathered armor. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Muted snow blue, birch white, ochre and deep red banners.',
+      lighting_and_shadow: 'Soft flat painted light with pale winter skies.',
+      texture_and_material: 'Hand-painted flat backgrounds and clean hand-drawn animation lines.',
+      camera_and_composition: 'Side tactical grid view or wide caravan landscape.',
+      atmosphere_and_mood: 'Keep the requested mood with weary stoic endurance.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: turn-order cards, stat pips, tile markers, and ability icons are allowed as part of tactical readability. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'The Banner Saga gameplay screenshots; hand-painted tactical-RPG capture with icy strongholds, Viking silhouettes, square-grid positioning, and storybook battlefield clarity; snow white, slate blue, oxblood cloth, muted gold, cold grey armor, and warm campfire accents; flat overcast snowlight, torch pools, rimmed silhouettes, and painterly value blocks rather than glossy 3D lighting; illustrated snow, wool cloaks, carved shields, old timber, simple armor planes, and crisp 2D cutout edges; isometric tactical grid with large readable units, threat spacing, turn-order logic, and landscape silhouettes behind the fight; grim, mythic, exhausted, noble, and winter-bound; HUD guidance: turn-order cards, stat pips, tile markers, and ability icons are allowed as part of tactical readability',
+        'Authentic hand-animated tactical RPG screen, matching real The Banner Saga 2014 screenshots.',
+      key_features: 'Banner Saga Eyvind Earle painting; caravans; tactical grid',
       creative_brief:
-        "Banner Saga Glacier Tactics: in-game screenshot language informed by The Banner Saga, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Stoic The Banner Saga (2014) look: hand-animated 2D in the Eyvind Earle and Sleeping Beauty tradition, flat painted Norse landscapes, caravans on snow and turn-based tactical grids. Carry it through Banner Saga Eyvind Earle painting, caravans, tactical grid. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-009',
-    name: 'Castle Crashers Co-op Siege',
-    displayName: 'Castle Crashers Co-op Siege',
-    styleAnchors: ['Castle Crashers gameplay screenshots', 'Castle Crashers Co-op Siege'],
+    name: 'Castle Crashers 2008 - The Behemoth Cartoon Brawl',
+    displayName: 'Castle Crashers 2008 - The Behemoth Cartoon Brawl',
+    styleAnchors: [
+      'Castle Crashers 2008 - The Behemoth Cartoon Brawl',
+      'Castle Crashers Co-op Siege',
+    ],
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'four knights in red, green, blue and orange armor, animal orb companions, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Castle Crashers gameplay: 2D co-op beat-em-up capture with thick cartoon outlines, side-scrolling castle lanes, chunky enemies, and four-player chaos readability. It never recreates an exact official level, character, logo or marketing art.',
+        'The Behemoth Castle Crashers (2008) look: Dan Paladin thick-outline 2D cartoon, round-headed characters with simple faces, bright flat colors and side-scrolling co-op brawling.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Castle Crashers-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Castle Crashers-informed palette: flat knight primaries, grass green, castle grey, orange fire, candy gore red, and simple shadow colors. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as round-headed thick-outline cartoon figures with tiny dot eyes and chunky gear. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Bright flat grass green, sky blue and primary colors.',
       lighting_and_shadow:
-        'Light the image through mostly flat stage lighting with spell pops, impact flashes, torch accents, and no realistic global illumination. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Flat cartoon light with no gradients, lit the way Castle Crashers 2008 lights its levels.',
       texture_and_material:
-        'Build surfaces from vector-like cartoon sprites, simple tiled ground, bold weapons, goofy armor shapes, and exaggerated hit effects. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Thick outlines and flat vector fills, with the in-engine surface finish of Castle Crashers 2008.',
       camera_and_composition:
-        "Compose with side-view brawler lane with multiplayer spacing, enemy crowds, pickup readability, and foreground/background stage layers. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Castle Crashers-derived mood: violent, playful, chaotic, arcade-like, and comic without becoming childish; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Side-scrolling brawler view, framed the way Castle Crashers 2008 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with silly co-op mayhem.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: co-op health bars, player icons, XP numbers, and pickup prompts are allowed when they support brawler screenshot logic. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Castle Crashers gameplay screenshots; 2D co-op beat-em-up capture with thick cartoon outlines, side-scrolling castle lanes, chunky enemies, and four-player chaos readability; flat knight primaries, grass green, castle grey, orange fire, candy gore red, and simple shadow colors; mostly flat stage lighting with spell pops, impact flashes, torch accents, and no realistic global illumination; vector-like cartoon sprites, simple tiled ground, bold weapons, goofy armor shapes, and exaggerated hit effects; side-view brawler lane with multiplayer spacing, enemy crowds, pickup readability, and foreground/background stage layers; violent, playful, chaotic, arcade-like, and comic without becoming childish; HUD guidance: co-op health bars, player icons, XP numbers, and pickup prompts are allowed when they support brawler screenshot logic',
+        'Authentic cartoon brawler screen, matching real Castle Crashers 2008 screenshots.',
+      key_features: 'Castle Crashers thick outlines; round heads; co-op brawl',
       creative_brief:
-        "Castle Crashers Co-op Siege: in-game screenshot language informed by Castle Crashers, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "The Behemoth Castle Crashers (2008) look: Dan Paladin thick-outline 2D cartoon, round-headed characters with simple faces, bright flat colors and side-scrolling co-op brawling. Carry it through Castle Crashers thick outlines, round heads, co-op brawl. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-026',
-    name: 'Tactics Ogre Verdant Ruins',
-    displayName: 'Tactics Ogre Verdant Ruins',
-    styleAnchors: ['Tactics Ogre: Reborn gameplay screenshots', 'Tactics Ogre Verdant Ruins'],
+    name: 'Tactics Ogre 1995 - Quest Isometric Sprite Tactics',
+    displayName: 'Tactics Ogre 1995 - Quest Isometric Sprite Tactics',
+    styleAnchors: [
+      'Tactics Ogre 1995 - Quest Isometric Sprite Tactics',
+      'Tactics Ogre Verdant Ruins',
+    ],
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Tactics Ogre: Reborn gameplay: isometric tactical-RPG capture with tile height, verdant ruins, small unit sprites, turn order, and readable strategy terrain. It never recreates an exact official level, character, logo or marketing art.',
+        'Quest Tactics Ogre: Let Us Cling Together (1995) look: isometric tactical RPG with Akihiko Yoshida character designs as small detailed sprites on tiered tile maps of ruins and highlands.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Tactics Ogre: Reborn-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Tactics Ogre: Reborn-informed palette: moss green, old stone grey, parchment UI beige, cobalt water, burgundy cloth, and brass item accents. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as small detailed isometric sprites with Yoshida-style proportions. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Muted earth, vine green and faded medieval blue.',
       lighting_and_shadow:
-        'Light the image through soft tactical daylight, simple sprite shadows, spell glows, and clean value separation over tiles. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Soft even 16-bit light on tiered tiles, lit the way Tactics Ogre 1995 lights its levels.',
       texture_and_material:
-        'Build surfaces from pixel/HD-sprite units, stone blocks, overgrown grass, banners, armor glints, and compact tactical UI panels. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Detailed 16-bit sprites and textured tiles, with the in-engine surface finish of Tactics Ogre 1995.',
       camera_and_composition:
-        "Compose with isometric grid with height advantage, movement tiles, unit facing, spell range, and clear objective structure. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Tactics Ogre: Reborn-derived mood: political, tactical, classic, serious, and readable; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Isometric view over tiered tile maps, framed the way Tactics Ogre 1995 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with grave political war.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: turn order, unit panels, tile highlights, damage forecast, and command menus are allowed when clean and era-aware. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Tactics Ogre: Reborn gameplay screenshots; isometric tactical-RPG capture with tile height, verdant ruins, small unit sprites, turn order, and readable strategy terrain; moss green, old stone grey, parchment UI beige, cobalt water, burgundy cloth, and brass item accents; soft tactical daylight, simple sprite shadows, spell glows, and clean value separation over tiles; pixel/HD-sprite units, stone blocks, overgrown grass, banners, armor glints, and compact tactical UI panels; isometric grid with height advantage, movement tiles, unit facing, spell range, and clear objective structure; political, tactical, classic, serious, and readable; HUD guidance: turn order, unit panels, tile highlights, damage forecast, and command menus are allowed when clean and era-aware',
+        'Authentic 16-bit isometric tactics screen, matching real Tactics Ogre 1995 screenshots.',
+      key_features: 'Tactics Ogre isometric; Yoshida sprites; tiered ruins',
       creative_brief:
-        "Tactics Ogre Verdant Ruins: in-game screenshot language informed by Tactics Ogre: Reborn, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Quest Tactics Ogre: Let Us Cling Together (1995) look: isometric tactical RPG with Akihiko Yoshida character designs as small detailed sprites on tiered tile maps of ruins and highlands. Carry it through Tactics Ogre isometric, Yoshida sprites, tiered ruins. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-035',
-    name: 'Infernal Decklift Defense',
-    displayName: 'Infernal Decklift Defense',
+    name: 'Monster Train 2020 - Shiny Shoe Infernal Floors',
+    displayName: 'Monster Train 2020 - Shiny Shoe Infernal Floors',
     styleAnchors: [
-      'vertical roguelike deckbuilder gameplay screenshots',
+      'Monster Train 2020 - Shiny Shoe Infernal Floors',
       'stacked lane defense card battle',
       'Infernal Decklift Defense',
     ],
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Monster Train clone, readable card text, stat numbers, exact train floor UI',
+      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Monster Train clone, readable card text, stat numbers, exact train floor UI, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Original in-game screenshot look for vertical defense deckbuilder captures: stacked lane combat, infernal lift floors, monster units, card hand silhouettes, resource pips, and readable defense choices. Borrow the vertical lane logic of Monster Train-like games, but land as a different fictional deck-defense game with different vehicle/structure logic, unit silhouettes, UI frames, symbols, and floor anatomy.',
+        'Shiny Shoe Monster Train (2020) look: roguelike deckbuilder on a hellish train with three stacked floors plus the burning pyre, cartoon demon units and flame-orange card effects.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable stacked deck-defense screenshot subject: keep clear unit/object role, lane position, floor hierarchy, incoming threat, resource pressure, and interaction affordances without copying source characters or named IP elements.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; render every subject as cartoon demon units and cards battling on stacked train floors. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Use a vertical defense deckbuilder palette: infernal red, parchment beige, icy blue, gold UI trim, purple monster magic, black iron, ember orange, and siege-shadow grey. Keep value grouping legible at gameplay distance, with color accents behaving like lane pressure, danger, resource, team, magic, or objective cues rather than decorative wash.',
+        'Infernal orange, ember red and deep purple, true to the Monster Train 2020 palette.',
       lighting_and_shadow:
-        'Light the image through card glow, furnace or lift-core light, spell bursts, impact flashes, and clean floor separation. Lighting must clarify lane hierarchy, incoming threat, focal unit, or defensive objective and avoid generic cinematic bloom that destroys board readability.',
+        'Pyre fire glow and card flashes, lit the way Monster Train 2020 lights its levels.',
       texture_and_material:
-        'Build surfaces from illustrated unit tokens, chunky lane sprites, custom UI frames, metal lift platforms, siege machinery, chains, furnace metal, and painterly fantasy effects. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate units, lanes, hazards, and interactables.',
+        'Clean stylized cartoon 3D and card frames, with the in-engine surface finish of Monster Train 2020.',
       camera_and_composition:
-        'Compose with 2D stacked-board hierarchy: multiple defended floors or lift decks, card silhouettes at bottom, enemy intent icons, resource pips, and one clear defensive decision. All card and UI markings must stay wordless and numberless.',
-      atmosphere_and_mood:
-        'Carry an original infernal decklift mood: strategic, hellish, playful, crunchy, siege-like, and board-game readable.',
+        'Side view of stacked train floors, framed the way Monster Train 2020 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with fiery strategic chaos.',
       rendering_and_quality:
-        'Finish as coherent in-engine vertical deck-defense screenshot style, not concept art: card hand, resource pips, draw pile, unit state icons, and floor indicators are core, but no readable card text, no stat numbers, no exact train-floor UI, and no fake logos. Maintain heavy-denoise clarity and crisp focal hierarchy.',
-      key_features:
-        'original vertical defense deckbuilder gameplay screenshots; stacked lane combat; infernal lift floors; monster or unit tokens; card hand silhouettes; resource pips; readable defense choices; infernal red, parchment beige, icy blue, gold trim, purple magic, black iron; furnace light and floor separation; 2D stacked-board hierarchy with defended floors, enemy intent icons, resource pips, and one clear defensive decision; HUD guidance: wordless card hand, resource pips, draw pile, unit state icons, and floor indicators only',
+        'Authentic deckbuilder screen, matching real Monster Train 2020 screenshots.',
+      key_features: 'Monster Train stacked floors; pyre; demon cards',
       creative_brief:
-        "Infernal Decklift Defense: in-game screenshot language informed by vertical defense deckbuilder references, covering stacked lane camera, card-hand grammar, resource pressure, infernal vehicle/structure surfaces, and readable board state. Avoid menus, logos, exact characters, exact levels, direct Monster Train cloning, readable text, and stat numbers. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Shiny Shoe Monster Train (2020) look: roguelike deckbuilder on a hellish train with three stacked floors plus the burning pyre, cartoon demon units and flame-orange card effects. Carry it through Monster Train stacked floors, pyre, demon cards. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-038',
-    name: 'World of Warships Iron Reef',
-    displayName: 'World of Warships Iron Reef',
-    styleAnchors: ['World of Warships gameplay screenshots', 'World of Warships Iron Reef'],
+    name: 'World of Warships 2015 - Wargaming Naval Broadside',
+    displayName: 'World of Warships 2015 - Wargaming Naval Broadside',
+    styleAnchors: [
+      'World of Warships 2015 - Wargaming Naval Broadside',
+      'World of Warships Iron Reef',
+    ],
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'In-game screenshot look informed by World of Warships gameplay: naval combat capture with third-person warship camera, ocean scale, shell tracers, islands, torpedo lanes, and tactical HUD density. It never recreates an exact official level, character, logo or marketing art.',
+        'Wargaming World of Warships (2015) look: realistic naval combat with detailed WWII-style battleships, shell tracers arcing across open ocean, smoke screens and third-person ship camera.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable World of Warships-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; render vessels as detailed realistic warships seen from a third-person camera. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Use a World of Warships-informed palette: steel grey, ocean blue, shell orange, smoke black, UI green/red, and pale sky haze. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Steel grey, ocean blue and tracer orange, true to the World of Warships 2015 palette.',
       lighting_and_shadow:
-        'Light the image through open-sea daylight, muzzle flashes, fire plumes, water reflections, and smoke-diffused contrast. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Stormy daylight with muzzle flashes, lit the way World of Warships 2015 lights its levels.',
       texture_and_material:
-        'Build surfaces from warship armor, wet decks, waves, island cliffs, radar wakes, smoke, shell splashes, and utilitarian naval detail. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Realistic hulls, water spray and smoke, with the in-engine surface finish of World of Warships 2015.',
       camera_and_composition:
-        "Compose with third-person tactical camera with ship heading, target range, minimap, torpedo indicators, and broad battle-space readability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'World of Warships-derived mood: heavy, strategic, naval, explosive, and measured; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Third-person naval camera, framed the way World of Warships 2015 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with thunderous naval clash.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: naval HUD can be dense: minimap, reticle, ship status, cooldowns, and target markers are coherent here. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'World of Warships gameplay screenshots; naval combat capture with third-person warship camera, ocean scale, shell tracers, islands, torpedo lanes, and tactical HUD density; steel grey, ocean blue, shell orange, smoke black, UI green/red, and pale sky haze; open-sea daylight, muzzle flashes, fire plumes, water reflections, and smoke-diffused contrast; warship armor, wet decks, waves, island cliffs, radar wakes, smoke, shell splashes, and utilitarian naval detail; third-person tactical camera with ship heading, target range, minimap, torpedo indicators, and broad battle-space readability; heavy, strategic, naval, explosive, and measured; HUD guidance: naval HUD can be dense: minimap, reticle, ship status, cooldowns, and target markers are coherent here',
+        'Authentic naval combat screen, matching real World of Warships 2015 screenshots.',
+      key_features: 'World of Warships broadside; tracers; naval camera',
       creative_brief:
-        "World of Warships Iron Reef: in-game screenshot language informed by World of Warships, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Wargaming World of Warships (2015) look: realistic naval combat with detailed WWII-style battleships, shell tracers arcing across open ocean, smoke screens and third-person ship camera. Carry it through World of Warships broadside, tracers, naval camera. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-052',
-    name: 'Class Clash Bridge Control',
-    displayName: 'Class Clash Bridge Control',
+    name: 'Overwatch 2016 - Blizzard Hero Payload',
+    displayName: 'Overwatch 2016 - Blizzard Hero Payload',
     styleAnchors: [
-      'class-based team shooter gameplay screenshots',
+      'Overwatch 2016 - Blizzard Hero Payload',
       'stylized bridge control point push',
       'Class Clash Bridge Control',
     ],
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Team Fortress clone, strategy tactics camera, readable objective text, exact class silhouettes',
+      'existing Overwatch heroes, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Team Fortress clone, strategy tactics camera, readable objective text, exact class silhouettes, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Original in-game screenshot look for class-based team shooter captures: stylized first-person combat, readable team colors, chunky industrial bridge geometry, control-point pressure, projectile arcs, and comedy-violent arena clarity. Borrow the bold readability of Team Fortress-like games, but land as a different fictional class shooter with different silhouettes, props, UI icons, and map architecture.',
+        'Blizzard Overwatch (2016) look: bright animated-film stylized 3D, chunky readable hero silhouettes, colorful near-future maps and payload escort objectives.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable class-shooter screenshot subject: keep clear class/object role, team spacing, objective pressure, projectile/hit readability, cover affordance, and first-person scale without copying source classes or maps.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as colorful animated-film heroes with exaggerated readable silhouettes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Use a stylized team-shooter palette: warm red, workwear blue, dusty tan, black metal, cream signage shapes without text, muzzle orange, and clean shadow groups. Keep value grouping legible and avoid military realism.',
+        'Bright optimistic orange, teal and sunny whites, true to the Overwatch 2016 palette.',
       lighting_and_shadow:
-        'Light the image through baked midday light, muzzle flashes, rocket trails, objective glow, and soft cartoon shadows. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Warm clean daylight with soft bounce, lit the way Overwatch 2016 lights its levels.',
       texture_and_material:
-        'Build surfaces from painterly industrial props, wood planks, metal bridges, team-color panels, simple weapons, and exaggerated character shapes without copying cast. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Stylized painted PBR surfaces, with the in-engine surface finish of Overwatch 2016.',
       camera_and_composition:
-        'Compose with first-person weapon/tool camera, bridge or control-point route, allies/enemies spaced around cover, projectile arcs, and one clear push/defend decision. Avoid isometric strategy or tactical overview.',
-      atmosphere_and_mood:
-        'Carry an original class-clash mood: competitive, comic, industrial, tactical, noisy, and highly readable.',
+        'First-person view with a stylized weapon, framed the way Overwatch 2016 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with hopeful team heroics.',
       rendering_and_quality:
-        'Finish as coherent first-person stylized team-shooter screenshot style, not concept art: health/ammo/objective icons can appear abstract and non-readable. Maintain heavy-denoise clarity, crisp silhouettes, no exact class silhouettes, and no readable objective text.',
-      key_features:
-        'Team Fortress 2 gameplay screenshots; stylized team-shooter capture with bold silhouettes, capture-point geometry, class-based spacing, and readable red-vs-blue battlefield color; industrial red, worksite blue, dusty tan, black shadows, white UI blocks, and orange explosion pops; baked midday light, muzzle flashes, rocket trails, objective glow, and soft cartoon shadows; painterly industrial props, wood planks, metal bridges, team-color panels, simple weapons, and exaggerated character shapes without copying cast; first-person or spectator capture with objective point, team lanes, projectile arcs, and compact team HUD; competitive, comic, industrial, tactical, and readable; HUD guidance: class shooter HUD is allowed: health, ammo, capture meter, kill feed shape, and team indicators should be era-coherent',
+        'Authentic hero shooter screen, matching real Overwatch 2016 screenshots.',
+      key_features: 'Overwatch animated-film heroes; payload; bright maps',
       creative_brief:
-        "Class Clash Bridge Control: in-game screenshot language informed by class-based team shooter references, covering first-person camera, team-color readability, chunky bridge geometry, projectile clarity, and control-point pressure. Avoid direct Team Fortress cloning, strategy-tactics framing, exact class silhouettes, and readable UI text. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Blizzard Overwatch (2016) look: bright animated-film stylized 3D, chunky readable hero silhouettes, colorful near-future maps and payload escort objectives. Carry it through Overwatch animated-film heroes, payload, bright maps. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-060',
-    name: 'Blasphemous Basilica Last Stand',
-    displayName: 'Blasphemous Basilica Last Stand',
-    styleAnchors: ['Blasphemous gameplay screenshots', 'Blasphemous Basilica Last Stand'],
+    name: 'Blasphemous 2019 - The Game Kitchen Pixel Penance',
+    displayName: 'Blasphemous 2019 - The Game Kitchen Pixel Penance',
+    styleAnchors: [
+      'Blasphemous 2019 - The Game Kitchen Pixel Penance',
+      'Blasphemous Basilica Last Stand',
+    ],
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a penitent in a tall spiked capirote helm, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Blasphemous gameplay: dark pixel-art metroidvania capture with Catholic-gothic architecture, grotesque enemies, side-view combat, and ornate suffering iconography. It never recreates an exact official level, character, logo or marketing art.',
+        'The Game Kitchen Blasphemous (2019) look: dark detailed pixel art metroidvania steeped in Andalusian Holy Week imagery, baroque basilicas, grotesque religious enemies and penitent suffering.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Blasphemous-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Blasphemous-informed palette: bone white, dried blood red, black stone, candle gold, desaturated blue, and sickly flesh tones. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
-      lighting_and_shadow:
-        'Light the image through candle halos, stained light shafts, spell glows, hit flashes, and deep basilica shadow. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as detailed dark pixel sprites in religious robes, thorns and baroque armor. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Bone white, dried blood red, candle gold and black stone.',
+      lighting_and_shadow: 'Candle halos and stained-glass shafts in deep shadow.',
       texture_and_material:
-        'Build surfaces from detailed pixel masonry, wax, iron, embroidered cloth, thorned relics, grotesque bodies, and crunchy sprite animation. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Dense detailed pixel art with baroque ornament, with the in-engine surface finish of Blasphemous 2019.',
       camera_and_composition:
-        "Compose with side-scrolling combat frame with altar depth, enemy spacing, platform edges, and boss/arena readability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Blasphemous-derived mood: penitent, brutal, sacred, grotesque, and solemn; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Side-view metroidvania frame, framed the way Blasphemous 2019 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with penitent grotesque solemnity.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: health/fervor bars, flask icons, and boss bar can appear as ornate pixel UI. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Blasphemous gameplay screenshots; dark pixel-art metroidvania capture with Catholic-gothic architecture, grotesque enemies, side-view combat, and ornate suffering iconography; bone white, dried blood red, black stone, candle gold, desaturated blue, and sickly flesh tones; candle halos, stained light shafts, spell glows, hit flashes, and deep basilica shadow; detailed pixel masonry, wax, iron, embroidered cloth, thorned relics, grotesque bodies, and crunchy sprite animation; side-scrolling combat frame with altar depth, enemy spacing, platform edges, and boss/arena readability; penitent, brutal, sacred, grotesque, and solemn; HUD guidance: health/fervor bars, flask icons, and boss bar can appear as ornate pixel UI',
+        'Authentic dark pixel metroidvania screen, matching real Blasphemous 2019 screenshots.',
+      key_features: 'Blasphemous pixels; Holy Week; baroque grotesque',
       creative_brief:
-        "Blasphemous Basilica Last Stand: in-game screenshot language informed by Blasphemous, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "The Game Kitchen Blasphemous (2019) look: dark detailed pixel art metroidvania steeped in Andalusian Holy Week imagery, baroque basilicas, grotesque religious enemies and penitent suffering. Carry it through Blasphemous pixels, Holy Week, baroque grotesque. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-064',
-    name: 'They Are Billions Night Defense',
-    displayName: 'They Are Billions Night Defense',
-    styleAnchors: ['They Are Billions gameplay screenshots', 'They Are Billions Night Defense'],
+    name: 'They Are Billions 2019 - Numantian Steampunk Horde',
+    displayName: 'They Are Billions 2019 - Numantian Steampunk Horde',
+    styleAnchors: [
+      'They Are Billions 2019 - Numantian Steampunk Horde',
+      'They Are Billions Night Defense',
+    ],
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'In-game screenshot look informed by They Are Billions gameplay: isometric survival-RTS capture with colony walls, swarms, turret lines, steampunk buildings, and pressure-heavy base-defense readability. It never recreates an exact official level, character, logo or marketing art.',
+        'Numantian Games They Are Billions (2019) look: isometric steampunk colony defense with painted 2D units, wooden walls, turrets and hordes of thousands pouring out of the fog.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable They Are Billions-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as tiny painted steampunk soldiers and colonists facing massive hordes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Use a They Are Billions-informed palette: sepia industrial, zombie grey-green, torch orange, brass UI, dark forest, and warning red. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Steampunk brass, fog grey and night blue, true to the They Are Billions 2019 palette.',
       lighting_and_shadow:
-        'Light the image through lamp pools, muzzle flashes, turret beams, night fog, and swarm-edge highlights. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Night fog with turret flashes, lit the way They Are Billions 2019 lights its levels.',
       texture_and_material:
-        'Build surfaces from steampunk walls, tents, pipes, wooden barricades, infected crowds, smoke, and compact building silhouettes. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Detailed painted isometric 2D, with the in-engine surface finish of They Are Billions 2019.',
       camera_and_composition:
-        "Compose with isometric base view with defensive choke points, wall lines, unit groups, resource buildings, and wave approach paths. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'They Are Billions-derived mood: desperate, logistical, overrun, industrial, and strategic; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Isometric strategy view, framed the way They Are Billions 2019 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with desperate horde defense.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: RTS HUD can include resources, command bar, unit selection, minimap, and wave warnings. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'They Are Billions gameplay screenshots; isometric survival-RTS capture with colony walls, swarms, turret lines, steampunk buildings, and pressure-heavy base-defense readability; sepia industrial, zombie grey-green, torch orange, brass UI, dark forest, and warning red; lamp pools, muzzle flashes, turret beams, night fog, and swarm-edge highlights; steampunk walls, tents, pipes, wooden barricades, infected crowds, smoke, and compact building silhouettes; isometric base view with defensive choke points, wall lines, unit groups, resource buildings, and wave approach paths; desperate, logistical, overrun, industrial, and strategic; HUD guidance: RTS HUD can include resources, command bar, unit selection, minimap, and wave warnings',
+        'Authentic isometric RTS screen, matching real They Are Billions 2019 screenshots.',
+      key_features: 'They Are Billions hordes; steampunk walls; isometric',
       creative_brief:
-        "They Are Billions Night Defense: in-game screenshot language informed by They Are Billions, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Numantian Games They Are Billions (2019) look: isometric steampunk colony defense with painted 2D units, wooden walls, turrets and hordes of thousands pouring out of the fog. Carry it through They Are Billions hordes, steampunk walls, isometric. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-076',
-    name: 'Northgard Aurora Bastion Siege',
-    displayName: 'Northgard Aurora Bastion Siege',
-    styleAnchors: ['Northgard gameplay screenshots', 'Northgard Aurora Bastion Siege'],
+    name: 'Northgard 2018 - Shiro Norse Isometric Clans',
+    displayName: 'Northgard 2018 - Shiro Norse Isometric Clans',
+    styleAnchors: [
+      'Northgard 2018 - Shiro Norse Isometric Clans',
+      'Northgard Aurora Bastion Siege',
+    ],
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Northgard gameplay: isometric Viking strategy capture with snowy settlements, clan units, resource buildings, aurora skies, and territorial control readability. It never recreates an exact official level, character, logo or marketing art.',
+        'Shiro Games Northgard (2018) look: stylized isometric Norse settlement strategy, cartoonish chunky villagers, snowy tiles, aurora skies and mythical creatures.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Northgard-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Northgard-informed palette: snow blue, timber brown, aurora green, hearth orange, iron grey, and muted clan-color banners. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as chunky stylized Norse villagers and warriors. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Snow white, aurora green and warm hearth orange.',
       lighting_and_shadow:
-        'Light the image through cold winter daylight, hearth pools, northern lights, torch edges, and soft snow bounce. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Soft winter light and aurora glow, lit the way Northgard 2018 lights its levels.',
       texture_and_material:
-        'Build surfaces from wood huts, palisades, snowy rocks, fur cloaks, axes, fields, animal tracks, and compact strategy props. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Stylized painted low-poly surfaces, with the in-engine surface finish of Northgard 2018.',
       camera_and_composition:
-        "Compose with isometric management/combat view with territories, unit clusters, resource buildings, and defensive choke points. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Northgard-derived mood: settler-strategy, hardy, Nordic, cold, and quietly tense; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Isometric strategy view, framed the way Northgard 2018 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with hardy clan survival.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: resource bar, clan panels, minimap, unit selection, and alert icons can appear as coherent RTS UI. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Northgard gameplay screenshots; isometric Viking strategy capture with snowy settlements, clan units, resource buildings, aurora skies, and territorial control readability; snow blue, timber brown, aurora green, hearth orange, iron grey, and muted clan-color banners; cold winter daylight, hearth pools, northern lights, torch edges, and soft snow bounce; wood huts, palisades, snowy rocks, fur cloaks, axes, fields, animal tracks, and compact strategy props; isometric management/combat view with territories, unit clusters, resource buildings, and defensive choke points; settler-strategy, hardy, Nordic, cold, and quietly tense; HUD guidance: resource bar, clan panels, minimap, unit selection, and alert icons can appear as coherent RTS UI',
+        'Authentic stylized strategy screen, matching real Northgard 2018 screenshots.',
+      key_features: 'Northgard isometric; Norse clans; aurora',
       creative_brief:
-        "Northgard Aurora Bastion Siege: in-game screenshot language informed by Northgard, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Shiro Games Northgard (2018) look: stylized isometric Norse settlement strategy, cartoonish chunky villagers, snowy tiles, aurora skies and mythical creatures. Carry it through Northgard isometric, Norse clans, aurora. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-079',
-    name: 'Orbital Drop Citadel Hold',
-    displayName: 'Orbital Drop Citadel Hold',
+    name: 'Helldivers 2 2024 - Arrowhead Orbital Drop',
+    displayName: 'Helldivers 2 2024 - Arrowhead Orbital Drop',
     styleAnchors: [
-      'third-person co-op extraction shooter screenshots',
+      'Helldivers 2 2024 - Arrowhead Orbital Drop',
       'orbital drop defensive hold',
       'Orbital Drop Citadel Hold',
     ],
     category: '4. Sieges, Warfronts & Last Stands',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Helldivers clone, strategy tactics camera, exact stratagem UI, recognizable faction armor',
+      'existing Helldiver armor and insignia, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Helldivers clone, strategy tactics camera, exact stratagem UI, recognizable faction armor, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Original in-game screenshot look for third-person co-op extraction shooter captures: orbital drop chaos, squad spacing, defensive objectives, projectile storms, alien or machine pressure, call-in effects, and readable retreat/hold routes. Borrow the co-op battlefield clarity of Helldivers-like games, but land as a different fictional drop-war game with different armor, factions, enemies, UI icons, and objective props.',
+        'Arrowhead Game Studios Helldivers 2 (2024) look: third-person co-op shooter with satirical military propaganda tone, orbital drops, strategems beams, alien bug swarms and fiery skies.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable third-person co-op hold screenshot subject: keep clear squad/object/threat function, cover, objective zone, incoming pressure, call-in area, and extraction route without copying source factions or armor.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as armored troopers in heavy helmets and capes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Use an orbital drop palette: dusty battlefield tan, warning red, tactical blue, smoke grey, muzzle orange, alien green, and hard white objective light. Keep value grouping legible amid chaos.',
+        'Fire orange, alien acid and military yellow, true to the Helldivers 2 2024 palette.',
       lighting_and_shadow:
-        'Light the image through orbital strike glare, muzzle flashes, smoke, bug acid glow, objective beacon light, and dusty sun haze. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Burning skies and bright orbital strikes, lit the way Helldivers 2 2024 lights its levels.',
       texture_and_material:
-        'Build surfaces from tactical armor, alien carapace, mud, concrete outposts, spent shells, smoke, and sci-fi military equipment. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Gritty armor, dust and explosions, with the in-engine surface finish of Helldivers 2 2024.',
       camera_and_composition:
-        'Compose with third-person squad camera, objective hold zone, ally/enemy spacing, incoming projectile arcs, cover, and one clear defend/extract decision. Avoid isometric strategy overview.',
-      atmosphere_and_mood:
-        'Carry an original orbital-drop mood: loud, desperate, satirical, militarized, cooperative, and explosive.',
+        'Third-person over-the-shoulder view, framed the way Helldivers 2 2024 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with chaotic satirical heroism.',
       rendering_and_quality:
-        'Finish as coherent third-person co-op shooter screenshot style, not concept art: small contextual HUD, ammo/ability pips, objective icons, and call-in markers can appear abstractly. Maintain heavy-denoise clarity and no exact stratagem UI.',
-      key_features:
-        'Helldivers 2 gameplay screenshots; third-person co-op shooter capture with squad spacing, alien swarms, stratagem chaos, defensive objectives, and friendly-fire battlefield readability; dusty battlefield tan, black armor, yellow hazard UI, bug green, red warning lasers, and explosion orange; orbital strike glare, muzzle flashes, smoke, bug acid glow, objective beacon light, and dusty sun haze; tactical armor, alien carapace, mud, concrete outposts, spent shells, smoke, and sci-fi military equipment; third-person squad camera with objective zone, incoming swarm lanes, teammate markers, stratagem impact areas, and extraction pressure; chaotic, militarized, satirical, desperate, and cooperative; HUD guidance: co-op HUD is welcome: ammo, stratagem inputs, objective timer, squad icons, compass, and extraction markers',
+        'Authentic modern co-op shooter screen, matching real Helldivers 2 2024 screenshots.',
+      key_features: 'Helldivers orbital drop; bug swarm; beacons',
       creative_brief:
-        "Orbital Drop Citadel Hold: in-game screenshot language informed by third-person co-op extraction references, covering squad camera, objective pressure, orbital call-ins, projectile chaos, and readable hold/extract decisions. Avoid direct Helldivers cloning, strategy-tactics camera, exact armor/faction silhouettes, and exact stratagem UI. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Arrowhead Game Studios Helldivers 2 (2024) look: third-person co-op shooter with satirical military propaganda tone, orbital drops, strategems beams, alien bug swarms and fiery skies. Carry it through Helldivers orbital drop, bug swarm, beacons. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-129',
-    name: 'Wall-Breach Horde Defense Capture',
-    displayName: 'Wall-Breach Horde Defense Capture',
+    name: 'Orcs Must Die 2011 - Robot Entertainment Trap Defense',
+    displayName: 'Orcs Must Die 2011 - Robot Entertainment Trap Defense',
     styleAnchors: [
-      'Wall-Breach Horde Defense Capture',
+      'Orcs Must Die 2011 - Robot Entertainment Trap Defense',
       'wall defense against horde screenshot',
       'wall breach',
     ],
     category: '4. Sieges, Warfronts & Last Stands',
     domain: 'wall defense against horde screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Wall-breach horde defense capture: an original elevated screenshot of defenders on a stone wall as an overwhelming horde surges through a breach, torches and debris everywhere.',
+        'Robot Entertainment Orcs Must Die! (2011) look: comic stylized third-person trap defense, cartoon orc and goblin hordes, fortress corridors, traps and exaggerated effects.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject defending a wall breach against an enormous horde.',
-      color_and_tone:
-        'Torch orange, smoke grey and dark stone, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as comic stylized cartoon defenders facing cartoon hordes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Warm torch orange, stone grey and goblin green.',
       lighting_and_shadow:
-        'Firelight on stone and silhouetted masses, kept consistent across the whole image.',
+        'Torch light and trap flashes, lit the way Orcs Must Die 2011 lights its levels.',
       texture_and_material:
-        'Stone rubble, wooden barricades and smoke, kept consistent across the whole image.',
-      camera_and_composition: 'Elevated angle over the wall and the breach.',
-      atmosphere_and_mood: 'Keep the requested mood with desperate last-stand pressure.',
+        'Stylized painted 3D surfaces, with the in-engine surface finish of Orcs Must Die 2011.',
+      camera_and_composition:
+        'Third-person view behind the defender, framed the way Orcs Must Die 2011 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with gleeful horde defense.',
       rendering_and_quality:
-        'Clear readable crowd action, no HUD text, kept consistent across the whole image.',
+        'Authentic stylized trap-defense screen, matching real Orcs Must Die 2011 screenshots.',
       creative_brief:
-        "Wall-breach horde defense capture: an original elevated screenshot of defenders on a stone wall as an overwhelming horde surges through a breach, torches and debris everywhere. Carry it through wall breach, horde surge, torchlight, elevated view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'wall breach; horde surge; torchlight; elevated view',
+        "Robot Entertainment Orcs Must Die! (2011) look: comic stylized third-person trap defense, cartoon orc and goblin hordes, fortress corridors, traps and exaggerated effects. Carry it through Orcs Must Die hordes, trap defense, comic stylized. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Orcs Must Die hordes; trap defense; comic stylized',
     },
     ui: {
       previewStatus: 'pending',
@@ -363,36 +352,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-130',
-    name: 'Trench Assault Camera Capture',
-    displayName: 'Trench Assault Camera Capture',
+    name: 'Battlefield 1 2016 - DICE Great War Trenches',
+    displayName: 'Battlefield 1 2016 - DICE Great War Trenches',
     styleAnchors: [
-      'Trench Assault Camera Capture',
+      'Battlefield 1 2016 - DICE Great War Trenches',
       'first-person trench assault screenshot',
       'muddy trench',
     ],
     category: '4. Sieges, Warfronts & Last Stands',
     domain: 'first-person trench assault screenshot',
     negativePrompt:
-      'gore, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        "Trench assault camera capture: an original first-person screenshot climbing out of a muddy trench into a smoke-filled no-man's-land with flares overhead.",
+        'DICE Battlefield 1 (2016) look: first-person Great War trenches, mud, barbed wire, early tanks, smoke, sepia-tinted skies and cinematic Frostbite lighting.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject from first person in a muddy trench assault.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as Great War soldiers in wool uniforms, helmets and gas masks. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Mud brown, smoke grey and flare red, kept consistent across the whole image.',
+        'Mud brown, smoke grey and sepia sky, true to the Battlefield 1 2016 palette.',
       lighting_and_shadow:
-        'Flare light and drifting smoke, kept consistent across the whole image.',
+        'Cinematic haze and flare glow, lit the way Battlefield 1 2016 lights its levels.',
       texture_and_material:
-        'Mud, barbed wire, sandbags and craters, kept consistent across the whole image.',
+        'Mud, wire, wood and wool, with the in-engine surface finish of Battlefield 1 2016.',
       camera_and_composition:
-        'First-person over the trench lip, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with grim dreadful courage.',
+        'First-person view over a trench lip, framed the way Battlefield 1 2016 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with harrowing wartime dread.',
       rendering_and_quality:
-        'Gritty capture without gore or HUD text, kept consistent across the whole image.',
+        'Authentic Frostbite first-person war screen, matching real Battlefield 1 2016 screenshots.',
       creative_brief:
-        "Trench assault camera capture: an original first-person screenshot climbing out of a muddy trench into a smoke-filled no-man's-land with flares overhead. Carry it through muddy trench, flares, barbed wire, first-person. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'muddy trench; flares; barbed wire; first-person',
+        "DICE Battlefield 1 (2016) look: first-person Great War trenches, mud, barbed wire, early tanks, smoke, sepia-tinted skies and cinematic Frostbite lighting. Carry it through Battlefield 1 trenches, mud, smoke, war machines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Battlefield 1 trenches; mud; smoke; war machines',
     },
     ui: {
       previewStatus: 'pending',
@@ -400,30 +389,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-131',
-    name: 'Catapult Crew View Capture',
-    displayName: 'Catapult Crew View Capture',
-    styleAnchors: ['Catapult Crew View Capture', 'siege engine crew screenshot', 'catapult arm'],
+    name: 'Chivalry 2 2021 - Torn Banner Siege Crew',
+    displayName: 'Chivalry 2 2021 - Torn Banner Siege Crew',
+    styleAnchors: [
+      'Chivalry 2 2021 - Torn Banner Siege Crew',
+      'siege engine crew screenshot',
+      'catapult arm',
+    ],
     category: '4. Sieges, Warfronts & Last Stands',
     domain: 'siege engine crew screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Catapult crew view capture: an original third-person screenshot from behind a siege catapult crew as the arm fires toward a distant castle, projectile arc visible.',
+        'Torn Banner Studios Chivalry 2 (2021) look: chaotic medieval siege battles, catapults and trebuchets, burning castles, shouting crews and bright banners.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject operating or riding a siege engine as it fires.',
-      color_and_tone: 'Earthy wood browns, sky blue and fire orange.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as grubby medieval soldiers and siege crews in padded jackets. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Banner red, siege fire orange and stone grey.',
       lighting_and_shadow:
-        'Daylight with burning projectile glow, kept consistent across the whole image.',
+        'Bright day with fire glow, lit the way Chivalry 2 2021 lights its levels.',
       texture_and_material:
-        'Wooden beams, rope, stone and dust, kept consistent across the whole image.',
+        'Mud, wood, leather and smoke, with the in-engine surface finish of Chivalry 2 2021.',
       camera_and_composition:
-        'Behind the catapult toward the target, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with rowdy siege energy.',
-      rendering_and_quality: 'Clean capture with a visible arc, no text.',
+        'First-person view behind siege engines, framed the way Chivalry 2 2021 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with rowdy medieval chaos.',
+      rendering_and_quality:
+        'Authentic medieval melee screen, matching real Chivalry 2 2021 screenshots.',
       creative_brief:
-        "Catapult crew view capture: an original third-person screenshot from behind a siege catapult crew as the arm fires toward a distant castle, projectile arc visible. Carry it through catapult arm, projectile arc, crew, distant castle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'catapult arm; projectile arc; crew; distant castle',
+        "Torn Banner Studios Chivalry 2 (2021) look: chaotic medieval siege battles, catapults and trebuchets, burning castles, shouting crews and bright banners. Carry it through Chivalry 2 siege, catapults, burning castles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Chivalry 2 siege; catapults; burning castles',
     },
     ui: {
       previewStatus: 'pending',
@@ -431,29 +425,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-132',
-    name: 'Hex Wargame Board Capture',
-    displayName: 'Hex Wargame Board Capture',
-    styleAnchors: ['Hex Wargame Board Capture', 'digital hex wargame screenshot', 'hex grid'],
+    name: 'Battle for Wesnoth 2005 - Wesnoth Painted Hex',
+    displayName: 'Battle for Wesnoth 2005 - Wesnoth Painted Hex',
+    styleAnchors: [
+      'Battle for Wesnoth 2005 - Wesnoth Painted Hex',
+      'digital hex wargame screenshot',
+      'hex grid',
+    ],
     category: '4. Sieges, Warfronts & Last Stands',
     domain: 'digital hex wargame screenshot',
     negativePrompt:
-      'readable counter numbers, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable counter numbers, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Hex wargame board capture: an original screenshot of a digital hex-grid wargame with terrain hexes, unit counters and a painted map beneath the grid.',
+        'Battle for Wesnoth (2005) look: turn-based fantasy strategy on painted hex maps, small painted unit sprites, rivers, castles and mountain hexes.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject as unit counters on a painted hex-grid map.',
-      color_and_tone: 'Muted map greens and browns with bold unit colors.',
-      lighting_and_shadow: 'Flat board light, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as small painted fantasy unit sprites standing on hexes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        'Painted greens, river blue and parchment, true to the Battle for Wesnoth 2005 palette.',
+      lighting_and_shadow:
+        'Even top light on painted terrain, lit the way Battle for Wesnoth 2005 lights its levels.',
       texture_and_material:
-        'Painted terrain, hex lines and counter chips, kept consistent across the whole image.',
-      camera_and_composition: 'Top-down angled board view, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with cerebral grand strategy.',
+        'Painted hex tiles and sprite detail, with the in-engine surface finish of Battle for Wesnoth 2005.',
+      camera_and_composition:
+        'Top-down hex map view, framed the way Battle for Wesnoth 2005 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with thoughtful tactical campaign.',
       rendering_and_quality:
-        'Clean board with no readable numbers, kept consistent across the whole image.',
+        'Authentic painted hex strategy screen, matching real Battle for Wesnoth 2005 screenshots.',
       creative_brief:
-        "Hex wargame board capture: an original screenshot of a digital hex-grid wargame with terrain hexes, unit counters and a painted map beneath the grid. Carry it through hex grid, unit counters, painted map, top-down. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'hex grid; unit counters; painted map; top-down',
+        "Battle for Wesnoth (2005) look: turn-based fantasy strategy on painted hex maps, small painted unit sprites, rivers, castles and mountain hexes. Carry it through Wesnoth painted hexes, unit sprites, fantasy map. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Wesnoth painted hexes; unit sprites; fantasy map',
     },
     ui: {
       previewStatus: 'pending',
@@ -461,35 +462,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-133',
-    name: 'Barricade Night Holdout Capture',
-    displayName: 'Barricade Night Holdout Capture',
+    name: 'Resident Evil 7 2017 - Capcom Louisiana Farmhouse',
+    displayName: 'Resident Evil 7 2017 - Capcom Louisiana Farmhouse',
     styleAnchors: [
-      'Barricade Night Holdout Capture',
+      'Resident Evil 7 2017 - Capcom Louisiana Farmhouse',
       'survival barricade defense screenshot',
       'boarded windows',
     ],
     category: '4. Sieges, Warfronts & Last Stands',
     domain: 'survival barricade defense screenshot',
     negativePrompt:
-      'gore, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing Baker family members, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Barricade night holdout capture: an original third-person survival screenshot of survivors defending a boarded-up farmhouse at night, flashlights and silhouettes at the windows.',
+        'Capcom Resident Evil 7: Biohazard (2017) look: first-person horror in a rotting Louisiana farmhouse, photoreal decay, VHS found-footage grain, flashlight beams and humid dread.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject defending a barricaded building at night.',
-      color_and_tone: 'Dark blues with flashlight white and lamp amber.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as ordinary survivors in dirty everyday clothes, seen from first person. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        'Rotting brown, humid green and flashlight white, true to the Resident Evil 7 2017 palette.',
       lighting_and_shadow:
-        'Flashlight beams and window silhouettes, kept consistent across the whole image.',
+        'Flashlight beam in heavy darkness, lit the way Resident Evil 7 2017 lights its levels.',
       texture_and_material:
-        'Wooden boards, nails, broken glass and mud, kept consistent across the whole image.',
+        'Photoreal rot, mold and wood, with the in-engine surface finish of Resident Evil 7 2017.',
       camera_and_composition:
-        'Over-the-shoulder view toward the windows, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with tense survival dread.',
+        'First-person view at boarded windows, framed the way Resident Evil 7 2017 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with humid claustrophobic terror.',
       rendering_and_quality:
-        'Clean capture without gore or HUD text, kept consistent across the whole image.',
+        'Authentic modern first-person horror screen, matching real Resident Evil 7 2017 screenshots.',
       creative_brief:
-        "Barricade night holdout capture: an original third-person survival screenshot of survivors defending a boarded-up farmhouse at night, flashlights and silhouettes at the windows. Carry it through boarded windows, flashlights, night, survivors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'boarded windows; flashlights; night; survivors',
+        "Capcom Resident Evil 7: Biohazard (2017) look: first-person horror in a rotting Louisiana farmhouse, photoreal decay, VHS found-footage grain, flashlight beams and humid dread. Carry it through RE7 farmhouse, photoreal rot, flashlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'RE7 farmhouse; photoreal rot; flashlight',
     },
     ui: {
       previewStatus: 'pending',
@@ -497,35 +499,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-134',
-    name: 'Spaceport Evacuation Holdout',
-    displayName: 'Spaceport Evacuation Holdout',
+    name: 'Halo Reach 2010 - Bungie Last Stand',
+    displayName: 'Halo Reach 2010 - Bungie Last Stand',
     styleAnchors: [
-      'Spaceport Evacuation Holdout',
+      'Halo Reach 2010 - Bungie Last Stand',
       'sci-fi evacuation defense screenshot',
       'landing pad',
     ],
     category: '4. Sieges, Warfronts & Last Stands',
     domain: 'sci-fi evacuation defense screenshot',
     negativePrompt:
-      'gore, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'green armored super-soldier with gold visor, existing Covenant species, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Spaceport evacuation holdout: an original screenshot of soldiers holding a landing pad while civilians board the last transport under a burning alien sky.',
+        'Bungie Halo: Reach (2010) look: doomed planet last stand, burning skies, armored super-soldiers, alien war-beasts, spaceports and evacuation transports.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject holding a landing pad during a desperate evacuation.',
-      color_and_tone: 'Burning orange sky, metal greys and warning lights.',
-      lighting_and_shadow: 'Engine glow and fire light, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as chunky armored soldiers under a burning alien sky. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Burning orange sky, steel grey and plasma blue.',
+      lighting_and_shadow:
+        'Fire glow with plasma flashes, lit the way Halo Reach 2010 lights its levels.',
       texture_and_material:
-        'Metal decking, smoke and dust, kept consistent across the whole image.',
+        'Chunky armor and scorched metal, with the in-engine surface finish of Halo Reach 2010.',
       camera_and_composition:
-        'Wide third-person view of the pad, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with heroic urgency, kept consistent across the whole image.',
+        'First-person view at a landing pad, framed the way Halo Reach 2010 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with doomed heroic sacrifice.',
       rendering_and_quality:
-        'Clean capture without gore or HUD text, kept consistent across the whole image.',
+        'Authentic Xbox 360 shooter screen, matching real Halo Reach 2010 screenshots.',
       creative_brief:
-        "Spaceport evacuation holdout: an original screenshot of soldiers holding a landing pad while civilians board the last transport under a burning alien sky. Carry it through landing pad, last transport, burning sky, defenders. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'landing pad; last transport; burning sky; defenders',
+        "Bungie Halo: Reach (2010) look: doomed planet last stand, burning skies, armored super-soldiers, alien war-beasts, spaceports and evacuation transports. Carry it through Halo Reach last stand, burning sky, evacuation. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Halo Reach last stand; burning sky; evacuation',
     },
     ui: {
       previewStatus: 'pending',
@@ -533,36 +535,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-135',
-    name: 'Lane-Battle Siege Capture',
-    displayName: 'Lane-Battle Siege Capture',
+    name: 'Clash Royale 2016 - Supercell Cartoon Arena',
+    displayName: 'Clash Royale 2016 - Supercell Cartoon Arena',
     styleAnchors: [
-      'Lane-Battle Siege Capture',
+      'Clash Royale 2016 - Supercell Cartoon Arena',
       'lane-based siege strategy screenshot',
       'opposing castles',
     ],
     category: '4. Sieges, Warfronts & Last Stands',
     domain: 'lane-based siege strategy screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing Clash units, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Lane-battle siege capture: an original side-view strategy screenshot where two castles face each other across horizontal lanes and units march to clash in the middle.',
+        'Supercell Clash Royale (2016) look: bright chunky cartoon mobile arena, two towers per side, lanes across a river bridge and tiny exaggerated units.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject as units marching along lanes between two castles.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render every subject as a tiny chunky exaggerated cartoon unit. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Bright opposing team colors on green fields, kept consistent across the whole image.',
-      lighting_and_shadow: 'Flat bright light, kept consistent across the whole image.',
+        'Bright grass green, blue and red teams, true to the Clash Royale 2016 palette.',
+      lighting_and_shadow:
+        'Bright flat cartoon daylight, lit the way Clash Royale 2016 lights its levels.',
       texture_and_material:
-        'Cartoon units, stone castles and grass lanes, kept consistent across the whole image.',
+        'Glossy chunky cartoon 3D, with the in-engine surface finish of Clash Royale 2016.',
       camera_and_composition:
-        'Side view with castles at both edges, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with playful tug-of-war, kept consistent across the whole image.',
+        'Top-down arena view, framed the way Clash Royale 2016 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with cheeky competitive chaos.',
       rendering_and_quality:
-        'Clean readable capture with no UI text, kept consistent across the whole image.',
+        'Authentic mobile cartoon arena screen, matching real Clash Royale 2016 screenshots.',
       creative_brief:
-        "Lane-battle siege capture: an original side-view strategy screenshot where two castles face each other across horizontal lanes and units march to clash in the middle. Carry it through opposing castles, horizontal lanes, marching units, clash. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'opposing castles; horizontal lanes; marching units; clash',
+        "Supercell Clash Royale (2016) look: bright chunky cartoon mobile arena, two towers per side, lanes across a river bridge and tiny exaggerated units. Carry it through Clash Royale arena, chunky cartoon, lanes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Clash Royale arena; chunky cartoon; lanes',
     },
     ui: {
       previewStatus: 'pending',
@@ -570,35 +572,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-136',
-    name: 'Castle Builder Siege Overview',
-    displayName: 'Castle Builder Siege Overview',
+    name: 'Stronghold 2001 - Firefly Castle Sim',
+    displayName: 'Stronghold 2001 - Firefly Castle Sim',
     styleAnchors: [
-      'Castle Builder Siege Overview',
+      'Stronghold 2001 - Firefly Castle Sim',
       'castle management siege screenshot',
       'castle town',
     ],
     category: '4. Sieges, Warfronts & Last Stands',
     domain: 'castle management siege screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Castle builder siege overview: an original top-down management screenshot of a castle town under siege, busy villagers, walls, farms and an army at the gates.',
+        'Firefly Studios Stronghold (2001) look: isometric 2D castle-building simulation, tiny busy peasants, farms, walls and sieges on a medieval landscape.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject within a busy castle town seen from above during a siege.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as tiny busy medieval peasants and soldiers from above. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Green fields, stone grey and banner colors, kept consistent across the whole image.',
+        'Pastoral green, stone grey and thatch gold, true to the Stronghold 2001 palette.',
       lighting_and_shadow:
-        'Soft daylight with small shadows, kept consistent across the whole image.',
-      texture_and_material: 'Tiny villagers, fields, wooden houses and stone walls.',
+        'Soft daylight on isometric terrain, lit the way Stronghold 2001 lights its levels.',
+      texture_and_material:
+        'Pre-rendered isometric sprites, with the in-engine surface finish of Stronghold 2001.',
       camera_and_composition:
-        'Top-down angled view over the whole town, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with busy defensive industry.',
+        'Isometric castle overview, framed the way Stronghold 2001 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with industrious medieval siege.',
       rendering_and_quality:
-        'Tidy detailed capture with no UI, kept consistent across the whole image.',
+        'Authentic early-2000s castle sim screen, matching real Stronghold 2001 screenshots.',
       creative_brief:
-        "Castle builder siege overview: an original top-down management screenshot of a castle town under siege, busy villagers, walls, farms and an army at the gates. Carry it through castle town, tiny villagers, siege army, top-down. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'castle town; tiny villagers; siege army; top-down',
+        "Firefly Studios Stronghold (2001) look: isometric 2D castle-building simulation, tiny busy peasants, farms, walls and sieges on a medieval landscape. Carry it through Stronghold isometric, tiny peasants, castle walls. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Stronghold isometric; tiny peasants; castle walls',
     },
     ui: {
       previewStatus: 'pending',
@@ -606,36 +609,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-137',
-    name: 'Massed Cavalry Charge Capture',
-    displayName: 'Massed Cavalry Charge Capture',
+    name: 'Mount & Blade II Bannerlord 2020 - TaleWorlds Cavalry',
+    displayName: 'Mount & Blade II Bannerlord 2020 - TaleWorlds Cavalry',
     styleAnchors: [
-      'Massed Cavalry Charge Capture',
+      'Mount & Blade II Bannerlord 2020 - TaleWorlds Cavalry',
       'large-scale battle cavalry screenshot',
       'hundreds of riders',
     ],
     category: '4. Sieges, Warfronts & Last Stands',
     domain: 'large-scale battle cavalry screenshot',
     negativePrompt:
-      'gore, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Massed cavalry charge capture: an original large-scale battle screenshot of hundreds of horsemen charging across a plain into a pike line, dust and banners.',
+        'TaleWorlds Mount & Blade II: Bannerlord (2020) look: massive medieval field battles with hundreds of horsemen, dust, pike lines and sunset plains.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject in a vast cavalry charge with hundreds of riders.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as medieval riders and infantry in mail and cloth. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Dust ochre, banner colors and steel grey, kept consistent across the whole image.',
-      lighting_and_shadow: 'Low sun through dust clouds, kept consistent across the whole image.',
+        'Sunset gold, dust brown and banner colors, true to the Mount & Blade II Bannerlord 2020 palette.',
+      lighting_and_shadow:
+        'Low sun through dust, lit the way Mount & Blade II Bannerlord 2020 lights its levels.',
       texture_and_material:
-        'Horse hides, armor, dust and grass, kept consistent across the whole image.',
+        'Realistic mail, cloth and dust, with the in-engine surface finish of Mount & Blade II Bannerlord 2020.',
       camera_and_composition:
-        'Low wide angle along the charging line, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with thundering momentum, kept consistent across the whole image.',
+        'Low third-person battle view, framed the way Mount & Blade II Bannerlord 2020 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with thunderous medieval clash.',
       rendering_and_quality:
-        'Epic crowd capture without gore or HUD, kept consistent across the whole image.',
+        'Authentic medieval battle screen, matching real Mount & Blade II Bannerlord 2020 screenshots.',
       creative_brief:
-        "Massed cavalry charge capture: an original large-scale battle screenshot of hundreds of horsemen charging across a plain into a pike line, dust and banners. Carry it through hundreds of riders, pike line, dust, banners. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'hundreds of riders; pike line; dust; banners',
+        "TaleWorlds Mount & Blade II: Bannerlord (2020) look: massive medieval field battles with hundreds of horsemen, dust, pike lines and sunset plains. Carry it through Bannerlord cavalry, massed battle, dust. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Bannerlord cavalry; massed battle; dust',
     },
     ui: {
       previewStatus: 'pending',
@@ -643,35 +646,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-138',
-    name: 'Snowfield Artillery Duel Capture',
-    displayName: 'Snowfield Artillery Duel Capture',
+    name: 'Valkyria Chronicles 2008 - Sega Canvas Watercolor War',
+    displayName: 'Valkyria Chronicles 2008 - Sega Canvas Watercolor War',
     styleAnchors: [
-      'Snowfield Artillery Duel Capture',
+      'Valkyria Chronicles 2008 - Sega Canvas Watercolor War',
       'winter artillery battle screenshot',
       'snowfield',
     ],
     category: '4. Sieges, Warfronts & Last Stands',
     domain: 'winter artillery battle screenshot',
     negativePrompt:
-      'gore, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a blue-haired Valkyria with a lance and shield, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Snowfield artillery duel capture: an original third-person screenshot of cannons firing across a white snowfield, black smoke, fir trees and distant muzzle flashes.',
+        'Sega Valkyria Chronicles (2008) look: CANVAS engine watercolor war, pencil hatching lines on 3D, paper texture, WWII-inspired European battlefields and giant iron land fortresses.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject crewing or dodging cannons across a snowfield.',
-      color_and_tone: 'White snow, black smoke and orange muzzle flash.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as anime soldiers with sketchy watercolor shading. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        'Soft watercolor snow, olive and sepia, true to the Valkyria Chronicles 2008 palette.',
       lighting_and_shadow:
-        'Overcast light with bright flashes, kept consistent across the whole image.',
+        'Watercolor wash light with paper grain, lit the way Valkyria Chronicles 2008 lights its levels.',
       texture_and_material:
-        'Snow, cannon iron, wooden wheels and smoke, kept consistent across the whole image.',
+        'Pencil hatching over watercolor paper, with the in-engine surface finish of Valkyria Chronicles 2008.',
       camera_and_composition:
-        'Wide view across the snowfield, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with cold booming tension.',
+        'Third-person tactical view, framed the way Valkyria Chronicles 2008 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with bittersweet wartime tactics.',
       rendering_and_quality:
-        'Clean capture without gore or HUD, kept consistent across the whole image.',
+        'Authentic watercolor strategy screen, matching real Valkyria Chronicles 2008 screenshots.',
       creative_brief:
-        "Snowfield artillery duel capture: an original third-person screenshot of cannons firing across a white snowfield, black smoke, fir trees and distant muzzle flashes. Carry it through snowfield, cannons, black smoke, muzzle flashes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'snowfield; cannons; black smoke; muzzle flashes',
+        "Sega Valkyria Chronicles (2008) look: CANVAS engine watercolor war, pencil hatching lines on 3D, paper texture, WWII-inspired European battlefields and giant iron land fortresses. Carry it through Valkyria CANVAS watercolor, hatching, iron fortresses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Valkyria CANVAS watercolor; hatching; iron fortresses',
     },
     ui: {
       previewStatus: 'pending',

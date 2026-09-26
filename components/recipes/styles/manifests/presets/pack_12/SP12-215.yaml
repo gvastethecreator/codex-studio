@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-215
 packId: pack_12
-name: Rainy Border Crossing Stealth Gameplay
+name: Splinter Cell Chaos Theory 2005 - Ubisoft Montreal Night Stealth
 styleAnchors:
-  - Rainy Border Crossing Stealth Gameplay
+  - Splinter Cell Chaos Theory 2005 - Ubisoft Montreal Night Stealth
   - wartime border stealth gameplay
   - border post
-displayName: Rainy Border Crossing Stealth Gameplay
+displayName: Splinter Cell Chaos Theory 2005 - Ubisoft Montreal Night Stealth
 category: 11. Psychological & Tactical Gameplay
 domain: wartime border stealth gameplay
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,22 +20,23 @@ tags:
   - border-crossing
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Rainy border crossing stealth gameplay: an original third-person capture of sneaking across a rain-soaked border post, barriers, flashlights and wet mud.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject crossing a rain-soaked border post undetected.
-  color_and_tone: Wet greys, yellow floodlights and dark green, kept consistent across the whole image.
-  lighting_and_shadow: Floodlights through heavy rain, kept consistent across the whole image.
-  texture_and_material: Mud, wet wood barriers and rain streaks, kept consistent across the whole image.
-  camera_and_composition: Low third-person near the barrier, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with nervous determination, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no readable signs, kept consistent across the whole image.
-  creative_brief: "Rainy border crossing stealth gameplay: an original third-person capture of sneaking across a rain-soaked border post, barriers, flashlights and wet mud. Carry it through border post, heavy rain, floodlights, barrier. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: border post; heavy rain; floodlights; barrier
+  aesthetic: 'Ubisoft Montreal Splinter Cell: Chaos Theory (2005) look: third-person stealth in rain and darkness, light meters, green night-vision goggles and guards with flashlights.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as stealth operatives in dark gear. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Night black, goggle green and rain blue, true to the Splinter Cell Chaos Theory 2005 palette.
+  lighting_and_shadow: Darkness with flashlight sweeps, lit the way Splinter Cell Chaos Theory 2005 lights its levels.
+  texture_and_material: Wet gear and rain, with the in-engine surface finish of Splinter Cell Chaos Theory 2005.
+  camera_and_composition: Third-person stealth view, framed the way Splinter Cell Chaos Theory 2005 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with tense silent infiltration.
+  rendering_and_quality: Authentic stealth screen, matching real Splinter Cell Chaos Theory 2005 screenshots.
+  creative_brief: 'Ubisoft Montreal Splinter Cell: Chaos Theory (2005) look: third-person stealth in rain and darkness, light meters, green night-vision goggles and guards with flashlights. Carry it through Splinter Cell darkness, goggles, rain. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Splinter Cell darkness; goggles; rain
 avoidRules:
+  - three green night-vision lenses
   - readable signs
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -44,13 +45,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: readable signs, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: three green night-vision lenses, readable signs, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -65,6 +69,7 @@ taxonomy:
     - border-crossing
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

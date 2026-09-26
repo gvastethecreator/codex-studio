@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Nintendo Super Mario 64 (1996) look: bright blocky 3D worlds with blurry filtered textures, painting portals, floating islands, fog at the draw distance and cheerful primary colors.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject in bright blocky 3D worlds with blurry filtered N64 textures. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Cheerful primary colors and grass green, true to the Super Mario 64 1996 palette.
-  lighting_and_shadow: Bright flat N64 lighting with distance fog, lit the way Super Mario 64 1996 lights its scenes.
-  texture_and_material: Blurry bilinear-filtered N64 textures and simple polygons, with the surface finish of Super Mario 64 1996.
-  camera_and_composition: Third-person chase camera, framed the way Super Mario 64 1996 composes its shots and pages.
+  lighting_and_shadow: Bright flat N64 lighting with distance fog, lit the way Super Mario 64 1996 lights its levels.
+  texture_and_material: Blurry bilinear-filtered N64 textures and simple polygons, with the in-engine surface finish of Super Mario 64 1996.
+  camera_and_composition: Third-person chase camera, framed the way Super Mario 64 1996 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with cheerful playful exploration.
-  rendering_and_quality: Authentic N64 3D platformer screen, in the recognizable hand of Super Mario 64 1996.
+  rendering_and_quality: Authentic N64 3D platformer screen, matching real Super Mario 64 1996 screenshots.
   creative_brief: 'Nintendo Super Mario 64 (1996) look: bright blocky 3D worlds with blurry filtered textures, painting portals, floating islands, fog at the draw distance and cheerful primary colors. Carry it through N64 blurry textures, blocky worlds, painting portals, fog. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: N64 blurry textures; blocky worlds; painting portals; fog
 avoidRules:
@@ -47,13 +47,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: a mustached plumber in red and blue, a princess castle with star doors, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a mustached plumber in red and blue, a princess castle with star doors, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

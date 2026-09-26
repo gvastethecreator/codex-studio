@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-141
 packId: pack_12
-name: Backcountry Snowboard Descent Capture
+name: SSX Tricky 2001 - EA Canada Big Air
 styleAnchors:
-  - Backcountry Snowboard Descent Capture
+  - SSX Tricky 2001 - EA Canada Big Air
   - snowboard mountain game screenshot
   - powder spray
-displayName: Backcountry Snowboard Descent Capture
+displayName: SSX Tricky 2001 - EA Canada Big Air
 category: 5. Speed, Sport & Competitive Arenas
 domain: snowboard mountain game screenshot
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,17 +20,18 @@ tags:
   - snowboard
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Backcountry snowboard descent capture: an original snowboarding screenshot of a rider carving deep powder down a vast mountain, snow spray and blue sky.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject carving or jumping on a snowboard down a vast slope.
-  color_and_tone: Brilliant white, deep blue sky and bright outerwear.
-  lighting_and_shadow: Hard alpine sun with blue snow shadows, kept consistent across the whole image.
-  texture_and_material: Powder spray, ice ridges and pine trees, kept consistent across the whole image.
-  camera_and_composition: Wide follow camera down the mountain, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with exhilarating freedom, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no HUD text, kept consistent across the whole image.
-  creative_brief: "Backcountry snowboard descent capture: an original snowboarding screenshot of a rider carving deep powder down a vast mountain, snow spray and blue sky. Carry it through powder spray, vast mountain, blue sky, carving rider. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: powder spray; vast mountain; blue sky; carving rider
+  aesthetic: 'EA Canada SSX Tricky (2001) look: over-the-top snowboarding, impossible mountain courses, giant air tricks, bright character designs and glittering powder.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as bold stylized snowboarders in colorful outfits. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Glittering white, sky blue and neon outfits, true to the SSX Tricky 2001 palette.
+  lighting_and_shadow: Bright alpine light with glitter, lit the way SSX Tricky 2001 lights its levels.
+  texture_and_material: PS2 snow and glossy boards, with the in-engine surface finish of SSX Tricky 2001.
+  camera_and_composition: Chase camera during big air, framed the way SSX Tricky 2001 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with wild big-air joy.
+  rendering_and_quality: Authentic PS2 snowboarding screen, matching real SSX Tricky 2001 screenshots.
+  creative_brief: 'EA Canada SSX Tricky (2001) look: over-the-top snowboarding, impossible mountain courses, giant air tricks, bright character designs and glittering powder. Carry it through SSX big air, impossible courses, powder. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: SSX big air; impossible courses; powder
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
@@ -43,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +68,7 @@ taxonomy:
     - snowboard
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

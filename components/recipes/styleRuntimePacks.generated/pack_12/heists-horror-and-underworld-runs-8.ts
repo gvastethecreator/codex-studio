@@ -5,344 +5,322 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-016',
-    name: 'Dishonored Aristocrat Stealth',
-    displayName: 'Dishonored Aristocrat Stealth',
-    styleAnchors: ['Dishonored 2 gameplay screenshots', 'Dishonored Aristocrat Stealth'],
+    name: 'Dishonored 2012 - Arkane Painterly Dunwall',
+    displayName: 'Dishonored 2012 - Arkane Painterly Dunwall',
+    styleAnchors: ['Dishonored 2012 - Arkane Painterly Dunwall', 'Dishonored Aristocrat Stealth'],
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a metal skull mask with lenses, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Dishonored 2 gameplay: first-person stealth immersive-sim capture with aristocratic interiors, mask-like silhouettes, vertical routes, and assassination sandbox clarity. It never recreates an exact official level, character, logo or marketing art.',
+        'Arkane Studios Dishonored (2012) look: first-person stealth in a painterly whale-oil industrial city designed by Viktor Antonov, exaggerated faces, heavy brushstroke textures and supernatural powers.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Dishonored 2-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Dishonored 2-informed palette: oil-paint teal, tobacco brown, brass gold, blood red, marble cream, and cold moon blue. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
-      lighting_and_shadow:
-        'Light the image through window shafts, candle pools, supernatural blue abilities, hard guard silhouettes, and dusty indoor contrast. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
-      texture_and_material:
-        'Build surfaces from painted plaster, brass machinery, velvet curtains, worn stone, whale-oil devices, masks, and aristocratic clutter. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
-      camera_and_composition:
-        "Compose with first-person stealth framing with ledges, guard patrol sightlines, blink routes, props, and alternate entry paths. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Dishonored 2-derived mood: decadent, predatory, conspiratorial, elegant, and violent; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people with painterly exaggerated faces, long jaws and Victorian industrial clothing, seen from first person. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Whale-oil amber, sickly green, bruised blue and aristocratic red.',
+      lighting_and_shadow: 'Hazy whale-oil lamps and soft painterly shafts through smoke.',
+      texture_and_material: 'Visible painterly brushstroke textures on stone, cloth and metal.',
+      camera_and_composition: 'First-person view with a blade hand and a power hand.',
+      atmosphere_and_mood: 'Keep the requested mood with decadent plague-city intrigue.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: ability icons, mana/health bars, objective markers, and stealth cues can appear if they feel like immersive-sim HUD. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Dishonored 2 gameplay screenshots; first-person stealth immersive-sim capture with aristocratic interiors, mask-like silhouettes, vertical routes, and assassination sandbox clarity; oil-paint teal, tobacco brown, brass gold, blood red, marble cream, and cold moon blue; window shafts, candle pools, supernatural blue abilities, hard guard silhouettes, and dusty indoor contrast; painted plaster, brass machinery, velvet curtains, worn stone, whale-oil devices, masks, and aristocratic clutter; first-person stealth framing with ledges, guard patrol sightlines, blink routes, props, and alternate entry paths; decadent, predatory, conspiratorial, elegant, and violent; HUD guidance: ability icons, mana/health bars, objective markers, and stealth cues can appear if they feel like immersive-sim HUD',
+        'Authentic early-2010s painterly immersive-sim screen, matching real Dishonored 2012 screenshots.',
+      key_features: 'Dishonored painterly; whale-oil city; exaggerated faces',
       creative_brief:
-        "Dishonored Aristocrat Stealth: in-game screenshot language informed by Dishonored 2, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Arkane Studios Dishonored (2012) look: first-person stealth in a painterly whale-oil industrial city designed by Viktor Antonov, exaggerated faces, heavy brushstroke textures and supernatural powers. Carry it through Dishonored painterly, whale-oil city, exaggerated faces. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-019',
-    name: 'Metro Mutant Subway Horror',
-    displayName: 'Metro Mutant Subway Horror',
-    styleAnchors: ['Metro 2033 Redux gameplay screenshots', 'Metro Mutant Subway Horror'],
+    name: 'Metro 2033 2010 - 4A Games Moscow Tunnels',
+    displayName: 'Metro 2033 2010 - 4A Games Moscow Tunnels',
+    styleAnchors: ['Metro 2033 2010 - 4A Games Moscow Tunnels', 'Metro Mutant Subway Horror'],
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Metro 2033 Redux gameplay: first-person post-apocalyptic subway capture with flashlight tunnels, gas masks, mutant silhouettes, and Soviet underground survival detail. It never recreates an exact official level, character, logo or marketing art.',
+        '4A Games Metro 2033 (2010) look: first-person survival horror in post-apocalyptic Moscow metro tunnels, gas masks, hand-cranked lights, makeshift station towns and mutants.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Metro 2033 Redux-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Metro 2033 Redux-informed palette: dirty concrete grey, rust brown, flashlight white, toxic green, muzzle orange, and black tunnel void. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
-      lighting_and_shadow:
-        'Light the image through flashlight cones, headlamp beams, station fires, muzzle flash, and sparse emergency bulbs. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
-      texture_and_material:
-        'Build surfaces from wet rails, cracked tile, patched weapons, gas-mask glass, old posters without readable text, and grime-heavy pipes. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as ragged metro survivors in gas masks and patched coats, seen from first person. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Tunnel black, flashlight white, rust and sickly green.',
+      lighting_and_shadow: 'Flashlight beams in deep tunnel darkness and warm station fires.',
+      texture_and_material: 'Grimy concrete, rust, condensation on the mask glass.',
       camera_and_composition:
-        "Compose with first-person tunnel framing with weapon, mask vignette, route choke points, enemy approach lanes, and scavenged-object readability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Metro 2033 Redux-derived mood: claustrophobic, desperate, feral, cold, and underground; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'First-person view through a cracked gas mask, framed the way Metro 2033 2010 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with suffocating underground dread.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: minimal survival HUD, watch/gas-mask indicators, ammo checks, and diegetic device cues are allowed. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Metro 2033 Redux gameplay screenshots; first-person post-apocalyptic subway capture with flashlight tunnels, gas masks, mutant silhouettes, and Soviet underground survival detail; dirty concrete grey, rust brown, flashlight white, toxic green, muzzle orange, and black tunnel void; flashlight cones, headlamp beams, station fires, muzzle flash, and sparse emergency bulbs; wet rails, cracked tile, patched weapons, gas-mask glass, old posters without readable text, and grime-heavy pipes; first-person tunnel framing with weapon, mask vignette, route choke points, enemy approach lanes, and scavenged-object readability; claustrophobic, desperate, feral, cold, and underground; HUD guidance: minimal survival HUD, watch/gas-mask indicators, ammo checks, and diegetic device cues are allowed',
+        'Authentic early-2010s survival shooter screen, matching real Metro 2033 2010 screenshots.',
+      key_features: 'Metro tunnels; gas masks; flashlight; station towns',
       creative_brief:
-        "Metro Mutant Subway Horror: in-game screenshot language informed by Metro 2033 Redux, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "4A Games Metro 2033 (2010) look: first-person survival horror in post-apocalyptic Moscow metro tunnels, gas masks, hand-cranked lights, makeshift station towns and mutants. Carry it through Metro tunnels, gas masks, flashlight, station towns. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-024',
-    name: 'Tomb Raider Trap Gauntlet',
-    displayName: 'Tomb Raider Trap Gauntlet',
-    styleAnchors: ['Tomb Raider gameplay screenshots', 'Tomb Raider Trap Gauntlet'],
+    name: 'Tomb Raider 2013 - Crystal Dynamics Survivor',
+    displayName: 'Tomb Raider 2013 - Crystal Dynamics Survivor',
+    styleAnchors: ['Tomb Raider 2013 - Crystal Dynamics Survivor', 'Tomb Raider Trap Gauntlet'],
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a brunette explorer with a ponytail and climbing axes, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Tomb Raider gameplay: third-person cinematic adventure capture with ancient traps, climbing routes, torch-lit ruins, and survival-action traversal. It never recreates an exact official level, character, logo or marketing art.',
+        'Crystal Dynamics Tomb Raider (2013) look: gritty third-person survival adventure, collapsing tombs, jungle ruins, climbing axes, torches and cinematic trap set pieces.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Tomb Raider-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Tomb Raider-informed palette: wet stone grey, torch orange, jungle green, old gold, dark cave brown, and blood-warm accents. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as dirty bruised explorers in practical survival gear. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Torch amber, wet stone grey and jungle green.',
       lighting_and_shadow:
-        'Light the image through torch pools, cave shafts, fire sparks, silhouette danger, and cinematic contrast around traversal hazards. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Torch glow in dusty tomb darkness, lit the way Tomb Raider 2013 lights its levels.',
       texture_and_material:
-        'Build surfaces from mud, rope, broken stone, wood spikes, cloth wraps, relic metal, wet walls, and debris-heavy ruins. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Mud, wet stone, rope and dust, with the in-engine surface finish of Tomb Raider 2013.',
       camera_and_composition:
-        "Compose with over-shoulder third-person framing with ledges, trap lines, puzzle props, escape vectors, and cinematic action depth. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Tomb Raider-derived mood: urgent, archaeological, dangerous, physical, and survivalist; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Third-person cinematic chase view, framed the way Tomb Raider 2013 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with gritty perilous survival.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: minimal adventure HUD or button prompts are allowed; avoid menu overlays and large text tutorials. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Tomb Raider gameplay screenshots; third-person cinematic adventure capture with ancient traps, climbing routes, torch-lit ruins, and survival-action traversal; wet stone grey, torch orange, jungle green, old gold, dark cave brown, and blood-warm accents; torch pools, cave shafts, fire sparks, silhouette danger, and cinematic contrast around traversal hazards; mud, rope, broken stone, wood spikes, cloth wraps, relic metal, wet walls, and debris-heavy ruins; over-shoulder third-person framing with ledges, trap lines, puzzle props, escape vectors, and cinematic action depth; urgent, archaeological, dangerous, physical, and survivalist; HUD guidance: minimal adventure HUD or button prompts are allowed; avoid menu overlays and large text tutorials',
+        'Authentic cinematic adventure screen, matching real Tomb Raider 2013 screenshots.',
+      key_features: 'Tomb Raider 2013 traps; tombs; gritty survival',
       creative_brief:
-        "Tomb Raider Trap Gauntlet: in-game screenshot language informed by Tomb Raider, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Crystal Dynamics Tomb Raider (2013) look: gritty third-person survival adventure, collapsing tombs, jungle ruins, climbing axes, torches and cinematic trap set pieces. Carry it through Tomb Raider 2013 traps, tombs, gritty survival. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-030',
-    name: 'Cuphead Carnival Boss',
-    displayName: 'Cuphead Carnival Boss',
-    styleAnchors: ['Cuphead gameplay screenshots', 'Cuphead Carnival Boss'],
+    name: 'Cuphead 2017 - Studio MDHR 1930s Rubber Hose',
+    displayName: 'Cuphead 2017 - Studio MDHR 1930s Rubber Hose',
+    styleAnchors: ['Cuphead 2017 - Studio MDHR 1930s Rubber Hose', 'Cuphead Carnival Boss'],
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a cup-headed hero, a mug-headed hero, the devil boss with a pitchfork, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Cuphead gameplay: 1930s rubber-hose boss-fight capture with hand-inked characters, carnival props, flat stage lanes, and chaotic projectile readability. It never recreates an exact official level, character, logo or marketing art.',
+        'Studio MDHR Cuphead (2017) look: hand-inked 1930s rubber-hose animation, watercolor backgrounds, film grain, run-and-gun boss fights and bouncing cartoon characters.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Cuphead-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Cuphead-informed palette: aged paper cream, circus red, mustard yellow, black ink, turquoise shadows, and candy pink highlights. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people and creatures as rubber-hose cartoon characters with pie-cut eyes and white gloves. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Faded 1930s watercolor palette with warm film tint.',
       lighting_and_shadow:
-        'Light the image through flat animation lighting, painted stage glow, muzzle-flash pops, and film-flicker value shifts. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Flat cartoon light with vintage film grain, lit the way Cuphead 2017 lights its levels.',
       texture_and_material:
-        'Build surfaces from ink outlines, cel paint, watercolor backgrounds, film grain, squash-and-stretch sprites, and hand-drawn projectile shapes. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Hand-inked lines, watercolor backgrounds and film scratches, with the in-engine surface finish of Cuphead 2017.',
       camera_and_composition:
-        "Compose with side-view boss arena with bullet lanes, player jump space, phase props, and vintage cartoon stage composition. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Cuphead-derived mood: manic, theatrical, cruelly playful, vintage, and precise; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Side-view run-and-gun boss arena, framed the way Cuphead 2017 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with jaunty frantic danger.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: small health/cards/super meter can appear as period-styled gameplay UI; avoid modern overlays. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Cuphead gameplay screenshots; 1930s rubber-hose boss-fight capture with hand-inked characters, carnival props, flat stage lanes, and chaotic projectile readability; aged paper cream, circus red, mustard yellow, black ink, turquoise shadows, and candy pink highlights; flat animation lighting, painted stage glow, muzzle-flash pops, and film-flicker value shifts; ink outlines, cel paint, watercolor backgrounds, film grain, squash-and-stretch sprites, and hand-drawn projectile shapes; side-view boss arena with bullet lanes, player jump space, phase props, and vintage cartoon stage composition; manic, theatrical, cruelly playful, vintage, and precise; HUD guidance: small health/cards/super meter can appear as period-styled gameplay UI; avoid modern overlays',
+        'Authentic hand-drawn boss-fight screen, matching real Cuphead 2017 screenshots.',
+      key_features: 'Cuphead rubber hose; 1930s; watercolor; film grain',
       creative_brief:
-        "Cuphead Carnival Boss: in-game screenshot language informed by Cuphead, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Studio MDHR Cuphead (2017) look: hand-inked 1930s rubber-hose animation, watercolor backgrounds, film grain, run-and-gun boss fights and bouncing cartoon characters. Carry it through Cuphead rubber hose, 1930s, watercolor, film grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-049',
-    name: 'Symphony Thorn Castle Raid',
-    displayName: 'Symphony Thorn Castle Raid',
+    name: 'Symphony of the Night 1997 - Konami Gothic Sprite Castle',
+    displayName: 'Symphony of the Night 1997 - Konami Gothic Sprite Castle',
     styleAnchors: [
-      'Castlevania: Symphony of the Night gameplay screenshots',
+      'Symphony of the Night 1997 - Konami Gothic Sprite Castle',
       'Symphony Thorn Castle Raid',
     ],
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a silver-haired dhampir with a black cape, a whip-wielding vampire hunter in leather, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Castlevania: Symphony of the Night gameplay: gothic 2D metroidvania capture with moonlit castle halls, ornate enemies, side-view exploration, and crisp sprite combat. It never recreates an exact official level, character, logo or marketing art.',
+        'Konami Castlevania: Symphony of the Night (1997) look: lavish 2D gothic sprite art with Ayami Kojima inspired elegance, moonlit castle halls, huge animated bosses and rich backgrounds.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Castlevania: Symphony of the Night-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as elegant gothic sprites with long hair, capes and ornate clothing. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Use a Castlevania: Symphony of the Night-informed palette: midnight blue, candle gold, crimson drapery, stone grey, bone white, and violet magic. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Moonlit indigo, blood crimson and gilded gold, true to the Symphony of the Night 1997 palette.',
       lighting_and_shadow:
-        'Light the image through candle flicker, moon windows, spell glows, hit flashes, and dark parallax backgrounds. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Moonlight through gothic windows and candles, lit the way Symphony of the Night 1997 lights its levels.',
       texture_and_material:
-        'Build surfaces from pixel stonework, thorn vines, gothic arches, capes, monsters, relic pickups, and ornate tile patterns. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Lavish 32-bit sprite art and painted backgrounds, with the in-engine surface finish of Symphony of the Night 1997.',
       camera_and_composition:
-        "Compose with side-scrolling room composition with platforms, enemy arcs, door exits, and compact action-RPG HUD readability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Castlevania: Symphony of the Night-derived mood: romantic, nocturnal, gothic, elegant, and dangerous; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Side-view metroidvania castle view, framed the way Symphony of the Night 1997 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with elegant gothic menace.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: HP/MP bars, item icons, map rooms, and small damage numbers are allowed as classic metroidvania UI. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Castlevania: Symphony of the Night gameplay screenshots; gothic 2D metroidvania capture with moonlit castle halls, ornate enemies, side-view exploration, and crisp sprite combat; midnight blue, candle gold, crimson drapery, stone grey, bone white, and violet magic; candle flicker, moon windows, spell glows, hit flashes, and dark parallax backgrounds; pixel stonework, thorn vines, gothic arches, capes, monsters, relic pickups, and ornate tile patterns; side-scrolling room composition with platforms, enemy arcs, door exits, and compact action-RPG HUD readability; romantic, nocturnal, gothic, elegant, and dangerous; HUD guidance: HP/MP bars, item icons, map rooms, and small damage numbers are allowed as classic metroidvania UI',
+        'Authentic PlayStation 2D gothic screen, matching real Symphony of the Night 1997 screenshots.',
+      key_features: 'Symphony of the Night sprites; gothic castle; Kojima elegance',
       creative_brief:
-        "Symphony Thorn Castle Raid: in-game screenshot language informed by Castlevania: Symphony of the Night, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Konami Castlevania: Symphony of the Night (1997) look: lavish 2D gothic sprite art with Ayami Kojima inspired elegance, moonlit castle halls, huge animated bosses and rich backgrounds. Carry it through Symphony of the Night sprites, gothic castle, Kojima elegance. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-050',
-    name: 'Signalis Polar Signal Outbreak',
-    displayName: 'Signalis Polar Signal Outbreak',
-    styleAnchors: ['Signalis gameplay screenshots', 'Signalis Polar Signal Outbreak'],
+    name: 'Signalis 2022 - rose-engine Low-Poly Polar Horror',
+    displayName: 'Signalis 2022 - rose-engine Low-Poly Polar Horror',
+    styleAnchors: [
+      'Signalis 2022 - rose-engine Low-Poly Polar Horror',
+      'Signalis Polar Signal Outbreak',
+    ],
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a blue-haired android officer with a scar, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Signalis gameplay: retro survival-horror capture with fixed/overhead rooms, low-poly industrial interiors, icy facilities, and analog interface dread. It never recreates an exact official level, character, logo or marketing art.',
+        'rose-engine Signalis (2022) look: PS1-style low-poly survival horror on a polar facility, anime-inspired android women, red emergency light, fixed overhead cameras and cosmic dread.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Signalis-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Signalis-informed palette: black, off-white, hospital green, warning red, cold blue, and rust-brown industrial stains. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as low-poly anime android officers in uniforms. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Emergency red, cold white and black, true to the Signalis 2022 palette.',
       lighting_and_shadow:
-        'Light the image through hard flashlight pools, red alarm panels, CRT glow, surgical fluorescent strips, and deep fixed-camera darkness. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Harsh red emergency light, lit the way Signalis 2022 lights its levels.',
       texture_and_material:
-        'Build surfaces from PS1-like low-poly props, metal doors, tiled floors, paper notes without readable text, snow grime, and analog machinery. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Low-poly PS1 textures with dithering, with the in-engine surface finish of Signalis 2022.',
       camera_and_composition:
-        "Compose with fixed-camera or top-down survival room framing with inventory pressure, locked doors, enemy placement, and puzzle-object clarity. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Signalis-derived mood: lonely, clinical, uncanny, cold, and oppressive; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Fixed overhead survival horror camera, framed the way Signalis 2022 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with cold cosmic dread.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: retro inventory/status panels, health warning, and small interaction prompts can appear if they feel survival-horror coherent. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Signalis gameplay screenshots; retro survival-horror capture with fixed/overhead rooms, low-poly industrial interiors, icy facilities, and analog interface dread; black, off-white, hospital green, warning red, cold blue, and rust-brown industrial stains; hard flashlight pools, red alarm panels, CRT glow, surgical fluorescent strips, and deep fixed-camera darkness; PS1-like low-poly props, metal doors, tiled floors, paper notes without readable text, snow grime, and analog machinery; fixed-camera or top-down survival room framing with inventory pressure, locked doors, enemy placement, and puzzle-object clarity; lonely, clinical, uncanny, cold, and oppressive; HUD guidance: retro inventory/status panels, health warning, and small interaction prompts can appear if they feel survival-horror coherent',
+        'Authentic retro survival horror screen, matching real Signalis 2022 screenshots.',
+      key_features: 'Signalis low-poly; red emergency; overhead camera',
       creative_brief:
-        "Signalis Polar Signal Outbreak: in-game screenshot language informed by Signalis, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "rose-engine Signalis (2022) look: PS1-style low-poly survival horror on a polar facility, anime-inspired android women, red emergency light, fixed overhead cameras and cosmic dread. Carry it through Signalis low-poly, red emergency, overhead camera. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-054',
-    name: 'Red Dead Copper Train Heist',
-    displayName: 'Red Dead Copper Train Heist',
-    styleAnchors: ['Red Dead Redemption 2 gameplay screenshots', 'Red Dead Copper Train Heist'],
+    name: 'Red Dead Redemption 2 2018 - Rockstar Studios Train Heist',
+    displayName: 'Red Dead Redemption 2 2018 - Rockstar Studios Train Heist',
+    styleAnchors: [
+      'Red Dead Redemption 2 2018 - Rockstar Studios Train Heist',
+      'Red Dead Copper Train Heist',
+    ],
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a bearded outlaw in a flat-brimmed hat and satchel, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Red Dead Redemption 2 gameplay: third-person western action capture with train robbery staging, cinematic frontier lighting, cover positions, and grounded character motion. It never recreates an exact official level, character, logo or marketing art.',
+        'Rockstar Studios Red Dead Redemption 2 (2018) look: photoreal 1899 frontier, rich naturalistic light, steam locomotives through canyons, outlaw gangs and horseback action.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Red Dead Redemption 2-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as weathered 1899 outlaws in hats and long coats. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Use a Red Dead Redemption 2-informed palette: dust tan, copper sunset, black iron train, denim blue, leather brown, and muzzle-flash orange. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Sunset copper, canyon red and dust, true to the Red Dead Redemption 2 2018 palette.',
       lighting_and_shadow:
-        'Light the image through golden-hour sun, train lamp glow, smoke haze, gunfire flashes, and long canyon shadows. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Naturalistic sunset light and dust, lit the way Red Dead Redemption 2 2018 lights its levels.',
       texture_and_material:
-        'Build surfaces from wood planks, worn leather, iron rails, smoke, dust, horse tack, canvas, and period firearm metal. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Photoreal leather, steel and dust, with the in-engine surface finish of Red Dead Redemption 2 2018.',
       camera_and_composition:
-        "Compose with third-person over-shoulder action framing with train length, cover beats, rider positions, and cinematic horizon depth. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Red Dead Redemption 2-derived mood: lawless, weighty, dusty, tense, and cinematic; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Third-person action view, framed the way Red Dead Redemption 2 2018 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with gritty outlaw daring.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: minimal western HUD, reticle, weapon wheel hint, minimap, or wanted indicators can appear if coherent. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Red Dead Redemption 2 gameplay screenshots; third-person western action capture with train robbery staging, cinematic frontier lighting, cover positions, and grounded character motion; dust tan, copper sunset, black iron train, denim blue, leather brown, and muzzle-flash orange; golden-hour sun, train lamp glow, smoke haze, gunfire flashes, and long canyon shadows; wood planks, worn leather, iron rails, smoke, dust, horse tack, canvas, and period firearm metal; third-person over-shoulder action framing with train length, cover beats, rider positions, and cinematic horizon depth; lawless, weighty, dusty, tense, and cinematic; HUD guidance: minimal western HUD, reticle, weapon wheel hint, minimap, or wanted indicators can appear if coherent',
+        'Authentic modern western screen, matching real Red Dead Redemption 2 2018 screenshots.',
+      key_features: 'RDR2 train heist; outlaws; canyon sunset',
       creative_brief:
-        "Red Dead Copper Train Heist: in-game screenshot language informed by Red Dead Redemption 2, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Rockstar Studios Red Dead Redemption 2 (2018) look: photoreal 1899 frontier, rich naturalistic light, steam locomotives through canyons, outlaw gangs and horseback action. Carry it through RDR2 train heist, outlaws, canyon sunset. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-057',
-    name: 'Sea of Thieves Pirate Skies',
-    displayName: 'Sea of Thieves Pirate Skies',
-    styleAnchors: ['Sea of Thieves gameplay screenshots', 'Sea of Thieves Pirate Skies'],
+    name: 'Sea of Thieves 2018 - Rare Painterly Pirates',
+    displayName: 'Sea of Thieves 2018 - Rare Painterly Pirates',
+    styleAnchors: ['Sea of Thieves 2018 - Rare Painterly Pirates', 'Sea of Thieves Pirate Skies'],
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Sea of Thieves gameplay: first-person pirate adventure capture with stylized ships, bright seas, storm skies, treasure props, and playful crew readability. It never recreates an exact official level, character, logo or marketing art.',
+        'Rare Sea of Thieves (2018) look: stylized painterly pirate adventure, gorgeous dynamic water, chunky exaggerated pirates, galleons, skeletons and glowing seas.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Sea of Thieves-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Sea of Thieves-informed palette: turquoise ocean, sunset orange, sail cream, brass gold, storm purple, and verdigris green. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as chunky exaggerated cartoon pirates. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Painterly teal sea, sunset gold and storm grey.',
       lighting_and_shadow:
-        'Light the image through golden horizon, lantern glow, cannon flashes, moonlit waves, and storm lightning. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Painterly sky light over the water, lit the way Sea of Thieves 2018 lights its levels.',
       texture_and_material:
-        'Build surfaces from painted wood, rope, canvas sails, water spray, treasure metal, skull props, and chunky stylized pirate gear. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Painterly stylized wood and cloth, with the in-engine surface finish of Sea of Thieves 2018.',
       camera_and_composition:
-        "Compose with first-person ship/deck framing with wheel/cannon/rigging foreground, island horizon, crew spacing, and naval action cues. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Sea of Thieves-derived mood: roguish, open-sea, playful, stormy, and adventurous; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'First-person view on deck, framed the way Sea of Thieves 2018 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with rollicking pirate adventure.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: minimal pirate HUD, radial item hints, compass, and ship damage cues are allowed if integrated. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Sea of Thieves gameplay screenshots; first-person pirate adventure capture with stylized ships, bright seas, storm skies, treasure props, and playful crew readability; turquoise ocean, sunset orange, sail cream, brass gold, storm purple, and verdigris green; golden horizon, lantern glow, cannon flashes, moonlit waves, and storm lightning; painted wood, rope, canvas sails, water spray, treasure metal, skull props, and chunky stylized pirate gear; first-person ship/deck framing with wheel/cannon/rigging foreground, island horizon, crew spacing, and naval action cues; roguish, open-sea, playful, stormy, and adventurous; HUD guidance: minimal pirate HUD, radial item hints, compass, and ship damage cues are allowed if integrated',
+        'Authentic stylized pirate screen, matching real Sea of Thieves 2018 screenshots.',
+      key_features: 'Sea of Thieves painterly; water; galleons',
       creative_brief:
-        "Sea of Thieves Pirate Skies: in-game screenshot language informed by Sea of Thieves, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Rare Sea of Thieves (2018) look: stylized painterly pirate adventure, gorgeous dynamic water, chunky exaggerated pirates, galleons, skeletons and glowing seas. Carry it through Sea of Thieves painterly, water, galleons. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-066',
-    name: 'Dead Space Abyss Rail Transit',
-    displayName: 'Dead Space Abyss Rail Transit',
-    styleAnchors: ['Dead Space gameplay screenshots', 'Dead Space Abyss Rail Transit'],
+    name: 'Dead Space 2008 - EA Redwood Derelict Ship',
+    displayName: 'Dead Space 2008 - EA Redwood Derelict Ship',
+    styleAnchors: ['Dead Space 2008 - EA Redwood Derelict Ship', 'Dead Space Abyss Rail Transit'],
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'an engineer suit with a glowing blue spine bar, existing necromorph designs, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Dead Space gameplay: third-person survival-horror capture with industrial ship corridors, tram stations, diegetic suit HUD, and dismemberment-combat tension. It never recreates an exact official level, character, logo or marketing art.',
+        'EA Redwood Shores Dead Space (2008) look: third-person survival horror on a derelict mining ship, diegetic interface on the suit, dark industrial corridors and twisted necromorphs.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Dead Space-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as engineers in heavy industrial suits with glowing lights. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Use a Dead Space-informed palette: black metal, sickly green, medical blue, blood red, rust orange, and cold white work lights. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Industrial rust, emergency red and suit cyan, true to the Dead Space 2008 palette.',
       lighting_and_shadow:
-        'Light the image through flickering ship lights, stasis blue, muzzle cutter beams, alarm red, and deep vent shadows. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Flickering dark industrial light, lit the way Dead Space 2008 lights its levels.',
       texture_and_material:
-        'Build surfaces from grated floors, ribbed walls, suit armor, necrotic flesh, cables, tram rails, and dirty sci-fi machinery. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Grimy metal and biological mess, with the in-engine surface finish of Dead Space 2008.',
       camera_and_composition:
-        "Compose with over-shoulder tight corridor framing with weapon aiming beam, enemy limbs, door paths, and diegetic objective lines. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Dead Space-derived mood: claustrophobic, industrial, grotesque, and panic-controlled; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Close over-the-shoulder view, framed the way Dead Space 2008 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with isolated industrial horror.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: diegetic spine health, ammo projection, stasis meter, and holographic inventory cues are core to the style. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Dead Space gameplay screenshots; third-person survival-horror capture with industrial ship corridors, tram stations, diegetic suit HUD, and dismemberment-combat tension; black metal, sickly green, medical blue, blood red, rust orange, and cold white work lights; flickering ship lights, stasis blue, muzzle cutter beams, alarm red, and deep vent shadows; grated floors, ribbed walls, suit armor, necrotic flesh, cables, tram rails, and dirty sci-fi machinery; over-shoulder tight corridor framing with weapon aiming beam, enemy limbs, door paths, and diegetic objective lines; claustrophobic, industrial, grotesque, and panic-controlled; HUD guidance: diegetic spine health, ammo projection, stasis meter, and holographic inventory cues are core to the style',
+        'Authentic survival horror screen, matching real Dead Space 2008 screenshots.',
+      key_features: 'Dead Space derelict ship; heavy suit; diegetic UI',
       creative_brief:
-        "Dead Space Abyss Rail Transit: in-game screenshot language informed by Dead Space, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "EA Redwood Shores Dead Space (2008) look: third-person survival horror on a derelict mining ship, diegetic interface on the suit, dark industrial corridors and twisted necromorphs. Carry it through Dead Space derelict ship, heavy suit, diegetic UI. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-069',
-    name: 'HighFleet Static Dune War',
-    displayName: 'HighFleet Static Dune War',
-    styleAnchors: ['HighFleet gameplay screenshots', 'HighFleet Static Dune War'],
+    name: 'HighFleet 2021 - Koshutin Dieselpunk Radar War',
+    displayName: 'HighFleet 2021 - Koshutin Dieselpunk Radar War',
+    styleAnchors: ['HighFleet 2021 - Koshutin Dieselpunk Radar War', 'HighFleet Static Dune War'],
     category: '7. Heists, Horror & Underworld Runs',
     negativePrompt:
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'In-game screenshot look informed by HighFleet gameplay: dieselpunk desert war capture with radar screens, ship silhouettes, tactical maps, analog targeting, and gritty command-interface pressure. It never recreates an exact official level, character, logo or marketing art.',
+        'Konstantin Koshutin HighFleet (2021) look: dieselpunk flying battleships over desert, analog radar screens, cockpit instruments, CRT glow and strategic tension.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable HighFleet-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a HighFleet-informed palette: sand beige, radar green, oil black, warning red, brass yellow, and smoky grey. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render every subject as dieselpunk airships and analog instruments. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'CRT green, desert tan and brass, true to the HighFleet 2021 palette.',
       lighting_and_shadow:
-        'Light the image through CRT glow, explosion bloom, desert glare, spotlight cones, and instrument-panel illumination. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Radar glow and desert sun, lit the way HighFleet 2021 lights its levels.',
       texture_and_material:
-        'Build surfaces from chunky airship metal, rivets, paper maps, oscilloscope lines, radio panels, smoke, and worn military hardware. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Analog dials, CRT scanlines and riveted steel, with the in-engine surface finish of HighFleet 2021.',
       camera_and_composition:
-        "Compose with mix of side-view combat, command map, and instrument UI with radar arcs, targeting gauges, and convoy-route logic. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'HighFleet-derived mood: tense, analog, militarized, dusty, and systems-heavy; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Side-view battle or radar screen view, framed the way HighFleet 2021 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with cold strategic dread.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: dense analog HUD is encouraged: radar, radio, gauges, targeting lines, fuel/ammo panels, and map overlays. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'HighFleet gameplay screenshots; dieselpunk desert war capture with radar screens, ship silhouettes, tactical maps, analog targeting, and gritty command-interface pressure; sand beige, radar green, oil black, warning red, brass yellow, and smoky grey; CRT glow, explosion bloom, desert glare, spotlight cones, and instrument-panel illumination; chunky airship metal, rivets, paper maps, oscilloscope lines, radio panels, smoke, and worn military hardware; mix of side-view combat, command map, and instrument UI with radar arcs, targeting gauges, and convoy-route logic; tense, analog, militarized, dusty, and systems-heavy; HUD guidance: dense analog HUD is encouraged: radar, radio, gauges, targeting lines, fuel/ammo panels, and map overlays',
+        'Authentic dieselpunk strategy screen, matching real HighFleet 2021 screenshots.',
+      key_features: 'HighFleet airships; analog radar; dieselpunk',
       creative_brief:
-        "HighFleet Static Dune War: in-game screenshot language informed by HighFleet, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Konstantin Koshutin HighFleet (2021) look: dieselpunk flying battleships over desert, analog radar screens, cockpit instruments, CRT glow and strategic tension. Carry it through HighFleet airships, analog radar, dieselpunk. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-159',
-    name: 'Bank Vault Crew Heist Capture',
-    displayName: 'Bank Vault Crew Heist Capture',
-    styleAnchors: ['Bank Vault Crew Heist Capture', 'co-op bank heist screenshot', 'vault door'],
+    name: 'Payday 2 2013 - Overkill Masked Crew',
+    displayName: 'Payday 2 2013 - Overkill Masked Crew',
+    styleAnchors: [
+      'Payday 2 2013 - Overkill Masked Crew',
+      'co-op bank heist screenshot',
+      'vault door',
+    ],
     category: '7. Heists, Horror & Underworld Runs',
     domain: 'co-op bank heist screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'clown heist masks, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Bank vault crew heist capture: an original first-person co-op heist screenshot of masked crew members drilling a massive vault door under flickering alarm lights.',
+        'Overkill Software Payday 2 (2013) look: first-person co-op heists, masked crews in suits, vault drills, flashing alarms and police assaults.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject as part of a masked crew breaking into a bank vault.',
-      color_and_tone:
-        'Marble whites, gold, and red alarm light, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as heist crew in suits and custom masks. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Alarm red, vault steel and suit black, true to the Payday 2 2013 palette.',
       lighting_and_shadow:
-        'Flashing alarms and drill sparks, kept consistent across the whole image.',
-      texture_and_material: 'Steel vault door, marble floors and cash stacks.',
+        'Flashing alarms and fluorescent bank light, lit the way Payday 2 2013 lights its levels.',
+      texture_and_material:
+        'Vault steel, suits and money, with the in-engine surface finish of Payday 2 2013.',
       camera_and_composition:
-        'First-person with crew members in frame, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with tense criminal chaos.',
+        'First-person view at a vault, framed the way Payday 2 2013 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with tense heist adrenaline.',
       rendering_and_quality:
-        'Clean capture with no HUD text, kept consistent across the whole image.',
+        'Authentic co-op heist screen, matching real Payday 2 2013 screenshots.',
       creative_brief:
-        "Bank vault crew heist capture: an original first-person co-op heist screenshot of masked crew members drilling a massive vault door under flickering alarm lights. Carry it through vault door, masked crew, drill sparks, alarm lights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'vault door; masked crew; drill sparks; alarm lights',
+        "Overkill Software Payday 2 (2013) look: first-person co-op heists, masked crews in suits, vault drills, flashing alarms and police assaults. Carry it through Payday vault drill, masked crew, alarms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Payday vault drill; masked crew; alarms',
     },
     ui: {
       previewStatus: 'pending',
@@ -350,37 +328,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-160',
-    name: 'Casino Floor Infiltration Capture',
-    displayName: 'Casino Floor Infiltration Capture',
+    name: 'No One Lives Forever 2000 - Monolith Sixties Spy',
+    displayName: 'No One Lives Forever 2000 - Monolith Sixties Spy',
     styleAnchors: [
-      'Casino Floor Infiltration Capture',
+      'No One Lives Forever 2000 - Monolith Sixties Spy',
       'stealth casino heist screenshot',
       'casino floor',
     ],
     category: '7. Heists, Horror & Underworld Runs',
     domain: 'stealth casino heist screenshot',
     negativePrompt:
-      'readable signs, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable signs, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Casino floor infiltration capture: an original third-person stealth screenshot of a spy moving across a glittering casino floor, cameras, guards and chandeliers.',
+        'Monolith Productions The Operative: No One Lives Forever (2000) look: groovy sixties spy fiction, mod fashion, casino glamour, gadgets and early-2000s low-poly interiors.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject blending into or sneaking across a glittering casino floor.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as groovy sixties spies in mod fashion and tuxedos. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Gold, deep red carpet and green felt, kept consistent across the whole image.',
+        'Mod orange, casino red and gold, true to the No One Lives Forever 2000 palette.',
       lighting_and_shadow:
-        'Chandelier glow and table lamps, kept consistent across the whole image.',
+        'Casino glamour lighting, lit the way No One Lives Forever 2000 lights its levels.',
       texture_and_material:
-        'Velvet, polished brass, chips and cards, kept consistent across the whole image.',
+        'Early-2000s low-poly textures, with the in-engine surface finish of No One Lives Forever 2000.',
       camera_and_composition:
-        'Third-person over-the-shoulder across the floor, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with glamorous tension, kept consistent across the whole image.',
+        'First-person casino view, framed the way No One Lives Forever 2000 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with groovy spy glamour.',
       rendering_and_quality:
-        'Clean capture with no readable signs, kept consistent across the whole image.',
+        'Authentic early-2000s spy shooter screen, matching real No One Lives Forever 2000 screenshots.',
       creative_brief:
-        "Casino floor infiltration capture: an original third-person stealth screenshot of a spy moving across a glittering casino floor, cameras, guards and chandeliers. Carry it through casino floor, disguised spy, security cameras, chandeliers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'casino floor; disguised spy; security cameras; chandeliers',
+        "Monolith Productions The Operative: No One Lives Forever (2000) look: groovy sixties spy fiction, mod fashion, casino glamour, gadgets and early-2000s low-poly interiors. Carry it through NOLF sixties spy, mod fashion, casino. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'NOLF sixties spy; mod fashion; casino',
     },
     ui: {
       previewStatus: 'pending',
@@ -388,37 +365,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-161',
-    name: 'Found-Footage Night Horror Capture',
-    displayName: 'Found-Footage Night Horror Capture',
+    name: 'Outlast 2013 - Red Barrels Night Vision',
+    displayName: 'Outlast 2013 - Red Barrels Night Vision',
     styleAnchors: [
-      'Found-Footage Night Horror Capture',
+      'Outlast 2013 - Red Barrels Night Vision',
       'camcorder horror game screenshot',
       'night vision',
     ],
     category: '7. Heists, Horror & Underworld Runs',
     domain: 'camcorder horror game screenshot',
     negativePrompt:
-      'readable timestamps, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable timestamps, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Found-footage night horror capture: an original horror screenshot through a handheld night-vision camcorder, green grain, shaky frame and dark hallways.',
+        'Red Barrels Outlast (2013) look: first-person found-footage horror through a camcorder with green night vision, asylum halls, grain and battery icons.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject through a shaky night-vision camcorder view.',
-      color_and_tone:
-        'Night-vision green with bright eye reflections, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as ghastly figures in grainy green night vision. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Night-vision green and black, true to the Outlast 2013 palette.',
       lighting_and_shadow:
-        'Infrared glow and deep black corners, kept consistent across the whole image.',
+        'Night-vision glow with glowing eyes, lit the way Outlast 2013 lights its levels.',
       texture_and_material:
-        'Heavy grain, motion blur and lens smudges, kept consistent across the whole image.',
+        'Grain, noise and camcorder blur, with the in-engine surface finish of Outlast 2013.',
       camera_and_composition:
-        'Handheld first-person with tilted framing, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with raw terror, kept consistent across the whole image.',
+        'Shaky first-person camcorder view, framed the way Outlast 2013 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with helpless hunted terror.',
       rendering_and_quality:
-        'Convincing camcorder look with no readable overlays, kept consistent across the whole image.',
+        'Authentic found-footage horror screen, matching real Outlast 2013 screenshots.',
       creative_brief:
-        "Found-footage night horror capture: an original horror screenshot through a handheld night-vision camcorder, green grain, shaky frame and dark hallways. Carry it through night vision, handheld shake, grain, dark hallway. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'night vision; handheld shake; grain; dark hallway',
+        "Red Barrels Outlast (2013) look: first-person found-footage horror through a camcorder with green night vision, asylum halls, grain and battery icons. Carry it through Outlast night vision, camcorder, asylum. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Outlast night vision; camcorder; asylum',
     },
     ui: {
       previewStatus: 'pending',
@@ -426,35 +401,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-162',
-    name: 'Flashlight Corridor Horror Capture',
-    displayName: 'Flashlight Corridor Horror Capture',
+    name: 'Alan Wake 2010 - Remedy Flashlight Horror',
+    displayName: 'Alan Wake 2010 - Remedy Flashlight Horror',
     styleAnchors: [
-      'Flashlight Corridor Horror Capture',
+      'Alan Wake 2010 - Remedy Flashlight Horror',
       'flashlight exploration horror screenshot',
       'flashlight cone',
     ],
     category: '7. Heists, Horror & Underworld Runs',
     domain: 'flashlight exploration horror screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a writer in a tweed jacket with elbow patches, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Flashlight corridor horror capture: an original first-person horror screenshot where a single flashlight cone is the only light in a long decaying corridor.',
+        'Remedy Entertainment Alan Wake (2010) look: third-person psychological thriller where a flashlight beam burns away darkness, Pacific Northwest towns, fog and TV-episode tension.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; reveal the subject only within a single flashlight beam in darkness.',
-      color_and_tone: 'Near black with a warm white flashlight cone.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as ordinary writers and townsfolk holding flashlights against the dark. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        'Night blue, flashlight white and fog grey, true to the Alan Wake 2010 palette.',
       lighting_and_shadow:
-        'One hard flashlight beam and dense darkness, kept consistent across the whole image.',
+        'Single hard flashlight beam in fog, lit the way Alan Wake 2010 lights its levels.',
       texture_and_material:
-        'Peeling wallpaper, dust motes and wet floors, kept consistent across the whole image.',
+        'Realistic wood, fog and shadow, with the in-engine surface finish of Alan Wake 2010.',
       camera_and_composition:
-        'First-person down a long corridor, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with creeping dread, kept consistent across the whole image.',
-      rendering_and_quality: 'Clean capture with no HUD, kept consistent across the whole image.',
+        'Over-the-shoulder flashlight view, framed the way Alan Wake 2010 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with suspenseful psychological dread.',
+      rendering_and_quality:
+        'Authentic thriller game screen, matching real Alan Wake 2010 screenshots.',
       creative_brief:
-        "Flashlight corridor horror capture: an original first-person horror screenshot where a single flashlight cone is the only light in a long decaying corridor. Carry it through flashlight cone, long corridor, darkness, dust motes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'flashlight cone; long corridor; darkness; dust motes',
+        "Remedy Entertainment Alan Wake (2010) look: third-person psychological thriller where a flashlight beam burns away darkness, Pacific Northwest towns, fog and TV-episode tension. Carry it through Alan Wake flashlight, dark presence, fog. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Alan Wake flashlight; dark presence; fog',
     },
     ui: {
       previewStatus: 'pending',
@@ -462,36 +438,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-163',
-    name: 'Sewer Tunnel Crawl Capture',
-    displayName: 'Sewer Tunnel Crawl Capture',
+    name: 'A Plague Tale Innocence 2019 - Asobo Rat Swarm',
+    displayName: 'A Plague Tale Innocence 2019 - Asobo Rat Swarm',
     styleAnchors: [
-      'Sewer Tunnel Crawl Capture',
+      'A Plague Tale Innocence 2019 - Asobo Rat Swarm',
       'sewer dungeon exploration screenshot',
       'vaulted brick sewers',
     ],
     category: '7. Heists, Horror & Underworld Runs',
     domain: 'sewer dungeon exploration screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a young noble girl with a sling and her little brother, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Sewer tunnel crawl capture: an original third-person screenshot of wading through vaulted brick sewers, green glowing water, rats and dripping pipes.',
+        'Asobo Studio A Plague Tale: Innocence (2019) look: third-person medieval France under plague, torchlight against rat swarms, muddy villages and sewers.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject wading through vaulted brick sewer tunnels.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as medieval commoners in worn wool. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Murky green, brick brown and torch amber, kept consistent across the whole image.',
+        'Torch orange, mud brown and plague grey, true to the A Plague Tale Innocence 2019 palette.',
       lighting_and_shadow:
-        'Torch glow and green water glow, kept consistent across the whole image.',
+        'Torchlight rings holding back darkness, lit the way A Plague Tale Innocence 2019 lights its levels.',
       texture_and_material:
-        'Wet brick, grates, rust and sludge, kept consistent across the whole image.',
+        'Mud, wet stone and fur, with the in-engine surface finish of A Plague Tale Innocence 2019.',
       camera_and_composition:
-        'Third-person behind the character down the tunnel, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with grimy menace, kept consistent across the whole image.',
-      rendering_and_quality: 'Clean capture with no HUD, kept consistent across the whole image.',
+        'Third-person view with torches, framed the way A Plague Tale Innocence 2019 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with desperate medieval dread.',
+      rendering_and_quality:
+        'Authentic modern adventure screen, matching real A Plague Tale Innocence 2019 screenshots.',
       creative_brief:
-        "Sewer tunnel crawl capture: an original third-person screenshot of wading through vaulted brick sewers, green glowing water, rats and dripping pipes. Carry it through vaulted brick sewers, green water, torchlight, rats. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'vaulted brick sewers; green water; torchlight; rats',
+        "Asobo Studio A Plague Tale: Innocence (2019) look: third-person medieval France under plague, torchlight against rat swarms, muddy villages and sewers. Carry it through Plague Tale rat swarms, torchlight, sewers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Plague Tale rat swarms; torchlight; sewers',
     },
     ui: {
       previewStatus: 'pending',
@@ -499,35 +475,33 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-164',
-    name: 'Speakeasy Shootout Capture',
-    displayName: 'Speakeasy Shootout Capture',
+    name: 'Mafia 2020 - Hangar 13 Prohibition Noir',
+    displayName: 'Mafia 2020 - Hangar 13 Prohibition Noir',
     styleAnchors: [
-      'Speakeasy Shootout Capture',
+      'Mafia 2020 - Hangar 13 Prohibition Noir',
       'prohibition gangster game screenshot',
       'speakeasy',
     ],
     category: '7. Heists, Horror & Underworld Runs',
     domain: 'prohibition gangster game screenshot',
     negativePrompt:
-      'readable signs, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable signs, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Speakeasy shootout capture: an original third-person screenshot of a jazz-age speakeasy mid-shootout, flipped tables, shattering bottles and smoky amber light.',
+        'Hangar 13 Mafia: Definitive Edition (2020) look: 1930s prohibition city, speakeasies, tommy guns, classic cars and warm amber noir lighting.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; place the subject in a jazz-age speakeasy during a chaotic shootout.',
-      color_and_tone: 'Amber, deep brown wood and brass, kept consistent across the whole image.',
-      lighting_and_shadow:
-        'Smoky lamp light and muzzle flashes, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as 1930s gangsters and detectives in fedoras. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Amber smoke, mahogany and deep green, true to the Mafia 2020 palette.',
+      lighting_and_shadow: 'Smoky amber speakeasy light, lit the way Mafia 2020 lights its levels.',
       texture_and_material:
-        'Wood paneling, glass bottles and velvet, kept consistent across the whole image.',
+        'Polished wood, glass and wool suits, with the in-engine surface finish of Mafia 2020.',
       camera_and_composition:
-        'Low third-person behind cover, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with stylish violence without gore.',
-      rendering_and_quality:
-        'Clean capture with no readable signs, kept consistent across the whole image.',
+        'Third-person cover view, framed the way Mafia 2020 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with smoky gangland tension.',
+      rendering_and_quality: 'Authentic period crime screen, matching real Mafia 2020 screenshots.',
       creative_brief:
-        "Speakeasy shootout capture: an original third-person screenshot of a jazz-age speakeasy mid-shootout, flipped tables, shattering bottles and smoky amber light. Carry it through speakeasy, flipped tables, shattering bottles, amber smoke. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'speakeasy; flipped tables; shattering bottles; amber smoke',
+        "Hangar 13 Mafia: Definitive Edition (2020) look: 1930s prohibition city, speakeasies, tommy guns, classic cars and warm amber noir lighting. Carry it through Mafia prohibition, speakeasy, amber noir. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Mafia prohibition; speakeasy; amber noir',
     },
     ui: {
       previewStatus: 'pending',
@@ -535,32 +509,34 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-165',
-    name: 'Getaway Car Chase Capture',
-    displayName: 'Getaway Car Chase Capture',
-    styleAnchors: ['Getaway Car Chase Capture', 'crime driving game screenshot', 'getaway car'],
+    name: 'Driver 1999 - Reflections Seventies Chase',
+    displayName: 'Driver 1999 - Reflections Seventies Chase',
+    styleAnchors: [
+      'Driver 1999 - Reflections Seventies Chase',
+      'crime driving game screenshot',
+      'getaway car',
+    ],
     category: '7. Heists, Horror & Underworld Runs',
     domain: 'crime driving game screenshot',
     negativePrompt:
-      'car brand logos, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'car brand logos, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Getaway car chase capture: an original chase-camera screenshot of a getaway car tearing through city streets, police lights, sparks and flying debris.',
+        'Reflections Interactive Driver (1999) look: PS1 low-poly seventies car chases, muscle cars, police lights, cinematic chase angles and film-inspired stunts.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject in a getaway car fleeing through city streets.',
-      color_and_tone: 'Night streets with red and blue police light.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render every car as a boxy low-poly seventies muscle car. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Night blue, police red and sodium orange, true to the Driver 1999 palette.',
       lighting_and_shadow:
-        'Headlights, sirens and street lamps, kept consistent across the whole image.',
+        'Police lights and street lamps, lit the way Driver 1999 lights its levels.',
       texture_and_material:
-        'Wet asphalt, sparks and crumpled metal, kept consistent across the whole image.',
+        'Low-poly PS1 textures, with the in-engine surface finish of Driver 1999.',
       camera_and_composition:
-        'Chase camera behind the car, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with breakneck escape, kept consistent across the whole image.',
-      rendering_and_quality:
-        'Clean capture with no HUD text, kept consistent across the whole image.',
+        'Chase camera behind the car, framed the way Driver 1999 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with gritty chase thrill.',
+      rendering_and_quality: 'Authentic PS1 driving screen, matching real Driver 1999 screenshots.',
       creative_brief:
-        "Getaway car chase capture: an original chase-camera screenshot of a getaway car tearing through city streets, police lights, sparks and flying debris. Carry it through getaway car, police lights, sparks, chase camera. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'getaway car; police lights; sparks; chase camera',
+        "Reflections Interactive Driver (1999) look: PS1 low-poly seventies car chases, muscle cars, police lights, cinematic chase angles and film-inspired stunts. Carry it through Driver 1999 low-poly, seventies chase, police lights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Driver 1999 low-poly; seventies chase; police lights',
     },
     ui: {
       previewStatus: 'pending',
@@ -568,36 +544,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-166',
-    name: 'Museum Laser Grid Heist Capture',
-    displayName: 'Museum Laser Grid Heist Capture',
+    name: 'Sly Cooper 2002 - Sucker Punch Toon Heist',
+    displayName: 'Sly Cooper 2002 - Sucker Punch Toon Heist',
     styleAnchors: [
-      'Museum Laser Grid Heist Capture',
+      'Sly Cooper 2002 - Sucker Punch Toon Heist',
       'museum laser security screenshot',
       'laser grid',
     ],
     category: '7. Heists, Horror & Underworld Runs',
     domain: 'museum laser security screenshot',
     negativePrompt:
-      'readable plaques, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a raccoon thief in a blue hat with a cane, readable plaques, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Museum laser grid heist capture: an original stealth screenshot of a thief contorting through a grid of red security lasers toward a glowing exhibit case.',
+        'Sucker Punch Sly Cooper and the Thievius Raccoonus (2002) look: cel-shaded cartoon heist, animal thieves, blue night palettes, laser grids and sneaky poses.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject slipping through a web of red security lasers in a museum.',
-      color_and_tone: 'Dark gallery with red laser lines and case glow.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as cel-shaded cartoon animal thieves with sneaky poses. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Night blue, laser red and gold, true to the Sly Cooper 2002 palette.',
       lighting_and_shadow:
-        'Laser beams in fog and exhibit spotlights, kept consistent across the whole image.',
+        'Cartoon night light with laser glow, lit the way Sly Cooper 2002 lights its levels.',
       texture_and_material:
-        'Marble floors, glass cases and haze, kept consistent across the whole image.',
+        'Cel shading with ink outlines, with the in-engine surface finish of Sly Cooper 2002.',
       camera_and_composition:
-        'Third-person low angle through the lasers, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with precise nerve, kept consistent across the whole image.',
+        'Third-person sneak view, framed the way Sly Cooper 2002 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with sly playful heist.',
       rendering_and_quality:
-        'Clean capture with no readable plaques, kept consistent across the whole image.',
+        'Authentic PS2 toon heist screen, matching real Sly Cooper 2002 screenshots.',
       creative_brief:
-        "Museum laser grid heist capture: an original stealth screenshot of a thief contorting through a grid of red security lasers toward a glowing exhibit case. Carry it through laser grid, museum gallery, glowing case, contorting thief. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'laser grid; museum gallery; glowing case; contorting thief',
+        "Sucker Punch Sly Cooper and the Thievius Raccoonus (2002) look: cel-shaded cartoon heist, animal thieves, blue night palettes, laser grids and sneaky poses. Carry it through Sly Cooper cel, animal thieves, lasers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Sly Cooper cel; animal thieves; lasers',
     },
     ui: {
       previewStatus: 'pending',
@@ -605,35 +580,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-167',
-    name: 'Cartoon Ghost-Catcher Capture',
-    displayName: 'Cartoon Ghost-Catcher Capture',
+    name: "Luigi's Mansion 3 2019 - Next Level Games Ghost Hotel",
+    displayName: "Luigi's Mansion 3 2019 - Next Level Games Ghost Hotel",
     styleAnchors: [
-      'Cartoon Ghost-Catcher Capture',
+      "Luigi's Mansion 3 2019 - Next Level Games Ghost Hotel",
       'cartoon ghost hunting game screenshot',
       'cartoon ghosts',
     ],
     category: '7. Heists, Horror & Underworld Runs',
     domain: 'cartoon ghost hunting game screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a nervous plumber in green, existing Nintendo characters, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Cartoon ghost-catcher capture: an original colorful screenshot of a nervous cartoon hero sucking ghosts into a vacuum in a spooky mansion full of glowing spirits.',
+        "Next Level Games Luigi's Mansion 3 (2019) look: animated-film haunted hotel, goofy colorful ghosts, suction vacuum effects, swirling furniture and soft spooky light.",
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject catching cartoon ghosts with a glowing vacuum.',
-      color_and_tone: 'Purple and teal spooky palette with glowing ghosts.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as nervous cartoon ghost catchers with big expressions. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        "Spooky purple, ghost green and warm gold, true to the Luigi's Mansion 3 2019 palette.",
       lighting_and_shadow:
-        'Flashlight cones and ghost glow, kept consistent across the whole image.',
+        "Soft spooky light and vacuum glow, lit the way Luigi's Mansion 3 2019 lights its levels.",
       texture_and_material:
-        'Polished wood, cobwebs and translucent ghosts, kept consistent across the whole image.',
+        "Animated-film stylized surfaces, with the in-engine surface finish of Luigi's Mansion 3 2019.",
       camera_and_composition:
-        'Third-person in a room full of ghosts, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with playful spooky fun.',
+        "Third-person room view, framed the way Luigi's Mansion 3 2019 frames its gameplay screens.",
+      atmosphere_and_mood: 'Keep the requested mood with goofy spooky fun.',
       rendering_and_quality:
-        'Clean cartoon capture with no HUD, kept consistent across the whole image.',
+        "Authentic animated-film adventure screen, matching real Luigi's Mansion 3 2019 screenshots.",
       creative_brief:
-        "Cartoon ghost-catcher capture: an original colorful screenshot of a nervous cartoon hero sucking ghosts into a vacuum in a spooky mansion full of glowing spirits. Carry it through cartoon ghosts, vacuum beam, spooky mansion, glowing spirits. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'cartoon ghosts; vacuum beam; spooky mansion; glowing spirits',
+        "Next Level Games Luigi's Mansion 3 (2019) look: animated-film haunted hotel, goofy colorful ghosts, suction vacuum effects, swirling furniture and soft spooky light. Carry it through Luigi Mansion ghosts, vacuum, haunted hotel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Luigi Mansion ghosts; vacuum; haunted hotel',
     },
     ui: {
       previewStatus: 'pending',
@@ -641,33 +617,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-168',
-    name: 'Underworld Boat Crossing Capture',
-    displayName: 'Underworld Boat Crossing Capture',
+    name: 'Hades 2020 - Supergiant Painted Underworld',
+    displayName: 'Hades 2020 - Supergiant Painted Underworld',
     styleAnchors: [
-      'Underworld Boat Crossing Capture',
+      'Hades 2020 - Supergiant Painted Underworld',
       'river of the dead crossing screenshot',
       'underworld river',
     ],
     category: '7. Heists, Horror & Underworld Runs',
     domain: 'river of the dead crossing screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a laurel-crowned prince with flaming feet, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Underworld boat crossing capture: an original screenshot of a ferry crossing a dark river of souls, lanterns, drifting spirits and a distant gate of the dead.',
+        'Supergiant Games Hades (2020) look: isometric roguelike in Jen Zee painted art, bold inked Greek myth characters, glowing underworld chambers and ember colors.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; place the subject on a ferry crossing a dark underworld river.',
-      color_and_tone: 'Black water, pale ghost blue and lantern gold.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as bold inked painted Greek myth figures. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        'Underworld crimson, ember orange and soul teal, true to the Hades 2020 palette.',
       lighting_and_shadow:
-        'Lantern glow and faint spirit light, kept consistent across the whole image.',
+        'Ember and soul glow in darkness, lit the way Hades 2020 lights its levels.',
       texture_and_material:
-        'Ancient wood, mist and translucent souls, kept consistent across the whole image.',
-      camera_and_composition: 'Wide view across the river toward the gate.',
-      atmosphere_and_mood: 'Keep the requested mood with solemn otherworldly calm.',
-      rendering_and_quality: 'Clean capture with no HUD, kept consistent across the whole image.',
+        'Painted art with bold ink, with the in-engine surface finish of Hades 2020.',
+      camera_and_composition:
+        'Isometric chamber view, framed the way Hades 2020 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with defiant mythic swagger.',
+      rendering_and_quality:
+        'Authentic painted roguelike screen, matching real Hades 2020 screenshots.',
       creative_brief:
-        "Underworld boat crossing capture: an original screenshot of a ferry crossing a dark river of souls, lanterns, drifting spirits and a distant gate of the dead. Carry it through underworld river, ferry, lanterns, drifting souls. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'underworld river; ferry; lanterns; drifting souls',
+        "Supergiant Games Hades (2020) look: isometric roguelike in Jen Zee painted art, bold inked Greek myth characters, glowing underworld chambers and ember colors. Carry it through Hades Jen Zee, underworld, Greek myth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Hades Jen Zee; underworld; Greek myth',
     },
     ui: {
       previewStatus: 'pending',

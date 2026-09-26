@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Grasshopper Manufacture Killer7 (2005) look: stark flat-shaded cel graphics with blown-out whites, heavy black shadows, sharp angular figures, blood-red accents and surreal political noir.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a stark flat-shaded angular figure in blown-out white and heavy black. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Blown-out white, heavy black and blood red, true to the Killer7 2005 palette.
-  lighting_and_shadow: Harsh overexposed light with black shadow masses, lit the way Killer7 2005 lights its scenes.
-  texture_and_material: Flat polygon shading with no gradients, with the surface finish of Killer7 2005.
-  camera_and_composition: Low dramatic angles along rail paths, framed the way Killer7 2005 composes its shots and pages.
+  lighting_and_shadow: Harsh overexposed light with black shadow masses, lit the way Killer7 2005 lights its levels.
+  texture_and_material: Flat polygon shading with no gradients, with the in-engine surface finish of Killer7 2005.
+  camera_and_composition: Low dramatic angles along rail paths, framed the way Killer7 2005 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with cold surreal noir.
-  rendering_and_quality: Authentic mid-2000s flat-shaded action screen, in the recognizable hand of Killer7 2005.
+  rendering_and_quality: Authentic mid-2000s flat-shaded action screen, matching real Killer7 2005 screenshots.
   creative_brief: 'Grasshopper Manufacture Killer7 (2005) look: stark flat-shaded cel graphics with blown-out whites, heavy black shadows, sharp angular figures, blood-red accents and surreal political noir. Carry it through Killer7 flat shading, blown-out whites, stark noir. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Killer7 flat shading; blown-out whites; stark noir
 avoidRules:
@@ -46,13 +46,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: existing assassin personas, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing assassin personas, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

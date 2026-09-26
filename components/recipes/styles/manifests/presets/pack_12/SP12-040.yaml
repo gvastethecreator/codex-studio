@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP12-040
 packId: pack_12
-name: Monster Hunter Thunder Plains
+name: Monster Hunter World 2018 - Capcom Ecosystem Hunt
 styleAnchors:
-  - 'Monster Hunter: World gameplay screenshots'
+  - Monster Hunter World 2018 - Capcom Ecosystem Hunt
   - Monster Hunter Thunder Plains
-displayName: Monster Hunter Thunder Plains
+displayName: Monster Hunter World 2018 - Capcom Ecosystem Hunt
 category: 6. Wilderness Hunts & Harsh Frontiers
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,48 +23,19 @@ tags:
   - hud-contextual-hud
   - reference-title
 visualDna:
-  aesthetic: 'In-game screenshot look informed by Monster Hunter: World gameplay: third-person beast-hunt capture with enormous creature scale, open biomes, weapon commitment, scout trails, and campsite expedition logic. It never recreates an exact official level, character, logo or marketing art.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable Monster Hunter: World-adjacent game
-    screenshot subject: keep clear role silhouette, player/enemy/object function, scale
-    relationship, hitbox-like readability, and interaction affordances without copying source
-    characters or named IP elements.
-  color_and_tone: >-
-    Use a Monster Hunter: World-informed palette: storm grey, moss green, hide brown, bone white,
-    lightning violet, and orange campfire accents. Keep value grouping legible at gameplay distance,
-    with color accents behaving like route, danger, pickup, team, magic, or objective cues rather
-    than decorative wash.
-  lighting_and_shadow: >-
-    Light the image through weather flashes, dappled forest/plains light, monster attack glow, camp
-    torches, and dust from heavy movement. Lighting must clarify the playable route, threat, focal
-    subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from scaled hides, giant weapons, leather straps, mud, grass, claws, field gear,
-    and tactile creature anatomy. Materials should feel like in-engine game assets captured during
-    play, with enough texture identity to separate props, terrain, characters, hazards, and
-    interactables.
-  camera_and_composition: >-
-    Compose with third-person hunt camera with player small against monster, attack telegraphs,
-    terrain use, and readable chase paths. The frame should read as a plausible gameplay capture;
-    include UI/HUD only when it matches the source game's visual logic and improves clarity.
-  atmosphere_and_mood: 'Monster Hunter: World-derived mood: predatory, adventurous, physical, dangerous, and ecological; it follows the tone of the requested scene without forcing a fixed mission or story.'
-  rendering_and_quality: >-
-    Finish as a coherent in-engine screenshot style, not concept art: health/stamina, minimap, item
-    bar, monster status, and damage numbers can appear if they support hunt readability. Maintain
-    heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos,
-    stock-photo polish, or random interface clutter.
-  key_features: >-
-    Monster Hunter: World gameplay screenshots; third-person beast-hunt capture with enormous
-    creature scale, open biomes, weapon commitment, scout trails, and campsite expedition logic;
-    storm grey, moss green, hide brown, bone white, lightning violet, and orange campfire accents;
-    weather flashes, dappled forest/plains light, monster attack glow, camp torches, and dust from
-    heavy movement; scaled hides, giant weapons, leather straps, mud, grass, claws, field gear, and
-    tactile creature anatomy; third-person hunt camera with player small against monster, attack
-    telegraphs, terrain use, and readable chase paths; predatory, adventurous, physical, dangerous,
-    and ecological; HUD guidance: health/stamina, minimap, item bar, monster status, and damage
-    numbers can appear if they support hunt readability
-  creative_brief: "Monster Hunter Thunder Plains: in-game screenshot language informed by Monster Hunter: World, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'Capcom Monster Hunter: World (2018) look: third-person hunting of huge living monsters across rich ecosystems, oversized weapons, layered armor made from monster parts and dramatic weather.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as hunters in layered monster-part armor with oversized weapons. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Storm blue, electric yellow and natural earth, true to the Monster Hunter World 2018 palette.
+  lighting_and_shadow: Stormy light with lightning bursts, lit the way Monster Hunter World 2018 lights its levels.
+  texture_and_material: Detailed scales, fur and forged armor, with the in-engine surface finish of Monster Hunter World 2018.
+  camera_and_composition: Third-person view mid-attack, framed the way Monster Hunter World 2018 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with thrilling colossal hunt.
+  rendering_and_quality: Authentic modern hunting action screen, matching real Monster Hunter World 2018 screenshots.
+  key_features: Monster Hunter giant monsters; big weapons; ecosystems
+  creative_brief: 'Capcom Monster Hunter: World (2018) look: third-person hunting of huge living monsters across rich ecosystems, oversized weapons, layered armor made from monster parts and dramatic weather. Carry it through Monster Hunter giant monsters, big weapons, ecosystems. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
+  - existing Monster Hunter monsters
+  - a cat companion in armor
   - watermark
   - logo
   - copyright mark
@@ -91,23 +62,19 @@ avoidRules:
   - copied box art composition
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
+  - text
+  - readable labels
+  - franchise likeness
+  - real person likeness
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-040.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: existing Monster Hunter monsters, a cat companion in armor, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts
   referenceGame: 'Monster Hunter: World'
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    health/stamina, minimap, item bar, monster status, and damage numbers can appear if they support
-    hunt readability
+  hudGuidance: health/stamina, minimap, item bar, monster status, and damage numbers can appear if they support hunt readability
   renderFamily: third-person-cinematic
   cameraFamily: third-person
   hudMode: contextual-hud

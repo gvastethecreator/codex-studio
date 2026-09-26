@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP12-059
 packId: pack_12
-name: Dota Prismatic Hero Draft Arena
+name: Dota 2 2013 - Valve Painted MOBA
 styleAnchors:
-  - Dota 2 gameplay screenshots
+  - Dota 2 2013 - Valve Painted MOBA
   - Dota Prismatic Hero Draft Arena
-displayName: Dota Prismatic Hero Draft Arena
+displayName: Dota 2 2013 - Valve Painted MOBA
 category: 5. Speed, Sport & Competitive Arenas
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,48 +23,18 @@ tags:
   - hud-full-hud
   - reference-title
 visualDna:
-  aesthetic: 'In-game screenshot look informed by Dota 2 gameplay: MOBA gameplay capture with isometric hero combat, lanes, ability bar, minimap, creep waves, and dense but disciplined teamfight readability. It never recreates an exact official level, character, logo or marketing art.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable Dota 2-adjacent game screenshot
-    subject: keep clear role silhouette, player/enemy/object function, scale relationship,
-    hitbox-like readability, and interaction affordances without copying source characters or named
-    IP elements.
-  color_and_tone: >-
-    Use a Dota 2-informed palette: Radiant green, Dire red, magic purple, gold UI accents, river
-    blue, and dark terrain shadows. Keep value grouping legible at gameplay distance, with color
-    accents behaving like route, danger, pickup, team, magic, or objective cues rather than
-    decorative wash.
-  lighting_and_shadow: >-
-    Light the image through spell effects, tower beams, hero glows, fog-of-war darkness, and crisp
-    particle silhouettes. Lighting must clarify the playable route, threat, focal subject, or
-    objective and avoid generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from fantasy terrain, hero equipment without copying exact heroes, creeps,
-    towers, trees, stone paths, and polished ability effects. Materials should feel like in-engine
-    game assets captured during play, with enough texture identity to separate props, terrain,
-    characters, hazards, and interactables.
-  camera_and_composition: >-
-    Compose with high isometric battlefield view with lane hierarchy, team spacing, ability ranges,
-    minimap, and objective pressure. The frame should read as a plausible gameplay capture; include
-    UI/HUD only when it matches the source game's visual logic and improves clarity.
-  atmosphere_and_mood: 'Dota 2-derived mood: competitive, tactical, magical, high-information, and tense; it follows the tone of the requested scene without forcing a fixed mission or story.'
-  rendering_and_quality: >-
-    Finish as a coherent in-engine screenshot style, not concept art: MOBA HUD is central: ability
-    bar, minimap, hero status, cooldowns, items, and teamfight markers can be visible. Maintain
-    heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos,
-    stock-photo polish, or random interface clutter.
-  key_features: >-
-    Dota 2 gameplay screenshots; MOBA gameplay capture with isometric hero combat, lanes, ability
-    bar, minimap, creep waves, and dense but disciplined teamfight readability; Radiant green, Dire
-    red, magic purple, gold UI accents, river blue, and dark terrain shadows; spell effects, tower
-    beams, hero glows, fog-of-war darkness, and crisp particle silhouettes; fantasy terrain, hero
-    equipment without copying exact heroes, creeps, towers, trees, stone paths, and polished ability
-    effects; high isometric battlefield view with lane hierarchy, team spacing, ability ranges,
-    minimap, and objective pressure; competitive, tactical, magical, high-information, and tense;
-    HUD guidance: MOBA HUD is central: ability bar, minimap, hero status, cooldowns, items, and
-    teamfight markers can be visible
-  creative_brief: "Dota Prismatic Hero Draft Arena: in-game screenshot language informed by Dota 2, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'Valve Dota 2 (2013) look: isometric MOBA with painted stylized fantasy terrain, three lanes, towers, creep waves, glowing hero abilities and ancient structures.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as stylized painted fantasy heroes with glowing abilities. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Radiant green versus dire red earth, true to the Dota 2 2013 palette.
+  lighting_and_shadow: Painted light with ability glows, lit the way Dota 2 2013 lights its levels.
+  texture_and_material: Hand-painted stylized textures, with the in-engine surface finish of Dota 2 2013.
+  camera_and_composition: Isometric MOBA view, framed the way Dota 2 2013 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with fierce competitive clash.
+  rendering_and_quality: Authentic MOBA screen, matching real Dota 2 2013 screenshots.
+  key_features: Dota 2 painted lanes; towers; creep waves
+  creative_brief: 'Valve Dota 2 (2013) look: isometric MOBA with painted stylized fantasy terrain, three lanes, towers, creep waves, glowing hero abilities and ancient structures. Carry it through Dota 2 painted lanes, towers, creep waves. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
+  - existing Dota heroes
   - watermark
   - logo
   - copyright mark
@@ -91,23 +61,19 @@ avoidRules:
   - copied box art composition
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
+  - text
+  - readable labels
+  - franchise likeness
+  - real person likeness
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-059.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: existing Dota heroes, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts
   referenceGame: Dota 2
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    MOBA HUD is central: ability bar, minimap, hero status, cooldowns, items, and teamfight markers
-    can be visible
+  hudGuidance: 'MOBA HUD is central: ability bar, minimap, hero status, cooldowns, items, and teamfight markers can be visible'
   renderFamily: strategy-tactics
   cameraFamily: isometric-top-down
   hudMode: full-hud

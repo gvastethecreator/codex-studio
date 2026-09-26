@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP12-001
 packId: pack_12
-name: Katana Zero Neo-Noir Sideview
+name: Katana Zero 2019 - Askiisoft Neo-Noir Pixel Slash
 styleAnchors:
-  - Katana ZERO gameplay screenshots
+  - Katana Zero 2019 - Askiisoft Neo-Noir Pixel Slash
   - Katana Zero Neo-Noir Sideview
-displayName: Katana Zero Neo-Noir Sideview
+displayName: Katana Zero 2019 - Askiisoft Neo-Noir Pixel Slash
 category: 1. Neon Urban & Night Ops
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,50 +23,18 @@ tags:
   - hud-minimal-hud
   - reference-title
 visualDna:
-  aesthetic: 'In-game screenshot look informed by Katana ZERO gameplay: 2D neo-noir action-platformer capture with side-view rooms, instant-death combat spacing, motel interiors, glass partitions, and cinematic pixel staging. It never recreates an exact official level, character, logo or marketing art.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable Katana ZERO-adjacent game
-    screenshot subject: keep clear role silhouette, player/enemy/object function, scale
-    relationship, hitbox-like readability, and interaction affordances without copying source
-    characters or named IP elements.
-  color_and_tone: >-
-    Use a Katana ZERO-informed palette: black hotel shadow, red blood accents, sodium amber, teal
-    window light, magenta signage, and small white bullet highlights. Keep value grouping legible at
-    gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or
-    objective cues rather than decorative wash.
-  lighting_and_shadow: >-
-    Light the image through hard interior cuts, neon spill through windows, slash trails, muzzle
-    flashes, and time-slow contrast pulses. Lighting must clarify the playable route, threat, focal
-    subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from chunky pixel silhouettes, glossy tile, wood paneling, rain glass, smoke
-    puffs, shattered props, and clean sprite edges. Materials should feel like in-engine game assets
-    captured during play, with enough texture identity to separate props, terrain, characters,
-    hazards, and interactables.
-  camera_and_composition: >-
-    Compose with strict side-on room composition with readable platform lanes, enemy spacing, door
-    exits, throwable props, and action freeze timing. The frame should read as a plausible gameplay
-    capture; include UI/HUD only when it matches the source game's visual logic and improves
-    clarity.
-  atmosphere_and_mood: 'Katana ZERO-derived mood: stylish, brutal, nocturnal, tense, and choreographed like a one-screen execution puzzle; it follows the tone of the requested scene without forcing a fixed mission or story.'
-  rendering_and_quality: >-
-    Finish as a coherent in-engine screenshot style, not concept art: minimal HUD; use tiny combat
-    prompts or replay/timer cues only when they help the screenshot feel playable. Maintain
-    heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos,
-    stock-photo polish, or random interface clutter.
-  key_features: >-
-    Katana ZERO gameplay screenshots; 2D neo-noir action-platformer capture with side-view rooms,
-    instant-death combat spacing, motel interiors, glass partitions, and cinematic pixel staging;
-    black hotel shadow, red blood accents, sodium amber, teal window light, magenta signage, and
-    small white bullet highlights; hard interior cuts, neon spill through windows, slash trails,
-    muzzle flashes, and time-slow contrast pulses; chunky pixel silhouettes, glossy tile, wood
-    paneling, rain glass, smoke puffs, shattered props, and clean sprite edges; strict side-on room
-    composition with readable platform lanes, enemy spacing, door exits, throwable props, and action
-    freeze timing; stylish, brutal, nocturnal, tense, and choreographed like a one-screen execution
-    puzzle; HUD guidance: minimal HUD; use tiny combat prompts or replay/timer cues only when they
-    help the screenshot feel playable
-  creative_brief: "Katana Zero Neo-Noir Sideview: in-game screenshot language informed by Katana ZERO, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'Askiisoft Katana Zero (2019) look: side-view pixel art at low resolution, neo-noir motel and club interiors, teal and magenta neon, VHS scanline glitches, slow-motion afterimages and one-hit sword kills.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as small crisp pixel-art sprites with readable silhouettes, trailing afterimages and sharp slash arcs. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Teal window light, hot magenta neon, deep purple shadow and blood red accents.
+  lighting_and_shadow: Flat neon pools on pixel floors with bright slash flashes and dark rooms between lights.
+  texture_and_material: Low-resolution pixel art with VHS scanlines, chromatic glitch and tape noise.
+  camera_and_composition: Flat side-view room cutaway with the whole fight readable in one screen.
+  atmosphere_and_mood: Keep the requested mood with cool neo-noir slaughter.
+  rendering_and_quality: Authentic indie pixel-art action screen with VHS replay glitch.
+  key_features: Katana Zero pixel noir; VHS glitch; slow-motion afterimages; neon rooms
+  creative_brief: "Askiisoft Katana Zero (2019) look: side-view pixel art at low resolution, neo-noir motel and club interiors, teal and magenta neon, VHS scanline glitches, slow-motion afterimages and one-hit sword kills. Carry it through Katana Zero pixel noir, VHS glitch, slow-motion afterimages, neon rooms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
 avoidRules:
+  - a samurai in a long coat with a headband
   - watermark
   - logo
   - copyright mark
@@ -93,23 +61,19 @@ avoidRules:
   - copied box art composition
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
+  - text
+  - readable labels
+  - franchise likeness
+  - real person likeness
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-001.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: a samurai in a long coat with a headband, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts
   referenceGame: Katana ZERO
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    minimal HUD; use tiny combat prompts or replay/timer cues only when they help the screenshot
-    feel playable
+  hudGuidance: minimal HUD; use tiny combat prompts or replay/timer cues only when they help the screenshot feel playable
   renderFamily: retro-pixel-low-poly
   cameraFamily: side-view
   hudMode: minimal-hud

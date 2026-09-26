@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'LucasArts Grim Fandango (1998) look: Day of the Dead calavera characters, art deco film noir, pre-rendered backgrounds with low-poly skeletons and smoky atmosphere.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as low-poly calavera skeletons in art deco noir pre-rendered scenes. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Noir amber, marigold orange and deep teal, true to the Grim Fandango 1998 palette.
-  lighting_and_shadow: Smoky noir lighting and neon, lit the way Grim Fandango 1998 lights its scenes.
-  texture_and_material: Pre-rendered deco backgrounds with low-poly figures, with the surface finish of Grim Fandango 1998.
-  camera_and_composition: Cinematic noir fixed angles, framed the way Grim Fandango 1998 composes its shots and pages.
+  lighting_and_shadow: Smoky noir lighting and neon, lit the way Grim Fandango 1998 lights its levels.
+  texture_and_material: Pre-rendered deco backgrounds with low-poly figures, with the in-engine surface finish of Grim Fandango 1998.
+  camera_and_composition: Cinematic noir fixed angles, framed the way Grim Fandango 1998 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with smoky deco noir.
-  rendering_and_quality: Authentic late-nineties noir adventure screen, in the recognizable hand of Grim Fandango 1998.
+  rendering_and_quality: Authentic late-nineties noir adventure screen, matching real Grim Fandango 1998 screenshots.
   creative_brief: 'LucasArts Grim Fandango (1998) look: Day of the Dead calavera characters, art deco film noir, pre-rendered backgrounds with low-poly skeletons and smoky atmosphere. Carry it through Grim Fandango calaveras, art deco noir, low-poly skeletons. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Grim Fandango calaveras; art deco noir; low-poly skeletons
 avoidRules:
@@ -46,13 +46,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: a skeleton travel agent in a suit and a demon mechanic, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a skeleton travel agent in a suit and a demon mechanic, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

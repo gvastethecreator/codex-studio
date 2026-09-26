@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Smilebit Jet Set Radio (2000) look: early thick-outline cel-shaded 3D, inline-skating graffiti gangs, Tokyo-inspired streets, fisheye tilt and loud funk-pop color.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a thick-outline cel-shaded skater figure in loud graffiti streets. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Loud funk-pop yellow, magenta, lime and sky blue.
-  lighting_and_shadow: Bright flat daylight with black cel outlines, lit the way Jet Set Radio 2000 lights its scenes.
+  lighting_and_shadow: Bright flat daylight with black cel outlines, lit the way Jet Set Radio 2000 lights its levels.
   texture_and_material: Thick black outlines, flat cel fills and spray paint.
-  camera_and_composition: Low fisheye tilt following the skater, framed the way Jet Set Radio 2000 composes its shots and pages.
+  camera_and_composition: Low fisheye tilt following the skater, framed the way Jet Set Radio 2000 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with rebellious funky street energy.
-  rendering_and_quality: Authentic Dreamcast cel-shaded screen, in the recognizable hand of Jet Set Radio 2000.
+  rendering_and_quality: Authentic Dreamcast cel-shaded screen, matching real Jet Set Radio 2000 screenshots.
   creative_brief: 'Smilebit Jet Set Radio (2000) look: early thick-outline cel-shaded 3D, inline-skating graffiti gangs, Tokyo-inspired streets, fisheye tilt and loud funk-pop color. Carry it through JSR thick outlines, graffiti skaters, fisheye, funk colors. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: JSR thick outlines; graffiti skaters; fisheye; funk colors
 avoidRules:
@@ -46,13 +46,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: existing skater gang members, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing skater gang members, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

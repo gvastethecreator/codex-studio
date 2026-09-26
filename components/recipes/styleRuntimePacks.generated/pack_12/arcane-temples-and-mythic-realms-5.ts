@@ -5,361 +5,330 @@ import type { StyleRuntimePreset } from '../../styles/runtimeTypes';
 export const GENERATED_STYLE_PRESETS = [
   {
     id: 'SP12-006',
-    name: 'Bloodstained Arcane Library Boss',
-    displayName: 'Bloodstained Arcane Library Boss',
+    name: 'Bloodstained 2019 - ArtPlay 2.5D Gothic Castle',
+    displayName: 'Bloodstained 2019 - ArtPlay 2.5D Gothic Castle',
     styleAnchors: [
-      'Bloodstained: Ritual of the Night gameplay screenshots',
+      'Bloodstained 2019 - ArtPlay 2.5D Gothic Castle',
       'Bloodstained Arcane Library Boss',
+    ],
+    category: '2. Arcane Temples & Mythic Realms',
+    negativePrompt:
+      'a pale heroine with crystal shards on her back, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'ArtPlay Bloodstained: Ritual of the Night (2019) look: 2.5D side-scrolling gothic castle in the Koji Igarashi Castlevania tradition, stylized 3D models on a flat plane, ornate libraries and giant demon bosses.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as stylized 3D gothic anime figures with ornate clothing, moving on a flat side-scrolling plane. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Gothic crimson, library gold, deep violet and cold moon blue.',
+      lighting_and_shadow: 'Candelabra glow, stained-glass beams and bright spell flashes.',
+      texture_and_material: 'Stylized painted 3D surfaces of carved wood, stone and velvet.',
+      camera_and_composition:
+        '2.5D side-scrolling view with parallax gothic depth, framed the way Bloodstained 2019 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with ornate gothic exploration.',
+      rendering_and_quality:
+        'Authentic modern 2.5D metroidvania screen, matching real Bloodstained 2019 screenshots.',
+      key_features: 'Bloodstained 2.5D; gothic castle; Igarashi metroidvania; demon bosses',
+      creative_brief:
+        "ArtPlay Bloodstained: Ritual of the Night (2019) look: 2.5D side-scrolling gothic castle in the Koji Igarashi Castlevania tradition, stylized 3D models on a flat plane, ornate libraries and giant demon bosses. Carry it through Bloodstained 2.5D, gothic castle, Igarashi metroidvania, demon bosses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+    },
+  },
+  {
+    id: 'SP12-013',
+    name: 'Journey 2012 - thatgamecompany Sand Pilgrimage',
+    displayName: 'Journey 2012 - thatgamecompany Sand Pilgrimage',
+    styleAnchors: [
+      'Journey 2012 - thatgamecompany Sand Pilgrimage',
+      'Journey Crystal Desert Pilgrimage',
+    ],
+    category: '2. Arcane Temples & Mythic Realms',
+    negativePrompt:
+      'a red-robed traveler with a gold-embroidered scarf, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'thatgamecompany Journey (2012) look: vast shimmering sand dunes rendered with glittering sand shaders, tiny cloaked figures with glowing scarves, flying cloth creatures and a distant beam-topped mountain.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as tiny faceless cloaked figures with long glowing scarves, small against vast landscapes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Glittering gold sand, sunset rose, deep red cloth and cool blue shadow.',
+      lighting_and_shadow: 'Low sun turning sand to glittering gold with soft long shadows.',
+      texture_and_material: 'Shimmering sand shader, soft cloth and weathered stone ruins.',
+      camera_and_composition:
+        'Wide third-person view dwarfing the small traveler, framed the way Journey 2012 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with wordless shared awe.',
+      rendering_and_quality:
+        'Authentic early-2010s art-game screen, matching real Journey 2012 screenshots.',
+      key_features: 'Journey glittering sand; tiny cloaked pilgrim; glowing scarf',
+      creative_brief:
+        "thatgamecompany Journey (2012) look: vast shimmering sand dunes rendered with glittering sand shaders, tiny cloaked figures with glowing scarves, flying cloth creatures and a distant beam-topped mountain. Carry it through Journey glittering sand, tiny cloaked pilgrim, glowing scarf. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+    },
+  },
+  {
+    id: 'SP12-015',
+    name: 'Axiom Verge 2015 - Thomas Happ Glitch Pixel Ruin',
+    displayName: 'Axiom Verge 2015 - Thomas Happ Glitch Pixel Ruin',
+    styleAnchors: [
+      'Axiom Verge 2015 - Thomas Happ Glitch Pixel Ruin',
+      'Axiom Verge Ancient Tech Temple',
     ],
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt:
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Bloodstained: Ritual of the Night gameplay: gothic side-scrolling action-RPG capture with ornate libraries, spell effects, readable boss spacing, and layered parallax interiors. It never recreates an exact official level, character, logo or marketing art.',
+        'Thomas Happ Axiom Verge (2015) look: 16-bit style pixel metroidvania in a biomechanical alien ruin, H.R. Giger-inspired organic machinery, glitch-gun corruption and scrambled pixels.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Bloodstained: Ritual of the Night-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Bloodstained: Ritual of the Night-informed palette: violet velvet, candle gold, book brown, moon blue, crimson magic, and porcelain skin highlights without copying characters. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
-      lighting_and_shadow:
-        'Light the image through candelabra pools, stained glass rim, spell bloom, boss hit flashes, and deep library shadow bands. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
-      texture_and_material:
-        'Build surfaces from 2.5D gothic masonry, leather books, polished floors, embroidered costumes, demon silhouettes, and clean effect particles. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as small detailed pixel sprites in biomechanical ruins, with glitch effects scrambling nearby pixels. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Toxic purple, flesh pink, alien teal and corrupted neon.',
+      lighting_and_shadow: 'Dark ruin interiors lit by glowing organic machinery.',
+      texture_and_material: 'Dense 16-bit pixel art with biomechanical detail and glitch noise.',
       camera_and_composition:
-        "Compose with side-view combat lane with boss arena symmetry, jump arcs, magic projectiles, platforms, and health-bar readability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Bloodstained: Ritual of the Night-derived mood: ornate, occult, dramatic, and arcade-readable; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Side-view metroidvania room view, framed the way Axiom Verge 2015 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with eerie alien discovery.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: boss health bars, MP meters, damage numbers, and item icons are allowed if they match a gothic action-RPG screenshot. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Bloodstained: Ritual of the Night gameplay screenshots; gothic side-scrolling action-RPG capture with ornate libraries, spell effects, readable boss spacing, and layered parallax interiors; violet velvet, candle gold, book brown, moon blue, crimson magic, and porcelain skin highlights without copying characters; candelabra pools, stained glass rim, spell bloom, boss hit flashes, and deep library shadow bands; 2.5D gothic masonry, leather books, polished floors, embroidered costumes, demon silhouettes, and clean effect particles; side-view combat lane with boss arena symmetry, jump arcs, magic projectiles, platforms, and health-bar readability; ornate, occult, dramatic, and arcade-readable; HUD guidance: boss health bars, MP meters, damage numbers, and item icons are allowed if they match a gothic action-RPG screenshot',
+        'Authentic modern pixel metroidvania screen, matching real Axiom Verge 2015 screenshots.',
+      key_features: 'Axiom Verge pixels; biomechanical ruin; glitch corruption',
       creative_brief:
-        "Bloodstained Arcane Library Boss: in-game screenshot language informed by Bloodstained: Ritual of the Night, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
-    },
-  },
-  {
-    id: 'SP12-013',
-    name: 'Journey Crystal Desert Pilgrimage',
-    displayName: 'Journey Crystal Desert Pilgrimage',
-    styleAnchors: ['Journey gameplay screenshots', 'Journey Crystal Desert Pilgrimage'],
-    category: '2. Arcane Temples & Mythic Realms',
-    negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
-    style: {
-      aesthetic:
-        'In-game screenshot look informed by Journey gameplay: minimal third-person desert adventure capture with tiny cloaked figure scale, monumental dunes, simple ruins, and poetic route silhouettes. It never recreates an exact official level, character, logo or marketing art.',
-      subject_treatment:
-        "Preserve the user's subject and transform it into a playable Journey-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Journey-informed palette: burnt orange sand, rose dusk, gold glints, cobalt night, white scarf marks, and sparse turquoise glyph glow. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
-      lighting_and_shadow:
-        'Light the image through low sun bloom, soft horizon haze, rimmed dunes, starry twilight, and warm sand bounce. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
-      texture_and_material:
-        'Build surfaces from smooth sand sheets, cloth folds, simple stone glyphs, flowing particles, and elegant low-detail geometry. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
-      camera_and_composition:
-        "Compose with wide third-person travel framing with negative space, small player silhouette, slope vectors, and one clear destination landmark. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Journey-derived mood: lonely, sacred, graceful, meditative, and mythic; it follows the tone of the requested scene without forcing a fixed mission or story.',
-      rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: almost no HUD; a tiny scarf/glyph cue is acceptable, but keep the screen uncluttered. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Journey gameplay screenshots; minimal third-person desert adventure capture with tiny cloaked figure scale, monumental dunes, simple ruins, and poetic route silhouettes; burnt orange sand, rose dusk, gold glints, cobalt night, white scarf marks, and sparse turquoise glyph glow; low sun bloom, soft horizon haze, rimmed dunes, starry twilight, and warm sand bounce; smooth sand sheets, cloth folds, simple stone glyphs, flowing particles, and elegant low-detail geometry; wide third-person travel framing with negative space, small player silhouette, slope vectors, and one clear destination landmark; lonely, sacred, graceful, meditative, and mythic; HUD guidance: almost no HUD; a tiny scarf/glyph cue is acceptable, but keep the screen uncluttered',
-      creative_brief:
-        "Journey Crystal Desert Pilgrimage: in-game screenshot language informed by Journey, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
-    },
-  },
-  {
-    id: 'SP12-015',
-    name: 'Axiom Verge Ancient Tech Temple',
-    displayName: 'Axiom Verge Ancient Tech Temple',
-    styleAnchors: ['Axiom Verge gameplay screenshots', 'Axiom Verge Ancient Tech Temple'],
-    category: '2. Arcane Temples & Mythic Realms',
-    negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
-    style: {
-      aesthetic:
-        'In-game screenshot look informed by Axiom Verge gameplay: retro metroidvania capture with biomechanical ruins, alien machinery, side-view corridors, glitch weapons, and readable tile hazards. It never recreates an exact official level, character, logo or marketing art.',
-      subject_treatment:
-        "Preserve the user's subject and transform it into a playable Axiom Verge-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Axiom Verge-informed palette: deep purple, toxic green, rusty red, bone white, black void, and electric blue glitch accents. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
-      lighting_and_shadow:
-        'Light the image through pixel bloom from energy nodes, dark room contrast, weapon flashes, and monitor-like color bands. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
-      texture_and_material:
-        'Build surfaces from pixelated bio-circuit walls, alien statues, ribbed machinery, corrupted tiles, and crunchy particle bursts. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
-      camera_and_composition:
-        "Compose with side-view exploration frame with platforms, doors, enemies, secret routes, and small character scale against strange architecture. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Axiom Verge-derived mood: lonely, alien, retro, corrupted, and exploratory; it follows the tone of the requested scene without forcing a fixed mission or story.',
-      rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: retro health bars, weapon icons, map blocks, and glitch readouts are allowed if sparse and period-correct. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Axiom Verge gameplay screenshots; retro metroidvania capture with biomechanical ruins, alien machinery, side-view corridors, glitch weapons, and readable tile hazards; deep purple, toxic green, rusty red, bone white, black void, and electric blue glitch accents; pixel bloom from energy nodes, dark room contrast, weapon flashes, and monitor-like color bands; pixelated bio-circuit walls, alien statues, ribbed machinery, corrupted tiles, and crunchy particle bursts; side-view exploration frame with platforms, doors, enemies, secret routes, and small character scale against strange architecture; lonely, alien, retro, corrupted, and exploratory; HUD guidance: retro health bars, weapon icons, map blocks, and glitch readouts are allowed if sparse and period-correct',
-      creative_brief:
-        "Axiom Verge Ancient Tech Temple: in-game screenshot language informed by Axiom Verge, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Thomas Happ Axiom Verge (2015) look: 16-bit style pixel metroidvania in a biomechanical alien ruin, H.R. Giger-inspired organic machinery, glitch-gun corruption and scrambled pixels. Carry it through Axiom Verge pixels, biomechanical ruin, glitch corruption. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-020',
-    name: 'Sunless Skies Celestial Trade',
-    displayName: 'Sunless Skies Celestial Trade',
-    styleAnchors: ['Sunless Skies gameplay screenshots', 'Sunless Skies Celestial Trade'],
+    name: 'Sunless Skies 2019 - Failbetter Gaslamp Void Trade',
+    displayName: 'Sunless Skies 2019 - Failbetter Gaslamp Void Trade',
+    styleAnchors: [
+      'Sunless Skies 2019 - Failbetter Gaslamp Void Trade',
+      'Sunless Skies Celestial Trade',
+    ],
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt:
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Sunless Skies gameplay: top-down gothic space-train exploration capture with black void, illustrated ports, trade-route menace, and strange celestial harbors. It never recreates an exact official level, character, logo or marketing art.',
+        'Failbetter Games Sunless Skies (2019) look: top-down painted gaslamp void, flying locomotives with lantern prows, Victorian space ports and gothic celestial horrors.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Sunless Skies-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Sunless Skies-informed palette: inky black, tarnished brass, gaslight gold, deep teal nebulae, sickly green fog, and red warning accents. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
-      lighting_and_shadow:
-        'Light the image through locomotive lamp cones, port lanterns, star glimmers, weapon flashes, and fog-softened halos. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people and vessels as small painted steam locomotives and Victorian figures seen from above in a dark void. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Deep void black, lantern amber, cosmic teal and brass.',
+      lighting_and_shadow: 'Lantern prow cones cutting through dark starry void.',
       texture_and_material:
-        'Build surfaces from painted locomotive metal, Victorian ornament, chart icons, void clouds, cargo crates, and storybook UI panels. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
-      camera_and_composition:
-        "Compose with top-down travel composition with ship/train silhouette, docking targets, enemy arcs, and map-like navigational readability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Sunless Skies-derived mood: literary, gothic, mercantile, eerie, and cosmic; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Hand-painted illustrative surfaces with gothic detail, with the in-engine surface finish of Sunless Skies 2019.',
+      camera_and_composition: 'Top-down view of the locomotive in the void.',
+      atmosphere_and_mood: 'Keep the requested mood with gothic cosmic wanderlust.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: navigation HUD, fuel/supply meters, chart panels, and small story windows are allowed when they feel like dark exploration UI. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Sunless Skies gameplay screenshots; top-down gothic space-train exploration capture with black void, illustrated ports, trade-route menace, and strange celestial harbors; inky black, tarnished brass, gaslight gold, deep teal nebulae, sickly green fog, and red warning accents; locomotive lamp cones, port lanterns, star glimmers, weapon flashes, and fog-softened halos; painted locomotive metal, Victorian ornament, chart icons, void clouds, cargo crates, and storybook UI panels; top-down travel composition with ship/train silhouette, docking targets, enemy arcs, and map-like navigational readability; literary, gothic, mercantile, eerie, and cosmic; HUD guidance: navigation HUD, fuel/supply meters, chart panels, and small story windows are allowed when they feel like dark exploration UI',
+        'Authentic painted top-down exploration screen, matching real Sunless Skies 2019 screenshots.',
+      key_features: 'Sunless Skies void; flying locomotives; lantern prows',
       creative_brief:
-        "Sunless Skies Celestial Trade: in-game screenshot language informed by Sunless Skies, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Failbetter Games Sunless Skies (2019) look: top-down painted gaslamp void, flying locomotives with lantern prows, Victorian space ports and gothic celestial horrors. Carry it through Sunless Skies void, flying locomotives, lantern prows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-028',
-    name: 'Sekiro Temple Duel',
-    displayName: 'Sekiro Temple Duel',
-    styleAnchors: ['Sekiro: Shadows Die Twice gameplay screenshots', 'Sekiro Temple Duel'],
+    name: 'Sekiro 2019 - FromSoftware Shinobi Deflect',
+    displayName: 'Sekiro 2019 - FromSoftware Shinobi Deflect',
+    styleAnchors: ['Sekiro 2019 - FromSoftware Shinobi Deflect', 'Sekiro Temple Duel'],
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a one-armed shinobi with a prosthetic arm, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Sekiro: Shadows Die Twice gameplay: third-person shinobi duel capture with Japanese temple rooftops, posture combat, grappling routes, and precise sword-spacing. It never recreates an exact official level, character, logo or marketing art.',
+        'FromSoftware Sekiro: Shadows Die Twice (2019) look: third-person shinobi action in Sengoku Japan, temple rooftops, falling snow and autumn leaves, deflection sparks and grappling lines.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Sekiro: Shadows Die Twice-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Sekiro: Shadows Die Twice-informed palette: weathered wood, autumn red, faded gold, ink black, mist grey, and steel-blue blade highlights. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
-      lighting_and_shadow:
-        'Light the image through soft mountain daylight, lantern amber, sword sparks, deathblow red, and fogged courtyard shadow. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as grounded realistic Sengoku warriors, monks and shinobi in weathered armor and robes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Autumn red, temple ash grey, snow white and spark orange.',
+      lighting_and_shadow: 'Diffuse overcast mountain light with bright deflection sparks.',
       texture_and_material:
-        'Build surfaces from aged timber, tatami, rope, lacquer armor, dry leaves, roof tiles, and disciplined samurai cloth detail. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Realistic weathered wood, stone, cloth and armor, with the in-engine surface finish of Sekiro 2019.',
       camera_and_composition:
-        "Compose with over-shoulder lock-on combat camera with boss distance, posture pressure, arena edge clarity, and vertical grapple points. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Sekiro: Shadows Die Twice-derived mood: severe, elegant, lethal, disciplined, and historical-fantastic; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Third-person lock-on duel view on rooftops, framed the way Sekiro 2019 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with tense deadly duel.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: posture bars, health nodes, item quick slots, and lock-on markers are allowed when they preserve action readability. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Sekiro: Shadows Die Twice gameplay screenshots; third-person shinobi duel capture with Japanese temple rooftops, posture combat, grappling routes, and precise sword-spacing; weathered wood, autumn red, faded gold, ink black, mist grey, and steel-blue blade highlights; soft mountain daylight, lantern amber, sword sparks, deathblow red, and fogged courtyard shadow; aged timber, tatami, rope, lacquer armor, dry leaves, roof tiles, and disciplined samurai cloth detail; over-shoulder lock-on combat camera with boss distance, posture pressure, arena edge clarity, and vertical grapple points; severe, elegant, lethal, disciplined, and historical-fantastic; HUD guidance: posture bars, health nodes, item quick slots, and lock-on markers are allowed when they preserve action readability',
+        'Authentic modern third-person action screen, matching real Sekiro 2019 screenshots.',
+      key_features: 'Sekiro deflection sparks; temple rooftops; shinobi duel',
       creative_brief:
-        "Sekiro Temple Duel: in-game screenshot language informed by Sekiro: Shadows Die Twice, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "FromSoftware Sekiro: Shadows Die Twice (2019) look: third-person shinobi action in Sengoku Japan, temple rooftops, falling snow and autumn leaves, deflection sparks and grappling lines. Carry it through Sekiro deflection sparks, temple rooftops, shinobi duel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-044',
-    name: 'Velvet Mask Palace Run',
-    displayName: 'Velvet Mask Palace Run',
+    name: 'Persona 5 2016 - Atlus Red-Black Phantom Heist',
+    displayName: 'Persona 5 2016 - Atlus Red-Black Phantom Heist',
     styleAnchors: [
-      'stylized palace infiltration JRPG gameplay screenshots',
+      'Persona 5 2016 - Atlus Red-Black Phantom Heist',
       'masked heist palace route',
       'Velvet Mask Palace Run',
     ],
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Persona clone, board command camera, readable menu text, exact phantom thief costume',
+      'a black-haired thief in a long black coat and white mask, a cat with a yellow scarf, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Persona clone, board command camera, readable menu text, exact phantom thief costume, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Original in-game screenshot look for stylized palace infiltration JRPG captures: third-person stealth route, theatrical palace interiors, masked enemies, graphic UI accents, sharp color blocking, and readable ambush/combat transitions. Borrow the stylish readability of Persona-like palace gameplay, but land as a different fictional mask-heist JRPG with different costumes, symbols, UI icons, menus, and palace motifs.',
+        'Atlus Persona 5 (2016) look: stylized anime cel 3D with a bold red, black and white graphic identity, torn paper shapes, halftone and theatrical palaces for heists.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable stylized palace run screenshot subject: keep clear player/enemy/object function, stealth route, ambush distance, cover, and interaction affordance without copying source costumes or characters.",
-      color_and_tone:
-        'Use a stylized palace palette: velvet red, black lacquer, ivory floor light, gold trim, cyan UI accent, violet shadow, and theatrical spot color. Keep silhouettes crisp and graphic.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as stylish cel-shaded anime characters with masks and dynamic heist poses. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Bold red, black and white only, true to the Persona 5 2016 palette.',
       lighting_and_shadow:
-        'Light the image through stage spotlights, palace glow, high-contrast cel shadows, attack flashes, and stylized menu-like transitions. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
-      texture_and_material:
-        'Build surfaces from slick cel-shaded characters without copying cast likeness, ornate palace props, masks, velvet, cards, and graphic overlays. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Dramatic theatrical light with sharp black shadows, lit the way Persona 5 2016 lights its levels.',
+      texture_and_material: 'Cel shading with halftone, torn paper and graphic shapes.',
       camera_and_composition:
-        'Compose with third-person infiltration or combat camera, palace route depth, enemy spacing, cover/ambush affordance, and abstract UI shapes. Avoid board-command framing and menu-screen composition.',
-      atmosphere_and_mood:
-        'Carry an original velvet-mask palace mood: stylish, theatrical, rebellious, sly, luxurious, and kinetic.',
+        'Dynamic tilted angles through palace interiors, framed the way Persona 5 2016 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with stylish rebellious heist.',
       rendering_and_quality:
-        'Finish as coherent stylized third-person JRPG gameplay screenshot style, not concept art: contextual action icons, turn/ambush cues, and graphic UI shapes can appear but must be non-readable. Maintain heavy-denoise clarity, crisp silhouettes, and no readable menu text.',
-      key_features:
-        'Persona 5 Royal gameplay screenshots; stylish JRPG palace capture with angular UI energy, red-black fashion, stealth ambush framing, and surreal luxury interiors; crimson red, black, cream, gold, saturated blue shadows, and graphic white accents; stage spotlights, palace glow, high-contrast cel shadows, attack flashes, and stylized menu-like transitions; slick cel-shaded characters without copying cast likeness, ornate palace props, masks, velvet, cards, and graphic overlays; third-person palace exploration or turn-based combat framing with ambush angles, enemy weaknesses, and dramatic UI rhythm; rebellious, decadent, theatrical, sharp, and stylish; HUD guidance: bold JRPG battle/exploration UI is part of the style: angular panels, turn icons, and command shapes can appear without readable logo text',
+        'Authentic stylized anime JRPG screen, matching real Persona 5 2016 screenshots.',
+      key_features: 'Persona 5 red and black; masked thieves; graphic flair',
       creative_brief:
-        "Velvet Mask Palace Run: in-game screenshot language informed by stylized palace JRPG references, covering third-person stealth/combat camera, theatrical color blocking, masked enemies, palace route affordances, and abstract UI grammar. Avoid direct Persona cloning, exact costumes, board-command camera, and readable menu text. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Atlus Persona 5 (2016) look: stylized anime cel 3D with a bold red, black and white graphic identity, torn paper shapes, halftone and theatrical palaces for heists. Carry it through Persona 5 red and black, masked thieves, graphic flair. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-053',
-    name: 'Bog Coven Contract',
-    displayName: 'Bog Coven Contract',
+    name: 'The Witcher 3 2015 - CD Projekt Bog Hunt',
+    displayName: 'The Witcher 3 2015 - CD Projekt Bog Hunt',
     styleAnchors: [
-      'grim folklore RPG gameplay screenshots',
+      'The Witcher 3 2015 - CD Projekt Bog Hunt',
       'third-person swamp monster contract',
       'Bog Coven Contract',
     ],
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Witcher clone, racing sport camera, exact monster contract UI',
+      'a white-haired hunter with two swords and cat eyes, three crones of a bog, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Witcher clone, racing sport camera, exact monster contract UI, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Original in-game screenshot look for grim folklore RPG captures: third-person swamp contract gameplay with wet village edges, occult props, monster telegraphs, grounded quest-combat readability, and adult muddy fantasy restraint. Borrow the folkloric material discipline of Witcher-like games, but land as a different fictional monster-contract RPG with different characters, creatures, villages, UI icons, and quest props.',
+        'CD Projekt Red The Witcher 3: Wild Hunt (2015) look: realistic dark Slavic fantasy, misty bogs and wet villages, monster contracts, muddy browns and eerie folklore.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable bog-coven RPG screenshot subject: keep clear role silhouette, monster/player/object function, dodge or sign distance, route affordance, and scale relationship without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a grim folklore RPG palette: mud brown, swamp green, corpse grey, candle yellow, dried blood red, peat black, and stormy blue. Keep value grouping legible at gameplay distance and avoid racing-sport brightness, glossy fantasy polish, or clean heroic color scripts.',
-      lighting_and_shadow:
-        'Light the image through overcast swamp light, torch pools, spell signs, moon haze, and monster-eye glints. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as grounded Slavic peasants, hunters and folklore creatures in worn clothing and armor. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Bog green, muddy brown, grey fog and pale folklore light.',
+      lighting_and_shadow: 'Diffuse misty light with lantern glow and eerie hues.',
       texture_and_material:
-        'Build surfaces from wet reeds, rotting wood, leather armor, bone charms, mud, witch huts, and realistic creature skin. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Realistic mud, wet wood, leather and moss, with the in-engine surface finish of The Witcher 3 2015.',
       camera_and_composition:
-        'Compose with third-person action-RPG framing: weapon/sign distance, dodge space, monster telegraph, bog route, and quest-location depth. The frame should read as a plausible gameplay capture, not a racing shot, poster, or cinematic monster portrait.',
-      atmosphere_and_mood:
-        'Carry an original bog-coven contract mood: folkloric, grimy, adult, dangerous, humid, and morally murky.',
+        'Third-person over-the-shoulder view in wet landscapes, framed the way The Witcher 3 2015 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with eerie folkloric dread.',
       rendering_and_quality:
-        'Finish as coherent in-engine third-person RPG screenshot style, not concept art: contextual RPG HUD can include health/stamina, small minimap shape, potion icons, and non-readable quest marker. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, no fake logos, no racing camera, no exact monster contract UI, and no stock-photo polish.',
-      key_features:
-        'original grim folklore RPG gameplay screenshots; third-person swamp contract capture; wet village edges, occult props, monster telegraphs, grounded quest-combat readability; mud brown, swamp green, corpse grey, candle yellow, dried blood red, peat black, stormy blue; overcast swamp light, torch pools, small spell signs, moon haze, monster-eye glints; wet reeds, rotting wood, leather, bone charms, mud, witch huts, creature skin; third-person action-RPG framing with dodge space and quest-location depth; adult, muddy, dangerous, morally murky; HUD guidance: contextual RPG HUD only, no readable quest text',
+        'Authentic mid-2010s open-world RPG screen, matching real The Witcher 3 2015 screenshots.',
+      key_features: 'Witcher 3 Slavic bog; monster contracts; misty folklore',
       creative_brief:
-        "Bog Coven Contract: in-game screenshot language informed by grim folklore RPG references, covering third-person camera, muddy material language, monster-contract readability, swamp route affordances, and restrained in-engine finish. Avoid menus, logos, exact characters, exact levels, direct Witcher cloning, racing-sport framing, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "CD Projekt Red The Witcher 3: Wild Hunt (2015) look: realistic dark Slavic fantasy, misty bogs and wet villages, monster contracts, muddy browns and eerie folklore. Carry it through Witcher 3 Slavic bog, monster contracts, misty folklore. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-055',
-    name: 'Witness Orchid Puzzle Garden',
-    displayName: 'Witness Orchid Puzzle Garden',
-    styleAnchors: ['The Witness gameplay screenshots', 'Witness Orchid Puzzle Garden'],
+    name: 'The Witness 2016 - Thekla Saturated Puzzle Island',
+    displayName: 'The Witness 2016 - Thekla Saturated Puzzle Island',
+    styleAnchors: [
+      'The Witness 2016 - Thekla Saturated Puzzle Island',
+      'Witness Orchid Puzzle Garden',
+    ],
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt:
       'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'In-game screenshot look informed by The Witness gameplay: first-person island-puzzle capture with saturated gardens, clean geometry, panel puzzles, environmental line sight, and serene route logic. It never recreates an exact official level, character, logo or marketing art.',
+        'Thekla The Witness (2016) look: first-person puzzle island in saturated painterly color, simplified shapes, glowing line puzzle panels and silent monumental nature.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable The Witness-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a The Witness-informed palette: orchid pink, grass green, clean white panels, ocean blue, yellow sunlight, and soft grey shadow. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render every subject in clean simplified painterly shapes, seen from first person on a silent island. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Saturated orchid pink, grass green, sky blue and warm stone.',
       lighting_and_shadow:
-        'Light the image through clear island daylight, garden bloom, panel glow, reflected water, and simple readable shadows. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Bright clean sunlight with soft painterly shading, lit the way The Witness 2016 lights its levels.',
       texture_and_material:
-        'Build surfaces from smooth puzzle panels, manicured hedges, stone paths, colored glass, flowers, and minimal architectural surfaces. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Simplified smooth shapes without grime, with the in-engine surface finish of The Witness 2016.',
       camera_and_composition:
-        "Compose with first-person puzzle framing with panel in foreground, environmental clue alignment, open path, and landmark composition. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'The Witness-derived mood: serene, cerebral, bright, quiet, and spatially precise; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'First-person view facing puzzle panels, framed the way The Witness 2016 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with quiet contemplative insight.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: almost no HUD; puzzle panels and environmental affordances should carry the interface. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'The Witness gameplay screenshots; first-person island-puzzle capture with saturated gardens, clean geometry, panel puzzles, environmental line sight, and serene route logic; orchid pink, grass green, clean white panels, ocean blue, yellow sunlight, and soft grey shadow; clear island daylight, garden bloom, panel glow, reflected water, and simple readable shadows; smooth puzzle panels, manicured hedges, stone paths, colored glass, flowers, and minimal architectural surfaces; first-person puzzle framing with panel in foreground, environmental clue alignment, open path, and landmark composition; serene, cerebral, bright, quiet, and spatially precise; HUD guidance: almost no HUD; puzzle panels and environmental affordances should carry the interface',
+        'Authentic painterly first-person puzzle screen, matching real The Witness 2016 screenshots.',
+      key_features: 'The Witness saturated island; line puzzles; simplified shapes',
       creative_brief:
-        "Witness Orchid Puzzle Garden: in-game screenshot language informed by The Witness, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Thekla The Witness (2016) look: first-person puzzle island in saturated painterly color, simplified shapes, glowing line puzzle panels and silent monumental nature. Carry it through The Witness saturated island, line puzzles, simplified shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-061',
-    name: 'Okami Jade Volcano Shrine',
-    displayName: 'Okami Jade Volcano Shrine',
-    styleAnchors: ['Okami HD gameplay screenshots', 'Okami Jade Volcano Shrine'],
+    name: 'Okami 2006 - Clover Sumi-e Celestial Brush',
+    displayName: 'Okami 2006 - Clover Sumi-e Celestial Brush',
+    styleAnchors: ['Okami 2006 - Clover Sumi-e Celestial Brush', 'Okami Jade Volcano Shrine'],
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
+      'a white wolf with red markings and a disc on its back, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts',
     style: {
       aesthetic:
-        'In-game screenshot look informed by Okami HD gameplay: ink-wash adventure capture with sumi-e outlines, painted nature, shrine traversal, brush-magic effects, and mythic animal motion without copying mascots. It never recreates an exact official level, character, logo or marketing art.',
+        'Clover Studio Okami (2006) look: cel-shaded sumi-e ink painting in motion, rice paper filter, bold brush outlines, Japanese folklore and celestial brush strokes across the sky.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable Okami HD-adjacent game screenshot subject: keep clear role silhouette, player/enemy/object function, scale relationship, hitbox-like readability, and interaction affordances without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use a Okami HD-informed palette: rice-paper cream, ink black, vermilion red, jade green, sky blue, and golden sun accents. Keep value grouping legible at gameplay distance, with color accents behaving like route, danger, pickup, team, magic, or objective cues rather than decorative wash.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people and creatures as sumi-e ink figures with bold brush outlines and flowing painted forms. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Rice paper cream, jade green, cherry pink and ink black.',
       lighting_and_shadow:
-        'Light the image through painted sunlight, blossom glow, brushstroke flashes, lava warmth, and flat illustrative shadows. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Soft painted daylight with glowing celestial strokes, lit the way Okami 2006 lights its levels.',
       texture_and_material:
-        'Build surfaces from ink contours, watercolor fills, paper grain, shrine wood, stone lanterns, cloud curls, and calligraphic effects without readable text. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Sumi-e brush outlines on rice paper texture, with the in-engine surface finish of Okami 2006.',
       camera_and_composition:
-        "Compose with third-person adventure framing with path curves, shrine gates, enemy arena space, and brush-action readability. The frame should read as a plausible gameplay capture; include UI/HUD only when it matches the source game's visual logic and improves clarity.",
-      atmosphere_and_mood:
-        'Okami HD-derived mood: mythic, graceful, playful, painterly, and restorative; it follows the tone of the requested scene without forcing a fixed mission or story.',
+        'Third-person view across painted landscapes, framed the way Okami 2006 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with divine folkloric wonder.',
       rendering_and_quality:
-        'Finish as a coherent in-engine screenshot style, not concept art: small brush/health icons can appear, but keep the screen feeling like painted gameplay rather than UI collage. Maintain heavy-denoise clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish, or random interface clutter.',
-      key_features:
-        'Okami HD gameplay screenshots; ink-wash adventure capture with sumi-e outlines, painted nature, shrine traversal, brush-magic effects, and mythic animal motion without copying mascots; rice-paper cream, ink black, vermilion red, jade green, sky blue, and golden sun accents; painted sunlight, blossom glow, brushstroke flashes, lava warmth, and flat illustrative shadows; ink contours, watercolor fills, paper grain, shrine wood, stone lanterns, cloud curls, and calligraphic effects without readable text; third-person adventure framing with path curves, shrine gates, enemy arena space, and brush-action readability; mythic, graceful, playful, painterly, and restorative; HUD guidance: small brush/health icons can appear, but keep the screen feeling like painted gameplay rather than UI collage',
+        'Authentic PS2 ink-painted action screen, matching real Okami 2006 screenshots.',
+      key_features: 'Okami sumi-e; rice paper; celestial brush strokes',
       creative_brief:
-        "Okami Jade Volcano Shrine: in-game screenshot language informed by Okami HD, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Clover Studio Okami (2006) look: cel-shaded sumi-e ink painting in motion, rice paper filter, bold brush outlines, Japanese folklore and celestial brush strokes across the sky. Carry it through Okami sumi-e, rice paper, celestial brush strokes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-070',
-    name: 'Wild Shrine Bow Trial',
-    displayName: 'Wild Shrine Bow Trial',
+    name: 'Breath of the Wild 2017 - Nintendo Painterly Open Air',
+    displayName: 'Breath of the Wild 2017 - Nintendo Painterly Open Air',
     styleAnchors: [
-      'open-air adventure shrine gameplay screenshots',
+      'Breath of the Wild 2017 - Nintendo Painterly Open Air',
       'third-person bow puzzle trial',
       'Wild Shrine Bow Trial',
     ],
     category: '2. Arcane Temples & Mythic Realms',
     negativePrompt:
-      'watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Zelda clone, strategy tactics camera, exact shrine UI, recognizable franchise props',
+      'a green-tunic elf hero, one-eyed spider guardian machines, blue Sheikah glyphs, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Zelda clone, strategy tactics camera, exact shrine UI, recognizable franchise props, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Original in-game screenshot look for open-air adventure shrine captures: third-person exploration-combat, bow or tool trial readability, clean cel-natural materials, puzzle routes, stamina/traversal spacing, and sacred outdoor architecture. Borrow the open-air readability of Breath of the Wild-like games, but land as a different fictional shrine-adventure with different props, symbols, UI icons, enemies, and architecture.',
+        'Nintendo The Legend of Zelda: Breath of the Wild (2017) look: soft painterly cel-shaded open air, watercolor-like grass, wind-blown plains, ancient shrines and gliding over vast landscapes.',
       subject_treatment:
-        "Preserve the user's subject and transform it into a playable shrine-adventure screenshot subject: keep clear player/object/threat role, traversal affordance, bow/tool aim relationship, puzzle route, and scale readability without copying source characters or named IP elements.",
-      color_and_tone:
-        'Use an open-air shrine palette: grass green, sky blue, warm stone, pale gold, slate shadow, turquoise energy, and weathered wood. Keep value grouping legible and avoid tactical-strategy desaturation.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as soft cel-shaded adventurers with simple shapes and painterly shading. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Soft grass green, sky blue, sunset gold and stone grey.',
       lighting_and_shadow:
-        'Light the image through soft open-world daylight, moonlight, shrine glow, arrow trails, and gentle atmospheric haze. Lighting must clarify the playable route, threat, focal subject, or objective and avoid generic cinematic bloom that destroys screenshot readability.',
+        'Soft open-air light with painterly haze, lit the way Breath of the Wild 2017 lights its levels.',
       texture_and_material:
-        'Build surfaces from painted grass, ancient stone, glowing circuitry, cloth, wood bows, simple physics props, and stylized terrain. Materials should feel like in-engine game assets captured during play, with enough texture identity to separate props, terrain, characters, hazards, and interactables.',
+        'Painterly cel shading with watercolor-like grass, with the in-engine surface finish of Breath of the Wild 2017.',
       camera_and_composition:
-        'Compose with third-person adventure camera, player/tool line, shrine mechanism, traversal route, enemy or target spacing, and one clear puzzle/combat decision. Avoid strategy overview and box-art hero pose.',
-      atmosphere_and_mood:
-        'Carry an original wild-shrine adventure mood: quiet, airy, curious, lightly magical, open, and exploratory.',
+        'Third-person view across a vast open landscape, framed the way Breath of the Wild 2017 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with free open-air adventure.',
       rendering_and_quality:
-        'Finish as coherent third-person adventure gameplay screenshot style, not concept art: sparse contextual HUD, stamina/aim cues, item icons, and objective pips can appear abstract and non-readable. Maintain heavy-denoise clarity and readable gameplay scale.',
-      key_features:
-        'The Legend of Zelda: Breath of the Wild gameplay screenshots; third-person open-air adventure capture with cel-shaded terrain, shrine technology, bow aiming, and clean traversal affordances; grass green, shrine blue, warm stone, sky cyan, moon silver, and orange camp glow; soft open-world daylight, moonlight, shrine glow, arrow trails, and gentle atmospheric haze; painted grass, ancient stone, glowing circuitry, cloth, wood bows, simple physics props, and stylized terrain; third-person exploration/combat framing with bow reticle, climbable shapes, shrine axes, and distant landmark readability; quiet, adventurous, airy, curious, and lightly magical; HUD guidance: hearts, stamina wheel, minimap, temperature icons, and bow reticle can appear if kept clean and authentic to open-world adventure',
+        'Authentic Switch painterly open-world screen, matching real Breath of the Wild 2017 screenshots.',
+      key_features: 'BotW painterly cel; open plains; ancient shrines',
       creative_brief:
-        "Wild Shrine Bow Trial: in-game screenshot language informed by open-air adventure references, covering third-person camera, clean cel-natural materials, shrine mechanisms, bow/tool aiming, traversal routes, and readable puzzle-combat state. Avoid direct Zelda cloning, strategy-tactics framing, exact shrine UI, recognizable franchise props, and promotional composition. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
+        "Nintendo The Legend of Zelda: Breath of the Wild (2017) look: soft painterly cel-shaded open air, watercolor-like grass, wind-blown plains, ancient shrines and gliding over vast landscapes. Carry it through BotW painterly cel, open plains, ancient shrines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
     id: 'SP12-109',
-    name: 'Floating-Island Sky Temple Capture',
-    displayName: 'Floating-Island Sky Temple Capture',
+    name: 'Genshin Impact 2020 - miHoYo Anime Sky Isles',
+    displayName: 'Genshin Impact 2020 - miHoYo Anime Sky Isles',
     styleAnchors: [
-      'Floating-Island Sky Temple Capture',
+      'Genshin Impact 2020 - miHoYo Anime Sky Isles',
       'sky island adventure screenshot',
       'floating islands',
     ],
     category: '2. Arcane Temples & Mythic Realms',
     domain: 'sky island adventure screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing Genshin characters, a floating fairy companion in white, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Floating-island sky temple capture: an original third-person adventure screenshot of temples on floating islands, waterfalls pouring into clouds and gliding heroes.',
+        'miHoYo Genshin Impact (2020) look: bright anime cel-shaded open world, floating islands with waterfalls, gliding with wings, elemental particle effects and clean saturated skies.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject exploring or gliding between floating temple islands.',
-      color_and_tone: 'Sky blue, cloud white, mossy green and warm stone.',
-      lighting_and_shadow:
-        'Bright sun with soft cloud shadows, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as bright anime cel-shaded adventurers with detailed outfits and glowing elemental effects. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Saturated sky blue, grass green, gold and elemental colors.',
+      lighting_and_shadow: 'Bright clean anime daylight with soft rim light.',
       texture_and_material:
-        'Ancient stone, moss, waterfalls and cloth gliders, kept consistent across the whole image.',
+        'Clean anime cel shading on stylized 3D, with the in-engine surface finish of Genshin Impact 2020.',
       camera_and_composition:
-        'Wide third-person camera with vertical depth, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with airy wonder, kept consistent across the whole image.',
+        'Third-person gliding view over islands, framed the way Genshin Impact 2020 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with bright heroic wonder.',
       rendering_and_quality:
-        'Clean real-time capture with no HUD text, kept consistent across the whole image.',
+        'Authentic modern anime open-world screen, matching real Genshin Impact 2020 screenshots.',
       creative_brief:
-        "Floating-island sky temple capture: an original third-person adventure screenshot of temples on floating islands, waterfalls pouring into clouds and gliding heroes. Carry it through floating islands, sky temples, waterfalls into clouds, gliding. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'floating islands; sky temples; waterfalls into clouds; gliding',
+        "miHoYo Genshin Impact (2020) look: bright anime cel-shaded open world, floating islands with waterfalls, gliding with wings, elemental particle effects and clean saturated skies. Carry it through Genshin anime cel, floating isles, gliding, elements. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Genshin anime cel; floating isles; gliding; elements',
     },
     ui: {
       previewStatus: 'pending',
@@ -367,34 +336,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-110',
-    name: 'Prism Chapel Puzzle Capture',
-    displayName: 'Prism Chapel Puzzle Capture',
+    name: 'The Talos Principle 2014 - Croteam Ruin Puzzle',
+    displayName: 'The Talos Principle 2014 - Croteam Ruin Puzzle',
     styleAnchors: [
-      'Prism Chapel Puzzle Capture',
+      'The Talos Principle 2014 - Croteam Ruin Puzzle',
       'light-refraction puzzle screenshot',
       'colored beams',
     ],
     category: '2. Arcane Temples & Mythic Realms',
     domain: 'light-refraction puzzle screenshot',
     negativePrompt:
-      'readable runes, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable runes, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Prism chapel puzzle capture: an original first-person puzzle screenshot in a chapel where beams of colored light are bent through prisms onto ancient symbols.',
+        'Croteam The Talos Principle (2014) look: first-person philosophical puzzle ruins, photoreal ancient stone, beams of light and laser connectors, sealed doors and quiet sunlit decay.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; place the subject among beams of colored light redirected through prisms.',
-      color_and_tone: 'Dim stone with pure red, green and blue light beams.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render every subject as part of a first-person puzzle space of beams, pedestals and sealed stone doors. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Warm sunlit stone, cool shadow and colored beam light.',
       lighting_and_shadow:
-        'Sharp colored beams and glowing targets, kept consistent across the whole image.',
-      texture_and_material: 'Crystal prisms, polished stone and dust in the air.',
+        'Sunlit ruins with clean colored light beams, lit the way The Talos Principle 2014 lights its levels.',
+      texture_and_material:
+        'Photoreal weathered stone and brushed metal devices, with the in-engine surface finish of The Talos Principle 2014.',
       camera_and_composition:
-        'First-person view along the beam paths, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with quiet clever discovery.',
+        'First-person view facing puzzle devices, framed the way The Talos Principle 2014 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with serene philosophical puzzling.',
       rendering_and_quality:
-        'Clean puzzle capture with no readable text, kept consistent across the whole image.',
+        'Authentic first-person puzzle screen, matching real The Talos Principle 2014 screenshots.',
       creative_brief:
-        "Prism chapel puzzle capture: an original first-person puzzle screenshot in a chapel where beams of colored light are bent through prisms onto ancient symbols. Carry it through colored beams, prisms, symbol targets, chapel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'colored beams; prisms; symbol targets; chapel',
+        "Croteam The Talos Principle (2014) look: first-person philosophical puzzle ruins, photoreal ancient stone, beams of light and laser connectors, sealed doors and quiet sunlit decay. Carry it through Talos Principle ruins, light beams, sealed doors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Talos Principle ruins; light beams; sealed doors',
     },
     ui: {
       previewStatus: 'pending',
@@ -402,36 +372,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-111',
-    name: 'Summoning Circle Cutscene Capture',
-    displayName: 'Summoning Circle Cutscene Capture',
+    name: 'Final Fantasy X 2001 - Square Aeon Summon',
+    displayName: 'Final Fantasy X 2001 - Square Aeon Summon',
     styleAnchors: [
-      'Summoning Circle Cutscene Capture',
+      'Final Fantasy X 2001 - Square Aeon Summon',
       'in-engine summoning cutscene',
       'glowing summoning circle',
     ],
     category: '2. Arcane Temples & Mythic Realms',
     domain: 'in-engine summoning cutscene',
     negativePrompt:
-      'subtitles or readable glyphs, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing Final Fantasy summons, subtitles or readable glyphs, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Summoning circle cutscene capture: an original in-engine cutscene frame of a magical summoning, glowing circles, swirling particles and a huge creature emerging.',
+        'Square Final Fantasy X (2001) look: PS2 JRPG summoning cutscenes, glowing glyph circles, huge aeon beasts rising in bursts of light, detailed anime-realist characters and pyreflies.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; frame the subject as a summoner or summoned creature in a dramatic cutscene.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as detailed anime-realist PS2 JRPG characters in ornate summoner robes. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Dark surroundings with bright magical circle glow, kept consistent across the whole image.',
-      lighting_and_shadow: 'Glow from the circle lighting faces from below.',
+        'Mystic blue, summon gold and pyrefly green, true to the Final Fantasy X 2001 palette.',
+      lighting_and_shadow:
+        'Bursting summon light and glowing glyphs, lit the way Final Fantasy X 2001 lights its levels.',
       texture_and_material:
-        'Particle swirls, stone floors and flowing robes, kept consistent across the whole image.',
+        'PS2 CG-cutscene polish with glowing particles, with the in-engine surface finish of Final Fantasy X 2001.',
       camera_and_composition:
-        'Cinematic low angle toward the emerging creature, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with awe-struck spectacle, kept consistent across the whole image.',
+        'Low cinematic cutscene view of rising beasts, framed the way Final Fantasy X 2001 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with sacred grand spectacle.',
       rendering_and_quality:
-        'Polished cutscene look with no subtitles, kept consistent across the whole image.',
+        'Authentic PS2 JRPG cutscene screen, matching real Final Fantasy X 2001 screenshots.',
       creative_brief:
-        "Summoning circle cutscene capture: an original in-engine cutscene frame of a magical summoning, glowing circles, swirling particles and a huge creature emerging. Carry it through glowing summoning circle, emerging creature, particles, cutscene. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'glowing summoning circle; emerging creature; particles; cutscene',
+        "Square Final Fantasy X (2001) look: PS2 JRPG summoning cutscenes, glowing glyph circles, huge aeon beasts rising in bursts of light, detailed anime-realist characters and pyreflies. Carry it through FFX summon cutscene, glyph circle, rising aeon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'FFX summon cutscene; glyph circle; rising aeon',
     },
     ui: {
       previewStatus: 'pending',
@@ -439,35 +409,34 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-112',
-    name: 'Jungle Ziggurat Platformer Capture',
-    displayName: 'Jungle Ziggurat Platformer Capture',
+    name: 'Spelunky 2012 - Mossmouth Pixel Temple',
+    displayName: 'Spelunky 2012 - Mossmouth Pixel Temple',
     styleAnchors: [
-      'Jungle Ziggurat Platformer Capture',
+      'Spelunky 2012 - Mossmouth Pixel Temple',
       'jungle temple platform game screenshot',
       'stepped temple',
     ],
     category: '2. Arcane Temples & Mythic Realms',
     domain: 'jungle temple platform game screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Jungle ziggurat platformer capture: an original side-scrolling platformer screenshot of stepped jungle temples, vines, spike traps and rolling boulders.',
+        'Mossmouth Spelunky (2012) look: cartoon side-view cave-diving roguelike, chunky hand-drawn sprites, golden idols, boulder traps, spikes and dark jungle temples.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject leaping through a side-scrolling jungle temple.',
-      color_and_tone: 'Lush greens, warm stone ochre and golden treasure.',
-      lighting_and_shadow:
-        'Dappled jungle light and dark temple interiors, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as chunky cartoon explorers with round noses and pith helmets. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Temple ochre, jungle green, gold and dark earth.',
+      lighting_and_shadow: 'Dark caves lit by torches and glowing gold.',
       texture_and_material:
-        'Carved stone, vines, water and wooden traps, kept consistent across the whole image.',
+        'Chunky hand-drawn cartoon tiles, with the in-engine surface finish of Spelunky 2012.',
       camera_and_composition:
-        'Side-on platform layout with multiple levels, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with adventurous peril, kept consistent across the whole image.',
-      rendering_and_quality: 'Clean colorful game capture, kept consistent across the whole image.',
+        'Side-view roguelike cave view, framed the way Spelunky 2012 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with greedy perilous fun.',
+      rendering_and_quality:
+        'Authentic cartoon roguelike screen, matching real Spelunky 2012 screenshots.',
       creative_brief:
-        "Jungle ziggurat platformer capture: an original side-scrolling platformer screenshot of stepped jungle temples, vines, spike traps and rolling boulders. Carry it through stepped temple, vines, spike traps, side-scrolling. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'stepped temple; vines; spike traps; side-scrolling',
+        "Mossmouth Spelunky (2012) look: cartoon side-view cave-diving roguelike, chunky hand-drawn sprites, golden idols, boulder traps, spikes and dark jungle temples. Carry it through Spelunky idol, boulder traps, cartoon caves. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Spelunky idol; boulder traps; cartoon caves',
     },
     ui: {
       previewStatus: 'pending',
@@ -475,36 +444,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-113',
-    name: 'Spirit-World Shift Capture',
-    displayName: 'Spirit-World Shift Capture',
+    name: 'Soul Reaver 1999 - Crystal Dynamics Realm Shift',
+    displayName: 'Soul Reaver 1999 - Crystal Dynamics Realm Shift',
     styleAnchors: [
-      'Spirit-World Shift Capture',
+      'Soul Reaver 1999 - Crystal Dynamics Realm Shift',
       'dual-realm world shift screenshot',
       'split realms',
     ],
     category: '2. Arcane Temples & Mythic Realms',
     domain: 'dual-realm world shift screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a blue-skinned wraith with a tattered cape and claws, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Spirit-world shift capture: an original screenshot where the image is split between the living world and a glowing spirit realm, the same place shown in both states.',
+        'Crystal Dynamics Legacy of Kain: Soul Reaver (1999) look: gothic PS1-era 3D where the material realm twists into a warped blue-green spectral realm, bending architecture and ghostly creatures.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; split the subject between a living realm and a glowing spirit realm.',
-      color_and_tone: 'Warm natural half and cold glowing violet-teal half.',
-      lighting_and_shadow:
-        'Normal daylight versus ethereal glow, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as gaunt gothic figures shifting between a solid world and a warped spectral version. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        'Material earth tones against spectral blue-green, true to the Soul Reaver 1999 palette.',
+      lighting_and_shadow: 'Dim gothic light shifting into sickly spectral glow.',
       texture_and_material:
-        'Solid materials versus translucent ghostly versions, kept consistent across the whole image.',
+        'Low-poly gothic stone with warped spectral geometry, with the in-engine surface finish of Soul Reaver 1999.',
       camera_and_composition:
-        'Split or ripple transition across the frame, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with uncanny duality, kept consistent across the whole image.',
+        'Third-person view mid realm shift, framed the way Soul Reaver 1999 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with gothic spectral unease.',
       rendering_and_quality:
-        'Clean effect with clear dual reading, kept consistent across the whole image.',
+        'Authentic late-nineties gothic 3D screen, matching real Soul Reaver 1999 screenshots.',
       creative_brief:
-        "Spirit-world shift capture: an original screenshot where the image is split between the living world and a glowing spirit realm, the same place shown in both states. Carry it through split realms, ghostly glow, same place twice, ripple transition. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'split realms; ghostly glow; same place twice; ripple transition',
+        "Crystal Dynamics Legacy of Kain: Soul Reaver (1999) look: gothic PS1-era 3D where the material realm twists into a warped blue-green spectral realm, bending architecture and ghostly creatures. Carry it through Soul Reaver realm shift, warped geometry, spectral blue. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Soul Reaver realm shift; warped geometry; spectral blue',
     },
     ui: {
       previewStatus: 'pending',
@@ -512,36 +480,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-114',
-    name: 'Underwater Temple Dive Capture',
-    displayName: 'Underwater Temple Dive Capture',
+    name: 'Abzu 2016 - Giant Squid Luminous Dive',
+    displayName: 'Abzu 2016 - Giant Squid Luminous Dive',
     styleAnchors: [
-      'Underwater Temple Dive Capture',
+      'Abzu 2016 - Giant Squid Luminous Dive',
       'sunken temple exploration screenshot',
       'sunken temple',
     ],
     category: '2. Arcane Temples & Mythic Realms',
     domain: 'sunken temple exploration screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Underwater temple dive capture: an original third-person diving screenshot through a sunken temple, god rays, schools of fish, coral-covered statues and air bubbles.',
+        'Giant Squid Abzu (2016) look: vivid underwater exploration with luminous schools of fish, clean stylized shapes, sunlit god rays, coral and ancient sunken temples.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject diving through a sunken temple with bubbles and light rays.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as small stylized divers moving among vast shoals of fish. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Deep teal, turquoise light and coral pinks, kept consistent across the whole image.',
+        'Luminous turquoise, coral orange and deep blue, true to the Abzu 2016 palette.',
       lighting_and_shadow:
-        'Caustic god rays from the surface, kept consistent across the whole image.',
+        'Sunlit god rays through clear water, lit the way Abzu 2016 lights its levels.',
       texture_and_material:
-        'Coral, weathered stone, bubbles and kelp, kept consistent across the whole image.',
+        'Smooth stylized shapes without grime, with the in-engine surface finish of Abzu 2016.',
       camera_and_composition:
-        'Third-person behind the diver into depth, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with serene deep mystery.',
+        'Third-person swimming view, framed the way Abzu 2016 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with meditative oceanic awe.',
       rendering_and_quality:
-        'Clean underwater capture with no HUD text, kept consistent across the whole image.',
+        'Authentic stylized underwater screen, matching real Abzu 2016 screenshots.',
       creative_brief:
-        "Underwater temple dive capture: an original third-person diving screenshot through a sunken temple, god rays, schools of fish, coral-covered statues and air bubbles. Carry it through sunken temple, god rays, fish schools, bubbles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'sunken temple; god rays; fish schools; bubbles',
+        "Giant Squid Abzu (2016) look: vivid underwater exploration with luminous schools of fish, clean stylized shapes, sunlit god rays, coral and ancient sunken temples. Carry it through Abzu luminous shoals, god rays, sunken temples. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Abzu luminous shoals; god rays; sunken temples',
     },
     ui: {
       previewStatus: 'pending',
@@ -549,36 +517,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-115',
-    name: 'Cloud Monastery Glide Capture',
-    displayName: 'Cloud Monastery Glide Capture',
+    name: 'Sky Children of the Light 2019 - thatgamecompany Cape Glide',
+    displayName: 'Sky Children of the Light 2019 - thatgamecompany Cape Glide',
     styleAnchors: [
-      'Cloud Monastery Glide Capture',
+      'Sky Children of the Light 2019 - thatgamecompany Cape Glide',
       'mountain monastery gliding screenshot',
       'gliding',
     ],
     category: '2. Arcane Temples & Mythic Realms',
     domain: 'mountain monastery gliding screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Cloud monastery glide capture: an original third-person gliding screenshot over mountain monasteries in a sea of clouds, prayer flags, bells and wind currents.',
+        'thatgamecompany Sky: Children of the Light (2019) look: soft glowing cloud kingdoms, children in capes gliding on wind, candle light, luminous spirits and floating temples.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject gliding on the wind above cloud-wrapped monasteries.',
-      color_and_tone: 'Soft whites, sky blue and saffron prayer flags.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as small soft figures in glowing capes gliding on the wind. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Soft peach, cloud white, dusk lilac and candle gold.',
       lighting_and_shadow:
-        'Golden morning light over the cloud sea, kept consistent across the whole image.',
+        'Soft glowing haze with warm candle light, lit the way Sky Children of the Light 2019 lights its levels.',
       texture_and_material:
-        'Cloth wings, stone temples and swirling mist, kept consistent across the whole image.',
+        'Soft stylized shapes with glow and haze, with the in-engine surface finish of Sky Children of the Light 2019.',
       camera_and_composition:
-        'Wide chase view over the cloud sea, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with serene freedom, kept consistent across the whole image.',
+        'Wide third-person view over clouds, framed the way Sky Children of the Light 2019 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with gentle luminous wonder.',
       rendering_and_quality:
-        'Clean airy real-time capture, kept consistent across the whole image.',
+        'Authentic soft stylized mobile screen, matching real Sky Children of the Light 2019 screenshots.',
       creative_brief:
-        "Cloud monastery glide capture: an original third-person gliding screenshot over mountain monasteries in a sea of clouds, prayer flags, bells and wind currents. Carry it through gliding, sea of clouds, mountain monasteries, prayer flags. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'gliding; sea of clouds; mountain monasteries; prayer flags',
+        "thatgamecompany Sky: Children of the Light (2019) look: soft glowing cloud kingdoms, children in capes gliding on wind, candle light, luminous spirits and floating temples. Carry it through Sky capes, cloud kingdoms, candle glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Sky capes; cloud kingdoms; candle glow',
     },
     ui: {
       previewStatus: 'pending',
@@ -586,35 +553,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-116',
-    name: 'Crystal Cave Side-View Capture',
-    displayName: 'Crystal Cave Side-View Capture',
+    name: 'Ori and the Blind Forest 2015 - Moon Studios Luminous Painted',
+    displayName: 'Ori and the Blind Forest 2015 - Moon Studios Luminous Painted',
     styleAnchors: [
-      'Crystal Cave Side-View Capture',
+      'Ori and the Blind Forest 2015 - Moon Studios Luminous Painted',
       'crystal cavern exploration screenshot',
       'glowing crystals',
     ],
     category: '2. Arcane Temples & Mythic Realms',
     domain: 'crystal cavern exploration screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a small white glowing spirit creature with long ears, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Crystal cave side-view capture: an original side-view exploration screenshot through glowing crystal caverns, reflective pools, hidden passages and tiny adventurers.',
+        'Moon Studios Ori and the Blind Forest (2015) look: side-view platformer with lush hand-painted layered backgrounds, luminous glowing creatures, bioluminescent flora and dense parallax depth.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject small in a glowing side-view crystal cavern.',
-      color_and_tone: 'Deep indigo with glowing cyan, pink and violet crystals.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people and creatures as small glowing figures against lush painted scenery. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        'Deep teal, glowing cyan and warm amber, true to the Ori and the Blind Forest 2015 palette.',
       lighting_and_shadow:
-        'Crystal glow reflecting on water, kept consistent across the whole image.',
+        'Luminous glow against deep shadows, lit the way Ori and the Blind Forest 2015 lights its levels.',
       texture_and_material:
-        'Faceted crystal, wet rock and still pools, kept consistent across the whole image.',
+        'Hand-painted layered backgrounds, with the in-engine surface finish of Ori and the Blind Forest 2015.',
       camera_and_composition:
-        'Side-view cross-section of cave chambers, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with lonely glowing wonder.',
+        'Side-view platformer with parallax, framed the way Ori and the Blind Forest 2015 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with luminous tender wonder.',
       rendering_and_quality:
-        'Clean side-view capture with no HUD, kept consistent across the whole image.',
+        'Authentic painted platformer screen, matching real Ori and the Blind Forest 2015 screenshots.',
       creative_brief:
-        "Crystal cave side-view capture: an original side-view exploration screenshot through glowing crystal caverns, reflective pools, hidden passages and tiny adventurers. Carry it through glowing crystals, cave cross-section, reflective pools, tiny explorer. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'glowing crystals; cave cross-section; reflective pools; tiny explorer',
+        "Moon Studios Ori and the Blind Forest (2015) look: side-view platformer with lush hand-painted layered backgrounds, luminous glowing creatures, bioluminescent flora and dense parallax depth. Carry it through Ori painted layers, luminous glow, parallax. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Ori painted layers; luminous glow; parallax',
     },
     ui: {
       previewStatus: 'pending',
@@ -622,35 +590,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-117',
-    name: 'Cosmic Library Portal Capture',
-    displayName: 'Cosmic Library Portal Capture',
+    name: 'Ratchet & Clank Rift Apart 2021 - Insomniac Rift Portals',
+    displayName: 'Ratchet & Clank Rift Apart 2021 - Insomniac Rift Portals',
     styleAnchors: [
-      'Cosmic Library Portal Capture',
+      'Ratchet & Clank Rift Apart 2021 - Insomniac Rift Portals',
       'magical library portal screenshot',
       'infinite shelves',
     ],
     category: '2. Arcane Temples & Mythic Realms',
     domain: 'magical library portal screenshot',
     negativePrompt:
-      'readable book titles, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a furry lombax with a small robot on his back, readable book titles, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Cosmic library portal capture: an original screenshot of an infinite magical library where bookshelves open into starfields, floating books and portal doorways.',
+        'Insomniac Games Ratchet & Clank: Rift Apart (2021) look: animated-film-quality stylized 3D, glowing purple dimensional rifts tearing open, dense detailed environments and cartoon characters.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; place the subject in an infinite library where shelves open into space.',
-      color_and_tone: 'Warm wood and gold against deep starfield blues.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as animated-film cartoon characters with expressive faces. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone:
+        'Rift purple, cyan and warm gold, true to the Ratchet & Clank Rift Apart 2021 palette.',
       lighting_and_shadow:
-        'Candlelight mixed with cosmic glow, kept consistent across the whole image.',
+        'Glowing rift light with cinematic bounce, lit the way Ratchet & Clank Rift Apart 2021 lights its levels.',
       texture_and_material:
-        'Old wood, leather books and swirling nebula, kept consistent across the whole image.',
+        'Animated-film-quality stylized surfaces, with the in-engine surface finish of Ratchet & Clank Rift Apart 2021.',
       camera_and_composition:
-        'Third-person view down endless shelves, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with scholarly cosmic awe.',
+        'Third-person action view near a rift, framed the way Ratchet & Clank Rift Apart 2021 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with zippy dimensional adventure.',
       rendering_and_quality:
-        'Clean capture with no readable book titles, kept consistent across the whole image.',
+        'Authentic PS5 animated-film action screen, matching real Ratchet & Clank Rift Apart 2021 screenshots.',
       creative_brief:
-        "Cosmic library portal capture: an original screenshot of an infinite magical library where bookshelves open into starfields, floating books and portal doorways. Carry it through infinite shelves, floating books, starfield portals, candlelight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'infinite shelves; floating books; starfield portals; candlelight',
+        "Insomniac Games Ratchet & Clank: Rift Apart (2021) look: animated-film-quality stylized 3D, glowing purple dimensional rifts tearing open, dense detailed environments and cartoon characters. Carry it through Rift Apart portals, animated-film 3D, purple rifts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Rift Apart portals; animated-film 3D; purple rifts',
     },
     ui: {
       previewStatus: 'pending',
@@ -658,36 +627,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-118',
-    name: 'Moon Temple Night Trial Capture',
-    displayName: 'Moon Temple Night Trial Capture',
+    name: 'Gris 2018 - Nomada Watercolor Platforms',
+    displayName: 'Gris 2018 - Nomada Watercolor Platforms',
     styleAnchors: [
-      'Moon Temple Night Trial Capture',
+      'Gris 2018 - Nomada Watercolor Platforms',
       'moonlit temple challenge screenshot',
       'moonlit temple',
     ],
     category: '2. Arcane Temples & Mythic Realms',
     domain: 'moonlit temple challenge screenshot',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a blue-haired girl in a flowing dress, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Moon temple night trial capture: an original third-person trial screenshot in a moonlit temple, silver light pools, moving moon mirrors and shadow platforms.',
+        'Nomada Studio Gris (2018) look: side-view watercolor platformer with Conrad Roset art, washes of color, elegant thin figures, geometric ruins and flowing dress shapes.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject in a moonlit temple trial with silver light and shifting shadows.',
-      color_and_tone:
-        'Silver moonlight, deep blue and pale stone, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as elegant thin watercolor figures with flowing shapes. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Watercolor washes of silver, blue and rose, true to the Gris 2018 palette.',
       lighting_and_shadow:
-        'Moonbeams redirected by mirrors, sharp shadows, kept consistent across the whole image.',
+        'Soft washed light with moon glow, lit the way Gris 2018 lights its levels.',
       texture_and_material:
-        'Pale stone, silver mirrors and water, kept consistent across the whole image.',
+        'Watercolor washes and ink lines, with the in-engine surface finish of Gris 2018.',
       camera_and_composition:
-        'Third-person view across the trial chamber, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with hushed lunar ritual.',
+        'Side-view platformer composition, framed the way Gris 2018 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with quiet grieving beauty.',
       rendering_and_quality:
-        'Clean capture with no HUD text, kept consistent across the whole image.',
+        'Authentic watercolor platformer screen, matching real Gris 2018 screenshots.',
       creative_brief:
-        "Moon temple night trial capture: an original third-person trial screenshot in a moonlit temple, silver light pools, moving moon mirrors and shadow platforms. Carry it through moonlit temple, silver mirrors, shadow platforms, trial chamber. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'moonlit temple; silver mirrors; shadow platforms; trial chamber',
+        "Nomada Studio Gris (2018) look: side-view watercolor platformer with Conrad Roset art, washes of color, elegant thin figures, geometric ruins and flowing dress shapes. Carry it through Gris watercolor, Conrad Roset, geometric ruins. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Gris watercolor; Conrad Roset; geometric ruins',
     },
     ui: {
       previewStatus: 'pending',

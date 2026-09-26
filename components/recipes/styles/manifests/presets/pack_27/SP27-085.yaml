@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Square Chrono Trigger (1995) SNES look: vibrant 16-bit sprites with Akira Toriyama designs, lush tile maps, time eras from prehistory to future and fairground warmth.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as vibrant 16-bit sprites in lush tile-based era maps. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Vibrant SNES greens, blues and warm fairground colors.
-  lighting_and_shadow: Bright 16-bit palette with color gradients, lit the way Chrono Trigger 1995 lights its scenes.
-  texture_and_material: Crisp 16-bit sprites and tiles, with the surface finish of Chrono Trigger 1995.
-  camera_and_composition: Top-down three-quarter view of tile maps, framed the way Chrono Trigger 1995 composes its shots and pages.
+  lighting_and_shadow: Bright 16-bit palette with color gradients, lit the way Chrono Trigger 1995 lights its levels.
+  texture_and_material: Crisp 16-bit sprites and tiles, with the in-engine surface finish of Chrono Trigger 1995.
+  camera_and_composition: Top-down three-quarter view of tile maps, framed the way Chrono Trigger 1995 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with joyful time-traveling adventure.
-  rendering_and_quality: Authentic SNES JRPG screen, in the recognizable hand of Chrono Trigger 1995.
+  rendering_and_quality: Authentic SNES JRPG screen, matching real Chrono Trigger 1995 screenshots.
   creative_brief: 'Square Chrono Trigger (1995) SNES look: vibrant 16-bit sprites with Akira Toriyama designs, lush tile maps, time eras from prehistory to future and fairground warmth. Carry it through Chrono Trigger 16-bit, Toriyama sprites, time eras. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Chrono Trigger 16-bit; Toriyama sprites; time eras
 avoidRules:
@@ -47,13 +47,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: a red spiky-haired boy with a katana, a frog knight, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a red spiky-haired boy with a katana, a frog knight, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

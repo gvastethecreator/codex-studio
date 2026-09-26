@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Sega Sonic the Hedgehog (1991) Mega Drive look: checkerboard hills, loop-de-loops, palm trees, bright saturated blue skies and speed.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a fast sprite racing through checkerboard hills and loops. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Saturated sky blue, grass green and checkerboard brown.
-  lighting_and_shadow: Bright Mega Drive light, lit the way Sonic the Hedgehog 1991 lights its scenes.
-  texture_and_material: Crisp Mega Drive sprites and tiles, with the surface finish of Sonic the Hedgehog 1991.
-  camera_and_composition: Side-scrolling speed view, framed the way Sonic the Hedgehog 1991 composes its shots and pages.
+  lighting_and_shadow: Bright Mega Drive light, lit the way Sonic the Hedgehog 1991 lights its levels.
+  texture_and_material: Crisp Mega Drive sprites and tiles, with the in-engine surface finish of Sonic the Hedgehog 1991.
+  camera_and_composition: Side-scrolling speed view, framed the way Sonic the Hedgehog 1991 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with bright blazing speed.
-  rendering_and_quality: Authentic Mega Drive platformer screen, in the recognizable hand of Sonic the Hedgehog 1991.
+  rendering_and_quality: Authentic Mega Drive platformer screen, matching real Sonic the Hedgehog 1991 screenshots.
   creative_brief: 'Sega Sonic the Hedgehog (1991) Mega Drive look: checkerboard hills, loop-de-loops, palm trees, bright saturated blue skies and speed. Carry it through Sonic checkerboard hills, loops, palm trees, speed. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Sonic checkerboard hills; loops; palm trees; speed
 avoidRules:
@@ -47,13 +47,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: a blue hedgehog with red shoes, gold rings, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a blue hedgehog with red shoes, gold rings, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

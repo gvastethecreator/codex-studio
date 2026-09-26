@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Blizzard North Diablo (1996) look: dark gothic isometric pre-rendered sprites, blood-red and brown dungeons, candlelit cathedral town of Tristram and grim atmosphere.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a small isometric sprite in dark gothic pre-rendered dungeons. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Dark brown, blood red and candle gold, true to the Diablo 1996 palette.
-  lighting_and_shadow: Light radius around the character in darkness, lit the way Diablo 1996 lights its scenes.
-  texture_and_material: Pre-rendered sprites with 256-color gloom, with the surface finish of Diablo 1996.
-  camera_and_composition: Isometric view with a light radius, framed the way Diablo 1996 composes its shots and pages.
+  lighting_and_shadow: Light radius around the character in darkness, lit the way Diablo 1996 lights its levels.
+  texture_and_material: Pre-rendered sprites with 256-color gloom, with the in-engine surface finish of Diablo 1996.
+  camera_and_composition: Isometric view with a light radius, framed the way Diablo 1996 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with grim gothic dread.
-  rendering_and_quality: Authentic mid-nineties isometric ARPG screen, in the recognizable hand of Diablo 1996.
+  rendering_and_quality: Authentic mid-nineties isometric ARPG screen, matching real Diablo 1996 screenshots.
   creative_brief: 'Blizzard North Diablo (1996) look: dark gothic isometric pre-rendered sprites, blood-red and brown dungeons, candlelit cathedral town of Tristram and grim atmosphere. Carry it through Diablo isometric, light radius, gothic dungeon. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Diablo isometric; light radius; gothic dungeon
 avoidRules:
@@ -46,13 +46,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: a horned red demon lord, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a horned red demon lord, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

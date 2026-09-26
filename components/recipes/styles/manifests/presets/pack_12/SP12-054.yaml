@@ -1,13 +1,13 @@
 schemaVersion: 1
 id: SP12-054
 packId: pack_12
-name: Red Dead Copper Train Heist
+name: Red Dead Redemption 2 2018 - Rockstar Studios Train Heist
 styleAnchors:
-  - Red Dead Redemption 2 gameplay screenshots
+  - Red Dead Redemption 2 2018 - Rockstar Studios Train Heist
   - Red Dead Copper Train Heist
-displayName: Red Dead Copper Train Heist
+displayName: Red Dead Redemption 2 2018 - Rockstar Studios Train Heist
 category: 7. Heists, Horror & Underworld Runs
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -23,46 +23,18 @@ tags:
   - hud-contextual-hud
   - reference-title
 visualDna:
-  aesthetic: 'In-game screenshot look informed by Red Dead Redemption 2 gameplay: third-person western action capture with train robbery staging, cinematic frontier lighting, cover positions, and grounded character motion. It never recreates an exact official level, character, logo or marketing art.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable Red Dead Redemption 2-adjacent game
-    screenshot subject: keep clear role silhouette, player/enemy/object function, scale
-    relationship, hitbox-like readability, and interaction affordances without copying source
-    characters or named IP elements.
-  color_and_tone: >-
-    Use a Red Dead Redemption 2-informed palette: dust tan, copper sunset, black iron train, denim
-    blue, leather brown, and muzzle-flash orange. Keep value grouping legible at gameplay distance,
-    with color accents behaving like route, danger, pickup, team, magic, or objective cues rather
-    than decorative wash.
-  lighting_and_shadow: >-
-    Light the image through golden-hour sun, train lamp glow, smoke haze, gunfire flashes, and long
-    canyon shadows. Lighting must clarify the playable route, threat, focal subject, or objective
-    and avoid generic cinematic bloom that destroys screenshot readability.
-  texture_and_material: >-
-    Build surfaces from wood planks, worn leather, iron rails, smoke, dust, horse tack, canvas, and
-    period firearm metal. Materials should feel like in-engine game assets captured during play,
-    with enough texture identity to separate props, terrain, characters, hazards, and interactables.
-  camera_and_composition: >-
-    Compose with third-person over-shoulder action framing with train length, cover beats, rider
-    positions, and cinematic horizon depth. The frame should read as a plausible gameplay capture;
-    include UI/HUD only when it matches the source game's visual logic and improves clarity.
-  atmosphere_and_mood: 'Red Dead Redemption 2-derived mood: lawless, weighty, dusty, tense, and cinematic; it follows the tone of the requested scene without forcing a fixed mission or story.'
-  rendering_and_quality: >-
-    Finish as a coherent in-engine screenshot style, not concept art: minimal western HUD, reticle,
-    weapon wheel hint, minimap, or wanted indicators can appear if coherent. Maintain heavy-denoise
-    clarity, crisp focal hierarchy, readable gameplay scale, and no fake logos, stock-photo polish,
-    or random interface clutter.
-  key_features: >-
-    Red Dead Redemption 2 gameplay screenshots; third-person western action capture with train
-    robbery staging, cinematic frontier lighting, cover positions, and grounded character motion;
-    dust tan, copper sunset, black iron train, denim blue, leather brown, and muzzle-flash orange;
-    golden-hour sun, train lamp glow, smoke haze, gunfire flashes, and long canyon shadows; wood
-    planks, worn leather, iron rails, smoke, dust, horse tack, canvas, and period firearm metal;
-    third-person over-shoulder action framing with train length, cover beats, rider positions, and
-    cinematic horizon depth; lawless, weighty, dusty, tense, and cinematic; HUD guidance: minimal
-    western HUD, reticle, weapon wheel hint, minimap, or wanted indicators can appear if coherent
-  creative_brief: "Red Dead Copper Train Heist: in-game screenshot language informed by Red Dead Redemption 2, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'Rockstar Studios Red Dead Redemption 2 (2018) look: photoreal 1899 frontier, rich naturalistic light, steam locomotives through canyons, outlaw gangs and horseback action.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as weathered 1899 outlaws in hats and long coats. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Sunset copper, canyon red and dust, true to the Red Dead Redemption 2 2018 palette.
+  lighting_and_shadow: Naturalistic sunset light and dust, lit the way Red Dead Redemption 2 2018 lights its levels.
+  texture_and_material: Photoreal leather, steel and dust, with the in-engine surface finish of Red Dead Redemption 2 2018.
+  camera_and_composition: Third-person action view, framed the way Red Dead Redemption 2 2018 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with gritty outlaw daring.
+  rendering_and_quality: Authentic modern western screen, matching real Red Dead Redemption 2 2018 screenshots.
+  key_features: RDR2 train heist; outlaws; canyon sunset
+  creative_brief: 'Rockstar Studios Red Dead Redemption 2 (2018) look: photoreal 1899 frontier, rich naturalistic light, steam locomotives through canyons, outlaw gangs and horseback action. Carry it through RDR2 train heist, outlaws, canyon sunset. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
+  - a bearded outlaw in a flat-brimmed hat and satchel
   - watermark
   - logo
   - copyright mark
@@ -89,23 +61,19 @@ avoidRules:
   - copied box art composition
   - existing franchise characters
   - series logo or title lettering
-  - 'signature costumes, emblems or props from the referenced work'
+  - signature costumes, emblems or props from the referenced work
   - recreated scenes from the referenced work
+  - text
+  - readable labels
+  - franchise likeness
+  - real person likeness
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-054.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: a bearded outlaw in a flat-brimmed hat and satchel, watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, text, readable labels, franchise likeness, real person likeness, noisy compression artifacts
   referenceGame: Red Dead Redemption 2
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    minimal western HUD, reticle, weapon wheel hint, minimap, or wanted indicators can appear if
-    coherent
+  hudGuidance: minimal western HUD, reticle, weapon wheel hint, minimap, or wanted indicators can appear if coherent
   renderFamily: third-person-cinematic
   cameraFamily: third-person
   hudMode: contextual-hud

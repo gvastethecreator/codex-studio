@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Capcom Street Fighter II (1991) look: large detailed fighting sprites, world stage backgrounds with cheering crowds, health bars and chunky special-move effects.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as large detailed fighting sprites on a lively world stage. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Bright arcade colors with detailed stage backdrops, true to the Street Fighter II 1991 palette.
-  lighting_and_shadow: Flat arcade light, lit the way Street Fighter II 1991 lights its scenes.
-  texture_and_material: Large detailed arcade sprites, with the surface finish of Street Fighter II 1991.
-  camera_and_composition: Side versus view with health bars, framed the way Street Fighter II 1991 composes its shots and pages.
+  lighting_and_shadow: Flat arcade light, lit the way Street Fighter II 1991 lights its levels.
+  texture_and_material: Large detailed arcade sprites, with the in-engine surface finish of Street Fighter II 1991.
+  camera_and_composition: Side versus view with health bars, framed the way Street Fighter II 1991 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with competitive arcade intensity.
-  rendering_and_quality: Authentic early-nineties fighting game screen, in the recognizable hand of Street Fighter II 1991.
+  rendering_and_quality: Authentic early-nineties fighting game screen, matching real Street Fighter II 1991 screenshots.
   creative_brief: 'Capcom Street Fighter II (1991) look: large detailed fighting sprites, world stage backgrounds with cheering crowds, health bars and chunky special-move effects. Carry it through SF2 large sprites, world stages, versus layout. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: SF2 large sprites; world stages; versus layout
 avoidRules:
@@ -46,13 +46,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: existing fighting game characters, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing fighting game characters, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

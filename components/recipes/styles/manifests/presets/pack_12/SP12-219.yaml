@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-219
 packId: pack_12
-name: Forest Sniper Duel Gameplay
+name: STALKER Shadow of Chernobyl 2007 - GSC Zone Forest
 styleAnchors:
-  - Forest Sniper Duel Gameplay
+  - STALKER Shadow of Chernobyl 2007 - GSC Zone Forest
   - patient sniper duel gameplay
   - sniper duel
-displayName: Forest Sniper Duel Gameplay
+displayName: STALKER Shadow of Chernobyl 2007 - GSC Zone Forest
 category: 11. Psychological & Tactical Gameplay
 domain: patient sniper duel gameplay
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - sniper-duel
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Forest sniper duel gameplay: an original first-person capture of a patient sniper duel in an old forest, scope glint, moss-covered hides and drifting mist.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject in a patient sniper duel hidden in an old forest.
-  color_and_tone: Mossy greens, mist grey and bark brown, kept consistent across the whole image.
-  lighting_and_shadow: Soft forest light and a single scope glint.
-  texture_and_material: Moss, ferns, mist and camo cloth, kept consistent across the whole image.
-  camera_and_composition: First-person through a scope or foliage, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with patient hunter tension.
-  rendering_and_quality: Clean capture with no UI, kept consistent across the whole image.
-  creative_brief: "Forest sniper duel gameplay: an original first-person capture of a patient sniper duel in an old forest, scope glint, moss-covered hides and drifting mist. Carry it through sniper duel, scope glint, old forest, mist. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: sniper duel; scope glint; old forest; mist
+  aesthetic: 'GSC Game World S.T.A.L.K.E.R.: Shadow of Chernobyl (2007) look: first-person survival in the Zone, misty forests, anomalies, rusted Soviet ruins and snipers.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as stalkers in hoods and gas masks. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Grey-green mist and rust, true to the STALKER Shadow of Chernobyl 2007 palette.
+  lighting_and_shadow: Overcast mist, lit the way STALKER Shadow of Chernobyl 2007 lights its levels.
+  texture_and_material: Grimy late-2000s textures, with the in-engine surface finish of STALKER Shadow of Chernobyl 2007.
+  camera_and_composition: First-person scope view, framed the way STALKER Shadow of Chernobyl 2007 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with paranoid patient survival.
+  rendering_and_quality: Authentic late-2000s survival screen, matching real STALKER Shadow of Chernobyl 2007 screenshots.
+  creative_brief: 'GSC Game World S.T.A.L.K.E.R.: Shadow of Chernobyl (2007) look: first-person survival in the Zone, misty forests, anomalies, rusted Soviet ruins and snipers. Carry it through STALKER Zone, mist, anomalies. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: STALKER Zone; mist; anomalies
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - sniper-duel
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

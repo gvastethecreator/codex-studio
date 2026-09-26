@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-185
 packId: pack_12
-name: Tank-Control Manor Gameplay
+name: Alone in the Dark 1992 - Infogrames Polygon Manor
 styleAnchors:
-  - Tank-Control Manor Gameplay
+  - Alone in the Dark 1992 - Infogrames Polygon Manor
   - classic survival horror gameplay
   - pre-rendered rooms
-displayName: Tank-Control Manor Gameplay
+displayName: Alone in the Dark 1992 - Infogrames Polygon Manor
 category: 9. Gothic & Dungeon Gameplay
 domain: classic survival horror gameplay
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - tank-manor
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Tank-control manor gameplay: an original classic survival-horror capture with pre-rendered manor rooms, a small 3D survivor and dramatic fixed angles.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject small in a pre-rendered manor room from a fixed camera.
-  color_and_tone: Muted browns, greens and lamp amber, kept consistent across the whole image.
-  lighting_and_shadow: Moody pre-rendered lighting, kept consistent across the whole image.
-  texture_and_material: Detailed wallpaper, wood and dust, kept consistent across the whole image.
-  camera_and_composition: Fixed dramatic angle from a corner, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with slow-building dread, kept consistent across the whole image.
-  rendering_and_quality: Authentic classic horror capture, kept consistent across the whole image.
-  creative_brief: "Tank-control manor gameplay: an original classic survival-horror capture with pre-rendered manor rooms, a small 3D survivor and dramatic fixed angles. Carry it through pre-rendered rooms, fixed camera, small survivor, manor. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: pre-rendered rooms; fixed camera; small survivor; manor
+  aesthetic: 'Infogrames Alone in the Dark (1992) look: flat-shaded polygon characters over hand-drawn manor backgrounds, fixed camera angles and 1920s Lovecraftian dread.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as flat-shaded blocky polygon figures. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Muted manor browns and gloom, true to the Alone in the Dark 1992 palette.
+  lighting_and_shadow: Painted gloom light, lit the way Alone in the Dark 1992 lights its levels.
+  texture_and_material: Flat polygons over painted art, with the in-engine surface finish of Alone in the Dark 1992.
+  camera_and_composition: Fixed high angle, framed the way Alone in the Dark 1992 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with Lovecraftian manor dread.
+  rendering_and_quality: Authentic early-nineties 3D horror screen, matching real Alone in the Dark 1992 screenshots.
+  creative_brief: 'Infogrames Alone in the Dark (1992) look: flat-shaded polygon characters over hand-drawn manor backgrounds, fixed camera angles and 1920s Lovecraftian dread. Carry it through Alone in the Dark polygons, painted manor. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Alone in the Dark polygons; painted manor
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - tank-manor
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

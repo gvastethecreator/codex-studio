@@ -25,11 +25,11 @@ visualDna:
   aesthetic: 'Nintendo Metroid (1986) NES look: lonely alien caverns on pure black backgrounds, blue and orange rock tiles, vertical shafts and isolated eerie exploration.'
   subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a small sprite exploring black-backed alien caverns and shafts. Wardrobe details apply only when the prompt leaves clothing open.
   color_and_tone: Pure black background with blue, orange and green rock tiles.
-  lighting_and_shadow: Flat NES light with black emptiness, lit the way Metroid 1986 lights its scenes.
+  lighting_and_shadow: Flat NES light with black emptiness, lit the way Metroid 1986 lights its levels.
   texture_and_material: Visible chunky pixels on a curved CRT with scanlines, slight bloom and phosphor glow.
-  camera_and_composition: Side-view cavern with vertical shafts, framed the way Metroid 1986 composes its shots and pages.
+  camera_and_composition: Side-view cavern with vertical shafts, framed the way Metroid 1986 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with lonely alien isolation.
-  rendering_and_quality: Authentic NES exploration screen, in the recognizable hand of Metroid 1986.
+  rendering_and_quality: Authentic NES exploration screen, matching real Metroid 1986 screenshots.
   creative_brief: 'Nintendo Metroid (1986) NES look: lonely alien caverns on pure black backgrounds, blue and orange rock tiles, vertical shafts and isolated eerie exploration. Carry it through Metroid black caverns, vertical shafts, isolation. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: Metroid black caverns; vertical shafts; isolation
 avoidRules:
@@ -47,13 +47,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: an orange power-suited bounty hunter, a jellyfish creature with red nuclei, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: an orange power-suited bounty hunter, a jellyfish creature with red nuclei, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

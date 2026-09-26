@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-134
 packId: pack_12
-name: Spaceport Evacuation Holdout
+name: Halo Reach 2010 - Bungie Last Stand
 styleAnchors:
-  - Spaceport Evacuation Holdout
+  - Halo Reach 2010 - Bungie Last Stand
   - sci-fi evacuation defense screenshot
   - landing pad
-displayName: Spaceport Evacuation Holdout
+displayName: Halo Reach 2010 - Bungie Last Stand
 category: 4. Sieges, Warfronts & Last Stands
 domain: sci-fi evacuation defense screenshot
-version: 1
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,19 +20,21 @@ tags:
   - spaceport-evac
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Spaceport evacuation holdout: an original screenshot of soldiers holding a landing pad while civilians board the last transport under a burning alien sky.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject holding a landing pad during a desperate evacuation.
-  color_and_tone: Burning orange sky, metal greys and warning lights.
-  lighting_and_shadow: Engine glow and fire light, kept consistent across the whole image.
-  texture_and_material: Metal decking, smoke and dust, kept consistent across the whole image.
-  camera_and_composition: Wide third-person view of the pad, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with heroic urgency, kept consistent across the whole image.
-  rendering_and_quality: Clean capture without gore or HUD text, kept consistent across the whole image.
-  creative_brief: "Spaceport evacuation holdout: an original screenshot of soldiers holding a landing pad while civilians board the last transport under a burning alien sky. Carry it through landing pad, last transport, burning sky, defenders. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: landing pad; last transport; burning sky; defenders
+  aesthetic: 'Bungie Halo: Reach (2010) look: doomed planet last stand, burning skies, armored super-soldiers, alien war-beasts, spaceports and evacuation transports.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as chunky armored soldiers under a burning alien sky. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Burning orange sky, steel grey and plasma blue.
+  lighting_and_shadow: Fire glow with plasma flashes, lit the way Halo Reach 2010 lights its levels.
+  texture_and_material: Chunky armor and scorched metal, with the in-engine surface finish of Halo Reach 2010.
+  camera_and_composition: First-person view at a landing pad, framed the way Halo Reach 2010 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with doomed heroic sacrifice.
+  rendering_and_quality: Authentic Xbox 360 shooter screen, matching real Halo Reach 2010 screenshots.
+  creative_brief: 'Bungie Halo: Reach (2010) look: doomed planet last stand, burning skies, armored super-soldiers, alien war-beasts, spaceports and evacuation transports. Carry it through Halo Reach last stand, burning sky, evacuation. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Halo Reach last stand; burning sky; evacuation
 avoidRules:
-  - gore
+  - green armored super-soldier with gold visor
+  - existing Covenant species
   - existing game characters, logos or levels
   - readable interface text
   - readable text
@@ -43,13 +45,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: gore, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: green armored super-soldier with gold visor, existing Covenant species, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +69,7 @@ taxonomy:
     - spaceport-evac
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

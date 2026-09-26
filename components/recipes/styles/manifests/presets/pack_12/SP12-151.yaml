@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-151
 packId: pack_12
-name: Safari Photo Expedition Capture
+name: Afrika 2008 - Rhino Studios Safari Photography
 styleAnchors:
-  - Safari Photo Expedition Capture
+  - Afrika 2008 - Rhino Studios Safari Photography
   - wildlife photography game screenshot
   - viewfinder frame
-displayName: Safari Photo Expedition Capture
+displayName: Afrika 2008 - Rhino Studios Safari Photography
 category: 6. Wilderness Hunts & Harsh Frontiers
 domain: wildlife photography game screenshot
-version: 1
+version: 2
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,22 +20,22 @@ tags:
   - safari-photo
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Safari photo expedition capture: an original wildlife photography game screenshot through a camera viewfinder of strange creatures on a golden savanna.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; frame the subject through a camera viewfinder on a wildlife expedition.
-  color_and_tone: Golden grass, acacia greens and blue sky, kept consistent across the whole image.
-  lighting_and_shadow: Warm late-afternoon sun, kept consistent across the whole image.
-  texture_and_material: Grass, dust, animal hides and viewfinder frame, kept consistent across the whole image.
-  camera_and_composition: Viewfinder crop lines around the subject, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with patient discovery, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no readable settings, kept consistent across the whole image.
-  creative_brief: "Safari photo expedition capture: an original wildlife photography game screenshot through a camera viewfinder of strange creatures on a golden savanna. Carry it through viewfinder frame, savanna, strange creatures, golden light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: viewfinder frame; savanna; strange creatures; golden light
+  aesthetic: 'Rhino Studios Afrika (2008) look: realistic safari photography with a camera viewfinder over the African savanna, herds at golden hour, jeeps and river crossings.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render every subject as wildlife framed through a camera viewfinder. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Savanna gold, sunset orange and river blue, true to the Afrika 2008 palette.
+  lighting_and_shadow: Golden hour savanna light, lit the way Afrika 2008 lights its levels.
+  texture_and_material: Realistic grass and animal detail, with the in-engine surface finish of Afrika 2008.
+  camera_and_composition: Viewfinder framing from a jeep, framed the way Afrika 2008 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with patient wild wonder.
+  rendering_and_quality: Authentic safari photography screen, matching real Afrika 2008 screenshots.
+  creative_brief: 'Rhino Studios Afrika (2008) look: realistic safari photography with a camera viewfinder over the African savanna, herds at golden hour, jeeps and river crossings. Carry it through Afrika viewfinder, savanna, herds. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Afrika viewfinder; savanna; herds
 avoidRules:
   - readable camera settings
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -44,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: readable camera settings, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable camera settings, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -65,6 +68,7 @@ taxonomy:
     - safari-photo
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

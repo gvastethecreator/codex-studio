@@ -1,9 +1,9 @@
 schemaVersion: 1
 id: SP12-035
 packId: pack_12
-name: Infernal Decklift Defense
+name: Monster Train 2020 - Shiny Shoe Infernal Floors
 category: 4. Sieges, Warfronts & Last Stands
-version: 1
+version: 5
 supportedTasks:
   - image_generate
   - image_edit
@@ -17,46 +17,18 @@ tags:
   - render-stacked-card-board-ui
   - camera-board-command-ui
   - hud-full-hud
+  - reference-title
 visualDna:
-  aesthetic: 'Original in-game screenshot look for vertical defense deckbuilder captures: stacked lane combat, infernal lift floors, monster units, card hand silhouettes, resource pips, and readable defense choices. Borrow the vertical lane logic of Monster Train-like games, but land as a different fictional deck-defense game with different vehicle/structure logic, unit silhouettes, UI frames, symbols, and floor anatomy.'
-  subject_treatment: >-
-    Preserve the user's subject and transform it into a playable stacked deck-defense screenshot
-    subject: keep clear unit/object role, lane position, floor hierarchy, incoming threat, resource
-    pressure, and interaction affordances without copying source characters or named IP elements.
-  color_and_tone: >-
-    Use a vertical defense deckbuilder palette: infernal red, parchment beige, icy blue, gold UI
-    trim, purple monster magic, black iron, ember orange, and siege-shadow grey. Keep value grouping
-    legible at gameplay distance, with color accents behaving like lane pressure, danger, resource,
-    team, magic, or objective cues rather than decorative wash.
-  lighting_and_shadow: >-
-    Light the image through card glow, furnace or lift-core light, spell bursts, impact flashes, and
-    clean floor separation. Lighting must clarify lane hierarchy, incoming threat, focal unit, or
-    defensive objective and avoid generic cinematic bloom that destroys board readability.
-  texture_and_material: >-
-    Build surfaces from illustrated unit tokens, chunky lane sprites, custom UI frames, metal lift
-    platforms, siege machinery, chains, furnace metal, and painterly fantasy effects. Materials
-    should feel like in-engine game assets captured during play, with enough texture identity to
-    separate units, lanes, hazards, and interactables.
-  camera_and_composition: >-
-    Compose with 2D stacked-board hierarchy: multiple defended floors or lift decks, card
-    silhouettes at bottom, enemy intent icons, resource pips, and one clear defensive decision. All
-    card and UI markings must stay wordless and numberless.
-  atmosphere_and_mood: >-
-    Carry an original infernal decklift mood: strategic, hellish, playful, crunchy, siege-like, and
-    board-game readable.
-  rendering_and_quality: >-
-    Finish as coherent in-engine vertical deck-defense screenshot style, not concept art: card hand,
-    resource pips, draw pile, unit state icons, and floor indicators are core, but no readable card
-    text, no stat numbers, no exact train-floor UI, and no fake logos. Maintain heavy-denoise
-    clarity and crisp focal hierarchy.
-  key_features: >-
-    original vertical defense deckbuilder gameplay screenshots; stacked lane combat; infernal lift
-    floors; monster or unit tokens; card hand silhouettes; resource pips; readable defense choices;
-    infernal red, parchment beige, icy blue, gold trim, purple magic, black iron; furnace light and
-    floor separation; 2D stacked-board hierarchy with defended floors, enemy intent icons, resource
-    pips, and one clear defensive decision; HUD guidance: wordless card hand, resource pips, draw
-    pile, unit state icons, and floor indicators only
-  creative_brief: "Infernal Decklift Defense: in-game screenshot language informed by vertical defense deckbuilder references, covering stacked lane camera, card-hand grammar, resource pressure, infernal vehicle/structure surfaces, and readable board state. Avoid menus, logos, exact characters, exact levels, direct Monster Train cloning, readable text, and stat numbers. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting."
+  aesthetic: 'Shiny Shoe Monster Train (2020) look: roguelike deckbuilder on a hellish train with three stacked floors plus the burning pyre, cartoon demon units and flame-orange card effects.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render every subject as cartoon demon units and cards battling on stacked train floors. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Infernal orange, ember red and deep purple, true to the Monster Train 2020 palette.
+  lighting_and_shadow: Pyre fire glow and card flashes, lit the way Monster Train 2020 lights its levels.
+  texture_and_material: Clean stylized cartoon 3D and card frames, with the in-engine surface finish of Monster Train 2020.
+  camera_and_composition: Side view of stacked train floors, framed the way Monster Train 2020 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with fiery strategic chaos.
+  rendering_and_quality: Authentic deckbuilder screen, matching real Monster Train 2020 screenshots.
+  key_features: Monster Train stacked floors; pyre; demon cards
+  creative_brief: 'Shiny Shoe Monster Train (2020) look: roguelike deckbuilder on a hellish train with three stacked floors plus the burning pyre, cartoon demon units and flame-orange card effects. Carry it through Monster Train stacked floors, pyre, demon cards. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - watermark
   - logo
@@ -86,22 +58,17 @@ avoidRules:
   - readable card text
   - stat numbers
   - exact train floor UI
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-035.webp
 attributes:
-  negativePrompt: >-
-    watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art,
-    promotional poster, concept art sheet, asset render, character sheet, exact official character
-    likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense
-    interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card
-    reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal
-    camera, copied box art composition, direct Monster Train clone, readable card text, stat
-    numbers, exact train floor UI
+  negativePrompt: watermark, logo, copyright mark, loading screen, main menu, pause menu, store page key art, promotional poster, concept art sheet, asset render, character sheet, exact official character likeness, exact level copy, franchise logo, readable brand text, random fake HUD, nonsense interface clutter, generic Unreal marketplace scene, generic 3D render, prompt literal card reuse, unrelated generic fantasy scene, unrelated generic sci-fi scene, unmotivated photoreal camera, copied box art composition, direct Monster Train clone, readable card text, stat numbers, exact train floor UI, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Original vertical defense deckbuilder, Monster Train-informed
   referenceMode: capture-derived gameplay screenshot style
-  hudGuidance: >-
-    card hand, mana/ember, draw pile, unit stats, and floor indicators are essential and should
-    remain coherent
+  hudGuidance: card hand, mana/ember, draw pile, unit stats, and floor indicators are essential and should remain coherent
   renderFamily: stacked-card-board-ui
   cameraFamily: board-command-ui
   hudMode: full-hud
@@ -119,13 +86,14 @@ taxonomy:
     - render-stacked-card-board-ui
     - camera-board-command-ui
     - hud-full-hud
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
     - style_preset_card
   hasDefaultImage: true
-displayName: Infernal Decklift Defense
+displayName: Monster Train 2020 - Shiny Shoe Infernal Floors
 styleAnchors:
-  - vertical roguelike deckbuilder gameplay screenshots
+  - Monster Train 2020 - Shiny Shoe Infernal Floors
   - stacked lane defense card battle
   - Infernal Decklift Defense

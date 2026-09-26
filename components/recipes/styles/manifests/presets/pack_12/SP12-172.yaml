@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-172
 packId: pack_12
-name: Clockwork Tower Puzzle Capture
+name: Machinarium 2009 - Amanita Hand-Drawn Robots
 styleAnchors:
-  - Clockwork Tower Puzzle Capture
+  - Machinarium 2009 - Amanita Hand-Drawn Robots
   - gear puzzle tower screenshot
   - giant gears
-displayName: Clockwork Tower Puzzle Capture
+displayName: Machinarium 2009 - Amanita Hand-Drawn Robots
 category: 8. Puzzle Chambers & Adventure Setpieces
 domain: gear puzzle tower screenshot
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,18 +20,20 @@ tags:
   - clockwork-puzzle
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Clockwork tower puzzle capture: an original screenshot inside a giant clock tower where the player repositions gears and pendulums to open the way up.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; place the subject among giant gears and pendulums inside a clock tower.
-  color_and_tone: Brass, copper and warm dusty light, kept consistent across the whole image.
-  lighting_and_shadow: Light through a clock face window, kept consistent across the whole image.
-  texture_and_material: Gears, chains, wooden beams and dust, kept consistent across the whole image.
-  camera_and_composition: Vertical view up the tower interior, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with ticking ingenuity, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with no readable numerals, kept consistent across the whole image.
-  creative_brief: "Clockwork tower puzzle capture: an original screenshot inside a giant clock tower where the player repositions gears and pendulums to open the way up. Carry it through giant gears, pendulums, clock face window, vertical tower. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: giant gears; pendulums; clock face window; vertical tower
+  aesthetic: 'Amanita Design Machinarium (2009) look: hand-drawn rusty robot city, whimsical mechanical characters, sepia greens and point-and-click puzzles.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as whimsical hand-drawn rusty robots. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Sepia green, rust and warm grey, true to the Machinarium 2009 palette.
+  lighting_and_shadow: Soft hazy light, lit the way Machinarium 2009 lights its levels.
+  texture_and_material: Hand-drawn pencil and watercolor, with the in-engine surface finish of Machinarium 2009.
+  camera_and_composition: Side-view scene, framed the way Machinarium 2009 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with wistful mechanical whimsy.
+  rendering_and_quality: Authentic hand-drawn adventure screen, matching real Machinarium 2009 screenshots.
+  creative_brief: 'Amanita Design Machinarium (2009) look: hand-drawn rusty robot city, whimsical mechanical characters, sepia greens and point-and-click puzzles. Carry it through Machinarium rusty robots, hand-drawn, sepia. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Machinarium rusty robots; hand-drawn; sepia
 avoidRules:
+  - a small robot with a stretching body and bowler hat
   - readable clock numerals
   - existing game characters, logos or levels
   - readable interface text
@@ -43,13 +45,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: readable clock numerals, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a small robot with a stretching body and bowler hat, readable clock numerals, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +69,7 @@ taxonomy:
     - clockwork-puzzle
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

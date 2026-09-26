@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-112
 packId: pack_12
-name: Jungle Ziggurat Platformer Capture
+name: Spelunky 2012 - Mossmouth Pixel Temple
 styleAnchors:
-  - Jungle Ziggurat Platformer Capture
+  - Spelunky 2012 - Mossmouth Pixel Temple
   - jungle temple platform game screenshot
   - stepped temple
-displayName: Jungle Ziggurat Platformer Capture
+displayName: Spelunky 2012 - Mossmouth Pixel Temple
 category: 2. Arcane Temples & Mythic Realms
 domain: jungle temple platform game screenshot
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - jungle-ziggurat
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Jungle ziggurat platformer capture: an original side-scrolling platformer screenshot of stepped jungle temples, vines, spike traps and rolling boulders.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject leaping through a side-scrolling jungle temple.
-  color_and_tone: Lush greens, warm stone ochre and golden treasure.
-  lighting_and_shadow: Dappled jungle light and dark temple interiors, kept consistent across the whole image.
-  texture_and_material: Carved stone, vines, water and wooden traps, kept consistent across the whole image.
-  camera_and_composition: Side-on platform layout with multiple levels, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with adventurous peril, kept consistent across the whole image.
-  rendering_and_quality: Clean colorful game capture, kept consistent across the whole image.
-  creative_brief: "Jungle ziggurat platformer capture: an original side-scrolling platformer screenshot of stepped jungle temples, vines, spike traps and rolling boulders. Carry it through stepped temple, vines, spike traps, side-scrolling. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: stepped temple; vines; spike traps; side-scrolling
+  aesthetic: 'Mossmouth Spelunky (2012) look: cartoon side-view cave-diving roguelike, chunky hand-drawn sprites, golden idols, boulder traps, spikes and dark jungle temples.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as chunky cartoon explorers with round noses and pith helmets. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Temple ochre, jungle green, gold and dark earth.
+  lighting_and_shadow: Dark caves lit by torches and glowing gold.
+  texture_and_material: Chunky hand-drawn cartoon tiles, with the in-engine surface finish of Spelunky 2012.
+  camera_and_composition: Side-view roguelike cave view, framed the way Spelunky 2012 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with greedy perilous fun.
+  rendering_and_quality: Authentic cartoon roguelike screen, matching real Spelunky 2012 screenshots.
+  creative_brief: 'Mossmouth Spelunky (2012) look: cartoon side-view cave-diving roguelike, chunky hand-drawn sprites, golden idols, boulder traps, spikes and dark jungle temples. Carry it through Spelunky idol, boulder traps, cartoon caves. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Spelunky idol; boulder traps; cartoon caves
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - jungle-ziggurat
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

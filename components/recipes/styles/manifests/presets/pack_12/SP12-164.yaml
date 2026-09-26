@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-164
 packId: pack_12
-name: Speakeasy Shootout Capture
+name: Mafia 2020 - Hangar 13 Prohibition Noir
 styleAnchors:
-  - Speakeasy Shootout Capture
+  - Mafia 2020 - Hangar 13 Prohibition Noir
   - prohibition gangster game screenshot
   - speakeasy
-displayName: Speakeasy Shootout Capture
+displayName: Mafia 2020 - Hangar 13 Prohibition Noir
 category: 7. Heists, Horror & Underworld Runs
 domain: prohibition gangster game screenshot
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,22 +20,22 @@ tags:
   - speakeasy
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Speakeasy shootout capture: an original third-person screenshot of a jazz-age speakeasy mid-shootout, flipped tables, shattering bottles and smoky amber light.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; place the subject in a jazz-age speakeasy during a chaotic shootout.
-  color_and_tone: Amber, deep brown wood and brass, kept consistent across the whole image.
-  lighting_and_shadow: Smoky lamp light and muzzle flashes, kept consistent across the whole image.
-  texture_and_material: Wood paneling, glass bottles and velvet, kept consistent across the whole image.
-  camera_and_composition: Low third-person behind cover, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with stylish violence without gore.
-  rendering_and_quality: Clean capture with no readable signs, kept consistent across the whole image.
-  creative_brief: "Speakeasy shootout capture: an original third-person screenshot of a jazz-age speakeasy mid-shootout, flipped tables, shattering bottles and smoky amber light. Carry it through speakeasy, flipped tables, shattering bottles, amber smoke. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: speakeasy; flipped tables; shattering bottles; amber smoke
+  aesthetic: 'Hangar 13 Mafia: Definitive Edition (2020) look: 1930s prohibition city, speakeasies, tommy guns, classic cars and warm amber noir lighting.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as 1930s gangsters and detectives in fedoras. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Amber smoke, mahogany and deep green, true to the Mafia 2020 palette.
+  lighting_and_shadow: Smoky amber speakeasy light, lit the way Mafia 2020 lights its levels.
+  texture_and_material: Polished wood, glass and wool suits, with the in-engine surface finish of Mafia 2020.
+  camera_and_composition: Third-person cover view, framed the way Mafia 2020 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with smoky gangland tension.
+  rendering_and_quality: Authentic period crime screen, matching real Mafia 2020 screenshots.
+  creative_brief: 'Hangar 13 Mafia: Definitive Edition (2020) look: 1930s prohibition city, speakeasies, tommy guns, classic cars and warm amber noir lighting. Carry it through Mafia prohibition, speakeasy, amber noir. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Mafia prohibition; speakeasy; amber noir
 avoidRules:
   - readable signs
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -44,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: readable signs, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable signs, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -65,6 +68,7 @@ taxonomy:
     - speakeasy
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

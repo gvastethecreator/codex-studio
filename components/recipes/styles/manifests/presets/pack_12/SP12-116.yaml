@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-116
 packId: pack_12
-name: Crystal Cave Side-View Capture
+name: Ori and the Blind Forest 2015 - Moon Studios Luminous Painted
 styleAnchors:
-  - Crystal Cave Side-View Capture
+  - Ori and the Blind Forest 2015 - Moon Studios Luminous Painted
   - crystal cavern exploration screenshot
   - glowing crystals
-displayName: Crystal Cave Side-View Capture
+displayName: Ori and the Blind Forest 2015 - Moon Studios Luminous Painted
 category: 2. Arcane Temples & Mythic Realms
 domain: crystal cavern exploration screenshot
-version: 1
+version: 4
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,22 @@ tags:
   - crystal-cave
   - game-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Crystal cave side-view capture: an original side-view exploration screenshot through glowing crystal caverns, reflective pools, hidden passages and tiny adventurers.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject small in a glowing side-view crystal cavern.
-  color_and_tone: Deep indigo with glowing cyan, pink and violet crystals.
-  lighting_and_shadow: Crystal glow reflecting on water, kept consistent across the whole image.
-  texture_and_material: Faceted crystal, wet rock and still pools, kept consistent across the whole image.
-  camera_and_composition: Side-view cross-section of cave chambers, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with lonely glowing wonder.
-  rendering_and_quality: Clean side-view capture with no HUD, kept consistent across the whole image.
-  creative_brief: "Crystal cave side-view capture: an original side-view exploration screenshot through glowing crystal caverns, reflective pools, hidden passages and tiny adventurers. Carry it through glowing crystals, cave cross-section, reflective pools, tiny explorer. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: glowing crystals; cave cross-section; reflective pools; tiny explorer
+  aesthetic: 'Moon Studios Ori and the Blind Forest (2015) look: side-view platformer with lush hand-painted layered backgrounds, luminous glowing creatures, bioluminescent flora and dense parallax depth.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people and creatures as small glowing figures against lush painted scenery. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Deep teal, glowing cyan and warm amber, true to the Ori and the Blind Forest 2015 palette.
+  lighting_and_shadow: Luminous glow against deep shadows, lit the way Ori and the Blind Forest 2015 lights its levels.
+  texture_and_material: Hand-painted layered backgrounds, with the in-engine surface finish of Ori and the Blind Forest 2015.
+  camera_and_composition: Side-view platformer with parallax, framed the way Ori and the Blind Forest 2015 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with luminous tender wonder.
+  rendering_and_quality: Authentic painted platformer screen, matching real Ori and the Blind Forest 2015 screenshots.
+  creative_brief: 'Moon Studios Ori and the Blind Forest (2015) look: side-view platformer with lush hand-painted layered backgrounds, luminous glowing creatures, bioluminescent flora and dense parallax depth. Carry it through Ori painted layers, luminous glow, parallax. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Ori painted layers; luminous glow; parallax
 avoidRules:
+  - a small white glowing spirit creature with long ears
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: a small white glowing spirit creature with long ears, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +68,7 @@ taxonomy:
     - crystal-cave
     - game-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

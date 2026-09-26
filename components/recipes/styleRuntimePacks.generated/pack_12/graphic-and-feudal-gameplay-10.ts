@@ -179,37 +179,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-193',
-    name: 'Cel-Shaded Samurai Duel Gameplay',
-    displayName: 'Cel-Shaded Samurai Duel Gameplay',
+    name: 'Samurai Shodown 2019 - SNK Ink Cel Duel',
+    displayName: 'Samurai Shodown 2019 - SNK Ink Cel Duel',
     styleAnchors: [
-      'Cel-Shaded Samurai Duel Gameplay',
+      'Samurai Shodown 2019 - SNK Ink Cel Duel',
       'toon-shaded samurai duel gameplay',
       'cel shading',
     ],
     category: '10. Graphic & Feudal Gameplay',
     domain: 'toon-shaded samurai duel gameplay',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing Samurai Shodown fighters, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Cel-shaded samurai duel gameplay: an original third-person capture of a samurai duel with bold toon shading, falling leaves, wind lines and dramatic standoffs.',
+        'SNK Samurai Shodown (2019) look: 3D weapon fighting rendered with ink-brushed cel shading, falling leaves, dramatic ink-splash slashes and feudal Japanese stages.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject in a cel-shaded samurai duel standoff.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as ink-outlined cel-shaded samurai in flowing clothing. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Autumn reds, gold light and deep shadow, kept consistent across the whole image.',
+        'Maple red, ink black and parchment, true to the Samurai Shodown 2019 palette.',
       lighting_and_shadow:
-        'Two-tone cel shading and rim light, kept consistent across the whole image.',
+        'Bold toon light with ink shadows, lit the way Samurai Shodown 2019 lights its levels.',
       texture_and_material:
-        'Flat shaded cloth, blades and leaves, kept consistent across the whole image.',
+        'Ink-brush outlines and cel fills, with the in-engine surface finish of Samurai Shodown 2019.',
       camera_and_composition:
-        'Low wide third-person standoff, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with tense stillness, kept consistent across the whole image.',
+        'Side-on duel camera, framed the way Samurai Shodown 2019 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with tense single-strike duel.',
       rendering_and_quality:
-        'Clean toon capture with no UI, kept consistent across the whole image.',
+        'Authentic ink cel fighter screen, matching real Samurai Shodown 2019 screenshots.',
       creative_brief:
-        "Cel-shaded samurai duel gameplay: an original third-person capture of a samurai duel with bold toon shading, falling leaves, wind lines and dramatic standoffs. Carry it through cel shading, samurai standoff, falling leaves, wind lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'cel shading; samurai standoff; falling leaves; wind lines',
+        "SNK Samurai Shodown (2019) look: 3D weapon fighting rendered with ink-brushed cel shading, falling leaves, dramatic ink-splash slashes and feudal Japanese stages. Carry it through Samurai Shodown ink cel, maple leaves, duel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Samurai Shodown ink cel; maple leaves; duel',
     },
     ui: {
       previewStatus: 'pending',
@@ -217,35 +216,34 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-194',
-    name: 'Ink-Brush Brawler Gameplay',
-    displayName: 'Ink-Brush Brawler Gameplay',
+    name: 'Sumioni 2012 - Acquire Ink Brush Brawler',
+    displayName: 'Sumioni 2012 - Acquire Ink Brush Brawler',
     styleAnchors: [
-      'Ink-Brush Brawler Gameplay',
+      'Sumioni 2012 - Acquire Ink Brush Brawler',
       'sumi-ink action gameplay',
       'ink-painted fighters',
     ],
     category: '10. Graphic & Feudal Gameplay',
     domain: 'sumi-ink action gameplay',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Ink-brush brawler gameplay: an original action capture where every character and strike is painted in wet black ink with splashes of red, on a rice-paper world.',
+        'Acquire Sumioni: Demon Arts (2012) look: side-view action painted in sumi-e ink on rice paper, drawn ink platforms, red accents and ink-blot demons.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; render the subject as a wet ink-painted fighter in an ink-wash world.',
-      color_and_tone:
-        'Black ink, paper white and red accents, kept consistent across the whole image.',
-      lighting_and_shadow: 'Ink density instead of light, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as ink-brush figures with red accents. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Ink black, rice paper and red, true to the Sumioni 2012 palette.',
+      lighting_and_shadow: 'Flat paper light, lit the way Sumioni 2012 lights its levels.',
       texture_and_material:
-        'Brush splashes, dry brush and paper grain, kept consistent across the whole image.',
+        'Wet ink brush on paper, with the in-engine surface finish of Sumioni 2012.',
       camera_and_composition:
-        'Side-on action with splash effects, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with explosive calligraphic energy.',
+        'Side-view brawler, framed the way Sumioni 2012 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with swift painted fury.',
       rendering_and_quality:
-        'Clean ink capture with no UI, kept consistent across the whole image.',
+        'Authentic ink-brush action screen, matching real Sumioni 2012 screenshots.',
       creative_brief:
-        "Ink-brush brawler gameplay: an original action capture where every character and strike is painted in wet black ink with splashes of red, on a rice-paper world. Carry it through ink-painted fighters, splash strikes, rice paper, red accents. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'ink-painted fighters; splash strikes; rice paper; red accents',
+        "Acquire Sumioni: Demon Arts (2012) look: side-view action painted in sumi-e ink on rice paper, drawn ink platforms, red accents and ink-blot demons. Carry it through Sumioni ink, rice paper, red accents. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Sumioni ink; rice paper; red accents',
     },
     ui: {
       previewStatus: 'pending',
@@ -253,37 +251,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-195',
-    name: 'Arena Combo Hack-and-Slash Gameplay',
-    displayName: 'Arena Combo Hack-and-Slash Gameplay',
+    name: 'Devil May Cry 5 2019 - Capcom Style Combo',
+    displayName: 'Devil May Cry 5 2019 - Capcom Style Combo',
     styleAnchors: [
-      'Arena Combo Hack-and-Slash Gameplay',
+      'Devil May Cry 5 2019 - Capcom Style Combo',
       'stylish combo action gameplay',
       'air juggle',
     ],
     category: '10. Graphic & Feudal Gameplay',
     domain: 'stylish combo action gameplay',
     negativePrompt:
-      'combo text, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a white-haired hunter in a red coat with twin pistols, a greatsword and twin pistols, combo text, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Arena combo hack-and-slash gameplay: an original stylish action capture of a hero juggling enemies mid-air, flashy weapon trails and a gothic arena.',
+        'Capcom Devil May Cry 5 (2019) look: photoreal stylish action, gothic cities, air juggles, flashy weapon trails, demons and style meter swagger.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject mid-combo juggling enemies in a stylish arena.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as stylish demon hunters in long coats. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Dark arena with vivid weapon-trail colors, kept consistent across the whole image.',
+        'Gothic red, black and neon trails, true to the Devil May Cry 5 2019 palette.',
       lighting_and_shadow:
-        'Flashy effect lighting and rim light, kept consistent across the whole image.',
+        'Dramatic gothic light with trails, lit the way Devil May Cry 5 2019 lights its levels.',
       texture_and_material:
-        'Gothic stone, coat flare and weapon glow, kept consistent across the whole image.',
+        'Photoreal leather and stone, with the in-engine surface finish of Devil May Cry 5 2019.',
       camera_and_composition:
-        'Dynamic low angle in the air, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with swaggering flair, kept consistent across the whole image.',
+        'Third-person combo view, framed the way Devil May Cry 5 2019 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with cocky stylish mayhem.',
       rendering_and_quality:
-        'Clean capture with no combo text, kept consistent across the whole image.',
+        'Authentic stylish action screen, matching real Devil May Cry 5 2019 screenshots.',
       creative_brief:
-        "Arena combo hack-and-slash gameplay: an original stylish action capture of a hero juggling enemies mid-air, flashy weapon trails and a gothic arena. Carry it through air juggle, weapon trails, stylish hero, gothic arena. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'air juggle; weapon trails; stylish hero; gothic arena',
+        "Capcom Devil May Cry 5 (2019) look: photoreal stylish action, gothic cities, air juggles, flashy weapon trails, demons and style meter swagger. Carry it through DMC5 combos, weapon trails, gothic city. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'DMC5 combos; weapon trails; gothic city',
     },
     ui: {
       previewStatus: 'pending',
@@ -291,34 +288,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-196',
-    name: 'Mounted Archery Plains Gameplay',
-    displayName: 'Mounted Archery Plains Gameplay',
+    name: 'Ghost of Tsushima 2020 - Sucker Punch Wind and Leaves',
+    displayName: 'Ghost of Tsushima 2020 - Sucker Punch Wind and Leaves',
     styleAnchors: [
-      'Mounted Archery Plains Gameplay',
+      'Ghost of Tsushima 2020 - Sucker Punch Wind and Leaves',
       'horseback archery gameplay',
       'horseback archery',
     ],
     category: '10. Graphic & Feudal Gameplay',
     domain: 'horseback archery gameplay',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a samurai with a white ghost mask, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Mounted archery plains gameplay: an original third-person capture of a rider shooting arrows at full gallop across windswept steppe grass.',
+        'Sucker Punch Ghost of Tsushima (2020) look: third-person samurai open world with guiding wind, fields of pampas grass and flowers, falling leaves and painterly color.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject shooting a bow from a galloping horse on open plains.',
-      color_and_tone: 'Golden grass, wide blue sky and earth tones.',
-      lighting_and_shadow: 'Low sun with long shadows, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as samurai and Mongol riders in period armor. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Pampas gold, maple red and sky, true to the Ghost of Tsushima 2020 palette.',
+      lighting_and_shadow:
+        'Golden painterly light, lit the way Ghost of Tsushima 2020 lights its levels.',
       texture_and_material:
-        'Wind-bent grass, leather and horsehair, kept consistent across the whole image.',
+        'Realistic grass, cloth and armor, with the in-engine surface finish of Ghost of Tsushima 2020.',
       camera_and_composition:
-        'Chase camera beside the galloping horse, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with wild freedom, kept consistent across the whole image.',
-      rendering_and_quality: 'Clean capture with no UI, kept consistent across the whole image.',
+        'Third-person riding view, framed the way Ghost of Tsushima 2020 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with windswept poetic combat.',
+      rendering_and_quality:
+        'Authentic painterly open-world screen, matching real Ghost of Tsushima 2020 screenshots.',
       creative_brief:
-        "Mounted archery plains gameplay: an original third-person capture of a rider shooting arrows at full gallop across windswept steppe grass. Carry it through horseback archery, galloping, steppe grass, low sun. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'horseback archery; galloping; steppe grass; low sun',
+        "Sucker Punch Ghost of Tsushima (2020) look: third-person samurai open world with guiding wind, fields of pampas grass and flowers, falling leaves and painterly color. Carry it through Tsushima wind, pampas fields, falling leaves. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Tsushima wind; pampas fields; falling leaves',
     },
     ui: {
       previewStatus: 'pending',
@@ -326,36 +324,35 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-197',
-    name: 'Third-Person Shinobi Stealth Gameplay',
-    displayName: 'Third-Person Shinobi Stealth Gameplay',
+    name: 'Tenchu Stealth Assassins 1998 - Acquire PS1 Fog Ninja',
+    displayName: 'Tenchu Stealth Assassins 1998 - Acquire PS1 Fog Ninja',
     styleAnchors: [
-      'Third-Person Shinobi Stealth Gameplay',
+      'Tenchu Stealth Assassins 1998 - Acquire PS1 Fog Ninja',
       'ninja stealth action gameplay',
       'shinobi',
     ],
     category: '10. Graphic & Feudal Gameplay',
     domain: 'ninja stealth action gameplay',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Third-person shinobi stealth gameplay: an original capture of a ninja crouched on castle rooftops at night, patrols below, grappling lines and moonlight.',
+        'Acquire Tenchu: Stealth Assassins (1998) look: PS1 low-poly ninja stealth on moonlit rooftops, heavy distance fog, grappling hooks and stealth kills.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject as a crouching shinobi above patrolling guards at night.',
-      color_and_tone:
-        'Moonlit blue, tile black and lantern amber, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as low-poly PS1 ninja. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Night blue fog and moon, true to the Tenchu Stealth Assassins 1998 palette.',
       lighting_and_shadow:
-        'Moonlight rims and guard lanterns, kept consistent across the whole image.',
+        'Moonlight with heavy fog, lit the way Tenchu Stealth Assassins 1998 lights its levels.',
       texture_and_material:
-        'Roof tiles, cloth wraps and grappling rope, kept consistent across the whole image.',
+        'Low-poly PS1 textures, with the in-engine surface finish of Tenchu Stealth Assassins 1998.',
       camera_and_composition:
-        'Over-the-shoulder looking down on guards, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with silent precision, kept consistent across the whole image.',
-      rendering_and_quality: 'Clean capture with no UI, kept consistent across the whole image.',
+        'Third-person rooftop view, framed the way Tenchu Stealth Assassins 1998 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with silent deadly patience.',
+      rendering_and_quality:
+        'Authentic PS1 stealth screen, matching real Tenchu Stealth Assassins 1998 screenshots.',
       creative_brief:
-        "Third-person shinobi stealth gameplay: an original capture of a ninja crouched on castle rooftops at night, patrols below, grappling lines and moonlight. Carry it through shinobi, castle rooftops, patrols below, moonlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'shinobi; castle rooftops; patrols below; moonlight',
+        "Acquire Tenchu: Stealth Assassins (1998) look: PS1 low-poly ninja stealth on moonlit rooftops, heavy distance fog, grappling hooks and stealth kills. Carry it through Tenchu fog, low-poly ninja, rooftops. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Tenchu fog; low-poly ninja; rooftops',
     },
     ui: {
       previewStatus: 'pending',
@@ -363,35 +360,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-198',
-    name: 'Castle Siege Command Gameplay',
-    displayName: 'Castle Siege Command Gameplay',
+    name: 'Age of Empires II 1999 - Ensemble Isometric Siege',
+    displayName: 'Age of Empires II 1999 - Ensemble Isometric Siege',
     styleAnchors: [
-      'Castle Siege Command Gameplay',
+      'Age of Empires II 1999 - Ensemble Isometric Siege',
       'feudal siege strategy gameplay',
       'siege engines',
     ],
     category: '10. Graphic & Feudal Gameplay',
     domain: 'feudal siege strategy gameplay',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Castle siege command gameplay: an original strategy capture of commanding a feudal siege from above, battering rams, ladders, archers and burning towers.',
+        'Ensemble Studios Age of Empires II (1999) look: isometric sprite RTS of medieval armies, castles, siege towers and rams, bright painted terrain.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject as units in a feudal siege seen from a commanding height.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as small isometric medieval unit sprites. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Earth tones, stone grey and fire orange, kept consistent across the whole image.',
+        'Grass green, castle stone and team colors, true to the Age of Empires II 1999 palette.',
       lighting_and_shadow:
-        'Smoke-filtered daylight and fire, kept consistent across the whole image.',
+        'Bright even RTS light, lit the way Age of Empires II 1999 lights its levels.',
       texture_and_material:
-        'Stone walls, wooden siege engines and banners, kept consistent across the whole image.',
-      camera_and_composition: 'High angled strategy view, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with commanding strategy, kept consistent across the whole image.',
-      rendering_and_quality: 'Clean capture with no UI, kept consistent across the whole image.',
+        'Pre-rendered isometric sprites, with the in-engine surface finish of Age of Empires II 1999.',
+      camera_and_composition:
+        'High isometric RTS view, framed the way Age of Empires II 1999 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with grand strategic siege.',
+      rendering_and_quality:
+        'Authentic late-nineties RTS screen, matching real Age of Empires II 1999 screenshots.',
       creative_brief:
-        "Castle siege command gameplay: an original strategy capture of commanding a feudal siege from above, battering rams, ladders, archers and burning towers. Carry it through siege engines, castle walls, archers, high view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'siege engines; castle walls; archers; high view',
+        "Ensemble Studios Age of Empires II (1999) look: isometric sprite RTS of medieval armies, castles, siege towers and rams, bright painted terrain. Carry it through AoE II isometric, siege, castles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'AoE II isometric; siege; castles',
     },
     ui: {
       previewStatus: 'pending',
@@ -399,35 +397,34 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-199',
-    name: 'Warband Formation Battle Gameplay',
-    displayName: 'Warband Formation Battle Gameplay',
+    name: 'Mordhau 2020 - Triternion Medieval Melee',
+    displayName: 'Mordhau 2020 - Triternion Medieval Melee',
     styleAnchors: [
-      'Warband Formation Battle Gameplay',
+      'Mordhau 2020 - Triternion Medieval Melee',
       'medieval formation battle gameplay',
       'shield wall',
     ],
     category: '10. Graphic & Feudal Gameplay',
     domain: 'medieval formation battle gameplay',
     negativePrompt:
-      'gore, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Warband formation battle gameplay: an original third-person capture from inside a shield wall as two medieval formations collide on a muddy field.',
+        'Triternion Mordhau (2020) look: first-person medieval melee battles, shield walls, gritty realistic armor, muddy fields and chaotic mass fights.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; place the subject within a shield wall formation in a medieval battle.',
-      color_and_tone:
-        'Mud brown, faded banners and steel grey, kept consistent across the whole image.',
-      lighting_and_shadow: 'Overcast light and dust, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as gritty medieval soldiers in mail and plate. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Mud brown, steel and banner colors, true to the Mordhau 2020 palette.',
+      lighting_and_shadow: 'Overcast battle light, lit the way Mordhau 2020 lights its levels.',
       texture_and_material:
-        'Shields, mud, mail and pole weapons, kept consistent across the whole image.',
+        'Realistic mud and steel, with the in-engine surface finish of Mordhau 2020.',
       camera_and_composition:
-        'Low third-person within the formation, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with crushing collective force.',
+        'First-person shield wall view, framed the way Mordhau 2020 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with chaotic brutal melee.',
       rendering_and_quality:
-        'Clean capture without gore or UI, kept consistent across the whole image.',
+        'Authentic medieval melee screen, matching real Mordhau 2020 screenshots.',
       creative_brief:
-        "Warband formation battle gameplay: an original third-person capture from inside a shield wall as two medieval formations collide on a muddy field. Carry it through shield wall, formations colliding, muddy field, banners. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'shield wall; formations colliding; muddy field; banners',
+        "Triternion Mordhau (2020) look: first-person medieval melee battles, shield walls, gritty realistic armor, muddy fields and chaotic mass fights. Carry it through Mordhau melee, shield walls, mud. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Mordhau melee; shield walls; mud',
     },
     ui: {
       previewStatus: 'pending',
@@ -435,36 +432,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-200',
-    name: 'Hand-Drawn Feudal Brawler Gameplay',
-    displayName: 'Hand-Drawn Feudal Brawler Gameplay',
+    name: 'Muramasa The Demon Blade 2009 - Vanillaware Painted Feudal',
+    displayName: 'Muramasa The Demon Blade 2009 - Vanillaware Painted Feudal',
     styleAnchors: [
-      'Hand-Drawn Feudal Brawler Gameplay',
+      'Muramasa The Demon Blade 2009 - Vanillaware Painted Feudal',
       '2D hand-drawn feudal action gameplay',
       'hand-drawn warriors',
     ],
     category: '10. Graphic & Feudal Gameplay',
     domain: '2D hand-drawn feudal action gameplay',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Hand-drawn feudal brawler gameplay: an original side-scrolling capture with hand-animated warriors, bold outlines and painted feudal villages under attack.',
+        'Vanillaware Muramasa: The Demon Blade (2009) look: lush hand-painted 2D feudal Japan by George Kamitani, flowing sword arcs, layered scenery and yokai.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject as a hand-drawn warrior in a side-scrolling feudal brawl.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as elegant hand-painted feudal figures. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Warm painted backgrounds with bold character colors, kept consistent across the whole image.',
+        'Lush green, sunset gold and cherry pink, true to the Muramasa The Demon Blade 2009 palette.',
       lighting_and_shadow:
-        'Painted light and flat character shadows, kept consistent across the whole image.',
+        'Painted glow and warm light, lit the way Muramasa The Demon Blade 2009 lights its levels.',
       texture_and_material:
-        'Hand-inked lines, painted wood and paper walls, kept consistent across the whole image.',
+        'Hand-painted 2D art, with the in-engine surface finish of Muramasa The Demon Blade 2009.',
       camera_and_composition:
-        'Side-on lane with foreground and background, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with lively feudal action.',
+        'Side-scrolling view, framed the way Muramasa The Demon Blade 2009 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with lush elegant adventure.',
       rendering_and_quality:
-        'Clean hand-drawn capture with no UI, kept consistent across the whole image.',
+        'Authentic hand-painted action screen, matching real Muramasa The Demon Blade 2009 screenshots.',
       creative_brief:
-        "Hand-drawn feudal brawler gameplay: an original side-scrolling capture with hand-animated warriors, bold outlines and painted feudal villages under attack. Carry it through hand-drawn warriors, side-scrolling, painted village, bold outlines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'hand-drawn warriors; side-scrolling; painted village; bold outlines',
+        "Vanillaware Muramasa: The Demon Blade (2009) look: lush hand-painted 2D feudal Japan by George Kamitani, flowing sword arcs, layered scenery and yokai. Carry it through Muramasa painted, feudal Japan, sword arcs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Muramasa painted; feudal Japan; sword arcs',
     },
     ui: {
       previewStatus: 'pending',
@@ -472,35 +469,34 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-201',
-    name: 'Spirit Hunter Action Gameplay',
-    displayName: 'Spirit Hunter Action Gameplay',
+    name: 'Pocky & Rocky 1992 - Natsume Shrine Maiden',
+    displayName: 'Pocky & Rocky 1992 - Natsume Shrine Maiden',
     styleAnchors: [
-      'Spirit Hunter Action Gameplay',
+      'Pocky & Rocky 1992 - Natsume Shrine Maiden',
       'folklore spirit hunting action gameplay',
       'folklore spirits',
     ],
     category: '10. Graphic & Feudal Gameplay',
     domain: 'folklore spirit hunting action gameplay',
     negativePrompt:
-      'readable talisman text, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a shrine maiden with a tanuki partner, readable talisman text, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Spirit hunter action gameplay: an original third-person capture of a hunter fighting folklore spirits in a moonlit shrine, talismans, glowing spirit trails and mist.',
+        'Natsume Pocky & Rocky (1992) look: top-down SNES shooter with shrine maidens hurling ofuda talismans at yokai, bright 16-bit shrines and spirit swarms.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject battling folklore spirits in a moonlit shrine.',
-      color_and_tone:
-        'Moonlit blue, spirit violet and talisman gold, kept consistent across the whole image.',
-      lighting_and_shadow: 'Spirit glow and moonlight, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as bright 16-bit shrine maidens and yokai sprites. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Shrine red, moon blue and foxfire, true to the Pocky & Rocky 1992 palette.',
+      lighting_and_shadow: 'Flat 16-bit light, lit the way Pocky & Rocky 1992 lights its levels.',
       texture_and_material:
-        'Shrine wood, paper talismans and mist, kept consistent across the whole image.',
+        'Crisp 16-bit sprites, with the in-engine surface finish of Pocky & Rocky 1992.',
       camera_and_composition:
-        'Third-person with spirits circling, kept consistent across the whole image.',
-      atmosphere_and_mood: 'Keep the requested mood with eerie folklore action.',
+        'Top-down shooter view, framed the way Pocky & Rocky 1992 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with spirited yokai chaos.',
       rendering_and_quality:
-        'Clean capture with no readable talismans, kept consistent across the whole image.',
+        'Authentic SNES shooter screen, matching real Pocky & Rocky 1992 screenshots.',
       creative_brief:
-        "Spirit hunter action gameplay: an original third-person capture of a hunter fighting folklore spirits in a moonlit shrine, talismans, glowing spirit trails and mist. Carry it through folklore spirits, moonlit shrine, talismans, spirit trails. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'folklore spirits; moonlit shrine; talismans; spirit trails',
+        "Natsume Pocky & Rocky (1992) look: top-down SNES shooter with shrine maidens hurling ofuda talismans at yokai, bright 16-bit shrines and spirit swarms. Carry it through Pocky & Rocky shrine, talismans, yokai. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Pocky & Rocky shrine; talismans; yokai',
     },
     ui: {
       previewStatus: 'pending',
@@ -508,35 +504,34 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-202',
-    name: 'Comic-Panel Action Gameplay',
-    displayName: 'Comic-Panel Action Gameplay',
+    name: 'Comix Zone 1995 - Sega Comic Page Brawler',
+    displayName: 'Comix Zone 1995 - Sega Comic Page Brawler',
     styleAnchors: [
-      'Comic-Panel Action Gameplay',
+      'Comix Zone 1995 - Sega Comic Page Brawler',
       'comic-book panel action gameplay',
       'comic panels',
     ],
     category: '10. Graphic & Feudal Gameplay',
     domain: 'comic-book panel action gameplay',
     negativePrompt:
-      'speech bubbles or lettering, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'a blond artist hero with a pet rat, speech bubbles or lettering, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts',
     style: {
       aesthetic:
-        'Comic-panel action gameplay: an original capture where the game world is split into comic-book panels, bold inks, halftone shading and action spilling across borders.',
+        'Sega Technical Institute Comix Zone (1995) look: brawler set inside comic book pages, heroes jumping between panels, hand-drawn villains and halftone effects.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject fighting across comic-book panels with action breaking the borders.',
-      color_and_tone: 'Bold inks with flat comic colors and halftone.',
-      lighting_and_shadow: 'Heavy ink shadows, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as comic-page heroes inside panels. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Comic print colors and halftone, true to the Comix Zone 1995 palette.',
+      lighting_and_shadow: 'Flat comic light, lit the way Comix Zone 1995 lights its levels.',
       texture_and_material:
-        'Panel borders, halftone dots and paper, kept consistent across the whole image.',
+        'Printed halftone and ink, with the in-engine surface finish of Comix Zone 1995.',
       camera_and_composition:
-        'Multi-panel page with a dominant action panel, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with pulpy momentum, kept consistent across the whole image.',
+        'Comic page panel view, framed the way Comix Zone 1995 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with rowdy comic-book action.',
       rendering_and_quality:
-        'Clean capture with no speech bubbles, kept consistent across the whole image.',
+        'Authentic Mega Drive comic brawler screen, matching real Comix Zone 1995 screenshots.',
       creative_brief:
-        "Comic-panel action gameplay: an original capture where the game world is split into comic-book panels, bold inks, halftone shading and action spilling across borders. Carry it through comic panels, halftone, action across borders, bold inks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'comic panels; halftone; action across borders; bold inks',
+        "Sega Technical Institute Comix Zone (1995) look: brawler set inside comic book pages, heroes jumping between panels, hand-drawn villains and halftone effects. Carry it through Comix Zone panels, halftone, page brawl. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Comix Zone panels; halftone; page brawl',
     },
     ui: {
       previewStatus: 'pending',
@@ -544,37 +539,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-203',
-    name: 'Directional Swordplay Duel Gameplay',
-    displayName: 'Directional Swordplay Duel Gameplay',
+    name: 'Kingdom Come Deliverance 2018 - Warhorse Realistic Medieval',
+    displayName: 'Kingdom Come Deliverance 2018 - Warhorse Realistic Medieval',
     styleAnchors: [
-      'Directional Swordplay Duel Gameplay',
+      'Kingdom Come Deliverance 2018 - Warhorse Realistic Medieval',
       'stance-based sword duel gameplay',
       'heavy armor duel',
     ],
     category: '10. Graphic & Feudal Gameplay',
     domain: 'stance-based sword duel gameplay',
     negativePrompt:
-      'stance indicators, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'stance indicators, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Directional swordplay duel gameplay: an original third-person capture of a tense sword duel where fighters shift stances high, left and right in heavy armor.',
+        'Warhorse Studios Kingdom Come: Deliverance (2018) look: realistic fifteenth-century Bohemia, historically accurate armor, torchlit courtyards and first-person swordplay.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject in a tense heavy-armor sword duel of shifting stances.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as historically accurate medieval fighters. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Steel grey, torchlight and faction colors, kept consistent across the whole image.',
+        'Torch amber, steel and earth, true to the Kingdom Come Deliverance 2018 palette.',
       lighting_and_shadow:
-        'Torchlit courtyard with sparks, kept consistent across the whole image.',
+        'Torchlit night, lit the way Kingdom Come Deliverance 2018 lights its levels.',
       texture_and_material:
-        'Plate armor, chain mail and stone, kept consistent across the whole image.',
+        'Realistic steel and cloth, with the in-engine surface finish of Kingdom Come Deliverance 2018.',
       camera_and_composition:
-        'Over-the-shoulder facing the opponent, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with measured tension, kept consistent across the whole image.',
+        'First-person duel view, framed the way Kingdom Come Deliverance 2018 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with grounded tense duel.',
       rendering_and_quality:
-        'Clean capture with no stance UI, kept consistent across the whole image.',
+        'Authentic realistic medieval screen, matching real Kingdom Come Deliverance 2018 screenshots.',
       creative_brief:
-        "Directional swordplay duel gameplay: an original third-person capture of a tense sword duel where fighters shift stances high, left and right in heavy armor. Carry it through heavy armor duel, shifting stances, sparks, courtyard. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'heavy armor duel; shifting stances; sparks; courtyard',
+        "Warhorse Studios Kingdom Come: Deliverance (2018) look: realistic fifteenth-century Bohemia, historically accurate armor, torchlit courtyards and first-person swordplay. Carry it through Kingdom Come realism, swordplay, Bohemia. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Kingdom Come realism; swordplay; Bohemia',
     },
     ui: {
       previewStatus: 'pending',
@@ -582,36 +576,34 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-204',
-    name: 'Samurai Tactics Grid Gameplay',
-    displayName: 'Samurai Tactics Grid Gameplay',
+    name: 'Shogun Showdown 2023 - Roboatino Pixel Tactics',
+    displayName: 'Shogun Showdown 2023 - Roboatino Pixel Tactics',
     styleAnchors: [
-      'Samurai Tactics Grid Gameplay',
+      'Shogun Showdown 2023 - Roboatino Pixel Tactics',
       'feudal turn-based tactics gameplay',
       'isometric grid',
     ],
     category: '10. Graphic & Feudal Gameplay',
     domain: 'feudal turn-based tactics gameplay',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Samurai tactics grid gameplay: an original isometric turn-based capture of feudal units on a grid in a mountain temple, clan banners and movement tiles.',
+        'Roboatino Shogun Showdown (2023) look: turn-based pixel tactics on a line of feudal Japanese tiles, samurai, monks and oni in crisp sprites.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject as feudal units on an isometric tactics grid.',
-      color_and_tone:
-        'Earthy temple tones with clan color accents, kept consistent across the whole image.',
-      lighting_and_shadow:
-        'Soft daylight and tile highlights, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as crisp pixel samurai and oni. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Temple red, stone and night blue, true to the Shogun Showdown 2023 palette.',
+      lighting_and_shadow: 'Flat pixel light, lit the way Shogun Showdown 2023 lights its levels.',
       texture_and_material:
-        'Stone steps, wood, banners and grid tiles, kept consistent across the whole image.',
-      camera_and_composition: 'Isometric grid view, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with patient strategy, kept consistent across the whole image.',
+        'Crisp pixel art, with the in-engine surface finish of Shogun Showdown 2023.',
+      camera_and_composition:
+        'Tactical side view, framed the way Shogun Showdown 2023 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with tight tactical tension.',
       rendering_and_quality:
-        'Clean capture with no UI numbers, kept consistent across the whole image.',
+        'Authentic pixel tactics screen, matching real Shogun Showdown 2023 screenshots.',
       creative_brief:
-        "Samurai tactics grid gameplay: an original isometric turn-based capture of feudal units on a grid in a mountain temple, clan banners and movement tiles. Carry it through isometric grid, feudal units, clan banners, temple. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'isometric grid; feudal units; clan banners; temple',
+        "Roboatino Shogun Showdown (2023) look: turn-based pixel tactics on a line of feudal Japanese tiles, samurai, monks and oni in crisp sprites. Carry it through Shogun Showdown pixels, oni, tactics. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Shogun Showdown pixels; oni; tactics',
     },
     ui: {
       previewStatus: 'pending',
@@ -619,31 +611,34 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-205',
-    name: 'Gladiator Arena Crowd Gameplay',
-    displayName: 'Gladiator Arena Crowd Gameplay',
-    styleAnchors: ['Gladiator Arena Crowd Gameplay', 'arena combat gameplay', 'sand arena'],
+    name: 'Ryse Son of Rome 2013 - Crytek Colosseum',
+    displayName: 'Ryse Son of Rome 2013 - Crytek Colosseum',
+    styleAnchors: [
+      'Ryse Son of Rome 2013 - Crytek Colosseum',
+      'arena combat gameplay',
+      'sand arena',
+    ],
     category: '10. Graphic & Feudal Gameplay',
     domain: 'arena combat gameplay',
     negativePrompt:
-      'gore, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Gladiator arena crowd gameplay: an original third-person capture of gladiators fighting in a sunlit sand arena, roaring crowd, beasts and emperor box.',
+        'Crytek Ryse: Son of Rome (2013) look: third-person Roman gladiator combat in a sunlit colosseum, crowds, cinematic armor detail and dust.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject fighting in a sunlit sand arena before a crowd.',
-      color_and_tone:
-        'Bright sand, sun gold and crowd colors, kept consistent across the whole image.',
-      lighting_and_shadow: 'Harsh midday sun and dust, kept consistent across the whole image.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as Roman gladiators and legionaries. Wardrobe details apply only when the prompt leaves clothing open.',
+      color_and_tone: 'Sand gold, Roman red and bronze, true to the Ryse Son of Rome 2013 palette.',
+      lighting_and_shadow: 'Hot sun and dust, lit the way Ryse Son of Rome 2013 lights its levels.',
       texture_and_material:
-        'Sand, bronze armor and stone tiers, kept consistent across the whole image.',
-      camera_and_composition: 'Low angle with the crowd in the tiers.',
-      atmosphere_and_mood:
-        'Keep the requested mood with roaring spectacle, kept consistent across the whole image.',
+        'Detailed bronze and leather, with the in-engine surface finish of Ryse Son of Rome 2013.',
+      camera_and_composition:
+        'Third-person arena view, framed the way Ryse Son of Rome 2013 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with roaring arena spectacle.',
       rendering_and_quality:
-        'Clean capture without gore or UI, kept consistent across the whole image.',
+        'Authentic cinematic arena screen, matching real Ryse Son of Rome 2013 screenshots.',
       creative_brief:
-        "Gladiator arena crowd gameplay: an original third-person capture of gladiators fighting in a sunlit sand arena, roaring crowd, beasts and emperor box. Carry it through sand arena, roaring crowd, gladiators, beasts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'sand arena; roaring crowd; gladiators; beasts',
+        "Crytek Ryse: Son of Rome (2013) look: third-person Roman gladiator combat in a sunlit colosseum, crowds, cinematic armor detail and dust. Carry it through Ryse colosseum, gladiators, crowds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Ryse colosseum; gladiators; crowds',
     },
     ui: {
       previewStatus: 'pending',
@@ -651,31 +646,36 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP12-206',
-    name: 'Horseback Lance Joust Gameplay',
-    displayName: 'Horseback Lance Joust Gameplay',
-    styleAnchors: ['Horseback Lance Joust Gameplay', 'tournament joust gameplay', 'joust'],
+    name: 'Defender of the Crown 1986 - Cinemaware Painted Joust',
+    displayName: 'Defender of the Crown 1986 - Cinemaware Painted Joust',
+    styleAnchors: [
+      'Defender of the Crown 1986 - Cinemaware Painted Joust',
+      'tournament joust gameplay',
+      'joust',
+    ],
     category: '10. Graphic & Feudal Gameplay',
     domain: 'tournament joust gameplay',
     negativePrompt:
-      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Horseback lance joust gameplay: an original first- or third-person capture of a tournament joust, lances lowered, splintering wood and banner-lined lists.',
+        'Cinemaware Defender of the Crown (1986) look: Amiga painted pixel art of medieval England, the famous jousting view down the tilt, banners and castles.',
       subject_treatment:
-        'Preserve the requested identity, count, pose and action with original characters; show the subject charging in a tournament joust with lance lowered.',
+        'Preserve the requested identity, count, pose, action and any requested clothing; render people as painted Amiga pixel knights and nobles. Wardrobe details apply only when the prompt leaves clothing open.',
       color_and_tone:
-        'Bright heraldic banners, green field and steel, kept consistent across the whole image.',
-      lighting_and_shadow: 'Clear daylight and dust, kept consistent across the whole image.',
+        'Rich Amiga banners and green fields, true to the Defender of the Crown 1986 palette.',
+      lighting_and_shadow:
+        'Painted daylight, lit the way Defender of the Crown 1986 lights its levels.',
       texture_and_material:
-        'Splintering lances, caparisons and armor, kept consistent across the whole image.',
+        'Painted Amiga pixel art, with the in-engine surface finish of Defender of the Crown 1986.',
       camera_and_composition:
-        'Down the tilt barrier toward the opponent, kept consistent across the whole image.',
-      atmosphere_and_mood:
-        'Keep the requested mood with chivalric impact, kept consistent across the whole image.',
-      rendering_and_quality: 'Clean capture with no UI, kept consistent across the whole image.',
+        'First-person joust view down the lists, framed the way Defender of the Crown 1986 frames its gameplay screens.',
+      atmosphere_and_mood: 'Keep the requested mood with chivalric romantic drama.',
+      rendering_and_quality:
+        'Authentic Amiga painted screen, matching real Defender of the Crown 1986 screenshots.',
       creative_brief:
-        "Horseback lance joust gameplay: an original first- or third-person capture of a tournament joust, lances lowered, splintering wood and banner-lined lists. Carry it through joust, lowered lances, tilt barrier, banners. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
-      key_features: 'joust; lowered lances; tilt barrier; banners',
+        "Cinemaware Defender of the Crown (1986) look: Amiga painted pixel art of medieval England, the famous jousting view down the tilt, banners and castles. Carry it through Defender of the Crown joust, Amiga painting. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'Defender of the Crown joust; Amiga painting',
     },
     ui: {
       previewStatus: 'pending',

@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-183
 packId: pack_12
-name: Twin-Stick Dungeon Shooter Gameplay
+name: Enter the Gungeon 2016 - Dodge Roll Pixel Bullet Hell
 styleAnchors:
-  - Twin-Stick Dungeon Shooter Gameplay
+  - Enter the Gungeon 2016 - Dodge Roll Pixel Bullet Hell
   - overhead dungeon shooter gameplay
   - overhead
-displayName: Twin-Stick Dungeon Shooter Gameplay
+displayName: Enter the Gungeon 2016 - Dodge Roll Pixel Bullet Hell
 category: 9. Gothic & Dungeon Gameplay
 domain: overhead dungeon shooter gameplay
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,22 @@ tags:
   - twinstick-dungeon
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Twin-stick dungeon shooter gameplay: an original overhead capture of a hero firing magical bullets in every direction through a dungeon full of bullet-hell enemies.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject firing glowing projectiles from an overhead dungeon view.
-  color_and_tone: Dark dungeon with neon bullet patterns, kept consistent across the whole image.
-  lighting_and_shadow: Glowing projectiles lighting the floor, kept consistent across the whole image.
-  texture_and_material: Pixel or low-poly dungeon tiles and particles, kept consistent across the whole image.
-  camera_and_composition: Overhead view with dense bullet patterns, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with frantic playfulness, kept consistent across the whole image.
-  rendering_and_quality: Clean capture with readable patterns, kept consistent across the whole image.
-  creative_brief: "Twin-stick dungeon shooter gameplay: an original overhead capture of a hero firing magical bullets in every direction through a dungeon full of bullet-hell enemies. Carry it through overhead, bullet patterns, glowing shots, dungeon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: overhead; bullet patterns; glowing shots; dungeon
+  aesthetic: 'Dodge Roll Enter the Gungeon (2016) look: top-down pixel bullet hell dungeon, gun puns, bullet-shaped enemies, spirals of glowing projectiles and dodge rolls.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as small pixel gunslingers seen from above. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Dungeon grey and neon bullet colors, true to the Enter the Gungeon 2016 palette.
+  lighting_and_shadow: Pixel light with bullet glow, lit the way Enter the Gungeon 2016 lights its levels.
+  texture_and_material: Detailed pixel art, with the in-engine surface finish of Enter the Gungeon 2016.
+  camera_and_composition: Top-down dungeon view, framed the way Enter the Gungeon 2016 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with frantic bullet chaos.
+  rendering_and_quality: Authentic pixel bullet-hell screen, matching real Enter the Gungeon 2016 screenshots.
+  creative_brief: 'Dodge Roll Enter the Gungeon (2016) look: top-down pixel bullet hell dungeon, gun puns, bullet-shaped enemies, spirals of glowing projectiles and dodge rolls. Carry it through Gungeon pixel bullets, top-down, bosses. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Gungeon pixel bullets; top-down; bosses
 avoidRules:
+  - bullet-shaped enemies with guns
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +44,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: bullet-shaped enemies with guns, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +68,7 @@ taxonomy:
     - twinstick-dungeon
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

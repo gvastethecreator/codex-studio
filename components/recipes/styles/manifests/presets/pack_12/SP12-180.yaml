@@ -1,15 +1,15 @@
 schemaVersion: 1
 id: SP12-180
 packId: pack_12
-name: Moonlit Castle Side-View Gameplay
+name: Salt and Sanctuary 2016 - Ska Studios Grim Hand-Drawn
 styleAnchors:
-  - Moonlit Castle Side-View Gameplay
+  - Salt and Sanctuary 2016 - Ska Studios Grim Hand-Drawn
   - side-view gothic exploration gameplay
   - side view
-displayName: Moonlit Castle Side-View Gameplay
+displayName: Salt and Sanctuary 2016 - Ska Studios Grim Hand-Drawn
 category: 9. Gothic & Dungeon Gameplay
 domain: side-view gothic exploration gameplay
-version: 1
+version: 3
 supportedTasks:
   - image_generate
   - image_edit
@@ -20,21 +20,21 @@ tags:
   - moonlit-castle
   - gameplay-capture
   - portable-style-study
+  - reference-title
 visualDna:
-  aesthetic: 'Moonlit castle side-view gameplay: an original side-view exploration capture of a lone hero in towering gothic halls, stained moonlight, candles and hidden passages.'
-  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject in a side-view gothic castle corridor.
-  color_and_tone: Deep blue moonlight, crimson drapes and candle gold.
-  lighting_and_shadow: Moonlight through tall windows and candle glow, kept consistent across the whole image.
-  texture_and_material: Carved stone, velvet and iron, kept consistent across the whole image.
-  camera_and_composition: Side-on with parallax background halls, kept consistent across the whole image.
-  atmosphere_and_mood: Keep the requested mood with lonely gothic grandeur.
-  rendering_and_quality: Clean gameplay capture with no UI text, kept consistent across the whole image.
-  creative_brief: "Moonlit castle side-view gameplay: an original side-view exploration capture of a lone hero in towering gothic halls, stained moonlight, candles and hidden passages. Carry it through side view, moonlit halls, parallax, candles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
-  key_features: side view; moonlit halls; parallax; candles
+  aesthetic: 'Ska Studios Salt and Sanctuary (2016) look: side-view hand-drawn grim fantasy, thick-lined gothic characters, towering bosses and moody castle halls.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render people as thick-lined hand-drawn grim warriors. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Moonlit grey, rust and blood red, true to the Salt and Sanctuary 2016 palette.
+  lighting_and_shadow: Stained moonlight and shadows, lit the way Salt and Sanctuary 2016 lights its levels.
+  texture_and_material: Hand-drawn inked textures, with the in-engine surface finish of Salt and Sanctuary 2016.
+  camera_and_composition: Side-view castle view, framed the way Salt and Sanctuary 2016 frames its gameplay screens.
+  atmosphere_and_mood: Keep the requested mood with grim gothic dread.
+  rendering_and_quality: Authentic hand-drawn action screen, matching real Salt and Sanctuary 2016 screenshots.
+  creative_brief: 'Ska Studios Salt and Sanctuary (2016) look: side-view hand-drawn grim fantasy, thick-lined gothic characters, towering bosses and moody castle halls. Carry it through Salt and Sanctuary hand-drawn, side-view, bosses. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Salt and Sanctuary hand-drawn; side-view; bosses
 avoidRules:
   - existing game characters, logos or levels
   - readable interface text
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -43,13 +43,16 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
 assets: {}
 attributes:
-  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -64,6 +67,7 @@ taxonomy:
     - moonlit-castle
     - gameplay-capture
     - portable-style-study
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

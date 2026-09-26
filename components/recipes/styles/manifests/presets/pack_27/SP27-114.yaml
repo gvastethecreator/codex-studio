@@ -27,9 +27,9 @@ visualDna:
   color_and_tone: Sun-baked orange, palm green and faded denim blue.
   lighting_and_shadow: Hard West Coast sun with flat cel shadow blocks.
   texture_and_material: Bold black ink outlines and flat color fills.
-  camera_and_composition: Dynamic loading-screen illustration crop, framed the way GTA San Andreas 2004 composes its shots and pages.
+  camera_and_composition: Dynamic loading-screen illustration crop, framed the way GTA San Andreas 2004 frames its gameplay screens.
   atmosphere_and_mood: Keep the requested mood with gritty sun-baked swagger.
-  rendering_and_quality: Authentic mid-2000s game loading screen illustration, in the recognizable hand of GTA San Andreas 2004.
+  rendering_and_quality: Authentic mid-2000s game loading screen illustration, matching real GTA San Andreas 2004 screenshots.
   creative_brief: 'Rockstar Games Grand Theft Auto: San Andreas (2004) loading screen look: bold black ink outlines, flat cel color blocks, gritty early-nineties West Coast city characters and sun-baked streets. Carry it through GTA SA loading art, bold ink, flat color, West Coast. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: GTA SA loading art; bold ink; flat color; West Coast
 avoidRules:
@@ -47,13 +47,12 @@ avoidRules:
   - watermark
   - text
   - readable labels
-  - UI overlay
   - franchise likeness
   - real person likeness
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: existing gang characters, a bandana-wearing protagonist in a white tank top, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: existing gang characters, a bandana-wearing protagonist in a white tank top, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
