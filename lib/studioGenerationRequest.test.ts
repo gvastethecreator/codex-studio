@@ -35,6 +35,29 @@ describe('prepareStudioGenerationRequest', () => {
     expect(composer.ok && composer.finalConfig.attachments[0]?.strength).toBe(0.15);
     expect(generationConfig.attachments[0]?.strength).toBe(0.5);
   });
+
+  it('holds a preserved reference more strongly than a reinterpreted one', () => {
+    const generationConfig = {
+      ...DEFAULT_GENERATION_CONFIG,
+      prompt: 'red cube',
+      recipeId: 'styles' as const,
+      attachments: [attachment('current')],
+    };
+    const preserved = prepareStudioGenerationRequest({
+      generationConfig: {
+        ...generationConfig,
+        recipeParams: { styleReferenceMode: 'preserve' },
+      },
+    });
+    const reinterpreted = prepareStudioGenerationRequest({
+      generationConfig: {
+        ...generationConfig,
+        recipeParams: { styleReferenceMode: 'reinterpret' },
+      },
+    });
+    expect(preserved.ok && preserved.finalConfig.attachments[0]?.strength).toBe(0.85);
+    expect(reinterpreted.ok && reinterpreted.finalConfig.attachments[0]?.strength).toBe(0.35);
+  });
   it('captures the displayed HTTP default while preserving an explicit transport choice', () => {
     const generationConfig = { ...DEFAULT_GENERATION_CONFIG, prompt: 'red cube' };
     const request = prepareStudioGenerationRequest({

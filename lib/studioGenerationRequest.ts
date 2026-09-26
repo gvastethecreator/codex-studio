@@ -66,6 +66,13 @@ export function prepareStudioGenerationRequest({
   if (finalAttachments.some((attachment) => attachment.isProcessing)) {
     return { ok: false, message: 'Wait for reference images to finish loading before generating.' };
   }
+  const recipeParams = {
+    ...(generationConfig.recipeParams ?? {}),
+    ...(configOverrides?.recipeParams ?? {}),
+  };
+  const styleMode = recipeParams.styleReferenceMode ?? recipeParams.intentionalMode;
+  const stylesReferenceStrength =
+    styleMode === 'preserve' ? 0.85 : styleMode === 'reinterpret' ? 0.35 : 0.15;
   const hasReferenceImage = finalAttachments.length > 0;
 
   if (!finalPrompt && !hasReferenceImage) {
@@ -94,7 +101,8 @@ export function prepareStudioGenerationRequest({
         configOverrides?.codexTransport ?? generationConfig.codexTransport ?? defaultCodexTransport,
       attachments: finalAttachments.map((attachment) => ({
         ...attachment,
-        strength: effectiveRecipeId === 'styles' ? 0.15 : attachment.strength,
+        strength:
+          effectiveRecipeId === 'styles' ? stylesReferenceStrength : attachment.strength,
       })),
       prompt: finalPrompt,
     },
