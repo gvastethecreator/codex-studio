@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-311
+packId: pack_25
+name: Contour-to-Volume Transitions
+styleAnchors:
+  - Contour-to-Volume Transitions
+  - outline to volume styleframes
+  - outline to planes to volume
+displayName: Contour-to-Volume Transitions
+category: 16. Motion Styleframes & Broadcast
+domain: outline to volume styleframes
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - motion-styleframes-and-broadcast
+  - contour-volume
+  - applied-design
+  - motion
+  - r-mot-11
+  - requested-text
+visualDna:
+  aesthetic: 'Contour-to-Volume Transitions: styleframes where an outline becomes flat planes and then a solid volume, key points kept at every stage.'
+  subject_treatment: Show the prompt's shape in keyframes going from outline to flat planes to volume, keeping its key points and any words exact.
+  color_and_tone: Color by face or function with the original outline contrast kept.
+  lighting_and_shadow: Light arriving coherently as volume appears, direction stable throughout.
+  texture_and_material: Line becoming surface with controlled thickness and one material.
+  camera_and_composition: A constant camera and axis during the conversion.
+  atmosphere_and_mood: Progressive construction with a pause on the flat stage and a solid settle.
+  rendering_and_quality: Crisp keyframes where the final state is clearly the same shape.
+  creative_brief: "Contour-to-Volume Transitions: styleframes where an outline becomes flat planes and then a solid volume, key points kept at every stage. Carry it through outline to planes to volume, kept key points, fixed camera, three stages. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: outline to planes to volume; kept key points; fixed camera; three stages
+avoidRules:
+  - different objects per frame
+  - camera hiding discontinuity
+  - claims of finished rendered video
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: different objects per frame, camera hiding discontinuity, claims of finished rendered video, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: motion-styleframes-and-broadcast
+  categoryName: 16. Motion Styleframes & Broadcast
+  domain: outline to volume styleframes
+  tags:
+    - curation-v2
+    - motion-styleframes-and-broadcast
+    - contour-volume
+    - applied-design
+    - motion
+    - r-mot-11
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

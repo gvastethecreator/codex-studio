@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-305
+packId: pack_25
+name: Optical Register Drift
+styleAnchors:
+  - Optical Register Drift
+  - misregistered layer drift styleframes
+  - slipping ink layers
+displayName: Optical Register Drift
+category: 16. Motion Styleframes & Broadcast
+domain: misregistered layer drift styleframes
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - motion-styleframes-and-broadcast
+  - register-drift
+  - applied-design
+  - motion
+  - r-mot-05
+  - requested-text
+visualDna:
+  aesthetic: 'Optical Register Drift: styleframes where ink layers slip slightly out of register and drift back into perfect alignment.'
+  subject_treatment: Show the prompt's artwork as keyframes where its color layers slip slightly apart and realign, the words always readable on one layer.
+  color_and_tone: Two or three inks related to the artwork.
+  lighting_and_shadow: Flat optical rendering with no flashes or flicker.
+  texture_and_material: Controlled print edges and small offsets relative to letter size.
+  camera_and_composition: A stable reading focus with smaller offsets on secondary areas.
+  atmosphere_and_mood: A slow drift, a short tension and a crisp realignment.
+  rendering_and_quality: Crisp keyframes ending perfectly registered with the copy intact.
+  creative_brief: "Optical Register Drift: styleframes where ink layers slip slightly out of register and drift back into perfect alignment. Carry it through slipping ink layers, slow drift, crisp realign, readable copy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: slipping ink layers; slow drift; crisp realign; readable copy
+avoidRules:
+  - generic chromatic aberration
+  - intense flashes
+  - claims of finished rendered video
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: generic chromatic aberration, intense flashes, claims of finished rendered video, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: motion-styleframes-and-broadcast
+  categoryName: 16. Motion Styleframes & Broadcast
+  domain: misregistered layer drift styleframes
+  tags:
+    - curation-v2
+    - motion-styleframes-and-broadcast
+    - register-drift
+    - applied-design
+    - motion
+    - r-mot-05
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

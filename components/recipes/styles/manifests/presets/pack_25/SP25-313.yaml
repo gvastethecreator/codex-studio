@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-313
+packId: pack_25
+name: Archive Scan Sequences
+styleAnchors:
+  - Archive Scan Sequences
+  - scanning window reading styleframes
+  - moving reading window
+displayName: Archive Scan Sequences
+category: 16. Motion Styleframes & Broadcast
+domain: scanning window reading styleframes
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - motion-styleframes-and-broadcast
+  - archive-scan
+  - applied-design
+  - motion
+  - r-mot-13
+  - requested-text
+visualDna:
+  aesthetic: 'Archive Scan Sequences: styleframes of a reading window moving across supplied content, pausing and zooming on a detail.'
+  subject_treatment: Show a reading window moving across the prompt's content in keyframes, pausing on a region and repeating its exact text in a detail.
+  color_and_tone: A sober archive palette with one accent for the selection.
+  lighting_and_shadow: Contained optical light with the main text kept in contrast.
+  texture_and_material: A discreet support texture with crisp records and nothing invented.
+  camera_and_composition: A stable overview, a moving window and a detail tied to the selection.
+  atmosphere_and_mood: Exploration, stop and reading, paced by the content itself.
+  rendering_and_quality: Crisp keyframes with exact texts and a recognizable selection.
+  creative_brief: "Archive Scan Sequences: styleframes of a reading window moving across supplied content, pausing and zooming on a detail. Carry it through moving reading window, pause and detail, exact text, archive palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: moving reading window; pause and detail; exact text; archive palette
+avoidRules:
+  - fake surveillance data
+  - invented documents
+  - claims of finished rendered video
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: fake surveillance data, invented documents, claims of finished rendered video, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: motion-styleframes-and-broadcast
+  categoryName: 16. Motion Styleframes & Broadcast
+  domain: scanning window reading styleframes
+  tags:
+    - curation-v2
+    - motion-styleframes-and-broadcast
+    - archive-scan
+    - applied-design
+    - motion
+    - r-mot-13
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

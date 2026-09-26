@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-303
+packId: pack_25
+name: Inertial Ribbon Transitions
+styleAnchors:
+  - Inertial Ribbon Transitions
+  - ribbon-carried transition styleframes
+  - carrying ribbon
+displayName: Inertial Ribbon Transitions
+category: 16. Motion Styleframes & Broadcast
+domain: ribbon-carried transition styleframes
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - motion-styleframes-and-broadcast
+  - inertial-ribbon
+  - applied-design
+  - motion
+  - r-mot-03
+  - requested-text
+visualDna:
+  aesthetic: 'Inertial Ribbon Transitions: styleframes where one connected ribbon drags the first scene away and brings in the next with believable inertia.'
+  subject_treatment: Show the prompt's transition as keyframes of one flat ribbon carrying the first content out and the next in, ends traceable and words exact.
+  color_and_tone: Ribbon color tied to the identity on compatible backgrounds.
+  lighting_and_shadow: Consistent light across the ribbon folds with every edge visible.
+  texture_and_material: A ribbon of controlled width with limited twist.
+  camera_and_composition: Declared entry, turn and exit, content revealed by the ribbon itself.
+  atmosphere_and_mood: Drag, delay and inertia with one dominant direction and reading pauses.
+  rendering_and_quality: Crisp keyframes with a continuous ribbon outline and traceable ends.
+  creative_brief: "Inertial Ribbon Transitions: styleframes where one connected ribbon drags the first scene away and brings in the next with believable inertia. Carry it through carrying ribbon, inertia, traceable ends, one direction. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: carrying ribbon; inertia; traceable ends; one direction
+avoidRules:
+  - decorative ribbon with no role
+  - text hidden too long
+  - claims of finished rendered video
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: decorative ribbon with no role, text hidden too long, claims of finished rendered video, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: motion-styleframes-and-broadcast
+  categoryName: 16. Motion Styleframes & Broadcast
+  domain: ribbon-carried transition styleframes
+  tags:
+    - curation-v2
+    - motion-styleframes-and-broadcast
+    - inertial-ribbon
+    - applied-design
+    - motion
+    - r-mot-03
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP25-320
+packId: pack_25
+name: Three-Keyframe Continuity Test
+styleAnchors:
+  - Three-Keyframe Continuity Test
+  - three keyframe continuity sheet profile
+  - start, peak, arrival
+displayName: Three-Keyframe Continuity Test
+category: 16. Motion Styleframes & Broadcast
+domain: three keyframe continuity sheet profile
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - motion-styleframes-and-broadcast
+  - three-keyframe
+  - applied-design
+  - motion
+  - profile
+  - r-mot-19
+  - requested-text
+visualDna:
+  aesthetic: 'Three-Keyframe Continuity Test: a sheet of start, peak and arrival keyframes of the same set, with piece ids and correspondences marked.'
+  subject_treatment: Show the prompt's animation as start, peak and arrival keyframes with the same pieces, geometry and exact words, correspondences labeled outside the art.
+  color_and_tone: Fixed palette and roles, any change noted as an explicit transition.
+  lighting_and_shadow: Locked light and camera unless a move is declared.
+  texture_and_material: Consistent material and detail with no new pieces.
+  camera_and_composition: Three frames in a row sharing scale references and anchors.
+  atmosphere_and_mood: A continuity test focused on what changes and what stays.
+  rendering_and_quality: Clean comparison sheet with a complete correspondence table beside it.
+  creative_brief: "Three-Keyframe Continuity Test: a sheet of start, peak and arrival keyframes of the same set, with piece ids and correspondences marked. Carry it through start, peak, arrival, piece ids, locked camera. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: start, peak, arrival; piece ids; locked camera; correspondence notes
+avoidRules:
+  - three unrelated images
+  - claimed finished video
+  - claims of finished rendered video
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: three unrelated images, claimed finished video, claims of finished rendered video, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: motion-styleframes-and-broadcast
+  categoryName: 16. Motion Styleframes & Broadcast
+  domain: three keyframe continuity sheet profile
+  tags:
+    - curation-v2
+    - motion-styleframes-and-broadcast
+    - three-keyframe
+    - applied-design
+    - motion
+    - profile
+    - r-mot-19
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

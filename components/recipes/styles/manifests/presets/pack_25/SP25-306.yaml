@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-306
+packId: pack_25
+name: Mechanical Index Motion
+styleAnchors:
+  - Mechanical Index Motion
+  - discrete mechanical switch styleframes
+  - discrete steps
+displayName: Mechanical Index Motion
+category: 16. Motion Styleframes & Broadcast
+domain: discrete mechanical switch styleframes
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - motion-styleframes-and-broadcast
+  - mechanical-motion
+  - applied-design
+  - motion
+  - r-mot-06
+  - requested-text
+visualDna:
+  aesthetic: 'Mechanical Index Motion: styleframes of states changing in discrete steps with a short shared settle, like a mechanical flip or dial.'
+  subject_treatment: Show the prompt's state change as keyframes of discrete steps with a brief settle, identifiers and order kept and every value exact.
+  color_and_tone: Color per supplied state backed by position or label.
+  lighting_and_shadow: Constant display light with the moment of change visible.
+  texture_and_material: Clean segments or flip panels with crisp, well-defined edges.
+  camera_and_composition: Explicit rest positions for each state and one fixed reference.
+  atmosphere_and_mood: Step, stop and a small settle with a shared mechanical cadence.
+  rendering_and_quality: Crisp keyframes with clear end states and no fake intermediate values.
+  creative_brief: "Mechanical Index Motion: styleframes of states changing in discrete steps with a short shared settle, like a mechanical flip or dial. Carry it through discrete steps, brief settle, exact states, fixed reference. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: discrete steps; brief settle; exact states; fixed reference
+avoidRules:
+  - invented numbers mid-flip
+  - unneeded fake mechanisms
+  - claims of finished rendered video
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: invented numbers mid-flip, unneeded fake mechanisms, claims of finished rendered video, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: motion-styleframes-and-broadcast
+  categoryName: 16. Motion Styleframes & Broadcast
+  domain: discrete mechanical switch styleframes
+  tags:
+    - curation-v2
+    - motion-styleframes-and-broadcast
+    - mechanical-motion
+    - applied-design
+    - motion
+    - r-mot-06
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

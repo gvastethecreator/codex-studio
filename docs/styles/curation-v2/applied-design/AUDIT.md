@@ -59,4 +59,22 @@ A new category could not be created before: `apply.ts` needed an anchor preset i
 
 ## Status
 
-Text authored only. Cards are not generated, and `visualValidation` stays `pending` for every category. `integration-map.json` records where each `R-*` id went: a preset id, the QA doc, or a replacement.
+All 16 categories are integrated in `pack_25`, with 20 presets each (320 in total):
+
+- **Imported cards:** 307, written in English with new briefs.
+- **QA protocols:** 9 verification recipes moved to `QA-PROTOCOLS.md`.
+- **Replaced cards:** 4 that overlapped existing presets.
+- **New presets:** 13 styles, tagged `r-<code>-<nn>-new`, fill the gaps left by the 9 QA recipes and the 4 replaced cards:
+
+  | Category             | New styles                                                                                                |
+  | -------------------- | --------------------------------------------------------------------------------------------------------- |
+  | Interface icons      | Isometric Wire Icons                                                                                      |
+  | Game UI & HUDs       | Contour-Line Gauges                                                                                       |
+  | Product design       | Stacked Ring Forms                                                                                        |
+  | Mockups              | Brand-Shape Set Build, Giant Product Miniature World, Landscape Billboard Mockup, Shop-Window Display Set |
+  | Typography           | Signwriter Brush Lettering                                                                                |
+  | Information graphics | Sketchnote Visual Notes, Slope-Chart Editorials, Periodic Grid Systems                                    |
+  | Wayfinding           | Tiled Mosaic Signage                                                                                      |
+  | Motion               | Cutout Stop-Motion Frames                                                                                 |
+
+Only text is authored so far. No cards are generated yet, and `visualValidation` stays `pending` for every category. `integration-map.json` records where each `R-*` id went: a preset id, the QA doc, or a replacement.

@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-308
+packId: pack_25
+name: Mass-Swap Match Cuts
+styleAnchors:
+  - Mass-Swap Match Cuts
+  - shape-matched cut styleframes
+  - matched mass
+displayName: Mass-Swap Match Cuts
+category: 16. Motion Styleframes & Broadcast
+domain: shape-matched cut styleframes
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - motion-styleframes-and-broadcast
+  - match-cut
+  - applied-design
+  - motion
+  - r-mot-08
+  - requested-text
+visualDna:
+  aesthetic: 'Mass-Swap Match Cuts: two very different scenes joined by a cut where the main mass keeps its exact position, size and direction.'
+  subject_treatment: Show the prompt's two scenes as a before and after pair joined by one dominant shape in the same position and size, the cut declared and words exact.
+  color_and_tone: Palettes changing per scene while the main mass keeps comparable contrast.
+  lighting_and_shadow: Coherent light in each scene, the match coming from composition.
+  texture_and_material: Different materials allowed, one silhouette or axis always shared.
+  camera_and_composition: The mass anchor and bounding box explicit in both frames.
+  atmosphere_and_mood: Setup, match and reveal, energy concentrated in one satisfying swap.
+  rendering_and_quality: Crisp pair of frames with a checkable match across the cut.
+  creative_brief: "Mass-Swap Match Cuts: two very different scenes joined by a cut where the main mass keeps its exact position, size and direction. Carry it through matched mass, same position, declared cut, two scenes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: matched mass; same position; declared cut; two scenes
+avoidRules:
+  - two unrelated images
+  - flash as the only link
+  - claims of finished rendered video
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: two unrelated images, flash as the only link, claims of finished rendered video, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: motion-styleframes-and-broadcast
+  categoryName: 16. Motion Styleframes & Broadcast
+  domain: shape-matched cut styleframes
+  tags:
+    - curation-v2
+    - motion-styleframes-and-broadcast
+    - match-cut
+    - applied-design
+    - motion
+    - r-mot-08
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

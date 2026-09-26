@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP25-318
+packId: pack_25
+name: Broadcast Safe-Area Layout
+styleAnchors:
+  - Broadcast Safe-Area Layout
+  - broadcast title layout profile
+  - safe regions
+displayName: Broadcast Safe-Area Layout
+category: 16. Motion Styleframes & Broadcast
+domain: broadcast title layout profile
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - motion-styleframes-and-broadcast
+  - safe-area
+  - applied-design
+  - motion
+  - profile
+  - r-mot-17
+  - requested-text
+visualDna:
+  aesthetic: 'Broadcast Safe-Area Layout: a broadcast frame with title, brand and data kept inside declared safe regions, shown with and without guides.'
+  subject_treatment: Lay out the prompt's broadcast graphic with title, brand and data inside declared safe regions, shown with guides and clean, every word exact.
+  color_and_tone: Constant identity colors, the guides clearly separate from the graphic.
+  lighting_and_shadow: The piece's own treatment with no imposed lighting.
+  texture_and_material: Content and guide layers kept apart with crisp text.
+  camera_and_composition: Parameterized margins with essential content inside its region.
+  atmosphere_and_mood: Stable, calm reading of title and data during every key state.
+  rendering_and_quality: Clean frame with complete text and non-normative guides labeled.
+  creative_brief: "Broadcast Safe-Area Layout: a broadcast frame with title, brand and data kept inside declared safe regions, shown with and without guides. Carry it through safe regions, with and without guides, title and data, exact text. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: safe regions; with and without guides; title and data; exact text
+avoidRules:
+  - percentages shown as a universal norm
+  - guides printed by accident
+  - claims of finished rendered video
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: percentages shown as a universal norm, guides printed by accident, claims of finished rendered video, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: motion-styleframes-and-broadcast
+  categoryName: 16. Motion Styleframes & Broadcast
+  domain: broadcast title layout profile
+  tags:
+    - curation-v2
+    - motion-styleframes-and-broadcast
+    - safe-area
+    - applied-design
+    - motion
+    - profile
+    - r-mot-17
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

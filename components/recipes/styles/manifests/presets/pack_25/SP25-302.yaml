@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-302
+packId: pack_25
+name: Phase-Offset Typography
+styleAnchors:
+  - Phase-Offset Typography
+  - staggered letter animation styleframes
+  - letter-by-letter wave
+displayName: Phase-Offset Typography
+category: 16. Motion Styleframes & Broadcast
+domain: staggered letter animation styleframes
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - motion-styleframes-and-broadcast
+  - phase-offset
+  - applied-design
+  - motion
+  - r-mot-02
+  - requested-text
+visualDna:
+  aesthetic: 'Phase-Offset Typography: styleframes where one transformation ripples through the letters with steady delays, the word keeping its order and reading.'
+  subject_treatment: Show the requested words in keyframes where one transformation travels letter by letter with a steady delay, every character exact in every frame.
+  color_and_tone: Constant colors by function with reading contrast kept at each stage.
+  lighting_and_shadow: Flat typography, any volume lit the same in every frame.
+  texture_and_material: Clean edges and persistent letters with motion carrying the effect.
+  camera_and_composition: Aligned start and end frames with propagation in reading order.
+  atmosphere_and_mood: An activation wave with regular delays and a long enough final pause.
+  rendering_and_quality: Crisp keyframes where the word never turns into different letters.
+  creative_brief: "Phase-Offset Typography: styleframes where one transformation ripples through the letters with steady delays, the word keeping its order and reading. Carry it through letter-by-letter wave, steady delay, exact word, final pause. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: letter-by-letter wave; steady delay; exact word; final pause
+avoidRules:
+  - dropped letters
+  - random phases
+  - claims of finished rendered video
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: dropped letters, random phases, claims of finished rendered video, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: motion-styleframes-and-broadcast
+  categoryName: 16. Motion Styleframes & Broadcast
+  domain: staggered letter animation styleframes
+  tags:
+    - curation-v2
+    - motion-styleframes-and-broadcast
+    - phase-offset
+    - applied-design
+    - motion
+    - r-mot-02
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

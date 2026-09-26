@@ -354,6 +354,29 @@ categories:
       - pack_25/SP25-298.yaml
       - pack_25/SP25-299.yaml
       - pack_25/SP25-300.yaml
+  - id: motion-styleframes-and-broadcast
+    name: 16. Motion Styleframes & Broadcast
+    presetRefs:
+      - pack_25/SP25-301.yaml
+      - pack_25/SP25-302.yaml
+      - pack_25/SP25-303.yaml
+      - pack_25/SP25-304.yaml
+      - pack_25/SP25-305.yaml
+      - pack_25/SP25-306.yaml
+      - pack_25/SP25-307.yaml
+      - pack_25/SP25-308.yaml
+      - pack_25/SP25-309.yaml
+      - pack_25/SP25-310.yaml
+      - pack_25/SP25-311.yaml
+      - pack_25/SP25-312.yaml
+      - pack_25/SP25-313.yaml
+      - pack_25/SP25-314.yaml
+      - pack_25/SP25-315.yaml
+      - pack_25/SP25-316.yaml
+      - pack_25/SP25-317.yaml
+      - pack_25/SP25-318.yaml
+      - pack_25/SP25-319.yaml
+      - pack_25/SP25-320.yaml
 presetRefs:
   - pack_25/SP25-001.yaml
   - pack_25/SP25-002.yaml
@@ -655,3 +678,23 @@ presetRefs:
   - pack_25/SP25-298.yaml
   - pack_25/SP25-299.yaml
   - pack_25/SP25-300.yaml
+  - pack_25/SP25-301.yaml
+  - pack_25/SP25-302.yaml
+  - pack_25/SP25-303.yaml
+  - pack_25/SP25-304.yaml
+  - pack_25/SP25-305.yaml
+  - pack_25/SP25-306.yaml
+  - pack_25/SP25-307.yaml
+  - pack_25/SP25-308.yaml
+  - pack_25/SP25-309.yaml
+  - pack_25/SP25-310.yaml
+  - pack_25/SP25-311.yaml
+  - pack_25/SP25-312.yaml
+  - pack_25/SP25-313.yaml
+  - pack_25/SP25-314.yaml
+  - pack_25/SP25-315.yaml
+  - pack_25/SP25-316.yaml
+  - pack_25/SP25-317.yaml
+  - pack_25/SP25-318.yaml
+  - pack_25/SP25-319.yaml
+  - pack_25/SP25-320.yaml

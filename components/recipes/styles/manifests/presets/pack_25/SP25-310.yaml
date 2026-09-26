@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-310
+packId: pack_25
+name: Quantized Pixel Unfolding
+styleAnchors:
+  - Quantized Pixel Unfolding
+  - pixel cluster unfold styleframes
+  - pixel clusters
+displayName: Quantized Pixel Unfolding
+category: 16. Motion Styleframes & Broadcast
+domain: pixel cluster unfold styleframes
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - motion-styleframes-and-broadcast
+  - pixel-unfold
+  - applied-design
+  - motion
+  - r-mot-10
+  - requested-text
+visualDna:
+  aesthetic: 'Quantized Pixel Unfolding: styleframes where whole pixel clusters rearrange step by step on one fixed logical grid.'
+  subject_treatment: Show the prompt's subject unfolding in keyframes of whole pixel clusters on one fixed grid, same palette and piece count and exact words.
+  color_and_tone: A limited constant palette with hard pixel edges.
+  lighting_and_shadow: Shading in whole-pixel value bands with crisp steps.
+  texture_and_material: Square pixels with quantized edges, each cluster a unit of motion.
+  camera_and_composition: A fixed logical grid and stable frame with room to unfold.
+  atmosphere_and_mood: A discrete cadence of opening, moving and fitting, like a small puzzle.
+  rendering_and_quality: Crisp keyframes aligned to the pixel grid with clusters kept.
+  creative_brief: "Quantized Pixel Unfolding: styleframes where whole pixel clusters rearrange step by step on one fixed logical grid. Carry it through pixel clusters, fixed grid, step-by-step unfold, limited palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: pixel clusters; fixed grid; step-by-step unfold; limited palette
+avoidRules:
+  - pixelated blurry morph
+  - changing pixel sizes
+  - claims of finished rendered video
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: pixelated blurry morph, changing pixel sizes, claims of finished rendered video, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: motion-styleframes-and-broadcast
+  categoryName: 16. Motion Styleframes & Broadcast
+  domain: pixel cluster unfold styleframes
+  tags:
+    - curation-v2
+    - motion-styleframes-and-broadcast
+    - pixel-unfold
+    - applied-design
+    - motion
+    - r-mot-10
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

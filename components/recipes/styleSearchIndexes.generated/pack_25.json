@@ -3,7 +3,7 @@
     {
       "id": "pack_25",
       "name": "Applied Design",
-      "presetCount": 300
+      "presetCount": 320
     }
   ],
   "presets": [
@@ -5478,7 +5478,439 @@
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp25-300 anamorphic viewpoint graphic viewpoint-aligned anamorphic profile single viewpoint 15. environmental graphics & wayfinding wayfinding & environmental graphics viewpoint-aligned anamorphic profile pack_25 applied design environmental-graphics-and-wayfinding applied-design environmental-graphics-and-wayfinding viewpoint-aligned-anamorphic-profile"
+    },
+    {
+      "id": "SP25-301",
+      "name": "Elastic Assembly Motion",
+      "styleAnchors": [
+        "Elastic Assembly Motion",
+        "elastic separate-and-rejoin styleframes",
+        "elastic overshoot"
+      ],
+      "ref": "pack_25/SP25-301.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "motion-styleframes-and-broadcast",
+      "categoryName": "16. Motion Styleframes & Broadcast",
+      "domain": "elastic separate-and-rejoin styleframes",
+      "tags": [
+        "applied-design",
+        "motion-styleframes-and-broadcast",
+        "elastic-separate-and-rejoin-styleframes"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-301 elastic assembly motion elastic separate-and-rejoin styleframes elastic overshoot 16. motion styleframes & broadcast motion styleframes elastic separate-and-rejoin styleframes pack_25 applied design motion-styleframes-and-broadcast applied-design motion-styleframes-and-broadcast elastic-separate-and-rejoin-styleframes"
+    },
+    {
+      "id": "SP25-302",
+      "name": "Phase-Offset Typography",
+      "styleAnchors": [
+        "Phase-Offset Typography",
+        "staggered letter animation styleframes",
+        "letter-by-letter wave"
+      ],
+      "ref": "pack_25/SP25-302.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "motion-styleframes-and-broadcast",
+      "categoryName": "16. Motion Styleframes & Broadcast",
+      "domain": "staggered letter animation styleframes",
+      "tags": [
+        "applied-design",
+        "motion-styleframes-and-broadcast",
+        "staggered-letter-animation-styleframes"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-302 phase-offset typography staggered letter animation styleframes letter-by-letter wave 16. motion styleframes & broadcast motion styleframes staggered letter animation styleframes pack_25 applied design motion-styleframes-and-broadcast applied-design motion-styleframes-and-broadcast staggered-letter-animation-styleframes"
+    },
+    {
+      "id": "SP25-303",
+      "name": "Inertial Ribbon Transitions",
+      "styleAnchors": [
+        "Inertial Ribbon Transitions",
+        "ribbon-carried transition styleframes",
+        "carrying ribbon"
+      ],
+      "ref": "pack_25/SP25-303.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "motion-styleframes-and-broadcast",
+      "categoryName": "16. Motion Styleframes & Broadcast",
+      "domain": "ribbon-carried transition styleframes",
+      "tags": [
+        "applied-design",
+        "motion-styleframes-and-broadcast",
+        "ribbon-carried-transition-styleframes"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-303 inertial ribbon transitions ribbon-carried transition styleframes carrying ribbon 16. motion styleframes & broadcast motion styleframes ribbon-carried transition styleframes pack_25 applied design motion-styleframes-and-broadcast applied-design motion-styleframes-and-broadcast ribbon-carried-transition-styleframes"
+    },
+    {
+      "id": "SP25-304",
+      "name": "Pressure-Release Letterforms",
+      "styleAnchors": [
+        "Pressure-Release Letterforms",
+        "squeeze and release type styleframes",
+        "squeeze and release"
+      ],
+      "ref": "pack_25/SP25-304.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "motion-styleframes-and-broadcast",
+      "categoryName": "16. Motion Styleframes & Broadcast",
+      "domain": "squeeze and release type styleframes",
+      "tags": [
+        "applied-design",
+        "motion-styleframes-and-broadcast",
+        "squeeze-and-release-type-styleframes"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-304 pressure-release letterforms squeeze and release type styleframes squeeze and release 16. motion styleframes & broadcast motion styleframes squeeze and release type styleframes pack_25 applied design motion-styleframes-and-broadcast applied-design motion-styleframes-and-broadcast squeeze-and-release-type-styleframes"
+    },
+    {
+      "id": "SP25-305",
+      "name": "Optical Register Drift",
+      "styleAnchors": [
+        "Optical Register Drift",
+        "misregistered layer drift styleframes",
+        "slipping ink layers"
+      ],
+      "ref": "pack_25/SP25-305.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "motion-styleframes-and-broadcast",
+      "categoryName": "16. Motion Styleframes & Broadcast",
+      "domain": "misregistered layer drift styleframes",
+      "tags": [
+        "applied-design",
+        "motion-styleframes-and-broadcast",
+        "misregistered-layer-drift-styleframes"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-305 optical register drift misregistered layer drift styleframes slipping ink layers 16. motion styleframes & broadcast motion styleframes misregistered layer drift styleframes pack_25 applied design motion-styleframes-and-broadcast applied-design motion-styleframes-and-broadcast misregistered-layer-drift-styleframes"
+    },
+    {
+      "id": "SP25-306",
+      "name": "Mechanical Index Motion",
+      "styleAnchors": [
+        "Mechanical Index Motion",
+        "discrete mechanical switch styleframes",
+        "discrete steps"
+      ],
+      "ref": "pack_25/SP25-306.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "motion-styleframes-and-broadcast",
+      "categoryName": "16. Motion Styleframes & Broadcast",
+      "domain": "discrete mechanical switch styleframes",
+      "tags": [
+        "applied-design",
+        "motion-styleframes-and-broadcast",
+        "discrete-mechanical-switch-styleframes"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-306 mechanical index motion discrete mechanical switch styleframes discrete steps 16. motion styleframes & broadcast motion styleframes discrete mechanical switch styleframes pack_25 applied design motion-styleframes-and-broadcast applied-design motion-styleframes-and-broadcast discrete-mechanical-switch-styleframes"
+    },
+    {
+      "id": "SP25-307",
+      "name": "Tensioned Surface Morphs",
+      "styleAnchors": [
+        "Tensioned Surface Morphs",
+        "anchored membrane morph styleframes",
+        "membrane between anchors"
+      ],
+      "ref": "pack_25/SP25-307.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "motion-styleframes-and-broadcast",
+      "categoryName": "16. Motion Styleframes & Broadcast",
+      "domain": "anchored membrane morph styleframes",
+      "tags": [
+        "applied-design",
+        "motion-styleframes-and-broadcast",
+        "anchored-membrane-morph-styleframes"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-307 tensioned surface morphs anchored membrane morph styleframes membrane between anchors 16. motion styleframes & broadcast motion styleframes anchored membrane morph styleframes pack_25 applied design motion-styleframes-and-broadcast applied-design motion-styleframes-and-broadcast anchored-membrane-morph-styleframes"
+    },
+    {
+      "id": "SP25-308",
+      "name": "Mass-Swap Match Cuts",
+      "styleAnchors": ["Mass-Swap Match Cuts", "shape-matched cut styleframes", "matched mass"],
+      "ref": "pack_25/SP25-308.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "motion-styleframes-and-broadcast",
+      "categoryName": "16. Motion Styleframes & Broadcast",
+      "domain": "shape-matched cut styleframes",
+      "tags": [
+        "applied-design",
+        "motion-styleframes-and-broadcast",
+        "shape-matched-cut-styleframes"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-308 mass-swap match cuts shape-matched cut styleframes matched mass 16. motion styleframes & broadcast motion styleframes shape-matched cut styleframes pack_25 applied design motion-styleframes-and-broadcast applied-design motion-styleframes-and-broadcast shape-matched-cut-styleframes"
+    },
+    {
+      "id": "SP25-309",
+      "name": "Counterform Reveal Motion",
+      "styleAnchors": [
+        "Counterform Reveal Motion",
+        "counterform opening reveal styleframes",
+        "counters opening"
+      ],
+      "ref": "pack_25/SP25-309.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "motion-styleframes-and-broadcast",
+      "categoryName": "16. Motion Styleframes & Broadcast",
+      "domain": "counterform opening reveal styleframes",
+      "tags": [
+        "applied-design",
+        "motion-styleframes-and-broadcast",
+        "counterform-opening-reveal-styleframes"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-309 counterform reveal motion counterform opening reveal styleframes counters opening 16. motion styleframes & broadcast motion styleframes counterform opening reveal styleframes pack_25 applied design motion-styleframes-and-broadcast applied-design motion-styleframes-and-broadcast counterform-opening-reveal-styleframes"
+    },
+    {
+      "id": "SP25-310",
+      "name": "Quantized Pixel Unfolding",
+      "styleAnchors": [
+        "Quantized Pixel Unfolding",
+        "pixel cluster unfold styleframes",
+        "pixel clusters"
+      ],
+      "ref": "pack_25/SP25-310.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "motion-styleframes-and-broadcast",
+      "categoryName": "16. Motion Styleframes & Broadcast",
+      "domain": "pixel cluster unfold styleframes",
+      "tags": [
+        "applied-design",
+        "motion-styleframes-and-broadcast",
+        "pixel-cluster-unfold-styleframes"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-310 quantized pixel unfolding pixel cluster unfold styleframes pixel clusters 16. motion styleframes & broadcast motion styleframes pixel cluster unfold styleframes pack_25 applied design motion-styleframes-and-broadcast applied-design motion-styleframes-and-broadcast pixel-cluster-unfold-styleframes"
+    },
+    {
+      "id": "SP25-311",
+      "name": "Contour-to-Volume Transitions",
+      "styleAnchors": [
+        "Contour-to-Volume Transitions",
+        "outline to volume styleframes",
+        "outline to planes to volume"
+      ],
+      "ref": "pack_25/SP25-311.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "motion-styleframes-and-broadcast",
+      "categoryName": "16. Motion Styleframes & Broadcast",
+      "domain": "outline to volume styleframes",
+      "tags": [
+        "applied-design",
+        "motion-styleframes-and-broadcast",
+        "outline-to-volume-styleframes"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-311 contour-to-volume transitions outline to volume styleframes outline to planes to volume 16. motion styleframes & broadcast motion styleframes outline to volume styleframes pack_25 applied design motion-styleframes-and-broadcast applied-design motion-styleframes-and-broadcast outline-to-volume-styleframes"
+    },
+    {
+      "id": "SP25-312",
+      "name": "Soft Collision Graphics",
+      "styleAnchors": ["Soft Collision Graphics", "soft contact bump styleframes", "soft bump"],
+      "ref": "pack_25/SP25-312.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "motion-styleframes-and-broadcast",
+      "categoryName": "16. Motion Styleframes & Broadcast",
+      "domain": "soft contact bump styleframes",
+      "tags": [
+        "applied-design",
+        "motion-styleframes-and-broadcast",
+        "soft-contact-bump-styleframes"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-312 soft collision graphics soft contact bump styleframes soft bump 16. motion styleframes & broadcast motion styleframes soft contact bump styleframes pack_25 applied design motion-styleframes-and-broadcast applied-design motion-styleframes-and-broadcast soft-contact-bump-styleframes"
+    },
+    {
+      "id": "SP25-313",
+      "name": "Archive Scan Sequences",
+      "styleAnchors": [
+        "Archive Scan Sequences",
+        "scanning window reading styleframes",
+        "moving reading window"
+      ],
+      "ref": "pack_25/SP25-313.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "motion-styleframes-and-broadcast",
+      "categoryName": "16. Motion Styleframes & Broadcast",
+      "domain": "scanning window reading styleframes",
+      "tags": [
+        "applied-design",
+        "motion-styleframes-and-broadcast",
+        "scanning-window-reading-styleframes"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-313 archive scan sequences scanning window reading styleframes moving reading window 16. motion styleframes & broadcast motion styleframes scanning window reading styleframes pack_25 applied design motion-styleframes-and-broadcast applied-design motion-styleframes-and-broadcast scanning-window-reading-styleframes"
+    },
+    {
+      "id": "SP25-314",
+      "name": "Interlocking Panel Choreography",
+      "styleAnchors": [
+        "Interlocking Panel Choreography",
+        "sliding interlocking panel styleframes",
+        "yielding panels"
+      ],
+      "ref": "pack_25/SP25-314.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "motion-styleframes-and-broadcast",
+      "categoryName": "16. Motion Styleframes & Broadcast",
+      "domain": "sliding interlocking panel styleframes",
+      "tags": [
+        "applied-design",
+        "motion-styleframes-and-broadcast",
+        "sliding-interlocking-panel-styleframes"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-314 interlocking panel choreography sliding interlocking panel styleframes yielding panels 16. motion styleframes & broadcast motion styleframes sliding interlocking panel styleframes pack_25 applied design motion-styleframes-and-broadcast applied-design motion-styleframes-and-broadcast sliding-interlocking-panel-styleframes"
+    },
+    {
+      "id": "SP25-315",
+      "name": "Material Memory Transitions",
+      "styleAnchors": [
+        "Material Memory Transitions",
+        "afterimage material change styleframes",
+        "material change"
+      ],
+      "ref": "pack_25/SP25-315.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "motion-styleframes-and-broadcast",
+      "categoryName": "16. Motion Styleframes & Broadcast",
+      "domain": "afterimage material change styleframes",
+      "tags": [
+        "applied-design",
+        "motion-styleframes-and-broadcast",
+        "afterimage-material-change-styleframes"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-315 material memory transitions afterimage material change styleframes material change 16. motion styleframes & broadcast motion styleframes afterimage material change styleframes pack_25 applied design motion-styleframes-and-broadcast applied-design motion-styleframes-and-broadcast afterimage-material-change-styleframes"
+    },
+    {
+      "id": "SP25-316",
+      "name": "Type-Driven Camera Motion",
+      "styleAnchors": [
+        "Type-Driven Camera Motion",
+        "typography-guided camera styleframes",
+        "camera along type"
+      ],
+      "ref": "pack_25/SP25-316.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "motion-styleframes-and-broadcast",
+      "categoryName": "16. Motion Styleframes & Broadcast",
+      "domain": "typography-guided camera styleframes",
+      "tags": [
+        "applied-design",
+        "motion-styleframes-and-broadcast",
+        "typography-guided-camera-styleframes"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-316 type-driven camera motion typography-guided camera styleframes camera along type 16. motion styleframes & broadcast motion styleframes typography-guided camera styleframes pack_25 applied design motion-styleframes-and-broadcast applied-design motion-styleframes-and-broadcast typography-guided-camera-styleframes"
+    },
+    {
+      "id": "SP25-317",
+      "name": "Cutout Stop-Motion Frames",
+      "styleAnchors": [
+        "Cutout Stop-Motion Frames",
+        "paper cutout stop-motion styleframes",
+        "paper cutouts"
+      ],
+      "ref": "pack_25/SP25-317.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "motion-styleframes-and-broadcast",
+      "categoryName": "16. Motion Styleframes & Broadcast",
+      "domain": "paper cutout stop-motion styleframes",
+      "tags": [
+        "applied-design",
+        "motion-styleframes-and-broadcast",
+        "paper-cutout-stop-motion-styleframes"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-317 cutout stop-motion frames paper cutout stop-motion styleframes paper cutouts 16. motion styleframes & broadcast motion styleframes paper cutout stop-motion styleframes pack_25 applied design motion-styleframes-and-broadcast applied-design motion-styleframes-and-broadcast paper-cutout-stop-motion-styleframes"
+    },
+    {
+      "id": "SP25-318",
+      "name": "Broadcast Safe-Area Layout",
+      "styleAnchors": [
+        "Broadcast Safe-Area Layout",
+        "broadcast title layout profile",
+        "safe regions"
+      ],
+      "ref": "pack_25/SP25-318.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "motion-styleframes-and-broadcast",
+      "categoryName": "16. Motion Styleframes & Broadcast",
+      "domain": "broadcast title layout profile",
+      "tags": [
+        "applied-design",
+        "motion-styleframes-and-broadcast",
+        "broadcast-title-layout-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-318 broadcast safe-area layout broadcast title layout profile safe regions 16. motion styleframes & broadcast motion styleframes broadcast title layout profile pack_25 applied design motion-styleframes-and-broadcast applied-design motion-styleframes-and-broadcast broadcast-title-layout-profile"
+    },
+    {
+      "id": "SP25-319",
+      "name": "Multi-Screen Rhythm Layout",
+      "styleAnchors": [
+        "Multi-Screen Rhythm Layout",
+        "multi-screen display layout profile",
+        "several screens"
+      ],
+      "ref": "pack_25/SP25-319.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "motion-styleframes-and-broadcast",
+      "categoryName": "16. Motion Styleframes & Broadcast",
+      "domain": "multi-screen display layout profile",
+      "tags": [
+        "applied-design",
+        "motion-styleframes-and-broadcast",
+        "multi-screen-display-layout-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-319 multi-screen rhythm layout multi-screen display layout profile several screens 16. motion styleframes & broadcast motion styleframes multi-screen display layout profile pack_25 applied design motion-styleframes-and-broadcast applied-design motion-styleframes-and-broadcast multi-screen-display-layout-profile"
+    },
+    {
+      "id": "SP25-320",
+      "name": "Three-Keyframe Continuity Test",
+      "styleAnchors": [
+        "Three-Keyframe Continuity Test",
+        "three keyframe continuity sheet profile",
+        "start, peak, arrival"
+      ],
+      "ref": "pack_25/SP25-320.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "motion-styleframes-and-broadcast",
+      "categoryName": "16. Motion Styleframes & Broadcast",
+      "domain": "three keyframe continuity sheet profile",
+      "tags": [
+        "applied-design",
+        "motion-styleframes-and-broadcast",
+        "three-keyframe-continuity-sheet-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-320 three-keyframe continuity test three keyframe continuity sheet profile start, peak, arrival 16. motion styleframes & broadcast motion styleframes three keyframe continuity sheet profile pack_25 applied design motion-styleframes-and-broadcast applied-design motion-styleframes-and-broadcast three-keyframe-continuity-sheet-profile"
     }
   ],
-  "totalPresetCount": 300
+  "totalPresetCount": 320
 }

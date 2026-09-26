@@ -1792,61 +1792,118 @@
       "category": "15. Environmental Graphics & Wayfinding"
     },
     "R-MOT-01": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-301",
+      "name": "Elastic Assembly Motion",
+      "category": "16. Motion Styleframes & Broadcast"
     },
     "R-MOT-02": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-302",
+      "name": "Phase-Offset Typography",
+      "category": "16. Motion Styleframes & Broadcast"
     },
     "R-MOT-03": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-303",
+      "name": "Inertial Ribbon Transitions",
+      "category": "16. Motion Styleframes & Broadcast"
     },
     "R-MOT-04": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-304",
+      "name": "Pressure-Release Letterforms",
+      "category": "16. Motion Styleframes & Broadcast"
     },
     "R-MOT-05": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-305",
+      "name": "Optical Register Drift",
+      "category": "16. Motion Styleframes & Broadcast"
     },
     "R-MOT-06": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-306",
+      "name": "Mechanical Index Motion",
+      "category": "16. Motion Styleframes & Broadcast"
     },
     "R-MOT-07": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-307",
+      "name": "Tensioned Surface Morphs",
+      "category": "16. Motion Styleframes & Broadcast"
     },
     "R-MOT-08": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-308",
+      "name": "Mass-Swap Match Cuts",
+      "category": "16. Motion Styleframes & Broadcast"
     },
     "R-MOT-09": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-309",
+      "name": "Counterform Reveal Motion",
+      "category": "16. Motion Styleframes & Broadcast"
     },
     "R-MOT-10": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-310",
+      "name": "Quantized Pixel Unfolding",
+      "category": "16. Motion Styleframes & Broadcast"
     },
     "R-MOT-11": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-311",
+      "name": "Contour-to-Volume Transitions",
+      "category": "16. Motion Styleframes & Broadcast"
     },
     "R-MOT-12": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-312",
+      "name": "Soft Collision Graphics",
+      "category": "16. Motion Styleframes & Broadcast"
     },
     "R-MOT-13": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-313",
+      "name": "Archive Scan Sequences",
+      "category": "16. Motion Styleframes & Broadcast"
     },
     "R-MOT-14": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-314",
+      "name": "Interlocking Panel Choreography",
+      "category": "16. Motion Styleframes & Broadcast"
     },
     "R-MOT-15": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-315",
+      "name": "Material Memory Transitions",
+      "category": "16. Motion Styleframes & Broadcast"
     },
     "R-MOT-16": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-316",
+      "name": "Type-Driven Camera Motion",
+      "category": "16. Motion Styleframes & Broadcast"
     },
     "R-MOT-17": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-318",
+      "name": "Broadcast Safe-Area Layout",
+      "category": "16. Motion Styleframes & Broadcast"
     },
     "R-MOT-18": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-319",
+      "name": "Multi-Screen Rhythm Layout",
+      "category": "16. Motion Styleframes & Broadcast"
     },
     "R-MOT-19": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-320",
+      "name": "Three-Keyframe Continuity Test",
+      "category": "16. Motion Styleframes & Broadcast"
     },
     "R-MOT-20": {
       "status": "qa-protocol",

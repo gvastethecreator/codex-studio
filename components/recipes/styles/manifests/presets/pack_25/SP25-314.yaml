@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-314
+packId: pack_25
+name: Interlocking Panel Choreography
+styleAnchors:
+  - Interlocking Panel Choreography
+  - sliding interlocking panel styleframes
+  - yielding panels
+displayName: Interlocking Panel Choreography
+category: 16. Motion Styleframes & Broadcast
+domain: sliding interlocking panel styleframes
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - motion-styleframes-and-broadcast
+  - panel-choreography
+  - applied-design
+  - motion
+  - r-mot-14
+  - requested-text
+visualDna:
+  aesthetic: "Interlocking Panel Choreography: styleframes where panels give way and slide into each other's space without ever covering text."
+  subject_treatment: Show the prompt's panels in keyframes where one yields space and another slides into it, edges and contents kept and every word exact.
+  color_and_tone: Constant color per panel or function across the move.
+  lighting_and_shadow: Flat or shallow common depth with no shadow over text.
+  texture_and_material: Clean edges, shared radii and panels carried as locked layers.
+  camera_and_composition: Declared entry and exit zones and a stable reading area at arrival.
+  atmosphere_and_mood: A choreography of giving and taking space, polite and precise.
+  rendering_and_quality: Crisp keyframes with complete text and one focus at a time.
+  creative_brief: "Interlocking Panel Choreography: styleframes where panels give way and slide into each other's space without ever covering text. Carry it through yielding panels, interlocking slides, locked contents, one focus. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: yielding panels; interlocking slides; locked contents; one focus
+avoidRules:
+  - collage of windows with no relation
+  - cut-off text
+  - claims of finished rendered video
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: collage of windows with no relation, cut-off text, claims of finished rendered video, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: motion-styleframes-and-broadcast
+  categoryName: 16. Motion Styleframes & Broadcast
+  domain: sliding interlocking panel styleframes
+  tags:
+    - curation-v2
+    - motion-styleframes-and-broadcast
+    - panel-choreography
+    - applied-design
+    - motion
+    - r-mot-14
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

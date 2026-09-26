@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-316
+packId: pack_25
+name: Type-Driven Camera Motion
+styleAnchors:
+  - Type-Driven Camera Motion
+  - typography-guided camera styleframes
+  - camera along type
+displayName: Type-Driven Camera Motion
+category: 16. Motion Styleframes & Broadcast
+domain: typography-guided camera styleframes
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - motion-styleframes-and-broadcast
+  - type-camera
+  - applied-design
+  - motion
+  - r-mot-16
+  - requested-text
+visualDna:
+  aesthetic: 'Type-Driven Camera Motion: styleframes where the apparent camera travels along baselines, columns and counters of the text without losing orientation.'
+  subject_treatment: Show a camera move along the prompt's text in keyframes, following baselines or counters with anchors kept and every word exact.
+  color_and_tone: A constant content and background palette across framings.
+  lighting_and_shadow: Flat editorial space or simple type space with stable light.
+  texture_and_material: Sharp text at every scale with no invented detail up close.
+  camera_and_composition: Typographic anchor points and moderate paths ending in full context.
+  atmosphere_and_mood: A journey guided by reading, with a brief acceleration and a pause.
+  rendering_and_quality: Crisp keyframes with exact copy and persistent anchors.
+  creative_brief: "Type-Driven Camera Motion: styleframes where the apparent camera travels along baselines, columns and counters of the text without losing orientation. Carry it through camera along type, baseline paths, kept anchors, readable arrival. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: camera along type; baseline paths; kept anchors; readable arrival
+avoidRules:
+  - erratic camera
+  - letters used as unreadable tunnels
+  - claims of finished rendered video
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: erratic camera, letters used as unreadable tunnels, claims of finished rendered video, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: motion-styleframes-and-broadcast
+  categoryName: 16. Motion Styleframes & Broadcast
+  domain: typography-guided camera styleframes
+  tags:
+    - curation-v2
+    - motion-styleframes-and-broadcast
+    - type-camera
+    - applied-design
+    - motion
+    - r-mot-16
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

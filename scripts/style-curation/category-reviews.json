@@ -2593,5 +2593,20 @@
     "evidencePresetIds": ["SP25-281", "SP25-282", "SP25-283"],
     "status": "text-authored",
     "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_25",
+    "category": "16. Motion Styleframes & Broadcast",
+    "displayCategory": "Motion styleframes",
+    "kind": "mixed",
+    "expectedCount": 20,
+    "baselineHash": "3008d43299a926b82320ac830666211ea961896a74787ca680b6b2cea6190755",
+    "problem": "Motion presets produce still keyframes and styleframe sheets, not rendered video; they must keep piece identity and exact words across frames and never claim finished animation or broadcast certification.",
+    "preserve": "Requested words, piece counts, ids and layout regions stay the same in every keyframe; each style keeps its motion grammar (elastic assembly, phase-offset type, inertial ribbon, pressure release, register drift, mechanical index, tension morph, match cut, counterform reveal, pixel unfolding, contour to volume, soft collision, archive scan, panel choreography, material memory, type-driven camera, cutout stop-motion).",
+    "proposedAction": "Applied-design import: 16 motion styles, Cutout Stop-Motion Frames as a new style replacing the reduced-motion companion (moved to QA-PROTOCOLS.md), broadcast safe-area and multi-screen layout profiles and the three-keyframe continuity sheet; requested-text policy with a no-video-claims negative and three new ident and title briefs per preset.",
+    "validation": "Generate each card as a keyframe strip or styleframe, then check that pieces, words and layout match across frames; test a logo ident, a title card, a lower third and a two-scene transition.",
+    "evidencePresetIds": ["SP25-301", "SP25-302", "SP25-303"],
+    "status": "text-authored",
+    "visualValidation": "pending"
   }
 ]
