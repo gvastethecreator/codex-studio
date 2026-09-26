@@ -227,4 +227,391 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP22-257',
+    name: 'Loose Ink Picture-Book Wash',
+    displayName: 'Loose Ink Picture-Book Wash',
+    styleAnchors: [
+      'Loose Ink Picture-Book Wash',
+      'loose ink line and watercolor picture book',
+      'loose ink line',
+    ],
+    category: '4. Storybook & Animation',
+    domain: 'loose ink line and watercolor picture book',
+    negativePrompt:
+      'overworked rendering, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        "Loose ink picture-book wash: quick expressive ink lines with loose watercolor washes that spill past the lines, like a lively classic children's picture book.",
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; draw the subject with loose confident ink and let color washes spill freely past the lines.',
+      color_and_tone:
+        'Fresh transparent watercolor colors with lots of white paper and gentle warm accents.',
+      lighting_and_shadow: 'Simple soft shadow washes and bright white paper for light areas.',
+      texture_and_material:
+        'Scratchy dip-pen lines, loose wash blooms, paper grain and splash marks.',
+      camera_and_composition:
+        'Preserve the requested framing with airy white space around the subject.',
+      atmosphere_and_mood: 'Keep the requested mood with a playful, warm and spontaneous charm.',
+      rendering_and_quality:
+        'Loose expressive line and wash with clear storytelling, never overworked.',
+      creative_brief:
+        "Loose ink picture-book wash: quick expressive ink lines with loose watercolor washes that spill past the lines, like a lively classic children's picture book. Carry it through loose ink line, spilling watercolor, white paper space, spontaneous charm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'loose ink line; spilling watercolor; white paper space; spontaneous charm',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-258',
+    name: 'Painted Background Plate',
+    displayName: 'Painted Background Plate',
+    styleAnchors: [
+      'Painted Background Plate',
+      'lush painted animation background',
+      'lush painted background',
+    ],
+    category: '4. Storybook & Animation',
+    domain: 'lush painted animation background',
+    negativePrompt:
+      'photographic background, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Painted background plate: lush hand-painted animation background with soft gouache detail, flat-colored characters placed crisply on top.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; place the subject as a crisp flat-colored figure over a richly painted background.',
+      color_and_tone:
+        'Rich naturalistic painted backgrounds in greens and blues with brighter flat character colors.',
+      lighting_and_shadow:
+        'Painted atmospheric light in the background, simple flat shadows on characters.',
+      texture_and_material: 'Soft gouache brushwork in foliage and sky, clean cel-like figures.',
+      camera_and_composition:
+        'Preserve the requested framing like a classic animation layout shot.',
+      atmosphere_and_mood: 'Keep the requested mood with nostalgic animated wonder and calm.',
+      rendering_and_quality: 'Painterly backgrounds and clean figures clearly separated in finish.',
+      creative_brief:
+        "Painted background plate: lush hand-painted animation background with soft gouache detail, flat-colored characters placed crisply on top. Carry it through lush painted background, flat crisp characters, gouache foliage, layout shot. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'lush painted background; flat crisp characters; gouache foliage; layout shot',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-259',
+    name: 'Pencil-Test Keyframe',
+    displayName: 'Pencil-Test Keyframe',
+    styleAnchors: [
+      'Pencil-Test Keyframe',
+      'rough animation pencil drawings',
+      'blue construction lines',
+    ],
+    category: '4. Storybook & Animation',
+    domain: 'rough animation pencil drawings',
+    negativePrompt:
+      'finished color painting, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Pencil-test keyframe: rough animation drawings in blue and red pencil with construction lines, timing arcs and ghosted in-between poses.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; draw the subject as a lively rough key pose with construction lines and faint ghost poses.',
+      color_and_tone:
+        'Blue construction pencil, red or graphite clean-up lines on white animation paper.',
+      lighting_and_shadow: 'No modeled light; simple tone scribbles only where needed.',
+      texture_and_material: 'Sketchy pencil strokes, erased marks, peg holes and paper grain.',
+      camera_and_composition: 'Preserve the requested framing on an animation paper sheet.',
+      atmosphere_and_mood: 'Keep the requested mood with energetic in-progress motion.',
+      rendering_and_quality: 'Loose but confident motion drawing with clear gesture and arcs.',
+      creative_brief:
+        "Pencil-test keyframe: rough animation drawings in blue and red pencil with construction lines, timing arcs and ghosted in-between poses. Carry it through blue construction lines, ghosted poses, motion arcs, animation paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'blue construction lines; ghosted poses; motion arcs; animation paper',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-260',
+    name: 'Wax Crayon Storybook Texture',
+    displayName: 'Wax Crayon Storybook Texture',
+    styleAnchors: [
+      'Wax Crayon Storybook Texture',
+      'waxy crayon picture book',
+      'waxy crayon strokes',
+    ],
+    category: '4. Storybook & Animation',
+    domain: 'waxy crayon picture book',
+    negativePrompt:
+      'smooth digital fill, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Wax crayon storybook texture: picture-book illustration built with waxy crayons over washes, the paper grain catching the wax in bright broken strokes.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; color the subject in textured wax crayon strokes that follow its shape.',
+      color_and_tone:
+        'Bright crayon colors over soft watercolor base washes with white grain flecks.',
+      lighting_and_shadow: 'Simple light with darker crayon layering in shadows.',
+      texture_and_material:
+        'Waxy broken strokes, paper tooth flecks and crayon resist over washes.',
+      camera_and_composition: 'Preserve the requested framing with cozy readable shapes.',
+      atmosphere_and_mood: 'Keep the requested mood with playful handmade warmth and joy.',
+      rendering_and_quality: 'Textured crayon layers with clear shapes, never sloppy scribble.',
+      creative_brief:
+        "Wax crayon storybook texture: picture-book illustration built with waxy crayons over washes, the paper grain catching the wax in bright broken strokes. Carry it through waxy crayon strokes, paper grain flecks, wash base, handmade warmth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'waxy crayon strokes; paper grain flecks; wash base; handmade warmth',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-261',
+    name: 'Soft Airbrush Fable',
+    displayName: 'Soft Airbrush Fable',
+    styleAnchors: [
+      'Soft Airbrush Fable',
+      'gentle airbrushed fairy tale',
+      'soft airbrushed gradients',
+    ],
+    category: '4. Storybook & Animation',
+    domain: 'gentle airbrushed fairy tale',
+    negativePrompt:
+      'harsh contrast, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Soft airbrush fable: gentle airbrushed fairy-tale illustration with smooth glowing gradients, soft edges and dreamy pastel light.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; render the subject with soft airbrushed volume and glowing edges.',
+      color_and_tone: 'Pastel pinks, lilacs, sky blues and warm glows with smooth gradients.',
+      lighting_and_shadow: 'Soft glowing light with airbrushed halos and gentle shadow falloff.',
+      texture_and_material:
+        'Smooth sprayed gradients, soft masked edges and a faint mist of paint.',
+      camera_and_composition: 'Preserve the requested framing with a glowing dreamy focal point.',
+      atmosphere_and_mood: 'Keep the requested mood with tender, dreamy fairy-tale softness.',
+      rendering_and_quality: 'Clean soft gradients with defined silhouettes, never blurry mush.',
+      creative_brief:
+        "Soft airbrush fable: gentle airbrushed fairy-tale illustration with smooth glowing gradients, soft edges and dreamy pastel light. Carry it through soft airbrushed gradients, pastel glow, masked edges, dreamy light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'soft airbrushed gradients; pastel glow; masked edges; dreamy light',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-262',
+    name: 'Folk Motif Storybook',
+    displayName: 'Folk Motif Storybook',
+    styleAnchors: ['Folk Motif Storybook', 'folk art pattern storybook', 'folk flower motifs'],
+    category: '4. Storybook & Animation',
+    domain: 'folk art pattern storybook',
+    negativePrompt:
+      'realistic shading, readable lettering, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Folk motif storybook: picture-book illustration full of flat folk-art patterns, symmetrical flowers, birds and borders in bright traditional colors.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; paint the subject in flat folk-art shapes decorated with traditional patterns.',
+      color_and_tone: 'Bright red, cobalt, yellow and green on cream or black grounds.',
+      lighting_and_shadow: 'No modeled light; flat decorative color throughout the image.',
+      texture_and_material:
+        'Flat painted motifs, dotted details, symmetrical flowers and simple brush marks.',
+      camera_and_composition: 'Preserve the requested framing with symmetrical decorative borders.',
+      atmosphere_and_mood: 'Keep the requested mood with festive traditional folk joy.',
+      rendering_and_quality: 'Crisp flat decorative painting with rhythmic patterns throughout.',
+      creative_brief:
+        "Folk motif storybook: picture-book illustration full of flat folk-art patterns, symmetrical flowers, birds and borders in bright traditional colors. Carry it through folk flower motifs, symmetry, bright traditional colors, decorative borders. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'folk flower motifs; symmetry; bright traditional colors; decorative borders',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-263',
+    name: 'Moonlit Gouache Picture-Book',
+    displayName: 'Moonlit Gouache Picture-Book',
+    styleAnchors: ['Moonlit Gouache Picture-Book', 'night gouache storybook', 'deep blue night'],
+    category: '4. Storybook & Animation',
+    domain: 'night gouache storybook',
+    negativePrompt:
+      'daylight, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Moonlit gouache picture-book: bedtime night scenes painted in opaque gouache blues, with glowing windows, stars and soft moonlight.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; place the subject in a gentle moonlit night painted in opaque blues.',
+      color_and_tone:
+        'Deep navy and teal nights with glowing warm yellow windows and silver moonlight.',
+      lighting_and_shadow: 'Soft moonlight rims and warm window glows in a blue night.',
+      texture_and_material: 'Opaque matte gouache, dry-brush stars and soft painted edges.',
+      camera_and_composition:
+        'Preserve the requested framing with a big sky and a glowing focal point.',
+      atmosphere_and_mood: 'Keep the requested mood with calm, cozy bedtime wonder.',
+      rendering_and_quality: 'Clean opaque night painting with gentle glowing accents.',
+      creative_brief:
+        "Moonlit gouache picture-book: bedtime night scenes painted in opaque gouache blues, with glowing windows, stars and soft moonlight. Carry it through deep blue night, glowing windows, silver moonlight, opaque gouache. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'deep blue night; glowing windows; silver moonlight; opaque gouache',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-264',
+    name: 'Squash-and-Stretch Keyposes',
+    displayName: 'Squash-and-Stretch Keyposes',
+    styleAnchors: [
+      'Squash-and-Stretch Keyposes',
+      'exaggerated cartoon motion poses',
+      'squash on impact',
+    ],
+    category: '4. Storybook & Animation',
+    domain: 'exaggerated cartoon motion poses',
+    negativePrompt:
+      'stiff realism, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Squash-and-stretch keyposes: cartoon illustration with bodies squashed flat on impact and stretched long in motion, bursting with elastic energy.',
+      subject_treatment:
+        "Preserve the requested identity, proportions, pose and action; exaggerate the subject's motion with bold squash and stretch while keeping it recognizable.",
+      color_and_tone: 'Bright saturated cartoon colors with clean flat shading.',
+      lighting_and_shadow:
+        'Simple flat shadows and small highlights that follow the stretched shapes.',
+      texture_and_material: 'Clean line art, smear frames, motion lines and elastic bodies.',
+      camera_and_composition: 'Preserve the requested framing with dynamic diagonal action lines.',
+      atmosphere_and_mood: 'Keep the requested mood with bouncy, comic, energetic fun.',
+      rendering_and_quality: 'Crisp clean cartoon rendering with clear readable exaggeration.',
+      creative_brief:
+        "Squash-and-stretch keyposes: cartoon illustration with bodies squashed flat on impact and stretched long in motion, bursting with elastic energy. Carry it through squash on impact, stretched motion, smear frames, bouncy energy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'squash on impact; stretched motion; smear frames; bouncy energy',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-265',
+    name: 'Storybook Vignette Oval',
+    displayName: 'Storybook Vignette Oval',
+    styleAnchors: ['Storybook Vignette Oval', 'soft vignette framed illustration', 'oval vignette'],
+    category: '4. Storybook & Animation',
+    domain: 'soft vignette framed illustration',
+    negativePrompt:
+      'hard rectangular frame, readable captions, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Storybook vignette oval: illustration contained in a soft oval vignette that fades into cream paper at the edges, like plates in an old storybook.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; center the subject within a soft oval scene that fades gently into the paper.',
+      color_and_tone:
+        'Soft muted watercolor and ink colors fading to warm cream paper at the edges.',
+      lighting_and_shadow: 'Gentle soft lighting inside the oval, fading shadows toward the edges.',
+      texture_and_material: 'Fine ink, watercolor, soft faded edges and warm paper texture.',
+      camera_and_composition: 'Preserve the requested subject inside a centered oval vignette.',
+      atmosphere_and_mood: 'Keep the requested mood with nostalgic storybook gentleness.',
+      rendering_and_quality: 'Delicate detailed illustration with smooth fading vignette edges.',
+      creative_brief:
+        "Storybook vignette oval: illustration contained in a soft oval vignette that fades into cream paper at the edges, like plates in an old storybook. Carry it through oval vignette, fading edges, cream paper, old storybook plate. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'oval vignette; fading edges; cream paper; old storybook plate',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-266',
+    name: 'Bedtime Lamp Glow',
+    displayName: 'Bedtime Lamp Glow',
+    styleAnchors: ['Bedtime Lamp Glow', 'warm lamp-lit interior storybook', 'single warm lamp'],
+    category: '4. Storybook & Animation',
+    domain: 'warm lamp-lit interior storybook',
+    negativePrompt:
+      'cold harsh light, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Bedtime lamp glow: cozy interior storybook scenes lit by one warm lamp or candle, deep soft shadows and golden light on quilts and faces.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; place the subject in a cozy interior lit by a single warm lamp.',
+      color_and_tone: 'Golden amber lamp light, deep plum and brown shadows and soft quilt colors.',
+      lighting_and_shadow: 'One warm light source with soft falloff into cozy dark corners.',
+      texture_and_material: 'Quilts, wooden furniture, books, soft painted textures and warm glow.',
+      camera_and_composition: 'Preserve the requested framing with the lamp near the focal point.',
+      atmosphere_and_mood: 'Keep the requested mood with safe, sleepy, comforting warmth.',
+      rendering_and_quality: 'Soft painterly lighting with warm glow and gentle detail.',
+      creative_brief:
+        "Bedtime lamp glow: cozy interior storybook scenes lit by one warm lamp or candle, deep soft shadows and golden light on quilts and faces. Carry it through single warm lamp, cozy shadows, golden glow, quilts and books. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'single warm lamp; cozy shadows; golden glow; quilts and books',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-267',
+    name: 'Hand-Tinted Fable Plates',
+    displayName: 'Hand-Tinted Fable Plates',
+    styleAnchors: [
+      'Hand-Tinted Fable Plates',
+      'hand-colored engraved fable illustrations',
+      'engraved line',
+    ],
+    category: '4. Storybook & Animation',
+    domain: 'hand-colored engraved fable illustrations',
+    negativePrompt:
+      'digital flat color, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Hand-tinted fable plates: fine engraved line illustrations of fables, colored by hand with thin washes that slightly miss the lines.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; draw the subject in fine engraved lines and tint it with light hand-applied washes.',
+      color_and_tone:
+        'Pale hand-applied tints of rose, sage and sky blue over black engraved lines.',
+      lighting_and_shadow: 'Shading in fine engraved hatching, tints adding soft color.',
+      texture_and_material:
+        'Crisp engraved lines, uneven hand tints, slight off-register color and aged paper.',
+      camera_and_composition: 'Preserve the requested framing like a classic fable plate.',
+      atmosphere_and_mood: 'Keep the requested mood with old-fashioned moral-tale charm.',
+      rendering_and_quality:
+        'Precise fine engraving finished with delicate, slightly imperfect hand tinting.',
+      creative_brief:
+        "Hand-tinted fable plates: fine engraved line illustrations of fables, colored by hand with thin washes that slightly miss the lines. Carry it through engraved line, hand-applied tints, off-register color, aged paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'engraved line; hand-applied tints; off-register color; aged paper',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-268',
+    name: 'Woodland Watercolor Critters',
+    displayName: 'Woodland Watercolor Critters',
+    styleAnchors: [
+      'Woodland Watercolor Critters',
+      'gentle animal character watercolor',
+      'watercolor animals',
+    ],
+    category: '4. Storybook & Animation',
+    domain: 'gentle animal character watercolor',
+    negativePrompt:
+      'aggressive predators, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Woodland watercolor critters: gentle watercolor animal characters in little clothes, softly detailed fur and cozy woodland settings.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; if the subject is an animal, keep it natural with small charming touches; otherwise place it among woodland creatures.',
+      color_and_tone: 'Soft earthy watercolor browns, mossy greens and gentle warm highlights.',
+      lighting_and_shadow: 'Soft dappled forest light with gentle watercolor shadows.',
+      texture_and_material: 'Fine fur strokes, soft washes, tiny clothing details and leaf litter.',
+      camera_and_composition: 'Preserve the requested framing with cozy eye-level animal views.',
+      atmosphere_and_mood: 'Keep the requested mood with tender, cozy woodland charm.',
+      rendering_and_quality: 'Delicate detailed watercolor with soft edges and careful fur.',
+      creative_brief:
+        "Woodland watercolor critters: gentle watercolor animal characters in little clothes, softly detailed fur and cozy woodland settings. Carry it through watercolor animals, tiny clothes, soft fur detail, cozy woodland. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'watercolor animals; tiny clothes; soft fur detail; cozy woodland',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

@@ -17,6 +17,18 @@ categories:
       - pack_22/SP22-106.yaml
       - pack_22/SP22-107.yaml
       - pack_22/SP22-108.yaml
+      - pack_22/SP22-221.yaml
+      - pack_22/SP22-222.yaml
+      - pack_22/SP22-223.yaml
+      - pack_22/SP22-224.yaml
+      - pack_22/SP22-225.yaml
+      - pack_22/SP22-226.yaml
+      - pack_22/SP22-227.yaml
+      - pack_22/SP22-228.yaml
+      - pack_22/SP22-229.yaml
+      - pack_22/SP22-230.yaml
+      - pack_22/SP22-231.yaml
+      - pack_22/SP22-232.yaml
   - id: epic-digital-painting
     name: 2. Epic Digital Painting
     presetRefs:
@@ -28,6 +40,18 @@ categories:
       - pack_22/SP22-114.yaml
       - pack_22/SP22-115.yaml
       - pack_22/SP22-116.yaml
+      - pack_22/SP22-233.yaml
+      - pack_22/SP22-234.yaml
+      - pack_22/SP22-235.yaml
+      - pack_22/SP22-236.yaml
+      - pack_22/SP22-237.yaml
+      - pack_22/SP22-238.yaml
+      - pack_22/SP22-239.yaml
+      - pack_22/SP22-240.yaml
+      - pack_22/SP22-241.yaml
+      - pack_22/SP22-242.yaml
+      - pack_22/SP22-243.yaml
+      - pack_22/SP22-244.yaml
   - id: strange-ink-and-paint
     name: 3. Strange Ink & Paint
     presetRefs:
@@ -39,6 +63,18 @@ categories:
       - pack_22/SP22-122.yaml
       - pack_22/SP22-123.yaml
       - pack_22/SP22-124.yaml
+      - pack_22/SP22-245.yaml
+      - pack_22/SP22-246.yaml
+      - pack_22/SP22-247.yaml
+      - pack_22/SP22-248.yaml
+      - pack_22/SP22-249.yaml
+      - pack_22/SP22-250.yaml
+      - pack_22/SP22-251.yaml
+      - pack_22/SP22-252.yaml
+      - pack_22/SP22-253.yaml
+      - pack_22/SP22-254.yaml
+      - pack_22/SP22-255.yaml
+      - pack_22/SP22-256.yaml
   - id: storybook-and-animation
     name: 4. Storybook & Animation
     presetRefs:
@@ -50,6 +86,18 @@ categories:
       - pack_22/SP22-130.yaml
       - pack_22/SP22-131.yaml
       - pack_22/SP22-132.yaml
+      - pack_22/SP22-257.yaml
+      - pack_22/SP22-258.yaml
+      - pack_22/SP22-259.yaml
+      - pack_22/SP22-260.yaml
+      - pack_22/SP22-261.yaml
+      - pack_22/SP22-262.yaml
+      - pack_22/SP22-263.yaml
+      - pack_22/SP22-264.yaml
+      - pack_22/SP22-265.yaml
+      - pack_22/SP22-266.yaml
+      - pack_22/SP22-267.yaml
+      - pack_22/SP22-268.yaml
   - id: character-and-readable-forms
     name: 5. Character & Readable Forms
     presetRefs:
@@ -61,6 +109,18 @@ categories:
       - pack_22/SP22-138.yaml
       - pack_22/SP22-139.yaml
       - pack_22/SP22-140.yaml
+      - pack_22/SP22-269.yaml
+      - pack_22/SP22-270.yaml
+      - pack_22/SP22-271.yaml
+      - pack_22/SP22-272.yaml
+      - pack_22/SP22-273.yaml
+      - pack_22/SP22-274.yaml
+      - pack_22/SP22-275.yaml
+      - pack_22/SP22-276.yaml
+      - pack_22/SP22-277.yaml
+      - pack_22/SP22-278.yaml
+      - pack_22/SP22-279.yaml
+      - pack_22/SP22-280.yaml
   - id: anime-illustration
     name: 6. Anime Illustration
     presetRefs:
@@ -72,6 +132,18 @@ categories:
       - pack_22/SP22-146.yaml
       - pack_22/SP22-147.yaml
       - pack_22/SP22-148.yaml
+      - pack_22/SP22-281.yaml
+      - pack_22/SP22-282.yaml
+      - pack_22/SP22-283.yaml
+      - pack_22/SP22-284.yaml
+      - pack_22/SP22-285.yaml
+      - pack_22/SP22-286.yaml
+      - pack_22/SP22-287.yaml
+      - pack_22/SP22-288.yaml
+      - pack_22/SP22-289.yaml
+      - pack_22/SP22-290.yaml
+      - pack_22/SP22-291.yaml
+      - pack_22/SP22-292.yaml
   - id: manga-ink-and-impact
     name: 7. Manga Ink & Impact
     presetRefs:
@@ -83,6 +155,18 @@ categories:
       - pack_22/SP22-154.yaml
       - pack_22/SP22-155.yaml
       - pack_22/SP22-156.yaml
+      - pack_22/SP22-293.yaml
+      - pack_22/SP22-294.yaml
+      - pack_22/SP22-295.yaml
+      - pack_22/SP22-296.yaml
+      - pack_22/SP22-297.yaml
+      - pack_22/SP22-298.yaml
+      - pack_22/SP22-299.yaml
+      - pack_22/SP22-300.yaml
+      - pack_22/SP22-301.yaml
+      - pack_22/SP22-302.yaml
+      - pack_22/SP22-303.yaml
+      - pack_22/SP22-304.yaml
   - id: technical-illustration
     name: 8. Technical Illustration
     presetRefs:
@@ -94,6 +178,18 @@ categories:
       - pack_22/SP22-162.yaml
       - pack_22/SP22-163.yaml
       - pack_22/SP22-164.yaml
+      - pack_22/SP22-305.yaml
+      - pack_22/SP22-306.yaml
+      - pack_22/SP22-307.yaml
+      - pack_22/SP22-308.yaml
+      - pack_22/SP22-309.yaml
+      - pack_22/SP22-310.yaml
+      - pack_22/SP22-311.yaml
+      - pack_22/SP22-312.yaml
+      - pack_22/SP22-313.yaml
+      - pack_22/SP22-314.yaml
+      - pack_22/SP22-315.yaml
+      - pack_22/SP22-316.yaml
   - id: comic-and-cartoon-illustration
     name: 9. Comic & Cartoon Illustration
     presetRefs:
@@ -180,6 +276,18 @@ presetRefs:
   - pack_22/SP22-106.yaml
   - pack_22/SP22-107.yaml
   - pack_22/SP22-108.yaml
+  - pack_22/SP22-221.yaml
+  - pack_22/SP22-222.yaml
+  - pack_22/SP22-223.yaml
+  - pack_22/SP22-224.yaml
+  - pack_22/SP22-225.yaml
+  - pack_22/SP22-226.yaml
+  - pack_22/SP22-227.yaml
+  - pack_22/SP22-228.yaml
+  - pack_22/SP22-229.yaml
+  - pack_22/SP22-230.yaml
+  - pack_22/SP22-231.yaml
+  - pack_22/SP22-232.yaml
   - pack_22/SP22-109.yaml
   - pack_22/SP22-110.yaml
   - pack_22/SP22-111.yaml
@@ -188,6 +296,18 @@ presetRefs:
   - pack_22/SP22-114.yaml
   - pack_22/SP22-115.yaml
   - pack_22/SP22-116.yaml
+  - pack_22/SP22-233.yaml
+  - pack_22/SP22-234.yaml
+  - pack_22/SP22-235.yaml
+  - pack_22/SP22-236.yaml
+  - pack_22/SP22-237.yaml
+  - pack_22/SP22-238.yaml
+  - pack_22/SP22-239.yaml
+  - pack_22/SP22-240.yaml
+  - pack_22/SP22-241.yaml
+  - pack_22/SP22-242.yaml
+  - pack_22/SP22-243.yaml
+  - pack_22/SP22-244.yaml
   - pack_22/SP22-117.yaml
   - pack_22/SP22-118.yaml
   - pack_22/SP22-119.yaml
@@ -196,6 +316,18 @@ presetRefs:
   - pack_22/SP22-122.yaml
   - pack_22/SP22-123.yaml
   - pack_22/SP22-124.yaml
+  - pack_22/SP22-245.yaml
+  - pack_22/SP22-246.yaml
+  - pack_22/SP22-247.yaml
+  - pack_22/SP22-248.yaml
+  - pack_22/SP22-249.yaml
+  - pack_22/SP22-250.yaml
+  - pack_22/SP22-251.yaml
+  - pack_22/SP22-252.yaml
+  - pack_22/SP22-253.yaml
+  - pack_22/SP22-254.yaml
+  - pack_22/SP22-255.yaml
+  - pack_22/SP22-256.yaml
   - pack_22/SP22-125.yaml
   - pack_22/SP22-126.yaml
   - pack_22/SP22-127.yaml
@@ -204,6 +336,18 @@ presetRefs:
   - pack_22/SP22-130.yaml
   - pack_22/SP22-131.yaml
   - pack_22/SP22-132.yaml
+  - pack_22/SP22-257.yaml
+  - pack_22/SP22-258.yaml
+  - pack_22/SP22-259.yaml
+  - pack_22/SP22-260.yaml
+  - pack_22/SP22-261.yaml
+  - pack_22/SP22-262.yaml
+  - pack_22/SP22-263.yaml
+  - pack_22/SP22-264.yaml
+  - pack_22/SP22-265.yaml
+  - pack_22/SP22-266.yaml
+  - pack_22/SP22-267.yaml
+  - pack_22/SP22-268.yaml
   - pack_22/SP22-133.yaml
   - pack_22/SP22-134.yaml
   - pack_22/SP22-135.yaml
@@ -212,6 +356,18 @@ presetRefs:
   - pack_22/SP22-138.yaml
   - pack_22/SP22-139.yaml
   - pack_22/SP22-140.yaml
+  - pack_22/SP22-269.yaml
+  - pack_22/SP22-270.yaml
+  - pack_22/SP22-271.yaml
+  - pack_22/SP22-272.yaml
+  - pack_22/SP22-273.yaml
+  - pack_22/SP22-274.yaml
+  - pack_22/SP22-275.yaml
+  - pack_22/SP22-276.yaml
+  - pack_22/SP22-277.yaml
+  - pack_22/SP22-278.yaml
+  - pack_22/SP22-279.yaml
+  - pack_22/SP22-280.yaml
   - pack_22/SP22-141.yaml
   - pack_22/SP22-142.yaml
   - pack_22/SP22-143.yaml
@@ -220,6 +376,18 @@ presetRefs:
   - pack_22/SP22-146.yaml
   - pack_22/SP22-147.yaml
   - pack_22/SP22-148.yaml
+  - pack_22/SP22-281.yaml
+  - pack_22/SP22-282.yaml
+  - pack_22/SP22-283.yaml
+  - pack_22/SP22-284.yaml
+  - pack_22/SP22-285.yaml
+  - pack_22/SP22-286.yaml
+  - pack_22/SP22-287.yaml
+  - pack_22/SP22-288.yaml
+  - pack_22/SP22-289.yaml
+  - pack_22/SP22-290.yaml
+  - pack_22/SP22-291.yaml
+  - pack_22/SP22-292.yaml
   - pack_22/SP22-149.yaml
   - pack_22/SP22-150.yaml
   - pack_22/SP22-151.yaml
@@ -228,6 +396,18 @@ presetRefs:
   - pack_22/SP22-154.yaml
   - pack_22/SP22-155.yaml
   - pack_22/SP22-156.yaml
+  - pack_22/SP22-293.yaml
+  - pack_22/SP22-294.yaml
+  - pack_22/SP22-295.yaml
+  - pack_22/SP22-296.yaml
+  - pack_22/SP22-297.yaml
+  - pack_22/SP22-298.yaml
+  - pack_22/SP22-299.yaml
+  - pack_22/SP22-300.yaml
+  - pack_22/SP22-301.yaml
+  - pack_22/SP22-302.yaml
+  - pack_22/SP22-303.yaml
+  - pack_22/SP22-304.yaml
   - pack_22/SP22-157.yaml
   - pack_22/SP22-158.yaml
   - pack_22/SP22-159.yaml
@@ -236,6 +416,18 @@ presetRefs:
   - pack_22/SP22-162.yaml
   - pack_22/SP22-163.yaml
   - pack_22/SP22-164.yaml
+  - pack_22/SP22-305.yaml
+  - pack_22/SP22-306.yaml
+  - pack_22/SP22-307.yaml
+  - pack_22/SP22-308.yaml
+  - pack_22/SP22-309.yaml
+  - pack_22/SP22-310.yaml
+  - pack_22/SP22-311.yaml
+  - pack_22/SP22-312.yaml
+  - pack_22/SP22-313.yaml
+  - pack_22/SP22-314.yaml
+  - pack_22/SP22-315.yaml
+  - pack_22/SP22-316.yaml
   - pack_22/SP22-165.yaml
   - pack_22/SP22-166.yaml
   - pack_22/SP22-167.yaml

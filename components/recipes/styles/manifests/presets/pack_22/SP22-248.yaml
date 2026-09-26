@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP22-248
+packId: pack_22
+name: Bruise-Tone Watercolor
+styleAnchors:
+  - Bruise-Tone Watercolor
+  - sickly bruise palette washes
+  - bruise purples and yellows
+displayName: Bruise-Tone Watercolor
+category: 3. Strange Ink & Paint
+domain: sickly bruise palette washes
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - strange-ink-and-paint
+  - bruise-tone
+  - portable-style-study
+visualDna:
+  aesthetic: 'Bruise-tone watercolor: transparent washes in the sickly purples, yellows and greens of fading bruises, soft and unsettling.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action; wash the subject in bruise colors that pool softly while its forms stay readable.
+  color_and_tone: Violet, mustard yellow, olive green and faint blood red washes on white paper.
+  lighting_and_shadow: Soft wash transitions, darker violet pooling in shadows.
+  texture_and_material: Blooms, pooled edges, granulation and soft wet blending.
+  camera_and_composition: Preserve the requested framing with soft-edged color masses.
+  atmosphere_and_mood: Keep the requested mood with a quietly sickly unease.
+  rendering_and_quality: Delicate transparent layered washes, never gory or opaque.
+  creative_brief: "Bruise-tone watercolor: transparent washes in the sickly purples, yellows and greens of fading bruises, soft and unsettling. Carry it through bruise purples and yellows, soft pooling washes, granulation, sickly unease. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: bruise purples and yellows; soft pooling washes; granulation; sickly unease
+avoidRules:
+  - bright cheerful palette
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: bright cheerful palette, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: strange-ink-and-paint
+  categoryName: 3. Strange Ink & Paint
+  tags:
+    - trading-card-illustration
+    - strange-ink-and-paint
+    - bruise-tone
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: sickly bruise palette washes

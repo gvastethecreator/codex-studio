@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP22-232
+packId: pack_22
+name: Raw Umber Wipe-Out
+styleAnchors:
+  - Raw Umber Wipe-Out
+  - monochrome wipe-out underpainting
+  - single umber layer
+displayName: Raw Umber Wipe-Out
+category: 1. Workshop Painting
+domain: monochrome wipe-out underpainting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - workshop-painting
+  - umber-wipeout
+  - portable-style-study
+visualDna:
+  aesthetic: 'Raw umber wipe-out: a single warm brown paint layer brushed on and wiped away with rags to pull out the lights, fast and moody.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action; pull the subject's lights out of a warm brown layer with rags and brush ends.
+  color_and_tone: Monochrome warm umber from deep brown shadows to pale wiped cream lights.
+  lighting_and_shadow: Strong wiped-out lights emerging from deep warm brown darkness.
+  texture_and_material: Rag wipe textures, brush-end scratches and soft thin paint films.
+  camera_and_composition: Preserve the requested framing with a strong light-dark design.
+  atmosphere_and_mood: Keep the requested mood with a warm, moody, sketch-like immediacy.
+  rendering_and_quality: Quick confident wipe-outs with clear forms, never muddy.
+  creative_brief: "Raw umber wipe-out: a single warm brown paint layer brushed on and wiped away with rags to pull out the lights, fast and moody. Carry it through single umber layer, rag wipe-out lights, brush-end scratches, warm monochrome. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: single umber layer; rag wipe-out lights; brush-end scratches; warm monochrome
+avoidRules:
+  - full color
+  - digital smoothness
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: full color, digital smoothness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: workshop-painting
+  categoryName: 1. Workshop Painting
+  tags:
+    - trading-card-illustration
+    - workshop-painting
+    - umber-wipeout
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: monochrome wipe-out underpainting

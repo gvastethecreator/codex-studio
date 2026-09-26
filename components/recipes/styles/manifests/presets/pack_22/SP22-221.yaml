@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP22-221
+packId: pack_22
+name: Grisaille Underlayer Build
+styleAnchors:
+  - Grisaille Underlayer Build
+  - monochrome underpainting glazed over
+  - grey underpainting
+displayName: Grisaille Underlayer Build
+category: 1. Workshop Painting
+domain: monochrome underpainting glazed over
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - workshop-painting
+  - grisaille-underlayer
+  - portable-style-study
+visualDna:
+  aesthetic: 'Grisaille underlayer build: the image first modeled in cool greys, then warmed with thin color glazes so the grey underpainting still shapes every form.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action; model the forms fully in grey values first and let color glazes sit on top without changing their structure.
+  color_and_tone: Cool silvery grey foundation with thin warm glazes of the requested colors on top.
+  lighting_and_shadow: Strong sculpted value structure from the grey layer, glazes only tinting lights and shadows.
+  texture_and_material: Smooth oil film, visible grey showing through thin color, soft transitions at turning edges.
+  camera_and_composition: Preserve the requested framing, with a clear value hierarchy guiding the eye.
+  atmosphere_and_mood: Keep the requested mood; the method adds solidity and quiet depth.
+  rendering_and_quality: Sculptural grey modeling under restrained color, never flat or airbrushed.
+  creative_brief: "Grisaille underlayer build: the image first modeled in cool greys, then warmed with thin color glazes so the grey underpainting still shapes every form. Carry it through grey underpainting, thin color glazes, sculpted values, silvery depth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: grey underpainting; thin color glazes; sculpted values; silvery depth
+avoidRules:
+  - flat saturated color
+  - airbrush gradients
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: flat saturated color, airbrush gradients, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: workshop-painting
+  categoryName: 1. Workshop Painting
+  tags:
+    - trading-card-illustration
+    - workshop-painting
+    - grisaille-underlayer
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: monochrome underpainting glazed over

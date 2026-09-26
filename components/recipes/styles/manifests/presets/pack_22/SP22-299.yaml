@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP22-299
+packId: pack_22
+name: Gritty Seinen Ink Detail
+styleAnchors:
+  - Gritty Seinen Ink Detail
+  - dense realistic mature manga ink
+  - dense realistic detail
+displayName: Gritty Seinen Ink Detail
+category: 7. Manga Ink & Impact
+domain: dense realistic mature manga ink
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - manga-ink-and-impact
+  - gritty-seinen-ink
+  - manga
+  - portable-style-study
+visualDna:
+  aesthetic: 'Gritty seinen ink detail: mature realistic manga drawing with dense cross-contour detail, worn textures and heavy shadowed faces.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original character designs; render the subject with dense realistic line detail and worn textures.
+  color_and_tone: Black ink on white with heavy dark areas and fine detailed greys.
+  lighting_and_shadow: Hard realistic lighting with deep shadows under brows and in folds.
+  texture_and_material: Worn leather, rust, stubble, cracked walls and dense cross-contour lines.
+  camera_and_composition: Preserve the requested framing with cinematic realistic staging.
+  atmosphere_and_mood: Keep the requested mood with grim mature weight.
+  rendering_and_quality: Meticulous realistic inking with controlled density, kept consistent across the whole image.
+  creative_brief: "Gritty seinen ink detail: mature realistic manga drawing with dense cross-contour detail, worn textures and heavy shadowed faces. Carry it through dense realistic detail, worn textures, heavy shadows, mature tone. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: dense realistic detail; worn textures; heavy shadows; mature tone
+avoidRules:
+  - cute simplified style
+  - gore
+  - speech bubbles
+  - sound-effect lettering
+  - franchise character likeness
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cute simplified style, gore, speech bubbles, sound-effect lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: manga-ink-and-impact
+  categoryName: 7. Manga Ink & Impact
+  tags:
+    - trading-card-illustration
+    - manga-ink-and-impact
+    - gritty-seinen-ink
+    - manga
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: dense realistic mature manga ink

@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP22-305
+packId: pack_22
+name: Transparent Shell Rendering
+styleAnchors:
+  - Transparent Shell Rendering
+  - ghosted see-through exterior
+  - ghosted glass shell
+displayName: Transparent Shell Rendering
+category: 8. Technical Illustration
+domain: ghosted see-through exterior
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - technical-illustration
+  - transparent-shell
+  - technical
+  - portable-style-study
+visualDna:
+  aesthetic: 'Transparent shell rendering: technical illustration where the outer shell of an object is ghosted to glass so every inner mechanism shows through clearly.'
+  subject_treatment: Preserve the requested object, identity, proportions and pose; render the outer shell as faint transparent glass and show its internal parts fully.
+  color_and_tone: Pale ghosted shell tints over saturated interior parts in brass, steel and color accents.
+  lighting_and_shadow: Soft studio light with subtle reflections on the glassy shell.
+  texture_and_material: Faint shell outlines, polished gears, wires, pipes and inner structure.
+  camera_and_composition: Three-quarter view with the object centered on a clean background.
+  atmosphere_and_mood: Curious, explanatory and precise, showing how everything fits inside.
+  rendering_and_quality: Crisp detailed internals with clean consistent transparency, kept consistent across the whole image.
+  creative_brief: "Transparent shell rendering: technical illustration where the outer shell of an object is ghosted to glass so every inner mechanism shows through clearly. Carry it through ghosted glass shell, visible internals, three-quarter view, clean background. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: ghosted glass shell; visible internals; three-quarter view; clean background
+avoidRules:
+  - opaque solid exterior
+  - readable labels or numbers
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: opaque solid exterior, readable labels or numbers, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: technical-illustration
+  categoryName: 8. Technical Illustration
+  tags:
+    - trading-card-illustration
+    - technical-illustration
+    - transparent-shell
+    - technical
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: ghosted see-through exterior

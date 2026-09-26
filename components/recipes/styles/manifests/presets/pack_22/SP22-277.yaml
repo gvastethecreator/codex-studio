@@ -1,0 +1,68 @@
+schemaVersion: 1
+id: SP22-277
+packId: pack_22
+name: Minimal Line Character
+styleAnchors:
+  - Minimal Line Character
+  - few-line minimal character
+  - few lines
+displayName: Minimal Line Character
+category: 5. Character & Readable Forms
+domain: few-line minimal character
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - character-and-readable-forms
+  - minimal-line
+  - portable-style-study
+visualDna:
+  aesthetic: 'Minimal line character: characters captured in the fewest possible lines, a single confident stroke for each form, with lots of empty space.'
+  subject_treatment: Preserve the requested identity, count, pose and action; reduce the characters to a handful of clean lines that still read clearly.
+  color_and_tone: Black line on white with at most one flat accent color.
+  lighting_and_shadow: No shading; form implied by line placement alone.
+  texture_and_material: Clean confident strokes with slight taper and empty paper.
+  camera_and_composition: Preserve the requested framing with generous empty space.
+  atmosphere_and_mood: Keep the requested mood with calm elegant simplicity.
+  rendering_and_quality: Precise minimal line work, never sketchy or overworked.
+  creative_brief: "Minimal line character: characters captured in the fewest possible lines, a single confident stroke for each form, with lots of empty space. Carry it through few lines, single strokes, empty space, one accent color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: few lines; single strokes; empty space; one accent color
+avoidRules:
+  - detailed rendering
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: detailed rendering, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: character-and-readable-forms
+  categoryName: 5. Character & Readable Forms
+  tags:
+    - trading-card-illustration
+    - character-and-readable-forms
+    - minimal-line
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: few-line minimal character

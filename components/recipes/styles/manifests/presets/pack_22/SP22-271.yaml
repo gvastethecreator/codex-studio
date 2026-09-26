@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP22-271
+packId: pack_22
+name: Faction Color Coding
+styleAnchors:
+  - Faction Color Coding
+  - team color identity design
+  - dominant faction color
+displayName: Faction Color Coding
+category: 5. Character & Readable Forms
+domain: team color identity design
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - character-and-readable-forms
+  - faction-color
+  - portable-style-study
+visualDna:
+  aesthetic: 'Faction color coding: characters designed around one bold faction color scheme so allegiance reads instantly, with accents repeated across costume and gear.'
+  subject_treatment: Preserve the requested identity, count, pose and action; dress and equip the characters in a clear shared color scheme showing their faction.
+  color_and_tone: One dominant faction color with a secondary accent and neutral base tones.
+  lighting_and_shadow: Clean readable lighting that keeps faction colors strong in shadow.
+  texture_and_material: Banners without symbols, sashes, dyed armor trims and colored gear.
+  camera_and_composition: Preserve the requested framing with faction colors leading the eye.
+  atmosphere_and_mood: Keep the requested mood with clear team identity and pride.
+  rendering_and_quality: Clean polished rendering with consistent color logic, kept consistent across the whole image.
+  creative_brief: "Faction color coding: characters designed around one bold faction color scheme so allegiance reads instantly, with accents repeated across costume and gear. Carry it through dominant faction color, repeated accents, clear allegiance, neutral base. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: dominant faction color; repeated accents; clear allegiance; neutral base
+avoidRules:
+  - random unrelated colors
+  - readable emblems
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: random unrelated colors, readable emblems, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: character-and-readable-forms
+  categoryName: 5. Character & Readable Forms
+  tags:
+    - trading-card-illustration
+    - character-and-readable-forms
+    - faction-color
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: team color identity design

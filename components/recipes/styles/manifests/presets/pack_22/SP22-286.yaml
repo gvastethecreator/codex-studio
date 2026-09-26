@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP22-286
+packId: pack_22
+name: Halftone Tone Anime
+styleAnchors:
+  - Halftone Tone Anime
+  - color anime with screentone dots
+  - screentone dot shading
+displayName: Halftone Tone Anime
+category: 6. Anime Illustration
+domain: color anime with screentone dots
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - anime-illustration
+  - halftone-anime
+  - anime
+  - portable-style-study
+visualDna:
+  aesthetic: 'Halftone tone anime: color anime illustration shaded with visible screentone dot patterns instead of smooth gradients, like a colored manga page.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original character designs; shade the characters with clean dot and line screentone patterns over flat colors.
+  color_and_tone: Bright flat colors with dot-pattern shading in darker tints.
+  lighting_and_shadow: Shadows and highlights made from screentone dot density.
+  texture_and_material: Round dot tones, line tones, crisp ink outlines and flat fills.
+  camera_and_composition: Preserve the requested framing with bold graphic composition.
+  atmosphere_and_mood: Keep the requested mood with lively printed comic energy.
+  rendering_and_quality: Clean screentone application with crisp consistent dots, kept consistent across the whole image.
+  creative_brief: "Halftone tone anime: color anime illustration shaded with visible screentone dot patterns instead of smooth gradients, like a colored manga page. Carry it through screentone dot shading, flat colors, crisp ink, printed comic feel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: screentone dot shading; flat colors; crisp ink; printed comic feel
+avoidRules:
+  - smooth airbrush gradients
+  - franchise character likeness
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: smooth airbrush gradients, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: anime-illustration
+  categoryName: 6. Anime Illustration
+  tags:
+    - trading-card-illustration
+    - anime-illustration
+    - halftone-anime
+    - anime
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: color anime with screentone dots

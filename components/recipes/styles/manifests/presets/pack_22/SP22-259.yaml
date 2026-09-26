@@ -1,0 +1,68 @@
+schemaVersion: 1
+id: SP22-259
+packId: pack_22
+name: Pencil-Test Keyframe
+styleAnchors:
+  - Pencil-Test Keyframe
+  - rough animation pencil drawings
+  - blue construction lines
+displayName: Pencil-Test Keyframe
+category: 4. Storybook & Animation
+domain: rough animation pencil drawings
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - storybook-and-animation
+  - pencil-test
+  - portable-style-study
+visualDna:
+  aesthetic: 'Pencil-test keyframe: rough animation drawings in blue and red pencil with construction lines, timing arcs and ghosted in-between poses.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action; draw the subject as a lively rough key pose with construction lines and faint ghost poses.
+  color_and_tone: Blue construction pencil, red or graphite clean-up lines on white animation paper.
+  lighting_and_shadow: No modeled light; simple tone scribbles only where needed.
+  texture_and_material: Sketchy pencil strokes, erased marks, peg holes and paper grain.
+  camera_and_composition: Preserve the requested framing on an animation paper sheet.
+  atmosphere_and_mood: Keep the requested mood with energetic in-progress motion.
+  rendering_and_quality: Loose but confident motion drawing with clear gesture and arcs.
+  creative_brief: "Pencil-test keyframe: rough animation drawings in blue and red pencil with construction lines, timing arcs and ghosted in-between poses. Carry it through blue construction lines, ghosted poses, motion arcs, animation paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: blue construction lines; ghosted poses; motion arcs; animation paper
+avoidRules:
+  - finished color painting
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: finished color painting, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: storybook-and-animation
+  categoryName: 4. Storybook & Animation
+  tags:
+    - trading-card-illustration
+    - storybook-and-animation
+    - pencil-test
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: rough animation pencil drawings

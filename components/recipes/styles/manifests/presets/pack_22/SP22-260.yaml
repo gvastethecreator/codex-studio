@@ -1,0 +1,68 @@
+schemaVersion: 1
+id: SP22-260
+packId: pack_22
+name: Wax Crayon Storybook Texture
+styleAnchors:
+  - Wax Crayon Storybook Texture
+  - waxy crayon picture book
+  - waxy crayon strokes
+displayName: Wax Crayon Storybook Texture
+category: 4. Storybook & Animation
+domain: waxy crayon picture book
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - storybook-and-animation
+  - crayon-storybook
+  - portable-style-study
+visualDna:
+  aesthetic: 'Wax crayon storybook texture: picture-book illustration built with waxy crayons over washes, the paper grain catching the wax in bright broken strokes.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action; color the subject in textured wax crayon strokes that follow its shape.
+  color_and_tone: Bright crayon colors over soft watercolor base washes with white grain flecks.
+  lighting_and_shadow: Simple light with darker crayon layering in shadows.
+  texture_and_material: Waxy broken strokes, paper tooth flecks and crayon resist over washes.
+  camera_and_composition: Preserve the requested framing with cozy readable shapes.
+  atmosphere_and_mood: Keep the requested mood with playful handmade warmth and joy.
+  rendering_and_quality: Textured crayon layers with clear shapes, never sloppy scribble.
+  creative_brief: "Wax crayon storybook texture: picture-book illustration built with waxy crayons over washes, the paper grain catching the wax in bright broken strokes. Carry it through waxy crayon strokes, paper grain flecks, wash base, handmade warmth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: waxy crayon strokes; paper grain flecks; wash base; handmade warmth
+avoidRules:
+  - smooth digital fill
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: smooth digital fill, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: storybook-and-animation
+  categoryName: 4. Storybook & Animation
+  tags:
+    - trading-card-illustration
+    - storybook-and-animation
+    - crayon-storybook
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: waxy crayon picture book

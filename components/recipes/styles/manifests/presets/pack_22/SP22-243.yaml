@@ -1,0 +1,68 @@
+schemaVersion: 1
+id: SP22-243
+packId: pack_22
+name: Gold-Leaf Highlight Paint
+styleAnchors:
+  - Gold-Leaf Highlight Paint
+  - painting with gold highlight accents
+  - gold highlight edges
+displayName: Gold-Leaf Highlight Paint
+category: 2. Epic Digital Painting
+domain: painting with gold highlight accents
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - epic-digital-painting
+  - gold-highlights
+  - portable-style-study
+visualDna:
+  aesthetic: 'Gold-leaf highlight paint: rich painting where highlights, edges and ornaments are picked out in metallic gold, giving a luxurious illuminated card look.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action; paint the subject normally and pick out its brightest edges and ornaments in gold.
+  color_and_tone: Deep jewel colors such as emerald, sapphire and burgundy with shining gold accents.
+  lighting_and_shadow: Rich painted modeling with gold catching and reflecting the light.
+  texture_and_material: Metallic gold edges, ornamental filigree, subtle leaf texture and glossy paint.
+  camera_and_composition: Preserve the requested framing with gold leading the eye to the focal point.
+  atmosphere_and_mood: Keep the requested mood with opulent ceremonial richness.
+  rendering_and_quality: Controlled gold accents on a polished painting, never gold everywhere.
+  creative_brief: "Gold-leaf highlight paint: rich painting where highlights, edges and ornaments are picked out in metallic gold, giving a luxurious illuminated card look. Carry it through gold highlight edges, jewel-tone base, filigree accents, luxurious finish. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: gold highlight edges; jewel-tone base; filigree accents; luxurious finish
+avoidRules:
+  - gold covering everything
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: gold covering everything, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: epic-digital-painting
+  categoryName: 2. Epic Digital Painting
+  tags:
+    - trading-card-illustration
+    - epic-digital-painting
+    - gold-highlights
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: painting with gold highlight accents

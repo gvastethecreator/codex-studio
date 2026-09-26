@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP22-230
+packId: pack_22
+name: Scraped-Back Layers
+styleAnchors:
+  - Scraped-Back Layers
+  - scraped paint revealing layers
+  - scraped-through underlayers
+displayName: Scraped-Back Layers
+category: 1. Workshop Painting
+domain: scraped paint revealing layers
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - workshop-painting
+  - scraped-back
+  - portable-style-study
+visualDna:
+  aesthetic: 'Scraped-back layers: multiple dried paint layers scraped and sanded back with blades so bright under-colors emerge through worn upper surfaces.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action; reveal the subject's lights and textures by scraping through top layers to earlier colors.
+  color_and_tone: Dark top layers scraped to reveal bright red, gold or turquoise underlayers.
+  lighting_and_shadow: Lights emerge as scraped-through areas; darks remain untouched surface.
+  texture_and_material: Blade scrape marks, sanded edges, layered paint strata and worn surfaces.
+  camera_and_composition: Preserve the requested framing with scraped highlights guiding the eye.
+  atmosphere_and_mood: Keep the requested mood with an aged, excavated feel.
+  rendering_and_quality: Controlled scrape marks shaping form, never random distress overlay.
+  creative_brief: "Scraped-back layers: multiple dried paint layers scraped and sanded back with blades so bright under-colors emerge through worn upper surfaces. Carry it through scraped-through underlayers, blade marks, layered strata, revealed highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: scraped-through underlayers; blade marks; layered strata; revealed highlights
+avoidRules:
+  - uniform grunge overlay
+  - digital distress texture
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: uniform grunge overlay, digital distress texture, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: workshop-painting
+  categoryName: 1. Workshop Painting
+  tags:
+    - trading-card-illustration
+    - workshop-painting
+    - scraped-back
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: scraped paint revealing layers

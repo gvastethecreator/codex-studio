@@ -1,0 +1,68 @@
+schemaVersion: 1
+id: SP22-239
+packId: pack_22
+name: Polished Armor Gleam
+styleAnchors:
+  - Polished Armor Gleam
+  - reflective metal painting
+  - mirror metal
+displayName: Polished Armor Gleam
+category: 2. Epic Digital Painting
+domain: reflective metal painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - epic-digital-painting
+  - armor-gleam
+  - portable-style-study
+visualDna:
+  aesthetic: 'Polished armor gleam: digital painting focused on mirror-polished metal, where armor, weapons and machines reflect their surroundings in crisp distorted highlights.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action; render metal surfaces with accurate reflections of the environment while keeping forms clear.
+  color_and_tone: Steel, gold or bronze reflecting sky blues and environment colors with sharp white speculars.
+  lighting_and_shadow: Hard specular highlights, reflected environment bands and deep contrast.
+  texture_and_material: Mirror metal, engraved details, scratches and small reflections of the scene.
+  camera_and_composition: Preserve the requested framing with the metal surface prominent.
+  atmosphere_and_mood: Keep the requested mood with gleaming heroic grandeur throughout.
+  rendering_and_quality: Precise reflective rendering with believable curved distortion everywhere.
+  creative_brief: "Polished armor gleam: digital painting focused on mirror-polished metal, where armor, weapons and machines reflect their surroundings in crisp distorted highlights. Carry it through mirror metal, environment reflections, sharp speculars, engraved detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: mirror metal; environment reflections; sharp speculars; engraved detail
+avoidRules:
+  - matte plastic armor
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: matte plastic armor, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: epic-digital-painting
+  categoryName: 2. Epic Digital Painting
+  tags:
+    - trading-card-illustration
+    - epic-digital-painting
+    - armor-gleam
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: reflective metal painting

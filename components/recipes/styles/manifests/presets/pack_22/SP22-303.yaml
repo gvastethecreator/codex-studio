@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP22-303
+packId: pack_22
+name: Scratched Aura Tones
+styleAnchors:
+  - Scratched Aura Tones
+  - scratched screentone energy aura
+  - scratched white auras
+displayName: Scratched Aura Tones
+category: 7. Manga Ink & Impact
+domain: scratched screentone energy aura
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - manga-ink-and-impact
+  - scratched-aura
+  - manga
+  - portable-style-study
+visualDna:
+  aesthetic: 'Scratched aura tones: manga where screentone is scratched away with a blade to create glowing white auras, sparks and energy around characters.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original character designs; surround the subject with auras and sparks scratched out of dark screentone.
+  color_and_tone: Dark screentone backgrounds with scratched white energy highlights.
+  lighting_and_shadow: Glowing scratched highlights cutting through dark tone, kept consistent across the whole image.
+  texture_and_material: Scratched tone lines, dotted tone remnants and crisp ink figures.
+  camera_and_composition: Preserve the requested framing with the aura radiating from the figure.
+  atmosphere_and_mood: Keep the requested mood with crackling power, kept consistent across the whole image.
+  rendering_and_quality: Controlled scratched effects with clean figure drawing, kept consistent across the whole image.
+  creative_brief: "Scratched aura tones: manga where screentone is scratched away with a blade to create glowing white auras, sparks and energy around characters. Carry it through scratched white auras, dark screentone, sparks, crackling power. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: scratched white auras; dark screentone; sparks; crackling power
+avoidRules:
+  - smooth digital glow
+  - speech bubbles
+  - sound-effect lettering
+  - franchise character likeness
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: smooth digital glow, speech bubbles, sound-effect lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: manga-ink-and-impact
+  categoryName: 7. Manga Ink & Impact
+  tags:
+    - trading-card-illustration
+    - manga-ink-and-impact
+    - scratched-aura
+    - manga
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: scratched screentone energy aura

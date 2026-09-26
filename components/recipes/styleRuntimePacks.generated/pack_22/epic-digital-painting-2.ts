@@ -228,4 +228,399 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP22-233',
+    name: 'Backlit Halo Hero',
+    displayName: 'Backlit Halo Hero',
+    styleAnchors: [
+      'Backlit Halo Hero',
+      'strong backlight silhouette painting',
+      'blazing backlight',
+    ],
+    category: '2. Epic Digital Painting',
+    domain: 'strong backlight silhouette painting',
+    negativePrompt:
+      'flat front lighting, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Backlit halo hero: digital painting where a powerful light behind the subject carves a glowing halo around its silhouette while the front sits in rich shadow.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; keep the subject readable as a strong silhouette with a glowing rim and softly lit front details.',
+      color_and_tone:
+        'Warm or cold blazing backlight against deep shadowed midtones on the subject.',
+      lighting_and_shadow:
+        'Intense rim light and light bloom around edges, gentle bounce light in the shadowed front.',
+      texture_and_material:
+        'Glowing hair and fabric edges, atmospheric haze catching light and soft painted shadows.',
+      camera_and_composition:
+        'Preserve the requested framing with the light source behind the focal subject.',
+      atmosphere_and_mood: 'Keep the requested mood, lifted by radiant drama.',
+      rendering_and_quality: 'Clean painterly rendering with controlled bloom and crisp rim edges.',
+      creative_brief:
+        "Backlit halo hero: digital painting where a powerful light behind the subject carves a glowing halo around its silhouette while the front sits in rich shadow. Carry it through blazing backlight, glowing rim halo, shadowed front, light bloom. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'blazing backlight; glowing rim halo; shadowed front; light bloom',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-234',
+    name: 'Aerial Perspective Layers',
+    displayName: 'Aerial Perspective Layers',
+    styleAnchors: [
+      'Aerial Perspective Layers',
+      'atmospheric depth value layering',
+      'stacked value planes',
+    ],
+    category: '2. Epic Digital Painting',
+    domain: 'atmospheric depth value layering',
+    negativePrompt:
+      'flat depthless background, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Aerial perspective layers: epic depth built from stacked value layers, each farther plane lighter and bluer until distant mountains melt into sky.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; place the subject in the crisp foreground layer and let space recede behind it in fading planes.',
+      color_and_tone:
+        'Saturated dark foreground fading through cooler mid-planes to pale blue distance.',
+      lighting_and_shadow: 'Sunlit haze between planes, contrast decreasing with distance.',
+      texture_and_material: 'Detailed foreground texture fading to smooth simplified far planes.',
+      camera_and_composition:
+        'Preserve the requested framing with clear foreground, middle and far layers.',
+      atmosphere_and_mood: 'Keep the requested mood with vast breathing space.',
+      rendering_and_quality: 'Controlled value layering and clean edges between planes.',
+      creative_brief:
+        "Aerial perspective layers: epic depth built from stacked value layers, each farther plane lighter and bluer until distant mountains melt into sky. Carry it through stacked value planes, blue distance, fading contrast, vast depth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'stacked value planes; blue distance; fading contrast; vast depth',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-235',
+    name: 'Textured Brush Concept',
+    displayName: 'Textured Brush Concept',
+    styleAnchors: [
+      'Textured Brush Concept',
+      'textured digital brush concept art',
+      'gritty textured brushes',
+    ],
+    category: '2. Epic Digital Painting',
+    domain: 'textured digital brush concept art',
+    negativePrompt:
+      'uniform airbrush smoothness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Textured brush concept: digital painting built with gritty textured brushes, leaving visible rough marks that suggest detail without rendering everything.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; describe the subject with textured brush marks that suggest material and form economically.',
+      color_and_tone: 'Earthy or moody concept palettes with a few saturated accent colors.',
+      lighting_and_shadow: 'Clear key light shapes with textured shadow masses.',
+      texture_and_material: 'Gritty chalky brush marks, speckled edges and broken dry strokes.',
+      camera_and_composition: 'Preserve the requested framing with focal detail and loose edges.',
+      atmosphere_and_mood: 'Keep the requested mood with a raw, exploratory energy.',
+      rendering_and_quality: 'Selective finish, detail concentrated at the focal point.',
+      creative_brief:
+        "Textured brush concept: digital painting built with gritty textured brushes, leaving visible rough marks that suggest detail without rendering everything. Carry it through gritty textured brushes, suggested detail, loose edges, focal finish. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'gritty textured brushes; suggested detail; loose edges; focal finish',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-236',
+    name: 'Spell-Glow Particle Paint',
+    displayName: 'Spell-Glow Particle Paint',
+    styleAnchors: [
+      'Spell-Glow Particle Paint',
+      'glowing magic particle painting',
+      'magic as light source',
+    ],
+    category: '2. Epic Digital Painting',
+    domain: 'glowing magic particle painting',
+    negativePrompt:
+      'overexposed white glow, readable runes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Spell-glow particle paint: digital painting where glowing magic, sparks and floating particles become the main light source, lighting faces and surfaces with colored glow.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; let glowing energy or particles near the subject light it from within the scene.',
+      color_and_tone:
+        'Dark surroundings with vivid glowing cyan, violet, gold or green magic light.',
+      lighting_and_shadow: 'Colored glow falling onto nearby surfaces, soft falloff into darkness.',
+      texture_and_material:
+        'Floating sparks, luminous trails, glowing runes without letters and lit dust.',
+      camera_and_composition:
+        'Preserve the requested framing with the glow source near the focal point.',
+      atmosphere_and_mood: 'Keep the requested mood with mysterious magical radiance.',
+      rendering_and_quality: 'Controlled glow with crisp sparks, never blown-out overexposure.',
+      creative_brief:
+        "Spell-glow particle paint: digital painting where glowing magic, sparks and floating particles become the main light source, lighting faces and surfaces with colored glow. Carry it through magic as light source, floating sparks, colored glow falloff, dark surroundings. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features:
+        'magic as light source; floating sparks; colored glow falloff; dark surroundings',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-237',
+    name: 'Wide Cinematic Vista',
+    displayName: 'Wide Cinematic Vista',
+    styleAnchors: ['Wide Cinematic Vista', 'panoramic epic environment painting', 'vast landscape'],
+    category: '2. Epic Digital Painting',
+    domain: 'panoramic epic environment painting',
+    negativePrompt:
+      'cropped close-up, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Wide cinematic vista: sweeping environment painting where the landscape is the hero and figures are tiny, with dramatic skies and epic scale.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; show the subject within a vast environment so scale and place dominate.',
+      color_and_tone: 'Cinematic color grading with warm key light and cool atmospheric shadows.',
+      lighting_and_shadow: 'Dramatic sky light, god rays and large cast shadows across the land.',
+      texture_and_material:
+        'Detailed terrain, clouds, water and architecture painted at many scales.',
+      camera_and_composition:
+        'Preserve the requested framing, favoring wide shots with low horizons.',
+      atmosphere_and_mood: 'Keep the requested mood with awe-inspiring scale and space.',
+      rendering_and_quality: 'Polished environment painting with coherent perspective and light.',
+      creative_brief:
+        "Wide cinematic vista: sweeping environment painting where the landscape is the hero and figures are tiny, with dramatic skies and epic scale. Carry it through vast landscape, tiny figures, dramatic sky, cinematic grading. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'vast landscape; tiny figures; dramatic sky; cinematic grading',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-238',
+    name: 'Warm-Cold Dual Light',
+    displayName: 'Warm-Cold Dual Light',
+    styleAnchors: ['Warm-Cold Dual Light', 'two-temperature lighting painting', 'warm key light'],
+    category: '2. Epic Digital Painting',
+    domain: 'two-temperature lighting painting',
+    negativePrompt:
+      'single flat light, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Warm-cold dual light: every form lit by two opposing light temperatures, warm orange from one side and cold blue from the other, meeting on the subject.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; light the subject from two sides in warm and cold light so its form reads clearly.',
+      color_and_tone:
+        'Warm orange and cool cyan-blue lights with neutral transitions where they meet.',
+      lighting_and_shadow:
+        'Two clear light sources, split temperature shadows and colored rim edges.',
+      texture_and_material:
+        'Surfaces showing both warm and cool highlights, especially metal and skin.',
+      camera_and_composition:
+        'Preserve the requested framing with light sources implied on either side.',
+      atmosphere_and_mood: 'Keep the requested mood with dramatic tension between the lights.',
+      rendering_and_quality: 'Clean temperature-driven modeling of form, never muddy mixed color.',
+      creative_brief:
+        "Warm-cold dual light: every form lit by two opposing light temperatures, warm orange from one side and cold blue from the other, meeting on the subject. Carry it through warm key light, cold opposing light, split temperatures, colored rims. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'warm key light; cold opposing light; split temperatures; colored rims',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-239',
+    name: 'Polished Armor Gleam',
+    displayName: 'Polished Armor Gleam',
+    styleAnchors: ['Polished Armor Gleam', 'reflective metal painting', 'mirror metal'],
+    category: '2. Epic Digital Painting',
+    domain: 'reflective metal painting',
+    negativePrompt:
+      'matte plastic armor, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Polished armor gleam: digital painting focused on mirror-polished metal, where armor, weapons and machines reflect their surroundings in crisp distorted highlights.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; render metal surfaces with accurate reflections of the environment while keeping forms clear.',
+      color_and_tone:
+        'Steel, gold or bronze reflecting sky blues and environment colors with sharp white speculars.',
+      lighting_and_shadow:
+        'Hard specular highlights, reflected environment bands and deep contrast.',
+      texture_and_material:
+        'Mirror metal, engraved details, scratches and small reflections of the scene.',
+      camera_and_composition: 'Preserve the requested framing with the metal surface prominent.',
+      atmosphere_and_mood: 'Keep the requested mood with gleaming heroic grandeur throughout.',
+      rendering_and_quality:
+        'Precise reflective rendering with believable curved distortion everywhere.',
+      creative_brief:
+        "Polished armor gleam: digital painting focused on mirror-polished metal, where armor, weapons and machines reflect their surroundings in crisp distorted highlights. Carry it through mirror metal, environment reflections, sharp speculars, engraved detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'mirror metal; environment reflections; sharp speculars; engraved detail',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-240',
+    name: 'Ethereal Glow Haze',
+    displayName: 'Ethereal Glow Haze',
+    styleAnchors: ['Ethereal Glow Haze', 'soft luminous haze painting', 'luminous haze'],
+    category: '2. Epic Digital Painting',
+    domain: 'soft luminous haze painting',
+    negativePrompt:
+      'harsh contrast, muddy blur, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Ethereal glow haze: soft luminous digital painting where light blooms through haze, edges soften and the whole image seems to glow from within.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; wrap the subject in soft glowing haze while keeping its silhouette and key features readable.',
+      color_and_tone: 'Pale luminous pastels, soft golds and silvery blues with gentle contrast.',
+      lighting_and_shadow:
+        'Diffused glowing light, bloom around bright areas and very soft shadows.',
+      texture_and_material:
+        'Hazy air, soft edges, glowing particles and delicate translucent surfaces.',
+      camera_and_composition: 'Preserve the requested framing with a bright glowing center.',
+      atmosphere_and_mood: 'Keep the requested mood with a dreamy sacred quality.',
+      rendering_and_quality: 'Soft controlled glow, never washed out or blurry.',
+      creative_brief:
+        "Ethereal glow haze: soft luminous digital painting where light blooms through haze, edges soften and the whole image seems to glow from within. Carry it through luminous haze, bloom around lights, soft edges, inner glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'luminous haze; bloom around lights; soft edges; inner glow',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-241',
+    name: 'Lightning-Lit Drama',
+    displayName: 'Lightning-Lit Drama',
+    styleAnchors: [
+      'Lightning-Lit Drama',
+      'storm lightning illumination painting',
+      'lightning flash lighting',
+    ],
+    category: '2. Epic Digital Painting',
+    domain: 'storm lightning illumination painting',
+    negativePrompt:
+      'sunny calm weather, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Lightning-lit drama: scenes lit by a single blinding lightning flash, freezing rain and figures in stark blue-white light against a black storm.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; light the subject by a lightning flash so it stands out in hard blue-white relief.',
+      color_and_tone:
+        'Black storm, electric blue-white light and small warm accents from fire or lamps.',
+      lighting_and_shadow: 'Instant hard flash lighting, long shadows and bright rain streaks.',
+      texture_and_material:
+        'Frozen raindrops, wet surfaces, whipping cloth and branching lightning.',
+      camera_and_composition:
+        'Preserve the requested framing with lightning in or implied by the frame.',
+      atmosphere_and_mood: 'Keep the requested mood with explosive storm tension.',
+      rendering_and_quality: 'Crisp stark lighting and frozen motion, never soft ambient light.',
+      creative_brief:
+        "Lightning-lit drama: scenes lit by a single blinding lightning flash, freezing rain and figures in stark blue-white light against a black storm. Carry it through lightning flash lighting, frozen rain, black storm, stark relief. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'lightning flash lighting; frozen rain; black storm; stark relief',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-242',
+    name: 'Limited Triad Palette',
+    displayName: 'Limited Triad Palette',
+    styleAnchors: [
+      'Limited Triad Palette',
+      'three-color limited palette painting',
+      'three-hue palette',
+    ],
+    category: '2. Epic Digital Painting',
+    domain: 'three-color limited palette painting',
+    negativePrompt:
+      'full rainbow palette, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Limited triad palette: digital painting restricted to three chosen hues and their mixes, giving strong unified color harmony and bold graphic clarity.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; paint the subject using only three hues and their mixtures while keeping it recognizable.',
+      color_and_tone:
+        'Three chosen hues such as teal, coral and ochre, mixed into a cohesive palette.',
+      lighting_and_shadow: 'Light and shadow expressed by shifting between the three hues.',
+      texture_and_material:
+        'Clean painterly strokes, subtle brush texture and unified color throughout.',
+      camera_and_composition: 'Preserve the requested framing with color blocking guiding the eye.',
+      atmosphere_and_mood: 'Keep the requested mood with harmonious designed color.',
+      rendering_and_quality: 'Disciplined color with clear values, never random extra hues.',
+      creative_brief:
+        "Limited triad palette: digital painting restricted to three chosen hues and their mixes, giving strong unified color harmony and bold graphic clarity. Carry it through three-hue palette, unified harmony, color-driven values, clean strokes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'three-hue palette; unified harmony; color-driven values; clean strokes',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-243',
+    name: 'Gold-Leaf Highlight Paint',
+    displayName: 'Gold-Leaf Highlight Paint',
+    styleAnchors: [
+      'Gold-Leaf Highlight Paint',
+      'painting with gold highlight accents',
+      'gold highlight edges',
+    ],
+    category: '2. Epic Digital Painting',
+    domain: 'painting with gold highlight accents',
+    negativePrompt:
+      'gold covering everything, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Gold-leaf highlight paint: rich painting where highlights, edges and ornaments are picked out in metallic gold, giving a luxurious illuminated card look.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; paint the subject normally and pick out its brightest edges and ornaments in gold.',
+      color_and_tone:
+        'Deep jewel colors such as emerald, sapphire and burgundy with shining gold accents.',
+      lighting_and_shadow: 'Rich painted modeling with gold catching and reflecting the light.',
+      texture_and_material:
+        'Metallic gold edges, ornamental filigree, subtle leaf texture and glossy paint.',
+      camera_and_composition:
+        'Preserve the requested framing with gold leading the eye to the focal point.',
+      atmosphere_and_mood: 'Keep the requested mood with opulent ceremonial richness.',
+      rendering_and_quality:
+        'Controlled gold accents on a polished painting, never gold everywhere.',
+      creative_brief:
+        "Gold-leaf highlight paint: rich painting where highlights, edges and ornaments are picked out in metallic gold, giving a luxurious illuminated card look. Carry it through gold highlight edges, jewel-tone base, filigree accents, luxurious finish. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'gold highlight edges; jewel-tone base; filigree accents; luxurious finish',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-244',
+    name: 'Dust-and-Ember Air',
+    displayName: 'Dust-and-Ember Air',
+    styleAnchors: ['Dust-and-Ember Air', 'particulate atmosphere painting', 'floating embers'],
+    category: '2. Epic Digital Painting',
+    domain: 'particulate atmosphere painting',
+    negativePrompt:
+      'clean clear air, noise overlay, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Dust-and-ember air: scenes thick with floating dust, ash, sparks and embers that catch the light and fill the air with depth and heat.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; surround the subject with floating particles that catch light without hiding it.',
+      color_and_tone: 'Warm amber and ash grey with glowing orange embers and dim smoky shadows.',
+      lighting_and_shadow: 'Light shafts full of particles, glowing embers as tiny light sources.',
+      texture_and_material: 'Floating dust motes, drifting ash, sparks, smoke and gritty surfaces.',
+      camera_and_composition: 'Preserve the requested framing with particles at several depths.',
+      atmosphere_and_mood: 'Keep the requested mood with heat, aftermath and gritty drama.',
+      rendering_and_quality: 'Layered particles with depth of field, never flat noise overlay.',
+      creative_brief:
+        "Dust-and-ember air: scenes thick with floating dust, ash, sparks and embers that catch the light and fill the air with depth and heat. Carry it through floating embers, dust in light shafts, drifting ash, layered depth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'floating embers; dust in light shafts; drifting ash; layered depth',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

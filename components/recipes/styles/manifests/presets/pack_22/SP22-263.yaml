@@ -1,0 +1,68 @@
+schemaVersion: 1
+id: SP22-263
+packId: pack_22
+name: Moonlit Gouache Picture-Book
+styleAnchors:
+  - Moonlit Gouache Picture-Book
+  - night gouache storybook
+  - deep blue night
+displayName: Moonlit Gouache Picture-Book
+category: 4. Storybook & Animation
+domain: night gouache storybook
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - storybook-and-animation
+  - moonlit-gouache
+  - portable-style-study
+visualDna:
+  aesthetic: 'Moonlit gouache picture-book: bedtime night scenes painted in opaque gouache blues, with glowing windows, stars and soft moonlight.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action; place the subject in a gentle moonlit night painted in opaque blues.
+  color_and_tone: Deep navy and teal nights with glowing warm yellow windows and silver moonlight.
+  lighting_and_shadow: Soft moonlight rims and warm window glows in a blue night.
+  texture_and_material: Opaque matte gouache, dry-brush stars and soft painted edges.
+  camera_and_composition: Preserve the requested framing with a big sky and a glowing focal point.
+  atmosphere_and_mood: Keep the requested mood with calm, cozy bedtime wonder.
+  rendering_and_quality: Clean opaque night painting with gentle glowing accents.
+  creative_brief: "Moonlit gouache picture-book: bedtime night scenes painted in opaque gouache blues, with glowing windows, stars and soft moonlight. Carry it through deep blue night, glowing windows, silver moonlight, opaque gouache. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: deep blue night; glowing windows; silver moonlight; opaque gouache
+avoidRules:
+  - daylight
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: daylight, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: storybook-and-animation
+  categoryName: 4. Storybook & Animation
+  tags:
+    - trading-card-illustration
+    - storybook-and-animation
+    - moonlit-gouache
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: night gouache storybook

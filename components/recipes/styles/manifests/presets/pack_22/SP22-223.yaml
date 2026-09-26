@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP22-223
+packId: pack_22
+name: Scumbled Veil Layers
+styleAnchors:
+  - Scumbled Veil Layers
+  - broken opaque scumbles over dark
+  - pale dragged veils
+displayName: Scumbled Veil Layers
+category: 1. Workshop Painting
+domain: broken opaque scumbles over dark
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - workshop-painting
+  - scumbled-veil
+  - portable-style-study
+visualDna:
+  aesthetic: 'Scumbled veil layers: thin broken layers of lighter opaque paint dragged over darker passages, creating hazy veils, mist and soft luminous air.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action; keep the subject firm and apply scumbled veils around and over it to create atmosphere without hiding it.
+  color_and_tone: Dark rich base colors softened by pale broken veils of blue-grey, rose or gold.
+  lighting_and_shadow: Soft diffused light suggested by pale scumbles glowing over dark grounds.
+  texture_and_material: Dry dragged paint films, broken edges, underlayer showing through each veil.
+  camera_and_composition: Preserve the requested framing, with atmosphere layered in depth.
+  atmosphere_and_mood: Keep the requested mood, adding mist, distance and quiet air.
+  rendering_and_quality: Soft luminous veils over solid forms, never blurry digital fog.
+  creative_brief: "Scumbled veil layers: thin broken layers of lighter opaque paint dragged over darker passages, creating hazy veils, mist and soft luminous air. Carry it through pale dragged veils, dark showing through, misty depth, firm focal form. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: pale dragged veils; dark showing through; misty depth; firm focal form
+avoidRules:
+  - digital fog filter
+  - flat opaque fill
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: digital fog filter, flat opaque fill, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: workshop-painting
+  categoryName: 1. Workshop Painting
+  tags:
+    - trading-card-illustration
+    - workshop-painting
+    - scumbled-veil
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: broken opaque scumbles over dark

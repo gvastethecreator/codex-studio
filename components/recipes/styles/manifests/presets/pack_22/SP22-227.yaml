@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP22-227
+packId: pack_22
+name: Charcoal Mass Sculpting
+styleAnchors:
+  - Charcoal Mass Sculpting
+  - charcoal masses and erasing
+  - broad charcoal masses
+displayName: Charcoal Mass Sculpting
+category: 1. Workshop Painting
+domain: charcoal masses and erasing
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - workshop-painting
+  - charcoal-mass
+  - portable-style-study
+visualDna:
+  aesthetic: 'Charcoal mass sculpting: forms carved out of broad smudged charcoal masses by erasing lights and pressing in darks, dramatic and velvety.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action; sculpt the forms from broad charcoal masses and eraser lifts rather than outlines.
+  color_and_tone: Deep velvety blacks, smoky greys and bright erased whites on pale paper.
+  lighting_and_shadow: Dramatic chiaroscuro with erased highlights cutting out of dark masses.
+  texture_and_material: Smudged charcoal dust, eraser strokes, finger blending and crisp dark accents.
+  camera_and_composition: Preserve the requested framing with strong light-dark contrast.
+  atmosphere_and_mood: Keep the requested mood, intensified by dramatic dark masses.
+  rendering_and_quality: Bold sculptural value masses and crisp erased lights, never timid lines.
+  creative_brief: "Charcoal mass sculpting: forms carved out of broad smudged charcoal masses by erasing lights and pressing in darks, dramatic and velvety. Carry it through broad charcoal masses, erased highlights, smudged dust, dramatic contrast. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: broad charcoal masses; erased highlights; smudged dust; dramatic contrast
+avoidRules:
+  - thin outline drawing
+  - color painting
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: thin outline drawing, color painting, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: workshop-painting
+  categoryName: 1. Workshop Painting
+  tags:
+    - trading-card-illustration
+    - workshop-painting
+    - charcoal-mass
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: charcoal masses and erasing

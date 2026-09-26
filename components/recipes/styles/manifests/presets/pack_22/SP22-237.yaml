@@ -1,0 +1,68 @@
+schemaVersion: 1
+id: SP22-237
+packId: pack_22
+name: Wide Cinematic Vista
+styleAnchors:
+  - Wide Cinematic Vista
+  - panoramic epic environment painting
+  - vast landscape
+displayName: Wide Cinematic Vista
+category: 2. Epic Digital Painting
+domain: panoramic epic environment painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - epic-digital-painting
+  - cinematic-vista
+  - portable-style-study
+visualDna:
+  aesthetic: 'Wide cinematic vista: sweeping environment painting where the landscape is the hero and figures are tiny, with dramatic skies and epic scale.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action; show the subject within a vast environment so scale and place dominate.
+  color_and_tone: Cinematic color grading with warm key light and cool atmospheric shadows.
+  lighting_and_shadow: Dramatic sky light, god rays and large cast shadows across the land.
+  texture_and_material: Detailed terrain, clouds, water and architecture painted at many scales.
+  camera_and_composition: Preserve the requested framing, favoring wide shots with low horizons.
+  atmosphere_and_mood: Keep the requested mood with awe-inspiring scale and space.
+  rendering_and_quality: Polished environment painting with coherent perspective and light.
+  creative_brief: "Wide cinematic vista: sweeping environment painting where the landscape is the hero and figures are tiny, with dramatic skies and epic scale. Carry it through vast landscape, tiny figures, dramatic sky, cinematic grading. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: vast landscape; tiny figures; dramatic sky; cinematic grading
+avoidRules:
+  - cropped close-up
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cropped close-up, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: epic-digital-painting
+  categoryName: 2. Epic Digital Painting
+  tags:
+    - trading-card-illustration
+    - epic-digital-painting
+    - cinematic-vista
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: panoramic epic environment painting

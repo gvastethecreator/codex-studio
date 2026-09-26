@@ -243,4 +243,366 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP22-245',
+    name: 'Bleeding Ink Veins',
+    displayName: 'Bleeding Ink Veins',
+    styleAnchors: [
+      'Bleeding Ink Veins',
+      'ink spreading like veins',
+      'lines bleeding into tendrils',
+    ],
+    category: '3. Strange Ink & Paint',
+    domain: 'ink spreading like veins',
+    negativePrompt:
+      'clean vector lines, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Bleeding ink veins: dark ink drawn onto damp paper so every line spreads into branching vein-like tendrils, as if the drawing were alive.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; draw the subject in lines that bleed outward into fine branching tendrils while its shape stays clear.',
+      color_and_tone:
+        'Black, oxblood or indigo ink on pale paper with soft tinted halos around lines.',
+      lighting_and_shadow: 'No modeled light; density of branching tendrils creates shadow.',
+      texture_and_material:
+        'Capillary ink branching, feathered line edges and damp paper cockling.',
+      camera_and_composition:
+        'Preserve the requested framing with the subject emerging from branching lines.',
+      atmosphere_and_mood: 'Keep the requested mood with an uneasy organic creep.',
+      rendering_and_quality: 'Controlled bleeding lines with clear form, never a random stain.',
+      creative_brief:
+        "Bleeding ink veins: dark ink drawn onto damp paper so every line spreads into branching vein-like tendrils, as if the drawing were alive. Carry it through lines bleeding into tendrils, feathered halos, damp paper, creeping growth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'lines bleeding into tendrils; feathered halos; damp paper; creeping growth',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-246',
+    name: 'Bitumen Glaze Gloom',
+    displayName: 'Bitumen Glaze Gloom',
+    styleAnchors: ['Bitumen Glaze Gloom', 'dark bitumen glaze painting', 'brown-black glazes'],
+    category: '3. Strange Ink & Paint',
+    domain: 'dark bitumen glaze painting',
+    negativePrompt:
+      'bright daylight, clean white, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Bitumen glaze gloom: oil painting sunk under warm brown-black bitumen glazes, with forms emerging like relics from a deep amber darkness.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; bury the subject in warm dark glazes and let only its key forms rise into amber light.',
+      color_and_tone: 'Deep warm brown-black, amber and dull gold with faint red glows.',
+      lighting_and_shadow: 'One dim warm light pulling forms out of heavy brown shadow.',
+      texture_and_material: 'Glossy dark glaze pools, faint cracking and thick varnish sheen.',
+      camera_and_composition: 'Preserve the requested framing with most of the image in shadow.',
+      atmosphere_and_mood: 'Keep the requested mood with ancient smoky gloom.',
+      rendering_and_quality: 'Rich glazed depth with controlled focal light, never muddy grey.',
+      creative_brief:
+        "Bitumen glaze gloom: oil painting sunk under warm brown-black bitumen glazes, with forms emerging like relics from a deep amber darkness. Carry it through brown-black glazes, amber focal light, glossy varnish, relic-like darkness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'brown-black glazes; amber focal light; glossy varnish; relic-like darkness',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-247',
+    name: 'Spidery Nib Scrawl',
+    displayName: 'Spidery Nib Scrawl',
+    styleAnchors: ['Spidery Nib Scrawl', 'nervous fine nib drawing', 'tangled hairline scribbles'],
+    category: '3. Strange Ink & Paint',
+    domain: 'nervous fine nib drawing',
+    negativePrompt:
+      'clean thick outlines, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Spidery nib scrawl: frantic thin dip-pen lines scribbled and looped over each other, nervous and spindly, building forms out of tangled webs of ink.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; build the subject from tangled nervous nib lines that still lock onto its silhouette.',
+      color_and_tone: 'Black or sepia ink on off-white paper, darkest where scribbles pile up.',
+      lighting_and_shadow: 'Shadows from dense scribble tangles, light from open paper.',
+      texture_and_material:
+        'Hairline scratchy lines, ink spatters from the nib and occasional blots.',
+      camera_and_composition: 'Preserve the requested framing with a spindly, restless silhouette.',
+      atmosphere_and_mood: 'Keep the requested mood with jittery nervous energy.',
+      rendering_and_quality: 'Loose but intentional tangles of line, never random noise.',
+      creative_brief:
+        "Spidery nib scrawl: frantic thin dip-pen lines scribbled and looped over each other, nervous and spindly, building forms out of tangled webs of ink. Carry it through tangled hairline scribbles, nib spatters, spindly silhouettes, nervous energy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'tangled hairline scribbles; nib spatters; spindly silhouettes; nervous energy',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-248',
+    name: 'Bruise-Tone Watercolor',
+    displayName: 'Bruise-Tone Watercolor',
+    styleAnchors: [
+      'Bruise-Tone Watercolor',
+      'sickly bruise palette washes',
+      'bruise purples and yellows',
+    ],
+    category: '3. Strange Ink & Paint',
+    domain: 'sickly bruise palette washes',
+    negativePrompt:
+      'bright cheerful palette, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Bruise-tone watercolor: transparent washes in the sickly purples, yellows and greens of fading bruises, soft and unsettling.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; wash the subject in bruise colors that pool softly while its forms stay readable.',
+      color_and_tone:
+        'Violet, mustard yellow, olive green and faint blood red washes on white paper.',
+      lighting_and_shadow: 'Soft wash transitions, darker violet pooling in shadows.',
+      texture_and_material: 'Blooms, pooled edges, granulation and soft wet blending.',
+      camera_and_composition: 'Preserve the requested framing with soft-edged color masses.',
+      atmosphere_and_mood: 'Keep the requested mood with a quietly sickly unease.',
+      rendering_and_quality: 'Delicate transparent layered washes, never gory or opaque.',
+      creative_brief:
+        "Bruise-tone watercolor: transparent washes in the sickly purples, yellows and greens of fading bruises, soft and unsettling. Carry it through bruise purples and yellows, soft pooling washes, granulation, sickly unease. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'bruise purples and yellows; soft pooling washes; granulation; sickly unease',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-249',
+    name: 'Blot-Grown Creatures',
+    displayName: 'Blot-Grown Creatures',
+    styleAnchors: ['Blot-Grown Creatures', 'creatures developed from ink blots', 'ink blot bodies'],
+    category: '3. Strange Ink & Paint',
+    domain: 'creatures developed from ink blots',
+    negativePrompt:
+      'fully rendered painting, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Blot-grown creatures: random ink blots developed into creatures by adding a few eyes, teeth, legs and lines, so every monster keeps its accidental shape.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; let the subject grow from an ink blot shape with a few precise drawn additions.',
+      color_and_tone: 'Black or colored ink blots on white paper with small crisp line additions.',
+      lighting_and_shadow: 'No modeled light; the blot mass is the dark form.',
+      texture_and_material: 'Splotchy blot edges, splatter droplets and fine added pen details.',
+      camera_and_composition: 'Preserve the requested framing with the blot as the central mass.',
+      atmosphere_and_mood: 'Keep the requested mood with playful uncanny invention.',
+      rendering_and_quality: 'Accidental blot shapes clarified by few deliberate lines.',
+      creative_brief:
+        "Blot-grown creatures: random ink blots developed into creatures by adding a few eyes, teeth, legs and lines, so every monster keeps its accidental shape. Carry it through ink blot bodies, few drawn details, splatter droplets, accidental shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'ink blot bodies; few drawn details; splatter droplets; accidental shapes',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-250',
+    name: 'Spatter Storm Ink',
+    displayName: 'Spatter Storm Ink',
+    styleAnchors: ['Spatter Storm Ink', 'flicked ink spatter storms', 'dense ink spray'],
+    category: '3. Strange Ink & Paint',
+    domain: 'flicked ink spatter storms',
+    negativePrompt:
+      'smooth gradients, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Spatter storm ink: ink flicked from brushes and toothbrushes in dense spray storms, forming the subject from clouds of droplets and a few firm strokes.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; form the subject from dense spatter clouds with a few strong strokes at its key edges.',
+      color_and_tone: 'Black ink with one accent color such as crimson or teal in the spatter.',
+      lighting_and_shadow: 'Density of spatter creates value, open paper for light.',
+      texture_and_material: 'Fine spray dots, larger droplets, drips and masked clean edges.',
+      camera_and_composition: 'Preserve the requested framing with spray bursts directing motion.',
+      atmosphere_and_mood: 'Keep the requested mood with explosive restless energy.',
+      rendering_and_quality:
+        'Controlled spatter density with clear silhouettes, never random mess.',
+      creative_brief:
+        "Spatter storm ink: ink flicked from brushes and toothbrushes in dense spray storms, forming the subject from clouds of droplets and a few firm strokes. Carry it through dense ink spray, droplet clouds, masked edges, one accent color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'dense ink spray; droplet clouds; masked edges; one accent color',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-251',
+    name: 'Red-Accent Black Lacquer',
+    displayName: 'Red-Accent Black Lacquer',
+    styleAnchors: ['Red-Accent Black Lacquer', 'black and red lacquer painting', 'glossy black'],
+    category: '3. Strange Ink & Paint',
+    domain: 'black and red lacquer painting',
+    negativePrompt:
+      'matte chalky finish, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Red-accent black lacquer: glossy black painted surfaces with vivid red accents and fine gold lines, polished like old lacquer screens.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; paint the subject in glossy black with red and fine gold accents defining its forms.',
+      color_and_tone: 'Deep glossy black, vermilion red and thin gold lines.',
+      lighting_and_shadow: 'Soft glossy reflections on black, red glowing against dark.',
+      texture_and_material:
+        'Polished lacquer sheen, fine brushed gold lines and subtle surface reflections.',
+      camera_and_composition: 'Preserve the requested framing with red leading the eye.',
+      atmosphere_and_mood: 'Keep the requested mood with an elegant, quiet menace.',
+      rendering_and_quality: 'Precise glossy finish with restrained accents, never busy.',
+      creative_brief:
+        "Red-accent black lacquer: glossy black painted surfaces with vivid red accents and fine gold lines, polished like old lacquer screens. Carry it through glossy black, vermilion accents, fine gold lines, lacquer sheen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'glossy black; vermilion accents; fine gold lines; lacquer sheen',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-252',
+    name: 'Tarnished Metallic Ink',
+    displayName: 'Tarnished Metallic Ink',
+    styleAnchors: [
+      'Tarnished Metallic Ink',
+      'metallic ink on dark paper',
+      'metallic inks on dark paper',
+    ],
+    category: '3. Strange Ink & Paint',
+    domain: 'metallic ink on dark paper',
+    negativePrompt:
+      'glitter, bright white paper, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Tarnished metallic ink: silver, bronze and copper inks drawn on dark paper, their shine dulled and tarnished in places like old relics.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; draw the subject in metallic inks on dark paper, highlights shining and shadows tarnished.',
+      color_and_tone:
+        'Silver, bronze and copper inks on black or deep blue paper with tarnish tones.',
+      lighting_and_shadow: 'Metallic sheen catching light on lines, dark paper as shadow.',
+      texture_and_material:
+        'Metallic pigment glint, tarnish spots, uneven ink density and dark paper grain.',
+      camera_and_composition: 'Preserve the requested framing with shining focal lines.',
+      atmosphere_and_mood: 'Keep the requested mood with ancient precious mystery.',
+      rendering_and_quality: 'Clean metallic line work with believable tarnish, never glitter.',
+      creative_brief:
+        "Tarnished metallic ink: silver, bronze and copper inks drawn on dark paper, their shine dulled and tarnished in places like old relics. Carry it through metallic inks on dark paper, tarnish, glinting lines, relic feel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'metallic inks on dark paper; tarnish; glinting lines; relic feel',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-253',
+    name: 'Flaking Mural Paint',
+    displayName: 'Flaking Mural Paint',
+    styleAnchors: ['Flaking Mural Paint', 'flaking wall painting', 'flaking paint'],
+    category: '3. Strange Ink & Paint',
+    domain: 'flaking wall painting',
+    negativePrompt:
+      'digital grunge overlay, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Flaking mural paint: an image painted on an old plaster wall, with paint lifting and flaking away to reveal plaster and older layers beneath.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; paint the subject as a wall image partially lost to flaking while its main forms stay readable.',
+      color_and_tone:
+        'Faded earth pigments, chalky blues and reds with patches of bare cream plaster.',
+      lighting_and_shadow: 'Soft wall light with flaking edges casting tiny shadows.',
+      texture_and_material:
+        'Curling paint flakes, bare plaster, cracks and older layers peeking through.',
+      camera_and_composition: 'Preserve the requested framing on a visible wall surface.',
+      atmosphere_and_mood: 'Keep the requested mood with a gentle melancholy decay.',
+      rendering_and_quality: 'Believable flaking with readable image, never random grunge.',
+      creative_brief:
+        "Flaking mural paint: an image painted on an old plaster wall, with paint lifting and flaking away to reveal plaster and older layers beneath. Carry it through flaking paint, bare plaster, older layers, faded pigments. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'flaking paint; bare plaster; older layers; faded pigments',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-254',
+    name: 'Verdigris Wash',
+    displayName: 'Verdigris Wash',
+    styleAnchors: ['Verdigris Wash', 'copper-green oxidized washes', 'verdigris greens'],
+    category: '3. Strange Ink & Paint',
+    domain: 'copper-green oxidized washes',
+    negativePrompt:
+      'bright neon colors, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Verdigris wash: paintings washed in the blue-green of oxidized copper with streaked rust-brown accents, like weathered bronze turned into paint.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; wash the subject in verdigris greens with bronze-brown accents, keeping forms readable.',
+      color_and_tone: 'Blue-green verdigris, turquoise, bronze brown and dark patina tones.',
+      lighting_and_shadow: 'Soft light with darker patina pooling in recesses.',
+      texture_and_material:
+        'Streaked washes, mottled patina textures and dripping oxidation marks.',
+      camera_and_composition: 'Preserve the requested framing with streaks following gravity.',
+      atmosphere_and_mood: 'Keep the requested mood with weathered ancient calm.',
+      rendering_and_quality: 'Controlled mottled layered washes, never flat green fill.',
+      creative_brief:
+        "Verdigris wash: paintings washed in the blue-green of oxidized copper with streaked rust-brown accents, like weathered bronze turned into paint. Carry it through verdigris greens, bronze accents, streaked patina, weathered feel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'verdigris greens; bronze accents; streaked patina; weathered feel',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-255',
+    name: 'Smeared Wax Pigment',
+    displayName: 'Smeared Wax Pigment',
+    styleAnchors: ['Smeared Wax Pigment', 'warm smeared wax color', 'smeared melted wax'],
+    category: '3. Strange Ink & Paint',
+    domain: 'warm smeared wax color',
+    negativePrompt:
+      'flat digital fill, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Smeared wax pigment: color laid in melted wax and smeared with palette knives and fingers, glossy, layered and translucent in thin spots.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; build the subject from smeared wax strokes that still follow its forms.',
+      color_and_tone: 'Rich translucent wax colors with glowing layered depth.',
+      lighting_and_shadow: 'Soft glowing light passing through the translucent wax layers.',
+      texture_and_material:
+        'Smeared ridges, fingerprints, drips, glossy melted edges and layered depth.',
+      camera_and_composition: 'Preserve the requested framing with smears following movement.',
+      atmosphere_and_mood: 'Keep the requested mood with warm tactile intensity.',
+      rendering_and_quality: 'Tactile layered wax surfaces, never flat digital paint.',
+      creative_brief:
+        "Smeared wax pigment: color laid in melted wax and smeared with palette knives and fingers, glossy, layered and translucent in thin spots. Carry it through smeared melted wax, translucent layers, fingerprints, glossy ridges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'smeared melted wax; translucent layers; fingerprints; glossy ridges',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-256',
+    name: 'Cracked Varnish Veil',
+    displayName: 'Cracked Varnish Veil',
+    styleAnchors: ['Cracked Varnish Veil', 'old varnish craquelure painting', 'fine craquelure'],
+    category: '3. Strange Ink & Paint',
+    domain: 'old varnish craquelure painting',
+    negativePrompt:
+      'clean modern finish, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Cracked varnish veil: an old painting seen through yellowed cracking varnish, with a fine craquelure web over every surface and warm aged tones.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; paint the subject classically and cover the image with a fine even craquelure varnish veil.',
+      color_and_tone:
+        'Warm yellowed tones, deep shadows and slightly muted colors under old varnish.',
+      lighting_and_shadow: 'Classic painting light softened by the old amber varnish.',
+      texture_and_material: 'Fine crack networks, varnish sheen, darkened grime in cracks.',
+      camera_and_composition: 'Preserve the requested framing like an old gallery painting.',
+      atmosphere_and_mood: 'Keep the requested mood with a hushed antique mystery.',
+      rendering_and_quality: 'Consistent fine crack pattern over a coherent painting.',
+      creative_brief:
+        "Cracked varnish veil: an old painting seen through yellowed cracking varnish, with a fine craquelure web over every surface and warm aged tones. Carry it through fine craquelure, yellowed varnish, aged tones, old master feel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'fine craquelure; yellowed varnish; aged tones; old master feel',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

@@ -1,0 +1,68 @@
+schemaVersion: 1
+id: SP22-274
+packId: pack_22
+name: Shape-Language Caricature
+styleAnchors:
+  - Shape-Language Caricature
+  - circle square triangle personalities
+  - round friendly shapes
+displayName: Shape-Language Caricature
+category: 5. Character & Readable Forms
+domain: circle square triangle personalities
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - character-and-readable-forms
+  - shape-language
+  - portable-style-study
+visualDna:
+  aesthetic: 'Shape-language caricature: characters built from dominant basic shapes, round for friendly, square for sturdy, triangular for sharp, so personality reads instantly.'
+  subject_treatment: Preserve the requested identity, count, pose and action; build each character from one dominant shape that matches its personality.
+  color_and_tone: Clean graphic colors with simple shading and strong shape contrast.
+  lighting_and_shadow: Simple flat shadows that reinforce the dominant shapes.
+  texture_and_material: Clean line art, bold shape silhouettes and minimal detail.
+  camera_and_composition: Preserve the requested framing with shape contrast between characters.
+  atmosphere_and_mood: Keep the requested mood with clear, readable character personality.
+  rendering_and_quality: Crisp graphic character design with clear silhouettes, kept consistent across the whole image.
+  creative_brief: "Shape-language caricature: characters built from dominant basic shapes, round for friendly, square for sturdy, triangular for sharp, so personality reads instantly. Carry it through round friendly shapes, square sturdy shapes, triangle sharp shapes, clear silhouettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: round friendly shapes; square sturdy shapes; triangle sharp shapes; clear silhouettes
+avoidRules:
+  - muddled shapes
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: muddled shapes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: character-and-readable-forms
+  categoryName: 5. Character & Readable Forms
+  tags:
+    - trading-card-illustration
+    - character-and-readable-forms
+    - shape-language
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: circle square triangle personalities

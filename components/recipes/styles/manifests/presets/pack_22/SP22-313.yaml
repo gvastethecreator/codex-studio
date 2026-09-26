@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP22-313
+packId: pack_22
+name: Magnified Detail Insets
+styleAnchors:
+  - Magnified Detail Insets
+  - main view with magnified circles
+  - circular magnified insets
+displayName: Magnified Detail Insets
+category: 8. Technical Illustration
+domain: main view with magnified circles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - technical-illustration
+  - magnified-insets
+  - technical
+  - portable-style-study
+visualDna:
+  aesthetic: 'Magnified detail insets: a full illustration of the subject with circular magnified insets connected by thin lines, revealing tiny hidden details.'
+  subject_treatment: Preserve the requested object, identity, proportions and pose; show the subject whole with two or three circular close-up insets of its details.
+  color_and_tone: Consistent illustration colors with clean white or dark inset borders.
+  lighting_and_shadow: Matching lighting in main view and insets, kept consistent across the whole image.
+  texture_and_material: Fine details revealed in insets, thin connector lines and crisp circles.
+  camera_and_composition: Main subject centered with insets around it linked by lines.
+  atmosphere_and_mood: Curious and delightful, discovering the small secrets, kept consistent across the whole image.
+  rendering_and_quality: Clear consistent detail in both main view and magnified circles.
+  creative_brief: "Magnified detail insets: a full illustration of the subject with circular magnified insets connected by thin lines, revealing tiny hidden details. Carry it through circular magnified insets, connector lines, hidden details, main view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: circular magnified insets; connector lines; hidden details; main view
+avoidRules:
+  - readable labels
+  - readable labels or numbers
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable labels, readable labels or numbers, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: technical-illustration
+  categoryName: 8. Technical Illustration
+  tags:
+    - trading-card-illustration
+    - technical-illustration
+    - magnified-insets
+    - technical
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: main view with magnified circles

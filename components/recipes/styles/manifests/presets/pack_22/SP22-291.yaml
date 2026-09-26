@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP22-291
+packId: pack_22
+name: Lace-Gothic Anime Portrait
+styleAnchors:
+  - Lace-Gothic Anime Portrait
+  - gothic lolita anime portraiture
+  - black lace
+displayName: Lace-Gothic Anime Portrait
+category: 6. Anime Illustration
+domain: gothic lolita anime portraiture
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - anime-illustration
+  - lace-gothic
+  - anime
+  - portable-style-study
+visualDna:
+  aesthetic: 'Lace-gothic anime portrait: elegant dark anime portraits with lace, roses, ribbons and candlelight, delicate and melancholy.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original character designs; portray the characters in elegant gothic dress with lace and roses framing them.
+  color_and_tone: Black, burgundy and ivory with deep rose red and candle gold accents.
+  lighting_and_shadow: Soft candlelight with deep elegant shadows, kept consistent across the whole image.
+  texture_and_material: Fine lace, velvet, satin ribbons, rose petals and dark wood.
+  camera_and_composition: Portrait or half-body framing with ornamental roses around the figure.
+  atmosphere_and_mood: Keep the requested mood with elegant gothic melancholy.
+  rendering_and_quality: Delicate detailed anime rendering of lace and fabric.
+  creative_brief: "Lace-gothic anime portrait: elegant dark anime portraits with lace, roses, ribbons and candlelight, delicate and melancholy. Carry it through black lace, roses, candlelight, melancholy elegance. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: black lace; roses; candlelight; melancholy elegance
+avoidRules:
+  - bright casual clothing
+  - franchise character likeness
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: bright casual clothing, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: anime-illustration
+  categoryName: 6. Anime Illustration
+  tags:
+    - trading-card-illustration
+    - anime-illustration
+    - lace-gothic
+    - anime
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: gothic lolita anime portraiture

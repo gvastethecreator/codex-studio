@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP22-314
+packId: pack_22
+name: Catalog Hero Illustration
+styleAnchors:
+  - Catalog Hero Illustration
+  - product catalog hero image
+  - idealized product
+displayName: Catalog Hero Illustration
+category: 8. Technical Illustration
+domain: product catalog hero image
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - technical-illustration
+  - catalog-hero
+  - technical
+  - portable-style-study
+visualDna:
+  aesthetic: 'Catalog hero illustration: objects painted as glossy hero products for an old mail-order catalog, perfect lighting, soft drop shadow and cheerful presentation.'
+  subject_treatment: Preserve the requested object, identity, proportions and pose; present the subject as an idealized product on a clean ground.
+  color_and_tone: Clean bright colors on a soft pastel or white ground.
+  lighting_and_shadow: Flattering studio light with a soft drop shadow beneath.
+  texture_and_material: Glossy idealized surfaces, clean edges and gentle reflections.
+  camera_and_composition: Three-quarter hero angle, object centered with space around it.
+  atmosphere_and_mood: Optimistic, appealing and slightly retro commercial charm, kept consistent across the whole image.
+  rendering_and_quality: Polished painted product rendering, never photographic, kept consistent across the whole image.
+  creative_brief: "Catalog hero illustration: objects painted as glossy hero products for an old mail-order catalog, perfect lighting, soft drop shadow and cheerful presentation. Carry it through idealized product, soft drop shadow, clean ground, retro catalog charm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: idealized product; soft drop shadow; clean ground; retro catalog charm
+avoidRules:
+  - readable prices or text
+  - real brand
+  - readable labels or numbers
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable prices or text, real brand, readable labels or numbers, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: technical-illustration
+  categoryName: 8. Technical Illustration
+  tags:
+    - trading-card-illustration
+    - technical-illustration
+    - catalog-hero
+    - technical
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: product catalog hero image

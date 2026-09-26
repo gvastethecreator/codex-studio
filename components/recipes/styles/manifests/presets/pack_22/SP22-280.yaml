@@ -1,0 +1,68 @@
+schemaVersion: 1
+id: SP22-280
+packId: pack_22
+name: Gesture-Line Action Pose
+styleAnchors:
+  - Gesture-Line Action Pose
+  - line-of-action driven pose
+  - strong line of action
+displayName: Gesture-Line Action Pose
+category: 5. Character & Readable Forms
+domain: line-of-action driven pose
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - character-and-readable-forms
+  - gesture-line
+  - portable-style-study
+visualDna:
+  aesthetic: 'Gesture-line action pose: characters drawn along one sweeping line of action, poses pushed to maximum energy with clear rhythm through the whole body.'
+  subject_treatment: Preserve the requested identity, count, pose and action; build each pose along a strong curved line of action that carries through the body.
+  color_and_tone: Clean colors that do not distract from the pose, with one accent.
+  lighting_and_shadow: Simple lighting that emphasizes the flow of the pose.
+  texture_and_material: Clean lines, flowing fabric and hair following the action curve.
+  camera_and_composition: Preserve the requested framing with a dynamic diagonal composition.
+  atmosphere_and_mood: Keep the requested mood with explosive kinetic energy.
+  rendering_and_quality: Clear dynamic figure drawing with strong readable rhythm.
+  creative_brief: "Gesture-line action pose: characters drawn along one sweeping line of action, poses pushed to maximum energy with clear rhythm through the whole body. Carry it through strong line of action, pushed poses, flowing rhythm, diagonal composition. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: strong line of action; pushed poses; flowing rhythm; diagonal composition
+avoidRules:
+  - stiff static pose
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: stiff static pose, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: character-and-readable-forms
+  categoryName: 5. Character & Readable Forms
+  tags:
+    - trading-card-illustration
+    - character-and-readable-forms
+    - gesture-line
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: line-of-action driven pose

@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP22-301
+packId: pack_22
+name: Sumi Brush Manga
+styleAnchors:
+  - Sumi Brush Manga
+  - brush-drawn manga with sumi
+  - sumi brush strokes
+displayName: Sumi Brush Manga
+category: 7. Manga Ink & Impact
+domain: brush-drawn manga with sumi
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - manga-ink-and-impact
+  - sumi-manga
+  - manga
+  - portable-style-study
+visualDna:
+  aesthetic: 'Sumi brush manga: manga drawn entirely with a sumi brush, thick-to-thin strokes, dry-brush texture and ink washes for tone.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original character designs; draw the subject with brush strokes and ink washes instead of pen lines.
+  color_and_tone: Black sumi ink with watery grey washes on white paper.
+  lighting_and_shadow: Tone from washes, highlights from white paper and dry brush.
+  texture_and_material: Tapered brush strokes, dry-brush scratches and soft wash bleeds.
+  camera_and_composition: Preserve the requested framing with bold brush rhythm.
+  atmosphere_and_mood: Keep the requested mood with raw traditional energy.
+  rendering_and_quality: Confident expressive brushwork with clear forms, kept consistent across the whole image.
+  creative_brief: "Sumi brush manga: manga drawn entirely with a sumi brush, thick-to-thin strokes, dry-brush texture and ink washes for tone. Carry it through sumi brush strokes, dry-brush, grey washes, tapered lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: sumi brush strokes; dry-brush; grey washes; tapered lines
+avoidRules:
+  - pen-only thin lines
+  - speech bubbles
+  - sound-effect lettering
+  - franchise character likeness
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: pen-only thin lines, speech bubbles, sound-effect lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: manga-ink-and-impact
+  categoryName: 7. Manga Ink & Impact
+  tags:
+    - trading-card-illustration
+    - manga-ink-and-impact
+    - sumi-manga
+    - manga
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: brush-drawn manga with sumi

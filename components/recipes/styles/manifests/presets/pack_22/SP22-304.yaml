@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP22-304
+packId: pack_22
+name: Grey-Wash Manga Page
+styleAnchors:
+  - Grey-Wash Manga Page
+  - grey ink-wash manga illustration
+  - grey ink washes
+displayName: Grey-Wash Manga Page
+category: 7. Manga Ink & Impact
+domain: grey ink-wash manga illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - manga-ink-and-impact
+  - grey-wash-manga
+  - manga
+  - portable-style-study
+visualDna:
+  aesthetic: 'Grey-wash manga page: manga illustration toned with soft grey ink washes instead of screentone, painterly and atmospheric while keeping clean line.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original character designs; draw the subject in clean line and tone it with soft grey washes.
+  color_and_tone: Black line with soft grey washes from pale to charcoal.
+  lighting_and_shadow: Soft atmospheric shading painted in grey washes, kept consistent across the whole image.
+  texture_and_material: Clean pen line, soft wash blooms and paper grain.
+  camera_and_composition: Preserve the requested framing with atmospheric depth, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with quiet cinematic atmosphere.
+  rendering_and_quality: Clean line with smooth controlled washes, kept consistent across the whole image.
+  creative_brief: "Grey-wash manga page: manga illustration toned with soft grey ink washes instead of screentone, painterly and atmospheric while keeping clean line. Carry it through grey ink washes, clean line, atmospheric depth, painterly tone. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: grey ink washes; clean line; atmospheric depth; painterly tone
+avoidRules:
+  - dot screentone
+  - speech bubbles
+  - sound-effect lettering
+  - franchise character likeness
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: dot screentone, speech bubbles, sound-effect lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: manga-ink-and-impact
+  categoryName: 7. Manga Ink & Impact
+  tags:
+    - trading-card-illustration
+    - manga-ink-and-impact
+    - grey-wash-manga
+    - manga
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: grey ink-wash manga illustration

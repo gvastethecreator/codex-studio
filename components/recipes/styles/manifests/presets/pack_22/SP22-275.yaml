@@ -1,0 +1,68 @@
+schemaVersion: 1
+id: SP22-275
+packId: pack_22
+name: Painted Character Bust
+styleAnchors:
+  - Painted Character Bust
+  - painterly portrait bust card
+  - head-and-shoulders bust
+displayName: Painted Character Bust
+category: 5. Character & Readable Forms
+domain: painterly portrait bust card
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - character-and-readable-forms
+  - painted-bust
+  - portable-style-study
+visualDna:
+  aesthetic: 'Painted character bust: head-and-shoulders character portraits in rich painterly style, with detailed faces and costumes fading into loose brushwork.'
+  subject_treatment: Preserve the requested identity, count, pose and action; show the character as a head-and-shoulders bust with a finely painted face.
+  color_and_tone: Rich skin tones and costume colors against a softly painted background.
+  lighting_and_shadow: Classic portrait lighting with soft shadows and gentle rim light.
+  texture_and_material: Detailed face and costume texture fading to loose strokes at the edges.
+  camera_and_composition: Head and shoulders bust, slightly off-center, three-quarter view.
+  atmosphere_and_mood: Keep the requested mood with personality and presence.
+  rendering_and_quality: Polished painterly face with loose confident edges, kept consistent across the whole image.
+  creative_brief: "Painted character bust: head-and-shoulders character portraits in rich painterly style, with detailed faces and costumes fading into loose brushwork. Carry it through head-and-shoulders bust, detailed face, loose edges, portrait light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: head-and-shoulders bust; detailed face; loose edges; portrait light
+avoidRules:
+  - full-body scene
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: full-body scene, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: character-and-readable-forms
+  categoryName: 5. Character & Readable Forms
+  tags:
+    - trading-card-illustration
+    - character-and-readable-forms
+    - painted-bust
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: painterly portrait bust card

@@ -1,0 +1,68 @@
+schemaVersion: 1
+id: SP22-257
+packId: pack_22
+name: Loose Ink Picture-Book Wash
+styleAnchors:
+  - Loose Ink Picture-Book Wash
+  - loose ink line and watercolor picture book
+  - loose ink line
+displayName: Loose Ink Picture-Book Wash
+category: 4. Storybook & Animation
+domain: loose ink line and watercolor picture book
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - storybook-and-animation
+  - loose-ink-wash
+  - portable-style-study
+visualDna:
+  aesthetic: "Loose ink picture-book wash: quick expressive ink lines with loose watercolor washes that spill past the lines, like a lively classic children's picture book."
+  subject_treatment: Preserve the requested identity, proportions, pose and action; draw the subject with loose confident ink and let color washes spill freely past the lines.
+  color_and_tone: Fresh transparent watercolor colors with lots of white paper and gentle warm accents.
+  lighting_and_shadow: Simple soft shadow washes and bright white paper for light areas.
+  texture_and_material: Scratchy dip-pen lines, loose wash blooms, paper grain and splash marks.
+  camera_and_composition: Preserve the requested framing with airy white space around the subject.
+  atmosphere_and_mood: Keep the requested mood with a playful, warm and spontaneous charm.
+  rendering_and_quality: Loose expressive line and wash with clear storytelling, never overworked.
+  creative_brief: "Loose ink picture-book wash: quick expressive ink lines with loose watercolor washes that spill past the lines, like a lively classic children's picture book. Carry it through loose ink line, spilling watercolor, white paper space, spontaneous charm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: loose ink line; spilling watercolor; white paper space; spontaneous charm
+avoidRules:
+  - overworked rendering
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: overworked rendering, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: storybook-and-animation
+  categoryName: 4. Storybook & Animation
+  tags:
+    - trading-card-illustration
+    - storybook-and-animation
+    - loose-ink-wash
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: loose ink line and watercolor picture book

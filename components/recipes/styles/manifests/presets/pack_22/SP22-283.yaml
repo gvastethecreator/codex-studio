@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP22-283
+packId: pack_22
+name: Watercolor Key Visual
+styleAnchors:
+  - Watercolor Key Visual
+  - watercolor anime key art
+  - luminous watercolor
+displayName: Watercolor Key Visual
+category: 6. Anime Illustration
+domain: watercolor anime key art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - anime-illustration
+  - watercolor-key
+  - anime
+  - portable-style-study
+visualDna:
+  aesthetic: 'Watercolor key visual: anime key-art composition painted in luminous watercolor, with clean character linework and soft blooming skies.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original character designs; draw the characters with clean anime line and paint them and the scene in luminous watercolor.
+  color_and_tone: Bright transparent watercolor blues, pinks and golds with white paper highlights.
+  lighting_and_shadow: Soft watercolor shadows and glowing sky light with gentle blooms.
+  texture_and_material: Wet blooms, granulating skies, paper grain and crisp ink line.
+  camera_and_composition: Preserve the requested framing like a poster key visual with big sky.
+  atmosphere_and_mood: Keep the requested mood with hopeful luminous wonder.
+  rendering_and_quality: Clean line with fresh transparent washes, never muddy.
+  creative_brief: "Watercolor key visual: anime key-art composition painted in luminous watercolor, with clean character linework and soft blooming skies. Carry it through luminous watercolor, clean anime line, blooming skies, key-art layout. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: luminous watercolor; clean anime line; blooming skies; key-art layout
+avoidRules:
+  - opaque digital paint
+  - franchise character likeness
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: opaque digital paint, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: anime-illustration
+  categoryName: 6. Anime Illustration
+  tags:
+    - trading-card-illustration
+    - anime-illustration
+    - watercolor-key
+    - anime
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: watercolor anime key art

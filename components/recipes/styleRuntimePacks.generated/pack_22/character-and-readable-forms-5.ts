@@ -230,4 +230,399 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP22-269',
+    name: 'Chunky Chibi Proportions',
+    displayName: 'Chunky Chibi Proportions',
+    styleAnchors: [
+      'Chunky Chibi Proportions',
+      'big-head small-body character design',
+      'oversized head',
+    ],
+    category: '5. Character & Readable Forms',
+    domain: 'big-head small-body character design',
+    negativePrompt:
+      'realistic proportions, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Chunky chibi proportions: characters redrawn with oversized heads, stubby limbs and round bodies, cute and instantly readable while keeping their key traits.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action; redraw figures with big heads and small rounded bodies while keeping their costumes and props recognizable.',
+      color_and_tone: 'Bright cheerful colors with soft cel shading and rosy cheek accents.',
+      lighting_and_shadow:
+        'Simple soft two-tone shading with small shiny highlights on eyes and hair.',
+      texture_and_material:
+        'Clean line art, smooth fills, oversized eyes and simplified costume details.',
+      camera_and_composition:
+        'Preserve the requested framing with the character centered and full-body.',
+      atmosphere_and_mood: 'Keep the requested mood while making it cuter and more playful.',
+      rendering_and_quality: 'Clean polished chibi rendering with clear readable silhouettes.',
+      creative_brief:
+        "Chunky chibi proportions: characters redrawn with oversized heads, stubby limbs and round bodies, cute and instantly readable while keeping their key traits. Carry it through oversized head, stubby limbs, big eyes, simplified costume. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'oversized head; stubby limbs; big eyes; simplified costume',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-270',
+    name: 'Big-Expression Portrait',
+    displayName: 'Big-Expression Portrait',
+    styleAnchors: [
+      'Big-Expression Portrait',
+      'emotion-first character portrait',
+      'close face framing',
+    ],
+    category: '5. Character & Readable Forms',
+    domain: 'emotion-first character portrait',
+    negativePrompt:
+      'blank neutral face, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Big-expression portrait: character close-ups where the face carries one strong emotion, exaggerated eyebrows, mouth and eyes that read instantly.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action; frame the character close and push one clear emotion in the face while keeping likeness.',
+      color_and_tone: 'Saturated colors with a background tint matching the emotion.',
+      lighting_and_shadow:
+        'Clear facial lighting that sculpts the expression, soft background falloff.',
+      texture_and_material:
+        'Painterly skin, expressive brows, readable wrinkles and bold eye shapes.',
+      camera_and_composition:
+        'Close portrait or bust framing with the face filling most of the frame.',
+      atmosphere_and_mood: 'Amplify the emotion the prompt requests, readable across a room.',
+      rendering_and_quality: 'Expressive but polished painting with clear facial acting.',
+      creative_brief:
+        "Big-expression portrait: character close-ups where the face carries one strong emotion, exaggerated eyebrows, mouth and eyes that read instantly. Carry it through close face framing, one strong emotion, exaggerated brows, tinted background. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'close face framing; one strong emotion; exaggerated brows; tinted background',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-271',
+    name: 'Faction Color Coding',
+    displayName: 'Faction Color Coding',
+    styleAnchors: ['Faction Color Coding', 'team color identity design', 'dominant faction color'],
+    category: '5. Character & Readable Forms',
+    domain: 'team color identity design',
+    negativePrompt:
+      'random unrelated colors, readable emblems, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Faction color coding: characters designed around one bold faction color scheme so allegiance reads instantly, with accents repeated across costume and gear.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action; dress and equip the characters in a clear shared color scheme showing their faction.',
+      color_and_tone: 'One dominant faction color with a secondary accent and neutral base tones.',
+      lighting_and_shadow: 'Clean readable lighting that keeps faction colors strong in shadow.',
+      texture_and_material: 'Banners without symbols, sashes, dyed armor trims and colored gear.',
+      camera_and_composition: 'Preserve the requested framing with faction colors leading the eye.',
+      atmosphere_and_mood: 'Keep the requested mood with clear team identity and pride.',
+      rendering_and_quality:
+        'Clean polished rendering with consistent color logic, kept consistent across the whole image.',
+      creative_brief:
+        "Faction color coding: characters designed around one bold faction color scheme so allegiance reads instantly, with accents repeated across costume and gear. Carry it through dominant faction color, repeated accents, clear allegiance, neutral base. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'dominant faction color; repeated accents; clear allegiance; neutral base',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-272',
+    name: 'Hybrid Creature Anatomy',
+    displayName: 'Hybrid Creature Anatomy',
+    styleAnchors: [
+      'Hybrid Creature Anatomy',
+      'believable creature fusion design',
+      'fused animal parts',
+    ],
+    category: '5. Character & Readable Forms',
+    domain: 'believable creature fusion design',
+    negativePrompt:
+      'random collage parts, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Hybrid creature anatomy: creatures fused from two or more animals with believable joints, muscles and skin transitions, painted like convincing concept art.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action; if the subject is a creature, blend its animal parts with believable anatomy at every join.',
+      color_and_tone: 'Naturalistic animal colors blending smoothly at the transitions.',
+      lighting_and_shadow: 'Clear anatomical lighting that reveals muscle and joint structure.',
+      texture_and_material:
+        'Fur fading into scales, feathers into hide, believable skin transitions.',
+      camera_and_composition: 'Preserve the requested framing with the full creature visible.',
+      atmosphere_and_mood: 'Keep the requested mood with a sense of real possible biology.',
+      rendering_and_quality:
+        'Convincing anatomical concept painting with clean transitions, kept consistent across the whole image.',
+      creative_brief:
+        "Hybrid creature anatomy: creatures fused from two or more animals with believable joints, muscles and skin transitions, painted like convincing concept art. Carry it through fused animal parts, believable joints, skin transitions, concept-art realism. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'fused animal parts; believable joints; skin transitions; concept-art realism',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-273',
+    name: 'Heroic Proportion Stance',
+    displayName: 'Heroic Proportion Stance',
+    styleAnchors: [
+      'Heroic Proportion Stance',
+      'idealized heroic figure pose',
+      'heroic proportions',
+    ],
+    category: '5. Character & Readable Forms',
+    domain: 'idealized heroic figure pose',
+    negativePrompt:
+      'slouched weak pose, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Heroic proportion stance: idealized heroic figures with long legs, broad shoulders and confident grounded poses, drawn to look powerful and iconic.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action; give figures heroic proportions and a confident grounded stance.',
+      color_and_tone: 'Strong saturated costume colors against simpler muted backgrounds.',
+      lighting_and_shadow: 'Dramatic upward key light and strong rim light on the figure.',
+      texture_and_material: 'Clean costume materials, capes, armor and flowing fabric.',
+      camera_and_composition: 'Low camera angle, full-body figure dominating the frame.',
+      atmosphere_and_mood: 'Keep the requested mood with bold heroic confidence.',
+      rendering_and_quality:
+        'Polished dynamic figure rendering with clean anatomy, kept consistent across the whole image.',
+      creative_brief:
+        "Heroic proportion stance: idealized heroic figures with long legs, broad shoulders and confident grounded poses, drawn to look powerful and iconic. Carry it through heroic proportions, low angle, grounded stance, rim light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'heroic proportions; low angle; grounded stance; rim light',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-274',
+    name: 'Shape-Language Caricature',
+    displayName: 'Shape-Language Caricature',
+    styleAnchors: [
+      'Shape-Language Caricature',
+      'circle square triangle personalities',
+      'round friendly shapes',
+    ],
+    category: '5. Character & Readable Forms',
+    domain: 'circle square triangle personalities',
+    negativePrompt:
+      'muddled shapes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Shape-language caricature: characters built from dominant basic shapes, round for friendly, square for sturdy, triangular for sharp, so personality reads instantly.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action; build each character from one dominant shape that matches its personality.',
+      color_and_tone: 'Clean graphic colors with simple shading and strong shape contrast.',
+      lighting_and_shadow: 'Simple flat shadows that reinforce the dominant shapes.',
+      texture_and_material: 'Clean line art, bold shape silhouettes and minimal detail.',
+      camera_and_composition:
+        'Preserve the requested framing with shape contrast between characters.',
+      atmosphere_and_mood: 'Keep the requested mood with clear, readable character personality.',
+      rendering_and_quality:
+        'Crisp graphic character design with clear silhouettes, kept consistent across the whole image.',
+      creative_brief:
+        "Shape-language caricature: characters built from dominant basic shapes, round for friendly, square for sturdy, triangular for sharp, so personality reads instantly. Carry it through round friendly shapes, square sturdy shapes, triangle sharp shapes, clear silhouettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features:
+        'round friendly shapes; square sturdy shapes; triangle sharp shapes; clear silhouettes',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-275',
+    name: 'Painted Character Bust',
+    displayName: 'Painted Character Bust',
+    styleAnchors: [
+      'Painted Character Bust',
+      'painterly portrait bust card',
+      'head-and-shoulders bust',
+    ],
+    category: '5. Character & Readable Forms',
+    domain: 'painterly portrait bust card',
+    negativePrompt:
+      'full-body scene, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Painted character bust: head-and-shoulders character portraits in rich painterly style, with detailed faces and costumes fading into loose brushwork.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action; show the character as a head-and-shoulders bust with a finely painted face.',
+      color_and_tone: 'Rich skin tones and costume colors against a softly painted background.',
+      lighting_and_shadow: 'Classic portrait lighting with soft shadows and gentle rim light.',
+      texture_and_material:
+        'Detailed face and costume texture fading to loose strokes at the edges.',
+      camera_and_composition: 'Head and shoulders bust, slightly off-center, three-quarter view.',
+      atmosphere_and_mood: 'Keep the requested mood with personality and presence.',
+      rendering_and_quality:
+        'Polished painterly face with loose confident edges, kept consistent across the whole image.',
+      creative_brief:
+        "Painted character bust: head-and-shoulders character portraits in rich painterly style, with detailed faces and costumes fading into loose brushwork. Carry it through head-and-shoulders bust, detailed face, loose edges, portrait light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'head-and-shoulders bust; detailed face; loose edges; portrait light',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-276',
+    name: 'Glowing Outline Pop',
+    displayName: 'Glowing Outline Pop',
+    styleAnchors: [
+      'Glowing Outline Pop',
+      'luminous outlined character art',
+      'glowing colored outlines',
+    ],
+    category: '5. Character & Readable Forms',
+    domain: 'luminous outlined character art',
+    negativePrompt:
+      'flat daylight, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Glowing outline pop: characters outlined in thick glowing colored lines against dark backgrounds, bold and electric like a collectible holo card.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action; outline the characters in luminous colored lines that make them pop from dark space.',
+      color_and_tone: 'Dark backgrounds with vivid glowing cyan, magenta or gold outlines.',
+      lighting_and_shadow: 'Outlines glowing and casting colored light onto nearby surfaces.',
+      texture_and_material: 'Smooth fills, glowing strokes, soft bloom and small sparkle accents.',
+      camera_and_composition:
+        'Preserve the requested framing with characters centered against darkness.',
+      atmosphere_and_mood: 'Keep the requested mood with electric collectible energy.',
+      rendering_and_quality:
+        'Clean luminous outlines with controlled bloom, kept consistent across the whole image.',
+      creative_brief:
+        "Glowing outline pop: characters outlined in thick glowing colored lines against dark backgrounds, bold and electric like a collectible holo card. Carry it through glowing colored outlines, dark background, bloom, collectible pop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'glowing colored outlines; dark background; bloom; collectible pop',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-277',
+    name: 'Minimal Line Character',
+    displayName: 'Minimal Line Character',
+    styleAnchors: ['Minimal Line Character', 'few-line minimal character', 'few lines'],
+    category: '5. Character & Readable Forms',
+    domain: 'few-line minimal character',
+    negativePrompt:
+      'detailed rendering, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Minimal line character: characters captured in the fewest possible lines, a single confident stroke for each form, with lots of empty space.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action; reduce the characters to a handful of clean lines that still read clearly.',
+      color_and_tone: 'Black line on white with at most one flat accent color.',
+      lighting_and_shadow: 'No shading; form implied by line placement alone.',
+      texture_and_material: 'Clean confident strokes with slight taper and empty paper.',
+      camera_and_composition: 'Preserve the requested framing with generous empty space.',
+      atmosphere_and_mood: 'Keep the requested mood with calm elegant simplicity.',
+      rendering_and_quality: 'Precise minimal line work, never sketchy or overworked.',
+      creative_brief:
+        "Minimal line character: characters captured in the fewest possible lines, a single confident stroke for each form, with lots of empty space. Carry it through few lines, single strokes, empty space, one accent color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'few lines; single strokes; empty space; one accent color',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-278',
+    name: 'Weathered Veteran Rendering',
+    displayName: 'Weathered Veteran Rendering',
+    styleAnchors: [
+      'Weathered Veteran Rendering',
+      'gritty realistic character rendering',
+      'visible scars and wrinkles',
+    ],
+    category: '5. Character & Readable Forms',
+    domain: 'gritty realistic character rendering',
+    negativePrompt:
+      'clean shiny costume, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Weathered veteran rendering: realistic characters painted with every scar, wrinkle, stain and patch visible, their history written into skin and gear.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action; render the characters with realistic wear, scars and weathered gear appropriate to them.',
+      color_and_tone: 'Muted earthy tones, worn leather browns, dulled metal and tired skin.',
+      lighting_and_shadow: 'Hard side light revealing texture, scars and deep eye shadows.',
+      texture_and_material: 'Scratched armor, patched cloth, dirt, sweat, scars and worn straps.',
+      camera_and_composition:
+        'Preserve the requested framing with close detail on the face and gear.',
+      atmosphere_and_mood: 'Keep the requested mood with gritty lived-in authenticity.',
+      rendering_and_quality:
+        'Detailed realistic painting with believable wear, kept consistent across the whole image.',
+      creative_brief:
+        "Weathered veteran rendering: realistic characters painted with every scar, wrinkle, stain and patch visible, their history written into skin and gear. Carry it through visible scars and wrinkles, worn gear, hard side light, muted tones. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'visible scars and wrinkles; worn gear; hard side light; muted tones',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-279',
+    name: 'Iconic Mask Read',
+    displayName: 'Iconic Mask Read',
+    styleAnchors: [
+      'Iconic Mask Read',
+      'mask-driven character silhouette',
+      'striking mask silhouette',
+    ],
+    category: '5. Character & Readable Forms',
+    domain: 'mask-driven character silhouette',
+    negativePrompt:
+      'busy overdetailed costume, franchise masks, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Iconic mask read: characters defined by one striking mask or helmet shape that is readable at a glance, with the rest of the costume simplified around it.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action; give each character one bold mask or helmet silhouette and simplify the rest.',
+      color_and_tone: 'Strong contrast between the mask and a simplified dark or muted costume.',
+      lighting_and_shadow: 'Dramatic light focused on the mask with the body falling into shadow.',
+      texture_and_material: 'Carved, lacquered or metal mask surfaces with clean simple clothing.',
+      camera_and_composition: 'Preserve the requested framing with the mask as the focal point.',
+      atmosphere_and_mood: 'Keep the requested mood with mysterious iconic presence.',
+      rendering_and_quality: 'Polished rendering with a crisp memorable mask silhouette.',
+      creative_brief:
+        "Iconic mask read: characters defined by one striking mask or helmet shape that is readable at a glance, with the rest of the costume simplified around it. Carry it through striking mask silhouette, simplified costume, focal lighting, iconic read. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'striking mask silhouette; simplified costume; focal lighting; iconic read',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-280',
+    name: 'Gesture-Line Action Pose',
+    displayName: 'Gesture-Line Action Pose',
+    styleAnchors: [
+      'Gesture-Line Action Pose',
+      'line-of-action driven pose',
+      'strong line of action',
+    ],
+    category: '5. Character & Readable Forms',
+    domain: 'line-of-action driven pose',
+    negativePrompt:
+      'stiff static pose, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Gesture-line action pose: characters drawn along one sweeping line of action, poses pushed to maximum energy with clear rhythm through the whole body.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action; build each pose along a strong curved line of action that carries through the body.',
+      color_and_tone: 'Clean colors that do not distract from the pose, with one accent.',
+      lighting_and_shadow: 'Simple lighting that emphasizes the flow of the pose.',
+      texture_and_material: 'Clean lines, flowing fabric and hair following the action curve.',
+      camera_and_composition: 'Preserve the requested framing with a dynamic diagonal composition.',
+      atmosphere_and_mood: 'Keep the requested mood with explosive kinetic energy.',
+      rendering_and_quality: 'Clear dynamic figure drawing with strong readable rhythm.',
+      creative_brief:
+        "Gesture-line action pose: characters drawn along one sweeping line of action, poses pushed to maximum energy with clear rhythm through the whole body. Carry it through strong line of action, pushed poses, flowing rhythm, diagonal composition. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'strong line of action; pushed poses; flowing rhythm; diagonal composition',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

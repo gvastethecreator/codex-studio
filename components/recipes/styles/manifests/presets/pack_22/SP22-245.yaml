@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP22-245
+packId: pack_22
+name: Bleeding Ink Veins
+styleAnchors:
+  - Bleeding Ink Veins
+  - ink spreading like veins
+  - lines bleeding into tendrils
+displayName: Bleeding Ink Veins
+category: 3. Strange Ink & Paint
+domain: ink spreading like veins
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - strange-ink-and-paint
+  - ink-veins
+  - portable-style-study
+visualDna:
+  aesthetic: 'Bleeding ink veins: dark ink drawn onto damp paper so every line spreads into branching vein-like tendrils, as if the drawing were alive.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action; draw the subject in lines that bleed outward into fine branching tendrils while its shape stays clear.
+  color_and_tone: Black, oxblood or indigo ink on pale paper with soft tinted halos around lines.
+  lighting_and_shadow: No modeled light; density of branching tendrils creates shadow.
+  texture_and_material: Capillary ink branching, feathered line edges and damp paper cockling.
+  camera_and_composition: Preserve the requested framing with the subject emerging from branching lines.
+  atmosphere_and_mood: Keep the requested mood with an uneasy organic creep.
+  rendering_and_quality: Controlled bleeding lines with clear form, never a random stain.
+  creative_brief: "Bleeding ink veins: dark ink drawn onto damp paper so every line spreads into branching vein-like tendrils, as if the drawing were alive. Carry it through lines bleeding into tendrils, feathered halos, damp paper, creeping growth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: lines bleeding into tendrils; feathered halos; damp paper; creeping growth
+avoidRules:
+  - clean vector lines
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: clean vector lines, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: strange-ink-and-paint
+  categoryName: 3. Strange Ink & Paint
+  tags:
+    - trading-card-illustration
+    - strange-ink-and-paint
+    - ink-veins
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: ink spreading like veins

@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP22-272
+packId: pack_22
+name: Hybrid Creature Anatomy
+styleAnchors:
+  - Hybrid Creature Anatomy
+  - believable creature fusion design
+  - fused animal parts
+displayName: Hybrid Creature Anatomy
+category: 5. Character & Readable Forms
+domain: believable creature fusion design
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - character-and-readable-forms
+  - hybrid-anatomy
+  - portable-style-study
+visualDna:
+  aesthetic: 'Hybrid creature anatomy: creatures fused from two or more animals with believable joints, muscles and skin transitions, painted like convincing concept art.'
+  subject_treatment: Preserve the requested identity, count, pose and action; if the subject is a creature, blend its animal parts with believable anatomy at every join.
+  color_and_tone: Naturalistic animal colors blending smoothly at the transitions.
+  lighting_and_shadow: Clear anatomical lighting that reveals muscle and joint structure.
+  texture_and_material: Fur fading into scales, feathers into hide, believable skin transitions.
+  camera_and_composition: Preserve the requested framing with the full creature visible.
+  atmosphere_and_mood: Keep the requested mood with a sense of real possible biology.
+  rendering_and_quality: Convincing anatomical concept painting with clean transitions, kept consistent across the whole image.
+  creative_brief: "Hybrid creature anatomy: creatures fused from two or more animals with believable joints, muscles and skin transitions, painted like convincing concept art. Carry it through fused animal parts, believable joints, skin transitions, concept-art realism. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: fused animal parts; believable joints; skin transitions; concept-art realism
+avoidRules:
+  - random collage parts
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: random collage parts, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: character-and-readable-forms
+  categoryName: 5. Character & Readable Forms
+  tags:
+    - trading-card-illustration
+    - character-and-readable-forms
+    - hybrid-anatomy
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: believable creature fusion design

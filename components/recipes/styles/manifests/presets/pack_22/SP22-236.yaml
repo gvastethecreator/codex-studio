@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP22-236
+packId: pack_22
+name: Spell-Glow Particle Paint
+styleAnchors:
+  - Spell-Glow Particle Paint
+  - glowing magic particle painting
+  - magic as light source
+displayName: Spell-Glow Particle Paint
+category: 2. Epic Digital Painting
+domain: glowing magic particle painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - epic-digital-painting
+  - spell-glow
+  - portable-style-study
+visualDna:
+  aesthetic: 'Spell-glow particle paint: digital painting where glowing magic, sparks and floating particles become the main light source, lighting faces and surfaces with colored glow.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action; let glowing energy or particles near the subject light it from within the scene.
+  color_and_tone: Dark surroundings with vivid glowing cyan, violet, gold or green magic light.
+  lighting_and_shadow: Colored glow falling onto nearby surfaces, soft falloff into darkness.
+  texture_and_material: Floating sparks, luminous trails, glowing runes without letters and lit dust.
+  camera_and_composition: Preserve the requested framing with the glow source near the focal point.
+  atmosphere_and_mood: Keep the requested mood with mysterious magical radiance.
+  rendering_and_quality: Controlled glow with crisp sparks, never blown-out overexposure.
+  creative_brief: "Spell-glow particle paint: digital painting where glowing magic, sparks and floating particles become the main light source, lighting faces and surfaces with colored glow. Carry it through magic as light source, floating sparks, colored glow falloff, dark surroundings. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: magic as light source; floating sparks; colored glow falloff; dark surroundings
+avoidRules:
+  - overexposed white glow
+  - readable runes
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: overexposed white glow, readable runes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: epic-digital-painting
+  categoryName: 2. Epic Digital Painting
+  tags:
+    - trading-card-illustration
+    - epic-digital-painting
+    - spell-glow
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: glowing magic particle painting

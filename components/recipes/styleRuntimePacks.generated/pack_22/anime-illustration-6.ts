@@ -243,4 +243,387 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP22-281',
+    name: 'Holo-Foil Anime Shine',
+    displayName: 'Holo-Foil Anime Shine',
+    styleAnchors: ['Holo-Foil Anime Shine', 'holographic foil card anime', 'rainbow foil sheen'],
+    category: '6. Anime Illustration',
+    domain: 'holographic foil card anime',
+    negativePrompt:
+      'dull matte finish, readable card text, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Holo-foil anime shine: anime illustration finished like a rare holographic card, with rainbow foil sheen sweeping across hair, armor and background patterns.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original character designs; render the characters in clean anime style with a rainbow holographic sheen over selected areas.',
+      color_and_tone:
+        'Vivid anime colors overlaid with shifting rainbow foil bands of pink, teal and gold.',
+      lighting_and_shadow:
+        'Clean cel lighting with a diagonal foil glare sweeping across the image.',
+      texture_and_material:
+        'Holographic foil patterns, sparkle points and glossy card surface reflections.',
+      camera_and_composition:
+        'Preserve the requested framing with the character centered and heroic.',
+      atmosphere_and_mood: 'Keep the requested mood with the thrill of pulling a rare card.',
+      rendering_and_quality:
+        'Crisp anime art with controlled foil sheen, never muddy rainbow wash.',
+      creative_brief:
+        "Holo-foil anime shine: anime illustration finished like a rare holographic card, with rainbow foil sheen sweeping across hair, armor and background patterns. Carry it through rainbow foil sheen, sparkle points, diagonal glare, rare-card feel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'rainbow foil sheen; sparkle points; diagonal glare; rare-card feel',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-282',
+    name: 'Ink-Brush Anime Splash',
+    displayName: 'Ink-Brush Anime Splash',
+    styleAnchors: [
+      'Ink-Brush Anime Splash',
+      'anime with sumi brush splashes',
+      'sumi brush splashes',
+    ],
+    category: '6. Anime Illustration',
+    domain: 'anime with sumi brush splashes',
+    negativePrompt:
+      'full color background, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Ink-brush anime splash: clean anime characters set against explosive black sumi brush splashes and dry-brush streaks, with one vivid accent color.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original character designs; draw the characters in crisp anime line and surround their action with bold ink brush splashes.',
+      color_and_tone: 'Black ink splashes, white paper and one vivid accent like crimson or gold.',
+      lighting_and_shadow: 'Strong contrast from black ink masses against bright white space.',
+      texture_and_material:
+        'Dry brush streaks, ink spatter, wet splash edges and clean character lines.',
+      camera_and_composition: 'Preserve the requested framing with dynamic diagonal ink sweeps.',
+      atmosphere_and_mood: 'Keep the requested mood with explosive martial energy.',
+      rendering_and_quality: 'Clean anime figures with bold expressive ink, never messy faces.',
+      creative_brief:
+        "Ink-brush anime splash: clean anime characters set against explosive black sumi brush splashes and dry-brush streaks, with one vivid accent color. Carry it through sumi brush splashes, dry-brush streaks, one accent color, crisp anime figure. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'sumi brush splashes; dry-brush streaks; one accent color; crisp anime figure',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-283',
+    name: 'Watercolor Key Visual',
+    displayName: 'Watercolor Key Visual',
+    styleAnchors: ['Watercolor Key Visual', 'watercolor anime key art', 'luminous watercolor'],
+    category: '6. Anime Illustration',
+    domain: 'watercolor anime key art',
+    negativePrompt:
+      'opaque digital paint, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Watercolor key visual: anime key-art composition painted in luminous watercolor, with clean character linework and soft blooming skies.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original character designs; draw the characters with clean anime line and paint them and the scene in luminous watercolor.',
+      color_and_tone:
+        'Bright transparent watercolor blues, pinks and golds with white paper highlights.',
+      lighting_and_shadow: 'Soft watercolor shadows and glowing sky light with gentle blooms.',
+      texture_and_material: 'Wet blooms, granulating skies, paper grain and crisp ink line.',
+      camera_and_composition:
+        'Preserve the requested framing like a poster key visual with big sky.',
+      atmosphere_and_mood: 'Keep the requested mood with hopeful luminous wonder.',
+      rendering_and_quality: 'Clean line with fresh transparent washes, never muddy.',
+      creative_brief:
+        "Watercolor key visual: anime key-art composition painted in luminous watercolor, with clean character linework and soft blooming skies. Carry it through luminous watercolor, clean anime line, blooming skies, key-art layout. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'luminous watercolor; clean anime line; blooming skies; key-art layout',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-284',
+    name: 'Neon Rim Anime Night',
+    displayName: 'Neon Rim Anime Night',
+    styleAnchors: ['Neon Rim Anime Night', 'anime with neon rim lighting', 'pink and cyan rims'],
+    category: '6. Anime Illustration',
+    domain: 'anime with neon rim lighting',
+    negativePrompt:
+      'daylight, readable signs, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Neon rim anime night: anime characters in dark city nights with vivid pink and cyan neon rim lights outlining faces, hair and weapons.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original character designs; place the characters in night light with strong neon rims defining their silhouettes.',
+      color_and_tone: 'Deep indigo darkness with hot pink and electric cyan rim lights.',
+      lighting_and_shadow: 'Dual-color neon rim lights and dark shadowed faces.',
+      texture_and_material: 'Wet reflective surfaces, glowing edges and clean cel shading.',
+      camera_and_composition:
+        'Preserve the requested framing with rim lights on both sides of the figure.',
+      atmosphere_and_mood: 'Keep the requested mood with cool nocturnal tension.',
+      rendering_and_quality:
+        'Crisp anime rendering with saturated controlled glow, kept consistent across the whole image.',
+      creative_brief:
+        "Neon rim anime night: anime characters in dark city nights with vivid pink and cyan neon rim lights outlining faces, hair and weapons. Carry it through pink and cyan rims, dark night, wet reflections, cool tension. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'pink and cyan rims; dark night; wet reflections; cool tension',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-285',
+    name: 'Pastel Gradient Idol Card',
+    displayName: 'Pastel Gradient Idol Card',
+    styleAnchors: ['Pastel Gradient Idol Card', 'pastel idol card anime', 'pastel gradients'],
+    category: '6. Anime Illustration',
+    domain: 'pastel idol card anime',
+    negativePrompt:
+      'dark grim palette, readable text, franchise character likeness, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Pastel gradient idol card: cheerful anime idols painted with soft pastel gradients, sparkles, ribbons and glossy hair shine like a collectible idol card.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original character designs; render the characters as bright stage performers with pastel gradients and sparkles.',
+      color_and_tone: 'Candy pastels of pink, mint, lilac and baby blue with white sparkles.',
+      lighting_and_shadow: 'Soft stage glow, glossy hair highlights and gentle shadows.',
+      texture_and_material:
+        'Satin ribbons, glitter sparkles, glossy hair bands and soft gradients.',
+      camera_and_composition: 'Preserve the requested framing with a dynamic stage pose.',
+      atmosphere_and_mood: 'Keep the requested mood with bubbly joyful energy.',
+      rendering_and_quality:
+        'Polished glossy anime rendering with clean gradients, kept consistent across the whole image.',
+      creative_brief:
+        "Pastel gradient idol card: cheerful anime idols painted with soft pastel gradients, sparkles, ribbons and glossy hair shine like a collectible idol card. Carry it through pastel gradients, sparkles, glossy hair, idol stage pose. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'pastel gradients; sparkles; glossy hair; idol stage pose',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-286',
+    name: 'Halftone Tone Anime',
+    displayName: 'Halftone Tone Anime',
+    styleAnchors: [
+      'Halftone Tone Anime',
+      'color anime with screentone dots',
+      'screentone dot shading',
+    ],
+    category: '6. Anime Illustration',
+    domain: 'color anime with screentone dots',
+    negativePrompt:
+      'smooth airbrush gradients, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Halftone tone anime: color anime illustration shaded with visible screentone dot patterns instead of smooth gradients, like a colored manga page.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original character designs; shade the characters with clean dot and line screentone patterns over flat colors.',
+      color_and_tone: 'Bright flat colors with dot-pattern shading in darker tints.',
+      lighting_and_shadow: 'Shadows and highlights made from screentone dot density.',
+      texture_and_material: 'Round dot tones, line tones, crisp ink outlines and flat fills.',
+      camera_and_composition: 'Preserve the requested framing with bold graphic composition.',
+      atmosphere_and_mood: 'Keep the requested mood with lively printed comic energy.',
+      rendering_and_quality:
+        'Clean screentone application with crisp consistent dots, kept consistent across the whole image.',
+      creative_brief:
+        "Halftone tone anime: color anime illustration shaded with visible screentone dot patterns instead of smooth gradients, like a colored manga page. Carry it through screentone dot shading, flat colors, crisp ink, printed comic feel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'screentone dot shading; flat colors; crisp ink; printed comic feel',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-287',
+    name: 'Scenic Backdrop Anime Card',
+    displayName: 'Scenic Backdrop Anime Card',
+    styleAnchors: [
+      'Scenic Backdrop Anime Card',
+      'detailed scenery with anime figures',
+      'lavish scenery',
+    ],
+    category: '6. Anime Illustration',
+    domain: 'detailed scenery with anime figures',
+    negativePrompt:
+      'empty background, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Scenic backdrop anime card: small anime characters placed in lavishly detailed painted landscapes, clouds and light, where the scenery tells the story.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original character designs; keep the characters small but clear inside a richly detailed painted setting.',
+      color_and_tone: 'Vivid sky blues, lush greens and golden sunset light.',
+      lighting_and_shadow: 'Detailed natural light with crepuscular rays and glowing clouds.',
+      texture_and_material:
+        'Painted foliage, towering clouds, reflective water and fine architecture.',
+      camera_and_composition: 'Wide shots with small figures and big dramatic skies.',
+      atmosphere_and_mood: 'Keep the requested mood with nostalgic sweeping beauty.',
+      rendering_and_quality:
+        'Highly detailed scenery with clean small characters, kept consistent across the whole image.',
+      creative_brief:
+        "Scenic backdrop anime card: small anime characters placed in lavishly detailed painted landscapes, clouds and light, where the scenery tells the story. Carry it through lavish scenery, small figures, dramatic skies, nostalgic light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'lavish scenery; small figures; dramatic skies; nostalgic light',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-288',
+    name: 'Bold-Line Battle Card',
+    displayName: 'Bold-Line Battle Card',
+    styleAnchors: ['Bold-Line Battle Card', 'thick-line action anime card', 'thick outlines'],
+    category: '6. Anime Illustration',
+    domain: 'thick-line action anime card',
+    negativePrompt:
+      'calm static pose, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Bold-line battle card: high-energy anime action with thick heavy outlines, dramatic speed lines, flying debris and intense faces.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original character designs; draw the characters with thick powerful outlines and push the action with speed lines.',
+      color_and_tone: 'Saturated primary colors, fiery oranges and deep shadows.',
+      lighting_and_shadow:
+        'Hard dramatic shading with bright impact flashes, kept consistent across the whole image.',
+      texture_and_material:
+        'Thick ink lines, speed lines, debris, sweat drops and energy crackles.',
+      camera_and_composition:
+        'Extreme angles and foreshortening with diagonal action, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood at maximum battle intensity.',
+      rendering_and_quality:
+        'Bold confident inking with clear readable action, kept consistent across the whole image.',
+      creative_brief:
+        "Bold-line battle card: high-energy anime action with thick heavy outlines, dramatic speed lines, flying debris and intense faces. Carry it through thick outlines, speed lines, flying debris, extreme angles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'thick outlines; speed lines; flying debris; extreme angles',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-289',
+    name: 'Sparkle-Burst Magical Card',
+    displayName: 'Sparkle-Burst Magical Card',
+    styleAnchors: [
+      'Sparkle-Burst Magical Card',
+      'magical sparkle effects anime',
+      'starburst sparkles',
+    ],
+    category: '6. Anime Illustration',
+    domain: 'magical sparkle effects anime',
+    negativePrompt:
+      'dull muted palette, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Sparkle-burst magical card: anime spellcasters surrounded by starbursts, glitter trails, glowing circles and ribbons of light filling the card.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original character designs; surround the characters with bursts of sparkles and glowing magical effects.',
+      color_and_tone: 'Bright magical colors of violet, gold and cyan with white star glints.',
+      lighting_and_shadow: 'Characters lit by the magic itself with bright glows.',
+      texture_and_material: 'Starburst glints, glitter trails, glowing rings and light ribbons.',
+      camera_and_composition:
+        'Preserve the requested framing with effects radiating from the center.',
+      atmosphere_and_mood: 'Keep the requested mood with dazzling magical wonder.',
+      rendering_and_quality: 'Clean crisp sparkles and glows around polished characters.',
+      creative_brief:
+        "Sparkle-burst magical card: anime spellcasters surrounded by starbursts, glitter trails, glowing circles and ribbons of light filling the card. Carry it through starburst sparkles, glowing rings, light ribbons, magical glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'starburst sparkles; glowing rings; light ribbons; magical glow',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-290',
+    name: 'Production Sketch Anime',
+    displayName: 'Production Sketch Anime',
+    styleAnchors: [
+      'Production Sketch Anime',
+      'rough anime production drawing',
+      'blue and red pencil',
+    ],
+    category: '6. Anime Illustration',
+    domain: 'rough anime production drawing',
+    negativePrompt:
+      'polished final render, readable notes, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Production sketch anime: rough anime production drawings with colored pencil construction, light color notes and energetic unfinished lines.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original character designs; draw the characters as lively production sketches with visible construction.',
+      color_and_tone: 'Blue and red pencil lines with light marker color notes on white paper.',
+      lighting_and_shadow: 'Simple shadow shapes blocked with light marker or pencil.',
+      texture_and_material:
+        'Sketchy pencil strokes, construction circles, erased marks and marker patches.',
+      camera_and_composition: 'Preserve the requested framing on a drawing sheet.',
+      atmosphere_and_mood: 'Keep the requested mood with creative in-progress energy.',
+      rendering_and_quality:
+        'Loose confident sketching with clear readable gesture, kept consistent across the whole image.',
+      creative_brief:
+        "Production sketch anime: rough anime production drawings with colored pencil construction, light color notes and energetic unfinished lines. Carry it through blue and red pencil, construction lines, marker notes, unfinished energy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'blue and red pencil; construction lines; marker notes; unfinished energy',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-291',
+    name: 'Lace-Gothic Anime Portrait',
+    displayName: 'Lace-Gothic Anime Portrait',
+    styleAnchors: ['Lace-Gothic Anime Portrait', 'gothic lolita anime portraiture', 'black lace'],
+    category: '6. Anime Illustration',
+    domain: 'gothic lolita anime portraiture',
+    negativePrompt:
+      'bright casual clothing, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Lace-gothic anime portrait: elegant dark anime portraits with lace, roses, ribbons and candlelight, delicate and melancholy.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original character designs; portray the characters in elegant gothic dress with lace and roses framing them.',
+      color_and_tone: 'Black, burgundy and ivory with deep rose red and candle gold accents.',
+      lighting_and_shadow:
+        'Soft candlelight with deep elegant shadows, kept consistent across the whole image.',
+      texture_and_material: 'Fine lace, velvet, satin ribbons, rose petals and dark wood.',
+      camera_and_composition:
+        'Portrait or half-body framing with ornamental roses around the figure.',
+      atmosphere_and_mood: 'Keep the requested mood with elegant gothic melancholy.',
+      rendering_and_quality: 'Delicate detailed anime rendering of lace and fabric.',
+      creative_brief:
+        "Lace-gothic anime portrait: elegant dark anime portraits with lace, roses, ribbons and candlelight, delicate and melancholy. Carry it through black lace, roses, candlelight, melancholy elegance. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'black lace; roses; candlelight; melancholy elegance',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-292',
+    name: 'Mecha Panel-Line Card',
+    displayName: 'Mecha Panel-Line Card',
+    styleAnchors: ['Mecha Panel-Line Card', 'detailed mecha line art', 'precise panel lines'],
+    category: '6. Anime Illustration',
+    domain: 'detailed mecha line art',
+    negativePrompt:
+      'organic sloppy lines, readable decals, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Mecha panel-line card: anime mecha drawn with precise panel lines, vents, bolts and armor seams, cel shaded with crisp metallic highlights.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original character designs; render machines and armored figures with precise panel lines and mechanical detail.',
+      color_and_tone:
+        'Bold mecha color schemes of white, blue, red and yellow with metallic greys.',
+      lighting_and_shadow: 'Crisp cel shadows and sharp metallic specular highlights.',
+      texture_and_material:
+        'Panel seams, vents, bolts, decals without text and glowing sensor eyes.',
+      camera_and_composition:
+        'Low heroic angles emphasizing mecha scale, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with mechanical power and scale.',
+      rendering_and_quality: 'Precise clean mechanical line art with consistent cel shading.',
+      creative_brief:
+        "Mecha panel-line card: anime mecha drawn with precise panel lines, vents, bolts and armor seams, cel shaded with crisp metallic highlights. Carry it through precise panel lines, vents and bolts, metallic highlights, heroic angles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'precise panel lines; vents and bolts; metallic highlights; heroic angles',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

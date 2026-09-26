@@ -228,4 +228,407 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP22-221',
+    name: 'Grisaille Underlayer Build',
+    displayName: 'Grisaille Underlayer Build',
+    styleAnchors: [
+      'Grisaille Underlayer Build',
+      'monochrome underpainting glazed over',
+      'grey underpainting',
+    ],
+    category: '1. Workshop Painting',
+    domain: 'monochrome underpainting glazed over',
+    negativePrompt:
+      'flat saturated color, airbrush gradients, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Grisaille underlayer build: the image first modeled in cool greys, then warmed with thin color glazes so the grey underpainting still shapes every form.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; model the forms fully in grey values first and let color glazes sit on top without changing their structure.',
+      color_and_tone:
+        'Cool silvery grey foundation with thin warm glazes of the requested colors on top.',
+      lighting_and_shadow:
+        'Strong sculpted value structure from the grey layer, glazes only tinting lights and shadows.',
+      texture_and_material:
+        'Smooth oil film, visible grey showing through thin color, soft transitions at turning edges.',
+      camera_and_composition:
+        'Preserve the requested framing, with a clear value hierarchy guiding the eye.',
+      atmosphere_and_mood: 'Keep the requested mood; the method adds solidity and quiet depth.',
+      rendering_and_quality:
+        'Sculptural grey modeling under restrained color, never flat or airbrushed.',
+      creative_brief:
+        "Grisaille underlayer build: the image first modeled in cool greys, then warmed with thin color glazes so the grey underpainting still shapes every form. Carry it through grey underpainting, thin color glazes, sculpted values, silvery depth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'grey underpainting; thin color glazes; sculpted values; silvery depth',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-222',
+    name: 'Loaded-Brush Impasto Oil',
+    displayName: 'Loaded-Brush Impasto Oil',
+    styleAnchors: [
+      'Loaded-Brush Impasto Oil',
+      'thick brush-loaded oil paint',
+      'thick raised strokes',
+    ],
+    category: '1. Workshop Painting',
+    domain: 'thick brush-loaded oil paint',
+    negativePrompt:
+      'smooth flat paint, digital brush texture, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Loaded-brush impasto oil: thick oil paint laid with heavily loaded brushes, each stroke standing up from the surface and catching light.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; build the forms from thick directional brush strokes that follow their volume.',
+      color_and_tone:
+        'Rich saturated oil colors with thick mixed strokes and bright highlights at the ridges.',
+      lighting_and_shadow:
+        'Requested light enhanced by real paint ridges catching highlights and casting tiny shadows.',
+      texture_and_material:
+        'Heavy raised strokes, bristle grooves, buttery paint peaks and wet-on-wet mixing.',
+      camera_and_composition: 'Preserve the requested framing, thickest paint on the focal point.',
+      atmosphere_and_mood: 'Keep the requested mood, amplified by energetic physical paint.',
+      rendering_and_quality:
+        'Confident bold brushwork with visible thickness, never smooth or digital.',
+      creative_brief:
+        "Loaded-brush impasto oil: thick oil paint laid with heavily loaded brushes, each stroke standing up from the surface and catching light. Carry it through thick raised strokes, bristle grooves, paint ridges catching light, bold color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features:
+        'thick raised strokes; bristle grooves; paint ridges catching light; bold color',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-223',
+    name: 'Scumbled Veil Layers',
+    displayName: 'Scumbled Veil Layers',
+    styleAnchors: [
+      'Scumbled Veil Layers',
+      'broken opaque scumbles over dark',
+      'pale dragged veils',
+    ],
+    category: '1. Workshop Painting',
+    domain: 'broken opaque scumbles over dark',
+    negativePrompt:
+      'digital fog filter, flat opaque fill, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Scumbled veil layers: thin broken layers of lighter opaque paint dragged over darker passages, creating hazy veils, mist and soft luminous air.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; keep the subject firm and apply scumbled veils around and over it to create atmosphere without hiding it.',
+      color_and_tone:
+        'Dark rich base colors softened by pale broken veils of blue-grey, rose or gold.',
+      lighting_and_shadow:
+        'Soft diffused light suggested by pale scumbles glowing over dark grounds.',
+      texture_and_material:
+        'Dry dragged paint films, broken edges, underlayer showing through each veil.',
+      camera_and_composition: 'Preserve the requested framing, with atmosphere layered in depth.',
+      atmosphere_and_mood: 'Keep the requested mood, adding mist, distance and quiet air.',
+      rendering_and_quality: 'Soft luminous veils over solid forms, never blurry digital fog.',
+      creative_brief:
+        "Scumbled veil layers: thin broken layers of lighter opaque paint dragged over darker passages, creating hazy veils, mist and soft luminous air. Carry it through pale dragged veils, dark showing through, misty depth, firm focal form. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'pale dragged veils; dark showing through; misty depth; firm focal form',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-224',
+    name: 'Matte Gouache Blocking',
+    displayName: 'Matte Gouache Blocking',
+    styleAnchors: ['Matte Gouache Blocking', 'flat opaque gouache shapes', 'flat opaque blocks'],
+    category: '1. Workshop Painting',
+    domain: 'flat opaque gouache shapes',
+    negativePrompt:
+      'glossy gradients, photographic detail, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Matte gouache blocking: the image built from flat opaque gouache shapes with velvety matte finish and crisp edges between color blocks.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; simplify forms into clear flat color blocks that still read as the requested subject.',
+      color_and_tone: 'Velvety matte colors in limited harmonious palettes with clean value steps.',
+      lighting_and_shadow: 'Light and shadow as flat separate color shapes rather than gradients.',
+      texture_and_material:
+        'Chalky matte paint, faint brush marks inside flats and crisp painted edges.',
+      camera_and_composition:
+        'Preserve the requested framing with clear graphic shape arrangement.',
+      atmosphere_and_mood: 'Keep the requested mood with a calm, designed clarity.',
+      rendering_and_quality: 'Clean flat opaque shapes and deliberate edges, no glossy gradients.',
+      creative_brief:
+        "Matte gouache blocking: the image built from flat opaque gouache shapes with velvety matte finish and crisp edges between color blocks. Carry it through flat opaque blocks, velvety matte finish, crisp shape edges, limited palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'flat opaque blocks; velvety matte finish; crisp shape edges; limited palette',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-225',
+    name: 'Ink-Line Gouache Fill',
+    displayName: 'Ink-Line Gouache Fill',
+    styleAnchors: ['Ink-Line Gouache Fill', 'bold ink outline with gouache', 'bold ink contours'],
+    category: '1. Workshop Painting',
+    domain: 'bold ink outline with gouache',
+    negativePrompt:
+      'sketchy lines, photographic rendering, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Ink-line gouache fill: bold confident ink contours filled with opaque gouache color, like a classic hand-painted card illustration.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; outline the subject in bold ink and fill it with flat to lightly modeled gouache.',
+      color_and_tone:
+        'Bright opaque gouache fills held by black ink lines, with gentle shading inside.',
+      lighting_and_shadow: 'Simple shading painted inside the lines, highlights in opaque white.',
+      texture_and_material:
+        'Varying brush-ink line weight, opaque paint fills and small white highlight dabs.',
+      camera_and_composition: 'Preserve the requested framing with a strong readable silhouette.',
+      atmosphere_and_mood: 'Keep the requested mood with bold, clear, classic clarity.',
+      rendering_and_quality: 'Crisp confident inking and clean fills, never sketchy or muddy.',
+      creative_brief:
+        "Ink-line gouache fill: bold confident ink contours filled with opaque gouache color, like a classic hand-painted card illustration. Carry it through bold ink contours, opaque gouache fills, white highlight dabs, clear silhouette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features:
+        'bold ink contours; opaque gouache fills; white highlight dabs; clear silhouette',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-226',
+    name: 'Layered Colored Pencil Build',
+    displayName: 'Layered Colored Pencil Build',
+    styleAnchors: [
+      'Layered Colored Pencil Build',
+      'many-layer colored pencil',
+      'many pencil layers',
+    ],
+    category: '1. Workshop Painting',
+    domain: 'many-layer colored pencil',
+    negativePrompt:
+      'smooth airbrush, flat digital fill, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Layered colored pencil build: dozens of light colored pencil layers built up until colors glow, with visible stroke direction and paper tooth.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; build the forms slowly from many light directional pencil layers following their surfaces.',
+      color_and_tone:
+        'Rich layered hues mixed optically from many pencil colors, glowing but not glossy.',
+      lighting_and_shadow:
+        'Soft modeled light from layered density, highlights left as lightly covered paper.',
+      texture_and_material:
+        'Directional pencil strokes, paper tooth sparkle and waxy buildup in darks.',
+      camera_and_composition: 'Preserve the requested framing with detailed focal areas.',
+      atmosphere_and_mood: 'Keep the requested mood with warm, patient handmade detail.',
+      rendering_and_quality:
+        'Careful layered strokes with visible direction, never smooth airbrush.',
+      creative_brief:
+        "Layered colored pencil build: dozens of light colored pencil layers built up until colors glow, with visible stroke direction and paper tooth. Carry it through many pencil layers, directional strokes, paper tooth sparkle, optical color mix. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features:
+        'many pencil layers; directional strokes; paper tooth sparkle; optical color mix',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-227',
+    name: 'Charcoal Mass Sculpting',
+    displayName: 'Charcoal Mass Sculpting',
+    styleAnchors: [
+      'Charcoal Mass Sculpting',
+      'charcoal masses and erasing',
+      'broad charcoal masses',
+    ],
+    category: '1. Workshop Painting',
+    domain: 'charcoal masses and erasing',
+    negativePrompt:
+      'thin outline drawing, color painting, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Charcoal mass sculpting: forms carved out of broad smudged charcoal masses by erasing lights and pressing in darks, dramatic and velvety.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; sculpt the forms from broad charcoal masses and eraser lifts rather than outlines.',
+      color_and_tone: 'Deep velvety blacks, smoky greys and bright erased whites on pale paper.',
+      lighting_and_shadow:
+        'Dramatic chiaroscuro with erased highlights cutting out of dark masses.',
+      texture_and_material:
+        'Smudged charcoal dust, eraser strokes, finger blending and crisp dark accents.',
+      camera_and_composition: 'Preserve the requested framing with strong light-dark contrast.',
+      atmosphere_and_mood: 'Keep the requested mood, intensified by dramatic dark masses.',
+      rendering_and_quality:
+        'Bold sculptural value masses and crisp erased lights, never timid lines.',
+      creative_brief:
+        "Charcoal mass sculpting: forms carved out of broad smudged charcoal masses by erasing lights and pressing in darks, dramatic and velvety. Carry it through broad charcoal masses, erased highlights, smudged dust, dramatic contrast. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'broad charcoal masses; erased highlights; smudged dust; dramatic contrast',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-228',
+    name: 'Verdaccio Flesh Underlayer',
+    displayName: 'Verdaccio Flesh Underlayer',
+    styleAnchors: [
+      'Verdaccio Flesh Underlayer',
+      'green underpainting for skin',
+      'green-grey underlayer',
+    ],
+    category: '1. Workshop Painting',
+    domain: 'green underpainting for skin',
+    negativePrompt:
+      'plastic skin, flat cel shading, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Verdaccio flesh underlayer: figures first modeled in a muted green-grey underpainting, then warmed with thin pink and ochre flesh glazes so skin looks alive.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; model figures and forms in green-grey first, then glaze warm color over the lights.',
+      color_and_tone: 'Muted olive-green shadows under warm rosy and ochre skin glazes.',
+      lighting_and_shadow: 'Cool green shadows and warm glowing lights from the layered method.',
+      texture_and_material: 'Smooth tempera or oil film with green showing through in half tones.',
+      camera_and_composition: 'Preserve the requested framing with figures as the focal point.',
+      atmosphere_and_mood: 'Keep the requested mood with a warm, living, classical feel.',
+      rendering_and_quality: 'Delicate layered modeling, never flat or plastic skin.',
+      creative_brief:
+        "Verdaccio flesh underlayer: figures first modeled in a muted green-grey underpainting, then warmed with thin pink and ochre flesh glazes so skin looks alive. Carry it through green-grey underlayer, warm flesh glazes, cool shadows, classical modeling. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'green-grey underlayer; warm flesh glazes; cool shadows; classical modeling',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-229',
+    name: 'Broken-Color Oil Strokes',
+    displayName: 'Broken-Color Oil Strokes',
+    styleAnchors: [
+      'Broken-Color Oil Strokes',
+      'broken color stroke painting',
+      'unblended color dabs',
+    ],
+    category: '1. Workshop Painting',
+    domain: 'broken color stroke painting',
+    negativePrompt:
+      'smooth blending, flat fills, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Broken-color oil strokes: side-by-side dabs of unblended color that mix in the eye, vibrating with light and movement.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; build the forms from separate unblended color dabs that still describe their shape.',
+      color_and_tone: 'Pure bright dabs placed side by side, complementary flecks in shadows.',
+      lighting_and_shadow:
+        'Shimmering light from juxtaposed warm and cool dabs rather than blending.',
+      texture_and_material:
+        'Short thick strokes, visible dabs, unblended edges and lively surface.',
+      camera_and_composition: 'Preserve the requested framing with light-filled open space.',
+      atmosphere_and_mood: 'Keep the requested mood with vibrating light and air.',
+      rendering_and_quality: 'Lively broken strokes with clear forms, never muddy blending.',
+      creative_brief:
+        "Broken-color oil strokes: side-by-side dabs of unblended color that mix in the eye, vibrating with light and movement. Carry it through unblended color dabs, optical mixing, shimmering light, lively strokes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'unblended color dabs; optical mixing; shimmering light; lively strokes',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-230',
+    name: 'Scraped-Back Layers',
+    displayName: 'Scraped-Back Layers',
+    styleAnchors: [
+      'Scraped-Back Layers',
+      'scraped paint revealing layers',
+      'scraped-through underlayers',
+    ],
+    category: '1. Workshop Painting',
+    domain: 'scraped paint revealing layers',
+    negativePrompt:
+      'uniform grunge overlay, digital distress texture, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Scraped-back layers: multiple dried paint layers scraped and sanded back with blades so bright under-colors emerge through worn upper surfaces.',
+      subject_treatment:
+        "Preserve the requested identity, proportions, pose and action; reveal the subject's lights and textures by scraping through top layers to earlier colors.",
+      color_and_tone:
+        'Dark top layers scraped to reveal bright red, gold or turquoise underlayers.',
+      lighting_and_shadow:
+        'Lights emerge as scraped-through areas; darks remain untouched surface.',
+      texture_and_material:
+        'Blade scrape marks, sanded edges, layered paint strata and worn surfaces.',
+      camera_and_composition:
+        'Preserve the requested framing with scraped highlights guiding the eye.',
+      atmosphere_and_mood: 'Keep the requested mood with an aged, excavated feel.',
+      rendering_and_quality: 'Controlled scrape marks shaping form, never random distress overlay.',
+      creative_brief:
+        "Scraped-back layers: multiple dried paint layers scraped and sanded back with blades so bright under-colors emerge through worn upper surfaces. Carry it through scraped-through underlayers, blade marks, layered strata, revealed highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'scraped-through underlayers; blade marks; layered strata; revealed highlights',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-231',
+    name: 'Body-Color Highlights',
+    displayName: 'Body-Color Highlights',
+    styleAnchors: ['Body-Color Highlights', 'watercolor with opaque white', 'transparent washes'],
+    category: '1. Workshop Painting',
+    domain: 'watercolor with opaque white',
+    negativePrompt:
+      'chalky overpainting, digital glow, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Body-color highlights: transparent watercolor forms finished with opaque white and pale gouache highlights, crisp sparkles over soft washes.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; paint the forms in transparent washes and add opaque highlights only on their brightest edges.',
+      color_and_tone:
+        'Soft transparent washes on toned paper, crisp opaque white and pale cream accents.',
+      lighting_and_shadow:
+        'Soft wash shadows with bright opaque highlights on edges and reflections.',
+      texture_and_material:
+        'Transparent wash granulation, opaque dabs sitting on top and toned paper.',
+      camera_and_composition: 'Preserve the requested framing with sparkling focal highlights.',
+      atmosphere_and_mood: 'Keep the requested mood with fresh, sparkling light.',
+      rendering_and_quality: 'Clean washes and deliberate opaque accents, never chalky overuse.',
+      creative_brief:
+        "Body-color highlights: transparent watercolor forms finished with opaque white and pale gouache highlights, crisp sparkles over soft washes. Carry it through transparent washes, opaque white highlights, toned paper, sparkling edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'transparent washes; opaque white highlights; toned paper; sparkling edges',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-232',
+    name: 'Raw Umber Wipe-Out',
+    displayName: 'Raw Umber Wipe-Out',
+    styleAnchors: ['Raw Umber Wipe-Out', 'monochrome wipe-out underpainting', 'single umber layer'],
+    category: '1. Workshop Painting',
+    domain: 'monochrome wipe-out underpainting',
+    negativePrompt:
+      'full color, digital smoothness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Raw umber wipe-out: a single warm brown paint layer brushed on and wiped away with rags to pull out the lights, fast and moody.',
+      subject_treatment:
+        "Preserve the requested identity, proportions, pose and action; pull the subject's lights out of a warm brown layer with rags and brush ends.",
+      color_and_tone: 'Monochrome warm umber from deep brown shadows to pale wiped cream lights.',
+      lighting_and_shadow: 'Strong wiped-out lights emerging from deep warm brown darkness.',
+      texture_and_material: 'Rag wipe textures, brush-end scratches and soft thin paint films.',
+      camera_and_composition: 'Preserve the requested framing with a strong light-dark design.',
+      atmosphere_and_mood: 'Keep the requested mood with a warm, moody, sketch-like immediacy.',
+      rendering_and_quality: 'Quick confident wipe-outs with clear forms, never muddy.',
+      creative_brief:
+        "Raw umber wipe-out: a single warm brown paint layer brushed on and wiped away with rags to pull out the lights, fast and moody. Carry it through single umber layer, rag wipe-out lights, brush-end scratches, warm monochrome. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'single umber layer; rag wipe-out lights; brush-end scratches; warm monochrome',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

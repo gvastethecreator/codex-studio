@@ -235,4 +235,377 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP22-293',
+    name: 'Radial Speed-Line Burst',
+    displayName: 'Radial Speed-Line Burst',
+    styleAnchors: [
+      'Radial Speed-Line Burst',
+      'focus and speed line manga impact',
+      'radiating speed lines',
+    ],
+    category: '7. Manga Ink & Impact',
+    domain: 'focus and speed line manga impact',
+    negativePrompt:
+      'soft painterly blending, speech bubbles, sound-effect lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Radial speed-line burst: manga ink drawing where dense radiating speed lines explode from the focal point, freezing a moment of maximum impact.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original character designs; center the subject in a burst of radiating lines that pull every eye to the action.',
+      color_and_tone:
+        'Black ink on white paper with dense line fields and bright white focal space.',
+      lighting_and_shadow: 'Contrast created by dense line bursts rather than modeled light.',
+      texture_and_material:
+        'Ruler-straight radiating lines, tapered strokes and crisp ink figures.',
+      camera_and_composition:
+        'Preserve the requested framing with lines converging on the focal point.',
+      atmosphere_and_mood: 'Keep the requested mood at the peak of dramatic impact.',
+      rendering_and_quality: 'Precise dense line work and clear figure drawing at the center.',
+      creative_brief:
+        "Radial speed-line burst: manga ink drawing where dense radiating speed lines explode from the focal point, freezing a moment of maximum impact. Carry it through radiating speed lines, focal burst, black and white, peak impact. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'radiating speed lines; focal burst; black and white; peak impact',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-294',
+    name: 'Spotted-Black Manga Ink',
+    displayName: 'Spotted-Black Manga Ink',
+    styleAnchors: ['Spotted-Black Manga Ink', 'bold spotted black manga', 'solid black spots'],
+    category: '7. Manga Ink & Impact',
+    domain: 'bold spotted black manga',
+    negativePrompt:
+      'grey gradients, speech bubbles, sound-effect lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Spotted-black manga ink: dramatic manga drawing that relies on bold solid black shapes placed deliberately, with minimal tone and strong white space.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original character designs; design the image around a few bold solid black shapes and crisp white areas.',
+      color_and_tone: 'Pure black and white with no grey, strong graphic balance.',
+      lighting_and_shadow: 'Shadows as flat solid black spots, light as open white.',
+      texture_and_material: 'Solid ink fills, clean crisp contours and sharp black-white edges.',
+      camera_and_composition:
+        'Preserve the requested framing with black masses balancing the page.',
+      atmosphere_and_mood: 'Keep the requested mood with stark noir drama.',
+      rendering_and_quality:
+        'Clean decisive inking with deliberate black placement, kept consistent across the whole image.',
+      creative_brief:
+        "Spotted-black manga ink: dramatic manga drawing that relies on bold solid black shapes placed deliberately, with minimal tone and strong white space. Carry it through solid black spots, stark white, no grey tones, graphic balance. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'solid black spots; stark white; no grey tones; graphic balance',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-295',
+    name: 'Dread Hatch Manga',
+    displayName: 'Dread Hatch Manga',
+    styleAnchors: ['Dread Hatch Manga', 'horror manga crosshatching', 'obsessive crosshatching'],
+    category: '7. Manga Ink & Impact',
+    domain: 'horror manga crosshatching',
+    negativePrompt:
+      'gore, cute cheerful style, speech bubbles, sound-effect lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Dread hatch manga: horror manga drawing with obsessive fine crosshatching, spiraling lines and staring eyes that make ordinary scenes deeply unsettling.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original character designs; render the subject with dense unsettling crosshatching while keeping it clearly readable.',
+      color_and_tone: 'Black ink on white with dense grey created by fine hatching layers.',
+      lighting_and_shadow: 'Heavy hatched shadows crawling across faces and walls.',
+      texture_and_material: 'Fine obsessive crosshatching, spiral lines and trembling contours.',
+      camera_and_composition:
+        'Preserve the requested framing with uncomfortable close-ups and stares.',
+      atmosphere_and_mood: 'Keep the requested mood tilted toward creeping dread.',
+      rendering_and_quality: 'Meticulous fine hatching, never gore or cheap shock.',
+      creative_brief:
+        "Dread hatch manga: horror manga drawing with obsessive fine crosshatching, spiraling lines and staring eyes that make ordinary scenes deeply unsettling. Carry it through obsessive crosshatching, spiral lines, staring eyes, creeping dread. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'obsessive crosshatching; spiral lines; staring eyes; creeping dread',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-296',
+    name: 'Gag Deformation Ink',
+    displayName: 'Gag Deformation Ink',
+    styleAnchors: [
+      'Gag Deformation Ink',
+      'comedy manga super-deformed reactions',
+      'super-deformed reactions',
+    ],
+    category: '7. Manga Ink & Impact',
+    domain: 'comedy manga super-deformed reactions',
+    negativePrompt:
+      'realistic gore, speech bubbles, sound-effect lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Gag deformation ink: comedy manga where characters suddenly deform into simple squashed shapes, huge sweat drops and shocked white eyes.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original character designs; exaggerate the characters into deformed comic reaction shapes while keeping them recognizable.',
+      color_and_tone: 'Black and white with simple flat tone accents.',
+      lighting_and_shadow:
+        'Minimal shading, comedic flat lighting, kept consistent across the whole image.',
+      texture_and_material: 'Wobbly simple lines, sweat drops, vein marks and blank white eyes.',
+      camera_and_composition: 'Preserve the requested framing with the reaction face dominant.',
+      atmosphere_and_mood: 'Keep the requested mood with slapstick comedy energy.',
+      rendering_and_quality:
+        'Clean readable gag drawing with exaggerated timing, kept consistent across the whole image.',
+      creative_brief:
+        "Gag deformation ink: comedy manga where characters suddenly deform into simple squashed shapes, huge sweat drops and shocked white eyes. Carry it through super-deformed reactions, huge sweat drops, blank eyes, slapstick. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'super-deformed reactions; huge sweat drops; blank eyes; slapstick',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-297',
+    name: 'Petal-Frame Shojo Ink',
+    displayName: 'Petal-Frame Shojo Ink',
+    styleAnchors: ['Petal-Frame Shojo Ink', 'romantic manga with flower frames', 'flower frames'],
+    category: '7. Manga Ink & Impact',
+    domain: 'romantic manga with flower frames',
+    negativePrompt:
+      'harsh heavy inking, speech bubbles, sound-effect lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Petal-frame shojo ink: romantic manga drawing framed by flowing flowers, sparkles and ribbons, with delicate lines and large shining eyes.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original character designs; frame the characters with flowers, bubbles and sparkles in delicate romantic line.',
+      color_and_tone: 'Black ink with soft grey tones and white sparkle highlights.',
+      lighting_and_shadow: 'Soft light with sparkling highlights and gentle tone shadows.',
+      texture_and_material: 'Fine flowing lines, flower clusters, bubbles and glittering eyes.',
+      camera_and_composition:
+        'Preserve the requested framing with flowers cascading around the figures.',
+      atmosphere_and_mood: 'Keep the requested mood with tender romantic sweetness.',
+      rendering_and_quality: 'Delicate precise line work with airy decorative framing.',
+      creative_brief:
+        "Petal-frame shojo ink: romantic manga drawing framed by flowing flowers, sparkles and ribbons, with delicate lines and large shining eyes. Carry it through flower frames, sparkles and bubbles, shining eyes, delicate lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'flower frames; sparkles and bubbles; shining eyes; delicate lines',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-298',
+    name: 'Sweat-Spray Impact Ink',
+    displayName: 'Sweat-Spray Impact Ink',
+    styleAnchors: ['Sweat-Spray Impact Ink', 'sports manga effort drawing', 'flying sweat'],
+    category: '7. Manga Ink & Impact',
+    domain: 'sports manga effort drawing',
+    negativePrompt:
+      'relaxed pose, speech bubbles, sound-effect lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Sweat-spray impact ink: sports manga drawing packed with flying sweat, gritted teeth, straining muscles and spray at the moment of effort.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original character designs; show the subject at peak physical effort with sweat, strain and spray.',
+      color_and_tone: 'Black and white with grey tones and white spray highlights.',
+      lighting_and_shadow:
+        'Hard stadium lighting and strong muscle shadows, kept consistent across the whole image.',
+      texture_and_material: 'Flying sweat drops, straining muscle lines, fabric stretch and dust.',
+      camera_and_composition: 'Preserve the requested framing with dynamic close-up action.',
+      atmosphere_and_mood: 'Keep the requested mood with raw competitive intensity.',
+      rendering_and_quality: 'Crisp energetic line work with readable physical strain.',
+      creative_brief:
+        "Sweat-spray impact ink: sports manga drawing packed with flying sweat, gritted teeth, straining muscles and spray at the moment of effort. Carry it through flying sweat, gritted teeth, straining muscles, spray at impact. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'flying sweat; gritted teeth; straining muscles; spray at impact',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-299',
+    name: 'Gritty Seinen Ink Detail',
+    displayName: 'Gritty Seinen Ink Detail',
+    styleAnchors: [
+      'Gritty Seinen Ink Detail',
+      'dense realistic mature manga ink',
+      'dense realistic detail',
+    ],
+    category: '7. Manga Ink & Impact',
+    domain: 'dense realistic mature manga ink',
+    negativePrompt:
+      'cute simplified style, gore, speech bubbles, sound-effect lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Gritty seinen ink detail: mature realistic manga drawing with dense cross-contour detail, worn textures and heavy shadowed faces.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original character designs; render the subject with dense realistic line detail and worn textures.',
+      color_and_tone: 'Black ink on white with heavy dark areas and fine detailed greys.',
+      lighting_and_shadow: 'Hard realistic lighting with deep shadows under brows and in folds.',
+      texture_and_material:
+        'Worn leather, rust, stubble, cracked walls and dense cross-contour lines.',
+      camera_and_composition: 'Preserve the requested framing with cinematic realistic staging.',
+      atmosphere_and_mood: 'Keep the requested mood with grim mature weight.',
+      rendering_and_quality:
+        'Meticulous realistic inking with controlled density, kept consistent across the whole image.',
+      creative_brief:
+        "Gritty seinen ink detail: mature realistic manga drawing with dense cross-contour detail, worn textures and heavy shadowed faces. Carry it through dense realistic detail, worn textures, heavy shadows, mature tone. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'dense realistic detail; worn textures; heavy shadows; mature tone',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-300',
+    name: 'Panoramic Spread Ink',
+    displayName: 'Panoramic Spread Ink',
+    styleAnchors: ['Panoramic Spread Ink', 'double-page panoramic manga scene', 'vast panorama'],
+    category: '7. Manga Ink & Impact',
+    domain: 'double-page panoramic manga scene',
+    negativePrompt:
+      'cramped close-up, speech bubbles, sound-effect lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Panoramic spread ink: sweeping wide manga scenes like a double-page reveal, huge detailed landscapes or armies with tiny characters in awe.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original character designs; show the subject within a vast detailed panoramic ink scene.',
+      color_and_tone: 'Black ink with detailed grey tones and bright sky whites.',
+      lighting_and_shadow: 'Dramatic sky light with long shadows across the landscape.',
+      texture_and_material: 'Dense architectural and landscape line detail with tone gradients.',
+      camera_and_composition: 'Very wide horizontal view with small figures in the foreground.',
+      atmosphere_and_mood: 'Keep the requested mood with the awe of a big reveal.',
+      rendering_and_quality: 'Highly detailed consistent line work across the whole panorama.',
+      creative_brief:
+        "Panoramic spread ink: sweeping wide manga scenes like a double-page reveal, huge detailed landscapes or armies with tiny characters in awe. Carry it through vast panorama, tiny figures, dense detail, big reveal. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'vast panorama; tiny figures; dense detail; big reveal',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-301',
+    name: 'Sumi Brush Manga',
+    displayName: 'Sumi Brush Manga',
+    styleAnchors: ['Sumi Brush Manga', 'brush-drawn manga with sumi', 'sumi brush strokes'],
+    category: '7. Manga Ink & Impact',
+    domain: 'brush-drawn manga with sumi',
+    negativePrompt:
+      'pen-only thin lines, speech bubbles, sound-effect lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Sumi brush manga: manga drawn entirely with a sumi brush, thick-to-thin strokes, dry-brush texture and ink washes for tone.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original character designs; draw the subject with brush strokes and ink washes instead of pen lines.',
+      color_and_tone: 'Black sumi ink with watery grey washes on white paper.',
+      lighting_and_shadow: 'Tone from washes, highlights from white paper and dry brush.',
+      texture_and_material: 'Tapered brush strokes, dry-brush scratches and soft wash bleeds.',
+      camera_and_composition: 'Preserve the requested framing with bold brush rhythm.',
+      atmosphere_and_mood: 'Keep the requested mood with raw traditional energy.',
+      rendering_and_quality:
+        'Confident expressive brushwork with clear forms, kept consistent across the whole image.',
+      creative_brief:
+        "Sumi brush manga: manga drawn entirely with a sumi brush, thick-to-thin strokes, dry-brush texture and ink washes for tone. Carry it through sumi brush strokes, dry-brush, grey washes, tapered lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'sumi brush strokes; dry-brush; grey washes; tapered lines',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-302',
+    name: 'Red-Black Duotone Manga',
+    displayName: 'Red-Black Duotone Manga',
+    styleAnchors: ['Red-Black Duotone Manga', 'black and red print manga', 'black and red only'],
+    category: '7. Manga Ink & Impact',
+    domain: 'black and red print manga',
+    negativePrompt:
+      'full color, gore, speech bubbles, sound-effect lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Red-black duotone manga: manga printed in only black and one red ink, with the red used for accents, warning signals, flames and focus.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original character designs; draw the subject in black ink with red reserved for its most important accents.',
+      color_and_tone: 'Black ink and a single strong red, with white paper and red tints.',
+      lighting_and_shadow: 'Black shadows and red highlights or glows on focal elements.',
+      texture_and_material: 'Clean ink lines, red halftone tints and slightly misregistered red.',
+      camera_and_composition: 'Preserve the requested framing with red leading the eye.',
+      atmosphere_and_mood: 'Keep the requested mood with bold urgent intensity.',
+      rendering_and_quality:
+        'Crisp two-color printing with disciplined red use, kept consistent across the whole image.',
+      creative_brief:
+        "Red-black duotone manga: manga printed in only black and one red ink, with the red used for accents, warning signals, flames and focus. Carry it through black and red only, red accents, red tints, slight misregistration. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'black and red only; red accents; red tints; slight misregistration',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-303',
+    name: 'Scratched Aura Tones',
+    displayName: 'Scratched Aura Tones',
+    styleAnchors: [
+      'Scratched Aura Tones',
+      'scratched screentone energy aura',
+      'scratched white auras',
+    ],
+    category: '7. Manga Ink & Impact',
+    domain: 'scratched screentone energy aura',
+    negativePrompt:
+      'smooth digital glow, speech bubbles, sound-effect lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Scratched aura tones: manga where screentone is scratched away with a blade to create glowing white auras, sparks and energy around characters.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original character designs; surround the subject with auras and sparks scratched out of dark screentone.',
+      color_and_tone: 'Dark screentone backgrounds with scratched white energy highlights.',
+      lighting_and_shadow:
+        'Glowing scratched highlights cutting through dark tone, kept consistent across the whole image.',
+      texture_and_material: 'Scratched tone lines, dotted tone remnants and crisp ink figures.',
+      camera_and_composition:
+        'Preserve the requested framing with the aura radiating from the figure.',
+      atmosphere_and_mood:
+        'Keep the requested mood with crackling power, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Controlled scratched effects with clean figure drawing, kept consistent across the whole image.',
+      creative_brief:
+        "Scratched aura tones: manga where screentone is scratched away with a blade to create glowing white auras, sparks and energy around characters. Carry it through scratched white auras, dark screentone, sparks, crackling power. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'scratched white auras; dark screentone; sparks; crackling power',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-304',
+    name: 'Grey-Wash Manga Page',
+    displayName: 'Grey-Wash Manga Page',
+    styleAnchors: ['Grey-Wash Manga Page', 'grey ink-wash manga illustration', 'grey ink washes'],
+    category: '7. Manga Ink & Impact',
+    domain: 'grey ink-wash manga illustration',
+    negativePrompt:
+      'dot screentone, speech bubbles, sound-effect lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Grey-wash manga page: manga illustration toned with soft grey ink washes instead of screentone, painterly and atmospheric while keeping clean line.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original character designs; draw the subject in clean line and tone it with soft grey washes.',
+      color_and_tone: 'Black line with soft grey washes from pale to charcoal.',
+      lighting_and_shadow:
+        'Soft atmospheric shading painted in grey washes, kept consistent across the whole image.',
+      texture_and_material: 'Clean pen line, soft wash blooms and paper grain.',
+      camera_and_composition:
+        'Preserve the requested framing with atmospheric depth, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with quiet cinematic atmosphere.',
+      rendering_and_quality:
+        'Clean line with smooth controlled washes, kept consistent across the whole image.',
+      creative_brief:
+        "Grey-wash manga page: manga illustration toned with soft grey ink washes instead of screentone, painterly and atmospheric while keeping clean line. Carry it through grey ink washes, clean line, atmospheric depth, painterly tone. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'grey ink washes; clean line; atmospheric depth; painterly tone',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

@@ -3,7 +3,7 @@
     {
       "id": "pack_22",
       "name": "Trading Card Illustration Styles",
-      "presetCount": 120
+      "presetCount": 216
     }
   ],
   "presets": [
@@ -104,6 +104,270 @@
       "searchableText": "sp22-108 tonal graphite with color accents 1. workshop painting workshop painting pack_22 trading card illustration styles workshop-painting trading-card-illustration-styles workshop-painting"
     },
     {
+      "id": "SP22-221",
+      "name": "Grisaille Underlayer Build",
+      "styleAnchors": [
+        "Grisaille Underlayer Build",
+        "monochrome underpainting glazed over",
+        "grey underpainting"
+      ],
+      "ref": "pack_22/SP22-221.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "workshop-painting",
+      "categoryName": "1. Workshop Painting",
+      "domain": "monochrome underpainting glazed over",
+      "tags": [
+        "trading-card-illustration-styles",
+        "workshop-painting",
+        "monochrome-underpainting-glazed-over"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-221 grisaille underlayer build monochrome underpainting glazed over grey underpainting 1. workshop painting workshop painting monochrome underpainting glazed over pack_22 trading card illustration styles workshop-painting trading-card-illustration-styles workshop-painting monochrome-underpainting-glazed-over"
+    },
+    {
+      "id": "SP22-222",
+      "name": "Loaded-Brush Impasto Oil",
+      "styleAnchors": [
+        "Loaded-Brush Impasto Oil",
+        "thick brush-loaded oil paint",
+        "thick raised strokes"
+      ],
+      "ref": "pack_22/SP22-222.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "workshop-painting",
+      "categoryName": "1. Workshop Painting",
+      "domain": "thick brush-loaded oil paint",
+      "tags": [
+        "trading-card-illustration-styles",
+        "workshop-painting",
+        "thick-brush-loaded-oil-paint"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-222 loaded-brush impasto oil thick brush-loaded oil paint thick raised strokes 1. workshop painting workshop painting thick brush-loaded oil paint pack_22 trading card illustration styles workshop-painting trading-card-illustration-styles workshop-painting thick-brush-loaded-oil-paint"
+    },
+    {
+      "id": "SP22-223",
+      "name": "Scumbled Veil Layers",
+      "styleAnchors": [
+        "Scumbled Veil Layers",
+        "broken opaque scumbles over dark",
+        "pale dragged veils"
+      ],
+      "ref": "pack_22/SP22-223.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "workshop-painting",
+      "categoryName": "1. Workshop Painting",
+      "domain": "broken opaque scumbles over dark",
+      "tags": [
+        "trading-card-illustration-styles",
+        "workshop-painting",
+        "broken-opaque-scumbles-over-dark"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-223 scumbled veil layers broken opaque scumbles over dark pale dragged veils 1. workshop painting workshop painting broken opaque scumbles over dark pack_22 trading card illustration styles workshop-painting trading-card-illustration-styles workshop-painting broken-opaque-scumbles-over-dark"
+    },
+    {
+      "id": "SP22-224",
+      "name": "Matte Gouache Blocking",
+      "styleAnchors": [
+        "Matte Gouache Blocking",
+        "flat opaque gouache shapes",
+        "flat opaque blocks"
+      ],
+      "ref": "pack_22/SP22-224.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "workshop-painting",
+      "categoryName": "1. Workshop Painting",
+      "domain": "flat opaque gouache shapes",
+      "tags": [
+        "trading-card-illustration-styles",
+        "workshop-painting",
+        "flat-opaque-gouache-shapes"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-224 matte gouache blocking flat opaque gouache shapes flat opaque blocks 1. workshop painting workshop painting flat opaque gouache shapes pack_22 trading card illustration styles workshop-painting trading-card-illustration-styles workshop-painting flat-opaque-gouache-shapes"
+    },
+    {
+      "id": "SP22-225",
+      "name": "Ink-Line Gouache Fill",
+      "styleAnchors": [
+        "Ink-Line Gouache Fill",
+        "bold ink outline with gouache",
+        "bold ink contours"
+      ],
+      "ref": "pack_22/SP22-225.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "workshop-painting",
+      "categoryName": "1. Workshop Painting",
+      "domain": "bold ink outline with gouache",
+      "tags": [
+        "trading-card-illustration-styles",
+        "workshop-painting",
+        "bold-ink-outline-with-gouache"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-225 ink-line gouache fill bold ink outline with gouache bold ink contours 1. workshop painting workshop painting bold ink outline with gouache pack_22 trading card illustration styles workshop-painting trading-card-illustration-styles workshop-painting bold-ink-outline-with-gouache"
+    },
+    {
+      "id": "SP22-226",
+      "name": "Layered Colored Pencil Build",
+      "styleAnchors": [
+        "Layered Colored Pencil Build",
+        "many-layer colored pencil",
+        "many pencil layers"
+      ],
+      "ref": "pack_22/SP22-226.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "workshop-painting",
+      "categoryName": "1. Workshop Painting",
+      "domain": "many-layer colored pencil",
+      "tags": [
+        "trading-card-illustration-styles",
+        "workshop-painting",
+        "many-layer-colored-pencil"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-226 layered colored pencil build many-layer colored pencil many pencil layers 1. workshop painting workshop painting many-layer colored pencil pack_22 trading card illustration styles workshop-painting trading-card-illustration-styles workshop-painting many-layer-colored-pencil"
+    },
+    {
+      "id": "SP22-227",
+      "name": "Charcoal Mass Sculpting",
+      "styleAnchors": [
+        "Charcoal Mass Sculpting",
+        "charcoal masses and erasing",
+        "broad charcoal masses"
+      ],
+      "ref": "pack_22/SP22-227.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "workshop-painting",
+      "categoryName": "1. Workshop Painting",
+      "domain": "charcoal masses and erasing",
+      "tags": [
+        "trading-card-illustration-styles",
+        "workshop-painting",
+        "charcoal-masses-and-erasing"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-227 charcoal mass sculpting charcoal masses and erasing broad charcoal masses 1. workshop painting workshop painting charcoal masses and erasing pack_22 trading card illustration styles workshop-painting trading-card-illustration-styles workshop-painting charcoal-masses-and-erasing"
+    },
+    {
+      "id": "SP22-228",
+      "name": "Verdaccio Flesh Underlayer",
+      "styleAnchors": [
+        "Verdaccio Flesh Underlayer",
+        "green underpainting for skin",
+        "green-grey underlayer"
+      ],
+      "ref": "pack_22/SP22-228.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "workshop-painting",
+      "categoryName": "1. Workshop Painting",
+      "domain": "green underpainting for skin",
+      "tags": [
+        "trading-card-illustration-styles",
+        "workshop-painting",
+        "green-underpainting-for-skin"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-228 verdaccio flesh underlayer green underpainting for skin green-grey underlayer 1. workshop painting workshop painting green underpainting for skin pack_22 trading card illustration styles workshop-painting trading-card-illustration-styles workshop-painting green-underpainting-for-skin"
+    },
+    {
+      "id": "SP22-229",
+      "name": "Broken-Color Oil Strokes",
+      "styleAnchors": [
+        "Broken-Color Oil Strokes",
+        "broken color stroke painting",
+        "unblended color dabs"
+      ],
+      "ref": "pack_22/SP22-229.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "workshop-painting",
+      "categoryName": "1. Workshop Painting",
+      "domain": "broken color stroke painting",
+      "tags": [
+        "trading-card-illustration-styles",
+        "workshop-painting",
+        "broken-color-stroke-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-229 broken-color oil strokes broken color stroke painting unblended color dabs 1. workshop painting workshop painting broken color stroke painting pack_22 trading card illustration styles workshop-painting trading-card-illustration-styles workshop-painting broken-color-stroke-painting"
+    },
+    {
+      "id": "SP22-230",
+      "name": "Scraped-Back Layers",
+      "styleAnchors": [
+        "Scraped-Back Layers",
+        "scraped paint revealing layers",
+        "scraped-through underlayers"
+      ],
+      "ref": "pack_22/SP22-230.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "workshop-painting",
+      "categoryName": "1. Workshop Painting",
+      "domain": "scraped paint revealing layers",
+      "tags": [
+        "trading-card-illustration-styles",
+        "workshop-painting",
+        "scraped-paint-revealing-layers"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-230 scraped-back layers scraped paint revealing layers scraped-through underlayers 1. workshop painting workshop painting scraped paint revealing layers pack_22 trading card illustration styles workshop-painting trading-card-illustration-styles workshop-painting scraped-paint-revealing-layers"
+    },
+    {
+      "id": "SP22-231",
+      "name": "Body-Color Highlights",
+      "styleAnchors": [
+        "Body-Color Highlights",
+        "watercolor with opaque white",
+        "transparent washes"
+      ],
+      "ref": "pack_22/SP22-231.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "workshop-painting",
+      "categoryName": "1. Workshop Painting",
+      "domain": "watercolor with opaque white",
+      "tags": [
+        "trading-card-illustration-styles",
+        "workshop-painting",
+        "watercolor-with-opaque-white"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-231 body-color highlights watercolor with opaque white transparent washes 1. workshop painting workshop painting watercolor with opaque white pack_22 trading card illustration styles workshop-painting trading-card-illustration-styles workshop-painting watercolor-with-opaque-white"
+    },
+    {
+      "id": "SP22-232",
+      "name": "Raw Umber Wipe-Out",
+      "styleAnchors": [
+        "Raw Umber Wipe-Out",
+        "monochrome wipe-out underpainting",
+        "single umber layer"
+      ],
+      "ref": "pack_22/SP22-232.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "workshop-painting",
+      "categoryName": "1. Workshop Painting",
+      "domain": "monochrome wipe-out underpainting",
+      "tags": [
+        "trading-card-illustration-styles",
+        "workshop-painting",
+        "monochrome-wipe-out-underpainting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-232 raw umber wipe-out monochrome wipe-out underpainting single umber layer 1. workshop painting workshop painting monochrome wipe-out underpainting pack_22 trading card illustration styles workshop-painting trading-card-illustration-styles workshop-painting monochrome-wipe-out-underpainting"
+    },
+    {
       "id": "SP22-109",
       "name": "Carved Impasto",
       "ref": "pack_22/SP22-109.yaml",
@@ -198,6 +462,258 @@
       "tags": ["trading-card-illustration-styles", "epic-digital-painting"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp22-116 matte adventure 2. epic digital painting epic digital painting pack_22 trading card illustration styles epic-digital-painting trading-card-illustration-styles epic-digital-painting"
+    },
+    {
+      "id": "SP22-233",
+      "name": "Backlit Halo Hero",
+      "styleAnchors": [
+        "Backlit Halo Hero",
+        "strong backlight silhouette painting",
+        "blazing backlight"
+      ],
+      "ref": "pack_22/SP22-233.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "epic-digital-painting",
+      "categoryName": "2. Epic Digital Painting",
+      "domain": "strong backlight silhouette painting",
+      "tags": [
+        "trading-card-illustration-styles",
+        "epic-digital-painting",
+        "strong-backlight-silhouette-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-233 backlit halo hero strong backlight silhouette painting blazing backlight 2. epic digital painting epic digital painting strong backlight silhouette painting pack_22 trading card illustration styles epic-digital-painting trading-card-illustration-styles epic-digital-painting strong-backlight-silhouette-painting"
+    },
+    {
+      "id": "SP22-234",
+      "name": "Aerial Perspective Layers",
+      "styleAnchors": [
+        "Aerial Perspective Layers",
+        "atmospheric depth value layering",
+        "stacked value planes"
+      ],
+      "ref": "pack_22/SP22-234.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "epic-digital-painting",
+      "categoryName": "2. Epic Digital Painting",
+      "domain": "atmospheric depth value layering",
+      "tags": [
+        "trading-card-illustration-styles",
+        "epic-digital-painting",
+        "atmospheric-depth-value-layering"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-234 aerial perspective layers atmospheric depth value layering stacked value planes 2. epic digital painting epic digital painting atmospheric depth value layering pack_22 trading card illustration styles epic-digital-painting trading-card-illustration-styles epic-digital-painting atmospheric-depth-value-layering"
+    },
+    {
+      "id": "SP22-235",
+      "name": "Textured Brush Concept",
+      "styleAnchors": [
+        "Textured Brush Concept",
+        "textured digital brush concept art",
+        "gritty textured brushes"
+      ],
+      "ref": "pack_22/SP22-235.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "epic-digital-painting",
+      "categoryName": "2. Epic Digital Painting",
+      "domain": "textured digital brush concept art",
+      "tags": [
+        "trading-card-illustration-styles",
+        "epic-digital-painting",
+        "textured-digital-brush-concept-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-235 textured brush concept textured digital brush concept art gritty textured brushes 2. epic digital painting epic digital painting textured digital brush concept art pack_22 trading card illustration styles epic-digital-painting trading-card-illustration-styles epic-digital-painting textured-digital-brush-concept-art"
+    },
+    {
+      "id": "SP22-236",
+      "name": "Spell-Glow Particle Paint",
+      "styleAnchors": [
+        "Spell-Glow Particle Paint",
+        "glowing magic particle painting",
+        "magic as light source"
+      ],
+      "ref": "pack_22/SP22-236.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "epic-digital-painting",
+      "categoryName": "2. Epic Digital Painting",
+      "domain": "glowing magic particle painting",
+      "tags": [
+        "trading-card-illustration-styles",
+        "epic-digital-painting",
+        "glowing-magic-particle-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-236 spell-glow particle paint glowing magic particle painting magic as light source 2. epic digital painting epic digital painting glowing magic particle painting pack_22 trading card illustration styles epic-digital-painting trading-card-illustration-styles epic-digital-painting glowing-magic-particle-painting"
+    },
+    {
+      "id": "SP22-237",
+      "name": "Wide Cinematic Vista",
+      "styleAnchors": [
+        "Wide Cinematic Vista",
+        "panoramic epic environment painting",
+        "vast landscape"
+      ],
+      "ref": "pack_22/SP22-237.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "epic-digital-painting",
+      "categoryName": "2. Epic Digital Painting",
+      "domain": "panoramic epic environment painting",
+      "tags": [
+        "trading-card-illustration-styles",
+        "epic-digital-painting",
+        "panoramic-epic-environment-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-237 wide cinematic vista panoramic epic environment painting vast landscape 2. epic digital painting epic digital painting panoramic epic environment painting pack_22 trading card illustration styles epic-digital-painting trading-card-illustration-styles epic-digital-painting panoramic-epic-environment-painting"
+    },
+    {
+      "id": "SP22-238",
+      "name": "Warm-Cold Dual Light",
+      "styleAnchors": [
+        "Warm-Cold Dual Light",
+        "two-temperature lighting painting",
+        "warm key light"
+      ],
+      "ref": "pack_22/SP22-238.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "epic-digital-painting",
+      "categoryName": "2. Epic Digital Painting",
+      "domain": "two-temperature lighting painting",
+      "tags": [
+        "trading-card-illustration-styles",
+        "epic-digital-painting",
+        "two-temperature-lighting-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-238 warm-cold dual light two-temperature lighting painting warm key light 2. epic digital painting epic digital painting two-temperature lighting painting pack_22 trading card illustration styles epic-digital-painting trading-card-illustration-styles epic-digital-painting two-temperature-lighting-painting"
+    },
+    {
+      "id": "SP22-239",
+      "name": "Polished Armor Gleam",
+      "styleAnchors": ["Polished Armor Gleam", "reflective metal painting", "mirror metal"],
+      "ref": "pack_22/SP22-239.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "epic-digital-painting",
+      "categoryName": "2. Epic Digital Painting",
+      "domain": "reflective metal painting",
+      "tags": [
+        "trading-card-illustration-styles",
+        "epic-digital-painting",
+        "reflective-metal-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-239 polished armor gleam reflective metal painting mirror metal 2. epic digital painting epic digital painting reflective metal painting pack_22 trading card illustration styles epic-digital-painting trading-card-illustration-styles epic-digital-painting reflective-metal-painting"
+    },
+    {
+      "id": "SP22-240",
+      "name": "Ethereal Glow Haze",
+      "styleAnchors": ["Ethereal Glow Haze", "soft luminous haze painting", "luminous haze"],
+      "ref": "pack_22/SP22-240.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "epic-digital-painting",
+      "categoryName": "2. Epic Digital Painting",
+      "domain": "soft luminous haze painting",
+      "tags": [
+        "trading-card-illustration-styles",
+        "epic-digital-painting",
+        "soft-luminous-haze-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-240 ethereal glow haze soft luminous haze painting luminous haze 2. epic digital painting epic digital painting soft luminous haze painting pack_22 trading card illustration styles epic-digital-painting trading-card-illustration-styles epic-digital-painting soft-luminous-haze-painting"
+    },
+    {
+      "id": "SP22-241",
+      "name": "Lightning-Lit Drama",
+      "styleAnchors": [
+        "Lightning-Lit Drama",
+        "storm lightning illumination painting",
+        "lightning flash lighting"
+      ],
+      "ref": "pack_22/SP22-241.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "epic-digital-painting",
+      "categoryName": "2. Epic Digital Painting",
+      "domain": "storm lightning illumination painting",
+      "tags": [
+        "trading-card-illustration-styles",
+        "epic-digital-painting",
+        "storm-lightning-illumination-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-241 lightning-lit drama storm lightning illumination painting lightning flash lighting 2. epic digital painting epic digital painting storm lightning illumination painting pack_22 trading card illustration styles epic-digital-painting trading-card-illustration-styles epic-digital-painting storm-lightning-illumination-painting"
+    },
+    {
+      "id": "SP22-242",
+      "name": "Limited Triad Palette",
+      "styleAnchors": [
+        "Limited Triad Palette",
+        "three-color limited palette painting",
+        "three-hue palette"
+      ],
+      "ref": "pack_22/SP22-242.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "epic-digital-painting",
+      "categoryName": "2. Epic Digital Painting",
+      "domain": "three-color limited palette painting",
+      "tags": [
+        "trading-card-illustration-styles",
+        "epic-digital-painting",
+        "three-color-limited-palette-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-242 limited triad palette three-color limited palette painting three-hue palette 2. epic digital painting epic digital painting three-color limited palette painting pack_22 trading card illustration styles epic-digital-painting trading-card-illustration-styles epic-digital-painting three-color-limited-palette-painting"
+    },
+    {
+      "id": "SP22-243",
+      "name": "Gold-Leaf Highlight Paint",
+      "styleAnchors": [
+        "Gold-Leaf Highlight Paint",
+        "painting with gold highlight accents",
+        "gold highlight edges"
+      ],
+      "ref": "pack_22/SP22-243.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "epic-digital-painting",
+      "categoryName": "2. Epic Digital Painting",
+      "domain": "painting with gold highlight accents",
+      "tags": [
+        "trading-card-illustration-styles",
+        "epic-digital-painting",
+        "painting-with-gold-highlight-accents"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-243 gold-leaf highlight paint painting with gold highlight accents gold highlight edges 2. epic digital painting epic digital painting painting with gold highlight accents pack_22 trading card illustration styles epic-digital-painting trading-card-illustration-styles epic-digital-painting painting-with-gold-highlight-accents"
+    },
+    {
+      "id": "SP22-244",
+      "name": "Dust-and-Ember Air",
+      "styleAnchors": ["Dust-and-Ember Air", "particulate atmosphere painting", "floating embers"],
+      "ref": "pack_22/SP22-244.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "epic-digital-painting",
+      "categoryName": "2. Epic Digital Painting",
+      "domain": "particulate atmosphere painting",
+      "tags": [
+        "trading-card-illustration-styles",
+        "epic-digital-painting",
+        "particulate-atmosphere-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-244 dust-and-ember air particulate atmosphere painting floating embers 2. epic digital painting epic digital painting particulate atmosphere painting pack_22 trading card illustration styles epic-digital-painting trading-card-illustration-styles epic-digital-painting particulate-atmosphere-painting"
     },
     {
       "id": "SP22-117",
@@ -296,6 +812,250 @@
       "searchableText": "sp22-124 occult cutprint 3. strange ink & paint strange ink & paint pack_22 trading card illustration styles strange-ink-and-paint trading-card-illustration-styles strange-ink-and-paint"
     },
     {
+      "id": "SP22-245",
+      "name": "Bleeding Ink Veins",
+      "styleAnchors": [
+        "Bleeding Ink Veins",
+        "ink spreading like veins",
+        "lines bleeding into tendrils"
+      ],
+      "ref": "pack_22/SP22-245.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "strange-ink-and-paint",
+      "categoryName": "3. Strange Ink & Paint",
+      "domain": "ink spreading like veins",
+      "tags": [
+        "trading-card-illustration-styles",
+        "strange-ink-and-paint",
+        "ink-spreading-like-veins"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-245 bleeding ink veins ink spreading like veins lines bleeding into tendrils 3. strange ink & paint strange ink & paint ink spreading like veins pack_22 trading card illustration styles strange-ink-and-paint trading-card-illustration-styles strange-ink-and-paint ink-spreading-like-veins"
+    },
+    {
+      "id": "SP22-246",
+      "name": "Bitumen Glaze Gloom",
+      "styleAnchors": ["Bitumen Glaze Gloom", "dark bitumen glaze painting", "brown-black glazes"],
+      "ref": "pack_22/SP22-246.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "strange-ink-and-paint",
+      "categoryName": "3. Strange Ink & Paint",
+      "domain": "dark bitumen glaze painting",
+      "tags": [
+        "trading-card-illustration-styles",
+        "strange-ink-and-paint",
+        "dark-bitumen-glaze-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-246 bitumen glaze gloom dark bitumen glaze painting brown-black glazes 3. strange ink & paint strange ink & paint dark bitumen glaze painting pack_22 trading card illustration styles strange-ink-and-paint trading-card-illustration-styles strange-ink-and-paint dark-bitumen-glaze-painting"
+    },
+    {
+      "id": "SP22-247",
+      "name": "Spidery Nib Scrawl",
+      "styleAnchors": [
+        "Spidery Nib Scrawl",
+        "nervous fine nib drawing",
+        "tangled hairline scribbles"
+      ],
+      "ref": "pack_22/SP22-247.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "strange-ink-and-paint",
+      "categoryName": "3. Strange Ink & Paint",
+      "domain": "nervous fine nib drawing",
+      "tags": [
+        "trading-card-illustration-styles",
+        "strange-ink-and-paint",
+        "nervous-fine-nib-drawing"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-247 spidery nib scrawl nervous fine nib drawing tangled hairline scribbles 3. strange ink & paint strange ink & paint nervous fine nib drawing pack_22 trading card illustration styles strange-ink-and-paint trading-card-illustration-styles strange-ink-and-paint nervous-fine-nib-drawing"
+    },
+    {
+      "id": "SP22-248",
+      "name": "Bruise-Tone Watercolor",
+      "styleAnchors": [
+        "Bruise-Tone Watercolor",
+        "sickly bruise palette washes",
+        "bruise purples and yellows"
+      ],
+      "ref": "pack_22/SP22-248.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "strange-ink-and-paint",
+      "categoryName": "3. Strange Ink & Paint",
+      "domain": "sickly bruise palette washes",
+      "tags": [
+        "trading-card-illustration-styles",
+        "strange-ink-and-paint",
+        "sickly-bruise-palette-washes"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-248 bruise-tone watercolor sickly bruise palette washes bruise purples and yellows 3. strange ink & paint strange ink & paint sickly bruise palette washes pack_22 trading card illustration styles strange-ink-and-paint trading-card-illustration-styles strange-ink-and-paint sickly-bruise-palette-washes"
+    },
+    {
+      "id": "SP22-249",
+      "name": "Blot-Grown Creatures",
+      "styleAnchors": [
+        "Blot-Grown Creatures",
+        "creatures developed from ink blots",
+        "ink blot bodies"
+      ],
+      "ref": "pack_22/SP22-249.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "strange-ink-and-paint",
+      "categoryName": "3. Strange Ink & Paint",
+      "domain": "creatures developed from ink blots",
+      "tags": [
+        "trading-card-illustration-styles",
+        "strange-ink-and-paint",
+        "creatures-developed-from-ink-blots"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-249 blot-grown creatures creatures developed from ink blots ink blot bodies 3. strange ink & paint strange ink & paint creatures developed from ink blots pack_22 trading card illustration styles strange-ink-and-paint trading-card-illustration-styles strange-ink-and-paint creatures-developed-from-ink-blots"
+    },
+    {
+      "id": "SP22-250",
+      "name": "Spatter Storm Ink",
+      "styleAnchors": ["Spatter Storm Ink", "flicked ink spatter storms", "dense ink spray"],
+      "ref": "pack_22/SP22-250.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "strange-ink-and-paint",
+      "categoryName": "3. Strange Ink & Paint",
+      "domain": "flicked ink spatter storms",
+      "tags": [
+        "trading-card-illustration-styles",
+        "strange-ink-and-paint",
+        "flicked-ink-spatter-storms"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-250 spatter storm ink flicked ink spatter storms dense ink spray 3. strange ink & paint strange ink & paint flicked ink spatter storms pack_22 trading card illustration styles strange-ink-and-paint trading-card-illustration-styles strange-ink-and-paint flicked-ink-spatter-storms"
+    },
+    {
+      "id": "SP22-251",
+      "name": "Red-Accent Black Lacquer",
+      "styleAnchors": [
+        "Red-Accent Black Lacquer",
+        "black and red lacquer painting",
+        "glossy black"
+      ],
+      "ref": "pack_22/SP22-251.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "strange-ink-and-paint",
+      "categoryName": "3. Strange Ink & Paint",
+      "domain": "black and red lacquer painting",
+      "tags": [
+        "trading-card-illustration-styles",
+        "strange-ink-and-paint",
+        "black-and-red-lacquer-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-251 red-accent black lacquer black and red lacquer painting glossy black 3. strange ink & paint strange ink & paint black and red lacquer painting pack_22 trading card illustration styles strange-ink-and-paint trading-card-illustration-styles strange-ink-and-paint black-and-red-lacquer-painting"
+    },
+    {
+      "id": "SP22-252",
+      "name": "Tarnished Metallic Ink",
+      "styleAnchors": [
+        "Tarnished Metallic Ink",
+        "metallic ink on dark paper",
+        "metallic inks on dark paper"
+      ],
+      "ref": "pack_22/SP22-252.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "strange-ink-and-paint",
+      "categoryName": "3. Strange Ink & Paint",
+      "domain": "metallic ink on dark paper",
+      "tags": [
+        "trading-card-illustration-styles",
+        "strange-ink-and-paint",
+        "metallic-ink-on-dark-paper"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-252 tarnished metallic ink metallic ink on dark paper metallic inks on dark paper 3. strange ink & paint strange ink & paint metallic ink on dark paper pack_22 trading card illustration styles strange-ink-and-paint trading-card-illustration-styles strange-ink-and-paint metallic-ink-on-dark-paper"
+    },
+    {
+      "id": "SP22-253",
+      "name": "Flaking Mural Paint",
+      "styleAnchors": ["Flaking Mural Paint", "flaking wall painting", "flaking paint"],
+      "ref": "pack_22/SP22-253.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "strange-ink-and-paint",
+      "categoryName": "3. Strange Ink & Paint",
+      "domain": "flaking wall painting",
+      "tags": [
+        "trading-card-illustration-styles",
+        "strange-ink-and-paint",
+        "flaking-wall-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-253 flaking mural paint flaking wall painting flaking paint 3. strange ink & paint strange ink & paint flaking wall painting pack_22 trading card illustration styles strange-ink-and-paint trading-card-illustration-styles strange-ink-and-paint flaking-wall-painting"
+    },
+    {
+      "id": "SP22-254",
+      "name": "Verdigris Wash",
+      "styleAnchors": ["Verdigris Wash", "copper-green oxidized washes", "verdigris greens"],
+      "ref": "pack_22/SP22-254.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "strange-ink-and-paint",
+      "categoryName": "3. Strange Ink & Paint",
+      "domain": "copper-green oxidized washes",
+      "tags": [
+        "trading-card-illustration-styles",
+        "strange-ink-and-paint",
+        "copper-green-oxidized-washes"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-254 verdigris wash copper-green oxidized washes verdigris greens 3. strange ink & paint strange ink & paint copper-green oxidized washes pack_22 trading card illustration styles strange-ink-and-paint trading-card-illustration-styles strange-ink-and-paint copper-green-oxidized-washes"
+    },
+    {
+      "id": "SP22-255",
+      "name": "Smeared Wax Pigment",
+      "styleAnchors": ["Smeared Wax Pigment", "warm smeared wax color", "smeared melted wax"],
+      "ref": "pack_22/SP22-255.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "strange-ink-and-paint",
+      "categoryName": "3. Strange Ink & Paint",
+      "domain": "warm smeared wax color",
+      "tags": [
+        "trading-card-illustration-styles",
+        "strange-ink-and-paint",
+        "warm-smeared-wax-color"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-255 smeared wax pigment warm smeared wax color smeared melted wax 3. strange ink & paint strange ink & paint warm smeared wax color pack_22 trading card illustration styles strange-ink-and-paint trading-card-illustration-styles strange-ink-and-paint warm-smeared-wax-color"
+    },
+    {
+      "id": "SP22-256",
+      "name": "Cracked Varnish Veil",
+      "styleAnchors": [
+        "Cracked Varnish Veil",
+        "old varnish craquelure painting",
+        "fine craquelure"
+      ],
+      "ref": "pack_22/SP22-256.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "strange-ink-and-paint",
+      "categoryName": "3. Strange Ink & Paint",
+      "domain": "old varnish craquelure painting",
+      "tags": [
+        "trading-card-illustration-styles",
+        "strange-ink-and-paint",
+        "old-varnish-craquelure-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-256 cracked varnish veil old varnish craquelure painting fine craquelure 3. strange ink & paint strange ink & paint old varnish craquelure painting pack_22 trading card illustration styles strange-ink-and-paint trading-card-illustration-styles strange-ink-and-paint old-varnish-craquelure-painting"
+    },
+    {
       "id": "SP22-125",
       "name": "Tapestry Gouache",
       "ref": "pack_22/SP22-125.yaml",
@@ -390,6 +1150,262 @@
       "tags": ["trading-card-illustration-styles", "storybook-and-animation"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp22-132 pulp story poster 4. storybook & animation storybook & animation pack_22 trading card illustration styles storybook-and-animation trading-card-illustration-styles storybook-and-animation"
+    },
+    {
+      "id": "SP22-257",
+      "name": "Loose Ink Picture-Book Wash",
+      "styleAnchors": [
+        "Loose Ink Picture-Book Wash",
+        "loose ink line and watercolor picture book",
+        "loose ink line"
+      ],
+      "ref": "pack_22/SP22-257.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "storybook-and-animation",
+      "categoryName": "4. Storybook & Animation",
+      "domain": "loose ink line and watercolor picture book",
+      "tags": [
+        "trading-card-illustration-styles",
+        "storybook-and-animation",
+        "loose-ink-line-and-watercolor-picture-book"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-257 loose ink picture-book wash loose ink line and watercolor picture book loose ink line 4. storybook & animation storybook & animation loose ink line and watercolor picture book pack_22 trading card illustration styles storybook-and-animation trading-card-illustration-styles storybook-and-animation loose-ink-line-and-watercolor-picture-book"
+    },
+    {
+      "id": "SP22-258",
+      "name": "Painted Background Plate",
+      "styleAnchors": [
+        "Painted Background Plate",
+        "lush painted animation background",
+        "lush painted background"
+      ],
+      "ref": "pack_22/SP22-258.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "storybook-and-animation",
+      "categoryName": "4. Storybook & Animation",
+      "domain": "lush painted animation background",
+      "tags": [
+        "trading-card-illustration-styles",
+        "storybook-and-animation",
+        "lush-painted-animation-background"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-258 painted background plate lush painted animation background lush painted background 4. storybook & animation storybook & animation lush painted animation background pack_22 trading card illustration styles storybook-and-animation trading-card-illustration-styles storybook-and-animation lush-painted-animation-background"
+    },
+    {
+      "id": "SP22-259",
+      "name": "Pencil-Test Keyframe",
+      "styleAnchors": [
+        "Pencil-Test Keyframe",
+        "rough animation pencil drawings",
+        "blue construction lines"
+      ],
+      "ref": "pack_22/SP22-259.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "storybook-and-animation",
+      "categoryName": "4. Storybook & Animation",
+      "domain": "rough animation pencil drawings",
+      "tags": [
+        "trading-card-illustration-styles",
+        "storybook-and-animation",
+        "rough-animation-pencil-drawings"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-259 pencil-test keyframe rough animation pencil drawings blue construction lines 4. storybook & animation storybook & animation rough animation pencil drawings pack_22 trading card illustration styles storybook-and-animation trading-card-illustration-styles storybook-and-animation rough-animation-pencil-drawings"
+    },
+    {
+      "id": "SP22-260",
+      "name": "Wax Crayon Storybook Texture",
+      "styleAnchors": [
+        "Wax Crayon Storybook Texture",
+        "waxy crayon picture book",
+        "waxy crayon strokes"
+      ],
+      "ref": "pack_22/SP22-260.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "storybook-and-animation",
+      "categoryName": "4. Storybook & Animation",
+      "domain": "waxy crayon picture book",
+      "tags": [
+        "trading-card-illustration-styles",
+        "storybook-and-animation",
+        "waxy-crayon-picture-book"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-260 wax crayon storybook texture waxy crayon picture book waxy crayon strokes 4. storybook & animation storybook & animation waxy crayon picture book pack_22 trading card illustration styles storybook-and-animation trading-card-illustration-styles storybook-and-animation waxy-crayon-picture-book"
+    },
+    {
+      "id": "SP22-261",
+      "name": "Soft Airbrush Fable",
+      "styleAnchors": [
+        "Soft Airbrush Fable",
+        "gentle airbrushed fairy tale",
+        "soft airbrushed gradients"
+      ],
+      "ref": "pack_22/SP22-261.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "storybook-and-animation",
+      "categoryName": "4. Storybook & Animation",
+      "domain": "gentle airbrushed fairy tale",
+      "tags": [
+        "trading-card-illustration-styles",
+        "storybook-and-animation",
+        "gentle-airbrushed-fairy-tale"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-261 soft airbrush fable gentle airbrushed fairy tale soft airbrushed gradients 4. storybook & animation storybook & animation gentle airbrushed fairy tale pack_22 trading card illustration styles storybook-and-animation trading-card-illustration-styles storybook-and-animation gentle-airbrushed-fairy-tale"
+    },
+    {
+      "id": "SP22-262",
+      "name": "Folk Motif Storybook",
+      "styleAnchors": ["Folk Motif Storybook", "folk art pattern storybook", "folk flower motifs"],
+      "ref": "pack_22/SP22-262.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "storybook-and-animation",
+      "categoryName": "4. Storybook & Animation",
+      "domain": "folk art pattern storybook",
+      "tags": [
+        "trading-card-illustration-styles",
+        "storybook-and-animation",
+        "folk-art-pattern-storybook"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-262 folk motif storybook folk art pattern storybook folk flower motifs 4. storybook & animation storybook & animation folk art pattern storybook pack_22 trading card illustration styles storybook-and-animation trading-card-illustration-styles storybook-and-animation folk-art-pattern-storybook"
+    },
+    {
+      "id": "SP22-263",
+      "name": "Moonlit Gouache Picture-Book",
+      "styleAnchors": [
+        "Moonlit Gouache Picture-Book",
+        "night gouache storybook",
+        "deep blue night"
+      ],
+      "ref": "pack_22/SP22-263.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "storybook-and-animation",
+      "categoryName": "4. Storybook & Animation",
+      "domain": "night gouache storybook",
+      "tags": [
+        "trading-card-illustration-styles",
+        "storybook-and-animation",
+        "night-gouache-storybook"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-263 moonlit gouache picture-book night gouache storybook deep blue night 4. storybook & animation storybook & animation night gouache storybook pack_22 trading card illustration styles storybook-and-animation trading-card-illustration-styles storybook-and-animation night-gouache-storybook"
+    },
+    {
+      "id": "SP22-264",
+      "name": "Squash-and-Stretch Keyposes",
+      "styleAnchors": [
+        "Squash-and-Stretch Keyposes",
+        "exaggerated cartoon motion poses",
+        "squash on impact"
+      ],
+      "ref": "pack_22/SP22-264.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "storybook-and-animation",
+      "categoryName": "4. Storybook & Animation",
+      "domain": "exaggerated cartoon motion poses",
+      "tags": [
+        "trading-card-illustration-styles",
+        "storybook-and-animation",
+        "exaggerated-cartoon-motion-poses"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-264 squash-and-stretch keyposes exaggerated cartoon motion poses squash on impact 4. storybook & animation storybook & animation exaggerated cartoon motion poses pack_22 trading card illustration styles storybook-and-animation trading-card-illustration-styles storybook-and-animation exaggerated-cartoon-motion-poses"
+    },
+    {
+      "id": "SP22-265",
+      "name": "Storybook Vignette Oval",
+      "styleAnchors": [
+        "Storybook Vignette Oval",
+        "soft vignette framed illustration",
+        "oval vignette"
+      ],
+      "ref": "pack_22/SP22-265.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "storybook-and-animation",
+      "categoryName": "4. Storybook & Animation",
+      "domain": "soft vignette framed illustration",
+      "tags": [
+        "trading-card-illustration-styles",
+        "storybook-and-animation",
+        "soft-vignette-framed-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-265 storybook vignette oval soft vignette framed illustration oval vignette 4. storybook & animation storybook & animation soft vignette framed illustration pack_22 trading card illustration styles storybook-and-animation trading-card-illustration-styles storybook-and-animation soft-vignette-framed-illustration"
+    },
+    {
+      "id": "SP22-266",
+      "name": "Bedtime Lamp Glow",
+      "styleAnchors": ["Bedtime Lamp Glow", "warm lamp-lit interior storybook", "single warm lamp"],
+      "ref": "pack_22/SP22-266.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "storybook-and-animation",
+      "categoryName": "4. Storybook & Animation",
+      "domain": "warm lamp-lit interior storybook",
+      "tags": [
+        "trading-card-illustration-styles",
+        "storybook-and-animation",
+        "warm-lamp-lit-interior-storybook"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-266 bedtime lamp glow warm lamp-lit interior storybook single warm lamp 4. storybook & animation storybook & animation warm lamp-lit interior storybook pack_22 trading card illustration styles storybook-and-animation trading-card-illustration-styles storybook-and-animation warm-lamp-lit-interior-storybook"
+    },
+    {
+      "id": "SP22-267",
+      "name": "Hand-Tinted Fable Plates",
+      "styleAnchors": [
+        "Hand-Tinted Fable Plates",
+        "hand-colored engraved fable illustrations",
+        "engraved line"
+      ],
+      "ref": "pack_22/SP22-267.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "storybook-and-animation",
+      "categoryName": "4. Storybook & Animation",
+      "domain": "hand-colored engraved fable illustrations",
+      "tags": [
+        "trading-card-illustration-styles",
+        "storybook-and-animation",
+        "hand-colored-engraved-fable-illustrations"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-267 hand-tinted fable plates hand-colored engraved fable illustrations engraved line 4. storybook & animation storybook & animation hand-colored engraved fable illustrations pack_22 trading card illustration styles storybook-and-animation trading-card-illustration-styles storybook-and-animation hand-colored-engraved-fable-illustrations"
+    },
+    {
+      "id": "SP22-268",
+      "name": "Woodland Watercolor Critters",
+      "styleAnchors": [
+        "Woodland Watercolor Critters",
+        "gentle animal character watercolor",
+        "watercolor animals"
+      ],
+      "ref": "pack_22/SP22-268.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "storybook-and-animation",
+      "categoryName": "4. Storybook & Animation",
+      "domain": "gentle animal character watercolor",
+      "tags": [
+        "trading-card-illustration-styles",
+        "storybook-and-animation",
+        "gentle-animal-character-watercolor"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-268 woodland watercolor critters gentle animal character watercolor watercolor animals 4. storybook & animation storybook & animation gentle animal character watercolor pack_22 trading card illustration styles storybook-and-animation trading-card-illustration-styles storybook-and-animation gentle-animal-character-watercolor"
     },
     {
       "id": "SP22-133",
@@ -488,6 +1504,266 @@
       "searchableText": "sp22-140 intimate softpaint 5. character & readable forms character & readable forms pack_22 trading card illustration styles character-and-readable-forms trading-card-illustration-styles character-and-readable-forms"
     },
     {
+      "id": "SP22-269",
+      "name": "Chunky Chibi Proportions",
+      "styleAnchors": [
+        "Chunky Chibi Proportions",
+        "big-head small-body character design",
+        "oversized head"
+      ],
+      "ref": "pack_22/SP22-269.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "character-and-readable-forms",
+      "categoryName": "5. Character & Readable Forms",
+      "domain": "big-head small-body character design",
+      "tags": [
+        "trading-card-illustration-styles",
+        "character-and-readable-forms",
+        "big-head-small-body-character-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-269 chunky chibi proportions big-head small-body character design oversized head 5. character & readable forms character & readable forms big-head small-body character design pack_22 trading card illustration styles character-and-readable-forms trading-card-illustration-styles character-and-readable-forms big-head-small-body-character-design"
+    },
+    {
+      "id": "SP22-270",
+      "name": "Big-Expression Portrait",
+      "styleAnchors": [
+        "Big-Expression Portrait",
+        "emotion-first character portrait",
+        "close face framing"
+      ],
+      "ref": "pack_22/SP22-270.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "character-and-readable-forms",
+      "categoryName": "5. Character & Readable Forms",
+      "domain": "emotion-first character portrait",
+      "tags": [
+        "trading-card-illustration-styles",
+        "character-and-readable-forms",
+        "emotion-first-character-portrait"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-270 big-expression portrait emotion-first character portrait close face framing 5. character & readable forms character & readable forms emotion-first character portrait pack_22 trading card illustration styles character-and-readable-forms trading-card-illustration-styles character-and-readable-forms emotion-first-character-portrait"
+    },
+    {
+      "id": "SP22-271",
+      "name": "Faction Color Coding",
+      "styleAnchors": [
+        "Faction Color Coding",
+        "team color identity design",
+        "dominant faction color"
+      ],
+      "ref": "pack_22/SP22-271.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "character-and-readable-forms",
+      "categoryName": "5. Character & Readable Forms",
+      "domain": "team color identity design",
+      "tags": [
+        "trading-card-illustration-styles",
+        "character-and-readable-forms",
+        "team-color-identity-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-271 faction color coding team color identity design dominant faction color 5. character & readable forms character & readable forms team color identity design pack_22 trading card illustration styles character-and-readable-forms trading-card-illustration-styles character-and-readable-forms team-color-identity-design"
+    },
+    {
+      "id": "SP22-272",
+      "name": "Hybrid Creature Anatomy",
+      "styleAnchors": [
+        "Hybrid Creature Anatomy",
+        "believable creature fusion design",
+        "fused animal parts"
+      ],
+      "ref": "pack_22/SP22-272.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "character-and-readable-forms",
+      "categoryName": "5. Character & Readable Forms",
+      "domain": "believable creature fusion design",
+      "tags": [
+        "trading-card-illustration-styles",
+        "character-and-readable-forms",
+        "believable-creature-fusion-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-272 hybrid creature anatomy believable creature fusion design fused animal parts 5. character & readable forms character & readable forms believable creature fusion design pack_22 trading card illustration styles character-and-readable-forms trading-card-illustration-styles character-and-readable-forms believable-creature-fusion-design"
+    },
+    {
+      "id": "SP22-273",
+      "name": "Heroic Proportion Stance",
+      "styleAnchors": [
+        "Heroic Proportion Stance",
+        "idealized heroic figure pose",
+        "heroic proportions"
+      ],
+      "ref": "pack_22/SP22-273.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "character-and-readable-forms",
+      "categoryName": "5. Character & Readable Forms",
+      "domain": "idealized heroic figure pose",
+      "tags": [
+        "trading-card-illustration-styles",
+        "character-and-readable-forms",
+        "idealized-heroic-figure-pose"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-273 heroic proportion stance idealized heroic figure pose heroic proportions 5. character & readable forms character & readable forms idealized heroic figure pose pack_22 trading card illustration styles character-and-readable-forms trading-card-illustration-styles character-and-readable-forms idealized-heroic-figure-pose"
+    },
+    {
+      "id": "SP22-274",
+      "name": "Shape-Language Caricature",
+      "styleAnchors": [
+        "Shape-Language Caricature",
+        "circle square triangle personalities",
+        "round friendly shapes"
+      ],
+      "ref": "pack_22/SP22-274.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "character-and-readable-forms",
+      "categoryName": "5. Character & Readable Forms",
+      "domain": "circle square triangle personalities",
+      "tags": [
+        "trading-card-illustration-styles",
+        "character-and-readable-forms",
+        "circle-square-triangle-personalities"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-274 shape-language caricature circle square triangle personalities round friendly shapes 5. character & readable forms character & readable forms circle square triangle personalities pack_22 trading card illustration styles character-and-readable-forms trading-card-illustration-styles character-and-readable-forms circle-square-triangle-personalities"
+    },
+    {
+      "id": "SP22-275",
+      "name": "Painted Character Bust",
+      "styleAnchors": [
+        "Painted Character Bust",
+        "painterly portrait bust card",
+        "head-and-shoulders bust"
+      ],
+      "ref": "pack_22/SP22-275.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "character-and-readable-forms",
+      "categoryName": "5. Character & Readable Forms",
+      "domain": "painterly portrait bust card",
+      "tags": [
+        "trading-card-illustration-styles",
+        "character-and-readable-forms",
+        "painterly-portrait-bust-card"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-275 painted character bust painterly portrait bust card head-and-shoulders bust 5. character & readable forms character & readable forms painterly portrait bust card pack_22 trading card illustration styles character-and-readable-forms trading-card-illustration-styles character-and-readable-forms painterly-portrait-bust-card"
+    },
+    {
+      "id": "SP22-276",
+      "name": "Glowing Outline Pop",
+      "styleAnchors": [
+        "Glowing Outline Pop",
+        "luminous outlined character art",
+        "glowing colored outlines"
+      ],
+      "ref": "pack_22/SP22-276.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "character-and-readable-forms",
+      "categoryName": "5. Character & Readable Forms",
+      "domain": "luminous outlined character art",
+      "tags": [
+        "trading-card-illustration-styles",
+        "character-and-readable-forms",
+        "luminous-outlined-character-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-276 glowing outline pop luminous outlined character art glowing colored outlines 5. character & readable forms character & readable forms luminous outlined character art pack_22 trading card illustration styles character-and-readable-forms trading-card-illustration-styles character-and-readable-forms luminous-outlined-character-art"
+    },
+    {
+      "id": "SP22-277",
+      "name": "Minimal Line Character",
+      "styleAnchors": ["Minimal Line Character", "few-line minimal character", "few lines"],
+      "ref": "pack_22/SP22-277.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "character-and-readable-forms",
+      "categoryName": "5. Character & Readable Forms",
+      "domain": "few-line minimal character",
+      "tags": [
+        "trading-card-illustration-styles",
+        "character-and-readable-forms",
+        "few-line-minimal-character"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-277 minimal line character few-line minimal character few lines 5. character & readable forms character & readable forms few-line minimal character pack_22 trading card illustration styles character-and-readable-forms trading-card-illustration-styles character-and-readable-forms few-line-minimal-character"
+    },
+    {
+      "id": "SP22-278",
+      "name": "Weathered Veteran Rendering",
+      "styleAnchors": [
+        "Weathered Veteran Rendering",
+        "gritty realistic character rendering",
+        "visible scars and wrinkles"
+      ],
+      "ref": "pack_22/SP22-278.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "character-and-readable-forms",
+      "categoryName": "5. Character & Readable Forms",
+      "domain": "gritty realistic character rendering",
+      "tags": [
+        "trading-card-illustration-styles",
+        "character-and-readable-forms",
+        "gritty-realistic-character-rendering"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-278 weathered veteran rendering gritty realistic character rendering visible scars and wrinkles 5. character & readable forms character & readable forms gritty realistic character rendering pack_22 trading card illustration styles character-and-readable-forms trading-card-illustration-styles character-and-readable-forms gritty-realistic-character-rendering"
+    },
+    {
+      "id": "SP22-279",
+      "name": "Iconic Mask Read",
+      "styleAnchors": [
+        "Iconic Mask Read",
+        "mask-driven character silhouette",
+        "striking mask silhouette"
+      ],
+      "ref": "pack_22/SP22-279.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "character-and-readable-forms",
+      "categoryName": "5. Character & Readable Forms",
+      "domain": "mask-driven character silhouette",
+      "tags": [
+        "trading-card-illustration-styles",
+        "character-and-readable-forms",
+        "mask-driven-character-silhouette"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-279 iconic mask read mask-driven character silhouette striking mask silhouette 5. character & readable forms character & readable forms mask-driven character silhouette pack_22 trading card illustration styles character-and-readable-forms trading-card-illustration-styles character-and-readable-forms mask-driven-character-silhouette"
+    },
+    {
+      "id": "SP22-280",
+      "name": "Gesture-Line Action Pose",
+      "styleAnchors": [
+        "Gesture-Line Action Pose",
+        "line-of-action driven pose",
+        "strong line of action"
+      ],
+      "ref": "pack_22/SP22-280.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "character-and-readable-forms",
+      "categoryName": "5. Character & Readable Forms",
+      "domain": "line-of-action driven pose",
+      "tags": [
+        "trading-card-illustration-styles",
+        "character-and-readable-forms",
+        "line-of-action-driven-pose"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-280 gesture-line action pose line-of-action driven pose strong line of action 5. character & readable forms character & readable forms line-of-action driven pose pack_22 trading card illustration styles character-and-readable-forms trading-card-illustration-styles character-and-readable-forms line-of-action-driven-pose"
+    },
+    {
       "id": "SP22-141",
       "name": "Clean Fantasy Cel",
       "ref": "pack_22/SP22-141.yaml",
@@ -582,6 +1858,246 @@
       "tags": ["trading-card-illustration-styles", "anime-illustration"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp22-148 graphic anime blocks 6. anime illustration anime illustration pack_22 trading card illustration styles anime-illustration trading-card-illustration-styles anime-illustration"
+    },
+    {
+      "id": "SP22-281",
+      "name": "Holo-Foil Anime Shine",
+      "styleAnchors": [
+        "Holo-Foil Anime Shine",
+        "holographic foil card anime",
+        "rainbow foil sheen"
+      ],
+      "ref": "pack_22/SP22-281.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "anime-illustration",
+      "categoryName": "6. Anime Illustration",
+      "domain": "holographic foil card anime",
+      "tags": [
+        "trading-card-illustration-styles",
+        "anime-illustration",
+        "holographic-foil-card-anime"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-281 holo-foil anime shine holographic foil card anime rainbow foil sheen 6. anime illustration anime illustration holographic foil card anime pack_22 trading card illustration styles anime-illustration trading-card-illustration-styles anime-illustration holographic-foil-card-anime"
+    },
+    {
+      "id": "SP22-282",
+      "name": "Ink-Brush Anime Splash",
+      "styleAnchors": [
+        "Ink-Brush Anime Splash",
+        "anime with sumi brush splashes",
+        "sumi brush splashes"
+      ],
+      "ref": "pack_22/SP22-282.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "anime-illustration",
+      "categoryName": "6. Anime Illustration",
+      "domain": "anime with sumi brush splashes",
+      "tags": [
+        "trading-card-illustration-styles",
+        "anime-illustration",
+        "anime-with-sumi-brush-splashes"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-282 ink-brush anime splash anime with sumi brush splashes sumi brush splashes 6. anime illustration anime illustration anime with sumi brush splashes pack_22 trading card illustration styles anime-illustration trading-card-illustration-styles anime-illustration anime-with-sumi-brush-splashes"
+    },
+    {
+      "id": "SP22-283",
+      "name": "Watercolor Key Visual",
+      "styleAnchors": ["Watercolor Key Visual", "watercolor anime key art", "luminous watercolor"],
+      "ref": "pack_22/SP22-283.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "anime-illustration",
+      "categoryName": "6. Anime Illustration",
+      "domain": "watercolor anime key art",
+      "tags": [
+        "trading-card-illustration-styles",
+        "anime-illustration",
+        "watercolor-anime-key-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-283 watercolor key visual watercolor anime key art luminous watercolor 6. anime illustration anime illustration watercolor anime key art pack_22 trading card illustration styles anime-illustration trading-card-illustration-styles anime-illustration watercolor-anime-key-art"
+    },
+    {
+      "id": "SP22-284",
+      "name": "Neon Rim Anime Night",
+      "styleAnchors": [
+        "Neon Rim Anime Night",
+        "anime with neon rim lighting",
+        "pink and cyan rims"
+      ],
+      "ref": "pack_22/SP22-284.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "anime-illustration",
+      "categoryName": "6. Anime Illustration",
+      "domain": "anime with neon rim lighting",
+      "tags": [
+        "trading-card-illustration-styles",
+        "anime-illustration",
+        "anime-with-neon-rim-lighting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-284 neon rim anime night anime with neon rim lighting pink and cyan rims 6. anime illustration anime illustration anime with neon rim lighting pack_22 trading card illustration styles anime-illustration trading-card-illustration-styles anime-illustration anime-with-neon-rim-lighting"
+    },
+    {
+      "id": "SP22-285",
+      "name": "Pastel Gradient Idol Card",
+      "styleAnchors": ["Pastel Gradient Idol Card", "pastel idol card anime", "pastel gradients"],
+      "ref": "pack_22/SP22-285.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "anime-illustration",
+      "categoryName": "6. Anime Illustration",
+      "domain": "pastel idol card anime",
+      "tags": ["trading-card-illustration-styles", "anime-illustration", "pastel-idol-card-anime"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-285 pastel gradient idol card pastel idol card anime pastel gradients 6. anime illustration anime illustration pastel idol card anime pack_22 trading card illustration styles anime-illustration trading-card-illustration-styles anime-illustration pastel-idol-card-anime"
+    },
+    {
+      "id": "SP22-286",
+      "name": "Halftone Tone Anime",
+      "styleAnchors": [
+        "Halftone Tone Anime",
+        "color anime with screentone dots",
+        "screentone dot shading"
+      ],
+      "ref": "pack_22/SP22-286.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "anime-illustration",
+      "categoryName": "6. Anime Illustration",
+      "domain": "color anime with screentone dots",
+      "tags": [
+        "trading-card-illustration-styles",
+        "anime-illustration",
+        "color-anime-with-screentone-dots"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-286 halftone tone anime color anime with screentone dots screentone dot shading 6. anime illustration anime illustration color anime with screentone dots pack_22 trading card illustration styles anime-illustration trading-card-illustration-styles anime-illustration color-anime-with-screentone-dots"
+    },
+    {
+      "id": "SP22-287",
+      "name": "Scenic Backdrop Anime Card",
+      "styleAnchors": [
+        "Scenic Backdrop Anime Card",
+        "detailed scenery with anime figures",
+        "lavish scenery"
+      ],
+      "ref": "pack_22/SP22-287.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "anime-illustration",
+      "categoryName": "6. Anime Illustration",
+      "domain": "detailed scenery with anime figures",
+      "tags": [
+        "trading-card-illustration-styles",
+        "anime-illustration",
+        "detailed-scenery-with-anime-figures"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-287 scenic backdrop anime card detailed scenery with anime figures lavish scenery 6. anime illustration anime illustration detailed scenery with anime figures pack_22 trading card illustration styles anime-illustration trading-card-illustration-styles anime-illustration detailed-scenery-with-anime-figures"
+    },
+    {
+      "id": "SP22-288",
+      "name": "Bold-Line Battle Card",
+      "styleAnchors": ["Bold-Line Battle Card", "thick-line action anime card", "thick outlines"],
+      "ref": "pack_22/SP22-288.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "anime-illustration",
+      "categoryName": "6. Anime Illustration",
+      "domain": "thick-line action anime card",
+      "tags": [
+        "trading-card-illustration-styles",
+        "anime-illustration",
+        "thick-line-action-anime-card"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-288 bold-line battle card thick-line action anime card thick outlines 6. anime illustration anime illustration thick-line action anime card pack_22 trading card illustration styles anime-illustration trading-card-illustration-styles anime-illustration thick-line-action-anime-card"
+    },
+    {
+      "id": "SP22-289",
+      "name": "Sparkle-Burst Magical Card",
+      "styleAnchors": [
+        "Sparkle-Burst Magical Card",
+        "magical sparkle effects anime",
+        "starburst sparkles"
+      ],
+      "ref": "pack_22/SP22-289.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "anime-illustration",
+      "categoryName": "6. Anime Illustration",
+      "domain": "magical sparkle effects anime",
+      "tags": [
+        "trading-card-illustration-styles",
+        "anime-illustration",
+        "magical-sparkle-effects-anime"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-289 sparkle-burst magical card magical sparkle effects anime starburst sparkles 6. anime illustration anime illustration magical sparkle effects anime pack_22 trading card illustration styles anime-illustration trading-card-illustration-styles anime-illustration magical-sparkle-effects-anime"
+    },
+    {
+      "id": "SP22-290",
+      "name": "Production Sketch Anime",
+      "styleAnchors": [
+        "Production Sketch Anime",
+        "rough anime production drawing",
+        "blue and red pencil"
+      ],
+      "ref": "pack_22/SP22-290.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "anime-illustration",
+      "categoryName": "6. Anime Illustration",
+      "domain": "rough anime production drawing",
+      "tags": [
+        "trading-card-illustration-styles",
+        "anime-illustration",
+        "rough-anime-production-drawing"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-290 production sketch anime rough anime production drawing blue and red pencil 6. anime illustration anime illustration rough anime production drawing pack_22 trading card illustration styles anime-illustration trading-card-illustration-styles anime-illustration rough-anime-production-drawing"
+    },
+    {
+      "id": "SP22-291",
+      "name": "Lace-Gothic Anime Portrait",
+      "styleAnchors": [
+        "Lace-Gothic Anime Portrait",
+        "gothic lolita anime portraiture",
+        "black lace"
+      ],
+      "ref": "pack_22/SP22-291.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "anime-illustration",
+      "categoryName": "6. Anime Illustration",
+      "domain": "gothic lolita anime portraiture",
+      "tags": [
+        "trading-card-illustration-styles",
+        "anime-illustration",
+        "gothic-lolita-anime-portraiture"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-291 lace-gothic anime portrait gothic lolita anime portraiture black lace 6. anime illustration anime illustration gothic lolita anime portraiture pack_22 trading card illustration styles anime-illustration trading-card-illustration-styles anime-illustration gothic-lolita-anime-portraiture"
+    },
+    {
+      "id": "SP22-292",
+      "name": "Mecha Panel-Line Card",
+      "styleAnchors": ["Mecha Panel-Line Card", "detailed mecha line art", "precise panel lines"],
+      "ref": "pack_22/SP22-292.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "anime-illustration",
+      "categoryName": "6. Anime Illustration",
+      "domain": "detailed mecha line art",
+      "tags": ["trading-card-illustration-styles", "anime-illustration", "detailed-mecha-line-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-292 mecha panel-line card detailed mecha line art precise panel lines 6. anime illustration anime illustration detailed mecha line art pack_22 trading card illustration styles anime-illustration trading-card-illustration-styles anime-illustration detailed-mecha-line-art"
     },
     {
       "id": "SP22-149",
@@ -680,6 +2196,258 @@
       "searchableText": "sp22-156 contourless manga paint 7. manga ink & impact manga ink & impact pack_22 trading card illustration styles manga-ink-and-impact trading-card-illustration-styles manga-ink-and-impact"
     },
     {
+      "id": "SP22-293",
+      "name": "Radial Speed-Line Burst",
+      "styleAnchors": [
+        "Radial Speed-Line Burst",
+        "focus and speed line manga impact",
+        "radiating speed lines"
+      ],
+      "ref": "pack_22/SP22-293.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "manga-ink-and-impact",
+      "categoryName": "7. Manga Ink & Impact",
+      "domain": "focus and speed line manga impact",
+      "tags": [
+        "trading-card-illustration-styles",
+        "manga-ink-and-impact",
+        "focus-and-speed-line-manga-impact"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-293 radial speed-line burst focus and speed line manga impact radiating speed lines 7. manga ink & impact manga ink & impact focus and speed line manga impact pack_22 trading card illustration styles manga-ink-and-impact trading-card-illustration-styles manga-ink-and-impact focus-and-speed-line-manga-impact"
+    },
+    {
+      "id": "SP22-294",
+      "name": "Spotted-Black Manga Ink",
+      "styleAnchors": ["Spotted-Black Manga Ink", "bold spotted black manga", "solid black spots"],
+      "ref": "pack_22/SP22-294.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "manga-ink-and-impact",
+      "categoryName": "7. Manga Ink & Impact",
+      "domain": "bold spotted black manga",
+      "tags": [
+        "trading-card-illustration-styles",
+        "manga-ink-and-impact",
+        "bold-spotted-black-manga"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-294 spotted-black manga ink bold spotted black manga solid black spots 7. manga ink & impact manga ink & impact bold spotted black manga pack_22 trading card illustration styles manga-ink-and-impact trading-card-illustration-styles manga-ink-and-impact bold-spotted-black-manga"
+    },
+    {
+      "id": "SP22-295",
+      "name": "Dread Hatch Manga",
+      "styleAnchors": [
+        "Dread Hatch Manga",
+        "horror manga crosshatching",
+        "obsessive crosshatching"
+      ],
+      "ref": "pack_22/SP22-295.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "manga-ink-and-impact",
+      "categoryName": "7. Manga Ink & Impact",
+      "domain": "horror manga crosshatching",
+      "tags": [
+        "trading-card-illustration-styles",
+        "manga-ink-and-impact",
+        "horror-manga-crosshatching"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-295 dread hatch manga horror manga crosshatching obsessive crosshatching 7. manga ink & impact manga ink & impact horror manga crosshatching pack_22 trading card illustration styles manga-ink-and-impact trading-card-illustration-styles manga-ink-and-impact horror-manga-crosshatching"
+    },
+    {
+      "id": "SP22-296",
+      "name": "Gag Deformation Ink",
+      "styleAnchors": [
+        "Gag Deformation Ink",
+        "comedy manga super-deformed reactions",
+        "super-deformed reactions"
+      ],
+      "ref": "pack_22/SP22-296.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "manga-ink-and-impact",
+      "categoryName": "7. Manga Ink & Impact",
+      "domain": "comedy manga super-deformed reactions",
+      "tags": [
+        "trading-card-illustration-styles",
+        "manga-ink-and-impact",
+        "comedy-manga-super-deformed-reactions"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-296 gag deformation ink comedy manga super-deformed reactions super-deformed reactions 7. manga ink & impact manga ink & impact comedy manga super-deformed reactions pack_22 trading card illustration styles manga-ink-and-impact trading-card-illustration-styles manga-ink-and-impact comedy-manga-super-deformed-reactions"
+    },
+    {
+      "id": "SP22-297",
+      "name": "Petal-Frame Shojo Ink",
+      "styleAnchors": [
+        "Petal-Frame Shojo Ink",
+        "romantic manga with flower frames",
+        "flower frames"
+      ],
+      "ref": "pack_22/SP22-297.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "manga-ink-and-impact",
+      "categoryName": "7. Manga Ink & Impact",
+      "domain": "romantic manga with flower frames",
+      "tags": [
+        "trading-card-illustration-styles",
+        "manga-ink-and-impact",
+        "romantic-manga-with-flower-frames"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-297 petal-frame shojo ink romantic manga with flower frames flower frames 7. manga ink & impact manga ink & impact romantic manga with flower frames pack_22 trading card illustration styles manga-ink-and-impact trading-card-illustration-styles manga-ink-and-impact romantic-manga-with-flower-frames"
+    },
+    {
+      "id": "SP22-298",
+      "name": "Sweat-Spray Impact Ink",
+      "styleAnchors": ["Sweat-Spray Impact Ink", "sports manga effort drawing", "flying sweat"],
+      "ref": "pack_22/SP22-298.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "manga-ink-and-impact",
+      "categoryName": "7. Manga Ink & Impact",
+      "domain": "sports manga effort drawing",
+      "tags": [
+        "trading-card-illustration-styles",
+        "manga-ink-and-impact",
+        "sports-manga-effort-drawing"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-298 sweat-spray impact ink sports manga effort drawing flying sweat 7. manga ink & impact manga ink & impact sports manga effort drawing pack_22 trading card illustration styles manga-ink-and-impact trading-card-illustration-styles manga-ink-and-impact sports-manga-effort-drawing"
+    },
+    {
+      "id": "SP22-299",
+      "name": "Gritty Seinen Ink Detail",
+      "styleAnchors": [
+        "Gritty Seinen Ink Detail",
+        "dense realistic mature manga ink",
+        "dense realistic detail"
+      ],
+      "ref": "pack_22/SP22-299.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "manga-ink-and-impact",
+      "categoryName": "7. Manga Ink & Impact",
+      "domain": "dense realistic mature manga ink",
+      "tags": [
+        "trading-card-illustration-styles",
+        "manga-ink-and-impact",
+        "dense-realistic-mature-manga-ink"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-299 gritty seinen ink detail dense realistic mature manga ink dense realistic detail 7. manga ink & impact manga ink & impact dense realistic mature manga ink pack_22 trading card illustration styles manga-ink-and-impact trading-card-illustration-styles manga-ink-and-impact dense-realistic-mature-manga-ink"
+    },
+    {
+      "id": "SP22-300",
+      "name": "Panoramic Spread Ink",
+      "styleAnchors": [
+        "Panoramic Spread Ink",
+        "double-page panoramic manga scene",
+        "vast panorama"
+      ],
+      "ref": "pack_22/SP22-300.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "manga-ink-and-impact",
+      "categoryName": "7. Manga Ink & Impact",
+      "domain": "double-page panoramic manga scene",
+      "tags": [
+        "trading-card-illustration-styles",
+        "manga-ink-and-impact",
+        "double-page-panoramic-manga-scene"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-300 panoramic spread ink double-page panoramic manga scene vast panorama 7. manga ink & impact manga ink & impact double-page panoramic manga scene pack_22 trading card illustration styles manga-ink-and-impact trading-card-illustration-styles manga-ink-and-impact double-page-panoramic-manga-scene"
+    },
+    {
+      "id": "SP22-301",
+      "name": "Sumi Brush Manga",
+      "styleAnchors": ["Sumi Brush Manga", "brush-drawn manga with sumi", "sumi brush strokes"],
+      "ref": "pack_22/SP22-301.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "manga-ink-and-impact",
+      "categoryName": "7. Manga Ink & Impact",
+      "domain": "brush-drawn manga with sumi",
+      "tags": [
+        "trading-card-illustration-styles",
+        "manga-ink-and-impact",
+        "brush-drawn-manga-with-sumi"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-301 sumi brush manga brush-drawn manga with sumi sumi brush strokes 7. manga ink & impact manga ink & impact brush-drawn manga with sumi pack_22 trading card illustration styles manga-ink-and-impact trading-card-illustration-styles manga-ink-and-impact brush-drawn-manga-with-sumi"
+    },
+    {
+      "id": "SP22-302",
+      "name": "Red-Black Duotone Manga",
+      "styleAnchors": [
+        "Red-Black Duotone Manga",
+        "black and red print manga",
+        "black and red only"
+      ],
+      "ref": "pack_22/SP22-302.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "manga-ink-and-impact",
+      "categoryName": "7. Manga Ink & Impact",
+      "domain": "black and red print manga",
+      "tags": [
+        "trading-card-illustration-styles",
+        "manga-ink-and-impact",
+        "black-and-red-print-manga"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-302 red-black duotone manga black and red print manga black and red only 7. manga ink & impact manga ink & impact black and red print manga pack_22 trading card illustration styles manga-ink-and-impact trading-card-illustration-styles manga-ink-and-impact black-and-red-print-manga"
+    },
+    {
+      "id": "SP22-303",
+      "name": "Scratched Aura Tones",
+      "styleAnchors": [
+        "Scratched Aura Tones",
+        "scratched screentone energy aura",
+        "scratched white auras"
+      ],
+      "ref": "pack_22/SP22-303.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "manga-ink-and-impact",
+      "categoryName": "7. Manga Ink & Impact",
+      "domain": "scratched screentone energy aura",
+      "tags": [
+        "trading-card-illustration-styles",
+        "manga-ink-and-impact",
+        "scratched-screentone-energy-aura"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-303 scratched aura tones scratched screentone energy aura scratched white auras 7. manga ink & impact manga ink & impact scratched screentone energy aura pack_22 trading card illustration styles manga-ink-and-impact trading-card-illustration-styles manga-ink-and-impact scratched-screentone-energy-aura"
+    },
+    {
+      "id": "SP22-304",
+      "name": "Grey-Wash Manga Page",
+      "styleAnchors": [
+        "Grey-Wash Manga Page",
+        "grey ink-wash manga illustration",
+        "grey ink washes"
+      ],
+      "ref": "pack_22/SP22-304.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "manga-ink-and-impact",
+      "categoryName": "7. Manga Ink & Impact",
+      "domain": "grey ink-wash manga illustration",
+      "tags": [
+        "trading-card-illustration-styles",
+        "manga-ink-and-impact",
+        "grey-ink-wash-manga-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-304 grey-wash manga page grey ink-wash manga illustration grey ink washes 7. manga ink & impact manga ink & impact grey ink-wash manga illustration pack_22 trading card illustration styles manga-ink-and-impact trading-card-illustration-styles manga-ink-and-impact grey-ink-wash-manga-illustration"
+    },
+    {
       "id": "SP22-157",
       "name": "Mechanical Cel",
       "ref": "pack_22/SP22-157.yaml",
@@ -774,6 +2542,266 @@
       "tags": ["trading-card-illustration-styles", "technical-illustration"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp22-164 toybox render 8. technical illustration technical illustration pack_22 trading card illustration styles technical-illustration trading-card-illustration-styles technical-illustration"
+    },
+    {
+      "id": "SP22-305",
+      "name": "Transparent Shell Rendering",
+      "styleAnchors": [
+        "Transparent Shell Rendering",
+        "ghosted see-through exterior",
+        "ghosted glass shell"
+      ],
+      "ref": "pack_22/SP22-305.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "technical-illustration",
+      "categoryName": "8. Technical Illustration",
+      "domain": "ghosted see-through exterior",
+      "tags": [
+        "trading-card-illustration-styles",
+        "technical-illustration",
+        "ghosted-see-through-exterior"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-305 transparent shell rendering ghosted see-through exterior ghosted glass shell 8. technical illustration technical illustration ghosted see-through exterior pack_22 trading card illustration styles technical-illustration trading-card-illustration-styles technical-illustration ghosted-see-through-exterior"
+    },
+    {
+      "id": "SP22-306",
+      "name": "Grey-Clay Form Study",
+      "styleAnchors": ["Grey-Clay Form Study", "untextured grey model painting", "matte grey clay"],
+      "ref": "pack_22/SP22-306.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "technical-illustration",
+      "categoryName": "8. Technical Illustration",
+      "domain": "untextured grey model painting",
+      "tags": [
+        "trading-card-illustration-styles",
+        "technical-illustration",
+        "untextured-grey-model-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-306 grey-clay form study untextured grey model painting matte grey clay 8. technical illustration technical illustration untextured grey model painting pack_22 trading card illustration styles technical-illustration trading-card-illustration-styles technical-illustration untextured-grey-model-painting"
+    },
+    {
+      "id": "SP22-307",
+      "name": "Motion-Path Mechanics",
+      "styleAnchors": [
+        "Motion-Path Mechanics",
+        "movement arcs mechanical diagram",
+        "ghosted repeated positions"
+      ],
+      "ref": "pack_22/SP22-307.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "technical-illustration",
+      "categoryName": "8. Technical Illustration",
+      "domain": "movement arcs mechanical diagram",
+      "tags": [
+        "trading-card-illustration-styles",
+        "technical-illustration",
+        "movement-arcs-mechanical-diagram"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-307 motion-path mechanics movement arcs mechanical diagram ghosted repeated positions 8. technical illustration technical illustration movement arcs mechanical diagram pack_22 trading card illustration styles technical-illustration trading-card-illustration-styles technical-illustration movement-arcs-mechanical-diagram"
+    },
+    {
+      "id": "SP22-308",
+      "name": "Weapon Profile Rendering",
+      "styleAnchors": [
+        "Weapon Profile Rendering",
+        "side-profile weapon design render",
+        "flat side profile"
+      ],
+      "ref": "pack_22/SP22-308.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "technical-illustration",
+      "categoryName": "8. Technical Illustration",
+      "domain": "side-profile weapon design render",
+      "tags": [
+        "trading-card-illustration-styles",
+        "technical-illustration",
+        "side-profile-weapon-design-render"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-308 weapon profile rendering side-profile weapon design render flat side profile 8. technical illustration technical illustration side-profile weapon design render pack_22 trading card illustration styles technical-illustration trading-card-illustration-styles technical-illustration side-profile-weapon-design-render"
+    },
+    {
+      "id": "SP22-309",
+      "name": "Scale-Comparison Lineup",
+      "styleAnchors": [
+        "Scale-Comparison Lineup",
+        "size comparison against figures",
+        "common ground line"
+      ],
+      "ref": "pack_22/SP22-309.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "technical-illustration",
+      "categoryName": "8. Technical Illustration",
+      "domain": "size comparison against figures",
+      "tags": [
+        "trading-card-illustration-styles",
+        "technical-illustration",
+        "size-comparison-against-figures"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-309 scale-comparison lineup size comparison against figures common ground line 8. technical illustration technical illustration size comparison against figures pack_22 trading card illustration styles technical-illustration trading-card-illustration-styles technical-illustration size-comparison-against-figures"
+    },
+    {
+      "id": "SP22-310",
+      "name": "Flat Vector Technical",
+      "styleAnchors": [
+        "Flat Vector Technical",
+        "clean flat vector machine art",
+        "flat vector shapes"
+      ],
+      "ref": "pack_22/SP22-310.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "technical-illustration",
+      "categoryName": "8. Technical Illustration",
+      "domain": "clean flat vector machine art",
+      "tags": [
+        "trading-card-illustration-styles",
+        "technical-illustration",
+        "clean-flat-vector-machine-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-310 flat vector technical clean flat vector machine art flat vector shapes 8. technical illustration technical illustration clean flat vector machine art pack_22 trading card illustration styles technical-illustration trading-card-illustration-styles technical-illustration clean-flat-vector-machine-art"
+    },
+    {
+      "id": "SP22-311",
+      "name": "Material Breakdown Panels",
+      "styleAnchors": [
+        "Material Breakdown Panels",
+        "object with material swatch panels",
+        "main view plus material panels"
+      ],
+      "ref": "pack_22/SP22-311.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "technical-illustration",
+      "categoryName": "8. Technical Illustration",
+      "domain": "object with material swatch panels",
+      "tags": [
+        "trading-card-illustration-styles",
+        "technical-illustration",
+        "object-with-material-swatch-panels"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-311 material breakdown panels object with material swatch panels main view plus material panels 8. technical illustration technical illustration object with material swatch panels pack_22 trading card illustration styles technical-illustration trading-card-illustration-styles technical-illustration object-with-material-swatch-panels"
+    },
+    {
+      "id": "SP22-312",
+      "name": "Stress-Analysis Color Map",
+      "styleAnchors": [
+        "Stress-Analysis Color Map",
+        "engineering stress color overlay",
+        "rainbow stress gradient"
+      ],
+      "ref": "pack_22/SP22-312.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "technical-illustration",
+      "categoryName": "8. Technical Illustration",
+      "domain": "engineering stress color overlay",
+      "tags": [
+        "trading-card-illustration-styles",
+        "technical-illustration",
+        "engineering-stress-color-overlay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-312 stress-analysis color map engineering stress color overlay rainbow stress gradient 8. technical illustration technical illustration engineering stress color overlay pack_22 trading card illustration styles technical-illustration trading-card-illustration-styles technical-illustration engineering-stress-color-overlay"
+    },
+    {
+      "id": "SP22-313",
+      "name": "Magnified Detail Insets",
+      "styleAnchors": [
+        "Magnified Detail Insets",
+        "main view with magnified circles",
+        "circular magnified insets"
+      ],
+      "ref": "pack_22/SP22-313.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "technical-illustration",
+      "categoryName": "8. Technical Illustration",
+      "domain": "main view with magnified circles",
+      "tags": [
+        "trading-card-illustration-styles",
+        "technical-illustration",
+        "main-view-with-magnified-circles"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-313 magnified detail insets main view with magnified circles circular magnified insets 8. technical illustration technical illustration main view with magnified circles pack_22 trading card illustration styles technical-illustration trading-card-illustration-styles technical-illustration main-view-with-magnified-circles"
+    },
+    {
+      "id": "SP22-314",
+      "name": "Catalog Hero Illustration",
+      "styleAnchors": [
+        "Catalog Hero Illustration",
+        "product catalog hero image",
+        "idealized product"
+      ],
+      "ref": "pack_22/SP22-314.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "technical-illustration",
+      "categoryName": "8. Technical Illustration",
+      "domain": "product catalog hero image",
+      "tags": [
+        "trading-card-illustration-styles",
+        "technical-illustration",
+        "product-catalog-hero-image"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-314 catalog hero illustration product catalog hero image idealized product 8. technical illustration technical illustration product catalog hero image pack_22 trading card illustration styles technical-illustration trading-card-illustration-styles technical-illustration product-catalog-hero-image"
+    },
+    {
+      "id": "SP22-315",
+      "name": "Retro Manual Two-Tone",
+      "styleAnchors": [
+        "Retro Manual Two-Tone",
+        "vintage instruction manual illustration",
+        "black line"
+      ],
+      "ref": "pack_22/SP22-315.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "technical-illustration",
+      "categoryName": "8. Technical Illustration",
+      "domain": "vintage instruction manual illustration",
+      "tags": [
+        "trading-card-illustration-styles",
+        "technical-illustration",
+        "vintage-instruction-manual-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-315 retro manual two-tone vintage instruction manual illustration black line 8. technical illustration technical illustration vintage instruction manual illustration pack_22 trading card illustration styles technical-illustration trading-card-illustration-styles technical-illustration vintage-instruction-manual-illustration"
+    },
+    {
+      "id": "SP22-316",
+      "name": "Hand-Tinted Mechanical Plate",
+      "styleAnchors": [
+        "Hand-Tinted Mechanical Plate",
+        "antique encyclopedia machine plate",
+        "engraved mechanical plate"
+      ],
+      "ref": "pack_22/SP22-316.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "technical-illustration",
+      "categoryName": "8. Technical Illustration",
+      "domain": "antique encyclopedia machine plate",
+      "tags": [
+        "trading-card-illustration-styles",
+        "technical-illustration",
+        "antique-encyclopedia-machine-plate"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-316 hand-tinted mechanical plate antique encyclopedia machine plate engraved mechanical plate 8. technical illustration technical illustration antique encyclopedia machine plate pack_22 trading card illustration styles technical-illustration trading-card-illustration-styles technical-illustration antique-encyclopedia-machine-plate"
     },
     {
       "id": "SP22-165",
@@ -1448,5 +3476,5 @@
       "searchableText": "sp22-220 masked digital displacement 15. digital rendering methods digital rendering methods pack_22 trading card illustration styles digital-rendering-methods trading-card-illustration-styles digital-rendering-methods"
     }
   ],
-  "totalPresetCount": 120
+  "totalPresetCount": 216
 }

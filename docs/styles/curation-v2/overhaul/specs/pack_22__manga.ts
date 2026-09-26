@@ -1,0 +1,256 @@
+import type { Create, Spec } from '../tools/apply';
+import { STYLE_AVOID } from './_style';
+import { dna } from './_strict';
+
+// Trading-card manga ink and impact: black-and-white and limited-color manga drawing methods with
+// original characters. Eight originals get card briefs; twelve new studies add radial speed lines,
+// spotted blacks, dread hatching, gag deformation, petal frames, sweat-spray impact, gritty detail,
+// panoramic spreads, sumi brush, red-black duotone, scratched aura tones and grey-wash pages.
+const study = (
+  name: string,
+  domain: string,
+  tag: string,
+  fields: Parameters<typeof dna>[0],
+  avoid: string[],
+  briefs: [string, string, string],
+): Create => ({
+  name,
+  domain,
+  tags: [tag, 'manga', 'portable-style-study'],
+  dna: dna(fields),
+  avoid: [...avoid, 'speech bubbles', 'sound-effect lettering', 'franchise character likeness', ...STYLE_AVOID],
+  briefs,
+});
+
+const keep = 'Preserve the requested identity, count, pose and action with original character designs';
+
+const spec: Spec = {
+  pack: 'pack_22',
+  category: '7. Manga Ink & Impact',
+  updates: {
+    'SP22-149': { briefs: [
+      'A ronin cuts through a curtain of rain, her sword arc a single tapered brush stroke across the page. No readable text or logo.',
+      'A wolf spirit howls on a cliff, fur drawn in pressure-shifting brush marks that thin into the wind. No readable text or logo.',
+      "A drunken master stumbles across a tavern floor into a perfect kick, his robes one swooping loaded brush stroke and his gourd flying. No readable text or logo.",
+    ] },
+    'SP22-150': { briefs: [
+      'A detective lights a match in a dark office, clean manga line and grey screen tone filling the shadows. No readable text or logo.',
+      'A schoolyard ghost floats under a cherry tree, gradient tone fading her body into the night. No readable text or logo.',
+      'A chef slices a giant fish in one stroke, dot tones marking the gleam of the blade. No readable text or logo.',
+    ] },
+    'SP22-151': { briefs: [
+      "A fox-masked thief escapes over tiled roofs under a full moon, strong ink linework on top and broad flat printed color underneath. No readable text or logo.",
+      'A pair of dragon riders race through clouds in bright printed colors under strong ink line. No readable text or logo.',
+      'A sleepy shrine cat guards an offering box, its color laid flat like a printed manga cover. No readable text or logo.',
+    ] },
+    'SP22-152': { briefs: [
+      'A street dancer spins on a basketball court, broad marker passes of teal and orange under quick ink. No readable text or logo.',
+      'A monster hunter stands over a slain swamp beast, marker colors streaking and pooling around fine ink detail. No readable text or logo.',
+      "A skater leaps a chain-link fence at sunset, broad orange and violet marker passes for the sky and quick ink lines for the figure. No readable text or logo.",
+    ] },
+    'SP22-153': { briefs: [
+      'A spear fighter charges up a staircase, long broken dry-ink strokes following her armor and motion. No readable text or logo.',
+      "A giant crab smashes through a wooden pier during a storm, the cracks in its shell drawn in rough dry directional ink strokes. No readable text or logo.",
+      "A cyclist sprints down a winding mountain road, rider, wheels and wind all drawn in long dry streaking ink strokes. No readable text or logo.",
+    ] },
+    'SP22-154': { briefs: [
+      'A boxer lands a counterpunch in a spray of sweat, strong contours and sharply separated shadow planes. No readable text or logo.',
+      "A dragon slams its tail into a stone watchtower, the explosion of bricks frozen in clean colored drawing with hard shadow planes. No readable text or logo.",
+      "A goalkeeper blocks a blazing shot in a packed stadium, hands and burning ball outlined in hard contour and sharp shadows. No readable text or logo.",
+    ] },
+    'SP22-155': { briefs: [
+      "A pop idol thunder god strikes a pose on a floating stage among designed magenta and yellow halftone patterns and crackling bolts. No readable text or logo.",
+      "A robot barista pours latte art in a busy cafe patterned all over with bold colored dots in teal and pink. No readable text or logo.",
+      "A rabbit samurai stands ready in a flat colored field of designed dot tones, his ears tied back with a red ribbon. No readable text or logo.",
+    ] },
+    'SP22-156': { briefs: [
+      'A mermaid rises from a moonlit lagoon, her edges defined by overlapping color planes instead of line. No readable text or logo.',
+      "A swordswoman in red walks through a white snowfield, her form built only from overlapping painted color shapes with no outline at all. No readable text or logo.",
+      "A ghost train crosses a stone bridge at dusk in soft overlapping color planes of lilac, orange and grey. No readable text or logo.",
+    ] },
+  },
+  creates: [
+    study('Radial Speed-Line Burst', 'focus and speed line manga impact', 'speed-burst', {
+      aesthetic: 'Radial speed-line burst: manga ink drawing where dense radiating speed lines explode from the focal point, freezing a moment of maximum impact.',
+      subject_treatment: `${keep}; center the subject in a burst of radiating lines that pull every eye to the action.`,
+      color_and_tone: 'Black ink on white paper with dense line fields and bright white focal space.',
+      lighting_and_shadow: 'Contrast created by dense line bursts rather than modeled light.',
+      texture_and_material: 'Ruler-straight radiating lines, tapered strokes and crisp ink figures.',
+      camera_and_composition: 'Preserve the requested framing with lines converging on the focal point.',
+      atmosphere_and_mood: 'Keep the requested mood at the peak of dramatic impact.',
+      rendering_and_quality: 'Precise dense line work and clear figure drawing at the center.',
+      key_features: 'radiating speed lines; focal burst; black and white; peak impact',
+    }, ['soft painterly blending'], [
+      'A shocked chef stares at a soup that has come alive, radiating lines exploding from his face. No readable text or logo.',
+      "A rookie hero catches a falling bus above a busy street, dense speed lines bursting outward from her straining arms and wide eyes. No readable text or logo.",
+      'A cat notices the red dot for the first time, its eyes at the center of a massive line burst. No readable text or logo.',
+    ]),
+    study('Spotted-Black Manga Ink', 'bold spotted black manga', 'spotted-black', {
+      aesthetic: 'Spotted-black manga ink: dramatic manga drawing that relies on bold solid black shapes placed deliberately, with minimal tone and strong white space.',
+      subject_treatment: `${keep}; design the image around a few bold solid black shapes and crisp white areas.`,
+      color_and_tone: 'Pure black and white with no grey, strong graphic balance.',
+      lighting_and_shadow: 'Shadows as flat solid black spots, light as open white.',
+      texture_and_material: 'Solid ink fills, clean crisp contours and sharp black-white edges.',
+      camera_and_composition: 'Preserve the requested framing with black masses balancing the page.',
+      atmosphere_and_mood: 'Keep the requested mood with stark noir drama.',
+      rendering_and_quality: "Clean decisive inking with deliberate black placement, kept consistent across the whole image.",
+      key_features: 'solid black spots; stark white; no grey tones; graphic balance',
+    }, ['grey gradients'], [
+      "A vampire stands in a bright white doorway at midnight, his cloak one huge solid black shape spreading across the floor. No readable text or logo.",
+      'A samurai and her shadow face each other on a white snowfield, the shadow solid black. No readable text or logo.',
+      "A raven perches on a white skull under a black moonless sky, the bird and the sky merging into one solid black mass. No readable text or logo.",
+    ]),
+    study('Dread Hatch Manga', 'horror manga crosshatching', 'dread-hatch', {
+      aesthetic: 'Dread hatch manga: horror manga drawing with obsessive fine crosshatching, spiraling lines and staring eyes that make ordinary scenes deeply unsettling.',
+      subject_treatment: `${keep}; render the subject with dense unsettling crosshatching while keeping it clearly readable.`,
+      color_and_tone: 'Black ink on white with dense grey created by fine hatching layers.',
+      lighting_and_shadow: 'Heavy hatched shadows crawling across faces and walls.',
+      texture_and_material: 'Fine obsessive crosshatching, spiral lines and trembling contours.',
+      camera_and_composition: 'Preserve the requested framing with uncomfortable close-ups and stares.',
+      atmosphere_and_mood: 'Keep the requested mood tilted toward creeping dread.',
+      rendering_and_quality: 'Meticulous fine hatching, never gore or cheap shock.',
+      key_features: 'obsessive crosshatching; spiral lines; staring eyes; creeping dread',
+    }, ['gore', 'cute cheerful style'], [
+      'A salaryman notices that every face in the crowded train has turned toward him, drawn in dense hatching. No readable text or logo.',
+      'A woman stares at a spiral pattern on her ceiling that seems to be slowly turning. No readable text or logo.',
+      "In a quiet seaside town every house has the same crosshatched shadow standing in its window, all facing the same empty pier. No readable text or logo.",
+    ]),
+    study('Gag Deformation Ink', 'comedy manga super-deformed reactions', 'gag-deformation', {
+      aesthetic: 'Gag deformation ink: comedy manga where characters suddenly deform into simple squashed shapes, huge sweat drops and shocked white eyes.',
+      subject_treatment: `${keep}; exaggerate the characters into deformed comic reaction shapes while keeping them recognizable.`,
+      color_and_tone: 'Black and white with simple flat tone accents.',
+      lighting_and_shadow: "Minimal shading, comedic flat lighting, kept consistent across the whole image.",
+      texture_and_material: 'Wobbly simple lines, sweat drops, vein marks and blank white eyes.',
+      camera_and_composition: 'Preserve the requested framing with the reaction face dominant.',
+      atmosphere_and_mood: 'Keep the requested mood with slapstick comedy energy.',
+      rendering_and_quality: "Clean readable gag drawing with exaggerated timing, kept consistent across the whole image.",
+      key_features: 'super-deformed reactions; huge sweat drops; blank eyes; slapstick',
+    }, ['realistic gore'], [
+      'A proud knight discovers his armor is on backwards and deforms into a tiny sweating blob. No readable text or logo.',
+      'A demon lord trips on his own cape in front of his minions, his face melting into pure embarrassment. No readable text or logo.',
+      "A proud cook tastes her own soup and her soul visibly floats out of her body, her face deformed into pure comic horror. No readable text or logo.",
+    ]),
+    study('Petal-Frame Shojo Ink', 'romantic manga with flower frames', 'petal-frame', {
+      aesthetic: 'Petal-frame shojo ink: romantic manga drawing framed by flowing flowers, sparkles and ribbons, with delicate lines and large shining eyes.',
+      subject_treatment: `${keep}; frame the characters with flowers, bubbles and sparkles in delicate romantic line.`,
+      color_and_tone: 'Black ink with soft grey tones and white sparkle highlights.',
+      lighting_and_shadow: 'Soft light with sparkling highlights and gentle tone shadows.',
+      texture_and_material: 'Fine flowing lines, flower clusters, bubbles and glittering eyes.',
+      camera_and_composition: 'Preserve the requested framing with flowers cascading around the figures.',
+      atmosphere_and_mood: 'Keep the requested mood with tender romantic sweetness.',
+      rendering_and_quality: 'Delicate precise line work with airy decorative framing.',
+      key_features: 'flower frames; sparkles and bubbles; shining eyes; delicate lines',
+    }, ['harsh heavy inking'], [
+      "Offering a single rose at the castle gate, a shy knight is suddenly framed by a cascade of flowers and sparkling bubbles erupting behind him. No readable text or logo.",
+      "Two rival witches accidentally hold hands while reaching for the same potion, a frame of lilies instantly blooming around them. No readable text or logo.",
+      "A gardener sneezes into a bouquet and is instantly framed by swirling sparkling petals, shining eyes wide in surprise. No readable text or logo.",
+    ]),
+    study('Sweat-Spray Impact Ink', 'sports manga effort drawing', 'sweat-spray', {
+      aesthetic: 'Sweat-spray impact ink: sports manga drawing packed with flying sweat, gritted teeth, straining muscles and spray at the moment of effort.',
+      subject_treatment: `${keep}; show the subject at peak physical effort with sweat, strain and spray.`,
+      color_and_tone: 'Black and white with grey tones and white spray highlights.',
+      lighting_and_shadow: "Hard stadium lighting and strong muscle shadows, kept consistent across the whole image.",
+      texture_and_material: 'Flying sweat drops, straining muscle lines, fabric stretch and dust.',
+      camera_and_composition: 'Preserve the requested framing with dynamic close-up action.',
+      atmosphere_and_mood: 'Keep the requested mood with raw competitive intensity.',
+      rendering_and_quality: 'Crisp energetic line work with readable physical strain.',
+      key_features: 'flying sweat; gritted teeth; straining muscles; spray at impact',
+    }, ['relaxed pose'], [
+      'A sumo wrestler pushes against a mountain that will not move, sweat spraying off him in sheets. No readable text or logo.',
+      "A tiny grandmother arm-wrestles a huge troll in a tavern, both sweating and gritting their teeth as the table cracks beneath them. No readable text or logo.",
+      'A swimmer explodes out of the water at the finish, spray and sweat frozen in the air. No readable text or logo.',
+    ]),
+    study('Gritty Seinen Ink Detail', 'dense realistic mature manga ink', 'gritty-seinen-ink', {
+      aesthetic: 'Gritty seinen ink detail: mature realistic manga drawing with dense cross-contour detail, worn textures and heavy shadowed faces.',
+      subject_treatment: `${keep}; render the subject with dense realistic line detail and worn textures.`,
+      color_and_tone: 'Black ink on white with heavy dark areas and fine detailed greys.',
+      lighting_and_shadow: 'Hard realistic lighting with deep shadows under brows and in folds.',
+      texture_and_material: 'Worn leather, rust, stubble, cracked walls and dense cross-contour lines.',
+      camera_and_composition: 'Preserve the requested framing with cinematic realistic staging.',
+      atmosphere_and_mood: 'Keep the requested mood with grim mature weight.',
+      rendering_and_quality: "Meticulous realistic inking with controlled density, kept consistent across the whole image.",
+      key_features: 'dense realistic detail; worn textures; heavy shadows; mature tone',
+    }, ['cute simplified style', 'gore'], [
+      'A retired mercenary sharpens his sword in a rain-soaked shack, every scar and splinter inked in detail. No readable text or logo.',
+      'A tired detective sits in a smoky bar, the grain of the counter and the stubble on his jaw drawn line by line. No readable text or logo.',
+      "An old ferry crosses a polluted river past rusted factories, every chimney, rivet and oily ripple drawn in dense realistic ink. No readable text or logo.",
+    ]),
+    study('Panoramic Spread Ink', 'double-page panoramic manga scene', 'panoramic-spread', {
+      aesthetic: 'Panoramic spread ink: sweeping wide manga scenes like a double-page reveal, huge detailed landscapes or armies with tiny characters in awe.',
+      subject_treatment: `${keep}; show the subject within a vast detailed panoramic ink scene.`,
+      color_and_tone: 'Black ink with detailed grey tones and bright sky whites.',
+      lighting_and_shadow: 'Dramatic sky light with long shadows across the landscape.',
+      texture_and_material: 'Dense architectural and landscape line detail with tone gradients.',
+      camera_and_composition: 'Very wide horizontal view with small figures in the foreground.',
+      atmosphere_and_mood: 'Keep the requested mood with the awe of a big reveal.',
+      rendering_and_quality: 'Highly detailed consistent line work across the whole panorama.',
+      key_features: 'vast panorama; tiny figures; dense detail; big reveal',
+    }, ['cramped close-up'], [
+      'Three travelers crest a hill and see a city built on the back of a sleeping giant turtle. No readable text or logo.',
+      'An army of ten thousand paper lanterns rises over a valley as two lovers watch from a cliff. No readable text or logo.',
+      "A young pilot looks out from a cliff as a floating archipelago of islands stretches to the horizon, waterfalls pouring from each one. No readable text or logo.",
+    ]),
+    study('Sumi Brush Manga', 'brush-drawn manga with sumi', 'sumi-manga', {
+      aesthetic: 'Sumi brush manga: manga drawn entirely with a sumi brush, thick-to-thin strokes, dry-brush texture and ink washes for tone.',
+      subject_treatment: `${keep}; draw the subject with brush strokes and ink washes instead of pen lines.`,
+      color_and_tone: 'Black sumi ink with watery grey washes on white paper.',
+      lighting_and_shadow: 'Tone from washes, highlights from white paper and dry brush.',
+      texture_and_material: 'Tapered brush strokes, dry-brush scratches and soft wash bleeds.',
+      camera_and_composition: 'Preserve the requested framing with bold brush rhythm.',
+      atmosphere_and_mood: 'Keep the requested mood with raw traditional energy.',
+      rendering_and_quality: "Confident expressive brushwork with clear forms, kept consistent across the whole image.",
+      key_features: 'sumi brush strokes; dry-brush; grey washes; tapered lines',
+    }, ['pen-only thin lines'], [
+      'A wandering monk crosses a bridge in the rain, his hat and cloak brushed in a few bold strokes. No readable text or logo.',
+      'A carp leaps up a waterfall, splash and scales made from wet and dry brush marks. No readable text or logo.',
+      "Two swordsmen face off on a grassy plain before a storm, the wind drawn as dry brush streaks tearing through the tall grass. No readable text or logo.",
+    ]),
+    study('Red-Black Duotone Manga', 'black and red print manga', 'red-black-duotone', {
+      aesthetic: 'Red-black duotone manga: manga printed in only black and one red ink, with the red used for accents, warning signals, flames and focus.',
+      subject_treatment: `${keep}; draw the subject in black ink with red reserved for its most important accents.`,
+      color_and_tone: 'Black ink and a single strong red, with white paper and red tints.',
+      lighting_and_shadow: 'Black shadows and red highlights or glows on focal elements.',
+      texture_and_material: 'Clean ink lines, red halftone tints and slightly misregistered red.',
+      camera_and_composition: 'Preserve the requested framing with red leading the eye.',
+      atmosphere_and_mood: 'Keep the requested mood with bold urgent intensity.',
+      rendering_and_quality: "Crisp two-color printing with disciplined red use, kept consistent across the whole image.",
+      key_features: 'black and red only; red accents; red tints; slight misregistration',
+    }, ['full color', 'gore'], [
+      'A fire dancer spins flames of red ink against a black night full of watching eyes. No readable text or logo.',
+      "A spy in a black coat carries a bright red briefcase through a crowded black-and-white station, every other color drained away. No readable text or logo.",
+      "A red paper crane flies over a black-inked city in ruins at dawn, the only color left in the whole ruined landscape. No readable text or logo.",
+    ]),
+    study('Scratched Aura Tones', 'scratched screentone energy aura', 'scratched-aura', {
+      aesthetic: 'Scratched aura tones: manga where screentone is scratched away with a blade to create glowing white auras, sparks and energy around characters.',
+      subject_treatment: `${keep}; surround the subject with auras and sparks scratched out of dark screentone.`,
+      color_and_tone: 'Dark screentone backgrounds with scratched white energy highlights.',
+      lighting_and_shadow: "Glowing scratched highlights cutting through dark tone, kept consistent across the whole image.",
+      texture_and_material: 'Scratched tone lines, dotted tone remnants and crisp ink figures.',
+      camera_and_composition: 'Preserve the requested framing with the aura radiating from the figure.',
+      atmosphere_and_mood: "Keep the requested mood with crackling power, kept consistent across the whole image.",
+      rendering_and_quality: "Controlled scratched effects with clean figure drawing, kept consistent across the whole image.",
+      key_features: 'scratched white auras; dark screentone; sparks; crackling power',
+    }, ['smooth digital glow'], [
+      "Deep in the stacks a quiet librarian unleashes a crackling aura scratched out of the dark screentone around her, pages rising in the air. No readable text or logo.",
+      "A loyal guardian dog spirit glows beside a shrine with scratched white flames around its body and eyes. No readable text or logo.",
+      "A boxer's raised fist sparks with scratched lightning before the final punch, the dark tone around it torn with white lines. No readable text or logo.",
+    ]),
+    study('Grey-Wash Manga Page', 'grey ink-wash manga illustration', 'grey-wash-manga', {
+      aesthetic: 'Grey-wash manga page: manga illustration toned with soft grey ink washes instead of screentone, painterly and atmospheric while keeping clean line.',
+      subject_treatment: `${keep}; draw the subject in clean line and tone it with soft grey washes.`,
+      color_and_tone: 'Black line with soft grey washes from pale to charcoal.',
+      lighting_and_shadow: "Soft atmospheric shading painted in grey washes, kept consistent across the whole image.",
+      texture_and_material: 'Clean pen line, soft wash blooms and paper grain.',
+      camera_and_composition: "Preserve the requested framing with atmospheric depth, kept consistent across the whole image.",
+      atmosphere_and_mood: 'Keep the requested mood with quiet cinematic atmosphere.',
+      rendering_and_quality: "Clean line with smooth controlled washes, kept consistent across the whole image.",
+      key_features: 'grey ink washes; clean line; atmospheric depth; painterly tone',
+    }, ['dot screentone'], [
+      'A girl waits at a foggy bus stop at dawn, the fog painted in soft grey washes behind clean line. No readable text or logo.',
+      "A giant robot rusts in a rainy field of wildflowers, grey washes pooling in its dents while a bird nests in its open hand. No readable text or logo.",
+      'An old man feeds pigeons in a snowy park, the snow a pale wash and his coat a dark one. No readable text or logo.',
+    ]),
+  ],
+};
+
+export default spec;

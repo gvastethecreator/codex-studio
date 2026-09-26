@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP22-289
+packId: pack_22
+name: Sparkle-Burst Magical Card
+styleAnchors:
+  - Sparkle-Burst Magical Card
+  - magical sparkle effects anime
+  - starburst sparkles
+displayName: Sparkle-Burst Magical Card
+category: 6. Anime Illustration
+domain: magical sparkle effects anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - anime-illustration
+  - sparkle-burst
+  - anime
+  - portable-style-study
+visualDna:
+  aesthetic: 'Sparkle-burst magical card: anime spellcasters surrounded by starbursts, glitter trails, glowing circles and ribbons of light filling the card.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original character designs; surround the characters with bursts of sparkles and glowing magical effects.
+  color_and_tone: Bright magical colors of violet, gold and cyan with white star glints.
+  lighting_and_shadow: Characters lit by the magic itself with bright glows.
+  texture_and_material: Starburst glints, glitter trails, glowing rings and light ribbons.
+  camera_and_composition: Preserve the requested framing with effects radiating from the center.
+  atmosphere_and_mood: Keep the requested mood with dazzling magical wonder.
+  rendering_and_quality: Clean crisp sparkles and glows around polished characters.
+  creative_brief: "Sparkle-burst magical card: anime spellcasters surrounded by starbursts, glitter trails, glowing circles and ribbons of light filling the card. Carry it through starburst sparkles, glowing rings, light ribbons, magical glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: starburst sparkles; glowing rings; light ribbons; magical glow
+avoidRules:
+  - dull muted palette
+  - franchise character likeness
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: dull muted palette, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: anime-illustration
+  categoryName: 6. Anime Illustration
+  tags:
+    - trading-card-illustration
+    - anime-illustration
+    - sparkle-burst
+    - anime
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: magical sparkle effects anime

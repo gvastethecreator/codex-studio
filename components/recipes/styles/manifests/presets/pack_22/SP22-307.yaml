@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP22-307
+packId: pack_22
+name: Motion-Path Mechanics
+styleAnchors:
+  - Motion-Path Mechanics
+  - movement arcs mechanical diagram
+  - ghosted repeated positions
+displayName: Motion-Path Mechanics
+category: 8. Technical Illustration
+domain: movement arcs mechanical diagram
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - technical-illustration
+  - motion-path
+  - technical
+  - portable-style-study
+visualDna:
+  aesthetic: 'Motion-path mechanics: technical illustrations showing how parts move, with ghosted repeated positions and clean dotted arcs tracing each movement.'
+  subject_treatment: Preserve the requested object, identity, proportions and pose; show the moving parts of the subject in several ghosted positions along clean arcs.
+  color_and_tone: Clean neutral base colors with one bright accent color for motion arcs.
+  lighting_and_shadow: Even technical lighting so every ghost position reads clearly.
+  texture_and_material: Ghosted translucent copies, dotted motion arcs and crisp outlines.
+  camera_and_composition: Side or three-quarter view with motion arcs sweeping across the frame.
+  atmosphere_and_mood: Precise and explanatory, the beauty of movement understood.
+  rendering_and_quality: Clean technical rendering with clear sequential ghosts, kept consistent across the whole image.
+  creative_brief: "Motion-path mechanics: technical illustrations showing how parts move, with ghosted repeated positions and clean dotted arcs tracing each movement. Carry it through ghosted repeated positions, dotted arcs, accent color, sequential motion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: ghosted repeated positions; dotted arcs; accent color; sequential motion
+avoidRules:
+  - motion blur smear
+  - readable numbers
+  - readable labels or numbers
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: motion blur smear, readable numbers, readable labels or numbers, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: technical-illustration
+  categoryName: 8. Technical Illustration
+  tags:
+    - trading-card-illustration
+    - technical-illustration
+    - motion-path
+    - technical
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: movement arcs mechanical diagram

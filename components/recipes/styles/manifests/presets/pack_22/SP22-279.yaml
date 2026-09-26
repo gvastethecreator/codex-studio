@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP22-279
+packId: pack_22
+name: Iconic Mask Read
+styleAnchors:
+  - Iconic Mask Read
+  - mask-driven character silhouette
+  - striking mask silhouette
+displayName: Iconic Mask Read
+category: 5. Character & Readable Forms
+domain: mask-driven character silhouette
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - character-and-readable-forms
+  - iconic-mask
+  - portable-style-study
+visualDna:
+  aesthetic: 'Iconic mask read: characters defined by one striking mask or helmet shape that is readable at a glance, with the rest of the costume simplified around it.'
+  subject_treatment: Preserve the requested identity, count, pose and action; give each character one bold mask or helmet silhouette and simplify the rest.
+  color_and_tone: Strong contrast between the mask and a simplified dark or muted costume.
+  lighting_and_shadow: Dramatic light focused on the mask with the body falling into shadow.
+  texture_and_material: Carved, lacquered or metal mask surfaces with clean simple clothing.
+  camera_and_composition: Preserve the requested framing with the mask as the focal point.
+  atmosphere_and_mood: Keep the requested mood with mysterious iconic presence.
+  rendering_and_quality: Polished rendering with a crisp memorable mask silhouette.
+  creative_brief: "Iconic mask read: characters defined by one striking mask or helmet shape that is readable at a glance, with the rest of the costume simplified around it. Carry it through striking mask silhouette, simplified costume, focal lighting, iconic read. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: striking mask silhouette; simplified costume; focal lighting; iconic read
+avoidRules:
+  - busy overdetailed costume
+  - franchise masks
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: busy overdetailed costume, franchise masks, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: character-and-readable-forms
+  categoryName: 5. Character & Readable Forms
+  tags:
+    - trading-card-illustration
+    - character-and-readable-forms
+    - iconic-mask
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: mask-driven character silhouette

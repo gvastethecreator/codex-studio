@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP22-311
+packId: pack_22
+name: Material Breakdown Panels
+styleAnchors:
+  - Material Breakdown Panels
+  - object with material swatch panels
+  - main view plus material panels
+displayName: Material Breakdown Panels
+category: 8. Technical Illustration
+domain: object with material swatch panels
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - technical-illustration
+  - material-panels
+  - technical
+  - portable-style-study
+visualDna:
+  aesthetic: 'Material breakdown panels: the subject shown whole with small framed panels beside it presenting close-ups of its materials, stone, metal, cloth or scale.'
+  subject_treatment: Preserve the requested object, identity, proportions and pose; show the subject whole with a few small close-up panels of its surface materials.
+  color_and_tone: Neutral ground with rich material colors repeated in the close-up panels.
+  lighting_and_shadow: Consistent studio lighting across main view and close-ups.
+  texture_and_material: Detailed material close-ups of metal, leather, fabric, scales or stone.
+  camera_and_composition: Main view dominant with three or four small square panels beside it.
+  atmosphere_and_mood: Precise and tactile, design understood through its materials.
+  rendering_and_quality: Clean presentation with detailed material rendering, kept consistent across the whole image.
+  creative_brief: "Material breakdown panels: the subject shown whole with small framed panels beside it presenting close-ups of its materials, stone, metal, cloth or scale. Carry it through main view plus material panels, close-up swatches, consistent lighting, neutral ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: main view plus material panels; close-up swatches; consistent lighting; neutral ground
+avoidRules:
+  - readable labels
+  - readable labels or numbers
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable labels, readable labels or numbers, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: technical-illustration
+  categoryName: 8. Technical Illustration
+  tags:
+    - trading-card-illustration
+    - technical-illustration
+    - material-panels
+    - technical
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: object with material swatch panels

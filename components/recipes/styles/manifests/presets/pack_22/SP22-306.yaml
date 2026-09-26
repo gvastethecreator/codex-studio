@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP22-306
+packId: pack_22
+name: Grey-Clay Form Study
+styleAnchors:
+  - Grey-Clay Form Study
+  - untextured grey model painting
+  - matte grey clay
+displayName: Grey-Clay Form Study
+category: 8. Technical Illustration
+domain: untextured grey model painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - technical-illustration
+  - grey-clay
+  - technical
+  - portable-style-study
+visualDna:
+  aesthetic: 'Grey-clay form study: the subject painted as if sculpted in plain grey clay, with no color or texture, so only form, light and shadow remain.'
+  subject_treatment: Preserve the requested object, identity, proportions and pose; render the subject entirely in plain matte grey to study its form.
+  color_and_tone: Neutral matte greys from soft white to charcoal, no color at all.
+  lighting_and_shadow: Clear key light and soft ambient occlusion revealing every form change.
+  texture_and_material: Smooth untextured clay surface with subtle sculpted tool marks.
+  camera_and_composition: Clean studio framing on a neutral grey backdrop.
+  atmosphere_and_mood: Calm, analytical and sculptural, form above all else.
+  rendering_and_quality: Precise believable shading of volume without distractions, kept consistent across the whole image.
+  creative_brief: "Grey-clay form study: the subject painted as if sculpted in plain grey clay, with no color or texture, so only form, light and shadow remain. Carry it through matte grey clay, no color, form-revealing light, neutral backdrop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: matte grey clay; no color; form-revealing light; neutral backdrop
+avoidRules:
+  - colorful textures
+  - readable labels or numbers
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: colorful textures, readable labels or numbers, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: technical-illustration
+  categoryName: 8. Technical Illustration
+  tags:
+    - trading-card-illustration
+    - technical-illustration
+    - grey-clay
+    - technical
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: untextured grey model painting

@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP22-265
+packId: pack_22
+name: Storybook Vignette Oval
+styleAnchors:
+  - Storybook Vignette Oval
+  - soft vignette framed illustration
+  - oval vignette
+displayName: Storybook Vignette Oval
+category: 4. Storybook & Animation
+domain: soft vignette framed illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - storybook-and-animation
+  - vignette-oval
+  - portable-style-study
+visualDna:
+  aesthetic: 'Storybook vignette oval: illustration contained in a soft oval vignette that fades into cream paper at the edges, like plates in an old storybook.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action; center the subject within a soft oval scene that fades gently into the paper.
+  color_and_tone: Soft muted watercolor and ink colors fading to warm cream paper at the edges.
+  lighting_and_shadow: Gentle soft lighting inside the oval, fading shadows toward the edges.
+  texture_and_material: Fine ink, watercolor, soft faded edges and warm paper texture.
+  camera_and_composition: Preserve the requested subject inside a centered oval vignette.
+  atmosphere_and_mood: Keep the requested mood with nostalgic storybook gentleness.
+  rendering_and_quality: Delicate detailed illustration with smooth fading vignette edges.
+  creative_brief: "Storybook vignette oval: illustration contained in a soft oval vignette that fades into cream paper at the edges, like plates in an old storybook. Carry it through oval vignette, fading edges, cream paper, old storybook plate. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: oval vignette; fading edges; cream paper; old storybook plate
+avoidRules:
+  - hard rectangular frame
+  - readable captions
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: hard rectangular frame, readable captions, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: storybook-and-animation
+  categoryName: 4. Storybook & Animation
+  tags:
+    - trading-card-illustration
+    - storybook-and-animation
+    - vignette-oval
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: soft vignette framed illustration

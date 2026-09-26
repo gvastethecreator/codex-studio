@@ -1,0 +1,68 @@
+schemaVersion: 1
+id: SP22-266
+packId: pack_22
+name: Bedtime Lamp Glow
+styleAnchors:
+  - Bedtime Lamp Glow
+  - warm lamp-lit interior storybook
+  - single warm lamp
+displayName: Bedtime Lamp Glow
+category: 4. Storybook & Animation
+domain: warm lamp-lit interior storybook
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - storybook-and-animation
+  - lamp-glow
+  - portable-style-study
+visualDna:
+  aesthetic: 'Bedtime lamp glow: cozy interior storybook scenes lit by one warm lamp or candle, deep soft shadows and golden light on quilts and faces.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action; place the subject in a cozy interior lit by a single warm lamp.
+  color_and_tone: Golden amber lamp light, deep plum and brown shadows and soft quilt colors.
+  lighting_and_shadow: One warm light source with soft falloff into cozy dark corners.
+  texture_and_material: Quilts, wooden furniture, books, soft painted textures and warm glow.
+  camera_and_composition: Preserve the requested framing with the lamp near the focal point.
+  atmosphere_and_mood: Keep the requested mood with safe, sleepy, comforting warmth.
+  rendering_and_quality: Soft painterly lighting with warm glow and gentle detail.
+  creative_brief: "Bedtime lamp glow: cozy interior storybook scenes lit by one warm lamp or candle, deep soft shadows and golden light on quilts and faces. Carry it through single warm lamp, cozy shadows, golden glow, quilts and books. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: single warm lamp; cozy shadows; golden glow; quilts and books
+avoidRules:
+  - cold harsh light
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cold harsh light, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: storybook-and-animation
+  categoryName: 4. Storybook & Animation
+  tags:
+    - trading-card-illustration
+    - storybook-and-animation
+    - lamp-glow
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: warm lamp-lit interior storybook

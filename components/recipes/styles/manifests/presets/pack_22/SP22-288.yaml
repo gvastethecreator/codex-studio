@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP22-288
+packId: pack_22
+name: Bold-Line Battle Card
+styleAnchors:
+  - Bold-Line Battle Card
+  - thick-line action anime card
+  - thick outlines
+displayName: Bold-Line Battle Card
+category: 6. Anime Illustration
+domain: thick-line action anime card
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - anime-illustration
+  - bold-battle
+  - anime
+  - portable-style-study
+visualDna:
+  aesthetic: 'Bold-line battle card: high-energy anime action with thick heavy outlines, dramatic speed lines, flying debris and intense faces.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original character designs; draw the characters with thick powerful outlines and push the action with speed lines.
+  color_and_tone: Saturated primary colors, fiery oranges and deep shadows.
+  lighting_and_shadow: Hard dramatic shading with bright impact flashes, kept consistent across the whole image.
+  texture_and_material: Thick ink lines, speed lines, debris, sweat drops and energy crackles.
+  camera_and_composition: Extreme angles and foreshortening with diagonal action, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood at maximum battle intensity.
+  rendering_and_quality: Bold confident inking with clear readable action, kept consistent across the whole image.
+  creative_brief: "Bold-line battle card: high-energy anime action with thick heavy outlines, dramatic speed lines, flying debris and intense faces. Carry it through thick outlines, speed lines, flying debris, extreme angles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: thick outlines; speed lines; flying debris; extreme angles
+avoidRules:
+  - calm static pose
+  - franchise character likeness
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: calm static pose, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: anime-illustration
+  categoryName: 6. Anime Illustration
+  tags:
+    - trading-card-illustration
+    - anime-illustration
+    - bold-battle
+    - anime
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: thick-line action anime card

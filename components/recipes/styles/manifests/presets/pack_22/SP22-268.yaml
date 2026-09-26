@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP22-268
+packId: pack_22
+name: Woodland Watercolor Critters
+styleAnchors:
+  - Woodland Watercolor Critters
+  - gentle animal character watercolor
+  - watercolor animals
+displayName: Woodland Watercolor Critters
+category: 4. Storybook & Animation
+domain: gentle animal character watercolor
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - storybook-and-animation
+  - woodland-critters
+  - portable-style-study
+visualDna:
+  aesthetic: 'Woodland watercolor critters: gentle watercolor animal characters in little clothes, softly detailed fur and cozy woodland settings.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action; if the subject is an animal, keep it natural with small charming touches; otherwise place it among woodland creatures.
+  color_and_tone: Soft earthy watercolor browns, mossy greens and gentle warm highlights.
+  lighting_and_shadow: Soft dappled forest light with gentle watercolor shadows.
+  texture_and_material: Fine fur strokes, soft washes, tiny clothing details and leaf litter.
+  camera_and_composition: Preserve the requested framing with cozy eye-level animal views.
+  atmosphere_and_mood: Keep the requested mood with tender, cozy woodland charm.
+  rendering_and_quality: Delicate detailed watercolor with soft edges and careful fur.
+  creative_brief: "Woodland watercolor critters: gentle watercolor animal characters in little clothes, softly detailed fur and cozy woodland settings. Carry it through watercolor animals, tiny clothes, soft fur detail, cozy woodland. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: watercolor animals; tiny clothes; soft fur detail; cozy woodland
+avoidRules:
+  - aggressive predators
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: aggressive predators, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: storybook-and-animation
+  categoryName: 4. Storybook & Animation
+  tags:
+    - trading-card-illustration
+    - storybook-and-animation
+    - woodland-critters
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: gentle animal character watercolor

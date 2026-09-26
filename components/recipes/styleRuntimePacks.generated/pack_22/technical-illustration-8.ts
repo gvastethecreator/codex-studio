@@ -243,4 +243,405 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP22-305',
+    name: 'Transparent Shell Rendering',
+    displayName: 'Transparent Shell Rendering',
+    styleAnchors: [
+      'Transparent Shell Rendering',
+      'ghosted see-through exterior',
+      'ghosted glass shell',
+    ],
+    category: '8. Technical Illustration',
+    domain: 'ghosted see-through exterior',
+    negativePrompt:
+      'opaque solid exterior, readable labels or numbers, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Transparent shell rendering: technical illustration where the outer shell of an object is ghosted to glass so every inner mechanism shows through clearly.',
+      subject_treatment:
+        'Preserve the requested object, identity, proportions and pose; render the outer shell as faint transparent glass and show its internal parts fully.',
+      color_and_tone:
+        'Pale ghosted shell tints over saturated interior parts in brass, steel and color accents.',
+      lighting_and_shadow: 'Soft studio light with subtle reflections on the glassy shell.',
+      texture_and_material:
+        'Faint shell outlines, polished gears, wires, pipes and inner structure.',
+      camera_and_composition: 'Three-quarter view with the object centered on a clean background.',
+      atmosphere_and_mood: 'Curious, explanatory and precise, showing how everything fits inside.',
+      rendering_and_quality:
+        'Crisp detailed internals with clean consistent transparency, kept consistent across the whole image.',
+      creative_brief:
+        "Transparent shell rendering: technical illustration where the outer shell of an object is ghosted to glass so every inner mechanism shows through clearly. Carry it through ghosted glass shell, visible internals, three-quarter view, clean background. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'ghosted glass shell; visible internals; three-quarter view; clean background',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-306',
+    name: 'Grey-Clay Form Study',
+    displayName: 'Grey-Clay Form Study',
+    styleAnchors: ['Grey-Clay Form Study', 'untextured grey model painting', 'matte grey clay'],
+    category: '8. Technical Illustration',
+    domain: 'untextured grey model painting',
+    negativePrompt:
+      'colorful textures, readable labels or numbers, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Grey-clay form study: the subject painted as if sculpted in plain grey clay, with no color or texture, so only form, light and shadow remain.',
+      subject_treatment:
+        'Preserve the requested object, identity, proportions and pose; render the subject entirely in plain matte grey to study its form.',
+      color_and_tone: 'Neutral matte greys from soft white to charcoal, no color at all.',
+      lighting_and_shadow:
+        'Clear key light and soft ambient occlusion revealing every form change.',
+      texture_and_material: 'Smooth untextured clay surface with subtle sculpted tool marks.',
+      camera_and_composition: 'Clean studio framing on a neutral grey backdrop.',
+      atmosphere_and_mood: 'Calm, analytical and sculptural, form above all else.',
+      rendering_and_quality:
+        'Precise believable shading of volume without distractions, kept consistent across the whole image.',
+      creative_brief:
+        "Grey-clay form study: the subject painted as if sculpted in plain grey clay, with no color or texture, so only form, light and shadow remain. Carry it through matte grey clay, no color, form-revealing light, neutral backdrop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'matte grey clay; no color; form-revealing light; neutral backdrop',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-307',
+    name: 'Motion-Path Mechanics',
+    displayName: 'Motion-Path Mechanics',
+    styleAnchors: [
+      'Motion-Path Mechanics',
+      'movement arcs mechanical diagram',
+      'ghosted repeated positions',
+    ],
+    category: '8. Technical Illustration',
+    domain: 'movement arcs mechanical diagram',
+    negativePrompt:
+      'motion blur smear, readable numbers, readable labels or numbers, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Motion-path mechanics: technical illustrations showing how parts move, with ghosted repeated positions and clean dotted arcs tracing each movement.',
+      subject_treatment:
+        'Preserve the requested object, identity, proportions and pose; show the moving parts of the subject in several ghosted positions along clean arcs.',
+      color_and_tone: 'Clean neutral base colors with one bright accent color for motion arcs.',
+      lighting_and_shadow: 'Even technical lighting so every ghost position reads clearly.',
+      texture_and_material: 'Ghosted translucent copies, dotted motion arcs and crisp outlines.',
+      camera_and_composition:
+        'Side or three-quarter view with motion arcs sweeping across the frame.',
+      atmosphere_and_mood: 'Precise and explanatory, the beauty of movement understood.',
+      rendering_and_quality:
+        'Clean technical rendering with clear sequential ghosts, kept consistent across the whole image.',
+      creative_brief:
+        "Motion-path mechanics: technical illustrations showing how parts move, with ghosted repeated positions and clean dotted arcs tracing each movement. Carry it through ghosted repeated positions, dotted arcs, accent color, sequential motion. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'ghosted repeated positions; dotted arcs; accent color; sequential motion',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-308',
+    name: 'Weapon Profile Rendering',
+    displayName: 'Weapon Profile Rendering',
+    styleAnchors: [
+      'Weapon Profile Rendering',
+      'side-profile weapon design render',
+      'flat side profile',
+    ],
+    category: '8. Technical Illustration',
+    domain: 'side-profile weapon design render',
+    negativePrompt:
+      'perspective distortion, readable engraving, readable labels or numbers, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        "Weapon profile rendering: swords, staffs and tools shown in clean flat side profile, precisely rendered like a collector's display on a neutral ground.",
+      subject_treatment:
+        'Preserve the requested object, identity, proportions and pose; show the object in clean side profile with every material rendered precisely.',
+      color_and_tone: 'Neutral dark or light ground with rich steel, leather, gold and gem colors.',
+      lighting_and_shadow: 'Even top light with crisp highlights along blades and edges.',
+      texture_and_material:
+        'Polished steel, wrapped leather grips, engraved guards and gem inlays.',
+      camera_and_composition: 'Orthographic side view, object centered and fully visible.',
+      atmosphere_and_mood:
+        'Precious and precise, a museum-quality display piece, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Highly detailed material rendering with clean edges, kept consistent across the whole image.',
+      creative_brief:
+        "Weapon profile rendering: swords, staffs and tools shown in clean flat side profile, precisely rendered like a collector's display on a neutral ground. Carry it through flat side profile, precise materials, neutral ground, display piece. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'flat side profile; precise materials; neutral ground; display piece',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-309',
+    name: 'Scale-Comparison Lineup',
+    displayName: 'Scale-Comparison Lineup',
+    styleAnchors: [
+      'Scale-Comparison Lineup',
+      'size comparison against figures',
+      'common ground line',
+    ],
+    category: '8. Technical Illustration',
+    domain: 'size comparison against figures',
+    negativePrompt:
+      'readable measurements, readable labels or numbers, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Scale-comparison lineup: subjects shown side by side with a small human silhouette or familiar objects so their size reads instantly, like a field guide chart.',
+      subject_treatment:
+        'Preserve the requested object, identity, proportions and pose; place the subject beside a simple human silhouette or familiar object for scale.',
+      color_and_tone: 'Clean light ground with naturalistic subject colors and grey silhouettes.',
+      lighting_and_shadow:
+        'Even lighting with small consistent ground shadows, kept consistent across the whole image.',
+      texture_and_material: 'Clean rendering of the subject with flat grey reference silhouettes.',
+      camera_and_composition: 'Side-on lineup on a common ground line from small to large.',
+      atmosphere_and_mood: 'Informative and slightly awe-inspiring when the scale surprises.',
+      rendering_and_quality: 'Consistent scale and clean presentation across the lineup.',
+      creative_brief:
+        "Scale-comparison lineup: subjects shown side by side with a small human silhouette or familiar objects so their size reads instantly, like a field guide chart. Carry it through common ground line, human silhouette for scale, side-on lineup, field-guide feel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features:
+        'common ground line; human silhouette for scale; side-on lineup; field-guide feel',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-310',
+    name: 'Flat Vector Technical',
+    displayName: 'Flat Vector Technical',
+    styleAnchors: ['Flat Vector Technical', 'clean flat vector machine art', 'flat vector shapes'],
+    category: '8. Technical Illustration',
+    domain: 'clean flat vector machine art',
+    negativePrompt:
+      'painterly texture, readable labels or numbers, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Flat vector technical: machines and objects drawn in clean flat vector shapes with simple gradients, geometric precision and a limited modern palette.',
+      subject_treatment:
+        'Preserve the requested object, identity, proportions and pose; simplify the subject into precise flat vector shapes while keeping its structure.',
+      color_and_tone:
+        'Limited modern palette of teal, coral, navy and cream with simple gradients.',
+      lighting_and_shadow:
+        'Flat shadow shapes and simple two-step highlights, kept consistent across the whole image.',
+      texture_and_material: 'Crisp geometric shapes, clean edges and subtle gradient fills.',
+      camera_and_composition: 'Isometric or side views with generous negative space.',
+      atmosphere_and_mood:
+        'Clean, friendly and modern, technology made simple, kept consistent across the whole image.',
+      rendering_and_quality: 'Precise vector clarity with consistent line and shape logic.',
+      creative_brief:
+        "Flat vector technical: machines and objects drawn in clean flat vector shapes with simple gradients, geometric precision and a limited modern palette. Carry it through flat vector shapes, limited palette, geometric precision, simple gradients. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'flat vector shapes; limited palette; geometric precision; simple gradients',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-311',
+    name: 'Material Breakdown Panels',
+    displayName: 'Material Breakdown Panels',
+    styleAnchors: [
+      'Material Breakdown Panels',
+      'object with material swatch panels',
+      'main view plus material panels',
+    ],
+    category: '8. Technical Illustration',
+    domain: 'object with material swatch panels',
+    negativePrompt:
+      'readable labels, readable labels or numbers, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Material breakdown panels: the subject shown whole with small framed panels beside it presenting close-ups of its materials, stone, metal, cloth or scale.',
+      subject_treatment:
+        'Preserve the requested object, identity, proportions and pose; show the subject whole with a few small close-up panels of its surface materials.',
+      color_and_tone: 'Neutral ground with rich material colors repeated in the close-up panels.',
+      lighting_and_shadow: 'Consistent studio lighting across main view and close-ups.',
+      texture_and_material:
+        'Detailed material close-ups of metal, leather, fabric, scales or stone.',
+      camera_and_composition:
+        'Main view dominant with three or four small square panels beside it.',
+      atmosphere_and_mood: 'Precise and tactile, design understood through its materials.',
+      rendering_and_quality:
+        'Clean presentation with detailed material rendering, kept consistent across the whole image.',
+      creative_brief:
+        "Material breakdown panels: the subject shown whole with small framed panels beside it presenting close-ups of its materials, stone, metal, cloth or scale. Carry it through main view plus material panels, close-up swatches, consistent lighting, neutral ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features:
+        'main view plus material panels; close-up swatches; consistent lighting; neutral ground',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-312',
+    name: 'Stress-Analysis Color Map',
+    displayName: 'Stress-Analysis Color Map',
+    styleAnchors: [
+      'Stress-Analysis Color Map',
+      'engineering stress color overlay',
+      'rainbow stress gradient',
+    ],
+    category: '8. Technical Illustration',
+    domain: 'engineering stress color overlay',
+    negativePrompt:
+      'readable numbers, readable labels or numbers, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Stress-analysis color map: objects rendered with a rainbow engineering overlay showing stress, from cool blue calm zones to hot red strain points.',
+      subject_treatment:
+        'Preserve the requested object, identity, proportions and pose; render the subject with a smooth stress color map flowing over its form.',
+      color_and_tone: 'Rainbow gradient from deep blue through green and yellow to hot red.',
+      lighting_and_shadow: 'Soft shading under the color map to keep form readable.',
+      texture_and_material: 'Smooth simulation gradients, faint mesh lines and clean surfaces.',
+      camera_and_composition:
+        'Three-quarter view on a dark neutral ground, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Technical and tense, showing where things are about to break.',
+      rendering_and_quality: 'Clean smooth gradient mapping that follows the form.',
+      creative_brief:
+        "Stress-analysis color map: objects rendered with a rainbow engineering overlay showing stress, from cool blue calm zones to hot red strain points. Carry it through rainbow stress gradient, hot red strain points, faint mesh, dark ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'rainbow stress gradient; hot red strain points; faint mesh; dark ground',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-313',
+    name: 'Magnified Detail Insets',
+    displayName: 'Magnified Detail Insets',
+    styleAnchors: [
+      'Magnified Detail Insets',
+      'main view with magnified circles',
+      'circular magnified insets',
+    ],
+    category: '8. Technical Illustration',
+    domain: 'main view with magnified circles',
+    negativePrompt:
+      'readable labels, readable labels or numbers, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Magnified detail insets: a full illustration of the subject with circular magnified insets connected by thin lines, revealing tiny hidden details.',
+      subject_treatment:
+        'Preserve the requested object, identity, proportions and pose; show the subject whole with two or three circular close-up insets of its details.',
+      color_and_tone: 'Consistent illustration colors with clean white or dark inset borders.',
+      lighting_and_shadow:
+        'Matching lighting in main view and insets, kept consistent across the whole image.',
+      texture_and_material:
+        'Fine details revealed in insets, thin connector lines and crisp circles.',
+      camera_and_composition: 'Main subject centered with insets around it linked by lines.',
+      atmosphere_and_mood:
+        'Curious and delightful, discovering the small secrets, kept consistent across the whole image.',
+      rendering_and_quality: 'Clear consistent detail in both main view and magnified circles.',
+      creative_brief:
+        "Magnified detail insets: a full illustration of the subject with circular magnified insets connected by thin lines, revealing tiny hidden details. Carry it through circular magnified insets, connector lines, hidden details, main view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'circular magnified insets; connector lines; hidden details; main view',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-314',
+    name: 'Catalog Hero Illustration',
+    displayName: 'Catalog Hero Illustration',
+    styleAnchors: ['Catalog Hero Illustration', 'product catalog hero image', 'idealized product'],
+    category: '8. Technical Illustration',
+    domain: 'product catalog hero image',
+    negativePrompt:
+      'readable prices or text, real brand, readable labels or numbers, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Catalog hero illustration: objects painted as glossy hero products for an old mail-order catalog, perfect lighting, soft drop shadow and cheerful presentation.',
+      subject_treatment:
+        'Preserve the requested object, identity, proportions and pose; present the subject as an idealized product on a clean ground.',
+      color_and_tone: 'Clean bright colors on a soft pastel or white ground.',
+      lighting_and_shadow: 'Flattering studio light with a soft drop shadow beneath.',
+      texture_and_material: 'Glossy idealized surfaces, clean edges and gentle reflections.',
+      camera_and_composition: 'Three-quarter hero angle, object centered with space around it.',
+      atmosphere_and_mood:
+        'Optimistic, appealing and slightly retro commercial charm, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Polished painted product rendering, never photographic, kept consistent across the whole image.',
+      creative_brief:
+        "Catalog hero illustration: objects painted as glossy hero products for an old mail-order catalog, perfect lighting, soft drop shadow and cheerful presentation. Carry it through idealized product, soft drop shadow, clean ground, retro catalog charm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'idealized product; soft drop shadow; clean ground; retro catalog charm',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-315',
+    name: 'Retro Manual Two-Tone',
+    displayName: 'Retro Manual Two-Tone',
+    styleAnchors: [
+      'Retro Manual Two-Tone',
+      'vintage instruction manual illustration',
+      'black line',
+    ],
+    category: '8. Technical Illustration',
+    domain: 'vintage instruction manual illustration',
+    negativePrompt:
+      'full color painting, readable instructions, readable labels or numbers, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Retro manual two-tone: vintage instruction manual illustration printed in black and one flat color, with clean line drawing and simple hatching.',
+      subject_treatment:
+        'Preserve the requested object, identity, proportions and pose; draw the subject as a clear manual illustration in black line and one flat accent color.',
+      color_and_tone:
+        'Black ink with one flat accent such as orange, teal or red on off-white paper.',
+      lighting_and_shadow: 'Simple hatching and flat color blocks for shadow.',
+      texture_and_material: 'Clean line art, light hatching, flat color overprint and paper grain.',
+      camera_and_composition: 'Clear explanatory views with hands or tools demonstrating use.',
+      atmosphere_and_mood: 'Helpful, earnest and nostalgic, like an old how-to booklet.',
+      rendering_and_quality:
+        'Precise clean manual drawing with limited color, kept consistent across the whole image.',
+      creative_brief:
+        "Retro manual two-tone: vintage instruction manual illustration printed in black and one flat color, with clean line drawing and simple hatching. Carry it through black line, one flat color, simple hatching, how-to feel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'black line; one flat color; simple hatching; how-to feel',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-316',
+    name: 'Hand-Tinted Mechanical Plate',
+    displayName: 'Hand-Tinted Mechanical Plate',
+    styleAnchors: [
+      'Hand-Tinted Mechanical Plate',
+      'antique encyclopedia machine plate',
+      'engraved mechanical plate',
+    ],
+    category: '8. Technical Illustration',
+    domain: 'antique encyclopedia machine plate',
+    negativePrompt:
+      'modern digital look, readable captions, readable labels or numbers, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Hand-tinted mechanical plate: antique encyclopedia engravings of machines and inventions, finely hatched and lightly colored by hand.',
+      subject_treatment:
+        'Preserve the requested object, identity, proportions and pose; render the subject as a finely engraved mechanical plate with light hand tints.',
+      color_and_tone:
+        'Black engraved line with pale hand tints of ochre, blue and rose on aged paper.',
+      lighting_and_shadow: 'Fine hatched shading with pale tints softening light areas.',
+      texture_and_material: 'Engraved line, crosshatching, aged paper and uneven tint edges.',
+      camera_and_composition: 'Clear diagram-like views with several parts arranged on the plate.',
+      atmosphere_and_mood: 'Scholarly, antique and inventive, the age of wonders.',
+      rendering_and_quality:
+        'Precise engraving with delicate imperfect tinting, kept consistent across the whole image.',
+      creative_brief:
+        "Hand-tinted mechanical plate: antique encyclopedia engravings of machines and inventions, finely hatched and lightly colored by hand. Carry it through engraved mechanical plate, hand tints, aged paper, several views. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'engraved mechanical plate; hand tints; aged paper; several views',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP22-229
+packId: pack_22
+name: Broken-Color Oil Strokes
+styleAnchors:
+  - Broken-Color Oil Strokes
+  - broken color stroke painting
+  - unblended color dabs
+displayName: Broken-Color Oil Strokes
+category: 1. Workshop Painting
+domain: broken color stroke painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - workshop-painting
+  - broken-color
+  - portable-style-study
+visualDna:
+  aesthetic: 'Broken-color oil strokes: side-by-side dabs of unblended color that mix in the eye, vibrating with light and movement.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action; build the forms from separate unblended color dabs that still describe their shape.
+  color_and_tone: Pure bright dabs placed side by side, complementary flecks in shadows.
+  lighting_and_shadow: Shimmering light from juxtaposed warm and cool dabs rather than blending.
+  texture_and_material: Short thick strokes, visible dabs, unblended edges and lively surface.
+  camera_and_composition: Preserve the requested framing with light-filled open space.
+  atmosphere_and_mood: Keep the requested mood with vibrating light and air.
+  rendering_and_quality: Lively broken strokes with clear forms, never muddy blending.
+  creative_brief: "Broken-color oil strokes: side-by-side dabs of unblended color that mix in the eye, vibrating with light and movement. Carry it through unblended color dabs, optical mixing, shimmering light, lively strokes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: unblended color dabs; optical mixing; shimmering light; lively strokes
+avoidRules:
+  - smooth blending
+  - flat fills
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: smooth blending, flat fills, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: workshop-painting
+  categoryName: 1. Workshop Painting
+  tags:
+    - trading-card-illustration
+    - workshop-painting
+    - broken-color
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: broken color stroke painting

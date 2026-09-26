@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP22-281
+packId: pack_22
+name: Holo-Foil Anime Shine
+styleAnchors:
+  - Holo-Foil Anime Shine
+  - holographic foil card anime
+  - rainbow foil sheen
+displayName: Holo-Foil Anime Shine
+category: 6. Anime Illustration
+domain: holographic foil card anime
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - anime-illustration
+  - holo-foil-anime
+  - anime
+  - portable-style-study
+visualDna:
+  aesthetic: 'Holo-foil anime shine: anime illustration finished like a rare holographic card, with rainbow foil sheen sweeping across hair, armor and background patterns.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original character designs; render the characters in clean anime style with a rainbow holographic sheen over selected areas.
+  color_and_tone: Vivid anime colors overlaid with shifting rainbow foil bands of pink, teal and gold.
+  lighting_and_shadow: Clean cel lighting with a diagonal foil glare sweeping across the image.
+  texture_and_material: Holographic foil patterns, sparkle points and glossy card surface reflections.
+  camera_and_composition: Preserve the requested framing with the character centered and heroic.
+  atmosphere_and_mood: Keep the requested mood with the thrill of pulling a rare card.
+  rendering_and_quality: Crisp anime art with controlled foil sheen, never muddy rainbow wash.
+  creative_brief: "Holo-foil anime shine: anime illustration finished like a rare holographic card, with rainbow foil sheen sweeping across hair, armor and background patterns. Carry it through rainbow foil sheen, sparkle points, diagonal glare, rare-card feel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: rainbow foil sheen; sparkle points; diagonal glare; rare-card feel
+avoidRules:
+  - dull matte finish
+  - readable card text
+  - franchise character likeness
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: dull matte finish, readable card text, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: anime-illustration
+  categoryName: 6. Anime Illustration
+  tags:
+    - trading-card-illustration
+    - anime-illustration
+    - holo-foil-anime
+    - anime
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: holographic foil card anime

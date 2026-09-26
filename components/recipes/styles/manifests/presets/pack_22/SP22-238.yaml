@@ -1,0 +1,68 @@
+schemaVersion: 1
+id: SP22-238
+packId: pack_22
+name: Warm-Cold Dual Light
+styleAnchors:
+  - Warm-Cold Dual Light
+  - two-temperature lighting painting
+  - warm key light
+displayName: Warm-Cold Dual Light
+category: 2. Epic Digital Painting
+domain: two-temperature lighting painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - epic-digital-painting
+  - dual-light
+  - portable-style-study
+visualDna:
+  aesthetic: 'Warm-cold dual light: every form lit by two opposing light temperatures, warm orange from one side and cold blue from the other, meeting on the subject.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action; light the subject from two sides in warm and cold light so its form reads clearly.
+  color_and_tone: Warm orange and cool cyan-blue lights with neutral transitions where they meet.
+  lighting_and_shadow: Two clear light sources, split temperature shadows and colored rim edges.
+  texture_and_material: Surfaces showing both warm and cool highlights, especially metal and skin.
+  camera_and_composition: Preserve the requested framing with light sources implied on either side.
+  atmosphere_and_mood: Keep the requested mood with dramatic tension between the lights.
+  rendering_and_quality: Clean temperature-driven modeling of form, never muddy mixed color.
+  creative_brief: "Warm-cold dual light: every form lit by two opposing light temperatures, warm orange from one side and cold blue from the other, meeting on the subject. Carry it through warm key light, cold opposing light, split temperatures, colored rims. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: warm key light; cold opposing light; split temperatures; colored rims
+avoidRules:
+  - single flat light
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: single flat light, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: epic-digital-painting
+  categoryName: 2. Epic Digital Painting
+  tags:
+    - trading-card-illustration
+    - epic-digital-painting
+    - dual-light
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: two-temperature lighting painting

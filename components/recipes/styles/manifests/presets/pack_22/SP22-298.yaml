@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP22-298
+packId: pack_22
+name: Sweat-Spray Impact Ink
+styleAnchors:
+  - Sweat-Spray Impact Ink
+  - sports manga effort drawing
+  - flying sweat
+displayName: Sweat-Spray Impact Ink
+category: 7. Manga Ink & Impact
+domain: sports manga effort drawing
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - manga-ink-and-impact
+  - sweat-spray
+  - manga
+  - portable-style-study
+visualDna:
+  aesthetic: 'Sweat-spray impact ink: sports manga drawing packed with flying sweat, gritted teeth, straining muscles and spray at the moment of effort.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original character designs; show the subject at peak physical effort with sweat, strain and spray.
+  color_and_tone: Black and white with grey tones and white spray highlights.
+  lighting_and_shadow: Hard stadium lighting and strong muscle shadows, kept consistent across the whole image.
+  texture_and_material: Flying sweat drops, straining muscle lines, fabric stretch and dust.
+  camera_and_composition: Preserve the requested framing with dynamic close-up action.
+  atmosphere_and_mood: Keep the requested mood with raw competitive intensity.
+  rendering_and_quality: Crisp energetic line work with readable physical strain.
+  creative_brief: "Sweat-spray impact ink: sports manga drawing packed with flying sweat, gritted teeth, straining muscles and spray at the moment of effort. Carry it through flying sweat, gritted teeth, straining muscles, spray at impact. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: flying sweat; gritted teeth; straining muscles; spray at impact
+avoidRules:
+  - relaxed pose
+  - speech bubbles
+  - sound-effect lettering
+  - franchise character likeness
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: relaxed pose, speech bubbles, sound-effect lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: manga-ink-and-impact
+  categoryName: 7. Manga Ink & Impact
+  tags:
+    - trading-card-illustration
+    - manga-ink-and-impact
+    - sweat-spray
+    - manga
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: sports manga effort drawing

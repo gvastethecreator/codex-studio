@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP22-295
+packId: pack_22
+name: Dread Hatch Manga
+styleAnchors:
+  - Dread Hatch Manga
+  - horror manga crosshatching
+  - obsessive crosshatching
+displayName: Dread Hatch Manga
+category: 7. Manga Ink & Impact
+domain: horror manga crosshatching
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - manga-ink-and-impact
+  - dread-hatch
+  - manga
+  - portable-style-study
+visualDna:
+  aesthetic: 'Dread hatch manga: horror manga drawing with obsessive fine crosshatching, spiraling lines and staring eyes that make ordinary scenes deeply unsettling.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original character designs; render the subject with dense unsettling crosshatching while keeping it clearly readable.
+  color_and_tone: Black ink on white with dense grey created by fine hatching layers.
+  lighting_and_shadow: Heavy hatched shadows crawling across faces and walls.
+  texture_and_material: Fine obsessive crosshatching, spiral lines and trembling contours.
+  camera_and_composition: Preserve the requested framing with uncomfortable close-ups and stares.
+  atmosphere_and_mood: Keep the requested mood tilted toward creeping dread.
+  rendering_and_quality: Meticulous fine hatching, never gore or cheap shock.
+  creative_brief: "Dread hatch manga: horror manga drawing with obsessive fine crosshatching, spiraling lines and staring eyes that make ordinary scenes deeply unsettling. Carry it through obsessive crosshatching, spiral lines, staring eyes, creeping dread. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: obsessive crosshatching; spiral lines; staring eyes; creeping dread
+avoidRules:
+  - gore
+  - cute cheerful style
+  - speech bubbles
+  - sound-effect lettering
+  - franchise character likeness
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: gore, cute cheerful style, speech bubbles, sound-effect lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: manga-ink-and-impact
+  categoryName: 7. Manga Ink & Impact
+  tags:
+    - trading-card-illustration
+    - manga-ink-and-impact
+    - dread-hatch
+    - manga
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: horror manga crosshatching

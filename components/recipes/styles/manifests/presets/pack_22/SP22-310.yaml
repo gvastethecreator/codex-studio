@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP22-310
+packId: pack_22
+name: Flat Vector Technical
+styleAnchors:
+  - Flat Vector Technical
+  - clean flat vector machine art
+  - flat vector shapes
+displayName: Flat Vector Technical
+category: 8. Technical Illustration
+domain: clean flat vector machine art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - technical-illustration
+  - flat-vector-tech
+  - technical
+  - portable-style-study
+visualDna:
+  aesthetic: 'Flat vector technical: machines and objects drawn in clean flat vector shapes with simple gradients, geometric precision and a limited modern palette.'
+  subject_treatment: Preserve the requested object, identity, proportions and pose; simplify the subject into precise flat vector shapes while keeping its structure.
+  color_and_tone: Limited modern palette of teal, coral, navy and cream with simple gradients.
+  lighting_and_shadow: Flat shadow shapes and simple two-step highlights, kept consistent across the whole image.
+  texture_and_material: Crisp geometric shapes, clean edges and subtle gradient fills.
+  camera_and_composition: Isometric or side views with generous negative space.
+  atmosphere_and_mood: Clean, friendly and modern, technology made simple, kept consistent across the whole image.
+  rendering_and_quality: Precise vector clarity with consistent line and shape logic.
+  creative_brief: "Flat vector technical: machines and objects drawn in clean flat vector shapes with simple gradients, geometric precision and a limited modern palette. Carry it through flat vector shapes, limited palette, geometric precision, simple gradients. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: flat vector shapes; limited palette; geometric precision; simple gradients
+avoidRules:
+  - painterly texture
+  - readable labels or numbers
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: painterly texture, readable labels or numbers, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: technical-illustration
+  categoryName: 8. Technical Illustration
+  tags:
+    - trading-card-illustration
+    - technical-illustration
+    - flat-vector-tech
+    - technical
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: clean flat vector machine art

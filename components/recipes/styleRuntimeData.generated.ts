@@ -201,7 +201,7 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     cardTitle: 'Trading Card Illustration Styles',
     cardDescription:
       'Portable illustration mechanisms adapted from trading-card art research. They preserve the requested subject, action, palette, lighting, viewpoint and composition; card layouts and physical finishes remain separate choices.',
-    presetCount: 120,
+    presetCount: 216,
   },
   {
     id: 'pack_23',
