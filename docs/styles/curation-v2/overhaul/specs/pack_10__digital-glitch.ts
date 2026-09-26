@@ -53,9 +53,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Datamoshed video frame of a knight charging on horseback, his body smearing into the previous frame in dragged macroblocks. No text or logo.',
-        'Datamoshed video frame of a skateboarder mid-kickflip in an empty pool, the concrete bowl smeared into her silhouette by dragged motion vectors, blocks of the previous frame bleeding across the sky. No text or logo.',
-        'Datamoshed video frame of a couple spinning in a ballroom, chandeliers and gowns melting into each other as pixels drag between frames, colored macroblocks trailing the turn. No text or logo.',
+        "A knight charging on horseback smears into the previous frame in dragged macroblocks, his lance arriving before he does. No readable text or logo.",
+        "A skateboarder mid-kickflip in an empty pool drags the concrete bowl into her own silhouette along broken motion vectors. No readable text or logo.",
+        "A couple spinning in a ballroom melt into the chandeliers as frames bleed together, gowns and crystal becoming one moving smear. No readable text or logo.",
       ],
     },
     'SP10-022': {
@@ -70,9 +70,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Pixel-sorted image of a castle at sunset, the sky and towers dripping into vertical sorted streaks. No text or logo.',
-        'Pixel-sorted portrait of an old fisherman in a yellow raincoat, bright columns of pixels streaming downward from his hood into long sorted streaks while his eyes stay intact. No text or logo.',
-        'Pixel-sorted image of a tall waterfall in a jungle, the falling water extended into long vertical streaks sorted from white to deep green, rocks untouched at the edges. No text or logo.',
+        "A hilltop fortress at sunset drips into long vertical streaks as its sky and towers are sorted from light to dark. No readable text or logo.",
+        "An old fisherman in a yellow raincoat pours downward from his hood in bright sorted columns. No readable text or logo.",
+        "A jungle waterfall stretches into long streaks sorted from white to deep green while the rocks around it stay sharp. No readable text or logo.",
       ],
     },
     'SP10-023': {
@@ -87,9 +87,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'VHS-glitched frame of a lone figure walking through a foggy graveyard at night, tracking bands rolling up the screen, chroma bleed around the lantern and wobbling horizontal lines. No text or logo.',
-        'VHS tape frame of a home birthday party in a wood-paneled living room, color bleeding from the candles, noise bands and a tracking wobble across the smiling faces. No text or logo.',
-        'VHS tape frame of a late-night cooking show, a chef flipping a pan of flames, chroma bleed, a rolling noise bar and soft tape blur. No text or logo.',
+        "A lone figure walks through a foggy graveyard at night as tracking bands roll up the frame and chroma bleeds around her lantern. No readable text or logo.",
+        "A home birthday party in a wood-paneled living room wobbles on worn tape, color bleeding from the candles as a noise band crosses grandma. No readable text or logo.",
+        "A late-night cooking show chef flips a pan of flames while a rolling noise bar slices him in half. No readable text or logo.",
       ],
     },
     'SP10-024': {
@@ -104,9 +104,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Image of a deep-sea anglerfish glowing on a curved CRT monitor in a dark room, phosphor scanlines, bloom around its lure and a visible RGB subpixel mask up close. No text or logo.',
-        "CRT monitor image of an astronaut's portrait, curved glass reflecting the room, glowing scanlines and phosphor bloom on the helmet visor. No text or logo.",
-        'CRT monitor image of a moonlit harbor with fishing boats, scanlines across the water, soft phosphor glow and the curved screen edge darkening. No text or logo.',
+        "A deep-sea anglerfish glows on a curved monitor in a dark room, phosphor bloom around its lure and the subpixel mask visible. No readable text or logo.",
+        "An astronaut's portrait glows through curved glass that reflects the dark room, scanlines crossing her helmet visor. No readable text or logo.",
+        "A moonlit harbor with fishing boats flickers in phosphor scanlines, the curved screen darkening at its edges. No readable text or logo.",
       ],
     },
     'SP10-025': {
@@ -121,9 +121,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'ASCII-style image of a dragon skull made from dense and sparse monospaced symbols in green on black, no readable words. No logo.',
-        'ASCII art image of a galloping horse built entirely from amber monospaced characters on black, dense glyphs for the shadows and sparse dots for highlights, unreadable as words. No readable text or logo.',
-        'ASCII art image of a lighthouse on a cliff in white monospaced glyphs on dark green, the beam made of fading symbols, no readable words. No readable text or logo.',
+        "A beast's skull emerges from dense and sparse monospaced symbols in green on black, no readable words anywhere. No readable text or logo.",
+        "A galloping horse is built from amber monospaced glyphs on black, dense characters for shadow and sparse dots for highlights. No readable text or logo.",
+        "A lighthouse on a cliff glows in white glyphs on dark green, its beam a fan of fading symbols. No readable text or logo.",
       ],
     },
     'SP10-026': {
@@ -138,9 +138,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Over-compressed JPEG image of a stage singer under colored lights, visible 8x8 blocks in the shadows, ringing halos around the microphone and color blocking in the spotlight. No text or logo.',
-        'Over-compressed JPEG image of a parrot on a branch, its feathers collapsing into 8x8 color blocks, edge ringing around the beak and banding in the sky. No text or logo.',
-        'Over-compressed JPEG image of a sunset over a fishing pier, gradient crushed into blocks, ringing around the posts and mosquito noise on the water. No text or logo.',
+        "A stage singer under colored lights collapses into visible 8x8 blocks, ringing halos wrapping her microphone. No readable text or logo.",
+        "A parrot's feathers crumble into blocky color squares, edge ringing around its beak and banding in the sky. No readable text or logo.",
+        "A sunset over a fishing pier is crushed into blocks, mosquito noise buzzing across the water. No readable text or logo.",
       ],
     },
     'SP10-027': {
@@ -155,9 +155,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Image of a glass perfume bottle on a mirror with strong red and cyan chromatic aberration fringes along every edge, the offset channels splitting its highlights. No text or logo.',
-        "Image of a cat's eye in extreme close-up with RGB channels split at the iris edge, red and blue fringes around the pupil and lashes. No text or logo.",
-        'Image of a candlelit crypt corridor with channel fringes along the arches, the flames split into red, green and blue ghosts at the edges of the frame. No text or logo.',
+        "A glass perfume bottle on a mirror splits into red and cyan fringes along every edge, its reflection doubling the error. No readable text or logo.",
+        "A cat's eye in extreme close-up tears into red and blue fringes around the pupil and every lash. No readable text or logo.",
+        "In a candlelit crypt corridor every flame splits into red, green and blue ghosts toward the edges of the frame. No readable text or logo.",
       ],
     },
     'SP10-028': {
@@ -172,9 +172,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Flatbed scan of a vintage pocket watch, dried roses and a ribbon pressed on the glass, crushed-depth focus and everything falling off into black beyond the glass. No text or logo.',
-        'Flatbed scan of a bird skull and feathers on the glass, the skull dragged during the scan into a stretched streak, deep black background. No text or logo.',
-        'Flatbed scan of a tangle of old keys and a hand pressed flat on the glass, fingers blurred where they moved, black void around them. No text or logo.',
+        "A vintage pocket watch, dried roses and a ribbon are pressed onto a scanner bed, everything falling off into black beyond the glass. No readable text or logo.",
+        "A bird skull and feathers lie on the glass, the skull dragged during the pass into a long stretched streak. No readable text or logo.",
+        "A tangle of old keys and a hand press flat on the glass, the fingers blurred where they moved against black void. No readable text or logo.",
       ],
     },
     'SP10-029': {
@@ -189,9 +189,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Halftone image of a rocket launching from a coastal pad, built entirely from red dots of varying size on cream paper, the exhaust plume dense and the sky sparse. No text or logo.',
-        'Halftone portrait of a boxer after a fight in black dots of varying size, a coarse regular screen visible across his bruised cheek. No text or logo.',
-        'CMYK halftone image of a court jester juggling, cyan, magenta, yellow and black dot screens overlapping at angles, slight misregistration. No text or logo.',
+        "A rocket launching from a coastal pad is built entirely from red dots on cream paper, its plume dense and its sky sparse. No readable text or logo.",
+        "A boxer after a fight appears in black dots of varying size, the coarse screen crossing his bruised cheek. No readable text or logo.",
+        "A court jester juggles in overlapping cyan, magenta, yellow and black dot screens slightly out of register. No readable text or logo.",
       ],
     },
     'SP10-030': {
@@ -206,9 +206,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        '1-bit dithered image of a lighthouse in a storm with a sea serpent rising, pure black and white pixels in error-diffusion patterns forming the waves and clouds. No text or logo.',
-        '1-bit dithered portrait of an old woman in a headscarf, ordered dither patterns building every tone of her wrinkles in pure black and white pixels. No text or logo.',
-        '1-bit dithered image of a haunted mansion on a hill, error-diffusion dither in the night sky and ordered patterns on the walls. No text or logo.',
+        "A sea serpent rises beside a lighthouse in a storm, pure black and white pixels scattering to form the waves. No readable text or logo.",
+        "An old woman in a headscarf is built from ordered black and white pixel patterns, every wrinkle a different dither. No readable text or logo.",
+        "A haunted mansion on a hill hums with scattered pixels in the night sky and ordered patterns on its walls. No readable text or logo.",
       ],
     },
   },
@@ -228,9 +228,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Bit-crushed image of a sunset over a mountain lake collapsed into six flat color bands, hard contour steps where orange turns to violet and the reflection banded. No text or logo.',
-        'Bit-crushed image of a peacock displaying its tail, the feathers posterized into a few flat teal and gold bands with stepped edges. No text or logo.',
-        'Bit-crushed image of a crowd at a summer festival, faces and flags reduced to a few flat color bands with hard contour steps. No text or logo.',
+        "A sunset over a mountain lake collapses into six flat color bands, hard steps where orange turns to violet. No readable text or logo.",
+        "A peacock displays its tail in a few flat teal and gold bands with stepped edges. No readable text or logo.",
+        "A summer festival crowd reduces to a few flat color bands, faces and flags stepping hard at every contour. No readable text or logo.",
       ],
     },
     {
@@ -248,9 +248,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Slit-scan image of a galloping horse and rider stretched into a warped ribbon, each column caught at a different moment, the legs bent into curves. No text or logo.',
-        'Slit-scan image of a passing train warped into a long sweeping curve, windows stretched and the platform lamps smeared into lines. No text or logo.',
-        'Slit-scan image of a waltzing couple, their spinning bodies stretched and twisted across the frame, the ballroom floor stable behind. No text or logo.',
+        "A galloping horse and rider stretch into a warped ribbon, each column caught at a different moment, legs bent into curves. No readable text or logo.",
+        "A passing train warps into a long sweeping curve, its windows stretched and the platform lamps smeared into lines. No readable text or logo.",
+        "A waltzing couple twist across the frame as they spin while the ballroom floor behind them stays perfectly still. No readable text or logo.",
       ],
     },
     {
@@ -268,9 +268,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Interlaced video frame of a sword fight on a stage, comb-tooth artifacts on the moving blades and arms, the still background clean. No text or logo.',
-        'Interlaced video frame of a basketball player dunking, comb-tooth tearing on the arms and ball, the crowd behind static and clean. No text or logo.',
-        'Interlaced video frame of a galloping horse at a racetrack, alternate lines offset along its legs and mane. No text or logo.',
+        "A stage sword fight shows comb-tooth tearing on every moving blade and arm while the scenery stays clean. No readable text or logo.",
+        "A basketball player mid-dunk splits into alternating offset lines on his arms and the ball, the crowd static behind. No readable text or logo.",
+        "A racehorse at full gallop down the home stretch tears into alternate offset lines along its legs and flying mane while the rail stays crisp. No readable text or logo.",
       ],
     },
     {
@@ -288,9 +288,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Teletext mosaic image of a mounted rider in chunky 2x3 block cells, eight bright colors on black, the horse a red block silhouette. No readable text or logo.',
-        'Teletext mosaic image of a rocket and planet in chunky block cells, cyan, yellow and magenta on black. No readable text or logo.',
-        'Teletext mosaic image of a sailboat on waves in coarse block graphics, blue and white cells on black, a yellow block sun. No readable text or logo.',
+        "A mounted rider is built from chunky block cells in eight bright colors on black, the horse a red silhouette. No readable text or logo.",
+        "A rocket and a ringed planet form from chunky cyan, yellow and magenta cells on black. No readable text or logo.",
+        "A sailboat rides blue and white block waves on black under a single yellow block sun. No readable text or logo.",
       ],
     },
     {
@@ -308,9 +308,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Oscilloscope vector drawing of a sea turtle traced in glowing green phosphor lines on a dark scope grid, the lines slightly blooming. No text or logo.',
-        'Oscilloscope vector drawing of a spinning globe traced in green lines, meridians overlapping with phosphor persistence trails. No text or logo.',
-        'Oscilloscope vector drawing of a hissing cat arching its back, its whiskers and tail flickering with persistence trails on a round green-tinted screen, a fuzzy beam dot where the trace restarts. No text or logo.',
+        "A sea turtle is traced in glowing green lines on a dark scope grid, its flippers slightly blooming. No readable text or logo.",
+        "A spinning globe on a round scope screen is drawn in overlapping green meridians, each rotation leaving long glowing persistence trails behind it. No readable text or logo.",
+        "A hissing cat arches its back in flickering green lines, whiskers and tail trailing persistence ghosts on a round screen. No readable text or logo.",
       ],
     },
     {
@@ -328,9 +328,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'E-ink display showing a portrait of an old sailor, with a faint ghost of a coastline landscape from the previous refresh lingering in grey. No text or logo.',
-        'E-ink display showing a snowy mountain village in grey tones, faint ghosting of a previous image of a sailing ship visible in the sky. No text or logo.',
-        'E-ink display showing a crow on a branch, its previous pose ghosting faintly beside it in pale grey. No text or logo.',
+        "A grey paper-like screen shows an old sailor's portrait while the coastline from the previous refresh still lingers faintly behind him. No readable text or logo.",
+        "A snowy mountain village in grey tones hides the faint ghost of a sailing ship in its sky. No readable text or logo.",
+        "A crow on a branch shares the screen with the pale ghost of its previous pose beside it. No readable text or logo.",
       ],
     },
     {
@@ -348,9 +348,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Corrupted video frame of a royal court where rectangular blocks froze in wrong green and grey colors, some blocks stuck on stale content from an earlier shot. No text or logo.',
-        'Corrupted video frame of a football match where macroblocks froze mid-play, a player split across stale grey blocks and green smears. No text or logo.',
-        'Corrupted video frame of a mountain car chase where the road froze in blocky magenta and green while the car moved on. No text or logo.',
+        "A royal court scene breaks as rectangular blocks freeze in wrong green and grey, some stuck on a queen who already left. No readable text or logo.",
+        "A football match freezes in blocks mid-play, one player split across stale grey squares and green smears. No readable text or logo.",
+        "A mountain car chase leaves the road frozen in blocky magenta and green while the car keeps driving on. No readable text or logo.",
       ],
     },
     {
@@ -368,9 +368,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Broken game render of a medieval town square whose stone walls repeat in obvious tiles and stretch into streaks at the edges, a fountain with smeared textures. No text or logo.',
-        'Broken game render of a forest where one bark texture tiles across every tree, stretched UVs along the roots and a repeating leaf pattern in the sky. No text or logo.',
-        'Broken game render of a car with a stretched checkerboard missing-texture pattern on its hood and repeated tire textures on the road. No text or logo.',
+        "A medieval town square repeats the same stone texture in obvious tiles, stretching into streaks at the edges around a smeared fountain. No readable text or logo.",
+        "A forest uses one bark texture on every tree, roots stretched into streaks and a repeating leaf pattern overhead. No readable text or logo.",
+        "A car sits on a road of repeated tire prints, its hood covered in a stretched magenta-and-black missing-texture checkerboard. No readable text or logo.",
       ],
     },
     {
@@ -388,9 +388,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'LED matrix display showing a koi fish in glowing red and orange round LEDs on a dark panel grid, soft glow between the lights. No text or logo.',
-        'LED matrix display showing a running cheetah in glowing yellow LEDs, each dot visible on the dark panel grid. No text or logo.',
-        'LED matrix display showing a crescent moon over pine trees in blue and white LEDs, dark gaps between each dot. No text or logo.',
+        "A koi fish swims across a dark panel in glowing red and orange round lights, soft glow between each dot. No readable text or logo.",
+        "A running cheetah blazes across a stadium panel in yellow dots, each round light visible on the dark grid as it sprints. No readable text or logo.",
+        "A crescent moon rises over pine trees in blue and white dots, dark gaps between every light. No readable text or logo.",
       ],
     },
     {
@@ -408,9 +408,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Thermal receipt printout of a cat portrait in faded dithered black, the paper curling at the edges and slightly yellowed. No readable text or logo.',
-        'Thermal receipt printout of a bicycle in faded dithered black, the long paper curling off a cafe counter. No readable text or logo.',
-        'Thermal receipt printout of a mountain landscape in faded dither, a fold crease and thermal fading at one edge. No readable text or logo.',
+        "A cat portrait emerges on curling receipt paper in faded dithered black, slightly yellowed at the edges. No readable text or logo.",
+        "A bicycle prints out on a long strip of receipt paper curling off a cafe counter in faded black. No readable text or logo.",
+        "A mountain landscape fades across a creased receipt, the heat-printed black already vanishing at one edge. No readable text or logo.",
       ],
     },
   ] satisfies Create[],

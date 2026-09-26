@@ -31,9 +31,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a café counter and bar stools finished in polished terrazzo, scattered terracotta, green and white stone chips in a cream cement matrix, espresso cups catching the morning light. No text or logo.',
-        'Photograph of a large terrazzo egg on a museum plinth, polished speckled surface with chips of marble, glass and brass scattered through grey cement, a soft spotlight reflection. No text or logo.',
-        'Photograph of a public drinking fountain cast in polished terrazzo in a park, blue and white glass chips in the matrix and water arcing into the basin. No text or logo.',
+        "At a busy cafe the counter and bar stools are finished in polished speckled stone, terracotta, green and white chips scattered through the cement. No readable text or logo.",
+        "On a museum plinth a giant egg of polished composite stone flecks marble, glass and brass chips across its curve. No readable text or logo.",
+        "In a park a public drinking fountain cast in speckled polished stone glints with blue and white glass chips as water splashes. No readable text or logo.",
       ],
     },
     'SP10-054': {
@@ -48,9 +48,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a black marble panther sculpture with dramatic gold veins sweeping along its body, polished to a mirror finish in a dark gallery. No text or logo.',
-        'Photograph of a green marble bathtub in an old spa with dramatic white veins flowing across its curves, steam rising and brass taps. No text or logo.',
-        'Photograph of a veined pink marble staircase curving through a grand hotel lobby, flowing grey veins running across every polished step. No text or logo.',
+        "A black stone panther sculpture is polished to a mirror, dramatic gold veins sweeping along its body like lightning. No readable text or logo.",
+        "In an old spa a green stone bathtub shows white veins flowing across its curves as steam rises from the water. No readable text or logo.",
+        "In a grand hotel lobby a pink stone staircase curves upward, flowing grey veins running across every polished step. No readable text or logo.",
       ],
     },
     'SP10-055': {
@@ -65,9 +65,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a carved wooden owl whose bold grain lines flow around its eyes like feathers, a dark knot forming one pupil, oiled walnut glowing in window light. No text or logo.',
-        'Photograph of a wooden canoe paddle and hull with bold flowing grain lines and knots, freshly oiled on a lakeside dock at sunset. No text or logo.',
-        'Photograph of a wooden toy chest with bold swirling grain on its lid, knots like eyes and warm honey tones in a nursery. No text or logo.',
+        "A carved owl's bold grain lines flow around its eyes like feathers, a dark knot forming one pupil. No readable text or logo.",
+        "On a lakeside dock at sunset a freshly oiled canoe shows bold flowing grain and knots along its hull. No readable text or logo.",
+        "In a quiet attic an old toy chest shows swirling honey-toned grain on its lid, two knots staring up like eyes. No readable text or logo.",
       ],
     },
     'SP10-056': {
@@ -83,9 +83,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a racing bicycle frame in glossy carbon-fiber twill under strip lights, the black woven pattern shifting as the tubes curve. No text or logo.',
-        'Photograph of a carbon-fiber twill briefcase on a marble desk, the glossy woven pattern catching a single desk lamp. No text or logo.',
-        'Photograph of a carbon-fiber twill cello standing in a dark studio, glossy black weave following its curves under soft light. No text or logo.',
+        "Under strip lights a racing bicycle frame shows glossy black twill weave shifting as the light slides along the tubes. No readable text or logo.",
+        "On a marble desk a briefcase in glossy black woven fiber catches a single desk lamp in its twill. No readable text or logo.",
+        "In a dark studio a cello of glossy black woven fiber shows the twill following every curve. No readable text or logo.",
       ],
     },
     'SP10-059': {
@@ -100,9 +100,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a vintage camera case in pebbled black leather with saddle stitching on a travel desk, embossed grain and worn corners. No text or logo.',
-        'Photograph of a tooled leather saddle on a fence rail, embossed floral patterns and stitching along the skirt, warm ranch light. No text or logo.',
-        'Photograph of a leather-covered traveling trunk with brass corners on a train platform, pebbled grain and neat stitching. No text or logo.',
+        "On a travel desk a vintage camera case in pebbled black hide shows saddle stitching and worn corners. No readable text or logo.",
+        "On a fence rail a tooled saddle shows embossed floral patterns and stitching along the skirt in warm ranch light. No readable text or logo.",
+        "On a train platform a traveling trunk with brass corners shows pebbled grain and neat hand stitching. No readable text or logo.",
       ],
     },
     'SP10-060': {
@@ -117,9 +117,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a skull coated in dense gold glitter on black velvet, every contour sparkling under a spotlight, loose glitter scattered on the cloth. No text or logo.',
-        'Photograph of a disco-roller skate coated in dense silver glitter on a rink floor, sparkles scattering under colored lights. No text or logo.',
-        'Photograph of a violet glitter-coated trumpet on a stage stool, dense sparkling coating catching the spotlight. No text or logo.',
+        "On black velvet a skull coated in dense gold sparkle shines under a spotlight, loose flecks scattered around it. No readable text or logo.",
+        "On a rink floor a roller skate coated in dense silver sparkle scatters light under colored bulbs. No readable text or logo.",
+        "On a stage stool a trumpet coated in violet sparkle catches the spotlight in a thousand points. No readable text or logo.",
       ],
     },
     'SP10-061': {
@@ -134,9 +134,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a garden gate patterned with decorative rust blooms and orange streaks running down from each scroll, the pattern deliberate and even. No text or logo.',
-        'Photograph of a steel park bench patterned with decorative rust blooms and streaks, autumn leaves on the seat. No text or logo.',
-        'Photograph of a large bell with decorative rust blooms and streaks as a surface pattern hanging in a tower. No text or logo.',
+        "A garden gate is patterned with decorative orange blooms of oxidation streaking down from each scroll. No readable text or logo.",
+        "Autumn leaves settle on a steel park bench whose slats are patterned with decorative orange oxidation blooms and long dripping streaks like a painted map. No readable text or logo.",
+        "In a tower hangs a large bell patterned with orange oxidation blooms running down its lip. No readable text or logo.",
       ],
     },
     'SP10-062': {
@@ -151,9 +151,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a racing suit wrapped in holographic foil in a pit lane, rainbow diffraction shifting from magenta to green as the rider turns. No text or logo.',
-        'Photograph of a whale-shaped balloon covered in holographic foil floating over a festival, rainbow diffraction rippling across its skin. No text or logo.',
-        'Photograph of a holographic foil gift box on a white table, rainbow diffraction shifting across every face. No text or logo.',
+        "In a pit lane a racing suit wrapped in rainbow diffraction foil shifts from magenta to green as the driver turns. No readable text or logo.",
+        "A whale-shaped balloon covered in rainbow diffraction foil floats over a festival, colors rippling across its body. No readable text or logo.",
+        "On a white table a gift box wrapped in rainbow foil shifts color across every face. No readable text or logo.",
       ],
     },
     'SP10-063': {
@@ -169,9 +169,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a swan sculpture with a chainmail ring-pattern surface on a lake shore, tiny interlocking rings shimmering like feathers. No text or logo.',
-        'Photograph of a teapot with a chainmail ring-pattern surface on a kitchen table, the rings catching window light, steam rising. No text or logo.',
-        'Photograph of a carnival mask with a chainmail ring-pattern surface on a velvet stand, fine rings forming the brows and nose. No text or logo.',
+        "On a lake shore a swan sculpture covered in tiny interlocking metal rings shimmers like wet feathers. No readable text or logo.",
+        "On a kitchen table a teapot surfaced in interlocking metal rings catches window light as steam rises. No readable text or logo.",
+        "On a velvet stand a carnival mask of fine interlocking rings forms brows and nose from linked metal. No readable text or logo.",
       ],
     },
     'SP10-064': {
@@ -186,9 +186,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a pair of cowboy boots in python-patterned skin on a porch, bold scale markings and a soft sheen. No text or logo.',
-        'Photograph of a snakeskin-patterned armchair in a jazz lounge, bold diamond markings across the curved back. No text or logo.',
-        'Photograph of an electric guitar finished in snakeskin pattern leaning on an amplifier in a smoky club, bold black and gold diamond markings wrapping the body, scales catching the red stage light. No text or logo.',
+        "On a porch a pair of cowboy boots in python-patterned hide shows bold scale markings and a soft sheen. No readable text or logo.",
+        "In a jazz lounge an armchair patterned in bold reptile diamonds curves around a sleeping bass player. No readable text or logo.",
+        "In a smoky club an electric guitar with a black and gold reptile finish leans against an amplifier. No readable text or logo.",
       ],
     },
     'SP10-071': {
@@ -203,9 +203,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a broken tea bowl repaired with kintsugi gold seams on a tatami mat, the gold-filled cracks branching like rivers. No text or logo.',
-        'Photograph of a ceramic fox mask repaired with kintsugi gold seams, cracks running across its snout and eyes. No text or logo.',
-        'Photograph of a cracked porcelain skull repaired with branching gold kintsugi seams resting on dark wood beside a candle, the gold lines catching the flame across the brow and jaw. No text or logo.',
+        "On a tatami mat a broken tea bowl is repaired with gold-filled seams branching like rivers across its glaze. No readable text or logo.",
+        "A ceramic fox mask that once shattered on a festival night is mended with bright gold seams running across its snout, cheeks and narrow eyes. No readable text or logo.",
+        "Beside a single candle in a dark study, a cracked porcelain skull glows along branching golden repair seams that trace every old fracture. No readable text or logo.",
       ],
     },
   },
@@ -225,9 +225,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a raku-glazed vase with crackled white glaze, smoky black craze lines and copper metallic flashes, on a rough stone plinth. No text or logo.',
-        'Photograph of a horse head sculpture fired in raku on a gallery pedestal, the white glaze split by a dense web of smoky black crackle, iridescent copper blushes pooling in the nostrils and mane. No text or logo.',
-        'Photograph of a raku-fired owl perched on a moss-covered garden wall at dusk, heavy carbon smoke staining its lower half black, crackled pale glaze on the chest and a coppery sheen on the wings. No text or logo.',
+        "On a rough stone plinth a vase shows crackled white glaze, smoky black craze lines and copper metallic flashes. No readable text or logo.",
+        "On a gallery pedestal a horse head sculpture shows white glaze split by a dense web of smoky black lines. No readable text or logo.",
+        "On a mossy garden wall at dusk a fired owl sits with heavy carbon smoke staining its lower half black. No readable text or logo.",
       ],
     },
     {
@@ -245,9 +245,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Photograph of a Damascus-steel chef's knife on a cutting board, flowing etched wave patterns along the blade beside herbs. No text or logo.",
-        'Photograph of a Damascus-steel pocket watch case with flowing layered waves, open on a velvet cloth. No text or logo.',
-        'Photograph of a pair of Damascus-steel wedding rings resting on a mossy river stone, flowing etched layers swirling in grey and silver around each band, water droplets beading nearby. No text or logo.',
+        "On a cutting board a chef's knife shows flowing etched wave patterns along its blade beside fresh herbs. No readable text or logo.",
+        "Open on a velvet cloth, a pocket watch case of layered steel shows flowing etched waves. No readable text or logo.",
+        "On a mossy river stone rest two wedding rings of layered steel, etched swirls in grey and silver. No readable text or logo.",
       ],
     },
     {
@@ -265,9 +265,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a bowl turned from burl wood with swirling chaotic grain, clusters of eyes and a glossy oil finish on a workbench. No text or logo.',
-        'Photograph of a burl-wood dashboard in a vintage car, swirling grain and eye clusters under glossy lacquer. No text or logo.',
-        'Photograph of a burl-wood guitar body with swirling figure and dark eye clusters under a glossy finish. No text or logo.',
+        "On a workbench a turned bowl shows swirling chaotic grain and clusters of eyes under a glossy oil finish. No readable text or logo.",
+        "Inside a vintage car the dashboard shows swirling figured wood and eye clusters under glossy lacquer. No readable text or logo.",
+        "Under stage lights a guitar body glows with swirling figured wood and dark eye clusters deep beneath its glossy honey finish. No readable text or logo.",
       ],
     },
     {
@@ -285,9 +285,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a mokume-gane pendant with copper, silver and gold layers forming wood-grain patterns, resting on slate. No text or logo.',
-        'Photograph of a mokume-gane ring on velvet, layered mixed metals swirling like wood grain in pink and grey. No text or logo.',
-        'Photograph of a mokume-gane sword guard with layered copper and silver grain patterns on dark cloth. No text or logo.',
+        "On slate rests a pendant of layered copper, silver and gold forming wood-grain patterns in metal. No readable text or logo.",
+        "On velvet a ring of layered mixed metals swirls like wood grain in pink and grey. No readable text or logo.",
+        "On dark cloth a sword guard of layered copper and silver shows a grain pattern like polished driftwood. No readable text or logo.",
       ],
     },
     {
@@ -305,9 +305,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a bathroom with walls and a sunken tub in terracotta tadelakt plaster, burnished soft sheen and cloudy variation in warm light. No text or logo.',
-        'Photograph of a tadelakt plaster sink and niche in pale sand color, soft burnished sheen and subtle cloudy variation. No text or logo.',
-        'Photograph of a curved tadelakt bench in a courtyard, burnished lime plaster in ochre with soft cloudy variation. No text or logo.',
+        "A bathroom's walls and sunken tub are finished in burnished terracotta plaster with a soft cloudy sheen. No readable text or logo.",
+        "A sink and niche in pale sand plaster glow with a soft burnished sheen and subtle cloudy variation. No readable text or logo.",
+        "In a courtyard a curved bench of burnished ochre plaster shows soft cloudy variation in the late sun. No readable text or logo.",
       ],
     },
     {
@@ -325,9 +325,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a cloisonné koi fish vase with turquoise and coral enamel fields separated by fine gold wire cells, glossy under soft light. No text or logo.',
-        'Photograph of a cloisonné egg on a gold stand, glossy enamel fields in cobalt and white separated by gold wire. No text or logo.',
-        'Photograph of a cloisonné incense burner with glossy green and red enamel cells and fine gold wire outlines. No text or logo.',
+        "A koi fish vase glows in turquoise and coral enamel fields separated by fine gold wire cells. No readable text or logo.",
+        "On a gold stand an egg shows glossy cobalt and white enamel fields divided by gold wire. No readable text or logo.",
+        "An incense burner glows in glossy green and red enamel cells outlined by fine gold wire. No readable text or logo.",
       ],
     },
     {
@@ -345,9 +345,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a pocket watch dial with guilloché sunburst grooves under translucent blue enamel, catching the light. No text or logo.',
-        'Photograph of a guilloché-engraved compact mirror with repeating wave patterns under pink enamel on a vanity. No text or logo.',
-        'Photograph of a fountain pen with a guilloché-engraved barrel lying on an old leather desk blotter, machine-cut waves glowing beneath translucent green enamel in lamp light. No text or logo.',
+        "Held open in a jeweler's palm, a pocket watch dial shows engine-turned sunburst grooves glowing beneath translucent blue enamel as it tilts. No readable text or logo.",
+        "On a mirrored vanity a compact case shows repeating machine-engraved waves shimmering beneath a thin layer of translucent pink enamel. No readable text or logo.",
+        "On an old leather desk blotter a fountain pen shows machine-cut waves glowing along its barrel. No readable text or logo.",
       ],
     },
     {
@@ -365,9 +365,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a black urushi-lacquered samurai helmet with gold maki-e cranes, deep glossy surface reflecting a paper lantern. No text or logo.',
-        'Photograph of a vermilion urushi-lacquered writing box open on a low table, gold maki-e maple leaves drifting across the lid, the deep glossy surface reflecting a paper window. No text or logo.',
-        'Photograph of a black urushi-lacquered tiered food box on a tatami mat, fine gold sprinkles scattered like stars, glossy reflections of a garden in its surface. No text or logo.',
+        "A black lacquered helmet decorated with gold cranes reflects a paper lantern in its deep glossy surface. No readable text or logo.",
+        "On a low table a vermilion lacquered writing box lies open, gold maple leaves drifting across its lid. No readable text or logo.",
+        "On a tatami mat a black lacquered tiered food box is scattered with fine gold flecks like stars. No readable text or logo.",
       ],
     },
     {
@@ -385,9 +385,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a hammered-copper kettle on an old iron stove, hundreds of dimpled facets glinting orange and pink in the flame light, steam curling from the spout into a dim kitchen. No text or logo.',
-        'Photograph of a hammered-brass farmhouse sink under a window of herbs, dimpled hand-hammered facets scattering the morning light, water droplets on the rim. No text or logo.',
-        'Photograph of a hammered-pewter goblet on a long oak tavern table, dimpled facets glowing softly in candlelight, a spilled drop of red wine beside the base. No text or logo.',
+        "On an old iron stove a copper kettle's hundreds of dimpled facets glint orange and pink in the flame. No readable text or logo.",
+        "Under a window of herbs a brass farmhouse sink scatters morning light from its hand-dimpled facets. No readable text or logo.",
+        "On a long oak tavern table a pewter goblet glows softly in candlelight, its dimpled facets catching a spilled drop. No readable text or logo.",
       ],
     },
   ] satisfies Create[],

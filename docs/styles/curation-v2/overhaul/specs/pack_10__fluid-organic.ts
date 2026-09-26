@@ -23,9 +23,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Alcohol ink painting of a dragon whose body is formed by flowing teal and gold ink cells with dark edge rings. No text or logo.',
-        'Alcohol ink painting of a jellyfish drifting in deep water, translucent magenta and violet inks pushing into each other and forming cells with dark edge rings along its bell and tentacles. No text or logo.',
-        'Alcohol ink painting of a coastal village on a cliff, turquoise and gold inks flowing downhill into the sea, dark rings where each pool of ink met and stopped. No text or logo.',
+        "A serpent coils through the page as flowing teal and gold cells shove against each other, each one ringed in a dark edge. No readable text or logo.",
+        "A jellyfish drifts in deep water where translucent magenta and violet pigments push into each other and form bubbling cells. No readable text or logo.",
+        "A cliffside village melts downhill into the sea as turquoise and gold pools meet in dark rings along every street. No readable text or logo.",
       ],
     },
     'SP10-012': {
@@ -42,9 +42,9 @@ const spec: Spec = {
       ),
       avoid: STYLE_AVOID,
       briefs: [
-        'Smoke photography image of a horse and rider galloping, traced entirely by thin curling wisps of backlit white smoke on pure black, the mane dissolving into spirals. No text or logo.',
-        'Smoke photography image of a heron lifting off, its wings drawn by thin backlit wisps of white smoke curling on black, the long neck a single graceful plume. No text or logo.',
-        "Smoke photography image of a woman's profile with flowing hair, formed by fine backlit smoke wisps on black, the hair breaking into delicate curls and loops. No text or logo.",
+        "A horse and rider gallop out of pure black, traced entirely by thin curling wisps of backlit white vapor, the mane dissolving behind them. No readable text or logo.",
+        "A heron lifts off in wings drawn by thin backlit wisps curling on black, its long neck a single graceful thread. No readable text or logo.",
+        "A woman's profile forms from fine backlit wisps on black, her hair breaking into delicate curls that drift off the frame. No readable text or logo.",
       ],
     },
     'SP10-013': {
@@ -61,9 +61,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Oil-slick image of a serpent coiling across black water in iridescent thin-film swirls, magenta, gold and teal bands following its scales and dissolving at the tail. No text or logo.',
-        "Oil-slick image of a dancer's spinning skirt made of iridescent thin-film swirls on black, rainbow bands whirling outward from her waist. No text or logo.",
-        'Oil-slick image of a moth with wings patterned by iridescent thin-film swirls, purple and green interference bands on a black puddle surface. No text or logo.',
+        "A serpent coils across black water in iridescent thin-film swirls, magenta, gold and teal bands following its scales. No readable text or logo.",
+        "A dancer's spinning skirt becomes iridescent film on black, rainbow bands whirling outward from her waist. No readable text or logo.",
+        "A moth rests on a black puddle, its wings patterned by purple and green interference bands. No readable text or logo.",
       ],
     },
     'SP10-014': {
@@ -80,9 +80,9 @@ const spec: Spec = {
       ),
       avoid: STYLE_AVOID,
       briefs: [
-        'Macro image of a castle reflected and warped on the surface of a giant iridescent bubble. No text or logo.',
-        "Macro bubble image of a child's face reflected and distorted on the curved surface of a giant soap bubble, swirling rainbow film sliding across the reflection. No text or logo.",
-        'Macro bubble image of a whole city skyline seen inside a giant soap bubble, curved reflections, swirling interference colors and a thin black spot at the top. No text or logo.',
+        "A fortress on a hill is reflected and warped across the surface of a giant iridescent bubble about to pop. No readable text or logo.",
+        "A grandfather's delighted face bends and stretches on the curved skin of a giant bubble, rainbow film sliding across his nose. No readable text or logo.",
+        "A whole city skyline floats inside a giant bubble, curved reflections and swirling interference colors around a thin black spot. No readable text or logo.",
       ],
     },
     'SP10-015': {
@@ -99,9 +99,9 @@ const spec: Spec = {
       ),
       avoid: STYLE_AVOID,
       briefs: [
-        'Mycelium-network image of a stag whose body and antlers are woven from glowing white fungal threads on dark soil. No text or logo.',
-        'Mycelium network image of a human skull built from branching white fungal threads and nodes on dark forest soil, fine hyphae spreading from the eye sockets. No text or logo.',
-        'Mycelium network image of a tree whose roots, trunk and canopy are made of branching white threads and glowing nodes, connecting to smaller mushrooms around it. No text or logo.',
+        "A stag stands on dark soil, its body and antlers woven from glowing white fungal threads that keep growing into the ground. No readable text or logo.",
+        "A human skull on forest soil is built from branching white threads and nodes, fine filaments spreading from its eye sockets. No readable text or logo.",
+        "A tree's roots, trunk and canopy are glowing white threads and nodes, connected underground to every mushroom around it. No readable text or logo.",
       ],
     },
     'SP10-016': {
@@ -118,9 +118,9 @@ const spec: Spec = {
       ),
       avoid: STYLE_AVOID,
       briefs: [
-        "Ferrofluid sculpture of a dragon's crest rising in glossy black spikes above a magnet, sharp cones reflecting a softbox, the liquid pooling at the base. No text or logo.",
-        'Ferrofluid sculpture of a crown of glossy black spikes standing up on a mirror plate, each cone sharp and reflective, a magnet hidden below. No text or logo.',
-        'Ferrofluid sculpture of a hedgehog curled on a white dish, its back a field of glossy black magnetic spikes shimmering under studio light. No text or logo.',
+        "Glossy black spikes rise into a beast's crest above a hidden magnet, sharp cones reflecting a softbox. No readable text or logo.",
+        "On a mirror plate a crown of glossy black magnetic liquid stands up in sharp reflective cones. No readable text or logo.",
+        "On a white dish a hedgehog curls up, its back a field of glossy black magnetic spikes shimmering under studio light. No readable text or logo.",
       ],
     },
     'SP10-017': {
@@ -137,9 +137,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Acrylic-pour painting of a phoenix whose wings are made of poured cells and lacing in crimson, gold and white, the paint layers splitting into round cells along the feathers. No text or logo.',
-        'Acrylic-pour painting of a mountain range at dusk, poured layers of violet, pink and white breaking into cells and lacing along the ridgelines. No text or logo.',
-        'Acrylic-pour painting of a whale breaching, its body made of poured blue and white paint cells, lacing trails splashing off like spray. No text or logo.',
+        "A phoenix spreads wings of poured cells and lacing in crimson, gold and white, the layers splitting into round craters. No readable text or logo.",
+        "A mountain range at dusk is poured in violet, pink and white layers that break into cells along the ridgelines. No readable text or logo.",
+        "A whale breaches in poured blue and white cells, lacing trails splashing off its body like spray. No readable text or logo.",
       ],
     },
     'SP10-018': {
@@ -156,9 +156,9 @@ const spec: Spec = {
       ),
       avoid: STYLE_AVOID,
       briefs: [
-        'Reaction-diffusion image of a leopard whose spots grow into labyrinthine Turing stripes across its body, black and amber maze patterns on a cream ground. No text or logo.',
-        'Reaction-diffusion image of an egg covered in labyrinthine spot and stripe patterns in teal and cream, the maze tightening near the tip. No text or logo.',
-        'Reaction-diffusion image of a coral reef whose branches are formed from Turing patterns, coral pink and deep blue maze stripes. No text or logo.',
+        "A leopard's spots grow into labyrinthine stripes across its body, black and amber mazes on cream. No readable text or logo.",
+        "An egg is covered in labyrinthine spots and stripes in teal and cream, the maze tightening toward the tip. No readable text or logo.",
+        "A coral reef's branches are grown from self-organizing maze stripes in coral pink and deep blue. No readable text or logo.",
       ],
     },
     'SP10-019': {
@@ -175,9 +175,9 @@ const spec: Spec = {
       ),
       avoid: STYLE_AVOID,
       briefs: [
-        'Cymatics image where sand on a vibrating black metal plate forms a heraldic crest of concentric nodal rings and petals, fine grains piled along the lines. No text or logo.',
-        'Cymatics image of a rose window pattern appearing in sand on a vibrating plate, concentric nodal geometry with twelve radiating petals. No text or logo.',
-        'Cymatics image of a vibrating water dish forming an eye-like pattern of rippling concentric rings, light glinting on the standing waves. No text or logo.',
+        "Sand dancing on a vibrating black plate settles into a heraldic crest of concentric nodal rings and petals. No readable text or logo.",
+        "A rose window pattern appears in sand on a humming plate, twelve radiating petals of nodal geometry. No readable text or logo.",
+        "A vibrating dish of water forms an eye of rippling concentric rings, light glinting on the standing waves. No readable text or logo.",
       ],
     },
     'SP10-020': {
@@ -194,9 +194,9 @@ const spec: Spec = {
       ),
       avoid: STYLE_AVOID,
       briefs: [
-        'Nebula image of a colossal horse and rider formed from glowing magenta and teal interstellar gas, dark dust lanes shaping the mane and bright young stars scattered through. No text or logo.',
-        'Nebula image of a crowned skull formed from glowing violet gas and dark dust lanes, a cluster of blue stars sparkling in its eye sockets. No text or logo.',
-        'Nebula image of a vast whale swimming through space made of teal gas and dust lanes, stars shining through its fins. No text or logo.',
+        "A colossal horse and rider form from glowing magenta and teal interstellar gas, dark dust lanes shaping the mane. No readable text or logo.",
+        "A crowned skull glows in violet gas and dark dust lanes, blue star clusters sparkling in its eye sockets. No readable text or logo.",
+        "A vast whale swims through space in teal gas and dust lanes, stars shining through its fins. No readable text or logo.",
       ],
     },
   },
@@ -218,9 +218,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Marbled-paper image of a sea serpent whose body is combed indigo and ochre marbling, feathered patterns along its coils and peacock swirls in the waves. No text or logo.',
-        'Marbled-paper image of a peacock whose tail is a peacock-pattern marbling in teal, gold and rust, combed feathering along the body. No text or logo.',
-        'Marbled-paper image of a full moon over rolling waves, swirled indigo marbling for the sea and a pale feathered disc above. No text or logo.',
+        "A sea serpent's body is combed indigo and ochre, feathered patterns running along its coils and peacock swirls in its eye. No readable text or logo.",
+        "A peacock's tail blooms in teal, gold and rust peacock-pattern swirls, combed feathering along its body. No readable text or logo.",
+        "A full moon hangs over rolling waves, swirled indigo for the sea and a pale feathered disc above. No readable text or logo.",
       ],
     },
     {
@@ -240,9 +240,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Resin-geode art of a human eye made of concentric amethyst and teal resin rings with gold edge veins, a crystal cluster forming the pupil. No text or logo.',
-        'Resin-geode art of an egg made of poured concentric rings in deep green and white, a sparkling crystal center and gold leaf rims. No text or logo.',
-        'Resin-geode art of a round table top with poured ocean-blue rings, crystal clusters at the center and gold veins at the edge. No text or logo.',
+        "A human eye is poured in concentric amethyst and teal rings with gold edge veins, a crystal cluster for the pupil. No readable text or logo.",
+        "An egg of poured concentric rings in deep green and white opens to a sparkling crystal center rimmed in gold leaf. No readable text or logo.",
+        "A round tabletop holds poured ocean-blue rings, crystal clusters at its center and gold veins along the edge. No readable text or logo.",
       ],
     },
     {
@@ -262,9 +262,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Lava-lamp image of a rising phoenix made of glowing orange wax blobs merging and splitting in red liquid, soft bulbous shapes lit from below. No text or logo.',
-        'Lava-lamp image of a slow-dancing couple formed by two wax blobs merging in glowing purple liquid, soft rounded forms. No text or logo.',
-        'Lava-lamp image of a jellyfish made of rising green wax blobs in glowing yellow liquid, tentacles stretching and splitting. No text or logo.',
+        "A phoenix rises from glowing orange wax blobs merging and splitting in red liquid, lit from below. No readable text or logo.",
+        "A slow-dancing couple are two soft glowing blobs drifting together and merging into one inside warm purple liquid, lit from below like a nightclub. No readable text or logo.",
+        "A jellyfish of rising green blobs stretches its tentacles through glowing yellow liquid until they split. No readable text or logo.",
       ],
     },
     {
@@ -284,9 +284,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Dendritic-ink image of a tree-shaped figure made of branching black fern-like dendrites spreading across white paper, fine fractal edges. No text or logo.',
-        'Dendritic-ink image of a crown of branching mineral dendrites growing on a slate tile, fern-like black and rust tendrils. No text or logo.',
-        'Dendritic-ink image of a lightning bolt branching over a harbor, the strike drawn by black ink dendrites spreading on wet paper. No text or logo.',
+        "A tree-shaped figure spreads across white paper in branching black fern-like tendrils with fine fractal edges. No readable text or logo.",
+        "On a slate tile a crown of branching mineral tendrils grows in fern-like black and rust. No readable text or logo.",
+        "A lightning strike over a sleeping harbor branches out as black tendrils creeping through wet paper, each fork splitting into finer fern-like threads. No readable text or logo.",
       ],
     },
     {
@@ -306,9 +306,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Salt-bloom watercolor of a hilltop monastery at night, deep indigo wash with starry salt blooms scattered across the sky and softer blooms in the trees. No text or logo.',
-        'Salt-bloom watercolor of an owl on a snowy branch, grey-blue washes with salt crystals leaving starry bloom textures on its feathers. No text or logo.',
-        'Salt-bloom watercolor of a sea serpent in a green wave, salt blooms bursting across the water like foam and stars. No text or logo.',
+        "A hilltop monastery at night sits under a deep indigo wash scattered with starry crystal blooms. No readable text or logo.",
+        "An owl on a snowy branch is washed in grey-blue, crystals leaving starry textures across its feathers. No readable text or logo.",
+        "A sea serpent rises in a green wave, crystal blooms bursting across the water like foam and stars. No readable text or logo.",
       ],
     },
     {
@@ -328,9 +328,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Coffee-stain painting of a monk reading by a window, brown coffee washes with dark tide rings forming the shadows of his robe and the book. No text or logo.',
-        'Coffee-stain painting of a fox sleeping in tall grass, warm brown washes and dark tide rings where the coffee dried, blooms in the background. No text or logo.',
-        'Coffee-stain painting of a steam train crossing a viaduct, layered brown washes, tide rings and bloom marks in the smoke. No text or logo.',
+        "A monk reading by a window is painted in brown washes, dark tide rings forming the shadows of his robe. No readable text or logo.",
+        "A fox sleeps in tall grass in warm brown washes, dark rings marking where each pool dried. No readable text or logo.",
+        "A steam train crosses a viaduct in layered brown washes, tide rings and blooms swirling through its smoke. No readable text or logo.",
       ],
     },
     {
@@ -350,9 +350,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Hydro-dipped fencing mask coated in neon swirls of pink, cyan and black, the paint film wrapping every curve, drips at the base. No text or logo.',
-        'Hydro-dipped skull coated in swirling marbled paint film of gold and black, glossy finish, the pattern stretched over the cheekbones. No text or logo.',
-        'Hydro-dipped electric guitar coated in psychedelic swirls of orange and violet, the paint film flowing around the body and neck. No text or logo.',
+        "A fencing mask has been dipped through neon swirls of pink, cyan and black, the film wrapping every curve with drips at the base. No readable text or logo.",
+        "A skull is coated in a swirling marbled film of gold and black, the pattern stretched tight over its cheekbones. No readable text or logo.",
+        "An electric guitar is dipped in psychedelic orange and violet swirls that flow around its body and neck. No readable text or logo.",
       ],
     },
     {
@@ -372,9 +372,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Iron-filings image of a coiled dragon traced by field lines of filings on white paper, dense black clusters at the poles hidden beneath. No text or logo.',
-        'Iron-filings image of a crown traced by radiating field lines on white paper, filings bristling at the points above hidden magnets. No text or logo.',
-        'Iron-filings image of a hummingbird traced by curving field lines on cream paper, filings clustering densely at the wings. No text or logo.',
+        "A coiled serpent is traced by field lines of iron filings on white paper, dense black clusters marking the hidden poles. No readable text or logo.",
+        "A crown is traced by radiating field lines, filings bristling at its points above hidden magnets. No readable text or logo.",
+        "A hummingbird is traced by curving field lines on cream paper, filings clustering densely at the wings. No readable text or logo.",
       ],
     },
     {
@@ -394,9 +394,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Frost-fern image of a stag traced by window frost crystals on a dark pane, feathery ice ferns forming the antlers and body. No text or logo.',
-        'Frost-fern image of a sailing ship growing in window frost, crystal feathers forming its sails and rigging against a night sky. No text or logo.',
-        'Frost-fern image of a dancer in frost crystals on a window, feathery ice ferns forming her skirt and arms. No text or logo.',
+        "A stag is traced across a dark pane by feathery ice crystals, ferns of frost forming its antlers. No readable text or logo.",
+        "A sailing ship grows across a winter window, crystal feathers forming its sails and rigging against the night. No readable text or logo.",
+        "A dancer grows in ice crystals on a window, feathery ferns forming her skirt and outstretched arms. No readable text or logo.",
       ],
     },
     {
@@ -416,9 +416,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Liquid light show image of a wizard's face formed from projected oil and dye blobs, saturated magenta and yellow pulsing across a dark wall. No text or logo.",
-        'Liquid light show image of a rock band on stage bathed in projected oil and dye blobs, saturated colors pulsing over their silhouettes. No text or logo.',
-        'Liquid light show image of an eye opening in bubbling projected oil blobs, deep blue and orange pulsing across a dark screen. No text or logo.',
+        "A wizard's face forms out of projected blobs of dye and oil, saturated magenta and yellow pulsing across a dark wall. No readable text or logo.",
+        "A rock band on stage is bathed in projected blobs, saturated colors pulsing over their silhouettes. No readable text or logo.",
+        "An eye opens inside bubbling projected blobs, deep blue and orange pulsing across a dark screen. No readable text or logo.",
       ],
     },
   ] satisfies Create[],
