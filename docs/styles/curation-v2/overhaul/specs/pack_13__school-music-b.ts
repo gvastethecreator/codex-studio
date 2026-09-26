@@ -24,9 +24,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Seaside summer anime frame of a young fisher girl and a sea-serpent hatchling sharing a melting ice pop on a harbor wall, towering cumulus over a cobalt sea, heat haze shimmering on the stones, bright white sun. No readable text or logo.',
-        'Summer haze anime frame of a boy pushing a bicycle up a coastal hill road, cicada-loud stillness, sweat on his neck, the sea blazing below and a lighthouse in the distance. No readable text or logo.',
-        'Summer anime frame of friends lying on a wooden pier with feet in the water, clouds reflected on the flat sea, a paper boat drifting toward a small island shrine. No readable text or logo.',
+        "A fisherwoman and a baby sea serpent share a melting ice pop on a harbor wall beneath towering cumulus clouds. No readable text or logo.",
+        "Heat shimmer rises off a coastal road where a lone bus-stop bench has partly melted into a lazy curve. No readable text or logo.",
+        "A lifeguard naps under a beach umbrella while an octopus in sunglasses quietly takes over her watch tower. No readable text or logo.",
       ],
     },
     {
@@ -45,9 +45,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Dawn practice anime frame of a young squire swinging a wooden sword alone in a misty training yard before sunrise, breath clouds, dew on the practice dummies, the first gold light touching the castle towers. No readable text or logo.',
-        'Dawn anime frame of a runner on a foggy riverside path, only her silhouette and breath visible, a heron lifting off the water. No readable text or logo.',
-        'Dawn anime frame of an archer loosing arrows at a target in a misty field, quiver half empty, sky turning pale gold. No readable text or logo.',
+        "A squire swings a wooden sword alone in a misty yard before sunrise, each stroke parting the mist like a curtain. No readable text or logo.",
+        "An early runner is joined every morning by a heron that jogs beside her along the misty river and is becoming slightly competitive. No readable text or logo.",
+        "At first light a violinist rehearses alone in a frozen field, the mist around her swaying with each bow stroke. No readable text or logo.",
       ],
     },
     {
@@ -66,9 +66,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Rooftop wind anime frame of a young tower guard leaning into a strong wind on castle battlements, cloak and hair streaming, a paper kite torn loose and flying away, huge clouds racing across a bright sky. No readable text or logo.',
-        'Anime frame of two friends on a school rooftop holding their skirts and jackets against gusts, laughing, fence rattling. No readable text or logo.',
-        'Rooftop wind anime frame of a young witch standing on a windmill roof as her hat flies off, seeds and autumn leaves swirling past, the sails turning and the sky racing with clouds. No readable text or logo.',
+        "A tower guard leans into a howling gale on the battlements, cloak streaming, as a flock of kites tears loose from the city below. No readable text or logo.",
+        "An office worker's lunch lifts off in a sudden gust, sandwich slices flapping away like birds as she lunges after them. No readable text or logo.",
+        "A lone woman stands on a hospital roof in a strong breeze, letting a long scarf fly away into the racing clouds. No readable text or logo.",
       ],
     },
     {
@@ -87,9 +87,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Late train anime frame of a weary young knight in dented armor dozing against a train window at night, her reflection layered over the passing lights of a dark countryside, a small dragon asleep in her lap. No readable text or logo.',
-        'Late train anime frame of a nearly empty carriage at midnight, fluorescent light humming, a single passenger in a traveling cloak watching her own reflection over the dark fields, rain streaking the glass. No readable text or logo.',
-        'Late train anime frame of two strangers on a night train sharing one pair of earphones without speaking, passing station lights sliding across their faces, both almost smiling. No readable text or logo.',
+        "A weary knight in dented armor dozes against a carriage window at night, her reflection layered over the city lights like a ghost still awake. No readable text or logo.",
+        "The last service home is so empty that the conductor sits down and shares a bento with the only passenger. No readable text or logo.",
+        "In a dark carriage window the reflection shows a passenger calmly reading in a seat that is empty. No readable text or logo.",
       ],
     },
     {
@@ -108,9 +108,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Soft focus anime close-up of a young woman holding a sealed letter with a wax dragon seal, her fingers in sharp focus while her face and the candlelit room melt into warm bokeh. No readable text or logo.',
-        'Soft focus anime close-up of two hands exchanging a single white flower at a garden gate, the flower sharp, the faces and lantern-lit garden melting into rose and gold bokeh. No readable text or logo.',
-        'Soft focus anime extreme close-up of an eye reflecting a string of warm fairy lights and a distant figure, lashes sharp, everything else dissolving into glowing circles. No readable text or logo.',
+        "A woman holds a wax-sealed envelope, her fingers sharp while her face dissolves into the glowing bokeh of a summer window. No readable text or logo.",
+        "A mail carrier delivers a love note to the wrong house, and the retired sailor who opens it clutches it with trembling hands. No readable text or logo.",
+        "Hundreds of unsent envelopes drift in the sunny blur of an attic like pale petals, one slowly floating into focus. No readable text or logo.",
       ],
     },
     {
@@ -129,9 +129,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Club room clutter comedy anime frame of a monster-research club room packed with jars, taxidermy, maps and a sleeping baby griffin, five members reacting in chibi panic as a potion bubbles over. No readable text or logo.',
-        'Club room clutter comedy anime frame after a failed cake experiment: frosting on the ceiling, a scorched oven, flour everywhere and four members frozen in chibi shock as the club president walks in. No readable text or logo.',
-        'Club room clutter anime frame of a band rehearsal in a tiny room crammed with amps, costumes and snack boxes, a drummer tangled in cables, a bassist asleep on a pile of coats. No readable text or logo.',
+        "A monster-research room is crammed with jars, maps and a baby griffin asleep in the paper tray while the members argue over its name. No readable text or logo.",
+        "A board-game society's room is buried under so many unfinished games that the president has to snorkel through the pieces to reach the table. No readable text or logo.",
+        "In the astronomy society's cluttered room at midnight, members sleep on beanbags while their telescope slowly swings to follow a comet. No readable text or logo.",
       ],
     },
     {
@@ -150,9 +150,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Library sunbeam anime frame of a young scribe reading on a rolling ladder in an ancient library, a shaft of sun falling across her page, dust motes glowing, a small owl dozing on the shelf. No readable text or logo.',
-        'Library sunbeam anime frame of a student asleep on an open atlas at a long oak table, a sunbeam slowly crossing her hair, dust drifting, tall shelves fading into warm shadow. No readable text or logo.',
-        'Library sunbeam anime frame of a fat orange librarian cat asleep on a tall stack of old books in a pool of sun, a young clerk tiptoeing past with a cart. No readable text or logo.',
+        "A scribe reads on a rolling ladder in an ancient library while a shaft of sun turns the dust around her into a slow galaxy. No readable text or logo.",
+        "A retired librarian and a very old tortoise share one book in a sunbeam, turning a single page every hour. No readable text or logo.",
+        "Between tall shelves a book has fallen open by itself in the sunlight, and its pages are gently breathing. No readable text or logo.",
       ],
     },
     {
@@ -171,9 +171,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Choir harmony anime frame of a village choir singing in a stone chapel at midwinter, rows of uplifted faces lit gold by candles and a soft beam from the high window, breath visible, a small child in front holding the highest note. No readable text or logo.',
-        'Choir anime frame of a small choir singing on a grassy hilltop at sunset, robes and hair lifting in the wind, open mouths and closed eyes, the valley and a castle glowing below. No readable text or logo.',
-        'Choir anime frame of a choir of translucent spirits singing in a moonlit ruined abbey, soft blue glow on their faces, one living girl standing among them singing too. No readable text or logo.',
+        "Villagers sing in a stone chapel at midwinter, their breath rising into a glowing golden cloud above the pews. No readable text or logo.",
+        "A crew of burly firefighters rehearses a lullaby in four-part harmony at the station, helmets resting on their laps. No readable text or logo.",
+        "A lone singer stands in an empty cathedral singing to rows of candles, every flame bending toward her voice. No readable text or logo.",
       ],
     },
   ] satisfies Create[],

@@ -9,107 +9,107 @@ const spec: Spec = {
   updates: {
     'SP05-081': {
       briefs: [
-        'Anime frame of three roommates in a small apartment kitchen, one quietly tying the apron of another while the third hides a smile behind a mug, rounded tapering contours, compact cel shadows and precise small facial marks carrying every feeling. No readable text or logo.',
-        'Anime close-up of a young cellist glancing at her bandmate before the first note, the tiny widening of her eyes and parted lips drawn with precise marks, soft stage light and compact cel shadow. No readable text or logo.',
-        'Anime frame of a girl and her grandmother folding laundry on a sunny veranda, a single shared laugh caught in fine facial marks, rounded contours and warm compact shadows. No readable text or logo.',
+        "Three roommates share a tiny kitchen, one quietly tying another's apron while the third hides a smile behind a ladle as the pot boils over. No readable text or logo.",
+        "A woman realizes her grumpy coworker has secretly watered her desk plant for a year, and he looks away, ears turning red. No readable text or logo.",
+        "An old couple share one pair of earbuds on a rainy bench, each pretending to enjoy the other's music. No readable text or logo.",
       ],
     },
     'SP05-082': {
       briefs: [
-        'Absurd comedy anime frame of a calm office worker sipping tea while a dragon crashes through the break-room wall behind her, her thin steady contours unchanged while the wall explodes in sharp wedges and elastic debris arcs. No readable text or logo.',
-        'Deadpan anime frame of a student reading a textbook as a rocket-powered cat streaks past her desk, her line still and calm, the cat drawn in sharp wedges and speed arcs. No readable text or logo.',
-        'Deadpan anime frame of a knight politely bowing to a king at the exact instant the throne behind him collapses into splinters, still contours on the knight, explosive wedges on the throne. No readable text or logo.',
+        "A calm office worker sips tea while a dragon crashes through the break-room wall behind her, her expression not moving at all. No readable text or logo.",
+        "A librarian shushes a tornado sweeping between the shelves, and the tornado politely lowers its voice. No readable text or logo.",
+        "A man opens his fridge and a whole marching band bursts out playing, so he takes the milk and closes the door. No readable text or logo.",
       ],
     },
     'SP05-083': {
       briefs: [
-        'Low-stakes anime frame of three friends sitting on a riverside wall eating convenience-store buns and arguing mildly about which cloud looks like a duck, thin even contours, flat low-contrast cel and tiny clear expression changes. No readable text or logo.',
-        'Low-stakes anime frame of two guards on a castle wall at noon passing the time with a sleepy card game, flat calm cel fields and small shifts of expression. No readable text or logo.',
-        'Low-stakes anime frame of a witch and her familiar doing grocery lists at a kitchen table, the cat sighing, thin even lines and muted flat color. No readable text or logo.',
+        "Three friends sit on a riverside wall eating buns and arguing mildly about whether clouds have feelings. No readable text or logo.",
+        "Two neighbors debate for an hour over the correct way to hang one single sock on the line. No readable text or logo.",
+        "Coworkers lounging in a quiet break room seriously rank the office plants from least to most judgmental, pointing at each pot in turn. No readable text or logo.",
       ],
     },
     'SP05-084': {
       briefs: [
-        'Whimsy anime frame of a girl hanging laundry on a rooftop as one sheet billows into the shape of a galaxy, precisely inked forms in clean flat color, a luminous edge along the sheet and a sharp value break against the ordinary sky. No readable text or logo.',
-        'Anime frame of a boy opening a fridge to find a tiny starry sky inside, clean planar color and a glowing edge on the door. No readable text or logo.',
-        'Anime frame of an old man feeding pigeons as one turns into a small comet, planar color and one luminous rim. No readable text or logo.',
+        "A woman hangs laundry on a rooftop and one sheet billows into the shape of a galaxy, stars spilling out of the fold. No readable text or logo.",
+        "A bus driver stops patiently to let a slow comet cross the road in front of him. No readable text or logo.",
+        "A man stirs his coffee and the swirl opens into a tiny black hole that very politely eats the sugar cube. No readable text or logo.",
       ],
     },
     'SP05-085': {
       briefs: [
-        'Anxiety comedy anime frame of a young mage about to present her first spell to the academy council, her contours breaking into small offset segments and misregistered color edges as she sweats, the council calm and solid. No readable text or logo.',
-        'Anime frame of an office worker staring at a pile of scrolls, her outline glitching with small breaks and offset color edges. No readable text or logo.',
-        'Anime frame of a girl bursting into relieved laughter after a disaster, the glitch edges settling back into clean lines. No readable text or logo.',
+        "A young mage presents her first spell to the academy council, her outline breaking into small glitches as her wand starts to smoke. No readable text or logo.",
+        "A job applicant rehearses a handshake in a restroom mirror until his reflection loses patience and shakes first. No readable text or logo.",
+        "A woman screams into a pillow and its feathers burst out as a flock of calm white doves. No readable text or logo.",
       ],
     },
     'SP05-086': {
       briefs: [
-        'Restorative comfort anime frame of a traveler thawing by a hearth in a snowbound mountain inn, cool blue ambient values filling the room and warmer local highlights on hands, soup bowl and face, rounded contours and broad color planes. No readable text or logo.',
-        'Anime frame of a girl wrapped in a blanket on a cold balcony holding cocoa, cool and warm temperature depth. No readable text or logo.',
-        'Restorative anime frame of a sick knight in a cold stone room being fed broth by a friend, cool blue ambient values and warm highlights on the bowl and their hands. No readable text or logo.',
+        "A traveler thaws by the hearth of a snowbound mountain inn while the innkeeper's enormous shaggy dog lies across her frozen boots. No readable text or logo.",
+        "A snowplow driver stops at 4 a.m. to set a steaming bowl of soup beside a roadside snowman, just in case. No readable text or logo.",
+        "On a blue winter night one warm window glows in an abandoned village, where an old man still bakes bread for no one. No readable text or logo.",
       ],
     },
     'SP05-087': {
       briefs: [
-        'Pastoral anime frame of a young shepherd lying in a vast meadow watching sheep and one small cloud dragon drift overhead, fine unbroken outlines, broad pale washes and very little detail, lots of breathing room. No readable text or logo.',
-        'Pastoral anime frame of a girl cycling along a quiet country road through green rice fields, fine unbroken outlines, broad pale washes and lots of empty sky. No readable text or logo.',
-        'Pastoral anime frame of an old farmer resting under a single tree on a hill at noon, fine unbroken outlines, broad pale washes and very little surface detail. No readable text or logo.',
+        "A young shepherd lies in a vast meadow watching her flock and one small cloud dragon drift slowly overhead. No readable text or logo.",
+        "An old farmer naps in a hammock strung between two apple trees while a goat stands on his belly. No readable text or logo.",
+        "A lone windmill turns on a hill of pale grass while a heron stands motionless in the stream below. No readable text or logo.",
       ],
     },
     'SP05-088': {
       briefs: [
-        'Domestic fantasy anime frame of a family breakfast where a giant friendly dragon squeezes its head through the kitchen window for toast, large clear silhouettes with tiny internal marks and fine edge detail carrying the scale gap. No readable text or logo.',
-        'Domestic fantasy anime frame of a tiny wizard no taller than a teacup pushing an enormous cart down an ordinary supermarket aisle, big clear silhouettes of shelves against his tiny finely detailed robe and hat. No readable text or logo.',
-        'Domestic fantasy anime frame of a shaggy house spirit the size of a wardrobe folding laundry with great care while children play around its feet, large silhouette and tiny fine marks on the socks it holds. No readable text or logo.',
+        "A giant friendly dragon squeezes its head through the kitchen window for breakfast, one nostril as big as the table. No readable text or logo.",
+        "A thumb-sized wizard stirs a potion in a teacup while a housecat looms behind him like a mountain. No readable text or logo.",
+        "The houseplant has grown into a forest overnight, and a man in pajamas hacks a path through it to the bathroom. No readable text or logo.",
       ],
     },
     'SP05-089': {
       briefs: [
-        'Soft-surreal deadpan anime frame of a girl waiting at a bus stop where the bus is a slow-moving whale floating just above the road, smooth contours drifting a fraction at a few edges, calm complete shadow masses. No readable text or logo.',
-        'Soft-surreal anime frame of a man calmly reading a book in a sunlit room where chairs and a potted plant slowly float an inch off the floor, a few edges drifting a fraction, calm shadows. No readable text or logo.',
-        'Soft-surreal anime frame of a quiet cafe where the tea pours upward from the cup into the pot, the waitress unbothered, smooth contours with small drifting edges. No readable text or logo.',
+        "A woman waits at a bus stop where the bus is a slow whale floating just above the road, and she simply checks her watch. No readable text or logo.",
+        "In his quiet backyard at dusk a man calmly waters a garden of lightbulbs, which bloom one by one into soft glowing flowers. No readable text or logo.",
+        "An elevator opens onto an open field at night, and the passengers step out as if it were the fifth floor. No readable text or logo.",
       ],
     },
     'SP05-090': {
       briefs: [
-        'Memory-washed anime frame of a young widow standing at a seaside grave in wind, soft ink contours under translucent grey-blue veils, only her eyes and the flowers in her hands kept crisp. No readable text or logo.',
-        'Memory-washed anime frame of a boy remembering a childhood summer at a river, friends splashing in soft ink under translucent golden veils, only a red bucket kept crisp. No readable text or logo.',
-        'Memory-washed anime frame of an old knight in a quiet room holding a faded blue ribbon, soft ink under grey veils, his scarred hands and the ribbon crisp. No readable text or logo.',
+        "A widow stands at a seaside grave in the wind as her translucent wedding day plays faintly over the waves. No readable text or logo.",
+        "An old man finds his late wife's handprint in the dust on the piano lid and cannot bring himself to wipe it away. No readable text or logo.",
+        "A woman lingers in the flower shop where she once worked, the soft grey light full of translucent echoes of customers long gone. No readable text or logo.",
       ],
     },
     'SP05-201': {
       briefs: [
-        'Observational mystery anime frame of a young tea shop owner noticing a single wet footprint on a dry wooden floor, fine precise contours and sharply resolved microdetails on the footprint and teacups against quiet color fields. No readable text or logo.',
-        'Observational mystery anime frame of a detective girl studying a torn glove left on a park bench, sharply resolved stitching and a stain, quiet color fields around her. No readable text or logo.',
-        'Observational mystery anime frame of a young scholar examining an unusual iron key under a brass lamp, fine contours and razor-sharp microdetail on the key teeth and a thread caught in it, quiet color around. No readable text or logo.',
+        "A tea shop owner notices a single wet footprint on a dry wooden floor leading straight into a closed cupboard. No readable text or logo.",
+        "A retired detective counts the leaves in her teacup and names the culprit before the kettle stops whistling. No readable text or logo.",
+        "In a quiet guesthouse one teacup of twelve is found upside down every morning, and no guest will admit to it. No readable text or logo.",
       ],
     },
     'SP05-202': {
       briefs: [
-        'Community festival anime frame of a village market at dusk, stalls of bread, lanterns and masks, neighbors laughing, rounded contours and overlapping modular color shapes with slight edge variation like a layered print. No readable text or logo.',
-        'Community anime frame of neighbors cleaning a canal together on a sunny morning, buckets, brooms and a borrowed boat, rounded contours and overlapping modular color shapes like layered print. No readable text or logo.',
-        'Community anime frame of a village dancing in a ring around a harvest bonfire, children on shoulders, lantern garlands, overlapping modular color with slight edge offsets. No readable text or logo.',
+        "At a village market at dusk every baker has shaped a loaf like the town's lost dog, and the dog has come home to inspect them. No readable text or logo.",
+        "Neighbors pass a giant festival lantern hand to hand down a narrow street, each one adding a patch of colored paper. No readable text or logo.",
+        "At the harvest market a baker trades bread with a shy forest spirit that pays in acorns and wildflowers. No readable text or logo.",
       ],
     },
     'SP05-203': {
       briefs: [
-        'Youth momentum anime frame of three teenagers sprinting along a seawall toward a sunrise horizon, tapered contours and broad clean gradients pushing everything forward, bright edge accents on hair and arms. No readable text or logo.',
-        'Youth momentum anime frame of a girl leaping off the end of a wooden pier into a blazing summer sea, arms wide, tapered contours and clean gradients pulling toward the horizon. No readable text or logo.',
-        'Youth momentum anime frame of a young knight galloping along a coastal road toward a distant white city at dawn, cloak streaming, bright edge accents following the motion. No readable text or logo.',
+        "Three young friends sprint along a seawall toward the sunrise, their shadows racing ahead of them over the waves. No readable text or logo.",
+        "A cyclist rides so fast toward the horizon that the road rolls up behind her like a carpet. No readable text or logo.",
+        "A young woman runs the length of a pier and leaps into the sea at dawn, her whole body pointing at the rising sun. No readable text or logo.",
       ],
     },
     'SP05-204': {
       briefs: [
-        'Healing reverie anime frame of a girl sitting at a window as a breeze moves the curtain and scatters petals across her desk, transparent glaze layers and softly echoed values, every shape still single and sharp. No readable text or logo.',
-        'Healing reverie anime frame of a boy floating on his back in a still mountain lake at noon, transparent glaze layers in the water and softly echoed reflections, his shape crisp. No readable text or logo.',
-        'Healing reverie anime frame of a cat asleep on a sunny bookshelf as a breeze stirs the pages of an open book, transparent glazes and echoed values. No readable text or logo.',
+        "A woman sits at a window as a breeze lifts the curtain and scatters petals across her desk, one landing exactly on her pen. No readable text or logo.",
+        "A line of white shirts ripples in the sea breeze, one sleeve waving back at a passing ferry. No readable text or logo.",
+        "A convalescent reads beside an open hospital window while the breeze gently turns the pages for her. No readable text or logo.",
       ],
     },
     'SP05-205': {
       briefs: [
-        'Breezy summer anime frame of a girl repainting an old boat on a sunny beach, loose brush contours, open paper gaps and simple geometric underpainting in sea blue and sun yellow. No readable text or logo.',
-        'Breezy summer anime frame of friends painting a big whale mural on a harbor wall, paint cans and ladders, loose brush contours, open paper gaps and simple geometric underpainting. No readable text or logo.',
-        'Breezy summer anime frame of a boy sketching the sea from a windy hilltop, his sketchbook pages flapping, loose brush contours and open paper gaps in the clouds. No readable text or logo.',
+        "A woman repaints an old boat on a sunny beach in stripes of turquoise and coral while her dog quietly gets painted too. No readable text or logo.",
+        "A retired man repaints his whole house sunflower yellow on a whim while the neighbors stare from their gardens. No readable text or logo.",
+        "An outdoor painting class works on a summer hill, and one easel's painting holds more sunshine than the sky behind it. No readable text or logo.",
       ],
     },
   },

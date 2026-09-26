@@ -8,100 +8,100 @@ const spec: Spec = {
   updates: {
     'SP05-101': {
       briefs: [
-        'Fluid painterly anime frame of a sea witch rising from a moonlit tide, watercolor blooms dissolving the edges of her hair and cloak into the waves, pigment granulation in the foam, her silhouette kept clear through value alone. No readable text or logo.',
-        'Fluid painterly anime frame of a girl running through a summer rainstorm, wet-paper blooms softening her umbrella and the street lights into pooled color while her face stays readable. No readable text or logo.',
-        'Fluid painterly anime frame of a dragon passing through low clouds at dawn, granulating pigment on its wings and edges melting into the sky, the head held sharp by dark value. No readable text or logo.',
+        "A sea witch rises from a moonlit tide as watercolor blooms dissolve the edges of her hair into the waves. No readable text or logo.",
+        "A koi swims up a waterfall and dissolves into spreading pigment that reforms as a dragon of color. No readable text or logo.",
+        "A woman stands in a rain-soaked field as the paint of her dress runs down into the grass. No readable text or logo.",
       ],
     },
     'SP05-102': {
       briefs: [
-        'Gritty realist seinen anime frame of a mercenary cleaning her sword in a rain-soaked stable, grounded proportions and weight, fine wear on leather straps and chipped steel, selective hatching in the shadows. No readable text or logo.',
-        'Gritty seinen anime frame of a dockworker hauling rope on a fishing boat at night, practical surface detail on the wet deck and rope fibers, restrained hatching. No readable text or logo.',
-        'Gritty seinen anime frame of two detectives smoking under an overpass, heavy coats with realistic folds and worn cuffs, hatching in the concrete. No readable text or logo.',
+        "A mercenary cleans her sword in a rain-soaked stable while the horse beside her watches with tired eyes. No readable text or logo.",
+        "A night-shift factory worker eats his bento on a stack of pallets, forklift headlights washing over his face. No readable text or logo.",
+        "An old detective buttons his worn coat in a dingy hallway before knocking on the door he has avoided for ten years. No readable text or logo.",
       ],
     },
     'SP05-103': {
       briefs: [
-        'Neon hyperpop anime frame of an idol witch posing on a floating stage, crisp contours with RGB edge separation, small glitch pixels scattered through her hair and a spectral holographic sheen on her cape. No readable text or logo.',
-        'Hyperpop anime frame of a skateboarding knight kickflipping past a holographic castle, RGB split edges and glitch pixels on the board. No readable text or logo.',
-        'Hyperpop anime frame of a cat familiar in sunglasses with holographic fur sheen and glitch sparkles around its ears. No readable text or logo.',
+        "An idol witch poses on a floating stage, RGB edge separation splitting her into three colored ghosts. No readable text or logo.",
+        "A karaoke-loving robot belts a chorus so loud that every neon tube on the street glitches into pixels. No readable text or logo.",
+        "A hologram dog glitches in the rain outside a closed arcade, still waiting for its owner. No readable text or logo.",
       ],
     },
     'SP05-104': {
       briefs: [
-        'Minimalist indie anime frame of a lone girl sitting on a snowy bench at a village edge, reduced to a handful of contours, a broad pale value field and one muted red accent on her scarf. No readable text or logo.',
-        'Minimalist anime frame of a knight and horse standing on a flat plain at dusk, only essential lines and one muted gold accent on the sky. No readable text or logo.',
-        'Minimalist anime frame of a cat sitting in a doorway of an empty room, few contours and one muted blue accent. No readable text or logo.',
+        "A lone woman sits on a snowy bench at the village edge, only her red scarf breaking the broad white silence. No readable text or logo.",
+        "A tiny figure walks the length of a very long wall at dusk, and one small bird follows a few steps behind. No readable text or logo.",
+        "A single yellow umbrella drifts across a vast empty grey plaza in the rain, the person beneath it too small to see. No readable text or logo.",
       ],
     },
     'SP05-105': {
       briefs: [
-        'Textured hand-drawn anime frame of a young alchemist tending a bubbling flask in a cluttered workshop, graphite underdrawing visible, colored-pencil fill, paper tooth and a registration mark in the margin. No readable text or logo.',
-        'Rough hand-drawn anime frame of a boy and a big dog walking through a wheat field, visible graphite and colored-pencil texture. No readable text or logo.',
-        'Rough anime frame of a witch on a broom above rooftops, pencil tooth and registration marks at the edges. No readable text or logo.',
+        "A young alchemist tends a bubbling flask in a cluttered workshop, the graphite underdrawing of a second flask still visible. No readable text or logo.",
+        "A dragon drawn in colored pencil naps curled on a sketchbook page right beside its own half-erased, clumsier first draft. No readable text or logo.",
+        "A traveler walks off the edge of the finished drawing and into the blank paper tooth beyond. No readable text or logo.",
       ],
     },
     'SP05-106': {
       briefs: [
-        'Deco-geometric anime frame of a sorceress in a tall gown in a grand station hall, fan-like geometry in her collar, ruler-straight lines and faceted color cells shaping her cloak, the pose kept naturally asymmetric. No readable text or logo.',
-        'Deco-geometric anime frame of an airship captain on a gold-trimmed deck, fan-like geometry in her coat, ruler-straight rails and faceted color cells in the sky. No readable text or logo.',
-        'Deco-geometric anime frame of a dancer mid-turn on a black marble floor, her skirt opening into fan-like geometry, ruler-straight lines in the columns behind and faceted color cells in gold and teal, the pose natural and off-balance. No readable text or logo.',
+        "A sorceress in a tall gown crosses a grand station hall, fan-shaped geometry rising from her collar like a sunburst. No readable text or logo.",
+        "A dapper robot bellhop carries a teetering tower of hatboxes up a zigzag hotel staircase lined with fan-shaped brass lamps. No readable text or logo.",
+        "A stepped skyscraper at dusk releases a flock of pigeons folded from pure geometric planes, their wings opening like fans above the avenue. No readable text or logo.",
       ],
     },
     'SP05-107': {
       briefs: [
-        'Visceral horror anime frame of a pale plague doctor standing in a candlelit crypt, dense organic cross-contour on robes and mask, anatomical-looking patterning in the stone, carmine, bone and black contrast with no wounds or gore. No readable text or logo.',
-        'Visceral horror anime frame of a thorn-covered tree grown in the shape of a ribcage in fog, dense organic cross-contour, carmine, bone and black contrast. No readable text or logo.',
-        'Visceral horror anime frame of a masked cultist lit by a single red lamp in a stone cellar, dense organic cross-contour on robes and walls, carmine, bone and black contrast, nothing wounded or gory shown. No readable text or logo.',
+        "A pale plague doctor stands in a candlelit crypt as dense organic cross-contour crawls over his robes and mask. No readable text or logo.",
+        "In a butcher's shop window at night the hanging sausages have quietly begun to breathe, fogging the glass in slow rhythm. No readable text or logo.",
+        "A towering tree whose bark looks like woven muscle fiber bends low over a sleeping village, its roots flexing under the houses. No readable text or logo.",
       ],
     },
     'SP05-108': {
       briefs: [
-        'Fairy-tale storybook anime frame of a girl in a hooded cape walking into a dark forest with a lantern, curved fine contours, pastel gouache glaze and lace-like edge rhythms on the trees, no extra ribbons or flowers. No readable text or logo.',
-        'Fairy-tale storybook anime frame of a sleeping giant lying under a grassy hill with a tiny village built on his chest, curved fine contours, pastel gouache glaze and lace-like rhythms along the hill edges. No readable text or logo.',
-        'Fairy-tale storybook anime frame of a fox knight bowing before a mouse queen in a hollow oak throne room, curved fine contours and soft pastel gouache glaze, lace-like edges on leaves. No readable text or logo.',
+        "A woman in a hooded cape walks into a dark forest with a lantern, and the wolf waiting for her carries a lantern too. No readable text or logo.",
+        "A grumpy troll under a bridge knits woolen socks for every traveler who pays his toll. No readable text or logo.",
+        "A princess has slept so long that a whole village has grown up around her bed. No readable text or logo.",
       ],
     },
     'SP05-109': {
       briefs: [
-        'Kinetic impact anime frame of a monk striking a charging ogre with a staff, radial speed lines, afterimage trails of the staff and an impact burst at the contact point, both figures readable. No readable text or logo.',
-        'Kinetic impact anime frame of a sprinter exploding across a finish line in a medieval race, afterimage trails of her legs, radial speed lines and a small impact burst where her foot hits the line. No readable text or logo.',
-        'Kinetic impact anime frame of a dragon slamming shoulder-first into a castle wall, a huge impact burst, radial lines and stone fragments following clear force vectors. No readable text or logo.',
+        "A monk strikes a charging ogre with a staff, radial speed lines and afterimages trailing the blow. No readable text or logo.",
+        "A waitress spins through a crowded roadside diner balancing twelve plates of pancakes, afterimages of her arms trailing every turn while not one plate wobbles. No readable text or logo.",
+        "A single raindrop hits a still pond, and the burst of its impact ripples through the entire mountain reflection. No readable text or logo.",
       ],
     },
     'SP05-110': {
       briefs: [
-        'Surreal dream anime frame of a girl walking up a staircase that continues across the ceiling of a quiet library, shadows falling in two directions, one clear spatial contradiction, no floating random objects. No readable text or logo.',
-        'Surreal dream anime frame of a girl looking out of a window that shows the same room from outside with herself looking in, one clean spatial contradiction, calm light. No readable text or logo.',
-        'Surreal dream anime frame of a river flowing gently uphill past a sleeping town at dusk, boats drifting upward, the rest of the world perfectly normal. No readable text or logo.',
+        "A woman walks up a staircase that continues across the ceiling of a quiet library, the books staying neatly on their shelves. No readable text or logo.",
+        "A man opens his front door and finds his own living room, seen from high above. No readable text or logo.",
+        "Two moons hang over a sleeping town square and cast shadows in opposite directions, so every lamppost has one shadow pointing each way. No readable text or logo.",
       ],
     },
     'SP05-111': {
       briefs: [
-        'Ukiyo-e woodblock anime frame of a mecha pilot and her machine standing on a cliff at dusk, carved contours, flat decorative color planes, bokashi gradient bands in the sky and parallel line rhythm in the grass. No readable text or logo.',
-        'Ukiyo-e woodblock anime frame of a city street at night with paper lanterns and a black cat, carved contours, flat color planes and a bokashi band in the sky. No readable text or logo.',
-        'Ukiyo-e woodblock anime frame of a dragon coiling over snowy mountains, carved contours, flat decorative color planes and a bokashi band of pale blue fading into the sky, parallel line rhythm in the snow. No readable text or logo.',
+        "A mecha pilot and her machine stand on a cliff at dusk under graded bands of indigo sky, carved flat planes all around them. No readable text or logo.",
+        "A swarm of delivery drones crosses a mountain pass drawn in parallel carved lines while a startled pilgrim ducks below. No readable text or logo.",
+        "Neon towers rise under a printed moon while a lone fisherman casts his line from a flooded overpass. No readable text or logo.",
       ],
     },
     'SP05-112': {
       briefs: [
-        'Spray-drip anime frame of a street-samurai girl crouched on a rooftop, sharp stencil edges on her jacket, overspray halos around her silhouette, gravity drips running down and particulate grain, no letters. No readable text or logo.',
-        'Spray-drip anime frame of a dragon painted across a subway tunnel wall, sharp stencil edges on its scales, overspray halos, drips running from its claws and particulate grain, no letters. No readable text or logo.',
-        'Spray-drip anime frame of a skater mid-air over a drained fountain, stencil-cut jacket edges, overspray halo behind her and drips hanging from the frame edges. No readable text or logo.',
+        "A street samurai crouches on a rooftop, overspray halos around her blade and paint drips running off the edges of her jacket. No readable text or logo.",
+        "A breakdancer spins on his head on a late-night subway platform, his sneakers spraying stencil-sharp rainbows across the tiled walls. No readable text or logo.",
+        "Dripping wet paint, a stenciled fox slips off a concrete wall and trots away down the alley. No readable text or logo.",
       ],
     },
     'SP05-113': {
       briefs: [
-        'Leaded jewel anime frame of a knight kneeling in a chapel, her armor and the floor segmented by dark lead-like seams into luminous panes of ruby and cobalt, light seeming to pass through without turning her into glass. No readable text or logo.',
-        'Leaded jewel anime frame of a phoenix rising above a burning tower, its wings segmented by dark lead-like seams into glowing amber and scarlet panes, light passing through. No readable text or logo.',
-        'Leaded jewel anime frame of a girl reading by a tall window, her dress and the room divided by dark seams into soft luminous panes of violet and green, afternoon light. No readable text or logo.',
+        "A knight kneels in a chapel as her armor and the floor around her break into luminous jewel-colored panes. No readable text or logo.",
+        "A flock of pigeons in a sunlit train station breaks into glowing colored panes as the birds take flight. No readable text or logo.",
+        "A sleeping giant beetle's shell glows like a cathedral window in the middle of a dark forest. No readable text or logo.",
       ],
     },
     'SP05-114': {
       briefs: [
-        'Threadbare textile anime frame of a patchwork scarecrow knight guarding a field at dusk, stitched contour accents, crosswise weave marks, seam breaks and frayed edges on cloth parts only. No readable text or logo.',
-        'Threadbare textile anime frame of a girl in a quilted patchwork coat walking through snow, stitched contour accents on the seams, crosswise weave marks and frayed hems. No readable text or logo.',
-        'Threadbare textile anime frame of a patched-up old bear plush left on a park bench in the rain, stitched seams, frayed ear and crosswise weave marks. No readable text or logo.',
+        "A patchwork scarecrow knight guards a field at dusk while a crow mends his frayed arm with thread in its beak. No readable text or logo.",
+        "A huge whale stitched together from old family quilts swims slowly through the night sky over a sleeping town, loose threads trailing. No readable text or logo.",
+        "A rag doll sits alone at a bus stop in the rain, its stitches slowly coming loose. No readable text or logo.",
       ],
     },
   },

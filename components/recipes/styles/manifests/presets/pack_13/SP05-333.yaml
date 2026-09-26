@@ -11,9 +11,10 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
   aesthetic: >-
-    Treat the named lineage as a technique reference: observational naturalism, believable weight,
+    A drawing technique, not a copy of any work: observational naturalism, believable weight,
     quiet contour economy and environmental detail integrated into the same visual space.
   subject_treatment: >-
     Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
@@ -56,6 +57,10 @@ avoidRules:
   - distorted proportions obscuring observed weight
   - decorative effects concealing naturalistic contour
   - surface glare masking material cues
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-333.webp
 attributes:
@@ -74,6 +79,7 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

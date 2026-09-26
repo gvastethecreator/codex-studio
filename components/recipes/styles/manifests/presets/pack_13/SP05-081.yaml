@@ -11,6 +11,7 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - slice-of-life-and-moe
+  - reference-title
 visualDna:
   aesthetic: 'Rounded 2D animation contours taper to fine ends and settle into compact cel shadows; expression reads through precise facial marks rather than caricature.'
   subject_treatment: 'Keep the prompted identity, age, proportions, costume, and action; use minute eyelid, brow, and mouth accents only to carry the supplied expression.'
@@ -44,6 +45,10 @@ avoidRules:
   - generic anime filter
   - prompt literal card reuse
   - fake UI
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-081.webp
 attributes:
@@ -61,6 +66,7 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - slice-of-life-and-moe
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

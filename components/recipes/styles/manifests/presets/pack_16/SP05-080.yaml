@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-080
 packId: pack_16
-name: Cosmic Ocean Lyrical Style
+name: Children of the Sea – Cosmic Ocean Lyrical
 category: 4. Studio Masterpieces
 version: 1
 supportedTasks:
@@ -11,6 +11,7 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - studio-masterpieces
+  - reference-title
 visualDna:
   aesthetic: >-
     Fluid contour flow, fine clear line islands, and broad translucent value layers that
@@ -63,6 +64,10 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-080.webp
 attributes:
@@ -79,6 +84,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - studio-masterpieces
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

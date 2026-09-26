@@ -35,7 +35,6 @@ const spec: Spec = {
       ],
     },
     'SP05-078': {
-      name: "Light-Trail Collapse Style",
       briefs: [
         "A courier's motorbike leans into a curve on a collapsing highway at night, taillights stretching into red ribbons as the road peels away behind her like paper. No readable text or logo.",
         "A psychic surge erupts from an abandoned stadium, and every streetlight in the city bends toward it like grass in a storm. No readable text or logo.",
@@ -50,7 +49,6 @@ const spec: Spec = {
       ],
     },
     'SP05-080': {
-      name: "Cosmic Ocean Lyrical Style",
       briefs: [
         "A diver swims through dark water circled by glowing plankton while a whale shark's spots slowly rearrange into the constellations overhead. No readable text or logo.",
         "A fishing village wakes to find its bay turned into a starfield overnight, the wooden boats floating quietly among galaxies. No readable text or logo.",

@@ -20,9 +20,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Heroic dawn anime key visual of a young swordswoman standing on a cliff above a ruined kingdom at sunrise, cape and hair whipping in the wind, gold rim light on her notched blade, two-step cel shading. No text or logo.',
-        'Cel anime frame of a battered knight and a small winged fox climbing out of a smoking dragon crater at first light, dust glowing gold around them, both grinning with exhausted determination. No text or logo.',
-        'Anime key art of a band of five young adventurers cresting a hill toward a distant crystal tower as the sun rises, long shadows stretching behind them, warm peach sky and cool blue valley below. No text or logo.',
+        "A swordswoman stands on a cliff above a ruined kingdom at sunrise, and the first ray catches her raised blade and lights every broken tower below. No readable text or logo.",
+        "A hero strikes a triumphant pose at dawn on her homecoming, not noticing that a rooster has claimed the top of her helmet. No readable text or logo.",
+        "At dawn a young hero reaches the legendary sword in the stone and finds it already pulled, an old farmer using it to dig potatoes nearby. No readable text or logo.",
       ],
     },
     'SP13-002': {
@@ -38,9 +38,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Anime night frame of a hooded courier with a glowing prosthetic arm waiting under a flickering sign in a rain-soaked cyber alley, magenta and cyan reflections in the puddles, straight white rain lines. No readable text or logo.',
-        'Anime close-up of a tired detective lighting a match under a neon awning, her face split pink and blue by two signs, rain beading on the brim of her hat, cigarette smoke curling. No readable text or logo.',
-        'Anime wide shot of a lone swordsman standing on an elevated train platform above a neon megacity at 3 a.m., steam vents, rain and a passing train smearing light behind him. No readable text or logo.',
+        "A hooded courier with a glowing prosthetic arm waits in a rain-soaked alley, the rain hissing into steam wherever it touches her arm. No readable text or logo.",
+        "An android sits alone on a rooftop in the rain, holding her umbrella over a potted sunflower instead of herself. No readable text or logo.",
+        "A lonely vending-machine robot keeps vigil in a flooded neon alley, dimming and brightening its face to guide lost pedestrians home. No readable text or logo.",
       ],
     },
     'SP13-004': {
@@ -56,9 +56,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Anime frame of a giant knight-shaped mecha booting up in a cathedral-sized hangar, visor igniting teal, steam venting from its shoulders, a young pilot on a catwalk shielding her eyes, precise panel lines and hazard orange markings. No readable text or logo.',
-        'Anime frame of mechanics swarming over a battle-damaged mecha under floodlights, welding sparks raining down, a cracked shoulder plate the size of a house hanging from a crane. No readable text or logo.',
-        'Anime close-up of an enormous mecha hand opening slowly beside a tiny pilot in a flight suit, hydraulic oil dripping, teal cockpit light reflecting on wet metal. No readable text or logo.',
+        "Its visor igniting teal, a knight-shaped giant robot boots up in a cathedral-sized hangar as the steam from its shoulders gathers into clouds under the roof. No readable text or logo.",
+        "Panicked technicians scramble as a giant robot wakes up early and politely tries to help sweep the hangar floor. No readable text or logo.",
+        "In a dark abandoned hangar a mecha that has not moved in fifty years slowly turns its head toward the scavenger holding a flashlight. No readable text or logo.",
       ],
     },
     'SP13-006': {
@@ -74,9 +74,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Anime twilight frame of a girl in a school coat leaving a rice offering at a mossy roadside shrine while a tall translucent deer spirit with lantern-lit antlers watches from the cedars, violet dusk and floating particles. No readable text or logo.',
-        'Anime frame of a procession of small glowing spirits carrying paper lanterns across an old stone bridge at dusk, a black cat walking among them, river reflecting the lights. No readable text or logo.',
-        'Anime frame of an old shrine keeper sweeping moss-covered steps as three fox spirits with teal flame tails gather at the top, the painted sky fading from violet to orange. No readable text or logo.',
+        "A woman in a winter coat leaves a rice offering at a mossy roadside shrine as a tall translucent deer spirit bows to eat from her hand. No readable text or logo.",
+        "A tiny shrine spirit scolds a passing office worker because the offerings have been nothing but convenience-store pudding for a week. No readable text or logo.",
+        "At twilight a line of glowing lanterns floats up the stairs of a mountain shrine where no one has prayed in a hundred years. No readable text or logo.",
       ],
     },
     'SP13-007': {
@@ -92,9 +92,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Sports anime climax frame of a jouster in a medieval tournament at the instant of impact, the lance shattering toward the camera in extreme foreshortening, speed lines, a white impact flash and the crowd a streak of color. No readable text or logo.',
-        'Anime frame of an archer at a tournament releasing the final arrow, speed lines rushing toward a distant target, sweat flying from her brow, the bowstring still vibrating. No readable text or logo.',
-        'Anime frame of a young wrestler lifting a huge ogre opponent overhead in a torchlit arena, impact lines radiating, dust exploding off the sand, teammates screaming at the ropes. No readable text or logo.',
+        "A goalkeeper dives at match point in extreme perspective, the ball filling half the frame as sweat and torn grass explode around her. No readable text or logo.",
+        "The rope snaps at the climax of a championship tug-of-war between two villages, both teams flying backwards in bursting speed lines. No readable text or logo.",
+        "At the instant two sumo wrestlers collide, the shockwave blows every cushion off the front row of the arena. No readable text or logo.",
       ],
     },
     'SP13-008': {
@@ -110,9 +110,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Gothic vampire anime frame of a pale aristocrat in a crimson-lined cape on a manor balcony under a huge moon, bats scattering from the towers, long elegant lines and deep black shadow shapes. No readable text or logo.',
-        'Anime close-up of a vampire countess raising a crystal glass of dark wine in candlelight, lace collar, a single drop on her lip, eyes glowing faint red. No readable text or logo.',
-        'Anime frame of a young vampire hunter entering a ruined manor ballroom with a silver crossbow, moonlight through broken windows, shrouded furniture and a shadow moving across the ceiling. No readable text or logo.',
+        "A pale aristocrat in a crimson-lined cape stands on a manor balcony under a huge moon as a thousand bats pour out of the chimney behind him. No readable text or logo.",
+        "An ancient vampire lady tries to apply lipstick with no reflection while her butler holds up a painted portrait of her as a guide. No readable text or logo.",
+        "In a silent moonlit ballroom every guest is a vampire standing perfectly still, waiting for the one living musician to stop playing. No readable text or logo.",
       ],
     },
     'SP13-009': {
@@ -128,9 +128,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Magical girl anime transformation frame of a young witch spinning as ribbons of light wrap into armored skirts, prism flares, star sparkles and a crescent-moon staff, pastel pink and gold on a deep starry background. No readable text or logo.',
-        'Anime frame of a team of four original magical girls in matching jewel colors striking a pose on a rooftop against a giant shadow beast rising from the city. No readable text or logo.',
-        'Anime frame of a magical girl kneeling to heal a wounded young dragon with rainbow light pouring from her hands, sparkles drifting up through a ruined chapel. No readable text or logo.',
+        "A young witch spins as ribbons of light wrap into armored skirts, and the prism flare from her wand splits the storm clouds open. No readable text or logo.",
+        "The monster has sat down on a bench to eat a sandwich because the heroine's sparkling transformation is taking so long. No readable text or logo.",
+        "In a hospital parking lot a heroine in her forties transforms one last time, prism light glancing off every windshield. No readable text or logo.",
       ],
     },
     'SP13-010': {
@@ -146,9 +146,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Isekai anime frame of a caravan of adventurers with a giant lizard pulling a covered wagon through a forest of huge glowing mushrooms, sunlight through the caps, a sleepy slime riding on the roof. No readable text or logo.',
-        'Anime campfire night of an elf archer, a dwarf cook and a nervous young summoner sharing stew beside their wagon, fireflies and two moons over the hills. No readable text or logo.',
-        'Anime frame of a young adventurer haggling with a giant tortoise merchant whose shell carries a whole market, other travelers browsing the stalls. No readable text or logo.',
+        "A caravan of adventurers crosses a forest of glowing mushrooms while the giant lizard pulling their wagon snacks on the luminous caps. No readable text or logo.",
+        "An office worker reborn as a fantasy innkeeper serves stew to a scaled merchant who will not stop complaining about the royal taxes. No readable text or logo.",
+        "At night the caravan camps inside the hollow skull of a colossal beast, their campfire glowing out through its eye sockets. No readable text or logo.",
       ],
     },
     'SP13-011': {
@@ -164,9 +164,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Dungeon anime frame of an adventuring party descending a spiral stair into a glowing labyrinth, torch orange on blue stone, a teal magic circle pulsing on the floor ahead and a mimic chest waiting with its tongue half out. No readable text or logo.',
-        'Anime frame of a towering skeleton knight boss rising from a flooded chamber, teal light from its empty eyes, the party bracing behind a cleric shield. No readable text or logo.',
-        'Anime frame of tired adventurers resting in a dungeon safe room around a small glowing crystal, boots off, one asleep on a pack, darkness pressing at the doorway. No readable text or logo.',
+        "An adventuring party descends a spiral stair into a glowing labyrinth, and the teal magic circle far below them is slowly opening like an eye. No readable text or logo.",
+        "A battered adventuring party kicks open the final boss door and finds a cozy tavern run by a retired lich in an apron. No readable text or logo.",
+        "A lone adventurer's torch sputters in a labyrinth whose stone walls quietly rearrange themselves each time she blinks. No readable text or logo.",
       ],
     },
     'SP13-012': {
@@ -182,9 +182,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Retro 80s mecha anime frame of a crimson mecha drawing a beam sword over a burning space colony, hand-painted highlight streaks on its armor, VHS grain, color bleed and a tracking line. No readable text or logo.',
-        'Retro anime close-up of a pilot with a scar in a cracked helmet inside a red-lit cockpit, sweat and gauges, VHS scanlines. No readable text or logo.',
-        'Retro VHS anime frame of two mecha clashing in orbit above a blue planet, missile trails in curving arcs, explosions painted in bright gradients. No readable text or logo.',
+        "A crimson mecha draws a beam sword over a burning space colony, hand-painted highlight streaks sliding down its armor like tears. No readable text or logo.",
+        "Two giant mechas pause their duel in orbit to let a slow cargo ship pass politely between them. No readable text or logo.",
+        "A pilot's helmet visor reflects an entire colony exploding in silence, the light smeared by tape grain and color bleed. No readable text or logo.",
       ],
     },
     'SP13-014': {
@@ -200,9 +200,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Anime frame of two ronin facing each other in a rainy night alley, hands resting on hilts, a paper lantern swinging between them, ink-wash rooftops fading into mist. No readable text or logo.',
-        'Anime frame of a ronin sheathing her sword as a horned demon behind her splits along a thin white slash arc, blossoms frozen in the air. No readable text or logo.',
-        'Anime frame of a lone ronin walking through a field of red spider lilies at dusk, straw hat low, a crow on a grave marker. No readable text or logo.',
+        "Hands on their hilts in a rainy night alley, two swordsmen face each other, the swinging lantern between them the only clock. No readable text or logo.",
+        "Postponing their fight, two exhausted swordsmen sit side by side on an alley step sharing one skewer of sweet dumplings. No readable text or logo.",
+        "A single white slash arc cuts across a dark alley, and only the parted rain shows where the blade has passed. No readable text or logo.",
       ],
     },
     'SP13-016': {
@@ -218,9 +218,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Battle mage anime frame of a young mage on a castle wall calling down lightning onto a siege army, three glowing circles stacked above her, robes and hair lifting, electric white against storm blue. No readable text or logo.',
-        'Anime frame of two rival mages dueling across a shattered bridge, fire and ice spells colliding in the middle, debris hanging in the air. No readable text or logo.',
-        'Anime frame of a battle mage raising a hexagonal shield of light as dragon fire breaks against it, his companions crouched behind. No readable text or logo.',
+        "A mage on a fortress wall calls down lightning onto a siege army, three glowing circles stacked above her staff like a spinning tower. No readable text or logo.",
+        "At a drought festival a storm spell summons exactly one tiny raincloud, which follows the mayor everywhere he goes. No readable text or logo.",
+        "Alone in a crater of fused glass, a sorceress watches her storm circles slowly fade overhead after the siege. No readable text or logo.",
       ],
     },
     'SP13-017': {
@@ -236,9 +236,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Ink noir detective anime frame of a weary detective in a trench coat in his office at night, blinds casting bars of light across his face, a red envelope on the desk, cigarette smoke drawn in ink. No readable text or logo.',
-        'Anime noir frame of a woman in a red coat waiting on a rain-slick bridge under a single streetlamp, everything else in black ink and white highlights, her reflection broken by ripples, a black car idling in the fog. No readable text or logo.',
-        'Anime noir frame of a detective kneeling beside a strange clawed footprint on a cobbled street, flashlight beam cutting a hard white cone, one red scarf caught on a railing. No readable text or logo.',
+        "A weary detective sits in his office at night while the blinds throw bars of light over a client whose shadow is holding a knife she is not. No readable text or logo.",
+        "A hard-boiled detective interrogates a nervous parrot, the only witness to the crime, under a single swinging bulb. No readable text or logo.",
+        "In a black-ink city a single red umbrella moves through the crowd while the detective tails it for a third rainy night. No readable text or logo.",
       ],
     },
     'SP13-019': {
@@ -254,9 +254,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Anime frame of a young courier on a broom carrying a wrapped parcel over rolling green hills and a seaside town, a small forest spirit clinging to her bag, wind in her hair and big summer clouds. No readable text or logo.',
-        'Anime frame of a young courier cycling down a country lane with a basket of letters while a huge gentle moss-covered forest spirit walks alongside, dandelion seeds in the wind, cloud shadows sliding over the fields. No readable text or logo.',
-        'Anime frame of a courier knocking on the round door of an old witch cottage deep in a sunlit forest, holding a parcel wrapped in brown paper and string, a crow and a cat watching from the roof. No readable text or logo.',
+        "A courier on a rattling bicycle coasts down a hillside path into a seaside village, a tiny forest spirit in her basket guarding a warm pie. No readable text or logo.",
+        "A courier delivers a parcel to a giant sleeping tree, and a hand of branches slowly reaches down to accept it. No readable text or logo.",
+        "Caught in a summer storm, a courier shelters under a giant leaf beside a family of moss spirits, all dripping and pretending not to be annoyed. No readable text or logo.",
       ],
     },
     'SP13-020': {
@@ -272,9 +272,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Final episode anime frame of a party of adventurers saying goodbye at a crossroads at sunset, one knight waving as the others walk into golden light, petals drifting, glistening eyes. No readable text or logo.',
-        'Final episode anime close-up of a girl releasing a small glowing spirit into the dusk sky from a hilltop, tears on her cheeks catching the golden light, the spirit leaving a thin trail of sparkles. No readable text or logo.',
-        'Final episode anime wide shot of an old knight sitting beside a simple grave on a windy hill at sunrise, his sword planted in the earth, a new generation of squires walking up the path behind him. No readable text or logo.',
+        "A party of adventurers parts at a crossroads at sunset, and each road they take bursts into a different color of wildflowers. No readable text or logo.",
+        "The reformed villain turns up at the heroes' farewell feast carrying a lopsided homemade cake, awkwardly hoping to be invited in. No readable text or logo.",
+        "A lone traveler lays her sword on a grave overlooking the sea as a last golden light washes over the ruins they saved. No readable text or logo.",
       ],
     },
   },
@@ -295,9 +295,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Sky pirate anime frame of a young pirate captain swinging on a rope between two wooden airships above a sea of clouds, patched red sails, brass propellers, a cutlass flashing in the sun. No readable text or logo.',
-        'Sky pirate anime frame of a crew boarding a royal airship during a thunderstorm, grappling hooks flying across the gap, lightning splitting the clouds, a young pirate grinning as she leaps with a cutlass. No readable text or logo.',
-        'Anime frame of a patched little airship docking at a floating-island tavern at sunset, pirates rolling barrels down a gangplank, lanterns glowing and a waterfall spilling off the island edge into clouds. No readable text or logo.',
+        "A pirate captain swings on a rope between two wooden airships above a sea of clouds, her patched red coat snapping as the cannons fire. No readable text or logo.",
+        "Sky pirates board a flying merchant ship and discover it is crewed entirely by very organized penguins. No readable text or logo.",
+        "A lone lookout sits in the crow's nest of a drifting airship at night while a colossal cloud whale glides beneath the hull. No readable text or logo.",
       ],
     },
     {
@@ -316,9 +316,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'gore'],
       briefs: [
-        'Dark fantasy anime frame of a scarred mercenary with a sword taller than himself standing in rain over fallen demon knights, heavy hatching on his armor, a cursed brand glowing red on his neck. No readable text or logo.',
-        'Dark fantasy anime frame of a gaunt witch hunter kneeling in a burned village chapel, heavy hatching on his coat, a silver chain wrapped around his fist, red light from a broken stained window. No readable text or logo.',
-        'Dark fantasy anime frame of a demon lord slumped on a throne of fused armor and bones, a cracked crown, black ink shadows and a single red eye glowing as the hero enters far below. No readable text or logo.',
+        "A mercenary stands in the rain over a field of fallen demon knights while the cursed blade in his hand whispers in his ear. No readable text or logo.",
+        "Refusing to be sheathed, a haunted sword drags its exhausted wielder through a tavern door in search of another fight. No readable text or logo.",
+        "A black-armored woman stands at the gate of a plague castle, the cracks in her gauntlet glowing red with each heartbeat. No readable text or logo.",
       ],
     },
     {
@@ -337,9 +337,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Monster tamer anime frame of a young tamer commanding her small fire-salamander companion to leap at a giant stone golem in a forest clearing, bright flame effects, energetic poses. No readable text or logo.',
-        'Monster tamer anime frame of a boy discovering an injured baby wyvern curled in a crystal cave, offering it a berry, its round eyes wary, soft light from the crystals. No readable text or logo.',
-        'Monster tamer anime frame of a tournament stadium where a tiny electric squirrel creature faces a huge armored rhinoceros beetle, both tamers shouting commands, bright effects and crowd blur. No readable text or logo.',
+        "A young tamer sends her small fire salamander leaping at a stone golem in a forest clearing, its tail flame lighting the whole grove. No readable text or logo.",
+        "A tamer's tiny round creature evolves mid-battle into something enormous and immediately gets wedged between two trees. No readable text or logo.",
+        "At night a tamer sleeps in an open field while twenty glowing creatures keep watch around her in a perfect circle. No readable text or logo.",
       ],
     },
     {
@@ -358,9 +358,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Epic anime frame of a young rider on a silver dragon diving through a storm over a burning fleet, wings folded, her lance leveled, lightning behind. No readable text or logo.',
-        'Epic anime frame of a rider on a giant white wolf leaping across a frozen chasm under the northern lights, snow exploding from its paws, her spear raised. No readable text or logo.',
-        'Anime frame of a patrol of griffin riders gliding past the cliff towers of a mountain kingdom at dawn, banners streaming, golden light on feathers and armor. No readable text or logo.',
+        "A rider on a silver dragon dives through a storm over a burning fleet, lance leveled, lightning reflected in every scale. No readable text or logo.",
+        "A griffin rider tries to land gracefully in the town square, but the griffin spots the fish market and bolts. No readable text or logo.",
+        "A giant wolf and its rider rest on a snowy peak at dawn, the rider asleep against the wolf's chest as its breath steams in the cold. No readable text or logo.",
       ],
     },
     {
@@ -379,9 +379,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'real car brand'],
       briefs: [
-        'Anime frame of a boxy original sports car drifting through a hairpin on a misty mountain road at 2 a.m., headlights cutting the fog, tire smoke and speed lines, a rival car close behind. No readable text or logo.',
-        "Anime close-up of a young driver gripping the wheel on a mountain downhill, sweat on her temple, the rival car's taillights reflected red in her eyes, dashboard glow. No readable text or logo.",
-        'Anime frame of two street racers leaning on their original cars at a mountain lookout at dawn, the city waking in the valley below, steam from canned coffee. No readable text or logo.',
+        "A boxy sports car drifts through a hairpin on a misty mountain road at 2 a.m., its headlights cutting the fog into glowing blades. No readable text or logo.",
+        "A retired racer delivering vegetables in a tiny kei truck overtakes a pack of sports cars downhill, carrots bouncing in the back. No readable text or logo.",
+        "On a deserted mountain pass at night a single red taillight glows in the fog where no car has been seen for years. No readable text or logo.",
       ],
     },
   ] satisfies Create[],

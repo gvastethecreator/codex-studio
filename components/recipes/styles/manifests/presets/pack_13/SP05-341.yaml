@@ -11,9 +11,10 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
   aesthetic: >-
-    Treat the named lineage as technique reference: sturdy, hand-drawn contours, clearly articulated
+    A drawing technique, not a copy of any work: sturdy, hand-drawn contours, clearly articulated
     joins and practical mechanical detail balanced by human warmth.
   subject_treatment: >-
     Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
@@ -55,6 +56,10 @@ avoidRules:
   - unreadable joins on constructed parts
   - sterile plastic sheen obscuring drawn contour
   - structural detail invented on unconstructed forms
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-341.webp
 attributes:
@@ -73,6 +78,7 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

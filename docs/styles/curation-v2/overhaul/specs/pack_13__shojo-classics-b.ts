@@ -8,142 +8,142 @@ const spec: Spec = {
   updates: {
     'SP05-181': {
       briefs: [
-        'Gentle anime frame of a lonely boy sharing onigiri with a household of shape-shifting animal spirits around a low table in a country house, rounded fine contours, understated shadows and warm lamp light, one spirit half turned into a cat. No readable text or logo.',
-        'Gentle anime frame of a young woman crying quietly in a vegetable garden at dusk while a small spirit rabbit sits beside her boots, rounded contours and soft understated shadows. No readable text or logo.',
-        'Gentle anime frame of twelve small animal spirits gathered on a snowy roof under the New Year moon, a girl waving to them from a window, open focal detail on her face. No readable text or logo.',
+        "A widower still sets the table for the whole family every New Year though he lives alone, the empty chairs glowing faintly in the lamplight. No readable text or logo.",
+        "A grumpy old gardener pretends not to cry as his whole street shows up to replant the garden his late wife loved. No readable text or logo.",
+        "A woman shares rice balls with a lonely scarecrow in a winter field, chatting to it like an old friend. No readable text or logo.",
       ],
     },
     'SP05-182': {
       briefs: [
-        'Expressive anime frame of two young women with opposite styles sharing a cramped apartment at night, one in black lace and chains smoking by the window, the other hugging a strawberry pillow, dense black shapes and fine fashion strokes. No readable text or logo.',
-        'Expressive anime frame of a punk singer alone on a rainy train platform after a breakup, black lace and dense ink shadows, fine strokes in her rain-soaked hair. No readable text or logo.',
-        'Expressive anime frame of a band celebrating on a tiny stage in a smoky club, dense black clothing shapes and fine fashion-illustration strokes on jewelry and faces. No readable text or logo.',
+        "A singer in black lace sits on a rooftop water tank at 4 a.m., tearing roses apart petal by petal and flinging them at the city. No readable text or logo.",
+        "A heartbroken woman in a black lace dress eats an entire cake alone on her kitchen floor, mascara running, grinning defiantly. No readable text or logo.",
+        "A shattered mirror in a dark apartment holds a different reflection of the same woman in every shard, each at a different age. No readable text or logo.",
       ],
     },
     'SP05-183': {
       briefs: [
-        'Shy anime frame of a quiet dark-haired girl nervously handing a notebook to a kind classmate in an empty school hallway, fine rounded contours, restrained interior marks and soft cel shading in afternoon light. No readable text or logo.',
-        'Shy anime frame of a girl misunderstood as spooky by classmates, standing alone by a window as a small smile breaks through, soft cel shading. No readable text or logo.',
-        'Shy anime frame of two classmates walking home under cherry trees, a careful gap between their shoulders, restrained line and soft shading. No readable text or logo.',
+        "A shy lighthouse keeper leaves a thermos of cocoa outside the storm-bound traveler's door, blushing so hard the lamp seems dim. No readable text or logo.",
+        "A timid woman waves back at a stranger who was waving to someone else and freezes in the middle of the crowded station. No readable text or logo.",
+        "A quiet bookbinder presses flowers between pages for a customer she has never once dared to speak to. No readable text or logo.",
       ],
     },
     'SP05-184': {
       briefs: [
-        'Refined comedy anime frame of a club of flamboyant young hosts in a rose-filled music room striking elegant poses for a baffled scholarship student in a plain sweater, polished cel planes and tiny ornamental sparkles. No readable text or logo.',
-        'Refined anime frame of twin tricksters in matching coats whispering behind a startled guest at a masquerade, clean graphic timing and ornamental accents. No readable text or logo.',
-        'Refined anime frame of a host club beach day where the princely leader dramatically kneels in the sand offering a seashell, polished cel and rose-cloud accents. No readable text or logo.',
+        "An overdressed butler serenades a baffled mail carrier in a rose-strewn foyer as three violinists appear from behind the curtains. No readable text or logo.",
+        "A dramatic aristocrat faints into a heap of roses because his tea is one degree too cool. No readable text or logo.",
+        "At a masked ball a lone guest discovers that every other guest is wearing her face beneath their mask. No readable text or logo.",
       ],
     },
     'SP05-185': {
       briefs: [
-        'Fashion-illustration anime frame of a runway walker in a hand-sewn gown of black ribbons stepping into the light, long angular strokes, crisp silhouette cuts and narrow seam detail, designers watching from backstage. No readable text or logo.',
-        'Fashion anime frame of a young designer pinning a dress on a model in a cluttered attic studio at night, angular lines and seam detail. No readable text or logo.',
-        'Fashion anime frame of a heartbroken model sitting on a curb in a couture gown at dawn, heels in hand, crisp silhouette cuts. No readable text or logo.',
+        "A model walks a runway built across a frozen lake in a gown of black ribbons, the ice cracking in elegant lines behind each step. No readable text or logo.",
+        "A designer finishes a gown on a dress form at 3 a.m., and the dress form stands up and curtsies. No readable text or logo.",
+        "A fashion show carries on through a thunderstorm, models striding unfazed while umbrellas cartwheel over the drenched front row. No readable text or logo.",
       ],
     },
     'SP05-186': {
       briefs: [
-        'Comedic romance anime frame of a very tall girl and a very short boy arguing on a school rooftop, both mid-rant with exaggerated faces, contour weight shifting for the comic beat while their real heights stay true. No readable text or logo.',
-        'Comedic anime frame of the pair at a festival where the tall girl reaches the prize shelf and the short boy fumes, readable comic line beats. No readable text or logo.',
-        'Comedic anime frame of the pair walking home at sunset, finally quiet, their long and short shadows side by side. No readable text or logo.',
+        "Two rival street-food vendors rant at each other across an alley, their steaming woks pointed at each other like swords. No readable text or logo.",
+        "A couple on a first date both try to hide that they are terrified of the roller coaster they have just boarded. No readable text or logo.",
+        "A tired ferris wheel operator bickers with the last rider of the night, an old man who insists on one more turn every year on the same date. No readable text or logo.",
       ],
     },
     'SP05-187': {
       briefs: [
-        'Performance anime frame of a young actress transforming on stage from timid to terrifying villain in one turn, sharp contours and shadow cutouts across her face, precise glints on her eyes under the stage lights. No readable text or logo.',
-        'Performance anime frame of a rookie idol practicing alone at midnight in a mirrored studio, sharp contours and glints of sweat. No readable text or logo.',
-        'Performance anime frame of a revenge-driven actress smiling coldly at a rival across a glittering awards hall, sharp contours and shadow cutouts, precise glints on her earrings. No readable text or logo.',
+        "A timid actress turns into a terrifying villain mid-scene, the glint in her eye so sharp that the director drops his coffee. No readable text or logo.",
+        "A backstage understudy rehearses the lead's role so furiously that the costume rack around her starts to applaud. No readable text or logo.",
+        "An idol smiles for the cameras on a red carpet while her shadow on the wall behind her is plotting revenge. No readable text or logo.",
       ],
     },
     'SP05-188': {
       briefs: [
-        'Melodrama anime frame of four arrogant heirs in tailored coats blocking a school staircase while a defiant girl in a plain uniform glares back, precise straight edges on their coats, rounded contours on her, quiet cel shadow. No readable text or logo.',
-        'Melodrama anime frame of a rich heir and a working girl caught in rain under a grand gate, precise edges and rounded contours. No readable text or logo.',
-        'Melodrama anime frame of a lavish ballroom where the girl arrives in a borrowed dress and every head turns. No readable text or logo.',
+        "A cleaning lady at a glittering gala quietly beats the richest guest at chess on a board drawn on a napkin. No readable text or logo.",
+        "Two heirs compete for one woman's attention with ever more absurd gifts, the latest a small live giraffe in a bow. No readable text or logo.",
+        "In an empty marble hall after the gala, an heir sits alone on the stairs eating convenience-store noodles in his tuxedo. No readable text or logo.",
       ],
     },
     'SP05-189': {
       briefs: [
-        'Anime frame of five friends sitting on a hill above their town at sunset reading letters from their future selves, cel and watercolor hybrid, selected contours softening into translucent orange overlaps, focal faces sharp. No readable text or logo.',
-        'Anime frame of a boy standing alone on a railway crossing at dusk, watercolor edges dissolving into the sky. No readable text or logo.',
-        'Anime frame of a girl running along a riverbank to catch a friend, translucent watercolor overlap on the sunset. No readable text or logo.',
+        "A woman on a hill above her town at sunset watches her younger self walk home below, translucent in the warm light. No readable text or logo.",
+        "An old postman delivers a letter posted fifty years ago to a grandmother who laughs and cries in her doorway at once. No readable text or logo.",
+        "A regretful man stands at a crossroads where two translucent versions of his past walk off in opposite directions. No readable text or logo.",
       ],
     },
     'SP05-190': {
       briefs: [
-        'Contemporary anime frame of two former classmates meeting again on a summer train platform in clean uniforms, smooth precise line, modest weight shifts and broad quiet values, a pause of awkward recognition. No readable text or logo.',
-        'Anime frame of friends at a summer festival sharing a quiet look across a crowd, smooth line and quiet values. No readable text or logo.',
-        'Contemporary anime frame of a boy and a girl sheltering from sudden summer rain under a shop awning, clean uniform detail, smooth precise line and broad quiet grey values. No readable text or logo.',
+        "A retired schoolteacher walks through her old empty classroom at dusk, the powder-blue light full of faint drifting chalk dust. No readable text or logo.",
+        "Two exes meet at a laundromat years later, both reaching for the same dryer and pretending not to recognize each other. No readable text or logo.",
+        "A woman opens a buried time capsule on a riverbank and finds one faded friendship bracelet as cherry petals blow past. No readable text or logo.",
       ],
     },
     'SP05-191': {
       briefs: [
-        'Night-walk anime frame of a quiet girl and a boy walking home along a canal under streetlamps, rounded contours, pooled dark shapes in their coats and the water, small reflective accents on wet stone. No readable text or logo.',
-        'Night-walk anime frame of a couple sitting on a playground swing set at night, pooled dark shapes under the slide, small reflective accents on the chains and their eyes. No readable text or logo.',
-        'Night-walk anime frame of a girl crouching to feed a stray cat under a streetlamp, rounded contours, pooled dark shadows and small highlights on the wet pavement. No readable text or logo.',
+        "A night-shift baker and a taxi driver share a warm roll under a canal streetlamp at 3 a.m., their reflections trembling on the black water. No readable text or logo.",
+        "An old dog walker and her ancient dog pause under every streetlamp so the dog can gaze at its reflection in the puddles. No readable text or logo.",
+        "A woman walks home along a canal at night while her reflection in the water walks just a little behind her. No readable text or logo.",
       ],
     },
     'SP05-192': {
       briefs: [
-        'Double-life anime frame of a stern student council president secretly working as a maid in a cafe, frozen in horror as a classmate walks in, precise structured edges on her uniform and small ruffle rhythms on the apron. No readable text or logo.',
-        'Anime frame of a stern student council president in a crisp blazer scolding a line of rowdy students in a corridor, structured straight edges on the uniforms, crisp cel shadows and one student hiding a smirk. No readable text or logo.',
-        'Anime frame of a smug boy grinning from a cafe booth while the maid-uniformed council president glares at him holding a tray, small ruffle rhythms on the apron against structured edges. No readable text or logo.',
+        "A feared crime boss moonlights as a pastry chef in a frilly apron, piping roses onto cakes while his bodyguards stand watch. No readable text or logo.",
+        "A strict librarian leads a secret life as a masked roller-derby star, her ruffled skirt flaring on the track. No readable text or logo.",
+        "A butler polishes silverware at midnight in a silent mansion, and in every spoon his reflection wears a different uniform. No readable text or logo.",
       ],
     },
     'SP05-193': {
       briefs: [
-        'Fantasy anime frame of a red-haired herbalist kneeling in a palace herb garden while a young prince in a green coat watches from the arch, clean tapered contours, fine botanical strokes in the leaves and polished cel planes. No readable text or logo.',
-        'Anime frame of a young herbalist grinding medicine in a sunlit palace apothecary, jars and hanging herbs drawn with fine botanical strokes, clean tapered contours and polished cel light on the mortar. No readable text or logo.',
-        'Anime frame of a quiet courtship walk through a misty forest of wild herbs at dawn, the prince carrying her basket, fine botanical strokes in the ferns and polished cel planes. No readable text or logo.',
+        "A herbalist brews a tea so fragrant that the garden's flowers lean in through the open window to smell it. No readable text or logo.",
+        "A prince courts a herbalist with rare plants, but every gift turns out to be a weed she already pulls from her garden. No readable text or logo.",
+        "In a moonlit greenhouse a rare night bloom opens to reveal a tiny sleeping moth-woman curled inside. No readable text or logo.",
       ],
     },
     'SP05-194': {
       briefs: [
-        'Ornate anime portrait of an original noblewoman in a military dress coat standing before a palace window as a revolution burns in the streets, fine engraved contours over broad black and pale cel planes, tears held back. No readable text or logo.',
-        'Ornate anime frame of a masked ball in a gilded hall on the eve of revolution, dancers in towering wigs, fine engraved contours on the chandeliers and broad black cel shadows under the balconies. No readable text or logo.',
-        'Ornate anime frame of a guard captain on a white horse facing a crowd of torch-bearing citizens at dawn, fine engraved contours on her coat and broad pale sky planes. No readable text or logo.',
+        "A royal portrait painter adds the final highlight to her masterpiece as the mob breaks down the gallery doors behind her. No readable text or logo.",
+        "A powdered duchess leads a cavalry charge straight through a ballroom, chandeliers swinging above the horses. No readable text or logo.",
+        "In an abandoned palace gallery every painted aristocrat has turned to look out of the same window. No readable text or logo.",
       ],
     },
     'SP05-195': {
       briefs: [
-        'Hand-drawn anime frame of two young designers sewing patchwork clothes in a cluttered bedroom studio, elastic contours, hand-cut color blocks and small pattern accents on every fabric scrap. No readable text or logo.',
-        'Hand-drawn anime frame of a tiny street fashion show in a narrow alley, friends strutting in patchwork outfits, elastic contours, hand-cut color blocks and pattern accents on fabric and awnings. No readable text or logo.',
-        'Hand-drawn anime frame of a girl painting stars and cats onto a denim jacket on a rooftop at sunset, elastic contours and small pattern accents, laundry flapping around her. No readable text or logo.',
+        "A street designer builds a coat from a thousand bottle caps and ribbons, and it jingles like a wind chime when she spins. No readable text or logo.",
+        "A shy tailor dresses a mannequin each morning in his crush's style, until one day the mannequin is wearing her smile. No readable text or logo.",
+        "A patchwork quilt stitched from every color in the city has grown so large it drapes over a whole shopping street like a canopy. No readable text or logo.",
       ],
     },
     'SP05-196': {
       briefs: [
-        'Art-school anime frame of students painting in a sunlit shared studio in spring, visible pencil underdrawing, diluted gouache washes and clear ink on warm paper, one boy asleep on a sculpture stand. No readable text or logo.',
-        'Art-school anime frame of a student cycling toward the sea at dawn with a canvas strapped to her back, pencil underdrawing still visible, diluted gouache sky and clear ink on warm paper. No readable text or logo.',
-        'Art-school anime frame of friends eating takeout on a paint-spattered studio floor surrounded by unfinished canvases, pencil underdrawing and loose gouache washes. No readable text or logo.',
+        "A sculptor carves her unrequited love out of a block of butter that is slowly melting in the spring sun. No readable text or logo.",
+        "A student paints a mural of the sea so convincingly that a seagull lands on it and looks deeply confused. No readable text or logo.",
+        "A tired painter sleeps among half-finished canvases while spring petals drift in through the window and stick to the wet paint. No readable text or logo.",
       ],
     },
     'SP05-197': {
       briefs: [
-        'Shrine romance anime frame of a young woman who has just become a land god sweeping a rundown shrine while a sulky white-haired fox familiar lounges on the roof, bold ink, flat mineral colors and small seal-like marks on restrained paper. No readable text or logo.',
-        'Anime frame of a white-haired fox familiar transforming in a whirl of blue fox fire in a shrine courtyard at night, bold ink, flat mineral color and small seal-like marks in the corners. No readable text or logo.',
-        'Anime frame of a young land goddess visiting a crowded night market of spirits, lanterns, masks and strange stalls, bold ink and flat mineral colors on restrained paper. No readable text or logo.',
+        "A tired postal worker becomes the reluctant guardian of a tiny hillside shrine, and the local spirits line up to file complaints. No readable text or logo.",
+        "A proud crow spirit courts a shrine keeper by leaving shiny bottle caps on the altar every morning. No readable text or logo.",
+        "At dusk a lone vermilion gate stands in a pine forest, and beyond it the same forest glows in a different season. No readable text or logo.",
       ],
     },
     'SP05-198': {
       briefs: [
-        'Anime frame of a shy jellyfish-obsessed girl pressed against an aquarium tank glowing with drifting jellyfish, translucent contour layers, pearly color transitions and delicate filament marks in the tentacles. No readable text or logo.',
-        'Anime frame of a surprise makeover reveal in a cramped boarding house of shy otaku women, one friend transformed in a flowing pale dress, pearly color transitions and translucent line layers. No readable text or logo.',
-        'Anime frame of a jellyfish-inspired gown shown on a tiny rented stage, sheer tentacle-like ribbons drawn with delicate filament marks, pearly light, nervous designers peeking from the wings. No readable text or logo.',
+        "An aquarium keeper's dress turns translucent and pearly as she slips into the jellyfish tank at midnight. No readable text or logo.",
+        "A giant translucent jellyfish drifts over a city at dawn like a cloud, commuters pausing to watch its glowing filaments. No readable text or logo.",
+        "A shy woman's reflection in a jellyfish tank shows her dressed as a dazzling queen of the deep. No readable text or logo.",
       ],
     },
     'SP05-199': {
       briefs: [
-        'Anime frame of a crimson-haired princess in hunting leathers drawing a bow on a windy cliff, her loyal guard at her back, long tapered contours, weathered edge marks on armor and cloak, firm cel shadows. No readable text or logo.',
-        'Anime frame of a crimson-haired princess cutting her own long hair with a dagger in a dark forest, strands flying, long tapered contours and weathered edge marks on her cloak. No readable text or logo.',
-        'Anime frame of the princess and her ragged companions around a campfire under stars, a dragon-blooded warrior asleep against a tree, firm cel shadows in the firelight. No readable text or logo.',
+        "A deposed empress tends a campfire in the rain with her last loyal guards, her ruined silk robe tied into a sling for a wounded hawk. No readable text or logo.",
+        "A spoiled noble learns to cook for her ragged band of outlaws and proudly serves a completely burnt stew. No readable text or logo.",
+        "A lone rider crosses a burned valley at dawn, dust trailing from her cloak in long strokes toward the mountains. No readable text or logo.",
       ],
     },
     'SP05-200': {
       briefs: [
-        'Rainy confession anime frame of a boy holding an umbrella over a girl at a bus stop in heavy rain, smooth curved planes, refracted color accents in the raindrops and crisp cel edges on their wet hair. No readable text or logo.',
-        'Anime frame of a girl walking alone through a rainy city at night under a clear umbrella, neon reflected and refracted in the drops on the canopy, smooth curved planes and crisp cel edges. No readable text or logo.',
-        'Anime frame of two umbrellas touching on a crowded crossing in the rain, the pair beneath them pausing mid-step, refracted color accents in the rain and crisp cel edges. No readable text or logo.',
+        "A shy street performer holds his umbrella over a stranger's sleeping dog in the rain, missing his own last bus. No readable text or logo.",
+        "Two strangers share an umbrella so small that each ends up soaked on one side, laughing. No readable text or logo.",
+        "Under a clear umbrella in a downpour, a woman sees the raindrops refract a hundred tiny copies of the person across the street. No readable text or logo.",
       ],
     },
   },

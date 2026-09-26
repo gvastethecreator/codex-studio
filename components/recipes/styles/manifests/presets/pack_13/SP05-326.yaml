@@ -1,7 +1,7 @@
 schemaVersion: 1
 id: SP05-326
 packId: pack_13
-name: Rubber Reality Sprint Style
+name: Masaaki Yuasa - Rubber Reality Sprint
 category: 5. Anime Style Spectrum
 version: 1
 supportedTasks:
@@ -11,9 +11,10 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
   aesthetic: >-
-    Treat the named lineage as technique reference: loose, fluctuating contour, elastic drawing
+    A drawing technique, not a copy of any work: loose, fluctuating contour, elastic drawing
     rhythm, bent planes and brushy spatial push/pull; preserve the subject's recognizable structure.
   subject_treatment: >-
     Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
@@ -55,6 +56,10 @@ avoidRules:
   - elastic distortion changing identity or construction
   - bent planes breaking requested perspective
   - brush noise obscuring silhouette
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-326.webp
 attributes:
@@ -73,6 +78,7 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

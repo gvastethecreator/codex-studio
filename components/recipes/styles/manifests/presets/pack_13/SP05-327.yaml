@@ -11,9 +11,10 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
   aesthetic: >-
-    Treat the named lineage as technique reference: hold the existing beat as a poster-like freeze
+    A drawing technique, not a copy of any work: hold the existing beat as a poster-like freeze
     with bold silhouette, grouped values, selective rim and light film grain.
   subject_treatment: >-
     Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
@@ -53,6 +54,10 @@ avoidRules:
   - muddy value blocks hiding the held silhouette
   - distant-plane detail competing with focal form
   - rim highlights clipping the contour
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-327.webp
 attributes:
@@ -71,6 +76,7 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

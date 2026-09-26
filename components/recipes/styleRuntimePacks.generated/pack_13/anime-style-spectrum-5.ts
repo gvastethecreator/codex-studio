@@ -185,7 +185,7 @@ export const GENERATED_STYLE_PRESETS = [
       "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, distorted proportions obscuring observed weight, decorative effects concealing naturalistic contour, surface glare masking material cues",
     style: {
       aesthetic:
-        'Treat the named lineage as a technique reference: observational naturalism, believable weight, quiet contour economy and environmental detail integrated into the same visual space.',
+        'A drawing technique, not a copy of any work: observational naturalism, believable weight, quiet contour economy and environmental detail integrated into the same visual space.',
       subject_treatment:
         'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
@@ -214,7 +214,7 @@ export const GENERATED_STYLE_PRESETS = [
       "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, opaque highlights hiding mineral edge transmission, muddy values collapsing pale planes, ornament crowding negative space",
     style: {
       aesthetic:
-        'Treat the named lineage as technique reference: fine fragile contours, pale mineral planes, translucent edge values and large areas of deliberate void.',
+        'A drawing technique, not a copy of any work: fine fragile contours, pale mineral planes, translucent edge values and large areas of deliberate void.',
       subject_treatment:
         'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
@@ -243,7 +243,7 @@ export const GENERATED_STYLE_PRESETS = [
       "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, unreadable joins on constructed parts, sterile plastic sheen obscuring drawn contour, structural detail invented on unconstructed forms",
     style: {
       aesthetic:
-        'Treat the named lineage as technique reference: sturdy, hand-drawn contours, clearly articulated joins and practical mechanical detail balanced by human warmth.',
+        'A drawing technique, not a copy of any work: sturdy, hand-drawn contours, clearly articulated joins and practical mechanical detail balanced by human warmth.',
       subject_treatment:
         'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
@@ -330,7 +330,7 @@ export const GENERATED_STYLE_PRESETS = [
       "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, slashes misaligned with requested action direction, black cutouts erasing subject-defining detail, hard color blocks merging adjacent forms",
     style: {
       aesthetic:
-        'Treat the named lineage as technique reference: razor-edged silhouettes, long graphic slashes, dense black cutouts and a flat vermilion/cream/navy poster palette.',
+        'A drawing technique, not a copy of any work: razor-edged silhouettes, long graphic slashes, dense black cutouts and a flat vermilion/cream/navy poster palette.',
       subject_treatment:
         'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
@@ -475,7 +475,7 @@ export const GENERATED_STYLE_PRESETS = [
       "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, muddy value blocks hiding the held silhouette, distant-plane detail competing with focal form, rim highlights clipping the contour",
     style: {
       aesthetic:
-        'Treat the named lineage as technique reference: hold the existing beat as a poster-like freeze with bold silhouette, grouped values, selective rim and light film grain.',
+        'A drawing technique, not a copy of any work: hold the existing beat as a poster-like freeze with bold silhouette, grouped values, selective rim and light film grain.',
       subject_treatment:
         'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:
@@ -614,13 +614,13 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP05-326',
-    name: 'Rubber Reality Sprint Style',
+    name: 'Masaaki Yuasa - Rubber Reality Sprint',
     category: '5. Anime Style Spectrum',
     negativePrompt:
       "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, elastic distortion changing identity or construction, bent planes breaking requested perspective, brush noise obscuring silhouette",
     style: {
       aesthetic:
-        "Treat the named lineage as technique reference: loose, fluctuating contour, elastic drawing rhythm, bent planes and brushy spatial push/pull; preserve the subject's recognizable structure.",
+        "A drawing technique, not a copy of any work: loose, fluctuating contour, elastic drawing rhythm, bent planes and brushy spatial push/pull; preserve the subject's recognizable structure.",
       subject_treatment:
         'Preserve the requested identity, count, pose, action, material and setting. Apply the drawing treatment to the existing forms without substituting subjects, adding accessories or changing their function.',
       color_and_tone:

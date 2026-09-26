@@ -11,6 +11,7 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - shojo-magical-girl-and-visionary-classics
+  - reference-title
 visualDna:
   aesthetic: >-
     Comedic anime drawing varies contour weight and spacing for readable beats without
@@ -56,6 +57,10 @@ avoidRules:
   - generic anime filter
   - prompt literal card reuse
   - fake UI
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-186.webp
 attributes:
@@ -73,6 +78,7 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - shojo-magical-girl-and-visionary-classics
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

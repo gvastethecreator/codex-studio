@@ -11,9 +11,10 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
   aesthetic: >-
-    Treat the named lineage as technique reference: fine fragile contours, pale mineral planes,
+    A drawing technique, not a copy of any work: fine fragile contours, pale mineral planes,
     translucent edge values and large areas of deliberate void.
   subject_treatment: >-
     Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
@@ -55,6 +56,10 @@ avoidRules:
   - opaque highlights hiding mineral edge transmission
   - muddy values collapsing pale planes
   - ornament crowding negative space
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-335.webp
 attributes:
@@ -73,6 +78,7 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

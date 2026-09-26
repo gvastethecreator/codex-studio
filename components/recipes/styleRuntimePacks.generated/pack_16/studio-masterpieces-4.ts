@@ -129,9 +129,9 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP05-078',
-    name: 'Light-Trail Collapse Style',
-    displayName: 'Light-Trail Collapse',
-    styleAnchors: ['Light-Trail Collapse Style'],
+    name: 'Otomo Light-Trail Collapse Style',
+    displayName: 'Otomo Light-Trail Collapse',
+    styleAnchors: ['Otomo Light-Trail Collapse Style'],
     category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
@@ -191,7 +191,7 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP05-080',
-    name: 'Cosmic Ocean Lyrical Style',
+    name: 'Children of the Sea – Cosmic Ocean Lyrical',
     category: '4. Studio Masterpieces',
     negativePrompt:
       'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',

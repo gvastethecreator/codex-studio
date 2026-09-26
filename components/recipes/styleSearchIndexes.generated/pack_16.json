@@ -1055,9 +1055,9 @@
     },
     {
       "id": "SP05-078",
-      "name": "Light-Trail Collapse",
-      "sourceName": "Light-Trail Collapse Style",
-      "styleAnchors": ["Light-Trail Collapse Style"],
+      "name": "Otomo Light-Trail Collapse",
+      "sourceName": "Otomo Light-Trail Collapse Style",
+      "styleAnchors": ["Otomo Light-Trail Collapse Style"],
       "ref": "pack_16/SP05-078.yaml",
       "packId": "pack_16",
       "packName": "Anime 03 — Anime Classics & Prestige",
@@ -1065,7 +1065,7 @@
       "categoryName": "4. Studio Masterpieces",
       "tags": ["anime-03-anime-classics-and-prestige", "studio-masterpieces"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-078 light-trail collapse light-trail collapse style 4. studio masterpieces authored animation pack_16 anime 03 — anime classics & prestige studio-masterpieces anime-03-anime-classics-and-prestige studio-masterpieces"
+      "searchableText": "sp05-078 otomo light-trail collapse otomo light-trail collapse style 4. studio masterpieces authored animation pack_16 anime 03 — anime classics & prestige studio-masterpieces anime-03-anime-classics-and-prestige studio-masterpieces"
     },
     {
       "id": "SP05-079",
@@ -1083,7 +1083,7 @@
     },
     {
       "id": "SP05-080",
-      "name": "Cosmic Ocean Lyrical Style",
+      "name": "Children of the Sea – Cosmic Ocean Lyrical",
       "ref": "pack_16/SP05-080.yaml",
       "packId": "pack_16",
       "packName": "Anime 03 — Anime Classics & Prestige",
@@ -1091,7 +1091,7 @@
       "categoryName": "4. Studio Masterpieces",
       "tags": ["anime-03-anime-classics-and-prestige", "studio-masterpieces"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
-      "searchableText": "sp05-080 cosmic ocean lyrical style 4. studio masterpieces authored animation pack_16 anime 03 — anime classics & prestige studio-masterpieces anime-03-anime-classics-and-prestige studio-masterpieces"
+      "searchableText": "sp05-080 children of the sea – cosmic ocean lyrical 4. studio masterpieces authored animation pack_16 anime 03 — anime classics & prestige studio-masterpieces anime-03-anime-classics-and-prestige studio-masterpieces"
     },
     {
       "id": "SP05-281",

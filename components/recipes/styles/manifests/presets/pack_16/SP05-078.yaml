@@ -1,10 +1,10 @@
 schemaVersion: 1
 id: SP05-078
 packId: pack_16
-name: Light-Trail Collapse Style
+name: Otomo Light-Trail Collapse Style
 styleAnchors:
-  - Light-Trail Collapse Style
-displayName: 'Light-Trail Collapse'
+  - 'Otomo Light-Trail Collapse Style'
+displayName: 'Otomo Light-Trail Collapse'
 category: 4. Studio Masterpieces
 version: 1
 supportedTasks:
@@ -14,6 +14,7 @@ supportedTasks:
 tags:
   - anime-classics-and-prestige
   - studio-masterpieces
+  - reference-title
 visualDna:
   aesthetic: >-
     Cut angular contour blocks through hard-edged cel planes; use short tapered directional
@@ -63,6 +64,10 @@ avoidRules:
   - generic anime filter
   - prompt-literal card
   - muddy cel noise
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-078.webp
 attributes:
@@ -79,6 +84,7 @@ taxonomy:
   tags:
     - anime-classics-and-prestige
     - studio-masterpieces
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

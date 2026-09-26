@@ -11,9 +11,10 @@ supportedTasks:
 tags:
   - anime-character-and-lifestyle
   - anime-style-spectrum
+  - reference-title
 visualDna:
   aesthetic: >-
-    Treat the named lineage as technique reference: razor-edged silhouettes, long graphic slashes,
+    A drawing technique, not a copy of any work: razor-edged silhouettes, long graphic slashes,
     dense black cutouts and a flat vermilion/cream/navy poster palette.
   subject_treatment: >-
     Preserve the requested identity, count, pose, action, material and setting. Apply the drawing
@@ -55,6 +56,10 @@ avoidRules:
   - slashes misaligned with requested action direction
   - black cutouts erasing subject-defining detail
   - hard color blocks merging adjacent forms
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-336.webp
 attributes:
@@ -73,6 +78,7 @@ taxonomy:
   tags:
     - anime-character-and-lifestyle
     - anime-style-spectrum
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit
