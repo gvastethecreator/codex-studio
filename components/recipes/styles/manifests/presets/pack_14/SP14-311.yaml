@@ -7,7 +7,7 @@ styleAnchors:
   - mexica fantastic art technique
   - amate bark
 displayName: Amate Bark Dreamscape
-category: 'Tricksters & Shape-Shifters'
+category: Tricksters & Shape-Shifters
 domain: mexica fantastic art technique
 version: 1
 supportedTasks:
@@ -29,12 +29,11 @@ visualDna:
   camera_and_composition: All-over composition with birds and flowers, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with joyful folk fantasy.
   rendering_and_quality: Vivid naive painting, kept consistent across the whole image.
-  creative_brief: "Amate bark dreamscape: vivid Nahua bark-paper paintings with flat bright birds, flowers and village life, pushed into dreamlike fantasy scenes. Carry it through amate bark, flat bright color, birds and flowers, folk fantasy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Amate bark dreamscape: vivid Nahua bark-paper paintings with flat bright birds, flowers and village life, pushed into dreamlike fantasy scenes. Carry it through amate bark, flat bright color, birds and flowers, folk fantasy. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: amate bark; flat bright color; birds and flowers; folk fantasy
 avoidRules:
   - readable glyphs
   - cultural stereotypes or caricature
-  - sacrifice gore
   - tourist-souvenir kitsch
   - readable text
   - logo
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable glyphs, cultural stereotypes or caricature, sacrifice gore, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable glyphs, cultural stereotypes or caricature, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -58,7 +57,7 @@ taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault
   categoryId: tricksters-shape-shifters
-  categoryName: 'Tricksters & Shape-Shifters'
+  categoryName: Tricksters & Shape-Shifters
   tags:
     - curation-v2
     - tricksters-shape-shifters

@@ -11,7 +11,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Sea Monsters & Water Spirits',
     domain: 'japanese mythic art technique',
     negativePrompt:
-      'readable Japanese text or seals, costume stereotypes, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable Japanese text or seals, costume stereotypes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Aizome indigo dye: deep natural indigo-dyed textiles with resist patterns, uneven blues and white motifs of waves, fish and folklore creatures.',
@@ -42,7 +42,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Sea Monsters & Water Spirits',
     domain: 'norse mythic art technique',
     negativePrompt:
-      'readable runes, horned-helmet cliché, modern extremist symbols, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable runes, horned-helmet cliché, modern extremist symbols, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Longship prow carving: tall curving ship prows carved as dragon and serpent heads with open jaws, painted stripes and clinker-built hull planks.',
@@ -71,7 +71,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Sea Monsters & Water Spirits',
     domain: 'mande epic art technique',
     negativePrompt:
-      'generic tribal pattern, cultural stereotypes or caricature, readable text, gore, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'generic tribal pattern, cultural stereotypes or caricature, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Niger River pirogue painting: long painted wooden river boats with bright geometric bands, prow decorations and reflections on the wide river at dusk.',
@@ -100,7 +100,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Sea Monsters & Water Spirits',
     domain: 'mande epic art technique',
     negativePrompt:
-      'generic tribal pattern, cultural stereotypes or caricature, readable text, gore, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'generic tribal pattern, cultural stereotypes or caricature, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Mande gala indigo cloth: deep indigo-dyed cotton with resist patterns of circles, stripes and knots, uneven blues and hand-dyed variation.',
@@ -130,7 +130,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Sea Monsters & Water Spirits',
     domain: 'akan art technique',
     negativePrompt:
-      'generic tribal pattern, cultural stereotypes or caricature, readable text, gore, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'generic tribal pattern, cultural stereotypes or caricature, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Fante canoe painting: brightly painted wooden fishing canoes on the Ghanaian coast with flags, stripes and hand-painted images along the hull.',
@@ -161,7 +161,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Sea Monsters & Water Spirits',
     domain: 'greek mythic art technique',
     negativePrompt:
-      'readable Greek inscriptions, modern tourist-souvenir kitsch, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable Greek inscriptions, modern tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Minoan palace fresco: Bronze Age wall painting on plaster with fluid lively figures, bright red and blue, lilies, dolphins and leaping bulls.',
@@ -192,7 +192,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Sea Monsters & Water Spirits',
     domain: 'greek mythic art technique',
     negativePrompt:
-      'readable Greek inscriptions, modern tourist-souvenir kitsch, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable Greek inscriptions, modern tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Hellenistic pathos marble: dramatic late Greek sculpture with twisting bodies, anguished faces, deep-cut drapery and theatrical movement.',
@@ -223,7 +223,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Sea Monsters & Water Spirits',
     domain: 'greek mythic art technique',
     negativePrompt:
-      'readable Greek inscriptions, modern tourist-souvenir kitsch, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable Greek inscriptions, modern tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Classical bronze patina: Greek bronze statues with green-brown patina, inlaid glass and stone eyes, copper lips and athletic poses recovered from the sea.',
@@ -252,7 +252,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Sea Monsters & Water Spirits',
     domain: 'mexica fantastic art technique',
     negativePrompt:
-      'readable glyphs, cultural stereotypes or caricature, sacrifice gore, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable glyphs, cultural stereotypes or caricature, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Floating chinampa city: a fantastic lake city of floating gardens, canals, temple pyramids and canoes, painted in lush luminous detail at golden hour.',
@@ -283,7 +283,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Sea Monsters & Water Spirits',
     domain: 'yoruba art technique',
     negativePrompt:
-      'generic tribal pattern, cultural stereotypes or caricature, disrespectful depiction of Orisha, readable text, gore, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'generic tribal pattern, cultural stereotypes or caricature, disrespectful depiction of Orisha, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Adire eleko indigo: Yoruba indigo cloth with starch-resist designs hand-painted through the paste, showing birds, lizards, spoons and geometric panels.',
@@ -314,7 +314,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Sea Monsters & Water Spirits',
     domain: 'yoruba art technique',
     negativePrompt:
-      'generic tribal pattern, cultural stereotypes or caricature, disrespectful depiction of Orisha, readable text, gore, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'generic tribal pattern, cultural stereotypes or caricature, disrespectful depiction of Orisha, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Sacred grove cement sculpture: towering organic cement and clay sculptures of deities among forest trees, flowing forms merging with roots and vines.',
@@ -348,7 +348,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Sea Monsters & Water Spirits',
     domain: 'Nordic cartographic water-spirit art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Carta marina monster chart: sixteenth-century northern sea charts crowded with hand-colored sea monsters, whales mistaken for islands, serpents and sinking ships.',
@@ -384,7 +384,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Sea Monsters & Water Spirits',
     domain: 'West and Central African water-spirit art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Mami Wata popular painting: vivid West and Central African popular paintings of the glamorous water spirit with a serpent around her shoulders, mirrors, combs and river light.',
@@ -413,7 +413,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Sea Monsters & Water Spirits',
     domain: 'Japanese water-spirit art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         "Dragon palace undersea screen: Japanese folding screen painting of the sea king's palace beneath the waves, coral halls, fish attendants and a jeweled dragon king on gold.",
@@ -444,7 +444,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Sea Monsters & Water Spirits',
     domain: 'Slavic water-spirit art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Rusalka moonlit lake illustration: Slavic folk-tale illustration of water maidens with long green hair among birches and moonlit lakes, ornate folk borders.',
@@ -474,7 +474,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Sea Monsters & Water Spirits',
     domain: 'Chinese water-spirit art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Mazu sea goddess mural: Chinese coastal temple mural of the goddess of the sea calming storms, her two demon generals with keen eyes and ears, and ships guided home.',
@@ -505,7 +505,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Sea Monsters & Water Spirits',
     domain: 'Babylonian water-spirit art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Tiamat glazed brick serpent: Babylonian glazed brick reliefs in deep blue and gold with striding dragons and bulls, reimagined as the primordial sea serpent of chaos.',
@@ -535,7 +535,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Sea Monsters & Water Spirits',
     domain: 'Indian water-spirit art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Makara temple gateway carving: Indian stone gateway arches with makara sea creatures, part crocodile, fish and elephant, spewing foliage and pearls.',
@@ -564,7 +564,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Sea Monsters & Water Spirits',
     domain: 'Filipino water-spirit art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Bakunawa moon-eater painting: Philippine folklore painting of the great sea serpent rising from the ocean to swallow the moon while villagers bang pots to scare it.',
@@ -595,7 +595,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Sea Monsters & Water Spirits',
     domain: 'Scottish water-spirit art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Kelpie river horse etching: Scottish etchings of shape-shifting water horses with dripping manes of weed, rearing from dark lochs and rivers.',
@@ -629,7 +629,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Sea Monsters & Water Spirits',
     domain: 'Amazonian Brazilian water-spirit art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Amazon iara river painting: lush Brazilian folklore painting of the river siren among giant lilies, flooded forest, pink dolphins and golden light.',
@@ -660,7 +660,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Sea Monsters & Water Spirits',
     domain: 'Japanese water-spirit art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Umibozu storm woodblock: Japanese woodblock prints of the vast sea monk spirit rising from night storms beside fishing boats, huge dark head and glowing eyes.',

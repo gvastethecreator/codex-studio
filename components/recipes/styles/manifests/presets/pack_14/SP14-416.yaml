@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Symmetrical tree rising from a pot or roots filling the frame.
   atmosphere_and_mood: Keep the requested mood with joyous abundant life.
   rendering_and_quality: Dense decorative embroidery with bold flat color, kept consistent across the whole image.
-  creative_brief: "Matyó world tree embroidery: Hungarian folk embroidery with dense satin-stitched roses, tulips and peonies branching from a single tree of life in saturated red, blue, green and yellow on black or white cloth. Carry it through tree of life, satin-stitch roses, tulips and peonies, bold color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Matyó world tree embroidery: Hungarian folk embroidery with dense satin-stitched roses, tulips and peonies branching from a single tree of life in saturated red, blue, green and yellow on black or white cloth. Carry it through tree of life, satin-stitch roses, tulips and peonies, bold color. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: tree of life; satin-stitch roses; tulips and peonies; bold color
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

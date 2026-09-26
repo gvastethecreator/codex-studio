@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Moonlit temple garden composition, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with playful folk comedy.
   rendering_and_quality: Charming comic woodblock, kept consistent across the whole image.
-  creative_brief: "Tanuki belly-drum woodblock: comic Japanese woodblock prints of shape-shifting raccoon dogs drumming their bellies, disguised as kettles, monks and lanterns. Carry it through raccoon dogs, belly drums, disguises, moonlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Tanuki belly-drum woodblock: comic Japanese woodblock prints of shape-shifting raccoon dogs drumming their bellies, disguised as kettles, monks and lanterns. Carry it through raccoon dogs, belly drums, disguises, moonlight. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: raccoon dogs; belly drums; disguises; moonlight
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

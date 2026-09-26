@@ -7,7 +7,7 @@ styleAnchors:
   - greek mythic art technique
   - plaster fresco
 displayName: Minoan Palace Fresco
-category: 'Sea Monsters & Water Spirits'
+category: Sea Monsters & Water Spirits
 domain: greek mythic art technique
 version: 1
 supportedTasks:
@@ -29,12 +29,11 @@ visualDna:
   camera_and_composition: Lively frieze on a palace wall with gaps.
   atmosphere_and_mood: Keep the requested mood with joyful sea-island vitality.
   rendering_and_quality: Fluid painterly fresco with visible cracks, kept consistent across the whole image.
-  creative_brief: "Minoan palace fresco: Bronze Age wall painting on plaster with fluid lively figures, bright red and blue, lilies, dolphins and leaping bulls. Carry it through plaster fresco, leaping figures, dolphins, lilies. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Minoan palace fresco: Bronze Age wall painting on plaster with fluid lively figures, bright red and blue, lilies, dolphins and leaping bulls. Carry it through plaster fresco, leaping figures, dolphins, lilies. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: plaster fresco; leaping figures; dolphins; lilies
 avoidRules:
   - readable Greek inscriptions
   - modern tourist-souvenir kitsch
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable Greek inscriptions, modern tourist-souvenir kitsch, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable Greek inscriptions, modern tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -57,7 +56,7 @@ taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault
   categoryId: sea-monsters-water-spirits
-  categoryName: 'Sea Monsters & Water Spirits'
+  categoryName: Sea Monsters & Water Spirits
   tags:
     - curation-v2
     - sea-monsters-water-spirits

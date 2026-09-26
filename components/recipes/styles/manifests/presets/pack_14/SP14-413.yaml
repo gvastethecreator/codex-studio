@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Frontal door with repeated rows of carved figures and a lock bar.
   atmosphere_and_mood: Keep the requested mood with ancestral cosmic order.
   rendering_and_quality: Simplified rhythmic carving with worn surface, kept consistent across the whole image.
-  creative_brief: "Dogon granary door: carved wooden granary doors from Mali with rows of ancestor figures, twin spirits, lizards and zigzag water lines cut into weathered planks with iron staples. Carry it through rows of ancestors, twin spirits, iron staples, granary door. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Dogon granary door: carved wooden granary doors from Mali with rows of ancestor figures, twin spirits, lizards and zigzag water lines cut into weathered planks with iron staples. Carry it through rows of ancestors, twin spirits, iron staples, granary door. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: rows of ancestors; twin spirits; iron staples; granary door
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

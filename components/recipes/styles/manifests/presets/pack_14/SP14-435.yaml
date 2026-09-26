@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Small horizontal scene with a room and a cloud in one corner.
   atmosphere_and_mood: Keep the requested mood with humble grateful wonder.
   rendering_and_quality: Naive heartfelt painting, kept consistent across the whole image.
-  creative_brief: "Curandera tin ex-voto: Mexican painted tin votive panels telling small miracle stories, a healer or saint appearing in a corner cloud, simple naive figures in flat color on dented tin. Carry it through painted tin, naive figures, miracle cloud, dented metal. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Curandera tin ex-voto: Mexican painted tin votive panels telling small miracle stories, a healer or saint appearing in a corner cloud, simple naive figures in flat color on dented tin. Carry it through painted tin, naive figures, miracle cloud, dented metal. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: painted tin; naive figures; miracle cloud; dented metal
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

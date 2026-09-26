@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Grid of small panels, each a cosmic figure or constellation.
   atmosphere_and_mood: Keep the requested mood with ordered celestial wonder.
   rendering_and_quality: Meticulous flat traditional painting, kept consistent across the whole image.
-  creative_brief: "Kamasan astrological calendar: Balinese Kamasan painting on cloth, a grid of divine figures, planets, beasts and constellations drawn in stylized wayang profile with muted earth colors. Carry it through calendar grid, stylized profiles, constellations, earth colors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Kamasan astrological calendar: Balinese Kamasan painting on cloth, a grid of divine figures, planets, beasts and constellations drawn in stylized wayang profile with muted earth colors. Carry it through calendar grid, stylized profiles, constellations, earth colors. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: calendar grid; stylized profiles; constellations; earth colors
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

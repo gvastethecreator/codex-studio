@@ -87,7 +87,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Creation, World Trees & Cosmos',
     domain: 'mexica fantastic art technique',
     negativePrompt:
-      'readable glyphs, cultural stereotypes or caricature, sacrifice gore, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable glyphs, cultural stereotypes or caricature, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Codex cosmos screenfold: the flat bold outlines and saturated colors of central Mexican codices expanded into vast cosmic scenes of gods, stars and day signs unfolding across folded pages.',
@@ -119,7 +119,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Creation, World Trees & Cosmos',
     domain: 'maya art technique',
     negativePrompt:
-      'readable glyphs, cultural stereotypes or caricature, sacrifice gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable glyphs, cultural stereotypes or caricature, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Maya screenfold codex: folded bark-paper books painted on lime plaster with gods, calendar cycles and rain scenes in red, black and Maya blue.',
@@ -150,7 +150,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Creation, World Trees & Cosmos',
     domain: 'egyptian mythic art technique',
     negativePrompt:
-      'readable hieroglyphs or cartouches, mummy horror cliché, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable hieroglyphs or cartouches, mummy horror cliché, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Egyptian blue mural: painting dominated by the synthetic Egyptian blue pigment, glowing blue skies, water and gods against warm ochre.',
@@ -181,7 +181,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Creation, World Trees & Cosmos',
     domain: 'mande epic art technique',
     negativePrompt:
-      'generic tribal pattern, cultural stereotypes or caricature, readable text, gore, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'generic tribal pattern, cultural stereotypes or caricature, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Bogolanfini mudcloth pattern: Bamana hand-painted mudcloth with fermented-mud dark grounds and pale reserved geometric symbols in rows and panels.',
@@ -211,7 +211,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Creation, World Trees & Cosmos',
     domain: 'yoruba art technique',
     negativePrompt:
-      'generic tribal pattern, cultural stereotypes or caricature, disrespectful depiction of Orisha, readable text, gore, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'generic tribal pattern, cultural stereotypes or caricature, disrespectful depiction of Orisha, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Osogbo school painting: mid-twentieth-century Nigerian painting from the Osogbo workshops, dense decorative figures, bold outlines, mythic stories and saturated color.',
@@ -242,7 +242,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Creation, World Trees & Cosmos',
     domain: 'greek mythic art technique',
     negativePrompt:
-      'readable Greek inscriptions, modern tourist-souvenir kitsch, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable Greek inscriptions, modern tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Cycladic marble minimalism: Bronze Age island figurines of smooth white marble, folded arms, tilted heads with only a nose, pure simplified forms.',
@@ -274,7 +274,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Creation, World Trees & Cosmos',
     domain: 'Telugu cosmological art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Kalamkari cosmic textile: hand-drawn and vegetable-dyed temple cloths from Andhra with pen-drawn gods, serpents and churning seas in narrative bands on madder red and black line.',
@@ -310,7 +310,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Creation, World Trees & Cosmos',
     domain: 'Chinese cosmological art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Dunhuang celestial cave mural: Silk Road cave temple murals with flying celestials trailing scarves through heavenly skies, lotus ceilings, oxidized pigments and flaking plaster.',
@@ -341,7 +341,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Creation, World Trees & Cosmos',
     domain: 'Japanese cosmological art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Nihonga mineral creation: modern Japanese painting in crushed mineral pigments and gold leaf, showing the first gods stirring the primordial sea with a jeweled spear from a floating bridge.',
@@ -371,7 +371,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Creation, World Trees & Cosmos',
     domain: 'Finnish cosmological art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Ryijy rug Kalevala weave: Finnish long-pile ryijy rugs with shaggy wool knots in bold shapes showing the epic creation of the world from the eggs of a duck resting on the knee of the air spirit.',
@@ -401,7 +401,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Creation, World Trees & Cosmos',
     domain: 'Dogon cosmological art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Dogon granary door: carved wooden granary doors from Mali with rows of ancestor figures, twin spirits, lizards and zigzag water lines cut into weathered planks with iron staples.',
@@ -431,7 +431,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Creation, World Trees & Cosmos',
     domain: 'Lithuanian cosmological art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Straw sodas cosmos mobile: Lithuanian and Baltic hanging straw gardens of geometric polyhedra, suspended from ceilings to model the order of the world, glowing gold and turning slowly.',
@@ -462,7 +462,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Creation, World Trees & Cosmos',
     domain: 'Jain cosmological art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Jain cosmic man diagram: Jain cosmological paintings showing the universe as a vast human figure, layered with heavens, a central human world of rings and hells below, in precise color on cloth or paper.',
@@ -493,7 +493,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Creation, World Trees & Cosmos',
     domain: 'Hungarian cosmological art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Matyó world tree embroidery: Hungarian folk embroidery with dense satin-stitched roses, tulips and peonies branching from a single tree of life in saturated red, blue, green and yellow on black or white cloth.',
@@ -522,7 +522,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Creation, World Trees & Cosmos',
     domain: 'Balinese cosmological art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Kamasan astrological calendar: Balinese Kamasan painting on cloth, a grid of divine figures, planets, beasts and constellations drawn in stylized wayang profile with muted earth colors.',
@@ -552,7 +552,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Creation, World Trees & Cosmos',
     domain: 'Korean cosmological art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Ten longevity screen: Korean court folding screens of the ten symbols of long life, sun, clouds, mountains, water, pines, cranes, deer, turtles, fungus and bamboo in lush blue-green mineral color.',
@@ -582,7 +582,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Creation, World Trees & Cosmos',
     domain: 'Peruvian cosmological art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Andean retablo cosmos: Peruvian Ayacucho retablo boxes with painted doors opening onto layered tiers of tiny plaster figures, heaven above, earth in the middle and underworld below.',
@@ -612,7 +612,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Creation, World Trees & Cosmos',
     domain: 'Ukrainian cosmological art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Pysanka world egg: Ukrainian wax-resist decorated eggs with fine geometric bands, stars, wheat, suns and endless lines, dyed in layers from yellow to red to black.',
@@ -642,7 +642,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Creation, World Trees & Cosmos',
     domain: 'Inuit cosmological art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Arctic stonecut print: contemporary Inuit stonecut and stencil prints with bold flat shapes of sea spirits, birds, transformations and hunters on white paper with generous space.',

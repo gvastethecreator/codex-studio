@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Horse rearing from water, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with wild treacherous beauty.
   rendering_and_quality: Dramatic etched finish, kept consistent across the whole image.
-  creative_brief: "Kelpie river horse etching: Scottish etchings of shape-shifting water horses with dripping manes of weed, rearing from dark lochs and rivers. Carry it through water horse, weed mane, dark loch, spray. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Kelpie river horse etching: Scottish etchings of shape-shifting water horses with dripping manes of weed, rearing from dark lochs and rivers. Carry it through water horse, weed mane, dark loch, spray. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: water horse; weed mane; dark loch; spray
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

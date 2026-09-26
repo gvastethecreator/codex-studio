@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Performance space under a palm-leaf arch with dancers circling.
   atmosphere_and_mood: Keep the requested mood with feverish night healing.
   rendering_and_quality: Vibrant performance depiction with mask detail, kept consistent across the whole image.
-  creative_brief: "Sanni healing masks: Sri Lankan carved masks of the eighteen illness spirits with wild eyes and snakes, used in all-night healing dances of drums, fire and palm-leaf arches. Carry it through illness spirit masks, drummers, palm-leaf arch, fire. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Sanni healing masks: Sri Lankan carved masks of the eighteen illness spirits with wild eyes and snakes, used in all-night healing dances of drums, fire and palm-leaf arches. Carry it through illness spirit masks, drummers, palm-leaf arch, fire. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: illness spirit masks; drummers; palm-leaf arch; fire
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

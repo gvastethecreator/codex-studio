@@ -41,7 +41,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Tricksters & Shape-Shifters',
     domain: 'akan art technique',
     negativePrompt:
-      'generic tribal pattern, cultural stereotypes or caricature, readable text, gore, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'generic tribal pattern, cultural stereotypes or caricature, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         "Anansi storybook illustration: warm contemporary Ghanaian picture-book art of the spider trickster's tales, bold shapes, patterned cloth and bright forest.",
@@ -73,7 +73,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Tricksters & Shape-Shifters',
     domain: 'akan art technique',
     negativePrompt:
-      'generic tribal pattern, cultural stereotypes or caricature, readable text, gore, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'generic tribal pattern, cultural stereotypes or caricature, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Asafo appliqué flag: Fante military company flags with bold cloth appliqué figures illustrating proverbs, animals and challenges in bright colors.',
@@ -104,7 +104,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Tricksters & Shape-Shifters',
     domain: 'japanese mythic art technique',
     negativePrompt:
-      'readable Japanese text or seals, costume stereotypes, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable Japanese text or seals, costume stereotypes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Otsu-e folk painting: humorous Edo roadside folk paintings with bold simple figures, oni in monk robes, fujimusume maidens and bright flat color.',
@@ -133,7 +133,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Tricksters & Shape-Shifters',
     domain: 'mande epic art technique',
     negativePrompt:
-      'generic tribal pattern, cultural stereotypes or caricature, readable text, gore, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'generic tribal pattern, cultural stereotypes or caricature, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Sogo bo puppet masquerade: Bamana and Bozo puppet theater with brightly painted animal and character puppets rising from fabric-covered stages.',
@@ -162,7 +162,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Tricksters & Shape-Shifters',
     domain: 'yoruba art technique',
     negativePrompt:
-      'generic tribal pattern, cultural stereotypes or caricature, disrespectful depiction of Orisha, readable text, gore, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'generic tribal pattern, cultural stereotypes or caricature, disrespectful depiction of Orisha, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Gelede masquerade carving: painted wooden headdress masks honoring the mothers, with serene faces topped by lively carved scenes of daily life and satire.',
@@ -193,7 +193,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Tricksters & Shape-Shifters',
     domain: 'norse mythic art technique',
     negativePrompt:
-      'readable runes, horned-helmet cliché, modern extremist symbols, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable runes, horned-helmet cliché, modern extremist symbols, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Edda pen-and-ink revival: early twentieth-century book illustrations of the Eddas in fine pen and ink, gnarled roots, flowing beards and misty giants.',
@@ -225,7 +225,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Tricksters & Shape-Shifters',
     domain: 'mexica fantastic art technique',
     negativePrompt:
-      'readable glyphs, cultural stereotypes or caricature, sacrifice gore, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable glyphs, cultural stereotypes or caricature, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Amate bark dreamscape: vivid Nahua bark-paper paintings with flat bright birds, flowers and village life, pushed into dreamlike fantasy scenes.',
@@ -255,7 +255,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Tricksters & Shape-Shifters',
     domain: 'Japanese trickster art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Kitsune rain wedding print: woodblock prints of fox wedding processions during sun-showers, lantern-carrying foxes in kimono crossing fields under rain and sunlight.',
@@ -286,7 +286,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Tricksters & Shape-Shifters',
     domain: 'Chinese trickster art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Stone monkey cloud ink painting: vigorous Chinese ink-and-color painting of a stone-born monkey king somersaulting on clouds with his staff, in splashy brushwork.',
@@ -316,7 +316,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Tricksters & Shape-Shifters',
     domain: 'Chinese trickster art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Huli jing silk painting: delicate Chinese silk painting of fox spirits transforming between elegant ladies and nine-tailed foxes in moonlit gardens.',
@@ -347,7 +347,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Tricksters & Shape-Shifters',
     domain: 'Japanese trickster art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Tanuki belly-drum woodblock: comic Japanese woodblock prints of shape-shifting raccoon dogs drumming their bellies, disguised as kettles, monks and lanterns.',
@@ -379,7 +379,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Tricksters & Shape-Shifters',
     domain: 'Korean trickster art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Kumiho moonlit minhwa: Korean folk painting of the nine-tailed fox under a full moon, flat bold color, pine trees and mountains, eerie and charming at once.',
@@ -408,7 +408,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Tricksters & Shape-Shifters',
     domain: 'Medieval European trickster art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Reynard fable engraving: medieval and early modern engravings of the cunning fox Reynard outwitting the lion king and the wolf in courtly animal satire.',
@@ -438,7 +438,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Tricksters & Shape-Shifters',
     domain: 'Roman trickster art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Pompeian Mercury fresco: Roman wall painting in Pompeian red with the winged messenger trickster, painted architecture, garlands and faded plaster.',
@@ -469,7 +469,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Tricksters & Shape-Shifters',
     domain: 'Polynesian trickster art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Tapa cloth legend pattern: Pacific bark cloth with painted and stamped brown and black geometric patterns framing the legend of the demigod who fished up islands.',
@@ -500,7 +500,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Tricksters & Shape-Shifters',
     domain: 'Scottish trickster art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Orkney selkie watercolor: soft northern watercolor of seal-folk shedding their skins on moonlit rocks, grey seas, mist and lamplit crofts.',
@@ -530,7 +530,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Tricksters & Shape-Shifters',
     domain: 'French trickster art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Loup-garou chapbook woodcut: rough French chapbook woodcuts of werewolves and shape-shifters in villages and forests, crude bold carving and cheap paper.',
@@ -560,7 +560,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Tricksters & Shape-Shifters',
     domain: 'Oaxacan trickster art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Oaxacan alebrije carving: vividly painted carved wooden fantasy creatures with intricate dotted patterns, combining animals into impossible spirit guides.',
@@ -597,7 +597,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Tricksters & Shape-Shifters',
     domain: 'German trickster art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Eulenspiegel owl-and-mirror etching: early German etchings of the jester prankster with his owl and mirror, crowded market towns and comic chaos.',
@@ -626,7 +626,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Tricksters & Shape-Shifters',
     domain: 'Ottoman trickster art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Nasreddin Ottoman miniature: Ottoman court miniature style of the wise fool on his donkey, flat bright colors, patterned carpets and bustling bazaars.',
@@ -656,7 +656,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Tricksters & Shape-Shifters',
     domain: 'Yoruba trickster art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Ijapa tortoise market mural: Nigerian painted market and school murals of the clever tortoise from Yoruba folktales, bold flat color and lively crowds.',

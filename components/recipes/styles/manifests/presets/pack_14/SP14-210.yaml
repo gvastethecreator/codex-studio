@@ -7,7 +7,7 @@ styleAnchors:
   - mande epic art technique
   - antelope headdress
 displayName: Ci Wara Antelope Carving
-category: 'Beasts, Guardians & Chimeras'
+category: Beasts, Guardians & Chimeras
 domain: mande epic art technique
 version: 1
 supportedTasks:
@@ -29,13 +29,12 @@ visualDna:
   camera_and_composition: Tall vertical silhouette against sky, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with dignified agricultural celebration.
   rendering_and_quality: Elegant sculptural carving, kept consistent across the whole image.
-  creative_brief: "Ci wara antelope carving: Bamana carved wooden headdresses of stylized antelopes with openwork manes and tall horns, honoring the farming spirit. Carry it through antelope headdress, openwork mane, tall horns, carved wood. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Ci wara antelope carving: Bamana carved wooden headdresses of stylized antelopes with openwork manes and tall horns, honoring the farming spirit. Carry it through antelope headdress, openwork mane, tall horns, carved wood. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: antelope headdress; openwork mane; tall horns; carved wood
 avoidRules:
   - generic tribal pattern
   - cultural stereotypes or caricature
   - readable text
-  - gore
   - logo
   - real artist signature
   - copying a specific famous artwork
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: generic tribal pattern, cultural stereotypes or caricature, readable text, gore, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: generic tribal pattern, cultural stereotypes or caricature, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -57,7 +56,7 @@ taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault
   categoryId: beasts-guardians-chimeras
-  categoryName: 'Beasts, Guardians & Chimeras'
+  categoryName: Beasts, Guardians & Chimeras
   tags:
     - curation-v2
     - beasts-guardians-chimeras

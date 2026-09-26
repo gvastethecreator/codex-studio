@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Long horizontal scroll scene, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with fiery moral dread.
   rendering_and_quality: Expressive handscroll painting, kept consistent across the whole image.
-  creative_brief: "Jigoku-zoshi hell scroll: Japanese medieval handscrolls of the hell realms, red flames, blue and red oni wardens, and small pale souls in swirling ink and color. Carry it through hell scroll, flames, oni wardens, handscroll. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Jigoku-zoshi hell scroll: Japanese medieval handscrolls of the hell realms, red flames, blue and red oni wardens, and small pale souls in swirling ink and color. Carry it through hell scroll, flames, oni wardens, handscroll. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: hell scroll; flames; oni wardens; handscroll
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

@@ -7,7 +7,7 @@ styleAnchors:
   - yoruba art technique
   - dense decoration
 displayName: Osogbo School Painting
-category: 'Creation, World Trees & Cosmos'
+category: Creation, World Trees & Cosmos
 domain: yoruba art technique
 version: 1
 supportedTasks:
@@ -29,14 +29,13 @@ visualDna:
   camera_and_composition: Crowded decorative composition, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with vibrant mythic storytelling.
   rendering_and_quality: Dense decorative painting, kept consistent across the whole image.
-  creative_brief: "Osogbo school painting: mid-twentieth-century Nigerian painting from the Osogbo workshops, dense decorative figures, bold outlines, mythic stories and saturated color. Carry it through dense decoration, bold outlines, saturated color, myth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Osogbo school painting: mid-twentieth-century Nigerian painting from the Osogbo workshops, dense decorative figures, bold outlines, mythic stories and saturated color. Carry it through dense decoration, bold outlines, saturated color, myth. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: dense decoration; bold outlines; saturated color; myth
 avoidRules:
   - generic tribal pattern
   - cultural stereotypes or caricature
   - disrespectful depiction of Orisha
   - readable text
-  - gore
   - logo
   - real artist signature
   - copying a specific famous artwork
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: generic tribal pattern, cultural stereotypes or caricature, disrespectful depiction of Orisha, readable text, gore, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: generic tribal pattern, cultural stereotypes or caricature, disrespectful depiction of Orisha, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -58,7 +57,7 @@ taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault
   categoryId: creation-world-trees-cosmos
-  categoryName: 'Creation, World Trees & Cosmos'
+  categoryName: Creation, World Trees & Cosmos
   tags:
     - curation-v2
     - creation-world-trees-cosmos

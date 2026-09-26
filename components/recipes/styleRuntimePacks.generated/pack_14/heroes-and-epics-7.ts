@@ -87,7 +87,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Heroes & Epics',
     domain: 'japanese mythic art technique',
     negativePrompt:
-      'readable Japanese text or seals, costume stereotypes, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable Japanese text or seals, costume stereotypes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Musha-e warrior print: dynamic woodblock triptychs of legendary warriors battling monsters, giant skeletons and sea spirits with dense action.',
@@ -119,7 +119,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Heroes & Epics',
     domain: 'norse mythic art technique',
     negativePrompt:
-      'readable runes, horned-helmet cliché, modern extremist symbols, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable runes, horned-helmet cliché, modern extremist symbols, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Gotland picture stone: keyhole-shaped stone slabs carved with stacked scenes of ships, riders, eight-legged horses and warriors arriving at the hall of the fallen.',
@@ -151,7 +151,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Heroes & Epics',
     domain: 'norse mythic art technique',
     negativePrompt:
-      'readable runes, horned-helmet cliché, modern extremist symbols, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable runes, horned-helmet cliché, modern extremist symbols, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Nordic romantic saga oil: nineteenth-century Scandinavian romantic paintings of sagas, dramatic fjords, heroic figures and golden northern light.',
@@ -181,7 +181,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Heroes & Epics',
     domain: 'greek mythic art technique',
     negativePrompt:
-      'readable Greek inscriptions, modern tourist-souvenir kitsch, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable Greek inscriptions, modern tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Attic red-figure vase painting: figures left in the orange clay against a glossy black ground, fine relief lines and diluted glaze for anatomy and drapery.',
@@ -211,7 +211,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Heroes & Epics',
     domain: 'greek mythic art technique',
     negativePrompt:
-      'readable Greek inscriptions, modern tourist-souvenir kitsch, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable Greek inscriptions, modern tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Attic black-figure vase painting: glossy black silhouettes on orange clay with incised details scratched through to the clay and touches of added red and white.',
@@ -243,7 +243,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Heroes & Epics',
     domain: 'mande epic art technique',
     negativePrompt:
-      'generic tribal pattern, cultural stereotypes or caricature, readable text, gore, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'generic tribal pattern, cultural stereotypes or caricature, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Griot firelight story painting: warm painterly scenes of evening storytelling, figures lit by fire, and the epic unfolding as luminous visions in the smoke above.',
@@ -274,7 +274,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Heroes & Epics',
     domain: 'mande epic art technique',
     negativePrompt:
-      'generic tribal pattern, cultural stereotypes or caricature, readable text, gore, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'generic tribal pattern, cultural stereotypes or caricature, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Contemporary Sahel graphic novel: bold modern comic art retelling the epics, dynamic panels, clean ink, warm flat colors and dramatic angles.',
@@ -305,7 +305,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Heroes & Epics',
     domain: 'mexica fantastic art technique',
     negativePrompt:
-      'readable glyphs, cultural stereotypes or caricature, sacrifice gore, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable glyphs, cultural stereotypes or caricature, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Eagle warrior solar armor: epic fantasy warriors in feathered eagle and jaguar suits radiating solar light, inspired by clay eagle-warrior sculpture.',
@@ -336,7 +336,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Heroes & Epics',
     domain: 'mexica fantastic art technique',
     negativePrompt:
-      'readable glyphs, cultural stereotypes or caricature, sacrifice gore, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable glyphs, cultural stereotypes or caricature, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Muralist cosmic epic: monumental modern Mexican mural painting with sweeping crowds, cosmic figures, machines and ancient gods merged in flowing composition.',
@@ -366,7 +366,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Heroes & Epics',
     domain: 'maya art technique',
     negativePrompt:
-      'readable glyphs, cultural stereotypes or caricature, sacrifice gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable glyphs, cultural stereotypes or caricature, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Bonampak mural: vivid Classic Maya wall paintings with crowded courtly scenes, battles and processions in brilliant blue, red and ochre.',
@@ -398,7 +398,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Heroes & Epics',
     domain: 'maya art technique',
     negativePrompt:
-      'readable glyphs, cultural stereotypes or caricature, sacrifice gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable glyphs, cultural stereotypes or caricature, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Ballcourt marker relief: round carved stone markers set in ballcourt floors showing players striking a large rubber ball in dynamic poses.',
@@ -427,7 +427,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Heroes & Epics',
     domain: 'japanese mythic art technique',
     negativePrompt:
-      'readable Japanese text or seals, costume stereotypes, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable Japanese text or seals, costume stereotypes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Kamishibai story card: large painted picture cards from street paper-theater storytelling, bold gouache scenes, dramatic framing and a wooden stage frame.',
@@ -461,7 +461,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Heroes & Epics',
     domain: 'Persian epic hero art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Qajar coffeehouse epic canvas: large Persian storyteller canvases painted for coffeehouse recitals, crowded with champions in tiger-skin armor, white demons, duels and many episodes of one epic on a single cloth.',
@@ -492,7 +492,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Heroes & Epics',
     domain: 'Odia epic hero art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Pattachitra epic scroll: Odisha cloth paintings with bold ornamental borders, stylized almond-eyed heroes, dense floral fields and epic battles and journeys on chalk-primed cloth.',
@@ -523,7 +523,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Heroes & Epics',
     domain: 'Kyrgyz epic hero art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Kyrgyz epic felt hanging: nomad felt hangings with inlaid ram-horn spirals and appliqued riders, eagles and battle scenes from the great steppe epic, stitched in bold contrasting colors.',
@@ -553,7 +553,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Heroes & Epics',
     domain: 'Sicilian epic hero art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Sicilian cart paladin panel: painted panels from Sicilian donkey carts showing armored paladins, jousts and battles against rival knights and sea giants in glossy saturated colors with carved gilt frames.',
@@ -587,7 +587,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Heroes & Epics',
     domain: 'Ethiopian epic hero art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Ethiopian legend strip painting: Ethiopian popular paintings telling a legend across rows of small panels, large-eyed figures in profile and frontal views, bright flat color on canvas.',
@@ -621,7 +621,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Heroes & Epics',
     domain: 'Chinese epic hero art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Nianhua door warrior print: Chinese New Year woodblock prints of paired guardian generals in armor, hand-colored with bold outlines, pasted on doors to protect the household.',
@@ -652,7 +652,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Heroes & Epics',
     domain: 'Filipino epic hero art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Filipino komiks epic hero: classic Filipino komiks art of island epics, heroes and enchanted beings in lush ink linework, dramatic poses, jungle backgrounds and newsprint color.',
@@ -682,7 +682,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Heroes & Epics',
     domain: 'Mongolian epic hero art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Mongolian zurag panorama: Mongol zurag painting with tiny detailed figures spread across vast steppe panoramas, gers, horses and many episodes of an epic hero happening at once.',

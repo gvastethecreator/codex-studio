@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Top-down carpet field with repeating lattice cells and a hooked border.
   atmosphere_and_mood: Keep the requested mood with ancient guardian pattern.
   rendering_and_quality: Crisp geometric weaving with stepped knot edges, kept consistent across the whole image.
-  creative_brief: "Caucasian dragon carpet: Armenian and Caucasian knotted pile carpets where stylized dragons become angular S-shaped emblems locked in a diagonal lattice with palmettes, stars and hooked borders. Carry it through angular dragon emblems, diagonal lattice, palmettes, hooked border. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Caucasian dragon carpet: Armenian and Caucasian knotted pile carpets where stylized dragons become angular S-shaped emblems locked in a diagonal lattice with palmettes, stars and hooked borders. Carry it through angular dragon emblems, diagonal lattice, palmettes, hooked border. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: angular dragon emblems; diagonal lattice; palmettes; hooked border
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Balanced central figure surrounded by open white space.
   atmosphere_and_mood: Keep the requested mood with mythic arctic clarity.
   rendering_and_quality: Bold graphic printmaking with confident shapes, kept consistent across the whole image.
-  creative_brief: "Arctic stonecut print: contemporary Inuit stonecut and stencil prints with bold flat shapes of sea spirits, birds, transformations and hunters on white paper with generous space. Carry it through bold flat shapes, sea spirits, transformation, white space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Arctic stonecut print: contemporary Inuit stonecut and stencil prints with bold flat shapes of sea spirits, birds, transformations and hunters on white paper with generous space. Carry it through bold flat shapes, sea spirits, transformation, white space. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: bold flat shapes; sea spirits; transformation; white space
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

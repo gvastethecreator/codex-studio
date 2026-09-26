@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Frontal wall rug with bold central composition and simple border.
   atmosphere_and_mood: Keep the requested mood with mythic northern calm.
   rendering_and_quality: Bold textile design with soft shaggy edges, kept consistent across the whole image.
-  creative_brief: "Ryijy rug Kalevala weave: Finnish long-pile ryijy rugs with shaggy wool knots in bold shapes showing the epic creation of the world from the eggs of a duck resting on the knee of the air spirit. Carry it through long wool pile, bold shapes, duck eggs, air spirit. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Ryijy rug Kalevala weave: Finnish long-pile ryijy rugs with shaggy wool knots in bold shapes showing the epic creation of the world from the eggs of a duck resting on the knee of the air spirit. Carry it through long wool pile, bold shapes, duck eggs, air spirit. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: long wool pile; bold shapes; duck eggs; air spirit
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

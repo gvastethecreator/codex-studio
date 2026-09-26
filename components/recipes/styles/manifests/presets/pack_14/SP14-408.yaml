@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Bird's-eye panorama with many tiny scenes across rolling hills.
   atmosphere_and_mood: Keep the requested mood with vast epic scope.
   rendering_and_quality: Meticulous miniature detail across a wide landscape, kept consistent across the whole image.
-  creative_brief: "Mongolian zurag panorama: Mongol zurag painting with tiny detailed figures spread across vast steppe panoramas, gers, horses and many episodes of an epic hero happening at once. Carry it through steppe panorama, tiny figures, gers and horses, many episodes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Mongolian zurag panorama: Mongol zurag painting with tiny detailed figures spread across vast steppe panoramas, gers, horses and many episodes of an epic hero happening at once. Carry it through steppe panorama, tiny figures, gers and horses, many episodes. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: steppe panorama; tiny figures; gers and horses; many episodes
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

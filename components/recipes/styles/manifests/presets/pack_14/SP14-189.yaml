@@ -7,7 +7,7 @@ styleAnchors:
   - norse mythic art technique
   - slender beasts
 displayName: Urnes Serpent Carving
-category: 'Beasts, Guardians & Chimeras'
+category: Beasts, Guardians & Chimeras
 domain: norse mythic art technique
 version: 1
 supportedTasks:
@@ -29,13 +29,12 @@ visualDna:
   camera_and_composition: Tall panel with looping interlace, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with elegant restless tension.
   rendering_and_quality: Refined flowing carving, kept consistent across the whole image.
-  creative_brief: "Urnes serpent carving: the last Viking Age style, slender elegant beasts and snakes in figure-of-eight loops, thin and thick lines interlaced across wood. Carry it through slender beasts, figure-of-eight loops, interlace, carved wood. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Urnes serpent carving: the last Viking Age style, slender elegant beasts and snakes in figure-of-eight loops, thin and thick lines interlaced across wood. Carry it through slender beasts, figure-of-eight loops, interlace, carved wood. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: slender beasts; figure-of-eight loops; interlace; carved wood
 avoidRules:
   - readable runes
   - horned-helmet cliché
   - modern extremist symbols
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable runes, horned-helmet cliché, modern extremist symbols, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable runes, horned-helmet cliché, modern extremist symbols, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -58,7 +57,7 @@ taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault
   categoryId: beasts-guardians-chimeras
-  categoryName: 'Beasts, Guardians & Chimeras'
+  categoryName: Beasts, Guardians & Chimeras
   tags:
     - curation-v2
     - beasts-guardians-chimeras

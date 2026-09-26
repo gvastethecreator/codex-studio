@@ -36,7 +36,7 @@ const s = (
     rendering_and_quality: render,
     key_features: key,
   }),
-  avoid: ['cultural stereotypes or caricature', 'readable text or script', 'gore', ...STYLE_AVOID],
+  avoid: ['cultural stereotypes or caricature', 'readable text or script', ...STYLE_AVOID],
   briefs,
 });
 

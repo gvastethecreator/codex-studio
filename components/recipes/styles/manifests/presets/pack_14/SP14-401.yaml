@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Wide canvas packed with episodes, the champion painted largest at the center.
   atmosphere_and_mood: Keep the requested mood with rousing heroic storytelling.
   rendering_and_quality: Bold naive-heroic painting with dense narrative crowds, kept consistent across the whole image.
-  creative_brief: "Qajar coffeehouse epic canvas: large Persian storyteller canvases painted for coffeehouse recitals, crowded with champions in tiger-skin armor, white demons, duels and many episodes of one epic on a single cloth. Carry it through champion in tiger skin, many episodes at once, white demon, crowded canvas. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Qajar coffeehouse epic canvas: large Persian storyteller canvases painted for coffeehouse recitals, crowded with champions in tiger-skin armor, white demons, duels and many episodes of one epic on a single cloth. Carry it through champion in tiger skin, many episodes at once, white demon, crowded canvas. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: champion in tiger skin; many episodes at once; white demon; crowded canvas
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

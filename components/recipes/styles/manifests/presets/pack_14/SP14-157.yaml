@@ -7,7 +7,7 @@ styleAnchors:
   - greek mythic art technique
   - white marble
 displayName: Cycladic Marble Minimalism
-category: 'Creation, World Trees & Cosmos'
+category: Creation, World Trees & Cosmos
 domain: greek mythic art technique
 version: 1
 supportedTasks:
@@ -29,12 +29,11 @@ visualDna:
   camera_and_composition: Single figure against plain ground, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with serene ancient stillness.
   rendering_and_quality: Minimal pure sculptural forms, kept consistent across the whole image.
-  creative_brief: "Cycladic marble minimalism: Bronze Age island figurines of smooth white marble, folded arms, tilted heads with only a nose, pure simplified forms. Carry it through white marble, folded arms, minimal face, smooth planes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Cycladic marble minimalism: Bronze Age island figurines of smooth white marble, folded arms, tilted heads with only a nose, pure simplified forms. Carry it through white marble, folded arms, minimal face, smooth planes. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: white marble; folded arms; minimal face; smooth planes
 avoidRules:
   - readable Greek inscriptions
   - modern tourist-souvenir kitsch
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable Greek inscriptions, modern tourist-souvenir kitsch, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable Greek inscriptions, modern tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -57,7 +56,7 @@ taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault
   categoryId: creation-world-trees-cosmos
-  categoryName: 'Creation, World Trees & Cosmos'
+  categoryName: Creation, World Trees & Cosmos
   tags:
     - curation-v2
     - creation-world-trees-cosmos

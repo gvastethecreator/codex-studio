@@ -7,7 +7,7 @@ styleAnchors:
   - maya art technique
   - vivid mural
 displayName: Bonampak Mural
-category: 'Heroes & Epics'
+category: Heroes & Epics
 domain: maya art technique
 version: 1
 supportedTasks:
@@ -29,12 +29,11 @@ visualDna:
   camera_and_composition: Wall scenes arranged in tiers, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with vibrant ceremonial spectacle.
   rendering_and_quality: Rich detailed mural painting, kept consistent across the whole image.
-  creative_brief: "Bonampak mural: vivid Classic Maya wall paintings with crowded courtly scenes, battles and processions in brilliant blue, red and ochre. Carry it through vivid mural, tiers, processions, Maya blue. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Bonampak mural: vivid Classic Maya wall paintings with crowded courtly scenes, battles and processions in brilliant blue, red and ochre. Carry it through vivid mural, tiers, processions, Maya blue. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: vivid mural; tiers; processions; Maya blue
 avoidRules:
   - readable glyphs
   - cultural stereotypes or caricature
-  - sacrifice gore
   - readable text
   - logo
   - real artist signature
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable glyphs, cultural stereotypes or caricature, sacrifice gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable glyphs, cultural stereotypes or caricature, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -57,7 +56,7 @@ taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault
   categoryId: heroes-epics
-  categoryName: 'Heroes & Epics'
+  categoryName: Heroes & Epics
   tags:
     - curation-v2
     - heroes-epics

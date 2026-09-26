@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Framed miniature with a gaping maw, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with grotesque medieval dread and humor.
   rendering_and_quality: Detailed illumination without script, kept consistent across the whole image.
-  creative_brief: "Medieval hell-mouth illumination: manuscript miniatures of a gaping monstrous jaw swallowing the damned, grotesque blue and red devils, gold grounds and flames. Carry it through hell mouth, grotesque devils, gold ground, flames. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Medieval hell-mouth illumination: manuscript miniatures of a gaping monstrous jaw swallowing the damned, grotesque blue and red devils, gold grounds and flames. Carry it through hell mouth, grotesque devils, gold ground, flames. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: hell mouth; grotesque devils; gold ground; flames
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

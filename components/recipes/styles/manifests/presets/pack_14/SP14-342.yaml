@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Garden scene with moon gate, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with elegant uncanny allure.
   rendering_and_quality: Delicate refined silk painting, kept consistent across the whole image.
-  creative_brief: "Huli jing silk painting: delicate Chinese silk painting of fox spirits transforming between elegant ladies and nine-tailed foxes in moonlit gardens. Carry it through fox spirit, transformation, moon gate, silk. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Huli jing silk painting: delicate Chinese silk painting of fox spirits transforming between elegant ladies and nine-tailed foxes in moonlit gardens. Carry it through fox spirit, transformation, moon gate, silk. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: fox spirit; transformation; moon gate; silk
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

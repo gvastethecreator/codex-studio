@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Dancers facing each other in a courtyard, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with ritual dramatic intensity.
   rendering_and_quality: Vivid performance depiction, kept consistent across the whole image.
-  creative_brief: "Balinese rangda mask dance: temple dance of the witch queen with bulging eyes, long tongue and wild hair against the lion-like barong, in gold, red and white. Carry it through rangda mask, barong, gold costume, torchlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Balinese rangda mask dance: temple dance of the witch queen with bulging eyes, long tongue and wild hair against the lion-like barong, in gold, red and white. Carry it through rangda mask, barong, gold costume, torchlight. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: rangda mask; barong; gold costume; torchlight
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

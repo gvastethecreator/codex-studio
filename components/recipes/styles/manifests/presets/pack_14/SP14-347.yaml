@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Central legend panel in geometric frames, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with bold oceanic legend.
   rendering_and_quality: Crisp patterned bark cloth, kept consistent across the whole image.
-  creative_brief: "Tapa cloth legend pattern: Pacific bark cloth with painted and stamped brown and black geometric patterns framing the legend of the demigod who fished up islands. Carry it through bark cloth, geometric patterns, brown and black, legend. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Tapa cloth legend pattern: Pacific bark cloth with painted and stamped brown and black geometric patterns framing the legend of the demigod who fished up islands. Carry it through bark cloth, geometric patterns, brown and black, legend. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: bark cloth; geometric patterns; brown and black; legend
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Close macro still life of charms on dark stone or cloth.
   atmosphere_and_mood: Keep the requested mood with mysterious protective glow.
   rendering_and_quality: Precise macro still life with luminous glaze, kept consistent across the whole image.
-  creative_brief: "Egyptian faience amulet magic: glazed turquoise faience amulets of protective gods, eyes, dwarf guardians and scarabs, strung on cords or set on dark stone, luminous blue-green glaze. Carry it through turquoise faience, protective eyes, scarabs, dwarf guardian. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Egyptian faience amulet magic: glazed turquoise faience amulets of protective gods, eyes, dwarf guardians and scarabs, strung on cords or set on dark stone, luminous blue-green glaze. Carry it through turquoise faience, protective eyes, scarabs, dwarf guardian. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: turquoise faience; protective eyes; scarabs; dwarf guardian
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

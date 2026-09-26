@@ -7,7 +7,7 @@ styleAnchors:
   - norse mythic art technique
   - pen and ink
 displayName: Edda Pen-and-Ink Revival
-category: 'Tricksters & Shape-Shifters'
+category: Tricksters & Shape-Shifters
 domain: norse mythic art technique
 version: 1
 supportedTasks:
@@ -29,13 +29,12 @@ visualDna:
   camera_and_composition: Vertical book plate composition, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with mythic storybook wonder.
   rendering_and_quality: Detailed revival illustration, kept consistent across the whole image.
-  creative_brief: "Edda pen-and-ink revival: early twentieth-century book illustrations of the Eddas in fine pen and ink, gnarled roots, flowing beards and misty giants. Carry it through pen and ink, gnarled roots, flowing beards, misty giants. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Edda pen-and-ink revival: early twentieth-century book illustrations of the Eddas in fine pen and ink, gnarled roots, flowing beards and misty giants. Carry it through pen and ink, gnarled roots, flowing beards, misty giants. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: pen and ink; gnarled roots; flowing beards; misty giants
 avoidRules:
   - readable runes
   - horned-helmet cliché
   - modern extremist symbols
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable runes, horned-helmet cliché, modern extremist symbols, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable runes, horned-helmet cliché, modern extremist symbols, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -58,7 +57,7 @@ taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault
   categoryId: tricksters-shape-shifters
-  categoryName: 'Tricksters & Shape-Shifters'
+  categoryName: Tricksters & Shape-Shifters
   tags:
     - curation-v2
     - tricksters-shape-shifters

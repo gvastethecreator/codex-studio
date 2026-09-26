@@ -7,7 +7,7 @@ styleAnchors:
   - maya art technique
   - screenfold
 displayName: Maya Screenfold Codex
-category: 'Creation, World Trees & Cosmos'
+category: Creation, World Trees & Cosmos
 domain: maya art technique
 version: 1
 supportedTasks:
@@ -29,12 +29,11 @@ visualDna:
   camera_and_composition: Folded pages with painted panels, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with sacred calendrical mystery.
   rendering_and_quality: Flat painted codex without readable glyphs, kept consistent across the whole image.
-  creative_brief: "Maya screenfold codex: folded bark-paper books painted on lime plaster with gods, calendar cycles and rain scenes in red, black and Maya blue. Carry it through screenfold, bark paper, red and black, Maya blue. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Maya screenfold codex: folded bark-paper books painted on lime plaster with gods, calendar cycles and rain scenes in red, black and Maya blue. Carry it through screenfold, bark paper, red and black, Maya blue. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: screenfold; bark paper; red and black; Maya blue
 avoidRules:
   - readable glyphs
   - cultural stereotypes or caricature
-  - sacrifice gore
   - readable text
   - logo
   - real artist signature
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable glyphs, cultural stereotypes or caricature, sacrifice gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable glyphs, cultural stereotypes or caricature, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -57,7 +56,7 @@ taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault
   categoryId: creation-world-trees-cosmos
-  categoryName: 'Creation, World Trees & Cosmos'
+  categoryName: Creation, World Trees & Cosmos
   tags:
     - curation-v2
     - creation-world-trees-cosmos

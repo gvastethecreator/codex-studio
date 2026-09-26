@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Frontal vertical figure filling the frame with stacked worlds.
   atmosphere_and_mood: Keep the requested mood with vast ordered cosmos.
   rendering_and_quality: Precise schematic painting with ornamental detail, kept consistent across the whole image.
-  creative_brief: "Jain cosmic man diagram: Jain cosmological paintings showing the universe as a vast human figure, layered with heavens, a central human world of rings and hells below, in precise color on cloth or paper. Carry it through cosmic human figure, layered heavens, concentric continents, hells below. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Jain cosmic man diagram: Jain cosmological paintings showing the universe as a vast human figure, layered with heavens, a central human world of rings and hells below, in precise color on cloth or paper. Carry it through cosmic human figure, layered heavens, concentric continents, hells below. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: cosmic human figure; layered heavens; concentric continents; hells below
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

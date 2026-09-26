@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Night village with a creature above the roofs.
   atmosphere_and_mood: Keep the requested mood with tropical folk dread.
   rendering_and_quality: Bold carved contrast, kept consistent across the whole image.
-  creative_brief: "Aswang night woodcut: stark Philippine folklore prints of shape-shifting night creatures over nipa huts and banana groves, cut in bold black with moonlit whites. Carry it through night woodcut, nipa huts, banana groves, flying creature. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Aswang night woodcut: stark Philippine folklore prints of shape-shifting night creatures over nipa huts and banana groves, cut in bold black with moonlit whites. Carry it through night woodcut, nipa huts, banana groves, flying creature. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: night woodcut; nipa huts; banana groves; flying creature
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

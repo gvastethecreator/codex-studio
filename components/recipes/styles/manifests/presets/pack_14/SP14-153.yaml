@@ -7,7 +7,7 @@ styleAnchors:
   - greek mythic art technique
   - white ground
 displayName: White-Ground Lekythos Painting
-category: 'Underworlds & Realms of the Dead'
+category: Underworlds & Realms of the Dead
 domain: greek mythic art technique
 version: 1
 supportedTasks:
@@ -29,12 +29,11 @@ visualDna:
   camera_and_composition: Two figures in quiet exchange on a slender vessel.
   atmosphere_and_mood: Keep the requested mood with tender elegiac stillness.
   rendering_and_quality: Delicate faded finish with fine line, kept consistent across the whole image.
-  creative_brief: "White-ground lekythos painting: delicate funerary oil-flask painting with fine outline figures and soft washes on a chalky white ground, quiet and melancholic. Carry it through white ground, fine outline, faded washes, funerary calm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'White-ground lekythos painting: delicate funerary oil-flask painting with fine outline figures and soft washes on a chalky white ground, quiet and melancholic. Carry it through white ground, fine outline, faded washes, funerary calm. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: white ground; fine outline; faded washes; funerary calm
 avoidRules:
   - readable Greek inscriptions
   - modern tourist-souvenir kitsch
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable Greek inscriptions, modern tourist-souvenir kitsch, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable Greek inscriptions, modern tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -57,7 +56,7 @@ taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault
   categoryId: underworlds-realms-of-the-dead
-  categoryName: 'Underworlds & Realms of the Dead'
+  categoryName: Underworlds & Realms of the Dead
   tags:
     - curation-v2
     - underworlds-realms-of-the-dead

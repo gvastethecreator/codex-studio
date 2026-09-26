@@ -7,7 +7,7 @@ styleAnchors:
   - mexica fantastic art technique
   - serpent heads
 displayName: Serpent Head Temple Stair
-category: 'Beasts, Guardians & Chimeras'
+category: Beasts, Guardians & Chimeras
 domain: mexica fantastic art technique
 version: 1
 supportedTasks:
@@ -29,12 +29,11 @@ visualDna:
   camera_and_composition: Low view up the temple stair, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with guardian monumental menace.
   rendering_and_quality: Bold monumental carving, kept consistent across the whole image.
-  creative_brief: "Serpent head temple stair: colossal carved stone serpent heads at the base of temple staircases, painted fangs and scales, bodies climbing the steps. Carry it through serpent heads, temple stair, painted scales, fangs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Serpent head temple stair: colossal carved stone serpent heads at the base of temple staircases, painted fangs and scales, bodies climbing the steps. Carry it through serpent heads, temple stair, painted scales, fangs. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: serpent heads; temple stair; painted scales; fangs
 avoidRules:
   - readable glyphs
   - cultural stereotypes or caricature
-  - sacrifice gore
   - tourist-souvenir kitsch
   - readable text
   - logo
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable glyphs, cultural stereotypes or caricature, sacrifice gore, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable glyphs, cultural stereotypes or caricature, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -58,7 +57,7 @@ taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault
   categoryId: beasts-guardians-chimeras
-  categoryName: 'Beasts, Guardians & Chimeras'
+  categoryName: Beasts, Guardians & Chimeras
   tags:
     - curation-v2
     - beasts-guardians-chimeras

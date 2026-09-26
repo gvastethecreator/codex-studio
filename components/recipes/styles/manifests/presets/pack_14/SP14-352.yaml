@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Bazaar scene with high horizon, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with gentle witty wisdom.
   rendering_and_quality: Clear charming miniature, kept consistent across the whole image.
-  creative_brief: "Nasreddin Ottoman miniature: Ottoman court miniature style of the wise fool on his donkey, flat bright colors, patterned carpets and bustling bazaars. Carry it through wise fool, donkey, bazaar, Ottoman miniature. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Nasreddin Ottoman miniature: Ottoman court miniature style of the wise fool on his donkey, flat bright colors, patterned carpets and bustling bazaars. Carry it through wise fool, donkey, bazaar, Ottoman miniature. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: wise fool; donkey; bazaar; Ottoman miniature
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

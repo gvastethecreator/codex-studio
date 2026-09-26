@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Dynamic leaping pose across a mountain scroll with brocade frame.
   atmosphere_and_mood: Keep the requested mood with joyful fearless energy.
   rendering_and_quality: Precise painted scroll with flowing curling manes, kept consistent across the whole image.
-  creative_brief: "Snow lion thangka banner: Tibetan painted scrolls and banners of white snow lions with turquoise manes and tails, leaping among mountain peaks, clouds and jewel flames. Carry it through white lion, turquoise mane, snow peaks, jewel flames. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Snow lion thangka banner: Tibetan painted scrolls and banners of white snow lions with turquoise manes and tails, leaping among mountain peaks, clouds and jewel flames. Carry it through white lion, turquoise mane, snow peaks, jewel flames. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: white lion; turquoise mane; snow peaks; jewel flames
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

@@ -7,7 +7,7 @@ styleAnchors:
   - greek mythic art technique
   - black silhouettes
 displayName: Attic Black-Figure Vase
-category: 'Heroes & Epics'
+category: Heroes & Epics
 domain: greek mythic art technique
 version: 1
 supportedTasks:
@@ -29,12 +29,11 @@ visualDna:
   camera_and_composition: Frieze of figures on a vase panel, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with archaic heroic energy.
   rendering_and_quality: Crisp silhouettes and confident incision, kept consistent across the whole image.
-  creative_brief: "Attic black-figure vase painting: glossy black silhouettes on orange clay with incised details scratched through to the clay and touches of added red and white. Carry it through black silhouettes, incised details, orange clay, added red and white. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Attic black-figure vase painting: glossy black silhouettes on orange clay with incised details scratched through to the clay and touches of added red and white. Carry it through black silhouettes, incised details, orange clay, added red and white. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: black silhouettes; incised details; orange clay; added red and white
 avoidRules:
   - readable Greek inscriptions
   - modern tourist-souvenir kitsch
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable Greek inscriptions, modern tourist-souvenir kitsch, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable Greek inscriptions, modern tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -57,7 +56,7 @@ taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault
   categoryId: heroes-epics
-  categoryName: 'Heroes & Epics'
+  categoryName: Heroes & Epics
   tags:
     - curation-v2
     - heroes-epics

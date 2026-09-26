@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Market square scene, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with cheeky urban mischief.
   rendering_and_quality: Lively detailed etching, kept consistent across the whole image.
-  creative_brief: "Eulenspiegel owl-and-mirror etching: early German etchings of the jester prankster with his owl and mirror, crowded market towns and comic chaos. Carry it through jester prankster, owl and mirror, market square, etching. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Eulenspiegel owl-and-mirror etching: early German etchings of the jester prankster with his owl and mirror, crowded market towns and comic chaos. Carry it through jester prankster, owl and mirror, market square, etching. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: jester prankster; owl and mirror; market square; etching
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

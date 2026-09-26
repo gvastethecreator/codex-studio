@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Dynamic heroic angle in a panel with jungle or sea behind.
   atmosphere_and_mood: Keep the requested mood with vivid adventurous heroism.
   rendering_and_quality: Masterful ink illustration with dynamic anatomy, kept consistent across the whole image.
-  creative_brief: "Filipino komiks epic hero: classic Filipino komiks art of island epics, heroes and enchanted beings in lush ink linework, dramatic poses, jungle backgrounds and newsprint color. Carry it through island epic hero, lush ink lines, jungle backdrop, newsprint color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Filipino komiks epic hero: classic Filipino komiks art of island epics, heroes and enchanted beings in lush ink linework, dramatic poses, jungle backgrounds and newsprint color. Carry it through island epic hero, lush ink lines, jungle backdrop, newsprint color. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: island epic hero; lush ink lines; jungle backdrop; newsprint color
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

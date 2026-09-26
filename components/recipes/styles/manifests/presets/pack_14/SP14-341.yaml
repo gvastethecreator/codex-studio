@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Dynamic diagonal across cloud banks, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with exuberant mischievous power.
   rendering_and_quality: Energetic ink painting, kept consistent across the whole image.
-  creative_brief: "Stone monkey cloud ink painting: vigorous Chinese ink-and-color painting of a stone-born monkey king somersaulting on clouds with his staff, in splashy brushwork. Carry it through monkey king, cloud somersault, golden staff, splashed ink. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Stone monkey cloud ink painting: vigorous Chinese ink-and-color painting of a stone-born monkey king somersaulting on clouds with his staff, in splashy brushwork. Carry it through monkey king, cloud somersault, golden staff, splashed ink. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: monkey king; cloud somersault; golden staff; splashed ink
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

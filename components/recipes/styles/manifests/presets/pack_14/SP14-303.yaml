@@ -7,7 +7,7 @@ styleAnchors:
   - mexica fantastic art technique
   - codex outlines
 displayName: Codex Cosmos Screenfold
-category: 'Creation, World Trees & Cosmos'
+category: Creation, World Trees & Cosmos
 domain: mexica fantastic art technique
 version: 1
 supportedTasks:
@@ -29,12 +29,11 @@ visualDna:
   camera_and_composition: Pages unfolding into a starry void, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with cosmic sacred wonder.
   rendering_and_quality: Crisp flat codex drawing without readable glyphs, kept consistent across the whole image.
-  creative_brief: "Codex cosmos screenfold: the flat bold outlines and saturated colors of central Mexican codices expanded into vast cosmic scenes of gods, stars and day signs unfolding across folded pages. Carry it through codex outlines, flat saturated color, fold creases, cosmic. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Codex cosmos screenfold: the flat bold outlines and saturated colors of central Mexican codices expanded into vast cosmic scenes of gods, stars and day signs unfolding across folded pages. Carry it through codex outlines, flat saturated color, fold creases, cosmic. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: codex outlines; flat saturated color; fold creases; cosmic
 avoidRules:
   - readable glyphs
   - cultural stereotypes or caricature
-  - sacrifice gore
   - tourist-souvenir kitsch
   - readable text
   - logo
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable glyphs, cultural stereotypes or caricature, sacrifice gore, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable glyphs, cultural stereotypes or caricature, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -58,7 +57,7 @@ taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault
   categoryId: creation-world-trees-cosmos
-  categoryName: 'Creation, World Trees & Cosmos'
+  categoryName: Creation, World Trees & Cosmos
   tags:
     - curation-v2
     - creation-world-trees-cosmos

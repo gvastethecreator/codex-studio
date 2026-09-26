@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Fox on a mountain ridge under a large moon.
   atmosphere_and_mood: Keep the requested mood with eerie folk enchantment.
   rendering_and_quality: Bold charming folk painting, kept consistent across the whole image.
-  creative_brief: "Kumiho moonlit minhwa: Korean folk painting of the nine-tailed fox under a full moon, flat bold color, pine trees and mountains, eerie and charming at once. Carry it through nine-tailed fox, full moon, pine, folk painting. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Kumiho moonlit minhwa: Korean folk painting of the nine-tailed fox under a full moon, flat bold color, pine trees and mountains, eerie and charming at once. Carry it through nine-tailed fox, full moon, pine, folk painting. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: nine-tailed fox; full moon; pine; folk painting
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

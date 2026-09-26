@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Close dramatic stage portrait, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with theatrical fierce spectacle.
   rendering_and_quality: Crisp vivid stage portrait, kept consistent across the whole image.
-  creative_brief: "Peking opera demon mask: painted opera face makeup of demons and generals with symbolic colors, bold lines, flared eyebrows, and dazzling stage costume. Carry it through opera face paint, symbolic colors, plumes, stage light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Peking opera demon mask: painted opera face makeup of demons and generals with symbolic colors, bold lines, flared eyebrows, and dazzling stage costume. Carry it through opera face paint, symbolic colors, plumes, stage light. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: opera face paint; symbolic colors; plumes; stage light
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

@@ -7,7 +7,7 @@ styleAnchors:
   - mexica fantastic art technique
   - marigold path
 displayName: Marigold Underworld Journey
-category: 'Underworlds & Realms of the Dead'
+category: Underworlds & Realms of the Dead
 domain: mexica fantastic art technique
 version: 1
 supportedTasks:
@@ -29,12 +29,11 @@ visualDna:
   camera_and_composition: Winding path descending into depth, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with tender eerie remembrance.
   rendering_and_quality: Luminous dreamlike painting, kept consistent across the whole image.
-  creative_brief: "Marigold underworld journey: the nine levels of the underworld imagined as a dreamlike path of marigold light, dog guides, obsidian winds and rivers of shadow. Carry it through marigold path, underworld levels, dog guide, obsidian wind. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Marigold underworld journey: the nine levels of the underworld imagined as a dreamlike path of marigold light, dog guides, obsidian winds and rivers of shadow. Carry it through marigold path, underworld levels, dog guide, obsidian wind. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: marigold path; underworld levels; dog guide; obsidian wind
 avoidRules:
   - readable glyphs
   - cultural stereotypes or caricature
-  - sacrifice gore
   - tourist-souvenir kitsch
   - readable text
   - logo
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable glyphs, cultural stereotypes or caricature, sacrifice gore, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable glyphs, cultural stereotypes or caricature, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -58,7 +57,7 @@ taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault
   categoryId: underworlds-realms-of-the-dead
-  categoryName: 'Underworlds & Realms of the Dead'
+  categoryName: Underworlds & Realms of the Dead
   tags:
     - curation-v2
     - underworlds-realms-of-the-dead

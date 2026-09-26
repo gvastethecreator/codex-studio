@@ -7,7 +7,7 @@ styleAnchors:
   - japanese mythic art technique
   - woodblock
 displayName: Shin-hanga Night Print
-category: 'Witches, Oracles & Shamans'
+category: Witches, Oracles & Shamans
 domain: japanese mythic art technique
 version: 1
 supportedTasks:
@@ -29,12 +29,11 @@ visualDna:
   camera_and_composition: Quiet landscape or street at night, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with serene nocturnal poetry.
   rendering_and_quality: Refined gradated woodblock, kept consistent across the whole image.
-  creative_brief: "Shin-hanga night print: early twentieth-century woodblock prints of moonlit shrines, snowy temples and lantern-lit streets with soft gradations and quiet atmosphere. Carry it through woodblock, moonlit shrine, soft gradients, lantern glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Shin-hanga night print: early twentieth-century woodblock prints of moonlit shrines, snowy temples and lantern-lit streets with soft gradations and quiet atmosphere. Carry it through woodblock, moonlit shrine, soft gradients, lantern glow. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: woodblock; moonlit shrine; soft gradients; lantern glow
 avoidRules:
   - readable Japanese text or seals
   - costume stereotypes
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable Japanese text or seals, costume stereotypes, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable Japanese text or seals, costume stereotypes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -57,7 +56,7 @@ taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault
   categoryId: witches-oracles-shamans
-  categoryName: 'Witches, Oracles & Shamans'
+  categoryName: Witches, Oracles & Shamans
   tags:
     - curation-v2
     - witches-oracles-shamans

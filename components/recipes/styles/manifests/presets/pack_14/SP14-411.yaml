@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Wide calm composition with figures small above a vast shimmering sea.
   atmosphere_and_mood: Keep the requested mood with quiet primordial awe.
   rendering_and_quality: Refined luminous painting with granular pigment shimmer, kept consistent across the whole image.
-  creative_brief: "Nihonga mineral creation: modern Japanese painting in crushed mineral pigments and gold leaf, showing the first gods stirring the primordial sea with a jeweled spear from a floating bridge. Carry it through mineral pigment, gold leaf, primordial sea, floating bridge. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Nihonga mineral creation: modern Japanese painting in crushed mineral pigments and gold leaf, showing the first gods stirring the primordial sea with a jeweled spear from a floating bridge. Carry it through mineral pigment, gold leaf, primordial sea, floating bridge. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: mineral pigment; gold leaf; primordial sea; floating bridge
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

@@ -7,7 +7,7 @@ styleAnchors:
   - egyptian mythic art technique
   - sphinx
 displayName: Monumental Sphinx Sculpture
-category: 'Beasts, Guardians & Chimeras'
+category: Beasts, Guardians & Chimeras
 domain: egyptian mythic art technique
 version: 1
 supportedTasks:
@@ -29,12 +29,11 @@ visualDna:
   camera_and_composition: Low wide view with tiny figures, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with ancient watchful majesty.
   rendering_and_quality: Monumental weathered sculpture, kept consistent across the whole image.
-  creative_brief: "Monumental sphinx sculpture: colossal lion-bodied figures with royal heads carved from bedrock or granite, weathered by sand and time. Carry it through sphinx, colossal, weathered stone, desert. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Monumental sphinx sculpture: colossal lion-bodied figures with royal heads carved from bedrock or granite, weathered by sand and time. Carry it through sphinx, colossal, weathered stone, desert. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: sphinx; colossal; weathered stone; desert
 avoidRules:
   - readable hieroglyphs or cartouches
   - mummy horror cliché
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable hieroglyphs or cartouches, mummy horror cliché, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable hieroglyphs or cartouches, mummy horror cliché, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -57,7 +56,7 @@ taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault
   categoryId: beasts-guardians-chimeras
-  categoryName: 'Beasts, Guardians & Chimeras'
+  categoryName: Beasts, Guardians & Chimeras
   tags:
     - curation-v2
     - beasts-guardians-chimeras

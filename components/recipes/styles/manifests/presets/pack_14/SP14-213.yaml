@@ -7,7 +7,7 @@ styleAnchors:
   - mande epic art technique
   - puppet masquerade
 displayName: Sogo Bo Puppet Masquerade
-category: 'Tricksters & Shape-Shifters'
+category: Tricksters & Shape-Shifters
 domain: mande epic art technique
 version: 1
 supportedTasks:
@@ -29,13 +29,12 @@ visualDna:
   camera_and_composition: Masquerade stage with puppets overhead, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with joyful festival storytelling.
   rendering_and_quality: Vivid painted festival look, kept consistent across the whole image.
-  creative_brief: "Sogo bo puppet masquerade: Bamana and Bozo puppet theater with brightly painted animal and character puppets rising from fabric-covered stages. Carry it through puppet masquerade, painted animals, fabric stage, festival. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Sogo bo puppet masquerade: Bamana and Bozo puppet theater with brightly painted animal and character puppets rising from fabric-covered stages. Carry it through puppet masquerade, painted animals, fabric stage, festival. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: puppet masquerade; painted animals; fabric stage; festival
 avoidRules:
   - generic tribal pattern
   - cultural stereotypes or caricature
   - readable text
-  - gore
   - logo
   - real artist signature
   - copying a specific famous artwork
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: generic tribal pattern, cultural stereotypes or caricature, readable text, gore, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: generic tribal pattern, cultural stereotypes or caricature, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -57,7 +56,7 @@ taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault
   categoryId: tricksters-shape-shifters
-  categoryName: 'Tricksters & Shape-Shifters'
+  categoryName: Tricksters & Shape-Shifters
   tags:
     - curation-v2
     - tricksters-shape-shifters

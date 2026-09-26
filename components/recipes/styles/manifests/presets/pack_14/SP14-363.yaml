@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Bridge spanning a deep chasm, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with luminous moral suspense.
   rendering_and_quality: Exquisite miniature detail, kept consistent across the whole image.
-  creative_brief: "Chinvat bridge miniature: Persian miniature painting of the bridge of judgment over the abyss, widening for the righteous and narrowing to a blade, with guiding maidens and dogs. Carry it through bridge of judgment, abyss, guiding maiden, dogs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Chinvat bridge miniature: Persian miniature painting of the bridge of judgment over the abyss, widening for the righteous and narrowing to a blade, with guiding maidens and dogs. Carry it through bridge of judgment, abyss, guiding maiden, dogs. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: bridge of judgment; abyss; guiding maiden; dogs
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Wide panorama across panels with mountains, sea and sun.
   atmosphere_and_mood: Keep the requested mood with serene eternal harmony.
   rendering_and_quality: Lush ornamental landscape painting, kept consistent across the whole image.
-  creative_brief: "Ten longevity screen: Korean court folding screens of the ten symbols of long life, sun, clouds, mountains, water, pines, cranes, deer, turtles, fungus and bamboo in lush blue-green mineral color. Carry it through long-life symbols, blue-green mountains, cranes and deer, red sun. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Ten longevity screen: Korean court folding screens of the ten symbols of long life, sun, clouds, mountains, water, pines, cranes, deer, turtles, fungus and bamboo in lush blue-green mineral color. Carry it through long-life symbols, blue-green mountains, cranes and deer, red sun. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: long-life symbols; blue-green mountains; cranes and deer; red sun
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

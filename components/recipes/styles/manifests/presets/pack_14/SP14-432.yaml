@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Frontal composition with every space filled by pattern.
   atmosphere_and_mood: Keep the requested mood with joyous dense enchantment.
   rendering_and_quality: Crisp patterned folk painting, kept consistent across the whole image.
-  creative_brief: "Mithila wall painting seer: Bihar folk paintings with double-line outlines, filled with fine hatching, fish, suns, serpents and wide-eyed figures, every space dense with pattern. Carry it through double-line outlines, fine hatching, fish and suns, dense pattern. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Mithila wall painting seer: Bihar folk paintings with double-line outlines, filled with fine hatching, fish, suns, serpents and wide-eyed figures, every space dense with pattern. Carry it through double-line outlines, fine hatching, fish and suns, dense pattern. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: double-line outlines; fine hatching; fish and suns; dense pattern
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

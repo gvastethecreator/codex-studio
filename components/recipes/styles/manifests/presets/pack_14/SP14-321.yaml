@@ -7,7 +7,7 @@ styleAnchors:
   - mexica fantastic art technique
   - feather headdress
 displayName: Plumed Dance Regalia Photograph
-category: 'Witches, Oracles & Shamans'
+category: Witches, Oracles & Shamans
 domain: mexica fantastic art technique
 version: 1
 supportedTasks:
@@ -29,12 +29,11 @@ visualDna:
   camera_and_composition: Dynamic low-angle photograph, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with living festive continuity.
   rendering_and_quality: Vivid documentary photography, kept consistent across the whole image.
-  creative_brief: "Plumed dance regalia photograph: contemporary photography of danzantes in towering feather headdresses, shell rattles and copal smoke in plaza sunlight. Carry it through feather headdress, danzantes, copal smoke, plaza. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Plumed dance regalia photograph: contemporary photography of danzantes in towering feather headdresses, shell rattles and copal smoke in plaza sunlight. Carry it through feather headdress, danzantes, copal smoke, plaza. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: feather headdress; danzantes; copal smoke; plaza
 avoidRules:
   - readable glyphs
   - cultural stereotypes or caricature
-  - sacrifice gore
   - tourist-souvenir kitsch
   - readable text
   - logo
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable glyphs, cultural stereotypes or caricature, sacrifice gore, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable glyphs, cultural stereotypes or caricature, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -58,7 +57,7 @@ taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault
   categoryId: witches-oracles-shamans
-  categoryName: 'Witches, Oracles & Shamans'
+  categoryName: Witches, Oracles & Shamans
   tags:
     - curation-v2
     - witches-oracles-shamans

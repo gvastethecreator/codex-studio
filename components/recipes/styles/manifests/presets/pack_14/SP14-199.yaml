@@ -7,7 +7,7 @@ styleAnchors:
   - norse mythic art technique
   - fjord landscape
 displayName: Nordic Romantic Saga Oil
-category: 'Heroes & Epics'
+category: Heroes & Epics
 domain: norse mythic art technique
 version: 1
 supportedTasks:
@@ -29,13 +29,12 @@ visualDna:
   camera_and_composition: Wide heroic landscape composition, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with romantic heroic longing.
   rendering_and_quality: Polished romantic oil, kept consistent across the whole image.
-  creative_brief: "Nordic romantic saga oil: nineteenth-century Scandinavian romantic paintings of sagas, dramatic fjords, heroic figures and golden northern light. Carry it through fjord landscape, heroic figures, golden light, romantic. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Nordic romantic saga oil: nineteenth-century Scandinavian romantic paintings of sagas, dramatic fjords, heroic figures and golden northern light. Carry it through fjord landscape, heroic figures, golden light, romantic. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: fjord landscape; heroic figures; golden light; romantic
 avoidRules:
   - readable runes
   - horned-helmet cliché
   - modern extremist symbols
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable runes, horned-helmet cliché, modern extremist symbols, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable runes, horned-helmet cliché, modern extremist symbols, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -58,7 +57,7 @@ taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault
   categoryId: heroes-epics
-  categoryName: 'Heroes & Epics'
+  categoryName: Heroes & Epics
   tags:
     - curation-v2
     - heroes-epics

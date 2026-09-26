@@ -11,7 +11,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Beasts, Guardians & Chimeras',
     domain: 'greek mythic art technique',
     negativePrompt:
-      'readable Greek inscriptions, modern tourist-souvenir kitsch, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable Greek inscriptions, modern tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Corinthian animal frieze pottery: orientalizing bands of lions, panthers, goats and sphinxes circling a vessel, with rosette fillers and purple-brown slip.',
@@ -41,7 +41,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Beasts, Guardians & Chimeras',
     domain: 'norse mythic art technique',
     negativePrompt:
-      'readable runes, horned-helmet cliché, modern extremist symbols, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable runes, horned-helmet cliché, modern extremist symbols, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Urnes serpent carving: the last Viking Age style, slender elegant beasts and snakes in figure-of-eight loops, thin and thick lines interlaced across wood.',
@@ -73,7 +73,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Beasts, Guardians & Chimeras',
     domain: 'norse mythic art technique',
     negativePrompt:
-      'readable runes, horned-helmet cliché, modern extremist symbols, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable runes, horned-helmet cliché, modern extremist symbols, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Oseberg gripping beast: early Viking wood carving of small chunky beasts whose paws grip the frame, each other and themselves in dense lively relief.',
@@ -103,7 +103,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Beasts, Guardians & Chimeras',
     domain: 'norse mythic art technique',
     negativePrompt:
-      'readable runes, horned-helmet cliché, modern extremist symbols, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable runes, horned-helmet cliché, modern extremist symbols, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Carved sledge post beast: Viking ceremonial wooden posts carved as snarling beast heads with gaping jaws, intricate interlace skin and glaring eyes.',
@@ -135,7 +135,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Beasts, Guardians & Chimeras',
     domain: 'mande epic art technique',
     negativePrompt:
-      'generic tribal pattern, cultural stereotypes or caricature, readable text, gore, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'generic tribal pattern, cultural stereotypes or caricature, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Ci wara antelope carving: Bamana carved wooden headdresses of stylized antelopes with openwork manes and tall horns, honoring the farming spirit.',
@@ -165,7 +165,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Beasts, Guardians & Chimeras',
     domain: 'egyptian mythic art technique',
     negativePrompt:
-      'readable hieroglyphs or cartouches, mummy horror cliché, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable hieroglyphs or cartouches, mummy horror cliché, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Monumental sphinx sculpture: colossal lion-bodied figures with royal heads carved from bedrock or granite, weathered by sand and time.',
@@ -201,7 +201,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Beasts, Guardians & Chimeras',
     domain: 'mexica fantastic art technique',
     negativePrompt:
-      'readable glyphs, cultural stereotypes or caricature, sacrifice gore, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable glyphs, cultural stereotypes or caricature, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Turquoise mosaic starfield: creatures and masks built from thousands of turquoise, shell and coral tesserae that glitter like a night sky.',
@@ -232,7 +232,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Beasts, Guardians & Chimeras',
     domain: 'mexica fantastic art technique',
     negativePrompt:
-      'readable glyphs, cultural stereotypes or caricature, sacrifice gore, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable glyphs, cultural stereotypes or caricature, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Serpent head temple stair: colossal carved stone serpent heads at the base of temple staircases, painted fangs and scales, bodies climbing the steps.',
@@ -263,7 +263,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Beasts, Guardians & Chimeras',
     domain: 'maya art technique',
     negativePrompt:
-      'readable glyphs, cultural stereotypes or caricature, sacrifice gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable glyphs, cultural stereotypes or caricature, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Stucco mask facade: monumental modeled and painted stucco masks of gods flanking temple stairways, huge faces with ear flares and scrolls.',
@@ -294,7 +294,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Beasts, Guardians & Chimeras',
     domain: 'japanese mythic art technique',
     negativePrompt:
-      'readable Japanese text or seals, costume stereotypes, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable Japanese text or seals, costume stereotypes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Netsuke carving: tiny carved toggles of ivory-like boxwood or bone showing animals and yokai curled into compact rounded forms with fine detail.',
@@ -326,7 +326,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Beasts, Guardians & Chimeras',
     domain: 'Chinese beast and guardian art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Qilin silk rank badge: Chinese court embroidery squares where a scaled, hoofed qilin prances among five-colored clouds, rocks and wave stripes, stitched in couched gold thread and satin floss.',
@@ -358,7 +358,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Beasts, Guardians & Chimeras',
     domain: 'Korean beast and guardian art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Dancheong eave guardians: Korean palace and temple painting on carved wooden eaves and brackets, with lotus, cloud and flame bands framing haetae, dragons and phoenix heads in mineral green and red.',
@@ -394,7 +394,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Beasts, Guardians & Chimeras',
     domain: 'Persian beast and guardian art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Simurgh manuscript painting: Persian illuminated manuscript painting of the great healing bird with a peacock tail sweeping over jewel-colored rocks, gold skies and flowering trees.',
@@ -428,7 +428,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Beasts, Guardians & Chimeras',
     domain: 'Assyrian beast and guardian art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Lamassu gate relief: Assyrian palace gateway colossi, human-headed winged bulls carved in gypsum with curled beards, feathered wings and five legs seen from front and side.',
@@ -462,7 +462,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Beasts, Guardians & Chimeras',
     domain: 'South Indian beast and guardian art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Yali temple pillar: South Indian temple halls with rearing leonine yali carved from single granite columns, elephant trunks, bulging eyes and riders, receding in long pillared corridors.',
@@ -497,7 +497,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Beasts, Guardians & Chimeras',
     domain: 'Russian folk beast and guardian art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Izba window sirin carving: Russian carved and painted wooden window frames on log houses, with lacy fretwork, lions, sirin bird-maidens and sun rosettes in faded blue, white and green.',
@@ -532,7 +532,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Beasts, Guardians & Chimeras',
     domain: 'Scythian steppe beast and guardian art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Scythian animal-style gold: steppe nomad gold plaques of stags with curled antlers, twisting griffins and felines turned back on themselves, beast bodies folded into tight ornamental loops.',
@@ -565,7 +565,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Beasts, Guardians & Chimeras',
     domain: 'Armenian and Caucasian beast and guardian art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Caucasian dragon carpet: Armenian and Caucasian knotted pile carpets where stylized dragons become angular S-shaped emblems locked in a diagonal lattice with palmettes, stars and hooked borders.',
@@ -600,7 +600,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Beasts, Guardians & Chimeras',
     domain: 'Edo Benin beast and guardian art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Edo court leopard bronze: lost-wax brass leopards of the Benin court with spotted bodies made of punched rings, alert heads, and ornamented guardian figures on dark palace grounds.',
@@ -633,7 +633,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Beasts, Guardians & Chimeras',
     domain: 'Etruscan beast and guardian art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Etruscan bronze chimera: ancient Italic cast bronze of the three-headed fire beast, lion body, goat head rising from its back and serpent tail, snarling with wounded tension.',
@@ -667,7 +667,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Beasts, Guardians & Chimeras',
     domain: 'Pictish beast and guardian art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Pictish symbol stone beast: carved standing stones of early Scotland with the mysterious long-snouted Pictish beast, crescents, V-rods, serpents and interlace cut into grey rock.',
@@ -700,7 +700,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Beasts, Guardians & Chimeras',
     domain: 'Mughal and Deccani beast and guardian art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Mughal composite beast painting: Indian court album paintings where an elephant, horse or camel is built entirely from interlocking smaller figures, animals, spirits and people.',
@@ -729,7 +729,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Beasts, Guardians & Chimeras',
     domain: 'Tibetan beast and guardian art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Snow lion thangka banner: Tibetan painted scrolls and banners of white snow lions with turquoise manes and tails, leaping among mountain peaks, clouds and jewel flames.',

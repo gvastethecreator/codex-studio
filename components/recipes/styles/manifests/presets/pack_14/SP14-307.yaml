@@ -7,7 +7,7 @@ styleAnchors:
   - mexica fantastic art technique
   - floating gardens
 displayName: Floating Chinampa City
-category: 'Sea Monsters & Water Spirits'
+category: Sea Monsters & Water Spirits
 domain: mexica fantastic art technique
 version: 1
 supportedTasks:
@@ -29,12 +29,11 @@ visualDna:
   camera_and_composition: Wide elevated panorama over canals, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with luminous dreamlike abundance.
   rendering_and_quality: Lush painterly worldbuilding, kept consistent across the whole image.
-  creative_brief: "Floating chinampa city: a fantastic lake city of floating gardens, canals, temple pyramids and canoes, painted in lush luminous detail at golden hour. Carry it through floating gardens, canals, temple pyramids, lake city. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Floating chinampa city: a fantastic lake city of floating gardens, canals, temple pyramids and canoes, painted in lush luminous detail at golden hour. Carry it through floating gardens, canals, temple pyramids, lake city. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: floating gardens; canals; temple pyramids; lake city
 avoidRules:
   - readable glyphs
   - cultural stereotypes or caricature
-  - sacrifice gore
   - tourist-souvenir kitsch
   - readable text
   - logo
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable glyphs, cultural stereotypes or caricature, sacrifice gore, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable glyphs, cultural stereotypes or caricature, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -58,7 +57,7 @@ taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault
   categoryId: sea-monsters-water-spirits
-  categoryName: 'Sea Monsters & Water Spirits'
+  categoryName: Sea Monsters & Water Spirits
   tags:
     - curation-v2
     - sea-monsters-water-spirits

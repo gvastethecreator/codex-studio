@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Crowded vertical poster with a huge central figure and multiple wonders.
   atmosphere_and_mood: Keep the requested mood with wild sensational thrill.
   rendering_and_quality: Exuberant naive painting with fearless exaggeration, kept consistent across the whole image.
-  creative_brief: "Ghana hand-painted witch poster: lurid hand-painted film posters from Ghana, oil on stitched flour sacks, with wild witches, flying heads, snakes and fire exaggerated far beyond any real film. Carry it through flour-sack canvas, flying heads, snakes and fire, lurid color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Ghana hand-painted witch poster: lurid hand-painted film posters from Ghana, oil on stitched flour sacks, with wild witches, flying heads, snakes and fire exaggerated far beyond any real film. Carry it through flour-sack canvas, flying heads, snakes and fire, lurid color. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: flour-sack canvas; flying heads; snakes and fire; lurid color
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

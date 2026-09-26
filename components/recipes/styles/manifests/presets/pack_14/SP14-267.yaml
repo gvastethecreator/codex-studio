@@ -7,7 +7,7 @@ styleAnchors:
   - egyptian mythic art technique
   - papyrus
 displayName: Papyrus Vignette Scroll
-category: 'Underworlds & Realms of the Dead'
+category: Underworlds & Realms of the Dead
 domain: egyptian mythic art technique
 version: 1
 supportedTasks:
@@ -29,12 +29,11 @@ visualDna:
   camera_and_composition: Horizontal scroll vignette, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with solemn afterlife journey.
   rendering_and_quality: Delicate papyrus painting without readable text, kept consistent across the whole image.
-  creative_brief: "Papyrus vignette scroll: painted scenes on papyrus from funerary scrolls, delicate outline figures, soft colors and fibrous papyrus texture. Carry it through papyrus, outline figures, soft color, scroll. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Papyrus vignette scroll: painted scenes on papyrus from funerary scrolls, delicate outline figures, soft colors and fibrous papyrus texture. Carry it through papyrus, outline figures, soft color, scroll. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: papyrus; outline figures; soft color; scroll
 avoidRules:
   - readable hieroglyphs or cartouches
   - mummy horror cliché
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable hieroglyphs or cartouches, mummy horror cliché, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable hieroglyphs or cartouches, mummy horror cliché, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -57,7 +56,7 @@ taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault
   categoryId: underworlds-realms-of-the-dead
-  categoryName: 'Underworlds & Realms of the Dead'
+  categoryName: Underworlds & Realms of the Dead
   tags:
     - curation-v2
     - underworlds-realms-of-the-dead

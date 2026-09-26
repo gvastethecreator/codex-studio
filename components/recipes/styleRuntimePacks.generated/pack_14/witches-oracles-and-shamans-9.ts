@@ -15,7 +15,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Witches, Oracles & Shamans',
     domain: 'mexica fantastic art technique',
     negativePrompt:
-      'readable glyphs, cultural stereotypes or caricature, sacrifice gore, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable glyphs, cultural stereotypes or caricature, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Obsidian mirror dreamscape: polished black obsidian mirrors reflecting impossible worlds, smoky reflections, gods glimpsed in dark glass.',
@@ -45,7 +45,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Witches, Oracles & Shamans',
     domain: 'mande epic art technique',
     negativePrompt:
-      'generic tribal pattern, cultural stereotypes or caricature, readable text, gore, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'generic tribal pattern, cultural stereotypes or caricature, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         "Donso hunter tunic: the hunters' society cotton shirts dyed ochre and brown, covered with leather-wrapped amulets, horns and mirrors, worn by Mande hunters.",
@@ -76,7 +76,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Witches, Oracles & Shamans',
     domain: 'mande epic art technique',
     negativePrompt:
-      'generic tribal pattern, cultural stereotypes or caricature, readable text, gore, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'generic tribal pattern, cultural stereotypes or caricature, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         "Mande smith ironwork: forged iron figures, tools and staffs made by the smiths' caste, with hammered textures and elongated elegant forms.",
@@ -107,7 +107,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Witches, Oracles & Shamans',
     domain: 'norse mythic art technique',
     negativePrompt:
-      'readable runes, horned-helmet cliché, modern extremist symbols, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable runes, horned-helmet cliché, modern extremist symbols, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Oseberg tapestry fragment: narrow woven Viking tapestry bands of processions with wagons, horses, riders and shielded figures in faded red and ochre.',
@@ -142,7 +142,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Witches, Oracles & Shamans',
     domain: 'mexica fantastic art technique',
     negativePrompt:
-      'readable glyphs, cultural stereotypes or caricature, sacrifice gore, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable glyphs, cultural stereotypes or caricature, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Plumed dance regalia photograph: contemporary photography of danzantes in towering feather headdresses, shell rattles and copal smoke in plaza sunlight.',
@@ -175,7 +175,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Witches, Oracles & Shamans',
     domain: 'japanese mythic art technique',
     negativePrompt:
-      'readable Japanese text or seals, costume stereotypes, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable Japanese text or seals, costume stereotypes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Shin-hanga night print: early twentieth-century woodblock prints of moonlit shrines, snowy temples and lantern-lit streets with soft gradations and quiet atmosphere.',
@@ -206,7 +206,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Witches, Oracles & Shamans',
     domain: 'Ottoman magic and divination art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Falname omen painting: large-format Ottoman and Safavid books of omens, grand painted pages of prophets, angels, demons and wonders consulted by fortune tellers, bold figures on gold and flat jewel color.',
@@ -239,7 +239,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Witches, Oracles & Shamans',
     domain: 'Baroque European magic and divination art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Tenebrist sorceress oil: seventeenth-century candlelit oil paintings of enchantresses and sibyls, a single flame carving faces and hands out of deep black, magic circles, skulls and smoking bowls.',
@@ -271,7 +271,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Witches, Oracles & Shamans',
     domain: 'Chinese magic and divination art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Nuo exorcism mask theater: rural Chinese Nuo ritual theater with carved and painted wooden masks of exorcist gods, bulging eyes, horns and fangs, performed in smoke and torchlight to drive plague spirits away.',
@@ -307,7 +307,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Witches, Oracles & Shamans',
     domain: 'Sri Lankan magic and divination art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Sanni healing masks: Sri Lankan carved masks of the eighteen illness spirits with wild eyes and snakes, used in all-night healing dances of drums, fire and palm-leaf arches.',
@@ -342,7 +342,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Witches, Oracles & Shamans',
     domain: 'Ethiopian magic and divination art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Ethiopian protective scroll: tall narrow parchment scrolls drawn for healing, with staring angel faces, eyes in geometric nets, crosses and interlaced stars in red, yellow and black ink.',
@@ -376,7 +376,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Witches, Oracles & Shamans',
     domain: 'Pennsylvania German magic and divination art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Hex sign barn painting: Pennsylvania German folk barn stars and rosettes painted on big red barns, distelfink birds, tulips and compass stars in bright flat circles.',
@@ -410,7 +410,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Witches, Oracles & Shamans',
     domain: 'Edwardian stage-magic magic and divination art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         "Stage illusionist poster: turn-of-the-century lithograph posters for touring stage magicians, with imps whispering in the magician's ear, levitating assistants, skulls and devils in saturated stone-litho color.",
@@ -444,7 +444,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Witches, Oracles & Shamans',
     domain: 'Ghanaian magic and divination art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Ghana hand-painted witch poster: lurid hand-painted film posters from Ghana, oil on stitched flour sacks, with wild witches, flying heads, snakes and fire exaggerated far beyond any real film.',
@@ -479,7 +479,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Witches, Oracles & Shamans',
     domain: 'Japanese magic and divination art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Iwami kagura serpent dance: Japanese shrine theater where a hero battles giant serpents made of paper and cloth that coil around the stage, with gold brocade costumes, masks and smoke.',
@@ -513,7 +513,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Witches, Oracles & Shamans',
     domain: 'Mesopotamian magic and divination art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Lamashtu exorcism plaque: Mesopotamian bronze exorcism plaques with a protective demon peering over the top, and registers of healers in fish cloaks, symbols and a monster driven away on a boat.',
@@ -549,7 +549,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Witches, Oracles & Shamans',
     domain: 'Maithil magic and divination art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Mithila wall painting seer: Bihar folk paintings with double-line outlines, filled with fine hatching, fish, suns, serpents and wide-eyed figures, every space dense with pattern.',
@@ -584,7 +584,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Witches, Oracles & Shamans',
     domain: 'Egyptian magic and divination art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Egyptian faience amulet magic: glazed turquoise faience amulets of protective gods, eyes, dwarf guardians and scarabs, strung on cords or set on dark stone, luminous blue-green glaze.',
@@ -614,7 +614,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Witches, Oracles & Shamans',
     domain: 'Arabic magic and divination art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Book of wonders astrologer: medieval Arabic manuscripts of cosmic wonders with astrologers, angels of the spheres, star creatures and marvels on plain paper with gold and bright mineral color.',
@@ -646,7 +646,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Witches, Oracles & Shamans',
     domain: 'Mexican magic and divination art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Curandera tin ex-voto: Mexican painted tin votive panels telling small miracle stories, a healer or saint appearing in a corner cloud, simple naive figures in flat color on dented tin.',
@@ -675,7 +675,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Witches, Oracles & Shamans',
     domain: 'Guna magic and divination art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Mola spirit panel: Guna reverse-appliqué textile panels from Panama with layered cut fabric in maze-like channels, bold red, black and orange, spirit creatures and healers.',

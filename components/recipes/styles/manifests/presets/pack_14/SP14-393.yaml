@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Frontal window frame filling the image with carved figures around the glass.
   atmosphere_and_mood: Keep the requested mood with wistful folk enchantment.
   rendering_and_quality: Crisp woodcraft detail with symmetrical ornament, kept consistent across the whole image.
-  creative_brief: "Izba window sirin carving: Russian carved and painted wooden window frames on log houses, with lacy fretwork, lions, sirin bird-maidens and sun rosettes in faded blue, white and green. Carry it through carved window frame, bird-maiden, fretwork lions, sun rosettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Izba window sirin carving: Russian carved and painted wooden window frames on log houses, with lacy fretwork, lions, sirin bird-maidens and sun rosettes in faded blue, white and green. Carry it through carved window frame, bird-maiden, fretwork lions, sun rosettes. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: carved window frame; bird-maiden; fretwork lions; sun rosettes
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

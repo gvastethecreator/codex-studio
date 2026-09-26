@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Vertical scroll with a judge above and souls below.
   atmosphere_and_mood: Keep the requested mood with solemn bureaucratic dread.
   rendering_and_quality: Detailed scroll painting without readable script, kept consistent across the whole image.
-  creative_brief: "Diyu ten courts scroll: Chinese hanging-scroll paintings of the ten courts of the underworld, stern judges in official robes, ox-headed and horse-faced guards and bridges over dark rivers. Carry it through underworld court, stern judge, ox-head guard, scroll. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Diyu ten courts scroll: Chinese hanging-scroll paintings of the ten courts of the underworld, stern judges in official robes, ox-headed and horse-faced guards and bridges over dark rivers. Carry it through underworld court, stern judge, ox-head guard, scroll. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: underworld court; stern judge; ox-head guard; scroll
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

@@ -57,7 +57,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Demons, Yokai & Night Spirits',
     domain: 'japanese mythic art technique',
     negativePrompt:
-      'readable Japanese text or seals, costume stereotypes, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable Japanese text or seals, costume stereotypes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Yurei-zu ghost scroll: Edo-period hanging scroll paintings of pale ghosts with long loose hair, white robes, fading legs and dim lantern light.',
@@ -86,7 +86,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Demons, Yokai & Night Spirits',
     domain: 'japanese mythic art technique',
     negativePrompt:
-      'readable Japanese text or seals, costume stereotypes, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable Japanese text or seals, costume stereotypes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Hundred demons scroll: long handscroll processions of yokai and animated household objects parading at night in lively ink and color.',
@@ -116,7 +116,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Demons, Yokai & Night Spirits',
     domain: 'japanese mythic art technique',
     negativePrompt:
-      'readable Japanese text or seals, costume stereotypes, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable Japanese text or seals, costume stereotypes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Noh mask carving: carved and painted wooden masks from Noh theatre, serene women, demons and ghosts whose expression changes with the angle of light.',
@@ -148,7 +148,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Demons, Yokai & Night Spirits',
     domain: 'Korean night-spirit art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Korean dokkaebi minhwa: Joseon folk painting with bold outlines and cheerful flat color, showing horned goblins with magic clubs, tigers and magpies in playful mischief.',
@@ -177,7 +177,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Demons, Yokai & Night Spirits',
     domain: 'Chinese night-spirit art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Peking opera demon mask: painted opera face makeup of demons and generals with symbolic colors, bold lines, flared eyebrows, and dazzling stage costume.',
@@ -208,7 +208,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Demons, Yokai & Night Spirits',
     domain: 'Chinese night-spirit art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Hungry ghost lantern festival: glowing river lanterns, paper offerings and drifting ghosts with long thin necks under the seventh-month moon.',
@@ -240,7 +240,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Demons, Yokai & Night Spirits',
     domain: 'Filipino night-spirit art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Aswang night woodcut: stark Philippine folklore prints of shape-shifting night creatures over nipa huts and banana groves, cut in bold black with moonlit whites.',
@@ -269,7 +269,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Demons, Yokai & Night Spirits',
     domain: 'Indian night-spirit art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Kerala rakshasa temple mural: South Indian temple mural painting in ochre, green and red with ornate crowns, many arms, fierce demon kings and dense decorative fills.',
@@ -301,7 +301,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Demons, Yokai & Night Spirits',
     domain: 'Persian night-spirit art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Persian div miniature: Shahnama-style miniature painting of spotted horned divs battling heroes among spongy rocks, gold skies and jewel-colored landscapes.',
@@ -332,7 +332,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Demons, Yokai & Night Spirits',
     domain: 'Arabian night-spirit art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Jinn smoke illumination: illuminated manuscript pages of the wonders tradition, jinn rising from smoke and lamps in gold, lapis and vermilion with arabesque margins.',
@@ -365,7 +365,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Demons, Yokai & Night Spirits',
     domain: 'Mesopotamian night-spirit art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Mesopotamian demon bronze: ancient cast bronze figures and amulets of winged, taloned wind demons with snarling faces and four wings, dark green patina.',
@@ -399,7 +399,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Demons, Yokai & Night Spirits',
     domain: 'Medieval European night-spirit art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Medieval hell-mouth illumination: manuscript miniatures of a gaping monstrous jaw swallowing the damned, grotesque blue and red devils, gold grounds and flames.',
@@ -430,7 +430,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Demons, Yokai & Night Spirits',
     domain: 'Victorian night-spirit art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Victorian spirit photograph: nineteenth-century double-exposure portraits where translucent ghosts float behind stiff sitters, sepia tones and faded edges.',
@@ -463,7 +463,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Demons, Yokai & Night Spirits',
     domain: 'Balinese night-spirit art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Balinese rangda mask dance: temple dance of the witch queen with bulging eyes, long tongue and wild hair against the lion-like barong, in gold, red and white.',
@@ -492,7 +492,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Demons, Yokai & Night Spirits',
     domain: 'Thai night-spirit art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Thai phi temple mural: Buddhist temple murals with gold leaf, red grounds and graceful figures, showing forest spirits, giants and ghosts of the Thai tradition.',
@@ -523,7 +523,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Demons, Yokai & Night Spirits',
     domain: 'Czech night-spirit art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Czech devil marionette: hand-carved wooden string puppets of devils, witches and knights from Bohemian puppet theater, painted faces, horns and cloth costumes.',
@@ -554,7 +554,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Demons, Yokai & Night Spirits',
     domain: 'Slavic night-spirit art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Slavic nightmare lubok: Russian popular woodblock prints with bold outlines and bright hand coloring, showing house spirits, forest spirits and night hags.',
@@ -583,7 +583,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Demons, Yokai & Night Spirits',
     domain: 'Irish night-spirit art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Banshee mist etching: Celtic-revival etchings of keening spirits over moors and ruined towers, fine lines dissolving into mist and moonlight.',
@@ -613,7 +613,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Demons, Yokai & Night Spirits',
     domain: 'Mexica night-spirit art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Tzitzimimeh star demon codex: codex-style star demons of the night sky descending on eclipse, skeletal bodies with star eyes and bold outlined flat color.',
@@ -645,7 +645,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Demons, Yokai & Night Spirits',
     domain: 'Javanese night-spirit art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Javanese wayang demon puppet: intricately perforated painted leather shadow puppets of giants and demons, gilded and cast as shadows on a white screen by oil lamp.',
@@ -675,7 +675,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Demons, Yokai & Night Spirits',
     domain: 'Brazilian night-spirit art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Cordel devil woodcut: Brazilian northeastern cordel pamphlet woodcuts with bold black carving of devils, cangaceiros and saints in rustic comic drama.',

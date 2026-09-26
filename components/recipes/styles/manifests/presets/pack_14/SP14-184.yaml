@@ -7,7 +7,7 @@ styleAnchors:
   - japanese mythic art technique
   - night parade
 displayName: Hundred Demons Scroll
-category: 'Demons, Yokai & Night Spirits'
+category: Demons, Yokai & Night Spirits
 domain: japanese mythic art technique
 version: 1
 supportedTasks:
@@ -29,12 +29,11 @@ visualDna:
   camera_and_composition: Long horizontal procession, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with mischievous nocturnal carnival.
   rendering_and_quality: Lively animated handscroll, kept consistent across the whole image.
-  creative_brief: "Hundred demons scroll: long handscroll processions of yokai and animated household objects parading at night in lively ink and color. Carry it through night parade, object spirits, handscroll, lively brush. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Hundred demons scroll: long handscroll processions of yokai and animated household objects parading at night in lively ink and color. Carry it through night parade, object spirits, handscroll, lively brush. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: night parade; object spirits; handscroll; lively brush
 avoidRules:
   - readable Japanese text or seals
   - costume stereotypes
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable Japanese text or seals, costume stereotypes, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable Japanese text or seals, costume stereotypes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -57,7 +56,7 @@ taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault
   categoryId: demons-yokai-night-spirits
-  categoryName: 'Demons, Yokai & Night Spirits'
+  categoryName: Demons, Yokai & Night Spirits
   tags:
     - curation-v2
     - demons-yokai-night-spirits

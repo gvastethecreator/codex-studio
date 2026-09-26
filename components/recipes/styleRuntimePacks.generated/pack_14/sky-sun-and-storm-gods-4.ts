@@ -38,7 +38,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Mexica Mythic Noir',
     category: 'Sky, Sun & Storm Gods',
     negativePrompt:
-      'Do not flatten Mexica, Maya, Mixtec and Inca identities into one generic civilization. Do not force sacrifice, gore, a feathered warrior or a sun disk into every subject. Avoid mosaic wallpaper, arbitrary glyphs and floating symbolic props unrelated to the design. Avoid emissive turquoise, circuit-like linework and glossy technological product finishes; keep turquoise opaque and design cues localized to one existing contour or join.',
+      'Do not flatten Mexica, Maya, Mixtec and Inca identities into one generic civilization. Do not force sacrifice, a feathered warrior or a sun disk into every subject. Avoid mosaic wallpaper, arbitrary glyphs and floating symbolic props unrelated to the design. Avoid emissive turquoise, circuit-like linework and glossy technological product finishes; keep turquoise opaque and design cues localized to one existing contour or join.',
     style: {
       aesthetic:
         'Mexica-inspired mythic illustration uses compact silhouettes, stepped planes and strong dark-light tension. Choose one cue for the image: a serpent-like curve following an existing joint, or a feather rhythm shaping one existing contour. Render the chosen cue in opaque, matte pigment or fitted stone-like color; a small turquoise inset may support it, but not carry the identity by color alone.',
@@ -71,7 +71,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Sky, Sun & Storm Gods',
     domain: 'japanese mythic art technique',
     negativePrompt:
-      'readable Japanese text or seals, costume stereotypes, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable Japanese text or seals, costume stereotypes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Rinpa gold screen: bold decorative painting on gold-leaf folding screens with stylized waves, irises, wind and thunder gods and lavish flat color.',
@@ -102,7 +102,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Sky, Sun & Storm Gods',
     domain: 'japanese mythic art technique',
     negativePrompt:
-      'readable Japanese text or seals, costume stereotypes, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable Japanese text or seals, costume stereotypes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Temple ceiling dragon: monumental ink dragons painted across round temple ceilings, coiling through clouds with fierce eyes that follow the viewer.',
@@ -131,7 +131,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Sky, Sun & Storm Gods',
     domain: 'norse mythic art technique',
     negativePrompt:
-      'readable runes, horned-helmet cliché, modern extremist symbols, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable runes, horned-helmet cliché, modern extremist symbols, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Aurora saga night painting: modern painterly northern-light scenes of saga figures under rippling green and violet aurora over snow and sea.',
@@ -162,7 +162,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Sky, Sun & Storm Gods',
     domain: 'yoruba art technique',
     negativePrompt:
-      'generic tribal pattern, cultural stereotypes or caricature, disrespectful depiction of Orisha, readable text, gore, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'generic tribal pattern, cultural stereotypes or caricature, disrespectful depiction of Orisha, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Afrofuturist Orisha illustration: contemporary digital illustration of Orisha as luminous futuristic figures, cosmic backgrounds, glowing beadwork and sacred colors.',
@@ -198,7 +198,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Sky, Sun & Storm Gods',
     domain: 'mexica fantastic art technique',
     negativePrompt:
-      'readable glyphs, cultural stereotypes or caricature, sacrifice gore, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable glyphs, cultural stereotypes or caricature, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Sun stone cosmic clockwork: the concentric carved rings of the great calendar stone reimagined as a vast turning cosmic machine of suns, eras and day signs.',
@@ -229,7 +229,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Sky, Sun & Storm Gods',
     domain: 'mexica fantastic art technique',
     negativePrompt:
-      'readable glyphs, cultural stereotypes or caricature, sacrifice gore, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable glyphs, cultural stereotypes or caricature, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Jade rain palace: a fantastic palace of the rain god built from jade, water and clouds, green light, rain curtains and effigy jars pouring storms.',
@@ -260,7 +260,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Sky, Sun & Storm Gods',
     domain: 'greek mythic art technique',
     negativePrompt:
-      'readable Greek inscriptions, modern tourist-souvenir kitsch, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable Greek inscriptions, modern tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Academic Olympus oil: nineteenth-century salon painting of Greek myths, polished idealized figures, luminous skin, marble architecture and theatrical skies.',
@@ -291,7 +291,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Sky, Sun & Storm Gods',
     domain: 'egyptian mythic art technique',
     negativePrompt:
-      'readable hieroglyphs or cartouches, mummy horror cliché, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable hieroglyphs or cartouches, mummy horror cliché, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Amarna naturalism: the unusual art of the Amarna period, elongated faces and bodies, intimate family scenes and sun rays ending in small hands.',
@@ -324,7 +324,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Sky, Sun & Storm Gods',
     domain: 'maya art technique',
     negativePrompt:
-      'readable glyphs, cultural stereotypes or caricature, sacrifice gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable glyphs, cultural stereotypes or caricature, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Maya blue pigment wash: paintings dominated by the durable turquoise Maya blue, washed over figures and offerings with warm ochre accents.',

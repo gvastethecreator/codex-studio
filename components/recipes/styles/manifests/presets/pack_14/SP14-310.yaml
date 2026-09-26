@@ -7,7 +7,7 @@ styleAnchors:
   - mexica fantastic art technique
   - obsidian mirror
 displayName: Obsidian Mirror Dreamscape
-category: 'Witches, Oracles & Shamans'
+category: Witches, Oracles & Shamans
 domain: mexica fantastic art technique
 version: 1
 supportedTasks:
@@ -29,12 +29,11 @@ visualDna:
   camera_and_composition: Mirror as a window into another world, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with uncanny divinatory mystery.
   rendering_and_quality: Smooth glossy reflection, kept consistent across the whole image.
-  creative_brief: "Obsidian mirror dreamscape: polished black obsidian mirrors reflecting impossible worlds, smoky reflections, gods glimpsed in dark glass. Carry it through obsidian mirror, smoky reflection, other world, dark glass. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Obsidian mirror dreamscape: polished black obsidian mirrors reflecting impossible worlds, smoky reflections, gods glimpsed in dark glass. Carry it through obsidian mirror, smoky reflection, other world, dark glass. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: obsidian mirror; smoky reflection; other world; dark glass
 avoidRules:
   - readable glyphs
   - cultural stereotypes or caricature
-  - sacrifice gore
   - tourist-souvenir kitsch
   - readable text
   - logo
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable glyphs, cultural stereotypes or caricature, sacrifice gore, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable glyphs, cultural stereotypes or caricature, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
@@ -58,7 +57,7 @@ taxonomy:
   packId: pack_14
   packName: Mythic Noir Curated Vault
   categoryId: witches-oracles-shamans
-  categoryName: 'Witches, Oracles & Shamans'
+  categoryName: Witches, Oracles & Shamans
   tags:
     - curation-v2
     - witches-oracles-shamans

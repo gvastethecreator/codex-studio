@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Rectangular panel filled with a central figure and maze lines.
   atmosphere_and_mood: Keep the requested mood with vivid spirit play.
   rendering_and_quality: Bold graphic textile craft, kept consistent across the whole image.
-  creative_brief: "Mola spirit panel: Guna reverse-appliqué textile panels from Panama with layered cut fabric in maze-like channels, bold red, black and orange, spirit creatures and healers. Carry it through reverse appliqué, maze channels, spirit creatures, bold colors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Mola spirit panel: Guna reverse-appliqué textile panels from Panama with layered cut fabric in maze-like channels, bold red, black and orange, spirit creatures and healers. Carry it through reverse appliqué, maze channels, spirit creatures, bold colors. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: reverse appliqué; maze channels; spirit creatures; bold colors
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

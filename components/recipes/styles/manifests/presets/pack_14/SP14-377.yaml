@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Chart with coasts and monster-filled sea, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with wondrous seafaring fear.
   rendering_and_quality: Detailed engraved chart without readable labels, kept consistent across the whole image.
-  creative_brief: "Carta marina monster chart: sixteenth-century northern sea charts crowded with hand-colored sea monsters, whales mistaken for islands, serpents and sinking ships. Carry it through sea chart, hand-colored monsters, whale island, engraved waves. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Carta marina monster chart: sixteenth-century northern sea charts crowded with hand-colored sea monsters, whales mistaken for islands, serpents and sinking ships. Carry it through sea chart, hand-colored monsters, whale island, engraved waves. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: sea chart; hand-colored monsters; whale island; engraved waves
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Upward view across a cave ceiling with flowing figures circling a lotus center.
   atmosphere_and_mood: Keep the requested mood with weightless heavenly grace.
   rendering_and_quality: Flowing mural painting with long rhythmic ribbon lines.
-  creative_brief: "Dunhuang celestial cave mural: Silk Road cave temple murals with flying celestials trailing scarves through heavenly skies, lotus ceilings, oxidized pigments and flaking plaster. Carry it through flying celestials, trailing scarves, lotus ceiling, flaking plaster. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Dunhuang celestial cave mural: Silk Road cave temple murals with flying celestials trailing scarves through heavenly skies, lotus ceilings, oxidized pigments and flaking plaster. Carry it through flying celestials, trailing scarves, lotus ceiling, flaking plaster. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: flying celestials; trailing scarves; lotus ceiling; flaking plaster
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

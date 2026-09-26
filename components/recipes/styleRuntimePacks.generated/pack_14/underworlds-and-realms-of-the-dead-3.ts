@@ -41,7 +41,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Underworlds & Realms of the Dead',
     domain: 'egyptian mythic art technique',
     negativePrompt:
-      'readable hieroglyphs or cartouches, mummy horror cliché, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable hieroglyphs or cartouches, mummy horror cliché, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Papyrus vignette scroll: painted scenes on papyrus from funerary scrolls, delicate outline figures, soft colors and fibrous papyrus texture.',
@@ -71,7 +71,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Underworlds & Realms of the Dead',
     domain: 'egyptian mythic art technique',
     negativePrompt:
-      'readable hieroglyphs or cartouches, mummy horror cliché, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable hieroglyphs or cartouches, mummy horror cliché, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Starry tomb ceiling: burial chamber ceilings painted deep blue with rows of yellow five-pointed stars and the sky goddess stretched across them.',
@@ -105,7 +105,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Underworlds & Realms of the Dead',
     domain: 'mexica fantastic art technique',
     negativePrompt:
-      'readable glyphs, cultural stereotypes or caricature, sacrifice gore, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable glyphs, cultural stereotypes or caricature, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Marigold underworld journey: the nine levels of the underworld imagined as a dreamlike path of marigold light, dog guides, obsidian winds and rivers of shadow.',
@@ -141,7 +141,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Underworlds & Realms of the Dead',
     domain: 'mexica fantastic art technique',
     negativePrompt:
-      'readable glyphs, cultural stereotypes or caricature, sacrifice gore, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable glyphs, cultural stereotypes or caricature, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Papel picado spirit festival: layers of cut tissue-paper banners strung across the night sky, glowing with light and forming spirit shapes of skeletons, birds and flowers.',
@@ -173,7 +173,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Underworlds & Realms of the Dead',
     domain: 'mexica fantastic art technique',
     negativePrompt:
-      'readable glyphs, cultural stereotypes or caricature, sacrifice gore, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable glyphs, cultural stereotypes or caricature, tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Marigold ofrenda still life: glowing altars of marigolds, candles, copal smoke, sugar skulls and photographs arranged in tiers, painted with warm reverence.',
@@ -204,7 +204,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Underworlds & Realms of the Dead',
     domain: 'maya art technique',
     negativePrompt:
-      'readable glyphs, cultural stereotypes or caricature, sacrifice gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable glyphs, cultural stereotypes or caricature, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Codex-style vase painting: Classic Maya cylinder vessels painted in fine black line on cream slip with red rims, lively narrative scenes of gods and courts.',
@@ -235,7 +235,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Underworlds & Realms of the Dead',
     domain: 'maya art technique',
     negativePrompt:
-      'readable glyphs, cultural stereotypes or caricature, sacrifice gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable glyphs, cultural stereotypes or caricature, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Naj Tunich cave drawing: black charcoal-and-ink drawings on cave walls, fluid lines of ballplayers, musicians and gods in the deep darkness.',
@@ -264,7 +264,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Underworlds & Realms of the Dead',
     domain: 'greek mythic art technique',
     negativePrompt:
-      'readable Greek inscriptions, modern tourist-souvenir kitsch, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable Greek inscriptions, modern tourist-souvenir kitsch, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'White-ground lekythos painting: delicate funerary oil-flask painting with fine outline figures and soft washes on a chalky white ground, quiet and melancholic.',
@@ -294,7 +294,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Underworlds & Realms of the Dead',
     domain: 'yoruba art technique',
     negativePrompt:
-      'generic tribal pattern, cultural stereotypes or caricature, disrespectful depiction of Orisha, readable text, gore, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'generic tribal pattern, cultural stereotypes or caricature, disrespectful depiction of Orisha, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Egungun cloth masquerade: ancestral masquerades in layered panels of rich cloth, appliqué, sequins and mirrors, spinning so the layers fly outward.',
@@ -325,7 +325,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Underworlds & Realms of the Dead',
     domain: 'Chinese underworld art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Diyu ten courts scroll: Chinese hanging-scroll paintings of the ten courts of the underworld, stern judges in official robes, ox-headed and horse-faced guards and bridges over dark rivers.',
@@ -357,7 +357,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Underworlds & Realms of the Dead',
     domain: 'Japanese underworld art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Jigoku-zoshi hell scroll: Japanese medieval handscrolls of the hell realms, red flames, blue and red oni wardens, and small pale souls in swirling ink and color.',
@@ -388,7 +388,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Underworlds & Realms of the Dead',
     domain: 'Norse underworld art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Helheim frost painting: painterly frozen underworld of the Norse dead, a half-living half-dead queen, ice halls, bone gates and grey rivers of cold mist.',
@@ -419,7 +419,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Underworlds & Realms of the Dead',
     domain: 'Mesopotamian underworld art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Inanna descent cylinder seal: Mesopotamian cylinder seal impressions rolled into clay, repeating frieze scenes of the goddess passing through seven gates of the underworld.',
@@ -454,7 +454,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Underworlds & Realms of the Dead',
     domain: 'Italian literary underworld art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Inferno circle engraving: nineteenth-century wood engravings of the circles of the literary inferno, vast dark chasms, dramatic light and crowds of souls in sweeping tone.',
@@ -485,7 +485,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Underworlds & Realms of the Dead',
     domain: 'Bengali underworld art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Yama pata scroll painting: Bengali patachitra narrative scrolls with bold outlines and bright colors showing the lord of death on his buffalo and the fates of souls.',
@@ -517,7 +517,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Underworlds & Realms of the Dead',
     domain: 'Etruscan underworld art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Etruscan tomb fresco: lively painted tomb walls with banqueting couples, dancers, blue-skinned underworld demons with hammers and winged guides of the dead.',
@@ -551,7 +551,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Underworlds & Realms of the Dead',
     domain: 'Chinese folk underworld art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Joss paper afterlife mansion: paper offerings of houses, cars, servants and banknotes crafted for the dead, glowing as they burn into the afterlife.',
@@ -584,7 +584,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Underworlds & Realms of the Dead',
     domain: 'Celtic underworld art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Celtic otherworld mound illumination: illuminated knotwork frames around scenes of the fairy mound, a door into the hill, silver apple trees and endless twilight.',
@@ -617,7 +617,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Underworlds & Realms of the Dead',
     domain: 'Persian underworld art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Chinvat bridge miniature: Persian miniature painting of the bridge of judgment over the abyss, widening for the righteous and narrowing to a blade, with guiding maidens and dogs.',
@@ -653,7 +653,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Underworlds & Realms of the Dead',
     domain: 'Korean underworld art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Korean jeoseung messenger painting: Korean painting of the afterlife messengers in black robes and wide hats, the kings of the underworld and lantern-lit paths to the other world.',
@@ -684,7 +684,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: 'Underworlds & Realms of the Dead',
     domain: 'Greek underworld art',
     negativePrompt:
-      'cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Styx ferryman black-glaze: Greek black-glaze pottery painted with the ferryman of the dead poling his boat across the black river, winged guides and shades.',

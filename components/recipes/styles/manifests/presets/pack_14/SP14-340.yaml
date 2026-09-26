@@ -30,12 +30,11 @@ visualDna:
   camera_and_composition: Procession crossing a field or bridge, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with enchanted mischievous wonder.
   rendering_and_quality: Refined woodblock print, kept consistent across the whole image.
-  creative_brief: "Kitsune rain wedding print: woodblock prints of fox wedding processions during sun-showers, lantern-carrying foxes in kimono crossing fields under rain and sunlight. Carry it through fox wedding, sun-shower, lanterns, procession. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Kitsune rain wedding print: woodblock prints of fox wedding processions during sun-showers, lantern-carrying foxes in kimono crossing fields under rain and sunlight. Carry it through fox wedding, sun-shower, lanterns, procession. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: fox wedding; sun-shower; lanterns; procession
 avoidRules:
   - cultural stereotypes or caricature
   - readable text or script
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: cultural stereotypes or caricature, readable text or script, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cultural stereotypes or caricature, readable text or script, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
