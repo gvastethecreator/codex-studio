@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP12-163
+packId: pack_12
+name: Sewer Tunnel Crawl Capture
+styleAnchors:
+  - Sewer Tunnel Crawl Capture
+  - sewer dungeon exploration screenshot
+  - vaulted brick sewers
+displayName: Sewer Tunnel Crawl Capture
+category: 7. Heists, Horror & Underworld Runs
+domain: sewer dungeon exploration screenshot
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - heists-horror-and-underworld-runs
+  - sewer-crawl
+  - game-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Sewer tunnel crawl capture: an original third-person screenshot of wading through vaulted brick sewers, green glowing water, rats and dripping pipes.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject wading through vaulted brick sewer tunnels.
+  color_and_tone: Murky green, brick brown and torch amber, kept consistent across the whole image.
+  lighting_and_shadow: Torch glow and green water glow, kept consistent across the whole image.
+  texture_and_material: Wet brick, grates, rust and sludge, kept consistent across the whole image.
+  camera_and_composition: Third-person behind the character down the tunnel, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with grimy menace, kept consistent across the whole image.
+  rendering_and_quality: Clean capture with no HUD, kept consistent across the whole image.
+  creative_brief: "Sewer tunnel crawl capture: an original third-person screenshot of wading through vaulted brick sewers, green glowing water, rats and dripping pipes. Carry it through vaulted brick sewers, green water, torchlight, rats. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: vaulted brick sewers; green water; torchlight; rats
+avoidRules:
+  - existing game characters, logos or levels
+  - readable interface text
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: heists-horror-and-underworld-runs
+  categoryName: 7. Heists, Horror & Underworld Runs
+  tags:
+    - video-game-originals-vault
+    - heists-horror-and-underworld-runs
+    - sewer-crawl
+    - game-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: sewer dungeon exploration screenshot

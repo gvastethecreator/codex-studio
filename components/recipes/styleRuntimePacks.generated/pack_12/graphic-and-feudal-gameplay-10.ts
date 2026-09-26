@@ -177,4 +177,508 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP12-193',
+    name: 'Cel-Shaded Samurai Duel Gameplay',
+    displayName: 'Cel-Shaded Samurai Duel Gameplay',
+    styleAnchors: [
+      'Cel-Shaded Samurai Duel Gameplay',
+      'toon-shaded samurai duel gameplay',
+      'cel shading',
+    ],
+    category: '10. Graphic & Feudal Gameplay',
+    domain: 'toon-shaded samurai duel gameplay',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Cel-shaded samurai duel gameplay: an original third-person capture of a samurai duel with bold toon shading, falling leaves, wind lines and dramatic standoffs.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject in a cel-shaded samurai duel standoff.',
+      color_and_tone:
+        'Autumn reds, gold light and deep shadow, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Two-tone cel shading and rim light, kept consistent across the whole image.',
+      texture_and_material:
+        'Flat shaded cloth, blades and leaves, kept consistent across the whole image.',
+      camera_and_composition:
+        'Low wide third-person standoff, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with tense stillness, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean toon capture with no UI, kept consistent across the whole image.',
+      creative_brief:
+        "Cel-shaded samurai duel gameplay: an original third-person capture of a samurai duel with bold toon shading, falling leaves, wind lines and dramatic standoffs. Carry it through cel shading, samurai standoff, falling leaves, wind lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'cel shading; samurai standoff; falling leaves; wind lines',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-194',
+    name: 'Ink-Brush Brawler Gameplay',
+    displayName: 'Ink-Brush Brawler Gameplay',
+    styleAnchors: [
+      'Ink-Brush Brawler Gameplay',
+      'sumi-ink action gameplay',
+      'ink-painted fighters',
+    ],
+    category: '10. Graphic & Feudal Gameplay',
+    domain: 'sumi-ink action gameplay',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Ink-brush brawler gameplay: an original action capture where every character and strike is painted in wet black ink with splashes of red, on a rice-paper world.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject as a wet ink-painted fighter in an ink-wash world.',
+      color_and_tone:
+        'Black ink, paper white and red accents, kept consistent across the whole image.',
+      lighting_and_shadow: 'Ink density instead of light, kept consistent across the whole image.',
+      texture_and_material:
+        'Brush splashes, dry brush and paper grain, kept consistent across the whole image.',
+      camera_and_composition:
+        'Side-on action with splash effects, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with explosive calligraphic energy.',
+      rendering_and_quality:
+        'Clean ink capture with no UI, kept consistent across the whole image.',
+      creative_brief:
+        "Ink-brush brawler gameplay: an original action capture where every character and strike is painted in wet black ink with splashes of red, on a rice-paper world. Carry it through ink-painted fighters, splash strikes, rice paper, red accents. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'ink-painted fighters; splash strikes; rice paper; red accents',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-195',
+    name: 'Arena Combo Hack-and-Slash Gameplay',
+    displayName: 'Arena Combo Hack-and-Slash Gameplay',
+    styleAnchors: [
+      'Arena Combo Hack-and-Slash Gameplay',
+      'stylish combo action gameplay',
+      'air juggle',
+    ],
+    category: '10. Graphic & Feudal Gameplay',
+    domain: 'stylish combo action gameplay',
+    negativePrompt:
+      'combo text, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Arena combo hack-and-slash gameplay: an original stylish action capture of a hero juggling enemies mid-air, flashy weapon trails and a gothic arena.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject mid-combo juggling enemies in a stylish arena.',
+      color_and_tone:
+        'Dark arena with vivid weapon-trail colors, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Flashy effect lighting and rim light, kept consistent across the whole image.',
+      texture_and_material:
+        'Gothic stone, coat flare and weapon glow, kept consistent across the whole image.',
+      camera_and_composition:
+        'Dynamic low angle in the air, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with swaggering flair, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean capture with no combo text, kept consistent across the whole image.',
+      creative_brief:
+        "Arena combo hack-and-slash gameplay: an original stylish action capture of a hero juggling enemies mid-air, flashy weapon trails and a gothic arena. Carry it through air juggle, weapon trails, stylish hero, gothic arena. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'air juggle; weapon trails; stylish hero; gothic arena',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-196',
+    name: 'Mounted Archery Plains Gameplay',
+    displayName: 'Mounted Archery Plains Gameplay',
+    styleAnchors: [
+      'Mounted Archery Plains Gameplay',
+      'horseback archery gameplay',
+      'horseback archery',
+    ],
+    category: '10. Graphic & Feudal Gameplay',
+    domain: 'horseback archery gameplay',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Mounted archery plains gameplay: an original third-person capture of a rider shooting arrows at full gallop across windswept steppe grass.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject shooting a bow from a galloping horse on open plains.',
+      color_and_tone: 'Golden grass, wide blue sky and earth tones.',
+      lighting_and_shadow: 'Low sun with long shadows, kept consistent across the whole image.',
+      texture_and_material:
+        'Wind-bent grass, leather and horsehair, kept consistent across the whole image.',
+      camera_and_composition:
+        'Chase camera beside the galloping horse, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with wild freedom, kept consistent across the whole image.',
+      rendering_and_quality: 'Clean capture with no UI, kept consistent across the whole image.',
+      creative_brief:
+        "Mounted archery plains gameplay: an original third-person capture of a rider shooting arrows at full gallop across windswept steppe grass. Carry it through horseback archery, galloping, steppe grass, low sun. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'horseback archery; galloping; steppe grass; low sun',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-197',
+    name: 'Third-Person Shinobi Stealth Gameplay',
+    displayName: 'Third-Person Shinobi Stealth Gameplay',
+    styleAnchors: [
+      'Third-Person Shinobi Stealth Gameplay',
+      'ninja stealth action gameplay',
+      'shinobi',
+    ],
+    category: '10. Graphic & Feudal Gameplay',
+    domain: 'ninja stealth action gameplay',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Third-person shinobi stealth gameplay: an original capture of a ninja crouched on castle rooftops at night, patrols below, grappling lines and moonlight.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject as a crouching shinobi above patrolling guards at night.',
+      color_and_tone:
+        'Moonlit blue, tile black and lantern amber, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Moonlight rims and guard lanterns, kept consistent across the whole image.',
+      texture_and_material:
+        'Roof tiles, cloth wraps and grappling rope, kept consistent across the whole image.',
+      camera_and_composition:
+        'Over-the-shoulder looking down on guards, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with silent precision, kept consistent across the whole image.',
+      rendering_and_quality: 'Clean capture with no UI, kept consistent across the whole image.',
+      creative_brief:
+        "Third-person shinobi stealth gameplay: an original capture of a ninja crouched on castle rooftops at night, patrols below, grappling lines and moonlight. Carry it through shinobi, castle rooftops, patrols below, moonlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'shinobi; castle rooftops; patrols below; moonlight',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-198',
+    name: 'Castle Siege Command Gameplay',
+    displayName: 'Castle Siege Command Gameplay',
+    styleAnchors: [
+      'Castle Siege Command Gameplay',
+      'feudal siege strategy gameplay',
+      'siege engines',
+    ],
+    category: '10. Graphic & Feudal Gameplay',
+    domain: 'feudal siege strategy gameplay',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Castle siege command gameplay: an original strategy capture of commanding a feudal siege from above, battering rams, ladders, archers and burning towers.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject as units in a feudal siege seen from a commanding height.',
+      color_and_tone:
+        'Earth tones, stone grey and fire orange, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Smoke-filtered daylight and fire, kept consistent across the whole image.',
+      texture_and_material:
+        'Stone walls, wooden siege engines and banners, kept consistent across the whole image.',
+      camera_and_composition: 'High angled strategy view, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with commanding strategy, kept consistent across the whole image.',
+      rendering_and_quality: 'Clean capture with no UI, kept consistent across the whole image.',
+      creative_brief:
+        "Castle siege command gameplay: an original strategy capture of commanding a feudal siege from above, battering rams, ladders, archers and burning towers. Carry it through siege engines, castle walls, archers, high view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'siege engines; castle walls; archers; high view',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-199',
+    name: 'Warband Formation Battle Gameplay',
+    displayName: 'Warband Formation Battle Gameplay',
+    styleAnchors: [
+      'Warband Formation Battle Gameplay',
+      'medieval formation battle gameplay',
+      'shield wall',
+    ],
+    category: '10. Graphic & Feudal Gameplay',
+    domain: 'medieval formation battle gameplay',
+    negativePrompt:
+      'gore, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Warband formation battle gameplay: an original third-person capture from inside a shield wall as two medieval formations collide on a muddy field.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; place the subject within a shield wall formation in a medieval battle.',
+      color_and_tone:
+        'Mud brown, faded banners and steel grey, kept consistent across the whole image.',
+      lighting_and_shadow: 'Overcast light and dust, kept consistent across the whole image.',
+      texture_and_material:
+        'Shields, mud, mail and pole weapons, kept consistent across the whole image.',
+      camera_and_composition:
+        'Low third-person within the formation, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with crushing collective force.',
+      rendering_and_quality:
+        'Clean capture without gore or UI, kept consistent across the whole image.',
+      creative_brief:
+        "Warband formation battle gameplay: an original third-person capture from inside a shield wall as two medieval formations collide on a muddy field. Carry it through shield wall, formations colliding, muddy field, banners. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'shield wall; formations colliding; muddy field; banners',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-200',
+    name: 'Hand-Drawn Feudal Brawler Gameplay',
+    displayName: 'Hand-Drawn Feudal Brawler Gameplay',
+    styleAnchors: [
+      'Hand-Drawn Feudal Brawler Gameplay',
+      '2D hand-drawn feudal action gameplay',
+      'hand-drawn warriors',
+    ],
+    category: '10. Graphic & Feudal Gameplay',
+    domain: '2D hand-drawn feudal action gameplay',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Hand-drawn feudal brawler gameplay: an original side-scrolling capture with hand-animated warriors, bold outlines and painted feudal villages under attack.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject as a hand-drawn warrior in a side-scrolling feudal brawl.',
+      color_and_tone:
+        'Warm painted backgrounds with bold character colors, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Painted light and flat character shadows, kept consistent across the whole image.',
+      texture_and_material:
+        'Hand-inked lines, painted wood and paper walls, kept consistent across the whole image.',
+      camera_and_composition:
+        'Side-on lane with foreground and background, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with lively feudal action.',
+      rendering_and_quality:
+        'Clean hand-drawn capture with no UI, kept consistent across the whole image.',
+      creative_brief:
+        "Hand-drawn feudal brawler gameplay: an original side-scrolling capture with hand-animated warriors, bold outlines and painted feudal villages under attack. Carry it through hand-drawn warriors, side-scrolling, painted village, bold outlines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'hand-drawn warriors; side-scrolling; painted village; bold outlines',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-201',
+    name: 'Spirit Hunter Action Gameplay',
+    displayName: 'Spirit Hunter Action Gameplay',
+    styleAnchors: [
+      'Spirit Hunter Action Gameplay',
+      'folklore spirit hunting action gameplay',
+      'folklore spirits',
+    ],
+    category: '10. Graphic & Feudal Gameplay',
+    domain: 'folklore spirit hunting action gameplay',
+    negativePrompt:
+      'readable talisman text, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Spirit hunter action gameplay: an original third-person capture of a hunter fighting folklore spirits in a moonlit shrine, talismans, glowing spirit trails and mist.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject battling folklore spirits in a moonlit shrine.',
+      color_and_tone:
+        'Moonlit blue, spirit violet and talisman gold, kept consistent across the whole image.',
+      lighting_and_shadow: 'Spirit glow and moonlight, kept consistent across the whole image.',
+      texture_and_material:
+        'Shrine wood, paper talismans and mist, kept consistent across the whole image.',
+      camera_and_composition:
+        'Third-person with spirits circling, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with eerie folklore action.',
+      rendering_and_quality:
+        'Clean capture with no readable talismans, kept consistent across the whole image.',
+      creative_brief:
+        "Spirit hunter action gameplay: an original third-person capture of a hunter fighting folklore spirits in a moonlit shrine, talismans, glowing spirit trails and mist. Carry it through folklore spirits, moonlit shrine, talismans, spirit trails. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'folklore spirits; moonlit shrine; talismans; spirit trails',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-202',
+    name: 'Comic-Panel Action Gameplay',
+    displayName: 'Comic-Panel Action Gameplay',
+    styleAnchors: [
+      'Comic-Panel Action Gameplay',
+      'comic-book panel action gameplay',
+      'comic panels',
+    ],
+    category: '10. Graphic & Feudal Gameplay',
+    domain: 'comic-book panel action gameplay',
+    negativePrompt:
+      'speech bubbles or lettering, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Comic-panel action gameplay: an original capture where the game world is split into comic-book panels, bold inks, halftone shading and action spilling across borders.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject fighting across comic-book panels with action breaking the borders.',
+      color_and_tone: 'Bold inks with flat comic colors and halftone.',
+      lighting_and_shadow: 'Heavy ink shadows, kept consistent across the whole image.',
+      texture_and_material:
+        'Panel borders, halftone dots and paper, kept consistent across the whole image.',
+      camera_and_composition:
+        'Multi-panel page with a dominant action panel, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with pulpy momentum, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean capture with no speech bubbles, kept consistent across the whole image.',
+      creative_brief:
+        "Comic-panel action gameplay: an original capture where the game world is split into comic-book panels, bold inks, halftone shading and action spilling across borders. Carry it through comic panels, halftone, action across borders, bold inks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'comic panels; halftone; action across borders; bold inks',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-203',
+    name: 'Directional Swordplay Duel Gameplay',
+    displayName: 'Directional Swordplay Duel Gameplay',
+    styleAnchors: [
+      'Directional Swordplay Duel Gameplay',
+      'stance-based sword duel gameplay',
+      'heavy armor duel',
+    ],
+    category: '10. Graphic & Feudal Gameplay',
+    domain: 'stance-based sword duel gameplay',
+    negativePrompt:
+      'stance indicators, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Directional swordplay duel gameplay: an original third-person capture of a tense sword duel where fighters shift stances high, left and right in heavy armor.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject in a tense heavy-armor sword duel of shifting stances.',
+      color_and_tone:
+        'Steel grey, torchlight and faction colors, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Torchlit courtyard with sparks, kept consistent across the whole image.',
+      texture_and_material:
+        'Plate armor, chain mail and stone, kept consistent across the whole image.',
+      camera_and_composition:
+        'Over-the-shoulder facing the opponent, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with measured tension, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean capture with no stance UI, kept consistent across the whole image.',
+      creative_brief:
+        "Directional swordplay duel gameplay: an original third-person capture of a tense sword duel where fighters shift stances high, left and right in heavy armor. Carry it through heavy armor duel, shifting stances, sparks, courtyard. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'heavy armor duel; shifting stances; sparks; courtyard',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-204',
+    name: 'Samurai Tactics Grid Gameplay',
+    displayName: 'Samurai Tactics Grid Gameplay',
+    styleAnchors: [
+      'Samurai Tactics Grid Gameplay',
+      'feudal turn-based tactics gameplay',
+      'isometric grid',
+    ],
+    category: '10. Graphic & Feudal Gameplay',
+    domain: 'feudal turn-based tactics gameplay',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Samurai tactics grid gameplay: an original isometric turn-based capture of feudal units on a grid in a mountain temple, clan banners and movement tiles.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject as feudal units on an isometric tactics grid.',
+      color_and_tone:
+        'Earthy temple tones with clan color accents, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Soft daylight and tile highlights, kept consistent across the whole image.',
+      texture_and_material:
+        'Stone steps, wood, banners and grid tiles, kept consistent across the whole image.',
+      camera_and_composition: 'Isometric grid view, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with patient strategy, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean capture with no UI numbers, kept consistent across the whole image.',
+      creative_brief:
+        "Samurai tactics grid gameplay: an original isometric turn-based capture of feudal units on a grid in a mountain temple, clan banners and movement tiles. Carry it through isometric grid, feudal units, clan banners, temple. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'isometric grid; feudal units; clan banners; temple',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-205',
+    name: 'Gladiator Arena Crowd Gameplay',
+    displayName: 'Gladiator Arena Crowd Gameplay',
+    styleAnchors: ['Gladiator Arena Crowd Gameplay', 'arena combat gameplay', 'sand arena'],
+    category: '10. Graphic & Feudal Gameplay',
+    domain: 'arena combat gameplay',
+    negativePrompt:
+      'gore, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Gladiator arena crowd gameplay: an original third-person capture of gladiators fighting in a sunlit sand arena, roaring crowd, beasts and emperor box.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject fighting in a sunlit sand arena before a crowd.',
+      color_and_tone:
+        'Bright sand, sun gold and crowd colors, kept consistent across the whole image.',
+      lighting_and_shadow: 'Harsh midday sun and dust, kept consistent across the whole image.',
+      texture_and_material:
+        'Sand, bronze armor and stone tiers, kept consistent across the whole image.',
+      camera_and_composition: 'Low angle with the crowd in the tiers.',
+      atmosphere_and_mood:
+        'Keep the requested mood with roaring spectacle, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean capture without gore or UI, kept consistent across the whole image.',
+      creative_brief:
+        "Gladiator arena crowd gameplay: an original third-person capture of gladiators fighting in a sunlit sand arena, roaring crowd, beasts and emperor box. Carry it through sand arena, roaring crowd, gladiators, beasts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'sand arena; roaring crowd; gladiators; beasts',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-206',
+    name: 'Horseback Lance Joust Gameplay',
+    displayName: 'Horseback Lance Joust Gameplay',
+    styleAnchors: ['Horseback Lance Joust Gameplay', 'tournament joust gameplay', 'joust'],
+    category: '10. Graphic & Feudal Gameplay',
+    domain: 'tournament joust gameplay',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Horseback lance joust gameplay: an original first- or third-person capture of a tournament joust, lances lowered, splintering wood and banner-lined lists.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject charging in a tournament joust with lance lowered.',
+      color_and_tone:
+        'Bright heraldic banners, green field and steel, kept consistent across the whole image.',
+      lighting_and_shadow: 'Clear daylight and dust, kept consistent across the whole image.',
+      texture_and_material:
+        'Splintering lances, caparisons and armor, kept consistent across the whole image.',
+      camera_and_composition:
+        'Down the tilt barrier toward the opponent, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with chivalric impact, kept consistent across the whole image.',
+      rendering_and_quality: 'Clean capture with no UI, kept consistent across the whole image.',
+      creative_brief:
+        "Horseback lance joust gameplay: an original first- or third-person capture of a tournament joust, lances lowered, splintering wood and banner-lined lists. Carry it through joust, lowered lances, tilt barrier, banners. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'joust; lowered lances; tilt barrier; banners',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

@@ -316,4 +316,361 @@ export const GENERATED_STYLE_PRESETS = [
         "HighFleet Static Dune War: in-game screenshot language informed by HighFleet, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
+  {
+    id: 'SP12-159',
+    name: 'Bank Vault Crew Heist Capture',
+    displayName: 'Bank Vault Crew Heist Capture',
+    styleAnchors: ['Bank Vault Crew Heist Capture', 'co-op bank heist screenshot', 'vault door'],
+    category: '7. Heists, Horror & Underworld Runs',
+    domain: 'co-op bank heist screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Bank vault crew heist capture: an original first-person co-op heist screenshot of masked crew members drilling a massive vault door under flickering alarm lights.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject as part of a masked crew breaking into a bank vault.',
+      color_and_tone:
+        'Marble whites, gold, and red alarm light, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Flashing alarms and drill sparks, kept consistent across the whole image.',
+      texture_and_material: 'Steel vault door, marble floors and cash stacks.',
+      camera_and_composition:
+        'First-person with crew members in frame, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with tense criminal chaos.',
+      rendering_and_quality:
+        'Clean capture with no HUD text, kept consistent across the whole image.',
+      creative_brief:
+        "Bank vault crew heist capture: an original first-person co-op heist screenshot of masked crew members drilling a massive vault door under flickering alarm lights. Carry it through vault door, masked crew, drill sparks, alarm lights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'vault door; masked crew; drill sparks; alarm lights',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-160',
+    name: 'Casino Floor Infiltration Capture',
+    displayName: 'Casino Floor Infiltration Capture',
+    styleAnchors: [
+      'Casino Floor Infiltration Capture',
+      'stealth casino heist screenshot',
+      'casino floor',
+    ],
+    category: '7. Heists, Horror & Underworld Runs',
+    domain: 'stealth casino heist screenshot',
+    negativePrompt:
+      'readable signs, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Casino floor infiltration capture: an original third-person stealth screenshot of a spy moving across a glittering casino floor, cameras, guards and chandeliers.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject blending into or sneaking across a glittering casino floor.',
+      color_and_tone:
+        'Gold, deep red carpet and green felt, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Chandelier glow and table lamps, kept consistent across the whole image.',
+      texture_and_material:
+        'Velvet, polished brass, chips and cards, kept consistent across the whole image.',
+      camera_and_composition:
+        'Third-person over-the-shoulder across the floor, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with glamorous tension, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean capture with no readable signs, kept consistent across the whole image.',
+      creative_brief:
+        "Casino floor infiltration capture: an original third-person stealth screenshot of a spy moving across a glittering casino floor, cameras, guards and chandeliers. Carry it through casino floor, disguised spy, security cameras, chandeliers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'casino floor; disguised spy; security cameras; chandeliers',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-161',
+    name: 'Found-Footage Night Horror Capture',
+    displayName: 'Found-Footage Night Horror Capture',
+    styleAnchors: [
+      'Found-Footage Night Horror Capture',
+      'camcorder horror game screenshot',
+      'night vision',
+    ],
+    category: '7. Heists, Horror & Underworld Runs',
+    domain: 'camcorder horror game screenshot',
+    negativePrompt:
+      'readable timestamps, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Found-footage night horror capture: an original horror screenshot through a handheld night-vision camcorder, green grain, shaky frame and dark hallways.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject through a shaky night-vision camcorder view.',
+      color_and_tone:
+        'Night-vision green with bright eye reflections, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Infrared glow and deep black corners, kept consistent across the whole image.',
+      texture_and_material:
+        'Heavy grain, motion blur and lens smudges, kept consistent across the whole image.',
+      camera_and_composition:
+        'Handheld first-person with tilted framing, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with raw terror, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Convincing camcorder look with no readable overlays, kept consistent across the whole image.',
+      creative_brief:
+        "Found-footage night horror capture: an original horror screenshot through a handheld night-vision camcorder, green grain, shaky frame and dark hallways. Carry it through night vision, handheld shake, grain, dark hallway. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'night vision; handheld shake; grain; dark hallway',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-162',
+    name: 'Flashlight Corridor Horror Capture',
+    displayName: 'Flashlight Corridor Horror Capture',
+    styleAnchors: [
+      'Flashlight Corridor Horror Capture',
+      'flashlight exploration horror screenshot',
+      'flashlight cone',
+    ],
+    category: '7. Heists, Horror & Underworld Runs',
+    domain: 'flashlight exploration horror screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Flashlight corridor horror capture: an original first-person horror screenshot where a single flashlight cone is the only light in a long decaying corridor.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; reveal the subject only within a single flashlight beam in darkness.',
+      color_and_tone: 'Near black with a warm white flashlight cone.',
+      lighting_and_shadow:
+        'One hard flashlight beam and dense darkness, kept consistent across the whole image.',
+      texture_and_material:
+        'Peeling wallpaper, dust motes and wet floors, kept consistent across the whole image.',
+      camera_and_composition:
+        'First-person down a long corridor, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with creeping dread, kept consistent across the whole image.',
+      rendering_and_quality: 'Clean capture with no HUD, kept consistent across the whole image.',
+      creative_brief:
+        "Flashlight corridor horror capture: an original first-person horror screenshot where a single flashlight cone is the only light in a long decaying corridor. Carry it through flashlight cone, long corridor, darkness, dust motes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'flashlight cone; long corridor; darkness; dust motes',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-163',
+    name: 'Sewer Tunnel Crawl Capture',
+    displayName: 'Sewer Tunnel Crawl Capture',
+    styleAnchors: [
+      'Sewer Tunnel Crawl Capture',
+      'sewer dungeon exploration screenshot',
+      'vaulted brick sewers',
+    ],
+    category: '7. Heists, Horror & Underworld Runs',
+    domain: 'sewer dungeon exploration screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Sewer tunnel crawl capture: an original third-person screenshot of wading through vaulted brick sewers, green glowing water, rats and dripping pipes.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject wading through vaulted brick sewer tunnels.',
+      color_and_tone:
+        'Murky green, brick brown and torch amber, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Torch glow and green water glow, kept consistent across the whole image.',
+      texture_and_material:
+        'Wet brick, grates, rust and sludge, kept consistent across the whole image.',
+      camera_and_composition:
+        'Third-person behind the character down the tunnel, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with grimy menace, kept consistent across the whole image.',
+      rendering_and_quality: 'Clean capture with no HUD, kept consistent across the whole image.',
+      creative_brief:
+        "Sewer tunnel crawl capture: an original third-person screenshot of wading through vaulted brick sewers, green glowing water, rats and dripping pipes. Carry it through vaulted brick sewers, green water, torchlight, rats. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'vaulted brick sewers; green water; torchlight; rats',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-164',
+    name: 'Speakeasy Shootout Capture',
+    displayName: 'Speakeasy Shootout Capture',
+    styleAnchors: [
+      'Speakeasy Shootout Capture',
+      'prohibition gangster game screenshot',
+      'speakeasy',
+    ],
+    category: '7. Heists, Horror & Underworld Runs',
+    domain: 'prohibition gangster game screenshot',
+    negativePrompt:
+      'readable signs, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Speakeasy shootout capture: an original third-person screenshot of a jazz-age speakeasy mid-shootout, flipped tables, shattering bottles and smoky amber light.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; place the subject in a jazz-age speakeasy during a chaotic shootout.',
+      color_and_tone: 'Amber, deep brown wood and brass, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Smoky lamp light and muzzle flashes, kept consistent across the whole image.',
+      texture_and_material:
+        'Wood paneling, glass bottles and velvet, kept consistent across the whole image.',
+      camera_and_composition:
+        'Low third-person behind cover, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with stylish violence without gore.',
+      rendering_and_quality:
+        'Clean capture with no readable signs, kept consistent across the whole image.',
+      creative_brief:
+        "Speakeasy shootout capture: an original third-person screenshot of a jazz-age speakeasy mid-shootout, flipped tables, shattering bottles and smoky amber light. Carry it through speakeasy, flipped tables, shattering bottles, amber smoke. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'speakeasy; flipped tables; shattering bottles; amber smoke',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-165',
+    name: 'Getaway Car Chase Capture',
+    displayName: 'Getaway Car Chase Capture',
+    styleAnchors: ['Getaway Car Chase Capture', 'crime driving game screenshot', 'getaway car'],
+    category: '7. Heists, Horror & Underworld Runs',
+    domain: 'crime driving game screenshot',
+    negativePrompt:
+      'car brand logos, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Getaway car chase capture: an original chase-camera screenshot of a getaway car tearing through city streets, police lights, sparks and flying debris.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject in a getaway car fleeing through city streets.',
+      color_and_tone: 'Night streets with red and blue police light.',
+      lighting_and_shadow:
+        'Headlights, sirens and street lamps, kept consistent across the whole image.',
+      texture_and_material:
+        'Wet asphalt, sparks and crumpled metal, kept consistent across the whole image.',
+      camera_and_composition:
+        'Chase camera behind the car, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with breakneck escape, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean capture with no HUD text, kept consistent across the whole image.',
+      creative_brief:
+        "Getaway car chase capture: an original chase-camera screenshot of a getaway car tearing through city streets, police lights, sparks and flying debris. Carry it through getaway car, police lights, sparks, chase camera. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'getaway car; police lights; sparks; chase camera',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-166',
+    name: 'Museum Laser Grid Heist Capture',
+    displayName: 'Museum Laser Grid Heist Capture',
+    styleAnchors: [
+      'Museum Laser Grid Heist Capture',
+      'museum laser security screenshot',
+      'laser grid',
+    ],
+    category: '7. Heists, Horror & Underworld Runs',
+    domain: 'museum laser security screenshot',
+    negativePrompt:
+      'readable plaques, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Museum laser grid heist capture: an original stealth screenshot of a thief contorting through a grid of red security lasers toward a glowing exhibit case.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject slipping through a web of red security lasers in a museum.',
+      color_and_tone: 'Dark gallery with red laser lines and case glow.',
+      lighting_and_shadow:
+        'Laser beams in fog and exhibit spotlights, kept consistent across the whole image.',
+      texture_and_material:
+        'Marble floors, glass cases and haze, kept consistent across the whole image.',
+      camera_and_composition:
+        'Third-person low angle through the lasers, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with precise nerve, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean capture with no readable plaques, kept consistent across the whole image.',
+      creative_brief:
+        "Museum laser grid heist capture: an original stealth screenshot of a thief contorting through a grid of red security lasers toward a glowing exhibit case. Carry it through laser grid, museum gallery, glowing case, contorting thief. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'laser grid; museum gallery; glowing case; contorting thief',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-167',
+    name: 'Cartoon Ghost-Catcher Capture',
+    displayName: 'Cartoon Ghost-Catcher Capture',
+    styleAnchors: [
+      'Cartoon Ghost-Catcher Capture',
+      'cartoon ghost hunting game screenshot',
+      'cartoon ghosts',
+    ],
+    category: '7. Heists, Horror & Underworld Runs',
+    domain: 'cartoon ghost hunting game screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Cartoon ghost-catcher capture: an original colorful screenshot of a nervous cartoon hero sucking ghosts into a vacuum in a spooky mansion full of glowing spirits.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject catching cartoon ghosts with a glowing vacuum.',
+      color_and_tone: 'Purple and teal spooky palette with glowing ghosts.',
+      lighting_and_shadow:
+        'Flashlight cones and ghost glow, kept consistent across the whole image.',
+      texture_and_material:
+        'Polished wood, cobwebs and translucent ghosts, kept consistent across the whole image.',
+      camera_and_composition:
+        'Third-person in a room full of ghosts, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with playful spooky fun.',
+      rendering_and_quality:
+        'Clean cartoon capture with no HUD, kept consistent across the whole image.',
+      creative_brief:
+        "Cartoon ghost-catcher capture: an original colorful screenshot of a nervous cartoon hero sucking ghosts into a vacuum in a spooky mansion full of glowing spirits. Carry it through cartoon ghosts, vacuum beam, spooky mansion, glowing spirits. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'cartoon ghosts; vacuum beam; spooky mansion; glowing spirits',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-168',
+    name: 'Underworld Boat Crossing Capture',
+    displayName: 'Underworld Boat Crossing Capture',
+    styleAnchors: [
+      'Underworld Boat Crossing Capture',
+      'river of the dead crossing screenshot',
+      'underworld river',
+    ],
+    category: '7. Heists, Horror & Underworld Runs',
+    domain: 'river of the dead crossing screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Underworld boat crossing capture: an original screenshot of a ferry crossing a dark river of souls, lanterns, drifting spirits and a distant gate of the dead.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; place the subject on a ferry crossing a dark underworld river.',
+      color_and_tone: 'Black water, pale ghost blue and lantern gold.',
+      lighting_and_shadow:
+        'Lantern glow and faint spirit light, kept consistent across the whole image.',
+      texture_and_material:
+        'Ancient wood, mist and translucent souls, kept consistent across the whole image.',
+      camera_and_composition: 'Wide view across the river toward the gate.',
+      atmosphere_and_mood: 'Keep the requested mood with solemn otherworldly calm.',
+      rendering_and_quality: 'Clean capture with no HUD, kept consistent across the whole image.',
+      creative_brief:
+        "Underworld boat crossing capture: an original screenshot of a ferry crossing a dark river of souls, lanterns, drifting spirits and a distant gate of the dead. Carry it through underworld river, ferry, lanterns, drifting souls. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'underworld river; ferry; lanterns; drifting souls',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

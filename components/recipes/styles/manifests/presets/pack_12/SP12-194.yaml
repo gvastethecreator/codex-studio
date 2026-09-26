@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP12-194
+packId: pack_12
+name: Ink-Brush Brawler Gameplay
+styleAnchors:
+  - Ink-Brush Brawler Gameplay
+  - sumi-ink action gameplay
+  - ink-painted fighters
+displayName: Ink-Brush Brawler Gameplay
+category: 10. Graphic & Feudal Gameplay
+domain: sumi-ink action gameplay
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - graphic-and-feudal-gameplay
+  - ink-brawler
+  - gameplay-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Ink-brush brawler gameplay: an original action capture where every character and strike is painted in wet black ink with splashes of red, on a rice-paper world.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; render the subject as a wet ink-painted fighter in an ink-wash world.
+  color_and_tone: Black ink, paper white and red accents, kept consistent across the whole image.
+  lighting_and_shadow: Ink density instead of light, kept consistent across the whole image.
+  texture_and_material: Brush splashes, dry brush and paper grain, kept consistent across the whole image.
+  camera_and_composition: Side-on action with splash effects, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with explosive calligraphic energy.
+  rendering_and_quality: Clean ink capture with no UI, kept consistent across the whole image.
+  creative_brief: "Ink-brush brawler gameplay: an original action capture where every character and strike is painted in wet black ink with splashes of red, on a rice-paper world. Carry it through ink-painted fighters, splash strikes, rice paper, red accents. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: ink-painted fighters; splash strikes; rice paper; red accents
+avoidRules:
+  - existing game characters, logos or levels
+  - readable interface text
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: graphic-and-feudal-gameplay
+  categoryName: 10. Graphic & Feudal Gameplay
+  tags:
+    - curation-v2
+    - graphic-and-feudal-gameplay
+    - ink-brawler
+    - gameplay-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: sumi-ink action gameplay

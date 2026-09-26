@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP12-219
+packId: pack_12
+name: Forest Sniper Duel Gameplay
+styleAnchors:
+  - Forest Sniper Duel Gameplay
+  - patient sniper duel gameplay
+  - sniper duel
+displayName: Forest Sniper Duel Gameplay
+category: 11. Psychological & Tactical Gameplay
+domain: patient sniper duel gameplay
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - psychological-and-tactical-gameplay
+  - sniper-duel
+  - gameplay-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Forest sniper duel gameplay: an original first-person capture of a patient sniper duel in an old forest, scope glint, moss-covered hides and drifting mist.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject in a patient sniper duel hidden in an old forest.
+  color_and_tone: Mossy greens, mist grey and bark brown, kept consistent across the whole image.
+  lighting_and_shadow: Soft forest light and a single scope glint.
+  texture_and_material: Moss, ferns, mist and camo cloth, kept consistent across the whole image.
+  camera_and_composition: First-person through a scope or foliage, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with patient hunter tension.
+  rendering_and_quality: Clean capture with no UI, kept consistent across the whole image.
+  creative_brief: "Forest sniper duel gameplay: an original first-person capture of a patient sniper duel in an old forest, scope glint, moss-covered hides and drifting mist. Carry it through sniper duel, scope glint, old forest, mist. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: sniper duel; scope glint; old forest; mist
+avoidRules:
+  - existing game characters, logos or levels
+  - readable interface text
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: psychological-and-tactical-gameplay
+  categoryName: 11. Psychological & Tactical Gameplay
+  tags:
+    - curation-v2
+    - psychological-and-tactical-gameplay
+    - sniper-duel
+    - gameplay-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: patient sniper duel gameplay

@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP12-148
+packId: pack_12
+name: Sailing Regatta Race Capture
+styleAnchors:
+  - Sailing Regatta Race Capture
+  - sailboat racing game screenshot
+  - heeling boats
+displayName: Sailing Regatta Race Capture
+category: 5. Speed, Sport & Competitive Arenas
+domain: sailboat racing game screenshot
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - speed-sport-and-competitive-arenas
+  - regatta
+  - game-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Sailing regatta race capture: an original sailing race screenshot of sleek boats heeling in strong wind, spray, buoys and dramatic sky over the sea.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject racing a sailboat in strong wind and spray.
+  color_and_tone: Deep sea blue, white sails and bright hulls.
+  lighting_and_shadow: Bright sun on spray with cloud shadows, kept consistent across the whole image.
+  texture_and_material: Taut sails, wet decks and waves, kept consistent across the whole image.
+  camera_and_composition: Low angle near the waterline, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with wind-whipped competition, kept consistent across the whole image.
+  rendering_and_quality: Clean capture with no sail numbers, kept consistent across the whole image.
+  creative_brief: "Sailing regatta race capture: an original sailing race screenshot of sleek boats heeling in strong wind, spray, buoys and dramatic sky over the sea. Carry it through heeling boats, spray, buoys, strong wind. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: heeling boats; spray; buoys; strong wind
+avoidRules:
+  - sail numbers
+  - existing game characters, logos or levels
+  - readable interface text
+  - real brand sponsors
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: sail numbers, existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: speed-sport-and-competitive-arenas
+  categoryName: 5. Speed, Sport & Competitive Arenas
+  tags:
+    - video-game-originals-vault
+    - speed-sport-and-competitive-arenas
+    - regatta
+    - game-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: sailboat racing game screenshot

@@ -134,7 +134,7 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
       'An original game-art vault organized by world fantasy and encounter type, from neon night districts and mech frontiers to sieges, hunting grounds, heists, and final setpiece spaces.',
     cardTitle: 'Game Originals',
     cardDescription: 'Game-native worlds, arenas, quests, encounter moods.',
-    presetCount: 138,
+    presetCount: 220,
   },
   {
     id: 'pack_14',

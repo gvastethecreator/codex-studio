@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP12-167
+packId: pack_12
+name: Cartoon Ghost-Catcher Capture
+styleAnchors:
+  - Cartoon Ghost-Catcher Capture
+  - cartoon ghost hunting game screenshot
+  - cartoon ghosts
+displayName: Cartoon Ghost-Catcher Capture
+category: 7. Heists, Horror & Underworld Runs
+domain: cartoon ghost hunting game screenshot
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - heists-horror-and-underworld-runs
+  - ghost-catcher
+  - game-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Cartoon ghost-catcher capture: an original colorful screenshot of a nervous cartoon hero sucking ghosts into a vacuum in a spooky mansion full of glowing spirits.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject catching cartoon ghosts with a glowing vacuum.
+  color_and_tone: Purple and teal spooky palette with glowing ghosts.
+  lighting_and_shadow: Flashlight cones and ghost glow, kept consistent across the whole image.
+  texture_and_material: Polished wood, cobwebs and translucent ghosts, kept consistent across the whole image.
+  camera_and_composition: Third-person in a room full of ghosts, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with playful spooky fun.
+  rendering_and_quality: Clean cartoon capture with no HUD, kept consistent across the whole image.
+  creative_brief: "Cartoon ghost-catcher capture: an original colorful screenshot of a nervous cartoon hero sucking ghosts into a vacuum in a spooky mansion full of glowing spirits. Carry it through cartoon ghosts, vacuum beam, spooky mansion, glowing spirits. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: cartoon ghosts; vacuum beam; spooky mansion; glowing spirits
+avoidRules:
+  - existing game characters, logos or levels
+  - readable interface text
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: heists-horror-and-underworld-runs
+  categoryName: 7. Heists, Horror & Underworld Runs
+  tags:
+    - video-game-originals-vault
+    - heists-horror-and-underworld-runs
+    - ghost-catcher
+    - game-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: cartoon ghost hunting game screenshot

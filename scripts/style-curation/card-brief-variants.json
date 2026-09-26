@@ -13129,7 +13129,7 @@
   ],
   "SP12-062": [
     "On a neon nightlife street, a tough brawler takes a break mid-fight to help an old lady win a prize at the claw machine. No readable text or logo.",
-    "Down a crowded neon alley, every sign is glowing except the one above a narrow door, where a single koi lantern hangs dark. No readable text or logo."
+    "Down a crowded neon alley, a koi-shaped sign has started swimming slowly along the wall, leaving a wet trail of light on the bricks behind it. No readable text or logo."
   ],
   "SP12-071": [
     "In a first-person canal hideout, a resistance member proudly shows off a weapon that is clearly just a crowbar taped to a flashlight. No readable text or logo.",
@@ -13177,7 +13177,7 @@
   ],
   "SP12-108": [
     "In a pulsing rhythm battle, a fearsome boss dances beautifully in perfect time while the hero keeps tripping over the beat. No readable text or logo.",
-    "Pulsing in time with the music, every light on the street flashes with the beat except one streetlight that stays dark and silent. No readable text or logo."
+    "Pulsing in time with the music, the whole street keeps the beat, but the puddles are rippling to a slower rhythm nobody can hear. No readable text or logo."
   ],
   "SP12-006": [
     "In an ornate side-view library, a fearsome book-golem boss is defeated and immediately starts reorganizing its own scattered pages alphabetically. No readable text or logo.",
@@ -13225,7 +13225,7 @@
   ],
   "SP12-110": [
     "After solving a complex light puzzle in a chapel, a player is rewarded with a secret room containing another, even harder light puzzle. No readable text or logo.",
-    "In a dim prism chapel, the light beams are all aimed at the altar except one, bending slowly toward the player. No readable text or logo."
+    "Split by a prism in a dim chapel, a beam of light casts a rainbow on the wall, and one color in it has never been seen before. No readable text or logo."
   ],
   "SP12-111": [
     "In an epic summoning cutscene, a mighty sorcerer calls forth his legendary beast, and a small fluffy sheep appears in the glowing circle. No readable text or logo.",
@@ -13281,7 +13281,7 @@
   ],
   "SP12-033": [
     "In a bright cartoon lawn defense, one sunflower has given up and is sunbathing with sunglasses while the rest of the plants panic. No readable text or logo.",
-    "On a cartoon garden lawn at night, every lane is empty except for the last row, where a single dug-up patch of soil is moving. No readable text or logo."
+    "Lit by moonlight on a cartoon lawn, the scarecrows have quietly rearranged the garden gnomes into a neat circle facing the house. No readable text or logo."
   ],
   "SP12-042": [
     "In a vast brutalist office, a paranormal agent calmly uses telekinesis to make coffee while everything else in the room floats in chaos. No readable text or logo.",
@@ -13309,7 +13309,7 @@
   ],
   "SP12-121": [
     "From an orbital strategy view, a whole planet has been carefully colonized except one small island that belongs entirely to penguins. No readable text or logo.",
-    "Glowing across the night side of a small world seen from orbit, every colony is lit except one city that has just gone dark. No readable text or logo."
+    "Seen from orbit, the planet's night side glows with colony lights, and they have slowly formed the shape of an enormous closed eye. No readable text or logo."
   ],
   "SP12-122": [
     "In a daring asteroid chase, the hero pilot skillfully weaves through the rocks while the enemy pilot is clearly stuck on one. No readable text or logo.",
@@ -13325,7 +13325,7 @@
   ],
   "SP12-125": [
     "Scanning alien plants with great seriousness, an explorer's visor highlights a small shrub that is clearly waving back at her. No readable text or logo.",
-    "Through a visor in an alien forest, the scanner outlines every plant in cyan, except one tall shape it refuses to outline. No readable text or logo."
+    "Through a scanning visor in an alien forest, the analysis outlines a tall creature standing among the trees, and it is also wearing a visor, scanning back. No readable text or logo."
   ],
   "SP12-126": [
     "In a busy side-view station, every crew member is working hard except one who has built a secret hammock in the air ducts. No readable text or logo.",
@@ -13353,7 +13353,7 @@
   ],
   "SP12-035": [
     "On a vertical defense lift, a mighty demon card faces down its opponent, which is a single stubborn goat card that refuses to move. No readable text or logo.",
-    "Deep in an infernal lift shaft, every floor is lit and fighting except the lowest one, which is quietly dark. No readable text or logo."
+    "Rattling down an infernal lift shaft, the elevator stops between floors, and something below is knocking politely on the underside of the floor. No readable text or logo."
   ],
   "SP12-038": [
     "In a naval battle camera view, an enormous warship turns heroically and immediately runs aground on a tiny sandbar with one palm tree. No readable text or logo.",
@@ -13373,7 +13373,7 @@
   ],
   "SP12-076": [
     "In a snowy isometric settlement, the entire clan has gone to war except one villager who is still peacefully fishing through a hole in the ice. No readable text or logo.",
-    "Across a snowy settlement under the northern lights, every house has smoke rising from its chimney except the chieftain's hall. No readable text or logo."
+    "Under the northern lights, the snow around the chieftain's hall has melted into perfect footprints that are much too large for anyone in the clan. No readable text or logo."
   ],
   "SP12-079": [
     "Holding an extraction point, a team of heroic troopers fights off an alien horde while one of them is still trying to read the instruction card on the beacon. No readable text or logo.",
@@ -13393,7 +13393,7 @@
   ],
   "SP12-132": [
     "On a hex wargame board, a grand army is perfectly arranged except for one counter that has wandered into the lake hex. No readable text or logo.",
-    "On a hex map at the end of a war, every unit counter has been removed except one, facing the edge of the board. No readable text or logo."
+    "On a painted hex map after a long war, a small pile of counters has been stacked into a tiny tower in the middle of the sea. No readable text or logo."
   ],
   "SP12-133": [
     "Holding out in a boarded farmhouse at night, a group of survivors has sealed every window except the one with the pet door. No readable text or logo.",
@@ -13401,7 +13401,7 @@
   ],
   "SP12-134": [
     "During a desperate spaceport evacuation, one passenger insists on bringing an enormous potted tree onto the last transport. No readable text or logo.",
-    "On an evacuated spaceport at night, every ship has gone except one small shuttle with its lights on and engines running. No readable text or logo."
+    "Glowing on an evacuated spaceport, the departure board has gone dark, and a lone cleaning robot keeps sweeping the landing pad in slow circles. No readable text or logo."
   ],
   "SP12-135": [
     "Meeting in the middle of the field between two castles, both marching armies stop and sit down together to share a picnic. No readable text or logo.",
@@ -13418,5 +13418,565 @@
   "SP12-138": [
     "On a snowy battlefield, an artillery crew aims carefully and fires a shot that lands exactly on a snowman built by the other side. No readable text or logo.",
     "Across a silent snowfield, a single cannon stands abandoned, and snow has not settled on its still-warm barrel. No readable text or logo."
+  ],
+  "SP12-008": [
+    "In a futuristic hover race, the leading craft suddenly slows to a crawl because a small maintenance drone has wandered onto the track. No readable text or logo.",
+    "Along an empty night circuit, the track lights pulse in sequence toward a finish arch that has no stands and no crowd. No readable text or logo."
+  ],
+  "SP12-017": [
+    "In a comic-shaded skate arena, a deadly roller champion has to pause mid-trick to retie a loose skate lace. No readable text or logo.",
+    "In a silent concrete arena between rounds, a single skate is still rolling slowly across the floor toward the center. No readable text or logo."
+  ],
+  "SP12-021": [
+    "In a colorful open-world race, a driver pulls over at the most beautiful viewpoint in the desert to take a photo while the other racers blast past. No readable text or logo.",
+    "On a desert road at dusk, a lone parked car has its headlights on, pointed at a sand dune that was not there yesterday. No readable text or logo."
+  ],
+  "SP12-031": [
+    "In a tiny pixel tactics grid, a powerful mech misses its attack and instead knocks a harmless cow into the river. No readable text or logo.",
+    "Resting on a small pixel island between turns, the ocean tiles around it have started to drain away, revealing something vast and pale underneath. No readable text or logo."
+  ],
+  "SP12-039": [
+    "In a rhythm-action arena, a powerful villain is defeated because he could not resist tapping his foot to the hero's song. No readable text or logo.",
+    "On an empty cel-shaded stage, the lights still pulse on the beat, and a single spotlight keeps finding a spot where no one is standing. No readable text or logo."
+  ],
+  "SP12-047": [
+    "In a retro arena shooter, a fearsome warrior respawns and immediately falls off the same ledge he fell off the last time. No readable text or logo.",
+    "In an empty gothic arena between matches, a single health orb spins slowly in the air above a jump pad. No readable text or logo."
+  ],
+  "SP12-059": [
+    "In a fierce isometric arena match, a legendary hero ignores the battle entirely to farm a single stubborn creep in the jungle. No readable text or logo.",
+    "Across an isometric battle map at dawn, all the lanes are empty and every tower has turned its crystal toward the river. No readable text or logo."
+  ],
+  "SP12-063": [
+    "In a saturated sci-fi race, the fastest pilot in the galaxy has lost because he stopped to let a family of desert lizards cross. No readable text or logo.",
+    "On a desert racetrack at twilight, one obelisk beside the course is glowing, although the power to the track has been off for hours. No readable text or logo."
+  ],
+  "SP12-065": [
+    "In an ornate duel hall, a heavily armored warrior swings a gigantic sword while his opponent calmly dodges with a teacup in hand. No readable text or logo.",
+    "In a crystal duel hall after the fight, the two weapons lie crossed on the floor, and the crystals reflect a third figure. No readable text or logo."
+  ],
+  "SP12-075": [
+    "In a car soccer match, an entire team of rocket cars chases the ball into the corner, while the ball has quietly rolled into their own goal. No readable text or logo.",
+    "In an empty stadium at night, the giant ball sits motionless on the center mark, and every car is parked facing it. No readable text or logo."
+  ],
+  "SP12-139": [
+    "In a chaotic kart race, the last-place driver finally gets a powerful item and it is a single, very slow bubble. No readable text or logo.",
+    "Crossing the finish line on a bright cartoon track, the winner discovers the podium is already occupied by a tiny kart nobody saw on the course. No readable text or logo."
+  ],
+  "SP12-140": [
+    "Mid-air over a huge set of stairs, a skater realizes too late that the landing is covered in wet cement. No readable text or logo.",
+    "In an empty skate plaza at dusk, one board rolls slowly down the stairs on its own. No readable text or logo."
+  ],
+  "SP12-141": [
+    "Carving through perfect powder, a snowboarder is overtaken by a mountain goat that is somehow also snowboarding. No readable text or logo.",
+    "On a vast white slope, a single set of board tracks leads into a cloud and does not come out the other side. No readable text or logo."
+  ],
+  "SP12-142": [
+    "On a fantasy pinball table, the ball has somehow come to rest perfectly balanced on the tip of a flipper and refuses to move. No readable text or logo.",
+    "On a dark pinball table, the lights flash for a ball that is not there, and the flippers move on their own. No readable text or logo."
+  ],
+  "SP12-143": [
+    "On a side-view fighting stage, two fierce fighters freeze mid-clash because a food vendor has walked between them. No readable text or logo.",
+    "On an empty side-view stage, one fighter stands ready, facing a shadow on the wall that is striking the same pose. No readable text or logo."
+  ],
+  "SP12-144": [
+    "Making a dramatic wrestling entrance, a fearsome champion trips on his own cape at the top of the ramp. No readable text or logo.",
+    "In a dark arena, the spotlight finds the entrance ramp, the pyro fires, and nobody walks out. No readable text or logo."
+  ],
+  "SP12-145": [
+    "Mid-air over a mud jump, a rider realizes his front wheel has come off and is flying ahead of him. No readable text or logo.",
+    "On a muddy track after the race, one set of tire tracks leads off the course into the forest. No readable text or logo."
+  ],
+  "SP12-146": [
+    "In a packed esports arena, the tense final is paused because one player's grandmother has arrived with snacks. No readable text or logo.",
+    "In an empty esports stadium at night, every screen is still showing the final frame, and one booth light is still on. No readable text or logo."
+  ],
+  "SP12-147": [
+    "On a magical golf course, the ball lands in a bunker that turns out to be a very annoyed sand creature. No readable text or logo.",
+    "On a misty magical green, the flag on the final hole is moving toward the golfer on its own. No readable text or logo."
+  ],
+  "SP12-148": [
+    "In a tight regatta, a crew is leading comfortably until a seagull lands on the sail and refuses to leave. No readable text or logo.",
+    "On a calm sea at the end of a race, one sailboat is still out there, its sails full although there is no wind. No readable text or logo."
+  ],
+  "SP12-002": [
+    "In a vast alien jungle seen in first person, a skilled hunter carefully sneaks up on her prey, which turns out to be a small, very curious frog with four eyes. No readable text or logo.",
+    "From first person high in an alien canopy at night, every glowing plant has gone dark in a perfect line leading toward the hunter. No readable text or logo."
+  ],
+  "SP12-010": [
+    "In a smouldering forge, a hardened warrior finally reaches the legendary blacksmith, who only wants to know if he wiped his boots. No readable text or logo.",
+    "Deep in a volcanic forge, a single bonfire burns beside an anvil, and the embers rising from it drift downward. No readable text or logo."
+  ],
+  "SP12-022": [
+    "Warming up in a sparse winter cabin, a survivor carefully cooks her last can of beans while a crow watches from the window with great interest. No readable text or logo.",
+    "Outside a snowbound cabin at night, fresh footprints lead up to the door from the outside, and the door is already bolted from the inside. No readable text or logo."
+  ],
+  "SP12-027": [
+    "In a co-op cave extraction, the whole team has lost the mine cart while one miner is very proudly holding a single tiny gem. No readable text or logo.",
+    "Deep in a dark mineral cave, a mining helmet lamp lies on the ground, still switched on and pointing at an unexplored tunnel. No readable text or logo."
+  ],
+  "SP12-029": [
+    "Exploring a bright alien reef, a diver discovers a fish so dim it keeps swimming into her mask and apologizing. No readable text or logo.",
+    "In a first-person dive at dusk, the reef lights dim one by one as something far below turns toward the surface. No readable text or logo."
+  ],
+  "SP12-034": [
+    "Hidden in perfect camouflage on a canyon ridge, a sniper is found immediately by a friendly mountain goat that wants to share his lunch. No readable text or logo.",
+    "Through a scope across a canyon, a distant figure on the opposite ridge is looking back through a scope of its own. No readable text or logo."
+  ],
+  "SP12-040": [
+    "On a wide hunting plain, a fearsome monster hunter spends the whole morning trying to catch a small rabbit-like creature that keeps outrunning him. No readable text or logo.",
+    "On a quiet plain after a storm, a hunter's camp is intact but the huge tracks around it circle the tents and then vanish. No readable text or logo."
+  ],
+  "SP12-041": [
+    "In a warm painterly forest, a lonely lookout ranger has trained a raccoon to deliver notes to the next tower. No readable text or logo.",
+    "Watching from a painterly lookout at night, the ranger sees a distant tower answer her lamp signals, although that tower was abandoned years ago. No readable text or logo."
+  ],
+  "SP12-067": [
+    "In a massive strategy battle, a whole army waits for the command to charge while the general is still deciding which banner looks best. No readable text or logo.",
+    "Over a misty marsh after a battle, a single banner still flies from a fortress tower, and no one is left to hold it. No readable text or logo."
+  ],
+  "SP12-073": [
+    "After a long heroic climb up a colossal creature, a tiny rider discovers the giant has fallen peacefully asleep in the orchard. No readable text or logo.",
+    "In a vast empty orchard, a colossus lies still like a hill, and the trees growing on its back are in full bloom. No readable text or logo."
+  ],
+  "SP12-149": [
+    "From first person with a drawn bow, a hunter finally has a perfect shot at a boar, which is standing beside a broken wooden fence and looking deeply offended. No readable text or logo.",
+    "From first person in dense forest, the prey the hunter has been stalking is now standing directly behind him, reflected in the bowstring's dew. No readable text or logo."
+  ],
+  "SP12-150": [
+    "Struggling through a blizzard for hours, a traveler finally reaches shelter and discovers it is a very small doghouse. No readable text or logo.",
+    "In a white-out blizzard, the rope tied to the traveler's belt stretches back into the snow and is being gently tugged. No readable text or logo."
+  ],
+  "SP12-151": [
+    "Through a wildlife viewfinder, the rarest creature on the savanna has finally appeared, and it is posing dramatically for the camera. No readable text or logo.",
+    "Through a viewfinder at dusk, the tall grass is perfectly still, except for a line of it that is moving toward the jeep. No readable text or logo."
+  ],
+  "SP12-152": [
+    "On a frozen trail, a sled team is running at full speed while the musher has fallen off and is being dragged behind, cheerfully. No readable text or logo.",
+    "Under the aurora, a sled team stops on the ice and every dog turns to stare at the same empty spot in the trees. No readable text or logo."
+  ],
+  "SP12-153": [
+    "Stopping to fill his canteen among red rock mesas, a rugged rider watches his horse drink the entire river first. No readable text or logo.",
+    "On a vast mesa at sunset, a saddled horse stands alone, and its rider's long shadow stretches across the rock without anyone to cast it. No readable text or logo."
+  ],
+  "SP12-154": [
+    "Deep in the ocean, a diving bell's lamp reveals a fearsome anglerfish that is using its glowing lure to read a book. No readable text or logo.",
+    "Through the porthole of a diving bell, a lamp beam shows the ocean floor, and a line of footprints leads away across the sand. No readable text or logo."
+  ],
+  "SP12-155": [
+    "At the edge of a lava lake, a daring explorer tries to roast marshmallows on a very long stick. No readable text or logo.",
+    "In a quiet crater, the lava has cooled into black crust, except for one glowing crack in the shape of an open eye. No readable text or logo."
+  ],
+  "SP12-156": [
+    "Gliding through a peaceful swamp, a canoeist realizes the log he has been resting his paddle on has blinked. No readable text or logo.",
+    "From a canoe in a still swamp, the ripples spread out from the boat, and a second set of ripples is coming toward it from the mist. No readable text or logo."
+  ],
+  "SP12-157": [
+    "In a survival camp, a castaway has crafted an elaborate throne of logs and sits on it proudly while it is raining. No readable text or logo.",
+    "Around a campfire at night, every crafted tool has been moved from the workbench and laid in a neat circle on the ground. No readable text or logo."
+  ],
+  "SP12-158": [
+    "On the back of an enormous tame beast, a rider tries to steer while the creature is determined to stop and eat every tree. No readable text or logo.",
+    "Crossing a plain at night on a huge tame creature, the rider notices that the beast's eye, looking back at her, is wide open and unblinking. No readable text or logo."
+  ],
+  "SP12-016": [
+    "In a first-person aristocratic mansion, a masked infiltrator hides under a banquet table and a very polite dog brings him a napkin. No readable text or logo.",
+    "Through a keyhole in first person, an ornate study is empty, but the painting on the wall has turned to watch the door. No readable text or logo."
+  ],
+  "SP12-019": [
+    "Deep in a subway station turned market, a survivor haggles over a single bullet with a merchant who clearly knows its value. No readable text or logo.",
+    "In a first-person subway tunnel, the flashlight flickers off and on, and the abandoned train carriage ahead now has one lit window. No readable text or logo."
+  ],
+  "SP12-024": [
+    "In an ancient trap-filled tomb, an explorer carefully avoids every pressure plate and then gets stuck in a very narrow gap. No readable text or logo.",
+    "Deep in a tomb, the explorer's torch lights a wall carving that shows her own face, carved thousands of years ago. No readable text or logo."
+  ],
+  "SP12-030": [
+    "In a hand-inked carnival boss fight, a towering cartoon devil pauses mid-attack because his top hat has fallen off. No readable text or logo.",
+    "On a grainy inked carnival stage after the fight, a single balloon floats up from the empty boss arena with a smiling face drawn on it. No readable text or logo."
+  ],
+  "SP12-049": [
+    "In a gothic side-scrolling castle, a noble vampire hunter finds a roast chicken hidden inside a castle wall and eats it with great ceremony. No readable text or logo.",
+    "In a moonlit 2D castle corridor, a painting of the castle hangs on the wall, and a tiny light is on in one of its windows. No readable text or logo."
+  ],
+  "SP12-050": [
+    "In a retro survival-horror polar station, an android carefully manages her tiny inventory and chooses to keep a single flower instead of ammo. No readable text or logo.",
+    "From a fixed overhead camera, an empty polar station room shows a radio that is still broadcasting a signal nobody sent. No readable text or logo."
+  ],
+  "SP12-054": [
+    "During a dramatic train robbery, the outlaw gang discovers the safe contains only a very large, very angry goose. No readable text or logo.",
+    "Winding through the mountains at night, a train passes a lone station where a conductor waves a lantern at it, and the conductor has no shadow. No readable text or logo."
+  ],
+  "SP12-057": [
+    "On a bright pirate sea, a crew finally digs up the treasure chest, and inside is a very small, very angry crab guarding one coin. No readable text or logo.",
+    "On a calm glowing sea at night, a ship drifts past with its lanterns lit, and its entire crew is playing instruments with no sound. No readable text or logo."
+  ],
+  "SP12-066": [
+    "Aboard a derelict mining ship, an engineer painstakingly repairs a door, which the creature on the other side politely holds open for him. No readable text or logo.",
+    "On an abandoned ship's tram platform, the tram arrives with its doors open and its seats full of neatly folded work suits. No readable text or logo."
+  ],
+  "SP12-069": [
+    "On a crackling radar screen over the desert, an entire enemy fleet turns out to be a single flock of very large birds. No readable text or logo.",
+    "Crackling on a desert radar display, a slow blip is circling the fleet in a perfect spiral that tightens with each sweep. No readable text or logo."
+  ],
+  "SP12-159": [
+    "In a tense bank heist, the masked crew finally cracks the vault and finds it contains only a single, very expensive sandwich. No readable text or logo.",
+    "Inside an open vault after the heist, the crew has left, and the security camera slowly turns to follow a coin rolling across the floor. No readable text or logo."
+  ],
+  "SP12-160": [
+    "In a glamorous casino, a disguised spy accidentally wins the jackpot, drawing every guard in the building to celebrate him. No readable text or logo.",
+    "On an empty casino floor at dawn, one roulette wheel is still spinning slowly, and the ball has not landed. No readable text or logo."
+  ],
+  "SP12-161": [
+    "Through a night-vision camcorder, a terrified explorer realizes the glowing eyes in the dark belong to a family of very curious raccoons. No readable text or logo.",
+    "Through grainy green night vision, a hallway is empty, and a chair in the middle of it has been turned to face the camera. No readable text or logo."
+  ],
+  "SP12-162": [
+    "Creeping down a dark hallway with a flashlight, an investigator finds the source of the terrifying scratching noise: a very small, very determined mouse. No readable text or logo.",
+    "Caught in a single hard beam at the end of the hallway, a mirror reflects the passage behind the investigator, but not the light she is holding. No readable text or logo."
+  ],
+  "SP12-163": [
+    "Deep in a sewer tunnel, a brave adventurer is escorted by a crowd of rats who clearly consider him their new king. No readable text or logo.",
+    "At a junction of four sewer tunnels, three are dark and one is lit by candles that someone has recently placed along the ledge. No readable text or logo."
+  ],
+  "SP12-164": [
+    "In the middle of a speakeasy shootout, the bartender calmly keeps polishing the same glass and refuses to look up. No readable text or logo.",
+    "In an empty speakeasy after the shooting, the piano keeps playing by itself in the smoky amber light. No readable text or logo."
+  ],
+  "SP12-165": [
+    "In a high-speed getaway, the escaping crew stops at a red light because the driver is a stickler for road safety. No readable text or logo.",
+    "On a wet night street, the police cars have all stopped chasing and are parked in a silent line behind the getaway car. No readable text or logo."
+  ],
+  "SP12-166": [
+    "Twisting through a laser grid with incredible skill, a master thief reaches the case and sneezes, triggering every alarm in the city. No readable text or logo.",
+    "In a dark museum gallery, the lasers crisscross an empty display case whose glass is broken from the inside. No readable text or logo."
+  ],
+  "SP12-167": [
+    "In a spooky mansion, a cartoon ghost-catcher accidentally vacuums up the ghost's tiny pet ghost dog and now feels terrible about it. No readable text or logo.",
+    "Hanging in a spooky mansion hallway after every ghost has been caught, the last portrait on the wall is quietly empty. No readable text or logo."
+  ],
+  "SP12-168": [
+    "On the ferry across the river of the dead, a passenger is arguing with the ferryman about the fare and trying to pay with a button. No readable text or logo.",
+    "On a black river under a starless sky, the ferry returns empty, but the lantern at its bow is still being held up. No readable text or logo."
+  ],
+  "SP12-004": [
+    "On the deck of a sunny skyship, a young sky pirate captain gives a heroic speech while the ship's cat steers them straight into a cloud. No readable text or logo.",
+    "Drifting in a sea of clouds at dusk, a lone airship has its sails furled and its deck lamps lit, and no crew moves aboard. No readable text or logo."
+  ],
+  "SP12-012": [
+    "In a pixel farm-town tavern, a farmer proudly presents a prize-winning pumpkin that is bigger than the bar itself. No readable text or logo.",
+    "Closing up a cozy pixel tavern for the night, the innkeeper finds a pair of tiny muddy footprints leading from the fireplace to the cider barrel. No readable text or logo."
+  ],
+  "SP12-036": [
+    "In a spotless white test chamber, a test subject solves the puzzle perfectly, and the testing machine plays a tiny, sarcastic celebration. No readable text or logo.",
+    "In a clean white chamber, the exit door is open, but the observation window above is fogged from the inside by someone breathing. No readable text or logo."
+  ],
+  "SP12-037": [
+    "In a bright toy-box platformer, a small hero triumphantly reaches the flagpole, and the flag is being held by a very proud caterpillar. No readable text or logo.",
+    "On a bright toy-like island, the level is complete, the music has stopped, and one block in the sky still flashes, waiting to be hit. No readable text or logo."
+  ],
+  "SP12-051": [
+    "Building a deck made entirely of one card, a mighty warrior faces a card battle armed only with a very small, very powerful potato. No readable text or logo.",
+    "On an empty bazaar card table, the enemy's hand is laid face down, and one card is slowly turning itself over. No readable text or logo."
+  ],
+  "SP12-058": [
+    "In a rotating pixel puzzle world, a tiny explorer turns the whole level around and finds a small owl who has been standing there waiting for hours. No readable text or logo.",
+    "In a blocky pixel cavern, rotating the world reveals a wall covered in the same symbol, and one of them is glowing. No readable text or logo."
+  ],
+  "SP12-072": [
+    "In a brutal desert rally, a racer stops in the middle of the dunes to help a lost camel find its herd. No readable text or logo.",
+    "In a vast desert at dusk, one set of tire tracks leads straight into a dune and disappears. No readable text or logo."
+  ],
+  "SP12-074": [
+    "Across a candlelit deck table, the ominous dealer is very upset because the player has just played a card of a cat that refuses to fight. No readable text or logo.",
+    "On a dark card table lit by one candle, the dealer's chair is empty, and the cards are still being dealt. No readable text or logo."
+  ],
+  "SP12-077": [
+    "In a cinematic side-view factory escape, a brave worker leads his friends to freedom, and they all politely wait in line at the exit. No readable text or logo.",
+    "In a side-view quarry at night, every worker has escaped, and the conveyor belt keeps carrying empty crates into the dark. No readable text or logo."
+  ],
+  "SP12-080": [
+    "In a punishing ruined keep, a battered warrior finally reaches a bonfire and falls asleep before he can sit down. No readable text or logo.",
+    "Behind a fog wall in a ruined keep, a boss arena is empty, and the only sound is a slow bell tolling from beneath the floor. No readable text or logo."
+  ],
+  "SP12-169": [
+    "Having pushed every heavy stone perfectly into place on the temple floor, an explorer realizes he has trapped himself in the corner. No readable text or logo.",
+    "Settled on a temple puzzle floor, the stone blocks have grown a thin layer of moss overnight, and the moss is shaped like handprints. No readable text or logo."
+  ],
+  "SP12-170": [
+    "In a cluttered hand-drawn room, a clever hero tries to use a banana on every object in sight, including the confused cat. No readable text or logo.",
+    "Tucked into a lovingly drawn attic, one drawer in a tall cabinet is slightly open, and a thin line of light spills out of it. No readable text or logo."
+  ],
+  "SP12-171": [
+    "On a floating tilt maze, a ball has avoided every hole in the board and then stopped perfectly on the edge of the last one. No readable text or logo.",
+    "Suspended in space, a maze board holds a ball that is rolling uphill toward a hole that was not there before. No readable text or logo."
+  ],
+  "SP12-172": [
+    "Inside a massive clock tower, a hero finally fixes the mechanism, and every gear starts turning backward. No readable text or logo.",
+    "Ticking inside a quiet clock tower, the gears have started to turn in a rhythm like a heartbeat that speeds up when the player moves. No readable text or logo."
+  ],
+  "SP12-173": [
+    "On a floating puzzle box diorama, a tiny character solves one side and immediately gets stuck on the underside. No readable text or logo.",
+    "Resting on a table, an intricate puzzle box has been solved, and from inside it comes the faint sound of another box being opened. No readable text or logo."
+  ],
+  "SP12-174": [
+    "Having solved every complex puzzle in a locked room, the player realizes the door was unlocked all along. No readable text or logo.",
+    "In a locked puzzle room, the door slowly opens by itself, and the hallway beyond is another identical locked room. No readable text or logo."
+  ],
+  "SP12-175": [
+    "On a runaway minecart ride, the explorers are screaming while the old miner beside them calmly eats his sandwich. No readable text or logo.",
+    "In a dark mine, an empty minecart rolls out of the tunnel, still carrying a lit lantern. No readable text or logo."
+  ],
+  "SP12-176": [
+    "Racing across a crumbling bridge, a hero reaches safety and then remembers he left his hat on the other side. No readable text or logo.",
+    "On the far side of a chasm, a rope bridge hangs broken, and fresh footprints lead across its missing middle. No readable text or logo."
+  ],
+  "SP12-177": [
+    "On a tropical island, a pirate digs for hours and finds a small note-less box containing another, smaller map. No readable text or logo.",
+    "On a quiet island beach, a freshly dug hole is empty, and footprints lead from it into the sea. No readable text or logo."
+  ],
+  "SP12-178": [
+    "After carefully arranging scrap objects in front of a lamp, a player finally forms the shadow of a majestic stag, but the cat walks in and ruins it. No readable text or logo.",
+    "In a dark room, a lamp casts the shadow of a pile of junk onto the wall, and the shadow is shaped like a person standing behind it. No readable text or logo."
+  ],
+  "SP12-081": [
+    "From an elevated isometric view, a lone barbarian clears an entire dungeon room and then carefully picks up every single gold coin, one by one. No readable text or logo.",
+    "From a fixed elevated view, a dark crypt room is quiet, and a single glowing item lies on the floor beside a coffin with its lid slightly open. No readable text or logo."
+  ],
+  "SP12-082": [
+    "Seen from above in a grim village, a fearsome warrior has stopped fighting to help a villager catch a runaway chicken. No readable text or logo.",
+    "From an elevated view on a rain-soaked road, a lone wanderer's torch lights a roadside shrine where the candles have just been relit. No readable text or logo."
+  ],
+  "SP12-083": [
+    "In a third-person gothic street, a heavily armed hunter carefully checks every corner and is ambushed only by a very small, very aggressive crow. No readable text or logo.",
+    "In a third-person view of a foggy plaza, a lamp post flickers on, revealing a crowd of motionless figures that were not there a moment ago. No readable text or logo."
+  ],
+  "SP12-084": [
+    "In a grim third-person fortress, a warrior hardens his whole body into stone just as an enemy politely offers him a cup of tea. No readable text or logo.",
+    "In a third-person view of a flooded crypt, an empty shell of armor rises from the water on its own. No readable text or logo."
+  ],
+  "SP12-085": [
+    "In a dual-realm gameplay view, a warrior switches worlds to escape an enemy and finds the same enemy waiting there, looking equally surprised. No readable text or logo.",
+    "Seen through a glowing lantern, a quiet chapel shows its other-realm version, where every pew is filled with silent grey figures. No readable text or logo."
+  ],
+  "SP12-086": [
+    "In a first-person manor, a terrified visitor hides inside a wardrobe only to find it already occupied by a very startled owl. No readable text or logo.",
+    "In a first-person view of a castle library, a book slides off the shelf by itself, and the candle flame bends toward the gap. No readable text or logo."
+  ],
+  "SP12-179": [
+    "From an overhead view, a roguelite hero clears a whole crypt room and then accidentally smashes the only healing urn. No readable text or logo.",
+    "From above, a crypt room is cleared and silent, but the door to the next room is breathing slowly in and out. No readable text or logo."
+  ],
+  "SP12-180": [
+    "Breaking a candle in a gothic side-view castle, a hero is startled when a whole roast turkey falls out of it. No readable text or logo.",
+    "In a side-view gothic hall, the portraits on the wall are all facing the hero, and one of them has stepped halfway out of its frame. No readable text or logo."
+  ],
+  "SP12-181": [
+    "In a first-person crypt, a delver carefully checks a treasure chest for traps, and the chest politely opens itself for him. No readable text or logo.",
+    "In a first-person corridor, the torchlight shows the passage ahead, and a second torch appears far down it, moving closer. No readable text or logo."
+  ],
+  "SP12-182": [
+    "Dodging a colossal boss perfectly in a ruined arena, a warrior lands in a deep puddle and is very unhappy about it. No readable text or logo.",
+    "In a boss arena after the battle, the fog wall is gone, and a small figure sits calmly on the boss's empty throne. No readable text or logo."
+  ],
+  "SP12-183": [
+    "In a dungeon full of bullets, a hero dodges everything perfectly and is defeated by a single slow-moving bubble. No readable text or logo.",
+    "In an overhead dungeon room after the battle, the floor is covered with spent bullets arranged into the shape of an arrow. No readable text or logo."
+  ],
+  "SP12-184": [
+    "In a four-player dungeon brawl, three heroes fight bravely while the fourth argues with a treasure chest. No readable text or logo.",
+    "In a quiet dungeon hall, four heroes stand in a circle, all facing inward at a fifth shadow among them. No readable text or logo."
+  ],
+  "SP12-185": [
+    "In a pre-rendered manor, a survivor combines two herbs, a key and a crank, and somehow ends up with a sandwich. No readable text or logo.",
+    "In a pre-rendered hallway, the camera angle changes, and a figure that was in the previous shot is not in this one. No readable text or logo."
+  ],
+  "SP12-186": [
+    "In a dark mansion, a master thief steals everything in the room, including the guard's sandwich. No readable text or logo.",
+    "From a shadowed corner in first person, a guard's lantern sweeps past, and the thief's own shadow is already standing in the light. No readable text or logo."
+  ],
+  "SP12-187": [
+    "In a dark village, a monster hunter finally corners the beast, which turns out to be a very large and very lost goat. No readable text or logo.",
+    "Drifting through a fog-covered village, the smoke from the chimneys is sinking down to the ground and flowing toward the church. No readable text or logo."
+  ],
+  "SP12-188": [
+    "Digging a beautiful new tunnel for their overlord, a team of imps has accidentally broken straight into the heroes' village bakery. No readable text or logo.",
+    "From above, the dungeon is quiet, and a new tunnel appears that no imp has dug. No readable text or logo."
+  ],
+  "SP12-189": [
+    "In an isometric graveyard, a necromancer raises an army of skeleton minions, and one of them immediately runs off to find its missing arm. No readable text or logo.",
+    "In a quiet graveyard, the necromancer has left, but one skeleton minion still stands guard beside his empty chair. No readable text or logo."
+  ],
+  "SP12-190": [
+    "Carefully avoiding every spike in a blocky cave, a tiny explorer is knocked straight into them by a friendly bat. No readable text or logo.",
+    "Deep in a pixel cavern, a shopkeeper's stall stands abandoned, with a single lamp still lit. No readable text or logo."
+  ],
+  "SP12-191": [
+    "Climbing onto a spectral galleon, a brave pirate is greeted by a ghostly crew who only want to know if he brought any fresh fruit. No readable text or logo.",
+    "On the deck of a ghost ship, the wheel is turning slowly, and the green lantern beside it shows no one steering. No readable text or logo."
+  ],
+  "SP12-192": [
+    "Building the most elaborate fort imaginable around a campfire in a twisted forest, a survivor forgot to leave a door. No readable text or logo.",
+    "In a dark forest, the campfire burns brightly, and the shadows it casts point toward the fire instead of away. No readable text or logo."
+  ],
+  "SP12-087": [
+    "In a stylized third-person ruin, a massively muscled warrior tries to squeeze through a narrow doorway designed for normal people. No readable text or logo.",
+    "In a third-person view of a burned-out city, a colossal horse stands saddled in the rubble, its rider nowhere to be seen. No readable text or logo."
+  ],
+  "SP12-088": [
+    "In a dark side-scrolling cathedral, a grim warrior has to wait while a very slow procession of hooded monks shuffles across the path. No readable text or logo.",
+    "Lining a gothic side-scrolling hall, every carved statue weeps stone tears, except one whose painted eyes have quietly closed. No readable text or logo."
+  ],
+  "SP12-089": [
+    "In a fixed-camera throne hall, a proud warrior spends so long admiring his new armor that the demons have sat down to wait. No readable text or logo.",
+    "From a fixed camera angle, a castle courtyard is silent at night, and a paper lantern drifts across it against the wind. No readable text or logo."
+  ],
+  "SP12-090": [
+    "On a crowded battlefield, a heavily armored warrior executes a perfect combo on an enemy, who turns out to be a practice dummy. No readable text or logo.",
+    "Lying together on a fortress rampart after a battle, three helmets from three different factions still have their plumes stirring in the wind. No readable text or logo."
+  ],
+  "SP12-091": [
+    "On a 2.5D fighting stage, a fearsome fighter performs an elaborate special move while his opponent calmly steps aside and waves. No readable text or logo.",
+    "On an empty 2.5D stage, the crowd in the background has frozen mid-cheer, all facing the camera. No readable text or logo."
+  ],
+  "SP12-092": [
+    "In a side-view dungeon party, a heroic leper, a nervous jester and two others argue about who carries the torch. No readable text or logo.",
+    "In a side-view crypt corridor, the torch dims to its last flicker, and a fifth silhouette appears at the back of the party. No readable text or logo."
+  ],
+  "SP12-193": [
+    "In a dramatic cel-shaded duel, two samurai stare each other down for so long that a squirrel has fallen asleep between them. No readable text or logo.",
+    "In a toon-shaded field at dusk, a single samurai stands facing an opponent who is only a shadow cast by nothing. No readable text or logo."
+  ],
+  "SP12-194": [
+    "In an ink-painted brawler, a fearsome warrior slips on his own ink splash and lands in a comical blot. No readable text or logo.",
+    "On a rice-paper battlefield, a single ink figure stands alone, and the brush strokes around it are slowly fading. No readable text or logo."
+  ],
+  "SP12-195": [
+    "In a flashy combo arena, a hero performs an incredible string of attacks on an enemy that has already given up and is holding a white flag. No readable text or logo.",
+    "In an empty gothic arena, the weapon trails of a battle still hang in the air, glowing, with no fighters left. No readable text or logo."
+  ],
+  "SP12-196": [
+    "On the open plains, a skilled horse archer fires perfectly while his horse is clearly more interested in the flowers. No readable text or logo.",
+    "On a vast steppe at dusk, a riderless horse gallops past with a quiver full of arrows still strapped to the saddle. No readable text or logo."
+  ],
+  "SP12-197": [
+    "On a moonlit rooftop, a stealthy ninja is spotted immediately because a stray cat keeps following him and meowing. No readable text or logo.",
+    "Catching on the eaves of a pagoda roof at night, the ninja's grappling hook holds fast, and the rope is being pulled taut from the other end. No readable text or logo."
+  ],
+  "SP12-198": [
+    "In a grand siege from above, the entire army waits at the gate because nobody remembered to bring the battering ram. No readable text or logo.",
+    "From above, the siege has ended, the castle gates stand open, and a single banner inside has been changed in the night. No readable text or logo."
+  ],
+  "SP12-199": [
+    "Inside a shield wall, a nervous soldier realizes he is holding his shield upside down, and his neighbors have noticed. No readable text or logo.",
+    "On a muddy field after the formations have left, a single shield stands upright, planted in the ground facing the empty enemy line. No readable text or logo."
+  ],
+  "SP12-200": [
+    "Having defeated every bandit in a painted feudal village, a heroic warrior is chased off by an angry grandmother with a broom. No readable text or logo.",
+    "Glowing in a painted village at dusk after the villagers have gone indoors, one paper window shows a large shadow moving behind it. No readable text or logo."
+  ],
+  "SP12-201": [
+    "In a moonlit shrine, a spirit hunter prepares a powerful seal, and the mischievous spirit steals her talismans one by one. No readable text or logo.",
+    "At a shrine at midnight, a row of paper lanterns lights up one by one, leading toward the hunter from the dark forest. No readable text or logo."
+  ],
+  "SP12-202": [
+    "Leaping from frame to frame across a printed page, a hero lands in the gutter and gets stuck between two panels. No readable text or logo.",
+    "Filling a printed page, every frame shows the hero, except the last one, which shows only the reader's own room. No readable text or logo."
+  ],
+  "SP12-203": [
+    "In a tense heavy-armor duel, two fighters mirror each other's stances so perfectly that they both give up and shake hands. No readable text or logo.",
+    "In a torchlit courtyard, a single fighter stands in guard, facing her own reflection in a polished shield propped against the wall. No readable text or logo."
+  ],
+  "SP12-204": [
+    "In a feudal tactics grid, a master strategist moves every unit perfectly, except for one archer who is facing the wrong way. No readable text or logo.",
+    "On an isometric temple grid, one tile glows as if selected, but no unit on either side has chosen it. No readable text or logo."
+  ],
+  "SP12-205": [
+    "In a packed arena, a fearsome gladiator is booed by the crowd because he refused to fight a friendly tortoise. No readable text or logo.",
+    "In an empty sunlit arena after the games, the sand has been raked smooth except for a single line of footprints to the center. No readable text or logo."
+  ],
+  "SP12-206": [
+    "At a grand tournament, a proud knight charges down the lists while his horse decides at the last moment to stop for a snack. No readable text or logo.",
+    "At the far end of the lists, the opposing knight is waiting, visor closed, and his horse is standing perfectly still in a cloud of dust. No readable text or logo."
+  ],
+  "SP12-093": [
+    "In a foggy old town lane, a frightened young woman finally finds safety in a shrine, only to be scolded by a very strict fox statue. No readable text or logo.",
+    "On a foggy rural lane, every paper lantern hangs still except one, which sways toward a house whose door has been sealed with red thread. No readable text or logo."
+  ],
+  "SP12-094": [
+    "In a foggy town seen from a high console-era camera, a man carefully examines a locked door for a key and finds only a very small note-less envelope. No readable text or logo.",
+    "From a high fixed angle in heavy fog, a bench by a lake is empty, and fresh wet footprints lead from the water to it. No readable text or logo."
+  ],
+  "SP12-095": [
+    "In a decaying hospital seen over the shoulder, a nervous survivor slowly opens a door and a small cat walks out, deeply unbothered. No readable text or logo.",
+    "Over the shoulder in a foggy apartment corridor, the radio static rises, and a door at the far end has been left slightly open for the player. No readable text or logo."
+  ],
+  "SP12-096": [
+    "Trapped in his own apartment, a man spends the day checking every lock twice, and the only visitor is a moth that keeps knocking on the window. No readable text or logo.",
+    "In a locked apartment, the front door is chained from the inside, and a pair of shoes that are not his stand neatly beside it. No readable text or logo."
+  ],
+  "SP12-097": [
+    "From an overhead jungle view, a highly trained soldier hides perfectly in a pile of leaves, except that a snake has chosen to nap on his back. No readable text or logo.",
+    "From above in a dense jungle, a guard patrol stops at a clearing, and a single abandoned cardboard crate sits in the middle of it. No readable text or logo."
+  ],
+  "SP12-098": [
+    "Carrying a comically tall tower of packages across a rocky valley, a lone courier stops to admire a single tiny flower growing in a crack. No readable text or logo.",
+    "Across a silent grey plain, a line of fresh footprints leads toward a cliff edge, then continues in the air, printed on nothing. No readable text or logo."
+  ],
+  "SP12-207": [
+    "In a fog-drowned town, a nervous visitor reacts to his radio crackling and discovers it is only picking up a very enthusiastic cooking show. No readable text or logo.",
+    "In a fog-filled town square, a phone booth rings, and the fog around it is shaped like someone waiting. No readable text or logo."
+  ],
+  "SP12-208": [
+    "Mid-transformation into a rusted nightmare world, a classroom still has one perfectly normal potted plant that refuses to change. No readable text or logo.",
+    "In a hallway half-peeled into rust and grating, a single door remains untouched, painted bright white and slightly open. No readable text or logo."
+  ],
+  "SP12-209": [
+    "Stuck in an endlessly looping hallway, a visitor gives up and makes himself comfortable, and the hallway looks slightly disappointed. No readable text or logo.",
+    "Reaching the end of the repeating corridor once more, the visitor finds the bathroom door closed this time, and the light underneath it is moving. No readable text or logo."
+  ],
+  "SP12-210": [
+    "Hidden in face paint among the jungle ferns, a soldier is found anyway by a curious monkey that insists on grooming his hair. No readable text or logo.",
+    "In a dense jungle, a patrol stops and stares at a bush that is breathing slightly faster than the others. No readable text or logo."
+  ],
+  "SP12-211": [
+    "In a floodlit base, a stealth operative hides inside a crate that a guard then carefully carries into his own office. No readable text or logo.",
+    "In a quiet floodlit base, every searchlight has turned to point at the same spot on the fence. No readable text or logo."
+  ],
+  "SP12-212": [
+    "Crossing a vast valley with a towering pack, a porter stumbles and every single package lands perfectly stacked beside him. No readable text or logo.",
+    "On a vast empty plain, a lone porter sets down her pack and finds a second set of footprints walking beside her own. No readable text or logo."
+  ],
+  "SP12-213": [
+    "As the room warps around him, a panicking man finds that the only thing that has not changed is his extremely calm goldfish. No readable text or logo.",
+    "In a warped first-person room, the door frame has stretched so tall that the handle is now out of reach. No readable text or logo."
+  ],
+  "SP12-214": [
+    "Exploring an empty asylum, a nervous investigator is terrified by a wheelchair that turns out to be pushed by a bored cat. No readable text or logo.",
+    "In a faded asylum ward, one bed is freshly made with clean sheets among dozens of rotting ones. No readable text or logo."
+  ],
+  "SP12-215": [
+    "Sneaking past every guard at a flooded frontier post, a spy realizes he could have simply walked through the open gate. No readable text or logo.",
+    "At a border post in heavy rain, the guard booth light is on and the radio is playing, but the chair inside is empty and still spinning. No readable text or logo."
+  ],
+  "SP12-216": [
+    "Solving a riddle in an impossible pastel dreamscape, the dreamer opens a fridge and steps through it onto a sunny beach. No readable text or logo.",
+    "In a pastel dream room, every piece of furniture floats except a chair that is stuck firmly to the ceiling. No readable text or logo."
+  ],
+  "SP12-217": [
+    "In a remote lighthouse during a storm, a lonely keeper plays cards with a seagull, and the seagull is winning. No readable text or logo.",
+    "Up in a storm-battered lamp room, the keeper's chair is empty, and wet footprints lead up the spiral stairs from the sea. No readable text or logo."
+  ],
+  "SP12-218": [
+    "Trapped in a repeating evening, a detective has memorized the whole party and now finishes everyone's sentences for them. No readable text or logo.",
+    "In a looping mansion evening, every clock shows midnight except one small clock in the study, which has started counting backward. No readable text or logo."
+  ],
+  "SP12-219": [
+    "In a patient forest sniper duel, both marksmen have waited so long that a bird has built a nest on one of their rifles. No readable text or logo.",
+    "Through a scope in a misty forest, the enemy sniper's hide is empty, and the scope glint is now coming from right behind the player. No readable text or logo."
+  ],
+  "SP12-220": [
+    "On a quiet suburban street at night, a nervous walker is startled by a figure that turns out to be a neighbor in a bathrobe walking a very small dog. No readable text or logo.",
+    "On an empty suburban street, one house has all its lights on and its front door wide open, and a sprinkler is watering the living room carpet. No readable text or logo."
   ]
 }

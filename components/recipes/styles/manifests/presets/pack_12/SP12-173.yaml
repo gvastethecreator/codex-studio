@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP12-173
+packId: pack_12
+name: Rotating Puzzle-Box Diorama Capture
+styleAnchors:
+  - Rotating Puzzle-Box Diorama Capture
+  - isometric puzzle-box diorama screenshot
+  - puzzle box
+displayName: Rotating Puzzle-Box Diorama Capture
+category: 8. Puzzle Chambers & Adventure Setpieces
+domain: isometric puzzle-box diorama screenshot
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - puzzle-chambers-and-adventure-setpieces
+  - puzzle-box
+  - game-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Rotating puzzle-box diorama capture: an original screenshot of a small isometric diorama world on a rotating box, secret panels, tiny rooms and hidden mechanisms.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject tiny inside a rotating diorama puzzle box.
+  color_and_tone: Warm wood tones with soft pastel accents, kept consistent across the whole image.
+  lighting_and_shadow: Soft studio light on a floating diorama, kept consistent across the whole image.
+  texture_and_material: Wood, brass hinges and miniature details, kept consistent across the whole image.
+  camera_and_composition: Isometric view of a floating box diorama, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with tactile secrecy, kept consistent across the whole image.
+  rendering_and_quality: Clean miniature capture with no UI, kept consistent across the whole image.
+  creative_brief: "Rotating puzzle-box diorama capture: an original screenshot of a small isometric diorama world on a rotating box, secret panels, tiny rooms and hidden mechanisms. Carry it through puzzle box, isometric diorama, secret panels, tiny rooms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: puzzle box; isometric diorama; secret panels; tiny rooms
+avoidRules:
+  - existing game characters, logos or levels
+  - readable interface text
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: puzzle-chambers-and-adventure-setpieces
+  categoryName: 8. Puzzle Chambers & Adventure Setpieces
+  tags:
+    - video-game-originals-vault
+    - puzzle-chambers-and-adventure-setpieces
+    - puzzle-box
+    - game-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: isometric puzzle-box diorama screenshot

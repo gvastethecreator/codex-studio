@@ -177,4 +177,507 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP12-207',
+    name: 'Fog-Town Radio Static Gameplay',
+    displayName: 'Fog-Town Radio Static Gameplay',
+    styleAnchors: ['Fog-Town Radio Static Gameplay', 'foggy town horror gameplay', 'thick fog'],
+    category: '11. Psychological & Tactical Gameplay',
+    domain: 'foggy town horror gameplay',
+    negativePrompt:
+      'readable signs, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Fog-town radio static gameplay: an original third-person horror capture of a lone figure in a town drowned in white fog, with a crackling radio warning of nearby threats.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject small in a fog-drowned town with limited visibility.',
+      color_and_tone:
+        'Grey-white fog, rust brown and muted colors, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Flat foggy daylight and a small flashlight, kept consistent across the whole image.',
+      texture_and_material: 'Wet asphalt, rusted signs without text and fog.',
+      camera_and_composition:
+        'Third-person with figures fading into fog, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with lonely creeping dread.',
+      rendering_and_quality:
+        'Clean capture with no readable signs, kept consistent across the whole image.',
+      creative_brief:
+        "Fog-town radio static gameplay: an original third-person horror capture of a lone figure in a town drowned in white fog, with a crackling radio warning of nearby threats. Carry it through thick fog, lone figure, empty town, radio crackle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'thick fog; lone figure; empty town; radio crackle',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-208',
+    name: 'Otherworld Rust Transition Gameplay',
+    displayName: 'Otherworld Rust Transition Gameplay',
+    styleAnchors: [
+      'Otherworld Rust Transition Gameplay',
+      'reality-shift horror gameplay',
+      'peeling reality',
+    ],
+    category: '11. Psychological & Tactical Gameplay',
+    domain: 'reality-shift horror gameplay',
+    negativePrompt:
+      'gore, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Otherworld rust transition gameplay: an original capture of a room peeling away into a rusted otherworld of grates, chains and sirens mid-transformation.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject as the world around them peels into a rusted nightmare version.',
+      color_and_tone:
+        'Rust red, black grates and siren glow, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Flickering light and deep dark grating, kept consistent across the whole image.',
+      texture_and_material:
+        'Peeling walls, rusted metal and chain-link, kept consistent across the whole image.',
+      camera_and_composition:
+        'Third-person as the room transforms, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with dreadful transformation, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean capture without gore or UI, kept consistent across the whole image.',
+      creative_brief:
+        "Otherworld rust transition gameplay: an original capture of a room peeling away into a rusted otherworld of grates, chains and sirens mid-transformation. Carry it through peeling reality, rust grates, sirens, transformation. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'peeling reality; rust grates; sirens; transformation',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-209',
+    name: 'Looping Hallway Horror Gameplay',
+    displayName: 'Looping Hallway Horror Gameplay',
+    styleAnchors: [
+      'Looping Hallway Horror Gameplay',
+      'repeating corridor horror gameplay',
+      'looping hallway',
+    ],
+    category: '11. Psychological & Tactical Gameplay',
+    domain: 'repeating corridor horror gameplay',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Looping hallway horror gameplay: an original first-person capture of an ordinary house hallway that repeats endlessly, each loop subtly more wrong.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; place the subject in an endlessly repeating ordinary hallway.',
+      color_and_tone:
+        'Dim warm hallway light turning sickly, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'A single ceiling lamp and dark doorways, kept consistent across the whole image.',
+      texture_and_material:
+        'Plain wallpaper, wooden floors and framed photos, kept consistent across the whole image.',
+      camera_and_composition:
+        'First-person down an L-shaped hallway, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with mounting wrongness, kept consistent across the whole image.',
+      rendering_and_quality: 'Clean capture with no UI, kept consistent across the whole image.',
+      creative_brief:
+        "Looping hallway horror gameplay: an original first-person capture of an ordinary house hallway that repeats endlessly, each loop subtly more wrong. Carry it through looping hallway, first-person, subtle wrongness, ceiling lamp. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'looping hallway; first-person; subtle wrongness; ceiling lamp',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-210',
+    name: 'Camouflage Jungle Stealth Gameplay',
+    displayName: 'Camouflage Jungle Stealth Gameplay',
+    styleAnchors: [
+      'Camouflage Jungle Stealth Gameplay',
+      'overhead jungle stealth gameplay',
+      'camouflage',
+    ],
+    category: '11. Psychological & Tactical Gameplay',
+    domain: 'overhead jungle stealth gameplay',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Camouflage jungle stealth gameplay: an original overhead or third-person capture of a camouflaged soldier crawling through dense jungle past patrols.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject camouflaged and crawling through jungle past patrols.',
+      color_and_tone: 'Deep jungle greens with mud and sunlight flecks.',
+      lighting_and_shadow: 'Dappled jungle light, kept consistent across the whole image.',
+      texture_and_material:
+        'Ferns, mud, face paint and camo fabric, kept consistent across the whole image.',
+      camera_and_composition:
+        'Low third-person in the undergrowth, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with patient infiltration, kept consistent across the whole image.',
+      rendering_and_quality: 'Clean capture with no UI, kept consistent across the whole image.',
+      creative_brief:
+        "Camouflage jungle stealth gameplay: an original overhead or third-person capture of a camouflaged soldier crawling through dense jungle past patrols. Carry it through camouflage, jungle crawl, patrols, dappled light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'camouflage; jungle crawl; patrols; dappled light',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-211',
+    name: 'Guard Patrol Base Infiltration Gameplay',
+    displayName: 'Guard Patrol Base Infiltration Gameplay',
+    styleAnchors: [
+      'Guard Patrol Base Infiltration Gameplay',
+      'military base stealth gameplay',
+      'searchlights',
+    ],
+    category: '11. Psychological & Tactical Gameplay',
+    domain: 'military base stealth gameplay',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Guard patrol base infiltration gameplay: an original third-person capture of sneaking into a floodlit military base at night, searchlights, fences and guard towers.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject sneaking through a floodlit base at night.',
+      color_and_tone:
+        'Night blue, searchlight white and concrete grey, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Sweeping searchlights and hard shadows, kept consistent across the whole image.',
+      texture_and_material:
+        'Chain-link, concrete and crates, kept consistent across the whole image.',
+      camera_and_composition:
+        'Third-person from behind cover, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with taut stealth, kept consistent across the whole image.',
+      rendering_and_quality: 'Clean capture with no UI, kept consistent across the whole image.',
+      creative_brief:
+        "Guard patrol base infiltration gameplay: an original third-person capture of sneaking into a floodlit military base at night, searchlights, fences and guard towers. Carry it through searchlights, guard towers, fences, night base. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'searchlights; guard towers; fences; night base',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-212',
+    name: 'Cargo-Laden Wasteland Trek Gameplay',
+    displayName: 'Cargo-Laden Wasteland Trek Gameplay',
+    styleAnchors: [
+      'Cargo-Laden Wasteland Trek Gameplay',
+      'burdened traversal gameplay',
+      'towering pack',
+    ],
+    category: '11. Psychological & Tactical Gameplay',
+    domain: 'burdened traversal gameplay',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Cargo-laden wasteland trek gameplay: an original third-person capture of a lone porter carrying a towering pack across a vast empty landscape of rock and moss.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject burdened by a huge pack crossing a vast landscape.',
+      color_and_tone:
+        'Muted greens, grey rock and pale sky, kept consistent across the whole image.',
+      lighting_and_shadow: 'Overcast diffuse light, kept consistent across the whole image.',
+      texture_and_material:
+        'Moss, wet rock, straps and cargo cases, kept consistent across the whole image.',
+      camera_and_composition:
+        'Wide third-person with a small figure, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with lonely perseverance, kept consistent across the whole image.',
+      rendering_and_quality: 'Clean capture with no UI, kept consistent across the whole image.',
+      creative_brief:
+        "Cargo-laden wasteland trek gameplay: an original third-person capture of a lone porter carrying a towering pack across a vast empty landscape of rock and moss. Carry it through towering pack, vast landscape, lone porter, moss and rock. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'towering pack; vast landscape; lone porter; moss and rock',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-213',
+    name: 'Sanity Distortion Gameplay',
+    displayName: 'Sanity Distortion Gameplay',
+    styleAnchors: [
+      'Sanity Distortion Gameplay',
+      'psychological distortion gameplay',
+      'warping walls',
+    ],
+    category: '11. Psychological & Tactical Gameplay',
+    domain: 'psychological distortion gameplay',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        "Sanity distortion gameplay: an original first-person capture where the room warps, walls breathe and colors bleed as the character's grip on reality slips.",
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject in a room that warps and breathes around them.',
+      color_and_tone:
+        'Shifting desaturated tones with bleeding color, kept consistent across the whole image.',
+      lighting_and_shadow: 'Warping light and vignette, kept consistent across the whole image.',
+      texture_and_material:
+        'Stretched walls, doubled edges and chromatic fringes, kept consistent across the whole image.',
+      camera_and_composition:
+        'First-person with warped perspective, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with unravelling perception, kept consistent across the whole image.',
+      rendering_and_quality: 'Clean distortion with no UI, kept consistent across the whole image.',
+      creative_brief:
+        "Sanity distortion gameplay: an original first-person capture where the room warps, walls breathe and colors bleed as the character's grip on reality slips. Carry it through warping walls, breathing room, color bleed, first-person. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'warping walls; breathing room; color bleed; first-person',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-214',
+    name: 'Asylum Walkthrough Gameplay',
+    displayName: 'Asylum Walkthrough Gameplay',
+    styleAnchors: [
+      'Asylum Walkthrough Gameplay',
+      'abandoned asylum exploration gameplay',
+      'abandoned asylum',
+    ],
+    category: '11. Psychological & Tactical Gameplay',
+    domain: 'abandoned asylum exploration gameplay',
+    negativePrompt:
+      'gore, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Asylum walkthrough gameplay: an original first-person capture of exploring an abandoned asylum ward, peeling paint, overturned wheelchairs and daylight through dirty windows.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject exploring an abandoned asylum ward.',
+      color_and_tone:
+        'Faded mint green, rust and grey daylight, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Dirty window light and dark rooms, kept consistent across the whole image.',
+      texture_and_material:
+        'Peeling paint, tiles and old furniture, kept consistent across the whole image.',
+      camera_and_composition:
+        'First-person down a long ward, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with melancholy unease, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean capture without gore or UI, kept consistent across the whole image.',
+      creative_brief:
+        "Asylum walkthrough gameplay: an original first-person capture of exploring an abandoned asylum ward, peeling paint, overturned wheelchairs and daylight through dirty windows. Carry it through abandoned asylum, peeling paint, long ward, dirty windows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'abandoned asylum; peeling paint; long ward; dirty windows',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-215',
+    name: 'Rainy Border Crossing Stealth Gameplay',
+    displayName: 'Rainy Border Crossing Stealth Gameplay',
+    styleAnchors: [
+      'Rainy Border Crossing Stealth Gameplay',
+      'wartime border stealth gameplay',
+      'border post',
+    ],
+    category: '11. Psychological & Tactical Gameplay',
+    domain: 'wartime border stealth gameplay',
+    negativePrompt:
+      'readable signs, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Rainy border crossing stealth gameplay: an original third-person capture of sneaking across a rain-soaked border post, barriers, flashlights and wet mud.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject crossing a rain-soaked border post undetected.',
+      color_and_tone:
+        'Wet greys, yellow floodlights and dark green, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Floodlights through heavy rain, kept consistent across the whole image.',
+      texture_and_material:
+        'Mud, wet wood barriers and rain streaks, kept consistent across the whole image.',
+      camera_and_composition:
+        'Low third-person near the barrier, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with nervous determination, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean capture with no readable signs, kept consistent across the whole image.',
+      creative_brief:
+        "Rainy border crossing stealth gameplay: an original third-person capture of sneaking across a rain-soaked border post, barriers, flashlights and wet mud. Carry it through border post, heavy rain, floodlights, barrier. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'border post; heavy rain; floodlights; barrier',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-216',
+    name: 'Dream-Logic Puzzle Gameplay',
+    displayName: 'Dream-Logic Puzzle Gameplay',
+    styleAnchors: [
+      'Dream-Logic Puzzle Gameplay',
+      'surreal dream puzzle gameplay',
+      'impossible geometry',
+    ],
+    category: '11. Psychological & Tactical Gameplay',
+    domain: 'surreal dream puzzle gameplay',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Dream-logic puzzle gameplay: an original first-person capture of an impossible dream space, doors in the sky, stairs that loop and furniture floating in soft light.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; place the subject in an impossible dream space with looping stairs and floating rooms.',
+      color_and_tone:
+        'Soft pastels with deep dreamy shadows, kept consistent across the whole image.',
+      lighting_and_shadow: 'Soft sourceless light, kept consistent across the whole image.',
+      texture_and_material:
+        'Floating furniture, clouds and impossible geometry, kept consistent across the whole image.',
+      camera_and_composition:
+        'First-person toward impossible architecture, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with gentle surreal wonder.',
+      rendering_and_quality: 'Clean capture with no UI, kept consistent across the whole image.',
+      creative_brief:
+        "Dream-logic puzzle gameplay: an original first-person capture of an impossible dream space, doors in the sky, stairs that loop and furniture floating in soft light. Carry it through impossible geometry, floating furniture, looping stairs, dream light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'impossible geometry; floating furniture; looping stairs; dream light',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-217',
+    name: 'Lighthouse Isolation Gameplay',
+    displayName: 'Lighthouse Isolation Gameplay',
+    styleAnchors: [
+      'Lighthouse Isolation Gameplay',
+      'isolated keeper narrative gameplay',
+      'lighthouse interior',
+    ],
+    category: '11. Psychological & Tactical Gameplay',
+    domain: 'isolated keeper narrative gameplay',
+    negativePrompt:
+      'readable log text, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Lighthouse isolation gameplay: an original first-person narrative capture inside a remote lighthouse during a storm, lamp room, logbook desk and churning sea.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject inside a remote lighthouse during a storm.',
+      color_and_tone:
+        'Storm grey, lamp gold and sea green, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Sweeping lamp beam and lightning, kept consistent across the whole image.',
+      texture_and_material:
+        'Brass lamp, wet stone and wooden desk, kept consistent across the whole image.',
+      camera_and_composition:
+        'First-person from inside the lamp room, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with isolated creeping paranoia.',
+      rendering_and_quality:
+        'Clean capture with no readable log text, kept consistent across the whole image.',
+      creative_brief:
+        "Lighthouse isolation gameplay: an original first-person narrative capture inside a remote lighthouse during a storm, lamp room, logbook desk and churning sea. Carry it through lighthouse interior, storm, sweeping beam, isolation. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'lighthouse interior; storm; sweeping beam; isolation',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-218',
+    name: 'Time-Loop Mansion Mystery Gameplay',
+    displayName: 'Time-Loop Mansion Mystery Gameplay',
+    styleAnchors: [
+      'Time-Loop Mansion Mystery Gameplay',
+      'repeating day mystery gameplay',
+      'time loop',
+    ],
+    category: '11. Psychological & Tactical Gameplay',
+    domain: 'repeating day mystery gameplay',
+    negativePrompt:
+      'readable clock numerals, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Time-loop mansion mystery gameplay: an original third-person capture of a mansion party where the same evening repeats, guests frozen in the same poses and clocks everywhere.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; place the subject in a mansion party trapped in a repeating evening.',
+      color_and_tone:
+        'Warm party gold with cold clock-face silver, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Chandelier light and long shadows, kept consistent across the whole image.',
+      texture_and_material:
+        'Velvet, polished wood and ticking clocks, kept consistent across the whole image.',
+      camera_and_composition:
+        'Third-person through the ballroom crowd, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with mysterious déjà vu.',
+      rendering_and_quality:
+        'Clean capture with no readable clock numerals, kept consistent across the whole image.',
+      creative_brief:
+        "Time-loop mansion mystery gameplay: an original third-person capture of a mansion party where the same evening repeats, guests frozen in the same poses and clocks everywhere. Carry it through time loop, mansion party, clocks, frozen guests. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'time loop; mansion party; clocks; frozen guests',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-219',
+    name: 'Forest Sniper Duel Gameplay',
+    displayName: 'Forest Sniper Duel Gameplay',
+    styleAnchors: ['Forest Sniper Duel Gameplay', 'patient sniper duel gameplay', 'sniper duel'],
+    category: '11. Psychological & Tactical Gameplay',
+    domain: 'patient sniper duel gameplay',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Forest sniper duel gameplay: an original first-person capture of a patient sniper duel in an old forest, scope glint, moss-covered hides and drifting mist.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject in a patient sniper duel hidden in an old forest.',
+      color_and_tone:
+        'Mossy greens, mist grey and bark brown, kept consistent across the whole image.',
+      lighting_and_shadow: 'Soft forest light and a single scope glint.',
+      texture_and_material:
+        'Moss, ferns, mist and camo cloth, kept consistent across the whole image.',
+      camera_and_composition:
+        'First-person through a scope or foliage, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with patient hunter tension.',
+      rendering_and_quality: 'Clean capture with no UI, kept consistent across the whole image.',
+      creative_brief:
+        "Forest sniper duel gameplay: an original first-person capture of a patient sniper duel in an old forest, scope glint, moss-covered hides and drifting mist. Carry it through sniper duel, scope glint, old forest, mist. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'sniper duel; scope glint; old forest; mist',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-220',
+    name: 'Suburban Night Walk Horror Gameplay',
+    displayName: 'Suburban Night Walk Horror Gameplay',
+    styleAnchors: [
+      'Suburban Night Walk Horror Gameplay',
+      'quiet suburb night horror gameplay',
+      'empty suburb',
+    ],
+    category: '11. Psychological & Tactical Gameplay',
+    domain: 'quiet suburb night horror gameplay',
+    negativePrompt:
+      'readable signs, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Suburban night walk horror gameplay: an original third-person capture of walking an empty suburb at night, porch lights, humming streetlamps and something wrong down the block.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject walking an empty suburban street at night.',
+      color_and_tone:
+        'Orange streetlamps, dark lawns and blue night, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Pools of streetlamp light between darkness, kept consistent across the whole image.',
+      texture_and_material: 'Asphalt, lawns, picket fences and mailboxes without text.',
+      camera_and_composition:
+        'Third-person down the middle of the street, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with quiet domestic unease.',
+      rendering_and_quality:
+        'Clean capture with no readable signs, kept consistent across the whole image.',
+      creative_brief:
+        "Suburban night walk horror gameplay: an original third-person capture of walking an empty suburb at night, porch lights, humming streetlamps and something wrong down the block. Carry it through empty suburb, streetlamps, porch lights, night walk. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'empty suburb; streetlamps; porch lights; night walk',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

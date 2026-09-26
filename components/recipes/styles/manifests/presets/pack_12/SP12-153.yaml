@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP12-153
+packId: pack_12
+name: Canyon Horseback Frontier Capture
+styleAnchors:
+  - Canyon Horseback Frontier Capture
+  - western frontier riding screenshot
+  - horseback rider
+displayName: Canyon Horseback Frontier Capture
+category: 6. Wilderness Hunts & Harsh Frontiers
+domain: western frontier riding screenshot
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - wilderness-hunts-and-harsh-frontiers
+  - canyon-horse
+  - game-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Canyon horseback frontier capture: an original third-person screenshot of a rider on horseback crossing red canyon country, vast mesas and dust at golden hour.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject on horseback crossing a vast red canyon landscape.
+  color_and_tone: Red rock, sage green and golden sky, kept consistent across the whole image.
+  lighting_and_shadow: Low golden sun and long shadows, kept consistent across the whole image.
+  texture_and_material: Red rock, dust, leather tack and scrub, kept consistent across the whole image.
+  camera_and_composition: Wide cinematic view with rider small, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with lonesome frontier grandeur.
+  rendering_and_quality: Clean capture with no HUD, kept consistent across the whole image.
+  creative_brief: "Canyon horseback frontier capture: an original third-person screenshot of a rider on horseback crossing red canyon country, vast mesas and dust at golden hour. Carry it through horseback rider, red canyons, mesas, golden hour. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: horseback rider; red canyons; mesas; golden hour
+avoidRules:
+  - existing game characters, logos or levels
+  - readable interface text
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: wilderness-hunts-and-harsh-frontiers
+  categoryName: 6. Wilderness Hunts & Harsh Frontiers
+  tags:
+    - video-game-originals-vault
+    - wilderness-hunts-and-harsh-frontiers
+    - canyon-horse
+    - game-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: western frontier riding screenshot

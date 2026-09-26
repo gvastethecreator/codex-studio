@@ -3,7 +3,7 @@
     {
       "id": "pack_12",
       "name": "Video Game Originals Vault",
-      "presetCount": 138
+      "presetCount": 220
     }
   ],
   "presets": [
@@ -1209,6 +1209,222 @@
       "searchableText": "sp12-069 highfleet static dune war highfleet gameplay screenshots 7. heists, horror & underworld runs stealth & horror capture pack_12 video game originals vault heists-horror-and-underworld-runs video-game-originals-vault heists-horror-and-underworld-runs"
     },
     {
+      "id": "SP12-159",
+      "name": "Bank Vault Crew Heist Capture",
+      "styleAnchors": [
+        "Bank Vault Crew Heist Capture",
+        "co-op bank heist screenshot",
+        "vault door"
+      ],
+      "ref": "pack_12/SP12-159.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "heists-horror-and-underworld-runs",
+      "categoryName": "7. Heists, Horror & Underworld Runs",
+      "domain": "co-op bank heist screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "heists-horror-and-underworld-runs",
+        "co-op-bank-heist-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-159 bank vault crew heist capture co-op bank heist screenshot vault door 7. heists, horror & underworld runs stealth & horror capture co-op bank heist screenshot pack_12 video game originals vault heists-horror-and-underworld-runs video-game-originals-vault heists-horror-and-underworld-runs co-op-bank-heist-screenshot"
+    },
+    {
+      "id": "SP12-160",
+      "name": "Casino Floor Infiltration Capture",
+      "styleAnchors": [
+        "Casino Floor Infiltration Capture",
+        "stealth casino heist screenshot",
+        "casino floor"
+      ],
+      "ref": "pack_12/SP12-160.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "heists-horror-and-underworld-runs",
+      "categoryName": "7. Heists, Horror & Underworld Runs",
+      "domain": "stealth casino heist screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "heists-horror-and-underworld-runs",
+        "stealth-casino-heist-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-160 casino floor infiltration capture stealth casino heist screenshot casino floor 7. heists, horror & underworld runs stealth & horror capture stealth casino heist screenshot pack_12 video game originals vault heists-horror-and-underworld-runs video-game-originals-vault heists-horror-and-underworld-runs stealth-casino-heist-screenshot"
+    },
+    {
+      "id": "SP12-161",
+      "name": "Found-Footage Night Horror Capture",
+      "styleAnchors": [
+        "Found-Footage Night Horror Capture",
+        "camcorder horror game screenshot",
+        "night vision"
+      ],
+      "ref": "pack_12/SP12-161.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "heists-horror-and-underworld-runs",
+      "categoryName": "7. Heists, Horror & Underworld Runs",
+      "domain": "camcorder horror game screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "heists-horror-and-underworld-runs",
+        "camcorder-horror-game-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-161 found-footage night horror capture camcorder horror game screenshot night vision 7. heists, horror & underworld runs stealth & horror capture camcorder horror game screenshot pack_12 video game originals vault heists-horror-and-underworld-runs video-game-originals-vault heists-horror-and-underworld-runs camcorder-horror-game-screenshot"
+    },
+    {
+      "id": "SP12-162",
+      "name": "Flashlight Corridor Horror Capture",
+      "styleAnchors": [
+        "Flashlight Corridor Horror Capture",
+        "flashlight exploration horror screenshot",
+        "flashlight cone"
+      ],
+      "ref": "pack_12/SP12-162.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "heists-horror-and-underworld-runs",
+      "categoryName": "7. Heists, Horror & Underworld Runs",
+      "domain": "flashlight exploration horror screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "heists-horror-and-underworld-runs",
+        "flashlight-exploration-horror-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-162 flashlight corridor horror capture flashlight exploration horror screenshot flashlight cone 7. heists, horror & underworld runs stealth & horror capture flashlight exploration horror screenshot pack_12 video game originals vault heists-horror-and-underworld-runs video-game-originals-vault heists-horror-and-underworld-runs flashlight-exploration-horror-screenshot"
+    },
+    {
+      "id": "SP12-163",
+      "name": "Sewer Tunnel Crawl Capture",
+      "styleAnchors": [
+        "Sewer Tunnel Crawl Capture",
+        "sewer dungeon exploration screenshot",
+        "vaulted brick sewers"
+      ],
+      "ref": "pack_12/SP12-163.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "heists-horror-and-underworld-runs",
+      "categoryName": "7. Heists, Horror & Underworld Runs",
+      "domain": "sewer dungeon exploration screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "heists-horror-and-underworld-runs",
+        "sewer-dungeon-exploration-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-163 sewer tunnel crawl capture sewer dungeon exploration screenshot vaulted brick sewers 7. heists, horror & underworld runs stealth & horror capture sewer dungeon exploration screenshot pack_12 video game originals vault heists-horror-and-underworld-runs video-game-originals-vault heists-horror-and-underworld-runs sewer-dungeon-exploration-screenshot"
+    },
+    {
+      "id": "SP12-164",
+      "name": "Speakeasy Shootout Capture",
+      "styleAnchors": [
+        "Speakeasy Shootout Capture",
+        "prohibition gangster game screenshot",
+        "speakeasy"
+      ],
+      "ref": "pack_12/SP12-164.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "heists-horror-and-underworld-runs",
+      "categoryName": "7. Heists, Horror & Underworld Runs",
+      "domain": "prohibition gangster game screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "heists-horror-and-underworld-runs",
+        "prohibition-gangster-game-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-164 speakeasy shootout capture prohibition gangster game screenshot speakeasy 7. heists, horror & underworld runs stealth & horror capture prohibition gangster game screenshot pack_12 video game originals vault heists-horror-and-underworld-runs video-game-originals-vault heists-horror-and-underworld-runs prohibition-gangster-game-screenshot"
+    },
+    {
+      "id": "SP12-165",
+      "name": "Getaway Car Chase Capture",
+      "styleAnchors": ["Getaway Car Chase Capture", "crime driving game screenshot", "getaway car"],
+      "ref": "pack_12/SP12-165.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "heists-horror-and-underworld-runs",
+      "categoryName": "7. Heists, Horror & Underworld Runs",
+      "domain": "crime driving game screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "heists-horror-and-underworld-runs",
+        "crime-driving-game-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-165 getaway car chase capture crime driving game screenshot getaway car 7. heists, horror & underworld runs stealth & horror capture crime driving game screenshot pack_12 video game originals vault heists-horror-and-underworld-runs video-game-originals-vault heists-horror-and-underworld-runs crime-driving-game-screenshot"
+    },
+    {
+      "id": "SP12-166",
+      "name": "Museum Laser Grid Heist Capture",
+      "styleAnchors": [
+        "Museum Laser Grid Heist Capture",
+        "museum laser security screenshot",
+        "laser grid"
+      ],
+      "ref": "pack_12/SP12-166.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "heists-horror-and-underworld-runs",
+      "categoryName": "7. Heists, Horror & Underworld Runs",
+      "domain": "museum laser security screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "heists-horror-and-underworld-runs",
+        "museum-laser-security-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-166 museum laser grid heist capture museum laser security screenshot laser grid 7. heists, horror & underworld runs stealth & horror capture museum laser security screenshot pack_12 video game originals vault heists-horror-and-underworld-runs video-game-originals-vault heists-horror-and-underworld-runs museum-laser-security-screenshot"
+    },
+    {
+      "id": "SP12-167",
+      "name": "Cartoon Ghost-Catcher Capture",
+      "styleAnchors": [
+        "Cartoon Ghost-Catcher Capture",
+        "cartoon ghost hunting game screenshot",
+        "cartoon ghosts"
+      ],
+      "ref": "pack_12/SP12-167.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "heists-horror-and-underworld-runs",
+      "categoryName": "7. Heists, Horror & Underworld Runs",
+      "domain": "cartoon ghost hunting game screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "heists-horror-and-underworld-runs",
+        "cartoon-ghost-hunting-game-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-167 cartoon ghost-catcher capture cartoon ghost hunting game screenshot cartoon ghosts 7. heists, horror & underworld runs stealth & horror capture cartoon ghost hunting game screenshot pack_12 video game originals vault heists-horror-and-underworld-runs video-game-originals-vault heists-horror-and-underworld-runs cartoon-ghost-hunting-game-screenshot"
+    },
+    {
+      "id": "SP12-168",
+      "name": "Underworld Boat Crossing Capture",
+      "styleAnchors": [
+        "Underworld Boat Crossing Capture",
+        "river of the dead crossing screenshot",
+        "underworld river"
+      ],
+      "ref": "pack_12/SP12-168.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "heists-horror-and-underworld-runs",
+      "categoryName": "7. Heists, Horror & Underworld Runs",
+      "domain": "river of the dead crossing screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "heists-horror-and-underworld-runs",
+        "river-of-the-dead-crossing-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-168 underworld boat crossing capture river of the dead crossing screenshot underworld river 7. heists, horror & underworld runs stealth & horror capture river of the dead crossing screenshot pack_12 video game originals vault heists-horror-and-underworld-runs video-game-originals-vault heists-horror-and-underworld-runs river-of-the-dead-crossing-screenshot"
+    },
+    {
       "id": "SP12-070",
       "name": "Wild Shrine Bow Trial",
       "styleAnchors": [
@@ -1485,6 +1701,222 @@
       "searchableText": "sp12-073 colossus orchard hunt shadow of the colossus gameplay screenshots 6. wilderness hunts & harsh frontiers frontier game capture pack_12 video game originals vault wilderness-hunts-and-harsh-frontiers video-game-originals-vault wilderness-hunts-and-harsh-frontiers"
     },
     {
+      "id": "SP12-149",
+      "name": "Bow Hunt Stalking Capture",
+      "styleAnchors": [
+        "Bow Hunt Stalking Capture",
+        "first-person bow hunting screenshot",
+        "drawn bow"
+      ],
+      "ref": "pack_12/SP12-149.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "wilderness-hunts-and-harsh-frontiers",
+      "categoryName": "6. Wilderness Hunts & Harsh Frontiers",
+      "domain": "first-person bow hunting screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "wilderness-hunts-and-harsh-frontiers",
+        "first-person-bow-hunting-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-149 bow hunt stalking capture first-person bow hunting screenshot drawn bow 6. wilderness hunts & harsh frontiers frontier game capture first-person bow hunting screenshot pack_12 video game originals vault wilderness-hunts-and-harsh-frontiers video-game-originals-vault wilderness-hunts-and-harsh-frontiers first-person-bow-hunting-screenshot"
+    },
+    {
+      "id": "SP12-150",
+      "name": "Blizzard Trek Survival Capture",
+      "styleAnchors": [
+        "Blizzard Trek Survival Capture",
+        "snowstorm survival trek screenshot",
+        "blizzard"
+      ],
+      "ref": "pack_12/SP12-150.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "wilderness-hunts-and-harsh-frontiers",
+      "categoryName": "6. Wilderness Hunts & Harsh Frontiers",
+      "domain": "snowstorm survival trek screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "wilderness-hunts-and-harsh-frontiers",
+        "snowstorm-survival-trek-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-150 blizzard trek survival capture snowstorm survival trek screenshot blizzard 6. wilderness hunts & harsh frontiers frontier game capture snowstorm survival trek screenshot pack_12 video game originals vault wilderness-hunts-and-harsh-frontiers video-game-originals-vault wilderness-hunts-and-harsh-frontiers snowstorm-survival-trek-screenshot"
+    },
+    {
+      "id": "SP12-151",
+      "name": "Safari Photo Expedition Capture",
+      "styleAnchors": [
+        "Safari Photo Expedition Capture",
+        "wildlife photography game screenshot",
+        "viewfinder frame"
+      ],
+      "ref": "pack_12/SP12-151.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "wilderness-hunts-and-harsh-frontiers",
+      "categoryName": "6. Wilderness Hunts & Harsh Frontiers",
+      "domain": "wildlife photography game screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "wilderness-hunts-and-harsh-frontiers",
+        "wildlife-photography-game-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-151 safari photo expedition capture wildlife photography game screenshot viewfinder frame 6. wilderness hunts & harsh frontiers frontier game capture wildlife photography game screenshot pack_12 video game originals vault wilderness-hunts-and-harsh-frontiers video-game-originals-vault wilderness-hunts-and-harsh-frontiers wildlife-photography-game-screenshot"
+    },
+    {
+      "id": "SP12-152",
+      "name": "Dog-Sled Frontier Run Capture",
+      "styleAnchors": ["Dog-Sled Frontier Run Capture", "sled dog race screenshot", "sled dogs"],
+      "ref": "pack_12/SP12-152.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "wilderness-hunts-and-harsh-frontiers",
+      "categoryName": "6. Wilderness Hunts & Harsh Frontiers",
+      "domain": "sled dog race screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "wilderness-hunts-and-harsh-frontiers",
+        "sled-dog-race-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-152 dog-sled frontier run capture sled dog race screenshot sled dogs 6. wilderness hunts & harsh frontiers frontier game capture sled dog race screenshot pack_12 video game originals vault wilderness-hunts-and-harsh-frontiers video-game-originals-vault wilderness-hunts-and-harsh-frontiers sled-dog-race-screenshot"
+    },
+    {
+      "id": "SP12-153",
+      "name": "Canyon Horseback Frontier Capture",
+      "styleAnchors": [
+        "Canyon Horseback Frontier Capture",
+        "western frontier riding screenshot",
+        "horseback rider"
+      ],
+      "ref": "pack_12/SP12-153.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "wilderness-hunts-and-harsh-frontiers",
+      "categoryName": "6. Wilderness Hunts & Harsh Frontiers",
+      "domain": "western frontier riding screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "wilderness-hunts-and-harsh-frontiers",
+        "western-frontier-riding-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-153 canyon horseback frontier capture western frontier riding screenshot horseback rider 6. wilderness hunts & harsh frontiers frontier game capture western frontier riding screenshot pack_12 video game originals vault wilderness-hunts-and-harsh-frontiers video-game-originals-vault wilderness-hunts-and-harsh-frontiers western-frontier-riding-screenshot"
+    },
+    {
+      "id": "SP12-154",
+      "name": "Diving Bell Descent Capture",
+      "styleAnchors": [
+        "Diving Bell Descent Capture",
+        "deep-sea diving bell screenshot",
+        "brass diving bell"
+      ],
+      "ref": "pack_12/SP12-154.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "wilderness-hunts-and-harsh-frontiers",
+      "categoryName": "6. Wilderness Hunts & Harsh Frontiers",
+      "domain": "deep-sea diving bell screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "wilderness-hunts-and-harsh-frontiers",
+        "deep-sea-diving-bell-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-154 diving bell descent capture deep-sea diving bell screenshot brass diving bell 6. wilderness hunts & harsh frontiers frontier game capture deep-sea diving bell screenshot pack_12 video game originals vault wilderness-hunts-and-harsh-frontiers video-game-originals-vault wilderness-hunts-and-harsh-frontiers deep-sea-diving-bell-screenshot"
+    },
+    {
+      "id": "SP12-155",
+      "name": "Volcanic Crater Expedition Capture",
+      "styleAnchors": [
+        "Volcanic Crater Expedition Capture",
+        "volcano exploration screenshot",
+        "volcanic crater"
+      ],
+      "ref": "pack_12/SP12-155.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "wilderness-hunts-and-harsh-frontiers",
+      "categoryName": "6. Wilderness Hunts & Harsh Frontiers",
+      "domain": "volcano exploration screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "wilderness-hunts-and-harsh-frontiers",
+        "volcano-exploration-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-155 volcanic crater expedition capture volcano exploration screenshot volcanic crater 6. wilderness hunts & harsh frontiers frontier game capture volcano exploration screenshot pack_12 video game originals vault wilderness-hunts-and-harsh-frontiers video-game-originals-vault wilderness-hunts-and-harsh-frontiers volcano-exploration-screenshot"
+    },
+    {
+      "id": "SP12-156",
+      "name": "Swamp Canoe Tracker Capture",
+      "styleAnchors": [
+        "Swamp Canoe Tracker Capture",
+        "swamp canoe exploration screenshot",
+        "canoe bow"
+      ],
+      "ref": "pack_12/SP12-156.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "wilderness-hunts-and-harsh-frontiers",
+      "categoryName": "6. Wilderness Hunts & Harsh Frontiers",
+      "domain": "swamp canoe exploration screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "wilderness-hunts-and-harsh-frontiers",
+        "swamp-canoe-exploration-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-156 swamp canoe tracker capture swamp canoe exploration screenshot canoe bow 6. wilderness hunts & harsh frontiers frontier game capture swamp canoe exploration screenshot pack_12 video game originals vault wilderness-hunts-and-harsh-frontiers video-game-originals-vault wilderness-hunts-and-harsh-frontiers swamp-canoe-exploration-screenshot"
+    },
+    {
+      "id": "SP12-157",
+      "name": "Crafting Camp Base Capture",
+      "styleAnchors": [
+        "Crafting Camp Base Capture",
+        "survival crafting base screenshot",
+        "crafted base"
+      ],
+      "ref": "pack_12/SP12-157.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "wilderness-hunts-and-harsh-frontiers",
+      "categoryName": "6. Wilderness Hunts & Harsh Frontiers",
+      "domain": "survival crafting base screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "wilderness-hunts-and-harsh-frontiers",
+        "survival-crafting-base-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-157 crafting camp base capture survival crafting base screenshot crafted base 6. wilderness hunts & harsh frontiers frontier game capture survival crafting base screenshot pack_12 video game originals vault wilderness-hunts-and-harsh-frontiers video-game-originals-vault wilderness-hunts-and-harsh-frontiers survival-crafting-base-screenshot"
+    },
+    {
+      "id": "SP12-158",
+      "name": "Giant Beast Riding Capture",
+      "styleAnchors": [
+        "Giant Beast Riding Capture",
+        "riding a huge creature screenshot",
+        "enormous mount"
+      ],
+      "ref": "pack_12/SP12-158.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "wilderness-hunts-and-harsh-frontiers",
+      "categoryName": "6. Wilderness Hunts & Harsh Frontiers",
+      "domain": "riding a huge creature screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "wilderness-hunts-and-harsh-frontiers",
+        "riding-a-huge-creature-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-158 giant beast riding capture riding a huge creature screenshot enormous mount 6. wilderness hunts & harsh frontiers frontier game capture riding a huge creature screenshot pack_12 video game originals vault wilderness-hunts-and-harsh-frontiers video-game-originals-vault wilderness-hunts-and-harsh-frontiers riding-a-huge-creature-screenshot"
+    },
+    {
       "id": "SP12-074",
       "name": "Candlebone Deck Table",
       "styleAnchors": [
@@ -1513,6 +1945,222 @@
       "tags": ["video-game-originals-vault", "speed-sport-and-competitive-arenas"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp12-075 rocket league cobalt docks rocket league gameplay screenshots 5. speed, sport & competitive arenas speed & arena capture pack_12 video game originals vault speed-sport-and-competitive-arenas video-game-originals-vault speed-sport-and-competitive-arenas"
+    },
+    {
+      "id": "SP12-139",
+      "name": "Kart Racing Item Chaos Capture",
+      "styleAnchors": [
+        "Kart Racing Item Chaos Capture",
+        "cartoon kart racing screenshot",
+        "cartoon karts"
+      ],
+      "ref": "pack_12/SP12-139.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "speed-sport-and-competitive-arenas",
+      "categoryName": "5. Speed, Sport & Competitive Arenas",
+      "domain": "cartoon kart racing screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "speed-sport-and-competitive-arenas",
+        "cartoon-kart-racing-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-139 kart racing item chaos capture cartoon kart racing screenshot cartoon karts 5. speed, sport & competitive arenas speed & arena capture cartoon kart racing screenshot pack_12 video game originals vault speed-sport-and-competitive-arenas video-game-originals-vault speed-sport-and-competitive-arenas cartoon-kart-racing-screenshot"
+    },
+    {
+      "id": "SP12-140",
+      "name": "Street Skate Trick Line Capture",
+      "styleAnchors": [
+        "Street Skate Trick Line Capture",
+        "skateboarding game screenshot",
+        "mid-air trick"
+      ],
+      "ref": "pack_12/SP12-140.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "speed-sport-and-competitive-arenas",
+      "categoryName": "5. Speed, Sport & Competitive Arenas",
+      "domain": "skateboarding game screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "speed-sport-and-competitive-arenas",
+        "skateboarding-game-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-140 street skate trick line capture skateboarding game screenshot mid-air trick 5. speed, sport & competitive arenas speed & arena capture skateboarding game screenshot pack_12 video game originals vault speed-sport-and-competitive-arenas video-game-originals-vault speed-sport-and-competitive-arenas skateboarding-game-screenshot"
+    },
+    {
+      "id": "SP12-141",
+      "name": "Backcountry Snowboard Descent Capture",
+      "styleAnchors": [
+        "Backcountry Snowboard Descent Capture",
+        "snowboard mountain game screenshot",
+        "powder spray"
+      ],
+      "ref": "pack_12/SP12-141.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "speed-sport-and-competitive-arenas",
+      "categoryName": "5. Speed, Sport & Competitive Arenas",
+      "domain": "snowboard mountain game screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "speed-sport-and-competitive-arenas",
+        "snowboard-mountain-game-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-141 backcountry snowboard descent capture snowboard mountain game screenshot powder spray 5. speed, sport & competitive arenas speed & arena capture snowboard mountain game screenshot pack_12 video game originals vault speed-sport-and-competitive-arenas video-game-originals-vault speed-sport-and-competitive-arenas snowboard-mountain-game-screenshot"
+    },
+    {
+      "id": "SP12-142",
+      "name": "Digital Pinball Table Capture",
+      "styleAnchors": [
+        "Digital Pinball Table Capture",
+        "fantasy pinball game screenshot",
+        "pinball table"
+      ],
+      "ref": "pack_12/SP12-142.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "speed-sport-and-competitive-arenas",
+      "categoryName": "5. Speed, Sport & Competitive Arenas",
+      "domain": "fantasy pinball game screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "speed-sport-and-competitive-arenas",
+        "fantasy-pinball-game-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-142 digital pinball table capture fantasy pinball game screenshot pinball table 5. speed, sport & competitive arenas speed & arena capture fantasy pinball game screenshot pack_12 video game originals vault speed-sport-and-competitive-arenas video-game-originals-vault speed-sport-and-competitive-arenas fantasy-pinball-game-screenshot"
+    },
+    {
+      "id": "SP12-143",
+      "name": "Versus Stage Fighter Capture",
+      "styleAnchors": [
+        "Versus Stage Fighter Capture",
+        "two-player fighting game screenshot",
+        "two fighters"
+      ],
+      "ref": "pack_12/SP12-143.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "speed-sport-and-competitive-arenas",
+      "categoryName": "5. Speed, Sport & Competitive Arenas",
+      "domain": "two-player fighting game screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "speed-sport-and-competitive-arenas",
+        "two-player-fighting-game-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-143 versus stage fighter capture two-player fighting game screenshot two fighters 5. speed, sport & competitive arenas speed & arena capture two-player fighting game screenshot pack_12 video game originals vault speed-sport-and-competitive-arenas video-game-originals-vault speed-sport-and-competitive-arenas two-player-fighting-game-screenshot"
+    },
+    {
+      "id": "SP12-144",
+      "name": "Wrestling Ring Entrance Capture",
+      "styleAnchors": [
+        "Wrestling Ring Entrance Capture",
+        "pro wrestling entrance screenshot",
+        "entrance ramp"
+      ],
+      "ref": "pack_12/SP12-144.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "speed-sport-and-competitive-arenas",
+      "categoryName": "5. Speed, Sport & Competitive Arenas",
+      "domain": "pro wrestling entrance screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "speed-sport-and-competitive-arenas",
+        "pro-wrestling-entrance-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-144 wrestling ring entrance capture pro wrestling entrance screenshot entrance ramp 5. speed, sport & competitive arenas speed & arena capture pro wrestling entrance screenshot pack_12 video game originals vault speed-sport-and-competitive-arenas video-game-originals-vault speed-sport-and-competitive-arenas pro-wrestling-entrance-screenshot"
+    },
+    {
+      "id": "SP12-145",
+      "name": "Motocross Mud Jump Capture",
+      "styleAnchors": ["Motocross Mud Jump Capture", "dirt bike racing screenshot", "dirt bike"],
+      "ref": "pack_12/SP12-145.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "speed-sport-and-competitive-arenas",
+      "categoryName": "5. Speed, Sport & Competitive Arenas",
+      "domain": "dirt bike racing screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "speed-sport-and-competitive-arenas",
+        "dirt-bike-racing-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-145 motocross mud jump capture dirt bike racing screenshot dirt bike 5. speed, sport & competitive arenas speed & arena capture dirt bike racing screenshot pack_12 video game originals vault speed-sport-and-competitive-arenas video-game-originals-vault speed-sport-and-competitive-arenas dirt-bike-racing-screenshot"
+    },
+    {
+      "id": "SP12-146",
+      "name": "Esports Stadium Broadcast Capture",
+      "styleAnchors": [
+        "Esports Stadium Broadcast Capture",
+        "esports arena broadcast screenshot",
+        "glass booths"
+      ],
+      "ref": "pack_12/SP12-146.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "speed-sport-and-competitive-arenas",
+      "categoryName": "5. Speed, Sport & Competitive Arenas",
+      "domain": "esports arena broadcast screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "speed-sport-and-competitive-arenas",
+        "esports-arena-broadcast-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-146 esports stadium broadcast capture esports arena broadcast screenshot glass booths 5. speed, sport & competitive arenas speed & arena capture esports arena broadcast screenshot pack_12 video game originals vault speed-sport-and-competitive-arenas video-game-originals-vault speed-sport-and-competitive-arenas esports-arena-broadcast-screenshot"
+    },
+    {
+      "id": "SP12-147",
+      "name": "Fantasy Golf Course Capture",
+      "styleAnchors": [
+        "Fantasy Golf Course Capture",
+        "magical golf game screenshot",
+        "floating greens"
+      ],
+      "ref": "pack_12/SP12-147.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "speed-sport-and-competitive-arenas",
+      "categoryName": "5. Speed, Sport & Competitive Arenas",
+      "domain": "magical golf game screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "speed-sport-and-competitive-arenas",
+        "magical-golf-game-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-147 fantasy golf course capture magical golf game screenshot floating greens 5. speed, sport & competitive arenas speed & arena capture magical golf game screenshot pack_12 video game originals vault speed-sport-and-competitive-arenas video-game-originals-vault speed-sport-and-competitive-arenas magical-golf-game-screenshot"
+    },
+    {
+      "id": "SP12-148",
+      "name": "Sailing Regatta Race Capture",
+      "styleAnchors": [
+        "Sailing Regatta Race Capture",
+        "sailboat racing game screenshot",
+        "heeling boats"
+      ],
+      "ref": "pack_12/SP12-148.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "speed-sport-and-competitive-arenas",
+      "categoryName": "5. Speed, Sport & Competitive Arenas",
+      "domain": "sailboat racing game screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "speed-sport-and-competitive-arenas",
+        "sailboat-racing-game-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-148 sailing regatta race capture sailboat racing game screenshot heeling boats 5. speed, sport & competitive arenas speed & arena capture sailboat racing game screenshot pack_12 video game originals vault speed-sport-and-competitive-arenas video-game-originals-vault speed-sport-and-competitive-arenas sailboat-racing-game-screenshot"
     },
     {
       "id": "SP12-076",
@@ -2020,6 +2668,226 @@
       "searchableText": "sp12-080 hollow keep lock-on classic old-gen soulslike gameplay screenshots hostile ruined keep traversal-combat 8. puzzle chambers & adventure setpieces adventure game capture pack_12 video game originals vault puzzle-chambers-and-adventure-setpieces video-game-originals-vault puzzle-chambers-and-adventure-setpieces"
     },
     {
+      "id": "SP12-169",
+      "name": "Sliding-Block Temple Puzzle Capture",
+      "styleAnchors": [
+        "Sliding-Block Temple Puzzle Capture",
+        "sliding block puzzle screenshot",
+        "stone blocks"
+      ],
+      "ref": "pack_12/SP12-169.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "puzzle-chambers-and-adventure-setpieces",
+      "categoryName": "8. Puzzle Chambers & Adventure Setpieces",
+      "domain": "sliding block puzzle screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "puzzle-chambers-and-adventure-setpieces",
+        "sliding-block-puzzle-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-169 sliding-block temple puzzle capture sliding block puzzle screenshot stone blocks 8. puzzle chambers & adventure setpieces adventure game capture sliding block puzzle screenshot pack_12 video game originals vault puzzle-chambers-and-adventure-setpieces video-game-originals-vault puzzle-chambers-and-adventure-setpieces sliding-block-puzzle-screenshot"
+    },
+    {
+      "id": "SP12-170",
+      "name": "Hand-Drawn Adventure Room Capture",
+      "styleAnchors": [
+        "Hand-Drawn Adventure Room Capture",
+        "point-and-click hand-drawn room screenshot",
+        "hand-drawn room"
+      ],
+      "ref": "pack_12/SP12-170.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "puzzle-chambers-and-adventure-setpieces",
+      "categoryName": "8. Puzzle Chambers & Adventure Setpieces",
+      "domain": "point-and-click hand-drawn room screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "puzzle-chambers-and-adventure-setpieces",
+        "point-and-click-hand-drawn-room-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-170 hand-drawn adventure room capture point-and-click hand-drawn room screenshot hand-drawn room 8. puzzle chambers & adventure setpieces adventure game capture point-and-click hand-drawn room screenshot pack_12 video game originals vault puzzle-chambers-and-adventure-setpieces video-game-originals-vault puzzle-chambers-and-adventure-setpieces point-and-click-hand-drawn-room-screenshot"
+    },
+    {
+      "id": "SP12-171",
+      "name": "Tilt Maze Rolling-Ball Capture",
+      "styleAnchors": [
+        "Tilt Maze Rolling-Ball Capture",
+        "tilting maze ball game screenshot",
+        "tilting maze"
+      ],
+      "ref": "pack_12/SP12-171.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "puzzle-chambers-and-adventure-setpieces",
+      "categoryName": "8. Puzzle Chambers & Adventure Setpieces",
+      "domain": "tilting maze ball game screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "puzzle-chambers-and-adventure-setpieces",
+        "tilting-maze-ball-game-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-171 tilt maze rolling-ball capture tilting maze ball game screenshot tilting maze 8. puzzle chambers & adventure setpieces adventure game capture tilting maze ball game screenshot pack_12 video game originals vault puzzle-chambers-and-adventure-setpieces video-game-originals-vault puzzle-chambers-and-adventure-setpieces tilting-maze-ball-game-screenshot"
+    },
+    {
+      "id": "SP12-172",
+      "name": "Clockwork Tower Puzzle Capture",
+      "styleAnchors": [
+        "Clockwork Tower Puzzle Capture",
+        "gear puzzle tower screenshot",
+        "giant gears"
+      ],
+      "ref": "pack_12/SP12-172.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "puzzle-chambers-and-adventure-setpieces",
+      "categoryName": "8. Puzzle Chambers & Adventure Setpieces",
+      "domain": "gear puzzle tower screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "puzzle-chambers-and-adventure-setpieces",
+        "gear-puzzle-tower-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-172 clockwork tower puzzle capture gear puzzle tower screenshot giant gears 8. puzzle chambers & adventure setpieces adventure game capture gear puzzle tower screenshot pack_12 video game originals vault puzzle-chambers-and-adventure-setpieces video-game-originals-vault puzzle-chambers-and-adventure-setpieces gear-puzzle-tower-screenshot"
+    },
+    {
+      "id": "SP12-173",
+      "name": "Rotating Puzzle-Box Diorama Capture",
+      "styleAnchors": [
+        "Rotating Puzzle-Box Diorama Capture",
+        "isometric puzzle-box diorama screenshot",
+        "puzzle box"
+      ],
+      "ref": "pack_12/SP12-173.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "puzzle-chambers-and-adventure-setpieces",
+      "categoryName": "8. Puzzle Chambers & Adventure Setpieces",
+      "domain": "isometric puzzle-box diorama screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "puzzle-chambers-and-adventure-setpieces",
+        "isometric-puzzle-box-diorama-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-173 rotating puzzle-box diorama capture isometric puzzle-box diorama screenshot puzzle box 8. puzzle chambers & adventure setpieces adventure game capture isometric puzzle-box diorama screenshot pack_12 video game originals vault puzzle-chambers-and-adventure-setpieces video-game-originals-vault puzzle-chambers-and-adventure-setpieces isometric-puzzle-box-diorama-screenshot"
+    },
+    {
+      "id": "SP12-174",
+      "name": "First-Person Escape Room Capture",
+      "styleAnchors": [
+        "First-Person Escape Room Capture",
+        "escape room puzzle game screenshot",
+        "locked room"
+      ],
+      "ref": "pack_12/SP12-174.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "puzzle-chambers-and-adventure-setpieces",
+      "categoryName": "8. Puzzle Chambers & Adventure Setpieces",
+      "domain": "escape room puzzle game screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "puzzle-chambers-and-adventure-setpieces",
+        "escape-room-puzzle-game-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-174 first-person escape room capture escape room puzzle game screenshot locked room 8. puzzle chambers & adventure setpieces adventure game capture escape room puzzle game screenshot pack_12 video game originals vault puzzle-chambers-and-adventure-setpieces video-game-originals-vault puzzle-chambers-and-adventure-setpieces escape-room-puzzle-game-screenshot"
+    },
+    {
+      "id": "SP12-175",
+      "name": "Minecart Chase Setpiece Capture",
+      "styleAnchors": [
+        "Minecart Chase Setpiece Capture",
+        "minecart ride chase screenshot",
+        "runaway minecart"
+      ],
+      "ref": "pack_12/SP12-175.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "puzzle-chambers-and-adventure-setpieces",
+      "categoryName": "8. Puzzle Chambers & Adventure Setpieces",
+      "domain": "minecart ride chase screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "puzzle-chambers-and-adventure-setpieces",
+        "minecart-ride-chase-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-175 minecart chase setpiece capture minecart ride chase screenshot runaway minecart 8. puzzle chambers & adventure setpieces adventure game capture minecart ride chase screenshot pack_12 video game originals vault puzzle-chambers-and-adventure-setpieces video-game-originals-vault puzzle-chambers-and-adventure-setpieces minecart-ride-chase-screenshot"
+    },
+    {
+      "id": "SP12-176",
+      "name": "Collapsing Bridge Setpiece Capture",
+      "styleAnchors": [
+        "Collapsing Bridge Setpiece Capture",
+        "bridge collapse action screenshot",
+        "collapsing bridge"
+      ],
+      "ref": "pack_12/SP12-176.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "puzzle-chambers-and-adventure-setpieces",
+      "categoryName": "8. Puzzle Chambers & Adventure Setpieces",
+      "domain": "bridge collapse action screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "puzzle-chambers-and-adventure-setpieces",
+        "bridge-collapse-action-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-176 collapsing bridge setpiece capture bridge collapse action screenshot collapsing bridge 8. puzzle chambers & adventure setpieces adventure game capture bridge collapse action screenshot pack_12 video game originals vault puzzle-chambers-and-adventure-setpieces video-game-originals-vault puzzle-chambers-and-adventure-setpieces bridge-collapse-action-screenshot"
+    },
+    {
+      "id": "SP12-177",
+      "name": "Treasure Island Dig Capture",
+      "styleAnchors": [
+        "Treasure Island Dig Capture",
+        "pirate treasure digging screenshot",
+        "tropical island"
+      ],
+      "ref": "pack_12/SP12-177.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "puzzle-chambers-and-adventure-setpieces",
+      "categoryName": "8. Puzzle Chambers & Adventure Setpieces",
+      "domain": "pirate treasure digging screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "puzzle-chambers-and-adventure-setpieces",
+        "pirate-treasure-digging-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-177 treasure island dig capture pirate treasure digging screenshot tropical island 8. puzzle chambers & adventure setpieces adventure game capture pirate treasure digging screenshot pack_12 video game originals vault puzzle-chambers-and-adventure-setpieces video-game-originals-vault puzzle-chambers-and-adventure-setpieces pirate-treasure-digging-screenshot"
+    },
+    {
+      "id": "SP12-178",
+      "name": "Shadow-Casting Puzzle Capture",
+      "styleAnchors": [
+        "Shadow-Casting Puzzle Capture",
+        "light and shadow puzzle screenshot",
+        "single lamp"
+      ],
+      "ref": "pack_12/SP12-178.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "puzzle-chambers-and-adventure-setpieces",
+      "categoryName": "8. Puzzle Chambers & Adventure Setpieces",
+      "domain": "light and shadow puzzle screenshot",
+      "tags": [
+        "video-game-originals-vault",
+        "puzzle-chambers-and-adventure-setpieces",
+        "light-and-shadow-puzzle-screenshot"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-178 shadow-casting puzzle capture light and shadow puzzle screenshot single lamp 8. puzzle chambers & adventure setpieces adventure game capture light and shadow puzzle screenshot pack_12 video game originals vault puzzle-chambers-and-adventure-setpieces video-game-originals-vault puzzle-chambers-and-adventure-setpieces light-and-shadow-puzzle-screenshot"
+    },
+    {
       "id": "SP12-081",
       "name": "Diablo II: Resurrected Isometric Gameplay Capture",
       "ref": "pack_12/SP12-081.yaml",
@@ -2090,6 +2958,314 @@
       "tags": ["video-game-originals-vault", "gothic-and-dungeon-gameplay"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp12-086 amnesia: the dark descent first-person gameplay capture 9. gothic & dungeon gameplay gothic & dungeon gameplay pack_12 video game originals vault gothic-and-dungeon-gameplay video-game-originals-vault gothic-and-dungeon-gameplay"
+    },
+    {
+      "id": "SP12-179",
+      "name": "Top-Down Roguelite Crypt Gameplay",
+      "styleAnchors": [
+        "Top-Down Roguelite Crypt Gameplay",
+        "overhead roguelite dungeon gameplay",
+        "overhead crypt"
+      ],
+      "ref": "pack_12/SP12-179.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "gothic-and-dungeon-gameplay",
+      "categoryName": "9. Gothic & Dungeon Gameplay",
+      "domain": "overhead roguelite dungeon gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "gothic-and-dungeon-gameplay",
+        "overhead-roguelite-dungeon-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-179 top-down roguelite crypt gameplay overhead roguelite dungeon gameplay overhead crypt 9. gothic & dungeon gameplay gothic & dungeon gameplay overhead roguelite dungeon gameplay pack_12 video game originals vault gothic-and-dungeon-gameplay video-game-originals-vault gothic-and-dungeon-gameplay overhead-roguelite-dungeon-gameplay"
+    },
+    {
+      "id": "SP12-180",
+      "name": "Moonlit Castle Side-View Gameplay",
+      "styleAnchors": [
+        "Moonlit Castle Side-View Gameplay",
+        "side-view gothic exploration gameplay",
+        "side view"
+      ],
+      "ref": "pack_12/SP12-180.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "gothic-and-dungeon-gameplay",
+      "categoryName": "9. Gothic & Dungeon Gameplay",
+      "domain": "side-view gothic exploration gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "gothic-and-dungeon-gameplay",
+        "side-view-gothic-exploration-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-180 moonlit castle side-view gameplay side-view gothic exploration gameplay side view 9. gothic & dungeon gameplay gothic & dungeon gameplay side-view gothic exploration gameplay pack_12 video game originals vault gothic-and-dungeon-gameplay video-game-originals-vault gothic-and-dungeon-gameplay side-view-gothic-exploration-gameplay"
+    },
+    {
+      "id": "SP12-181",
+      "name": "Real-Time First-Person Crypt Gameplay",
+      "styleAnchors": [
+        "Real-Time First-Person Crypt Gameplay",
+        "first-person dungeon crawler gameplay",
+        "first-person hands"
+      ],
+      "ref": "pack_12/SP12-181.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "gothic-and-dungeon-gameplay",
+      "categoryName": "9. Gothic & Dungeon Gameplay",
+      "domain": "first-person dungeon crawler gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "gothic-and-dungeon-gameplay",
+        "first-person-dungeon-crawler-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-181 real-time first-person crypt gameplay first-person dungeon crawler gameplay first-person hands 9. gothic & dungeon gameplay gothic & dungeon gameplay first-person dungeon crawler gameplay pack_12 video game originals vault gothic-and-dungeon-gameplay video-game-originals-vault gothic-and-dungeon-gameplay first-person-dungeon-crawler-gameplay"
+    },
+    {
+      "id": "SP12-182",
+      "name": "Lock-On Boss Duel Gameplay",
+      "styleAnchors": [
+        "Lock-On Boss Duel Gameplay",
+        "third-person boss battle gameplay",
+        "lock-on camera"
+      ],
+      "ref": "pack_12/SP12-182.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "gothic-and-dungeon-gameplay",
+      "categoryName": "9. Gothic & Dungeon Gameplay",
+      "domain": "third-person boss battle gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "gothic-and-dungeon-gameplay",
+        "third-person-boss-battle-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-182 lock-on boss duel gameplay third-person boss battle gameplay lock-on camera 9. gothic & dungeon gameplay gothic & dungeon gameplay third-person boss battle gameplay pack_12 video game originals vault gothic-and-dungeon-gameplay video-game-originals-vault gothic-and-dungeon-gameplay third-person-boss-battle-gameplay"
+    },
+    {
+      "id": "SP12-183",
+      "name": "Twin-Stick Dungeon Shooter Gameplay",
+      "styleAnchors": [
+        "Twin-Stick Dungeon Shooter Gameplay",
+        "overhead dungeon shooter gameplay",
+        "overhead"
+      ],
+      "ref": "pack_12/SP12-183.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "gothic-and-dungeon-gameplay",
+      "categoryName": "9. Gothic & Dungeon Gameplay",
+      "domain": "overhead dungeon shooter gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "gothic-and-dungeon-gameplay",
+        "overhead-dungeon-shooter-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-183 twin-stick dungeon shooter gameplay overhead dungeon shooter gameplay overhead 9. gothic & dungeon gameplay gothic & dungeon gameplay overhead dungeon shooter gameplay pack_12 video game originals vault gothic-and-dungeon-gameplay video-game-originals-vault gothic-and-dungeon-gameplay overhead-dungeon-shooter-gameplay"
+    },
+    {
+      "id": "SP12-184",
+      "name": "Co-op Dungeon Brawler Gameplay",
+      "styleAnchors": [
+        "Co-op Dungeon Brawler Gameplay",
+        "four-player dungeon brawler gameplay",
+        "four heroes"
+      ],
+      "ref": "pack_12/SP12-184.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "gothic-and-dungeon-gameplay",
+      "categoryName": "9. Gothic & Dungeon Gameplay",
+      "domain": "four-player dungeon brawler gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "gothic-and-dungeon-gameplay",
+        "four-player-dungeon-brawler-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-184 co-op dungeon brawler gameplay four-player dungeon brawler gameplay four heroes 9. gothic & dungeon gameplay gothic & dungeon gameplay four-player dungeon brawler gameplay pack_12 video game originals vault gothic-and-dungeon-gameplay video-game-originals-vault gothic-and-dungeon-gameplay four-player-dungeon-brawler-gameplay"
+    },
+    {
+      "id": "SP12-185",
+      "name": "Tank-Control Manor Gameplay",
+      "styleAnchors": [
+        "Tank-Control Manor Gameplay",
+        "classic survival horror gameplay",
+        "pre-rendered rooms"
+      ],
+      "ref": "pack_12/SP12-185.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "gothic-and-dungeon-gameplay",
+      "categoryName": "9. Gothic & Dungeon Gameplay",
+      "domain": "classic survival horror gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "gothic-and-dungeon-gameplay",
+        "classic-survival-horror-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-185 tank-control manor gameplay classic survival horror gameplay pre-rendered rooms 9. gothic & dungeon gameplay gothic & dungeon gameplay classic survival horror gameplay pack_12 video game originals vault gothic-and-dungeon-gameplay video-game-originals-vault gothic-and-dungeon-gameplay classic-survival-horror-gameplay"
+    },
+    {
+      "id": "SP12-186",
+      "name": "Crypt Thief Stealth Gameplay",
+      "styleAnchors": [
+        "Crypt Thief Stealth Gameplay",
+        "first-person thief stealth gameplay",
+        "first-person stealth"
+      ],
+      "ref": "pack_12/SP12-186.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "gothic-and-dungeon-gameplay",
+      "categoryName": "9. Gothic & Dungeon Gameplay",
+      "domain": "first-person thief stealth gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "gothic-and-dungeon-gameplay",
+        "first-person-thief-stealth-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-186 crypt thief stealth gameplay first-person thief stealth gameplay first-person stealth 9. gothic & dungeon gameplay gothic & dungeon gameplay first-person thief stealth gameplay pack_12 video game originals vault gothic-and-dungeon-gameplay video-game-originals-vault gothic-and-dungeon-gameplay first-person-thief-stealth-gameplay"
+    },
+    {
+      "id": "SP12-187",
+      "name": "Night Village Monster Hunt Gameplay",
+      "styleAnchors": [
+        "Night Village Monster Hunt Gameplay",
+        "third-person monster hunter village gameplay",
+        "night village"
+      ],
+      "ref": "pack_12/SP12-187.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "gothic-and-dungeon-gameplay",
+      "categoryName": "9. Gothic & Dungeon Gameplay",
+      "domain": "third-person monster hunter village gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "gothic-and-dungeon-gameplay",
+        "third-person-monster-hunter-village-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-187 night village monster hunt gameplay third-person monster hunter village gameplay night village 9. gothic & dungeon gameplay gothic & dungeon gameplay third-person monster hunter village gameplay pack_12 video game originals vault gothic-and-dungeon-gameplay video-game-originals-vault gothic-and-dungeon-gameplay third-person-monster-hunter-village-gameplay"
+    },
+    {
+      "id": "SP12-188",
+      "name": "Dungeon Overlord Build Gameplay",
+      "styleAnchors": [
+        "Dungeon Overlord Build Gameplay",
+        "dungeon management gameplay",
+        "imps digging"
+      ],
+      "ref": "pack_12/SP12-188.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "gothic-and-dungeon-gameplay",
+      "categoryName": "9. Gothic & Dungeon Gameplay",
+      "domain": "dungeon management gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "gothic-and-dungeon-gameplay",
+        "dungeon-management-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-188 dungeon overlord build gameplay dungeon management gameplay imps digging 9. gothic & dungeon gameplay gothic & dungeon gameplay dungeon management gameplay pack_12 video game originals vault gothic-and-dungeon-gameplay video-game-originals-vault gothic-and-dungeon-gameplay dungeon-management-gameplay"
+    },
+    {
+      "id": "SP12-189",
+      "name": "Necromancer Minion Gameplay",
+      "styleAnchors": [
+        "Necromancer Minion Gameplay",
+        "isometric undead army gameplay",
+        "necromancer"
+      ],
+      "ref": "pack_12/SP12-189.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "gothic-and-dungeon-gameplay",
+      "categoryName": "9. Gothic & Dungeon Gameplay",
+      "domain": "isometric undead army gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "gothic-and-dungeon-gameplay",
+        "isometric-undead-army-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-189 necromancer minion gameplay isometric undead army gameplay necromancer 9. gothic & dungeon gameplay gothic & dungeon gameplay isometric undead army gameplay pack_12 video game originals vault gothic-and-dungeon-gameplay video-game-originals-vault gothic-and-dungeon-gameplay isometric-undead-army-gameplay"
+    },
+    {
+      "id": "SP12-190",
+      "name": "Pixel Roguelike Descent Gameplay",
+      "styleAnchors": [
+        "Pixel Roguelike Descent Gameplay",
+        "2D pixel roguelike gameplay",
+        "pixel caverns"
+      ],
+      "ref": "pack_12/SP12-190.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "gothic-and-dungeon-gameplay",
+      "categoryName": "9. Gothic & Dungeon Gameplay",
+      "domain": "2D pixel roguelike gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "gothic-and-dungeon-gameplay",
+        "2d-pixel-roguelike-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-190 pixel roguelike descent gameplay 2d pixel roguelike gameplay pixel caverns 9. gothic & dungeon gameplay gothic & dungeon gameplay 2d pixel roguelike gameplay pack_12 video game originals vault gothic-and-dungeon-gameplay video-game-originals-vault gothic-and-dungeon-gameplay 2d-pixel-roguelike-gameplay"
+    },
+    {
+      "id": "SP12-191",
+      "name": "Ghost Ship Boarding Gameplay",
+      "styleAnchors": [
+        "Ghost Ship Boarding Gameplay",
+        "haunted ship action gameplay",
+        "ghost ship"
+      ],
+      "ref": "pack_12/SP12-191.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "gothic-and-dungeon-gameplay",
+      "categoryName": "9. Gothic & Dungeon Gameplay",
+      "domain": "haunted ship action gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "gothic-and-dungeon-gameplay",
+        "haunted-ship-action-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-191 ghost ship boarding gameplay haunted ship action gameplay ghost ship 9. gothic & dungeon gameplay gothic & dungeon gameplay haunted ship action gameplay pack_12 video game originals vault gothic-and-dungeon-gameplay video-game-originals-vault gothic-and-dungeon-gameplay haunted-ship-action-gameplay"
+    },
+    {
+      "id": "SP12-192",
+      "name": "Cursed Forest Survival Gameplay",
+      "styleAnchors": [
+        "Cursed Forest Survival Gameplay",
+        "dark forest survival gameplay",
+        "campfire safe zone"
+      ],
+      "ref": "pack_12/SP12-192.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "gothic-and-dungeon-gameplay",
+      "categoryName": "9. Gothic & Dungeon Gameplay",
+      "domain": "dark forest survival gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "gothic-and-dungeon-gameplay",
+        "dark-forest-survival-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-192 cursed forest survival gameplay dark forest survival gameplay campfire safe zone 9. gothic & dungeon gameplay gothic & dungeon gameplay dark forest survival gameplay pack_12 video game originals vault gothic-and-dungeon-gameplay video-game-originals-vault gothic-and-dungeon-gameplay dark-forest-survival-gameplay"
     },
     {
       "id": "SP12-087",
@@ -2164,6 +3340,306 @@
       "searchableText": "sp12-092 darkest dungeon side-view tactical capture 10. graphic & feudal gameplay graphic & feudal gameplay pack_12 video game originals vault graphic-and-feudal-gameplay video-game-originals-vault graphic-and-feudal-gameplay"
     },
     {
+      "id": "SP12-193",
+      "name": "Cel-Shaded Samurai Duel Gameplay",
+      "styleAnchors": [
+        "Cel-Shaded Samurai Duel Gameplay",
+        "toon-shaded samurai duel gameplay",
+        "cel shading"
+      ],
+      "ref": "pack_12/SP12-193.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "graphic-and-feudal-gameplay",
+      "categoryName": "10. Graphic & Feudal Gameplay",
+      "domain": "toon-shaded samurai duel gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "graphic-and-feudal-gameplay",
+        "toon-shaded-samurai-duel-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-193 cel-shaded samurai duel gameplay toon-shaded samurai duel gameplay cel shading 10. graphic & feudal gameplay graphic & feudal gameplay toon-shaded samurai duel gameplay pack_12 video game originals vault graphic-and-feudal-gameplay video-game-originals-vault graphic-and-feudal-gameplay toon-shaded-samurai-duel-gameplay"
+    },
+    {
+      "id": "SP12-194",
+      "name": "Ink-Brush Brawler Gameplay",
+      "styleAnchors": [
+        "Ink-Brush Brawler Gameplay",
+        "sumi-ink action gameplay",
+        "ink-painted fighters"
+      ],
+      "ref": "pack_12/SP12-194.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "graphic-and-feudal-gameplay",
+      "categoryName": "10. Graphic & Feudal Gameplay",
+      "domain": "sumi-ink action gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "graphic-and-feudal-gameplay",
+        "sumi-ink-action-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-194 ink-brush brawler gameplay sumi-ink action gameplay ink-painted fighters 10. graphic & feudal gameplay graphic & feudal gameplay sumi-ink action gameplay pack_12 video game originals vault graphic-and-feudal-gameplay video-game-originals-vault graphic-and-feudal-gameplay sumi-ink-action-gameplay"
+    },
+    {
+      "id": "SP12-195",
+      "name": "Arena Combo Hack-and-Slash Gameplay",
+      "styleAnchors": [
+        "Arena Combo Hack-and-Slash Gameplay",
+        "stylish combo action gameplay",
+        "air juggle"
+      ],
+      "ref": "pack_12/SP12-195.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "graphic-and-feudal-gameplay",
+      "categoryName": "10. Graphic & Feudal Gameplay",
+      "domain": "stylish combo action gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "graphic-and-feudal-gameplay",
+        "stylish-combo-action-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-195 arena combo hack-and-slash gameplay stylish combo action gameplay air juggle 10. graphic & feudal gameplay graphic & feudal gameplay stylish combo action gameplay pack_12 video game originals vault graphic-and-feudal-gameplay video-game-originals-vault graphic-and-feudal-gameplay stylish-combo-action-gameplay"
+    },
+    {
+      "id": "SP12-196",
+      "name": "Mounted Archery Plains Gameplay",
+      "styleAnchors": [
+        "Mounted Archery Plains Gameplay",
+        "horseback archery gameplay",
+        "horseback archery"
+      ],
+      "ref": "pack_12/SP12-196.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "graphic-and-feudal-gameplay",
+      "categoryName": "10. Graphic & Feudal Gameplay",
+      "domain": "horseback archery gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "graphic-and-feudal-gameplay",
+        "horseback-archery-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-196 mounted archery plains gameplay horseback archery gameplay horseback archery 10. graphic & feudal gameplay graphic & feudal gameplay horseback archery gameplay pack_12 video game originals vault graphic-and-feudal-gameplay video-game-originals-vault graphic-and-feudal-gameplay horseback-archery-gameplay"
+    },
+    {
+      "id": "SP12-197",
+      "name": "Third-Person Shinobi Stealth Gameplay",
+      "styleAnchors": [
+        "Third-Person Shinobi Stealth Gameplay",
+        "ninja stealth action gameplay",
+        "shinobi"
+      ],
+      "ref": "pack_12/SP12-197.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "graphic-and-feudal-gameplay",
+      "categoryName": "10. Graphic & Feudal Gameplay",
+      "domain": "ninja stealth action gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "graphic-and-feudal-gameplay",
+        "ninja-stealth-action-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-197 third-person shinobi stealth gameplay ninja stealth action gameplay shinobi 10. graphic & feudal gameplay graphic & feudal gameplay ninja stealth action gameplay pack_12 video game originals vault graphic-and-feudal-gameplay video-game-originals-vault graphic-and-feudal-gameplay ninja-stealth-action-gameplay"
+    },
+    {
+      "id": "SP12-198",
+      "name": "Castle Siege Command Gameplay",
+      "styleAnchors": [
+        "Castle Siege Command Gameplay",
+        "feudal siege strategy gameplay",
+        "siege engines"
+      ],
+      "ref": "pack_12/SP12-198.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "graphic-and-feudal-gameplay",
+      "categoryName": "10. Graphic & Feudal Gameplay",
+      "domain": "feudal siege strategy gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "graphic-and-feudal-gameplay",
+        "feudal-siege-strategy-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-198 castle siege command gameplay feudal siege strategy gameplay siege engines 10. graphic & feudal gameplay graphic & feudal gameplay feudal siege strategy gameplay pack_12 video game originals vault graphic-and-feudal-gameplay video-game-originals-vault graphic-and-feudal-gameplay feudal-siege-strategy-gameplay"
+    },
+    {
+      "id": "SP12-199",
+      "name": "Warband Formation Battle Gameplay",
+      "styleAnchors": [
+        "Warband Formation Battle Gameplay",
+        "medieval formation battle gameplay",
+        "shield wall"
+      ],
+      "ref": "pack_12/SP12-199.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "graphic-and-feudal-gameplay",
+      "categoryName": "10. Graphic & Feudal Gameplay",
+      "domain": "medieval formation battle gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "graphic-and-feudal-gameplay",
+        "medieval-formation-battle-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-199 warband formation battle gameplay medieval formation battle gameplay shield wall 10. graphic & feudal gameplay graphic & feudal gameplay medieval formation battle gameplay pack_12 video game originals vault graphic-and-feudal-gameplay video-game-originals-vault graphic-and-feudal-gameplay medieval-formation-battle-gameplay"
+    },
+    {
+      "id": "SP12-200",
+      "name": "Hand-Drawn Feudal Brawler Gameplay",
+      "styleAnchors": [
+        "Hand-Drawn Feudal Brawler Gameplay",
+        "2D hand-drawn feudal action gameplay",
+        "hand-drawn warriors"
+      ],
+      "ref": "pack_12/SP12-200.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "graphic-and-feudal-gameplay",
+      "categoryName": "10. Graphic & Feudal Gameplay",
+      "domain": "2D hand-drawn feudal action gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "graphic-and-feudal-gameplay",
+        "2d-hand-drawn-feudal-action-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-200 hand-drawn feudal brawler gameplay 2d hand-drawn feudal action gameplay hand-drawn warriors 10. graphic & feudal gameplay graphic & feudal gameplay 2d hand-drawn feudal action gameplay pack_12 video game originals vault graphic-and-feudal-gameplay video-game-originals-vault graphic-and-feudal-gameplay 2d-hand-drawn-feudal-action-gameplay"
+    },
+    {
+      "id": "SP12-201",
+      "name": "Spirit Hunter Action Gameplay",
+      "styleAnchors": [
+        "Spirit Hunter Action Gameplay",
+        "folklore spirit hunting action gameplay",
+        "folklore spirits"
+      ],
+      "ref": "pack_12/SP12-201.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "graphic-and-feudal-gameplay",
+      "categoryName": "10. Graphic & Feudal Gameplay",
+      "domain": "folklore spirit hunting action gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "graphic-and-feudal-gameplay",
+        "folklore-spirit-hunting-action-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-201 spirit hunter action gameplay folklore spirit hunting action gameplay folklore spirits 10. graphic & feudal gameplay graphic & feudal gameplay folklore spirit hunting action gameplay pack_12 video game originals vault graphic-and-feudal-gameplay video-game-originals-vault graphic-and-feudal-gameplay folklore-spirit-hunting-action-gameplay"
+    },
+    {
+      "id": "SP12-202",
+      "name": "Comic-Panel Action Gameplay",
+      "styleAnchors": [
+        "Comic-Panel Action Gameplay",
+        "comic-book panel action gameplay",
+        "comic panels"
+      ],
+      "ref": "pack_12/SP12-202.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "graphic-and-feudal-gameplay",
+      "categoryName": "10. Graphic & Feudal Gameplay",
+      "domain": "comic-book panel action gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "graphic-and-feudal-gameplay",
+        "comic-book-panel-action-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-202 comic-panel action gameplay comic-book panel action gameplay comic panels 10. graphic & feudal gameplay graphic & feudal gameplay comic-book panel action gameplay pack_12 video game originals vault graphic-and-feudal-gameplay video-game-originals-vault graphic-and-feudal-gameplay comic-book-panel-action-gameplay"
+    },
+    {
+      "id": "SP12-203",
+      "name": "Directional Swordplay Duel Gameplay",
+      "styleAnchors": [
+        "Directional Swordplay Duel Gameplay",
+        "stance-based sword duel gameplay",
+        "heavy armor duel"
+      ],
+      "ref": "pack_12/SP12-203.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "graphic-and-feudal-gameplay",
+      "categoryName": "10. Graphic & Feudal Gameplay",
+      "domain": "stance-based sword duel gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "graphic-and-feudal-gameplay",
+        "stance-based-sword-duel-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-203 directional swordplay duel gameplay stance-based sword duel gameplay heavy armor duel 10. graphic & feudal gameplay graphic & feudal gameplay stance-based sword duel gameplay pack_12 video game originals vault graphic-and-feudal-gameplay video-game-originals-vault graphic-and-feudal-gameplay stance-based-sword-duel-gameplay"
+    },
+    {
+      "id": "SP12-204",
+      "name": "Samurai Tactics Grid Gameplay",
+      "styleAnchors": [
+        "Samurai Tactics Grid Gameplay",
+        "feudal turn-based tactics gameplay",
+        "isometric grid"
+      ],
+      "ref": "pack_12/SP12-204.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "graphic-and-feudal-gameplay",
+      "categoryName": "10. Graphic & Feudal Gameplay",
+      "domain": "feudal turn-based tactics gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "graphic-and-feudal-gameplay",
+        "feudal-turn-based-tactics-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-204 samurai tactics grid gameplay feudal turn-based tactics gameplay isometric grid 10. graphic & feudal gameplay graphic & feudal gameplay feudal turn-based tactics gameplay pack_12 video game originals vault graphic-and-feudal-gameplay video-game-originals-vault graphic-and-feudal-gameplay feudal-turn-based-tactics-gameplay"
+    },
+    {
+      "id": "SP12-205",
+      "name": "Gladiator Arena Crowd Gameplay",
+      "styleAnchors": ["Gladiator Arena Crowd Gameplay", "arena combat gameplay", "sand arena"],
+      "ref": "pack_12/SP12-205.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "graphic-and-feudal-gameplay",
+      "categoryName": "10. Graphic & Feudal Gameplay",
+      "domain": "arena combat gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "graphic-and-feudal-gameplay",
+        "arena-combat-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-205 gladiator arena crowd gameplay arena combat gameplay sand arena 10. graphic & feudal gameplay graphic & feudal gameplay arena combat gameplay pack_12 video game originals vault graphic-and-feudal-gameplay video-game-originals-vault graphic-and-feudal-gameplay arena-combat-gameplay"
+    },
+    {
+      "id": "SP12-206",
+      "name": "Horseback Lance Joust Gameplay",
+      "styleAnchors": ["Horseback Lance Joust Gameplay", "tournament joust gameplay", "joust"],
+      "ref": "pack_12/SP12-206.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "graphic-and-feudal-gameplay",
+      "categoryName": "10. Graphic & Feudal Gameplay",
+      "domain": "tournament joust gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "graphic-and-feudal-gameplay",
+        "tournament-joust-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-206 horseback lance joust gameplay tournament joust gameplay joust 10. graphic & feudal gameplay graphic & feudal gameplay tournament joust gameplay pack_12 video game originals vault graphic-and-feudal-gameplay video-game-originals-vault graphic-and-feudal-gameplay tournament-joust-gameplay"
+    },
+    {
       "id": "SP12-093",
       "name": "Silent Hill f — Showa Folklore Gameplay",
       "ref": "pack_12/SP12-093.yaml",
@@ -2234,7 +3710,311 @@
       "tags": ["video-game-originals-vault", "psychological-and-tactical-gameplay"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp12-098 death stranding (2019) traversal gameplay 11. psychological & tactical gameplay psychological & tactical gameplay pack_12 video game originals vault psychological-and-tactical-gameplay video-game-originals-vault psychological-and-tactical-gameplay"
+    },
+    {
+      "id": "SP12-207",
+      "name": "Fog-Town Radio Static Gameplay",
+      "styleAnchors": ["Fog-Town Radio Static Gameplay", "foggy town horror gameplay", "thick fog"],
+      "ref": "pack_12/SP12-207.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "psychological-and-tactical-gameplay",
+      "categoryName": "11. Psychological & Tactical Gameplay",
+      "domain": "foggy town horror gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "psychological-and-tactical-gameplay",
+        "foggy-town-horror-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-207 fog-town radio static gameplay foggy town horror gameplay thick fog 11. psychological & tactical gameplay psychological & tactical gameplay foggy town horror gameplay pack_12 video game originals vault psychological-and-tactical-gameplay video-game-originals-vault psychological-and-tactical-gameplay foggy-town-horror-gameplay"
+    },
+    {
+      "id": "SP12-208",
+      "name": "Otherworld Rust Transition Gameplay",
+      "styleAnchors": [
+        "Otherworld Rust Transition Gameplay",
+        "reality-shift horror gameplay",
+        "peeling reality"
+      ],
+      "ref": "pack_12/SP12-208.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "psychological-and-tactical-gameplay",
+      "categoryName": "11. Psychological & Tactical Gameplay",
+      "domain": "reality-shift horror gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "psychological-and-tactical-gameplay",
+        "reality-shift-horror-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-208 otherworld rust transition gameplay reality-shift horror gameplay peeling reality 11. psychological & tactical gameplay psychological & tactical gameplay reality-shift horror gameplay pack_12 video game originals vault psychological-and-tactical-gameplay video-game-originals-vault psychological-and-tactical-gameplay reality-shift-horror-gameplay"
+    },
+    {
+      "id": "SP12-209",
+      "name": "Looping Hallway Horror Gameplay",
+      "styleAnchors": [
+        "Looping Hallway Horror Gameplay",
+        "repeating corridor horror gameplay",
+        "looping hallway"
+      ],
+      "ref": "pack_12/SP12-209.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "psychological-and-tactical-gameplay",
+      "categoryName": "11. Psychological & Tactical Gameplay",
+      "domain": "repeating corridor horror gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "psychological-and-tactical-gameplay",
+        "repeating-corridor-horror-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-209 looping hallway horror gameplay repeating corridor horror gameplay looping hallway 11. psychological & tactical gameplay psychological & tactical gameplay repeating corridor horror gameplay pack_12 video game originals vault psychological-and-tactical-gameplay video-game-originals-vault psychological-and-tactical-gameplay repeating-corridor-horror-gameplay"
+    },
+    {
+      "id": "SP12-210",
+      "name": "Camouflage Jungle Stealth Gameplay",
+      "styleAnchors": [
+        "Camouflage Jungle Stealth Gameplay",
+        "overhead jungle stealth gameplay",
+        "camouflage"
+      ],
+      "ref": "pack_12/SP12-210.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "psychological-and-tactical-gameplay",
+      "categoryName": "11. Psychological & Tactical Gameplay",
+      "domain": "overhead jungle stealth gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "psychological-and-tactical-gameplay",
+        "overhead-jungle-stealth-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-210 camouflage jungle stealth gameplay overhead jungle stealth gameplay camouflage 11. psychological & tactical gameplay psychological & tactical gameplay overhead jungle stealth gameplay pack_12 video game originals vault psychological-and-tactical-gameplay video-game-originals-vault psychological-and-tactical-gameplay overhead-jungle-stealth-gameplay"
+    },
+    {
+      "id": "SP12-211",
+      "name": "Guard Patrol Base Infiltration Gameplay",
+      "styleAnchors": [
+        "Guard Patrol Base Infiltration Gameplay",
+        "military base stealth gameplay",
+        "searchlights"
+      ],
+      "ref": "pack_12/SP12-211.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "psychological-and-tactical-gameplay",
+      "categoryName": "11. Psychological & Tactical Gameplay",
+      "domain": "military base stealth gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "psychological-and-tactical-gameplay",
+        "military-base-stealth-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-211 guard patrol base infiltration gameplay military base stealth gameplay searchlights 11. psychological & tactical gameplay psychological & tactical gameplay military base stealth gameplay pack_12 video game originals vault psychological-and-tactical-gameplay video-game-originals-vault psychological-and-tactical-gameplay military-base-stealth-gameplay"
+    },
+    {
+      "id": "SP12-212",
+      "name": "Cargo-Laden Wasteland Trek Gameplay",
+      "styleAnchors": [
+        "Cargo-Laden Wasteland Trek Gameplay",
+        "burdened traversal gameplay",
+        "towering pack"
+      ],
+      "ref": "pack_12/SP12-212.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "psychological-and-tactical-gameplay",
+      "categoryName": "11. Psychological & Tactical Gameplay",
+      "domain": "burdened traversal gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "psychological-and-tactical-gameplay",
+        "burdened-traversal-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-212 cargo-laden wasteland trek gameplay burdened traversal gameplay towering pack 11. psychological & tactical gameplay psychological & tactical gameplay burdened traversal gameplay pack_12 video game originals vault psychological-and-tactical-gameplay video-game-originals-vault psychological-and-tactical-gameplay burdened-traversal-gameplay"
+    },
+    {
+      "id": "SP12-213",
+      "name": "Sanity Distortion Gameplay",
+      "styleAnchors": [
+        "Sanity Distortion Gameplay",
+        "psychological distortion gameplay",
+        "warping walls"
+      ],
+      "ref": "pack_12/SP12-213.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "psychological-and-tactical-gameplay",
+      "categoryName": "11. Psychological & Tactical Gameplay",
+      "domain": "psychological distortion gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "psychological-and-tactical-gameplay",
+        "psychological-distortion-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-213 sanity distortion gameplay psychological distortion gameplay warping walls 11. psychological & tactical gameplay psychological & tactical gameplay psychological distortion gameplay pack_12 video game originals vault psychological-and-tactical-gameplay video-game-originals-vault psychological-and-tactical-gameplay psychological-distortion-gameplay"
+    },
+    {
+      "id": "SP12-214",
+      "name": "Asylum Walkthrough Gameplay",
+      "styleAnchors": [
+        "Asylum Walkthrough Gameplay",
+        "abandoned asylum exploration gameplay",
+        "abandoned asylum"
+      ],
+      "ref": "pack_12/SP12-214.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "psychological-and-tactical-gameplay",
+      "categoryName": "11. Psychological & Tactical Gameplay",
+      "domain": "abandoned asylum exploration gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "psychological-and-tactical-gameplay",
+        "abandoned-asylum-exploration-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-214 asylum walkthrough gameplay abandoned asylum exploration gameplay abandoned asylum 11. psychological & tactical gameplay psychological & tactical gameplay abandoned asylum exploration gameplay pack_12 video game originals vault psychological-and-tactical-gameplay video-game-originals-vault psychological-and-tactical-gameplay abandoned-asylum-exploration-gameplay"
+    },
+    {
+      "id": "SP12-215",
+      "name": "Rainy Border Crossing Stealth Gameplay",
+      "styleAnchors": [
+        "Rainy Border Crossing Stealth Gameplay",
+        "wartime border stealth gameplay",
+        "border post"
+      ],
+      "ref": "pack_12/SP12-215.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "psychological-and-tactical-gameplay",
+      "categoryName": "11. Psychological & Tactical Gameplay",
+      "domain": "wartime border stealth gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "psychological-and-tactical-gameplay",
+        "wartime-border-stealth-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-215 rainy border crossing stealth gameplay wartime border stealth gameplay border post 11. psychological & tactical gameplay psychological & tactical gameplay wartime border stealth gameplay pack_12 video game originals vault psychological-and-tactical-gameplay video-game-originals-vault psychological-and-tactical-gameplay wartime-border-stealth-gameplay"
+    },
+    {
+      "id": "SP12-216",
+      "name": "Dream-Logic Puzzle Gameplay",
+      "styleAnchors": [
+        "Dream-Logic Puzzle Gameplay",
+        "surreal dream puzzle gameplay",
+        "impossible geometry"
+      ],
+      "ref": "pack_12/SP12-216.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "psychological-and-tactical-gameplay",
+      "categoryName": "11. Psychological & Tactical Gameplay",
+      "domain": "surreal dream puzzle gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "psychological-and-tactical-gameplay",
+        "surreal-dream-puzzle-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-216 dream-logic puzzle gameplay surreal dream puzzle gameplay impossible geometry 11. psychological & tactical gameplay psychological & tactical gameplay surreal dream puzzle gameplay pack_12 video game originals vault psychological-and-tactical-gameplay video-game-originals-vault psychological-and-tactical-gameplay surreal-dream-puzzle-gameplay"
+    },
+    {
+      "id": "SP12-217",
+      "name": "Lighthouse Isolation Gameplay",
+      "styleAnchors": [
+        "Lighthouse Isolation Gameplay",
+        "isolated keeper narrative gameplay",
+        "lighthouse interior"
+      ],
+      "ref": "pack_12/SP12-217.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "psychological-and-tactical-gameplay",
+      "categoryName": "11. Psychological & Tactical Gameplay",
+      "domain": "isolated keeper narrative gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "psychological-and-tactical-gameplay",
+        "isolated-keeper-narrative-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-217 lighthouse isolation gameplay isolated keeper narrative gameplay lighthouse interior 11. psychological & tactical gameplay psychological & tactical gameplay isolated keeper narrative gameplay pack_12 video game originals vault psychological-and-tactical-gameplay video-game-originals-vault psychological-and-tactical-gameplay isolated-keeper-narrative-gameplay"
+    },
+    {
+      "id": "SP12-218",
+      "name": "Time-Loop Mansion Mystery Gameplay",
+      "styleAnchors": [
+        "Time-Loop Mansion Mystery Gameplay",
+        "repeating day mystery gameplay",
+        "time loop"
+      ],
+      "ref": "pack_12/SP12-218.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "psychological-and-tactical-gameplay",
+      "categoryName": "11. Psychological & Tactical Gameplay",
+      "domain": "repeating day mystery gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "psychological-and-tactical-gameplay",
+        "repeating-day-mystery-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-218 time-loop mansion mystery gameplay repeating day mystery gameplay time loop 11. psychological & tactical gameplay psychological & tactical gameplay repeating day mystery gameplay pack_12 video game originals vault psychological-and-tactical-gameplay video-game-originals-vault psychological-and-tactical-gameplay repeating-day-mystery-gameplay"
+    },
+    {
+      "id": "SP12-219",
+      "name": "Forest Sniper Duel Gameplay",
+      "styleAnchors": [
+        "Forest Sniper Duel Gameplay",
+        "patient sniper duel gameplay",
+        "sniper duel"
+      ],
+      "ref": "pack_12/SP12-219.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "psychological-and-tactical-gameplay",
+      "categoryName": "11. Psychological & Tactical Gameplay",
+      "domain": "patient sniper duel gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "psychological-and-tactical-gameplay",
+        "patient-sniper-duel-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-219 forest sniper duel gameplay patient sniper duel gameplay sniper duel 11. psychological & tactical gameplay psychological & tactical gameplay patient sniper duel gameplay pack_12 video game originals vault psychological-and-tactical-gameplay video-game-originals-vault psychological-and-tactical-gameplay patient-sniper-duel-gameplay"
+    },
+    {
+      "id": "SP12-220",
+      "name": "Suburban Night Walk Horror Gameplay",
+      "styleAnchors": [
+        "Suburban Night Walk Horror Gameplay",
+        "quiet suburb night horror gameplay",
+        "empty suburb"
+      ],
+      "ref": "pack_12/SP12-220.yaml",
+      "packId": "pack_12",
+      "packName": "Video Game Originals Vault",
+      "categoryId": "psychological-and-tactical-gameplay",
+      "categoryName": "11. Psychological & Tactical Gameplay",
+      "domain": "quiet suburb night horror gameplay",
+      "tags": [
+        "video-game-originals-vault",
+        "psychological-and-tactical-gameplay",
+        "quiet-suburb-night-horror-gameplay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp12-220 suburban night walk horror gameplay quiet suburb night horror gameplay empty suburb 11. psychological & tactical gameplay psychological & tactical gameplay quiet suburb night horror gameplay pack_12 video game originals vault psychological-and-tactical-gameplay video-game-originals-vault psychological-and-tactical-gameplay quiet-suburb-night-horror-gameplay"
     }
   ],
-  "totalPresetCount": 138
+  "totalPresetCount": 220
 }

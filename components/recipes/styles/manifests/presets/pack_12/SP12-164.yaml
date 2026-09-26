@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP12-164
+packId: pack_12
+name: Speakeasy Shootout Capture
+styleAnchors:
+  - Speakeasy Shootout Capture
+  - prohibition gangster game screenshot
+  - speakeasy
+displayName: Speakeasy Shootout Capture
+category: 7. Heists, Horror & Underworld Runs
+domain: prohibition gangster game screenshot
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - heists-horror-and-underworld-runs
+  - speakeasy
+  - game-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Speakeasy shootout capture: an original third-person screenshot of a jazz-age speakeasy mid-shootout, flipped tables, shattering bottles and smoky amber light.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; place the subject in a jazz-age speakeasy during a chaotic shootout.
+  color_and_tone: Amber, deep brown wood and brass, kept consistent across the whole image.
+  lighting_and_shadow: Smoky lamp light and muzzle flashes, kept consistent across the whole image.
+  texture_and_material: Wood paneling, glass bottles and velvet, kept consistent across the whole image.
+  camera_and_composition: Low third-person behind cover, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with stylish violence without gore.
+  rendering_and_quality: Clean capture with no readable signs, kept consistent across the whole image.
+  creative_brief: "Speakeasy shootout capture: an original third-person screenshot of a jazz-age speakeasy mid-shootout, flipped tables, shattering bottles and smoky amber light. Carry it through speakeasy, flipped tables, shattering bottles, amber smoke. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: speakeasy; flipped tables; shattering bottles; amber smoke
+avoidRules:
+  - readable signs
+  - existing game characters, logos or levels
+  - readable interface text
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable signs, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: heists-horror-and-underworld-runs
+  categoryName: 7. Heists, Horror & Underworld Runs
+  tags:
+    - video-game-originals-vault
+    - heists-horror-and-underworld-runs
+    - speakeasy
+    - game-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: prohibition gangster game screenshot

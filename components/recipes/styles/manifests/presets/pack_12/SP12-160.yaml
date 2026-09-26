@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP12-160
+packId: pack_12
+name: Casino Floor Infiltration Capture
+styleAnchors:
+  - Casino Floor Infiltration Capture
+  - stealth casino heist screenshot
+  - casino floor
+displayName: Casino Floor Infiltration Capture
+category: 7. Heists, Horror & Underworld Runs
+domain: stealth casino heist screenshot
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - heists-horror-and-underworld-runs
+  - casino-infiltration
+  - game-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Casino floor infiltration capture: an original third-person stealth screenshot of a spy moving across a glittering casino floor, cameras, guards and chandeliers.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject blending into or sneaking across a glittering casino floor.
+  color_and_tone: Gold, deep red carpet and green felt, kept consistent across the whole image.
+  lighting_and_shadow: Chandelier glow and table lamps, kept consistent across the whole image.
+  texture_and_material: Velvet, polished brass, chips and cards, kept consistent across the whole image.
+  camera_and_composition: Third-person over-the-shoulder across the floor, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with glamorous tension, kept consistent across the whole image.
+  rendering_and_quality: Clean capture with no readable signs, kept consistent across the whole image.
+  creative_brief: "Casino floor infiltration capture: an original third-person stealth screenshot of a spy moving across a glittering casino floor, cameras, guards and chandeliers. Carry it through casino floor, disguised spy, security cameras, chandeliers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: casino floor; disguised spy; security cameras; chandeliers
+avoidRules:
+  - readable signs
+  - existing game characters, logos or levels
+  - readable interface text
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable signs, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: heists-horror-and-underworld-runs
+  categoryName: 7. Heists, Horror & Underworld Runs
+  tags:
+    - video-game-originals-vault
+    - heists-horror-and-underworld-runs
+    - casino-infiltration
+    - game-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: stealth casino heist screenshot

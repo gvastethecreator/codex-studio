@@ -329,4 +329,371 @@ export const GENERATED_STYLE_PRESETS = [
         "Hollow Keep Lock-On: in-game screenshot language informed by classic soulslike capture references, covering third-person lock-on camera, old-gen material restraint, narrow route readability, fog-gate/trap affordances, stamina-combat spacing, and sparse HUD grammar. Avoid menus, logos, exact characters, exact levels, Dark Souls level cloning, Elden Ring-style eclipse throne imagery, modern cinematic key art, and promotional composition. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
+  {
+    id: 'SP12-169',
+    name: 'Sliding-Block Temple Puzzle Capture',
+    displayName: 'Sliding-Block Temple Puzzle Capture',
+    styleAnchors: [
+      'Sliding-Block Temple Puzzle Capture',
+      'sliding block puzzle screenshot',
+      'stone blocks',
+    ],
+    category: '8. Puzzle Chambers & Adventure Setpieces',
+    domain: 'sliding block puzzle screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Sliding-block temple puzzle capture: an original top-down puzzle screenshot of heavy stone blocks pushed across a temple floor grid onto glowing pressure plates.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject pushing heavy stone blocks on a temple grid.',
+      color_and_tone: 'Sandstone ochre, moss green and glowing plate blue.',
+      lighting_and_shadow: 'Torchlight and plate glow, kept consistent across the whole image.',
+      texture_and_material:
+        'Carved stone, dust and grid lines, kept consistent across the whole image.',
+      camera_and_composition:
+        'Top-down view of the puzzle floor, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with patient cleverness, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean readable puzzle layout, kept consistent across the whole image.',
+      creative_brief:
+        "Sliding-block temple puzzle capture: an original top-down puzzle screenshot of heavy stone blocks pushed across a temple floor grid onto glowing pressure plates. Carry it through stone blocks, pressure plates, temple grid, top-down. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'stone blocks; pressure plates; temple grid; top-down',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-170',
+    name: 'Hand-Drawn Adventure Room Capture',
+    displayName: 'Hand-Drawn Adventure Room Capture',
+    styleAnchors: [
+      'Hand-Drawn Adventure Room Capture',
+      'point-and-click hand-drawn room screenshot',
+      'hand-drawn room',
+    ],
+    category: '8. Puzzle Chambers & Adventure Setpieces',
+    domain: 'point-and-click hand-drawn room screenshot',
+    negativePrompt:
+      'cursor or verbs, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Hand-drawn adventure room capture: an original point-and-click adventure screenshot of a lovingly drawn cluttered room full of curious objects and a small hero.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; place the subject in a hand-drawn room full of curious clickable objects.',
+      color_and_tone:
+        'Warm storybook colors with soft shading, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Soft painted light from a window, kept consistent across the whole image.',
+      texture_and_material:
+        'Hand-drawn lines, painted fills and clutter, kept consistent across the whole image.',
+      camera_and_composition:
+        'Side-on stage view of a single room, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with witty curiosity, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean capture with no cursor or text, kept consistent across the whole image.',
+      creative_brief:
+        "Hand-drawn adventure room capture: an original point-and-click adventure screenshot of a lovingly drawn cluttered room full of curious objects and a small hero. Carry it through hand-drawn room, curious objects, small hero, stage view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'hand-drawn room; curious objects; small hero; stage view',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-171',
+    name: 'Tilt Maze Rolling-Ball Capture',
+    displayName: 'Tilt Maze Rolling-Ball Capture',
+    styleAnchors: [
+      'Tilt Maze Rolling-Ball Capture',
+      'tilting maze ball game screenshot',
+      'tilting maze',
+    ],
+    category: '8. Puzzle Chambers & Adventure Setpieces',
+    domain: 'tilting maze ball game screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Tilt maze rolling-ball capture: an original screenshot of a glossy ball rolling through a tilting maze board suspended in space, rails, holes and ramps.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject as a ball or rider inside a tilting maze board.',
+      color_and_tone: 'Glossy candy colors on a dark sky, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Bright reflections on the ball and rails, kept consistent across the whole image.',
+      texture_and_material: 'Glossy ball, wooden or plastic board and rails.',
+      camera_and_composition:
+        'Angled view of the tilted board, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with delicate balance, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean capture with no timer text, kept consistent across the whole image.',
+      creative_brief:
+        "Tilt maze rolling-ball capture: an original screenshot of a glossy ball rolling through a tilting maze board suspended in space, rails, holes and ramps. Carry it through tilting maze, glossy ball, floating board, holes and ramps. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'tilting maze; glossy ball; floating board; holes and ramps',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-172',
+    name: 'Clockwork Tower Puzzle Capture',
+    displayName: 'Clockwork Tower Puzzle Capture',
+    styleAnchors: ['Clockwork Tower Puzzle Capture', 'gear puzzle tower screenshot', 'giant gears'],
+    category: '8. Puzzle Chambers & Adventure Setpieces',
+    domain: 'gear puzzle tower screenshot',
+    negativePrompt:
+      'readable clock numerals, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Clockwork tower puzzle capture: an original screenshot inside a giant clock tower where the player repositions gears and pendulums to open the way up.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; place the subject among giant gears and pendulums inside a clock tower.',
+      color_and_tone: 'Brass, copper and warm dusty light, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Light through a clock face window, kept consistent across the whole image.',
+      texture_and_material:
+        'Gears, chains, wooden beams and dust, kept consistent across the whole image.',
+      camera_and_composition:
+        'Vertical view up the tower interior, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with ticking ingenuity, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean capture with no readable numerals, kept consistent across the whole image.',
+      creative_brief:
+        "Clockwork tower puzzle capture: an original screenshot inside a giant clock tower where the player repositions gears and pendulums to open the way up. Carry it through giant gears, pendulums, clock face window, vertical tower. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'giant gears; pendulums; clock face window; vertical tower',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-173',
+    name: 'Rotating Puzzle-Box Diorama Capture',
+    displayName: 'Rotating Puzzle-Box Diorama Capture',
+    styleAnchors: [
+      'Rotating Puzzle-Box Diorama Capture',
+      'isometric puzzle-box diorama screenshot',
+      'puzzle box',
+    ],
+    category: '8. Puzzle Chambers & Adventure Setpieces',
+    domain: 'isometric puzzle-box diorama screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Rotating puzzle-box diorama capture: an original screenshot of a small isometric diorama world on a rotating box, secret panels, tiny rooms and hidden mechanisms.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject tiny inside a rotating diorama puzzle box.',
+      color_and_tone:
+        'Warm wood tones with soft pastel accents, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Soft studio light on a floating diorama, kept consistent across the whole image.',
+      texture_and_material:
+        'Wood, brass hinges and miniature details, kept consistent across the whole image.',
+      camera_and_composition:
+        'Isometric view of a floating box diorama, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with tactile secrecy, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean miniature capture with no UI, kept consistent across the whole image.',
+      creative_brief:
+        "Rotating puzzle-box diorama capture: an original screenshot of a small isometric diorama world on a rotating box, secret panels, tiny rooms and hidden mechanisms. Carry it through puzzle box, isometric diorama, secret panels, tiny rooms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'puzzle box; isometric diorama; secret panels; tiny rooms',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-174',
+    name: 'First-Person Escape Room Capture',
+    displayName: 'First-Person Escape Room Capture',
+    styleAnchors: [
+      'First-Person Escape Room Capture',
+      'escape room puzzle game screenshot',
+      'locked room',
+    ],
+    category: '8. Puzzle Chambers & Adventure Setpieces',
+    domain: 'escape room puzzle game screenshot',
+    negativePrompt:
+      'readable clue text, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'First-person escape room capture: an original first-person screenshot of a locked room full of clues, combination locks, hidden compartments and ticking dread.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject in a locked puzzle room full of clues and locks.',
+      color_and_tone: 'Warm lamp light with dark corners, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Desk lamp pools and shadowed corners, kept consistent across the whole image.',
+      texture_and_material:
+        'Locks, wooden drawers, papers without text, kept consistent across the whole image.',
+      camera_and_composition:
+        'First-person over a desk of clues, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with ticking urgency, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean capture with no readable clues, kept consistent across the whole image.',
+      creative_brief:
+        "First-person escape room capture: an original first-person screenshot of a locked room full of clues, combination locks, hidden compartments and ticking dread. Carry it through locked room, clues, combination locks, first-person. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'locked room; clues; combination locks; first-person',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-175',
+    name: 'Minecart Chase Setpiece Capture',
+    displayName: 'Minecart Chase Setpiece Capture',
+    styleAnchors: [
+      'Minecart Chase Setpiece Capture',
+      'minecart ride chase screenshot',
+      'runaway minecart',
+    ],
+    category: '8. Puzzle Chambers & Adventure Setpieces',
+    domain: 'minecart ride chase screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Minecart chase setpiece capture: an original screenshot of a runaway minecart racing through a mine on rickety rails, sparks, drops and pursuing danger.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject in a runaway minecart on rickety mine rails.',
+      color_and_tone:
+        'Dark rock, lantern amber and crystal glints, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Sparks from the rails and lantern light, kept consistent across the whole image.',
+      texture_and_material:
+        'Rickety wood, rusted rails and rock, kept consistent across the whole image.',
+      camera_and_composition:
+        'Low chase angle behind the cart, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with breakneck adventure, kept consistent across the whole image.',
+      rendering_and_quality: 'Clean capture with no HUD, kept consistent across the whole image.',
+      creative_brief:
+        "Minecart chase setpiece capture: an original screenshot of a runaway minecart racing through a mine on rickety rails, sparks, drops and pursuing danger. Carry it through runaway minecart, rickety rails, sparks, mine tunnels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'runaway minecart; rickety rails; sparks; mine tunnels',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-176',
+    name: 'Collapsing Bridge Setpiece Capture',
+    displayName: 'Collapsing Bridge Setpiece Capture',
+    styleAnchors: [
+      'Collapsing Bridge Setpiece Capture',
+      'bridge collapse action screenshot',
+      'collapsing bridge',
+    ],
+    category: '8. Puzzle Chambers & Adventure Setpieces',
+    domain: 'bridge collapse action screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Collapsing bridge setpiece capture: an original cinematic screenshot of a hero sprinting across a bridge crumbling into a chasm, planks falling and dust rising.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject racing across a bridge as it collapses behind them.',
+      color_and_tone:
+        'Dusty ochres, deep chasm shadows and sky, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Dramatic light with falling debris shadows, kept consistent across the whole image.',
+      texture_and_material:
+        'Splintering wood, rope and falling stone, kept consistent across the whole image.',
+      camera_and_composition:
+        'Low angle facing the running hero, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with heart-pounding urgency, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean cinematic capture with no HUD, kept consistent across the whole image.',
+      creative_brief:
+        "Collapsing bridge setpiece capture: an original cinematic screenshot of a hero sprinting across a bridge crumbling into a chasm, planks falling and dust rising. Carry it through collapsing bridge, chasm, falling planks, sprinting hero. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'collapsing bridge; chasm; falling planks; sprinting hero',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-177',
+    name: 'Treasure Island Dig Capture',
+    displayName: 'Treasure Island Dig Capture',
+    styleAnchors: [
+      'Treasure Island Dig Capture',
+      'pirate treasure digging screenshot',
+      'tropical island',
+    ],
+    category: '8. Puzzle Chambers & Adventure Setpieces',
+    domain: 'pirate treasure digging screenshot',
+    negativePrompt:
+      'readable map labels, existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Treasure island dig capture: an original third-person screenshot of digging on a tropical island at the spot marked on a map, palm trees, shovels and a glinting chest.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject digging for treasure on a tropical island.',
+      color_and_tone:
+        'Turquoise sea, white sand and palm green, kept consistent across the whole image.',
+      lighting_and_shadow: 'Bright tropical sun, kept consistent across the whole image.',
+      texture_and_material:
+        'Sand, wood, old maps and metal chests, kept consistent across the whole image.',
+      camera_and_composition:
+        'Third-person view over the dig site, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with adventurous greed, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean capture with no readable map labels, kept consistent across the whole image.',
+      creative_brief:
+        "Treasure island dig capture: an original third-person screenshot of digging on a tropical island at the spot marked on a map, palm trees, shovels and a glinting chest. Carry it through tropical island, digging, treasure chest, palm trees. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'tropical island; digging; treasure chest; palm trees',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-178',
+    name: 'Shadow-Casting Puzzle Capture',
+    displayName: 'Shadow-Casting Puzzle Capture',
+    styleAnchors: [
+      'Shadow-Casting Puzzle Capture',
+      'light and shadow puzzle screenshot',
+      'single lamp',
+    ],
+    category: '8. Puzzle Chambers & Adventure Setpieces',
+    domain: 'light and shadow puzzle screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Shadow-casting puzzle capture: an original puzzle screenshot where objects are rotated in front of a lamp until their combined shadow forms a hidden shape on the wall.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; arrange the subject so its shadow forms a surprising shape on a wall.',
+      color_and_tone: 'Dark room, warm lamp light and crisp shadows.',
+      lighting_and_shadow:
+        'Single lamp casting a sharp shadow, kept consistent across the whole image.',
+      texture_and_material:
+        'Found objects, plaster wall and lamp glass, kept consistent across the whole image.',
+      camera_and_composition:
+        'Objects in foreground, shadow on the wall, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with quiet revelation, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean capture with a clear shadow shape, kept consistent across the whole image.',
+      creative_brief:
+        "Shadow-casting puzzle capture: an original puzzle screenshot where objects are rotated in front of a lamp until their combined shadow forms a hidden shape on the wall. Carry it through single lamp, hidden shadow shape, rotated objects, wall. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'single lamp; hidden shadow shape; rotated objects; wall',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

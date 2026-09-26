@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP12-213
+packId: pack_12
+name: Sanity Distortion Gameplay
+styleAnchors:
+  - Sanity Distortion Gameplay
+  - psychological distortion gameplay
+  - warping walls
+displayName: Sanity Distortion Gameplay
+category: 11. Psychological & Tactical Gameplay
+domain: psychological distortion gameplay
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - psychological-and-tactical-gameplay
+  - sanity-distortion
+  - gameplay-capture
+  - portable-style-study
+visualDna:
+  aesthetic: "Sanity distortion gameplay: an original first-person capture where the room warps, walls breathe and colors bleed as the character's grip on reality slips."
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject in a room that warps and breathes around them.
+  color_and_tone: Shifting desaturated tones with bleeding color, kept consistent across the whole image.
+  lighting_and_shadow: Warping light and vignette, kept consistent across the whole image.
+  texture_and_material: Stretched walls, doubled edges and chromatic fringes, kept consistent across the whole image.
+  camera_and_composition: First-person with warped perspective, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with unravelling perception, kept consistent across the whole image.
+  rendering_and_quality: Clean distortion with no UI, kept consistent across the whole image.
+  creative_brief: "Sanity distortion gameplay: an original first-person capture where the room warps, walls breathe and colors bleed as the character's grip on reality slips. Carry it through warping walls, breathing room, color bleed, first-person. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: warping walls; breathing room; color bleed; first-person
+avoidRules:
+  - existing game characters, logos or levels
+  - readable interface text
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: psychological-and-tactical-gameplay
+  categoryName: 11. Psychological & Tactical Gameplay
+  tags:
+    - curation-v2
+    - psychological-and-tactical-gameplay
+    - sanity-distortion
+    - gameplay-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: psychological distortion gameplay

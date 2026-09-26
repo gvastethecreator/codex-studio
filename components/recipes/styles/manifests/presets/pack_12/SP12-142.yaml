@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP12-142
+packId: pack_12
+name: Digital Pinball Table Capture
+styleAnchors:
+  - Digital Pinball Table Capture
+  - fantasy pinball game screenshot
+  - pinball table
+displayName: Digital Pinball Table Capture
+category: 5. Speed, Sport & Competitive Arenas
+domain: fantasy pinball game screenshot
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - speed-sport-and-competitive-arenas
+  - digital-pinball
+  - game-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Digital pinball table capture: an original screenshot of a glowing fantasy pinball table, ramps, bumpers, flippers and a chrome ball with light trails.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; turn the subject into the theme of a glowing pinball table.
+  color_and_tone: Glowing reds, golds and blues on dark playfield.
+  lighting_and_shadow: Bumper flashes and ramp glow, kept consistent across the whole image.
+  texture_and_material: Chrome ball, plastic ramps, printed playfield art, kept consistent across the whole image.
+  camera_and_composition: Angled top-down view of the whole table, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with flashing arcade thrill.
+  rendering_and_quality: Clean capture with no score text, kept consistent across the whole image.
+  creative_brief: "Digital pinball table capture: an original screenshot of a glowing fantasy pinball table, ramps, bumpers, flippers and a chrome ball with light trails. Carry it through pinball table, chrome ball, bumpers, ramps. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: pinball table; chrome ball; bumpers; ramps
+avoidRules:
+  - score text
+  - existing game characters, logos or levels
+  - readable interface text
+  - real brand sponsors
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: score text, existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: speed-sport-and-competitive-arenas
+  categoryName: 5. Speed, Sport & Competitive Arenas
+  tags:
+    - video-game-originals-vault
+    - speed-sport-and-competitive-arenas
+    - digital-pinball
+    - game-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: fantasy pinball game screenshot

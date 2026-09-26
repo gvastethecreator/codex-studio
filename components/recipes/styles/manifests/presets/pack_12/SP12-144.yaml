@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP12-144
+packId: pack_12
+name: Wrestling Ring Entrance Capture
+styleAnchors:
+  - Wrestling Ring Entrance Capture
+  - pro wrestling entrance screenshot
+  - entrance ramp
+displayName: Wrestling Ring Entrance Capture
+category: 5. Speed, Sport & Competitive Arenas
+domain: pro wrestling entrance screenshot
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - speed-sport-and-competitive-arenas
+  - ring-entrance
+  - game-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Wrestling ring entrance capture: an original pro-wrestling screenshot of a wrestler making a dramatic entrance down a ramp, pyrotechnics, spotlights and roaring crowd.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject making a flamboyant entrance toward a wrestling ring.
+  color_and_tone: Dark arena with bright spotlights and pyro colors.
+  lighting_and_shadow: Spotlights, pyrotechnic flashes and haze, kept consistent across the whole image.
+  texture_and_material: Ring ropes, capes, sequins and smoke, kept consistent across the whole image.
+  camera_and_composition: Low angle up the ramp, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with theatrical bravado, kept consistent across the whole image.
+  rendering_and_quality: Clean capture with no name graphics, kept consistent across the whole image.
+  creative_brief: "Wrestling ring entrance capture: an original pro-wrestling screenshot of a wrestler making a dramatic entrance down a ramp, pyrotechnics, spotlights and roaring crowd. Carry it through entrance ramp, pyrotechnics, spotlights, roaring crowd. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: entrance ramp; pyrotechnics; spotlights; roaring crowd
+avoidRules:
+  - name graphics
+  - existing game characters, logos or levels
+  - readable interface text
+  - real brand sponsors
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: name graphics, existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: speed-sport-and-competitive-arenas
+  categoryName: 5. Speed, Sport & Competitive Arenas
+  tags:
+    - video-game-originals-vault
+    - speed-sport-and-competitive-arenas
+    - ring-entrance
+    - game-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: pro wrestling entrance screenshot

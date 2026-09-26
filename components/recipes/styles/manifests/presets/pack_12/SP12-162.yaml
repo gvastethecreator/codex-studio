@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP12-162
+packId: pack_12
+name: Flashlight Corridor Horror Capture
+styleAnchors:
+  - Flashlight Corridor Horror Capture
+  - flashlight exploration horror screenshot
+  - flashlight cone
+displayName: Flashlight Corridor Horror Capture
+category: 7. Heists, Horror & Underworld Runs
+domain: flashlight exploration horror screenshot
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - heists-horror-and-underworld-runs
+  - flashlight-horror
+  - game-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Flashlight corridor horror capture: an original first-person horror screenshot where a single flashlight cone is the only light in a long decaying corridor.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; reveal the subject only within a single flashlight beam in darkness.
+  color_and_tone: Near black with a warm white flashlight cone.
+  lighting_and_shadow: One hard flashlight beam and dense darkness, kept consistent across the whole image.
+  texture_and_material: Peeling wallpaper, dust motes and wet floors, kept consistent across the whole image.
+  camera_and_composition: First-person down a long corridor, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with creeping dread, kept consistent across the whole image.
+  rendering_and_quality: Clean capture with no HUD, kept consistent across the whole image.
+  creative_brief: "Flashlight corridor horror capture: an original first-person horror screenshot where a single flashlight cone is the only light in a long decaying corridor. Carry it through flashlight cone, long corridor, darkness, dust motes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: flashlight cone; long corridor; darkness; dust motes
+avoidRules:
+  - existing game characters, logos or levels
+  - readable interface text
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: heists-horror-and-underworld-runs
+  categoryName: 7. Heists, Horror & Underworld Runs
+  tags:
+    - video-game-originals-vault
+    - heists-horror-and-underworld-runs
+    - flashlight-horror
+    - game-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: flashlight exploration horror screenshot

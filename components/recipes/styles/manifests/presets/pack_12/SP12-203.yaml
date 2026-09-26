@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP12-203
+packId: pack_12
+name: Directional Swordplay Duel Gameplay
+styleAnchors:
+  - Directional Swordplay Duel Gameplay
+  - stance-based sword duel gameplay
+  - heavy armor duel
+displayName: Directional Swordplay Duel Gameplay
+category: 10. Graphic & Feudal Gameplay
+domain: stance-based sword duel gameplay
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - graphic-and-feudal-gameplay
+  - stance-duel
+  - gameplay-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Directional swordplay duel gameplay: an original third-person capture of a tense sword duel where fighters shift stances high, left and right in heavy armor.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject in a tense heavy-armor sword duel of shifting stances.
+  color_and_tone: Steel grey, torchlight and faction colors, kept consistent across the whole image.
+  lighting_and_shadow: Torchlit courtyard with sparks, kept consistent across the whole image.
+  texture_and_material: Plate armor, chain mail and stone, kept consistent across the whole image.
+  camera_and_composition: Over-the-shoulder facing the opponent, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with measured tension, kept consistent across the whole image.
+  rendering_and_quality: Clean capture with no stance UI, kept consistent across the whole image.
+  creative_brief: "Directional swordplay duel gameplay: an original third-person capture of a tense sword duel where fighters shift stances high, left and right in heavy armor. Carry it through heavy armor duel, shifting stances, sparks, courtyard. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: heavy armor duel; shifting stances; sparks; courtyard
+avoidRules:
+  - stance indicators
+  - existing game characters, logos or levels
+  - readable interface text
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: stance indicators, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: graphic-and-feudal-gameplay
+  categoryName: 10. Graphic & Feudal Gameplay
+  tags:
+    - curation-v2
+    - graphic-and-feudal-gameplay
+    - stance-duel
+    - gameplay-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: stance-based sword duel gameplay

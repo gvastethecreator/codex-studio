@@ -1,0 +1,278 @@
+import type { Create, Spec } from '../tools/apply';
+import { STYLE_AVOID } from './_style';
+import { dna } from './_strict';
+
+// Video game originals vault, gothic and dungeon gameplay: gameplay-frame captures. The six
+// reference-titled originals get fully original card briefs; fourteen new descriptor-named gameplay
+// looks add roguelite crypts, moonlit castle side-views, first-person crypts, lock-on boss duels,
+// twin-stick dungeons, co-op brawlers, tank-control manors, crypt thief stealth, night village
+// monster hunts, dungeon overlord builds, necromancer minion armies, pixel roguelike descents,
+// ghost ship boardings and cursed forest survival.
+const play = (
+  name: string,
+  domain: string,
+  tag: string,
+  fields: Parameters<typeof dna>[0],
+  avoid: string[],
+  briefs: [string, string, string],
+): Create => ({
+  name,
+  domain,
+  tags: [tag, 'gameplay-capture', 'portable-style-study'],
+  dna: dna(fields),
+  avoid: [...avoid, 'existing game characters, logos or levels', 'readable interface text', 'gore', ...STYLE_AVOID],
+  briefs,
+});
+
+const keep = 'Preserve the requested identity, count, pose and action with original characters';
+
+const spec: Spec = {
+  pack: 'pack_12',
+  category: '9. Gothic & Dungeon Gameplay',
+  updates: {
+    'SP12-081': { briefs: [
+      'Seen from a fixed elevated action-RPG view, a small original sorceress hurls a fan of ice shards across a dark stone chamber as a ring of horned demons closes in around her glowing circle. No readable text or logo.',
+      'From an elevated isometric view, a lone barbarian clears an entire dungeon room and then carefully picks up every single gold coin, one by one. No readable text or logo.',
+      'From a fixed elevated view, a dark crypt room is quiet, and a single glowing item lies on the floor beside a coffin with its lid slightly open. No readable text or logo.',
+    ] },
+    'SP12-082': { briefs: [
+      'From an elevated action-RPG camera, an original druid transforms into a bear mid-leap as a hulking ice demon rises from a frozen lake full of drowned statues. No readable text or logo.',
+      'Seen from above in a grim village, a fearsome warrior has stopped fighting to help a villager catch a runaway chicken. No readable text or logo.',
+      "From an elevated view on a rain-soaked road, a lone wanderer's torch lights a roadside shrine where the candles have just been relit. No readable text or logo.",
+    ] },
+    'SP12-083': { briefs: [
+      'Following an original hunter in a long coat through a gaslit street in third person, the camera catches the moment a gaunt beast drops from a rooftop between two lamp posts. No readable text or logo.',
+      'In a third-person gothic street, a heavily armed hunter carefully checks every corner and is ambushed only by a very small, very aggressive crow. No readable text or logo.',
+      'In a third-person view of a foggy plaza, a lamp post flickers on, revealing a crowd of motionless figures that were not there a moment ago. No readable text or logo.',
+    ] },
+    'SP12-084': { briefs: [
+      'Staggering under heavy stone armor in a third-person swamp, an original gaunt warrior braces against a charging giant wearing a church bell as a helmet. No readable text or logo.',
+      'In a grim third-person fortress, a warrior hardens his whole body into stone just as an enemy politely offers him a cup of tea. No readable text or logo.',
+      'In a third-person view of a flooded crypt, an empty shell of armor rises from the water on its own. No readable text or logo.',
+    ] },
+    'SP12-085': { briefs: [
+      'Raising a lantern that reveals a second hidden realm in third person, an original knight sees a bridge of bones appear across a chasm while monsters from the other world claw through the veil. No readable text or logo.',
+      'In a dual-realm gameplay view, a warrior switches worlds to escape an enemy and finds the same enemy waiting there, looking equally surprised. No readable text or logo.',
+      'Seen through a glowing lantern, a quiet chapel shows its other-realm version, where every pew is filled with silent grey figures. No readable text or logo.',
+    ] },
+    'SP12-086': { briefs: [
+      'Holding a failing lantern in first person, an original visitor inches through a castle cellar as the darkness at the edge of the light seems to breathe. No readable text or logo.',
+      'In a first-person manor, a terrified visitor hides inside a wardrobe only to find it already occupied by a very startled owl. No readable text or logo.',
+      "In a first-person view of a castle library, a book slides off the shelf by itself, and the candle flame bends toward the gap. No readable text or logo.",
+    ] },
+  },
+  creates: [
+    play('Top-Down Roguelite Crypt Gameplay', 'overhead roguelite dungeon gameplay', 'roguelite-crypt', {
+      aesthetic: 'Top-down roguelite crypt gameplay: an original overhead dungeon-run capture with a small hero, clustered enemies, glowing attack arcs and procedurally tiled crypt rooms.',
+      subject_treatment: `${keep}; show the subject as a small overhead figure in a procedurally tiled crypt room.`,
+      color_and_tone: "Dark stone with vivid attack colors, kept consistent across the whole image.",
+      lighting_and_shadow: "Torch pools and glowing attack effects, kept consistent across the whole image.",
+      texture_and_material: "Tiled floors, bones, urns and particle arcs, kept consistent across the whole image.",
+      camera_and_composition: "Overhead view with room walls framing, kept consistent across the whole image.",
+      atmosphere_and_mood: 'Keep the requested mood with frantic run-based tension.',
+      rendering_and_quality: "Clean gameplay capture with no UI text, kept consistent across the whole image.",
+      key_features: 'overhead crypt; glowing attack arcs; enemy clusters; tiled rooms',
+    }, [], [
+      'Seen from above in a crypt room of cracked tiles, an original hero swings a flaming chain in a wide arc as dozens of skeletons pour out of the sarcophagi around her. No readable text or logo.',
+      'From an overhead view, a roguelite hero clears a whole crypt room and then accidentally smashes the only healing urn. No readable text or logo.',
+      'From above, a crypt room is cleared and silent, but the door to the next room is breathing slowly in and out. No readable text or logo.',
+    ]),
+    play('Moonlit Castle Side-View Gameplay', 'side-view gothic exploration gameplay', 'moonlit-castle', {
+      aesthetic: 'Moonlit castle side-view gameplay: an original side-view exploration capture of a lone hero in towering gothic halls, stained moonlight, candles and hidden passages.',
+      subject_treatment: `${keep}; show the subject in a side-view gothic castle corridor.`,
+      color_and_tone: 'Deep blue moonlight, crimson drapes and candle gold.',
+      lighting_and_shadow: "Moonlight through tall windows and candle glow, kept consistent across the whole image.",
+      texture_and_material: "Carved stone, velvet and iron, kept consistent across the whole image.",
+      camera_and_composition: "Side-on with parallax background halls, kept consistent across the whole image.",
+      atmosphere_and_mood: 'Keep the requested mood with lonely gothic grandeur.',
+      rendering_and_quality: "Clean gameplay capture with no UI text, kept consistent across the whole image.",
+      key_features: 'side view; moonlit halls; parallax; candles',
+    }, [], [
+      'Walking a side-view castle hall under stained moonlight, an original huntress faces a suit of armor that towers three stories high and has just begun to move. No readable text or logo.',
+      "Breaking a candle in a gothic side-view castle, a hero is startled when a whole roast turkey falls out of it. No readable text or logo.",
+      'In a side-view gothic hall, the portraits on the wall are all facing the hero, and one of them has stepped halfway out of its frame. No readable text or logo.',
+    ]),
+    play('Real-Time First-Person Crypt Gameplay', 'first-person dungeon crawler gameplay', 'fp-crypt', {
+      aesthetic: 'Real-time first-person crypt gameplay: an original first-person dungeon crawler capture with a hand holding a torch and a weapon, crumbling crypt corridors and lurking shapes.',
+      subject_treatment: `${keep}; show the subject from first person with a torch and weapon in a crypt.`,
+      color_and_tone: "Torch orange against cold grey stone, kept consistent across the whole image.",
+      lighting_and_shadow: "Torch flicker and deep shadow, kept consistent across the whole image.",
+      texture_and_material: "Wet stone, cobwebs and old bones, kept consistent across the whole image.",
+      camera_and_composition: "First-person with hands in view, kept consistent across the whole image.",
+      atmosphere_and_mood: "Keep the requested mood with claustrophobic danger, kept consistent across the whole image.",
+      rendering_and_quality: "Clean capture with no UI text, kept consistent across the whole image.",
+      key_features: 'first-person hands; torch; crypt corridor; lurking shapes',
+    }, [], [
+      'Holding a torch and a notched sword in first person, an original crypt delver faces a corridor where a giant spider has spun its web between two stone kings. No readable text or logo.',
+      'In a first-person crypt, a delver carefully checks a treasure chest for traps, and the chest politely opens itself for him. No readable text or logo.',
+      'In a first-person corridor, the torchlight shows the passage ahead, and a second torch appears far down it, moving closer. No readable text or logo.',
+    ]),
+    play('Lock-On Boss Duel Gameplay', 'third-person boss battle gameplay', 'lockon-duel', {
+      aesthetic: 'Lock-on boss duel gameplay: an original third-person capture of a small warrior locked onto a colossal boss in a ruined arena, dodge roll, fog and dramatic scale.',
+      subject_treatment: `${keep}; show the subject locked onto a huge boss in a third-person duel.`,
+      color_and_tone: 'Grey fog, dark stone and one vivid boss accent.',
+      lighting_and_shadow: "Dramatic backlight and dust, kept consistent across the whole image.",
+      texture_and_material: "Worn armor, ruined stone and boss hide, kept consistent across the whole image.",
+      camera_and_composition: "Over-the-shoulder with boss filling the frame, kept consistent across the whole image.",
+      atmosphere_and_mood: "Keep the requested mood with punishing grandeur, kept consistent across the whole image.",
+      rendering_and_quality: "Clean capture with no health bars, kept consistent across the whole image.",
+      key_features: 'lock-on camera; colossal boss; dodge roll; ruined arena',
+    }, ['health bars'], [
+      'Rolling beneath a swing from a colossal crowned wolf, an original warrior keeps her lock-on as the beast\'s mane of flames lights the ruined arena. No readable text or logo.',
+      "Dodging a colossal boss perfectly in a ruined arena, a warrior lands in a deep puddle and is very unhappy about it. No readable text or logo.",
+      'In a boss arena after the battle, the fog wall is gone, and a small figure sits calmly on the boss\'s empty throne. No readable text or logo.',
+    ]),
+    play('Twin-Stick Dungeon Shooter Gameplay', 'overhead dungeon shooter gameplay', 'twinstick-dungeon', {
+      aesthetic: 'Twin-stick dungeon shooter gameplay: an original overhead capture of a hero firing magical bullets in every direction through a dungeon full of bullet-hell enemies.',
+      subject_treatment: `${keep}; show the subject firing glowing projectiles from an overhead dungeon view.`,
+      color_and_tone: "Dark dungeon with neon bullet patterns, kept consistent across the whole image.",
+      lighting_and_shadow: "Glowing projectiles lighting the floor, kept consistent across the whole image.",
+      texture_and_material: "Pixel or low-poly dungeon tiles and particles, kept consistent across the whole image.",
+      camera_and_composition: "Overhead view with dense bullet patterns, kept consistent across the whole image.",
+      atmosphere_and_mood: "Keep the requested mood with frantic playfulness, kept consistent across the whole image.",
+      rendering_and_quality: "Clean capture with readable patterns, kept consistent across the whole image.",
+      key_features: 'overhead; bullet patterns; glowing shots; dungeon',
+    }, [], [
+      'Weaving through a spiral of glowing enemy bullets, an original gunslinger mage fires back at a floating skull boss whose eye sockets pour magenta orbs into the dungeon. No readable text or logo.',
+      'In a dungeon full of bullets, a hero dodges everything perfectly and is defeated by a single slow-moving bubble. No readable text or logo.',
+      'In an overhead dungeon room after the battle, the floor is covered with spent bullets arranged into the shape of an arrow. No readable text or logo.',
+    ]),
+    play('Co-op Dungeon Brawler Gameplay', 'four-player dungeon brawler gameplay', 'coop-brawler', {
+      aesthetic: 'Co-op dungeon brawler gameplay: an original isometric capture of four color-coded heroes fighting side by side through a dungeon hall packed with monsters.',
+      subject_treatment: `${keep}; show the subject as one of four color-coded heroes in a dungeon brawl.`,
+      color_and_tone: "Four distinct hero colors against dark stone, kept consistent across the whole image.",
+      lighting_and_shadow: "Torchlight and spell flashes, kept consistent across the whole image.",
+      texture_and_material: "Chunky armor, stone floors and loot, kept consistent across the whole image.",
+      camera_and_composition: "Isometric wide view of the party, kept consistent across the whole image.",
+      atmosphere_and_mood: "Keep the requested mood with rowdy teamwork, kept consistent across the whole image.",
+      rendering_and_quality: "Clean capture with no UI, kept consistent across the whole image.",
+      key_features: 'four heroes; color-coded; isometric; monster horde',
+    }, [], [
+      'Fighting back-to-back in a dungeon hall, an original quartet of red, blue, green and gold heroes holds off an avalanche of goblins as a troll smashes through the wall. No readable text or logo.',
+      'In a four-player dungeon brawl, three heroes fight bravely while the fourth argues with a treasure chest. No readable text or logo.',
+      'In a quiet dungeon hall, four heroes stand in a circle, all facing inward at a fifth shadow among them. No readable text or logo.',
+    ]),
+    play('Tank-Control Manor Gameplay', 'classic survival horror gameplay', 'tank-manor', {
+      aesthetic: 'Tank-control manor gameplay: an original classic survival-horror capture with pre-rendered manor rooms, a small 3D survivor and dramatic fixed angles.',
+      subject_treatment: `${keep}; show the subject small in a pre-rendered manor room from a fixed camera.`,
+      color_and_tone: "Muted browns, greens and lamp amber, kept consistent across the whole image.",
+      lighting_and_shadow: "Moody pre-rendered lighting, kept consistent across the whole image.",
+      texture_and_material: "Detailed wallpaper, wood and dust, kept consistent across the whole image.",
+      camera_and_composition: "Fixed dramatic angle from a corner, kept consistent across the whole image.",
+      atmosphere_and_mood: "Keep the requested mood with slow-building dread, kept consistent across the whole image.",
+      rendering_and_quality: "Authentic classic horror capture, kept consistent across the whole image.",
+      key_features: 'pre-rendered rooms; fixed camera; small survivor; manor',
+    }, [], [
+      'Seen from a high fixed angle in a pre-rendered dining hall, an original survivor raises a pistol as a creature crawls out of the fireplace. No readable text or logo.',
+      'In a pre-rendered manor, a survivor combines two herbs, a key and a crank, and somehow ends up with a sandwich. No readable text or logo.',
+      'In a pre-rendered hallway, the camera angle changes, and a figure that was in the previous shot is not in this one. No readable text or logo.',
+    ]),
+    play('Crypt Thief Stealth Gameplay', 'first-person thief stealth gameplay', 'crypt-thief', {
+      aesthetic: 'Crypt thief stealth gameplay: an original first-person stealth capture of a thief in shadows, a glowing light indicator mood, guards with lanterns and gothic interiors.',
+      subject_treatment: `${keep}; show the subject from first person hidden in shadow among patrolling guards.`,
+      color_and_tone: "Deep shadow with lantern gold, kept consistent across the whole image.",
+      lighting_and_shadow: "Pools of light and total darkness, kept consistent across the whole image.",
+      texture_and_material: "Stone, tapestries and polished loot, kept consistent across the whole image.",
+      camera_and_composition: "First-person from a shadowed corner, kept consistent across the whole image.",
+      atmosphere_and_mood: "Keep the requested mood with breathless stealth, kept consistent across the whole image.",
+      rendering_and_quality: "Clean capture with no UI, kept consistent across the whole image.",
+      key_features: 'first-person stealth; shadows; guards with lanterns; loot',
+    }, [], [
+      'Crouched in shadow behind a tapestry in first person, an original thief watches a guard with a lantern pass a pedestal holding a jeweled skull. No readable text or logo.',
+      'In a dark mansion, a master thief steals everything in the room, including the guard\'s sandwich. No readable text or logo.',
+      'From a shadowed corner in first person, a guard\'s lantern sweeps past, and the thief\'s own shadow is already standing in the light. No readable text or logo.',
+    ]),
+    play('Night Village Monster Hunt Gameplay', 'third-person monster hunter village gameplay', 'night-village', {
+      aesthetic: 'Night village monster hunt gameplay: an original third-person capture of a hunter stalking a creature through a dark village, torches, fog and shuttered houses.',
+      subject_treatment: `${keep}; show the subject hunting a creature through a foggy night village.`,
+      color_and_tone: "Blue night, torch orange and fog grey, kept consistent across the whole image.",
+      lighting_and_shadow: "Torchlight and moon rims, kept consistent across the whole image.",
+      texture_and_material: "Timber houses, mud, fog and silver weapons, kept consistent across the whole image.",
+      camera_and_composition: "Third-person over-the-shoulder down a lane, kept consistent across the whole image.",
+      atmosphere_and_mood: 'Keep the requested mood with tense folk horror.',
+      rendering_and_quality: "Clean capture with no UI, kept consistent across the whole image.",
+      key_features: 'night village; hunter; creature; fog',
+    }, [], [
+      'Stalking down a fog-drowned village lane with a silver crossbow, an original hunter sees a tall creature with antlers peering over a rooftop. No readable text or logo.',
+      'In a dark village, a monster hunter finally corners the beast, which turns out to be a very large and very lost goat. No readable text or logo.',
+      "Drifting through a fog-covered village, the smoke from the chimneys is sinking down to the ground and flowing toward the church. No readable text or logo.",
+    ]),
+    play('Dungeon Overlord Build Gameplay', 'dungeon management gameplay', 'dungeon-overlord', {
+      aesthetic: 'Dungeon overlord build gameplay: an original management capture of an evil overlord\'s dungeon seen from above, imps digging tunnels, traps and treasure rooms.',
+      subject_treatment: `${keep}; show the subject within a dungeon being built by imps from above.`,
+      color_and_tone: "Dark earth, lava orange and gold treasure, kept consistent across the whole image.",
+      lighting_and_shadow: "Lava glow and torchlight, kept consistent across the whole image.",
+      texture_and_material: "Dug earth, carved stone and gold piles, kept consistent across the whole image.",
+      camera_and_composition: "Top-down angled view of the dungeon, kept consistent across the whole image.",
+      atmosphere_and_mood: "Keep the requested mood with mischievous villainy, kept consistent across the whole image.",
+      rendering_and_quality: "Clean management capture with no UI, kept consistent across the whole image.",
+      key_features: 'imps digging; traps; treasure rooms; overhead dungeon',
+    }, [], [
+      'Seen from above, an original dungeon grows as imps dig new tunnels toward a lava river while a band of heroes walks straight into a trap room. No readable text or logo.',
+      "Digging a beautiful new tunnel for their overlord, a team of imps has accidentally broken straight into the heroes' village bakery. No readable text or logo.",
+      'From above, the dungeon is quiet, and a new tunnel appears that no imp has dug. No readable text or logo.',
+    ]),
+    play('Necromancer Minion Gameplay', 'isometric undead army gameplay', 'necro-minions', {
+      aesthetic: 'Necromancer minion gameplay: an original isometric capture of a necromancer commanding a swarm of skeleton minions through a graveyard battle.',
+      subject_treatment: `${keep}; show the subject leading a swarm of skeleton minions from an isometric view.`,
+      color_and_tone: 'Sickly green magic, bone white and night blue.',
+      lighting_and_shadow: "Green magic glow and moonlight, kept consistent across the whole image.",
+      texture_and_material: "Bones, grave soil and robes, kept consistent across the whole image.",
+      camera_and_composition: "Isometric view with minion swarm, kept consistent across the whole image.",
+      atmosphere_and_mood: "Keep the requested mood with dark mischief, kept consistent across the whole image.",
+      rendering_and_quality: "Clean capture with no UI, kept consistent across the whole image.",
+      key_features: 'necromancer; skeleton swarm; graveyard; green magic',
+    }, [], [
+      'Raising a swarm of skeletons from a graveyard, an original necromancer sends them charging at a paladin whose shield is blazing with holy light. No readable text or logo.',
+      'In an isometric graveyard, a necromancer raises an army of skeleton minions, and one of them immediately runs off to find its missing arm. No readable text or logo.',
+      'In a quiet graveyard, the necromancer has left, but one skeleton minion still stands guard beside his empty chair. No readable text or logo.',
+    ]),
+    play('Pixel Roguelike Descent Gameplay', '2D pixel roguelike gameplay', 'pixel-roguelike', {
+      aesthetic: 'Pixel roguelike descent gameplay: an original 2D pixel capture of a tiny adventurer descending through procedurally generated caverns full of traps and odd creatures.',
+      subject_treatment: `${keep}; show the subject as a tiny pixel adventurer descending through caverns.`,
+      color_and_tone: "Earthy pixel palette with bright treasure, kept consistent across the whole image.",
+      lighting_and_shadow: "Torch pixels and dark cave edges, kept consistent across the whole image.",
+      texture_and_material: "Chunky pixel rock, ropes and spikes, kept consistent across the whole image.",
+      camera_and_composition: "Side view of stacked cavern ledges, kept consistent across the whole image.",
+      atmosphere_and_mood: "Keep the requested mood with scrappy peril, kept consistent across the whole image.",
+      rendering_and_quality: "Crisp pixel capture with no UI, kept consistent across the whole image.",
+      key_features: 'pixel caverns; tiny adventurer; traps; descent',
+    }, [], [
+      'Dropping down a rope into a pixel cavern, an original tiny explorer lands beside an idol just as a boulder rolls out of a hidden tunnel above. No readable text or logo.',
+      "Carefully avoiding every spike in a blocky cave, a tiny explorer is knocked straight into them by a friendly bat. No readable text or logo.",
+      'Deep in a pixel cavern, a shopkeeper\'s stall stands abandoned, with a single lamp still lit. No readable text or logo.',
+    ]),
+    play('Ghost Ship Boarding Gameplay', 'haunted ship action gameplay', 'ghost-ship', {
+      aesthetic: 'Ghost ship boarding gameplay: an original third-person capture of boarding a spectral ship in fog, glowing ghost crew, rotting rigging and green lanterns.',
+      subject_treatment: `${keep}; show the subject boarding a spectral ship in fog.`,
+      color_and_tone: "Fog grey, ghost green and dark wood, kept consistent across the whole image.",
+      lighting_and_shadow: "Spectral glow and lantern light, kept consistent across the whole image.",
+      texture_and_material: "Rotting wood, torn sails and translucent spirits, kept consistent across the whole image.",
+      camera_and_composition: "Third-person from the rail or deck, kept consistent across the whole image.",
+      atmosphere_and_mood: 'Keep the requested mood with eerie maritime dread.',
+      rendering_and_quality: "Clean capture with no UI, kept consistent across the whole image.",
+      key_features: 'ghost ship; spectral crew; fog; green lanterns',
+    }, [], [
+      'Swinging onto the deck of a spectral galleon in thick fog, an original pirate captain draws her cutlass as the ghost crew turns their glowing faces toward her. No readable text or logo.',
+      "Climbing onto a spectral galleon, a brave pirate is greeted by a ghostly crew who only want to know if he brought any fresh fruit. No readable text or logo.",
+      'On the deck of a ghost ship, the wheel is turning slowly, and the green lantern beside it shows no one steering. No readable text or logo.',
+    ]),
+    play('Cursed Forest Survival Gameplay', 'dark forest survival gameplay', 'cursed-forest', {
+      aesthetic: 'Cursed forest survival gameplay: an original third-person capture of a survivor in a dark twisted forest, campfire as the only safe zone and shapes between the trees.',
+      subject_treatment: `${keep}; show the subject surviving near a campfire in a twisted dark forest.`,
+      color_and_tone: 'Black trees, ember orange and cold blue night.',
+      lighting_and_shadow: "Campfire light fading into darkness, kept consistent across the whole image.",
+      texture_and_material: "Twisted bark, dead leaves and ash, kept consistent across the whole image.",
+      camera_and_composition: "Third-person view from behind the fire, kept consistent across the whole image.",
+      atmosphere_and_mood: "Keep the requested mood with fragile safety, kept consistent across the whole image.",
+      rendering_and_quality: "Clean capture with no UI, kept consistent across the whole image.",
+      key_features: 'campfire safe zone; twisted forest; darkness; shapes',
+    }, [], [
+      'Feeding the last branch to a campfire in a twisted forest, an original survivor watches tall shapes with antlers circle just beyond the light. No readable text or logo.',
+      "Building the most elaborate fort imaginable around a campfire in a twisted forest, a survivor forgot to leave a door. No readable text or logo.",
+      'In a dark forest, the campfire burns brightly, and the shadows it casts point toward the fire instead of away. No readable text or logo.',
+    ]),
+  ],
+};
+
+export default spec;

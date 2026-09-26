@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP12-182
+packId: pack_12
+name: Lock-On Boss Duel Gameplay
+styleAnchors:
+  - Lock-On Boss Duel Gameplay
+  - third-person boss battle gameplay
+  - lock-on camera
+displayName: Lock-On Boss Duel Gameplay
+category: 9. Gothic & Dungeon Gameplay
+domain: third-person boss battle gameplay
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - gothic-and-dungeon-gameplay
+  - lockon-duel
+  - gameplay-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Lock-on boss duel gameplay: an original third-person capture of a small warrior locked onto a colossal boss in a ruined arena, dodge roll, fog and dramatic scale.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject locked onto a huge boss in a third-person duel.
+  color_and_tone: Grey fog, dark stone and one vivid boss accent.
+  lighting_and_shadow: Dramatic backlight and dust, kept consistent across the whole image.
+  texture_and_material: Worn armor, ruined stone and boss hide, kept consistent across the whole image.
+  camera_and_composition: Over-the-shoulder with boss filling the frame, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with punishing grandeur, kept consistent across the whole image.
+  rendering_and_quality: Clean capture with no health bars, kept consistent across the whole image.
+  creative_brief: "Lock-on boss duel gameplay: an original third-person capture of a small warrior locked onto a colossal boss in a ruined arena, dodge roll, fog and dramatic scale. Carry it through lock-on camera, colossal boss, dodge roll, ruined arena. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: lock-on camera; colossal boss; dodge roll; ruined arena
+avoidRules:
+  - health bars
+  - existing game characters, logos or levels
+  - readable interface text
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: health bars, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: gothic-and-dungeon-gameplay
+  categoryName: 9. Gothic & Dungeon Gameplay
+  tags:
+    - curation-v2
+    - gothic-and-dungeon-gameplay
+    - lockon-duel
+    - gameplay-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: third-person boss battle gameplay

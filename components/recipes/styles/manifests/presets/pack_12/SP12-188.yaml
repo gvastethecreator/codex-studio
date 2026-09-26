@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP12-188
+packId: pack_12
+name: Dungeon Overlord Build Gameplay
+styleAnchors:
+  - Dungeon Overlord Build Gameplay
+  - dungeon management gameplay
+  - imps digging
+displayName: Dungeon Overlord Build Gameplay
+category: 9. Gothic & Dungeon Gameplay
+domain: dungeon management gameplay
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - gothic-and-dungeon-gameplay
+  - dungeon-overlord
+  - gameplay-capture
+  - portable-style-study
+visualDna:
+  aesthetic: "Dungeon overlord build gameplay: an original management capture of an evil overlord's dungeon seen from above, imps digging tunnels, traps and treasure rooms."
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject within a dungeon being built by imps from above.
+  color_and_tone: Dark earth, lava orange and gold treasure, kept consistent across the whole image.
+  lighting_and_shadow: Lava glow and torchlight, kept consistent across the whole image.
+  texture_and_material: Dug earth, carved stone and gold piles, kept consistent across the whole image.
+  camera_and_composition: Top-down angled view of the dungeon, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with mischievous villainy, kept consistent across the whole image.
+  rendering_and_quality: Clean management capture with no UI, kept consistent across the whole image.
+  creative_brief: "Dungeon overlord build gameplay: an original management capture of an evil overlord's dungeon seen from above, imps digging tunnels, traps and treasure rooms. Carry it through imps digging, traps, treasure rooms, overhead dungeon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: imps digging; traps; treasure rooms; overhead dungeon
+avoidRules:
+  - existing game characters, logos or levels
+  - readable interface text
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: gothic-and-dungeon-gameplay
+  categoryName: 9. Gothic & Dungeon Gameplay
+  tags:
+    - curation-v2
+    - gothic-and-dungeon-gameplay
+    - dungeon-overlord
+    - gameplay-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: dungeon management gameplay

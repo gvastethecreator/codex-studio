@@ -317,4 +317,366 @@ export const GENERATED_STYLE_PRESETS = [
         "Rocket League Cobalt Docks: in-game screenshot language informed by Rocket League, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
+  {
+    id: 'SP12-139',
+    name: 'Kart Racing Item Chaos Capture',
+    displayName: 'Kart Racing Item Chaos Capture',
+    styleAnchors: [
+      'Kart Racing Item Chaos Capture',
+      'cartoon kart racing screenshot',
+      'cartoon karts',
+    ],
+    category: '5. Speed, Sport & Competitive Arenas',
+    domain: 'cartoon kart racing screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Kart racing item chaos capture: an original cartoon kart race screenshot with bouncy karts, item explosions, banana peels and colorful tracks through fantasy lands.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject driving a cartoon kart amid flying items and rivals.',
+      color_and_tone:
+        'Saturated primary colors and sunny skies, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Bright cartoon light with small shadows, kept consistent across the whole image.',
+      texture_and_material:
+        'Glossy karts, grass, candy-like tracks and explosions, kept consistent across the whole image.',
+      camera_and_composition: 'Chase camera behind the kart with rivals nearby.',
+      atmosphere_and_mood:
+        'Keep the requested mood with gleeful chaos, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean cartoon capture with no HUD text, kept consistent across the whole image.',
+      creative_brief:
+        "Kart racing item chaos capture: an original cartoon kart race screenshot with bouncy karts, item explosions, banana peels and colorful tracks through fantasy lands. Carry it through cartoon karts, item explosions, fantasy track, chase camera. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'cartoon karts; item explosions; fantasy track; chase camera',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-140',
+    name: 'Street Skate Trick Line Capture',
+    displayName: 'Street Skate Trick Line Capture',
+    styleAnchors: [
+      'Street Skate Trick Line Capture',
+      'skateboarding game screenshot',
+      'mid-air trick',
+    ],
+    category: '5. Speed, Sport & Competitive Arenas',
+    domain: 'skateboarding game screenshot',
+    negativePrompt:
+      'readable graffiti, existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Street skate trick line capture: an original skateboarding game screenshot of a mid-air trick over city stairs and rails, fisheye feel and sunny concrete.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject mid-trick on a skateboard over urban features.',
+      color_and_tone:
+        'Sunny concrete greys with bold clothing colors, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Bright afternoon sun and crisp shadows, kept consistent across the whole image.',
+      texture_and_material: 'Concrete, metal rails, grip tape and clean painted walls.',
+      camera_and_composition:
+        'Low fisheye-style follow camera, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with loose street freedom.',
+      rendering_and_quality: 'Clean capture with no trick names or scores.',
+      creative_brief:
+        "Street skate trick line capture: an original skateboarding game screenshot of a mid-air trick over city stairs and rails, fisheye feel and sunny concrete. Carry it through mid-air trick, city stairs, fisheye, sunny concrete. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'mid-air trick; city stairs; fisheye; sunny concrete',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-141',
+    name: 'Backcountry Snowboard Descent Capture',
+    displayName: 'Backcountry Snowboard Descent Capture',
+    styleAnchors: [
+      'Backcountry Snowboard Descent Capture',
+      'snowboard mountain game screenshot',
+      'powder spray',
+    ],
+    category: '5. Speed, Sport & Competitive Arenas',
+    domain: 'snowboard mountain game screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Backcountry snowboard descent capture: an original snowboarding screenshot of a rider carving deep powder down a vast mountain, snow spray and blue sky.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject carving or jumping on a snowboard down a vast slope.',
+      color_and_tone: 'Brilliant white, deep blue sky and bright outerwear.',
+      lighting_and_shadow:
+        'Hard alpine sun with blue snow shadows, kept consistent across the whole image.',
+      texture_and_material:
+        'Powder spray, ice ridges and pine trees, kept consistent across the whole image.',
+      camera_and_composition:
+        'Wide follow camera down the mountain, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with exhilarating freedom, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean capture with no HUD text, kept consistent across the whole image.',
+      creative_brief:
+        "Backcountry snowboard descent capture: an original snowboarding screenshot of a rider carving deep powder down a vast mountain, snow spray and blue sky. Carry it through powder spray, vast mountain, blue sky, carving rider. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'powder spray; vast mountain; blue sky; carving rider',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-142',
+    name: 'Digital Pinball Table Capture',
+    displayName: 'Digital Pinball Table Capture',
+    styleAnchors: [
+      'Digital Pinball Table Capture',
+      'fantasy pinball game screenshot',
+      'pinball table',
+    ],
+    category: '5. Speed, Sport & Competitive Arenas',
+    domain: 'fantasy pinball game screenshot',
+    negativePrompt:
+      'score text, existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Digital pinball table capture: an original screenshot of a glowing fantasy pinball table, ramps, bumpers, flippers and a chrome ball with light trails.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; turn the subject into the theme of a glowing pinball table.',
+      color_and_tone: 'Glowing reds, golds and blues on dark playfield.',
+      lighting_and_shadow: 'Bumper flashes and ramp glow, kept consistent across the whole image.',
+      texture_and_material:
+        'Chrome ball, plastic ramps, printed playfield art, kept consistent across the whole image.',
+      camera_and_composition:
+        'Angled top-down view of the whole table, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with flashing arcade thrill.',
+      rendering_and_quality:
+        'Clean capture with no score text, kept consistent across the whole image.',
+      creative_brief:
+        "Digital pinball table capture: an original screenshot of a glowing fantasy pinball table, ramps, bumpers, flippers and a chrome ball with light trails. Carry it through pinball table, chrome ball, bumpers, ramps. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'pinball table; chrome ball; bumpers; ramps',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-143',
+    name: 'Versus Stage Fighter Capture',
+    displayName: 'Versus Stage Fighter Capture',
+    styleAnchors: [
+      'Versus Stage Fighter Capture',
+      'two-player fighting game screenshot',
+      'two fighters',
+    ],
+    category: '5. Speed, Sport & Competitive Arenas',
+    domain: 'two-player fighting game screenshot',
+    negativePrompt:
+      'health bars, existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Versus stage fighter capture: an original side-view fighting game screenshot of two fighters mid-clash on a dramatic stage with a watching crowd.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject as one of two fighters mid-clash on a side-view stage.',
+      color_and_tone:
+        'Vivid fighter colors against a dramatic stage, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Impact flashes and stage light, kept consistent across the whole image.',
+      texture_and_material:
+        'Detailed fighters, stage props and impact effects, kept consistent across the whole image.',
+      camera_and_composition:
+        'Side-on camera with both fighters framed, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with explosive rivalry, kept consistent across the whole image.',
+      rendering_and_quality: 'Clean capture with no health bars or text.',
+      creative_brief:
+        "Versus stage fighter capture: an original side-view fighting game screenshot of two fighters mid-clash on a dramatic stage with a watching crowd. Carry it through two fighters, side view, impact flash, dramatic stage. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'two fighters; side view; impact flash; dramatic stage',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-144',
+    name: 'Wrestling Ring Entrance Capture',
+    displayName: 'Wrestling Ring Entrance Capture',
+    styleAnchors: [
+      'Wrestling Ring Entrance Capture',
+      'pro wrestling entrance screenshot',
+      'entrance ramp',
+    ],
+    category: '5. Speed, Sport & Competitive Arenas',
+    domain: 'pro wrestling entrance screenshot',
+    negativePrompt:
+      'name graphics, existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Wrestling ring entrance capture: an original pro-wrestling screenshot of a wrestler making a dramatic entrance down a ramp, pyrotechnics, spotlights and roaring crowd.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject making a flamboyant entrance toward a wrestling ring.',
+      color_and_tone: 'Dark arena with bright spotlights and pyro colors.',
+      lighting_and_shadow:
+        'Spotlights, pyrotechnic flashes and haze, kept consistent across the whole image.',
+      texture_and_material:
+        'Ring ropes, capes, sequins and smoke, kept consistent across the whole image.',
+      camera_and_composition: 'Low angle up the ramp, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with theatrical bravado, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean capture with no name graphics, kept consistent across the whole image.',
+      creative_brief:
+        "Wrestling ring entrance capture: an original pro-wrestling screenshot of a wrestler making a dramatic entrance down a ramp, pyrotechnics, spotlights and roaring crowd. Carry it through entrance ramp, pyrotechnics, spotlights, roaring crowd. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'entrance ramp; pyrotechnics; spotlights; roaring crowd',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-145',
+    name: 'Motocross Mud Jump Capture',
+    displayName: 'Motocross Mud Jump Capture',
+    styleAnchors: ['Motocross Mud Jump Capture', 'dirt bike racing screenshot', 'dirt bike'],
+    category: '5. Speed, Sport & Competitive Arenas',
+    domain: 'dirt bike racing screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Motocross mud jump capture: an original dirt-bike racing screenshot of a rider mid-air over muddy whoops, flying clods of earth and a crowd on the hill.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject mid-air on a dirt bike over a muddy track.',
+      color_and_tone:
+        'Mud brown, bright jerseys and grey sky, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Overcast light with flying mud silhouettes, kept consistent across the whole image.',
+      texture_and_material:
+        'Mud clods, knobby tires and wet dirt, kept consistent across the whole image.',
+      camera_and_composition: 'Low angle under the jump, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with gritty adrenaline, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean capture with no sponsor text, kept consistent across the whole image.',
+      creative_brief:
+        "Motocross mud jump capture: an original dirt-bike racing screenshot of a rider mid-air over muddy whoops, flying clods of earth and a crowd on the hill. Carry it through dirt bike, mid-air jump, flying mud, crowd. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'dirt bike; mid-air jump; flying mud; crowd',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-146',
+    name: 'Esports Stadium Broadcast Capture',
+    displayName: 'Esports Stadium Broadcast Capture',
+    styleAnchors: [
+      'Esports Stadium Broadcast Capture',
+      'esports arena broadcast screenshot',
+      'glass booths',
+    ],
+    category: '5. Speed, Sport & Competitive Arenas',
+    domain: 'esports arena broadcast screenshot',
+    negativePrompt:
+      'readable team names, existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Esports stadium broadcast capture: an original broadcast view of an esports arena, players in glass booths, giant screens and a roaring crowd in colored light.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject in an esports arena with booths and giant screens.',
+      color_and_tone: 'Dark arena with team blue and red light.',
+      lighting_and_shadow:
+        'Stage lights, screen glow and crowd lights, kept consistent across the whole image.',
+      texture_and_material:
+        'Glass booths, headsets and LED screens, kept consistent across the whole image.',
+      camera_and_composition:
+        'Wide broadcast angle across the arena, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with electric competition, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean capture with no readable team names, kept consistent across the whole image.',
+      creative_brief:
+        "Esports stadium broadcast capture: an original broadcast view of an esports arena, players in glass booths, giant screens and a roaring crowd in colored light. Carry it through glass booths, giant screens, crowd, team lights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'glass booths; giant screens; crowd; team lights',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-147',
+    name: 'Fantasy Golf Course Capture',
+    displayName: 'Fantasy Golf Course Capture',
+    styleAnchors: [
+      'Fantasy Golf Course Capture',
+      'magical golf game screenshot',
+      'floating greens',
+    ],
+    category: '5. Speed, Sport & Competitive Arenas',
+    domain: 'magical golf game screenshot',
+    negativePrompt:
+      'distance numbers, existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Fantasy golf course capture: an original golf game screenshot on a magical course with floating greens, castle hazards, lava bunkers and a bright shot trail.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject taking a shot on a magical golf course.',
+      color_and_tone:
+        'Lush greens, sky blue and magical accents, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Bright daylight with glowing shot trail, kept consistent across the whole image.',
+      texture_and_material:
+        'Manicured grass, stone ruins and water, kept consistent across the whole image.',
+      camera_and_composition:
+        'Behind the golfer toward a distant green, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with whimsical leisure, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean capture with no distance text, kept consistent across the whole image.',
+      creative_brief:
+        "Fantasy golf course capture: an original golf game screenshot on a magical course with floating greens, castle hazards, lava bunkers and a bright shot trail. Carry it through floating greens, magical hazards, shot trail, golfer. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'floating greens; magical hazards; shot trail; golfer',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-148',
+    name: 'Sailing Regatta Race Capture',
+    displayName: 'Sailing Regatta Race Capture',
+    styleAnchors: [
+      'Sailing Regatta Race Capture',
+      'sailboat racing game screenshot',
+      'heeling boats',
+    ],
+    category: '5. Speed, Sport & Competitive Arenas',
+    domain: 'sailboat racing game screenshot',
+    negativePrompt:
+      'sail numbers, existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Sailing regatta race capture: an original sailing race screenshot of sleek boats heeling in strong wind, spray, buoys and dramatic sky over the sea.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject racing a sailboat in strong wind and spray.',
+      color_and_tone: 'Deep sea blue, white sails and bright hulls.',
+      lighting_and_shadow:
+        'Bright sun on spray with cloud shadows, kept consistent across the whole image.',
+      texture_and_material:
+        'Taut sails, wet decks and waves, kept consistent across the whole image.',
+      camera_and_composition:
+        'Low angle near the waterline, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with wind-whipped competition, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean capture with no sail numbers, kept consistent across the whole image.',
+      creative_brief:
+        "Sailing regatta race capture: an original sailing race screenshot of sleek boats heeling in strong wind, spray, buoys and dramatic sky over the sea. Carry it through heeling boats, spray, buoys, strong wind. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'heeling boats; spray; buoys; strong wind',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

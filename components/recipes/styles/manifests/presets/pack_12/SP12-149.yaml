@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP12-149
+packId: pack_12
+name: Bow Hunt Stalking Capture
+styleAnchors:
+  - Bow Hunt Stalking Capture
+  - first-person bow hunting screenshot
+  - drawn bow
+displayName: Bow Hunt Stalking Capture
+category: 6. Wilderness Hunts & Harsh Frontiers
+domain: first-person bow hunting screenshot
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - wilderness-hunts-and-harsh-frontiers
+  - bow-stalk
+  - game-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Bow hunt stalking capture: an original first-person screenshot of drawing a bow in dense forest, arrow nocked, prey partially hidden in ferns and dappled light.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject from the hunter's first-person view with a drawn bow.
+  color_and_tone: Forest greens, bark browns and golden light shafts.
+  lighting_and_shadow: Dappled light through the canopy, kept consistent across the whole image.
+  texture_and_material: Bowstring, fletching, ferns and moss, kept consistent across the whole image.
+  camera_and_composition: First-person with bow in foreground, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with silent predatory patience.
+  rendering_and_quality: Clean capture without gore or HUD, kept consistent across the whole image.
+  creative_brief: "Bow hunt stalking capture: an original first-person screenshot of drawing a bow in dense forest, arrow nocked, prey partially hidden in ferns and dappled light. Carry it through drawn bow, first-person, dense forest, hidden prey. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: drawn bow; first-person; dense forest; hidden prey
+avoidRules:
+  - existing game characters, logos or levels
+  - readable interface text
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: wilderness-hunts-and-harsh-frontiers
+  categoryName: 6. Wilderness Hunts & Harsh Frontiers
+  tags:
+    - video-game-originals-vault
+    - wilderness-hunts-and-harsh-frontiers
+    - bow-stalk
+    - game-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: first-person bow hunting screenshot

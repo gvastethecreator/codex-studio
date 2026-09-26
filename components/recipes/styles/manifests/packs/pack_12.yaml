@@ -112,6 +112,16 @@ categories:
       - pack_12/SP12-063.yaml
       - pack_12/SP12-065.yaml
       - pack_12/SP12-075.yaml
+      - pack_12/SP12-139.yaml
+      - pack_12/SP12-140.yaml
+      - pack_12/SP12-141.yaml
+      - pack_12/SP12-142.yaml
+      - pack_12/SP12-143.yaml
+      - pack_12/SP12-144.yaml
+      - pack_12/SP12-145.yaml
+      - pack_12/SP12-146.yaml
+      - pack_12/SP12-147.yaml
+      - pack_12/SP12-148.yaml
   - id: wilderness-hunts-and-harsh-frontiers
     name: 6. Wilderness Hunts & Harsh Frontiers
     presetRefs:
@@ -125,6 +135,16 @@ categories:
       - pack_12/SP12-041.yaml
       - pack_12/SP12-067.yaml
       - pack_12/SP12-073.yaml
+      - pack_12/SP12-149.yaml
+      - pack_12/SP12-150.yaml
+      - pack_12/SP12-151.yaml
+      - pack_12/SP12-152.yaml
+      - pack_12/SP12-153.yaml
+      - pack_12/SP12-154.yaml
+      - pack_12/SP12-155.yaml
+      - pack_12/SP12-156.yaml
+      - pack_12/SP12-157.yaml
+      - pack_12/SP12-158.yaml
   - id: heists-horror-and-underworld-runs
     name: 7. Heists, Horror & Underworld Runs
     presetRefs:
@@ -138,6 +158,16 @@ categories:
       - pack_12/SP12-057.yaml
       - pack_12/SP12-066.yaml
       - pack_12/SP12-069.yaml
+      - pack_12/SP12-159.yaml
+      - pack_12/SP12-160.yaml
+      - pack_12/SP12-161.yaml
+      - pack_12/SP12-162.yaml
+      - pack_12/SP12-163.yaml
+      - pack_12/SP12-164.yaml
+      - pack_12/SP12-165.yaml
+      - pack_12/SP12-166.yaml
+      - pack_12/SP12-167.yaml
+      - pack_12/SP12-168.yaml
   - id: puzzle-chambers-and-adventure-setpieces
     name: 8. Puzzle Chambers & Adventure Setpieces
     presetRefs:
@@ -151,6 +181,16 @@ categories:
       - pack_12/SP12-074.yaml
       - pack_12/SP12-077.yaml
       - pack_12/SP12-080.yaml
+      - pack_12/SP12-169.yaml
+      - pack_12/SP12-170.yaml
+      - pack_12/SP12-171.yaml
+      - pack_12/SP12-172.yaml
+      - pack_12/SP12-173.yaml
+      - pack_12/SP12-174.yaml
+      - pack_12/SP12-175.yaml
+      - pack_12/SP12-176.yaml
+      - pack_12/SP12-177.yaml
+      - pack_12/SP12-178.yaml
   - id: gothic-and-dungeon-gameplay
     name: 9. Gothic & Dungeon Gameplay
     presetRefs:
@@ -160,6 +200,20 @@ categories:
       - pack_12/SP12-084.yaml
       - pack_12/SP12-085.yaml
       - pack_12/SP12-086.yaml
+      - pack_12/SP12-179.yaml
+      - pack_12/SP12-180.yaml
+      - pack_12/SP12-181.yaml
+      - pack_12/SP12-182.yaml
+      - pack_12/SP12-183.yaml
+      - pack_12/SP12-184.yaml
+      - pack_12/SP12-185.yaml
+      - pack_12/SP12-186.yaml
+      - pack_12/SP12-187.yaml
+      - pack_12/SP12-188.yaml
+      - pack_12/SP12-189.yaml
+      - pack_12/SP12-190.yaml
+      - pack_12/SP12-191.yaml
+      - pack_12/SP12-192.yaml
   - id: graphic-and-feudal-gameplay
     name: 10. Graphic & Feudal Gameplay
     presetRefs:
@@ -169,6 +223,20 @@ categories:
       - pack_12/SP12-090.yaml
       - pack_12/SP12-091.yaml
       - pack_12/SP12-092.yaml
+      - pack_12/SP12-193.yaml
+      - pack_12/SP12-194.yaml
+      - pack_12/SP12-195.yaml
+      - pack_12/SP12-196.yaml
+      - pack_12/SP12-197.yaml
+      - pack_12/SP12-198.yaml
+      - pack_12/SP12-199.yaml
+      - pack_12/SP12-200.yaml
+      - pack_12/SP12-201.yaml
+      - pack_12/SP12-202.yaml
+      - pack_12/SP12-203.yaml
+      - pack_12/SP12-204.yaml
+      - pack_12/SP12-205.yaml
+      - pack_12/SP12-206.yaml
   - id: psychological-and-tactical-gameplay
     name: 11. Psychological & Tactical Gameplay
     presetRefs:
@@ -178,6 +246,20 @@ categories:
       - pack_12/SP12-096.yaml
       - pack_12/SP12-097.yaml
       - pack_12/SP12-098.yaml
+      - pack_12/SP12-207.yaml
+      - pack_12/SP12-208.yaml
+      - pack_12/SP12-209.yaml
+      - pack_12/SP12-210.yaml
+      - pack_12/SP12-211.yaml
+      - pack_12/SP12-212.yaml
+      - pack_12/SP12-213.yaml
+      - pack_12/SP12-214.yaml
+      - pack_12/SP12-215.yaml
+      - pack_12/SP12-216.yaml
+      - pack_12/SP12-217.yaml
+      - pack_12/SP12-218.yaml
+      - pack_12/SP12-219.yaml
+      - pack_12/SP12-220.yaml
 presetRefs:
   - pack_12/SP12-001.yaml
   - pack_12/SP12-002.yaml
@@ -258,6 +340,16 @@ presetRefs:
   - pack_12/SP12-127.yaml
   - pack_12/SP12-128.yaml
   - pack_12/SP12-069.yaml
+  - pack_12/SP12-159.yaml
+  - pack_12/SP12-160.yaml
+  - pack_12/SP12-161.yaml
+  - pack_12/SP12-162.yaml
+  - pack_12/SP12-163.yaml
+  - pack_12/SP12-164.yaml
+  - pack_12/SP12-165.yaml
+  - pack_12/SP12-166.yaml
+  - pack_12/SP12-167.yaml
+  - pack_12/SP12-168.yaml
   - pack_12/SP12-070.yaml
   - pack_12/SP12-109.yaml
   - pack_12/SP12-110.yaml
@@ -272,8 +364,28 @@ presetRefs:
   - pack_12/SP12-071.yaml
   - pack_12/SP12-072.yaml
   - pack_12/SP12-073.yaml
+  - pack_12/SP12-149.yaml
+  - pack_12/SP12-150.yaml
+  - pack_12/SP12-151.yaml
+  - pack_12/SP12-152.yaml
+  - pack_12/SP12-153.yaml
+  - pack_12/SP12-154.yaml
+  - pack_12/SP12-155.yaml
+  - pack_12/SP12-156.yaml
+  - pack_12/SP12-157.yaml
+  - pack_12/SP12-158.yaml
   - pack_12/SP12-074.yaml
   - pack_12/SP12-075.yaml
+  - pack_12/SP12-139.yaml
+  - pack_12/SP12-140.yaml
+  - pack_12/SP12-141.yaml
+  - pack_12/SP12-142.yaml
+  - pack_12/SP12-143.yaml
+  - pack_12/SP12-144.yaml
+  - pack_12/SP12-145.yaml
+  - pack_12/SP12-146.yaml
+  - pack_12/SP12-147.yaml
+  - pack_12/SP12-148.yaml
   - pack_12/SP12-076.yaml
   - pack_12/SP12-077.yaml
   - pack_12/SP12-078.yaml
@@ -299,21 +411,73 @@ presetRefs:
   - pack_12/SP12-137.yaml
   - pack_12/SP12-138.yaml
   - pack_12/SP12-080.yaml
+  - pack_12/SP12-169.yaml
+  - pack_12/SP12-170.yaml
+  - pack_12/SP12-171.yaml
+  - pack_12/SP12-172.yaml
+  - pack_12/SP12-173.yaml
+  - pack_12/SP12-174.yaml
+  - pack_12/SP12-175.yaml
+  - pack_12/SP12-176.yaml
+  - pack_12/SP12-177.yaml
+  - pack_12/SP12-178.yaml
   - pack_12/SP12-081.yaml
   - pack_12/SP12-082.yaml
   - pack_12/SP12-083.yaml
   - pack_12/SP12-084.yaml
   - pack_12/SP12-085.yaml
   - pack_12/SP12-086.yaml
+  - pack_12/SP12-179.yaml
+  - pack_12/SP12-180.yaml
+  - pack_12/SP12-181.yaml
+  - pack_12/SP12-182.yaml
+  - pack_12/SP12-183.yaml
+  - pack_12/SP12-184.yaml
+  - pack_12/SP12-185.yaml
+  - pack_12/SP12-186.yaml
+  - pack_12/SP12-187.yaml
+  - pack_12/SP12-188.yaml
+  - pack_12/SP12-189.yaml
+  - pack_12/SP12-190.yaml
+  - pack_12/SP12-191.yaml
+  - pack_12/SP12-192.yaml
   - pack_12/SP12-087.yaml
   - pack_12/SP12-088.yaml
   - pack_12/SP12-089.yaml
   - pack_12/SP12-090.yaml
   - pack_12/SP12-091.yaml
   - pack_12/SP12-092.yaml
+  - pack_12/SP12-193.yaml
+  - pack_12/SP12-194.yaml
+  - pack_12/SP12-195.yaml
+  - pack_12/SP12-196.yaml
+  - pack_12/SP12-197.yaml
+  - pack_12/SP12-198.yaml
+  - pack_12/SP12-199.yaml
+  - pack_12/SP12-200.yaml
+  - pack_12/SP12-201.yaml
+  - pack_12/SP12-202.yaml
+  - pack_12/SP12-203.yaml
+  - pack_12/SP12-204.yaml
+  - pack_12/SP12-205.yaml
+  - pack_12/SP12-206.yaml
   - pack_12/SP12-093.yaml
   - pack_12/SP12-094.yaml
   - pack_12/SP12-095.yaml
   - pack_12/SP12-096.yaml
   - pack_12/SP12-097.yaml
   - pack_12/SP12-098.yaml
+  - pack_12/SP12-207.yaml
+  - pack_12/SP12-208.yaml
+  - pack_12/SP12-209.yaml
+  - pack_12/SP12-210.yaml
+  - pack_12/SP12-211.yaml
+  - pack_12/SP12-212.yaml
+  - pack_12/SP12-213.yaml
+  - pack_12/SP12-214.yaml
+  - pack_12/SP12-215.yaml
+  - pack_12/SP12-216.yaml
+  - pack_12/SP12-217.yaml
+  - pack_12/SP12-218.yaml
+  - pack_12/SP12-219.yaml
+  - pack_12/SP12-220.yaml

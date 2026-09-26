@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP12-193
+packId: pack_12
+name: Cel-Shaded Samurai Duel Gameplay
+styleAnchors:
+  - Cel-Shaded Samurai Duel Gameplay
+  - toon-shaded samurai duel gameplay
+  - cel shading
+displayName: Cel-Shaded Samurai Duel Gameplay
+category: 10. Graphic & Feudal Gameplay
+domain: toon-shaded samurai duel gameplay
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - graphic-and-feudal-gameplay
+  - samurai-duel
+  - gameplay-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Cel-shaded samurai duel gameplay: an original third-person capture of a samurai duel with bold toon shading, falling leaves, wind lines and dramatic standoffs.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject in a cel-shaded samurai duel standoff.
+  color_and_tone: Autumn reds, gold light and deep shadow, kept consistent across the whole image.
+  lighting_and_shadow: Two-tone cel shading and rim light, kept consistent across the whole image.
+  texture_and_material: Flat shaded cloth, blades and leaves, kept consistent across the whole image.
+  camera_and_composition: Low wide third-person standoff, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with tense stillness, kept consistent across the whole image.
+  rendering_and_quality: Clean toon capture with no UI, kept consistent across the whole image.
+  creative_brief: "Cel-shaded samurai duel gameplay: an original third-person capture of a samurai duel with bold toon shading, falling leaves, wind lines and dramatic standoffs. Carry it through cel shading, samurai standoff, falling leaves, wind lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: cel shading; samurai standoff; falling leaves; wind lines
+avoidRules:
+  - existing game characters, logos or levels
+  - readable interface text
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: graphic-and-feudal-gameplay
+  categoryName: 10. Graphic & Feudal Gameplay
+  tags:
+    - curation-v2
+    - graphic-and-feudal-gameplay
+    - samurai-duel
+    - gameplay-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: toon-shaded samurai duel gameplay

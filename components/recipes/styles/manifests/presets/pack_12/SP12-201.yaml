@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP12-201
+packId: pack_12
+name: Spirit Hunter Action Gameplay
+styleAnchors:
+  - Spirit Hunter Action Gameplay
+  - folklore spirit hunting action gameplay
+  - folklore spirits
+displayName: Spirit Hunter Action Gameplay
+category: 10. Graphic & Feudal Gameplay
+domain: folklore spirit hunting action gameplay
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - graphic-and-feudal-gameplay
+  - spirit-hunter
+  - gameplay-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Spirit hunter action gameplay: an original third-person capture of a hunter fighting folklore spirits in a moonlit shrine, talismans, glowing spirit trails and mist.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject battling folklore spirits in a moonlit shrine.
+  color_and_tone: Moonlit blue, spirit violet and talisman gold, kept consistent across the whole image.
+  lighting_and_shadow: Spirit glow and moonlight, kept consistent across the whole image.
+  texture_and_material: Shrine wood, paper talismans and mist, kept consistent across the whole image.
+  camera_and_composition: Third-person with spirits circling, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with eerie folklore action.
+  rendering_and_quality: Clean capture with no readable talismans, kept consistent across the whole image.
+  creative_brief: "Spirit hunter action gameplay: an original third-person capture of a hunter fighting folklore spirits in a moonlit shrine, talismans, glowing spirit trails and mist. Carry it through folklore spirits, moonlit shrine, talismans, spirit trails. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: folklore spirits; moonlit shrine; talismans; spirit trails
+avoidRules:
+  - readable talisman text
+  - existing game characters, logos or levels
+  - readable interface text
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable talisman text, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: graphic-and-feudal-gameplay
+  categoryName: 10. Graphic & Feudal Gameplay
+  tags:
+    - curation-v2
+    - graphic-and-feudal-gameplay
+    - spirit-hunter
+    - gameplay-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: folklore spirit hunting action gameplay

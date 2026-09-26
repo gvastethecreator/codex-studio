@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP12-195
+packId: pack_12
+name: Arena Combo Hack-and-Slash Gameplay
+styleAnchors:
+  - Arena Combo Hack-and-Slash Gameplay
+  - stylish combo action gameplay
+  - air juggle
+displayName: Arena Combo Hack-and-Slash Gameplay
+category: 10. Graphic & Feudal Gameplay
+domain: stylish combo action gameplay
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - graphic-and-feudal-gameplay
+  - combo-arena
+  - gameplay-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Arena combo hack-and-slash gameplay: an original stylish action capture of a hero juggling enemies mid-air, flashy weapon trails and a gothic arena.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject mid-combo juggling enemies in a stylish arena.
+  color_and_tone: Dark arena with vivid weapon-trail colors, kept consistent across the whole image.
+  lighting_and_shadow: Flashy effect lighting and rim light, kept consistent across the whole image.
+  texture_and_material: Gothic stone, coat flare and weapon glow, kept consistent across the whole image.
+  camera_and_composition: Dynamic low angle in the air, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with swaggering flair, kept consistent across the whole image.
+  rendering_and_quality: Clean capture with no combo text, kept consistent across the whole image.
+  creative_brief: "Arena combo hack-and-slash gameplay: an original stylish action capture of a hero juggling enemies mid-air, flashy weapon trails and a gothic arena. Carry it through air juggle, weapon trails, stylish hero, gothic arena. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: air juggle; weapon trails; stylish hero; gothic arena
+avoidRules:
+  - combo text
+  - existing game characters, logos or levels
+  - readable interface text
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: combo text, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: graphic-and-feudal-gameplay
+  categoryName: 10. Graphic & Feudal Gameplay
+  tags:
+    - curation-v2
+    - graphic-and-feudal-gameplay
+    - combo-arena
+    - gameplay-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: stylish combo action gameplay

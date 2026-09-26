@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP12-218
+packId: pack_12
+name: Time-Loop Mansion Mystery Gameplay
+styleAnchors:
+  - Time-Loop Mansion Mystery Gameplay
+  - repeating day mystery gameplay
+  - time loop
+displayName: Time-Loop Mansion Mystery Gameplay
+category: 11. Psychological & Tactical Gameplay
+domain: repeating day mystery gameplay
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - psychological-and-tactical-gameplay
+  - time-loop
+  - gameplay-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Time-loop mansion mystery gameplay: an original third-person capture of a mansion party where the same evening repeats, guests frozen in the same poses and clocks everywhere.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; place the subject in a mansion party trapped in a repeating evening.
+  color_and_tone: Warm party gold with cold clock-face silver, kept consistent across the whole image.
+  lighting_and_shadow: Chandelier light and long shadows, kept consistent across the whole image.
+  texture_and_material: Velvet, polished wood and ticking clocks, kept consistent across the whole image.
+  camera_and_composition: Third-person through the ballroom crowd, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with mysterious déjà vu.
+  rendering_and_quality: Clean capture with no readable clock numerals, kept consistent across the whole image.
+  creative_brief: "Time-loop mansion mystery gameplay: an original third-person capture of a mansion party where the same evening repeats, guests frozen in the same poses and clocks everywhere. Carry it through time loop, mansion party, clocks, frozen guests. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: time loop; mansion party; clocks; frozen guests
+avoidRules:
+  - readable clock numerals
+  - existing game characters, logos or levels
+  - readable interface text
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable clock numerals, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: psychological-and-tactical-gameplay
+  categoryName: 11. Psychological & Tactical Gameplay
+  tags:
+    - curation-v2
+    - psychological-and-tactical-gameplay
+    - time-loop
+    - gameplay-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: repeating day mystery gameplay

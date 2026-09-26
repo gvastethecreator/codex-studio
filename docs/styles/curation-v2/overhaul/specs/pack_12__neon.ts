@@ -67,7 +67,7 @@ const spec: Spec = {
     'SP12-062': { briefs: [
       'Brawling through a dense nightlife street of red lanterns and koi-shaped signs, an original street fighter swings a bicycle at three thugs while onlookers cheer from a karaoke bar. No readable text or logo.',
       'On a neon nightlife street, a tough brawler takes a break mid-fight to help an old lady win a prize at the claw machine. No readable text or logo.',
-      'Down a crowded neon alley, every sign is glowing except the one above a narrow door, where a single koi lantern hangs dark. No readable text or logo.',
+      "Down a crowded neon alley, a koi-shaped sign has started swimming slowly along the wall, leaving a wet trail of light on the bricks behind it. No readable text or logo.",
     ] },
     'SP12-071': { briefs: [
       'Crouching in an overgrown canal beneath a towering alien citadel, an original resistance fighter aims a crowbar-and-rifle combo at a walker striding through the green ruins. No readable text or logo.',
@@ -229,7 +229,7 @@ const spec: Spec = {
     }, [], [
       'Striking on the beat in a neon street arena, an original guitarist fighter knocks a robot bouncer backward as every speaker stack in the city pulses in sync. No readable text or logo.',
       'In a pulsing rhythm battle, a fearsome boss dances beautifully in perfect time while the hero keeps tripping over the beat. No readable text or logo.',
-      "Pulsing in time with the music, every light on the street flashes with the beat except one streetlight that stays dark and silent. No readable text or logo.",
+      "Pulsing in time with the music, the whole street keeps the beat, but the puddles are rippling to a slower rhythm nobody can hear. No readable text or logo.",
     ]),
   ],
 };

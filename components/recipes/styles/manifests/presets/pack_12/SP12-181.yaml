@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP12-181
+packId: pack_12
+name: Real-Time First-Person Crypt Gameplay
+styleAnchors:
+  - Real-Time First-Person Crypt Gameplay
+  - first-person dungeon crawler gameplay
+  - first-person hands
+displayName: Real-Time First-Person Crypt Gameplay
+category: 9. Gothic & Dungeon Gameplay
+domain: first-person dungeon crawler gameplay
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - gothic-and-dungeon-gameplay
+  - fp-crypt
+  - gameplay-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Real-time first-person crypt gameplay: an original first-person dungeon crawler capture with a hand holding a torch and a weapon, crumbling crypt corridors and lurking shapes.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject from first person with a torch and weapon in a crypt.
+  color_and_tone: Torch orange against cold grey stone, kept consistent across the whole image.
+  lighting_and_shadow: Torch flicker and deep shadow, kept consistent across the whole image.
+  texture_and_material: Wet stone, cobwebs and old bones, kept consistent across the whole image.
+  camera_and_composition: First-person with hands in view, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with claustrophobic danger, kept consistent across the whole image.
+  rendering_and_quality: Clean capture with no UI text, kept consistent across the whole image.
+  creative_brief: "Real-time first-person crypt gameplay: an original first-person dungeon crawler capture with a hand holding a torch and a weapon, crumbling crypt corridors and lurking shapes. Carry it through first-person hands, torch, crypt corridor, lurking shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: first-person hands; torch; crypt corridor; lurking shapes
+avoidRules:
+  - existing game characters, logos or levels
+  - readable interface text
+  - gore
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: gothic-and-dungeon-gameplay
+  categoryName: 9. Gothic & Dungeon Gameplay
+  tags:
+    - curation-v2
+    - gothic-and-dungeon-gameplay
+    - fp-crypt
+    - gameplay-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: first-person dungeon crawler gameplay

@@ -109,7 +109,7 @@ const spec: Spec = {
     }, ['readable runes'], [
       'Rotating a crystal prism in a dusty chapel, an original solver splits a beam into red, green and blue, and a sealed stone door begins to rise as the last symbol lights up. No readable text or logo.',
       'After solving a complex light puzzle in a chapel, a player is rewarded with a secret room containing another, even harder light puzzle. No readable text or logo.',
-      'In a dim prism chapel, the light beams are all aimed at the altar except one, bending slowly toward the player. No readable text or logo.',
+      "Split by a prism in a dim chapel, a beam of light casts a rainbow on the wall, and one color in it has never been seen before. No readable text or logo.",
     ]),
     capture('Summoning Circle Cutscene Capture', 'in-engine summoning cutscene', 'summon-cutscene', {
       aesthetic: 'Summoning circle cutscene capture: an original in-engine cutscene frame of a magical summoning, glowing circles, swirling particles and a huge creature emerging.',

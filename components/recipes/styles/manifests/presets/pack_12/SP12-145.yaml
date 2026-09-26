@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP12-145
+packId: pack_12
+name: Motocross Mud Jump Capture
+styleAnchors:
+  - Motocross Mud Jump Capture
+  - dirt bike racing screenshot
+  - dirt bike
+displayName: Motocross Mud Jump Capture
+category: 5. Speed, Sport & Competitive Arenas
+domain: dirt bike racing screenshot
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - video-game-originals-vault
+  - speed-sport-and-competitive-arenas
+  - motocross
+  - game-capture
+  - portable-style-study
+visualDna:
+  aesthetic: 'Motocross mud jump capture: an original dirt-bike racing screenshot of a rider mid-air over muddy whoops, flying clods of earth and a crowd on the hill.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject mid-air on a dirt bike over a muddy track.
+  color_and_tone: Mud brown, bright jerseys and grey sky, kept consistent across the whole image.
+  lighting_and_shadow: Overcast light with flying mud silhouettes, kept consistent across the whole image.
+  texture_and_material: Mud clods, knobby tires and wet dirt, kept consistent across the whole image.
+  camera_and_composition: Low angle under the jump, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with gritty adrenaline, kept consistent across the whole image.
+  rendering_and_quality: Clean capture with no sponsor text, kept consistent across the whole image.
+  creative_brief: "Motocross mud jump capture: an original dirt-bike racing screenshot of a rider mid-air over muddy whoops, flying clods of earth and a crowd on the hill. Carry it through dirt bike, mid-air jump, flying mud, crowd. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: dirt bike; mid-air jump; flying mud; crowd
+avoidRules:
+  - existing game characters, logos or levels
+  - readable interface text
+  - real brand sponsors
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing game characters, logos or levels, readable interface text, real brand sponsors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_12
+  packName: Video Game Originals Vault
+  categoryId: speed-sport-and-competitive-arenas
+  categoryName: 5. Speed, Sport & Competitive Arenas
+  tags:
+    - video-game-originals-vault
+    - speed-sport-and-competitive-arenas
+    - motocross
+    - game-capture
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: dirt bike racing screenshot

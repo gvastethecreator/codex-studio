@@ -47,7 +47,7 @@ const spec: Spec = {
     'SP12-035': { briefs: [
       'Stacked floor upon floor in a burning vertical lift, original monster cards slam into each other as an infernal elevator carries the battle down toward a molten core. No readable text or logo.',
       'On a vertical defense lift, a mighty demon card faces down its opponent, which is a single stubborn goat card that refuses to move. No readable text or logo.',
-      'Deep in an infernal lift shaft, every floor is lit and fighting except the lowest one, which is quietly dark. No readable text or logo.',
+      "Rattling down an infernal lift shaft, the elevator stops between floors, and something below is knocking politely on the underside of the floor. No readable text or logo.",
     ] },
     'SP12-038': { briefs: [
       'Firing a full broadside across a stormy ocean, an original iron battleship sends glowing shell tracers toward a reef fortress as a kraken rises between them. No readable text or logo.',
@@ -72,7 +72,7 @@ const spec: Spec = {
     'SP12-076': { briefs: [
       'Under a glowing aurora, an original clan of isometric raiders storms a snowy bastion as a giant ice troll wakes on the hill above both armies. No readable text or logo.',
       'In a snowy isometric settlement, the entire clan has gone to war except one villager who is still peacefully fishing through a hole in the ice. No readable text or logo.',
-      'Across a snowy settlement under the northern lights, every house has smoke rising from its chimney except the chieftain\'s hall. No readable text or logo.',
+      "Under the northern lights, the snow around the chieftain's hall has melted into perfect footprints that are much too large for anyone in the clan. No readable text or logo.",
     ] },
     'SP12-079': { briefs: [
       'Dropping in from orbit under a sky of fire, an original squad of armored troopers lands beside a citadel beacon as a swarm of alien bugs surges over the ridge. No readable text or logo.',
@@ -139,7 +139,7 @@ const spec: Spec = {
     }, ['readable counter numbers'], [
       'On a painted hex map of a river valley, an original army of red counters crosses a bridge while a single black counter shaped like a dragon sits alone on a mountain hex. No readable text or logo.',
       'On a hex wargame board, a grand army is perfectly arranged except for one counter that has wandered into the lake hex. No readable text or logo.',
-      'On a hex map at the end of a war, every unit counter has been removed except one, facing the edge of the board. No readable text or logo.',
+      "On a painted hex map after a long war, a small pile of counters has been stacked into a tiny tower in the middle of the sea. No readable text or logo.",
     ]),
     capture('Barricade Night Holdout Capture', 'survival barricade defense screenshot', 'barricade-holdout', {
       aesthetic: 'Barricade night holdout capture: an original third-person survival screenshot of survivors defending a boarded-up farmhouse at night, flashlights and silhouettes at the windows.',
@@ -169,7 +169,7 @@ const spec: Spec = {
     }, ['gore'], [
       'Holding the last landing pad under a burning alien sky, an original squad fires at crawling war-beasts while the final transport lifts off with its ramp still open. No readable text or logo.',
       'During a desperate spaceport evacuation, one passenger insists on bringing an enormous potted tree onto the last transport. No readable text or logo.',
-      'On an evacuated spaceport at night, every ship has gone except one small shuttle with its lights on and engines running. No readable text or logo.',
+      "Glowing on an evacuated spaceport, the departure board has gone dark, and a lone cleaning robot keeps sweeping the landing pad in slow circles. No readable text or logo.",
     ]),
     capture('Lane-Battle Siege Capture', 'lane-based siege strategy screenshot', 'lane-siege', {
       aesthetic: 'Lane-battle siege capture: an original side-view strategy screenshot where two castles face each other across horizontal lanes and units march to clash in the middle.',

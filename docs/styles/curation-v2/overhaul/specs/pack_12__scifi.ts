@@ -56,7 +56,7 @@ const spec: Spec = {
     'SP12-033': { briefs: [
       'Defending cartoon garden rows at dusk, an original army of fruit-shooting plants holds back a wave of shambling scarecrows led by a giant lumbering pumpkin brute. No readable text or logo.',
       'In a bright cartoon lawn defense, one sunflower has given up and is sunbathing with sunglasses while the rest of the plants panic. No readable text or logo.',
-      'On a cartoon garden lawn at night, every lane is empty except for the last row, where a single dug-up patch of soil is moving. No readable text or logo.',
+      "Lit by moonlight on a cartoon lawn, the scarecrows have quietly rearranged the garden gnomes into a neat circle facing the house. No readable text or logo.",
     ] },
     'SP12-042': { briefs: [
       'Floating in a brutalist concrete hall, an original agent hurls a telekinetic chunk of pillar at a levitating hiss of red astral corruption as file cabinets orbit around her. No readable text or logo.',
@@ -123,7 +123,7 @@ const spec: Spec = {
     }, [], [
       'Seen from orbit, an original small planet glows with colony lights and route lines as a comet the size of a continent approaches its night side. No readable text or logo.',
       'From an orbital strategy view, a whole planet has been carefully colonized except one small island that belongs entirely to penguins. No readable text or logo.',
-      "Glowing across the night side of a small world seen from orbit, every colony is lit except one city that has just gone dark. No readable text or logo.",
+      "Seen from orbit, the planet's night side glows with colony lights, and they have slowly formed the shape of an enormous closed eye. No readable text or logo.",
     ]),
     capture('Asteroid Belt Dogfight Capture', 'space fighter chase screenshot', 'asteroid-dogfight', {
       aesthetic: 'Asteroid belt dogfight capture: an original third-person space-fighter screenshot weaving through tumbling asteroids, laser streaks and engine trails.',
@@ -183,7 +183,7 @@ const spec: Spec = {
     }, ['readable data'], [
       'Through a scanning visor, an original explorer outlines a towering alien flower that is slowly opening to reveal it is actually a creature with a hundred eyes. No readable text or logo.',
       'Scanning alien plants with great seriousness, an explorer\'s visor highlights a small shrub that is clearly waving back at her. No readable text or logo.',
-      'Through a visor in an alien forest, the scanner outlines every plant in cyan, except one tall shape it refuses to outline. No readable text or logo.',
+      "Through a scanning visor in an alien forest, the analysis outlines a tall creature standing among the trees, and it is also wearing a visor, scanning back. No readable text or logo.",
     ]),
     capture('Station Management Side-View', 'space station management sim screenshot', 'station-sideview', {
       aesthetic: 'Station management side-view: an original side-view cross-section screenshot of a space station, tiny crew in rooms, corridors, reactors and docking ships.',

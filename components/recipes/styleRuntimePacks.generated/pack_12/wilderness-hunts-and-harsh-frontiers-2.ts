@@ -331,4 +331,352 @@ export const GENERATED_STYLE_PRESETS = [
         "Colossus Orchard Hunt: in-game screenshot language informed by Shadow of the Colossus, covering camera, HUD grammar, material language, color coding, encounter readability, and in-engine finish. Coherent HUD is allowed when the reference game uses it; avoid menus, logos, exact characters, exact levels, and promotional key art. A reusable, transferable visual system for any subject, keeping that subject's identity, action and setting.",
     },
   },
+  {
+    id: 'SP12-149',
+    name: 'Bow Hunt Stalking Capture',
+    displayName: 'Bow Hunt Stalking Capture',
+    styleAnchors: ['Bow Hunt Stalking Capture', 'first-person bow hunting screenshot', 'drawn bow'],
+    category: '6. Wilderness Hunts & Harsh Frontiers',
+    domain: 'first-person bow hunting screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Bow hunt stalking capture: an original first-person screenshot of drawing a bow in dense forest, arrow nocked, prey partially hidden in ferns and dappled light.',
+      subject_treatment:
+        "Preserve the requested identity, count, pose and action with original characters; show the subject from the hunter's first-person view with a drawn bow.",
+      color_and_tone: 'Forest greens, bark browns and golden light shafts.',
+      lighting_and_shadow:
+        'Dappled light through the canopy, kept consistent across the whole image.',
+      texture_and_material:
+        'Bowstring, fletching, ferns and moss, kept consistent across the whole image.',
+      camera_and_composition:
+        'First-person with bow in foreground, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with silent predatory patience.',
+      rendering_and_quality:
+        'Clean capture without gore or HUD, kept consistent across the whole image.',
+      creative_brief:
+        "Bow hunt stalking capture: an original first-person screenshot of drawing a bow in dense forest, arrow nocked, prey partially hidden in ferns and dappled light. Carry it through drawn bow, first-person, dense forest, hidden prey. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'drawn bow; first-person; dense forest; hidden prey',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-150',
+    name: 'Blizzard Trek Survival Capture',
+    displayName: 'Blizzard Trek Survival Capture',
+    styleAnchors: [
+      'Blizzard Trek Survival Capture',
+      'snowstorm survival trek screenshot',
+      'blizzard',
+    ],
+    category: '6. Wilderness Hunts & Harsh Frontiers',
+    domain: 'snowstorm survival trek screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Blizzard trek survival capture: an original third-person screenshot of a lone traveler bent against a howling blizzard, rope trailing, lantern glow in white-out snow.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject pushing through a blizzard with limited visibility.',
+      color_and_tone:
+        'White-grey snow with warm lantern orange, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Diffuse white-out and a small warm glow, kept consistent across the whole image.',
+      texture_and_material:
+        'Swirling snow, frosted fabric and ice, kept consistent across the whole image.',
+      camera_and_composition:
+        'Third-person behind the traveler, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with desperate endurance, kept consistent across the whole image.',
+      rendering_and_quality: 'Clean capture with no HUD, kept consistent across the whole image.',
+      creative_brief:
+        "Blizzard trek survival capture: an original third-person screenshot of a lone traveler bent against a howling blizzard, rope trailing, lantern glow in white-out snow. Carry it through blizzard, white-out, lantern, lone traveler. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'blizzard; white-out; lantern; lone traveler',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-151',
+    name: 'Safari Photo Expedition Capture',
+    displayName: 'Safari Photo Expedition Capture',
+    styleAnchors: [
+      'Safari Photo Expedition Capture',
+      'wildlife photography game screenshot',
+      'viewfinder frame',
+    ],
+    category: '6. Wilderness Hunts & Harsh Frontiers',
+    domain: 'wildlife photography game screenshot',
+    negativePrompt:
+      'readable camera settings, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Safari photo expedition capture: an original wildlife photography game screenshot through a camera viewfinder of strange creatures on a golden savanna.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; frame the subject through a camera viewfinder on a wildlife expedition.',
+      color_and_tone:
+        'Golden grass, acacia greens and blue sky, kept consistent across the whole image.',
+      lighting_and_shadow: 'Warm late-afternoon sun, kept consistent across the whole image.',
+      texture_and_material:
+        'Grass, dust, animal hides and viewfinder frame, kept consistent across the whole image.',
+      camera_and_composition:
+        'Viewfinder crop lines around the subject, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with patient discovery, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean capture with no readable settings, kept consistent across the whole image.',
+      creative_brief:
+        "Safari photo expedition capture: an original wildlife photography game screenshot through a camera viewfinder of strange creatures on a golden savanna. Carry it through viewfinder frame, savanna, strange creatures, golden light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'viewfinder frame; savanna; strange creatures; golden light',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-152',
+    name: 'Dog-Sled Frontier Run Capture',
+    displayName: 'Dog-Sled Frontier Run Capture',
+    styleAnchors: ['Dog-Sled Frontier Run Capture', 'sled dog race screenshot', 'sled dogs'],
+    category: '6. Wilderness Hunts & Harsh Frontiers',
+    domain: 'sled dog race screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Dog-sled frontier run capture: an original third-person screenshot of a sled team racing across a frozen frontier, spray of snow, aurora and pine forest.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject racing a dog sled across frozen wilderness.',
+      color_and_tone: 'White snow, deep blue night and green aurora.',
+      lighting_and_shadow: 'Aurora glow and sled lantern, kept consistent across the whole image.',
+      texture_and_material:
+        'Snow spray, fur, wood runners and frost, kept consistent across the whole image.',
+      camera_and_composition:
+        'Low chase angle behind the team, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with wild frontier momentum.',
+      rendering_and_quality: 'Clean capture with no HUD, kept consistent across the whole image.',
+      creative_brief:
+        "Dog-sled frontier run capture: an original third-person screenshot of a sled team racing across a frozen frontier, spray of snow, aurora and pine forest. Carry it through sled dogs, frozen frontier, aurora, snow spray. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'sled dogs; frozen frontier; aurora; snow spray',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-153',
+    name: 'Canyon Horseback Frontier Capture',
+    displayName: 'Canyon Horseback Frontier Capture',
+    styleAnchors: [
+      'Canyon Horseback Frontier Capture',
+      'western frontier riding screenshot',
+      'horseback rider',
+    ],
+    category: '6. Wilderness Hunts & Harsh Frontiers',
+    domain: 'western frontier riding screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Canyon horseback frontier capture: an original third-person screenshot of a rider on horseback crossing red canyon country, vast mesas and dust at golden hour.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject on horseback crossing a vast red canyon landscape.',
+      color_and_tone:
+        'Red rock, sage green and golden sky, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Low golden sun and long shadows, kept consistent across the whole image.',
+      texture_and_material:
+        'Red rock, dust, leather tack and scrub, kept consistent across the whole image.',
+      camera_and_composition:
+        'Wide cinematic view with rider small, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with lonesome frontier grandeur.',
+      rendering_and_quality: 'Clean capture with no HUD, kept consistent across the whole image.',
+      creative_brief:
+        "Canyon horseback frontier capture: an original third-person screenshot of a rider on horseback crossing red canyon country, vast mesas and dust at golden hour. Carry it through horseback rider, red canyons, mesas, golden hour. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'horseback rider; red canyons; mesas; golden hour',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-154',
+    name: 'Diving Bell Descent Capture',
+    displayName: 'Diving Bell Descent Capture',
+    styleAnchors: [
+      'Diving Bell Descent Capture',
+      'deep-sea diving bell screenshot',
+      'brass diving bell',
+    ],
+    category: '6. Wilderness Hunts & Harsh Frontiers',
+    domain: 'deep-sea diving bell screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Diving bell descent capture: an original screenshot of a brass diving bell lowered into black ocean depths, its lamps revealing strange creatures and ruins.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject inside or around a brass diving bell in the deep sea.',
+      color_and_tone:
+        'Black depths, brass gold and bioluminescent blue, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Bell lamps cutting into darkness, kept consistent across the whole image.',
+      texture_and_material:
+        'Riveted brass, round portholes and particles, kept consistent across the whole image.',
+      camera_and_composition:
+        'Bell in the center with darkness around, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with deep uneasy wonder.',
+      rendering_and_quality: 'Clean capture with no HUD, kept consistent across the whole image.',
+      creative_brief:
+        "Diving bell descent capture: an original screenshot of a brass diving bell lowered into black ocean depths, its lamps revealing strange creatures and ruins. Carry it through brass diving bell, deep sea, lamp beams, strange creatures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'brass diving bell; deep sea; lamp beams; strange creatures',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-155',
+    name: 'Volcanic Crater Expedition Capture',
+    displayName: 'Volcanic Crater Expedition Capture',
+    styleAnchors: [
+      'Volcanic Crater Expedition Capture',
+      'volcano exploration screenshot',
+      'volcanic crater',
+    ],
+    category: '6. Wilderness Hunts & Harsh Frontiers',
+    domain: 'volcano exploration screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Volcanic crater expedition capture: an original third-person screenshot of explorers descending into an active crater, lava lakes, ash clouds and heat shimmer.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject on an expedition into an active volcanic crater.',
+      color_and_tone: 'Black rock, glowing orange lava and ash grey.',
+      lighting_and_shadow:
+        'Lava glow from below and ash haze, kept consistent across the whole image.',
+      texture_and_material:
+        'Cooled lava crust, sulfur and heat shimmer, kept consistent across the whole image.',
+      camera_and_composition:
+        'Wide view down into the crater, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with scorching peril, kept consistent across the whole image.',
+      rendering_and_quality: 'Clean capture with no HUD, kept consistent across the whole image.',
+      creative_brief:
+        "Volcanic crater expedition capture: an original third-person screenshot of explorers descending into an active crater, lava lakes, ash clouds and heat shimmer. Carry it through volcanic crater, lava lake, ash clouds, explorers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'volcanic crater; lava lake; ash clouds; explorers',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-156',
+    name: 'Swamp Canoe Tracker Capture',
+    displayName: 'Swamp Canoe Tracker Capture',
+    styleAnchors: [
+      'Swamp Canoe Tracker Capture',
+      'swamp canoe exploration screenshot',
+      'canoe bow',
+    ],
+    category: '6. Wilderness Hunts & Harsh Frontiers',
+    domain: 'swamp canoe exploration screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Swamp canoe tracker capture: an original first-person screenshot paddling a canoe through a misty swamp, cypress knees, fireflies and ripples in dark water.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject from a canoe gliding through a misty swamp.',
+      color_and_tone:
+        'Murky greens, mist grey and firefly gold, kept consistent across the whole image.',
+      lighting_and_shadow: 'Soft dusk light through mist, kept consistent across the whole image.',
+      texture_and_material: 'Still water, moss, cypress bark and paddle wood.',
+      camera_and_composition:
+        'First-person with the canoe bow in view, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with quiet uneasy tracking.',
+      rendering_and_quality: 'Clean capture with no HUD, kept consistent across the whole image.',
+      creative_brief:
+        "Swamp canoe tracker capture: an original first-person screenshot paddling a canoe through a misty swamp, cypress knees, fireflies and ripples in dark water. Carry it through canoe bow, misty swamp, fireflies, dark water. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'canoe bow; misty swamp; fireflies; dark water',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-157',
+    name: 'Crafting Camp Base Capture',
+    displayName: 'Crafting Camp Base Capture',
+    styleAnchors: [
+      'Crafting Camp Base Capture',
+      'survival crafting base screenshot',
+      'crafted base',
+    ],
+    category: '6. Wilderness Hunts & Harsh Frontiers',
+    domain: 'survival crafting base screenshot',
+    negativePrompt:
+      'inventory UI, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Crafting camp base capture: an original survival-crafting screenshot of a handmade wilderness base, workbenches, campfire, drying racks and tools around a tent.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; place the subject in a handmade survival base full of crafted tools.',
+      color_and_tone: 'Warm fire orange, wood browns and forest green.',
+      lighting_and_shadow: 'Campfire glow at dusk, kept consistent across the whole image.',
+      texture_and_material: 'Rope lashings, hides, rough wood and stone tools.',
+      camera_and_composition:
+        'Third-person view over the camp, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with scrappy self-reliance, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean capture with no inventory UI, kept consistent across the whole image.',
+      creative_brief:
+        "Crafting camp base capture: an original survival-crafting screenshot of a handmade wilderness base, workbenches, campfire, drying racks and tools around a tent. Carry it through crafted base, workbenches, campfire, drying racks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'crafted base; workbenches; campfire; drying racks',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-158',
+    name: 'Giant Beast Riding Capture',
+    displayName: 'Giant Beast Riding Capture',
+    styleAnchors: [
+      'Giant Beast Riding Capture',
+      'riding a huge creature screenshot',
+      'enormous mount',
+    ],
+    category: '6. Wilderness Hunts & Harsh Frontiers',
+    domain: 'riding a huge creature screenshot',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Giant beast riding capture: an original third-person screenshot of a rider on the back of an enormous tame creature, saddle platforms and a vast landscape below.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject riding on the back of an enormous creature.',
+      color_and_tone: 'Earthy creature tones and wide sky, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Open daylight with creature shadow, kept consistent across the whole image.',
+      texture_and_material: 'Hide, fur or scales, saddle ropes and platforms.',
+      camera_and_composition:
+        'Over-the-shoulder view from the saddle across the vast creature back.',
+      atmosphere_and_mood:
+        'Keep the requested mood with majestic companionship, kept consistent across the whole image.',
+      rendering_and_quality: 'Clean capture with no HUD, kept consistent across the whole image.',
+      creative_brief:
+        "Giant beast riding capture: an original third-person screenshot of a rider on the back of an enormous tame creature, saddle platforms and a vast landscape below. Carry it through enormous mount, saddle platform, vast landscape, rider. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'enormous mount; saddle platform; vast landscape; rider',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

@@ -177,4 +177,506 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP12-179',
+    name: 'Top-Down Roguelite Crypt Gameplay',
+    displayName: 'Top-Down Roguelite Crypt Gameplay',
+    styleAnchors: [
+      'Top-Down Roguelite Crypt Gameplay',
+      'overhead roguelite dungeon gameplay',
+      'overhead crypt',
+    ],
+    category: '9. Gothic & Dungeon Gameplay',
+    domain: 'overhead roguelite dungeon gameplay',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Top-down roguelite crypt gameplay: an original overhead dungeon-run capture with a small hero, clustered enemies, glowing attack arcs and procedurally tiled crypt rooms.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject as a small overhead figure in a procedurally tiled crypt room.',
+      color_and_tone:
+        'Dark stone with vivid attack colors, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Torch pools and glowing attack effects, kept consistent across the whole image.',
+      texture_and_material:
+        'Tiled floors, bones, urns and particle arcs, kept consistent across the whole image.',
+      camera_and_composition:
+        'Overhead view with room walls framing, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with frantic run-based tension.',
+      rendering_and_quality:
+        'Clean gameplay capture with no UI text, kept consistent across the whole image.',
+      creative_brief:
+        "Top-down roguelite crypt gameplay: an original overhead dungeon-run capture with a small hero, clustered enemies, glowing attack arcs and procedurally tiled crypt rooms. Carry it through overhead crypt, glowing attack arcs, enemy clusters, tiled rooms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'overhead crypt; glowing attack arcs; enemy clusters; tiled rooms',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-180',
+    name: 'Moonlit Castle Side-View Gameplay',
+    displayName: 'Moonlit Castle Side-View Gameplay',
+    styleAnchors: [
+      'Moonlit Castle Side-View Gameplay',
+      'side-view gothic exploration gameplay',
+      'side view',
+    ],
+    category: '9. Gothic & Dungeon Gameplay',
+    domain: 'side-view gothic exploration gameplay',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Moonlit castle side-view gameplay: an original side-view exploration capture of a lone hero in towering gothic halls, stained moonlight, candles and hidden passages.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject in a side-view gothic castle corridor.',
+      color_and_tone: 'Deep blue moonlight, crimson drapes and candle gold.',
+      lighting_and_shadow:
+        'Moonlight through tall windows and candle glow, kept consistent across the whole image.',
+      texture_and_material:
+        'Carved stone, velvet and iron, kept consistent across the whole image.',
+      camera_and_composition:
+        'Side-on with parallax background halls, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with lonely gothic grandeur.',
+      rendering_and_quality:
+        'Clean gameplay capture with no UI text, kept consistent across the whole image.',
+      creative_brief:
+        "Moonlit castle side-view gameplay: an original side-view exploration capture of a lone hero in towering gothic halls, stained moonlight, candles and hidden passages. Carry it through side view, moonlit halls, parallax, candles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'side view; moonlit halls; parallax; candles',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-181',
+    name: 'Real-Time First-Person Crypt Gameplay',
+    displayName: 'Real-Time First-Person Crypt Gameplay',
+    styleAnchors: [
+      'Real-Time First-Person Crypt Gameplay',
+      'first-person dungeon crawler gameplay',
+      'first-person hands',
+    ],
+    category: '9. Gothic & Dungeon Gameplay',
+    domain: 'first-person dungeon crawler gameplay',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Real-time first-person crypt gameplay: an original first-person dungeon crawler capture with a hand holding a torch and a weapon, crumbling crypt corridors and lurking shapes.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject from first person with a torch and weapon in a crypt.',
+      color_and_tone:
+        'Torch orange against cold grey stone, kept consistent across the whole image.',
+      lighting_and_shadow: 'Torch flicker and deep shadow, kept consistent across the whole image.',
+      texture_and_material:
+        'Wet stone, cobwebs and old bones, kept consistent across the whole image.',
+      camera_and_composition:
+        'First-person with hands in view, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with claustrophobic danger, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean capture with no UI text, kept consistent across the whole image.',
+      creative_brief:
+        "Real-time first-person crypt gameplay: an original first-person dungeon crawler capture with a hand holding a torch and a weapon, crumbling crypt corridors and lurking shapes. Carry it through first-person hands, torch, crypt corridor, lurking shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'first-person hands; torch; crypt corridor; lurking shapes',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-182',
+    name: 'Lock-On Boss Duel Gameplay',
+    displayName: 'Lock-On Boss Duel Gameplay',
+    styleAnchors: [
+      'Lock-On Boss Duel Gameplay',
+      'third-person boss battle gameplay',
+      'lock-on camera',
+    ],
+    category: '9. Gothic & Dungeon Gameplay',
+    domain: 'third-person boss battle gameplay',
+    negativePrompt:
+      'health bars, existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Lock-on boss duel gameplay: an original third-person capture of a small warrior locked onto a colossal boss in a ruined arena, dodge roll, fog and dramatic scale.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject locked onto a huge boss in a third-person duel.',
+      color_and_tone: 'Grey fog, dark stone and one vivid boss accent.',
+      lighting_and_shadow: 'Dramatic backlight and dust, kept consistent across the whole image.',
+      texture_and_material:
+        'Worn armor, ruined stone and boss hide, kept consistent across the whole image.',
+      camera_and_composition:
+        'Over-the-shoulder with boss filling the frame, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with punishing grandeur, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean capture with no health bars, kept consistent across the whole image.',
+      creative_brief:
+        "Lock-on boss duel gameplay: an original third-person capture of a small warrior locked onto a colossal boss in a ruined arena, dodge roll, fog and dramatic scale. Carry it through lock-on camera, colossal boss, dodge roll, ruined arena. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'lock-on camera; colossal boss; dodge roll; ruined arena',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-183',
+    name: 'Twin-Stick Dungeon Shooter Gameplay',
+    displayName: 'Twin-Stick Dungeon Shooter Gameplay',
+    styleAnchors: [
+      'Twin-Stick Dungeon Shooter Gameplay',
+      'overhead dungeon shooter gameplay',
+      'overhead',
+    ],
+    category: '9. Gothic & Dungeon Gameplay',
+    domain: 'overhead dungeon shooter gameplay',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Twin-stick dungeon shooter gameplay: an original overhead capture of a hero firing magical bullets in every direction through a dungeon full of bullet-hell enemies.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject firing glowing projectiles from an overhead dungeon view.',
+      color_and_tone:
+        'Dark dungeon with neon bullet patterns, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Glowing projectiles lighting the floor, kept consistent across the whole image.',
+      texture_and_material:
+        'Pixel or low-poly dungeon tiles and particles, kept consistent across the whole image.',
+      camera_and_composition:
+        'Overhead view with dense bullet patterns, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with frantic playfulness, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean capture with readable patterns, kept consistent across the whole image.',
+      creative_brief:
+        "Twin-stick dungeon shooter gameplay: an original overhead capture of a hero firing magical bullets in every direction through a dungeon full of bullet-hell enemies. Carry it through overhead, bullet patterns, glowing shots, dungeon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'overhead; bullet patterns; glowing shots; dungeon',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-184',
+    name: 'Co-op Dungeon Brawler Gameplay',
+    displayName: 'Co-op Dungeon Brawler Gameplay',
+    styleAnchors: [
+      'Co-op Dungeon Brawler Gameplay',
+      'four-player dungeon brawler gameplay',
+      'four heroes',
+    ],
+    category: '9. Gothic & Dungeon Gameplay',
+    domain: 'four-player dungeon brawler gameplay',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Co-op dungeon brawler gameplay: an original isometric capture of four color-coded heroes fighting side by side through a dungeon hall packed with monsters.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject as one of four color-coded heroes in a dungeon brawl.',
+      color_and_tone:
+        'Four distinct hero colors against dark stone, kept consistent across the whole image.',
+      lighting_and_shadow: 'Torchlight and spell flashes, kept consistent across the whole image.',
+      texture_and_material:
+        'Chunky armor, stone floors and loot, kept consistent across the whole image.',
+      camera_and_composition:
+        'Isometric wide view of the party, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with rowdy teamwork, kept consistent across the whole image.',
+      rendering_and_quality: 'Clean capture with no UI, kept consistent across the whole image.',
+      creative_brief:
+        "Co-op dungeon brawler gameplay: an original isometric capture of four color-coded heroes fighting side by side through a dungeon hall packed with monsters. Carry it through four heroes, color-coded, isometric, monster horde. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'four heroes; color-coded; isometric; monster horde',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-185',
+    name: 'Tank-Control Manor Gameplay',
+    displayName: 'Tank-Control Manor Gameplay',
+    styleAnchors: [
+      'Tank-Control Manor Gameplay',
+      'classic survival horror gameplay',
+      'pre-rendered rooms',
+    ],
+    category: '9. Gothic & Dungeon Gameplay',
+    domain: 'classic survival horror gameplay',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Tank-control manor gameplay: an original classic survival-horror capture with pre-rendered manor rooms, a small 3D survivor and dramatic fixed angles.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject small in a pre-rendered manor room from a fixed camera.',
+      color_and_tone:
+        'Muted browns, greens and lamp amber, kept consistent across the whole image.',
+      lighting_and_shadow: 'Moody pre-rendered lighting, kept consistent across the whole image.',
+      texture_and_material:
+        'Detailed wallpaper, wood and dust, kept consistent across the whole image.',
+      camera_and_composition:
+        'Fixed dramatic angle from a corner, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with slow-building dread, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Authentic classic horror capture, kept consistent across the whole image.',
+      creative_brief:
+        "Tank-control manor gameplay: an original classic survival-horror capture with pre-rendered manor rooms, a small 3D survivor and dramatic fixed angles. Carry it through pre-rendered rooms, fixed camera, small survivor, manor. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'pre-rendered rooms; fixed camera; small survivor; manor',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-186',
+    name: 'Crypt Thief Stealth Gameplay',
+    displayName: 'Crypt Thief Stealth Gameplay',
+    styleAnchors: [
+      'Crypt Thief Stealth Gameplay',
+      'first-person thief stealth gameplay',
+      'first-person stealth',
+    ],
+    category: '9. Gothic & Dungeon Gameplay',
+    domain: 'first-person thief stealth gameplay',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Crypt thief stealth gameplay: an original first-person stealth capture of a thief in shadows, a glowing light indicator mood, guards with lanterns and gothic interiors.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject from first person hidden in shadow among patrolling guards.',
+      color_and_tone: 'Deep shadow with lantern gold, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Pools of light and total darkness, kept consistent across the whole image.',
+      texture_and_material:
+        'Stone, tapestries and polished loot, kept consistent across the whole image.',
+      camera_and_composition:
+        'First-person from a shadowed corner, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with breathless stealth, kept consistent across the whole image.',
+      rendering_and_quality: 'Clean capture with no UI, kept consistent across the whole image.',
+      creative_brief:
+        "Crypt thief stealth gameplay: an original first-person stealth capture of a thief in shadows, a glowing light indicator mood, guards with lanterns and gothic interiors. Carry it through first-person stealth, shadows, guards with lanterns, loot. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'first-person stealth; shadows; guards with lanterns; loot',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-187',
+    name: 'Night Village Monster Hunt Gameplay',
+    displayName: 'Night Village Monster Hunt Gameplay',
+    styleAnchors: [
+      'Night Village Monster Hunt Gameplay',
+      'third-person monster hunter village gameplay',
+      'night village',
+    ],
+    category: '9. Gothic & Dungeon Gameplay',
+    domain: 'third-person monster hunter village gameplay',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Night village monster hunt gameplay: an original third-person capture of a hunter stalking a creature through a dark village, torches, fog and shuttered houses.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject hunting a creature through a foggy night village.',
+      color_and_tone:
+        'Blue night, torch orange and fog grey, kept consistent across the whole image.',
+      lighting_and_shadow: 'Torchlight and moon rims, kept consistent across the whole image.',
+      texture_and_material:
+        'Timber houses, mud, fog and silver weapons, kept consistent across the whole image.',
+      camera_and_composition:
+        'Third-person over-the-shoulder down a lane, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with tense folk horror.',
+      rendering_and_quality: 'Clean capture with no UI, kept consistent across the whole image.',
+      creative_brief:
+        "Night village monster hunt gameplay: an original third-person capture of a hunter stalking a creature through a dark village, torches, fog and shuttered houses. Carry it through night village, hunter, creature, fog. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'night village; hunter; creature; fog',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-188',
+    name: 'Dungeon Overlord Build Gameplay',
+    displayName: 'Dungeon Overlord Build Gameplay',
+    styleAnchors: [
+      'Dungeon Overlord Build Gameplay',
+      'dungeon management gameplay',
+      'imps digging',
+    ],
+    category: '9. Gothic & Dungeon Gameplay',
+    domain: 'dungeon management gameplay',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        "Dungeon overlord build gameplay: an original management capture of an evil overlord's dungeon seen from above, imps digging tunnels, traps and treasure rooms.",
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject within a dungeon being built by imps from above.',
+      color_and_tone:
+        'Dark earth, lava orange and gold treasure, kept consistent across the whole image.',
+      lighting_and_shadow: 'Lava glow and torchlight, kept consistent across the whole image.',
+      texture_and_material:
+        'Dug earth, carved stone and gold piles, kept consistent across the whole image.',
+      camera_and_composition:
+        'Top-down angled view of the dungeon, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with mischievous villainy, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean management capture with no UI, kept consistent across the whole image.',
+      creative_brief:
+        "Dungeon overlord build gameplay: an original management capture of an evil overlord's dungeon seen from above, imps digging tunnels, traps and treasure rooms. Carry it through imps digging, traps, treasure rooms, overhead dungeon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'imps digging; traps; treasure rooms; overhead dungeon',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-189',
+    name: 'Necromancer Minion Gameplay',
+    displayName: 'Necromancer Minion Gameplay',
+    styleAnchors: ['Necromancer Minion Gameplay', 'isometric undead army gameplay', 'necromancer'],
+    category: '9. Gothic & Dungeon Gameplay',
+    domain: 'isometric undead army gameplay',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Necromancer minion gameplay: an original isometric capture of a necromancer commanding a swarm of skeleton minions through a graveyard battle.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject leading a swarm of skeleton minions from an isometric view.',
+      color_and_tone: 'Sickly green magic, bone white and night blue.',
+      lighting_and_shadow:
+        'Green magic glow and moonlight, kept consistent across the whole image.',
+      texture_and_material: 'Bones, grave soil and robes, kept consistent across the whole image.',
+      camera_and_composition:
+        'Isometric view with minion swarm, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with dark mischief, kept consistent across the whole image.',
+      rendering_and_quality: 'Clean capture with no UI, kept consistent across the whole image.',
+      creative_brief:
+        "Necromancer minion gameplay: an original isometric capture of a necromancer commanding a swarm of skeleton minions through a graveyard battle. Carry it through necromancer, skeleton swarm, graveyard, green magic. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'necromancer; skeleton swarm; graveyard; green magic',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-190',
+    name: 'Pixel Roguelike Descent Gameplay',
+    displayName: 'Pixel Roguelike Descent Gameplay',
+    styleAnchors: [
+      'Pixel Roguelike Descent Gameplay',
+      '2D pixel roguelike gameplay',
+      'pixel caverns',
+    ],
+    category: '9. Gothic & Dungeon Gameplay',
+    domain: '2D pixel roguelike gameplay',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Pixel roguelike descent gameplay: an original 2D pixel capture of a tiny adventurer descending through procedurally generated caverns full of traps and odd creatures.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject as a tiny pixel adventurer descending through caverns.',
+      color_and_tone:
+        'Earthy pixel palette with bright treasure, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Torch pixels and dark cave edges, kept consistent across the whole image.',
+      texture_and_material:
+        'Chunky pixel rock, ropes and spikes, kept consistent across the whole image.',
+      camera_and_composition:
+        'Side view of stacked cavern ledges, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with scrappy peril, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Crisp pixel capture with no UI, kept consistent across the whole image.',
+      creative_brief:
+        "Pixel roguelike descent gameplay: an original 2D pixel capture of a tiny adventurer descending through procedurally generated caverns full of traps and odd creatures. Carry it through pixel caverns, tiny adventurer, traps, descent. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'pixel caverns; tiny adventurer; traps; descent',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-191',
+    name: 'Ghost Ship Boarding Gameplay',
+    displayName: 'Ghost Ship Boarding Gameplay',
+    styleAnchors: ['Ghost Ship Boarding Gameplay', 'haunted ship action gameplay', 'ghost ship'],
+    category: '9. Gothic & Dungeon Gameplay',
+    domain: 'haunted ship action gameplay',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Ghost ship boarding gameplay: an original third-person capture of boarding a spectral ship in fog, glowing ghost crew, rotting rigging and green lanterns.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject boarding a spectral ship in fog.',
+      color_and_tone:
+        'Fog grey, ghost green and dark wood, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Spectral glow and lantern light, kept consistent across the whole image.',
+      texture_and_material:
+        'Rotting wood, torn sails and translucent spirits, kept consistent across the whole image.',
+      camera_and_composition:
+        'Third-person from the rail or deck, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with eerie maritime dread.',
+      rendering_and_quality: 'Clean capture with no UI, kept consistent across the whole image.',
+      creative_brief:
+        "Ghost ship boarding gameplay: an original third-person capture of boarding a spectral ship in fog, glowing ghost crew, rotting rigging and green lanterns. Carry it through ghost ship, spectral crew, fog, green lanterns. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'ghost ship; spectral crew; fog; green lanterns',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP12-192',
+    name: 'Cursed Forest Survival Gameplay',
+    displayName: 'Cursed Forest Survival Gameplay',
+    styleAnchors: [
+      'Cursed Forest Survival Gameplay',
+      'dark forest survival gameplay',
+      'campfire safe zone',
+    ],
+    category: '9. Gothic & Dungeon Gameplay',
+    domain: 'dark forest survival gameplay',
+    negativePrompt:
+      'existing game characters, logos or levels, readable interface text, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Cursed forest survival gameplay: an original third-person capture of a survivor in a dark twisted forest, campfire as the only safe zone and shapes between the trees.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject surviving near a campfire in a twisted dark forest.',
+      color_and_tone: 'Black trees, ember orange and cold blue night.',
+      lighting_and_shadow:
+        'Campfire light fading into darkness, kept consistent across the whole image.',
+      texture_and_material:
+        'Twisted bark, dead leaves and ash, kept consistent across the whole image.',
+      camera_and_composition:
+        'Third-person view from behind the fire, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with fragile safety, kept consistent across the whole image.',
+      rendering_and_quality: 'Clean capture with no UI, kept consistent across the whole image.',
+      creative_brief:
+        "Cursed forest survival gameplay: an original third-person capture of a survivor in a dark twisted forest, campfire as the only safe zone and shapes between the trees. Carry it through campfire safe zone, twisted forest, darkness, shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'campfire safe zone; twisted forest; darkness; shapes',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];
