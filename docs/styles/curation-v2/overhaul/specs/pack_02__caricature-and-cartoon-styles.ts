@@ -1,4 +1,5 @@
 import type { Spec } from '../tools/apply';
+import { dna } from './_strict';
 
 // DNA in this category was already authored and reviewed (drawing mechanics separated from cast and gags),
 // so it is kept. Names that were show titles or real people are replaced by their mechanism;
@@ -91,11 +92,33 @@ const spec: Spec = {
         'Sunday funnies panel of an adult wizard whose spell turns his hat into a startled pigeon, four-color newsprint. No speech balloons, text or logo.',
       ],
     },
+    // Cards read as polished finished mascots, so the DNA now makes the rejection visible: a
+    // committee-mangled, off-model design whose parts disagree with each other.
     'SP02-097': {
+      dna: dna({
+        aesthetic:
+          'Committee-mangled corporate mascot that was clearly rejected: glossy vector finish on an off-model design whose parts contradict each other, with too many features, dead eyes, a forced grin and stiff presentation pose.',
+        subject_treatment:
+          'Keep the requested subject, identity and action, but draw it as a mascot redesigned by too many stakeholders: mismatched eye sizes and pupils looking different ways, a human-teeth grin, limbs bolted on at wrong angles, an extra accessory nobody asked for, and proportions that fight each other.',
+        color_and_tone:
+          'Loud clashing brand primaries, sterile white and one sickly off-brand accent color that does not belong.',
+        lighting_and_shadow:
+          'Flat product-shot fill with a glossy highlight stamped on every surface, even where it makes no sense.',
+        texture_and_material:
+          'Over-smooth vector gradients, plastic sheen and visible leftover construction: a stray anchor point, a misaligned outline or a half-deleted earlier version.',
+        camera_and_composition:
+          'Stiff centered presentation pose on a blank studio background, like a slide in a failed pitch deck, with no lettering.',
+        atmosphere_and_mood:
+          'Keep the requested mood with forced cheer that is visibly wrong and faintly unsettling.',
+        rendering_and_quality:
+          'Clean vector render of a bad design decision: finished and glossy, but awkward, uncanny and plainly unapproved.',
+        key_features:
+          'committee-mangled mascot; mismatched eyes; human-teeth grin; bolted-on limbs; forced cheer',
+      }),
       briefs: [
-        'Rejected corporate mascot of a smiling tooth for a dental clinic, polished vector shapes, over-regular symmetry, frozen cheer and one eye slightly larger, sterile gloss. No brand name, text or logo.',
-        'Rejected corporate mascot of a broccoli with a fixed grin and uneven eyes, sterile glossy vector. No text or logo.',
-        'Rejected corporate mascot of a fire hydrant giving a stiff thumbs-up, frozen cheer and uncomfortable symmetry. No text or logo.',
+        'A dental clinic mascot tooth stares from a glossy pitch slide with human molars for a smile, one eye twice the size of the other, a stethoscope nobody requested and three arms because the committee could not agree on the wave. No brand name, text or logo.',
+        'Grinning with too many human teeth, a broccoli mascot for a school lunch program poses in sneakers, sunglasses and a cape, its florets redrawn so often that a half-deleted earlier head still peeks out behind it. No text or logo.',
+        'A city water mascot fire hydrant gives a stiff thumbs-up with a hand bolted on backwards, its pupils pointing in different directions and a smile that shows gums, frozen on a blank grey presentation board. No text or logo.',
       ],
     },
     'SP02-100': {

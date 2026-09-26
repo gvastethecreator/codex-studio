@@ -185,7 +185,7 @@
     "displayCategory": "Cartoon & caricature",
     "kind": "mixed",
     "expectedCount": 33,
-    "baselineHash": "3511a511d8c01ac2743cc7e320b7af3713dad51d058b06371c40d3ecf323362a",
+    "baselineHash": "01a570367b4a7e30b96c68121c401d51d4f55873c3aa595404262ba697b75d3d",
     "problem": "The former cartoon DNA bundled drawing mechanics with named cast, setting and gag cues; the active fields have been separated from those cues.",
     "preserve": "Shape exaggeration, line character and comedic visual timing.",
     "proposedAction": "Overhaul v2: authored DNA kept; 17 names that were show titles or a real person replaced by their drawing mechanism (old names kept as search aliases); 3 new briefs per preset with no repeated subject and only one slime monster (the preset that asks for it). Awkward 'X-free' phrasing in DNA rewritten.",

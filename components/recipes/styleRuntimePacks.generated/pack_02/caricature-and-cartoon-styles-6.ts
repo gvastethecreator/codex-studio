@@ -358,25 +358,25 @@ export const GENERATED_STYLE_PRESETS = [
       'professional, friendly, appealing, trustworthy, polished, market-tested, focus-grouped, appropriate, wholesome, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, generic stock footage, uncontrolled noise, exact character likeness, readable gag text, generic cute mascot, smooth anime polish',
     style: {
       aesthetic:
-        'Use this drawing language: Uncanny icon-cartoon treatment with polished vector shapes, over-regular symmetry, frozen cheer, disproportionate feature scale, and sterile glossy fill. Apply it as a rendering treatment to user-provided content; let the user control subject and context.',
+        'Committee-mangled corporate mascot that was clearly rejected: glossy vector finish on an off-model design whose parts contradict each other, with too many features, dead eyes, a forced grin and stiff presentation pose.',
       subject_treatment:
-        'Apply smooth vector contours, near-symmetry, polished simple shapes, and tiny controlled alignment errors to the supplied subject while preserving its identity, silhouette, requested action, actual material, and function. Change the drawn treatment, not the underlying content.',
+        'Keep the requested subject, identity and action, but draw it as a mascot redesigned by too many stakeholders: mismatched eye sizes and pupils looking different ways, a human-teeth grin, limbs bolted on at wrong angles, an extra accessory nobody asked for, and proportions that fight each other.',
       color_and_tone:
-        'Use primary blue, bright red, yellow, sterile white, warm peach, and glossy green as style colors while honoring any explicit color requirements in the request.',
+        'Loud clashing brand primaries, sterile white and one sickly off-brand accent color that does not belong.',
       lighting_and_shadow:
-        'Use even product-like fill with restrained specular accents as a visual treatment, while respecting any lighting instructions in the request.',
+        'Flat product-shot fill with a glossy highlight stamped on every surface, even where it makes no sense.',
       texture_and_material:
-        "Render smooth vector-like fill, restrained sheen, clean highlights, and sterile surface finish as drawn or printed surface marks over the existing material; do not change the subject's actual substance or function.",
+        'Over-smooth vector gradients, plastic sheen and visible leftover construction: a stray anchor point, a misaligned outline or a half-deleted earlier version.',
       camera_and_composition:
-        'Balance the requested subject with icon-like spacing and surfaces with no lettering; preserve its identity and requested function.',
+        'Stiff centered presentation pose on a blank studio background, like a slide in a failed pitch deck, with no lettering.',
       atmosphere_and_mood:
-        'Sterile, cheerful, and faintly wrong; maintain that contrast through form and surface.',
+        'Keep the requested mood with forced cheer that is visibly wrong and faintly unsettling.',
       rendering_and_quality:
-        'Finish with smooth vector fill, sterile gloss, precise symmetry, and one controlled sign of awkwardness.',
+        'Clean vector render of a bad design decision: finished and glossy, but awkward, uncanny and plainly unapproved.',
       key_features:
-        'polished vector shapes; over-regular symmetry; frozen cheer; uneven feature scale; sterile gloss',
+        'committee-mangled mascot; mismatched eyes; human-teeth grin; bolted-on limbs; forced cheer',
       creative_brief:
-        'Render the supplied content with smooth vector contours, near-symmetry, polished simple shapes, and tiny controlled alignment errors. Use primary blue, bright red, yellow, sterile white, warm peach, and glossy green as style colors while honoring any explicit color instructions. Apply smooth vector-like fill, restrained sheen, clean highlights, and sterile surface finish as drawn or printed marks over the existing material, without changing what the subject is made of or how it functions. Preserve the requested subject, action, and setting; follow the supplied composition and add no unrequested cast, location, lettering, or gag. Use it as a reusable look on any subject.',
+        "Committee-mangled corporate mascot that was clearly rejected: glossy vector finish on an off-model design whose parts contradict each other, with too many features, dead eyes, a forced grin and stiff presentation pose. Carry it through committee-mangled mascot, mismatched eyes, human-teeth grin, bolted-on limbs, forced cheer. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
     },
   },
   {
