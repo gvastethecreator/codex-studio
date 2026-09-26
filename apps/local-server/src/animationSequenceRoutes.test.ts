@@ -1,4 +1,4 @@
-import { existsSync, mkdtempSync, rmSync } from 'node:fs';
+import { existsSync, mkdtempSync, readFileSync, rmSync } from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import sharp from 'sharp';
@@ -7,11 +7,11 @@ import type { CatalogImage } from '../../../packages/shared/src';
 
 import { createAnimationSequenceRoutes } from './animationSequenceRoutes';
 
-async function writeFixturePng(filePath: string, color: string) {
+async function writeFixturePng(filePath: string, color: string, size = 1024) {
   await sharp({
     create: {
-      width: 16,
-      height: 16,
+      width: size,
+      height: size,
       channels: 4,
       background: color,
     },
@@ -191,8 +191,8 @@ describe('animationSequenceRoutes', () => {
     try {
       const managedPath = path.join(root, 'managed.png');
       const outsidePath = path.join(outsideRoot, 'outside.png');
-      await writeFixturePng(managedPath, '#00ff00');
-      await writeFixturePng(outsidePath, '#ff00ff');
+      await writeFixturePng(managedPath, '#00ff00', 1024);
+      await writeFixturePng(outsidePath, '#ff00ff', 16);
       const catalogImages = new Map([
         ['managed', createCatalogImage('managed', managedPath)],
         ['outside', createCatalogImage('outside', outsidePath)],
@@ -279,6 +279,24 @@ describe('animationSequenceRoutes', () => {
         headers: { 'Content-Type': 'application/json' },
       });
       expect(partialForceResponse.status).toBe(200);
+
+      const smallPath = path.join(root, 'small.png');
+      await writeFixturePng(smallPath, '#112233', 16);
+      const smallResponse = await routes.request(`/runs/${run.id}/attach-frame`, {
+        method: 'POST',
+        body: JSON.stringify({ frameIndex: 1, sourcePath: smallPath }),
+        headers: { 'Content-Type': 'application/json' },
+      });
+      const smallPayload = (await smallResponse.json()) as {
+        frames: Array<{ id: string; status: string; rawPath?: string }>;
+        paths?: { rawDir: string };
+      };
+      expect(smallPayload.frames.find((frame) => frame.id === 'frame-0002')).toMatchObject({
+        status: 'blocked',
+        blocked: { reasonKind: 'geometry_mismatch' },
+      });
+      const rawFile = path.join(root, 'outputs', 'animation-sequence', run.id, 'raw', 'frame-0002.png');
+      expect(readFileSync(rawFile).equals(readFileSync(smallPath))).toBe(true);
       await expect(partialForceResponse.json()).resolves.toMatchObject({
         export: { frameCount: 1 },
       });

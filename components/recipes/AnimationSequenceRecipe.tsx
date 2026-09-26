@@ -515,6 +515,13 @@ export const AnimationSequenceRecipe: React.FC<AnimationSequenceRecipeProps> = (
 
   const generateFrame = (correctionMode: boolean) => {
     if (!activeRun || !selectedPlanFrame || !isSelectedPromptReady) return;
+    if (
+      selectedPlanFrame.index > 0 &&
+      !activeRun.frames.some((frame) => frame.index === 0 && frame.catalogImageId)
+    ) {
+      setError('Attach the first frame from the library before queueing the next frame.');
+      return;
+    }
     const handoff = createAnimationFrameHandoff({
       runId: activeRun.id,
       contract: activeRun.contract,

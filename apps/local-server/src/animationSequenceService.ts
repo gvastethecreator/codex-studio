@@ -1,7 +1,7 @@
 import { randomUUID } from 'node:crypto';
 import { copyFile, mkdir, readFile, readdir, stat, writeFile } from 'node:fs/promises';
 import path from 'node:path';
-import { readCoverFitFlattenedRgba, writeCoverFitFlattenedPng } from './sharpAuthoringAdapter';
+import { authoringSharp } from './sharpAuthoringAdapter';
 import {
   createAnimationSequenceContract,
   createAnimationSequenceFramePlan,
@@ -353,19 +353,46 @@ export function createAnimationSequenceService({
       );
       const framePath = path.join(run.paths.framesDir, `${frame.id}.png`);
       await copyFile(sourcePath, rawPath);
-      const info = await writeCoverFitFlattenedPng(sourcePath, framePath, {
-        width: run.contract.dimensions.width,
-        height: run.contract.dimensions.height,
-        matteColor: run.contract.matteColor,
-      });
+      const metadata = await authoringSharp(sourcePath).metadata();
+      const exactSize =
+        metadata.width === run.contract.dimensions.width &&
+        metadata.height === run.contract.dimensions.height;
+      const hasAlpha = metadata.hasAlpha === true;
+      if (!exactSize || (!hasAlpha && run.contract.background !== 'solid')) {
+        frame.status = 'blocked';
+        frame.rawPath = rawPath;
+        frame.framePath = null;
+        frame.catalogImageId = catalogImageId;
+        frame.width = metadata.width ?? null;
+        frame.height = metadata.height ?? null;
+        frame.blocked = {
+          status: 'blocked',
+          reasonKind: 'geometry_mismatch',
+          userMessage: `This frame is ${metadata.width ?? 0}×${metadata.height ?? 0}. The contract is ${run.contract.dimensions.width}×${run.contract.dimensions.height} with native transparency.`,
+          suggestion:
+            'Attach an image that already matches the frame size. This workflow does not crop or scale it.',
+        };
+        frame.updatedAt = timestamp;
+        return saveRun(run);
+      }
+
+      if (run.contract.background === 'solid' && !hasAlpha) {
+        await authoringSharp(sourcePath)
+          .flatten({ background: run.contract.matteColor })
+          .png()
+          .toFile(framePath);
+      } else {
+        await copyFile(sourcePath, framePath);
+      }
+      const info = await authoringSharp(framePath).metadata();
 
       frame.status = 'generated';
       frame.rawPath = rawPath;
       frame.framePath = framePath;
       frame.catalogImageId = catalogImageId;
       frame.jobId = input.jobId?.trim() || frame.jobId;
-      frame.width = info.width;
-      frame.height = info.height;
+      frame.width = info.width ?? null;
+      frame.height = info.height ?? null;
       frame.blocked = null;
       frame.updatedAt = timestamp;
       return saveRun(run);
@@ -396,16 +423,25 @@ export function createAnimationSequenceService({
       const gifFrames = (
         await Promise.all(
           frames.map(async (frame): Promise<GifRgbaFrame | null> => {
-            if (!frame.framePath) return null;
-            const data = await readCoverFitFlattenedRgba(frame.framePath, {
-              width: run.contract.dimensions.width,
-              height: run.contract.dimensions.height,
-              matteColor: run.contract.matteColor,
-            });
+            if (!frame.framePath || frame.status !== 'generated') return null;
+            const metadata = await authoringSharp(frame.framePath).metadata();
+            if (
+              metadata.width !== run.contract.dimensions.width ||
+              metadata.height !== run.contract.dimensions.height
+            ) {
+              return null;
+            }
+            const data = await authoringSharp(frame.framePath).ensureAlpha().raw().toBuffer();
+            const expectedBytes =
+              run.contract.dimensions.width * run.contract.dimensions.height * 4;
+            if (data.length !== expectedBytes) return null;
             return { rgba: data, delayCentiseconds };
           }),
         )
       ).filter((frame): frame is GifRgbaFrame => frame !== null);
+      if (gifFrames.length === 0) {
+        throw new Error('Cannot export GIF without a frame at the contract size.');
+      }
 
       const buffer = encodeGif({
         width: run.contract.dimensions.width,

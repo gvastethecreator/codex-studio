@@ -48,6 +48,7 @@ const ANIMATION_SEQUENCE_BLOCKED_REASON_KINDS = [
   'runner_failed',
   'no_image_returned',
   'source_missing',
+  'geometry_mismatch',
   'export_failed',
   'unknown',
 ] as const;
