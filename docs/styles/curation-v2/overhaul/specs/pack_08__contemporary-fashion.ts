@@ -65,9 +65,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'casual ready-to-wear'],
       briefs: [
-        'Fashion editorial photograph: an adult woman knight stands in a ruined cathedral nave wearing a haute couture gown whose skirt is a spiral of stiffened oxblood silk shaped like a dragon coiling around her legs, hand-beaded scales catching one hard shaft of light. Full figure. No text or logo.',
-        'Fashion editorial photograph of an elderly adult man with a white beard wearing a haute couture cocoon coat of ivory gazar that balloons into an egg shape around him, standing on a black sand beach at dawn. Full figure, sculpted shadow. No text or logo.',
-        'Fashion editorial photograph of an adult model in a haute couture gown built from hundreds of black ostrich feathers arranged like raven wings unfolding, posed at the top of a spiral stone staircase. Hard editorial key. No text or logo.',
+        "A knight stands in a ruined cathedral nave in a couture gown whose oxblood silk skirt spirals around her like a coiled dragon, its hem pooling over the broken altar steps. No readable text or logo.",
+        "An elderly man with a white beard stands on a black-sand beach in an ivory gazar cocoon coat that balloons into a giant egg, the tide swirling around its base. No readable text or logo.",
+        "At the top of a spiral stone staircase, a gown of hundreds of black ostrich feathers unfolds like wings as a gust rushes up the stairwell. No readable text or logo.",
       ],
     },
     'SP08-003': {
@@ -84,9 +84,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'busy prints', 'logos'],
       briefs: [
-        'Fashion photograph of an adult woman ferrywoman in a long bone-colored wool coat and wide trousers, standing at the prow of a small wooden ferry crossing a grey fjord in fog. Minimal, calm, soft light. No text or logo.',
-        'Fashion photograph of an adult man in a camel cashmere rollneck and fluid charcoal trousers arranging a single branch in a stone vase inside an empty whitewashed chapel. Minimalist, window light. No text or logo.',
-        'Fashion photograph of an adult woman beekeeper in an oatmeal wool smock and matte leather gloves holding one honeycomb frame against a pale concrete wall. Minimal and serene. No text or logo.',
+        "A ferrywoman in a long bone-colored wool coat stands at the prow of a small wooden ferry crossing a grey fjord in fog, the only mark in a white world. No readable text or logo.",
+        "Inside an empty whitewashed chapel, a man in a camel cashmere rollneck arranges a single branch in a stone vase and nothing else in the room. No readable text or logo.",
+        "A beekeeper in an oatmeal wool smock holds one honeycomb frame against a pale concrete wall, a single bee resting on her matte glove. No readable text or logo.",
       ],
     },
     'SP08-005': {
@@ -103,9 +103,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'sports team logos'],
       briefs: [
-        'Fashion photograph of an adult woman sword-dancer mid-spin on a rooftop at sunrise wearing a sage athleisure set with bonded seams, a cropped windbreaker and clean runners, a practice sword in hand. Dynamic. No text or logo.',
-        'Fashion photograph of a grey-bearded adult man in a slate athleisure zip-neck and joggers jogging up the steps of an ancient amphitheater at dawn, reflective trim flashing. No text or logo.',
-        'Fashion photograph of an adult woman falconer in lilac performance leggings and a mesh-panel jacket releasing a hawk on a windy hilltop. Energetic, bright daylight. No text or logo.',
+        "A sword dancer spins on a rooftop at sunrise in a sage bonded-seam set and cropped windbreaker, her practice blade tracing a silver arc. No readable text or logo.",
+        "A grey-bearded grandfather in a slate zip-neck and joggers races a pack of stray dogs up the steps of an ancient amphitheater at dawn, reflective trim flashing. No readable text or logo.",
+        "On a windy hilltop a falconer in lilac performance leggings and a mesh-panel jacket releases a hawk, the jacket billowing like a sail. No readable text or logo.",
       ],
     },
     'SP08-010': {
@@ -122,9 +122,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'school crest text'],
       briefs: [
-        'Fashion photograph of an adult man alchemist in a cream cable-knit sweater, oxford shirt and navy blazer, reading beside a bubbling copper still in a wood-paneled study. Autumn light. No readable text or logo.',
-        'Fashion photograph of an adult woman in a forest-green cable knit, pleated tartan skirt and loafers rowing a narrow boat on a misty river past willow trees. No text or logo.',
-        'Fashion photograph of two elderly adult brothers in matching burgundy blazers and corduroys playing chess on a stone bench in an orchard. Warm daylight. No text or logo.',
+        "An alchemist in a cream cable knit, oxford shirt and navy blazer reads beside a bubbling copper still in a wood-paneled study, one elbow patch slightly singed. No readable text or logo.",
+        "Rowing a narrow boat on a misty river past weeping willows, a woman in a forest-green cable knit and pleated tartan skirt keeps her loafers perfectly dry. No readable text or logo.",
+        "Two elderly brothers in matching burgundy blazers and corduroys play chess on a stone bench in an orchard as an apple drops onto the board mid-move. No readable text or logo.",
       ],
     },
     'SP08-016': {
@@ -141,9 +141,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'glamour styling'],
       briefs: [
-        'Deadpan fashion photograph of an adult wizard with a long white beard wearing a plain grey fleece, straight jeans and white sneakers, standing in an empty parking lot at noon beside his gnarled staff, flat daylight and a centered frame. No text or logo.',
-        'Deadpan fashion photograph of an adult woman in a beige crewneck and washed khakis feeding a huge tame dragon in a quiet suburban backyard. Flat light, centered. No text or logo.',
-        'Deadpan fashion photograph of a middle-aged adult man in a plain navy fleece and basic sandals standing in a medieval castle courtyard among knights in armor. No text or logo.',
+        "A wizard with a long white beard stands deadpan in an empty parking lot at noon in a plain grey fleece, straight jeans and white sneakers, holding his gnarled staff. No readable text or logo.",
+        "A woman in a beige crewneck and washed khakis feeds a huge tame dragon in a quiet suburban backyard, both staring blankly into the lens. No readable text or logo.",
+        "A middle-aged man in a plain navy fleece and sandals queues at a castle drawbridge among fully armored knights, holding a paper coffee cup. No readable text or logo.",
       ],
     },
     'SP08-017': {
@@ -160,9 +160,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'company logos'],
       briefs: [
-        'Photograph of an adult oracle priestess in an identical black merino rollneck and slim trousers standing center-stage in a dark stone temple, a floating glowing crystal behind her like a product launch. No text or logo.',
-        'Photograph of five identical adult alchemists in black knits and minimalist sneakers standing in a symmetrical row in a white vaulted cellar. No text or logo.',
-        'Photograph of an adult blacksmith in a fine black knit and slim trousers presenting a single forged sword on a black plinth under a soft spotlight. No text or logo.',
+        "An oracle priestess in a black merino rollneck and slim trousers stands center stage in a dark stone temple, a floating crystal behind her lit like a product launch. No readable text or logo.",
+        "Five identical alchemists in black knits and minimalist sneakers stand in a symmetrical row in a white vaulted cellar, each holding the same flask. No readable text or logo.",
+        "A blacksmith in a fine black knit presents a single forged sword on a black plinth under a soft spotlight, as if unveiling a new gadget. No readable text or logo.",
       ],
     },
     'SP08-018': {
@@ -179,9 +179,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'real pop group likeness'],
       briefs: [
-        'Photograph of five adult court knights in coordinated white-and-silver stage tailoring with cropped jackets and sash harnesses, posed in a sharp V formation on a castle drawbridge in blue stage haze. No text or logo.',
-        'Photograph of an adult woman bard in a crimson cropped stage jacket and flared trousers mid-kick on a tavern table, a lute in one hand, red backlight. No text or logo.',
-        'Photograph of three adult sisters in matching electric-blue performance suits striking a synchronized pose in a snowy forest clearing lit by stage lights. No text or logo.',
+        "Five court knights in coordinated white-and-silver stage tailoring strike a sharp V formation on a castle drawbridge in blue stage haze. No readable text or logo.",
+        "A bard in a crimson cropped stage jacket and flared trousers kicks mid-air on a tavern table, red backlight silhouetting her lute. No readable text or logo.",
+        "Three sisters in matching electric-blue performance suits strike a synchronized pose in a snowy forest clearing, concert rigs strapped to the pines. No readable text or logo.",
       ],
     },
     'SP08-019': {
@@ -198,9 +198,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Photograph of an adult dragon-keeper in an unstructured navy blazer, soft blue shirt and tailored trousers inspecting a sleeping dragon's claw with a clipboard in a stone stable. Soft daylight. No readable text or logo.",
-        'Photograph of an adult woman cartographer in a camel cardigan and grey trousers leaning over a vast blank map table in a vaulted library. Composed, natural light. No readable text or logo.',
-        'Photograph of an older adult man ferry captain in a grey business-casual knit and tailored trousers steering an old riverboat. No text or logo.',
+        "A dragon keeper in an unstructured navy blazer and soft blue shirt inspects a sleeping dragon's claw with a clipboard in a stone stable. No readable text or logo.",
+        "Leaning over a vast blank map table in a vaulted library, a cartographer in a camel cardigan and grey trousers plots a route with a brass compass. No readable text or logo.",
+        "An older ferry captain in a grey knit and tailored trousers steers an old riverboat, a laptop bag hanging from the ship's wheel. No readable text or logo.",
       ],
     },
     'SP08-020': {
@@ -217,9 +217,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'real celebrity likeness'],
       briefs: [
-        "Photograph of an adult sorceress queen arriving at a moonlit castle gate in an emerald silk-velvet gown with a cathedral train and a crystal-embroidered cape, flashbulbs from courtiers' lanterns. Full length. No text or logo.",
-        'Photograph of an elderly adult man in a razor-sharp midnight tuxedo and a ruby brooch descending a torchlit stone staircase. Flashbulb glamour. No text or logo.',
-        'Photograph of an adult woman in a liquid gold sequined gown with an enormous train spread across a frozen lake at night. Full length, sparkling highlights. No text or logo.',
+        "A sorceress queen arrives at a moonlit castle gate in an emerald silk-velvet gown with a cathedral train while courtiers' lanterns flash like paparazzi. No readable text or logo.",
+        "An elderly man in a razor-sharp midnight tuxedo and ruby brooch descends a torchlit stone staircase as the flashes catch every speck of dust in the air. No readable text or logo.",
+        "A woman in a liquid gold sequined gown spreads an enormous train across a frozen lake at night, the ice mirroring every sparkle. No readable text or logo.",
       ],
     },
   },
@@ -241,9 +241,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'visible logos', 'flashy jewelry'],
       briefs: [
-        'Fashion photograph of an elderly adult queen mother in a cream double-faced cashmere coat and taupe knit walking her two wolfhounds across a frosty castle lawn. Discreet luxury, soft light. No text or logo.',
-        'Fashion photograph of an adult man in a camel cashmere overcoat and navy fine-gauge knit stepping off a wooden sailboat onto a stone quay at dusk. No text or logo.',
-        'Fashion photograph of an adult woman in a tonal taupe suede jacket and cream trousers reading in a vast stone library with a fire burning. No text or logo.',
+        "A queen mother in a cream double-faced cashmere coat walks two wolfhounds across a frosty castle lawn, no jewel visible except her posture. No readable text or logo.",
+        "A man in a camel cashmere overcoat steps off a wooden sailboat onto a stone quay at dusk, one perfect crease in his trousers. No readable text or logo.",
+        "Curled in an armchair in a vast stone library, a woman in a taupe suede jacket and cream trousers reads by the fire. No readable text or logo.",
       ],
     },
     {
@@ -263,9 +263,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'bright colors', 'glossy glamour'],
       briefs: [
-        'Fashion photograph of an adult gravedigger in deconstructed asymmetric black layers with raw hems and an inside-out coat standing in a misty cemetery at dawn. Stark side light. No text or logo.',
-        'Fashion photograph of an adult woman monk in voluminous raw-edged charcoal wool and felted layers walking through a brutalist concrete cloister. No text or logo.',
-        'Fashion photograph of an adult man puppeteer in a deconstructed black suit with displaced collars holding a broken marionette in a dark empty theater. No text or logo.',
+        "A gravedigger in asymmetric black layers and an inside-out coat stands in a misty cemetery at dawn, raw hems lifting in the wind. No readable text or logo.",
+        "A monk walks a brutalist concrete cloister in voluminous raw-edged charcoal wool, her silhouette like a torn shadow. No readable text or logo.",
+        "A puppeteer in a black suit with displaced collars cradles a broken marionette whose tiny outfit has been taken apart the same way. No readable text or logo.",
       ],
     },
     {
@@ -285,9 +285,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'outdoor brand logos'],
       briefs: [
-        'Fashion photograph of an adult dwarf-like stocky woman miner in a burnt-orange and teal color-blocked shell jacket, fleece and chunky trail shoes, standing at a mountain mine entrance with a lantern. No text or logo.',
-        'Fashion photograph of an elderly adult man hermit in a lilac fleece, cargo trousers and a bucket hat feeding goats on a cliff ledge. Crisp daylight. No text or logo.',
-        'Fashion photograph of an adult woman in a lime and grey shell jacket with carabiners and a sling bag crossing a rope bridge over a gorge. No text or logo.',
+        "A stocky miner in a burnt-orange and teal shell jacket stands at a mountain mine entrance with a lantern, clipped all over with carabiners. No readable text or logo.",
+        "A hermit in a lilac fleece and bucket hat feeds goats on a cliff ledge while the goats eye his bulging cargo pockets. No readable text or logo.",
+        "Crossing a rope bridge over a gorge, a woman in a lime and grey shell jacket pauses to snap a selfie with a curious eagle. No readable text or logo.",
       ],
     },
     {
@@ -307,9 +307,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Glossy fashion photograph of an adult fairy with iridescent wings wearing a chrome halter, low-rise baby-pink trousers, butterfly clips and tinted sunglasses on a mushroom stump. Flash, playful tilt. No text or logo.',
-        'Glossy fashion photograph of two adult witches in metallic lilac mini skirts and platform shoes riding one broom together over a candy-colored village. No text or logo.',
-        'Glossy fashion photograph of an adult man knight in chrome vinyl trousers and a powder-blue baby tee under his breastplate posing at a jousting fair. No text or logo.',
+        "A fairy with iridescent wings poses on a mushroom stump in a chrome halter, low-rise baby-pink trousers and tinted sunglasses, lit by harsh flash. No readable text or logo.",
+        "Two witches in metallic lilac mini skirts and platform shoes ride one broom over a candy-colored village, flip phones in hand. No readable text or logo.",
+        "A jousting knight wears chrome vinyl trousers and a powder-blue baby tee under his breastplate, butterfly clips in his beard. No readable text or logo.",
       ],
     },
     {
@@ -329,9 +329,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Fashion photograph of an elderly adult woman fortune-teller in a clashing floral coat, striped silk trousers, leopard headscarf and piles of gold bangles, seated in a wildly patterned caravan. No text or logo.',
-        'Fashion photograph of an adult man court jester reimagined in maximalist print clash — brocade jacket, polka-dot shirt, checked trousers — juggling in a tiled palace courtyard. No text or logo.',
-        'Fashion photograph of an adult woman merchant in a riot of printed silks and jacquard layers standing among colorful spice sacks in a bazaar. No text or logo.',
+        "An elderly fortune-teller in a clashing floral coat, striped silk trousers and leopard headscarf sits in a caravan so patterned she almost disappears. No readable text or logo.",
+        "A court jester in a brocade jacket, polka-dot shirt and checked trousers juggles in a tiled palace courtyard, somehow matching every tile. No readable text or logo.",
+        "A merchant in a riot of printed silks stands among colorful spice sacks, a parrot on her shoulder clashing on purpose. No readable text or logo.",
       ],
     },
     {
@@ -351,9 +351,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Fashion photograph from a low angle of an adult woman warlord in a head-to-toe scarlet power suit with sharp shoulders standing on the battlements of a black castle. No text or logo.',
-        'Fashion photograph of an elderly adult man banker-mage in a cobalt monochrome suit and matching shoes seated on a throne of stacked gold coins. No text or logo.',
-        'Fashion photograph of an adult woman in an all-white power suit walking through a field of burnt black wheat. Graphic, high contrast. No text or logo.',
+        "From a low angle, a warlord in a head-to-toe scarlet power suit stands on the battlements of a black castle, shoulders sharp as spikes. No readable text or logo.",
+        "An elderly banker-mage in a cobalt monochrome suit and matching shoes sits on a throne of stacked gold coins. No readable text or logo.",
+        "A woman in an all-white power suit strides through a field of burnt black wheat without a single speck of ash on her. No readable text or logo.",
       ],
     },
     {
@@ -373,9 +373,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Fashion photograph of an adult woman ghost-hunter in a blush wrap cardigan, grey tulle skirt and ribbon-tied flats holding a lantern in an abandoned theater. Soft light. No text or logo.',
-        'Fashion photograph of an adult man in a black leotard, leg warmers and a dove-grey wrap knit stretching at a barre in a candlelit castle hall. No text or logo.',
-        'Fashion photograph of an elderly adult woman in a ballet-white tulle skirt and satin flats feeding swans at a frozen lake edge. Airy. No text or logo.',
+        "A ghost hunter in a blush wrap cardigan, grey tulle skirt and ribbon-tied flats holds a lantern on an abandoned stage as phantom dancers line up behind her. No readable text or logo.",
+        "A man in a black leotard, leg warmers and dove-grey wrap knit stretches at a barre in a candlelit castle hall while suits of armor watch from the walls. No readable text or logo.",
+        "An elderly woman in a white tulle skirt and satin flats feeds swans at the edge of a frozen lake, and the swans copy her pose. No readable text or logo.",
       ],
     },
     {
@@ -395,9 +395,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Fashion photograph of an adult sea-witch in a wrinkled white linen dress and straw hat walking barefoot along a sunlit harbor wall with a crab on her shoulder. Hard midday shadows. No text or logo.',
-        'Fashion photograph of an elderly adult man in a terracotta linen shirt and wide sand trousers fishing from a whitewashed pier. No text or logo.',
-        'Fashion photograph of an adult woman in olive linen with a woven raffia bag picking lemons in a clifftop grove. Bright warm light. No text or logo.',
+        "A sea witch in a wrinkled white linen dress and straw hat walks barefoot along a sunlit harbor wall with a crab riding on her shoulder. No readable text or logo.",
+        "An elderly man in a terracotta linen shirt fishes from a whitewashed pier while a gull tugs at the brim of his hat. No readable text or logo.",
+        "Picking lemons in a clifftop grove, a woman in olive linen fills a woven raffia bag while the sea glitters far below. No readable text or logo.",
       ],
     },
     {
@@ -417,9 +417,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Fashion photograph of an adult woman astronomer in a long sage crepe coat, cream tunic and draped dusty-rose headscarf adjusting a brass telescope on an observatory roof at dusk. No text or logo.',
-        'Fashion photograph of two adult sisters in tonal navy and sand long layers walking through an ancient souk archway. Soft daylight. No text or logo.',
-        'Fashion photograph of an adult woman falconer in layered cream chiffon and wide trousers releasing a falcon on a desert dune at sunrise. No text or logo.',
+        "An astronomer in a long sage crepe coat, cream tunic and dusty-rose headscarf adjusts a brass telescope on an observatory roof at dusk. No readable text or logo.",
+        "Two sisters in tonal navy and sand long layers walk through an ancient souk archway, their coats flaring in perfect step. No readable text or logo.",
+        "A falconer in layered cream chiffon and wide trousers releases a falcon from a desert dune at sunrise, fabric streaming like smoke. No readable text or logo.",
       ],
     },
     {
@@ -439,9 +439,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Fashion photograph of an adult woman knight-errant in a tweed hacking jacket, cream jodhpurs and tall oxblood riding boots leading a grey warhorse through a misty field. No text or logo.',
-        'Fashion photograph of an elderly adult man in a quilted olive vest and silk scarf grooming a unicorn in a timber stable. Warm morning light. No text or logo.',
-        'Fashion photograph of an adult woman in a navy hacking jacket and tall boots standing at the edge of a foggy moor with two hunting dogs. No text or logo.',
+        "A knight-errant in a tweed hacking jacket, cream jodhpurs and tall oxblood boots leads a grey warhorse through a misty field. No readable text or logo.",
+        "An elderly groom in a quilted olive vest and silk scarf brushes a unicorn in a timber stable, the unicorn visibly sulking. No readable text or logo.",
+        "At the edge of a foggy moor a woman in a navy hacking jacket and tall boots waits with two hunting dogs as a ghost rider gallops past. No readable text or logo.",
       ],
     },
     {
@@ -461,9 +461,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'real western star likeness'],
       briefs: [
-        'Fashion photograph of an adult woman gunslinger-mage in a fringed rust suede jacket, embroidered western shirt and pointed boots standing before a ruined desert chapel at golden hour. No text or logo.',
-        'Fashion photograph of an elderly adult man in a black western suit with a turquoise bolo tie riding a mule across salt flats. Long shadows. No text or logo.',
-        'Fashion photograph of an adult woman in dark denim and a chain-stitch embroidered shirt leaning on a wooden corral fence at dusk as a dragon lands behind her. No text or logo.',
+        "A gunslinger-mage in a fringed rust suede jacket and pointed boots stands before a ruined desert chapel at golden hour, her fringe crackling with sparks. No readable text or logo.",
+        "An elderly man in a black western suit and turquoise bolo tie rides a mule across salt flats, long shadows stretching to the horizon. No readable text or logo.",
+        "Leaning on a wooden corral fence at dusk, a woman in dark denim and a chain-stitch embroidered shirt does not even turn as a dragon lands behind her. No readable text or logo.",
       ],
     },
   ] satisfies Create[],

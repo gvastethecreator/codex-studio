@@ -70,9 +70,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'explicit fetish content'],
       briefs: [
-        'Photograph of an adult woman knight whose surcoat and cloak are made of cherry-red high-gloss latex, strip lights drawing long highlights, in a stone armory. No text or logo.',
-        'Photograph of an elderly adult man in a black high-gloss PVC trench coat feeding swans in the rain. No text or logo.',
-        'Photograph of an adult monk in flowing chrome-silver high-gloss polymer robes meditating on the floor of a white stone temple, strip lights drawing long liquid highlights down the folds and mirrored reflections of the columns. No text or logo.',
+        "In a stone armory strip lights draw long liquid highlights down a knight's surcoat and cloak of cherry-red high-gloss latex. No readable text or logo.",
+        "An elderly man in a black mirror-gloss PVC trench coat feeds swans in the rain, the whole grey lake reflected in his sleeves. No readable text or logo.",
+        "A monk in flowing chrome-silver polymer robes meditates on the floor of a white stone temple, his robes mirroring every pillar. No readable text or logo.",
       ],
     },
     'SP08-052': {
@@ -88,9 +88,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of an adult woman blacksmith in head-to-toe mixed-wash denim — raw indigo apron, stonewashed shirt, bleached trousers — at a glowing forge. No text or logo.',
-        'Photograph of an adult knight whose tabard and cloak are made of faded denim with copper rivets, riding through a cornfield. No text or logo.',
-        'Photograph of an elderly adult woman in a denim-on-denim dress and jacket playing cards on a porch. No text or logo.',
+        "At a glowing forge a blacksmith works in head-to-toe mixed-wash denim, a raw indigo apron over a stonewashed shirt and bleached trousers. No readable text or logo.",
+        "Riding through a cornfield, a knight wears a tabard and cloak of faded denim with copper rivets and contrast topstitching. No readable text or logo.",
+        "An elderly woman in a denim dress and matching denim jacket, each a different wash, wins at cards on her porch. No readable text or logo.",
       ],
     },
     'SP08-053': {
@@ -106,9 +106,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'real animal pelts with heads'],
       briefs: [
-        'Photograph of an adult woman sorceress in a huge snow-white faux-fur coat backlit on a frozen lake at dusk. No text or logo.',
-        'Photograph of an elderly adult man in a caramel long-pile faux-fur coat driving a dog sled. No text or logo.',
-        'Photograph of an adult knight wearing an emerald-dyed faux-fur cloak over armor in a snowy courtyard. No text or logo.',
+        "Backlit on a frozen lake at dusk, a sorceress disappears into a huge snow-white faux-fur coat, only her eyes showing. No readable text or logo.",
+        "An elderly man in a caramel long-pile faux-fur coat drives a dog sled, the dogs matching his coat exactly. No readable text or logo.",
+        "Snow collects on an emerald-dyed faux-fur cloak thrown over a knight's armor in a quiet courtyard. No readable text or logo.",
       ],
     },
     'SP08-054': {
@@ -125,9 +125,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of an adult woman in an elegant floor-length silver chainmail gown with a mail hood standing in a candlelit chapel. No text or logo.',
-        'Photograph of an elderly adult man wearing a bronze chainmail cardigan over a shirt, reading in a garden. No text or logo.',
-        'Photograph of an adult dancer in a fine steel-ring chainmail dress mid-spin on a dark stage, the heavy rings flaring out and shimmering under a single warm spotlight, a mail hood slipping back from her hair. No text or logo.',
+        "In a candlelit chapel a floor-length silver chainmail gown with a mail hood pools like liquid metal around its wearer. No readable text or logo.",
+        "An elderly man reads in his garden wearing a bronze chainmail cardigan over a checked shirt, a teacup balanced on the rings. No readable text or logo.",
+        "Mid-spin on a dark stage, a dancer's fine steel-ring dress flares out heavy and shimmering under a single warm spotlight. No readable text or logo.",
       ],
     },
     'SP08-055': {
@@ -143,9 +143,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of an adult knight whose entire armor is replaced by chunky cable-knit oatmeal wool, helm included, standing in a snowy field. No text or logo.',
-        'Photograph of an elderly adult woman in a rust chunky-knit poncho feeding a fire in a stone cottage. No text or logo.',
-        'Photograph of an adult ferryman in a forest-green chunky bobble-knit cloak and cable-knit hood rowing across a misty loch at dawn, wool fibers beaded with fog and oars dripping. No text or logo.',
+        "Standing in a snowy field, a knight's entire armor has been replaced by chunky oatmeal cable knit, helm and plume included. No readable text or logo.",
+        "An elderly woman in a rust chunky-knit poncho feeds a fire in a stone cottage, a cat asleep in the folds of her wool. No readable text or logo.",
+        "Rowing across a misty loch at dawn, a ferryman in a forest-green bobble-knit cloak and cable hood is beaded all over with fog. No readable text or logo.",
       ],
     },
     'SP08-056': {
@@ -161,9 +161,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of an adult woman in a liquid emerald satin gown pouring down marble steps into a flooded crypt. No text or logo.',
-        'Photograph of an adult man in an oxblood satin robe standing on a windy clifftop, the fabric streaming. No text or logo.',
-        'Photograph of an elderly adult woman in a champagne liquid-satin gown seated at a grand piano in a dim ballroom, the bias-cut fabric pouring over the bench and pooling on the floor with mirror-soft highlights. No text or logo.',
+        "Pouring down marble steps into a flooded crypt, a liquid emerald satin gown becomes indistinguishable from the water. No readable text or logo.",
+        "On a windy clifftop an oxblood satin robe streams out behind its wearer like a spilled glass of wine. No readable text or logo.",
+        "An elderly pianist in a champagne bias-cut gown plays in a dim ballroom, the satin pouring over the bench and pooling on the parquet. No readable text or logo.",
       ],
     },
     'SP08-057': {
@@ -179,9 +179,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of an adult woman dragon-hunter in a heather-brown tweed shooting suit and cap on a misty moor. No text or logo.',
-        'Photograph of an adult wizard in a charcoal herringbone tweed robe and waistcoat in a cluttered study. No text or logo.',
-        'Photograph of an elderly adult man in a mustard-flecked tweed three-piece suit and flat cap riding a penny-farthing along a country lane, rough woven texture visible on the lapels in soft overcast light. No text or logo.',
+        "On a misty moor a dragon hunter in a heather-brown tweed shooting suit and cap studies enormous footprints through a monocle. No readable text or logo.",
+        "A wizard in a charcoal herringbone tweed robe and waistcoat hunts for his spectacles in a cluttered study, wearing them. No readable text or logo.",
+        "Riding a penny-farthing along a country lane, an elderly man in a mustard-flecked three-piece tweed suit and flat cap tips his cap to a cow. No readable text or logo.",
       ],
     },
     'SP08-058': {
@@ -198,9 +198,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of an adult knight whose full armor is replaced by a suit of ruby sequins, glittering under torchlight in a ruined hall. No text or logo.',
-        'Photograph of an elderly adult woman in a midnight-blue paillette coat walking a greyhound at night. No text or logo.',
-        'Photograph of an adult man in a gold sequin jumpsuit fishing from a rowboat at sunset. No text or logo.',
+        "Under torchlight in a ruined hall, a knight's full armor has been replaced by a suit of ruby sequins scattering light across the stones. No readable text or logo.",
+        "An elderly woman in a midnight-blue paillette coat walks a greyhound at night, glittering like a slow constellation. No readable text or logo.",
+        "Fishing from a rowboat at sunset, a man in a gold sequin jumpsuit throws sparks of light across the whole lake. No readable text or logo.",
       ],
     },
     'SP08-059': {
@@ -216,9 +216,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of an adult cyclist in a clear PVC rain cape and transparent trousers over bright clothes riding through a pouring city street, raindrops beading and streaking down the vinyl layers. No text or logo.',
-        'Photograph of an elderly adult man in a yellow-tinted transparent raincoat walking through a flooded market. No text or logo.',
-        'Photograph of an adult dancer in a frosted pink transparent plastic skirt and clear vinyl bodice leaping on a wet rooftop at night, city lights reflected in the PVC layers and rain streaking past. No text or logo.',
+        "A cyclist in a clear rain cape and transparent trousers over bright clothes rides through a pouring city street, raindrops beading on every layer. No readable text or logo.",
+        "An elderly man in a yellow-tinted transparent raincoat wades through a flooded market, his tweed suit perfectly visible and perfectly dry. No readable text or logo.",
+        "Leaping on a wet rooftop at night, a dancer in a frosted pink plastic skirt and clear vinyl bodice carries the city lights in her reflections. No readable text or logo.",
       ],
     },
     'SP08-060': {
@@ -234,9 +234,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of an adult woman in a sapphire velvet gown and cape standing on a moonlit battlement. No text or logo.',
-        'Photograph of an adult man in a burgundy crushed-velvet suit playing cello in a dark room. No text or logo.',
-        'Photograph of an elderly adult woman in an emerald velvet dress and cape feeding peacocks on the terrace of an old manor, the plush pile glowing where low sun grazes it and turning black in the folds. No text or logo.',
+        "On a moonlit battlement a sapphire velvet gown and cape turn almost black in shadow and glow where the moon grazes the pile. No readable text or logo.",
+        "Only the ridges of a burgundy crushed-velvet suit catch the lamp as a cellist plays in a dark room. No readable text or logo.",
+        "An elderly woman in an emerald velvet dress and cape feeds peacocks on a manor terrace, the pile glowing where low sun grazes it. No readable text or logo.",
       ],
     },
     'SP08-061': {
@@ -252,9 +252,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'nudity'],
       briefs: [
-        'Photograph of an adult bride in an ivory guipure lace gown over a dark slip standing backlit in a chapel doorway, light pouring through the floral openwork onto the stone floor. No text or logo.',
-        'Photograph of an elderly adult woman in a black Chantilly lace mantilla and dress at a candlelit window. No text or logo.',
-        'Photograph of an adult man in a dusty-rose crochet lace shirt with open floral motifs standing in a sunlit rose garden, light passing through the lace and dappling his skin and the gravel path. No text or logo.',
+        "Backlit in a chapel doorway, a bride's ivory guipure lace gown over a dark slip casts floral shadows across the stone floor. No readable text or logo.",
+        "An elderly woman in a black Chantilly mantilla and dress waits at a candlelit window, the lace drawing patterns on her face. No readable text or logo.",
+        "In a sunlit rose garden a man's dusty-rose crochet shirt dapples his skin with the same flowers growing around him. No readable text or logo.",
       ],
     },
     'SP08-062': {
@@ -270,9 +270,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of an adult woman ranger in molded oxblood leather armor with tooled vines crouching on a mossy branch. No text or logo.',
-        'Photograph of an elderly adult gardener in tooled tan leather armor strapped over a knitted sweater, kneeling among vegetable beds with a trowel, buckles and molded shoulder plates scuffed from years of work. No text or logo.',
-        'Photograph of an adult dancer in black molded leather armor plates and harness straps mid-leap across an empty warehouse, dust in a shaft of window light, buckles flashing. No text or logo.',
+        "Crouched on a mossy branch, a ranger in molded oxblood leather armor with tooled vines is almost invisible among the real ones. No readable text or logo.",
+        "Kneeling among vegetable beds with a trowel, an elderly gardener wears tooled tan leather armor strapped over a knitted sweater. No readable text or logo.",
+        "A dancer in black molded leather plates and harness straps leaps across an empty warehouse, buckles flashing in a shaft of dusty light. No readable text or logo.",
       ],
     },
     'SP08-063': {
@@ -288,9 +288,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of an adult woman in a raven-black feather gown with a high feather collar standing among gravestones at dawn. No text or logo.',
-        'Photograph of an adult man in a swan-white feathered coat with a high ruff standing on a frozen lake at dawn, soft feather edges lifting in the wind and breath visible in the cold air. No text or logo.',
-        'Photograph of an elderly adult woman in a sweeping peacock-feather cape walking through a Victorian glass greenhouse, the iridescent eyes of the feathers catching dappled light among palms. No text or logo.',
+        "Among gravestones at dawn, a raven-black feather gown with a towering feather collar ruffles as crows land on the headstones around it. No readable text or logo.",
+        "A man in a swan-white feathered coat with a high ruff stands on a frozen lake at dawn, soft edges lifting in the wind as real swans approach. No readable text or logo.",
+        "An elderly woman in a sweeping peacock-feather cape walks through a glass greenhouse, a hundred iridescent eyes catching the daylight. No readable text or logo.",
       ],
     },
     'SP08-064': {
@@ -306,9 +306,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of an adult wanderer dressed in coarse burlap sacks and knotted rag strips walking through a moonlit cornfield, a lantern in hand, torn patches and loose threads fluttering, scarecrows watching from their poles. No text or logo.',
-        'Photograph of an adult queen whose gown is made of patched burlap sacks, seated on a throne. No text or logo.',
-        'Photograph of an elderly adult man in rag layers ringing a bell in a ruined abbey. No text or logo.',
+        "A wanderer in coarse burlap sacks and knotted rag strips walks through a moonlit cornfield with a lantern, mistaken by crows for a scarecrow. No readable text or logo.",
+        "A queen sits on her throne in a gown of patched burlap sacks, wearing it with more dignity than any silk. No readable text or logo.",
+        "An elderly bell ringer in torn rag layers tolls a cracked bell in a ruined abbey, frayed strips fluttering in the draft. No readable text or logo.",
       ],
     },
     'SP08-066': {
@@ -324,9 +324,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of an adult woman in a gown folded entirely from ivory washi with origami crane sleeves in a bamboo grove. No text or logo.',
-        'Photograph of an adult street performer whose coat and hat are folded from kraft paper facets standing in light rain, sharp creases softening at the hem where the paper has started to darken. No text or logo.',
-        'Photograph of an elderly adult man in a red coat folded entirely from crisp paper, sharp pleats and faceted shoulders, reading on a park bench as a paper crane unfolds from his pocket. No text or logo.',
+        "In a bamboo grove a gown folded entirely from ivory washi rustles, its sleeves ending in flocks of origami cranes. No readable text or logo.",
+        "A street performer in a coat and hat folded from kraft paper facets stands in light rain, the sharp creases softening at the hem. No readable text or logo.",
+        "An elderly man in a crisp red folded-paper coat reads on a park bench as one of his pleats quietly unfolds into a crane. No readable text or logo.",
       ],
     },
     'SP08-067': {
@@ -343,9 +343,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of an adult deliveryman wearing a full suit tailored from bubble wrap standing stiffly on a doorstep with a parcel, rows of air cells catching the porch light. No text or logo.',
-        'Photograph of an adult woman in a puffy bubble-wrap ball gown dancing alone in a white studio, rows of air cells catching the softbox light and a few popped bubbles on the floor. No text or logo.',
-        'Photograph of an elderly adult man in a long bubble-wrap overcoat and hat waiting at a rainy bus stop, water beading on the air cells, commuters in ordinary coats beside him. No text or logo.',
+        "A deliveryman in a full suit tailored from bubble wrap stands stiffly on a doorstep holding a parcel that is wrapped in nothing. No readable text or logo.",
+        "Dancing alone in a white studio, a woman in a puffy bubble-wrap ball gown leaves a trail of popped cells behind her. No readable text or logo.",
+        "An elderly man in a long bubble-wrap overcoat and hat waits at a rainy bus stop, water beading on the air cells as commuters stare. No readable text or logo.",
       ],
     },
     'SP08-068': {
@@ -361,9 +361,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of an adult woman in a gown whose skirt dissolves into curling grey smoke walking through a burned forest. No text or logo.',
-        'Photograph of an adult man in a tailored cloak whose hem dissolves into trailing white smoke crossing a windy stone bridge at dusk, the jacket crisp and defined above the drifting haze. No text or logo.',
-        'Photograph of an elderly adult woman at a candlelit dinner table whose knitted shawl drifts off her shoulders into curling grey smoke, candle flames bending in the draft. No text or logo.',
+        "Walking through a burned forest, a woman's gown keeps a crisp bodice while the skirt dissolves into curling grey smoke among the charred trunks. No readable text or logo.",
+        "Crossing a windy stone bridge at dusk, a man's tailored cloak trails into white smoke that lingers long after he has passed. No readable text or logo.",
+        "At a candlelit dinner an elderly woman's knitted shawl drifts off her shoulders as curling smoke, the candle flames bending toward it. No readable text or logo.",
       ],
     },
     'SP08-069': {
@@ -379,9 +379,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of an adult woman in a gown of flowing water splashing around her ankles in a desert. No text or logo.',
-        'Photograph of an adult violinist whose long coat is a cascade of flowing water on a stone bridge at dawn, splashes curling from the sleeves as she plays and caustic light rippling on the stones. No text or logo.',
-        'Photograph of an elderly adult man in an armchair wearing a coat made of flowing clear water, splashes curling at the cuffs and caustic light rippling across the living room wallpaper. No text or logo.',
+        "In the middle of a desert a woman stands in a gown of flowing clear water, splashes circling her ankles while a camel stares in thirst. No readable text or logo.",
+        "A violinist on a stone bridge at dawn wears a long coat of cascading water, splashes curling from her sleeves with each bow stroke. No readable text or logo.",
+        "An elderly man sits in his armchair in a coat of flowing water, caustic light rippling across the living room wallpaper. No readable text or logo.",
       ],
     },
     'SP08-070': {
@@ -397,9 +397,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'burning skin'],
       briefs: [
-        'Photograph of an adult woman in a gown of controlled flame walking through a snowy forest at night. No text or logo.',
-        'Photograph of an adult man in a long coat formed of controlled flame standing in a dark library, the glowing core at his chest, flickering edges lighting the spines of old books without burning them. No text or logo.',
-        'Photograph of an elderly adult woman wrapped in a shawl of fire and embers sitting by a frozen lake at night, her reflection glowing orange on the ice. No text or logo.',
+        "Walking through a snowy forest at night, a woman in a gown of controlled flame melts a path behind her. No readable text or logo.",
+        "In a dark library a man stands in a long coat of controlled flame, its glowing core at his chest and nervous librarians holding buckets. No readable text or logo.",
+        "Wrapped in a shawl of fire and embers, an elderly woman sits by a frozen lake at night, her orange reflection glowing on the ice. No readable text or logo.",
       ],
     },
     'SP08-071': {
@@ -415,9 +415,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of an adult woman transformed into a porcelain doll with a hairline crack across her cheek, seated in an abandoned nursery. No text or logo.',
-        'Photograph of an adult ballerina rendered as glazed porcelain with ball-joint seams at her knees and elbows, standing on pointe in a garden gazebo, a hairline crack across one arm. No text or logo.',
-        'Photograph of an elderly adult man transformed into a glazed bisque porcelain figure reading by a rainy window, painted eyebrows, fine hairline cracks and ball-joint seams at the wrists and knees. No text or logo.',
+        "Seated in an abandoned nursery, a woman transformed into glazed porcelain has a single hairline crack running across her painted cheek. No readable text or logo.",
+        "Standing on pointe in a garden gazebo, a ballerina rendered in glazed bisque shows ball-joint seams at her knees and elbows. No readable text or logo.",
+        "An elderly man turned into a porcelain figure reads by a rainy window, painted eyebrows raised, fine cracks along his knuckles. No readable text or logo.",
       ],
     },
     'SP08-072': {
@@ -433,9 +433,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'readable tattoo text', 'nudity'],
       briefs: [
-        'Photograph of an adult woman warrior whose arms, neck and face are covered in flowing black-and-red dragon tattoo work, standing in a temple. No text or logo.',
-        'Photograph of an elderly adult man with ornamental indigo tattoos across his bald head and hands fishing at dawn. No text or logo.',
-        'Photograph of an adult man with ceremonial ochre tattoo mapping playing a drum by a fire. No text or logo.',
+        "Standing in a temple, a warrior's arms, neck and face are covered in flowing black-and-red dragon tattoo work that follows every muscle. No readable text or logo.",
+        "An elderly fisherman with ornamental indigo tattoos across his bald head and hands casts his net at dawn. No readable text or logo.",
+        "Beside a fire, a drummer with ceremonial ochre tattoo mapping plays as the patterns seem to move with the beat. No readable text or logo.",
       ],
     },
     'SP08-073': {
@@ -451,9 +451,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'nudity'],
       briefs: [
-        "Photograph of an adult man whose shirt, tie and waistcoat are entirely trompe-l'oeil body paint, standing in a tailor shop. No text or logo.",
-        'Photograph of an adult woman painted to blend into a starry night backdrop, only her face readable. No text or logo.',
-        "Photograph of an elderly adult man in an ordinary chair painted head to toe with a trompe-l'oeil suit and tie illusion, holding a real teacup, the painted fabric folds perfectly convincing. No text or logo.",
+        "Standing in a tailor shop, a man's shirt, tie and waistcoat are entirely trompe-l'oeil body paint, the tailor measuring him in confusion. No readable text or logo.",
+        "A woman painted to blend into a starry night backdrop vanishes completely except for her face and one raised hand. No readable text or logo.",
+        "An elderly man in an ordinary chair wears a painted suit and tie illusion head to toe, holding a real teacup. No readable text or logo.",
       ],
     },
     'SP08-074': {
@@ -469,9 +469,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of an adult woman in an elegant gown made of wound aged linen strips standing in a desert tomb doorway. No text or logo.',
-        'Photograph of an adult man in bandage-wrapped clothing with frayed linen ends fluttering, riding a camel across dunes at sunset, layered aged strips over his shoulders and head. No text or logo.',
-        'Photograph of an elderly adult woman in aged linen-strip wraps sitting in a quiet museum gallery knitting beside a sarcophagus display, frayed ends trailing onto the floor. No text or logo.',
+        "In a desert tomb doorway a woman wears an elegant gown wound from aged linen strips, frayed ends lifting in the hot wind. No readable text or logo.",
+        "Riding a camel across the dunes at sunset, a man in bandage-wrapped clothing trails long frayed linen strips behind him. No readable text or logo.",
+        "An elderly woman in aged linen wraps sits knitting in a quiet museum gallery beside a sarcophagus, as if waiting for a friend. No readable text or logo.",
       ],
     },
     'SP08-075': {
@@ -488,9 +488,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of an adult woman whose face, hands and gown are covered in cracked gold leaf standing in a dark chapel. No text or logo.',
-        'Photograph of an adult fishmonger gilded head to toe in cracked gold leaf working at a stall in a busy fish market, ice and silver fish around him, burnished highlights on his arms. No text or logo.',
-        'Photograph of an elderly adult man in a coat covered in gold leaf feeding pigeons in a grey city square, flakes of gilding lifting at the cuffs and catching overcast light. No text or logo.',
+        "In a dark chapel a woman's face, hands and gown are covered in cracked gold leaf, burnished where the candlelight lands. No readable text or logo.",
+        "Working his stall in a busy fish market, a fishmonger covered head to toe in cracked gold leaf shines brighter than the silver fish on the ice. No readable text or logo.",
+        "Flakes of gilding lift from the cuffs of an old man's gold-leaf coat as he feeds pigeons in a grey city square. No readable text or logo.",
       ],
     },
     'SP08-076': {
@@ -506,9 +506,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of an adult woman in a dripping lime gel gown in a sterile white corridor. No text or logo.',
-        'Photograph of an adult chef whose apron and jacket are thick glossy amber gel dripping onto a restaurant kitchen floor, bubbles trapped inside and long strands stretching from the hem. No text or logo.',
-        'Photograph of an elderly adult man in a magenta gel coat waiting at a bus stop, the glossy material slowly sagging and dripping onto the pavement, bubbles held inside. No text or logo.',
+        "In a sterile white corridor a woman's lime gel gown drips steadily onto the floor, trapping bubbles as it sags. No readable text or logo.",
+        "A chef whose apron and jacket are thick amber gel works in a restaurant kitchen as long strands stretch from his sleeves to the pots. No readable text or logo.",
+        "Waiting at a bus stop, a retired postman in a magenta gel coat slowly sags onto the pavement, bubbles held inside the glossy material. No readable text or logo.",
       ],
     },
     'SP08-077': {
@@ -524,9 +524,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of an adult woman turned into a weathered limestone statue with lichen, standing in a living marketplace. No text or logo.',
-        'Photograph of an adult gardener turned into a moss-covered sandstone statue kneeling among vegetable beds, chisel marks on the coat, lichen on the shoulders and ferns growing at the knees. No text or logo.',
-        'Photograph of an elderly adult man turned into a weathered marble statue sitting on a park bench, a folded stone book in his hands, rain streaks and a pigeon on his head. No text or logo.',
+        "In a bustling marketplace a woman has turned into a weathered limestone statue with lichen, and the vendors have started hanging baskets on her arms. No readable text or logo.",
+        "Kneeling among vegetable beds, a gardener turned to moss-covered sandstone has ferns sprouting from the chisel marks on his coat. No readable text or logo.",
+        "A pigeon perches on the shoulder of a grandfather turned to weathered marble, who sits on a park bench holding a stone book. No readable text or logo.",
       ],
     },
   },
