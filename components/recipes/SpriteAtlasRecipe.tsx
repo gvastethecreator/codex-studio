@@ -388,11 +388,14 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
     };
   }, [selectedRowKey, selectedRunId]);
 
-  const generatingKey =
-    activeRun?.rows
-      .filter((row) => row.status === 'generating' && row.jobId)
-      .map((row) => row.jobId)
-      .join(',') ?? '';
+  let generatingKey = '';
+  if (activeRun) {
+    const jobIds: string[] = [];
+    for (const row of activeRun.rows) {
+      if (row.status === 'generating' && row.jobId) jobIds.push(row.jobId);
+    }
+    generatingKey = jobIds.join(',');
+  }
 
   const catalogSignature = images.map((image) => image.id).join(',');
 
