@@ -16,6 +16,7 @@ import {
 } from '@tabler/icons-react';
 import {
   createSpriteAtlasContract,
+  isSpriteAtlasIdleRow,
   SPRITE_ATLAS_ASSET_KINDS,
   type SpriteAtlasAssetKind,
   type SpriteAtlasPresetSummary,
@@ -23,14 +24,16 @@ import {
   type SpriteAtlasRowStatus,
   type SpriteAtlasRun,
 } from '../../packages/shared/src/spriteAtlasContracts';
+import type { Job as StudioJob } from '../../packages/shared/src/types';
+import type { GenerationProviderId } from '../../packages/shared/src';
 import type { ImageGenerationConfig, GeneratedImageWithConfig } from '../../types';
 import {
+  acceptSpriteAtlasVisualReview,
   composeSpriteAtlas,
   composeSpriteAtlasFixture,
-  createSpriteAtlasRowJob,
-  createSpriteAtlasRowJobs,
   createSpriteAtlasRun,
   getSpriteAtlasAtlasUrl,
+  getSpriteAtlasFrameUrl,
   getSpriteAtlasLayoutGuideUrl,
   getSpriteAtlasRowPrompt,
   importSpriteAtlasRow,
@@ -38,6 +41,10 @@ import {
   listSpriteAtlasRuns,
   runSpriteAtlasQa,
 } from '../../services/studio-api/spriteAtlas';
+import {
+  spriteAtlasRunCoordinator,
+  type SpriteAtlasReadyImport,
+} from '../../services/spriteAtlasRunCoordinator';
 import { DemandMountedGsapDropdown } from '../ui/DemandMountedGsapDropdown';
 
 interface SpriteAtlasRecipeProps {
@@ -47,6 +54,16 @@ interface SpriteAtlasRecipeProps {
     key: K,
     value: ImageGenerationConfig[K],
   ) => void;
+  onGenerate: (
+    promptOverride?: string,
+    configOverrides?: Partial<ImageGenerationConfig>,
+    options?: {
+      preventModal?: boolean;
+      useCurrentAttachments?: boolean;
+      onJobCreated?: (job: StudioJob) => void;
+    },
+  ) => void;
+  activeProviderId?: GenerationProviderId | null;
   isGenerating: boolean;
 }
 
@@ -56,14 +73,14 @@ const STAGE_LABELS: Record<SpriteAtlasRun['status'], string> = {
   waiting_for_rows: 'Waiting',
   ready_to_extract: 'Ready',
   composed: 'Composed',
-  qa_passed: 'QA report available',
+  qa_passed: 'Technical pass',
   blocked: 'Blocked',
 };
 
 const ROW_STATUS_LABELS: Record<SpriteAtlasRowStatus, string> = {
   planned: 'Planned',
   handoff_ready: 'Handoff',
-  generating: 'Generating',
+  generating: 'Queued',
   raw_imported: 'Imported',
   blocked: 'Blocked',
   extracted: 'Extracted',
@@ -174,8 +191,8 @@ function buildPipeline(run: SpriteAtlasRun | null) {
     },
     {
       id: 'handoff',
-      label: 'Handoff',
-      detail: `${jobs}/${total || 0} jobs`,
+      label: 'Queue',
+      detail: `${jobs}/${total || 0} queued`,
       state: !run
         ? 'idle'
         : jobs === total && total > 0
@@ -218,15 +235,21 @@ function buildPipeline(run: SpriteAtlasRun | null) {
     },
     {
       id: 'qa',
-      label: 'QA',
+      label: 'Technical check',
       detail:
-        run?.qa?.mode === 'fixture_smoke' ? 'Fixture only' : run?.qa ? 'Generated art' : 'not run',
+        run?.qa?.mode === 'fixture_smoke' ? 'Fixture only' : run?.qa?.ok ? 'Pass' : 'not passed',
       state:
         run?.status === 'blocked'
           ? 'blocked'
-          : run?.qa?.ok && run.qa.mode !== 'fixture_smoke' && imported === total && total > 0
+          : run?.qa?.ok && run.qa.technical?.representative
             ? 'complete'
             : 'idle',
+    },
+    {
+      id: 'visual',
+      label: 'Visual check',
+      detail: run?.visualReview?.status === 'accepted' ? 'Accepted' : 'Pending',
+      state: run?.visualReview?.status === 'accepted' ? 'complete' : 'idle',
     },
   ] as const;
 }
@@ -235,13 +258,20 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
   images = [],
   config,
   updateConfig,
+  onGenerate,
+  activeProviderId = null,
   isGenerating,
 }) => {
   const [presets, setPresets] = React.useState<SpriteAtlasPresetSummary[]>([]);
   const [runs, setRuns] = React.useState<SpriteAtlasRun[]>([]);
   const [activeRun, setActiveRun] = React.useState<SpriteAtlasRun | null>(null);
   const [selectedRowId, setSelectedRowId] = React.useState<string | null>(null);
-  const [rowSourcePath, setRowSourcePath] = React.useState('');
+  const [rowCatalogImageId, setRowCatalogImageId] = React.useState('');
+  const [stageMatte, setStageMatte] = React.useState<'checker' | 'black' | 'gray' | 'white'>(
+    'checker',
+  );
+  const [playbackFrame, setPlaybackFrame] = React.useState(1);
+  const [readyImports, setReadyImports] = React.useState<SpriteAtlasReadyImport[]>([]);
   const [assetKindFilter, setAssetKindFilter] = React.useState<AssetKindFilter>('all');
   const [rowQuery, setRowQuery] = React.useState('');
   const [rowStatusFilter, setRowStatusFilter] =
@@ -358,6 +388,35 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
     };
   }, [selectedRowKey, selectedRunId]);
 
+  const generatingKey =
+    activeRun?.rows
+      .filter((row) => row.status === 'generating' && row.jobId)
+      .map((row) => row.jobId)
+      .join(',') ?? '';
+
+  const catalogSignature = images.map((image) => image.id).join(',');
+
+  React.useEffect(() => {
+    if (!activeRun || !generatingKey) {
+      setReadyImports([]);
+      return;
+    }
+    let cancelled = false;
+    void spriteAtlasRunCoordinator
+      .reconcile(activeRun)
+      .then((result) => {
+        if (!cancelled) setReadyImports(result.ready);
+      })
+      .catch(() => undefined);
+    return () => {
+      cancelled = true;
+    };
+  }, [activeRun, generatingKey, catalogSignature]);
+
+  React.useEffect(() => {
+    setPlaybackFrame(1);
+  }, [selectedRowKey]);
+
   const setRecipeParam = React.useCallback(
     (key: string, value: unknown) => {
       updateConfig('recipeId', 'sprite-atlas');
@@ -384,6 +443,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
         setMessage(typeof success === 'function' ? success() : success);
       } catch (err) {
         setError(err instanceof Error ? err.message : String(err));
+        await refreshRuns().catch(() => undefined);
       } finally {
         setIsBusy(false);
       }
@@ -398,41 +458,87 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
           title: `${contract.presetId} atlas`,
           prompt: config.prompt ?? '',
           ...params,
+          backgroundRemoval: 'alpha',
         }),
       'Run prepared.',
     );
 
-  const handleCreateRowJob = () => {
+  const handleQueueRow = () => {
     if (!activeRun || !selectedRow) return;
-    void runAction(async () => {
-      await createSpriteAtlasRowJob(activeRun.id, selectedRow.id);
-      return null;
-    }, 'Row handoff job created.');
-  };
-
-  const handleCreateMissingJobs = () => {
-    if (!activeRun) return;
-    let created = 0;
-    void runAction(
-      async () => {
-        const result = await createSpriteAtlasRowJobs(
-          activeRun.id,
-          missingJobRows.map((row) => row.id),
-        );
-        created = result.jobs.length;
-        return result.run;
+    if (!activeProviderId) {
+      setError('Choose a provider before queueing this row.');
+      return;
+    }
+    if (
+      activeRun.contract.workflowLane === 'animation' &&
+      !isSpriteAtlasIdleRow(selectedRow.id) &&
+      !activeRun.anchor
+    ) {
+      setError(`Import an idle row before queueing ${selectedRow.id}.`);
+      return;
+    }
+    const rowId = selectedRow.id;
+    const runId = activeRun.id;
+    onGenerate(
+      selectedPrompt || selectedRow.id,
+      {
+        recipeId: 'sprite-atlas',
+        attachments: [],
+        recipeParams: {
+          ...params,
+          runId,
+          rowId,
+          presetId: activeRun.contract.presetId,
+        },
       },
-      () => `${created} handoff job${created === 1 ? '' : 's'} created.`,
+      {
+        preventModal: true,
+        useCurrentAttachments: false,
+        onJobCreated: (job) => {
+          if (job.providerId && activeProviderId && job.providerId !== activeProviderId) {
+            setError(`Queued with ${job.providerId}.`);
+          }
+          setMessage(
+            job.providerId === 'codex'
+              ? `${rowId} queued with Codex.`
+              : `${rowId} queued with ${job.providerId ?? 'the selected provider'}.`,
+          );
+          void spriteAtlasRunCoordinator
+            .recordDispatch(runId, rowId, job.id)
+            .then((run) => setActiveRun(run))
+            .catch((dispatchError) =>
+              setError(
+                dispatchError instanceof Error ? dispatchError.message : String(dispatchError),
+              ),
+            );
+        },
+      },
     );
   };
 
   const handleImportRow = () => {
-    if (!activeRun || !selectedRow) return;
+    if (!activeRun || !selectedRow || !rowCatalogImageId) return;
     void runAction(
       () =>
-        importSpriteAtlasRow(activeRun.id, { rowId: selectedRow.id, sourcePath: rowSourcePath }),
+        importSpriteAtlasRow(activeRun.id, {
+          rowId: selectedRow.id,
+          catalogImageId: rowCatalogImageId,
+        }),
       'Row imported.',
     );
+  };
+
+  const handleConfirmReadyImport = (ready: SpriteAtlasReadyImport) => {
+    if (!activeRun) return;
+    void runAction(
+      () =>
+        importSpriteAtlasRow(activeRun.id, {
+          rowId: ready.rowId,
+          catalogImageId: ready.catalogImageId,
+        }),
+      'Row imported.',
+    );
+    setReadyImports((current) => current.filter((item) => item.rowId !== ready.rowId));
   };
 
   const handleBlockRow = () => {
@@ -540,12 +646,12 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                       <div className="grid grid-cols-2 gap-2">
                         <button
                           type="button"
-                          onClick={handleCreateRowJob}
-                          disabled={busy}
+                          onClick={handleQueueRow}
+                          disabled={busy || !activeProviderId}
                           className="inline-flex min-h-10 items-center justify-center gap-2 rounded-[var(--wb-radius)] border border-sky-400/2 bg-sky-500/10 px-3 text-xs font-semibold tracking-normal text-[color:var(--wb-info)]  hover:bg-sky-500/15 disabled:opacity-50"
                         >
                           <ClipboardList size={15} />
-                          Row Job
+                          {activeProviderId ? `Queue with ${activeProviderId}` : 'Choose a provider'}
                         </button>
                         <button
                           type="button"
@@ -565,18 +671,16 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                           </span>
                           <select
                             aria-label="Row source image"
-                            value={rowSourcePath}
-                            onChange={(event) => setRowSourcePath(event.target.value)}
+                            value={rowCatalogImageId}
+                            onChange={(event) => setRowCatalogImageId(event.target.value)}
                             className="min-h-10 w-full rounded-[var(--wb-radius)] bg-[color:var(--wb-panel)] px-2 text-sm text-[color:var(--wb-ink)]"
                           >
                             <option value="">Choose a library image</option>
-                            {images
-                              .filter((image) => image.localPath)
-                              .map((image) => (
-                                <option key={image.id} value={image.localPath}>
-                                  {image.config.prompt?.slice(0, 70) || image.id}
-                                </option>
-                              ))}
+                            {images.map((image) => (
+                              <option key={image.id} value={image.id}>
+                                {image.config.prompt?.slice(0, 70) || image.id}
+                              </option>
+                            ))}
                           </select>
                           <span className="text-xs text-[color:var(--wb-muted)]">
                             Import external images through Settings → Library &amp; imports.
@@ -585,7 +689,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                         <button
                           type="button"
                           onClick={handleImportRow}
-                          disabled={busy || !rowSourcePath.trim()}
+                          disabled={busy || !rowCatalogImageId}
                           className="inline-flex min-h-10 items-center justify-center rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_4%,transparent)] px-3 text-[color:var(--wb-ink)] hover:bg-[color-mix(in_srgb,var(--wb-ink)_8%,transparent)] disabled:opacity-50"
                           aria-label="Import selected row"
                         >
@@ -608,29 +712,24 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                           {selectedPrompt || 'Prompt unavailable.'}
                         </pre>
                       </div>
-                      <div className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] p-3">
-                        <dl className="grid gap-2 text-xs">
-                          <PathRow label="Prompt" value={selectedRow.promptPath} />
-                          <PathRow label="Request" value={activeRun.paths.requestPath} />
-                          <PathRow label="Inbox" value={activeRun.paths.handoffInboxDir} />
-                        </dl>
-                      </div>
+                      {activeRun.contract.rows.find((row) => row.id === selectedRow.id)?.mirrorPair ? (
+                        <p className="text-xs text-[color:var(--wb-muted)]">
+                          This app does not mirror the paired row.
+                        </p>
+                      ) : null}
                     </div>
                   )}
 
                   {inspectorTab === 'artifacts' && (
-                    <div className="grid gap-3">
-                      <div className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] p-3">
-                        <div className="text-xs font-semibold tracking-normal text-[color:var(--wb-muted)]">
-                          Row Paths
-                        </div>
-                        <dl className="mt-2 grid gap-2 text-xs">
-                          <PathRow label="Guide" value={selectedRow.layoutGuidePath} />
-                          <PathRow label="Raw" value={selectedRow.rawPath ?? 'not imported'} />
-                          <PathRow label="Frames" value={activeRun.paths.framesDir} />
-                          <PathRow label="Outbox" value={activeRun.paths.handoffOutboxDir} />
-                        </dl>
-                      </div>
+                    <div className="grid gap-2 text-xs text-[color:var(--wb-ink)]">
+                      <p>Source hash: {selectedRow.sourceSha256 ?? 'not imported'}</p>
+                      {selectedRow.blocked ? (
+                        <p>
+                          {selectedRow.blocked.userMessage} {selectedRow.blocked.suggestion}
+                        </p>
+                      ) : (
+                        <p>No blocked reason on this row.</p>
+                      )}
                     </div>
                   )}
                 </div>
@@ -742,19 +841,12 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                       'custom',
                     ]}
                   />
-                  <SelectField
-                    label="QA"
-                    value={contract.qaMode}
-                    onChange={(value) => setRecipeParam('qaMode', value)}
-                    options={['standard', 'strict']}
-                  />
-                  <SelectField
-                    label="Background"
-                    value={contract.backgroundRemoval}
-                    onChange={(value) => setRecipeParam('backgroundRemoval', value)}
-                    options={['chroma', 'auto', 'rembg', 'alpha']}
-                    className="col-span-2"
-                  />
+                  <div className="col-span-2 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] px-2 py-2 text-xs text-[color:var(--wb-muted)]">
+                    New runs ask for native transparency.
+                    {contract.workflowLane === 'static-items'
+                      ? ' Irregular items stay in spritesheet-expert.'
+                      : ` Lane: ${contract.workflowLane}.`}
+                  </div>
                 </div>
               </div>
 
@@ -822,9 +914,13 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                   <RefreshCw size={14} />
                 </IconButton>
                 <IconButton
-                  label={`Create ${missingJobRows.length} row jobs`}
-                  onClick={handleCreateMissingJobs}
-                  disabled={busy || !activeRun || missingJobRows.length === 0}
+                  label={
+                    activeProviderId
+                      ? `Queue selected row with ${activeProviderId}`
+                      : 'Choose a provider'
+                  }
+                  onClick={handleQueueRow}
+                  disabled={busy || !activeRun || !selectedRow || !activeProviderId}
                   tone="sky"
                 >
                   <ClipboardList size={14} />
@@ -857,7 +953,21 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                   <Package size={14} />
                 </IconButton>
                 <IconButton
-                  label="Validate artifact"
+                  label="Accept visual check"
+                  onClick={() => {
+                    if (!activeRun) return;
+                    void runAction(
+                      () => acceptSpriteAtlasVisualReview(activeRun.id),
+                      'Visual check accepted.',
+                    );
+                  }}
+                  disabled={busy || !activeRun}
+                  tone="emerald"
+                >
+                  <Check size={14} />
+                </IconButton>
+                <IconButton
+                  label="Technical check"
                   onClick={handleRunQa}
                   disabled={
                     busy || !activeRun || !['composed', 'qa_passed'].includes(activeRun.status)
@@ -945,22 +1055,85 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
 
                 <div className="custom-scrollbar min-h-0 flex-1 overflow-y-auto p-3">
                   <section className="mb-3 grid gap-3" aria-label="Atlas output">
-                    {activeRun.status === 'composed' || activeRun.status === 'qa_passed' ? (
-                      <div className="rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-[color-mix(in_srgb,var(--wb-ink)_3%,transparent)] p-2">
-                        <div className="mb-2 text-xs font-semibold tracking-normal text-[color:var(--wb-muted)]">
-                          Atlas
+                    <div className="flex flex-wrap gap-1.5">
+                      {(['checker', 'black', 'gray', 'white'] as const).map((matte) => (
+                        <button
+                          key={matte}
+                          type="button"
+                          onClick={() => setStageMatte(matte)}
+                          className={`min-h-8 rounded-[var(--wb-radius)] border px-2 text-xs ${
+                            stageMatte === matte
+                              ? 'border-sky-400/40 text-[color:var(--wb-ink)]'
+                              : 'border-[color:var(--wb-line)] text-[color:var(--wb-muted)]'
+                          }`}
+                        >
+                          {matte}
+                        </button>
+                      ))}
+                    </div>
+                    {readyImports.length > 0 && (
+                      <div className="grid gap-2">
+                        {readyImports.map((ready) => (
+                          <button
+                            key={ready.rowId}
+                            type="button"
+                            onClick={() => handleConfirmReadyImport(ready)}
+                            className="min-h-10 rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] px-3 text-left text-xs"
+                          >
+                            Import {ready.rowId} from the finished image
+                          </button>
+                        ))}
+                      </div>
+                    )}
+                    {selectedRow &&
+                    (selectedRow.status === 'extracted' || activeRun.status === 'qa_passed') ? (
+                      <div
+                        className={`rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] p-2 ${stageMatteClass(stageMatte)}`}
+                      >
+                        <div className="mb-2 flex items-center justify-between gap-2 text-xs text-[color:var(--wb-muted)]">
+                          <span>
+                            {selectedRow.id} frame {playbackFrame}
+                            {activeRun.qa?.mode === 'fixture_smoke' ? ' · Fixture' : ''}
+                          </span>
+                          <button
+                            type="button"
+                            className="min-h-8 px-2"
+                            onClick={() =>
+                              setPlaybackFrame((frame) => (frame % selectedRow.frames) + 1)
+                            }
+                          >
+                            Step
+                          </button>
                         </div>
                         <img
+                          src={getSpriteAtlasFrameUrl(activeRun.id, selectedRow.id, playbackFrame)}
+                          alt={`${selectedRow.id} frame ${playbackFrame}`}
+                          className={`mx-auto h-auto max-h-80 w-auto object-contain ${
+                            activeRun.contract.stylePreset === 'pixel-art'
+                              ? '[image-rendering:pixelated]'
+                              : ''
+                          }`}
+                        />
+                      </div>
+                    ) : activeRun.status === 'composed' || activeRun.status === 'qa_passed' ? (
+                      <div
+                        className={`rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] p-2 ${stageMatteClass(stageMatte)}`}
+                      >
+                        <img
                           src={getSpriteAtlasAtlasUrl(activeRun.id)}
-                          alt=""
-                          className="h-auto w-full rounded-[var(--wb-radius)] border border-[color:var(--wb-line)] bg-black object-contain"
+                          alt="Composed atlas"
+                          className={`h-auto w-full object-contain ${
+                            activeRun.contract.stylePreset === 'pixel-art'
+                              ? '[image-rendering:pixelated]'
+                              : ''
+                          }`}
                         />
                       </div>
                     ) : (
                       <EmptyState
                         icon={<Package size={28} />}
                         title="Atlas not composed"
-                        copy="Compose writes atlas.png and manifest.json."
+                        copy="Queue a row, import the result, then compose the exact strips."
                       />
                     )}
 
@@ -1007,7 +1180,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                                 {row.id}
                               </div>
                               <div className="mt-1 font-mono text-[length:var(--wbp-label)] text-[color:var(--wb-dim)]">
-                                {row.frames} frames / {row.jobId ? 'job ready' : 'no job'}
+                                {row.frames} frames / {ROW_STATUS_LABELS[row.status]}
                               </div>
                             </div>
                             <span
@@ -1040,7 +1213,7 @@ export const SpriteAtlasRecipe: React.FC<SpriteAtlasRecipeProps> = ({
                 <EmptyState
                   icon={<Folder size={34} />}
                   title="No Sprite Atlas run"
-                  copy="Prepare Run creates prompts, guides, folders, and handoff inbox."
+                  copy="Prepare Run writes the row contract. Queue sends one row to the selected provider."
                 />
               </div>
             )}
@@ -1115,12 +1288,12 @@ const Metric: React.FC<{ label: string; value: string }> = ({ label, value }) =>
   </div>
 );
 
-const PathRow: React.FC<{ label: string; value: string }> = ({ label, value }) => (
-  <div className="grid gap-1">
-    <dt className="font-semibold tracking-normal text-[color:var(--wb-muted)]">{label}</dt>
-    <dd className="break-all font-mono text-[11px] text-[color:var(--wb-ink)]">{value}</dd>
-  </div>
-);
+function stageMatteClass(matte: 'checker' | 'black' | 'gray' | 'white') {
+  if (matte === 'black') return 'bg-black';
+  if (matte === 'white') return 'bg-white';
+  if (matte === 'gray') return 'bg-zinc-500';
+  return 'bg-[linear-gradient(45deg,#27272a_25%,transparent_25%,transparent_75%,#27272a_75%,#27272a),linear-gradient(45deg,#27272a_25%,transparent_25%,transparent_75%,#27272a_75%,#27272a)] bg-[length:16px_16px] bg-[position:0_0,8px_8px] bg-zinc-300';
+}
 
 const SelectField: React.FC<{
   label: string;

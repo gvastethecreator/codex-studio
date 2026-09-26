@@ -35,7 +35,11 @@ interface RecipeRouterProps {
   handleGenerate: (
     promptOverride?: string,
     configOverrides?: Partial<ImageGenerationConfig>,
-    options?: { preventModal?: boolean; useCurrentAttachments?: boolean },
+    options?: {
+      preventModal?: boolean;
+      useCurrentAttachments?: boolean;
+      onJobCreated?: (job: import('../packages/shared/src/types').Job) => void;
+    },
   ) => void;
   isGenerating: boolean;
   imagesWithConfig: GeneratedImageWithConfig[];
@@ -149,6 +153,8 @@ export const RecipeRouter: React.FC<RecipeRouterProps> = ({
             images={imagesWithConfig}
             config={generationConfig}
             updateConfig={updateGenerationConfig}
+            onGenerate={handleGenerate}
+            activeProviderId={activeProviderId}
             isGenerating={isGenerating}
           />
         )}

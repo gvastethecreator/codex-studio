@@ -75,10 +75,28 @@ export async function runSpriteAtlasQa(runId: string) {
   });
 }
 
+export async function acceptSpriteAtlasVisualReview(runId: string) {
+  return request<SpriteAtlasRun>(
+    `/api/sprite-atlas/runs/${encodeURIComponent(runId)}/visual-review`,
+    { method: 'POST' },
+  );
+}
+
+export async function recordSpriteAtlasRowDispatch(runId: string, rowId: string, jobId: string) {
+  return request<SpriteAtlasRun>(
+    `/api/sprite-atlas/runs/${encodeURIComponent(runId)}/row-dispatch`,
+    { method: 'POST', body: JSON.stringify({ rowId, jobId }) },
+  );
+}
+
 export function getSpriteAtlasLayoutGuideUrl(runId: string, rowId: string) {
   return `${resolveStudioApiBase()}/api/sprite-atlas/runs/${encodeURIComponent(runId)}/files/layout-guide/${encodeURIComponent(rowId)}`;
 }
 
 export function getSpriteAtlasAtlasUrl(runId: string) {
   return `${resolveStudioApiBase()}/api/sprite-atlas/runs/${encodeURIComponent(runId)}/files/atlas`;
+}
+
+export function getSpriteAtlasFrameUrl(runId: string, rowId: string, frameNumber: number) {
+  return `${resolveStudioApiBase()}/api/sprite-atlas/runs/${encodeURIComponent(runId)}/files/frame/${encodeURIComponent(rowId)}/${frameNumber}`;
 }

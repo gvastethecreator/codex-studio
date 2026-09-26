@@ -28,6 +28,9 @@ describe('worker routing', () => {
     expect(resolveWorkerRuntimeTarget(job({ kind: 'image_edit' }))).toBe('codex');
     expect(resolveWorkerRuntimeTarget(job({ kind: 'style_preset_card' }))).toBe('codex');
     expect(resolveWorkerRuntimeTarget(job({ kind: 'sprite_sheet' }))).toBe('codex');
+    expect(resolveWorkerRuntimeTarget(job({ kind: 'sprite_sheet', providerId: 'chatgpt' }))).toBe(
+      'external',
+    );
     expect(resolveWorkerRuntimeTarget(job({ kind: 'texture_generate' }))).toBe('codex');
   });
 

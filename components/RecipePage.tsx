@@ -22,7 +22,11 @@ export interface RecipePageProps {
   handleGenerate: (
     promptOverride?: string,
     configOverrides?: Partial<ImageGenerationConfig>,
-    options?: { preventModal?: boolean; useCurrentAttachments?: boolean },
+    options?: {
+      preventModal?: boolean;
+      useCurrentAttachments?: boolean;
+      onJobCreated?: (job: import('../packages/shared/src/types').Job) => void;
+    },
   ) => void;
   isGenerating: boolean;
   imagesWithConfig: GeneratedImageWithConfig[];
