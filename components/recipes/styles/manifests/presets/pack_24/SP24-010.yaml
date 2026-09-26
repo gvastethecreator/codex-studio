@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP24-010
+packId: pack_24
+name: Wrong-Face Family Portraits
+styleAnchors:
+  - Wrong-Face Family Portraits
+  - uncanny formal portrait dread
+  - formal posed portraits
+displayName: Wrong-Face Family Portraits
+category: 1. Psychological Horror Aesthetics
+domain: uncanny formal portrait dread
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - psychological-horror-aesthetics
+  - wrong-face
+  - art-direction
+  - psychological-horror
+visualDna:
+  aesthetic: 'Wrong-face family portraits: formal studio portraits painted with perfect poise, except that faces are subtly too smooth, too still or slightly misplaced.'
+  subject_treatment: Render the prompt's subject as a formal posed portrait, keeping clothing and pose precise while the face is calm but subtly wrong.
+  color_and_tone: Muted studio browns, sepia and dusty rose with porcelain-pale skin tones.
+  lighting_and_shadow: Soft old studio light from one side, smooth gradients and a dark mottled backdrop.
+  texture_and_material: Painted canvas backdrop, lace collars, velvet chairs and slightly glossy varnish.
+  camera_and_composition: Centered frontal posed portrait with figures arranged stiffly in rows.
+  atmosphere_and_mood: Polite, formal and deeply unnerving, a family that is not quite right.
+  rendering_and_quality: Careful academic portrait painting with smooth finish and subtle distortions.
+  creative_brief: "Wrong-face family portraits: formal studio portraits painted with perfect poise, except that faces are subtly too smooth, too still or slightly misplaced. Carry it through formal posed portraits, subtly wrong faces, studio backdrop, stiff symmetry. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: formal posed portraits; subtly wrong faces; studio backdrop; stiff symmetry
+avoidRules:
+  - gore
+  - monster faces
+  - cartoon exaggeration
+  - graphic wounds
+  - jump-scare monster close-up
+  - franchise creature design
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: gore, monster faces, cartoon exaggeration, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_24
+  packName: Psychological & Frontier Aesthetics
+  categoryId: psychological-horror-aesthetics
+  categoryName: 1. Psychological Horror Aesthetics
+  tags:
+    - curation-v2
+    - psychological-horror-aesthetics
+    - wrong-face
+    - art-direction
+    - psychological-horror
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: uncanny formal portrait dread

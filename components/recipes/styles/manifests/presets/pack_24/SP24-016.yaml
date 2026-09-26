@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP24-016
+packId: pack_24
+name: Attic Toy Menace
+styleAnchors:
+  - Attic Toy Menace
+  - forgotten toy attic dread
+  - forgotten toys
+displayName: Attic Toy Menace
+category: 1. Psychological Horror Aesthetics
+domain: forgotten toy attic dread
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - psychological-horror-aesthetics
+  - attic-toys
+  - art-direction
+  - psychological-horror
+visualDna:
+  aesthetic: 'Attic toy menace: dusty attics of forgotten dolls, wind-up animals and rocking horses, arranged as if they have been waiting for someone to come back.'
+  subject_treatment: Surround the prompt's subject with forgotten toys in a dusty attic, keeping it clear while the toys seem attentive.
+  color_and_tone: Faded pastels, yellowed porcelain and dusty browns under grey attic light.
+  lighting_and_shadow: Single dusty beam from a small window, deep shadows under eaves and glinting button eyes.
+  texture_and_material: Cracked porcelain, moth-eaten fabric, chipped paint, cobwebs and dusty floorboards.
+  camera_and_composition: Low angle across the attic floor with toys in rows facing the subject.
+  atmosphere_and_mood: Nostalgic, patient and menacing, forgotten things that remember.
+  rendering_and_quality: Detailed painterly realism with dust particles and subtle eerie arrangement.
+  creative_brief: "Attic toy menace: dusty attics of forgotten dolls, wind-up animals and rocking horses, arranged as if they have been waiting for someone to come back. Carry it through forgotten toys, rows facing the viewer, dusty beam, cracked porcelain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: forgotten toys; rows facing the viewer; dusty beam; cracked porcelain
+avoidRules:
+  - cheerful playroom
+  - gore
+  - graphic wounds
+  - jump-scare monster close-up
+  - franchise creature design
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cheerful playroom, gore, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_24
+  packName: Psychological & Frontier Aesthetics
+  categoryId: psychological-horror-aesthetics
+  categoryName: 1. Psychological Horror Aesthetics
+  tags:
+    - curation-v2
+    - psychological-horror-aesthetics
+    - attic-toys
+    - art-direction
+    - psychological-horror
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: forgotten toy attic dread

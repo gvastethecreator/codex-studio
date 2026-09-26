@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP24-015
+packId: pack_24
+name: Snowbound Motel Hum
+styleAnchors:
+  - Snowbound Motel Hum
+  - isolated winter motel dread
+  - snow-buried motel
+displayName: Snowbound Motel Hum
+category: 1. Psychological Horror Aesthetics
+domain: isolated winter motel dread
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - psychological-horror-aesthetics
+  - snowbound-motel
+  - art-direction
+  - psychological-horror
+visualDna:
+  aesthetic: 'Snowbound motel hum: a roadside motel buried in snow, humming ice machines, blinking vacancy tubes and long exterior walkways where every door looks the same.'
+  subject_treatment: Place the prompt's subject at a snowed-in roadside motel, keeping it clear against endless white and cold light.
+  color_and_tone: Blue-white snow, sickly yellow door lamps and a single red tube light glowing in the storm.
+  lighting_and_shadow: Weak door lamps and snowglare, long shadows along the walkway and dark room windows.
+  texture_and_material: Piled snow, frosted glass, peeling motel doors, humming machines and icy railings.
+  camera_and_composition: Long exterior walkways receding in perspective, identical doors repeating.
+  atmosphere_and_mood: Isolated, cold and hypnotic, the storm will not end.
+  rendering_and_quality: Cold painterly realism with soft falling snow and subtle glow.
+  creative_brief: "Snowbound motel hum: a roadside motel buried in snow, humming ice machines, blinking vacancy tubes and long exterior walkways where every door looks the same. Carry it through snow-buried motel, identical doors, humming ice machine, storm isolation. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: snow-buried motel; identical doors; humming ice machine; storm isolation
+avoidRules:
+  - summer
+  - crowded parking lot
+  - gore
+  - graphic wounds
+  - jump-scare monster close-up
+  - franchise creature design
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: summer, crowded parking lot, gore, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_24
+  packName: Psychological & Frontier Aesthetics
+  categoryId: psychological-horror-aesthetics
+  categoryName: 1. Psychological Horror Aesthetics
+  tags:
+    - curation-v2
+    - psychological-horror-aesthetics
+    - snowbound-motel
+    - art-direction
+    - psychological-horror
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: isolated winter motel dread

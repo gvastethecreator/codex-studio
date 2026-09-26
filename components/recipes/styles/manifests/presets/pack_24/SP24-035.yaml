@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP24-035
+packId: pack_24
+name: Surveyor Expedition Plates
+styleAnchors:
+  - Surveyor Expedition Plates
+  - lone survey expedition art
+  - hand-colored plates
+displayName: Surveyor Expedition Plates
+category: 2. Tactical & Solitary Frontiers
+domain: lone survey expedition art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - tactical-and-solitary-frontiers
+  - survey-plates
+  - art-direction
+  - frontier
+visualDna:
+  aesthetic: 'Surveyor expedition plates: a lone surveyor mapping wild frontier land, rendered like hand-colored expedition plates with fine line and pale washes.'
+  subject_treatment: Show the prompt's subject as part of a lonely surveying expedition scene, keeping it clear in fine line and pale wash.
+  color_and_tone: Pale watercolor washes over sepia line on cream paper, restrained earth tones.
+  lighting_and_shadow: Soft even light with fine hatching for shadow in the landscape.
+  texture_and_material: Fine engraved-style lines, pale washes, tripod instruments and canvas tents.
+  camera_and_composition: Wide landscape views with the surveyor small beside instruments.
+  atmosphere_and_mood: Curious, patient and solitary, measuring a world no one has mapped.
+  rendering_and_quality: Hand-colored plate illustration with delicate line and wash.
+  creative_brief: "Surveyor expedition plates: a lone surveyor mapping wild frontier land, rendered like hand-colored expedition plates with fine line and pale washes. Carry it through hand-colored plates, lone surveyor, tripod instruments, pale washes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: hand-colored plates; lone surveyor; tripod instruments; pale washes
+avoidRules:
+  - photographic realism
+  - gore
+  - real military insignia
+  - real brand or company logo
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: photographic realism, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_24
+  packName: Psychological & Frontier Aesthetics
+  categoryId: tactical-and-solitary-frontiers
+  categoryName: 2. Tactical & Solitary Frontiers
+  tags:
+    - curation-v2
+    - tactical-and-solitary-frontiers
+    - survey-plates
+    - art-direction
+    - frontier
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: lone survey expedition art

@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP24-033
+packId: pack_24
+name: Cold Checkpoint Night
+styleAnchors:
+  - Cold Checkpoint Night
+  - remote border post at night
+  - remote barrier post
+displayName: Cold Checkpoint Night
+category: 2. Tactical & Solitary Frontiers
+domain: remote border post at night
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - tactical-and-solitary-frontiers
+  - cold-checkpoint
+  - art-direction
+  - frontier
+visualDna:
+  aesthetic: 'Cold checkpoint night: a small barrier post on an empty frozen road, painted in graphic ink and flat color with one lamp and long shadows.'
+  subject_treatment: Place the prompt's subject at a remote nighttime road barrier, keeping it clear under a single lamp.
+  color_and_tone: Ink black, cold blue snow and a single pool of sickly yellow lamplight.
+  lighting_and_shadow: One lamp, long hard shadows and the dark forest beyond the barrier.
+  texture_and_material: Striped barrier pole, frosted booth window, snowy road and heavy coats.
+  camera_and_composition: Road vanishing into darkness, barrier and booth small in the lamplight.
+  atmosphere_and_mood: Tense, bored and suspicious, waiting all night for headlights.
+  rendering_and_quality: Graphic ink illustration with flat color and crisp shadows.
+  creative_brief: "Cold checkpoint night: a small barrier post on an empty frozen road, painted in graphic ink and flat color with one lamp and long shadows. Carry it through remote barrier post, single lamp, frozen road, long shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: remote barrier post; single lamp; frozen road; long shadows
+avoidRules:
+  - national flags
+  - readable signs
+  - gore
+  - real military insignia
+  - real brand or company logo
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: national flags, readable signs, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_24
+  packName: Psychological & Frontier Aesthetics
+  categoryId: tactical-and-solitary-frontiers
+  categoryName: 2. Tactical & Solitary Frontiers
+  tags:
+    - curation-v2
+    - tactical-and-solitary-frontiers
+    - cold-checkpoint
+    - art-direction
+    - frontier
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: remote border post at night

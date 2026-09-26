@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP24-023
+packId: pack_24
+name: Arctic Weather-Station Solitude
+styleAnchors:
+  - Arctic Weather-Station Solitude
+  - polar outpost solitude
+  - tiny polar outpost
+displayName: Arctic Weather-Station Solitude
+category: 2. Tactical & Solitary Frontiers
+domain: polar outpost solitude
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - tactical-and-solitary-frontiers
+  - arctic-station
+  - art-direction
+  - frontier
+visualDna:
+  aesthetic: 'Arctic weather-station solitude: a tiny research hut and instrument masts on endless white ice, painted in cold gouache with one warm window glowing.'
+  subject_treatment: Place the prompt's subject at or near a lonely polar outpost, keeping it clear against vast white ice and pale sky.
+  color_and_tone: Icy blues and whites, pale lilac shadows and a single warm amber window glow.
+  lighting_and_shadow: Low polar sun or long twilight, soft blue shadows stretching across the snow.
+  texture_and_material: Matte gouache snow, wind-carved drifts, frosted masts and weathered hut panels.
+  camera_and_composition: Very wide frames with a tiny outpost against a huge empty horizon.
+  atmosphere_and_mood: Quiet, cold and devoted, one person keeping watch at the edge of the world.
+  rendering_and_quality: Clean matte gouache painting with crisp shapes and soft snow gradients.
+  creative_brief: "Arctic weather-station solitude: a tiny research hut and instrument masts on endless white ice, painted in cold gouache with one warm window glowing. Carry it through tiny polar outpost, endless ice, warm window glow, long blue shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: tiny polar outpost; endless ice; warm window glow; long blue shadows
+avoidRules:
+  - tropical scenery
+  - gore
+  - real military insignia
+  - real brand or company logo
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: tropical scenery, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_24
+  packName: Psychological & Frontier Aesthetics
+  categoryId: tactical-and-solitary-frontiers
+  categoryName: 2. Tactical & Solitary Frontiers
+  tags:
+    - curation-v2
+    - tactical-and-solitary-frontiers
+    - arctic-station
+    - art-direction
+    - frontier
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: polar outpost solitude

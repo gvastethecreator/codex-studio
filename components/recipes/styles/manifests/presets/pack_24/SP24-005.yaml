@@ -15,9 +15,10 @@ tags:
   - 'metal gear solid 3: snake eater'
   - full-style
   - visual-evaluation-pending
+  - reference-title
 visualDna:
   aesthetic: >-
-    Metal Gear concept-illustration language, paired with MGS3 fieldcraft: expressive brush-ink
+    Cold War tactical concept-illustration language with jungle fieldcraft: expressive brush-ink
     silhouettes, interrupted contours, dry-brush drag and sparse translucent color over confident
     tactical design.
   subject_treatment: >-
@@ -48,13 +49,17 @@ avoidRules:
   - generic neutral rendering that removes the reference visual grammar
   - unrequested franchise characters, logos or exact scene copies
   - interface overlays, text or frames unless requested
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP24-005.webp
 attributes:
   negativePrompt: >-
     overriding explicitly requested subject, action, identity, count or camera, generic neutral
     rendering that removes the reference visual grammar, unrequested franchise characters, logos or
-    exact scene copies, interface overlays, text or frames unless requested
+    exact scene copies, interface overlays, text or frames unless requested, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: >-
     METAL GEAR SOLID 3: SNAKE EATER (Original PlayStation 2 release (2004/2005 regional releases),
     not Delta: Snake Eater)
@@ -111,6 +116,7 @@ taxonomy:
     - 'metal gear solid 3: snake eater'
     - full-style
     - visual-evaluation-pending
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

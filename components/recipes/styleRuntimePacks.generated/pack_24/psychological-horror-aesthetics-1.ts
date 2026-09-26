@@ -8,7 +8,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Silent Hill f — Blooming Folkloric Horror',
     category: '1. Psychological Horror Aesthetics',
     negativePrompt:
-      'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested',
+      'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Showa-era psychological folklore crossing into invasive floral body horror: blooms are a contaminating force that claims bodies and familiar rooms, not pretty decoration.',
@@ -37,10 +37,10 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Silent Hill 2 (2001) — Sickly Memory',
     category: '1. Psychological Horror Aesthetics',
     negativePrompt:
-      'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested',
+      'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Silent Hill 2 (2001) psychological art direction translated into distressed painted illustration: inward grief, sickly stillness and ordinary space dissolving into uncertain memory.',
+        'Early-2000s console psychological-horror art direction translated into distressed painted illustration: inward grief, sickly stillness and ordinary space dissolving into uncertain memory.',
       subject_treatment:
         'Preserve the requested person and action; make faces or gestures feel withdrawn, while a small number of sharp details persist inside softened spatial information.',
       color_and_tone:
@@ -66,10 +66,10 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Silent Hill 2 (2024) — Wet Concrete, Near Dread',
     category: '1. Psychological Horror Aesthetics',
     negativePrompt:
-      'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested',
+      'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Silent Hill 2 (2024) psychological art direction as naturalistic concept painting: intimate human detail against damp, oppressive ordinary spaces and dense low-visibility atmosphere.',
+        'Remake-era psychological-horror art direction as naturalistic concept painting: intimate human detail against damp, oppressive ordinary spaces and dense low-visibility atmosphere.',
       subject_treatment:
         'Preserve identity and action; give the subject contemporary skin, hair, cloth, and silhouette detail against a more threatening environment without adding a mandatory monster.',
       color_and_tone:
@@ -95,10 +95,10 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Silent Hill 4 — Domestic Intrusion',
     category: '1. Psychological Horror Aesthetics',
     negativePrompt:
-      'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested',
+      'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Silent Hill 4: The Room (2004) psychological-horror art direction: ordinary closed domestic space turns subtly bodily and hostile, with compressed perspective and sickly analog tonal instability.',
+        'Mid-2000s apartment-bound psychological-horror art direction: ordinary closed domestic space turns subtly bodily and hostile, with compressed perspective and sickly analog tonal instability.',
       subject_treatment:
         'Preserve explicit identity and action. Keep mundane subjects outwardly plausible; disturb their relationship to space through an intrusive stain, doubled shadow or impossible threshold where compatible.',
       color_and_tone:
@@ -117,6 +117,551 @@ export const GENERATED_STYLE_PRESETS = [
     ui: {
       kind: 'full_style',
       visualEvaluation: 'pending',
+    },
+  },
+  {
+    id: 'SP24-007',
+    name: 'Clinical Pastel Unease',
+    displayName: 'Clinical Pastel Unease',
+    styleAnchors: [
+      'Clinical Pastel Unease',
+      'sterile pastel institution dread',
+      'pastel institutional palette',
+    ],
+    category: '1. Psychological Horror Aesthetics',
+    domain: 'sterile pastel institution dread',
+    negativePrompt:
+      'warm cozy lighting, high contrast shadows, gore, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Clinical pastel unease: soft mint, pale pink and hospital cream spaces lit by humming fluorescents, where calm institutional order hides something quietly wrong.',
+      subject_treatment:
+        "Place the prompt's subject in a clean pastel institutional space, keeping it clear while one small detail sits wrong in the orderly scene.",
+      color_and_tone:
+        'Mint green, pale pink, cream and chrome with sickly fluorescent tints and very little shadow contrast.',
+      lighting_and_shadow:
+        'Flat overhead fluorescent light, faint flicker and pale shadows directly beneath objects.',
+      texture_and_material:
+        'Glossy vinyl floors, painted metal, laminated surfaces and crisp linen with faint stains.',
+      camera_and_composition:
+        'Symmetrical corridors and rooms with long vanishing points and too much empty floor.',
+      atmosphere_and_mood: 'Calm on the surface, deeply unsettling underneath, a clean nightmare.',
+      rendering_and_quality:
+        'Smooth clean painterly rendering with precise edges and subdued detail.',
+      creative_brief:
+        "Clinical pastel unease: soft mint, pale pink and hospital cream spaces lit by humming fluorescents, where calm institutional order hides something quietly wrong. Carry it through pastel institutional palette, humming fluorescents, symmetry, one wrong detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features:
+        'pastel institutional palette; humming fluorescents; symmetry; one wrong detail',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP24-008',
+    name: 'Tape-Worn Living Room',
+    displayName: 'Tape-Worn Living Room',
+    styleAnchors: [
+      'Tape-Worn Living Room',
+      'degraded home video dread',
+      'tape noise and tracking lines',
+    ],
+    category: '1. Psychological Horror Aesthetics',
+    domain: 'degraded home video dread',
+    negativePrompt:
+      'clean digital sharpness, modern interior design, gore, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Tape-worn living room: ordinary family interiors seen as if through a worn home videotape, with color bleed, soft smear and wrongness hiding in the noise.',
+      subject_treatment:
+        "Show the prompt's subject in a domestic interior as a worn tape frame, keeping it readable through smear while something uncanny hides in the noise.",
+      color_and_tone:
+        'Faded browns and oranges, oversaturated reds, bleeding chroma and washed-out highlights.',
+      lighting_and_shadow:
+        'Harsh on-camera lamp light, blown highlights and murky crushed shadows in the corners.',
+      texture_and_material:
+        'Tape noise, horizontal tracking lines, soft smear, wood paneling, shag carpet and patterned sofas.',
+      camera_and_composition:
+        'Handheld home-video framing, slightly tilted, with doorways and dark hallways at the edges.',
+      atmosphere_and_mood: 'Nostalgic and wrong, a family memory that should not exist.',
+      rendering_and_quality:
+        'Degraded analog video look with believable smear and noise, never clean digital.',
+      creative_brief:
+        "Tape-worn living room: ordinary family interiors seen as if through a worn home videotape, with color bleed, soft smear and wrongness hiding in the noise. Carry it through tape noise and tracking lines, chroma bleed, wood-paneled rooms, hidden wrongness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features:
+        'tape noise and tracking lines; chroma bleed; wood-paneled rooms; hidden wrongness',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP24-009',
+    name: 'Flooded Memory Rooms',
+    displayName: 'Flooded Memory Rooms',
+    styleAnchors: [
+      'Flooded Memory Rooms',
+      'half-submerged interior dread',
+      'half-flooded interiors',
+    ],
+    category: '1. Psychological Horror Aesthetics',
+    domain: 'half-submerged interior dread',
+    negativePrompt:
+      'splashing action, bright tropical water, gore, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Flooded memory rooms: familiar interiors half filled with still dark water, furniture drowning quietly while mirrors of the room float on the surface.',
+      subject_treatment:
+        "Put the prompt's subject inside a half-flooded room, keeping it clear above or just beneath the still water line.",
+      color_and_tone:
+        'Murky teal water, warm drowned lamplight and pale floating objects against dark depths.',
+      lighting_and_shadow:
+        'Dim light reflected and doubled by the water surface, with dark shadow below the waterline.',
+      texture_and_material:
+        'Still glossy water, floating paper and petals, soaked wallpaper and sunken furniture.',
+      camera_and_composition:
+        'Eye level near the waterline, room and reflection mirrored in the frame.',
+      atmosphere_and_mood: 'Silent, mournful and suffocating, a memory drowning slowly.',
+      rendering_and_quality: 'Painterly realism with precise reflections and soft underwater blur.',
+      creative_brief:
+        "Flooded memory rooms: familiar interiors half filled with still dark water, furniture drowning quietly while mirrors of the room float on the surface. Carry it through half-flooded interiors, mirrored waterline, floating objects, drowned lamplight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features:
+        'half-flooded interiors; mirrored waterline; floating objects; drowned lamplight',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP24-010',
+    name: 'Wrong-Face Family Portraits',
+    displayName: 'Wrong-Face Family Portraits',
+    styleAnchors: [
+      'Wrong-Face Family Portraits',
+      'uncanny formal portrait dread',
+      'formal posed portraits',
+    ],
+    category: '1. Psychological Horror Aesthetics',
+    domain: 'uncanny formal portrait dread',
+    negativePrompt:
+      'gore, monster faces, cartoon exaggeration, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Wrong-face family portraits: formal studio portraits painted with perfect poise, except that faces are subtly too smooth, too still or slightly misplaced.',
+      subject_treatment:
+        "Render the prompt's subject as a formal posed portrait, keeping clothing and pose precise while the face is calm but subtly wrong.",
+      color_and_tone: 'Muted studio browns, sepia and dusty rose with porcelain-pale skin tones.',
+      lighting_and_shadow:
+        'Soft old studio light from one side, smooth gradients and a dark mottled backdrop.',
+      texture_and_material:
+        'Painted canvas backdrop, lace collars, velvet chairs and slightly glossy varnish.',
+      camera_and_composition:
+        'Centered frontal posed portrait with figures arranged stiffly in rows.',
+      atmosphere_and_mood: 'Polite, formal and deeply unnerving, a family that is not quite right.',
+      rendering_and_quality:
+        'Careful academic portrait painting with smooth finish and subtle distortions.',
+      creative_brief:
+        "Wrong-face family portraits: formal studio portraits painted with perfect poise, except that faces are subtly too smooth, too still or slightly misplaced. Carry it through formal posed portraits, subtly wrong faces, studio backdrop, stiff symmetry. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'formal posed portraits; subtly wrong faces; studio backdrop; stiff symmetry',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP24-011',
+    name: 'Melting Wax Shrine',
+    displayName: 'Melting Wax Shrine',
+    styleAnchors: ['Melting Wax Shrine', 'candle altar dread', 'years of melted candles'],
+    category: '1. Psychological Horror Aesthetics',
+    domain: 'candle altar dread',
+    negativePrompt:
+      'cold blue light, clean modern room, gore, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Melting wax shrine: cramped altars heaped with candles that have burned for years, wax pouring over photographs, flowers and trinkets in frozen waterfalls.',
+      subject_treatment:
+        "Surround the prompt's subject with candle shrines and flowing wax, keeping it clear in the warm pooled light.",
+      color_and_tone:
+        'Ivory and amber wax, deep red glass holders and black soot against warm flickering gold.',
+      lighting_and_shadow:
+        'Dozens of small candle flames casting warm shifting light and deep trembling shadows.',
+      texture_and_material:
+        'Layered dripping wax, soot-stained walls, faded photographs and dried flowers.',
+      camera_and_composition:
+        'Close cluttered framing with the altar filling the frame and darkness beyond.',
+      atmosphere_and_mood: 'Devotional, obsessive and claustrophobic, grief turned into ritual.',
+      rendering_and_quality:
+        'Rich warm painterly rendering with glowing flames and glossy wax detail.',
+      creative_brief:
+        "Melting wax shrine: cramped altars heaped with candles that have burned for years, wax pouring over photographs, flowers and trinkets in frozen waterfalls. Carry it through years of melted candles, wax waterfalls, soot stains, faded photographs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'years of melted candles; wax waterfalls; soot stains; faded photographs',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP24-012',
+    name: 'Breathing Wallpaper Damp',
+    displayName: 'Breathing Wallpaper Damp',
+    styleAnchors: [
+      'Breathing Wallpaper Damp',
+      'damp wallpaper interior dread',
+      'damp floral wallpaper',
+    ],
+    category: '1. Psychological Horror Aesthetics',
+    domain: 'damp wallpaper interior dread',
+    negativePrompt:
+      'bright clean walls, gore, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Breathing wallpaper damp: old rooms whose floral wallpaper is swollen with damp, stains spreading into shapes and the pattern seeming to shift when unobserved.',
+      subject_treatment:
+        "Place the prompt's subject in a damp room of stained floral wallpaper, keeping it clear while the walls feel subtly alive.",
+      color_and_tone:
+        'Faded yellow and green florals, brown water stains and grey mildew under weak daylight.',
+      lighting_and_shadow:
+        'Dim overcast window light, soft shadows and darker damp patches along the walls.',
+      texture_and_material:
+        'Bubbling wallpaper, peeling seams, mildew blooms and warped floorboards.',
+      camera_and_composition:
+        'Quiet interior framing with large expanses of wall around the subject.',
+      atmosphere_and_mood: 'Stale, suffocating and quietly alive, a house that breathes.',
+      rendering_and_quality:
+        'Detailed painterly realism with subtle pattern distortion in the stains.',
+      creative_brief:
+        "Breathing wallpaper damp: old rooms whose floral wallpaper is swollen with damp, stains spreading into shapes and the pattern seeming to shift when unobserved. Carry it through damp floral wallpaper, spreading stains, bubbling seams, subtly moving pattern. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features:
+        'damp floral wallpaper; spreading stains; bubbling seams; subtly moving pattern',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP24-013',
+    name: 'Night-Bus Sodium Limbo',
+    displayName: 'Night-Bus Sodium Limbo',
+    styleAnchors: ['Night-Bus Sodium Limbo', 'late-night transit dread', 'sodium orange light'],
+    category: '1. Psychological Horror Aesthetics',
+    domain: 'late-night transit dread',
+    negativePrompt:
+      'daylight, crowded cheerful scenes, gore, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Night-bus sodium limbo: empty late-night buses and stations under orange sodium light, passengers too still and routes that never seem to reach their stop.',
+      subject_treatment:
+        "Put the prompt's subject on or near a late-night bus or station, keeping it clear under orange sodium light.",
+      color_and_tone:
+        'Monochrome sodium orange and deep brown-black with sickly green interior bus light.',
+      lighting_and_shadow:
+        'Harsh sodium streetlights, window reflections and long shadows cutting across seats.',
+      texture_and_material:
+        'Worn plastic seats, scratched windows, wet asphalt and flickering ceiling panels.',
+      camera_and_composition:
+        'Long bus interiors with repeating seats, or wide empty stops seen through glass.',
+      atmosphere_and_mood: 'Lonely, hypnotic and slightly wrong, a ride with no destination.',
+      rendering_and_quality: 'Moody painterly realism with strong reflections and grain.',
+      creative_brief:
+        "Night-bus sodium limbo: empty late-night buses and stations under orange sodium light, passengers too still and routes that never seem to reach their stop. Carry it through sodium orange light, empty late buses, window reflections, endless routes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'sodium orange light; empty late buses; window reflections; endless routes',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP24-014',
+    name: 'Taxidermy Parlor Stillness',
+    displayName: 'Taxidermy Parlor Stillness',
+    styleAnchors: ['Taxidermy Parlor Stillness', 'glass-eyed parlor dread', 'mounted animals'],
+    category: '1. Psychological Horror Aesthetics',
+    domain: 'glass-eyed parlor dread',
+    negativePrompt:
+      'gore, living animals moving, bright colors, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Taxidermy parlor stillness: cluttered old parlors crowded with mounted animals under glass domes, dozens of glass eyes watching in perfect silence.',
+      subject_treatment:
+        "Set the prompt's subject among mounted animals and glass domes in a dim parlor, keeping it clear while the animals seem to watch.",
+      color_and_tone: 'Dusty browns, faded velvet reds, amber lamplight and glinting glass eyes.',
+      lighting_and_shadow:
+        'Weak lamplight and dusty window beams, with glinting highlights in every glass eye.',
+      texture_and_material:
+        'Fur, feathers, glass domes, dust, velvet upholstery and dark varnished wood.',
+      camera_and_composition:
+        'Crowded interiors with animals filling shelves and corners around the subject.',
+      atmosphere_and_mood: 'Silent, watchful and suffocating, a room holding its breath.',
+      rendering_and_quality:
+        'Rich detailed painterly realism with precise reflections in the glass.',
+      creative_brief:
+        "Taxidermy parlor stillness: cluttered old parlors crowded with mounted animals under glass domes, dozens of glass eyes watching in perfect silence. Carry it through mounted animals, glass domes, watching glass eyes, dusty velvet parlor. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'mounted animals; glass domes; watching glass eyes; dusty velvet parlor',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP24-015',
+    name: 'Snowbound Motel Hum',
+    displayName: 'Snowbound Motel Hum',
+    styleAnchors: ['Snowbound Motel Hum', 'isolated winter motel dread', 'snow-buried motel'],
+    category: '1. Psychological Horror Aesthetics',
+    domain: 'isolated winter motel dread',
+    negativePrompt:
+      'summer, crowded parking lot, gore, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Snowbound motel hum: a roadside motel buried in snow, humming ice machines, blinking vacancy tubes and long exterior walkways where every door looks the same.',
+      subject_treatment:
+        "Place the prompt's subject at a snowed-in roadside motel, keeping it clear against endless white and cold light.",
+      color_and_tone:
+        'Blue-white snow, sickly yellow door lamps and a single red tube light glowing in the storm.',
+      lighting_and_shadow:
+        'Weak door lamps and snowglare, long shadows along the walkway and dark room windows.',
+      texture_and_material:
+        'Piled snow, frosted glass, peeling motel doors, humming machines and icy railings.',
+      camera_and_composition:
+        'Long exterior walkways receding in perspective, identical doors repeating.',
+      atmosphere_and_mood: 'Isolated, cold and hypnotic, the storm will not end.',
+      rendering_and_quality: 'Cold painterly realism with soft falling snow and subtle glow.',
+      creative_brief:
+        "Snowbound motel hum: a roadside motel buried in snow, humming ice machines, blinking vacancy tubes and long exterior walkways where every door looks the same. Carry it through snow-buried motel, identical doors, humming ice machine, storm isolation. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'snow-buried motel; identical doors; humming ice machine; storm isolation',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP24-016',
+    name: 'Attic Toy Menace',
+    displayName: 'Attic Toy Menace',
+    styleAnchors: ['Attic Toy Menace', 'forgotten toy attic dread', 'forgotten toys'],
+    category: '1. Psychological Horror Aesthetics',
+    domain: 'forgotten toy attic dread',
+    negativePrompt:
+      'cheerful playroom, gore, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Attic toy menace: dusty attics of forgotten dolls, wind-up animals and rocking horses, arranged as if they have been waiting for someone to come back.',
+      subject_treatment:
+        "Surround the prompt's subject with forgotten toys in a dusty attic, keeping it clear while the toys seem attentive.",
+      color_and_tone: 'Faded pastels, yellowed porcelain and dusty browns under grey attic light.',
+      lighting_and_shadow:
+        'Single dusty beam from a small window, deep shadows under eaves and glinting button eyes.',
+      texture_and_material:
+        'Cracked porcelain, moth-eaten fabric, chipped paint, cobwebs and dusty floorboards.',
+      camera_and_composition:
+        'Low angle across the attic floor with toys in rows facing the subject.',
+      atmosphere_and_mood: 'Nostalgic, patient and menacing, forgotten things that remember.',
+      rendering_and_quality:
+        'Detailed painterly realism with dust particles and subtle eerie arrangement.',
+      creative_brief:
+        "Attic toy menace: dusty attics of forgotten dolls, wind-up animals and rocking horses, arranged as if they have been waiting for someone to come back. Carry it through forgotten toys, rows facing the viewer, dusty beam, cracked porcelain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'forgotten toys; rows facing the viewer; dusty beam; cracked porcelain',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP24-017',
+    name: 'Mirror-Maze Identity',
+    displayName: 'Mirror-Maze Identity',
+    styleAnchors: ['Mirror-Maze Identity', 'fragmented reflection dread', 'infinite reflections'],
+    category: '1. Psychological Horror Aesthetics',
+    domain: 'fragmented reflection dread',
+    negativePrompt:
+      'single clean mirror, bright daylight, gore, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Mirror-maze identity: endless reflective corridors where a figure multiplies into countless copies, a few of them moving on their own.',
+      subject_treatment:
+        "Place the prompt's subject inside a maze of mirrors, keeping the real subject clear among its many reflections.",
+      color_and_tone:
+        'Cold silver, smoky grey and dim carnival colors reflected and fading into darkness.',
+      lighting_and_shadow:
+        'Scattered bulbs multiplied into infinite rows, with darkness between reflections.',
+      texture_and_material:
+        'Old mirror glass with foxing, scratched silvering, dusty frames and fingerprints.',
+      camera_and_composition:
+        'Repeating reflections receding into infinity, the real figure near center.',
+      atmosphere_and_mood: 'Disorienting, lonely and uncanny, not all reflections obey.',
+      rendering_and_quality:
+        'Precise reflective painting with subtle inconsistencies among copies.',
+      creative_brief:
+        "Mirror-maze identity: endless reflective corridors where a figure multiplies into countless copies, a few of them moving on their own. Carry it through infinite reflections, foxed mirror glass, disobedient copies, carnival bulbs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'infinite reflections; foxed mirror glass; disobedient copies; carnival bulbs',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP24-018',
+    name: 'Darkroom Safelight Reveal',
+    displayName: 'Darkroom Safelight Reveal',
+    styleAnchors: ['Darkroom Safelight Reveal', 'red safelight photo dread', 'red safelight'],
+    category: '1. Psychological Horror Aesthetics',
+    domain: 'red safelight photo dread',
+    negativePrompt:
+      'full color daylight, digital screens, gore, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Darkroom safelight reveal: a photographic darkroom bathed in red safelight, prints slowly developing in trays to show things that were not there when the photo was taken.',
+      subject_treatment:
+        "Place the prompt's subject in or on prints developing in a red-lit darkroom, keeping it readable in the monochrome red glow.",
+      color_and_tone: 'Deep safelight red and black, with pale developing prints glowing faintly.',
+      lighting_and_shadow:
+        'Single red safelight, glossy reflections on wet trays and deep black corners.',
+      texture_and_material:
+        'Chemical trays, dripping prints on lines, wet paper sheen and enlarger metal.',
+      camera_and_composition:
+        'Close framing on trays and hanging prints, with the darkroom disappearing into black.',
+      atmosphere_and_mood: 'Tense, investigative and eerie, the truth slowly appearing.',
+      rendering_and_quality: 'Moody monochrome red painterly rendering with wet reflections.',
+      creative_brief:
+        "Darkroom safelight reveal: a photographic darkroom bathed in red safelight, prints slowly developing in trays to show things that were not there when the photo was taken. Carry it through red safelight, developing prints, hanging wet photos, black corners. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'red safelight; developing prints; hanging wet photos; black corners',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP24-019',
+    name: 'Sleep-Paralysis Bedside',
+    displayName: 'Sleep-Paralysis Bedside',
+    styleAnchors: ['Sleep-Paralysis Bedside', 'bedroom night paralysis dread', 'pillow-level view'],
+    category: '1. Psychological Horror Aesthetics',
+    domain: 'bedroom night paralysis dread',
+    negativePrompt:
+      'gore, monster close-up, bright light, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Sleep-paralysis bedside: a dim bedroom seen from the pillow at night, the familiar room stretched and heavy while a shadowed presence waits at the edge of vision.',
+      subject_treatment:
+        "Show the prompt's subject in a dark bedroom from a low bed-level view, keeping it clear while a vague presence hovers at the edge.",
+      color_and_tone:
+        'Deep navy, charcoal and faint moonlight grey with a weak warm glow from a streetlight.',
+      lighting_and_shadow:
+        'Moonlight and streetlight slats, shadows too dense in the corners and doorways.',
+      texture_and_material:
+        'Crumpled sheets, heavy blankets, grainy darkness and softly warped furniture.',
+      camera_and_composition:
+        'Low pillow-level view with the ceiling and doorway looming, slightly distorted perspective.',
+      atmosphere_and_mood: 'Heavy, helpless and suffocating, awake but unable to move.',
+      rendering_and_quality:
+        'Soft grainy painterly darkness with subtle distortion and blur at the edges.',
+      creative_brief:
+        "Sleep-paralysis bedside: a dim bedroom seen from the pillow at night, the familiar room stretched and heavy while a shadowed presence waits at the edge of vision. Carry it through pillow-level view, heavy dark corners, shadowed presence, warped room. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'pillow-level view; heavy dark corners; shadowed presence; warped room',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP24-020',
+    name: 'Deep-Sea Pressure Dread',
+    displayName: 'Deep-Sea Pressure Dread',
+    styleAnchors: ['Deep-Sea Pressure Dread', 'deep sea interior dread', 'cramped submersible'],
+    category: '1. Psychological Horror Aesthetics',
+    domain: 'deep sea interior dread',
+    negativePrompt:
+      'bright tropical reef, gore, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Deep-sea pressure dread: cramped submersible interiors and black ocean depths, riveted hulls creaking while vast unseen shapes pass beyond tiny portholes.',
+      subject_treatment:
+        "Place the prompt's subject inside or just outside a deep-sea vessel, keeping it clear in a small pool of light surrounded by black water.",
+      color_and_tone:
+        'Black ocean blue, rusted brass, dim green instrument glow and pale headlamp beams.',
+      lighting_and_shadow:
+        'Tiny pools of light, instrument glow and headlamp beams dissolving into total darkness.',
+      texture_and_material:
+        'Riveted steel, condensation, brass gauges, thick porthole glass and drifting particles.',
+      camera_and_composition:
+        'Claustrophobic interiors or small lit figures against enormous black water.',
+      atmosphere_and_mood: 'Crushing, silent and immense, something large is passing.',
+      rendering_and_quality:
+        'Dark painterly realism with precise small highlights and heavy darkness.',
+      creative_brief:
+        "Deep-sea pressure dread: cramped submersible interiors and black ocean depths, riveted hulls creaking while vast unseen shapes pass beyond tiny portholes. Carry it through cramped submersible, tiny portholes, black depths, passing unseen shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'cramped submersible; tiny portholes; black depths; passing unseen shapes',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP24-021',
+    name: 'Ash-Snow Suburb',
+    displayName: 'Ash-Snow Suburb',
+    styleAnchors: ['Ash-Snow Suburb', 'burned suburb aftermath dread', 'ash falling like snow'],
+    category: '1. Psychological Horror Aesthetics',
+    domain: 'burned suburb aftermath dread',
+    negativePrompt:
+      'active flames, gore, blue clear sky, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Ash-snow suburb: a quiet suburban street after a distant fire, grey ash falling like snow onto lawns, cars and swings, the sky a muted orange.',
+      subject_treatment:
+        "Place the prompt's subject on an ash-covered suburban street, keeping it clear under the falling grey flakes.",
+      color_and_tone:
+        'Ash grey, faded pastel houses and a muted smoky orange sky with no clear sun.',
+      lighting_and_shadow: 'Diffused orange haze, no sharp shadows, faint glow on the horizon.',
+      texture_and_material:
+        'Soft ash layers on lawns and cars, falling flakes, faded paint and still air.',
+      camera_and_composition: 'Wide quiet street views with rows of houses fading into haze.',
+      atmosphere_and_mood: 'Muted, eerie and elegiac, ordinary life stopped mid-afternoon.',
+      rendering_and_quality: 'Soft hazy painterly realism with gentle falling particles.',
+      creative_brief:
+        "Ash-snow suburb: a quiet suburban street after a distant fire, grey ash falling like snow onto lawns, cars and swings, the sky a muted orange. Carry it through ash falling like snow, muted orange sky, silent suburb, faded houses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'ash falling like snow; muted orange sky; silent suburb; faded houses',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP24-022',
+    name: 'Static-Glow Television Room',
+    displayName: 'Static-Glow Television Room',
+    styleAnchors: [
+      'Static-Glow Television Room',
+      'television static dread',
+      'television static glow',
+    ],
+    category: '1. Psychological Horror Aesthetics',
+    domain: 'television static dread',
+    negativePrompt:
+      'bright daylight, readable screen content, gore, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Static-glow television room: a dark room lit only by an old television showing static, the grey light flickering over furniture and faces.',
+      subject_treatment:
+        "Light the prompt's subject only by television static in a dark room, keeping it readable in the cold flickering glow.",
+      color_and_tone:
+        'Cold blue-grey static light against deep black, with faint warm tones in the far background.',
+      lighting_and_shadow:
+        'Flickering screen light from one direction, sharp dark shadows cast behind every object.',
+      texture_and_material:
+        'Screen snow, curved glass, dusty cabinets, patterned upholstery and grainy darkness.',
+      camera_and_composition:
+        'Television in frame or just off it, with the room disappearing into darkness.',
+      atmosphere_and_mood: 'Lonely, hypnotic and uneasy, something wants to come through.',
+      rendering_and_quality:
+        'Grainy painterly rendering with flickering light falloff and deep black corners.',
+      creative_brief:
+        "Static-glow television room: a dark room lit only by an old television showing static, the grey light flickering over furniture and faces. Carry it through television static glow, flickering shadows, dark room, curved screen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'television static glow; flickering shadows; dark room; curved screen',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

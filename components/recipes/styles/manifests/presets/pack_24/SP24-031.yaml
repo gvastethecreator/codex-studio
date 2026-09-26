@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP24-031
+packId: pack_24
+name: Salt-Flat Signal Post
+styleAnchors:
+  - Salt-Flat Signal Post
+  - lone salt flat outpost
+  - mirror salt flat
+displayName: Salt-Flat Signal Post
+category: 2. Tactical & Solitary Frontiers
+domain: lone salt flat outpost
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - tactical-and-solitary-frontiers
+  - salt-flat
+  - art-direction
+  - frontier
+visualDna:
+  aesthetic: 'Salt-flat signal post: a lonely antenna and caravan on mirror-flat white salt, painted in minimal pale tones where sky and ground reflect each other.'
+  subject_treatment: Place the prompt's subject on a vast mirror-like salt flat, keeping it clear with its reflection beneath.
+  color_and_tone: Brilliant white salt, pale sky blue and pink dawn tones mirrored below.
+  lighting_and_shadow: Soft wide sky light with perfect reflections and faint shadows.
+  texture_and_material: Cracked hexagonal salt crust, thin water sheen, weathered metal antenna.
+  camera_and_composition: Horizon in the center, subject and reflection mirrored top and bottom.
+  atmosphere_and_mood: Minimal, surreal and lonely, a signal sent into emptiness.
+  rendering_and_quality: Clean minimal painting with precise mirror reflections and calm.
+  creative_brief: "Salt-flat signal post: a lonely antenna and caravan on mirror-flat white salt, painted in minimal pale tones where sky and ground reflect each other. Carry it through mirror salt flat, lone antenna, perfect reflection, hexagonal crust. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: mirror salt flat; lone antenna; perfect reflection; hexagonal crust
+avoidRules:
+  - crowds
+  - dense forest
+  - gore
+  - real military insignia
+  - real brand or company logo
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: crowds, dense forest, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_24
+  packName: Psychological & Frontier Aesthetics
+  categoryId: tactical-and-solitary-frontiers
+  categoryName: 2. Tactical & Solitary Frontiers
+  tags:
+    - curation-v2
+    - tactical-and-solitary-frontiers
+    - salt-flat
+    - art-direction
+    - frontier
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: lone salt flat outpost

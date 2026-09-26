@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP24-024
+packId: pack_24
+name: Desert Long-Haul Courier
+styleAnchors:
+  - Desert Long-Haul Courier
+  - lone desert haulage
+  - lone desert haul
+displayName: Desert Long-Haul Courier
+category: 2. Tactical & Solitary Frontiers
+domain: lone desert haulage
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - tactical-and-solitary-frontiers
+  - desert-courier
+  - art-direction
+  - frontier
+visualDna:
+  aesthetic: 'Desert long-haul courier: a single battered truck or walker crossing enormous dune seas, painted in heat-shimmer ochres with dust trailing for miles.'
+  subject_treatment: Put the prompt's subject on a long lonely desert haul, keeping it clear against dunes, dust and shimmering heat.
+  color_and_tone: Burnt ochre, sand gold and bleached blue sky with violet distant ridges.
+  lighting_and_shadow: Harsh overhead sun, short black shadows and shimmering heat haze on the horizon.
+  texture_and_material: Wind-rippled sand, sun-bleached metal, dust plumes and cracked leather.
+  camera_and_composition: Wide low horizons with the courier small and dust trails leading the eye.
+  atmosphere_and_mood: Determined, parched and solitary, the delivery must arrive.
+  rendering_and_quality: Sunbaked painterly realism with heat shimmer and fine dust.
+  creative_brief: "Desert long-haul courier: a single battered truck or walker crossing enormous dune seas, painted in heat-shimmer ochres with dust trailing for miles. Carry it through lone desert haul, heat shimmer, dust plumes, bleached sky. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: lone desert haul; heat shimmer; dust plumes; bleached sky
+avoidRules:
+  - lush greenery
+  - gore
+  - real military insignia
+  - real brand or company logo
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: lush greenery, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_24
+  packName: Psychological & Frontier Aesthetics
+  categoryId: tactical-and-solitary-frontiers
+  categoryName: 2. Tactical & Solitary Frontiers
+  tags:
+    - curation-v2
+    - tactical-and-solitary-frontiers
+    - desert-courier
+    - art-direction
+    - frontier
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: lone desert haulage

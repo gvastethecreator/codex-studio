@@ -15,9 +15,10 @@ tags:
   - 'silent hill 4: the room'
   - full-style
   - visual-evaluation-pending
+  - reference-title
 visualDna:
   aesthetic: >-
-    Silent Hill 4: The Room (2004) psychological-horror art direction: ordinary closed domestic
+    Mid-2000s apartment-bound psychological-horror art direction: ordinary closed domestic
     space turns subtly bodily and hostile, with compressed perspective and sickly analog tonal
     instability.
   subject_treatment: >-
@@ -47,13 +48,17 @@ avoidRules:
   - generic neutral rendering that removes the reference visual grammar
   - unrequested franchise characters, logos or exact scene copies
   - interface overlays, text or frames unless requested
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP24-004.webp
 attributes:
   negativePrompt: >-
     overriding explicitly requested subject, action, identity, count or camera, generic neutral
     rendering that removes the reference visual grammar, unrequested franchise characters, logos or
-    exact scene copies, interface overlays, text or frames unless requested
+    exact scene copies, interface overlays, text or frames unless requested, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: 'SILENT HILL 4: The Room (Original release (2004))'
   pairedPresetId: SP12-096
   sourceReferences:
@@ -104,6 +109,7 @@ taxonomy:
     - 'silent hill 4: the room'
     - full-style
     - visual-evaluation-pending
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

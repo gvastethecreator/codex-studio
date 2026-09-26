@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP24-008
+packId: pack_24
+name: Tape-Worn Living Room
+styleAnchors:
+  - Tape-Worn Living Room
+  - degraded home video dread
+  - tape noise and tracking lines
+displayName: Tape-Worn Living Room
+category: 1. Psychological Horror Aesthetics
+domain: degraded home video dread
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - psychological-horror-aesthetics
+  - tape-worn
+  - art-direction
+  - psychological-horror
+visualDna:
+  aesthetic: 'Tape-worn living room: ordinary family interiors seen as if through a worn home videotape, with color bleed, soft smear and wrongness hiding in the noise.'
+  subject_treatment: Show the prompt's subject in a domestic interior as a worn tape frame, keeping it readable through smear while something uncanny hides in the noise.
+  color_and_tone: Faded browns and oranges, oversaturated reds, bleeding chroma and washed-out highlights.
+  lighting_and_shadow: Harsh on-camera lamp light, blown highlights and murky crushed shadows in the corners.
+  texture_and_material: Tape noise, horizontal tracking lines, soft smear, wood paneling, shag carpet and patterned sofas.
+  camera_and_composition: Handheld home-video framing, slightly tilted, with doorways and dark hallways at the edges.
+  atmosphere_and_mood: Nostalgic and wrong, a family memory that should not exist.
+  rendering_and_quality: Degraded analog video look with believable smear and noise, never clean digital.
+  creative_brief: "Tape-worn living room: ordinary family interiors seen as if through a worn home videotape, with color bleed, soft smear and wrongness hiding in the noise. Carry it through tape noise and tracking lines, chroma bleed, wood-paneled rooms, hidden wrongness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: tape noise and tracking lines; chroma bleed; wood-paneled rooms; hidden wrongness
+avoidRules:
+  - clean digital sharpness
+  - modern interior design
+  - gore
+  - graphic wounds
+  - jump-scare monster close-up
+  - franchise creature design
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: clean digital sharpness, modern interior design, gore, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_24
+  packName: Psychological & Frontier Aesthetics
+  categoryId: psychological-horror-aesthetics
+  categoryName: 1. Psychological Horror Aesthetics
+  tags:
+    - curation-v2
+    - psychological-horror-aesthetics
+    - tape-worn
+    - art-direction
+    - psychological-horror
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: degraded home video dread

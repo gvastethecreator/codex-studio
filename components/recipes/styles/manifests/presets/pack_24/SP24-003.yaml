@@ -15,9 +15,10 @@ tags:
   - silent hill 2
   - full-style
   - visual-evaluation-pending
+  - reference-title
 visualDna:
   aesthetic: >-
-    Silent Hill 2 (2024) psychological art direction as naturalistic concept painting: intimate
+    Remake-era psychological-horror art direction as naturalistic concept painting: intimate
     human detail against damp, oppressive ordinary spaces and dense low-visibility atmosphere.
   subject_treatment: >-
     Preserve identity and action; give the subject contemporary skin, hair, cloth, and silhouette
@@ -46,13 +47,17 @@ avoidRules:
   - generic neutral rendering that removes the reference visual grammar
   - unrequested franchise characters, logos or exact scene copies
   - interface overlays, text or frames unless requested
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP24-003.webp
 attributes:
   negativePrompt: >-
     overriding explicitly requested subject, action, identity, count or camera, generic neutral
     rendering that removes the reference visual grammar, unrequested franchise characters, logos or
-    exact scene copies, interface overlays, text or frames unless requested
+    exact scene copies, interface overlays, text or frames unless requested, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: SILENT HILL 2 (Remake (2024))
   pairedPresetId: SP12-095
   sourceReferences:
@@ -109,6 +114,7 @@ taxonomy:
     - silent hill 2
     - full-style
     - visual-evaluation-pending
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

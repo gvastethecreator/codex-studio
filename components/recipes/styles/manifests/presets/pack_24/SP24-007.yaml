@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP24-007
+packId: pack_24
+name: Clinical Pastel Unease
+styleAnchors:
+  - Clinical Pastel Unease
+  - sterile pastel institution dread
+  - pastel institutional palette
+displayName: Clinical Pastel Unease
+category: 1. Psychological Horror Aesthetics
+domain: sterile pastel institution dread
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - psychological-horror-aesthetics
+  - clinical-pastel
+  - art-direction
+  - psychological-horror
+visualDna:
+  aesthetic: 'Clinical pastel unease: soft mint, pale pink and hospital cream spaces lit by humming fluorescents, where calm institutional order hides something quietly wrong.'
+  subject_treatment: Place the prompt's subject in a clean pastel institutional space, keeping it clear while one small detail sits wrong in the orderly scene.
+  color_and_tone: Mint green, pale pink, cream and chrome with sickly fluorescent tints and very little shadow contrast.
+  lighting_and_shadow: Flat overhead fluorescent light, faint flicker and pale shadows directly beneath objects.
+  texture_and_material: Glossy vinyl floors, painted metal, laminated surfaces and crisp linen with faint stains.
+  camera_and_composition: Symmetrical corridors and rooms with long vanishing points and too much empty floor.
+  atmosphere_and_mood: Calm on the surface, deeply unsettling underneath, a clean nightmare.
+  rendering_and_quality: Smooth clean painterly rendering with precise edges and subdued detail.
+  creative_brief: "Clinical pastel unease: soft mint, pale pink and hospital cream spaces lit by humming fluorescents, where calm institutional order hides something quietly wrong. Carry it through pastel institutional palette, humming fluorescents, symmetry, one wrong detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: pastel institutional palette; humming fluorescents; symmetry; one wrong detail
+avoidRules:
+  - warm cozy lighting
+  - high contrast shadows
+  - gore
+  - graphic wounds
+  - jump-scare monster close-up
+  - franchise creature design
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: warm cozy lighting, high contrast shadows, gore, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_24
+  packName: Psychological & Frontier Aesthetics
+  categoryId: psychological-horror-aesthetics
+  categoryName: 1. Psychological Horror Aesthetics
+  tags:
+    - curation-v2
+    - psychological-horror-aesthetics
+    - clinical-pastel
+    - art-direction
+    - psychological-horror
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: sterile pastel institution dread

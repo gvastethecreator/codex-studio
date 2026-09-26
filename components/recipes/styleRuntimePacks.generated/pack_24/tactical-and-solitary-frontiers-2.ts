@@ -8,10 +8,10 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Metal Gear — Tactical Brushwork',
     category: '2. Tactical & Solitary Frontiers',
     negativePrompt:
-      'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested',
+      'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Metal Gear concept-illustration language, paired with MGS3 fieldcraft: expressive brush-ink silhouettes, interrupted contours, dry-brush drag and sparse translucent color over confident tactical design.',
+        'Cold War tactical concept-illustration language with jungle fieldcraft: expressive brush-ink silhouettes, interrupted contours, dry-brush drag and sparse translucent color over confident tactical design.',
       subject_treatment:
         'Preserve explicit identity and action. Shape anatomy and mechanical forms with tapering black gestures, selected precise joints and unresolved edges; unspecified equipment has practical military-industrial construction.',
       color_and_tone:
@@ -37,10 +37,10 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Death Stranding — Industrial Sublime',
     category: '2. Tactical & Solitary Frontiers',
     negativePrompt:
-      'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested',
+      'overriding explicitly requested subject, action, identity, count or camera, generic neutral rendering that removes the reference visual grammar, unrequested franchise characters, logos or exact scene copies, interface overlays, text or frames unless requested, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
-        'Death Stranding (2019) art direction as environmental concept painting: immense wet volcanic space contrasted with small precise industrial systems, burdened human scale and uncanny traces of connection.',
+        'Post-collapse courier-journey art direction as environmental concept painting: immense wet volcanic space contrasted with small precise industrial systems, burdened human scale and uncanny traces of connection.',
       subject_treatment:
         'Preserve explicit subject and action. Unspecified designs contrast soft weatherproof forms with modular hard equipment, tensioned straps and narrow technical accents; make carried weight and balance credible.',
       color_and_tone:
@@ -59,6 +59,571 @@ export const GENERATED_STYLE_PRESETS = [
     ui: {
       kind: 'full_style',
       visualEvaluation: 'pending',
+    },
+  },
+  {
+    id: 'SP24-023',
+    name: 'Arctic Weather-Station Solitude',
+    displayName: 'Arctic Weather-Station Solitude',
+    styleAnchors: [
+      'Arctic Weather-Station Solitude',
+      'polar outpost solitude',
+      'tiny polar outpost',
+    ],
+    category: '2. Tactical & Solitary Frontiers',
+    domain: 'polar outpost solitude',
+    negativePrompt:
+      'tropical scenery, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Arctic weather-station solitude: a tiny research hut and instrument masts on endless white ice, painted in cold gouache with one warm window glowing.',
+      subject_treatment:
+        "Place the prompt's subject at or near a lonely polar outpost, keeping it clear against vast white ice and pale sky.",
+      color_and_tone:
+        'Icy blues and whites, pale lilac shadows and a single warm amber window glow.',
+      lighting_and_shadow:
+        'Low polar sun or long twilight, soft blue shadows stretching across the snow.',
+      texture_and_material:
+        'Matte gouache snow, wind-carved drifts, frosted masts and weathered hut panels.',
+      camera_and_composition: 'Very wide frames with a tiny outpost against a huge empty horizon.',
+      atmosphere_and_mood:
+        'Quiet, cold and devoted, one person keeping watch at the edge of the world.',
+      rendering_and_quality:
+        'Clean matte gouache painting with crisp shapes and soft snow gradients.',
+      creative_brief:
+        "Arctic weather-station solitude: a tiny research hut and instrument masts on endless white ice, painted in cold gouache with one warm window glowing. Carry it through tiny polar outpost, endless ice, warm window glow, long blue shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'tiny polar outpost; endless ice; warm window glow; long blue shadows',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP24-024',
+    name: 'Desert Long-Haul Courier',
+    displayName: 'Desert Long-Haul Courier',
+    styleAnchors: ['Desert Long-Haul Courier', 'lone desert haulage', 'lone desert haul'],
+    category: '2. Tactical & Solitary Frontiers',
+    domain: 'lone desert haulage',
+    negativePrompt:
+      'lush greenery, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Desert long-haul courier: a single battered truck or walker crossing enormous dune seas, painted in heat-shimmer ochres with dust trailing for miles.',
+      subject_treatment:
+        "Put the prompt's subject on a long lonely desert haul, keeping it clear against dunes, dust and shimmering heat.",
+      color_and_tone: 'Burnt ochre, sand gold and bleached blue sky with violet distant ridges.',
+      lighting_and_shadow:
+        'Harsh overhead sun, short black shadows and shimmering heat haze on the horizon.',
+      texture_and_material:
+        'Wind-rippled sand, sun-bleached metal, dust plumes and cracked leather.',
+      camera_and_composition:
+        'Wide low horizons with the courier small and dust trails leading the eye.',
+      atmosphere_and_mood: 'Determined, parched and solitary, the delivery must arrive.',
+      rendering_and_quality: 'Sunbaked painterly realism with heat shimmer and fine dust.',
+      creative_brief:
+        "Desert long-haul courier: a single battered truck or walker crossing enormous dune seas, painted in heat-shimmer ochres with dust trailing for miles. Carry it through lone desert haul, heat shimmer, dust plumes, bleached sky. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'lone desert haul; heat shimmer; dust plumes; bleached sky',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP24-025',
+    name: 'Orbital Lone Maintenance',
+    displayName: 'Orbital Lone Maintenance',
+    styleAnchors: [
+      'Orbital Lone Maintenance',
+      'solo orbital repair work',
+      'tethered lone technician',
+    ],
+    category: '2. Tactical & Solitary Frontiers',
+    domain: 'solo orbital repair work',
+    negativePrompt:
+      'atmospheric haze in space, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Orbital lone maintenance: a single technician tethered to a vast silent structure in orbit, rendered in crisp technical illustration with the planet turning below.',
+      subject_treatment:
+        "Place the prompt's subject on or near an orbital structure, keeping it clear against black space and the curve of a planet.",
+      color_and_tone:
+        'Stark white suits, black space, blue planet glow and small orange warning lights.',
+      lighting_and_shadow:
+        'Unfiltered sunlight with razor shadows and soft planet bounce from below.',
+      texture_and_material:
+        'Scuffed suit fabric, insulation foil, tether cables, bolts and solar panels.',
+      camera_and_composition:
+        'The technician small on a huge structure, planet curve filling part of the frame.',
+      atmosphere_and_mood: 'Silent, focused and precarious, one bolt at a time above the world.',
+      rendering_and_quality: 'Crisp technical illustration with precise hardware and clean light.',
+      creative_brief:
+        "Orbital lone maintenance: a single technician tethered to a vast silent structure in orbit, rendered in crisp technical illustration with the planet turning below. Carry it through tethered lone technician, vast orbital structure, planet curve, razor sunlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features:
+        'tethered lone technician; vast orbital structure; planet curve; razor sunlight',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP24-026',
+    name: 'Whiteout Mountain Rescue',
+    displayName: 'Whiteout Mountain Rescue',
+    styleAnchors: [
+      'Whiteout Mountain Rescue',
+      'alpine rescue in whiteout',
+      'whiteout blending snow and sky',
+    ],
+    category: '2. Tactical & Solitary Frontiers',
+    domain: 'alpine rescue in whiteout',
+    negativePrompt:
+      'clear blue sky, summer, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Whiteout mountain rescue: rescuers roped together on a storm-blasted ridge, painted in near-white charcoal and chalk where snow and sky merge.',
+      subject_treatment:
+        "Put the prompt's subject into an alpine whiteout, keeping it readable as a dark shape inside swirling snow.",
+      color_and_tone: 'Near-white greys, charcoal silhouettes and a single red jacket or flare.',
+      lighting_and_shadow:
+        'Flat diffused whiteout light with almost no shadows and a glowing flare.',
+      texture_and_material:
+        'Charcoal smudges, chalk snow, frozen rope, ice-crusted clothing and wind streaks.',
+      camera_and_composition:
+        'Figures roped in a line along a diagonal ridge, horizon lost in white.',
+      atmosphere_and_mood: 'Urgent, brave and disoriented, holding the rope in nothing.',
+      rendering_and_quality: 'Expressive charcoal and chalk drawing with strong wind direction.',
+      creative_brief:
+        "Whiteout mountain rescue: rescuers roped together on a storm-blasted ridge, painted in near-white charcoal and chalk where snow and sky merge. Carry it through whiteout blending snow and sky, roped rescuers, red accent, wind streaks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'whiteout blending snow and sky; roped rescuers; red accent; wind streaks',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP24-027',
+    name: 'Fire-Lookout Tower Vigil',
+    displayName: 'Fire-Lookout Tower Vigil',
+    styleAnchors: [
+      'Fire-Lookout Tower Vigil',
+      'wildfire lookout solitude',
+      'lookout tower above forest',
+    ],
+    category: '2. Tactical & Solitary Frontiers',
+    domain: 'wildfire lookout solitude',
+    negativePrompt:
+      'close flames engulfing, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Fire-lookout tower vigil: a lone watcher in a glass cabin atop a tower above endless forest, painted in warm gouache with smoke columns on the horizon.',
+      subject_treatment:
+        "Place the prompt's subject in or around a forest lookout tower, keeping it clear above a sea of treetops.",
+      color_and_tone: 'Deep forest greens, amber sunset, violet smoke and warm cabin light.',
+      lighting_and_shadow: 'Golden low sun, long tree shadows and a smoky glow on the horizon.',
+      texture_and_material: 'Weathered timber, cabin glass, pine needles and soft smoke plumes.',
+      camera_and_composition: 'Tower rising above forest, horizon high with distant smoke columns.',
+      atmosphere_and_mood: 'Watchful, peaceful and uneasy, beauty with danger far away.',
+      rendering_and_quality: 'Warm painterly gouache with soft atmospheric depth and haze.',
+      creative_brief:
+        "Fire-lookout tower vigil: a lone watcher in a glass cabin atop a tower above endless forest, painted in warm gouache with smoke columns on the horizon. Carry it through lookout tower above forest, distant smoke columns, glass cabin, long sunset. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'lookout tower above forest; distant smoke columns; glass cabin; long sunset',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP24-028',
+    name: 'Deep-Cave Survey Lamp',
+    displayName: 'Deep-Cave Survey Lamp',
+    styleAnchors: ['Deep-Cave Survey Lamp', 'lone cave surveying', 'single headlamp beam'],
+    category: '2. Tactical & Solitary Frontiers',
+    domain: 'lone cave surveying',
+    negativePrompt:
+      'daylight, crowded tourists, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Deep-cave survey lamp: a lone surveyor mapping enormous underground chambers by helmet lamp, painted in dense ink wash where light barely reaches.',
+      subject_treatment:
+        "Place the prompt's subject deep underground in a small headlamp pool, keeping it clear inside immense darkness.",
+      color_and_tone: 'Near-black ink wash, warm headlamp yellow and faint mineral glints.',
+      lighting_and_shadow: 'Single headlamp beam, small pools of light and total darkness beyond.',
+      texture_and_material:
+        'Wet limestone, flowstone, rope, mud-caked coveralls and dripping water.',
+      camera_and_composition: 'Tiny lit figure within vast dark chambers, scale shown by the beam.',
+      atmosphere_and_mood:
+        'Awestruck, careful and lonely, the first light in a place that never saw any.',
+      rendering_and_quality: 'Dense ink-wash painting with precise small warm highlights.',
+      creative_brief:
+        "Deep-cave survey lamp: a lone surveyor mapping enormous underground chambers by helmet lamp, painted in dense ink wash where light barely reaches. Carry it through single headlamp beam, immense cave darkness, wet stone, tiny surveyor. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'single headlamp beam; immense cave darkness; wet stone; tiny surveyor',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP24-029',
+    name: 'Submarine Night Watch',
+    displayName: 'Submarine Night Watch',
+    styleAnchors: ['Submarine Night Watch', 'red-lit submarine watch', 'red night lighting'],
+    category: '2. Tactical & Solitary Frontiers',
+    domain: 'red-lit submarine watch',
+    negativePrompt:
+      'daylight, spacious rooms, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Submarine night watch: a single sailor on watch in a cramped red-lit control room, painted in tight chiaroscuro with gauges glowing in the gloom.',
+      subject_treatment:
+        "Place the prompt's subject inside a cramped red-lit vessel interior, keeping it clear among pipes and glowing gauges.",
+      color_and_tone: 'Deep red night lighting, black shadows and faint green instrument glow.',
+      lighting_and_shadow: 'Red lamps and instrument glow, heavy chiaroscuro with faces half lit.',
+      texture_and_material: 'Painted steel, valves, cables, condensation and worn wool sweaters.',
+      camera_and_composition:
+        'Tight claustrophobic framing with pipes and equipment crowding the edges.',
+      atmosphere_and_mood: 'Tense, quiet and focused, listening to the dark sea.',
+      rendering_and_quality: 'Moody chiaroscuro painting with crisp glowing instrument highlights.',
+      creative_brief:
+        "Submarine night watch: a single sailor on watch in a cramped red-lit control room, painted in tight chiaroscuro with gauges glowing in the gloom. Carry it through red night lighting, cramped control room, glowing gauges, lone watcher. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'red night lighting; cramped control room; glowing gauges; lone watcher',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP24-030',
+    name: 'Tundra Trapper Cabin',
+    displayName: 'Tundra Trapper Cabin',
+    styleAnchors: ['Tundra Trapper Cabin', 'lone northern cabin life', 'lone log cabin'],
+    category: '2. Tactical & Solitary Frontiers',
+    domain: 'lone northern cabin life',
+    negativePrompt:
+      'summer, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Tundra trapper cabin: a single log cabin on endless snowy tundra, painted in muted oil with smoke rising and snowshoe tracks leading away.',
+      subject_treatment:
+        "Place the prompt's subject around a remote snowy cabin, keeping it clear in the muted winter landscape.",
+      color_and_tone: 'Muted whites, slate blues, dark spruce and warm brown log walls.',
+      lighting_and_shadow:
+        'Low winter light, soft blue shadows and a warm glow from the cabin window.',
+      texture_and_material: 'Rough logs, snow drifts, furs, frosted windows and woodsmoke.',
+      camera_and_composition: 'Small cabin in a wide snowy expanse, tracks leading the eye.',
+      atmosphere_and_mood: 'Self-reliant, quiet and cold, a life measured in firewood.',
+      rendering_and_quality: 'Muted oil painting with soft snow and textured brushwork.',
+      creative_brief:
+        "Tundra trapper cabin: a single log cabin on endless snowy tundra, painted in muted oil with smoke rising and snowshoe tracks leading away. Carry it through lone log cabin, snowy tundra, snowshoe tracks, woodsmoke. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'lone log cabin; snowy tundra; snowshoe tracks; woodsmoke',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP24-031',
+    name: 'Salt-Flat Signal Post',
+    displayName: 'Salt-Flat Signal Post',
+    styleAnchors: ['Salt-Flat Signal Post', 'lone salt flat outpost', 'mirror salt flat'],
+    category: '2. Tactical & Solitary Frontiers',
+    domain: 'lone salt flat outpost',
+    negativePrompt:
+      'crowds, dense forest, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Salt-flat signal post: a lonely antenna and caravan on mirror-flat white salt, painted in minimal pale tones where sky and ground reflect each other.',
+      subject_treatment:
+        "Place the prompt's subject on a vast mirror-like salt flat, keeping it clear with its reflection beneath.",
+      color_and_tone: 'Brilliant white salt, pale sky blue and pink dawn tones mirrored below.',
+      lighting_and_shadow: 'Soft wide sky light with perfect reflections and faint shadows.',
+      texture_and_material:
+        'Cracked hexagonal salt crust, thin water sheen, weathered metal antenna.',
+      camera_and_composition:
+        'Horizon in the center, subject and reflection mirrored top and bottom.',
+      atmosphere_and_mood: 'Minimal, surreal and lonely, a signal sent into emptiness.',
+      rendering_and_quality: 'Clean minimal painting with precise mirror reflections and calm.',
+      creative_brief:
+        "Salt-flat signal post: a lonely antenna and caravan on mirror-flat white salt, painted in minimal pale tones where sky and ground reflect each other. Carry it through mirror salt flat, lone antenna, perfect reflection, hexagonal crust. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'mirror salt flat; lone antenna; perfect reflection; hexagonal crust',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP24-032',
+    name: 'Storm-Rig Night Shift',
+    displayName: 'Storm-Rig Night Shift',
+    styleAnchors: ['Storm-Rig Night Shift', 'offshore rig in storm', 'offshore rig'],
+    category: '2. Tactical & Solitary Frontiers',
+    domain: 'offshore rig in storm',
+    negativePrompt:
+      'calm sea, daylight, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Storm-rig night shift: an offshore platform battered by black waves at night, painted in heavy wet oils with sodium floodlights and flying spray.',
+      subject_treatment:
+        "Place the prompt's subject on a storm-lashed offshore platform, keeping it clear under floodlights and spray.",
+      color_and_tone: 'Black water, steel grey, sodium orange floodlights and white spray.',
+      lighting_and_shadow:
+        'Harsh floodlights cutting through rain and spray, deep darkness beyond.',
+      texture_and_material: 'Wet steel grating, rust, safety orange gear, flying spray and rain.',
+      camera_and_composition: 'Low angles on the rig with towering waves and dramatic diagonals.',
+      atmosphere_and_mood:
+        'Relentless, dangerous and defiant, the night shift continues regardless.',
+      rendering_and_quality: 'Heavy wet oil painting with bold light and spray effects.',
+      creative_brief:
+        "Storm-rig night shift: an offshore platform battered by black waves at night, painted in heavy wet oils with sodium floodlights and flying spray. Carry it through offshore rig, towering night waves, sodium floodlights, flying spray. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'offshore rig; towering night waves; sodium floodlights; flying spray',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP24-033',
+    name: 'Cold Checkpoint Night',
+    displayName: 'Cold Checkpoint Night',
+    styleAnchors: ['Cold Checkpoint Night', 'remote border post at night', 'remote barrier post'],
+    category: '2. Tactical & Solitary Frontiers',
+    domain: 'remote border post at night',
+    negativePrompt:
+      'national flags, readable signs, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Cold checkpoint night: a small barrier post on an empty frozen road, painted in graphic ink and flat color with one lamp and long shadows.',
+      subject_treatment:
+        "Place the prompt's subject at a remote nighttime road barrier, keeping it clear under a single lamp.",
+      color_and_tone: 'Ink black, cold blue snow and a single pool of sickly yellow lamplight.',
+      lighting_and_shadow: 'One lamp, long hard shadows and the dark forest beyond the barrier.',
+      texture_and_material:
+        'Striped barrier pole, frosted booth window, snowy road and heavy coats.',
+      camera_and_composition:
+        'Road vanishing into darkness, barrier and booth small in the lamplight.',
+      atmosphere_and_mood: 'Tense, bored and suspicious, waiting all night for headlights.',
+      rendering_and_quality: 'Graphic ink illustration with flat color and crisp shadows.',
+      creative_brief:
+        "Cold checkpoint night: a small barrier post on an empty frozen road, painted in graphic ink and flat color with one lamp and long shadows. Carry it through remote barrier post, single lamp, frozen road, long shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'remote barrier post; single lamp; frozen road; long shadows',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP24-034',
+    name: 'Rooftop Surveillance Night',
+    displayName: 'Rooftop Surveillance Night',
+    styleAnchors: ['Rooftop Surveillance Night', 'urban night recon', 'rooftop silhouette'],
+    category: '2. Tactical & Solitary Frontiers',
+    domain: 'urban night recon',
+    negativePrompt:
+      'daylight, readable signs, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Rooftop surveillance night: a lone observer watching a rain-slick city from rooftops, painted in noir gouache with neon reflections and deep silhouettes.',
+      subject_treatment:
+        "Place the prompt's subject on a nighttime rooftop above a city, keeping it clear as a strong silhouette.",
+      color_and_tone:
+        'Inky blues and blacks with neon magenta and teal reflections on wet surfaces.',
+      lighting_and_shadow:
+        'City glow from below, rim light on the silhouette and deep rooftop shadow.',
+      texture_and_material: 'Wet roof tar, rain, water tanks, antennas and binocular glass.',
+      camera_and_composition: 'Figure on a roof edge with the city spread below, strong diagonals.',
+      atmosphere_and_mood: 'Patient, watchful and alone, the city never notices.',
+      rendering_and_quality:
+        'Noir gouache painting with crisp silhouettes and glowing reflections.',
+      creative_brief:
+        "Rooftop surveillance night: a lone observer watching a rain-slick city from rooftops, painted in noir gouache with neon reflections and deep silhouettes. Carry it through rooftop silhouette, rain-slick city below, neon reflections, binoculars. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'rooftop silhouette; rain-slick city below; neon reflections; binoculars',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP24-035',
+    name: 'Surveyor Expedition Plates',
+    displayName: 'Surveyor Expedition Plates',
+    styleAnchors: [
+      'Surveyor Expedition Plates',
+      'lone survey expedition art',
+      'hand-colored plates',
+    ],
+    category: '2. Tactical & Solitary Frontiers',
+    domain: 'lone survey expedition art',
+    negativePrompt:
+      'photographic realism, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Surveyor expedition plates: a lone surveyor mapping wild frontier land, rendered like hand-colored expedition plates with fine line and pale washes.',
+      subject_treatment:
+        "Show the prompt's subject as part of a lonely surveying expedition scene, keeping it clear in fine line and pale wash.",
+      color_and_tone:
+        'Pale watercolor washes over sepia line on cream paper, restrained earth tones.',
+      lighting_and_shadow: 'Soft even light with fine hatching for shadow in the landscape.',
+      texture_and_material:
+        'Fine engraved-style lines, pale washes, tripod instruments and canvas tents.',
+      camera_and_composition: 'Wide landscape views with the surveyor small beside instruments.',
+      atmosphere_and_mood: 'Curious, patient and solitary, measuring a world no one has mapped.',
+      rendering_and_quality: 'Hand-colored plate illustration with delicate line and wash.',
+      creative_brief:
+        "Surveyor expedition plates: a lone surveyor mapping wild frontier land, rendered like hand-colored expedition plates with fine line and pale washes. Carry it through hand-colored plates, lone surveyor, tripod instruments, pale washes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'hand-colored plates; lone surveyor; tripod instruments; pale washes',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP24-036',
+    name: 'Flooded-City Salvage Rower',
+    displayName: 'Flooded-City Salvage Rower',
+    styleAnchors: ['Flooded-City Salvage Rower', 'lone salvage in drowned city', 'drowned towers'],
+    category: '2. Tactical & Solitary Frontiers',
+    domain: 'lone salvage in drowned city',
+    negativePrompt:
+      'readable signs, bright sunny tourism, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Flooded-city salvage rower: a lone rower gliding between drowned towers, painted in soft green-grey watercolor with reflections and floating debris.',
+      subject_treatment:
+        "Place the prompt's subject in a drowned city, keeping it clear on still water among half-submerged buildings.",
+      color_and_tone: 'Soft green-grey water, faded building colors and pale overcast sky.',
+      lighting_and_shadow:
+        'Soft overcast light with long reflections and gentle shadows under arches.',
+      texture_and_material:
+        'Still water, drifting debris, mossy facades, rusted signs without letters and wooden boats.',
+      camera_and_composition:
+        'Low water-level views with buildings towering and reflections mirroring them.',
+      atmosphere_and_mood: 'Melancholic, quiet and resourceful, living among the drowned.',
+      rendering_and_quality: 'Soft watercolor painting with careful reflections and wet edges.',
+      creative_brief:
+        "Flooded-city salvage rower: a lone rower gliding between drowned towers, painted in soft green-grey watercolor with reflections and floating debris. Carry it through drowned towers, lone rower, still reflections, floating debris. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'drowned towers; lone rower; still reflections; floating debris',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP24-037',
+    name: 'Polar Sledge Haul',
+    displayName: 'Polar Sledge Haul',
+    styleAnchors: ['Polar Sledge Haul', 'manhauling across ice', 'lone sledge hauler'],
+    category: '2. Tactical & Solitary Frontiers',
+    domain: 'manhauling across ice',
+    negativePrompt:
+      'color photography, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Polar sledge haul: a lone figure dragging a heavy sledge across endless pressure ice, rendered in stark black-and-white woodcut style with bold carved snow.',
+      subject_treatment:
+        "Put the prompt's subject into a solitary polar haul, keeping it clear as a bold shape against carved snow.",
+      color_and_tone: 'Stark black and white with rare pale blue accents in the ice.',
+      lighting_and_shadow:
+        'Harsh low sun rendered as carved white channels and solid black shadows.',
+      texture_and_material:
+        'Carved relief lines, pressure ridges, frost-covered harness and wooden sledge.',
+      camera_and_composition:
+        'Low horizon with the hauler leaning into a diagonal against the wind.',
+      atmosphere_and_mood: 'Grueling, heroic and alone, every single step hard earned.',
+      rendering_and_quality: 'Bold woodcut-style rendering with strong carved lines and contrast.',
+      creative_brief:
+        "Polar sledge haul: a lone figure dragging a heavy sledge across endless pressure ice, rendered in stark black-and-white woodcut style with bold carved snow. Carry it through lone sledge hauler, pressure ice, woodcut contrast, diagonal struggle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'lone sledge hauler; pressure ice; woodcut contrast; diagonal struggle',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP24-038',
+    name: 'Volcano Observatory Vigil',
+    displayName: 'Volcano Observatory Vigil',
+    styleAnchors: ['Volcano Observatory Vigil', 'lone volcano monitoring', 'crater rim station'],
+    category: '2. Tactical & Solitary Frontiers',
+    domain: 'lone volcano monitoring',
+    negativePrompt:
+      'gore, daylight blue sky, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Volcano observatory vigil: a small monitoring station on the rim of an active volcano, painted in glowing oils with lava light and ash clouds.',
+      subject_treatment:
+        "Place the prompt's subject at a volcano observation post, keeping it clear against glowing lava light and ash.",
+      color_and_tone: 'Glowing lava orange, ash grey, black rock and night sky violet.',
+      lighting_and_shadow:
+        'Lava glow from below, silhouettes rimmed in orange and ash-dimmed stars.',
+      texture_and_material:
+        'Black volcanic rock, heat-cracked instruments, ash layers and protective suits.',
+      camera_and_composition: 'Station on a rim edge with the crater glow filling the lower frame.',
+      atmosphere_and_mood: 'Awestruck, dangerous and devoted, watching the earth breathe.',
+      rendering_and_quality: 'Glowing oil painting with rich warm light and smoky depth.',
+      creative_brief:
+        "Volcano observatory vigil: a small monitoring station on the rim of an active volcano, painted in glowing oils with lava light and ash clouds. Carry it through crater rim station, lava glow, ash clouds, rimmed silhouettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'crater rim station; lava glow; ash clouds; rimmed silhouettes',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP24-039',
+    name: 'Lighthouse Relief Keeper',
+    displayName: 'Lighthouse Relief Keeper',
+    styleAnchors: ['Lighthouse Relief Keeper', 'isolated lighthouse keeping', 'rock lighthouse'],
+    category: '2. Tactical & Solitary Frontiers',
+    domain: 'isolated lighthouse keeping',
+    negativePrompt:
+      'calm tropical beach, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Lighthouse relief keeper: a lone keeper on a wave-battered rock lighthouse, painted in maritime oils with rotating beam and heavy seas.',
+      subject_treatment:
+        "Place the prompt's subject on or near a lonely rock lighthouse, keeping it clear in the sweep of the beam.",
+      color_and_tone: 'Slate grey seas, white foam, warm lamp gold and stormy indigo sky.',
+      lighting_and_shadow:
+        'Rotating beam slicing the dark, lamp glow from windows and stormy rim light.',
+      texture_and_material: 'Wet granite, brass lens, whitewashed tower walls and oilskin coats.',
+      camera_and_composition:
+        'Tower on a rock with waves exploding around its base, beam across the sky.',
+      atmosphere_and_mood: 'Steadfast, lonely and romantic, keeping the light alive.',
+      rendering_and_quality: 'Classic maritime oil painting with dramatic spray and glow.',
+      creative_brief:
+        "Lighthouse relief keeper: a lone keeper on a wave-battered rock lighthouse, painted in maritime oils with rotating beam and heavy seas. Carry it through rock lighthouse, sweeping beam, exploding waves, lone keeper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'rock lighthouse; sweeping beam; exploding waves; lone keeper',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP24-040',
+    name: 'Nomad Radio Caravan',
+    displayName: 'Nomad Radio Caravan',
+    styleAnchors: ['Nomad Radio Caravan', 'lone steppe radio caravan', 'vast steppe'],
+    category: '2. Tactical & Solitary Frontiers',
+    domain: 'lone steppe radio caravan',
+    negativePrompt:
+      'city skyline, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Nomad radio caravan: a lone traveler with a camel or horse carrying radio gear across a vast steppe, rendered in flat gouache with wide skies and tiny figures.',
+      subject_treatment:
+        "Place the prompt's subject on a vast steppe journey, keeping it clear as a small figure under a huge sky.",
+      color_and_tone: 'Golden grass, dusty ochre, deep blue sky and white clouds.',
+      lighting_and_shadow: 'Clear afternoon light with long soft shadows across the grass.',
+      texture_and_material: 'Flat gouache grass, felt saddlebags, wooden antenna poles and dust.',
+      camera_and_composition: 'Very low horizon with sky taking most of the frame.',
+      atmosphere_and_mood: 'Free, solitary and wide open, a voice crossing empty land.',
+      rendering_and_quality: 'Flat graphic gouache painting with crisp shapes and clean color.',
+      creative_brief:
+        "Nomad radio caravan: a lone traveler with a camel or horse carrying radio gear across a vast steppe, rendered in flat gouache with wide skies and tiny figures. Carry it through vast steppe, tiny traveler, radio antenna, enormous sky. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'vast steppe; tiny traveler; radio antenna; enormous sky',
+    },
+    ui: {
+      previewStatus: 'pending',
     },
   },
 ] as unknown as StyleRuntimePreset[];

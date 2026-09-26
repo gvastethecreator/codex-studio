@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP24-030
+packId: pack_24
+name: Tundra Trapper Cabin
+styleAnchors:
+  - Tundra Trapper Cabin
+  - lone northern cabin life
+  - lone log cabin
+displayName: Tundra Trapper Cabin
+category: 2. Tactical & Solitary Frontiers
+domain: lone northern cabin life
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - tactical-and-solitary-frontiers
+  - tundra-cabin
+  - art-direction
+  - frontier
+visualDna:
+  aesthetic: 'Tundra trapper cabin: a single log cabin on endless snowy tundra, painted in muted oil with smoke rising and snowshoe tracks leading away.'
+  subject_treatment: Place the prompt's subject around a remote snowy cabin, keeping it clear in the muted winter landscape.
+  color_and_tone: Muted whites, slate blues, dark spruce and warm brown log walls.
+  lighting_and_shadow: Low winter light, soft blue shadows and a warm glow from the cabin window.
+  texture_and_material: Rough logs, snow drifts, furs, frosted windows and woodsmoke.
+  camera_and_composition: Small cabin in a wide snowy expanse, tracks leading the eye.
+  atmosphere_and_mood: Self-reliant, quiet and cold, a life measured in firewood.
+  rendering_and_quality: Muted oil painting with soft snow and textured brushwork.
+  creative_brief: "Tundra trapper cabin: a single log cabin on endless snowy tundra, painted in muted oil with smoke rising and snowshoe tracks leading away. Carry it through lone log cabin, snowy tundra, snowshoe tracks, woodsmoke. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: lone log cabin; snowy tundra; snowshoe tracks; woodsmoke
+avoidRules:
+  - summer
+  - gore
+  - real military insignia
+  - real brand or company logo
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: summer, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_24
+  packName: Psychological & Frontier Aesthetics
+  categoryId: tactical-and-solitary-frontiers
+  categoryName: 2. Tactical & Solitary Frontiers
+  tags:
+    - curation-v2
+    - tactical-and-solitary-frontiers
+    - tundra-cabin
+    - art-direction
+    - frontier
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: lone northern cabin life

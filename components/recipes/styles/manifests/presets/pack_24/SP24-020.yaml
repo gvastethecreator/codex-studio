@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP24-020
+packId: pack_24
+name: Deep-Sea Pressure Dread
+styleAnchors:
+  - Deep-Sea Pressure Dread
+  - deep sea interior dread
+  - cramped submersible
+displayName: Deep-Sea Pressure Dread
+category: 1. Psychological Horror Aesthetics
+domain: deep sea interior dread
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - psychological-horror-aesthetics
+  - deep-sea-pressure
+  - art-direction
+  - psychological-horror
+visualDna:
+  aesthetic: 'Deep-sea pressure dread: cramped submersible interiors and black ocean depths, riveted hulls creaking while vast unseen shapes pass beyond tiny portholes.'
+  subject_treatment: Place the prompt's subject inside or just outside a deep-sea vessel, keeping it clear in a small pool of light surrounded by black water.
+  color_and_tone: Black ocean blue, rusted brass, dim green instrument glow and pale headlamp beams.
+  lighting_and_shadow: Tiny pools of light, instrument glow and headlamp beams dissolving into total darkness.
+  texture_and_material: Riveted steel, condensation, brass gauges, thick porthole glass and drifting particles.
+  camera_and_composition: Claustrophobic interiors or small lit figures against enormous black water.
+  atmosphere_and_mood: Crushing, silent and immense, something large is passing.
+  rendering_and_quality: Dark painterly realism with precise small highlights and heavy darkness.
+  creative_brief: "Deep-sea pressure dread: cramped submersible interiors and black ocean depths, riveted hulls creaking while vast unseen shapes pass beyond tiny portholes. Carry it through cramped submersible, tiny portholes, black depths, passing unseen shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: cramped submersible; tiny portholes; black depths; passing unseen shapes
+avoidRules:
+  - bright tropical reef
+  - gore
+  - graphic wounds
+  - jump-scare monster close-up
+  - franchise creature design
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: bright tropical reef, gore, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_24
+  packName: Psychological & Frontier Aesthetics
+  categoryId: psychological-horror-aesthetics
+  categoryName: 1. Psychological Horror Aesthetics
+  tags:
+    - curation-v2
+    - psychological-horror-aesthetics
+    - deep-sea-pressure
+    - art-direction
+    - psychological-horror
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: deep sea interior dread

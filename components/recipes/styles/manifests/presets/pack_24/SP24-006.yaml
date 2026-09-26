@@ -15,9 +15,10 @@ tags:
   - death stranding
   - full-style
   - visual-evaluation-pending
+  - reference-title
 visualDna:
   aesthetic: >-
-    Death Stranding (2019) art direction as environmental concept painting: immense wet volcanic
+    Post-collapse courier-journey art direction as environmental concept painting: immense wet volcanic
     space contrasted with small precise industrial systems, burdened human scale and uncanny traces
     of connection.
   subject_treatment: >-
@@ -47,13 +48,17 @@ avoidRules:
   - generic neutral rendering that removes the reference visual grammar
   - unrequested franchise characters, logos or exact scene copies
   - interface overlays, text or frames unless requested
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP24-006.webp
 attributes:
   negativePrompt: >-
     overriding explicitly requested subject, action, identity, count or camera, generic neutral
     rendering that removes the reference visual grammar, unrequested franchise characters, logos or
-    exact scene copies, interface overlays, text or frames unless requested
+    exact scene copies, interface overlays, text or frames unless requested, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: DEATH STRANDING (Original game (2019), not Director's Cut)
   pairedPresetId: SP12-098
   sourceReferences:
@@ -106,6 +111,7 @@ taxonomy:
     - death stranding
     - full-style
     - visual-evaluation-pending
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

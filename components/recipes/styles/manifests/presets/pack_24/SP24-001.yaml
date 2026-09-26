@@ -15,6 +15,7 @@ tags:
   - silent hill f
   - full-style
   - visual-evaluation-pending
+  - reference-title
 visualDna:
   aesthetic: >-
     Showa-era psychological folklore crossing into invasive floral body horror: blooms are a
@@ -48,13 +49,17 @@ avoidRules:
   - generic neutral rendering that removes the reference visual grammar
   - unrequested franchise characters, logos or exact scene copies
   - interface overlays, text or frames unless requested
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP24-001.webp
 attributes:
   negativePrompt: >-
     overriding explicitly requested subject, action, identity, count or camera, generic neutral
     rendering that removes the reference visual grammar, unrequested franchise characters, logos or
-    exact scene copies, interface overlays, text or frames unless requested
+    exact scene copies, interface overlays, text or frames unless requested, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: SILENT HILL f (Original release (2025))
   pairedPresetId: SP12-093
   sourceReferences:
@@ -107,6 +112,7 @@ taxonomy:
     - silent hill f
     - full-style
     - visual-evaluation-pending
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

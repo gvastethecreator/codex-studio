@@ -15,9 +15,10 @@ tags:
   - silent hill 2
   - full-style
   - visual-evaluation-pending
+  - reference-title
 visualDna:
   aesthetic: >-
-    Silent Hill 2 (2001) psychological art direction translated into distressed painted
+    Early-2000s console psychological-horror art direction translated into distressed painted
     illustration: inward grief, sickly stillness and ordinary space dissolving into uncertain
     memory.
   subject_treatment: >-
@@ -46,13 +47,17 @@ avoidRules:
   - generic neutral rendering that removes the reference visual grammar
   - unrequested franchise characters, logos or exact scene copies
   - interface overlays, text or frames unless requested
+  - existing franchise characters
+  - series logo or title lettering
+  - 'signature costumes, emblems or props from the referenced work'
+  - recreated scenes from the referenced work
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP24-002.webp
 attributes:
   negativePrompt: >-
     overriding explicitly requested subject, action, identity, count or camera, generic neutral
     rendering that removes the reference visual grammar, unrequested franchise characters, logos or
-    exact scene copies, interface overlays, text or frames unless requested
+    exact scene copies, interface overlays, text or frames unless requested, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: SILENT HILL 2 (Original PlayStation 2 release (2001), not the remake)
   pairedPresetId: SP12-094
   sourceReferences:
@@ -105,6 +110,7 @@ taxonomy:
     - silent hill 2
     - full-style
     - visual-evaluation-pending
+    - reference-title
   supportedTasks:
     - image_generate
     - image_edit

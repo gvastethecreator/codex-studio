@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP24-018
+packId: pack_24
+name: Darkroom Safelight Reveal
+styleAnchors:
+  - Darkroom Safelight Reveal
+  - red safelight photo dread
+  - red safelight
+displayName: Darkroom Safelight Reveal
+category: 1. Psychological Horror Aesthetics
+domain: red safelight photo dread
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - psychological-horror-aesthetics
+  - darkroom
+  - art-direction
+  - psychological-horror
+visualDna:
+  aesthetic: 'Darkroom safelight reveal: a photographic darkroom bathed in red safelight, prints slowly developing in trays to show things that were not there when the photo was taken.'
+  subject_treatment: Place the prompt's subject in or on prints developing in a red-lit darkroom, keeping it readable in the monochrome red glow.
+  color_and_tone: Deep safelight red and black, with pale developing prints glowing faintly.
+  lighting_and_shadow: Single red safelight, glossy reflections on wet trays and deep black corners.
+  texture_and_material: Chemical trays, dripping prints on lines, wet paper sheen and enlarger metal.
+  camera_and_composition: Close framing on trays and hanging prints, with the darkroom disappearing into black.
+  atmosphere_and_mood: Tense, investigative and eerie, the truth slowly appearing.
+  rendering_and_quality: Moody monochrome red painterly rendering with wet reflections.
+  creative_brief: "Darkroom safelight reveal: a photographic darkroom bathed in red safelight, prints slowly developing in trays to show things that were not there when the photo was taken. Carry it through red safelight, developing prints, hanging wet photos, black corners. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: red safelight; developing prints; hanging wet photos; black corners
+avoidRules:
+  - full color daylight
+  - digital screens
+  - gore
+  - graphic wounds
+  - jump-scare monster close-up
+  - franchise creature design
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: full color daylight, digital screens, gore, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_24
+  packName: Psychological & Frontier Aesthetics
+  categoryId: psychological-horror-aesthetics
+  categoryName: 1. Psychological Horror Aesthetics
+  tags:
+    - curation-v2
+    - psychological-horror-aesthetics
+    - darkroom
+    - art-direction
+    - psychological-horror
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: red safelight photo dread

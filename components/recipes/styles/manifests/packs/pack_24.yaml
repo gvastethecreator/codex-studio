@@ -14,15 +14,83 @@ categories:
       - pack_24/SP24-002.yaml
       - pack_24/SP24-003.yaml
       - pack_24/SP24-004.yaml
+      - pack_24/SP24-007.yaml
+      - pack_24/SP24-008.yaml
+      - pack_24/SP24-009.yaml
+      - pack_24/SP24-010.yaml
+      - pack_24/SP24-011.yaml
+      - pack_24/SP24-012.yaml
+      - pack_24/SP24-013.yaml
+      - pack_24/SP24-014.yaml
+      - pack_24/SP24-015.yaml
+      - pack_24/SP24-016.yaml
+      - pack_24/SP24-017.yaml
+      - pack_24/SP24-018.yaml
+      - pack_24/SP24-019.yaml
+      - pack_24/SP24-020.yaml
+      - pack_24/SP24-021.yaml
+      - pack_24/SP24-022.yaml
   - id: tactical-and-solitary-frontiers
     name: 2. Tactical & Solitary Frontiers
     presetRefs:
       - pack_24/SP24-005.yaml
       - pack_24/SP24-006.yaml
+      - pack_24/SP24-023.yaml
+      - pack_24/SP24-024.yaml
+      - pack_24/SP24-025.yaml
+      - pack_24/SP24-026.yaml
+      - pack_24/SP24-027.yaml
+      - pack_24/SP24-028.yaml
+      - pack_24/SP24-029.yaml
+      - pack_24/SP24-030.yaml
+      - pack_24/SP24-031.yaml
+      - pack_24/SP24-032.yaml
+      - pack_24/SP24-033.yaml
+      - pack_24/SP24-034.yaml
+      - pack_24/SP24-035.yaml
+      - pack_24/SP24-036.yaml
+      - pack_24/SP24-037.yaml
+      - pack_24/SP24-038.yaml
+      - pack_24/SP24-039.yaml
+      - pack_24/SP24-040.yaml
 presetRefs:
   - pack_24/SP24-001.yaml
   - pack_24/SP24-002.yaml
   - pack_24/SP24-003.yaml
   - pack_24/SP24-004.yaml
+  - pack_24/SP24-007.yaml
+  - pack_24/SP24-008.yaml
+  - pack_24/SP24-009.yaml
+  - pack_24/SP24-010.yaml
+  - pack_24/SP24-011.yaml
+  - pack_24/SP24-012.yaml
+  - pack_24/SP24-013.yaml
+  - pack_24/SP24-014.yaml
+  - pack_24/SP24-015.yaml
+  - pack_24/SP24-016.yaml
+  - pack_24/SP24-017.yaml
+  - pack_24/SP24-018.yaml
+  - pack_24/SP24-019.yaml
+  - pack_24/SP24-020.yaml
+  - pack_24/SP24-021.yaml
+  - pack_24/SP24-022.yaml
   - pack_24/SP24-005.yaml
   - pack_24/SP24-006.yaml
+  - pack_24/SP24-023.yaml
+  - pack_24/SP24-024.yaml
+  - pack_24/SP24-025.yaml
+  - pack_24/SP24-026.yaml
+  - pack_24/SP24-027.yaml
+  - pack_24/SP24-028.yaml
+  - pack_24/SP24-029.yaml
+  - pack_24/SP24-030.yaml
+  - pack_24/SP24-031.yaml
+  - pack_24/SP24-032.yaml
+  - pack_24/SP24-033.yaml
+  - pack_24/SP24-034.yaml
+  - pack_24/SP24-035.yaml
+  - pack_24/SP24-036.yaml
+  - pack_24/SP24-037.yaml
+  - pack_24/SP24-038.yaml
+  - pack_24/SP24-039.yaml
+  - pack_24/SP24-040.yaml

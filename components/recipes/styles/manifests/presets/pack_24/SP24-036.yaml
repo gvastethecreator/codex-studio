@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP24-036
+packId: pack_24
+name: Flooded-City Salvage Rower
+styleAnchors:
+  - Flooded-City Salvage Rower
+  - lone salvage in drowned city
+  - drowned towers
+displayName: Flooded-City Salvage Rower
+category: 2. Tactical & Solitary Frontiers
+domain: lone salvage in drowned city
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - tactical-and-solitary-frontiers
+  - flooded-salvage
+  - art-direction
+  - frontier
+visualDna:
+  aesthetic: 'Flooded-city salvage rower: a lone rower gliding between drowned towers, painted in soft green-grey watercolor with reflections and floating debris.'
+  subject_treatment: Place the prompt's subject in a drowned city, keeping it clear on still water among half-submerged buildings.
+  color_and_tone: Soft green-grey water, faded building colors and pale overcast sky.
+  lighting_and_shadow: Soft overcast light with long reflections and gentle shadows under arches.
+  texture_and_material: Still water, drifting debris, mossy facades, rusted signs without letters and wooden boats.
+  camera_and_composition: Low water-level views with buildings towering and reflections mirroring them.
+  atmosphere_and_mood: Melancholic, quiet and resourceful, living among the drowned.
+  rendering_and_quality: Soft watercolor painting with careful reflections and wet edges.
+  creative_brief: "Flooded-city salvage rower: a lone rower gliding between drowned towers, painted in soft green-grey watercolor with reflections and floating debris. Carry it through drowned towers, lone rower, still reflections, floating debris. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: drowned towers; lone rower; still reflections; floating debris
+avoidRules:
+  - readable signs
+  - bright sunny tourism
+  - gore
+  - real military insignia
+  - real brand or company logo
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable signs, bright sunny tourism, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_24
+  packName: Psychological & Frontier Aesthetics
+  categoryId: tactical-and-solitary-frontiers
+  categoryName: 2. Tactical & Solitary Frontiers
+  tags:
+    - curation-v2
+    - tactical-and-solitary-frontiers
+    - flooded-salvage
+    - art-direction
+    - frontier
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: lone salvage in drowned city

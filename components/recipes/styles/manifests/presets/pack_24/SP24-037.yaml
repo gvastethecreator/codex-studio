@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP24-037
+packId: pack_24
+name: Polar Sledge Haul
+styleAnchors:
+  - Polar Sledge Haul
+  - manhauling across ice
+  - lone sledge hauler
+displayName: Polar Sledge Haul
+category: 2. Tactical & Solitary Frontiers
+domain: manhauling across ice
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - tactical-and-solitary-frontiers
+  - sledge-haul
+  - art-direction
+  - frontier
+visualDna:
+  aesthetic: 'Polar sledge haul: a lone figure dragging a heavy sledge across endless pressure ice, rendered in stark black-and-white woodcut style with bold carved snow.'
+  subject_treatment: Put the prompt's subject into a solitary polar haul, keeping it clear as a bold shape against carved snow.
+  color_and_tone: Stark black and white with rare pale blue accents in the ice.
+  lighting_and_shadow: Harsh low sun rendered as carved white channels and solid black shadows.
+  texture_and_material: Carved relief lines, pressure ridges, frost-covered harness and wooden sledge.
+  camera_and_composition: Low horizon with the hauler leaning into a diagonal against the wind.
+  atmosphere_and_mood: Grueling, heroic and alone, every single step hard earned.
+  rendering_and_quality: Bold woodcut-style rendering with strong carved lines and contrast.
+  creative_brief: "Polar sledge haul: a lone figure dragging a heavy sledge across endless pressure ice, rendered in stark black-and-white woodcut style with bold carved snow. Carry it through lone sledge hauler, pressure ice, woodcut contrast, diagonal struggle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: lone sledge hauler; pressure ice; woodcut contrast; diagonal struggle
+avoidRules:
+  - color photography
+  - gore
+  - real military insignia
+  - real brand or company logo
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: color photography, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_24
+  packName: Psychological & Frontier Aesthetics
+  categoryId: tactical-and-solitary-frontiers
+  categoryName: 2. Tactical & Solitary Frontiers
+  tags:
+    - curation-v2
+    - tactical-and-solitary-frontiers
+    - sledge-haul
+    - art-direction
+    - frontier
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: manhauling across ice

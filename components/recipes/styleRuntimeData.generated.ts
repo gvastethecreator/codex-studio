@@ -220,7 +220,7 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
       'Transferable art direction, mood, color and material studies drawn from researched game references. Gameplay camera and engine profiles live separately in Video Game Originals Vault.',
     cardTitle: 'Psychological & Frontier',
     cardDescription: 'Psychological horror, tactical brushwork, and industrial solitude.',
-    presetCount: 6,
+    presetCount: 40,
   },
   {
     id: 'pack_25',

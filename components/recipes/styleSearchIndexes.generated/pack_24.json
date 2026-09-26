@@ -3,7 +3,7 @@
     {
       "id": "pack_24",
       "name": "Psychological & Frontier Aesthetics",
-      "presetCount": 6
+      "presetCount": 40
     }
   ],
   "presets": [
@@ -56,6 +56,326 @@
       "searchableText": "sp24-004 silent hill 4 — domestic intrusion 1. psychological horror aesthetics psychological horror pack_24 psychological & frontier aesthetics psychological-horror-aesthetics psychological-and-frontier-aesthetics psychological-horror-aesthetics"
     },
     {
+      "id": "SP24-007",
+      "name": "Clinical Pastel Unease",
+      "styleAnchors": [
+        "Clinical Pastel Unease",
+        "sterile pastel institution dread",
+        "pastel institutional palette"
+      ],
+      "ref": "pack_24/SP24-007.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "psychological-horror-aesthetics",
+      "categoryName": "1. Psychological Horror Aesthetics",
+      "domain": "sterile pastel institution dread",
+      "tags": [
+        "psychological-and-frontier-aesthetics",
+        "psychological-horror-aesthetics",
+        "sterile-pastel-institution-dread"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-007 clinical pastel unease sterile pastel institution dread pastel institutional palette 1. psychological horror aesthetics psychological horror sterile pastel institution dread pack_24 psychological & frontier aesthetics psychological-horror-aesthetics psychological-and-frontier-aesthetics psychological-horror-aesthetics sterile-pastel-institution-dread"
+    },
+    {
+      "id": "SP24-008",
+      "name": "Tape-Worn Living Room",
+      "styleAnchors": [
+        "Tape-Worn Living Room",
+        "degraded home video dread",
+        "tape noise and tracking lines"
+      ],
+      "ref": "pack_24/SP24-008.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "psychological-horror-aesthetics",
+      "categoryName": "1. Psychological Horror Aesthetics",
+      "domain": "degraded home video dread",
+      "tags": [
+        "psychological-and-frontier-aesthetics",
+        "psychological-horror-aesthetics",
+        "degraded-home-video-dread"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-008 tape-worn living room degraded home video dread tape noise and tracking lines 1. psychological horror aesthetics psychological horror degraded home video dread pack_24 psychological & frontier aesthetics psychological-horror-aesthetics psychological-and-frontier-aesthetics psychological-horror-aesthetics degraded-home-video-dread"
+    },
+    {
+      "id": "SP24-009",
+      "name": "Flooded Memory Rooms",
+      "styleAnchors": [
+        "Flooded Memory Rooms",
+        "half-submerged interior dread",
+        "half-flooded interiors"
+      ],
+      "ref": "pack_24/SP24-009.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "psychological-horror-aesthetics",
+      "categoryName": "1. Psychological Horror Aesthetics",
+      "domain": "half-submerged interior dread",
+      "tags": [
+        "psychological-and-frontier-aesthetics",
+        "psychological-horror-aesthetics",
+        "half-submerged-interior-dread"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-009 flooded memory rooms half-submerged interior dread half-flooded interiors 1. psychological horror aesthetics psychological horror half-submerged interior dread pack_24 psychological & frontier aesthetics psychological-horror-aesthetics psychological-and-frontier-aesthetics psychological-horror-aesthetics half-submerged-interior-dread"
+    },
+    {
+      "id": "SP24-010",
+      "name": "Wrong-Face Family Portraits",
+      "styleAnchors": [
+        "Wrong-Face Family Portraits",
+        "uncanny formal portrait dread",
+        "formal posed portraits"
+      ],
+      "ref": "pack_24/SP24-010.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "psychological-horror-aesthetics",
+      "categoryName": "1. Psychological Horror Aesthetics",
+      "domain": "uncanny formal portrait dread",
+      "tags": [
+        "psychological-and-frontier-aesthetics",
+        "psychological-horror-aesthetics",
+        "uncanny-formal-portrait-dread"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-010 wrong-face family portraits uncanny formal portrait dread formal posed portraits 1. psychological horror aesthetics psychological horror uncanny formal portrait dread pack_24 psychological & frontier aesthetics psychological-horror-aesthetics psychological-and-frontier-aesthetics psychological-horror-aesthetics uncanny-formal-portrait-dread"
+    },
+    {
+      "id": "SP24-011",
+      "name": "Melting Wax Shrine",
+      "styleAnchors": ["Melting Wax Shrine", "candle altar dread", "years of melted candles"],
+      "ref": "pack_24/SP24-011.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "psychological-horror-aesthetics",
+      "categoryName": "1. Psychological Horror Aesthetics",
+      "domain": "candle altar dread",
+      "tags": [
+        "psychological-and-frontier-aesthetics",
+        "psychological-horror-aesthetics",
+        "candle-altar-dread"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-011 melting wax shrine candle altar dread years of melted candles 1. psychological horror aesthetics psychological horror candle altar dread pack_24 psychological & frontier aesthetics psychological-horror-aesthetics psychological-and-frontier-aesthetics psychological-horror-aesthetics candle-altar-dread"
+    },
+    {
+      "id": "SP24-012",
+      "name": "Breathing Wallpaper Damp",
+      "styleAnchors": [
+        "Breathing Wallpaper Damp",
+        "damp wallpaper interior dread",
+        "damp floral wallpaper"
+      ],
+      "ref": "pack_24/SP24-012.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "psychological-horror-aesthetics",
+      "categoryName": "1. Psychological Horror Aesthetics",
+      "domain": "damp wallpaper interior dread",
+      "tags": [
+        "psychological-and-frontier-aesthetics",
+        "psychological-horror-aesthetics",
+        "damp-wallpaper-interior-dread"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-012 breathing wallpaper damp damp wallpaper interior dread damp floral wallpaper 1. psychological horror aesthetics psychological horror damp wallpaper interior dread pack_24 psychological & frontier aesthetics psychological-horror-aesthetics psychological-and-frontier-aesthetics psychological-horror-aesthetics damp-wallpaper-interior-dread"
+    },
+    {
+      "id": "SP24-013",
+      "name": "Night-Bus Sodium Limbo",
+      "styleAnchors": ["Night-Bus Sodium Limbo", "late-night transit dread", "sodium orange light"],
+      "ref": "pack_24/SP24-013.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "psychological-horror-aesthetics",
+      "categoryName": "1. Psychological Horror Aesthetics",
+      "domain": "late-night transit dread",
+      "tags": [
+        "psychological-and-frontier-aesthetics",
+        "psychological-horror-aesthetics",
+        "late-night-transit-dread"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-013 night-bus sodium limbo late-night transit dread sodium orange light 1. psychological horror aesthetics psychological horror late-night transit dread pack_24 psychological & frontier aesthetics psychological-horror-aesthetics psychological-and-frontier-aesthetics psychological-horror-aesthetics late-night-transit-dread"
+    },
+    {
+      "id": "SP24-014",
+      "name": "Taxidermy Parlor Stillness",
+      "styleAnchors": ["Taxidermy Parlor Stillness", "glass-eyed parlor dread", "mounted animals"],
+      "ref": "pack_24/SP24-014.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "psychological-horror-aesthetics",
+      "categoryName": "1. Psychological Horror Aesthetics",
+      "domain": "glass-eyed parlor dread",
+      "tags": [
+        "psychological-and-frontier-aesthetics",
+        "psychological-horror-aesthetics",
+        "glass-eyed-parlor-dread"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-014 taxidermy parlor stillness glass-eyed parlor dread mounted animals 1. psychological horror aesthetics psychological horror glass-eyed parlor dread pack_24 psychological & frontier aesthetics psychological-horror-aesthetics psychological-and-frontier-aesthetics psychological-horror-aesthetics glass-eyed-parlor-dread"
+    },
+    {
+      "id": "SP24-015",
+      "name": "Snowbound Motel Hum",
+      "styleAnchors": ["Snowbound Motel Hum", "isolated winter motel dread", "snow-buried motel"],
+      "ref": "pack_24/SP24-015.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "psychological-horror-aesthetics",
+      "categoryName": "1. Psychological Horror Aesthetics",
+      "domain": "isolated winter motel dread",
+      "tags": [
+        "psychological-and-frontier-aesthetics",
+        "psychological-horror-aesthetics",
+        "isolated-winter-motel-dread"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-015 snowbound motel hum isolated winter motel dread snow-buried motel 1. psychological horror aesthetics psychological horror isolated winter motel dread pack_24 psychological & frontier aesthetics psychological-horror-aesthetics psychological-and-frontier-aesthetics psychological-horror-aesthetics isolated-winter-motel-dread"
+    },
+    {
+      "id": "SP24-016",
+      "name": "Attic Toy Menace",
+      "styleAnchors": ["Attic Toy Menace", "forgotten toy attic dread", "forgotten toys"],
+      "ref": "pack_24/SP24-016.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "psychological-horror-aesthetics",
+      "categoryName": "1. Psychological Horror Aesthetics",
+      "domain": "forgotten toy attic dread",
+      "tags": [
+        "psychological-and-frontier-aesthetics",
+        "psychological-horror-aesthetics",
+        "forgotten-toy-attic-dread"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-016 attic toy menace forgotten toy attic dread forgotten toys 1. psychological horror aesthetics psychological horror forgotten toy attic dread pack_24 psychological & frontier aesthetics psychological-horror-aesthetics psychological-and-frontier-aesthetics psychological-horror-aesthetics forgotten-toy-attic-dread"
+    },
+    {
+      "id": "SP24-017",
+      "name": "Mirror-Maze Identity",
+      "styleAnchors": [
+        "Mirror-Maze Identity",
+        "fragmented reflection dread",
+        "infinite reflections"
+      ],
+      "ref": "pack_24/SP24-017.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "psychological-horror-aesthetics",
+      "categoryName": "1. Psychological Horror Aesthetics",
+      "domain": "fragmented reflection dread",
+      "tags": [
+        "psychological-and-frontier-aesthetics",
+        "psychological-horror-aesthetics",
+        "fragmented-reflection-dread"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-017 mirror-maze identity fragmented reflection dread infinite reflections 1. psychological horror aesthetics psychological horror fragmented reflection dread pack_24 psychological & frontier aesthetics psychological-horror-aesthetics psychological-and-frontier-aesthetics psychological-horror-aesthetics fragmented-reflection-dread"
+    },
+    {
+      "id": "SP24-018",
+      "name": "Darkroom Safelight Reveal",
+      "styleAnchors": ["Darkroom Safelight Reveal", "red safelight photo dread", "red safelight"],
+      "ref": "pack_24/SP24-018.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "psychological-horror-aesthetics",
+      "categoryName": "1. Psychological Horror Aesthetics",
+      "domain": "red safelight photo dread",
+      "tags": [
+        "psychological-and-frontier-aesthetics",
+        "psychological-horror-aesthetics",
+        "red-safelight-photo-dread"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-018 darkroom safelight reveal red safelight photo dread red safelight 1. psychological horror aesthetics psychological horror red safelight photo dread pack_24 psychological & frontier aesthetics psychological-horror-aesthetics psychological-and-frontier-aesthetics psychological-horror-aesthetics red-safelight-photo-dread"
+    },
+    {
+      "id": "SP24-019",
+      "name": "Sleep-Paralysis Bedside",
+      "styleAnchors": [
+        "Sleep-Paralysis Bedside",
+        "bedroom night paralysis dread",
+        "pillow-level view"
+      ],
+      "ref": "pack_24/SP24-019.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "psychological-horror-aesthetics",
+      "categoryName": "1. Psychological Horror Aesthetics",
+      "domain": "bedroom night paralysis dread",
+      "tags": [
+        "psychological-and-frontier-aesthetics",
+        "psychological-horror-aesthetics",
+        "bedroom-night-paralysis-dread"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-019 sleep-paralysis bedside bedroom night paralysis dread pillow-level view 1. psychological horror aesthetics psychological horror bedroom night paralysis dread pack_24 psychological & frontier aesthetics psychological-horror-aesthetics psychological-and-frontier-aesthetics psychological-horror-aesthetics bedroom-night-paralysis-dread"
+    },
+    {
+      "id": "SP24-020",
+      "name": "Deep-Sea Pressure Dread",
+      "styleAnchors": ["Deep-Sea Pressure Dread", "deep sea interior dread", "cramped submersible"],
+      "ref": "pack_24/SP24-020.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "psychological-horror-aesthetics",
+      "categoryName": "1. Psychological Horror Aesthetics",
+      "domain": "deep sea interior dread",
+      "tags": [
+        "psychological-and-frontier-aesthetics",
+        "psychological-horror-aesthetics",
+        "deep-sea-interior-dread"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-020 deep-sea pressure dread deep sea interior dread cramped submersible 1. psychological horror aesthetics psychological horror deep sea interior dread pack_24 psychological & frontier aesthetics psychological-horror-aesthetics psychological-and-frontier-aesthetics psychological-horror-aesthetics deep-sea-interior-dread"
+    },
+    {
+      "id": "SP24-021",
+      "name": "Ash-Snow Suburb",
+      "styleAnchors": ["Ash-Snow Suburb", "burned suburb aftermath dread", "ash falling like snow"],
+      "ref": "pack_24/SP24-021.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "psychological-horror-aesthetics",
+      "categoryName": "1. Psychological Horror Aesthetics",
+      "domain": "burned suburb aftermath dread",
+      "tags": [
+        "psychological-and-frontier-aesthetics",
+        "psychological-horror-aesthetics",
+        "burned-suburb-aftermath-dread"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-021 ash-snow suburb burned suburb aftermath dread ash falling like snow 1. psychological horror aesthetics psychological horror burned suburb aftermath dread pack_24 psychological & frontier aesthetics psychological-horror-aesthetics psychological-and-frontier-aesthetics psychological-horror-aesthetics burned-suburb-aftermath-dread"
+    },
+    {
+      "id": "SP24-022",
+      "name": "Static-Glow Television Room",
+      "styleAnchors": [
+        "Static-Glow Television Room",
+        "television static dread",
+        "television static glow"
+      ],
+      "ref": "pack_24/SP24-022.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "psychological-horror-aesthetics",
+      "categoryName": "1. Psychological Horror Aesthetics",
+      "domain": "television static dread",
+      "tags": [
+        "psychological-and-frontier-aesthetics",
+        "psychological-horror-aesthetics",
+        "television-static-dread"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-022 static-glow television room television static dread television static glow 1. psychological horror aesthetics psychological horror television static dread pack_24 psychological & frontier aesthetics psychological-horror-aesthetics psychological-and-frontier-aesthetics psychological-horror-aesthetics television-static-dread"
+    },
+    {
       "id": "SP24-005",
       "name": "Metal Gear — Tactical Brushwork",
       "ref": "pack_24/SP24-005.yaml",
@@ -78,7 +398,367 @@
       "tags": ["psychological-and-frontier-aesthetics", "tactical-and-solitary-frontiers"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp24-006 death stranding — industrial sublime 2. tactical & solitary frontiers tactical & solitary frontiers pack_24 psychological & frontier aesthetics tactical-and-solitary-frontiers psychological-and-frontier-aesthetics tactical-and-solitary-frontiers"
+    },
+    {
+      "id": "SP24-023",
+      "name": "Arctic Weather-Station Solitude",
+      "styleAnchors": [
+        "Arctic Weather-Station Solitude",
+        "polar outpost solitude",
+        "tiny polar outpost"
+      ],
+      "ref": "pack_24/SP24-023.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "tactical-and-solitary-frontiers",
+      "categoryName": "2. Tactical & Solitary Frontiers",
+      "domain": "polar outpost solitude",
+      "tags": [
+        "psychological-and-frontier-aesthetics",
+        "tactical-and-solitary-frontiers",
+        "polar-outpost-solitude"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-023 arctic weather-station solitude polar outpost solitude tiny polar outpost 2. tactical & solitary frontiers tactical & solitary frontiers polar outpost solitude pack_24 psychological & frontier aesthetics tactical-and-solitary-frontiers psychological-and-frontier-aesthetics tactical-and-solitary-frontiers polar-outpost-solitude"
+    },
+    {
+      "id": "SP24-024",
+      "name": "Desert Long-Haul Courier",
+      "styleAnchors": ["Desert Long-Haul Courier", "lone desert haulage", "lone desert haul"],
+      "ref": "pack_24/SP24-024.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "tactical-and-solitary-frontiers",
+      "categoryName": "2. Tactical & Solitary Frontiers",
+      "domain": "lone desert haulage",
+      "tags": [
+        "psychological-and-frontier-aesthetics",
+        "tactical-and-solitary-frontiers",
+        "lone-desert-haulage"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-024 desert long-haul courier lone desert haulage lone desert haul 2. tactical & solitary frontiers tactical & solitary frontiers lone desert haulage pack_24 psychological & frontier aesthetics tactical-and-solitary-frontiers psychological-and-frontier-aesthetics tactical-and-solitary-frontiers lone-desert-haulage"
+    },
+    {
+      "id": "SP24-025",
+      "name": "Orbital Lone Maintenance",
+      "styleAnchors": [
+        "Orbital Lone Maintenance",
+        "solo orbital repair work",
+        "tethered lone technician"
+      ],
+      "ref": "pack_24/SP24-025.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "tactical-and-solitary-frontiers",
+      "categoryName": "2. Tactical & Solitary Frontiers",
+      "domain": "solo orbital repair work",
+      "tags": [
+        "psychological-and-frontier-aesthetics",
+        "tactical-and-solitary-frontiers",
+        "solo-orbital-repair-work"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-025 orbital lone maintenance solo orbital repair work tethered lone technician 2. tactical & solitary frontiers tactical & solitary frontiers solo orbital repair work pack_24 psychological & frontier aesthetics tactical-and-solitary-frontiers psychological-and-frontier-aesthetics tactical-and-solitary-frontiers solo-orbital-repair-work"
+    },
+    {
+      "id": "SP24-026",
+      "name": "Whiteout Mountain Rescue",
+      "styleAnchors": [
+        "Whiteout Mountain Rescue",
+        "alpine rescue in whiteout",
+        "whiteout blending snow and sky"
+      ],
+      "ref": "pack_24/SP24-026.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "tactical-and-solitary-frontiers",
+      "categoryName": "2. Tactical & Solitary Frontiers",
+      "domain": "alpine rescue in whiteout",
+      "tags": [
+        "psychological-and-frontier-aesthetics",
+        "tactical-and-solitary-frontiers",
+        "alpine-rescue-in-whiteout"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-026 whiteout mountain rescue alpine rescue in whiteout whiteout blending snow and sky 2. tactical & solitary frontiers tactical & solitary frontiers alpine rescue in whiteout pack_24 psychological & frontier aesthetics tactical-and-solitary-frontiers psychological-and-frontier-aesthetics tactical-and-solitary-frontiers alpine-rescue-in-whiteout"
+    },
+    {
+      "id": "SP24-027",
+      "name": "Fire-Lookout Tower Vigil",
+      "styleAnchors": [
+        "Fire-Lookout Tower Vigil",
+        "wildfire lookout solitude",
+        "lookout tower above forest"
+      ],
+      "ref": "pack_24/SP24-027.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "tactical-and-solitary-frontiers",
+      "categoryName": "2. Tactical & Solitary Frontiers",
+      "domain": "wildfire lookout solitude",
+      "tags": [
+        "psychological-and-frontier-aesthetics",
+        "tactical-and-solitary-frontiers",
+        "wildfire-lookout-solitude"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-027 fire-lookout tower vigil wildfire lookout solitude lookout tower above forest 2. tactical & solitary frontiers tactical & solitary frontiers wildfire lookout solitude pack_24 psychological & frontier aesthetics tactical-and-solitary-frontiers psychological-and-frontier-aesthetics tactical-and-solitary-frontiers wildfire-lookout-solitude"
+    },
+    {
+      "id": "SP24-028",
+      "name": "Deep-Cave Survey Lamp",
+      "styleAnchors": ["Deep-Cave Survey Lamp", "lone cave surveying", "single headlamp beam"],
+      "ref": "pack_24/SP24-028.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "tactical-and-solitary-frontiers",
+      "categoryName": "2. Tactical & Solitary Frontiers",
+      "domain": "lone cave surveying",
+      "tags": [
+        "psychological-and-frontier-aesthetics",
+        "tactical-and-solitary-frontiers",
+        "lone-cave-surveying"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-028 deep-cave survey lamp lone cave surveying single headlamp beam 2. tactical & solitary frontiers tactical & solitary frontiers lone cave surveying pack_24 psychological & frontier aesthetics tactical-and-solitary-frontiers psychological-and-frontier-aesthetics tactical-and-solitary-frontiers lone-cave-surveying"
+    },
+    {
+      "id": "SP24-029",
+      "name": "Submarine Night Watch",
+      "styleAnchors": ["Submarine Night Watch", "red-lit submarine watch", "red night lighting"],
+      "ref": "pack_24/SP24-029.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "tactical-and-solitary-frontiers",
+      "categoryName": "2. Tactical & Solitary Frontiers",
+      "domain": "red-lit submarine watch",
+      "tags": [
+        "psychological-and-frontier-aesthetics",
+        "tactical-and-solitary-frontiers",
+        "red-lit-submarine-watch"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-029 submarine night watch red-lit submarine watch red night lighting 2. tactical & solitary frontiers tactical & solitary frontiers red-lit submarine watch pack_24 psychological & frontier aesthetics tactical-and-solitary-frontiers psychological-and-frontier-aesthetics tactical-and-solitary-frontiers red-lit-submarine-watch"
+    },
+    {
+      "id": "SP24-030",
+      "name": "Tundra Trapper Cabin",
+      "styleAnchors": ["Tundra Trapper Cabin", "lone northern cabin life", "lone log cabin"],
+      "ref": "pack_24/SP24-030.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "tactical-and-solitary-frontiers",
+      "categoryName": "2. Tactical & Solitary Frontiers",
+      "domain": "lone northern cabin life",
+      "tags": [
+        "psychological-and-frontier-aesthetics",
+        "tactical-and-solitary-frontiers",
+        "lone-northern-cabin-life"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-030 tundra trapper cabin lone northern cabin life lone log cabin 2. tactical & solitary frontiers tactical & solitary frontiers lone northern cabin life pack_24 psychological & frontier aesthetics tactical-and-solitary-frontiers psychological-and-frontier-aesthetics tactical-and-solitary-frontiers lone-northern-cabin-life"
+    },
+    {
+      "id": "SP24-031",
+      "name": "Salt-Flat Signal Post",
+      "styleAnchors": ["Salt-Flat Signal Post", "lone salt flat outpost", "mirror salt flat"],
+      "ref": "pack_24/SP24-031.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "tactical-and-solitary-frontiers",
+      "categoryName": "2. Tactical & Solitary Frontiers",
+      "domain": "lone salt flat outpost",
+      "tags": [
+        "psychological-and-frontier-aesthetics",
+        "tactical-and-solitary-frontiers",
+        "lone-salt-flat-outpost"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-031 salt-flat signal post lone salt flat outpost mirror salt flat 2. tactical & solitary frontiers tactical & solitary frontiers lone salt flat outpost pack_24 psychological & frontier aesthetics tactical-and-solitary-frontiers psychological-and-frontier-aesthetics tactical-and-solitary-frontiers lone-salt-flat-outpost"
+    },
+    {
+      "id": "SP24-032",
+      "name": "Storm-Rig Night Shift",
+      "styleAnchors": ["Storm-Rig Night Shift", "offshore rig in storm", "offshore rig"],
+      "ref": "pack_24/SP24-032.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "tactical-and-solitary-frontiers",
+      "categoryName": "2. Tactical & Solitary Frontiers",
+      "domain": "offshore rig in storm",
+      "tags": [
+        "psychological-and-frontier-aesthetics",
+        "tactical-and-solitary-frontiers",
+        "offshore-rig-in-storm"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-032 storm-rig night shift offshore rig in storm offshore rig 2. tactical & solitary frontiers tactical & solitary frontiers offshore rig in storm pack_24 psychological & frontier aesthetics tactical-and-solitary-frontiers psychological-and-frontier-aesthetics tactical-and-solitary-frontiers offshore-rig-in-storm"
+    },
+    {
+      "id": "SP24-033",
+      "name": "Cold Checkpoint Night",
+      "styleAnchors": [
+        "Cold Checkpoint Night",
+        "remote border post at night",
+        "remote barrier post"
+      ],
+      "ref": "pack_24/SP24-033.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "tactical-and-solitary-frontiers",
+      "categoryName": "2. Tactical & Solitary Frontiers",
+      "domain": "remote border post at night",
+      "tags": [
+        "psychological-and-frontier-aesthetics",
+        "tactical-and-solitary-frontiers",
+        "remote-border-post-at-night"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-033 cold checkpoint night remote border post at night remote barrier post 2. tactical & solitary frontiers tactical & solitary frontiers remote border post at night pack_24 psychological & frontier aesthetics tactical-and-solitary-frontiers psychological-and-frontier-aesthetics tactical-and-solitary-frontiers remote-border-post-at-night"
+    },
+    {
+      "id": "SP24-034",
+      "name": "Rooftop Surveillance Night",
+      "styleAnchors": ["Rooftop Surveillance Night", "urban night recon", "rooftop silhouette"],
+      "ref": "pack_24/SP24-034.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "tactical-and-solitary-frontiers",
+      "categoryName": "2. Tactical & Solitary Frontiers",
+      "domain": "urban night recon",
+      "tags": [
+        "psychological-and-frontier-aesthetics",
+        "tactical-and-solitary-frontiers",
+        "urban-night-recon"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-034 rooftop surveillance night urban night recon rooftop silhouette 2. tactical & solitary frontiers tactical & solitary frontiers urban night recon pack_24 psychological & frontier aesthetics tactical-and-solitary-frontiers psychological-and-frontier-aesthetics tactical-and-solitary-frontiers urban-night-recon"
+    },
+    {
+      "id": "SP24-035",
+      "name": "Surveyor Expedition Plates",
+      "styleAnchors": [
+        "Surveyor Expedition Plates",
+        "lone survey expedition art",
+        "hand-colored plates"
+      ],
+      "ref": "pack_24/SP24-035.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "tactical-and-solitary-frontiers",
+      "categoryName": "2. Tactical & Solitary Frontiers",
+      "domain": "lone survey expedition art",
+      "tags": [
+        "psychological-and-frontier-aesthetics",
+        "tactical-and-solitary-frontiers",
+        "lone-survey-expedition-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-035 surveyor expedition plates lone survey expedition art hand-colored plates 2. tactical & solitary frontiers tactical & solitary frontiers lone survey expedition art pack_24 psychological & frontier aesthetics tactical-and-solitary-frontiers psychological-and-frontier-aesthetics tactical-and-solitary-frontiers lone-survey-expedition-art"
+    },
+    {
+      "id": "SP24-036",
+      "name": "Flooded-City Salvage Rower",
+      "styleAnchors": [
+        "Flooded-City Salvage Rower",
+        "lone salvage in drowned city",
+        "drowned towers"
+      ],
+      "ref": "pack_24/SP24-036.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "tactical-and-solitary-frontiers",
+      "categoryName": "2. Tactical & Solitary Frontiers",
+      "domain": "lone salvage in drowned city",
+      "tags": [
+        "psychological-and-frontier-aesthetics",
+        "tactical-and-solitary-frontiers",
+        "lone-salvage-in-drowned-city"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-036 flooded-city salvage rower lone salvage in drowned city drowned towers 2. tactical & solitary frontiers tactical & solitary frontiers lone salvage in drowned city pack_24 psychological & frontier aesthetics tactical-and-solitary-frontiers psychological-and-frontier-aesthetics tactical-and-solitary-frontiers lone-salvage-in-drowned-city"
+    },
+    {
+      "id": "SP24-037",
+      "name": "Polar Sledge Haul",
+      "styleAnchors": ["Polar Sledge Haul", "manhauling across ice", "lone sledge hauler"],
+      "ref": "pack_24/SP24-037.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "tactical-and-solitary-frontiers",
+      "categoryName": "2. Tactical & Solitary Frontiers",
+      "domain": "manhauling across ice",
+      "tags": [
+        "psychological-and-frontier-aesthetics",
+        "tactical-and-solitary-frontiers",
+        "manhauling-across-ice"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-037 polar sledge haul manhauling across ice lone sledge hauler 2. tactical & solitary frontiers tactical & solitary frontiers manhauling across ice pack_24 psychological & frontier aesthetics tactical-and-solitary-frontiers psychological-and-frontier-aesthetics tactical-and-solitary-frontiers manhauling-across-ice"
+    },
+    {
+      "id": "SP24-038",
+      "name": "Volcano Observatory Vigil",
+      "styleAnchors": [
+        "Volcano Observatory Vigil",
+        "lone volcano monitoring",
+        "crater rim station"
+      ],
+      "ref": "pack_24/SP24-038.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "tactical-and-solitary-frontiers",
+      "categoryName": "2. Tactical & Solitary Frontiers",
+      "domain": "lone volcano monitoring",
+      "tags": [
+        "psychological-and-frontier-aesthetics",
+        "tactical-and-solitary-frontiers",
+        "lone-volcano-monitoring"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-038 volcano observatory vigil lone volcano monitoring crater rim station 2. tactical & solitary frontiers tactical & solitary frontiers lone volcano monitoring pack_24 psychological & frontier aesthetics tactical-and-solitary-frontiers psychological-and-frontier-aesthetics tactical-and-solitary-frontiers lone-volcano-monitoring"
+    },
+    {
+      "id": "SP24-039",
+      "name": "Lighthouse Relief Keeper",
+      "styleAnchors": [
+        "Lighthouse Relief Keeper",
+        "isolated lighthouse keeping",
+        "rock lighthouse"
+      ],
+      "ref": "pack_24/SP24-039.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "tactical-and-solitary-frontiers",
+      "categoryName": "2. Tactical & Solitary Frontiers",
+      "domain": "isolated lighthouse keeping",
+      "tags": [
+        "psychological-and-frontier-aesthetics",
+        "tactical-and-solitary-frontiers",
+        "isolated-lighthouse-keeping"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-039 lighthouse relief keeper isolated lighthouse keeping rock lighthouse 2. tactical & solitary frontiers tactical & solitary frontiers isolated lighthouse keeping pack_24 psychological & frontier aesthetics tactical-and-solitary-frontiers psychological-and-frontier-aesthetics tactical-and-solitary-frontiers isolated-lighthouse-keeping"
+    },
+    {
+      "id": "SP24-040",
+      "name": "Nomad Radio Caravan",
+      "styleAnchors": ["Nomad Radio Caravan", "lone steppe radio caravan", "vast steppe"],
+      "ref": "pack_24/SP24-040.yaml",
+      "packId": "pack_24",
+      "packName": "Psychological & Frontier Aesthetics",
+      "categoryId": "tactical-and-solitary-frontiers",
+      "categoryName": "2. Tactical & Solitary Frontiers",
+      "domain": "lone steppe radio caravan",
+      "tags": [
+        "psychological-and-frontier-aesthetics",
+        "tactical-and-solitary-frontiers",
+        "lone-steppe-radio-caravan"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp24-040 nomad radio caravan lone steppe radio caravan vast steppe 2. tactical & solitary frontiers tactical & solitary frontiers lone steppe radio caravan pack_24 psychological & frontier aesthetics tactical-and-solitary-frontiers psychological-and-frontier-aesthetics tactical-and-solitary-frontiers lone-steppe-radio-caravan"
     }
   ],
-  "totalPresetCount": 6
+  "totalPresetCount": 40
 }

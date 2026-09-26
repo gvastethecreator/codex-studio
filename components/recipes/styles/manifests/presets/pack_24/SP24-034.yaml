@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP24-034
+packId: pack_24
+name: Rooftop Surveillance Night
+styleAnchors:
+  - Rooftop Surveillance Night
+  - urban night recon
+  - rooftop silhouette
+displayName: Rooftop Surveillance Night
+category: 2. Tactical & Solitary Frontiers
+domain: urban night recon
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - tactical-and-solitary-frontiers
+  - rooftop-surveillance
+  - art-direction
+  - frontier
+visualDna:
+  aesthetic: 'Rooftop surveillance night: a lone observer watching a rain-slick city from rooftops, painted in noir gouache with neon reflections and deep silhouettes.'
+  subject_treatment: Place the prompt's subject on a nighttime rooftop above a city, keeping it clear as a strong silhouette.
+  color_and_tone: Inky blues and blacks with neon magenta and teal reflections on wet surfaces.
+  lighting_and_shadow: City glow from below, rim light on the silhouette and deep rooftop shadow.
+  texture_and_material: Wet roof tar, rain, water tanks, antennas and binocular glass.
+  camera_and_composition: Figure on a roof edge with the city spread below, strong diagonals.
+  atmosphere_and_mood: Patient, watchful and alone, the city never notices.
+  rendering_and_quality: Noir gouache painting with crisp silhouettes and glowing reflections.
+  creative_brief: "Rooftop surveillance night: a lone observer watching a rain-slick city from rooftops, painted in noir gouache with neon reflections and deep silhouettes. Carry it through rooftop silhouette, rain-slick city below, neon reflections, binoculars. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: rooftop silhouette; rain-slick city below; neon reflections; binoculars
+avoidRules:
+  - daylight
+  - readable signs
+  - gore
+  - real military insignia
+  - real brand or company logo
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: daylight, readable signs, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_24
+  packName: Psychological & Frontier Aesthetics
+  categoryId: tactical-and-solitary-frontiers
+  categoryName: 2. Tactical & Solitary Frontiers
+  tags:
+    - curation-v2
+    - tactical-and-solitary-frontiers
+    - rooftop-surveillance
+    - art-direction
+    - frontier
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: urban night recon
