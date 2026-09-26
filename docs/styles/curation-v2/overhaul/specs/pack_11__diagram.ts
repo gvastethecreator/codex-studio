@@ -51,9 +51,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a sun-faded, creased blueprint pinned to a workshop bench showing plans for a clockwork dragon, white lines on faded cyan, pencil corrections, coffee rings, a brass caliper and candle stub holding the corners. No readable text or numbers.',
-        'Old folded blueprint of a siege tower spread on a tavern table, torn fold lines, wax drips, a dagger holding it flat, faint pencil circles. No readable text or numbers.',
-        'Faded blueprint of a lighthouse lantern mechanism taped to a salt-stained wall, curling corners and rust from drawing pins. No readable text or numbers.',
+        "Pinned to a workshop bench, a sun-faded and creased sheet shows plans for a clockwork dragon in white lines on blue, oily thumbprints at the corners. No readable text or logo.",
+        "Spread across a tavern table, an old folded plan of a siege tower is held flat by a dagger, torn fold lines and wax drips across the blue. No readable text or logo.",
+        "Taped to a salt-stained wall, the plan of a lighthouse lantern mechanism curls at the corners, rust bleeding from the pins. No readable text or logo.",
       ],
     },
   },
@@ -73,9 +73,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Hachure relief map of a volcanic island shaped like a sleeping dragon, thousands of brown slope strokes forming its ridges and crater, blue rivers, a tiny port town and a compass rose on cream paper. No readable text or numbers.',
-        'Hachure relief map of a narrow mountain pass guarded by a fortress on a spur, dense black strokes on the cliffs, a thin road switchbacking through, a glacier drawn in sparse blue strokes. No readable text or numbers.',
-        'Hachure map of a round crater lake ringed by tree symbols and a ruined abbey on its shore, soft strokes on gentle slopes and steep dense ones on the inner rim, compass rose in the corner. No readable text or numbers.',
+        "A volcanic island shaped like a sleeping beast is drawn in thousands of short brown slope strokes, dense on its ridged spine. No readable text or logo.",
+        "A narrow mountain pass guarded by a fortress on a spur is drawn in dense black strokes down the cliffs, a thin river in the gorge. No readable text or logo.",
+        "A round crater lake is ringed by tree symbols and a ruined abbey on its shore, soft slope strokes on the gentle banks. No readable text or logo.",
       ],
     },
     {
@@ -93,9 +93,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Naval lines plan of a dragon-prowed longship: sheer profile with a carved serpent stem, half-breadth waterlines and a nested body plan of station curves, fine sepia ink on drafting linen. No readable text or numbers.',
-        'Naval lines plan of a tall-sterned galleon with a castle-like stern and carved gallery, flowing waterlines in the half-breadth, nested body plan curves, faded sepia ink with a torn corner. No readable text or numbers.',
-        'Naval lines plan of a whale-shaped submersible with fin rudders and a riveted conning hump, profile, half-breadth and body plan linked by faint projection lines on drafting linen. No readable text or numbers.',
+        "A serpent-prowed longship is drawn in sheer profile, half-breadth waterlines and a neat body plan of flowing sections. No readable text or logo.",
+        "A tall-sterned galleon with a carved gallery flows through half-breadth waterlines and stacked body sections in fine ink. No readable text or logo.",
+        "A whale-shaped submersible with fin rudders and a riveted conning hump is drawn in profile, half-breadth and body plan. No readable text or logo.",
       ],
     },
     {
@@ -113,9 +113,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Piping isometric drawing of an alchemist laboratory still: single-line pipes on a 30-degree grid running between a cauldron, condensers and potion tanks, valve and flange symbols, flow arrows, blank title block. No readable text or numbers.',
-        'Piping isometric of a dragon fire-breathing system drawn inside a faint dragon outline: fuel bladders, pumps, check valves and a nozzle at the jaw, single-line pipes on a 30-degree grid with red flow arrows. No readable text or numbers.',
-        'Piping isometric of a castle water system running from a deep well through a cistern, pumps and valves to a courtyard fountain and kitchen basin, single-line pipes on an isometric grid with blue flow arrows. No readable text or numbers.',
+        "An alchemist's laboratory still is drawn as single-line pipes on a 30-degree grid running between a cauldron, condenser and flasks. No readable text or logo.",
+        "Inside a faint outline of a great beast, fuel bladders, pumps and check valves are piped in single lines toward its jaws. No readable text or logo.",
+        "A fortress water system runs in single lines from a deep well through a cistern, pumps and valves to a courtyard fountain. No readable text or logo.",
       ],
     },
     {
@@ -133,9 +133,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Star-fort fortification plan of a city built around a sleeping dragon at its center, angular bastions, blue moat, ravelins and dashed lines of fire, ink and watercolor wash on old paper. No readable text or numbers.',
-        'Star-fort plan under siege: angular bastions and blue moat at the center, zigzag approach trenches, artillery batteries and a besieging camp of tent rows around it, ink and watercolor wash on old paper. No readable text or numbers.',
-        'Star-fort plan of a fortress built on a floating rock island, bastions following the jagged cliff edge, chains anchoring it to the ground drawn as dashed lines, sky-blue wash instead of a moat. No readable text or numbers.',
+        "A city of angular bastions and a blue moat surrounds a sleeping beast coiled at its center, ravelins pointing outward. No readable text or logo.",
+        "Angular bastions and a blue moat sit under siege as zigzag approach trenches and artillery batteries creep closer. No readable text or logo.",
+        "A fortress on a floating rock island has bastions following the jagged cliff edge, chains anchoring it to the ground far below. No readable text or logo.",
       ],
     },
     {
@@ -153,9 +153,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Horological drawing of the clockwork heart of a mechanical owl: escapement, wheel train and mainspring in front and side views, brass wash, detail circle on the pallet fork. No readable text or numbers.',
-        'Horological drawing of the arm mechanism of a knight automaton: cam stack, levers, springs and a sword-grip linkage in front and side views, brass wash, detail circle on the elbow pivot. No readable text or numbers.',
-        'Horological drawing of a tower clock escapement with a long pendulum, anchor pallets and great wheel, steel-blue and brass washes, detail circles on the pallets and suspension spring. No readable text or numbers.',
+        "Inside a mechanical owl, the ticking heart is drawn in front and side views, escapement, wheel train and mainspring rendered in fine ink with blue wash. No readable text or logo.",
+        "The arm mechanism of a warrior automaton is drawn with cam stack, levers, springs and a sword-grip linkage in steel-blue wash. No readable text or logo.",
+        "A tower clock escapement with a long pendulum, anchor pallets and great wheel is drawn in steel-blue and brass washes. No readable text or logo.",
       ],
     },
     {
@@ -173,9 +173,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Renaissance invention notebook page: sepia pen sketches of a flying machine with bat wings, a gear study and a hand gripping a lever, dense unreadable script marks around them, red chalk shading and foxing. No readable text.',
-        'Renaissance notebook page of anatomy and motion studies for a walking automaton: sepia sketches of a leg at four stages, pulley diagrams and a small portrait of its inventor, unreadable mirror-script marks and red chalk. No readable text.',
-        'Renaissance notebook page of war machine designs: a giant siege crossbow, a scythed chariot and a covered battering ram, sepia pen and wash, script marks and foxing. No readable text.',
+        "A sepia notebook page holds sketches of a flying machine with bat wings, a gear study and a hand gripping a lever. No readable text or logo.",
+        "Anatomy and motion studies for a walking automaton fill a sepia page, a leg drawn at four stages of a stride. No readable text or logo.",
+        "War machine designs crowd a sepia page, a giant siege crossbow, a scythed chariot and a covered battering ram. No readable text or logo.",
       ],
     },
     {
@@ -193,9 +193,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Axonometric drawing of a witch tower with the roof lifted away to show floors of bedrooms, a library and an attic of bats, flat pastel fills and crisp black lines floating on white. No readable text or numbers.',
-        'Axonometric drawing of a mountain monastery with the cloister roof removed, showing the scriptorium, refectory, cells and a bell tower, flat pastel fills and crisp black lines on white. No readable text or numbers.',
-        'Exploded axonometric of a crossroads tavern: roof lifted, upper rooms, busy common room with hearth and a cellar of barrels and a hidden tunnel below, flat pastel colors and crisp lines. No readable text or numbers.',
+        "A witch's tower is shown from above with its roof lifted away, floors of bedrooms, a library and an attic full of bats. No readable text or logo.",
+        "A mountain monastery is drawn in parallel projection with the cloister roof removed to show scriptorium, refectory and cells. No readable text or logo.",
+        "A crossroads tavern explodes upward in parallel projection, roof lifted, upper rooms, a busy common room and a cellar of barrels. No readable text or logo.",
       ],
     },
     {
@@ -213,9 +213,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Urban figure-ground plan of a medieval city where the white streets and squares together form the silhouette of a leaping fish, solid black building blocks, top-down. No readable text or numbers.',
-        'Figure-ground plan of a walled medieval city, solid black building blocks, a white cathedral square at the center and white streets radiating to four gates in the city wall. No readable text or numbers.',
-        'Figure-ground plan of a canal city where the white canals and squares form a serpent winding between dense black building blocks. No readable text or numbers.',
+        "In a medieval city plan the white streets and squares together form the silhouette of a leaping stag between solid black blocks. No readable text or logo.",
+        "A walled medieval city appears as solid black building blocks around a white cathedral square and white winding lanes. No readable text or logo.",
+        "In a canal city plan the white waterways and squares wind like a serpent between dense black buildings. No readable text or logo.",
       ],
     },
     {
@@ -233,9 +233,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Stage lighting plot for a play about a storm at sea: set outline of a ship deck, lighting instrument symbols on battens, colored beam zones in blue and white across the stage, top-down plan. No readable text or numbers.',
-        'Stage lighting plot for a ghost scene: set outline of a graveyard, instrument symbols on three battens, a pale blue beam zone around a trapdoor and a single cold spot on a gravestone, top-down plan. No readable text or numbers.',
-        'Stage lighting plot for a haunted ballroom scene: chandelier outline at center, instruments on battens and side booms, warm amber zones for the dance floor and red zones at the doors. No readable text or numbers.',
+        "A theatre plan for a storm at sea shows the outline of a ship deck, instrument symbols on battens and green beam zones sweeping over it. No readable text or logo.",
+        "A theatre plan for a ghost scene outlines a graveyard set, instruments on three battens and one pale blue beam at center. No readable text or logo.",
+        "A theatre plan for a haunted ballroom places a chandelier outline at center, instruments on battens and side booms. No readable text or logo.",
       ],
     },
     {
@@ -253,9 +253,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Origami crease pattern on a square sheet for a scorpion, red mountain and blue valley lines forming a dense geometric web, the small folded scorpion sitting beside it. No readable text or numbers.',
-        'Origami crease pattern pinned to a workshop wall for a flapping bird with wings in motion, radial red and blue fold lines, three test folds in different papers taped beside it. No readable text or numbers.',
-        'Origami crease pattern for a crane with an extra-long tail, clean radial red and blue lines on a square sheet, the folded crane and a bone folder beside it. No readable text or numbers.',
+        "A square sheet is covered in red mountain and blue valley lines forming a dense geometric web that will fold into a scorpion. No readable text or logo.",
+        "Pinned to a workshop wall, radial red and blue fold lines on a square sheet promise a bird with flapping wings. No readable text or logo.",
+        "Clean radial red and blue lines on a square sheet map a crane with an extra-long tail, the folded bird resting beside it. No readable text or logo.",
       ],
     },
     {
@@ -273,9 +273,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Knot tying diagram in six step panels showing how a sailor lashes a whale-bone harpoon head to its shaft, red and cream two-tone rope, arrows for each wrap and tuck, final panel with the tight lashing. No readable text or numbers.',
-        'Knot diagram in four panels showing how to tie a rope bridge plank to its hand lines over a chasm, arrows and cross-sections of the hitch, pale cream background. No readable text or numbers.',
-        'Step diagram of tying a fishing net mesh knot, blue and white rope, arrows looping around a netting needle, the finished net corner in the last panel with a caught silver fish. No readable text or numbers.',
+        "Six step panels show how a sailor lashes a bone harpoon head to its shaft, red and cream rope with arrows at each pass. No readable text or logo.",
+        "Four panels show how to tie a rope bridge plank to its hand lines over a chasm, arrows and cross-sections at every turn. No readable text or logo.",
+        "Step panels show a fishing net mesh knot in blue and white rope, arrows looping around a netting needle. No readable text or logo.",
       ],
     },
     {
@@ -293,9 +293,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Dance step diagram of a skeleton waltz: pairs of bony footprints spiraling across a ballroom floor plan, red curved arrows for each turn, dotted paths and tiny skull markers for the partners, printed on yellowed paper. No readable text or numbers.',
-        'Dance step diagram of a medieval court dance in two facing lines, footprints stepping forward and back, arrows for bows and turns, a small crown marker for the king. No readable text or numbers.',
-        'Dance step diagram of a witches circle dance around a bonfire symbol, footprints looping in a ring, dotted paths crossing through the center. No readable text or numbers.',
+        "Pairs of bony footprints spiral across a ballroom floor plan for a skeleton waltz, red curved arrows marking every turn. No readable text or logo.",
+        "A medieval court dance in two facing lines steps forward and back in footprints, arrows marking bows and turns. No readable text or logo.",
+        "Footprints loop in a ring around a bonfire symbol for a witches' circle dance, dotted paths crossing through the middle. No readable text or logo.",
       ],
     },
     {
@@ -313,9 +313,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Weaving draft on graph paper whose large drawdown pattern of black filled squares forms a leaping deer, threading grid across the top, tie-up in the corner and treadling down the side, a pencil and loose thread beside it. No readable text or numbers.',
-        'Weaving draft whose drawdown reveals a repeating castle-and-tree border in deep red squares, neat grids around it, a wooden shuttle resting on the page. No readable text or numbers.',
-        'Weaving draft whose drawdown forms a field of small skulls and diamonds, black squares on aged graph paper, eraser smudges. No readable text or numbers.',
+        "On graph paper a large drawdown of black filled squares forms a leaping deer, threading grid and tie-up blocks framing it. No readable text or logo.",
+        "A drawdown reveals a repeating fortress-and-tree border in deep red squares, neat grids around it and a wooden shuttle resting nearby. No readable text or logo.",
+        "A drawdown forms a field of small skulls and diamonds in black squares on aged graph paper, eraser smudges at the edges. No readable text or logo.",
       ],
     },
     {
@@ -333,9 +333,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Survey plat of a haunted village divided into lots, one parcel shaded black around an abandoned chapel, corner monuments, a creek easement and a north arrow on yellowed linen. No readable text or numbers.',
-        'Survey plat of an old graveyard laid out in neat grave lots with a crooked path, one lot outlined twice in red. No readable text or numbers.',
-        'Survey plat of a castle estate: keep, orchards, mill and village lots with straight boundaries, a river meander and faint green washes. No readable text or numbers.',
+        "A haunted village is divided into lots, one parcel shaded black around an abandoned chapel, corner monuments at every angle. No readable text or logo.",
+        "An old graveyard is laid out in neat ruler-straight lots along a crooked path, one lot outlined twice in red. No readable text or logo.",
+        "A manor estate is surveyed with straight boundaries around keep, orchards, mill and village lots beside a meandering river. No readable text or logo.",
       ],
     },
     {
@@ -353,9 +353,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Gear train drawing for the wing mechanism of a clockwork bat, meshing gears in pitch circles, a crank and linkage to the wing spar, rotation arrows and a side section. No readable text or numbers.',
-        'Gear train drawing of a water-mill mechanism in side section: waterwheel shaft, pit wheel, crown gear and millstone spindle, compass-drawn tooth outlines and rotation arrows. No readable text or numbers.',
-        'Gear train drawing of an astronomical clock with nested planetary gears, a moon-phase disk and a plain star dial, pitch circles in grey and fine ink teeth. No readable text or numbers.',
+        "The wing mechanism of a clockwork bat is drawn as meshing gears in pitch circles, a crank and linkage reaching the wings. No readable text or logo.",
+        "A water mill's mechanism is sectioned from the side, waterwheel shaft, pit wheel, crown gear and millstone spindle. No readable text or logo.",
+        "An astronomical clock's nested planetary gears drive a moon-phase disk and a plain star dial in pitch circles. No readable text or logo.",
       ],
     },
     {
@@ -373,9 +373,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Ship rigging diagram of a ghost galleon in profile, tattered sails outlined in pale washes, every stay, shroud and halyard drawn as a fine web, a figurehead of a drowned queen. No readable text or numbers.',
-        'Rigging diagram of a war galleon with three masts and a spritsail, fine pen lines and pale sail washes. No readable text or numbers.',
-        'Rigging diagram of a smuggler sloop in profile with a single tall mast, long bowsprit and furled sails, every halyard and stay drawn as a fine line, pale sea wash below. No readable text or numbers.',
+        "A ghost galleon in profile shows tattered sails in pale washes, every stay, shroud and halyard drawn as a fine line. No readable text or logo.",
+        "A three-masted war galleon with a spritsail is drawn in fine pen lines and pale sail washes, every line of rigging accounted for. No readable text or logo.",
+        "A smuggler's sloop with one tall mast, a long bowsprit and furled sails shows every halyard and sheet in fine ink. No readable text or logo.",
       ],
     },
     {
@@ -393,9 +393,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Architectural elevation of a gothic cathedral west front: rose window, pointed portals and gargoyles, grey and sepia wash shadows, tiny scale figures on the steps. No readable text or numbers.',
-        'Elevation of a wizard tower with spiral balconies, ink and wash, a cat on the ground line for scale. No readable text or numbers.',
-        'Architectural elevation of a fortified city gate with twin towers, raised portcullis and hanging banners, sepia wash shadows in the arch and tiny guards on the walls for scale. No readable text or numbers.',
+        "A gothic cathedral's west front stands flat and frontal, rose window, pointed portals and gargoyles in grey and sepia wash. No readable text or logo.",
+        "A wizard's tower with spiral balconies stands in flat ink and wash, a cat sitting on the ground line for scale. No readable text or logo.",
+        "A fortified city gate with twin towers, a raised portcullis and hanging banners is drawn flat with sepia wash shadows. No readable text or logo.",
       ],
     },
     {
@@ -413,9 +413,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Landscape plan of a hedge maze with a sunken garden and a black obelisk at the center, contour lines, canopy circles for yews and colored-pencil greens. No readable text or numbers.',
-        'Landscape plan of a monastery cloister garden with four herb beds around a central well, canopy circles for fruit trees, gravel paths and colored-pencil greens on paper. No readable text or numbers.',
-        'Landscape plan of a sacred grove on a hill around a stone circle, contour lines rising to the summit, oak canopies as shaded circles and a winding pilgrim path. No readable text or numbers.',
+        "Seen from above, a hedge maze wraps around a sunken garden with a black obelisk at its center, contour lines and canopy circles. No readable text or logo.",
+        "Four herb beds surround a central well inside a monastery cloister seen from above, canopy circles marking the fruit trees along its walks. No readable text or logo.",
+        "A sacred grove climbs a hill around a stone circle, contour lines rising to the summit and oak canopies as shaded circles. No readable text or logo.",
       ],
     },
     {
@@ -433,9 +433,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Stereotomy drawing of a skewed pointed arch over a crypt entrance, every voussoir block projected with fine construction lines and pale sandstone washes. No readable text or numbers.',
-        'Stereotomy drawing of a ribbed gothic vault with each rib stone unfolded into flat templates beside the projection, fine construction lines and pale sandstone washes. No readable text or numbers.',
-        'Stereotomy drawing of a spiral staircase inside a round tower, each step stone projected in plan and elevation, fine construction lines radiating from the newel. No readable text or numbers.',
+        "A skewed pointed arch over a crypt entrance is projected block by block, every voussoir traced with fine construction lines. No readable text or logo.",
+        "A ribbed gothic vault unfolds each rib stone into flat templates beside its projection in fine lines. No readable text or logo.",
+        "A spiral staircase inside a round tower is projected step by step in plan and elevation, fine construction lines everywhere. No readable text or logo.",
       ],
     },
   ] satisfies Create[],

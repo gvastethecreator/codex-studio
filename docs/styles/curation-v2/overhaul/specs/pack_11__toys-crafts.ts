@@ -20,9 +20,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Tabletop photograph of a black-and-dark-red interlocking-brick dragon coiled around a crumbling grey brick watchtower, wings made of stepped plate pieces, translucent orange bricks for fire in its throat, studs catching the studio light. No logos or text.',
-        'Interlocking-brick diorama of a torchlit dungeon crypt: a skeleton knight rising from a brick sarcophagus, translucent green bricks for ghost light, loose spare bricks scattered at the edge of the baseplate. No logos or text.',
-        'Close macro photograph of a brick-built galleon listing in a sea of stacked blue and white bricks, torn sail made of flat tiles, a kraken tentacle built from curved slopes wrapping the mast. No logos or text.',
+        "A black-and-dark-red dragon coils around a crumbling grey watchtower on a tabletop, its wings built from hinged plates and every stud catching the lamp. No readable text or logo.",
+        "In a torchlit crypt a skeleton warrior rises from a stacked-brick sarcophagus, translucent green pieces glowing through the cracks like cursed light. No readable text or logo.",
+        "A galleon lists in a sea of stacked blue and white bricks, its torn sail made of flat tiles and a tiny minifigure-sized crew bailing water. No readable text or logo.",
       ],
     },
     'SP11-002': {
@@ -38,9 +38,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Studio photograph of a big-head vinyl collectible of an original plague doctor: huge square head with a long beak mask, blank round black eyes, tiny body in a black coat, holding a lantern, standing on a shelf. No logos or text.',
-        'Big-head vinyl collectible of an original undead queen with a cracked crown, grey-green matte skin, blank black eyes and a tiny body in a torn violet gown, photographed beside a plain unprinted window box. No logos or text.',
-        'Row of three big-head vinyl collectibles on a desk: an original armored orc warlord, a hooded rogue and a horned demon cleric, all with oversized heads, tiny bodies and blank black eyes, factory seam lines visible. No logos or text.',
+        "An original plague doctor stands on a studio sweep with a huge square head, a long beak mask and blank round black eyes above a tiny body. No readable text or logo.",
+        "An undead queen with a cracked crown and grey-green matte skin stares with blank black eyes, her tiny body clutching an even tinier scepter. No readable text or logo.",
+        "Three collectible figures line up on a desk, an armored orc warlord, a hooded rogue and a horned demon cleric, all oversized heads and identical tiny feet. No readable text or logo.",
       ],
     },
     'SP11-003': {
@@ -56,9 +56,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Tabletop photograph of a soft modeling-dough dragon with fingerprints pressed into its purple belly, pinched yellow wings, small drying cracks and a lopsided grin, perched on a dough treasure pile. No logos or text.',
-        'Modeling-dough haunted graveyard on a kitchen table: lumpy grey tombstones, a green dough ghost with thumb-pressed eyes, a crooked orange pumpkin, crumbs and cutter tools around it. No logos or text.',
-        "Close photograph of a modeling-dough knight losing a duel to a dough snail, the knight's helmet squashed flat, colors partly smeared together where small hands mixed them. No logos or text.",
+        "A soft purple dough dragon shows fingerprints pressed into its belly, pinched yellow wings and a small crack where its neck bends. No readable text or logo.",
+        "A haunted graveyard sprawls across a kitchen table, lumpy grey tombstones, a green ghost with thumb-pressed eyes and a crooked gate leaning in the breeze. No readable text or logo.",
+        "A dough knight loses a duel to a dough snail, his helmet squashed flat and the colors smearing where the two collided. No readable text or logo.",
       ],
     },
     'SP11-004': {
@@ -73,9 +73,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a low-poly papercraft wolf howling on a desk under a lamp, grey faceted panels with sharp valley folds, glue tabs peeking from its belly, a cutting mat and scalpel beside it. No text or logo.',
-        'Low-poly papercraft skull lantern made of black and bone-white faceted card, a tealight glowing through its hollow eye sockets, visible creases and slightly lifting glue tabs. No text or logo.',
-        'Low-poly papercraft stag with enormous faceted antlers standing in a forest of folded paper pine trees, soft window light raking across every facet. No text or logo.',
+        "Under a desk lamp a folded paper wolf howls, grey faceted panels meeting at sharp valley folds with glue tabs peeking at the seams. No readable text or logo.",
+        "A faceted paper skull lantern in black and bone-white card glows as a tealight shines through its hollow eye sockets. No readable text or logo.",
+        "A stag with enormous folded antlers stands in a forest of paper pine trees, window light raking across every flat facet. No readable text or logo.",
       ],
     },
     'SP11-005': {
@@ -90,9 +90,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a crocheted amigurumi dragon in moss-green yarn with safety eyes, tiny felt wings sewn on slightly crooked, sitting inside a chipped teacup on a wooden table. No text or logo.',
-        'Amigurumi crocheted lich in black and bone-colored yarn with a tiny stitched crown and yellow safety eyes, holding a crocheted skull staff, yarn fuzz glowing in soft side light. No text or logo.',
-        'Family of crocheted amigurumi mushrooms with sleepy stitched faces around a crocheted toadstool house, visible spiral stitch rows and stuffing slightly showing at one seam. No text or logo.',
+        "A moss-green crocheted dragon with safety eyes sits on a windowsill, its tiny felt wings sewn on slightly crooked. No readable text or logo.",
+        "A crocheted lich in black and bone yarn wears a tiny stitched crown and yellow safety eyes, holding a crocheted skull like a teacup. No readable text or logo.",
+        "A family of sleepy crocheted mushrooms gathers around a toadstool house, spiral stitch rows visible on every cap. No readable text or logo.",
       ],
     },
     'SP11-016': {
@@ -107,9 +107,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a plush dragon in charcoal minky fabric with embroidered sleepy eyes and floppy felt wings, one seam slightly puckered, lying on a rumpled quilt in morning light. No text or logo.',
-        'Soft plush grim reaper toy with a hooded black minky robe, an embroidered friendly skull face and a felt scythe, sitting on a bookshelf next to an unlit candle. No text or logo.',
-        'Plush kraken in deep purple velboa with eight stuffed tentacles, embroidered curious eyes and satin suckers, sprawled over the edge of a bed. No text or logo.',
+        "A charcoal plush dragon with embroidered sleepy eyes and floppy felt wings slumps on a pillow, one seam slightly puckered at the neck. No readable text or logo.",
+        "A soft grim reaper toy in a hooded black robe grins with an embroidered friendly skull, a felt scythe tucked under its arm on a bookshelf. No readable text or logo.",
+        "A deep purple plush kraken sprawls over the edge of a bathtub, eight stuffed tentacles and satin suckers dangling toward the floor. No readable text or logo.",
       ],
     },
     'SP11-017': {
@@ -124,9 +124,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a 90s-style action figure of an original barbarian warlord with sculpted muscles, visible swivel joints at shoulders and knees, simple paint apps, raising a molded axe on a rock-diorama base. No logos or text.',
-        '90s-style action figure of an original skeleton king on a molded bone-throne playset, glow-in-the-dark green plastic eyes, visible hip and neck joints, slight paint rub on the crown. No logos or text.',
-        'Two 90s-style action figures mid-battle on a bedroom carpet: an original lizard-man warrior and a knight with a spring-loaded sword, joints visible, lit like an old toy catalog photo. No logos or text.',
+        "An original barbarian warlord with sculpted plastic muscles and visible swivel joints poses on a cardboard mountain, painted scars slightly off register. No readable text or logo.",
+        "An original skeleton king sits on a molded bone-throne playset, his glow-in-the-dark eyes lit green and one arm stuck at a strange angle. No readable text or logo.",
+        "Two plastic figures clash mid-battle on a bedroom carpet, a lizard-man warrior and a knight whose spring-loaded sword arm is caught mid-swing. No readable text or logo.",
       ],
     },
     'SP11-018': {
@@ -141,9 +141,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a twisted balloon-art dragon in glossy green and orange modeling balloons, wings made of looped twists, knotted tail, on a party table with light glinting off the latex. No text or logo.',
-        'Balloon-art knight riding a balloon horse, silver and black twisted balloons for armor, a long red balloon lance, one balloon slightly deflated and wrinkled. No text or logo.',
-        'Giant balloon-art spider in black and purple long balloons hanging over a haunted party doorway, legs made of bent twisted balloons, glossy highlights. No text or logo.',
+        "A glossy green and orange dragon twisted from long modeling balloons spreads looped wings, its knotted tail squeaking against the table. No readable text or logo.",
+        "A knight in silver and black twisted balloons rides a balloon horse, his long red lance already sagging a little at the tip. No readable text or logo.",
+        "A giant black and purple spider made of twisted balloons hangs over a haunted party doorway, bent legs bobbing in the draft. No readable text or logo.",
       ],
     },
     'SP11-020': {
@@ -158,9 +158,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a turned-wood pull-along crocodile toy with painted green segments that wiggle on hidden pegs, red wooden wheels, simple black painted eyes and a string handle, on a worn floorboard. No text or logo.',
-        'Set of turned-wood peg figures: round-headed knights with painted helmets and tiny carved shields guarding a castle of stacked painted wooden blocks. No text or logo.',
-        'Hand-carved wooden wolf toy with visible knife facets, oiled beech grain and a single carved red tongue, beside wood shavings and a whittling knife. No text or logo.',
+        "A turned-wood pull-along crocodile wiggles on hidden pegs, painted green segments rolling on red wooden wheels across the floorboards. No readable text or logo.",
+        "Round-headed peg knights with painted helmets and tiny carved shields guard a castle of stacked painted blocks. No readable text or logo.",
+        "A hand-carved wolf shows knife facets across oiled beech grain and a single red carved tongue, curls of shavings around its paws. No readable text or logo.",
       ],
     },
     'SP11-021': {
@@ -175,9 +175,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a glossy die-cut vinyl sticker of a grumpy owl clutching a steaming mug, thick white border, stuck slightly crooked on a scratched wooden desk beside a pencil. No text or logo.',
-        'Sheet of glossy die-cut vinyl stickers of dark fantasy creatures: a skull moth, a cursed crown, a one-eyed bat and a cute lich, each with a thick white border, one sticker half peeled. No text or logo.',
-        'Weathered vinyl sticker of a howling wolf stuck on a battered metal lunchbox, white border scuffed, gloss cracking and a corner lifting. No text or logo.',
+        "A grumpy owl clutching a steaming mug is printed on a glossy die-cut vinyl piece with a thick white border, stuck slightly crooked on a laptop. No readable text or logo.",
+        "A glossy die-cut sheet of dark fantasy creatures shows a skull moth, a cursed crown, a one-eyed bat and a cute lich, each ringed in white. No readable text or logo.",
+        "A howling wolf peels from a battered metal lunchbox, its white border scuffed, gloss cracking and one corner lifting away. No readable text or logo.",
       ],
     },
     'SP11-022': {
@@ -192,9 +192,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Stop-motion still of an original plasticine baker with a wide nervous grin and bulging eyes watching a plasticine cake rise out of control on a miniature kitchen set, fingerprints visible on everything. No text or logo.',
-        'Plasticine witch with a huge toothy grin stirring a bubbling cauldron of green clay blobs in a cramped miniature cottage set, fingerprints and tool marks on everything. No logos or text.',
-        'Plasticine feast scene: a round-faced king with a startled grin as a plasticine roast pig sits up on the banquet table, clay candles, warm miniature-set light. No logos or text.',
+        "A plasticine baker with a wide nervous grin and bulging eyes watches a clay cake rise out of the oven and keep rising. No readable text or logo.",
+        "A plasticine witch with a huge toothy grin stirs a cauldron of green clay blobs in a cramped miniature cottage covered in fingerprints. No readable text or logo.",
+        "A round-faced plasticine king grins in shock as the roast pig sits up on the banquet table, the clay candles leaning away in alarm. No readable text or logo.",
       ],
     },
     'SP11-023': {
@@ -209,9 +209,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a wind-up tin toy submarine with lithographed red and gold rivets, folded tin tabs at the seams, a large brass wind-up key on its tail and rust spots at the edges. No text or logo.',
-        'Photograph of a tin toy acrobat on a trapeze with a lithographed striped costume, bent tab joints and a wind-up key, slightly dented and faded from years of play. No text or logo.',
-        'Photograph of a tin toy merry-go-round with lithographed horses circling under a striped tin roof, wind-up key underneath, soft reflections on the metal. No text or logo.',
+        "A wind-up submarine of lithographed tin shows red and gold printed rivets, folded tabs at the seams and a large brass key turning on its back. No readable text or logo.",
+        "A tin acrobat swings on a trapeze in a lithographed striped costume, bent tab joints creaking as the key unwinds. No readable text or logo.",
+        "A tin merry-go-round spins lithographed horses under a striped tin roof, the wind-up key underneath slowly turning. No readable text or logo.",
       ],
     },
     'SP11-024': {
@@ -226,9 +226,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a shadow-box diorama of an underground mushroom library inside an old wooden box, layered cut-paper cave walls, tiny bookshelves and a mouse reading by a bead lamp. No text or logo.',
-        "Shadow-box diorama of a witch's cottage interior at night, layered card walls, miniature bottles and a tiny cauldron, warm light from a hidden bulb. No text or logo.",
-        'Deep shadow-box diorama of a sunken ship on the sea floor, layered cut-paper waves, miniature fish on wires and a skeleton captain at the wheel. No text or logo.',
+        "Inside an old wooden box an underground mushroom library glows, layered cut-paper cave walls and tiny shelves receding into the dark. No readable text or logo.",
+        "A witch's cottage interior at night fills a deep box, layered card walls, miniature bottles and a tiny cauldron lit by warm light. No readable text or logo.",
+        "A sunken ship rests on the floor of a deep box, layered paper waves above, miniature fish on wires and a skeleton captain at the wheel. No readable text or logo.",
       ],
     },
     'SP11-025': {
@@ -243,9 +243,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a stitched cloth doll of an original witch with mismatched black button eyes, grey yarn hair and a patched black dress, sitting on a dusty windowsill at dusk. No text or logo.',
-        'Button-eyed cloth doll of a lighthouse keeper with a felt cap and a knitted scarf, one button eye hanging by a thread, lying in an old toy chest beside a wooden boat. No text or logo.',
-        'Stitched cloth doll of an original little ghost bride with pale linen skin, black button eyes and a torn lace veil, seated in a wicker chair in a dim attic. No text or logo.',
+        "A stitched cloth witch with mismatched black button eyes, grey yarn hair and a patched black dress sits slumped on a shelf. No readable text or logo.",
+        "A cloth lighthouse keeper with a felt cap and knitted scarf lies in an attic trunk, one button eye hanging by a thread. No readable text or logo.",
+        "A ghost bride doll of pale linen with black button eyes and a torn lace veil sits alone in a wicker chair. No readable text or logo.",
       ],
     },
     'SP11-027': {
@@ -260,9 +260,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a garden sculpture of a giant snail covered in hand-cut glazed ceramic tiles in greens, turquoise and gold, grey grout lines, sitting among ferns. No text or logo.',
-        'Photograph of a craft mosaic birdhouse covered in broken china fragments with blue floral patterns and white grout, mounted on a garden fence. No text or logo.',
-        'Craft mosaic owl birdbath with small bright glazed tiles, uneven grout and a few missing tiles, water in the basin reflecting the sky. No text or logo.',
+        "A giant garden snail is covered in hand-cut glazed tiles of green, turquoise and gold, grey grout filling every uneven gap. No readable text or logo.",
+        "A birdhouse covered in broken china fragments with blue floral patterns hangs on a garden post, white grout between the shards. No readable text or logo.",
+        "An owl-shaped birdbath of small bright glazed tiles has uneven grout and a few missing pieces, the water reflecting the sky. No readable text or logo.",
       ],
     },
     'SP11-029': {
@@ -277,9 +277,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of an embroidery hoop with a stitched octopus wrapping around a sunken ship, satin-stitch tentacles, stem-stitch outlines and French-knot bubbles on natural linen. No text or logo.',
-        "Embroidered death's-head moth in muted gold and black threads on dark linen, satin-stitched wings, loose threads and a needle resting in the hoop. No text or logo.",
-        'Embroidery hoop of a gardener kneeling in a thorny rose garden, long-and-short stitch shading on the roses, a few unfinished areas with pencil lines still showing. No text or logo.',
+        "An octopus wraps around a sunken ship inside an embroidery hoop, satin-stitch tentacles and stem-stitch outlines on pale linen. No readable text or logo.",
+        "A death's-head moth is stitched in muted gold and black threads on dark linen, loose threads trailing and a needle resting on its wing. No readable text or logo.",
+        "A gardener kneels in a thorny rose garden in long-and-short stitch shading, a few areas left unfinished in the hoop. No readable text or logo.",
       ],
     },
     'SP11-030': {
@@ -294,9 +294,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a glass bottle filled with layered colored sand forming a camel caravan crossing dunes at sunset, sharp strata lines, backlit by a window. No text or logo.',
-        'Sand-art bottle showing a dark castle at sunset in layers of red, orange, purple and black sand, a few grains spilled on the table. No text or logo.',
-        'Framed sand-art picture of a ship in a storm, layered blue and grey sand between glass panes, some layers shifted as if the frame was tilted. No text or logo.',
+        "A camel caravan crosses dunes at sunset inside a glass bottle of layered colored sand, sharp strata lines forming the dunes. No readable text or logo.",
+        "A dark castle at sunset rises in layers of red, orange, purple and black sand inside a bottle, a few grains spilled on the table. No readable text or logo.",
+        "A ship in a storm is framed between glass panes in layered blue and grey sand, some layers shifted as if the frame was dropped. No readable text or logo.",
       ],
     },
     'SP11-031': {
@@ -311,9 +311,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of an ice-carved phoenix at a winter festival, wings clear and thin, chisel marks and frosty edges, lit amber from below at night. No text or logo.',
-        'Photograph of an ice-carved polar bear standing on a frozen plaza, clear ice with trapped bubbles and chisel marks on its fur, meltwater dripping from the paws, lit by warm street lamps. No text or logo.',
-        'Ice-carved throne in a frozen hall, chisel marks on the armrests, frost on the seat, cold blue light passing through it. No text or logo.',
+        "At a winter festival a phoenix carved from clear ice spreads thin wings lit amber from below, chisel marks frosting its edges. No readable text or logo.",
+        "On a frozen plaza a polar bear carved from clear ice shows trapped bubbles and chisel marks in its fur as meltwater drips from its nose. No readable text or logo.",
+        "In a frozen hall a throne carved from ice shows chisel marks on its armrests and frost on the seat, cold blue light passing through. No readable text or logo.",
       ],
     },
   },
@@ -333,9 +333,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a toy paper theater staging a sea captain battling a giant squid with flat printed cardboard cut-outs on sticks, layered painted waves and a ship, warm footlight glow. No text or logo.',
-        'Toy paper theater scene of a witch in a moonlit forest, flat printed card trees in three layers, a cut-out owl on a wire, candle-like footlights. No text or logo.',
-        'Toy paper theater of a ship in a storm, cut-card waves on sliding strips, a flat printed sea serpent rising behind the hull, a hand holding a stick at the edge. No text or logo.',
+        "A sea captain battles a giant squid on a miniature stage, flat printed cardboard figures on sticks between layered wings. No readable text or logo.",
+        "A witch walks through a moonlit forest of flat printed card trees in three layers, a cut-out owl on a wire and candle footlights. No readable text or logo.",
+        "A ship tosses on cut-card waves sliding on strips while a flat printed sea serpent rises behind its hull, a hand visible at the edge. No readable text or logo.",
       ],
     },
     {
@@ -353,9 +353,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Studio photograph of a hand-painted resin model of an original desert nomad riding a giant beetle on a sculpted dune base, washes pooling in the recesses and drybrushed highlights on the edges. No text or logo.',
-        'Hand-painted resin garage kit of an original swamp witch on a mossy base, glazed green skin, tiny painted eyes, a hobby paint brush and palette beside it. No text or logo.',
-        'Unfinished resin garage kit of a sea monster: half primed grey, half painted in teal and bone, mold lines still visible on the tentacles, on a hobby desk. No text or logo.',
+        "A hand-painted desert nomad rides a giant beetle across a sculpted dune base, fine washes and highlights on every scale. No readable text or logo.",
+        "A swamp witch stands on a mossy base with glazed green skin and tiny painted eyes, a hobby brush resting beside her. No readable text or logo.",
+        "A half-finished sea monster model sits half primed grey and half painted teal and bone, mold lines still visible on its tentacles. No readable text or logo.",
       ],
     },
   ] satisfies Create[],

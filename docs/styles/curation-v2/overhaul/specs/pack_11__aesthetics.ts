@@ -22,9 +22,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Glossy 3D emoji of a grumpy little dragon hugging a pile of gold coins, inflated rounded shapes, big glossy highlights, simple frowning face, centered on a soft violet gradient. No text or logo.',
-        'Glossy 3D emoji of a friendly skull wearing a tiny crown and winking, candy-white and gold, soft contact shadow, on a plain teal gradient. No text or logo.',
-        'Glossy 3D emoji of a haunted castle with a sleepy face in its gate, round towers like gumdrops, purple roofs, on a soft night-blue gradient. No text or logo.',
+        "A grumpy little dragon hugs a pile of gold coins as a chunky candy-glossy icon, inflated rounded shapes and one huge highlight on its snout. No readable text or logo.",
+        "A friendly skull wearing a tiny crown winks as a chunky rounded icon in candy white and gold, a soft contact shadow beneath it. No readable text or logo.",
+        "A haunted castle with a sleepy face in its gate rises as a glossy rounded icon, gumdrop towers and purple roofs on a soft night backdrop. No readable text or logo.",
       ],
     },
     'SP11-010': {
@@ -41,9 +41,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'blurry upscaled pixels', 'HUD text'],
       briefs: [
-        'Indexed 16-color pixel art of a knight standing before a dragon in a torchlit cave, hard square pixels, hand-placed dithering in the smoke, strong silhouettes, nearest-neighbor upscale. No text or logo.',
-        'Pixel art of a witch cottage in a swamp at night, 16-color palette, dithered fog, a single lit window, fireflies as single pixels. No text or logo.',
-        'Pixel art of a skeleton merchant in a dungeon shop with potions on shelves, limited palette, clean clusters, no anti-aliasing. No text or logo.',
+        "A lone warrior stands before a dragon in a torchlit cave, drawn in sixteen hard-edged colors with hand-placed dithering in the shadows. No readable text or logo.",
+        "A swamp witch's cottage glows at night in a strict sixteen-color palette, dithered fog rolling in and fireflies as single bright squares. No readable text or logo.",
+        "A skeleton merchant runs a dungeon shop with potions on the shelves, clean pixel clusters and not one anti-aliased edge. No readable text or logo.",
       ],
     },
     'SP11-011': {
@@ -60,9 +60,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Synthwave chrome horizon: a lone armored knight on a chrome horse riding across a glowing magenta perspective grid toward a huge striped setting sun, cyan rim light, scanline haze. No text or logo.',
-        'Giant chrome dragon skull half buried in a glowing magenta grid desert, a striped sunset sun framed between its horns, wireframe mountains behind, airbrushed violet sky with scanline haze. No text or logo.',
-        'Chrome wizard tower rising from a glowing grid sea at dusk, cyan neon trim along its spiral stair, magenta lightning striking its tip, palm silhouettes on a distant island. No text or logo.',
+        "A lone armored rider on a chrome horse crosses a glowing magenta perspective grid toward a striped setting sun. No readable text or logo.",
+        "Half buried in a glowing magenta grid desert, a giant mirrored beast skull frames a striped sunset sun between its horns. No readable text or logo.",
+        "Rising from a glowing grid sea at dusk, a mirror-bright wizard tower wears cyan tube trim along its spiral stair as magenta lightning strikes its top. No readable text or logo.",
       ],
     },
     'SP11-012': {
@@ -80,9 +80,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Solarpunk medieval town rebuilt: a stone castle wrapped in terrace gardens, solar-glass stained windows, wind sails on the towers, villagers repairing a water wheel, warm morning light. No text or logo.',
-        'Solarpunk covered market bridge over a clear river, copper arches wrapped in grapevines, solar canopies overhead, people trading bread and seedlings from bicycle carts, children dangling feet over the water. No text or logo.',
-        'Solarpunk seed monastery on a green hill, glass domes full of rare plants, monks in patched linen tending terraced water gardens, wind sails turning on the bell tower at sunrise. No text or logo.',
+        "An old stone castle has been rebuilt as a green-tech town, wrapped in terrace gardens, solar-glass windows and wind sails turning on the towers. No readable text or logo.",
+        "A covered market bridge spans a clear river, copper arches wrapped in grapevines and solar canopies overhead as neighbors trade vegetables. No readable text or logo.",
+        "A seed monastery sits on a green hill, glass domes full of rare plants and monks in patched linen tending terraced water gardens. No readable text or logo.",
       ],
     },
     'SP11-013': {
@@ -100,9 +100,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'real war insignia'],
       briefs: [
-        'Dieselpunk siege: a riveted walking fortress with smokestacks crushing through a medieval forest toward a castle, searchlights cutting the smoke, zeppelins overhead. No text or logo.',
-        'Dieselpunk knight in riveted gunmetal armor with a diesel engine backpack coughing black smoke, gripping a chain-driven war hammer in a furnace-lit hangar, mechanics in greasy overalls watching. No text or logo.',
-        'Dieselpunk airship dock above a smog-choked fortress city at night, riveted black hulls moored to iron towers, sodium lamps, searchlights sweeping the clouds, a propaganda-style heroic statue without any lettering. No text or logo.',
+        "A riveted walking fortress with smokestacks crushes through a medieval forest toward a castle, searchlights sweeping the trees. No readable text or logo.",
+        "A warrior in riveted gunmetal armor with an engine on his back coughs black smoke as he grips a chain-driven war hammer. No readable text or logo.",
+        "Above a smog-choked fortress city at night, riveted black airships moor to iron towers under sodium lamps. No readable text or logo.",
       ],
     },
     'SP11-014': {
@@ -119,9 +119,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Cottagecore witch in a linen apron baking bread in a stone cottage kitchen, dried herbs hanging, a black cat on the sill, golden afternoon light through a small window. No text or logo.',
-        'Cottagecore young woman in a linen dress and straw hat foraging chanterelles at the edge of an old forest with her white goat, wicker basket of wildflowers and mushrooms, warm golden meadow light. No text or logo.',
-        'Cottagecore tea picnic under a blossoming apple tree, lace cloth, scones and jam, a small moss-green dragon curled around the wicker basket warming the teapot with its breath. No text or logo.',
+        "A witch in a linen apron bakes bread in a stone cottage kitchen, dried herbs hanging and a black cat on the sill in golden light. No readable text or logo.",
+        "A woman in a linen dress and straw hat forages chanterelles at the edge of an old forest while her white goat eats the basket. No readable text or logo.",
+        "Under a blossoming apple tree a lace-covered tea picnic waits, scones and jam, a small moss-green dragon curled around the teapot. No readable text or logo.",
       ],
     },
     'SP11-015': {
@@ -138,9 +138,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Dark academia alchemy seminar at midnight: students in tweed and wool gathered around a candlelit oak table with a skull, astrolabe and bubbling flask, marble busts watching, rain on gothic windows. No readable text or logo.',
-        'Dark academia student in a wool sweater asleep at an oak desk in a vaulted library, candle nearly burned out, ink spilled across a star chart, a raven watching from a marble bust, blue dawn in the tall windows. No readable text or logo.',
-        'Dark academia secret society meeting in the crypt beneath an old college, students in black robes over tweed holding candles around a stone table with an old skull and a sealed letter, faces half in shadow. No readable text or logo.',
+        "At midnight scholars in tweed and wool gather around a candlelit oak table with a skull, an astrolabe and a bubbling flask. No readable text or logo.",
+        "A scholar in a wool sweater sleeps at an oak desk in a vaulted library, the candle nearly out and ink spilled across his notes. No readable text or logo.",
+        "A secret society meets in the crypt beneath an old college, members in black robes over tweed holding candles around a sealed tomb. No readable text or logo.",
       ],
     },
     'SP11-036': {
@@ -158,9 +158,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Vaporwave empty mall atrium at closing time: a marble statue of a knight beside an indoor fountain, palms in planters, pastel pink and teal gradients, glossy checker tiles, faint low-res grain. No readable text or logo.',
-        'Vaporwave hotel lobby after midnight, a sleeping chrome dragon curled around a marble column, an empty grand piano, palms in pink planters, lavender haze and a glossy checker floor reflecting everything. No readable text or logo.',
-        'Vaporwave twin escalators rising out of an empty food court into a pastel gradient sky, a lone hooded figure riding up, marble busts on both sides, soft fluorescent glow and low-res grain. No readable text or logo.',
+        "An empty mall atrium at closing time holds a marble statue beside an indoor fountain, palms in planters and a pastel gradient haze. No readable text or logo.",
+        "In a hotel lobby after midnight a sleeping chrome dragon curls around a marble column beside an empty grand piano. No readable text or logo.",
+        "Twin escalators rise out of an empty food court into a pastel gradient sky, a lone hooded figure riding up past marble columns. No readable text or logo.",
       ],
     },
     'SP11-037': {
@@ -178,9 +178,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Steampunk clockwork octopus of brass and copper crawling across a Victorian workshop bench, steam venting from its joints, pressure gauges on its head and an inventor in goggles adjusting a gear, warm gaslight. No text or logo.',
-        'Steampunk airship pirates in goggles and leather coats swinging on ropes to board a brass zeppelin above sunset clouds, cannon smoke, gears and propellers turning, copper hull glowing warm. No text or logo.',
-        'Steampunk jousting knight in brass-trimmed plate riding a clockwork horse with pistons for legs, a steam-powered lance venting white clouds, a crowd of top hats in a Victorian tournament ground. No text or logo.',
+        "A clockwork octopus of brass and copper crawls across a Victorian workshop bench, steam venting from its joints. No readable text or logo.",
+        "Airship pirates in goggles and leather coats swing on ropes to board a brass zeppelin above sunset clouds, cannons smoking. No readable text or logo.",
+        "A jousting knight in brass-trimmed plate rides a clockwork horse with pistons for legs, his lance venting steam. No readable text or logo.",
       ],
     },
     'SP11-038': {
@@ -198,9 +198,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'gore'],
       briefs: [
-        'Biopunk cathedral grown from living tissue: ribbed vaults of cartilage, glowing veins in the walls, a monk tending a pulsing vat that holds a sleeping whale calf, wet lab light. No text or logo.',
-        'Biopunk war horse grown with chitin armor plates and glowing vein-cables along its neck, ridden by a masked rider in a membrane cloak across a foggy wetland at dusk. No text or logo.',
-        'Biopunk night market in a medieval alley, stalls selling grown hearts and eyes floating in glass jars, lamps made of bioluminescent jellyfish, a hooded buyer bargaining with a vendor whose arm is grafted tissue. No text or logo.',
+        "A cathedral grown from living tissue arches overhead in ribbed cartilage vaults, glowing veins in the walls as a monk tends a pulsing altar. No readable text or logo.",
+        "A war horse grown with chitin armor plates and glowing vein cables along its neck carries a masked rider in a membrane cloak. No readable text or logo.",
+        "A night market in a medieval alley sells grown hearts and eyes floating in jars, lit by lamps of bioluminescent flesh. No readable text or logo.",
       ],
     },
     'SP11-039': {
@@ -217,9 +217,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Gothic horror: a pale countess in black velvet descending a spiral stone staircase with a candelabra, portraits with scratched-out faces on the walls, moonlight through a broken rose window. No text or logo.',
-        'Gothic horror crypt lit by a single guttering candle: the stone effigy of a bishop on his tomb begins to open its eyes, dust falling from its face, a young priest backing away with a silver cross. No text or logo.',
-        'Gothic horror castle on a black crag in a thunderstorm, lightning revealing bats around the towers, one high window glowing red, a lone carriage climbing the switchback road below. No text or logo.',
+        "A pale countess in black velvet descends a spiral stone staircase with a candelabra, past portraits whose faces have been scratched out. No readable text or logo.",
+        "In a crypt lit by one guttering candle the stone effigy of a bishop begins to open its eyes, dust sliding off its face. No readable text or logo.",
+        "A castle on a black crag is lit by lightning in a thunderstorm, bats circling the towers and one high window glowing red. No readable text or logo.",
       ],
     },
     'SP11-040': {
@@ -236,9 +236,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Kawaii pastel grim reaper mascot with big shiny eyes and blush marks, holding a tiny scythe with a heart, sitting on a pastel cloud with sparkles. No text or logo.',
-        'Kawaii baby penguin hatching from a pastel speckled egg, yawning with big sleepy eyes and blush marks, tiny flippers, an eggshell hat on its head, mint and pink sparkles. No text or logo.',
-        'Kawaii haunted house with a smiling face in its door, round smiling ghosts floating out of the windows, candy-colored bats and a lollipop moon, pastel lavender sky. No text or logo.',
+        "A super-cute grim reaper mascot with big shiny eyes and blush marks holds a tiny scythe tipped with a heart on a pastel cloud. No readable text or logo.",
+        "A baby penguin hatches from a pastel speckled egg, yawning with big sleepy eyes and pink blush marks. No readable text or logo.",
+        "A haunted house with a smiling door lets round smiling ghosts float out of its windows among candy-colored bats. No readable text or logo.",
       ],
     },
     'SP11-041': {
@@ -255,9 +255,9 @@ const spec: Spec = {
       ),
       avoid: [...AVOID, 'franchise armor designs', 'franchise insignia'],
       briefs: [
-        'Grimdark siege: exhausted soldiers in battered ornate plate trudging through mud toward a cathedral fortress carved with skulls, tattered relic banners, fires on the horizon, cold overcast light. No text or logo.',
-        'Grimdark war priest in battered armor trimmed with bone reading last rites from a chained book over a muddy trench of exhausted soldiers, smoking censer, rain and distant fire. No text or logo.',
-        'Grimdark battlefield at dawn: broken siege towers, a toppled giant statue of a saint half sunk in mud, crows over the fallen, a lone standard-bearer still holding a tattered relic banner. No text or logo.',
+        "Exhausted soldiers in battered ornate plate trudge through mud toward a cathedral fortress carved with skulls, banners rotting on the walls. No readable text or logo.",
+        "A war priest in battered armor trimmed with bone reads last rites from a chained book over a muddy trench of exhausted troops. No readable text or logo.",
+        "At dawn a toppled giant statue of a saint lies half sunk in mud among broken siege towers, crows wheeling over the fallen. No readable text or logo.",
       ],
     },
     'SP11-042': {
@@ -274,9 +274,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Frutiger Aero fantasy: a glossy glass island floating over a green hill under a bright blue sky, water droplets and bubbles drifting, a friendly aqua whale swimming through the air, lens flare. No text or logo.',
-        'Frutiger Aero goldfish swimming inside a giant floating water bubble above a bright green meadow, glossy reflections, smaller bubbles drifting, clean blue sky with soft lens flare. No text or logo.',
-        'Frutiger Aero penguin made of glossy aqua glass standing on a sunny ice floe, water droplets on its body, bubbles rising around it, bright clean sky and glassy shine. No text or logo.',
+        "A glossy glass island floats over a green hill under a bright blue sky, water droplets and bubbles drifting around it. No readable text or logo.",
+        "A goldfish swims inside a giant floating water bubble above a bright green meadow, smaller bubbles following it upward. No readable text or logo.",
+        "A penguin of glossy aqua glass stands on a sunny ice floe, water droplets on its body and bubbles rising around it. No readable text or logo.",
       ],
     },
     'SP11-043': {
@@ -293,9 +293,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Postmodern pattern clash: a flamingo made of Memphis-style geometric blocks, checkerboard wings, squiggle neck, terrazzo legs, standing on a pink pedestal with hard shadows. No text or logo.',
-        'Memphis-style crocodile built from zigzag, dot and squiggle blocks guarding a terrazzo treasure chest on a mint pedestal, primary yellow teeth, hard black shadows on a pink floor. No text or logo.',
-        'Postmodern pattern-clash lighthouse with checkerboard stripes, cylinder balconies in primary colors, squiggle waves and a terrazzo rock, a tiny sailboat passing. No text or logo.',
+        "A flamingo is built from squiggles and geometric blocks, checkerboard wings, a zigzag neck and speckled-stone legs on a pastel ground. No readable text or logo.",
+        "A crocodile made of zigzag, dot and squiggle blocks guards a speckled treasure chest on a mint pedestal. No readable text or logo.",
+        "Standing over squiggle waves, a lighthouse painted in checkerboard stripes wears cylinder balconies in primary colors and a speckled-stone base. No readable text or logo.",
       ],
     },
     'SP11-045': {
@@ -313,9 +313,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Psychedelic optical recursion of a wizard whose beard melts into endless paisley swirls, concentric echoes of his face radiating outward, vibrating orange, magenta and green. No text or logo.',
-        'Psychedelic tiger eye repeating inward in endless nested rings, stripes melting into paisley, vibrating orange and violet, a tiny figure silhouette reflected in the pupil. No text or logo.',
-        'Psychedelic forest of giant mushrooms whose caps melt into waves of color, a robed wanderer walking a path that echoes outward in concentric ripples, vibrating green and magenta. No text or logo.',
+        "A wizard's beard melts into endless paisley swirls while concentric echoes of his face radiate outward into the sky. No readable text or logo.",
+        "A tiger's eye repeats inward in endless nested rings, its stripes melting into paisley in vibrating orange and violet. No readable text or logo.",
+        "In a forest of giant mushrooms the caps melt into waves of color as a robed wanderer walks a path that echoes outward. No readable text or logo.",
       ],
     },
     'SP11-066': {
@@ -332,9 +332,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Holographic glitter high-heeled shoe covered in tiny iridescent flakes that scatter rainbow sparkles across black velvet, point lights creating starburst flares on the heel and toe, macro close-up. No text or logo.',
-        'Holographic glitter crown resting on a deep violet velvet cushion in a dark throne room, iridescent flakes throwing rainbow sparkles across the stone walls. No text or logo.',
-        'Holographic glitter witch hat floating above a black cauldron, iridescent flakes shifting from silver to pink to green, tiny star sparkles and flare, dark background. No text or logo.',
+        "On black velvet a high-heeled shoe covered in tiny iridescent flakes scatters rainbow sparkles across the fabric. No readable text or logo.",
+        "On a deep violet cushion in a dark throne room a crown of iridescent flakes throws rainbow specks onto the walls. No readable text or logo.",
+        "Above a black cauldron a witch hat floats, covered in flakes shifting from silver to pink to green. No readable text or logo.",
       ],
     },
   },
@@ -356,9 +356,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Goblincore: a small goblin sitting on a mossy log sorting a treasure pile of beetle shells, rusty keys and a cracked ring, mushrooms and snails around, damp soft forest light, low ground-level view. No text or logo.',
-        'Goblincore frog king wearing an acorn-cap crown on a red toadstool throne, subjects of snails and beetles before him, a hoard of bottle caps and bent spoons behind, dewy moss floor. No text or logo.',
-        'Goblincore treasure nook inside a hollow tree: small animal bones, moss, mushrooms, a cracked pocket watch and a jar of shiny pebbles arranged lovingly on a shelf fungus, damp green light. No text or logo.',
+        "A small goblin sits on a mossy log sorting a treasure pile of beetle shells, rusty keys and a cracked ring among mushrooms. No readable text or logo.",
+        "A frog king in an acorn-cap crown sits on a red toadstool throne, his subjects of snails and beetles bowing before a hoard of bottle caps. No readable text or logo.",
+        "Inside a hollow tree a treasure nook holds small animal bones, moss, mushrooms, a cracked pocket watch and a jar of shiny stones. No readable text or logo.",
       ],
     },
     {
@@ -378,9 +378,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Dungeon synth cover art: a lone cloaked wanderer on a misty hill facing a distant ruined tower under a pale moon, murky old painting reproduced with copier grain and faded blues. No readable text or logo.',
-        'Dungeon synth cover art of a ruined wizard tower rising above a black pine forest, one window lit, crows circling, murky painting with faded greens and copier grain. No readable text or logo.',
-        'Dungeon synth cover art of an ancient king asleep on a stone throne in a mist-filled hall, sword across his knees, candles long cold, faded blue-grey paint with photocopy speckle. No readable text or logo.',
+        "A lone cloaked wanderer stands on a misty hill facing a distant ruined tower under a pale moon, murky and grainy like a photocopy. No readable text or logo.",
+        "A ruined wizard tower rises above a black pine forest, one window lit and crows circling in murky lo-fi paint. No readable text or logo.",
+        "An ancient king sleeps on a stone throne in a mist-filled hall, sword across his knees and candles burned low. No readable text or logo.",
       ],
     },
     {
@@ -400,9 +400,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Southern Gothic: a woman in a faded white dress standing on the rotting porch of a peeling mansion as a swamp creeps up the steps, Spanish moss on the oaks, humid gold dusk haze. No text or logo.',
-        'Southern Gothic white wooden church half sunk in a cypress swamp, a lantern burning in the bell tower, Spanish moss and still black water reflecting it at dusk. No text or logo.',
-        'Southern Gothic river baptism at dusk, a gaunt preacher waist-deep in brown water, a congregation in white on the bank, a snake gliding past, humid gold haze through the oaks. No text or logo.',
+        "A woman in a faded white dress stands on the rotting porch of a peeling mansion as the swamp creeps up the steps. No readable text or logo.",
+        "A white wooden church sits half sunk in a cypress swamp, a lantern burning in its bell tower under hanging moss. No readable text or logo.",
+        "At a river baptism at dusk a gaunt preacher stands waist-deep in brown water while a snake glides past the congregation. No readable text or logo.",
       ],
     },
   ] satisfies Create[],

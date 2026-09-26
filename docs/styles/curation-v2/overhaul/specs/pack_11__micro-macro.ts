@@ -56,9 +56,9 @@ const spec: Spec = {
         'greyscale SEM; edge glow; deep focus; microstructure',
       ),
       [
-        'Scanning electron micrograph of a tardigrade in plated armor standing guard on a pollen grain like a boulder, greyscale, bright edge glow along its folds and claws, spiky pollen spheres around it, deep focus. No text or scale bar.',
-        'Greyscale SEM image of a field of diatom shells arranged like the ruins of a cathedral, lace-like pores in every shell, a single spore resting on an arch, bright edge glow and deep focus. No text or scale bar.',
-        "Electron micrograph of a moth's wing scales overlapping like tiles on a dark roof, one scale lifted and curled, a dust mite crawling across the ridges, crisp greyscale edge glow. No text or scale bar.",
+        "A tardigrade in plated armor stands guard on a pollen grain as big as a boulder, every crease razor sharp in grey microscopic relief. No readable text or logo.",
+        "A field of diatom shells lies arranged like the ruins of a cathedral, lace-like pores in every shell under deep greyscale focus. No readable text or logo.",
+        "A moth's wing scales overlap like tiles on a dark roof, one scale lifted and curled back, a speck of dust resting on it like a stone. No readable text or logo.",
       ],
     ),
     'SP11-057': u(
@@ -72,9 +72,9 @@ const spec: Spec = {
         'hexagonal ommatidia; curved dome; iridescent facets',
       ),
       [
-        "Extreme macro of a dragonfly's compound eye filling the frame, thousands of hexagonal facets each reflecting a tiny torch flame, iridescent green and bronze, fine hairs along the rim, soft ring light sparkle. No text or logo.",
-        "Macro of a horsefly's compound eye with red and green interference bands, a gothic window reflected across every facet, glassy hexagons curving away into blur. No text or logo.",
-        'Macro portrait of a jumping spider with glossy black main eyes reflecting a hooded wanderer holding a lantern, iridescent scales on its head and fine hairs catching the ring light. No text or logo.',
+        "A dragonfly's compound eye fills the frame, thousands of hexagonal facets each reflecting a tiny burning torch. No readable text or logo.",
+        "Red and green interference bands ripple across a horsefly's compound eye, a gothic window reflected in every facet. No readable text or logo.",
+        "A jumping spider's glossy black main eyes reflect a hooded wanderer holding a lantern, iridescent scales around its face. No readable text or logo.",
       ],
     ),
     'SP11-058': u(
@@ -88,9 +88,9 @@ const spec: Spec = {
         'membranes; nuclei; histology stain; microscope field',
       ),
       [
-        'Fluorescence microscope image where a colony of cells grows into the silhouette of a crowned serpent, blue nuclei, green membranes and red fibers glowing on black inside a round microscope field. No text or scale bar.',
-        'Brightfield histology slide stained pink and violet in which the tissue folds read as a mountain fortress at dusk, soft backlight, granular cytoplasm and dark nuclei like windows. No text or scale bar.',
-        'Fluorescent neurons branching like a black winter forest, one bright cell glowing amber at the center like a lantern in the woods, dendrites crossing in blue and magenta. No text or scale bar.',
+        "A colony of glowing cells grows into the silhouette of a crowned serpent, blue nuclei and green membranes under fluorescence. No readable text or logo.",
+        "Pink and violet stained tissue folds on a slide until it reads as a mountain fortress at dusk under soft brightfield light. No readable text or logo.",
+        "Fluorescent neurons branch like a black winter forest, one bright cell glowing amber at the center like a lantern in the woods. No readable text or logo.",
       ],
     ),
     'SP11-059': u(
@@ -104,9 +104,9 @@ const spec: Spec = {
         'six-fold symmetry; dendrites; ice sparkle; dark wool',
       ),
       [
-        'Macro photograph of a single snowflake resting on black wool, its six dendrite arms ending in tiny claw-like branches around a hexagonal plate, crystal-clear ice with trapped bubbles and pale blue glints. No text or logo.',
-        'Snowflake macro with a thick hexagonal plate at the center like a frozen throne room, feathery dendrites radiating outward, backlit so the ridges glow cold blue. No text or logo.',
-        'Frost crystals growing across an old leaded window in the shape of a rider on horseback, feathery ice ferns, dawn backlight turning the frost gold at the edges. No text or logo.',
+        "Resting alone on black wool, one six-armed ice crystal ends every dendrite in tiny claw-like branches around its hexagonal heart. No readable text or logo.",
+        "A thick hexagonal plate sits at the center of a crystal like a frozen throne room, feathery dendrites radiating outward. No readable text or logo.",
+        "Frost crystals grow across an old leaded window in the shape of a rider on horseback, backlit by pale dawn. No readable text or logo.",
       ],
     ),
     'SP11-060': u(
@@ -120,9 +120,9 @@ const spec: Spec = {
         'die patterns; copper traces; solder; city scale',
       ),
       [
-        'Macro photograph of a circuit board seen as a walled city from above: copper-trace streets, chip towers, capacitor silos and solder domes, one component shaped like a coiled serpent at the gate, raking light glinting. No text or logo.',
-        'Silicon die macro with rainbow interference sheen, its logic blocks laid out like a labyrinth garden, a single dust particle at the center like a lost wanderer. No text or logo.',
-        'Circuit board macro at night angle with warm LEDs glowing like windows in a sleeping town, copper roads, solder-bead boulders and a mite crossing a trace bridge. No text or logo.',
+        "Seen up close from above, a green board becomes a walled city of copper-trace streets, chip towers and capacitor silos. No readable text or logo.",
+        "A bare silicon die shimmers with rainbow interference, its logic blocks laid out like a labyrinth garden with one dust particle trapped inside. No readable text or logo.",
+        "At a low angle warm diodes glow like windows in a sleeping town, copper roads and solder beads catching the light. No readable text or logo.",
       ],
       'Circuit Board Macro',
     ),
@@ -137,9 +137,9 @@ const spec: Spec = {
         'droplet lens; inverted world; meniscus; sparkle',
       ),
       [
-        'Macro of a water droplet hanging from a black thorn, inside it an upside-down image of a dark castle under a red moon, blurred forest behind, crisp specular highlights on the surface. No text or logo.',
-        'Row of dew drops strung along a spider thread at dawn, each drop holding an inverted image of a burning torch procession, golden bokeh behind. No text or logo.',
-        'Single raindrop on a dark leaf refracting a raven taking flight across a stormy sky, meniscus edge glowing, smaller droplets around it. No text or logo.',
+        "A droplet hanging from a black thorn holds an upside-down image of a dark castle under a red moon. No readable text or logo.",
+        "Dew drops strung along a spider thread at dawn each hold an inverted image of a torch procession winding through fog. No readable text or logo.",
+        "A single raindrop on a dark leaf refracts a raven taking flight across a stormy sky, its edge glowing. No readable text or logo.",
       ],
     ),
     'SP11-062': u(
@@ -153,9 +153,9 @@ const spec: Spec = {
         'thread twist; weave crossings; fuzz',
       ),
       [
-        'Extreme macro of coarse wool fabric where twisted fibers rise like a forest of ropes, a lost ladybird climbing between them, side light revealing every strand and fuzz. No text or logo.',
-        'Macro of an old embroidered tapestry where the gold-thread stitches of a serpent become giant twisted cables, frayed ends and dust in the weave. No text or logo.',
-        'Silk weave macro shimmering like a moonlit landscape of woven hills, one pulled thread running across it like a river, soft side light. No text or logo.',
+        "Twisted wool fibers rise like a forest of ropes while a lost ladybird climbs between them looking for a way out. No readable text or logo.",
+        "On an old tapestry the gold-thread stitches of a serpent become giant twisted cables, frayed ends curling like vines. No readable text or logo.",
+        "A silk weave shimmers like a moonlit landscape of woven hills, one pulled thread running across it like a silver river. No readable text or logo.",
       ],
     ),
     'SP11-063': u(
@@ -169,9 +169,9 @@ const spec: Spec = {
         'rust bloom; flaking paint; pitting',
       ),
       [
-        'Macro of a rusted iron helmet where flaking red paint and orange rust blisters form the coastline of a burning kingdom, raking light across every flake and pit. No text or logo.',
-        'Rust macro on an old ship hull where corrosion blooms spread like the tentacles of a kraken, peeling teal paint and salt crust, raking light. No text or logo.',
-        'Macro of a rusted skeleton key where oxide crystals rise like crumbling towers along the bit, flakes of paint caught in the teeth, dark iron beneath. No text or logo.',
+        "On an old iron helmet flaking red paint and orange blisters form the coastline of a burning kingdom seen from above. No readable text or logo.",
+        "On a ship's hull corrosion blooms spread like kraken tentacles through peeling teal paint and crusted salt. No readable text or logo.",
+        "Along the bit of an old skeleton key oxide crystals rise like crumbling towers, flakes of paint caught between them. No readable text or logo.",
       ],
     ),
     'SP11-064': u(
@@ -185,9 +185,9 @@ const spec: Spec = {
         'radial iris fibers; pupil; corneal reflection',
       ),
       [
-        'Extreme macro of a green-gold human iris filling the frame, radial fibers and crypts like a ring of canyons, the black pupil reflecting a burning village, wet corneal highlight. No text or logo.',
-        'Macro of a pale grey iris with a witch holding a candle reflected in the pupil, fine fibers and a dark limbal ring, soft ring-light reflection. No text or logo.',
-        'Iris macro in deep violet and amber radiating like a solar eclipse, a lone hooded figure reflected small in the pupil, glossy wet surface. No text or logo.',
+        "A green-gold human iris fills the frame, radial fibers and crypts forming a ring of canyons around the black pupil. No readable text or logo.",
+        "A pale grey iris holds the tiny reflection of a woman with a candle in its pupil, a dark limbal ring framing everything. No readable text or logo.",
+        "A deep violet and amber iris radiates like a solar eclipse, a lone hooded figure reflected small in the pupil. No readable text or logo.",
       ],
     ),
     'SP11-065': u(
@@ -201,9 +201,9 @@ const spec: Spec = {
         'thin-film interference; swirling rainbow; spheres',
       ),
       [
-        'Macro of a soap bubble surface where swirling interference colors form a storm around a dark planet-like spot, rainbow film on black, film edges thinning into gold. No text or logo.',
-        'Soap bubble drifting through a dark castle hall, its skin reflecting a candlelit banquet table in curved rainbow colors, tiny black thin spots on top. No text or logo.',
-        'Cluster of soap bubbles joined by thin walls like a floating palace, each surface reflecting a stained-glass window, swirling magenta and teal film. No text or logo.',
+        "Swirling interference colors on a bubble's skin form a storm around a dark planet-like spot, rainbow bands racing. No readable text or logo.",
+        "A bubble drifts through a dark castle hall, its skin reflecting a candlelit banquet in curved rainbow colors. No readable text or logo.",
+        "A cluster of bubbles joined by thin walls floats like a palace, each surface reflecting a stained-glass window. No readable text or logo.",
       ],
     ),
     'SP11-067': u(
@@ -217,9 +217,9 @@ const spec: Spec = {
         'barbs; barbules; iridescence',
       ),
       [
-        'Macro of a raven feather where the barbs split into rows like a dark forest, iridescent violet and green sheen, a single water droplet resting between barbules. No text or logo.',
-        'Macro of a peacock feather eye, blue and bronze barbules forming a watchful dragon-like eye, structural iridescence shifting under side light. No text or logo.',
-        'Owl feather macro with soft downy barbs like a snowy landscape at dusk, fringe edges catching light, a tiny seed caught in the plumage. No text or logo.',
+        "Split into rows like a dark forest, the barbs of a raven's plume shimmer with violet and green sheen as the light shifts. No readable text or logo.",
+        "Staring back from a peacock's train, one eye of blue and bronze barbules shifts its iridescence as the light moves across it. No readable text or logo.",
+        "Soft downy barbs of an owl feather spread like a snowy landscape at dusk, a tiny seed caught in the fringe. No readable text or logo.",
       ],
     ),
     'SP11-068': u(
@@ -233,9 +233,9 @@ const spec: Spec = {
         'backlit veins; cell pattern; chlorophyll glow',
       ),
       [
-        'Backlit macro of an autumn maple leaf whose veins branch like a tree of life, glowing red and gold cells between them, sunlight streaming through a small insect-bitten hole. No text or logo.',
-        'Macro of a leaf skeleton with lace-like veins forming the tracery of a gothic rose window, backlit against a dark sky. No text or logo.',
-        'Green leaf macro where the veins read as a river delta seen from above, cells like tiny fields, chlorophyll glowing in strong backlight. No text or logo.',
+        "Backlit, an autumn maple leaf branches like a tree of life, red and gold cells glowing between its veins. No readable text or logo.",
+        "Against a dark sky, the lace-like network of a bleached skeleton leaf forms the tracery of a gothic rose window. No readable text or logo.",
+        "Seen with light behind it, a green blade's network reads as a river delta from above, cells like tiny fields glowing in the sun. No readable text or logo.",
       ],
     ),
     'SP11-069': u(
@@ -249,9 +249,9 @@ const spec: Spec = {
         'pores; fine lines; hairs; skin terrain',
       ),
       [
-        'Extreme macro of skin on the back of a hand where fine lines and pores form a desert landscape of dunes, a single fine hair like a lone tree, soft raking light. No text or logo.',
-        'Skin macro of an old blackwork tattoo of a serpent, ink settled into pores and fine lines, slightly blurred edges, soft side light. No text or logo.',
-        'Macro of a fingertip whose ridge pattern forms a labyrinth, a bead of sweat at its center like a pool, soft raking light. No text or logo.',
+        "On the back of a hand fine lines and pores form a desert of dunes, a single hair standing like a lone tree. No readable text or logo.",
+        "An old blackwork tattoo of a serpent has settled into the pores and fine lines of the skin, its edges softly blurred. No readable text or logo.",
+        "A fingertip's ridge pattern forms a labyrinth with a bead of sweat at its center like a pool. No readable text or logo.",
       ],
     ),
     'SP11-070': u(
@@ -265,9 +265,9 @@ const spec: Spec = {
         'ink clouds; vortex rings; tendrils',
       ),
       [
-        'Ink in water forming a winged beast, black and crimson clouds curling into wings and a tail, tendrils trailing downward, lit on clean white. No text or logo.',
-        'Ink in water: a cloud of pale indigo ink unfurling through dark water into a ghostly lady in a flowing gown, tendrils trailing from her sleeves and hem, lit evenly against black. No text or logo.',
-        'Ink drops sinking in clear water as vortex rings that stack into the smoke towers of a castle, violet and gold ink on white. No text or logo.',
+        "Black and crimson clouds bloom through clear water into a winged beast, tendrils trailing down from its tail. No readable text or logo.",
+        "A cloud of pale indigo unfurls through dark water into a ghostly lady in a flowing gown. No readable text or logo.",
+        "Violet and gold drops sink as vortex rings that stack into the smoke towers of a castle on white. No readable text or logo.",
       ],
     ),
     'SP11-071': u(
@@ -281,9 +281,9 @@ const spec: Spec = {
         'fuzzy colonies; hyphae; spore heads; agar',
       ),
       [
-        'Petri dish with mold colonies grown into the shape of a crowned skull, fuzzy white hyphae, green spore rings and black spore heads on amber agar, soft lab light. No text or logo.',
-        'Macro of mold spore heads rising like a forest of black-capped trees on a crust of old bread, fuzzy hyphae fog between them, dim light. No text or logo.',
-        'Fungal growth spreading across a slice of bread in colored patches like the map of rival kingdoms, fuzzy borders where they meet. No text or logo.',
+        "In a petri dish fuzzy colonies have grown into a crowned skull, green spore rings and black specks for eyes. No readable text or logo.",
+        "Black-capped spore heads rise like a forest on a crust of old bread, fuzzy hyphae drifting like fog between them. No readable text or logo.",
+        "Colored fungal patches spread across a slice of bread like the map of rival kingdoms at war along their borders. No readable text or logo.",
       ],
     ),
     'SP11-072': u(
@@ -297,9 +297,9 @@ const spec: Spec = {
         'crystal clusters; needles; chemical garden',
       ),
       [
-        'Macro of a chemical garden where blue and green crystal towers grow into a castle skyline in a glass jar, faceted spires, backlight glowing through the crystals. No text or logo.',
-        'Crystal growth forming the ribcage of a giant beast from white salt needles on black volcanic stone, sharp faceted spines catching a cold side light, tiny crystals still sprouting at the tips. No text or logo.',
-        'Macro of a rainbow bismuth crystal grown like a stepped temple staircase, iridescent oxide colors shifting across its square hopper terraces, hard side light and a black background. No text or logo.',
+        "In a glass jar blue and green crystal towers grow into a castle skyline of faceted spires. No readable text or logo.",
+        "On black volcanic stone, needles of white salt slowly grow upward into the curved ribcage of a giant beast with a sharp faceted spine. No readable text or logo.",
+        "A rainbow bismuth crystal rises like a stepped temple staircase, iridescent oxide colors shifting across it. No readable text or logo.",
       ],
     ),
     'SP11-073': u(
@@ -313,9 +313,9 @@ const spec: Spec = {
         'wavy grooves; stylus; dust',
       ),
       [
-        'Extreme macro of vinyl record grooves where the sound waves ripple like a line of dancers, the stylus tip moving through like a colossus, raking light and rainbow sheen. No text or logo.',
-        'Groove macro of an old record with dust particles like boulders and a hair like a fallen tree across the canyon, rainbow sheen. No text or logo.',
-        'Vinyl record macro where the grooves of a loud passage become jagged cliffs, the stylus throwing a long shadow, dark glossy surface. No text or logo.',
+        "Record grooves ripple like a line of dancers as the stylus tip glides through the canyon. No readable text or logo.",
+        "Dust particles sit like boulders in an old record's groove while a hair lies across it like a fallen tree. No readable text or logo.",
+        "The grooves of a loud passage become jagged cliffs, the stylus throwing a long shadow across them. No readable text or logo.",
       ],
     ),
     'SP11-074': u(
@@ -329,9 +329,9 @@ const spec: Spec = {
         'hooks; loops; fibers',
       ),
       [
-        'Extreme macro of hook-and-loop fastener where black plastic hooks form a thorny forest and tangled loops hang like vines, a dust mite caught between them, side light. No text or logo.',
-        'Hook-and-loop macro with curved hooks lined up like a field of scythes under a pale light, loops blurred in the background. No text or logo.',
-        'Extreme macro of hook-and-loop fastener loops grown like a tangled jungle canopy, one torn fiber drooping across the gap like a rope bridge, soft side light and deep shadows between the loops. No text or logo.',
+        "Stiff black plastic barbs form a thorny forest while tangled fiber loops hang between them like vines in a jungle night. No readable text or logo.",
+        "Lined up like a field of scythes under pale light, rows of curved plastic barbs wait while blurred fiber loops tangle behind them. No readable text or logo.",
+        "Fiber loops grow like a tangled jungle canopy, one torn strand drooping across a gap like a broken bridge. No readable text or logo.",
       ],
       'Hook-and-Loop Macro',
     ),
@@ -346,9 +346,9 @@ const spec: Spec = {
         'open cells; holes; walls',
       ),
       [
-        'Extreme macro of a natural sea sponge where the holes become a cave system, light filtering through pores, a tiny water droplet hanging from a cave ceiling. No text or logo.',
-        'Sponge macro in warm amber light where the open cells and shadows arrange into a hidden watching face, soft glow through the thin walls, droplets clinging to the pore edges. No text or logo.',
-        'Macro of synthetic sponge cells like a honeycomb city of round rooms, soft light glowing through the thin foam walls, one cell holding a single trapped bubble. No text or logo.',
+        "A natural sea sponge becomes a cave system, light filtering through its pores onto a tiny water droplet. No readable text or logo.",
+        "In warm amber light the open cells of a sponge arrange themselves into a hidden watching face. No readable text or logo.",
+        "Synthetic foam cells form a honeycomb city of round rooms, soft light glowing through the thin walls. No readable text or logo.",
       ],
     ),
     'SP11-076': u(
@@ -362,9 +362,9 @@ const spec: Spec = {
         'tiny leaves; spore capsules; dew',
       ),
       [
-        'Macro of moss as a miniature forest, spore capsules on thin stalks like lanterns, dew drops, a beetle wandering through soft forest light. No text or logo.',
-        'Macro of moss covering a fallen stone carving of a face in a forest, tiny moss leaves filling its eye sockets, spore capsules rising like eyelashes, morning dew on everything. No text or logo.',
-        'Moss macro where a small snail climbs a tall spore stalk like a slow dragon scaling a tower, dew beads on the capsule, soft green forest light and blurred moss hills behind. No text or logo.',
+        "A miniature forest of moss holds spore capsules on thin stalks like lanterns while a beetle wanders through dew. No readable text or logo.",
+        "In a quiet forest a fallen stone face lies buried in tiny green leaves that fill its eye sockets, spore capsules sprouting from its brow. No readable text or logo.",
+        "A small snail climbs a tall spore stalk like a slow beast scaling a tower, dew beading on the capsule above it. No readable text or logo.",
       ],
     ),
     'SP11-077': u(
@@ -378,9 +378,9 @@ const spec: Spec = {
         'angular grains; glue; grit',
       ),
       [
-        'Extreme macro of coarse sandpaper where angular grains become a rocky mountain range, glue pooled between them like frozen lakes, raking light. No text or logo.',
-        'Extreme macro of sandpaper with a single red garnet grain rising like a fortress on a hill of grey abrasive grit, glue pooled around its base, harsh raking light. No text or logo.',
-        'Macro of fine sandpaper grit like a desert of glittering crystal boulders, one human hair lying across it like a fallen pillar, raking light casting long shadows. No text or logo.',
+        "Angular abrasive grains rise into a rocky mountain range under raking light, pools of dried glue sitting between them like frozen lakes. No readable text or logo.",
+        "A single red garnet grain rises like a fortress on a hill of grey abrasive grit. No readable text or logo.",
+        "Fine grit spreads like a desert of glittering crystal boulders with one human hair lying across it like a fallen log. No readable text or logo.",
       ],
       'Sandpaper Grit Macro',
     ),
@@ -395,9 +395,9 @@ const spec: Spec = {
         'honeycomb cells; pores',
       ),
       [
-        'Microscope view of cork cells forming a honeycomb of hollow rooms, warm tan light through thin walls, one dark pore like a tunnel entrance. No text or logo.',
-        'Macro of the cut end of an old wine cork, wine-stained pores like red caves, broken cell walls at the cut edge and a single dried drop of wine like a ruby. No text or logo.',
-        'Macro of cork oak bark with deep cracks like canyons, honeycomb cell texture on the ridges and a small spider crossing a ridge, warm side light. No text or logo.',
+        "Seen through a microscope, cork cells form a honeycomb of hollow rooms, warm light passing through their thin walls. No readable text or logo.",
+        "The cut end of an old wine stopper shows wine-stained pores like red caves and broken cell walls at the edge. No readable text or logo.",
+        "Deep cracks in oak bark open like canyons while a small spider crosses a honeycomb ridge. No readable text or logo.",
       ],
     ),
     'SP11-079': u(
@@ -411,9 +411,9 @@ const spec: Spec = {
         'twill weave; tows; resin gloss',
       ),
       [
-        'Macro of carbon fiber twill weave where the glossy black tows form armor-like scales, resin highlights and hard rim light. No text or logo.',
-        'Macro of carbon fiber weave following the curve of a helmet shell, the twill pattern bending over the rim, deep glossy clearcoat reflecting a hard rim light. No text or logo.',
-        'Macro of carbon fiber weave like a woven dark landscape seen from above, one frayed tow lifting out like a fallen tree, resin gloss catching a cold light. No text or logo.',
+        "Glossy black tows in a twill weave overlap like armor scales, resin highlights and hard rim light along each one. No readable text or logo.",
+        "A twill weave bends over the rim of a helmet shell, deep glossy black and every fiber tow catching the light. No readable text or logo.",
+        "A woven dark landscape seen from above holds one frayed tow lifting out like a fallen tree. No readable text or logo.",
       ],
       'Carbon Fiber Weave Macro',
     ),
@@ -428,9 +428,9 @@ const spec: Spec = {
         'pappus; fine hairs; seeds',
       ),
       [
-        'Backlit macro of a dandelion seed head at sunset, seeds breaking away on glowing parachutes, fine pappus hairs catching the golden light. No text or logo.',
-        'Backlit macro of a single dandelion seed drifting past a black castle silhouette at dusk, its pappus hairs glowing gold, a few more seeds blurred in the orange sky. No text or logo.',
-        'Macro of dandelion seeds caught in a dew-covered spider web like trapped stars, pappus hairs glittering, a dark forest background and the spider waiting at the edge. No text or logo.',
+        "Backlit at sunset, a seed head breaks apart into glowing parachutes, fine hairs catching the light. No readable text or logo.",
+        "A single seed on a glowing parachute of fine hairs drifts past the black silhouette of a hilltop castle at dusk, lit gold from behind. No readable text or logo.",
+        "Seeds caught in a dew-covered spider web glitter like trapped stars, their fine hairs sparkling against the dark edge of a forest. No readable text or logo.",
       ],
     ),
   },
