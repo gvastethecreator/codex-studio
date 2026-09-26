@@ -119,4 +119,550 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP23-150',
+    name: 'Hue-Shifted Color Ramps',
+    displayName: 'Hue-Shifted Color Ramps',
+    styleAnchors: ['Hue-Shifted Color Ramps', 'pixel ramps that shift hue', 'hue-shifted ramps'],
+    category: '7. Indexed Raster Language',
+    domain: 'pixel ramps that shift hue',
+    negativePrompt:
+      'blurry upscaled pixels, interface or HUD, existing game sprites, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Hue-shifted color ramps: pixel art where every shading ramp shifts hue as it darkens and lightens, warm highlights into cool violet shadows, giving vivid painterly life.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; shade the subject with ramps that move warm in light and cool in shadow.',
+      color_and_tone: 'Yellow-warm highlights, saturated midtones, violet and teal shadows.',
+      lighting_and_shadow:
+        'Clear key light with hue-shifted shadow ramps, kept consistent across the whole image.',
+      texture_and_material: 'Hand-placed pixels in short ramps of four or five steps.',
+      camera_and_composition:
+        'Readable central subject with clear silhouette, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with vivid painterly glow.',
+      rendering_and_quality:
+        'Clean ramps without banding or noise, kept consistent across the whole image.',
+      creative_brief:
+        "Hue-shifted color ramps: pixel art where every shading ramp shifts hue as it darkens and lightens, warm highlights into cool violet shadows, giving vivid painterly life. Carry it through hue-shifted ramps, warm light, violet shadows, hand-placed pixels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'hue-shifted ramps; warm light; violet shadows; hand-placed pixels',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-151',
+    name: 'Hand Anti-Aliased Pixel Line',
+    displayName: 'Hand Anti-Aliased Pixel Line',
+    styleAnchors: [
+      'Hand Anti-Aliased Pixel Line',
+      'manual pixel anti-aliasing',
+      'smooth pixel curves',
+    ],
+    category: '7. Indexed Raster Language',
+    domain: 'manual pixel anti-aliasing',
+    negativePrompt:
+      'blurry upscaled pixels, interface or HUD, existing game sprites, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Hand anti-aliased pixel line: pixel art where curves and diagonals are smoothed by carefully placed intermediate-color pixels, clean lines that look smooth at a distance and deliberate up close.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; draw the subject with smooth curves made of hand-placed intermediate pixels.',
+      color_and_tone: 'Clean palette with intermediate tones only along edges.',
+      lighting_and_shadow: 'Soft shading with neat ramps, kept consistent across the whole image.',
+      texture_and_material:
+        'Crisp pixels with smoothing steps on curves, kept consistent across the whole image.',
+      camera_and_composition: 'Large curving shapes that show off the line quality.',
+      atmosphere_and_mood: 'Keep the requested mood with polished crafted calm.',
+      rendering_and_quality:
+        'Precise elegant lines without jaggies, kept consistent across the whole image.',
+      creative_brief:
+        "Hand anti-aliased pixel line: pixel art where curves and diagonals are smoothed by carefully placed intermediate-color pixels, clean lines that look smooth at a distance and deliberate up close. Carry it through smooth pixel curves, intermediate edge pixels, crisp, deliberate. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'smooth pixel curves; intermediate edge pixels; crisp; deliberate',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-152',
+    name: 'Ordered Bayer Dither Field',
+    displayName: 'Ordered Bayer Dither Field',
+    styleAnchors: [
+      'Ordered Bayer Dither Field',
+      'regular matrix dithering',
+      'ordered dither matrix',
+    ],
+    category: '7. Indexed Raster Language',
+    domain: 'regular matrix dithering',
+    negativePrompt:
+      'random noise dither, blurry upscaled pixels, interface or HUD, existing game sprites, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Ordered Bayer dither field: gradients built from a regular crosshatch matrix of pixels, mechanical and even, turning skies, fog and glow into precise patterned fields.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; build gradients and atmosphere around the subject from even ordered dither.',
+      color_and_tone: 'A few flat colors mixed through regular dither patterns.',
+      lighting_and_shadow:
+        'Soft light represented by dither density, kept consistent across the whole image.',
+      texture_and_material: 'Regular matrix patterns, crisp pixels and flat areas.',
+      camera_and_composition: 'Large gradient areas where the dither can show.',
+      atmosphere_and_mood: 'Keep the requested mood with cool mechanical beauty.',
+      rendering_and_quality:
+        'Precise regular dithering without random noise, kept consistent across the whole image.',
+      creative_brief:
+        "Ordered Bayer dither field: gradients built from a regular crosshatch matrix of pixels, mechanical and even, turning skies, fog and glow into precise patterned fields. Carry it through ordered dither matrix, gradient fields, few colors, crisp pixels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'ordered dither matrix; gradient fields; few colors; crisp pixels',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-153',
+    name: 'Selective Colored Outline',
+    displayName: 'Selective Colored Outline',
+    styleAnchors: [
+      'Selective Colored Outline',
+      'colored sel-out pixel outlines',
+      'colored outlines',
+    ],
+    category: '7. Indexed Raster Language',
+    domain: 'colored sel-out pixel outlines',
+    negativePrompt:
+      'blurry upscaled pixels, interface or HUD, existing game sprites, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Selective colored outline: pixel art where outlines change color with the light, dark on the shadow side, light or colored on the lit side, blending sprites into their scene.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; outline the subject with colored lines that lighten on its lit side.',
+      color_and_tone:
+        'Outline colors drawn from neighboring fills, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Directional light reflected in outline color, kept consistent across the whole image.',
+      texture_and_material:
+        'One-pixel colored outlines and clean fills, kept consistent across the whole image.',
+      camera_and_composition:
+        'Clear sprite silhouette within a scene, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with soft integrated charm.',
+      rendering_and_quality:
+        'Refined outlines that read cleanly, kept consistent across the whole image.',
+      creative_brief:
+        "Selective colored outline: pixel art where outlines change color with the light, dark on the shadow side, light or colored on the lit side, blending sprites into their scene. Carry it through colored outlines, lit-side light line, dark shadow line, integrated sprite. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'colored outlines; lit-side light line; dark shadow line; integrated sprite',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-154',
+    name: 'Two-Tone Duotone Pixel',
+    displayName: 'Two-Tone Duotone Pixel',
+    styleAnchors: ['Two-Tone Duotone Pixel', 'two-color pixel art', 'two colors only'],
+    category: '7. Indexed Raster Language',
+    domain: 'two-color pixel art',
+    negativePrompt:
+      'a third color, blurry upscaled pixels, interface or HUD, existing game sprites, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Two-tone duotone pixel: pixel art using only two colors, a light and a dark, with pattern and silhouette doing all the work.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject using just two colors with patterned mid-values.',
+      color_and_tone: 'Exactly two colors, such as cream and deep plum.',
+      lighting_and_shadow: 'Light and shadow made from patterns of the two colors.',
+      texture_and_material:
+        'Crisp pixels, checker and line patterns, kept consistent across the whole image.',
+      camera_and_composition:
+        'Strong silhouette-driven composition, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with stark graphic mystery.',
+      rendering_and_quality:
+        'Clear readable image with only two colors, kept consistent across the whole image.',
+      creative_brief:
+        "Two-tone duotone pixel: pixel art using only two colors, a light and a dark, with pattern and silhouette doing all the work. Carry it through two colors only, patterned mid-values, strong silhouette, crisp pixels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'two colors only; patterned mid-values; strong silhouette; crisp pixels',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-155',
+    name: 'Palette-Swap Twin Sprites',
+    displayName: 'Palette-Swap Twin Sprites',
+    styleAnchors: [
+      'Palette-Swap Twin Sprites',
+      'same sprite different palettes',
+      'identical sprites',
+    ],
+    category: '7. Indexed Raster Language',
+    domain: 'same sprite different palettes',
+    negativePrompt:
+      'blurry upscaled pixels, interface or HUD, existing game sprites, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Palette-swap twin sprites: the same pixel sprite repeated side by side in different color palettes, a classic way to make new characters and rivals from one drawing.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; repeat the subject as identical sprites in different color palettes.',
+      color_and_tone:
+        'Several distinct palettes on identical shapes, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Same shading structure in every palette, kept consistent across the whole image.',
+      texture_and_material:
+        'Identical pixel sprites with swapped colors, kept consistent across the whole image.',
+      camera_and_composition:
+        'Sprites lined up or facing each other, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with playful rivalry, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Pixel-identical sprites with clean palettes, kept consistent across the whole image.',
+      creative_brief:
+        "Palette-swap twin sprites: the same pixel sprite repeated side by side in different color palettes, a classic way to make new characters and rivals from one drawing. Carry it through identical sprites, swapped palettes, side by side, rivalry. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'identical sprites; swapped palettes; side by side; rivalry',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-156',
+    name: 'Seamless Pixel Tileset Sheet',
+    displayName: 'Seamless Pixel Tileset Sheet',
+    styleAnchors: [
+      'Seamless Pixel Tileset Sheet',
+      'tiling pixel environment tiles',
+      'seamless tiles',
+    ],
+    category: '7. Indexed Raster Language',
+    domain: 'tiling pixel environment tiles',
+    negativePrompt:
+      'blurry upscaled pixels, interface or HUD, existing game sprites, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Seamless pixel tileset sheet: an environment assembled from repeating square pixel tiles of grass, stone, water and walls that fit together seamlessly into a scene.',
+      subject_treatment:
+        "Preserve the requested identity, count, pose and action with original characters; build the subject's environment from clearly repeating seamless tiles.",
+      color_and_tone:
+        'Cohesive limited palette shared across tiles, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Consistent top-left light on every tile, kept consistent across the whole image.',
+      texture_and_material: 'Repeating stone, grass and water tiles with seamless edges.',
+      camera_and_composition: 'Top-down or side view showing the tile rhythm.',
+      atmosphere_and_mood: 'Keep the requested mood with orderly handcrafted worlds.',
+      rendering_and_quality:
+        'Clean tiling with subtle variation tiles, kept consistent across the whole image.',
+      creative_brief:
+        "Seamless pixel tileset sheet: an environment assembled from repeating square pixel tiles of grass, stone, water and walls that fit together seamlessly into a scene. Carry it through seamless tiles, repeating rhythm, shared palette, variation tiles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'seamless tiles; repeating rhythm; shared palette; variation tiles',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-157',
+    name: 'Low-Count Pixel Portrait',
+    displayName: 'Low-Count Pixel Portrait',
+    styleAnchors: ['Low-Count Pixel Portrait', 'tiny pixel character portrait', 'tiny canvas'],
+    category: '7. Indexed Raster Language',
+    domain: 'tiny pixel character portrait',
+    negativePrompt:
+      'blurry upscaled pixels, interface or HUD, existing game sprites, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Low-count pixel portrait: a character portrait in a tiny canvas such as thirty-two pixels square, where every single pixel carries an eye, a brow or a mood.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; reduce the subject to a tiny portrait where each pixel matters.',
+      color_and_tone:
+        'Small bold palette with strong contrast, kept consistent across the whole image.',
+      lighting_and_shadow: 'One or two shading steps only, kept consistent across the whole image.',
+      texture_and_material:
+        'Very large visible pixels with no smoothing, kept consistent across the whole image.',
+      camera_and_composition: 'Tight head portrait filling a tiny square canvas.',
+      atmosphere_and_mood: 'Keep the requested mood with strong expression from minimal means.',
+      rendering_and_quality:
+        'Every pixel intentional and readable, kept consistent across the whole image.',
+      creative_brief:
+        "Low-count pixel portrait: a character portrait in a tiny canvas such as thirty-two pixels square, where every single pixel carries an eye, a brow or a mood. Carry it through tiny canvas, huge pixels, minimal expression, tight portrait. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'tiny canvas; huge pixels; minimal expression; tight portrait',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-158',
+    name: 'Pixel Light Bloom Halo',
+    displayName: 'Pixel Light Bloom Halo',
+    styleAnchors: ['Pixel Light Bloom Halo', 'stepped pixel glow', 'stepped glow rings'],
+    category: '7. Indexed Raster Language',
+    domain: 'stepped pixel glow',
+    negativePrompt:
+      'soft photographic bloom, blurry upscaled pixels, interface or HUD, existing game sprites, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Pixel light bloom halo: light sources surrounded by concentric stepped rings of pixel glow, lanterns, spells and crystals blooming into the dark in hard-edged bands.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; make the subject or its light source bloom in stepped rings of pixel glow.',
+      color_and_tone:
+        'Dark scenes with bright stepped glow rings, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Radial stepped glow from light sources, kept consistent across the whole image.',
+      texture_and_material:
+        'Hard-edged glow bands and crisp pixels, kept consistent across the whole image.',
+      camera_and_composition:
+        'Light source central with darkness around, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with warm magical glow.',
+      rendering_and_quality:
+        'Clean ring steps without soft blur, kept consistent across the whole image.',
+      creative_brief:
+        "Pixel light bloom halo: light sources surrounded by concentric stepped rings of pixel glow, lanterns, spells and crystals blooming into the dark in hard-edged bands. Carry it through stepped glow rings, dark scene, light source, hard bands. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'stepped glow rings; dark scene; light source; hard bands',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-159',
+    name: 'Pillow-Shaded Pixel Kitsch',
+    displayName: 'Pillow-Shaded Pixel Kitsch',
+    styleAnchors: ['Pillow-Shaded Pixel Kitsch', 'naive pillow-shaded pixels', 'pillow shading'],
+    category: '7. Indexed Raster Language',
+    domain: 'naive pillow-shaded pixels',
+    negativePrompt:
+      'blurry upscaled pixels, interface or HUD, existing game sprites, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Pillow-shaded pixel kitsch: pixel art shaded inward from every outline like a pillow, ignoring any real light, a naive beginner look embraced for comedy and charm.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; shade the subject from its edges inward like a puffy pillow.',
+      color_and_tone: 'Bright colors getting lighter toward the center of each shape.',
+      lighting_and_shadow:
+        'No real light source; shading follows outlines, kept consistent across the whole image.',
+      texture_and_material:
+        'Puffy inward ramps and thick outlines, kept consistent across the whole image.',
+      camera_and_composition: 'Simple centered subject, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with lovable amateur charm.',
+      rendering_and_quality:
+        'Deliberately naive but clean pixels, kept consistent across the whole image.',
+      creative_brief:
+        "Pillow-shaded pixel kitsch: pixel art shaded inward from every outline like a pillow, ignoring any real light, a naive beginner look embraced for comedy and charm. Carry it through pillow shading, inward ramps, no light source, puffy forms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'pillow shading; inward ramps; no light source; puffy forms',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-160',
+    name: 'Clustered Pixel Foliage Canopy',
+    displayName: 'Clustered Pixel Foliage Canopy',
+    styleAnchors: [
+      'Clustered Pixel Foliage Canopy',
+      'pixel leaf cluster technique',
+      'leaf clusters',
+    ],
+    category: '7. Indexed Raster Language',
+    domain: 'pixel leaf cluster technique',
+    negativePrompt:
+      'blurry upscaled pixels, interface or HUD, existing game sprites, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Clustered pixel foliage canopy: trees and bushes built from repeated hand-shaped leaf clusters in three or four greens, lit from above with dark gaps showing depth.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; surround the subject with dense canopies of repeating leaf clusters.',
+      color_and_tone: 'Three or four greens from lime highlight to deep teal shadow.',
+      lighting_and_shadow: 'Top light on cluster tops, dark gaps between.',
+      texture_and_material:
+        'Hand-shaped leaf clusters, trunks and dappled ground, kept consistent across the whole image.',
+      camera_and_composition:
+        'Deep forest framing with light patches, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with lush green depth.',
+      rendering_and_quality:
+        'Consistent cluster shapes with readable layers, kept consistent across the whole image.',
+      creative_brief:
+        "Clustered pixel foliage canopy: trees and bushes built from repeated hand-shaped leaf clusters in three or four greens, lit from above with dark gaps showing depth. Carry it through leaf clusters, layered greens, dark gaps, dappled light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'leaf clusters; layered greens; dark gaps; dappled light',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-161',
+    name: 'Four-Ink Palette Scene',
+    displayName: 'Four-Ink Palette Scene',
+    styleAnchors: ['Four-Ink Palette Scene', 'four-color constrained scene', 'exactly four colors'],
+    category: '7. Indexed Raster Language',
+    domain: 'four-color constrained scene',
+    negativePrompt:
+      'extra colors, blurry upscaled pixels, interface or HUD, existing game sprites, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Four-ink palette scene: a whole scene built from exactly four colors chosen as a mood, like ink, rust, bone and sea, where limits create strong atmosphere.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject and its world with exactly four chosen colors.',
+      color_and_tone: 'Exactly four harmonious colors covering dark to light.',
+      lighting_and_shadow:
+        'Light values mapped onto the four colors, kept consistent across the whole image.',
+      texture_and_material:
+        'Crisp pixels with minimal dither between colors, kept consistent across the whole image.',
+      camera_and_composition:
+        'Atmospheric scene with clear depth layers, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with strong unified atmosphere.',
+      rendering_and_quality:
+        'Disciplined palette with strong design, kept consistent across the whole image.',
+      creative_brief:
+        "Four-ink palette scene: a whole scene built from exactly four colors chosen as a mood, like ink, rust, bone and sea, where limits create strong atmosphere. Carry it through exactly four colors, unified mood, depth layers, crisp pixels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'exactly four colors; unified mood; depth layers; crisp pixels',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-162',
+    name: 'High-Density Pixel Painting',
+    displayName: 'High-Density Pixel Painting',
+    styleAnchors: [
+      'High-Density Pixel Painting',
+      'large-canvas detailed pixel art',
+      'large canvas',
+    ],
+    category: '7. Indexed Raster Language',
+    domain: 'large-canvas detailed pixel art',
+    negativePrompt:
+      'blurry upscaled pixels, interface or HUD, existing game sprites, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'High-density pixel painting: modern large-canvas pixel art with painterly detail, many colors and atmospheric depth while every pixel is still hand-placed and crisp.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject with rich painterly detail using crisp hand-placed pixels.',
+      color_and_tone:
+        'Rich atmospheric palette with many hues, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Painterly light, volumetric beams and depth haze, kept consistent across the whole image.',
+      texture_and_material:
+        'Detailed pixel textures, stone, cloth and foliage, kept consistent across the whole image.',
+      camera_and_composition:
+        'Cinematic wide composition with deep layers, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with cinematic painterly depth.',
+      rendering_and_quality:
+        'Crisp pixels at high detail, never blurred, kept consistent across the whole image.',
+      creative_brief:
+        "High-density pixel painting: modern large-canvas pixel art with painterly detail, many colors and atmospheric depth while every pixel is still hand-placed and crisp. Carry it through large canvas, painterly pixels, atmospheric depth, crisp detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'large canvas; painterly pixels; atmospheric depth; crisp detail',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-163',
+    name: 'Pixel Water Reflection',
+    displayName: 'Pixel Water Reflection',
+    styleAnchors: [
+      'Pixel Water Reflection',
+      'pixel water with broken reflections',
+      'broken reflection strips',
+    ],
+    category: '7. Indexed Raster Language',
+    domain: 'pixel water with broken reflections',
+    negativePrompt:
+      'blurry upscaled pixels, interface or HUD, existing game sprites, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Pixel water reflection: water scenes where reflections are broken into horizontal pixel strips and highlight dashes, shimmering in stepped lines.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; place the subject above water that reflects it in broken pixel strips.',
+      color_and_tone:
+        'Deep water blues with bright reflected colors, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Reflected light broken into horizontal dashes, kept consistent across the whole image.',
+      texture_and_material:
+        'Horizontal pixel strips, highlight dashes and ripples, kept consistent across the whole image.',
+      camera_and_composition:
+        'Horizon with subject above and reflection below, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with calm shimmering reflection.',
+      rendering_and_quality:
+        'Clean stepped reflections with readable shapes, kept consistent across the whole image.',
+      creative_brief:
+        "Pixel water reflection: water scenes where reflections are broken into horizontal pixel strips and highlight dashes, shimmering in stepped lines. Carry it through broken reflection strips, highlight dashes, horizon, ripples. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'broken reflection strips; highlight dashes; horizon; ripples',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-164',
+    name: 'Rim-Lit Pixel Silhouette',
+    displayName: 'Rim-Lit Pixel Silhouette',
+    styleAnchors: [
+      'Rim-Lit Pixel Silhouette',
+      'dark sprites with bright edge light',
+      'dark silhouettes',
+    ],
+    category: '7. Indexed Raster Language',
+    domain: 'dark sprites with bright edge light',
+    negativePrompt:
+      'blurry upscaled pixels, interface or HUD, existing game sprites, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Rim-lit pixel silhouette: dark near-black sprites outlined by a thin line of bright pixels where light from behind catches their edges.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject as a dark silhouette with a thin bright pixel rim.',
+      color_and_tone: 'Near-black figures with bright gold or cyan edge pixels.',
+      lighting_and_shadow:
+        'Strong backlight creating one-pixel rims, kept consistent across the whole image.',
+      texture_and_material:
+        'Dark flat fills and crisp bright edges, kept consistent across the whole image.',
+      camera_and_composition: 'Figures against a bright sky or glowing source.',
+      atmosphere_and_mood: 'Keep the requested mood with dramatic backlit mystery.',
+      rendering_and_quality:
+        'Clean rims and strong silhouettes, kept consistent across the whole image.',
+      creative_brief:
+        "Rim-lit pixel silhouette: dark near-black sprites outlined by a thin line of bright pixels where light from behind catches their edges. Carry it through dark silhouettes, one-pixel rim light, backlight, strong shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'dark silhouettes; one-pixel rim light; backlight; strong shapes',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-165',
+    name: 'Palette-Shifted Night Scene',
+    displayName: 'Palette-Shifted Night Scene',
+    styleAnchors: [
+      'Palette-Shifted Night Scene',
+      'day scene shifted to night palette',
+      'night palette shift',
+    ],
+    category: '7. Indexed Raster Language',
+    domain: 'day scene shifted to night palette',
+    negativePrompt:
+      'blurry upscaled pixels, interface or HUD, existing game sprites, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Palette-shifted night scene: a pixel scene whose whole palette has been shifted to night, blues and purples replacing daylight colors, with a few warm lights left burning.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; set the subject in a scene whose palette is shifted to cool night.',
+      color_and_tone: 'Indigo, violet and teal with a few warm window lights.',
+      lighting_and_shadow:
+        'Moonlight tint everywhere, warm pools around lights, kept consistent across the whole image.',
+      texture_and_material:
+        'Same crisp pixels with cool shifted colors, kept consistent across the whole image.',
+      camera_and_composition: 'Village or landscape with a few glowing points.',
+      atmosphere_and_mood: 'Keep the requested mood with hushed nocturnal quiet.',
+      rendering_and_quality:
+        'Consistent night palette with readable detail, kept consistent across the whole image.',
+      creative_brief:
+        "Palette-shifted night scene: a pixel scene whose whole palette has been shifted to night, blues and purples replacing daylight colors, with a few warm lights left burning. Carry it through night palette shift, indigo tones, warm window lights, moonlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'night palette shift; indigo tones; warm window lights; moonlight',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

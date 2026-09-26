@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-163
+packId: pack_23
+name: Pixel Water Reflection
+styleAnchors:
+  - Pixel Water Reflection
+  - pixel water with broken reflections
+  - broken reflection strips
+displayName: Pixel Water Reflection
+category: 7. Indexed Raster Language
+domain: pixel water with broken reflections
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - indexed-raster-language
+  - pixel-water
+  - indexed-pixel
+  - portable-style-study
+visualDna:
+  aesthetic: 'Pixel water reflection: water scenes where reflections are broken into horizontal pixel strips and highlight dashes, shimmering in stepped lines.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; place the subject above water that reflects it in broken pixel strips.
+  color_and_tone: Deep water blues with bright reflected colors, kept consistent across the whole image.
+  lighting_and_shadow: Reflected light broken into horizontal dashes, kept consistent across the whole image.
+  texture_and_material: Horizontal pixel strips, highlight dashes and ripples, kept consistent across the whole image.
+  camera_and_composition: Horizon with subject above and reflection below, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with calm shimmering reflection.
+  rendering_and_quality: Clean stepped reflections with readable shapes, kept consistent across the whole image.
+  creative_brief: "Pixel water reflection: water scenes where reflections are broken into horizontal pixel strips and highlight dashes, shimmering in stepped lines. Carry it through broken reflection strips, highlight dashes, horizon, ripples. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: broken reflection strips; highlight dashes; horizon; ripples
+avoidRules:
+  - blurry upscaled pixels
+  - interface or HUD
+  - existing game sprites
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: blurry upscaled pixels, interface or HUD, existing game sprites, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: indexed-raster-language
+  categoryName: 7. Indexed Raster Language
+  tags:
+    - curation-v2
+    - indexed-raster-language
+    - pixel-water
+    - indexed-pixel
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: pixel water with broken reflections

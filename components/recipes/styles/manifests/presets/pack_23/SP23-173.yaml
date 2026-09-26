@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-173
+packId: pack_23
+name: Chrome Spheres on Checkerboard
+styleAnchors:
+  - Chrome Spheres on Checkerboard
+  - classic ray-traced demo scene
+  - chrome spheres
+displayName: Chrome Spheres on Checkerboard
+category: 8. Retro 3D Visual Studies
+domain: classic ray-traced demo scene
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - retro-3d-visual-studies
+  - chrome-checker
+  - retro-3d
+  - portable-style-study
+visualDna:
+  aesthetic: 'Chrome spheres on checkerboard: the classic early ray-tracing demo scene, perfect mirrored spheres floating over an infinite checkerboard under a gradient sky.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; place the subject among perfect chrome reflections on an infinite checkerboard.
+  color_and_tone: Red and white or black and white checkers, blue gradient sky.
+  lighting_and_shadow: Sharp ray-traced shadows and perfect reflections, kept consistent across the whole image.
+  texture_and_material: Mirror chrome, glass spheres and a crisp tile plane.
+  camera_and_composition: Low camera over an infinite checkerboard to the horizon.
+  atmosphere_and_mood: Keep the requested mood with early digital wonder.
+  rendering_and_quality: Crisp perfect reflections with aliased edges, kept consistent across the whole image.
+  creative_brief: "Chrome spheres on checkerboard: the classic early ray-tracing demo scene, perfect mirrored spheres floating over an infinite checkerboard under a gradient sky. Carry it through chrome spheres, infinite checkerboard, gradient sky, sharp shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: chrome spheres; infinite checkerboard; gradient sky; sharp shadows
+avoidRules:
+  - modern high-poly rendering
+  - interface or HUD
+  - existing game characters or logos
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: modern high-poly rendering, interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: retro-3d-visual-studies
+  categoryName: 8. Retro 3D Visual Studies
+  tags:
+    - curation-v2
+    - retro-3d-visual-studies
+    - chrome-checker
+    - retro-3d
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: classic ray-traced demo scene

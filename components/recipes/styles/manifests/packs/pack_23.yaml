@@ -104,6 +104,22 @@ categories:
       - pack_23/SP23-023.yaml
       - pack_23/SP23-024.yaml
       - pack_23/SP23-025.yaml
+      - pack_23/SP23-118.yaml
+      - pack_23/SP23-119.yaml
+      - pack_23/SP23-120.yaml
+      - pack_23/SP23-121.yaml
+      - pack_23/SP23-122.yaml
+      - pack_23/SP23-123.yaml
+      - pack_23/SP23-124.yaml
+      - pack_23/SP23-125.yaml
+      - pack_23/SP23-126.yaml
+      - pack_23/SP23-127.yaml
+      - pack_23/SP23-128.yaml
+      - pack_23/SP23-129.yaml
+      - pack_23/SP23-130.yaml
+      - pack_23/SP23-131.yaml
+      - pack_23/SP23-132.yaml
+      - pack_23/SP23-133.yaml
   - id: classic-rpg-visual-studies
     name: 6. Classic RPG Visual Studies
     presetRefs:
@@ -111,6 +127,22 @@ categories:
       - pack_23/SP23-027.yaml
       - pack_23/SP23-028.yaml
       - pack_23/SP23-029.yaml
+      - pack_23/SP23-134.yaml
+      - pack_23/SP23-135.yaml
+      - pack_23/SP23-136.yaml
+      - pack_23/SP23-137.yaml
+      - pack_23/SP23-138.yaml
+      - pack_23/SP23-139.yaml
+      - pack_23/SP23-140.yaml
+      - pack_23/SP23-141.yaml
+      - pack_23/SP23-142.yaml
+      - pack_23/SP23-143.yaml
+      - pack_23/SP23-144.yaml
+      - pack_23/SP23-145.yaml
+      - pack_23/SP23-146.yaml
+      - pack_23/SP23-147.yaml
+      - pack_23/SP23-148.yaml
+      - pack_23/SP23-149.yaml
   - id: indexed-raster-language
     name: 7. Indexed Raster Language
     presetRefs:
@@ -118,12 +150,45 @@ categories:
       - pack_23/SP23-031.yaml
       - pack_23/SP23-032.yaml
       - pack_23/SP23-033.yaml
+      - pack_23/SP23-150.yaml
+      - pack_23/SP23-151.yaml
+      - pack_23/SP23-152.yaml
+      - pack_23/SP23-153.yaml
+      - pack_23/SP23-154.yaml
+      - pack_23/SP23-155.yaml
+      - pack_23/SP23-156.yaml
+      - pack_23/SP23-157.yaml
+      - pack_23/SP23-158.yaml
+      - pack_23/SP23-159.yaml
+      - pack_23/SP23-160.yaml
+      - pack_23/SP23-161.yaml
+      - pack_23/SP23-162.yaml
+      - pack_23/SP23-163.yaml
+      - pack_23/SP23-164.yaml
+      - pack_23/SP23-165.yaml
   - id: retro-3d-visual-studies
     name: 8. Retro 3D Visual Studies
     presetRefs:
       - pack_23/SP23-034.yaml
       - pack_23/SP23-035.yaml
       - pack_23/SP23-036.yaml
+      - pack_23/SP23-166.yaml
+      - pack_23/SP23-167.yaml
+      - pack_23/SP23-168.yaml
+      - pack_23/SP23-169.yaml
+      - pack_23/SP23-170.yaml
+      - pack_23/SP23-171.yaml
+      - pack_23/SP23-172.yaml
+      - pack_23/SP23-173.yaml
+      - pack_23/SP23-174.yaml
+      - pack_23/SP23-175.yaml
+      - pack_23/SP23-176.yaml
+      - pack_23/SP23-177.yaml
+      - pack_23/SP23-178.yaml
+      - pack_23/SP23-179.yaml
+      - pack_23/SP23-180.yaml
+      - pack_23/SP23-181.yaml
+      - pack_23/SP23-182.yaml
   - id: painted-rpg-and-tactics
     name: 9. Painted RPG & Tactics
     presetRefs:
@@ -243,17 +308,82 @@ presetRefs:
   - pack_23/SP23-023.yaml
   - pack_23/SP23-024.yaml
   - pack_23/SP23-025.yaml
+  - pack_23/SP23-118.yaml
+  - pack_23/SP23-119.yaml
+  - pack_23/SP23-120.yaml
+  - pack_23/SP23-121.yaml
+  - pack_23/SP23-122.yaml
+  - pack_23/SP23-123.yaml
+  - pack_23/SP23-124.yaml
+  - pack_23/SP23-125.yaml
+  - pack_23/SP23-126.yaml
+  - pack_23/SP23-127.yaml
+  - pack_23/SP23-128.yaml
+  - pack_23/SP23-129.yaml
+  - pack_23/SP23-130.yaml
+  - pack_23/SP23-131.yaml
+  - pack_23/SP23-132.yaml
+  - pack_23/SP23-133.yaml
   - pack_23/SP23-026.yaml
   - pack_23/SP23-027.yaml
   - pack_23/SP23-028.yaml
   - pack_23/SP23-029.yaml
+  - pack_23/SP23-134.yaml
+  - pack_23/SP23-135.yaml
+  - pack_23/SP23-136.yaml
+  - pack_23/SP23-137.yaml
+  - pack_23/SP23-138.yaml
+  - pack_23/SP23-139.yaml
+  - pack_23/SP23-140.yaml
+  - pack_23/SP23-141.yaml
+  - pack_23/SP23-142.yaml
+  - pack_23/SP23-143.yaml
+  - pack_23/SP23-144.yaml
+  - pack_23/SP23-145.yaml
+  - pack_23/SP23-146.yaml
+  - pack_23/SP23-147.yaml
+  - pack_23/SP23-148.yaml
+  - pack_23/SP23-149.yaml
   - pack_23/SP23-030.yaml
   - pack_23/SP23-031.yaml
   - pack_23/SP23-032.yaml
   - pack_23/SP23-033.yaml
+  - pack_23/SP23-150.yaml
+  - pack_23/SP23-151.yaml
+  - pack_23/SP23-152.yaml
+  - pack_23/SP23-153.yaml
+  - pack_23/SP23-154.yaml
+  - pack_23/SP23-155.yaml
+  - pack_23/SP23-156.yaml
+  - pack_23/SP23-157.yaml
+  - pack_23/SP23-158.yaml
+  - pack_23/SP23-159.yaml
+  - pack_23/SP23-160.yaml
+  - pack_23/SP23-161.yaml
+  - pack_23/SP23-162.yaml
+  - pack_23/SP23-163.yaml
+  - pack_23/SP23-164.yaml
+  - pack_23/SP23-165.yaml
   - pack_23/SP23-034.yaml
   - pack_23/SP23-035.yaml
   - pack_23/SP23-036.yaml
+  - pack_23/SP23-166.yaml
+  - pack_23/SP23-167.yaml
+  - pack_23/SP23-168.yaml
+  - pack_23/SP23-169.yaml
+  - pack_23/SP23-170.yaml
+  - pack_23/SP23-171.yaml
+  - pack_23/SP23-172.yaml
+  - pack_23/SP23-173.yaml
+  - pack_23/SP23-174.yaml
+  - pack_23/SP23-175.yaml
+  - pack_23/SP23-176.yaml
+  - pack_23/SP23-177.yaml
+  - pack_23/SP23-178.yaml
+  - pack_23/SP23-179.yaml
+  - pack_23/SP23-180.yaml
+  - pack_23/SP23-181.yaml
+  - pack_23/SP23-182.yaml
   - pack_23/SP23-037.yaml
   - pack_23/SP23-038.yaml
   - pack_23/SP23-039.yaml

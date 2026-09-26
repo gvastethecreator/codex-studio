@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-170
+packId: pack_23
+name: Draw-Distance Fog World
+styleAnchors:
+  - Draw-Distance Fog World
+  - fog hiding short draw distance
+  - thick flat fog
+displayName: Draw-Distance Fog World
+category: 8. Retro 3D Visual Studies
+domain: fog hiding short draw distance
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - retro-3d-visual-studies
+  - draw-fog
+  - retro-3d
+  - portable-style-study
+visualDna:
+  aesthetic: 'Draw-distance fog world: early 3D worlds wrapped in thick colored fog that hides how little could be drawn, objects popping out of the haze a few steps away.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; surround the subject with thick flat fog that swallows everything beyond a short distance.
+  color_and_tone: Flat fog color such as grey-green, purple or orange.
+  lighting_and_shadow: Flat ambient light fading into fog color, kept consistent across the whole image.
+  texture_and_material: Low-res textures fading into solid fog, kept consistent across the whole image.
+  camera_and_composition: Near objects clear, distance a flat wall of fog.
+  atmosphere_and_mood: Keep the requested mood with lonely unseen menace.
+  rendering_and_quality: Hard fog falloff with objects popping into view.
+  creative_brief: "Draw-distance fog world: early 3D worlds wrapped in thick colored fog that hides how little could be drawn, objects popping out of the haze a few steps away. Carry it through thick flat fog, short view distance, popping objects, low-res textures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: thick flat fog; short view distance; popping objects; low-res textures
+avoidRules:
+  - modern high-poly rendering
+  - interface or HUD
+  - existing game characters or logos
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: modern high-poly rendering, interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: retro-3d-visual-studies
+  categoryName: 8. Retro 3D Visual Studies
+  tags:
+    - curation-v2
+    - retro-3d-visual-studies
+    - draw-fog
+    - retro-3d
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: fog hiding short draw distance

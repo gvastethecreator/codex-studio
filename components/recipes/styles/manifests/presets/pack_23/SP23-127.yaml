@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-127
+packId: pack_23
+name: Victorian Revival Illumination
+styleAnchors:
+  - Victorian Revival Illumination
+  - nineteenth-century neo-gothic illumination
+  - neo-gothic border
+displayName: Victorian Revival Illumination
+category: 5. Revival & Storybook Illustration
+domain: nineteenth-century neo-gothic illumination
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - revival-and-storybook-illustration
+  - revival-illumination
+  - storybook-revival
+  - portable-style-study
+visualDna:
+  aesthetic: 'Victorian revival illumination: nineteenth-century chromolithographed imitations of medieval illumination, too perfect and too bright, with crisp gold, geometric borders and saturated color.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; frame the subject in immaculate neo-gothic borders printed in saturated color.
+  color_and_tone: Saturated crimson, ultramarine, emerald and bright printed gold.
+  lighting_and_shadow: Flat with slight printed modeling, kept consistent across the whole image.
+  texture_and_material: Chromolithograph ink, printed gold and smooth paper, kept consistent across the whole image.
+  camera_and_composition: Central panel with elaborate symmetric borders, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with earnest Victorian grandeur.
+  rendering_and_quality: Crisp mechanical perfection of revival ornament, kept consistent across the whole image.
+  creative_brief: "Victorian revival illumination: nineteenth-century chromolithographed imitations of medieval illumination, too perfect and too bright, with crisp gold, geometric borders and saturated color. Carry it through neo-gothic border, saturated chromolithograph, printed gold, symmetry. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: neo-gothic border; saturated chromolithograph; printed gold; symmetry
+avoidRules:
+  - readable script
+  - readable captions or lettering
+  - existing fairy-tale film character designs
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable script, readable captions or lettering, existing fairy-tale film character designs, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: revival-and-storybook-illustration
+  categoryName: 5. Revival & Storybook Illustration
+  tags:
+    - curation-v2
+    - revival-and-storybook-illustration
+    - revival-illumination
+    - storybook-revival
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: nineteenth-century neo-gothic illumination

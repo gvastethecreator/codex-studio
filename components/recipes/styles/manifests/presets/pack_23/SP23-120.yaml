@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP23-120
+packId: pack_23
+name: Contraption Ink Drawing
+styleAnchors:
+  - Contraption Ink Drawing
+  - absurd machine line drawing
+  - absurd machine
+displayName: Contraption Ink Drawing
+category: 5. Revival & Storybook Illustration
+domain: absurd machine line drawing
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - revival-and-storybook-illustration
+  - contraption
+  - storybook-revival
+  - portable-style-study
+visualDna:
+  aesthetic: 'Contraption ink drawing: Edwardian humorous line drawings of absurdly complicated machines built from string, pulleys, planks and kettles, operated by very serious gentlemen.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; involve the subject in a ridiculously elaborate machine of ropes, pulleys and planks.
+  color_and_tone: Black ink with soft grey wash or pale tint.
+  lighting_and_shadow: Light hatching and soft wash shadows, kept consistent across the whole image.
+  texture_and_material: Fine pen line, knotted string, planks and patched fabric.
+  camera_and_composition: Wide view showing the entire contraption and its operators.
+  atmosphere_and_mood: Keep the requested mood with deadpan absurd ingenuity.
+  rendering_and_quality: Clear readable mechanism with careful comic detail, kept consistent across the whole image.
+  creative_brief: "Contraption ink drawing: Edwardian humorous line drawings of absurdly complicated machines built from string, pulleys, planks and kettles, operated by very serious gentlemen. Carry it through absurd machine, pulleys and strings, serious operators, fine pen line. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: absurd machine; pulleys and strings; serious operators; fine pen line
+avoidRules:
+  - readable captions or lettering
+  - existing fairy-tale film character designs
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable captions or lettering, existing fairy-tale film character designs, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: revival-and-storybook-illustration
+  categoryName: 5. Revival & Storybook Illustration
+  tags:
+    - curation-v2
+    - revival-and-storybook-illustration
+    - contraption
+    - storybook-revival
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: absurd machine line drawing

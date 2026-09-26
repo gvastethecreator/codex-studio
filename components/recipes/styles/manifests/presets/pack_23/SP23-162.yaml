@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-162
+packId: pack_23
+name: High-Density Pixel Painting
+styleAnchors:
+  - High-Density Pixel Painting
+  - large-canvas detailed pixel art
+  - large canvas
+displayName: High-Density Pixel Painting
+category: 7. Indexed Raster Language
+domain: large-canvas detailed pixel art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - indexed-raster-language
+  - hd-pixel
+  - indexed-pixel
+  - portable-style-study
+visualDna:
+  aesthetic: 'High-density pixel painting: modern large-canvas pixel art with painterly detail, many colors and atmospheric depth while every pixel is still hand-placed and crisp.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; render the subject with rich painterly detail using crisp hand-placed pixels.
+  color_and_tone: Rich atmospheric palette with many hues, kept consistent across the whole image.
+  lighting_and_shadow: Painterly light, volumetric beams and depth haze, kept consistent across the whole image.
+  texture_and_material: Detailed pixel textures, stone, cloth and foliage, kept consistent across the whole image.
+  camera_and_composition: Cinematic wide composition with deep layers, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with cinematic painterly depth.
+  rendering_and_quality: Crisp pixels at high detail, never blurred, kept consistent across the whole image.
+  creative_brief: "High-density pixel painting: modern large-canvas pixel art with painterly detail, many colors and atmospheric depth while every pixel is still hand-placed and crisp. Carry it through large canvas, painterly pixels, atmospheric depth, crisp detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: large canvas; painterly pixels; atmospheric depth; crisp detail
+avoidRules:
+  - blurry upscaled pixels
+  - interface or HUD
+  - existing game sprites
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: blurry upscaled pixels, interface or HUD, existing game sprites, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: indexed-raster-language
+  categoryName: 7. Indexed Raster Language
+  tags:
+    - curation-v2
+    - indexed-raster-language
+    - hd-pixel
+    - indexed-pixel
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: large-canvas detailed pixel art

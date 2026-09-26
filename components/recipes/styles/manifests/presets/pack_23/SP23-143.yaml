@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-143
+packId: pack_23
+name: Vector Line Adventure Picture
+styleAnchors:
+  - Vector Line Adventure Picture
+  - early vector-drawn adventure image
+  - thin vector lines
+displayName: Vector Line Adventure Picture
+category: 6. Classic RPG Visual Studies
+domain: early vector-drawn adventure image
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - classic-rpg-visual-studies
+  - vector-adventure
+  - classic-rpg
+  - portable-style-study
+visualDna:
+  aesthetic: 'Vector line adventure picture: early home-computer adventure game pictures drawn with thin vector lines and simple flood fills, a few bright colors on black.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; draw the subject with thin straight vector lines and flat flood-fill color.
+  color_and_tone: Black ground with a handful of bright flat colors.
+  lighting_and_shadow: No lighting; flood fills only, kept consistent across the whole image.
+  texture_and_material: Thin jagged lines, flat fills and fill leaks.
+  camera_and_composition: Simple scene in a rectangular picture above empty space.
+  atmosphere_and_mood: Keep the requested mood with primitive imaginative charm.
+  rendering_and_quality: Crude charming vector drawing with visible steps, kept consistent across the whole image.
+  creative_brief: "Vector line adventure picture: early home-computer adventure game pictures drawn with thin vector lines and simple flood fills, a few bright colors on black. Carry it through thin vector lines, flood fills, black ground, few colors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: thin vector lines; flood fills; black ground; few colors
+avoidRules:
+  - text parser prompt
+  - interface text, health bars or menus
+  - existing game characters or logos
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: text parser prompt, interface text, health bars or menus, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: classic-rpg-visual-studies
+  categoryName: 6. Classic RPG Visual Studies
+  tags:
+    - curation-v2
+    - classic-rpg-visual-studies
+    - vector-adventure
+    - classic-rpg
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: early vector-drawn adventure image

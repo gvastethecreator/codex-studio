@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-148
+packId: pack_23
+name: Arcade Cabinet Fantasy Marquee
+styleAnchors:
+  - Arcade Cabinet Fantasy Marquee
+  - backlit arcade side art
+  - backlit plastic
+displayName: Arcade Cabinet Fantasy Marquee
+category: 6. Classic RPG Visual Studies
+domain: backlit arcade side art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - classic-rpg-visual-studies
+  - arcade-marquee
+  - classic-rpg
+  - portable-style-study
+visualDna:
+  aesthetic: 'Arcade cabinet fantasy marquee: backlit arcade header and side art with bold ink outlines, saturated flat color, airbrushed flames and heroic fantasy figures glowing through plastic.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; render the subject as bold outlined cabinet art glowing from behind.
+  color_and_tone: Hot red, yellow and blue flats with black outlines.
+  lighting_and_shadow: Backlit glow through translucent plastic, kept consistent across the whole image.
+  texture_and_material: Screen-printed plastic, bold ink, airbrush flames and scratches.
+  camera_and_composition: Wide horizontal marquee or tall side panel, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with loud coin-op excitement.
+  rendering_and_quality: Punchy commercial art with no logo, kept consistent across the whole image.
+  creative_brief: "Arcade cabinet fantasy marquee: backlit arcade header and side art with bold ink outlines, saturated flat color, airbrushed flames and heroic fantasy figures glowing through plastic. Carry it through backlit plastic, bold outlines, airbrush flames, saturated flats. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: backlit plastic; bold outlines; airbrush flames; saturated flats
+avoidRules:
+  - game title logo
+  - interface text, health bars or menus
+  - existing game characters or logos
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: game title logo, interface text, health bars or menus, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: classic-rpg-visual-studies
+  categoryName: 6. Classic RPG Visual Studies
+  tags:
+    - curation-v2
+    - classic-rpg-visual-studies
+    - arcade-marquee
+    - classic-rpg
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: backlit arcade side art

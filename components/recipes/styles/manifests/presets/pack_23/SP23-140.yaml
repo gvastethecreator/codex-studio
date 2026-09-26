@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-140
+packId: pack_23
+name: Sprite Town Bustle
+styleAnchors:
+  - Sprite Town Bustle
+  - pixel village crowd scene
+  - townsfolk sprites
+displayName: Sprite Town Bustle
+category: 6. Classic RPG Visual Studies
+domain: pixel village crowd scene
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - classic-rpg-visual-studies
+  - sprite-town
+  - classic-rpg
+  - portable-style-study
+visualDna:
+  aesthetic: 'Sprite town bustle: a top-down or three-quarter pixel village crowded with townsfolk sprites, market stalls, animals and small daily dramas all happening at once.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; set the subject among many small busy townsfolk sprites in a pixel village.
+  color_and_tone: Warm village colors, cobbles, awnings and greenery, kept consistent across the whole image.
+  lighting_and_shadow: Bright daylight with small sprite shadows, kept consistent across the whole image.
+  texture_and_material: Pixel cobbles, tile roofs, crates and signs without words.
+  camera_and_composition: Three-quarter overhead view full of activity, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with lively everyday charm.
+  rendering_and_quality: Busy but readable scene with clear sprites, kept consistent across the whole image.
+  creative_brief: "Sprite town bustle: a top-down or three-quarter pixel village crowded with townsfolk sprites, market stalls, animals and small daily dramas all happening at once. Carry it through townsfolk sprites, market stalls, small dramas, overhead view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: townsfolk sprites; market stalls; small dramas; overhead view
+avoidRules:
+  - readable shop signs
+  - interface text, health bars or menus
+  - existing game characters or logos
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable shop signs, interface text, health bars or menus, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: classic-rpg-visual-studies
+  categoryName: 6. Classic RPG Visual Studies
+  tags:
+    - curation-v2
+    - classic-rpg-visual-studies
+    - sprite-town
+    - classic-rpg
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: pixel village crowd scene

@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP23-124
+packId: pack_23
+name: Slavic Folktale Ornament Frame
+styleAnchors:
+  - Slavic Folktale Ornament Frame
+  - russian folktale book illustration
+  - ornamental folk border
+displayName: Slavic Folktale Ornament Frame
+category: 5. Revival & Storybook Illustration
+domain: russian folktale book illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - revival-and-storybook-illustration
+  - folktale-frame
+  - storybook-revival
+  - portable-style-study
+visualDna:
+  aesthetic: 'Slavic folktale ornament frame: early twentieth-century folk-tale illustration with firm ink outlines, flat watercolor, birch-bark and embroidered borders framing each scene.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; frame the subject with ornamental folk borders of birch, flowers and carved wood.
+  color_and_tone: Rich red, forest green, gold and snow white flat washes.
+  lighting_and_shadow: Flat with light wash shading, kept consistent across the whole image.
+  texture_and_material: Firm ink outline, flat watercolor, embroidered and carved motifs.
+  camera_and_composition: Scene inside a decorative border frame with corner motifs.
+  atmosphere_and_mood: Keep the requested mood with folk-tale wonder and menace.
+  rendering_and_quality: Clear outline and flat color with rich ornament.
+  creative_brief: "Slavic folktale ornament frame: early twentieth-century folk-tale illustration with firm ink outlines, flat watercolor, birch-bark and embroidered borders framing each scene. Carry it through ornamental folk border, ink outline, flat watercolor, birch and flowers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: ornamental folk border; ink outline; flat watercolor; birch and flowers
+avoidRules:
+  - readable captions or lettering
+  - existing fairy-tale film character designs
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable captions or lettering, existing fairy-tale film character designs, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: revival-and-storybook-illustration
+  categoryName: 5. Revival & Storybook Illustration
+  tags:
+    - curation-v2
+    - revival-and-storybook-illustration
+    - folktale-frame
+    - storybook-revival
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: russian folktale book illustration

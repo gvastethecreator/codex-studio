@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP23-121
+packId: pack_23
+name: Celtic Revival Twilight Plate
+styleAnchors:
+  - Celtic Revival Twilight Plate
+  - celtic revival book illustration
+  - jewel patterning
+displayName: Celtic Revival Twilight Plate
+category: 5. Revival & Storybook Illustration
+domain: celtic revival book illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - revival-and-storybook-illustration
+  - celtic-revival
+  - storybook-revival
+  - portable-style-study
+visualDna:
+  aesthetic: 'Celtic revival twilight plate: early twentieth-century illustration of Irish legend, intricate jewel-like patterning, elongated pale figures, peacock blues and shadowy twilight.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; render the subject as elongated pale figures wrapped in intricate jewel-patterned clothing.
+  color_and_tone: Peacock blue, deep violet, emerald and pale gold with inky blacks.
+  lighting_and_shadow: Dim twilight glow with pale faces lit from within.
+  texture_and_material: Dense decorative patterning like stained glass and beadwork.
+  camera_and_composition: Tall figures filling a vertical plate among patterned shapes.
+  atmosphere_and_mood: Keep the requested mood with eerie haunted romanticism.
+  rendering_and_quality: Obsessively detailed patterns with clear pale figures, kept consistent across the whole image.
+  creative_brief: "Celtic revival twilight plate: early twentieth-century illustration of Irish legend, intricate jewel-like patterning, elongated pale figures, peacock blues and shadowy twilight. Carry it through jewel patterning, elongated pale figures, peacock blue, twilight glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: jewel patterning; elongated pale figures; peacock blue; twilight glow
+avoidRules:
+  - readable captions or lettering
+  - existing fairy-tale film character designs
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable captions or lettering, existing fairy-tale film character designs, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: revival-and-storybook-illustration
+  categoryName: 5. Revival & Storybook Illustration
+  tags:
+    - curation-v2
+    - revival-and-storybook-illustration
+    - celtic-revival
+    - storybook-revival
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: celtic revival book illustration

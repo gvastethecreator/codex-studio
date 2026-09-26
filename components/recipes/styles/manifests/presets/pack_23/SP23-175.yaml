@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP23-175
+packId: pack_23
+name: Character-Select Model Pose
+styleAnchors:
+  - Character-Select Model Pose
+  - turntable character select screen
+  - pedestal
+displayName: Character-Select Model Pose
+category: 8. Retro 3D Visual Studies
+domain: turntable character select screen
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - retro-3d-visual-studies
+  - char-select
+  - retro-3d
+  - portable-style-study
+visualDna:
+  aesthetic: 'Character-select model pose: a low-poly hero model standing on a small pedestal in an idle pose, lit dramatically against a dark gradient as if waiting to be chosen.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; pose the subject as a low-poly character on a pedestal in an idle stance.
+  color_and_tone: Dark gradient background with a bright spot on the model.
+  lighting_and_shadow: Strong key light and rim light on the model.
+  texture_and_material: Low-poly model, painted textures and a glowing pedestal.
+  camera_and_composition: Full-body centered, slightly low angle, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with anticipation and pride.
+  rendering_and_quality: Clean low-poly model with dramatic lighting, kept consistent across the whole image.
+  creative_brief: "Character-select model pose: a low-poly hero model standing on a small pedestal in an idle pose, lit dramatically against a dark gradient as if waiting to be chosen. Carry it through pedestal, idle pose, dark gradient, dramatic spotlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: pedestal; idle pose; dark gradient; dramatic spotlight
+avoidRules:
+  - character names or stats
+  - modern high-poly rendering
+  - interface or HUD
+  - existing game characters or logos
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: character names or stats, modern high-poly rendering, interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: retro-3d-visual-studies
+  categoryName: 8. Retro 3D Visual Studies
+  tags:
+    - curation-v2
+    - retro-3d-visual-studies
+    - char-select
+    - retro-3d
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: turntable character select screen

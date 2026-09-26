@@ -119,4 +119,521 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP23-134',
+    name: 'First-Person Dungeon Crawl Frame',
+    displayName: 'First-Person Dungeon Crawl Frame',
+    styleAnchors: [
+      'First-Person Dungeon Crawl Frame',
+      'grid dungeon first-person view',
+      'symmetrical corridor',
+    ],
+    category: '6. Classic RPG Visual Studies',
+    domain: 'grid dungeon first-person view',
+    negativePrompt:
+      'interface text, health bars or menus, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'First-person dungeon crawl frame: a static first-person view down a stone grid corridor with symmetrical walls stepping back into darkness and a monster filling the center square.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject face-on in the center of a symmetrical stepped corridor view.',
+      color_and_tone: 'Limited palette of stone greys, torch orange and deep black.',
+      lighting_and_shadow: 'Distance darkness in discrete steps, torchlit near walls.',
+      texture_and_material: 'Pixelated brick walls, flat floor tiles and dithered darkness.',
+      camera_and_composition:
+        'Perfectly symmetrical one-point perspective corridor, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with claustrophobic step-by-step dread.',
+      rendering_and_quality:
+        'Crisp pixel walls with discrete depth steps, kept consistent across the whole image.',
+      creative_brief:
+        "First-person dungeon crawl frame: a static first-person view down a stone grid corridor with symmetrical walls stepping back into darkness and a monster filling the center square. Carry it through symmetrical corridor, stepped depth, center monster, torch light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'symmetrical corridor; stepped depth; center monster; torch light',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-135',
+    name: 'Eight-Direction Overworld Map',
+    displayName: 'Eight-Direction Overworld Map',
+    styleAnchors: ['Eight-Direction Overworld Map', 'top-down tile overworld', 'top-down tiles'],
+    category: '6. Classic RPG Visual Studies',
+    domain: 'top-down tile overworld',
+    negativePrompt:
+      'interface text, health bars or menus, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Eight-direction overworld map: a top-down tile world of tiny forests, mountains, towns and rivers with a small hero sprite walking across a much larger land.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject as a tiny sprite or landmark on a top-down tile overworld.',
+      color_and_tone: 'Bright grass greens, ocean blues, sand and mountain browns.',
+      lighting_and_shadow:
+        'Flat lighting with small tile shadows, kept consistent across the whole image.',
+      texture_and_material: 'Repeating tiles, pixel trees and tiny town icons.',
+      camera_and_composition: 'Top-down view with the sprite small in a large map.',
+      atmosphere_and_mood: 'Keep the requested mood with open adventurous freedom.',
+      rendering_and_quality:
+        'Clean readable tile map without interface, kept consistent across the whole image.',
+      creative_brief:
+        "Eight-direction overworld map: a top-down tile world of tiny forests, mountains, towns and rivers with a small hero sprite walking across a much larger land. Carry it through top-down tiles, tiny hero sprite, forests and towns, map scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'top-down tiles; tiny hero sprite; forests and towns; map scale',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-136',
+    name: 'Side-View Battle Tableau',
+    displayName: 'Side-View Battle Tableau',
+    styleAnchors: ['Side-View Battle Tableau', 'side-view turn battle scene', 'hero row'],
+    category: '6. Classic RPG Visual Studies',
+    domain: 'side-view turn battle scene',
+    negativePrompt:
+      'interface text, health bars or menus, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Side-view battle tableau: a turn-based battle frozen mid-action, a row of small hero sprites on the right facing a huge painted enemy on the left across a backdrop.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; arrange the subject as small sprites facing a huge enemy across a battle backdrop.',
+      color_and_tone: 'Bright sprite colors against a painted dusky backdrop.',
+      lighting_and_shadow: 'Flat sprites with spell flashes lighting the scene.',
+      texture_and_material: 'Pixel sprites, painted enemy art and effect sparkles.',
+      camera_and_composition: 'Heroes in a staggered row on the right, enemy on the left.',
+      atmosphere_and_mood: 'Keep the requested mood with dramatic turn-based tension.',
+      rendering_and_quality: 'Clear sprite readability with a large detailed enemy.',
+      creative_brief:
+        "Side-view battle tableau: a turn-based battle frozen mid-action, a row of small hero sprites on the right facing a huge painted enemy on the left across a backdrop. Carry it through hero row, huge painted enemy, spell flash, battle backdrop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'hero row; huge painted enemy; spell flash; battle backdrop',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-137',
+    name: 'Airbrushed Game Box Epic',
+    displayName: 'Airbrushed Game Box Epic',
+    styleAnchors: ['Airbrushed Game Box Epic', 'painted fantasy game box cover', 'airbrushed sky'],
+    category: '6. Classic RPG Visual Studies',
+    domain: 'painted fantasy game box cover',
+    negativePrompt:
+      'title logo, interface text, health bars or menus, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Airbrushed game box epic: eighties and nineties fantasy game box paintings with airbrushed skies, heroic figures in dynamic poses, glowing weapons and dramatic diagonal composition.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; pose the subject heroically in a dramatic diagonal fantasy painting.',
+      color_and_tone: 'Saturated sunset orange, violet sky and glowing weapon cyan.',
+      lighting_and_shadow:
+        'Strong rim light and airbrushed glow, kept consistent across the whole image.',
+      texture_and_material:
+        'Smooth airbrush gradients with crisp painted highlights, kept consistent across the whole image.',
+      camera_and_composition: 'Low heroic angle with strong diagonal and space for a title at top.',
+      atmosphere_and_mood: 'Keep the requested mood with bombastic fantasy grandeur.',
+      rendering_and_quality:
+        'Polished commercial painting, no logo or title, kept consistent across the whole image.',
+      creative_brief:
+        "Airbrushed game box epic: eighties and nineties fantasy game box paintings with airbrushed skies, heroic figures in dynamic poses, glowing weapons and dramatic diagonal composition. Carry it through airbrushed sky, heroic diagonal, glowing weapon, rim light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'airbrushed sky; heroic diagonal; glowing weapon; rim light',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-138',
+    name: 'Dialogue Portrait Bust',
+    displayName: 'Dialogue Portrait Bust',
+    styleAnchors: ['Dialogue Portrait Bust', 'character dialogue portrait', 'framed bust'],
+    category: '6. Classic RPG Visual Studies',
+    domain: 'character dialogue portrait',
+    negativePrompt:
+      'dialogue box text, interface text, health bars or menus, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Dialogue portrait bust: a framed head-and-shoulders character portrait of the kind that appears beside dialogue in classic RPGs, expressive face, painterly pixel detail and a plain backdrop.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject as a head-and-shoulders portrait with one clear expression.',
+      color_and_tone: 'Rich skin and costume colors on a plain dark backdrop.',
+      lighting_and_shadow:
+        'Soft key light with pixel-level shading, kept consistent across the whole image.',
+      texture_and_material: 'Careful pixel painting, hair clusters and cloth folds.',
+      camera_and_composition:
+        'Square framed bust facing slightly sideways, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with strong personal character.',
+      rendering_and_quality:
+        'Expressive detailed portrait with no dialogue box, kept consistent across the whole image.',
+      creative_brief:
+        "Dialogue portrait bust: a framed head-and-shoulders character portrait of the kind that appears beside dialogue in classic RPGs, expressive face, painterly pixel detail and a plain backdrop. Carry it through framed bust, single expression, painterly pixels, plain backdrop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'framed bust; single expression; painterly pixels; plain backdrop',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-139',
+    name: 'Pre-Rendered Painted Backdrop',
+    displayName: 'Pre-Rendered Painted Backdrop',
+    styleAnchors: [
+      'Pre-Rendered Painted Backdrop',
+      'pre-rendered isometric backdrop',
+      'elevated fixed angle',
+    ],
+    category: '6. Classic RPG Visual Studies',
+    domain: 'pre-rendered isometric backdrop',
+    negativePrompt:
+      'interface text, health bars or menus, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Pre-rendered painted backdrop: late-nineties computer RPG backgrounds, richly detailed isometric-angle scenes pre-rendered and painted over, with small figures moving through them.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; place small figures inside a richly detailed angled pre-rendered environment.',
+      color_and_tone: 'Warm lamplit browns, deep greens and moody blues.',
+      lighting_and_shadow: 'Baked warm lighting and soft shadows in every corner.',
+      texture_and_material:
+        'Painterly detailed textures, stone, wood and foliage, kept consistent across the whole image.',
+      camera_and_composition:
+        'Fixed elevated three-quarter angle with small figures, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with lived-in explorable depth.',
+      rendering_and_quality:
+        'Dense environmental detail with readable figures, kept consistent across the whole image.',
+      creative_brief:
+        "Pre-rendered painted backdrop: late-nineties computer RPG backgrounds, richly detailed isometric-angle scenes pre-rendered and painted over, with small figures moving through them. Carry it through elevated fixed angle, painted detail, baked light, small figures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'elevated fixed angle; painted detail; baked light; small figures',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-140',
+    name: 'Sprite Town Bustle',
+    displayName: 'Sprite Town Bustle',
+    styleAnchors: ['Sprite Town Bustle', 'pixel village crowd scene', 'townsfolk sprites'],
+    category: '6. Classic RPG Visual Studies',
+    domain: 'pixel village crowd scene',
+    negativePrompt:
+      'readable shop signs, interface text, health bars or menus, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Sprite town bustle: a top-down or three-quarter pixel village crowded with townsfolk sprites, market stalls, animals and small daily dramas all happening at once.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; set the subject among many small busy townsfolk sprites in a pixel village.',
+      color_and_tone:
+        'Warm village colors, cobbles, awnings and greenery, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Bright daylight with small sprite shadows, kept consistent across the whole image.',
+      texture_and_material: 'Pixel cobbles, tile roofs, crates and signs without words.',
+      camera_and_composition:
+        'Three-quarter overhead view full of activity, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with lively everyday charm.',
+      rendering_and_quality:
+        'Busy but readable scene with clear sprites, kept consistent across the whole image.',
+      creative_brief:
+        "Sprite town bustle: a top-down or three-quarter pixel village crowded with townsfolk sprites, market stalls, animals and small daily dramas all happening at once. Carry it through townsfolk sprites, market stalls, small dramas, overhead view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'townsfolk sprites; market stalls; small dramas; overhead view',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-141',
+    name: 'CD-Era Anime Cutscene Still',
+    displayName: 'CD-Era Anime Cutscene Still',
+    styleAnchors: [
+      'CD-Era Anime Cutscene Still',
+      'nineties cd game anime cutscene',
+      'painted anime cels',
+    ],
+    category: '6. Classic RPG Visual Studies',
+    domain: 'nineties cd game anime cutscene',
+    negativePrompt:
+      'subtitles, interface text, health bars or menus, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'CD-era anime cutscene still: a frame from a nineties CD-ROM game animated cutscene, hand-painted cels, slightly compressed video softness and dramatic character close-ups.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject as a dramatic hand-painted anime cel frame.',
+      color_and_tone: 'Painted cel colors with a slightly washed video palette.',
+      lighting_and_shadow:
+        'Two-tone cel shadows and dramatic backlight, kept consistent across the whole image.',
+      texture_and_material: 'Painted backgrounds, cel lines, mild video compression softness.',
+      camera_and_composition: 'Cinematic close-up or wide shot with letterbox feeling.',
+      atmosphere_and_mood: 'Keep the requested mood with melodramatic story weight.',
+      rendering_and_quality: 'Authentic cel animation look with soft video grain.',
+      creative_brief:
+        "CD-era anime cutscene still: a frame from a nineties CD-ROM game animated cutscene, hand-painted cels, slightly compressed video softness and dramatic character close-ups. Carry it through painted anime cels, video softness, dramatic close-up, backlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'painted anime cels; video softness; dramatic close-up; backlight',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-142',
+    name: 'Hand-Drawn Cloth Map Insert',
+    displayName: 'Hand-Drawn Cloth Map Insert',
+    styleAnchors: ['Hand-Drawn Cloth Map Insert', 'printed cloth game map', 'creased cloth'],
+    category: '6. Classic RPG Visual Studies',
+    domain: 'printed cloth game map',
+    negativePrompt:
+      'readable place names, interface text, health bars or menus, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Hand-drawn cloth map insert: the printed cloth or paper maps packed inside old fantasy game boxes, pen-drawn mountains, forests and ruins in sepia on creased fabric.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; draw the subject as a pen-drawn landmark or figure on a creased cloth map.',
+      color_and_tone: 'Sepia and dark brown ink on beige cloth.',
+      lighting_and_shadow:
+        'Soft light on creases and folds, kept consistent across the whole image.',
+      texture_and_material: 'Woven cloth, creases, pen hatching and fraying edges.',
+      camera_and_composition: 'Top-down map filling the card with folds visible.',
+      atmosphere_and_mood:
+        'Keep the requested mood with nostalgic exploration, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clear cartographic drawing with believable cloth, kept consistent across the whole image.',
+      creative_brief:
+        "Hand-drawn cloth map insert: the printed cloth or paper maps packed inside old fantasy game boxes, pen-drawn mountains, forests and ruins in sepia on creased fabric. Carry it through creased cloth, sepia pen map, mountains and ruins, fraying edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'creased cloth; sepia pen map; mountains and ruins; fraying edges',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-143',
+    name: 'Vector Line Adventure Picture',
+    displayName: 'Vector Line Adventure Picture',
+    styleAnchors: [
+      'Vector Line Adventure Picture',
+      'early vector-drawn adventure image',
+      'thin vector lines',
+    ],
+    category: '6. Classic RPG Visual Studies',
+    domain: 'early vector-drawn adventure image',
+    negativePrompt:
+      'text parser prompt, interface text, health bars or menus, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Vector line adventure picture: early home-computer adventure game pictures drawn with thin vector lines and simple flood fills, a few bright colors on black.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; draw the subject with thin straight vector lines and flat flood-fill color.',
+      color_and_tone: 'Black ground with a handful of bright flat colors.',
+      lighting_and_shadow: 'No lighting; flood fills only, kept consistent across the whole image.',
+      texture_and_material: 'Thin jagged lines, flat fills and fill leaks.',
+      camera_and_composition: 'Simple scene in a rectangular picture above empty space.',
+      atmosphere_and_mood: 'Keep the requested mood with primitive imaginative charm.',
+      rendering_and_quality:
+        'Crude charming vector drawing with visible steps, kept consistent across the whole image.',
+      creative_brief:
+        "Vector line adventure picture: early home-computer adventure game pictures drawn with thin vector lines and simple flood fills, a few bright colors on black. Carry it through thin vector lines, flood fills, black ground, few colors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'thin vector lines; flood fills; black ground; few colors',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-144',
+    name: 'Party Conga Sprite Line',
+    displayName: 'Party Conga Sprite Line',
+    styleAnchors: [
+      'Party Conga Sprite Line',
+      'rpg party following in a line',
+      'single-file sprites',
+    ],
+    category: '6. Classic RPG Visual Studies',
+    domain: 'rpg party following in a line',
+    negativePrompt:
+      'interface text, health bars or menus, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Party conga sprite line: a row of small RPG party sprites following each other in single file through a landscape, each step identical, like a tiny parade.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; line the subject up as a single-file party of small sprites.',
+      color_and_tone:
+        'Bright sprite colors on a soft landscape, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Flat light with small oval sprite shadows, kept consistent across the whole image.',
+      texture_and_material:
+        'Pixel sprites, tile grass and path stones, kept consistent across the whole image.',
+      camera_and_composition: 'Top-down or three-quarter path with sprites in a line.',
+      atmosphere_and_mood:
+        'Keep the requested mood with cozy companionship, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean consistent sprites with identical steps, kept consistent across the whole image.',
+      creative_brief:
+        "Party conga sprite line: a row of small RPG party sprites following each other in single file through a landscape, each step identical, like a tiny parade. Carry it through single-file sprites, identical steps, path, small shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'single-file sprites; identical steps; path; small shadows',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-145',
+    name: 'Digitized Actor Sprite',
+    displayName: 'Digitized Actor Sprite',
+    styleAnchors: ['Digitized Actor Sprite', 'photo-digitized game sprite', 'photographed actor'],
+    category: '6. Classic RPG Visual Studies',
+    domain: 'photo-digitized game sprite',
+    negativePrompt:
+      'interface text, health bars or menus, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Digitized actor sprite: early-nineties game sprites made from photographed costumed actors, low-resolution photo pixels with harsh cutout edges and limited colors.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject as a digitized costumed photo cut out into a low-res sprite.',
+      color_and_tone:
+        'Photographic colors reduced to a limited palette, kept consistent across the whole image.',
+      lighting_and_shadow: 'Flat studio lighting from the original photo shoot.',
+      texture_and_material: 'Photo pixels, jagged cutout edges and costume fabric.',
+      camera_and_composition:
+        'Full-body figure on a painted fantasy backdrop, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with earnest low-budget spectacle.',
+      rendering_and_quality:
+        'Authentic low-res digitized look with jagged edges, kept consistent across the whole image.',
+      creative_brief:
+        "Digitized actor sprite: early-nineties game sprites made from photographed costumed actors, low-resolution photo pixels with harsh cutout edges and limited colors. Carry it through photographed actor, jagged cutout, limited palette, painted backdrop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'photographed actor; jagged cutout; limited palette; painted backdrop',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-146',
+    name: 'Palette-Cycling Spell Glow',
+    displayName: 'Palette-Cycling Spell Glow',
+    styleAnchors: [
+      'Palette-Cycling Spell Glow',
+      'animated palette cycling effect',
+      'cycling color bands',
+    ],
+    category: '6. Classic RPG Visual Studies',
+    domain: 'animated palette cycling effect',
+    negativePrompt:
+      'interface text, health bars or menus, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Palette-cycling spell glow: old pixel effects where color bands rotate through a palette to make water, fire and magic shimmer, captured as bands of cycling color.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; wrap the subject in shimmering bands of cycling palette color.',
+      color_and_tone: 'Rotating color bands from deep blue to cyan to white.',
+      lighting_and_shadow:
+        'Glow implied through bright band steps, kept consistent across the whole image.',
+      texture_and_material: 'Pixel bands, stepped gradients and still background art.',
+      camera_and_composition: 'Central glowing effect over a still pixel scene.',
+      atmosphere_and_mood: 'Keep the requested mood with hypnotic magical shimmer.',
+      rendering_and_quality:
+        'Precise stepped bands with clean pixels, kept consistent across the whole image.',
+      creative_brief:
+        "Palette-cycling spell glow: old pixel effects where color bands rotate through a palette to make water, fire and magic shimmer, captured as bands of cycling color. Carry it through cycling color bands, stepped glow, still pixel scene, shimmer. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'cycling color bands; stepped glow; still pixel scene; shimmer',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-147',
+    name: 'One-Bit Desktop Adventure',
+    displayName: 'One-Bit Desktop Adventure',
+    styleAnchors: [
+      'One-Bit Desktop Adventure',
+      'monochrome early computer game art',
+      'one-bit pixels',
+    ],
+    category: '6. Classic RPG Visual Studies',
+    domain: 'monochrome early computer game art',
+    negativePrompt:
+      'window chrome text, gray tones, interface text, health bars or menus, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'One-bit desktop adventure: early black-and-white desktop computer games with crisp one-bit pixels, fine patterned fills and elegant tiny drawings in a window.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; draw the subject in pure black and white pixels with patterned fills.',
+      color_and_tone: 'Pure black and white only, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Pattern fills stand in for shadow, kept consistent across the whole image.',
+      texture_and_material: 'Checker, dot and line pattern fills and crisp pixels.',
+      camera_and_composition:
+        'Small framed scene with clean negative space, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with quiet crafted mystery.',
+      rendering_and_quality:
+        'Crisp one-bit clarity with neat patterns, kept consistent across the whole image.',
+      creative_brief:
+        "One-bit desktop adventure: early black-and-white desktop computer games with crisp one-bit pixels, fine patterned fills and elegant tiny drawings in a window. Carry it through one-bit pixels, pattern fills, black and white, framed scene. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'one-bit pixels; pattern fills; black and white; framed scene',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-148',
+    name: 'Arcade Cabinet Fantasy Marquee',
+    displayName: 'Arcade Cabinet Fantasy Marquee',
+    styleAnchors: ['Arcade Cabinet Fantasy Marquee', 'backlit arcade side art', 'backlit plastic'],
+    category: '6. Classic RPG Visual Studies',
+    domain: 'backlit arcade side art',
+    negativePrompt:
+      'game title logo, interface text, health bars or menus, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Arcade cabinet fantasy marquee: backlit arcade header and side art with bold ink outlines, saturated flat color, airbrushed flames and heroic fantasy figures glowing through plastic.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject as bold outlined cabinet art glowing from behind.',
+      color_and_tone: 'Hot red, yellow and blue flats with black outlines.',
+      lighting_and_shadow:
+        'Backlit glow through translucent plastic, kept consistent across the whole image.',
+      texture_and_material: 'Screen-printed plastic, bold ink, airbrush flames and scratches.',
+      camera_and_composition:
+        'Wide horizontal marquee or tall side panel, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with loud coin-op excitement.',
+      rendering_and_quality:
+        'Punchy commercial art with no logo, kept consistent across the whole image.',
+      creative_brief:
+        "Arcade cabinet fantasy marquee: backlit arcade header and side art with bold ink outlines, saturated flat color, airbrushed flames and heroic fantasy figures glowing through plastic. Carry it through backlit plastic, bold outlines, airbrush flames, saturated flats. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'backlit plastic; bold outlines; airbrush flames; saturated flats',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-149',
+    name: 'Bestiary Sprite Plate',
+    displayName: 'Bestiary Sprite Plate',
+    styleAnchors: ['Bestiary Sprite Plate', 'monster compendium sprite sheet art', 'monster grid'],
+    category: '6. Classic RPG Visual Studies',
+    domain: 'monster compendium sprite sheet art',
+    negativePrompt:
+      'readable monster names or numbers, interface text, health bars or menus, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        "Bestiary sprite plate: a neat compendium of monster sprites arranged in rows like a collector's plate, each creature on its own tile with a tiny shadow.",
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; present the subject as one of many monster sprites arranged in neat rows.',
+      color_and_tone: 'Varied bright creature colors on a dark or parchment ground.',
+      lighting_and_shadow:
+        'Consistent top-left light and small shadows, kept consistent across the whole image.',
+      texture_and_material: 'Clean pixel sprites, tile borders and small shadows.',
+      camera_and_composition:
+        'Grid of creatures with one featured larger, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with the delight of a completed collection.',
+      rendering_and_quality:
+        'Consistent sprite style across the plate, kept consistent across the whole image.',
+      creative_brief:
+        "Bestiary sprite plate: a neat compendium of monster sprites arranged in rows like a collector's plate, each creature on its own tile with a tiny shadow. Carry it through monster grid, consistent sprites, tile borders, featured creature. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'monster grid; consistent sprites; tile borders; featured creature',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

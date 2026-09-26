@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-167
+packId: pack_23
+name: Gouraud-Shaded Primitives
+styleAnchors:
+  - Gouraud-Shaded Primitives
+  - smooth vertex-shaded simple shapes
+  - primitive shapes
+displayName: Gouraud-Shaded Primitives
+category: 8. Retro 3D Visual Studies
+domain: smooth vertex-shaded simple shapes
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - retro-3d-visual-studies
+  - gouraud
+  - retro-3d
+  - portable-style-study
+visualDna:
+  aesthetic: 'Gouraud-shaded primitives: early 3D built from simple spheres, cones and cylinders with smooth vertex-interpolated shading and telltale soft polygon edges.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; build the subject from simple smooth-shaded primitive shapes.
+  color_and_tone: Flat saturated colors with smooth gradient shading, kept consistent across the whole image.
+  lighting_and_shadow: Single light with smooth interpolated gradients, kept consistent across the whole image.
+  texture_and_material: Untextured surfaces and slightly jagged silhouettes, kept consistent across the whole image.
+  camera_and_composition: Simple arrangement on a flat ground plane, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with naive geometric charm.
+  rendering_and_quality: Clean early 3D with visible faceted silhouette edges.
+  creative_brief: "Gouraud-shaded primitives: early 3D built from simple spheres, cones and cylinders with smooth vertex-interpolated shading and telltale soft polygon edges. Carry it through primitive shapes, smooth vertex shading, untextured, faceted edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: primitive shapes; smooth vertex shading; untextured; faceted edges
+avoidRules:
+  - modern high-poly rendering
+  - interface or HUD
+  - existing game characters or logos
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: modern high-poly rendering, interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: retro-3d-visual-studies
+  categoryName: 8. Retro 3D Visual Studies
+  tags:
+    - curation-v2
+    - retro-3d-visual-studies
+    - gouraud
+    - retro-3d
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: smooth vertex-shaded simple shapes

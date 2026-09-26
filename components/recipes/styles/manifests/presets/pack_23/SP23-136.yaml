@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP23-136
+packId: pack_23
+name: Side-View Battle Tableau
+styleAnchors:
+  - Side-View Battle Tableau
+  - side-view turn battle scene
+  - hero row
+displayName: Side-View Battle Tableau
+category: 6. Classic RPG Visual Studies
+domain: side-view turn battle scene
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - classic-rpg-visual-studies
+  - side-battle
+  - classic-rpg
+  - portable-style-study
+visualDna:
+  aesthetic: 'Side-view battle tableau: a turn-based battle frozen mid-action, a row of small hero sprites on the right facing a huge painted enemy on the left across a backdrop.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; arrange the subject as small sprites facing a huge enemy across a battle backdrop.
+  color_and_tone: Bright sprite colors against a painted dusky backdrop.
+  lighting_and_shadow: Flat sprites with spell flashes lighting the scene.
+  texture_and_material: Pixel sprites, painted enemy art and effect sparkles.
+  camera_and_composition: Heroes in a staggered row on the right, enemy on the left.
+  atmosphere_and_mood: Keep the requested mood with dramatic turn-based tension.
+  rendering_and_quality: Clear sprite readability with a large detailed enemy.
+  creative_brief: "Side-view battle tableau: a turn-based battle frozen mid-action, a row of small hero sprites on the right facing a huge painted enemy on the left across a backdrop. Carry it through hero row, huge painted enemy, spell flash, battle backdrop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: hero row; huge painted enemy; spell flash; battle backdrop
+avoidRules:
+  - interface text, health bars or menus
+  - existing game characters or logos
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: interface text, health bars or menus, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: classic-rpg-visual-studies
+  categoryName: 6. Classic RPG Visual Studies
+  tags:
+    - curation-v2
+    - classic-rpg-visual-studies
+    - side-battle
+    - classic-rpg
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: side-view turn battle scene

@@ -3,7 +3,7 @@
     {
       "id": "pack_23",
       "name": "Medieval Visual Atlas",
-      "presetCount": 117
+      "presetCount": 182
     }
   ],
   "presets": [
@@ -1414,6 +1414,346 @@
       "searchableText": "sp23-025 quiet folklore wash 5. revival & storybook illustration revival & storybook illustration pack_23 medieval visual atlas revival-and-storybook-illustration medieval-visual-atlas revival-and-storybook-illustration"
     },
     {
+      "id": "SP23-118",
+      "name": "Pre-Raphaelite Jewel Detail",
+      "styleAnchors": [
+        "Pre-Raphaelite Jewel Detail",
+        "jewel-bright revival painting",
+        "jewel colors"
+      ],
+      "ref": "pack_23/SP23-118.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "revival-and-storybook-illustration",
+      "categoryName": "5. Revival & Storybook Illustration",
+      "domain": "jewel-bright revival painting",
+      "tags": [
+        "medieval-visual-atlas",
+        "revival-and-storybook-illustration",
+        "jewel-bright-revival-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-118 pre-raphaelite jewel detail jewel-bright revival painting jewel colors 5. revival & storybook illustration revival & storybook illustration jewel-bright revival painting pack_23 medieval visual atlas revival-and-storybook-illustration medieval-visual-atlas revival-and-storybook-illustration jewel-bright-revival-painting"
+    },
+    {
+      "id": "SP23-119",
+      "name": "Toy-Book Flat Color",
+      "styleAnchors": ["Toy-Book Flat Color", "victorian color toy book", "flat bold color"],
+      "ref": "pack_23/SP23-119.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "revival-and-storybook-illustration",
+      "categoryName": "5. Revival & Storybook Illustration",
+      "domain": "victorian color toy book",
+      "tags": [
+        "medieval-visual-atlas",
+        "revival-and-storybook-illustration",
+        "victorian-color-toy-book"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-119 toy-book flat color victorian color toy book flat bold color 5. revival & storybook illustration revival & storybook illustration victorian color toy book pack_23 medieval visual atlas revival-and-storybook-illustration medieval-visual-atlas revival-and-storybook-illustration victorian-color-toy-book"
+    },
+    {
+      "id": "SP23-120",
+      "name": "Contraption Ink Drawing",
+      "styleAnchors": ["Contraption Ink Drawing", "absurd machine line drawing", "absurd machine"],
+      "ref": "pack_23/SP23-120.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "revival-and-storybook-illustration",
+      "categoryName": "5. Revival & Storybook Illustration",
+      "domain": "absurd machine line drawing",
+      "tags": [
+        "medieval-visual-atlas",
+        "revival-and-storybook-illustration",
+        "absurd-machine-line-drawing"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-120 contraption ink drawing absurd machine line drawing absurd machine 5. revival & storybook illustration revival & storybook illustration absurd machine line drawing pack_23 medieval visual atlas revival-and-storybook-illustration medieval-visual-atlas revival-and-storybook-illustration absurd-machine-line-drawing"
+    },
+    {
+      "id": "SP23-121",
+      "name": "Celtic Revival Twilight Plate",
+      "styleAnchors": [
+        "Celtic Revival Twilight Plate",
+        "celtic revival book illustration",
+        "jewel patterning"
+      ],
+      "ref": "pack_23/SP23-121.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "revival-and-storybook-illustration",
+      "categoryName": "5. Revival & Storybook Illustration",
+      "domain": "celtic revival book illustration",
+      "tags": [
+        "medieval-visual-atlas",
+        "revival-and-storybook-illustration",
+        "celtic-revival-book-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-121 celtic revival twilight plate celtic revival book illustration jewel patterning 5. revival & storybook illustration revival & storybook illustration celtic revival book illustration pack_23 medieval visual atlas revival-and-storybook-illustration medieval-visual-atlas revival-and-storybook-illustration celtic-revival-book-illustration"
+    },
+    {
+      "id": "SP23-122",
+      "name": "Victorian Fairy Painting",
+      "styleAnchors": [
+        "Victorian Fairy Painting",
+        "minute victorian fairy scenes",
+        "tiny winged folk"
+      ],
+      "ref": "pack_23/SP23-122.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "revival-and-storybook-illustration",
+      "categoryName": "5. Revival & Storybook Illustration",
+      "domain": "minute victorian fairy scenes",
+      "tags": [
+        "medieval-visual-atlas",
+        "revival-and-storybook-illustration",
+        "minute-victorian-fairy-scenes"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-122 victorian fairy painting minute victorian fairy scenes tiny winged folk 5. revival & storybook illustration revival & storybook illustration minute victorian fairy scenes pack_23 medieval visual atlas revival-and-storybook-illustration medieval-visual-atlas revival-and-storybook-illustration minute-victorian-fairy-scenes"
+    },
+    {
+      "id": "SP23-123",
+      "name": "Gilt Deco Fairy Plate",
+      "styleAnchors": [
+        "Gilt Deco Fairy Plate",
+        "luxurious stenciled deco fairy plate",
+        "gold outlines"
+      ],
+      "ref": "pack_23/SP23-123.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "revival-and-storybook-illustration",
+      "categoryName": "5. Revival & Storybook Illustration",
+      "domain": "luxurious stenciled deco fairy plate",
+      "tags": [
+        "medieval-visual-atlas",
+        "revival-and-storybook-illustration",
+        "luxurious-stenciled-deco-fairy-plate"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-123 gilt deco fairy plate luxurious stenciled deco fairy plate gold outlines 5. revival & storybook illustration revival & storybook illustration luxurious stenciled deco fairy plate pack_23 medieval visual atlas revival-and-storybook-illustration medieval-visual-atlas revival-and-storybook-illustration luxurious-stenciled-deco-fairy-plate"
+    },
+    {
+      "id": "SP23-124",
+      "name": "Slavic Folktale Ornament Frame",
+      "styleAnchors": [
+        "Slavic Folktale Ornament Frame",
+        "russian folktale book illustration",
+        "ornamental folk border"
+      ],
+      "ref": "pack_23/SP23-124.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "revival-and-storybook-illustration",
+      "categoryName": "5. Revival & Storybook Illustration",
+      "domain": "russian folktale book illustration",
+      "tags": [
+        "medieval-visual-atlas",
+        "revival-and-storybook-illustration",
+        "russian-folktale-book-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-124 slavic folktale ornament frame russian folktale book illustration ornamental folk border 5. revival & storybook illustration revival & storybook illustration russian folktale book illustration pack_23 medieval visual atlas revival-and-storybook-illustration medieval-visual-atlas revival-and-storybook-illustration russian-folktale-book-illustration"
+    },
+    {
+      "id": "SP23-125",
+      "name": "Mossy Troll Forest Watercolor",
+      "styleAnchors": [
+        "Mossy Troll Forest Watercolor",
+        "nordic troll forest illustration",
+        "moss-covered giants"
+      ],
+      "ref": "pack_23/SP23-125.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "revival-and-storybook-illustration",
+      "categoryName": "5. Revival & Storybook Illustration",
+      "domain": "nordic troll forest illustration",
+      "tags": [
+        "medieval-visual-atlas",
+        "revival-and-storybook-illustration",
+        "nordic-troll-forest-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-125 mossy troll forest watercolor nordic troll forest illustration moss-covered giants 5. revival & storybook illustration revival & storybook illustration nordic troll forest illustration pack_23 medieval visual atlas revival-and-storybook-illustration medieval-visual-atlas revival-and-storybook-illustration nordic-troll-forest-illustration"
+    },
+    {
+      "id": "SP23-126",
+      "name": "Decadent Black-Line Illustration",
+      "styleAnchors": [
+        "Decadent Black-Line Illustration",
+        "fin-de-siècle black ink illustration",
+        "pure black masses"
+      ],
+      "ref": "pack_23/SP23-126.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "revival-and-storybook-illustration",
+      "categoryName": "5. Revival & Storybook Illustration",
+      "domain": "fin-de-siècle black ink illustration",
+      "tags": [
+        "medieval-visual-atlas",
+        "revival-and-storybook-illustration",
+        "fin-de-si-cle-black-ink-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-126 decadent black-line illustration fin-de-siècle black ink illustration pure black masses 5. revival & storybook illustration revival & storybook illustration fin-de-siècle black ink illustration pack_23 medieval visual atlas revival-and-storybook-illustration medieval-visual-atlas revival-and-storybook-illustration fin-de-si-cle-black-ink-illustration"
+    },
+    {
+      "id": "SP23-127",
+      "name": "Victorian Revival Illumination",
+      "styleAnchors": [
+        "Victorian Revival Illumination",
+        "nineteenth-century neo-gothic illumination",
+        "neo-gothic border"
+      ],
+      "ref": "pack_23/SP23-127.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "revival-and-storybook-illustration",
+      "categoryName": "5. Revival & Storybook Illustration",
+      "domain": "nineteenth-century neo-gothic illumination",
+      "tags": [
+        "medieval-visual-atlas",
+        "revival-and-storybook-illustration",
+        "nineteenth-century-neo-gothic-illumination"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-127 victorian revival illumination nineteenth-century neo-gothic illumination neo-gothic border 5. revival & storybook illustration revival & storybook illustration nineteenth-century neo-gothic illumination pack_23 medieval visual atlas revival-and-storybook-illustration medieval-visual-atlas revival-and-storybook-illustration nineteenth-century-neo-gothic-illumination"
+    },
+    {
+      "id": "SP23-128",
+      "name": "Troubadour Romance Painting",
+      "styleAnchors": [
+        "Troubadour Romance Painting",
+        "romantic medieval genre painting",
+        "gothic interior"
+      ],
+      "ref": "pack_23/SP23-128.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "revival-and-storybook-illustration",
+      "categoryName": "5. Revival & Storybook Illustration",
+      "domain": "romantic medieval genre painting",
+      "tags": [
+        "medieval-visual-atlas",
+        "revival-and-storybook-illustration",
+        "romantic-medieval-genre-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-128 troubadour romance painting romantic medieval genre painting gothic interior 5. revival & storybook illustration revival & storybook illustration romantic medieval genre painting pack_23 medieval visual atlas revival-and-storybook-illustration medieval-visual-atlas revival-and-storybook-illustration romantic-medieval-genre-painting"
+    },
+    {
+      "id": "SP23-129",
+      "name": "Tapestry Cartoon Drawing",
+      "styleAnchors": [
+        "Tapestry Cartoon Drawing",
+        "full-size design drawing for weaving",
+        "squaring grid"
+      ],
+      "ref": "pack_23/SP23-129.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "revival-and-storybook-illustration",
+      "categoryName": "5. Revival & Storybook Illustration",
+      "domain": "full-size design drawing for weaving",
+      "tags": [
+        "medieval-visual-atlas",
+        "revival-and-storybook-illustration",
+        "full-size-design-drawing-for-weaving"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-129 tapestry cartoon drawing full-size design drawing for weaving squaring grid 5. revival & storybook illustration revival & storybook illustration full-size design drawing for weaving pack_23 medieval visual atlas revival-and-storybook-illustration medieval-visual-atlas revival-and-storybook-illustration full-size-design-drawing-for-weaving"
+    },
+    {
+      "id": "SP23-130",
+      "name": "Golden Age Gift-Book Plate",
+      "styleAnchors": [
+        "Golden Age Gift-Book Plate",
+        "tipped-in color plate illustration",
+        "tipped-in plate"
+      ],
+      "ref": "pack_23/SP23-130.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "revival-and-storybook-illustration",
+      "categoryName": "5. Revival & Storybook Illustration",
+      "domain": "tipped-in color plate illustration",
+      "tags": [
+        "medieval-visual-atlas",
+        "revival-and-storybook-illustration",
+        "tipped-in-color-plate-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-130 golden age gift-book plate tipped-in color plate illustration tipped-in plate 5. revival & storybook illustration revival & storybook illustration tipped-in color plate illustration pack_23 medieval visual atlas revival-and-storybook-illustration medieval-visual-atlas revival-and-storybook-illustration tipped-in-color-plate-illustration"
+    },
+    {
+      "id": "SP23-131",
+      "name": "Wood-Engraved Revival Vignette",
+      "styleAnchors": [
+        "Wood-Engraved Revival Vignette",
+        "victorian wood-engraved vignette",
+        "end-grain engraving"
+      ],
+      "ref": "pack_23/SP23-131.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "revival-and-storybook-illustration",
+      "categoryName": "5. Revival & Storybook Illustration",
+      "domain": "victorian wood-engraved vignette",
+      "tags": [
+        "medieval-visual-atlas",
+        "revival-and-storybook-illustration",
+        "victorian-wood-engraved-vignette"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-131 wood-engraved revival vignette victorian wood-engraved vignette end-grain engraving 5. revival & storybook illustration revival & storybook illustration victorian wood-engraved vignette pack_23 medieval visual atlas revival-and-storybook-illustration medieval-visual-atlas revival-and-storybook-illustration victorian-wood-engraved-vignette"
+    },
+    {
+      "id": "SP23-132",
+      "name": "Nursery Frieze Procession",
+      "styleAnchors": [
+        "Nursery Frieze Procession",
+        "edwardian nursery wall frieze",
+        "horizontal procession"
+      ],
+      "ref": "pack_23/SP23-132.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "revival-and-storybook-illustration",
+      "categoryName": "5. Revival & Storybook Illustration",
+      "domain": "edwardian nursery wall frieze",
+      "tags": [
+        "medieval-visual-atlas",
+        "revival-and-storybook-illustration",
+        "edwardian-nursery-wall-frieze"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-132 nursery frieze procession edwardian nursery wall frieze horizontal procession 5. revival & storybook illustration revival & storybook illustration edwardian nursery wall frieze pack_23 medieval visual atlas revival-and-storybook-illustration medieval-visual-atlas revival-and-storybook-illustration edwardian-nursery-wall-frieze"
+    },
+    {
+      "id": "SP23-133",
+      "name": "Chapbook Woodcut Tale",
+      "styleAnchors": ["Chapbook Woodcut Tale", "cheap popular chapbook print", "crude woodcut"],
+      "ref": "pack_23/SP23-133.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "revival-and-storybook-illustration",
+      "categoryName": "5. Revival & Storybook Illustration",
+      "domain": "cheap popular chapbook print",
+      "tags": [
+        "medieval-visual-atlas",
+        "revival-and-storybook-illustration",
+        "cheap-popular-chapbook-print"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-133 chapbook woodcut tale cheap popular chapbook print crude woodcut 5. revival & storybook illustration revival & storybook illustration cheap popular chapbook print pack_23 medieval visual atlas revival-and-storybook-illustration medieval-visual-atlas revival-and-storybook-illustration cheap-popular-chapbook-print"
+    },
+    {
       "id": "SP23-026",
       "name": "VGA Chronicle",
       "ref": "pack_23/SP23-026.yaml",
@@ -1460,6 +1800,326 @@
       "tags": ["medieval-visual-atlas", "classic-rpg-visual-studies"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp23-029 planar patina 6. classic rpg visual studies classic rpg visual studies pack_23 medieval visual atlas classic-rpg-visual-studies medieval-visual-atlas classic-rpg-visual-studies"
+    },
+    {
+      "id": "SP23-134",
+      "name": "First-Person Dungeon Crawl Frame",
+      "styleAnchors": [
+        "First-Person Dungeon Crawl Frame",
+        "grid dungeon first-person view",
+        "symmetrical corridor"
+      ],
+      "ref": "pack_23/SP23-134.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "classic-rpg-visual-studies",
+      "categoryName": "6. Classic RPG Visual Studies",
+      "domain": "grid dungeon first-person view",
+      "tags": [
+        "medieval-visual-atlas",
+        "classic-rpg-visual-studies",
+        "grid-dungeon-first-person-view"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-134 first-person dungeon crawl frame grid dungeon first-person view symmetrical corridor 6. classic rpg visual studies classic rpg visual studies grid dungeon first-person view pack_23 medieval visual atlas classic-rpg-visual-studies medieval-visual-atlas classic-rpg-visual-studies grid-dungeon-first-person-view"
+    },
+    {
+      "id": "SP23-135",
+      "name": "Eight-Direction Overworld Map",
+      "styleAnchors": [
+        "Eight-Direction Overworld Map",
+        "top-down tile overworld",
+        "top-down tiles"
+      ],
+      "ref": "pack_23/SP23-135.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "classic-rpg-visual-studies",
+      "categoryName": "6. Classic RPG Visual Studies",
+      "domain": "top-down tile overworld",
+      "tags": ["medieval-visual-atlas", "classic-rpg-visual-studies", "top-down-tile-overworld"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-135 eight-direction overworld map top-down tile overworld top-down tiles 6. classic rpg visual studies classic rpg visual studies top-down tile overworld pack_23 medieval visual atlas classic-rpg-visual-studies medieval-visual-atlas classic-rpg-visual-studies top-down-tile-overworld"
+    },
+    {
+      "id": "SP23-136",
+      "name": "Side-View Battle Tableau",
+      "styleAnchors": ["Side-View Battle Tableau", "side-view turn battle scene", "hero row"],
+      "ref": "pack_23/SP23-136.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "classic-rpg-visual-studies",
+      "categoryName": "6. Classic RPG Visual Studies",
+      "domain": "side-view turn battle scene",
+      "tags": [
+        "medieval-visual-atlas",
+        "classic-rpg-visual-studies",
+        "side-view-turn-battle-scene"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-136 side-view battle tableau side-view turn battle scene hero row 6. classic rpg visual studies classic rpg visual studies side-view turn battle scene pack_23 medieval visual atlas classic-rpg-visual-studies medieval-visual-atlas classic-rpg-visual-studies side-view-turn-battle-scene"
+    },
+    {
+      "id": "SP23-137",
+      "name": "Airbrushed Game Box Epic",
+      "styleAnchors": [
+        "Airbrushed Game Box Epic",
+        "painted fantasy game box cover",
+        "airbrushed sky"
+      ],
+      "ref": "pack_23/SP23-137.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "classic-rpg-visual-studies",
+      "categoryName": "6. Classic RPG Visual Studies",
+      "domain": "painted fantasy game box cover",
+      "tags": [
+        "medieval-visual-atlas",
+        "classic-rpg-visual-studies",
+        "painted-fantasy-game-box-cover"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-137 airbrushed game box epic painted fantasy game box cover airbrushed sky 6. classic rpg visual studies classic rpg visual studies painted fantasy game box cover pack_23 medieval visual atlas classic-rpg-visual-studies medieval-visual-atlas classic-rpg-visual-studies painted-fantasy-game-box-cover"
+    },
+    {
+      "id": "SP23-138",
+      "name": "Dialogue Portrait Bust",
+      "styleAnchors": ["Dialogue Portrait Bust", "character dialogue portrait", "framed bust"],
+      "ref": "pack_23/SP23-138.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "classic-rpg-visual-studies",
+      "categoryName": "6. Classic RPG Visual Studies",
+      "domain": "character dialogue portrait",
+      "tags": [
+        "medieval-visual-atlas",
+        "classic-rpg-visual-studies",
+        "character-dialogue-portrait"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-138 dialogue portrait bust character dialogue portrait framed bust 6. classic rpg visual studies classic rpg visual studies character dialogue portrait pack_23 medieval visual atlas classic-rpg-visual-studies medieval-visual-atlas classic-rpg-visual-studies character-dialogue-portrait"
+    },
+    {
+      "id": "SP23-139",
+      "name": "Pre-Rendered Painted Backdrop",
+      "styleAnchors": [
+        "Pre-Rendered Painted Backdrop",
+        "pre-rendered isometric backdrop",
+        "elevated fixed angle"
+      ],
+      "ref": "pack_23/SP23-139.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "classic-rpg-visual-studies",
+      "categoryName": "6. Classic RPG Visual Studies",
+      "domain": "pre-rendered isometric backdrop",
+      "tags": [
+        "medieval-visual-atlas",
+        "classic-rpg-visual-studies",
+        "pre-rendered-isometric-backdrop"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-139 pre-rendered painted backdrop pre-rendered isometric backdrop elevated fixed angle 6. classic rpg visual studies classic rpg visual studies pre-rendered isometric backdrop pack_23 medieval visual atlas classic-rpg-visual-studies medieval-visual-atlas classic-rpg-visual-studies pre-rendered-isometric-backdrop"
+    },
+    {
+      "id": "SP23-140",
+      "name": "Sprite Town Bustle",
+      "styleAnchors": ["Sprite Town Bustle", "pixel village crowd scene", "townsfolk sprites"],
+      "ref": "pack_23/SP23-140.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "classic-rpg-visual-studies",
+      "categoryName": "6. Classic RPG Visual Studies",
+      "domain": "pixel village crowd scene",
+      "tags": ["medieval-visual-atlas", "classic-rpg-visual-studies", "pixel-village-crowd-scene"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-140 sprite town bustle pixel village crowd scene townsfolk sprites 6. classic rpg visual studies classic rpg visual studies pixel village crowd scene pack_23 medieval visual atlas classic-rpg-visual-studies medieval-visual-atlas classic-rpg-visual-studies pixel-village-crowd-scene"
+    },
+    {
+      "id": "SP23-141",
+      "name": "CD-Era Anime Cutscene Still",
+      "styleAnchors": [
+        "CD-Era Anime Cutscene Still",
+        "nineties cd game anime cutscene",
+        "painted anime cels"
+      ],
+      "ref": "pack_23/SP23-141.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "classic-rpg-visual-studies",
+      "categoryName": "6. Classic RPG Visual Studies",
+      "domain": "nineties cd game anime cutscene",
+      "tags": [
+        "medieval-visual-atlas",
+        "classic-rpg-visual-studies",
+        "nineties-cd-game-anime-cutscene"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-141 cd-era anime cutscene still nineties cd game anime cutscene painted anime cels 6. classic rpg visual studies classic rpg visual studies nineties cd game anime cutscene pack_23 medieval visual atlas classic-rpg-visual-studies medieval-visual-atlas classic-rpg-visual-studies nineties-cd-game-anime-cutscene"
+    },
+    {
+      "id": "SP23-142",
+      "name": "Hand-Drawn Cloth Map Insert",
+      "styleAnchors": ["Hand-Drawn Cloth Map Insert", "printed cloth game map", "creased cloth"],
+      "ref": "pack_23/SP23-142.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "classic-rpg-visual-studies",
+      "categoryName": "6. Classic RPG Visual Studies",
+      "domain": "printed cloth game map",
+      "tags": ["medieval-visual-atlas", "classic-rpg-visual-studies", "printed-cloth-game-map"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-142 hand-drawn cloth map insert printed cloth game map creased cloth 6. classic rpg visual studies classic rpg visual studies printed cloth game map pack_23 medieval visual atlas classic-rpg-visual-studies medieval-visual-atlas classic-rpg-visual-studies printed-cloth-game-map"
+    },
+    {
+      "id": "SP23-143",
+      "name": "Vector Line Adventure Picture",
+      "styleAnchors": [
+        "Vector Line Adventure Picture",
+        "early vector-drawn adventure image",
+        "thin vector lines"
+      ],
+      "ref": "pack_23/SP23-143.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "classic-rpg-visual-studies",
+      "categoryName": "6. Classic RPG Visual Studies",
+      "domain": "early vector-drawn adventure image",
+      "tags": [
+        "medieval-visual-atlas",
+        "classic-rpg-visual-studies",
+        "early-vector-drawn-adventure-image"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-143 vector line adventure picture early vector-drawn adventure image thin vector lines 6. classic rpg visual studies classic rpg visual studies early vector-drawn adventure image pack_23 medieval visual atlas classic-rpg-visual-studies medieval-visual-atlas classic-rpg-visual-studies early-vector-drawn-adventure-image"
+    },
+    {
+      "id": "SP23-144",
+      "name": "Party Conga Sprite Line",
+      "styleAnchors": [
+        "Party Conga Sprite Line",
+        "rpg party following in a line",
+        "single-file sprites"
+      ],
+      "ref": "pack_23/SP23-144.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "classic-rpg-visual-studies",
+      "categoryName": "6. Classic RPG Visual Studies",
+      "domain": "rpg party following in a line",
+      "tags": [
+        "medieval-visual-atlas",
+        "classic-rpg-visual-studies",
+        "rpg-party-following-in-a-line"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-144 party conga sprite line rpg party following in a line single-file sprites 6. classic rpg visual studies classic rpg visual studies rpg party following in a line pack_23 medieval visual atlas classic-rpg-visual-studies medieval-visual-atlas classic-rpg-visual-studies rpg-party-following-in-a-line"
+    },
+    {
+      "id": "SP23-145",
+      "name": "Digitized Actor Sprite",
+      "styleAnchors": [
+        "Digitized Actor Sprite",
+        "photo-digitized game sprite",
+        "photographed actor"
+      ],
+      "ref": "pack_23/SP23-145.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "classic-rpg-visual-studies",
+      "categoryName": "6. Classic RPG Visual Studies",
+      "domain": "photo-digitized game sprite",
+      "tags": [
+        "medieval-visual-atlas",
+        "classic-rpg-visual-studies",
+        "photo-digitized-game-sprite"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-145 digitized actor sprite photo-digitized game sprite photographed actor 6. classic rpg visual studies classic rpg visual studies photo-digitized game sprite pack_23 medieval visual atlas classic-rpg-visual-studies medieval-visual-atlas classic-rpg-visual-studies photo-digitized-game-sprite"
+    },
+    {
+      "id": "SP23-146",
+      "name": "Palette-Cycling Spell Glow",
+      "styleAnchors": [
+        "Palette-Cycling Spell Glow",
+        "animated palette cycling effect",
+        "cycling color bands"
+      ],
+      "ref": "pack_23/SP23-146.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "classic-rpg-visual-studies",
+      "categoryName": "6. Classic RPG Visual Studies",
+      "domain": "animated palette cycling effect",
+      "tags": [
+        "medieval-visual-atlas",
+        "classic-rpg-visual-studies",
+        "animated-palette-cycling-effect"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-146 palette-cycling spell glow animated palette cycling effect cycling color bands 6. classic rpg visual studies classic rpg visual studies animated palette cycling effect pack_23 medieval visual atlas classic-rpg-visual-studies medieval-visual-atlas classic-rpg-visual-studies animated-palette-cycling-effect"
+    },
+    {
+      "id": "SP23-147",
+      "name": "One-Bit Desktop Adventure",
+      "styleAnchors": [
+        "One-Bit Desktop Adventure",
+        "monochrome early computer game art",
+        "one-bit pixels"
+      ],
+      "ref": "pack_23/SP23-147.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "classic-rpg-visual-studies",
+      "categoryName": "6. Classic RPG Visual Studies",
+      "domain": "monochrome early computer game art",
+      "tags": [
+        "medieval-visual-atlas",
+        "classic-rpg-visual-studies",
+        "monochrome-early-computer-game-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-147 one-bit desktop adventure monochrome early computer game art one-bit pixels 6. classic rpg visual studies classic rpg visual studies monochrome early computer game art pack_23 medieval visual atlas classic-rpg-visual-studies medieval-visual-atlas classic-rpg-visual-studies monochrome-early-computer-game-art"
+    },
+    {
+      "id": "SP23-148",
+      "name": "Arcade Cabinet Fantasy Marquee",
+      "styleAnchors": [
+        "Arcade Cabinet Fantasy Marquee",
+        "backlit arcade side art",
+        "backlit plastic"
+      ],
+      "ref": "pack_23/SP23-148.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "classic-rpg-visual-studies",
+      "categoryName": "6. Classic RPG Visual Studies",
+      "domain": "backlit arcade side art",
+      "tags": ["medieval-visual-atlas", "classic-rpg-visual-studies", "backlit-arcade-side-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-148 arcade cabinet fantasy marquee backlit arcade side art backlit plastic 6. classic rpg visual studies classic rpg visual studies backlit arcade side art pack_23 medieval visual atlas classic-rpg-visual-studies medieval-visual-atlas classic-rpg-visual-studies backlit-arcade-side-art"
+    },
+    {
+      "id": "SP23-149",
+      "name": "Bestiary Sprite Plate",
+      "styleAnchors": [
+        "Bestiary Sprite Plate",
+        "monster compendium sprite sheet art",
+        "monster grid"
+      ],
+      "ref": "pack_23/SP23-149.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "classic-rpg-visual-studies",
+      "categoryName": "6. Classic RPG Visual Studies",
+      "domain": "monster compendium sprite sheet art",
+      "tags": [
+        "medieval-visual-atlas",
+        "classic-rpg-visual-studies",
+        "monster-compendium-sprite-sheet-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-149 bestiary sprite plate monster compendium sprite sheet art monster grid 6. classic rpg visual studies classic rpg visual studies monster compendium sprite sheet art pack_23 medieval visual atlas classic-rpg-visual-studies medieval-visual-atlas classic-rpg-visual-studies monster-compendium-sprite-sheet-art"
     },
     {
       "id": "SP23-030",
@@ -1510,6 +2170,310 @@
       "searchableText": "sp23-033 compact chromatic forms 7. indexed raster language indexed raster language pack_23 medieval visual atlas indexed-raster-language medieval-visual-atlas indexed-raster-language"
     },
     {
+      "id": "SP23-150",
+      "name": "Hue-Shifted Color Ramps",
+      "styleAnchors": [
+        "Hue-Shifted Color Ramps",
+        "pixel ramps that shift hue",
+        "hue-shifted ramps"
+      ],
+      "ref": "pack_23/SP23-150.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "indexed-raster-language",
+      "categoryName": "7. Indexed Raster Language",
+      "domain": "pixel ramps that shift hue",
+      "tags": ["medieval-visual-atlas", "indexed-raster-language", "pixel-ramps-that-shift-hue"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-150 hue-shifted color ramps pixel ramps that shift hue hue-shifted ramps 7. indexed raster language indexed raster language pixel ramps that shift hue pack_23 medieval visual atlas indexed-raster-language medieval-visual-atlas indexed-raster-language pixel-ramps-that-shift-hue"
+    },
+    {
+      "id": "SP23-151",
+      "name": "Hand Anti-Aliased Pixel Line",
+      "styleAnchors": [
+        "Hand Anti-Aliased Pixel Line",
+        "manual pixel anti-aliasing",
+        "smooth pixel curves"
+      ],
+      "ref": "pack_23/SP23-151.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "indexed-raster-language",
+      "categoryName": "7. Indexed Raster Language",
+      "domain": "manual pixel anti-aliasing",
+      "tags": ["medieval-visual-atlas", "indexed-raster-language", "manual-pixel-anti-aliasing"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-151 hand anti-aliased pixel line manual pixel anti-aliasing smooth pixel curves 7. indexed raster language indexed raster language manual pixel anti-aliasing pack_23 medieval visual atlas indexed-raster-language medieval-visual-atlas indexed-raster-language manual-pixel-anti-aliasing"
+    },
+    {
+      "id": "SP23-152",
+      "name": "Ordered Bayer Dither Field",
+      "styleAnchors": [
+        "Ordered Bayer Dither Field",
+        "regular matrix dithering",
+        "ordered dither matrix"
+      ],
+      "ref": "pack_23/SP23-152.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "indexed-raster-language",
+      "categoryName": "7. Indexed Raster Language",
+      "domain": "regular matrix dithering",
+      "tags": ["medieval-visual-atlas", "indexed-raster-language", "regular-matrix-dithering"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-152 ordered bayer dither field regular matrix dithering ordered dither matrix 7. indexed raster language indexed raster language regular matrix dithering pack_23 medieval visual atlas indexed-raster-language medieval-visual-atlas indexed-raster-language regular-matrix-dithering"
+    },
+    {
+      "id": "SP23-153",
+      "name": "Selective Colored Outline",
+      "styleAnchors": [
+        "Selective Colored Outline",
+        "colored sel-out pixel outlines",
+        "colored outlines"
+      ],
+      "ref": "pack_23/SP23-153.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "indexed-raster-language",
+      "categoryName": "7. Indexed Raster Language",
+      "domain": "colored sel-out pixel outlines",
+      "tags": [
+        "medieval-visual-atlas",
+        "indexed-raster-language",
+        "colored-sel-out-pixel-outlines"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-153 selective colored outline colored sel-out pixel outlines colored outlines 7. indexed raster language indexed raster language colored sel-out pixel outlines pack_23 medieval visual atlas indexed-raster-language medieval-visual-atlas indexed-raster-language colored-sel-out-pixel-outlines"
+    },
+    {
+      "id": "SP23-154",
+      "name": "Two-Tone Duotone Pixel",
+      "styleAnchors": ["Two-Tone Duotone Pixel", "two-color pixel art", "two colors only"],
+      "ref": "pack_23/SP23-154.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "indexed-raster-language",
+      "categoryName": "7. Indexed Raster Language",
+      "domain": "two-color pixel art",
+      "tags": ["medieval-visual-atlas", "indexed-raster-language", "two-color-pixel-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-154 two-tone duotone pixel two-color pixel art two colors only 7. indexed raster language indexed raster language two-color pixel art pack_23 medieval visual atlas indexed-raster-language medieval-visual-atlas indexed-raster-language two-color-pixel-art"
+    },
+    {
+      "id": "SP23-155",
+      "name": "Palette-Swap Twin Sprites",
+      "styleAnchors": [
+        "Palette-Swap Twin Sprites",
+        "same sprite different palettes",
+        "identical sprites"
+      ],
+      "ref": "pack_23/SP23-155.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "indexed-raster-language",
+      "categoryName": "7. Indexed Raster Language",
+      "domain": "same sprite different palettes",
+      "tags": [
+        "medieval-visual-atlas",
+        "indexed-raster-language",
+        "same-sprite-different-palettes"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-155 palette-swap twin sprites same sprite different palettes identical sprites 7. indexed raster language indexed raster language same sprite different palettes pack_23 medieval visual atlas indexed-raster-language medieval-visual-atlas indexed-raster-language same-sprite-different-palettes"
+    },
+    {
+      "id": "SP23-156",
+      "name": "Seamless Pixel Tileset Sheet",
+      "styleAnchors": [
+        "Seamless Pixel Tileset Sheet",
+        "tiling pixel environment tiles",
+        "seamless tiles"
+      ],
+      "ref": "pack_23/SP23-156.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "indexed-raster-language",
+      "categoryName": "7. Indexed Raster Language",
+      "domain": "tiling pixel environment tiles",
+      "tags": [
+        "medieval-visual-atlas",
+        "indexed-raster-language",
+        "tiling-pixel-environment-tiles"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-156 seamless pixel tileset sheet tiling pixel environment tiles seamless tiles 7. indexed raster language indexed raster language tiling pixel environment tiles pack_23 medieval visual atlas indexed-raster-language medieval-visual-atlas indexed-raster-language tiling-pixel-environment-tiles"
+    },
+    {
+      "id": "SP23-157",
+      "name": "Low-Count Pixel Portrait",
+      "styleAnchors": ["Low-Count Pixel Portrait", "tiny pixel character portrait", "tiny canvas"],
+      "ref": "pack_23/SP23-157.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "indexed-raster-language",
+      "categoryName": "7. Indexed Raster Language",
+      "domain": "tiny pixel character portrait",
+      "tags": ["medieval-visual-atlas", "indexed-raster-language", "tiny-pixel-character-portrait"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-157 low-count pixel portrait tiny pixel character portrait tiny canvas 7. indexed raster language indexed raster language tiny pixel character portrait pack_23 medieval visual atlas indexed-raster-language medieval-visual-atlas indexed-raster-language tiny-pixel-character-portrait"
+    },
+    {
+      "id": "SP23-158",
+      "name": "Pixel Light Bloom Halo",
+      "styleAnchors": ["Pixel Light Bloom Halo", "stepped pixel glow", "stepped glow rings"],
+      "ref": "pack_23/SP23-158.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "indexed-raster-language",
+      "categoryName": "7. Indexed Raster Language",
+      "domain": "stepped pixel glow",
+      "tags": ["medieval-visual-atlas", "indexed-raster-language", "stepped-pixel-glow"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-158 pixel light bloom halo stepped pixel glow stepped glow rings 7. indexed raster language indexed raster language stepped pixel glow pack_23 medieval visual atlas indexed-raster-language medieval-visual-atlas indexed-raster-language stepped-pixel-glow"
+    },
+    {
+      "id": "SP23-159",
+      "name": "Pillow-Shaded Pixel Kitsch",
+      "styleAnchors": [
+        "Pillow-Shaded Pixel Kitsch",
+        "naive pillow-shaded pixels",
+        "pillow shading"
+      ],
+      "ref": "pack_23/SP23-159.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "indexed-raster-language",
+      "categoryName": "7. Indexed Raster Language",
+      "domain": "naive pillow-shaded pixels",
+      "tags": ["medieval-visual-atlas", "indexed-raster-language", "naive-pillow-shaded-pixels"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-159 pillow-shaded pixel kitsch naive pillow-shaded pixels pillow shading 7. indexed raster language indexed raster language naive pillow-shaded pixels pack_23 medieval visual atlas indexed-raster-language medieval-visual-atlas indexed-raster-language naive-pillow-shaded-pixels"
+    },
+    {
+      "id": "SP23-160",
+      "name": "Clustered Pixel Foliage Canopy",
+      "styleAnchors": [
+        "Clustered Pixel Foliage Canopy",
+        "pixel leaf cluster technique",
+        "leaf clusters"
+      ],
+      "ref": "pack_23/SP23-160.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "indexed-raster-language",
+      "categoryName": "7. Indexed Raster Language",
+      "domain": "pixel leaf cluster technique",
+      "tags": ["medieval-visual-atlas", "indexed-raster-language", "pixel-leaf-cluster-technique"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-160 clustered pixel foliage canopy pixel leaf cluster technique leaf clusters 7. indexed raster language indexed raster language pixel leaf cluster technique pack_23 medieval visual atlas indexed-raster-language medieval-visual-atlas indexed-raster-language pixel-leaf-cluster-technique"
+    },
+    {
+      "id": "SP23-161",
+      "name": "Four-Ink Palette Scene",
+      "styleAnchors": [
+        "Four-Ink Palette Scene",
+        "four-color constrained scene",
+        "exactly four colors"
+      ],
+      "ref": "pack_23/SP23-161.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "indexed-raster-language",
+      "categoryName": "7. Indexed Raster Language",
+      "domain": "four-color constrained scene",
+      "tags": ["medieval-visual-atlas", "indexed-raster-language", "four-color-constrained-scene"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-161 four-ink palette scene four-color constrained scene exactly four colors 7. indexed raster language indexed raster language four-color constrained scene pack_23 medieval visual atlas indexed-raster-language medieval-visual-atlas indexed-raster-language four-color-constrained-scene"
+    },
+    {
+      "id": "SP23-162",
+      "name": "High-Density Pixel Painting",
+      "styleAnchors": [
+        "High-Density Pixel Painting",
+        "large-canvas detailed pixel art",
+        "large canvas"
+      ],
+      "ref": "pack_23/SP23-162.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "indexed-raster-language",
+      "categoryName": "7. Indexed Raster Language",
+      "domain": "large-canvas detailed pixel art",
+      "tags": [
+        "medieval-visual-atlas",
+        "indexed-raster-language",
+        "large-canvas-detailed-pixel-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-162 high-density pixel painting large-canvas detailed pixel art large canvas 7. indexed raster language indexed raster language large-canvas detailed pixel art pack_23 medieval visual atlas indexed-raster-language medieval-visual-atlas indexed-raster-language large-canvas-detailed-pixel-art"
+    },
+    {
+      "id": "SP23-163",
+      "name": "Pixel Water Reflection",
+      "styleAnchors": [
+        "Pixel Water Reflection",
+        "pixel water with broken reflections",
+        "broken reflection strips"
+      ],
+      "ref": "pack_23/SP23-163.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "indexed-raster-language",
+      "categoryName": "7. Indexed Raster Language",
+      "domain": "pixel water with broken reflections",
+      "tags": [
+        "medieval-visual-atlas",
+        "indexed-raster-language",
+        "pixel-water-with-broken-reflections"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-163 pixel water reflection pixel water with broken reflections broken reflection strips 7. indexed raster language indexed raster language pixel water with broken reflections pack_23 medieval visual atlas indexed-raster-language medieval-visual-atlas indexed-raster-language pixel-water-with-broken-reflections"
+    },
+    {
+      "id": "SP23-164",
+      "name": "Rim-Lit Pixel Silhouette",
+      "styleAnchors": [
+        "Rim-Lit Pixel Silhouette",
+        "dark sprites with bright edge light",
+        "dark silhouettes"
+      ],
+      "ref": "pack_23/SP23-164.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "indexed-raster-language",
+      "categoryName": "7. Indexed Raster Language",
+      "domain": "dark sprites with bright edge light",
+      "tags": [
+        "medieval-visual-atlas",
+        "indexed-raster-language",
+        "dark-sprites-with-bright-edge-light"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-164 rim-lit pixel silhouette dark sprites with bright edge light dark silhouettes 7. indexed raster language indexed raster language dark sprites with bright edge light pack_23 medieval visual atlas indexed-raster-language medieval-visual-atlas indexed-raster-language dark-sprites-with-bright-edge-light"
+    },
+    {
+      "id": "SP23-165",
+      "name": "Palette-Shifted Night Scene",
+      "styleAnchors": [
+        "Palette-Shifted Night Scene",
+        "day scene shifted to night palette",
+        "night palette shift"
+      ],
+      "ref": "pack_23/SP23-165.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "indexed-raster-language",
+      "categoryName": "7. Indexed Raster Language",
+      "domain": "day scene shifted to night palette",
+      "tags": [
+        "medieval-visual-atlas",
+        "indexed-raster-language",
+        "day-scene-shifted-to-night-palette"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-165 palette-shifted night scene day scene shifted to night palette night palette shift 7. indexed raster language indexed raster language day scene shifted to night palette pack_23 medieval visual atlas indexed-raster-language medieval-visual-atlas indexed-raster-language day-scene-shifted-to-night-palette"
+    },
+    {
       "id": "SP23-034",
       "name": "Controlled Facet Shading",
       "ref": "pack_23/SP23-034.yaml",
@@ -1544,6 +2508,340 @@
       "tags": ["medieval-visual-atlas", "retro-3d-visual-studies"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp23-036 painted facet textures 8. retro 3d visual studies retro 3d visual studies pack_23 medieval visual atlas retro-3d-visual-studies medieval-visual-atlas retro-3d-visual-studies"
+    },
+    {
+      "id": "SP23-166",
+      "name": "Clay-Scanned Early CGI Creature",
+      "styleAnchors": [
+        "Clay-Scanned Early CGI Creature",
+        "digitized clay model cgi",
+        "scanned clay creature"
+      ],
+      "ref": "pack_23/SP23-166.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "retro-3d-visual-studies",
+      "categoryName": "8. Retro 3D Visual Studies",
+      "domain": "digitized clay model cgi",
+      "tags": ["medieval-visual-atlas", "retro-3d-visual-studies", "digitized-clay-model-cgi"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-166 clay-scanned early cgi creature digitized clay model cgi scanned clay creature 8. retro 3d visual studies retro 3d visual studies digitized clay model cgi pack_23 medieval visual atlas retro-3d-visual-studies medieval-visual-atlas retro-3d-visual-studies digitized-clay-model-cgi"
+    },
+    {
+      "id": "SP23-167",
+      "name": "Gouraud-Shaded Primitives",
+      "styleAnchors": [
+        "Gouraud-Shaded Primitives",
+        "smooth vertex-shaded simple shapes",
+        "primitive shapes"
+      ],
+      "ref": "pack_23/SP23-167.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "retro-3d-visual-studies",
+      "categoryName": "8. Retro 3D Visual Studies",
+      "domain": "smooth vertex-shaded simple shapes",
+      "tags": [
+        "medieval-visual-atlas",
+        "retro-3d-visual-studies",
+        "smooth-vertex-shaded-simple-shapes"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-167 gouraud-shaded primitives smooth vertex-shaded simple shapes primitive shapes 8. retro 3d visual studies retro 3d visual studies smooth vertex-shaded simple shapes pack_23 medieval visual atlas retro-3d-visual-studies medieval-visual-atlas retro-3d-visual-studies smooth-vertex-shaded-simple-shapes"
+    },
+    {
+      "id": "SP23-168",
+      "name": "Billboard Sprite 3D Space",
+      "styleAnchors": [
+        "Billboard Sprite 3D Space",
+        "flat sprites in 3d world",
+        "camera-facing sprites"
+      ],
+      "ref": "pack_23/SP23-168.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "retro-3d-visual-studies",
+      "categoryName": "8. Retro 3D Visual Studies",
+      "domain": "flat sprites in 3d world",
+      "tags": ["medieval-visual-atlas", "retro-3d-visual-studies", "flat-sprites-in-3d-world"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-168 billboard sprite 3d space flat sprites in 3d world camera-facing sprites 8. retro 3d visual studies retro 3d visual studies flat sprites in 3d world pack_23 medieval visual atlas retro-3d-visual-studies medieval-visual-atlas retro-3d-visual-studies flat-sprites-in-3d-world"
+    },
+    {
+      "id": "SP23-169",
+      "name": "Raycast Corridor Render",
+      "styleAnchors": [
+        "Raycast Corridor Render",
+        "early raycast maze graphics",
+        "vertical wall slices"
+      ],
+      "ref": "pack_23/SP23-169.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "retro-3d-visual-studies",
+      "categoryName": "8. Retro 3D Visual Studies",
+      "domain": "early raycast maze graphics",
+      "tags": ["medieval-visual-atlas", "retro-3d-visual-studies", "early-raycast-maze-graphics"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-169 raycast corridor render early raycast maze graphics vertical wall slices 8. retro 3d visual studies retro 3d visual studies early raycast maze graphics pack_23 medieval visual atlas retro-3d-visual-studies medieval-visual-atlas retro-3d-visual-studies early-raycast-maze-graphics"
+    },
+    {
+      "id": "SP23-170",
+      "name": "Draw-Distance Fog World",
+      "styleAnchors": [
+        "Draw-Distance Fog World",
+        "fog hiding short draw distance",
+        "thick flat fog"
+      ],
+      "ref": "pack_23/SP23-170.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "retro-3d-visual-studies",
+      "categoryName": "8. Retro 3D Visual Studies",
+      "domain": "fog hiding short draw distance",
+      "tags": [
+        "medieval-visual-atlas",
+        "retro-3d-visual-studies",
+        "fog-hiding-short-draw-distance"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-170 draw-distance fog world fog hiding short draw distance thick flat fog 8. retro 3d visual studies retro 3d visual studies fog hiding short draw distance pack_23 medieval visual atlas retro-3d-visual-studies medieval-visual-atlas retro-3d-visual-studies fog-hiding-short-draw-distance"
+    },
+    {
+      "id": "SP23-171",
+      "name": "Vertex-Colored Low Poly",
+      "styleAnchors": [
+        "Vertex-Colored Low Poly",
+        "untextured vertex color models",
+        "vertex colors"
+      ],
+      "ref": "pack_23/SP23-171.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "retro-3d-visual-studies",
+      "categoryName": "8. Retro 3D Visual Studies",
+      "domain": "untextured vertex color models",
+      "tags": [
+        "medieval-visual-atlas",
+        "retro-3d-visual-studies",
+        "untextured-vertex-color-models"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-171 vertex-colored low poly untextured vertex color models vertex colors 8. retro 3d visual studies retro 3d visual studies untextured vertex color models pack_23 medieval visual atlas retro-3d-visual-studies medieval-visual-atlas retro-3d-visual-studies untextured-vertex-color-models"
+    },
+    {
+      "id": "SP23-172",
+      "name": "Filtered Blurry Texture 3D",
+      "styleAnchors": [
+        "Filtered Blurry Texture 3D",
+        "bilinear smeared texture console 3d",
+        "smeared textures"
+      ],
+      "ref": "pack_23/SP23-172.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "retro-3d-visual-studies",
+      "categoryName": "8. Retro 3D Visual Studies",
+      "domain": "bilinear smeared texture console 3d",
+      "tags": [
+        "medieval-visual-atlas",
+        "retro-3d-visual-studies",
+        "bilinear-smeared-texture-console-3d"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-172 filtered blurry texture 3d bilinear smeared texture console 3d smeared textures 8. retro 3d visual studies retro 3d visual studies bilinear smeared texture console 3d pack_23 medieval visual atlas retro-3d-visual-studies medieval-visual-atlas retro-3d-visual-studies bilinear-smeared-texture-console-3d"
+    },
+    {
+      "id": "SP23-173",
+      "name": "Chrome Spheres on Checkerboard",
+      "styleAnchors": [
+        "Chrome Spheres on Checkerboard",
+        "classic ray-traced demo scene",
+        "chrome spheres"
+      ],
+      "ref": "pack_23/SP23-173.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "retro-3d-visual-studies",
+      "categoryName": "8. Retro 3D Visual Studies",
+      "domain": "classic ray-traced demo scene",
+      "tags": ["medieval-visual-atlas", "retro-3d-visual-studies", "classic-ray-traced-demo-scene"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-173 chrome spheres on checkerboard classic ray-traced demo scene chrome spheres 8. retro 3d visual studies retro 3d visual studies classic ray-traced demo scene pack_23 medieval visual atlas retro-3d-visual-studies medieval-visual-atlas retro-3d-visual-studies classic-ray-traced-demo-scene"
+    },
+    {
+      "id": "SP23-174",
+      "name": "Voxel Heightmap Landscape",
+      "styleAnchors": [
+        "Voxel Heightmap Landscape",
+        "early voxel terrain renderer",
+        "pixel column terrain"
+      ],
+      "ref": "pack_23/SP23-174.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "retro-3d-visual-studies",
+      "categoryName": "8. Retro 3D Visual Studies",
+      "domain": "early voxel terrain renderer",
+      "tags": ["medieval-visual-atlas", "retro-3d-visual-studies", "early-voxel-terrain-renderer"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-174 voxel heightmap landscape early voxel terrain renderer pixel column terrain 8. retro 3d visual studies retro 3d visual studies early voxel terrain renderer pack_23 medieval visual atlas retro-3d-visual-studies medieval-visual-atlas retro-3d-visual-studies early-voxel-terrain-renderer"
+    },
+    {
+      "id": "SP23-175",
+      "name": "Character-Select Model Pose",
+      "styleAnchors": [
+        "Character-Select Model Pose",
+        "turntable character select screen",
+        "pedestal"
+      ],
+      "ref": "pack_23/SP23-175.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "retro-3d-visual-studies",
+      "categoryName": "8. Retro 3D Visual Studies",
+      "domain": "turntable character select screen",
+      "tags": [
+        "medieval-visual-atlas",
+        "retro-3d-visual-studies",
+        "turntable-character-select-screen"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-175 character-select model pose turntable character select screen pedestal 8. retro 3d visual studies retro 3d visual studies turntable character select screen pack_23 medieval visual atlas retro-3d-visual-studies medieval-visual-atlas retro-3d-visual-studies turntable-character-select-screen"
+    },
+    {
+      "id": "SP23-176",
+      "name": "Bright Early-2000s Console 3D",
+      "styleAnchors": [
+        "Bright Early-2000s Console 3D",
+        "saturated sunny console 3d",
+        "sunny blue sky"
+      ],
+      "ref": "pack_23/SP23-176.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "retro-3d-visual-studies",
+      "categoryName": "8. Retro 3D Visual Studies",
+      "domain": "saturated sunny console 3d",
+      "tags": ["medieval-visual-atlas", "retro-3d-visual-studies", "saturated-sunny-console-3d"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-176 bright early-2000s console 3d saturated sunny console 3d sunny blue sky 8. retro 3d visual studies retro 3d visual studies saturated sunny console 3d pack_23 medieval visual atlas retro-3d-visual-studies medieval-visual-atlas retro-3d-visual-studies saturated-sunny-console-3d"
+    },
+    {
+      "id": "SP23-177",
+      "name": "Untextured Grey-Box Level",
+      "styleAnchors": ["Untextured Grey-Box Level", "level blockout greybox render", "grey boxes"],
+      "ref": "pack_23/SP23-177.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "retro-3d-visual-studies",
+      "categoryName": "8. Retro 3D Visual Studies",
+      "domain": "level blockout greybox render",
+      "tags": ["medieval-visual-atlas", "retro-3d-visual-studies", "level-blockout-greybox-render"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-177 untextured grey-box level level blockout greybox render grey boxes 8. retro 3d visual studies retro 3d visual studies level blockout greybox render pack_23 medieval visual atlas retro-3d-visual-studies medieval-visual-atlas retro-3d-visual-studies level-blockout-greybox-render"
+    },
+    {
+      "id": "SP23-178",
+      "name": "Scrolling-Texture Water World",
+      "styleAnchors": [
+        "Scrolling-Texture Water World",
+        "early 3d scrolling water surfaces",
+        "looping water texture"
+      ],
+      "ref": "pack_23/SP23-178.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "retro-3d-visual-studies",
+      "categoryName": "8. Retro 3D Visual Studies",
+      "domain": "early 3d scrolling water surfaces",
+      "tags": [
+        "medieval-visual-atlas",
+        "retro-3d-visual-studies",
+        "early-3d-scrolling-water-surfaces"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-178 scrolling-texture water world early 3d scrolling water surfaces looping water texture 8. retro 3d visual studies retro 3d visual studies early 3d scrolling water surfaces pack_23 medieval visual atlas retro-3d-visual-studies medieval-visual-atlas retro-3d-visual-studies early-3d-scrolling-water-surfaces"
+    },
+    {
+      "id": "SP23-179",
+      "name": "Sprite-Particle Magic Burst",
+      "styleAnchors": [
+        "Sprite-Particle Magic Burst",
+        "early 3d particle sprite effects",
+        "flat sprite particles"
+      ],
+      "ref": "pack_23/SP23-179.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "retro-3d-visual-studies",
+      "categoryName": "8. Retro 3D Visual Studies",
+      "domain": "early 3d particle sprite effects",
+      "tags": [
+        "medieval-visual-atlas",
+        "retro-3d-visual-studies",
+        "early-3d-particle-sprite-effects"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-179 sprite-particle magic burst early 3d particle sprite effects flat sprite particles 8. retro 3d visual studies retro 3d visual studies early 3d particle sprite effects pack_23 medieval visual atlas retro-3d-visual-studies medieval-visual-atlas retro-3d-visual-studies early-3d-particle-sprite-effects"
+    },
+    {
+      "id": "SP23-180",
+      "name": "Sphere-Mapped Metal Shine",
+      "styleAnchors": [
+        "Sphere-Mapped Metal Shine",
+        "fake environment mapped chrome",
+        "swirling reflection texture"
+      ],
+      "ref": "pack_23/SP23-180.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "retro-3d-visual-studies",
+      "categoryName": "8. Retro 3D Visual Studies",
+      "domain": "fake environment mapped chrome",
+      "tags": [
+        "medieval-visual-atlas",
+        "retro-3d-visual-studies",
+        "fake-environment-mapped-chrome"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-180 sphere-mapped metal shine fake environment mapped chrome swirling reflection texture 8. retro 3d visual studies retro 3d visual studies fake environment mapped chrome pack_23 medieval visual atlas retro-3d-visual-studies medieval-visual-atlas retro-3d-visual-studies fake-environment-mapped-chrome"
+    },
+    {
+      "id": "SP23-181",
+      "name": "Nearest-Neighbor Texture Close-Up",
+      "styleAnchors": [
+        "Nearest-Neighbor Texture Close-Up",
+        "unfiltered pixelated 3d textures",
+        "square texels"
+      ],
+      "ref": "pack_23/SP23-181.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "retro-3d-visual-studies",
+      "categoryName": "8. Retro 3D Visual Studies",
+      "domain": "unfiltered pixelated 3d textures",
+      "tags": [
+        "medieval-visual-atlas",
+        "retro-3d-visual-studies",
+        "unfiltered-pixelated-3d-textures"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-181 nearest-neighbor texture close-up unfiltered pixelated 3d textures square texels 8. retro 3d visual studies retro 3d visual studies unfiltered pixelated 3d textures pack_23 medieval visual atlas retro-3d-visual-studies medieval-visual-atlas retro-3d-visual-studies unfiltered-pixelated-3d-textures"
+    },
+    {
+      "id": "SP23-182",
+      "name": "Low-Res Skybox Panorama",
+      "styleAnchors": ["Low-Res Skybox Panorama", "early 3d sky cube", "painted sky cube"],
+      "ref": "pack_23/SP23-182.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "retro-3d-visual-studies",
+      "categoryName": "8. Retro 3D Visual Studies",
+      "domain": "early 3d sky cube",
+      "tags": ["medieval-visual-atlas", "retro-3d-visual-studies", "early-3d-sky-cube"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-182 low-res skybox panorama early 3d sky cube painted sky cube 8. retro 3d visual studies retro 3d visual studies early 3d sky cube pack_23 medieval visual atlas retro-3d-visual-studies medieval-visual-atlas retro-3d-visual-studies early-3d-sky-cube"
     },
     {
       "id": "SP23-037",
@@ -1810,5 +3108,5 @@
       "searchableText": "sp23-058 shallow relief and fine marks 12. hybrid visual studies hybrid visual studies pack_23 medieval visual atlas hybrid-visual-studies medieval-visual-atlas hybrid-visual-studies"
     }
   ],
-  "totalPresetCount": 117
+  "totalPresetCount": 182
 }

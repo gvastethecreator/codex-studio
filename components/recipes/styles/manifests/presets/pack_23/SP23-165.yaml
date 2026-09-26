@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-165
+packId: pack_23
+name: Palette-Shifted Night Scene
+styleAnchors:
+  - Palette-Shifted Night Scene
+  - day scene shifted to night palette
+  - night palette shift
+displayName: Palette-Shifted Night Scene
+category: 7. Indexed Raster Language
+domain: day scene shifted to night palette
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - indexed-raster-language
+  - night-palette
+  - indexed-pixel
+  - portable-style-study
+visualDna:
+  aesthetic: 'Palette-shifted night scene: a pixel scene whose whole palette has been shifted to night, blues and purples replacing daylight colors, with a few warm lights left burning.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; set the subject in a scene whose palette is shifted to cool night.
+  color_and_tone: Indigo, violet and teal with a few warm window lights.
+  lighting_and_shadow: Moonlight tint everywhere, warm pools around lights, kept consistent across the whole image.
+  texture_and_material: Same crisp pixels with cool shifted colors, kept consistent across the whole image.
+  camera_and_composition: Village or landscape with a few glowing points.
+  atmosphere_and_mood: Keep the requested mood with hushed nocturnal quiet.
+  rendering_and_quality: Consistent night palette with readable detail, kept consistent across the whole image.
+  creative_brief: "Palette-shifted night scene: a pixel scene whose whole palette has been shifted to night, blues and purples replacing daylight colors, with a few warm lights left burning. Carry it through night palette shift, indigo tones, warm window lights, moonlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: night palette shift; indigo tones; warm window lights; moonlight
+avoidRules:
+  - blurry upscaled pixels
+  - interface or HUD
+  - existing game sprites
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: blurry upscaled pixels, interface or HUD, existing game sprites, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: indexed-raster-language
+  categoryName: 7. Indexed Raster Language
+  tags:
+    - curation-v2
+    - indexed-raster-language
+    - night-palette
+    - indexed-pixel
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: day scene shifted to night palette

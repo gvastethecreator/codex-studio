@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP23-132
+packId: pack_23
+name: Nursery Frieze Procession
+styleAnchors:
+  - Nursery Frieze Procession
+  - edwardian nursery wall frieze
+  - horizontal procession
+displayName: Nursery Frieze Procession
+category: 5. Revival & Storybook Illustration
+domain: edwardian nursery wall frieze
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - revival-and-storybook-illustration
+  - nursery-frieze
+  - storybook-revival
+  - portable-style-study
+visualDna:
+  aesthetic: 'Nursery frieze procession: long Edwardian nursery wallpaper friezes with repeating processions of animals, soldiers and storybook characters in soft flat color.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; arrange the subject into a long repeating procession along a horizontal band.
+  color_and_tone: Soft flat pastels, cream ground and gentle outlines.
+  lighting_and_shadow: Flat with no shadow, kept consistent across the whole image.
+  texture_and_material: Printed wallpaper paper, soft outlines and repeat seams.
+  camera_and_composition: Long horizontal band with evenly spaced figures, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with gentle childhood rhythm.
+  rendering_and_quality: Clean repeating design with charming figures, kept consistent across the whole image.
+  creative_brief: "Nursery frieze procession: long Edwardian nursery wallpaper friezes with repeating processions of animals, soldiers and storybook characters in soft flat color. Carry it through horizontal procession, repeating figures, soft pastels, wallpaper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: horizontal procession; repeating figures; soft pastels; wallpaper
+avoidRules:
+  - readable captions or lettering
+  - existing fairy-tale film character designs
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable captions or lettering, existing fairy-tale film character designs, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: revival-and-storybook-illustration
+  categoryName: 5. Revival & Storybook Illustration
+  tags:
+    - curation-v2
+    - revival-and-storybook-illustration
+    - nursery-frieze
+    - storybook-revival
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: edwardian nursery wall frieze

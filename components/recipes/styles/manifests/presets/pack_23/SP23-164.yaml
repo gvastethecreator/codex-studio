@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-164
+packId: pack_23
+name: Rim-Lit Pixel Silhouette
+styleAnchors:
+  - Rim-Lit Pixel Silhouette
+  - dark sprites with bright edge light
+  - dark silhouettes
+displayName: Rim-Lit Pixel Silhouette
+category: 7. Indexed Raster Language
+domain: dark sprites with bright edge light
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - indexed-raster-language
+  - rim-lit-pixel
+  - indexed-pixel
+  - portable-style-study
+visualDna:
+  aesthetic: 'Rim-lit pixel silhouette: dark near-black sprites outlined by a thin line of bright pixels where light from behind catches their edges.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; render the subject as a dark silhouette with a thin bright pixel rim.
+  color_and_tone: Near-black figures with bright gold or cyan edge pixels.
+  lighting_and_shadow: Strong backlight creating one-pixel rims, kept consistent across the whole image.
+  texture_and_material: Dark flat fills and crisp bright edges, kept consistent across the whole image.
+  camera_and_composition: Figures against a bright sky or glowing source.
+  atmosphere_and_mood: Keep the requested mood with dramatic backlit mystery.
+  rendering_and_quality: Clean rims and strong silhouettes, kept consistent across the whole image.
+  creative_brief: "Rim-lit pixel silhouette: dark near-black sprites outlined by a thin line of bright pixels where light from behind catches their edges. Carry it through dark silhouettes, one-pixel rim light, backlight, strong shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: dark silhouettes; one-pixel rim light; backlight; strong shapes
+avoidRules:
+  - blurry upscaled pixels
+  - interface or HUD
+  - existing game sprites
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: blurry upscaled pixels, interface or HUD, existing game sprites, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: indexed-raster-language
+  categoryName: 7. Indexed Raster Language
+  tags:
+    - curation-v2
+    - indexed-raster-language
+    - rim-lit-pixel
+    - indexed-pixel
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: dark sprites with bright edge light

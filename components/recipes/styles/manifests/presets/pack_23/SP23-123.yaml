@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP23-123
+packId: pack_23
+name: Gilt Deco Fairy Plate
+styleAnchors:
+  - Gilt Deco Fairy Plate
+  - luxurious stenciled deco fairy plate
+  - gold outlines
+displayName: Gilt Deco Fairy Plate
+category: 5. Revival & Storybook Illustration
+domain: luxurious stenciled deco fairy plate
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - revival-and-storybook-illustration
+  - deco-fairy
+  - storybook-revival
+  - portable-style-study
+visualDna:
+  aesthetic: 'Gilt deco fairy plate: luxurious 1910s gift-book plates with stenciled jewel colors, gold outlines, exotic palaces and fantastic creatures in stylized deco elegance.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; render the subject in elegant stylized shapes outlined in gold with stenciled color.
+  color_and_tone: Deep turquoise, saffron, rose and black with gold outlines.
+  lighting_and_shadow: Flat stylized with gentle glow, kept consistent across the whole image.
+  texture_and_material: Stenciled pigment, gold ink lines and soft paper.
+  camera_and_composition: Elegant centered figure framed by stylized palace forms.
+  atmosphere_and_mood: Keep the requested mood with opulent dreamy luxury.
+  rendering_and_quality: Crisp elegant shapes with rich flat color, kept consistent across the whole image.
+  creative_brief: "Gilt deco fairy plate: luxurious 1910s gift-book plates with stenciled jewel colors, gold outlines, exotic palaces and fantastic creatures in stylized deco elegance. Carry it through gold outlines, stenciled jewel color, stylized palaces, deco elegance. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: gold outlines; stenciled jewel color; stylized palaces; deco elegance
+avoidRules:
+  - readable captions or lettering
+  - existing fairy-tale film character designs
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable captions or lettering, existing fairy-tale film character designs, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: revival-and-storybook-illustration
+  categoryName: 5. Revival & Storybook Illustration
+  tags:
+    - curation-v2
+    - revival-and-storybook-illustration
+    - deco-fairy
+    - storybook-revival
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: luxurious stenciled deco fairy plate

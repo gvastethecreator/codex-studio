@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-181
+packId: pack_23
+name: Nearest-Neighbor Texture Close-Up
+styleAnchors:
+  - Nearest-Neighbor Texture Close-Up
+  - unfiltered pixelated 3d textures
+  - square texels
+displayName: Nearest-Neighbor Texture Close-Up
+category: 8. Retro 3D Visual Studies
+domain: unfiltered pixelated 3d textures
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - retro-3d-visual-studies
+  - nearest-neighbor
+  - retro-3d
+  - portable-style-study
+visualDna:
+  aesthetic: 'Nearest-neighbor texture close-up: 3D surfaces seen up close with unfiltered low-res textures, every texel a crisp square block of color on walls, faces and floors.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; bring the camera close so the subject's textures break into crisp square texels.
+  color_and_tone: Muted texture colors as sharp square blocks, kept consistent across the whole image.
+  lighting_and_shadow: Simple lighting over crisp texel blocks, kept consistent across the whole image.
+  texture_and_material: Hard-edged square texels on flat polygons, kept consistent across the whole image.
+  camera_and_composition: Extreme close-up where texels become large, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with crunchy tactile nostalgia.
+  rendering_and_quality: Crisp unfiltered texels, no smoothing, kept consistent across the whole image.
+  creative_brief: "Nearest-neighbor texture close-up: 3D surfaces seen up close with unfiltered low-res textures, every texel a crisp square block of color on walls, faces and floors. Carry it through square texels, unfiltered textures, close-up, flat polygons. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: square texels; unfiltered textures; close-up; flat polygons
+avoidRules:
+  - modern high-poly rendering
+  - interface or HUD
+  - existing game characters or logos
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: modern high-poly rendering, interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: retro-3d-visual-studies
+  categoryName: 8. Retro 3D Visual Studies
+  tags:
+    - curation-v2
+    - retro-3d-visual-studies
+    - nearest-neighbor
+    - retro-3d
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: unfiltered pixelated 3d textures

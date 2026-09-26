@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-153
+packId: pack_23
+name: Selective Colored Outline
+styleAnchors:
+  - Selective Colored Outline
+  - colored sel-out pixel outlines
+  - colored outlines
+displayName: Selective Colored Outline
+category: 7. Indexed Raster Language
+domain: colored sel-out pixel outlines
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - indexed-raster-language
+  - sel-out
+  - indexed-pixel
+  - portable-style-study
+visualDna:
+  aesthetic: 'Selective colored outline: pixel art where outlines change color with the light, dark on the shadow side, light or colored on the lit side, blending sprites into their scene.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; outline the subject with colored lines that lighten on its lit side.
+  color_and_tone: Outline colors drawn from neighboring fills, kept consistent across the whole image.
+  lighting_and_shadow: Directional light reflected in outline color, kept consistent across the whole image.
+  texture_and_material: One-pixel colored outlines and clean fills, kept consistent across the whole image.
+  camera_and_composition: Clear sprite silhouette within a scene, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with soft integrated charm.
+  rendering_and_quality: Refined outlines that read cleanly, kept consistent across the whole image.
+  creative_brief: "Selective colored outline: pixel art where outlines change color with the light, dark on the shadow side, light or colored on the lit side, blending sprites into their scene. Carry it through colored outlines, lit-side light line, dark shadow line, integrated sprite. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: colored outlines; lit-side light line; dark shadow line; integrated sprite
+avoidRules:
+  - blurry upscaled pixels
+  - interface or HUD
+  - existing game sprites
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: blurry upscaled pixels, interface or HUD, existing game sprites, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: indexed-raster-language
+  categoryName: 7. Indexed Raster Language
+  tags:
+    - curation-v2
+    - indexed-raster-language
+    - sel-out
+    - indexed-pixel
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: colored sel-out pixel outlines

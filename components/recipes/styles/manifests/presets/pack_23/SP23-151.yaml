@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-151
+packId: pack_23
+name: Hand Anti-Aliased Pixel Line
+styleAnchors:
+  - Hand Anti-Aliased Pixel Line
+  - manual pixel anti-aliasing
+  - smooth pixel curves
+displayName: Hand Anti-Aliased Pixel Line
+category: 7. Indexed Raster Language
+domain: manual pixel anti-aliasing
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - indexed-raster-language
+  - hand-aa
+  - indexed-pixel
+  - portable-style-study
+visualDna:
+  aesthetic: 'Hand anti-aliased pixel line: pixel art where curves and diagonals are smoothed by carefully placed intermediate-color pixels, clean lines that look smooth at a distance and deliberate up close.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; draw the subject with smooth curves made of hand-placed intermediate pixels.
+  color_and_tone: Clean palette with intermediate tones only along edges.
+  lighting_and_shadow: Soft shading with neat ramps, kept consistent across the whole image.
+  texture_and_material: Crisp pixels with smoothing steps on curves, kept consistent across the whole image.
+  camera_and_composition: Large curving shapes that show off the line quality.
+  atmosphere_and_mood: Keep the requested mood with polished crafted calm.
+  rendering_and_quality: Precise elegant lines without jaggies, kept consistent across the whole image.
+  creative_brief: "Hand anti-aliased pixel line: pixel art where curves and diagonals are smoothed by carefully placed intermediate-color pixels, clean lines that look smooth at a distance and deliberate up close. Carry it through smooth pixel curves, intermediate edge pixels, crisp, deliberate. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: smooth pixel curves; intermediate edge pixels; crisp; deliberate
+avoidRules:
+  - blurry upscaled pixels
+  - interface or HUD
+  - existing game sprites
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: blurry upscaled pixels, interface or HUD, existing game sprites, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: indexed-raster-language
+  categoryName: 7. Indexed Raster Language
+  tags:
+    - curation-v2
+    - indexed-raster-language
+    - hand-aa
+    - indexed-pixel
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: manual pixel anti-aliasing

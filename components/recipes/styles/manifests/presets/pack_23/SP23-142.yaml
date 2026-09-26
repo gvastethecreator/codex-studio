@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-142
+packId: pack_23
+name: Hand-Drawn Cloth Map Insert
+styleAnchors:
+  - Hand-Drawn Cloth Map Insert
+  - printed cloth game map
+  - creased cloth
+displayName: Hand-Drawn Cloth Map Insert
+category: 6. Classic RPG Visual Studies
+domain: printed cloth game map
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - classic-rpg-visual-studies
+  - cloth-map
+  - classic-rpg
+  - portable-style-study
+visualDna:
+  aesthetic: 'Hand-drawn cloth map insert: the printed cloth or paper maps packed inside old fantasy game boxes, pen-drawn mountains, forests and ruins in sepia on creased fabric.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; draw the subject as a pen-drawn landmark or figure on a creased cloth map.
+  color_and_tone: Sepia and dark brown ink on beige cloth.
+  lighting_and_shadow: Soft light on creases and folds, kept consistent across the whole image.
+  texture_and_material: Woven cloth, creases, pen hatching and fraying edges.
+  camera_and_composition: Top-down map filling the card with folds visible.
+  atmosphere_and_mood: Keep the requested mood with nostalgic exploration, kept consistent across the whole image.
+  rendering_and_quality: Clear cartographic drawing with believable cloth, kept consistent across the whole image.
+  creative_brief: "Hand-drawn cloth map insert: the printed cloth or paper maps packed inside old fantasy game boxes, pen-drawn mountains, forests and ruins in sepia on creased fabric. Carry it through creased cloth, sepia pen map, mountains and ruins, fraying edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: creased cloth; sepia pen map; mountains and ruins; fraying edges
+avoidRules:
+  - readable place names
+  - interface text, health bars or menus
+  - existing game characters or logos
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable place names, interface text, health bars or menus, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: classic-rpg-visual-studies
+  categoryName: 6. Classic RPG Visual Studies
+  tags:
+    - curation-v2
+    - classic-rpg-visual-studies
+    - cloth-map
+    - classic-rpg
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: printed cloth game map

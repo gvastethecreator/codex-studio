@@ -119,4 +119,533 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP23-118',
+    name: 'Pre-Raphaelite Jewel Detail',
+    displayName: 'Pre-Raphaelite Jewel Detail',
+    styleAnchors: ['Pre-Raphaelite Jewel Detail', 'jewel-bright revival painting', 'jewel colors'],
+    category: '5. Revival & Storybook Illustration',
+    domain: 'jewel-bright revival painting',
+    negativePrompt:
+      'readable captions or lettering, existing fairy-tale film character designs, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Pre-Raphaelite jewel detail: mid-nineteenth-century revival painting with brilliant jewel colors on white ground, every leaf and flower painted sharp, long-haired figures in medieval dress.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; paint the subject with intense botanical detail and medieval costume in sharp focus everywhere.',
+      color_and_tone: 'Brilliant emerald, ruby, sapphire and copper hair on luminous white ground.',
+      lighting_and_shadow: 'Clear daylight with little shadow, detail everywhere in focus.',
+      texture_and_material: 'Fine glazed oil, crisp leaves, velvet and embroidered hems.',
+      camera_and_composition:
+        'Close vertical figure composition filled with plants, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with intense lyrical longing.',
+      rendering_and_quality:
+        'Hyper-sharp detail with jewel-like saturated color, kept consistent across the whole image.',
+      creative_brief:
+        "Pre-Raphaelite jewel detail: mid-nineteenth-century revival painting with brilliant jewel colors on white ground, every leaf and flower painted sharp, long-haired figures in medieval dress. Carry it through jewel colors, sharp botanical detail, medieval dress, flowing hair. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'jewel colors; sharp botanical detail; medieval dress; flowing hair',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-119',
+    name: 'Toy-Book Flat Color',
+    displayName: 'Toy-Book Flat Color',
+    styleAnchors: ['Toy-Book Flat Color', 'victorian color toy book', 'flat bold color'],
+    category: '5. Revival & Storybook Illustration',
+    domain: 'victorian color toy book',
+    negativePrompt:
+      'readable captions or lettering, existing fairy-tale film character designs, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        "Toy-book flat color: Victorian children's picture books printed from wood blocks in flat bold colors, strong outlines, decorative interiors and nursery-rhyme staging.",
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; stage the subject as a flat bold nursery scene with patterned interiors.',
+      color_and_tone: 'Flat brick red, deep blue, mustard and cream.',
+      lighting_and_shadow:
+        'Flat color areas with minimal black shading, kept consistent across the whole image.',
+      texture_and_material:
+        'Wood-engraved black keylines, flat printed color, patterned wallpapers.',
+      camera_and_composition: 'Stage-like interior or garden, figures in a row.',
+      atmosphere_and_mood: 'Keep the requested mood with cheerful decorative order.',
+      rendering_and_quality:
+        'Bold clean flat printing with strong outlines, kept consistent across the whole image.',
+      creative_brief:
+        "Toy-book flat color: Victorian children's picture books printed from wood blocks in flat bold colors, strong outlines, decorative interiors and nursery-rhyme staging. Carry it through flat bold color, black keylines, patterned interiors, nursery staging. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'flat bold color; black keylines; patterned interiors; nursery staging',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-120',
+    name: 'Contraption Ink Drawing',
+    displayName: 'Contraption Ink Drawing',
+    styleAnchors: ['Contraption Ink Drawing', 'absurd machine line drawing', 'absurd machine'],
+    category: '5. Revival & Storybook Illustration',
+    domain: 'absurd machine line drawing',
+    negativePrompt:
+      'readable captions or lettering, existing fairy-tale film character designs, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Contraption ink drawing: Edwardian humorous line drawings of absurdly complicated machines built from string, pulleys, planks and kettles, operated by very serious gentlemen.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; involve the subject in a ridiculously elaborate machine of ropes, pulleys and planks.',
+      color_and_tone: 'Black ink with soft grey wash or pale tint.',
+      lighting_and_shadow:
+        'Light hatching and soft wash shadows, kept consistent across the whole image.',
+      texture_and_material: 'Fine pen line, knotted string, planks and patched fabric.',
+      camera_and_composition: 'Wide view showing the entire contraption and its operators.',
+      atmosphere_and_mood: 'Keep the requested mood with deadpan absurd ingenuity.',
+      rendering_and_quality:
+        'Clear readable mechanism with careful comic detail, kept consistent across the whole image.',
+      creative_brief:
+        "Contraption ink drawing: Edwardian humorous line drawings of absurdly complicated machines built from string, pulleys, planks and kettles, operated by very serious gentlemen. Carry it through absurd machine, pulleys and strings, serious operators, fine pen line. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'absurd machine; pulleys and strings; serious operators; fine pen line',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-121',
+    name: 'Celtic Revival Twilight Plate',
+    displayName: 'Celtic Revival Twilight Plate',
+    styleAnchors: [
+      'Celtic Revival Twilight Plate',
+      'celtic revival book illustration',
+      'jewel patterning',
+    ],
+    category: '5. Revival & Storybook Illustration',
+    domain: 'celtic revival book illustration',
+    negativePrompt:
+      'readable captions or lettering, existing fairy-tale film character designs, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Celtic revival twilight plate: early twentieth-century illustration of Irish legend, intricate jewel-like patterning, elongated pale figures, peacock blues and shadowy twilight.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject as elongated pale figures wrapped in intricate jewel-patterned clothing.',
+      color_and_tone: 'Peacock blue, deep violet, emerald and pale gold with inky blacks.',
+      lighting_and_shadow: 'Dim twilight glow with pale faces lit from within.',
+      texture_and_material: 'Dense decorative patterning like stained glass and beadwork.',
+      camera_and_composition: 'Tall figures filling a vertical plate among patterned shapes.',
+      atmosphere_and_mood: 'Keep the requested mood with eerie haunted romanticism.',
+      rendering_and_quality:
+        'Obsessively detailed patterns with clear pale figures, kept consistent across the whole image.',
+      creative_brief:
+        "Celtic revival twilight plate: early twentieth-century illustration of Irish legend, intricate jewel-like patterning, elongated pale figures, peacock blues and shadowy twilight. Carry it through jewel patterning, elongated pale figures, peacock blue, twilight glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'jewel patterning; elongated pale figures; peacock blue; twilight glow',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-122',
+    name: 'Victorian Fairy Painting',
+    displayName: 'Victorian Fairy Painting',
+    styleAnchors: ['Victorian Fairy Painting', 'minute victorian fairy scenes', 'tiny winged folk'],
+    category: '5. Revival & Storybook Illustration',
+    domain: 'minute victorian fairy scenes',
+    negativePrompt:
+      'readable captions or lettering, existing fairy-tale film character designs, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Victorian fairy painting: obsessively detailed paintings of tiny winged folk in grass and flowers, crowded scenes of fairy courts, feasts and quarrels at mouse scale.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; shrink the subject to fairy scale among giant grass blades, mushrooms and petals.',
+      color_and_tone:
+        'Twilight greens, moonlit silver, glowing fairy gold, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Soft moonlight and small magical glows, kept consistent across the whole image.',
+      texture_and_material: 'Fine oil detail, dewdrops, gauzy wings and petals.',
+      camera_and_composition:
+        'Low ground-level view crowded with tiny figures, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with uncanny miniature enchantment.',
+      rendering_and_quality:
+        'Crowded meticulous detail with readable focal figures, kept consistent across the whole image.',
+      creative_brief:
+        "Victorian fairy painting: obsessively detailed paintings of tiny winged folk in grass and flowers, crowded scenes of fairy courts, feasts and quarrels at mouse scale. Carry it through tiny winged folk, giant grass, crowded court, moonlit glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'tiny winged folk; giant grass; crowded court; moonlit glow',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-123',
+    name: 'Gilt Deco Fairy Plate',
+    displayName: 'Gilt Deco Fairy Plate',
+    styleAnchors: [
+      'Gilt Deco Fairy Plate',
+      'luxurious stenciled deco fairy plate',
+      'gold outlines',
+    ],
+    category: '5. Revival & Storybook Illustration',
+    domain: 'luxurious stenciled deco fairy plate',
+    negativePrompt:
+      'readable captions or lettering, existing fairy-tale film character designs, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Gilt deco fairy plate: luxurious 1910s gift-book plates with stenciled jewel colors, gold outlines, exotic palaces and fantastic creatures in stylized deco elegance.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject in elegant stylized shapes outlined in gold with stenciled color.',
+      color_and_tone: 'Deep turquoise, saffron, rose and black with gold outlines.',
+      lighting_and_shadow:
+        'Flat stylized with gentle glow, kept consistent across the whole image.',
+      texture_and_material: 'Stenciled pigment, gold ink lines and soft paper.',
+      camera_and_composition: 'Elegant centered figure framed by stylized palace forms.',
+      atmosphere_and_mood: 'Keep the requested mood with opulent dreamy luxury.',
+      rendering_and_quality:
+        'Crisp elegant shapes with rich flat color, kept consistent across the whole image.',
+      creative_brief:
+        "Gilt deco fairy plate: luxurious 1910s gift-book plates with stenciled jewel colors, gold outlines, exotic palaces and fantastic creatures in stylized deco elegance. Carry it through gold outlines, stenciled jewel color, stylized palaces, deco elegance. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'gold outlines; stenciled jewel color; stylized palaces; deco elegance',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-124',
+    name: 'Slavic Folktale Ornament Frame',
+    displayName: 'Slavic Folktale Ornament Frame',
+    styleAnchors: [
+      'Slavic Folktale Ornament Frame',
+      'russian folktale book illustration',
+      'ornamental folk border',
+    ],
+    category: '5. Revival & Storybook Illustration',
+    domain: 'russian folktale book illustration',
+    negativePrompt:
+      'readable captions or lettering, existing fairy-tale film character designs, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Slavic folktale ornament frame: early twentieth-century folk-tale illustration with firm ink outlines, flat watercolor, birch-bark and embroidered borders framing each scene.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; frame the subject with ornamental folk borders of birch, flowers and carved wood.',
+      color_and_tone: 'Rich red, forest green, gold and snow white flat washes.',
+      lighting_and_shadow: 'Flat with light wash shading, kept consistent across the whole image.',
+      texture_and_material: 'Firm ink outline, flat watercolor, embroidered and carved motifs.',
+      camera_and_composition: 'Scene inside a decorative border frame with corner motifs.',
+      atmosphere_and_mood: 'Keep the requested mood with folk-tale wonder and menace.',
+      rendering_and_quality: 'Clear outline and flat color with rich ornament.',
+      creative_brief:
+        "Slavic folktale ornament frame: early twentieth-century folk-tale illustration with firm ink outlines, flat watercolor, birch-bark and embroidered borders framing each scene. Carry it through ornamental folk border, ink outline, flat watercolor, birch and flowers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'ornamental folk border; ink outline; flat watercolor; birch and flowers',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-125',
+    name: 'Mossy Troll Forest Watercolor',
+    displayName: 'Mossy Troll Forest Watercolor',
+    styleAnchors: [
+      'Mossy Troll Forest Watercolor',
+      'nordic troll forest illustration',
+      'moss-covered giants',
+    ],
+    category: '5. Revival & Storybook Illustration',
+    domain: 'nordic troll forest illustration',
+    negativePrompt:
+      'readable captions or lettering, existing fairy-tale film character designs, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Mossy troll forest watercolor: Nordic folk-tale illustration with huge moss-covered trolls in misty pine forests, muted earthy watercolor and tiny human figures.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; place huge mossy troll-like forms in a misty pine forest with tiny figures for scale.',
+      color_and_tone: 'Moss green, bark brown, fog grey and pale birch white.',
+      lighting_and_shadow:
+        'Soft diffuse forest light and mist, kept consistent across the whole image.',
+      texture_and_material: 'Muted watercolor washes, pencil lines and mossy textures.',
+      camera_and_composition: 'Towering forms among pines with small travelers below.',
+      atmosphere_and_mood: 'Keep the requested mood with ancient quiet wilderness.',
+      rendering_and_quality:
+        'Soft atmospheric wash with clear scale contrast, kept consistent across the whole image.',
+      creative_brief:
+        "Mossy troll forest watercolor: Nordic folk-tale illustration with huge moss-covered trolls in misty pine forests, muted earthy watercolor and tiny human figures. Carry it through moss-covered giants, misty pines, tiny travelers, muted watercolor. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'moss-covered giants; misty pines; tiny travelers; muted watercolor',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-126',
+    name: 'Decadent Black-Line Illustration',
+    displayName: 'Decadent Black-Line Illustration',
+    styleAnchors: [
+      'Decadent Black-Line Illustration',
+      'fin-de-siècle black ink illustration',
+      'pure black masses',
+    ],
+    category: '5. Revival & Storybook Illustration',
+    domain: 'fin-de-siècle black ink illustration',
+    negativePrompt:
+      'gray tones, readable captions or lettering, existing fairy-tale film character designs, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Decadent black-line illustration: fin-de-siècle pen drawing of pure black masses and fine hairlines, sinuous figures, peacock patterns and elegant sinister wit.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject in stark black shapes and hairline detail with sinuous elegance.',
+      color_and_tone:
+        'Pure black ink and white paper only, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'No gradation; black and white masses only, kept consistent across the whole image.',
+      texture_and_material: 'Solid black fills, hairlines, dotted patterns and white space.',
+      camera_and_composition: 'Tall asymmetric composition with vast black or white areas.',
+      atmosphere_and_mood: 'Keep the requested mood with sly decadent menace.',
+      rendering_and_quality:
+        'Precise elegant line with dramatic black masses, kept consistent across the whole image.',
+      creative_brief:
+        "Decadent black-line illustration: fin-de-siècle pen drawing of pure black masses and fine hairlines, sinuous figures, peacock patterns and elegant sinister wit. Carry it through pure black masses, hairlines, peacock patterns, sinuous figures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'pure black masses; hairlines; peacock patterns; sinuous figures',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-127',
+    name: 'Victorian Revival Illumination',
+    displayName: 'Victorian Revival Illumination',
+    styleAnchors: [
+      'Victorian Revival Illumination',
+      'nineteenth-century neo-gothic illumination',
+      'neo-gothic border',
+    ],
+    category: '5. Revival & Storybook Illustration',
+    domain: 'nineteenth-century neo-gothic illumination',
+    negativePrompt:
+      'readable script, readable captions or lettering, existing fairy-tale film character designs, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Victorian revival illumination: nineteenth-century chromolithographed imitations of medieval illumination, too perfect and too bright, with crisp gold, geometric borders and saturated color.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; frame the subject in immaculate neo-gothic borders printed in saturated color.',
+      color_and_tone: 'Saturated crimson, ultramarine, emerald and bright printed gold.',
+      lighting_and_shadow:
+        'Flat with slight printed modeling, kept consistent across the whole image.',
+      texture_and_material:
+        'Chromolithograph ink, printed gold and smooth paper, kept consistent across the whole image.',
+      camera_and_composition:
+        'Central panel with elaborate symmetric borders, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with earnest Victorian grandeur.',
+      rendering_and_quality:
+        'Crisp mechanical perfection of revival ornament, kept consistent across the whole image.',
+      creative_brief:
+        "Victorian revival illumination: nineteenth-century chromolithographed imitations of medieval illumination, too perfect and too bright, with crisp gold, geometric borders and saturated color. Carry it through neo-gothic border, saturated chromolithograph, printed gold, symmetry. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'neo-gothic border; saturated chromolithograph; printed gold; symmetry',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-128',
+    name: 'Troubadour Romance Painting',
+    displayName: 'Troubadour Romance Painting',
+    styleAnchors: [
+      'Troubadour Romance Painting',
+      'romantic medieval genre painting',
+      'gothic interior',
+    ],
+    category: '5. Revival & Storybook Illustration',
+    domain: 'romantic medieval genre painting',
+    negativePrompt:
+      'readable captions or lettering, existing fairy-tale film character designs, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Troubadour romance painting: early nineteenth-century French painting of intimate medieval anecdotes, polished surfaces, gothic interiors and sentimental costumed moments.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; stage the subject as an intimate sentimental moment in a polished gothic interior.',
+      color_and_tone: 'Warm browns, deep reds and cool light through gothic windows.',
+      lighting_and_shadow:
+        'Soft window light with polished glowing surfaces, kept consistent across the whole image.',
+      texture_and_material: 'Smooth porcelain-like oil finish, velvet and carved wood.',
+      camera_and_composition: 'Small cabinet-scale interior with figures near a window.',
+      atmosphere_and_mood: 'Keep the requested mood with tender romantic nostalgia.',
+      rendering_and_quality:
+        'Polished smooth finish with careful costume detail, kept consistent across the whole image.',
+      creative_brief:
+        "Troubadour romance painting: early nineteenth-century French painting of intimate medieval anecdotes, polished surfaces, gothic interiors and sentimental costumed moments. Carry it through gothic interior, window light, polished finish, sentimental anecdote. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'gothic interior; window light; polished finish; sentimental anecdote',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-129',
+    name: 'Tapestry Cartoon Drawing',
+    displayName: 'Tapestry Cartoon Drawing',
+    styleAnchors: [
+      'Tapestry Cartoon Drawing',
+      'full-size design drawing for weaving',
+      'squaring grid',
+    ],
+    category: '5. Revival & Storybook Illustration',
+    domain: 'full-size design drawing for weaving',
+    negativePrompt:
+      'readable color notes, readable captions or lettering, existing fairy-tale film character designs, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Tapestry cartoon drawing: large arts-and-crafts design drawings for tapestry and stained glass, chalk and wash figures in medieval dress, flat decorative foliage and squared-up grids.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; draw the subject as a large flat decorative design with faint squaring grid.',
+      color_and_tone: 'Muted chalk tones, sepia wash and touches of color notation.',
+      lighting_and_shadow:
+        'Flat with light chalk modeling, kept consistent across the whole image.',
+      texture_and_material: 'Chalk, wash, visible grid lines and joined paper sheets.',
+      camera_and_composition:
+        'Large frontal composition with dense foliage background, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with calm craftsman ideals.',
+      rendering_and_quality:
+        'Clear design drawing with visible working marks, kept consistent across the whole image.',
+      creative_brief:
+        "Tapestry cartoon drawing: large arts-and-crafts design drawings for tapestry and stained glass, chalk and wash figures in medieval dress, flat decorative foliage and squared-up grids. Carry it through squaring grid, chalk and wash, flat foliage, medieval dress. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'squaring grid; chalk and wash; flat foliage; medieval dress',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-130',
+    name: 'Golden Age Gift-Book Plate',
+    displayName: 'Golden Age Gift-Book Plate',
+    styleAnchors: [
+      'Golden Age Gift-Book Plate',
+      'tipped-in color plate illustration',
+      'tipped-in plate',
+    ],
+    category: '5. Revival & Storybook Illustration',
+    domain: 'tipped-in color plate illustration',
+    negativePrompt:
+      'readable captions, readable captions or lettering, existing fairy-tale film character designs, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Golden age gift-book plate: tipped-in color plates from lavish 1900s illustrated books, soft muted watercolor over fine ink, cream margins and tissue-guard atmosphere.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; paint the subject as a single full-page plate with soft muted color over ink.',
+      color_and_tone: 'Muted sepia, olive, dusty rose and soft sky blue.',
+      lighting_and_shadow:
+        'Soft diffuse light with gentle washes, kept consistent across the whole image.',
+      texture_and_material: 'Fine ink, soft watercolor, cream paper and plate mount.',
+      camera_and_composition: 'Single plate mounted on a cream page with margin.',
+      atmosphere_and_mood: 'Keep the requested mood with nostalgic enchanted calm.',
+      rendering_and_quality:
+        'Delicate refined plate with muted harmony, kept consistent across the whole image.',
+      creative_brief:
+        "Golden age gift-book plate: tipped-in color plates from lavish 1900s illustrated books, soft muted watercolor over fine ink, cream margins and tissue-guard atmosphere. Carry it through tipped-in plate, muted watercolor, fine ink, cream margins. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'tipped-in plate; muted watercolor; fine ink; cream margins',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-131',
+    name: 'Wood-Engraved Revival Vignette',
+    displayName: 'Wood-Engraved Revival Vignette',
+    styleAnchors: [
+      'Wood-Engraved Revival Vignette',
+      'victorian wood-engraved vignette',
+      'end-grain engraving',
+    ],
+    category: '5. Revival & Storybook Illustration',
+    domain: 'victorian wood-engraved vignette',
+    negativePrompt:
+      'readable captions or lettering, existing fairy-tale film character designs, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Wood-engraved revival vignette: small Victorian end-grain wood engravings of country life, animals and legends with fine tonal lines fading into white paper.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; engrave the subject as a small vignette fading softly at its edges.',
+      color_and_tone: 'Black ink tones from deep black to fine silver grey.',
+      lighting_and_shadow: 'Tonal engraving with fine white lines for light.',
+      texture_and_material: 'End-grain engraving, fine tint lines and soft white edges.',
+      camera_and_composition: 'Small vignette with no border, fading into the page.',
+      atmosphere_and_mood: 'Keep the requested mood with quiet rustic observation.',
+      rendering_and_quality:
+        'Precise tonal engraving with gentle fade, kept consistent across the whole image.',
+      creative_brief:
+        "Wood-engraved revival vignette: small Victorian end-grain wood engravings of country life, animals and legends with fine tonal lines fading into white paper. Carry it through end-grain engraving, fading vignette edge, fine tint lines, rustic detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'end-grain engraving; fading vignette edge; fine tint lines; rustic detail',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-132',
+    name: 'Nursery Frieze Procession',
+    displayName: 'Nursery Frieze Procession',
+    styleAnchors: [
+      'Nursery Frieze Procession',
+      'edwardian nursery wall frieze',
+      'horizontal procession',
+    ],
+    category: '5. Revival & Storybook Illustration',
+    domain: 'edwardian nursery wall frieze',
+    negativePrompt:
+      'readable captions or lettering, existing fairy-tale film character designs, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Nursery frieze procession: long Edwardian nursery wallpaper friezes with repeating processions of animals, soldiers and storybook characters in soft flat color.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; arrange the subject into a long repeating procession along a horizontal band.',
+      color_and_tone: 'Soft flat pastels, cream ground and gentle outlines.',
+      lighting_and_shadow: 'Flat with no shadow, kept consistent across the whole image.',
+      texture_and_material: 'Printed wallpaper paper, soft outlines and repeat seams.',
+      camera_and_composition:
+        'Long horizontal band with evenly spaced figures, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with gentle childhood rhythm.',
+      rendering_and_quality:
+        'Clean repeating design with charming figures, kept consistent across the whole image.',
+      creative_brief:
+        "Nursery frieze procession: long Edwardian nursery wallpaper friezes with repeating processions of animals, soldiers and storybook characters in soft flat color. Carry it through horizontal procession, repeating figures, soft pastels, wallpaper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'horizontal procession; repeating figures; soft pastels; wallpaper',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-133',
+    name: 'Chapbook Woodcut Tale',
+    displayName: 'Chapbook Woodcut Tale',
+    styleAnchors: ['Chapbook Woodcut Tale', 'cheap popular chapbook print', 'crude woodcut'],
+    category: '5. Revival & Storybook Illustration',
+    domain: 'cheap popular chapbook print',
+    negativePrompt:
+      'readable captions or lettering, existing fairy-tale film character designs, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Chapbook woodcut tale: crude cheap woodcuts from pocket-sized popular story pamphlets sold by peddlers, reused blocks, heavy ink and bold simple figures.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; cut the subject in crude bold woodcut shapes with naive proportions.',
+      color_and_tone:
+        'Heavy black ink on rough grey-brown paper, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Crude hatching and solid black areas, kept consistent across the whole image.',
+      texture_and_material: 'Worn cracked blocks, uneven inking and cheap paper.',
+      camera_and_composition:
+        'Small framed picture with one clear action, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with rowdy popular storytelling.',
+      rendering_and_quality:
+        'Crude charm with worn block cracks, kept consistent across the whole image.',
+      creative_brief:
+        "Chapbook woodcut tale: crude cheap woodcuts from pocket-sized popular story pamphlets sold by peddlers, reused blocks, heavy ink and bold simple figures. Carry it through crude woodcut, worn block cracks, cheap paper, naive figures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'crude woodcut; worn block cracks; cheap paper; naive figures',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP23-152
+packId: pack_23
+name: Ordered Bayer Dither Field
+styleAnchors:
+  - Ordered Bayer Dither Field
+  - regular matrix dithering
+  - ordered dither matrix
+displayName: Ordered Bayer Dither Field
+category: 7. Indexed Raster Language
+domain: regular matrix dithering
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - indexed-raster-language
+  - bayer-dither
+  - indexed-pixel
+  - portable-style-study
+visualDna:
+  aesthetic: 'Ordered Bayer dither field: gradients built from a regular crosshatch matrix of pixels, mechanical and even, turning skies, fog and glow into precise patterned fields.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; build gradients and atmosphere around the subject from even ordered dither.
+  color_and_tone: A few flat colors mixed through regular dither patterns.
+  lighting_and_shadow: Soft light represented by dither density, kept consistent across the whole image.
+  texture_and_material: Regular matrix patterns, crisp pixels and flat areas.
+  camera_and_composition: Large gradient areas where the dither can show.
+  atmosphere_and_mood: Keep the requested mood with cool mechanical beauty.
+  rendering_and_quality: Precise regular dithering without random noise, kept consistent across the whole image.
+  creative_brief: "Ordered Bayer dither field: gradients built from a regular crosshatch matrix of pixels, mechanical and even, turning skies, fog and glow into precise patterned fields. Carry it through ordered dither matrix, gradient fields, few colors, crisp pixels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: ordered dither matrix; gradient fields; few colors; crisp pixels
+avoidRules:
+  - random noise dither
+  - blurry upscaled pixels
+  - interface or HUD
+  - existing game sprites
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: random noise dither, blurry upscaled pixels, interface or HUD, existing game sprites, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: indexed-raster-language
+  categoryName: 7. Indexed Raster Language
+  tags:
+    - curation-v2
+    - indexed-raster-language
+    - bayer-dither
+    - indexed-pixel
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: regular matrix dithering

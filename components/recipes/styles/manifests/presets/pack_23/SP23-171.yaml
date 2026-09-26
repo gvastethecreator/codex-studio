@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP23-171
+packId: pack_23
+name: Vertex-Colored Low Poly
+styleAnchors:
+  - Vertex-Colored Low Poly
+  - untextured vertex color models
+  - vertex colors
+displayName: Vertex-Colored Low Poly
+category: 8. Retro 3D Visual Studies
+domain: untextured vertex color models
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - retro-3d-visual-studies
+  - vertex-color
+  - retro-3d
+  - portable-style-study
+visualDna:
+  aesthetic: 'Vertex-colored low poly: early 3D models with no textures at all, color painted directly on vertices so gradients blend across big simple polygons.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; render the subject with simple polygons colored only by blended vertex colors.
+  color_and_tone: Soft blended gradients across large polygons, kept consistent across the whole image.
+  lighting_and_shadow: Baked vertex shading with no real shadows, kept consistent across the whole image.
+  texture_and_material: No textures, visible polygon edges and color blends.
+  camera_and_composition: Clean composition of simple models, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with soft minimal dream.
+  rendering_and_quality: Clean low poly with smooth color gradients, kept consistent across the whole image.
+  creative_brief: "Vertex-colored low poly: early 3D models with no textures at all, color painted directly on vertices so gradients blend across big simple polygons. Carry it through vertex colors, no textures, blended gradients, low poly. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: vertex colors; no textures; blended gradients; low poly
+avoidRules:
+  - textures
+  - modern high-poly rendering
+  - interface or HUD
+  - existing game characters or logos
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: textures, modern high-poly rendering, interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: retro-3d-visual-studies
+  categoryName: 8. Retro 3D Visual Studies
+  tags:
+    - curation-v2
+    - retro-3d-visual-studies
+    - vertex-color
+    - retro-3d
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: untextured vertex color models

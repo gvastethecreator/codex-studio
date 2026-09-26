@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-138
+packId: pack_23
+name: Dialogue Portrait Bust
+styleAnchors:
+  - Dialogue Portrait Bust
+  - character dialogue portrait
+  - framed bust
+displayName: Dialogue Portrait Bust
+category: 6. Classic RPG Visual Studies
+domain: character dialogue portrait
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - classic-rpg-visual-studies
+  - dialogue-portrait
+  - classic-rpg
+  - portable-style-study
+visualDna:
+  aesthetic: 'Dialogue portrait bust: a framed head-and-shoulders character portrait of the kind that appears beside dialogue in classic RPGs, expressive face, painterly pixel detail and a plain backdrop.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject as a head-and-shoulders portrait with one clear expression.
+  color_and_tone: Rich skin and costume colors on a plain dark backdrop.
+  lighting_and_shadow: Soft key light with pixel-level shading, kept consistent across the whole image.
+  texture_and_material: Careful pixel painting, hair clusters and cloth folds.
+  camera_and_composition: Square framed bust facing slightly sideways, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with strong personal character.
+  rendering_and_quality: Expressive detailed portrait with no dialogue box, kept consistent across the whole image.
+  creative_brief: "Dialogue portrait bust: a framed head-and-shoulders character portrait of the kind that appears beside dialogue in classic RPGs, expressive face, painterly pixel detail and a plain backdrop. Carry it through framed bust, single expression, painterly pixels, plain backdrop. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: framed bust; single expression; painterly pixels; plain backdrop
+avoidRules:
+  - dialogue box text
+  - interface text, health bars or menus
+  - existing game characters or logos
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: dialogue box text, interface text, health bars or menus, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: classic-rpg-visual-studies
+  categoryName: 6. Classic RPG Visual Studies
+  tags:
+    - curation-v2
+    - classic-rpg-visual-studies
+    - dialogue-portrait
+    - classic-rpg
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: character dialogue portrait

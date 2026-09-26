@@ -90,4 +90,576 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP23-166',
+    name: 'Clay-Scanned Early CGI Creature',
+    displayName: 'Clay-Scanned Early CGI Creature',
+    styleAnchors: [
+      'Clay-Scanned Early CGI Creature',
+      'digitized clay model cgi',
+      'scanned clay creature',
+    ],
+    category: '8. Retro 3D Visual Studies',
+    domain: 'digitized clay model cgi',
+    negativePrompt:
+      'modern high-poly rendering, interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Clay-scanned early CGI creature: early nineties computer creatures scanned from sculpted clay maquettes, glossy plasticky shading, low polygon smoothing and simple ray-traced shadows.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject as an early CGI model built from a scanned clay sculpture.',
+      color_and_tone:
+        'Saturated plasticky colors with glossy white highlights, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Hard ray-traced shadows and simple point lights, kept consistent across the whole image.',
+      texture_and_material: 'Smooth faceted surfaces, visible polygon edges and plastic sheen.',
+      camera_and_composition: 'Creature posed on a flat plane or simple background.',
+      atmosphere_and_mood: 'Keep the requested mood with proud early digital wonder.',
+      rendering_and_quality:
+        'Authentic early CGI look with slight faceting, kept consistent across the whole image.',
+      creative_brief:
+        "Clay-scanned early CGI creature: early nineties computer creatures scanned from sculpted clay maquettes, glossy plasticky shading, low polygon smoothing and simple ray-traced shadows. Carry it through scanned clay creature, plastic sheen, hard shadows, faceted smoothing. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'scanned clay creature; plastic sheen; hard shadows; faceted smoothing',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-167',
+    name: 'Gouraud-Shaded Primitives',
+    displayName: 'Gouraud-Shaded Primitives',
+    styleAnchors: [
+      'Gouraud-Shaded Primitives',
+      'smooth vertex-shaded simple shapes',
+      'primitive shapes',
+    ],
+    category: '8. Retro 3D Visual Studies',
+    domain: 'smooth vertex-shaded simple shapes',
+    negativePrompt:
+      'modern high-poly rendering, interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Gouraud-shaded primitives: early 3D built from simple spheres, cones and cylinders with smooth vertex-interpolated shading and telltale soft polygon edges.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; build the subject from simple smooth-shaded primitive shapes.',
+      color_and_tone:
+        'Flat saturated colors with smooth gradient shading, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Single light with smooth interpolated gradients, kept consistent across the whole image.',
+      texture_and_material:
+        'Untextured surfaces and slightly jagged silhouettes, kept consistent across the whole image.',
+      camera_and_composition:
+        'Simple arrangement on a flat ground plane, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with naive geometric charm.',
+      rendering_and_quality: 'Clean early 3D with visible faceted silhouette edges.',
+      creative_brief:
+        "Gouraud-shaded primitives: early 3D built from simple spheres, cones and cylinders with smooth vertex-interpolated shading and telltale soft polygon edges. Carry it through primitive shapes, smooth vertex shading, untextured, faceted edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'primitive shapes; smooth vertex shading; untextured; faceted edges',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-168',
+    name: 'Billboard Sprite 3D Space',
+    displayName: 'Billboard Sprite 3D Space',
+    styleAnchors: [
+      'Billboard Sprite 3D Space',
+      'flat sprites in 3d world',
+      'camera-facing sprites',
+    ],
+    category: '8. Retro 3D Visual Studies',
+    domain: 'flat sprites in 3d world',
+    negativePrompt:
+      'modern high-poly rendering, interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Billboard sprite 3D space: flat two-dimensional sprites of trees, monsters and items that always face the camera, standing in a simple textured 3D world.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject as a flat sprite that faces the camera inside a 3D space.',
+      color_and_tone: 'Pixelated sprites over darker textured walls and floors.',
+      lighting_and_shadow: 'Sector lighting; sprites not lit by the scene.',
+      texture_and_material: 'Flat pixel sprites, tiled wall textures and floor grids.',
+      camera_and_composition: 'First-person or low view with sprites facing the camera.',
+      atmosphere_and_mood: 'Keep the requested mood with uncanny flat presence.',
+      rendering_and_quality: 'Authentic sprite-in-3D look, kept consistent across the whole image.',
+      creative_brief:
+        "Billboard sprite 3D space: flat two-dimensional sprites of trees, monsters and items that always face the camera, standing in a simple textured 3D world. Carry it through camera-facing sprites, textured 3D rooms, pixel monsters, flat trees. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'camera-facing sprites; textured 3D rooms; pixel monsters; flat trees',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-169',
+    name: 'Raycast Corridor Render',
+    displayName: 'Raycast Corridor Render',
+    styleAnchors: [
+      'Raycast Corridor Render',
+      'early raycast maze graphics',
+      'vertical wall slices',
+    ],
+    category: '8. Retro 3D Visual Studies',
+    domain: 'early raycast maze graphics',
+    negativePrompt:
+      'modern high-poly rendering, interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Raycast corridor render: early first-person maze graphics where walls are vertical textured slices, floors and ceilings are flat colors and every room is a right-angle grid.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; place the subject in a right-angle maze of vertical textured wall slices.',
+      color_and_tone: 'Flat grey floor and ceiling, textured walls in muted colors.',
+      lighting_and_shadow: 'Alternating wall brightness for faces of the grid.',
+      texture_and_material: 'Stretched pixel wall textures and flat untextured floors.',
+      camera_and_composition:
+        'Eye-level first-person corridor on a grid, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with tense maze claustrophobia.',
+      rendering_and_quality:
+        'Authentic early raycast look without modern effects, kept consistent across the whole image.',
+      creative_brief:
+        "Raycast corridor render: early first-person maze graphics where walls are vertical textured slices, floors and ceilings are flat colors and every room is a right-angle grid. Carry it through vertical wall slices, flat floors, right-angle maze, eye level. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'vertical wall slices; flat floors; right-angle maze; eye level',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-170',
+    name: 'Draw-Distance Fog World',
+    displayName: 'Draw-Distance Fog World',
+    styleAnchors: ['Draw-Distance Fog World', 'fog hiding short draw distance', 'thick flat fog'],
+    category: '8. Retro 3D Visual Studies',
+    domain: 'fog hiding short draw distance',
+    negativePrompt:
+      'modern high-poly rendering, interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Draw-distance fog world: early 3D worlds wrapped in thick colored fog that hides how little could be drawn, objects popping out of the haze a few steps away.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; surround the subject with thick flat fog that swallows everything beyond a short distance.',
+      color_and_tone: 'Flat fog color such as grey-green, purple or orange.',
+      lighting_and_shadow:
+        'Flat ambient light fading into fog color, kept consistent across the whole image.',
+      texture_and_material:
+        'Low-res textures fading into solid fog, kept consistent across the whole image.',
+      camera_and_composition: 'Near objects clear, distance a flat wall of fog.',
+      atmosphere_and_mood: 'Keep the requested mood with lonely unseen menace.',
+      rendering_and_quality: 'Hard fog falloff with objects popping into view.',
+      creative_brief:
+        "Draw-distance fog world: early 3D worlds wrapped in thick colored fog that hides how little could be drawn, objects popping out of the haze a few steps away. Carry it through thick flat fog, short view distance, popping objects, low-res textures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'thick flat fog; short view distance; popping objects; low-res textures',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-171',
+    name: 'Vertex-Colored Low Poly',
+    displayName: 'Vertex-Colored Low Poly',
+    styleAnchors: ['Vertex-Colored Low Poly', 'untextured vertex color models', 'vertex colors'],
+    category: '8. Retro 3D Visual Studies',
+    domain: 'untextured vertex color models',
+    negativePrompt:
+      'textures, modern high-poly rendering, interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Vertex-colored low poly: early 3D models with no textures at all, color painted directly on vertices so gradients blend across big simple polygons.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject with simple polygons colored only by blended vertex colors.',
+      color_and_tone:
+        'Soft blended gradients across large polygons, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Baked vertex shading with no real shadows, kept consistent across the whole image.',
+      texture_and_material: 'No textures, visible polygon edges and color blends.',
+      camera_and_composition:
+        'Clean composition of simple models, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with soft minimal dream.',
+      rendering_and_quality:
+        'Clean low poly with smooth color gradients, kept consistent across the whole image.',
+      creative_brief:
+        "Vertex-colored low poly: early 3D models with no textures at all, color painted directly on vertices so gradients blend across big simple polygons. Carry it through vertex colors, no textures, blended gradients, low poly. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'vertex colors; no textures; blended gradients; low poly',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-172',
+    name: 'Filtered Blurry Texture 3D',
+    displayName: 'Filtered Blurry Texture 3D',
+    styleAnchors: [
+      'Filtered Blurry Texture 3D',
+      'bilinear smeared texture console 3d',
+      'smeared textures',
+    ],
+    category: '8. Retro 3D Visual Studies',
+    domain: 'bilinear smeared texture console 3d',
+    negativePrompt:
+      'modern high-poly rendering, interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Filtered blurry texture 3D: late-nineties console 3D with small textures stretched and smoothed into soft smeared blurs, round cartoon forms and bright colors.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject with soft smeared low-res textures on rounded low-poly forms.',
+      color_and_tone:
+        'Bright saturated colors softened by blur, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Simple lighting and round blob shadows, kept consistent across the whole image.',
+      texture_and_material: 'Smeared blurry textures, rounded polygons and soft edges.',
+      camera_and_composition:
+        'Third-person camera behind or beside the character, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with bright nostalgic playfulness.',
+      rendering_and_quality:
+        'Authentic soft filtered look, kept consistent across the whole image.',
+      creative_brief:
+        "Filtered blurry texture 3D: late-nineties console 3D with small textures stretched and smoothed into soft smeared blurs, round cartoon forms and bright colors. Carry it through smeared textures, bright colors, blob shadows, rounded low poly. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'smeared textures; bright colors; blob shadows; rounded low poly',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-173',
+    name: 'Chrome Spheres on Checkerboard',
+    displayName: 'Chrome Spheres on Checkerboard',
+    styleAnchors: [
+      'Chrome Spheres on Checkerboard',
+      'classic ray-traced demo scene',
+      'chrome spheres',
+    ],
+    category: '8. Retro 3D Visual Studies',
+    domain: 'classic ray-traced demo scene',
+    negativePrompt:
+      'modern high-poly rendering, interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Chrome spheres on checkerboard: the classic early ray-tracing demo scene, perfect mirrored spheres floating over an infinite checkerboard under a gradient sky.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; place the subject among perfect chrome reflections on an infinite checkerboard.',
+      color_and_tone: 'Red and white or black and white checkers, blue gradient sky.',
+      lighting_and_shadow:
+        'Sharp ray-traced shadows and perfect reflections, kept consistent across the whole image.',
+      texture_and_material: 'Mirror chrome, glass spheres and a crisp tile plane.',
+      camera_and_composition: 'Low camera over an infinite checkerboard to the horizon.',
+      atmosphere_and_mood: 'Keep the requested mood with early digital wonder.',
+      rendering_and_quality:
+        'Crisp perfect reflections with aliased edges, kept consistent across the whole image.',
+      creative_brief:
+        "Chrome spheres on checkerboard: the classic early ray-tracing demo scene, perfect mirrored spheres floating over an infinite checkerboard under a gradient sky. Carry it through chrome spheres, infinite checkerboard, gradient sky, sharp shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'chrome spheres; infinite checkerboard; gradient sky; sharp shadows',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-174',
+    name: 'Voxel Heightmap Landscape',
+    displayName: 'Voxel Heightmap Landscape',
+    styleAnchors: [
+      'Voxel Heightmap Landscape',
+      'early voxel terrain renderer',
+      'pixel column terrain',
+    ],
+    category: '8. Retro 3D Visual Studies',
+    domain: 'early voxel terrain renderer',
+    negativePrompt:
+      'modern high-poly rendering, interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Voxel heightmap landscape: early terrain engines that drew hills from columns of colored pixels, rolling blocky landscapes stretching to a fogged horizon.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; set the subject over rolling terrain built from pixel columns.',
+      color_and_tone: 'Earthy greens, browns and a hazy blue horizon.',
+      lighting_and_shadow: 'Baked slope shading and haze, kept consistent across the whole image.',
+      texture_and_material:
+        'Pixel-column terrain, jagged ridges and flat sky, kept consistent across the whole image.',
+      camera_and_composition: 'Low flying view over hills to the horizon.',
+      atmosphere_and_mood: 'Keep the requested mood with vast early freedom.',
+      rendering_and_quality:
+        'Authentic column terrain with blocky ridges, kept consistent across the whole image.',
+      creative_brief:
+        "Voxel heightmap landscape: early terrain engines that drew hills from columns of colored pixels, rolling blocky landscapes stretching to a fogged horizon. Carry it through pixel column terrain, rolling hills, hazy horizon, low flight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'pixel column terrain; rolling hills; hazy horizon; low flight',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-175',
+    name: 'Character-Select Model Pose',
+    displayName: 'Character-Select Model Pose',
+    styleAnchors: ['Character-Select Model Pose', 'turntable character select screen', 'pedestal'],
+    category: '8. Retro 3D Visual Studies',
+    domain: 'turntable character select screen',
+    negativePrompt:
+      'character names or stats, modern high-poly rendering, interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Character-select model pose: a low-poly hero model standing on a small pedestal in an idle pose, lit dramatically against a dark gradient as if waiting to be chosen.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; pose the subject as a low-poly character on a pedestal in an idle stance.',
+      color_and_tone: 'Dark gradient background with a bright spot on the model.',
+      lighting_and_shadow: 'Strong key light and rim light on the model.',
+      texture_and_material: 'Low-poly model, painted textures and a glowing pedestal.',
+      camera_and_composition:
+        'Full-body centered, slightly low angle, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with anticipation and pride.',
+      rendering_and_quality:
+        'Clean low-poly model with dramatic lighting, kept consistent across the whole image.',
+      creative_brief:
+        "Character-select model pose: a low-poly hero model standing on a small pedestal in an idle pose, lit dramatically against a dark gradient as if waiting to be chosen. Carry it through pedestal, idle pose, dark gradient, dramatic spotlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'pedestal; idle pose; dark gradient; dramatic spotlight',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-176',
+    name: 'Bright Early-2000s Console 3D',
+    displayName: 'Bright Early-2000s Console 3D',
+    styleAnchors: ['Bright Early-2000s Console 3D', 'saturated sunny console 3d', 'sunny blue sky'],
+    category: '8. Retro 3D Visual Studies',
+    domain: 'saturated sunny console 3d',
+    negativePrompt:
+      'modern high-poly rendering, interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Bright early-2000s console 3D: sunny saturated worlds with blue skies, clean textures, plain even brightness and cheerful chunky characters in smooth low-poly.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject as a chunky cheerful model in a sunny saturated world.',
+      color_and_tone: 'Sky blue, grass green, sunny yellow and bright white.',
+      lighting_and_shadow:
+        'Bright sun, simple soft shadows, kept consistent across the whole image.',
+      texture_and_material:
+        'Clean medium-res textures and smooth low-poly shapes, kept consistent across the whole image.',
+      camera_and_composition:
+        'Dynamic third-person or wide sunny vista, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with bright optimistic energy.',
+      rendering_and_quality:
+        'Clean crisp early-2000s look, kept consistent across the whole image.',
+      creative_brief:
+        "Bright early-2000s console 3D: sunny saturated worlds with blue skies, clean textures, plain even brightness and cheerful chunky characters in smooth low-poly. Carry it through sunny blue sky, saturated color, chunky characters, clean textures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'sunny blue sky; saturated color; chunky characters; clean textures',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-177',
+    name: 'Untextured Grey-Box Level',
+    displayName: 'Untextured Grey-Box Level',
+    styleAnchors: ['Untextured Grey-Box Level', 'level blockout greybox render', 'grey boxes'],
+    category: '8. Retro 3D Visual Studies',
+    domain: 'level blockout greybox render',
+    negativePrompt:
+      'modern high-poly rendering, interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Untextured grey-box level: a game level in its blockout stage, plain grey boxes and ramps standing in for castles, trees and stairs, with a single placeholder figure.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject as simple grey placeholder shapes in a blockout level.',
+      color_and_tone:
+        'Flat light greys with occasional orange placeholder, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Plain default lighting and soft ambient occlusion, kept consistent across the whole image.',
+      texture_and_material:
+        'Untextured grey surfaces and simple grid lines, kept consistent across the whole image.',
+      camera_and_composition:
+        'Wide view of a blockout level, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with unfinished eerie emptiness.',
+      rendering_and_quality:
+        'Clean untextured blockout look, kept consistent across the whole image.',
+      creative_brief:
+        "Untextured grey-box level: a game level in its blockout stage, plain grey boxes and ramps standing in for castles, trees and stairs, with a single placeholder figure. Carry it through grey boxes, placeholder figure, grid lines, unfinished level. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'grey boxes; placeholder figure; grid lines; unfinished level',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-178',
+    name: 'Scrolling-Texture Water World',
+    displayName: 'Scrolling-Texture Water World',
+    styleAnchors: [
+      'Scrolling-Texture Water World',
+      'early 3d scrolling water surfaces',
+      'looping water texture',
+    ],
+    category: '8. Retro 3D Visual Studies',
+    domain: 'early 3d scrolling water surfaces',
+    negativePrompt:
+      'modern high-poly rendering, interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Scrolling-texture water world: early 3D seas, rivers and waterfalls made of a single looping texture sliding across flat polygons, glossy and hypnotic.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; surround the subject with flat water surfaces covered in a looping scrolling texture.',
+      color_and_tone: 'Saturated turquoise and blue with white foam patterns.',
+      lighting_and_shadow:
+        'Flat bright water with simple highlights, kept consistent across the whole image.',
+      texture_and_material: 'Repeating wave textures, flat water planes and pixel foam.',
+      camera_and_composition:
+        'Wide view of sea, rivers or waterfalls, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with hypnotic looping calm.',
+      rendering_and_quality:
+        'Clean repeating water with visible tiling, kept consistent across the whole image.',
+      creative_brief:
+        "Scrolling-texture water world: early 3D seas, rivers and waterfalls made of a single looping texture sliding across flat polygons, glossy and hypnotic. Carry it through looping water texture, flat planes, waterfall strips, visible tiling. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'looping water texture; flat planes; waterfall strips; visible tiling',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-179',
+    name: 'Sprite-Particle Magic Burst',
+    displayName: 'Sprite-Particle Magic Burst',
+    styleAnchors: [
+      'Sprite-Particle Magic Burst',
+      'early 3d particle sprite effects',
+      'flat sprite particles',
+    ],
+    category: '8. Retro 3D Visual Studies',
+    domain: 'early 3d particle sprite effects',
+    negativePrompt:
+      'modern high-poly rendering, interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Sprite-particle magic burst: early 3D spell and fire effects made from many small flat glowing sprites, stars and rings bursting outward with additive glow.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; surround the subject with bursts of flat glowing sprite particles.',
+      color_and_tone: 'Bright additive magenta, cyan and gold sprites on dark.',
+      lighting_and_shadow:
+        'Glow from particles with flat surroundings, kept consistent across the whole image.',
+      texture_and_material: 'Flat star sprites, rings and sparkles with hard edges.',
+      camera_and_composition:
+        'Dramatic burst centered on the subject, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with flashy magical spectacle.',
+      rendering_and_quality:
+        'Crisp flat sprites layered into glowing bursts, kept consistent across the whole image.',
+      creative_brief:
+        "Sprite-particle magic burst: early 3D spell and fire effects made from many small flat glowing sprites, stars and rings bursting outward with additive glow. Carry it through flat sprite particles, additive glow, star bursts, rings. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'flat sprite particles; additive glow; star bursts; rings',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-180',
+    name: 'Sphere-Mapped Metal Shine',
+    displayName: 'Sphere-Mapped Metal Shine',
+    styleAnchors: [
+      'Sphere-Mapped Metal Shine',
+      'fake environment mapped chrome',
+      'swirling reflection texture',
+    ],
+    category: '8. Retro 3D Visual Studies',
+    domain: 'fake environment mapped chrome',
+    negativePrompt:
+      'modern high-poly rendering, interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Sphere-mapped metal shine: early 3D shiny metal faked with a single swirling reflection texture wrapped over models, liquid and dreamlike rather than accurate.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; wrap the subject in a swirling fake reflection texture like liquid chrome.',
+      color_and_tone:
+        'Swirling silver, blue and gold reflections, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Reflections independent of the scene lighting, kept consistent across the whole image.',
+      texture_and_material:
+        'Swirling environment texture on low-poly metal, kept consistent across the whole image.',
+      camera_and_composition: 'Close view of the shiny model on a simple ground.',
+      atmosphere_and_mood: 'Keep the requested mood with slick dreamy strangeness.',
+      rendering_and_quality:
+        'Authentic sphere-mapped look, not physically accurate, kept consistent across the whole image.',
+      creative_brief:
+        "Sphere-mapped metal shine: early 3D shiny metal faked with a single swirling reflection texture wrapped over models, liquid and dreamlike rather than accurate. Carry it through swirling reflection texture, liquid chrome, low poly, fake shine. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'swirling reflection texture; liquid chrome; low poly; fake shine',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-181',
+    name: 'Nearest-Neighbor Texture Close-Up',
+    displayName: 'Nearest-Neighbor Texture Close-Up',
+    styleAnchors: [
+      'Nearest-Neighbor Texture Close-Up',
+      'unfiltered pixelated 3d textures',
+      'square texels',
+    ],
+    category: '8. Retro 3D Visual Studies',
+    domain: 'unfiltered pixelated 3d textures',
+    negativePrompt:
+      'modern high-poly rendering, interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Nearest-neighbor texture close-up: 3D surfaces seen up close with unfiltered low-res textures, every texel a crisp square block of color on walls, faces and floors.',
+      subject_treatment:
+        "Preserve the requested identity, count, pose and action with original characters; bring the camera close so the subject's textures break into crisp square texels.",
+      color_and_tone:
+        'Muted texture colors as sharp square blocks, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Simple lighting over crisp texel blocks, kept consistent across the whole image.',
+      texture_and_material:
+        'Hard-edged square texels on flat polygons, kept consistent across the whole image.',
+      camera_and_composition:
+        'Extreme close-up where texels become large, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with crunchy tactile nostalgia.',
+      rendering_and_quality:
+        'Crisp unfiltered texels, no smoothing, kept consistent across the whole image.',
+      creative_brief:
+        "Nearest-neighbor texture close-up: 3D surfaces seen up close with unfiltered low-res textures, every texel a crisp square block of color on walls, faces and floors. Carry it through square texels, unfiltered textures, close-up, flat polygons. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'square texels; unfiltered textures; close-up; flat polygons',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-182',
+    name: 'Low-Res Skybox Panorama',
+    displayName: 'Low-Res Skybox Panorama',
+    styleAnchors: ['Low-Res Skybox Panorama', 'early 3d sky cube', 'painted sky cube'],
+    category: '8. Retro 3D Visual Studies',
+    domain: 'early 3d sky cube',
+    negativePrompt:
+      'modern high-poly rendering, interface or HUD, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Low-res skybox panorama: early 3D skies painted on a cube around the world, low-resolution clouds and mountains with faint seams at the corners.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; set the subject under a low-resolution painted sky cube with visible corner seams.',
+      color_and_tone: 'Painted sunset or night gradients with low-res clouds.',
+      lighting_and_shadow:
+        'Sky light not matching the scene exactly, kept consistent across the whole image.',
+      texture_and_material:
+        'Stretched low-res sky textures and visible seams, kept consistent across the whole image.',
+      camera_and_composition: 'Wide view with lots of sky and a small ground.',
+      atmosphere_and_mood: 'Keep the requested mood with lonely vast nostalgia.',
+      rendering_and_quality:
+        'Authentic stretched skybox with seams, kept consistent across the whole image.',
+      creative_brief:
+        "Low-res skybox panorama: early 3D skies painted on a cube around the world, low-resolution clouds and mountains with faint seams at the corners. Carry it through painted sky cube, low-res clouds, corner seams, small ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'painted sky cube; low-res clouds; corner seams; small ground',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP23-131
+packId: pack_23
+name: Wood-Engraved Revival Vignette
+styleAnchors:
+  - Wood-Engraved Revival Vignette
+  - victorian wood-engraved vignette
+  - end-grain engraving
+displayName: Wood-Engraved Revival Vignette
+category: 5. Revival & Storybook Illustration
+domain: victorian wood-engraved vignette
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - revival-and-storybook-illustration
+  - engraved-vignette
+  - storybook-revival
+  - portable-style-study
+visualDna:
+  aesthetic: 'Wood-engraved revival vignette: small Victorian end-grain wood engravings of country life, animals and legends with fine tonal lines fading into white paper.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; engrave the subject as a small vignette fading softly at its edges.
+  color_and_tone: Black ink tones from deep black to fine silver grey.
+  lighting_and_shadow: Tonal engraving with fine white lines for light.
+  texture_and_material: End-grain engraving, fine tint lines and soft white edges.
+  camera_and_composition: Small vignette with no border, fading into the page.
+  atmosphere_and_mood: Keep the requested mood with quiet rustic observation.
+  rendering_and_quality: Precise tonal engraving with gentle fade, kept consistent across the whole image.
+  creative_brief: "Wood-engraved revival vignette: small Victorian end-grain wood engravings of country life, animals and legends with fine tonal lines fading into white paper. Carry it through end-grain engraving, fading vignette edge, fine tint lines, rustic detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: end-grain engraving; fading vignette edge; fine tint lines; rustic detail
+avoidRules:
+  - readable captions or lettering
+  - existing fairy-tale film character designs
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable captions or lettering, existing fairy-tale film character designs, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: revival-and-storybook-illustration
+  categoryName: 5. Revival & Storybook Illustration
+  tags:
+    - curation-v2
+    - revival-and-storybook-illustration
+    - engraved-vignette
+    - storybook-revival
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: victorian wood-engraved vignette
