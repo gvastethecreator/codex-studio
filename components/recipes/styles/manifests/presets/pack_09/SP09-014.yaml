@@ -13,7 +13,7 @@ tags:
   - natural-materials
 visualDna:
   aesthetic: 'Coral reef: branching and brain corals growing over the target in bright calcareous forms.'
-  subject_treatment: 'Apply this material to the surfaces of the target named in the prompt, keeping the target''s shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is overgrown or formed from living coral structures, branching and brain coral.'
+  subject_treatment: "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is overgrown or formed from living coral structures, branching and brain coral."
   color_and_tone: Coral pink, orange, purple, cream and turquoise, kept on the material while the rest of the scene keeps its own palette.
   lighting_and_shadow: Underwater-like caustic light, chosen to reveal how the material reflects, absorbs or transmits light.
   texture_and_material: Calcareous coral with polyps, ridges and porous texture, at a believable physical scale relative to the target.

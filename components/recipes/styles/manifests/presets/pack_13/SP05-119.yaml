@@ -37,7 +37,7 @@ visualDna:
     important silhouettes and joins legible; no watermark, unrequested text or interface.
   key_features: >-
     Broken chalk cadence; powder halo; smudge ghost; erasure trace; slate-grain field.
-  creative_brief: "Apply this visual treatment to the requested content: Broken chalk cadence; powder halo; smudge ghost; erasure trace; slate-grain field. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject."
+  creative_brief: 'Apply this visual treatment to the requested content: Broken chalk cadence; powder halo; smudge ghost; erasure trace; slate-grain field. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: 'Let the requested emotion set facial intensity and contrast; low-key rendering must not flatten a strong expression.'
   rendering_and_quality: 'Favor precise line closure, simple shadow grouping, and consistent edge weight; retain enough detail to identify every prompted form.'
   key_features: 'Uniform fine contours; low-contrast color blocks; shallow shadow shapes; restrained feature marks; relaxed detail density.'
-  creative_brief: "Render with quiet line weight and narrow value steps, letting small feature changes carry expression. Preserve the prompted subject, action, count, camera, and mood. Use it as a reusable look on any subject."
+  creative_brief: 'Render with quiet line weight and narrow value steps, letting small feature changes carry expression. Preserve the prompted subject, action, count, camera, and mood. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

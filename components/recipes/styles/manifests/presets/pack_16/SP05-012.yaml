@@ -43,7 +43,7 @@ visualDna:
   key_features: >-
     fine curved contours; pearl, moon-blue and rose accents; sparse star-point glints arranged in a
     repeated rhythm
-  creative_brief: "Restyle the requested content with graceful cel linework, measured luminous accents and repeated ornamental cadence. Preserve its identity, action, environment and composition; add no magical cast, costume or event. Use it as a reusable look on any subject."
+  creative_brief: 'Restyle the requested content with graceful cel linework, measured luminous accents and repeated ornamental cadence. Preserve its identity, action, environment and composition; add no magical cast, costume or event. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

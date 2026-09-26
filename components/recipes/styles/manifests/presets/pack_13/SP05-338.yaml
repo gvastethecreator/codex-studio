@@ -38,7 +38,7 @@ visualDna:
   key_features: >-
     Acute angular cuts; hard cel shadows; restrained ember accents; icon-like contrast; crisp
     contour.
-  creative_brief: "Apply this visual treatment to the requested content: Acute angular cuts; hard cel shadows; restrained ember accents; icon-like contrast; crisp contour. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject."
+  creative_brief: 'Apply this visual treatment to the requested content: Acute angular cuts; hard cel shadows; restrained ember accents; icon-like contrast; crisp contour. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look

@@ -14,7 +14,7 @@ tags:
   - natural-materials
 visualDna:
   aesthetic: 'Birch bark: papery white bark with dark horizontal lenticels, curling peels and chalky texture.'
-  subject_treatment: 'Apply this material to the surfaces of the target named in the prompt, keeping the target''s shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is wrapped or built from birch bark sheets with peeling curls and dark lenticel dashes.'
+  subject_treatment: "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is wrapped or built from birch bark sheets with peeling curls and dark lenticel dashes."
   color_and_tone: Chalk white, cream and charcoal marks with peach inner bark.
   lighting_and_shadow: Soft cool daylight, chosen to reveal how the material reflects, absorbs or transmits light.
   texture_and_material: Papery peeling bark layers with black lenticels and curls.

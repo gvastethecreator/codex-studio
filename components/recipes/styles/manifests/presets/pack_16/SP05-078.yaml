@@ -41,7 +41,7 @@ visualDna:
     edges.
   key_features: >-
     Angular ink blocks; hard cel planes; short edge-bound tapers; cool-dark and cream contrast.
-  creative_brief: "Use angular ink blocks; hard cel planes; short edge-bound tapers; cool-dark and cream contrast. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject."
+  creative_brief: 'Use angular ink blocks; hard cel planes; short edge-bound tapers; cool-dark and cream contrast. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

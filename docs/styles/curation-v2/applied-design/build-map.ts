@@ -89,6 +89,6 @@ const out = {
   cards,
 };
 writeFileSync(path.join(here, 'integration-map.json'), `${JSON.stringify(out, null, 2)}\n`);
-console.log(
-  `[map] presets=${imported.size} not-presets=${Object.keys(NOT_PRESETS).length} pending=${pending}`,
+process.stdout.write(
+  `[map] presets=${imported.size} not-presets=${Object.keys(NOT_PRESETS).length} pending=${pending}\n`,
 );

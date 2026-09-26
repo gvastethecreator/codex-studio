@@ -13,7 +13,7 @@ tags:
   - fabric-and-texture-focus
 visualDna:
   aesthetic: 'Transparent plastic fashion: clothes of clear or tinted PVC and vinyl that show layers and catch reflections.'
-  subject_treatment: 'Make the prompt''s garments out of this material while keeping the wearer, their skin, face, pose, action and setting unchanged: garments of clear or tinted transparent plastic — raincoats, skirts, bags — with visible seams and reflections over normal clothes beneath.'
+  subject_treatment: "Make the prompt's garments out of this material while keeping the wearer, their skin, face, pose, action and setting unchanged: garments of clear or tinted transparent plastic — raincoats, skirts, bags — with visible seams and reflections over normal clothes beneath."
   color_and_tone: Clear, frosted, or tinted pink, yellow and blue plastic.
   lighting_and_shadow: Bright light producing edge highlights and caustics, chosen to reveal how this material reflects, absorbs or transmits light.
   texture_and_material: Clear PVC with welded seams, droplets and reflections, with correct scale, weight and surface behavior at every fold and edge.

@@ -31,7 +31,7 @@ visualDna:
     Precise edges, local decoration, uncluttered values, no decorative clouds.
   key_features: >-
     Refined cel polish, ivory-teal contrast, local trim detail, clean graphic timing
-  creative_brief: "Apply a visual treatment centered on refined cel polish, ivory-teal contrast, local trim detail, clean graphic timing. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject."
+  creative_brief: 'Apply a visual treatment centered on refined cel polish, ivory-teal contrast, local trim detail, clean graphic timing. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

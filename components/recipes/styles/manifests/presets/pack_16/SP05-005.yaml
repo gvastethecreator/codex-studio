@@ -33,7 +33,7 @@ visualDna:
     Finish as hand-drawn 2D cel illustration. Use legible, no-nonsense linework with minimal surface effects; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
   key_features: >-
     utilitarian outlines, steady internal strokes and short structural marks; simple, practical silhouettes and only the construction details already present; compact cel shadows with clear value separation and few specular accents; matte cel paint, restrained dry brush and fine transfer grain.
-  creative_brief: "Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use utilitarian outlines, steady internal strokes and short structural marks; simple, practical silhouettes and only the construction details already present; compact cel shadows with clear value separation and few specular accents; matte cel paint, restrained dry brush and fine transfer grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject."
+  creative_brief: 'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use utilitarian outlines, steady internal strokes and short structural marks; simple, practical silhouettes and only the construction details already present; compact cel shadows with clear value separation and few specular accents; matte cel paint, restrained dry brush and fine transfer grain. Add no unrequested content or composition changes. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

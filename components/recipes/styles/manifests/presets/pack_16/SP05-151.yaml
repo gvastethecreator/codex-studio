@@ -41,7 +41,7 @@ visualDna:
   key_features: >-
     High-key color grouping when palette is open; bright flat accents; crisp graphic
     highlights; restrained glow over stable silhouettes.
-  creative_brief: "Apply bright accents, graphic highlights and restrained glow without altering the requested forms or scene. Honor explicit palette, mood and framing. Use it as a reusable look on any subject."
+  creative_brief: 'Apply bright accents, graphic highlights and restrained glow without altering the requested forms or scene. Honor explicit palette, mood and framing. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

@@ -13,8 +13,8 @@ tags:
   - texture-and-materiality
   - tactile-surfaces
 visualDna:
-  aesthetic: 'Frosted: a crust of feathery hoarfrost crystals growing over the target''s surfaces.'
-  subject_treatment: 'Apply this material to the surfaces of the target named in the prompt, keeping the target''s shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: hoarfrost crystals grow in feathery spikes over the target, thicker on edges.'
+  aesthetic: "Frosted: a crust of feathery hoarfrost crystals growing over the target's surfaces."
+  subject_treatment: "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: hoarfrost crystals grow in feathery spikes over the target, thicker on edges."
   color_and_tone: White and pale blue frost over darker surfaces, kept on the material while the rest of the scene keeps its own palette.
   lighting_and_shadow: Cold backlight sparkling on crystals, chosen to reveal how the material reflects, absorbs or transmits light.
   texture_and_material: Feathery hoarfrost needles and rime crust, at a believable physical scale relative to the target.

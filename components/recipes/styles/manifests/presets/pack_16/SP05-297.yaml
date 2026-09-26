@@ -40,7 +40,7 @@ visualDna:
     requested elements.
   key_features: >-
     Hairline contour; localized micro-detail; cool blue-gray field; fast detail falloff.
-  creative_brief: "Use hairline contour; localized micro-detail; cool blue-gray field; fast detail falloff. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject."
+  creative_brief: 'Use hairline contour; localized micro-detail; cool blue-gray field; fast detail falloff. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

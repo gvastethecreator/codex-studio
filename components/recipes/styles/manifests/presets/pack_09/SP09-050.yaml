@@ -14,7 +14,7 @@ tags:
   - tactile-surfaces
 visualDna:
   aesthetic: 'Dry chalk: powdery matte chalk surfaces that smudge and leave dust.'
-  subject_treatment: 'Apply this material to the surfaces of the target named in the prompt, keeping the target''s shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is made of or coated in dry chalk, powdery, smudged and dusty at edges.'
+  subject_treatment: "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is made of or coated in dry chalk, powdery, smudged and dusty at edges."
   color_and_tone: Chalky pastels or white with dust, kept on the material while the rest of the scene keeps its own palette.
   lighting_and_shadow: Soft light for matte powder, chosen to reveal how the material reflects, absorbs or transmits light.
   texture_and_material: Powdery chalk with smudges, dust and fingerprints, at a believable physical scale relative to the target.

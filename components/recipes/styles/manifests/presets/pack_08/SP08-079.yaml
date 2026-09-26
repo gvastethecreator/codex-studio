@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Suggest elusive elegance through a slight contour break and refracted color, without assigning camouflage, espionage or a hidden identity.
   rendering_and_quality: Keep distortion localized and internally consistent; preserve facial and fabric detail around the refractive edge.
   key_features: Transparent veil panels; lens-bent contour edges; localized background displacement; fine prismatic fringe.
-  creative_brief: "Add refractive veil surfaces to the requested clothing with transparent panels, subtle lens bending and prismatic edges. Preserve wearer, identity, pose, role, scene and frame; keep concealment localized unless total invisibility is explicitly requested. Use it as a reusable look on any subject."
+  creative_brief: 'Add refractive veil surfaces to the requested clothing with transparent panels, subtle lens bending and prismatic edges. Preserve wearer, identity, pose, role, scene and frame; keep concealment localized unless total invisibility is explicitly requested. Use it as a reusable look on any subject.'
 avoidRules:
   - fully opaque normal fabric
   - generic cosplay

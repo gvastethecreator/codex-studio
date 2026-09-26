@@ -36,7 +36,7 @@ visualDna:
   key_features: >-
     Pearly translucent layers, sea-glass-violet palette, local filament marks, clear opaque
     forms
-  creative_brief: "Apply a visual treatment centered on pearly translucent layers, sea-glass-violet palette, local filament marks, clear opaque forms. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject."
+  creative_brief: 'Apply a visual treatment centered on pearly translucent layers, sea-glass-violet palette, local filament marks, clear opaque forms. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

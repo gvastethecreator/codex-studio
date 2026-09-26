@@ -14,7 +14,7 @@ tags:
   - natural-materials
 visualDna:
   aesthetic: 'Cooled lava rock: porous black-red basalt scoria with vesicles and ropy flow texture.'
-  subject_treatment: 'Apply this material to the surfaces of the target named in the prompt, keeping the target''s shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is made of cooled lava rock with vesicles and ropy flow texture.'
+  subject_treatment: "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is made of cooled lava rock with vesicles and ropy flow texture."
   color_and_tone: Charcoal black, rust red and ash grey, kept on the material while the rest of the scene keeps its own palette.
   lighting_and_shadow: Hard side light revealing pores, chosen to reveal how the material reflects, absorbs or transmits light.
   texture_and_material: Vesicular basalt, scoria and ropy pahoehoe flow, at a believable physical scale relative to the target.

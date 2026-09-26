@@ -40,7 +40,7 @@ visualDna:
     scratch marks.
   key_features: >-
     Broken scratch ink; heavy black silhouette; crimson-acid accent; source-bound hard light.
-  creative_brief: "Use broken scratch ink; heavy black silhouette; crimson-acid accent; source-bound hard light. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject."
+  creative_brief: 'Use broken scratch ink; heavy black silhouette; crimson-acid accent; source-bound hard light. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

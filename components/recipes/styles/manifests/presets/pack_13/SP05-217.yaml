@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: "Preserve the supplied mood; an ideation surface does not change the action's energy or emotional tone."
   rendering_and_quality: 'Leave guide marks visible where they trace the same forms; keep the underlying silhouette clear and avoid lettering, interface marks, or watermarks.'
   key_features: 'Visible construction lines; contour replays on the same forms; sparse gesture ticks tied to requested motion; restrained flat color; unfinished edges.'
-  creative_brief: "Keep concept-stage linework visible around the same clear drawing; guide strokes trace prompted forms and motion only. Preserve subject, action, count, main camera, and mood; add no scene or words. Use it as a reusable look on any subject."
+  creative_brief: 'Keep concept-stage linework visible around the same clear drawing; guide strokes trace prompted forms and motion only. Preserve subject, action, count, main camera, and mood; add no scene or words. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

@@ -32,7 +32,7 @@ visualDna:
     Legible action, crisp cel bands, sparse texture, no unrequested motion blur.
   key_features: >-
     Decisive tapered line, clay-red accent, firm cel shadows, gesture-led diagonals
-  creative_brief: "Apply a visual treatment centered on decisive tapered line, clay-red accent, firm cel shadows, gesture-led diagonals. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject."
+  creative_brief: 'Apply a visual treatment centered on decisive tapered line, clay-red accent, firm cel shadows, gesture-led diagonals. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

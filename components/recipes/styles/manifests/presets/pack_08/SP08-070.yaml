@@ -13,7 +13,7 @@ tags:
   - fabric-and-texture-focus
 visualDna:
   aesthetic: 'Fire dress: garments formed of controlled flame and embers, with a glowing core and flickering edges.'
-  subject_treatment: 'Make the prompt''s garments out of this material while keeping the wearer, their skin, face, pose, action and setting unchanged: garments made of controlled flame with a glowing core, flickering edges and falling embers, never burning the wearer.'
+  subject_treatment: "Make the prompt's garments out of this material while keeping the wearer, their skin, face, pose, action and setting unchanged: garments made of controlled flame with a glowing core, flickering edges and falling embers, never burning the wearer."
   color_and_tone: Orange, gold and red flame with white-hot core, on the target material while the rest of the scene keeps its natural color.
   lighting_and_shadow: Self-illuminating flame lighting the wearer and surroundings, chosen to reveal how this material reflects, absorbs or transmits light.
   texture_and_material: Flame tongues, embers and heat shimmer, with correct scale, weight and surface behavior at every fold and edge.

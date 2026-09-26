@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: "Maintain the requested emotion; fluid transitions affect surface and value only, not the scene's emotional reading."
   rendering_and_quality: 'Keep one decisive contour on focal forms and softer transitions elsewhere; no full-frame blur or duplicated reflection.'
   key_features: 'Translucent glazing; soft value echoes; fine wash grain; selective decisive contours; single readable silhouettes.'
-  creative_brief: "Layer soft tonal echoes around clear forms using transparency, without duplicating shapes. Keep the prompted subject, action, count, camera, and mood. Use it as a reusable look on any subject."
+  creative_brief: 'Layer soft tonal echoes around clear forms using transparency, without duplicating shapes. Keep the prompted subject, action, count, camera, and mood. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

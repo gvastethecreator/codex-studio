@@ -33,7 +33,7 @@ visualDna:
     Finish as hand-drawn 2D cel illustration. Use rugged but controlled ink and cel blocks with readable forms; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
   key_features: >-
     jagged dry-brush outlines, solid dark masses and sharp angular edge cuts; forceful contour accents restricted to the requested pose and existing shapes; hard dark breaks and clear positive fields; dry brush and sparse pigment flecks kept away from small details.
-  creative_brief: "Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use jagged dry-brush outlines, solid dark masses and sharp angular edge cuts; forceful contour accents restricted to the requested pose and existing shapes; hard dark breaks and clear positive fields; dry brush and sparse pigment flecks kept away from small details. Add no unrequested content or composition changes. Use it as a reusable look on any subject."
+  creative_brief: 'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use jagged dry-brush outlines, solid dark masses and sharp angular edge cuts; forceful contour accents restricted to the requested pose and existing shapes; hard dark breaks and clear positive fields; dry brush and sparse pigment flecks kept away from small details. Add no unrequested content or composition changes. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

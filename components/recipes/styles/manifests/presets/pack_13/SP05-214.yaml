@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: "Follow the requested emotional intensity; softness does not alter the scene's energy."
   rendering_and_quality: 'Keep essential boundaries crisp beneath gentle transitions; avoid a uniform blur or low-detail wash.'
   key_features: 'Long fluid contours; neighboring color shifts; broad soft transitions; sparse edge trails; stable form boundaries.'
-  creative_brief: "Apply gentle contour flow and tonal drift without changing pose or motion. Keep subject, action, count, camera, and mood as requested. Use it as a reusable look on any subject."
+  creative_brief: 'Apply gentle contour flow and tonal drift without changing pose or motion. Keep subject, action, count, camera, and mood as requested. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

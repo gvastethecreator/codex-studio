@@ -14,7 +14,7 @@ tags:
   - natural-materials
 visualDna:
   aesthetic: 'Snake scales: overlapping keeled or smooth scales with iridescent sheen and patterned bands.'
-  subject_treatment: 'Apply this material to the surfaces of the target named in the prompt, keeping the target''s shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is covered in overlapping snake scales with patterned bands following its form.'
+  subject_treatment: "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is covered in overlapping snake scales with patterned bands following its form."
   color_and_tone: Olive, emerald, black and gold banding with iridescence, kept on the material while the rest of the scene keeps its own palette.
   lighting_and_shadow: Raking light that shows each scale edge, chosen to reveal how the material reflects, absorbs or transmits light.
   texture_and_material: Overlapping keeled scales with glossy iridescent sheen, at a believable physical scale relative to the target.

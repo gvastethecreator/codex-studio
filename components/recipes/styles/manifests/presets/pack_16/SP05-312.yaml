@@ -33,7 +33,7 @@ visualDna:
     Finish as hand-drawn 2D cel illustration. Use precise graphic linework, limited highlights and restrained 1980s transfer softness; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
   key_features: >-
     sleek tapered contours, clean angles and measured curves; elegant edge accents on existing shapes while retaining identity and clothing; polished hard-edged cel highlights and narrow shadow slices matched to the light; smooth opaque paint with fine analog grain and no plastic sheen.
-  creative_brief: "Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use sleek tapered contours, clean angles and measured curves; elegant edge accents on existing shapes while retaining identity and clothing; polished hard-edged cel highlights and narrow shadow slices matched to the light; smooth opaque paint with fine analog grain and no plastic sheen. Add no unrequested content or composition changes. Use it as a reusable look on any subject."
+  creative_brief: 'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use sleek tapered contours, clean angles and measured curves; elegant edge accents on existing shapes while retaining identity and clothing; polished hard-edged cel highlights and narrow shadow slices matched to the light; smooth opaque paint with fine analog grain and no plastic sheen. Add no unrequested content or composition changes. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

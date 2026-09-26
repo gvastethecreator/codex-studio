@@ -14,7 +14,7 @@ tags:
   - natural-materials
 visualDna:
   aesthetic: 'Polished granite: speckled crystalline stone polished to a hard reflective surface.'
-  subject_treatment: 'Apply this material to the surfaces of the target named in the prompt, keeping the target''s shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is carved from granite and polished, with mineral speckles visible across its surfaces.'
+  subject_treatment: "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is carved from granite and polished, with mineral speckles visible across its surfaces."
   color_and_tone: Grey, black and pink speckle or black granite with mica sparkle.
   lighting_and_shadow: Crisp light producing sharp reflections, chosen to reveal how the material reflects, absorbs or transmits light.
   texture_and_material: Polished granite with feldspar, quartz and mica grains, at a believable physical scale relative to the target.

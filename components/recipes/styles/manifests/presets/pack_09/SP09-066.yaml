@@ -14,7 +14,7 @@ tags:
   - natural-materials
 visualDna:
   aesthetic: 'Beach sand: fine packed sand sculpted into the target, with grain texture and crumbling edges.'
-  subject_treatment: 'Apply this material to the surfaces of the target named in the prompt, keeping the target''s shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is sculpted from packed beach sand with crumbling edges and fine grain.'
+  subject_treatment: "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is sculpted from packed beach sand with crumbling edges and fine grain."
   color_and_tone: Warm beige, golden and wet darker sand, kept on the material while the rest of the scene keeps its own palette.
   lighting_and_shadow: Low sun raking the grains, chosen to reveal how the material reflects, absorbs or transmits light.
   texture_and_material: Packed fine sand grains with crumbling edges and shell fragments.

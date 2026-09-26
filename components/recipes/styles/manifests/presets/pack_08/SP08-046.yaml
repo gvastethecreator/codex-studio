@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Suggest engineered readiness through fit and connector placement without assigning a pilot, cockpit, machine bond or mission.
   rendering_and_quality: Use orderly panel transitions and compact hardware, preserving comfortable garment fit and recognizable face and body.
   key_features: Capsule-contour seam map; sealed support bands; reinforced collar connectors; polymer and neoprene transitions.
-  creative_brief: "Turn the requested clothes into a mech-interface suit with ergonomic seam maps, sealed support bands and compact connectors. Preserve wearer, pose, role, scene and framing; add no cockpit, machine, neural port or mission. Use it as a reusable look on any subject."
+  creative_brief: 'Turn the requested clothes into a mech-interface suit with ergonomic seam maps, sealed support bands and compact connectors. Preserve wearer, pose, role, scene and framing; add no cockpit, machine, neural port or mission. Use it as a reusable look on any subject.'
 avoidRules:
   - casual
   - latex body read

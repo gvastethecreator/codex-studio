@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Suggest arcane scholarship through drape and celestial stitch motifs, without making the wearer a wizard or adding spellcasting.
   rendering_and_quality: Render deep folds, fine stitches and layered hems with clear textile weight. Keep ornament crisp and prevent prop-driven wizard cliches.
   key_features: Long robe columns; deep cowl folds; bell-sleeve drape; fine celestial stitchwork.
-  creative_brief: "Reinterpret the requested clothing as mage-inspired robes with vertical drape, layered hems, cowl folds and fine celestial embroidery. Preserve identity, anatomy, role, pose, scene and frame; keep hood optional and add no spell, wand, book or school setting. Use it as a reusable look on any subject."
+  creative_brief: 'Reinterpret the requested clothing as mage-inspired robes with vertical drape, layered hems, cowl folds and fine celestial embroidery. Preserve identity, anatomy, role, pose, scene and frame; keep hood optional and add no spell, wand, book or school setting. Use it as a reusable look on any subject.'
 avoidRules:
   - literal school uniform
   - prop-only wizard cliche

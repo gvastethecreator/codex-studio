@@ -40,7 +40,7 @@ visualDna:
     lifting all blacks.
   key_features: >-
     Rectilinear shadow blocks; long contour runs; slate-blue low key; thin distance edges.
-  creative_brief: "Use rectilinear shadow blocks; long contour runs; slate-blue low key; thin distance edges. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject."
+  creative_brief: 'Use rectilinear shadow blocks; long contour runs; slate-blue low key; thin distance edges. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

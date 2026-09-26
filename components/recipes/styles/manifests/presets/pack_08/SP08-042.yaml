@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Suggest resourcefulness through asymmetry and repeated repairs, without declaring the wearer a survivor or inventing an apocalypse.
   rendering_and_quality: Keep distressed surfaces varied but controlled; distinguish fabric, rubber and metal scraps, and retain readable garment construction.
   key_features: Mismatched protective layers; wrapped cuffs; patched canvas and denim; salvaged fasteners and shoulder panels.
-  creative_brief: "Turn the requested clothing into repaired scavenged survivalwear with mismatched layers, wrapped cuffs, patched cloth and salvaged fasteners. Preserve wearer, role, pose, scene and framing; add no weapon, vehicle, injury or apocalypse. Use it as a reusable look on any subject."
+  creative_brief: 'Turn the requested clothing into repaired scavenged survivalwear with mismatched layers, wrapped cuffs, patched cloth and salvaged fasteners. Preserve wearer, role, pose, scene and framing; add no weapon, vehicle, injury or apocalypse. Use it as a reusable look on any subject.'
 avoidRules:
   - franchise likeness
   - chase vehicle

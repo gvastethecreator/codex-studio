@@ -40,7 +40,7 @@ visualDna:
     silhouettes.
   key_features: >-
     Sweeping contour; filament taper; linked color paths; clear naturalistic values.
-  creative_brief: "Use sweeping contour; filament taper; linked color paths; clear naturalistic values. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject."
+  creative_brief: 'Use sweeping contour; filament taper; linked color paths; clear naturalistic values. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

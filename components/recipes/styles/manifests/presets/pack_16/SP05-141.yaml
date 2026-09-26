@@ -41,7 +41,7 @@ visualDna:
   key_features: >-
     Ornamental shadow; dark and vivid accent contrast; pulsing highlight rhythm; rough ink
     on existing materials.
-  creative_brief: "Use ornamental contours and optional pulsing highlights to style the supplied content. Preserve its subject, action, palette and camera. Use it as a reusable look on any subject."
+  creative_brief: 'Use ornamental contours and optional pulsing highlights to style the supplied content. Preserve its subject, action, palette and camera. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

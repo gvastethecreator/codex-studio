@@ -14,7 +14,7 @@ tags:
   - tactile-surfaces
 visualDna:
   aesthetic: 'Felt: dense matted wool with fuzzy surface and soft rounded edges, like needle-felted craft.'
-  subject_treatment: 'Apply this material to the surfaces of the target named in the prompt, keeping the target''s shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is formed from dense needle-felted wool with soft rounded edges.'
+  subject_treatment: "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is formed from dense needle-felted wool with soft rounded edges."
   color_and_tone: Soft saturated wool colors, kept on the material while the rest of the scene keeps its own palette.
   lighting_and_shadow: Soft diffuse light showing fuzz, chosen to reveal how the material reflects, absorbs or transmits light.
   texture_and_material: Matted wool fibers with fuzzy halo and needle pits.

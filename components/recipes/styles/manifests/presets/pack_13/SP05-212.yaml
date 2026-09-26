@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: 'Keep the requested mood; a small visual stutter does not set the emotional reading.'
   rendering_and_quality: 'Maintain sharp boundaries, smooth fields, and one deliberate irregularity; avoid unprompted surface marks.'
   key_features: 'Even contour weight; immaculate color planes; crisp compact shadows; localized alignment shift; limited accent color.'
-  creative_brief: "Set precise, clean drawing against a single restrained edge irregularity. Keep subject, action, count, camera, and mood; add no new motif. Use it as a reusable look on any subject."
+  creative_brief: 'Set precise, clean drawing against a single restrained edge irregularity. Keep subject, action, count, camera, and mood; add no new motif. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

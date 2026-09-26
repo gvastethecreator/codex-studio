@@ -43,7 +43,7 @@ visualDna:
   key_features: >-
     off-beat diagonals and negative space; cool indigo-violet shadows; sparse amber highlights over
     expressive ink cuts
-  creative_brief: "Apply the syncopated ink, cool noir values and selective amber accents to the requested content. Preserve its scene, subject, action and framing; add no spacecraft, club, detective or genre props. Use it as a reusable look on any subject."
+  creative_brief: 'Apply the syncopated ink, cool noir values and selective amber accents to the requested content. Preserve its scene, subject, action and framing; add no spacecraft, club, detective or genre props. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

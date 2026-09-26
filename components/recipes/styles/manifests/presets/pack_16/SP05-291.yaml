@@ -40,7 +40,7 @@ visualDna:
     Retain clear subject boundaries through the wash and avoid smoothing away requested detail.
   key_features: >-
     Fine contour; dilute glaze; pale aqua-sage; gentle adjacent-edge blending.
-  creative_brief: "Use fine contour; dilute glaze; pale aqua-sage; gentle adjacent-edge blending. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject."
+  creative_brief: 'Use fine contour; dilute glaze; pale aqua-sage; gentle adjacent-edge blending. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

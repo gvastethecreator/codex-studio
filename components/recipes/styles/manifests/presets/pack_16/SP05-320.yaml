@@ -33,7 +33,7 @@ visualDna:
     Finish as hand-drawn 2D cel illustration. Use poster-like value clarity with controlled roughness and unaltered subject detail; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
   key_features: >-
     roughened contour ends, broad poster-ink shadows and crisp tapered curls; robust outer shapes with sparse inner lines while preserving the requested design; firm directional cel blocks with abrupt but readable transitions; soft dry brush, slight paper tooth and fine film grain without frame damage.
-  creative_brief: "Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use roughened contour ends, broad poster-ink shadows and crisp tapered curls; robust outer shapes with sparse inner lines while preserving the requested design; firm directional cel blocks with abrupt but readable transitions; soft dry brush, slight paper tooth and fine film grain without frame damage. Add no unrequested content or composition changes. Use it as a reusable look on any subject."
+  creative_brief: 'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use roughened contour ends, broad poster-ink shadows and crisp tapered curls; robust outer shapes with sparse inner lines while preserving the requested design; firm directional cel blocks with abrupt but readable transitions; soft dry brush, slight paper tooth and fine film grain without frame damage. Add no unrequested content or composition changes. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

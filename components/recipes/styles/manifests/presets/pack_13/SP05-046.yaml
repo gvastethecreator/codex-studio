@@ -32,7 +32,7 @@ visualDna:
     Thin wash, legible ink, subtle paper texture; no global sepia haze.
   key_features: >-
     Fine ink contour, transparent pigment wash, amber-slate palette, open margins
-  creative_brief: "Apply a visual treatment centered on fine ink contour, transparent pigment wash, amber-slate palette, open margins. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject."
+  creative_brief: 'Apply a visual treatment centered on fine ink contour, transparent pigment wash, amber-slate palette, open margins. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

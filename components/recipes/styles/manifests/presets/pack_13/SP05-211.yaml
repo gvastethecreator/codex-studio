@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: 'Let the prompt set the emotion; sparse rendering does not impose a mood.'
   rendering_and_quality: 'Use deliberate line breaks, clean shape edges, and enough contrast for each form to remain identifiable.'
   key_features: 'Structural contours; broad quiet fills; few clear shadow groups; limited surface noise; precise material accents.'
-  creative_brief: "Reduce surface noise and organize values around the structure of existing forms. Preserve subject, action, count, camera, and mood without adding props. Use it as a reusable look on any subject."
+  creative_brief: 'Reduce surface noise and organize values around the structure of existing forms. Preserve subject, action, count, camera, and mood without adding props. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

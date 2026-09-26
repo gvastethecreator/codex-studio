@@ -14,7 +14,7 @@ tags:
   - natural-materials
 visualDna:
   aesthetic: 'Carrara marble: white marble with soft grey veining, polished or finely carved.'
-  subject_treatment: 'Apply this material to the surfaces of the target named in the prompt, keeping the target''s shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is carved from white Carrara marble with grey veins following its form.'
+  subject_treatment: "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is carved from white Carrara marble with grey veins following its form."
   color_and_tone: Warm white with soft grey veining, kept on the material while the rest of the scene keeps its own palette.
   lighting_and_shadow: Soft diffused light showing subsurface glow, chosen to reveal how the material reflects, absorbs or transmits light.
   texture_and_material: Fine crystalline marble with translucent edges and polished or chiselled finish.

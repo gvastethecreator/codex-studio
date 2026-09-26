@@ -42,7 +42,7 @@ visualDna:
   key_features: >-
     Minimal expression shift; economical gesture; stillness contrasted with a sudden visual
     beat; clean ink and controlled value emphasis.
-  creative_brief: "Use restrained acting and timing contrast while preserving the given subject, action, setting and camera; let the prompt set the tone. Use it as a reusable look on any subject."
+  creative_brief: 'Use restrained acting and timing contrast while preserving the given subject, action, setting and camera; let the prompt set the tone. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

@@ -41,7 +41,7 @@ visualDna:
   key_features: >-
     Stencil edge; overspray halo; paint drips; particulate grain; bold contour energy; cyan/magenta
     accents.
-  creative_brief: "Apply this visual treatment to the requested content: Stencil edge; overspray halo; paint drips; particulate grain; bold contour energy; cyan/magenta accents. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject."
+  creative_brief: 'Apply this visual treatment to the requested content: Stencil edge; overspray halo; paint drips; particulate grain; bold contour energy; cyan/magenta accents. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look

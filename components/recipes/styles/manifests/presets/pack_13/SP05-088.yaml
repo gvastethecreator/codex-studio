@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: 'Follow the requested feeling; contrast affects visual emphasis only and does not assign a new tone.'
   rendering_and_quality: 'Preserve clear silhouette edges while keeping microdetail sparse; do not blur or ornament the whole image.'
   key_features: 'Bold simplified silhouette; tiny internal line detail; restrained bright accent; clean layers; scale contrast through mark density.'
-  creative_brief: "Juxtapose broad clean shapes with fine marks to create visual scale tension. Do not enlarge or add anything; preserve subject, action, count, camera, and mood. Use it as a reusable look on any subject."
+  creative_brief: 'Juxtapose broad clean shapes with fine marks to create visual scale tension. Do not enlarge or add anything; preserve subject, action, count, camera, and mood. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

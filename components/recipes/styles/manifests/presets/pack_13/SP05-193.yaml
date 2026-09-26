@@ -33,7 +33,7 @@ visualDna:
   key_features: >-
     Tapered botanical-style line, terracotta-sage palette, crisp cel edges, details on
     existing forms
-  creative_brief: "Apply a visual treatment centered on tapered botanical-style line, terracotta-sage palette, crisp cel edges, details on existing forms. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject."
+  creative_brief: 'Apply a visual treatment centered on tapered botanical-style line, terracotta-sage palette, crisp cel edges, details on existing forms. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

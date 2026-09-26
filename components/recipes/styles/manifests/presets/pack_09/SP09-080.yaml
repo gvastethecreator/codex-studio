@@ -13,7 +13,7 @@ tags:
   - natural-materials
 visualDna:
   aesthetic: 'Dragon scale: large armored overlapping scales with ridges, metallic sheen and battle scratches.'
-  subject_treatment: 'Apply this material to the surfaces of the target named in the prompt, keeping the target''s shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is covered in large overlapping dragon scales with ridges and metallic sheen.'
+  subject_treatment: "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is covered in large overlapping dragon scales with ridges and metallic sheen."
   color_and_tone: Bronze, crimson, emerald or obsidian with metallic highlights, kept on the material while the rest of the scene keeps its own palette.
   lighting_and_shadow: Hard raking light showing ridges, chosen to reveal how the material reflects, absorbs or transmits light.
   texture_and_material: Thick overlapping scales with ridges, scratches and metallic sheen.

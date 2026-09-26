@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Convey inventive, slightly theatrical craft through tailored lines and precise metal details; do not assign a tinkerer, explorer or aristocratic role.
   rendering_and_quality: Render crisp engraved edges, tactile woven cloth and small metal reflections with controlled detail. Keep tailoring coherent and avoid cluttering the silhouette.
   key_features: Victorian panel layering; gear-like fastener accents; brass against leather and tweed; vertical tailored lines.
-  creative_brief: "Reinterpret the requested wardrobe as Victorian mechanical tailoring with structured waist layers, fine brass fasteners, chain accents and woven cloth. Preserve wearer, role, pose, scene and framing; do not add a workshop, machine, hat or goggles unless requested. Use it as a reusable look on any subject."
+  creative_brief: 'Reinterpret the requested wardrobe as Victorian mechanical tailoring with structured waist layers, fine brass fasteners, chain accents and woven cloth. Preserve wearer, role, pose, scene and framing; do not add a workshop, machine, hat or goggles unless requested. Use it as a reusable look on any subject.'
 avoidRules:
   - plastic
   - generic cosplay

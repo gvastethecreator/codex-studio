@@ -41,7 +41,7 @@ visualDna:
   key_features: >-
     Leaded segmentation; jewel translucency; transmitted color; seam highlights; controlled glass
     imperfection.
-  creative_brief: "Apply this visual treatment to the requested content: Leaded segmentation; jewel translucency; transmitted color; seam highlights; controlled glass imperfection. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject."
+  creative_brief: 'Apply this visual treatment to the requested content: Leaded segmentation; jewel translucency; transmitted color; seam highlights; controlled glass imperfection. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look

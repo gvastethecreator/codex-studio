@@ -14,7 +14,7 @@ tags:
   - natural-materials
 visualDna:
   aesthetic: 'Split slate: dark layered stone that cleaves into thin sheets with sharp, stepped edges.'
-  subject_treatment: 'Apply this material to the surfaces of the target named in the prompt, keeping the target''s shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is built from split slate sheets or carved slate showing layered cleavage.'
+  subject_treatment: "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is built from split slate sheets or carved slate showing layered cleavage."
   color_and_tone: Blue-grey, charcoal and green-grey with rust stains, kept on the material while the rest of the scene keeps its own palette.
   lighting_and_shadow: Overcast light showing the stepped layers, chosen to reveal how the material reflects, absorbs or transmits light.
   texture_and_material: Cleaved slate sheets with sharp edges and rough riven faces.

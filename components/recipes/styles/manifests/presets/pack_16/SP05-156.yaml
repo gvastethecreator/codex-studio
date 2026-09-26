@@ -38,7 +38,7 @@ visualDna:
   key_features: >-
     Clear digital contours; soft compositing; integrated painted backgrounds;
     prompt-controlled palette, lighting and emotion.
-  creative_brief: "Keep the requested content and composition. Apply clean contours, soft compositing and painted-background integration while following its palette and mood. Use it as a reusable look on any subject."
+  creative_brief: 'Keep the requested content and composition. Apply clean contours, soft compositing and painted-background integration while following its palette and mood. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

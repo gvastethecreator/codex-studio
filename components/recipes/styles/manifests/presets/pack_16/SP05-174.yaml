@@ -42,7 +42,7 @@ visualDna:
   key_features: >-
     broken heavy ink; chiseled shadow planes; iron-gray and rust-red accents with selective
     crosshatching
-  creative_brief: "Apply distressed cel linework and weighty shadow planes to the requested content. Preserve its identity, materials, action and setting; add no ruin, armor, battle or damage. Use it as a reusable look on any subject."
+  creative_brief: 'Apply distressed cel linework and weighty shadow planes to the requested content. Preserve its identity, materials, action and setting; add no ruin, armor, battle or damage. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

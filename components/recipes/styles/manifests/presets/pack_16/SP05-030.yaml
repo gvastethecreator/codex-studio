@@ -40,7 +40,7 @@ visualDna:
   key_features: >-
     Ornamental shadow shapes; hard rim over deep soft shadow; bright graphic accents;
     readable force-transfer lines.
-  creative_brief: "Combine ornamental shadow, optional dark accents and clear action contours only as the prompt allows. Keep its scene, palette and framing. Use it as a reusable look on any subject."
+  creative_brief: 'Combine ornamental shadow, optional dark accents and clear action contours only as the prompt allows. Keep its scene, palette and framing. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

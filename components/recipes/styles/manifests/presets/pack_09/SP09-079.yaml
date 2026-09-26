@@ -14,7 +14,7 @@ tags:
   - natural-materials
 visualDna:
   aesthetic: 'Mother of pearl: iridescent nacre with shimmering color shifts and layered sheen.'
-  subject_treatment: 'Apply this material to the surfaces of the target named in the prompt, keeping the target''s shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is inlaid or carved from mother-of-pearl nacre with color-shifting sheen.'
+  subject_treatment: "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is inlaid or carved from mother-of-pearl nacre with color-shifting sheen."
   color_and_tone: Pearl white with pink, blue and green iridescence, kept on the material while the rest of the scene keeps its own palette.
   lighting_and_shadow: Soft light producing shifting iridescence, chosen to reveal how the material reflects, absorbs or transmits light.
   texture_and_material: Layered nacre with shimmer and inlay seams, at a believable physical scale relative to the target.

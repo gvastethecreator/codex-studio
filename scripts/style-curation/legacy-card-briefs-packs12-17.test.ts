@@ -40,7 +40,9 @@ describe('legacy preview briefs for packs 12–17', () => {
       for (const preset of presets) {
         if (
           (packId === 'pack_17' && Number(preset.id.slice(-3)) >= 74) ||
-          (packId === 'pack_12' && Number(preset.id.slice(-3)) >= 81)
+          (packId === 'pack_12' && Number(preset.id.slice(-3)) >= 81) ||
+          // Presets added by the 2026-09 overhaul (SP13-051+ in packs 13 and 16) ship reviewed briefs.
+          (preset.id.startsWith('SP13-') && Number(preset.id.slice(-3)) >= 51)
         ) {
           const reviewed = reviewedCardBriefs[preset.id];
           expect(reviewed, `${packId}/${preset.id} reviewed brief`).toBeTruthy();
@@ -92,7 +94,7 @@ describe('legacy preview briefs for packs 12–17', () => {
       }
     }
 
-    expect(activePresetCount).toBe(44);
+    expect(activePresetCount).toBe(209);
     for (const [category, briefs] of activeBriefsByCategory) {
       expect(new Set(briefs).size, `${category} canonical briefs`).toBe(briefs.length);
     }

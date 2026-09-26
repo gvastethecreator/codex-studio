@@ -5,6 +5,61 @@ import type { StyleRuntimePack, StyleRuntimePreset } from '../styles/runtimeType
 const CATEGORY_PRESET_LOADERS: Array<() => Promise<StyleRuntimePreset[]>> = [
   () =>
     import('./pack_25/logo-and-symbol-systems-1').then((module) => module.GENERATED_STYLE_PRESETS),
+  () =>
+    import('./pack_25/interface-icon-systems-2').then((module) => module.GENERATED_STYLE_PRESETS),
+  () =>
+    import('./pack_25/app-and-illustrative-icons-3').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () => import('./pack_25/ui-and-app-design-4').then((module) => module.GENERATED_STYLE_PRESETS),
+  () =>
+    import('./pack_25/game-ui-huds-and-screen-graphics-5').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_25/industrial-and-product-design-6').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_25/packaging-and-label-design-7').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_25/mockups-and-product-presentation-8').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_25/advertising-and-campaign-design-9').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_25/typography-and-lettering-10').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_25/editorial-and-publication-design-11').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_25/information-and-technical-graphics-12').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_25/surface-and-textile-design-13').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_25/apparel-and-merchandise-graphics-14').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_25/environmental-graphics-and-wayfinding-15').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
+  () =>
+    import('./pack_25/motion-styleframes-and-broadcast-16').then(
+      (module) => module.GENERATED_STYLE_PRESETS,
+    ),
 ];
 
 export async function loadGeneratedStyleRuntimePack(): Promise<StyleRuntimePack> {

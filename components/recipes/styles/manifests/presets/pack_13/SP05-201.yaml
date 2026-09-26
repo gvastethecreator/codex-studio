@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: 'Keep the requested mood; line precision should not alter the emotional reading.'
   rendering_and_quality: 'Separate thin contour, local detail, and background values cleanly; keep extra graphic marks sparse and nonverbal.'
   key_features: 'Precise fine contours; selectively sharp microdetail; quiet supporting color fields; compact highlights; material-specific mark scale.'
-  creative_brief: "Give existing focal details crisp line priority against calmer surrounding marks. Preserve subject, camera, and mood; add no extra graphic motif. Use it as a reusable look on any subject."
+  creative_brief: 'Give existing focal details crisp line priority against calmer surrounding marks. Preserve subject, camera, and mood; add no extra graphic motif. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

@@ -33,7 +33,7 @@ visualDna:
     Separated forms, local effects, no particle noise or smeared shadows.
   key_features: >-
     Elastic contour, warm-cool blocks, quick tapered marks, effects tied to requested action
-  creative_brief: "Apply a visual treatment centered on elastic contour, warm-cool blocks, quick tapered marks, effects tied to requested action. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject."
+  creative_brief: 'Apply a visual treatment centered on elastic contour, warm-cool blocks, quick tapered marks, effects tied to requested action. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

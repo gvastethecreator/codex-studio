@@ -39,7 +39,7 @@ visualDna:
     Maintain fine lines, open midtones, and unbroken feature edges without soft-focus drift.
   key_features: >-
     Long fine contours; broad matte fields; intentional blank intervals; low mark density.
-  creative_brief: "Use long fine contours; broad matte fields; intentional blank intervals; low mark density. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject."
+  creative_brief: 'Use long fine contours; broad matte fields; intentional blank intervals; low mark density. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

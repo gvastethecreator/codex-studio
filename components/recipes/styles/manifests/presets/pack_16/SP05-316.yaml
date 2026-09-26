@@ -33,7 +33,7 @@ visualDna:
     Finish as hand-drawn 2D cel illustration. Use layered but legible contours with controlled blur and intact silhouette edges; maintain stable ink contours, restrained analog grain and no 3D or photoreal drift.
   key_features: >-
     organic variable contours, fine tapered edges and layered translucent pigment; soft irregular line turns that follow existing anatomy and materials; diffuse cel-value pools that preserve the prompt’s light direction; soft wash-like image texture and blended edges, without changing depicted materials.
-  creative_brief: "Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use organic variable contours, fine tapered edges and layered translucent pigment; soft irregular line turns that follow existing anatomy and materials; diffuse cel-value pools that preserve the prompt’s light direction; soft wash-like image texture and blended edges, without changing depicted materials. Add no unrequested content or composition changes. Use it as a reusable look on any subject."
+  creative_brief: 'Apply these drawing and paint cues only. Preserve the user’s subjects and exact count, identities, action, context, crop and viewpoint, requested colors, lighting and mood. Use organic variable contours, fine tapered edges and layered translucent pigment; soft irregular line turns that follow existing anatomy and materials; diffuse cel-value pools that preserve the prompt’s light direction; soft wash-like image texture and blended edges, without changing depicted materials. Add no unrequested content or composition changes. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

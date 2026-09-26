@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: 'Retain the requested emotional state; graphic interruptions are a drawing treatment, not an instruction to prescribe a new emotion.'
   rendering_and_quality: 'Keep the base drawing clean and readable beneath controlled edge breaks; avoid marks resembling text, interface elements, or watermarks.'
   key_features: 'Broken contour segments; slight color registration offsets; sparse pixel-like marks; saturated patches against stable base values.'
-  creative_brief: "Layer controlled misregistration over a legible drawing, keeping each offset attached to an existing form. Preserve subject, action, count, camera, and mood; add no text or props. Use it as a reusable look on any subject."
+  creative_brief: 'Layer controlled misregistration over a legible drawing, keeping each offset attached to an existing form. Preserve subject, action, count, camera, and mood; add no text or props. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

@@ -14,7 +14,7 @@ tags:
   - natural-materials
 visualDna:
   aesthetic: 'Raw oak wood: unfinished quarter-sawn oak with open grain, ray flecks and dry, matte fibers.'
-  subject_treatment: 'Apply this material to the surfaces of the target named in the prompt, keeping the target''s shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target becomes carved or built from raw oak, with grain following its form and tool marks at edges.'
+  subject_treatment: "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target becomes carved or built from raw oak, with grain following its form and tool marks at edges."
   color_and_tone: Pale honey to mid brown with darker grain lines.
   lighting_and_shadow: Warm side light raking across the open grain, chosen to reveal how the material reflects, absorbs or transmits light.
   texture_and_material: Open-pore oak grain, medullary ray flecks, splits and adze marks.

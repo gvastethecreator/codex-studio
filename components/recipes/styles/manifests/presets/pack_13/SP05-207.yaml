@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: "Keep the prompt's mood; organized detail density does not prescribe an emotional state."
   rendering_and_quality: 'Separate detailed and quiet areas decisively; keep contours legible and avoid scribbles that resemble text.'
   key_features: 'Alternating dense and open mark fields; ordered thin strokes; restrained bright accents; coherent shadows; crisp boundaries.'
-  creative_brief: "Vary detail density across existing forms to create a deliberate working rhythm. Preserve content and camera; add no new content or frame marks. Use it as a reusable look on any subject."
+  creative_brief: 'Vary detail density across existing forms to create a deliberate working rhythm. Preserve content and camera; add no new content or frame marks. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

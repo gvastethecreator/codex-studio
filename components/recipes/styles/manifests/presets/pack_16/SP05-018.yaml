@@ -43,7 +43,7 @@ visualDna:
   key_features: >-
     elongated relaxed contours with abrupt angular accents; dusty warm-cool contrast; playful visual
     timing without literal gags
-  creative_brief: "Restyle the requested content with dusty cel color, elastic line rhythm and an off-center sweep. Preserve its identity, action, environment and camera; add no western, spacecraft or outlaw props. Use it as a reusable look on any subject."
+  creative_brief: 'Restyle the requested content with dusty cel color, elastic line rhythm and an off-center sweep. Preserve its identity, action, environment and camera; add no western, spacecraft or outlaw props. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

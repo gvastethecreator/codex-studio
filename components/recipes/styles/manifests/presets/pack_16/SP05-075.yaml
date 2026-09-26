@@ -41,7 +41,7 @@ visualDna:
     faux lens effects.
   key_features: >-
     Hairline cel contour; transparent pastel glaze; soft value thresholds; precise focal edges.
-  creative_brief: "Use hairline cel contour; transparent pastel glaze; soft value thresholds; precise focal edges. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject."
+  creative_brief: 'Use hairline cel contour; transparent pastel glaze; soft value thresholds; precise focal edges. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

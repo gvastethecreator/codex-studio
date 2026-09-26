@@ -41,7 +41,7 @@ visualDna:
     requested features.
   key_features: >-
     Cinema-still depth; softened secondary edges; charcoal-blue values; isolated amber marks.
-  creative_brief: "Use cinema-still depth; softened secondary edges; charcoal-blue values; isolated amber marks. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject."
+  creative_brief: 'Use cinema-still depth; softened secondary edges; charcoal-blue values; isolated amber marks. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

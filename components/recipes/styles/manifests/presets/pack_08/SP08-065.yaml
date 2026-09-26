@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Suggest precise electric energy through contained light patterns, without assigning a game, race, vehicle or mission.
   rendering_and_quality: Control bloom so each circuit line stays crisp and attached to the garment; preserve fabric texture and the underlying silhouette.
   key_features: Luminous flex-circuit paths; hexagonal junctions; matte technical panels; restrained local emissive glow.
-  creative_brief: "Restyle the requested wardrobe as a neon circuit suit with illuminated seam paths over matte technical panels. Preserve wearer, body, role, pose, scene and framing; colors follow the prompt, with no grid arena, vehicle or default helmet. Use it as a reusable look on any subject."
+  creative_brief: 'Restyle the requested wardrobe as a neon circuit suit with illuminated seam paths over matte technical panels. Preserve wearer, body, role, pose, scene and framing; colors follow the prompt, with no grid arena, vehicle or default helmet. Use it as a reusable look on any subject.'
 avoidRules:
   - franchise icon
   - helmet visor

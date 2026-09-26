@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Read as precise, advanced couture rather than a diagnosis or procedure; do not assign a patient, cyborg identity or technical occupation.
   rendering_and_quality: Make small hardware clean and integrated, with disciplined seam paths and material contrast. Preserve recognizable anatomy and avoid random exposed circuitry.
   key_features: Implant-like seam channels; carbon contour bands; titanium and silicone transitions; discreet interface nodes.
-  creative_brief: "Add cybernetic couture detail to the requested wardrobe through contour seams, carbon panels and discreet interface hardware. Preserve identity, anatomy, pose, role, scene and framing; perform no surgery or limb replacement unless explicitly requested. Use it as a reusable look on any subject."
+  creative_brief: 'Add cybernetic couture detail to the requested wardrobe through contour seams, carbon panels and discreet interface hardware. Preserve identity, anatomy, pose, role, scene and framing; perform no surgery or limb replacement unless explicitly requested. Use it as a reusable look on any subject.'
 avoidRules:
   - unmodified plain surface
   - generic cosplay

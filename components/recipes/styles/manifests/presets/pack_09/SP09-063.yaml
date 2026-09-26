@@ -13,7 +13,7 @@ tags:
   - natural-materials
 visualDna:
   aesthetic: 'Cobweb: dense dusty spider silk draped in layers over the target.'
-  subject_treatment: 'Apply this material to the surfaces of the target named in the prompt, keeping the target''s shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is draped in thick layers of dusty cobweb strands and sheets.'
+  subject_treatment: "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is draped in thick layers of dusty cobweb strands and sheets."
   color_and_tone: Grey-white strands with dust and dark gaps, kept on the material while the rest of the scene keeps its own palette.
   lighting_and_shadow: Backlight catching the strands, chosen to reveal how the material reflects, absorbs or transmits light.
   texture_and_material: Silk strands, sagging sheets and dust, at a believable physical scale relative to the target.

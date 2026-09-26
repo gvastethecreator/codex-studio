@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: 'Follow the requested mood; understated graphics do not prescribe an emotional tone.'
   rendering_and_quality: 'Use clean shapes and limited shadow edges with no unfinished marks or added glow.'
   key_features: 'Thin even contour; plain color planes; blunt shadow shapes; low surface grain; restrained flat clarity.'
-  creative_brief: "Separate forms with plain color planes and deliberate shadows. Keep subject, action, count, camera, and mood as requested; add no new motif. Use it as a reusable look on any subject."
+  creative_brief: 'Separate forms with plain color planes and deliberate shadows. Keep subject, action, count, camera, and mood as requested; add no new motif. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

@@ -32,7 +32,7 @@ visualDna:
     Readable forms, sparse signal artifacts, and no fake text or full-frame static.
   key_features: >-
     Broken contour rhythm, local scanline grain, cyan signal accents, asymmetric pauses
-  creative_brief: "Apply a visual treatment centered on broken contour rhythm, local scanline grain, cyan signal accents, asymmetric pauses. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject."
+  creative_brief: 'Apply a visual treatment centered on broken contour rhythm, local scanline grain, cyan signal accents, asymmetric pauses. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

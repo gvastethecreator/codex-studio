@@ -33,7 +33,7 @@ const spec: Spec = {
         lighting_and_shadow:
           'Broad side light with a short contact shadow and soft, even fold shading.',
         texture_and_material:
-          "Thin apparent thickness and a smooth matte surface with almost no visible grain.",
+          'Thin apparent thickness and a smooth matte surface with almost no visible grain.',
         camera_and_composition:
           'Compact silhouette with one main void and folds visible from the chosen view.',
         atmosphere_and_mood:

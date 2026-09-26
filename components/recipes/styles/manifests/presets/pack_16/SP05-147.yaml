@@ -43,7 +43,7 @@ visualDna:
   key_features: >-
     Delicate contour economy; diffuse light with small warm accents; pale cool fields when
     palette is open; soft integration between digital forms and painted backgrounds.
-  creative_brief: "Apply the quiet contour, diffuse light and optional cool-warm palette after the prompt is set. Preserve its subject, action, setting and framing; texture only materials already present. Use it as a reusable look on any subject."
+  creative_brief: 'Apply the quiet contour, diffuse light and optional cool-warm palette after the prompt is set. Preserve its subject, action, setting and framing; texture only materials already present. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

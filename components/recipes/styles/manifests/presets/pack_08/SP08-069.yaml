@@ -13,7 +13,7 @@ tags:
   - fabric-and-texture-focus
 visualDna:
   aesthetic: 'Water dress: garments formed of flowing clear water with splashes, droplets and caustic light.'
-  subject_treatment: 'Make the prompt''s garments out of this material while keeping the wearer, their skin, face, pose, action and setting unchanged: garments made of flowing, transparent water with splash edges, droplets and refracted caustics.'
+  subject_treatment: "Make the prompt's garments out of this material while keeping the wearer, their skin, face, pose, action and setting unchanged: garments made of flowing, transparent water with splash edges, droplets and refracted caustics."
   color_and_tone: Clear aqua and silver with light caustics, on the target material while the rest of the scene keeps its natural color.
   lighting_and_shadow: Bright light producing refraction and caustic patterns, chosen to reveal how this material reflects, absorbs or transmits light.
   texture_and_material: Liquid water with splashes, droplets and refraction, with correct scale, weight and surface behavior at every fold and edge.

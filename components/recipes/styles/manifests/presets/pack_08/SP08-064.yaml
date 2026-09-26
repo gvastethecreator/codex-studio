@@ -13,7 +13,7 @@ tags:
   - fabric-and-texture-focus
 visualDna:
   aesthetic: 'Burlap and rags: garments of coarse sackcloth and torn patched rags, tied and knotted together.'
-  subject_treatment: 'Make the prompt''s garments out of this material while keeping the wearer, their skin, face, pose, action and setting unchanged: garments of coarse burlap and torn rag strips, patched and knotted with rope.'
+  subject_treatment: "Make the prompt's garments out of this material while keeping the wearer, their skin, face, pose, action and setting unchanged: garments of coarse burlap and torn rag strips, patched and knotted with rope."
   color_and_tone: Sack brown, dust grey, faded ochre and earth, on the target material while the rest of the scene keeps its natural color.
   lighting_and_shadow: Dim, dusty, natural light, chosen to reveal how this material reflects, absorbs or transmits light.
   texture_and_material: Coarse burlap weave, frayed edges, rope ties and dirt.

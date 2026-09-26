@@ -40,7 +40,7 @@ visualDna:
     layered color.
   key_features: >-
     Undulating internal color; stable contours; layered green-bronze values; restrained stipple.
-  creative_brief: "Use undulating internal color; stable contours; layered green-bronze values; restrained stipple. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject."
+  creative_brief: 'Use undulating internal color; stable contours; layered green-bronze values; restrained stipple. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

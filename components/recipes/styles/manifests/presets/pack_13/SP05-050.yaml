@@ -31,7 +31,7 @@ visualDna:
     Legible contours, uncluttered detail, even color, no blur or ornament.
   key_features: >-
     Gesture-readable contour, matte cel planes, teal-copper accents, clarity through spacing
-  creative_brief: "Apply a visual treatment centered on gesture-readable contour, matte cel planes, teal-copper accents, clarity through spacing. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject."
+  creative_brief: 'Apply a visual treatment centered on gesture-readable contour, matte cel planes, teal-copper accents, clarity through spacing. Preserve the exact subject, action, count, age, costume, setting, camera, and mood. Add nothing outside the prompt. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

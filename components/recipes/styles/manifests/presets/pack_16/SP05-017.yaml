@@ -42,7 +42,7 @@ visualDna:
   key_features: >-
     long slashing contours; dense blue-black cel masses; restrained rust-red accents with sparse
     dry-brush grain
-  creative_brief: "Apply the raw, reflective cel line and restrained palette to the requested subject. Preserve its identity, action, setting and camera; add no swordsman, weapon or historical scene. Use it as a reusable look on any subject."
+  creative_brief: 'Apply the raw, reflective cel line and restrained palette to the requested subject. Preserve its identity, action, setting and camera; add no swordsman, weapon or historical scene. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

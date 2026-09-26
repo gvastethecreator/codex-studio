@@ -42,7 +42,7 @@ visualDna:
   key_features: >-
     Bold contour lock; interleaved chromatic planes; repeat-recoil spacing; source-bound rim
     separation.
-  creative_brief: "Use bold contour lock; interleaved chromatic planes; repeat-recoil spacing; source-bound rim separation. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject."
+  creative_brief: 'Use bold contour lock; interleaved chromatic planes; repeat-recoil spacing; source-bound rim separation. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

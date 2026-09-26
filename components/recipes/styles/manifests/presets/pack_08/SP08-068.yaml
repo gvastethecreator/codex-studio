@@ -13,7 +13,7 @@ tags:
   - fabric-and-texture-focus
 visualDna:
   aesthetic: 'Smoke dress: garments whose lower parts dissolve into drifting smoke while the bodice stays defined.'
-  subject_treatment: 'Make the prompt''s garments out of this material while keeping the wearer, their skin, face, pose, action and setting unchanged: garments with a defined upper part whose hems and trains dissolve into curling smoke.'
+  subject_treatment: "Make the prompt's garments out of this material while keeping the wearer, their skin, face, pose, action and setting unchanged: garments with a defined upper part whose hems and trains dissolve into curling smoke."
   color_and_tone: Charcoal, ash grey, and white smoke against dark backgrounds.
   lighting_and_shadow: Backlight and side light to reveal smoke volumes, chosen to reveal how this material reflects, absorbs or transmits light.
   texture_and_material: Soft volumetric smoke with curling wisps blending from fabric.

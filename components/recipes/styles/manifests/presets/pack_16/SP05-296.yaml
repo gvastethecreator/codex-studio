@@ -42,7 +42,7 @@ visualDna:
     metallic rendering.
   key_features: >-
     Stepped geometry; parallel line rhythm; calibrated symmetry; smooth cel fields.
-  creative_brief: "Use stepped geometry; parallel line rhythm; calibrated symmetry; smooth cel fields. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject."
+  creative_brief: 'Use stepped geometry; parallel line rhythm; calibrated symmetry; smooth cel fields. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

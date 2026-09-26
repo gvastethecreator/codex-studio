@@ -14,7 +14,7 @@ tags:
   - natural-materials
 visualDna:
   aesthetic: 'Crystal and gemstone: faceted translucent crystal with internal refractions and color zones.'
-  subject_treatment: 'Apply this material to the surfaces of the target named in the prompt, keeping the target''s shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is carved from gem crystal with facets and inner refractions.'
+  subject_treatment: "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is carved from gem crystal with facets and inner refractions."
   color_and_tone: Amethyst purple, emerald, sapphire or clear quartz, kept on the material while the rest of the scene keeps its own palette.
   lighting_and_shadow: Point lights producing refraction and fire, chosen to reveal how the material reflects, absorbs or transmits light.
   texture_and_material: Faceted crystal with inclusions and internal reflections, at a believable physical scale relative to the target.

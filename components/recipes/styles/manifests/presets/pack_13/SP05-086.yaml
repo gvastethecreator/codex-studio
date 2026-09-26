@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: 'Preserve the requested tone; color temperature is a visual relationship, not an emotional instruction.'
   rendering_and_quality: 'Use smooth fill transitions, rounded contour joins, and soft-edged shadows with readable value boundaries.'
   key_features: 'Cool ambient planes against warm accents; rounded contour joins; soft value transitions; clear layered separation; matte finish.'
-  creative_brief: "Build separation with cool ambient color and measured warm accents while following the supplied light. Keep subject, action, count, camera, and mood unchanged. Use it as a reusable look on any subject."
+  creative_brief: 'Build separation with cool ambient color and measured warm accents while following the supplied light. Keep subject, action, count, camera, and mood unchanged. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

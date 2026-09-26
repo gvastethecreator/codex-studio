@@ -222,10 +222,10 @@ const summary = {
   briefsWithExactText: exact,
   counts: Object.fromEntries(Object.entries(issues).map(([k, v]) => [k, v.length])),
 };
-console.log(JSON.stringify(summary, null, 1));
+process.stdout.write(`${JSON.stringify(summary, null, 1)}\n`);
 for (const [k, v] of Object.entries(issues)) {
-  console.log(`\n## ${k} (${v.length})`);
-  for (const m of v.slice(0, 12)) console.log('  ' + m);
+  process.stdout.write(`\n## ${k} (${v.length})\n`);
+  for (const m of v.slice(0, 12)) process.stdout.write(`  ${m}\n`);
 }
 const outIdx = process.argv.indexOf('--json');
 if (outIdx > 0)

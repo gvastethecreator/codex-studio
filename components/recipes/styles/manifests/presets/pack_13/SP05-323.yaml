@@ -42,7 +42,7 @@ visualDna:
   key_features: >-
     Prismatic sparkle; tapered contour; ribbon-like motion; gem-light accents; layered translucent
     facets; polished shoujo finish.
-  creative_brief: "Apply this visual treatment to the requested content: Prismatic sparkle; tapered contour; ribbon-like motion; gem-light accents; layered translucent facets; polished shoujo finish. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject."
+  creative_brief: 'Apply this visual treatment to the requested content: Prismatic sparkle; tapered contour; ribbon-like motion; gem-light accents; layered translucent facets; polished shoujo finish. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look

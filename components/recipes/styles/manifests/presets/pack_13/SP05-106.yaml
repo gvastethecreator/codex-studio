@@ -38,7 +38,7 @@ visualDna:
   key_features: >-
     Geometric fan shapes; ruler-straight contour; faceted focal areas; jewel-color cells; asymmetry
     preserved.
-  creative_brief: "Apply this visual treatment to the requested content: Geometric fan shapes; ruler-straight contour; faceted focal areas; jewel-color cells; asymmetry preserved. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject."
+  creative_brief: 'Apply this visual treatment to the requested content: Geometric fan shapes; ruler-straight contour; faceted focal areas; jewel-color cells; asymmetry preserved. Preserve its identity, action, materials, composition and requested tone; introduce no persona, scene, franchise cue or extra motif. Use it as a reusable look on any subject.'
 avoidRules:
   - photoreal cosplay rendering
   - 3D render look

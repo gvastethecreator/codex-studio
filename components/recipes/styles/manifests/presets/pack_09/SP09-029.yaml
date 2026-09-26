@@ -14,7 +14,7 @@ tags:
   - tactile-surfaces
 visualDna:
   aesthetic: 'Velvet: short dense pile that darkens and brightens as it bends, showing finger-brushed trails.'
-  subject_treatment: 'Apply this material to the surfaces of the target named in the prompt, keeping the target''s shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is upholstered in velvet whose pile reverses where touched, leaving darker brushed trails.'
+  subject_treatment: "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is upholstered in velvet whose pile reverses where touched, leaving darker brushed trails."
   color_and_tone: Jewel velvet colors shifting light to dark with pile direction.
   lighting_and_shadow: Low raking light to show pile direction, chosen to reveal how the material reflects, absorbs or transmits light.
   texture_and_material: Dense short pile with brushed trails and crush marks.

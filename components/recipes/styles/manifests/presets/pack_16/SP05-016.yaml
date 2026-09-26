@@ -43,7 +43,7 @@ visualDna:
   key_features: >-
     compressed directional rhythm; violet rim pressure; forceful cel wedges separated into clean
     shadow groups
-  creative_brief: "Use the pressure-driven contour and violet cel-light treatment on the requested content. Preserve its subject, action, wardrobe and composition; add no rival, tournament or combat event. Use it as a reusable look on any subject."
+  creative_brief: 'Use the pressure-driven contour and violet cel-light treatment on the requested content. Preserve its subject, action, wardrobe and composition; add no rival, tournament or combat event. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

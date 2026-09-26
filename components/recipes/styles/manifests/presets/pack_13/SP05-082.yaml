@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: 'Preserve the source mood; sharpen a requested comic beat through line timing without making neutral action comedic.'
   rendering_and_quality: 'Keep resting forms stable and readable; confine elastic distortion to small contour accents and return immediately to the original shape.'
   key_features: 'Steady resting line against sharp gesture marks; localized elastic arcs; short action accents; flat shadows with abrupt value contrast.'
-  creative_brief: "Use still contours and quick elastic marks to distinguish existing action peaks. Preserve subject, action, count, camera, and mood; add no punchline prop, duplicate, or forced expression. Use it as a reusable look on any subject."
+  creative_brief: 'Use still contours and quick elastic marks to distinguish existing action peaks. Preserve subject, action, count, camera, and mood; add no punchline prop, duplicate, or forced expression. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render

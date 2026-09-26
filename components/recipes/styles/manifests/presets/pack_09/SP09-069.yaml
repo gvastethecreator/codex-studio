@@ -14,7 +14,7 @@ tags:
   - tactile-surfaces
 visualDna:
   aesthetic: 'Fiberglass insulation: pink or yellow fluffy glass-fiber batts with an itchy loose texture.'
-  subject_treatment: 'Apply this material to the surfaces of the target named in the prompt, keeping the target''s shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is formed from fluffy fiberglass batts with loose fibers.'
+  subject_treatment: "Apply this material to the surfaces of the target named in the prompt, keeping the target's shape, proportions, function, pose and setting; if no target is named, apply it to the main subject only: the target is formed from fluffy fiberglass batts with loose fibers."
   color_and_tone: Pink or yellow insulation with pale fibers, kept on the material while the rest of the scene keeps its own palette.
   lighting_and_shadow: Soft light showing fluffy fibers, chosen to reveal how the material reflects, absorbs or transmits light.
   texture_and_material: Loose glass-fiber batts with torn edges, at a believable physical scale relative to the target.

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Convey graphic confidence through clean geometry and contrast without assigning hero, villain, powers or a mission.
   rendering_and_quality: Keep panel edges sharp, knit texture subtle and joints believable. Avoid muscle shading, anatomy changes and decorative marks that resemble a known franchise.
   key_features: Close-fit performance knit; bold angular panel blocking; gauntlet-to-boot seam rhythm; optional cape or emblem by request.
-  creative_brief: "Transform the requested clothing into a graphic heroic suit with matte stretch fabric and bold, original panel geometry. Preserve wearer, anatomy, pose, role, scene, palette and framing; add no default cape, emblem, franchise colors, powers or mission. Use it as a reusable look on any subject."
+  creative_brief: 'Transform the requested clothing into a graphic heroic suit with matte stretch fabric and bold, original panel geometry. Preserve wearer, anatomy, pose, role, scene, palette and framing; add no default cape, emblem, franchise colors, powers or mission. Use it as a reusable look on any subject.'
 avoidRules:
   - loose clothes
   - franchise icon

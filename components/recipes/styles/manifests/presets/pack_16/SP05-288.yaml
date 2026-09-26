@@ -42,7 +42,7 @@ visualDna:
     rhythm.
   key_features: >-
     Compressed-to-stretched cadence; tapered arcs; bright planes; intact silhouette.
-  creative_brief: "Use compressed-to-stretched cadence; tapered arcs; bright planes; intact silhouette. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject."
+  creative_brief: 'Use compressed-to-stretched cadence; tapered arcs; bright planes; intact silhouette. Keep the requested subjects, action, setting, palette, framing and mood; add no scene content. Use it as a reusable look on any subject.'
 avoidRules:
   - realistic
   - 3d render
