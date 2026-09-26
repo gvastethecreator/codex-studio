@@ -32,9 +32,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Photograph of a knight's full armor rusted orange-brown with flaking scale and streaks, still standing proud on a stand. No text or logo.",
-        'Photograph of a rusted iron dragon sculpture rising from a field of red poppies, orange-brown rust with flaking scale along the wings, dark streaks running down from every rivet onto the grass. No text or logo.',
-        'Photograph of a rusty iron birdcage hanging in a sunny kitchen window with a live yellow canary inside, flaking orange scale on the bars and rust streaks on the white sill below. No text or logo.',
+        "Still standing proud on its stand in a leaking barn, a suit of armor has rusted orange-brown, flaking scale piled at its feet. No readable text or logo.",
+        "Rising from a field of red poppies, an iron serpent sculpture bleeds orange-brown rust streaks down its flaking wings. No readable text or logo.",
+        "In a sunny kitchen window hangs an iron birdcage flaking orange scale, a live yellow canary singing inside. No readable text or logo.",
       ],
     },
     'SP09-025': {
@@ -49,9 +49,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Photograph of a porcelain knight's helmet glazed white and cobalt resting on a velvet cushion, crazed with fine hairline cracks across the visor, one chipped edge showing raw bisque beneath. No text or logo.",
-        'Photograph of a blue-and-white porcelain dragon on a dim cabinet shelf, a web of hairline crazing through the glaze, a small chip missing from one claw and soft window light. No text or logo.',
-        'Photograph of a celadon porcelain horse on a lacquered table, its pale green glaze crazed with fine dark cracks, a chipped ear and gentle reflections along its back. No text or logo.',
+        "On a velvet cushion a white-and-cobalt glazed helmet is crazed with hairline cracks across the visor, one small chip at the crest. No readable text or logo.",
+        "A blue-and-white ceramic dragon on a dim cabinet shelf is webbed with fine crazing, a chip missing from one claw. No readable text or logo.",
+        "On a lacquered table a celadon horse shows fine dark cracks through its pale green glaze and a chipped ear. No readable text or logo.",
       ],
     },
     'SP09-030': {
@@ -66,9 +66,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a scarecrow knight whose burlap tabard is frayed and stained in a windy field. No text or logo.',
-        'Photograph of a throne draped in a frayed, stained burlap cover in a cold stone hall, coarse sackcloth weave torn at the hem, patched with mismatched squares and damp stains spreading up the sides. No text or logo.',
-        'Photograph of a small burlap doll slumped on a dusty windowsill, frayed edges, coffee-colored stains, a crude patch sewn over one arm and afternoon light through the coarse weave. No text or logo.',
+        "In a windy field a scarecrow sentinel's sackcloth tabard hangs frayed and stained, a crow tugging loose threads from the hem. No readable text or logo.",
+        "In a cold stone hall a throne hides under a frayed, stained sackcloth cover, torn at the hem and patched with mismatched squares. No readable text or logo.",
+        "Slumped on a dusty windowsill, a small sackcloth doll shows coffee-colored stains and a crude patch sewn over one arm. No readable text or logo.",
       ],
     },
     'SP09-033': {
@@ -83,9 +83,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of an old carousel horse with thick layered paint peeling in curls, pink over mint over red, flakes lifting from the mane and bare wood showing at the knees, soft fairground light. No text or logo.',
-        'Photograph of a knight statue in a town square with peeling blue paint cracking and curling off to reveal the bronze beneath, flakes scattered on the plinth and pigeons nearby. No text or logo.',
-        'Photograph of a wooden rowboat pulled onto a pebble beach with layers of white, red and green paint peeling in long curls from the hull, bare grey wood and rust stains at the oarlocks. No text or logo.',
+        "An old carousel horse sheds thick layered paint in curls, pink over mint over red, bare wood showing at the nose. No readable text or logo.",
+        "In a town square a bronze general sheds a coat of blue paint that cracks and curls away, flakes scattered around the plinth. No readable text or logo.",
+        "Pulled onto a pebble beach, a wooden rowboat lets white, red and green coats of paint curl off its hull in long strips. No readable text or logo.",
       ],
     },
     'SP09-034': {
@@ -100,9 +100,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a velvet throne spotted with fuzzy grey-green mold colonies in a damp crypt, patches spreading over the armrests, white mildew bloom on the gilded frame and water dripping from the vault. No text or logo.',
-        'Photograph of an ornate wedding portrait frame hanging in an abandoned hallway, black mildew spots spreading across the gilded edges and fuzzy mold blooming over the faded photograph. No text or logo.',
-        'Photograph of a crown made of bread left on a kitchen table for weeks, fuzzy blue and white mold colonies growing over its points, spores dusting the tablecloth. No text or logo.',
+        "In a damp crypt a velvet throne is spotted with fuzzy grey-green colonies spreading over the armrests. No readable text or logo.",
+        "In an abandoned hallway an ornate wedding portrait frame is spotted with black mildew creeping across the gilding. No readable text or logo.",
+        "Left on a kitchen table for weeks, a crown baked from bread sprouts fuzzy blue and white colonies over its points. No readable text or logo.",
       ],
     },
     'SP09-035': {
@@ -117,9 +117,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a horse sculpture made of charred shou-sugi-ban timber standing in fresh snow, deep black alligator-skin char across its body, silver sheen on the cracked ridges against white ground. No text or logo.',
-        'Photograph of a knight statue carved from charred timber in a stone courtyard, black alligator-skin char on the armor, brushed ridges revealing brown grain beneath and rain beading on the surface. No text or logo.',
-        'Photograph of a wooden throne deliberately charred into cracked black shou-sugi-ban texture standing in a bright white gallery, the sheen on the char catching skylight. No text or logo.',
+        "Standing in fresh snow, a horse sculpture of deliberately charred timber shows deep black alligator-skin char across its body. No readable text or logo.",
+        "In a stone courtyard a warrior carved from charred timber shows brushed ridges where brown grain breaks through the black. No readable text or logo.",
+        "In a bright white gallery a wooden throne charred into cracked black scales glints with a faint silver sheen. No readable text or logo.",
       ],
     },
     'SP09-036': {
@@ -134,9 +134,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a grand piano with tide-line stains and swelling after a flood, in an otherwise tidy room. No text or logo.',
-        'Photograph of a painted wooden icon of a saint on a chapel wall after a flood, brown tide lines across the gold background, swollen warped panel and paint blooming white at the edges. No text or logo.',
-        'Photograph of a wooden rocking horse in a nursery after water damage, tide-line stains on the legs, swollen joints split open and paint bloom where the water sat. No text or logo.',
+        "In an otherwise tidy parlor a piano stands swollen after a flood, brown tide lines ringing its legs at the height the water reached. No readable text or logo.",
+        "On a chapel wall a painted wooden saint bears brown tide lines across its gold background, the panel warped and split. No readable text or logo.",
+        "In a nursery after the flood a wooden rocking horse has swollen joints split open and pale paint bloom on its legs. No readable text or logo.",
       ],
     },
     'SP09-037': {
@@ -151,9 +151,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Photograph of a diner's stainless steel counter and stools covered in bright scratches and scuffs under hard raking light, decades of cutlery gouges cutting through the brushed finish, a dent where a stool was kicked. No text or logo.",
-        'Photograph of a violin made of polished steel covered in fine bright scratches and scuffs, a deep gouge across the body where it was dropped, studio light catching every mark. No text or logo.',
-        'Photograph of a steel horse sculpture in a city plaza, its flanks covered in bright scratches from skateboards and keys, scuffs on the hooves and hard midday light. No text or logo.',
+        "Under hard raking light a diner's stainless steel counter and stools are covered in decades of bright scratches and cutlery gouges. No readable text or logo.",
+        "A trumpet of polished steel lies on a workbench covered in fine bright scratches and one deep gouge where it was dropped. No readable text or logo.",
+        "In a city plaza a steel horse sculpture is covered in bright scratches from skateboards and keys, scuffed bare at the hooves. No readable text or logo.",
       ],
     },
     'SP09-038': {
@@ -168,9 +168,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a crown on a cushion under a fine layer of settled dust with a finger swipe. No text or logo.',
-        'Photograph of a golden harp in an abandoned music room under a soft layer of settled dust, thicker on the top of the frame, a single shaft of window light showing dust motes in the air. No text or logo.',
-        'Photograph of a suit of armor standing in a forgotten castle corridor, dulled by a thick layer of grey dust on the shoulders and helmet, a clean handprint on the breastplate. No text or logo.',
+        "On a cushion in a locked vault a crown sits under fine settled grey powder, one clean finger swipe across its brow. No readable text or logo.",
+        "In an abandoned music room a golden harp dulls under settled grey, thicker along the top of the frame, a shaft of window light crossing it. No readable text or logo.",
+        "In a forgotten corridor a suit of armor wears a thick grey layer on its shoulders and helmet, a moth-shaped clean patch on the visor. No readable text or logo.",
       ],
     },
     'SP09-040': {
@@ -185,9 +185,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a white wedding dress on a mannequin in a garage, dark glossy oil stains soaking into the satin skirt, grease handprints on the bodice and a wrench on the concrete floor. No text or logo.',
-        "Photograph of a mechanic's canvas apron hanging on a hook in a motorcycle workshop, dark glossy oil and grease stains soaking into the fabric, handprint smears on the pocket and a rag tucked in the strap. No text or logo.",
-        'Photograph of a white marble statue of a dancer in a museum with dark oil stains spreading from the base into the stone, a glossy pool on the plinth and a guard staring at it. No text or logo.',
+        "In a garage a white wedding dress on a mannequin soaks up dark glossy stains across the satin skirt, grease handprints on the bodice. No readable text or logo.",
+        "Hanging on a hook in a motorcycle workshop, a mechanic's canvas apron is soaked dark with glossy grease stains. No readable text or logo.",
+        "In a museum a white marble dancer has dark glossy stains spreading up from a pool on its plinth. No readable text or logo.",
       ],
     },
     'SP09-041': {
@@ -202,9 +202,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a wooden rocking chair in a workshop half sanded, swirl marks from an orbital sander across the seat, a matte scratched finish on one side, old varnish on the other and pale dust everywhere. No text or logo.',
-        'Photograph of a dragon egg covered in coarse sandpaper grit resting on a velvet cushion, angular abrasive grains glittering across its shell, a scuffed matte patch where it was rubbed. No text or logo.',
-        'Photograph of an unfinished guitar body on a workbench, sanded to a matte scratched finish with visible swirl marks, a sanding block and fine dust piled beside it. No text or logo.',
+        "Half sanded in a workshop, a wooden rocking chair shows orbital swirl marks across the seat and matte scratches on one arm. No readable text or logo.",
+        "Resting on a velvet cushion, an enormous egg covered in coarse abrasive grit glitters with angular grains across its shell. No readable text or logo.",
+        "On a workbench an unfinished guitar body is sanded to a matte scratched finish, fine dust drifting from the block. No readable text or logo.",
       ],
     },
     'SP09-064': {
@@ -219,9 +219,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a rally jeep coated in dried cracked mud parked in a desert village, the mud splitting into polygon cracks across the doors and bonnet, flakes falling from the wheel arches. No text or logo.',
-        'Photograph of a rhinoceros statue in a dry riverbed caked in cracked grey mud, polygon plates curling at the edges, a few green shoots growing from the cracks along its back. No text or logo.',
-        'Photograph of an ornate throne left in a drained lake bed, coated in grey mud dried into curling polygon cracks, a crow standing on the armrest. No text or logo.',
+        "Parked in a desert village, a rally jeep is caked in dried grey clay split into polygon cracks across its doors. No readable text or logo.",
+        "In a dry riverbed a rhinoceros statue is caked in cracked grey clay plates, green shoots growing from the gaps. No readable text or logo.",
+        "Left in a drained lake bed, an ornate throne is coated in dried clay curling into polygons, a crow perched on the armrest. No readable text or logo.",
       ],
     },
     'SP09-065': {
@@ -236,9 +236,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a white swan statue dripping with thick glossy black tar on a white plinth, long sticky strands stretching from the wings and pooling on the stone. No text or logo.',
-        'Photograph of a seabird statue coated in thick black tar on a rocky shoreline, glossy drips hanging from its beak and wing tips, straw and sand stuck to the sticky surface. No text or logo.',
-        'Photograph of a gold crown half dipped in black tar resting on a stone slab, glossy sticky coating ending in a drip line, the bare gold still shining above it. No text or logo.',
+        "On a white plinth a swan statue drips thick glossy black coating, long sticky strands stretching from its wings. No readable text or logo.",
+        "On a rocky shoreline a seabird statue is smothered in glossy black pitch, drips hanging from its beak and sand stuck to its sides. No readable text or logo.",
+        "Half dipped in black pitch, a gold crown rests on a stone slab, the drip line gleaming against the bare gold above. No readable text or logo.",
       ],
     },
   },
@@ -258,9 +258,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Photograph of a ship's brass bell and anchor chain left on a windswept pier, crusted with white crystalline salt deposits from years of spray, thick crystals on every upturned surface. No text or logo.",
-        'Photograph of a violin left on a seaside windowsill crusted with white salt crystals, crystalline growths along the strings and f-holes, the varnish dulled beneath. No text or logo.',
-        'Photograph of a wooden rowboat stranded on a dry salt lake, its hull crusted with thick white salt crystals, cracked hexagonal salt flats stretching to the horizon. No text or logo.',
+        "On a windswept pier a ship's brass bell and anchor chain are crusted with white crystals from years of sea spray. No readable text or logo.",
+        "Left on a seaside windowsill, a guitar grows white crystal crust along its strings and sound hole. No readable text or logo.",
+        "Stranded on a dry lake bed, a wooden rowboat is crusted with thick white crystals, hexagonal flats stretching to the horizon. No readable text or logo.",
       ],
     },
     {
@@ -278,9 +278,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of an old roadside diner and a parked convertible in the desert, paint sun-bleached to pale pastels on the exposed side while the shaded side keeps rich red and teal, cracked lacquer and sand drifts. No text or logo.',
-        'Photograph of a red velvet throne on a beach faded to pale pink on its sunlit back and armrests, richer crimson in the shaded folds, sand drifting against its legs. No text or logo.',
-        'Photograph of a row of striped deck chairs on a seaside terrace sun-bleached from deep blue to pale grey on the seats while the folds keep their color, a forgotten towel on one chair. No text or logo.',
+        "In the desert an old roadside diner and parked convertible have faded to pale pastels on their sunny sides, rich color surviving in the shade. No readable text or logo.",
+        "On a beach a red velvet throne has faded to pale pink on its sunlit back, crimson still hiding in the folds. No readable text or logo.",
+        "On a seaside terrace striped deck chairs have washed from deep blue to pale grey on the seats while the folds keep their color. No readable text or logo.",
       ],
     },
     {
@@ -298,9 +298,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a white marble angel in a burned chapel, black soot staining it from below, thickest at the feet and fading upward, the stone unburned and the face still clean. No text or logo.',
-        'Photograph of a tall white wedding cake on a banquet table after a kitchen fire, black soot staining the lower tiers, the top tier still white, smoke haze in the room. No text or logo.',
-        'Photograph of a white porcelain teapot on a kitchen shelf blackened with soot from below after a stove fire, the lid still bright, soot fingerprints on the handle and a smoky window behind. No text or logo.',
+        "In a burned chapel a white marble angel is blackened from the feet upward, the stone itself unharmed. No readable text or logo.",
+        "After a kitchen fire a tall white wedding cake is blackened on its lower tiers while the top tier stays pristine. No readable text or logo.",
+        "On a kitchen shelf a white porcelain teapot is blackened from below after a stove fire, smoky fingerprints on the handle. No readable text or logo.",
       ],
     },
     {
@@ -318,9 +318,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a carved wooden saint in a chapel niche riddled with tiny woodworm boreholes, soft dry-rot cracks across the robe, fine powdery frass on the ledge beneath. No text or logo.',
-        'Photograph of an antique wooden chess set riddled with woodworm holes, crumbling pawns, a rook split open by dry rot and fine powdery frass scattered across the squares. No text or logo.',
-        'Photograph of a woodworm-riddled rocking chair on a farmhouse porch, tiny boreholes all over the spindles, soft dry-rot cracks in the seat and evening light. No text or logo.',
+        "In a chapel niche a carved wooden saint is riddled with tiny boreholes, fine powdery frass collecting at its feet. No readable text or logo.",
+        "An antique wooden chess set has crumbled into boreholes, one rook split open by dry rot and pawns reduced to powder. No readable text or logo.",
+        "On a farmhouse porch a rocking chair riddled with boreholes still rocks in the wind, frass sifting from its spindles. No readable text or logo.",
       ],
     },
     {
@@ -338,9 +338,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a silver tea tray eaten by acid in splash-shaped zones, pitted and frosted metal with bubbled edges and bright residue rims, the untouched silver mirror-polished around them. No text or logo.',
-        'Photograph of a glass crown etched by acid, frosted pitted patches across the points, bubbled edges and clear untouched glass between, backlit on a dark cloth. No text or logo.',
-        'Photograph of a bronze gazelle statue with acid-etched pitted streaks running down its flanks, frosted bubbled zones and bright green residue edges on a park plinth. No text or logo.',
+        "A silver tea tray has been eaten in splash-shaped zones, pitted frosted metal with bright residue rims beside untouched mirror silver. No readable text or logo.",
+        "Backlit on a black cloth, a glass crown shows frosted pitted patches across its points with clear glass between. No readable text or logo.",
+        "Running down the flanks of a bronze gazelle, pitted frosted streaks end in bright green residue edges. No readable text or logo.",
       ],
     },
     {
@@ -358,9 +358,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a stone sundial in an overgrown garden dotted with flat crusty lichen rosettes in orange, chartreuse and grey, thickest on the gnomon and upper rim, soft overcast light. No text or logo.',
-        'Photograph of an old rotary telephone left on a garden wall for decades, crusted with orange and grey lichen rosettes, the dial half covered. No text or logo.',
-        'Photograph of a bronze bell hanging in a ruined tower, its surface crusted with yellow and grey lichen rosettes, a rope still hanging from the clapper. No text or logo.',
+        "In an overgrown garden a stone sundial is dotted with flat rosettes in orange, chartreuse and grey, thickest on the gnomon. No readable text or logo.",
+        "Left on a garden wall for decades, an old rotary telephone is crusted with orange and grey rosettes, the dial half covered. No readable text or logo.",
+        "In a ruined tower a bronze bell wears yellow and grey rosettes, its frayed rope still hanging from the clapper. No readable text or logo.",
       ],
     },
     {
@@ -378,9 +378,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a banquet table fully set with plates, goblets and candelabras, everything coated in fine grey volcanic ash, soft rounded edges, footprints in the ash on the floor. No text or logo.',
-        "Photograph of a deserted children's playground frozen under a coat of fine grey volcanic ash, the swings and slide softened, ash still falling from a dim orange sky. No text or logo.",
-        'Photograph of a golden harp in an empty square covered in grey volcanic ash, strings dusted, ash drifting in the air. No text or logo.',
+        "A banquet table fully set with plates, goblets and candelabras lies under fine grey volcanic dust, every edge softened. No readable text or logo.",
+        "An empty playground is frozen under a coat of fine grey volcanic dust, swings and slide softened as more drifts down. No readable text or logo.",
+        "In an empty town square a golden harp stands under a coat of volcanic grey, its strings dusted and the air still hazy. No readable text or logo.",
       ],
     },
   ] satisfies Create[],

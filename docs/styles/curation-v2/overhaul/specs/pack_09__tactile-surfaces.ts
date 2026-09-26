@@ -21,9 +21,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Photograph of a knight's helmet upholstered in emerald velvet with finger-brushed dark trails across the pile. No text or logo.",
-        'Photograph of an antique jewelry box upholstered in plum velvet open on a dressing table, the short dense pile darkening where fingers brushed it and brightening along the curved lid, pearls spilling onto the wood. No text or logo.',
-        'Photograph of a sleeping greyhound on a daybed of crushed teal velvet in a sunlit parlor, the pile shifting from dark to silver-bright where the fabric bends around its body. No text or logo.',
+        "On a museum pedestal a jousting helmet upholstered in emerald pile shows dark finger-brushed trails where a guard could not resist touching it. No readable text or logo.",
+        "Open on a dressing table, an antique jewelry box in plum pile darkens wherever fingers have pressed the short dense nap. No readable text or logo.",
+        "A greyhound sleeps on a daybed of crushed teal velvet in a sunlit parlor, the pile shifting from dark to silver as it breathes. No readable text or logo.",
       ],
     },
     'SP09-039': {
@@ -38,9 +38,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of an abandoned red tractor in a frozen field at dawn, every surface grown over with feathery hoarfrost crystals, long needles on the grille and steering wheel catching the first low sun. No text or logo.',
-        'Photograph of a spider web stretched across a wrought-iron garden gate, every strand thick with feathery hoarfrost crystals, the iron scrolls furred white and a pale winter sun behind. No text or logo.',
-        'Photograph of an old bicycle leaning on a fence at dawn, frame, spokes and basket crusted in feathery hoarfrost, frost needles standing up on the saddle and breath-like mist over the field. No text or logo.',
+        "In a frozen field at dawn an abandoned red tractor is grown over with feathery hoarfrost, long needles standing off every edge. No readable text or logo.",
+        "Stretched across a wrought-iron garden gate, a spider web has thickened into a lace of frost crystals, every strand furred white. No readable text or logo.",
+        "Leaning on a fence at dawn, an old bicycle wears a crust of feathery ice needles on its frame, spokes and basket. No readable text or logo.",
       ],
     },
     'SP09-045': {
@@ -55,9 +55,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a family of needle-felted hedgehogs curled on a wooden shelf, dense matted wool with fuzzy surfaces, soft rounded edges and tiny felted mushrooms and acorns around them. No text or logo.',
-        'Photograph of a needle-felted mushroom village on a windowsill, red caps with fuzzy white spots, round felted doors and windows, soft rounded edges and stray fibers glowing in the light. No text or logo.',
-        'Photograph of felted wool slippers and a matching tea cosy on a farmhouse table, dense matted grey wool with fuzzy surfaces and soft rounded edges, steam rising from the pot. No text or logo.',
+        "Curled on a wooden shelf, a family of needle-matted wool hedgehogs shows fuzzy surfaces and soft rounded edges. No readable text or logo.",
+        "On a windowsill a tiny village of matted wool mushrooms has round fuzzy doors and one lit window. No readable text or logo.",
+        "On a farmhouse table sit matching wool slippers and a tea cosy in dense matted grey, a real mouse asleep in one slipper. No readable text or logo.",
       ],
     },
     'SP09-047': {
@@ -72,9 +72,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Photograph of a knight's full armor covered in shaggy pink synthetic fur in a snowy field. No text or logo.",
-        'Photograph of an old red telephone kiosk on a city street covered entirely in shaggy lilac faux fur, the long glossy pile ruffling in the wind, passersby staring and rain beginning to fall. No text or logo.',
-        'Photograph of an electric guitar covered in shaggy lime-green faux fur on a dark stage, the uniform glossy pile catching a spotlight, a cable curling across the floor. No text or logo.',
+        "Standing in a snowy field, a full suit of armor covered in shaggy pink faux fur looks less menacing than intended. No readable text or logo.",
+        "On a busy street an old red telephone kiosk is covered entirely in shaggy lilac pile ruffling in the wind. No readable text or logo.",
+        "On a dark stage an electric guitar covered in lime-green shag catches the spotlight in every long glossy strand. No readable text or logo.",
       ],
     },
     'SP09-050': {
@@ -89,9 +89,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a lighthouse model carved from dry white chalk on a workshop table, powdery matte surface smudged by fingerprints, chalk dust spread around its base and a carving knife beside it. No text or logo.',
-        'Photograph of a fox figure carved from chalk resting on dark slate, powdery matte surface, a smudge where it was handled and fine white dust drifting from its tail. No text or logo.',
-        "Photograph of a rock climber's hands and rope dusted heavily with dry chalk on a cliff, powdery white prints on the grey stone and a cloud of chalk dust in the sunlight. No text or logo.",
+        "On a workshop table a lighthouse model carved from dry white chalk is smudged by fingerprints, powder gathered at its base. No readable text or logo.",
+        "Resting on dark slate, a small fox figure carved from soft white stone shows a smudge where it was handled and a trail of fine dust. No readable text or logo.",
+        "On a grey cliff a climber's hands and rope are coated in powdery white, leaving ghostly prints on every hold. No readable text or logo.",
       ],
     },
     'SP09-069': {
@@ -106,9 +106,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a whale shaped from fluffy pink fiberglass insulation batts filling a dusty attic, itchy loose fibers floating in a beam of light from the roof window, rafters overhead. No text or logo.',
-        'Photograph of a scarecrow made of yellow fiberglass insulation batts standing in a stubble field, loose glass fibers lifting in the wind and a crow on its outstretched arm. No text or logo.',
-        'Photograph of a hot-air balloon basket stuffed with pink fiberglass batts standing in a field at dawn, fluffy fibers spilling over the wicker edge and the deflated balloon beside it. No text or logo.',
+        "Filling a dusty attic, a whale shaped from fluffy pink insulation batts sheds itchy fibers into a beam of light. No readable text or logo.",
+        "In a stubble field a scarecrow of yellow insulation batts sheds loose glass fibers into the wind, crows refusing to land on it. No readable text or logo.",
+        "At dawn a hot-air balloon basket stuffed with pink insulation spills fluffy fibers over its rim onto the frosty grass. No readable text or logo.",
       ],
     },
     'SP09-074': {
@@ -123,9 +123,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of the interior of an old station wagon covered in long orange shag carpet pile, seats, dashboard and ceiling all shaggy, sunlight through the windows showing every loop. No text or logo.',
-        'Photograph of a camel covered in brown and cream shag carpet pile standing in a desert, the long looped strands swaying as it walks and a low sun behind. No text or logo.',
-        'Photograph of a spiral staircase covered in avocado-green shag carpet in a mid-century house, long cut pile on every step and the handrail, a cat lounging halfway up. No text or logo.',
+        "Inside an old station wagon every surface, seats, dashboard and ceiling, is covered in long orange shag pile. No readable text or logo.",
+        "Crossing a desert, a camel covered in brown and cream shag pile sways its long looped strands with each step. No readable text or logo.",
+        "In a mid-century house a spiral staircase is covered in avocado-green shag, long pile on every step and even the handrail. No readable text or logo.",
       ],
     },
     'SP09-075': {
@@ -140,9 +140,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a vintage camper van covered entirely in bright artificial turf parked at a campsite, dense uniform synthetic blades on the roof and doors, a picnic table beside it. No text or logo.',
-        'Photograph of a grand piano covered in artificial turf on a city rooftop at sunset, dense synthetic blades on the lid and legs, the skyline glowing behind and a watering can on the bench. No text or logo.',
-        'Photograph of a giant snail sculpture covered in artificial turf in a public park, uniform synthetic grass blades on its shell, children climbing on it and real lawn around. No text or logo.',
+        "Parked at a campsite, a vintage camper van is covered entirely in bright synthetic grass, a garden gnome standing on its roof. No readable text or logo.",
+        "On a city rooftop at sunset a grand piano is covered in dense synthetic turf, the lid mowed in neat stripes. No readable text or logo.",
+        "In a public park a giant snail sculpture wears a shell of uniform synthetic grass, a picnicking couple leaning against it. No readable text or logo.",
       ],
     },
   },
@@ -162,9 +162,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a lion statue made of white terrycloth towel loops guarding the entrance of a steamy spa, soft uncut cotton loops forming its mane, water droplets and eucalyptus steam. No text or logo.',
-        'Photograph of an octopus made of striped terrycloth sprawled in a claw-foot bathtub, plush absorbent loops on each tentacle, a rubber duck floating beside it. No text or logo.',
-        'Photograph of a deck chair upholstered in thick yellow terrycloth by a turquoise swimming pool, plush cotton loops wet at one corner and sunglasses on the seat. No text or logo.',
+        "Guarding the entrance of a steamy spa, a lion statue made of white towel loops wears a folded washcloth on its head. No readable text or logo.",
+        "Sprawled in a claw-foot bathtub, an octopus made of striped towel fabric wraps a rubber duck in one plush tentacle. No readable text or logo.",
+        "By a turquoise pool a deck chair upholstered in thick yellow towel loops is soaked dark at one corner. No readable text or logo.",
       ],
     },
     {
@@ -182,9 +182,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a camel saddle and bags in brushed tan suede resting on a desert rug, the velvety nap showing light and dark finger marks, fringed edges and brass buckles. No text or logo.',
-        'Photograph of an antelope sculpture covered in brushed grey suede in a white gallery, the nap turning dark where it was stroked against the grain and pale where it was smoothed. No text or logo.',
-        'Photograph of an accordion covered in brushed burgundy suede on a cafe chair, velvety nap on the bellows showing finger marks, mother-of-pearl buttons catching the light. No text or logo.',
+        "Resting on a desert rug, a camel saddle and bags in tan napped leather show light and dark finger marks. No readable text or logo.",
+        "In a white gallery an antelope sculpture covered in grey napped leather turns dark where visitors stroked it against the grain. No readable text or logo.",
+        "Left on a cafe chair, an accordion covered in burgundy napped leather shows finger marks along its bellows. No readable text or logo.",
       ],
     },
     {
@@ -202,9 +202,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of an astronaut suit rendered as puffy white quilted padding standing in a snowy field, diamond-stitched quilting on the arms and chest, soft volume at every seam. No text or logo.',
-        'Photograph of a whale made of puffy navy quilted padding hanging from a museum ceiling, channel-stitched quilting along its belly and diamond quilting on its fins. No text or logo.',
-        'Photograph of a chapel door upholstered in puffy cream quilted padding with diamond stitching and brass buttons, set in an old stone wall with ivy around it. No text or logo.',
+        "In a snowy field stands an astronaut suit made of puffy white padding, diamond stitching across the arms. No readable text or logo.",
+        "Hanging from a museum ceiling, a whale made of navy padding shows channel stitching along its belly. No readable text or logo.",
+        "Set in an old stone wall, a chapel door upholstered in cream diamond-stitched padding has brass buttons at every crossing. No readable text or logo.",
       ],
     },
     {
@@ -222,9 +222,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a horse statue covered in rust-colored corduroy standing in a summer meadow, parallel velvet wales following the curve of its neck and flanks, soft ridged texture in the light. No text or logo.',
-        'Photograph of a teddy bear made of worn mustard corduroy sitting on a park bench in autumn, the parallel wales rubbed flat on its nose and paws, leaves around it. No text or logo.',
-        'Photograph of a deep armchair upholstered in chocolate corduroy by a reading lamp, parallel ridged wales catching the light across the cushions and a book on the arm. No text or logo.',
+        "In a summer meadow a horse statue covered in rust-colored wales shows parallel velvet ridges following its muscles. No readable text or logo.",
+        "On a park bench in autumn sits a teddy bear of worn mustard wales, rubbed flat on the nose from years of hugs. No readable text or logo.",
+        "By a reading lamp a deep armchair upholstered in chocolate wales catches the light in parallel ridges. No readable text or logo.",
       ],
     },
     {
@@ -242,9 +242,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a wall of grey memory foam in a recording studio covered in fresh handprints slowly rising back, soft slow-rebound texture and a microphone in the foreground. No text or logo.',
-        'Photograph of a car seat made of memory foam still holding the deep imprint of its last driver, the foam slowly rebounding, keys left on the passenger side. No text or logo.',
-        'Photograph of a memory-foam pillow holding the perfect imprint of a curled sleeping cat that has just left, a few hairs in the hollow and morning light. No text or logo.',
+        "In a recording studio a wall of grey slow-rebound foam holds fresh handprints that are slowly rising back. No readable text or logo.",
+        "A car seat of slow-rebound foam still holds the deep imprint of its last driver, keys left in the hollow. No readable text or logo.",
+        "A pillow still holds the perfect imprint of a curled cat that has just left, a few hairs in the hollow. No readable text or logo.",
       ],
     },
     {
@@ -262,9 +262,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Photograph of a wooden sled lined and wrapped in curly cream shearling fleece at the top of a snowy hill, dense crimped wool around the seat and a child's mittens on it. No text or logo.",
-        'Photograph of a ram sculpture covered in curly shearling fleece standing in fresh snow, dense crimped wool on its body and polished curled horns. No text or logo.',
-        'Photograph of a low armchair covered in curly shearling fleece in a cabin by the fire, dense crimped wool catching the firelight and a mug of cocoa beside it. No text or logo.',
+        "At the top of a snowy hill a wooden sled is wrapped in curly cream sheepskin, dense crimped wool around the runners. No readable text or logo.",
+        "Standing in fresh snow, a ram sculpture covered in curly sheepskin shows polished horns above dense crimped wool. No readable text or logo.",
+        "In a cabin by the fire a low armchair covered in curly sheepskin catches the firelight, a book face down on the seat. No readable text or logo.",
       ],
     },
     {
@@ -282,9 +282,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a jellyfish-shaped lamp made of matte pastel-mint soft-touch silicone on a bedside table, the squishy rubbery bell slightly translucent where the bulb glows inside. No text or logo.',
-        'Photograph of a squishy peach silicone frog sitting on a real lily pad, matte rubbery skin slightly translucent at the toes, droplets beading on its back. No text or logo.',
-        'Photograph of a chess set cast in soft-touch pastel silicone on a white table, squishy matte pieces slightly translucent, one pawn squashed flat by a finger. No text or logo.',
+        "On a bedside table a jellyfish-shaped lamp of matte pastel-mint rubber glows slightly through its squishy bell. No readable text or logo.",
+        "Sitting on a real lily pad, a squishy peach rubber frog is slightly translucent at the toes, droplets beading on its skin. No readable text or logo.",
+        "On a white table a chess set cast in soft pastel rubber has one pawn visibly squashed by an impatient player. No readable text or logo.",
       ],
     },
     {
@@ -302,9 +302,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Photograph of a surfer's dog wearing a fitted black neoprene suit on a stormy beach, thick spongy panels with jersey facing and glued seams, spray flying behind. No text or logo.",
-        'Photograph of a seal sculpture made of black neoprene panels lying on wet rocks, glued seams along its body and jersey facing catching the grey light. No text or logo.',
-        'Photograph of a kayak covered in blue neoprene panels on a fast river, thick spongy material with glued seams and jersey facing, water beading on the surface. No text or logo.',
+        "On a stormy beach a surfer's dog wears a fitted black wetsuit, thick spongy panels with glued seams. No readable text or logo.",
+        "Lying on wet rocks, a seal sculpture made of black wetsuit panels shows glued seams along its body. No readable text or logo.",
+        "On a fast river a kayak covered in blue wetsuit panels bounces through the spray, jersey facing darkened by water. No readable text or logo.",
       ],
     },
     {
@@ -322,9 +322,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a small boat carved from pale pumice floating on a crater lake, frothy porous stone full of tiny holes, water lapping at its sides and a volcano rim behind. No text or logo.',
-        'Photograph of a ram skull carved from grey pumice on a black sand beach, rough frothy stone with tiny pores, the curled horns catching low sunlight. No text or logo.',
-        'Photograph of a sphinx sculpture carved from porous pumice in a sunny courtyard, frothy stone texture with tiny holes and rough edges on its paws. No text or logo.',
+        "Floating on a crater lake, a small boat carved from pale frothy stone bobs lightly despite being solid rock. No readable text or logo.",
+        "On a black sand beach a ram skull carved from grey frothy volcanic stone catches the light in its curled horns. No readable text or logo.",
+        "In a sunny courtyard a sphinx carved from porous volcanic stone crumbles slightly at the paws. No readable text or logo.",
       ],
     },
     {
@@ -342,9 +342,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a stag head trophy coated in black flocking hanging in a white gallery, the short sprayed fibers giving a uniform velvety matte coat that swallows the light. No text or logo.',
-        'Photograph of a rotary telephone coated in red flocking on a side table, uniform velvety matte fibers over the dial and handset, soft shadows with no highlights. No text or logo.',
-        'Photograph of a pineapple coated in golden flocking on a fruit bowl, the short sprayed fibers turning its scales velvety and matte beside real fruit. No text or logo.',
+        "In a white gallery hangs a stag head trophy coated in black velvety fibers, a uniform matte coat on the antlers. No readable text or logo.",
+        "On a side table a rotary telephone coated in red velvety fibers has a soft matte dial and handset. No readable text or logo.",
+        "In a fruit bowl a pineapple coated in golden velvety fibers sits matte and soft beside ordinary apples. No readable text or logo.",
       ],
     },
     {
@@ -362,9 +362,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        'Photograph of a bust of an old sailor modeled from grey kneaded putty on a workbench, fingerprints and folds all over his beard and cap, pulled strands at the base. No text or logo.',
-        'Photograph of an octopus modeled from soft teal kneaded putty on a table, tentacles stretched into thin pulled strands, fingerprints and folds on its body. No text or logo.',
-        'Photograph of a snail house modeled from kneaded putty on a leaf, spiral shell with fingerprints, soft folds and a tiny door pressed in with a thumb. No text or logo.',
+        "On a workbench a bust of an old sailor modeled from grey putty is covered in fingerprints and folds in his beard and cap. No readable text or logo.",
+        "On a table an octopus modeled from soft teal putty stretches its tentacles into thin pulled strands. No readable text or logo.",
+        "On a leaf rests a snail house modeled from putty, a spiral shell with fingerprints and a tiny door pressed in with a fingernail. No readable text or logo.",
       ],
     },
     {
@@ -382,9 +382,9 @@ const spec: Spec = {
       ),
       avoid: AVOID,
       briefs: [
-        "Photograph of a vintage doctor's bag in cognac pebbled leather on a wooden bench, raised pebble grain with a soft sheen, brass clasp and worn handles. No text or logo.",
-        'Photograph of an armadillo sculpture covered in black pebbled leather on a desert rock, raised pebble texture across its banded shell and a soft sheen in the sun. No text or logo.',
-        'Photograph of a gramophone horn covered in oxblood pebbled leather on a side table, raised pebble grain and soft sheen along the flare, a record spinning below. No text or logo.',
+        "On a wooden bench a vintage doctor's bag in cognac full-grain leather shows raised pebble texture and a brass clasp. No readable text or logo.",
+        "On a desert rock an armadillo sculpture covered in black full-grain leather shows raised pebble texture across its banded shell. No readable text or logo.",
+        "On a side table a gramophone horn covered in oxblood grained leather shows soft sheen along its flare. No readable text or logo.",
       ],
     },
   ] satisfies Create[],
