@@ -3,7 +3,7 @@
     {
       "id": "pack_25",
       "name": "Applied Design",
-      "presetCount": 280
+      "presetCount": 300
     }
   ],
   "presets": [
@@ -5078,7 +5078,407 @@
       ],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp25-280 flat-art and mockup pair flat art and applied mockup pair profile flat master 14. apparel & merchandise graphics apparel & merch graphics flat art and applied mockup pair profile pack_25 applied design apparel-and-merchandise-graphics applied-design apparel-and-merchandise-graphics flat-art-and-applied-mockup-pair-profile"
+    },
+    {
+      "id": "SP25-281",
+      "name": "Threshold Color Fields",
+      "styleAnchors": [
+        "Threshold Color Fields",
+        "doorway color field wayfinding",
+        "doorway color fields"
+      ],
+      "ref": "pack_25/SP25-281.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "environmental-graphics-and-wayfinding",
+      "categoryName": "15. Environmental Graphics & Wayfinding",
+      "domain": "doorway color field wayfinding",
+      "tags": [
+        "applied-design",
+        "environmental-graphics-and-wayfinding",
+        "doorway-color-field-wayfinding"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-281 threshold color fields doorway color field wayfinding doorway color fields 15. environmental graphics & wayfinding wayfinding & environmental graphics doorway color field wayfinding pack_25 applied design environmental-graphics-and-wayfinding applied-design environmental-graphics-and-wayfinding doorway-color-field-wayfinding"
+    },
+    {
+      "id": "SP25-282",
+      "name": "Overscale Index Wayfinding",
+      "styleAnchors": [
+        "Overscale Index Wayfinding",
+        "giant index letter wayfinding",
+        "giant index"
+      ],
+      "ref": "pack_25/SP25-282.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "environmental-graphics-and-wayfinding",
+      "categoryName": "15. Environmental Graphics & Wayfinding",
+      "domain": "giant index letter wayfinding",
+      "tags": [
+        "applied-design",
+        "environmental-graphics-and-wayfinding",
+        "giant-index-letter-wayfinding"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-282 overscale index wayfinding giant index letter wayfinding giant index 15. environmental graphics & wayfinding wayfinding & environmental graphics giant index letter wayfinding pack_25 applied design environmental-graphics-and-wayfinding applied-design environmental-graphics-and-wayfinding giant-index-letter-wayfinding"
+    },
+    {
+      "id": "SP25-283",
+      "name": "Material-Inlaid Navigation",
+      "styleAnchors": ["Material-Inlaid Navigation", "inlaid material sign", "flush inlay"],
+      "ref": "pack_25/SP25-283.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "environmental-graphics-and-wayfinding",
+      "categoryName": "15. Environmental Graphics & Wayfinding",
+      "domain": "inlaid material sign",
+      "tags": ["applied-design", "environmental-graphics-and-wayfinding", "inlaid-material-sign"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-283 material-inlaid navigation inlaid material sign flush inlay 15. environmental graphics & wayfinding wayfinding & environmental graphics inlaid material sign pack_25 applied design environmental-graphics-and-wayfinding applied-design environmental-graphics-and-wayfinding inlaid-material-sign"
+    },
+    {
+      "id": "SP25-284",
+      "name": "Route-Line Wall Systems",
+      "styleAnchors": [
+        "Route-Line Wall Systems",
+        "continuous route line wayfinding",
+        "continuous wall line"
+      ],
+      "ref": "pack_25/SP25-284.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "environmental-graphics-and-wayfinding",
+      "categoryName": "15. Environmental Graphics & Wayfinding",
+      "domain": "continuous route line wayfinding",
+      "tags": [
+        "applied-design",
+        "environmental-graphics-and-wayfinding",
+        "continuous-route-line-wayfinding"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-284 route-line wall systems continuous route line wayfinding continuous wall line 15. environmental graphics & wayfinding wayfinding & environmental graphics continuous route line wayfinding pack_25 applied design environmental-graphics-and-wayfinding applied-design environmental-graphics-and-wayfinding continuous-route-line-wayfinding"
+    },
+    {
+      "id": "SP25-285",
+      "name": "Open-Frame Signage",
+      "styleAnchors": ["Open-Frame Signage", "partial-frame sign system", "partial frame"],
+      "ref": "pack_25/SP25-285.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "environmental-graphics-and-wayfinding",
+      "categoryName": "15. Environmental Graphics & Wayfinding",
+      "domain": "partial-frame sign system",
+      "tags": [
+        "applied-design",
+        "environmental-graphics-and-wayfinding",
+        "partial-frame-sign-system"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-285 open-frame signage partial-frame sign system partial frame 15. environmental graphics & wayfinding wayfinding & environmental graphics partial-frame sign system pack_25 applied design environmental-graphics-and-wayfinding applied-design environmental-graphics-and-wayfinding partial-frame-sign-system"
+    },
+    {
+      "id": "SP25-286",
+      "name": "Layered Directory Panels",
+      "styleAnchors": ["Layered Directory Panels", "layered hierarchy directory", "stacked plates"],
+      "ref": "pack_25/SP25-286.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "environmental-graphics-and-wayfinding",
+      "categoryName": "15. Environmental Graphics & Wayfinding",
+      "domain": "layered hierarchy directory",
+      "tags": [
+        "applied-design",
+        "environmental-graphics-and-wayfinding",
+        "layered-hierarchy-directory"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-286 layered directory panels layered hierarchy directory stacked plates 15. environmental graphics & wayfinding wayfinding & environmental graphics layered hierarchy directory pack_25 applied design environmental-graphics-and-wayfinding applied-design environmental-graphics-and-wayfinding layered-hierarchy-directory"
+    },
+    {
+      "id": "SP25-287",
+      "name": "Type-as-Architecture Graphics",
+      "styleAnchors": [
+        "Type-as-Architecture Graphics",
+        "architectural supergraphic lettering",
+        "architectural scale type"
+      ],
+      "ref": "pack_25/SP25-287.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "environmental-graphics-and-wayfinding",
+      "categoryName": "15. Environmental Graphics & Wayfinding",
+      "domain": "architectural supergraphic lettering",
+      "tags": [
+        "applied-design",
+        "environmental-graphics-and-wayfinding",
+        "architectural-supergraphic-lettering"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-287 type-as-architecture graphics architectural supergraphic lettering architectural scale type 15. environmental graphics & wayfinding wayfinding & environmental graphics architectural supergraphic lettering pack_25 applied design environmental-graphics-and-wayfinding applied-design environmental-graphics-and-wayfinding architectural-supergraphic-lettering"
+    },
+    {
+      "id": "SP25-288",
+      "name": "Perforated Light Sign Systems",
+      "styleAnchors": [
+        "Perforated Light Sign Systems",
+        "backlit perforated sign",
+        "perforated letters"
+      ],
+      "ref": "pack_25/SP25-288.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "environmental-graphics-and-wayfinding",
+      "categoryName": "15. Environmental Graphics & Wayfinding",
+      "domain": "backlit perforated sign",
+      "tags": [
+        "applied-design",
+        "environmental-graphics-and-wayfinding",
+        "backlit-perforated-sign"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-288 perforated light sign systems backlit perforated sign perforated letters 15. environmental graphics & wayfinding wayfinding & environmental graphics backlit perforated sign pack_25 applied design environmental-graphics-and-wayfinding applied-design environmental-graphics-and-wayfinding backlit-perforated-sign"
+    },
+    {
+      "id": "SP25-289",
+      "name": "Data-Ribbon Environments",
+      "styleAnchors": ["Data-Ribbon Environments", "data band along walls", "continuous data band"],
+      "ref": "pack_25/SP25-289.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "environmental-graphics-and-wayfinding",
+      "categoryName": "15. Environmental Graphics & Wayfinding",
+      "domain": "data band along walls",
+      "tags": ["applied-design", "environmental-graphics-and-wayfinding", "data-band-along-walls"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-289 data-ribbon environments data band along walls continuous data band 15. environmental graphics & wayfinding wayfinding & environmental graphics data band along walls pack_25 applied design environmental-graphics-and-wayfinding applied-design environmental-graphics-and-wayfinding data-band-along-walls"
+    },
+    {
+      "id": "SP25-290",
+      "name": "Floor-to-Wall Continuity",
+      "styleAnchors": [
+        "Floor-to-Wall Continuity",
+        "floor to wall wayfinding graphic",
+        "floor to wall path"
+      ],
+      "ref": "pack_25/SP25-290.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "environmental-graphics-and-wayfinding",
+      "categoryName": "15. Environmental Graphics & Wayfinding",
+      "domain": "floor to wall wayfinding graphic",
+      "tags": [
+        "applied-design",
+        "environmental-graphics-and-wayfinding",
+        "floor-to-wall-wayfinding-graphic"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-290 floor-to-wall continuity floor to wall wayfinding graphic floor to wall path 15. environmental graphics & wayfinding wayfinding & environmental graphics floor to wall wayfinding graphic pack_25 applied design environmental-graphics-and-wayfinding applied-design environmental-graphics-and-wayfinding floor-to-wall-wayfinding-graphic"
+    },
+    {
+      "id": "SP25-291",
+      "name": "Quiet Museum Labels",
+      "styleAnchors": ["Quiet Museum Labels", "sober museum label system", "sober hierarchy"],
+      "ref": "pack_25/SP25-291.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "environmental-graphics-and-wayfinding",
+      "categoryName": "15. Environmental Graphics & Wayfinding",
+      "domain": "sober museum label system",
+      "tags": [
+        "applied-design",
+        "environmental-graphics-and-wayfinding",
+        "sober-museum-label-system"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-291 quiet museum labels sober museum label system sober hierarchy 15. environmental graphics & wayfinding wayfinding & environmental graphics sober museum label system pack_25 applied design environmental-graphics-and-wayfinding applied-design environmental-graphics-and-wayfinding sober-museum-label-system"
+    },
+    {
+      "id": "SP25-292",
+      "name": "Industrial Plate Navigation",
+      "styleAnchors": ["Industrial Plate Navigation", "bolted plate wayfinding", "bolted plates"],
+      "ref": "pack_25/SP25-292.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "environmental-graphics-and-wayfinding",
+      "categoryName": "15. Environmental Graphics & Wayfinding",
+      "domain": "bolted plate wayfinding",
+      "tags": [
+        "applied-design",
+        "environmental-graphics-and-wayfinding",
+        "bolted-plate-wayfinding"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-292 industrial plate navigation bolted plate wayfinding bolted plates 15. environmental graphics & wayfinding wayfinding & environmental graphics bolted plate wayfinding pack_25 applied design environmental-graphics-and-wayfinding applied-design environmental-graphics-and-wayfinding bolted-plate-wayfinding"
+    },
+    {
+      "id": "SP25-293",
+      "name": "Soft Monumental Letters",
+      "styleAnchors": ["Soft Monumental Letters", "large soft volumetric letters", "soft volumes"],
+      "ref": "pack_25/SP25-293.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "environmental-graphics-and-wayfinding",
+      "categoryName": "15. Environmental Graphics & Wayfinding",
+      "domain": "large soft volumetric letters",
+      "tags": [
+        "applied-design",
+        "environmental-graphics-and-wayfinding",
+        "large-soft-volumetric-letters"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-293 soft monumental letters large soft volumetric letters soft volumes 15. environmental graphics & wayfinding wayfinding & environmental graphics large soft volumetric letters pack_25 applied design environmental-graphics-and-wayfinding applied-design environmental-graphics-and-wayfinding large-soft-volumetric-letters"
+    },
+    {
+      "id": "SP25-294",
+      "name": "Window-Layer Graphics",
+      "styleAnchors": ["Window-Layer Graphics", "layered window vinyl graphic", "layers on glass"],
+      "ref": "pack_25/SP25-294.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "environmental-graphics-and-wayfinding",
+      "categoryName": "15. Environmental Graphics & Wayfinding",
+      "domain": "layered window vinyl graphic",
+      "tags": [
+        "applied-design",
+        "environmental-graphics-and-wayfinding",
+        "layered-window-vinyl-graphic"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-294 window-layer graphics layered window vinyl graphic layers on glass 15. environmental graphics & wayfinding wayfinding & environmental graphics layered window vinyl graphic pack_25 applied design environmental-graphics-and-wayfinding applied-design environmental-graphics-and-wayfinding layered-window-vinyl-graphic"
+    },
+    {
+      "id": "SP25-295",
+      "name": "Modular Exhibition Captions",
+      "styleAnchors": [
+        "Modular Exhibition Captions",
+        "flexible exhibition caption module",
+        "caption modules"
+      ],
+      "ref": "pack_25/SP25-295.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "environmental-graphics-and-wayfinding",
+      "categoryName": "15. Environmental Graphics & Wayfinding",
+      "domain": "flexible exhibition caption module",
+      "tags": [
+        "applied-design",
+        "environmental-graphics-and-wayfinding",
+        "flexible-exhibition-caption-module"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-295 modular exhibition captions flexible exhibition caption module caption modules 15. environmental graphics & wayfinding wayfinding & environmental graphics flexible exhibition caption module pack_25 applied design environmental-graphics-and-wayfinding applied-design environmental-graphics-and-wayfinding flexible-exhibition-caption-module"
+    },
+    {
+      "id": "SP25-296",
+      "name": "Landscape-Edge Markers",
+      "styleAnchors": [
+        "Landscape-Edge Markers",
+        "outdoor path edge marker",
+        "compact outdoor marker"
+      ],
+      "ref": "pack_25/SP25-296.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "environmental-graphics-and-wayfinding",
+      "categoryName": "15. Environmental Graphics & Wayfinding",
+      "domain": "outdoor path edge marker",
+      "tags": [
+        "applied-design",
+        "environmental-graphics-and-wayfinding",
+        "outdoor-path-edge-marker"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-296 landscape-edge markers outdoor path edge marker compact outdoor marker 15. environmental graphics & wayfinding wayfinding & environmental graphics outdoor path edge marker pack_25 applied design environmental-graphics-and-wayfinding applied-design environmental-graphics-and-wayfinding outdoor-path-edge-marker"
+    },
+    {
+      "id": "SP25-297",
+      "name": "Tiled Mosaic Signage",
+      "styleAnchors": [
+        "Tiled Mosaic Signage",
+        "ceramic tile mosaic lettering",
+        "glazed tile letters"
+      ],
+      "ref": "pack_25/SP25-297.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "environmental-graphics-and-wayfinding",
+      "categoryName": "15. Environmental Graphics & Wayfinding",
+      "domain": "ceramic tile mosaic lettering",
+      "tags": [
+        "applied-design",
+        "environmental-graphics-and-wayfinding",
+        "ceramic-tile-mosaic-lettering"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-297 tiled mosaic signage ceramic tile mosaic lettering glazed tile letters 15. environmental graphics & wayfinding wayfinding & environmental graphics ceramic tile mosaic lettering pack_25 applied design environmental-graphics-and-wayfinding applied-design environmental-graphics-and-wayfinding ceramic-tile-mosaic-lettering"
+    },
+    {
+      "id": "SP25-298",
+      "name": "Near-Far Legibility Trial",
+      "styleAnchors": [
+        "Near-Far Legibility Trial",
+        "near and far sign view sheet profile",
+        "near, far and oblique"
+      ],
+      "ref": "pack_25/SP25-298.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "environmental-graphics-and-wayfinding",
+      "categoryName": "15. Environmental Graphics & Wayfinding",
+      "domain": "near and far sign view sheet profile",
+      "tags": [
+        "applied-design",
+        "environmental-graphics-and-wayfinding",
+        "near-and-far-sign-view-sheet-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-298 near-far legibility trial near and far sign view sheet profile near, far and oblique 15. environmental graphics & wayfinding wayfinding & environmental graphics near and far sign view sheet profile pack_25 applied design environmental-graphics-and-wayfinding applied-design environmental-graphics-and-wayfinding near-and-far-sign-view-sheet-profile"
+    },
+    {
+      "id": "SP25-299",
+      "name": "Decision-Point Sign Layout",
+      "styleAnchors": [
+        "Decision-Point Sign Layout",
+        "route decision sign sequence profile",
+        "entrance, decision, arrival"
+      ],
+      "ref": "pack_25/SP25-299.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "environmental-graphics-and-wayfinding",
+      "categoryName": "15. Environmental Graphics & Wayfinding",
+      "domain": "route decision sign sequence profile",
+      "tags": [
+        "applied-design",
+        "environmental-graphics-and-wayfinding",
+        "route-decision-sign-sequence-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-299 decision-point sign layout route decision sign sequence profile entrance, decision, arrival 15. environmental graphics & wayfinding wayfinding & environmental graphics route decision sign sequence profile pack_25 applied design environmental-graphics-and-wayfinding applied-design environmental-graphics-and-wayfinding route-decision-sign-sequence-profile"
+    },
+    {
+      "id": "SP25-300",
+      "name": "Anamorphic Viewpoint Graphic",
+      "styleAnchors": [
+        "Anamorphic Viewpoint Graphic",
+        "viewpoint-aligned anamorphic profile",
+        "single viewpoint"
+      ],
+      "ref": "pack_25/SP25-300.yaml",
+      "packId": "pack_25",
+      "packName": "Applied Design",
+      "categoryId": "environmental-graphics-and-wayfinding",
+      "categoryName": "15. Environmental Graphics & Wayfinding",
+      "domain": "viewpoint-aligned anamorphic profile",
+      "tags": [
+        "applied-design",
+        "environmental-graphics-and-wayfinding",
+        "viewpoint-aligned-anamorphic-profile"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp25-300 anamorphic viewpoint graphic viewpoint-aligned anamorphic profile single viewpoint 15. environmental graphics & wayfinding wayfinding & environmental graphics viewpoint-aligned anamorphic profile pack_25 applied design environmental-graphics-and-wayfinding applied-design environmental-graphics-and-wayfinding viewpoint-aligned-anamorphic-profile"
     }
   ],
-  "totalPresetCount": 280
+  "totalPresetCount": 300
 }

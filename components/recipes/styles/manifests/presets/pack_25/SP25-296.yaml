@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-296
+packId: pack_25
+name: Landscape-Edge Markers
+styleAnchors:
+  - Landscape-Edge Markers
+  - outdoor path edge marker
+  - compact outdoor marker
+displayName: Landscape-Edge Markers
+category: 15. Environmental Graphics & Wayfinding
+domain: outdoor path edge marker
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - environmental-graphics-and-wayfinding
+  - landscape-marker
+  - applied-design
+  - wayfinding
+  - r-env-16
+  - requested-text
+visualDna:
+  aesthetic: 'Landscape-Edge Markers: compact outdoor markers set along the edges of paths, clearly readable yet at home in the landscape.'
+  subject_treatment: Place compact markers along the prompt's existing path edges, out of the walking line, each with an exact name and arrow.
+  color_and_tone: Contrast against the surroundings with a redundant destination code.
+  lighting_and_shadow: Ambient outdoor light with no invented night visibility.
+  texture_and_material: Soberly rendered outdoor material with clean, legible edges on every face.
+  camera_and_composition: Placed off the path, oriented to the approach, no new trails.
+  atmosphere_and_mood: A discreet, recognizable presence at the edge of the path.
+  rendering_and_quality: Clean marker with clear name and arrow in its real setting.
+  creative_brief: "Landscape-Edge Markers: compact outdoor markers set along the edges of paths, clearly readable yet at home in the landscape. Carry it through compact outdoor marker, path edge, exact name, approach orientation. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: compact outdoor marker; path edge; exact name; approach orientation
+avoidRules:
+  - invented trails
+  - guaranteed weather resistance
+  - altered architecture or invented routes
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: invented trails, guaranteed weather resistance, altered architecture or invented routes, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: environmental-graphics-and-wayfinding
+  categoryName: 15. Environmental Graphics & Wayfinding
+  domain: outdoor path edge marker
+  tags:
+    - curation-v2
+    - environmental-graphics-and-wayfinding
+    - landscape-marker
+    - applied-design
+    - wayfinding
+    - r-env-16
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

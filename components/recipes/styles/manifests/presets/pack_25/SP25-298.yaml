@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP25-298
+packId: pack_25
+name: Near-Far Legibility Trial
+styleAnchors:
+  - Near-Far Legibility Trial
+  - near and far sign view sheet profile
+  - near, far and oblique
+displayName: Near-Far Legibility Trial
+category: 15. Environmental Graphics & Wayfinding
+domain: near and far sign view sheet profile
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - environmental-graphics-and-wayfinding
+  - near-far
+  - applied-design
+  - wayfinding
+  - profile
+  - r-env-20
+  - requested-text
+visualDna:
+  aesthetic: 'Near-Far Legibility Trial: one sign shown from a near and a far viewpoint and at an angle, the same artwork and size in every view.'
+  subject_treatment: Show the prompt's sign from a near view, a far view and an oblique view, with the same artwork, size and surroundings in each.
+  color_and_tone: Original sign colors plus one extra greyscale test view.
+  lighting_and_shadow: The available site light, other conditions noted as pending.
+  texture_and_material: Constant support and finish with reflections left in place.
+  camera_and_composition: Declared test cameras plus a frontal control view.
+  atmosphere_and_mood: A progressive reading from far recognition to near detail.
+  rendering_and_quality: Clean sheet with identical geometry in every view.
+  creative_brief: "Near-Far Legibility Trial: one sign shown from a near and a far viewpoint and at an angle, the same artwork and size in every view. Carry it through near, far and oblique, same sign, greyscale test, control view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: near, far and oblique; same sign; greyscale test; control view
+avoidRules:
+  - invented normative distances
+  - sign enlarged between views
+  - altered architecture or invented routes
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: invented normative distances, sign enlarged between views, altered architecture or invented routes, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: environmental-graphics-and-wayfinding
+  categoryName: 15. Environmental Graphics & Wayfinding
+  domain: near and far sign view sheet profile
+  tags:
+    - curation-v2
+    - environmental-graphics-and-wayfinding
+    - near-far
+    - applied-design
+    - wayfinding
+    - profile
+    - r-env-20
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

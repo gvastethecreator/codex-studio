@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-290
+packId: pack_25
+name: Floor-to-Wall Continuity
+styleAnchors:
+  - Floor-to-Wall Continuity
+  - floor to wall wayfinding graphic
+  - floor to wall path
+displayName: Floor-to-Wall Continuity
+category: 15. Environmental Graphics & Wayfinding
+domain: floor to wall wayfinding graphic
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - environmental-graphics-and-wayfinding
+  - floor-wall
+  - applied-design
+  - wayfinding
+  - r-env-10
+  - requested-text
+visualDna:
+  aesthetic: 'Floor-to-Wall Continuity: one graphic path that climbs from the floor onto the wall through an existing corner, keeping its direction and meaning.'
+  subject_treatment: Run the prompt's wayfinding graphic from the floor up the wall through a real corner, matching points at the edge and placing text on one readable plane.
+  color_and_tone: The same color and symbol on both planes with adapted contrast.
+  lighting_and_shadow: The site light kept, corner shadows never implying a step.
+  texture_and_material: Conceptual graphic material kept separate from the real surfaces.
+  camera_and_composition: Matching points at the corner edge and text fully on one plane.
+  atmosphere_and_mood: Clear spatial continuity with a controlled change of orientation.
+  rendering_and_quality: Clean graphic readable from more than one approach position.
+  creative_brief: "Floor-to-Wall Continuity: one graphic path that climbs from the floor onto the wall through an existing corner, keeping its direction and meaning. Carry it through floor to wall path, matched corner, text on one plane, same symbol. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: floor to wall path; matched corner; text on one plane; same symbol
+avoidRules:
+  - dangerous step illusions
+  - direction readable from one camera only
+  - altered architecture or invented routes
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: dangerous step illusions, direction readable from one camera only, altered architecture or invented routes, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: environmental-graphics-and-wayfinding
+  categoryName: 15. Environmental Graphics & Wayfinding
+  domain: floor to wall wayfinding graphic
+  tags:
+    - curation-v2
+    - environmental-graphics-and-wayfinding
+    - floor-wall
+    - applied-design
+    - wayfinding
+    - r-env-10
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

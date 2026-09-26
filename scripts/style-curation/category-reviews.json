@@ -2578,5 +2578,20 @@
     "evidencePresetIds": ["SP25-261", "SP25-262", "SP25-263"],
     "status": "text-authored",
     "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_25",
+    "category": "15. Environmental Graphics & Wayfinding",
+    "displayCategory": "Wayfinding & environmental graphics",
+    "kind": "mixed",
+    "expectedCount": 20,
+    "baselineHash": "631cddaa2139670b646ad3b0261516dcdf63d68990c9d9b6bc7ed421a77b331e",
+    "problem": "Wayfinding styles must change how signs and spatial graphics are built without changing the architecture, inventing routes or destinations, or implying certified accessibility.",
+    "preserve": "Destination names, arrows, routes, numbers and the existing architecture stay exact; each style keeps its spatial mechanism (threshold fields, giant indexes, inlays, route lines, open frames, layered directories, architectural type, perforated light, data bands, floor-to-wall paths, museum labels, bolted plates, soft monumental letters, window layers, caption modules, edge markers, tiled mosaic).",
+    "proposedAction": "Applied-design import: 16 spatial graphic styles, Tiled Mosaic Signage as a new style replacing the route walkthrough audit (moved to QA-PROTOCOLS.md), decision-point and anamorphic profiles and the near-far legibility sheet; requested-text policy and three new fictional-site briefs per preset.",
+    "validation": "Generate each card, then check every destination name and arrow and that no door, wall or path was added; test a doorway, a corridor route, a directory, a window and an outdoor marker.",
+    "evidencePresetIds": ["SP25-281", "SP25-282", "SP25-283"],
+    "status": "text-authored",
+    "visualValidation": "pending"
   }
 ]

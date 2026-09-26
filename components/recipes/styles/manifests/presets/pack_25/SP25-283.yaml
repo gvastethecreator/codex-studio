@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-283
+packId: pack_25
+name: Material-Inlaid Navigation
+styleAnchors:
+  - Material-Inlaid Navigation
+  - inlaid material sign
+  - flush inlay
+displayName: Material-Inlaid Navigation
+category: 15. Environmental Graphics & Wayfinding
+domain: inlaid material sign
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - environmental-graphics-and-wayfinding
+  - material-inlaid
+  - applied-design
+  - wayfinding
+  - r-env-03
+  - requested-text
+visualDna:
+  aesthetic: 'Material-Inlaid Navigation: letters and symbols inlaid flush into walls and floors through joints and controlled contrast.'
+  subject_treatment: Inlay the prompt's sign text and symbols flush into the existing surface, keeping outlines and contrast independent of the material, every word exact.
+  color_and_tone: Contrast through value and finish, with color added only when allowed.
+  lighting_and_shadow: Frontal and side light tested, with reflections never the only contrast.
+  texture_and_material: Conceptual inlay matching the surface with thin joints and clear edges.
+  camera_and_composition: Sign related to existing joints without being cut by them.
+  atmosphere_and_mood: A discreet, materially integrated presence that still communicates first.
+  rendering_and_quality: Clean inlay with exact letters shown from more than one angle.
+  creative_brief: "Material-Inlaid Navigation: letters and symbols inlaid flush into walls and floors through joints and controlled contrast. Carry it through flush inlay, joint-aware, value contrast, exact letters. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: flush inlay; joint-aware; value contrast; exact letters
+avoidRules:
+  - letters invisible from low contrast
+  - invented joints
+  - altered architecture or invented routes
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: letters invisible from low contrast, invented joints, altered architecture or invented routes, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: environmental-graphics-and-wayfinding
+  categoryName: 15. Environmental Graphics & Wayfinding
+  domain: inlaid material sign
+  tags:
+    - curation-v2
+    - environmental-graphics-and-wayfinding
+    - material-inlaid
+    - applied-design
+    - wayfinding
+    - r-env-03
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

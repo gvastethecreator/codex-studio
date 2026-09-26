@@ -331,6 +331,29 @@ categories:
       - pack_25/SP25-278.yaml
       - pack_25/SP25-279.yaml
       - pack_25/SP25-280.yaml
+  - id: environmental-graphics-and-wayfinding
+    name: 15. Environmental Graphics & Wayfinding
+    presetRefs:
+      - pack_25/SP25-281.yaml
+      - pack_25/SP25-282.yaml
+      - pack_25/SP25-283.yaml
+      - pack_25/SP25-284.yaml
+      - pack_25/SP25-285.yaml
+      - pack_25/SP25-286.yaml
+      - pack_25/SP25-287.yaml
+      - pack_25/SP25-288.yaml
+      - pack_25/SP25-289.yaml
+      - pack_25/SP25-290.yaml
+      - pack_25/SP25-291.yaml
+      - pack_25/SP25-292.yaml
+      - pack_25/SP25-293.yaml
+      - pack_25/SP25-294.yaml
+      - pack_25/SP25-295.yaml
+      - pack_25/SP25-296.yaml
+      - pack_25/SP25-297.yaml
+      - pack_25/SP25-298.yaml
+      - pack_25/SP25-299.yaml
+      - pack_25/SP25-300.yaml
 presetRefs:
   - pack_25/SP25-001.yaml
   - pack_25/SP25-002.yaml
@@ -612,3 +635,23 @@ presetRefs:
   - pack_25/SP25-278.yaml
   - pack_25/SP25-279.yaml
   - pack_25/SP25-280.yaml
+  - pack_25/SP25-281.yaml
+  - pack_25/SP25-282.yaml
+  - pack_25/SP25-283.yaml
+  - pack_25/SP25-284.yaml
+  - pack_25/SP25-285.yaml
+  - pack_25/SP25-286.yaml
+  - pack_25/SP25-287.yaml
+  - pack_25/SP25-288.yaml
+  - pack_25/SP25-289.yaml
+  - pack_25/SP25-290.yaml
+  - pack_25/SP25-291.yaml
+  - pack_25/SP25-292.yaml
+  - pack_25/SP25-293.yaml
+  - pack_25/SP25-294.yaml
+  - pack_25/SP25-295.yaml
+  - pack_25/SP25-296.yaml
+  - pack_25/SP25-297.yaml
+  - pack_25/SP25-298.yaml
+  - pack_25/SP25-299.yaml
+  - pack_25/SP25-300.yaml

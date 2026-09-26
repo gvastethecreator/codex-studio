@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-286
+packId: pack_25
+name: Layered Directory Panels
+styleAnchors:
+  - Layered Directory Panels
+  - layered hierarchy directory
+  - stacked plates
+displayName: Layered Directory Panels
+category: 15. Environmental Graphics & Wayfinding
+domain: layered hierarchy directory
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - environmental-graphics-and-wayfinding
+  - layered-directory
+  - applied-design
+  - wayfinding
+  - r-env-06
+  - requested-text
+visualDna:
+  aesthetic: 'Layered Directory Panels: stacked plates separate building, zone and destination with minimal depth and one reading order.'
+  subject_treatment: Stack the prompt's directory as building, zone and destination plates with shallow depth and explicit links, every name and arrow exact.
+  color_and_tone: A different value per level and one accent for the selection.
+  lighting_and_shadow: Moderate ambient light with no shadow cutting across text.
+  texture_and_material: Matte plates with discreet edges and consistent materials.
+  camera_and_composition: General level behind, zone in the middle and destination in front.
+  atmosphere_and_mood: A gradual reading that lowers effort for the visitor.
+  rendering_and_quality: Clean directory with shared alignments and no hidden information.
+  creative_brief: "Layered Directory Panels: stacked plates separate building, zone and destination with minimal depth and one reading order. Carry it through stacked plates, three levels, shallow depth, one reading order. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: stacked plates; three levels; shallow depth; one reading order
+avoidRules:
+  - decorative layers
+  - duplicated destinations
+  - altered architecture or invented routes
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: decorative layers, duplicated destinations, altered architecture or invented routes, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: environmental-graphics-and-wayfinding
+  categoryName: 15. Environmental Graphics & Wayfinding
+  domain: layered hierarchy directory
+  tags:
+    - curation-v2
+    - environmental-graphics-and-wayfinding
+    - layered-directory
+    - applied-design
+    - wayfinding
+    - r-env-06
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

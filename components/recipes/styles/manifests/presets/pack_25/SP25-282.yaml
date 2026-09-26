@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-282
+packId: pack_25
+name: Overscale Index Wayfinding
+styleAnchors:
+  - Overscale Index Wayfinding
+  - giant index letter wayfinding
+  - giant index
+displayName: Overscale Index Wayfinding
+category: 15. Environmental Graphics & Wayfinding
+domain: giant index letter wayfinding
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - environmental-graphics-and-wayfinding
+  - overscale-index
+  - applied-design
+  - wayfinding
+  - r-env-02
+  - requested-text
+visualDna:
+  aesthetic: 'Overscale Index Wayfinding: huge index letters or numbers identify each zone from afar while small secondary text explains the destinations.'
+  subject_treatment: Identify the prompt's zones with a huge index letter or number and readable secondary destinations beside it, every character and arrow exact.
+  color_and_tone: High-contrast index, sober secondaries and one route accent with arrow and text.
+  lighting_and_shadow: The real or supplied light kept, the index readable up close too.
+  texture_and_material: Flat graphics with crisp edges and whole numerals.
+  camera_and_composition: Index on a surface visible from the approach, directory at a test height.
+  atmosphere_and_mood: Recognition from far away followed by easy close reading.
+  rendering_and_quality: Clean sign with complete characters and exact destination matches.
+  creative_brief: "Overscale Index Wayfinding: huge index letters or numbers identify each zone from afar while small secondary text explains the destinations. Carry it through giant index, small secondaries, far and near reading, exact arrows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: giant index; small secondaries; far and near reading; exact arrows
+avoidRules:
+  - invented floors
+  - ambiguously cropped numerals
+  - altered architecture or invented routes
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: invented floors, ambiguously cropped numerals, altered architecture or invented routes, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: environmental-graphics-and-wayfinding
+  categoryName: 15. Environmental Graphics & Wayfinding
+  domain: giant index letter wayfinding
+  tags:
+    - curation-v2
+    - environmental-graphics-and-wayfinding
+    - overscale-index
+    - applied-design
+    - wayfinding
+    - r-env-02
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -1673,58 +1673,112 @@
       "category": "14. Apparel & Merchandise Graphics"
     },
     "R-ENV-01": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-281",
+      "name": "Threshold Color Fields",
+      "category": "15. Environmental Graphics & Wayfinding"
     },
     "R-ENV-02": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-282",
+      "name": "Overscale Index Wayfinding",
+      "category": "15. Environmental Graphics & Wayfinding"
     },
     "R-ENV-03": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-283",
+      "name": "Material-Inlaid Navigation",
+      "category": "15. Environmental Graphics & Wayfinding"
     },
     "R-ENV-04": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-284",
+      "name": "Route-Line Wall Systems",
+      "category": "15. Environmental Graphics & Wayfinding"
     },
     "R-ENV-05": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-285",
+      "name": "Open-Frame Signage",
+      "category": "15. Environmental Graphics & Wayfinding"
     },
     "R-ENV-06": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-286",
+      "name": "Layered Directory Panels",
+      "category": "15. Environmental Graphics & Wayfinding"
     },
     "R-ENV-07": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-287",
+      "name": "Type-as-Architecture Graphics",
+      "category": "15. Environmental Graphics & Wayfinding"
     },
     "R-ENV-08": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-288",
+      "name": "Perforated Light Sign Systems",
+      "category": "15. Environmental Graphics & Wayfinding"
     },
     "R-ENV-09": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-289",
+      "name": "Data-Ribbon Environments",
+      "category": "15. Environmental Graphics & Wayfinding"
     },
     "R-ENV-10": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-290",
+      "name": "Floor-to-Wall Continuity",
+      "category": "15. Environmental Graphics & Wayfinding"
     },
     "R-ENV-11": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-291",
+      "name": "Quiet Museum Labels",
+      "category": "15. Environmental Graphics & Wayfinding"
     },
     "R-ENV-12": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-292",
+      "name": "Industrial Plate Navigation",
+      "category": "15. Environmental Graphics & Wayfinding"
     },
     "R-ENV-13": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-293",
+      "name": "Soft Monumental Letters",
+      "category": "15. Environmental Graphics & Wayfinding"
     },
     "R-ENV-14": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-294",
+      "name": "Window-Layer Graphics",
+      "category": "15. Environmental Graphics & Wayfinding"
     },
     "R-ENV-15": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-295",
+      "name": "Modular Exhibition Captions",
+      "category": "15. Environmental Graphics & Wayfinding"
     },
     "R-ENV-16": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-296",
+      "name": "Landscape-Edge Markers",
+      "category": "15. Environmental Graphics & Wayfinding"
     },
     "R-ENV-17": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-299",
+      "name": "Decision-Point Sign Layout",
+      "category": "15. Environmental Graphics & Wayfinding"
     },
     "R-ENV-18": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-300",
+      "name": "Anamorphic Viewpoint Graphic",
+      "category": "15. Environmental Graphics & Wayfinding"
     },
     "R-ENV-19": {
       "status": "qa-protocol",
@@ -1732,7 +1786,10 @@
       "doc": "QA-PROTOCOLS.md"
     },
     "R-ENV-20": {
-      "status": "pending"
+      "status": "preset",
+      "preset": "SP25-298",
+      "name": "Near-Far Legibility Trial",
+      "category": "15. Environmental Graphics & Wayfinding"
     },
     "R-MOT-01": {
       "status": "pending"

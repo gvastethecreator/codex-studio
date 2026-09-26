@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-292
+packId: pack_25
+name: Industrial Plate Navigation
+styleAnchors:
+  - Industrial Plate Navigation
+  - bolted plate wayfinding
+  - bolted plates
+displayName: Industrial Plate Navigation
+category: 15. Environmental Graphics & Wayfinding
+domain: bolted plate wayfinding
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - environmental-graphics-and-wayfinding
+  - industrial-plate
+  - applied-design
+  - wayfinding
+  - r-env-12
+  - requested-text
+visualDna:
+  aesthetic: 'Industrial Plate Navigation: sturdy plates of steady proportion carry text and arrows, their bolts clearly holding them up and kept off the information.'
+  subject_treatment: Mount the prompt's sign text and arrows on sturdy matte plates with visible fixings outside the reading area, every word and arrow exact.
+  color_and_tone: A matte contrasting field with clear type and a limited zone accent.
+  lighting_and_shadow: Descriptive light with fixings casting no shadow over letters.
+  texture_and_material: Conceptual plates and consistent bolts, any wear kept off information.
+  camera_and_composition: Clear technical margins, anchors outside the text and aligned plates.
+  atmosphere_and_mood: Sober visual robustness that feels dependable rather than theatrical.
+  rendering_and_quality: Clean plates with defined edges and exact text.
+  creative_brief: "Industrial Plate Navigation: sturdy plates of steady proportion carry text and arrows, their bolts clearly holding them up and kept off the information. Carry it through bolted plates, fixings off text, matte field, aligned system. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: bolted plates; fixings off text; matte field; aligned system
+avoidRules:
+  - random screws
+  - invented regulatory warnings
+  - altered architecture or invented routes
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: random screws, invented regulatory warnings, altered architecture or invented routes, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: environmental-graphics-and-wayfinding
+  categoryName: 15. Environmental Graphics & Wayfinding
+  domain: bolted plate wayfinding
+  tags:
+    - curation-v2
+    - environmental-graphics-and-wayfinding
+    - industrial-plate
+    - applied-design
+    - wayfinding
+    - r-env-12
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

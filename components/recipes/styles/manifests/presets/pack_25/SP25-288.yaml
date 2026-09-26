@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-288
+packId: pack_25
+name: Perforated Light Sign Systems
+styleAnchors:
+  - Perforated Light Sign Systems
+  - backlit perforated sign
+  - perforated letters
+displayName: Perforated Light Sign Systems
+category: 15. Environmental Graphics & Wayfinding
+domain: backlit perforated sign
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - environmental-graphics-and-wayfinding
+  - perforated-light
+  - applied-design
+  - wayfinding
+  - r-env-08
+  - requested-text
+visualDna:
+  aesthetic: 'Perforated Light Sign Systems: letters and symbols formed by perforations in a plate lit softly from within, readable day and night.'
+  subject_treatment: Form the prompt's sign words from perforations in a plate with soft inner light, continuous supports and a readable unlit state, every character exact.
+  color_and_tone: Contrast between plate and light, readable when the light is off.
+  lighting_and_shadow: Contained, even inner light with a limited halo.
+  texture_and_material: Conceptual plate of steady thickness with clear, legible holes.
+  camera_and_composition: Text with a reserve around it and fixings outside the characters.
+  atmosphere_and_mood: A sober night presence that is still recognizable by day.
+  rendering_and_quality: Clean sign shown on and off with identical geometry.
+  creative_brief: "Perforated Light Sign Systems: letters and symbols formed by perforations in a plate lit softly from within, readable day and night. Carry it through perforated letters, soft inner light, day and night, continuous supports. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: perforated letters; soft inner light; day and night; continuous supports
+avoidRules:
+  - guaranteed manufacture
+  - glow that closes counters
+  - altered architecture or invented routes
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: guaranteed manufacture, glow that closes counters, altered architecture or invented routes, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: environmental-graphics-and-wayfinding
+  categoryName: 15. Environmental Graphics & Wayfinding
+  domain: backlit perforated sign
+  tags:
+    - curation-v2
+    - environmental-graphics-and-wayfinding
+    - perforated-light
+    - applied-design
+    - wayfinding
+    - r-env-08
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

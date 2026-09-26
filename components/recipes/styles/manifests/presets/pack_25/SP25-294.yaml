@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-294
+packId: pack_25
+name: Window-Layer Graphics
+styleAnchors:
+  - Window-Layer Graphics
+  - layered window vinyl graphic
+  - layers on glass
+displayName: Window-Layer Graphics
+category: 15. Environmental Graphics & Wayfinding
+domain: layered window vinyl graphic
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - environmental-graphics-and-wayfinding
+  - window-layer
+  - applied-design
+  - wayfinding
+  - r-env-14
+  - requested-text
+visualDna:
+  aesthetic: 'Window-Layer Graphics: layered graphics on glass that link inside and outside while staying readable from the intended side.'
+  subject_treatment: Layer the prompt's window graphics as transparent fields and opaque text on the glass, readable from the declared side, every word exact.
+  color_and_tone: Contrast built per layer and value for a varying background.
+  lighting_and_shadow: Existing reflections kept, tested with light and dark interiors.
+  texture_and_material: Conceptual vinyl with explicit transparency, separate from the glass.
+  camera_and_composition: Main text in a stable contrast zone with controlled overlaps.
+  atmosphere_and_mood: Light depth between inside and outside with the message kept.
+  rendering_and_quality: Clean graphic with exact letters and its reverse view documented.
+  creative_brief: "Window-Layer Graphics: layered graphics on glass that link inside and outside while staying readable from the intended side. Carry it through layers on glass, opaque text, transparent fields, reading side declared. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: layers on glass; opaque text; transparent fields; reading side declared
+avoidRules:
+  - unreadable reverse
+  - accidental opacity
+  - altered architecture or invented routes
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: unreadable reverse, accidental opacity, altered architecture or invented routes, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: environmental-graphics-and-wayfinding
+  categoryName: 15. Environmental Graphics & Wayfinding
+  domain: layered window vinyl graphic
+  tags:
+    - curation-v2
+    - environmental-graphics-and-wayfinding
+    - window-layer
+    - applied-design
+    - wayfinding
+    - r-env-14
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

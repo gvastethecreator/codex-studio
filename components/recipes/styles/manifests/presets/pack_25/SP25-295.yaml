@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-295
+packId: pack_25
+name: Modular Exhibition Captions
+styleAnchors:
+  - Modular Exhibition Captions
+  - flexible exhibition caption module
+  - caption modules
+displayName: Modular Exhibition Captions
+category: 15. Environmental Graphics & Wayfinding
+domain: flexible exhibition caption module
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - environmental-graphics-and-wayfinding
+  - modular-caption
+  - applied-design
+  - wayfinding
+  - r-env-15
+  - requested-text
+visualDna:
+  aesthetic: 'Modular Exhibition Captions: repeatable caption modules sharing anchors, margins and hierarchy while their length changes freely.'
+  subject_treatment: Set the prompt's captions as modules with shared anchors and hierarchy that grow for longer texts, every title and reference exact.
+  color_and_tone: A sober palette by function, with indexes coded consistently.
+  lighting_and_shadow: The site lighting respected, captions needing no glow of their own.
+  texture_and_material: A matte support with crisp text and discreet separators.
+  camera_and_composition: Title, body and reference modules on one shared anchor line.
+  atmosphere_and_mood: Clear repetition with varied content and pauses between works.
+  rendering_and_quality: Clean captions with complete content and matching indexes.
+  creative_brief: "Modular Exhibition Captions: repeatable caption modules sharing anchors, margins and hierarchy while their length changes freely. Carry it through caption modules, shared anchors, flexible length, exact references. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: caption modules; shared anchors; flexible length; exact references
+avoidRules:
+  - hidden truncation
+  - invented artwork metadata
+  - altered architecture or invented routes
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: hidden truncation, invented artwork metadata, altered architecture or invented routes, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: environmental-graphics-and-wayfinding
+  categoryName: 15. Environmental Graphics & Wayfinding
+  domain: flexible exhibition caption module
+  tags:
+    - curation-v2
+    - environmental-graphics-and-wayfinding
+    - modular-caption
+    - applied-design
+    - wayfinding
+    - r-env-15
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

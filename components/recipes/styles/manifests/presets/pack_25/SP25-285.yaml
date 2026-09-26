@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP25-285
+packId: pack_25
+name: Open-Frame Signage
+styleAnchors:
+  - Open-Frame Signage
+  - partial-frame sign system
+  - partial frame
+displayName: Open-Frame Signage
+category: 15. Environmental Graphics & Wayfinding
+domain: partial-frame sign system
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - environmental-graphics-and-wayfinding
+  - open-frame-sign
+  - applied-design
+  - wayfinding
+  - r-env-05
+  - requested-text
+visualDna:
+  aesthetic: 'Open-Frame Signage: partial frames with two or three active edges group information on minimal supports, the opening pointing somewhere meaningful.'
+  subject_treatment: Frame the prompt's sign information with two or three edges on a minimal support, the open side pointing with the hierarchy, every word and arrow exact.
+  color_and_tone: A solid contrasting reading field with a secondary frame.
+  lighting_and_shadow: Existing light with no frame shadow over information.
+  texture_and_material: Minimal matte support and precise contours with a solid reading field.
+  camera_and_composition: The frame opening answering hierarchy or direction, text inside the reserve.
+  atmosphere_and_mood: Structural lightness and a calm, contained sense of orientation.
+  rendering_and_quality: Clean sign with deliberate open edges and aligned text.
+  creative_brief: "Open-Frame Signage: partial frames with two or three active edges group information on minimal supports, the opening pointing somewhere meaningful. Carry it through partial frame, active edges, solid reading field, meaningful opening. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: partial frame; active edges; solid reading field; meaningful opening
+avoidRules:
+  - invisible frame
+  - text floating over noise
+  - altered architecture or invented routes
+  - real brand or trademark
+  - copying a specific famous design
+  - real artist signature
+  - misspelled or altered requested text
+  - extra invented words or letters
+  - lorem ipsum placeholder text
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: invisible frame, text floating over noise, altered architecture or invented routes, real brand or trademark, copying a specific famous design, real artist signature, misspelled or altered requested text, extra invented words or letters, lorem ipsum placeholder text, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_25
+  packName: Applied Design
+  categoryId: environmental-graphics-and-wayfinding
+  categoryName: 15. Environmental Graphics & Wayfinding
+  domain: partial-frame sign system
+  tags:
+    - curation-v2
+    - environmental-graphics-and-wayfinding
+    - open-frame-sign
+    - applied-design
+    - wayfinding
+    - r-env-05
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
