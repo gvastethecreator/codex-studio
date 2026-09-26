@@ -132,8 +132,8 @@ const spec: Spec = {
       avoid: [...AVOID, 'lithograph linework', 'tessellated animals'],
       briefs: [
         'Impossible circulation: a monastery cloister where four limestone stairways climb forever around a courtyard and meet at their own start, board-formed concrete landings, crisp midday shadows, elevated near-isometric view. No text or logo.',
-        'Impossible circulation: a hillside waterworks whose aqueduct channels carry water uphill in a closed loop back to their own source, a mill wheel turning at the top, clear sky. No text or logo.',
-        'Impossible circulation applied to an ordinary apartment block external staircase, the concrete flights rising floor after floor and arriving back at the ground-floor door. No readable signage or logo.',
+        'Carrying water uphill in a closed loop back to its own source, a hillside waterworks turns a mill wheel at the top of impossible aqueduct channels under a clear sky. No text or logo.',
+        'Rising floor after floor up an ordinary apartment block, an external concrete staircase somehow arrives back at the ground-floor door, where a resident with shopping bags looks resigned. No readable signage or logo.',
       ],
     },
     'SP07-076': {
@@ -158,8 +158,8 @@ const spec: Spec = {
       avoid: [...AVOID, 'ornate gold filigree', 'ground-level planet surface'],
       briefs: [
         'Stellar shell megastructure: a half-built swarm of near-black hexagonal panels around a red dwarf star, gaps still open with solar gold pouring through, corona rim light on thousands of heat fins. No text or logo.',
-        'Stellar shell megastructure: the inner surface of the shell seen from a maintenance ledge, hex panels curving away in every direction, the white-hot star below filling the frame with light. No text or logo.',
-        'Stellar shell megastructure applied to a glass greenhouse dome kept in its exact shape, clad in near-black hexagonal heat-fin panels with gold light leaking through the seams. No text or logo.',
+        'Standing on a tiny maintenance ledge inside a shell built around a star, a lone engineer watches hex panels curve away in every direction while the white-hot star below fills the frame with light. No text or logo.',
+        'Kept in its exact greenhouse shape, a glass dome is clad in near-black hexagonal heat-fin panels like a miniature star shell, gold light leaking through every seam. No text or logo.',
       ],
     },
     'SP07-077': {
@@ -184,8 +184,8 @@ const spec: Spec = {
       avoid: [...AVOID, 'globe seen from space', 'flat horizon'],
       briefs: [
         'Orbital ribbon habitat: a coastal fishing village on the inner surface of a ring, the ocean band arching up into the sky behind it, charcoal containment wall at the edge, aerial haze on the rising arc. No text or logo.',
-        'Orbital ribbon habitat: a desert band with red dunes climbing overhead into haze, a salt lake glinting halfway up the sky, sun falling through shade panels. No text or logo.',
-        'Orbital ribbon habitat applied to a farmhouse and barn kept exactly as they are, the wheat fields behind them curving up into the sky and over the top of the frame. No text or logo.',
+        'Climbing overhead into haze along a ring-shaped world, a desert band of red dunes curves up the sky, a salt lake glinting halfway up and sunlight falling through vast shade panels. No text or logo.',
+        'Kept exactly as they are, a farmhouse and barn sit in the foreground while the wheat fields behind them curve up into the sky and over the top of the frame on a ribbon world. No text or logo.',
       ],
     },
     'SP07-078': {
@@ -211,8 +211,8 @@ const spec: Spec = {
       avoid: [...AVOID, 'insect hive', 'creature'],
       briefs: [
         'Cybernetic hive infrastructure: a server hive rising like a cathedral nave of stacked cube alcoves, every cell glowing phosphor green, conduit bundles hanging between tiers, deep one-point perspective into haze. No text or logo.',
-        'Cybernetic hive infrastructure: a docking hangar where small maintenance pods slot into green-lit cube cells on vast graphite service frames, seen from below. No text or logo.',
-        'Cybernetic hive infrastructure applied to a hotel lobby with its reception desk and seating kept, the walls turned into stacked green-lit cube alcoves with braided conduit bundles. No readable signage or logo.',
+        'Seen from below in a vast docking hangar, small maintenance pods slot into green-lit cube cells on graphite service frames, humming like a mechanical hive. No text or logo.',
+        'Keeping its reception desk and seating, a hotel lobby has walls turned into stacked green-lit cube alcoves wired with braided conduit bundles like a machine hive. No readable signage or logo.',
       ],
     },
     'SP07-079': {
@@ -239,8 +239,8 @@ const spec: Spec = {
       avoid: [...AVOID, 'gold trim', 'panel detailing'],
       briefs: [
         'Absolute black monolith: a cube mausoleum of light-absorbing black standing on a white salt flat, one bare tree beside it as a scale cue, a hairline of silver edge light, flat overcast sky. No text or logo.',
-        'Absolute black monolith: a stepped black ziggurat emerging from low fog on a moor, its terraces readable only by thin silver edges and the pale shadow in the fog. No text or logo.',
-        'Absolute black monolith applied to a suburban house kept in its exact shape, porch and chimney included, made of pure light-absorbing black so only its roofline catches a silver edge. No text or logo.',
+        'Emerging from low fog on a moor, a stepped ziggurat of total light-swallowing black is readable only by thin silver terrace edges and the pale shadow it casts in the mist. No text or logo.',
+        'Kept in its exact suburban shape, porch and chimney included, a house made of pure light-absorbing black stands on a sunny street, only its roofline catching a silver edge. No text or logo.',
       ],
     },
     'SP07-080': {
@@ -296,9 +296,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'psychedelic color melt', 'mirror reflections instead of real recursion'],
       briefs: [
-        'Droste recursion: a candle-lit great hall whose far window opens onto the same hall, whose window opens onto it again, receding to a point, each level slightly cooler and dimmer. No text or logo.',
-        'Droste recursion: a clock tower facade twisting inward on a Droste spiral, the tower appearing again and again inside its own clock face, smaller with every turn. No numerals, text or logo.',
-        'Droste recursion applied to a small bakery shopfront whose display window contains the same shopfront, loaves and awning repeated inward without end. No readable signage or logo.',
+        'Receding to a single point, a candle-lit great hall has a far window opening onto the same hall, whose window opens onto it again, each level slightly cooler and dimmer than the last. No text or logo.',
+        'Twisting inward on an endless spiral, a clock tower facade appears again and again inside its own clock face, smaller with every turn, pigeons circling each level. No numerals, text or logo.',
+        'Repeated inward without end, a small bakery shopfront holds the same shopfront inside its display window, loaves and striped awning shrinking toward a warm vanishing point. No readable signage or logo.',
       ],
     },
     {
@@ -327,9 +327,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'mirror reflection', 'smooth ring curve'],
       briefs: [
-        'Folded horizon: a walled medieval town whose streets hinge upward along a sharp crease and continue upside down overhead, rooftops and towers hanging above the market square, one sun lighting both halves. No text or logo.',
-        'Folded horizon: terraced hill farms folding up like a page, the upper terraces hanging overhead with their orchards pointing down, a river running up the crease. No text or logo.',
-        'Folded horizon applied to a suburban cul-de-sac whose far end hinges up and folds over the street, the same houses and driveways hanging upside down above it. No text or logo.',
+        'Hinged upward along a sharp crease, a walled medieval town continues upside down overhead, rooftops and towers hanging above the market square while one sun lights both halves. No text or logo.',
+        'Folding up like the page of a book, terraced hill farms hang overhead with their orchards pointing down, a river running straight up the crease between the two halves. No text or logo.',
+        'Hinging up at its far end, a suburban cul-de-sac folds over the street so the same houses and driveways hang upside down above a neighbor washing his car. No text or logo.',
       ],
     },
     {
@@ -358,9 +358,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'flat graphic overlay'],
       briefs: [
-        'Anamorphic alignment: stone blocks scattered across a quarry at very different distances line up into one perfect round arch from the camera point, their long shadows betraying the gaps. No text or logo.',
-        'Anamorphic alignment: red painted segments across the pillars, floor and roof trusses of an old warehouse assembling into a single ring from this viewpoint, dusty light shafts. No text or logo.',
-        'Anamorphic alignment applied to a public swimming pool whose tiles, lane ropes and ladders align into one giant spiral seen from the diving board. No text or logo.',
+        'Scattered across a quarry at very different distances, stone blocks line up into one perfect round arch from the camera point, while their long shadows betray the gaps. No text or logo.',
+        'Painted across the pillars, floor and roof trusses of an old warehouse, red segments assemble into a single perfect ring from one viewpoint, dusty light shafts crossing the illusion. No text or logo.',
+        'Seen from the high diving board, the tiles, lane ropes and ladders of a public swimming pool align into one giant spiral that falls apart from any other angle. No text or logo.',
       ],
     },
     {
@@ -390,9 +390,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'figure-eight knot', 'broken surface seam'],
       briefs: [
-        'Mobius architecture: a ceremonial stone road through a pine forest lifting off the ground and twisting once into a closed loop, its paving flowing onto its underside, low sun catching the twist. No text or logo.',
-        'Mobius architecture: a city ring-road viaduct above rooftops twisted into a single Mobius band, lane paint continuing unbroken around the underside, seen from a high angle. No text or logo.',
-        'Mobius architecture applied to a running track twisted into a Mobius band, lanes continuing on its underside, the infield grass on both faces. No text or logo.',
+        'Lifting off the forest floor, a ceremonial stone road through tall pines twists once into a closed loop, its paving flowing onto its underside as low sun catches the twist. No text or logo.',
+        'Seen from a high angle above city rooftops, a ring-road viaduct twists into a single one-sided band, lane paint continuing unbroken around its underside. No text or logo.',
+        'Twisted into a one-sided band, a running track carries its lanes onto the underside, the infield grass growing on both faces as a lone runner jogs upside down. No text or logo.',
       ],
     },
     {
@@ -421,9 +421,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'tabletop miniature look', 'tilt-shift blur'],
       briefs: [
-        "Colossal scale displacement: an abandoned knight's helmet the size of a mountain lying in a valley, a village built inside its visor, moss on its crest, cloud shadows sweeping across the steel. No text or logo.",
-        'Colossal scale displacement: an open pocket watch lying in a desert, its gears forming terraced canyons, a caravan road winding across the crystal, aerial haze on the far rim. No numerals, text or logo.',
-        'Colossal scale displacement applied to a pair of reading glasses as big as a bridge, spanning a wide river, small boats passing under the lenses. No text or logo.',
+        "Lying abandoned in a green valley, a knight's helmet the size of a mountain shelters a village inside its visor, moss on its crest and cloud shadows sweeping across the steel. No text or logo.",
+        'Lying open in a desert, a pocket watch the size of a province forms terraced canyons of gears, a caravan road winding across its crystal toward a hazy far rim. No numerals, text or logo.',
+        'Spanning a wide river like a bridge, a pair of reading glasses rests on the banks while small boats pass under the lenses and swans gather in their magnified light. No text or logo.',
       ],
     },
     {
@@ -451,9 +451,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'lithograph linework', 'endless stair loop'],
       briefs: [
-        'Multi-gravity cluster: floating castle courtyards stacked at right angles in open sky, each with its own down, a well, trees and banners obeying their own ground, one sun lighting every face. No text or logo.',
-        'Multi-gravity cluster: a garden of grass-covered cubes where a stream pours off one face and runs sideways across the next, trees growing in three directions. No text or logo.',
-        'Multi-gravity cluster applied to an office block whose floors each have gravity pointing a different way, desks and plants stuck to walls and ceilings of neighbouring floors. No readable screens, text or logo.',
+        'Floating in open sky at right angles to each other, castle courtyards each keep their own down, a well, trees and banners obeying their own ground while one sun lights every face. No text or logo.',
+        'Scattered across a garden of grass-covered cubes, a stream pours off one face and runs sideways across the next, trees growing in three different directions at once. No text or logo.',
+        'Inside an office block where every floor has gravity pointing a different way, desks and plants cling to the walls and ceilings of neighboring floors as workers wave across. No readable screens, text or logo.',
       ],
     },
     {
@@ -480,9 +480,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'ancient temple pyramid', 'desert ruin'],
       briefs: [
-        'Terraced arcology: a stepped pyramid city rising out of a flooded plain, every terrace lined with rice paddies, orchards and homes, raking morning sun drawing shadow lines down the slope. No text or logo.',
-        'Terraced arcology: the hollow atrium inside the pyramid, hundreds of green terraces facing inward around a sunlit void, irrigation water falling in thin threads between levels. No text or logo.',
-        'Terraced arcology applied to one ordinary apartment balcony, its railing, chairs and potted plants unchanged, shown as one of thousands stepping up the arcology slope. No text or logo.',
+        'Rising out of a flooded plain, a stepped pyramid city lines every terrace with rice paddies, orchards and homes, raking morning sun drawing shadow lines down the slope. No text or logo.',
+        'Facing inward around a sunlit void, hundreds of green terraces fill the hollow atrium of a pyramid city, irrigation water falling in thin threads between the levels. No text or logo.',
+        'Unchanged with its railing, chairs and potted plants, one ordinary apartment balcony is shown as just one of thousands stepping up the slope of a vast terraced city. No text or logo.',
       ],
     },
     {
@@ -598,9 +598,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'dam breach disaster', 'river dam only'],
       briefs: [
-        'Ocean megadam: a kilometre-high curved sea wall with the ocean brimming at its crest, spray drifting along the top, buttresses marching into haze, low sun behind it casting a vast shadow over the lowland. No text or logo.',
-        'Ocean megadam at night during a storm, waves breaking over the crest in pale plumes, rust-streaked spillway gates lit by sodium lamps far above. No text or logo.',
-        'Ocean megadam applied to a small farmstead kept exactly as it is, barn and orchard in the foreground, the colossal sea wall rising behind it into the clouds. No text or logo.',
+        'Holding back the ocean at its brimming crest, a kilometre-high curved sea wall trails spray along the top, buttresses marching into haze and low sun casting its vast shadow over the lowland. No text or logo.',
+        'Battered by a night storm, a colossal sea wall throws pale plumes of breaking waves over its crest while rust-streaked spillway gates glow under sodium lamps far above. No text or logo.',
+        'Kept exactly as it is, a small farmstead with barn and orchard sits in the foreground while a colossal sea wall rises behind it into the clouds, gulls circling the top. No text or logo.',
       ],
     },
   ],

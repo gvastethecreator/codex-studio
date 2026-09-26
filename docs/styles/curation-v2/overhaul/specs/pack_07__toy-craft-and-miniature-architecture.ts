@@ -197,8 +197,8 @@ const spec: Spec = {
       avoid: [...AVOID, 'fairy cottage cliché'],
       briefs: [
         'Fungal miniature construction of a watermill on a mossy stream, a bracket-fungus wheel turning in the water, gilled cap roof with cream speckles, spore dust drifting in a narrow shaft of sun, forest-floor macro. No text or logo.',
-        'Fungal miniature construction of a fortress of stacked bracket fungi climbing a fallen log, orange accent caps as towers, misty dusk light glowing under the ledges. No text or logo.',
-        'Fungal miniature construction of an armchair that stays an armchair: cushions of plump caps, gill-fan backrest, moss upholstery and a violet fungus on one arm, shallow depth of field. No text or logo.',
+        'Climbing a fallen log at misty dusk, a fortress of stacked bracket fungi raises orange-capped towers, soft light glowing under every ledge as a tiny beetle patrols the gate. No text or logo.',
+        'Standing in the moss exactly as an armchair should, a seat grown from plump caps has a gill-fan backrest, moss upholstery and one violet fungus sprouting from its arm, shallow depth of field. No text or logo.',
       ],
     },
     'SP07-072': {
@@ -224,8 +224,8 @@ const spec: Spec = {
       avoid: [...AVOID, 'subject spilling outside the bottle'],
       briefs: [
         'Bottle curio miniature: a storm-tossed three-masted galleon on carved waves sealed inside a corked green bottle lying on a desk, thread-fine rigging, glass refraction bending the bow, caustic glow on the wood. No text or logo.',
-        'Bottle curio miniature: a tiny autumn orchard with a cider press and fallen apples inside a square pale-aqua bottle standing on a windowsill, soft side light, bubbles in the glass. No text or logo.',
-        'Bottle curio miniature: a brass apothecary scale that stays a scale, assembled inside a small corked medicine bottle, its pans and chains thread-fine, long reflections down the curved glass. No readable label or logo.',
+        'Standing on a windowsill inside a square pale-aqua bottle, a tiny autumn orchard keeps a working cider press and fallen apples, soft side light catching the bubbles in the glass. No text or logo.',
+        'Assembled inside a small corked medicine bottle, a brass apothecary scale stays a real scale, its pans and chains thread-fine, long reflections sliding down the curved glass. No readable label or logo.',
       ],
     },
     'SP07-073': {
@@ -305,9 +305,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'fire', 'smooth carved wood', 'popsicle sticks'],
       briefs: [
-        'Matchstick construction of a gothic cathedral with flying buttresses, its roof ridges patterned with black match heads, glue beads glinting at every joint, warm raking workbench lamp, macro view. No text or logo.',
-        'Matchstick construction of a leaping stag with branching antlers, pale pine courses following its muscles, red match heads forming its eyes and hooves, deep shadow behind. No text or logo.',
-        'Matchstick construction of a violin that stays a violin: body curved from trimmed sticks, match-head pegs, strings of thread, amber glue fillets along the seams. No text or logo.',
+        'Rising from a workbench under a warm raking lamp, a gothic cathedral with flying buttresses is built entirely from matches, black heads patterning the roof ridges and glue beads glinting at every joint, macro view. No text or logo.',
+        'Leaping out of deep shadow, a stag with branching antlers is built from pale pine sticks that follow its muscles, red match heads forming its eyes and hooves. No text or logo.',
+        'Curved from trimmed sticks yet still a playable violin, an instrument with match-head pegs and strings of thread rests on its case, amber glue fillets along every seam. No text or logo.',
       ],
     },
     {
@@ -418,9 +418,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'readable newsprint', 'smooth ceramic', 'polished sculpture'],
       briefs: [
-        'Papier-mache sculpture of a giant carnival mask of a horned demon, lumpy strip-built cheeks, chalky red and gold poster paint, grey newsprint peeking through at the horn tips, soft studio daylight. No readable text or logo.',
-        'Papier-mache sculpture of a crescent moon hanging on a wire above a small painted paper village, pasted strip edges visible on its face, pale yellow paint streaks, dark backdrop. No text or logo.',
-        'Papier-mache sculpture of a rocking horse that stays a rocking horse: lumpy strip-built body and rockers, blue and white poster paint with brush streaks, standing on bare boards. No readable text or logo.',
+        'Hung on a studio wall in soft daylight, a giant carnival mask of a horned demon shows lumpy strip-built cheeks, chalky red and gold poster paint and grey newsprint peeking through at the horn tips. No readable text or logo.',
+        'Dangling on a wire above a small painted paper village, a crescent moon shows pasted strip edges across its face and pale yellow paint streaks against a dark backdrop. No text or logo.',
+        'Standing on bare boards and still a proper rocking horse, a lumpy strip-built toy with sturdy rockers wears blue and white poster paint with visible brush streaks. No readable text or logo.',
       ],
     },
     {
@@ -447,9 +447,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'corked bottle', 'subject outside the dome'],
       briefs: [
-        'Snow globe with a tiny gothic bell tower on a jagged crag inside, flakes whirling in a blizzard, the dome magnifying the tower, dark lacquered base on a windowsill, cold blue inner cast. No text or logo.',
-        'Snow globe with a frozen pine forest and a lantern-lit covered wagon crossing it, flakes settling, bright curved highlight across the dome, seen from slightly above. No text or logo.',
-        'Snow globe with a vintage typewriter that stays a typewriter, painted black resin with silver keys, glitter-flakes drifting around it, black base on a desk. No readable letters or logo.',
+        'Trapped inside a glass dome on a windowsill, a tiny gothic bell tower on a jagged crag rings through a whirling blizzard, the curved glass magnifying it above a dark lacquered base, cold blue inner cast. No text or logo.',
+        'Crossing a frozen pine forest inside a glass dome, a lantern-lit covered wagon leaves tiny tracks as flakes settle, a bright curved highlight sweeping across the glass, seen from slightly above. No text or logo.',
+        'Sitting on a desk inside a glass dome, a vintage typewriter stays a typewriter, black resin with silver keys, glitter flakes drifting slowly around it above a black base. No readable letters or logo.',
       ],
     },
     {
