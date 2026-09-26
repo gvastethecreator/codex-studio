@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP20-016
+packId: pack_20
+name: Solvent Transfer Ghost
+styleAnchors:
+  - Solvent Transfer Ghost
+  - solvent photocopy transfer
+  - burnishing streaks
+displayName: Solvent Transfer Ghost
+category: 1. Print Registers
+domain: solvent photocopy transfer
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - print-registers
+  - solvent-transfer
+  - print
+  - portable-study
+visualDna:
+  aesthetic: 'Solvent transfer ghost: a toner photocopy burnished face-down onto paper with solvent, leaving a reversed, patchy and streaked ghost of the image.'
+  subject_treatment: Transfer the prompt's subject as a mirrored ghost of a photocopy, keeping its shape recognizable while patches fail to transfer.
+  color_and_tone: Faded black or brown toner on off-white paper, with occasional pale color from a color copy.
+  lighting_and_shadow: Photographic light survives in broken form, shadows transferred heavier than highlights.
+  texture_and_material: Burnishing streaks in one direction, missing patches, solvent haze and paper fiber showing through.
+  camera_and_composition: Collage-like placement with rough transfer edges and possibly overlapping transfers.
+  atmosphere_and_mood: Fragile, nostalgic and uncanny, like a faded memory rubbed off.
+  rendering_and_quality: Authentic patchy transfer with directional streaks, never a clean print.
+  creative_brief: "Solvent transfer ghost: a toner photocopy burnished face-down onto paper with solvent, leaving a reversed, patchy and streaked ghost of the image. Carry it through burnishing streaks, missing patches, faded toner, rough edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: burnishing streaks; missing patches; faded toner; rough edges
+avoidRules:
+  - clean print
+  - saturated color
+  - crisp complete image
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: clean print, saturated color, crisp complete image, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_20
+  packName: Print Registers
+  categoryId: print-registers
+  categoryName: 1. Print Registers
+  tags:
+    - curation-v2
+    - print-registers
+    - solvent-transfer
+    - print
+    - portable-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: solvent photocopy transfer

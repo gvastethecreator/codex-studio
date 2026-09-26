@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP20-012
+packId: pack_20
+name: Gum Bichromate Layers
+styleAnchors:
+  - Gum Bichromate Layers
+  - pigmented gum photographic layers
+  - stacked pigment layers
+displayName: Gum Bichromate Layers
+category: 1. Print Registers
+domain: pigmented gum photographic layers
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - print-registers
+  - gum-bichromate
+  - print
+  - portable-study
+visualDna:
+  aesthetic: 'Gum bichromate layers: a photographic print built from several brushed layers of pigmented gum, each exposed and washed, giving soft painterly color separations.'
+  subject_treatment: Show the prompt's subject as a layered pigment photograph, keeping its forms while each color layer sits slightly apart with brushy edges.
+  color_and_tone: Muted pigment layers such as terracotta, slate blue and olive, overlapping into soft secondary colors.
+  lighting_and_shadow: Photographic light softened into broad tonal masses, highlights washed clean and shadows built from stacked pigment.
+  texture_and_material: Brushed gum streaks, pigment granulation, soft washed-out edges and slightly misaligned color layers on watercolor paper.
+  camera_and_composition: Pictorial framing with soft focus falloff and a painterly border where the brushed coating stops.
+  atmosphere_and_mood: Dreamy, handmade and nostalgic, part photograph and part painting.
+  rendering_and_quality: Authentic layered pigment print with brush marks and soft registration, never crisp digital color.
+  creative_brief: "Gum bichromate layers: a photographic print built from several brushed layers of pigmented gum, each exposed and washed, giving soft painterly color separations. Carry it through stacked pigment layers, brushed coating edges, soft misregistration, watercolor paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: stacked pigment layers; brushed coating edges; soft misregistration; watercolor paper
+avoidRules:
+  - crisp digital color photo
+  - clean vector shapes
+  - glossy print surface
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: crisp digital color photo, clean vector shapes, glossy print surface, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_20
+  packName: Print Registers
+  categoryId: print-registers
+  categoryName: 1. Print Registers
+  tags:
+    - curation-v2
+    - print-registers
+    - gum-bichromate
+    - print
+    - portable-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: pigmented gum photographic layers

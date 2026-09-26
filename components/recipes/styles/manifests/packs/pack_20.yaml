@@ -18,6 +18,16 @@ categories:
       - pack_20/SP20-008.yaml
       - pack_20/SP20-009.yaml
       - pack_20/SP20-010.yaml
+      - pack_20/SP20-011.yaml
+      - pack_20/SP20-012.yaml
+      - pack_20/SP20-013.yaml
+      - pack_20/SP20-014.yaml
+      - pack_20/SP20-015.yaml
+      - pack_20/SP20-016.yaml
+      - pack_20/SP20-017.yaml
+      - pack_20/SP20-018.yaml
+      - pack_20/SP20-019.yaml
+      - pack_20/SP20-020.yaml
 presetRefs:
   - pack_20/SP20-001.yaml
   - pack_20/SP20-002.yaml
@@ -29,3 +39,13 @@ presetRefs:
   - pack_20/SP20-008.yaml
   - pack_20/SP20-009.yaml
   - pack_20/SP20-010.yaml
+  - pack_20/SP20-011.yaml
+  - pack_20/SP20-012.yaml
+  - pack_20/SP20-013.yaml
+  - pack_20/SP20-014.yaml
+  - pack_20/SP20-015.yaml
+  - pack_20/SP20-016.yaml
+  - pack_20/SP20-017.yaml
+  - pack_20/SP20-018.yaml
+  - pack_20/SP20-019.yaml
+  - pack_20/SP20-020.yaml

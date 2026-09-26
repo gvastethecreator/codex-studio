@@ -181,7 +181,7 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     cardTitle: 'Print Registers',
     cardDescription:
       'Portable visual studies with explicit printmaking mechanics. Existing representative previews remain available; new entries await preview creation and cross-subject visual evaluation.',
-    presetCount: 10,
+    presetCount: 20,
   },
   {
     id: 'pack_21',

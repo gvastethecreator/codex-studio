@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP20-018
+packId: pack_20
+name: Rainbow-Roll Relief
+styleAnchors:
+  - Rainbow-Roll Relief
+  - blended roller relief print
+  - multi-color roller blend
+displayName: Rainbow-Roll Relief
+category: 1. Print Registers
+domain: blended roller relief print
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - print-registers
+  - rainbow-roll
+  - print
+  - portable-study
+visualDna:
+  aesthetic: 'Rainbow-roll relief: a relief block inked with a roller carrying several colors side by side, so every printed shape blends smoothly from one hue to the next.'
+  subject_treatment: Carve the prompt's subject into bold relief shapes and print it with a blended multi-color roll, keeping its silhouette and pose readable.
+  color_and_tone: Smooth horizontal or vertical blends such as magenta to orange or teal to violet across every shape.
+  lighting_and_shadow: No modeled light; the color blend suggests sky or depth while carved gaps stay paper white.
+  texture_and_material: Soft roller blend, slight ink speckle, carved edges and faint roller streaks across the paper.
+  camera_and_composition: Bold graphic shapes with the blend direction reinforcing the composition.
+  atmosphere_and_mood: Joyful, warm and energetic, like a sunset trapped in a block print.
+  rendering_and_quality: Authentic relief print with seamless roller blend and carved whites, never airbrushed.
+  creative_brief: "Rainbow-roll relief: a relief block inked with a roller carrying several colors side by side, so every printed shape blends smoothly from one hue to the next. Carry it through multi-color roller blend, carved white gaps, bold shapes, roller streaks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: multi-color roller blend; carved white gaps; bold shapes; roller streaks
+avoidRules:
+  - airbrushed gradient
+  - photographic shading
+  - single flat color
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: airbrushed gradient, photographic shading, single flat color, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_20
+  packName: Print Registers
+  categoryId: print-registers
+  categoryName: 1. Print Registers
+  tags:
+    - curation-v2
+    - print-registers
+    - rainbow-roll
+    - print
+    - portable-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: blended roller relief print

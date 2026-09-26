@@ -3,7 +3,7 @@
     {
       "id": "pack_20",
       "name": "Print Registers",
-      "presetCount": 10
+      "presetCount": 20
     }
   ],
   "presets": [
@@ -126,7 +126,171 @@
       "tags": ["print-registers", "print-registers"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp20-010 halftone screen 1. print registers print registers pack_20 print registers print-registers print-registers print-registers"
+    },
+    {
+      "id": "SP20-011",
+      "name": "Photogravure Tone",
+      "styleAnchors": [
+        "Photogravure Tone",
+        "etched photographic plate print",
+        "velvet etched shadows"
+      ],
+      "ref": "pack_20/SP20-011.yaml",
+      "packId": "pack_20",
+      "packName": "Print Registers",
+      "categoryId": "print-registers",
+      "categoryName": "1. Print Registers",
+      "domain": "etched photographic plate print",
+      "tags": ["print-registers", "print-registers", "etched-photographic-plate-print"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp20-011 photogravure tone etched photographic plate print velvet etched shadows 1. print registers print registers etched photographic plate print pack_20 print registers print-registers print-registers print-registers etched-photographic-plate-print"
+    },
+    {
+      "id": "SP20-012",
+      "name": "Gum Bichromate Layers",
+      "styleAnchors": [
+        "Gum Bichromate Layers",
+        "pigmented gum photographic layers",
+        "stacked pigment layers"
+      ],
+      "ref": "pack_20/SP20-012.yaml",
+      "packId": "pack_20",
+      "packName": "Print Registers",
+      "categoryId": "print-registers",
+      "categoryName": "1. Print Registers",
+      "domain": "pigmented gum photographic layers",
+      "tags": ["print-registers", "print-registers", "pigmented-gum-photographic-layers"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp20-012 gum bichromate layers pigmented gum photographic layers stacked pigment layers 1. print registers print registers pigmented gum photographic layers pack_20 print registers print-registers print-registers print-registers pigmented-gum-photographic-layers"
+    },
+    {
+      "id": "SP20-013",
+      "name": "Anthotype Fade",
+      "styleAnchors": ["Anthotype Fade", "plant juice sun print", "plant juice coating"],
+      "ref": "pack_20/SP20-013.yaml",
+      "packId": "pack_20",
+      "packName": "Print Registers",
+      "categoryId": "print-registers",
+      "categoryName": "1. Print Registers",
+      "domain": "plant juice sun print",
+      "tags": ["print-registers", "print-registers", "plant-juice-sun-print"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp20-013 anthotype fade plant juice sun print plant juice coating 1. print registers print registers plant juice sun print pack_20 print registers print-registers print-registers print-registers plant-juice-sun-print"
+    },
+    {
+      "id": "SP20-014",
+      "name": "Plank-Grain Relief",
+      "styleAnchors": ["Plank-Grain Relief", "wood grain relief print", "wood grain in flats"],
+      "ref": "pack_20/SP20-014.yaml",
+      "packId": "pack_20",
+      "packName": "Print Registers",
+      "categoryId": "print-registers",
+      "categoryName": "1. Print Registers",
+      "domain": "wood grain relief print",
+      "tags": ["print-registers", "print-registers", "wood-grain-relief-print"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp20-014 plank-grain relief wood grain relief print wood grain in flats 1. print registers print registers wood grain relief print pack_20 print registers print-registers print-registers print-registers wood-grain-relief-print"
+    },
+    {
+      "id": "SP20-015",
+      "name": "Stele Ink Rubbing",
+      "styleAnchors": [
+        "Stele Ink Rubbing",
+        "rubbed impression of carved stone",
+        "raised areas dark"
+      ],
+      "ref": "pack_20/SP20-015.yaml",
+      "packId": "pack_20",
+      "packName": "Print Registers",
+      "categoryId": "print-registers",
+      "categoryName": "1. Print Registers",
+      "domain": "rubbed impression of carved stone",
+      "tags": ["print-registers", "print-registers", "rubbed-impression-of-carved-stone"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp20-015 stele ink rubbing rubbed impression of carved stone raised areas dark 1. print registers print registers rubbed impression of carved stone pack_20 print registers print-registers print-registers print-registers rubbed-impression-of-carved-stone"
+    },
+    {
+      "id": "SP20-016",
+      "name": "Solvent Transfer Ghost",
+      "styleAnchors": [
+        "Solvent Transfer Ghost",
+        "solvent photocopy transfer",
+        "burnishing streaks"
+      ],
+      "ref": "pack_20/SP20-016.yaml",
+      "packId": "pack_20",
+      "packName": "Print Registers",
+      "categoryId": "print-registers",
+      "categoryName": "1. Print Registers",
+      "domain": "solvent photocopy transfer",
+      "tags": ["print-registers", "print-registers", "solvent-photocopy-transfer"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp20-016 solvent transfer ghost solvent photocopy transfer burnishing streaks 1. print registers print registers solvent photocopy transfer pack_20 print registers print-registers print-registers print-registers solvent-photocopy-transfer"
+    },
+    {
+      "id": "SP20-017",
+      "name": "Diazo Line Print",
+      "styleAnchors": ["Diazo Line Print", "ammonia whiteprint copy", "blue-violet lines"],
+      "ref": "pack_20/SP20-017.yaml",
+      "packId": "pack_20",
+      "packName": "Print Registers",
+      "categoryId": "print-registers",
+      "categoryName": "1. Print Registers",
+      "domain": "ammonia whiteprint copy",
+      "tags": ["print-registers", "print-registers", "ammonia-whiteprint-copy"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp20-017 diazo line print ammonia whiteprint copy blue-violet lines 1. print registers print registers ammonia whiteprint copy pack_20 print registers print-registers print-registers print-registers ammonia-whiteprint-copy"
+    },
+    {
+      "id": "SP20-018",
+      "name": "Rainbow-Roll Relief",
+      "styleAnchors": [
+        "Rainbow-Roll Relief",
+        "blended roller relief print",
+        "multi-color roller blend"
+      ],
+      "ref": "pack_20/SP20-018.yaml",
+      "packId": "pack_20",
+      "packName": "Print Registers",
+      "categoryId": "print-registers",
+      "categoryName": "1. Print Registers",
+      "domain": "blended roller relief print",
+      "tags": ["print-registers", "print-registers", "blended-roller-relief-print"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp20-018 rainbow-roll relief blended roller relief print multi-color roller blend 1. print registers print registers blended roller relief print pack_20 print registers print-registers print-registers print-registers blended-roller-relief-print"
+    },
+    {
+      "id": "SP20-019",
+      "name": "Carbon Paper Trace",
+      "styleAnchors": ["Carbon Paper Trace", "carbon copy tracing", "blue-black carbon lines"],
+      "ref": "pack_20/SP20-019.yaml",
+      "packId": "pack_20",
+      "packName": "Print Registers",
+      "categoryId": "print-registers",
+      "categoryName": "1. Print Registers",
+      "domain": "carbon copy tracing",
+      "tags": ["print-registers", "print-registers", "carbon-copy-tracing"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp20-019 carbon paper trace carbon copy tracing blue-black carbon lines 1. print registers print registers carbon copy tracing pack_20 print registers print-registers print-registers print-registers carbon-copy-tracing"
+    },
+    {
+      "id": "SP20-020",
+      "name": "Gel Plate Layers",
+      "styleAnchors": [
+        "Gel Plate Layers",
+        "gelatin plate monoprint layers",
+        "translucent paint layers"
+      ],
+      "ref": "pack_20/SP20-020.yaml",
+      "packId": "pack_20",
+      "packName": "Print Registers",
+      "categoryId": "print-registers",
+      "categoryName": "1. Print Registers",
+      "domain": "gelatin plate monoprint layers",
+      "tags": ["print-registers", "print-registers", "gelatin-plate-monoprint-layers"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp20-020 gel plate layers gelatin plate monoprint layers translucent paint layers 1. print registers print registers gelatin plate monoprint layers pack_20 print registers print-registers print-registers print-registers gelatin-plate-monoprint-layers"
     }
   ],
-  "totalPresetCount": 10
+  "totalPresetCount": 20
 }

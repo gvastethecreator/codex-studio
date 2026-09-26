@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP20-014
+packId: pack_20
+name: Plank-Grain Relief
+styleAnchors:
+  - Plank-Grain Relief
+  - wood grain relief print
+  - wood grain in flats
+displayName: Plank-Grain Relief
+category: 1. Print Registers
+domain: wood grain relief print
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - print-registers
+  - plank-grain
+  - print
+  - portable-study
+visualDna:
+  aesthetic: 'Plank-grain relief: a relief print cut from soft plank wood, where the natural grain prints as rippling lines inside every flat color area.'
+  subject_treatment: Carve the prompt's subject into simple flat shapes whose wood grain shows through the ink, keeping its silhouette and pose readable.
+  color_and_tone: Two to four flat ink colors such as indigo, rust and ochre, each carrying visible grain striations.
+  lighting_and_shadow: No modeled light; value comes from flat color shapes and carved white gaps.
+  texture_and_material: Flowing wood grain lines, knot rings and cut-edge chatter printed inside every color block.
+  camera_and_composition: Bold simplified composition with large color shapes and grain running in one direction.
+  atmosphere_and_mood: Rustic, warm and handmade, with the living tree still visible.
+  rendering_and_quality: Authentic relief print with grain inside flats and carved edges, never smooth vector fills.
+  creative_brief: "Plank-grain relief: a relief print cut from soft plank wood, where the natural grain prints as rippling lines inside every flat color area. Carry it through wood grain in flats, knot rings, carved chatter, bold simple shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: wood grain in flats; knot rings; carved chatter; bold simple shapes
+avoidRules:
+  - smooth vector fills
+  - photographic shading
+  - fine engraved hatching
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: smooth vector fills, photographic shading, fine engraved hatching, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_20
+  packName: Print Registers
+  categoryId: print-registers
+  categoryName: 1. Print Registers
+  tags:
+    - curation-v2
+    - print-registers
+    - plank-grain
+    - print
+    - portable-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: wood grain relief print

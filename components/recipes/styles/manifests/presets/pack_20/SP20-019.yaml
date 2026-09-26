@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP20-019
+packId: pack_20
+name: Carbon Paper Trace
+styleAnchors:
+  - Carbon Paper Trace
+  - carbon copy tracing
+  - blue-black carbon lines
+displayName: Carbon Paper Trace
+category: 1. Print Registers
+domain: carbon copy tracing
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - print-registers
+  - carbon-trace
+  - print
+  - portable-study
+visualDna:
+  aesthetic: 'Carbon paper trace: a drawing transferred by pressing through carbon paper, leaving smudgy blue-black lines, pressure blots and stray hand smears.'
+  subject_treatment: Trace the prompt's subject as carbon-transferred lines, keeping its outline and main details while pressure changes darken or break the line.
+  color_and_tone: Blue-black or purple carbon lines on thin white or yellow copy paper.
+  lighting_and_shadow: No modeled light; shading appears only as rubbed carbon patches where the hand pressed.
+  texture_and_material: Grainy carbon lines, fingerprint smudges, pressure blots at stops and faint accidental marks.
+  camera_and_composition: Simple illustrative layout on a single sheet, sometimes with a faint double from shifting paper.
+  atmosphere_and_mood: Bureaucratic, intimate and slightly messy, a copy made by hand.
+  rendering_and_quality: Authentic carbon transfer texture with smudges and blots, never clean pen lines.
+  creative_brief: "Carbon paper trace: a drawing transferred by pressing through carbon paper, leaving smudgy blue-black lines, pressure blots and stray hand smears. Carry it through blue-black carbon lines, pressure blots, fingerprint smudges, thin copy paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: blue-black carbon lines; pressure blots; fingerprint smudges; thin copy paper
+avoidRules:
+  - clean pen line
+  - full color painting
+  - digital vector line
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: clean pen line, full color painting, digital vector line, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_20
+  packName: Print Registers
+  categoryId: print-registers
+  categoryName: 1. Print Registers
+  tags:
+    - curation-v2
+    - print-registers
+    - carbon-trace
+    - print
+    - portable-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: carbon copy tracing

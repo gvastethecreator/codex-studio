@@ -296,4 +296,347 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP20-011',
+    name: 'Photogravure Tone',
+    displayName: 'Photogravure Tone',
+    styleAnchors: ['Photogravure Tone', 'etched photographic plate print', 'velvet etched shadows'],
+    category: '1. Print Registers',
+    domain: 'etched photographic plate print',
+    negativePrompt:
+      'digital photo sharpness, harsh modern color, flat inkjet black, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Photogravure tone: a photographic image etched into a copper plate and printed in intaglio ink, with deep velvety shadows and soft continuous grain.',
+      subject_treatment:
+        "Render the prompt's subject as an etched photographic print, keeping its forms and likeness while the plate adds rich ink depth and soft grain.",
+      color_and_tone:
+        'Warm black or sepia ink on soft cream paper, deep rich shadows and gentle luminous highlights.',
+      lighting_and_shadow:
+        'Natural photographic light held in continuous tone, with shadows pooling into dense velvety ink.',
+      texture_and_material:
+        'Fine aquatint-like grain in mid-tones, a visible plate mark and slightly raised ink in the darks.',
+      camera_and_composition:
+        'Classic photographic framing with a wide paper margin and plate mark around the image.',
+      atmosphere_and_mood: 'Timeless, quiet and precious, like an early art photograph.',
+      rendering_and_quality:
+        'Continuous-tone intaglio print with fine grain and embossed plate edge, never a digital photo.',
+      creative_brief:
+        "Photogravure tone: a photographic image etched into a copper plate and printed in intaglio ink, with deep velvety shadows and soft continuous grain. Carry it through velvet etched shadows, fine plate grain, plate mark, warm ink on cream paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'velvet etched shadows; fine plate grain; plate mark; warm ink on cream paper',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP20-012',
+    name: 'Gum Bichromate Layers',
+    displayName: 'Gum Bichromate Layers',
+    styleAnchors: [
+      'Gum Bichromate Layers',
+      'pigmented gum photographic layers',
+      'stacked pigment layers',
+    ],
+    category: '1. Print Registers',
+    domain: 'pigmented gum photographic layers',
+    negativePrompt:
+      'crisp digital color photo, clean vector shapes, glossy print surface, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Gum bichromate layers: a photographic print built from several brushed layers of pigmented gum, each exposed and washed, giving soft painterly color separations.',
+      subject_treatment:
+        "Show the prompt's subject as a layered pigment photograph, keeping its forms while each color layer sits slightly apart with brushy edges.",
+      color_and_tone:
+        'Muted pigment layers such as terracotta, slate blue and olive, overlapping into soft secondary colors.',
+      lighting_and_shadow:
+        'Photographic light softened into broad tonal masses, highlights washed clean and shadows built from stacked pigment.',
+      texture_and_material:
+        'Brushed gum streaks, pigment granulation, soft washed-out edges and slightly misaligned color layers on watercolor paper.',
+      camera_and_composition:
+        'Pictorial framing with soft focus falloff and a painterly border where the brushed coating stops.',
+      atmosphere_and_mood: 'Dreamy, handmade and nostalgic, part photograph and part painting.',
+      rendering_and_quality:
+        'Authentic layered pigment print with brush marks and soft registration, never crisp digital color.',
+      creative_brief:
+        "Gum bichromate layers: a photographic print built from several brushed layers of pigmented gum, each exposed and washed, giving soft painterly color separations. Carry it through stacked pigment layers, brushed coating edges, soft misregistration, watercolor paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features:
+        'stacked pigment layers; brushed coating edges; soft misregistration; watercolor paper',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP20-013',
+    name: 'Anthotype Fade',
+    displayName: 'Anthotype Fade',
+    styleAnchors: ['Anthotype Fade', 'plant juice sun print', 'plant juice coating'],
+    category: '1. Print Registers',
+    domain: 'plant juice sun print',
+    negativePrompt:
+      'saturated digital color, sharp photographic detail, clean white border, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Anthotype fade: a sun print made on paper coated with crushed plant juice, where light slowly bleaches the color and leaves the image in pale, fragile tints.',
+      subject_treatment:
+        "Render the prompt's subject as a faded plant-pigment sun print, keeping its silhouette and major shapes while fine detail dissolves into soft bleached tones.",
+      color_and_tone:
+        'Faded berry violet, turmeric yellow or spinach green tints bleaching toward pale cream.',
+      lighting_and_shadow:
+        'Exposed areas bleached pale, protected areas holding stronger plant color, with soft blurred boundaries.',
+      texture_and_material:
+        'Uneven brushed plant juice coating, streaks, speckles of pulp and soft paper fibers.',
+      camera_and_composition:
+        'Contact-print framing with objects or silhouettes laid flat and a ragged coated border.',
+      atmosphere_and_mood: 'Fragile, botanical and ephemeral, an image already disappearing.',
+      rendering_and_quality:
+        'Soft organic sun print with uneven coating and bleached tints, never sharp or saturated.',
+      creative_brief:
+        "Anthotype fade: a sun print made on paper coated with crushed plant juice, where light slowly bleaches the color and leaves the image in pale, fragile tints. Carry it through plant juice coating, sun-bleached tints, soft edges, ragged coated border. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'plant juice coating; sun-bleached tints; soft edges; ragged coated border',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP20-014',
+    name: 'Plank-Grain Relief',
+    displayName: 'Plank-Grain Relief',
+    styleAnchors: ['Plank-Grain Relief', 'wood grain relief print', 'wood grain in flats'],
+    category: '1. Print Registers',
+    domain: 'wood grain relief print',
+    negativePrompt:
+      'smooth vector fills, photographic shading, fine engraved hatching, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Plank-grain relief: a relief print cut from soft plank wood, where the natural grain prints as rippling lines inside every flat color area.',
+      subject_treatment:
+        "Carve the prompt's subject into simple flat shapes whose wood grain shows through the ink, keeping its silhouette and pose readable.",
+      color_and_tone:
+        'Two to four flat ink colors such as indigo, rust and ochre, each carrying visible grain striations.',
+      lighting_and_shadow:
+        'No modeled light; value comes from flat color shapes and carved white gaps.',
+      texture_and_material:
+        'Flowing wood grain lines, knot rings and cut-edge chatter printed inside every color block.',
+      camera_and_composition:
+        'Bold simplified composition with large color shapes and grain running in one direction.',
+      atmosphere_and_mood: 'Rustic, warm and handmade, with the living tree still visible.',
+      rendering_and_quality:
+        'Authentic relief print with grain inside flats and carved edges, never smooth vector fills.',
+      creative_brief:
+        "Plank-grain relief: a relief print cut from soft plank wood, where the natural grain prints as rippling lines inside every flat color area. Carry it through wood grain in flats, knot rings, carved chatter, bold simple shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'wood grain in flats; knot rings; carved chatter; bold simple shapes',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP20-015',
+    name: 'Stele Ink Rubbing',
+    displayName: 'Stele Ink Rubbing',
+    styleAnchors: ['Stele Ink Rubbing', 'rubbed impression of carved stone', 'raised areas dark'],
+    category: '1. Print Registers',
+    domain: 'rubbed impression of carved stone',
+    negativePrompt:
+      'clean ink drawing, photographic stone, colored paint, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Stele ink rubbing: damp paper pressed over a carved stone relief and dabbed with an ink pad, so raised surfaces print black and carved recesses stay pale.',
+      subject_treatment:
+        "Show the prompt's subject as if carved in shallow stone relief and captured by rubbing, keeping its outline and main forms clear.",
+      color_and_tone:
+        'Black or charcoal ink dabbed onto thin paper, with pale recessed lines and gradations from pad pressure.',
+      lighting_and_shadow:
+        'No light source; raised areas print dark, carved lines stay white and edges soften with pad texture.',
+      texture_and_material:
+        'Dabbed pad mottling, thin crinkled paper, stone pits and cracks printing as white specks.',
+      camera_and_composition:
+        'Flat frontal impression with the relief filling the sheet and a soft ragged edge.',
+      atmosphere_and_mood: 'Ancient, archival and ceremonial, a trace taken from stone.',
+      rendering_and_quality:
+        'Authentic rubbing with pad mottling and stone damage, never a clean drawing.',
+      creative_brief:
+        "Stele ink rubbing: damp paper pressed over a carved stone relief and dabbed with an ink pad, so raised surfaces print black and carved recesses stay pale. Carry it through raised areas dark, carved lines pale, pad mottling, stone cracks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'raised areas dark; carved lines pale; pad mottling; stone cracks',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP20-016',
+    name: 'Solvent Transfer Ghost',
+    displayName: 'Solvent Transfer Ghost',
+    styleAnchors: ['Solvent Transfer Ghost', 'solvent photocopy transfer', 'burnishing streaks'],
+    category: '1. Print Registers',
+    domain: 'solvent photocopy transfer',
+    negativePrompt:
+      'clean print, saturated color, crisp complete image, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Solvent transfer ghost: a toner photocopy burnished face-down onto paper with solvent, leaving a reversed, patchy and streaked ghost of the image.',
+      subject_treatment:
+        "Transfer the prompt's subject as a mirrored ghost of a photocopy, keeping its shape recognizable while patches fail to transfer.",
+      color_and_tone:
+        'Faded black or brown toner on off-white paper, with occasional pale color from a color copy.',
+      lighting_and_shadow:
+        'Photographic light survives in broken form, shadows transferred heavier than highlights.',
+      texture_and_material:
+        'Burnishing streaks in one direction, missing patches, solvent haze and paper fiber showing through.',
+      camera_and_composition:
+        'Collage-like placement with rough transfer edges and possibly overlapping transfers.',
+      atmosphere_and_mood: 'Fragile, nostalgic and uncanny, like a faded memory rubbed off.',
+      rendering_and_quality:
+        'Authentic patchy transfer with directional streaks, never a clean print.',
+      creative_brief:
+        "Solvent transfer ghost: a toner photocopy burnished face-down onto paper with solvent, leaving a reversed, patchy and streaked ghost of the image. Carry it through burnishing streaks, missing patches, faded toner, rough edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'burnishing streaks; missing patches; faded toner; rough edges',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP20-017',
+    name: 'Diazo Line Print',
+    displayName: 'Diazo Line Print',
+    styleAnchors: ['Diazo Line Print', 'ammonia whiteprint copy', 'blue-violet lines'],
+    category: '1. Print Registers',
+    domain: 'ammonia whiteprint copy',
+    negativePrompt:
+      'crisp digital linework, white lines on blue, full color painting, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Diazo line print: an old ammonia whiteprint copy of a drawing, with blue-violet or sepia lines on pale paper and uneven developing haze.',
+      subject_treatment:
+        "Show the prompt's subject as a copied line drawing, keeping its outline and structure clear while the process tints and softens the lines.",
+      color_and_tone:
+        'Blue-violet or brown lines on off-white paper with a faint tinted haze in large areas.',
+      lighting_and_shadow:
+        'No modeled light; hatched or filled areas from the original drawing print as tinted tone.',
+      texture_and_material:
+        'Slightly fuzzy lines, streaky ammonia development, faded edges and folded copy creases.',
+      camera_and_composition:
+        'Technical or illustrative layout on a large sheet, with wide margins and fold lines.',
+      atmosphere_and_mood: 'Archival, practical and faded, like plans found in an old office.',
+      rendering_and_quality:
+        'Authentic copied line work with process haze and creases, never crisp digital lines.',
+      creative_brief:
+        "Diazo line print: an old ammonia whiteprint copy of a drawing, with blue-violet or sepia lines on pale paper and uneven developing haze. Carry it through blue-violet lines, ammonia haze, fold creases, fuzzy copy edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'blue-violet lines; ammonia haze; fold creases; fuzzy copy edges',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP20-018',
+    name: 'Rainbow-Roll Relief',
+    displayName: 'Rainbow-Roll Relief',
+    styleAnchors: [
+      'Rainbow-Roll Relief',
+      'blended roller relief print',
+      'multi-color roller blend',
+    ],
+    category: '1. Print Registers',
+    domain: 'blended roller relief print',
+    negativePrompt:
+      'airbrushed gradient, photographic shading, single flat color, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Rainbow-roll relief: a relief block inked with a roller carrying several colors side by side, so every printed shape blends smoothly from one hue to the next.',
+      subject_treatment:
+        "Carve the prompt's subject into bold relief shapes and print it with a blended multi-color roll, keeping its silhouette and pose readable.",
+      color_and_tone:
+        'Smooth horizontal or vertical blends such as magenta to orange or teal to violet across every shape.',
+      lighting_and_shadow:
+        'No modeled light; the color blend suggests sky or depth while carved gaps stay paper white.',
+      texture_and_material:
+        'Soft roller blend, slight ink speckle, carved edges and faint roller streaks across the paper.',
+      camera_and_composition:
+        'Bold graphic shapes with the blend direction reinforcing the composition.',
+      atmosphere_and_mood: 'Joyful, warm and energetic, like a sunset trapped in a block print.',
+      rendering_and_quality:
+        'Authentic relief print with seamless roller blend and carved whites, never airbrushed.',
+      creative_brief:
+        "Rainbow-roll relief: a relief block inked with a roller carrying several colors side by side, so every printed shape blends smoothly from one hue to the next. Carry it through multi-color roller blend, carved white gaps, bold shapes, roller streaks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'multi-color roller blend; carved white gaps; bold shapes; roller streaks',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP20-019',
+    name: 'Carbon Paper Trace',
+    displayName: 'Carbon Paper Trace',
+    styleAnchors: ['Carbon Paper Trace', 'carbon copy tracing', 'blue-black carbon lines'],
+    category: '1. Print Registers',
+    domain: 'carbon copy tracing',
+    negativePrompt:
+      'clean pen line, full color painting, digital vector line, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Carbon paper trace: a drawing transferred by pressing through carbon paper, leaving smudgy blue-black lines, pressure blots and stray hand smears.',
+      subject_treatment:
+        "Trace the prompt's subject as carbon-transferred lines, keeping its outline and main details while pressure changes darken or break the line.",
+      color_and_tone: 'Blue-black or purple carbon lines on thin white or yellow copy paper.',
+      lighting_and_shadow:
+        'No modeled light; shading appears only as rubbed carbon patches where the hand pressed.',
+      texture_and_material:
+        'Grainy carbon lines, fingerprint smudges, pressure blots at stops and faint accidental marks.',
+      camera_and_composition:
+        'Simple illustrative layout on a single sheet, sometimes with a faint double from shifting paper.',
+      atmosphere_and_mood: 'Bureaucratic, intimate and slightly messy, a copy made by hand.',
+      rendering_and_quality:
+        'Authentic carbon transfer texture with smudges and blots, never clean pen lines.',
+      creative_brief:
+        "Carbon paper trace: a drawing transferred by pressing through carbon paper, leaving smudgy blue-black lines, pressure blots and stray hand smears. Carry it through blue-black carbon lines, pressure blots, fingerprint smudges, thin copy paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'blue-black carbon lines; pressure blots; fingerprint smudges; thin copy paper',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP20-020',
+    name: 'Gel Plate Layers',
+    displayName: 'Gel Plate Layers',
+    styleAnchors: [
+      'Gel Plate Layers',
+      'gelatin plate monoprint layers',
+      'translucent paint layers',
+    ],
+    category: '1. Print Registers',
+    domain: 'gelatin plate monoprint layers',
+    negativePrompt:
+      'digital texture overlay, photographic realism, single flat layer, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Gel plate layers: monoprints pulled from a soft gelatin plate, stacking translucent paint layers with leaf, lace and stencil impressions.',
+      subject_treatment:
+        "Build the prompt's subject from stencil and object impressions pulled from a soft plate, keeping its silhouette clear among layered textures.",
+      color_and_tone:
+        'Translucent layered acrylic colors, often teal, coral and mustard, overlapping into new tones.',
+      lighting_and_shadow:
+        'No modeled light; depth comes from stacked translucent layers and ghost prints.',
+      texture_and_material:
+        'Brayer marks, leaf vein impressions, lace patterns, ghost prints and soft blotchy edges.',
+      camera_and_composition:
+        'Collage-like layered composition with the subject as a crisp stencil shape over textures.',
+      atmosphere_and_mood: 'Playful, botanical and experimental, a studio full of happy accidents.',
+      rendering_and_quality:
+        'Authentic layered monoprint textures with real impressions, never digital overlays.',
+      creative_brief:
+        "Gel plate layers: monoprints pulled from a soft gelatin plate, stacking translucent paint layers with leaf, lace and stencil impressions. Carry it through translucent paint layers, leaf and lace impressions, brayer marks, stencil subject. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features:
+        'translucent paint layers; leaf and lace impressions; brayer marks; stencil subject',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

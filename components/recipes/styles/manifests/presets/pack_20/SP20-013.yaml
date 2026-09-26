@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP20-013
+packId: pack_20
+name: Anthotype Fade
+styleAnchors:
+  - Anthotype Fade
+  - plant juice sun print
+  - plant juice coating
+displayName: Anthotype Fade
+category: 1. Print Registers
+domain: plant juice sun print
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - print-registers
+  - anthotype
+  - print
+  - portable-study
+visualDna:
+  aesthetic: 'Anthotype fade: a sun print made on paper coated with crushed plant juice, where light slowly bleaches the color and leaves the image in pale, fragile tints.'
+  subject_treatment: Render the prompt's subject as a faded plant-pigment sun print, keeping its silhouette and major shapes while fine detail dissolves into soft bleached tones.
+  color_and_tone: Faded berry violet, turmeric yellow or spinach green tints bleaching toward pale cream.
+  lighting_and_shadow: Exposed areas bleached pale, protected areas holding stronger plant color, with soft blurred boundaries.
+  texture_and_material: Uneven brushed plant juice coating, streaks, speckles of pulp and soft paper fibers.
+  camera_and_composition: Contact-print framing with objects or silhouettes laid flat and a ragged coated border.
+  atmosphere_and_mood: Fragile, botanical and ephemeral, an image already disappearing.
+  rendering_and_quality: Soft organic sun print with uneven coating and bleached tints, never sharp or saturated.
+  creative_brief: "Anthotype fade: a sun print made on paper coated with crushed plant juice, where light slowly bleaches the color and leaves the image in pale, fragile tints. Carry it through plant juice coating, sun-bleached tints, soft edges, ragged coated border. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: plant juice coating; sun-bleached tints; soft edges; ragged coated border
+avoidRules:
+  - saturated digital color
+  - sharp photographic detail
+  - clean white border
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: saturated digital color, sharp photographic detail, clean white border, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_20
+  packName: Print Registers
+  categoryId: print-registers
+  categoryName: 1. Print Registers
+  tags:
+    - curation-v2
+    - print-registers
+    - anthotype
+    - print
+    - portable-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: plant juice sun print
