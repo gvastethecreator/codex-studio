@@ -191,7 +191,7 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     cardTitle: 'Paper & Pigment',
     cardDescription:
       'Portable paper and pigment studies defined by transferable material and mark-making mechanics. New entries have no default preview image; cross-subject visual evaluation remains pending.',
-    presetCount: 10,
+    presetCount: 20,
   },
   {
     id: 'pack_22',

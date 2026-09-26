@@ -295,4 +295,370 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP21-011',
+    name: 'Inclusion Paper Ground',
+    displayName: 'Inclusion Paper Ground',
+    styleAnchors: [
+      'Inclusion Paper Ground',
+      'painting on handmade inclusion paper',
+      'pressed petals in paper',
+    ],
+    category: '1. Paper & Pigment',
+    domain: 'painting on handmade inclusion paper',
+    negativePrompt:
+      'smooth printer paper, opaque paint covering the ground, digital texture overlay, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Inclusion paper ground: light painting on thick handmade paper full of pressed petals, grass fibers and seeds, with deckled edges framing the image.',
+      subject_treatment:
+        "Paint the prompt's subject lightly over the flecked handmade sheet, keeping its shape clear while petals and fibers show through the paint.",
+      color_and_tone:
+        'Soft washes of color over an off-white sheet flecked with pink, green and gold inclusions.',
+      lighting_and_shadow:
+        'Gentle diffuse light, with raking side light revealing the uneven fibrous paper surface.',
+      texture_and_material:
+        'Pressed petals, stray fibers, seed flecks, lumpy handmade surface and soft torn deckle edges.',
+      camera_and_composition:
+        'The whole sheet visible with its deckled border, the subject floating over the flecked ground.',
+      atmosphere_and_mood: 'Gentle, botanical and handmade, like a keepsake from a garden.',
+      rendering_and_quality:
+        'Light translucent paint that lets the inclusions show, never covering the paper character.',
+      creative_brief:
+        "Inclusion paper ground: light painting on thick handmade paper full of pressed petals, grass fibers and seeds, with deckled edges framing the image. Carry it through pressed petals in paper, deckled edges, light washes, fibrous surface. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'pressed petals in paper; deckled edges; light washes; fibrous surface',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP21-012',
+    name: 'Translucent Tissue Layers',
+    displayName: 'Translucent Tissue Layers',
+    styleAnchors: [
+      'Translucent Tissue Layers',
+      'overlapping tissue paper collage',
+      'overlapping translucent sheets',
+    ],
+    category: '1. Paper & Pigment',
+    domain: 'overlapping tissue paper collage',
+    negativePrompt:
+      'flat digital transparency, opaque paper cutout, photographic realism, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Translucent tissue layers: torn and cut tissue paper glued in overlapping sheets, colors multiplying where they cross and wrinkles catching the light.',
+      subject_treatment:
+        "Build the prompt's subject from overlapping translucent tissue shapes, keeping its silhouette readable through the layered color.",
+      color_and_tone:
+        'Bright translucent tissue colors such as magenta, lemon and cyan mixing into new tones where they overlap.',
+      lighting_and_shadow:
+        'Light seems to pass through the layers, with darker zones where many sheets stack.',
+      texture_and_material:
+        'Glue wrinkles, soft torn edges, visible overlaps, faint glue sheen and slight bleeding of dye.',
+      camera_and_composition:
+        'Simple layered composition with large overlapping shapes and clear subject silhouette.',
+      atmosphere_and_mood: 'Cheerful, luminous and handmade, like a sunlit window collage.',
+      rendering_and_quality:
+        'Authentic tissue collage with wrinkles and overlap colors, never flat digital transparency.',
+      creative_brief:
+        "Translucent tissue layers: torn and cut tissue paper glued in overlapping sheets, colors multiplying where they cross and wrinkles catching the light. Carry it through overlapping translucent sheets, mixed overlap colors, glue wrinkles, torn edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features:
+        'overlapping translucent sheets; mixed overlap colors; glue wrinkles; torn edges',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP21-013',
+    name: 'Singed Paper Burn-Through',
+    displayName: 'Singed Paper Burn-Through',
+    styleAnchors: [
+      'Singed Paper Burn-Through',
+      'image made by scorching paper',
+      'scorch gradients',
+    ],
+    category: '1. Paper & Pigment',
+    domain: 'image made by scorching paper',
+    negativePrompt:
+      'painted brown color, clean cut holes, active flames covering the image, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Singed paper burn-through: an image made by scorching and burning paper, with browned gradients, charred edges and holes burned clean through.',
+      subject_treatment:
+        "Form the prompt's subject from scorch tones and burned-through openings, keeping its silhouette and main forms clearly readable.",
+      color_and_tone:
+        'Cream paper browning through amber and umber to black char at the burned edges.',
+      lighting_and_shadow:
+        'Tone comes from scorch depth; holes let light or a dark backing show through.',
+      texture_and_material:
+        'Curled charred edges, delicate ash rims, heat-browned halos and crisp burned holes.',
+      camera_and_composition:
+        'The sheet shown flat or slightly curled, with burned openings shaping the subject.',
+      atmosphere_and_mood: 'Dramatic, fragile and dangerous, an image made by fire.',
+      rendering_and_quality:
+        'Authentic scorch gradients and real char edges, never painted brown or clean cuts.',
+      creative_brief:
+        "Singed paper burn-through: an image made by scorching and burning paper, with browned gradients, charred edges and holes burned clean through. Carry it through scorch gradients, charred hole edges, ash rims, curled paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'scorch gradients; charred hole edges; ash rims; curled paper',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP21-014',
+    name: 'Poured Pulp Painting',
+    displayName: 'Poured Pulp Painting',
+    styleAnchors: ['Poured Pulp Painting', 'colored paper pulp image', 'color inside the paper'],
+    category: '1. Paper & Pigment',
+    domain: 'colored paper pulp image',
+    negativePrompt:
+      'crisp paint edges, glossy surface, digital flat shapes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Poured pulp painting: an image made by pouring and placing wet colored paper pulp into a sheet, so shapes have soft fibrous edges and the color is inside the paper.',
+      subject_treatment:
+        "Shape the prompt's subject from pools of colored pulp set into the sheet, keeping its silhouette readable with soft fibrous edges.",
+      color_and_tone:
+        'Earthy and bright pulp colors such as indigo, terracotta and moss, matte and fully saturated in the fiber.',
+      lighting_and_shadow:
+        'Soft even light over a matte surface, with subtle relief where pulp was layered thicker.',
+      texture_and_material:
+        'Fibrous feathered edges, lumpy pulp thickness, deckled borders and matte felted surface.',
+      camera_and_composition: 'Simple bold shapes on a full handmade sheet with deckled edges.',
+      atmosphere_and_mood: 'Earthy, calm and tactile, color grown into the paper itself.',
+      rendering_and_quality:
+        'Authentic fibrous pulp edges and matte color, never crisp paint strokes.',
+      creative_brief:
+        "Poured pulp painting: an image made by pouring and placing wet colored paper pulp into a sheet, so shapes have soft fibrous edges and the color is inside the paper. Carry it through color inside the paper, feathered fiber edges, lumpy surface, deckled sheet. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'color inside the paper; feathered fiber edges; lumpy surface; deckled sheet',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP21-015',
+    name: 'Bleach-Drawn Colored Paper',
+    displayName: 'Bleach-Drawn Colored Paper',
+    styleAnchors: [
+      'Bleach-Drawn Colored Paper',
+      'bleach lines on dyed paper',
+      'bleach lines on dark paper',
+    ],
+    category: '1. Paper & Pigment',
+    domain: 'bleach lines on dyed paper',
+    negativePrompt:
+      'white paint on dark paper, neon digital lines, clean vector drawing, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Bleach-drawn colored paper: lines and shapes drawn with bleach on dark dyed paper, lifting the dye into unexpected pale oranges, pinks and creams.',
+      subject_treatment:
+        "Draw the prompt's subject in bleached lines and lifted patches on dyed paper, keeping its outline and features clear.",
+      color_and_tone:
+        'Deep navy, black or purple paper with bleached marks turning rust orange, pink or pale cream.',
+      lighting_and_shadow:
+        'Light areas are lifted with more bleach; darks stay the original paper dye.',
+      texture_and_material:
+        'Soft bleach bleed edges, brush and nib marks, uneven lifting and slight paper cockling.',
+      camera_and_composition:
+        'Graphic composition with glowing pale lines standing out from the dark sheet.',
+      atmosphere_and_mood: 'Mysterious, glowing and unexpected, light pulled from darkness.',
+      rendering_and_quality:
+        'Authentic bleach-lift colors and soft edges, never white paint on dark paper.',
+      creative_brief:
+        "Bleach-drawn colored paper: lines and shapes drawn with bleach on dark dyed paper, lifting the dye into unexpected pale oranges, pinks and creams. Carry it through bleach lines on dark paper, rust and pink lifted tones, soft bleed, cockled sheet. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features:
+        'bleach lines on dark paper; rust and pink lifted tones; soft bleed; cockled sheet',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP21-016',
+    name: 'Folded Tessellation Relief',
+    displayName: 'Folded Tessellation Relief',
+    styleAnchors: [
+      'Folded Tessellation Relief',
+      'pleated paper tessellation',
+      'repeating pleat modules',
+    ],
+    category: '1. Paper & Pigment',
+    domain: 'pleated paper tessellation',
+    negativePrompt:
+      'flat printed pattern, color painted on paper, loose crumpled paper, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Folded tessellation relief: a single sheet pleated and folded into a repeating geometric relief, with the subject emerging from light and shadow on the folds.',
+      subject_treatment:
+        "Suggest the prompt's subject through the pattern and light of a folded tessellation, keeping its silhouette readable across the pleats.",
+      color_and_tone:
+        'White or single-color paper, with value created entirely by light and shadow on the folds.',
+      lighting_and_shadow:
+        'Strong raking light across the pleats, bright faces and deep shadowed valleys forming the image.',
+      texture_and_material:
+        'Crisp folds, repeating pleat modules, slightly softened crease lines and paper grain.',
+      camera_and_composition:
+        'Frontal or slightly angled view of the whole folded sheet under side light.',
+      atmosphere_and_mood: 'Precise, sculptural and meditative, geometry made from one sheet.',
+      rendering_and_quality:
+        'Accurate folded geometry with real shadows, never flat drawn patterns.',
+      creative_brief:
+        "Folded tessellation relief: a single sheet pleated and folded into a repeating geometric relief, with the subject emerging from light and shadow on the folds. Carry it through repeating pleat modules, raking light on folds, single sheet, value from shadow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features:
+        'repeating pleat modules; raking light on folds; single sheet; value from shadow',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP21-017',
+    name: 'Pinpricked Paper Light',
+    displayName: 'Pinpricked Paper Light',
+    styleAnchors: [
+      'Pinpricked Paper Light',
+      'pierced paper backlit picture',
+      'thousands of pierced holes',
+    ],
+    category: '1. Paper & Pigment',
+    domain: 'pierced paper backlit picture',
+    negativePrompt:
+      'painted dots, solid drawn lines, digital glow effect, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Pinpricked paper light: a picture made by piercing thousands of tiny holes through paper, seen glowing when held against light or as raised dots in side light.',
+      subject_treatment:
+        "Render the prompt's subject as patterns of tiny pierced holes, denser in bright areas, keeping its outline and form readable.",
+      color_and_tone: 'Cream or dark paper with glowing warm points of light where it is pierced.',
+      lighting_and_shadow:
+        'Backlight shining through the holes, or raking light catching raised burrs around them.',
+      texture_and_material:
+        'Tiny round holes of varied size, raised paper burrs and slightly yellowed old paper.',
+      camera_and_composition:
+        'The sheet held against a window or lamp, the subject glowing as dotted light.',
+      atmosphere_and_mood: 'Delicate, magical and old-fashioned, like a candlelit keepsake.',
+      rendering_and_quality:
+        'Precise pierced dot patterns glowing through paper, never painted dots.',
+      creative_brief:
+        "Pinpricked paper light: a picture made by piercing thousands of tiny holes through paper, seen glowing when held against light or as raised dots in side light. Carry it through thousands of pierced holes, glowing backlight, raised burrs, old paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'thousands of pierced holes; glowing backlight; raised burrs; old paper',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP21-018',
+    name: 'Dusted Pigment Stencil',
+    displayName: 'Dusted Pigment Stencil',
+    styleAnchors: [
+      'Dusted Pigment Stencil',
+      'raw pigment dusted through stencils',
+      'dusted raw pigment',
+    ],
+    category: '1. Paper & Pigment',
+    domain: 'raw pigment dusted through stencils',
+    negativePrompt:
+      'liquid paint strokes, glossy surface, hard vector edges, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Dusted pigment stencil: loose powdered pigment dusted through stencils onto paper, leaving soft velvety color fields with feathered edges and loose grains.',
+      subject_treatment:
+        "Build the prompt's subject from stenciled fields of dusted powder, keeping its silhouette clear with soft powdery edges.",
+      color_and_tone:
+        'Rich raw pigments such as ultramarine, cadmium red and yellow ochre, intensely saturated and matte.',
+      lighting_and_shadow:
+        'No modeled light; density of dusted powder creates lighter and darker areas.',
+      texture_and_material:
+        'Velvety powder, stray grains, soft feathered stencil edges and faint fingerprints in the dust.',
+      camera_and_composition: 'Bold stencil shapes on white paper with generous space around them.',
+      atmosphere_and_mood: 'Vivid, soft and fragile, color that could blow away.',
+      rendering_and_quality:
+        'Authentic dusted powder texture and matte saturation, never liquid paint.',
+      creative_brief:
+        "Dusted pigment stencil: loose powdered pigment dusted through stencils onto paper, leaving soft velvety color fields with feathered edges and loose grains. Carry it through dusted raw pigment, velvety matte fields, feathered stencil edges, loose grains. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features:
+        'dusted raw pigment; velvety matte fields; feathered stencil edges; loose grains',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP21-019',
+    name: 'Vellum Overlay Layers',
+    displayName: 'Vellum Overlay Layers',
+    styleAnchors: [
+      'Vellum Overlay Layers',
+      'stacked drafting vellum overlays',
+      'stacked translucent sheets',
+    ],
+    category: '1. Paper & Pigment',
+    domain: 'stacked drafting vellum overlays',
+    negativePrompt:
+      'single flat drawing, opaque paper, digital blur only, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Vellum overlay layers: drawings on several translucent drafting sheets stacked on top of each other, earlier layers softening behind later ones.',
+      subject_treatment:
+        "Split the prompt's subject across stacked translucent sheets, keeping it readable while back layers fade into milky haze.",
+      color_and_tone:
+        'Graphite and ink lines with a few color accents, back layers dimmed by milky translucency.',
+      lighting_and_shadow:
+        'Soft diffuse light through the sheets, each layer adding a veil of haze.',
+      texture_and_material:
+        'Frosted translucent sheets, visible sheet edges, tape corners and slight curling.',
+      camera_and_composition:
+        'Stacked sheets slightly offset so their edges and layers are visible.',
+      atmosphere_and_mood: 'Thoughtful, layered and dreamy, like design ideas piling up.',
+      rendering_and_quality:
+        'Believable translucent layering with clean lines on each sheet, never a single flat drawing.',
+      creative_brief:
+        "Vellum overlay layers: drawings on several translucent drafting sheets stacked on top of each other, earlier layers softening behind later ones. Carry it through stacked translucent sheets, hazy back layers, tape corners, offset edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'stacked translucent sheets; hazy back layers; tape corners; offset edges',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP21-020',
+    name: 'Synthetic-Sheet Watercolor Swirl',
+    displayName: 'Synthetic-Sheet Watercolor Swirl',
+    styleAnchors: [
+      'Synthetic-Sheet Watercolor Swirl',
+      'watercolor on non-absorbent synthetic paper',
+      'floating pigment pools',
+    ],
+    category: '1. Paper & Pigment',
+    domain: 'watercolor on non-absorbent synthetic paper',
+    negativePrompt:
+      'soft absorbed washes, paper grain texture, opaque paint, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Synthetic-sheet watercolor swirl: watercolor on smooth non-absorbent plastic paper, where pigment floats, swirls and dries in sharp-edged pools and lifted trails.',
+      subject_treatment:
+        "Let the prompt's subject emerge from floating pigment pools and swirls, keeping its silhouette readable with some wiped-out lights.",
+      color_and_tone:
+        'Intense saturated watercolor that stays bright on the white sheet, mixing in marbled swirls.',
+      lighting_and_shadow:
+        'Lights wiped back to pure white; darks where pigment pooled and dried thick.',
+      texture_and_material:
+        'Hard drying rings, marbled swirls, wiped trails and a slightly glossy smooth surface.',
+      camera_and_composition: 'Fluid organic composition with swirling pools framing the subject.',
+      atmosphere_and_mood: 'Vibrant, liquid and surprising, color with a mind of its own.',
+      rendering_and_quality:
+        'Authentic floating pigment behavior with sharp dried rings, never absorbed soft washes.',
+      creative_brief:
+        "Synthetic-sheet watercolor swirl: watercolor on smooth non-absorbent plastic paper, where pigment floats, swirls and dries in sharp-edged pools and lifted trails. Carry it through floating pigment pools, hard drying rings, wiped white lights, glossy sheet. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'floating pigment pools; hard drying rings; wiped white lights; glossy sheet',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP21-019
+packId: pack_21
+name: Vellum Overlay Layers
+styleAnchors:
+  - Vellum Overlay Layers
+  - stacked drafting vellum overlays
+  - stacked translucent sheets
+displayName: Vellum Overlay Layers
+category: 1. Paper & Pigment
+domain: stacked drafting vellum overlays
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - paper-and-pigment
+  - vellum-overlay
+  - paper-pigment
+  - portable-study
+visualDna:
+  aesthetic: 'Vellum overlay layers: drawings on several translucent drafting sheets stacked on top of each other, earlier layers softening behind later ones.'
+  subject_treatment: Split the prompt's subject across stacked translucent sheets, keeping it readable while back layers fade into milky haze.
+  color_and_tone: Graphite and ink lines with a few color accents, back layers dimmed by milky translucency.
+  lighting_and_shadow: Soft diffuse light through the sheets, each layer adding a veil of haze.
+  texture_and_material: Frosted translucent sheets, visible sheet edges, tape corners and slight curling.
+  camera_and_composition: Stacked sheets slightly offset so their edges and layers are visible.
+  atmosphere_and_mood: Thoughtful, layered and dreamy, like design ideas piling up.
+  rendering_and_quality: Believable translucent layering with clean lines on each sheet, never a single flat drawing.
+  creative_brief: "Vellum overlay layers: drawings on several translucent drafting sheets stacked on top of each other, earlier layers softening behind later ones. Carry it through stacked translucent sheets, hazy back layers, tape corners, offset edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: stacked translucent sheets; hazy back layers; tape corners; offset edges
+avoidRules:
+  - single flat drawing
+  - opaque paper
+  - digital blur only
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: single flat drawing, opaque paper, digital blur only, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_21
+  packName: Paper & Pigment
+  categoryId: paper-and-pigment
+  categoryName: 1. Paper & Pigment
+  tags:
+    - curation-v2
+    - paper-and-pigment
+    - vellum-overlay
+    - paper-pigment
+    - portable-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: stacked drafting vellum overlays

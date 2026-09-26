@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP21-015
+packId: pack_21
+name: Bleach-Drawn Colored Paper
+styleAnchors:
+  - Bleach-Drawn Colored Paper
+  - bleach lines on dyed paper
+  - bleach lines on dark paper
+displayName: Bleach-Drawn Colored Paper
+category: 1. Paper & Pigment
+domain: bleach lines on dyed paper
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - paper-and-pigment
+  - bleach-drawing
+  - paper-pigment
+  - portable-study
+visualDna:
+  aesthetic: 'Bleach-drawn colored paper: lines and shapes drawn with bleach on dark dyed paper, lifting the dye into unexpected pale oranges, pinks and creams.'
+  subject_treatment: Draw the prompt's subject in bleached lines and lifted patches on dyed paper, keeping its outline and features clear.
+  color_and_tone: Deep navy, black or purple paper with bleached marks turning rust orange, pink or pale cream.
+  lighting_and_shadow: Light areas are lifted with more bleach; darks stay the original paper dye.
+  texture_and_material: Soft bleach bleed edges, brush and nib marks, uneven lifting and slight paper cockling.
+  camera_and_composition: Graphic composition with glowing pale lines standing out from the dark sheet.
+  atmosphere_and_mood: Mysterious, glowing and unexpected, light pulled from darkness.
+  rendering_and_quality: Authentic bleach-lift colors and soft edges, never white paint on dark paper.
+  creative_brief: "Bleach-drawn colored paper: lines and shapes drawn with bleach on dark dyed paper, lifting the dye into unexpected pale oranges, pinks and creams. Carry it through bleach lines on dark paper, rust and pink lifted tones, soft bleed, cockled sheet. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: bleach lines on dark paper; rust and pink lifted tones; soft bleed; cockled sheet
+avoidRules:
+  - white paint on dark paper
+  - neon digital lines
+  - clean vector drawing
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: white paint on dark paper, neon digital lines, clean vector drawing, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_21
+  packName: Paper & Pigment
+  categoryId: paper-and-pigment
+  categoryName: 1. Paper & Pigment
+  tags:
+    - curation-v2
+    - paper-and-pigment
+    - bleach-drawing
+    - paper-pigment
+    - portable-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: bleach lines on dyed paper

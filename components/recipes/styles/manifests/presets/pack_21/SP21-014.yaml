@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP21-014
+packId: pack_21
+name: Poured Pulp Painting
+styleAnchors:
+  - Poured Pulp Painting
+  - colored paper pulp image
+  - color inside the paper
+displayName: Poured Pulp Painting
+category: 1. Paper & Pigment
+domain: colored paper pulp image
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - paper-and-pigment
+  - pulp-painting
+  - paper-pigment
+  - portable-study
+visualDna:
+  aesthetic: 'Poured pulp painting: an image made by pouring and placing wet colored paper pulp into a sheet, so shapes have soft fibrous edges and the color is inside the paper.'
+  subject_treatment: Shape the prompt's subject from pools of colored pulp set into the sheet, keeping its silhouette readable with soft fibrous edges.
+  color_and_tone: Earthy and bright pulp colors such as indigo, terracotta and moss, matte and fully saturated in the fiber.
+  lighting_and_shadow: Soft even light over a matte surface, with subtle relief where pulp was layered thicker.
+  texture_and_material: Fibrous feathered edges, lumpy pulp thickness, deckled borders and matte felted surface.
+  camera_and_composition: Simple bold shapes on a full handmade sheet with deckled edges.
+  atmosphere_and_mood: Earthy, calm and tactile, color grown into the paper itself.
+  rendering_and_quality: Authentic fibrous pulp edges and matte color, never crisp paint strokes.
+  creative_brief: "Poured pulp painting: an image made by pouring and placing wet colored paper pulp into a sheet, so shapes have soft fibrous edges and the color is inside the paper. Carry it through color inside the paper, feathered fiber edges, lumpy surface, deckled sheet. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: color inside the paper; feathered fiber edges; lumpy surface; deckled sheet
+avoidRules:
+  - crisp paint edges
+  - glossy surface
+  - digital flat shapes
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: crisp paint edges, glossy surface, digital flat shapes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_21
+  packName: Paper & Pigment
+  categoryId: paper-and-pigment
+  categoryName: 1. Paper & Pigment
+  tags:
+    - curation-v2
+    - paper-and-pigment
+    - pulp-painting
+    - paper-pigment
+    - portable-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: colored paper pulp image

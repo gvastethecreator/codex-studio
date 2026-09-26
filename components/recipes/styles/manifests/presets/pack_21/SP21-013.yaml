@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP21-013
+packId: pack_21
+name: Singed Paper Burn-Through
+styleAnchors:
+  - Singed Paper Burn-Through
+  - image made by scorching paper
+  - scorch gradients
+displayName: Singed Paper Burn-Through
+category: 1. Paper & Pigment
+domain: image made by scorching paper
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - paper-and-pigment
+  - singed-paper
+  - paper-pigment
+  - portable-study
+visualDna:
+  aesthetic: 'Singed paper burn-through: an image made by scorching and burning paper, with browned gradients, charred edges and holes burned clean through.'
+  subject_treatment: Form the prompt's subject from scorch tones and burned-through openings, keeping its silhouette and main forms clearly readable.
+  color_and_tone: Cream paper browning through amber and umber to black char at the burned edges.
+  lighting_and_shadow: Tone comes from scorch depth; holes let light or a dark backing show through.
+  texture_and_material: Curled charred edges, delicate ash rims, heat-browned halos and crisp burned holes.
+  camera_and_composition: The sheet shown flat or slightly curled, with burned openings shaping the subject.
+  atmosphere_and_mood: Dramatic, fragile and dangerous, an image made by fire.
+  rendering_and_quality: Authentic scorch gradients and real char edges, never painted brown or clean cuts.
+  creative_brief: "Singed paper burn-through: an image made by scorching and burning paper, with browned gradients, charred edges and holes burned clean through. Carry it through scorch gradients, charred hole edges, ash rims, curled paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: scorch gradients; charred hole edges; ash rims; curled paper
+avoidRules:
+  - painted brown color
+  - clean cut holes
+  - active flames covering the image
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: painted brown color, clean cut holes, active flames covering the image, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_21
+  packName: Paper & Pigment
+  categoryId: paper-and-pigment
+  categoryName: 1. Paper & Pigment
+  tags:
+    - curation-v2
+    - paper-and-pigment
+    - singed-paper
+    - paper-pigment
+    - portable-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: image made by scorching paper

@@ -3,7 +3,7 @@
     {
       "id": "pack_21",
       "name": "Paper & Pigment",
-      "presetCount": 10
+      "presetCount": 20
     }
   ],
   "presets": [
@@ -126,7 +126,191 @@
       "tags": ["paper-and-pigment", "paper-and-pigment"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp21-010 palette-knife impasto 1. paper & pigment paper & pigment pack_21 paper & pigment paper-and-pigment paper-and-pigment paper-and-pigment"
+    },
+    {
+      "id": "SP21-011",
+      "name": "Inclusion Paper Ground",
+      "styleAnchors": [
+        "Inclusion Paper Ground",
+        "painting on handmade inclusion paper",
+        "pressed petals in paper"
+      ],
+      "ref": "pack_21/SP21-011.yaml",
+      "packId": "pack_21",
+      "packName": "Paper & Pigment",
+      "categoryId": "paper-and-pigment",
+      "categoryName": "1. Paper & Pigment",
+      "domain": "painting on handmade inclusion paper",
+      "tags": ["paper-and-pigment", "paper-and-pigment", "painting-on-handmade-inclusion-paper"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp21-011 inclusion paper ground painting on handmade inclusion paper pressed petals in paper 1. paper & pigment paper & pigment painting on handmade inclusion paper pack_21 paper & pigment paper-and-pigment paper-and-pigment paper-and-pigment painting-on-handmade-inclusion-paper"
+    },
+    {
+      "id": "SP21-012",
+      "name": "Translucent Tissue Layers",
+      "styleAnchors": [
+        "Translucent Tissue Layers",
+        "overlapping tissue paper collage",
+        "overlapping translucent sheets"
+      ],
+      "ref": "pack_21/SP21-012.yaml",
+      "packId": "pack_21",
+      "packName": "Paper & Pigment",
+      "categoryId": "paper-and-pigment",
+      "categoryName": "1. Paper & Pigment",
+      "domain": "overlapping tissue paper collage",
+      "tags": ["paper-and-pigment", "paper-and-pigment", "overlapping-tissue-paper-collage"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp21-012 translucent tissue layers overlapping tissue paper collage overlapping translucent sheets 1. paper & pigment paper & pigment overlapping tissue paper collage pack_21 paper & pigment paper-and-pigment paper-and-pigment paper-and-pigment overlapping-tissue-paper-collage"
+    },
+    {
+      "id": "SP21-013",
+      "name": "Singed Paper Burn-Through",
+      "styleAnchors": [
+        "Singed Paper Burn-Through",
+        "image made by scorching paper",
+        "scorch gradients"
+      ],
+      "ref": "pack_21/SP21-013.yaml",
+      "packId": "pack_21",
+      "packName": "Paper & Pigment",
+      "categoryId": "paper-and-pigment",
+      "categoryName": "1. Paper & Pigment",
+      "domain": "image made by scorching paper",
+      "tags": ["paper-and-pigment", "paper-and-pigment", "image-made-by-scorching-paper"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp21-013 singed paper burn-through image made by scorching paper scorch gradients 1. paper & pigment paper & pigment image made by scorching paper pack_21 paper & pigment paper-and-pigment paper-and-pigment paper-and-pigment image-made-by-scorching-paper"
+    },
+    {
+      "id": "SP21-014",
+      "name": "Poured Pulp Painting",
+      "styleAnchors": [
+        "Poured Pulp Painting",
+        "colored paper pulp image",
+        "color inside the paper"
+      ],
+      "ref": "pack_21/SP21-014.yaml",
+      "packId": "pack_21",
+      "packName": "Paper & Pigment",
+      "categoryId": "paper-and-pigment",
+      "categoryName": "1. Paper & Pigment",
+      "domain": "colored paper pulp image",
+      "tags": ["paper-and-pigment", "paper-and-pigment", "colored-paper-pulp-image"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp21-014 poured pulp painting colored paper pulp image color inside the paper 1. paper & pigment paper & pigment colored paper pulp image pack_21 paper & pigment paper-and-pigment paper-and-pigment paper-and-pigment colored-paper-pulp-image"
+    },
+    {
+      "id": "SP21-015",
+      "name": "Bleach-Drawn Colored Paper",
+      "styleAnchors": [
+        "Bleach-Drawn Colored Paper",
+        "bleach lines on dyed paper",
+        "bleach lines on dark paper"
+      ],
+      "ref": "pack_21/SP21-015.yaml",
+      "packId": "pack_21",
+      "packName": "Paper & Pigment",
+      "categoryId": "paper-and-pigment",
+      "categoryName": "1. Paper & Pigment",
+      "domain": "bleach lines on dyed paper",
+      "tags": ["paper-and-pigment", "paper-and-pigment", "bleach-lines-on-dyed-paper"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp21-015 bleach-drawn colored paper bleach lines on dyed paper bleach lines on dark paper 1. paper & pigment paper & pigment bleach lines on dyed paper pack_21 paper & pigment paper-and-pigment paper-and-pigment paper-and-pigment bleach-lines-on-dyed-paper"
+    },
+    {
+      "id": "SP21-016",
+      "name": "Folded Tessellation Relief",
+      "styleAnchors": [
+        "Folded Tessellation Relief",
+        "pleated paper tessellation",
+        "repeating pleat modules"
+      ],
+      "ref": "pack_21/SP21-016.yaml",
+      "packId": "pack_21",
+      "packName": "Paper & Pigment",
+      "categoryId": "paper-and-pigment",
+      "categoryName": "1. Paper & Pigment",
+      "domain": "pleated paper tessellation",
+      "tags": ["paper-and-pigment", "paper-and-pigment", "pleated-paper-tessellation"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp21-016 folded tessellation relief pleated paper tessellation repeating pleat modules 1. paper & pigment paper & pigment pleated paper tessellation pack_21 paper & pigment paper-and-pigment paper-and-pigment paper-and-pigment pleated-paper-tessellation"
+    },
+    {
+      "id": "SP21-017",
+      "name": "Pinpricked Paper Light",
+      "styleAnchors": [
+        "Pinpricked Paper Light",
+        "pierced paper backlit picture",
+        "thousands of pierced holes"
+      ],
+      "ref": "pack_21/SP21-017.yaml",
+      "packId": "pack_21",
+      "packName": "Paper & Pigment",
+      "categoryId": "paper-and-pigment",
+      "categoryName": "1. Paper & Pigment",
+      "domain": "pierced paper backlit picture",
+      "tags": ["paper-and-pigment", "paper-and-pigment", "pierced-paper-backlit-picture"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp21-017 pinpricked paper light pierced paper backlit picture thousands of pierced holes 1. paper & pigment paper & pigment pierced paper backlit picture pack_21 paper & pigment paper-and-pigment paper-and-pigment paper-and-pigment pierced-paper-backlit-picture"
+    },
+    {
+      "id": "SP21-018",
+      "name": "Dusted Pigment Stencil",
+      "styleAnchors": [
+        "Dusted Pigment Stencil",
+        "raw pigment dusted through stencils",
+        "dusted raw pigment"
+      ],
+      "ref": "pack_21/SP21-018.yaml",
+      "packId": "pack_21",
+      "packName": "Paper & Pigment",
+      "categoryId": "paper-and-pigment",
+      "categoryName": "1. Paper & Pigment",
+      "domain": "raw pigment dusted through stencils",
+      "tags": ["paper-and-pigment", "paper-and-pigment", "raw-pigment-dusted-through-stencils"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp21-018 dusted pigment stencil raw pigment dusted through stencils dusted raw pigment 1. paper & pigment paper & pigment raw pigment dusted through stencils pack_21 paper & pigment paper-and-pigment paper-and-pigment paper-and-pigment raw-pigment-dusted-through-stencils"
+    },
+    {
+      "id": "SP21-019",
+      "name": "Vellum Overlay Layers",
+      "styleAnchors": [
+        "Vellum Overlay Layers",
+        "stacked drafting vellum overlays",
+        "stacked translucent sheets"
+      ],
+      "ref": "pack_21/SP21-019.yaml",
+      "packId": "pack_21",
+      "packName": "Paper & Pigment",
+      "categoryId": "paper-and-pigment",
+      "categoryName": "1. Paper & Pigment",
+      "domain": "stacked drafting vellum overlays",
+      "tags": ["paper-and-pigment", "paper-and-pigment", "stacked-drafting-vellum-overlays"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp21-019 vellum overlay layers stacked drafting vellum overlays stacked translucent sheets 1. paper & pigment paper & pigment stacked drafting vellum overlays pack_21 paper & pigment paper-and-pigment paper-and-pigment paper-and-pigment stacked-drafting-vellum-overlays"
+    },
+    {
+      "id": "SP21-020",
+      "name": "Synthetic-Sheet Watercolor Swirl",
+      "styleAnchors": [
+        "Synthetic-Sheet Watercolor Swirl",
+        "watercolor on non-absorbent synthetic paper",
+        "floating pigment pools"
+      ],
+      "ref": "pack_21/SP21-020.yaml",
+      "packId": "pack_21",
+      "packName": "Paper & Pigment",
+      "categoryId": "paper-and-pigment",
+      "categoryName": "1. Paper & Pigment",
+      "domain": "watercolor on non-absorbent synthetic paper",
+      "tags": [
+        "paper-and-pigment",
+        "paper-and-pigment",
+        "watercolor-on-non-absorbent-synthetic-paper"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp21-020 synthetic-sheet watercolor swirl watercolor on non-absorbent synthetic paper floating pigment pools 1. paper & pigment paper & pigment watercolor on non-absorbent synthetic paper pack_21 paper & pigment paper-and-pigment paper-and-pigment paper-and-pigment watercolor-on-non-absorbent-synthetic-paper"
     }
   ],
-  "totalPresetCount": 10
+  "totalPresetCount": 20
 }

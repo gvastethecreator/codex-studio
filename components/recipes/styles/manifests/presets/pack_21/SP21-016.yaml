@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP21-016
+packId: pack_21
+name: Folded Tessellation Relief
+styleAnchors:
+  - Folded Tessellation Relief
+  - pleated paper tessellation
+  - repeating pleat modules
+displayName: Folded Tessellation Relief
+category: 1. Paper & Pigment
+domain: pleated paper tessellation
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - paper-and-pigment
+  - folded-tessellation
+  - paper-pigment
+  - portable-study
+visualDna:
+  aesthetic: 'Folded tessellation relief: a single sheet pleated and folded into a repeating geometric relief, with the subject emerging from light and shadow on the folds.'
+  subject_treatment: Suggest the prompt's subject through the pattern and light of a folded tessellation, keeping its silhouette readable across the pleats.
+  color_and_tone: White or single-color paper, with value created entirely by light and shadow on the folds.
+  lighting_and_shadow: Strong raking light across the pleats, bright faces and deep shadowed valleys forming the image.
+  texture_and_material: Crisp folds, repeating pleat modules, slightly softened crease lines and paper grain.
+  camera_and_composition: Frontal or slightly angled view of the whole folded sheet under side light.
+  atmosphere_and_mood: Precise, sculptural and meditative, geometry made from one sheet.
+  rendering_and_quality: Accurate folded geometry with real shadows, never flat drawn patterns.
+  creative_brief: "Folded tessellation relief: a single sheet pleated and folded into a repeating geometric relief, with the subject emerging from light and shadow on the folds. Carry it through repeating pleat modules, raking light on folds, single sheet, value from shadow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: repeating pleat modules; raking light on folds; single sheet; value from shadow
+avoidRules:
+  - flat printed pattern
+  - color painted on paper
+  - loose crumpled paper
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: flat printed pattern, color painted on paper, loose crumpled paper, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_21
+  packName: Paper & Pigment
+  categoryId: paper-and-pigment
+  categoryName: 1. Paper & Pigment
+  tags:
+    - curation-v2
+    - paper-and-pigment
+    - folded-tessellation
+    - paper-pigment
+    - portable-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: pleated paper tessellation
