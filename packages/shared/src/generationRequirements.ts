@@ -60,6 +60,16 @@ export function getGenerationRequirement(
   ) {
     return { field: 'styles', message: params.intentionalCompileError };
   }
+  const styleMode = params.styleReferenceMode ?? params.intentionalMode;
+  if (
+    input.recipeId === 'styles' &&
+    input.task !== 'style_preset_card' &&
+    styleMode === 'preserve' &&
+    params.mode !== 'DIRECT_STYLE_SYNTHESIS' &&
+    !hasSource
+  ) {
+    return { field: 'source', message: 'Add an image to preserve.' };
+  }
   if (input.recipeId === 'animation-sequence' && !prompt) {
     return { field: 'prompt', message: 'Add a motion prompt.' };
   }

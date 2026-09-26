@@ -10,6 +10,7 @@ import {
   isGenerationTaskKind,
   validateGenerationTaskSpec,
 } from './generationContracts';
+import { getGenerationRequirement } from './generationRequirements';
 
 describe('generationContracts', () => {
   it('creates a provider-independent Generation Task Spec with durable output defaults', () => {
@@ -237,5 +238,42 @@ describe('generationContracts', () => {
       inlineAssetBytesPresent: false,
       providerSessionContractId: 'codex-imagegen-v1',
     });
+  });
+
+  it('asks for an image only when a Styles preserve request has no reference', () => {
+    const promptOnly = getGenerationRequirement({
+      recipeId: 'styles',
+      prompt: 'a glass owl',
+      referenceCount: 0,
+      recipeParams: {
+        presetId: 'SP09-006',
+        mode: 'DIRECT_STYLE_SYNTHESIS',
+        styleReferenceMode: 'preserve',
+      },
+    });
+    const preserveWithoutImage = getGenerationRequirement({
+      recipeId: 'styles',
+      prompt: 'a glass owl',
+      referenceCount: 0,
+      recipeParams: {
+        presetId: 'SP09-006',
+        mode: 'PRESERVE_REFERENCE',
+        styleReferenceMode: 'preserve',
+      },
+    });
+    const presetCard = getGenerationRequirement({
+      recipeId: 'styles',
+      task: 'style_preset_card',
+      prompt: 'a glass owl',
+      referenceCount: 0,
+      recipeParams: { presetId: 'SP09-006', styleReferenceMode: 'preserve' },
+    });
+
+    expect(promptOnly).toBeNull();
+    expect(preserveWithoutImage).toEqual({
+      field: 'source',
+      message: 'Add an image to preserve.',
+    });
+    expect(presetCard).toBeNull();
   });
 });
