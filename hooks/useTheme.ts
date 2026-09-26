@@ -47,7 +47,23 @@ export function accentOnColor(rgb: string): string {
 
 export const ACCENT_PALETTES: AccentPalette[] = [
   {
-    name: 'Neutral',
+    name: 'Apricot',
+    colors: {
+      50: '255 247 237',
+      100: '254 238 215',
+      200: '254 223 178',
+      300: '253 207 141',
+      400: '253 192 104',
+      500: '252 178 71',
+      600: '209 147 59',
+      700: '171 118 48',
+      800: '140 96 39',
+      900: '112 76 31',
+      950: '85 56 24',
+    },
+  },
+  {
+    name: 'Stone',
     colors: {
       50: '250 250 250',
       100: '245 245 245',
@@ -204,10 +220,15 @@ type ThemeContextValue = {
 const ThemeContext = createContext<ThemeContextValue | null>(null);
 
 function useThemeState(): ThemeContextValue {
-  const [storedPalette, setStoredPalette] = useLocalStorage<string>(STORAGE_KEY, 'Neutral');
+  const [storedPalette, setStoredPalette] = useLocalStorage<string>(STORAGE_KEY, 'Apricot');
   const palette =
     ACCENT_PALETTES.find((entry) => entry.name === storedPalette) ?? ACCENT_PALETTES[0];
   const initialized = useRef(false);
+
+  useLayoutEffect(() => {
+    if (ACCENT_PALETTES.some((entry) => entry.name === storedPalette)) return;
+    setStoredPalette(ACCENT_PALETTES[0].name);
+  }, [setStoredPalette, storedPalette]);
   const [appearance, setAppearance] = useLocalStorage<WorkbenchAppearance>(
     APPEARANCE_STORAGE_KEY,
     typeof window === 'undefined'

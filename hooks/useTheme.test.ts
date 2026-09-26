@@ -23,16 +23,17 @@ afterEach(() => {
 });
 
 describe('accent palettes', () => {
-  it('starts with Neutral and maps 500 onto Workbench accent tokens', () => {
-    expect(ACCENT_PALETTES[0].name).toBe('Neutral');
+  it('starts with the logo liquid and maps 500 onto Workbench accent tokens', () => {
+    expect(ACCENT_PALETTES[0].name).toBe('Apricot');
+    expect(ACCENT_PALETTES[0].colors[500]).toBe('252 178 71');
     applyAccentPaletteToDocument(ACCENT_PALETTES[0]);
-    expect(document.documentElement.style.getPropertyValue('--wb-accent')).toBe('#737373');
-    expect(document.documentElement.style.getPropertyValue('--wba-accent')).toBe('#737373');
-    expect(document.documentElement.style.getPropertyValue('--wbp-accent')).toBe('#737373');
-    expect(document.documentElement.style.getPropertyValue('--create-primary')).toBe('#737373');
-    expect(document.documentElement.style.getPropertyValue('--accent-500')).toBe('115 115 115');
+    expect(document.documentElement.style.getPropertyValue('--wb-accent')).toBe('#fcb247');
+    expect(document.documentElement.style.getPropertyValue('--wba-accent')).toBe('#fcb247');
+    expect(document.documentElement.style.getPropertyValue('--wbp-accent')).toBe('#fcb247');
+    expect(document.documentElement.style.getPropertyValue('--create-primary')).toBe('#fcb247');
+    expect(document.documentElement.style.getPropertyValue('--accent-500')).toBe('252 178 71');
     expect(document.documentElement.style.getPropertyValue('--wb-on-accent')).toBe(
-      accentOnColor('115 115 115'),
+      accentOnColor('252 178 71'),
     );
   });
 
@@ -47,7 +48,7 @@ describe('accent palettes', () => {
       rgbTripletToHex(rose!.colors[500]),
     );
   });
-  it('cycles all eight colors from the logo, wraps, and restores the selected color', () => {
+  it('cycles every accent from the logo, wraps, and restores the selected color', () => {
     vi.stubGlobal('matchMedia', () => ({
       matches: true,
       addEventListener: vi.fn(),
@@ -55,9 +56,10 @@ describe('accent palettes', () => {
     }));
     const app = () => React.createElement(ThemeProvider, null, React.createElement(Logo));
     const view = render(app());
-    const logo = screen.getByRole('button', { name: /Codex Studio.*Neutral/ });
+    const logo = screen.getByRole('button', { name: /Cozy Studio.*Apricot/ });
     expect(ACCENT_PALETTES.map(({ name }) => name)).toEqual([
-      'Neutral',
+      'Apricot',
+      'Stone',
       'Rose',
       'Orange',
       'Amber',
@@ -79,6 +81,6 @@ describe('accent palettes', () => {
     fireEvent.click(logo);
     view.unmount();
     render(app());
-    expect(screen.getByRole('button', { name: /Codex Studio.*Rose/ })).toBeTruthy();
+    expect(screen.getByRole('button', { name: /Cozy Studio.*Stone/ })).toBeTruthy();
   });
 });

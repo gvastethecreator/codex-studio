@@ -3,9 +3,9 @@
    Precision size/gap/type live in workbench-precision.css (`--wbp-*`). */
 
 :root {
-  --wb-accent: #737373;
-  --wb-on-accent: #f4f4f4;
-  --wba-accent: #737373;
+  --wb-accent: #fcb247;
+  --wb-on-accent: #141414;
+  --wba-accent: #fcb247;
   --wb-accent-fill: color-mix(in srgb, var(--wb-accent) 50%, #0a0a0a);
   --wb-on-fill: #f4f4f4;
 }
