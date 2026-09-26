@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP22-367
+packId: pack_22
+name: Hand-Colored Postcard
+styleAnchors:
+  - Hand-Colored Postcard
+  - hand-tinted photographic postcard
+  - hand-applied tints
+displayName: Hand-Colored Postcard
+category: 13. Vintage Collectible Illustration
+domain: hand-tinted photographic postcard
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - vintage-collectible-illustration
+  - hand-colored-postcard
+  - vintage
+  - portable-style-study
+visualDna:
+  aesthetic: 'Hand-colored postcard: black-and-white photographs tinted by hand with transparent dyes, soft pastel skies and slightly outside-the-lines color.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action; show the subject as a tinted photo with soft hand-applied color.
+  color_and_tone: Soft pastel tints of sky blue, rose and green over grey photographic tones.
+  lighting_and_shadow: Photographic light with tints softening highlights, kept consistent across the whole image.
+  texture_and_material: Photo grain, uneven tint edges, linen or card texture and worn corners.
+  camera_and_composition: Scenic postcard framing of places, promenades or landmarks.
+  atmosphere_and_mood: Keep the requested mood with gentle holiday nostalgia.
+  rendering_and_quality: Believable tinted photo with delicate imperfect coloring, kept consistent across the whole image.
+  creative_brief: "Hand-colored postcard: black-and-white photographs tinted by hand with transparent dyes, soft pastel skies and slightly outside-the-lines color. Carry it through hand-applied tints, pastel skies, photo grain, worn postcard. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: hand-applied tints; pastel skies; photo grain; worn postcard
+avoidRules:
+  - readable postcard captions
+  - readable lettering or numbers
+  - real brand
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable postcard captions, readable lettering or numbers, real brand, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: vintage-collectible-illustration
+  categoryName: 13. Vintage Collectible Illustration
+  tags:
+    - trading-card-illustration
+    - vintage-collectible-illustration
+    - hand-colored-postcard
+    - vintage
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: hand-tinted photographic postcard

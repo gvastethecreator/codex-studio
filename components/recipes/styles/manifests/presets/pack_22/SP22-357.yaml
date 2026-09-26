@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP22-357
+packId: pack_22
+name: Bent-Wire Figures
+styleAnchors:
+  - Bent-Wire Figures
+  - figures bent from wire
+  - continuous wire lines
+displayName: Bent-Wire Figures
+category: 12. Crafted Materials & Miniatures
+domain: figures bent from wire
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - crafted-materials-and-miniatures
+  - bent-wire
+  - craft
+  - portable-style-study
+visualDna:
+  aesthetic: 'Bent-wire figures: subjects formed from continuous bent wire lines in the air, like three-dimensional drawings casting delicate shadows on a wall.'
+  subject_treatment: Preserve the requested identity, count, pose and action while rebuilding it as a handmade craft object; bend the subject from continuous wire lines that capture its outline and gesture.
+  color_and_tone: Silver, copper or black wire against pale walls with crisp shadows.
+  lighting_and_shadow: Side light casting sharp shadow drawings behind the wire forms.
+  texture_and_material: Twisted wire joints, coiled details, smooth bends and metallic glints.
+  camera_and_composition: Wire figure against a plain wall with its shadow as a second drawing.
+  atmosphere_and_mood: Keep the requested mood with light, airy, playful elegance.
+  rendering_and_quality: Clean continuous wire lines with believable metal bends.
+  creative_brief: "Bent-wire figures: subjects formed from continuous bent wire lines in the air, like three-dimensional drawings casting delicate shadows on a wall. Carry it through continuous wire lines, shadow drawings, twisted joints, airy form. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: continuous wire lines; shadow drawings; twisted joints; airy form
+avoidRules:
+  - solid filled shapes
+  - real toy brand
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: solid filled shapes, real toy brand, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: crafted-materials-and-miniatures
+  categoryName: 12. Crafted Materials & Miniatures
+  tags:
+    - trading-card-illustration
+    - crafted-materials-and-miniatures
+    - bent-wire
+    - craft
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: figures bent from wire

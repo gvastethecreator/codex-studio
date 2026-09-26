@@ -235,4 +235,380 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP22-377',
+    name: 'Monoline Emblem Drawing',
+    displayName: 'Monoline Emblem Drawing',
+    styleAnchors: ['Monoline Emblem Drawing', 'single-weight line emblem', 'single line weight'],
+    category: '14. Symbolic Graphic Illustration',
+    domain: 'single-weight line emblem',
+    negativePrompt:
+      'readable lettering, real logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Monoline emblem drawing: the subject drawn as a compact emblem using one unbroken line weight throughout, rounded joins and balanced negative space inside a simple shape.',
+      subject_treatment:
+        'Preserve the requested subject, count, pose and action while reducing it to a clear graphic symbol; draw it with one consistent line weight inside a compact emblem shape.',
+      color_and_tone:
+        'One line color on a flat contrasting background, such as cream on forest green.',
+      lighting_and_shadow: 'No lighting; value comes only from line density and spacing.',
+      texture_and_material: 'Uniform smooth line, rounded ends, clean joints and flat ground.',
+      camera_and_composition: 'Centered emblem in a circle, shield or badge shape.',
+      atmosphere_and_mood: 'Keep the requested mood with clean, calm, badge-like clarity.',
+      rendering_and_quality:
+        'Precise single-weight line with even spacing everywhere, kept consistent across the whole image.',
+      creative_brief:
+        "Monoline emblem drawing: the subject drawn as a compact emblem using one unbroken line weight throughout, rounded joins and balanced negative space inside a simple shape. Carry it through single line weight, rounded joins, compact emblem, flat ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'single line weight; rounded joins; compact emblem; flat ground',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-378',
+    name: 'Hidden Figure Negative Space',
+    displayName: 'Hidden Figure Negative Space',
+    styleAnchors: ['Hidden Figure Negative Space', 'double-image negative space', 'double reading'],
+    category: '14. Symbolic Graphic Illustration',
+    domain: 'double-image negative space',
+    negativePrompt:
+      'readable lettering, real logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Hidden figure negative space: a graphic image where the empty space between shapes reveals a second hidden subject, a clever double reading.',
+      subject_treatment:
+        'Preserve the requested subject, count, pose and action while reducing it to a clear graphic symbol; design the shapes so the negative space hides a related second figure.',
+      color_and_tone: 'Two flat colors such as black and white or navy and cream.',
+      lighting_and_shadow:
+        'No lighting; pure flat figure-ground contrast, kept consistent across the whole image.',
+      texture_and_material: 'Clean flat shapes with crisp edges and no texture.',
+      camera_and_composition: 'Centered balanced design where both readings are visible.',
+      atmosphere_and_mood: 'Keep the requested mood with a clever moment of discovery.',
+      rendering_and_quality:
+        'Precise figure-ground design that reads both ways, kept consistent across the whole image.',
+      creative_brief:
+        "Hidden figure negative space: a graphic image where the empty space between shapes reveals a second hidden subject, a clever double reading. Carry it through double reading, hidden negative-space figure, two flat colors, crisp edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'double reading; hidden negative-space figure; two flat colors; crisp edges',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-379',
+    name: 'Bold Two-Color Symbol',
+    displayName: 'Bold Two-Color Symbol',
+    styleAnchors: ['Bold Two-Color Symbol', 'high-impact two-color graphic', 'exactly two colors'],
+    category: '14. Symbolic Graphic Illustration',
+    domain: 'high-impact two-color graphic',
+    negativePrompt:
+      'readable lettering, real logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Bold two-color symbol: the subject reduced to a heroic graphic symbol in exactly two strong flat colors, like a protest print or a sporting pennant without letters.',
+      subject_treatment:
+        'Preserve the requested subject, count, pose and action while reducing it to a clear graphic symbol; reduce it to a strong heroic silhouette in two flat colors.',
+      color_and_tone: 'Exactly two colors such as red and black or orange and navy.',
+      lighting_and_shadow:
+        'Shadows as solid second-color shapes, no gradients, kept consistent across the whole image.',
+      texture_and_material: 'Flat ink with slight print texture and crisp stencil-like edges.',
+      camera_and_composition:
+        'Dynamic diagonal or centered heroic composition, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with bold rallying energy.',
+      rendering_and_quality: 'Clean powerful graphic reduction with no extra colors.',
+      creative_brief:
+        "Bold two-color symbol: the subject reduced to a heroic graphic symbol in exactly two strong flat colors, like a protest print or a sporting pennant without letters. Carry it through exactly two colors, heroic silhouette, flat shapes, print texture. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'exactly two colors; heroic silhouette; flat shapes; print texture',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-380',
+    name: 'Grid-Built Pictograms',
+    displayName: 'Grid-Built Pictograms',
+    styleAnchors: [
+      'Grid-Built Pictograms',
+      'pictograms constructed on a grid',
+      'visible square grid',
+    ],
+    category: '14. Symbolic Graphic Illustration',
+    domain: 'pictograms constructed on a grid',
+    negativePrompt:
+      'readable labels, readable lettering, real logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Grid-built pictograms: subjects constructed as clean pictogram figures on a visible square grid, with consistent stroke widths and quarter-circle corners.',
+      subject_treatment:
+        'Preserve the requested subject, count, pose and action while reducing it to a clear graphic symbol; build it from grid-aligned strokes and quarter circles like a pictogram.',
+      color_and_tone: 'One solid color on white or a pale ground with faint grid lines.',
+      lighting_and_shadow:
+        'No lighting; solid flat pictogram shapes, kept consistent across the whole image.',
+      texture_and_material: 'Solid geometric strokes, rounded corners and faint construction grid.',
+      camera_and_composition: 'Centered pictogram within a square with the grid visible.',
+      atmosphere_and_mood: 'Keep the requested mood with orderly universal clarity.',
+      rendering_and_quality:
+        'Precise grid alignment and consistent stroke width, kept consistent across the whole image.',
+      creative_brief:
+        "Grid-built pictograms: subjects constructed as clean pictogram figures on a visible square grid, with consistent stroke widths and quarter-circle corners. Carry it through visible square grid, consistent strokes, quarter-circle corners, pictogram figure. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features:
+        'visible square grid; consistent strokes; quarter-circle corners; pictogram figure',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-381',
+    name: 'Stencil Symbol Graphic',
+    displayName: 'Stencil Symbol Graphic',
+    styleAnchors: ['Stencil Symbol Graphic', 'spray stencil symbol', 'stencil bridges'],
+    category: '14. Symbolic Graphic Illustration',
+    domain: 'spray stencil symbol',
+    negativePrompt:
+      'readable graffiti tags, readable lettering, real logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Stencil symbol graphic: the subject cut as a stencil with bridges holding the islands together, sprayed in one color with soft overspray on a wall or paper.',
+      subject_treatment:
+        'Preserve the requested subject, count, pose and action while reducing it to a clear graphic symbol; cut it as a stencil shape with bridges and spray it flat.',
+      color_and_tone: 'One sprayed color, often black or red, on concrete, brick or paper.',
+      lighting_and_shadow:
+        'Flat sprayed shapes with no modeled shading, kept consistent across the whole image.',
+      texture_and_material: 'Stencil bridges, overspray halos, drips and rough wall texture.',
+      camera_and_composition: 'Frontal centered stencil on a wall or sheet.',
+      atmosphere_and_mood: 'Keep the requested mood with raw street urgency.',
+      rendering_and_quality:
+        'Crisp stencil edges with believable spray texture, kept consistent across the whole image.',
+      creative_brief:
+        "Stencil symbol graphic: the subject cut as a stencil with bridges holding the islands together, sprayed in one color with soft overspray on a wall or paper. Carry it through stencil bridges, overspray halo, single sprayed color, wall texture. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'stencil bridges; overspray halo; single sprayed color; wall texture',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-382',
+    name: 'Tangram-Piece Figures',
+    displayName: 'Tangram-Piece Figures',
+    styleAnchors: ['Tangram-Piece Figures', 'figures from tangram shapes', 'seven tangram shapes'],
+    category: '14. Symbolic Graphic Illustration',
+    domain: 'figures from tangram shapes',
+    negativePrompt:
+      'curved shapes, readable lettering, real logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Tangram-piece figures: subjects assembled only from the seven classic tangram shapes, triangles, a square and a parallelogram, with small gaps between the pieces.',
+      subject_treatment:
+        'Preserve the requested subject, count, pose and action while reducing it to a clear graphic symbol; assemble it from tangram triangles, a square and a parallelogram.',
+      color_and_tone: 'Each piece a different flat color or all one color on a plain ground.',
+      lighting_and_shadow: 'No lighting; flat pieces with thin gaps between them.',
+      texture_and_material: 'Clean geometric pieces, thin separation gaps and optional wood grain.',
+      camera_and_composition: 'Centered figure with generous empty space around it.',
+      atmosphere_and_mood: 'Keep the requested mood with playful puzzle cleverness.',
+      rendering_and_quality:
+        'Precise geometric assembly with recognizable silhouettes, kept consistent across the whole image.',
+      creative_brief:
+        "Tangram-piece figures: subjects assembled only from the seven classic tangram shapes, triangles, a square and a parallelogram, with small gaps between the pieces. Carry it through seven tangram shapes, small gaps, flat colors, puzzle silhouette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'seven tangram shapes; small gaps; flat colors; puzzle silhouette',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-383',
+    name: 'Transparent Overprint Shapes',
+    displayName: 'Transparent Overprint Shapes',
+    styleAnchors: [
+      'Transparent Overprint Shapes',
+      'overlapping transparent ink shapes',
+      'translucent overlapping shapes',
+    ],
+    category: '14. Symbolic Graphic Illustration',
+    domain: 'overlapping transparent ink shapes',
+    negativePrompt:
+      'opaque shapes, readable lettering, real logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Transparent overprint shapes: the subject built from overlapping translucent flat shapes whose overlaps create new colors, like layered printing inks.',
+      subject_treatment:
+        'Preserve the requested subject, count, pose and action while reducing it to a clear graphic symbol; build it from overlapping translucent shapes whose overlaps describe its form.',
+      color_and_tone: 'Translucent cyan, magenta and yellow shapes mixing into new overlap colors.',
+      lighting_and_shadow: 'Value comes from overlap density rather than light.',
+      texture_and_material: 'Flat translucent shapes, crisp edges and slight print grain.',
+      camera_and_composition:
+        'Balanced composition of overlapping shapes on white, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with bright playful layering.',
+      rendering_and_quality:
+        'Clean overlaps with accurate multiplied colors, kept consistent across the whole image.',
+      creative_brief:
+        "Transparent overprint shapes: the subject built from overlapping translucent flat shapes whose overlaps create new colors, like layered printing inks. Carry it through translucent overlapping shapes, overlap colors, flat print, white ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'translucent overlapping shapes; overlap colors; flat print; white ground',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-384',
+    name: 'Heavy Block Symbolism',
+    displayName: 'Heavy Block Symbolism',
+    styleAnchors: ['Heavy Block Symbolism', 'massive block graphic shapes', 'massive blocks'],
+    category: '14. Symbolic Graphic Illustration',
+    domain: 'massive block graphic shapes',
+    negativePrompt:
+      'delicate thin lines, readable lettering, real logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Heavy block symbolism: the subject rendered in massive solid geometric blocks, thick slabs and hard corners, monumental and brutally simple.',
+      subject_treatment:
+        'Preserve the requested subject, count, pose and action while reducing it to a clear graphic symbol; reduce it to thick heavy blocks and slabs.',
+      color_and_tone: 'Concrete greys, black and one strong accent color.',
+      lighting_and_shadow:
+        'Hard flat shadow slabs giving monumental weight, kept consistent across the whole image.',
+      texture_and_material: 'Solid flat blocks, subtle concrete grain and hard edges.',
+      camera_and_composition: 'Low monumental angle with the symbol dominating the frame.',
+      atmosphere_and_mood:
+        'Keep the requested mood with monumental gravity, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean massive shapes with a strong silhouette, kept consistent across the whole image.',
+      creative_brief:
+        "Heavy block symbolism: the subject rendered in massive solid geometric blocks, thick slabs and hard corners, monumental and brutally simple. Carry it through massive blocks, hard corners, concrete palette, monumental weight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'massive blocks; hard corners; concrete palette; monumental weight',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-385',
+    name: 'Horizon Line Minimalism',
+    displayName: 'Horizon Line Minimalism',
+    styleAnchors: ['Horizon Line Minimalism', 'minimal horizon composition', 'single horizon line'],
+    category: '14. Symbolic Graphic Illustration',
+    domain: 'minimal horizon composition',
+    negativePrompt:
+      'busy detail, readable lettering, real logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Horizon line minimalism: vast empty compositions with a single horizon line and a tiny subject, most of the frame flat sky or sea in one or two colors.',
+      subject_treatment:
+        'Preserve the requested subject, count, pose and action while reducing it to a clear graphic symbol; make the subject tiny on a single horizon line with vast empty space.',
+      color_and_tone: 'Two or three calm flat colors, sky and ground clearly divided.',
+      lighting_and_shadow: 'Minimal flat light with at most a tiny shadow.',
+      texture_and_material:
+        'Smooth flat color fields with subtle grain, kept consistent across the whole image.',
+      camera_and_composition:
+        'Low or centered horizon with a tiny subject and huge negative space.',
+      atmosphere_and_mood: 'Keep the requested mood with silent contemplative vastness.',
+      rendering_and_quality:
+        'Precise minimal composition with clean flat fields, kept consistent across the whole image.',
+      creative_brief:
+        "Horizon line minimalism: vast empty compositions with a single horizon line and a tiny subject, most of the frame flat sky or sea in one or two colors. Carry it through single horizon line, tiny subject, vast empty space, flat colors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'single horizon line; tiny subject; vast empty space; flat colors',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-386',
+    name: 'Concentric Ripple Symbol',
+    displayName: 'Concentric Ripple Symbol',
+    styleAnchors: [
+      'Concentric Ripple Symbol',
+      'concentric ring graphic symbol',
+      'concentric rings',
+    ],
+    category: '14. Symbolic Graphic Illustration',
+    domain: 'concentric ring graphic symbol',
+    negativePrompt:
+      'readable lettering, real logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Concentric ripple symbol: the subject placed at the center of expanding concentric rings like ripples or sound waves, graphic and hypnotic.',
+      subject_treatment:
+        'Preserve the requested subject, count, pose and action while reducing it to a clear graphic symbol; center it and let concentric rings ripple outward from it.',
+      color_and_tone: 'Alternating bands of two or three colors radiating outward.',
+      lighting_and_shadow: 'No modeled light; rhythm of rings creates depth.',
+      texture_and_material: 'Clean ring bands, crisp edges and flat color.',
+      camera_and_composition: 'Perfectly centered subject with rings to the edges.',
+      atmosphere_and_mood:
+        'Keep the requested mood with hypnotic resonance, kept consistent across the whole image.',
+      rendering_and_quality: 'Precise evenly spaced rings with a crisp central symbol.',
+      creative_brief:
+        "Concentric ripple symbol: the subject placed at the center of expanding concentric rings like ripples or sound waves, graphic and hypnotic. Carry it through concentric rings, centered subject, alternating bands, hypnotic rhythm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'concentric rings; centered subject; alternating bands; hypnotic rhythm',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-387',
+    name: 'Folded Ribbon Emblem',
+    displayName: 'Folded Ribbon Emblem',
+    styleAnchors: ['Folded Ribbon Emblem', 'folded ribbon banner symbol', 'single folded ribbon'],
+    category: '14. Symbolic Graphic Illustration',
+    domain: 'folded ribbon banner symbol',
+    negativePrompt:
+      'readable banner text, readable lettering, real logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Folded ribbon emblem: the subject wrapped or framed by a single flat folded ribbon with crisp turns and shaded folds, like a classic emblem banner without text.',
+      subject_treatment:
+        'Preserve the requested subject, count, pose and action while reducing it to a clear graphic symbol; wrap or frame it with a single flat folded ribbon.',
+      color_and_tone: 'Bold ribbon colors such as crimson or teal with darker fold shading.',
+      lighting_and_shadow: 'Flat shading on ribbon folds with simple highlights.',
+      texture_and_material: 'Flat ribbon, crisp folds, forked tails and clean edges.',
+      camera_and_composition: 'Centered emblem with the ribbon sweeping across it.',
+      atmosphere_and_mood: 'Keep the requested mood with celebratory emblem pride.',
+      rendering_and_quality:
+        'Clean graphic ribbon with convincing folds, kept consistent across the whole image.',
+      creative_brief:
+        "Folded ribbon emblem: the subject wrapped or framed by a single flat folded ribbon with crisp turns and shaded folds, like a classic emblem banner without text. Carry it through single folded ribbon, forked tails, crisp folds, blank banner. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'single folded ribbon; forked tails; crisp folds; blank banner',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-388',
+    name: 'Halftone Dot Silhouette',
+    displayName: 'Halftone Dot Silhouette',
+    styleAnchors: [
+      'Halftone Dot Silhouette',
+      'silhouette made of halftone dots',
+      'large halftone dots',
+    ],
+    category: '14. Symbolic Graphic Illustration',
+    domain: 'silhouette made of halftone dots',
+    negativePrompt:
+      'readable lettering, real logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Halftone dot silhouette: a bold silhouette built from large halftone dots that grow and shrink across the shape, graphic and punchy like an enlarged print.',
+      subject_treatment:
+        'Preserve the requested subject, count, pose and action while reducing it to a clear graphic symbol; build its silhouette from large halftone dots of varying size.',
+      color_and_tone: 'One dot color on a flat contrasting ground.',
+      lighting_and_shadow: 'Value from dot size, big dots dark and small dots light.',
+      texture_and_material: 'Large round dots on a regular grid with crisp edges.',
+      camera_and_composition:
+        'Bold centered silhouette filling the frame, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with punchy pop-graphic energy.',
+      rendering_and_quality:
+        'Precise dot grid with smooth size transitions, kept consistent across the whole image.',
+      creative_brief:
+        "Halftone dot silhouette: a bold silhouette built from large halftone dots that grow and shrink across the shape, graphic and punchy like an enlarged print. Carry it through large halftone dots, varying dot size, bold silhouette, flat ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'large halftone dots; varying dot size; bold silhouette; flat ground',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

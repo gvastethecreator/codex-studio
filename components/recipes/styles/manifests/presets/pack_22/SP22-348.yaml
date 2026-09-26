@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP22-348
+packId: pack_22
+name: Doily Lace Border
+styleAnchors:
+  - Doily Lace Border
+  - paper lace doily ornament
+  - paper lace doily
+displayName: Doily Lace Border
+category: 11. Ornament & Symbolic Illustration
+domain: paper lace doily ornament
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - ornament-and-symbolic-illustration
+  - doily-lace
+  - ornament
+  - portable-style-study
+visualDna:
+  aesthetic: 'Doily lace border: the subject set on or framed by delicate cut-paper lace doilies, with intricate pierced patterns, scalloped edges and soft shadows.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action at the center; place the subject on a lace doily ground or within a lacy scalloped border.
+  color_and_tone: White or cream lace on pastel or deep colored grounds.
+  lighting_and_shadow: Soft light casting delicate lace shadows beneath the paper.
+  texture_and_material: Pierced paper lace, scalloped edges, embossing and soft paper fibers.
+  camera_and_composition: Centered subject within a circular or heart-shaped lace frame.
+  atmosphere_and_mood: Keep the requested mood with sweet, delicate, sentimental charm.
+  rendering_and_quality: Precise intricate lace detail with soft believable shadows.
+  creative_brief: "Doily lace border: the subject set on or framed by delicate cut-paper lace doilies, with intricate pierced patterns, scalloped edges and soft shadows. Carry it through paper lace doily, scalloped edges, pierced patterns, soft shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: paper lace doily; scalloped edges; pierced patterns; soft shadows
+avoidRules:
+  - heavy dark frames
+  - readable lettering
+  - religious symbols by default
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: heavy dark frames, readable lettering, religious symbols by default, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: ornament-and-symbolic-illustration
+  categoryName: 11. Ornament & Symbolic Illustration
+  tags:
+    - trading-card-illustration
+    - ornament-and-symbolic-illustration
+    - doily-lace
+    - ornament
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: paper lace doily ornament

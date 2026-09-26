@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP22-398
+packId: pack_22
+name: Mirror-Floor Reflection Render
+styleAnchors:
+  - Mirror-Floor Reflection Render
+  - glossy reflective floor render
+  - mirror floor
+displayName: Mirror-Floor Reflection Render
+category: 15. Digital Rendering Methods
+domain: glossy reflective floor render
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - digital-rendering-methods
+  - mirror-floor
+  - digital-render
+  - portable-style-study
+visualDna:
+  aesthetic: 'Mirror-floor reflection render: subjects standing on a perfectly glossy reflective floor that doubles them below, clean studio or showroom lighting.'
+  subject_treatment: Preserve the requested identity, count, pose and action; place the subject on a glossy floor that reflects it cleanly.
+  color_and_tone: Dark or pastel studio tones with bright reflections.
+  lighting_and_shadow: Studio lights reflected in the floor with soft falloff.
+  texture_and_material: Mirror-like floor, crisp reflections and polished surfaces, kept consistent across the whole image.
+  camera_and_composition: Low camera angle emphasizing the reflection, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with sleek showroom drama.
+  rendering_and_quality: Clean accurate reflections with subtle fade, kept consistent across the whole image.
+  creative_brief: "Mirror-floor reflection render: subjects standing on a perfectly glossy reflective floor that doubles them below, clean studio or showroom lighting. Carry it through mirror floor, doubled reflection, studio lights, low angle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: mirror floor; doubled reflection; studio lights; low angle
+avoidRules:
+  - matte floor
+  - interface overlay
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: matte floor, interface overlay, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: digital-rendering-methods
+  categoryName: 15. Digital Rendering Methods
+  tags:
+    - trading-card-illustration
+    - digital-rendering-methods
+    - mirror-floor
+    - digital-render
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: glossy reflective floor render

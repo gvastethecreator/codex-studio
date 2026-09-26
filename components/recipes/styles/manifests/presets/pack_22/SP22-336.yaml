@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP22-336
+packId: pack_22
+name: Three-Drum Riso Overlay
+styleAnchors:
+  - Three-Drum Riso Overlay
+  - three-color risograph overlay
+  - three riso inks
+displayName: Three-Drum Riso Overlay
+category: 10. Printmaking & Reproduction
+domain: three-color risograph overlay
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - printmaking-and-reproduction
+  - three-drum-riso
+  - print
+  - portable-style-study
+visualDna:
+  aesthetic: 'Three-drum riso overlay: risograph prints in three bright soy inks layered with grain and misregistration, overlaps creating a rich unexpected palette.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action; separate the subject into three grainy riso ink layers that overlap to build it.
+  color_and_tone: Fluorescent pink, bright yellow and teal or blue overlapping into oranges and purples.
+  lighting_and_shadow: Grainy tone and overlap density create value, kept consistent across the whole image.
+  texture_and_material: Riso grain, misregistered edges, speckle and soft ink density.
+  camera_and_composition: Playful graphic composition with bold overlapping shapes, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with bright indie print energy.
+  rendering_and_quality: Authentic riso texture and overlaps, never smooth digital color.
+  creative_brief: "Three-drum riso overlay: risograph prints in three bright soy inks layered with grain and misregistration, overlaps creating a rich unexpected palette. Carry it through three riso inks, grainy overlaps, misregistration, fluorescent palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: three riso inks; grainy overlaps; misregistration; fluorescent palette
+avoidRules:
+  - smooth gradients
+  - readable lettering
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: smooth gradients, readable lettering, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: printmaking-and-reproduction
+  categoryName: 10. Printmaking & Reproduction
+  tags:
+    - trading-card-illustration
+    - printmaking-and-reproduction
+    - three-drum-riso
+    - print
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: three-color risograph overlay

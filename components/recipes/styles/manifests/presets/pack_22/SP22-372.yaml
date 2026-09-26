@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP22-372
+packId: pack_22
+name: Retro Gum-Card Monsters
+styleAnchors:
+  - Retro Gum-Card Monsters
+  - bubblegum trading card monsters
+  - wacky monster portrait
+displayName: Retro Gum-Card Monsters
+category: 13. Vintage Collectible Illustration
+domain: bubblegum trading card monsters
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - vintage-collectible-illustration
+  - gum-card
+  - vintage
+  - portable-style-study
+visualDna:
+  aesthetic: 'Retro gum-card monsters: wacky painted monster cards like old bubblegum trading cards, garish colors, gross-out humor without gore and bold painted borders.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action; paint the subject as a garish comic monster portrait inside a bold border.
+  color_and_tone: Garish lime, purple, orange and hot pink with bold primaries.
+  lighting_and_shadow: Dramatic comic lighting with glossy highlights, kept consistent across the whole image.
+  texture_and_material: Painted slime, warts, bulging eyes and printed card grain.
+  camera_and_composition: Close portrait with a thick colored border around the image.
+  atmosphere_and_mood: Keep the requested mood with silly gross-out fun.
+  rendering_and_quality: Vivid painted card art without gore, crisp and funny.
+  creative_brief: "Retro gum-card monsters: wacky painted monster cards like old bubblegum trading cards, garish colors, gross-out humor without gore and bold painted borders. Carry it through wacky monster portrait, garish colors, bold border, gross-out humor. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: wacky monster portrait; garish colors; bold border; gross-out humor
+avoidRules:
+  - gore
+  - readable card text
+  - readable lettering or numbers
+  - real brand
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: gore, readable card text, readable lettering or numbers, real brand, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: vintage-collectible-illustration
+  categoryName: 13. Vintage Collectible Illustration
+  tags:
+    - trading-card-illustration
+    - vintage-collectible-illustration
+    - gum-card
+    - vintage
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: bubblegum trading card monsters

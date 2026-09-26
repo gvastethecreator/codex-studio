@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP22-355
+packId: pack_22
+name: Knitted Landscape Miniature
+styleAnchors:
+  - Knitted Landscape Miniature
+  - landscape knitted from yarn
+  - knitted hills
+displayName: Knitted Landscape Miniature
+category: 12. Crafted Materials & Miniatures
+domain: landscape knitted from yarn
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - crafted-materials-and-miniatures
+  - knitted-landscape
+  - craft
+  - portable-style-study
+visualDna:
+  aesthetic: 'Knitted landscape miniature: whole landscapes knitted from yarn, rolling stockinette hills, bobble trees and ribbed rivers with tiny knitted figures.'
+  subject_treatment: Preserve the requested identity, count, pose and action while rebuilding it as a handmade craft object; knit the subject and its setting from visible yarn stitches.
+  color_and_tone: Soft wool greens, sky blues, cream and warm yarn accents.
+  lighting_and_shadow: Soft daylight revealing every stitch and fuzzy edge.
+  texture_and_material: Stockinette stitch, bobbles, cables, ribbing and yarn fuzz.
+  camera_and_composition: Wide tabletop miniature view with gentle tilt-shift depth.
+  atmosphere_and_mood: Keep the requested mood with cozy woolly charm.
+  rendering_and_quality: Believable knitted textures with clear stitch detail, kept consistent across the whole image.
+  creative_brief: "Knitted landscape miniature: whole landscapes knitted from yarn, rolling stockinette hills, bobble trees and ribbed rivers with tiny knitted figures. Carry it through knitted hills, bobble trees, ribbed rivers, yarn fuzz. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: knitted hills; bobble trees; ribbed rivers; yarn fuzz
+avoidRules:
+  - plastic look
+  - real toy brand
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: plastic look, real toy brand, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: crafted-materials-and-miniatures
+  categoryName: 12. Crafted Materials & Miniatures
+  tags:
+    - trading-card-illustration
+    - crafted-materials-and-miniatures
+    - knitted-landscape
+    - craft
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: landscape knitted from yarn

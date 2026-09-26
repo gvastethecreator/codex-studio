@@ -243,4 +243,395 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP22-365',
+    name: 'Tea-Card Nature Plate',
+    displayName: 'Tea-Card Nature Plate',
+    styleAnchors: [
+      'Tea-Card Nature Plate',
+      'collectible tea card nature illustration',
+      'single natural vignette',
+    ],
+    category: '13. Vintage Collectible Illustration',
+    domain: 'collectible tea card nature illustration',
+    negativePrompt:
+      'readable lettering or numbers, real brand, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Tea-card nature plate: small collectible nature cards from old tea packets, a single bird, butterfly or flower painted precisely on a plain ground with a soft printed finish.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; present the subject as a single precise natural-history vignette on a plain ground.',
+      color_and_tone: 'Soft printed naturalistic colors on cream or pale blue backgrounds.',
+      lighting_and_shadow:
+        'Gentle even light with small soft shadows, kept consistent across the whole image.',
+      texture_and_material: 'Fine printed detail, slight halftone softness and aged card stock.',
+      camera_and_composition: 'Single centered subject with generous plain space around it.',
+      atmosphere_and_mood: 'Keep the requested mood with calm, collectible nostalgia.',
+      rendering_and_quality: 'Precise delicate illustration with a soft vintage print finish.',
+      creative_brief:
+        "Tea-card nature plate: small collectible nature cards from old tea packets, a single bird, butterfly or flower painted precisely on a plain ground with a soft printed finish. Carry it through single natural vignette, plain ground, soft print finish, aged card stock. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'single natural vignette; plain ground; soft print finish; aged card stock',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-366',
+    name: 'Cabinet Card Portrait',
+    displayName: 'Cabinet Card Portrait',
+    styleAnchors: [
+      'Cabinet Card Portrait',
+      'victorian studio portrait card',
+      'sepia studio portrait',
+    ],
+    category: '13. Vintage Collectible Illustration',
+    domain: 'victorian studio portrait card',
+    negativePrompt:
+      'readable lettering or numbers, real brand, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Cabinet card portrait: sepia studio portraits mounted on thick card with gilt edges, stiff formal poses, painted backdrops and faded silver tones.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; pose the subject formally in front of a painted studio backdrop.',
+      color_and_tone: 'Warm sepia and faded silver-brown tones with gilt card edges.',
+      lighting_and_shadow:
+        'Soft north-window studio light with gentle falloff, kept consistent across the whole image.',
+      texture_and_material:
+        'Faded photographic surface, painted backdrops, velvet chairs and gilt mount.',
+      camera_and_composition: 'Formal centered full or half-length portrait on a mounted card.',
+      atmosphere_and_mood: 'Keep the requested mood with solemn Victorian formality.',
+      rendering_and_quality: 'Believable antique photo tone with a mounted card border.',
+      creative_brief:
+        "Cabinet card portrait: sepia studio portraits mounted on thick card with gilt edges, stiff formal poses, painted backdrops and faded silver tones. Carry it through sepia studio portrait, painted backdrop, gilt card mount, formal pose. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'sepia studio portrait; painted backdrop; gilt card mount; formal pose',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-367',
+    name: 'Hand-Colored Postcard',
+    displayName: 'Hand-Colored Postcard',
+    styleAnchors: [
+      'Hand-Colored Postcard',
+      'hand-tinted photographic postcard',
+      'hand-applied tints',
+    ],
+    category: '13. Vintage Collectible Illustration',
+    domain: 'hand-tinted photographic postcard',
+    negativePrompt:
+      'readable postcard captions, readable lettering or numbers, real brand, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Hand-colored postcard: black-and-white photographs tinted by hand with transparent dyes, soft pastel skies and slightly outside-the-lines color.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; show the subject as a tinted photo with soft hand-applied color.',
+      color_and_tone: 'Soft pastel tints of sky blue, rose and green over grey photographic tones.',
+      lighting_and_shadow:
+        'Photographic light with tints softening highlights, kept consistent across the whole image.',
+      texture_and_material:
+        'Photo grain, uneven tint edges, linen or card texture and worn corners.',
+      camera_and_composition: 'Scenic postcard framing of places, promenades or landmarks.',
+      atmosphere_and_mood: 'Keep the requested mood with gentle holiday nostalgia.',
+      rendering_and_quality:
+        'Believable tinted photo with delicate imperfect coloring, kept consistent across the whole image.',
+      creative_brief:
+        "Hand-colored postcard: black-and-white photographs tinted by hand with transparent dyes, soft pastel skies and slightly outside-the-lines color. Carry it through hand-applied tints, pastel skies, photo grain, worn postcard. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'hand-applied tints; pastel skies; photo grain; worn postcard',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-368',
+    name: 'Seed Packet Illustration',
+    displayName: 'Seed Packet Illustration',
+    styleAnchors: ['Seed Packet Illustration', 'vintage seed packet art', 'idealized produce'],
+    category: '13. Vintage Collectible Illustration',
+    domain: 'vintage seed packet art',
+    negativePrompt:
+      'readable packet text, readable lettering or numbers, real brand, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Seed packet illustration: lush vintage seed-packet paintings of vegetables and flowers, oversized perfect produce in bright chromolithograph color.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; paint the subject as an idealized abundant specimen like seed-packet art.',
+      color_and_tone: 'Bright ripe reds, greens, purples and golden yellows on light grounds.',
+      lighting_and_shadow: 'Soft modeled light making produce glossy and plump.',
+      texture_and_material: 'Glossy skins, dewdrops, leaves and vintage print grain.',
+      camera_and_composition: 'Close idealized arrangement filling the frame with abundance.',
+      atmosphere_and_mood: 'Keep the requested mood with cheerful abundant optimism.',
+      rendering_and_quality:
+        'Lush detailed painting with vintage print texture, kept consistent across the whole image.',
+      creative_brief:
+        "Seed packet illustration: lush vintage seed-packet paintings of vegetables and flowers, oversized perfect produce in bright chromolithograph color. Carry it through idealized produce, lush color, dewdrops, vintage print grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'idealized produce; lush color; dewdrops; vintage print grain',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-369',
+    name: 'Stereoview Card Pair',
+    displayName: 'Stereoview Card Pair',
+    styleAnchors: [
+      'Stereoview Card Pair',
+      'side-by-side stereoscopic card',
+      'twin side-by-side photos',
+    ],
+    category: '13. Vintage Collectible Illustration',
+    domain: 'side-by-side stereoscopic card',
+    negativePrompt:
+      'readable card captions, readable lettering or numbers, real brand, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Stereoview card pair: two nearly identical sepia photographs side by side on a curved card, made for a stereoscope viewer, with rounded tops.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; show the subject twice side by side with a tiny viewpoint shift.',
+      color_and_tone: 'Sepia or silver tones on buff card with faded edges.',
+      lighting_and_shadow:
+        'Natural photographic light consistent across both images, kept consistent across the whole image.',
+      texture_and_material: 'Curved card mount, rounded-top windows, photo grain and wear.',
+      camera_and_composition: 'Two matching images side by side on a horizontal card.',
+      atmosphere_and_mood: 'Keep the requested mood with curious antique wonder.',
+      rendering_and_quality:
+        'Believable antique stereo pair with subtle parallax, kept consistent across the whole image.',
+      creative_brief:
+        "Stereoview card pair: two nearly identical sepia photographs side by side on a curved card, made for a stereoscope viewer, with rounded tops. Carry it through twin side-by-side photos, rounded tops, curved card, sepia tone. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'twin side-by-side photos; rounded tops; curved card; sepia tone',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-370',
+    name: 'Magic Lantern Slide',
+    displayName: 'Magic Lantern Slide',
+    styleAnchors: ['Magic Lantern Slide', 'glass painted lantern slide', 'painted glass slide'],
+    category: '13. Vintage Collectible Illustration',
+    domain: 'glass painted lantern slide',
+    negativePrompt:
+      'readable lettering or numbers, real brand, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Magic lantern slide: hand-painted glass slides for antique projectors, glowing transparent colors inside a round black mask on glass.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; paint the subject as a glowing transparent scene inside a round mask.',
+      color_and_tone: 'Luminous transparent reds, blues and yellows glowing against black.',
+      lighting_and_shadow: 'Light shining through the painted glass from behind.',
+      texture_and_material:
+        'Painted glass, brush strokes in transparent paint, round black mask and slide frame.',
+      camera_and_composition: 'Circular scene centered in a rectangular glass slide.',
+      atmosphere_and_mood: 'Keep the requested mood with magical theatrical wonder.',
+      rendering_and_quality:
+        'Glowing transparent painting with delicate hand-made imperfections, kept consistent across the whole image.',
+      creative_brief:
+        "Magic lantern slide: hand-painted glass slides for antique projectors, glowing transparent colors inside a round black mask on glass. Carry it through painted glass slide, round black mask, backlit glow, transparent color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'painted glass slide; round black mask; backlit glow; transparent color',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-371',
+    name: 'Victorian Die-Cut Scrap',
+    displayName: 'Victorian Die-Cut Scrap',
+    styleAnchors: [
+      'Victorian Die-Cut Scrap',
+      'embossed die-cut paper scraps',
+      'embossed paper cutout',
+    ],
+    category: '13. Vintage Collectible Illustration',
+    domain: 'embossed die-cut paper scraps',
+    negativePrompt:
+      'readable lettering or numbers, real brand, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Victorian die-cut scrap: glossy embossed paper cutouts of angels, animals and flowers, printed in rich colors and trimmed with shaped edges.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; present the subject as a glossy embossed paper cutout with a shaped outline.',
+      color_and_tone: 'Rich saturated reds, pinks, greens and gold with glossy sheen.',
+      lighting_and_shadow:
+        'Soft light raking across embossed relief, kept consistent across the whole image.',
+      texture_and_material:
+        'Embossed paper relief, glossy varnish, die-cut edges and paper backing.',
+      camera_and_composition: 'Cutout figures arranged or overlapping on a plain ground.',
+      atmosphere_and_mood: 'Keep the requested mood with sweet sentimental charm.',
+      rendering_and_quality: 'Crisp printed detail with believable embossing and cut edges.',
+      creative_brief:
+        "Victorian die-cut scrap: glossy embossed paper cutouts of angels, animals and flowers, printed in rich colors and trimmed with shaped edges. Carry it through embossed paper cutout, glossy print, die-cut edges, sentimental motifs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'embossed paper cutout; glossy print; die-cut edges; sentimental motifs',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-372',
+    name: 'Retro Gum-Card Monsters',
+    displayName: 'Retro Gum-Card Monsters',
+    styleAnchors: [
+      'Retro Gum-Card Monsters',
+      'bubblegum trading card monsters',
+      'wacky monster portrait',
+    ],
+    category: '13. Vintage Collectible Illustration',
+    domain: 'bubblegum trading card monsters',
+    negativePrompt:
+      'gore, readable card text, readable lettering or numbers, real brand, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Retro gum-card monsters: wacky painted monster cards like old bubblegum trading cards, garish colors, gross-out humor without gore and bold painted borders.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; paint the subject as a garish comic monster portrait inside a bold border.',
+      color_and_tone: 'Garish lime, purple, orange and hot pink with bold primaries.',
+      lighting_and_shadow:
+        'Dramatic comic lighting with glossy highlights, kept consistent across the whole image.',
+      texture_and_material: 'Painted slime, warts, bulging eyes and printed card grain.',
+      camera_and_composition: 'Close portrait with a thick colored border around the image.',
+      atmosphere_and_mood: 'Keep the requested mood with silly gross-out fun.',
+      rendering_and_quality: 'Vivid painted card art without gore, crisp and funny.',
+      creative_brief:
+        "Retro gum-card monsters: wacky painted monster cards like old bubblegum trading cards, garish colors, gross-out humor without gore and bold painted borders. Carry it through wacky monster portrait, garish colors, bold border, gross-out humor. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'wacky monster portrait; garish colors; bold border; gross-out humor',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-373',
+    name: 'Postage Stamp Miniature',
+    displayName: 'Postage Stamp Miniature',
+    styleAnchors: [
+      'Postage Stamp Miniature',
+      'engraved stamp-sized illustration',
+      'perforated edges',
+    ],
+    category: '13. Vintage Collectible Illustration',
+    domain: 'engraved stamp-sized illustration',
+    negativePrompt:
+      'readable denomination or country, readable lettering or numbers, real brand, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Postage stamp miniature: tiny engraved and color-printed stamp-sized images with perforated edges, crisp detail and a small framed border without lettering.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; render the subject as a tiny engraved stamp image with perforated edges.',
+      color_and_tone: 'Limited printed colors such as carmine, ultramarine and olive.',
+      lighting_and_shadow:
+        'Fine engraved shading with crisp small highlights, kept consistent across the whole image.',
+      texture_and_material:
+        'Perforated edges, fine engraving, gum paper and slight cancellation smudges.',
+      camera_and_composition: 'Small vertical or horizontal stamp format with a framed border.',
+      atmosphere_and_mood:
+        'Keep the requested mood with collectible precision, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Crisp miniature engraving with authentic perforations, kept consistent across the whole image.',
+      creative_brief:
+        "Postage stamp miniature: tiny engraved and color-printed stamp-sized images with perforated edges, crisp detail and a small framed border without lettering. Carry it through perforated edges, engraved miniature, framed border, limited colors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'perforated edges; engraved miniature; framed border; limited colors',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-374',
+    name: 'Enamel Tin Sign Art',
+    displayName: 'Enamel Tin Sign Art',
+    styleAnchors: [
+      'Enamel Tin Sign Art',
+      'vintage enamel metal sign illustration',
+      'glossy enamel colors',
+    ],
+    category: '13. Vintage Collectible Illustration',
+    domain: 'vintage enamel metal sign illustration',
+    negativePrompt:
+      'readable advertising text, readable lettering or numbers, real brand, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Enamel tin sign art: bold simple illustrations fired on enamel metal signs, glossy flat colors, chipped edges and rust spots without any lettering.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; illustrate the subject in bold flat enamel colors on a metal sign.',
+      color_and_tone: 'Glossy cobalt, red, cream and yellow enamel with rust brown chips.',
+      lighting_and_shadow: 'Glossy reflections on enamel with flat illustrated shading.',
+      texture_and_material: 'Chipped enamel, rust spots, rivet holes and bent metal edges.',
+      camera_and_composition:
+        'Centered emblem-like illustration on a rectangular sign, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with nostalgic roadside charm.',
+      rendering_and_quality:
+        'Clean bold enamel illustration with believable wear, kept consistent across the whole image.',
+      creative_brief:
+        "Enamel tin sign art: bold simple illustrations fired on enamel metal signs, glossy flat colors, chipped edges and rust spots without any lettering. Carry it through glossy enamel colors, chipped edges, rust spots, rivet holes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'glossy enamel colors; chipped edges; rust spots; rivet holes',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-375',
+    name: 'Lithographed Tin Lid',
+    displayName: 'Lithographed Tin Lid',
+    styleAnchors: ['Lithographed Tin Lid', 'decorated tin box lid', 'printed tin lid'],
+    category: '13. Vintage Collectible Illustration',
+    domain: 'decorated tin box lid',
+    negativePrompt:
+      'readable brand text, readable lettering or numbers, real brand, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Lithographed tin lid: decorative scenes printed on old biscuit or candy tin lids, rich colors wrapping over rounded edges with ornamental borders and slight scratches.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; print the subject as a decorative scene on a round or square tin lid.',
+      color_and_tone: 'Rich printed reds, greens, golds and creams with metallic sheen.',
+      lighting_and_shadow:
+        'Metallic reflections on the curved lid edge, kept consistent across the whole image.',
+      texture_and_material: 'Printed tin surface, rolled edges, scratches and ornamental borders.',
+      camera_and_composition: 'Top-down view of the lid with the scene inside a border.',
+      atmosphere_and_mood: 'Keep the requested mood with cozy holiday nostalgia.',
+      rendering_and_quality: 'Crisp printed detail with believable tin sheen and wear.',
+      creative_brief:
+        "Lithographed tin lid: decorative scenes printed on old biscuit or candy tin lids, rich colors wrapping over rounded edges with ornamental borders and slight scratches. Carry it through printed tin lid, rolled edge, ornamental border, metallic sheen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'printed tin lid; rolled edge; ornamental border; metallic sheen',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-376',
+    name: 'Matchbook Cover Miniature',
+    displayName: 'Matchbook Cover Miniature',
+    styleAnchors: ['Matchbook Cover Miniature', 'tiny vintage matchbook art', 'tiny bold graphic'],
+    category: '13. Vintage Collectible Illustration',
+    domain: 'tiny vintage matchbook art',
+    negativePrompt:
+      'readable text, readable lettering or numbers, real brand, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Matchbook cover miniature: tiny bold graphic illustrations from old matchbooks, simple flat colors, strong silhouettes and a slightly worn cardboard fold.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action; draw the subject as a tiny bold graphic on a matchbook cover.',
+      color_and_tone: 'Two or three flat bold colors such as red, black and cream.',
+      lighting_and_shadow:
+        'Flat graphic shapes with simple shadow blocks, kept consistent across the whole image.',
+      texture_and_material: 'Cardboard grain, printed flat color, fold crease and worn corners.',
+      camera_and_composition: 'Small vertical format with a centered bold emblem.',
+      atmosphere_and_mood: 'Keep the requested mood with retro nightlife charm.',
+      rendering_and_quality:
+        'Crisp simplified graphic with authentic printed wear, kept consistent across the whole image.',
+      creative_brief:
+        "Matchbook cover miniature: tiny bold graphic illustrations from old matchbooks, simple flat colors, strong silhouettes and a slightly worn cardboard fold. Carry it through tiny bold graphic, flat colors, cardboard fold, worn corners. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'tiny bold graphic; flat colors; cardboard fold; worn corners',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP22-319
+packId: pack_22
+name: Watercolor Graphic Novel
+styleAnchors:
+  - Watercolor Graphic Novel
+  - watercolor-painted graphic novel panel
+  - loose watercolor washes
+displayName: Watercolor Graphic Novel
+category: 9. Comic & Cartoon Illustration
+domain: watercolor-painted graphic novel panel
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - comic-and-cartoon-illustration
+  - watercolor-graphic-novel
+  - comic
+  - portable-style-study
+visualDna:
+  aesthetic: 'Watercolor graphic novel: literary graphic novel panels painted in loose watercolor over light pencil or ink, with soft washes, bleeding edges and quiet emotional lighting.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original character designs; draw the subject lightly and paint it with expressive loose watercolor washes.
+  color_and_tone: Soft muted washes of grey-blue, ochre and rose with warm accent lights.
+  lighting_and_shadow: Soft wash shadows and glowing untouched paper highlights.
+  texture_and_material: Bleeding wash edges, pencil underdrawing, granulation and paper texture.
+  camera_and_composition: Cinematic single-panel framing with quiet storytelling space, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with a reflective literary tenderness.
+  rendering_and_quality: Loose expressive washes with clear readable figures and emotion.
+  creative_brief: "Watercolor graphic novel: literary graphic novel panels painted in loose watercolor over light pencil or ink, with soft washes, bleeding edges and quiet emotional lighting. Carry it through loose watercolor washes, pencil underdrawing, bleeding edges, literary mood. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: loose watercolor washes; pencil underdrawing; bleeding edges; literary mood
+avoidRules:
+  - hard cel shading
+  - speech bubbles
+  - lettering
+  - franchise character likeness
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: hard cel shading, speech bubbles, lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: comic-and-cartoon-illustration
+  categoryName: 9. Comic & Cartoon Illustration
+  tags:
+    - trading-card-illustration
+    - comic-and-cartoon-illustration
+    - watercolor-graphic-novel
+    - comic
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: watercolor-painted graphic novel panel

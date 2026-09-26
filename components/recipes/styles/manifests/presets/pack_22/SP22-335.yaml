@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP22-335
+packId: pack_22
+name: Plate-Tone Etching
+styleAnchors:
+  - Plate-Tone Etching
+  - etching with wiped plate tone
+  - fine etched line
+displayName: Plate-Tone Etching
+category: 10. Printmaking & Reproduction
+domain: etching with wiped plate tone
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - printmaking-and-reproduction
+  - plate-tone
+  - print
+  - portable-style-study
+visualDna:
+  aesthetic: 'Plate-tone etching: fine etched line printed with a thin film of ink left wiped on the plate, giving misty grey atmosphere and soft glowing wiped highlights.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action; etch the subject in fine lines and set it in soft wiped plate tone.
+  color_and_tone: Warm black or sepia line with soft grey plate tone and wiped pale areas.
+  lighting_and_shadow: Soft atmospheric tone with lights wiped clean by hand.
+  texture_and_material: Fine etched lines, smeared plate tone, wipe marks and plate mark.
+  camera_and_composition: Atmospheric composition with a visible plate edge, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with misty dreamlike quiet.
+  rendering_and_quality: Delicate etched line with controlled atmospheric tone, kept consistent across the whole image.
+  creative_brief: "Plate-tone etching: fine etched line printed with a thin film of ink left wiped on the plate, giving misty grey atmosphere and soft glowing wiped highlights. Carry it through fine etched line, wiped plate tone, misty greys, plate mark. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: fine etched line; wiped plate tone; misty greys; plate mark
+avoidRules:
+  - clean white background
+  - readable lettering
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: clean white background, readable lettering, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: printmaking-and-reproduction
+  categoryName: 10. Printmaking & Reproduction
+  tags:
+    - trading-card-illustration
+    - printmaking-and-reproduction
+    - plate-tone
+    - print
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: etching with wiped plate tone

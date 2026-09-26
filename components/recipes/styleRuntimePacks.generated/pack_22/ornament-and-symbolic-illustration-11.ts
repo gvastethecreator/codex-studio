@@ -235,4 +235,379 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP22-341',
+    name: 'Arabesque Scroll Frame',
+    displayName: 'Arabesque Scroll Frame',
+    styleAnchors: [
+      'Arabesque Scroll Frame',
+      'interlaced arabesque ornament frame',
+      'interlacing scrolls',
+    ],
+    category: '11. Ornament & Symbolic Illustration',
+    domain: 'interlaced arabesque ornament frame',
+    negativePrompt:
+      'cluttered random ornament, readable lettering, religious symbols by default, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Arabesque scroll frame: the subject set within interlacing arabesque scrolls and stylized foliage that flow endlessly around it in gold and deep jewel colors.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action at the center; surround the subject with interlacing scroll and leaf ornament that never overlaps its face.',
+      color_and_tone:
+        'Gold ornament on deep lapis, emerald or burgundy grounds with cream highlights.',
+      lighting_and_shadow:
+        'Flat decorative light with gentle modeled shading on the central subject.',
+      texture_and_material:
+        'Fine gold line, interlaced stems, stylized leaves and painted grounds.',
+      camera_and_composition:
+        'Symmetrical framing with the subject centered in an ornamental niche.',
+      atmosphere_and_mood: 'Keep the requested mood with rich, rhythmic, luxurious calm.',
+      rendering_and_quality:
+        'Precise balanced ornament with clean interlacing lines, kept consistent across the whole image.',
+      creative_brief:
+        "Arabesque scroll frame: the subject set within interlacing arabesque scrolls and stylized foliage that flow endlessly around it in gold and deep jewel colors. Carry it through interlacing scrolls, stylized foliage, gold on jewel grounds, central niche. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'interlacing scrolls; stylized foliage; gold on jewel grounds; central niche',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-342',
+    name: 'Mandala Ring Ornament',
+    displayName: 'Mandala Ring Ornament',
+    styleAnchors: ['Mandala Ring Ornament', 'concentric radial ornament rings', 'concentric rings'],
+    category: '11. Ornament & Symbolic Illustration',
+    domain: 'concentric radial ornament rings',
+    negativePrompt:
+      'asymmetric clutter, religious deity likeness, readable lettering, religious symbols by default, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Mandala ring ornament: the subject placed at the center of concentric radial rings of repeated petals, dots and patterns expanding outward in perfect symmetry.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action at the center; place the subject in the central circle with radial pattern rings around it.',
+      color_and_tone: 'Harmonious saturated palettes such as turquoise, saffron, magenta and gold.',
+      lighting_and_shadow: 'Flat even decorative lighting with no cast shadows.',
+      texture_and_material: 'Fine repeated petals, dots, lines and concentric bands.',
+      camera_and_composition:
+        'Perfectly centered radial symmetry filling the square, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with meditative balanced harmony.',
+      rendering_and_quality:
+        'Precise symmetrical patterning with crisp repeated shapes, kept consistent across the whole image.',
+      creative_brief:
+        "Mandala ring ornament: the subject placed at the center of concentric radial rings of repeated petals, dots and patterns expanding outward in perfect symmetry. Carry it through concentric rings, radial symmetry, repeated petals, central subject. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'concentric rings; radial symmetry; repeated petals; central subject',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-343',
+    name: 'Arched Icon Frame',
+    displayName: 'Arched Icon Frame',
+    styleAnchors: ['Arched Icon Frame', 'arched devotional card frame', 'tall arch frame'],
+    category: '11. Ornament & Symbolic Illustration',
+    domain: 'arched devotional card frame',
+    negativePrompt:
+      'religious deity likeness, readable lettering, religious symbols by default, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Arched icon frame: the subject framed in a tall rounded or pointed arch with decorative columns, like a devotional icon or fortune card, gilded and solemn.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action at the center; stand the subject inside a tall decorated arch like an icon.',
+      color_and_tone: 'Deep reds, midnight blues and gold with ivory highlights.',
+      lighting_and_shadow: 'Soft glowing light on the subject with gilded frame reflections.',
+      texture_and_material: 'Painted columns, gilded arch edges, small ornaments and aged surface.',
+      camera_and_composition: 'Tall vertical frame with the subject centered under the arch.',
+      atmosphere_and_mood: 'Keep the requested mood with solemn iconic presence.',
+      rendering_and_quality:
+        'Clean painted frame and polished central figure, kept consistent across the whole image.',
+      creative_brief:
+        "Arched icon frame: the subject framed in a tall rounded or pointed arch with decorative columns, like a devotional icon or fortune card, gilded and solemn. Carry it through tall arch frame, decorative columns, gilded edges, iconic pose. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'tall arch frame; decorative columns; gilded edges; iconic pose',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-344',
+    name: 'Heraldic Mantling Swirl',
+    displayName: 'Heraldic Mantling Swirl',
+    styleAnchors: [
+      'Heraldic Mantling Swirl',
+      'heraldic mantling and supporters',
+      'swirling mantling',
+    ],
+    category: '11. Ornament & Symbolic Illustration',
+    domain: 'heraldic mantling and supporters',
+    negativePrompt:
+      'readable mottos, real coats of arms, readable lettering, religious symbols by default, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Heraldic mantling swirl: the subject presented like a coat of arms, with swirling cloth mantling, helm, supporters and a shield-like central emblem without lettering.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action at the center; present the subject as the central charge of a heraldic arrangement.',
+      color_and_tone: 'Heraldic tinctures of red, blue, green and black with gold and silver.',
+      lighting_and_shadow: 'Flat heraldic color with light modeling on the mantling folds.',
+      texture_and_material:
+        'Flowing leafy mantling, crest, shield shape and ornamental supporters.',
+      camera_and_composition:
+        'Symmetrical armorial composition centered on the shield, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with proud ceremonial grandeur.',
+      rendering_and_quality:
+        'Crisp heraldic design with elegant swirling mantling, kept consistent across the whole image.',
+      creative_brief:
+        "Heraldic mantling swirl: the subject presented like a coat of arms, with swirling cloth mantling, helm, supporters and a shield-like central emblem without lettering. Carry it through swirling mantling, shield emblem, heraldic tinctures, supporters. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'swirling mantling; shield emblem; heraldic tinctures; supporters',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-345',
+    name: 'Celestial Wheel Ornament',
+    displayName: 'Celestial Wheel Ornament',
+    styleAnchors: ['Celestial Wheel Ornament', 'astrological wheel design', 'celestial wheel'],
+    category: '11. Ornament & Symbolic Illustration',
+    domain: 'astrological wheel design',
+    negativePrompt:
+      'readable zodiac symbols, readable lettering, religious symbols by default, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Celestial wheel ornament: the subject set at the hub of an ornate wheel of stars, moons, planets and constellation figures, like an old astronomical chart.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action at the center; place the subject at the hub of a decorated celestial wheel.',
+      color_and_tone: 'Deep night blue with gold, silver and soft cream star highlights.',
+      lighting_and_shadow: 'Glowing starlight with gilded reflections on the ornament.',
+      texture_and_material:
+        'Fine engraved rings, star points, moon phases and constellation figures.',
+      camera_and_composition:
+        'Circular centered composition filling the frame, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with cosmic mystery and wonder.',
+      rendering_and_quality:
+        'Precise decorative celestial rendering with delicate detail, kept consistent across the whole image.',
+      creative_brief:
+        "Celestial wheel ornament: the subject set at the hub of an ornate wheel of stars, moons, planets and constellation figures, like an old astronomical chart. Carry it through celestial wheel, moon phases, constellation figures, gold on night blue. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'celestial wheel; moon phases; constellation figures; gold on night blue',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-346',
+    name: 'Whiplash Curve Ornament',
+    displayName: 'Whiplash Curve Ornament',
+    styleAnchors: ['Whiplash Curve Ornament', 'art nouveau whiplash lines', 'whiplash curves'],
+    category: '11. Ornament & Symbolic Illustration',
+    domain: 'art nouveau whiplash lines',
+    negativePrompt:
+      'stiff straight lines, readable lettering, religious symbols by default, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Whiplash curve ornament: flowing art-nouveau style whiplash curves of hair, stems and ribbons that snap and flow around the subject in elegant rhythm.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action at the center; let hair, stems and ribbons around the subject flow into whiplash curves.',
+      color_and_tone: 'Soft sage, dusty rose, ochre and cream with outlined gold accents.',
+      lighting_and_shadow:
+        'Flat decorative color with soft subtle modeling, kept consistent across the whole image.',
+      texture_and_material: 'Flowing contour lines, stylized flowers, ribbons and mosaic halos.',
+      camera_and_composition: 'Vertical elegant composition with curves framing the subject.',
+      atmosphere_and_mood: 'Keep the requested mood with graceful poetic elegance.',
+      rendering_and_quality:
+        'Clean flowing lines with harmonious decorative balance, kept consistent across the whole image.',
+      creative_brief:
+        "Whiplash curve ornament: flowing art-nouveau style whiplash curves of hair, stems and ribbons that snap and flow around the subject in elegant rhythm. Carry it through whiplash curves, flowing hair and stems, soft palette, decorative halo. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'whiplash curves; flowing hair and stems; soft palette; decorative halo',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-347',
+    name: 'Baroque Cartouche Frame',
+    displayName: 'Baroque Cartouche Frame',
+    styleAnchors: ['Baroque Cartouche Frame', 'ornate baroque cartouche', 'curling cartouche'],
+    category: '11. Ornament & Symbolic Illustration',
+    domain: 'ornate baroque cartouche',
+    negativePrompt:
+      'minimalist flat, readable lettering, religious symbols by default, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Baroque cartouche frame: the subject shown inside an ornate curling baroque cartouche of scrolls, shells, acanthus leaves and sweeping flourishes in gilded relief.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action at the center; frame the subject inside a curling gilded cartouche.',
+      color_and_tone: 'Gilded gold frames with rich painted interiors in crimson and deep teal.',
+      lighting_and_shadow:
+        'Dramatic light catching the raised gilded curls, kept consistent across the whole image.',
+      texture_and_material: 'Carved scrolls, shells, acanthus leaves and polished gilt surfaces.',
+      camera_and_composition: 'Central oval or shield-shaped cartouche with curling edges.',
+      atmosphere_and_mood: 'Keep the requested mood with opulent theatrical grandeur.',
+      rendering_and_quality:
+        'Richly detailed ornament with clean central painting, kept consistent across the whole image.',
+      creative_brief:
+        "Baroque cartouche frame: the subject shown inside an ornate curling baroque cartouche of scrolls, shells, acanthus leaves and sweeping flourishes in gilded relief. Carry it through curling cartouche, gilded scrolls, acanthus leaves, central painting. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'curling cartouche; gilded scrolls; acanthus leaves; central painting',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-348',
+    name: 'Doily Lace Border',
+    displayName: 'Doily Lace Border',
+    styleAnchors: ['Doily Lace Border', 'paper lace doily ornament', 'paper lace doily'],
+    category: '11. Ornament & Symbolic Illustration',
+    domain: 'paper lace doily ornament',
+    negativePrompt:
+      'heavy dark frames, readable lettering, religious symbols by default, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Doily lace border: the subject set on or framed by delicate cut-paper lace doilies, with intricate pierced patterns, scalloped edges and soft shadows.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action at the center; place the subject on a lace doily ground or within a lacy scalloped border.',
+      color_and_tone: 'White or cream lace on pastel or deep colored grounds.',
+      lighting_and_shadow: 'Soft light casting delicate lace shadows beneath the paper.',
+      texture_and_material: 'Pierced paper lace, scalloped edges, embossing and soft paper fibers.',
+      camera_and_composition: 'Centered subject within a circular or heart-shaped lace frame.',
+      atmosphere_and_mood: 'Keep the requested mood with sweet, delicate, sentimental charm.',
+      rendering_and_quality: 'Precise intricate lace detail with soft believable shadows.',
+      creative_brief:
+        "Doily lace border: the subject set on or framed by delicate cut-paper lace doilies, with intricate pierced patterns, scalloped edges and soft shadows. Carry it through paper lace doily, scalloped edges, pierced patterns, soft shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'paper lace doily; scalloped edges; pierced patterns; soft shadows',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-349',
+    name: 'Emblem-Book Allegory',
+    displayName: 'Emblem-Book Allegory',
+    styleAnchors: ['Emblem-Book Allegory', 'symbolic emblem book image', 'symbolic objects'],
+    category: '11. Ornament & Symbolic Illustration',
+    domain: 'symbolic emblem book image',
+    negativePrompt:
+      'readable mottos, readable lettering, religious symbols by default, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Emblem-book allegory: symbolic single images from old emblem books, where a hand from a cloud, a burning heart or an anchor tells a moral in one strange scene.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action at the center; combine the subject with one or two symbolic objects in a strange allegorical scene.',
+      color_and_tone: 'Engraved black line with optional pale hand tints on aged paper.',
+      lighting_and_shadow:
+        'Fine hatching shadows and bright open sky, kept consistent across the whole image.',
+      texture_and_material: 'Engraved line, landscape backdrops, clouds and symbolic props.',
+      camera_and_composition: 'Circular or rectangular vignette with a symbolic central scene.',
+      atmosphere_and_mood: 'Keep the requested mood with puzzling moral mystery.',
+      rendering_and_quality:
+        'Clean engraved allegory with clear symbolic objects, kept consistent across the whole image.',
+      creative_brief:
+        "Emblem-book allegory: symbolic single images from old emblem books, where a hand from a cloud, a burning heart or an anchor tells a moral in one strange scene. Carry it through symbolic objects, hand from cloud, moral scene, engraved vignette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'symbolic objects; hand from cloud; moral scene; engraved vignette',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-350',
+    name: 'Sacred Geometry Overlay',
+    displayName: 'Sacred Geometry Overlay',
+    styleAnchors: [
+      'Sacred Geometry Overlay',
+      'geometric construction lines overlay',
+      'golden construction lines',
+    ],
+    category: '11. Ornament & Symbolic Illustration',
+    domain: 'geometric construction lines overlay',
+    negativePrompt:
+      'random lines, readable lettering, religious symbols by default, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Sacred geometry overlay: the subject overlaid with fine golden geometric construction lines, circles, triangles and golden spirals that echo its proportions.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action at the center; overlay the subject with fine geometric circles and spirals aligned to its shape.',
+      color_and_tone: 'Dark rich grounds with fine gold or white geometric lines.',
+      lighting_and_shadow: 'Soft modeled subject lighting beneath glowing line work.',
+      texture_and_material: 'Thin precise lines, intersecting circles, golden spirals and nodes.',
+      camera_and_composition: 'Centered composition with geometry radiating from the subject.',
+      atmosphere_and_mood: 'Keep the requested mood with mystical mathematical order.',
+      rendering_and_quality:
+        'Precise clean geometry over a polished subject, kept consistent across the whole image.',
+      creative_brief:
+        "Sacred geometry overlay: the subject overlaid with fine golden geometric construction lines, circles, triangles and golden spirals that echo its proportions. Carry it through golden construction lines, intersecting circles, golden spiral, dark ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'golden construction lines; intersecting circles; golden spiral; dark ground',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-351',
+    name: 'Chintz Floral Surround',
+    displayName: 'Chintz Floral Surround',
+    styleAnchors: [
+      'Chintz Floral Surround',
+      'dense chintz flower surround',
+      'dense chintz flowers',
+    ],
+    category: '11. Ornament & Symbolic Illustration',
+    domain: 'dense chintz flower surround',
+    negativePrompt:
+      'sparse empty background, readable lettering, religious symbols by default, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Chintz floral surround: the subject nestled in dense glossy chintz flowers, peonies, roses and birds packed edge to edge like an old printed fabric.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action at the center; surround the subject with a dense packed field of printed-looking flowers.',
+      color_and_tone: 'Rich rose pinks, leaf greens and cream on dark or pale grounds.',
+      lighting_and_shadow: 'Soft printed shading with glossy highlights on petals.',
+      texture_and_material: 'Dense overlapping flowers, birds, leaves and glazed fabric sheen.',
+      camera_and_composition: 'All-over floral pattern with the subject in a clear central space.',
+      atmosphere_and_mood: 'Keep the requested mood with lush, cozy, romantic abundance.',
+      rendering_and_quality: 'Densely detailed floral rendering with a readable central subject.',
+      creative_brief:
+        "Chintz floral surround: the subject nestled in dense glossy chintz flowers, peonies, roses and birds packed edge to edge like an old printed fabric. Carry it through dense chintz flowers, packed pattern, glossy petals, central subject. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'dense chintz flowers; packed pattern; glossy petals; central subject',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-352',
+    name: 'Radiant Halo Burst',
+    displayName: 'Radiant Halo Burst',
+    styleAnchors: ['Radiant Halo Burst', 'radiating halo and rays', 'radiating rays'],
+    category: '11. Ornament & Symbolic Illustration',
+    domain: 'radiating halo and rays',
+    negativePrompt:
+      'religious deity likeness, readable lettering, religious symbols by default, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Radiant halo burst: the subject backed by a huge radiating halo of straight and wavy rays, concentric rings and small stars, bold and celebratory.',
+      subject_treatment:
+        'Preserve the requested identity, proportions, pose and action at the center; place a large radiating halo or sunburst behind the subject.',
+      color_and_tone: 'Gold, cream and warm reds radiating from the subject into deep backgrounds.',
+      lighting_and_shadow: 'Backlit glow from the halo with rim light on the subject.',
+      texture_and_material: 'Alternating straight and wavy rays, concentric rings and star points.',
+      camera_and_composition:
+        'Centered subject with rays reaching every edge, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with triumphant celebration, kept consistent across the whole image.',
+      rendering_and_quality: 'Clean bold rays with a crisp polished subject.',
+      creative_brief:
+        "Radiant halo burst: the subject backed by a huge radiating halo of straight and wavy rays, concentric rings and small stars, bold and celebratory. Carry it through radiating rays, concentric halo, star points, triumphant glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'radiating rays; concentric halo; star points; triumphant glow',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

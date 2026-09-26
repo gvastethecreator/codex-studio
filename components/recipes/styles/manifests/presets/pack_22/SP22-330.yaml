@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP22-330
+packId: pack_22
+name: Sugar-Lift Brush Etching
+styleAnchors:
+  - Sugar-Lift Brush Etching
+  - painterly sugar-lift aquatint
+  - brushstroke etching
+displayName: Sugar-Lift Brush Etching
+category: 10. Printmaking & Reproduction
+domain: painterly sugar-lift aquatint
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - printmaking-and-reproduction
+  - sugar-lift
+  - print
+  - portable-style-study
+visualDna:
+  aesthetic: 'Sugar-lift brush etching: an etching whose marks were painted with a brush in sugar solution, so the print shows fluid brushstrokes with grainy aquatint texture.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action; paint the subject in loose fluid brush marks rendered as etched aquatint grain.
+  color_and_tone: Rich black or sepia ink with grainy aquatint tones on cream paper.
+  lighting_and_shadow: Brushed dark masses and open paper lights with grainy midtones.
+  texture_and_material: Fluid brush-shaped etched marks, rosin grain texture and plate mark.
+  camera_and_composition: Expressive painterly composition within a visible plate edge.
+  atmosphere_and_mood: Keep the requested mood with spontaneous, expressive energy.
+  rendering_and_quality: Authentic etched grain with visible brush gesture in every mark.
+  creative_brief: "Sugar-lift brush etching: an etching whose marks were painted with a brush in sugar solution, so the print shows fluid brushstrokes with grainy aquatint texture. Carry it through brushstroke etching, aquatint grain, fluid gesture, plate mark. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: brushstroke etching; aquatint grain; fluid gesture; plate mark
+avoidRules:
+  - clean vector lines
+  - readable lettering
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: clean vector lines, readable lettering, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: printmaking-and-reproduction
+  categoryName: 10. Printmaking & Reproduction
+  tags:
+    - trading-card-illustration
+    - printmaking-and-reproduction
+    - sugar-lift
+    - print
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: painterly sugar-lift aquatint

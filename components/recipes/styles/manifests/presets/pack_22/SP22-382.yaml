@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP22-382
+packId: pack_22
+name: Tangram-Piece Figures
+styleAnchors:
+  - Tangram-Piece Figures
+  - figures from tangram shapes
+  - seven tangram shapes
+displayName: Tangram-Piece Figures
+category: 14. Symbolic Graphic Illustration
+domain: figures from tangram shapes
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - symbolic-graphic-illustration
+  - tangram
+  - graphic-symbol
+  - portable-style-study
+visualDna:
+  aesthetic: 'Tangram-piece figures: subjects assembled only from the seven classic tangram shapes, triangles, a square and a parallelogram, with small gaps between the pieces.'
+  subject_treatment: Preserve the requested subject, count, pose and action while reducing it to a clear graphic symbol; assemble it from tangram triangles, a square and a parallelogram.
+  color_and_tone: Each piece a different flat color or all one color on a plain ground.
+  lighting_and_shadow: No lighting; flat pieces with thin gaps between them.
+  texture_and_material: Clean geometric pieces, thin separation gaps and optional wood grain.
+  camera_and_composition: Centered figure with generous empty space around it.
+  atmosphere_and_mood: Keep the requested mood with playful puzzle cleverness.
+  rendering_and_quality: Precise geometric assembly with recognizable silhouettes, kept consistent across the whole image.
+  creative_brief: "Tangram-piece figures: subjects assembled only from the seven classic tangram shapes, triangles, a square and a parallelogram, with small gaps between the pieces. Carry it through seven tangram shapes, small gaps, flat colors, puzzle silhouette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: seven tangram shapes; small gaps; flat colors; puzzle silhouette
+avoidRules:
+  - curved shapes
+  - readable lettering
+  - real logo
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: curved shapes, readable lettering, real logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: symbolic-graphic-illustration
+  categoryName: 14. Symbolic Graphic Illustration
+  tags:
+    - trading-card-illustration
+    - symbolic-graphic-illustration
+    - tangram
+    - graphic-symbol
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: figures from tangram shapes

@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP22-359
+packId: pack_22
+name: Terrarium Tiny World
+styleAnchors:
+  - Terrarium Tiny World
+  - miniature world inside glass terrarium
+  - glass terrarium
+displayName: Terrarium Tiny World
+category: 12. Crafted Materials & Miniatures
+domain: miniature world inside glass terrarium
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - crafted-materials-and-miniatures
+  - terrarium-world
+  - craft
+  - portable-style-study
+visualDna:
+  aesthetic: 'Terrarium tiny world: a miniature landscape growing inside a glass jar or terrarium, real moss and pebbles with tiny figures and buildings.'
+  subject_treatment: Preserve the requested identity, count, pose and action while rebuilding it as a handmade craft object; place the subject as a tiny scene inside a glass terrarium.
+  color_and_tone: Lush moss greens, earthy browns and glass reflections.
+  lighting_and_shadow: Soft light through glass with reflections and condensation.
+  texture_and_material: Real moss, pebbles, soil layers, glass curvature and tiny props.
+  camera_and_composition: Close view through curved glass with the tiny world centered.
+  atmosphere_and_mood: Keep the requested mood with enclosed secret-garden wonder.
+  rendering_and_quality: Believable miniature scale with crisp glass reflections, kept consistent across the whole image.
+  creative_brief: "Terrarium tiny world: a miniature landscape growing inside a glass jar or terrarium, real moss and pebbles with tiny figures and buildings. Carry it through glass terrarium, real moss, tiny figures, glass reflections. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: glass terrarium; real moss; tiny figures; glass reflections
+avoidRules:
+  - no glass enclosure
+  - real toy brand
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: no glass enclosure, real toy brand, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: crafted-materials-and-miniatures
+  categoryName: 12. Crafted Materials & Miniatures
+  tags:
+    - trading-card-illustration
+    - crafted-materials-and-miniatures
+    - terrarium-world
+    - craft
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: miniature world inside glass terrarium

@@ -235,4 +235,393 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP22-389',
+    name: 'Inverted-Hull Toon Outline',
+    displayName: 'Inverted-Hull Toon Outline',
+    styleAnchors: [
+      'Inverted-Hull Toon Outline',
+      'game toon shader with hull outline',
+      'thick silhouette outlines',
+    ],
+    category: '15. Digital Rendering Methods',
+    domain: 'game toon shader with hull outline',
+    negativePrompt:
+      'interface overlay, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Inverted-hull toon outline: 3D characters rendered with flat toon shading and thick black outlines generated around their silhouette, like a stylized cel-shaded game.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action; render the subject as a 3D model with two-tone toon shading and thick outlines.',
+      color_and_tone: 'Bright flat base colors with one darker shadow tone and clean highlights.',
+      lighting_and_shadow: 'Hard two-step toon lighting with crisp shadow terminators.',
+      texture_and_material:
+        'Smooth untextured surfaces, thick black silhouette outlines and small specular dots.',
+      camera_and_composition: 'Game-like three-quarter camera with the character full body.',
+      atmosphere_and_mood: 'Keep the requested mood with bright stylized game energy.',
+      rendering_and_quality: 'Clean real-time toon render with consistent outline thickness.',
+      creative_brief:
+        "Inverted-hull toon outline: 3D characters rendered with flat toon shading and thick black outlines generated around their silhouette, like a stylized cel-shaded game. Carry it through thick silhouette outlines, two-tone toon shading, 3D model, game camera. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'thick silhouette outlines; two-tone toon shading; 3D model; game camera',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-390',
+    name: 'Matcap Sculpt Preview',
+    displayName: 'Matcap Sculpt Preview',
+    styleAnchors: [
+      'Matcap Sculpt Preview',
+      'digital sculpting matcap preview',
+      'single matcap material',
+    ],
+    category: '15. Digital Rendering Methods',
+    domain: 'digital sculpting matcap preview',
+    negativePrompt:
+      'full color textures, interface overlay, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        "Matcap sculpt preview: a digital sculpture shown in a sculpting program's material-capture preview, one uniform shiny clay or red wax material revealing every sculpted form.",
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action; render the subject as a single-material digital sculpt preview.',
+      color_and_tone: 'Single matcap material such as red wax, grey clay or pearly white.',
+      lighting_and_shadow: 'Baked matcap lighting with bright rim and soft cavity shadows.',
+      texture_and_material: 'Sculpted brush strokes, crisp creases and smooth surfaces.',
+      camera_and_composition: 'Centered sculpture on a plain dark gradient background.',
+      atmosphere_and_mood: 'Keep the requested mood with the focus of a work in progress.',
+      rendering_and_quality:
+        'Clean sculpt preview with visible sculpting detail, kept consistent across the whole image.',
+      creative_brief:
+        "Matcap sculpt preview: a digital sculpture shown in a sculpting program's material-capture preview, one uniform shiny clay or red wax material revealing every sculpted form. Carry it through single matcap material, sculpt strokes, dark gradient, work-in-progress. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'single matcap material; sculpt strokes; dark gradient; work-in-progress',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-391',
+    name: 'Normal-Map Color Render',
+    displayName: 'Normal-Map Color Render',
+    styleAnchors: ['Normal-Map Color Render', 'surface normals as color', 'normal-map colors'],
+    category: '15. Digital Rendering Methods',
+    domain: 'surface normals as color',
+    negativePrompt:
+      'interface overlay, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Normal-map color render: the subject rendered as a surface-normal pass, every direction of its surface shown as pastel violet, teal and pink gradients.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action; render the subject so its surface directions become normal-map colors.',
+      color_and_tone: 'Periwinkle violets, teal greens and pink reds blending across surfaces.',
+      lighting_and_shadow:
+        'No lighting; color alone shows surface direction, kept consistent across the whole image.',
+      texture_and_material:
+        'Smooth normal gradients, crisp edge transitions and fine surface bumps.',
+      camera_and_composition: 'Clean centered object on a flat violet background.',
+      atmosphere_and_mood: 'Keep the requested mood with technical surreal beauty.',
+      rendering_and_quality:
+        'Accurate normal-pass coloring with smooth transitions, kept consistent across the whole image.',
+      creative_brief:
+        "Normal-map color render: the subject rendered as a surface-normal pass, every direction of its surface shown as pastel violet, teal and pink gradients. Carry it through normal-map colors, violet teal pink, surface direction, flat violet ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'normal-map colors; violet teal pink; surface direction; flat violet ground',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-392',
+    name: 'Ray-Marched Fractal Forms',
+    displayName: 'Ray-Marched Fractal Forms',
+    styleAnchors: [
+      'Ray-Marched Fractal Forms',
+      'raymarched fractal geometry render',
+      'fractal geometry',
+    ],
+    category: '15. Digital Rendering Methods',
+    domain: 'raymarched fractal geometry render',
+    negativePrompt:
+      'interface overlay, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Ray-marched fractal forms: infinitely detailed mathematical fractal structures rendered with soft glow and fog, alien architecture of repeating spirals and branches.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action; build the subject or its world from repeating fractal geometry.',
+      color_and_tone: 'Glowing gradients of teal, gold and magenta fading into fog.',
+      lighting_and_shadow:
+        'Soft ambient occlusion, glow and distance fog, kept consistent across the whole image.',
+      texture_and_material: 'Self-similar repeating forms, infinite detail and smooth surfaces.',
+      camera_and_composition:
+        'Deep perspective into fractal space with the subject in the foreground.',
+      atmosphere_and_mood: 'Keep the requested mood with hypnotic alien vastness.',
+      rendering_and_quality:
+        'Clean infinite fractal detail with smooth glow, kept consistent across the whole image.',
+      creative_brief:
+        "Ray-marched fractal forms: infinitely detailed mathematical fractal structures rendered with soft glow and fog, alien architecture of repeating spirals and branches. Carry it through fractal geometry, infinite detail, distance fog, glowing gradients. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'fractal geometry; infinite detail; distance fog; glowing gradients',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-393',
+    name: 'Gradient-Map Painting',
+    displayName: 'Gradient-Map Painting',
+    styleAnchors: [
+      'Gradient-Map Painting',
+      'value remapped to gradient palette',
+      'single gradient palette',
+    ],
+    category: '15. Digital Rendering Methods',
+    domain: 'value remapped to gradient palette',
+    negativePrompt:
+      'interface overlay, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Gradient-map painting: a digital painting where all values are remapped onto a bold custom gradient, like deep indigo shadows to peach midtones to cream highlights.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action; paint the subject in values that are remapped onto one bold gradient.',
+      color_and_tone:
+        'A single multi-stop gradient such as indigo to coral to cream across all values.',
+      lighting_and_shadow: 'Clear lighting whose values determine the gradient colors.',
+      texture_and_material: 'Painterly brush textures unified by the gradient palette.',
+      camera_and_composition: 'Preserve the requested framing with strong value design.',
+      atmosphere_and_mood: 'Keep the requested mood with unified cinematic color.',
+      rendering_and_quality:
+        'Clean value structure with smooth gradient mapping, kept consistent across the whole image.',
+      creative_brief:
+        "Gradient-map painting: a digital painting where all values are remapped onto a bold custom gradient, like deep indigo shadows to peach midtones to cream highlights. Carry it through single gradient palette, value remapping, unified color, painterly texture. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'single gradient palette; value remapping; unified color; painterly texture',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-394',
+    name: 'Soft Clay Digital Render',
+    displayName: 'Soft Clay Digital Render',
+    styleAnchors: ['Soft Clay Digital Render', '3d render of plasticine look', 'plasticine look'],
+    category: '15. Digital Rendering Methods',
+    domain: '3d render of plasticine look',
+    negativePrompt:
+      'glossy plastic, interface overlay, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Soft clay digital render: 3D renders that imitate soft plasticine, slightly lumpy forms, fingerprints and warm soft studio light.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action; render the subject as soft plasticine-like 3D shapes.',
+      color_and_tone:
+        'Warm saturated clay colors with soft shadows, kept consistent across the whole image.',
+      lighting_and_shadow: 'Soft studio key light with gentle ambient occlusion.',
+      texture_and_material: 'Subtle fingerprints, lumpy surfaces, soft creases and matte finish.',
+      camera_and_composition: 'Tabletop miniature framing with shallow depth of field.',
+      atmosphere_and_mood: 'Keep the requested mood with cozy playful charm.',
+      rendering_and_quality:
+        'Clean render with believable clay imperfections, kept consistent across the whole image.',
+      creative_brief:
+        "Soft clay digital render: 3D renders that imitate soft plasticine, slightly lumpy forms, fingerprints and warm soft studio light. Carry it through plasticine look, fingerprints, soft studio light, tabletop scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'plasticine look; fingerprints; soft studio light; tabletop scale',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-395',
+    name: 'Jittery Low-Poly Retro Render',
+    displayName: 'Jittery Low-Poly Retro Render',
+    styleAnchors: ['Jittery Low-Poly Retro Render', 'early console 3d render', 'very low poly'],
+    category: '15. Digital Rendering Methods',
+    domain: 'early console 3d render',
+    negativePrompt:
+      'modern high-poly, interface overlay, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Jittery low-poly retro render: early console 3D with very low polygon counts, blurry low-resolution textures, wobbly vertices and heavy distance fog.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action; render the subject with very few polygons and low-resolution textures.',
+      color_and_tone: 'Murky limited colors with dithered gradients and dark fog.',
+      lighting_and_shadow:
+        'Simple vertex lighting and blob shadows, kept consistent across the whole image.',
+      texture_and_material: 'Pixelated warped textures, jagged edges and affine texture wobble.',
+      camera_and_composition:
+        'Low-resolution game camera with near fog clipping, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with eerie nostalgic unease.',
+      rendering_and_quality: 'Authentic retro 3D artifacts, never clean modern rendering.',
+      creative_brief:
+        "Jittery low-poly retro render: early console 3D with very low polygon counts, blurry low-resolution textures, wobbly vertices and heavy distance fog. Carry it through very low poly, blurry warped textures, distance fog, blob shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'very low poly; blurry warped textures; distance fog; blob shadows',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-396',
+    name: 'Signed-Distance Soft Blend',
+    displayName: 'Signed-Distance Soft Blend',
+    styleAnchors: [
+      'Signed-Distance Soft Blend',
+      'smoothly blended shape render',
+      'smooth shape unions',
+    ],
+    category: '15. Digital Rendering Methods',
+    domain: 'smoothly blended shape render',
+    negativePrompt:
+      'interface overlay, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Signed-distance soft blend: rendered shapes that melt smoothly into each other with soft unions, like glossy blobs and spheres merging into creatures.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action; build the subject from simple shapes that blend smoothly into one another.',
+      color_and_tone: 'Soft pastel or glossy candy colors with smooth gradients.',
+      lighting_and_shadow: 'Soft studio light with smooth ambient occlusion in the blends.',
+      texture_and_material: 'Glossy smooth surfaces, soft blended seams and no texture.',
+      camera_and_composition:
+        'Centered subject on a clean gradient ground, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with soft playful fluidity.',
+      rendering_and_quality:
+        'Clean seamless blends with smooth shading, kept consistent across the whole image.',
+      creative_brief:
+        "Signed-distance soft blend: rendered shapes that melt smoothly into each other with soft unions, like glossy blobs and spheres merging into creatures. Carry it through smooth shape unions, glossy blobs, soft seams, gradient ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'smooth shape unions; glossy blobs; soft seams; gradient ground',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-397',
+    name: 'Baked Lightmap Look',
+    displayName: 'Baked Lightmap Look',
+    styleAnchors: ['Baked Lightmap Look', 'game baked lighting environment', 'soft baked shadows'],
+    category: '15. Digital Rendering Methods',
+    domain: 'game baked lighting environment',
+    negativePrompt:
+      'readable signs, interface overlay, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Baked lightmap look: game environments with soft pre-baked lighting, gentle color bleeding and static shadows, cozy and slightly painterly.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action; place the subject in a game-like space with soft baked lighting.',
+      color_and_tone: 'Warm baked light with soft color bleeding from walls and floors.',
+      lighting_and_shadow:
+        'Soft static shadows and gentle bounce light, kept consistent across the whole image.',
+      texture_and_material:
+        'Tiled game textures, soft light gradients and slightly blurred shadows.',
+      camera_and_composition:
+        'Game environment framing with clear readable spaces, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with cozy explorable warmth.',
+      rendering_and_quality: 'Consistent baked lighting with no harsh real-time artifacts.',
+      creative_brief:
+        "Baked lightmap look: game environments with soft pre-baked lighting, gentle color bleeding and static shadows, cozy and slightly painterly. Carry it through soft baked shadows, color bleeding, game textures, cozy spaces. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'soft baked shadows; color bleeding; game textures; cozy spaces',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-398',
+    name: 'Mirror-Floor Reflection Render',
+    displayName: 'Mirror-Floor Reflection Render',
+    styleAnchors: [
+      'Mirror-Floor Reflection Render',
+      'glossy reflective floor render',
+      'mirror floor',
+    ],
+    category: '15. Digital Rendering Methods',
+    domain: 'glossy reflective floor render',
+    negativePrompt:
+      'matte floor, interface overlay, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Mirror-floor reflection render: subjects standing on a perfectly glossy reflective floor that doubles them below, clean studio or showroom lighting.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action; place the subject on a glossy floor that reflects it cleanly.',
+      color_and_tone: 'Dark or pastel studio tones with bright reflections.',
+      lighting_and_shadow: 'Studio lights reflected in the floor with soft falloff.',
+      texture_and_material:
+        'Mirror-like floor, crisp reflections and polished surfaces, kept consistent across the whole image.',
+      camera_and_composition:
+        'Low camera angle emphasizing the reflection, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with sleek showroom drama.',
+      rendering_and_quality:
+        'Clean accurate reflections with subtle fade, kept consistent across the whole image.',
+      creative_brief:
+        "Mirror-floor reflection render: subjects standing on a perfectly glossy reflective floor that doubles them below, clean studio or showroom lighting. Carry it through mirror floor, doubled reflection, studio lights, low angle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'mirror floor; doubled reflection; studio lights; low angle',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-399',
+    name: 'Procedural Noise Terrain',
+    displayName: 'Procedural Noise Terrain',
+    styleAnchors: [
+      'Procedural Noise Terrain',
+      'noise-generated landscape render',
+      'layered noise terrain',
+    ],
+    category: '15. Digital Rendering Methods',
+    domain: 'noise-generated landscape render',
+    negativePrompt:
+      'interface overlay, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Procedural noise terrain: landscapes generated from layered noise, eroded mountains, rolling valleys and strange repeating ridges with atmospheric depth.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action; place the subject on a vast procedurally generated terrain.',
+      color_and_tone: 'Naturalistic or alien palettes graded by altitude and slope.',
+      lighting_and_shadow: 'Low sun raking across ridges with atmospheric haze.',
+      texture_and_material: 'Eroded rock, noise ridges, flow channels and snowy peaks.',
+      camera_and_composition: 'Wide aerial or ground-level vista with depth layers.',
+      atmosphere_and_mood: 'Keep the requested mood with vast generated wilderness.',
+      rendering_and_quality:
+        'Clean terrain rendering with believable erosion detail, kept consistent across the whole image.',
+      creative_brief:
+        "Procedural noise terrain: landscapes generated from layered noise, eroded mountains, rolling valleys and strange repeating ridges with atmospheric depth. Carry it through layered noise terrain, eroded ridges, atmospheric haze, vast vista. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'layered noise terrain; eroded ridges; atmospheric haze; vast vista',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-400',
+    name: 'Fresnel Glow Shader',
+    displayName: 'Fresnel Glow Shader',
+    styleAnchors: ['Fresnel Glow Shader', 'edge glow fresnel render', 'fresnel rim glow'],
+    category: '15. Digital Rendering Methods',
+    domain: 'edge glow fresnel render',
+    negativePrompt:
+      'interface overlay, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Fresnel glow shader: 3D subjects rendered with glowing edges where surfaces turn away from the camera, ghostly and luminous against dark backgrounds.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action; render the subject with glowing rims wherever its surface turns away.',
+      color_and_tone: 'Dark backgrounds with glowing cyan, violet or gold edges.',
+      lighting_and_shadow: 'Rim glow driven by viewing angle, faint interior fill.',
+      texture_and_material:
+        'Smooth surfaces, glowing edges and subtle transparency, kept consistent across the whole image.',
+      camera_and_composition: 'Centered subject against black or deep blue space.',
+      atmosphere_and_mood: 'Keep the requested mood with ghostly holographic mystery.',
+      rendering_and_quality:
+        'Clean shader glow with accurate edge falloff, kept consistent across the whole image.',
+      creative_brief:
+        "Fresnel glow shader: 3D subjects rendered with glowing edges where surfaces turn away from the camera, ghostly and luminous against dark backgrounds. Carry it through fresnel rim glow, dark background, ghostly transparency, smooth surfaces. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'fresnel rim glow; dark background; ghostly transparency; smooth surfaces',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

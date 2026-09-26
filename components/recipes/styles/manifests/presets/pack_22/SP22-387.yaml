@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP22-387
+packId: pack_22
+name: Folded Ribbon Emblem
+styleAnchors:
+  - Folded Ribbon Emblem
+  - folded ribbon banner symbol
+  - single folded ribbon
+displayName: Folded Ribbon Emblem
+category: 14. Symbolic Graphic Illustration
+domain: folded ribbon banner symbol
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - symbolic-graphic-illustration
+  - folded-ribbon
+  - graphic-symbol
+  - portable-style-study
+visualDna:
+  aesthetic: 'Folded ribbon emblem: the subject wrapped or framed by a single flat folded ribbon with crisp turns and shaded folds, like a classic emblem banner without text.'
+  subject_treatment: Preserve the requested subject, count, pose and action while reducing it to a clear graphic symbol; wrap or frame it with a single flat folded ribbon.
+  color_and_tone: Bold ribbon colors such as crimson or teal with darker fold shading.
+  lighting_and_shadow: Flat shading on ribbon folds with simple highlights.
+  texture_and_material: Flat ribbon, crisp folds, forked tails and clean edges.
+  camera_and_composition: Centered emblem with the ribbon sweeping across it.
+  atmosphere_and_mood: Keep the requested mood with celebratory emblem pride.
+  rendering_and_quality: Clean graphic ribbon with convincing folds, kept consistent across the whole image.
+  creative_brief: "Folded ribbon emblem: the subject wrapped or framed by a single flat folded ribbon with crisp turns and shaded folds, like a classic emblem banner without text. Carry it through single folded ribbon, forked tails, crisp folds, blank banner. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: single folded ribbon; forked tails; crisp folds; blank banner
+avoidRules:
+  - readable banner text
+  - readable lettering
+  - real logo
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable banner text, readable lettering, real logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: symbolic-graphic-illustration
+  categoryName: 14. Symbolic Graphic Illustration
+  tags:
+    - trading-card-illustration
+    - symbolic-graphic-illustration
+    - folded-ribbon
+    - graphic-symbol
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: folded ribbon banner symbol

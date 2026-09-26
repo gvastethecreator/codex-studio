@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP22-366
+packId: pack_22
+name: Cabinet Card Portrait
+styleAnchors:
+  - Cabinet Card Portrait
+  - victorian studio portrait card
+  - sepia studio portrait
+displayName: Cabinet Card Portrait
+category: 13. Vintage Collectible Illustration
+domain: victorian studio portrait card
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - vintage-collectible-illustration
+  - cabinet-card
+  - vintage
+  - portable-style-study
+visualDna:
+  aesthetic: 'Cabinet card portrait: sepia studio portraits mounted on thick card with gilt edges, stiff formal poses, painted backdrops and faded silver tones.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action; pose the subject formally in front of a painted studio backdrop.
+  color_and_tone: Warm sepia and faded silver-brown tones with gilt card edges.
+  lighting_and_shadow: Soft north-window studio light with gentle falloff, kept consistent across the whole image.
+  texture_and_material: Faded photographic surface, painted backdrops, velvet chairs and gilt mount.
+  camera_and_composition: Formal centered full or half-length portrait on a mounted card.
+  atmosphere_and_mood: Keep the requested mood with solemn Victorian formality.
+  rendering_and_quality: Believable antique photo tone with a mounted card border.
+  creative_brief: "Cabinet card portrait: sepia studio portraits mounted on thick card with gilt edges, stiff formal poses, painted backdrops and faded silver tones. Carry it through sepia studio portrait, painted backdrop, gilt card mount, formal pose. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: sepia studio portrait; painted backdrop; gilt card mount; formal pose
+avoidRules:
+  - readable lettering or numbers
+  - real brand
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable lettering or numbers, real brand, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: vintage-collectible-illustration
+  categoryName: 13. Vintage Collectible Illustration
+  tags:
+    - trading-card-illustration
+    - vintage-collectible-illustration
+    - cabinet-card
+    - vintage
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: victorian studio portrait card

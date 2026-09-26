@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP22-377
+packId: pack_22
+name: Monoline Emblem Drawing
+styleAnchors:
+  - Monoline Emblem Drawing
+  - single-weight line emblem
+  - single line weight
+displayName: Monoline Emblem Drawing
+category: 14. Symbolic Graphic Illustration
+domain: single-weight line emblem
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - symbolic-graphic-illustration
+  - monoline-emblem
+  - graphic-symbol
+  - portable-style-study
+visualDna:
+  aesthetic: 'Monoline emblem drawing: the subject drawn as a compact emblem using one unbroken line weight throughout, rounded joins and balanced negative space inside a simple shape.'
+  subject_treatment: Preserve the requested subject, count, pose and action while reducing it to a clear graphic symbol; draw it with one consistent line weight inside a compact emblem shape.
+  color_and_tone: One line color on a flat contrasting background, such as cream on forest green.
+  lighting_and_shadow: No lighting; value comes only from line density and spacing.
+  texture_and_material: Uniform smooth line, rounded ends, clean joints and flat ground.
+  camera_and_composition: Centered emblem in a circle, shield or badge shape.
+  atmosphere_and_mood: Keep the requested mood with clean, calm, badge-like clarity.
+  rendering_and_quality: Precise single-weight line with even spacing everywhere, kept consistent across the whole image.
+  creative_brief: "Monoline emblem drawing: the subject drawn as a compact emblem using one unbroken line weight throughout, rounded joins and balanced negative space inside a simple shape. Carry it through single line weight, rounded joins, compact emblem, flat ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: single line weight; rounded joins; compact emblem; flat ground
+avoidRules:
+  - readable lettering
+  - real logo
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable lettering, real logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: symbolic-graphic-illustration
+  categoryName: 14. Symbolic Graphic Illustration
+  tags:
+    - trading-card-illustration
+    - symbolic-graphic-illustration
+    - monoline-emblem
+    - graphic-symbol
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: single-weight line emblem

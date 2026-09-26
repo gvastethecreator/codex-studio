@@ -243,4 +243,367 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP22-353',
+    name: 'Needle-Felt Figurine Scene',
+    displayName: 'Needle-Felt Figurine Scene',
+    styleAnchors: [
+      'Needle-Felt Figurine Scene',
+      'needle-felted wool figures',
+      'needle-felted wool',
+    ],
+    category: '12. Crafted Materials & Miniatures',
+    domain: 'needle-felted wool figures',
+    negativePrompt:
+      'plastic shine, real toy brand, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Needle-felt figurine scene: small figures sculpted from fuzzy needle-felted wool, soft rounded shapes with stray fibers, arranged on a tabletop miniature set.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action while rebuilding it as a handmade craft object; sculpt the subject from fuzzy felted wool with simplified rounded forms.',
+      color_and_tone: 'Soft natural wool colors with gentle pastel and earthy accents.',
+      lighting_and_shadow: 'Soft window light with gentle shadows and glowing fuzzy edges.',
+      texture_and_material: 'Dense felted wool, stray fibers, tiny bead eyes and soft seams.',
+      camera_and_composition: 'Close macro tabletop view with shallow depth of field.',
+      atmosphere_and_mood: 'Keep the requested mood with cozy, tender, handmade warmth.',
+      rendering_and_quality: 'Believable felted texture with crisp macro detail on the fibers.',
+      creative_brief:
+        "Needle-felt figurine scene: small figures sculpted from fuzzy needle-felted wool, soft rounded shapes with stray fibers, arranged on a tabletop miniature set. Carry it through needle-felted wool, stray fibers, bead eyes, tabletop macro. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'needle-felted wool; stray fibers; bead eyes; tabletop macro',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-354',
+    name: 'Matchbox Diorama World',
+    displayName: 'Matchbox Diorama World',
+    styleAnchors: [
+      'Matchbox Diorama World',
+      'tiny world inside a matchbox',
+      'scene inside matchbox',
+    ],
+    category: '12. Crafted Materials & Miniatures',
+    domain: 'tiny world inside a matchbox',
+    negativePrompt:
+      'readable matchbox labels, real toy brand, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Matchbox diorama world: a complete tiny scene built inside an open matchbox tray, with microscopic furniture, figures and lights crammed into the little box.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action while rebuilding it as a handmade craft object; build the subject as a tiny scene fitted inside an open matchbox.',
+      color_and_tone: 'Warm miniature colors inside plain cardboard box tones.',
+      lighting_and_shadow: 'Tiny internal lights glowing, soft shadows inside the box walls.',
+      texture_and_material:
+        'Cardboard box texture, miniature props, paint dots and fine wire details.',
+      camera_and_composition: 'Close macro view looking into the open matchbox on a table.',
+      atmosphere_and_mood: 'Keep the requested mood with secret, delightful smallness.',
+      rendering_and_quality: 'Crisp miniature detail with believable scale and depth.',
+      creative_brief:
+        "Matchbox diorama world: a complete tiny scene built inside an open matchbox tray, with microscopic furniture, figures and lights crammed into the little box. Carry it through scene inside matchbox, microscopic props, tiny lights, macro view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'scene inside matchbox; microscopic props; tiny lights; macro view',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-355',
+    name: 'Knitted Landscape Miniature',
+    displayName: 'Knitted Landscape Miniature',
+    styleAnchors: ['Knitted Landscape Miniature', 'landscape knitted from yarn', 'knitted hills'],
+    category: '12. Crafted Materials & Miniatures',
+    domain: 'landscape knitted from yarn',
+    negativePrompt:
+      'plastic look, real toy brand, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Knitted landscape miniature: whole landscapes knitted from yarn, rolling stockinette hills, bobble trees and ribbed rivers with tiny knitted figures.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action while rebuilding it as a handmade craft object; knit the subject and its setting from visible yarn stitches.',
+      color_and_tone: 'Soft wool greens, sky blues, cream and warm yarn accents.',
+      lighting_and_shadow: 'Soft daylight revealing every stitch and fuzzy edge.',
+      texture_and_material: 'Stockinette stitch, bobbles, cables, ribbing and yarn fuzz.',
+      camera_and_composition: 'Wide tabletop miniature view with gentle tilt-shift depth.',
+      atmosphere_and_mood: 'Keep the requested mood with cozy woolly charm.',
+      rendering_and_quality:
+        'Believable knitted textures with clear stitch detail, kept consistent across the whole image.',
+      creative_brief:
+        "Knitted landscape miniature: whole landscapes knitted from yarn, rolling stockinette hills, bobble trees and ribbed rivers with tiny knitted figures. Carry it through knitted hills, bobble trees, ribbed rivers, yarn fuzz. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'knitted hills; bobble trees; ribbed rivers; yarn fuzz',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-356',
+    name: 'Salt-Dough Ornaments',
+    displayName: 'Salt-Dough Ornaments',
+    styleAnchors: ['Salt-Dough Ornaments', 'baked salt-dough figures', 'puffy baked dough'],
+    category: '12. Crafted Materials & Miniatures',
+    domain: 'baked salt-dough figures',
+    negativePrompt:
+      'smooth plastic, real toy brand, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Salt-dough ornaments: figures shaped from baked salt dough, puffy lumpy forms, toasted edges and bright hand-painted details with a glossy varnish.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action while rebuilding it as a handmade craft object; shape the subject as a puffy baked salt-dough ornament with painted details.',
+      color_and_tone:
+        'Toasted beige dough with bright painted reds, greens and blues and glossy varnish.',
+      lighting_and_shadow: 'Soft warm light with gentle shadows under the puffy shapes.',
+      texture_and_material:
+        'Lumpy dough, fork marks, toasted edges, brush strokes and varnish shine.',
+      camera_and_composition: 'Flat-lay or hanging ornament framing with a simple background.',
+      atmosphere_and_mood: 'Keep the requested mood with homemade holiday charm.',
+      rendering_and_quality: 'Believable baked dough texture with cheerful hand painting.',
+      creative_brief:
+        "Salt-dough ornaments: figures shaped from baked salt dough, puffy lumpy forms, toasted edges and bright hand-painted details with a glossy varnish. Carry it through puffy baked dough, toasted edges, hand-painted details, glossy varnish. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'puffy baked dough; toasted edges; hand-painted details; glossy varnish',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-357',
+    name: 'Bent-Wire Figures',
+    displayName: 'Bent-Wire Figures',
+    styleAnchors: ['Bent-Wire Figures', 'figures bent from wire', 'continuous wire lines'],
+    category: '12. Crafted Materials & Miniatures',
+    domain: 'figures bent from wire',
+    negativePrompt:
+      'solid filled shapes, real toy brand, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Bent-wire figures: subjects formed from continuous bent wire lines in the air, like three-dimensional drawings casting delicate shadows on a wall.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action while rebuilding it as a handmade craft object; bend the subject from continuous wire lines that capture its outline and gesture.',
+      color_and_tone: 'Silver, copper or black wire against pale walls with crisp shadows.',
+      lighting_and_shadow: 'Side light casting sharp shadow drawings behind the wire forms.',
+      texture_and_material:
+        'Twisted wire joints, coiled details, smooth bends and metallic glints.',
+      camera_and_composition:
+        'Wire figure against a plain wall with its shadow as a second drawing.',
+      atmosphere_and_mood: 'Keep the requested mood with light, airy, playful elegance.',
+      rendering_and_quality: 'Clean continuous wire lines with believable metal bends.',
+      creative_brief:
+        "Bent-wire figures: subjects formed from continuous bent wire lines in the air, like three-dimensional drawings casting delicate shadows on a wall. Carry it through continuous wire lines, shadow drawings, twisted joints, airy form. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'continuous wire lines; shadow drawings; twisted joints; airy form',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-358',
+    name: 'Clothespin Peg People',
+    displayName: 'Clothespin Peg People',
+    styleAnchors: ['Clothespin Peg People', 'wooden peg doll figures', 'wooden peg bodies'],
+    category: '12. Crafted Materials & Miniatures',
+    domain: 'wooden peg doll figures',
+    negativePrompt:
+      'plastic toys, real toy brand, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Clothespin peg people: characters made from old wooden clothespins and peg dolls, painted faces, scrap fabric clothes and yarn hair.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action while rebuilding it as a handmade craft object; turn the characters into painted wooden peg dolls with scrap costumes.',
+      color_and_tone: 'Natural wood tones with bright painted clothes and rosy painted cheeks.',
+      lighting_and_shadow: 'Warm soft light with small shadows at the peg bases.',
+      texture_and_material: 'Wood grain, painted details, fabric scraps, yarn hair and glue.',
+      camera_and_composition: 'Tabletop scene with the peg people standing in a row or group.',
+      atmosphere_and_mood: 'Keep the requested mood with humble homemade charm.',
+      rendering_and_quality: 'Believable handmade peg craft with clear painted faces.',
+      creative_brief:
+        "Clothespin peg people: characters made from old wooden clothespins and peg dolls, painted faces, scrap fabric clothes and yarn hair. Carry it through wooden peg bodies, painted faces, scrap fabric clothes, yarn hair. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'wooden peg bodies; painted faces; scrap fabric clothes; yarn hair',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-359',
+    name: 'Terrarium Tiny World',
+    displayName: 'Terrarium Tiny World',
+    styleAnchors: [
+      'Terrarium Tiny World',
+      'miniature world inside glass terrarium',
+      'glass terrarium',
+    ],
+    category: '12. Crafted Materials & Miniatures',
+    domain: 'miniature world inside glass terrarium',
+    negativePrompt:
+      'no glass enclosure, real toy brand, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Terrarium tiny world: a miniature landscape growing inside a glass jar or terrarium, real moss and pebbles with tiny figures and buildings.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action while rebuilding it as a handmade craft object; place the subject as a tiny scene inside a glass terrarium.',
+      color_and_tone: 'Lush moss greens, earthy browns and glass reflections.',
+      lighting_and_shadow: 'Soft light through glass with reflections and condensation.',
+      texture_and_material: 'Real moss, pebbles, soil layers, glass curvature and tiny props.',
+      camera_and_composition: 'Close view through curved glass with the tiny world centered.',
+      atmosphere_and_mood: 'Keep the requested mood with enclosed secret-garden wonder.',
+      rendering_and_quality:
+        'Believable miniature scale with crisp glass reflections, kept consistent across the whole image.',
+      creative_brief:
+        "Terrarium tiny world: a miniature landscape growing inside a glass jar or terrarium, real moss and pebbles with tiny figures and buildings. Carry it through glass terrarium, real moss, tiny figures, glass reflections. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'glass terrarium; real moss; tiny figures; glass reflections',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-360',
+    name: 'Seed-Bead Figures',
+    displayName: 'Seed-Bead Figures',
+    styleAnchors: ['Seed-Bead Figures', 'figures woven from tiny beads', 'woven seed beads'],
+    category: '12. Crafted Materials & Miniatures',
+    domain: 'figures woven from tiny beads',
+    negativePrompt:
+      'smooth solid surfaces, real toy brand, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Seed-bead figures: creatures and objects woven from thousands of tiny glass seed beads, glittering colors and beaded wire armatures.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action while rebuilding it as a handmade craft object; weave the subject from tiny colored glass beads on wire.',
+      color_and_tone:
+        'Glittering jewel-colored beads with iridescent highlights, kept consistent across the whole image.',
+      lighting_and_shadow: 'Sparkling light on bead surfaces with soft shadows.',
+      texture_and_material: 'Rows of seed beads, wire threads, glass shine and faceted beads.',
+      camera_and_composition: 'Macro view of the beaded object on a plain surface.',
+      atmosphere_and_mood: 'Keep the requested mood with jewel-like handmade sparkle.',
+      rendering_and_quality:
+        'Precise bead detail with believable glass reflections, kept consistent across the whole image.',
+      creative_brief:
+        "Seed-bead figures: creatures and objects woven from thousands of tiny glass seed beads, glittering colors and beaded wire armatures. Carry it through woven seed beads, glass sparkle, wire armature, jewel colors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'woven seed beads; glass sparkle; wire armature; jewel colors',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-361',
+    name: 'Acorn-and-Twig Figures',
+    displayName: 'Acorn-and-Twig Figures',
+    styleAnchors: ['Acorn-and-Twig Figures', 'nature craft figures', 'acorn heads'],
+    category: '12. Crafted Materials & Miniatures',
+    domain: 'nature craft figures',
+    negativePrompt:
+      'plastic materials, real toy brand, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Acorn-and-twig figures: tiny characters built from acorns, twigs, leaves, pinecones and seed pods, glued together into woodland creatures and scenes.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action while rebuilding it as a handmade craft object; assemble the subject from acorns, twigs, leaves and seeds.',
+      color_and_tone:
+        'Warm browns, mossy greens and autumn oranges, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Soft forest light with dappled shadows, kept consistent across the whole image.',
+      texture_and_material: 'Acorn caps, rough twigs, dried leaves, pinecone scales and glue dots.',
+      camera_and_composition: 'Low macro view on moss or bark with a forest background.',
+      atmosphere_and_mood: 'Keep the requested mood with whimsical autumn wonder.',
+      rendering_and_quality:
+        'Believable natural materials with clear assembled forms, kept consistent across the whole image.',
+      creative_brief:
+        "Acorn-and-twig figures: tiny characters built from acorns, twigs, leaves, pinecones and seed pods, glued together into woodland creatures and scenes. Carry it through acorn heads, twig limbs, leaf clothing, forest floor setting. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'acorn heads; twig limbs; leaf clothing; forest floor setting',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-362',
+    name: 'Egg-Carton Creatures',
+    displayName: 'Egg-Carton Creatures',
+    styleAnchors: ['Egg-Carton Creatures', 'creatures from egg cartons', 'egg-carton cups'],
+    category: '12. Crafted Materials & Miniatures',
+    domain: 'creatures from egg cartons',
+    negativePrompt:
+      'realistic creature, real toy brand, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Egg-carton creatures: monsters and animals made from cut and painted cardboard egg cartons, lumpy pulp textures and bright paint with googly-eye charm.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action while rebuilding it as a handmade craft object; build the subject from cut egg-carton cups and pulp shapes painted brightly.',
+      color_and_tone:
+        'Bright poster-paint colors over grey molded pulp, kept consistent across the whole image.',
+      lighting_and_shadow: 'Soft table light with shadows inside the carton cups.',
+      texture_and_material: 'Molded paper pulp, cut edges, paint drips, glue and googly eyes.',
+      camera_and_composition: 'Tabletop craft view with the creature in the center.',
+      atmosphere_and_mood: 'Keep the requested mood with silly handmade fun.',
+      rendering_and_quality: 'Believable pulp texture with cheerful paint and glue details.',
+      creative_brief:
+        "Egg-carton creatures: monsters and animals made from cut and painted cardboard egg cartons, lumpy pulp textures and bright paint with googly-eye charm. Carry it through egg-carton cups, molded pulp, bright paint, googly eyes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'egg-carton cups; molded pulp; bright paint; googly eyes',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-363',
+    name: 'Paper-Mache Figures',
+    displayName: 'Paper-Mache Figures',
+    styleAnchors: ['Paper-Mache Figures', 'painted paper mache figures', 'layered paper strips'],
+    category: '12. Crafted Materials & Miniatures',
+    domain: 'painted paper mache figures',
+    negativePrompt:
+      'smooth plastic, real toy brand, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Paper-mache figures: bold rounded figures built from layered paper strips and paste, painted in bright festival colors with a slightly bumpy handmade surface.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action while rebuilding it as a handmade craft object; build the subject as a painted paper mache figure with bold rounded forms.',
+      color_and_tone: 'Bright festival colors of magenta, yellow, turquoise and orange.',
+      lighting_and_shadow: 'Warm daylight with soft shadows under the rounded forms.',
+      texture_and_material: 'Bumpy paper strip layers, paste texture, bold paint and patterns.',
+      camera_and_composition: 'Full figure view, possibly on a festival table or shelf.',
+      atmosphere_and_mood: 'Keep the requested mood with joyful festival energy.',
+      rendering_and_quality:
+        'Believable handmade surface with bold painted decoration, kept consistent across the whole image.',
+      creative_brief:
+        "Paper-mache figures: bold rounded figures built from layered paper strips and paste, painted in bright festival colors with a slightly bumpy handmade surface. Carry it through layered paper strips, bumpy surface, bright festival paint, bold forms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'layered paper strips; bumpy surface; bright festival paint; bold forms',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-364',
+    name: 'Walnut-Shell Worlds',
+    displayName: 'Walnut-Shell Worlds',
+    styleAnchors: ['Walnut-Shell Worlds', 'tiny scenes inside walnut shells', 'open walnut shell'],
+    category: '12. Crafted Materials & Miniatures',
+    domain: 'tiny scenes inside walnut shells',
+    negativePrompt:
+      'large scale, real toy brand, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Walnut-shell worlds: tiny detailed scenes built inside open walnut shell halves, like secret rooms or landscapes hidden in a nut.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action while rebuilding it as a handmade craft object; place the subject as a tiny scene inside an open walnut shell.',
+      color_and_tone: 'Warm walnut browns with small bright miniature color accents.',
+      lighting_and_shadow: 'Soft light with tiny glowing lamps inside the shell.',
+      texture_and_material: 'Ridged walnut shell, miniature furniture, moss and fine paint.',
+      camera_and_composition: 'Macro view of the open shell on a wooden surface.',
+      atmosphere_and_mood: 'Keep the requested mood with secret, magical smallness.',
+      rendering_and_quality:
+        'Crisp miniature detail with believable shell texture, kept consistent across the whole image.',
+      creative_brief:
+        "Walnut-shell worlds: tiny detailed scenes built inside open walnut shell halves, like secret rooms or landscapes hidden in a nut. Carry it through open walnut shell, tiny scene inside, miniature lamps, macro view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'open walnut shell; tiny scene inside; miniature lamps; macro view',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

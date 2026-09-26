@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP22-351
+packId: pack_22
+name: Chintz Floral Surround
+styleAnchors:
+  - Chintz Floral Surround
+  - dense chintz flower surround
+  - dense chintz flowers
+displayName: Chintz Floral Surround
+category: 11. Ornament & Symbolic Illustration
+domain: dense chintz flower surround
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - ornament-and-symbolic-illustration
+  - chintz-floral
+  - ornament
+  - portable-style-study
+visualDna:
+  aesthetic: 'Chintz floral surround: the subject nestled in dense glossy chintz flowers, peonies, roses and birds packed edge to edge like an old printed fabric.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action at the center; surround the subject with a dense packed field of printed-looking flowers.
+  color_and_tone: Rich rose pinks, leaf greens and cream on dark or pale grounds.
+  lighting_and_shadow: Soft printed shading with glossy highlights on petals.
+  texture_and_material: Dense overlapping flowers, birds, leaves and glazed fabric sheen.
+  camera_and_composition: All-over floral pattern with the subject in a clear central space.
+  atmosphere_and_mood: Keep the requested mood with lush, cozy, romantic abundance.
+  rendering_and_quality: Densely detailed floral rendering with a readable central subject.
+  creative_brief: "Chintz floral surround: the subject nestled in dense glossy chintz flowers, peonies, roses and birds packed edge to edge like an old printed fabric. Carry it through dense chintz flowers, packed pattern, glossy petals, central subject. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: dense chintz flowers; packed pattern; glossy petals; central subject
+avoidRules:
+  - sparse empty background
+  - readable lettering
+  - religious symbols by default
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: sparse empty background, readable lettering, religious symbols by default, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: ornament-and-symbolic-illustration
+  categoryName: 11. Ornament & Symbolic Illustration
+  tags:
+    - trading-card-illustration
+    - ornament-and-symbolic-illustration
+    - chintz-floral
+    - ornament
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: dense chintz flower surround

@@ -1,0 +1,256 @@
+import type { Create, Spec } from '../tools/apply';
+import { STYLE_AVOID } from './_style';
+import { dna } from './_strict';
+
+// Trading-card digital rendering methods: named computer-graphics looks as card art. Eight
+// originals get card briefs; twelve new studies add inverted-hull outlines, matcap previews,
+// normal-map color, ray-marched fractals, gradient maps, soft clay renders, jittery retro low-poly,
+// signed-distance blends, baked lightmaps, mirror floors, procedural noise terrain and fresnel glow.
+const study = (
+  name: string,
+  domain: string,
+  tag: string,
+  fields: Parameters<typeof dna>[0],
+  avoid: string[],
+  briefs: [string, string, string],
+): Create => ({
+  name,
+  domain,
+  tags: [tag, 'digital-render', 'portable-style-study'],
+  dna: dna(fields),
+  avoid: [...avoid, 'interface overlay', ...STYLE_AVOID],
+  briefs,
+});
+
+const keep = 'Preserve the requested identity, count, pose and action';
+
+const spec: Spec = {
+  pack: 'pack_22',
+  category: '15. Digital Rendering Methods',
+  updates: {
+    'SP22-213': { briefs: [
+      'A knight guards a castle bridge at dusk in carefully placed pixel clusters, every armor highlight a deliberate group of three bright pixels. No readable text or logo.',
+      'A witch brews a potion in a cozy pixel kitchen, the steam and firelight built from logical color clusters. No readable text or logo.',
+      'A dragon sleeps on a gold pile drawn in clean pixel clusters with no stray single pixels. No readable text or logo.',
+    ] },
+    'SP22-214': { briefs: [
+      'A foggy harbor at night is painted with selective dithering only in the mist, while the boats and lighthouse stay clean flat color. No readable text or logo.',
+      'A ghost drifts through a library, its translucent body the only dithered area in the scene. No readable text or logo.',
+      'A sunset over the desert is dithered in the sky gradient while the dunes stay solid. No readable text or logo.',
+    ] },
+    'SP22-215': { briefs: [
+      'A fox hunts in a snowy forest rendered in matte low-polygon facets, every triangle softly lit with no specular shine. No readable text or logo.',
+      "Standing on a faceted cliff above a matte low-poly sea, a lighthouse throws a polygonal beam of flat triangles across the waves toward a tiny faceted rowboat. No readable text or logo.",
+      "Over rolling hills cut into flat triangles at dawn, a striped hot-air balloon casts a sharp shadow across the fields where a faceted farmer waves both arms. No readable text or logo.",
+    ] },
+    'SP22-216': { briefs: [
+      "High above the clouds, a tiny floating island built from cubes spills a waterfall off its edge into clouds made of soft white blocks, a cube cow grazing near the drop. No readable text or logo.",
+      "Coiled around a crumbling voxel tower, a blocky sea serpent rests its cube head on the battlements, each scale a single glowing teal cube catching the moonlight. No readable text or logo.",
+      "Glowing at night beside a still bay, a voxel fishing village hangs cube lanterns from every roof, their warm light reflected as stacked squares in the dark voxel water. No readable text or logo.",
+    ] },
+    'SP22-217': { briefs: [
+      'A whale breaches in smooth form-driven vector gradients that wrap around its body like polished plastic under studio light. No readable text or logo.',
+      'A cat astronaut floats in space rendered in clean vector gradients following every curve of her helmet. No readable text or logo.',
+      "Sitting on a glossy counter, a bowl of fruit glows in smooth vector gradients that wrap around every pear, plum and orange, one banana peeling itself open with shy curiosity. No readable text or logo.",
+    ] },
+    'SP22-218': { briefs: [
+      'A jellyfish made of continuous synthetic volume drifts in a void, its body one seamless glossy digital form with no visible seams. No readable text or logo.',
+      'A sculpture of a running horse is rendered as one continuous synthetic surface of pearly white. No readable text or logo.',
+      "Blinking slowly on a pastel ground, a soft abstract creature with no clear head or tail stretches its body as one smooth continuous digital volume, pearly and seamless. No readable text or logo.",
+    ] },
+    'SP22-219': { briefs: [
+      'A glass hummingbird hovers at a real flower, rendered with targeted glass refraction only in its body while the rest of the scene stays matte. No readable text or logo.',
+      'A crystal crown sits on a velvet cushion, the glass rendering focused on the crown alone. No readable text or logo.',
+      'A glass fish swims in a bowl of glass water, both refracting the kitchen behind them. No readable text or logo.',
+    ] },
+    'SP22-220': { briefs: [
+      'A stone giant rises from a hillside, his skin displaced into deep masked crags only on his shoulders and fists. No readable text or logo.',
+      "Cracking open on a velvet pillow, a giant stone egg splits with digital displacement concentrated only along its fracture lines, glowing lava pushing through the gaps. No readable text or logo.",
+      "Deep in an old forest, a tree trunk slowly morphs into a sleepy face where masked displacement pushes the bark outward into a nose, brows and a yawning mouth. No readable text or logo.",
+    ] },
+  },
+  creates: [
+    study('Inverted-Hull Toon Outline', 'game toon shader with hull outline', 'inverted-hull', {
+      aesthetic: 'Inverted-hull toon outline: 3D characters rendered with flat toon shading and thick black outlines generated around their silhouette, like a stylized cel-shaded game.',
+      subject_treatment: `${keep}; render the subject as a 3D model with two-tone toon shading and thick outlines.`,
+      color_and_tone: 'Bright flat base colors with one darker shadow tone and clean highlights.',
+      lighting_and_shadow: 'Hard two-step toon lighting with crisp shadow terminators.',
+      texture_and_material: 'Smooth untextured surfaces, thick black silhouette outlines and small specular dots.',
+      camera_and_composition: 'Game-like three-quarter camera with the character full body.',
+      atmosphere_and_mood: 'Keep the requested mood with bright stylized game energy.',
+      rendering_and_quality: 'Clean real-time toon render with consistent outline thickness.',
+      key_features: 'thick silhouette outlines; two-tone toon shading; 3D model; game camera',
+    }, [], [
+      'A pirate captain stands on a tiny island with a treasure chest, rendered as a cel-shaded 3D game character with thick black outlines around every shape. No readable text or logo.',
+      "Toddling across a grassy hill with a stick in its mouth, a round baby griffin is rendered in bright two-tone toon shading with thick black outlines around every feather tuft. No readable text or logo.",
+      "Speeding through a toon-shaded town square, a robot mailman on a scooter tosses letters to waving citizens, every character outlined in thick black game-style hull lines. No readable text or logo.",
+    ]),
+    study('Matcap Sculpt Preview', 'digital sculpting matcap preview', 'matcap-sculpt', {
+      aesthetic: 'Matcap sculpt preview: a digital sculpture shown in a sculpting program\'s material-capture preview, one uniform shiny clay or red wax material revealing every sculpted form.',
+      subject_treatment: `${keep}; render the subject as a single-material digital sculpt preview.`,
+      color_and_tone: 'Single matcap material such as red wax, grey clay or pearly white.',
+      lighting_and_shadow: 'Baked matcap lighting with bright rim and soft cavity shadows.',
+      texture_and_material: 'Sculpted brush strokes, crisp creases and smooth surfaces.',
+      camera_and_composition: 'Centered sculpture on a plain dark gradient background.',
+      atmosphere_and_mood: 'Keep the requested mood with the focus of a work in progress.',
+      rendering_and_quality: "Clean sculpt preview with visible sculpting detail, kept consistent across the whole image.",
+      key_features: 'single matcap material; sculpt strokes; dark gradient; work-in-progress',
+    }, ['full color textures'], [
+      'A grumpy orc chef holding a ladle is shown as a red-wax digital sculpt preview, every wrinkle and brush stroke of the sculpting catching the glossy light. No readable text or logo.',
+      'A dragon skull with curling horns is sculpted in pearly white matcap on a dark background. No readable text or logo.',
+      "Sitting cross-legged on a mushroom, a fat frog wizard with a droopy hat is shown as a grey clay matcap sculpt, every fold of his robe and wart on his chin crisply sculpted. No readable text or logo.",
+    ]),
+    study('Normal-Map Color Render', 'surface normals as color', 'normal-map-color', {
+      aesthetic: 'Normal-map color render: the subject rendered as a surface-normal pass, every direction of its surface shown as pastel violet, teal and pink gradients.',
+      subject_treatment: `${keep}; render the subject so its surface directions become normal-map colors.`,
+      color_and_tone: 'Periwinkle violets, teal greens and pink reds blending across surfaces.',
+      lighting_and_shadow: "No lighting; color alone shows surface direction, kept consistent across the whole image.",
+      texture_and_material: 'Smooth normal gradients, crisp edge transitions and fine surface bumps.',
+      camera_and_composition: 'Clean centered object on a flat violet background.',
+      atmosphere_and_mood: 'Keep the requested mood with technical surreal beauty.',
+      rendering_and_quality: "Accurate normal-pass coloring with smooth transitions, kept consistent across the whole image.",
+      key_features: 'normal-map colors; violet teal pink; surface direction; flat violet ground',
+    }, [], [
+      'A sleeping cat curled on a cushion is rendered as a normal-map pass, its fur ridges glowing periwinkle, teal and pink by surface direction. No readable text or logo.',
+      'A knight\'s helmet shows every dent as a shift from violet to teal in a normal pass. No readable text or logo.',
+      "Spiraling on a flat violet ground, a large seashell is rendered in smooth normal-map gradients, its ridges shifting from periwinkle to teal to pink as each surface turns. No readable text or logo.",
+    ]),
+    study('Ray-Marched Fractal Forms', 'raymarched fractal geometry render', 'raymarched-fractal', {
+      aesthetic: 'Ray-marched fractal forms: infinitely detailed mathematical fractal structures rendered with soft glow and fog, alien architecture of repeating spirals and branches.',
+      subject_treatment: `${keep}; build the subject or its world from repeating fractal geometry.`,
+      color_and_tone: 'Glowing gradients of teal, gold and magenta fading into fog.',
+      lighting_and_shadow: "Soft ambient occlusion, glow and distance fog, kept consistent across the whole image.",
+      texture_and_material: 'Self-similar repeating forms, infinite detail and smooth surfaces.',
+      camera_and_composition: 'Deep perspective into fractal space with the subject in the foreground.',
+      atmosphere_and_mood: 'Keep the requested mood with hypnotic alien vastness.',
+      rendering_and_quality: "Clean infinite fractal detail with smooth glow, kept consistent across the whole image.",
+      key_features: 'fractal geometry; infinite detail; distance fog; glowing gradients',
+    }, [], [
+      'A lone traveler stands at the edge of a fractal canyon whose walls repeat into smaller and smaller glowing spirals forever. No readable text or logo.',
+      "Growing from fractal branches that divide endlessly into golden arches, a vast cathedral fades into fog, each arch containing smaller arches all the way down to glowing dust. No readable text or logo.",
+      "Swimming through a fog of repeating fractal coral, a whale glides past spirals that branch into smaller spirals forever, lit by soft teal and magenta glow. No readable text or logo.",
+    ]),
+    study('Gradient-Map Painting', 'value remapped to gradient palette', 'gradient-map', {
+      aesthetic: 'Gradient-map painting: a digital painting where all values are remapped onto a bold custom gradient, like deep indigo shadows to peach midtones to cream highlights.',
+      subject_treatment: `${keep}; paint the subject in values that are remapped onto one bold gradient.`,
+      color_and_tone: 'A single multi-stop gradient such as indigo to coral to cream across all values.',
+      lighting_and_shadow: 'Clear lighting whose values determine the gradient colors.',
+      texture_and_material: 'Painterly brush textures unified by the gradient palette.',
+      camera_and_composition: 'Preserve the requested framing with strong value design.',
+      atmosphere_and_mood: 'Keep the requested mood with unified cinematic color.',
+      rendering_and_quality: "Clean value structure with smooth gradient mapping, kept consistent across the whole image.",
+      key_features: 'single gradient palette; value remapping; unified color; painterly texture',
+    }, [], [
+      'A lighthouse keeper watches a storm in a painting where every value is mapped from deep indigo shadows through coral midtones to cream lightning. No readable text or logo.',
+      'A cat sits on a rooftop at night painted in a gradient from black to teal to gold. No readable text or logo.',
+      "Soaring over jagged mountains at sunset, a lone eagle is painted in values mapped from deep violet shadows through orange midtones to pale yellow highlights. No readable text or logo.",
+    ]),
+    study('Soft Clay Digital Render', '3d render of plasticine look', 'soft-clay-render', {
+      aesthetic: 'Soft clay digital render: 3D renders that imitate soft plasticine, slightly lumpy forms, fingerprints and warm soft studio light.',
+      subject_treatment: `${keep}; render the subject as soft plasticine-like 3D shapes.`,
+      color_and_tone: "Warm saturated clay colors with soft shadows, kept consistent across the whole image.",
+      lighting_and_shadow: 'Soft studio key light with gentle ambient occlusion.',
+      texture_and_material: 'Subtle fingerprints, lumpy surfaces, soft creases and matte finish.',
+      camera_and_composition: 'Tabletop miniature framing with shallow depth of field.',
+      atmosphere_and_mood: 'Keep the requested mood with cozy playful charm.',
+      rendering_and_quality: "Clean render with believable clay imperfections, kept consistent across the whole image.",
+      key_features: 'plasticine look; fingerprints; soft studio light; tabletop scale',
+    }, ['glossy plastic'], [
+      "Flipping pancakes in a tiny kitchen, a round walrus chef with fingerprints visible in his belly and a lumpy moustache works under warm soft studio light. No readable text or logo.",
+      "Planting a plain flag on a lumpy clay moon, a clay-look astronaut with fingerprints on her helmet waves to a small clay Earth rising over the crater edge. No readable text or logo.",
+      "Racing across a clay garden table, a family of soft snails in tiny helmets leaves glossy trails, the lead snail slightly squashed where someone pressed too hard. No readable text or logo.",
+    ]),
+    study('Jittery Low-Poly Retro Render', 'early console 3d render', 'retro-lowpoly', {
+      aesthetic: 'Jittery low-poly retro render: early console 3D with very low polygon counts, blurry low-resolution textures, wobbly vertices and heavy distance fog.',
+      subject_treatment: `${keep}; render the subject with very few polygons and low-resolution textures.`,
+      color_and_tone: 'Murky limited colors with dithered gradients and dark fog.',
+      lighting_and_shadow: "Simple vertex lighting and blob shadows, kept consistent across the whole image.",
+      texture_and_material: 'Pixelated warped textures, jagged edges and affine texture wobble.',
+      camera_and_composition: "Low-resolution game camera with near fog clipping, kept consistent across the whole image.",
+      atmosphere_and_mood: 'Keep the requested mood with eerie nostalgic unease.',
+      rendering_and_quality: 'Authentic retro 3D artifacts, never clean modern rendering.',
+      key_features: 'very low poly; blurry warped textures; distance fog; blob shadows',
+    }, ['modern high-poly'], [
+      'A lone knight walks through a foggy forest rendered with blocky low-poly trees, blurry warped textures and a round blob shadow under his feet. No readable text or logo.',
+      "Looming in heavy distance fog at the end of a gravel path, a haunted mansion wobbles in low-res warped textures, a single window flickering with blocky orange light. No readable text or logo.",
+      "Hovering over a low-poly lake at night, a jagged winged bat-beast flaps its triangle wings, its textures pixelated and its blob shadow sliding across the water. No readable text or logo.",
+    ]),
+    study('Signed-Distance Soft Blend', 'smoothly blended shape render', 'sdf-blend', {
+      aesthetic: 'Signed-distance soft blend: rendered shapes that melt smoothly into each other with soft unions, like glossy blobs and spheres merging into creatures.',
+      subject_treatment: `${keep}; build the subject from simple shapes that blend smoothly into one another.`,
+      color_and_tone: 'Soft pastel or glossy candy colors with smooth gradients.',
+      lighting_and_shadow: 'Soft studio light with smooth ambient occlusion in the blends.',
+      texture_and_material: 'Glossy smooth surfaces, soft blended seams and no texture.',
+      camera_and_composition: "Centered subject on a clean gradient ground, kept consistent across the whole image.",
+      atmosphere_and_mood: 'Keep the requested mood with soft playful fluidity.',
+      rendering_and_quality: "Clean seamless blends with smooth shading, kept consistent across the whole image.",
+      key_features: 'smooth shape unions; glossy blobs; soft seams; gradient ground',
+    }, [], [
+      'A bear made of glossy pastel spheres that melt smoothly into each other waves from a clean pink background. No readable text or logo.',
+      "Built from blending capsules and spheres, a glossy sea otter curls into a smooth loop around a floating pearl, every limb melting softly into the next. No readable text or logo.",
+      "Waving from a clean blue ground, a snowman of soft merging glossy balls wears a blob hat and blob scarf, his carrot nose melting smoothly into his round face. No readable text or logo.",
+    ]),
+    study('Baked Lightmap Look', 'game baked lighting environment', 'baked-lightmap', {
+      aesthetic: 'Baked lightmap look: game environments with soft pre-baked lighting, gentle color bleeding and static shadows, cozy and slightly painterly.',
+      subject_treatment: `${keep}; place the subject in a game-like space with soft baked lighting.`,
+      color_and_tone: 'Warm baked light with soft color bleeding from walls and floors.',
+      lighting_and_shadow: "Soft static shadows and gentle bounce light, kept consistent across the whole image.",
+      texture_and_material: 'Tiled game textures, soft light gradients and slightly blurred shadows.',
+      camera_and_composition: "Game environment framing with clear readable spaces, kept consistent across the whole image.",
+      atmosphere_and_mood: 'Keep the requested mood with cozy explorable warmth.',
+      rendering_and_quality: 'Consistent baked lighting with no harsh real-time artifacts.',
+      key_features: 'soft baked shadows; color bleeding; game textures; cozy spaces',
+    }, ['readable signs'], [
+      'A tavern interior glows with soft baked lighting, warm lamplight bleeding orange across wooden walls as a bard tunes a lute by the fire. No readable text or logo.',
+      "Pooling across the floor of a castle library, warm sunlight bleeds gold up the shelves in static soft gradients while a cat sleeps inside a single bright square of light. No readable text or logo.",
+      "Deep in a forest shrine, static baked green light filters through trees onto a mossy stone altar where a fox spirit sits, the shadows soft and perfectly still. No readable text or logo.",
+    ]),
+    study('Mirror-Floor Reflection Render', 'glossy reflective floor render', 'mirror-floor', {
+      aesthetic: 'Mirror-floor reflection render: subjects standing on a perfectly glossy reflective floor that doubles them below, clean studio or showroom lighting.',
+      subject_treatment: `${keep}; place the subject on a glossy floor that reflects it cleanly.`,
+      color_and_tone: 'Dark or pastel studio tones with bright reflections.',
+      lighting_and_shadow: 'Studio lights reflected in the floor with soft falloff.',
+      texture_and_material: "Mirror-like floor, crisp reflections and polished surfaces, kept consistent across the whole image.",
+      camera_and_composition: "Low camera angle emphasizing the reflection, kept consistent across the whole image.",
+      atmosphere_and_mood: 'Keep the requested mood with sleek showroom drama.',
+      rendering_and_quality: "Clean accurate reflections with subtle fade, kept consistent across the whole image.",
+      key_features: 'mirror floor; doubled reflection; studio lights; low angle',
+    }, ['matte floor'], [
+      'A knight on a horse stands on a perfectly glossy black floor, the whole figure doubled beneath like a second knight standing upside down. No readable text or logo.',
+      "Glowing on a perfectly glossy mirror floor, a crystal stag statue stands under a single spotlight, its reflection shimmering below with faint prismatic light. No readable text or logo.",
+      "Parked on a showroom mirror floor under hanging spotlights, a vintage race car with a sleeping pug in the driver seat is doubled perfectly in the gloss below. No readable text or logo.",
+    ]),
+    study('Procedural Noise Terrain', 'noise-generated landscape render', 'noise-terrain', {
+      aesthetic: 'Procedural noise terrain: landscapes generated from layered noise, eroded mountains, rolling valleys and strange repeating ridges with atmospheric depth.',
+      subject_treatment: `${keep}; place the subject on a vast procedurally generated terrain.`,
+      color_and_tone: 'Naturalistic or alien palettes graded by altitude and slope.',
+      lighting_and_shadow: 'Low sun raking across ridges with atmospheric haze.',
+      texture_and_material: 'Eroded rock, noise ridges, flow channels and snowy peaks.',
+      camera_and_composition: 'Wide aerial or ground-level vista with depth layers.',
+      atmosphere_and_mood: 'Keep the requested mood with vast generated wilderness.',
+      rendering_and_quality: "Clean terrain rendering with believable erosion detail, kept consistent across the whole image.",
+      key_features: 'layered noise terrain; eroded ridges; atmospheric haze; vast vista',
+    }, [], [
+      'A tiny explorer stands on a ridge overlooking endless procedurally generated mountains, eroded valleys fading into violet haze at sunrise. No readable text or logo.',
+      "Soaring over an alien terrain of repeating ridges colored by altitude, a flock of silver birds casts tiny shadows across eroded valleys that stretch to the horizon. No readable text or logo.",
+      "Perched on a snowy peak of generated noise terrain, a lone cabin sends up a thin line of smoke as eroded ridges fall away into layers of blue haze. No readable text or logo.",
+    ]),
+    study('Fresnel Glow Shader', 'edge glow fresnel render', 'fresnel-glow', {
+      aesthetic: 'Fresnel glow shader: 3D subjects rendered with glowing edges where surfaces turn away from the camera, ghostly and luminous against dark backgrounds.',
+      subject_treatment: `${keep}; render the subject with glowing rims wherever its surface turns away.`,
+      color_and_tone: 'Dark backgrounds with glowing cyan, violet or gold edges.',
+      lighting_and_shadow: 'Rim glow driven by viewing angle, faint interior fill.',
+      texture_and_material: "Smooth surfaces, glowing edges and subtle transparency, kept consistent across the whole image.",
+      camera_and_composition: 'Centered subject against black or deep blue space.',
+      atmosphere_and_mood: 'Keep the requested mood with ghostly holographic mystery.',
+      rendering_and_quality: "Clean shader glow with accurate edge falloff, kept consistent across the whole image.",
+      key_features: 'fresnel rim glow; dark background; ghostly transparency; smooth surfaces',
+    }, [], [
+      'A ghost whale swims through dark space, its outline glowing cyan where its body curves away from the camera and its center almost transparent. No readable text or logo.',
+      "Rising from a stone tomb in a dark crypt, a knight's spirit appears as a glowing violet fresnel shell, his armor edges bright while his chest is almost invisible. No readable text or logo.",
+      "Sitting on a black ground, a golden ghost cat glows only along its edges, whiskers and tail tip, its center so transparent that the darkness shows straight through. No readable text or logo.",
+    ]),
+  ],
+};
+
+export default spec;

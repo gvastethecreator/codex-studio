@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP22-323
+packId: pack_22
+name: Sunny Magazine Cartoon
+styleAnchors:
+  - Sunny Magazine Cartoon
+  - cheerful magazine illustration cartoon
+  - rounded cartoon characters
+displayName: Sunny Magazine Cartoon
+category: 9. Comic & Cartoon Illustration
+domain: cheerful magazine illustration cartoon
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - comic-and-cartoon-illustration
+  - sunny-magazine
+  - comic
+  - portable-style-study
+visualDna:
+  aesthetic: 'Sunny magazine cartoon: cheerful mid-century magazine cartoon style with rounded characters, clean lines, sunny palettes and gentle comedic situations.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original character designs; draw the subject as a friendly rounded cartoon in a gently funny situation.
+  color_and_tone: Sunny yellows, sky blues, tomato reds and soft cream backgrounds.
+  lighting_and_shadow: Simple sunny lighting with light flat shadow shapes.
+  texture_and_material: Clean ink lines, flat fills, slight print texture and rounded forms.
+  camera_and_composition: Clear single-panel gag composition with readable staging, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with warm, gentle, wholesome humor.
+  rendering_and_quality: Tidy polished cartoon rendering with clear shapes and staging.
+  creative_brief: "Sunny magazine cartoon: cheerful mid-century magazine cartoon style with rounded characters, clean lines, sunny palettes and gentle comedic situations. Carry it through rounded cartoon characters, sunny palette, gentle gag, clean ink. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: rounded cartoon characters; sunny palette; gentle gag; clean ink
+avoidRules:
+  - dark grim palette
+  - speech bubbles
+  - lettering
+  - franchise character likeness
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: dark grim palette, speech bubbles, lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: comic-and-cartoon-illustration
+  categoryName: 9. Comic & Cartoon Illustration
+  tags:
+    - trading-card-illustration
+    - comic-and-cartoon-illustration
+    - sunny-magazine
+    - comic
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: cheerful magazine illustration cartoon

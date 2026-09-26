@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP22-329
+packId: pack_22
+name: Three-Block Color Relief
+styleAnchors:
+  - Three-Block Color Relief
+  - three-block color relief print
+  - three carved color blocks
+displayName: Three-Block Color Relief
+category: 10. Printmaking & Reproduction
+domain: three-block color relief print
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - printmaking-and-reproduction
+  - three-block-relief
+  - print
+  - portable-style-study
+visualDna:
+  aesthetic: 'Three-block color relief: a relief print pulled from three separately carved blocks, one color each, overlapping into rich secondary colors with slight registration drift.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action; divide the subject into three carved color layers that overlap to build it.
+  color_and_tone: Three transparent inks such as ochre, teal and deep red overlapping into new hues.
+  lighting_and_shadow: Shadows built from overlapping blocks and carved white highlights.
+  texture_and_material: Carved edges, ink speckle, wood grain and slight misregistration between blocks.
+  camera_and_composition: Bold simplified composition with large interlocking color shapes.
+  atmosphere_and_mood: Keep the requested mood with handcrafted warmth and graphic punch.
+  rendering_and_quality: Authentic layered relief printing with clean carved shapes.
+  creative_brief: "Three-block color relief: a relief print pulled from three separately carved blocks, one color each, overlapping into rich secondary colors with slight registration drift. Carry it through three carved color blocks, overlap colors, registration drift, carved whites. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: three carved color blocks; overlap colors; registration drift; carved whites
+avoidRules:
+  - smooth digital gradients
+  - readable lettering
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: smooth digital gradients, readable lettering, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: printmaking-and-reproduction
+  categoryName: 10. Printmaking & Reproduction
+  tags:
+    - trading-card-illustration
+    - printmaking-and-reproduction
+    - three-block-relief
+    - print
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: three-block color relief print

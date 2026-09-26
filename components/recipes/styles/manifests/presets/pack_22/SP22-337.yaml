@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP22-337
+packId: pack_22
+name: Monoprint Ghost Pull
+styleAnchors:
+  - Monoprint Ghost Pull
+  - faint second monoprint impression
+  - faint second impression
+displayName: Monoprint Ghost Pull
+category: 10. Printmaking & Reproduction
+domain: faint second monoprint impression
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - printmaking-and-reproduction
+  - ghost-pull
+  - print
+  - portable-style-study
+visualDna:
+  aesthetic: 'Monoprint ghost pull: the faint second impression of a monoprint, pale and mottled, where only traces of ink remain and forms dissolve into soft ghosts.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action; show the subject as a faint mottled ghost impression that is still recognizable.
+  color_and_tone: Pale diluted ink tints, soft greys or faded colors on white paper.
+  lighting_and_shadow: Faint remaining ink creates soft uneven value, kept consistent across the whole image.
+  texture_and_material: Mottled patchy transfer, broken edges, faded marks and paper texture.
+  camera_and_composition: Simple composition with lots of pale paper space.
+  atmosphere_and_mood: Keep the requested mood with fragile, haunting memory.
+  rendering_and_quality: Authentic faded transfer texture with readable forms, kept consistent across the whole image.
+  creative_brief: "Monoprint ghost pull: the faint second impression of a monoprint, pale and mottled, where only traces of ink remain and forms dissolve into soft ghosts. Carry it through faint second impression, mottled transfer, pale tints, ghostly forms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: faint second impression; mottled transfer; pale tints; ghostly forms
+avoidRules:
+  - strong saturated color
+  - readable lettering
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: strong saturated color, readable lettering, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: printmaking-and-reproduction
+  categoryName: 10. Printmaking & Reproduction
+  tags:
+    - trading-card-illustration
+    - printmaking-and-reproduction
+    - ghost-pull
+    - print
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: faint second monoprint impression

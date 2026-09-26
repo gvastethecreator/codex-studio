@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP22-340
+packId: pack_22
+name: Engraved Vignette Plate
+styleAnchors:
+  - Engraved Vignette Plate
+  - small engraved book vignette
+  - floating vignette
+displayName: Engraved Vignette Plate
+category: 10. Printmaking & Reproduction
+domain: small engraved book vignette
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - printmaking-and-reproduction
+  - engraved-vignette
+  - print
+  - portable-style-study
+visualDna:
+  aesthetic: 'Engraved vignette plate: small engraved book illustrations with soft edges that fade into white paper, finely hatched scenes floating without frames.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action; engrave the subject as a small finely hatched vignette fading into paper.
+  color_and_tone: Black engraved line on cream paper, with soft fading edges.
+  lighting_and_shadow: Fine hatching and cross-hatching for shadows, open lights.
+  texture_and_material: Engraved lines, dot-and-lozenge textures and fading vignette edges.
+  camera_and_composition: Small central scene floating on the page with soft irregular edges.
+  atmosphere_and_mood: Keep the requested mood with gentle storybook delicacy.
+  rendering_and_quality: Precise delicate engraving with smoothly fading edges, kept consistent across the whole image.
+  creative_brief: "Engraved vignette plate: small engraved book illustrations with soft edges that fade into white paper, finely hatched scenes floating without frames. Carry it through floating vignette, fading edges, fine engraved hatching, cream paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: floating vignette; fading edges; fine engraved hatching; cream paper
+avoidRules:
+  - hard rectangular frame
+  - readable captions
+  - readable lettering
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: hard rectangular frame, readable captions, readable lettering, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: printmaking-and-reproduction
+  categoryName: 10. Printmaking & Reproduction
+  tags:
+    - trading-card-illustration
+    - printmaking-and-reproduction
+    - engraved-vignette
+    - print
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: small engraved book vignette

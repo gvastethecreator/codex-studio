@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP22-317
+packId: pack_22
+name: Painted Comic Cover Art
+styleAnchors:
+  - Painted Comic Cover Art
+  - fully painted comic cover
+  - single dramatic moment
+displayName: Painted Comic Cover Art
+category: 9. Comic & Cartoon Illustration
+domain: fully painted comic cover
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - comic-and-cartoon-illustration
+  - comic-cover
+  - comic
+  - portable-style-study
+visualDna:
+  aesthetic: 'Painted comic cover art: a single dramatic fully painted comic cover moment, rich gouache or oil rendering, heroic lighting and a bold central composition without lettering.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original character designs; stage the subject as the dramatic central moment of a painted cover.
+  color_and_tone: Rich saturated painted color with strong complementary contrast and dramatic highlights.
+  lighting_and_shadow: Dramatic cover lighting with strong key light, rim light and deep shadows.
+  texture_and_material: Visible paint strokes, glossy highlights and detailed costumes and props.
+  camera_and_composition: Bold central composition with a dramatic angle and space left clear at the top.
+  atmosphere_and_mood: Keep the requested mood at its most dramatic, a moment that sells the story.
+  rendering_and_quality: Polished painterly rendering with clear readable focal action throughout.
+  creative_brief: "Painted comic cover art: a single dramatic fully painted comic cover moment, rich gouache or oil rendering, heroic lighting and a bold central composition without lettering. Carry it through single dramatic moment, painted rendering, heroic light, central composition. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: single dramatic moment; painted rendering; heroic light; central composition
+avoidRules:
+  - panel borders
+  - readable title
+  - speech bubbles
+  - lettering
+  - franchise character likeness
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: panel borders, readable title, speech bubbles, lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: comic-and-cartoon-illustration
+  categoryName: 9. Comic & Cartoon Illustration
+  tags:
+    - trading-card-illustration
+    - comic-and-cartoon-illustration
+    - comic-cover
+    - comic
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: fully painted comic cover

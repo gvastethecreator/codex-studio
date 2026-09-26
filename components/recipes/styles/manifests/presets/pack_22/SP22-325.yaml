@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP22-325
+packId: pack_22
+name: Creature Feature Comic
+styleAnchors:
+  - Creature Feature Comic
+  - monster movie comic art
+  - towering creature
+displayName: Creature Feature Comic
+category: 9. Comic & Cartoon Illustration
+domain: monster movie comic art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - comic-and-cartoon-illustration
+  - creature-feature
+  - comic
+  - portable-style-study
+visualDna:
+  aesthetic: 'Creature feature comic: classic monster-movie comic art with towering creatures, screaming crowds, dramatic low angles and lurid saturated color.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original character designs; stage the subject as a thrilling creature-feature moment with dramatic scale.
+  color_and_tone: Lurid greens, sickly yellows, bright crimsons and deep purple night skies.
+  lighting_and_shadow: Dramatic up-lighting and searchlights with heavy black shadows.
+  texture_and_material: Bold inked creature texture, slime, scales and crumbling buildings.
+  camera_and_composition: Low heroic angles with tiny fleeing figures and towering monsters.
+  atmosphere_and_mood: Keep the requested mood with pulpy thrilling monster-movie fun.
+  rendering_and_quality: Bold vivid comic rendering without gore, clear readable scale.
+  creative_brief: "Creature feature comic: classic monster-movie comic art with towering creatures, screaming crowds, dramatic low angles and lurid saturated color. Carry it through towering creature, fleeing crowds, lurid colors, dramatic low angle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: towering creature; fleeing crowds; lurid colors; dramatic low angle
+avoidRules:
+  - gore
+  - speech bubbles
+  - lettering
+  - franchise character likeness
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: gore, speech bubbles, lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: comic-and-cartoon-illustration
+  categoryName: 9. Comic & Cartoon Illustration
+  tags:
+    - trading-card-illustration
+    - comic-and-cartoon-illustration
+    - creature-feature
+    - comic
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: monster movie comic art

@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP22-371
+packId: pack_22
+name: Victorian Die-Cut Scrap
+styleAnchors:
+  - Victorian Die-Cut Scrap
+  - embossed die-cut paper scraps
+  - embossed paper cutout
+displayName: Victorian Die-Cut Scrap
+category: 13. Vintage Collectible Illustration
+domain: embossed die-cut paper scraps
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - vintage-collectible-illustration
+  - die-cut-scrap
+  - vintage
+  - portable-style-study
+visualDna:
+  aesthetic: 'Victorian die-cut scrap: glossy embossed paper cutouts of angels, animals and flowers, printed in rich colors and trimmed with shaped edges.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action; present the subject as a glossy embossed paper cutout with a shaped outline.
+  color_and_tone: Rich saturated reds, pinks, greens and gold with glossy sheen.
+  lighting_and_shadow: Soft light raking across embossed relief, kept consistent across the whole image.
+  texture_and_material: Embossed paper relief, glossy varnish, die-cut edges and paper backing.
+  camera_and_composition: Cutout figures arranged or overlapping on a plain ground.
+  atmosphere_and_mood: Keep the requested mood with sweet sentimental charm.
+  rendering_and_quality: Crisp printed detail with believable embossing and cut edges.
+  creative_brief: "Victorian die-cut scrap: glossy embossed paper cutouts of angels, animals and flowers, printed in rich colors and trimmed with shaped edges. Carry it through embossed paper cutout, glossy print, die-cut edges, sentimental motifs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: embossed paper cutout; glossy print; die-cut edges; sentimental motifs
+avoidRules:
+  - readable lettering or numbers
+  - real brand
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable lettering or numbers, real brand, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: vintage-collectible-illustration
+  categoryName: 13. Vintage Collectible Illustration
+  tags:
+    - trading-card-illustration
+    - vintage-collectible-illustration
+    - die-cut-scrap
+    - vintage
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: embossed die-cut paper scraps

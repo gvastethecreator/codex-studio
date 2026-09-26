@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP22-346
+packId: pack_22
+name: Whiplash Curve Ornament
+styleAnchors:
+  - Whiplash Curve Ornament
+  - art nouveau whiplash lines
+  - whiplash curves
+displayName: Whiplash Curve Ornament
+category: 11. Ornament & Symbolic Illustration
+domain: art nouveau whiplash lines
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - ornament-and-symbolic-illustration
+  - whiplash-curve
+  - ornament
+  - portable-style-study
+visualDna:
+  aesthetic: 'Whiplash curve ornament: flowing art-nouveau style whiplash curves of hair, stems and ribbons that snap and flow around the subject in elegant rhythm.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action at the center; let hair, stems and ribbons around the subject flow into whiplash curves.
+  color_and_tone: Soft sage, dusty rose, ochre and cream with outlined gold accents.
+  lighting_and_shadow: Flat decorative color with soft subtle modeling, kept consistent across the whole image.
+  texture_and_material: Flowing contour lines, stylized flowers, ribbons and mosaic halos.
+  camera_and_composition: Vertical elegant composition with curves framing the subject.
+  atmosphere_and_mood: Keep the requested mood with graceful poetic elegance.
+  rendering_and_quality: Clean flowing lines with harmonious decorative balance, kept consistent across the whole image.
+  creative_brief: "Whiplash curve ornament: flowing art-nouveau style whiplash curves of hair, stems and ribbons that snap and flow around the subject in elegant rhythm. Carry it through whiplash curves, flowing hair and stems, soft palette, decorative halo. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: whiplash curves; flowing hair and stems; soft palette; decorative halo
+avoidRules:
+  - stiff straight lines
+  - readable lettering
+  - religious symbols by default
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: stiff straight lines, readable lettering, religious symbols by default, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: ornament-and-symbolic-illustration
+  categoryName: 11. Ornament & Symbolic Illustration
+  tags:
+    - trading-card-illustration
+    - ornament-and-symbolic-illustration
+    - whiplash-curve
+    - ornament
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: art nouveau whiplash lines

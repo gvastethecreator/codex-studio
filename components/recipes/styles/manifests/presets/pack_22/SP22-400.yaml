@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP22-400
+packId: pack_22
+name: Fresnel Glow Shader
+styleAnchors:
+  - Fresnel Glow Shader
+  - edge glow fresnel render
+  - fresnel rim glow
+displayName: Fresnel Glow Shader
+category: 15. Digital Rendering Methods
+domain: edge glow fresnel render
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - digital-rendering-methods
+  - fresnel-glow
+  - digital-render
+  - portable-style-study
+visualDna:
+  aesthetic: 'Fresnel glow shader: 3D subjects rendered with glowing edges where surfaces turn away from the camera, ghostly and luminous against dark backgrounds.'
+  subject_treatment: Preserve the requested identity, count, pose and action; render the subject with glowing rims wherever its surface turns away.
+  color_and_tone: Dark backgrounds with glowing cyan, violet or gold edges.
+  lighting_and_shadow: Rim glow driven by viewing angle, faint interior fill.
+  texture_and_material: Smooth surfaces, glowing edges and subtle transparency, kept consistent across the whole image.
+  camera_and_composition: Centered subject against black or deep blue space.
+  atmosphere_and_mood: Keep the requested mood with ghostly holographic mystery.
+  rendering_and_quality: Clean shader glow with accurate edge falloff, kept consistent across the whole image.
+  creative_brief: "Fresnel glow shader: 3D subjects rendered with glowing edges where surfaces turn away from the camera, ghostly and luminous against dark backgrounds. Carry it through fresnel rim glow, dark background, ghostly transparency, smooth surfaces. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: fresnel rim glow; dark background; ghostly transparency; smooth surfaces
+avoidRules:
+  - interface overlay
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: interface overlay, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: digital-rendering-methods
+  categoryName: 15. Digital Rendering Methods
+  tags:
+    - trading-card-illustration
+    - digital-rendering-methods
+    - fresnel-glow
+    - digital-render
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: edge glow fresnel render

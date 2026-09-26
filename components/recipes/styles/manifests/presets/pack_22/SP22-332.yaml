@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP22-332
+packId: pack_22
+name: Currency Portrait Engraving
+styleAnchors:
+  - Currency Portrait Engraving
+  - banknote-style engraved portrait
+  - banknote line engraving
+displayName: Currency Portrait Engraving
+category: 10. Printmaking & Reproduction
+domain: banknote-style engraved portrait
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - printmaking-and-reproduction
+  - currency-engraving
+  - print
+  - portable-style-study
+visualDna:
+  aesthetic: 'Currency portrait engraving: subjects engraved in the dense precise line style of old banknotes, with swirling line shading, fine guilloche frames and dignified poses.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action; engrave the subject as a dignified central vignette with fine swirling line shading.
+  color_and_tone: Single engraving ink in green-black, sepia or blue on pale paper.
+  lighting_and_shadow: Tone from dense line spacing, swelling and crossing lines.
+  texture_and_material: Ultra-fine engraved lines, guilloche rosettes and ornamental frames without numbers.
+  camera_and_composition: Central oval portrait framed by symmetrical ornament, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with solemn official dignity.
+  rendering_and_quality: Precise dense line engraving with no digital smoothing.
+  creative_brief: "Currency portrait engraving: subjects engraved in the dense precise line style of old banknotes, with swirling line shading, fine guilloche frames and dignified poses. Carry it through banknote line engraving, guilloche frames, oval portrait, single ink. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: banknote line engraving; guilloche frames; oval portrait; single ink
+avoidRules:
+  - readable numbers
+  - real currency design
+  - readable lettering
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable numbers, real currency design, readable lettering, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: printmaking-and-reproduction
+  categoryName: 10. Printmaking & Reproduction
+  tags:
+    - trading-card-illustration
+    - printmaking-and-reproduction
+    - currency-engraving
+    - print
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: banknote-style engraved portrait

@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP22-385
+packId: pack_22
+name: Horizon Line Minimalism
+styleAnchors:
+  - Horizon Line Minimalism
+  - minimal horizon composition
+  - single horizon line
+displayName: Horizon Line Minimalism
+category: 14. Symbolic Graphic Illustration
+domain: minimal horizon composition
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - symbolic-graphic-illustration
+  - horizon-minimal
+  - graphic-symbol
+  - portable-style-study
+visualDna:
+  aesthetic: 'Horizon line minimalism: vast empty compositions with a single horizon line and a tiny subject, most of the frame flat sky or sea in one or two colors.'
+  subject_treatment: Preserve the requested subject, count, pose and action while reducing it to a clear graphic symbol; make the subject tiny on a single horizon line with vast empty space.
+  color_and_tone: Two or three calm flat colors, sky and ground clearly divided.
+  lighting_and_shadow: Minimal flat light with at most a tiny shadow.
+  texture_and_material: Smooth flat color fields with subtle grain, kept consistent across the whole image.
+  camera_and_composition: Low or centered horizon with a tiny subject and huge negative space.
+  atmosphere_and_mood: Keep the requested mood with silent contemplative vastness.
+  rendering_and_quality: Precise minimal composition with clean flat fields, kept consistent across the whole image.
+  creative_brief: "Horizon line minimalism: vast empty compositions with a single horizon line and a tiny subject, most of the frame flat sky or sea in one or two colors. Carry it through single horizon line, tiny subject, vast empty space, flat colors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: single horizon line; tiny subject; vast empty space; flat colors
+avoidRules:
+  - busy detail
+  - readable lettering
+  - real logo
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: busy detail, readable lettering, real logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: symbolic-graphic-illustration
+  categoryName: 14. Symbolic Graphic Illustration
+  tags:
+    - trading-card-illustration
+    - symbolic-graphic-illustration
+    - horizon-minimal
+    - graphic-symbol
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: minimal horizon composition

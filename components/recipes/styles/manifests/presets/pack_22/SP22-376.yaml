@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP22-376
+packId: pack_22
+name: Matchbook Cover Miniature
+styleAnchors:
+  - Matchbook Cover Miniature
+  - tiny vintage matchbook art
+  - tiny bold graphic
+displayName: Matchbook Cover Miniature
+category: 13. Vintage Collectible Illustration
+domain: tiny vintage matchbook art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - vintage-collectible-illustration
+  - matchbook-cover
+  - vintage
+  - portable-style-study
+visualDna:
+  aesthetic: 'Matchbook cover miniature: tiny bold graphic illustrations from old matchbooks, simple flat colors, strong silhouettes and a slightly worn cardboard fold.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action; draw the subject as a tiny bold graphic on a matchbook cover.
+  color_and_tone: Two or three flat bold colors such as red, black and cream.
+  lighting_and_shadow: Flat graphic shapes with simple shadow blocks, kept consistent across the whole image.
+  texture_and_material: Cardboard grain, printed flat color, fold crease and worn corners.
+  camera_and_composition: Small vertical format with a centered bold emblem.
+  atmosphere_and_mood: Keep the requested mood with retro nightlife charm.
+  rendering_and_quality: Crisp simplified graphic with authentic printed wear, kept consistent across the whole image.
+  creative_brief: "Matchbook cover miniature: tiny bold graphic illustrations from old matchbooks, simple flat colors, strong silhouettes and a slightly worn cardboard fold. Carry it through tiny bold graphic, flat colors, cardboard fold, worn corners. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: tiny bold graphic; flat colors; cardboard fold; worn corners
+avoidRules:
+  - readable text
+  - readable lettering or numbers
+  - real brand
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, readable lettering or numbers, real brand, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: vintage-collectible-illustration
+  categoryName: 13. Vintage Collectible Illustration
+  tags:
+    - trading-card-illustration
+    - vintage-collectible-illustration
+    - matchbook-cover
+    - vintage
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: tiny vintage matchbook art

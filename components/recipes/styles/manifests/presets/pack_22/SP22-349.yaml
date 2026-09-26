@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP22-349
+packId: pack_22
+name: Emblem-Book Allegory
+styleAnchors:
+  - Emblem-Book Allegory
+  - symbolic emblem book image
+  - symbolic objects
+displayName: Emblem-Book Allegory
+category: 11. Ornament & Symbolic Illustration
+domain: symbolic emblem book image
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - ornament-and-symbolic-illustration
+  - emblem-allegory
+  - ornament
+  - portable-style-study
+visualDna:
+  aesthetic: 'Emblem-book allegory: symbolic single images from old emblem books, where a hand from a cloud, a burning heart or an anchor tells a moral in one strange scene.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action at the center; combine the subject with one or two symbolic objects in a strange allegorical scene.
+  color_and_tone: Engraved black line with optional pale hand tints on aged paper.
+  lighting_and_shadow: Fine hatching shadows and bright open sky, kept consistent across the whole image.
+  texture_and_material: Engraved line, landscape backdrops, clouds and symbolic props.
+  camera_and_composition: Circular or rectangular vignette with a symbolic central scene.
+  atmosphere_and_mood: Keep the requested mood with puzzling moral mystery.
+  rendering_and_quality: Clean engraved allegory with clear symbolic objects, kept consistent across the whole image.
+  creative_brief: "Emblem-book allegory: symbolic single images from old emblem books, where a hand from a cloud, a burning heart or an anchor tells a moral in one strange scene. Carry it through symbolic objects, hand from cloud, moral scene, engraved vignette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: symbolic objects; hand from cloud; moral scene; engraved vignette
+avoidRules:
+  - readable mottos
+  - readable lettering
+  - religious symbols by default
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable mottos, readable lettering, religious symbols by default, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: ornament-and-symbolic-illustration
+  categoryName: 11. Ornament & Symbolic Illustration
+  tags:
+    - trading-card-illustration
+    - ornament-and-symbolic-illustration
+    - emblem-allegory
+    - ornament
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: symbolic emblem book image

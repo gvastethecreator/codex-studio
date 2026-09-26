@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP22-391
+packId: pack_22
+name: Normal-Map Color Render
+styleAnchors:
+  - Normal-Map Color Render
+  - surface normals as color
+  - normal-map colors
+displayName: Normal-Map Color Render
+category: 15. Digital Rendering Methods
+domain: surface normals as color
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - digital-rendering-methods
+  - normal-map-color
+  - digital-render
+  - portable-style-study
+visualDna:
+  aesthetic: 'Normal-map color render: the subject rendered as a surface-normal pass, every direction of its surface shown as pastel violet, teal and pink gradients.'
+  subject_treatment: Preserve the requested identity, count, pose and action; render the subject so its surface directions become normal-map colors.
+  color_and_tone: Periwinkle violets, teal greens and pink reds blending across surfaces.
+  lighting_and_shadow: No lighting; color alone shows surface direction, kept consistent across the whole image.
+  texture_and_material: Smooth normal gradients, crisp edge transitions and fine surface bumps.
+  camera_and_composition: Clean centered object on a flat violet background.
+  atmosphere_and_mood: Keep the requested mood with technical surreal beauty.
+  rendering_and_quality: Accurate normal-pass coloring with smooth transitions, kept consistent across the whole image.
+  creative_brief: "Normal-map color render: the subject rendered as a surface-normal pass, every direction of its surface shown as pastel violet, teal and pink gradients. Carry it through normal-map colors, violet teal pink, surface direction, flat violet ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: normal-map colors; violet teal pink; surface direction; flat violet ground
+avoidRules:
+  - interface overlay
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: interface overlay, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: digital-rendering-methods
+  categoryName: 15. Digital Rendering Methods
+  tags:
+    - trading-card-illustration
+    - digital-rendering-methods
+    - normal-map-color
+    - digital-render
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: surface normals as color

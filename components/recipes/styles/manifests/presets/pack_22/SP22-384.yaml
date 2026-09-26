@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP22-384
+packId: pack_22
+name: Heavy Block Symbolism
+styleAnchors:
+  - Heavy Block Symbolism
+  - massive block graphic shapes
+  - massive blocks
+displayName: Heavy Block Symbolism
+category: 14. Symbolic Graphic Illustration
+domain: massive block graphic shapes
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - symbolic-graphic-illustration
+  - heavy-block
+  - graphic-symbol
+  - portable-style-study
+visualDna:
+  aesthetic: 'Heavy block symbolism: the subject rendered in massive solid geometric blocks, thick slabs and hard corners, monumental and brutally simple.'
+  subject_treatment: Preserve the requested subject, count, pose and action while reducing it to a clear graphic symbol; reduce it to thick heavy blocks and slabs.
+  color_and_tone: Concrete greys, black and one strong accent color.
+  lighting_and_shadow: Hard flat shadow slabs giving monumental weight, kept consistent across the whole image.
+  texture_and_material: Solid flat blocks, subtle concrete grain and hard edges.
+  camera_and_composition: Low monumental angle with the symbol dominating the frame.
+  atmosphere_and_mood: Keep the requested mood with monumental gravity, kept consistent across the whole image.
+  rendering_and_quality: Clean massive shapes with a strong silhouette, kept consistent across the whole image.
+  creative_brief: "Heavy block symbolism: the subject rendered in massive solid geometric blocks, thick slabs and hard corners, monumental and brutally simple. Carry it through massive blocks, hard corners, concrete palette, monumental weight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: massive blocks; hard corners; concrete palette; monumental weight
+avoidRules:
+  - delicate thin lines
+  - readable lettering
+  - real logo
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: delicate thin lines, readable lettering, real logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: symbolic-graphic-illustration
+  categoryName: 14. Symbolic Graphic Illustration
+  tags:
+    - trading-card-illustration
+    - symbolic-graphic-illustration
+    - heavy-block
+    - graphic-symbol
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: massive block graphic shapes

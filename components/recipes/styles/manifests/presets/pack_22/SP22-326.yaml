@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP22-326
+packId: pack_22
+name: Pulp Sci-Fi Panel
+styleAnchors:
+  - Pulp Sci-Fi Panel
+  - retro space adventure comic
+  - finned rockets
+displayName: Pulp Sci-Fi Panel
+category: 9. Comic & Cartoon Illustration
+domain: retro space adventure comic
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - comic-and-cartoon-illustration
+  - pulp-scifi
+  - comic
+  - portable-style-study
+visualDna:
+  aesthetic: 'Pulp sci-fi panel: retro space-adventure comic panels with finned rockets, ray guns, bubble helmets, alien jungles and bold optimistic color.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original character designs; place the subject in a retro space adventure with finned ships and bubble helmets.
+  color_and_tone: Bold teal, orange, magenta and chrome silver with starry black skies.
+  lighting_and_shadow: Glowing ray-gun light, rim-lit helmets and dramatic planet glow.
+  texture_and_material: Chrome rockets, glass bubble helmets, alien plants and ink detail.
+  camera_and_composition: Dynamic action angles with planets and rockets in the background.
+  atmosphere_and_mood: Keep the requested mood with optimistic retro adventure spirit.
+  rendering_and_quality: Crisp vintage comic rendering with bold clean color.
+  creative_brief: "Pulp sci-fi panel: retro space-adventure comic panels with finned rockets, ray guns, bubble helmets, alien jungles and bold optimistic color. Carry it through finned rockets, bubble helmets, ray-gun glow, alien jungles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: finned rockets; bubble helmets; ray-gun glow; alien jungles
+avoidRules:
+  - gritty modern realism
+  - speech bubbles
+  - lettering
+  - franchise character likeness
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: gritty modern realism, speech bubbles, lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: comic-and-cartoon-illustration
+  categoryName: 9. Comic & Cartoon Illustration
+  tags:
+    - trading-card-illustration
+    - comic-and-cartoon-illustration
+    - pulp-scifi
+    - comic
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: retro space adventure comic

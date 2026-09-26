@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP22-374
+packId: pack_22
+name: Enamel Tin Sign Art
+styleAnchors:
+  - Enamel Tin Sign Art
+  - vintage enamel metal sign illustration
+  - glossy enamel colors
+displayName: Enamel Tin Sign Art
+category: 13. Vintage Collectible Illustration
+domain: vintage enamel metal sign illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - vintage-collectible-illustration
+  - enamel-sign
+  - vintage
+  - portable-style-study
+visualDna:
+  aesthetic: 'Enamel tin sign art: bold simple illustrations fired on enamel metal signs, glossy flat colors, chipped edges and rust spots without any lettering.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action; illustrate the subject in bold flat enamel colors on a metal sign.
+  color_and_tone: Glossy cobalt, red, cream and yellow enamel with rust brown chips.
+  lighting_and_shadow: Glossy reflections on enamel with flat illustrated shading.
+  texture_and_material: Chipped enamel, rust spots, rivet holes and bent metal edges.
+  camera_and_composition: Centered emblem-like illustration on a rectangular sign, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with nostalgic roadside charm.
+  rendering_and_quality: Clean bold enamel illustration with believable wear, kept consistent across the whole image.
+  creative_brief: "Enamel tin sign art: bold simple illustrations fired on enamel metal signs, glossy flat colors, chipped edges and rust spots without any lettering. Carry it through glossy enamel colors, chipped edges, rust spots, rivet holes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: glossy enamel colors; chipped edges; rust spots; rivet holes
+avoidRules:
+  - readable advertising text
+  - readable lettering or numbers
+  - real brand
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable advertising text, readable lettering or numbers, real brand, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: vintage-collectible-illustration
+  categoryName: 13. Vintage Collectible Illustration
+  tags:
+    - trading-card-illustration
+    - vintage-collectible-illustration
+    - enamel-sign
+    - vintage
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: vintage enamel metal sign illustration

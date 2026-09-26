@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP22-399
+packId: pack_22
+name: Procedural Noise Terrain
+styleAnchors:
+  - Procedural Noise Terrain
+  - noise-generated landscape render
+  - layered noise terrain
+displayName: Procedural Noise Terrain
+category: 15. Digital Rendering Methods
+domain: noise-generated landscape render
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - digital-rendering-methods
+  - noise-terrain
+  - digital-render
+  - portable-style-study
+visualDna:
+  aesthetic: 'Procedural noise terrain: landscapes generated from layered noise, eroded mountains, rolling valleys and strange repeating ridges with atmospheric depth.'
+  subject_treatment: Preserve the requested identity, count, pose and action; place the subject on a vast procedurally generated terrain.
+  color_and_tone: Naturalistic or alien palettes graded by altitude and slope.
+  lighting_and_shadow: Low sun raking across ridges with atmospheric haze.
+  texture_and_material: Eroded rock, noise ridges, flow channels and snowy peaks.
+  camera_and_composition: Wide aerial or ground-level vista with depth layers.
+  atmosphere_and_mood: Keep the requested mood with vast generated wilderness.
+  rendering_and_quality: Clean terrain rendering with believable erosion detail, kept consistent across the whole image.
+  creative_brief: "Procedural noise terrain: landscapes generated from layered noise, eroded mountains, rolling valleys and strange repeating ridges with atmospheric depth. Carry it through layered noise terrain, eroded ridges, atmospheric haze, vast vista. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: layered noise terrain; eroded ridges; atmospheric haze; vast vista
+avoidRules:
+  - interface overlay
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: interface overlay, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: digital-rendering-methods
+  categoryName: 15. Digital Rendering Methods
+  tags:
+    - trading-card-illustration
+    - digital-rendering-methods
+    - noise-terrain
+    - digital-render
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: noise-generated landscape render

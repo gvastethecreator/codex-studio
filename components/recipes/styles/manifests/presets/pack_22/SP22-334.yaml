@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP22-334
+packId: pack_22
+name: Block-Stamped Repeat
+styleAnchors:
+  - Block-Stamped Repeat
+  - hand-stamped block pattern image
+  - repeated hand stamps
+displayName: Block-Stamped Repeat
+category: 10. Printmaking & Reproduction
+domain: hand-stamped block pattern image
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - printmaking-and-reproduction
+  - block-stamped
+  - print
+  - portable-style-study
+visualDna:
+  aesthetic: 'Block-stamped repeat: images built from a few small hand-carved stamps pressed again and again, uneven ink density and slight rotations giving handmade rhythm.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action; build the subject and background from repeated small stamped motifs.
+  color_and_tone: Two or three stamp inks such as indigo, madder red and saffron on cream.
+  lighting_and_shadow: No modeled light; density and overlap of stamps create depth.
+  texture_and_material: Uneven stamp impressions, patchy ink, slight rotation and paper grain.
+  camera_and_composition: Rhythmic repeated pattern with a larger central stamped figure.
+  atmosphere_and_mood: Keep the requested mood with warm handmade folk rhythm.
+  rendering_and_quality: Authentic stamped irregularity with clear readable motifs, kept consistent across the whole image.
+  creative_brief: "Block-stamped repeat: images built from a few small hand-carved stamps pressed again and again, uneven ink density and slight rotations giving handmade rhythm. Carry it through repeated hand stamps, patchy ink, slight rotation, folk rhythm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: repeated hand stamps; patchy ink; slight rotation; folk rhythm
+avoidRules:
+  - perfect digital repeat
+  - readable lettering
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: perfect digital repeat, readable lettering, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: printmaking-and-reproduction
+  categoryName: 10. Printmaking & Reproduction
+  tags:
+    - trading-card-illustration
+    - printmaking-and-reproduction
+    - block-stamped
+    - print
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: hand-stamped block pattern image

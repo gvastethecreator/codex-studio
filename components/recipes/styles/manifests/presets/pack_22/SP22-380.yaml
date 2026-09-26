@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP22-380
+packId: pack_22
+name: Grid-Built Pictograms
+styleAnchors:
+  - Grid-Built Pictograms
+  - pictograms constructed on a grid
+  - visible square grid
+displayName: Grid-Built Pictograms
+category: 14. Symbolic Graphic Illustration
+domain: pictograms constructed on a grid
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - symbolic-graphic-illustration
+  - grid-pictograms
+  - graphic-symbol
+  - portable-style-study
+visualDna:
+  aesthetic: 'Grid-built pictograms: subjects constructed as clean pictogram figures on a visible square grid, with consistent stroke widths and quarter-circle corners.'
+  subject_treatment: Preserve the requested subject, count, pose and action while reducing it to a clear graphic symbol; build it from grid-aligned strokes and quarter circles like a pictogram.
+  color_and_tone: One solid color on white or a pale ground with faint grid lines.
+  lighting_and_shadow: No lighting; solid flat pictogram shapes, kept consistent across the whole image.
+  texture_and_material: Solid geometric strokes, rounded corners and faint construction grid.
+  camera_and_composition: Centered pictogram within a square with the grid visible.
+  atmosphere_and_mood: Keep the requested mood with orderly universal clarity.
+  rendering_and_quality: Precise grid alignment and consistent stroke width, kept consistent across the whole image.
+  creative_brief: "Grid-built pictograms: subjects constructed as clean pictogram figures on a visible square grid, with consistent stroke widths and quarter-circle corners. Carry it through visible square grid, consistent strokes, quarter-circle corners, pictogram figure. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: visible square grid; consistent strokes; quarter-circle corners; pictogram figure
+avoidRules:
+  - readable labels
+  - readable lettering
+  - real logo
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable labels, readable lettering, real logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: symbolic-graphic-illustration
+  categoryName: 14. Symbolic Graphic Illustration
+  tags:
+    - trading-card-illustration
+    - symbolic-graphic-illustration
+    - grid-pictograms
+    - graphic-symbol
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: pictograms constructed on a grid

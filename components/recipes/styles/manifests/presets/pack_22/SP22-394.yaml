@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP22-394
+packId: pack_22
+name: Soft Clay Digital Render
+styleAnchors:
+  - Soft Clay Digital Render
+  - 3d render of plasticine look
+  - plasticine look
+displayName: Soft Clay Digital Render
+category: 15. Digital Rendering Methods
+domain: 3d render of plasticine look
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - digital-rendering-methods
+  - soft-clay-render
+  - digital-render
+  - portable-style-study
+visualDna:
+  aesthetic: 'Soft clay digital render: 3D renders that imitate soft plasticine, slightly lumpy forms, fingerprints and warm soft studio light.'
+  subject_treatment: Preserve the requested identity, count, pose and action; render the subject as soft plasticine-like 3D shapes.
+  color_and_tone: Warm saturated clay colors with soft shadows, kept consistent across the whole image.
+  lighting_and_shadow: Soft studio key light with gentle ambient occlusion.
+  texture_and_material: Subtle fingerprints, lumpy surfaces, soft creases and matte finish.
+  camera_and_composition: Tabletop miniature framing with shallow depth of field.
+  atmosphere_and_mood: Keep the requested mood with cozy playful charm.
+  rendering_and_quality: Clean render with believable clay imperfections, kept consistent across the whole image.
+  creative_brief: "Soft clay digital render: 3D renders that imitate soft plasticine, slightly lumpy forms, fingerprints and warm soft studio light. Carry it through plasticine look, fingerprints, soft studio light, tabletop scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: plasticine look; fingerprints; soft studio light; tabletop scale
+avoidRules:
+  - glossy plastic
+  - interface overlay
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: glossy plastic, interface overlay, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: digital-rendering-methods
+  categoryName: 15. Digital Rendering Methods
+  tags:
+    - trading-card-illustration
+    - digital-rendering-methods
+    - soft-clay-render
+    - digital-render
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: 3d render of plasticine look

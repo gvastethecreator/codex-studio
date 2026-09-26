@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP22-327
+packId: pack_22
+name: Charcoal Graphic Novel
+styleAnchors:
+  - Charcoal Graphic Novel
+  - moody charcoal comic panel
+  - smudged charcoal
+displayName: Charcoal Graphic Novel
+category: 9. Comic & Cartoon Illustration
+domain: moody charcoal comic panel
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - comic-and-cartoon-illustration
+  - charcoal-novel
+  - comic
+  - portable-style-study
+visualDna:
+  aesthetic: 'Charcoal graphic novel: moody graphic novel panels drawn in smudged charcoal, heavy blacks, soft greys and erased highlights for a cinematic noir mood.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original character designs; draw the subject in rich charcoal with dramatic blacks and erased lights.
+  color_and_tone: Monochrome charcoal blacks and greys, occasionally one muted red accent.
+  lighting_and_shadow: Dramatic noir lighting, heavy shadows and eraser-lifted highlights.
+  texture_and_material: Smudged charcoal, paper tooth, fingerprints and eraser marks.
+  camera_and_composition: Cinematic single-panel framing with deep shadow areas, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with brooding noir atmosphere.
+  rendering_and_quality: Expressive charcoal drawing with clear readable figures, kept consistent across the whole image.
+  creative_brief: "Charcoal graphic novel: moody graphic novel panels drawn in smudged charcoal, heavy blacks, soft greys and erased highlights for a cinematic noir mood. Carry it through smudged charcoal, heavy blacks, erased highlights, noir mood. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: smudged charcoal; heavy blacks; erased highlights; noir mood
+avoidRules:
+  - bright color
+  - speech bubbles
+  - lettering
+  - franchise character likeness
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: bright color, speech bubbles, lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: comic-and-cartoon-illustration
+  categoryName: 9. Comic & Cartoon Illustration
+  tags:
+    - trading-card-illustration
+    - comic-and-cartoon-illustration
+    - charcoal-novel
+    - comic
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: moody charcoal comic panel

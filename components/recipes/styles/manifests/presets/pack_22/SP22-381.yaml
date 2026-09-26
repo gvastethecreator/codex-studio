@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP22-381
+packId: pack_22
+name: Stencil Symbol Graphic
+styleAnchors:
+  - Stencil Symbol Graphic
+  - spray stencil symbol
+  - stencil bridges
+displayName: Stencil Symbol Graphic
+category: 14. Symbolic Graphic Illustration
+domain: spray stencil symbol
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - symbolic-graphic-illustration
+  - stencil-symbol
+  - graphic-symbol
+  - portable-style-study
+visualDna:
+  aesthetic: 'Stencil symbol graphic: the subject cut as a stencil with bridges holding the islands together, sprayed in one color with soft overspray on a wall or paper.'
+  subject_treatment: Preserve the requested subject, count, pose and action while reducing it to a clear graphic symbol; cut it as a stencil shape with bridges and spray it flat.
+  color_and_tone: One sprayed color, often black or red, on concrete, brick or paper.
+  lighting_and_shadow: Flat sprayed shapes with no modeled shading, kept consistent across the whole image.
+  texture_and_material: Stencil bridges, overspray halos, drips and rough wall texture.
+  camera_and_composition: Frontal centered stencil on a wall or sheet.
+  atmosphere_and_mood: Keep the requested mood with raw street urgency.
+  rendering_and_quality: Crisp stencil edges with believable spray texture, kept consistent across the whole image.
+  creative_brief: "Stencil symbol graphic: the subject cut as a stencil with bridges holding the islands together, sprayed in one color with soft overspray on a wall or paper. Carry it through stencil bridges, overspray halo, single sprayed color, wall texture. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: stencil bridges; overspray halo; single sprayed color; wall texture
+avoidRules:
+  - readable graffiti tags
+  - readable lettering
+  - real logo
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable graffiti tags, readable lettering, real logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: symbolic-graphic-illustration
+  categoryName: 14. Symbolic Graphic Illustration
+  tags:
+    - trading-card-illustration
+    - symbolic-graphic-illustration
+    - stencil-symbol
+    - graphic-symbol
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: spray stencil symbol

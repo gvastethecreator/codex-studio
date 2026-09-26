@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP22-320
+packId: pack_22
+name: Bouncy Brush Cartoon
+styleAnchors:
+  - Bouncy Brush Cartoon
+  - thick-thin brush cartoon line
+  - thick-thin brush line
+displayName: Bouncy Brush Cartoon
+category: 9. Comic & Cartoon Illustration
+domain: thick-thin brush cartoon line
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - comic-and-cartoon-illustration
+  - bouncy-brush
+  - comic
+  - portable-style-study
+visualDna:
+  aesthetic: 'Bouncy brush cartoon: cartoon characters drawn with lively thick-to-thin brush lines that swell and taper, giving every pose a springy rhythmic bounce.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original character designs; draw the subject with springy swelling brush lines and bouncy exaggerated poses.
+  color_and_tone: Cheerful flat colors with light shading under energetic black brush line.
+  lighting_and_shadow: Minimal flat shadows that echo the rhythm of the line.
+  texture_and_material: Tapered brush strokes, ink weight variation and clean flat fills.
+  camera_and_composition: Playful compositions with characters bouncing across the frame.
+  atmosphere_and_mood: Keep the requested mood with springy joyful cartoon energy.
+  rendering_and_quality: Confident lively brush inking with clear readable silhouettes.
+  creative_brief: "Bouncy brush cartoon: cartoon characters drawn with lively thick-to-thin brush lines that swell and taper, giving every pose a springy rhythmic bounce. Carry it through thick-thin brush line, springy poses, flat fills, rhythmic bounce. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: thick-thin brush line; springy poses; flat fills; rhythmic bounce
+avoidRules:
+  - stiff uniform line
+  - speech bubbles
+  - lettering
+  - franchise character likeness
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: stiff uniform line, speech bubbles, lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: comic-and-cartoon-illustration
+  categoryName: 9. Comic & Cartoon Illustration
+  tags:
+    - trading-card-illustration
+    - comic-and-cartoon-illustration
+    - bouncy-brush
+    - comic
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: thick-thin brush cartoon line

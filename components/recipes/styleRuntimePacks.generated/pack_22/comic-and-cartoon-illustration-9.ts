@@ -234,4 +234,383 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP22-317',
+    name: 'Painted Comic Cover Art',
+    displayName: 'Painted Comic Cover Art',
+    styleAnchors: [
+      'Painted Comic Cover Art',
+      'fully painted comic cover',
+      'single dramatic moment',
+    ],
+    category: '9. Comic & Cartoon Illustration',
+    domain: 'fully painted comic cover',
+    negativePrompt:
+      'panel borders, readable title, speech bubbles, lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Painted comic cover art: a single dramatic fully painted comic cover moment, rich gouache or oil rendering, heroic lighting and a bold central composition without lettering.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original character designs; stage the subject as the dramatic central moment of a painted cover.',
+      color_and_tone:
+        'Rich saturated painted color with strong complementary contrast and dramatic highlights.',
+      lighting_and_shadow:
+        'Dramatic cover lighting with strong key light, rim light and deep shadows.',
+      texture_and_material:
+        'Visible paint strokes, glossy highlights and detailed costumes and props.',
+      camera_and_composition:
+        'Bold central composition with a dramatic angle and space left clear at the top.',
+      atmosphere_and_mood:
+        'Keep the requested mood at its most dramatic, a moment that sells the story.',
+      rendering_and_quality:
+        'Polished painterly rendering with clear readable focal action throughout.',
+      creative_brief:
+        "Painted comic cover art: a single dramatic fully painted comic cover moment, rich gouache or oil rendering, heroic lighting and a bold central composition without lettering. Carry it through single dramatic moment, painted rendering, heroic light, central composition. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'single dramatic moment; painted rendering; heroic light; central composition',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-318',
+    name: 'Four-Color Newsprint Hero',
+    displayName: 'Four-Color Newsprint Hero',
+    styleAnchors: [
+      'Four-Color Newsprint Hero',
+      'vintage four-color comic print',
+      'coarse color dots',
+    ],
+    category: '9. Comic & Cartoon Illustration',
+    domain: 'vintage four-color comic print',
+    negativePrompt:
+      'modern digital gradients, speech bubbles, lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Four-color newsprint hero: vintage comic book look printed on yellowed newsprint with coarse color dots, flat primary colors and slightly misregistered bold black ink.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original character designs; ink the subject boldly and fill it with flat primary colors and coarse dot tints.',
+      color_and_tone: 'Flat red, yellow, blue and their dot mixes on warm yellowed newsprint.',
+      lighting_and_shadow: 'Simple black shadows and dot-tint shading instead of gradients.',
+      texture_and_material:
+        'Coarse halftone dots, off-register color, pulpy paper grain and bold ink.',
+      camera_and_composition: 'Dynamic single-panel framing with heroic angles and action poses.',
+      atmosphere_and_mood:
+        'Keep the requested mood with nostalgic golden-age excitement and energy.',
+      rendering_and_quality: 'Authentic vintage print texture with crisp bold ink linework.',
+      creative_brief:
+        "Four-color newsprint hero: vintage comic book look printed on yellowed newsprint with coarse color dots, flat primary colors and slightly misregistered bold black ink. Carry it through coarse color dots, flat primaries, yellowed newsprint, misregistered ink. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'coarse color dots; flat primaries; yellowed newsprint; misregistered ink',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-319',
+    name: 'Watercolor Graphic Novel',
+    displayName: 'Watercolor Graphic Novel',
+    styleAnchors: [
+      'Watercolor Graphic Novel',
+      'watercolor-painted graphic novel panel',
+      'loose watercolor washes',
+    ],
+    category: '9. Comic & Cartoon Illustration',
+    domain: 'watercolor-painted graphic novel panel',
+    negativePrompt:
+      'hard cel shading, speech bubbles, lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Watercolor graphic novel: literary graphic novel panels painted in loose watercolor over light pencil or ink, with soft washes, bleeding edges and quiet emotional lighting.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original character designs; draw the subject lightly and paint it with expressive loose watercolor washes.',
+      color_and_tone: 'Soft muted washes of grey-blue, ochre and rose with warm accent lights.',
+      lighting_and_shadow: 'Soft wash shadows and glowing untouched paper highlights.',
+      texture_and_material:
+        'Bleeding wash edges, pencil underdrawing, granulation and paper texture.',
+      camera_and_composition:
+        'Cinematic single-panel framing with quiet storytelling space, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with a reflective literary tenderness.',
+      rendering_and_quality: 'Loose expressive washes with clear readable figures and emotion.',
+      creative_brief:
+        "Watercolor graphic novel: literary graphic novel panels painted in loose watercolor over light pencil or ink, with soft washes, bleeding edges and quiet emotional lighting. Carry it through loose watercolor washes, pencil underdrawing, bleeding edges, literary mood. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'loose watercolor washes; pencil underdrawing; bleeding edges; literary mood',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-320',
+    name: 'Bouncy Brush Cartoon',
+    displayName: 'Bouncy Brush Cartoon',
+    styleAnchors: [
+      'Bouncy Brush Cartoon',
+      'thick-thin brush cartoon line',
+      'thick-thin brush line',
+    ],
+    category: '9. Comic & Cartoon Illustration',
+    domain: 'thick-thin brush cartoon line',
+    negativePrompt:
+      'stiff uniform line, speech bubbles, lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Bouncy brush cartoon: cartoon characters drawn with lively thick-to-thin brush lines that swell and taper, giving every pose a springy rhythmic bounce.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original character designs; draw the subject with springy swelling brush lines and bouncy exaggerated poses.',
+      color_and_tone: 'Cheerful flat colors with light shading under energetic black brush line.',
+      lighting_and_shadow: 'Minimal flat shadows that echo the rhythm of the line.',
+      texture_and_material: 'Tapered brush strokes, ink weight variation and clean flat fills.',
+      camera_and_composition: 'Playful compositions with characters bouncing across the frame.',
+      atmosphere_and_mood: 'Keep the requested mood with springy joyful cartoon energy.',
+      rendering_and_quality: 'Confident lively brush inking with clear readable silhouettes.',
+      creative_brief:
+        "Bouncy brush cartoon: cartoon characters drawn with lively thick-to-thin brush lines that swell and taper, giving every pose a springy rhythmic bounce. Carry it through thick-thin brush line, springy poses, flat fills, rhythmic bounce. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'thick-thin brush line; springy poses; flat fills; rhythmic bounce',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-321',
+    name: 'Scratchy Indie Comic',
+    displayName: 'Scratchy Indie Comic',
+    styleAnchors: ['Scratchy Indie Comic', 'raw pen indie comic', 'scratchy pen lines'],
+    category: '9. Comic & Cartoon Illustration',
+    domain: 'raw pen indie comic',
+    negativePrompt:
+      'polished commercial rendering, speech bubbles, lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Scratchy indie comic: raw personal comic drawing with scratchy ballpoint or nib lines, wobbly perspective and honest imperfect charm.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original character designs; draw the subject with scratchy imperfect lines that still capture it clearly.',
+      color_and_tone: 'Black ink with occasional muted watercolor or marker spot color.',
+      lighting_and_shadow: 'Scribbled hatching shadows and plenty of white paper.',
+      texture_and_material: 'Scratchy lines, corrections, ink blots and cheap paper texture.',
+      camera_and_composition:
+        'Casual diary-like framing with slightly wonky perspective, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with intimate, awkward, honest humor.',
+      rendering_and_quality: 'Loose imperfect drawing that remains readable and expressive.',
+      creative_brief:
+        "Scratchy indie comic: raw personal comic drawing with scratchy ballpoint or nib lines, wobbly perspective and honest imperfect charm. Carry it through scratchy pen lines, wobbly perspective, hatched shadows, diary honesty. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'scratchy pen lines; wobbly perspective; hatched shadows; diary honesty',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-322',
+    name: 'Glow-Flat Webcomic',
+    displayName: 'Glow-Flat Webcomic',
+    styleAnchors: ['Glow-Flat Webcomic', 'flat color webcomic with glow', 'flat modern color'],
+    category: '9. Comic & Cartoon Illustration',
+    domain: 'flat color webcomic with glow',
+    negativePrompt:
+      'muddy textures, speech bubbles, lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Glow-flat webcomic: clean flat-colored digital comic art with soft glowing light effects, gradient skies and bright modern color.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original character designs; render the subject in clean flat color with soft glowing lights and gradients.',
+      color_and_tone:
+        'Bright modern palettes of teal, coral and violet with soft glowing gradients.',
+      lighting_and_shadow: 'Flat shadows plus soft glow around light sources and magic.',
+      texture_and_material: 'Clean digital line, flat fills, soft glow halos and subtle grain.',
+      camera_and_composition:
+        'Vertical scroll-friendly framing with the character centered, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with cozy modern fantasy warmth.',
+      rendering_and_quality: 'Clean crisp digital rendering with controlled glow effects.',
+      creative_brief:
+        "Glow-flat webcomic: clean flat-colored digital comic art with soft glowing light effects, gradient skies and bright modern color. Carry it through flat modern color, soft glow halos, gradient skies, clean digital line. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'flat modern color; soft glow halos; gradient skies; clean digital line',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-323',
+    name: 'Sunny Magazine Cartoon',
+    displayName: 'Sunny Magazine Cartoon',
+    styleAnchors: [
+      'Sunny Magazine Cartoon',
+      'cheerful magazine illustration cartoon',
+      'rounded cartoon characters',
+    ],
+    category: '9. Comic & Cartoon Illustration',
+    domain: 'cheerful magazine illustration cartoon',
+    negativePrompt:
+      'dark grim palette, speech bubbles, lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Sunny magazine cartoon: cheerful mid-century magazine cartoon style with rounded characters, clean lines, sunny palettes and gentle comedic situations.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original character designs; draw the subject as a friendly rounded cartoon in a gently funny situation.',
+      color_and_tone: 'Sunny yellows, sky blues, tomato reds and soft cream backgrounds.',
+      lighting_and_shadow: 'Simple sunny lighting with light flat shadow shapes.',
+      texture_and_material: 'Clean ink lines, flat fills, slight print texture and rounded forms.',
+      camera_and_composition:
+        'Clear single-panel gag composition with readable staging, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with warm, gentle, wholesome humor.',
+      rendering_and_quality: 'Tidy polished cartoon rendering with clear shapes and staging.',
+      creative_brief:
+        "Sunny magazine cartoon: cheerful mid-century magazine cartoon style with rounded characters, clean lines, sunny palettes and gentle comedic situations. Carry it through rounded cartoon characters, sunny palette, gentle gag, clean ink. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'rounded cartoon characters; sunny palette; gentle gag; clean ink',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-324',
+    name: 'Bean-Shape Cartoon',
+    displayName: 'Bean-Shape Cartoon',
+    styleAnchors: ['Bean-Shape Cartoon', 'minimal blob character cartoon', 'bean-shaped bodies'],
+    category: '9. Comic & Cartoon Illustration',
+    domain: 'minimal blob character cartoon',
+    negativePrompt:
+      'detailed anatomy, speech bubbles, lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Bean-shape cartoon: ultra-simple characters made of soft bean and blob shapes with tiny limbs and dot eyes, expressive through posture alone.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original character designs; reduce figures to simple bean-shaped bodies with dot eyes while keeping their key props.',
+      color_and_tone: 'Soft flat pastels with one bold accent color per character.',
+      lighting_and_shadow: 'Almost no shading, maybe a single soft shadow under each bean.',
+      texture_and_material: 'Smooth clean shapes, thin limbs, dot eyes and tiny accessories.',
+      camera_and_composition:
+        'Simple compositions with generous empty background space, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with gentle, cute, understated comedy.',
+      rendering_and_quality:
+        'Clean minimal shapes with precise expressive posture, kept consistent across the whole image.',
+      creative_brief:
+        "Bean-shape cartoon: ultra-simple characters made of soft bean and blob shapes with tiny limbs and dot eyes, expressive through posture alone. Carry it through bean-shaped bodies, dot eyes, tiny limbs, minimal pastels. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'bean-shaped bodies; dot eyes; tiny limbs; minimal pastels',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-325',
+    name: 'Creature Feature Comic',
+    displayName: 'Creature Feature Comic',
+    styleAnchors: ['Creature Feature Comic', 'monster movie comic art', 'towering creature'],
+    category: '9. Comic & Cartoon Illustration',
+    domain: 'monster movie comic art',
+    negativePrompt:
+      'gore, speech bubbles, lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Creature feature comic: classic monster-movie comic art with towering creatures, screaming crowds, dramatic low angles and lurid saturated color.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original character designs; stage the subject as a thrilling creature-feature moment with dramatic scale.',
+      color_and_tone: 'Lurid greens, sickly yellows, bright crimsons and deep purple night skies.',
+      lighting_and_shadow: 'Dramatic up-lighting and searchlights with heavy black shadows.',
+      texture_and_material: 'Bold inked creature texture, slime, scales and crumbling buildings.',
+      camera_and_composition: 'Low heroic angles with tiny fleeing figures and towering monsters.',
+      atmosphere_and_mood: 'Keep the requested mood with pulpy thrilling monster-movie fun.',
+      rendering_and_quality: 'Bold vivid comic rendering without gore, clear readable scale.',
+      creative_brief:
+        "Creature feature comic: classic monster-movie comic art with towering creatures, screaming crowds, dramatic low angles and lurid saturated color. Carry it through towering creature, fleeing crowds, lurid colors, dramatic low angle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'towering creature; fleeing crowds; lurid colors; dramatic low angle',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-326',
+    name: 'Pulp Sci-Fi Panel',
+    displayName: 'Pulp Sci-Fi Panel',
+    styleAnchors: ['Pulp Sci-Fi Panel', 'retro space adventure comic', 'finned rockets'],
+    category: '9. Comic & Cartoon Illustration',
+    domain: 'retro space adventure comic',
+    negativePrompt:
+      'gritty modern realism, speech bubbles, lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Pulp sci-fi panel: retro space-adventure comic panels with finned rockets, ray guns, bubble helmets, alien jungles and bold optimistic color.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original character designs; place the subject in a retro space adventure with finned ships and bubble helmets.',
+      color_and_tone: 'Bold teal, orange, magenta and chrome silver with starry black skies.',
+      lighting_and_shadow: 'Glowing ray-gun light, rim-lit helmets and dramatic planet glow.',
+      texture_and_material: 'Chrome rockets, glass bubble helmets, alien plants and ink detail.',
+      camera_and_composition: 'Dynamic action angles with planets and rockets in the background.',
+      atmosphere_and_mood: 'Keep the requested mood with optimistic retro adventure spirit.',
+      rendering_and_quality: 'Crisp vintage comic rendering with bold clean color.',
+      creative_brief:
+        "Pulp sci-fi panel: retro space-adventure comic panels with finned rockets, ray guns, bubble helmets, alien jungles and bold optimistic color. Carry it through finned rockets, bubble helmets, ray-gun glow, alien jungles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'finned rockets; bubble helmets; ray-gun glow; alien jungles',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-327',
+    name: 'Charcoal Graphic Novel',
+    displayName: 'Charcoal Graphic Novel',
+    styleAnchors: ['Charcoal Graphic Novel', 'moody charcoal comic panel', 'smudged charcoal'],
+    category: '9. Comic & Cartoon Illustration',
+    domain: 'moody charcoal comic panel',
+    negativePrompt:
+      'bright color, speech bubbles, lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Charcoal graphic novel: moody graphic novel panels drawn in smudged charcoal, heavy blacks, soft greys and erased highlights for a cinematic noir mood.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original character designs; draw the subject in rich charcoal with dramatic blacks and erased lights.',
+      color_and_tone: 'Monochrome charcoal blacks and greys, occasionally one muted red accent.',
+      lighting_and_shadow: 'Dramatic noir lighting, heavy shadows and eraser-lifted highlights.',
+      texture_and_material: 'Smudged charcoal, paper tooth, fingerprints and eraser marks.',
+      camera_and_composition:
+        'Cinematic single-panel framing with deep shadow areas, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with brooding noir atmosphere.',
+      rendering_and_quality:
+        'Expressive charcoal drawing with clear readable figures, kept consistent across the whole image.',
+      creative_brief:
+        "Charcoal graphic novel: moody graphic novel panels drawn in smudged charcoal, heavy blacks, soft greys and erased highlights for a cinematic noir mood. Carry it through smudged charcoal, heavy blacks, erased highlights, noir mood. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'smudged charcoal; heavy blacks; erased highlights; noir mood',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP22-328',
+    name: 'Wordless Pantomime Strip',
+    displayName: 'Wordless Pantomime Strip',
+    styleAnchors: [
+      'Wordless Pantomime Strip',
+      'silent gag cartoon moment',
+      'wordless storytelling',
+    ],
+    category: '9. Comic & Cartoon Illustration',
+    domain: 'silent gag cartoon moment',
+    negativePrompt:
+      'speech bubbles, captions, lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Wordless pantomime strip: silent cartoon moments told entirely through expression and body language, with clean line, clear staging and no words at all.',
+      subject_treatment:
+        "Preserve the requested identity, count, pose and action with original character designs; tell a small silent story through the subject's pose and expression.",
+      color_and_tone: 'Simple limited palette with one color highlighting the key action.',
+      lighting_and_shadow: 'Clean simple lighting that keeps the staging readable.',
+      texture_and_material: 'Clean confident line, simple backgrounds and expressive faces.',
+      camera_and_composition: 'Clear stage-like framing with the gag readable at a glance.',
+      atmosphere_and_mood: 'Keep the requested mood with quiet clever visual humor.',
+      rendering_and_quality: 'Precise expressive cartooning that needs no text to understand.',
+      creative_brief:
+        "Wordless pantomime strip: silent cartoon moments told entirely through expression and body language, with clean line, clear staging and no words at all. Carry it through wordless storytelling, expressive body language, clear staging, one accent color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features:
+        'wordless storytelling; expressive body language; clear staging; one accent color',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

@@ -3,7 +3,7 @@
     {
       "id": "pack_22",
       "name": "Trading Card Illustration Styles",
-      "presetCount": 216
+      "presetCount": 300
     }
   ],
   "presets": [
@@ -2900,6 +2900,250 @@
       "searchableText": "sp22-172 controlled caricature paint 9. comic & cartoon illustration comic & cartoon illustration pack_22 trading card illustration styles comic-and-cartoon-illustration trading-card-illustration-styles comic-and-cartoon-illustration"
     },
     {
+      "id": "SP22-317",
+      "name": "Painted Comic Cover Art",
+      "styleAnchors": [
+        "Painted Comic Cover Art",
+        "fully painted comic cover",
+        "single dramatic moment"
+      ],
+      "ref": "pack_22/SP22-317.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "comic-and-cartoon-illustration",
+      "categoryName": "9. Comic & Cartoon Illustration",
+      "domain": "fully painted comic cover",
+      "tags": [
+        "trading-card-illustration-styles",
+        "comic-and-cartoon-illustration",
+        "fully-painted-comic-cover"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-317 painted comic cover art fully painted comic cover single dramatic moment 9. comic & cartoon illustration comic & cartoon illustration fully painted comic cover pack_22 trading card illustration styles comic-and-cartoon-illustration trading-card-illustration-styles comic-and-cartoon-illustration fully-painted-comic-cover"
+    },
+    {
+      "id": "SP22-318",
+      "name": "Four-Color Newsprint Hero",
+      "styleAnchors": [
+        "Four-Color Newsprint Hero",
+        "vintage four-color comic print",
+        "coarse color dots"
+      ],
+      "ref": "pack_22/SP22-318.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "comic-and-cartoon-illustration",
+      "categoryName": "9. Comic & Cartoon Illustration",
+      "domain": "vintage four-color comic print",
+      "tags": [
+        "trading-card-illustration-styles",
+        "comic-and-cartoon-illustration",
+        "vintage-four-color-comic-print"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-318 four-color newsprint hero vintage four-color comic print coarse color dots 9. comic & cartoon illustration comic & cartoon illustration vintage four-color comic print pack_22 trading card illustration styles comic-and-cartoon-illustration trading-card-illustration-styles comic-and-cartoon-illustration vintage-four-color-comic-print"
+    },
+    {
+      "id": "SP22-319",
+      "name": "Watercolor Graphic Novel",
+      "styleAnchors": [
+        "Watercolor Graphic Novel",
+        "watercolor-painted graphic novel panel",
+        "loose watercolor washes"
+      ],
+      "ref": "pack_22/SP22-319.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "comic-and-cartoon-illustration",
+      "categoryName": "9. Comic & Cartoon Illustration",
+      "domain": "watercolor-painted graphic novel panel",
+      "tags": [
+        "trading-card-illustration-styles",
+        "comic-and-cartoon-illustration",
+        "watercolor-painted-graphic-novel-panel"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-319 watercolor graphic novel watercolor-painted graphic novel panel loose watercolor washes 9. comic & cartoon illustration comic & cartoon illustration watercolor-painted graphic novel panel pack_22 trading card illustration styles comic-and-cartoon-illustration trading-card-illustration-styles comic-and-cartoon-illustration watercolor-painted-graphic-novel-panel"
+    },
+    {
+      "id": "SP22-320",
+      "name": "Bouncy Brush Cartoon",
+      "styleAnchors": [
+        "Bouncy Brush Cartoon",
+        "thick-thin brush cartoon line",
+        "thick-thin brush line"
+      ],
+      "ref": "pack_22/SP22-320.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "comic-and-cartoon-illustration",
+      "categoryName": "9. Comic & Cartoon Illustration",
+      "domain": "thick-thin brush cartoon line",
+      "tags": [
+        "trading-card-illustration-styles",
+        "comic-and-cartoon-illustration",
+        "thick-thin-brush-cartoon-line"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-320 bouncy brush cartoon thick-thin brush cartoon line thick-thin brush line 9. comic & cartoon illustration comic & cartoon illustration thick-thin brush cartoon line pack_22 trading card illustration styles comic-and-cartoon-illustration trading-card-illustration-styles comic-and-cartoon-illustration thick-thin-brush-cartoon-line"
+    },
+    {
+      "id": "SP22-321",
+      "name": "Scratchy Indie Comic",
+      "styleAnchors": ["Scratchy Indie Comic", "raw pen indie comic", "scratchy pen lines"],
+      "ref": "pack_22/SP22-321.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "comic-and-cartoon-illustration",
+      "categoryName": "9. Comic & Cartoon Illustration",
+      "domain": "raw pen indie comic",
+      "tags": [
+        "trading-card-illustration-styles",
+        "comic-and-cartoon-illustration",
+        "raw-pen-indie-comic"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-321 scratchy indie comic raw pen indie comic scratchy pen lines 9. comic & cartoon illustration comic & cartoon illustration raw pen indie comic pack_22 trading card illustration styles comic-and-cartoon-illustration trading-card-illustration-styles comic-and-cartoon-illustration raw-pen-indie-comic"
+    },
+    {
+      "id": "SP22-322",
+      "name": "Glow-Flat Webcomic",
+      "styleAnchors": ["Glow-Flat Webcomic", "flat color webcomic with glow", "flat modern color"],
+      "ref": "pack_22/SP22-322.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "comic-and-cartoon-illustration",
+      "categoryName": "9. Comic & Cartoon Illustration",
+      "domain": "flat color webcomic with glow",
+      "tags": [
+        "trading-card-illustration-styles",
+        "comic-and-cartoon-illustration",
+        "flat-color-webcomic-with-glow"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-322 glow-flat webcomic flat color webcomic with glow flat modern color 9. comic & cartoon illustration comic & cartoon illustration flat color webcomic with glow pack_22 trading card illustration styles comic-and-cartoon-illustration trading-card-illustration-styles comic-and-cartoon-illustration flat-color-webcomic-with-glow"
+    },
+    {
+      "id": "SP22-323",
+      "name": "Sunny Magazine Cartoon",
+      "styleAnchors": [
+        "Sunny Magazine Cartoon",
+        "cheerful magazine illustration cartoon",
+        "rounded cartoon characters"
+      ],
+      "ref": "pack_22/SP22-323.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "comic-and-cartoon-illustration",
+      "categoryName": "9. Comic & Cartoon Illustration",
+      "domain": "cheerful magazine illustration cartoon",
+      "tags": [
+        "trading-card-illustration-styles",
+        "comic-and-cartoon-illustration",
+        "cheerful-magazine-illustration-cartoon"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-323 sunny magazine cartoon cheerful magazine illustration cartoon rounded cartoon characters 9. comic & cartoon illustration comic & cartoon illustration cheerful magazine illustration cartoon pack_22 trading card illustration styles comic-and-cartoon-illustration trading-card-illustration-styles comic-and-cartoon-illustration cheerful-magazine-illustration-cartoon"
+    },
+    {
+      "id": "SP22-324",
+      "name": "Bean-Shape Cartoon",
+      "styleAnchors": [
+        "Bean-Shape Cartoon",
+        "minimal blob character cartoon",
+        "bean-shaped bodies"
+      ],
+      "ref": "pack_22/SP22-324.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "comic-and-cartoon-illustration",
+      "categoryName": "9. Comic & Cartoon Illustration",
+      "domain": "minimal blob character cartoon",
+      "tags": [
+        "trading-card-illustration-styles",
+        "comic-and-cartoon-illustration",
+        "minimal-blob-character-cartoon"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-324 bean-shape cartoon minimal blob character cartoon bean-shaped bodies 9. comic & cartoon illustration comic & cartoon illustration minimal blob character cartoon pack_22 trading card illustration styles comic-and-cartoon-illustration trading-card-illustration-styles comic-and-cartoon-illustration minimal-blob-character-cartoon"
+    },
+    {
+      "id": "SP22-325",
+      "name": "Creature Feature Comic",
+      "styleAnchors": ["Creature Feature Comic", "monster movie comic art", "towering creature"],
+      "ref": "pack_22/SP22-325.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "comic-and-cartoon-illustration",
+      "categoryName": "9. Comic & Cartoon Illustration",
+      "domain": "monster movie comic art",
+      "tags": [
+        "trading-card-illustration-styles",
+        "comic-and-cartoon-illustration",
+        "monster-movie-comic-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-325 creature feature comic monster movie comic art towering creature 9. comic & cartoon illustration comic & cartoon illustration monster movie comic art pack_22 trading card illustration styles comic-and-cartoon-illustration trading-card-illustration-styles comic-and-cartoon-illustration monster-movie-comic-art"
+    },
+    {
+      "id": "SP22-326",
+      "name": "Pulp Sci-Fi Panel",
+      "styleAnchors": ["Pulp Sci-Fi Panel", "retro space adventure comic", "finned rockets"],
+      "ref": "pack_22/SP22-326.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "comic-and-cartoon-illustration",
+      "categoryName": "9. Comic & Cartoon Illustration",
+      "domain": "retro space adventure comic",
+      "tags": [
+        "trading-card-illustration-styles",
+        "comic-and-cartoon-illustration",
+        "retro-space-adventure-comic"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-326 pulp sci-fi panel retro space adventure comic finned rockets 9. comic & cartoon illustration comic & cartoon illustration retro space adventure comic pack_22 trading card illustration styles comic-and-cartoon-illustration trading-card-illustration-styles comic-and-cartoon-illustration retro-space-adventure-comic"
+    },
+    {
+      "id": "SP22-327",
+      "name": "Charcoal Graphic Novel",
+      "styleAnchors": ["Charcoal Graphic Novel", "moody charcoal comic panel", "smudged charcoal"],
+      "ref": "pack_22/SP22-327.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "comic-and-cartoon-illustration",
+      "categoryName": "9. Comic & Cartoon Illustration",
+      "domain": "moody charcoal comic panel",
+      "tags": [
+        "trading-card-illustration-styles",
+        "comic-and-cartoon-illustration",
+        "moody-charcoal-comic-panel"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-327 charcoal graphic novel moody charcoal comic panel smudged charcoal 9. comic & cartoon illustration comic & cartoon illustration moody charcoal comic panel pack_22 trading card illustration styles comic-and-cartoon-illustration trading-card-illustration-styles comic-and-cartoon-illustration moody-charcoal-comic-panel"
+    },
+    {
+      "id": "SP22-328",
+      "name": "Wordless Pantomime Strip",
+      "styleAnchors": [
+        "Wordless Pantomime Strip",
+        "silent gag cartoon moment",
+        "wordless storytelling"
+      ],
+      "ref": "pack_22/SP22-328.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "comic-and-cartoon-illustration",
+      "categoryName": "9. Comic & Cartoon Illustration",
+      "domain": "silent gag cartoon moment",
+      "tags": [
+        "trading-card-illustration-styles",
+        "comic-and-cartoon-illustration",
+        "silent-gag-cartoon-moment"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-328 wordless pantomime strip silent gag cartoon moment wordless storytelling 9. comic & cartoon illustration comic & cartoon illustration silent gag cartoon moment pack_22 trading card illustration styles comic-and-cartoon-illustration trading-card-illustration-styles comic-and-cartoon-illustration silent-gag-cartoon-moment"
+    },
+    {
       "id": "SP22-173",
       "name": "Bold Woodcut",
       "ref": "pack_22/SP22-173.yaml",
@@ -2994,6 +3238,266 @@
       "tags": ["trading-card-illustration-styles", "printmaking-and-reproduction"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp22-180 drypoint veil 10. printmaking & reproduction printmaking & reproduction pack_22 trading card illustration styles printmaking-and-reproduction trading-card-illustration-styles printmaking-and-reproduction"
+    },
+    {
+      "id": "SP22-329",
+      "name": "Three-Block Color Relief",
+      "styleAnchors": [
+        "Three-Block Color Relief",
+        "three-block color relief print",
+        "three carved color blocks"
+      ],
+      "ref": "pack_22/SP22-329.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "printmaking-and-reproduction",
+      "categoryName": "10. Printmaking & Reproduction",
+      "domain": "three-block color relief print",
+      "tags": [
+        "trading-card-illustration-styles",
+        "printmaking-and-reproduction",
+        "three-block-color-relief-print"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-329 three-block color relief three-block color relief print three carved color blocks 10. printmaking & reproduction printmaking & reproduction three-block color relief print pack_22 trading card illustration styles printmaking-and-reproduction trading-card-illustration-styles printmaking-and-reproduction three-block-color-relief-print"
+    },
+    {
+      "id": "SP22-330",
+      "name": "Sugar-Lift Brush Etching",
+      "styleAnchors": [
+        "Sugar-Lift Brush Etching",
+        "painterly sugar-lift aquatint",
+        "brushstroke etching"
+      ],
+      "ref": "pack_22/SP22-330.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "printmaking-and-reproduction",
+      "categoryName": "10. Printmaking & Reproduction",
+      "domain": "painterly sugar-lift aquatint",
+      "tags": [
+        "trading-card-illustration-styles",
+        "printmaking-and-reproduction",
+        "painterly-sugar-lift-aquatint"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-330 sugar-lift brush etching painterly sugar-lift aquatint brushstroke etching 10. printmaking & reproduction printmaking & reproduction painterly sugar-lift aquatint pack_22 trading card illustration styles printmaking-and-reproduction trading-card-illustration-styles printmaking-and-reproduction painterly-sugar-lift-aquatint"
+    },
+    {
+      "id": "SP22-331",
+      "name": "Screen-Layered Flat Poster",
+      "styleAnchors": [
+        "Screen-Layered Flat Poster",
+        "layered screenprint poster",
+        "flat opaque ink layers"
+      ],
+      "ref": "pack_22/SP22-331.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "printmaking-and-reproduction",
+      "categoryName": "10. Printmaking & Reproduction",
+      "domain": "layered screenprint poster",
+      "tags": [
+        "trading-card-illustration-styles",
+        "printmaking-and-reproduction",
+        "layered-screenprint-poster"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-331 screen-layered flat poster layered screenprint poster flat opaque ink layers 10. printmaking & reproduction printmaking & reproduction layered screenprint poster pack_22 trading card illustration styles printmaking-and-reproduction trading-card-illustration-styles printmaking-and-reproduction layered-screenprint-poster"
+    },
+    {
+      "id": "SP22-332",
+      "name": "Currency Portrait Engraving",
+      "styleAnchors": [
+        "Currency Portrait Engraving",
+        "banknote-style engraved portrait",
+        "banknote line engraving"
+      ],
+      "ref": "pack_22/SP22-332.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "printmaking-and-reproduction",
+      "categoryName": "10. Printmaking & Reproduction",
+      "domain": "banknote-style engraved portrait",
+      "tags": [
+        "trading-card-illustration-styles",
+        "printmaking-and-reproduction",
+        "banknote-style-engraved-portrait"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-332 currency portrait engraving banknote-style engraved portrait banknote line engraving 10. printmaking & reproduction printmaking & reproduction banknote-style engraved portrait pack_22 trading card illustration styles printmaking-and-reproduction trading-card-illustration-styles printmaking-and-reproduction banknote-style-engraved-portrait"
+    },
+    {
+      "id": "SP22-333",
+      "name": "Chromolithograph Trade Card",
+      "styleAnchors": [
+        "Chromolithograph Trade Card",
+        "victorian color trade card print",
+        "saturated stone colors"
+      ],
+      "ref": "pack_22/SP22-333.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "printmaking-and-reproduction",
+      "categoryName": "10. Printmaking & Reproduction",
+      "domain": "victorian color trade card print",
+      "tags": [
+        "trading-card-illustration-styles",
+        "printmaking-and-reproduction",
+        "victorian-color-trade-card-print"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-333 chromolithograph trade card victorian color trade card print saturated stone colors 10. printmaking & reproduction printmaking & reproduction victorian color trade card print pack_22 trading card illustration styles printmaking-and-reproduction trading-card-illustration-styles printmaking-and-reproduction victorian-color-trade-card-print"
+    },
+    {
+      "id": "SP22-334",
+      "name": "Block-Stamped Repeat",
+      "styleAnchors": [
+        "Block-Stamped Repeat",
+        "hand-stamped block pattern image",
+        "repeated hand stamps"
+      ],
+      "ref": "pack_22/SP22-334.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "printmaking-and-reproduction",
+      "categoryName": "10. Printmaking & Reproduction",
+      "domain": "hand-stamped block pattern image",
+      "tags": [
+        "trading-card-illustration-styles",
+        "printmaking-and-reproduction",
+        "hand-stamped-block-pattern-image"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-334 block-stamped repeat hand-stamped block pattern image repeated hand stamps 10. printmaking & reproduction printmaking & reproduction hand-stamped block pattern image pack_22 trading card illustration styles printmaking-and-reproduction trading-card-illustration-styles printmaking-and-reproduction hand-stamped-block-pattern-image"
+    },
+    {
+      "id": "SP22-335",
+      "name": "Plate-Tone Etching",
+      "styleAnchors": ["Plate-Tone Etching", "etching with wiped plate tone", "fine etched line"],
+      "ref": "pack_22/SP22-335.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "printmaking-and-reproduction",
+      "categoryName": "10. Printmaking & Reproduction",
+      "domain": "etching with wiped plate tone",
+      "tags": [
+        "trading-card-illustration-styles",
+        "printmaking-and-reproduction",
+        "etching-with-wiped-plate-tone"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-335 plate-tone etching etching with wiped plate tone fine etched line 10. printmaking & reproduction printmaking & reproduction etching with wiped plate tone pack_22 trading card illustration styles printmaking-and-reproduction trading-card-illustration-styles printmaking-and-reproduction etching-with-wiped-plate-tone"
+    },
+    {
+      "id": "SP22-336",
+      "name": "Three-Drum Riso Overlay",
+      "styleAnchors": [
+        "Three-Drum Riso Overlay",
+        "three-color risograph overlay",
+        "three riso inks"
+      ],
+      "ref": "pack_22/SP22-336.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "printmaking-and-reproduction",
+      "categoryName": "10. Printmaking & Reproduction",
+      "domain": "three-color risograph overlay",
+      "tags": [
+        "trading-card-illustration-styles",
+        "printmaking-and-reproduction",
+        "three-color-risograph-overlay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-336 three-drum riso overlay three-color risograph overlay three riso inks 10. printmaking & reproduction printmaking & reproduction three-color risograph overlay pack_22 trading card illustration styles printmaking-and-reproduction trading-card-illustration-styles printmaking-and-reproduction three-color-risograph-overlay"
+    },
+    {
+      "id": "SP22-337",
+      "name": "Monoprint Ghost Pull",
+      "styleAnchors": [
+        "Monoprint Ghost Pull",
+        "faint second monoprint impression",
+        "faint second impression"
+      ],
+      "ref": "pack_22/SP22-337.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "printmaking-and-reproduction",
+      "categoryName": "10. Printmaking & Reproduction",
+      "domain": "faint second monoprint impression",
+      "tags": [
+        "trading-card-illustration-styles",
+        "printmaking-and-reproduction",
+        "faint-second-monoprint-impression"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-337 monoprint ghost pull faint second monoprint impression faint second impression 10. printmaking & reproduction printmaking & reproduction faint second monoprint impression pack_22 trading card illustration styles printmaking-and-reproduction trading-card-illustration-styles printmaking-and-reproduction faint-second-monoprint-impression"
+    },
+    {
+      "id": "SP22-338",
+      "name": "White-Line Woodblock",
+      "styleAnchors": [
+        "White-Line Woodblock",
+        "white-line color woodcut",
+        "white carved lines between colors"
+      ],
+      "ref": "pack_22/SP22-338.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "printmaking-and-reproduction",
+      "categoryName": "10. Printmaking & Reproduction",
+      "domain": "white-line color woodcut",
+      "tags": [
+        "trading-card-illustration-styles",
+        "printmaking-and-reproduction",
+        "white-line-color-woodcut"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-338 white-line woodblock white-line color woodcut white carved lines between colors 10. printmaking & reproduction printmaking & reproduction white-line color woodcut pack_22 trading card illustration styles printmaking-and-reproduction trading-card-illustration-styles printmaking-and-reproduction white-line-color-woodcut"
+    },
+    {
+      "id": "SP22-339",
+      "name": "Collotype Reticulation",
+      "styleAnchors": [
+        "Collotype Reticulation",
+        "gelatin collotype grain print",
+        "reticulated grain"
+      ],
+      "ref": "pack_22/SP22-339.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "printmaking-and-reproduction",
+      "categoryName": "10. Printmaking & Reproduction",
+      "domain": "gelatin collotype grain print",
+      "tags": [
+        "trading-card-illustration-styles",
+        "printmaking-and-reproduction",
+        "gelatin-collotype-grain-print"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-339 collotype reticulation gelatin collotype grain print reticulated grain 10. printmaking & reproduction printmaking & reproduction gelatin collotype grain print pack_22 trading card illustration styles printmaking-and-reproduction trading-card-illustration-styles printmaking-and-reproduction gelatin-collotype-grain-print"
+    },
+    {
+      "id": "SP22-340",
+      "name": "Engraved Vignette Plate",
+      "styleAnchors": [
+        "Engraved Vignette Plate",
+        "small engraved book vignette",
+        "floating vignette"
+      ],
+      "ref": "pack_22/SP22-340.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "printmaking-and-reproduction",
+      "categoryName": "10. Printmaking & Reproduction",
+      "domain": "small engraved book vignette",
+      "tags": [
+        "trading-card-illustration-styles",
+        "printmaking-and-reproduction",
+        "small-engraved-book-vignette"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-340 engraved vignette plate small engraved book vignette floating vignette 10. printmaking & reproduction printmaking & reproduction small engraved book vignette pack_22 trading card illustration styles printmaking-and-reproduction trading-card-illustration-styles printmaking-and-reproduction small-engraved-book-vignette"
     },
     {
       "id": "SP22-181",
@@ -3092,6 +3596,242 @@
       "searchableText": "sp22-188 calligraphic gesture wash 11. ornament & symbolic illustration ornament & symbolic illustration pack_22 trading card illustration styles ornament-and-symbolic-illustration trading-card-illustration-styles ornament-and-symbolic-illustration"
     },
     {
+      "id": "SP22-341",
+      "name": "Arabesque Scroll Frame",
+      "styleAnchors": [
+        "Arabesque Scroll Frame",
+        "interlaced arabesque ornament frame",
+        "interlacing scrolls"
+      ],
+      "ref": "pack_22/SP22-341.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "ornament-and-symbolic-illustration",
+      "categoryName": "11. Ornament & Symbolic Illustration",
+      "domain": "interlaced arabesque ornament frame",
+      "tags": [
+        "trading-card-illustration-styles",
+        "ornament-and-symbolic-illustration",
+        "interlaced-arabesque-ornament-frame"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-341 arabesque scroll frame interlaced arabesque ornament frame interlacing scrolls 11. ornament & symbolic illustration ornament & symbolic illustration interlaced arabesque ornament frame pack_22 trading card illustration styles ornament-and-symbolic-illustration trading-card-illustration-styles ornament-and-symbolic-illustration interlaced-arabesque-ornament-frame"
+    },
+    {
+      "id": "SP22-342",
+      "name": "Mandala Ring Ornament",
+      "styleAnchors": [
+        "Mandala Ring Ornament",
+        "concentric radial ornament rings",
+        "concentric rings"
+      ],
+      "ref": "pack_22/SP22-342.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "ornament-and-symbolic-illustration",
+      "categoryName": "11. Ornament & Symbolic Illustration",
+      "domain": "concentric radial ornament rings",
+      "tags": [
+        "trading-card-illustration-styles",
+        "ornament-and-symbolic-illustration",
+        "concentric-radial-ornament-rings"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-342 mandala ring ornament concentric radial ornament rings concentric rings 11. ornament & symbolic illustration ornament & symbolic illustration concentric radial ornament rings pack_22 trading card illustration styles ornament-and-symbolic-illustration trading-card-illustration-styles ornament-and-symbolic-illustration concentric-radial-ornament-rings"
+    },
+    {
+      "id": "SP22-343",
+      "name": "Arched Icon Frame",
+      "styleAnchors": ["Arched Icon Frame", "arched devotional card frame", "tall arch frame"],
+      "ref": "pack_22/SP22-343.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "ornament-and-symbolic-illustration",
+      "categoryName": "11. Ornament & Symbolic Illustration",
+      "domain": "arched devotional card frame",
+      "tags": [
+        "trading-card-illustration-styles",
+        "ornament-and-symbolic-illustration",
+        "arched-devotional-card-frame"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-343 arched icon frame arched devotional card frame tall arch frame 11. ornament & symbolic illustration ornament & symbolic illustration arched devotional card frame pack_22 trading card illustration styles ornament-and-symbolic-illustration trading-card-illustration-styles ornament-and-symbolic-illustration arched-devotional-card-frame"
+    },
+    {
+      "id": "SP22-344",
+      "name": "Heraldic Mantling Swirl",
+      "styleAnchors": [
+        "Heraldic Mantling Swirl",
+        "heraldic mantling and supporters",
+        "swirling mantling"
+      ],
+      "ref": "pack_22/SP22-344.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "ornament-and-symbolic-illustration",
+      "categoryName": "11. Ornament & Symbolic Illustration",
+      "domain": "heraldic mantling and supporters",
+      "tags": [
+        "trading-card-illustration-styles",
+        "ornament-and-symbolic-illustration",
+        "heraldic-mantling-and-supporters"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-344 heraldic mantling swirl heraldic mantling and supporters swirling mantling 11. ornament & symbolic illustration ornament & symbolic illustration heraldic mantling and supporters pack_22 trading card illustration styles ornament-and-symbolic-illustration trading-card-illustration-styles ornament-and-symbolic-illustration heraldic-mantling-and-supporters"
+    },
+    {
+      "id": "SP22-345",
+      "name": "Celestial Wheel Ornament",
+      "styleAnchors": ["Celestial Wheel Ornament", "astrological wheel design", "celestial wheel"],
+      "ref": "pack_22/SP22-345.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "ornament-and-symbolic-illustration",
+      "categoryName": "11. Ornament & Symbolic Illustration",
+      "domain": "astrological wheel design",
+      "tags": [
+        "trading-card-illustration-styles",
+        "ornament-and-symbolic-illustration",
+        "astrological-wheel-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-345 celestial wheel ornament astrological wheel design celestial wheel 11. ornament & symbolic illustration ornament & symbolic illustration astrological wheel design pack_22 trading card illustration styles ornament-and-symbolic-illustration trading-card-illustration-styles ornament-and-symbolic-illustration astrological-wheel-design"
+    },
+    {
+      "id": "SP22-346",
+      "name": "Whiplash Curve Ornament",
+      "styleAnchors": ["Whiplash Curve Ornament", "art nouveau whiplash lines", "whiplash curves"],
+      "ref": "pack_22/SP22-346.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "ornament-and-symbolic-illustration",
+      "categoryName": "11. Ornament & Symbolic Illustration",
+      "domain": "art nouveau whiplash lines",
+      "tags": [
+        "trading-card-illustration-styles",
+        "ornament-and-symbolic-illustration",
+        "art-nouveau-whiplash-lines"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-346 whiplash curve ornament art nouveau whiplash lines whiplash curves 11. ornament & symbolic illustration ornament & symbolic illustration art nouveau whiplash lines pack_22 trading card illustration styles ornament-and-symbolic-illustration trading-card-illustration-styles ornament-and-symbolic-illustration art-nouveau-whiplash-lines"
+    },
+    {
+      "id": "SP22-347",
+      "name": "Baroque Cartouche Frame",
+      "styleAnchors": ["Baroque Cartouche Frame", "ornate baroque cartouche", "curling cartouche"],
+      "ref": "pack_22/SP22-347.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "ornament-and-symbolic-illustration",
+      "categoryName": "11. Ornament & Symbolic Illustration",
+      "domain": "ornate baroque cartouche",
+      "tags": [
+        "trading-card-illustration-styles",
+        "ornament-and-symbolic-illustration",
+        "ornate-baroque-cartouche"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-347 baroque cartouche frame ornate baroque cartouche curling cartouche 11. ornament & symbolic illustration ornament & symbolic illustration ornate baroque cartouche pack_22 trading card illustration styles ornament-and-symbolic-illustration trading-card-illustration-styles ornament-and-symbolic-illustration ornate-baroque-cartouche"
+    },
+    {
+      "id": "SP22-348",
+      "name": "Doily Lace Border",
+      "styleAnchors": ["Doily Lace Border", "paper lace doily ornament", "paper lace doily"],
+      "ref": "pack_22/SP22-348.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "ornament-and-symbolic-illustration",
+      "categoryName": "11. Ornament & Symbolic Illustration",
+      "domain": "paper lace doily ornament",
+      "tags": [
+        "trading-card-illustration-styles",
+        "ornament-and-symbolic-illustration",
+        "paper-lace-doily-ornament"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-348 doily lace border paper lace doily ornament paper lace doily 11. ornament & symbolic illustration ornament & symbolic illustration paper lace doily ornament pack_22 trading card illustration styles ornament-and-symbolic-illustration trading-card-illustration-styles ornament-and-symbolic-illustration paper-lace-doily-ornament"
+    },
+    {
+      "id": "SP22-349",
+      "name": "Emblem-Book Allegory",
+      "styleAnchors": ["Emblem-Book Allegory", "symbolic emblem book image", "symbolic objects"],
+      "ref": "pack_22/SP22-349.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "ornament-and-symbolic-illustration",
+      "categoryName": "11. Ornament & Symbolic Illustration",
+      "domain": "symbolic emblem book image",
+      "tags": [
+        "trading-card-illustration-styles",
+        "ornament-and-symbolic-illustration",
+        "symbolic-emblem-book-image"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-349 emblem-book allegory symbolic emblem book image symbolic objects 11. ornament & symbolic illustration ornament & symbolic illustration symbolic emblem book image pack_22 trading card illustration styles ornament-and-symbolic-illustration trading-card-illustration-styles ornament-and-symbolic-illustration symbolic-emblem-book-image"
+    },
+    {
+      "id": "SP22-350",
+      "name": "Sacred Geometry Overlay",
+      "styleAnchors": [
+        "Sacred Geometry Overlay",
+        "geometric construction lines overlay",
+        "golden construction lines"
+      ],
+      "ref": "pack_22/SP22-350.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "ornament-and-symbolic-illustration",
+      "categoryName": "11. Ornament & Symbolic Illustration",
+      "domain": "geometric construction lines overlay",
+      "tags": [
+        "trading-card-illustration-styles",
+        "ornament-and-symbolic-illustration",
+        "geometric-construction-lines-overlay"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-350 sacred geometry overlay geometric construction lines overlay golden construction lines 11. ornament & symbolic illustration ornament & symbolic illustration geometric construction lines overlay pack_22 trading card illustration styles ornament-and-symbolic-illustration trading-card-illustration-styles ornament-and-symbolic-illustration geometric-construction-lines-overlay"
+    },
+    {
+      "id": "SP22-351",
+      "name": "Chintz Floral Surround",
+      "styleAnchors": [
+        "Chintz Floral Surround",
+        "dense chintz flower surround",
+        "dense chintz flowers"
+      ],
+      "ref": "pack_22/SP22-351.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "ornament-and-symbolic-illustration",
+      "categoryName": "11. Ornament & Symbolic Illustration",
+      "domain": "dense chintz flower surround",
+      "tags": [
+        "trading-card-illustration-styles",
+        "ornament-and-symbolic-illustration",
+        "dense-chintz-flower-surround"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-351 chintz floral surround dense chintz flower surround dense chintz flowers 11. ornament & symbolic illustration ornament & symbolic illustration dense chintz flower surround pack_22 trading card illustration styles ornament-and-symbolic-illustration trading-card-illustration-styles ornament-and-symbolic-illustration dense-chintz-flower-surround"
+    },
+    {
+      "id": "SP22-352",
+      "name": "Radiant Halo Burst",
+      "styleAnchors": ["Radiant Halo Burst", "radiating halo and rays", "radiating rays"],
+      "ref": "pack_22/SP22-352.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "ornament-and-symbolic-illustration",
+      "categoryName": "11. Ornament & Symbolic Illustration",
+      "domain": "radiating halo and rays",
+      "tags": [
+        "trading-card-illustration-styles",
+        "ornament-and-symbolic-illustration",
+        "radiating-halo-and-rays"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-352 radiant halo burst radiating halo and rays radiating rays 11. ornament & symbolic illustration ornament & symbolic illustration radiating halo and rays pack_22 trading card illustration styles ornament-and-symbolic-illustration trading-card-illustration-styles ornament-and-symbolic-illustration radiating-halo-and-rays"
+    },
+    {
       "id": "SP22-189",
       "name": "Clay Garden",
       "ref": "pack_22/SP22-189.yaml",
@@ -3186,6 +3926,246 @@
       "tags": ["trading-card-illustration-styles", "crafted-materials-and-miniatures"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp22-196 folded paper forms 12. crafted materials & miniatures crafted materials & miniatures pack_22 trading card illustration styles crafted-materials-and-miniatures trading-card-illustration-styles crafted-materials-and-miniatures"
+    },
+    {
+      "id": "SP22-353",
+      "name": "Needle-Felt Figurine Scene",
+      "styleAnchors": [
+        "Needle-Felt Figurine Scene",
+        "needle-felted wool figures",
+        "needle-felted wool"
+      ],
+      "ref": "pack_22/SP22-353.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "crafted-materials-and-miniatures",
+      "categoryName": "12. Crafted Materials & Miniatures",
+      "domain": "needle-felted wool figures",
+      "tags": [
+        "trading-card-illustration-styles",
+        "crafted-materials-and-miniatures",
+        "needle-felted-wool-figures"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-353 needle-felt figurine scene needle-felted wool figures needle-felted wool 12. crafted materials & miniatures crafted materials & miniatures needle-felted wool figures pack_22 trading card illustration styles crafted-materials-and-miniatures trading-card-illustration-styles crafted-materials-and-miniatures needle-felted-wool-figures"
+    },
+    {
+      "id": "SP22-354",
+      "name": "Matchbox Diorama World",
+      "styleAnchors": [
+        "Matchbox Diorama World",
+        "tiny world inside a matchbox",
+        "scene inside matchbox"
+      ],
+      "ref": "pack_22/SP22-354.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "crafted-materials-and-miniatures",
+      "categoryName": "12. Crafted Materials & Miniatures",
+      "domain": "tiny world inside a matchbox",
+      "tags": [
+        "trading-card-illustration-styles",
+        "crafted-materials-and-miniatures",
+        "tiny-world-inside-a-matchbox"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-354 matchbox diorama world tiny world inside a matchbox scene inside matchbox 12. crafted materials & miniatures crafted materials & miniatures tiny world inside a matchbox pack_22 trading card illustration styles crafted-materials-and-miniatures trading-card-illustration-styles crafted-materials-and-miniatures tiny-world-inside-a-matchbox"
+    },
+    {
+      "id": "SP22-355",
+      "name": "Knitted Landscape Miniature",
+      "styleAnchors": [
+        "Knitted Landscape Miniature",
+        "landscape knitted from yarn",
+        "knitted hills"
+      ],
+      "ref": "pack_22/SP22-355.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "crafted-materials-and-miniatures",
+      "categoryName": "12. Crafted Materials & Miniatures",
+      "domain": "landscape knitted from yarn",
+      "tags": [
+        "trading-card-illustration-styles",
+        "crafted-materials-and-miniatures",
+        "landscape-knitted-from-yarn"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-355 knitted landscape miniature landscape knitted from yarn knitted hills 12. crafted materials & miniatures crafted materials & miniatures landscape knitted from yarn pack_22 trading card illustration styles crafted-materials-and-miniatures trading-card-illustration-styles crafted-materials-and-miniatures landscape-knitted-from-yarn"
+    },
+    {
+      "id": "SP22-356",
+      "name": "Salt-Dough Ornaments",
+      "styleAnchors": ["Salt-Dough Ornaments", "baked salt-dough figures", "puffy baked dough"],
+      "ref": "pack_22/SP22-356.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "crafted-materials-and-miniatures",
+      "categoryName": "12. Crafted Materials & Miniatures",
+      "domain": "baked salt-dough figures",
+      "tags": [
+        "trading-card-illustration-styles",
+        "crafted-materials-and-miniatures",
+        "baked-salt-dough-figures"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-356 salt-dough ornaments baked salt-dough figures puffy baked dough 12. crafted materials & miniatures crafted materials & miniatures baked salt-dough figures pack_22 trading card illustration styles crafted-materials-and-miniatures trading-card-illustration-styles crafted-materials-and-miniatures baked-salt-dough-figures"
+    },
+    {
+      "id": "SP22-357",
+      "name": "Bent-Wire Figures",
+      "styleAnchors": ["Bent-Wire Figures", "figures bent from wire", "continuous wire lines"],
+      "ref": "pack_22/SP22-357.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "crafted-materials-and-miniatures",
+      "categoryName": "12. Crafted Materials & Miniatures",
+      "domain": "figures bent from wire",
+      "tags": [
+        "trading-card-illustration-styles",
+        "crafted-materials-and-miniatures",
+        "figures-bent-from-wire"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-357 bent-wire figures figures bent from wire continuous wire lines 12. crafted materials & miniatures crafted materials & miniatures figures bent from wire pack_22 trading card illustration styles crafted-materials-and-miniatures trading-card-illustration-styles crafted-materials-and-miniatures figures-bent-from-wire"
+    },
+    {
+      "id": "SP22-358",
+      "name": "Clothespin Peg People",
+      "styleAnchors": ["Clothespin Peg People", "wooden peg doll figures", "wooden peg bodies"],
+      "ref": "pack_22/SP22-358.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "crafted-materials-and-miniatures",
+      "categoryName": "12. Crafted Materials & Miniatures",
+      "domain": "wooden peg doll figures",
+      "tags": [
+        "trading-card-illustration-styles",
+        "crafted-materials-and-miniatures",
+        "wooden-peg-doll-figures"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-358 clothespin peg people wooden peg doll figures wooden peg bodies 12. crafted materials & miniatures crafted materials & miniatures wooden peg doll figures pack_22 trading card illustration styles crafted-materials-and-miniatures trading-card-illustration-styles crafted-materials-and-miniatures wooden-peg-doll-figures"
+    },
+    {
+      "id": "SP22-359",
+      "name": "Terrarium Tiny World",
+      "styleAnchors": [
+        "Terrarium Tiny World",
+        "miniature world inside glass terrarium",
+        "glass terrarium"
+      ],
+      "ref": "pack_22/SP22-359.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "crafted-materials-and-miniatures",
+      "categoryName": "12. Crafted Materials & Miniatures",
+      "domain": "miniature world inside glass terrarium",
+      "tags": [
+        "trading-card-illustration-styles",
+        "crafted-materials-and-miniatures",
+        "miniature-world-inside-glass-terrarium"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-359 terrarium tiny world miniature world inside glass terrarium glass terrarium 12. crafted materials & miniatures crafted materials & miniatures miniature world inside glass terrarium pack_22 trading card illustration styles crafted-materials-and-miniatures trading-card-illustration-styles crafted-materials-and-miniatures miniature-world-inside-glass-terrarium"
+    },
+    {
+      "id": "SP22-360",
+      "name": "Seed-Bead Figures",
+      "styleAnchors": ["Seed-Bead Figures", "figures woven from tiny beads", "woven seed beads"],
+      "ref": "pack_22/SP22-360.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "crafted-materials-and-miniatures",
+      "categoryName": "12. Crafted Materials & Miniatures",
+      "domain": "figures woven from tiny beads",
+      "tags": [
+        "trading-card-illustration-styles",
+        "crafted-materials-and-miniatures",
+        "figures-woven-from-tiny-beads"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-360 seed-bead figures figures woven from tiny beads woven seed beads 12. crafted materials & miniatures crafted materials & miniatures figures woven from tiny beads pack_22 trading card illustration styles crafted-materials-and-miniatures trading-card-illustration-styles crafted-materials-and-miniatures figures-woven-from-tiny-beads"
+    },
+    {
+      "id": "SP22-361",
+      "name": "Acorn-and-Twig Figures",
+      "styleAnchors": ["Acorn-and-Twig Figures", "nature craft figures", "acorn heads"],
+      "ref": "pack_22/SP22-361.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "crafted-materials-and-miniatures",
+      "categoryName": "12. Crafted Materials & Miniatures",
+      "domain": "nature craft figures",
+      "tags": [
+        "trading-card-illustration-styles",
+        "crafted-materials-and-miniatures",
+        "nature-craft-figures"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-361 acorn-and-twig figures nature craft figures acorn heads 12. crafted materials & miniatures crafted materials & miniatures nature craft figures pack_22 trading card illustration styles crafted-materials-and-miniatures trading-card-illustration-styles crafted-materials-and-miniatures nature-craft-figures"
+    },
+    {
+      "id": "SP22-362",
+      "name": "Egg-Carton Creatures",
+      "styleAnchors": ["Egg-Carton Creatures", "creatures from egg cartons", "egg-carton cups"],
+      "ref": "pack_22/SP22-362.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "crafted-materials-and-miniatures",
+      "categoryName": "12. Crafted Materials & Miniatures",
+      "domain": "creatures from egg cartons",
+      "tags": [
+        "trading-card-illustration-styles",
+        "crafted-materials-and-miniatures",
+        "creatures-from-egg-cartons"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-362 egg-carton creatures creatures from egg cartons egg-carton cups 12. crafted materials & miniatures crafted materials & miniatures creatures from egg cartons pack_22 trading card illustration styles crafted-materials-and-miniatures trading-card-illustration-styles crafted-materials-and-miniatures creatures-from-egg-cartons"
+    },
+    {
+      "id": "SP22-363",
+      "name": "Paper-Mache Figures",
+      "styleAnchors": [
+        "Paper-Mache Figures",
+        "painted paper mache figures",
+        "layered paper strips"
+      ],
+      "ref": "pack_22/SP22-363.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "crafted-materials-and-miniatures",
+      "categoryName": "12. Crafted Materials & Miniatures",
+      "domain": "painted paper mache figures",
+      "tags": [
+        "trading-card-illustration-styles",
+        "crafted-materials-and-miniatures",
+        "painted-paper-mache-figures"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-363 paper-mache figures painted paper mache figures layered paper strips 12. crafted materials & miniatures crafted materials & miniatures painted paper mache figures pack_22 trading card illustration styles crafted-materials-and-miniatures trading-card-illustration-styles crafted-materials-and-miniatures painted-paper-mache-figures"
+    },
+    {
+      "id": "SP22-364",
+      "name": "Walnut-Shell Worlds",
+      "styleAnchors": [
+        "Walnut-Shell Worlds",
+        "tiny scenes inside walnut shells",
+        "open walnut shell"
+      ],
+      "ref": "pack_22/SP22-364.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "crafted-materials-and-miniatures",
+      "categoryName": "12. Crafted Materials & Miniatures",
+      "domain": "tiny scenes inside walnut shells",
+      "tags": [
+        "trading-card-illustration-styles",
+        "crafted-materials-and-miniatures",
+        "tiny-scenes-inside-walnut-shells"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-364 walnut-shell worlds tiny scenes inside walnut shells open walnut shell 12. crafted materials & miniatures crafted materials & miniatures tiny scenes inside walnut shells pack_22 trading card illustration styles crafted-materials-and-miniatures trading-card-illustration-styles crafted-materials-and-miniatures tiny-scenes-inside-walnut-shells"
     },
     {
       "id": "SP22-197",
@@ -3284,6 +4264,258 @@
       "searchableText": "sp22-204 descriptive color illustration 13. vintage collectible illustration vintage collectible illustration pack_22 trading card illustration styles vintage-collectible-illustration trading-card-illustration-styles vintage-collectible-illustration"
     },
     {
+      "id": "SP22-365",
+      "name": "Tea-Card Nature Plate",
+      "styleAnchors": [
+        "Tea-Card Nature Plate",
+        "collectible tea card nature illustration",
+        "single natural vignette"
+      ],
+      "ref": "pack_22/SP22-365.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "vintage-collectible-illustration",
+      "categoryName": "13. Vintage Collectible Illustration",
+      "domain": "collectible tea card nature illustration",
+      "tags": [
+        "trading-card-illustration-styles",
+        "vintage-collectible-illustration",
+        "collectible-tea-card-nature-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-365 tea-card nature plate collectible tea card nature illustration single natural vignette 13. vintage collectible illustration vintage collectible illustration collectible tea card nature illustration pack_22 trading card illustration styles vintage-collectible-illustration trading-card-illustration-styles vintage-collectible-illustration collectible-tea-card-nature-illustration"
+    },
+    {
+      "id": "SP22-366",
+      "name": "Cabinet Card Portrait",
+      "styleAnchors": [
+        "Cabinet Card Portrait",
+        "victorian studio portrait card",
+        "sepia studio portrait"
+      ],
+      "ref": "pack_22/SP22-366.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "vintage-collectible-illustration",
+      "categoryName": "13. Vintage Collectible Illustration",
+      "domain": "victorian studio portrait card",
+      "tags": [
+        "trading-card-illustration-styles",
+        "vintage-collectible-illustration",
+        "victorian-studio-portrait-card"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-366 cabinet card portrait victorian studio portrait card sepia studio portrait 13. vintage collectible illustration vintage collectible illustration victorian studio portrait card pack_22 trading card illustration styles vintage-collectible-illustration trading-card-illustration-styles vintage-collectible-illustration victorian-studio-portrait-card"
+    },
+    {
+      "id": "SP22-367",
+      "name": "Hand-Colored Postcard",
+      "styleAnchors": [
+        "Hand-Colored Postcard",
+        "hand-tinted photographic postcard",
+        "hand-applied tints"
+      ],
+      "ref": "pack_22/SP22-367.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "vintage-collectible-illustration",
+      "categoryName": "13. Vintage Collectible Illustration",
+      "domain": "hand-tinted photographic postcard",
+      "tags": [
+        "trading-card-illustration-styles",
+        "vintage-collectible-illustration",
+        "hand-tinted-photographic-postcard"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-367 hand-colored postcard hand-tinted photographic postcard hand-applied tints 13. vintage collectible illustration vintage collectible illustration hand-tinted photographic postcard pack_22 trading card illustration styles vintage-collectible-illustration trading-card-illustration-styles vintage-collectible-illustration hand-tinted-photographic-postcard"
+    },
+    {
+      "id": "SP22-368",
+      "name": "Seed Packet Illustration",
+      "styleAnchors": ["Seed Packet Illustration", "vintage seed packet art", "idealized produce"],
+      "ref": "pack_22/SP22-368.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "vintage-collectible-illustration",
+      "categoryName": "13. Vintage Collectible Illustration",
+      "domain": "vintage seed packet art",
+      "tags": [
+        "trading-card-illustration-styles",
+        "vintage-collectible-illustration",
+        "vintage-seed-packet-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-368 seed packet illustration vintage seed packet art idealized produce 13. vintage collectible illustration vintage collectible illustration vintage seed packet art pack_22 trading card illustration styles vintage-collectible-illustration trading-card-illustration-styles vintage-collectible-illustration vintage-seed-packet-art"
+    },
+    {
+      "id": "SP22-369",
+      "name": "Stereoview Card Pair",
+      "styleAnchors": [
+        "Stereoview Card Pair",
+        "side-by-side stereoscopic card",
+        "twin side-by-side photos"
+      ],
+      "ref": "pack_22/SP22-369.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "vintage-collectible-illustration",
+      "categoryName": "13. Vintage Collectible Illustration",
+      "domain": "side-by-side stereoscopic card",
+      "tags": [
+        "trading-card-illustration-styles",
+        "vintage-collectible-illustration",
+        "side-by-side-stereoscopic-card"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-369 stereoview card pair side-by-side stereoscopic card twin side-by-side photos 13. vintage collectible illustration vintage collectible illustration side-by-side stereoscopic card pack_22 trading card illustration styles vintage-collectible-illustration trading-card-illustration-styles vintage-collectible-illustration side-by-side-stereoscopic-card"
+    },
+    {
+      "id": "SP22-370",
+      "name": "Magic Lantern Slide",
+      "styleAnchors": ["Magic Lantern Slide", "glass painted lantern slide", "painted glass slide"],
+      "ref": "pack_22/SP22-370.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "vintage-collectible-illustration",
+      "categoryName": "13. Vintage Collectible Illustration",
+      "domain": "glass painted lantern slide",
+      "tags": [
+        "trading-card-illustration-styles",
+        "vintage-collectible-illustration",
+        "glass-painted-lantern-slide"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-370 magic lantern slide glass painted lantern slide painted glass slide 13. vintage collectible illustration vintage collectible illustration glass painted lantern slide pack_22 trading card illustration styles vintage-collectible-illustration trading-card-illustration-styles vintage-collectible-illustration glass-painted-lantern-slide"
+    },
+    {
+      "id": "SP22-371",
+      "name": "Victorian Die-Cut Scrap",
+      "styleAnchors": [
+        "Victorian Die-Cut Scrap",
+        "embossed die-cut paper scraps",
+        "embossed paper cutout"
+      ],
+      "ref": "pack_22/SP22-371.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "vintage-collectible-illustration",
+      "categoryName": "13. Vintage Collectible Illustration",
+      "domain": "embossed die-cut paper scraps",
+      "tags": [
+        "trading-card-illustration-styles",
+        "vintage-collectible-illustration",
+        "embossed-die-cut-paper-scraps"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-371 victorian die-cut scrap embossed die-cut paper scraps embossed paper cutout 13. vintage collectible illustration vintage collectible illustration embossed die-cut paper scraps pack_22 trading card illustration styles vintage-collectible-illustration trading-card-illustration-styles vintage-collectible-illustration embossed-die-cut-paper-scraps"
+    },
+    {
+      "id": "SP22-372",
+      "name": "Retro Gum-Card Monsters",
+      "styleAnchors": [
+        "Retro Gum-Card Monsters",
+        "bubblegum trading card monsters",
+        "wacky monster portrait"
+      ],
+      "ref": "pack_22/SP22-372.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "vintage-collectible-illustration",
+      "categoryName": "13. Vintage Collectible Illustration",
+      "domain": "bubblegum trading card monsters",
+      "tags": [
+        "trading-card-illustration-styles",
+        "vintage-collectible-illustration",
+        "bubblegum-trading-card-monsters"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-372 retro gum-card monsters bubblegum trading card monsters wacky monster portrait 13. vintage collectible illustration vintage collectible illustration bubblegum trading card monsters pack_22 trading card illustration styles vintage-collectible-illustration trading-card-illustration-styles vintage-collectible-illustration bubblegum-trading-card-monsters"
+    },
+    {
+      "id": "SP22-373",
+      "name": "Postage Stamp Miniature",
+      "styleAnchors": [
+        "Postage Stamp Miniature",
+        "engraved stamp-sized illustration",
+        "perforated edges"
+      ],
+      "ref": "pack_22/SP22-373.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "vintage-collectible-illustration",
+      "categoryName": "13. Vintage Collectible Illustration",
+      "domain": "engraved stamp-sized illustration",
+      "tags": [
+        "trading-card-illustration-styles",
+        "vintage-collectible-illustration",
+        "engraved-stamp-sized-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-373 postage stamp miniature engraved stamp-sized illustration perforated edges 13. vintage collectible illustration vintage collectible illustration engraved stamp-sized illustration pack_22 trading card illustration styles vintage-collectible-illustration trading-card-illustration-styles vintage-collectible-illustration engraved-stamp-sized-illustration"
+    },
+    {
+      "id": "SP22-374",
+      "name": "Enamel Tin Sign Art",
+      "styleAnchors": [
+        "Enamel Tin Sign Art",
+        "vintage enamel metal sign illustration",
+        "glossy enamel colors"
+      ],
+      "ref": "pack_22/SP22-374.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "vintage-collectible-illustration",
+      "categoryName": "13. Vintage Collectible Illustration",
+      "domain": "vintage enamel metal sign illustration",
+      "tags": [
+        "trading-card-illustration-styles",
+        "vintage-collectible-illustration",
+        "vintage-enamel-metal-sign-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-374 enamel tin sign art vintage enamel metal sign illustration glossy enamel colors 13. vintage collectible illustration vintage collectible illustration vintage enamel metal sign illustration pack_22 trading card illustration styles vintage-collectible-illustration trading-card-illustration-styles vintage-collectible-illustration vintage-enamel-metal-sign-illustration"
+    },
+    {
+      "id": "SP22-375",
+      "name": "Lithographed Tin Lid",
+      "styleAnchors": ["Lithographed Tin Lid", "decorated tin box lid", "printed tin lid"],
+      "ref": "pack_22/SP22-375.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "vintage-collectible-illustration",
+      "categoryName": "13. Vintage Collectible Illustration",
+      "domain": "decorated tin box lid",
+      "tags": [
+        "trading-card-illustration-styles",
+        "vintage-collectible-illustration",
+        "decorated-tin-box-lid"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-375 lithographed tin lid decorated tin box lid printed tin lid 13. vintage collectible illustration vintage collectible illustration decorated tin box lid pack_22 trading card illustration styles vintage-collectible-illustration trading-card-illustration-styles vintage-collectible-illustration decorated-tin-box-lid"
+    },
+    {
+      "id": "SP22-376",
+      "name": "Matchbook Cover Miniature",
+      "styleAnchors": [
+        "Matchbook Cover Miniature",
+        "tiny vintage matchbook art",
+        "tiny bold graphic"
+      ],
+      "ref": "pack_22/SP22-376.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "vintage-collectible-illustration",
+      "categoryName": "13. Vintage Collectible Illustration",
+      "domain": "tiny vintage matchbook art",
+      "tags": [
+        "trading-card-illustration-styles",
+        "vintage-collectible-illustration",
+        "tiny-vintage-matchbook-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-376 matchbook cover miniature tiny vintage matchbook art tiny bold graphic 13. vintage collectible illustration vintage collectible illustration tiny vintage matchbook art pack_22 trading card illustration styles vintage-collectible-illustration trading-card-illustration-styles vintage-collectible-illustration tiny-vintage-matchbook-art"
+    },
+    {
       "id": "SP22-205",
       "name": "Compact Flat-Color Print",
       "ref": "pack_22/SP22-205.yaml",
@@ -3380,6 +4612,262 @@
       "searchableText": "sp22-212 glyph-free graphic reduction 14. symbolic graphic illustration symbolic graphic illustration pack_22 trading card illustration styles symbolic-graphic-illustration trading-card-illustration-styles symbolic-graphic-illustration"
     },
     {
+      "id": "SP22-377",
+      "name": "Monoline Emblem Drawing",
+      "styleAnchors": [
+        "Monoline Emblem Drawing",
+        "single-weight line emblem",
+        "single line weight"
+      ],
+      "ref": "pack_22/SP22-377.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "symbolic-graphic-illustration",
+      "categoryName": "14. Symbolic Graphic Illustration",
+      "domain": "single-weight line emblem",
+      "tags": [
+        "trading-card-illustration-styles",
+        "symbolic-graphic-illustration",
+        "single-weight-line-emblem"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-377 monoline emblem drawing single-weight line emblem single line weight 14. symbolic graphic illustration symbolic graphic illustration single-weight line emblem pack_22 trading card illustration styles symbolic-graphic-illustration trading-card-illustration-styles symbolic-graphic-illustration single-weight-line-emblem"
+    },
+    {
+      "id": "SP22-378",
+      "name": "Hidden Figure Negative Space",
+      "styleAnchors": [
+        "Hidden Figure Negative Space",
+        "double-image negative space",
+        "double reading"
+      ],
+      "ref": "pack_22/SP22-378.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "symbolic-graphic-illustration",
+      "categoryName": "14. Symbolic Graphic Illustration",
+      "domain": "double-image negative space",
+      "tags": [
+        "trading-card-illustration-styles",
+        "symbolic-graphic-illustration",
+        "double-image-negative-space"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-378 hidden figure negative space double-image negative space double reading 14. symbolic graphic illustration symbolic graphic illustration double-image negative space pack_22 trading card illustration styles symbolic-graphic-illustration trading-card-illustration-styles symbolic-graphic-illustration double-image-negative-space"
+    },
+    {
+      "id": "SP22-379",
+      "name": "Bold Two-Color Symbol",
+      "styleAnchors": [
+        "Bold Two-Color Symbol",
+        "high-impact two-color graphic",
+        "exactly two colors"
+      ],
+      "ref": "pack_22/SP22-379.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "symbolic-graphic-illustration",
+      "categoryName": "14. Symbolic Graphic Illustration",
+      "domain": "high-impact two-color graphic",
+      "tags": [
+        "trading-card-illustration-styles",
+        "symbolic-graphic-illustration",
+        "high-impact-two-color-graphic"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-379 bold two-color symbol high-impact two-color graphic exactly two colors 14. symbolic graphic illustration symbolic graphic illustration high-impact two-color graphic pack_22 trading card illustration styles symbolic-graphic-illustration trading-card-illustration-styles symbolic-graphic-illustration high-impact-two-color-graphic"
+    },
+    {
+      "id": "SP22-380",
+      "name": "Grid-Built Pictograms",
+      "styleAnchors": [
+        "Grid-Built Pictograms",
+        "pictograms constructed on a grid",
+        "visible square grid"
+      ],
+      "ref": "pack_22/SP22-380.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "symbolic-graphic-illustration",
+      "categoryName": "14. Symbolic Graphic Illustration",
+      "domain": "pictograms constructed on a grid",
+      "tags": [
+        "trading-card-illustration-styles",
+        "symbolic-graphic-illustration",
+        "pictograms-constructed-on-a-grid"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-380 grid-built pictograms pictograms constructed on a grid visible square grid 14. symbolic graphic illustration symbolic graphic illustration pictograms constructed on a grid pack_22 trading card illustration styles symbolic-graphic-illustration trading-card-illustration-styles symbolic-graphic-illustration pictograms-constructed-on-a-grid"
+    },
+    {
+      "id": "SP22-381",
+      "name": "Stencil Symbol Graphic",
+      "styleAnchors": ["Stencil Symbol Graphic", "spray stencil symbol", "stencil bridges"],
+      "ref": "pack_22/SP22-381.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "symbolic-graphic-illustration",
+      "categoryName": "14. Symbolic Graphic Illustration",
+      "domain": "spray stencil symbol",
+      "tags": [
+        "trading-card-illustration-styles",
+        "symbolic-graphic-illustration",
+        "spray-stencil-symbol"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-381 stencil symbol graphic spray stencil symbol stencil bridges 14. symbolic graphic illustration symbolic graphic illustration spray stencil symbol pack_22 trading card illustration styles symbolic-graphic-illustration trading-card-illustration-styles symbolic-graphic-illustration spray-stencil-symbol"
+    },
+    {
+      "id": "SP22-382",
+      "name": "Tangram-Piece Figures",
+      "styleAnchors": [
+        "Tangram-Piece Figures",
+        "figures from tangram shapes",
+        "seven tangram shapes"
+      ],
+      "ref": "pack_22/SP22-382.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "symbolic-graphic-illustration",
+      "categoryName": "14. Symbolic Graphic Illustration",
+      "domain": "figures from tangram shapes",
+      "tags": [
+        "trading-card-illustration-styles",
+        "symbolic-graphic-illustration",
+        "figures-from-tangram-shapes"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-382 tangram-piece figures figures from tangram shapes seven tangram shapes 14. symbolic graphic illustration symbolic graphic illustration figures from tangram shapes pack_22 trading card illustration styles symbolic-graphic-illustration trading-card-illustration-styles symbolic-graphic-illustration figures-from-tangram-shapes"
+    },
+    {
+      "id": "SP22-383",
+      "name": "Transparent Overprint Shapes",
+      "styleAnchors": [
+        "Transparent Overprint Shapes",
+        "overlapping transparent ink shapes",
+        "translucent overlapping shapes"
+      ],
+      "ref": "pack_22/SP22-383.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "symbolic-graphic-illustration",
+      "categoryName": "14. Symbolic Graphic Illustration",
+      "domain": "overlapping transparent ink shapes",
+      "tags": [
+        "trading-card-illustration-styles",
+        "symbolic-graphic-illustration",
+        "overlapping-transparent-ink-shapes"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-383 transparent overprint shapes overlapping transparent ink shapes translucent overlapping shapes 14. symbolic graphic illustration symbolic graphic illustration overlapping transparent ink shapes pack_22 trading card illustration styles symbolic-graphic-illustration trading-card-illustration-styles symbolic-graphic-illustration overlapping-transparent-ink-shapes"
+    },
+    {
+      "id": "SP22-384",
+      "name": "Heavy Block Symbolism",
+      "styleAnchors": ["Heavy Block Symbolism", "massive block graphic shapes", "massive blocks"],
+      "ref": "pack_22/SP22-384.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "symbolic-graphic-illustration",
+      "categoryName": "14. Symbolic Graphic Illustration",
+      "domain": "massive block graphic shapes",
+      "tags": [
+        "trading-card-illustration-styles",
+        "symbolic-graphic-illustration",
+        "massive-block-graphic-shapes"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-384 heavy block symbolism massive block graphic shapes massive blocks 14. symbolic graphic illustration symbolic graphic illustration massive block graphic shapes pack_22 trading card illustration styles symbolic-graphic-illustration trading-card-illustration-styles symbolic-graphic-illustration massive-block-graphic-shapes"
+    },
+    {
+      "id": "SP22-385",
+      "name": "Horizon Line Minimalism",
+      "styleAnchors": [
+        "Horizon Line Minimalism",
+        "minimal horizon composition",
+        "single horizon line"
+      ],
+      "ref": "pack_22/SP22-385.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "symbolic-graphic-illustration",
+      "categoryName": "14. Symbolic Graphic Illustration",
+      "domain": "minimal horizon composition",
+      "tags": [
+        "trading-card-illustration-styles",
+        "symbolic-graphic-illustration",
+        "minimal-horizon-composition"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-385 horizon line minimalism minimal horizon composition single horizon line 14. symbolic graphic illustration symbolic graphic illustration minimal horizon composition pack_22 trading card illustration styles symbolic-graphic-illustration trading-card-illustration-styles symbolic-graphic-illustration minimal-horizon-composition"
+    },
+    {
+      "id": "SP22-386",
+      "name": "Concentric Ripple Symbol",
+      "styleAnchors": [
+        "Concentric Ripple Symbol",
+        "concentric ring graphic symbol",
+        "concentric rings"
+      ],
+      "ref": "pack_22/SP22-386.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "symbolic-graphic-illustration",
+      "categoryName": "14. Symbolic Graphic Illustration",
+      "domain": "concentric ring graphic symbol",
+      "tags": [
+        "trading-card-illustration-styles",
+        "symbolic-graphic-illustration",
+        "concentric-ring-graphic-symbol"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-386 concentric ripple symbol concentric ring graphic symbol concentric rings 14. symbolic graphic illustration symbolic graphic illustration concentric ring graphic symbol pack_22 trading card illustration styles symbolic-graphic-illustration trading-card-illustration-styles symbolic-graphic-illustration concentric-ring-graphic-symbol"
+    },
+    {
+      "id": "SP22-387",
+      "name": "Folded Ribbon Emblem",
+      "styleAnchors": [
+        "Folded Ribbon Emblem",
+        "folded ribbon banner symbol",
+        "single folded ribbon"
+      ],
+      "ref": "pack_22/SP22-387.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "symbolic-graphic-illustration",
+      "categoryName": "14. Symbolic Graphic Illustration",
+      "domain": "folded ribbon banner symbol",
+      "tags": [
+        "trading-card-illustration-styles",
+        "symbolic-graphic-illustration",
+        "folded-ribbon-banner-symbol"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-387 folded ribbon emblem folded ribbon banner symbol single folded ribbon 14. symbolic graphic illustration symbolic graphic illustration folded ribbon banner symbol pack_22 trading card illustration styles symbolic-graphic-illustration trading-card-illustration-styles symbolic-graphic-illustration folded-ribbon-banner-symbol"
+    },
+    {
+      "id": "SP22-388",
+      "name": "Halftone Dot Silhouette",
+      "styleAnchors": [
+        "Halftone Dot Silhouette",
+        "silhouette made of halftone dots",
+        "large halftone dots"
+      ],
+      "ref": "pack_22/SP22-388.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "symbolic-graphic-illustration",
+      "categoryName": "14. Symbolic Graphic Illustration",
+      "domain": "silhouette made of halftone dots",
+      "tags": [
+        "trading-card-illustration-styles",
+        "symbolic-graphic-illustration",
+        "silhouette-made-of-halftone-dots"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-388 halftone dot silhouette silhouette made of halftone dots large halftone dots 14. symbolic graphic illustration symbolic graphic illustration silhouette made of halftone dots pack_22 trading card illustration styles symbolic-graphic-illustration trading-card-illustration-styles symbolic-graphic-illustration silhouette-made-of-halftone-dots"
+    },
+    {
       "id": "SP22-213",
       "name": "Logical Pixel Clusters",
       "ref": "pack_22/SP22-213.yaml",
@@ -3474,7 +4962,259 @@
       "tags": ["trading-card-illustration-styles", "digital-rendering-methods"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp22-220 masked digital displacement 15. digital rendering methods digital rendering methods pack_22 trading card illustration styles digital-rendering-methods trading-card-illustration-styles digital-rendering-methods"
+    },
+    {
+      "id": "SP22-389",
+      "name": "Inverted-Hull Toon Outline",
+      "styleAnchors": [
+        "Inverted-Hull Toon Outline",
+        "game toon shader with hull outline",
+        "thick silhouette outlines"
+      ],
+      "ref": "pack_22/SP22-389.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "digital-rendering-methods",
+      "categoryName": "15. Digital Rendering Methods",
+      "domain": "game toon shader with hull outline",
+      "tags": [
+        "trading-card-illustration-styles",
+        "digital-rendering-methods",
+        "game-toon-shader-with-hull-outline"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-389 inverted-hull toon outline game toon shader with hull outline thick silhouette outlines 15. digital rendering methods digital rendering methods game toon shader with hull outline pack_22 trading card illustration styles digital-rendering-methods trading-card-illustration-styles digital-rendering-methods game-toon-shader-with-hull-outline"
+    },
+    {
+      "id": "SP22-390",
+      "name": "Matcap Sculpt Preview",
+      "styleAnchors": [
+        "Matcap Sculpt Preview",
+        "digital sculpting matcap preview",
+        "single matcap material"
+      ],
+      "ref": "pack_22/SP22-390.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "digital-rendering-methods",
+      "categoryName": "15. Digital Rendering Methods",
+      "domain": "digital sculpting matcap preview",
+      "tags": [
+        "trading-card-illustration-styles",
+        "digital-rendering-methods",
+        "digital-sculpting-matcap-preview"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-390 matcap sculpt preview digital sculpting matcap preview single matcap material 15. digital rendering methods digital rendering methods digital sculpting matcap preview pack_22 trading card illustration styles digital-rendering-methods trading-card-illustration-styles digital-rendering-methods digital-sculpting-matcap-preview"
+    },
+    {
+      "id": "SP22-391",
+      "name": "Normal-Map Color Render",
+      "styleAnchors": ["Normal-Map Color Render", "surface normals as color", "normal-map colors"],
+      "ref": "pack_22/SP22-391.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "digital-rendering-methods",
+      "categoryName": "15. Digital Rendering Methods",
+      "domain": "surface normals as color",
+      "tags": [
+        "trading-card-illustration-styles",
+        "digital-rendering-methods",
+        "surface-normals-as-color"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-391 normal-map color render surface normals as color normal-map colors 15. digital rendering methods digital rendering methods surface normals as color pack_22 trading card illustration styles digital-rendering-methods trading-card-illustration-styles digital-rendering-methods surface-normals-as-color"
+    },
+    {
+      "id": "SP22-392",
+      "name": "Ray-Marched Fractal Forms",
+      "styleAnchors": [
+        "Ray-Marched Fractal Forms",
+        "raymarched fractal geometry render",
+        "fractal geometry"
+      ],
+      "ref": "pack_22/SP22-392.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "digital-rendering-methods",
+      "categoryName": "15. Digital Rendering Methods",
+      "domain": "raymarched fractal geometry render",
+      "tags": [
+        "trading-card-illustration-styles",
+        "digital-rendering-methods",
+        "raymarched-fractal-geometry-render"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-392 ray-marched fractal forms raymarched fractal geometry render fractal geometry 15. digital rendering methods digital rendering methods raymarched fractal geometry render pack_22 trading card illustration styles digital-rendering-methods trading-card-illustration-styles digital-rendering-methods raymarched-fractal-geometry-render"
+    },
+    {
+      "id": "SP22-393",
+      "name": "Gradient-Map Painting",
+      "styleAnchors": [
+        "Gradient-Map Painting",
+        "value remapped to gradient palette",
+        "single gradient palette"
+      ],
+      "ref": "pack_22/SP22-393.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "digital-rendering-methods",
+      "categoryName": "15. Digital Rendering Methods",
+      "domain": "value remapped to gradient palette",
+      "tags": [
+        "trading-card-illustration-styles",
+        "digital-rendering-methods",
+        "value-remapped-to-gradient-palette"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-393 gradient-map painting value remapped to gradient palette single gradient palette 15. digital rendering methods digital rendering methods value remapped to gradient palette pack_22 trading card illustration styles digital-rendering-methods trading-card-illustration-styles digital-rendering-methods value-remapped-to-gradient-palette"
+    },
+    {
+      "id": "SP22-394",
+      "name": "Soft Clay Digital Render",
+      "styleAnchors": [
+        "Soft Clay Digital Render",
+        "3d render of plasticine look",
+        "plasticine look"
+      ],
+      "ref": "pack_22/SP22-394.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "digital-rendering-methods",
+      "categoryName": "15. Digital Rendering Methods",
+      "domain": "3d render of plasticine look",
+      "tags": [
+        "trading-card-illustration-styles",
+        "digital-rendering-methods",
+        "3d-render-of-plasticine-look"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-394 soft clay digital render 3d render of plasticine look plasticine look 15. digital rendering methods digital rendering methods 3d render of plasticine look pack_22 trading card illustration styles digital-rendering-methods trading-card-illustration-styles digital-rendering-methods 3d-render-of-plasticine-look"
+    },
+    {
+      "id": "SP22-395",
+      "name": "Jittery Low-Poly Retro Render",
+      "styleAnchors": ["Jittery Low-Poly Retro Render", "early console 3d render", "very low poly"],
+      "ref": "pack_22/SP22-395.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "digital-rendering-methods",
+      "categoryName": "15. Digital Rendering Methods",
+      "domain": "early console 3d render",
+      "tags": [
+        "trading-card-illustration-styles",
+        "digital-rendering-methods",
+        "early-console-3d-render"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-395 jittery low-poly retro render early console 3d render very low poly 15. digital rendering methods digital rendering methods early console 3d render pack_22 trading card illustration styles digital-rendering-methods trading-card-illustration-styles digital-rendering-methods early-console-3d-render"
+    },
+    {
+      "id": "SP22-396",
+      "name": "Signed-Distance Soft Blend",
+      "styleAnchors": [
+        "Signed-Distance Soft Blend",
+        "smoothly blended shape render",
+        "smooth shape unions"
+      ],
+      "ref": "pack_22/SP22-396.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "digital-rendering-methods",
+      "categoryName": "15. Digital Rendering Methods",
+      "domain": "smoothly blended shape render",
+      "tags": [
+        "trading-card-illustration-styles",
+        "digital-rendering-methods",
+        "smoothly-blended-shape-render"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-396 signed-distance soft blend smoothly blended shape render smooth shape unions 15. digital rendering methods digital rendering methods smoothly blended shape render pack_22 trading card illustration styles digital-rendering-methods trading-card-illustration-styles digital-rendering-methods smoothly-blended-shape-render"
+    },
+    {
+      "id": "SP22-397",
+      "name": "Baked Lightmap Look",
+      "styleAnchors": [
+        "Baked Lightmap Look",
+        "game baked lighting environment",
+        "soft baked shadows"
+      ],
+      "ref": "pack_22/SP22-397.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "digital-rendering-methods",
+      "categoryName": "15. Digital Rendering Methods",
+      "domain": "game baked lighting environment",
+      "tags": [
+        "trading-card-illustration-styles",
+        "digital-rendering-methods",
+        "game-baked-lighting-environment"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-397 baked lightmap look game baked lighting environment soft baked shadows 15. digital rendering methods digital rendering methods game baked lighting environment pack_22 trading card illustration styles digital-rendering-methods trading-card-illustration-styles digital-rendering-methods game-baked-lighting-environment"
+    },
+    {
+      "id": "SP22-398",
+      "name": "Mirror-Floor Reflection Render",
+      "styleAnchors": [
+        "Mirror-Floor Reflection Render",
+        "glossy reflective floor render",
+        "mirror floor"
+      ],
+      "ref": "pack_22/SP22-398.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "digital-rendering-methods",
+      "categoryName": "15. Digital Rendering Methods",
+      "domain": "glossy reflective floor render",
+      "tags": [
+        "trading-card-illustration-styles",
+        "digital-rendering-methods",
+        "glossy-reflective-floor-render"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-398 mirror-floor reflection render glossy reflective floor render mirror floor 15. digital rendering methods digital rendering methods glossy reflective floor render pack_22 trading card illustration styles digital-rendering-methods trading-card-illustration-styles digital-rendering-methods glossy-reflective-floor-render"
+    },
+    {
+      "id": "SP22-399",
+      "name": "Procedural Noise Terrain",
+      "styleAnchors": [
+        "Procedural Noise Terrain",
+        "noise-generated landscape render",
+        "layered noise terrain"
+      ],
+      "ref": "pack_22/SP22-399.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "digital-rendering-methods",
+      "categoryName": "15. Digital Rendering Methods",
+      "domain": "noise-generated landscape render",
+      "tags": [
+        "trading-card-illustration-styles",
+        "digital-rendering-methods",
+        "noise-generated-landscape-render"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-399 procedural noise terrain noise-generated landscape render layered noise terrain 15. digital rendering methods digital rendering methods noise-generated landscape render pack_22 trading card illustration styles digital-rendering-methods trading-card-illustration-styles digital-rendering-methods noise-generated-landscape-render"
+    },
+    {
+      "id": "SP22-400",
+      "name": "Fresnel Glow Shader",
+      "styleAnchors": ["Fresnel Glow Shader", "edge glow fresnel render", "fresnel rim glow"],
+      "ref": "pack_22/SP22-400.yaml",
+      "packId": "pack_22",
+      "packName": "Trading Card Illustration Styles",
+      "categoryId": "digital-rendering-methods",
+      "categoryName": "15. Digital Rendering Methods",
+      "domain": "edge glow fresnel render",
+      "tags": [
+        "trading-card-illustration-styles",
+        "digital-rendering-methods",
+        "edge-glow-fresnel-render"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp22-400 fresnel glow shader edge glow fresnel render fresnel rim glow 15. digital rendering methods digital rendering methods edge glow fresnel render pack_22 trading card illustration styles digital-rendering-methods trading-card-illustration-styles digital-rendering-methods edge-glow-fresnel-render"
     }
   ],
-  "totalPresetCount": 216
+  "totalPresetCount": 300
 }

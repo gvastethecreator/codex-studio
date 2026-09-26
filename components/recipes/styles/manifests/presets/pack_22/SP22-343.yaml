@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP22-343
+packId: pack_22
+name: Arched Icon Frame
+styleAnchors:
+  - Arched Icon Frame
+  - arched devotional card frame
+  - tall arch frame
+displayName: Arched Icon Frame
+category: 11. Ornament & Symbolic Illustration
+domain: arched devotional card frame
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - ornament-and-symbolic-illustration
+  - arched-frame
+  - ornament
+  - portable-style-study
+visualDna:
+  aesthetic: 'Arched icon frame: the subject framed in a tall rounded or pointed arch with decorative columns, like a devotional icon or fortune card, gilded and solemn.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action at the center; stand the subject inside a tall decorated arch like an icon.
+  color_and_tone: Deep reds, midnight blues and gold with ivory highlights.
+  lighting_and_shadow: Soft glowing light on the subject with gilded frame reflections.
+  texture_and_material: Painted columns, gilded arch edges, small ornaments and aged surface.
+  camera_and_composition: Tall vertical frame with the subject centered under the arch.
+  atmosphere_and_mood: Keep the requested mood with solemn iconic presence.
+  rendering_and_quality: Clean painted frame and polished central figure, kept consistent across the whole image.
+  creative_brief: "Arched icon frame: the subject framed in a tall rounded or pointed arch with decorative columns, like a devotional icon or fortune card, gilded and solemn. Carry it through tall arch frame, decorative columns, gilded edges, iconic pose. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: tall arch frame; decorative columns; gilded edges; iconic pose
+avoidRules:
+  - religious deity likeness
+  - readable lettering
+  - religious symbols by default
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: religious deity likeness, readable lettering, religious symbols by default, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: ornament-and-symbolic-illustration
+  categoryName: 11. Ornament & Symbolic Illustration
+  tags:
+    - trading-card-illustration
+    - ornament-and-symbolic-illustration
+    - arched-frame
+    - ornament
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: arched devotional card frame

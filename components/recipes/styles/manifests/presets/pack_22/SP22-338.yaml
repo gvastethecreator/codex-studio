@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP22-338
+packId: pack_22
+name: White-Line Woodblock
+styleAnchors:
+  - White-Line Woodblock
+  - white-line color woodcut
+  - white carved lines between colors
+displayName: White-Line Woodblock
+category: 10. Printmaking & Reproduction
+domain: white-line color woodcut
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - printmaking-and-reproduction
+  - white-line-woodblock
+  - print
+  - portable-style-study
+visualDna:
+  aesthetic: 'White-line woodblock: a single carved block with grooves separating each color area, painted and printed one section at a time, leaving white lines between colors.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action; divide the subject into color areas separated by carved white lines.
+  color_and_tone: Soft watercolor-like colors separated by crisp white carved lines.
+  lighting_and_shadow: Soft color shading within each area, white lines as structure.
+  texture_and_material: Wood grain, uneven hand-applied color, crisp white grooves.
+  camera_and_composition: Clear graphic composition with the white line as a unifying net.
+  atmosphere_and_mood: Keep the requested mood with calm handmade charm.
+  rendering_and_quality: Authentic hand-printed color with crisp white separations, kept consistent across the whole image.
+  creative_brief: "White-line woodblock: a single carved block with grooves separating each color area, painted and printed one section at a time, leaving white lines between colors. Carry it through white carved lines between colors, wood grain, hand-applied color, single block. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: white carved lines between colors; wood grain; hand-applied color; single block
+avoidRules:
+  - black outlines
+  - readable lettering
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: black outlines, readable lettering, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: printmaking-and-reproduction
+  categoryName: 10. Printmaking & Reproduction
+  tags:
+    - trading-card-illustration
+    - printmaking-and-reproduction
+    - white-line-woodblock
+    - print
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: white-line color woodcut

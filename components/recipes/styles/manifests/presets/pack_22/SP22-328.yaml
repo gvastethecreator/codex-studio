@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP22-328
+packId: pack_22
+name: Wordless Pantomime Strip
+styleAnchors:
+  - Wordless Pantomime Strip
+  - silent gag cartoon moment
+  - wordless storytelling
+displayName: Wordless Pantomime Strip
+category: 9. Comic & Cartoon Illustration
+domain: silent gag cartoon moment
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - comic-and-cartoon-illustration
+  - pantomime-strip
+  - comic
+  - portable-style-study
+visualDna:
+  aesthetic: 'Wordless pantomime strip: silent cartoon moments told entirely through expression and body language, with clean line, clear staging and no words at all.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original character designs; tell a small silent story through the subject's pose and expression.
+  color_and_tone: Simple limited palette with one color highlighting the key action.
+  lighting_and_shadow: Clean simple lighting that keeps the staging readable.
+  texture_and_material: Clean confident line, simple backgrounds and expressive faces.
+  camera_and_composition: Clear stage-like framing with the gag readable at a glance.
+  atmosphere_and_mood: Keep the requested mood with quiet clever visual humor.
+  rendering_and_quality: Precise expressive cartooning that needs no text to understand.
+  creative_brief: "Wordless pantomime strip: silent cartoon moments told entirely through expression and body language, with clean line, clear staging and no words at all. Carry it through wordless storytelling, expressive body language, clear staging, one accent color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: wordless storytelling; expressive body language; clear staging; one accent color
+avoidRules:
+  - speech bubbles
+  - captions
+  - lettering
+  - franchise character likeness
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: speech bubbles, captions, lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: comic-and-cartoon-illustration
+  categoryName: 9. Comic & Cartoon Illustration
+  tags:
+    - trading-card-illustration
+    - comic-and-cartoon-illustration
+    - pantomime-strip
+    - comic
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: silent gag cartoon moment

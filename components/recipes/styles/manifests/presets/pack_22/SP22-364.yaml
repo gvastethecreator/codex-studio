@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP22-364
+packId: pack_22
+name: Walnut-Shell Worlds
+styleAnchors:
+  - Walnut-Shell Worlds
+  - tiny scenes inside walnut shells
+  - open walnut shell
+displayName: Walnut-Shell Worlds
+category: 12. Crafted Materials & Miniatures
+domain: tiny scenes inside walnut shells
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - crafted-materials-and-miniatures
+  - walnut-shell
+  - craft
+  - portable-style-study
+visualDna:
+  aesthetic: 'Walnut-shell worlds: tiny detailed scenes built inside open walnut shell halves, like secret rooms or landscapes hidden in a nut.'
+  subject_treatment: Preserve the requested identity, count, pose and action while rebuilding it as a handmade craft object; place the subject as a tiny scene inside an open walnut shell.
+  color_and_tone: Warm walnut browns with small bright miniature color accents.
+  lighting_and_shadow: Soft light with tiny glowing lamps inside the shell.
+  texture_and_material: Ridged walnut shell, miniature furniture, moss and fine paint.
+  camera_and_composition: Macro view of the open shell on a wooden surface.
+  atmosphere_and_mood: Keep the requested mood with secret, magical smallness.
+  rendering_and_quality: Crisp miniature detail with believable shell texture, kept consistent across the whole image.
+  creative_brief: "Walnut-shell worlds: tiny detailed scenes built inside open walnut shell halves, like secret rooms or landscapes hidden in a nut. Carry it through open walnut shell, tiny scene inside, miniature lamps, macro view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: open walnut shell; tiny scene inside; miniature lamps; macro view
+avoidRules:
+  - large scale
+  - real toy brand
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: large scale, real toy brand, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: crafted-materials-and-miniatures
+  categoryName: 12. Crafted Materials & Miniatures
+  tags:
+    - trading-card-illustration
+    - crafted-materials-and-miniatures
+    - walnut-shell
+    - craft
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: tiny scenes inside walnut shells

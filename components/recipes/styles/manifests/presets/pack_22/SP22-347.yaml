@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP22-347
+packId: pack_22
+name: Baroque Cartouche Frame
+styleAnchors:
+  - Baroque Cartouche Frame
+  - ornate baroque cartouche
+  - curling cartouche
+displayName: Baroque Cartouche Frame
+category: 11. Ornament & Symbolic Illustration
+domain: ornate baroque cartouche
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - ornament-and-symbolic-illustration
+  - baroque-cartouche
+  - ornament
+  - portable-style-study
+visualDna:
+  aesthetic: 'Baroque cartouche frame: the subject shown inside an ornate curling baroque cartouche of scrolls, shells, acanthus leaves and sweeping flourishes in gilded relief.'
+  subject_treatment: Preserve the requested identity, proportions, pose and action at the center; frame the subject inside a curling gilded cartouche.
+  color_and_tone: Gilded gold frames with rich painted interiors in crimson and deep teal.
+  lighting_and_shadow: Dramatic light catching the raised gilded curls, kept consistent across the whole image.
+  texture_and_material: Carved scrolls, shells, acanthus leaves and polished gilt surfaces.
+  camera_and_composition: Central oval or shield-shaped cartouche with curling edges.
+  atmosphere_and_mood: Keep the requested mood with opulent theatrical grandeur.
+  rendering_and_quality: Richly detailed ornament with clean central painting, kept consistent across the whole image.
+  creative_brief: "Baroque cartouche frame: the subject shown inside an ornate curling baroque cartouche of scrolls, shells, acanthus leaves and sweeping flourishes in gilded relief. Carry it through curling cartouche, gilded scrolls, acanthus leaves, central painting. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: curling cartouche; gilded scrolls; acanthus leaves; central painting
+avoidRules:
+  - minimalist flat
+  - readable lettering
+  - religious symbols by default
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: minimalist flat, readable lettering, religious symbols by default, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: ornament-and-symbolic-illustration
+  categoryName: 11. Ornament & Symbolic Illustration
+  tags:
+    - trading-card-illustration
+    - ornament-and-symbolic-illustration
+    - baroque-cartouche
+    - ornament
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: ornate baroque cartouche

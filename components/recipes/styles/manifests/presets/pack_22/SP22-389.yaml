@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP22-389
+packId: pack_22
+name: Inverted-Hull Toon Outline
+styleAnchors:
+  - Inverted-Hull Toon Outline
+  - game toon shader with hull outline
+  - thick silhouette outlines
+displayName: Inverted-Hull Toon Outline
+category: 15. Digital Rendering Methods
+domain: game toon shader with hull outline
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - digital-rendering-methods
+  - inverted-hull
+  - digital-render
+  - portable-style-study
+visualDna:
+  aesthetic: 'Inverted-hull toon outline: 3D characters rendered with flat toon shading and thick black outlines generated around their silhouette, like a stylized cel-shaded game.'
+  subject_treatment: Preserve the requested identity, count, pose and action; render the subject as a 3D model with two-tone toon shading and thick outlines.
+  color_and_tone: Bright flat base colors with one darker shadow tone and clean highlights.
+  lighting_and_shadow: Hard two-step toon lighting with crisp shadow terminators.
+  texture_and_material: Smooth untextured surfaces, thick black silhouette outlines and small specular dots.
+  camera_and_composition: Game-like three-quarter camera with the character full body.
+  atmosphere_and_mood: Keep the requested mood with bright stylized game energy.
+  rendering_and_quality: Clean real-time toon render with consistent outline thickness.
+  creative_brief: "Inverted-hull toon outline: 3D characters rendered with flat toon shading and thick black outlines generated around their silhouette, like a stylized cel-shaded game. Carry it through thick silhouette outlines, two-tone toon shading, 3D model, game camera. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: thick silhouette outlines; two-tone toon shading; 3D model; game camera
+avoidRules:
+  - interface overlay
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: interface overlay, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: digital-rendering-methods
+  categoryName: 15. Digital Rendering Methods
+  tags:
+    - trading-card-illustration
+    - digital-rendering-methods
+    - inverted-hull
+    - digital-render
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: game toon shader with hull outline

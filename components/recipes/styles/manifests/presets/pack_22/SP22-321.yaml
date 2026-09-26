@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP22-321
+packId: pack_22
+name: Scratchy Indie Comic
+styleAnchors:
+  - Scratchy Indie Comic
+  - raw pen indie comic
+  - scratchy pen lines
+displayName: Scratchy Indie Comic
+category: 9. Comic & Cartoon Illustration
+domain: raw pen indie comic
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - comic-and-cartoon-illustration
+  - scratchy-indie
+  - comic
+  - portable-style-study
+visualDna:
+  aesthetic: 'Scratchy indie comic: raw personal comic drawing with scratchy ballpoint or nib lines, wobbly perspective and honest imperfect charm.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original character designs; draw the subject with scratchy imperfect lines that still capture it clearly.
+  color_and_tone: Black ink with occasional muted watercolor or marker spot color.
+  lighting_and_shadow: Scribbled hatching shadows and plenty of white paper.
+  texture_and_material: Scratchy lines, corrections, ink blots and cheap paper texture.
+  camera_and_composition: Casual diary-like framing with slightly wonky perspective, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with intimate, awkward, honest humor.
+  rendering_and_quality: Loose imperfect drawing that remains readable and expressive.
+  creative_brief: "Scratchy indie comic: raw personal comic drawing with scratchy ballpoint or nib lines, wobbly perspective and honest imperfect charm. Carry it through scratchy pen lines, wobbly perspective, hatched shadows, diary honesty. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: scratchy pen lines; wobbly perspective; hatched shadows; diary honesty
+avoidRules:
+  - polished commercial rendering
+  - speech bubbles
+  - lettering
+  - franchise character likeness
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: polished commercial rendering, speech bubbles, lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: comic-and-cartoon-illustration
+  categoryName: 9. Comic & Cartoon Illustration
+  tags:
+    - trading-card-illustration
+    - comic-and-cartoon-illustration
+    - scratchy-indie
+    - comic
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: raw pen indie comic

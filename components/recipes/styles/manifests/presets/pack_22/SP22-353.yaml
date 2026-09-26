@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP22-353
+packId: pack_22
+name: Needle-Felt Figurine Scene
+styleAnchors:
+  - Needle-Felt Figurine Scene
+  - needle-felted wool figures
+  - needle-felted wool
+displayName: Needle-Felt Figurine Scene
+category: 12. Crafted Materials & Miniatures
+domain: needle-felted wool figures
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - trading-card-illustration
+  - crafted-materials-and-miniatures
+  - needle-felt
+  - craft
+  - portable-style-study
+visualDna:
+  aesthetic: 'Needle-felt figurine scene: small figures sculpted from fuzzy needle-felted wool, soft rounded shapes with stray fibers, arranged on a tabletop miniature set.'
+  subject_treatment: Preserve the requested identity, count, pose and action while rebuilding it as a handmade craft object; sculpt the subject from fuzzy felted wool with simplified rounded forms.
+  color_and_tone: Soft natural wool colors with gentle pastel and earthy accents.
+  lighting_and_shadow: Soft window light with gentle shadows and glowing fuzzy edges.
+  texture_and_material: Dense felted wool, stray fibers, tiny bead eyes and soft seams.
+  camera_and_composition: Close macro tabletop view with shallow depth of field.
+  atmosphere_and_mood: Keep the requested mood with cozy, tender, handmade warmth.
+  rendering_and_quality: Believable felted texture with crisp macro detail on the fibers.
+  creative_brief: "Needle-felt figurine scene: small figures sculpted from fuzzy needle-felted wool, soft rounded shapes with stray fibers, arranged on a tabletop miniature set. Carry it through needle-felted wool, stray fibers, bead eyes, tabletop macro. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: needle-felted wool; stray fibers; bead eyes; tabletop macro
+avoidRules:
+  - plastic shine
+  - real toy brand
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: plastic shine, real toy brand, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_22
+  packName: Trading Card Illustration Styles
+  categoryId: crafted-materials-and-miniatures
+  categoryName: 12. Crafted Materials & Miniatures
+  tags:
+    - trading-card-illustration
+    - crafted-materials-and-miniatures
+    - needle-felt
+    - craft
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: needle-felted wool figures
