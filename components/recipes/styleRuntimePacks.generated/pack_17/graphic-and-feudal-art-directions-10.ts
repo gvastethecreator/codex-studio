@@ -177,4 +177,486 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP17-207',
+    name: 'Woodblock Spirit-War Direction',
+    displayName: 'Woodblock Spirit-War Direction',
+    styleAnchors: [
+      'Woodblock Spirit-War Direction',
+      'woodblock-style supernatural battle art',
+      'woodblock outlines',
+    ],
+    category: '10. Graphic & Feudal Art Directions',
+    domain: 'woodblock-style supernatural battle art',
+    negativePrompt:
+      'readable calligraphy, gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Woodblock spirit-war direction: battle scenes styled like Japanese woodblock prints, bold outlines, flat color, patterned robes and giant spirit creatures across triptych panels.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject with bold woodblock outlines, flat color and patterned clothing.',
+      color_and_tone:
+        'Prussian blue, vermilion, ochre and muted greens, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Flat color with gradated sky bands, kept consistent across the whole image.',
+      texture_and_material:
+        'Woodgrain texture, bold keylines and patterned textiles, kept consistent across the whole image.',
+      camera_and_composition:
+        'Wide triptych-like composition with a giant creature, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with dramatic legendary battle.',
+      rendering_and_quality:
+        'Crisp woodblock look with rich pattern, kept consistent across the whole image.',
+      creative_brief:
+        "Woodblock spirit-war direction: battle scenes styled like Japanese woodblock prints, bold outlines, flat color, patterned robes and giant spirit creatures across triptych panels. Carry it through woodblock outlines, flat color, patterned robes, giant spirit. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'woodblock outlines; flat color; patterned robes; giant spirit',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-208',
+    name: 'Wet-Ink Samurai Duel Direction',
+    displayName: 'Wet-Ink Samurai Duel Direction',
+    styleAnchors: [
+      'Wet-Ink Samurai Duel Direction',
+      'sumi-ink duel art direction',
+      'splashing ink',
+    ],
+    category: '10. Graphic & Feudal Art Directions',
+    domain: 'sumi-ink duel art direction',
+    negativePrompt:
+      'readable calligraphy, gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Wet-ink samurai duel direction: stark duels painted in splashing black ink on white, one drop of red, speed lines of brush and vast empty space.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject in splashing black brush ink with vast white space and one red accent.',
+      color_and_tone: 'Black ink on white with a single red accent.',
+      lighting_and_shadow:
+        'Pure ink contrast without modeling, kept consistent across the whole image.',
+      texture_and_material: 'Wet splashes, dry-brush speed streaks and rice paper.',
+      camera_and_composition:
+        'Two figures far apart with empty space, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with tense stillness before motion.',
+      rendering_and_quality:
+        'Expressive ink with strong negative space, kept consistent across the whole image.',
+      creative_brief:
+        "Wet-ink samurai duel direction: stark duels painted in splashing black ink on white, one drop of red, speed lines of brush and vast empty space. Carry it through splashing ink, vast white space, single red accent, duel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'splashing ink; vast white space; single red accent; duel',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-209',
+    name: 'Heraldic Flat-Color Tactics Direction',
+    displayName: 'Heraldic Flat-Color Tactics Direction',
+    styleAnchors: [
+      'Heraldic Flat-Color Tactics Direction',
+      'flat heraldic strategy art direction',
+      'flat heraldic color',
+    ],
+    category: '10. Graphic & Feudal Art Directions',
+    domain: 'flat heraldic strategy art direction',
+    negativePrompt:
+      'readable mottoes, gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Heraldic flat-color tactics direction: strategy art where armies are rendered as flat heraldic colors and shapes on a map-like battlefield with clean banners.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject as flat heraldic shapes and colors on a clean battlefield.',
+      color_and_tone: 'Heraldic reds, blues, golds and greens on parchment.',
+      lighting_and_shadow: 'Flat with no shading, kept consistent across the whole image.',
+      texture_and_material:
+        'Clean flat shapes, banners and parchment ground, kept consistent across the whole image.',
+      camera_and_composition:
+        'Top-down or angled field with banners, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with orderly strategic clarity.',
+      rendering_and_quality:
+        'Crisp graphic design with no text, kept consistent across the whole image.',
+      creative_brief:
+        "Heraldic flat-color tactics direction: strategy art where armies are rendered as flat heraldic colors and shapes on a map-like battlefield with clean banners. Carry it through flat heraldic color, banners, map-like field, clean shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'flat heraldic color; banners; map-like field; clean shapes',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-210',
+    name: 'Cel-Shaded Viking Saga Direction',
+    displayName: 'Cel-Shaded Viking Saga Direction',
+    styleAnchors: [
+      'Cel-Shaded Viking Saga Direction',
+      'toon-shaded norse saga art',
+      'toon shading',
+    ],
+    category: '10. Graphic & Feudal Art Directions',
+    domain: 'toon-shaded norse saga art',
+    negativePrompt:
+      'gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Cel-shaded viking saga direction: bold toon-shaded Norse sagas with thick outlines, stylized beards and braids, longships and chunky stylized seas.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject with bold outlines and two-tone toon shading in a Norse saga setting.',
+      color_and_tone: 'Cold sea blues, warm fire orange and wood browns.',
+      lighting_and_shadow:
+        'Two-tone cel shadows and rim light, kept consistent across the whole image.',
+      texture_and_material: 'Clean flat fills, chunky shapes and thick outlines.',
+      camera_and_composition:
+        'Dynamic low angle on sea or shore, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with bold saga adventure.',
+      rendering_and_quality: 'Clean cel-shaded finish, kept consistent across the whole image.',
+      creative_brief:
+        "Cel-shaded viking saga direction: bold toon-shaded Norse sagas with thick outlines, stylized beards and braids, longships and chunky stylized seas. Carry it through toon shading, thick outlines, longships, stylized braids. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'toon shading; thick outlines; longships; stylized braids',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-211',
+    name: 'Comic-Ink Siege Direction',
+    displayName: 'Comic-Ink Siege Direction',
+    styleAnchors: ['Comic-Ink Siege Direction', 'comic-book siege art direction', 'heavy blacks'],
+    category: '10. Graphic & Feudal Art Directions',
+    domain: 'comic-book siege art direction',
+    negativePrompt:
+      'speech bubbles or lettering, gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Comic-ink siege direction: medieval sieges drawn like bold graphic-novel splash pages, heavy blacks, speed lines, dramatic foreshortening and flat color.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; stage the subject in a dramatic siege with heavy comic inks and foreshortening.',
+      color_and_tone: 'Heavy black with flat fire orange and stone grey.',
+      lighting_and_shadow:
+        'Hard inked shadows and fire light, kept consistent across the whole image.',
+      texture_and_material: 'Bold ink lines, speed lines and flat color.',
+      camera_and_composition:
+        'Extreme foreshortened splash composition, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with explosive momentum, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Crisp comic inking without lettering, kept consistent across the whole image.',
+      creative_brief:
+        "Comic-ink siege direction: medieval sieges drawn like bold graphic-novel splash pages, heavy blacks, speed lines, dramatic foreshortening and flat color. Carry it through heavy blacks, speed lines, foreshortening, siege splash. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'heavy blacks; speed lines; foreshortening; siege splash',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-212',
+    name: 'Kabuki Mask Supernatural Direction',
+    displayName: 'Kabuki Mask Supernatural Direction',
+    styleAnchors: [
+      'Kabuki Mask Supernatural Direction',
+      'theatrical kabuki spirit art',
+      'painted face lines',
+    ],
+    category: '10. Graphic & Feudal Art Directions',
+    domain: 'theatrical kabuki spirit art',
+    negativePrompt:
+      'gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Kabuki mask supernatural direction: theatrical stage-lit scenes with bold kumadori face paint, dramatic frozen poses, flowing robes and spirit effects on a stage.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; freeze the subject in a dramatic theatrical pose with bold painted face lines.',
+      color_and_tone: 'White face paint, red and indigo lines, gold stage light.',
+      lighting_and_shadow:
+        'Stage footlights and dramatic spotlight, kept consistent across the whole image.',
+      texture_and_material: 'Painted wood stage, silk robes and paint strokes.',
+      camera_and_composition:
+        'Frontal stage composition with a frozen pose, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with theatrical supernatural drama.',
+      rendering_and_quality: 'Bold theatrical clarity, kept consistent across the whole image.',
+      creative_brief:
+        "Kabuki mask supernatural direction: theatrical stage-lit scenes with bold kumadori face paint, dramatic frozen poses, flowing robes and spirit effects on a stage. Carry it through painted face lines, frozen pose, stage light, flowing robes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'painted face lines; frozen pose; stage light; flowing robes',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-213',
+    name: 'Mosaic Warfare Direction',
+    displayName: 'Mosaic Warfare Direction',
+    styleAnchors: ['Mosaic Warfare Direction', 'battle scenes in tile mosaic', 'tesserae'],
+    category: '10. Graphic & Feudal Art Directions',
+    domain: 'battle scenes in tile mosaic',
+    negativePrompt:
+      'gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Mosaic warfare direction: battles rendered as glittering tile mosaics, gold tesserae skies, stylized armies and heroic figures built from small stones and glass.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; build the subject from small mosaic tiles with a glittering gold ground.',
+      color_and_tone: 'Gold tesserae, deep blues, reds and marble whites.',
+      lighting_and_shadow:
+        'Glitter from angled glass tiles, kept consistent across the whole image.',
+      texture_and_material: 'Stone and glass tesserae, grout lines and gold.',
+      camera_and_composition: 'Frontal frieze composition, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with timeless imperial triumph.',
+      rendering_and_quality:
+        'Convincing mosaic tile texture, kept consistent across the whole image.',
+      creative_brief:
+        "Mosaic warfare direction: battles rendered as glittering tile mosaics, gold tesserae skies, stylized armies and heroic figures built from small stones and glass. Carry it through tesserae, gold ground, stylized armies, frieze. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'tesserae; gold ground; stylized armies; frieze',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-214',
+    name: 'Miniature-Painting Battle Direction',
+    displayName: 'Miniature-Painting Battle Direction',
+    styleAnchors: [
+      'Miniature-Painting Battle Direction',
+      'court miniature style battle scene',
+      'high horizon',
+    ],
+    category: '10. Graphic & Feudal Art Directions',
+    domain: 'court miniature style battle scene',
+    negativePrompt:
+      'readable calligraphy, cultural stereotypes, gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Miniature-painting battle direction: battles painted like court miniatures, high horizons, tiny precise figures, patterned tents and elephants and flat golden skies.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; paint the subject with tiny precise figures in a high-horizon court miniature battle.',
+      color_and_tone: 'Jewel tones with gold sky and patterned textiles.',
+      lighting_and_shadow:
+        'Even light with no cast shadows, kept consistent across the whole image.',
+      texture_and_material:
+        'Fine opaque pigment and gold detail, kept consistent across the whole image.',
+      camera_and_composition:
+        'High horizon with stacked groups of figures, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with courtly epic splendor.',
+      rendering_and_quality:
+        'Exquisite small detail, no calligraphy, kept consistent across the whole image.',
+      creative_brief:
+        "Miniature-painting battle direction: battles painted like court miniatures, high horizons, tiny precise figures, patterned tents and elephants and flat golden skies. Carry it through high horizon, tiny figures, patterned tents, gold sky. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'high horizon; tiny figures; patterned tents; gold sky',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-215',
+    name: 'Red-and-Black Brush Feudal Direction',
+    displayName: 'Red-and-Black Brush Feudal Direction',
+    styleAnchors: [
+      'Red-and-Black Brush Feudal Direction',
+      'two-color brush feudal art',
+      'black and vermilion only',
+    ],
+    category: '10. Graphic & Feudal Art Directions',
+    domain: 'two-color brush feudal art',
+    negativePrompt:
+      'readable calligraphy, gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Red-and-black brush feudal direction: stark feudal warfare painted only in black and vermilion brush strokes on pale paper, bold gesture and silhouette.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; paint the subject in black and vermilion brush strokes only.',
+      color_and_tone: 'Black and vermilion on pale paper, kept consistent across the whole image.',
+      lighting_and_shadow: 'Implied by ink density, kept consistent across the whole image.',
+      texture_and_material:
+        'Brush strokes, dry-brush and paper texture, kept consistent across the whole image.',
+      camera_and_composition:
+        'Bold silhouette-driven composition, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with fierce martial intensity.',
+      rendering_and_quality:
+        'Expressive two-color brushwork, kept consistent across the whole image.',
+      creative_brief:
+        "Red-and-black brush feudal direction: stark feudal warfare painted only in black and vermilion brush strokes on pale paper, bold gesture and silhouette. Carry it through black and vermilion only, brush gesture, silhouettes, pale paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'black and vermilion only; brush gesture; silhouettes; pale paper',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-216',
+    name: 'Stencil Poster Rebellion Direction',
+    displayName: 'Stencil Poster Rebellion Direction',
+    styleAnchors: [
+      'Stencil Poster Rebellion Direction',
+      'propaganda poster peasant revolt art',
+      'stencil poster',
+    ],
+    category: '10. Graphic & Feudal Art Directions',
+    domain: 'propaganda poster peasant revolt art',
+    negativePrompt:
+      'slogans or text, gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Stencil poster rebellion direction: peasant revolts depicted as bold stencil propaganda posters, flat two or three colors, raised pitchforks and heroic diagonals.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject as a bold stencil poster with heroic diagonals.',
+      color_and_tone: 'Red, black and cream flat colors, kept consistent across the whole image.',
+      lighting_and_shadow: 'Hard graphic shadow shapes, kept consistent across the whole image.',
+      texture_and_material:
+        'Stencil edges, spray grain and poster paper, kept consistent across the whole image.',
+      camera_and_composition:
+        'Strong diagonal with raised tools or weapons, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with defiant collective energy.',
+      rendering_and_quality:
+        'Crisp graphic poster without slogans, kept consistent across the whole image.',
+      creative_brief:
+        "Stencil poster rebellion direction: peasant revolts depicted as bold stencil propaganda posters, flat two or three colors, raised pitchforks and heroic diagonals. Carry it through stencil poster, flat colors, heroic diagonal, raised pitchforks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'stencil poster; flat colors; heroic diagonal; raised pitchforks',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-217',
+    name: 'Chunky Toy-Soldier Feudal Direction',
+    displayName: 'Chunky Toy-Soldier Feudal Direction',
+    styleAnchors: [
+      'Chunky Toy-Soldier Feudal Direction',
+      'toy-like feudal war art',
+      'toy soldiers',
+    ],
+    category: '10. Graphic & Feudal Art Directions',
+    domain: 'toy-like feudal war art',
+    negativePrompt:
+      'gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Chunky toy-soldier feudal direction: feudal warfare rendered as chunky painted toy soldiers and wooden castles, glossy paint, peg bodies and tabletop scale.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject as chunky glossy painted toys on a tabletop battlefield.',
+      color_and_tone:
+        'Bright glossy primaries and wood tones, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Warm tabletop light with small shadows, kept consistent across the whole image.',
+      texture_and_material:
+        'Glossy enamel paint, wood grain and chips, kept consistent across the whole image.',
+      camera_and_composition:
+        'Low tabletop angle among the toys, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with playful toybox warfare.',
+      rendering_and_quality:
+        'Convincing toy material and scale, kept consistent across the whole image.',
+      creative_brief:
+        "Chunky toy-soldier feudal direction: feudal warfare rendered as chunky painted toy soldiers and wooden castles, glossy paint, peg bodies and tabletop scale. Carry it through toy soldiers, wooden castle, glossy paint, tabletop scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'toy soldiers; wooden castle; glossy paint; tabletop scale',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-218',
+    name: 'Paper-Lantern Ghost Festival Direction',
+    displayName: 'Paper-Lantern Ghost Festival Direction',
+    styleAnchors: [
+      'Paper-Lantern Ghost Festival Direction',
+      'lantern-lit spirit festival art',
+      'paper lanterns',
+    ],
+    category: '10. Graphic & Feudal Art Directions',
+    domain: 'lantern-lit spirit festival art',
+    negativePrompt:
+      'gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Paper-lantern ghost festival direction: night festivals of floating paper lanterns where the living and spirits mingle, warm glows, masks and rivers of light.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; set the subject within a night festival of floating paper lanterns and wandering spirits.',
+      color_and_tone: 'Warm lantern orange and gold against deep indigo.',
+      lighting_and_shadow: 'Soft glowing lantern light, kept consistent across the whole image.',
+      texture_and_material:
+        'Paper lanterns, silk, water reflections and smoke, kept consistent across the whole image.',
+      camera_and_composition:
+        'Street or river view filled with lanterns, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with bittersweet festive mystery.',
+      rendering_and_quality:
+        'Painterly glow with clear figures, kept consistent across the whole image.',
+      creative_brief:
+        "Paper-lantern ghost festival direction: night festivals of floating paper lanterns where the living and spirits mingle, warm glows, masks and rivers of light. Carry it through paper lanterns, night festival, spirits, river of light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'paper lanterns; night festival; spirits; river of light',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-219',
+    name: 'Engraved Broadside War Direction',
+    displayName: 'Engraved Broadside War Direction',
+    styleAnchors: [
+      'Engraved Broadside War Direction',
+      'woodcut news broadsheet of battles',
+      'engraved reportage',
+    ],
+    category: '10. Graphic & Feudal Art Directions',
+    domain: 'woodcut news broadsheet of battles',
+    negativePrompt:
+      'headlines or text, gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Engraved broadside war direction: battles shown like early printed news broadsides, crowded engraved figures, smoke rendered in hatching and dramatic reportage.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject as crowded engraved reportage of a battle.',
+      color_and_tone: 'Black ink on aged paper with optional hand tint.',
+      lighting_and_shadow:
+        'Hatched smoke and cross-hatched shadows, kept consistent across the whole image.',
+      texture_and_material:
+        'Engraved lines, paper grain and ink density, kept consistent across the whole image.',
+      camera_and_composition:
+        'Wide crowded battle panorama, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with breathless historical reportage.',
+      rendering_and_quality:
+        'Dense engraved detail without headlines, kept consistent across the whole image.',
+      creative_brief:
+        "Engraved broadside war direction: battles shown like early printed news broadsides, crowded engraved figures, smoke rendered in hatching and dramatic reportage. Carry it through engraved reportage, hatched smoke, crowded battle, aged paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'engraved reportage; hatched smoke; crowded battle; aged paper',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-220',
+    name: 'Neon Oni Graphic Direction',
+    displayName: 'Neon Oni Graphic Direction',
+    styleAnchors: ['Neon Oni Graphic Direction', 'neon-lit demon graphic art', 'neon outlines'],
+    category: '10. Graphic & Feudal Art Directions',
+    domain: 'neon-lit demon graphic art',
+    negativePrompt:
+      'gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Neon oni graphic direction: bold graphic art of horned demons and warriors in neon magenta and cyan against black, flat shapes, sharp outlines and glowing tattoos.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject in flat bold shapes with glowing neon outlines against black.',
+      color_and_tone: 'Black with neon magenta, cyan and acid yellow.',
+      lighting_and_shadow:
+        'Neon glow edges with flat fills, kept consistent across the whole image.',
+      texture_and_material:
+        'Flat graphic fills, glow lines and grain, kept consistent across the whole image.',
+      camera_and_composition:
+        'Dynamic central figure against black, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with electric supernatural menace.',
+      rendering_and_quality: 'Crisp graphic glow, kept consistent across the whole image.',
+      creative_brief:
+        "Neon oni graphic direction: bold graphic art of horned demons and warriors in neon magenta and cyan against black, flat shapes, sharp outlines and glowing tattoos. Carry it through neon outlines, horned demons, black ground, flat shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'neon outlines; horned demons; black ground; flat shapes',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

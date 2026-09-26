@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP17-183
+packId: pack_17
+name: Blue-Paper White Heightening
+styleAnchors:
+  - Blue-Paper White Heightening
+  - white highlights on blue paper
+  - blue paper
+displayName: Blue-Paper White Heightening
+category: 8. Medieval Fantasy Drawing Media
+domain: white highlights on blue paper
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - medieval-fantasy-drawing-media
+  - blue-paper
+  - drawing-media
+  - portable-style-study
+visualDna:
+  aesthetic: 'Blue-paper white heightening: drawings on blue paper using dark ink or chalk for shadows and opaque white for highlights, the paper serving as the midtone.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; model the subject with dark shadows and white highlights on blue paper.
+  color_and_tone: Blue paper midtone, dark ink shadows and white highlights.
+  lighting_and_shadow: Crisp white highlights with blue midtones, kept consistent across the whole image.
+  texture_and_material: Blue laid paper, white gouache and ink, kept consistent across the whole image.
+  camera_and_composition: Study sheet with a central figure, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with cool moonlit elegance.
+  rendering_and_quality: Clear three-value drawing, kept consistent across the whole image.
+  creative_brief: "Blue-paper white heightening: drawings on blue paper using dark ink or chalk for shadows and opaque white for highlights, the paper serving as the midtone. Carry it through blue paper, white highlights, dark shadows, midtone paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: blue paper; white highlights; dark shadows; midtone paper
+avoidRules:
+  - digital smoothness
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: digital smoothness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: medieval-fantasy-drawing-media
+  categoryName: 8. Medieval Fantasy Drawing Media
+  tags:
+    - curation-v2
+    - medieval-fantasy-drawing-media
+    - blue-paper
+    - drawing-media
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: white highlights on blue paper

@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP17-193
+packId: pack_17
+name: Frostbitten Crypt Direction
+styleAnchors:
+  - Frostbitten Crypt Direction
+  - frozen tomb game art direction
+  - frozen crypt
+displayName: Frostbitten Crypt Direction
+category: 9. Gothic & Dungeon Art Directions
+domain: frozen tomb game art direction
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - gothic-and-dungeon-art-directions
+  - frost-crypt
+  - gothic-art-direction
+  - portable-style-study
+visualDna:
+  aesthetic: 'Frostbitten crypt direction: painted game art direction of frozen tombs, ice-rimed stone, blue-white breath, pale ghost light and heavy fur-clad figures.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; place the subject in frozen tombs with ice-rimed surfaces and visible breath.
+  color_and_tone: Ice blue, bone white and deep slate with pale ghost light.
+  lighting_and_shadow: Cold diffuse glow and blue shadows, kept consistent across the whole image.
+  texture_and_material: Frost crystals, frozen stone, fur and iron, kept consistent across the whole image.
+  camera_and_composition: Low third-person view through icy halls, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with frozen ancient silence.
+  rendering_and_quality: Painterly cold detail with clear silhouettes, kept consistent across the whole image.
+  creative_brief: "Frostbitten crypt direction: painted game art direction of frozen tombs, ice-rimed stone, blue-white breath, pale ghost light and heavy fur-clad figures. Carry it through frozen crypt, ice rime, ghost light, fur-clad figures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: frozen crypt; ice rime; ghost light; fur-clad figures
+avoidRules:
+  - gore
+  - interface or HUD
+  - existing game characters, logos or locations
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: gothic-and-dungeon-art-directions
+  categoryName: 9. Gothic & Dungeon Art Directions
+  tags:
+    - curation-v2
+    - gothic-and-dungeon-art-directions
+    - frost-crypt
+    - gothic-art-direction
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: frozen tomb game art direction

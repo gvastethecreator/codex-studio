@@ -177,4 +177,484 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP17-193',
+    name: 'Frostbitten Crypt Direction',
+    displayName: 'Frostbitten Crypt Direction',
+    styleAnchors: ['Frostbitten Crypt Direction', 'frozen tomb game art direction', 'frozen crypt'],
+    category: '9. Gothic & Dungeon Art Directions',
+    domain: 'frozen tomb game art direction',
+    negativePrompt:
+      'gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Frostbitten crypt direction: painted game art direction of frozen tombs, ice-rimed stone, blue-white breath, pale ghost light and heavy fur-clad figures.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; place the subject in frozen tombs with ice-rimed surfaces and visible breath.',
+      color_and_tone: 'Ice blue, bone white and deep slate with pale ghost light.',
+      lighting_and_shadow:
+        'Cold diffuse glow and blue shadows, kept consistent across the whole image.',
+      texture_and_material:
+        'Frost crystals, frozen stone, fur and iron, kept consistent across the whole image.',
+      camera_and_composition:
+        'Low third-person view through icy halls, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with frozen ancient silence.',
+      rendering_and_quality:
+        'Painterly cold detail with clear silhouettes, kept consistent across the whole image.',
+      creative_brief:
+        "Frostbitten crypt direction: painted game art direction of frozen tombs, ice-rimed stone, blue-white breath, pale ghost light and heavy fur-clad figures. Carry it through frozen crypt, ice rime, ghost light, fur-clad figures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'frozen crypt; ice rime; ghost light; fur-clad figures',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-194',
+    name: 'Drowned Cathedral Direction',
+    displayName: 'Drowned Cathedral Direction',
+    styleAnchors: [
+      'Drowned Cathedral Direction',
+      'flooded cathedral art direction',
+      'flooded cathedral',
+    ],
+    category: '9. Gothic & Dungeon Art Directions',
+    domain: 'flooded cathedral art direction',
+    negativePrompt:
+      'gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Drowned cathedral direction: painted art direction of cathedrals half sunk in green water, light rays through broken glass, drifting candles and barnacled saints.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; set the subject inside a half-flooded cathedral with light rays through the water.',
+      color_and_tone: 'Deep green water, stained-glass color shafts and pale stone.',
+      lighting_and_shadow:
+        'Underwater light rays and caustic patterns, kept consistent across the whole image.',
+      texture_and_material:
+        'Barnacles, algae, wet stone and floating wax, kept consistent across the whole image.',
+      camera_and_composition:
+        'Split view above and below the waterline, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with drowned sacred melancholy.',
+      rendering_and_quality:
+        'Painterly light and water detail, kept consistent across the whole image.',
+      creative_brief:
+        "Drowned cathedral direction: painted art direction of cathedrals half sunk in green water, light rays through broken glass, drifting candles and barnacled saints. Carry it through flooded cathedral, light rays, barnacled saints, waterline. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'flooded cathedral; light rays; barnacled saints; waterline',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-195',
+    name: 'Cracked-Doll Manor Direction',
+    displayName: 'Cracked-Doll Manor Direction',
+    styleAnchors: [
+      'Cracked-Doll Manor Direction',
+      'haunted doll house art direction',
+      'cracked dolls',
+    ],
+    category: '9. Gothic & Dungeon Art Directions',
+    domain: 'haunted doll house art direction',
+    negativePrompt:
+      'gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Cracked-doll manor direction: painted art direction of a decaying manor full of porcelain dolls with cracked faces, faded wallpaper and dusty nursery light.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; set the subject in a decaying manor surrounded by cracked porcelain dolls.',
+      color_and_tone: 'Faded rose, dusty cream and porcelain white with deep shadow.',
+      lighting_and_shadow:
+        'Dusty window light and deep corners, kept consistent across the whole image.',
+      texture_and_material:
+        'Cracked porcelain, peeling wallpaper, lace and dust, kept consistent across the whole image.',
+      camera_and_composition:
+        'Slightly low view down a manor room, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with eerie faded nostalgia.',
+      rendering_and_quality:
+        'Painterly detail with clean focal point, kept consistent across the whole image.',
+      creative_brief:
+        "Cracked-doll manor direction: painted art direction of a decaying manor full of porcelain dolls with cracked faces, faded wallpaper and dusty nursery light. Carry it through cracked dolls, faded wallpaper, dusty light, manor. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'cracked dolls; faded wallpaper; dusty light; manor',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-196',
+    name: 'Rust-and-Bone Waste Direction',
+    displayName: 'Rust-and-Bone Waste Direction',
+    styleAnchors: ['Rust-and-Bone Waste Direction', 'wasteland of rust and bones', 'giant bones'],
+    category: '9. Gothic & Dungeon Art Directions',
+    domain: 'wasteland of rust and bones',
+    negativePrompt:
+      'gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Rust-and-bone waste direction: painted art direction of red deserts strewn with giant bones and rusted war machines, dust storms and scavenger silhouettes.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; place the subject in a red waste of giant bones and rusted machines.',
+      color_and_tone:
+        'Rust red, bone white and dusty ochre, kept consistent across the whole image.',
+      lighting_and_shadow: 'Harsh sun through dust storms, kept consistent across the whole image.',
+      texture_and_material:
+        'Rust flakes, bleached bone and wind-blown sand, kept consistent across the whole image.',
+      camera_and_composition:
+        'Wide desert vista with huge remains, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with desolate scavenger grit.',
+      rendering_and_quality: 'Painterly scale and dust, kept consistent across the whole image.',
+      creative_brief:
+        "Rust-and-bone waste direction: painted art direction of red deserts strewn with giant bones and rusted war machines, dust storms and scavenger silhouettes. Carry it through giant bones, rusted machines, red desert, dust storm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'giant bones; rusted machines; red desert; dust storm',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-197',
+    name: 'Stained-Glass Boss Hall Direction',
+    displayName: 'Stained-Glass Boss Hall Direction',
+    styleAnchors: [
+      'Stained-Glass Boss Hall Direction',
+      'boss chamber lit by stained glass',
+      'stained-glass light',
+    ],
+    category: '9. Gothic & Dungeon Art Directions',
+    domain: 'boss chamber lit by stained glass',
+    negativePrompt:
+      'gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Stained-glass boss hall direction: vast boss chambers lit by colossal stained-glass windows, colored light pooling on the floor around a towering foe.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; stage the subject in a vast hall of stained-glass light and colored pools.',
+      color_and_tone: 'Ruby, cobalt and amber light pools on dark stone.',
+      lighting_and_shadow:
+        'Colored shafts through huge windows, kept consistent across the whole image.',
+      texture_and_material:
+        'Polished stone, glass, dust in the air, kept consistent across the whole image.',
+      camera_and_composition: 'Low wide view with the foe under the window.',
+      atmosphere_and_mood: 'Keep the requested mood with sacred grand confrontation.',
+      rendering_and_quality:
+        'Painterly light with clear scale, kept consistent across the whole image.',
+      creative_brief:
+        "Stained-glass boss hall direction: vast boss chambers lit by colossal stained-glass windows, colored light pooling on the floor around a towering foe. Carry it through stained-glass light, colored pools, vast hall, towering foe. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'stained-glass light; colored pools; vast hall; towering foe',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-198',
+    name: 'Fungal Underdark Direction',
+    displayName: 'Fungal Underdark Direction',
+    styleAnchors: [
+      'Fungal Underdark Direction',
+      'glowing mushroom cave art direction',
+      'giant glowing fungi',
+    ],
+    category: '9. Gothic & Dungeon Art Directions',
+    domain: 'glowing mushroom cave art direction',
+    negativePrompt:
+      'gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Fungal underdark direction: painted art direction of vast underground caverns lit by giant bioluminescent mushrooms, spore clouds and pale cave-dwellers.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; place the subject in a vast cavern lit by glowing giant fungi.',
+      color_and_tone: 'Deep violet dark with cyan and magenta fungal glow.',
+      lighting_and_shadow:
+        'Bioluminescent glow and drifting spores, kept consistent across the whole image.',
+      texture_and_material:
+        'Mushroom gills, damp rock and spore haze, kept consistent across the whole image.',
+      camera_and_composition:
+        'Wide cavern with towering fungi, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with alien subterranean wonder.',
+      rendering_and_quality:
+        'Painterly glow with clear forms, kept consistent across the whole image.',
+      creative_brief:
+        "Fungal underdark direction: painted art direction of vast underground caverns lit by giant bioluminescent mushrooms, spore clouds and pale cave-dwellers. Carry it through giant glowing fungi, spore haze, underground cavern, pale dwellers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'giant glowing fungi; spore haze; underground cavern; pale dwellers',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-199',
+    name: 'Infirmary Sepia Direction',
+    displayName: 'Infirmary Sepia Direction',
+    styleAnchors: ['Infirmary Sepia Direction', 'old hospital ward art direction', 'sepia ward'],
+    category: '9. Gothic & Dungeon Art Directions',
+    domain: 'old hospital ward art direction',
+    negativePrompt:
+      'gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Infirmary sepia direction: painted art direction of candlelit medieval hospital wards, rows of cots, linen screens, medicine tables and sepia-toned calm dread.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; set the subject in a candlelit sepia hospital ward with linen screens.',
+      color_and_tone:
+        'Sepia, yellowed linen and candle amber, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Soft candlelight and screen silhouettes, kept consistent across the whole image.',
+      texture_and_material:
+        'Linen, glass bottles, worn wood and plaster, kept consistent across the whole image.',
+      camera_and_composition:
+        'Long ward perspective with rows of cots, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with quiet clinical dread.',
+      rendering_and_quality:
+        'Painterly muted detail, no gore, kept consistent across the whole image.',
+      creative_brief:
+        "Infirmary sepia direction: painted art direction of candlelit medieval hospital wards, rows of cots, linen screens, medicine tables and sepia-toned calm dread. Carry it through sepia ward, rows of cots, linen screens, candlelight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'sepia ward; rows of cots; linen screens; candlelight',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-200',
+    name: 'Clockwork Tomb Direction',
+    displayName: 'Clockwork Tomb Direction',
+    styleAnchors: ['Clockwork Tomb Direction', 'mechanical tomb art direction', 'tomb machine'],
+    category: '9. Gothic & Dungeon Art Directions',
+    domain: 'mechanical tomb art direction',
+    negativePrompt:
+      'gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Clockwork tomb direction: painted art direction of tombs built as vast machines, brass gears turning behind stone walls, pendulum blades and ticking sarcophagi.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; place the subject in a tomb that is also a vast ticking machine.',
+      color_and_tone:
+        'Brass, dark stone and verdigris green, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Warm lantern light glinting on gears, kept consistent across the whole image.',
+      texture_and_material:
+        'Gears, chains, brass fittings and carved stone, kept consistent across the whole image.',
+      camera_and_composition:
+        'Interior view with moving machinery visible, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with ticking mechanical menace.',
+      rendering_and_quality: 'Precise mechanical detail, kept consistent across the whole image.',
+      creative_brief:
+        "Clockwork tomb direction: painted art direction of tombs built as vast machines, brass gears turning behind stone walls, pendulum blades and ticking sarcophagi. Carry it through tomb machine, brass gears, pendulums, ticking sarcophagus. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'tomb machine; brass gears; pendulums; ticking sarcophagus',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-201',
+    name: 'Ashen Forest Witch Direction',
+    displayName: 'Ashen Forest Witch Direction',
+    styleAnchors: [
+      'Ashen Forest Witch Direction',
+      'burnt forest witch art direction',
+      'ashen forest',
+    ],
+    category: '9. Gothic & Dungeon Art Directions',
+    domain: 'burnt forest witch art direction',
+    negativePrompt:
+      'gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Ashen forest witch direction: painted art direction of forests burned to grey ash and charcoal trunks, where witches in bone charms walk under an orange ember sky.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; set the subject in a burnt grey forest under an ember-lit sky.',
+      color_and_tone:
+        'Ash grey, charcoal black and ember orange, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Ember glow from below and hazy sky, kept consistent across the whole image.',
+      texture_and_material:
+        'Ash, charred bark, bone charms and cloth, kept consistent across the whole image.',
+      camera_and_composition:
+        'Figure among tall charred trunks, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with smoldering folk menace.',
+      rendering_and_quality:
+        'Painterly haze with clean silhouettes, kept consistent across the whole image.',
+      creative_brief:
+        "Ashen forest witch direction: painted art direction of forests burned to grey ash and charcoal trunks, where witches in bone charms walk under an orange ember sky. Carry it through ashen forest, charred trunks, ember sky, bone charms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'ashen forest; charred trunks; ember sky; bone charms',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-202',
+    name: 'Marble Angel Necropolis',
+    displayName: 'Marble Angel Necropolis',
+    styleAnchors: ['Marble Angel Necropolis', 'white marble city of tombs', 'marble tombs'],
+    category: '9. Gothic & Dungeon Art Directions',
+    domain: 'white marble city of tombs',
+    negativePrompt:
+      'gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Marble angel necropolis: painted art direction of vast white marble cities of the dead, weeping angel statues, cypress trees and pale sunlight.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; place the subject among white marble tombs and angel statues.',
+      color_and_tone: 'White marble, cypress green and pale gold sun.',
+      lighting_and_shadow:
+        'Soft sunlight with cool marble shadows, kept consistent across the whole image.',
+      texture_and_material:
+        'Weathered marble, moss and carved drapery, kept consistent across the whole image.',
+      camera_and_composition:
+        'Long avenues of tombs and statues, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with serene eerie grief.',
+      rendering_and_quality:
+        'Painterly light with crisp marble, kept consistent across the whole image.',
+      creative_brief:
+        "Marble angel necropolis: painted art direction of vast white marble cities of the dead, weeping angel statues, cypress trees and pale sunlight. Carry it through marble tombs, weeping angels, cypress, pale sunlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'marble tombs; weeping angels; cypress; pale sunlight',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-203',
+    name: 'Velvet Opera Vampire Direction',
+    displayName: 'Velvet Opera Vampire Direction',
+    styleAnchors: [
+      'Velvet Opera Vampire Direction',
+      'vampire opera house art direction',
+      'velvet opera house',
+    ],
+    category: '9. Gothic & Dungeon Art Directions',
+    domain: 'vampire opera house art direction',
+    negativePrompt:
+      'gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Velvet opera vampire direction: painted art direction of crimson velvet opera houses, gilded boxes, chandeliers and aristocratic vampire audiences in shadow.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; set the subject in a crimson velvet opera house with gilded boxes.',
+      color_and_tone:
+        'Crimson velvet, gold leaf and shadowed black, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Stage light and chandelier glow in darkness, kept consistent across the whole image.',
+      texture_and_material:
+        'Velvet, gilded plaster, crystal and silk, kept consistent across the whole image.',
+      camera_and_composition: 'View from the stage or a box toward the audience.',
+      atmosphere_and_mood: 'Keep the requested mood with decadent nocturnal glamour.',
+      rendering_and_quality:
+        'Rich painterly finish, no gore, kept consistent across the whole image.',
+      creative_brief:
+        "Velvet opera vampire direction: painted art direction of crimson velvet opera houses, gilded boxes, chandeliers and aristocratic vampire audiences in shadow. Carry it through velvet opera house, gilded boxes, chandelier, vampire audience. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'velvet opera house; gilded boxes; chandelier; vampire audience',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-204',
+    name: 'Salt-Mine Abyss Direction',
+    displayName: 'Salt-Mine Abyss Direction',
+    styleAnchors: ['Salt-Mine Abyss Direction', 'deep salt mine art direction', 'salt mine'],
+    category: '9. Gothic & Dungeon Art Directions',
+    domain: 'deep salt mine art direction',
+    negativePrompt:
+      'gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Salt-mine abyss direction: painted art direction of vast white salt mines descending into the dark, carved salt chapels, crystal walls and miners with lamps.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; set the subject in a vast descending salt mine of carved crystal walls.',
+      color_and_tone: 'Pale salt white, crystal pink and deep black depths.',
+      lighting_and_shadow:
+        'Lamp glow through translucent salt, kept consistent across the whole image.',
+      texture_and_material:
+        'Carved salt crystal, rope, wood scaffolds, kept consistent across the whole image.',
+      camera_and_composition:
+        'Deep vertical descent with small figures, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with vertiginous sacred depth.',
+      rendering_and_quality:
+        'Painterly translucency and scale, kept consistent across the whole image.',
+      creative_brief:
+        "Salt-mine abyss direction: painted art direction of vast white salt mines descending into the dark, carved salt chapels, crystal walls and miners with lamps. Carry it through salt mine, carved crystal chapel, lamps, abyss. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'salt mine; carved crystal chapel; lamps; abyss',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-205',
+    name: 'Lantern-Lit Fog Village Direction',
+    displayName: 'Lantern-Lit Fog Village Direction',
+    styleAnchors: [
+      'Lantern-Lit Fog Village Direction',
+      'foggy village night art direction',
+      'thick fog',
+    ],
+    category: '9. Gothic & Dungeon Art Directions',
+    domain: 'foggy village night art direction',
+    negativePrompt:
+      'gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Lantern-lit fog village direction: painted art direction of isolated villages drowned in fog, crooked houses, hanging lanterns and shapes moving between the lights.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; set the subject in a foggy village of crooked houses and hanging lanterns.',
+      color_and_tone:
+        'Grey fog, lantern gold and dark timber, kept consistent across the whole image.',
+      lighting_and_shadow: 'Lantern halos in thick fog, kept consistent across the whole image.',
+      texture_and_material:
+        'Wet timber, fog, cobbles and iron lamps, kept consistent across the whole image.',
+      camera_and_composition:
+        'Street view fading into fog, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with isolated uneasy hush.',
+      rendering_and_quality:
+        'Painterly atmosphere with clear lights, kept consistent across the whole image.',
+      creative_brief:
+        "Lantern-lit fog village direction: painted art direction of isolated villages drowned in fog, crooked houses, hanging lanterns and shapes moving between the lights. Carry it through thick fog, hanging lanterns, crooked houses, shapes between lights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'thick fog; hanging lanterns; crooked houses; shapes between lights',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-206',
+    name: 'Obsidian Sun Temple Direction',
+    displayName: 'Obsidian Sun Temple Direction',
+    styleAnchors: [
+      'Obsidian Sun Temple Direction',
+      'black stone sun temple art direction',
+      'obsidian step temple',
+    ],
+    category: '9. Gothic & Dungeon Art Directions',
+    domain: 'black stone sun temple art direction',
+    negativePrompt:
+      'gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Obsidian sun temple direction: painted art direction of black obsidian step temples under a blazing eclipsed sun, gold inlay and ritual processions.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; set the subject on a black obsidian step temple under an eclipsed sun.',
+      color_and_tone: 'Glossy black, gold inlay and eclipse corona white.',
+      lighting_and_shadow:
+        'Corona glow and sharp gold reflections, kept consistent across the whole image.',
+      texture_and_material:
+        'Polished obsidian, gold leaf and dust, kept consistent across the whole image.',
+      camera_and_composition:
+        'Low view up the temple steps, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with solemn cosmic ritual.',
+      rendering_and_quality:
+        'Painterly gloss and grand scale, kept consistent across the whole image.',
+      creative_brief:
+        "Obsidian sun temple direction: painted art direction of black obsidian step temples under a blazing eclipsed sun, gold inlay and ritual processions. Carry it through obsidian step temple, eclipse sun, gold inlay, procession. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'obsidian step temple; eclipse sun; gold inlay; procession',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

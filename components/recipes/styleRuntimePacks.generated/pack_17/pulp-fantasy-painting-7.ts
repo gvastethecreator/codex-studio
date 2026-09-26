@@ -61,4 +61,610 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP17-160',
+    name: 'Barbarian Oil Cover Painting',
+    displayName: 'Barbarian Oil Cover Painting',
+    styleAnchors: [
+      'Barbarian Oil Cover Painting',
+      'muscular heroic fantasy oil cover',
+      'heroic figure',
+    ],
+    category: '7. Pulp Fantasy Painting',
+    domain: 'muscular heroic fantasy oil cover',
+    negativePrompt:
+      'gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Barbarian oil cover painting: dramatic seventies fantasy book-cover oils with muscular heroes, swirling dark skies, snarling beasts and thick expressive brushwork.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original adult characters; stage the subject as a powerful heroic figure in a dramatic moment of struggle.',
+      color_and_tone: 'Burnt siennas, deep umbers and stormy blues with warm flesh.',
+      lighting_and_shadow:
+        'Strong raking light carving muscle and armor, kept consistent across the whole image.',
+      texture_and_material:
+        'Thick expressive oil strokes and unfinished edges, kept consistent across the whole image.',
+      camera_and_composition:
+        'Dynamic triangular composition around the hero, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with savage heroic energy.',
+      rendering_and_quality:
+        'Painterly finish with loose background, no title, kept consistent across the whole image.',
+      creative_brief:
+        "Barbarian oil cover painting: dramatic seventies fantasy book-cover oils with muscular heroes, swirling dark skies, snarling beasts and thick expressive brushwork. Carry it through heroic figure, thick oil strokes, stormy sky, dynamic triangle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'heroic figure; thick oil strokes; stormy sky; dynamic triangle',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-161',
+    name: 'Two-Tone Pulp Interior Plate',
+    displayName: 'Two-Tone Pulp Interior Plate',
+    styleAnchors: [
+      'Two-Tone Pulp Interior Plate',
+      'black and one-color interior illustration',
+      'black brushwork',
+    ],
+    category: '7. Pulp Fantasy Painting',
+    domain: 'black and one-color interior illustration',
+    negativePrompt:
+      'gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Two-tone pulp interior plate: interior illustrations for pulp fantasy magazines, bold black brushwork with a single flat second color, dramatic and economical.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original adult characters; illustrate the subject with bold black brushwork and one flat second color.',
+      color_and_tone: 'Black ink with one flat color such as red or teal on cheap paper.',
+      lighting_and_shadow: 'Bold black shadow masses, kept consistent across the whole image.',
+      texture_and_material: 'Brush ink, flat color block and pulp paper grain.',
+      camera_and_composition:
+        'Dramatic moment in a rectangular panel, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with lurid adventure, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Economical dramatic illustration, kept consistent across the whole image.',
+      creative_brief:
+        "Two-tone pulp interior plate: interior illustrations for pulp fantasy magazines, bold black brushwork with a single flat second color, dramatic and economical. Carry it through black brushwork, one flat color, pulp paper, dramatic moment. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'black brushwork; one flat color; pulp paper; dramatic moment',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-162',
+    name: 'Sword-and-Planet Painting',
+    displayName: 'Sword-and-Planet Painting',
+    styleAnchors: ['Sword-and-Planet Painting', 'fantasy on alien worlds', 'alien desert'],
+    category: '7. Pulp Fantasy Painting',
+    domain: 'fantasy on alien worlds',
+    negativePrompt:
+      'gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Sword-and-planet painting: swashbuckling heroes with swords on alien desert worlds, twin moons, strange beasts and ancient ruined cities under a pink sky.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original adult characters; place the subject in a swashbuckling scene on an alien world with swords and strange beasts.',
+      color_and_tone: 'Pink and ochre skies, rust deserts and turquoise alien flesh.',
+      lighting_and_shadow:
+        'Two-moon light and warm desert glow, kept consistent across the whole image.',
+      texture_and_material:
+        'Painterly sand, ancient stone and alien hides, kept consistent across the whole image.',
+      camera_and_composition:
+        'Heroic figure against a vast alien vista, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with romantic alien adventure.',
+      rendering_and_quality:
+        'Classic painted cover finish without text, kept consistent across the whole image.',
+      creative_brief:
+        "Sword-and-planet painting: swashbuckling heroes with swords on alien desert worlds, twin moons, strange beasts and ancient ruined cities under a pink sky. Carry it through alien desert, twin moons, swords, strange beasts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'alien desert; twin moons; swords; strange beasts',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-163',
+    name: 'Cover Comp Color Rough',
+    displayName: 'Cover Comp Color Rough',
+    styleAnchors: ['Cover Comp Color Rough', 'loose cover sketch painting', 'quick gouache blocks'],
+    category: '7. Pulp Fantasy Painting',
+    domain: 'loose cover sketch painting',
+    negativePrompt:
+      'gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Cover comp color rough: small loose color sketches painted to plan a fantasy cover, quick gouache blocks, rough figures and bold value design.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original adult characters; block the subject in quickly with rough figures and strong value shapes.',
+      color_and_tone: 'Bold quick gouache colors with strong value contrast.',
+      lighting_and_shadow: 'Simple strong light direction, kept consistent across the whole image.',
+      texture_and_material: 'Rough brush blocks, pencil lines and paper edges.',
+      camera_and_composition: 'Small rectangle composition with room for a title band.',
+      atmosphere_and_mood: 'Keep the requested mood with raw design energy.',
+      rendering_and_quality:
+        'Loose and unfinished by design, no lettering, kept consistent across the whole image.',
+      creative_brief:
+        "Cover comp color rough: small loose color sketches painted to plan a fantasy cover, quick gouache blocks, rough figures and bold value design. Carry it through quick gouache blocks, rough figures, value design, small comp. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'quick gouache blocks; rough figures; value design; small comp',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-164',
+    name: 'Custom Van Mural Fantasy',
+    displayName: 'Custom Van Mural Fantasy',
+    styleAnchors: ['Custom Van Mural Fantasy', 'airbrushed van side mural', 'van side mural'],
+    category: '7. Pulp Fantasy Painting',
+    domain: 'airbrushed van side mural',
+    negativePrompt:
+      'brand logos, gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Custom van mural fantasy: seventies airbrushed fantasy murals painted on the side of a van, wizards, dragons and sunsets on glossy curved metal with chrome trim.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original adult characters; paint the subject as an airbrushed mural across the side panel of a van.',
+      color_and_tone: 'Sunset orange, purple and teal airbrush on glossy paint.',
+      lighting_and_shadow:
+        'Glossy reflections across the curved metal, kept consistent across the whole image.',
+      texture_and_material: 'Airbrush gradients, clear coat, chrome trim and panel seams.',
+      camera_and_composition: 'Side view of the van panel with the mural.',
+      atmosphere_and_mood: 'Keep the requested mood with groovy cosmic fantasy.',
+      rendering_and_quality:
+        'Convincing mural on a real vehicle, kept consistent across the whole image.',
+      creative_brief:
+        "Custom van mural fantasy: seventies airbrushed fantasy murals painted on the side of a van, wizards, dragons and sunsets on glossy curved metal with chrome trim. Carry it through van side mural, airbrush sunset, glossy metal, chrome trim. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'van side mural; airbrush sunset; glossy metal; chrome trim',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-165',
+    name: 'Metal Album Cover Epic',
+    displayName: 'Metal Album Cover Epic',
+    styleAnchors: ['Metal Album Cover Epic', 'heavy metal fantasy album painting', 'square format'],
+    category: '7. Pulp Fantasy Painting',
+    domain: 'heavy metal fantasy album painting',
+    negativePrompt:
+      'band logo, gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Metal album cover epic: square heavy-metal fantasy album paintings with skeletal kings, lightning, burning cities and apocalyptic grandeur.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original adult characters; stage the subject as a monumental apocalyptic figure in a square album painting.',
+      color_and_tone:
+        'Fire orange, lightning blue and black, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Lightning and fire lighting against dark skies, kept consistent across the whole image.',
+      texture_and_material:
+        'Detailed oil or acrylic with smoky gradients, kept consistent across the whole image.',
+      camera_and_composition:
+        'Square composition with a central towering figure, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with loud apocalyptic bombast.',
+      rendering_and_quality:
+        'Epic detailed painting with no band logo, kept consistent across the whole image.',
+      creative_brief:
+        "Metal album cover epic: square heavy-metal fantasy album paintings with skeletal kings, lightning, burning cities and apocalyptic grandeur. Carry it through square format, towering figure, lightning, burning city. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'square format; towering figure; lightning; burning city',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-166',
+    name: 'Painted Fantasy Film Poster',
+    displayName: 'Painted Fantasy Film Poster',
+    styleAnchors: [
+      'Painted Fantasy Film Poster',
+      'illustrated eighties fantasy movie poster',
+      'stacked montage',
+    ],
+    category: '7. Pulp Fantasy Painting',
+    domain: 'illustrated eighties fantasy movie poster',
+    negativePrompt:
+      'title or credits, gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Painted fantasy film poster: eighties illustrated movie posters with stacked hero portraits, a giant villain face in the sky, a castle below and glowing magical light.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original adult characters; stack the subject into a poster montage with a looming figure in the sky.',
+      color_and_tone: 'Glowing blues and oranges with rich painted skin tones.',
+      lighting_and_shadow:
+        'Magical backlight and rim-lit figures, kept consistent across the whole image.',
+      texture_and_material:
+        'Smooth painted finish with airbrushed glows, kept consistent across the whole image.',
+      camera_and_composition:
+        'Vertical montage pyramid of figures, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with blockbuster fantasy promise.',
+      rendering_and_quality: 'Polished poster painting with no title or credits.',
+      creative_brief:
+        "Painted fantasy film poster: eighties illustrated movie posters with stacked hero portraits, a giant villain face in the sky, a castle below and glowing magical light. Carry it through stacked montage, looming villain, castle below, magical glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'stacked montage; looming villain; castle below; magical glow',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-167',
+    name: 'Glowing-Eyes Night Pulp',
+    displayName: 'Glowing-Eyes Night Pulp',
+    styleAnchors: ['Glowing-Eyes Night Pulp', 'nocturnal lurid pulp painting', 'glowing eyes'],
+    category: '7. Pulp Fantasy Painting',
+    domain: 'nocturnal lurid pulp painting',
+    negativePrompt:
+      'gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Glowing-eyes night pulp: lurid nocturnal pulp paintings where darkness hides everything but glowing eyes, moonlit blades and one terrified or defiant face.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original adult characters; bury the subject in darkness lit by glowing eyes, moonlight and one bright face.',
+      color_and_tone: 'Deep blue-black with acid green or amber eye glows.',
+      lighting_and_shadow:
+        'Moonlit rims and glowing eyes in darkness, kept consistent across the whole image.',
+      texture_and_material:
+        'Rough pulp paint and dark glazes, kept consistent across the whole image.',
+      camera_and_composition: 'Figure in foreground with eyes in the dark behind.',
+      atmosphere_and_mood: 'Keep the requested mood with lurid nocturnal threat.',
+      rendering_and_quality:
+        'Dramatic contrast with no text, kept consistent across the whole image.',
+      creative_brief:
+        "Glowing-eyes night pulp: lurid nocturnal pulp paintings where darkness hides everything but glowing eyes, moonlit blades and one terrified or defiant face. Carry it through glowing eyes, darkness, moonlit blade, lurid pulp. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'glowing eyes; darkness; moonlit blade; lurid pulp',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-168',
+    name: 'Backlit Heroic Oil Study',
+    displayName: 'Backlit Heroic Oil Study',
+    styleAnchors: [
+      'Backlit Heroic Oil Study',
+      'hero silhouetted by bright light',
+      'blazing backlight',
+    ],
+    category: '7. Pulp Fantasy Painting',
+    domain: 'hero silhouetted by bright light',
+    negativePrompt:
+      'gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Backlit heroic oil study: heroes painted against a blazing light source, burning rim light on armor and hair, faces in warm shadow and dust in the air.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original adult characters; set the subject against a blazing light with a burning rim around its silhouette.',
+      color_and_tone:
+        'Blazing gold and white against warm shadow, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Intense backlight with glowing rims, kept consistent across the whole image.',
+      texture_and_material:
+        'Loose oil, dust motes and glinting metal, kept consistent across the whole image.',
+      camera_and_composition: 'Hero centered in front of the light source.',
+      atmosphere_and_mood:
+        'Keep the requested mood with triumphant grandeur, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Painterly glow with strong silhouette, kept consistent across the whole image.',
+      creative_brief:
+        "Backlit heroic oil study: heroes painted against a blazing light source, burning rim light on armor and hair, faces in warm shadow and dust in the air. Carry it through blazing backlight, rim light, silhouette, dust. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'blazing backlight; rim light; silhouette; dust',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-169',
+    name: 'Heroic Anatomy Oil Sketch',
+    displayName: 'Heroic Anatomy Oil Sketch',
+    styleAnchors: [
+      'Heroic Anatomy Oil Sketch',
+      'loose muscular figure study in oil',
+      'exaggerated anatomy',
+    ],
+    category: '7. Pulp Fantasy Painting',
+    domain: 'loose muscular figure study in oil',
+    negativePrompt:
+      'gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Heroic anatomy oil sketch: loose oil studies of powerful fantasy figures in action poses, exaggerated musculature, quick background and visible underdrawing.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original adult characters; sketch the subject as a powerful action figure with exaggerated anatomy and loose paint.',
+      color_and_tone: 'Warm flesh tones on a toned ochre ground.',
+      lighting_and_shadow:
+        'Strong single light modeling anatomy, kept consistent across the whole image.',
+      texture_and_material:
+        'Loose oil, visible underdrawing and bare canvas, kept consistent across the whole image.',
+      camera_and_composition:
+        'Single dynamic figure filling the canvas, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with raw physical power.',
+      rendering_and_quality:
+        'Energetic study, deliberately unfinished, kept consistent across the whole image.',
+      creative_brief:
+        "Heroic anatomy oil sketch: loose oil studies of powerful fantasy figures in action poses, exaggerated musculature, quick background and visible underdrawing. Carry it through exaggerated anatomy, loose oil, underdrawing, action pose. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'exaggerated anatomy; loose oil; underdrawing; action pose',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-170',
+    name: 'Swamp Monster Pulp Painting',
+    displayName: 'Swamp Monster Pulp Painting',
+    styleAnchors: ['Swamp Monster Pulp Painting', 'swamp creature pulp art', 'swamp creature'],
+    category: '7. Pulp Fantasy Painting',
+    domain: 'swamp creature pulp art',
+    negativePrompt:
+      'gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Swamp monster pulp painting: lurid paintings of moss-covered creatures rising from swamp water, dripping weeds, cypress trees and moonlit fog.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original adult characters; set the subject in a lurid moonlit swamp with dripping moss and fog.',
+      color_and_tone:
+        'Murky greens, moonlit blues and sickly yellow, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Moonlight through fog with glowing water, kept consistent across the whole image.',
+      texture_and_material: 'Dripping moss, wet hide, cypress bark and mist.',
+      camera_and_composition:
+        'Creature rising in the foreground, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with lurid swampy dread.',
+      rendering_and_quality:
+        'Painterly pulp finish with no text, kept consistent across the whole image.',
+      creative_brief:
+        "Swamp monster pulp painting: lurid paintings of moss-covered creatures rising from swamp water, dripping weeds, cypress trees and moonlit fog. Carry it through swamp creature, dripping moss, cypress fog, moonlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'swamp creature; dripping moss; cypress fog; moonlight',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-171',
+    name: 'Weird-Fiction Duotone Plate',
+    displayName: 'Weird-Fiction Duotone Plate',
+    styleAnchors: ['Weird-Fiction Duotone Plate', 'eerie two-tone magazine plate', 'duotone'],
+    category: '7. Pulp Fantasy Painting',
+    domain: 'eerie two-tone magazine plate',
+    negativePrompt:
+      'gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Weird-fiction duotone plate: eerie magazine illustrations in black and a single muted tone, cosmic horrors, ancient towns and wide-eyed scholars in dry brush.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original adult characters; render the subject in eerie dry brush with black and one muted tone.',
+      color_and_tone: 'Black and a muted green or ochre second tone.',
+      lighting_and_shadow:
+        'Strange underlight and deep shadow, kept consistent across the whole image.',
+      texture_and_material:
+        'Dry brush, stipple and aged pulp paper, kept consistent across the whole image.',
+      camera_and_composition:
+        'Unsettling angle with a looming presence, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with cosmic unease, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Eerie economical illustration, kept consistent across the whole image.',
+      creative_brief:
+        "Weird-fiction duotone plate: eerie magazine illustrations in black and a single muted tone, cosmic horrors, ancient towns and wide-eyed scholars in dry brush. Carry it through duotone, dry brush, cosmic horror, aged paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'duotone; dry brush; cosmic horror; aged paper',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-172',
+    name: 'Throne-Room Tableau Painting',
+    displayName: 'Throne-Room Tableau Painting',
+    styleAnchors: ['Throne-Room Tableau Painting', 'grand dark throne scene', 'towering throne'],
+    category: '7. Pulp Fantasy Painting',
+    domain: 'grand dark throne scene',
+    negativePrompt:
+      'gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Throne-room tableau painting: grand dark fantasy throne rooms painted as dramatic tableaux, a ruler on a towering throne, courtiers and captives below, torchlight and banners.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original adult characters; stage the subject within a grand throne-room tableau with clear hierarchy.',
+      color_and_tone: 'Deep reds, gold and shadowed stone, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Torchlight pools and dramatic shafts, kept consistent across the whole image.',
+      texture_and_material:
+        'Rich fabrics, carved stone and metal, kept consistent across the whole image.',
+      camera_and_composition:
+        'Symmetrical composition rising to the throne, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with dark courtly power.',
+      rendering_and_quality:
+        'Detailed painterly tableau with no text, kept consistent across the whole image.',
+      creative_brief:
+        "Throne-room tableau painting: grand dark fantasy throne rooms painted as dramatic tableaux, a ruler on a towering throne, courtiers and captives below, torchlight and banners. Carry it through towering throne, hierarchy, torchlight, banners. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'towering throne; hierarchy; torchlight; banners',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-173',
+    name: 'Burnt Sienna Underpainting',
+    displayName: 'Burnt Sienna Underpainting',
+    styleAnchors: [
+      'Burnt Sienna Underpainting',
+      'monochrome brown oil underlayer',
+      'monochrome sienna',
+    ],
+    category: '7. Pulp Fantasy Painting',
+    domain: 'monochrome brown oil underlayer',
+    negativePrompt:
+      'gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Burnt sienna underpainting: the first monochrome stage of a fantasy oil painting, warm brown values scrubbed onto canvas, wiped highlights and bold compositional masses.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original adult characters; establish the subject in warm brown values only, as the first stage of an oil painting.',
+      color_and_tone: 'Burnt sienna and raw umber values on white canvas.',
+      lighting_and_shadow:
+        'Wiped-out lights and scrubbed shadows, kept consistent across the whole image.',
+      texture_and_material: 'Thin scrubbed oil, rag wipes and canvas weave.',
+      camera_and_composition:
+        'Strong mass composition, details unresolved, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with raw preparatory force.',
+      rendering_and_quality:
+        'Unfinished by design, strong value design, kept consistent across the whole image.',
+      creative_brief:
+        "Burnt sienna underpainting: the first monochrome stage of a fantasy oil painting, warm brown values scrubbed onto canvas, wiped highlights and bold compositional masses. Carry it through monochrome sienna, wiped highlights, scrubbed oil, unfinished. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'monochrome sienna; wiped highlights; scrubbed oil; unfinished',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-174',
+    name: 'Sci-Fantasy Neon Pulp',
+    displayName: 'Sci-Fantasy Neon Pulp',
+    styleAnchors: ['Sci-Fantasy Neon Pulp', 'swords and ray guns neon painting', 'neon aurora'],
+    category: '7. Pulp Fantasy Painting',
+    domain: 'swords and ray guns neon painting',
+    negativePrompt:
+      'gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Sci-fantasy neon pulp: paintings where sword-wielding warriors meet ray guns, neon auroras, chrome towers and ancient beasts in electric saturated color.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original adult characters; mix sword-and-sorcery with neon science fiction around the subject.',
+      color_and_tone: 'Electric magenta, cyan and gold with deep night.',
+      lighting_and_shadow:
+        'Neon auroras and glowing weapons, kept consistent across the whole image.',
+      texture_and_material:
+        'Smooth airbrush glow and painted chrome, kept consistent across the whole image.',
+      camera_and_composition:
+        'Dynamic hero against a neon sky, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with electric retro wonder.',
+      rendering_and_quality:
+        'Saturated polished painting with no text, kept consistent across the whole image.',
+      creative_brief:
+        "Sci-fantasy neon pulp: paintings where sword-wielding warriors meet ray guns, neon auroras, chrome towers and ancient beasts in electric saturated color. Carry it through neon aurora, swords and ray guns, chrome towers, ancient beasts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'neon aurora; swords and ray guns; chrome towers; ancient beasts',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-175',
+    name: 'Pulp Dungeon Gatefold Spread',
+    displayName: 'Pulp Dungeon Gatefold Spread',
+    styleAnchors: [
+      'Pulp Dungeon Gatefold Spread',
+      'wide double-page painted spread',
+      'double-page spread',
+    ],
+    category: '7. Pulp Fantasy Painting',
+    domain: 'wide double-page painted spread',
+    negativePrompt:
+      'gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Pulp dungeon gatefold spread: wide double-page paintings with a center fold, a sprawling dungeon battle or treasure hall stretching across both panels.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original adult characters; spread the subject across a wide scene divided by a center fold.',
+      color_and_tone:
+        'Rich torchlit golds, deep dungeon shadows, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Multiple torch pools across the spread, kept consistent across the whole image.',
+      texture_and_material:
+        'Detailed paint with a visible center crease, kept consistent across the whole image.',
+      camera_and_composition: 'Wide panorama with action on both sides of the fold.',
+      atmosphere_and_mood:
+        'Keep the requested mood with sprawling adventure, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Detailed painted spread with no text, kept consistent across the whole image.',
+      creative_brief:
+        "Pulp dungeon gatefold spread: wide double-page paintings with a center fold, a sprawling dungeon battle or treasure hall stretching across both panels. Carry it through double-page spread, center fold, sprawling dungeon, torchlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'double-page spread; center fold; sprawling dungeon; torchlight',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-176',
+    name: 'Chrome-Armor Airbrush Hero',
+    displayName: 'Chrome-Armor Airbrush Hero',
+    styleAnchors: [
+      'Chrome-Armor Airbrush Hero',
+      'shiny airbrushed armored hero',
+      'mirror chrome armor',
+    ],
+    category: '7. Pulp Fantasy Painting',
+    domain: 'shiny airbrushed armored hero',
+    negativePrompt:
+      'gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Chrome-armor airbrush hero: eighties airbrushed fantasy heroes in mirror-bright chrome armor reflecting sunsets and lightning, smooth and hyper-glossy.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original adult characters; clad the subject in mirror-bright chrome armor reflecting the sky.',
+      color_and_tone: 'Chrome silver with sunset orange, magenta and blue reflections.',
+      lighting_and_shadow:
+        'Hard specular highlights and sky reflections, kept consistent across the whole image.',
+      texture_and_material:
+        'Smooth airbrush gradients and mirror metal, kept consistent across the whole image.',
+      camera_and_composition:
+        'Low heroic angle against a big sky, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with glossy heroic spectacle.',
+      rendering_and_quality:
+        'Hyper-glossy airbrush finish, no text, kept consistent across the whole image.',
+      creative_brief:
+        "Chrome-armor airbrush hero: eighties airbrushed fantasy heroes in mirror-bright chrome armor reflecting sunsets and lightning, smooth and hyper-glossy. Carry it through mirror chrome armor, sky reflections, airbrush, low angle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'mirror chrome armor; sky reflections; airbrush; low angle',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-177',
+    name: 'Small Paperback Vignette Painting',
+    displayName: 'Small Paperback Vignette Painting',
+    styleAnchors: [
+      'Small Paperback Vignette Painting',
+      'small spine or back-cover painting',
+      'oval vignette',
+    ],
+    category: '7. Pulp Fantasy Painting',
+    domain: 'small spine or back-cover painting',
+    negativePrompt:
+      'gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Small paperback vignette painting: tiny oval or round paintings from paperback back covers and spines, a single figure or object painted with jewel-like care.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original adult characters; paint the subject small and precious inside a round or oval vignette.',
+      color_and_tone: 'Rich jewel tones on a dark ground, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Soft focused light on the tiny subject, kept consistent across the whole image.',
+      texture_and_material: 'Fine paint on a small oval, printed paper grain.',
+      camera_and_composition:
+        'Single subject centered in an oval vignette, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with intimate precious mystery.',
+      rendering_and_quality:
+        'Tiny detailed painting, no text, kept consistent across the whole image.',
+      creative_brief:
+        "Small paperback vignette painting: tiny oval or round paintings from paperback back covers and spines, a single figure or object painted with jewel-like care. Carry it through oval vignette, tiny subject, jewel tones, dark ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'oval vignette; tiny subject; jewel tones; dark ground',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

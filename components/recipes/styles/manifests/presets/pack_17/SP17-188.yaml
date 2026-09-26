@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP17-188
+packId: pack_17
+name: India Ink Drybrush Fantasy
+styleAnchors:
+  - India Ink Drybrush Fantasy
+  - dry brush black ink illustration
+  - dry brush
+displayName: India Ink Drybrush Fantasy
+category: 8. Medieval Fantasy Drawing Media
+domain: dry brush black ink illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - medieval-fantasy-drawing-media
+  - india-drybrush
+  - drawing-media
+  - portable-style-study
+visualDna:
+  aesthetic: 'India ink drybrush fantasy: black ink dragged with a nearly dry brush to create rough broken textures on fur, stone and smoke, bold and gritty.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; render the subject with rough broken drybrush textures in black ink.
+  color_and_tone: Black ink on white paper, kept consistent across the whole image.
+  lighting_and_shadow: Broken texture and solid black shadows, kept consistent across the whole image.
+  texture_and_material: Dragged dry brush, split bristles and grit, kept consistent across the whole image.
+  camera_and_composition: Bold figure with textured surroundings, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with gritty savage energy.
+  rendering_and_quality: Crisp black with rough texture, kept consistent across the whole image.
+  creative_brief: "India ink drybrush fantasy: black ink dragged with a nearly dry brush to create rough broken textures on fur, stone and smoke, bold and gritty. Carry it through dry brush, broken texture, black ink, gritty. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: dry brush; broken texture; black ink; gritty
+avoidRules:
+  - digital smoothness
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: digital smoothness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: medieval-fantasy-drawing-media
+  categoryName: 8. Medieval Fantasy Drawing Media
+  tags:
+    - curation-v2
+    - medieval-fantasy-drawing-media
+    - india-drybrush
+    - drawing-media
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: dry brush black ink illustration

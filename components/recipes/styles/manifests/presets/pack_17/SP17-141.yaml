@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP17-141
+packId: pack_17
+name: Macro Grim Miniature Photo
+styleAnchors:
+  - Macro Grim Miniature Photo
+  - close-up tabletop miniature photograph
+  - macro focus
+displayName: Macro Grim Miniature Photo
+category: 5. Grimdark Game Systems & Tabletop
+domain: close-up tabletop miniature photograph
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - grimdark-game-systems-and-tabletop
+  - macro-mini
+  - grimdark-game
+  - portable-style-study
+visualDna:
+  aesthetic: 'Macro grim miniature photo: an extreme close-up photograph of a painted grimdark miniature on a battlefield table, shallow depth of field and dramatic hobby lighting.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; photograph the subject as a painted miniature in extreme macro close-up.
+  color_and_tone: Rich painted colors with dark blurred background, kept consistent across the whole image.
+  lighting_and_shadow: Dramatic small light source and rim light, kept consistent across the whole image.
+  texture_and_material: Paint layers, brush marks and sculpted detail, kept consistent across the whole image.
+  camera_and_composition: Macro lens with razor-thin focus, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with epic scale in miniature.
+  rendering_and_quality: Convincing macro photography, kept consistent across the whole image.
+  creative_brief: "Macro grim miniature photo: an extreme close-up photograph of a painted grimdark miniature on a battlefield table, shallow depth of field and dramatic hobby lighting. Carry it through macro focus, painted miniature, shallow depth, dramatic light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: macro focus; painted miniature; shallow depth; dramatic light
+avoidRules:
+  - gore
+  - interface text, menus or health bars
+  - existing game characters or logos
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: gore, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: grimdark-game-systems-and-tabletop
+  categoryName: 5. Grimdark Game Systems & Tabletop
+  domain: close-up tabletop miniature photograph
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - grimdark-game-systems-and-tabletop
+    - macro-mini
+    - grimdark-game
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

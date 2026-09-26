@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP17-142
+packId: pack_17
+name: Stress-Break Hero Portrait
+styleAnchors:
+  - Stress-Break Hero Portrait
+  - hero portrait under mental strain
+  - breaking-point portrait
+displayName: Stress-Break Hero Portrait
+category: 5. Grimdark Game Systems & Tabletop
+domain: hero portrait under mental strain
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - grimdark-game-systems-and-tabletop
+  - stress-portrait
+  - grimdark-game
+  - portable-style-study
+visualDna:
+  aesthetic: 'Stress-break hero portrait: a gritty close portrait of an adventurer at the breaking point, wide eyes, shaking hands, heavy ink shadows and a trembling torchlit glow.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject in a close portrait at the edge of breaking under strain.
+  color_and_tone: Sickly torch amber and near-black ink, kept consistent across the whole image.
+  lighting_and_shadow: Flickering underlight and harsh shadow, kept consistent across the whole image.
+  texture_and_material: Heavy ink, sweat sheen and scratchy line, kept consistent across the whole image.
+  camera_and_composition: Tight head-and-shoulders portrait, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with fraying nerves, kept consistent across the whole image.
+  rendering_and_quality: Expressive intense portrait without gore, kept consistent across the whole image.
+  creative_brief: "Stress-break hero portrait: a gritty close portrait of an adventurer at the breaking point, wide eyes, shaking hands, heavy ink shadows and a trembling torchlit glow. Carry it through breaking-point portrait, wide eyes, torch underlight, heavy ink. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: breaking-point portrait; wide eyes; torch underlight; heavy ink
+avoidRules:
+  - gore
+  - interface text, menus or health bars
+  - existing game characters or logos
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: gore, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: grimdark-game-systems-and-tabletop
+  categoryName: 5. Grimdark Game Systems & Tabletop
+  domain: hero portrait under mental strain
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - grimdark-game-systems-and-tabletop
+    - stress-portrait
+    - grimdark-game
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

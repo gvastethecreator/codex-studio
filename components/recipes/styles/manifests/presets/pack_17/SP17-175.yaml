@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP17-175
+packId: pack_17
+name: Pulp Dungeon Gatefold Spread
+styleAnchors:
+  - Pulp Dungeon Gatefold Spread
+  - wide double-page painted spread
+  - double-page spread
+displayName: Pulp Dungeon Gatefold Spread
+category: 7. Pulp Fantasy Painting
+domain: wide double-page painted spread
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - pulp-fantasy-painting
+  - gatefold
+  - pulp-fantasy
+  - portable-style-study
+visualDna:
+  aesthetic: 'Pulp dungeon gatefold spread: wide double-page paintings with a center fold, a sprawling dungeon battle or treasure hall stretching across both panels.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original adult characters; spread the subject across a wide scene divided by a center fold.
+  color_and_tone: Rich torchlit golds, deep dungeon shadows, kept consistent across the whole image.
+  lighting_and_shadow: Multiple torch pools across the spread, kept consistent across the whole image.
+  texture_and_material: Detailed paint with a visible center crease, kept consistent across the whole image.
+  camera_and_composition: Wide panorama with action on both sides of the fold.
+  atmosphere_and_mood: Keep the requested mood with sprawling adventure, kept consistent across the whole image.
+  rendering_and_quality: Detailed painted spread with no text, kept consistent across the whole image.
+  creative_brief: "Pulp dungeon gatefold spread: wide double-page paintings with a center fold, a sprawling dungeon battle or treasure hall stretching across both panels. Carry it through double-page spread, center fold, sprawling dungeon, torchlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: double-page spread; center fold; sprawling dungeon; torchlight
+avoidRules:
+  - gore
+  - title lettering
+  - existing franchise heroes
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: pulp-fantasy-painting
+  categoryName: 7. Pulp Fantasy Painting
+  tags:
+    - curation-v2
+    - pulp-fantasy-painting
+    - gatefold
+    - pulp-fantasy
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: wide double-page painted spread

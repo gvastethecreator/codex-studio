@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP17-133
+packId: pack_17
+name: Permadeath Roguelike Tableau
+styleAnchors:
+  - Permadeath Roguelike Tableau
+  - roguelike defeat scene
+  - fallen hero gear
+displayName: Permadeath Roguelike Tableau
+category: 5. Grimdark Game Systems & Tabletop
+domain: roguelike defeat scene
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - grimdark-game-systems-and-tabletop
+  - roguelike-tableau
+  - grimdark-game
+  - portable-style-study
+visualDna:
+  aesthetic: 'Permadeath roguelike tableau: the frozen moment after a hero falls in a procedural dungeon, fallen gear, lingering monsters and a quiet grim stillness.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; freeze the subject in the quiet moment just after a fatal defeat, without gore.
+  color_and_tone: Desaturated dungeon tones with one fading warm light.
+  lighting_and_shadow: A last torch or spell light fading into dark.
+  texture_and_material: Stone tiles, dropped gear, dust and ash, kept consistent across the whole image.
+  camera_and_composition: Top-down or three-quarter dungeon room view, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with bleak restart melancholy.
+  rendering_and_quality: Clear readable scene without gore or text, kept consistent across the whole image.
+  creative_brief: "Permadeath roguelike tableau: the frozen moment after a hero falls in a procedural dungeon, fallen gear, lingering monsters and a quiet grim stillness. Carry it through fallen hero gear, fading light, lingering monster, dungeon room. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: fallen hero gear; fading light; lingering monster; dungeon room
+avoidRules:
+  - gore
+  - game over text
+  - interface text, menus or health bars
+  - existing game characters or logos
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: gore, game over text, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: grimdark-game-systems-and-tabletop
+  categoryName: 5. Grimdark Game Systems & Tabletop
+  domain: roguelike defeat scene
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - grimdark-game-systems-and-tabletop
+    - roguelike-tableau
+    - grimdark-game
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

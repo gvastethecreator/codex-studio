@@ -90,4 +90,578 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP17-143',
+    name: 'Potato-Print Monster Stamps',
+    displayName: 'Potato-Print Monster Stamps',
+    styleAnchors: [
+      'Potato-Print Monster Stamps',
+      'carved vegetable stamp prints',
+      'carved vegetable stamps',
+    ],
+    category: '6. Dungeon Zine Assemblage & Stampwork',
+    domain: 'carved vegetable stamp prints',
+    negativePrompt:
+      'readable text or lettering, clean digital vector look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Potato-print monster stamps: crude shapes carved into vegetables and stamped in thick paint, soft blotchy edges, starchy texture and naive repeated creatures.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; build the subject from a few crude carved stamp shapes pressed in thick paint.',
+      color_and_tone:
+        'Bold poster paint colors on cheap paper, kept consistent across the whole image.',
+      lighting_and_shadow: 'Flat print with no shading, kept consistent across the whole image.',
+      texture_and_material: 'Blotchy starchy impressions, uneven paint and paper grain.',
+      camera_and_composition:
+        'Repeated stamped figures across the page, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with crude gleeful menace.',
+      rendering_and_quality:
+        'Honest handmade crudeness with bold shapes, kept consistent across the whole image.',
+      creative_brief:
+        "Potato-print monster stamps: crude shapes carved into vegetables and stamped in thick paint, soft blotchy edges, starchy texture and naive repeated creatures. Carry it through carved vegetable stamps, blotchy paint, repeated creatures, naive shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'carved vegetable stamps; blotchy paint; repeated creatures; naive shapes',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-144',
+    name: 'Sealing-Wax Drip Assemblage',
+    displayName: 'Sealing-Wax Drip Assemblage',
+    styleAnchors: ['Sealing-Wax Drip Assemblage', 'wax seals and drips collage', 'wax drips'],
+    category: '6. Dungeon Zine Assemblage & Stampwork',
+    domain: 'wax seals and drips collage',
+    negativePrompt:
+      'readable seal letters, readable text or lettering, clean digital vector look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Sealing-wax drip assemblage: images built from blobs, drips and stamped seals of red, black and gold wax pooled across parchment and ribbon.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; shape the subject from wax drips, seal impressions and ribbon.',
+      color_and_tone: 'Deep red, black and gold wax on cream parchment.',
+      lighting_and_shadow:
+        'Glossy wax highlights and small shadows, kept consistent across the whole image.',
+      texture_and_material:
+        'Molten drips, seal impressions, ribbon and parchment, kept consistent across the whole image.',
+      camera_and_composition:
+        'Top-down view of wax forms on paper, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with secretive oath-bound gravity.',
+      rendering_and_quality:
+        'Convincing glossy wax texture, kept consistent across the whole image.',
+      creative_brief:
+        "Sealing-wax drip assemblage: images built from blobs, drips and stamped seals of red, black and gold wax pooled across parchment and ribbon. Carry it through wax drips, seal impressions, ribbon, parchment. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'wax drips; seal impressions; ribbon; parchment',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-145',
+    name: 'Found-Map Monster Collage',
+    displayName: 'Found-Map Monster Collage',
+    styleAnchors: ['Found-Map Monster Collage', 'creatures cut onto old maps', 'cut map paper'],
+    category: '6. Dungeon Zine Assemblage & Stampwork',
+    domain: 'creatures cut onto old maps',
+    negativePrompt:
+      'readable place names, readable text or lettering, clean digital vector look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Found-map monster collage: creatures and figures cut from old maps and nautical charts, coastlines and contour lines becoming scales, fur and wings.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; cut the subject out of old map paper so geography becomes its texture.',
+      color_and_tone: 'Faded map blues, beiges and red route lines.',
+      lighting_and_shadow:
+        'Flat collage with small paper shadows, kept consistent across the whole image.',
+      texture_and_material: 'Map paper, contour lines, folds and glue edges.',
+      camera_and_composition: 'Cut figure on a plain or map background.',
+      atmosphere_and_mood:
+        'Keep the requested mood with wanderlust strangeness, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean cutting with readable map texture, kept consistent across the whole image.',
+      creative_brief:
+        "Found-map monster collage: creatures and figures cut from old maps and nautical charts, coastlines and contour lines becoming scales, fur and wings. Carry it through cut map paper, contour-line texture, fold creases, collage. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'cut map paper; contour-line texture; fold creases; collage',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-146',
+    name: 'Cut Tarot Scrap Assemblage',
+    displayName: 'Cut Tarot Scrap Assemblage',
+    styleAnchors: [
+      'Cut Tarot Scrap Assemblage',
+      'collage from cut card fragments',
+      'cut card fragments',
+    ],
+    category: '6. Dungeon Zine Assemblage & Stampwork',
+    domain: 'collage from cut card fragments',
+    negativePrompt:
+      'readable card titles or numbers, readable text or lettering, clean digital vector look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Cut tarot scrap assemblage: new figures built from cut fragments of old illustrated cards, mismatched limbs, crowns, moons and swords glued into strange hybrids.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; assemble the subject from mismatched fragments of old illustrated cards.',
+      color_and_tone: 'Faded card reds, blues and golds with black line.',
+      lighting_and_shadow: 'Flat with small paper shadows, kept consistent across the whole image.',
+      texture_and_material:
+        'Card stock edges, worn corners and glue, kept consistent across the whole image.',
+      camera_and_composition:
+        'Central hybrid figure on a dark ground, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with uncanny fortune-telling, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clean cut edges with charming mismatch, kept consistent across the whole image.',
+      creative_brief:
+        "Cut tarot scrap assemblage: new figures built from cut fragments of old illustrated cards, mismatched limbs, crowns, moons and swords glued into strange hybrids. Carry it through cut card fragments, hybrid figure, worn card stock, dark ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'cut card fragments; hybrid figure; worn card stock; dark ground',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-147',
+    name: 'Masking-Tape Dungeon Layout',
+    displayName: 'Masking-Tape Dungeon Layout',
+    styleAnchors: [
+      'Masking-Tape Dungeon Layout',
+      'dungeon drawn with tape strips',
+      'masking tape strips',
+    ],
+    category: '6. Dungeon Zine Assemblage & Stampwork',
+    domain: 'dungeon drawn with tape strips',
+    negativePrompt:
+      'readable labels, readable text or lettering, clean digital vector look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Masking-tape dungeon layout: a dungeon built from torn strips of beige masking tape on a table or wall, pen marks, doorways and doodled monsters.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; build the subject or its dungeon from torn masking-tape strips with pen doodles.',
+      color_and_tone: 'Beige tape, marker black and a little red.',
+      lighting_and_shadow:
+        'Soft tabletop light with tape edge shadows, kept consistent across the whole image.',
+      texture_and_material:
+        'Torn tape ends, marker lines and crinkles, kept consistent across the whole image.',
+      camera_and_composition:
+        'Top-down view of the tape layout, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with scrappy game-night invention.',
+      rendering_and_quality:
+        'Convincing physical tape and marker, kept consistent across the whole image.',
+      creative_brief:
+        "Masking-tape dungeon layout: a dungeon built from torn strips of beige masking tape on a table or wall, pen marks, doorways and doodled monsters. Carry it through masking tape strips, marker doodles, top-down layout, torn ends. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'masking tape strips; marker doodles; top-down layout; torn ends',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-148',
+    name: 'Dungeon Sticker Sheet Bomb',
+    displayName: 'Dungeon Sticker Sheet Bomb',
+    styleAnchors: [
+      'Dungeon Sticker Sheet Bomb',
+      'layered cheap stickers of monsters',
+      'overlapping stickers',
+    ],
+    category: '6. Dungeon Zine Assemblage & Stampwork',
+    domain: 'layered cheap stickers of monsters',
+    negativePrompt:
+      'brand logos, readable text or lettering, clean digital vector look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Dungeon sticker sheet bomb: dozens of cheap glossy fantasy stickers layered and overlapping, monsters, dice, skulls and swords with white die-cut borders.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject as one sticker among dense overlapping fantasy stickers.',
+      color_and_tone:
+        'Saturated cheap print colors with white borders, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Glossy highlights and slight lifted edges, kept consistent across the whole image.',
+      texture_and_material:
+        'Vinyl stickers, peeling corners and overlap, kept consistent across the whole image.',
+      camera_and_composition:
+        'Dense all-over layout with one focal sticker, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with loud collector chaos.',
+      rendering_and_quality:
+        'Crisp stickers with believable overlap, kept consistent across the whole image.',
+      creative_brief:
+        "Dungeon sticker sheet bomb: dozens of cheap glossy fantasy stickers layered and overlapping, monsters, dice, skulls and swords with white die-cut borders. Carry it through overlapping stickers, die-cut borders, glossy vinyl, peeling corners. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'overlapping stickers; die-cut borders; glossy vinyl; peeling corners',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-149',
+    name: 'Tracing-Paper Overlay Monsters',
+    displayName: 'Tracing-Paper Overlay Monsters',
+    styleAnchors: [
+      'Tracing-Paper Overlay Monsters',
+      'layered translucent tracing sheets',
+      'stacked tracing sheets',
+    ],
+    category: '6. Dungeon Zine Assemblage & Stampwork',
+    domain: 'layered translucent tracing sheets',
+    negativePrompt:
+      'readable text or lettering, clean digital vector look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Tracing-paper overlay monsters: creatures built from several translucent tracing sheets stacked over each other, each adding a layer of ink line so forms show through.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; build the subject from stacked translucent sheets, each carrying part of the drawing.',
+      color_and_tone: 'Milky translucent paper with black and sepia ink.',
+      lighting_and_shadow:
+        'Backlit glow through stacked sheets, kept consistent across the whole image.',
+      texture_and_material: 'Tracing paper, curled edges, tape and ink lines.',
+      camera_and_composition:
+        'Layered sheets slightly offset on a table, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with ghostly layered depth.',
+      rendering_and_quality:
+        'Clear layered linework through translucency, kept consistent across the whole image.',
+      creative_brief:
+        "Tracing-paper overlay monsters: creatures built from several translucent tracing sheets stacked over each other, each adding a layer of ink line so forms show through. Carry it through stacked tracing sheets, show-through lines, offset layers, backlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'stacked tracing sheets; show-through lines; offset layers; backlight',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-150',
+    name: 'Ink-Pad Ledger Stampwork',
+    displayName: 'Ink-Pad Ledger Stampwork',
+    styleAnchors: [
+      'Ink-Pad Ledger Stampwork',
+      'bureaucratic rubber stamps as image',
+      'official stamps',
+    ],
+    category: '6. Dungeon Zine Assemblage & Stampwork',
+    domain: 'bureaucratic rubber stamps as image',
+    negativePrompt:
+      'readable words or dates, readable text or lettering, clean digital vector look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Ink-pad ledger stampwork: images built from official-looking rubber stamps, date stamps, seals and signatures without words, pressed in violet and red on ledger paper.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; compose the subject from repeated official stamp impressions on ruled ledger paper.',
+      color_and_tone: 'Violet and red stamp ink on pale green or cream ledger paper.',
+      lighting_and_shadow: 'Flat print with no shading, kept consistent across the whole image.',
+      texture_and_material: 'Uneven stamp pressure, ruled lines and ink smudges.',
+      camera_and_composition:
+        'Top-down ledger page composition, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with dry bureaucratic dread.',
+      rendering_and_quality:
+        'Convincing stamp texture with no readable words, kept consistent across the whole image.',
+      creative_brief:
+        "Ink-pad ledger stampwork: images built from official-looking rubber stamps, date stamps, seals and signatures without words, pressed in violet and red on ledger paper. Carry it through official stamps, ruled ledger paper, violet ink, no words. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'official stamps; ruled ledger paper; violet ink; no words',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-151',
+    name: 'Pressed-Leaf Goblin Assemblage',
+    displayName: 'Pressed-Leaf Goblin Assemblage',
+    styleAnchors: [
+      'Pressed-Leaf Goblin Assemblage',
+      'dried leaves arranged into figures',
+      'pressed leaves',
+    ],
+    category: '6. Dungeon Zine Assemblage & Stampwork',
+    domain: 'dried leaves arranged into figures',
+    negativePrompt:
+      'readable text or lettering, clean digital vector look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Pressed-leaf goblin assemblage: goblins, trolls and forest folk built from dried pressed leaves, seeds, petals and twigs glued on paper.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; build the subject from pressed leaves, petals, seeds and twigs.',
+      color_and_tone:
+        'Autumn browns, faded greens and dried rose, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Soft light with delicate leaf shadows, kept consistent across the whole image.',
+      texture_and_material:
+        'Leaf veins, brittle edges and seed textures, kept consistent across the whole image.',
+      camera_and_composition:
+        'Figure centered on pale paper, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with woodland mischief, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Delicate natural textures with clear figure, kept consistent across the whole image.',
+      creative_brief:
+        "Pressed-leaf goblin assemblage: goblins, trolls and forest folk built from dried pressed leaves, seeds, petals and twigs glued on paper. Carry it through pressed leaves, seeds and petals, goblin figures, pale paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'pressed leaves; seeds and petals; goblin figures; pale paper',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-152',
+    name: 'Patched Heraldry Rag Collage',
+    displayName: 'Patched Heraldry Rag Collage',
+    styleAnchors: ['Patched Heraldry Rag Collage', 'fabric scraps sewn into arms', 'fabric scraps'],
+    category: '6. Dungeon Zine Assemblage & Stampwork',
+    domain: 'fabric scraps sewn into arms',
+    negativePrompt:
+      'readable mottoes, readable text or lettering, clean digital vector look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Patched heraldry rag collage: coats of arms and banners built from torn fabric scraps, frayed edges, rough stitching and safety pins.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; stitch the subject into a banner or shield from torn fabric scraps.',
+      color_and_tone: 'Faded reds, blacks, denim blues and dirty whites.',
+      lighting_and_shadow:
+        'Soft light on raised fabric edges, kept consistent across the whole image.',
+      texture_and_material:
+        'Frayed cloth, crude stitches, patches and pins, kept consistent across the whole image.',
+      camera_and_composition:
+        'Flat banner or shield filling the frame, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with scrappy rebel pride.',
+      rendering_and_quality:
+        'Convincing fabric texture and stitching, kept consistent across the whole image.',
+      creative_brief:
+        "Patched heraldry rag collage: coats of arms and banners built from torn fabric scraps, frayed edges, rough stitching and safety pins. Carry it through fabric scraps, crude stitching, safety pins, banner shape. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'fabric scraps; crude stitching; safety pins; banner shape',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-153',
+    name: 'Staple-Bound Micro Zine',
+    displayName: 'Staple-Bound Micro Zine',
+    styleAnchors: ['Staple-Bound Micro Zine', 'tiny folded zine spread', 'tiny zine'],
+    category: '6. Dungeon Zine Assemblage & Stampwork',
+    domain: 'tiny folded zine spread',
+    negativePrompt:
+      'readable text, readable text or lettering, clean digital vector look, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Staple-bound micro zine: a tiny folded booklet photographed open, rough black ink drawings across the spread, two staples in the gutter and thumbprints on the cheap paper.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; draw the subject across an open tiny zine spread with a staple gutter.',
+      color_and_tone: 'Black ink on off-white copy paper, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Soft photo light on the folded pages, kept consistent across the whole image.',
+      texture_and_material:
+        'Staples, folds, thumbprints and copier grain, kept consistent across the whole image.',
+      camera_and_composition:
+        'Open spread seen from above, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with intimate handmade obsession.',
+      rendering_and_quality: 'Convincing tiny zine object, kept consistent across the whole image.',
+      creative_brief:
+        "Staple-bound micro zine: a tiny folded booklet photographed open, rough black ink drawings across the spread, two staples in the gutter and thumbprints on the cheap paper. Carry it through tiny zine, staple gutter, ink drawings, thumbprints. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'tiny zine; staple gutter; ink drawings; thumbprints',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-154',
+    name: 'Stamped Border Frieze Print',
+    displayName: 'Stamped Border Frieze Print',
+    styleAnchors: ['Stamped Border Frieze Print', 'repeating stamped borders', 'stamped border'],
+    category: '6. Dungeon Zine Assemblage & Stampwork',
+    domain: 'repeating stamped borders',
+    negativePrompt:
+      'readable text or lettering, clean digital vector look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Stamped border frieze print: a central fantasy image framed by repeating hand-stamped borders of skulls, keys, moons and vines pressed around the edge.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; frame the subject with repeating hand-stamped border motifs.',
+      color_and_tone: 'Black and one accent ink on cream paper.',
+      lighting_and_shadow: 'Flat print, kept consistent across the whole image.',
+      texture_and_material:
+        'Uneven stamp impressions and slightly crooked repeats, kept consistent across the whole image.',
+      camera_and_composition: 'Central image with a stamped border all around.',
+      atmosphere_and_mood: 'Keep the requested mood with ritual handmade order.',
+      rendering_and_quality:
+        'Consistent repeat rhythm with handmade variation, kept consistent across the whole image.',
+      creative_brief:
+        "Stamped border frieze print: a central fantasy image framed by repeating hand-stamped borders of skulls, keys, moons and vines pressed around the edge. Carry it through stamped border, repeating motifs, crooked repeats, central image. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'stamped border; repeating motifs; crooked repeats; central image',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-155',
+    name: 'Found-Object Relic Shadowbox',
+    displayName: 'Found-Object Relic Shadowbox',
+    styleAnchors: ['Found-Object Relic Shadowbox', 'glued object assemblage box', 'shadowbox'],
+    category: '6. Dungeon Zine Assemblage & Stampwork',
+    domain: 'glued object assemblage box',
+    negativePrompt:
+      'readable text or lettering, clean digital vector look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Found-object relic shadowbox: small wooden boxes filled with glued bones, keys, buttons, bottle caps and doll parts arranged as strange fantasy relics.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; assemble the subject from glued found objects inside a small wooden box.',
+      color_and_tone: 'Aged wood, rust, bone white and faded cloth.',
+      lighting_and_shadow:
+        'Dramatic side light with deep box shadows, kept consistent across the whole image.',
+      texture_and_material:
+        'Glue, rust, bone, wood grain and dust, kept consistent across the whole image.',
+      camera_and_composition: 'Frontal view into the box, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with eerie collector ritual.',
+      rendering_and_quality:
+        'Convincing physical assemblage, kept consistent across the whole image.',
+      creative_brief:
+        "Found-object relic shadowbox: small wooden boxes filled with glued bones, keys, buttons, bottle caps and doll parts arranged as strange fantasy relics. Carry it through shadowbox, found objects, glued relic, side light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'shadowbox; found objects; glued relic; side light',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-156',
+    name: 'Receipt-Roll Bestiary',
+    displayName: 'Receipt-Roll Bestiary',
+    styleAnchors: ['Receipt-Roll Bestiary', 'creatures drawn on long receipts', 'receipt roll'],
+    category: '6. Dungeon Zine Assemblage & Stampwork',
+    domain: 'creatures drawn on long receipts',
+    negativePrompt:
+      'readable prices or text, readable text or lettering, clean digital vector look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Receipt-roll bestiary: long creatures drawn in pen on curling thermal receipt paper, faded print lines, torn edges and the paper roll unspooling.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; draw the subject along a long curling strip of receipt paper.',
+      color_and_tone: 'Grey-white thermal paper with blue ballpoint and faded grey print.',
+      lighting_and_shadow:
+        'Soft light on the curling strip, kept consistent across the whole image.',
+      texture_and_material: 'Thin glossy paper, curl, torn edges and faded print.',
+      camera_and_composition:
+        'Very long vertical or diagonal strip, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with bored-clerk imagination, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Convincing paper curl and pen line, kept consistent across the whole image.',
+      creative_brief:
+        "Receipt-roll bestiary: long creatures drawn in pen on curling thermal receipt paper, faded print lines, torn edges and the paper roll unspooling. Carry it through receipt roll, long creature, curling paper, ballpoint. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'receipt roll; long creature; curling paper; ballpoint',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-157',
+    name: 'Wallpaper-Scrap Creature Collage',
+    displayName: 'Wallpaper-Scrap Creature Collage',
+    styleAnchors: [
+      'Wallpaper-Scrap Creature Collage',
+      'monsters cut from old wallpaper',
+      'wallpaper scraps',
+    ],
+    category: '6. Dungeon Zine Assemblage & Stampwork',
+    domain: 'monsters cut from old wallpaper',
+    negativePrompt:
+      'readable text or lettering, clean digital vector look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Wallpaper-scrap creature collage: monsters cut from old patterned wallpaper samples, florals, stripes and damask becoming fur, scales and cloaks.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; cut the subject from patterned wallpaper scraps so the pattern becomes its surface.',
+      color_and_tone:
+        'Faded floral, damask and stripe patterns, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Flat with slight paper shadows, kept consistent across the whole image.',
+      texture_and_material:
+        'Wallpaper textures, glue edges and faded print, kept consistent across the whole image.',
+      camera_and_composition: 'Cut figures on a plain dark or cream ground.',
+      atmosphere_and_mood: 'Keep the requested mood with domestic uncanny charm.',
+      rendering_and_quality:
+        'Clean cutting with clear pattern, kept consistent across the whole image.',
+      creative_brief:
+        "Wallpaper-scrap creature collage: monsters cut from old patterned wallpaper samples, florals, stripes and damask becoming fur, scales and cloaks. Carry it through wallpaper scraps, pattern as surface, cut figures, faded print. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'wallpaper scraps; pattern as surface; cut figures; faded print',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-158',
+    name: 'Scorched Paper Layering',
+    displayName: 'Scorched Paper Layering',
+    styleAnchors: ['Scorched Paper Layering', 'burnt-edge paper collage', 'burnt edges'],
+    category: '6. Dungeon Zine Assemblage & Stampwork',
+    domain: 'burnt-edge paper collage',
+    negativePrompt:
+      'readable text or lettering, clean digital vector look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Scorched paper layering: images built from paper layers with burnt edges, char marks and singed holes, stacked over each other like pages rescued from a fire.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; build the subject from stacked paper layers with burnt edges and char holes.',
+      color_and_tone: 'Parchment tan, char black and ember orange edges.',
+      lighting_and_shadow: 'Warm glow on burnt edges with shadows between layers.',
+      texture_and_material: 'Singed edges, ash, char holes and brittle paper.',
+      camera_and_composition:
+        'Layered collage with depth between sheets, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with survivor ruin, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Convincing burnt paper texture, kept consistent across the whole image.',
+      creative_brief:
+        "Scorched paper layering: images built from paper layers with burnt edges, char marks and singed holes, stacked over each other like pages rescued from a fire. Carry it through burnt edges, char holes, stacked paper, ember glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'burnt edges; char holes; stacked paper; ember glow',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-159',
+    name: 'Overhead-Transparency Layers',
+    displayName: 'Overhead-Transparency Layers',
+    styleAnchors: [
+      'Overhead-Transparency Layers',
+      'stacked projector transparencies',
+      'transparency sheets',
+    ],
+    category: '6. Dungeon Zine Assemblage & Stampwork',
+    domain: 'stacked projector transparencies',
+    negativePrompt:
+      'readable text, readable text or lettering, clean digital vector look, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Overhead-transparency layers: clear plastic projector sheets drawn with marker, stacked and slightly offset, projected as a glowing composite with fingerprints and dust.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; split the subject across stacked transparent sheets of marker drawing.',
+      color_and_tone:
+        'Glowing marker colors over bright projection light, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Projected light with soft blurry edges, kept consistent across the whole image.',
+      texture_and_material:
+        'Marker streaks, fingerprints, dust and plastic sheen, kept consistent across the whole image.',
+      camera_and_composition:
+        'Projected composite on a wall, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with schoolroom occult glow.',
+      rendering_and_quality:
+        'Convincing projected transparency look, kept consistent across the whole image.',
+      creative_brief:
+        "Overhead-transparency layers: clear plastic projector sheets drawn with marker, stacked and slightly offset, projected as a glowing composite with fingerprints and dust. Carry it through transparency sheets, marker drawing, projection glow, fingerprints. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'transparency sheets; marker drawing; projection glow; fingerprints',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

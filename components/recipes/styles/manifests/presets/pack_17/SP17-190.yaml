@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP17-190
+packId: pack_17
+name: Mixed Chalk on Grey Paper
+styleAnchors:
+  - Mixed Chalk on Grey Paper
+  - colored chalks on mid-grey paper
+  - grey paper
+displayName: Mixed Chalk on Grey Paper
+category: 8. Medieval Fantasy Drawing Media
+domain: colored chalks on mid-grey paper
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - medieval-fantasy-drawing-media
+  - grey-chalk
+  - drawing-media
+  - portable-style-study
+visualDna:
+  aesthetic: 'Mixed chalk on grey paper: colored chalks and pastels on mid-grey paper, warm and cool accents, white highlights and dark contours over the neutral ground.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; render the subject in colored chalks with warm and cool accents on grey paper.
+  color_and_tone: Grey paper with warm ochres, cool blues and white.
+  lighting_and_shadow: Soft chalk modeling with bright highlights, kept consistent across the whole image.
+  texture_and_material: Chalk grain, smudges and grey paper tooth, kept consistent across the whole image.
+  camera_and_composition: Figure or head study on grey, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with muted painterly warmth.
+  rendering_and_quality: Soft confident chalk study, kept consistent across the whole image.
+  creative_brief: "Mixed chalk on grey paper: colored chalks and pastels on mid-grey paper, warm and cool accents, white highlights and dark contours over the neutral ground. Carry it through grey paper, colored chalks, warm and cool, white highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: grey paper; colored chalks; warm and cool; white highlights
+avoidRules:
+  - digital smoothness
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: digital smoothness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: medieval-fantasy-drawing-media
+  categoryName: 8. Medieval Fantasy Drawing Media
+  tags:
+    - curation-v2
+    - medieval-fantasy-drawing-media
+    - grey-chalk
+    - drawing-media
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: colored chalks on mid-grey paper

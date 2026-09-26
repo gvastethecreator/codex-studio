@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP17-153
+packId: pack_17
+name: Staple-Bound Micro Zine
+styleAnchors:
+  - Staple-Bound Micro Zine
+  - tiny folded zine spread
+  - tiny zine
+displayName: Staple-Bound Micro Zine
+category: 6. Dungeon Zine Assemblage & Stampwork
+domain: tiny folded zine spread
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - dungeon-zine-assemblage-and-stampwork
+  - micro-zine
+  - zine-assemblage
+  - portable-style-study
+visualDna:
+  aesthetic: 'Staple-bound micro zine: a tiny folded booklet photographed open, rough black ink drawings across the spread, two staples in the gutter and thumbprints on the cheap paper.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; draw the subject across an open tiny zine spread with a staple gutter.
+  color_and_tone: Black ink on off-white copy paper, kept consistent across the whole image.
+  lighting_and_shadow: Soft photo light on the folded pages, kept consistent across the whole image.
+  texture_and_material: Staples, folds, thumbprints and copier grain, kept consistent across the whole image.
+  camera_and_composition: Open spread seen from above, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with intimate handmade obsession.
+  rendering_and_quality: Convincing tiny zine object, kept consistent across the whole image.
+  creative_brief: "Staple-bound micro zine: a tiny folded booklet photographed open, rough black ink drawings across the spread, two staples in the gutter and thumbprints on the cheap paper. Carry it through tiny zine, staple gutter, ink drawings, thumbprints. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: tiny zine; staple gutter; ink drawings; thumbprints
+avoidRules:
+  - readable text
+  - readable text or lettering
+  - clean digital vector look
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text, readable text or lettering, clean digital vector look, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: dungeon-zine-assemblage-and-stampwork
+  categoryName: 6. Dungeon Zine Assemblage & Stampwork
+  tags:
+    - curation-v2
+    - dungeon-zine-assemblage-and-stampwork
+    - micro-zine
+    - zine-assemblage
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: tiny folded zine spread

@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP17-174
+packId: pack_17
+name: Sci-Fantasy Neon Pulp
+styleAnchors:
+  - Sci-Fantasy Neon Pulp
+  - swords and ray guns neon painting
+  - neon aurora
+displayName: Sci-Fantasy Neon Pulp
+category: 7. Pulp Fantasy Painting
+domain: swords and ray guns neon painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - pulp-fantasy-painting
+  - sci-fantasy
+  - pulp-fantasy
+  - portable-style-study
+visualDna:
+  aesthetic: 'Sci-fantasy neon pulp: paintings where sword-wielding warriors meet ray guns, neon auroras, chrome towers and ancient beasts in electric saturated color.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original adult characters; mix sword-and-sorcery with neon science fiction around the subject.
+  color_and_tone: Electric magenta, cyan and gold with deep night.
+  lighting_and_shadow: Neon auroras and glowing weapons, kept consistent across the whole image.
+  texture_and_material: Smooth airbrush glow and painted chrome, kept consistent across the whole image.
+  camera_and_composition: Dynamic hero against a neon sky, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with electric retro wonder.
+  rendering_and_quality: Saturated polished painting with no text, kept consistent across the whole image.
+  creative_brief: "Sci-fantasy neon pulp: paintings where sword-wielding warriors meet ray guns, neon auroras, chrome towers and ancient beasts in electric saturated color. Carry it through neon aurora, swords and ray guns, chrome towers, ancient beasts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: neon aurora; swords and ray guns; chrome towers; ancient beasts
+avoidRules:
+  - gore
+  - title lettering
+  - existing franchise heroes
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: pulp-fantasy-painting
+  categoryName: 7. Pulp Fantasy Painting
+  tags:
+    - curation-v2
+    - pulp-fantasy-painting
+    - sci-fantasy
+    - pulp-fantasy
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: swords and ray guns neon painting

@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP17-198
+packId: pack_17
+name: Fungal Underdark Direction
+styleAnchors:
+  - Fungal Underdark Direction
+  - glowing mushroom cave art direction
+  - giant glowing fungi
+displayName: Fungal Underdark Direction
+category: 9. Gothic & Dungeon Art Directions
+domain: glowing mushroom cave art direction
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - gothic-and-dungeon-art-directions
+  - fungal-underdark
+  - gothic-art-direction
+  - portable-style-study
+visualDna:
+  aesthetic: 'Fungal underdark direction: painted art direction of vast underground caverns lit by giant bioluminescent mushrooms, spore clouds and pale cave-dwellers.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; place the subject in a vast cavern lit by glowing giant fungi.
+  color_and_tone: Deep violet dark with cyan and magenta fungal glow.
+  lighting_and_shadow: Bioluminescent glow and drifting spores, kept consistent across the whole image.
+  texture_and_material: Mushroom gills, damp rock and spore haze, kept consistent across the whole image.
+  camera_and_composition: Wide cavern with towering fungi, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with alien subterranean wonder.
+  rendering_and_quality: Painterly glow with clear forms, kept consistent across the whole image.
+  creative_brief: "Fungal underdark direction: painted art direction of vast underground caverns lit by giant bioluminescent mushrooms, spore clouds and pale cave-dwellers. Carry it through giant glowing fungi, spore haze, underground cavern, pale dwellers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: giant glowing fungi; spore haze; underground cavern; pale dwellers
+avoidRules:
+  - gore
+  - interface or HUD
+  - existing game characters, logos or locations
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: gothic-and-dungeon-art-directions
+  categoryName: 9. Gothic & Dungeon Art Directions
+  tags:
+    - curation-v2
+    - gothic-and-dungeon-art-directions
+    - fungal-underdark
+    - gothic-art-direction
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: glowing mushroom cave art direction

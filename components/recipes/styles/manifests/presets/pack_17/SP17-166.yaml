@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP17-166
+packId: pack_17
+name: Painted Fantasy Film Poster
+styleAnchors:
+  - Painted Fantasy Film Poster
+  - illustrated eighties fantasy movie poster
+  - stacked montage
+displayName: Painted Fantasy Film Poster
+category: 7. Pulp Fantasy Painting
+domain: illustrated eighties fantasy movie poster
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - pulp-fantasy-painting
+  - film-poster
+  - pulp-fantasy
+  - portable-style-study
+visualDna:
+  aesthetic: 'Painted fantasy film poster: eighties illustrated movie posters with stacked hero portraits, a giant villain face in the sky, a castle below and glowing magical light.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original adult characters; stack the subject into a poster montage with a looming figure in the sky.
+  color_and_tone: Glowing blues and oranges with rich painted skin tones.
+  lighting_and_shadow: Magical backlight and rim-lit figures, kept consistent across the whole image.
+  texture_and_material: Smooth painted finish with airbrushed glows, kept consistent across the whole image.
+  camera_and_composition: Vertical montage pyramid of figures, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with blockbuster fantasy promise.
+  rendering_and_quality: Polished poster painting with no title or credits.
+  creative_brief: "Painted fantasy film poster: eighties illustrated movie posters with stacked hero portraits, a giant villain face in the sky, a castle below and glowing magical light. Carry it through stacked montage, looming villain, castle below, magical glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: stacked montage; looming villain; castle below; magical glow
+avoidRules:
+  - title or credits
+  - gore
+  - title lettering
+  - existing franchise heroes
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: title or credits, gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: pulp-fantasy-painting
+  categoryName: 7. Pulp Fantasy Painting
+  tags:
+    - curation-v2
+    - pulp-fantasy-painting
+    - film-poster
+    - pulp-fantasy
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: illustrated eighties fantasy movie poster

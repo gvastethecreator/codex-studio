@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP17-181
+packId: pack_17
+name: Lampblack Brush Study
+styleAnchors:
+  - Lampblack Brush Study
+  - soot ink brush drawing
+  - velvety black
+displayName: Lampblack Brush Study
+category: 8. Medieval Fantasy Drawing Media
+domain: soot ink brush drawing
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - medieval-fantasy-drawing-media
+  - lampblack
+  - drawing-media
+  - portable-style-study
+visualDna:
+  aesthetic: 'Lampblack brush study: rich soot-black brush drawing with velvety deep blacks, dry-brush edges and grey water washes, bold and quick.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; brush the subject with bold velvety black strokes and grey washes.
+  color_and_tone: Deep velvety black and water greys on white.
+  lighting_and_shadow: Strong black masses and white paper light, kept consistent across the whole image.
+  texture_and_material: Dry-brush edges, soot pigment and paper texture, kept consistent across the whole image.
+  camera_and_composition: Bold central subject with open space, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with stark decisive power.
+  rendering_and_quality: Confident quick brushwork, kept consistent across the whole image.
+  creative_brief: "Lampblack brush study: rich soot-black brush drawing with velvety deep blacks, dry-brush edges and grey water washes, bold and quick. Carry it through velvety black, dry-brush edges, grey washes, quick strokes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: velvety black; dry-brush edges; grey washes; quick strokes
+avoidRules:
+  - digital smoothness
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: digital smoothness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: medieval-fantasy-drawing-media
+  categoryName: 8. Medieval Fantasy Drawing Media
+  tags:
+    - curation-v2
+    - medieval-fantasy-drawing-media
+    - lampblack
+    - drawing-media
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: soot ink brush drawing

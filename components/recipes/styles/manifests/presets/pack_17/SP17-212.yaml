@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP17-212
+packId: pack_17
+name: Kabuki Mask Supernatural Direction
+styleAnchors:
+  - Kabuki Mask Supernatural Direction
+  - theatrical kabuki spirit art
+  - painted face lines
+displayName: Kabuki Mask Supernatural Direction
+category: 10. Graphic & Feudal Art Directions
+domain: theatrical kabuki spirit art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - graphic-and-feudal-art-directions
+  - kabuki-spirit
+  - feudal-art-direction
+  - portable-style-study
+visualDna:
+  aesthetic: 'Kabuki mask supernatural direction: theatrical stage-lit scenes with bold kumadori face paint, dramatic frozen poses, flowing robes and spirit effects on a stage.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; freeze the subject in a dramatic theatrical pose with bold painted face lines.
+  color_and_tone: White face paint, red and indigo lines, gold stage light.
+  lighting_and_shadow: Stage footlights and dramatic spotlight, kept consistent across the whole image.
+  texture_and_material: Painted wood stage, silk robes and paint strokes.
+  camera_and_composition: Frontal stage composition with a frozen pose, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with theatrical supernatural drama.
+  rendering_and_quality: Bold theatrical clarity, kept consistent across the whole image.
+  creative_brief: "Kabuki mask supernatural direction: theatrical stage-lit scenes with bold kumadori face paint, dramatic frozen poses, flowing robes and spirit effects on a stage. Carry it through painted face lines, frozen pose, stage light, flowing robes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: painted face lines; frozen pose; stage light; flowing robes
+avoidRules:
+  - gore
+  - interface or HUD
+  - existing game or film characters, logos or clan crests
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: graphic-and-feudal-art-directions
+  categoryName: 10. Graphic & Feudal Art Directions
+  tags:
+    - curation-v2
+    - graphic-and-feudal-art-directions
+    - kabuki-spirit
+    - feudal-art-direction
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: theatrical kabuki spirit art

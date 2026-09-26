@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP17-207
+packId: pack_17
+name: Woodblock Spirit-War Direction
+styleAnchors:
+  - Woodblock Spirit-War Direction
+  - woodblock-style supernatural battle art
+  - woodblock outlines
+displayName: Woodblock Spirit-War Direction
+category: 10. Graphic & Feudal Art Directions
+domain: woodblock-style supernatural battle art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - graphic-and-feudal-art-directions
+  - woodblock-war
+  - feudal-art-direction
+  - portable-style-study
+visualDna:
+  aesthetic: 'Woodblock spirit-war direction: battle scenes styled like Japanese woodblock prints, bold outlines, flat color, patterned robes and giant spirit creatures across triptych panels.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; render the subject with bold woodblock outlines, flat color and patterned clothing.
+  color_and_tone: Prussian blue, vermilion, ochre and muted greens, kept consistent across the whole image.
+  lighting_and_shadow: Flat color with gradated sky bands, kept consistent across the whole image.
+  texture_and_material: Woodgrain texture, bold keylines and patterned textiles, kept consistent across the whole image.
+  camera_and_composition: Wide triptych-like composition with a giant creature, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with dramatic legendary battle.
+  rendering_and_quality: Crisp woodblock look with rich pattern, kept consistent across the whole image.
+  creative_brief: "Woodblock spirit-war direction: battle scenes styled like Japanese woodblock prints, bold outlines, flat color, patterned robes and giant spirit creatures across triptych panels. Carry it through woodblock outlines, flat color, patterned robes, giant spirit. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: woodblock outlines; flat color; patterned robes; giant spirit
+avoidRules:
+  - readable calligraphy
+  - gore
+  - interface or HUD
+  - existing game or film characters, logos or clan crests
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable calligraphy, gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: graphic-and-feudal-art-directions
+  categoryName: 10. Graphic & Feudal Art Directions
+  tags:
+    - curation-v2
+    - graphic-and-feudal-art-directions
+    - woodblock-war
+    - feudal-art-direction
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: woodblock-style supernatural battle art

@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP17-217
+packId: pack_17
+name: Chunky Toy-Soldier Feudal Direction
+styleAnchors:
+  - Chunky Toy-Soldier Feudal Direction
+  - toy-like feudal war art
+  - toy soldiers
+displayName: Chunky Toy-Soldier Feudal Direction
+category: 10. Graphic & Feudal Art Directions
+domain: toy-like feudal war art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - graphic-and-feudal-art-directions
+  - toy-soldier
+  - feudal-art-direction
+  - portable-style-study
+visualDna:
+  aesthetic: 'Chunky toy-soldier feudal direction: feudal warfare rendered as chunky painted toy soldiers and wooden castles, glossy paint, peg bodies and tabletop scale.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; render the subject as chunky glossy painted toys on a tabletop battlefield.
+  color_and_tone: Bright glossy primaries and wood tones, kept consistent across the whole image.
+  lighting_and_shadow: Warm tabletop light with small shadows, kept consistent across the whole image.
+  texture_and_material: Glossy enamel paint, wood grain and chips, kept consistent across the whole image.
+  camera_and_composition: Low tabletop angle among the toys, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with playful toybox warfare.
+  rendering_and_quality: Convincing toy material and scale, kept consistent across the whole image.
+  creative_brief: "Chunky toy-soldier feudal direction: feudal warfare rendered as chunky painted toy soldiers and wooden castles, glossy paint, peg bodies and tabletop scale. Carry it through toy soldiers, wooden castle, glossy paint, tabletop scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: toy soldiers; wooden castle; glossy paint; tabletop scale
+avoidRules:
+  - gore
+  - interface or HUD
+  - existing game or film characters, logos or clan crests
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: graphic-and-feudal-art-directions
+  categoryName: 10. Graphic & Feudal Art Directions
+  tags:
+    - curation-v2
+    - graphic-and-feudal-art-directions
+    - toy-soldier
+    - feudal-art-direction
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: toy-like feudal war art

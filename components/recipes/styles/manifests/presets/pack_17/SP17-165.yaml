@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP17-165
+packId: pack_17
+name: Metal Album Cover Epic
+styleAnchors:
+  - Metal Album Cover Epic
+  - heavy metal fantasy album painting
+  - square format
+displayName: Metal Album Cover Epic
+category: 7. Pulp Fantasy Painting
+domain: heavy metal fantasy album painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - pulp-fantasy-painting
+  - metal-album
+  - pulp-fantasy
+  - portable-style-study
+visualDna:
+  aesthetic: 'Metal album cover epic: square heavy-metal fantasy album paintings with skeletal kings, lightning, burning cities and apocalyptic grandeur.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original adult characters; stage the subject as a monumental apocalyptic figure in a square album painting.
+  color_and_tone: Fire orange, lightning blue and black, kept consistent across the whole image.
+  lighting_and_shadow: Lightning and fire lighting against dark skies, kept consistent across the whole image.
+  texture_and_material: Detailed oil or acrylic with smoky gradients, kept consistent across the whole image.
+  camera_and_composition: Square composition with a central towering figure, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with loud apocalyptic bombast.
+  rendering_and_quality: Epic detailed painting with no band logo, kept consistent across the whole image.
+  creative_brief: "Metal album cover epic: square heavy-metal fantasy album paintings with skeletal kings, lightning, burning cities and apocalyptic grandeur. Carry it through square format, towering figure, lightning, burning city. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: square format; towering figure; lightning; burning city
+avoidRules:
+  - band logo
+  - gore
+  - title lettering
+  - existing franchise heroes
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: band logo, gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: pulp-fantasy-painting
+  categoryName: 7. Pulp Fantasy Painting
+  tags:
+    - curation-v2
+    - pulp-fantasy-painting
+    - metal-album
+    - pulp-fantasy
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: heavy metal fantasy album painting

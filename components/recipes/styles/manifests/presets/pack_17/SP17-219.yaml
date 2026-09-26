@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP17-219
+packId: pack_17
+name: Engraved Broadside War Direction
+styleAnchors:
+  - Engraved Broadside War Direction
+  - woodcut news broadsheet of battles
+  - engraved reportage
+displayName: Engraved Broadside War Direction
+category: 10. Graphic & Feudal Art Directions
+domain: woodcut news broadsheet of battles
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - graphic-and-feudal-art-directions
+  - broadside-war
+  - feudal-art-direction
+  - portable-style-study
+visualDna:
+  aesthetic: 'Engraved broadside war direction: battles shown like early printed news broadsides, crowded engraved figures, smoke rendered in hatching and dramatic reportage.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject as crowded engraved reportage of a battle.
+  color_and_tone: Black ink on aged paper with optional hand tint.
+  lighting_and_shadow: Hatched smoke and cross-hatched shadows, kept consistent across the whole image.
+  texture_and_material: Engraved lines, paper grain and ink density, kept consistent across the whole image.
+  camera_and_composition: Wide crowded battle panorama, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with breathless historical reportage.
+  rendering_and_quality: Dense engraved detail without headlines, kept consistent across the whole image.
+  creative_brief: "Engraved broadside war direction: battles shown like early printed news broadsides, crowded engraved figures, smoke rendered in hatching and dramatic reportage. Carry it through engraved reportage, hatched smoke, crowded battle, aged paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: engraved reportage; hatched smoke; crowded battle; aged paper
+avoidRules:
+  - headlines or text
+  - gore
+  - interface or HUD
+  - existing game or film characters, logos or clan crests
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: headlines or text, gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: graphic-and-feudal-art-directions
+  categoryName: 10. Graphic & Feudal Art Directions
+  tags:
+    - curation-v2
+    - graphic-and-feudal-art-directions
+    - broadside-war
+    - feudal-art-direction
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: woodcut news broadsheet of battles

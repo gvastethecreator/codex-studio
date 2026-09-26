@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP17-143
+packId: pack_17
+name: Potato-Print Monster Stamps
+styleAnchors:
+  - Potato-Print Monster Stamps
+  - carved vegetable stamp prints
+  - carved vegetable stamps
+displayName: Potato-Print Monster Stamps
+category: 6. Dungeon Zine Assemblage & Stampwork
+domain: carved vegetable stamp prints
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - dungeon-zine-assemblage-and-stampwork
+  - potato-print
+  - zine-assemblage
+  - portable-style-study
+visualDna:
+  aesthetic: 'Potato-print monster stamps: crude shapes carved into vegetables and stamped in thick paint, soft blotchy edges, starchy texture and naive repeated creatures.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; build the subject from a few crude carved stamp shapes pressed in thick paint.
+  color_and_tone: Bold poster paint colors on cheap paper, kept consistent across the whole image.
+  lighting_and_shadow: Flat print with no shading, kept consistent across the whole image.
+  texture_and_material: Blotchy starchy impressions, uneven paint and paper grain.
+  camera_and_composition: Repeated stamped figures across the page, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with crude gleeful menace.
+  rendering_and_quality: Honest handmade crudeness with bold shapes, kept consistent across the whole image.
+  creative_brief: "Potato-print monster stamps: crude shapes carved into vegetables and stamped in thick paint, soft blotchy edges, starchy texture and naive repeated creatures. Carry it through carved vegetable stamps, blotchy paint, repeated creatures, naive shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: carved vegetable stamps; blotchy paint; repeated creatures; naive shapes
+avoidRules:
+  - readable text or lettering
+  - clean digital vector look
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text or lettering, clean digital vector look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: dungeon-zine-assemblage-and-stampwork
+  categoryName: 6. Dungeon Zine Assemblage & Stampwork
+  tags:
+    - curation-v2
+    - dungeon-zine-assemblage-and-stampwork
+    - potato-print
+    - zine-assemblage
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: carved vegetable stamp prints

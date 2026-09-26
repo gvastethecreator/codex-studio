@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP17-151
+packId: pack_17
+name: Pressed-Leaf Goblin Assemblage
+styleAnchors:
+  - Pressed-Leaf Goblin Assemblage
+  - dried leaves arranged into figures
+  - pressed leaves
+displayName: Pressed-Leaf Goblin Assemblage
+category: 6. Dungeon Zine Assemblage & Stampwork
+domain: dried leaves arranged into figures
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - dungeon-zine-assemblage-and-stampwork
+  - pressed-leaf
+  - zine-assemblage
+  - portable-style-study
+visualDna:
+  aesthetic: 'Pressed-leaf goblin assemblage: goblins, trolls and forest folk built from dried pressed leaves, seeds, petals and twigs glued on paper.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; build the subject from pressed leaves, petals, seeds and twigs.
+  color_and_tone: Autumn browns, faded greens and dried rose, kept consistent across the whole image.
+  lighting_and_shadow: Soft light with delicate leaf shadows, kept consistent across the whole image.
+  texture_and_material: Leaf veins, brittle edges and seed textures, kept consistent across the whole image.
+  camera_and_composition: Figure centered on pale paper, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with woodland mischief, kept consistent across the whole image.
+  rendering_and_quality: Delicate natural textures with clear figure, kept consistent across the whole image.
+  creative_brief: "Pressed-leaf goblin assemblage: goblins, trolls and forest folk built from dried pressed leaves, seeds, petals and twigs glued on paper. Carry it through pressed leaves, seeds and petals, goblin figures, pale paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: pressed leaves; seeds and petals; goblin figures; pale paper
+avoidRules:
+  - readable text or lettering
+  - clean digital vector look
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text or lettering, clean digital vector look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: dungeon-zine-assemblage-and-stampwork
+  categoryName: 6. Dungeon Zine Assemblage & Stampwork
+  tags:
+    - curation-v2
+    - dungeon-zine-assemblage-and-stampwork
+    - pressed-leaf
+    - zine-assemblage
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: dried leaves arranged into figures

@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP17-157
+packId: pack_17
+name: Wallpaper-Scrap Creature Collage
+styleAnchors:
+  - Wallpaper-Scrap Creature Collage
+  - monsters cut from old wallpaper
+  - wallpaper scraps
+displayName: Wallpaper-Scrap Creature Collage
+category: 6. Dungeon Zine Assemblage & Stampwork
+domain: monsters cut from old wallpaper
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - dungeon-zine-assemblage-and-stampwork
+  - wallpaper-scrap
+  - zine-assemblage
+  - portable-style-study
+visualDna:
+  aesthetic: 'Wallpaper-scrap creature collage: monsters cut from old patterned wallpaper samples, florals, stripes and damask becoming fur, scales and cloaks.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; cut the subject from patterned wallpaper scraps so the pattern becomes its surface.
+  color_and_tone: Faded floral, damask and stripe patterns, kept consistent across the whole image.
+  lighting_and_shadow: Flat with slight paper shadows, kept consistent across the whole image.
+  texture_and_material: Wallpaper textures, glue edges and faded print, kept consistent across the whole image.
+  camera_and_composition: Cut figures on a plain dark or cream ground.
+  atmosphere_and_mood: Keep the requested mood with domestic uncanny charm.
+  rendering_and_quality: Clean cutting with clear pattern, kept consistent across the whole image.
+  creative_brief: "Wallpaper-scrap creature collage: monsters cut from old patterned wallpaper samples, florals, stripes and damask becoming fur, scales and cloaks. Carry it through wallpaper scraps, pattern as surface, cut figures, faded print. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: wallpaper scraps; pattern as surface; cut figures; faded print
+avoidRules:
+  - readable text or lettering
+  - clean digital vector look
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text or lettering, clean digital vector look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: dungeon-zine-assemblage-and-stampwork
+  categoryName: 6. Dungeon Zine Assemblage & Stampwork
+  tags:
+    - curation-v2
+    - dungeon-zine-assemblage-and-stampwork
+    - wallpaper-scrap
+    - zine-assemblage
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: monsters cut from old wallpaper

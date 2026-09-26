@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP17-169
+packId: pack_17
+name: Heroic Anatomy Oil Sketch
+styleAnchors:
+  - Heroic Anatomy Oil Sketch
+  - loose muscular figure study in oil
+  - exaggerated anatomy
+displayName: Heroic Anatomy Oil Sketch
+category: 7. Pulp Fantasy Painting
+domain: loose muscular figure study in oil
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - pulp-fantasy-painting
+  - anatomy-sketch
+  - pulp-fantasy
+  - portable-style-study
+visualDna:
+  aesthetic: 'Heroic anatomy oil sketch: loose oil studies of powerful fantasy figures in action poses, exaggerated musculature, quick background and visible underdrawing.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original adult characters; sketch the subject as a powerful action figure with exaggerated anatomy and loose paint.
+  color_and_tone: Warm flesh tones on a toned ochre ground.
+  lighting_and_shadow: Strong single light modeling anatomy, kept consistent across the whole image.
+  texture_and_material: Loose oil, visible underdrawing and bare canvas, kept consistent across the whole image.
+  camera_and_composition: Single dynamic figure filling the canvas, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with raw physical power.
+  rendering_and_quality: Energetic study, deliberately unfinished, kept consistent across the whole image.
+  creative_brief: "Heroic anatomy oil sketch: loose oil studies of powerful fantasy figures in action poses, exaggerated musculature, quick background and visible underdrawing. Carry it through exaggerated anatomy, loose oil, underdrawing, action pose. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: exaggerated anatomy; loose oil; underdrawing; action pose
+avoidRules:
+  - gore
+  - title lettering
+  - existing franchise heroes
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: pulp-fantasy-painting
+  categoryName: 7. Pulp Fantasy Painting
+  tags:
+    - curation-v2
+    - pulp-fantasy-painting
+    - anatomy-sketch
+    - pulp-fantasy
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: loose muscular figure study in oil

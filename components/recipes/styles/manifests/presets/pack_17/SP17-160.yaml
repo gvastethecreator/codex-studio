@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP17-160
+packId: pack_17
+name: Barbarian Oil Cover Painting
+styleAnchors:
+  - Barbarian Oil Cover Painting
+  - muscular heroic fantasy oil cover
+  - heroic figure
+displayName: Barbarian Oil Cover Painting
+category: 7. Pulp Fantasy Painting
+domain: muscular heroic fantasy oil cover
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - pulp-fantasy-painting
+  - barbarian-oil
+  - pulp-fantasy
+  - portable-style-study
+visualDna:
+  aesthetic: 'Barbarian oil cover painting: dramatic seventies fantasy book-cover oils with muscular heroes, swirling dark skies, snarling beasts and thick expressive brushwork.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original adult characters; stage the subject as a powerful heroic figure in a dramatic moment of struggle.
+  color_and_tone: Burnt siennas, deep umbers and stormy blues with warm flesh.
+  lighting_and_shadow: Strong raking light carving muscle and armor, kept consistent across the whole image.
+  texture_and_material: Thick expressive oil strokes and unfinished edges, kept consistent across the whole image.
+  camera_and_composition: Dynamic triangular composition around the hero, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with savage heroic energy.
+  rendering_and_quality: Painterly finish with loose background, no title, kept consistent across the whole image.
+  creative_brief: "Barbarian oil cover painting: dramatic seventies fantasy book-cover oils with muscular heroes, swirling dark skies, snarling beasts and thick expressive brushwork. Carry it through heroic figure, thick oil strokes, stormy sky, dynamic triangle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: heroic figure; thick oil strokes; stormy sky; dynamic triangle
+avoidRules:
+  - gore
+  - title lettering
+  - existing franchise heroes
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: pulp-fantasy-painting
+  categoryName: 7. Pulp Fantasy Painting
+  tags:
+    - curation-v2
+    - pulp-fantasy-painting
+    - barbarian-oil
+    - pulp-fantasy
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: muscular heroic fantasy oil cover

@@ -3,7 +3,7 @@
     {
       "id": "pack_17",
       "name": "Medieval Fantasy & Dungeon Zine",
-      "presetCount": 125
+      "presetCount": 220
     }
   ],
   "presets": [
@@ -1856,6 +1856,130 @@
       "searchableText": "sp17-032 astral feudal exorcism astral feudal exorcists 4. rune-tech & apocalyptic warfronts techno-fantasy design astral medieval fantasy pack_17 medieval fantasy & dungeon zine rune-tech-and-apocalyptic-warfronts medieval-fantasy-and-dungeon-zine rune-tech-and-apocalyptic-warfronts astral-medieval-fantasy"
     },
     {
+      "id": "SP17-126",
+      "name": "Relic Airship Armada",
+      "styleAnchors": ["Relic Airship Armada", "holy war airship fleet", "cathedral airships"],
+      "ref": "pack_17/SP17-126.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "rune-tech-and-apocalyptic-warfronts",
+      "categoryName": "4. Rune-Tech & Apocalyptic Warfronts",
+      "domain": "holy war airship fleet",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "rune-tech-and-apocalyptic-warfronts",
+        "holy-war-airship-fleet"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-126 relic airship armada holy war airship fleet cathedral airships 4. rune-tech & apocalyptic warfronts techno-fantasy design holy war airship fleet pack_17 medieval fantasy & dungeon zine rune-tech-and-apocalyptic-warfronts medieval-fantasy-and-dungeon-zine rune-tech-and-apocalyptic-warfronts holy-war-airship-fleet"
+    },
+    {
+      "id": "SP17-127",
+      "name": "Plasma Rune Forge",
+      "styleAnchors": ["Plasma Rune Forge", "forge of glowing rune metal", "plasma glow"],
+      "ref": "pack_17/SP17-127.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "rune-tech-and-apocalyptic-warfronts",
+      "categoryName": "4. Rune-Tech & Apocalyptic Warfronts",
+      "domain": "forge of glowing rune metal",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "rune-tech-and-apocalyptic-warfronts",
+        "forge-of-glowing-rune-metal"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-127 plasma rune forge forge of glowing rune metal plasma glow 4. rune-tech & apocalyptic warfronts techno-fantasy design forge of glowing rune metal pack_17 medieval fantasy & dungeon zine rune-tech-and-apocalyptic-warfronts medieval-fantasy-and-dungeon-zine rune-tech-and-apocalyptic-warfronts forge-of-glowing-rune-metal"
+    },
+    {
+      "id": "SP17-128",
+      "name": "Solar Monastery Engine",
+      "styleAnchors": [
+        "Solar Monastery Engine",
+        "sun-powered monastery machine",
+        "mirror machines"
+      ],
+      "ref": "pack_17/SP17-128.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "rune-tech-and-apocalyptic-warfronts",
+      "categoryName": "4. Rune-Tech & Apocalyptic Warfronts",
+      "domain": "sun-powered monastery machine",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "rune-tech-and-apocalyptic-warfronts",
+        "sun-powered-monastery-machine"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-128 solar monastery engine sun-powered monastery machine mirror machines 4. rune-tech & apocalyptic warfronts techno-fantasy design sun-powered monastery machine pack_17 medieval fantasy & dungeon zine rune-tech-and-apocalyptic-warfronts medieval-fantasy-and-dungeon-zine rune-tech-and-apocalyptic-warfronts sun-powered-monastery-machine"
+    },
+    {
+      "id": "SP17-129",
+      "name": "Clockwork Paladin Automaton",
+      "styleAnchors": [
+        "Clockwork Paladin Automaton",
+        "holy clockwork knight machine",
+        "brass automaton"
+      ],
+      "ref": "pack_17/SP17-129.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "rune-tech-and-apocalyptic-warfronts",
+      "categoryName": "4. Rune-Tech & Apocalyptic Warfronts",
+      "domain": "holy clockwork knight machine",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "rune-tech-and-apocalyptic-warfronts",
+        "holy-clockwork-knight-machine"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-129 clockwork paladin automaton holy clockwork knight machine brass automaton 4. rune-tech & apocalyptic warfronts techno-fantasy design holy clockwork knight machine pack_17 medieval fantasy & dungeon zine rune-tech-and-apocalyptic-warfronts medieval-fantasy-and-dungeon-zine rune-tech-and-apocalyptic-warfronts holy-clockwork-knight-machine"
+    },
+    {
+      "id": "SP17-130",
+      "name": "Rune-Circuit Engraving",
+      "styleAnchors": [
+        "Rune-Circuit Engraving",
+        "runes etched like circuit boards",
+        "circuit-like runes"
+      ],
+      "ref": "pack_17/SP17-130.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "rune-tech-and-apocalyptic-warfronts",
+      "categoryName": "4. Rune-Tech & Apocalyptic Warfronts",
+      "domain": "runes etched like circuit boards",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "rune-tech-and-apocalyptic-warfronts",
+        "runes-etched-like-circuit-boards"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-130 rune-circuit engraving runes etched like circuit boards circuit-like runes 4. rune-tech & apocalyptic warfronts techno-fantasy design runes etched like circuit boards pack_17 medieval fantasy & dungeon zine rune-tech-and-apocalyptic-warfronts medieval-fantasy-and-dungeon-zine rune-tech-and-apocalyptic-warfronts runes-etched-like-circuit-boards"
+    },
+    {
+      "id": "SP17-131",
+      "name": "Neon Sigil Siege Night",
+      "styleAnchors": [
+        "Neon Sigil Siege Night",
+        "night siege lit by neon sigils",
+        "floating neon sigils"
+      ],
+      "ref": "pack_17/SP17-131.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "rune-tech-and-apocalyptic-warfronts",
+      "categoryName": "4. Rune-Tech & Apocalyptic Warfronts",
+      "domain": "night siege lit by neon sigils",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "rune-tech-and-apocalyptic-warfronts",
+        "night-siege-lit-by-neon-sigils"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-131 neon sigil siege night night siege lit by neon sigils floating neon sigils 4. rune-tech & apocalyptic warfronts techno-fantasy design night siege lit by neon sigils pack_17 medieval fantasy & dungeon zine rune-tech-and-apocalyptic-warfronts medieval-fantasy-and-dungeon-zine rune-tech-and-apocalyptic-warfronts night-siege-lit-by-neon-sigils"
+    },
+    {
       "id": "SP17-064",
       "name": "Monochrome Dungeon Pixels",
       "styleAnchors": [
@@ -2054,6 +2178,236 @@
       "searchableText": "sp17-072 endless war gothic endless modern war gothic fantasy trench cathedral grimdark 5. grimdark game systems & tabletop game & tabletop formats modern endless war gothic fantasy pack_17 medieval fantasy & dungeon zine grimdark-game-systems-and-tabletop medieval-fantasy-and-dungeon-zine grimdark-game-systems-and-tabletop modern-endless-war-gothic-fantasy"
     },
     {
+      "id": "SP17-132",
+      "name": "Dark Deckbuilder Card Art",
+      "styleAnchors": [
+        "Dark Deckbuilder Card Art",
+        "grim card-battle illustration",
+        "one action per card"
+      ],
+      "ref": "pack_17/SP17-132.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "grimdark-game-systems-and-tabletop",
+      "categoryName": "5. Grimdark Game Systems & Tabletop",
+      "domain": "grim card-battle illustration",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "grimdark-game-systems-and-tabletop",
+        "grim-card-battle-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-132 dark deckbuilder card art grim card-battle illustration one action per card 5. grimdark game systems & tabletop game & tabletop formats grim card-battle illustration pack_17 medieval fantasy & dungeon zine grimdark-game-systems-and-tabletop medieval-fantasy-and-dungeon-zine grimdark-game-systems-and-tabletop grim-card-battle-illustration"
+    },
+    {
+      "id": "SP17-133",
+      "name": "Permadeath Roguelike Tableau",
+      "styleAnchors": [
+        "Permadeath Roguelike Tableau",
+        "roguelike defeat scene",
+        "fallen hero gear"
+      ],
+      "ref": "pack_17/SP17-133.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "grimdark-game-systems-and-tabletop",
+      "categoryName": "5. Grimdark Game Systems & Tabletop",
+      "domain": "roguelike defeat scene",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "grimdark-game-systems-and-tabletop",
+        "roguelike-defeat-scene"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-133 permadeath roguelike tableau roguelike defeat scene fallen hero gear 5. grimdark game systems & tabletop game & tabletop formats roguelike defeat scene pack_17 medieval fantasy & dungeon zine grimdark-game-systems-and-tabletop medieval-fantasy-and-dungeon-zine grimdark-game-systems-and-tabletop roguelike-defeat-scene"
+    },
+    {
+      "id": "SP17-134",
+      "name": "Grimdark Terrain Diorama",
+      "styleAnchors": [
+        "Grimdark Terrain Diorama",
+        "painted grim tabletop terrain",
+        "terrain diorama"
+      ],
+      "ref": "pack_17/SP17-134.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "grimdark-game-systems-and-tabletop",
+      "categoryName": "5. Grimdark Game Systems & Tabletop",
+      "domain": "painted grim tabletop terrain",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "grimdark-game-systems-and-tabletop",
+        "painted-grim-tabletop-terrain"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-134 grimdark terrain diorama painted grim tabletop terrain terrain diorama 5. grimdark game systems & tabletop game & tabletop formats painted grim tabletop terrain pack_17 medieval fantasy & dungeon zine grimdark-game-systems-and-tabletop medieval-fantasy-and-dungeon-zine grimdark-game-systems-and-tabletop painted-grim-tabletop-terrain"
+    },
+    {
+      "id": "SP17-135",
+      "name": "Boss Arena Grim Vista",
+      "styleAnchors": ["Boss Arena Grim Vista", "grim boss battle arena", "huge boss"],
+      "ref": "pack_17/SP17-135.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "grimdark-game-systems-and-tabletop",
+      "categoryName": "5. Grimdark Game Systems & Tabletop",
+      "domain": "grim boss battle arena",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "grimdark-game-systems-and-tabletop",
+        "grim-boss-battle-arena"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-135 boss arena grim vista grim boss battle arena huge boss 5. grimdark game systems & tabletop game & tabletop formats grim boss battle arena pack_17 medieval fantasy & dungeon zine grimdark-game-systems-and-tabletop medieval-fantasy-and-dungeon-zine grimdark-game-systems-and-tabletop grim-boss-battle-arena"
+    },
+    {
+      "id": "SP17-136",
+      "name": "Fixed-Camera Castle Horror",
+      "styleAnchors": [
+        "Fixed-Camera Castle Horror",
+        "survival horror fixed camera frame",
+        "fixed corner camera"
+      ],
+      "ref": "pack_17/SP17-136.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "grimdark-game-systems-and-tabletop",
+      "categoryName": "5. Grimdark Game Systems & Tabletop",
+      "domain": "survival horror fixed camera frame",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "grimdark-game-systems-and-tabletop",
+        "survival-horror-fixed-camera-frame"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-136 fixed-camera castle horror survival horror fixed camera frame fixed corner camera 5. grimdark game systems & tabletop game & tabletop formats survival horror fixed camera frame pack_17 medieval fantasy & dungeon zine grimdark-game-systems-and-tabletop medieval-fantasy-and-dungeon-zine grimdark-game-systems-and-tabletop survival-horror-fixed-camera-frame"
+    },
+    {
+      "id": "SP17-137",
+      "name": "Grim Loot Rarity Glow",
+      "styleAnchors": ["Grim Loot Rarity Glow", "dark item with rarity aura", "single item"],
+      "ref": "pack_17/SP17-137.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "grimdark-game-systems-and-tabletop",
+      "categoryName": "5. Grimdark Game Systems & Tabletop",
+      "domain": "dark item with rarity aura",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "grimdark-game-systems-and-tabletop",
+        "dark-item-with-rarity-aura"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-137 grim loot rarity glow dark item with rarity aura single item 5. grimdark game systems & tabletop game & tabletop formats dark item with rarity aura pack_17 medieval fantasy & dungeon zine grimdark-game-systems-and-tabletop medieval-fantasy-and-dungeon-zine grimdark-game-systems-and-tabletop dark-item-with-rarity-aura"
+    },
+    {
+      "id": "SP17-138",
+      "name": "Grim Squad Tactics Grid",
+      "styleAnchors": ["Grim Squad Tactics Grid", "dark turn-based squad battle", "faint grid"],
+      "ref": "pack_17/SP17-138.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "grimdark-game-systems-and-tabletop",
+      "categoryName": "5. Grimdark Game Systems & Tabletop",
+      "domain": "dark turn-based squad battle",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "grimdark-game-systems-and-tabletop",
+        "dark-turn-based-squad-battle"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-138 grim squad tactics grid dark turn-based squad battle faint grid 5. grimdark game systems & tabletop game & tabletop formats dark turn-based squad battle pack_17 medieval fantasy & dungeon zine grimdark-game-systems-and-tabletop medieval-fantasy-and-dungeon-zine grimdark-game-systems-and-tabletop dark-turn-based-squad-battle"
+    },
+    {
+      "id": "SP17-139",
+      "name": "Painted Point-and-Click Crypt",
+      "styleAnchors": [
+        "Painted Point-and-Click Crypt",
+        "hand-painted adventure game scene",
+        "painted background"
+      ],
+      "ref": "pack_17/SP17-139.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "grimdark-game-systems-and-tabletop",
+      "categoryName": "5. Grimdark Game Systems & Tabletop",
+      "domain": "hand-painted adventure game scene",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "grimdark-game-systems-and-tabletop",
+        "hand-painted-adventure-game-scene"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-139 painted point-and-click crypt hand-painted adventure game scene painted background 5. grimdark game systems & tabletop game & tabletop formats hand-painted adventure game scene pack_17 medieval fantasy & dungeon zine grimdark-game-systems-and-tabletop medieval-fantasy-and-dungeon-zine grimdark-game-systems-and-tabletop hand-painted-adventure-game-scene"
+    },
+    {
+      "id": "SP17-140",
+      "name": "Army Painting Step Guide",
+      "styleAnchors": [
+        "Army Painting Step Guide",
+        "miniature painting progression",
+        "stage progression"
+      ],
+      "ref": "pack_17/SP17-140.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "grimdark-game-systems-and-tabletop",
+      "categoryName": "5. Grimdark Game Systems & Tabletop",
+      "domain": "miniature painting progression",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "grimdark-game-systems-and-tabletop",
+        "miniature-painting-progression"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-140 army painting step guide miniature painting progression stage progression 5. grimdark game systems & tabletop game & tabletop formats miniature painting progression pack_17 medieval fantasy & dungeon zine grimdark-game-systems-and-tabletop medieval-fantasy-and-dungeon-zine grimdark-game-systems-and-tabletop miniature-painting-progression"
+    },
+    {
+      "id": "SP17-141",
+      "name": "Macro Grim Miniature Photo",
+      "styleAnchors": [
+        "Macro Grim Miniature Photo",
+        "close-up tabletop miniature photograph",
+        "macro focus"
+      ],
+      "ref": "pack_17/SP17-141.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "grimdark-game-systems-and-tabletop",
+      "categoryName": "5. Grimdark Game Systems & Tabletop",
+      "domain": "close-up tabletop miniature photograph",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "grimdark-game-systems-and-tabletop",
+        "close-up-tabletop-miniature-photograph"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-141 macro grim miniature photo close-up tabletop miniature photograph macro focus 5. grimdark game systems & tabletop game & tabletop formats close-up tabletop miniature photograph pack_17 medieval fantasy & dungeon zine grimdark-game-systems-and-tabletop medieval-fantasy-and-dungeon-zine grimdark-game-systems-and-tabletop close-up-tabletop-miniature-photograph"
+    },
+    {
+      "id": "SP17-142",
+      "name": "Stress-Break Hero Portrait",
+      "styleAnchors": [
+        "Stress-Break Hero Portrait",
+        "hero portrait under mental strain",
+        "breaking-point portrait"
+      ],
+      "ref": "pack_17/SP17-142.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "grimdark-game-systems-and-tabletop",
+      "categoryName": "5. Grimdark Game Systems & Tabletop",
+      "domain": "hero portrait under mental strain",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "grimdark-game-systems-and-tabletop",
+        "hero-portrait-under-mental-strain"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-142 stress-break hero portrait hero portrait under mental strain breaking-point portrait 5. grimdark game systems & tabletop game & tabletop formats hero portrait under mental strain pack_17 medieval fantasy & dungeon zine grimdark-game-systems-and-tabletop medieval-fantasy-and-dungeon-zine grimdark-game-systems-and-tabletop hero-portrait-under-mental-strain"
+    },
+    {
       "id": "SP17-074",
       "name": "Torn-Paper Dungeon Assemblage",
       "ref": "pack_17/SP17-074.yaml",
@@ -2090,6 +2444,356 @@
       "searchableText": "sp17-076 hand-stamped dungeon forms 6. dungeon zine assemblage & stampwork dungeon zine assemblage pack_17 medieval fantasy & dungeon zine dungeon-zine-assemblage-and-stampwork medieval-fantasy-and-dungeon-zine dungeon-zine-assemblage-and-stampwork"
     },
     {
+      "id": "SP17-143",
+      "name": "Potato-Print Monster Stamps",
+      "styleAnchors": [
+        "Potato-Print Monster Stamps",
+        "carved vegetable stamp prints",
+        "carved vegetable stamps"
+      ],
+      "ref": "pack_17/SP17-143.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-assemblage-and-stampwork",
+      "categoryName": "6. Dungeon Zine Assemblage & Stampwork",
+      "domain": "carved vegetable stamp prints",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-assemblage-and-stampwork",
+        "carved-vegetable-stamp-prints"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-143 potato-print monster stamps carved vegetable stamp prints carved vegetable stamps 6. dungeon zine assemblage & stampwork dungeon zine assemblage carved vegetable stamp prints pack_17 medieval fantasy & dungeon zine dungeon-zine-assemblage-and-stampwork medieval-fantasy-and-dungeon-zine dungeon-zine-assemblage-and-stampwork carved-vegetable-stamp-prints"
+    },
+    {
+      "id": "SP17-144",
+      "name": "Sealing-Wax Drip Assemblage",
+      "styleAnchors": ["Sealing-Wax Drip Assemblage", "wax seals and drips collage", "wax drips"],
+      "ref": "pack_17/SP17-144.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-assemblage-and-stampwork",
+      "categoryName": "6. Dungeon Zine Assemblage & Stampwork",
+      "domain": "wax seals and drips collage",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-assemblage-and-stampwork",
+        "wax-seals-and-drips-collage"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-144 sealing-wax drip assemblage wax seals and drips collage wax drips 6. dungeon zine assemblage & stampwork dungeon zine assemblage wax seals and drips collage pack_17 medieval fantasy & dungeon zine dungeon-zine-assemblage-and-stampwork medieval-fantasy-and-dungeon-zine dungeon-zine-assemblage-and-stampwork wax-seals-and-drips-collage"
+    },
+    {
+      "id": "SP17-145",
+      "name": "Found-Map Monster Collage",
+      "styleAnchors": ["Found-Map Monster Collage", "creatures cut onto old maps", "cut map paper"],
+      "ref": "pack_17/SP17-145.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-assemblage-and-stampwork",
+      "categoryName": "6. Dungeon Zine Assemblage & Stampwork",
+      "domain": "creatures cut onto old maps",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-assemblage-and-stampwork",
+        "creatures-cut-onto-old-maps"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-145 found-map monster collage creatures cut onto old maps cut map paper 6. dungeon zine assemblage & stampwork dungeon zine assemblage creatures cut onto old maps pack_17 medieval fantasy & dungeon zine dungeon-zine-assemblage-and-stampwork medieval-fantasy-and-dungeon-zine dungeon-zine-assemblage-and-stampwork creatures-cut-onto-old-maps"
+    },
+    {
+      "id": "SP17-146",
+      "name": "Cut Tarot Scrap Assemblage",
+      "styleAnchors": [
+        "Cut Tarot Scrap Assemblage",
+        "collage from cut card fragments",
+        "cut card fragments"
+      ],
+      "ref": "pack_17/SP17-146.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-assemblage-and-stampwork",
+      "categoryName": "6. Dungeon Zine Assemblage & Stampwork",
+      "domain": "collage from cut card fragments",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-assemblage-and-stampwork",
+        "collage-from-cut-card-fragments"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-146 cut tarot scrap assemblage collage from cut card fragments cut card fragments 6. dungeon zine assemblage & stampwork dungeon zine assemblage collage from cut card fragments pack_17 medieval fantasy & dungeon zine dungeon-zine-assemblage-and-stampwork medieval-fantasy-and-dungeon-zine dungeon-zine-assemblage-and-stampwork collage-from-cut-card-fragments"
+    },
+    {
+      "id": "SP17-147",
+      "name": "Masking-Tape Dungeon Layout",
+      "styleAnchors": [
+        "Masking-Tape Dungeon Layout",
+        "dungeon drawn with tape strips",
+        "masking tape strips"
+      ],
+      "ref": "pack_17/SP17-147.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-assemblage-and-stampwork",
+      "categoryName": "6. Dungeon Zine Assemblage & Stampwork",
+      "domain": "dungeon drawn with tape strips",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-assemblage-and-stampwork",
+        "dungeon-drawn-with-tape-strips"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-147 masking-tape dungeon layout dungeon drawn with tape strips masking tape strips 6. dungeon zine assemblage & stampwork dungeon zine assemblage dungeon drawn with tape strips pack_17 medieval fantasy & dungeon zine dungeon-zine-assemblage-and-stampwork medieval-fantasy-and-dungeon-zine dungeon-zine-assemblage-and-stampwork dungeon-drawn-with-tape-strips"
+    },
+    {
+      "id": "SP17-148",
+      "name": "Dungeon Sticker Sheet Bomb",
+      "styleAnchors": [
+        "Dungeon Sticker Sheet Bomb",
+        "layered cheap stickers of monsters",
+        "overlapping stickers"
+      ],
+      "ref": "pack_17/SP17-148.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-assemblage-and-stampwork",
+      "categoryName": "6. Dungeon Zine Assemblage & Stampwork",
+      "domain": "layered cheap stickers of monsters",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-assemblage-and-stampwork",
+        "layered-cheap-stickers-of-monsters"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-148 dungeon sticker sheet bomb layered cheap stickers of monsters overlapping stickers 6. dungeon zine assemblage & stampwork dungeon zine assemblage layered cheap stickers of monsters pack_17 medieval fantasy & dungeon zine dungeon-zine-assemblage-and-stampwork medieval-fantasy-and-dungeon-zine dungeon-zine-assemblage-and-stampwork layered-cheap-stickers-of-monsters"
+    },
+    {
+      "id": "SP17-149",
+      "name": "Tracing-Paper Overlay Monsters",
+      "styleAnchors": [
+        "Tracing-Paper Overlay Monsters",
+        "layered translucent tracing sheets",
+        "stacked tracing sheets"
+      ],
+      "ref": "pack_17/SP17-149.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-assemblage-and-stampwork",
+      "categoryName": "6. Dungeon Zine Assemblage & Stampwork",
+      "domain": "layered translucent tracing sheets",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-assemblage-and-stampwork",
+        "layered-translucent-tracing-sheets"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-149 tracing-paper overlay monsters layered translucent tracing sheets stacked tracing sheets 6. dungeon zine assemblage & stampwork dungeon zine assemblage layered translucent tracing sheets pack_17 medieval fantasy & dungeon zine dungeon-zine-assemblage-and-stampwork medieval-fantasy-and-dungeon-zine dungeon-zine-assemblage-and-stampwork layered-translucent-tracing-sheets"
+    },
+    {
+      "id": "SP17-150",
+      "name": "Ink-Pad Ledger Stampwork",
+      "styleAnchors": [
+        "Ink-Pad Ledger Stampwork",
+        "bureaucratic rubber stamps as image",
+        "official stamps"
+      ],
+      "ref": "pack_17/SP17-150.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-assemblage-and-stampwork",
+      "categoryName": "6. Dungeon Zine Assemblage & Stampwork",
+      "domain": "bureaucratic rubber stamps as image",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-assemblage-and-stampwork",
+        "bureaucratic-rubber-stamps-as-image"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-150 ink-pad ledger stampwork bureaucratic rubber stamps as image official stamps 6. dungeon zine assemblage & stampwork dungeon zine assemblage bureaucratic rubber stamps as image pack_17 medieval fantasy & dungeon zine dungeon-zine-assemblage-and-stampwork medieval-fantasy-and-dungeon-zine dungeon-zine-assemblage-and-stampwork bureaucratic-rubber-stamps-as-image"
+    },
+    {
+      "id": "SP17-151",
+      "name": "Pressed-Leaf Goblin Assemblage",
+      "styleAnchors": [
+        "Pressed-Leaf Goblin Assemblage",
+        "dried leaves arranged into figures",
+        "pressed leaves"
+      ],
+      "ref": "pack_17/SP17-151.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-assemblage-and-stampwork",
+      "categoryName": "6. Dungeon Zine Assemblage & Stampwork",
+      "domain": "dried leaves arranged into figures",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-assemblage-and-stampwork",
+        "dried-leaves-arranged-into-figures"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-151 pressed-leaf goblin assemblage dried leaves arranged into figures pressed leaves 6. dungeon zine assemblage & stampwork dungeon zine assemblage dried leaves arranged into figures pack_17 medieval fantasy & dungeon zine dungeon-zine-assemblage-and-stampwork medieval-fantasy-and-dungeon-zine dungeon-zine-assemblage-and-stampwork dried-leaves-arranged-into-figures"
+    },
+    {
+      "id": "SP17-152",
+      "name": "Patched Heraldry Rag Collage",
+      "styleAnchors": [
+        "Patched Heraldry Rag Collage",
+        "fabric scraps sewn into arms",
+        "fabric scraps"
+      ],
+      "ref": "pack_17/SP17-152.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-assemblage-and-stampwork",
+      "categoryName": "6. Dungeon Zine Assemblage & Stampwork",
+      "domain": "fabric scraps sewn into arms",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-assemblage-and-stampwork",
+        "fabric-scraps-sewn-into-arms"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-152 patched heraldry rag collage fabric scraps sewn into arms fabric scraps 6. dungeon zine assemblage & stampwork dungeon zine assemblage fabric scraps sewn into arms pack_17 medieval fantasy & dungeon zine dungeon-zine-assemblage-and-stampwork medieval-fantasy-and-dungeon-zine dungeon-zine-assemblage-and-stampwork fabric-scraps-sewn-into-arms"
+    },
+    {
+      "id": "SP17-153",
+      "name": "Staple-Bound Micro Zine",
+      "styleAnchors": ["Staple-Bound Micro Zine", "tiny folded zine spread", "tiny zine"],
+      "ref": "pack_17/SP17-153.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-assemblage-and-stampwork",
+      "categoryName": "6. Dungeon Zine Assemblage & Stampwork",
+      "domain": "tiny folded zine spread",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-assemblage-and-stampwork",
+        "tiny-folded-zine-spread"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-153 staple-bound micro zine tiny folded zine spread tiny zine 6. dungeon zine assemblage & stampwork dungeon zine assemblage tiny folded zine spread pack_17 medieval fantasy & dungeon zine dungeon-zine-assemblage-and-stampwork medieval-fantasy-and-dungeon-zine dungeon-zine-assemblage-and-stampwork tiny-folded-zine-spread"
+    },
+    {
+      "id": "SP17-154",
+      "name": "Stamped Border Frieze Print",
+      "styleAnchors": [
+        "Stamped Border Frieze Print",
+        "repeating stamped borders",
+        "stamped border"
+      ],
+      "ref": "pack_17/SP17-154.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-assemblage-and-stampwork",
+      "categoryName": "6. Dungeon Zine Assemblage & Stampwork",
+      "domain": "repeating stamped borders",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-assemblage-and-stampwork",
+        "repeating-stamped-borders"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-154 stamped border frieze print repeating stamped borders stamped border 6. dungeon zine assemblage & stampwork dungeon zine assemblage repeating stamped borders pack_17 medieval fantasy & dungeon zine dungeon-zine-assemblage-and-stampwork medieval-fantasy-and-dungeon-zine dungeon-zine-assemblage-and-stampwork repeating-stamped-borders"
+    },
+    {
+      "id": "SP17-155",
+      "name": "Found-Object Relic Shadowbox",
+      "styleAnchors": ["Found-Object Relic Shadowbox", "glued object assemblage box", "shadowbox"],
+      "ref": "pack_17/SP17-155.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-assemblage-and-stampwork",
+      "categoryName": "6. Dungeon Zine Assemblage & Stampwork",
+      "domain": "glued object assemblage box",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-assemblage-and-stampwork",
+        "glued-object-assemblage-box"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-155 found-object relic shadowbox glued object assemblage box shadowbox 6. dungeon zine assemblage & stampwork dungeon zine assemblage glued object assemblage box pack_17 medieval fantasy & dungeon zine dungeon-zine-assemblage-and-stampwork medieval-fantasy-and-dungeon-zine dungeon-zine-assemblage-and-stampwork glued-object-assemblage-box"
+    },
+    {
+      "id": "SP17-156",
+      "name": "Receipt-Roll Bestiary",
+      "styleAnchors": ["Receipt-Roll Bestiary", "creatures drawn on long receipts", "receipt roll"],
+      "ref": "pack_17/SP17-156.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-assemblage-and-stampwork",
+      "categoryName": "6. Dungeon Zine Assemblage & Stampwork",
+      "domain": "creatures drawn on long receipts",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-assemblage-and-stampwork",
+        "creatures-drawn-on-long-receipts"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-156 receipt-roll bestiary creatures drawn on long receipts receipt roll 6. dungeon zine assemblage & stampwork dungeon zine assemblage creatures drawn on long receipts pack_17 medieval fantasy & dungeon zine dungeon-zine-assemblage-and-stampwork medieval-fantasy-and-dungeon-zine dungeon-zine-assemblage-and-stampwork creatures-drawn-on-long-receipts"
+    },
+    {
+      "id": "SP17-157",
+      "name": "Wallpaper-Scrap Creature Collage",
+      "styleAnchors": [
+        "Wallpaper-Scrap Creature Collage",
+        "monsters cut from old wallpaper",
+        "wallpaper scraps"
+      ],
+      "ref": "pack_17/SP17-157.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-assemblage-and-stampwork",
+      "categoryName": "6. Dungeon Zine Assemblage & Stampwork",
+      "domain": "monsters cut from old wallpaper",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-assemblage-and-stampwork",
+        "monsters-cut-from-old-wallpaper"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-157 wallpaper-scrap creature collage monsters cut from old wallpaper wallpaper scraps 6. dungeon zine assemblage & stampwork dungeon zine assemblage monsters cut from old wallpaper pack_17 medieval fantasy & dungeon zine dungeon-zine-assemblage-and-stampwork medieval-fantasy-and-dungeon-zine dungeon-zine-assemblage-and-stampwork monsters-cut-from-old-wallpaper"
+    },
+    {
+      "id": "SP17-158",
+      "name": "Scorched Paper Layering",
+      "styleAnchors": ["Scorched Paper Layering", "burnt-edge paper collage", "burnt edges"],
+      "ref": "pack_17/SP17-158.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-assemblage-and-stampwork",
+      "categoryName": "6. Dungeon Zine Assemblage & Stampwork",
+      "domain": "burnt-edge paper collage",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-assemblage-and-stampwork",
+        "burnt-edge-paper-collage"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-158 scorched paper layering burnt-edge paper collage burnt edges 6. dungeon zine assemblage & stampwork dungeon zine assemblage burnt-edge paper collage pack_17 medieval fantasy & dungeon zine dungeon-zine-assemblage-and-stampwork medieval-fantasy-and-dungeon-zine dungeon-zine-assemblage-and-stampwork burnt-edge-paper-collage"
+    },
+    {
+      "id": "SP17-159",
+      "name": "Overhead-Transparency Layers",
+      "styleAnchors": [
+        "Overhead-Transparency Layers",
+        "stacked projector transparencies",
+        "transparency sheets"
+      ],
+      "ref": "pack_17/SP17-159.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "dungeon-zine-assemblage-and-stampwork",
+      "categoryName": "6. Dungeon Zine Assemblage & Stampwork",
+      "domain": "stacked projector transparencies",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "dungeon-zine-assemblage-and-stampwork",
+        "stacked-projector-transparencies"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-159 overhead-transparency layers stacked projector transparencies transparency sheets 6. dungeon zine assemblage & stampwork dungeon zine assemblage stacked projector transparencies pack_17 medieval fantasy & dungeon zine dungeon-zine-assemblage-and-stampwork medieval-fantasy-and-dungeon-zine dungeon-zine-assemblage-and-stampwork stacked-projector-transparencies"
+    },
+    {
       "id": "SP17-077",
       "name": "Paperback Airbrush Fantasy",
       "ref": "pack_17/SP17-077.yaml",
@@ -2112,6 +2816,378 @@
       "tags": ["medieval-fantasy-and-dungeon-zine", "pulp-fantasy-painting"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp17-078 drybrush pulp illustration 7. pulp fantasy painting pulp fantasy painting pack_17 medieval fantasy & dungeon zine pulp-fantasy-painting medieval-fantasy-and-dungeon-zine pulp-fantasy-painting"
+    },
+    {
+      "id": "SP17-160",
+      "name": "Barbarian Oil Cover Painting",
+      "styleAnchors": [
+        "Barbarian Oil Cover Painting",
+        "muscular heroic fantasy oil cover",
+        "heroic figure"
+      ],
+      "ref": "pack_17/SP17-160.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "pulp-fantasy-painting",
+      "categoryName": "7. Pulp Fantasy Painting",
+      "domain": "muscular heroic fantasy oil cover",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "pulp-fantasy-painting",
+        "muscular-heroic-fantasy-oil-cover"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-160 barbarian oil cover painting muscular heroic fantasy oil cover heroic figure 7. pulp fantasy painting pulp fantasy painting muscular heroic fantasy oil cover pack_17 medieval fantasy & dungeon zine pulp-fantasy-painting medieval-fantasy-and-dungeon-zine pulp-fantasy-painting muscular-heroic-fantasy-oil-cover"
+    },
+    {
+      "id": "SP17-161",
+      "name": "Two-Tone Pulp Interior Plate",
+      "styleAnchors": [
+        "Two-Tone Pulp Interior Plate",
+        "black and one-color interior illustration",
+        "black brushwork"
+      ],
+      "ref": "pack_17/SP17-161.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "pulp-fantasy-painting",
+      "categoryName": "7. Pulp Fantasy Painting",
+      "domain": "black and one-color interior illustration",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "pulp-fantasy-painting",
+        "black-and-one-color-interior-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-161 two-tone pulp interior plate black and one-color interior illustration black brushwork 7. pulp fantasy painting pulp fantasy painting black and one-color interior illustration pack_17 medieval fantasy & dungeon zine pulp-fantasy-painting medieval-fantasy-and-dungeon-zine pulp-fantasy-painting black-and-one-color-interior-illustration"
+    },
+    {
+      "id": "SP17-162",
+      "name": "Sword-and-Planet Painting",
+      "styleAnchors": ["Sword-and-Planet Painting", "fantasy on alien worlds", "alien desert"],
+      "ref": "pack_17/SP17-162.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "pulp-fantasy-painting",
+      "categoryName": "7. Pulp Fantasy Painting",
+      "domain": "fantasy on alien worlds",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "pulp-fantasy-painting",
+        "fantasy-on-alien-worlds"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-162 sword-and-planet painting fantasy on alien worlds alien desert 7. pulp fantasy painting pulp fantasy painting fantasy on alien worlds pack_17 medieval fantasy & dungeon zine pulp-fantasy-painting medieval-fantasy-and-dungeon-zine pulp-fantasy-painting fantasy-on-alien-worlds"
+    },
+    {
+      "id": "SP17-163",
+      "name": "Cover Comp Color Rough",
+      "styleAnchors": [
+        "Cover Comp Color Rough",
+        "loose cover sketch painting",
+        "quick gouache blocks"
+      ],
+      "ref": "pack_17/SP17-163.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "pulp-fantasy-painting",
+      "categoryName": "7. Pulp Fantasy Painting",
+      "domain": "loose cover sketch painting",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "pulp-fantasy-painting",
+        "loose-cover-sketch-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-163 cover comp color rough loose cover sketch painting quick gouache blocks 7. pulp fantasy painting pulp fantasy painting loose cover sketch painting pack_17 medieval fantasy & dungeon zine pulp-fantasy-painting medieval-fantasy-and-dungeon-zine pulp-fantasy-painting loose-cover-sketch-painting"
+    },
+    {
+      "id": "SP17-164",
+      "name": "Custom Van Mural Fantasy",
+      "styleAnchors": ["Custom Van Mural Fantasy", "airbrushed van side mural", "van side mural"],
+      "ref": "pack_17/SP17-164.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "pulp-fantasy-painting",
+      "categoryName": "7. Pulp Fantasy Painting",
+      "domain": "airbrushed van side mural",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "pulp-fantasy-painting",
+        "airbrushed-van-side-mural"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-164 custom van mural fantasy airbrushed van side mural van side mural 7. pulp fantasy painting pulp fantasy painting airbrushed van side mural pack_17 medieval fantasy & dungeon zine pulp-fantasy-painting medieval-fantasy-and-dungeon-zine pulp-fantasy-painting airbrushed-van-side-mural"
+    },
+    {
+      "id": "SP17-165",
+      "name": "Metal Album Cover Epic",
+      "styleAnchors": [
+        "Metal Album Cover Epic",
+        "heavy metal fantasy album painting",
+        "square format"
+      ],
+      "ref": "pack_17/SP17-165.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "pulp-fantasy-painting",
+      "categoryName": "7. Pulp Fantasy Painting",
+      "domain": "heavy metal fantasy album painting",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "pulp-fantasy-painting",
+        "heavy-metal-fantasy-album-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-165 metal album cover epic heavy metal fantasy album painting square format 7. pulp fantasy painting pulp fantasy painting heavy metal fantasy album painting pack_17 medieval fantasy & dungeon zine pulp-fantasy-painting medieval-fantasy-and-dungeon-zine pulp-fantasy-painting heavy-metal-fantasy-album-painting"
+    },
+    {
+      "id": "SP17-166",
+      "name": "Painted Fantasy Film Poster",
+      "styleAnchors": [
+        "Painted Fantasy Film Poster",
+        "illustrated eighties fantasy movie poster",
+        "stacked montage"
+      ],
+      "ref": "pack_17/SP17-166.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "pulp-fantasy-painting",
+      "categoryName": "7. Pulp Fantasy Painting",
+      "domain": "illustrated eighties fantasy movie poster",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "pulp-fantasy-painting",
+        "illustrated-eighties-fantasy-movie-poster"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-166 painted fantasy film poster illustrated eighties fantasy movie poster stacked montage 7. pulp fantasy painting pulp fantasy painting illustrated eighties fantasy movie poster pack_17 medieval fantasy & dungeon zine pulp-fantasy-painting medieval-fantasy-and-dungeon-zine pulp-fantasy-painting illustrated-eighties-fantasy-movie-poster"
+    },
+    {
+      "id": "SP17-167",
+      "name": "Glowing-Eyes Night Pulp",
+      "styleAnchors": ["Glowing-Eyes Night Pulp", "nocturnal lurid pulp painting", "glowing eyes"],
+      "ref": "pack_17/SP17-167.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "pulp-fantasy-painting",
+      "categoryName": "7. Pulp Fantasy Painting",
+      "domain": "nocturnal lurid pulp painting",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "pulp-fantasy-painting",
+        "nocturnal-lurid-pulp-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-167 glowing-eyes night pulp nocturnal lurid pulp painting glowing eyes 7. pulp fantasy painting pulp fantasy painting nocturnal lurid pulp painting pack_17 medieval fantasy & dungeon zine pulp-fantasy-painting medieval-fantasy-and-dungeon-zine pulp-fantasy-painting nocturnal-lurid-pulp-painting"
+    },
+    {
+      "id": "SP17-168",
+      "name": "Backlit Heroic Oil Study",
+      "styleAnchors": [
+        "Backlit Heroic Oil Study",
+        "hero silhouetted by bright light",
+        "blazing backlight"
+      ],
+      "ref": "pack_17/SP17-168.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "pulp-fantasy-painting",
+      "categoryName": "7. Pulp Fantasy Painting",
+      "domain": "hero silhouetted by bright light",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "pulp-fantasy-painting",
+        "hero-silhouetted-by-bright-light"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-168 backlit heroic oil study hero silhouetted by bright light blazing backlight 7. pulp fantasy painting pulp fantasy painting hero silhouetted by bright light pack_17 medieval fantasy & dungeon zine pulp-fantasy-painting medieval-fantasy-and-dungeon-zine pulp-fantasy-painting hero-silhouetted-by-bright-light"
+    },
+    {
+      "id": "SP17-169",
+      "name": "Heroic Anatomy Oil Sketch",
+      "styleAnchors": [
+        "Heroic Anatomy Oil Sketch",
+        "loose muscular figure study in oil",
+        "exaggerated anatomy"
+      ],
+      "ref": "pack_17/SP17-169.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "pulp-fantasy-painting",
+      "categoryName": "7. Pulp Fantasy Painting",
+      "domain": "loose muscular figure study in oil",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "pulp-fantasy-painting",
+        "loose-muscular-figure-study-in-oil"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-169 heroic anatomy oil sketch loose muscular figure study in oil exaggerated anatomy 7. pulp fantasy painting pulp fantasy painting loose muscular figure study in oil pack_17 medieval fantasy & dungeon zine pulp-fantasy-painting medieval-fantasy-and-dungeon-zine pulp-fantasy-painting loose-muscular-figure-study-in-oil"
+    },
+    {
+      "id": "SP17-170",
+      "name": "Swamp Monster Pulp Painting",
+      "styleAnchors": ["Swamp Monster Pulp Painting", "swamp creature pulp art", "swamp creature"],
+      "ref": "pack_17/SP17-170.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "pulp-fantasy-painting",
+      "categoryName": "7. Pulp Fantasy Painting",
+      "domain": "swamp creature pulp art",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "pulp-fantasy-painting",
+        "swamp-creature-pulp-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-170 swamp monster pulp painting swamp creature pulp art swamp creature 7. pulp fantasy painting pulp fantasy painting swamp creature pulp art pack_17 medieval fantasy & dungeon zine pulp-fantasy-painting medieval-fantasy-and-dungeon-zine pulp-fantasy-painting swamp-creature-pulp-art"
+    },
+    {
+      "id": "SP17-171",
+      "name": "Weird-Fiction Duotone Plate",
+      "styleAnchors": ["Weird-Fiction Duotone Plate", "eerie two-tone magazine plate", "duotone"],
+      "ref": "pack_17/SP17-171.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "pulp-fantasy-painting",
+      "categoryName": "7. Pulp Fantasy Painting",
+      "domain": "eerie two-tone magazine plate",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "pulp-fantasy-painting",
+        "eerie-two-tone-magazine-plate"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-171 weird-fiction duotone plate eerie two-tone magazine plate duotone 7. pulp fantasy painting pulp fantasy painting eerie two-tone magazine plate pack_17 medieval fantasy & dungeon zine pulp-fantasy-painting medieval-fantasy-and-dungeon-zine pulp-fantasy-painting eerie-two-tone-magazine-plate"
+    },
+    {
+      "id": "SP17-172",
+      "name": "Throne-Room Tableau Painting",
+      "styleAnchors": [
+        "Throne-Room Tableau Painting",
+        "grand dark throne scene",
+        "towering throne"
+      ],
+      "ref": "pack_17/SP17-172.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "pulp-fantasy-painting",
+      "categoryName": "7. Pulp Fantasy Painting",
+      "domain": "grand dark throne scene",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "pulp-fantasy-painting",
+        "grand-dark-throne-scene"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-172 throne-room tableau painting grand dark throne scene towering throne 7. pulp fantasy painting pulp fantasy painting grand dark throne scene pack_17 medieval fantasy & dungeon zine pulp-fantasy-painting medieval-fantasy-and-dungeon-zine pulp-fantasy-painting grand-dark-throne-scene"
+    },
+    {
+      "id": "SP17-173",
+      "name": "Burnt Sienna Underpainting",
+      "styleAnchors": [
+        "Burnt Sienna Underpainting",
+        "monochrome brown oil underlayer",
+        "monochrome sienna"
+      ],
+      "ref": "pack_17/SP17-173.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "pulp-fantasy-painting",
+      "categoryName": "7. Pulp Fantasy Painting",
+      "domain": "monochrome brown oil underlayer",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "pulp-fantasy-painting",
+        "monochrome-brown-oil-underlayer"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-173 burnt sienna underpainting monochrome brown oil underlayer monochrome sienna 7. pulp fantasy painting pulp fantasy painting monochrome brown oil underlayer pack_17 medieval fantasy & dungeon zine pulp-fantasy-painting medieval-fantasy-and-dungeon-zine pulp-fantasy-painting monochrome-brown-oil-underlayer"
+    },
+    {
+      "id": "SP17-174",
+      "name": "Sci-Fantasy Neon Pulp",
+      "styleAnchors": ["Sci-Fantasy Neon Pulp", "swords and ray guns neon painting", "neon aurora"],
+      "ref": "pack_17/SP17-174.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "pulp-fantasy-painting",
+      "categoryName": "7. Pulp Fantasy Painting",
+      "domain": "swords and ray guns neon painting",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "pulp-fantasy-painting",
+        "swords-and-ray-guns-neon-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-174 sci-fantasy neon pulp swords and ray guns neon painting neon aurora 7. pulp fantasy painting pulp fantasy painting swords and ray guns neon painting pack_17 medieval fantasy & dungeon zine pulp-fantasy-painting medieval-fantasy-and-dungeon-zine pulp-fantasy-painting swords-and-ray-guns-neon-painting"
+    },
+    {
+      "id": "SP17-175",
+      "name": "Pulp Dungeon Gatefold Spread",
+      "styleAnchors": [
+        "Pulp Dungeon Gatefold Spread",
+        "wide double-page painted spread",
+        "double-page spread"
+      ],
+      "ref": "pack_17/SP17-175.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "pulp-fantasy-painting",
+      "categoryName": "7. Pulp Fantasy Painting",
+      "domain": "wide double-page painted spread",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "pulp-fantasy-painting",
+        "wide-double-page-painted-spread"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-175 pulp dungeon gatefold spread wide double-page painted spread double-page spread 7. pulp fantasy painting pulp fantasy painting wide double-page painted spread pack_17 medieval fantasy & dungeon zine pulp-fantasy-painting medieval-fantasy-and-dungeon-zine pulp-fantasy-painting wide-double-page-painted-spread"
+    },
+    {
+      "id": "SP17-176",
+      "name": "Chrome-Armor Airbrush Hero",
+      "styleAnchors": [
+        "Chrome-Armor Airbrush Hero",
+        "shiny airbrushed armored hero",
+        "mirror chrome armor"
+      ],
+      "ref": "pack_17/SP17-176.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "pulp-fantasy-painting",
+      "categoryName": "7. Pulp Fantasy Painting",
+      "domain": "shiny airbrushed armored hero",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "pulp-fantasy-painting",
+        "shiny-airbrushed-armored-hero"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-176 chrome-armor airbrush hero shiny airbrushed armored hero mirror chrome armor 7. pulp fantasy painting pulp fantasy painting shiny airbrushed armored hero pack_17 medieval fantasy & dungeon zine pulp-fantasy-painting medieval-fantasy-and-dungeon-zine pulp-fantasy-painting shiny-airbrushed-armored-hero"
+    },
+    {
+      "id": "SP17-177",
+      "name": "Small Paperback Vignette Painting",
+      "styleAnchors": [
+        "Small Paperback Vignette Painting",
+        "small spine or back-cover painting",
+        "oval vignette"
+      ],
+      "ref": "pack_17/SP17-177.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "pulp-fantasy-painting",
+      "categoryName": "7. Pulp Fantasy Painting",
+      "domain": "small spine or back-cover painting",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "pulp-fantasy-painting",
+        "small-spine-or-back-cover-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-177 small paperback vignette painting small spine or back-cover painting oval vignette 7. pulp fantasy painting pulp fantasy painting small spine or back-cover painting pack_17 medieval fantasy & dungeon zine pulp-fantasy-painting medieval-fantasy-and-dungeon-zine pulp-fantasy-painting small-spine-or-back-cover-painting"
     },
     {
       "id": "SP17-079",
@@ -2172,6 +3248,316 @@
       "tags": ["medieval-fantasy-and-dungeon-zine", "medieval-fantasy-drawing-media"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp17-083 colored-pencil grit fantasy 8. medieval fantasy drawing media fantasy drawing media pack_17 medieval fantasy & dungeon zine medieval-fantasy-drawing-media medieval-fantasy-and-dungeon-zine medieval-fantasy-drawing-media"
+    },
+    {
+      "id": "SP17-178",
+      "name": "Trois Crayons Drawing",
+      "styleAnchors": [
+        "Trois Crayons Drawing",
+        "black, red and white chalk drawing",
+        "three chalks"
+      ],
+      "ref": "pack_17/SP17-178.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "medieval-fantasy-drawing-media",
+      "categoryName": "8. Medieval Fantasy Drawing Media",
+      "domain": "black, red and white chalk drawing",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "medieval-fantasy-drawing-media",
+        "black-red-and-white-chalk-drawing"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-178 trois crayons drawing black, red and white chalk drawing three chalks 8. medieval fantasy drawing media fantasy drawing media black, red and white chalk drawing pack_17 medieval fantasy & dungeon zine medieval-fantasy-drawing-media medieval-fantasy-and-dungeon-zine medieval-fantasy-drawing-media black-red-and-white-chalk-drawing"
+    },
+    {
+      "id": "SP17-179",
+      "name": "Carved Gesso Line Drawing",
+      "styleAnchors": ["Carved Gesso Line Drawing", "drawing incised in gesso", "incised grooves"],
+      "ref": "pack_17/SP17-179.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "medieval-fantasy-drawing-media",
+      "categoryName": "8. Medieval Fantasy Drawing Media",
+      "domain": "drawing incised in gesso",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "medieval-fantasy-drawing-media",
+        "drawing-incised-in-gesso"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-179 carved gesso line drawing drawing incised in gesso incised grooves 8. medieval fantasy drawing media fantasy drawing media drawing incised in gesso pack_17 medieval fantasy & dungeon zine medieval-fantasy-drawing-media medieval-fantasy-and-dungeon-zine medieval-fantasy-drawing-media drawing-incised-in-gesso"
+    },
+    {
+      "id": "SP17-180",
+      "name": "Goldpoint Stylus Drawing",
+      "styleAnchors": [
+        "Goldpoint Stylus Drawing",
+        "drawing with a gold stylus",
+        "gold stylus line"
+      ],
+      "ref": "pack_17/SP17-180.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "medieval-fantasy-drawing-media",
+      "categoryName": "8. Medieval Fantasy Drawing Media",
+      "domain": "drawing with a gold stylus",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "medieval-fantasy-drawing-media",
+        "drawing-with-a-gold-stylus"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-180 goldpoint stylus drawing drawing with a gold stylus gold stylus line 8. medieval fantasy drawing media fantasy drawing media drawing with a gold stylus pack_17 medieval fantasy & dungeon zine medieval-fantasy-drawing-media medieval-fantasy-and-dungeon-zine medieval-fantasy-drawing-media drawing-with-a-gold-stylus"
+    },
+    {
+      "id": "SP17-181",
+      "name": "Lampblack Brush Study",
+      "styleAnchors": ["Lampblack Brush Study", "soot ink brush drawing", "velvety black"],
+      "ref": "pack_17/SP17-181.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "medieval-fantasy-drawing-media",
+      "categoryName": "8. Medieval Fantasy Drawing Media",
+      "domain": "soot ink brush drawing",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "medieval-fantasy-drawing-media",
+        "soot-ink-brush-drawing"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-181 lampblack brush study soot ink brush drawing velvety black 8. medieval fantasy drawing media fantasy drawing media soot ink brush drawing pack_17 medieval fantasy & dungeon zine medieval-fantasy-drawing-media medieval-fantasy-and-dungeon-zine medieval-fantasy-drawing-media soot-ink-brush-drawing"
+    },
+    {
+      "id": "SP17-182",
+      "name": "Vine Charcoal Fantasy Sketch",
+      "styleAnchors": [
+        "Vine Charcoal Fantasy Sketch",
+        "soft vine charcoal drawing",
+        "vine charcoal"
+      ],
+      "ref": "pack_17/SP17-182.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "medieval-fantasy-drawing-media",
+      "categoryName": "8. Medieval Fantasy Drawing Media",
+      "domain": "soft vine charcoal drawing",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "medieval-fantasy-drawing-media",
+        "soft-vine-charcoal-drawing"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-182 vine charcoal fantasy sketch soft vine charcoal drawing vine charcoal 8. medieval fantasy drawing media fantasy drawing media soft vine charcoal drawing pack_17 medieval fantasy & dungeon zine medieval-fantasy-drawing-media medieval-fantasy-and-dungeon-zine medieval-fantasy-drawing-media soft-vine-charcoal-drawing"
+    },
+    {
+      "id": "SP17-183",
+      "name": "Blue-Paper White Heightening",
+      "styleAnchors": [
+        "Blue-Paper White Heightening",
+        "white highlights on blue paper",
+        "blue paper"
+      ],
+      "ref": "pack_17/SP17-183.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "medieval-fantasy-drawing-media",
+      "categoryName": "8. Medieval Fantasy Drawing Media",
+      "domain": "white highlights on blue paper",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "medieval-fantasy-drawing-media",
+        "white-highlights-on-blue-paper"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-183 blue-paper white heightening white highlights on blue paper blue paper 8. medieval fantasy drawing media fantasy drawing media white highlights on blue paper pack_17 medieval fantasy & dungeon zine medieval-fantasy-drawing-media medieval-fantasy-and-dungeon-zine medieval-fantasy-drawing-media white-highlights-on-blue-paper"
+    },
+    {
+      "id": "SP17-184",
+      "name": "Burnished Graphite Sheen",
+      "styleAnchors": [
+        "Burnished Graphite Sheen",
+        "polished shiny graphite drawing",
+        "burnished graphite"
+      ],
+      "ref": "pack_17/SP17-184.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "medieval-fantasy-drawing-media",
+      "categoryName": "8. Medieval Fantasy Drawing Media",
+      "domain": "polished shiny graphite drawing",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "medieval-fantasy-drawing-media",
+        "polished-shiny-graphite-drawing"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-184 burnished graphite sheen polished shiny graphite drawing burnished graphite 8. medieval fantasy drawing media fantasy drawing media polished shiny graphite drawing pack_17 medieval fantasy & dungeon zine medieval-fantasy-drawing-media medieval-fantasy-and-dungeon-zine medieval-fantasy-drawing-media polished-shiny-graphite-drawing"
+    },
+    {
+      "id": "SP17-185",
+      "name": "Oil-Stick Gestural Drawing",
+      "styleAnchors": ["Oil-Stick Gestural Drawing", "bold oil stick drawing", "oil stick"],
+      "ref": "pack_17/SP17-185.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "medieval-fantasy-drawing-media",
+      "categoryName": "8. Medieval Fantasy Drawing Media",
+      "domain": "bold oil stick drawing",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "medieval-fantasy-drawing-media",
+        "bold-oil-stick-drawing"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-185 oil-stick gestural drawing bold oil stick drawing oil stick 8. medieval fantasy drawing media fantasy drawing media bold oil stick drawing pack_17 medieval fantasy & dungeon zine medieval-fantasy-drawing-media medieval-fantasy-and-dungeon-zine medieval-fantasy-drawing-media bold-oil-stick-drawing"
+    },
+    {
+      "id": "SP17-186",
+      "name": "Bistre Wash and Line",
+      "styleAnchors": ["Bistre Wash and Line", "brown soot ink pen and wash", "brown ink"],
+      "ref": "pack_17/SP17-186.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "medieval-fantasy-drawing-media",
+      "categoryName": "8. Medieval Fantasy Drawing Media",
+      "domain": "brown soot ink pen and wash",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "medieval-fantasy-drawing-media",
+        "brown-soot-ink-pen-and-wash"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-186 bistre wash and line brown soot ink pen and wash brown ink 8. medieval fantasy drawing media fantasy drawing media brown soot ink pen and wash pack_17 medieval fantasy & dungeon zine medieval-fantasy-drawing-media medieval-fantasy-and-dungeon-zine medieval-fantasy-drawing-media brown-soot-ink-pen-and-wash"
+    },
+    {
+      "id": "SP17-187",
+      "name": "Carbon Pencil Velvet Blacks",
+      "styleAnchors": [
+        "Carbon Pencil Velvet Blacks",
+        "rich carbon pencil drawing",
+        "matte carbon blacks"
+      ],
+      "ref": "pack_17/SP17-187.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "medieval-fantasy-drawing-media",
+      "categoryName": "8. Medieval Fantasy Drawing Media",
+      "domain": "rich carbon pencil drawing",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "medieval-fantasy-drawing-media",
+        "rich-carbon-pencil-drawing"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-187 carbon pencil velvet blacks rich carbon pencil drawing matte carbon blacks 8. medieval fantasy drawing media fantasy drawing media rich carbon pencil drawing pack_17 medieval fantasy & dungeon zine medieval-fantasy-drawing-media medieval-fantasy-and-dungeon-zine medieval-fantasy-drawing-media rich-carbon-pencil-drawing"
+    },
+    {
+      "id": "SP17-188",
+      "name": "India Ink Drybrush Fantasy",
+      "styleAnchors": [
+        "India Ink Drybrush Fantasy",
+        "dry brush black ink illustration",
+        "dry brush"
+      ],
+      "ref": "pack_17/SP17-188.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "medieval-fantasy-drawing-media",
+      "categoryName": "8. Medieval Fantasy Drawing Media",
+      "domain": "dry brush black ink illustration",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "medieval-fantasy-drawing-media",
+        "dry-brush-black-ink-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-188 india ink drybrush fantasy dry brush black ink illustration dry brush 8. medieval fantasy drawing media fantasy drawing media dry brush black ink illustration pack_17 medieval fantasy & dungeon zine medieval-fantasy-drawing-media medieval-fantasy-and-dungeon-zine medieval-fantasy-drawing-media dry-brush-black-ink-illustration"
+    },
+    {
+      "id": "SP17-189",
+      "name": "Crowquill Fine Line Fantasy",
+      "styleAnchors": ["Crowquill Fine Line Fantasy", "very fine nib pen drawing", "fine nib"],
+      "ref": "pack_17/SP17-189.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "medieval-fantasy-drawing-media",
+      "categoryName": "8. Medieval Fantasy Drawing Media",
+      "domain": "very fine nib pen drawing",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "medieval-fantasy-drawing-media",
+        "very-fine-nib-pen-drawing"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-189 crowquill fine line fantasy very fine nib pen drawing fine nib 8. medieval fantasy drawing media fantasy drawing media very fine nib pen drawing pack_17 medieval fantasy & dungeon zine medieval-fantasy-drawing-media medieval-fantasy-and-dungeon-zine medieval-fantasy-drawing-media very-fine-nib-pen-drawing"
+    },
+    {
+      "id": "SP17-190",
+      "name": "Mixed Chalk on Grey Paper",
+      "styleAnchors": [
+        "Mixed Chalk on Grey Paper",
+        "colored chalks on mid-grey paper",
+        "grey paper"
+      ],
+      "ref": "pack_17/SP17-190.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "medieval-fantasy-drawing-media",
+      "categoryName": "8. Medieval Fantasy Drawing Media",
+      "domain": "colored chalks on mid-grey paper",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "medieval-fantasy-drawing-media",
+        "colored-chalks-on-mid-grey-paper"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-190 mixed chalk on grey paper colored chalks on mid-grey paper grey paper 8. medieval fantasy drawing media fantasy drawing media colored chalks on mid-grey paper pack_17 medieval fantasy & dungeon zine medieval-fantasy-drawing-media medieval-fantasy-and-dungeon-zine medieval-fantasy-drawing-media colored-chalks-on-mid-grey-paper"
+    },
+    {
+      "id": "SP17-191",
+      "name": "Pencil and Tea-Stain Wash",
+      "styleAnchors": [
+        "Pencil and Tea-Stain Wash",
+        "graphite with tea-stained washes",
+        "tea stains"
+      ],
+      "ref": "pack_17/SP17-191.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "medieval-fantasy-drawing-media",
+      "categoryName": "8. Medieval Fantasy Drawing Media",
+      "domain": "graphite with tea-stained washes",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "medieval-fantasy-drawing-media",
+        "graphite-with-tea-stained-washes"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-191 pencil and tea-stain wash graphite with tea-stained washes tea stains 8. medieval fantasy drawing media fantasy drawing media graphite with tea-stained washes pack_17 medieval fantasy & dungeon zine medieval-fantasy-drawing-media medieval-fantasy-and-dungeon-zine medieval-fantasy-drawing-media graphite-with-tea-stained-washes"
+    },
+    {
+      "id": "SP17-192",
+      "name": "Fine Ballpoint Crosshatch Study",
+      "styleAnchors": [
+        "Fine Ballpoint Crosshatch Study",
+        "precise ballpoint pen drawing",
+        "ballpoint crosshatch"
+      ],
+      "ref": "pack_17/SP17-192.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "medieval-fantasy-drawing-media",
+      "categoryName": "8. Medieval Fantasy Drawing Media",
+      "domain": "precise ballpoint pen drawing",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "medieval-fantasy-drawing-media",
+        "precise-ballpoint-pen-drawing"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-192 fine ballpoint crosshatch study precise ballpoint pen drawing ballpoint crosshatch 8. medieval fantasy drawing media fantasy drawing media precise ballpoint pen drawing pack_17 medieval fantasy & dungeon zine medieval-fantasy-drawing-media medieval-fantasy-and-dungeon-zine medieval-fantasy-drawing-media precise-ballpoint-pen-drawing"
     },
     {
       "id": "SP17-084",
@@ -2246,6 +3632,302 @@
       "searchableText": "sp17-089 amnesia — candlelit vulnerability 9. gothic & dungeon art directions gothic & dungeon art pack_17 medieval fantasy & dungeon zine gothic-and-dungeon-art-directions medieval-fantasy-and-dungeon-zine gothic-and-dungeon-art-directions"
     },
     {
+      "id": "SP17-193",
+      "name": "Frostbitten Crypt Direction",
+      "styleAnchors": [
+        "Frostbitten Crypt Direction",
+        "frozen tomb game art direction",
+        "frozen crypt"
+      ],
+      "ref": "pack_17/SP17-193.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "gothic-and-dungeon-art-directions",
+      "categoryName": "9. Gothic & Dungeon Art Directions",
+      "domain": "frozen tomb game art direction",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "gothic-and-dungeon-art-directions",
+        "frozen-tomb-game-art-direction"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-193 frostbitten crypt direction frozen tomb game art direction frozen crypt 9. gothic & dungeon art directions gothic & dungeon art frozen tomb game art direction pack_17 medieval fantasy & dungeon zine gothic-and-dungeon-art-directions medieval-fantasy-and-dungeon-zine gothic-and-dungeon-art-directions frozen-tomb-game-art-direction"
+    },
+    {
+      "id": "SP17-194",
+      "name": "Drowned Cathedral Direction",
+      "styleAnchors": [
+        "Drowned Cathedral Direction",
+        "flooded cathedral art direction",
+        "flooded cathedral"
+      ],
+      "ref": "pack_17/SP17-194.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "gothic-and-dungeon-art-directions",
+      "categoryName": "9. Gothic & Dungeon Art Directions",
+      "domain": "flooded cathedral art direction",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "gothic-and-dungeon-art-directions",
+        "flooded-cathedral-art-direction"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-194 drowned cathedral direction flooded cathedral art direction flooded cathedral 9. gothic & dungeon art directions gothic & dungeon art flooded cathedral art direction pack_17 medieval fantasy & dungeon zine gothic-and-dungeon-art-directions medieval-fantasy-and-dungeon-zine gothic-and-dungeon-art-directions flooded-cathedral-art-direction"
+    },
+    {
+      "id": "SP17-195",
+      "name": "Cracked-Doll Manor Direction",
+      "styleAnchors": [
+        "Cracked-Doll Manor Direction",
+        "haunted doll house art direction",
+        "cracked dolls"
+      ],
+      "ref": "pack_17/SP17-195.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "gothic-and-dungeon-art-directions",
+      "categoryName": "9. Gothic & Dungeon Art Directions",
+      "domain": "haunted doll house art direction",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "gothic-and-dungeon-art-directions",
+        "haunted-doll-house-art-direction"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-195 cracked-doll manor direction haunted doll house art direction cracked dolls 9. gothic & dungeon art directions gothic & dungeon art haunted doll house art direction pack_17 medieval fantasy & dungeon zine gothic-and-dungeon-art-directions medieval-fantasy-and-dungeon-zine gothic-and-dungeon-art-directions haunted-doll-house-art-direction"
+    },
+    {
+      "id": "SP17-196",
+      "name": "Rust-and-Bone Waste Direction",
+      "styleAnchors": [
+        "Rust-and-Bone Waste Direction",
+        "wasteland of rust and bones",
+        "giant bones"
+      ],
+      "ref": "pack_17/SP17-196.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "gothic-and-dungeon-art-directions",
+      "categoryName": "9. Gothic & Dungeon Art Directions",
+      "domain": "wasteland of rust and bones",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "gothic-and-dungeon-art-directions",
+        "wasteland-of-rust-and-bones"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-196 rust-and-bone waste direction wasteland of rust and bones giant bones 9. gothic & dungeon art directions gothic & dungeon art wasteland of rust and bones pack_17 medieval fantasy & dungeon zine gothic-and-dungeon-art-directions medieval-fantasy-and-dungeon-zine gothic-and-dungeon-art-directions wasteland-of-rust-and-bones"
+    },
+    {
+      "id": "SP17-197",
+      "name": "Stained-Glass Boss Hall Direction",
+      "styleAnchors": [
+        "Stained-Glass Boss Hall Direction",
+        "boss chamber lit by stained glass",
+        "stained-glass light"
+      ],
+      "ref": "pack_17/SP17-197.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "gothic-and-dungeon-art-directions",
+      "categoryName": "9. Gothic & Dungeon Art Directions",
+      "domain": "boss chamber lit by stained glass",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "gothic-and-dungeon-art-directions",
+        "boss-chamber-lit-by-stained-glass"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-197 stained-glass boss hall direction boss chamber lit by stained glass stained-glass light 9. gothic & dungeon art directions gothic & dungeon art boss chamber lit by stained glass pack_17 medieval fantasy & dungeon zine gothic-and-dungeon-art-directions medieval-fantasy-and-dungeon-zine gothic-and-dungeon-art-directions boss-chamber-lit-by-stained-glass"
+    },
+    {
+      "id": "SP17-198",
+      "name": "Fungal Underdark Direction",
+      "styleAnchors": [
+        "Fungal Underdark Direction",
+        "glowing mushroom cave art direction",
+        "giant glowing fungi"
+      ],
+      "ref": "pack_17/SP17-198.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "gothic-and-dungeon-art-directions",
+      "categoryName": "9. Gothic & Dungeon Art Directions",
+      "domain": "glowing mushroom cave art direction",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "gothic-and-dungeon-art-directions",
+        "glowing-mushroom-cave-art-direction"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-198 fungal underdark direction glowing mushroom cave art direction giant glowing fungi 9. gothic & dungeon art directions gothic & dungeon art glowing mushroom cave art direction pack_17 medieval fantasy & dungeon zine gothic-and-dungeon-art-directions medieval-fantasy-and-dungeon-zine gothic-and-dungeon-art-directions glowing-mushroom-cave-art-direction"
+    },
+    {
+      "id": "SP17-199",
+      "name": "Infirmary Sepia Direction",
+      "styleAnchors": [
+        "Infirmary Sepia Direction",
+        "old hospital ward art direction",
+        "sepia ward"
+      ],
+      "ref": "pack_17/SP17-199.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "gothic-and-dungeon-art-directions",
+      "categoryName": "9. Gothic & Dungeon Art Directions",
+      "domain": "old hospital ward art direction",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "gothic-and-dungeon-art-directions",
+        "old-hospital-ward-art-direction"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-199 infirmary sepia direction old hospital ward art direction sepia ward 9. gothic & dungeon art directions gothic & dungeon art old hospital ward art direction pack_17 medieval fantasy & dungeon zine gothic-and-dungeon-art-directions medieval-fantasy-and-dungeon-zine gothic-and-dungeon-art-directions old-hospital-ward-art-direction"
+    },
+    {
+      "id": "SP17-200",
+      "name": "Clockwork Tomb Direction",
+      "styleAnchors": ["Clockwork Tomb Direction", "mechanical tomb art direction", "tomb machine"],
+      "ref": "pack_17/SP17-200.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "gothic-and-dungeon-art-directions",
+      "categoryName": "9. Gothic & Dungeon Art Directions",
+      "domain": "mechanical tomb art direction",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "gothic-and-dungeon-art-directions",
+        "mechanical-tomb-art-direction"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-200 clockwork tomb direction mechanical tomb art direction tomb machine 9. gothic & dungeon art directions gothic & dungeon art mechanical tomb art direction pack_17 medieval fantasy & dungeon zine gothic-and-dungeon-art-directions medieval-fantasy-and-dungeon-zine gothic-and-dungeon-art-directions mechanical-tomb-art-direction"
+    },
+    {
+      "id": "SP17-201",
+      "name": "Ashen Forest Witch Direction",
+      "styleAnchors": [
+        "Ashen Forest Witch Direction",
+        "burnt forest witch art direction",
+        "ashen forest"
+      ],
+      "ref": "pack_17/SP17-201.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "gothic-and-dungeon-art-directions",
+      "categoryName": "9. Gothic & Dungeon Art Directions",
+      "domain": "burnt forest witch art direction",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "gothic-and-dungeon-art-directions",
+        "burnt-forest-witch-art-direction"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-201 ashen forest witch direction burnt forest witch art direction ashen forest 9. gothic & dungeon art directions gothic & dungeon art burnt forest witch art direction pack_17 medieval fantasy & dungeon zine gothic-and-dungeon-art-directions medieval-fantasy-and-dungeon-zine gothic-and-dungeon-art-directions burnt-forest-witch-art-direction"
+    },
+    {
+      "id": "SP17-202",
+      "name": "Marble Angel Necropolis",
+      "styleAnchors": ["Marble Angel Necropolis", "white marble city of tombs", "marble tombs"],
+      "ref": "pack_17/SP17-202.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "gothic-and-dungeon-art-directions",
+      "categoryName": "9. Gothic & Dungeon Art Directions",
+      "domain": "white marble city of tombs",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "gothic-and-dungeon-art-directions",
+        "white-marble-city-of-tombs"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-202 marble angel necropolis white marble city of tombs marble tombs 9. gothic & dungeon art directions gothic & dungeon art white marble city of tombs pack_17 medieval fantasy & dungeon zine gothic-and-dungeon-art-directions medieval-fantasy-and-dungeon-zine gothic-and-dungeon-art-directions white-marble-city-of-tombs"
+    },
+    {
+      "id": "SP17-203",
+      "name": "Velvet Opera Vampire Direction",
+      "styleAnchors": [
+        "Velvet Opera Vampire Direction",
+        "vampire opera house art direction",
+        "velvet opera house"
+      ],
+      "ref": "pack_17/SP17-203.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "gothic-and-dungeon-art-directions",
+      "categoryName": "9. Gothic & Dungeon Art Directions",
+      "domain": "vampire opera house art direction",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "gothic-and-dungeon-art-directions",
+        "vampire-opera-house-art-direction"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-203 velvet opera vampire direction vampire opera house art direction velvet opera house 9. gothic & dungeon art directions gothic & dungeon art vampire opera house art direction pack_17 medieval fantasy & dungeon zine gothic-and-dungeon-art-directions medieval-fantasy-and-dungeon-zine gothic-and-dungeon-art-directions vampire-opera-house-art-direction"
+    },
+    {
+      "id": "SP17-204",
+      "name": "Salt-Mine Abyss Direction",
+      "styleAnchors": ["Salt-Mine Abyss Direction", "deep salt mine art direction", "salt mine"],
+      "ref": "pack_17/SP17-204.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "gothic-and-dungeon-art-directions",
+      "categoryName": "9. Gothic & Dungeon Art Directions",
+      "domain": "deep salt mine art direction",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "gothic-and-dungeon-art-directions",
+        "deep-salt-mine-art-direction"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-204 salt-mine abyss direction deep salt mine art direction salt mine 9. gothic & dungeon art directions gothic & dungeon art deep salt mine art direction pack_17 medieval fantasy & dungeon zine gothic-and-dungeon-art-directions medieval-fantasy-and-dungeon-zine gothic-and-dungeon-art-directions deep-salt-mine-art-direction"
+    },
+    {
+      "id": "SP17-205",
+      "name": "Lantern-Lit Fog Village Direction",
+      "styleAnchors": [
+        "Lantern-Lit Fog Village Direction",
+        "foggy village night art direction",
+        "thick fog"
+      ],
+      "ref": "pack_17/SP17-205.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "gothic-and-dungeon-art-directions",
+      "categoryName": "9. Gothic & Dungeon Art Directions",
+      "domain": "foggy village night art direction",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "gothic-and-dungeon-art-directions",
+        "foggy-village-night-art-direction"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-205 lantern-lit fog village direction foggy village night art direction thick fog 9. gothic & dungeon art directions gothic & dungeon art foggy village night art direction pack_17 medieval fantasy & dungeon zine gothic-and-dungeon-art-directions medieval-fantasy-and-dungeon-zine gothic-and-dungeon-art-directions foggy-village-night-art-direction"
+    },
+    {
+      "id": "SP17-206",
+      "name": "Obsidian Sun Temple Direction",
+      "styleAnchors": [
+        "Obsidian Sun Temple Direction",
+        "black stone sun temple art direction",
+        "obsidian step temple"
+      ],
+      "ref": "pack_17/SP17-206.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "gothic-and-dungeon-art-directions",
+      "categoryName": "9. Gothic & Dungeon Art Directions",
+      "domain": "black stone sun temple art direction",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "gothic-and-dungeon-art-directions",
+        "black-stone-sun-temple-art-direction"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-206 obsidian sun temple direction black stone sun temple art direction obsidian step temple 9. gothic & dungeon art directions gothic & dungeon art black stone sun temple art direction pack_17 medieval fantasy & dungeon zine gothic-and-dungeon-art-directions medieval-fantasy-and-dungeon-zine gothic-and-dungeon-art-directions black-stone-sun-temple-art-direction"
+    },
+    {
       "id": "SP17-090",
       "name": "Darksiders — Apocalyptic Graphic Fantasy",
       "ref": "pack_17/SP17-090.yaml",
@@ -2316,7 +3998,307 @@
       "tags": ["medieval-fantasy-and-dungeon-zine", "graphic-and-feudal-art-directions"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp17-095 darkest dungeon — expressionist ink 10. graphic & feudal art directions graphic & feudal art pack_17 medieval fantasy & dungeon zine graphic-and-feudal-art-directions medieval-fantasy-and-dungeon-zine graphic-and-feudal-art-directions"
+    },
+    {
+      "id": "SP17-207",
+      "name": "Woodblock Spirit-War Direction",
+      "styleAnchors": [
+        "Woodblock Spirit-War Direction",
+        "woodblock-style supernatural battle art",
+        "woodblock outlines"
+      ],
+      "ref": "pack_17/SP17-207.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "graphic-and-feudal-art-directions",
+      "categoryName": "10. Graphic & Feudal Art Directions",
+      "domain": "woodblock-style supernatural battle art",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "graphic-and-feudal-art-directions",
+        "woodblock-style-supernatural-battle-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-207 woodblock spirit-war direction woodblock-style supernatural battle art woodblock outlines 10. graphic & feudal art directions graphic & feudal art woodblock-style supernatural battle art pack_17 medieval fantasy & dungeon zine graphic-and-feudal-art-directions medieval-fantasy-and-dungeon-zine graphic-and-feudal-art-directions woodblock-style-supernatural-battle-art"
+    },
+    {
+      "id": "SP17-208",
+      "name": "Wet-Ink Samurai Duel Direction",
+      "styleAnchors": [
+        "Wet-Ink Samurai Duel Direction",
+        "sumi-ink duel art direction",
+        "splashing ink"
+      ],
+      "ref": "pack_17/SP17-208.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "graphic-and-feudal-art-directions",
+      "categoryName": "10. Graphic & Feudal Art Directions",
+      "domain": "sumi-ink duel art direction",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "graphic-and-feudal-art-directions",
+        "sumi-ink-duel-art-direction"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-208 wet-ink samurai duel direction sumi-ink duel art direction splashing ink 10. graphic & feudal art directions graphic & feudal art sumi-ink duel art direction pack_17 medieval fantasy & dungeon zine graphic-and-feudal-art-directions medieval-fantasy-and-dungeon-zine graphic-and-feudal-art-directions sumi-ink-duel-art-direction"
+    },
+    {
+      "id": "SP17-209",
+      "name": "Heraldic Flat-Color Tactics Direction",
+      "styleAnchors": [
+        "Heraldic Flat-Color Tactics Direction",
+        "flat heraldic strategy art direction",
+        "flat heraldic color"
+      ],
+      "ref": "pack_17/SP17-209.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "graphic-and-feudal-art-directions",
+      "categoryName": "10. Graphic & Feudal Art Directions",
+      "domain": "flat heraldic strategy art direction",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "graphic-and-feudal-art-directions",
+        "flat-heraldic-strategy-art-direction"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-209 heraldic flat-color tactics direction flat heraldic strategy art direction flat heraldic color 10. graphic & feudal art directions graphic & feudal art flat heraldic strategy art direction pack_17 medieval fantasy & dungeon zine graphic-and-feudal-art-directions medieval-fantasy-and-dungeon-zine graphic-and-feudal-art-directions flat-heraldic-strategy-art-direction"
+    },
+    {
+      "id": "SP17-210",
+      "name": "Cel-Shaded Viking Saga Direction",
+      "styleAnchors": [
+        "Cel-Shaded Viking Saga Direction",
+        "toon-shaded norse saga art",
+        "toon shading"
+      ],
+      "ref": "pack_17/SP17-210.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "graphic-and-feudal-art-directions",
+      "categoryName": "10. Graphic & Feudal Art Directions",
+      "domain": "toon-shaded norse saga art",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "graphic-and-feudal-art-directions",
+        "toon-shaded-norse-saga-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-210 cel-shaded viking saga direction toon-shaded norse saga art toon shading 10. graphic & feudal art directions graphic & feudal art toon-shaded norse saga art pack_17 medieval fantasy & dungeon zine graphic-and-feudal-art-directions medieval-fantasy-and-dungeon-zine graphic-and-feudal-art-directions toon-shaded-norse-saga-art"
+    },
+    {
+      "id": "SP17-211",
+      "name": "Comic-Ink Siege Direction",
+      "styleAnchors": [
+        "Comic-Ink Siege Direction",
+        "comic-book siege art direction",
+        "heavy blacks"
+      ],
+      "ref": "pack_17/SP17-211.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "graphic-and-feudal-art-directions",
+      "categoryName": "10. Graphic & Feudal Art Directions",
+      "domain": "comic-book siege art direction",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "graphic-and-feudal-art-directions",
+        "comic-book-siege-art-direction"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-211 comic-ink siege direction comic-book siege art direction heavy blacks 10. graphic & feudal art directions graphic & feudal art comic-book siege art direction pack_17 medieval fantasy & dungeon zine graphic-and-feudal-art-directions medieval-fantasy-and-dungeon-zine graphic-and-feudal-art-directions comic-book-siege-art-direction"
+    },
+    {
+      "id": "SP17-212",
+      "name": "Kabuki Mask Supernatural Direction",
+      "styleAnchors": [
+        "Kabuki Mask Supernatural Direction",
+        "theatrical kabuki spirit art",
+        "painted face lines"
+      ],
+      "ref": "pack_17/SP17-212.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "graphic-and-feudal-art-directions",
+      "categoryName": "10. Graphic & Feudal Art Directions",
+      "domain": "theatrical kabuki spirit art",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "graphic-and-feudal-art-directions",
+        "theatrical-kabuki-spirit-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-212 kabuki mask supernatural direction theatrical kabuki spirit art painted face lines 10. graphic & feudal art directions graphic & feudal art theatrical kabuki spirit art pack_17 medieval fantasy & dungeon zine graphic-and-feudal-art-directions medieval-fantasy-and-dungeon-zine graphic-and-feudal-art-directions theatrical-kabuki-spirit-art"
+    },
+    {
+      "id": "SP17-213",
+      "name": "Mosaic Warfare Direction",
+      "styleAnchors": ["Mosaic Warfare Direction", "battle scenes in tile mosaic", "tesserae"],
+      "ref": "pack_17/SP17-213.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "graphic-and-feudal-art-directions",
+      "categoryName": "10. Graphic & Feudal Art Directions",
+      "domain": "battle scenes in tile mosaic",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "graphic-and-feudal-art-directions",
+        "battle-scenes-in-tile-mosaic"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-213 mosaic warfare direction battle scenes in tile mosaic tesserae 10. graphic & feudal art directions graphic & feudal art battle scenes in tile mosaic pack_17 medieval fantasy & dungeon zine graphic-and-feudal-art-directions medieval-fantasy-and-dungeon-zine graphic-and-feudal-art-directions battle-scenes-in-tile-mosaic"
+    },
+    {
+      "id": "SP17-214",
+      "name": "Miniature-Painting Battle Direction",
+      "styleAnchors": [
+        "Miniature-Painting Battle Direction",
+        "court miniature style battle scene",
+        "high horizon"
+      ],
+      "ref": "pack_17/SP17-214.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "graphic-and-feudal-art-directions",
+      "categoryName": "10. Graphic & Feudal Art Directions",
+      "domain": "court miniature style battle scene",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "graphic-and-feudal-art-directions",
+        "court-miniature-style-battle-scene"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-214 miniature-painting battle direction court miniature style battle scene high horizon 10. graphic & feudal art directions graphic & feudal art court miniature style battle scene pack_17 medieval fantasy & dungeon zine graphic-and-feudal-art-directions medieval-fantasy-and-dungeon-zine graphic-and-feudal-art-directions court-miniature-style-battle-scene"
+    },
+    {
+      "id": "SP17-215",
+      "name": "Red-and-Black Brush Feudal Direction",
+      "styleAnchors": [
+        "Red-and-Black Brush Feudal Direction",
+        "two-color brush feudal art",
+        "black and vermilion only"
+      ],
+      "ref": "pack_17/SP17-215.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "graphic-and-feudal-art-directions",
+      "categoryName": "10. Graphic & Feudal Art Directions",
+      "domain": "two-color brush feudal art",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "graphic-and-feudal-art-directions",
+        "two-color-brush-feudal-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-215 red-and-black brush feudal direction two-color brush feudal art black and vermilion only 10. graphic & feudal art directions graphic & feudal art two-color brush feudal art pack_17 medieval fantasy & dungeon zine graphic-and-feudal-art-directions medieval-fantasy-and-dungeon-zine graphic-and-feudal-art-directions two-color-brush-feudal-art"
+    },
+    {
+      "id": "SP17-216",
+      "name": "Stencil Poster Rebellion Direction",
+      "styleAnchors": [
+        "Stencil Poster Rebellion Direction",
+        "propaganda poster peasant revolt art",
+        "stencil poster"
+      ],
+      "ref": "pack_17/SP17-216.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "graphic-and-feudal-art-directions",
+      "categoryName": "10. Graphic & Feudal Art Directions",
+      "domain": "propaganda poster peasant revolt art",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "graphic-and-feudal-art-directions",
+        "propaganda-poster-peasant-revolt-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-216 stencil poster rebellion direction propaganda poster peasant revolt art stencil poster 10. graphic & feudal art directions graphic & feudal art propaganda poster peasant revolt art pack_17 medieval fantasy & dungeon zine graphic-and-feudal-art-directions medieval-fantasy-and-dungeon-zine graphic-and-feudal-art-directions propaganda-poster-peasant-revolt-art"
+    },
+    {
+      "id": "SP17-217",
+      "name": "Chunky Toy-Soldier Feudal Direction",
+      "styleAnchors": [
+        "Chunky Toy-Soldier Feudal Direction",
+        "toy-like feudal war art",
+        "toy soldiers"
+      ],
+      "ref": "pack_17/SP17-217.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "graphic-and-feudal-art-directions",
+      "categoryName": "10. Graphic & Feudal Art Directions",
+      "domain": "toy-like feudal war art",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "graphic-and-feudal-art-directions",
+        "toy-like-feudal-war-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-217 chunky toy-soldier feudal direction toy-like feudal war art toy soldiers 10. graphic & feudal art directions graphic & feudal art toy-like feudal war art pack_17 medieval fantasy & dungeon zine graphic-and-feudal-art-directions medieval-fantasy-and-dungeon-zine graphic-and-feudal-art-directions toy-like-feudal-war-art"
+    },
+    {
+      "id": "SP17-218",
+      "name": "Paper-Lantern Ghost Festival Direction",
+      "styleAnchors": [
+        "Paper-Lantern Ghost Festival Direction",
+        "lantern-lit spirit festival art",
+        "paper lanterns"
+      ],
+      "ref": "pack_17/SP17-218.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "graphic-and-feudal-art-directions",
+      "categoryName": "10. Graphic & Feudal Art Directions",
+      "domain": "lantern-lit spirit festival art",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "graphic-and-feudal-art-directions",
+        "lantern-lit-spirit-festival-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-218 paper-lantern ghost festival direction lantern-lit spirit festival art paper lanterns 10. graphic & feudal art directions graphic & feudal art lantern-lit spirit festival art pack_17 medieval fantasy & dungeon zine graphic-and-feudal-art-directions medieval-fantasy-and-dungeon-zine graphic-and-feudal-art-directions lantern-lit-spirit-festival-art"
+    },
+    {
+      "id": "SP17-219",
+      "name": "Engraved Broadside War Direction",
+      "styleAnchors": [
+        "Engraved Broadside War Direction",
+        "woodcut news broadsheet of battles",
+        "engraved reportage"
+      ],
+      "ref": "pack_17/SP17-219.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "graphic-and-feudal-art-directions",
+      "categoryName": "10. Graphic & Feudal Art Directions",
+      "domain": "woodcut news broadsheet of battles",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "graphic-and-feudal-art-directions",
+        "woodcut-news-broadsheet-of-battles"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-219 engraved broadside war direction woodcut news broadsheet of battles engraved reportage 10. graphic & feudal art directions graphic & feudal art woodcut news broadsheet of battles pack_17 medieval fantasy & dungeon zine graphic-and-feudal-art-directions medieval-fantasy-and-dungeon-zine graphic-and-feudal-art-directions woodcut-news-broadsheet-of-battles"
+    },
+    {
+      "id": "SP17-220",
+      "name": "Neon Oni Graphic Direction",
+      "styleAnchors": ["Neon Oni Graphic Direction", "neon-lit demon graphic art", "neon outlines"],
+      "ref": "pack_17/SP17-220.yaml",
+      "packId": "pack_17",
+      "packName": "Medieval Fantasy & Dungeon Zine",
+      "categoryId": "graphic-and-feudal-art-directions",
+      "categoryName": "10. Graphic & Feudal Art Directions",
+      "domain": "neon-lit demon graphic art",
+      "tags": [
+        "medieval-fantasy-and-dungeon-zine",
+        "graphic-and-feudal-art-directions",
+        "neon-lit-demon-graphic-art"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp17-220 neon oni graphic direction neon-lit demon graphic art neon outlines 10. graphic & feudal art directions graphic & feudal art neon-lit demon graphic art pack_17 medieval fantasy & dungeon zine graphic-and-feudal-art-directions medieval-fantasy-and-dungeon-zine graphic-and-feudal-art-directions neon-lit-demon-graphic-art"
     }
   ],
-  "totalPresetCount": 125
+  "totalPresetCount": 220
 }

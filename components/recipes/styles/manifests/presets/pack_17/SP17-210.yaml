@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP17-210
+packId: pack_17
+name: Cel-Shaded Viking Saga Direction
+styleAnchors:
+  - Cel-Shaded Viking Saga Direction
+  - toon-shaded norse saga art
+  - toon shading
+displayName: Cel-Shaded Viking Saga Direction
+category: 10. Graphic & Feudal Art Directions
+domain: toon-shaded norse saga art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - graphic-and-feudal-art-directions
+  - viking-cel
+  - feudal-art-direction
+  - portable-style-study
+visualDna:
+  aesthetic: 'Cel-shaded viking saga direction: bold toon-shaded Norse sagas with thick outlines, stylized beards and braids, longships and chunky stylized seas.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; render the subject with bold outlines and two-tone toon shading in a Norse saga setting.
+  color_and_tone: Cold sea blues, warm fire orange and wood browns.
+  lighting_and_shadow: Two-tone cel shadows and rim light, kept consistent across the whole image.
+  texture_and_material: Clean flat fills, chunky shapes and thick outlines.
+  camera_and_composition: Dynamic low angle on sea or shore, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with bold saga adventure.
+  rendering_and_quality: Clean cel-shaded finish, kept consistent across the whole image.
+  creative_brief: "Cel-shaded viking saga direction: bold toon-shaded Norse sagas with thick outlines, stylized beards and braids, longships and chunky stylized seas. Carry it through toon shading, thick outlines, longships, stylized braids. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: toon shading; thick outlines; longships; stylized braids
+avoidRules:
+  - gore
+  - interface or HUD
+  - existing game or film characters, logos or clan crests
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: graphic-and-feudal-art-directions
+  categoryName: 10. Graphic & Feudal Art Directions
+  tags:
+    - curation-v2
+    - graphic-and-feudal-art-directions
+    - viking-cel
+    - feudal-art-direction
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: toon-shaded norse saga art

@@ -1,0 +1,278 @@
+import type { Create, Spec } from '../tools/apply';
+import { STYLE_AVOID } from './_style';
+import { dna } from './_strict';
+
+// Graphic and feudal art directions: bold graphic and feudal-war art directions. The six originals
+// keep their reference titles (guarded) and get fully original card briefs; fourteen new
+// descriptor-named directions add woodblock spirit wars, wet-ink duels, heraldic flat tactics,
+// cel-shaded sagas, comic-ink sieges, kabuki supernatural masks, mosaic warfare, miniature-painting
+// battles, red-and-black brush feudalism, stencil rebellion posters, toy-soldier feudalism,
+// paper-lantern ghost festivals, engraved broadsides and neon oni graphics.
+const study = (
+  name: string,
+  domain: string,
+  tag: string,
+  fields: Parameters<typeof dna>[0],
+  avoid: string[],
+  briefs: [string, string, string],
+): Create => ({
+  name,
+  domain,
+  tags: [tag, 'feudal-art-direction', 'portable-style-study'],
+  dna: dna(fields),
+  avoid: [...avoid, 'gore', 'interface or HUD', 'existing game or film characters, logos or clan crests', ...STYLE_AVOID],
+  briefs,
+});
+
+const keep = 'Preserve the requested identity, count, pose and action with original characters';
+
+const spec: Spec = {
+  pack: 'pack_17',
+  category: '10. Graphic & Feudal Art Directions',
+  updates: {
+    'SP17-090': { briefs: [
+      'Striding out of a burning ruin with an oversized stone hammer, an original apocalypse rider with a sculpted heroic build is cut into forceful silhouette against a blood-orange sky. No readable text or logo.',
+      'With monumental shoulders and gauntlets the size of barrels, a fearsome war champion tries very carefully to pick up a single delicate flower. No readable text or logo.',
+      'Cut in hard ink shapes against a red sky, a gigantic abandoned war horse of armor stands alone on a hill with no rider. No readable text or logo.',
+    ] },
+    'SP17-091': { briefs: [
+      'Marching through a cramped pixel corridor beneath towering sacred arches, an original penitent in a thorned helm drags a relic shaped like a bell behind him. No readable text or logo.',
+      "Walking in a procession of severe carved pixel figures, one penitent has joined the wrong procession and is carrying a fish instead of a relic. No readable text or logo.",
+      'In a narrow pixel cathedral, a line of statues with grotesque faces leans forward over the path, and one statue has turned its head. No readable text or logo.',
+    ] },
+    'SP17-092': { briefs: [
+      'Standing in a burning feudal courtyard, an original swordswoman in layered lacquered armor raises a blade crackling with violet spirit energy as demons pour over the wall. No readable text or logo.',
+      'In a theatrical feudal castle, a proud warrior prepares for a supernatural duel while his opponent is a very small, very serious fox spirit. No readable text or logo.',
+      'Framed by dark castle beams, a paper screen glows with violet light, and the shadow behind it has horns. No readable text or logo.',
+    ] },
+    'SP17-093': { briefs: [
+      'Charging across a monumental battlefield below a fortress wall, an original armored warband crashes into a shield line as siege towers roll forward through the smoke. No readable text or logo.',
+      'On a vast battlefield, a massive armored warrior has stopped mid-charge to help a lost goat off the field. No readable text or logo.',
+      'On a silent battlefield below a massive fortress, three battered faction banners stand in the mud, and none of their bearers remain. No readable text or logo.',
+    ] },
+    'SP17-094': { briefs: [
+      'Leaping into a temple arena under a theatrical sky, an original masked fighter in tailored silk and steel unleashes a whip of blue fire at a stone-skinned rival. No readable text or logo.',
+      'Before a tournament crowd, a fearsome original fighter strikes a dramatic pose while his supernatural technique produces only a small puff of smoke. No readable text or logo.',
+      'In an empty torch-lit arena, a fighter\'s ceremonial mask lies on the floor, and its eyes are still glowing. No readable text or logo.',
+    ] },
+    'SP17-095': { briefs: [
+      'Hunched over a flickering torch at the mouth of a crypt, an original band of four wiry adventurers with hooked profiles and weary faces stares into the dark as tentacles curl from the ground. No readable text or logo.',
+      "With restless hand-drawn line and heavy black masses, a hunched plague healer tries to treat a knight who insists he is fine while on fire. No readable text or logo.",
+      'Cut by bold black shapes, a lone jester sits on a crypt step, and his shadow on the wall is laughing without him. No readable text or logo.',
+    ] },
+  },
+  creates: [
+    study('Woodblock Spirit-War Direction', 'woodblock-style supernatural battle art', 'woodblock-war', {
+      aesthetic: 'Woodblock spirit-war direction: battle scenes styled like Japanese woodblock prints, bold outlines, flat color, patterned robes and giant spirit creatures across triptych panels.',
+      subject_treatment: `${keep}; render the subject with bold woodblock outlines, flat color and patterned clothing.`,
+      color_and_tone: "Prussian blue, vermilion, ochre and muted greens, kept consistent across the whole image.",
+      lighting_and_shadow: "Flat color with gradated sky bands, kept consistent across the whole image.",
+      texture_and_material: "Woodgrain texture, bold keylines and patterned textiles, kept consistent across the whole image.",
+      camera_and_composition: "Wide triptych-like composition with a giant creature, kept consistent across the whole image.",
+      atmosphere_and_mood: 'Keep the requested mood with dramatic legendary battle.',
+      rendering_and_quality: "Crisp woodblock look with rich pattern, kept consistent across the whole image.",
+      key_features: 'woodblock outlines; flat color; patterned robes; giant spirit',
+    }, ['readable calligraphy'], [
+      'Rising over a castle across three panels, a giant skeleton spirit leans over a samurai warband while the flat blue sky behind it is streaked with vermilion clouds. No readable text or logo.',
+      "In bold flat outlines, a warrior faces a fearsome giant toad spirit that is more interested in catching a fly. No readable text or logo.",
+      "Drifting across a flat patterned landscape, a line of paper lanterns follows a river that flows uphill toward a silent mountain shrine. No readable text or logo.",
+    ]),
+    study('Wet-Ink Samurai Duel Direction', 'sumi-ink duel art direction', 'ink-duel', {
+      aesthetic: 'Wet-ink samurai duel direction: stark duels painted in splashing black ink on white, one drop of red, speed lines of brush and vast empty space.',
+      subject_treatment: `${keep}; render the subject in splashing black brush ink with vast white space and one red accent.`,
+      color_and_tone: 'Black ink on white with a single red accent.',
+      lighting_and_shadow: "Pure ink contrast without modeling, kept consistent across the whole image.",
+      texture_and_material: 'Wet splashes, dry-brush speed streaks and rice paper.',
+      camera_and_composition: "Two figures far apart with empty space, kept consistent across the whole image.",
+      atmosphere_and_mood: 'Keep the requested mood with tense stillness before motion.',
+      rendering_and_quality: "Expressive ink with strong negative space, kept consistent across the whole image.",
+      key_features: 'splashing ink; vast white space; single red accent; duel',
+    }, ['readable calligraphy'], [
+      'Frozen a heartbeat after the draw, two swordsmen stand far apart in splashing black ink, and a single red maple leaf drifts down between them. No readable text or logo.',
+      'In wet splashing ink, two duelists face off dramatically in the snow, while a small cat walks slowly across the space between them. No readable text or logo.',
+      'Across a white page of empty space, one brushed figure stands with a drawn blade, and his opponent is only a splash of ink. No readable text or logo.',
+    ]),
+    study('Heraldic Flat-Color Tactics Direction', 'flat heraldic strategy art direction', 'heraldic-tactics', {
+      aesthetic: 'Heraldic flat-color tactics direction: strategy art where armies are rendered as flat heraldic colors and shapes on a map-like battlefield with clean banners.',
+      subject_treatment: `${keep}; render the subject as flat heraldic shapes and colors on a clean battlefield.`,
+      color_and_tone: 'Heraldic reds, blues, golds and greens on parchment.',
+      lighting_and_shadow: "Flat with no shading, kept consistent across the whole image.",
+      texture_and_material: "Clean flat shapes, banners and parchment ground, kept consistent across the whole image.",
+      camera_and_composition: "Top-down or angled field with banners, kept consistent across the whole image.",
+      atmosphere_and_mood: 'Keep the requested mood with orderly strategic clarity.',
+      rendering_and_quality: "Crisp graphic design with no text, kept consistent across the whole image.",
+      key_features: 'flat heraldic color; banners; map-like field; clean shapes',
+    }, ['readable mottoes'], [
+      'Seen from above on a parchment field, a blue army of flat heraldic lions closes around a red fortress while a gold dragon banner rises over the hill. No readable text or logo.',
+      "On a flat heraldic battlefield, two armies line up perfectly, except for one small green unit that is marching toward the picnic. No readable text or logo.",
+      "Painted on a map-like field of flat colors, a small grey unit with no heraldry at all has appeared in the middle of both armies' territory. No readable text or logo.",
+    ]),
+    study('Cel-Shaded Viking Saga Direction', 'toon-shaded norse saga art', 'viking-cel', {
+      aesthetic: 'Cel-shaded viking saga direction: bold toon-shaded Norse sagas with thick outlines, stylized beards and braids, longships and chunky stylized seas.',
+      subject_treatment: `${keep}; render the subject with bold outlines and two-tone toon shading in a Norse saga setting.`,
+      color_and_tone: 'Cold sea blues, warm fire orange and wood browns.',
+      lighting_and_shadow: "Two-tone cel shadows and rim light, kept consistent across the whole image.",
+      texture_and_material: 'Clean flat fills, chunky shapes and thick outlines.',
+      camera_and_composition: "Dynamic low angle on sea or shore, kept consistent across the whole image.",
+      atmosphere_and_mood: 'Keep the requested mood with bold saga adventure.',
+      rendering_and_quality: "Clean cel-shaded finish, kept consistent across the whole image.",
+      key_features: 'toon shading; thick outlines; longships; stylized braids',
+    }, [], [
+      'Riding a stylized wave on a dragon-prowed longship, a shield-maiden with enormous braids faces a sea serpent whose head curls out of a chunky cel-shaded sea. No readable text or logo.',
+      'On a toon-shaded shore, a mighty raider tries to look fierce while his helmet keeps sliding over his eyes. No readable text or logo.',
+      "Beached on a stylized shore at night, a longship's carved dragon prow is dripping seawater from its open mouth onto the sand. No readable text or logo.",
+    ]),
+    study('Comic-Ink Siege Direction', 'comic-book siege art direction', 'comic-siege', {
+      aesthetic: 'Comic-ink siege direction: medieval sieges drawn like bold graphic-novel splash pages, heavy blacks, speed lines, dramatic foreshortening and flat color.',
+      subject_treatment: `${keep}; stage the subject in a dramatic siege with heavy comic inks and foreshortening.`,
+      color_and_tone: 'Heavy black with flat fire orange and stone grey.',
+      lighting_and_shadow: "Hard inked shadows and fire light, kept consistent across the whole image.",
+      texture_and_material: 'Bold ink lines, speed lines and flat color.',
+      camera_and_composition: "Extreme foreshortened splash composition, kept consistent across the whole image.",
+      atmosphere_and_mood: "Keep the requested mood with explosive momentum, kept consistent across the whole image.",
+      rendering_and_quality: "Crisp comic inking without lettering, kept consistent across the whole image.",
+      key_features: 'heavy blacks; speed lines; foreshortening; siege splash',
+    }, ['speech bubbles or lettering'], [
+      'Hurtling toward the viewer in extreme foreshortening, a flaming catapult stone smashes through a battlement as defenders dive away in heavy black speed lines. No readable text or logo.',
+      "Swinging heroically on a rope across the fortress gate, a defender realizes too late that the rope is tied to the portcullis, all in bold comic ink. No readable text or logo.",
+      "Leaning against an empty rampart in heavy inked shadow, a siege ladder waits while a hand reaches over the top from the inside. No readable text or logo.",
+    ]),
+    study('Kabuki Mask Supernatural Direction', 'theatrical kabuki spirit art', 'kabuki-spirit', {
+      aesthetic: 'Kabuki mask supernatural direction: theatrical stage-lit scenes with bold kumadori face paint, dramatic frozen poses, flowing robes and spirit effects on a stage.',
+      subject_treatment: `${keep}; freeze the subject in a dramatic theatrical pose with bold painted face lines.`,
+      color_and_tone: 'White face paint, red and indigo lines, gold stage light.',
+      lighting_and_shadow: "Stage footlights and dramatic spotlight, kept consistent across the whole image.",
+      texture_and_material: 'Painted wood stage, silk robes and paint strokes.',
+      camera_and_composition: "Frontal stage composition with a frozen pose, kept consistent across the whole image.",
+      atmosphere_and_mood: 'Keep the requested mood with theatrical supernatural drama.',
+      rendering_and_quality: "Bold theatrical clarity, kept consistent across the whole image.",
+      key_features: 'painted face lines; frozen pose; stage light; flowing robes',
+    }, [], [
+      'Frozen in a dramatic stage pose under gold footlights, a fox spirit in flowing robes and red face paint rises through a trapdoor as paper snow falls. No readable text or logo.',
+      'On a lit stage, a fierce warrior in bold face paint strikes his most dramatic pose, and his wig has slid slightly sideways. No readable text or logo.',
+      "Lit by a single spotlight on a wooden stage, a painted mask has been set on a stand, and faint breath fogs the air just in front of its lips. No readable text or logo.",
+    ]),
+    study('Mosaic Warfare Direction', 'battle scenes in tile mosaic', 'mosaic-war', {
+      aesthetic: 'Mosaic warfare direction: battles rendered as glittering tile mosaics, gold tesserae skies, stylized armies and heroic figures built from small stones and glass.',
+      subject_treatment: `${keep}; build the subject from small mosaic tiles with a glittering gold ground.`,
+      color_and_tone: 'Gold tesserae, deep blues, reds and marble whites.',
+      lighting_and_shadow: "Glitter from angled glass tiles, kept consistent across the whole image.",
+      texture_and_material: 'Stone and glass tesserae, grout lines and gold.',
+      camera_and_composition: "Frontal frieze composition, kept consistent across the whole image.",
+      atmosphere_and_mood: 'Keep the requested mood with timeless imperial triumph.',
+      rendering_and_quality: "Convincing mosaic tile texture, kept consistent across the whole image.",
+      key_features: 'tesserae; gold ground; stylized armies; frieze',
+    }, [], [
+      'Built from glittering tiles on a gold ground, an emperor on a rearing horse leads a charge across a mosaic frieze as an elephant army answers from the other side. No readable text or logo.',
+      "Tucked into the corner of a grand glittering battle mosaic, one small soldier has been set by the craftsman in the middle of an enormous yawn. No readable text or logo.",
+      'In a glittering mosaic of a battle, one tile in the center is missing, exactly where the enemy general\'s face should be. No readable text or logo.',
+    ]),
+    study('Miniature-Painting Battle Direction', 'court miniature style battle scene', 'miniature-battle', {
+      aesthetic: 'Miniature-painting battle direction: battles painted like court miniatures, high horizons, tiny precise figures, patterned tents and elephants and flat golden skies.',
+      subject_treatment: `${keep}; paint the subject with tiny precise figures in a high-horizon court miniature battle.`,
+      color_and_tone: 'Jewel tones with gold sky and patterned textiles.',
+      lighting_and_shadow: "Even light with no cast shadows, kept consistent across the whole image.",
+      texture_and_material: "Fine opaque pigment and gold detail, kept consistent across the whole image.",
+      camera_and_composition: "High horizon with stacked groups of figures, kept consistent across the whole image.",
+      atmosphere_and_mood: 'Keep the requested mood with courtly epic splendor.',
+      rendering_and_quality: "Exquisite small detail, no calligraphy, kept consistent across the whole image.",
+      key_features: 'high horizon; tiny figures; patterned tents; gold sky',
+    }, ['readable calligraphy', 'cultural stereotypes'], [
+      'Beneath a flat golden sky, armies of tiny precise horsemen and war elephants clash on a high green hill while a prince watches from a patterned tent. No readable text or logo.',
+      'In a delicate court battle painting, one tiny soldier has stopped fighting to pick flowers from the patterned meadow. No readable text or logo.',
+      "Painted on a high golden battlefield, the tiny figures cast long shadows toward the sun, and no one in the painting has noticed. No readable text or logo.",
+    ]),
+    study('Red-and-Black Brush Feudal Direction', 'two-color brush feudal art', 'red-black-brush', {
+      aesthetic: 'Red-and-black brush feudal direction: stark feudal warfare painted only in black and vermilion brush strokes on pale paper, bold gesture and silhouette.',
+      subject_treatment: `${keep}; paint the subject in black and vermilion brush strokes only.`,
+      color_and_tone: "Black and vermilion on pale paper, kept consistent across the whole image.",
+      lighting_and_shadow: "Implied by ink density, kept consistent across the whole image.",
+      texture_and_material: "Brush strokes, dry-brush and paper texture, kept consistent across the whole image.",
+      camera_and_composition: "Bold silhouette-driven composition, kept consistent across the whole image.",
+      atmosphere_and_mood: 'Keep the requested mood with fierce martial intensity.',
+      rendering_and_quality: "Expressive two-color brushwork, kept consistent across the whole image.",
+      key_features: 'black and vermilion only; brush gesture; silhouettes; pale paper',
+    }, ['readable calligraphy'], [
+      'Painted in black and vermilion strokes, an armored general on a rearing horse leads a charge while a huge red sun sits behind the hill. No readable text or logo.',
+      'In bold black and red brushwork, a mighty warlord sits in dignity while a red dragonfly lands on the tip of his helmet crest. No readable text or logo.',
+      "Brushed in black and red ink, a lone rider crosses a rainy plain, and the rain falls around him but never touches him. No readable text or logo.",
+    ]),
+    study('Stencil Poster Rebellion Direction', 'propaganda poster peasant revolt art', 'rebellion-poster', {
+      aesthetic: 'Stencil poster rebellion direction: peasant revolts depicted as bold stencil propaganda posters, flat two or three colors, raised pitchforks and heroic diagonals.',
+      subject_treatment: `${keep}; render the subject as a bold stencil poster with heroic diagonals.`,
+      color_and_tone: "Red, black and cream flat colors, kept consistent across the whole image.",
+      lighting_and_shadow: "Hard graphic shadow shapes, kept consistent across the whole image.",
+      texture_and_material: "Stencil edges, spray grain and poster paper, kept consistent across the whole image.",
+      camera_and_composition: "Strong diagonal with raised tools or weapons, kept consistent across the whole image.",
+      atmosphere_and_mood: 'Keep the requested mood with defiant collective energy.',
+      rendering_and_quality: "Crisp graphic poster without slogans, kept consistent across the whole image.",
+      key_features: 'stencil poster; flat colors; heroic diagonal; raised pitchforks',
+    }, ['slogans or text'], [
+      'Rising along a heroic diagonal in red, black and cream, a crowd of peasants lifts pitchforks toward a looming castle while a giant fist breaks its tower. No readable text or logo.',
+      'In a bold stencil poster, a heroic peasant raises her pitchfork, and on its tines is a very surprised sausage. No readable text or logo.',
+      "Printed in flat black and red, a lord's keep stands on a hill, and its shadow on the ground is shaped like a crowd of people. No readable text or logo.",
+    ]),
+    study('Chunky Toy-Soldier Feudal Direction', 'toy-like feudal war art', 'toy-soldier', {
+      aesthetic: 'Chunky toy-soldier feudal direction: feudal warfare rendered as chunky painted toy soldiers and wooden castles, glossy paint, peg bodies and tabletop scale.',
+      subject_treatment: `${keep}; render the subject as chunky glossy painted toys on a tabletop battlefield.`,
+      color_and_tone: "Bright glossy primaries and wood tones, kept consistent across the whole image.",
+      lighting_and_shadow: "Warm tabletop light with small shadows, kept consistent across the whole image.",
+      texture_and_material: "Glossy enamel paint, wood grain and chips, kept consistent across the whole image.",
+      camera_and_composition: "Low tabletop angle among the toys, kept consistent across the whole image.",
+      atmosphere_and_mood: 'Keep the requested mood with playful toybox warfare.',
+      rendering_and_quality: "Convincing toy material and scale, kept consistent across the whole image.",
+      key_features: 'toy soldiers; wooden castle; glossy paint; tabletop scale',
+    }, [], [
+      "Advancing across a playroom rug, an army of chunky glossy toy knights storms a wooden fortress while a real cat looms over its walls like a giant. No readable text or logo.",
+      'On a tabletop battlefield, a chunky wooden general has fallen over and the rest of the toy army has stopped to help him up. No readable text or logo.',
+      "Lined up on a dim playroom floor, a regiment of toy soldiers has a new recruit at the end, carved from wood that no one in the house recognizes. No readable text or logo.",
+    ]),
+    study('Paper-Lantern Ghost Festival Direction', 'lantern-lit spirit festival art', 'lantern-festival', {
+      aesthetic: 'Paper-lantern ghost festival direction: night festivals of floating paper lanterns where the living and spirits mingle, warm glows, masks and rivers of light.',
+      subject_treatment: `${keep}; set the subject within a night festival of floating paper lanterns and wandering spirits.`,
+      color_and_tone: 'Warm lantern orange and gold against deep indigo.',
+      lighting_and_shadow: "Soft glowing lantern light, kept consistent across the whole image.",
+      texture_and_material: "Paper lanterns, silk, water reflections and smoke, kept consistent across the whole image.",
+      camera_and_composition: "Street or river view filled with lanterns, kept consistent across the whole image.",
+      atmosphere_and_mood: 'Keep the requested mood with bittersweet festive mystery.',
+      rendering_and_quality: "Painterly glow with clear figures, kept consistent across the whole image.",
+      key_features: 'paper lanterns; night festival; spirits; river of light',
+    }, [], [
+      'Drifting down a river of floating paper lanterns, a boat carries a masked festival crowd where half the guests are translucent spirits holding their own lanterns. No readable text or logo.',
+      'At a lantern festival, a spirit has returned for the night only to spend the whole evening trying to win a goldfish at a game stall. No readable text or logo.',
+      "Floating over a festival street, one lantern glows blue instead of gold, and the spirits in the crowd step politely out of its way. No readable text or logo.",
+    ]),
+    study('Engraved Broadside War Direction', 'woodcut news broadsheet of battles', 'broadside-war', {
+      aesthetic: 'Engraved broadside war direction: battles shown like early printed news broadsides, crowded engraved figures, smoke rendered in hatching and dramatic reportage.',
+      subject_treatment: `${keep}; show the subject as crowded engraved reportage of a battle.`,
+      color_and_tone: 'Black ink on aged paper with optional hand tint.',
+      lighting_and_shadow: "Hatched smoke and cross-hatched shadows, kept consistent across the whole image.",
+      texture_and_material: "Engraved lines, paper grain and ink density, kept consistent across the whole image.",
+      camera_and_composition: "Wide crowded battle panorama, kept consistent across the whole image.",
+      atmosphere_and_mood: 'Keep the requested mood with breathless historical reportage.',
+      rendering_and_quality: "Dense engraved detail without headlines, kept consistent across the whole image.",
+      key_features: 'engraved reportage; hatched smoke; crowded battle; aged paper',
+    }, ['headlines or text'], [
+      "Wading through the river on the horizon, a giant appears above a vast battle raging around a burning windmill, crowded figures and hatched cannon smoke filling the sheet. No readable text or logo.",
+      'In a dense engraved battle scene, the artist has added a tiny detail of two soldiers stopping mid-battle to share a pie. No readable text or logo.',
+      "Amid a crowded battlefield of engraved soldiers and cannon smoke, the engraver's lines simply stop in one small area, leaving a man-shaped hole in the page. No readable text or logo.",
+    ]),
+    study('Neon Oni Graphic Direction', 'neon-lit demon graphic art', 'neon-oni', {
+      aesthetic: 'Neon oni graphic direction: bold graphic art of horned demons and warriors in neon magenta and cyan against black, flat shapes, sharp outlines and glowing tattoos.',
+      subject_treatment: `${keep}; render the subject in flat bold shapes with glowing neon outlines against black.`,
+      color_and_tone: 'Black with neon magenta, cyan and acid yellow.',
+      lighting_and_shadow: "Neon glow edges with flat fills, kept consistent across the whole image.",
+      texture_and_material: "Flat graphic fills, glow lines and grain, kept consistent across the whole image.",
+      camera_and_composition: "Dynamic central figure against black, kept consistent across the whole image.",
+      atmosphere_and_mood: 'Keep the requested mood with electric supernatural menace.',
+      rendering_and_quality: "Crisp graphic glow, kept consistent across the whole image.",
+      key_features: 'neon outlines; horned demons; black ground; flat shapes',
+    }, [], [
+      'Crouched on a black rooftop outlined in neon magenta, a horned demon warrior holds a glowing club as cyan rain falls across the city below. No readable text or logo.',
+      "Struggling to fit its enormous glowing horns through a small doorway, a fearsome demon is outlined in hot magenta against the black. No readable text or logo.",
+      "Floating against pure black, a single pair of glowing magenta horns shines in the dark, with nothing at all visible beneath them. No readable text or logo.",
+    ]),
+  ],
+};
+
+export default spec;

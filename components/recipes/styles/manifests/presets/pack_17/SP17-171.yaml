@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP17-171
+packId: pack_17
+name: Weird-Fiction Duotone Plate
+styleAnchors:
+  - Weird-Fiction Duotone Plate
+  - eerie two-tone magazine plate
+  - duotone
+displayName: Weird-Fiction Duotone Plate
+category: 7. Pulp Fantasy Painting
+domain: eerie two-tone magazine plate
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - pulp-fantasy-painting
+  - weird-duotone
+  - pulp-fantasy
+  - portable-style-study
+visualDna:
+  aesthetic: 'Weird-fiction duotone plate: eerie magazine illustrations in black and a single muted tone, cosmic horrors, ancient towns and wide-eyed scholars in dry brush.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original adult characters; render the subject in eerie dry brush with black and one muted tone.
+  color_and_tone: Black and a muted green or ochre second tone.
+  lighting_and_shadow: Strange underlight and deep shadow, kept consistent across the whole image.
+  texture_and_material: Dry brush, stipple and aged pulp paper, kept consistent across the whole image.
+  camera_and_composition: Unsettling angle with a looming presence, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with cosmic unease, kept consistent across the whole image.
+  rendering_and_quality: Eerie economical illustration, kept consistent across the whole image.
+  creative_brief: "Weird-fiction duotone plate: eerie magazine illustrations in black and a single muted tone, cosmic horrors, ancient towns and wide-eyed scholars in dry brush. Carry it through duotone, dry brush, cosmic horror, aged paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: duotone; dry brush; cosmic horror; aged paper
+avoidRules:
+  - gore
+  - title lettering
+  - existing franchise heroes
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: pulp-fantasy-painting
+  categoryName: 7. Pulp Fantasy Painting
+  tags:
+    - curation-v2
+    - pulp-fantasy-painting
+    - weird-duotone
+    - pulp-fantasy
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: eerie two-tone magazine plate

@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP17-216
+packId: pack_17
+name: Stencil Poster Rebellion Direction
+styleAnchors:
+  - Stencil Poster Rebellion Direction
+  - propaganda poster peasant revolt art
+  - stencil poster
+displayName: Stencil Poster Rebellion Direction
+category: 10. Graphic & Feudal Art Directions
+domain: propaganda poster peasant revolt art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - graphic-and-feudal-art-directions
+  - rebellion-poster
+  - feudal-art-direction
+  - portable-style-study
+visualDna:
+  aesthetic: 'Stencil poster rebellion direction: peasant revolts depicted as bold stencil propaganda posters, flat two or three colors, raised pitchforks and heroic diagonals.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; render the subject as a bold stencil poster with heroic diagonals.
+  color_and_tone: Red, black and cream flat colors, kept consistent across the whole image.
+  lighting_and_shadow: Hard graphic shadow shapes, kept consistent across the whole image.
+  texture_and_material: Stencil edges, spray grain and poster paper, kept consistent across the whole image.
+  camera_and_composition: Strong diagonal with raised tools or weapons, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with defiant collective energy.
+  rendering_and_quality: Crisp graphic poster without slogans, kept consistent across the whole image.
+  creative_brief: "Stencil poster rebellion direction: peasant revolts depicted as bold stencil propaganda posters, flat two or three colors, raised pitchforks and heroic diagonals. Carry it through stencil poster, flat colors, heroic diagonal, raised pitchforks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: stencil poster; flat colors; heroic diagonal; raised pitchforks
+avoidRules:
+  - slogans or text
+  - gore
+  - interface or HUD
+  - existing game or film characters, logos or clan crests
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: slogans or text, gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: graphic-and-feudal-art-directions
+  categoryName: 10. Graphic & Feudal Art Directions
+  tags:
+    - curation-v2
+    - graphic-and-feudal-art-directions
+    - rebellion-poster
+    - feudal-art-direction
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: propaganda poster peasant revolt art

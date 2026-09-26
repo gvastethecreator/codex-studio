@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP17-173
+packId: pack_17
+name: Burnt Sienna Underpainting
+styleAnchors:
+  - Burnt Sienna Underpainting
+  - monochrome brown oil underlayer
+  - monochrome sienna
+displayName: Burnt Sienna Underpainting
+category: 7. Pulp Fantasy Painting
+domain: monochrome brown oil underlayer
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - pulp-fantasy-painting
+  - sienna-underpainting
+  - pulp-fantasy
+  - portable-style-study
+visualDna:
+  aesthetic: 'Burnt sienna underpainting: the first monochrome stage of a fantasy oil painting, warm brown values scrubbed onto canvas, wiped highlights and bold compositional masses.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original adult characters; establish the subject in warm brown values only, as the first stage of an oil painting.
+  color_and_tone: Burnt sienna and raw umber values on white canvas.
+  lighting_and_shadow: Wiped-out lights and scrubbed shadows, kept consistent across the whole image.
+  texture_and_material: Thin scrubbed oil, rag wipes and canvas weave.
+  camera_and_composition: Strong mass composition, details unresolved, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with raw preparatory force.
+  rendering_and_quality: Unfinished by design, strong value design, kept consistent across the whole image.
+  creative_brief: "Burnt sienna underpainting: the first monochrome stage of a fantasy oil painting, warm brown values scrubbed onto canvas, wiped highlights and bold compositional masses. Carry it through monochrome sienna, wiped highlights, scrubbed oil, unfinished. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: monochrome sienna; wiped highlights; scrubbed oil; unfinished
+avoidRules:
+  - gore
+  - title lettering
+  - existing franchise heroes
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: pulp-fantasy-painting
+  categoryName: 7. Pulp Fantasy Painting
+  tags:
+    - curation-v2
+    - pulp-fantasy-painting
+    - sienna-underpainting
+    - pulp-fantasy
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: monochrome brown oil underlayer

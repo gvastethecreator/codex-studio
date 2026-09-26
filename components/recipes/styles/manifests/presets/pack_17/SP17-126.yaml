@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP17-126
+packId: pack_17
+name: Relic Airship Armada
+styleAnchors:
+  - Relic Airship Armada
+  - holy war airship fleet
+  - cathedral airships
+displayName: Relic Airship Armada
+category: 4. Rune-Tech & Apocalyptic Warfronts
+domain: holy war airship fleet
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - rune-tech-and-apocalyptic-warfronts
+  - relic-airship
+  - rune-tech
+  - portable-style-study
+visualDna:
+  aesthetic: 'Relic airship armada: fleets of cathedral-shaped airships with stained sails, bell towers and censers, crossing smoky skies in medieval formation.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; set the subject among or aboard ornate cathedral airships in a smoky sky.
+  color_and_tone: Brass, soot black and stained-glass reds and blues against dusky skies.
+  lighting_and_shadow: Backlit smoke, glowing windows and golden sunset rims.
+  texture_and_material: Riveted brass hulls, weathered canvas, carved stone and bells.
+  camera_and_composition: Wide sky vista with ships in layered formation.
+  atmosphere_and_mood: Keep the requested mood with solemn airborne crusade.
+  rendering_and_quality: Detailed painterly finish with clear ship silhouettes, kept consistent across the whole image.
+  creative_brief: "Relic airship armada: fleets of cathedral-shaped airships with stained sails, bell towers and censers, crossing smoky skies in medieval formation. Carry it through cathedral airships, stained sails, smoky sky, formation. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: cathedral airships; stained sails; smoky sky; formation
+avoidRules:
+  - gore
+  - readable runes or text
+  - existing franchise armor or emblems
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: gore, readable runes or text, existing franchise armor or emblems, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: rune-tech-and-apocalyptic-warfronts
+  categoryName: 4. Rune-Tech & Apocalyptic Warfronts
+  domain: holy war airship fleet
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - rune-tech-and-apocalyptic-warfronts
+    - relic-airship
+    - rune-tech
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

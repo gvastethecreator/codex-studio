@@ -115,6 +115,12 @@ categories:
       - pack_17/SP17-030.yaml
       - pack_17/SP17-031.yaml
       - pack_17/SP17-032.yaml
+      - pack_17/SP17-126.yaml
+      - pack_17/SP17-127.yaml
+      - pack_17/SP17-128.yaml
+      - pack_17/SP17-129.yaml
+      - pack_17/SP17-130.yaml
+      - pack_17/SP17-131.yaml
   - id: grimdark-game-systems-and-tabletop
     name: 5. Grimdark Game Systems & Tabletop
     presetRefs:
@@ -127,17 +133,63 @@ categories:
       - pack_17/SP17-070.yaml
       - pack_17/SP17-071.yaml
       - pack_17/SP17-072.yaml
+      - pack_17/SP17-132.yaml
+      - pack_17/SP17-133.yaml
+      - pack_17/SP17-134.yaml
+      - pack_17/SP17-135.yaml
+      - pack_17/SP17-136.yaml
+      - pack_17/SP17-137.yaml
+      - pack_17/SP17-138.yaml
+      - pack_17/SP17-139.yaml
+      - pack_17/SP17-140.yaml
+      - pack_17/SP17-141.yaml
+      - pack_17/SP17-142.yaml
   - id: dungeon-zine-assemblage-and-stampwork
     name: 6. Dungeon Zine Assemblage & Stampwork
     presetRefs:
       - pack_17/SP17-074.yaml
       - pack_17/SP17-075.yaml
       - pack_17/SP17-076.yaml
+      - pack_17/SP17-143.yaml
+      - pack_17/SP17-144.yaml
+      - pack_17/SP17-145.yaml
+      - pack_17/SP17-146.yaml
+      - pack_17/SP17-147.yaml
+      - pack_17/SP17-148.yaml
+      - pack_17/SP17-149.yaml
+      - pack_17/SP17-150.yaml
+      - pack_17/SP17-151.yaml
+      - pack_17/SP17-152.yaml
+      - pack_17/SP17-153.yaml
+      - pack_17/SP17-154.yaml
+      - pack_17/SP17-155.yaml
+      - pack_17/SP17-156.yaml
+      - pack_17/SP17-157.yaml
+      - pack_17/SP17-158.yaml
+      - pack_17/SP17-159.yaml
   - id: pulp-fantasy-painting
     name: 7. Pulp Fantasy Painting
     presetRefs:
       - pack_17/SP17-077.yaml
       - pack_17/SP17-078.yaml
+      - pack_17/SP17-160.yaml
+      - pack_17/SP17-161.yaml
+      - pack_17/SP17-162.yaml
+      - pack_17/SP17-163.yaml
+      - pack_17/SP17-164.yaml
+      - pack_17/SP17-165.yaml
+      - pack_17/SP17-166.yaml
+      - pack_17/SP17-167.yaml
+      - pack_17/SP17-168.yaml
+      - pack_17/SP17-169.yaml
+      - pack_17/SP17-170.yaml
+      - pack_17/SP17-171.yaml
+      - pack_17/SP17-172.yaml
+      - pack_17/SP17-173.yaml
+      - pack_17/SP17-174.yaml
+      - pack_17/SP17-175.yaml
+      - pack_17/SP17-176.yaml
+      - pack_17/SP17-177.yaml
   - id: medieval-fantasy-drawing-media
     name: 8. Medieval Fantasy Drawing Media
     presetRefs:
@@ -146,6 +198,21 @@ categories:
       - pack_17/SP17-081.yaml
       - pack_17/SP17-082.yaml
       - pack_17/SP17-083.yaml
+      - pack_17/SP17-178.yaml
+      - pack_17/SP17-179.yaml
+      - pack_17/SP17-180.yaml
+      - pack_17/SP17-181.yaml
+      - pack_17/SP17-182.yaml
+      - pack_17/SP17-183.yaml
+      - pack_17/SP17-184.yaml
+      - pack_17/SP17-185.yaml
+      - pack_17/SP17-186.yaml
+      - pack_17/SP17-187.yaml
+      - pack_17/SP17-188.yaml
+      - pack_17/SP17-189.yaml
+      - pack_17/SP17-190.yaml
+      - pack_17/SP17-191.yaml
+      - pack_17/SP17-192.yaml
   - id: gothic-and-dungeon-art-directions
     name: 9. Gothic & Dungeon Art Directions
     presetRefs:
@@ -155,6 +222,20 @@ categories:
       - pack_17/SP17-087.yaml
       - pack_17/SP17-088.yaml
       - pack_17/SP17-089.yaml
+      - pack_17/SP17-193.yaml
+      - pack_17/SP17-194.yaml
+      - pack_17/SP17-195.yaml
+      - pack_17/SP17-196.yaml
+      - pack_17/SP17-197.yaml
+      - pack_17/SP17-198.yaml
+      - pack_17/SP17-199.yaml
+      - pack_17/SP17-200.yaml
+      - pack_17/SP17-201.yaml
+      - pack_17/SP17-202.yaml
+      - pack_17/SP17-203.yaml
+      - pack_17/SP17-204.yaml
+      - pack_17/SP17-205.yaml
+      - pack_17/SP17-206.yaml
   - id: graphic-and-feudal-art-directions
     name: 10. Graphic & Feudal Art Directions
     presetRefs:
@@ -164,6 +245,20 @@ categories:
       - pack_17/SP17-093.yaml
       - pack_17/SP17-094.yaml
       - pack_17/SP17-095.yaml
+      - pack_17/SP17-207.yaml
+      - pack_17/SP17-208.yaml
+      - pack_17/SP17-209.yaml
+      - pack_17/SP17-210.yaml
+      - pack_17/SP17-211.yaml
+      - pack_17/SP17-212.yaml
+      - pack_17/SP17-213.yaml
+      - pack_17/SP17-214.yaml
+      - pack_17/SP17-215.yaml
+      - pack_17/SP17-216.yaml
+      - pack_17/SP17-217.yaml
+      - pack_17/SP17-218.yaml
+      - pack_17/SP17-219.yaml
+      - pack_17/SP17-220.yaml
 presetRefs:
   - pack_17/SP17-001.yaml
   - pack_17/SP17-073.yaml
@@ -259,6 +354,12 @@ presetRefs:
   - pack_17/SP17-030.yaml
   - pack_17/SP17-031.yaml
   - pack_17/SP17-032.yaml
+  - pack_17/SP17-126.yaml
+  - pack_17/SP17-127.yaml
+  - pack_17/SP17-128.yaml
+  - pack_17/SP17-129.yaml
+  - pack_17/SP17-130.yaml
+  - pack_17/SP17-131.yaml
   - pack_17/SP17-064.yaml
   - pack_17/SP17-065.yaml
   - pack_17/SP17-066.yaml
@@ -268,25 +369,114 @@ presetRefs:
   - pack_17/SP17-070.yaml
   - pack_17/SP17-071.yaml
   - pack_17/SP17-072.yaml
+  - pack_17/SP17-132.yaml
+  - pack_17/SP17-133.yaml
+  - pack_17/SP17-134.yaml
+  - pack_17/SP17-135.yaml
+  - pack_17/SP17-136.yaml
+  - pack_17/SP17-137.yaml
+  - pack_17/SP17-138.yaml
+  - pack_17/SP17-139.yaml
+  - pack_17/SP17-140.yaml
+  - pack_17/SP17-141.yaml
+  - pack_17/SP17-142.yaml
   - pack_17/SP17-074.yaml
   - pack_17/SP17-075.yaml
   - pack_17/SP17-076.yaml
+  - pack_17/SP17-143.yaml
+  - pack_17/SP17-144.yaml
+  - pack_17/SP17-145.yaml
+  - pack_17/SP17-146.yaml
+  - pack_17/SP17-147.yaml
+  - pack_17/SP17-148.yaml
+  - pack_17/SP17-149.yaml
+  - pack_17/SP17-150.yaml
+  - pack_17/SP17-151.yaml
+  - pack_17/SP17-152.yaml
+  - pack_17/SP17-153.yaml
+  - pack_17/SP17-154.yaml
+  - pack_17/SP17-155.yaml
+  - pack_17/SP17-156.yaml
+  - pack_17/SP17-157.yaml
+  - pack_17/SP17-158.yaml
+  - pack_17/SP17-159.yaml
   - pack_17/SP17-077.yaml
   - pack_17/SP17-078.yaml
+  - pack_17/SP17-160.yaml
+  - pack_17/SP17-161.yaml
+  - pack_17/SP17-162.yaml
+  - pack_17/SP17-163.yaml
+  - pack_17/SP17-164.yaml
+  - pack_17/SP17-165.yaml
+  - pack_17/SP17-166.yaml
+  - pack_17/SP17-167.yaml
+  - pack_17/SP17-168.yaml
+  - pack_17/SP17-169.yaml
+  - pack_17/SP17-170.yaml
+  - pack_17/SP17-171.yaml
+  - pack_17/SP17-172.yaml
+  - pack_17/SP17-173.yaml
+  - pack_17/SP17-174.yaml
+  - pack_17/SP17-175.yaml
+  - pack_17/SP17-176.yaml
+  - pack_17/SP17-177.yaml
   - pack_17/SP17-079.yaml
   - pack_17/SP17-080.yaml
   - pack_17/SP17-081.yaml
   - pack_17/SP17-082.yaml
   - pack_17/SP17-083.yaml
+  - pack_17/SP17-178.yaml
+  - pack_17/SP17-179.yaml
+  - pack_17/SP17-180.yaml
+  - pack_17/SP17-181.yaml
+  - pack_17/SP17-182.yaml
+  - pack_17/SP17-183.yaml
+  - pack_17/SP17-184.yaml
+  - pack_17/SP17-185.yaml
+  - pack_17/SP17-186.yaml
+  - pack_17/SP17-187.yaml
+  - pack_17/SP17-188.yaml
+  - pack_17/SP17-189.yaml
+  - pack_17/SP17-190.yaml
+  - pack_17/SP17-191.yaml
+  - pack_17/SP17-192.yaml
   - pack_17/SP17-084.yaml
   - pack_17/SP17-085.yaml
   - pack_17/SP17-086.yaml
   - pack_17/SP17-087.yaml
   - pack_17/SP17-088.yaml
   - pack_17/SP17-089.yaml
+  - pack_17/SP17-193.yaml
+  - pack_17/SP17-194.yaml
+  - pack_17/SP17-195.yaml
+  - pack_17/SP17-196.yaml
+  - pack_17/SP17-197.yaml
+  - pack_17/SP17-198.yaml
+  - pack_17/SP17-199.yaml
+  - pack_17/SP17-200.yaml
+  - pack_17/SP17-201.yaml
+  - pack_17/SP17-202.yaml
+  - pack_17/SP17-203.yaml
+  - pack_17/SP17-204.yaml
+  - pack_17/SP17-205.yaml
+  - pack_17/SP17-206.yaml
   - pack_17/SP17-090.yaml
   - pack_17/SP17-091.yaml
   - pack_17/SP17-092.yaml
   - pack_17/SP17-093.yaml
   - pack_17/SP17-094.yaml
   - pack_17/SP17-095.yaml
+  - pack_17/SP17-207.yaml
+  - pack_17/SP17-208.yaml
+  - pack_17/SP17-209.yaml
+  - pack_17/SP17-210.yaml
+  - pack_17/SP17-211.yaml
+  - pack_17/SP17-212.yaml
+  - pack_17/SP17-213.yaml
+  - pack_17/SP17-214.yaml
+  - pack_17/SP17-215.yaml
+  - pack_17/SP17-216.yaml
+  - pack_17/SP17-217.yaml
+  - pack_17/SP17-218.yaml
+  - pack_17/SP17-219.yaml
+  - pack_17/SP17-220.yaml

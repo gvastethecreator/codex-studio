@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP17-162
+packId: pack_17
+name: Sword-and-Planet Painting
+styleAnchors:
+  - Sword-and-Planet Painting
+  - fantasy on alien worlds
+  - alien desert
+displayName: Sword-and-Planet Painting
+category: 7. Pulp Fantasy Painting
+domain: fantasy on alien worlds
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - pulp-fantasy-painting
+  - sword-planet
+  - pulp-fantasy
+  - portable-style-study
+visualDna:
+  aesthetic: 'Sword-and-planet painting: swashbuckling heroes with swords on alien desert worlds, twin moons, strange beasts and ancient ruined cities under a pink sky.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original adult characters; place the subject in a swashbuckling scene on an alien world with swords and strange beasts.
+  color_and_tone: Pink and ochre skies, rust deserts and turquoise alien flesh.
+  lighting_and_shadow: Two-moon light and warm desert glow, kept consistent across the whole image.
+  texture_and_material: Painterly sand, ancient stone and alien hides, kept consistent across the whole image.
+  camera_and_composition: Heroic figure against a vast alien vista, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with romantic alien adventure.
+  rendering_and_quality: Classic painted cover finish without text, kept consistent across the whole image.
+  creative_brief: "Sword-and-planet painting: swashbuckling heroes with swords on alien desert worlds, twin moons, strange beasts and ancient ruined cities under a pink sky. Carry it through alien desert, twin moons, swords, strange beasts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: alien desert; twin moons; swords; strange beasts
+avoidRules:
+  - gore
+  - title lettering
+  - existing franchise heroes
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: pulp-fantasy-painting
+  categoryName: 7. Pulp Fantasy Painting
+  tags:
+    - curation-v2
+    - pulp-fantasy-painting
+    - sword-planet
+    - pulp-fantasy
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: fantasy on alien worlds

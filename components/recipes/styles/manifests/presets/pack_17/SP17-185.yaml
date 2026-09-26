@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP17-185
+packId: pack_17
+name: Oil-Stick Gestural Drawing
+styleAnchors:
+  - Oil-Stick Gestural Drawing
+  - bold oil stick drawing
+  - oil stick
+displayName: Oil-Stick Gestural Drawing
+category: 8. Medieval Fantasy Drawing Media
+domain: bold oil stick drawing
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - medieval-fantasy-drawing-media
+  - oil-stick
+  - drawing-media
+  - portable-style-study
+visualDna:
+  aesthetic: 'Oil-stick gestural drawing: bold greasy oil-stick lines and smears, energetic gestures, thick waxy marks in black and a few colors on raw paper.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; draw the subject with bold greasy gestures and thick waxy lines.
+  color_and_tone: Black with rust, ochre and one bright color.
+  lighting_and_shadow: Implied by stroke weight and smears, kept consistent across the whole image.
+  texture_and_material: Greasy waxy lines, smears and raw paper, kept consistent across the whole image.
+  camera_and_composition: Big gestural figure filling the sheet, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with raw primal energy.
+  rendering_and_quality: Loose powerful gesture, not tidy, kept consistent across the whole image.
+  creative_brief: "Oil-stick gestural drawing: bold greasy oil-stick lines and smears, energetic gestures, thick waxy marks in black and a few colors on raw paper. Carry it through oil stick, greasy gesture, smears, raw paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: oil stick; greasy gesture; smears; raw paper
+avoidRules:
+  - digital smoothness
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: digital smoothness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: medieval-fantasy-drawing-media
+  categoryName: 8. Medieval Fantasy Drawing Media
+  tags:
+    - curation-v2
+    - medieval-fantasy-drawing-media
+    - oil-stick
+    - drawing-media
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: bold oil stick drawing

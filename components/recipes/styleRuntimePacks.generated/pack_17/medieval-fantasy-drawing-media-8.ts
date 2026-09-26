@@ -148,4 +148,496 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP17-178',
+    name: 'Trois Crayons Drawing',
+    displayName: 'Trois Crayons Drawing',
+    styleAnchors: ['Trois Crayons Drawing', 'black, red and white chalk drawing', 'three chalks'],
+    category: '8. Medieval Fantasy Drawing Media',
+    domain: 'black, red and white chalk drawing',
+    negativePrompt:
+      'digital smoothness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Trois crayons drawing: figure drawings in three chalks, black for shadow, red for flesh and white for highlights, on warm toned paper with lively hatching.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; model the subject with black shadows, red warmth and white highlights on toned paper.',
+      color_and_tone: 'Black, sanguine red and white chalk on buff paper.',
+      lighting_and_shadow:
+        'Soft modeled light built from three chalks, kept consistent across the whole image.',
+      texture_and_material:
+        'Chalk grain, hatching and toned paper tooth, kept consistent across the whole image.',
+      camera_and_composition:
+        'Figure study with breathing space, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with intimate old-master grace.',
+      rendering_and_quality:
+        'Refined lively chalk drawing, kept consistent across the whole image.',
+      creative_brief:
+        "Trois crayons drawing: figure drawings in three chalks, black for shadow, red for flesh and white for highlights, on warm toned paper with lively hatching. Carry it through three chalks, toned paper, hatching, figure study. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'three chalks; toned paper; hatching; figure study',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-179',
+    name: 'Carved Gesso Line Drawing',
+    displayName: 'Carved Gesso Line Drawing',
+    styleAnchors: ['Carved Gesso Line Drawing', 'drawing incised in gesso', 'incised grooves'],
+    category: '8. Medieval Fantasy Drawing Media',
+    domain: 'drawing incised in gesso',
+    negativePrompt:
+      'digital smoothness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Carved gesso line drawing: drawings incised into smooth white gesso with a stylus, crisp grooves filled with dark wash and soft raised edges catching the light.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; incise the subject as crisp grooves in smooth white gesso.',
+      color_and_tone: 'Chalky white gesso with dark umber line fill.',
+      lighting_and_shadow:
+        'Raking light across carved grooves, kept consistent across the whole image.',
+      texture_and_material:
+        'Incised lines, smooth gesso and small chips, kept consistent across the whole image.',
+      camera_and_composition:
+        'Flat panel viewed with slight raking light, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with quiet carved permanence.',
+      rendering_and_quality: 'Crisp controlled incision, kept consistent across the whole image.',
+      creative_brief:
+        "Carved gesso line drawing: drawings incised into smooth white gesso with a stylus, crisp grooves filled with dark wash and soft raised edges catching the light. Carry it through incised grooves, white gesso, dark fill, raking light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'incised grooves; white gesso; dark fill; raking light',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-180',
+    name: 'Goldpoint Stylus Drawing',
+    displayName: 'Goldpoint Stylus Drawing',
+    styleAnchors: ['Goldpoint Stylus Drawing', 'drawing with a gold stylus', 'gold stylus line'],
+    category: '8. Medieval Fantasy Drawing Media',
+    domain: 'drawing with a gold stylus',
+    negativePrompt:
+      'digital smoothness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Goldpoint stylus drawing: extremely fine warm golden-grey lines drawn with a gold stylus on prepared ground, delicate, precious and faintly shimmering.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; draw the subject in extremely fine shimmering golden-grey line.',
+      color_and_tone:
+        'Faint warm gold-grey lines on ivory ground, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Delicate hatching with a soft shimmer, kept consistent across the whole image.',
+      texture_and_material:
+        'Prepared ground, hairline strokes and metallic sheen, kept consistent across the whole image.',
+      camera_and_composition:
+        'Small precious drawing with generous space, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with hushed reverence, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Hairline precision, no heavy darks, kept consistent across the whole image.',
+      creative_brief:
+        "Goldpoint stylus drawing: extremely fine warm golden-grey lines drawn with a gold stylus on prepared ground, delicate, precious and faintly shimmering. Carry it through gold stylus line, hairline strokes, shimmer, ivory ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'gold stylus line; hairline strokes; shimmer; ivory ground',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-181',
+    name: 'Lampblack Brush Study',
+    displayName: 'Lampblack Brush Study',
+    styleAnchors: ['Lampblack Brush Study', 'soot ink brush drawing', 'velvety black'],
+    category: '8. Medieval Fantasy Drawing Media',
+    domain: 'soot ink brush drawing',
+    negativePrompt:
+      'digital smoothness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Lampblack brush study: rich soot-black brush drawing with velvety deep blacks, dry-brush edges and grey water washes, bold and quick.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; brush the subject with bold velvety black strokes and grey washes.',
+      color_and_tone: 'Deep velvety black and water greys on white.',
+      lighting_and_shadow:
+        'Strong black masses and white paper light, kept consistent across the whole image.',
+      texture_and_material:
+        'Dry-brush edges, soot pigment and paper texture, kept consistent across the whole image.',
+      camera_and_composition:
+        'Bold central subject with open space, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with stark decisive power.',
+      rendering_and_quality: 'Confident quick brushwork, kept consistent across the whole image.',
+      creative_brief:
+        "Lampblack brush study: rich soot-black brush drawing with velvety deep blacks, dry-brush edges and grey water washes, bold and quick. Carry it through velvety black, dry-brush edges, grey washes, quick strokes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'velvety black; dry-brush edges; grey washes; quick strokes',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-182',
+    name: 'Vine Charcoal Fantasy Sketch',
+    displayName: 'Vine Charcoal Fantasy Sketch',
+    styleAnchors: ['Vine Charcoal Fantasy Sketch', 'soft vine charcoal drawing', 'vine charcoal'],
+    category: '8. Medieval Fantasy Drawing Media',
+    domain: 'soft vine charcoal drawing',
+    negativePrompt:
+      'digital smoothness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Vine charcoal fantasy sketch: soft grey vine-charcoal drawing with light searching lines, smudged tones and easy erasure, airy and atmospheric.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; sketch the subject lightly with searching charcoal lines and smudged tone.',
+      color_and_tone: 'Soft greys on white paper, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Smudged tonal shading and erased lights, kept consistent across the whole image.',
+      texture_and_material:
+        'Powdery charcoal, finger smudges and eraser marks, kept consistent across the whole image.',
+      camera_and_composition:
+        'Loose sketch with visible construction lines, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with airy exploratory calm.',
+      rendering_and_quality:
+        'Light searching sketch, not heavy, kept consistent across the whole image.',
+      creative_brief:
+        "Vine charcoal fantasy sketch: soft grey vine-charcoal drawing with light searching lines, smudged tones and easy erasure, airy and atmospheric. Carry it through vine charcoal, searching lines, smudges, erased lights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'vine charcoal; searching lines; smudges; erased lights',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-183',
+    name: 'Blue-Paper White Heightening',
+    displayName: 'Blue-Paper White Heightening',
+    styleAnchors: ['Blue-Paper White Heightening', 'white highlights on blue paper', 'blue paper'],
+    category: '8. Medieval Fantasy Drawing Media',
+    domain: 'white highlights on blue paper',
+    negativePrompt:
+      'digital smoothness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Blue-paper white heightening: drawings on blue paper using dark ink or chalk for shadows and opaque white for highlights, the paper serving as the midtone.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; model the subject with dark shadows and white highlights on blue paper.',
+      color_and_tone: 'Blue paper midtone, dark ink shadows and white highlights.',
+      lighting_and_shadow:
+        'Crisp white highlights with blue midtones, kept consistent across the whole image.',
+      texture_and_material:
+        'Blue laid paper, white gouache and ink, kept consistent across the whole image.',
+      camera_and_composition:
+        'Study sheet with a central figure, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with cool moonlit elegance.',
+      rendering_and_quality: 'Clear three-value drawing, kept consistent across the whole image.',
+      creative_brief:
+        "Blue-paper white heightening: drawings on blue paper using dark ink or chalk for shadows and opaque white for highlights, the paper serving as the midtone. Carry it through blue paper, white highlights, dark shadows, midtone paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'blue paper; white highlights; dark shadows; midtone paper',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-184',
+    name: 'Burnished Graphite Sheen',
+    displayName: 'Burnished Graphite Sheen',
+    styleAnchors: [
+      'Burnished Graphite Sheen',
+      'polished shiny graphite drawing',
+      'burnished graphite',
+    ],
+    category: '8. Medieval Fantasy Drawing Media',
+    domain: 'polished shiny graphite drawing',
+    negativePrompt:
+      'digital smoothness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Burnished graphite sheen: dense graphite drawing polished until the darks shine like metal, with crisp paper-white highlights and silvery reflections.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject in dense burnished graphite that shines like metal.',
+      color_and_tone:
+        'Silvery grey to glossy black on white, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Metallic sheen on dark graphite areas, kept consistent across the whole image.',
+      texture_and_material:
+        'Polished graphite, smooth blends and crisp edges, kept consistent across the whole image.',
+      camera_and_composition:
+        'Strong central subject with white space, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with cool polished intensity.',
+      rendering_and_quality:
+        'Highly finished graphite with sheen, kept consistent across the whole image.',
+      creative_brief:
+        "Burnished graphite sheen: dense graphite drawing polished until the darks shine like metal, with crisp paper-white highlights and silvery reflections. Carry it through burnished graphite, metallic sheen, crisp highlights, dense darks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'burnished graphite; metallic sheen; crisp highlights; dense darks',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-185',
+    name: 'Oil-Stick Gestural Drawing',
+    displayName: 'Oil-Stick Gestural Drawing',
+    styleAnchors: ['Oil-Stick Gestural Drawing', 'bold oil stick drawing', 'oil stick'],
+    category: '8. Medieval Fantasy Drawing Media',
+    domain: 'bold oil stick drawing',
+    negativePrompt:
+      'digital smoothness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Oil-stick gestural drawing: bold greasy oil-stick lines and smears, energetic gestures, thick waxy marks in black and a few colors on raw paper.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; draw the subject with bold greasy gestures and thick waxy lines.',
+      color_and_tone: 'Black with rust, ochre and one bright color.',
+      lighting_and_shadow:
+        'Implied by stroke weight and smears, kept consistent across the whole image.',
+      texture_and_material:
+        'Greasy waxy lines, smears and raw paper, kept consistent across the whole image.',
+      camera_and_composition:
+        'Big gestural figure filling the sheet, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with raw primal energy.',
+      rendering_and_quality:
+        'Loose powerful gesture, not tidy, kept consistent across the whole image.',
+      creative_brief:
+        "Oil-stick gestural drawing: bold greasy oil-stick lines and smears, energetic gestures, thick waxy marks in black and a few colors on raw paper. Carry it through oil stick, greasy gesture, smears, raw paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'oil stick; greasy gesture; smears; raw paper',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-186',
+    name: 'Bistre Wash and Line',
+    displayName: 'Bistre Wash and Line',
+    styleAnchors: ['Bistre Wash and Line', 'brown soot ink pen and wash', 'brown ink'],
+    category: '8. Medieval Fantasy Drawing Media',
+    domain: 'brown soot ink pen and wash',
+    negativePrompt:
+      'digital smoothness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Bistre wash and line: warm brown soot-ink pen drawing with transparent brown washes, quick landscapes and figures in the manner of old travel sketches.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; draw the subject in warm brown pen line with transparent brown washes.',
+      color_and_tone: 'Warm browns from pale to deep on cream paper.',
+      lighting_and_shadow:
+        'Transparent wash shadows with paper lights, kept consistent across the whole image.',
+      texture_and_material:
+        'Pen line, wash pooling and laid paper, kept consistent across the whole image.',
+      camera_and_composition:
+        'Quick landscape or figure sketch, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with wandering observation, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Fresh quick sketch with confident wash, kept consistent across the whole image.',
+      creative_brief:
+        "Bistre wash and line: warm brown soot-ink pen drawing with transparent brown washes, quick landscapes and figures in the manner of old travel sketches. Carry it through brown ink, transparent wash, pen line, travel sketch. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'brown ink; transparent wash; pen line; travel sketch',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-187',
+    name: 'Carbon Pencil Velvet Blacks',
+    displayName: 'Carbon Pencil Velvet Blacks',
+    styleAnchors: [
+      'Carbon Pencil Velvet Blacks',
+      'rich carbon pencil drawing',
+      'matte carbon blacks',
+    ],
+    category: '8. Medieval Fantasy Drawing Media',
+    domain: 'rich carbon pencil drawing',
+    negativePrompt:
+      'digital smoothness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Carbon pencil velvet blacks: matte carbon pencil drawing with velvety deep blacks, fine controlled hatching and no graphite shine.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject with matte velvety blacks and fine hatching.',
+      color_and_tone: 'Matte black to soft grey on white, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Deep matte shadows with controlled gradations, kept consistent across the whole image.',
+      texture_and_material: 'Carbon pencil grain, fine hatching and paper tooth.',
+      camera_and_composition: 'Dramatic close subject, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with grave intensity, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Precise velvety finish with no shine, kept consistent across the whole image.',
+      creative_brief:
+        "Carbon pencil velvet blacks: matte carbon pencil drawing with velvety deep blacks, fine controlled hatching and no graphite shine. Carry it through matte carbon blacks, fine hatching, no shine, velvety. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'matte carbon blacks; fine hatching; no shine; velvety',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-188',
+    name: 'India Ink Drybrush Fantasy',
+    displayName: 'India Ink Drybrush Fantasy',
+    styleAnchors: ['India Ink Drybrush Fantasy', 'dry brush black ink illustration', 'dry brush'],
+    category: '8. Medieval Fantasy Drawing Media',
+    domain: 'dry brush black ink illustration',
+    negativePrompt:
+      'digital smoothness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'India ink drybrush fantasy: black ink dragged with a nearly dry brush to create rough broken textures on fur, stone and smoke, bold and gritty.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject with rough broken drybrush textures in black ink.',
+      color_and_tone: 'Black ink on white paper, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Broken texture and solid black shadows, kept consistent across the whole image.',
+      texture_and_material:
+        'Dragged dry brush, split bristles and grit, kept consistent across the whole image.',
+      camera_and_composition:
+        'Bold figure with textured surroundings, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with gritty savage energy.',
+      rendering_and_quality:
+        'Crisp black with rough texture, kept consistent across the whole image.',
+      creative_brief:
+        "India ink drybrush fantasy: black ink dragged with a nearly dry brush to create rough broken textures on fur, stone and smoke, bold and gritty. Carry it through dry brush, broken texture, black ink, gritty. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'dry brush; broken texture; black ink; gritty',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-189',
+    name: 'Crowquill Fine Line Fantasy',
+    displayName: 'Crowquill Fine Line Fantasy',
+    styleAnchors: ['Crowquill Fine Line Fantasy', 'very fine nib pen drawing', 'fine nib'],
+    category: '8. Medieval Fantasy Drawing Media',
+    domain: 'very fine nib pen drawing',
+    negativePrompt:
+      'digital smoothness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Crowquill fine line fantasy: extremely fine flexible-nib pen drawing with delicate swelling lines and intricate hatching, detailed and elegant.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; draw the subject with intricate delicate lines from a very fine flexible nib.',
+      color_and_tone: 'Black ink on bright white paper, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Fine hatching and cross-hatching, kept consistent across the whole image.',
+      texture_and_material:
+        'Hairline nib strokes and swelling lines, kept consistent across the whole image.',
+      camera_and_composition:
+        'Detailed centered subject with ornament, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with meticulous wonder, kept consistent across the whole image.',
+      rendering_and_quality: 'Intricate precise linework, kept consistent across the whole image.',
+      creative_brief:
+        "Crowquill fine line fantasy: extremely fine flexible-nib pen drawing with delicate swelling lines and intricate hatching, detailed and elegant. Carry it through fine nib, swelling lines, intricate hatching, elegant detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'fine nib; swelling lines; intricate hatching; elegant detail',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-190',
+    name: 'Mixed Chalk on Grey Paper',
+    displayName: 'Mixed Chalk on Grey Paper',
+    styleAnchors: ['Mixed Chalk on Grey Paper', 'colored chalks on mid-grey paper', 'grey paper'],
+    category: '8. Medieval Fantasy Drawing Media',
+    domain: 'colored chalks on mid-grey paper',
+    negativePrompt:
+      'digital smoothness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Mixed chalk on grey paper: colored chalks and pastels on mid-grey paper, warm and cool accents, white highlights and dark contours over the neutral ground.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject in colored chalks with warm and cool accents on grey paper.',
+      color_and_tone: 'Grey paper with warm ochres, cool blues and white.',
+      lighting_and_shadow:
+        'Soft chalk modeling with bright highlights, kept consistent across the whole image.',
+      texture_and_material:
+        'Chalk grain, smudges and grey paper tooth, kept consistent across the whole image.',
+      camera_and_composition:
+        'Figure or head study on grey, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with muted painterly warmth.',
+      rendering_and_quality: 'Soft confident chalk study, kept consistent across the whole image.',
+      creative_brief:
+        "Mixed chalk on grey paper: colored chalks and pastels on mid-grey paper, warm and cool accents, white highlights and dark contours over the neutral ground. Carry it through grey paper, colored chalks, warm and cool, white highlights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'grey paper; colored chalks; warm and cool; white highlights',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-191',
+    name: 'Pencil and Tea-Stain Wash',
+    displayName: 'Pencil and Tea-Stain Wash',
+    styleAnchors: ['Pencil and Tea-Stain Wash', 'graphite with tea-stained washes', 'tea stains'],
+    category: '8. Medieval Fantasy Drawing Media',
+    domain: 'graphite with tea-stained washes',
+    negativePrompt:
+      'digital smoothness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Pencil and tea-stain wash: graphite drawings washed with brewed tea for warm uneven stains, rings and blooms that age the page.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; draw the subject in pencil with warm uneven tea-stain washes.',
+      color_and_tone:
+        'Graphite greys with warm amber tea stains, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Pencil shading with stained tone, kept consistent across the whole image.',
+      texture_and_material:
+        'Tea rings, blooms, buckled paper and pencil, kept consistent across the whole image.',
+      camera_and_composition:
+        'Sketchbook page with stains around the subject, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with aged cozy mystery.',
+      rendering_and_quality:
+        'Delicate pencil with organic stains, kept consistent across the whole image.',
+      creative_brief:
+        "Pencil and tea-stain wash: graphite drawings washed with brewed tea for warm uneven stains, rings and blooms that age the page. Carry it through tea stains, pencil, blooms and rings, aged page. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'tea stains; pencil; blooms and rings; aged page',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-192',
+    name: 'Fine Ballpoint Crosshatch Study',
+    displayName: 'Fine Ballpoint Crosshatch Study',
+    styleAnchors: [
+      'Fine Ballpoint Crosshatch Study',
+      'precise ballpoint pen drawing',
+      'ballpoint crosshatch',
+    ],
+    category: '8. Medieval Fantasy Drawing Media',
+    domain: 'precise ballpoint pen drawing',
+    negativePrompt:
+      'digital smoothness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Fine ballpoint crosshatch study: careful blue or black ballpoint drawing built from patient crosshatching, subtle pressure and soft tonal buildup.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; build the subject in patient ballpoint crosshatching with soft tonal buildup.',
+      color_and_tone:
+        'Blue or black ballpoint on white paper, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Layered hatching creating smooth tones, kept consistent across the whole image.',
+      texture_and_material: 'Ballpoint strokes, ink blobs and slight paper indent.',
+      camera_and_composition:
+        'Detailed study in a sketchbook, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with patient obsessive calm.',
+      rendering_and_quality:
+        'Precise controlled ballpoint rendering, kept consistent across the whole image.',
+      creative_brief:
+        "Fine ballpoint crosshatch study: careful blue or black ballpoint drawing built from patient crosshatching, subtle pressure and soft tonal buildup. Carry it through ballpoint crosshatch, tonal buildup, ink blobs, sketchbook. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'ballpoint crosshatch; tonal buildup; ink blobs; sketchbook',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

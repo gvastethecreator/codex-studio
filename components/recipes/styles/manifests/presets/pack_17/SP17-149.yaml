@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP17-149
+packId: pack_17
+name: Tracing-Paper Overlay Monsters
+styleAnchors:
+  - Tracing-Paper Overlay Monsters
+  - layered translucent tracing sheets
+  - stacked tracing sheets
+displayName: Tracing-Paper Overlay Monsters
+category: 6. Dungeon Zine Assemblage & Stampwork
+domain: layered translucent tracing sheets
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - dungeon-zine-assemblage-and-stampwork
+  - tracing-overlay
+  - zine-assemblage
+  - portable-style-study
+visualDna:
+  aesthetic: 'Tracing-paper overlay monsters: creatures built from several translucent tracing sheets stacked over each other, each adding a layer of ink line so forms show through.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; build the subject from stacked translucent sheets, each carrying part of the drawing.
+  color_and_tone: Milky translucent paper with black and sepia ink.
+  lighting_and_shadow: Backlit glow through stacked sheets, kept consistent across the whole image.
+  texture_and_material: Tracing paper, curled edges, tape and ink lines.
+  camera_and_composition: Layered sheets slightly offset on a table, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with ghostly layered depth.
+  rendering_and_quality: Clear layered linework through translucency, kept consistent across the whole image.
+  creative_brief: "Tracing-paper overlay monsters: creatures built from several translucent tracing sheets stacked over each other, each adding a layer of ink line so forms show through. Carry it through stacked tracing sheets, show-through lines, offset layers, backlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: stacked tracing sheets; show-through lines; offset layers; backlight
+avoidRules:
+  - readable text or lettering
+  - clean digital vector look
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable text or lettering, clean digital vector look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: dungeon-zine-assemblage-and-stampwork
+  categoryName: 6. Dungeon Zine Assemblage & Stampwork
+  tags:
+    - curation-v2
+    - dungeon-zine-assemblage-and-stampwork
+    - tracing-overlay
+    - zine-assemblage
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: layered translucent tracing sheets

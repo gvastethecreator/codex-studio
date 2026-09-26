@@ -321,4 +321,380 @@ export const GENERATED_STYLE_PRESETS = [
         'trench cathedral; drone shadow; ruined heraldry; permanent war mood; mud-gray palette; no flags or logos; gothic tactical silhouettes',
     },
   },
+  {
+    id: 'SP17-132',
+    name: 'Dark Deckbuilder Card Art',
+    displayName: 'Dark Deckbuilder Card Art',
+    styleAnchors: [
+      'Dark Deckbuilder Card Art',
+      'grim card-battle illustration',
+      'one action per card',
+    ],
+    category: '5. Grimdark Game Systems & Tabletop',
+    domain: 'grim card-battle illustration',
+    negativePrompt:
+      'card text or numbers, gore, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Dark deckbuilder card art: small bold painted card illustrations for a grim card-battle game, one clear action or creature per card with a heavy dark vignette.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; paint the subject as one clear bold action or creature for a small card.',
+      color_and_tone: 'Dark muted grounds with one saturated focal color.',
+      lighting_and_shadow:
+        'Strong focal light and heavy vignette, kept consistent across the whole image.',
+      texture_and_material:
+        'Chunky painterly strokes and simple forms, kept consistent across the whole image.',
+      camera_and_composition:
+        'Centered action readable at small size, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with grim tactical punch.',
+      rendering_and_quality:
+        'Bold readable illustration with no card text, kept consistent across the whole image.',
+      creative_brief:
+        "Dark deckbuilder card art: small bold painted card illustrations for a grim card-battle game, one clear action or creature per card with a heavy dark vignette. Carry it through one action per card, heavy vignette, bold shapes, focal color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'one action per card; heavy vignette; bold shapes; focal color',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-133',
+    name: 'Permadeath Roguelike Tableau',
+    displayName: 'Permadeath Roguelike Tableau',
+    styleAnchors: ['Permadeath Roguelike Tableau', 'roguelike defeat scene', 'fallen hero gear'],
+    category: '5. Grimdark Game Systems & Tabletop',
+    domain: 'roguelike defeat scene',
+    negativePrompt:
+      'gore, game over text, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Permadeath roguelike tableau: the frozen moment after a hero falls in a procedural dungeon, fallen gear, lingering monsters and a quiet grim stillness.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; freeze the subject in the quiet moment just after a fatal defeat, without gore.',
+      color_and_tone: 'Desaturated dungeon tones with one fading warm light.',
+      lighting_and_shadow: 'A last torch or spell light fading into dark.',
+      texture_and_material:
+        'Stone tiles, dropped gear, dust and ash, kept consistent across the whole image.',
+      camera_and_composition:
+        'Top-down or three-quarter dungeon room view, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with bleak restart melancholy.',
+      rendering_and_quality:
+        'Clear readable scene without gore or text, kept consistent across the whole image.',
+      creative_brief:
+        "Permadeath roguelike tableau: the frozen moment after a hero falls in a procedural dungeon, fallen gear, lingering monsters and a quiet grim stillness. Carry it through fallen hero gear, fading light, lingering monster, dungeon room. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'fallen hero gear; fading light; lingering monster; dungeon room',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-134',
+    name: 'Grimdark Terrain Diorama',
+    displayName: 'Grimdark Terrain Diorama',
+    styleAnchors: ['Grimdark Terrain Diorama', 'painted grim tabletop terrain', 'terrain diorama'],
+    category: '5. Grimdark Game Systems & Tabletop',
+    domain: 'painted grim tabletop terrain',
+    negativePrompt:
+      'gore, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Grimdark terrain diorama: a hand-built tabletop terrain piece of ruined chapels, barbed wire, skull piles and mud, painted and weathered like a hobby showpiece.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; set the subject on a hand-built grim terrain diorama base.',
+      color_and_tone: 'Mud browns, rust, bone and weathered stone greys.',
+      lighting_and_shadow:
+        'Hobby-photo lighting with soft shadows, kept consistent across the whole image.',
+      texture_and_material: 'Sculpted foam stone, static grass, rust washes and drybrush.',
+      camera_and_composition:
+        'Close three-quarter view of the diorama base, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with meticulous hobby grimness.',
+      rendering_and_quality:
+        'Convincing physical miniature terrain, kept consistent across the whole image.',
+      creative_brief:
+        "Grimdark terrain diorama: a hand-built tabletop terrain piece of ruined chapels, barbed wire, skull piles and mud, painted and weathered like a hobby showpiece. Carry it through terrain diorama, drybrush weathering, ruined chapel, hobby base. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'terrain diorama; drybrush weathering; ruined chapel; hobby base',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-135',
+    name: 'Boss Arena Grim Vista',
+    displayName: 'Boss Arena Grim Vista',
+    styleAnchors: ['Boss Arena Grim Vista', 'grim boss battle arena', 'huge boss'],
+    category: '5. Grimdark Game Systems & Tabletop',
+    domain: 'grim boss battle arena',
+    negativePrompt:
+      'gore, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Boss arena grim vista: a vast ruined arena where a small hero faces an enormous boss creature, fog, broken pillars and a single dramatic light.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; set the subject as a tiny challenger facing an enormous foe in a ruined arena.',
+      color_and_tone: 'Grey fog, dark stone and one sickly or golden light.',
+      lighting_and_shadow:
+        'Dramatic shaft of light and deep fog, kept consistent across the whole image.',
+      texture_and_material:
+        'Broken stone, wet floor and creature hide, kept consistent across the whole image.',
+      camera_and_composition:
+        'Low wide angle with extreme scale contrast, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with dread before the fight.',
+      rendering_and_quality:
+        'Epic painterly scene with clear scale, kept consistent across the whole image.',
+      creative_brief:
+        "Boss arena grim vista: a vast ruined arena where a small hero faces an enormous boss creature, fog, broken pillars and a single dramatic light. Carry it through huge boss, tiny hero, ruined arena, dramatic light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'huge boss; tiny hero; ruined arena; dramatic light',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-136',
+    name: 'Fixed-Camera Castle Horror',
+    displayName: 'Fixed-Camera Castle Horror',
+    styleAnchors: [
+      'Fixed-Camera Castle Horror',
+      'survival horror fixed camera frame',
+      'fixed corner camera',
+    ],
+    category: '5. Grimdark Game Systems & Tabletop',
+    domain: 'survival horror fixed camera frame',
+    negativePrompt:
+      'gore, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Fixed-camera castle horror: survival-horror framing from a high static corner camera in a gloomy castle, pre-rendered backgrounds and a small vulnerable figure.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject small from a static high corner camera in a gloomy room.',
+      color_and_tone:
+        'Muted greens, browns and candle amber, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Dim pre-rendered lighting with deep corners, kept consistent across the whole image.',
+      texture_and_material:
+        'Detailed pre-rendered stone, wood and dusty fabrics, kept consistent across the whole image.',
+      camera_and_composition:
+        'Awkward high corner angle, off-center figure, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with claustrophobic suspense, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Authentic static-camera horror frame, kept consistent across the whole image.',
+      creative_brief:
+        "Fixed-camera castle horror: survival-horror framing from a high static corner camera in a gloomy castle, pre-rendered backgrounds and a small vulnerable figure. Carry it through fixed corner camera, pre-rendered room, small figure, gloom. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'fixed corner camera; pre-rendered room; small figure; gloom',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-137',
+    name: 'Grim Loot Rarity Glow',
+    displayName: 'Grim Loot Rarity Glow',
+    styleAnchors: ['Grim Loot Rarity Glow', 'dark item with rarity aura', 'single item'],
+    category: '5. Grimdark Game Systems & Tabletop',
+    domain: 'dark item with rarity aura',
+    negativePrompt:
+      'item names or stats, gore, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Grim loot rarity glow: a single dark fantasy item lying in the dirt, surrounded by a colored rarity aura of light beams and sparks rising into the dark.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; present the subject as a single glowing item with a colored rarity aura.',
+      color_and_tone: 'Dark earth tones with a vivid orange, violet or gold aura.',
+      lighting_and_shadow: 'Upward beam of colored light from the item.',
+      texture_and_material:
+        'Dirty stone, worn metal and glowing particles, kept consistent across the whole image.',
+      camera_and_composition: 'Low close view of the item with a vertical beam.',
+      atmosphere_and_mood: 'Keep the requested mood with tempting treasure hunger.',
+      rendering_and_quality:
+        'Clear hero item with clean glow, kept consistent across the whole image.',
+      creative_brief:
+        "Grim loot rarity glow: a single dark fantasy item lying in the dirt, surrounded by a colored rarity aura of light beams and sparks rising into the dark. Carry it through single item, rarity light beam, dark ground, sparks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'single item; rarity light beam; dark ground; sparks',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-138',
+    name: 'Grim Squad Tactics Grid',
+    displayName: 'Grim Squad Tactics Grid',
+    styleAnchors: ['Grim Squad Tactics Grid', 'dark turn-based squad battle', 'faint grid'],
+    category: '5. Grimdark Game Systems & Tabletop',
+    domain: 'dark turn-based squad battle',
+    negativePrompt:
+      'gore, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Grim squad tactics grid: a top-down or angled grid battlefield where a small squad of dark fantasy units faces overwhelming odds in a ruined town.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; place the subject as squad units on a faint tactical grid in a ruined setting.',
+      color_and_tone: 'Muted ruins, dark greens and a single squad color.',
+      lighting_and_shadow:
+        'Overcast light with small unit shadows, kept consistent across the whole image.',
+      texture_and_material:
+        'Ruined masonry, mud and crisp unit figures, kept consistent across the whole image.',
+      camera_and_composition:
+        'Steep angled grid view with clear units, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with desperate calculation, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Readable units with no interface, kept consistent across the whole image.',
+      creative_brief:
+        "Grim squad tactics grid: a top-down or angled grid battlefield where a small squad of dark fantasy units faces overwhelming odds in a ruined town. Carry it through faint grid, small squad, ruined town, overwhelming odds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'faint grid; small squad; ruined town; overwhelming odds',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-139',
+    name: 'Painted Point-and-Click Crypt',
+    displayName: 'Painted Point-and-Click Crypt',
+    styleAnchors: [
+      'Painted Point-and-Click Crypt',
+      'hand-painted adventure game scene',
+      'painted background',
+    ],
+    category: '5. Grimdark Game Systems & Tabletop',
+    domain: 'hand-painted adventure game scene',
+    negativePrompt:
+      'cursor or interface, gore, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Painted point-and-click crypt: a hand-painted adventure-game background of a crypt or gothic interior, full of clickable-looking curious objects, with a small character.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; place the subject small in a richly painted gothic room full of curious objects.',
+      color_and_tone:
+        'Moody painted greens, purples and candle gold, kept consistent across the whole image.',
+      lighting_and_shadow: 'Soft painterly light pools, kept consistent across the whole image.',
+      texture_and_material:
+        'Painted stone, curios, cobwebs and old books, kept consistent across the whole image.',
+      camera_and_composition:
+        'Side-on stage view with depth layers, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with curious spooky wit.',
+      rendering_and_quality: 'Rich painted background with a clear small figure.',
+      creative_brief:
+        "Painted point-and-click crypt: a hand-painted adventure-game background of a crypt or gothic interior, full of clickable-looking curious objects, with a small character. Carry it through painted background, curious objects, small character, stage view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'painted background; curious objects; small character; stage view',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-140',
+    name: 'Army Painting Step Guide',
+    displayName: 'Army Painting Step Guide',
+    styleAnchors: [
+      'Army Painting Step Guide',
+      'miniature painting progression',
+      'stage progression',
+    ],
+    category: '5. Grimdark Game Systems & Tabletop',
+    domain: 'miniature painting progression',
+    negativePrompt:
+      'step numbers or labels, gore, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Army painting step guide: the same grim miniature shown in several stages from grey primer to basecoat, wash and highlights, lined up like a hobby tutorial.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject as one miniature repeated across painting stages.',
+      color_and_tone: 'Progression from grey primer to full grim color.',
+      lighting_and_shadow: 'Even hobby-photo lighting, kept consistent across the whole image.',
+      texture_and_material:
+        'Primer, washes, drybrush and metallic paint, kept consistent across the whole image.',
+      camera_and_composition:
+        'Row of identical miniatures at different stages, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with patient hobby craft.',
+      rendering_and_quality:
+        'Clear stage differences without numbers, kept consistent across the whole image.',
+      creative_brief:
+        "Army painting step guide: the same grim miniature shown in several stages from grey primer to basecoat, wash and highlights, lined up like a hobby tutorial. Carry it through stage progression, identical miniatures, primer to finish, hobby. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'stage progression; identical miniatures; primer to finish; hobby',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-141',
+    name: 'Macro Grim Miniature Photo',
+    displayName: 'Macro Grim Miniature Photo',
+    styleAnchors: [
+      'Macro Grim Miniature Photo',
+      'close-up tabletop miniature photograph',
+      'macro focus',
+    ],
+    category: '5. Grimdark Game Systems & Tabletop',
+    domain: 'close-up tabletop miniature photograph',
+    negativePrompt:
+      'gore, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Macro grim miniature photo: an extreme close-up photograph of a painted grimdark miniature on a battlefield table, shallow depth of field and dramatic hobby lighting.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; photograph the subject as a painted miniature in extreme macro close-up.',
+      color_and_tone:
+        'Rich painted colors with dark blurred background, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Dramatic small light source and rim light, kept consistent across the whole image.',
+      texture_and_material:
+        'Paint layers, brush marks and sculpted detail, kept consistent across the whole image.',
+      camera_and_composition:
+        'Macro lens with razor-thin focus, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with epic scale in miniature.',
+      rendering_and_quality:
+        'Convincing macro photography, kept consistent across the whole image.',
+      creative_brief:
+        "Macro grim miniature photo: an extreme close-up photograph of a painted grimdark miniature on a battlefield table, shallow depth of field and dramatic hobby lighting. Carry it through macro focus, painted miniature, shallow depth, dramatic light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'macro focus; painted miniature; shallow depth; dramatic light',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-142',
+    name: 'Stress-Break Hero Portrait',
+    displayName: 'Stress-Break Hero Portrait',
+    styleAnchors: [
+      'Stress-Break Hero Portrait',
+      'hero portrait under mental strain',
+      'breaking-point portrait',
+    ],
+    category: '5. Grimdark Game Systems & Tabletop',
+    domain: 'hero portrait under mental strain',
+    negativePrompt:
+      'gore, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Stress-break hero portrait: a gritty close portrait of an adventurer at the breaking point, wide eyes, shaking hands, heavy ink shadows and a trembling torchlit glow.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; show the subject in a close portrait at the edge of breaking under strain.',
+      color_and_tone:
+        'Sickly torch amber and near-black ink, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Flickering underlight and harsh shadow, kept consistent across the whole image.',
+      texture_and_material:
+        'Heavy ink, sweat sheen and scratchy line, kept consistent across the whole image.',
+      camera_and_composition:
+        'Tight head-and-shoulders portrait, kept consistent across the whole image.',
+      atmosphere_and_mood:
+        'Keep the requested mood with fraying nerves, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Expressive intense portrait without gore, kept consistent across the whole image.',
+      creative_brief:
+        "Stress-break hero portrait: a gritty close portrait of an adventurer at the breaking point, wide eyes, shaking hands, heavy ink shadows and a trembling torchlit glow. Carry it through breaking-point portrait, wide eyes, torch underlight, heavy ink. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'breaking-point portrait; wide eyes; torch underlight; heavy ink',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

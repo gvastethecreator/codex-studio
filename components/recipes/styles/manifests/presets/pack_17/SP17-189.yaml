@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP17-189
+packId: pack_17
+name: Crowquill Fine Line Fantasy
+styleAnchors:
+  - Crowquill Fine Line Fantasy
+  - very fine nib pen drawing
+  - fine nib
+displayName: Crowquill Fine Line Fantasy
+category: 8. Medieval Fantasy Drawing Media
+domain: very fine nib pen drawing
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - medieval-fantasy-drawing-media
+  - crowquill
+  - drawing-media
+  - portable-style-study
+visualDna:
+  aesthetic: 'Crowquill fine line fantasy: extremely fine flexible-nib pen drawing with delicate swelling lines and intricate hatching, detailed and elegant.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; draw the subject with intricate delicate lines from a very fine flexible nib.
+  color_and_tone: Black ink on bright white paper, kept consistent across the whole image.
+  lighting_and_shadow: Fine hatching and cross-hatching, kept consistent across the whole image.
+  texture_and_material: Hairline nib strokes and swelling lines, kept consistent across the whole image.
+  camera_and_composition: Detailed centered subject with ornament, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with meticulous wonder, kept consistent across the whole image.
+  rendering_and_quality: Intricate precise linework, kept consistent across the whole image.
+  creative_brief: "Crowquill fine line fantasy: extremely fine flexible-nib pen drawing with delicate swelling lines and intricate hatching, detailed and elegant. Carry it through fine nib, swelling lines, intricate hatching, elegant detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: fine nib; swelling lines; intricate hatching; elegant detail
+avoidRules:
+  - digital smoothness
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: digital smoothness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: medieval-fantasy-drawing-media
+  categoryName: 8. Medieval Fantasy Drawing Media
+  tags:
+    - curation-v2
+    - medieval-fantasy-drawing-media
+    - crowquill
+    - drawing-media
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: very fine nib pen drawing

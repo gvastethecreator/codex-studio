@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP17-187
+packId: pack_17
+name: Carbon Pencil Velvet Blacks
+styleAnchors:
+  - Carbon Pencil Velvet Blacks
+  - rich carbon pencil drawing
+  - matte carbon blacks
+displayName: Carbon Pencil Velvet Blacks
+category: 8. Medieval Fantasy Drawing Media
+domain: rich carbon pencil drawing
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - medieval-fantasy-drawing-media
+  - carbon-pencil
+  - drawing-media
+  - portable-style-study
+visualDna:
+  aesthetic: 'Carbon pencil velvet blacks: matte carbon pencil drawing with velvety deep blacks, fine controlled hatching and no graphite shine.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; render the subject with matte velvety blacks and fine hatching.
+  color_and_tone: Matte black to soft grey on white, kept consistent across the whole image.
+  lighting_and_shadow: Deep matte shadows with controlled gradations, kept consistent across the whole image.
+  texture_and_material: Carbon pencil grain, fine hatching and paper tooth.
+  camera_and_composition: Dramatic close subject, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with grave intensity, kept consistent across the whole image.
+  rendering_and_quality: Precise velvety finish with no shine, kept consistent across the whole image.
+  creative_brief: "Carbon pencil velvet blacks: matte carbon pencil drawing with velvety deep blacks, fine controlled hatching and no graphite shine. Carry it through matte carbon blacks, fine hatching, no shine, velvety. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: matte carbon blacks; fine hatching; no shine; velvety
+avoidRules:
+  - digital smoothness
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: digital smoothness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: medieval-fantasy-drawing-media
+  categoryName: 8. Medieval Fantasy Drawing Media
+  tags:
+    - curation-v2
+    - medieval-fantasy-drawing-media
+    - carbon-pencil
+    - drawing-media
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: rich carbon pencil drawing

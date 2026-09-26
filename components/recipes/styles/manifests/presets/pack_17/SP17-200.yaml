@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP17-200
+packId: pack_17
+name: Clockwork Tomb Direction
+styleAnchors:
+  - Clockwork Tomb Direction
+  - mechanical tomb art direction
+  - tomb machine
+displayName: Clockwork Tomb Direction
+category: 9. Gothic & Dungeon Art Directions
+domain: mechanical tomb art direction
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - gothic-and-dungeon-art-directions
+  - clockwork-tomb
+  - gothic-art-direction
+  - portable-style-study
+visualDna:
+  aesthetic: 'Clockwork tomb direction: painted art direction of tombs built as vast machines, brass gears turning behind stone walls, pendulum blades and ticking sarcophagi.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; place the subject in a tomb that is also a vast ticking machine.
+  color_and_tone: Brass, dark stone and verdigris green, kept consistent across the whole image.
+  lighting_and_shadow: Warm lantern light glinting on gears, kept consistent across the whole image.
+  texture_and_material: Gears, chains, brass fittings and carved stone, kept consistent across the whole image.
+  camera_and_composition: Interior view with moving machinery visible, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with ticking mechanical menace.
+  rendering_and_quality: Precise mechanical detail, kept consistent across the whole image.
+  creative_brief: "Clockwork tomb direction: painted art direction of tombs built as vast machines, brass gears turning behind stone walls, pendulum blades and ticking sarcophagi. Carry it through tomb machine, brass gears, pendulums, ticking sarcophagus. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: tomb machine; brass gears; pendulums; ticking sarcophagus
+avoidRules:
+  - gore
+  - interface or HUD
+  - existing game characters, logos or locations
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: gothic-and-dungeon-art-directions
+  categoryName: 9. Gothic & Dungeon Art Directions
+  tags:
+    - curation-v2
+    - gothic-and-dungeon-art-directions
+    - clockwork-tomb
+    - gothic-art-direction
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: mechanical tomb art direction

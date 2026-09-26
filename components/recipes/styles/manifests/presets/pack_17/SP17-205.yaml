@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP17-205
+packId: pack_17
+name: Lantern-Lit Fog Village Direction
+styleAnchors:
+  - Lantern-Lit Fog Village Direction
+  - foggy village night art direction
+  - thick fog
+displayName: Lantern-Lit Fog Village Direction
+category: 9. Gothic & Dungeon Art Directions
+domain: foggy village night art direction
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - gothic-and-dungeon-art-directions
+  - fog-village
+  - gothic-art-direction
+  - portable-style-study
+visualDna:
+  aesthetic: 'Lantern-lit fog village direction: painted art direction of isolated villages drowned in fog, crooked houses, hanging lanterns and shapes moving between the lights.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; set the subject in a foggy village of crooked houses and hanging lanterns.
+  color_and_tone: Grey fog, lantern gold and dark timber, kept consistent across the whole image.
+  lighting_and_shadow: Lantern halos in thick fog, kept consistent across the whole image.
+  texture_and_material: Wet timber, fog, cobbles and iron lamps, kept consistent across the whole image.
+  camera_and_composition: Street view fading into fog, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with isolated uneasy hush.
+  rendering_and_quality: Painterly atmosphere with clear lights, kept consistent across the whole image.
+  creative_brief: "Lantern-lit fog village direction: painted art direction of isolated villages drowned in fog, crooked houses, hanging lanterns and shapes moving between the lights. Carry it through thick fog, hanging lanterns, crooked houses, shapes between lights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: thick fog; hanging lanterns; crooked houses; shapes between lights
+avoidRules:
+  - gore
+  - interface or HUD
+  - existing game characters, logos or locations
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: gothic-and-dungeon-art-directions
+  categoryName: 9. Gothic & Dungeon Art Directions
+  tags:
+    - curation-v2
+    - gothic-and-dungeon-art-directions
+    - fog-village
+    - gothic-art-direction
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: foggy village night art direction

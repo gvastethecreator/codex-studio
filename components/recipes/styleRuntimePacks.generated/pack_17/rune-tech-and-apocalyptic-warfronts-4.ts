@@ -441,4 +441,199 @@ export const GENERATED_STYLE_PRESETS = [
         'Astral Feudal Exorcists; Astral feudal exorcist fantasy with star lit armor; monastery astronomers; demon sealing geometry; celestial battlefield calm; Transform any subject with astral feudal exorcist logic',
     },
   },
+  {
+    id: 'SP17-126',
+    name: 'Relic Airship Armada',
+    displayName: 'Relic Airship Armada',
+    styleAnchors: ['Relic Airship Armada', 'holy war airship fleet', 'cathedral airships'],
+    category: '4. Rune-Tech & Apocalyptic Warfronts',
+    domain: 'holy war airship fleet',
+    negativePrompt:
+      'gore, readable runes or text, existing franchise armor or emblems, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Relic airship armada: fleets of cathedral-shaped airships with stained sails, bell towers and censers, crossing smoky skies in medieval formation.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; set the subject among or aboard ornate cathedral airships in a smoky sky.',
+      color_and_tone: 'Brass, soot black and stained-glass reds and blues against dusky skies.',
+      lighting_and_shadow: 'Backlit smoke, glowing windows and golden sunset rims.',
+      texture_and_material: 'Riveted brass hulls, weathered canvas, carved stone and bells.',
+      camera_and_composition: 'Wide sky vista with ships in layered formation.',
+      atmosphere_and_mood: 'Keep the requested mood with solemn airborne crusade.',
+      rendering_and_quality:
+        'Detailed painterly finish with clear ship silhouettes, kept consistent across the whole image.',
+      creative_brief:
+        "Relic airship armada: fleets of cathedral-shaped airships with stained sails, bell towers and censers, crossing smoky skies in medieval formation. Carry it through cathedral airships, stained sails, smoky sky, formation. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'cathedral airships; stained sails; smoky sky; formation',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-127',
+    name: 'Plasma Rune Forge',
+    displayName: 'Plasma Rune Forge',
+    styleAnchors: ['Plasma Rune Forge', 'forge of glowing rune metal', 'plasma glow'],
+    category: '4. Rune-Tech & Apocalyptic Warfronts',
+    domain: 'forge of glowing rune metal',
+    negativePrompt:
+      'gore, readable runes or text, existing franchise armor or emblems, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Plasma rune forge: dark forges where metal is shaped with glowing plasma and runes that burn into the steel, sparks and white-hot light in a black workshop.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; bathe the subject in white-hot forge light and burning rune glow.',
+      color_and_tone: 'Black and iron grey with white-hot plasma, cyan runes and orange sparks.',
+      lighting_and_shadow: 'Intense glow from the forge with deep surrounding shadow.',
+      texture_and_material:
+        'Molten metal, soot, sparks and scorched stone, kept consistent across the whole image.',
+      camera_and_composition:
+        'Close dramatic workshop view around the anvil, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with fierce creative power.',
+      rendering_and_quality:
+        'Vivid glow with readable metal forms, kept consistent across the whole image.',
+      creative_brief:
+        "Plasma rune forge: dark forges where metal is shaped with glowing plasma and runes that burn into the steel, sparks and white-hot light in a black workshop. Carry it through plasma glow, burning runes, sparks, black forge. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'plasma glow; burning runes; sparks; black forge',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-128',
+    name: 'Solar Monastery Engine',
+    displayName: 'Solar Monastery Engine',
+    styleAnchors: ['Solar Monastery Engine', 'sun-powered monastery machine', 'mirror machines'],
+    category: '4. Rune-Tech & Apocalyptic Warfronts',
+    domain: 'sun-powered monastery machine',
+    negativePrompt:
+      'gore, readable runes or text, existing franchise armor or emblems, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Solar monastery engine: mountain monasteries built around vast golden mirror machines that gather sunlight, monks tending lenses, gears and prayer wheels.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; place the subject among golden sun-gathering mirrors and monastery machinery.',
+      color_and_tone: 'Blazing gold, white stone and deep sky blue.',
+      lighting_and_shadow:
+        'Concentrated sunbeams and brilliant reflections, kept consistent across the whole image.',
+      texture_and_material: 'Polished brass mirrors, whitewashed stone and prayer flags.',
+      camera_and_composition: 'High mountain view with beams converging on a point.',
+      atmosphere_and_mood: 'Keep the requested mood with radiant ascetic devotion.',
+      rendering_and_quality:
+        'Clean luminous painting with strong beam geometry, kept consistent across the whole image.',
+      creative_brief:
+        "Solar monastery engine: mountain monasteries built around vast golden mirror machines that gather sunlight, monks tending lenses, gears and prayer wheels. Carry it through mirror machines, converging sunbeams, mountain monastery, brass. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'mirror machines; converging sunbeams; mountain monastery; brass',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-129',
+    name: 'Clockwork Paladin Automaton',
+    displayName: 'Clockwork Paladin Automaton',
+    styleAnchors: [
+      'Clockwork Paladin Automaton',
+      'holy clockwork knight machine',
+      'brass automaton',
+    ],
+    category: '4. Rune-Tech & Apocalyptic Warfronts',
+    domain: 'holy clockwork knight machine',
+    negativePrompt:
+      'gore, readable runes or text, existing franchise armor or emblems, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Clockwork paladin automaton: mechanical holy knights of brass and enamel with visible gears in their chests, wound by a key, marching with ceremonial precision.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; render the subject as or beside a brass clockwork paladin with visible gearwork.',
+      color_and_tone: 'Polished brass, white enamel and deep red accents.',
+      lighting_and_shadow:
+        'Warm cathedral light glinting on metal, kept consistent across the whole image.',
+      texture_and_material:
+        'Gears, springs, engraved brass and enamel panels, kept consistent across the whole image.',
+      camera_and_composition:
+        'Heroic full-figure view with gear detail, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with uncanny mechanical faith.',
+      rendering_and_quality:
+        'Precise mechanical detail with clean finish, kept consistent across the whole image.',
+      creative_brief:
+        "Clockwork paladin automaton: mechanical holy knights of brass and enamel with visible gears in their chests, wound by a key, marching with ceremonial precision. Carry it through brass automaton, visible gears, winding key, holy knight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'brass automaton; visible gears; winding key; holy knight',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-130',
+    name: 'Rune-Circuit Engraving',
+    displayName: 'Rune-Circuit Engraving',
+    styleAnchors: [
+      'Rune-Circuit Engraving',
+      'runes etched like circuit boards',
+      'circuit-like runes',
+    ],
+    category: '4. Rune-Tech & Apocalyptic Warfronts',
+    domain: 'runes etched like circuit boards',
+    negativePrompt:
+      'readable runes, gore, readable runes or text, existing franchise armor or emblems, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Rune-circuit engraving: stone and metal surfaces carved with glowing rune tracks laid out like circuit boards, ancient magic wired like electronics.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; cover the subject or its surfaces with glowing circuit-like rune tracks.',
+      color_and_tone: 'Dark stone and bronze with glowing green or gold traces.',
+      lighting_and_shadow:
+        'Glow following the carved traces in darkness, kept consistent across the whole image.',
+      texture_and_material:
+        'Carved channels, metal inlay and glowing lines, kept consistent across the whole image.',
+      camera_and_composition:
+        'Close or medium view showing trace patterns, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with ancient technological mystery.',
+      rendering_and_quality:
+        'Crisp trace geometry with clean glow, kept consistent across the whole image.',
+      creative_brief:
+        "Rune-circuit engraving: stone and metal surfaces carved with glowing rune tracks laid out like circuit boards, ancient magic wired like electronics. Carry it through circuit-like runes, glowing traces, carved stone, inlay. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'circuit-like runes; glowing traces; carved stone; inlay',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP17-131',
+    name: 'Neon Sigil Siege Night',
+    displayName: 'Neon Sigil Siege Night',
+    styleAnchors: [
+      'Neon Sigil Siege Night',
+      'night siege lit by neon sigils',
+      'floating neon sigils',
+    ],
+    category: '4. Rune-Tech & Apocalyptic Warfronts',
+    domain: 'night siege lit by neon sigils',
+    negativePrompt:
+      'readable symbols, gore, readable runes or text, existing franchise armor or emblems, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Neon sigil siege night: medieval sieges at night lit by floating neon sigils, glowing banners and electric wards over dark stone walls.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original characters; set the subject in a night siege lit by floating neon sigils and wards.',
+      color_and_tone: 'Deep night blue and black with magenta and cyan sigil glow.',
+      lighting_and_shadow: 'Neon glow across stone and armor, deep shadows.',
+      texture_and_material: 'Wet stone, dark armor and glowing air symbols.',
+      camera_and_composition: 'Wide night battle with glowing points of light.',
+      atmosphere_and_mood: 'Keep the requested mood with electric nocturnal tension.',
+      rendering_and_quality:
+        'Clean glow with readable silhouettes, kept consistent across the whole image.',
+      creative_brief:
+        "Neon sigil siege night: medieval sieges at night lit by floating neon sigils, glowing banners and electric wards over dark stone walls. Carry it through floating neon sigils, night siege, glowing wards, wet stone. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'floating neon sigils; night siege; glowing wards; wet stone',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

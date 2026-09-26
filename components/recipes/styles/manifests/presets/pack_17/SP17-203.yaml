@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP17-203
+packId: pack_17
+name: Velvet Opera Vampire Direction
+styleAnchors:
+  - Velvet Opera Vampire Direction
+  - vampire opera house art direction
+  - velvet opera house
+displayName: Velvet Opera Vampire Direction
+category: 9. Gothic & Dungeon Art Directions
+domain: vampire opera house art direction
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - gothic-and-dungeon-art-directions
+  - opera-vampire
+  - gothic-art-direction
+  - portable-style-study
+visualDna:
+  aesthetic: 'Velvet opera vampire direction: painted art direction of crimson velvet opera houses, gilded boxes, chandeliers and aristocratic vampire audiences in shadow.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; set the subject in a crimson velvet opera house with gilded boxes.
+  color_and_tone: Crimson velvet, gold leaf and shadowed black, kept consistent across the whole image.
+  lighting_and_shadow: Stage light and chandelier glow in darkness, kept consistent across the whole image.
+  texture_and_material: Velvet, gilded plaster, crystal and silk, kept consistent across the whole image.
+  camera_and_composition: View from the stage or a box toward the audience.
+  atmosphere_and_mood: Keep the requested mood with decadent nocturnal glamour.
+  rendering_and_quality: Rich painterly finish, no gore, kept consistent across the whole image.
+  creative_brief: "Velvet opera vampire direction: painted art direction of crimson velvet opera houses, gilded boxes, chandeliers and aristocratic vampire audiences in shadow. Carry it through velvet opera house, gilded boxes, chandelier, vampire audience. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: velvet opera house; gilded boxes; chandelier; vampire audience
+avoidRules:
+  - gore
+  - interface or HUD
+  - existing game characters, logos or locations
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: gothic-and-dungeon-art-directions
+  categoryName: 9. Gothic & Dungeon Art Directions
+  tags:
+    - curation-v2
+    - gothic-and-dungeon-art-directions
+    - opera-vampire
+    - gothic-art-direction
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: vampire opera house art direction

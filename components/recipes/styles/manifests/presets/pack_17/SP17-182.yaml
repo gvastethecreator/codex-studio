@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP17-182
+packId: pack_17
+name: Vine Charcoal Fantasy Sketch
+styleAnchors:
+  - Vine Charcoal Fantasy Sketch
+  - soft vine charcoal drawing
+  - vine charcoal
+displayName: Vine Charcoal Fantasy Sketch
+category: 8. Medieval Fantasy Drawing Media
+domain: soft vine charcoal drawing
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - medieval-fantasy-drawing-media
+  - vine-charcoal
+  - drawing-media
+  - portable-style-study
+visualDna:
+  aesthetic: 'Vine charcoal fantasy sketch: soft grey vine-charcoal drawing with light searching lines, smudged tones and easy erasure, airy and atmospheric.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; sketch the subject lightly with searching charcoal lines and smudged tone.
+  color_and_tone: Soft greys on white paper, kept consistent across the whole image.
+  lighting_and_shadow: Smudged tonal shading and erased lights, kept consistent across the whole image.
+  texture_and_material: Powdery charcoal, finger smudges and eraser marks, kept consistent across the whole image.
+  camera_and_composition: Loose sketch with visible construction lines, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with airy exploratory calm.
+  rendering_and_quality: Light searching sketch, not heavy, kept consistent across the whole image.
+  creative_brief: "Vine charcoal fantasy sketch: soft grey vine-charcoal drawing with light searching lines, smudged tones and easy erasure, airy and atmospheric. Carry it through vine charcoal, searching lines, smudges, erased lights. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: vine charcoal; searching lines; smudges; erased lights
+avoidRules:
+  - digital smoothness
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: digital smoothness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: medieval-fantasy-drawing-media
+  categoryName: 8. Medieval Fantasy Drawing Media
+  tags:
+    - curation-v2
+    - medieval-fantasy-drawing-media
+    - vine-charcoal
+    - drawing-media
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: soft vine charcoal drawing

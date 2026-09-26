@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP17-140
+packId: pack_17
+name: Army Painting Step Guide
+styleAnchors:
+  - Army Painting Step Guide
+  - miniature painting progression
+  - stage progression
+displayName: Army Painting Step Guide
+category: 5. Grimdark Game Systems & Tabletop
+domain: miniature painting progression
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - medieval-fantasy-and-dungeon-zine
+  - grimdark-game-systems-and-tabletop
+  - paint-steps
+  - grimdark-game
+  - portable-style-study
+visualDna:
+  aesthetic: 'Army painting step guide: the same grim miniature shown in several stages from grey primer to basecoat, wash and highlights, lined up like a hobby tutorial.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; show the subject as one miniature repeated across painting stages.
+  color_and_tone: Progression from grey primer to full grim color.
+  lighting_and_shadow: Even hobby-photo lighting, kept consistent across the whole image.
+  texture_and_material: Primer, washes, drybrush and metallic paint, kept consistent across the whole image.
+  camera_and_composition: Row of identical miniatures at different stages, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with patient hobby craft.
+  rendering_and_quality: Clear stage differences without numbers, kept consistent across the whole image.
+  creative_brief: "Army painting step guide: the same grim miniature shown in several stages from grey primer to basecoat, wash and highlights, lined up like a hobby tutorial. Carry it through stage progression, identical miniatures, primer to finish, hobby. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: stage progression; identical miniatures; primer to finish; hobby
+avoidRules:
+  - step numbers or labels
+  - gore
+  - interface text, menus or health bars
+  - existing game characters or logos
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: step numbers or labels, gore, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: grimdark-game-systems-and-tabletop
+  categoryName: 5. Grimdark Game Systems & Tabletop
+  domain: miniature painting progression
+  tags:
+    - medieval-fantasy-and-dungeon-zine
+    - grimdark-game-systems-and-tabletop
+    - paint-steps
+    - grimdark-game
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

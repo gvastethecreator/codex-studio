@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP17-178
+packId: pack_17
+name: Trois Crayons Drawing
+styleAnchors:
+  - Trois Crayons Drawing
+  - black, red and white chalk drawing
+  - three chalks
+displayName: Trois Crayons Drawing
+category: 8. Medieval Fantasy Drawing Media
+domain: black, red and white chalk drawing
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - medieval-fantasy-drawing-media
+  - three-chalk
+  - drawing-media
+  - portable-style-study
+visualDna:
+  aesthetic: 'Trois crayons drawing: figure drawings in three chalks, black for shadow, red for flesh and white for highlights, on warm toned paper with lively hatching.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; model the subject with black shadows, red warmth and white highlights on toned paper.
+  color_and_tone: Black, sanguine red and white chalk on buff paper.
+  lighting_and_shadow: Soft modeled light built from three chalks, kept consistent across the whole image.
+  texture_and_material: Chalk grain, hatching and toned paper tooth, kept consistent across the whole image.
+  camera_and_composition: Figure study with breathing space, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with intimate old-master grace.
+  rendering_and_quality: Refined lively chalk drawing, kept consistent across the whole image.
+  creative_brief: "Trois crayons drawing: figure drawings in three chalks, black for shadow, red for flesh and white for highlights, on warm toned paper with lively hatching. Carry it through three chalks, toned paper, hatching, figure study. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: three chalks; toned paper; hatching; figure study
+avoidRules:
+  - digital smoothness
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: digital smoothness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: medieval-fantasy-drawing-media
+  categoryName: 8. Medieval Fantasy Drawing Media
+  tags:
+    - curation-v2
+    - medieval-fantasy-drawing-media
+    - three-chalk
+    - drawing-media
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: black, red and white chalk drawing

@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP17-150
+packId: pack_17
+name: Ink-Pad Ledger Stampwork
+styleAnchors:
+  - Ink-Pad Ledger Stampwork
+  - bureaucratic rubber stamps as image
+  - official stamps
+displayName: Ink-Pad Ledger Stampwork
+category: 6. Dungeon Zine Assemblage & Stampwork
+domain: bureaucratic rubber stamps as image
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - dungeon-zine-assemblage-and-stampwork
+  - ledger-stamps
+  - zine-assemblage
+  - portable-style-study
+visualDna:
+  aesthetic: 'Ink-pad ledger stampwork: images built from official-looking rubber stamps, date stamps, seals and signatures without words, pressed in violet and red on ledger paper.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; compose the subject from repeated official stamp impressions on ruled ledger paper.
+  color_and_tone: Violet and red stamp ink on pale green or cream ledger paper.
+  lighting_and_shadow: Flat print with no shading, kept consistent across the whole image.
+  texture_and_material: Uneven stamp pressure, ruled lines and ink smudges.
+  camera_and_composition: Top-down ledger page composition, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with dry bureaucratic dread.
+  rendering_and_quality: Convincing stamp texture with no readable words, kept consistent across the whole image.
+  creative_brief: "Ink-pad ledger stampwork: images built from official-looking rubber stamps, date stamps, seals and signatures without words, pressed in violet and red on ledger paper. Carry it through official stamps, ruled ledger paper, violet ink, no words. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: official stamps; ruled ledger paper; violet ink; no words
+avoidRules:
+  - readable words or dates
+  - readable text or lettering
+  - clean digital vector look
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable words or dates, readable text or lettering, clean digital vector look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: dungeon-zine-assemblage-and-stampwork
+  categoryName: 6. Dungeon Zine Assemblage & Stampwork
+  tags:
+    - curation-v2
+    - dungeon-zine-assemblage-and-stampwork
+    - ledger-stamps
+    - zine-assemblage
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: bureaucratic rubber stamps as image

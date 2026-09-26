@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP17-199
+packId: pack_17
+name: Infirmary Sepia Direction
+styleAnchors:
+  - Infirmary Sepia Direction
+  - old hospital ward art direction
+  - sepia ward
+displayName: Infirmary Sepia Direction
+category: 9. Gothic & Dungeon Art Directions
+domain: old hospital ward art direction
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - gothic-and-dungeon-art-directions
+  - infirmary-sepia
+  - gothic-art-direction
+  - portable-style-study
+visualDna:
+  aesthetic: 'Infirmary sepia direction: painted art direction of candlelit medieval hospital wards, rows of cots, linen screens, medicine tables and sepia-toned calm dread.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original characters; set the subject in a candlelit sepia hospital ward with linen screens.
+  color_and_tone: Sepia, yellowed linen and candle amber, kept consistent across the whole image.
+  lighting_and_shadow: Soft candlelight and screen silhouettes, kept consistent across the whole image.
+  texture_and_material: Linen, glass bottles, worn wood and plaster, kept consistent across the whole image.
+  camera_and_composition: Long ward perspective with rows of cots, kept consistent across the whole image.
+  atmosphere_and_mood: Keep the requested mood with quiet clinical dread.
+  rendering_and_quality: Painterly muted detail, no gore, kept consistent across the whole image.
+  creative_brief: "Infirmary sepia direction: painted art direction of candlelit medieval hospital wards, rows of cots, linen screens, medicine tables and sepia-toned calm dread. Carry it through sepia ward, rows of cots, linen screens, candlelight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: sepia ward; rows of cots; linen screens; candlelight
+avoidRules:
+  - gore
+  - interface or HUD
+  - existing game characters, logos or locations
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_17
+  packName: Medieval Fantasy & Dungeon Zine
+  categoryId: gothic-and-dungeon-art-directions
+  categoryName: 9. Gothic & Dungeon Art Directions
+  tags:
+    - curation-v2
+    - gothic-and-dungeon-art-directions
+    - infirmary-sepia
+    - gothic-art-direction
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: old hospital ward art direction
