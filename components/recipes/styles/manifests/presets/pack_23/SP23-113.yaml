@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-113
+packId: pack_23
+name: Bohemian Court Miniature
+styleAnchors:
+  - Bohemian Court Miniature
+  - late fourteenth-century prague court painting
+  - soft rounded figures
+displayName: Bohemian Court Miniature
+category: 4. Regional Manuscript Traditions
+domain: late fourteenth-century prague court painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - regional-manuscript-traditions
+  - bohemian-court
+  - regional-manuscript
+  - portable-style-study
+visualDna:
+  aesthetic: 'Bohemian court miniature: late fourteenth-century Prague court book painting with soft rounded figures, playful marginal bath attendants, wild men and knotted ribbons among acanthus.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original figures; give soft rounded figures and playful marginal characters tangled in ribbons.
+  color_and_tone: Soft rose, blue, green and burnished gold on vellum.
+  lighting_and_shadow: Gentle soft modeling on rounded forms, kept consistent across the whole image.
+  texture_and_material: Fine pigment, acanthus scrolls, knotted ribbons and gold.
+  camera_and_composition: Central scene framed by margin characters and scrolls.
+  atmosphere_and_mood: Keep the requested mood with playful courtly sweetness.
+  rendering_and_quality: Soft refined miniature with lively margins, kept consistent across the whole image.
+  creative_brief: "Bohemian court miniature: late fourteenth-century Prague court book painting with soft rounded figures, playful marginal bath attendants, wild men and knotted ribbons among acanthus. Carry it through soft rounded figures, knotted ribbons, acanthus scrolls, margin characters. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: soft rounded figures; knotted ribbons; acanthus scrolls; margin characters
+avoidRules:
+  - cultural stereotypes or costume caricature
+  - readable script
+  - mixing unrelated traditions
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or costume caricature, readable script, mixing unrelated traditions, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: regional-manuscript-traditions
+  categoryName: 4. Regional Manuscript Traditions
+  tags:
+    - curation-v2
+    - regional-manuscript-traditions
+    - bohemian-court
+    - regional-manuscript
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: late fourteenth-century prague court painting

@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-106
+packId: pack_23
+name: Coptic Interlace Frontispiece
+styleAnchors:
+  - Coptic Interlace Frontispiece
+  - coptic egyptian manuscript ornament
+  - ribbon interlace frame
+displayName: Coptic Interlace Frontispiece
+category: 4. Regional Manuscript Traditions
+domain: coptic egyptian manuscript ornament
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - regional-manuscript-traditions
+  - coptic
+  - regional-manuscript
+  - portable-style-study
+visualDna:
+  aesthetic: 'Coptic interlace frontispiece: Egyptian Christian book painting with bold interlace crosses and frames, birds and simple frontal figures in red, yellow and green on parchment.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original figures; render simple frontal figures or birds framed by bold ribbon interlace.
+  color_and_tone: Red, yellow ochre, green and black on warm parchment.
+  lighting_and_shadow: Flat with no modeling, kept consistent across the whole image.
+  texture_and_material: Thick outlines, ribbon interlace and aged parchment, kept consistent across the whole image.
+  camera_and_composition: Centered framed motif with birds or figures at the corners.
+  atmosphere_and_mood: Keep the requested mood with humble earnest devotion.
+  rendering_and_quality: Bold simple shapes with clear interlace, kept consistent across the whole image.
+  creative_brief: "Coptic interlace frontispiece: Egyptian Christian book painting with bold interlace crosses and frames, birds and simple frontal figures in red, yellow and green on parchment. Carry it through ribbon interlace frame, frontal figures, birds, warm parchment. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: ribbon interlace frame; frontal figures; birds; warm parchment
+avoidRules:
+  - cultural stereotypes or costume caricature
+  - readable script
+  - mixing unrelated traditions
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or costume caricature, readable script, mixing unrelated traditions, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: regional-manuscript-traditions
+  categoryName: 4. Regional Manuscript Traditions
+  tags:
+    - curation-v2
+    - regional-manuscript-traditions
+    - coptic
+    - regional-manuscript
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: coptic egyptian manuscript ornament

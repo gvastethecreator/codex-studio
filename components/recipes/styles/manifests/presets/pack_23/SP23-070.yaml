@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP23-070
+packId: pack_23
+name: Painted Armorial Roll
+styleAnchors:
+  - Painted Armorial Roll
+  - heraldic roll of arms
+  - painted shields
+displayName: Painted Armorial Roll
+category: 1. Manuscript Visual Systems
+domain: heraldic roll of arms
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - manuscript-visual-systems
+  - armorial-roll
+  - medieval-manuscript
+  - portable-style-study
+visualDna:
+  aesthetic: 'Painted armorial roll: rows of painted shields, crested helms and heraldic beasts laid out on a long parchment roll, flat tinctures and bold charges.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original figures; turn the subject into heraldic charges, crests or supporters in a row of arms.
+  color_and_tone: 'Heraldic tinctures: gules red, azure blue, vert green, or gold and argent white.'
+  lighting_and_shadow: Flat tinctures with light shading on helms and mantling.
+  texture_and_material: Parchment roll, opaque tempera and ink outlines, kept consistent across the whole image.
+  camera_and_composition: Rows or a single large achievement of arms on the roll.
+  atmosphere_and_mood: Keep the requested mood with proud ceremonial order.
+  rendering_and_quality: Crisp heraldic clarity with bold simple charges, kept consistent across the whole image.
+  creative_brief: "Painted armorial roll: rows of painted shields, crested helms and heraldic beasts laid out on a long parchment roll, flat tinctures and bold charges. Carry it through painted shields, heraldic beasts, flat tinctures, parchment roll. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: painted shields; heraldic beasts; flat tinctures; parchment roll
+avoidRules:
+  - readable mottoes
+  - real family arms
+  - readable script or lettering
+  - modern objects unless requested
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable mottoes, real family arms, readable script or lettering, modern objects unless requested, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: manuscript-visual-systems
+  categoryName: 1. Manuscript Visual Systems
+  tags:
+    - curation-v2
+    - manuscript-visual-systems
+    - armorial-roll
+    - medieval-manuscript
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: heraldic roll of arms

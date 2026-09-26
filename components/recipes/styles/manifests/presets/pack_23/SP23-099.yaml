@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-099
+packId: pack_23
+name: Tooled Leather Binding
+styleAnchors:
+  - Tooled Leather Binding
+  - blind-tooled leather book cover
+  - blind-tooled stamps
+displayName: Tooled Leather Binding
+category: 3. Medieval Material Studies
+domain: blind-tooled leather book cover
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - medieval-material-studies
+  - tooled-leather
+  - medieval-material
+  - portable-style-study
+visualDna:
+  aesthetic: 'Tooled leather binding: medieval book covers in brown calf blind-tooled with small stamps of beasts, rosettes and lattices, brass bosses and clasps.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original figures; press the subject into leather as repeated stamped tools and a central panel.
+  color_and_tone: Warm brown and dark tan leather with tarnished brass.
+  lighting_and_shadow: Raking light reveals the pressed impressions, kept consistent across the whole image.
+  texture_and_material: Blind-tooled stamps, scuffed leather, brass bosses and clasps.
+  camera_and_composition: Top-down view of a book cover filling the card.
+  atmosphere_and_mood: Keep the requested mood with old library mystery.
+  rendering_and_quality: Crisp stamped impressions with believable wear, kept consistent across the whole image.
+  creative_brief: "Tooled leather binding: medieval book covers in brown calf blind-tooled with small stamps of beasts, rosettes and lattices, brass bosses and clasps. Carry it through blind-tooled stamps, brown calf, brass bosses, raking light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: blind-tooled stamps; brown calf; brass bosses; raking light
+avoidRules:
+  - readable title
+  - readable inscriptions
+  - plastic or modern materials
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable title, readable inscriptions, plastic or modern materials, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: medieval-material-studies
+  categoryName: 3. Medieval Material Studies
+  tags:
+    - curation-v2
+    - medieval-material-studies
+    - tooled-leather
+    - medieval-material
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: blind-tooled leather book cover

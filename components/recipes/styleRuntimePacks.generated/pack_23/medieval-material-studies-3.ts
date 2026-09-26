@@ -148,4 +148,467 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP23-087',
+    name: 'Millefleur Tapestry',
+    displayName: 'Millefleur Tapestry',
+    styleAnchors: [
+      'Millefleur Tapestry',
+      'thousand-flower woven tapestry',
+      'thousand tiny flowers',
+    ],
+    category: '3. Medieval Material Studies',
+    domain: 'thousand-flower woven tapestry',
+    negativePrompt:
+      'readable inscriptions, plastic or modern materials, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Millefleur tapestry: woven wool and silk hangings with figures and animals floating on a dark ground densely scattered with hundreds of tiny flowering plants.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; float the subject on a dense dark ground of tiny woven flowers.',
+      color_and_tone: 'Deep blue-green or red ground with bright woven flowers and figures.',
+      lighting_and_shadow: 'Flat woven color with hatched shading in wool.',
+      texture_and_material: 'Visible weave, wool and silk sheen, hatched color steps.',
+      camera_and_composition: 'Figures floating without horizon on the flowered field.',
+      atmosphere_and_mood: 'Keep the requested mood with enchanted courtly stillness.',
+      rendering_and_quality: 'Dense even flower scatter with clear woven figures.',
+      creative_brief:
+        "Millefleur tapestry: woven wool and silk hangings with figures and animals floating on a dark ground densely scattered with hundreds of tiny flowering plants. Carry it through thousand tiny flowers, dark woven ground, floating figures, wool texture. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'thousand tiny flowers; dark woven ground; floating figures; wool texture',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-088',
+    name: 'Gold Couched Embroidery',
+    displayName: 'Gold Couched Embroidery',
+    styleAnchors: [
+      'Gold Couched Embroidery',
+      'precious gold thread embroidery',
+      'couched gold ground',
+    ],
+    category: '3. Medieval Material Studies',
+    domain: 'precious gold thread embroidery',
+    negativePrompt:
+      'readable inscriptions, plastic or modern materials, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Gold couched embroidery: medieval luxury needlework with gold threads laid in patterns and couched down, silk split-stitch faces and jeweled seed-pearl borders.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; embroider the subject in silk split stitch against a shimmering couched gold ground.',
+      color_and_tone: 'Shimmering gold ground with silk blues, reds and greens.',
+      lighting_and_shadow: 'Gold threads catch light differently as their direction changes.',
+      texture_and_material: 'Couched gold threads, split-stitch silk and seed pearls.',
+      camera_and_composition: 'Figures in arcaded panels on a vestment or hanging.',
+      atmosphere_and_mood: 'Keep the requested mood with glittering sacred luxury.',
+      rendering_and_quality:
+        'Fine needlework detail with visible thread direction, kept consistent across the whole image.',
+      creative_brief:
+        "Gold couched embroidery: medieval luxury needlework with gold threads laid in patterns and couched down, silk split-stitch faces and jeweled seed-pearl borders. Carry it through couched gold ground, split-stitch silk, seed pearls, thread sheen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'couched gold ground; split-stitch silk; seed pearls; thread sheen',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-089',
+    name: 'Carved Ivory Relief',
+    displayName: 'Carved Ivory Relief',
+    styleAnchors: ['Carved Ivory Relief', 'small carved ivory plaques', 'deep relief'],
+    category: '3. Medieval Material Studies',
+    domain: 'small carved ivory plaques',
+    negativePrompt:
+      'readable inscriptions, plastic or modern materials, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Carved ivory relief: small gothic ivory plaques and diptychs carved in deep relief, swaying figures under pointed arches, creamy surfaces with hints of old gilding.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; carve the subject as swaying relief figures in warm ivory.',
+      color_and_tone: 'Warm cream and honey ivory with faint traces of gold and paint.',
+      lighting_and_shadow: 'Soft raking light and deep shadows in the carved recesses.',
+      texture_and_material: 'Smooth polished ivory, fine grain lines and hairline cracks.',
+      camera_and_composition:
+        'Framed relief panels under small pointed arches, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with intimate precious devotion.',
+      rendering_and_quality:
+        'Delicate carving with believable ivory translucency, kept consistent across the whole image.',
+      creative_brief:
+        "Carved ivory relief: small gothic ivory plaques and diptychs carved in deep relief, swaying figures under pointed arches, creamy surfaces with hints of old gilding. Carry it through deep relief, swaying figures, pointed arches, warm polished ivory. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'deep relief; swaying figures; pointed arches; warm polished ivory',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-090',
+    name: 'Brass Rubbing Effigy',
+    displayName: 'Brass Rubbing Effigy',
+    styleAnchors: ['Brass Rubbing Effigy', 'rubbed memorial brass image', 'wax rubbing grain'],
+    category: '3. Medieval Material Studies',
+    domain: 'rubbed memorial brass image',
+    negativePrompt:
+      'readable epitaphs, readable inscriptions, plastic or modern materials, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Brass rubbing effigy: waxy rubbings taken from engraved memorial brasses, life-size flat figures in armor or gowns rendered in gold or black wax on dark paper.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; show the subject as a flat engraved effigy captured by wax rubbing.',
+      color_and_tone: 'Gold or black wax on black or cream paper.',
+      lighting_and_shadow:
+        'No lighting, only rubbed line and tone, kept consistent across the whole image.',
+      texture_and_material: 'Waxy crayon grain, raised line edges and paper texture.',
+      camera_and_composition: 'Full-length frontal effigy lying flat, feet on a small animal.',
+      atmosphere_and_mood: 'Keep the requested mood with quiet memorial calm.',
+      rendering_and_quality:
+        'Clean engraved outlines with even waxy grain, kept consistent across the whole image.',
+      creative_brief:
+        "Brass rubbing effigy: waxy rubbings taken from engraved memorial brasses, life-size flat figures in armor or gowns rendered in gold or black wax on dark paper. Carry it through wax rubbing grain, flat effigy, engraved outlines, dark paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'wax rubbing grain; flat effigy; engraved outlines; dark paper',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-091',
+    name: 'Inlaid Floor Tile',
+    displayName: 'Inlaid Floor Tile',
+    styleAnchors: ['Inlaid Floor Tile', 'two-color inlaid clay tiles', 'red clay'],
+    category: '3. Medieval Material Studies',
+    domain: 'two-color inlaid clay tiles',
+    negativePrompt:
+      'readable inscriptions, plastic or modern materials, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Inlaid floor tile: medieval two-color clay tiles, red earthenware inlaid with pale yellow slip designs of beasts, heraldry and foliage, worn smooth by feet.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; inlay the subject in pale slip on red clay tiles in a repeating floor.',
+      color_and_tone: 'Brick red clay with cream or yellow slip and a thin glaze.',
+      lighting_and_shadow:
+        'Glossy glaze highlights and worn matte patches, kept consistent across the whole image.',
+      texture_and_material: 'Worn glaze, chipped corners, grout lines and slip inlay.',
+      camera_and_composition: 'Top-down view of a tile or a floor of tiles.',
+      atmosphere_and_mood: 'Keep the requested mood with worn centuries of footsteps.',
+      rendering_and_quality:
+        'Clear two-color design with believable wear, kept consistent across the whole image.',
+      creative_brief:
+        "Inlaid floor tile: medieval two-color clay tiles, red earthenware inlaid with pale yellow slip designs of beasts, heraldry and foliage, worn smooth by feet. Carry it through red clay, yellow slip inlay, worn glaze, repeating tiles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'red clay; yellow slip inlay; worn glaze; repeating tiles',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-092',
+    name: 'Pilgrim Badge Pewter',
+    displayName: 'Pilgrim Badge Pewter',
+    styleAnchors: ['Pilgrim Badge Pewter', 'cast lead-tin souvenir badges', 'openwork pewter'],
+    category: '3. Medieval Material Studies',
+    domain: 'cast lead-tin souvenir badges',
+    negativePrompt:
+      'readable inscriptions, plastic or modern materials, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Pilgrim badge pewter: small cheap lead-tin openwork badges cast in stone molds, souvenirs of shrines with tiny figures, ships and symbols, dull grey and slightly bent.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; cast the subject as a tiny openwork pewter badge with a pin.',
+      color_and_tone:
+        'Dull grey pewter with dark oxidation, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Soft metallic highlights on raised parts, kept consistent across the whole image.',
+      texture_and_material: 'Rough cast metal, openwork gaps, bent pins and mold seams.',
+      camera_and_composition:
+        'Single badge on dark cloth or earth, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with humble traveler devotion.',
+      rendering_and_quality:
+        'Crude charming casting with believable wear, kept consistent across the whole image.',
+      creative_brief:
+        "Pilgrim badge pewter: small cheap lead-tin openwork badges cast in stone molds, souvenirs of shrines with tiny figures, ships and symbols, dull grey and slightly bent. Carry it through openwork pewter, tiny figures, bent pin, dull oxidation. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'openwork pewter; tiny figures; bent pin; dull oxidation',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-093',
+    name: 'Repoussé Gilt Metal',
+    displayName: 'Repoussé Gilt Metal',
+    styleAnchors: ['Repoussé Gilt Metal', 'hammered gilded relief metal', 'hammered relief'],
+    category: '3. Medieval Material Studies',
+    domain: 'hammered gilded relief metal',
+    negativePrompt:
+      'readable inscriptions, plastic or modern materials, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Repoussé gilt metal: thin sheets of copper or silver hammered from behind into relief, then gilded and set with cabochon stones, as on reliquaries and book covers.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; hammer the subject into raised gilded relief with stones set around it.',
+      color_and_tone: 'Warm gilded copper, silver and rich cabochon reds and blues.',
+      lighting_and_shadow: 'Bright metallic highlights on raised forms, dark recesses.',
+      texture_and_material: 'Hammer marks, punched grounds, gilding wear and polished stones.',
+      camera_and_composition:
+        'Frontal relief panel filling the card, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with heavy precious splendor.',
+      rendering_and_quality:
+        'Convincing hammered relief with jeweled accents, kept consistent across the whole image.',
+      creative_brief:
+        "Repoussé gilt metal: thin sheets of copper or silver hammered from behind into relief, then gilded and set with cabochon stones, as on reliquaries and book covers. Carry it through hammered relief, gilded metal, cabochon stones, punched ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'hammered relief; gilded metal; cabochon stones; punched ground',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-094',
+    name: 'Carved Oak Misericord',
+    displayName: 'Carved Oak Misericord',
+    styleAnchors: ['Carved Oak Misericord', 'humorous choir seat carving', 'dark oak'],
+    category: '3. Medieval Material Studies',
+    domain: 'humorous choir seat carving',
+    negativePrompt:
+      'readable inscriptions, plastic or modern materials, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Carved oak misericord: small hidden carvings under choir seats, dark polished oak showing humorous everyday scenes, fights, beasts and fools framed by leafy supporters.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; carve the subject in dark oak as a small humorous relief with leafy side roundels.',
+      color_and_tone: 'Dark honey and black oak with polished highlights.',
+      lighting_and_shadow:
+        'Warm low light raking across the carving, kept consistent across the whole image.',
+      texture_and_material: 'Wood grain, chisel marks, polished edges and dust in recesses.',
+      camera_and_composition: 'Central carved scene with two leafy roundels at the sides.',
+      atmosphere_and_mood: 'Keep the requested mood with hidden medieval humor.',
+      rendering_and_quality:
+        'Clear carved relief with believable old wood, kept consistent across the whole image.',
+      creative_brief:
+        "Carved oak misericord: small hidden carvings under choir seats, dark polished oak showing humorous everyday scenes, fights, beasts and fools framed by leafy supporters. Carry it through dark oak, hidden humor, leafy roundels, chisel marks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'dark oak; hidden humor; leafy roundels; chisel marks',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-095',
+    name: 'Gold-Ground Tempera Panel',
+    displayName: 'Gold-Ground Tempera Panel',
+    styleAnchors: ['Gold-Ground Tempera Panel', 'egg tempera on gold panel', 'tooled gold ground'],
+    category: '3. Medieval Material Studies',
+    domain: 'egg tempera on gold panel',
+    negativePrompt:
+      'readable inscriptions, plastic or modern materials, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Gold-ground tempera panel: egg tempera painted on wooden panels with tooled gold backgrounds, fine hatched modeling, green underpaint in flesh and punched halos.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; paint the subject in fine hatched tempera against a tooled gold ground.',
+      color_and_tone: 'Gold ground with lapis, vermilion and green-toned flesh.',
+      lighting_and_shadow:
+        'Soft hatched modeling, gold glowing behind, kept consistent across the whole image.',
+      texture_and_material: 'Egg tempera hatching, punched gold patterns and craquelure.',
+      camera_and_composition: 'Figures on shallow ground under a pointed panel top.',
+      atmosphere_and_mood: 'Keep the requested mood with serene luminous stillness.',
+      rendering_and_quality:
+        'Delicate hatched tempera with punched gold detail, kept consistent across the whole image.',
+      creative_brief:
+        "Gold-ground tempera panel: egg tempera painted on wooden panels with tooled gold backgrounds, fine hatched modeling, green underpaint in flesh and punched halos. Carry it through tooled gold ground, hatched tempera, punched halos, wooden panel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'tooled gold ground; hatched tempera; punched halos; wooden panel',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-096',
+    name: 'Carved Stone Capital',
+    displayName: 'Carved Stone Capital',
+    styleAnchors: ['Carved Stone Capital', 'romanesque figured capitals', 'column capital'],
+    category: '3. Medieval Material Studies',
+    domain: 'romanesque figured capitals',
+    negativePrompt:
+      'readable inscriptions, plastic or modern materials, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Carved stone capital: romanesque column capitals carved with crowded beasts, acrobats, demons and foliage that wrap around the stone block, worn and lichen-stained.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; carve the subject wrapping around a column capital among beasts and foliage.',
+      color_and_tone: 'Warm limestone with grey weathering and faint old paint.',
+      lighting_and_shadow: 'Strong light from above, deep shadows under the carving.',
+      texture_and_material:
+        'Chiseled stone, weathered edges, lichen and dust, kept consistent across the whole image.',
+      camera_and_composition: 'Close view of one capital atop a column in a cloister.',
+      atmosphere_and_mood: 'Keep the requested mood with strange ancient vitality.',
+      rendering_and_quality:
+        'Crowded vigorous carving with believable weathering, kept consistent across the whole image.',
+      creative_brief:
+        "Carved stone capital: romanesque column capitals carved with crowded beasts, acrobats, demons and foliage that wrap around the stone block, worn and lichen-stained. Carry it through column capital, wrapped beasts, chiseled foliage, lichen stone. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'column capital; wrapped beasts; chiseled foliage; lichen stone',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-097',
+    name: 'Walrus-Ivory Game Piece',
+    displayName: 'Walrus-Ivory Game Piece',
+    styleAnchors: ['Walrus-Ivory Game Piece', 'carved medieval chess figures', 'squat figures'],
+    category: '3. Medieval Material Studies',
+    domain: 'carved medieval chess figures',
+    negativePrompt:
+      'readable inscriptions, plastic or modern materials, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Walrus-ivory game piece: squat carved chess figures with bulging eyes, worried faces, shields and swords, carved from walrus tusk with a stained creamy finish.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; carve the subject as a squat bug-eyed game piece in stained ivory.',
+      color_and_tone: 'Creamy ivory with brown staining and faint red traces.',
+      lighting_and_shadow: 'Soft side light with small cast shadows on a board.',
+      texture_and_material: 'Carved tusk grain, cracks, worn edges and incised patterns.',
+      camera_and_composition: 'One or a few pieces standing on a board close up.',
+      atmosphere_and_mood: 'Keep the requested mood with grumpy tabletop character.',
+      rendering_and_quality:
+        'Convincing carved ivory with expressive faces, kept consistent across the whole image.',
+      creative_brief:
+        "Walrus-ivory game piece: squat carved chess figures with bulging eyes, worried faces, shields and swords, carved from walrus tusk with a stained creamy finish. Carry it through squat figures, bulging eyes, stained ivory, incised patterns. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'squat figures; bulging eyes; stained ivory; incised patterns',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-098',
+    name: 'Weathered Gargoyle Stone',
+    displayName: 'Weathered Gargoyle Stone',
+    styleAnchors: [
+      'Weathered Gargoyle Stone',
+      'grotesque rooftop stone carving',
+      'grotesque carving',
+    ],
+    category: '3. Medieval Material Studies',
+    domain: 'grotesque rooftop stone carving',
+    negativePrompt:
+      'readable inscriptions, plastic or modern materials, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Weathered gargoyle stone: grotesque carved waterspouts and chimeras on gothic rooftops, open-mouthed beasts stained black by rain, moss in every crevice.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; carve the subject as a weathered grotesque perched on a gothic roof ledge.',
+      color_and_tone: 'Grey limestone streaked black with rain and green moss.',
+      lighting_and_shadow: 'Overcast sky or stormy dusk light with deep shadows.',
+      texture_and_material: 'Eroded stone, rain streaks, moss, pigeon feathers and cracks.',
+      camera_and_composition: 'Close view of the grotesque with rooftops or city below.',
+      atmosphere_and_mood: 'Keep the requested mood with brooding watchful menace.',
+      rendering_and_quality:
+        'Convincing weathered stone with rain detail, kept consistent across the whole image.',
+      creative_brief:
+        "Weathered gargoyle stone: grotesque carved waterspouts and chimeras on gothic rooftops, open-mouthed beasts stained black by rain, moss in every crevice. Carry it through grotesque carving, rain-stained stone, moss, rooftop height. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'grotesque carving; rain-stained stone; moss; rooftop height',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-099',
+    name: 'Tooled Leather Binding',
+    displayName: 'Tooled Leather Binding',
+    styleAnchors: [
+      'Tooled Leather Binding',
+      'blind-tooled leather book cover',
+      'blind-tooled stamps',
+    ],
+    category: '3. Medieval Material Studies',
+    domain: 'blind-tooled leather book cover',
+    negativePrompt:
+      'readable title, readable inscriptions, plastic or modern materials, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Tooled leather binding: medieval book covers in brown calf blind-tooled with small stamps of beasts, rosettes and lattices, brass bosses and clasps.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; press the subject into leather as repeated stamped tools and a central panel.',
+      color_and_tone: 'Warm brown and dark tan leather with tarnished brass.',
+      lighting_and_shadow:
+        'Raking light reveals the pressed impressions, kept consistent across the whole image.',
+      texture_and_material: 'Blind-tooled stamps, scuffed leather, brass bosses and clasps.',
+      camera_and_composition: 'Top-down view of a book cover filling the card.',
+      atmosphere_and_mood: 'Keep the requested mood with old library mystery.',
+      rendering_and_quality:
+        'Crisp stamped impressions with believable wear, kept consistent across the whole image.',
+      creative_brief:
+        "Tooled leather binding: medieval book covers in brown calf blind-tooled with small stamps of beasts, rosettes and lattices, brass bosses and clasps. Carry it through blind-tooled stamps, brown calf, brass bosses, raking light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'blind-tooled stamps; brown calf; brass bosses; raking light',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-100',
+    name: 'Cast Bronze Aquamanile',
+    displayName: 'Cast Bronze Aquamanile',
+    styleAnchors: ['Cast Bronze Aquamanile', 'animal-shaped bronze water vessel', 'animal vessel'],
+    category: '3. Medieval Material Studies',
+    domain: 'animal-shaped bronze water vessel',
+    negativePrompt:
+      'readable inscriptions, plastic or modern materials, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Cast bronze aquamanile: medieval water vessels cast in bronze as lions, horses, knights and dragons, with spouts in their mouths and handles on their backs.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; cast the subject as a bronze pouring vessel with a spout and handle.',
+      color_and_tone: 'Warm bronze with green patina and polished highlights.',
+      lighting_and_shadow:
+        'Museum spotlight with soft reflections on bronze, kept consistent across the whole image.',
+      texture_and_material: 'Cast bronze, incised fur patterns, patina and wear.',
+      camera_and_composition:
+        'Single vessel on a plinth, three-quarter view, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with proud whimsical craft.',
+      rendering_and_quality:
+        'Convincing cast metal with charming stylization, kept consistent across the whole image.',
+      creative_brief:
+        "Cast bronze aquamanile: medieval water vessels cast in bronze as lions, horses, knights and dragons, with spouts in their mouths and handles on their backs. Carry it through animal vessel, spout mouth, back handle, bronze patina. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'animal vessel; spout mouth; back handle; bronze patina',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-101',
+    name: 'Painted Wooden Casket',
+    displayName: 'Painted Wooden Casket',
+    styleAnchors: ['Painted Wooden Casket', 'small painted wooden chest', 'painted panels'],
+    category: '3. Medieval Material Studies',
+    domain: 'small painted wooden chest',
+    negativePrompt:
+      'readable inscriptions, plastic or modern materials, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Painted wooden casket: small medieval chests painted with courtly love scenes, heraldry and animals in tempera, with iron hinges and worn gilded edges.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; paint the subject on the panels and lid of a small wooden casket.',
+      color_and_tone: 'Faded red, green and gold tempera on wood.',
+      lighting_and_shadow: 'Warm soft light on the box and its iron fittings.',
+      texture_and_material: 'Worn tempera, wood grain, iron hinges and flaking gilt.',
+      camera_and_composition: 'Three-quarter view of the casket with lid slightly open.',
+      atmosphere_and_mood: 'Keep the requested mood with secret treasured keepsakes.',
+      rendering_and_quality:
+        'Delicate painted scenes with believable wear, kept consistent across the whole image.',
+      creative_brief:
+        "Painted wooden casket: small medieval chests painted with courtly love scenes, heraldry and animals in tempera, with iron hinges and worn gilded edges. Carry it through painted panels, iron hinges, courtly scenes, flaking gilt. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'painted panels; iron hinges; courtly scenes; flaking gilt',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

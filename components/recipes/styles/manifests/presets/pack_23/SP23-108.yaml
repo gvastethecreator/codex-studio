@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-108
+packId: pack_23
+name: Song Court Album Leaf
+styleAnchors:
+  - Song Court Album Leaf
+  - song dynasty small album painting
+  - one-corner composition
+displayName: Song Court Album Leaf
+category: 4. Regional Manuscript Traditions
+domain: song dynasty small album painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - regional-manuscript-traditions
+  - song-album
+  - regional-manuscript
+  - portable-style-study
+visualDna:
+  aesthetic: 'Song court album leaf: small Chinese court paintings on silk fans and album leaves, one corner composition, misty distances, precise birds and branches, vast empty space.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original figures; place the subject in one corner with precise detail and vast misty space.
+  color_and_tone: Soft silk browns, pale mineral greens and ink grey.
+  lighting_and_shadow: Soft atmospheric mist and graded ink wash, kept consistent across the whole image.
+  texture_and_material: Aged silk weave, fine ink lines and light color washes.
+  camera_and_composition: Asymmetric one-corner composition on a round or square leaf.
+  atmosphere_and_mood: Keep the requested mood with poetic contemplative stillness.
+  rendering_and_quality: Precise brush detail balanced with empty space, kept consistent across the whole image.
+  creative_brief: "Song court album leaf: small Chinese court paintings on silk fans and album leaves, one corner composition, misty distances, precise birds and branches, vast empty space. Carry it through one-corner composition, misty space, aged silk, precise birds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: one-corner composition; misty space; aged silk; precise birds
+avoidRules:
+  - cultural stereotypes or costume caricature
+  - readable script
+  - mixing unrelated traditions
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or costume caricature, readable script, mixing unrelated traditions, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: regional-manuscript-traditions
+  categoryName: 4. Regional Manuscript Traditions
+  tags:
+    - curation-v2
+    - regional-manuscript-traditions
+    - song-album
+    - regional-manuscript
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: song dynasty small album painting

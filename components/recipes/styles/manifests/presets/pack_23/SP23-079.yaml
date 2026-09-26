@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP23-079
+packId: pack_23
+name: Hand-Stenciled Card Deck Print
+styleAnchors:
+  - Hand-Stenciled Card Deck Print
+  - early printed playing cards
+  - court figure
+displayName: Hand-Stenciled Card Deck Print
+category: 2. Print & Engraving
+domain: early printed playing cards
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - print-and-engraving
+  - early-cards
+  - early-print
+  - portable-style-study
+visualDna:
+  aesthetic: 'Hand-stenciled card deck print: early woodcut playing cards with stiff court figures and pip patterns, colored through stencils in red, yellow and green.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original figures; render the subject as a stiff court figure or pip design on an early playing card.
+  color_and_tone: Black outlines with stenciled red, yellow, green and flesh tones.
+  lighting_and_shadow: Flat with no shading, kept consistent across the whole image.
+  texture_and_material: Worn card stock, stencil edges and rubbed corners.
+  camera_and_composition: Single upright figure filling a narrow rounded card.
+  atmosphere_and_mood: Keep the requested mood with gamblers' tavern charm.
+  rendering_and_quality: Simple bold figure with stenciled patches, kept consistent across the whole image.
+  creative_brief: "Hand-stenciled card deck print: early woodcut playing cards with stiff court figures and pip patterns, colored through stencils in red, yellow and green. Carry it through court figure, stenciled color, narrow card, pip patterns. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: court figure; stenciled color; narrow card; pip patterns
+avoidRules:
+  - modern card indices
+  - readable letters
+  - readable type or lettering
+  - modern screen printing look
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: modern card indices, readable letters, readable type or lettering, modern screen printing look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: print-and-engraving
+  categoryName: 2. Print & Engraving
+  tags:
+    - curation-v2
+    - print-and-engraving
+    - early-cards
+    - early-print
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: early printed playing cards

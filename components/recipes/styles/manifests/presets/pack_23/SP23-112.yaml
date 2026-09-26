@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-112
+packId: pack_23
+name: Icelandic Saga Margin Drawing
+styleAnchors:
+  - Icelandic Saga Margin Drawing
+  - icelandic manuscript pen drawing
+  - brown ink
+displayName: Icelandic Saga Margin Drawing
+category: 4. Regional Manuscript Traditions
+domain: icelandic manuscript pen drawing
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - regional-manuscript-traditions
+  - icelandic-saga
+  - regional-manuscript
+  - portable-style-study
+visualDna:
+  aesthetic: 'Icelandic saga margin drawing: rough lively pen drawings from Icelandic manuscripts, vigorous gods, heroes and sea monsters drawn in brown ink with simple washes.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original figures; draw the subject in vigorous brown-ink lines with rough energetic gestures.
+  color_and_tone: Brown ink with faded red and green washes on yellowed vellum.
+  lighting_and_shadow: No modeling beyond hatched strokes, kept consistent across the whole image.
+  texture_and_material: Rough pen lines, worn vellum, stains and holes.
+  camera_and_composition: Single figure or struggle filling a margin or page.
+  atmosphere_and_mood: Keep the requested mood with rugged northern vigor.
+  rendering_and_quality: Energetic rough drawing with strong character, kept consistent across the whole image.
+  creative_brief: "Icelandic saga margin drawing: rough lively pen drawings from Icelandic manuscripts, vigorous gods, heroes and sea monsters drawn in brown ink with simple washes. Carry it through brown ink, rough vigorous line, worn vellum, sea monsters. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: brown ink; rough vigorous line; worn vellum; sea monsters
+avoidRules:
+  - cultural stereotypes or costume caricature
+  - readable script
+  - mixing unrelated traditions
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or costume caricature, readable script, mixing unrelated traditions, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: regional-manuscript-traditions
+  categoryName: 4. Regional Manuscript Traditions
+  tags:
+    - curation-v2
+    - regional-manuscript-traditions
+    - icelandic-saga
+    - regional-manuscript
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: icelandic manuscript pen drawing

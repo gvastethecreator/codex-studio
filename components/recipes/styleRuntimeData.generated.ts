@@ -211,7 +211,7 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     cardTitle: 'Medieval Visual Atlas',
     cardDescription:
       'Transferable medieval visual studies of manuscript, print, textile, regional and later fantasy methods. Deliberate modifiers and representation profiles remain separate from full styles.',
-    presetCount: 58,
+    presetCount: 117,
   },
   {
     id: 'pack_24',

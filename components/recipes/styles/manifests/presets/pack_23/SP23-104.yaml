@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-104
+packId: pack_23
+name: Maqamat Tavern Miniature
+styleAnchors:
+  - Maqamat Tavern Miniature
+  - thirteenth-century baghdad maqamat painting
+  - expressive figures
+displayName: Maqamat Tavern Miniature
+category: 4. Regional Manuscript Traditions
+domain: thirteenth-century baghdad maqamat painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - regional-manuscript-traditions
+  - maqamat
+  - regional-manuscript
+  - portable-style-study
+visualDna:
+  aesthetic: 'Maqamat tavern miniature: thirteenth-century Baghdad illustrations of lively everyday stories, expressive figures in striped robes, camels, ships, taverns and libraries on plain grounds.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original figures; show expressive everyday figures in a lively story scene with lively gestures.
+  color_and_tone: Warm reds, blues, ochres and gold on a pale plain ground.
+  lighting_and_shadow: Flat with light modeling in robes, kept consistent across the whole image.
+  texture_and_material: Opaque pigment on paper, striped patterned textiles, simple settings.
+  camera_and_composition: Figures arranged in a row or around a central action.
+  atmosphere_and_mood: Keep the requested mood with witty worldly humor.
+  rendering_and_quality: Expressive faces and gestures with clear storytelling, kept consistent across the whole image.
+  creative_brief: "Maqamat tavern miniature: thirteenth-century Baghdad illustrations of lively everyday stories, expressive figures in striped robes, camels, ships, taverns and libraries on plain grounds. Carry it through expressive figures, striped robes, plain ground, everyday story. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: expressive figures; striped robes; plain ground; everyday story
+avoidRules:
+  - cultural stereotypes or costume caricature
+  - readable script
+  - mixing unrelated traditions
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or costume caricature, readable script, mixing unrelated traditions, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: regional-manuscript-traditions
+  categoryName: 4. Regional Manuscript Traditions
+  tags:
+    - curation-v2
+    - regional-manuscript-traditions
+    - maqamat
+    - regional-manuscript
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: thirteenth-century baghdad maqamat painting

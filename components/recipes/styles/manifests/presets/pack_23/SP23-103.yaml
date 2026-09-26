@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-103
+packId: pack_23
+name: Herat Timurid Garden Miniature
+styleAnchors:
+  - Herat Timurid Garden Miniature
+  - fifteenth-century herat painting
+  - tiled pavilion
+displayName: Herat Timurid Garden Miniature
+category: 4. Regional Manuscript Traditions
+domain: fifteenth-century herat painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - regional-manuscript-traditions
+  - timurid-herat
+  - regional-manuscript
+  - portable-style-study
+visualDna:
+  aesthetic: 'Herat Timurid garden miniature: fifteenth-century Persian book painting from Herat, jewel-toned gardens, tiled pavilions, slender figures and high horizons full of flowering trees.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original figures; place slender figures in a high-horizon garden with tiled pavilions and flowering trees.
+  color_and_tone: Lapis, turquoise, apricot, leaf green and gold sky.
+  lighting_and_shadow: Even jewel-like light with no cast shadows, kept consistent across the whole image.
+  texture_and_material: Fine opaque pigment, gold, tiny patterned tiles and carpets.
+  camera_and_composition: High viewpoint with stacked space rising to a gold sky.
+  atmosphere_and_mood: Keep the requested mood with poetic courtly beauty.
+  rendering_and_quality: Exquisite small detail with patterned surfaces, kept consistent across the whole image.
+  creative_brief: "Herat Timurid garden miniature: fifteenth-century Persian book painting from Herat, jewel-toned gardens, tiled pavilions, slender figures and high horizons full of flowering trees. Carry it through tiled pavilion, flowering garden, high horizon, jewel tones. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: tiled pavilion; flowering garden; high horizon; jewel tones
+avoidRules:
+  - cultural stereotypes or costume caricature
+  - readable script
+  - mixing unrelated traditions
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or costume caricature, readable script, mixing unrelated traditions, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: regional-manuscript-traditions
+  categoryName: 4. Regional Manuscript Traditions
+  tags:
+    - curation-v2
+    - regional-manuscript-traditions
+    - timurid-herat
+    - regional-manuscript
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: fifteenth-century herat painting

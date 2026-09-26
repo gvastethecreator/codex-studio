@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP23-098
+packId: pack_23
+name: Weathered Gargoyle Stone
+styleAnchors:
+  - Weathered Gargoyle Stone
+  - grotesque rooftop stone carving
+  - grotesque carving
+displayName: Weathered Gargoyle Stone
+category: 3. Medieval Material Studies
+domain: grotesque rooftop stone carving
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - medieval-material-studies
+  - gargoyle
+  - medieval-material
+  - portable-style-study
+visualDna:
+  aesthetic: 'Weathered gargoyle stone: grotesque carved waterspouts and chimeras on gothic rooftops, open-mouthed beasts stained black by rain, moss in every crevice.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original figures; carve the subject as a weathered grotesque perched on a gothic roof ledge.
+  color_and_tone: Grey limestone streaked black with rain and green moss.
+  lighting_and_shadow: Overcast sky or stormy dusk light with deep shadows.
+  texture_and_material: Eroded stone, rain streaks, moss, pigeon feathers and cracks.
+  camera_and_composition: Close view of the grotesque with rooftops or city below.
+  atmosphere_and_mood: Keep the requested mood with brooding watchful menace.
+  rendering_and_quality: Convincing weathered stone with rain detail, kept consistent across the whole image.
+  creative_brief: "Weathered gargoyle stone: grotesque carved waterspouts and chimeras on gothic rooftops, open-mouthed beasts stained black by rain, moss in every crevice. Carry it through grotesque carving, rain-stained stone, moss, rooftop height. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: grotesque carving; rain-stained stone; moss; rooftop height
+avoidRules:
+  - readable inscriptions
+  - plastic or modern materials
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable inscriptions, plastic or modern materials, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: medieval-material-studies
+  categoryName: 3. Medieval Material Studies
+  tags:
+    - curation-v2
+    - medieval-material-studies
+    - gargoyle
+    - medieval-material
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: grotesque rooftop stone carving

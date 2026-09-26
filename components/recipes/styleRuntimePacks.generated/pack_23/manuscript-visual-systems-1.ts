@@ -176,4 +176,448 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP23-059',
+    name: 'Carolingian Classical Miniature',
+    displayName: 'Carolingian Classical Miniature',
+    styleAnchors: [
+      'Carolingian Classical Miniature',
+      'late antique revival book painting',
+      'classical drapery',
+    ],
+    category: '1. Manuscript Visual Systems',
+    domain: 'late antique revival book painting',
+    negativePrompt:
+      'readable script or lettering, modern objects unless requested, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Carolingian classical miniature: book painting that revives late antique modeling, sketchy illusionistic brushwork, draped figures and architecture under soft purple and gold.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; give figures classical drapery folds and lively sketchy modeling with antique poise.',
+      color_and_tone: 'Purple, ochre, muted green and flesh tones with touches of burnished gold.',
+      lighting_and_shadow: 'Soft illusionistic modeling with quick white highlights on drapery.',
+      texture_and_material:
+        'Loose brushwork on vellum, feathery strokes and slightly flaking gold.',
+      camera_and_composition: 'Figures under painted arches or in shallow stage-like space.',
+      atmosphere_and_mood: 'Keep the requested mood with dignified antique grandeur.',
+      rendering_and_quality:
+        'Painterly and quick, never smooth or photographic, kept consistent across the whole image.',
+      creative_brief:
+        "Carolingian classical miniature: book painting that revives late antique modeling, sketchy illusionistic brushwork, draped figures and architecture under soft purple and gold. Carry it through classical drapery, sketchy modeling, painted arches, purple and gold. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'classical drapery; sketchy modeling; painted arches; purple and gold',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-060',
+    name: 'Ottonian Gold-Ground Figures',
+    displayName: 'Ottonian Gold-Ground Figures',
+    styleAnchors: [
+      'Ottonian Gold-Ground Figures',
+      'monumental figures on gold grounds',
+      'flat gold ground',
+    ],
+    category: '1. Manuscript Visual Systems',
+    domain: 'monumental figures on gold grounds',
+    negativePrompt:
+      'realistic background scenery, readable script or lettering, modern objects unless requested, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Ottonian gold-ground figures: tall solemn figures with huge eyes and expressive gestures floating against flat burnished gold, stark and monumental like tenth-century book painting.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; elongate the figures, enlarge the eyes and hands, and let gestures carry the story.',
+      color_and_tone: 'Flat burnished gold ground with deep purple, green and blood red robes.',
+      lighting_and_shadow: 'Almost no cast shadow; gold ground glows behind every figure.',
+      texture_and_material: 'Burnished gold leaf, opaque pigment and firm dark contours.',
+      camera_and_composition: 'Few large figures isolated on gold with a narrow ground strip.',
+      atmosphere_and_mood: 'Keep the requested mood with intense staring solemnity.',
+      rendering_and_quality: 'Stark and monumental, with few details and strong gestures.',
+      creative_brief:
+        "Ottonian gold-ground figures: tall solemn figures with huge eyes and expressive gestures floating against flat burnished gold, stark and monumental like tenth-century book painting. Carry it through flat gold ground, huge eyes, oversized hands, tall solemn figures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'flat gold ground; huge eyes; oversized hands; tall solemn figures',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-061',
+    name: 'Romanesque Hieratic Panel',
+    displayName: 'Romanesque Hieratic Panel',
+    styleAnchors: [
+      'Romanesque Hieratic Panel',
+      'patterned romanesque painting',
+      'banded backgrounds',
+    ],
+    category: '1. Manuscript Visual Systems',
+    domain: 'patterned romanesque painting',
+    negativePrompt:
+      'readable script or lettering, modern objects unless requested, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Romanesque hieratic panel: rigid frontal figures with patterned drapery, bold banded backgrounds and stylized flattened space like twelfth-century painted books and walls.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; stylize bodies into stiff patterned forms with drapery folds drawn as nested curves.',
+      color_and_tone: 'Strong red, ochre, deep blue and green in banded backgrounds.',
+      lighting_and_shadow: 'Flat patterned shading with parallel fold lines instead of real light.',
+      texture_and_material: 'Matte pigment, heavy outlines and nested fold patterns.',
+      camera_and_composition:
+        'Frontal symmetric figures on horizontal color bands, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with stern timeless power.',
+      rendering_and_quality:
+        'Bold stylized clarity with consistent patterned folds, kept consistent across the whole image.',
+      creative_brief:
+        "Romanesque hieratic panel: rigid frontal figures with patterned drapery, bold banded backgrounds and stylized flattened space like twelfth-century painted books and walls. Carry it through banded backgrounds, nested drapery folds, frontal figures, heavy outlines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'banded backgrounds; nested drapery folds; frontal figures; heavy outlines',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-062',
+    name: 'Drollery Margin Grotesques',
+    displayName: 'Drollery Margin Grotesques',
+    styleAnchors: ['Drollery Margin Grotesques', 'absurd marginal creatures', 'hybrid creatures'],
+    category: '1. Manuscript Visual Systems',
+    domain: 'absurd marginal creatures',
+    negativePrompt:
+      'readable script, readable script or lettering, modern objects unless requested, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Drollery margin grotesques: absurd hybrid creatures and comic scenes drawn in the margins of medieval books, rabbits fighting knights, snails jousting and bottoms with faces.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; turn the subject into an absurd hybrid or role reversal drawn small on bare vellum.',
+      color_and_tone: 'Light washes of blue, red and green with touches of gold on pale vellum.',
+      lighting_and_shadow: 'Almost no shading; small washes and pen lines only.',
+      texture_and_material: 'Fine pen lines, light washes and blank vellum space.',
+      camera_and_composition:
+        'Small figures isolated in a large empty margin or climbing vine tendrils.',
+      atmosphere_and_mood: 'Keep the requested mood with irreverent medieval mischief.',
+      rendering_and_quality: 'Quick witty drawing with clear silhouettes and generous blank space.',
+      creative_brief:
+        "Drollery margin grotesques: absurd hybrid creatures and comic scenes drawn in the margins of medieval books, rabbits fighting knights, snails jousting and bottoms with faces. Carry it through hybrid creatures, role reversals, vine tendrils, blank margin space. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'hybrid creatures; role reversals; vine tendrils; blank margin space',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-063',
+    name: 'Seasonal Labors Miniature',
+    displayName: 'Seasonal Labors Miniature',
+    styleAnchors: ['Seasonal Labors Miniature', 'calendar labors of the months', 'seasonal task'],
+    category: '1. Manuscript Visual Systems',
+    domain: 'calendar labors of the months',
+    negativePrompt:
+      'readable script or lettering, modern objects unless requested, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        "Seasonal labors miniature: small calendar scenes of the year's work, sowing, harvesting, feasting by the fire, with lapis blue skies and neat fields under a zodiac arc.",
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; set the subject inside a small seasonal task scene with neat toy-like fields and buildings.',
+      color_and_tone: 'Lapis blue skies, fresh greens, wheat gold and bright costume colors.',
+      lighting_and_shadow:
+        'Clear even daylight with small crisp shadows, kept consistent across the whole image.',
+      texture_and_material: 'Fine opaque pigment, delicate detail and a thin gold arc above.',
+      camera_and_composition:
+        'Elevated view of fields, figures and a castle under a curved sky band.',
+      atmosphere_and_mood: 'Keep the requested mood with orderly seasonal rhythm.',
+      rendering_and_quality:
+        'Precise miniature detail with bright clean pigment, kept consistent across the whole image.',
+      creative_brief:
+        "Seasonal labors miniature: small calendar scenes of the year's work, sowing, harvesting, feasting by the fire, with lapis blue skies and neat fields under a zodiac arc. Carry it through seasonal task, lapis sky, neat fields, curved zodiac band. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'seasonal task; lapis sky; neat fields; curved zodiac band',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-064',
+    name: 'Diapered Ground Miniature',
+    displayName: 'Diapered Ground Miniature',
+    styleAnchors: [
+      'Diapered Ground Miniature',
+      'checkered patterned backgrounds',
+      'checkered backgrounds',
+    ],
+    category: '1. Manuscript Visual Systems',
+    domain: 'checkered patterned backgrounds',
+    negativePrompt:
+      'readable script or lettering, modern objects unless requested, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Diapered ground miniature: figures set against backgrounds of tiny repeating checkers, lozenges and gold dots, a gothic device that replaces sky with jewel-like pattern.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; place the subject in front of a flat repeating diaper-pattern background instead of a real setting.',
+      color_and_tone: 'Checkered vermilion, blue and gold backgrounds with bright figure colors.',
+      lighting_and_shadow: 'Soft modeling on figures, none on the flat patterned ground.',
+      texture_and_material: 'Tiny painted lozenges, gold dots and fine white linework.',
+      camera_and_composition: 'Figures on a narrow ground strip in front of the pattern wall.',
+      atmosphere_and_mood:
+        'Keep the requested mood with jewel-box theatricality, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Crisp regular pattern with neatly painted figures, kept consistent across the whole image.',
+      creative_brief:
+        "Diapered ground miniature: figures set against backgrounds of tiny repeating checkers, lozenges and gold dots, a gothic device that replaces sky with jewel-like pattern. Carry it through checkered backgrounds, gold dots, lozenge pattern, ground strip. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'checkered backgrounds; gold dots; lozenge pattern; ground strip',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-065',
+    name: 'Raised Burnished Gilding',
+    displayName: 'Raised Burnished Gilding',
+    styleAnchors: ['Raised Burnished Gilding', 'raised polished gold on gesso', 'raised gesso'],
+    category: '1. Manuscript Visual Systems',
+    domain: 'raised polished gold on gesso',
+    negativePrompt:
+      'flat yellow paint for gold, readable script or lettering, modern objects unless requested, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Raised burnished gilding: gold leaf laid over raised gesso and polished to a mirror, catching real light in halos, crowns and sunbursts that stand up from the page.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; pick out the key glowing parts of the subject in raised polished gold.',
+      color_and_tone: 'Brilliant mirror gold against deep blue, rose and green pigment.',
+      lighting_and_shadow:
+        'Gold catches real highlights and dark reflections as the surface turns.',
+      texture_and_material: 'Raised gesso cushions, polished leaf, tooled dots and fine cracks.',
+      camera_and_composition: 'Slightly raking view that reveals the relief of the gold.',
+      atmosphere_and_mood: 'Keep the requested mood with dazzling precious light.',
+      rendering_and_quality:
+        'Convincing reflective gold with visible raised edges, kept consistent across the whole image.',
+      creative_brief:
+        "Raised burnished gilding: gold leaf laid over raised gesso and polished to a mirror, catching real light in halos, crowns and sunbursts that stand up from the page. Carry it through raised gesso, mirror gold, tooled dots, raking light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'raised gesso; mirror gold; tooled dots; raking light',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-066',
+    name: 'Red-and-Blue Penwork Flourish',
+    displayName: 'Red-and-Blue Penwork Flourish',
+    styleAnchors: [
+      'Red-and-Blue Penwork Flourish',
+      'gothic pen flourishing',
+      'red and blue filigree',
+    ],
+    category: '1. Manuscript Visual Systems',
+    domain: 'gothic pen flourishing',
+    negativePrompt:
+      'readable script, readable script or lettering, modern objects unless requested, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Red-and-blue penwork flourish: fine alternating red and blue pen filigree that sprouts long hairline tendrils, spirals and little beads down the margins of gothic books.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; build or surround the subject with fine red and blue pen filigree tendrils.',
+      color_and_tone: 'Vermilion red and ultramarine blue lines on pale cream vellum.',
+      lighting_and_shadow:
+        'No shading; line density alone makes weight, kept consistent across the whole image.',
+      texture_and_material: 'Hairline pen strokes, tiny beads, spirals and long trailing lines.',
+      camera_and_composition: 'Long vertical flows of flourish with the subject nested inside.',
+      atmosphere_and_mood: 'Keep the requested mood with delicate obsessive craft.',
+      rendering_and_quality: 'Precise hairlines with even rhythm and no blots.',
+      creative_brief:
+        "Red-and-blue penwork flourish: fine alternating red and blue pen filigree that sprouts long hairline tendrils, spirals and little beads down the margins of gothic books. Carry it through red and blue filigree, hairline tendrils, spirals, pale vellum. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'red and blue filigree; hairline tendrils; spirals; pale vellum',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-067',
+    name: 'Anglo-Saxon Tinted Outline',
+    displayName: 'Anglo-Saxon Tinted Outline',
+    styleAnchors: ['Anglo-Saxon Tinted Outline', 'colored outline drawing', 'colored outlines'],
+    category: '1. Manuscript Visual Systems',
+    domain: 'colored outline drawing',
+    negativePrompt:
+      'readable script or lettering, modern objects unless requested, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Anglo-Saxon tinted outline: energetic outline drawings in colored inks, fluttering drapery and nervous lines with only light tints of wash, full of movement.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; draw the subject in lively colored outlines with fluttering hems and light tint.',
+      color_and_tone: 'Red, green, brown and blue ink lines with pale wash tints.',
+      lighting_and_shadow: 'No modeling; line energy and tint suggest form.',
+      texture_and_material: 'Nervous pen lines, fluttering hems and bare vellum.',
+      camera_and_composition: 'Figures in motion on bare vellum with minimal ground.',
+      atmosphere_and_mood: 'Keep the requested mood with restless windblown energy.',
+      rendering_and_quality:
+        'Quick lively lines, never stiff or filled, kept consistent across the whole image.',
+      creative_brief:
+        "Anglo-Saxon tinted outline: energetic outline drawings in colored inks, fluttering drapery and nervous lines with only light tints of wash, full of movement. Carry it through colored outlines, fluttering drapery, light tint, nervous line. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'colored outlines; fluttering drapery; light tint; nervous line',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-068',
+    name: 'Moralized Bestiary Miniature',
+    displayName: 'Moralized Bestiary Miniature',
+    styleAnchors: [
+      'Moralized Bestiary Miniature',
+      'medieval bestiary animal plates',
+      'odd anatomy',
+    ],
+    category: '1. Manuscript Visual Systems',
+    domain: 'medieval bestiary animal plates',
+    negativePrompt:
+      'readable script or lettering, modern objects unless requested, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Moralized bestiary miniature: animals drawn as medieval scribes imagined them from descriptions, strange anatomy, patterned fur and a single symbolic behavior on a gold or colored panel.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; render the subject with the charming inaccurate anatomy of a bestiary animal.',
+      color_and_tone: 'Bright pigment animals on gold, rose or blue framed panels.',
+      lighting_and_shadow:
+        'Flat with light modeling and patterned fur, kept consistent across the whole image.',
+      texture_and_material: 'Opaque pigment, patterned coats, fine outlines and gold ground.',
+      camera_and_composition: 'Single animal or pair centered in a framed panel.',
+      atmosphere_and_mood: 'Keep the requested mood with naive wonder and symbolism.',
+      rendering_and_quality:
+        'Clear readable animals with deliberately odd anatomy, kept consistent across the whole image.',
+      creative_brief:
+        "Moralized bestiary miniature: animals drawn as medieval scribes imagined them from descriptions, strange anatomy, patterned fur and a single symbolic behavior on a gold or colored panel. Carry it through odd anatomy, patterned fur, framed panel, symbolic behavior. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'odd anatomy; patterned fur; framed panel; symbolic behavior',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-069',
+    name: 'Mappa Mundi Marvels',
+    displayName: 'Mappa Mundi Marvels',
+    styleAnchors: ['Mappa Mundi Marvels', 'medieval world map with wonders', 'circular map'],
+    category: '1. Manuscript Visual Systems',
+    domain: 'medieval world map with wonders',
+    negativePrompt:
+      'readable place names, readable script or lettering, modern objects unless requested, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Mappa mundi marvels: a round medieval world map with walled cities, rivers like ribbons, sea monsters and marvelous peoples painted at the edges of the known world.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; place the subject as a marvel on a circular hand-painted world map.',
+      color_and_tone: 'Faded vellum, green seas, red seas, blue rivers and gold cities.',
+      lighting_and_shadow:
+        'Flat map painting without light direction, kept consistent across the whole image.',
+      texture_and_material: 'Aged vellum, tiny painted cities, wavy water lines and stains.',
+      camera_and_composition: 'Circular world map filling the card, marvels at the rim.',
+      atmosphere_and_mood: 'Keep the requested mood with the wonder of unknown lands.',
+      rendering_and_quality:
+        'Tiny detailed vignettes arranged across one map, kept consistent across the whole image.',
+      creative_brief:
+        "Mappa mundi marvels: a round medieval world map with walled cities, rivers like ribbons, sea monsters and marvelous peoples painted at the edges of the known world. Carry it through circular map, sea monsters, tiny cities, marvels at edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'circular map; sea monsters; tiny cities; marvels at edges',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-070',
+    name: 'Painted Armorial Roll',
+    displayName: 'Painted Armorial Roll',
+    styleAnchors: ['Painted Armorial Roll', 'heraldic roll of arms', 'painted shields'],
+    category: '1. Manuscript Visual Systems',
+    domain: 'heraldic roll of arms',
+    negativePrompt:
+      'readable mottoes, real family arms, readable script or lettering, modern objects unless requested, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Painted armorial roll: rows of painted shields, crested helms and heraldic beasts laid out on a long parchment roll, flat tinctures and bold charges.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; turn the subject into heraldic charges, crests or supporters in a row of arms.',
+      color_and_tone:
+        'Heraldic tinctures: gules red, azure blue, vert green, or gold and argent white.',
+      lighting_and_shadow: 'Flat tinctures with light shading on helms and mantling.',
+      texture_and_material:
+        'Parchment roll, opaque tempera and ink outlines, kept consistent across the whole image.',
+      camera_and_composition: 'Rows or a single large achievement of arms on the roll.',
+      atmosphere_and_mood: 'Keep the requested mood with proud ceremonial order.',
+      rendering_and_quality:
+        'Crisp heraldic clarity with bold simple charges, kept consistent across the whole image.',
+      creative_brief:
+        "Painted armorial roll: rows of painted shields, crested helms and heraldic beasts laid out on a long parchment roll, flat tinctures and bold charges. Carry it through painted shields, heraldic beasts, flat tinctures, parchment roll. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'painted shields; heraldic beasts; flat tinctures; parchment roll',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-071',
+    name: 'Alchemical Treatise Illumination',
+    displayName: 'Alchemical Treatise Illumination',
+    styleAnchors: [
+      'Alchemical Treatise Illumination',
+      'symbolic alchemy manuscript',
+      'glass flasks',
+    ],
+    category: '1. Manuscript Visual Systems',
+    domain: 'symbolic alchemy manuscript',
+    negativePrompt:
+      'readable symbols as text, readable script or lettering, modern objects unless requested, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Alchemical treatise illumination: symbolic figures, sun and moon kings, flasks and serpents painted in jewel colors to represent transformations in a secret process.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; stage the subject as an alchemical allegory with flasks, suns, moons or serpents.',
+      color_and_tone: 'Black, white, citrine yellow and deep red for the stages, with gold.',
+      lighting_and_shadow: 'Soft modeling with glowing vessels and gold highlights.',
+      texture_and_material: 'Opaque pigment, gold leaf, glass flasks and fine contours.',
+      camera_and_composition: 'Symbolic central figure or vessel within a framed panel.',
+      atmosphere_and_mood: 'Keep the requested mood with secretive mystical transformation.',
+      rendering_and_quality:
+        'Clear symbolic staging with jewel-like color, kept consistent across the whole image.',
+      creative_brief:
+        "Alchemical treatise illumination: symbolic figures, sun and moon kings, flasks and serpents painted in jewel colors to represent transformations in a secret process. Carry it through glass flasks, sun and moon, serpents, transformation stages. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'glass flasks; sun and moon; serpents; transformation stages',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-072',
+    name: 'Medieval Herbal Codex',
+    displayName: 'Medieval Herbal Codex',
+    styleAnchors: ['Medieval Herbal Codex', 'medieval plant manuscript', 'whole plant with roots'],
+    category: '1. Manuscript Visual Systems',
+    domain: 'medieval plant manuscript',
+    negativePrompt:
+      'readable labels, readable script or lettering, modern objects unless requested, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Medieval herbal codex: flat stylized plant portraits with roots, leaves and flowers laid out whole on the page, sometimes with the creatures or people linked to the plant.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; present the subject as a whole stylized plant specimen or beside one.',
+      color_and_tone: 'Leaf greens, earthy root browns, flower reds and blues on vellum.',
+      lighting_and_shadow:
+        'Flat with light shading on leaves, kept consistent across the whole image.',
+      texture_and_material: 'Pigment washes, ink outlines, pale vellum and faint stains.',
+      camera_and_composition: 'Whole plant from root to flower centered and upright.',
+      atmosphere_and_mood: 'Keep the requested mood with curious healing lore.',
+      rendering_and_quality:
+        'Clear symmetrical specimen with naive stylization, kept consistent across the whole image.',
+      creative_brief:
+        "Medieval herbal codex: flat stylized plant portraits with roots, leaves and flowers laid out whole on the page, sometimes with the creatures or people linked to the plant. Carry it through whole plant with roots, flat specimen, vellum, linked creature. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'whole plant with roots; flat specimen; vellum; linked creature',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP23-096
+packId: pack_23
+name: Carved Stone Capital
+styleAnchors:
+  - Carved Stone Capital
+  - romanesque figured capitals
+  - column capital
+displayName: Carved Stone Capital
+category: 3. Medieval Material Studies
+domain: romanesque figured capitals
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - medieval-material-studies
+  - stone-capital
+  - medieval-material
+  - portable-style-study
+visualDna:
+  aesthetic: 'Carved stone capital: romanesque column capitals carved with crowded beasts, acrobats, demons and foliage that wrap around the stone block, worn and lichen-stained.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original figures; carve the subject wrapping around a column capital among beasts and foliage.
+  color_and_tone: Warm limestone with grey weathering and faint old paint.
+  lighting_and_shadow: Strong light from above, deep shadows under the carving.
+  texture_and_material: Chiseled stone, weathered edges, lichen and dust, kept consistent across the whole image.
+  camera_and_composition: Close view of one capital atop a column in a cloister.
+  atmosphere_and_mood: Keep the requested mood with strange ancient vitality.
+  rendering_and_quality: Crowded vigorous carving with believable weathering, kept consistent across the whole image.
+  creative_brief: "Carved stone capital: romanesque column capitals carved with crowded beasts, acrobats, demons and foliage that wrap around the stone block, worn and lichen-stained. Carry it through column capital, wrapped beasts, chiseled foliage, lichen stone. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: column capital; wrapped beasts; chiseled foliage; lichen stone
+avoidRules:
+  - readable inscriptions
+  - plastic or modern materials
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable inscriptions, plastic or modern materials, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: medieval-material-studies
+  categoryName: 3. Medieval Material Studies
+  tags:
+    - curation-v2
+    - medieval-material-studies
+    - stone-capital
+    - medieval-material
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: romanesque figured capitals

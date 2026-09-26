@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-071
+packId: pack_23
+name: Alchemical Treatise Illumination
+styleAnchors:
+  - Alchemical Treatise Illumination
+  - symbolic alchemy manuscript
+  - glass flasks
+displayName: Alchemical Treatise Illumination
+category: 1. Manuscript Visual Systems
+domain: symbolic alchemy manuscript
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - manuscript-visual-systems
+  - alchemical-illumination
+  - medieval-manuscript
+  - portable-style-study
+visualDna:
+  aesthetic: 'Alchemical treatise illumination: symbolic figures, sun and moon kings, flasks and serpents painted in jewel colors to represent transformations in a secret process.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original figures; stage the subject as an alchemical allegory with flasks, suns, moons or serpents.
+  color_and_tone: Black, white, citrine yellow and deep red for the stages, with gold.
+  lighting_and_shadow: Soft modeling with glowing vessels and gold highlights.
+  texture_and_material: Opaque pigment, gold leaf, glass flasks and fine contours.
+  camera_and_composition: Symbolic central figure or vessel within a framed panel.
+  atmosphere_and_mood: Keep the requested mood with secretive mystical transformation.
+  rendering_and_quality: Clear symbolic staging with jewel-like color, kept consistent across the whole image.
+  creative_brief: "Alchemical treatise illumination: symbolic figures, sun and moon kings, flasks and serpents painted in jewel colors to represent transformations in a secret process. Carry it through glass flasks, sun and moon, serpents, transformation stages. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: glass flasks; sun and moon; serpents; transformation stages
+avoidRules:
+  - readable symbols as text
+  - readable script or lettering
+  - modern objects unless requested
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable symbols as text, readable script or lettering, modern objects unless requested, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: manuscript-visual-systems
+  categoryName: 1. Manuscript Visual Systems
+  tags:
+    - curation-v2
+    - manuscript-visual-systems
+    - alchemical-illumination
+    - medieval-manuscript
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: symbolic alchemy manuscript

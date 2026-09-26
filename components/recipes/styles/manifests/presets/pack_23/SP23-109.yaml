@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-109
+packId: pack_23
+name: Western Indian Red-Ground Manuscript
+styleAnchors:
+  - Western Indian Red-Ground Manuscript
+  - western indian manuscript painting
+  - red ground
+displayName: Western Indian Red-Ground Manuscript
+category: 4. Regional Manuscript Traditions
+domain: western indian manuscript painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - regional-manuscript-traditions
+  - western-indian
+  - regional-manuscript
+  - portable-style-study
+visualDna:
+  aesthetic: 'Western Indian red-ground manuscript: fourteenth- to sixteenth-century Gujarati painting with brilliant red grounds, gold, angular figures in profile with the far eye projecting.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original figures; draw angular profile figures with the projecting far eye against a red ground.
+  color_and_tone: Brilliant vermilion ground with gold, ultramarine and white.
+  lighting_and_shadow: Flat with no shading, kept consistent across the whole image.
+  texture_and_material: Opaque pigment, gold, crisp outlines on paper or palm leaf.
+  camera_and_composition: Horizontal panel with figures in rows and patterned borders.
+  atmosphere_and_mood: Keep the requested mood with bright festive intensity.
+  rendering_and_quality: Crisp angular line with intense flat color, kept consistent across the whole image.
+  creative_brief: "Western Indian red-ground manuscript: fourteenth- to sixteenth-century Gujarati painting with brilliant red grounds, gold, angular figures in profile with the far eye projecting. Carry it through red ground, projecting far eye, angular profiles, gold detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: red ground; projecting far eye; angular profiles; gold detail
+avoidRules:
+  - cultural stereotypes or costume caricature
+  - readable script
+  - mixing unrelated traditions
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or costume caricature, readable script, mixing unrelated traditions, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: regional-manuscript-traditions
+  categoryName: 4. Regional Manuscript Traditions
+  tags:
+    - curation-v2
+    - regional-manuscript-traditions
+    - western-indian
+    - regional-manuscript
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: western indian manuscript painting

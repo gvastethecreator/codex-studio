@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-117
+packId: pack_23
+name: Jalayirid Dream Landscape
+styleAnchors:
+  - Jalayirid Dream Landscape
+  - fourteenth-century jalayirid painting
+  - spongy towering rocks
+displayName: Jalayirid Dream Landscape
+category: 4. Regional Manuscript Traditions
+domain: fourteenth-century jalayirid painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - regional-manuscript-traditions
+  - jalayirid
+  - regional-manuscript
+  - portable-style-study
+visualDna:
+  aesthetic: 'Jalayirid dream landscape: late fourteenth-century Baghdad and Tabriz painting with small figures in towering spongy rock formations, flowering meadows and delicate lyrical detail.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original figures; place small figures within towering spongy rocks and flowering meadows.
+  color_and_tone: Soft lilac rocks, gold sky, spring green and floral dots.
+  lighting_and_shadow: Soft even light with gentle color gradation in rocks.
+  texture_and_material: Fine pigment, sponge-like rocks and dotted flowers, kept consistent across the whole image.
+  camera_and_composition: Tall vertical landscape with figures small at the base.
+  atmosphere_and_mood: Keep the requested mood with enchanted dreamlike calm.
+  rendering_and_quality: Delicate lyrical detail across the whole landscape, kept consistent across the whole image.
+  creative_brief: "Jalayirid dream landscape: late fourteenth-century Baghdad and Tabriz painting with small figures in towering spongy rock formations, flowering meadows and delicate lyrical detail. Carry it through spongy towering rocks, flowering meadow, small figures, gold sky. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: spongy towering rocks; flowering meadow; small figures; gold sky
+avoidRules:
+  - cultural stereotypes or costume caricature
+  - readable script
+  - mixing unrelated traditions
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or costume caricature, readable script, mixing unrelated traditions, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: regional-manuscript-traditions
+  categoryName: 4. Regional Manuscript Traditions
+  tags:
+    - curation-v2
+    - regional-manuscript-traditions
+    - jalayirid
+    - regional-manuscript
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: fourteenth-century jalayirid painting

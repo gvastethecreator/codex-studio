@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-069
+packId: pack_23
+name: Mappa Mundi Marvels
+styleAnchors:
+  - Mappa Mundi Marvels
+  - medieval world map with wonders
+  - circular map
+displayName: Mappa Mundi Marvels
+category: 1. Manuscript Visual Systems
+domain: medieval world map with wonders
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - manuscript-visual-systems
+  - mappa-mundi
+  - medieval-manuscript
+  - portable-style-study
+visualDna:
+  aesthetic: 'Mappa mundi marvels: a round medieval world map with walled cities, rivers like ribbons, sea monsters and marvelous peoples painted at the edges of the known world.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original figures; place the subject as a marvel on a circular hand-painted world map.
+  color_and_tone: Faded vellum, green seas, red seas, blue rivers and gold cities.
+  lighting_and_shadow: Flat map painting without light direction, kept consistent across the whole image.
+  texture_and_material: Aged vellum, tiny painted cities, wavy water lines and stains.
+  camera_and_composition: Circular world map filling the card, marvels at the rim.
+  atmosphere_and_mood: Keep the requested mood with the wonder of unknown lands.
+  rendering_and_quality: Tiny detailed vignettes arranged across one map, kept consistent across the whole image.
+  creative_brief: "Mappa mundi marvels: a round medieval world map with walled cities, rivers like ribbons, sea monsters and marvelous peoples painted at the edges of the known world. Carry it through circular map, sea monsters, tiny cities, marvels at edges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: circular map; sea monsters; tiny cities; marvels at edges
+avoidRules:
+  - readable place names
+  - readable script or lettering
+  - modern objects unless requested
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable place names, readable script or lettering, modern objects unless requested, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: manuscript-visual-systems
+  categoryName: 1. Manuscript Visual Systems
+  tags:
+    - curation-v2
+    - manuscript-visual-systems
+    - mappa-mundi
+    - medieval-manuscript
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: medieval world map with wonders

@@ -178,4 +178,441 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP23-073',
+    name: 'Criblé Dotted Metalcut',
+    displayName: 'Criblé Dotted Metalcut',
+    styleAnchors: ['Criblé Dotted Metalcut', 'dotted relief metal print', 'punched white dots'],
+    category: '2. Print & Engraving',
+    domain: 'dotted relief metal print',
+    negativePrompt:
+      'readable type or lettering, modern screen printing look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Criblé dotted metalcut: fifteenth-century relief prints cut in metal, dark grounds punched with thousands of tiny white dots and stars that sparkle around the figures.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; set the subject against a black ground punched with dense white dots.',
+      color_and_tone: 'Black ink and white paper, sometimes with a pale hand tint.',
+      lighting_and_shadow: 'Sparkling dotted grounds that glow around dark-lined figures.',
+      texture_and_material: 'Punched dots, star shapes, fine white lines and metal-cut edges.',
+      camera_and_composition: 'Figures in the center with dotted grounds filling every space.',
+      atmosphere_and_mood: 'Keep the requested mood with starry glittering mystery.',
+      rendering_and_quality: 'Dense even dot patterns with clear figure silhouettes.',
+      creative_brief:
+        "Criblé dotted metalcut: fifteenth-century relief prints cut in metal, dark grounds punched with thousands of tiny white dots and stars that sparkle around the figures. Carry it through punched white dots, black ground, star punches, metal relief. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'punched white dots; black ground; star punches; metal relief',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-074',
+    name: 'Blockbook Picture Print',
+    displayName: 'Blockbook Picture Print',
+    styleAnchors: ['Blockbook Picture Print', 'single-block picture book page', 'thick outlines'],
+    category: '2. Print & Engraving',
+    domain: 'single-block picture book page',
+    negativePrompt:
+      'readable type or lettering, modern screen printing look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Blockbook picture print: pages cut entirely from a single woodblock, simple thick-lined figures and scenes in compartments with pale hand tints of green, red and yellow.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; draw the subject in simple thick outline shapes arranged in framed compartments.',
+      color_and_tone: 'Brown-black ink outlines with pale transparent hand tints.',
+      lighting_and_shadow:
+        'No shading, only outlines and flat tint, kept consistent across the whole image.',
+      texture_and_material: 'Rubbed brown ink, soft paper, uneven tint washes.',
+      camera_and_composition: 'Two or three framed picture compartments on a page.',
+      atmosphere_and_mood:
+        'Keep the requested mood with naive storytelling, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Simple bold outline with clear readable action, kept consistent across the whole image.',
+      creative_brief:
+        "Blockbook picture print: pages cut entirely from a single woodblock, simple thick-lined figures and scenes in compartments with pale hand tints of green, red and yellow. Carry it through thick outlines, framed compartments, pale tints, rubbed brown ink. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'thick outlines; framed compartments; pale tints; rubbed brown ink',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-075',
+    name: 'Stencil-Colored Early Woodcut',
+    displayName: 'Stencil-Colored Early Woodcut',
+    styleAnchors: [
+      'Stencil-Colored Early Woodcut',
+      'stenciled color on woodcut',
+      'stenciled color',
+    ],
+    category: '2. Print & Engraving',
+    domain: 'stenciled color on woodcut',
+    negativePrompt:
+      'readable type or lettering, modern screen printing look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Stencil-colored early woodcut: simple fifteenth-century woodcut lines with color added through stencils in flat patches that slip out of register.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; give the subject simple woodcut lines with stenciled color blocks slightly off the lines.',
+      color_and_tone: 'Flat stenciled red, green, yellow and brown over black lines.',
+      lighting_and_shadow: 'No shading; flat color blocks carry the design.',
+      texture_and_material:
+        'Rough paper, stencil edges and ink squeeze, kept consistent across the whole image.',
+      camera_and_composition: 'Single central figure or scene with a simple frame line.',
+      atmosphere_and_mood: 'Keep the requested mood with folk devotion and vigor.',
+      rendering_and_quality:
+        'Crude charming lines with misaligned color patches, kept consistent across the whole image.',
+      creative_brief:
+        "Stencil-colored early woodcut: simple fifteenth-century woodcut lines with color added through stencils in flat patches that slip out of register. Carry it through stenciled color, slipped register, black woodcut lines, rough paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'stenciled color; slipped register; black woodcut lines; rough paper',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-076',
+    name: 'Chronicle City Woodcut',
+    displayName: 'Chronicle City Woodcut',
+    styleAnchors: [
+      'Chronicle City Woodcut',
+      'woodcut panoramic city views',
+      'walled town panorama',
+    ],
+    category: '2. Print & Engraving',
+    domain: 'woodcut panoramic city views',
+    negativePrompt:
+      'readable banners, readable type or lettering, modern screen printing look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Chronicle city woodcut: crowded panoramic views of walled towns with spires, towers, bridges and rivers cut in lively lines for illustrated world chronicles.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; set the subject within or above a panoramic walled city of spires and towers.',
+      color_and_tone: 'Black ink lines with optional light hand coloring.',
+      lighting_and_shadow: 'Parallel hatching on one side of buildings, open sky.',
+      texture_and_material: 'Fine woodcut lines, crowded rooftops and wavy river lines.',
+      camera_and_composition:
+        'Wide elevated panorama of a walled town, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with busy civic pride.',
+      rendering_and_quality:
+        'Dense architectural detail with clear skyline, kept consistent across the whole image.',
+      creative_brief:
+        "Chronicle city woodcut: crowded panoramic views of walled towns with spires, towers, bridges and rivers cut in lively lines for illustrated world chronicles. Carry it through walled town panorama, spires, river bridge, woodcut hatching. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'walled town panorama; spires; river bridge; woodcut hatching',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-077',
+    name: 'Dance of Death Woodcut',
+    displayName: 'Dance of Death Woodcut',
+    styleAnchors: ['Dance of Death Woodcut', 'macabre danse macabre print', 'dancing skeletons'],
+    category: '2. Print & Engraving',
+    domain: 'macabre danse macabre print',
+    negativePrompt:
+      'gore, readable type or lettering, modern screen printing look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Dance of death woodcut: grinning skeletons leading people of every station into a dance, lively macabre woodcut lines with dark humor.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; pair the subject with a dancing grinning skeleton in a lively woodcut scene.',
+      color_and_tone: 'Black ink on cream paper with deep blacks.',
+      lighting_and_shadow:
+        'Hatched shadows and stark silhouettes, kept consistent across the whole image.',
+      texture_and_material: 'Fine woodcut lines, bone detail and rustling drapery.',
+      camera_and_composition: 'Small framed scene of skeleton and victim in motion.',
+      atmosphere_and_mood: 'Keep the requested mood with grim darkly comic inevitability.',
+      rendering_and_quality:
+        'Clear expressive figures with bony humor, kept consistent across the whole image.',
+      creative_brief:
+        "Dance of death woodcut: grinning skeletons leading people of every station into a dance, lively macabre woodcut lines with dark humor. Carry it through dancing skeletons, framed scenes, macabre humor, woodcut hatching. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'dancing skeletons; framed scenes; macabre humor; woodcut hatching',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-078',
+    name: 'Wonder Broadsheet Woodcut',
+    displayName: 'Wonder Broadsheet Woodcut',
+    styleAnchors: [
+      'Wonder Broadsheet Woodcut',
+      'sensational monster news prints',
+      'central marvel',
+    ],
+    category: '2. Print & Engraving',
+    domain: 'sensational monster news prints',
+    negativePrompt:
+      'readable headlines, readable type or lettering, modern screen printing look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Wonder broadsheet woodcut: sensational single-sheet prints reporting marvels, comets, monstrous fish and strange births, drawn in bold woodcut with awed crowds.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; present the subject as a shocking marvel witnessed by amazed onlookers.',
+      color_and_tone: 'Black ink with occasional bright hand-colored red and yellow.',
+      lighting_and_shadow: 'Hatched shading and radiating lines around the marvel.',
+      texture_and_material: 'Coarse woodcut lines, rough paper and ink smudges.',
+      camera_and_composition: 'Large marvel in the center with small witnesses below.',
+      atmosphere_and_mood: 'Keep the requested mood with breathless sensational wonder.',
+      rendering_and_quality:
+        'Bold readable marvel with naive exaggeration, kept consistent across the whole image.',
+      creative_brief:
+        "Wonder broadsheet woodcut: sensational single-sheet prints reporting marvels, comets, monstrous fish and strange births, drawn in bold woodcut with awed crowds. Carry it through central marvel, tiny witnesses, radiating lines, coarse woodcut. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'central marvel; tiny witnesses; radiating lines; coarse woodcut',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-079',
+    name: 'Hand-Stenciled Card Deck Print',
+    displayName: 'Hand-Stenciled Card Deck Print',
+    styleAnchors: ['Hand-Stenciled Card Deck Print', 'early printed playing cards', 'court figure'],
+    category: '2. Print & Engraving',
+    domain: 'early printed playing cards',
+    negativePrompt:
+      'modern card indices, readable letters, readable type or lettering, modern screen printing look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Hand-stenciled card deck print: early woodcut playing cards with stiff court figures and pip patterns, colored through stencils in red, yellow and green.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; render the subject as a stiff court figure or pip design on an early playing card.',
+      color_and_tone: 'Black outlines with stenciled red, yellow, green and flesh tones.',
+      lighting_and_shadow: 'Flat with no shading, kept consistent across the whole image.',
+      texture_and_material: 'Worn card stock, stencil edges and rubbed corners.',
+      camera_and_composition: 'Single upright figure filling a narrow rounded card.',
+      atmosphere_and_mood: "Keep the requested mood with gamblers' tavern charm.",
+      rendering_and_quality:
+        'Simple bold figure with stenciled patches, kept consistent across the whole image.',
+      creative_brief:
+        "Hand-stenciled card deck print: early woodcut playing cards with stiff court figures and pip patterns, colored through stencils in red, yellow and green. Carry it through court figure, stenciled color, narrow card, pip patterns. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'court figure; stenciled color; narrow card; pip patterns',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-080',
+    name: 'Niello Silver Plate',
+    displayName: 'Niello Silver Plate',
+    styleAnchors: ['Niello Silver Plate', 'black-filled engraved silver', 'polished silver'],
+    category: '2. Print & Engraving',
+    domain: 'black-filled engraved silver',
+    negativePrompt:
+      'readable type or lettering, modern screen printing look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        "Niello silver plate: engraved silver with lines filled with black metal alloy, crisp black drawing sparkling against polished silver like a goldsmith's picture.",
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; engrave the subject in fine black-filled lines on a polished silver plate.',
+      color_and_tone:
+        'Polished silver with deep black filled lines, kept consistent across the whole image.',
+      lighting_and_shadow: 'Metallic reflections across silver with black line drawing.',
+      texture_and_material: 'Engraved grooves, black niello fill and polished metal.',
+      camera_and_composition:
+        'Small plate or roundel filling the card, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with precious miniature intensity.',
+      rendering_and_quality:
+        'Crisp detailed engraving with bright silver, kept consistent across the whole image.',
+      creative_brief:
+        "Niello silver plate: engraved silver with lines filled with black metal alloy, crisp black drawing sparkling against polished silver like a goldsmith's picture. Carry it through polished silver, black filled lines, small roundel, goldsmith detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'polished silver; black filled lines; small roundel; goldsmith detail',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-081',
+    name: 'Goldsmith Ornament Engraving',
+    displayName: 'Goldsmith Ornament Engraving',
+    styleAnchors: [
+      'Goldsmith Ornament Engraving',
+      'ornament print for craftsmen',
+      'curling thistle foliage',
+    ],
+    category: '2. Print & Engraving',
+    domain: 'ornament print for craftsmen',
+    negativePrompt:
+      'readable type or lettering, modern screen printing look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Goldsmith ornament engraving: model prints of curling foliage, thistle leaves and grotesque creatures engraved in fine lines for craftsmen to copy.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; weave the subject into curling engraved foliage and ornament.',
+      color_and_tone:
+        'Black engraved lines on white paper, kept consistent across the whole image.',
+      lighting_and_shadow:
+        'Fine hatching models each curling leaf, kept consistent across the whole image.',
+      texture_and_material: 'Burin lines, curling thistle foliage and paper white.',
+      camera_and_composition: 'Vertical or horizontal ornament band with subject nested inside.',
+      atmosphere_and_mood: 'Keep the requested mood with virtuoso decorative play.',
+      rendering_and_quality:
+        'Precise elegant curls with crisp modeling, kept consistent across the whole image.',
+      creative_brief:
+        "Goldsmith ornament engraving: model prints of curling foliage, thistle leaves and grotesque creatures engraved in fine lines for craftsmen to copy. Carry it through curling thistle foliage, engraved lines, nested creatures, ornament band. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'curling thistle foliage; engraved lines; nested creatures; ornament band',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-082',
+    name: 'Armor-Etcher Iron Plate',
+    displayName: 'Armor-Etcher Iron Plate',
+    styleAnchors: ['Armor-Etcher Iron Plate', 'early etching on iron', 'thick iron-etched lines'],
+    category: '2. Print & Engraving',
+    domain: 'early etching on iron',
+    negativePrompt:
+      'readable type or lettering, modern screen printing look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Armor-etcher iron plate: early etching bitten into iron plates, thick rough lines, corroded dark tone and uneven biting from armorers who made the first etched prints.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; bite the subject into iron with thick etched lines and rough corrosion.',
+      color_and_tone: 'Dark iron-black ink with grey corroded plate tone.',
+      lighting_and_shadow:
+        'Strong hatching with rough foul-biting in shadows, kept consistent across the whole image.',
+      texture_and_material: 'Thick etched lines, pitted corrosion and irregular ink.',
+      camera_and_composition:
+        'Bold central figures with rough surrounding landscape, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with rugged martial intensity.',
+      rendering_and_quality:
+        'Coarse powerful lines with visible plate flaws, kept consistent across the whole image.',
+      creative_brief:
+        "Armor-etcher iron plate: early etching bitten into iron plates, thick rough lines, corroded dark tone and uneven biting from armorers who made the first etched prints. Carry it through thick iron-etched lines, pitted corrosion, foul biting, martial detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'thick iron-etched lines; pitted corrosion; foul biting; martial detail',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-083',
+    name: 'Visionary Apocalypse Woodcut',
+    displayName: 'Visionary Apocalypse Woodcut',
+    styleAnchors: ['Visionary Apocalypse Woodcut', 'dense visionary woodcut', 'swirling clouds'],
+    category: '2. Print & Engraving',
+    domain: 'dense visionary woodcut',
+    negativePrompt:
+      'religious text, readable type or lettering, modern screen printing look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Visionary apocalypse woodcut: dense dramatic late-medieval woodcuts full of swirling clouds, radiant beings, rushing riders and tiny figures below.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; set the subject in a dense turbulent woodcut vision of sky and earth.',
+      color_and_tone: 'Black ink and white paper with dense tonal hatching.',
+      lighting_and_shadow:
+        'Radiating light lines against dark swirling clouds, kept consistent across the whole image.',
+      texture_and_material: 'Dense woodcut hatching, curling clouds and fine cuts.',
+      camera_and_composition:
+        'Grand vertical composition with heavens above and small earth below.',
+      atmosphere_and_mood: 'Keep the requested mood with overwhelming cosmic drama.',
+      rendering_and_quality:
+        'Virtuoso dense cutting with readable focal figures, kept consistent across the whole image.',
+      creative_brief:
+        "Visionary apocalypse woodcut: dense dramatic late-medieval woodcuts full of swirling clouds, radiant beings, rushing riders and tiny figures below. Carry it through swirling clouds, radiating light, rushing riders, tiny earth below. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'swirling clouds; radiating light; rushing riders; tiny earth below',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-084',
+    name: 'Lift-Flap Anatomy Sheet',
+    displayName: 'Lift-Flap Anatomy Sheet',
+    styleAnchors: ['Lift-Flap Anatomy Sheet', 'layered paper anatomy print', 'lifting flaps'],
+    category: '2. Print & Engraving',
+    domain: 'layered paper anatomy print',
+    negativePrompt:
+      'gore, readable labels, readable type or lettering, modern screen printing look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Lift-flap anatomy sheet: early printed anatomical sheets with paper flaps that lift to reveal organs and skeleton beneath, woodcut figures standing calmly.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; show the subject as a calm standing figure with lifting paper flaps revealing layers.',
+      color_and_tone: 'Black woodcut lines with pale hand tints on cream paper.',
+      lighting_and_shadow: 'Flat woodcut with small cast shadows from raised flaps.',
+      texture_and_material: 'Layered paper flaps, woodcut lines and hinged edges.',
+      camera_and_composition: 'Single standing figure with flaps lifted partly open.',
+      atmosphere_and_mood: 'Keep the requested mood with curious scientific wonder.',
+      rendering_and_quality:
+        'Clear diagrammatic figure, no graphic gore, kept consistent across the whole image.',
+      creative_brief:
+        "Lift-flap anatomy sheet: early printed anatomical sheets with paper flaps that lift to reveal organs and skeleton beneath, woodcut figures standing calmly. Carry it through lifting flaps, standing figure, revealed layers, woodcut lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'lifting flaps; standing figure; revealed layers; woodcut lines',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-085',
+    name: "Printer's Device Emblem",
+    displayName: "Printer's Device Emblem",
+    styleAnchors: ["Printer's Device Emblem", 'early printer mark emblem', 'compact emblem'],
+    category: '2. Print & Engraving',
+    domain: 'early printer mark emblem',
+    negativePrompt:
+      'initials or letters, readable type or lettering, modern screen printing look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        "Printer's device emblem: small symbolic woodcut marks used by early printers, anchors with dolphins, orbs with crosses, shields hung from trees, framed and compact.",
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; turn the subject into a compact symbolic emblem with a frame and simple charge.',
+      color_and_tone: 'Black woodcut on white, or white lines on black ground.',
+      lighting_and_shadow:
+        'Flat with small areas of hatching, kept consistent across the whole image.',
+      texture_and_material: 'Crisp woodcut lines, black grounds and neat frames.',
+      camera_and_composition: 'Centered emblem in a square or shield frame.',
+      atmosphere_and_mood: 'Keep the requested mood with proud craftsman identity.',
+      rendering_and_quality:
+        'Clean compact symbol with confident cutting, kept consistent across the whole image.',
+      creative_brief:
+        "Printer's device emblem: small symbolic woodcut marks used by early printers, anchors with dolphins, orbs with crosses, shields hung from trees, framed and compact. Carry it through compact emblem, black ground, symbolic charge, neat frame. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'compact emblem; black ground; symbolic charge; neat frame',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-086',
+    name: 'Astronomical Volvelle Print',
+    displayName: 'Astronomical Volvelle Print',
+    styleAnchors: ['Astronomical Volvelle Print', 'rotating paper disks print', 'rotating disks'],
+    category: '2. Print & Engraving',
+    domain: 'rotating paper disks print',
+    negativePrompt:
+      'readable numbers or letters, readable type or lettering, modern screen printing look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Astronomical volvelle print: stacked rotating paper disks with pointers, moon faces, sun rays and zodiac creatures, printed and hand-colored for calculating the heavens.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; place the subject on or around layered rotating paper disks with pointers.',
+      color_and_tone: 'Black lines with hand-colored gold, blue and red disks.',
+      lighting_and_shadow:
+        'Small shadows between stacked paper disks, kept consistent across the whole image.',
+      texture_and_material: 'Layered paper disks, thread pivots and printed rings.',
+      camera_and_composition:
+        'Circular disks filling the card from above, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with clever cosmic machinery.',
+      rendering_and_quality:
+        'Precise concentric rings with clear pointers, kept consistent across the whole image.',
+      creative_brief:
+        "Astronomical volvelle print: stacked rotating paper disks with pointers, moon faces, sun rays and zodiac creatures, printed and hand-colored for calculating the heavens. Carry it through rotating disks, pointers, moon faces, concentric rings. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'rotating disks; pointers; moon faces; concentric rings',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

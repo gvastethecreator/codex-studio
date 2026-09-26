@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-105
+packId: pack_23
+name: Andalusian Garden Romance Miniature
+styleAnchors:
+  - Andalusian Garden Romance Miniature
+  - andalusian romance manuscript painting
+  - horseshoe arches
+displayName: Andalusian Garden Romance Miniature
+category: 4. Regional Manuscript Traditions
+domain: andalusian romance manuscript painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - regional-manuscript-traditions
+  - andalusian-romance
+  - regional-manuscript
+  - portable-style-study
+visualDna:
+  aesthetic: "Andalusian garden romance miniature: thirteenth-century western Islamic painting of lovers' stories, gardens with water wheels, palaces with horseshoe arches and stylized trees beside a river."
+  subject_treatment: Preserve the requested identity, count, pose and action with original figures; set the figures beside a river garden with horseshoe arches and a water wheel.
+  color_and_tone: Warm reds, soft greens, blue water and cream grounds.
+  lighting_and_shadow: Flat with gentle robe modeling, kept consistent across the whole image.
+  texture_and_material: Opaque pigment, stylized trees and patterned architecture, kept consistent across the whole image.
+  camera_and_composition: Figures on a river bank with palace and water wheel behind.
+  atmosphere_and_mood: Keep the requested mood with lyrical longing, kept consistent across the whole image.
+  rendering_and_quality: Clear graceful figures with stylized garden elements, kept consistent across the whole image.
+  creative_brief: "Andalusian garden romance miniature: thirteenth-century western Islamic painting of lovers' stories, gardens with water wheels, palaces with horseshoe arches and stylized trees beside a river. Carry it through horseshoe arches, water wheel, river garden, stylized trees. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: horseshoe arches; water wheel; river garden; stylized trees
+avoidRules:
+  - cultural stereotypes or costume caricature
+  - readable script
+  - mixing unrelated traditions
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or costume caricature, readable script, mixing unrelated traditions, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: regional-manuscript-traditions
+  categoryName: 4. Regional Manuscript Traditions
+  tags:
+    - curation-v2
+    - regional-manuscript-traditions
+    - andalusian-romance
+    - regional-manuscript
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: andalusian romance manuscript painting

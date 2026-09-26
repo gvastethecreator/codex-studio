@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-078
+packId: pack_23
+name: Wonder Broadsheet Woodcut
+styleAnchors:
+  - Wonder Broadsheet Woodcut
+  - sensational monster news prints
+  - central marvel
+displayName: Wonder Broadsheet Woodcut
+category: 2. Print & Engraving
+domain: sensational monster news prints
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - print-and-engraving
+  - wonder-broadsheet
+  - early-print
+  - portable-style-study
+visualDna:
+  aesthetic: 'Wonder broadsheet woodcut: sensational single-sheet prints reporting marvels, comets, monstrous fish and strange births, drawn in bold woodcut with awed crowds.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original figures; present the subject as a shocking marvel witnessed by amazed onlookers.
+  color_and_tone: Black ink with occasional bright hand-colored red and yellow.
+  lighting_and_shadow: Hatched shading and radiating lines around the marvel.
+  texture_and_material: Coarse woodcut lines, rough paper and ink smudges.
+  camera_and_composition: Large marvel in the center with small witnesses below.
+  atmosphere_and_mood: Keep the requested mood with breathless sensational wonder.
+  rendering_and_quality: Bold readable marvel with naive exaggeration, kept consistent across the whole image.
+  creative_brief: "Wonder broadsheet woodcut: sensational single-sheet prints reporting marvels, comets, monstrous fish and strange births, drawn in bold woodcut with awed crowds. Carry it through central marvel, tiny witnesses, radiating lines, coarse woodcut. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: central marvel; tiny witnesses; radiating lines; coarse woodcut
+avoidRules:
+  - readable headlines
+  - readable type or lettering
+  - modern screen printing look
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable headlines, readable type or lettering, modern screen printing look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: print-and-engraving
+  categoryName: 2. Print & Engraving
+  tags:
+    - curation-v2
+    - print-and-engraving
+    - wonder-broadsheet
+    - early-print
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: sensational monster news prints

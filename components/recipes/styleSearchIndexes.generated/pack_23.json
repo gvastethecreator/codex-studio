@@ -3,7 +3,7 @@
     {
       "id": "pack_23",
       "name": "Medieval Visual Atlas",
-      "presetCount": 58
+      "presetCount": 117
     }
   ],
   "presets": [
@@ -80,6 +80,274 @@
       "searchableText": "sp23-006 scriptorium page 1. manuscript visual systems manuscript visual systems pack_23 medieval visual atlas manuscript-visual-systems medieval-visual-atlas manuscript-visual-systems"
     },
     {
+      "id": "SP23-059",
+      "name": "Carolingian Classical Miniature",
+      "styleAnchors": [
+        "Carolingian Classical Miniature",
+        "late antique revival book painting",
+        "classical drapery"
+      ],
+      "ref": "pack_23/SP23-059.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "manuscript-visual-systems",
+      "categoryName": "1. Manuscript Visual Systems",
+      "domain": "late antique revival book painting",
+      "tags": [
+        "medieval-visual-atlas",
+        "manuscript-visual-systems",
+        "late-antique-revival-book-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-059 carolingian classical miniature late antique revival book painting classical drapery 1. manuscript visual systems manuscript visual systems late antique revival book painting pack_23 medieval visual atlas manuscript-visual-systems medieval-visual-atlas manuscript-visual-systems late-antique-revival-book-painting"
+    },
+    {
+      "id": "SP23-060",
+      "name": "Ottonian Gold-Ground Figures",
+      "styleAnchors": [
+        "Ottonian Gold-Ground Figures",
+        "monumental figures on gold grounds",
+        "flat gold ground"
+      ],
+      "ref": "pack_23/SP23-060.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "manuscript-visual-systems",
+      "categoryName": "1. Manuscript Visual Systems",
+      "domain": "monumental figures on gold grounds",
+      "tags": [
+        "medieval-visual-atlas",
+        "manuscript-visual-systems",
+        "monumental-figures-on-gold-grounds"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-060 ottonian gold-ground figures monumental figures on gold grounds flat gold ground 1. manuscript visual systems manuscript visual systems monumental figures on gold grounds pack_23 medieval visual atlas manuscript-visual-systems medieval-visual-atlas manuscript-visual-systems monumental-figures-on-gold-grounds"
+    },
+    {
+      "id": "SP23-061",
+      "name": "Romanesque Hieratic Panel",
+      "styleAnchors": [
+        "Romanesque Hieratic Panel",
+        "patterned romanesque painting",
+        "banded backgrounds"
+      ],
+      "ref": "pack_23/SP23-061.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "manuscript-visual-systems",
+      "categoryName": "1. Manuscript Visual Systems",
+      "domain": "patterned romanesque painting",
+      "tags": [
+        "medieval-visual-atlas",
+        "manuscript-visual-systems",
+        "patterned-romanesque-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-061 romanesque hieratic panel patterned romanesque painting banded backgrounds 1. manuscript visual systems manuscript visual systems patterned romanesque painting pack_23 medieval visual atlas manuscript-visual-systems medieval-visual-atlas manuscript-visual-systems patterned-romanesque-painting"
+    },
+    {
+      "id": "SP23-062",
+      "name": "Drollery Margin Grotesques",
+      "styleAnchors": [
+        "Drollery Margin Grotesques",
+        "absurd marginal creatures",
+        "hybrid creatures"
+      ],
+      "ref": "pack_23/SP23-062.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "manuscript-visual-systems",
+      "categoryName": "1. Manuscript Visual Systems",
+      "domain": "absurd marginal creatures",
+      "tags": ["medieval-visual-atlas", "manuscript-visual-systems", "absurd-marginal-creatures"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-062 drollery margin grotesques absurd marginal creatures hybrid creatures 1. manuscript visual systems manuscript visual systems absurd marginal creatures pack_23 medieval visual atlas manuscript-visual-systems medieval-visual-atlas manuscript-visual-systems absurd-marginal-creatures"
+    },
+    {
+      "id": "SP23-063",
+      "name": "Seasonal Labors Miniature",
+      "styleAnchors": [
+        "Seasonal Labors Miniature",
+        "calendar labors of the months",
+        "seasonal task"
+      ],
+      "ref": "pack_23/SP23-063.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "manuscript-visual-systems",
+      "categoryName": "1. Manuscript Visual Systems",
+      "domain": "calendar labors of the months",
+      "tags": [
+        "medieval-visual-atlas",
+        "manuscript-visual-systems",
+        "calendar-labors-of-the-months"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-063 seasonal labors miniature calendar labors of the months seasonal task 1. manuscript visual systems manuscript visual systems calendar labors of the months pack_23 medieval visual atlas manuscript-visual-systems medieval-visual-atlas manuscript-visual-systems calendar-labors-of-the-months"
+    },
+    {
+      "id": "SP23-064",
+      "name": "Diapered Ground Miniature",
+      "styleAnchors": [
+        "Diapered Ground Miniature",
+        "checkered patterned backgrounds",
+        "checkered backgrounds"
+      ],
+      "ref": "pack_23/SP23-064.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "manuscript-visual-systems",
+      "categoryName": "1. Manuscript Visual Systems",
+      "domain": "checkered patterned backgrounds",
+      "tags": [
+        "medieval-visual-atlas",
+        "manuscript-visual-systems",
+        "checkered-patterned-backgrounds"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-064 diapered ground miniature checkered patterned backgrounds checkered backgrounds 1. manuscript visual systems manuscript visual systems checkered patterned backgrounds pack_23 medieval visual atlas manuscript-visual-systems medieval-visual-atlas manuscript-visual-systems checkered-patterned-backgrounds"
+    },
+    {
+      "id": "SP23-065",
+      "name": "Raised Burnished Gilding",
+      "styleAnchors": ["Raised Burnished Gilding", "raised polished gold on gesso", "raised gesso"],
+      "ref": "pack_23/SP23-065.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "manuscript-visual-systems",
+      "categoryName": "1. Manuscript Visual Systems",
+      "domain": "raised polished gold on gesso",
+      "tags": [
+        "medieval-visual-atlas",
+        "manuscript-visual-systems",
+        "raised-polished-gold-on-gesso"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-065 raised burnished gilding raised polished gold on gesso raised gesso 1. manuscript visual systems manuscript visual systems raised polished gold on gesso pack_23 medieval visual atlas manuscript-visual-systems medieval-visual-atlas manuscript-visual-systems raised-polished-gold-on-gesso"
+    },
+    {
+      "id": "SP23-066",
+      "name": "Red-and-Blue Penwork Flourish",
+      "styleAnchors": [
+        "Red-and-Blue Penwork Flourish",
+        "gothic pen flourishing",
+        "red and blue filigree"
+      ],
+      "ref": "pack_23/SP23-066.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "manuscript-visual-systems",
+      "categoryName": "1. Manuscript Visual Systems",
+      "domain": "gothic pen flourishing",
+      "tags": ["medieval-visual-atlas", "manuscript-visual-systems", "gothic-pen-flourishing"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-066 red-and-blue penwork flourish gothic pen flourishing red and blue filigree 1. manuscript visual systems manuscript visual systems gothic pen flourishing pack_23 medieval visual atlas manuscript-visual-systems medieval-visual-atlas manuscript-visual-systems gothic-pen-flourishing"
+    },
+    {
+      "id": "SP23-067",
+      "name": "Anglo-Saxon Tinted Outline",
+      "styleAnchors": ["Anglo-Saxon Tinted Outline", "colored outline drawing", "colored outlines"],
+      "ref": "pack_23/SP23-067.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "manuscript-visual-systems",
+      "categoryName": "1. Manuscript Visual Systems",
+      "domain": "colored outline drawing",
+      "tags": ["medieval-visual-atlas", "manuscript-visual-systems", "colored-outline-drawing"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-067 anglo-saxon tinted outline colored outline drawing colored outlines 1. manuscript visual systems manuscript visual systems colored outline drawing pack_23 medieval visual atlas manuscript-visual-systems medieval-visual-atlas manuscript-visual-systems colored-outline-drawing"
+    },
+    {
+      "id": "SP23-068",
+      "name": "Moralized Bestiary Miniature",
+      "styleAnchors": [
+        "Moralized Bestiary Miniature",
+        "medieval bestiary animal plates",
+        "odd anatomy"
+      ],
+      "ref": "pack_23/SP23-068.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "manuscript-visual-systems",
+      "categoryName": "1. Manuscript Visual Systems",
+      "domain": "medieval bestiary animal plates",
+      "tags": [
+        "medieval-visual-atlas",
+        "manuscript-visual-systems",
+        "medieval-bestiary-animal-plates"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-068 moralized bestiary miniature medieval bestiary animal plates odd anatomy 1. manuscript visual systems manuscript visual systems medieval bestiary animal plates pack_23 medieval visual atlas manuscript-visual-systems medieval-visual-atlas manuscript-visual-systems medieval-bestiary-animal-plates"
+    },
+    {
+      "id": "SP23-069",
+      "name": "Mappa Mundi Marvels",
+      "styleAnchors": ["Mappa Mundi Marvels", "medieval world map with wonders", "circular map"],
+      "ref": "pack_23/SP23-069.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "manuscript-visual-systems",
+      "categoryName": "1. Manuscript Visual Systems",
+      "domain": "medieval world map with wonders",
+      "tags": [
+        "medieval-visual-atlas",
+        "manuscript-visual-systems",
+        "medieval-world-map-with-wonders"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-069 mappa mundi marvels medieval world map with wonders circular map 1. manuscript visual systems manuscript visual systems medieval world map with wonders pack_23 medieval visual atlas manuscript-visual-systems medieval-visual-atlas manuscript-visual-systems medieval-world-map-with-wonders"
+    },
+    {
+      "id": "SP23-070",
+      "name": "Painted Armorial Roll",
+      "styleAnchors": ["Painted Armorial Roll", "heraldic roll of arms", "painted shields"],
+      "ref": "pack_23/SP23-070.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "manuscript-visual-systems",
+      "categoryName": "1. Manuscript Visual Systems",
+      "domain": "heraldic roll of arms",
+      "tags": ["medieval-visual-atlas", "manuscript-visual-systems", "heraldic-roll-of-arms"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-070 painted armorial roll heraldic roll of arms painted shields 1. manuscript visual systems manuscript visual systems heraldic roll of arms pack_23 medieval visual atlas manuscript-visual-systems medieval-visual-atlas manuscript-visual-systems heraldic-roll-of-arms"
+    },
+    {
+      "id": "SP23-071",
+      "name": "Alchemical Treatise Illumination",
+      "styleAnchors": [
+        "Alchemical Treatise Illumination",
+        "symbolic alchemy manuscript",
+        "glass flasks"
+      ],
+      "ref": "pack_23/SP23-071.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "manuscript-visual-systems",
+      "categoryName": "1. Manuscript Visual Systems",
+      "domain": "symbolic alchemy manuscript",
+      "tags": ["medieval-visual-atlas", "manuscript-visual-systems", "symbolic-alchemy-manuscript"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-071 alchemical treatise illumination symbolic alchemy manuscript glass flasks 1. manuscript visual systems manuscript visual systems symbolic alchemy manuscript pack_23 medieval visual atlas manuscript-visual-systems medieval-visual-atlas manuscript-visual-systems symbolic-alchemy-manuscript"
+    },
+    {
+      "id": "SP23-072",
+      "name": "Medieval Herbal Codex",
+      "styleAnchors": [
+        "Medieval Herbal Codex",
+        "medieval plant manuscript",
+        "whole plant with roots"
+      ],
+      "ref": "pack_23/SP23-072.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "manuscript-visual-systems",
+      "categoryName": "1. Manuscript Visual Systems",
+      "domain": "medieval plant manuscript",
+      "tags": ["medieval-visual-atlas", "manuscript-visual-systems", "medieval-plant-manuscript"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-072 medieval herbal codex medieval plant manuscript whole plant with roots 1. manuscript visual systems manuscript visual systems medieval plant manuscript pack_23 medieval visual atlas manuscript-visual-systems medieval-visual-atlas manuscript-visual-systems medieval-plant-manuscript"
+    },
+    {
       "id": "SP23-007",
       "name": "Blockcut Bold",
       "ref": "pack_23/SP23-007.yaml",
@@ -152,6 +420,242 @@
       "searchableText": "sp23-012 rubricated contrast 2. print & engraving print & engraving pack_23 medieval visual atlas print-and-engraving medieval-visual-atlas print-and-engraving"
     },
     {
+      "id": "SP23-073",
+      "name": "Criblé Dotted Metalcut",
+      "styleAnchors": ["Criblé Dotted Metalcut", "dotted relief metal print", "punched white dots"],
+      "ref": "pack_23/SP23-073.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "print-and-engraving",
+      "categoryName": "2. Print & Engraving",
+      "domain": "dotted relief metal print",
+      "tags": ["medieval-visual-atlas", "print-and-engraving", "dotted-relief-metal-print"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-073 criblé dotted metalcut dotted relief metal print punched white dots 2. print & engraving print & engraving dotted relief metal print pack_23 medieval visual atlas print-and-engraving medieval-visual-atlas print-and-engraving dotted-relief-metal-print"
+    },
+    {
+      "id": "SP23-074",
+      "name": "Blockbook Picture Print",
+      "styleAnchors": [
+        "Blockbook Picture Print",
+        "single-block picture book page",
+        "thick outlines"
+      ],
+      "ref": "pack_23/SP23-074.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "print-and-engraving",
+      "categoryName": "2. Print & Engraving",
+      "domain": "single-block picture book page",
+      "tags": ["medieval-visual-atlas", "print-and-engraving", "single-block-picture-book-page"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-074 blockbook picture print single-block picture book page thick outlines 2. print & engraving print & engraving single-block picture book page pack_23 medieval visual atlas print-and-engraving medieval-visual-atlas print-and-engraving single-block-picture-book-page"
+    },
+    {
+      "id": "SP23-075",
+      "name": "Stencil-Colored Early Woodcut",
+      "styleAnchors": [
+        "Stencil-Colored Early Woodcut",
+        "stenciled color on woodcut",
+        "stenciled color"
+      ],
+      "ref": "pack_23/SP23-075.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "print-and-engraving",
+      "categoryName": "2. Print & Engraving",
+      "domain": "stenciled color on woodcut",
+      "tags": ["medieval-visual-atlas", "print-and-engraving", "stenciled-color-on-woodcut"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-075 stencil-colored early woodcut stenciled color on woodcut stenciled color 2. print & engraving print & engraving stenciled color on woodcut pack_23 medieval visual atlas print-and-engraving medieval-visual-atlas print-and-engraving stenciled-color-on-woodcut"
+    },
+    {
+      "id": "SP23-076",
+      "name": "Chronicle City Woodcut",
+      "styleAnchors": [
+        "Chronicle City Woodcut",
+        "woodcut panoramic city views",
+        "walled town panorama"
+      ],
+      "ref": "pack_23/SP23-076.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "print-and-engraving",
+      "categoryName": "2. Print & Engraving",
+      "domain": "woodcut panoramic city views",
+      "tags": ["medieval-visual-atlas", "print-and-engraving", "woodcut-panoramic-city-views"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-076 chronicle city woodcut woodcut panoramic city views walled town panorama 2. print & engraving print & engraving woodcut panoramic city views pack_23 medieval visual atlas print-and-engraving medieval-visual-atlas print-and-engraving woodcut-panoramic-city-views"
+    },
+    {
+      "id": "SP23-077",
+      "name": "Dance of Death Woodcut",
+      "styleAnchors": [
+        "Dance of Death Woodcut",
+        "macabre danse macabre print",
+        "dancing skeletons"
+      ],
+      "ref": "pack_23/SP23-077.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "print-and-engraving",
+      "categoryName": "2. Print & Engraving",
+      "domain": "macabre danse macabre print",
+      "tags": ["medieval-visual-atlas", "print-and-engraving", "macabre-danse-macabre-print"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-077 dance of death woodcut macabre danse macabre print dancing skeletons 2. print & engraving print & engraving macabre danse macabre print pack_23 medieval visual atlas print-and-engraving medieval-visual-atlas print-and-engraving macabre-danse-macabre-print"
+    },
+    {
+      "id": "SP23-078",
+      "name": "Wonder Broadsheet Woodcut",
+      "styleAnchors": [
+        "Wonder Broadsheet Woodcut",
+        "sensational monster news prints",
+        "central marvel"
+      ],
+      "ref": "pack_23/SP23-078.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "print-and-engraving",
+      "categoryName": "2. Print & Engraving",
+      "domain": "sensational monster news prints",
+      "tags": ["medieval-visual-atlas", "print-and-engraving", "sensational-monster-news-prints"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-078 wonder broadsheet woodcut sensational monster news prints central marvel 2. print & engraving print & engraving sensational monster news prints pack_23 medieval visual atlas print-and-engraving medieval-visual-atlas print-and-engraving sensational-monster-news-prints"
+    },
+    {
+      "id": "SP23-079",
+      "name": "Hand-Stenciled Card Deck Print",
+      "styleAnchors": [
+        "Hand-Stenciled Card Deck Print",
+        "early printed playing cards",
+        "court figure"
+      ],
+      "ref": "pack_23/SP23-079.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "print-and-engraving",
+      "categoryName": "2. Print & Engraving",
+      "domain": "early printed playing cards",
+      "tags": ["medieval-visual-atlas", "print-and-engraving", "early-printed-playing-cards"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-079 hand-stenciled card deck print early printed playing cards court figure 2. print & engraving print & engraving early printed playing cards pack_23 medieval visual atlas print-and-engraving medieval-visual-atlas print-and-engraving early-printed-playing-cards"
+    },
+    {
+      "id": "SP23-080",
+      "name": "Niello Silver Plate",
+      "styleAnchors": ["Niello Silver Plate", "black-filled engraved silver", "polished silver"],
+      "ref": "pack_23/SP23-080.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "print-and-engraving",
+      "categoryName": "2. Print & Engraving",
+      "domain": "black-filled engraved silver",
+      "tags": ["medieval-visual-atlas", "print-and-engraving", "black-filled-engraved-silver"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-080 niello silver plate black-filled engraved silver polished silver 2. print & engraving print & engraving black-filled engraved silver pack_23 medieval visual atlas print-and-engraving medieval-visual-atlas print-and-engraving black-filled-engraved-silver"
+    },
+    {
+      "id": "SP23-081",
+      "name": "Goldsmith Ornament Engraving",
+      "styleAnchors": [
+        "Goldsmith Ornament Engraving",
+        "ornament print for craftsmen",
+        "curling thistle foliage"
+      ],
+      "ref": "pack_23/SP23-081.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "print-and-engraving",
+      "categoryName": "2. Print & Engraving",
+      "domain": "ornament print for craftsmen",
+      "tags": ["medieval-visual-atlas", "print-and-engraving", "ornament-print-for-craftsmen"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-081 goldsmith ornament engraving ornament print for craftsmen curling thistle foliage 2. print & engraving print & engraving ornament print for craftsmen pack_23 medieval visual atlas print-and-engraving medieval-visual-atlas print-and-engraving ornament-print-for-craftsmen"
+    },
+    {
+      "id": "SP23-082",
+      "name": "Armor-Etcher Iron Plate",
+      "styleAnchors": [
+        "Armor-Etcher Iron Plate",
+        "early etching on iron",
+        "thick iron-etched lines"
+      ],
+      "ref": "pack_23/SP23-082.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "print-and-engraving",
+      "categoryName": "2. Print & Engraving",
+      "domain": "early etching on iron",
+      "tags": ["medieval-visual-atlas", "print-and-engraving", "early-etching-on-iron"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-082 armor-etcher iron plate early etching on iron thick iron-etched lines 2. print & engraving print & engraving early etching on iron pack_23 medieval visual atlas print-and-engraving medieval-visual-atlas print-and-engraving early-etching-on-iron"
+    },
+    {
+      "id": "SP23-083",
+      "name": "Visionary Apocalypse Woodcut",
+      "styleAnchors": [
+        "Visionary Apocalypse Woodcut",
+        "dense visionary woodcut",
+        "swirling clouds"
+      ],
+      "ref": "pack_23/SP23-083.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "print-and-engraving",
+      "categoryName": "2. Print & Engraving",
+      "domain": "dense visionary woodcut",
+      "tags": ["medieval-visual-atlas", "print-and-engraving", "dense-visionary-woodcut"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-083 visionary apocalypse woodcut dense visionary woodcut swirling clouds 2. print & engraving print & engraving dense visionary woodcut pack_23 medieval visual atlas print-and-engraving medieval-visual-atlas print-and-engraving dense-visionary-woodcut"
+    },
+    {
+      "id": "SP23-084",
+      "name": "Lift-Flap Anatomy Sheet",
+      "styleAnchors": ["Lift-Flap Anatomy Sheet", "layered paper anatomy print", "lifting flaps"],
+      "ref": "pack_23/SP23-084.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "print-and-engraving",
+      "categoryName": "2. Print & Engraving",
+      "domain": "layered paper anatomy print",
+      "tags": ["medieval-visual-atlas", "print-and-engraving", "layered-paper-anatomy-print"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-084 lift-flap anatomy sheet layered paper anatomy print lifting flaps 2. print & engraving print & engraving layered paper anatomy print pack_23 medieval visual atlas print-and-engraving medieval-visual-atlas print-and-engraving layered-paper-anatomy-print"
+    },
+    {
+      "id": "SP23-085",
+      "name": "Printer's Device Emblem",
+      "styleAnchors": ["Printer's Device Emblem", "early printer mark emblem", "compact emblem"],
+      "ref": "pack_23/SP23-085.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "print-and-engraving",
+      "categoryName": "2. Print & Engraving",
+      "domain": "early printer mark emblem",
+      "tags": ["medieval-visual-atlas", "print-and-engraving", "early-printer-mark-emblem"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-085 printer's device emblem early printer mark emblem compact emblem 2. print & engraving print & engraving early printer mark emblem pack_23 medieval visual atlas print-and-engraving medieval-visual-atlas print-and-engraving early-printer-mark-emblem"
+    },
+    {
+      "id": "SP23-086",
+      "name": "Astronomical Volvelle Print",
+      "styleAnchors": [
+        "Astronomical Volvelle Print",
+        "rotating paper disks print",
+        "rotating disks"
+      ],
+      "ref": "pack_23/SP23-086.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "print-and-engraving",
+      "categoryName": "2. Print & Engraving",
+      "domain": "rotating paper disks print",
+      "tags": ["medieval-visual-atlas", "print-and-engraving", "rotating-paper-disks-print"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-086 astronomical volvelle print rotating paper disks print rotating disks 2. print & engraving print & engraving rotating paper disks print pack_23 medieval visual atlas print-and-engraving medieval-visual-atlas print-and-engraving rotating-paper-disks-print"
+    },
+    {
       "id": "SP23-013",
       "name": "Woven Planes",
       "ref": "pack_23/SP23-013.yaml",
@@ -212,6 +716,272 @@
       "searchableText": "sp23-017 leaded light 3. medieval material studies medieval material studies pack_23 medieval visual atlas medieval-material-studies medieval-visual-atlas medieval-material-studies"
     },
     {
+      "id": "SP23-087",
+      "name": "Millefleur Tapestry",
+      "styleAnchors": [
+        "Millefleur Tapestry",
+        "thousand-flower woven tapestry",
+        "thousand tiny flowers"
+      ],
+      "ref": "pack_23/SP23-087.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "medieval-material-studies",
+      "categoryName": "3. Medieval Material Studies",
+      "domain": "thousand-flower woven tapestry",
+      "tags": [
+        "medieval-visual-atlas",
+        "medieval-material-studies",
+        "thousand-flower-woven-tapestry"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-087 millefleur tapestry thousand-flower woven tapestry thousand tiny flowers 3. medieval material studies medieval material studies thousand-flower woven tapestry pack_23 medieval visual atlas medieval-material-studies medieval-visual-atlas medieval-material-studies thousand-flower-woven-tapestry"
+    },
+    {
+      "id": "SP23-088",
+      "name": "Gold Couched Embroidery",
+      "styleAnchors": [
+        "Gold Couched Embroidery",
+        "precious gold thread embroidery",
+        "couched gold ground"
+      ],
+      "ref": "pack_23/SP23-088.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "medieval-material-studies",
+      "categoryName": "3. Medieval Material Studies",
+      "domain": "precious gold thread embroidery",
+      "tags": [
+        "medieval-visual-atlas",
+        "medieval-material-studies",
+        "precious-gold-thread-embroidery"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-088 gold couched embroidery precious gold thread embroidery couched gold ground 3. medieval material studies medieval material studies precious gold thread embroidery pack_23 medieval visual atlas medieval-material-studies medieval-visual-atlas medieval-material-studies precious-gold-thread-embroidery"
+    },
+    {
+      "id": "SP23-089",
+      "name": "Carved Ivory Relief",
+      "styleAnchors": ["Carved Ivory Relief", "small carved ivory plaques", "deep relief"],
+      "ref": "pack_23/SP23-089.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "medieval-material-studies",
+      "categoryName": "3. Medieval Material Studies",
+      "domain": "small carved ivory plaques",
+      "tags": ["medieval-visual-atlas", "medieval-material-studies", "small-carved-ivory-plaques"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-089 carved ivory relief small carved ivory plaques deep relief 3. medieval material studies medieval material studies small carved ivory plaques pack_23 medieval visual atlas medieval-material-studies medieval-visual-atlas medieval-material-studies small-carved-ivory-plaques"
+    },
+    {
+      "id": "SP23-090",
+      "name": "Brass Rubbing Effigy",
+      "styleAnchors": ["Brass Rubbing Effigy", "rubbed memorial brass image", "wax rubbing grain"],
+      "ref": "pack_23/SP23-090.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "medieval-material-studies",
+      "categoryName": "3. Medieval Material Studies",
+      "domain": "rubbed memorial brass image",
+      "tags": ["medieval-visual-atlas", "medieval-material-studies", "rubbed-memorial-brass-image"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-090 brass rubbing effigy rubbed memorial brass image wax rubbing grain 3. medieval material studies medieval material studies rubbed memorial brass image pack_23 medieval visual atlas medieval-material-studies medieval-visual-atlas medieval-material-studies rubbed-memorial-brass-image"
+    },
+    {
+      "id": "SP23-091",
+      "name": "Inlaid Floor Tile",
+      "styleAnchors": ["Inlaid Floor Tile", "two-color inlaid clay tiles", "red clay"],
+      "ref": "pack_23/SP23-091.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "medieval-material-studies",
+      "categoryName": "3. Medieval Material Studies",
+      "domain": "two-color inlaid clay tiles",
+      "tags": ["medieval-visual-atlas", "medieval-material-studies", "two-color-inlaid-clay-tiles"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-091 inlaid floor tile two-color inlaid clay tiles red clay 3. medieval material studies medieval material studies two-color inlaid clay tiles pack_23 medieval visual atlas medieval-material-studies medieval-visual-atlas medieval-material-studies two-color-inlaid-clay-tiles"
+    },
+    {
+      "id": "SP23-092",
+      "name": "Pilgrim Badge Pewter",
+      "styleAnchors": ["Pilgrim Badge Pewter", "cast lead-tin souvenir badges", "openwork pewter"],
+      "ref": "pack_23/SP23-092.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "medieval-material-studies",
+      "categoryName": "3. Medieval Material Studies",
+      "domain": "cast lead-tin souvenir badges",
+      "tags": [
+        "medieval-visual-atlas",
+        "medieval-material-studies",
+        "cast-lead-tin-souvenir-badges"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-092 pilgrim badge pewter cast lead-tin souvenir badges openwork pewter 3. medieval material studies medieval material studies cast lead-tin souvenir badges pack_23 medieval visual atlas medieval-material-studies medieval-visual-atlas medieval-material-studies cast-lead-tin-souvenir-badges"
+    },
+    {
+      "id": "SP23-093",
+      "name": "Repoussé Gilt Metal",
+      "styleAnchors": ["Repoussé Gilt Metal", "hammered gilded relief metal", "hammered relief"],
+      "ref": "pack_23/SP23-093.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "medieval-material-studies",
+      "categoryName": "3. Medieval Material Studies",
+      "domain": "hammered gilded relief metal",
+      "tags": [
+        "medieval-visual-atlas",
+        "medieval-material-studies",
+        "hammered-gilded-relief-metal"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-093 repoussé gilt metal hammered gilded relief metal hammered relief 3. medieval material studies medieval material studies hammered gilded relief metal pack_23 medieval visual atlas medieval-material-studies medieval-visual-atlas medieval-material-studies hammered-gilded-relief-metal"
+    },
+    {
+      "id": "SP23-094",
+      "name": "Carved Oak Misericord",
+      "styleAnchors": ["Carved Oak Misericord", "humorous choir seat carving", "dark oak"],
+      "ref": "pack_23/SP23-094.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "medieval-material-studies",
+      "categoryName": "3. Medieval Material Studies",
+      "domain": "humorous choir seat carving",
+      "tags": ["medieval-visual-atlas", "medieval-material-studies", "humorous-choir-seat-carving"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-094 carved oak misericord humorous choir seat carving dark oak 3. medieval material studies medieval material studies humorous choir seat carving pack_23 medieval visual atlas medieval-material-studies medieval-visual-atlas medieval-material-studies humorous-choir-seat-carving"
+    },
+    {
+      "id": "SP23-095",
+      "name": "Gold-Ground Tempera Panel",
+      "styleAnchors": [
+        "Gold-Ground Tempera Panel",
+        "egg tempera on gold panel",
+        "tooled gold ground"
+      ],
+      "ref": "pack_23/SP23-095.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "medieval-material-studies",
+      "categoryName": "3. Medieval Material Studies",
+      "domain": "egg tempera on gold panel",
+      "tags": ["medieval-visual-atlas", "medieval-material-studies", "egg-tempera-on-gold-panel"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-095 gold-ground tempera panel egg tempera on gold panel tooled gold ground 3. medieval material studies medieval material studies egg tempera on gold panel pack_23 medieval visual atlas medieval-material-studies medieval-visual-atlas medieval-material-studies egg-tempera-on-gold-panel"
+    },
+    {
+      "id": "SP23-096",
+      "name": "Carved Stone Capital",
+      "styleAnchors": ["Carved Stone Capital", "romanesque figured capitals", "column capital"],
+      "ref": "pack_23/SP23-096.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "medieval-material-studies",
+      "categoryName": "3. Medieval Material Studies",
+      "domain": "romanesque figured capitals",
+      "tags": ["medieval-visual-atlas", "medieval-material-studies", "romanesque-figured-capitals"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-096 carved stone capital romanesque figured capitals column capital 3. medieval material studies medieval material studies romanesque figured capitals pack_23 medieval visual atlas medieval-material-studies medieval-visual-atlas medieval-material-studies romanesque-figured-capitals"
+    },
+    {
+      "id": "SP23-097",
+      "name": "Walrus-Ivory Game Piece",
+      "styleAnchors": ["Walrus-Ivory Game Piece", "carved medieval chess figures", "squat figures"],
+      "ref": "pack_23/SP23-097.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "medieval-material-studies",
+      "categoryName": "3. Medieval Material Studies",
+      "domain": "carved medieval chess figures",
+      "tags": [
+        "medieval-visual-atlas",
+        "medieval-material-studies",
+        "carved-medieval-chess-figures"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-097 walrus-ivory game piece carved medieval chess figures squat figures 3. medieval material studies medieval material studies carved medieval chess figures pack_23 medieval visual atlas medieval-material-studies medieval-visual-atlas medieval-material-studies carved-medieval-chess-figures"
+    },
+    {
+      "id": "SP23-098",
+      "name": "Weathered Gargoyle Stone",
+      "styleAnchors": [
+        "Weathered Gargoyle Stone",
+        "grotesque rooftop stone carving",
+        "grotesque carving"
+      ],
+      "ref": "pack_23/SP23-098.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "medieval-material-studies",
+      "categoryName": "3. Medieval Material Studies",
+      "domain": "grotesque rooftop stone carving",
+      "tags": [
+        "medieval-visual-atlas",
+        "medieval-material-studies",
+        "grotesque-rooftop-stone-carving"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-098 weathered gargoyle stone grotesque rooftop stone carving grotesque carving 3. medieval material studies medieval material studies grotesque rooftop stone carving pack_23 medieval visual atlas medieval-material-studies medieval-visual-atlas medieval-material-studies grotesque-rooftop-stone-carving"
+    },
+    {
+      "id": "SP23-099",
+      "name": "Tooled Leather Binding",
+      "styleAnchors": [
+        "Tooled Leather Binding",
+        "blind-tooled leather book cover",
+        "blind-tooled stamps"
+      ],
+      "ref": "pack_23/SP23-099.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "medieval-material-studies",
+      "categoryName": "3. Medieval Material Studies",
+      "domain": "blind-tooled leather book cover",
+      "tags": [
+        "medieval-visual-atlas",
+        "medieval-material-studies",
+        "blind-tooled-leather-book-cover"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-099 tooled leather binding blind-tooled leather book cover blind-tooled stamps 3. medieval material studies medieval material studies blind-tooled leather book cover pack_23 medieval visual atlas medieval-material-studies medieval-visual-atlas medieval-material-studies blind-tooled-leather-book-cover"
+    },
+    {
+      "id": "SP23-100",
+      "name": "Cast Bronze Aquamanile",
+      "styleAnchors": [
+        "Cast Bronze Aquamanile",
+        "animal-shaped bronze water vessel",
+        "animal vessel"
+      ],
+      "ref": "pack_23/SP23-100.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "medieval-material-studies",
+      "categoryName": "3. Medieval Material Studies",
+      "domain": "animal-shaped bronze water vessel",
+      "tags": [
+        "medieval-visual-atlas",
+        "medieval-material-studies",
+        "animal-shaped-bronze-water-vessel"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-100 cast bronze aquamanile animal-shaped bronze water vessel animal vessel 3. medieval material studies medieval material studies animal-shaped bronze water vessel pack_23 medieval visual atlas medieval-material-studies medieval-visual-atlas medieval-material-studies animal-shaped-bronze-water-vessel"
+    },
+    {
+      "id": "SP23-101",
+      "name": "Painted Wooden Casket",
+      "styleAnchors": ["Painted Wooden Casket", "small painted wooden chest", "painted panels"],
+      "ref": "pack_23/SP23-101.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "medieval-material-studies",
+      "categoryName": "3. Medieval Material Studies",
+      "domain": "small painted wooden chest",
+      "tags": ["medieval-visual-atlas", "medieval-material-studies", "small-painted-wooden-chest"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-101 painted wooden casket small painted wooden chest painted panels 3. medieval material studies medieval material studies small painted wooden chest pack_23 medieval visual atlas medieval-material-studies medieval-visual-atlas medieval-material-studies small-painted-wooden-chest"
+    },
+    {
       "id": "SP23-018",
       "name": "Cilician Jewelwork",
       "ref": "pack_23/SP23-018.yaml",
@@ -258,6 +1028,342 @@
       "tags": ["medieval-visual-atlas", "regional-manuscript-traditions"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp23-021 emaki inkflow 4. regional manuscript traditions regional manuscript traditions pack_23 medieval visual atlas regional-manuscript-traditions medieval-visual-atlas regional-manuscript-traditions"
+    },
+    {
+      "id": "SP23-102",
+      "name": "Middle Byzantine Book Miniature",
+      "styleAnchors": [
+        "Middle Byzantine Book Miniature",
+        "middle byzantine illuminated miniature",
+        "gold ground"
+      ],
+      "ref": "pack_23/SP23-102.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "regional-manuscript-traditions",
+      "categoryName": "4. Regional Manuscript Traditions",
+      "domain": "middle byzantine illuminated miniature",
+      "tags": [
+        "medieval-visual-atlas",
+        "regional-manuscript-traditions",
+        "middle-byzantine-illuminated-miniature"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-102 middle byzantine book miniature middle byzantine illuminated miniature gold ground 4. regional manuscript traditions regional manuscript traditions middle byzantine illuminated miniature pack_23 medieval visual atlas regional-manuscript-traditions medieval-visual-atlas regional-manuscript-traditions middle-byzantine-illuminated-miniature"
+    },
+    {
+      "id": "SP23-103",
+      "name": "Herat Timurid Garden Miniature",
+      "styleAnchors": [
+        "Herat Timurid Garden Miniature",
+        "fifteenth-century herat painting",
+        "tiled pavilion"
+      ],
+      "ref": "pack_23/SP23-103.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "regional-manuscript-traditions",
+      "categoryName": "4. Regional Manuscript Traditions",
+      "domain": "fifteenth-century herat painting",
+      "tags": [
+        "medieval-visual-atlas",
+        "regional-manuscript-traditions",
+        "fifteenth-century-herat-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-103 herat timurid garden miniature fifteenth-century herat painting tiled pavilion 4. regional manuscript traditions regional manuscript traditions fifteenth-century herat painting pack_23 medieval visual atlas regional-manuscript-traditions medieval-visual-atlas regional-manuscript-traditions fifteenth-century-herat-painting"
+    },
+    {
+      "id": "SP23-104",
+      "name": "Maqamat Tavern Miniature",
+      "styleAnchors": [
+        "Maqamat Tavern Miniature",
+        "thirteenth-century baghdad maqamat painting",
+        "expressive figures"
+      ],
+      "ref": "pack_23/SP23-104.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "regional-manuscript-traditions",
+      "categoryName": "4. Regional Manuscript Traditions",
+      "domain": "thirteenth-century baghdad maqamat painting",
+      "tags": [
+        "medieval-visual-atlas",
+        "regional-manuscript-traditions",
+        "thirteenth-century-baghdad-maqamat-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-104 maqamat tavern miniature thirteenth-century baghdad maqamat painting expressive figures 4. regional manuscript traditions regional manuscript traditions thirteenth-century baghdad maqamat painting pack_23 medieval visual atlas regional-manuscript-traditions medieval-visual-atlas regional-manuscript-traditions thirteenth-century-baghdad-maqamat-painting"
+    },
+    {
+      "id": "SP23-105",
+      "name": "Andalusian Garden Romance Miniature",
+      "styleAnchors": [
+        "Andalusian Garden Romance Miniature",
+        "andalusian romance manuscript painting",
+        "horseshoe arches"
+      ],
+      "ref": "pack_23/SP23-105.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "regional-manuscript-traditions",
+      "categoryName": "4. Regional Manuscript Traditions",
+      "domain": "andalusian romance manuscript painting",
+      "tags": [
+        "medieval-visual-atlas",
+        "regional-manuscript-traditions",
+        "andalusian-romance-manuscript-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-105 andalusian garden romance miniature andalusian romance manuscript painting horseshoe arches 4. regional manuscript traditions regional manuscript traditions andalusian romance manuscript painting pack_23 medieval visual atlas regional-manuscript-traditions medieval-visual-atlas regional-manuscript-traditions andalusian-romance-manuscript-painting"
+    },
+    {
+      "id": "SP23-106",
+      "name": "Coptic Interlace Frontispiece",
+      "styleAnchors": [
+        "Coptic Interlace Frontispiece",
+        "coptic egyptian manuscript ornament",
+        "ribbon interlace frame"
+      ],
+      "ref": "pack_23/SP23-106.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "regional-manuscript-traditions",
+      "categoryName": "4. Regional Manuscript Traditions",
+      "domain": "coptic egyptian manuscript ornament",
+      "tags": [
+        "medieval-visual-atlas",
+        "regional-manuscript-traditions",
+        "coptic-egyptian-manuscript-ornament"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-106 coptic interlace frontispiece coptic egyptian manuscript ornament ribbon interlace frame 4. regional manuscript traditions regional manuscript traditions coptic egyptian manuscript ornament pack_23 medieval visual atlas regional-manuscript-traditions medieval-visual-atlas regional-manuscript-traditions coptic-egyptian-manuscript-ornament"
+    },
+    {
+      "id": "SP23-107",
+      "name": "Nara Picture Book",
+      "styleAnchors": ["Nara Picture Book", "japanese nara ehon painting", "gold cloud bands"],
+      "ref": "pack_23/SP23-107.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "regional-manuscript-traditions",
+      "categoryName": "4. Regional Manuscript Traditions",
+      "domain": "japanese nara ehon painting",
+      "tags": [
+        "medieval-visual-atlas",
+        "regional-manuscript-traditions",
+        "japanese-nara-ehon-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-107 nara picture book japanese nara ehon painting gold cloud bands 4. regional manuscript traditions regional manuscript traditions japanese nara ehon painting pack_23 medieval visual atlas regional-manuscript-traditions medieval-visual-atlas regional-manuscript-traditions japanese-nara-ehon-painting"
+    },
+    {
+      "id": "SP23-108",
+      "name": "Song Court Album Leaf",
+      "styleAnchors": [
+        "Song Court Album Leaf",
+        "song dynasty small album painting",
+        "one-corner composition"
+      ],
+      "ref": "pack_23/SP23-108.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "regional-manuscript-traditions",
+      "categoryName": "4. Regional Manuscript Traditions",
+      "domain": "song dynasty small album painting",
+      "tags": [
+        "medieval-visual-atlas",
+        "regional-manuscript-traditions",
+        "song-dynasty-small-album-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-108 song court album leaf song dynasty small album painting one-corner composition 4. regional manuscript traditions regional manuscript traditions song dynasty small album painting pack_23 medieval visual atlas regional-manuscript-traditions medieval-visual-atlas regional-manuscript-traditions song-dynasty-small-album-painting"
+    },
+    {
+      "id": "SP23-109",
+      "name": "Western Indian Red-Ground Manuscript",
+      "styleAnchors": [
+        "Western Indian Red-Ground Manuscript",
+        "western indian manuscript painting",
+        "red ground"
+      ],
+      "ref": "pack_23/SP23-109.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "regional-manuscript-traditions",
+      "categoryName": "4. Regional Manuscript Traditions",
+      "domain": "western indian manuscript painting",
+      "tags": [
+        "medieval-visual-atlas",
+        "regional-manuscript-traditions",
+        "western-indian-manuscript-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-109 western indian red-ground manuscript western indian manuscript painting red ground 4. regional manuscript traditions regional manuscript traditions western indian manuscript painting pack_23 medieval visual atlas regional-manuscript-traditions medieval-visual-atlas regional-manuscript-traditions western-indian-manuscript-painting"
+    },
+    {
+      "id": "SP23-110",
+      "name": "Palm-Leaf Manuscript Painting",
+      "styleAnchors": [
+        "Palm-Leaf Manuscript Painting",
+        "long narrow palm-leaf illustration",
+        "long narrow leaf"
+      ],
+      "ref": "pack_23/SP23-110.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "regional-manuscript-traditions",
+      "categoryName": "4. Regional Manuscript Traditions",
+      "domain": "long narrow palm-leaf illustration",
+      "tags": [
+        "medieval-visual-atlas",
+        "regional-manuscript-traditions",
+        "long-narrow-palm-leaf-illustration"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-110 palm-leaf manuscript painting long narrow palm-leaf illustration long narrow leaf 4. regional manuscript traditions regional manuscript traditions long narrow palm-leaf illustration pack_23 medieval visual atlas regional-manuscript-traditions medieval-visual-atlas regional-manuscript-traditions long-narrow-palm-leaf-illustration"
+    },
+    {
+      "id": "SP23-111",
+      "name": "Mixtec Screenfold Codex",
+      "styleAnchors": [
+        "Mixtec Screenfold Codex",
+        "painted deerskin screenfold history",
+        "flat profile figures"
+      ],
+      "ref": "pack_23/SP23-111.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "regional-manuscript-traditions",
+      "categoryName": "4. Regional Manuscript Traditions",
+      "domain": "painted deerskin screenfold history",
+      "tags": [
+        "medieval-visual-atlas",
+        "regional-manuscript-traditions",
+        "painted-deerskin-screenfold-history"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-111 mixtec screenfold codex painted deerskin screenfold history flat profile figures 4. regional manuscript traditions regional manuscript traditions painted deerskin screenfold history pack_23 medieval visual atlas regional-manuscript-traditions medieval-visual-atlas regional-manuscript-traditions painted-deerskin-screenfold-history"
+    },
+    {
+      "id": "SP23-112",
+      "name": "Icelandic Saga Margin Drawing",
+      "styleAnchors": [
+        "Icelandic Saga Margin Drawing",
+        "icelandic manuscript pen drawing",
+        "brown ink"
+      ],
+      "ref": "pack_23/SP23-112.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "regional-manuscript-traditions",
+      "categoryName": "4. Regional Manuscript Traditions",
+      "domain": "icelandic manuscript pen drawing",
+      "tags": [
+        "medieval-visual-atlas",
+        "regional-manuscript-traditions",
+        "icelandic-manuscript-pen-drawing"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-112 icelandic saga margin drawing icelandic manuscript pen drawing brown ink 4. regional manuscript traditions regional manuscript traditions icelandic manuscript pen drawing pack_23 medieval visual atlas regional-manuscript-traditions medieval-visual-atlas regional-manuscript-traditions icelandic-manuscript-pen-drawing"
+    },
+    {
+      "id": "SP23-113",
+      "name": "Bohemian Court Miniature",
+      "styleAnchors": [
+        "Bohemian Court Miniature",
+        "late fourteenth-century prague court painting",
+        "soft rounded figures"
+      ],
+      "ref": "pack_23/SP23-113.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "regional-manuscript-traditions",
+      "categoryName": "4. Regional Manuscript Traditions",
+      "domain": "late fourteenth-century prague court painting",
+      "tags": [
+        "medieval-visual-atlas",
+        "regional-manuscript-traditions",
+        "late-fourteenth-century-prague-court-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-113 bohemian court miniature late fourteenth-century prague court painting soft rounded figures 4. regional manuscript traditions regional manuscript traditions late fourteenth-century prague court painting pack_23 medieval visual atlas regional-manuscript-traditions medieval-visual-atlas regional-manuscript-traditions late-fourteenth-century-prague-court-painting"
+    },
+    {
+      "id": "SP23-114",
+      "name": "Majorcan Portolan Chart",
+      "styleAnchors": ["Majorcan Portolan Chart", "painted medieval sea chart", "rhumb line web"],
+      "ref": "pack_23/SP23-114.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "regional-manuscript-traditions",
+      "categoryName": "4. Regional Manuscript Traditions",
+      "domain": "painted medieval sea chart",
+      "tags": [
+        "medieval-visual-atlas",
+        "regional-manuscript-traditions",
+        "painted-medieval-sea-chart"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-114 majorcan portolan chart painted medieval sea chart rhumb line web 4. regional manuscript traditions regional manuscript traditions painted medieval sea chart pack_23 medieval visual atlas regional-manuscript-traditions medieval-visual-atlas regional-manuscript-traditions painted-medieval-sea-chart"
+    },
+    {
+      "id": "SP23-115",
+      "name": "Deccani Twilight Painting",
+      "styleAnchors": ["Deccani Twilight Painting", "deccan sultanate painting", "gold sky"],
+      "ref": "pack_23/SP23-115.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "regional-manuscript-traditions",
+      "categoryName": "4. Regional Manuscript Traditions",
+      "domain": "deccan sultanate painting",
+      "tags": [
+        "medieval-visual-atlas",
+        "regional-manuscript-traditions",
+        "deccan-sultanate-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-115 deccani twilight painting deccan sultanate painting gold sky 4. regional manuscript traditions regional manuscript traditions deccan sultanate painting pack_23 medieval visual atlas regional-manuscript-traditions medieval-visual-atlas regional-manuscript-traditions deccan-sultanate-painting"
+    },
+    {
+      "id": "SP23-116",
+      "name": "Vaspurakan Folk Miniature",
+      "styleAnchors": ["Vaspurakan Folk Miniature", "armenian vaspurakan painting", "huge eyes"],
+      "ref": "pack_23/SP23-116.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "regional-manuscript-traditions",
+      "categoryName": "4. Regional Manuscript Traditions",
+      "domain": "armenian vaspurakan painting",
+      "tags": [
+        "medieval-visual-atlas",
+        "regional-manuscript-traditions",
+        "armenian-vaspurakan-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-116 vaspurakan folk miniature armenian vaspurakan painting huge eyes 4. regional manuscript traditions regional manuscript traditions armenian vaspurakan painting pack_23 medieval visual atlas regional-manuscript-traditions medieval-visual-atlas regional-manuscript-traditions armenian-vaspurakan-painting"
+    },
+    {
+      "id": "SP23-117",
+      "name": "Jalayirid Dream Landscape",
+      "styleAnchors": [
+        "Jalayirid Dream Landscape",
+        "fourteenth-century jalayirid painting",
+        "spongy towering rocks"
+      ],
+      "ref": "pack_23/SP23-117.yaml",
+      "packId": "pack_23",
+      "packName": "Medieval Visual Atlas",
+      "categoryId": "regional-manuscript-traditions",
+      "categoryName": "4. Regional Manuscript Traditions",
+      "domain": "fourteenth-century jalayirid painting",
+      "tags": [
+        "medieval-visual-atlas",
+        "regional-manuscript-traditions",
+        "fourteenth-century-jalayirid-painting"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp23-117 jalayirid dream landscape fourteenth-century jalayirid painting spongy towering rocks 4. regional manuscript traditions regional manuscript traditions fourteenth-century jalayirid painting pack_23 medieval visual atlas regional-manuscript-traditions medieval-visual-atlas regional-manuscript-traditions fourteenth-century-jalayirid-painting"
     },
     {
       "id": "SP23-022",
@@ -704,5 +1810,5 @@
       "searchableText": "sp23-058 shallow relief and fine marks 12. hybrid visual studies hybrid visual studies pack_23 medieval visual atlas hybrid-visual-studies medieval-visual-atlas hybrid-visual-studies"
     }
   ],
-  "totalPresetCount": 58
+  "totalPresetCount": 117
 }

@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-090
+packId: pack_23
+name: Brass Rubbing Effigy
+styleAnchors:
+  - Brass Rubbing Effigy
+  - rubbed memorial brass image
+  - wax rubbing grain
+displayName: Brass Rubbing Effigy
+category: 3. Medieval Material Studies
+domain: rubbed memorial brass image
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - medieval-material-studies
+  - brass-rubbing
+  - medieval-material
+  - portable-style-study
+visualDna:
+  aesthetic: 'Brass rubbing effigy: waxy rubbings taken from engraved memorial brasses, life-size flat figures in armor or gowns rendered in gold or black wax on dark paper.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original figures; show the subject as a flat engraved effigy captured by wax rubbing.
+  color_and_tone: Gold or black wax on black or cream paper.
+  lighting_and_shadow: No lighting, only rubbed line and tone, kept consistent across the whole image.
+  texture_and_material: Waxy crayon grain, raised line edges and paper texture.
+  camera_and_composition: Full-length frontal effigy lying flat, feet on a small animal.
+  atmosphere_and_mood: Keep the requested mood with quiet memorial calm.
+  rendering_and_quality: Clean engraved outlines with even waxy grain, kept consistent across the whole image.
+  creative_brief: "Brass rubbing effigy: waxy rubbings taken from engraved memorial brasses, life-size flat figures in armor or gowns rendered in gold or black wax on dark paper. Carry it through wax rubbing grain, flat effigy, engraved outlines, dark paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: wax rubbing grain; flat effigy; engraved outlines; dark paper
+avoidRules:
+  - readable epitaphs
+  - readable inscriptions
+  - plastic or modern materials
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable epitaphs, readable inscriptions, plastic or modern materials, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: medieval-material-studies
+  categoryName: 3. Medieval Material Studies
+  tags:
+    - curation-v2
+    - medieval-material-studies
+    - brass-rubbing
+    - medieval-material
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: rubbed memorial brass image

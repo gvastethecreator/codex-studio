@@ -119,4 +119,533 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP23-102',
+    name: 'Middle Byzantine Book Miniature',
+    displayName: 'Middle Byzantine Book Miniature',
+    styleAnchors: [
+      'Middle Byzantine Book Miniature',
+      'middle byzantine illuminated miniature',
+      'gold ground',
+    ],
+    category: '4. Regional Manuscript Traditions',
+    domain: 'middle byzantine illuminated miniature',
+    negativePrompt:
+      'cultural stereotypes or costume caricature, readable script, mixing unrelated traditions, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Middle Byzantine book miniature: tenth- to twelfth-century Constantinopolitan book painting with elegant elongated figures, gold grounds, soft green-shadowed flesh and classical drapery.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; give figures graceful elongated proportions and classical drapery against gold.',
+      color_and_tone: 'Burnished gold ground, lapis blue, rose, olive-green flesh shadows.',
+      lighting_and_shadow: 'Soft modeling with fine white highlight lines on drapery.',
+      texture_and_material: 'Gold leaf, flaking pigment on parchment and fine brushwork.',
+      camera_and_composition:
+        'Few figures on a narrow ground strip against gold, framed by a thin border.',
+      atmosphere_and_mood: 'Keep the requested mood with calm courtly elegance.',
+      rendering_and_quality:
+        'Refined miniature detail with luminous gold, kept consistent across the whole image.',
+      creative_brief:
+        "Middle Byzantine book miniature: tenth- to twelfth-century Constantinopolitan book painting with elegant elongated figures, gold grounds, soft green-shadowed flesh and classical drapery. Carry it through gold ground, elongated figures, green-shadowed flesh, white highlight lines. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'gold ground; elongated figures; green-shadowed flesh; white highlight lines',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-103',
+    name: 'Herat Timurid Garden Miniature',
+    displayName: 'Herat Timurid Garden Miniature',
+    styleAnchors: [
+      'Herat Timurid Garden Miniature',
+      'fifteenth-century herat painting',
+      'tiled pavilion',
+    ],
+    category: '4. Regional Manuscript Traditions',
+    domain: 'fifteenth-century herat painting',
+    negativePrompt:
+      'cultural stereotypes or costume caricature, readable script, mixing unrelated traditions, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Herat Timurid garden miniature: fifteenth-century Persian book painting from Herat, jewel-toned gardens, tiled pavilions, slender figures and high horizons full of flowering trees.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; place slender figures in a high-horizon garden with tiled pavilions and flowering trees.',
+      color_and_tone: 'Lapis, turquoise, apricot, leaf green and gold sky.',
+      lighting_and_shadow:
+        'Even jewel-like light with no cast shadows, kept consistent across the whole image.',
+      texture_and_material: 'Fine opaque pigment, gold, tiny patterned tiles and carpets.',
+      camera_and_composition: 'High viewpoint with stacked space rising to a gold sky.',
+      atmosphere_and_mood: 'Keep the requested mood with poetic courtly beauty.',
+      rendering_and_quality:
+        'Exquisite small detail with patterned surfaces, kept consistent across the whole image.',
+      creative_brief:
+        "Herat Timurid garden miniature: fifteenth-century Persian book painting from Herat, jewel-toned gardens, tiled pavilions, slender figures and high horizons full of flowering trees. Carry it through tiled pavilion, flowering garden, high horizon, jewel tones. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'tiled pavilion; flowering garden; high horizon; jewel tones',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-104',
+    name: 'Maqamat Tavern Miniature',
+    displayName: 'Maqamat Tavern Miniature',
+    styleAnchors: [
+      'Maqamat Tavern Miniature',
+      'thirteenth-century baghdad maqamat painting',
+      'expressive figures',
+    ],
+    category: '4. Regional Manuscript Traditions',
+    domain: 'thirteenth-century baghdad maqamat painting',
+    negativePrompt:
+      'cultural stereotypes or costume caricature, readable script, mixing unrelated traditions, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Maqamat tavern miniature: thirteenth-century Baghdad illustrations of lively everyday stories, expressive figures in striped robes, camels, ships, taverns and libraries on plain grounds.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; show expressive everyday figures in a lively story scene with lively gestures.',
+      color_and_tone: 'Warm reds, blues, ochres and gold on a pale plain ground.',
+      lighting_and_shadow:
+        'Flat with light modeling in robes, kept consistent across the whole image.',
+      texture_and_material: 'Opaque pigment on paper, striped patterned textiles, simple settings.',
+      camera_and_composition: 'Figures arranged in a row or around a central action.',
+      atmosphere_and_mood: 'Keep the requested mood with witty worldly humor.',
+      rendering_and_quality:
+        'Expressive faces and gestures with clear storytelling, kept consistent across the whole image.',
+      creative_brief:
+        "Maqamat tavern miniature: thirteenth-century Baghdad illustrations of lively everyday stories, expressive figures in striped robes, camels, ships, taverns and libraries on plain grounds. Carry it through expressive figures, striped robes, plain ground, everyday story. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'expressive figures; striped robes; plain ground; everyday story',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-105',
+    name: 'Andalusian Garden Romance Miniature',
+    displayName: 'Andalusian Garden Romance Miniature',
+    styleAnchors: [
+      'Andalusian Garden Romance Miniature',
+      'andalusian romance manuscript painting',
+      'horseshoe arches',
+    ],
+    category: '4. Regional Manuscript Traditions',
+    domain: 'andalusian romance manuscript painting',
+    negativePrompt:
+      'cultural stereotypes or costume caricature, readable script, mixing unrelated traditions, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        "Andalusian garden romance miniature: thirteenth-century western Islamic painting of lovers' stories, gardens with water wheels, palaces with horseshoe arches and stylized trees beside a river.",
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; set the figures beside a river garden with horseshoe arches and a water wheel.',
+      color_and_tone: 'Warm reds, soft greens, blue water and cream grounds.',
+      lighting_and_shadow:
+        'Flat with gentle robe modeling, kept consistent across the whole image.',
+      texture_and_material:
+        'Opaque pigment, stylized trees and patterned architecture, kept consistent across the whole image.',
+      camera_and_composition: 'Figures on a river bank with palace and water wheel behind.',
+      atmosphere_and_mood:
+        'Keep the requested mood with lyrical longing, kept consistent across the whole image.',
+      rendering_and_quality:
+        'Clear graceful figures with stylized garden elements, kept consistent across the whole image.',
+      creative_brief:
+        "Andalusian garden romance miniature: thirteenth-century western Islamic painting of lovers' stories, gardens with water wheels, palaces with horseshoe arches and stylized trees beside a river. Carry it through horseshoe arches, water wheel, river garden, stylized trees. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'horseshoe arches; water wheel; river garden; stylized trees',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-106',
+    name: 'Coptic Interlace Frontispiece',
+    displayName: 'Coptic Interlace Frontispiece',
+    styleAnchors: [
+      'Coptic Interlace Frontispiece',
+      'coptic egyptian manuscript ornament',
+      'ribbon interlace frame',
+    ],
+    category: '4. Regional Manuscript Traditions',
+    domain: 'coptic egyptian manuscript ornament',
+    negativePrompt:
+      'cultural stereotypes or costume caricature, readable script, mixing unrelated traditions, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Coptic interlace frontispiece: Egyptian Christian book painting with bold interlace crosses and frames, birds and simple frontal figures in red, yellow and green on parchment.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; render simple frontal figures or birds framed by bold ribbon interlace.',
+      color_and_tone: 'Red, yellow ochre, green and black on warm parchment.',
+      lighting_and_shadow: 'Flat with no modeling, kept consistent across the whole image.',
+      texture_and_material:
+        'Thick outlines, ribbon interlace and aged parchment, kept consistent across the whole image.',
+      camera_and_composition: 'Centered framed motif with birds or figures at the corners.',
+      atmosphere_and_mood: 'Keep the requested mood with humble earnest devotion.',
+      rendering_and_quality:
+        'Bold simple shapes with clear interlace, kept consistent across the whole image.',
+      creative_brief:
+        "Coptic interlace frontispiece: Egyptian Christian book painting with bold interlace crosses and frames, birds and simple frontal figures in red, yellow and green on parchment. Carry it through ribbon interlace frame, frontal figures, birds, warm parchment. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'ribbon interlace frame; frontal figures; birds; warm parchment',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-107',
+    name: 'Nara Picture Book',
+    displayName: 'Nara Picture Book',
+    styleAnchors: ['Nara Picture Book', 'japanese nara ehon painting', 'gold cloud bands'],
+    category: '4. Regional Manuscript Traditions',
+    domain: 'japanese nara ehon painting',
+    negativePrompt:
+      'cultural stereotypes or costume caricature, readable script, mixing unrelated traditions, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Nara picture book: Japanese Muromachi and early Edo illustrated storybooks with naive bright figures, gold cloud bands, simple architecture and tales of foxes, demons and heroes.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; draw simple charming figures in a story scene divided by gold cloud bands.',
+      color_and_tone: 'Bright mineral green, red, blue and gold clouds on paper.',
+      lighting_and_shadow: 'Flat with no shadow, kept consistent across the whole image.',
+      texture_and_material: 'Opaque mineral pigment, gold flake clouds and simple ink lines.',
+      camera_and_composition: 'Elevated view with roofless rooms and cloud bands.',
+      atmosphere_and_mood: 'Keep the requested mood with naive folk wonder.',
+      rendering_and_quality:
+        'Simple charming figures with bright clean color, kept consistent across the whole image.',
+      creative_brief:
+        "Nara picture book: Japanese Muromachi and early Edo illustrated storybooks with naive bright figures, gold cloud bands, simple architecture and tales of foxes, demons and heroes. Carry it through gold cloud bands, roofless rooms, naive figures, mineral green. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'gold cloud bands; roofless rooms; naive figures; mineral green',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-108',
+    name: 'Song Court Album Leaf',
+    displayName: 'Song Court Album Leaf',
+    styleAnchors: [
+      'Song Court Album Leaf',
+      'song dynasty small album painting',
+      'one-corner composition',
+    ],
+    category: '4. Regional Manuscript Traditions',
+    domain: 'song dynasty small album painting',
+    negativePrompt:
+      'cultural stereotypes or costume caricature, readable script, mixing unrelated traditions, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Song court album leaf: small Chinese court paintings on silk fans and album leaves, one corner composition, misty distances, precise birds and branches, vast empty space.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; place the subject in one corner with precise detail and vast misty space.',
+      color_and_tone: 'Soft silk browns, pale mineral greens and ink grey.',
+      lighting_and_shadow:
+        'Soft atmospheric mist and graded ink wash, kept consistent across the whole image.',
+      texture_and_material: 'Aged silk weave, fine ink lines and light color washes.',
+      camera_and_composition: 'Asymmetric one-corner composition on a round or square leaf.',
+      atmosphere_and_mood: 'Keep the requested mood with poetic contemplative stillness.',
+      rendering_and_quality:
+        'Precise brush detail balanced with empty space, kept consistent across the whole image.',
+      creative_brief:
+        "Song court album leaf: small Chinese court paintings on silk fans and album leaves, one corner composition, misty distances, precise birds and branches, vast empty space. Carry it through one-corner composition, misty space, aged silk, precise birds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'one-corner composition; misty space; aged silk; precise birds',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-109',
+    name: 'Western Indian Red-Ground Manuscript',
+    displayName: 'Western Indian Red-Ground Manuscript',
+    styleAnchors: [
+      'Western Indian Red-Ground Manuscript',
+      'western indian manuscript painting',
+      'red ground',
+    ],
+    category: '4. Regional Manuscript Traditions',
+    domain: 'western indian manuscript painting',
+    negativePrompt:
+      'cultural stereotypes or costume caricature, readable script, mixing unrelated traditions, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Western Indian red-ground manuscript: fourteenth- to sixteenth-century Gujarati painting with brilliant red grounds, gold, angular figures in profile with the far eye projecting.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; draw angular profile figures with the projecting far eye against a red ground.',
+      color_and_tone: 'Brilliant vermilion ground with gold, ultramarine and white.',
+      lighting_and_shadow: 'Flat with no shading, kept consistent across the whole image.',
+      texture_and_material: 'Opaque pigment, gold, crisp outlines on paper or palm leaf.',
+      camera_and_composition: 'Horizontal panel with figures in rows and patterned borders.',
+      atmosphere_and_mood: 'Keep the requested mood with bright festive intensity.',
+      rendering_and_quality:
+        'Crisp angular line with intense flat color, kept consistent across the whole image.',
+      creative_brief:
+        "Western Indian red-ground manuscript: fourteenth- to sixteenth-century Gujarati painting with brilliant red grounds, gold, angular figures in profile with the far eye projecting. Carry it through red ground, projecting far eye, angular profiles, gold detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'red ground; projecting far eye; angular profiles; gold detail',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-110',
+    name: 'Palm-Leaf Manuscript Painting',
+    displayName: 'Palm-Leaf Manuscript Painting',
+    styleAnchors: [
+      'Palm-Leaf Manuscript Painting',
+      'long narrow palm-leaf illustration',
+      'long narrow leaf',
+    ],
+    category: '4. Regional Manuscript Traditions',
+    domain: 'long narrow palm-leaf illustration',
+    negativePrompt:
+      'readable script, cultural stereotypes or costume caricature, mixing unrelated traditions, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Palm-leaf manuscript painting: tiny bright paintings on long narrow palm leaves from eastern India, figures in small panels between rows, with string holes and worn leaf edges.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; paint the subject tiny inside a small panel on a long narrow palm leaf.',
+      color_and_tone: 'Red, yellow, green, blue and white on golden-brown leaf.',
+      lighting_and_shadow:
+        'Flat with soft modeling on figures, kept consistent across the whole image.',
+      texture_and_material: 'Palm-leaf fibers, string holes, worn edges and tiny brushwork.',
+      camera_and_composition: 'Very wide narrow strip with a central painted panel.',
+      atmosphere_and_mood: 'Keep the requested mood with intimate precious calm.',
+      rendering_and_quality:
+        'Tiny delicate figures with believable leaf wear, kept consistent across the whole image.',
+      creative_brief:
+        "Palm-leaf manuscript painting: tiny bright paintings on long narrow palm leaves from eastern India, figures in small panels between rows, with string holes and worn leaf edges. Carry it through long narrow leaf, small panels, string holes, tiny brushwork. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'long narrow leaf; small panels; string holes; tiny brushwork',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-111',
+    name: 'Mixtec Screenfold Codex',
+    displayName: 'Mixtec Screenfold Codex',
+    styleAnchors: [
+      'Mixtec Screenfold Codex',
+      'painted deerskin screenfold history',
+      'flat profile figures',
+    ],
+    category: '4. Regional Manuscript Traditions',
+    domain: 'painted deerskin screenfold history',
+    negativePrompt:
+      'readable glyphs as text, generic tribal pattern, cultural stereotypes or costume caricature, readable script, mixing unrelated traditions, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Mixtec screenfold codex: pre-Columbian painted deerskin histories from Oaxaca, flat brilliantly colored profile figures with bold outlines, place signs and meander guide lines.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; draw the subject as flat bold-outlined profile figures moving along a meander line.',
+      color_and_tone: 'Red, yellow, turquoise, black and white on cream gesso.',
+      lighting_and_shadow: 'Flat with no shading, kept consistent across the whole image.',
+      texture_and_material: 'Gesso-coated deerskin, bold black outlines and fold creases.',
+      camera_and_composition: 'Figures travel along red guide lines across folded panels.',
+      atmosphere_and_mood: 'Keep the requested mood with ceremonial historical grandeur.',
+      rendering_and_quality:
+        'Crisp flat color with strong consistent outline, kept consistent across the whole image.',
+      creative_brief:
+        "Mixtec screenfold codex: pre-Columbian painted deerskin histories from Oaxaca, flat brilliantly colored profile figures with bold outlines, place signs and meander guide lines. Carry it through flat profile figures, bold outlines, meander guide lines, fold creases. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'flat profile figures; bold outlines; meander guide lines; fold creases',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-112',
+    name: 'Icelandic Saga Margin Drawing',
+    displayName: 'Icelandic Saga Margin Drawing',
+    styleAnchors: [
+      'Icelandic Saga Margin Drawing',
+      'icelandic manuscript pen drawing',
+      'brown ink',
+    ],
+    category: '4. Regional Manuscript Traditions',
+    domain: 'icelandic manuscript pen drawing',
+    negativePrompt:
+      'cultural stereotypes or costume caricature, readable script, mixing unrelated traditions, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Icelandic saga margin drawing: rough lively pen drawings from Icelandic manuscripts, vigorous gods, heroes and sea monsters drawn in brown ink with simple washes.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; draw the subject in vigorous brown-ink lines with rough energetic gestures.',
+      color_and_tone: 'Brown ink with faded red and green washes on yellowed vellum.',
+      lighting_and_shadow:
+        'No modeling beyond hatched strokes, kept consistent across the whole image.',
+      texture_and_material: 'Rough pen lines, worn vellum, stains and holes.',
+      camera_and_composition: 'Single figure or struggle filling a margin or page.',
+      atmosphere_and_mood: 'Keep the requested mood with rugged northern vigor.',
+      rendering_and_quality:
+        'Energetic rough drawing with strong character, kept consistent across the whole image.',
+      creative_brief:
+        "Icelandic saga margin drawing: rough lively pen drawings from Icelandic manuscripts, vigorous gods, heroes and sea monsters drawn in brown ink with simple washes. Carry it through brown ink, rough vigorous line, worn vellum, sea monsters. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'brown ink; rough vigorous line; worn vellum; sea monsters',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-113',
+    name: 'Bohemian Court Miniature',
+    displayName: 'Bohemian Court Miniature',
+    styleAnchors: [
+      'Bohemian Court Miniature',
+      'late fourteenth-century prague court painting',
+      'soft rounded figures',
+    ],
+    category: '4. Regional Manuscript Traditions',
+    domain: 'late fourteenth-century prague court painting',
+    negativePrompt:
+      'cultural stereotypes or costume caricature, readable script, mixing unrelated traditions, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Bohemian court miniature: late fourteenth-century Prague court book painting with soft rounded figures, playful marginal bath attendants, wild men and knotted ribbons among acanthus.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; give soft rounded figures and playful marginal characters tangled in ribbons.',
+      color_and_tone: 'Soft rose, blue, green and burnished gold on vellum.',
+      lighting_and_shadow:
+        'Gentle soft modeling on rounded forms, kept consistent across the whole image.',
+      texture_and_material: 'Fine pigment, acanthus scrolls, knotted ribbons and gold.',
+      camera_and_composition: 'Central scene framed by margin characters and scrolls.',
+      atmosphere_and_mood: 'Keep the requested mood with playful courtly sweetness.',
+      rendering_and_quality:
+        'Soft refined miniature with lively margins, kept consistent across the whole image.',
+      creative_brief:
+        "Bohemian court miniature: late fourteenth-century Prague court book painting with soft rounded figures, playful marginal bath attendants, wild men and knotted ribbons among acanthus. Carry it through soft rounded figures, knotted ribbons, acanthus scrolls, margin characters. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'soft rounded figures; knotted ribbons; acanthus scrolls; margin characters',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-114',
+    name: 'Majorcan Portolan Chart',
+    displayName: 'Majorcan Portolan Chart',
+    styleAnchors: ['Majorcan Portolan Chart', 'painted medieval sea chart', 'rhumb line web'],
+    category: '4. Regional Manuscript Traditions',
+    domain: 'painted medieval sea chart',
+    negativePrompt:
+      'readable place names, cultural stereotypes or costume caricature, readable script, mixing unrelated traditions, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Majorcan portolan chart: fourteenth-century painted sea charts with webs of rhumb lines radiating from compass roses, coastlines, flags, kings in tents and camel caravans.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; place the subject on a painted sea chart among rhumb lines and compass roses.',
+      color_and_tone: 'Vellum cream, gold, red, green and blue lines.',
+      lighting_and_shadow:
+        'Flat chart painting without light, kept consistent across the whole image.',
+      texture_and_material: 'Vellum, fine ruled rhumb lines, tiny painted figures.',
+      camera_and_composition: 'Top-down chart with radiating lines and small vignettes.',
+      atmosphere_and_mood: 'Keep the requested mood with adventurous trade and discovery.',
+      rendering_and_quality:
+        'Crisp line networks with miniature vignettes, kept consistent across the whole image.',
+      creative_brief:
+        "Majorcan portolan chart: fourteenth-century painted sea charts with webs of rhumb lines radiating from compass roses, coastlines, flags, kings in tents and camel caravans. Carry it through rhumb line web, compass rose, coastlines, small vignettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'rhumb line web; compass rose; coastlines; small vignettes',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-115',
+    name: 'Deccani Twilight Painting',
+    displayName: 'Deccani Twilight Painting',
+    styleAnchors: ['Deccani Twilight Painting', 'deccan sultanate painting', 'gold sky'],
+    category: '4. Regional Manuscript Traditions',
+    domain: 'deccan sultanate painting',
+    negativePrompt:
+      'cultural stereotypes or costume caricature, readable script, mixing unrelated traditions, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Deccani twilight painting: sixteenth- and seventeenth-century painting from the Deccan sultanates, dreamy gold skies, lavender and green palettes and lyrical figures in fantastical landscapes.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; set lyrical figures in a dreamy twilight landscape under glowing gold skies.',
+      color_and_tone: 'Lavender, soft green, rose and glowing gold skies.',
+      lighting_and_shadow:
+        'Soft glowing twilight with no harsh shadow, kept consistent across the whole image.',
+      texture_and_material:
+        'Fine opaque pigment, gold and delicate foliage, kept consistent across the whole image.',
+      camera_and_composition: 'Figure in a lush fantastical landscape with high horizon.',
+      atmosphere_and_mood: 'Keep the requested mood with dreamy poetic melancholy.',
+      rendering_and_quality:
+        'Refined lyrical detail with soft glowing color, kept consistent across the whole image.',
+      creative_brief:
+        "Deccani twilight painting: sixteenth- and seventeenth-century painting from the Deccan sultanates, dreamy gold skies, lavender and green palettes and lyrical figures in fantastical landscapes. Carry it through gold sky, lavender palette, fantastical landscape, lyrical figures. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'gold sky; lavender palette; fantastical landscape; lyrical figures',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-116',
+    name: 'Vaspurakan Folk Miniature',
+    displayName: 'Vaspurakan Folk Miniature',
+    styleAnchors: ['Vaspurakan Folk Miniature', 'armenian vaspurakan painting', 'huge eyes'],
+    category: '4. Regional Manuscript Traditions',
+    domain: 'armenian vaspurakan painting',
+    negativePrompt:
+      'cultural stereotypes or costume caricature, readable script, mixing unrelated traditions, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Vaspurakan folk miniature: thirteenth- to fifteenth-century Armenian manuscript painting from the Lake Van region, bold simplified figures, huge eyes, bright flat colors and plain grounds.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; simplify the subject into bold flat shapes with huge eyes on a plain ground.',
+      color_and_tone: 'Bright red, yellow, green and blue on plain parchment.',
+      lighting_and_shadow: 'Flat with no modeling, kept consistent across the whole image.',
+      texture_and_material:
+        'Thick outlines, flat opaque color, worn parchment, kept consistent across the whole image.',
+      camera_and_composition:
+        'Frontal or profile figures isolated on parchment, kept consistent across the whole image.',
+      atmosphere_and_mood: 'Keep the requested mood with strong naive directness.',
+      rendering_and_quality:
+        'Bold simple forms with striking expressions, kept consistent across the whole image.',
+      creative_brief:
+        "Vaspurakan folk miniature: thirteenth- to fifteenth-century Armenian manuscript painting from the Lake Van region, bold simplified figures, huge eyes, bright flat colors and plain grounds. Carry it through huge eyes, bold flat shapes, plain ground, bright colors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'huge eyes; bold flat shapes; plain ground; bright colors',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP23-117',
+    name: 'Jalayirid Dream Landscape',
+    displayName: 'Jalayirid Dream Landscape',
+    styleAnchors: [
+      'Jalayirid Dream Landscape',
+      'fourteenth-century jalayirid painting',
+      'spongy towering rocks',
+    ],
+    category: '4. Regional Manuscript Traditions',
+    domain: 'fourteenth-century jalayirid painting',
+    negativePrompt:
+      'cultural stereotypes or costume caricature, readable script, mixing unrelated traditions, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Jalayirid dream landscape: late fourteenth-century Baghdad and Tabriz painting with small figures in towering spongy rock formations, flowering meadows and delicate lyrical detail.',
+      subject_treatment:
+        'Preserve the requested identity, count, pose and action with original figures; place small figures within towering spongy rocks and flowering meadows.',
+      color_and_tone: 'Soft lilac rocks, gold sky, spring green and floral dots.',
+      lighting_and_shadow: 'Soft even light with gentle color gradation in rocks.',
+      texture_and_material:
+        'Fine pigment, sponge-like rocks and dotted flowers, kept consistent across the whole image.',
+      camera_and_composition: 'Tall vertical landscape with figures small at the base.',
+      atmosphere_and_mood: 'Keep the requested mood with enchanted dreamlike calm.',
+      rendering_and_quality:
+        'Delicate lyrical detail across the whole landscape, kept consistent across the whole image.',
+      creative_brief:
+        "Jalayirid dream landscape: late fourteenth-century Baghdad and Tabriz painting with small figures in towering spongy rock formations, flowering meadows and delicate lyrical detail. Carry it through spongy towering rocks, flowering meadow, small figures, gold sky. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'spongy towering rocks; flowering meadow; small figures; gold sky',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

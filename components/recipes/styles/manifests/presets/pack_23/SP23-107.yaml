@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-107
+packId: pack_23
+name: Nara Picture Book
+styleAnchors:
+  - Nara Picture Book
+  - japanese nara ehon painting
+  - gold cloud bands
+displayName: Nara Picture Book
+category: 4. Regional Manuscript Traditions
+domain: japanese nara ehon painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - regional-manuscript-traditions
+  - nara-ehon
+  - regional-manuscript
+  - portable-style-study
+visualDna:
+  aesthetic: 'Nara picture book: Japanese Muromachi and early Edo illustrated storybooks with naive bright figures, gold cloud bands, simple architecture and tales of foxes, demons and heroes.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original figures; draw simple charming figures in a story scene divided by gold cloud bands.
+  color_and_tone: Bright mineral green, red, blue and gold clouds on paper.
+  lighting_and_shadow: Flat with no shadow, kept consistent across the whole image.
+  texture_and_material: Opaque mineral pigment, gold flake clouds and simple ink lines.
+  camera_and_composition: Elevated view with roofless rooms and cloud bands.
+  atmosphere_and_mood: Keep the requested mood with naive folk wonder.
+  rendering_and_quality: Simple charming figures with bright clean color, kept consistent across the whole image.
+  creative_brief: "Nara picture book: Japanese Muromachi and early Edo illustrated storybooks with naive bright figures, gold cloud bands, simple architecture and tales of foxes, demons and heroes. Carry it through gold cloud bands, roofless rooms, naive figures, mineral green. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: gold cloud bands; roofless rooms; naive figures; mineral green
+avoidRules:
+  - cultural stereotypes or costume caricature
+  - readable script
+  - mixing unrelated traditions
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: cultural stereotypes or costume caricature, readable script, mixing unrelated traditions, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: regional-manuscript-traditions
+  categoryName: 4. Regional Manuscript Traditions
+  tags:
+    - curation-v2
+    - regional-manuscript-traditions
+    - nara-ehon
+    - regional-manuscript
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: japanese nara ehon painting

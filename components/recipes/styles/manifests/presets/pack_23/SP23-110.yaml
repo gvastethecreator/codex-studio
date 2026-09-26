@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-110
+packId: pack_23
+name: Palm-Leaf Manuscript Painting
+styleAnchors:
+  - Palm-Leaf Manuscript Painting
+  - long narrow palm-leaf illustration
+  - long narrow leaf
+displayName: Palm-Leaf Manuscript Painting
+category: 4. Regional Manuscript Traditions
+domain: long narrow palm-leaf illustration
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - regional-manuscript-traditions
+  - palm-leaf
+  - regional-manuscript
+  - portable-style-study
+visualDna:
+  aesthetic: 'Palm-leaf manuscript painting: tiny bright paintings on long narrow palm leaves from eastern India, figures in small panels between rows, with string holes and worn leaf edges.'
+  subject_treatment: Preserve the requested identity, count, pose and action with original figures; paint the subject tiny inside a small panel on a long narrow palm leaf.
+  color_and_tone: Red, yellow, green, blue and white on golden-brown leaf.
+  lighting_and_shadow: Flat with soft modeling on figures, kept consistent across the whole image.
+  texture_and_material: Palm-leaf fibers, string holes, worn edges and tiny brushwork.
+  camera_and_composition: Very wide narrow strip with a central painted panel.
+  atmosphere_and_mood: Keep the requested mood with intimate precious calm.
+  rendering_and_quality: Tiny delicate figures with believable leaf wear, kept consistent across the whole image.
+  creative_brief: "Palm-leaf manuscript painting: tiny bright paintings on long narrow palm leaves from eastern India, figures in small panels between rows, with string holes and worn leaf edges. Carry it through long narrow leaf, small panels, string holes, tiny brushwork. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: long narrow leaf; small panels; string holes; tiny brushwork
+avoidRules:
+  - readable script
+  - cultural stereotypes or costume caricature
+  - mixing unrelated traditions
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: readable script, cultural stereotypes or costume caricature, mixing unrelated traditions, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: regional-manuscript-traditions
+  categoryName: 4. Regional Manuscript Traditions
+  tags:
+    - curation-v2
+    - regional-manuscript-traditions
+    - palm-leaf
+    - regional-manuscript
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: long narrow palm-leaf illustration

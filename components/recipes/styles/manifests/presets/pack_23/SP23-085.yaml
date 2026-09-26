@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP23-085
+packId: pack_23
+name: Printer's Device Emblem
+styleAnchors:
+  - Printer's Device Emblem
+  - early printer mark emblem
+  - compact emblem
+displayName: Printer's Device Emblem
+category: 2. Print & Engraving
+domain: early printer mark emblem
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - print-and-engraving
+  - printers-device
+  - early-print
+  - portable-style-study
+visualDna:
+  aesthetic: "Printer's device emblem: small symbolic woodcut marks used by early printers, anchors with dolphins, orbs with crosses, shields hung from trees, framed and compact."
+  subject_treatment: Preserve the requested identity, count, pose and action with original figures; turn the subject into a compact symbolic emblem with a frame and simple charge.
+  color_and_tone: Black woodcut on white, or white lines on black ground.
+  lighting_and_shadow: Flat with small areas of hatching, kept consistent across the whole image.
+  texture_and_material: Crisp woodcut lines, black grounds and neat frames.
+  camera_and_composition: Centered emblem in a square or shield frame.
+  atmosphere_and_mood: Keep the requested mood with proud craftsman identity.
+  rendering_and_quality: Clean compact symbol with confident cutting, kept consistent across the whole image.
+  creative_brief: "Printer's device emblem: small symbolic woodcut marks used by early printers, anchors with dolphins, orbs with crosses, shields hung from trees, framed and compact. Carry it through compact emblem, black ground, symbolic charge, neat frame. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: compact emblem; black ground; symbolic charge; neat frame
+avoidRules:
+  - initials or letters
+  - readable type or lettering
+  - modern screen printing look
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: initials or letters, readable type or lettering, modern screen printing look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_23
+  packName: Medieval Visual Atlas
+  categoryId: print-and-engraving
+  categoryName: 2. Print & Engraving
+  tags:
+    - curation-v2
+    - print-and-engraving
+    - printers-device
+    - early-print
+    - portable-style-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: early printer mark emblem
