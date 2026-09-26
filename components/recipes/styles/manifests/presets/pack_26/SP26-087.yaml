@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP26-087
+packId: pack_26
+name: Golden Age Superhero Comic Cover
+styleAnchors:
+  - Golden Age Superhero Comic Cover
+  - forties comic cover
+  - Golden Age flat primaries
+displayName: Golden Age Superhero Comic Cover
+category: 5. Comic Covers
+domain: forties comic cover
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - comic-covers
+  - comic-cover
+  - golden-age
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Golden Age comic cover look of the forties: bold flat primary colors, heroic poses punching villains, dramatic diagonal action, masthead logo, price box and cheap newsprint.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw the subject as a bold heroic figure in dramatic diagonal action with flat primary colors. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Flat primary red, yellow and blue with black line.
+  lighting_and_shadow: Flat printed comic light, lit the way Golden Age Superhero Comic Cover lights its scenes.
+  texture_and_material: Cheap yellowed newsprint with Ben-Day dots and misregistration.
+  camera_and_composition: Dramatic diagonal action below a big masthead, framed the way Golden Age Superhero Comic Cover composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with bold wartime heroics.
+  rendering_and_quality: Vintage Golden Age comic cover, in the recognizable hand of Golden Age Superhero Comic Cover.
+  creative_brief: "Golden Age comic cover look of the forties: bold flat primary colors, heroic poses punching villains, dramatic diagonal action, masthead logo, price box and cheap newsprint. Carry it through Golden Age flat primaries, heroic diagonals, newsprint, masthead. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Golden Age flat primaries; heroic diagonals; newsprint; masthead
+avoidRules:
+  - existing superhero emblems
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing superhero emblems, existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: comic-covers
+  categoryName: 5. Comic Covers
+  domain: forties comic cover
+  tags:
+    - curation-v2
+    - comic-covers
+    - comic-cover
+    - golden-age
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

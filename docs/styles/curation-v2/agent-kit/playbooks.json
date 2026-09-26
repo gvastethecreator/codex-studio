@@ -176,7 +176,12 @@
     "pack_14::Beasts, Guardians & Chimeras": "theme-render",
     "pack_14::Heroes & Epics": "theme-render",
     "pack_14::Creation, World Trees & Cosmos": "theme-render",
-    "pack_14::Witches, Oracles & Shamans": "theme-render"
+    "pack_14::Witches, Oracles & Shamans": "theme-render",
+    "pack_26::1. Character Design": "drawing",
+    "pack_26::2. Movie Posters": "applied-design",
+    "pack_26::3. Manga Covers": "applied-design",
+    "pack_26::4. Book Covers": "applied-design",
+    "pack_26::5. Comic Covers": "applied-design"
   },
   "playbooks": {
     "photo": {

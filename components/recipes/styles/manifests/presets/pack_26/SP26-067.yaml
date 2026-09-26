@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP26-067
+packId: pack_26
+name: Penguin Tricolour Paperback Cover
+styleAnchors:
+  - Penguin Tricolour Paperback Cover
+  - paperback cover design
+  - Penguin three bands
+displayName: Penguin Tricolour Paperback Cover
+category: 4. Book Covers
+domain: paperback cover design
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - book-covers
+  - book-cover
+  - penguin-tricolour
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Penguin tricolour paperback look from the 1930s to 1950s: three horizontal bands, a white center panel with Gill Sans title and author, a small bird roundel and genre color coding.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; reduce the subject to a tiny emblem or none at all, letting the three-band typographic grid carry the cover. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: One genre color such as orange, green or blue with a white center band.
+  lighting_and_shadow: Flat printed light on uncoated stock, lit the way Penguin Tricolour Paperback Cover lights its scenes.
+  texture_and_material: Worn uncoated paper, faded ink and softened corners.
+  camera_and_composition: Flat frontal paperback with three horizontal bands, framed the way Penguin Tricolour Paperback Cover composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with modest classic order.
+  rendering_and_quality: Faithful vintage tricolour paperback design, in the recognizable hand of Penguin Tricolour Paperback Cover.
+  creative_brief: "Penguin tricolour paperback look from the 1930s to 1950s: three horizontal bands, a white center panel with Gill Sans title and author, a small bird roundel and genre color coding. Carry it through Penguin three bands, Gill Sans, genre color, worn paperback. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Penguin three bands; Gill Sans; genre color; worn paperback
+avoidRules:
+  - the real penguin publisher logo
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: the real penguin publisher logo, existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: book-covers
+  categoryName: 4. Book Covers
+  domain: paperback cover design
+  tags:
+    - curation-v2
+    - book-covers
+    - book-cover
+    - penguin-tricolour
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP26-082
+packId: pack_26
+name: Insel-Bücherei Patterned Paper Cover
+styleAnchors:
+  - Insel-Bücherei Patterned Paper Cover
+  - German book design
+  - Insel patterned paper
+displayName: Insel-Bücherei Patterned Paper Cover
+category: 4. Book Covers
+domain: German book design
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - book-covers
+  - book-cover
+  - insel
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Insel-Bücherei small book look: slim hardcovers wrapped in colorful patterned paper with a small printed title label, elegant German book craft.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; present the subject as a small label vignette on a slim book wrapped in patterned paper. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Colorful patterned papers with a cream label, true to the Insel-Bücherei Patterned Paper Cover palette.
+  lighting_and_shadow: Soft light on patterned paper, lit the way Insel-Bücherei Patterned Paper Cover lights its scenes.
+  texture_and_material: Patterned paper, small printed label and board, with the surface finish of Insel-Bücherei Patterned Paper Cover.
+  camera_and_composition: Frontal slim book product view, framed the way Insel-Bücherei Patterned Paper Cover composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with elegant crafted charm.
+  rendering_and_quality: Elegant patterned-paper small book, in the recognizable hand of Insel-Bücherei Patterned Paper Cover.
+  creative_brief: "Insel-Bücherei small book look: slim hardcovers wrapped in colorful patterned paper with a small printed title label, elegant German book craft. Carry it through Insel patterned paper, small label, slim hardcover. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Insel patterned paper; small label; slim hardcover
+avoidRules:
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: book-covers
+  categoryName: 4. Book Covers
+  domain: German book design
+  tags:
+    - curation-v2
+    - book-covers
+    - book-cover
+    - insel
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

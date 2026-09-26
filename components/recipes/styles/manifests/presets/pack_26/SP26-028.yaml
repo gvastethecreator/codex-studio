@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP26-028
+packId: pack_26
+name: Bollywood Hand-Painted Billboard Poster
+styleAnchors:
+  - Bollywood Hand-Painted Billboard Poster
+  - Indian film poster painting
+  - Bollywood hand-painted
+displayName: Bollywood Hand-Painted Billboard Poster
+category: 2. Movie Posters
+domain: Indian film poster painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - movie-posters
+  - movie-poster
+  - bollywood
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Bollywood hand-painted film billboard look: saturated oil paint, giant heroic faces, dramatic emotional expressions, flying action scenes and dense colorful composition.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; paint the subject as giant heroic faces and dramatic action vignettes in saturated oil paint. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Saturated magenta, turquoise, gold and flame orange, true to the Bollywood Hand-Painted Billboard Poster palette.
+  lighting_and_shadow: Dramatic glowing highlights on faces, lit the way Bollywood Hand-Painted Billboard Poster lights its scenes.
+  texture_and_material: Thick hand-painted oil on billboard panels, with the surface finish of Bollywood Hand-Painted Billboard Poster.
+  camera_and_composition: Huge faces dominating with small action scenes around.
+  atmosphere_and_mood: Keep the requested mood with melodramatic heroic spectacle.
+  rendering_and_quality: Hand-painted Bollywood billboard, in the recognizable hand of Bollywood Hand-Painted Billboard Poster.
+  creative_brief: "Bollywood hand-painted film billboard look: saturated oil paint, giant heroic faces, dramatic emotional expressions, flying action scenes and dense colorful composition. Carry it through Bollywood hand-painted, giant faces, melodrama, saturated oil. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Bollywood hand-painted; giant faces; melodrama; saturated oil
+avoidRules:
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: movie-posters
+  categoryName: 2. Movie Posters
+  domain: Indian film poster painting
+  tags:
+    - curation-v2
+    - movie-posters
+    - movie-poster
+    - bollywood
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

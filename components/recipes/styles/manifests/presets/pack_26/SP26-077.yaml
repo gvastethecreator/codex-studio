@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP26-077
+packId: pack_26
+name: Vladimir Lebedev - Soviet Children’s Book Cover
+styleAnchors:
+  - Vladimir Lebedev - Soviet Children’s Book Cover
+  - children’s book cover
+  - Lebedev flat shapes
+displayName: Vladimir Lebedev - Soviet Children’s Book Cover
+category: 4. Book Covers
+domain: children’s book cover
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - book-covers
+  - book-cover
+  - lebedev
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Vladimir Lebedev Soviet children’s book look of the 1920s: flat constructivist shapes, bold simple animals and machines, limited palette and playful modern layout.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; build the subject from flat constructivist shapes in a playful modern layout. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Limited red, black, ochre and blue on cream paper.
+  lighting_and_shadow: Flat printed light, lit the way Vladimir Lebedev lights its scenes.
+  texture_and_material: Lithograph print on cream paper, with the surface finish of Vladimir Lebedev.
+  camera_and_composition: Playful modern layout with bold shapes, framed the way Vladimir Lebedev composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with playful modern optimism.
+  rendering_and_quality: Constructivist children’s book cover, in the recognizable hand of Vladimir Lebedev.
+  creative_brief: "Vladimir Lebedev Soviet children’s book look of the 1920s: flat constructivist shapes, bold simple animals and machines, limited palette and playful modern layout. Carry it through Lebedev flat shapes, limited palette, playful layout. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Lebedev flat shapes; limited palette; playful layout
+avoidRules:
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: book-covers
+  categoryName: 4. Book Covers
+  domain: children’s book cover
+  tags:
+    - curation-v2
+    - book-covers
+    - book-cover
+    - lebedev
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

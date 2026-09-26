@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP26-053
+packId: pack_26
+name: Seventies Shonen Magazine Pop Cover
+styleAnchors:
+  - Seventies Shonen Magazine Pop Cover
+  - manga magazine cover
+  - Seventies magazine pop
+displayName: Seventies Shonen Magazine Pop Cover
+category: 3. Manga Covers
+domain: manga magazine cover
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - manga-covers
+  - manga-cover
+  - seventies-magazine
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Seventies weekly manga magazine cover look: pop-art collage, bold graphic color blocks, photo and illustration mixed, radical design energy.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; collage the subject with pop-art color blocks and mixed photo and illustration. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Bold pop red, yellow and blue, true to the Seventies Shonen Magazine Pop Cover palette.
+  lighting_and_shadow: Flat pop light, lit the way Seventies Shonen Magazine Pop Cover lights its scenes.
+  texture_and_material: Print collage and halftone, with the surface finish of Seventies Shonen Magazine Pop Cover.
+  camera_and_composition: Radical graphic collage layout, framed the way Seventies Shonen Magazine Pop Cover composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with radical pop energy.
+  rendering_and_quality: Seventies pop magazine cover, in the recognizable hand of Seventies Shonen Magazine Pop Cover.
+  creative_brief: "Seventies weekly manga magazine cover look: pop-art collage, bold graphic color blocks, photo and illustration mixed, radical design energy. Carry it through Seventies magazine pop, collage, bold blocks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Seventies magazine pop; collage; bold blocks
+avoidRules:
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: manga-covers
+  categoryName: 3. Manga Covers
+  domain: manga magazine cover
+  tags:
+    - curation-v2
+    - manga-covers
+    - manga-cover
+    - seventies-magazine
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

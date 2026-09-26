@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP26-031
+packId: pack_26
+name: Mondo Screenprint Alternative Poster
+styleAnchors:
+  - Mondo Screenprint Alternative Poster
+  - screenprint film poster
+  - Mondo screenprint
+displayName: Mondo Screenprint Alternative Poster
+category: 2. Movie Posters
+domain: screenprint film poster
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - movie-posters
+  - movie-poster
+  - mondo
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Mondo alternative movie poster look (Olly Moss, Tyler Stout, Martin Ansin): limited-color screenprints, clever negative space, dense character collages or minimal symbolic wit.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; reinterpret the subject as a limited-color screenprint with clever negative space or dense collage. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Three to five flat screenprint inks, true to the Mondo Screenprint Alternative Poster palette.
+  lighting_and_shadow: Flat printed light, lit the way Mondo Screenprint Alternative Poster lights its scenes.
+  texture_and_material: Screenprint ink layers and paper texture, with the surface finish of Mondo Screenprint Alternative Poster.
+  camera_and_composition: Clever negative-space composition or dense collage, framed the way Mondo Screenprint Alternative Poster composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with clever collector cool.
+  rendering_and_quality: Limited-edition screenprint poster, in the recognizable hand of Mondo Screenprint Alternative Poster.
+  creative_brief: "Mondo alternative movie poster look (Olly Moss, Tyler Stout, Martin Ansin): limited-color screenprints, clever negative space, dense character collages or minimal symbolic wit. Carry it through Mondo screenprint, negative space, limited inks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Mondo screenprint; negative space; limited inks
+avoidRules:
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: movie-posters
+  categoryName: 2. Movie Posters
+  domain: screenprint film poster
+  tags:
+    - curation-v2
+    - movie-posters
+    - movie-poster
+    - mondo
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

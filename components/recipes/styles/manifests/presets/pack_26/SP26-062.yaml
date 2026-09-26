@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP26-062
+packId: pack_26
+name: Osamu Tezuka Complete Works Cover
+styleAnchors:
+  - Osamu Tezuka Complete Works Cover
+  - retro manga series cover
+  - Tezuka zenshu
+displayName: Osamu Tezuka Complete Works Cover
+category: 3. Manga Covers
+domain: retro manga series cover
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - manga-covers
+  - manga-cover
+  - tezuka-zenshu
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Osamu Tezuka Manga Complete Works cover look: clean retro series design, a single classic rounded cartoon illustration on a flat color field and consistent series framing.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw the subject as a classic rounded retro cartoon on a flat color field. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Flat retro color fields with clean white frame.
+  lighting_and_shadow: Flat retro print light, lit the way Osamu Tezuka Complete Works Cover lights its scenes.
+  texture_and_material: Clean retro print and line, with the surface finish of Osamu Tezuka Complete Works Cover.
+  camera_and_composition: Consistent series framing with centered illustration, framed the way Osamu Tezuka Complete Works Cover composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with classic retro charm.
+  rendering_and_quality: Retro series manga cover, in the recognizable hand of Osamu Tezuka Complete Works Cover.
+  creative_brief: "Osamu Tezuka Manga Complete Works cover look: clean retro series design, a single classic rounded cartoon illustration on a flat color field and consistent series framing. Carry it through Tezuka zenshu, retro series frame, rounded cartoon. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Tezuka zenshu; retro series frame; rounded cartoon
+avoidRules:
+  - a boy robot with rocket boots
+  - a white lion cub
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a boy robot with rocket boots, a white lion cub, existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: manga-covers
+  categoryName: 3. Manga Covers
+  domain: retro manga series cover
+  tags:
+    - curation-v2
+    - manga-covers
+    - manga-cover
+    - tezuka-zenshu
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

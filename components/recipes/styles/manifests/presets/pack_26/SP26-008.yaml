@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP26-008
+packId: pack_26
+name: Shigenori Soejima - Stylish Persona Cast Portrait
+styleAnchors:
+  - Shigenori Soejima - Stylish Persona Cast Portrait
+  - JRPG character design
+  - Soejima stylish fashion
+displayName: Shigenori Soejima - Stylish Persona Cast Portrait
+category: 1. Character Design
+domain: JRPG character design
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - character-design
+  - character-design
+  - soejima
+  - reference-title
+visualDna:
+  aesthetic: 'Shigenori Soejima character design look: stylish modern students and adults, sharp graphic color accents, confident fashion poses and bold red, yellow or blue themed palettes.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; design characters with sleek modern designs, sharp eyes, stylish contemporary fashion and confident poses. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: One bold theme color with black and white graphic accents.
+  lighting_and_shadow: Clean graphic lighting with sharp highlights, lit the way Shigenori Soejima lights its scenes.
+  texture_and_material: Crisp digital line and flat cel shading, with the surface finish of Shigenori Soejima.
+  camera_and_composition: Dynamic full-body portraits with graphic backgrounds, framed the way Shigenori Soejima composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with stylish confident cool.
+  rendering_and_quality: Stylish JRPG character portrait, in the recognizable hand of Shigenori Soejima.
+  creative_brief: "Shigenori Soejima character design look: stylish modern students and adults, sharp graphic color accents, confident fashion poses and bold red, yellow or blue themed palettes. Carry it through Soejima stylish fashion, bold theme colors, confident poses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Soejima stylish fashion; bold theme colors; confident poses
+avoidRules:
+  - a masked phantom thief in a black coat
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a masked phantom thief in a black coat, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: character-design
+  categoryName: 1. Character Design
+  domain: JRPG character design
+  tags:
+    - curation-v2
+    - character-design
+    - character-design
+    - soejima
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

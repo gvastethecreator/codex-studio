@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP26-097
+packId: pack_26
+name: Nineties Image Extreme Foil Cover
+styleAnchors:
+  - Nineties Image Extreme Foil Cover
+  - nineties comic cover
+  - Nineties extreme
+displayName: Nineties Image Extreme Foil Cover
+category: 5. Comic Covers
+domain: nineties comic cover
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - comic-covers
+  - comic-cover
+  - nineties-image
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Nineties Image-era extreme comic cover look: hyper-muscular grimacing heroes, giant guns and pouches, foil and chromium variant finishes, speed lines and excess.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw the subject with hyper-muscular excess, pouches, giant guns and grimaces. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Saturated purple, teal and chrome foil, true to the Nineties Image Extreme Foil Cover palette.
+  lighting_and_shadow: Explosive rim light and foil shine, lit the way Nineties Image Extreme Foil Cover lights its scenes.
+  texture_and_material: Chromium foil and heavy ink, with the surface finish of Nineties Image Extreme Foil Cover.
+  camera_and_composition: Extreme low-angle excess compositions, framed the way Nineties Image Extreme Foil Cover composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with extreme nineties excess.
+  rendering_and_quality: Extreme nineties foil variant cover, in the recognizable hand of Nineties Image Extreme Foil Cover.
+  creative_brief: "Nineties Image-era extreme comic cover look: hyper-muscular grimacing heroes, giant guns and pouches, foil and chromium variant finishes, speed lines and excess. Carry it through Nineties extreme, pouches, giant guns, chrome foil. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Nineties extreme; pouches; giant guns; chrome foil
+avoidRules:
+  - existing nineties heroes
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing nineties heroes, existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: comic-covers
+  categoryName: 5. Comic Covers
+  domain: nineties comic cover
+  tags:
+    - curation-v2
+    - comic-covers
+    - comic-cover
+    - nineties-image
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

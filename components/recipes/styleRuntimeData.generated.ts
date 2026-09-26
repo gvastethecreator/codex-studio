@@ -232,6 +232,16 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
       'Logos, icons, interfaces, products, packaging, type, editorial, data, textiles, merch, wayfinding and motion.',
     presetCount: 320,
   },
+  {
+    id: 'pack_26',
+    name: 'Covers, Posters & Characters',
+    description:
+      'Character design languages and cover and poster traditions: film posters, manga volume covers, book jackets and comic covers, each tied to the artists, studios and eras that defined them. Requested subjects stay the subject; each style changes drawing, layout and finish.',
+    cardTitle: 'Covers, Posters & Characters',
+    cardDescription:
+      'Character design, movie posters and manga, book and comic covers named after their artists and eras.',
+    presetCount: 106,
+  },
 ] as GeneratedStyleRuntimePackSummary[];
 
 const GENERATED_STYLE_RUNTIME_PACK_LOADERS: Record<string, () => Promise<StyleRuntimePack>> = {
@@ -329,6 +339,10 @@ const GENERATED_STYLE_RUNTIME_PACK_LOADERS: Record<string, () => Promise<StyleRu
     ),
   pack_25: () =>
     import('./styleRuntimePacks.generated/pack_25').then((module) =>
+      module.loadGeneratedStyleRuntimePack(),
+    ),
+  pack_26: () =>
+    import('./styleRuntimePacks.generated/pack_26').then((module) =>
       module.loadGeneratedStyleRuntimePack(),
     ),
 };

@@ -1,0 +1,238 @@
+schemaVersion: 1
+id: pack_26
+name: Covers, Posters & Characters
+cardTitle: Covers, Posters & Characters
+cardDescription: Character design, movie posters and manga, book and comic covers named after their artists and eras.
+description: >-
+  Character design languages and cover and poster traditions: film posters, manga volume covers,
+  book jackets and comic covers, each tied to the artists, studios and eras that defined them.
+  Requested subjects stay the subject; each style changes drawing, layout and finish.
+categories:
+  - id: character-design
+    name: 1. Character Design
+    presetRefs:
+      - pack_26/SP26-001.yaml
+      - pack_26/SP26-002.yaml
+      - pack_26/SP26-003.yaml
+      - pack_26/SP26-004.yaml
+      - pack_26/SP26-005.yaml
+      - pack_26/SP26-006.yaml
+      - pack_26/SP26-007.yaml
+      - pack_26/SP26-008.yaml
+      - pack_26/SP26-009.yaml
+      - pack_26/SP26-010.yaml
+      - pack_26/SP26-011.yaml
+      - pack_26/SP26-012.yaml
+      - pack_26/SP26-013.yaml
+      - pack_26/SP26-014.yaml
+      - pack_26/SP26-015.yaml
+      - pack_26/SP26-016.yaml
+      - pack_26/SP26-017.yaml
+      - pack_26/SP26-018.yaml
+      - pack_26/SP26-019.yaml
+      - pack_26/SP26-020.yaml
+      - pack_26/SP26-021.yaml
+      - pack_26/SP26-022.yaml
+  - id: movie-posters
+    name: 2. Movie Posters
+    presetRefs:
+      - pack_26/SP26-023.yaml
+      - pack_26/SP26-024.yaml
+      - pack_26/SP26-025.yaml
+      - pack_26/SP26-026.yaml
+      - pack_26/SP26-027.yaml
+      - pack_26/SP26-028.yaml
+      - pack_26/SP26-029.yaml
+      - pack_26/SP26-030.yaml
+      - pack_26/SP26-031.yaml
+      - pack_26/SP26-032.yaml
+      - pack_26/SP26-033.yaml
+      - pack_26/SP26-034.yaml
+      - pack_26/SP26-035.yaml
+      - pack_26/SP26-036.yaml
+      - pack_26/SP26-037.yaml
+      - pack_26/SP26-038.yaml
+      - pack_26/SP26-039.yaml
+      - pack_26/SP26-040.yaml
+      - pack_26/SP26-041.yaml
+      - pack_26/SP26-042.yaml
+      - pack_26/SP26-043.yaml
+      - pack_26/SP26-044.yaml
+  - id: manga-covers
+    name: 3. Manga Covers
+    presetRefs:
+      - pack_26/SP26-045.yaml
+      - pack_26/SP26-046.yaml
+      - pack_26/SP26-047.yaml
+      - pack_26/SP26-048.yaml
+      - pack_26/SP26-049.yaml
+      - pack_26/SP26-050.yaml
+      - pack_26/SP26-051.yaml
+      - pack_26/SP26-052.yaml
+      - pack_26/SP26-053.yaml
+      - pack_26/SP26-054.yaml
+      - pack_26/SP26-055.yaml
+      - pack_26/SP26-056.yaml
+      - pack_26/SP26-057.yaml
+      - pack_26/SP26-058.yaml
+      - pack_26/SP26-059.yaml
+      - pack_26/SP26-060.yaml
+      - pack_26/SP26-061.yaml
+      - pack_26/SP26-062.yaml
+      - pack_26/SP26-063.yaml
+      - pack_26/SP26-064.yaml
+      - pack_26/SP26-065.yaml
+      - pack_26/SP26-066.yaml
+  - id: book-covers
+    name: 4. Book Covers
+    presetRefs:
+      - pack_26/SP26-067.yaml
+      - pack_26/SP26-068.yaml
+      - pack_26/SP26-069.yaml
+      - pack_26/SP26-070.yaml
+      - pack_26/SP26-071.yaml
+      - pack_26/SP26-072.yaml
+      - pack_26/SP26-073.yaml
+      - pack_26/SP26-074.yaml
+      - pack_26/SP26-075.yaml
+      - pack_26/SP26-076.yaml
+      - pack_26/SP26-077.yaml
+      - pack_26/SP26-078.yaml
+      - pack_26/SP26-079.yaml
+      - pack_26/SP26-080.yaml
+      - pack_26/SP26-081.yaml
+      - pack_26/SP26-082.yaml
+      - pack_26/SP26-083.yaml
+      - pack_26/SP26-084.yaml
+      - pack_26/SP26-085.yaml
+      - pack_26/SP26-086.yaml
+  - id: comic-covers
+    name: 5. Comic Covers
+    presetRefs:
+      - pack_26/SP26-087.yaml
+      - pack_26/SP26-088.yaml
+      - pack_26/SP26-089.yaml
+      - pack_26/SP26-090.yaml
+      - pack_26/SP26-091.yaml
+      - pack_26/SP26-092.yaml
+      - pack_26/SP26-093.yaml
+      - pack_26/SP26-094.yaml
+      - pack_26/SP26-095.yaml
+      - pack_26/SP26-096.yaml
+      - pack_26/SP26-097.yaml
+      - pack_26/SP26-098.yaml
+      - pack_26/SP26-099.yaml
+      - pack_26/SP26-100.yaml
+      - pack_26/SP26-101.yaml
+      - pack_26/SP26-102.yaml
+      - pack_26/SP26-103.yaml
+      - pack_26/SP26-104.yaml
+      - pack_26/SP26-105.yaml
+      - pack_26/SP26-106.yaml
+presetRefs:
+  - pack_26/SP26-001.yaml
+  - pack_26/SP26-002.yaml
+  - pack_26/SP26-003.yaml
+  - pack_26/SP26-004.yaml
+  - pack_26/SP26-005.yaml
+  - pack_26/SP26-006.yaml
+  - pack_26/SP26-007.yaml
+  - pack_26/SP26-008.yaml
+  - pack_26/SP26-009.yaml
+  - pack_26/SP26-010.yaml
+  - pack_26/SP26-011.yaml
+  - pack_26/SP26-012.yaml
+  - pack_26/SP26-013.yaml
+  - pack_26/SP26-014.yaml
+  - pack_26/SP26-015.yaml
+  - pack_26/SP26-016.yaml
+  - pack_26/SP26-017.yaml
+  - pack_26/SP26-018.yaml
+  - pack_26/SP26-019.yaml
+  - pack_26/SP26-020.yaml
+  - pack_26/SP26-021.yaml
+  - pack_26/SP26-022.yaml
+  - pack_26/SP26-023.yaml
+  - pack_26/SP26-024.yaml
+  - pack_26/SP26-025.yaml
+  - pack_26/SP26-026.yaml
+  - pack_26/SP26-027.yaml
+  - pack_26/SP26-028.yaml
+  - pack_26/SP26-029.yaml
+  - pack_26/SP26-030.yaml
+  - pack_26/SP26-031.yaml
+  - pack_26/SP26-032.yaml
+  - pack_26/SP26-033.yaml
+  - pack_26/SP26-034.yaml
+  - pack_26/SP26-035.yaml
+  - pack_26/SP26-036.yaml
+  - pack_26/SP26-037.yaml
+  - pack_26/SP26-038.yaml
+  - pack_26/SP26-039.yaml
+  - pack_26/SP26-040.yaml
+  - pack_26/SP26-041.yaml
+  - pack_26/SP26-042.yaml
+  - pack_26/SP26-043.yaml
+  - pack_26/SP26-044.yaml
+  - pack_26/SP26-045.yaml
+  - pack_26/SP26-046.yaml
+  - pack_26/SP26-047.yaml
+  - pack_26/SP26-048.yaml
+  - pack_26/SP26-049.yaml
+  - pack_26/SP26-050.yaml
+  - pack_26/SP26-051.yaml
+  - pack_26/SP26-052.yaml
+  - pack_26/SP26-053.yaml
+  - pack_26/SP26-054.yaml
+  - pack_26/SP26-055.yaml
+  - pack_26/SP26-056.yaml
+  - pack_26/SP26-057.yaml
+  - pack_26/SP26-058.yaml
+  - pack_26/SP26-059.yaml
+  - pack_26/SP26-060.yaml
+  - pack_26/SP26-061.yaml
+  - pack_26/SP26-062.yaml
+  - pack_26/SP26-063.yaml
+  - pack_26/SP26-064.yaml
+  - pack_26/SP26-065.yaml
+  - pack_26/SP26-066.yaml
+  - pack_26/SP26-067.yaml
+  - pack_26/SP26-068.yaml
+  - pack_26/SP26-069.yaml
+  - pack_26/SP26-070.yaml
+  - pack_26/SP26-071.yaml
+  - pack_26/SP26-072.yaml
+  - pack_26/SP26-073.yaml
+  - pack_26/SP26-074.yaml
+  - pack_26/SP26-075.yaml
+  - pack_26/SP26-076.yaml
+  - pack_26/SP26-077.yaml
+  - pack_26/SP26-078.yaml
+  - pack_26/SP26-079.yaml
+  - pack_26/SP26-080.yaml
+  - pack_26/SP26-081.yaml
+  - pack_26/SP26-082.yaml
+  - pack_26/SP26-083.yaml
+  - pack_26/SP26-084.yaml
+  - pack_26/SP26-085.yaml
+  - pack_26/SP26-086.yaml
+  - pack_26/SP26-087.yaml
+  - pack_26/SP26-088.yaml
+  - pack_26/SP26-089.yaml
+  - pack_26/SP26-090.yaml
+  - pack_26/SP26-091.yaml
+  - pack_26/SP26-092.yaml
+  - pack_26/SP26-093.yaml
+  - pack_26/SP26-094.yaml
+  - pack_26/SP26-095.yaml
+  - pack_26/SP26-096.yaml
+  - pack_26/SP26-097.yaml
+  - pack_26/SP26-098.yaml
+  - pack_26/SP26-099.yaml
+  - pack_26/SP26-100.yaml
+  - pack_26/SP26-101.yaml
+  - pack_26/SP26-102.yaml
+  - pack_26/SP26-103.yaml
+  - pack_26/SP26-104.yaml
+  - pack_26/SP26-105.yaml
+  - pack_26/SP26-106.yaml

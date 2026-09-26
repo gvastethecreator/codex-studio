@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP26-095
+packId: pack_26
+name: Philippe Druillet - Métal Hurlant Cover
+styleAnchors:
+  - Philippe Druillet - Métal Hurlant Cover
+  - French sci-fi comic cover
+  - Druillet cosmic cathedrals
+displayName: Philippe Druillet - Métal Hurlant Cover
+category: 5. Comic Covers
+domain: French sci-fi comic cover
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - comic-covers
+  - comic-cover
+  - druillet
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Philippe Druillet and Métal Hurlant cover look: monumental psychedelic science fiction architecture, cosmic cathedrals, ornate baroque machines and vivid seventies color.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject amid monumental psychedelic cosmic architecture. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Vivid psychedelic cosmic colors, true to the Philippe Druillet palette.
+  lighting_and_shadow: Cosmic radiant light, lit the way Philippe Druillet lights its scenes.
+  texture_and_material: Dense ornate ink and vivid color, with the surface finish of Philippe Druillet.
+  camera_and_composition: Monumental vertical cosmic compositions, framed the way Philippe Druillet composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with psychedelic cosmic grandeur.
+  rendering_and_quality: Monumental psychedelic sci-fi cover, in the recognizable hand of Philippe Druillet.
+  creative_brief: "Philippe Druillet and Métal Hurlant cover look: monumental psychedelic science fiction architecture, cosmic cathedrals, ornate baroque machines and vivid seventies color. Carry it through Druillet cosmic cathedrals, baroque machines, psychedelia. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Druillet cosmic cathedrals; baroque machines; psychedelia
+avoidRules:
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: comic-covers
+  categoryName: 5. Comic Covers
+  domain: French sci-fi comic cover
+  tags:
+    - curation-v2
+    - comic-covers
+    - comic-cover
+    - druillet
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

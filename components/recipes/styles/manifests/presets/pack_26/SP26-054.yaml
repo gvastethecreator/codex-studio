@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP26-054
+packId: pack_26
+name: Doujinshi Convention Booklet Cover
+styleAnchors:
+  - Doujinshi Convention Booklet Cover
+  - fan booklet cover
+  - Doujinshi spot colors
+displayName: Doujinshi Convention Booklet Cover
+category: 3. Manga Covers
+domain: fan booklet cover
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - manga-covers
+  - manga-cover
+  - doujinshi
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Doujinshi convention booklet cover look: independent self-published comic covers, heartfelt fan illustration, spot colors, special paper and handmade print charm.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; illustrate the subject as an independent booklet cover with spot colors and handmade charm. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Two or three spot colors on special paper.
+  lighting_and_shadow: Soft flat illustration light, lit the way Doujinshi Convention Booklet Cover lights its scenes.
+  texture_and_material: Offset print on textured or pearl paper, with the surface finish of Doujinshi Convention Booklet Cover.
+  camera_and_composition: Intimate cover illustration with small title, framed the way Doujinshi Convention Booklet Cover composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with heartfelt indie charm.
+  rendering_and_quality: Handmade independent booklet cover, in the recognizable hand of Doujinshi Convention Booklet Cover.
+  creative_brief: "Doujinshi convention booklet cover look: independent self-published comic covers, heartfelt fan illustration, spot colors, special paper and handmade print charm. Carry it through Doujinshi spot colors, special paper, indie charm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Doujinshi spot colors; special paper; indie charm
+avoidRules:
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: manga-covers
+  categoryName: 3. Manga Covers
+  domain: fan booklet cover
+  tags:
+    - curation-v2
+    - manga-covers
+    - manga-cover
+    - doujinshi
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP26-068
+packId: pack_26
+name: Germano Facetti - Penguin Modern Photo Grid Cover
+styleAnchors:
+  - Germano Facetti - Penguin Modern Photo Grid Cover
+  - paperback cover design
+  - Facetti grid
+displayName: Germano Facetti - Penguin Modern Photo Grid Cover
+category: 4. Book Covers
+domain: paperback cover design
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - book-covers
+  - book-cover
+  - facetti
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Germano Facetti Penguin Modern Classics look of the sixties: Marber grid, cropped black-and-white photograph or artwork, clean sans-serif type and grey or muted color band.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; present the subject as a cropped black-and-white photograph or artwork inside a strict modernist grid. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Grey, black, white and one muted accent color.
+  lighting_and_shadow: Photographic light in the cropped image, flat elsewhere.
+  texture_and_material: Matte paperback stock and halftone photo, with the surface finish of Germano Facetti.
+  camera_and_composition: Strict modernist grid with the image below a type band.
+  atmosphere_and_mood: Keep the requested mood with cool modernist restraint.
+  rendering_and_quality: Modernist sixties paperback cover design, in the recognizable hand of Germano Facetti.
+  creative_brief: "Germano Facetti Penguin Modern Classics look of the sixties: Marber grid, cropped black-and-white photograph or artwork, clean sans-serif type and grey or muted color band. Carry it through Facetti grid, cropped photo, clean sans-serif, grey band. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Facetti grid; cropped photo; clean sans-serif; grey band
+avoidRules:
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: book-covers
+  categoryName: 4. Book Covers
+  domain: paperback cover design
+  tags:
+    - curation-v2
+    - book-covers
+    - book-cover
+    - facetti
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

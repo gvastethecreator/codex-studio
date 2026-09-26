@@ -1,5 +1,6 @@
 import { readFileSync } from 'node:fs';
-import type { Update } from '../tools/apply';
+import type { Create, Update } from '../tools/apply';
+import { STYLE_AVOID } from './_style';
 import { dna } from './_strict';
 
 // Author pass for anime presets: the preset names the original author, studio or work and its DNA
@@ -69,4 +70,32 @@ export const au = (id: string, name: string, a: AuthorLook): [string, Update] =>
       briefs: a.briefs ?? keep(id),
     },
   ];
+};
+
+// New preset named after an author, studio, work or era, built with the same DNA shape as au().
+export const cr = (
+  name: string,
+  domain: string,
+  tags: string[],
+  // requestedText: posters and covers keep any title or credits the prompt asks for.
+  a: AuthorLook & { briefs: [string, string, string]; requestedText?: boolean },
+): Create => {
+  const [, update] = au('new', name, a);
+  const avoid = [
+    ...(a.avoid ?? []),
+    'existing franchise characters',
+    ...(a.requestedText ? [] : ['series logo or title lettering']),
+    'signature costumes, emblems or props from the referenced work',
+    'recreated scenes from the referenced work',
+    ...STYLE_AVOID.filter((r) => !a.requestedText || !['readable text', 'logo'].includes(r)),
+  ];
+  return {
+    name,
+    domain,
+    tags: [...tags, 'reference-title'],
+    dna: update.dna as Create['dna'],
+    avoid,
+    ...(a.requestedText ? { textPolicy: 'requested' as const } : {}),
+    briefs: a.briefs,
+  };
 };

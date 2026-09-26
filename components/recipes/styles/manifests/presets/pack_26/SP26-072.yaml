@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP26-072
+packId: pack_26
+name: Peter Mendelsund - Minimal Typographic Jacket
+styleAnchors:
+  - Peter Mendelsund - Minimal Typographic Jacket
+  - book jacket design
+  - Mendelsund type-as-image
+displayName: Peter Mendelsund - Minimal Typographic Jacket
+category: 4. Book Covers
+domain: book jacket design
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - book-covers
+  - book-cover
+  - mendelsund
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Peter Mendelsund jacket look: minimal typographic covers where letters themselves become the image, abstract shapes, bold negative space and literary restraint.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; express the subject through abstract shapes and typography with bold negative space. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Two or three restrained colors, true to the Peter Mendelsund palette.
+  lighting_and_shadow: Flat graphic light, lit the way Peter Mendelsund lights its scenes.
+  texture_and_material: Matte jacket paper and crisp print, with the surface finish of Peter Mendelsund.
+  camera_and_composition: Typographic composition with negative space, framed the way Peter Mendelsund composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with literary minimal tension.
+  rendering_and_quality: Minimal typographic literary jacket, in the recognizable hand of Peter Mendelsund.
+  creative_brief: "Peter Mendelsund jacket look: minimal typographic covers where letters themselves become the image, abstract shapes, bold negative space and literary restraint. Carry it through Mendelsund type-as-image, negative space, restraint. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Mendelsund type-as-image; negative space; restraint
+avoidRules:
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: book-covers
+  categoryName: 4. Book Covers
+  domain: book jacket design
+  tags:
+    - curation-v2
+    - book-covers
+    - book-cover
+    - mendelsund
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

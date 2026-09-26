@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP26-080
+packId: pack_26
+name: Richard Powers - Surreal SF Paperback
+styleAnchors:
+  - Richard Powers - Surreal SF Paperback
+  - science fiction paperback art
+  - Richard Powers biomorphic abstraction
+displayName: Richard Powers - Surreal SF Paperback
+category: 4. Book Covers
+domain: science fiction paperback art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - book-covers
+  - book-cover
+  - richard-powers
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Richard Powers fifties and sixties science fiction paperback look: surreal biomorphic abstraction, melting organic forms, cosmic spaces and modernist painting.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; transform the subject into surreal biomorphic abstract forms in cosmic space. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Cosmic blues, acid yellow and earthy abstract tones.
+  lighting_and_shadow: Mysterious glowing abstract light, lit the way Richard Powers lights its scenes.
+  texture_and_material: Modernist oil and gouache abstraction, with the surface finish of Richard Powers.
+  camera_and_composition: Surreal abstract cosmic composition, framed the way Richard Powers composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with mysterious cosmic abstraction.
+  rendering_and_quality: Surreal modernist SF paperback painting, in the recognizable hand of Richard Powers.
+  creative_brief: "Richard Powers fifties and sixties science fiction paperback look: surreal biomorphic abstraction, melting organic forms, cosmic spaces and modernist painting. Carry it through Richard Powers biomorphic abstraction, cosmic surrealism. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Richard Powers biomorphic abstraction; cosmic surrealism
+avoidRules:
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: book-covers
+  categoryName: 4. Book Covers
+  domain: science fiction paperback art
+  tags:
+    - curation-v2
+    - book-covers
+    - book-cover
+    - richard-powers
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

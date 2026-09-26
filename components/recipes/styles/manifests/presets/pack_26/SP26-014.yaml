@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP26-014
+packId: pack_26
+name: Laika - Stop-Motion Puppet Character Design
+styleAnchors:
+  - Laika - Stop-Motion Puppet Character Design
+  - stop-motion character design
+  - Laika puppets
+displayName: Laika - Stop-Motion Puppet Character Design
+category: 1. Character Design
+domain: stop-motion character design
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - character-design
+  - character-design
+  - laika
+  - reference-title
+visualDna:
+  aesthetic: 'Laika studio stop-motion character look as in Coraline and Kubo: handcrafted puppets with sculpted faces, real fabric costumes, tiny stitched details and eerie handmade charm.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; design characters as handcrafted stop-motion puppets with sculpted faces, fabric clothes and visible handmade details. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Rich muted handmade colors and tactile fabrics, true to the Laika palette.
+  lighting_and_shadow: Miniature set lighting with soft shadows, lit the way Laika lights its scenes.
+  texture_and_material: Sculpted resin faces, woven fabric and knitted details.
+  camera_and_composition: Macro puppet photography on miniature sets, framed the way Laika composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with eerie handmade charm.
+  rendering_and_quality: Photographed stop-motion puppet character, in the recognizable hand of Laika.
+  creative_brief: "Laika studio stop-motion character look as in Coraline and Kubo: handcrafted puppets with sculpted faces, real fabric costumes, tiny stitched details and eerie handmade charm. Carry it through Laika puppets, handmade fabrics, sculpted faces, miniature sets. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Laika puppets; handmade fabrics; sculpted faces; miniature sets
+avoidRules:
+  - a blue-haired girl in a yellow raincoat
+  - button eyes
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a blue-haired girl in a yellow raincoat, button eyes, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: character-design
+  categoryName: 1. Character Design
+  domain: stop-motion character design
+  tags:
+    - curation-v2
+    - character-design
+    - character-design
+    - laika
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

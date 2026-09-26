@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP26-056
+packId: pack_26
+name: Manga Artbook Gashu Cover
+styleAnchors:
+  - Manga Artbook Gashu Cover
+  - manga artbook cover
+  - Gashu full-bleed
+displayName: Manga Artbook Gashu Cover
+category: 3. Manga Covers
+domain: manga artbook cover
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - manga-covers
+  - manga-cover
+  - gashu
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Manga artbook gashu cover look: large luxurious full-bleed illustration, painterly color, ornate character showcase and premium print.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; showcase the subject as a luxurious full-bleed painted illustration. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Rich luxurious painted color, true to the Manga Artbook Gashu Cover palette.
+  lighting_and_shadow: Luminous painterly light, lit the way Manga Artbook Gashu Cover lights its scenes.
+  texture_and_material: Premium printed painting with fine detail, with the surface finish of Manga Artbook Gashu Cover.
+  camera_and_composition: Full-bleed showcase composition, framed the way Manga Artbook Gashu Cover composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with luxurious showcase wonder.
+  rendering_and_quality: Luxurious full-bleed artbook cover, in the recognizable hand of Manga Artbook Gashu Cover.
+  creative_brief: "Manga artbook gashu cover look: large luxurious full-bleed illustration, painterly color, ornate character showcase and premium print. Carry it through Gashu full-bleed, luxurious paint, showcase. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Gashu full-bleed; luxurious paint; showcase
+avoidRules:
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: manga-covers
+  categoryName: 3. Manga Covers
+  domain: manga artbook cover
+  tags:
+    - curation-v2
+    - manga-covers
+    - manga-cover
+    - gashu
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

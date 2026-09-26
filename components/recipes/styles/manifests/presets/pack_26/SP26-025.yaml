@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP26-025
+packId: pack_26
+name: Bob Peak - Seventies Painted Epic Poster
+styleAnchors:
+  - Bob Peak - Seventies Painted Epic Poster
+  - film poster painting
+  - Bob Peak streaked color
+displayName: Bob Peak - Seventies Painted Epic Poster
+category: 2. Movie Posters
+domain: film poster painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - movie-posters
+  - movie-poster
+  - bob-peak
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Bob Peak poster look: expressive seventies painted epics with vivid streaked color, dramatic silhouettes, dissolving brushwork and mythic scale.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; paint the subject in bold expressive silhouettes that dissolve into streaks of vivid color. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Vivid sunset orange, magenta, violet and black silhouettes.
+  lighting_and_shadow: Burning skies and dramatic backlight, lit the way Bob Peak lights its scenes.
+  texture_and_material: Loose expressive brushwork and color streaks, with the surface finish of Bob Peak.
+  camera_and_composition: Epic silhouettes over huge painted skies, framed the way Bob Peak composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with mythic dramatic grandeur.
+  rendering_and_quality: Expressive seventies painted epic poster, in the recognizable hand of Bob Peak.
+  creative_brief: "Bob Peak poster look: expressive seventies painted epics with vivid streaked color, dramatic silhouettes, dissolving brushwork and mythic scale. Carry it through Bob Peak streaked color, silhouettes, burning skies, epic scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Bob Peak streaked color; silhouettes; burning skies; epic scale
+avoidRules:
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: movie-posters
+  categoryName: 2. Movie Posters
+  domain: film poster painting
+  tags:
+    - curation-v2
+    - movie-posters
+    - movie-poster
+    - bob-peak
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

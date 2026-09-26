@@ -736,6 +736,18 @@ export const STYLE_COLLECTIONS = [
     facets: { domain: ['architecture', 'interiors', 'places'] },
   },
   {
+    id: 'covers_posters_characters',
+    title: 'Covers, Posters & Characters',
+    familyId: 'illustration_art_media',
+    description:
+      'Character design languages plus movie posters and manga, book and comic covers, named after the artists, studios and eras that defined them.',
+    icon: 'book',
+    order: 15,
+    sourcePackIds: ['pack_26'],
+    entries: [{ id: 'covers-posters-characters-pack', kind: 'pack', packId: 'pack_26' }],
+    facets: { workflow: ['image', 'edit'] },
+  },
+  {
     id: 'applied_design_systems',
     title: 'Applied Design',
     familyId: 'design_assets_materials',

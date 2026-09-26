@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP26-081
+packId: pack_26
+name: Michael Whelan - Luminous Fantasy Cover
+styleAnchors:
+  - Michael Whelan - Luminous Fantasy Cover
+  - fantasy book cover painting
+  - Whelan luminosity
+displayName: Michael Whelan - Luminous Fantasy Cover
+category: 4. Book Covers
+domain: fantasy book cover painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - book-covers
+  - book-cover
+  - whelan
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Michael Whelan fantasy and SF cover look: luminous glowing light, detailed realistic painting, dreamy atmosphere and heroic contemplative figures.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; paint the subject in luminous detailed realism with dreamy glowing atmosphere. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Luminous teal, gold and pale violet, true to the Michael Whelan palette.
+  lighting_and_shadow: Luminous glowing light sources, lit the way Michael Whelan lights its scenes.
+  texture_and_material: Detailed acrylic realism with soft glow, with the surface finish of Michael Whelan.
+  camera_and_composition: Contemplative heroic compositions, framed the way Michael Whelan composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with luminous dreamy wonder.
+  rendering_and_quality: Luminous detailed fantasy cover painting, in the recognizable hand of Michael Whelan.
+  creative_brief: "Michael Whelan fantasy and SF cover look: luminous glowing light, detailed realistic painting, dreamy atmosphere and heroic contemplative figures. Carry it through Whelan luminosity, detailed realism, dreamy atmosphere. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Whelan luminosity; detailed realism; dreamy atmosphere
+avoidRules:
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: book-covers
+  categoryName: 4. Book Covers
+  domain: fantasy book cover painting
+  tags:
+    - curation-v2
+    - book-covers
+    - book-cover
+    - whelan
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP26-061
+packId: pack_26
+name: Sports Manga Volume Cover
+styleAnchors:
+  - Sports Manga Volume Cover
+  - sports manga cover
+  - Sports manga
+displayName: Sports Manga Volume Cover
+category: 3. Manga Covers
+domain: sports manga cover
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - manga-covers
+  - manga-cover
+  - sports-manga
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Sports manga volume cover look: dynamic athletes mid-action, sweat and speed lines, team colors and bold energetic title design.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; show the subject as a dynamic athlete mid-action with sweat and speed lines. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Bold team colors and bright highlights, true to the Sports Manga Volume Cover palette.
+  lighting_and_shadow: Bright stadium light, lit the way Sports Manga Volume Cover lights its scenes.
+  texture_and_material: Crisp manga color with speed lines, with the surface finish of Sports Manga Volume Cover.
+  camera_and_composition: Dynamic mid-action cover composition, framed the way Sports Manga Volume Cover composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with intense competitive drive.
+  rendering_and_quality: Dynamic sports manga cover, in the recognizable hand of Sports Manga Volume Cover.
+  creative_brief: "Sports manga volume cover look: dynamic athletes mid-action, sweat and speed lines, team colors and bold energetic title design. Carry it through Sports manga, mid-action, speed lines, team colors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Sports manga; mid-action; speed lines; team colors
+avoidRules:
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: manga-covers
+  categoryName: 3. Manga Covers
+  domain: sports manga cover
+  tags:
+    - curation-v2
+    - manga-covers
+    - manga-cover
+    - sports-manga
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

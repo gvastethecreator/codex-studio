@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP26-069
+packId: pack_26
+name: Chris Foss - Seventies SF Paperback Spaceships
+styleAnchors:
+  - Chris Foss - Seventies SF Paperback Spaceships
+  - science fiction paperback art
+  - Chris Foss striped ships
+displayName: Chris Foss - Seventies SF Paperback Spaceships
+category: 4. Book Covers
+domain: science fiction paperback art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - book-covers
+  - book-cover
+  - chris-foss
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Chris Foss seventies science fiction paperback art: colossal blocky spaceships with hazard stripes and panel detail, airbrushed alien skies and tiny scale figures.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; paint the subject as colossal blocky striped spacecraft or megastructures with tiny figures for scale. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Hazard yellow, orange and blue stripes against teal and violet skies.
+  lighting_and_shadow: Bright alien sunlight glinting on hull panels, lit the way Chris Foss lights its scenes.
+  texture_and_material: Airbrush gradients with crisp painted panel lines, with the surface finish of Chris Foss.
+  camera_and_composition: Massive ships looming over landscapes with a paperback title block.
+  atmosphere_and_mood: Keep the requested mood with vast awe-struck scale.
+  rendering_and_quality: Airbrushed seventies science fiction paperback painting, in the recognizable hand of Chris Foss.
+  creative_brief: "Chris Foss seventies science fiction paperback art: colossal blocky spaceships with hazard stripes and panel detail, airbrushed alien skies and tiny scale figures. Carry it through Chris Foss striped ships, massive scale, airbrush, alien skies. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Chris Foss striped ships; massive scale; airbrush; alien skies
+avoidRules:
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: book-covers
+  categoryName: 4. Book Covers
+  domain: science fiction paperback art
+  tags:
+    - curation-v2
+    - book-covers
+    - book-cover
+    - chris-foss
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

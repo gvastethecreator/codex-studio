@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP26-104
+packId: pack_26
+name: Bernie Wrightson - Bronze Age Horror Cover
+styleAnchors:
+  - Bernie Wrightson - Bronze Age Horror Cover
+  - horror comic cover
+  - Wrightson lush ink
+displayName: Bernie Wrightson - Bronze Age Horror Cover
+category: 5. Comic Covers
+domain: horror comic cover
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - comic-covers
+  - comic-cover
+  - wrightson
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Bernie Wrightson horror cover look: lush gothic ink, detailed crosshatched monsters, swamps and castles, and romantic macabre atmosphere.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw the subject with lush detailed gothic ink and crosshatched monsters. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Muted swamp greens and gothic browns, true to the Bernie Wrightson palette.
+  lighting_and_shadow: Moonlit gothic light, lit the way Bernie Wrightson lights its scenes.
+  texture_and_material: Lush detailed crosshatched ink, with the surface finish of Bernie Wrightson.
+  camera_and_composition: Gothic swamp and castle compositions, framed the way Bernie Wrightson composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with romantic macabre gloom.
+  rendering_and_quality: Lush gothic horror comic cover, in the recognizable hand of Bernie Wrightson.
+  creative_brief: "Bernie Wrightson horror cover look: lush gothic ink, detailed crosshatched monsters, swamps and castles, and romantic macabre atmosphere. Carry it through Wrightson lush ink, gothic monsters, swamps. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Wrightson lush ink; gothic monsters; swamps
+avoidRules:
+  - a swamp monster made of plants
+  - the stitched creature of a famous novel
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a swamp monster made of plants, the stitched creature of a famous novel, existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: comic-covers
+  categoryName: 5. Comic Covers
+  domain: horror comic cover
+  tags:
+    - curation-v2
+    - comic-covers
+    - comic-cover
+    - wrightson
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

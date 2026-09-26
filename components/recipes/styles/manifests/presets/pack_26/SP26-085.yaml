@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP26-085
+packId: pack_26
+name: Pan Horror Anthology Paperback
+styleAnchors:
+  - Pan Horror Anthology Paperback
+  - horror paperback cover
+  - Pan horror
+displayName: Pan Horror Anthology Paperback
+category: 4. Book Covers
+domain: horror paperback cover
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - book-covers
+  - book-cover
+  - pan-horror
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Seventies Pan horror anthology paperback look: lurid photographic or painted skulls, rotting flowers, sinister dolls and black backgrounds with bold yellow title.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; present the subject as a lurid sinister still life on a black background. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Black, bone white, lurid red and yellow title.
+  lighting_and_shadow: Harsh flash light on sinister objects, lit the way Pan Horror Anthology Paperback lights its scenes.
+  texture_and_material: Glossy photographic paperback print, with the surface finish of Pan Horror Anthology Paperback.
+  camera_and_composition: Sinister still life on black, framed the way Pan Horror Anthology Paperback composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with lurid cheap dread.
+  rendering_and_quality: Lurid seventies horror anthology cover, in the recognizable hand of Pan Horror Anthology Paperback.
+  creative_brief: "Seventies Pan horror anthology paperback look: lurid photographic or painted skulls, rotting flowers, sinister dolls and black backgrounds with bold yellow title. Carry it through Pan horror, skulls and dolls, black background, yellow title. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Pan horror; skulls and dolls; black background; yellow title
+avoidRules:
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: book-covers
+  categoryName: 4. Book Covers
+  domain: horror paperback cover
+  tags:
+    - curation-v2
+    - book-covers
+    - book-cover
+    - pan-horror
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

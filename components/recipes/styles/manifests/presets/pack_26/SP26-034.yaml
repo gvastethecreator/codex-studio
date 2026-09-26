@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP26-034
+packId: pack_26
+name: A24 Minimal Photo Poster
+styleAnchors:
+  - A24 Minimal Photo Poster
+  - indie film poster design
+  - A24 minimal
+displayName: A24 Minimal Photo Poster
+category: 2. Movie Posters
+domain: indie film poster design
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - movie-posters
+  - movie-poster
+  - a24
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'A24-era indie film poster look: minimal art-directed photography, strange quiet imagery, lots of negative space, muted or single-tone color and small elegant typography areas.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; present the subject in a single strange quiet photographic moment with lots of empty space. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Muted single-tone color or soft pastel grading, true to the A24 Minimal Photo Poster palette.
+  lighting_and_shadow: Natural soft light with eerie calm, lit the way A24 Minimal Photo Poster lights its scenes.
+  texture_and_material: Fine grain photographic print, with the surface finish of A24 Minimal Photo Poster.
+  camera_and_composition: Minimal centered or offset composition with negative space.
+  atmosphere_and_mood: Keep the requested mood with quiet uncanny indie.
+  rendering_and_quality: Minimal art-directed photo poster, in the recognizable hand of A24 Minimal Photo Poster.
+  creative_brief: "A24-era indie film poster look: minimal art-directed photography, strange quiet imagery, lots of negative space, muted or single-tone color and small elegant typography areas. Carry it through A24 minimal, negative space, uncanny calm, muted tones. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: A24 minimal; negative space; uncanny calm; muted tones
+avoidRules:
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: movie-posters
+  categoryName: 2. Movie Posters
+  domain: indie film poster design
+  tags:
+    - curation-v2
+    - movie-posters
+    - movie-poster
+    - a24
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

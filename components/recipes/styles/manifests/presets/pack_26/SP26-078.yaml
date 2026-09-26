@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP26-078
+packId: pack_26
+name: Edward Gorey - Gothic Crosshatched Cover
+styleAnchors:
+  - Edward Gorey - Gothic Crosshatched Cover
+  - illustrated book cover
+  - Gorey crosshatching
+displayName: Edward Gorey - Gothic Crosshatched Cover
+category: 4. Book Covers
+domain: illustrated book cover
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - book-covers
+  - book-cover
+  - gorey
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Edward Gorey book look: fine crosshatched pen drawings, Edwardian figures in long coats, eerie deadpan gothic humor and elegant hand-lettered titles.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw the subject in fine crosshatched pen with Edwardian costume and deadpan gothic humor. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Black ink on white with occasional muted wash.
+  lighting_and_shadow: Light implied by dense crosshatching, lit the way Edward Gorey lights its scenes.
+  texture_and_material: Fine pen crosshatching, with the surface finish of Edward Gorey.
+  camera_and_composition: Small eerie figures in large empty rooms, framed the way Edward Gorey composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with deadpan gothic humor.
+  rendering_and_quality: Fine crosshatched gothic book cover, in the recognizable hand of Edward Gorey.
+  creative_brief: "Edward Gorey book look: fine crosshatched pen drawings, Edwardian figures in long coats, eerie deadpan gothic humor and elegant hand-lettered titles. Carry it through Gorey crosshatching, Edwardian figures, deadpan gothic. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Gorey crosshatching; Edwardian figures; deadpan gothic
+avoidRules:
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: book-covers
+  categoryName: 4. Book Covers
+  domain: illustrated book cover
+  tags:
+    - curation-v2
+    - book-covers
+    - book-cover
+    - gorey
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

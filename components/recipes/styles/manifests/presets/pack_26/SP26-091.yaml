@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP26-091
+packId: pack_26
+name: Frank Miller - Noir Silhouette Cover
+styleAnchors:
+  - Frank Miller - Noir Silhouette Cover
+  - noir comic cover
+  - Frank Miller silhouettes
+displayName: Frank Miller - Noir Silhouette Cover
+category: 5. Comic Covers
+domain: noir comic cover
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - comic-covers
+  - comic-cover
+  - frank-miller
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Frank Miller noir cover look: stark black and white silhouettes, rain drawn as white slashes, heavy solid blacks, one splash of spot color and hard-boiled attitude.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as stark black and white silhouettes with heavy solid blacks. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Black and white with a single spot color.
+  lighting_and_shadow: Stark silhouette light with white rain slashes, lit the way Frank Miller lights its scenes.
+  texture_and_material: Heavy brush ink and white negative space, with the surface finish of Frank Miller.
+  camera_and_composition: Stark noir compositions with tall silhouettes, framed the way Frank Miller composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with hard-boiled brutal noir.
+  rendering_and_quality: Stark black-and-white noir comic cover, in the recognizable hand of Frank Miller.
+  creative_brief: "Frank Miller noir cover look: stark black and white silhouettes, rain drawn as white slashes, heavy solid blacks, one splash of spot color and hard-boiled attitude. Carry it through Frank Miller silhouettes, heavy blacks, spot color, rain slashes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Frank Miller silhouettes; heavy blacks; spot color; rain slashes
+avoidRules:
+  - existing noir characters
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing noir characters, existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: comic-covers
+  categoryName: 5. Comic Covers
+  domain: noir comic cover
+  tags:
+    - curation-v2
+    - comic-covers
+    - comic-cover
+    - frank-miller
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

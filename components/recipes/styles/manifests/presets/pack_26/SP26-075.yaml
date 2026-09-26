@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP26-075
+packId: pack_26
+name: Robert McGinnis - Pulp Noir Paperback
+styleAnchors:
+  - Robert McGinnis - Pulp Noir Paperback
+  - crime paperback painting
+  - McGinnis long-limbed elegance
+displayName: Robert McGinnis - Pulp Noir Paperback
+category: 4. Book Covers
+domain: crime paperback painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - book-covers
+  - book-cover
+  - mcginnis
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Robert McGinnis paperback look: elegant long-limbed noir women, loose watercolor washes, sophisticated mid-century crime glamour and cool detached poses.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; paint the subject with elegant long-limbed figures in loose watercolor noir glamour. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Cool muted watercolor with one warm accent, true to the Robert McGinnis palette.
+  lighting_and_shadow: Soft glamorous evening light, lit the way Robert McGinnis lights its scenes.
+  texture_and_material: Loose watercolor washes and fine line, with the surface finish of Robert McGinnis.
+  camera_and_composition: Elegant full-figure poses with small crime vignettes, framed the way Robert McGinnis composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with cool noir glamour.
+  rendering_and_quality: Elegant mid-century crime paperback painting, in the recognizable hand of Robert McGinnis.
+  creative_brief: "Robert McGinnis paperback look: elegant long-limbed noir women, loose watercolor washes, sophisticated mid-century crime glamour and cool detached poses. Carry it through McGinnis long-limbed elegance, watercolor noir, glamour. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: McGinnis long-limbed elegance; watercolor noir; glamour
+avoidRules:
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: book-covers
+  categoryName: 4. Book Covers
+  domain: crime paperback painting
+  tags:
+    - curation-v2
+    - book-covers
+    - book-cover
+    - mcginnis
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

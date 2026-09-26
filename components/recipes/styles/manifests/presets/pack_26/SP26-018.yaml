@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP26-018
+packId: pack_26
+name: Ilya Kuvshinov - Glossy Digital Portrait Character
+styleAnchors:
+  - Ilya Kuvshinov - Glossy Digital Portrait Character
+  - digital portrait character design
+  - Kuvshinov glossy eyes
+displayName: Ilya Kuvshinov - Glossy Digital Portrait Character
+category: 1. Character Design
+domain: digital portrait character design
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - character-design
+  - character-design
+  - kuvshinov
+  - reference-title
+visualDna:
+  aesthetic: 'Ilya Kuvshinov digital portrait look: glossy anime-realist faces, big reflective eyes, soft painted skin, flat graphic backgrounds and cool contemporary fashion.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; design characters as glossy portraits with big reflective eyes, soft skin and contemporary fashion. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Soft pastel skin tones against flat bold backgrounds.
+  lighting_and_shadow: Soft glossy highlights on eyes and lips, lit the way Ilya Kuvshinov lights its scenes.
+  texture_and_material: Smooth digital paint with glossy highlights, with the surface finish of Ilya Kuvshinov.
+  camera_and_composition: Close portrait framing with flat background, framed the way Ilya Kuvshinov composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with cool glossy calm.
+  rendering_and_quality: Glossy digital portrait illustration, in the recognizable hand of Ilya Kuvshinov.
+  creative_brief: "Ilya Kuvshinov digital portrait look: glossy anime-realist faces, big reflective eyes, soft painted skin, flat graphic backgrounds and cool contemporary fashion. Carry it through Kuvshinov glossy eyes, soft skin, flat backgrounds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Kuvshinov glossy eyes; soft skin; flat backgrounds
+avoidRules:
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: character-design
+  categoryName: 1. Character Design
+  domain: digital portrait character design
+  tags:
+    - curation-v2
+    - character-design
+    - character-design
+    - kuvshinov
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

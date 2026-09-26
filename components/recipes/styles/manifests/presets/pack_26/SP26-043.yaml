@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP26-043
+packId: pack_26
+name: Hong Kong Nineties Action Poster
+styleAnchors:
+  - Hong Kong Nineties Action Poster
+  - Hong Kong film poster
+  - HK nineties montage
+displayName: Hong Kong Nineties Action Poster
+category: 2. Movie Posters
+domain: Hong Kong film poster
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - movie-posters
+  - movie-poster
+  - hk-nineties
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Nineties Hong Kong action poster look: dual-pistol heroes, doves, slow-motion explosions, cool sunglasses, glossy photo montage and neon city nights.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; compose the subject as glossy photo montage with heroic slow-motion action. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Neon blue, fire orange and glossy black, true to the Hong Kong Nineties Action Poster palette.
+  lighting_and_shadow: Explosion glow and neon light, lit the way Hong Kong Nineties Action Poster lights its scenes.
+  texture_and_material: Glossy photo montage, with the surface finish of Hong Kong Nineties Action Poster.
+  camera_and_composition: Heroic montage with doves and explosions, framed the way Hong Kong Nineties Action Poster composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with heroic bloodshed cool.
+  rendering_and_quality: Glossy Hong Kong action poster montage, in the recognizable hand of Hong Kong Nineties Action Poster.
+  creative_brief: "Nineties Hong Kong action poster look: dual-pistol heroes, doves, slow-motion explosions, cool sunglasses, glossy photo montage and neon city nights. Carry it through HK nineties montage, doves, explosions, sunglasses. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: HK nineties montage; doves; explosions; sunglasses
+avoidRules:
+  - real celebrity likeness
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: real celebrity likeness, existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: movie-posters
+  categoryName: 2. Movie Posters
+  domain: Hong Kong film poster
+  tags:
+    - curation-v2
+    - movie-posters
+    - movie-poster
+    - hk-nineties
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

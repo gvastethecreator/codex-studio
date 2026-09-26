@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP26-032
+packId: pack_26
+name: Stenberg Brothers - Soviet Constructivist Film Poster
+styleAnchors:
+  - Stenberg Brothers - Soviet Constructivist Film Poster
+  - constructivist film poster
+  - Stenberg constructivism
+displayName: Stenberg Brothers - Soviet Constructivist Film Poster
+category: 2. Movie Posters
+domain: constructivist film poster
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - movie-posters
+  - movie-poster
+  - stenberg
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Stenberg Brothers Soviet film poster look: constructivist diagonals, photomontage faces, dynamic geometry, bold red and black and kinetic cinematic energy.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; build the subject from photomontage fragments and bold constructivist geometry. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Red, black, cream and one accent, true to the Stenberg Brothers palette.
+  lighting_and_shadow: Flat graphic light, lit the way Stenberg Brothers lights its scenes.
+  texture_and_material: Lithograph print and photomontage, with the surface finish of Stenberg Brothers.
+  camera_and_composition: Dynamic diagonals and spirals, framed the way Stenberg Brothers composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with kinetic revolutionary energy.
+  rendering_and_quality: Constructivist lithograph poster, in the recognizable hand of Stenberg Brothers.
+  creative_brief: "Stenberg Brothers Soviet film poster look: constructivist diagonals, photomontage faces, dynamic geometry, bold red and black and kinetic cinematic energy. Carry it through Stenberg constructivism, diagonals, photomontage, red and black. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Stenberg constructivism; diagonals; photomontage; red and black
+avoidRules:
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: movie-posters
+  categoryName: 2. Movie Posters
+  domain: constructivist film poster
+  tags:
+    - curation-v2
+    - movie-posters
+    - movie-poster
+    - stenberg
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

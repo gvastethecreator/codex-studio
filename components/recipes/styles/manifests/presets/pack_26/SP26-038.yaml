@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP26-038
+packId: pack_26
+name: Cuban ICAIC Silkscreen Film Poster
+styleAnchors:
+  - Cuban ICAIC Silkscreen Film Poster
+  - Cuban film poster
+  - ICAIC silkscreen
+displayName: Cuban ICAIC Silkscreen Film Poster
+category: 2. Movie Posters
+domain: Cuban film poster
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - movie-posters
+  - movie-poster
+  - icaic
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Cuban ICAIC film poster look: hand-pulled silkscreen, bold flat psychedelic color, graphic symbolism and inventive minimal imagery.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; reduce the subject to bold flat silkscreen shapes with graphic symbolism. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Bold flat psychedelic colors, true to the Cuban ICAIC Silkscreen Film Poster palette.
+  lighting_and_shadow: Flat screenprint light, lit the way Cuban ICAIC Silkscreen Film Poster lights its scenes.
+  texture_and_material: Hand-pulled silkscreen ink layers, with the surface finish of Cuban ICAIC Silkscreen Film Poster.
+  camera_and_composition: Bold symbolic central image, framed the way Cuban ICAIC Silkscreen Film Poster composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with bold inventive energy.
+  rendering_and_quality: Hand-pulled Cuban silkscreen poster, in the recognizable hand of Cuban ICAIC Silkscreen Film Poster.
+  creative_brief: "Cuban ICAIC film poster look: hand-pulled silkscreen, bold flat psychedelic color, graphic symbolism and inventive minimal imagery. Carry it through ICAIC silkscreen, flat color, graphic symbolism. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: ICAIC silkscreen; flat color; graphic symbolism
+avoidRules:
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: movie-posters
+  categoryName: 2. Movie Posters
+  domain: Cuban film poster
+  tags:
+    - curation-v2
+    - movie-posters
+    - movie-poster
+    - icaic
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

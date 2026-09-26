@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP26-074
+packId: pack_26
+name: Victorian Gilt Cloth Binding
+styleAnchors:
+  - Victorian Gilt Cloth Binding
+  - Victorian book binding
+  - Victorian gilt stamping
+displayName: Victorian Gilt Cloth Binding
+category: 4. Book Covers
+domain: Victorian book binding
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - book-covers
+  - book-cover
+  - victorian-binding
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Victorian decorated publisher’s binding look: embossed cloth covers with ornate gilt stamping, floral and pictorial vignettes, black and gold panels and worn corners.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as an ornate gilt-stamped vignette on an embossed cloth cover. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Deep maroon, green or blue cloth with gold and black stamping.
+  lighting_and_shadow: Warm lamplight glinting on worn gilt, lit the way Victorian Gilt Cloth Binding lights its scenes.
+  texture_and_material: Embossed bookcloth, rubbed gilt and worn corners, with the surface finish of Victorian Gilt Cloth Binding.
+  camera_and_composition: Frontal antique book cover or angled product view.
+  atmosphere_and_mood: Keep the requested mood with antique ornate wonder.
+  rendering_and_quality: Antique Victorian gilt binding, in the recognizable hand of Victorian Gilt Cloth Binding.
+  creative_brief: "Victorian decorated publisher’s binding look: embossed cloth covers with ornate gilt stamping, floral and pictorial vignettes, black and gold panels and worn corners. Carry it through Victorian gilt stamping, embossed cloth, ornate vignettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Victorian gilt stamping; embossed cloth; ornate vignettes
+avoidRules:
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: book-covers
+  categoryName: 4. Book Covers
+  domain: Victorian book binding
+  tags:
+    - curation-v2
+    - book-covers
+    - book-cover
+    - victorian-binding
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

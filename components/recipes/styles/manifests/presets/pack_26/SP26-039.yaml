@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP26-039
+packId: pack_26
+name: Richard Amsel - Painted Portrait Collage Poster
+styleAnchors:
+  - Richard Amsel - Painted Portrait Collage Poster
+  - film poster painting
+  - Amsel portraits
+displayName: Richard Amsel - Painted Portrait Collage Poster
+category: 2. Movie Posters
+domain: film poster painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - movie-posters
+  - movie-poster
+  - amsel
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Richard Amsel poster look: elegant painted portraits blended into collage, nostalgic glamour, soft pencil and paint and art-deco-tinged sophistication.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; paint the subject as elegant portraits blended into nostalgic collage. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Soft nostalgic sepia, rose and gold, true to the Richard Amsel palette.
+  lighting_and_shadow: Soft glamorous light, lit the way Richard Amsel lights its scenes.
+  texture_and_material: Pencil and paint blending on board, with the surface finish of Richard Amsel.
+  camera_and_composition: Elegant portrait collage composition, framed the way Richard Amsel composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with nostalgic glamorous elegance.
+  rendering_and_quality: Elegant painted portrait collage poster, in the recognizable hand of Richard Amsel.
+  creative_brief: "Richard Amsel poster look: elegant painted portraits blended into collage, nostalgic glamour, soft pencil and paint and art-deco-tinged sophistication. Carry it through Amsel portraits, nostalgic glamour, collage. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Amsel portraits; nostalgic glamour; collage
+avoidRules:
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: movie-posters
+  categoryName: 2. Movie Posters
+  domain: film poster painting
+  tags:
+    - curation-v2
+    - movie-posters
+    - movie-poster
+    - amsel
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

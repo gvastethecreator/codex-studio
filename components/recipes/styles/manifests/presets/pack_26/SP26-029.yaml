@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP26-029
+packId: pack_26
+name: Tom Chantrell - Hammer Horror Painted Poster
+styleAnchors:
+  - Tom Chantrell - Hammer Horror Painted Poster
+  - horror film poster painting
+  - Hammer lurid paint
+displayName: Tom Chantrell - Hammer Horror Painted Poster
+category: 2. Movie Posters
+domain: horror film poster painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - movie-posters
+  - movie-poster
+  - hammer
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Tom Chantrell and Hammer Films poster look: lurid painted gothic horror, screaming heroines, looming monsters, castles and blood-red sixties color.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; paint the subject in lurid gothic melodrama with looming menace. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Blood red, sickly green, black and pale flesh tones.
+  lighting_and_shadow: Lurid moonlight and candle glow, lit the way Tom Chantrell lights its scenes.
+  texture_and_material: Painted gouache and oil with bold outlines, with the surface finish of Tom Chantrell.
+  camera_and_composition: Looming menace over screaming figures and castles, framed the way Tom Chantrell composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with lurid gothic thrill.
+  rendering_and_quality: Painted sixties horror poster, in the recognizable hand of Tom Chantrell.
+  creative_brief: "Tom Chantrell and Hammer Films poster look: lurid painted gothic horror, screaming heroines, looming monsters, castles and blood-red sixties color. Carry it through Hammer lurid paint, gothic castles, looming monsters, blood red. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Hammer lurid paint; gothic castles; looming monsters; blood red
+avoidRules:
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: movie-posters
+  categoryName: 2. Movie Posters
+  domain: horror film poster painting
+  tags:
+    - curation-v2
+    - movie-posters
+    - movie-poster
+    - hammer
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

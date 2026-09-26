@@ -1,0 +1,1888 @@
+{
+  "packs": [
+    {
+      "id": "pack_26",
+      "name": "Covers, Posters & Characters",
+      "presetCount": 106
+    }
+  ],
+  "presets": [
+    {
+      "id": "SP26-001",
+      "name": "Tetsuya Nomura - Zipper-Belt Hero Design",
+      "styleAnchors": [
+        "Tetsuya Nomura - Zipper-Belt Hero Design",
+        "JRPG character design",
+        "Nomura belts and zippers"
+      ],
+      "ref": "pack_26/SP26-001.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "character-design",
+      "categoryName": "1. Character Design",
+      "domain": "JRPG character design",
+      "tags": ["covers-posters-and-characters", "character-design", "jrpg-character-design"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-001 tetsuya nomura - zipper-belt hero design jrpg character design nomura belts and zippers 1. character design character design jrpg character design pack_26 covers, posters & characters character-design covers-posters-and-characters character-design jrpg-character-design"
+    },
+    {
+      "id": "SP26-002",
+      "name": "Tim Burton - Spindly Gothic Character Sketch",
+      "styleAnchors": [
+        "Tim Burton - Spindly Gothic Character Sketch",
+        "gothic character design",
+        "Burton spindly limbs"
+      ],
+      "ref": "pack_26/SP26-002.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "character-design",
+      "categoryName": "1. Character Design",
+      "domain": "gothic character design",
+      "tags": ["covers-posters-and-characters", "character-design", "gothic-character-design"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-002 tim burton - spindly gothic character sketch gothic character design burton spindly limbs 1. character design character design gothic character design pack_26 covers, posters & characters character-design covers-posters-and-characters character-design gothic-character-design"
+    },
+    {
+      "id": "SP26-003",
+      "name": "Genndy Tartakovsky - Angular Silhouette Action Design",
+      "styleAnchors": [
+        "Genndy Tartakovsky - Angular Silhouette Action Design",
+        "animation character design",
+        "Tartakovsky silhouettes"
+      ],
+      "ref": "pack_26/SP26-003.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "character-design",
+      "categoryName": "1. Character Design",
+      "domain": "animation character design",
+      "tags": ["covers-posters-and-characters", "character-design", "animation-character-design"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-003 genndy tartakovsky - angular silhouette action design animation character design tartakovsky silhouettes 1. character design character design animation character design pack_26 covers, posters & characters character-design covers-posters-and-characters character-design animation-character-design"
+    },
+    {
+      "id": "SP26-004",
+      "name": "Bruce Timm - Streamlined Hero Model Sheet",
+      "styleAnchors": [
+        "Bruce Timm - Streamlined Hero Model Sheet",
+        "animation model sheet",
+        "Bruce Timm streamlined anatomy"
+      ],
+      "ref": "pack_26/SP26-004.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "character-design",
+      "categoryName": "1. Character Design",
+      "domain": "animation model sheet",
+      "tags": ["covers-posters-and-characters", "character-design", "animation-model-sheet"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-004 bruce timm - streamlined hero model sheet animation model sheet bruce timm streamlined anatomy 1. character design character design animation model sheet pack_26 covers, posters & characters character-design covers-posters-and-characters character-design animation-model-sheet"
+    },
+    {
+      "id": "SP26-005",
+      "name": "Jamie Hewlett - Punk Cartoon Band Portrait",
+      "styleAnchors": [
+        "Jamie Hewlett - Punk Cartoon Band Portrait",
+        "punk cartoon character design",
+        "Hewlett scratchy ink"
+      ],
+      "ref": "pack_26/SP26-005.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "character-design",
+      "categoryName": "1. Character Design",
+      "domain": "punk cartoon character design",
+      "tags": [
+        "covers-posters-and-characters",
+        "character-design",
+        "punk-cartoon-character-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-005 jamie hewlett - punk cartoon band portrait punk cartoon character design hewlett scratchy ink 1. character design character design punk cartoon character design pack_26 covers, posters & characters character-design covers-posters-and-characters character-design punk-cartoon-character-design"
+    },
+    {
+      "id": "SP26-006",
+      "name": "Kim Jung Gi - Freehand Crowd Ink Character",
+      "styleAnchors": [
+        "Kim Jung Gi - Freehand Crowd Ink Character",
+        "freehand ink drawing",
+        "Kim Jung Gi freehand"
+      ],
+      "ref": "pack_26/SP26-006.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "character-design",
+      "categoryName": "1. Character Design",
+      "domain": "freehand ink drawing",
+      "tags": ["covers-posters-and-characters", "character-design", "freehand-ink-drawing"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-006 kim jung gi - freehand crowd ink character freehand ink drawing kim jung gi freehand 1. character design character design freehand ink drawing pack_26 covers, posters & characters character-design covers-posters-and-characters character-design freehand-ink-drawing"
+    },
+    {
+      "id": "SP26-007",
+      "name": "Carter Goodrich - Rounded Feature Film Character Maquette",
+      "styleAnchors": [
+        "Carter Goodrich - Rounded Feature Film Character Maquette",
+        "feature animation character design",
+        "Carter Goodrich rounded shapes"
+      ],
+      "ref": "pack_26/SP26-007.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "character-design",
+      "categoryName": "1. Character Design",
+      "domain": "feature animation character design",
+      "tags": [
+        "covers-posters-and-characters",
+        "character-design",
+        "feature-animation-character-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-007 carter goodrich - rounded feature film character maquette feature animation character design carter goodrich rounded shapes 1. character design character design feature animation character design pack_26 covers, posters & characters character-design covers-posters-and-characters character-design feature-animation-character-design"
+    },
+    {
+      "id": "SP26-008",
+      "name": "Shigenori Soejima - Stylish Persona Cast Portrait",
+      "styleAnchors": [
+        "Shigenori Soejima - Stylish Persona Cast Portrait",
+        "JRPG character design",
+        "Soejima stylish fashion"
+      ],
+      "ref": "pack_26/SP26-008.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "character-design",
+      "categoryName": "1. Character Design",
+      "domain": "JRPG character design",
+      "tags": ["covers-posters-and-characters", "character-design", "jrpg-character-design"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-008 shigenori soejima - stylish persona cast portrait jrpg character design soejima stylish fashion 1. character design character design jrpg character design pack_26 covers, posters & characters character-design covers-posters-and-characters character-design jrpg-character-design"
+    },
+    {
+      "id": "SP26-009",
+      "name": "Yusuke Kozaki - Graphic Flat-Color Hero Roster",
+      "styleAnchors": [
+        "Yusuke Kozaki - Graphic Flat-Color Hero Roster",
+        "game character design",
+        "Kozaki flat color"
+      ],
+      "ref": "pack_26/SP26-009.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "character-design",
+      "categoryName": "1. Character Design",
+      "domain": "game character design",
+      "tags": ["covers-posters-and-characters", "character-design", "game-character-design"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-009 yusuke kozaki - graphic flat-color hero roster game character design kozaki flat color 1. character design character design game character design pack_26 covers, posters & characters character-design covers-posters-and-characters character-design game-character-design"
+    },
+    {
+      "id": "SP26-010",
+      "name": "Kazuma Kaneko - Occult Demon Compendium",
+      "styleAnchors": [
+        "Kazuma Kaneko - Occult Demon Compendium",
+        "demon design",
+        "Kaneko occult demons"
+      ],
+      "ref": "pack_26/SP26-010.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "character-design",
+      "categoryName": "1. Character Design",
+      "domain": "demon design",
+      "tags": ["covers-posters-and-characters", "character-design", "demon-design"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-010 kazuma kaneko - occult demon compendium demon design kaneko occult demons 1. character design character design demon design pack_26 covers, posters & characters character-design covers-posters-and-characters character-design demon-design"
+    },
+    {
+      "id": "SP26-011",
+      "name": "Moebius - Desert Wanderer Character Studies",
+      "styleAnchors": [
+        "Moebius - Desert Wanderer Character Studies",
+        "bande dessinée character design",
+        "Moebius clean line"
+      ],
+      "ref": "pack_26/SP26-011.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "character-design",
+      "categoryName": "1. Character Design",
+      "domain": "bande dessinée character design",
+      "tags": [
+        "covers-posters-and-characters",
+        "character-design",
+        "bande-dessin-e-character-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-011 moebius - desert wanderer character studies bande dessinée character design moebius clean line 1. character design character design bande dessinée character design pack_26 covers, posters & characters character-design covers-posters-and-characters character-design bande-dessin-e-character-design"
+    },
+    {
+      "id": "SP26-012",
+      "name": "Lorelay Bové - Soft Gouache Princess Visdev",
+      "styleAnchors": [
+        "Lorelay Bové - Soft Gouache Princess Visdev",
+        "visual development character design",
+        "Lorelay Bové gouache"
+      ],
+      "ref": "pack_26/SP26-012.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "character-design",
+      "categoryName": "1. Character Design",
+      "domain": "visual development character design",
+      "tags": [
+        "covers-posters-and-characters",
+        "character-design",
+        "visual-development-character-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-012 lorelay bové - soft gouache princess visdev visual development character design lorelay bové gouache 1. character design character design visual development character design pack_26 covers, posters & characters character-design covers-posters-and-characters character-design visual-development-character-design"
+    },
+    {
+      "id": "SP26-013",
+      "name": "Tohl Narita - Kaiju Suit Design Sheet",
+      "styleAnchors": [
+        "Tohl Narita - Kaiju Suit Design Sheet",
+        "kaiju design",
+        "Tohl Narita modernist kaiju"
+      ],
+      "ref": "pack_26/SP26-013.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "character-design",
+      "categoryName": "1. Character Design",
+      "domain": "kaiju design",
+      "tags": ["covers-posters-and-characters", "character-design", "kaiju-design"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-013 tohl narita - kaiju suit design sheet kaiju design tohl narita modernist kaiju 1. character design character design kaiju design pack_26 covers, posters & characters character-design covers-posters-and-characters character-design kaiju-design"
+    },
+    {
+      "id": "SP26-014",
+      "name": "Laika - Stop-Motion Puppet Character Design",
+      "styleAnchors": [
+        "Laika - Stop-Motion Puppet Character Design",
+        "stop-motion character design",
+        "Laika puppets"
+      ],
+      "ref": "pack_26/SP26-014.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "character-design",
+      "categoryName": "1. Character Design",
+      "domain": "stop-motion character design",
+      "tags": ["covers-posters-and-characters", "character-design", "stop-motion-character-design"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-014 laika - stop-motion puppet character design stop-motion character design laika puppets 1. character design character design stop-motion character design pack_26 covers, posters & characters character-design covers-posters-and-characters character-design stop-motion-character-design"
+    },
+    {
+      "id": "SP26-015",
+      "name": "Sanrio Minimal Mascot Silhouette",
+      "styleAnchors": [
+        "Sanrio Minimal Mascot Silhouette",
+        "mascot character design",
+        "Sanrio simplicity"
+      ],
+      "ref": "pack_26/SP26-015.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "character-design",
+      "categoryName": "1. Character Design",
+      "domain": "mascot character design",
+      "tags": ["covers-posters-and-characters", "character-design", "mascot-character-design"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-015 sanrio minimal mascot silhouette mascot character design sanrio simplicity 1. character design character design mascot character design pack_26 covers, posters & characters character-design covers-posters-and-characters character-design mascot-character-design"
+    },
+    {
+      "id": "SP26-016",
+      "name": "Yuru-Chara Regional Mascot Costume",
+      "styleAnchors": [
+        "Yuru-Chara Regional Mascot Costume",
+        "regional mascot design",
+        "Yuru-chara clumsy costumes"
+      ],
+      "ref": "pack_26/SP26-016.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "character-design",
+      "categoryName": "1. Character Design",
+      "domain": "regional mascot design",
+      "tags": ["covers-posters-and-characters", "character-design", "regional-mascot-design"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-016 yuru-chara regional mascot costume regional mascot design yuru-chara clumsy costumes 1. character design character design regional mascot design pack_26 covers, posters & characters character-design covers-posters-and-characters character-design regional-mascot-design"
+    },
+    {
+      "id": "SP26-017",
+      "name": "Keita Amemiya - Armored Tokusatsu Monster Design",
+      "styleAnchors": [
+        "Keita Amemiya - Armored Tokusatsu Monster Design",
+        "creature and armor design",
+        "Amemiya organic armor"
+      ],
+      "ref": "pack_26/SP26-017.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "character-design",
+      "categoryName": "1. Character Design",
+      "domain": "creature and armor design",
+      "tags": ["covers-posters-and-characters", "character-design", "creature-and-armor-design"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-017 keita amemiya - armored tokusatsu monster design creature and armor design amemiya organic armor 1. character design character design creature and armor design pack_26 covers, posters & characters character-design covers-posters-and-characters character-design creature-and-armor-design"
+    },
+    {
+      "id": "SP26-018",
+      "name": "Ilya Kuvshinov - Glossy Digital Portrait Character",
+      "styleAnchors": [
+        "Ilya Kuvshinov - Glossy Digital Portrait Character",
+        "digital portrait character design",
+        "Kuvshinov glossy eyes"
+      ],
+      "ref": "pack_26/SP26-018.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "character-design",
+      "categoryName": "1. Character Design",
+      "domain": "digital portrait character design",
+      "tags": [
+        "covers-posters-and-characters",
+        "character-design",
+        "digital-portrait-character-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-018 ilya kuvshinov - glossy digital portrait character digital portrait character design kuvshinov glossy eyes 1. character design character design digital portrait character design pack_26 covers, posters & characters character-design covers-posters-and-characters character-design digital-portrait-character-design"
+    },
+    {
+      "id": "SP26-019",
+      "name": "Shinkiro - Fighting Game Select Portrait",
+      "styleAnchors": [
+        "Shinkiro - Fighting Game Select Portrait",
+        "fighting game character art",
+        "Shinkiro airbrush"
+      ],
+      "ref": "pack_26/SP26-019.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "character-design",
+      "categoryName": "1. Character Design",
+      "domain": "fighting game character art",
+      "tags": ["covers-posters-and-characters", "character-design", "fighting-game-character-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-019 shinkiro - fighting game select portrait fighting game character art shinkiro airbrush 1. character design character design fighting game character art pack_26 covers, posters & characters character-design covers-posters-and-characters character-design fighting-game-character-art"
+    },
+    {
+      "id": "SP26-020",
+      "name": "Ashley Wood - Grunge Mecha Pilot Sketch",
+      "styleAnchors": [
+        "Ashley Wood - Grunge Mecha Pilot Sketch",
+        "grunge character design",
+        "Ashley Wood grunge"
+      ],
+      "ref": "pack_26/SP26-020.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "character-design",
+      "categoryName": "1. Character Design",
+      "domain": "grunge character design",
+      "tags": ["covers-posters-and-characters", "character-design", "grunge-character-design"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-020 ashley wood - grunge mecha pilot sketch grunge character design ashley wood grunge 1. character design character design grunge character design pack_26 covers, posters & characters character-design covers-posters-and-characters character-design grunge-character-design"
+    },
+    {
+      "id": "SP26-021",
+      "name": "Gacha Splash Art Character",
+      "styleAnchors": ["Gacha Splash Art Character", "mobile game character art", "Gacha splash"],
+      "ref": "pack_26/SP26-021.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "character-design",
+      "categoryName": "1. Character Design",
+      "domain": "mobile game character art",
+      "tags": ["covers-posters-and-characters", "character-design", "mobile-game-character-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-021 gacha splash art character mobile game character art gacha splash 1. character design character design mobile game character art pack_26 covers, posters & characters character-design covers-posters-and-characters character-design mobile-game-character-art"
+    },
+    {
+      "id": "SP26-022",
+      "name": "Jorge R. Gutiérrez - Mexican Folk Cartoon Characters",
+      "styleAnchors": [
+        "Jorge R. Gutiérrez - Mexican Folk Cartoon Characters",
+        "folk animation character design",
+        "Gutiérrez folk toys"
+      ],
+      "ref": "pack_26/SP26-022.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "character-design",
+      "categoryName": "1. Character Design",
+      "domain": "folk animation character design",
+      "tags": [
+        "covers-posters-and-characters",
+        "character-design",
+        "folk-animation-character-design"
+      ],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-022 jorge r. gutiérrez - mexican folk cartoon characters folk animation character design gutiérrez folk toys 1. character design character design folk animation character design pack_26 covers, posters & characters character-design covers-posters-and-characters character-design folk-animation-character-design"
+    },
+    {
+      "id": "SP26-023",
+      "name": "Saul Bass - Cut-Paper Title Poster",
+      "styleAnchors": [
+        "Saul Bass - Cut-Paper Title Poster",
+        "film poster design",
+        "Saul Bass cut paper"
+      ],
+      "ref": "pack_26/SP26-023.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "movie-posters",
+      "categoryName": "2. Movie Posters",
+      "domain": "film poster design",
+      "tags": ["covers-posters-and-characters", "movie-posters", "film-poster-design"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-023 saul bass - cut-paper title poster film poster design saul bass cut paper 2. movie posters movie posters film poster design pack_26 covers, posters & characters movie-posters covers-posters-and-characters movie-posters film-poster-design"
+    },
+    {
+      "id": "SP26-024",
+      "name": "Drew Struzan - Airbrushed Blockbuster Montage",
+      "styleAnchors": [
+        "Drew Struzan - Airbrushed Blockbuster Montage",
+        "film poster painting",
+        "Struzan airbrush montage"
+      ],
+      "ref": "pack_26/SP26-024.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "movie-posters",
+      "categoryName": "2. Movie Posters",
+      "domain": "film poster painting",
+      "tags": ["covers-posters-and-characters", "movie-posters", "film-poster-painting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-024 drew struzan - airbrushed blockbuster montage film poster painting struzan airbrush montage 2. movie posters movie posters film poster painting pack_26 covers, posters & characters movie-posters covers-posters-and-characters movie-posters film-poster-painting"
+    },
+    {
+      "id": "SP26-025",
+      "name": "Bob Peak - Seventies Painted Epic Poster",
+      "styleAnchors": [
+        "Bob Peak - Seventies Painted Epic Poster",
+        "film poster painting",
+        "Bob Peak streaked color"
+      ],
+      "ref": "pack_26/SP26-025.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "movie-posters",
+      "categoryName": "2. Movie Posters",
+      "domain": "film poster painting",
+      "tags": ["covers-posters-and-characters", "movie-posters", "film-poster-painting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-025 bob peak - seventies painted epic poster film poster painting bob peak streaked color 2. movie posters movie posters film poster painting pack_26 covers, posters & characters movie-posters covers-posters-and-characters movie-posters film-poster-painting"
+    },
+    {
+      "id": "SP26-026",
+      "name": "Polish Poster School - Surreal Film Poster",
+      "styleAnchors": [
+        "Polish Poster School - Surreal Film Poster",
+        "film poster design",
+        "Polish school surrealism"
+      ],
+      "ref": "pack_26/SP26-026.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "movie-posters",
+      "categoryName": "2. Movie Posters",
+      "domain": "film poster design",
+      "tags": ["covers-posters-and-characters", "movie-posters", "film-poster-design"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-026 polish poster school - surreal film poster film poster design polish school surrealism 2. movie posters movie posters film poster design pack_26 covers, posters & characters movie-posters covers-posters-and-characters movie-posters film-poster-design"
+    },
+    {
+      "id": "SP26-027",
+      "name": "Japanese Chirashi Showa Film Flyer",
+      "styleAnchors": [
+        "Japanese Chirashi Showa Film Flyer",
+        "Japanese film flyer",
+        "Chirashi collage"
+      ],
+      "ref": "pack_26/SP26-027.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "movie-posters",
+      "categoryName": "2. Movie Posters",
+      "domain": "Japanese film flyer",
+      "tags": ["covers-posters-and-characters", "movie-posters", "japanese-film-flyer"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-027 japanese chirashi showa film flyer japanese film flyer chirashi collage 2. movie posters movie posters japanese film flyer pack_26 covers, posters & characters movie-posters covers-posters-and-characters movie-posters japanese-film-flyer"
+    },
+    {
+      "id": "SP26-028",
+      "name": "Bollywood Hand-Painted Billboard Poster",
+      "styleAnchors": [
+        "Bollywood Hand-Painted Billboard Poster",
+        "Indian film poster painting",
+        "Bollywood hand-painted"
+      ],
+      "ref": "pack_26/SP26-028.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "movie-posters",
+      "categoryName": "2. Movie Posters",
+      "domain": "Indian film poster painting",
+      "tags": ["covers-posters-and-characters", "movie-posters", "indian-film-poster-painting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-028 bollywood hand-painted billboard poster indian film poster painting bollywood hand-painted 2. movie posters movie posters indian film poster painting pack_26 covers, posters & characters movie-posters covers-posters-and-characters movie-posters indian-film-poster-painting"
+    },
+    {
+      "id": "SP26-029",
+      "name": "Tom Chantrell - Hammer Horror Painted Poster",
+      "styleAnchors": [
+        "Tom Chantrell - Hammer Horror Painted Poster",
+        "horror film poster painting",
+        "Hammer lurid paint"
+      ],
+      "ref": "pack_26/SP26-029.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "movie-posters",
+      "categoryName": "2. Movie Posters",
+      "domain": "horror film poster painting",
+      "tags": ["covers-posters-and-characters", "movie-posters", "horror-film-poster-painting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-029 tom chantrell - hammer horror painted poster horror film poster painting hammer lurid paint 2. movie posters movie posters horror film poster painting pack_26 covers, posters & characters movie-posters covers-posters-and-characters movie-posters horror-film-poster-painting"
+    },
+    {
+      "id": "SP26-030",
+      "name": "Renato Casaro - Italian Painted Action Poster",
+      "styleAnchors": [
+        "Renato Casaro - Italian Painted Action Poster",
+        "film poster painting",
+        "Casaro glossy realism"
+      ],
+      "ref": "pack_26/SP26-030.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "movie-posters",
+      "categoryName": "2. Movie Posters",
+      "domain": "film poster painting",
+      "tags": ["covers-posters-and-characters", "movie-posters", "film-poster-painting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-030 renato casaro - italian painted action poster film poster painting casaro glossy realism 2. movie posters movie posters film poster painting pack_26 covers, posters & characters movie-posters covers-posters-and-characters movie-posters film-poster-painting"
+    },
+    {
+      "id": "SP26-031",
+      "name": "Mondo Screenprint Alternative Poster",
+      "styleAnchors": [
+        "Mondo Screenprint Alternative Poster",
+        "screenprint film poster",
+        "Mondo screenprint"
+      ],
+      "ref": "pack_26/SP26-031.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "movie-posters",
+      "categoryName": "2. Movie Posters",
+      "domain": "screenprint film poster",
+      "tags": ["covers-posters-and-characters", "movie-posters", "screenprint-film-poster"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-031 mondo screenprint alternative poster screenprint film poster mondo screenprint 2. movie posters movie posters screenprint film poster pack_26 covers, posters & characters movie-posters covers-posters-and-characters movie-posters screenprint-film-poster"
+    },
+    {
+      "id": "SP26-032",
+      "name": "Stenberg Brothers - Soviet Constructivist Film Poster",
+      "styleAnchors": [
+        "Stenberg Brothers - Soviet Constructivist Film Poster",
+        "constructivist film poster",
+        "Stenberg constructivism"
+      ],
+      "ref": "pack_26/SP26-032.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "movie-posters",
+      "categoryName": "2. Movie Posters",
+      "domain": "constructivist film poster",
+      "tags": ["covers-posters-and-characters", "movie-posters", "constructivist-film-poster"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-032 stenberg brothers - soviet constructivist film poster constructivist film poster stenberg constructivism 2. movie posters movie posters constructivist film poster pack_26 covers, posters & characters movie-posters covers-posters-and-characters movie-posters constructivist-film-poster"
+    },
+    {
+      "id": "SP26-033",
+      "name": "Nineties Floating-Heads Photo Poster",
+      "styleAnchors": [
+        "Nineties Floating-Heads Photo Poster",
+        "film poster design",
+        "Floating heads"
+      ],
+      "ref": "pack_26/SP26-033.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "movie-posters",
+      "categoryName": "2. Movie Posters",
+      "domain": "film poster design",
+      "tags": ["covers-posters-and-characters", "movie-posters", "film-poster-design"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-033 nineties floating-heads photo poster film poster design floating heads 2. movie posters movie posters film poster design pack_26 covers, posters & characters movie-posters covers-posters-and-characters movie-posters film-poster-design"
+    },
+    {
+      "id": "SP26-034",
+      "name": "A24 Minimal Photo Poster",
+      "styleAnchors": ["A24 Minimal Photo Poster", "indie film poster design", "A24 minimal"],
+      "ref": "pack_26/SP26-034.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "movie-posters",
+      "categoryName": "2. Movie Posters",
+      "domain": "indie film poster design",
+      "tags": ["covers-posters-and-characters", "movie-posters", "indie-film-poster-design"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-034 a24 minimal photo poster indie film poster design a24 minimal 2. movie posters movie posters indie film poster design pack_26 covers, posters & characters movie-posters covers-posters-and-characters movie-posters indie-film-poster-design"
+    },
+    {
+      "id": "SP26-035",
+      "name": "Blaxploitation Painted Poster",
+      "styleAnchors": [
+        "Blaxploitation Painted Poster",
+        "seventies film poster painting",
+        "Blaxploitation swagger"
+      ],
+      "ref": "pack_26/SP26-035.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "movie-posters",
+      "categoryName": "2. Movie Posters",
+      "domain": "seventies film poster painting",
+      "tags": ["covers-posters-and-characters", "movie-posters", "seventies-film-poster-painting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-035 blaxploitation painted poster seventies film poster painting blaxploitation swagger 2. movie posters movie posters seventies film poster painting pack_26 covers, posters & characters movie-posters covers-posters-and-characters movie-posters seventies-film-poster-painting"
+    },
+    {
+      "id": "SP26-036",
+      "name": "Shaw Brothers Kung Fu Poster",
+      "styleAnchors": [
+        "Shaw Brothers Kung Fu Poster",
+        "Hong Kong film poster",
+        "Shaw Brothers kicks"
+      ],
+      "ref": "pack_26/SP26-036.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "movie-posters",
+      "categoryName": "2. Movie Posters",
+      "domain": "Hong Kong film poster",
+      "tags": ["covers-posters-and-characters", "movie-posters", "hong-kong-film-poster"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-036 shaw brothers kung fu poster hong kong film poster shaw brothers kicks 2. movie posters movie posters hong kong film poster pack_26 covers, posters & characters movie-posters covers-posters-and-characters movie-posters hong-kong-film-poster"
+    },
+    {
+      "id": "SP26-037",
+      "name": "Czech Surrealist Film Poster",
+      "styleAnchors": [
+        "Czech Surrealist Film Poster",
+        "Czech film poster",
+        "Czech surreal collage"
+      ],
+      "ref": "pack_26/SP26-037.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "movie-posters",
+      "categoryName": "2. Movie Posters",
+      "domain": "Czech film poster",
+      "tags": ["covers-posters-and-characters", "movie-posters", "czech-film-poster"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-037 czech surrealist film poster czech film poster czech surreal collage 2. movie posters movie posters czech film poster pack_26 covers, posters & characters movie-posters covers-posters-and-characters movie-posters czech-film-poster"
+    },
+    {
+      "id": "SP26-038",
+      "name": "Cuban ICAIC Silkscreen Film Poster",
+      "styleAnchors": [
+        "Cuban ICAIC Silkscreen Film Poster",
+        "Cuban film poster",
+        "ICAIC silkscreen"
+      ],
+      "ref": "pack_26/SP26-038.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "movie-posters",
+      "categoryName": "2. Movie Posters",
+      "domain": "Cuban film poster",
+      "tags": ["covers-posters-and-characters", "movie-posters", "cuban-film-poster"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-038 cuban icaic silkscreen film poster cuban film poster icaic silkscreen 2. movie posters movie posters cuban film poster pack_26 covers, posters & characters movie-posters covers-posters-and-characters movie-posters cuban-film-poster"
+    },
+    {
+      "id": "SP26-039",
+      "name": "Richard Amsel - Painted Portrait Collage Poster",
+      "styleAnchors": [
+        "Richard Amsel - Painted Portrait Collage Poster",
+        "film poster painting",
+        "Amsel portraits"
+      ],
+      "ref": "pack_26/SP26-039.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "movie-posters",
+      "categoryName": "2. Movie Posters",
+      "domain": "film poster painting",
+      "tags": ["covers-posters-and-characters", "movie-posters", "film-poster-painting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-039 richard amsel - painted portrait collage poster film poster painting amsel portraits 2. movie posters movie posters film poster painting pack_26 covers, posters & characters movie-posters covers-posters-and-characters movie-posters film-poster-painting"
+    },
+    {
+      "id": "SP26-040",
+      "name": "Reynold Brown - Fifties Sci-Fi B-Movie Poster",
+      "styleAnchors": [
+        "Reynold Brown - Fifties Sci-Fi B-Movie Poster",
+        "fifties film poster painting",
+        "Reynold Brown giant menace"
+      ],
+      "ref": "pack_26/SP26-040.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "movie-posters",
+      "categoryName": "2. Movie Posters",
+      "domain": "fifties film poster painting",
+      "tags": ["covers-posters-and-characters", "movie-posters", "fifties-film-poster-painting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-040 reynold brown - fifties sci-fi b-movie poster fifties film poster painting reynold brown giant menace 2. movie posters movie posters fifties film poster painting pack_26 covers, posters & characters movie-posters covers-posters-and-characters movie-posters fifties-film-poster-painting"
+    },
+    {
+      "id": "SP26-041",
+      "name": "Tadanori Yokoo - Japanese Pop Theater Poster",
+      "styleAnchors": [
+        "Tadanori Yokoo - Japanese Pop Theater Poster",
+        "Japanese pop poster",
+        "Yokoo rising-sun rays"
+      ],
+      "ref": "pack_26/SP26-041.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "movie-posters",
+      "categoryName": "2. Movie Posters",
+      "domain": "Japanese pop poster",
+      "tags": ["covers-posters-and-characters", "movie-posters", "japanese-pop-poster"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-041 tadanori yokoo - japanese pop theater poster japanese pop poster yokoo rising-sun rays 2. movie posters movie posters japanese pop poster pack_26 covers, posters & characters movie-posters covers-posters-and-characters movie-posters japanese-pop-poster"
+    },
+    {
+      "id": "SP26-042",
+      "name": "Enzo Sciotti - Italian Giallo Poster",
+      "styleAnchors": [
+        "Enzo Sciotti - Italian Giallo Poster",
+        "Italian horror poster painting",
+        "Sciotti giallo"
+      ],
+      "ref": "pack_26/SP26-042.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "movie-posters",
+      "categoryName": "2. Movie Posters",
+      "domain": "Italian horror poster painting",
+      "tags": ["covers-posters-and-characters", "movie-posters", "italian-horror-poster-painting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-042 enzo sciotti - italian giallo poster italian horror poster painting sciotti giallo 2. movie posters movie posters italian horror poster painting pack_26 covers, posters & characters movie-posters covers-posters-and-characters movie-posters italian-horror-poster-painting"
+    },
+    {
+      "id": "SP26-043",
+      "name": "Hong Kong Nineties Action Poster",
+      "styleAnchors": [
+        "Hong Kong Nineties Action Poster",
+        "Hong Kong film poster",
+        "HK nineties montage"
+      ],
+      "ref": "pack_26/SP26-043.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "movie-posters",
+      "categoryName": "2. Movie Posters",
+      "domain": "Hong Kong film poster",
+      "tags": ["covers-posters-and-characters", "movie-posters", "hong-kong-film-poster"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-043 hong kong nineties action poster hong kong film poster hk nineties montage 2. movie posters movie posters hong kong film poster pack_26 covers, posters & characters movie-posters covers-posters-and-characters movie-posters hong-kong-film-poster"
+    },
+    {
+      "id": "SP26-044",
+      "name": "Criterion Collection Art-Directed Cover",
+      "styleAnchors": [
+        "Criterion Collection Art-Directed Cover",
+        "art house film cover design",
+        "Criterion conceptual art"
+      ],
+      "ref": "pack_26/SP26-044.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "movie-posters",
+      "categoryName": "2. Movie Posters",
+      "domain": "art house film cover design",
+      "tags": ["covers-posters-and-characters", "movie-posters", "art-house-film-cover-design"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-044 criterion collection art-directed cover art house film cover design criterion conceptual art 2. movie posters movie posters art house film cover design pack_26 covers, posters & characters movie-posters covers-posters-and-characters movie-posters art-house-film-cover-design"
+    },
+    {
+      "id": "SP26-045",
+      "name": "Weekly Shonen Jump Tankobon Cover",
+      "styleAnchors": ["Weekly Shonen Jump Tankobon Cover", "manga volume cover", "Jump tankobon"],
+      "ref": "pack_26/SP26-045.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "manga-covers",
+      "categoryName": "3. Manga Covers",
+      "domain": "manga volume cover",
+      "tags": ["covers-posters-and-characters", "manga-covers", "manga-volume-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-045 weekly shonen jump tankobon cover manga volume cover jump tankobon 3. manga covers manga covers manga volume cover pack_26 covers, posters & characters manga-covers covers-posters-and-characters manga-covers manga-volume-cover"
+    },
+    {
+      "id": "SP26-046",
+      "name": "Ribon Nineties Shojo Magazine Cover",
+      "styleAnchors": [
+        "Ribon Nineties Shojo Magazine Cover",
+        "shojo magazine cover",
+        "Ribon shojo cover"
+      ],
+      "ref": "pack_26/SP26-046.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "manga-covers",
+      "categoryName": "3. Manga Covers",
+      "domain": "shojo magazine cover",
+      "tags": ["covers-posters-and-characters", "manga-covers", "shojo-magazine-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-046 ribon nineties shojo magazine cover shojo magazine cover ribon shojo cover 3. manga covers manga covers shojo magazine cover pack_26 covers, posters & characters manga-covers covers-posters-and-characters manga-covers shojo-magazine-cover"
+    },
+    {
+      "id": "SP26-047",
+      "name": "Garo Alternative Magazine Cover",
+      "styleAnchors": [
+        "Garo Alternative Magazine Cover",
+        "alternative manga magazine cover",
+        "Garo raw ink"
+      ],
+      "ref": "pack_26/SP26-047.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "manga-covers",
+      "categoryName": "3. Manga Covers",
+      "domain": "alternative manga magazine cover",
+      "tags": ["covers-posters-and-characters", "manga-covers", "alternative-manga-magazine-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-047 garo alternative magazine cover alternative manga magazine cover garo raw ink 3. manga covers manga covers alternative manga magazine cover pack_26 covers, posters & characters manga-covers covers-posters-and-characters manga-covers alternative-manga-magazine-cover"
+    },
+    {
+      "id": "SP26-048",
+      "name": "Hitoshi Ashinano - Watercolor Seinen Volume Cover",
+      "styleAnchors": [
+        "Hitoshi Ashinano - Watercolor Seinen Volume Cover",
+        "seinen volume cover",
+        "Ashinano watercolor"
+      ],
+      "ref": "pack_26/SP26-048.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "manga-covers",
+      "categoryName": "3. Manga Covers",
+      "domain": "seinen volume cover",
+      "tags": ["covers-posters-and-characters", "manga-covers", "seinen-volume-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-048 hitoshi ashinano - watercolor seinen volume cover seinen volume cover ashinano watercolor 3. manga covers manga covers seinen volume cover pack_26 covers, posters & characters manga-covers covers-posters-and-characters manga-covers seinen-volume-cover"
+    },
+    {
+      "id": "SP26-049",
+      "name": "Kashihon Sixties Rental Manga Cover",
+      "styleAnchors": [
+        "Kashihon Sixties Rental Manga Cover",
+        "rental manga cover",
+        "Kashihon pulp"
+      ],
+      "ref": "pack_26/SP26-049.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "manga-covers",
+      "categoryName": "3. Manga Covers",
+      "domain": "rental manga cover",
+      "tags": ["covers-posters-and-characters", "manga-covers", "rental-manga-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-049 kashihon sixties rental manga cover rental manga cover kashihon pulp 3. manga covers manga covers rental manga cover pack_26 covers, posters & characters manga-covers covers-posters-and-characters manga-covers rental-manga-cover"
+    },
+    {
+      "id": "SP26-050",
+      "name": "Kadokawa Light Novel Cover",
+      "styleAnchors": ["Kadokawa Light Novel Cover", "light novel cover", "Light novel gloss"],
+      "ref": "pack_26/SP26-050.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "manga-covers",
+      "categoryName": "3. Manga Covers",
+      "domain": "light novel cover",
+      "tags": ["covers-posters-and-characters", "manga-covers", "light-novel-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-050 kadokawa light novel cover light novel cover light novel gloss 3. manga covers manga covers light novel cover pack_26 covers, posters & characters manga-covers covers-posters-and-characters manga-covers light-novel-cover"
+    },
+    {
+      "id": "SP26-051",
+      "name": "Posuka Demizu - Painterly Picture-Book Manga Cover",
+      "styleAnchors": [
+        "Posuka Demizu - Painterly Picture-Book Manga Cover",
+        "manga cover illustration",
+        "Posuka Demizu lush paint"
+      ],
+      "ref": "pack_26/SP26-051.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "manga-covers",
+      "categoryName": "3. Manga Covers",
+      "domain": "manga cover illustration",
+      "tags": ["covers-posters-and-characters", "manga-covers", "manga-cover-illustration"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-051 posuka demizu - painterly picture-book manga cover manga cover illustration posuka demizu lush paint 3. manga covers manga covers manga cover illustration pack_26 covers, posters & characters manga-covers covers-posters-and-characters manga-covers manga-cover-illustration"
+    },
+    {
+      "id": "SP26-052",
+      "name": "Paru Itagaki - Sketchy Ink Volume Cover",
+      "styleAnchors": [
+        "Paru Itagaki - Sketchy Ink Volume Cover",
+        "manga volume cover",
+        "Paru Itagaki sketchy ink"
+      ],
+      "ref": "pack_26/SP26-052.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "manga-covers",
+      "categoryName": "3. Manga Covers",
+      "domain": "manga volume cover",
+      "tags": ["covers-posters-and-characters", "manga-covers", "manga-volume-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-052 paru itagaki - sketchy ink volume cover manga volume cover paru itagaki sketchy ink 3. manga covers manga covers manga volume cover pack_26 covers, posters & characters manga-covers covers-posters-and-characters manga-covers manga-volume-cover"
+    },
+    {
+      "id": "SP26-053",
+      "name": "Seventies Shonen Magazine Pop Cover",
+      "styleAnchors": [
+        "Seventies Shonen Magazine Pop Cover",
+        "manga magazine cover",
+        "Seventies magazine pop"
+      ],
+      "ref": "pack_26/SP26-053.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "manga-covers",
+      "categoryName": "3. Manga Covers",
+      "domain": "manga magazine cover",
+      "tags": ["covers-posters-and-characters", "manga-covers", "manga-magazine-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-053 seventies shonen magazine pop cover manga magazine cover seventies magazine pop 3. manga covers manga covers manga magazine cover pack_26 covers, posters & characters manga-covers covers-posters-and-characters manga-covers manga-magazine-cover"
+    },
+    {
+      "id": "SP26-054",
+      "name": "Doujinshi Convention Booklet Cover",
+      "styleAnchors": [
+        "Doujinshi Convention Booklet Cover",
+        "fan booklet cover",
+        "Doujinshi spot colors"
+      ],
+      "ref": "pack_26/SP26-054.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "manga-covers",
+      "categoryName": "3. Manga Covers",
+      "domain": "fan booklet cover",
+      "tags": ["covers-posters-and-characters", "manga-covers", "fan-booklet-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-054 doujinshi convention booklet cover fan booklet cover doujinshi spot colors 3. manga covers manga covers fan booklet cover pack_26 covers, posters & characters manga-covers covers-posters-and-characters manga-covers fan-booklet-cover"
+    },
+    {
+      "id": "SP26-055",
+      "name": "Kanzenban Deluxe Foil Cover",
+      "styleAnchors": [
+        "Kanzenban Deluxe Foil Cover",
+        "deluxe manga edition cover",
+        "Kanzenban foil"
+      ],
+      "ref": "pack_26/SP26-055.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "manga-covers",
+      "categoryName": "3. Manga Covers",
+      "domain": "deluxe manga edition cover",
+      "tags": ["covers-posters-and-characters", "manga-covers", "deluxe-manga-edition-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-055 kanzenban deluxe foil cover deluxe manga edition cover kanzenban foil 3. manga covers manga covers deluxe manga edition cover pack_26 covers, posters & characters manga-covers covers-posters-and-characters manga-covers deluxe-manga-edition-cover"
+    },
+    {
+      "id": "SP26-056",
+      "name": "Manga Artbook Gashu Cover",
+      "styleAnchors": ["Manga Artbook Gashu Cover", "manga artbook cover", "Gashu full-bleed"],
+      "ref": "pack_26/SP26-056.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "manga-covers",
+      "categoryName": "3. Manga Covers",
+      "domain": "manga artbook cover",
+      "tags": ["covers-posters-and-characters", "manga-covers", "manga-artbook-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-056 manga artbook gashu cover manga artbook cover gashu full-bleed 3. manga covers manga covers manga artbook cover pack_26 covers, posters & characters manga-covers covers-posters-and-characters manga-covers manga-artbook-cover"
+    },
+    {
+      "id": "SP26-057",
+      "name": "Yonkoma Collection Cover",
+      "styleAnchors": ["Yonkoma Collection Cover", "four-panel manga cover", "Yonkoma chibi"],
+      "ref": "pack_26/SP26-057.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "manga-covers",
+      "categoryName": "3. Manga Covers",
+      "domain": "four-panel manga cover",
+      "tags": ["covers-posters-and-characters", "manga-covers", "four-panel-manga-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-057 yonkoma collection cover four-panel manga cover yonkoma chibi 3. manga covers manga covers four-panel manga cover pack_26 covers, posters & characters manga-covers covers-posters-and-characters manga-covers four-panel-manga-cover"
+    },
+    {
+      "id": "SP26-058",
+      "name": "Eighties Horror Pocket Manga Cover",
+      "styleAnchors": [
+        "Eighties Horror Pocket Manga Cover",
+        "horror manga cover",
+        "Horror pocket manga"
+      ],
+      "ref": "pack_26/SP26-058.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "manga-covers",
+      "categoryName": "3. Manga Covers",
+      "domain": "horror manga cover",
+      "tags": ["covers-posters-and-characters", "manga-covers", "horror-manga-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-058 eighties horror pocket manga cover horror manga cover horror pocket manga 3. manga covers manga covers horror manga cover pack_26 covers, posters & characters manga-covers covers-posters-and-characters manga-covers horror-manga-cover"
+    },
+    {
+      "id": "SP26-059",
+      "name": "Webtoon Vertical Cover Thumbnail",
+      "styleAnchors": ["Webtoon Vertical Cover Thumbnail", "webtoon cover", "Webtoon vertical"],
+      "ref": "pack_26/SP26-059.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "manga-covers",
+      "categoryName": "3. Manga Covers",
+      "domain": "webtoon cover",
+      "tags": ["covers-posters-and-characters", "manga-covers", "webtoon-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-059 webtoon vertical cover thumbnail webtoon cover webtoon vertical 3. manga covers manga covers webtoon cover pack_26 covers, posters & characters manga-covers covers-posters-and-characters manga-covers webtoon-cover"
+    },
+    {
+      "id": "SP26-060",
+      "name": "Josei Magazine Minimal Cover",
+      "styleAnchors": ["Josei Magazine Minimal Cover", "josei magazine cover", "Josei minimal"],
+      "ref": "pack_26/SP26-060.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "manga-covers",
+      "categoryName": "3. Manga Covers",
+      "domain": "josei magazine cover",
+      "tags": ["covers-posters-and-characters", "manga-covers", "josei-magazine-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-060 josei magazine minimal cover josei magazine cover josei minimal 3. manga covers manga covers josei magazine cover pack_26 covers, posters & characters manga-covers covers-posters-and-characters manga-covers josei-magazine-cover"
+    },
+    {
+      "id": "SP26-061",
+      "name": "Sports Manga Volume Cover",
+      "styleAnchors": ["Sports Manga Volume Cover", "sports manga cover", "Sports manga"],
+      "ref": "pack_26/SP26-061.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "manga-covers",
+      "categoryName": "3. Manga Covers",
+      "domain": "sports manga cover",
+      "tags": ["covers-posters-and-characters", "manga-covers", "sports-manga-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-061 sports manga volume cover sports manga cover sports manga 3. manga covers manga covers sports manga cover pack_26 covers, posters & characters manga-covers covers-posters-and-characters manga-covers sports-manga-cover"
+    },
+    {
+      "id": "SP26-062",
+      "name": "Osamu Tezuka Complete Works Cover",
+      "styleAnchors": [
+        "Osamu Tezuka Complete Works Cover",
+        "retro manga series cover",
+        "Tezuka zenshu"
+      ],
+      "ref": "pack_26/SP26-062.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "manga-covers",
+      "categoryName": "3. Manga Covers",
+      "domain": "retro manga series cover",
+      "tags": ["covers-posters-and-characters", "manga-covers", "retro-manga-series-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-062 osamu tezuka complete works cover retro manga series cover tezuka zenshu 3. manga covers manga covers retro manga series cover pack_26 covers, posters & characters manga-covers covers-posters-and-characters manga-covers retro-manga-series-cover"
+    },
+    {
+      "id": "SP26-063",
+      "name": "Nineties Young Magazine Seinen Cover",
+      "styleAnchors": [
+        "Nineties Young Magazine Seinen Cover",
+        "seinen magazine cover",
+        "Seinen street attitude"
+      ],
+      "ref": "pack_26/SP26-063.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "manga-covers",
+      "categoryName": "3. Manga Covers",
+      "domain": "seinen magazine cover",
+      "tags": ["covers-posters-and-characters", "manga-covers", "seinen-magazine-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-063 nineties young magazine seinen cover seinen magazine cover seinen street attitude 3. manga covers manga covers seinen magazine cover pack_26 covers, posters & characters manga-covers covers-posters-and-characters manga-covers seinen-magazine-cover"
+    },
+    {
+      "id": "SP26-064",
+      "name": "CoroCoro Kids Comic Cover",
+      "styleAnchors": [
+        "CoroCoro Kids Comic Cover",
+        "kids manga magazine cover",
+        "CoroCoro loud cover"
+      ],
+      "ref": "pack_26/SP26-064.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "manga-covers",
+      "categoryName": "3. Manga Covers",
+      "domain": "kids manga magazine cover",
+      "tags": ["covers-posters-and-characters", "manga-covers", "kids-manga-magazine-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-064 corocoro kids comic cover kids manga magazine cover corocoro loud cover 3. manga covers manga covers kids manga magazine cover pack_26 covers, posters & characters manga-covers covers-posters-and-characters manga-covers kids-manga-magazine-cover"
+    },
+    {
+      "id": "SP26-065",
+      "name": "Space Opera Seventies Manga Cover",
+      "styleAnchors": [
+        "Space Opera Seventies Manga Cover",
+        "retro sci-fi manga cover",
+        "Seventies space opera"
+      ],
+      "ref": "pack_26/SP26-065.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "manga-covers",
+      "categoryName": "3. Manga Covers",
+      "domain": "retro sci-fi manga cover",
+      "tags": ["covers-posters-and-characters", "manga-covers", "retro-sci-fi-manga-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-065 space opera seventies manga cover retro sci-fi manga cover seventies space opera 3. manga covers manga covers retro sci-fi manga cover pack_26 covers, posters & characters manga-covers covers-posters-and-characters manga-covers retro-sci-fi-manga-cover"
+    },
+    {
+      "id": "SP26-066",
+      "name": "Cooking Manga Volume Cover",
+      "styleAnchors": ["Cooking Manga Volume Cover", "food manga cover", "Cooking manga"],
+      "ref": "pack_26/SP26-066.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "manga-covers",
+      "categoryName": "3. Manga Covers",
+      "domain": "food manga cover",
+      "tags": ["covers-posters-and-characters", "manga-covers", "food-manga-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-066 cooking manga volume cover food manga cover cooking manga 3. manga covers manga covers food manga cover pack_26 covers, posters & characters manga-covers covers-posters-and-characters manga-covers food-manga-cover"
+    },
+    {
+      "id": "SP26-067",
+      "name": "Penguin Tricolour Paperback Cover",
+      "styleAnchors": [
+        "Penguin Tricolour Paperback Cover",
+        "paperback cover design",
+        "Penguin three bands"
+      ],
+      "ref": "pack_26/SP26-067.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "book-covers",
+      "categoryName": "4. Book Covers",
+      "domain": "paperback cover design",
+      "tags": ["covers-posters-and-characters", "book-covers", "paperback-cover-design"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-067 penguin tricolour paperback cover paperback cover design penguin three bands 4. book covers book covers paperback cover design pack_26 covers, posters & characters book-covers covers-posters-and-characters book-covers paperback-cover-design"
+    },
+    {
+      "id": "SP26-068",
+      "name": "Germano Facetti - Penguin Modern Photo Grid Cover",
+      "styleAnchors": [
+        "Germano Facetti - Penguin Modern Photo Grid Cover",
+        "paperback cover design",
+        "Facetti grid"
+      ],
+      "ref": "pack_26/SP26-068.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "book-covers",
+      "categoryName": "4. Book Covers",
+      "domain": "paperback cover design",
+      "tags": ["covers-posters-and-characters", "book-covers", "paperback-cover-design"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-068 germano facetti - penguin modern photo grid cover paperback cover design facetti grid 4. book covers book covers paperback cover design pack_26 covers, posters & characters book-covers covers-posters-and-characters book-covers paperback-cover-design"
+    },
+    {
+      "id": "SP26-069",
+      "name": "Chris Foss - Seventies SF Paperback Spaceships",
+      "styleAnchors": [
+        "Chris Foss - Seventies SF Paperback Spaceships",
+        "science fiction paperback art",
+        "Chris Foss striped ships"
+      ],
+      "ref": "pack_26/SP26-069.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "book-covers",
+      "categoryName": "4. Book Covers",
+      "domain": "science fiction paperback art",
+      "tags": ["covers-posters-and-characters", "book-covers", "science-fiction-paperback-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-069 chris foss - seventies sf paperback spaceships science fiction paperback art chris foss striped ships 4. book covers book covers science fiction paperback art pack_26 covers, posters & characters book-covers covers-posters-and-characters book-covers science-fiction-paperback-art"
+    },
+    {
+      "id": "SP26-070",
+      "name": "Frank Frazetta - Fantasy Paperback Painting",
+      "styleAnchors": [
+        "Frank Frazetta - Fantasy Paperback Painting",
+        "fantasy paperback painting",
+        "Frazetta muscular figures"
+      ],
+      "ref": "pack_26/SP26-070.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "book-covers",
+      "categoryName": "4. Book Covers",
+      "domain": "fantasy paperback painting",
+      "tags": ["covers-posters-and-characters", "book-covers", "fantasy-paperback-painting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-070 frank frazetta - fantasy paperback painting fantasy paperback painting frazetta muscular figures 4. book covers book covers fantasy paperback painting pack_26 covers, posters & characters book-covers covers-posters-and-characters book-covers fantasy-paperback-painting"
+    },
+    {
+      "id": "SP26-071",
+      "name": "Chip Kidd - Conceptual Jacket Design",
+      "styleAnchors": [
+        "Chip Kidd - Conceptual Jacket Design",
+        "book jacket design",
+        "Chip Kidd concept"
+      ],
+      "ref": "pack_26/SP26-071.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "book-covers",
+      "categoryName": "4. Book Covers",
+      "domain": "book jacket design",
+      "tags": ["covers-posters-and-characters", "book-covers", "book-jacket-design"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-071 chip kidd - conceptual jacket design book jacket design chip kidd concept 4. book covers book covers book jacket design pack_26 covers, posters & characters book-covers covers-posters-and-characters book-covers book-jacket-design"
+    },
+    {
+      "id": "SP26-072",
+      "name": "Peter Mendelsund - Minimal Typographic Jacket",
+      "styleAnchors": [
+        "Peter Mendelsund - Minimal Typographic Jacket",
+        "book jacket design",
+        "Mendelsund type-as-image"
+      ],
+      "ref": "pack_26/SP26-072.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "book-covers",
+      "categoryName": "4. Book Covers",
+      "domain": "book jacket design",
+      "tags": ["covers-posters-and-characters", "book-covers", "book-jacket-design"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-072 peter mendelsund - minimal typographic jacket book jacket design mendelsund type-as-image 4. book covers book covers book jacket design pack_26 covers, posters & characters book-covers covers-posters-and-characters book-covers book-jacket-design"
+    },
+    {
+      "id": "SP26-073",
+      "name": "Folio Society Illustrated Edition",
+      "styleAnchors": [
+        "Folio Society Illustrated Edition",
+        "illustrated edition binding",
+        "Folio cloth binding"
+      ],
+      "ref": "pack_26/SP26-073.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "book-covers",
+      "categoryName": "4. Book Covers",
+      "domain": "illustrated edition binding",
+      "tags": ["covers-posters-and-characters", "book-covers", "illustrated-edition-binding"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-073 folio society illustrated edition illustrated edition binding folio cloth binding 4. book covers book covers illustrated edition binding pack_26 covers, posters & characters book-covers covers-posters-and-characters book-covers illustrated-edition-binding"
+    },
+    {
+      "id": "SP26-074",
+      "name": "Victorian Gilt Cloth Binding",
+      "styleAnchors": [
+        "Victorian Gilt Cloth Binding",
+        "Victorian book binding",
+        "Victorian gilt stamping"
+      ],
+      "ref": "pack_26/SP26-074.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "book-covers",
+      "categoryName": "4. Book Covers",
+      "domain": "Victorian book binding",
+      "tags": ["covers-posters-and-characters", "book-covers", "victorian-book-binding"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-074 victorian gilt cloth binding victorian book binding victorian gilt stamping 4. book covers book covers victorian book binding pack_26 covers, posters & characters book-covers covers-posters-and-characters book-covers victorian-book-binding"
+    },
+    {
+      "id": "SP26-075",
+      "name": "Robert McGinnis - Pulp Noir Paperback",
+      "styleAnchors": [
+        "Robert McGinnis - Pulp Noir Paperback",
+        "crime paperback painting",
+        "McGinnis long-limbed elegance"
+      ],
+      "ref": "pack_26/SP26-075.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "book-covers",
+      "categoryName": "4. Book Covers",
+      "domain": "crime paperback painting",
+      "tags": ["covers-posters-and-characters", "book-covers", "crime-paperback-painting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-075 robert mcginnis - pulp noir paperback crime paperback painting mcginnis long-limbed elegance 4. book covers book covers crime paperback painting pack_26 covers, posters & characters book-covers covers-posters-and-characters book-covers crime-paperback-painting"
+    },
+    {
+      "id": "SP26-076",
+      "name": "Seventies Gothic Romance Paperback",
+      "styleAnchors": [
+        "Seventies Gothic Romance Paperback",
+        "gothic romance paperback",
+        "Gothic romance"
+      ],
+      "ref": "pack_26/SP26-076.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "book-covers",
+      "categoryName": "4. Book Covers",
+      "domain": "gothic romance paperback",
+      "tags": ["covers-posters-and-characters", "book-covers", "gothic-romance-paperback"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-076 seventies gothic romance paperback gothic romance paperback gothic romance 4. book covers book covers gothic romance paperback pack_26 covers, posters & characters book-covers covers-posters-and-characters book-covers gothic-romance-paperback"
+    },
+    {
+      "id": "SP26-077",
+      "name": "Vladimir Lebedev - Soviet Children’s Book Cover",
+      "styleAnchors": [
+        "Vladimir Lebedev - Soviet Children’s Book Cover",
+        "children’s book cover",
+        "Lebedev flat shapes"
+      ],
+      "ref": "pack_26/SP26-077.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "book-covers",
+      "categoryName": "4. Book Covers",
+      "domain": "children’s book cover",
+      "tags": ["covers-posters-and-characters", "book-covers", "children-s-book-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-077 vladimir lebedev - soviet children’s book cover children’s book cover lebedev flat shapes 4. book covers book covers children’s book cover pack_26 covers, posters & characters book-covers covers-posters-and-characters book-covers children-s-book-cover"
+    },
+    {
+      "id": "SP26-078",
+      "name": "Edward Gorey - Gothic Crosshatched Cover",
+      "styleAnchors": [
+        "Edward Gorey - Gothic Crosshatched Cover",
+        "illustrated book cover",
+        "Gorey crosshatching"
+      ],
+      "ref": "pack_26/SP26-078.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "book-covers",
+      "categoryName": "4. Book Covers",
+      "domain": "illustrated book cover",
+      "tags": ["covers-posters-and-characters", "book-covers", "illustrated-book-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-078 edward gorey - gothic crosshatched cover illustrated book cover gorey crosshatching 4. book covers book covers illustrated book cover pack_26 covers, posters & characters book-covers covers-posters-and-characters book-covers illustrated-book-cover"
+    },
+    {
+      "id": "SP26-079",
+      "name": "Mary Blair - Mid-Century Children’s Book Cover",
+      "styleAnchors": [
+        "Mary Blair - Mid-Century Children’s Book Cover",
+        "children’s book illustration",
+        "Mary Blair flat shapes"
+      ],
+      "ref": "pack_26/SP26-079.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "book-covers",
+      "categoryName": "4. Book Covers",
+      "domain": "children’s book illustration",
+      "tags": ["covers-posters-and-characters", "book-covers", "children-s-book-illustration"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-079 mary blair - mid-century children’s book cover children’s book illustration mary blair flat shapes 4. book covers book covers children’s book illustration pack_26 covers, posters & characters book-covers covers-posters-and-characters book-covers children-s-book-illustration"
+    },
+    {
+      "id": "SP26-080",
+      "name": "Richard Powers - Surreal SF Paperback",
+      "styleAnchors": [
+        "Richard Powers - Surreal SF Paperback",
+        "science fiction paperback art",
+        "Richard Powers biomorphic abstraction"
+      ],
+      "ref": "pack_26/SP26-080.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "book-covers",
+      "categoryName": "4. Book Covers",
+      "domain": "science fiction paperback art",
+      "tags": ["covers-posters-and-characters", "book-covers", "science-fiction-paperback-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-080 richard powers - surreal sf paperback science fiction paperback art richard powers biomorphic abstraction 4. book covers book covers science fiction paperback art pack_26 covers, posters & characters book-covers covers-posters-and-characters book-covers science-fiction-paperback-art"
+    },
+    {
+      "id": "SP26-081",
+      "name": "Michael Whelan - Luminous Fantasy Cover",
+      "styleAnchors": [
+        "Michael Whelan - Luminous Fantasy Cover",
+        "fantasy book cover painting",
+        "Whelan luminosity"
+      ],
+      "ref": "pack_26/SP26-081.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "book-covers",
+      "categoryName": "4. Book Covers",
+      "domain": "fantasy book cover painting",
+      "tags": ["covers-posters-and-characters", "book-covers", "fantasy-book-cover-painting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-081 michael whelan - luminous fantasy cover fantasy book cover painting whelan luminosity 4. book covers book covers fantasy book cover painting pack_26 covers, posters & characters book-covers covers-posters-and-characters book-covers fantasy-book-cover-painting"
+    },
+    {
+      "id": "SP26-082",
+      "name": "Insel-Bücherei Patterned Paper Cover",
+      "styleAnchors": [
+        "Insel-Bücherei Patterned Paper Cover",
+        "German book design",
+        "Insel patterned paper"
+      ],
+      "ref": "pack_26/SP26-082.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "book-covers",
+      "categoryName": "4. Book Covers",
+      "domain": "German book design",
+      "tags": ["covers-posters-and-characters", "book-covers", "german-book-design"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-082 insel-bücherei patterned paper cover german book design insel patterned paper 4. book covers book covers german book design pack_26 covers, posters & characters book-covers covers-posters-and-characters book-covers german-book-design"
+    },
+    {
+      "id": "SP26-083",
+      "name": "Japanese Bunko Paperback Cover",
+      "styleAnchors": [
+        "Japanese Bunko Paperback Cover",
+        "Japanese paperback design",
+        "Bunko minimal"
+      ],
+      "ref": "pack_26/SP26-083.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "book-covers",
+      "categoryName": "4. Book Covers",
+      "domain": "Japanese paperback design",
+      "tags": ["covers-posters-and-characters", "book-covers", "japanese-paperback-design"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-083 japanese bunko paperback cover japanese paperback design bunko minimal 4. book covers book covers japanese paperback design pack_26 covers, posters & characters book-covers covers-posters-and-characters book-covers japanese-paperback-design"
+    },
+    {
+      "id": "SP26-084",
+      "name": "Harlequin Romance Clinch Cover",
+      "styleAnchors": [
+        "Harlequin Romance Clinch Cover",
+        "romance paperback painting",
+        "Romance clinch"
+      ],
+      "ref": "pack_26/SP26-084.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "book-covers",
+      "categoryName": "4. Book Covers",
+      "domain": "romance paperback painting",
+      "tags": ["covers-posters-and-characters", "book-covers", "romance-paperback-painting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-084 harlequin romance clinch cover romance paperback painting romance clinch 4. book covers book covers romance paperback painting pack_26 covers, posters & characters book-covers covers-posters-and-characters book-covers romance-paperback-painting"
+    },
+    {
+      "id": "SP26-085",
+      "name": "Pan Horror Anthology Paperback",
+      "styleAnchors": ["Pan Horror Anthology Paperback", "horror paperback cover", "Pan horror"],
+      "ref": "pack_26/SP26-085.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "book-covers",
+      "categoryName": "4. Book Covers",
+      "domain": "horror paperback cover",
+      "tags": ["covers-posters-and-characters", "book-covers", "horror-paperback-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-085 pan horror anthology paperback horror paperback cover pan horror 4. book covers book covers horror paperback cover pack_26 covers, posters & characters book-covers covers-posters-and-characters book-covers horror-paperback-cover"
+    },
+    {
+      "id": "SP26-086",
+      "name": "Tim Jacobus - Nineties YA Horror Cover",
+      "styleAnchors": [
+        "Tim Jacobus - Nineties YA Horror Cover",
+        "YA horror cover painting",
+        "Jacobus neon monsters"
+      ],
+      "ref": "pack_26/SP26-086.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "book-covers",
+      "categoryName": "4. Book Covers",
+      "domain": "YA horror cover painting",
+      "tags": ["covers-posters-and-characters", "book-covers", "ya-horror-cover-painting"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-086 tim jacobus - nineties ya horror cover ya horror cover painting jacobus neon monsters 4. book covers book covers ya horror cover painting pack_26 covers, posters & characters book-covers covers-posters-and-characters book-covers ya-horror-cover-painting"
+    },
+    {
+      "id": "SP26-087",
+      "name": "Golden Age Superhero Comic Cover",
+      "styleAnchors": [
+        "Golden Age Superhero Comic Cover",
+        "forties comic cover",
+        "Golden Age flat primaries"
+      ],
+      "ref": "pack_26/SP26-087.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-covers",
+      "categoryName": "5. Comic Covers",
+      "domain": "forties comic cover",
+      "tags": ["covers-posters-and-characters", "comic-covers", "forties-comic-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-087 golden age superhero comic cover forties comic cover golden age flat primaries 5. comic covers comic covers forties comic cover pack_26 covers, posters & characters comic-covers covers-posters-and-characters comic-covers forties-comic-cover"
+    },
+    {
+      "id": "SP26-088",
+      "name": "Jack Kirby - Cosmic Kirby Crackle Cover",
+      "styleAnchors": [
+        "Jack Kirby - Cosmic Kirby Crackle Cover",
+        "comic cover art",
+        "Kirby crackle"
+      ],
+      "ref": "pack_26/SP26-088.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-covers",
+      "categoryName": "5. Comic Covers",
+      "domain": "comic cover art",
+      "tags": ["covers-posters-and-characters", "comic-covers", "comic-cover-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-088 jack kirby - cosmic kirby crackle cover comic cover art kirby crackle 5. comic covers comic covers comic cover art pack_26 covers, posters & characters comic-covers covers-posters-and-characters comic-covers comic-cover-art"
+    },
+    {
+      "id": "SP26-089",
+      "name": "Graham Ingels - EC Horror Comic Cover",
+      "styleAnchors": [
+        "Graham Ingels - EC Horror Comic Cover",
+        "fifties horror comic cover",
+        "EC horror"
+      ],
+      "ref": "pack_26/SP26-089.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-covers",
+      "categoryName": "5. Comic Covers",
+      "domain": "fifties horror comic cover",
+      "tags": ["covers-posters-and-characters", "comic-covers", "fifties-horror-comic-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-089 graham ingels - ec horror comic cover fifties horror comic cover ec horror 5. comic covers comic covers fifties horror comic cover pack_26 covers, posters & characters comic-covers covers-posters-and-characters comic-covers fifties-horror-comic-cover"
+    },
+    {
+      "id": "SP26-090",
+      "name": "Silver Age Romance Comic Cover",
+      "styleAnchors": [
+        "Silver Age Romance Comic Cover",
+        "sixties romance comic cover",
+        "Romance comics"
+      ],
+      "ref": "pack_26/SP26-090.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-covers",
+      "categoryName": "5. Comic Covers",
+      "domain": "sixties romance comic cover",
+      "tags": ["covers-posters-and-characters", "comic-covers", "sixties-romance-comic-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-090 silver age romance comic cover sixties romance comic cover romance comics 5. comic covers comic covers sixties romance comic cover pack_26 covers, posters & characters comic-covers covers-posters-and-characters comic-covers sixties-romance-comic-cover"
+    },
+    {
+      "id": "SP26-091",
+      "name": "Frank Miller - Noir Silhouette Cover",
+      "styleAnchors": [
+        "Frank Miller - Noir Silhouette Cover",
+        "noir comic cover",
+        "Frank Miller silhouettes"
+      ],
+      "ref": "pack_26/SP26-091.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-covers",
+      "categoryName": "5. Comic Covers",
+      "domain": "noir comic cover",
+      "tags": ["covers-posters-and-characters", "comic-covers", "noir-comic-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-091 frank miller - noir silhouette cover noir comic cover frank miller silhouettes 5. comic covers comic covers noir comic cover pack_26 covers, posters & characters comic-covers covers-posters-and-characters comic-covers noir-comic-cover"
+    },
+    {
+      "id": "SP26-092",
+      "name": "Mike Mignola - Blocky Shadow Cover",
+      "styleAnchors": [
+        "Mike Mignola - Blocky Shadow Cover",
+        "comic cover art",
+        "Mignola black shadows"
+      ],
+      "ref": "pack_26/SP26-092.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-covers",
+      "categoryName": "5. Comic Covers",
+      "domain": "comic cover art",
+      "tags": ["covers-posters-and-characters", "comic-covers", "comic-cover-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-092 mike mignola - blocky shadow cover comic cover art mignola black shadows 5. comic covers comic covers comic cover art pack_26 covers, posters & characters comic-covers covers-posters-and-characters comic-covers comic-cover-art"
+    },
+    {
+      "id": "SP26-093",
+      "name": "Alex Ross - Painted Photoreal Hero Cover",
+      "styleAnchors": [
+        "Alex Ross - Painted Photoreal Hero Cover",
+        "painted comic cover",
+        "Alex Ross gouache realism"
+      ],
+      "ref": "pack_26/SP26-093.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-covers",
+      "categoryName": "5. Comic Covers",
+      "domain": "painted comic cover",
+      "tags": ["covers-posters-and-characters", "comic-covers", "painted-comic-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-093 alex ross - painted photoreal hero cover painted comic cover alex ross gouache realism 5. comic covers comic covers painted comic cover pack_26 covers, posters & characters comic-covers covers-posters-and-characters comic-covers painted-comic-cover"
+    },
+    {
+      "id": "SP26-094",
+      "name": "Bill Sienkiewicz - Mixed-Media Expressionist Cover",
+      "styleAnchors": [
+        "Bill Sienkiewicz - Mixed-Media Expressionist Cover",
+        "comic cover art",
+        "Sienkiewicz mixed media"
+      ],
+      "ref": "pack_26/SP26-094.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-covers",
+      "categoryName": "5. Comic Covers",
+      "domain": "comic cover art",
+      "tags": ["covers-posters-and-characters", "comic-covers", "comic-cover-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-094 bill sienkiewicz - mixed-media expressionist cover comic cover art sienkiewicz mixed media 5. comic covers comic covers comic cover art pack_26 covers, posters & characters comic-covers covers-posters-and-characters comic-covers comic-cover-art"
+    },
+    {
+      "id": "SP26-095",
+      "name": "Philippe Druillet - Métal Hurlant Cover",
+      "styleAnchors": [
+        "Philippe Druillet - Métal Hurlant Cover",
+        "French sci-fi comic cover",
+        "Druillet cosmic cathedrals"
+      ],
+      "ref": "pack_26/SP26-095.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-covers",
+      "categoryName": "5. Comic Covers",
+      "domain": "French sci-fi comic cover",
+      "tags": ["covers-posters-and-characters", "comic-covers", "french-sci-fi-comic-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-095 philippe druillet - métal hurlant cover french sci-fi comic cover druillet cosmic cathedrals 5. comic covers comic covers french sci-fi comic cover pack_26 covers, posters & characters comic-covers covers-posters-and-characters comic-covers french-sci-fi-comic-cover"
+    },
+    {
+      "id": "SP26-096",
+      "name": "2000 AD British Sci-Fi Comic Cover",
+      "styleAnchors": [
+        "2000 AD British Sci-Fi Comic Cover",
+        "British sci-fi comic cover",
+        "2000 AD dystopia"
+      ],
+      "ref": "pack_26/SP26-096.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-covers",
+      "categoryName": "5. Comic Covers",
+      "domain": "British sci-fi comic cover",
+      "tags": ["covers-posters-and-characters", "comic-covers", "british-sci-fi-comic-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-096 2000 ad british sci-fi comic cover british sci-fi comic cover 2000 ad dystopia 5. comic covers comic covers british sci-fi comic cover pack_26 covers, posters & characters comic-covers covers-posters-and-characters comic-covers british-sci-fi-comic-cover"
+    },
+    {
+      "id": "SP26-097",
+      "name": "Nineties Image Extreme Foil Cover",
+      "styleAnchors": [
+        "Nineties Image Extreme Foil Cover",
+        "nineties comic cover",
+        "Nineties extreme"
+      ],
+      "ref": "pack_26/SP26-097.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-covers",
+      "categoryName": "5. Comic Covers",
+      "domain": "nineties comic cover",
+      "tags": ["covers-posters-and-characters", "comic-covers", "nineties-comic-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-097 nineties image extreme foil cover nineties comic cover nineties extreme 5. comic covers comic covers nineties comic cover pack_26 covers, posters & characters comic-covers covers-posters-and-characters comic-covers nineties-comic-cover"
+    },
+    {
+      "id": "SP26-098",
+      "name": "André Franquin - Franco-Belgian Humor Album Cover",
+      "styleAnchors": [
+        "André Franquin - Franco-Belgian Humor Album Cover",
+        "bande dessinée album cover",
+        "Franquin rubbery line"
+      ],
+      "ref": "pack_26/SP26-098.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-covers",
+      "categoryName": "5. Comic Covers",
+      "domain": "bande dessinée album cover",
+      "tags": ["covers-posters-and-characters", "comic-covers", "bande-dessin-e-album-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-098 andré franquin - franco-belgian humor album cover bande dessinée album cover franquin rubbery line 5. comic covers comic covers bande dessinée album cover pack_26 covers, posters & characters comic-covers covers-posters-and-characters comic-covers bande-dessin-e-album-cover"
+    },
+    {
+      "id": "SP26-099",
+      "name": "Dylan Dog Bonelli Fumetti Cover",
+      "styleAnchors": [
+        "Dylan Dog Bonelli Fumetti Cover",
+        "Italian fumetti cover",
+        "Bonelli fumetti"
+      ],
+      "ref": "pack_26/SP26-099.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-covers",
+      "categoryName": "5. Comic Covers",
+      "domain": "Italian fumetti cover",
+      "tags": ["covers-posters-and-characters", "comic-covers", "italian-fumetti-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-099 dylan dog bonelli fumetti cover italian fumetti cover bonelli fumetti 5. comic covers comic covers italian fumetti cover pack_26 covers, posters & characters comic-covers covers-posters-and-characters comic-covers italian-fumetti-cover"
+    },
+    {
+      "id": "SP26-100",
+      "name": "Robert Crumb - Underground Comix Cover",
+      "styleAnchors": [
+        "Robert Crumb - Underground Comix Cover",
+        "underground comix cover",
+        "Crumb crosshatching"
+      ],
+      "ref": "pack_26/SP26-100.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-covers",
+      "categoryName": "5. Comic Covers",
+      "domain": "underground comix cover",
+      "tags": ["covers-posters-and-characters", "comic-covers", "underground-comix-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-100 robert crumb - underground comix cover underground comix cover crumb crosshatching 5. comic covers comic covers underground comix cover pack_26 covers, posters & characters comic-covers covers-posters-and-characters comic-covers underground-comix-cover"
+    },
+    {
+      "id": "SP26-101",
+      "name": "Chris Ware - Architectural Graphic Novel Cover",
+      "styleAnchors": [
+        "Chris Ware - Architectural Graphic Novel Cover",
+        "graphic novel cover design",
+        "Chris Ware diagrams"
+      ],
+      "ref": "pack_26/SP26-101.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-covers",
+      "categoryName": "5. Comic Covers",
+      "domain": "graphic novel cover design",
+      "tags": ["covers-posters-and-characters", "comic-covers", "graphic-novel-cover-design"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-101 chris ware - architectural graphic novel cover graphic novel cover design chris ware diagrams 5. comic covers comic covers graphic novel cover design pack_26 covers, posters & characters comic-covers covers-posters-and-characters comic-covers graphic-novel-cover-design"
+    },
+    {
+      "id": "SP26-102",
+      "name": "Dave McKean - Collage Mythic Cover",
+      "styleAnchors": ["Dave McKean - Collage Mythic Cover", "comic cover art", "McKean collage"],
+      "ref": "pack_26/SP26-102.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-covers",
+      "categoryName": "5. Comic Covers",
+      "domain": "comic cover art",
+      "tags": ["covers-posters-and-characters", "comic-covers", "comic-cover-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-102 dave mckean - collage mythic cover comic cover art mckean collage 5. comic covers comic covers comic cover art pack_26 covers, posters & characters comic-covers covers-posters-and-characters comic-covers comic-cover-art"
+    },
+    {
+      "id": "SP26-103",
+      "name": "Jim Steranko - Op-Art Spy Cover",
+      "styleAnchors": ["Jim Steranko - Op-Art Spy Cover", "sixties comic cover", "Steranko op-art"],
+      "ref": "pack_26/SP26-103.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-covers",
+      "categoryName": "5. Comic Covers",
+      "domain": "sixties comic cover",
+      "tags": ["covers-posters-and-characters", "comic-covers", "sixties-comic-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-103 jim steranko - op-art spy cover sixties comic cover steranko op-art 5. comic covers comic covers sixties comic cover pack_26 covers, posters & characters comic-covers covers-posters-and-characters comic-covers sixties-comic-cover"
+    },
+    {
+      "id": "SP26-104",
+      "name": "Bernie Wrightson - Bronze Age Horror Cover",
+      "styleAnchors": [
+        "Bernie Wrightson - Bronze Age Horror Cover",
+        "horror comic cover",
+        "Wrightson lush ink"
+      ],
+      "ref": "pack_26/SP26-104.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-covers",
+      "categoryName": "5. Comic Covers",
+      "domain": "horror comic cover",
+      "tags": ["covers-posters-and-characters", "comic-covers", "horror-comic-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-104 bernie wrightson - bronze age horror cover horror comic cover wrightson lush ink 5. comic covers comic covers horror comic cover pack_26 covers, posters & characters comic-covers covers-posters-and-characters comic-covers horror-comic-cover"
+    },
+    {
+      "id": "SP26-105",
+      "name": "Darwyn Cooke - Retro Modern Hero Cover",
+      "styleAnchors": [
+        "Darwyn Cooke - Retro Modern Hero Cover",
+        "comic cover art",
+        "Darwyn Cooke retro modern"
+      ],
+      "ref": "pack_26/SP26-105.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-covers",
+      "categoryName": "5. Comic Covers",
+      "domain": "comic cover art",
+      "tags": ["covers-posters-and-characters", "comic-covers", "comic-cover-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-105 darwyn cooke - retro modern hero cover comic cover art darwyn cooke retro modern 5. comic covers comic covers comic cover art pack_26 covers, posters & characters comic-covers covers-posters-and-characters comic-covers comic-cover-art"
+    },
+    {
+      "id": "SP26-106",
+      "name": "Mexican Historieta Pulp Cover",
+      "styleAnchors": ["Mexican Historieta Pulp Cover", "Mexican comic cover", "Historieta pulp"],
+      "ref": "pack_26/SP26-106.yaml",
+      "packId": "pack_26",
+      "packName": "Covers, Posters & Characters",
+      "categoryId": "comic-covers",
+      "categoryName": "5. Comic Covers",
+      "domain": "Mexican comic cover",
+      "tags": ["covers-posters-and-characters", "comic-covers", "mexican-comic-cover"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp26-106 mexican historieta pulp cover mexican comic cover historieta pulp 5. comic covers comic covers mexican comic cover pack_26 covers, posters & characters comic-covers covers-posters-and-characters comic-covers mexican-comic-cover"
+    }
+  ],
+  "totalPresetCount": 106
+}

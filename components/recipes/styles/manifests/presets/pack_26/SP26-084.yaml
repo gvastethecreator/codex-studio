@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP26-084
+packId: pack_26
+name: Harlequin Romance Clinch Cover
+styleAnchors:
+  - Harlequin Romance Clinch Cover
+  - romance paperback painting
+  - Romance clinch
+displayName: Harlequin Romance Clinch Cover
+category: 4. Book Covers
+domain: romance paperback painting
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - book-covers
+  - book-cover
+  - romance-clinch
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Classic romance paperback clinch cover look: painted passionate embrace, flowing hair and gowns, dramatic sunsets and lush glossy romance.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; paint the subject as a passionate painted embrace with flowing hair and sunsets. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Lush sunset pink, gold and rose, true to the Harlequin Romance Clinch Cover palette.
+  lighting_and_shadow: Glowing sunset backlight, lit the way Harlequin Romance Clinch Cover lights its scenes.
+  texture_and_material: Glossy painted paperback art, with the surface finish of Harlequin Romance Clinch Cover.
+  camera_and_composition: Close embrace composition, framed the way Harlequin Romance Clinch Cover composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with lush passionate romance.
+  rendering_and_quality: Glossy romance paperback painting, in the recognizable hand of Harlequin Romance Clinch Cover.
+  creative_brief: "Classic romance paperback clinch cover look: painted passionate embrace, flowing hair and gowns, dramatic sunsets and lush glossy romance. Carry it through Romance clinch, flowing hair, sunsets, lush paint. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Romance clinch; flowing hair; sunsets; lush paint
+avoidRules:
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: book-covers
+  categoryName: 4. Book Covers
+  domain: romance paperback painting
+  tags:
+    - curation-v2
+    - book-covers
+    - book-cover
+    - romance-clinch
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

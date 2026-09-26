@@ -1,0 +1,70 @@
+schemaVersion: 1
+id: SP26-088
+packId: pack_26
+name: Jack Kirby - Cosmic Kirby Crackle Cover
+styleAnchors:
+  - Jack Kirby - Cosmic Kirby Crackle Cover
+  - comic cover art
+  - Kirby crackle
+displayName: Jack Kirby - Cosmic Kirby Crackle Cover
+category: 5. Comic Covers
+domain: comic cover art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - comic-covers
+  - comic-cover
+  - kirby
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Jack Kirby cover look: blocky monumental heroes, cosmic energy drawn as black Kirby crackle dots, colossal machinery, foreshortened fists and explosive cosmic scale.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw the subject with blocky monumental anatomy, crackling cosmic energy and colossal machinery. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Bold cosmic reds, blues and yellows with black crackle.
+  lighting_and_shadow: Crackling cosmic energy light, lit the way Jack Kirby lights its scenes.
+  texture_and_material: Bold ink with Kirby dots and flat color.
+  camera_and_composition: Foreshortened explosive cosmic compositions, framed the way Jack Kirby composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with titanic cosmic awe.
+  rendering_and_quality: Monumental cosmic comic cover, in the recognizable hand of Jack Kirby.
+  creative_brief: "Jack Kirby cover look: blocky monumental heroes, cosmic energy drawn as black Kirby crackle dots, colossal machinery, foreshortened fists and explosive cosmic scale. Carry it through Kirby crackle, blocky heroes, cosmic machinery, foreshortening. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Kirby crackle; blocky heroes; cosmic machinery; foreshortening
+avoidRules:
+  - existing cosmic heroes
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing cosmic heroes, existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: comic-covers
+  categoryName: 5. Comic Covers
+  domain: comic cover art
+  tags:
+    - curation-v2
+    - comic-covers
+    - comic-cover
+    - kirby
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

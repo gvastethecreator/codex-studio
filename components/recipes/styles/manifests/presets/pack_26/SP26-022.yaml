@@ -1,0 +1,73 @@
+schemaVersion: 1
+id: SP26-022
+packId: pack_26
+name: Jorge R. Gutiérrez - Mexican Folk Cartoon Characters
+styleAnchors:
+  - Jorge R. Gutiérrez - Mexican Folk Cartoon Characters
+  - folk animation character design
+  - Gutiérrez folk toys
+displayName: Jorge R. Gutiérrez - Mexican Folk Cartoon Characters
+category: 1. Character Design
+domain: folk animation character design
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - character-design
+  - character-design
+  - gutierrez
+  - reference-title
+visualDna:
+  aesthetic: 'Jorge R. Gutiérrez character design look: Mexican folk art shapes, wooden-toy bodies, skull motifs, marigolds, bold patterns and festive exaggerated silhouettes.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; design characters like painted wooden folk toys with bold patterns, skull motifs and exaggerated silhouettes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Festive marigold orange, turquoise, magenta and black, true to the Jorge R. Gutiérrez palette.
+  lighting_and_shadow: Warm candlelit festival light, lit the way Jorge R. Gutiérrez lights its scenes.
+  texture_and_material: Painted wood grain and folk patterns, with the surface finish of Jorge R. Gutiérrez.
+  camera_and_composition: Festive character lineups, framed the way Jorge R. Gutiérrez composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with festive folkloric joy.
+  rendering_and_quality: Folk-art animation character design, in the recognizable hand of Jorge R. Gutiérrez.
+  creative_brief: "Jorge R. Gutiérrez character design look: Mexican folk art shapes, wooden-toy bodies, skull motifs, marigolds, bold patterns and festive exaggerated silhouettes. Carry it through Gutiérrez folk toys, skull motifs, marigolds, bold patterns. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Gutiérrez folk toys; skull motifs; marigolds; bold patterns
+avoidRules:
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: character-design
+  categoryName: 1. Character Design
+  domain: folk animation character design
+  tags:
+    - curation-v2
+    - character-design
+    - character-design
+    - gutierrez
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

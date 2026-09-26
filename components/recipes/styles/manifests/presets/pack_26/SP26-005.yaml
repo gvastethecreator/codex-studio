@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP26-005
+packId: pack_26
+name: Jamie Hewlett - Punk Cartoon Band Portrait
+styleAnchors:
+  - Jamie Hewlett - Punk Cartoon Band Portrait
+  - punk cartoon character design
+  - Hewlett scratchy ink
+displayName: Jamie Hewlett - Punk Cartoon Band Portrait
+category: 1. Character Design
+domain: punk cartoon character design
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - character-design
+  - character-design
+  - hewlett
+  - reference-title
+visualDna:
+  aesthetic: 'Jamie Hewlett character design look: scrappy punk cartoon characters with lanky bodies, scratchy ink, messy hair, bad teeth, graphic flat color and urban grime.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; design characters with lanky scruffy bodies, messy hair, bags under the eyes, crooked teeth and layered street clothes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Grimy flat color with punchy acid accents, true to the Jamie Hewlett palette.
+  lighting_and_shadow: Flat graphic light with scratchy shadows, lit the way Jamie Hewlett lights its scenes.
+  texture_and_material: Scratchy ink line and flat color, with the surface finish of Jamie Hewlett.
+  camera_and_composition: Band-portrait group lineup with attitude, framed the way Jamie Hewlett composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with scrappy punk attitude.
+  rendering_and_quality: Scrappy punk cartoon illustration, in the recognizable hand of Jamie Hewlett.
+  creative_brief: "Jamie Hewlett character design look: scrappy punk cartoon characters with lanky bodies, scratchy ink, messy hair, bad teeth, graphic flat color and urban grime. Carry it through Hewlett scratchy ink, lanky punks, urban grime, attitude. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Hewlett scratchy ink; lanky punks; urban grime; attitude
+avoidRules:
+  - a virtual band of four cartoon musicians
+  - a tank girl with a shaved head
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a virtual band of four cartoon musicians, a tank girl with a shaved head, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: character-design
+  categoryName: 1. Character Design
+  domain: punk cartoon character design
+  tags:
+    - curation-v2
+    - character-design
+    - character-design
+    - hewlett
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

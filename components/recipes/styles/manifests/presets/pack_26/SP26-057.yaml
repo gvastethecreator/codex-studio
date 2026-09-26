@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP26-057
+packId: pack_26
+name: Yonkoma Collection Cover
+styleAnchors:
+  - Yonkoma Collection Cover
+  - four-panel manga cover
+  - Yonkoma chibi
+displayName: Yonkoma Collection Cover
+category: 3. Manga Covers
+domain: four-panel manga cover
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - manga-covers
+  - manga-cover
+  - yonkoma
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Yonkoma four-panel manga collection cover look: cute simple chibi characters, flat pastel backgrounds, playful cover gags and rounded title lettering.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw the subject as cute simple chibi characters in a playful cover gag. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Flat pastel colors, true to the Yonkoma Collection Cover palette.
+  lighting_and_shadow: Flat cute light, lit the way Yonkoma Collection Cover lights its scenes.
+  texture_and_material: Clean simple line and flat fills, with the surface finish of Yonkoma Collection Cover.
+  camera_and_composition: Playful centered cover gag, framed the way Yonkoma Collection Cover composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with playful cute comedy.
+  rendering_and_quality: Cute yonkoma collection cover, in the recognizable hand of Yonkoma Collection Cover.
+  creative_brief: "Yonkoma four-panel manga collection cover look: cute simple chibi characters, flat pastel backgrounds, playful cover gags and rounded title lettering. Carry it through Yonkoma chibi, pastel flats, cover gag. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Yonkoma chibi; pastel flats; cover gag
+avoidRules:
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: manga-covers
+  categoryName: 3. Manga Covers
+  domain: four-panel manga cover
+  tags:
+    - curation-v2
+    - manga-covers
+    - manga-cover
+    - yonkoma
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

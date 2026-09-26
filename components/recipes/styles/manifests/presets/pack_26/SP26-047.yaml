@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP26-047
+packId: pack_26
+name: Garo Alternative Magazine Cover
+styleAnchors:
+  - Garo Alternative Magazine Cover
+  - alternative manga magazine cover
+  - Garo raw ink
+displayName: Garo Alternative Magazine Cover
+category: 3. Manga Covers
+domain: alternative manga magazine cover
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - manga-covers
+  - manga-cover
+  - garo
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Garo magazine cover look from Japanese alternative manga of the sixties and seventies: raw ink drawings, surreal everyday scenes, rough hand lettering and underground printing.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw the subject in raw expressive ink as a surreal everyday scene. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Limited muted print colors with black ink, true to the Garo Alternative Magazine Cover palette.
+  lighting_and_shadow: Flat printed light, lit the way Garo Alternative Magazine Cover lights its scenes.
+  texture_and_material: Raw ink and rough underground printing, with the surface finish of Garo Alternative Magazine Cover.
+  camera_and_composition: Single surreal ink scene with hand-lettered title, framed the way Garo Alternative Magazine Cover composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with raw underground surrealism.
+  rendering_and_quality: Raw alternative manga magazine cover, in the recognizable hand of Garo Alternative Magazine Cover.
+  creative_brief: "Garo magazine cover look from Japanese alternative manga of the sixties and seventies: raw ink drawings, surreal everyday scenes, rough hand lettering and underground printing. Carry it through Garo raw ink, surreal everyday, underground print. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Garo raw ink; surreal everyday; underground print
+avoidRules:
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: manga-covers
+  categoryName: 3. Manga Covers
+  domain: alternative manga magazine cover
+  tags:
+    - curation-v2
+    - manga-covers
+    - manga-cover
+    - garo
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

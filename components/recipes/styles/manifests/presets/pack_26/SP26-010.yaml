@@ -1,0 +1,74 @@
+schemaVersion: 1
+id: SP26-010
+packId: pack_26
+name: Kazuma Kaneko - Occult Demon Compendium
+styleAnchors:
+  - Kazuma Kaneko - Occult Demon Compendium
+  - demon design
+  - Kaneko occult demons
+displayName: Kazuma Kaneko - Occult Demon Compendium
+category: 1. Character Design
+domain: demon design
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - character-design
+  - character-design
+  - kaneko
+  - reference-title
+visualDna:
+  aesthetic: 'Kazuma Kaneko demon design look: occult demons and deities drawn with elegant fashion-illustration line, flat color, strange anatomy and compendium-like poses.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; design creatures as elegant occult beings with strange anatomy, ornaments and fashion-illustration flair. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Flat muted color with occult accents, true to the Kazuma Kaneko palette.
+  lighting_and_shadow: Flat illustration light, lit the way Kazuma Kaneko lights its scenes.
+  texture_and_material: Elegant clean line and flat color, with the surface finish of Kazuma Kaneko.
+  camera_and_composition: Single full-body compendium portrait on white, framed the way Kazuma Kaneko composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with elegant occult strangeness.
+  rendering_and_quality: Elegant occult compendium illustration, in the recognizable hand of Kazuma Kaneko.
+  creative_brief: "Kazuma Kaneko demon design look: occult demons and deities drawn with elegant fashion-illustration line, flat color, strange anatomy and compendium-like poses. Carry it through Kaneko occult demons, fashion line, compendium pose. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Kaneko occult demons; fashion line; compendium pose
+avoidRules:
+  - a blue snowman demon with a hat
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a blue snowman demon with a hat, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: character-design
+  categoryName: 1. Character Design
+  domain: demon design
+  tags:
+    - curation-v2
+    - character-design
+    - character-design
+    - kaneko
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

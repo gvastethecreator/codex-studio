@@ -2608,5 +2608,100 @@
     "evidencePresetIds": ["SP14-310", "SP14-211", "SP14-217"],
     "status": "text-reviewed",
     "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_26",
+    "category": "1. Character Design",
+    "displayCategory": "Character design",
+    "kind": "style",
+    "expectedCount": 22,
+    "baselineHash": "5024a22c3bb0f37d4349d787c74431b5a028a459382be9ae0b2ae1962f815f7e",
+    "problem": "Character design styles must carry a recognizable designer or tradition language (shape, silhouette, costume logic, finish) without copying that designer's existing characters.",
+    "preserve": "Every card invents an original adult character; the requested identity, pose and clothing stay the subject while the design language changes shapes, proportions and finish.",
+    "proposedAction": "New category of 22 named design languages: JRPG, gothic, animation model sheets, punk cartoon, freehand ink, feature animation, kaiju and armor design, stop-motion puppets, mascots, portraits, fighting game and gacha splash art, and folk animation.",
+    "validation": "Generate the card set; check that each card reads as its named designer's language and that no existing franchise character appears.",
+    "evidencePresetIds": [
+      "SP26-001",
+      "SP26-002",
+      "SP26-003"
+    ],
+    "status": "text-authored",
+    "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_26",
+    "category": "2. Movie Posters",
+    "displayCategory": "Movie posters",
+    "kind": "style",
+    "expectedCount": 22,
+    "baselineHash": "dc6513f871a29fc2ba8ab46d1cb7aea3b2432448f3cc67af2a1d5d9040beda38",
+    "problem": "Poster styles must read as their named designer, studio or national school (layout, medium, color, lettering logic) without copying real posters, stars or franchise imagery.",
+    "preserve": "Requested titles and credits stay exact; the requested subject stays the poster's subject while the style sets layout, medium and finish.",
+    "proposedAction": "New category of 22 poster traditions from Saul Bass and Drew Struzan to the Polish school, Showa chirashi, Bollywood billboards, Hammer, Mondo, Soviet constructivism, giallo and Hong Kong action.",
+    "validation": "Generate the card set; check each card reads as its tradition, shows the invented title correctly, and never reproduces a real poster or celebrity.",
+    "evidencePresetIds": [
+      "SP26-023",
+      "SP26-024",
+      "SP26-025"
+    ],
+    "status": "text-authored",
+    "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_26",
+    "category": "3. Manga Covers",
+    "displayCategory": "Manga covers",
+    "kind": "style",
+    "expectedCount": 22,
+    "baselineHash": "876de2867039b99fcb6b68fc6acac8bebeb4670861db8aaa873dc84b4fe06bf0",
+    "problem": "Manga cover styles must read as their publisher, magazine, era or artist format without copying real series, logos or characters.",
+    "preserve": "Requested titles, volume numbers and cover lines stay exact; the requested subject stays the cover's subject.",
+    "proposedAction": "New category of 22 manga cover formats: Jump tankobon, nineties shojo magazine, Garo, kashihon, light novel, doujinshi, kanzenban foil, gashu, yonkoma, horror pocket, webtoon, josei, sports, Tezuka complete works, seinen and kids magazines, retro space opera and cooking manga.",
+    "validation": "Generate the card set; check the invented titles render correctly and no real series logo or character appears.",
+    "evidencePresetIds": [
+      "SP26-045",
+      "SP26-046",
+      "SP26-047"
+    ],
+    "status": "text-authored",
+    "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_26",
+    "category": "4. Book Covers",
+    "displayCategory": "Book covers",
+    "kind": "style",
+    "expectedCount": 20,
+    "baselineHash": "a9acf124aa6e28b6d0fb0a42b12c98a67897354593605f1753357b3d0591bfe5",
+    "problem": "Book cover styles must read as their publisher series, designer or illustrator (grid, binding, medium, finish) without copying real jackets or publisher marks.",
+    "preserve": "Requested titles and author names stay exact; the requested subject stays the cover's subject.",
+    "proposedAction": "New category of 20 book cover traditions: Penguin tricolour and Facetti grids, Chris Foss, Frazetta, Chip Kidd, Mendelsund, Folio Society, Victorian gilt, McGinnis noir, gothic romance, Lebedev, Gorey, Mary Blair, Richard Powers, Whelan, Insel, bunko, romance clinch, Pan horror and Tim Jacobus.",
+    "validation": "Generate the card set; check invented titles and author names render correctly and no real publisher logo appears.",
+    "evidencePresetIds": [
+      "SP26-067",
+      "SP26-068",
+      "SP26-069"
+    ],
+    "status": "text-authored",
+    "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_26",
+    "category": "5. Comic Covers",
+    "displayCategory": "Comic covers",
+    "kind": "style",
+    "expectedCount": 20,
+    "baselineHash": "e7233c2a3ef29dce1785b84f3658a6b48a7085678d36fb38487e92eedcf7a330",
+    "problem": "Comic cover styles must read as their named artist, publisher or era without copying real heroes, emblems, mastheads or famous covers.",
+    "preserve": "Requested titles, issue numbers and cover lines stay exact; the requested subject stays the cover's subject.",
+    "proposedAction": "New category of 20 comic cover traditions: Golden Age, Kirby, EC horror, Silver Age romance, Frank Miller, Mignola, Alex Ross, Sienkiewicz, Druillet, 2000 AD, nineties foil, Franquin, Bonelli, Crumb, Chris Ware, McKean, Steranko, Wrightson, Darwyn Cooke and Mexican historieta.",
+    "validation": "Generate the card set; check invented titles render correctly and no real hero, emblem or masthead appears.",
+    "evidencePresetIds": [
+      "SP26-087",
+      "SP26-088",
+      "SP26-089"
+    ],
+    "status": "text-authored",
+    "visualValidation": "pending"
   }
 ]

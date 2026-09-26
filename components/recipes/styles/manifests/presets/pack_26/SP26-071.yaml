@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP26-071
+packId: pack_26
+name: Chip Kidd - Conceptual Jacket Design
+styleAnchors:
+  - Chip Kidd - Conceptual Jacket Design
+  - book jacket design
+  - Chip Kidd concept
+displayName: Chip Kidd - Conceptual Jacket Design
+category: 4. Book Covers
+domain: book jacket design
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - book-covers
+  - book-cover
+  - chip-kidd
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Chip Kidd book jacket look: witty conceptual design, a single clever object or photo, bold graphic type integrated with the image and playful visual puns.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; turn the subject into one clever conceptual object or photographic pun. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Bold flat background color with one striking image.
+  lighting_and_shadow: Clean studio product light on the object, lit the way Chip Kidd lights its scenes.
+  texture_and_material: Crisp photographic or graphic print on jacket paper.
+  camera_and_composition: Centered conceptual image with integrated type, framed the way Chip Kidd composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with witty conceptual cleverness.
+  rendering_and_quality: Witty conceptual jacket design, in the recognizable hand of Chip Kidd.
+  creative_brief: "Chip Kidd book jacket look: witty conceptual design, a single clever object or photo, bold graphic type integrated with the image and playful visual puns. Carry it through Chip Kidd concept, visual pun, integrated type, bold color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Chip Kidd concept; visual pun; integrated type; bold color
+avoidRules:
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: book-covers
+  categoryName: 4. Book Covers
+  domain: book jacket design
+  tags:
+    - curation-v2
+    - book-covers
+    - book-cover
+    - chip-kidd
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

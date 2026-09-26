@@ -1,0 +1,69 @@
+schemaVersion: 1
+id: SP26-090
+packId: pack_26
+name: Silver Age Romance Comic Cover
+styleAnchors:
+  - Silver Age Romance Comic Cover
+  - sixties romance comic cover
+  - Romance comics
+displayName: Silver Age Romance Comic Cover
+category: 5. Comic Covers
+domain: sixties romance comic cover
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - comic-covers
+  - comic-cover
+  - romance-comic
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Silver Age romance comic cover look: tearful women with glossy hair, dramatic thought balloons, Ben-Day dots and melodramatic sixties heartbreak.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; draw the subject as a tearful romantic melodrama with Ben-Day dots. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Pastel pink, teal and glossy black hair highlights.
+  lighting_and_shadow: Flat printed pop light, lit the way Silver Age Romance Comic Cover lights its scenes.
+  texture_and_material: Ben-Day dots and clean ink, with the surface finish of Silver Age Romance Comic Cover.
+  camera_and_composition: Close tearful faces with speech balloons, framed the way Silver Age Romance Comic Cover composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with tearful melodramatic heartbreak.
+  rendering_and_quality: Sixties romance comic cover, in the recognizable hand of Silver Age Romance Comic Cover.
+  creative_brief: "Silver Age romance comic cover look: tearful women with glossy hair, dramatic thought balloons, Ben-Day dots and melodramatic sixties heartbreak. Carry it through Romance comics, tears, Ben-Day dots, melodrama. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: Romance comics; tears; Ben-Day dots; melodrama
+avoidRules:
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_26
+  packName: Covers, Posters & Characters
+  categoryId: comic-covers
+  categoryName: 5. Comic Covers
+  domain: sixties romance comic cover
+  tags:
+    - curation-v2
+    - comic-covers
+    - comic-cover
+    - romance-comic
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
