@@ -45,9 +45,16 @@ export function useStyleComposition({
 }: StyleCompositionInput) {
   const [selectedStyles, setSelectedStyles] = useState<SelectedStyleSlot[]>([]);
   const [intentionalMode, setIntentionalMode] = useState<Intentional.Mode>(() => {
-    const savedMode = config.recipeParams?.styleReferenceMode;
-    return savedMode === 'reinterpret' ? 'reinterpret' : 'generate';
+    const params = config.recipeParams;
+    const saved = params?.intentionalMode ?? params?.styleReferenceMode;
+    if (saved === 'generate' || saved === 'preserve' || saved === 'reinterpret') {
+      return intentionalStylesV1 || saved !== 'generate' ? saved : 'preserve';
+    }
+    return intentionalStylesV1 ? 'generate' : 'preserve';
   });
+  useEffect(() => {
+    if (!intentionalStylesV1 && intentionalMode === 'generate') setIntentionalMode('preserve');
+  }, [intentionalMode, intentionalStylesV1]);
   const [compileIssues, setCompileIssues] = useState<Intentional.Issue[]>([]);
   const didRestoreSelection = useRef(false);
   useEffect(() => {
@@ -136,7 +143,7 @@ export function useStyleComposition({
       createSelectedStylesGenerationPlan({
         slots: selectedStyles,
         hasReferenceImages: referenceImages.length > 0,
-        referenceMode: intentionalMode === 'reinterpret' ? 'reinterpret' : 'preserve',
+        referenceMode: intentionalMode === 'generate' ? 'preserve' : intentionalMode,
         baseNegativePrompt: config.negativePrompt,
       }),
     [config.negativePrompt, intentionalMode, referenceImages.length, selectedStyles],
@@ -177,7 +184,14 @@ export function useStyleComposition({
           locks:
             intentionalMode === 'preserve'
               ? Intentional.PRESERVE_LOCKS
-              : Intentional.FREE_LAYOUT_LOCKS,
+              : intentionalMode === 'reinterpret'
+                ? Intentional.FREE_LAYOUT_LOCKS
+                : {
+                    identity: false,
+                    pose: false,
+                    camera: false,
+                    composition: false,
+                  },
           variation: Intentional.NO_VARIATION,
           permissions: { ...Intentional.NO_PERMISSIONS },
           baseAvoidRules: config.negativePrompt
@@ -219,6 +233,8 @@ export function useStyleComposition({
             presetName: slot.preset.displayName || slot.preset.name,
             enabled: slot.enabled ?? true,
           })),
+          intentionalMode,
+          ...(intentionalMode === 'generate' ? {} : { styleReferenceMode: intentionalMode }),
           intentionalCompileError: message,
         });
         updateConfig('recipeContext', '');

@@ -48,15 +48,20 @@ function hasExplicitFieldControls(slot: SelectedStyleSlot) {
   });
 }
 
-async function hashedReferences(attachments: Attachment[]): Promise<Intentional.Reference[]> {
+async function hashedReferences(
+  attachments: Attachment[],
+  mode: Intentional.Mode,
+): Promise<Intentional.Reference[]> {
+  if (mode === 'generate' || attachments.length === 0) return [];
   const refs: Intentional.Reference[] = [];
   for (const [index, attachment] of attachments.entries()) {
     const material = attachment.dataUrl || attachment.id || `ref-${index + 1}`;
-    refs.push({
-      id: attachment.id || `ref-${index + 1}`,
-      role: index === 0 ? 'subject' : 'style',
-      contentHash: await Intentional.sha256(material),
-    });
+    const id = attachment.id || `ref-${index + 1}`;
+    const contentHash = await Intentional.sha256(material);
+    refs.push({ id, role: 'subject', contentHash });
+    if (mode === 'preserve' && index === 0 && refs.length < 12) {
+      refs.push({ id: `${id}:composition`, role: 'composition', contentHash });
+    }
   }
   return refs;
 }
@@ -145,7 +150,7 @@ export async function compileIntentionalStylePlan({
     locks,
     variation,
     permissions,
-    references: await hashedReferences(attachments),
+    references: await hashedReferences(attachments, mode),
     baseAvoidRules,
   });
 
@@ -176,6 +181,7 @@ export async function compileIntentionalStylePlan({
       styleRequestHash: compiled.styleRequestHash,
       effectivePrompt: compiled.effectivePrompt,
       intentionalMode: mode,
+      ...(mode === 'generate' ? {} : { styleReferenceMode: mode }),
       appliedFields: compiled.appliedFields,
       issues: compiled.issues,
     },

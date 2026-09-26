@@ -434,7 +434,7 @@ export function createSelectedStylesGenerationPlan({
         : hasReferenceImages
           ? 'CREATIVE_REIMAGINING'
           : 'DIRECT_STYLE_SYNTHESIS',
-      styleReferenceMode: referenceMode,
+      ...(hasReferenceImages ? { styleReferenceMode: referenceMode } : {}),
       roleInstruction,
       compositionRule,
       styleEmphasis: createSelectedStyleEmphasis(

@@ -142,6 +142,7 @@ describe('styleLayerComposer', () => {
       mode: 'DIRECT_STYLE_SYNTHESIS',
       negativePrompt: 'watermark, muddy reflections, text',
     });
+    expect(plan?.recipeParams).not.toHaveProperty('styleReferenceMode');
     expect(plan?.recipeParams.selectedStyles).toHaveLength(1);
     expect(plan?.recipeParams.styleEmphasis).toContain('Slot 1: influence 0.75');
   });
@@ -154,11 +155,27 @@ describe('styleLayerComposer', () => {
 
     expect(plan?.recipeParams).toMatchObject({
       mode: 'PRESERVE_REFERENCE',
+      styleReferenceMode: 'preserve',
       compositionRule:
         'Preserve the reference layout, pose and camera. The camera/composition style field is suppressed; use reinterpretation for structural changes.',
     });
     expect(plan?.recipeParams.roleInstruction).toContain(
       'Preserve subject identity, pose, framing, camera and composition',
     );
+  });
+
+  it('keeps the camera field when the reference is reinterpreted', () => {
+    const plan = createSelectedStylesGenerationPlan({
+      slots: [createSlot()],
+      hasReferenceImages: true,
+      referenceMode: 'reinterpret',
+    });
+
+    expect(plan?.recipeParams).toMatchObject({
+      mode: 'CREATIVE_REIMAGINING',
+      styleReferenceMode: 'reinterpret',
+    });
+    expect(plan?.recipeParams.roleInstruction).toContain('Reinterpret the supplied references');
+    expect(String(plan?.recipeParams.cameraComposition ?? '')).not.toBe('');
   });
 });

@@ -61,6 +61,79 @@ describe('intentionalStyleCompile', () => {
     expect(first.recipeParams.effectivePrompt).toBe(first.effectivePrompt);
   });
 
+  it('preserves pose and composition when an image is attached', async () => {
+    const compiled = await compileIntentionalStylePlan({
+      slots: [slotFor('SP01-001')],
+      prompt: 'Keep this person in the same studio setup.',
+      attachments: [
+        {
+          id: 'ref-1',
+          name: 'source.png',
+          dataUrl: 'data:image/png;base64,aaaa',
+          strength: 1,
+        },
+      ],
+      mode: 'preserve',
+      locks: {
+        identity: true,
+        pose: true,
+        camera: true,
+        composition: true,
+      },
+      variation: { enabled: false, instruction: '' },
+      permissions: {
+        structure: false,
+        wardrobe: false,
+        design: false,
+        environment: false,
+        materialTarget: '',
+        accent: '',
+      },
+      baseAvoidRules: [],
+    });
+    expect(compiled.recipeParams.styleReferenceMode).toBe('preserve');
+    expect(compiled.effectivePrompt).toContain('Mode: preserve.');
+    expect(compiled.effectivePrompt).toContain('Preserve pose');
+    expect(compiled.effectivePrompt).toContain('ref-1:composition — composition:');
+  });
+
+  it('releases pose and camera when the reference is reinterpreted', async () => {
+    const compiled = await compileIntentionalStylePlan({
+      slots: [slotFor('SP01-001')],
+      prompt: 'Keep this person, but change the pose and framing.',
+      attachments: [
+        {
+          id: 'ref-1',
+          name: 'source.png',
+          dataUrl: 'data:image/png;base64,aaaa',
+          strength: 1,
+        },
+      ],
+      mode: 'reinterpret',
+      locks: {
+        identity: true,
+        pose: false,
+        camera: false,
+        composition: false,
+      },
+      variation: { enabled: false, instruction: '' },
+      permissions: {
+        structure: false,
+        wardrobe: false,
+        design: false,
+        environment: false,
+        materialTarget: '',
+        accent: '',
+      },
+      baseAvoidRules: [],
+    });
+    expect(compiled.recipeParams.styleReferenceMode).toBe('reinterpret');
+    expect(compiled.effectivePrompt).toContain('Mode: reinterpret.');
+    expect(compiled.effectivePrompt).toContain('Restage only the aspects whose locks are released');
+    expect(compiled.effectivePrompt).not.toContain('Preserve pose');
+    expect(compiled.effectivePrompt).not.toContain('composition:');
+  });
+
   it('does not emit restage copy when a reference is attached', async () => {
     const compiled = await compileIntentionalStylePlan({
       slots: [slotFor('SP01-001')],

@@ -2637,12 +2637,7 @@ export const StylesBrowser: React.FC<StylesBrowserProps> = ({
                 ? (['generate', 'preserve', 'reinterpret'] as const)
                 : (['preserve', 'reinterpret'] as const)
               ).map((mode) => {
-                const isActive =
-                  (intentionalStylesV1
-                    ? intentionalMode
-                    : intentionalMode === 'reinterpret'
-                      ? 'reinterpret'
-                      : 'preserve') === mode;
+                const isActive = intentionalMode === mode;
 
                 return (
                   <button
