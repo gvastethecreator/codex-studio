@@ -34,9 +34,9 @@ const spec: Spec = {
         key_features: 'pitcher-batter line; summer heat; dust; grip close-ups',
       },
       [
-        'Summer baseball anime frame looking down the line from behind the catcher at a pitcher mid-windup under blazing sun, heat shimmer over the dusty mound, cicadas on the fence and a batter gripping tight in the foreground. No readable text or logo.',
-        "Summer baseball anime close-up of a pitcher's fingers on the red stitches of the ball, sweat dripping from the cap brim, the rest of the stadium blurred into bright heat. No readable text or logo.",
-        'Summer baseball anime frame of a runner sliding headfirst into home plate in an explosion of dust, the catcher reaching, the umpire leaning in and the crowd frozen mid-shout. No readable text or logo.',
+        "A pitcher mid-windup under a blazing sun sees the heat shimmer split the batter into three wavering figures at the plate. No readable text or logo.",
+        "An entire rural baseball team crowds around one electric fan in the dugout, fighting over the breeze during a sweltering final. No readable text or logo.",
+        "After losing the final, a catcher scoops infield dirt into a jar alone as the stadium lights switch off one by one above him. No readable text or logo.",
       ],
     ),
     'SP05-349': u(
@@ -57,9 +57,9 @@ const spec: Spec = {
         key_features: 'old mentor; inherited equipment; sepia memories; golden light',
       },
       [
-        "Generational sports anime frame of an old boxing coach wrapping a young fighter's hands in a dim gym at golden hour, faded photos of his own fights pinned on the wall behind them, dust in the light. No readable text or logo.",
-        "Generational sports anime frame of a girl receiving her grandmother's worn ice skates in a quiet rink at dawn, a sepia memory of the grandmother skating overlaid faintly on the ice. No readable text or logo.",
-        'Generational sports anime frame of a father and son shooting hoops at a rusty neighborhood court at sunset, their shadows long and overlapping on the asphalt. No readable text or logo.',
+        "An old boxing coach wraps a young fighter's hands in a dim gym, while the shadow on the wall behind them shows the coach at twenty doing the same. No readable text or logo.",
+        "Three generations of one family crew the same wooden rowing boat, grandma at the stern bellowing the stroke rate at her sons. No readable text or logo.",
+        "A retired marathoner kneels at the starting line to lace her own worn shoelaces into her daughter's brand-new racing shoes. No readable text or logo.",
       ],
     ),
     'SP05-350': u(
@@ -79,9 +79,9 @@ const spec: Spec = {
         key_features: 'caustic light; underwater views; bubbles; split surface',
       },
       [
-        'Swimming anime underwater frame of a relay swimmer in a long streamlined glide off the wall, caustic light rippling over her back, a trail of silver bubbles and the lane line glowing aqua. No readable text or logo.',
-        'Swimming anime split-surface frame of two swimmers racing neck and neck, spray above and calm blue silence below, their eyes meeting through the water. No readable text or logo.',
-        'Swimming anime frame of a boy floating on his back alone in an outdoor pool at night after practice, pool lights glowing up through the water around him. No readable text or logo.',
+        "A relay swimmer glides off the wall through water so bright with caustic light that she seems to fly through a liquid sky. No readable text or logo.",
+        "A swimmer races a curious sea turtle down the lane of an open-air seaside pool, both absolutely determined to win. No readable text or logo.",
+        "In a closed pool at midnight a swimmer floats face-up under the emergency lights while the water holds perfectly still around her. No readable text or logo.",
       ],
     ),
     'SP05-351': u(
@@ -103,9 +103,9 @@ const spec: Spec = {
         key_features: 'night streetlights; breath clouds; relay sash; lonely road',
       },
       [
-        'Night running anime frame of a relay runner passing under a row of orange streetlights on an empty coastal road, breath clouds trailing, the sash on her shoulder and the next teammate a tiny figure far ahead. No readable text or logo.',
-        'Night running anime frame of a team of distance runners jogging over a bridge in a winter night, their breath clouds merging under a single street lamp. No readable text or logo.',
-        "Night running anime close-up of a runner's feet splashing through a puddle that reflects a lit convenience store at 2 a.m. No readable text or logo.",
+        "A relay runner passes under a row of orange streetlights on an empty coastal road, her breath clouds trailing behind her like ghost runners. No readable text or logo.",
+        "A night marathoner is escorted by a scruffy stray dog that has jogged beside her for thirty kilometers without once looking tired. No readable text or logo.",
+        "At 3 a.m. a runner reaches the final checkpoint, where a volunteer asleep in a folding chair still holds out a paper cup of water. No readable text or logo.",
       ],
     ),
     'SP05-352': u(
@@ -128,9 +128,9 @@ const spec: Spec = {
         key_features: 'trick lines; neon rims; fisheye ramps; motion arcs',
       },
       [
-        'Skateboarding anime frame of a skater launching off a concrete ramp at night in a fisheye low angle, board flipping under her feet, neon magenta and cyan rim light and a bright motion arc tracing the trick. No readable text or logo.',
-        'Skateboarding anime frame of a crew bombing down a steep empty street at dawn, their lines drawn as colored trails. No readable text or logo.',
-        'Skateboarding anime frame of a skater grinding a long rail beside a canal, sparks from the trucks and city lights reflected in the water. No readable text or logo.',
+        "A skater launches off a concrete ramp at night and her neon trick line loops behind the board into a glowing figure eight across the sky. No readable text or logo.",
+        "An elderly man in a business suit lands a kickflip in an empty neon parking garage, briefcase still clutched in one hand. No readable text or logo.",
+        "A skater grinds the rim of a flooded drainage channel at night while her reflection skates upside down beneath her. No readable text or logo.",
       ],
     ),
   },

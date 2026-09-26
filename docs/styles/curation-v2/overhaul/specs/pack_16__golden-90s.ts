@@ -8,142 +8,142 @@ const spec: Spec = {
   updates: {
     'SP05-011': {
       briefs: [
-        '90s tournament anime frame of two martial artists powering up on a cracked rocky plateau, angular cel contours, concentrated ink shadows and a broken blue-violet aura rim crackling around the taller fighter as stones lift into the air. No readable text or logo.',
-        '90s aura anime frame of a young fighter screaming as golden aura flares around her in a ruined city street, short radiating strokes and debris spinning upward past a toppled streetlamp. No readable text or logo.',
-        '90s aura anime frame of an old master and his student meditating on a waterfall ledge, faint blue-violet aura rims rising from both and mist catching the light. No readable text or logo.',
+        "Two martial artists power up on a cracked plateau until the surrounding mountains start floating upward, pebbles orbiting their fists in blue-violet light. No readable text or logo.",
+        "A grandmother and her grown grandson settle a family argument by powering up in the kitchen, the rice cooker levitating between their clashing auras. No readable text or logo.",
+        "A retired fighter meditates alone at the bottom of a crater he made forty years ago, and the ground still hums with his old aura each time he exhales. No readable text or logo.",
       ],
     },
     'SP05-012': {
       briefs: [
-        '90s magical chorus anime frame of four schoolgirl singers transforming together on a moonlit rooftop, fine curved contours, smooth value transitions and precise star-point highlights on ribbons and hair. No readable text or logo.',
-        '90s magical chorus anime frame of a girl band performing a spell-song on a floating stage over the sea, musical light ribbons weaving between them and star-point sparkles. No readable text or logo.',
-        '90s magical chorus anime frame of a shy member rehearsing alone in a music room, a glowing pendant lighting her face with soft star highlights. No readable text or logo.',
+        "Four magical singers transform together on a moonlit rooftop, their harmony crystallizing into star-shaped sparks that shatter the shadow beast looming above them. No readable text or logo.",
+        "A magical choir's transformation is interrupted mid-sparkle by a delivery driver who needs a signature, ribbons and glitter frozen in the air around them. No readable text or logo.",
+        "A retired magical heroine, now an accountant, finds her old brooch glowing in a drawer at 3 a.m. as her tiny apartment fills with star-point light. No readable text or logo.",
       ],
     },
     'SP05-014': {
       briefs: [
-        '90s space noir anime frame of a lanky bounty hunter lighting up in the dim cockpit of a rusty ship parked on a rainy moon, loose ink cuts, off-beat diagonals and deep quiet shadow shapes. No readable text or logo.',
-        '90s space noir anime frame of a crew eating instant noodles in a shabby lounge as their ship drifts past a gas giant, jazzy diagonals and long shadows. No readable text or logo.',
-        '90s space noir anime frame of a woman in a yellow jacket walking away from a burning casino on Mars, off-beat composition and quiet shadow. No readable text or logo.',
+        "A lanky bounty hunter sits in the rusty cockpit of his ship on a rain-soaked moon, finishing a jazz record while his target waits politely on the wing outside. No readable text or logo.",
+        "A woman in a red coat walks out of a burning chapel on a red planet without looking back, a single white feather drifting down where she stood. No readable text or logo.",
+        "A drifter shares his last rations with a stray space dog in the silent hangar of an abandoned colony ship, lonely shafts of light falling between them. No readable text or logo.",
       ],
     },
     'SP05-015': {
       briefs: [
-        '90s cyber-ops anime frame of a cybernetic agent diving from a skyscraper into a flooded neon city, recursive line geometry in the glass facades, skewed depth cues and clipped cyan-magenta accents on her optic camouflage. No readable text or logo.',
-        '90s cyber-ops anime frame of an agent jacked into a network terminal, her body surrounded by recursive geometric data lines. No readable text or logo.',
-        '90s cyber-ops anime frame of a tank-like spider robot wading through a flooded canal district at night, cyan and magenta signs reflected in the ripples around its legs, recursive line geometry in the drowned buildings. No readable text or logo.',
+        "A cybernetic agent dives headfirst from a skyscraper into a flooded neon city, and her reflection in the water is diving upward to meet her. No readable text or logo.",
+        "A cyborg operative sits in an empty ferry cabin replacing her own hand, staring at the old one in her lap as if it might remember something she forgot. No readable text or logo.",
+        "An elite cyber-ops team storms a server vault and finds the rogue machine mind living inside a tiny potted bonsai that demands a cup of tea. No readable text or logo.",
       ],
     },
     'SP05-016': {
       briefs: [
-        '90s spirit tournament anime frame of a teenage delinquent facing a demon fighter in a stone arena, forceful contour wedges, concentrated violet edge light and sharply separated shadows, the crowd of monsters roaring. No readable text or logo.',
-        '90s spirit tournament anime frame of a fighter charging a glowing blast in cupped hands, violet light cutting hard shadows across his face. No readable text or logo.',
-        '90s spirit tournament anime frame of a team of four fighters walking into a fog-covered island arena at dawn, monster spectators silhouetted in the stands and violet edge light on their shoulders. No readable text or logo.',
+        "A delinquent brawler faces a horned demon champion in a stone arena where the spectators are the ghosts of every past loser, all screaming without sound. No readable text or logo.",
+        "Two exhausted tournament finalists run out of spirit energy at the same instant and settle the title with a furious game of rock-paper-scissors. No readable text or logo.",
+        "The night before the final bout, a fighter trains alone in a graveyard while every lantern flame in the rows of tombs bends toward his clenched fist. No readable text or logo.",
       ],
     },
     'SP05-017': {
       briefs: [
-        '90s wandering atonement anime frame of a red-haired swordsman with a cross-shaped scar walking a country road at dusk, long slashing ink contours, dense black shapes and restrained rust-red accents in his clothing. No readable text or logo.',
-        '90s atonement drama anime frame of a wanderer kneeling at a grave in the rain, a reversed-edge blade laid before it, slashing contours and dark shapes. No readable text or logo.',
-        '90s atonement anime frame of a wandering swordsman smiling while hanging laundry for a small dojo, children playing around him, long slashing contours softened by afternoon light before trouble arrives. No readable text or logo.',
+        "Bracing a burning temple beam on the back of his blade, a swordsman sworn never to kill holds it up so a family can crawl out beneath it. No readable text or logo.",
+        "A former assassin now runs a roadside tea stall in the mountains, and every cup he pours arrives with a single blood-red maple leaf floating in it. No readable text or logo.",
+        "A grim ronin on a pilgrimage of atonement is followed through three villages by a devoted goose he once spared, now wearing a tiny straw hat. No readable text or logo.",
       ],
     },
     'SP05-018': {
       briefs: [
-        '90s space western anime frame of a gun-slinging drifter in a red coat grinning while a sandstorm swallows a frontier town on a desert planet, relaxed elongated strokes, abrupt angular accents and sun-worn color. No readable text or logo.',
-        '90s space western anime frame of a drifter eating donuts on a water tower while bounty hunters surround the town below. No readable text or logo.',
-        '90s space western anime frame of a sand steamship crossing endless dunes under two setting suns, passengers leaning on the rails, relaxed elongated strokes and sun-worn orange and teal color. No readable text or logo.',
+        "A grinning drifter in a red coat holds off an entire starving outlaw gang with nothing but one fresh donut raised high in the air. No readable text or logo.",
+        "A sandstorm swallows a frontier town on a desert planet while a lone gunslinger walks straight into it, coat whipping and a pistol spinning in each hand. No readable text or logo.",
+        "A crashed spaceship buried halfway in the dunes has become a chapel, and a gunslinger kneels alone among its cockpit-seat pews at dusk. No readable text or logo.",
       ],
     },
     'SP05-161': {
       briefs: [
-        '90s planetary aura impact anime frame of a hero crashing into a mountainside, a bright curved aura shell exploding outward from the impact, a hot white focal core and clean radial streaks across the sky. No readable text or logo.',
-        '90s aura impact anime frame of two fighters colliding above the ocean, the shockwave parting the water into a ring. No readable text or logo.',
-        "90s aura impact anime frame of a planet-sized energy sphere forming above a fighter's raised hands on a barren plain, a bright curved shell, a hot white core and radial streaks tearing the clouds apart. No readable text or logo.",
+        "A hero slams into a mountainside so hard that his aura shell blooms outward and briefly turns the whole night side of the planet into day. No readable text or logo.",
+        "Two titans trade a planet-cracking punch and the shockwave rolls harmlessly through a family picnic, lifting only the tablecloth. No readable text or logo.",
+        "Seen from orbit, one white-hot point burns on the dark side of a dead moon where the last fighter alive is still charging a final blast alone. No readable text or logo.",
       ],
     },
     'SP05-163': {
       briefs: [
-        '90s smoke-jazz noir anime frame of a saxophonist playing alone on a rain-soaked fire escape at night, broad ink-black shapes, slow smoke-like contour ribbons curling from the horn and sparse warm highlights. No readable text or logo.',
-        '90s smoke-jazz noir anime frame of a woman in a trench coat waiting in a train station cafe at 3 a.m. No readable text or logo.',
-        '90s smoke-jazz noir anime frame of two partners walking away from a burning warehouse at night without looking back, broad ink-black shapes and slow smoke ribbons rising behind them. No readable text or logo.',
+        "A saxophonist plays alone on a rain-soaked fire escape at night, and the smoke curling off her notes drifts across the street into a stranger's open window. No readable text or logo.",
+        "A hitman waits in a jazz bar booth for his target and slowly realizes the band has been playing the song his target always requested, just for him. No readable text or logo.",
+        "A slow-dancing couple are the last people in a smoky club, and the whole band has fallen asleep at their instruments without the music stopping. No readable text or logo.",
       ],
     },
     'SP05-164': {
       briefs: [
-        '90s wet techno-noir anime frame of an android detective standing in the rain under a monorail, precise dark contours, clipped cyan reflections on her wet skin and broken neon color bands across the street. No readable text or logo.',
-        '90s techno-noir anime frame of a scientist floating in a tank of glowing green fluid surrounded by cables in a dark lab, precise dark contours and clipped cyan reflections on the glass. No readable text or logo.',
-        "90s techno-noir anime frame of a hacker's cramped room flooded with blue monitor light, rain streaming down the window and broken neon bands from the street outside. No readable text or logo.",
+        "An android detective stands in the rain under a monorail, watching his own memories replay as cyan reflections sliding across the wet pavement. No readable text or logo.",
+        "A woman plugs the port in her neck into a public payphone in a flooded alley, and every neon tube on the street flickers once across her face. No readable text or logo.",
+        "A rain-soaked cyborg patrol officer tries to eat noodle soup without short-circuiting while the stall cook balances three umbrellas over his head. No readable text or logo.",
       ],
     },
     'SP05-165': {
       briefs: [
-        '90s spirit rivalry anime frame of two rival exorcists facing each other on a moonlit shrine roof, pale blue contour echoes, long translucent sweeps of spirit energy and deep nocturnal shadow masses. No readable text or logo.',
-        '90s spirit rivalry anime frame of a ghost fighter dodging through a graveyard at midnight, trailing pale blue contour echoes behind him and deep nocturnal shadows between the stones. No readable text or logo.',
-        '90s spirit rivalry anime frame of a pale spirit fox coiling around its young master in long translucent sweeps of blue light on a temple stair. No readable text or logo.',
+        "Two rival exorcists face off on a moonlit shrine roof, their pale blue afterimages already fighting one step ahead of their bodies. No readable text or logo.",
+        "Two rival mediums try to exorcise the same haunted office printer at midnight, their spirit trails tangling around it while it jams furiously. No readable text or logo.",
+        "Circled by the translucent echoes of every opponent she has ever defeated, a spirit fighter stands alone in a flooded rice field at night. No readable text or logo.",
       ],
     },
     'SP05-166': {
       briefs: [
-        '90s redemption drama anime frame of a former soldier teaching a child to fish at a quiet lake, soft-edged transitions inside clean shadow groups, calm contours and a narrow cool palette. No readable text or logo.',
-        '90s redemption anime frame of a scarred man returning a stolen sword to an old temple at dawn, head bowed before the monk, soft-edged shadows and a calm cool palette. No readable text or logo.',
-        '90s redemption anime frame of two old enemies sharing tea in silence on a veranda during rain, calm contours and clean shadow groups on their weathered faces. No readable text or logo.',
+        "A former soldier sits on a lake pier mending the fishing net of the woman whose village he once burned, neither of them saying a word. No readable text or logo.",
+        "A retired general repaints every fence on his street before dawn while the neighbors sleep, his old medals weighing down the paint-can lids. No readable text or logo.",
+        "An ex-mercenary returns a stolen music box to a widow at her door, and it begins to play on its own the moment her fingers touch it. No readable text or logo.",
       ],
     },
     'SP05-167': {
       briefs: [
-        '90s outlaw adventure anime frame of a pirate crew racing a sand-skiff through a canyon, sharp contour cuts, directional engine-like trails and strongly angled color streaks behind the craft. No readable text or logo.',
-        '90s outlaw anime frame of a biker gang tearing down an empty desert highway at night, engine-like light trails streaming behind them and angled color streaks across the asphalt. No readable text or logo.',
-        "90s outlaw anime frame of a hoverbike jumping the gap between two red mesas at sunset, a directional trail of exhaust and sharp contour cuts on the rider's coat. No readable text or logo.",
+        "A pirate crew races a sand-skiff through a narrow canyon, engine trails spraying behind them as a colossal sand worm bursts from the dunes in pursuit. No readable text or logo.",
+        "An outlaw biker gang flees the law towing a stolen five-tier wedding cake on a trailer, streaks of frosting flying off it in the wind. No readable text or logo.",
+        "A lone outlaw's hoverbike idles at the edge of a salt flat at night, its engine trail still glowing in the air for miles behind her like a comet. No readable text or logo.",
       ],
     },
     'SP05-169': {
       briefs: [
-        '90s wired identity anime frame of a quiet girl standing under humming power lines while her outline fragments into offset exposures and interrupted horizontal bands, the sky a pale static grey. No readable text or logo.',
-        '90s wired anime frame of a girl at a bulky computer whose reflection in the curved screen is offset and wrong, horizontal bands interrupting her outline in a dark bedroom. No readable text or logo.',
-        '90s wired anime frame of a busy crosswalk where every pedestrian slowly dissolves into interrupted horizontal bands, only one girl in the middle still solid. No readable text or logo.',
+        "A quiet young woman stands under humming power lines while her outline peels away in offset copies, each copy walking home in a different direction. No readable text or logo.",
+        "In a dark bedroom lit only by a monitor, a young man watches himself log off from the chat window he is still typing into. No readable text or logo.",
+        "On a packed commuter train every passenger wears a slightly out-of-sync copy of the same face, all of them yawning one beat apart. No readable text or logo.",
       ],
     },
     'SP05-170': {
       briefs: [
-        '90s storybook seal magic anime frame of a girl sealing a mischievous spirit into a glowing card inside a school library, hand-drawn ink with nested loops, seal-like ornaments and restrained luminous accents. No readable text or logo.',
-        '90s seal magic anime frame of a winged guardian creature perched on a bookshelf, ornamental seal lines glowing around it. No readable text or logo.',
-        '90s seal magic anime frame of a glowing magic circle blooming under a girl in a moonlit park, nested loops and seal-like ornaments turning slowly, a small winged creature cheering beside her. No readable text or logo.',
+        "A young sorceress seals a mischievous storm spirit into a glowing card inside an old library, pages whirling off the shelves like startled birds. No readable text or logo.",
+        "A card-sealing magician tries to capture a sulking cloud spirit that keeps raining on her card out of pure spite. No readable text or logo.",
+        "At midnight a sealed card on a shrine altar starts leaking tiny glowing footprints across the floor toward the sleeping keeper's pillow. No readable text or logo.",
       ],
     },
     'SP05-173': {
       briefs: [
-        '90s pacifist melancholy anime frame of a traveler in a long coat walking through a dusty frontier town at sunset, softly painted background planes, simple clean contours and muted amber-cool contrast. No readable text or logo.',
-        '90s pacifist anime frame of a wanderer handing his last loaf of bread to children in a ruined village, softly painted background planes and muted amber light on dusty walls. No readable text or logo.',
-        '90s pacifist anime frame of a man sitting alone on a hill overlooking a crater where a city used to be. No readable text or logo.',
+        "A traveler in a long coat walks into a dusty frontier town at sunset carrying a cello case that everyone is sure hides a weapon, though it only holds seed packets. No readable text or logo.",
+        "Every gunman in town aims at a lanky pacifist who is busy catching a falling baby bird, his round sunglasses slipping down his nose. No readable text or logo.",
+        "At dusk a wanderer plants a single sunflower on each grave of a vast desert cemetery, the amber light long and quiet behind him. No readable text or logo.",
       ],
     },
     'SP05-174': {
       briefs: [
-        '90s iron ruin tragedy anime frame of a cyborg girl standing in a scrapyard of rusted machines under a floating city, heavy broken ink, chiseled shadow planes and sparse iron-grey and rust-red accents. No readable text or logo.',
-        '90s iron ruin anime frame of an old mechanic rebuilding a broken cyborg body on a cluttered workbench, heavy broken ink and chiseled shadow planes under a swinging lamp. No readable text or logo.',
-        '90s iron ruin anime frame of a motorball arena full of sparks and wreckage, rust-red accents on the armored racers and a roaring crowd above. No readable text or logo.',
+        "A cyborg woman stands in a scrapyard of rusted machines beneath a floating city whose garbage chutes rain broken machine parts around her like hail. No readable text or logo.",
+        "A battered combat android cradles the rusted head of her twin in the rain, sparks leaking from both of their necks. No readable text or logo.",
+        "A scrapyard doctor runs a jumble sale of spare cyborg limbs among the rusted ruins, customers trying on mechanical arms like gloves. No readable text or logo.",
       ],
     },
     'SP05-175': {
       briefs: [
-        '90s rose ritual anime frame of two duelists in princely uniforms crossing swords in a rose garden arena under an upside-down castle in the sky, poised symmetry, repeated radial line accents and deep garnet-violet values. No readable text or logo.',
-        '90s rose ritual anime frame of a student council meeting on a balcony overflowing with roses, poised symmetry around the president and radial line accents in garnet and violet. No readable text or logo.',
-        '90s rose ritual anime frame of an endless spiral staircase leading up to a dueling arena at dawn, rose petals falling in symmetrical patterns. No readable text or logo.',
+        "Two duelists in princely uniforms cross swords in a rose garden arena beneath a floating greenhouse where every rose turns to face the winner. No readable text or logo.",
+        "A solitary duelist climbs a spiral staircase that grows a new thorned rose on each step behind her as she ascends. No readable text or logo.",
+        "A grand ritual duel is postponed because an old gardener is pruning the arena roses and flatly refuses to be rushed. No readable text or logo.",
       ],
     },
     'SP05-179': {
       briefs: [
-        '90s warm rivalry portrait anime frame of two boxing rivals laughing together at a hot spring after a match, rounded expressive contours, gentle gold edge light and clean two-stage shadows. No readable text or logo.',
-        "90s warm rivalry anime frame of two rival chefs tasting each other's dishes at a night market stall, rounded expressive contours and gentle gold edge light on their faces. No readable text or logo.",
-        '90s warm rivalry anime frame of a sports team posing for a portrait after losing a tournament, still smiling with bandages and medals, clean two-stage shadows. No readable text or logo.',
+        "Two boxing rivals soak in a hot spring after the match that broke both their noses, laughing so hard they miss a monkey stealing their towels. No readable text or logo.",
+        "Two rival chefs sit shoulder to shoulder after a cooking duel, silently tasting each other's dishes with tears in their eyes. No readable text or logo.",
+        "A veteran racer and the rookie who beat her share one umbrella at the rain-soaked finish line, warm light catching his stubborn grin. No readable text or logo.",
       ],
     },
     'SP05-180': {
       briefs: [
-        '90s precision action anime frame of a gunner rolling behind a pillar in a marble bank lobby, exact contour breaks, sharply cut shadow wedges and motion marks with clear timing, glass shards hanging in the air. No readable text or logo.',
-        '90s precision action anime frame of a swordswoman slicing a thrown bottle in half mid-air inside a crowded bar, exact contour breaks and motion marks with clear timing. No readable text or logo.',
-        '90s precision action anime frame of a courier on foot dodging a speeding car on a crowded street, sharply cut shadow wedges and clean motion marks. No readable text or logo.',
+        "A gunner rolls behind a marble pillar in a bank lobby as gunfire carves the pillar into a perfect spiral of flying chips. No readable text or logo.",
+        "A courier slides under a closing blast door with a briefcase, one strand of her hair sliced clean by the steel as it seals behind her. No readable text or logo.",
+        "Two assassins freeze in a perfectly timed supermarket standoff, one aiming a pistol and the other aiming a baguette with total conviction. No readable text or logo.",
       ],
     },
   },

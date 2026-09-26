@@ -35,9 +35,9 @@ const spec: Spec = {
         key_features: 'dashboard glow; mirror headlights; gripping hands; windshield rush',
       },
       [
-        "In-car racing anime frame from the passenger seat at night: a driver's white-knuckled hands on the wheel, dashboard amber glowing up on her face, the rearview mirror filled with a rival's headlights and the road rushing into the windshield. No readable text or logo.",
-        'In-car racing anime close-up of a gear stick being slammed into place, streetlights sweeping across the cabin in quick orange bars, a charm swinging from the mirror. No readable text or logo.',
-        'In-car racing anime frame through a rain-streaked windshield at a hairpin, wipers mid-sweep, taillights ahead blurring into long red lines. No readable text or logo.',
+        "A driver's white-knuckled hands grip the wheel as the rearview mirror fills with headlights belonging to a car that crashed on this road years ago. No readable text or logo.",
+        "A delivery driver drifts a mountain hairpin at night while a fat cat sleeps on the dashboard and does not even open one eye. No readable text or logo.",
+        "Two cars idle nose to nose on a foggy mountain pass, their drivers silently sipping canned coffee in the headlight glow before the race. No readable text or logo.",
       ],
     ),
     'SP05-354': u(
@@ -60,9 +60,9 @@ const spec: Spec = {
         key_features: 'racing line overlay; apex markers; curbs; telemetry shapes',
       },
       [
-        'Motorsport anime overhead frame of an original race car diving into a hairpin, its ideal racing line drawn as a glowing cyan curve with an apex marker, red and white curbs and rubber marks on grey asphalt. No readable text or logo.',
-        'Motorsport anime frame of a pit wall at night where engineers watch screens of abstract glowing curves as a car flashes past. No readable text or logo.',
-        "Motorsport anime close-up of a driver's visor reflecting a trace of speed arcs and the approaching corner. No readable text or logo.",
+        "A race car dives into a hairpin along a glowing cyan racing line while its own ghost from the previous lap overtakes it on the inside. No readable text or logo.",
+        "Race engineers stare at a wall of abstract telemetry as their driver takes the apex so perfectly that the data blooms into a flower. No readable text or logo.",
+        "Late at night in an empty garage an engineer replays the crash lap, the glowing apex points hanging in the dark around her like fireflies. No readable text or logo.",
       ],
     ),
     'SP05-355': u(
@@ -82,9 +82,9 @@ const spec: Spec = {
         key_features: 'confetti colors; sprinting idols; cheering stands; sparkle',
       },
       [
-        'Idol sports festival anime frame of five performers in matching satin tracksuits sprinting down a stadium track toward a finish ribbon, confetti cannons firing, fans waving glow sticks and sparkles on every smile. No readable text or logo.',
-        'Idol sports festival anime frame of a performer mid-relay passing a ribbon baton to a teammate while spinning, the crowd roaring. No readable text or logo.',
-        'Idol sports festival anime frame of a tug-of-war on stage with glitter shoes digging in and ribbons flying. No readable text or logo.',
+        "Five idol performers in satin tracksuits sprint for the finish as the confetti cannons fire early and bury the entire track. No readable text or logo.",
+        "An idol relay turns into a dance battle mid-baton-pass while the stadium crowd waves glow sticks in the pouring rain. No readable text or logo.",
+        "After her group disbands, a lone idol races the sunset around an empty stadium as the stage lights flick on one by one to follow her. No readable text or logo.",
       ],
     ),
     'SP05-356': u(
@@ -105,9 +105,9 @@ const spec: Spec = {
         key_features: 'impact freeze; halftone background; radial lines; sweat spray',
       },
       [
-        'Boxing anime freeze frame of a counterpunch landing, sweat spraying in a fan, the background snapped to flat yellow halftone with radial lines exploding from the contact point, thick ink on both fighters. No readable text or logo.',
-        'Boxing anime frame of a fighter slumped in the corner between rounds while the trainer shouts, ring lights blazing overhead. No readable text or logo.',
-        'Boxing anime frame of shadow boxing in an empty gym, fists leaving graphic trails in the air. No readable text or logo.',
+        "A counterpunch lands and sweat sprays in a perfect fan while the background snaps to flat yellow halftone and the whole crowd vanishes. No readable text or logo.",
+        "Two boxers land simultaneous punches and both faces stretch into wild rubbery shapes while the referee covers his own eyes. No readable text or logo.",
+        "In a flooded abandoned gym a boxer shadowboxes against his reflection in the water, and the reflection lands the first hit. No readable text or logo.",
       ],
     ),
     'SP05-357': u(
@@ -130,9 +130,9 @@ const spec: Spec = {
         key_features: 'curving ball trail; warped table; paddle spin; concentration',
       },
       [
-        'Table tennis anime frame of a smash leaving a curving white trail that bends impossibly around the net, the blue table warped slightly by the tension, both players leaning in with total concentration. No readable text or logo.',
-        'Table tennis anime close-up of a paddle brushing under the ball to create heavy backspin, rubber texture visible. No readable text or logo.',
-        'Table tennis anime frame of a quiet rally in an empty school gym at dusk, long shadows. No readable text or logo.',
+        "A smash leaves a white trail that bends around the net and loops twice before landing, the blue table warping under the spin. No readable text or logo.",
+        "Two old men in bathrobes play a ferocious match at a hot-spring inn, the ball spinning so hard it makes the steam spiral. No readable text or logo.",
+        "Alone in a gym, a player faces a launcher firing a hundred balls at once, each one curving in a different impossible direction. No readable text or logo.",
       ],
     ),
   },

@@ -614,7 +614,7 @@ export const GENERATED_STYLE_PRESETS = [
   },
   {
     id: 'SP05-326',
-    name: 'Masaaki Yuasa - Rubber Reality Sprint',
+    name: 'Rubber Reality Sprint Style',
     category: '5. Anime Style Spectrum',
     negativePrompt:
       "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, elastic distortion changing identity or construction, bent planes breaking requested perspective, brush noise obscuring silhouette",

@@ -7,142 +7,142 @@ const spec: Spec = {
   updates: {
     'SP05-147': {
       briefs: [
-        'Early-digital anime frame of two classmates standing apart on a snowy train platform after an argument, delicate contours, soft compositing of falling snow and gentle value contrast, her scarf the only strong color. No readable text or logo.',
-        'Winter romance anime frame of a boy waiting outside a lit bakery window at night, breath clouds rising, soft digital glow around the shop and snow collecting on his shoulders and hat. No readable text or logo.',
-        'Winter romance anime frame of two hands almost touching inside a shared coat pocket as they walk under a row of bare trees wrapped in small lights. No readable text or logo.',
+        "Two former lovers stand at opposite ends of a snowy train platform after an argument, and the snow falls only on the empty space between them. No readable text or logo.",
+        "A couple fighting over the last heated seat at a frozen bus stop end up sharing it back to back, both pretending to be asleep. No readable text or logo.",
+        "Under one flickering streetlight in a blizzard, a woman holds out a scarf she knitted for someone who stopped coming, snow piling slowly on her outstretched arm. No readable text or logo.",
       ],
     },
     'SP05-149': {
       briefs: [
-        'Clan comedy anime frame of a huge eccentric family exploding into an argument around a dinner table, elastic reaction shapes, economical ink lines and one small cat still calmly eating in the middle of the chaos. No readable text or logo.',
-        'Clan comedy anime frame of a grandmother suplexing a relative in the dojo while the rest of the family cheers with snacks, held beat followed by a sudden snap of motion lines. No readable text or logo.',
-        'Clan comedy anime frame of cousins racing down a temple staircase on a stolen futon, faces stretched with elastic panic and a priest shouting. No readable text or logo.',
+        "A huge eccentric family's dinner argument escalates until grandma flips the table and every dish lands perfectly upright on the ceiling. No readable text or logo.",
+        "Three generations of a feuding clan hold a silent staring contest across a funeral hall, every face twitching one notch further than the last. No readable text or logo.",
+        "A shy new in-law steps into the family home to find twelve relatives frozen mid-brawl, all instantly smiling and bowing in perfect unison. No readable text or logo.",
       ],
     },
     'SP05-151': {
       briefs: [
-        'Pop reality-bend anime frame of a schoolgirl walking to school while the street behind her folds upward like a pop-up book, clean graphic shapes and stable readable forms despite the impossible geometry. No readable text or logo.',
-        'Pop reality-bend anime frame of a boy opening his locker to find a tiny beach inside with waves and gulls, clean graphic colors and an ordinary hallway around him. No readable text or logo.',
-        'Pop reality-bend anime frame of a city bus driving along the side of a skyscraper while passengers read calmly, bright flat colors and stable shapes. No readable text or logo.',
+        "A woman walks to work while the street behind her folds upward like a pop-up book, the buildings flattening into bright paper cutouts. No readable text or logo.",
+        "A vending machine opens onto a second, sunnier copy of the same alley, where the heroine's double waves back holding the same soda. No readable text or logo.",
+        "The sky over a small town peels back like a sticker, revealing a giant cartoon eye blinking in slow surprise at the people below. No readable text or logo.",
       ],
     },
     'SP05-152': {
       briefs: [
-        'Deadpan mayhem anime frame of a samurai calmly sipping tea in a modern convenience store while chaos erupts behind him, minimal expression shifts, restrained contour and a sudden burst of motion in the background. No readable text or logo.',
-        'Deadpan anime frame of three ronin arguing about pizza toppings in a feudal teahouse, all perfectly still except one eyebrow twitching. No readable text or logo.',
-        'Deadpan anime frame of a warrior sitting motionless on a runaway rickshaw as it crashes through a market, the villagers diving aside. No readable text or logo.',
+        "A samurai sips tea at a convenience store counter while a shopping cart chase, a small fire and a runaway horse unfold behind him in total silence. No readable text or logo.",
+        "A court lady in layered silk robes calmly balances her household ledger on a laptop as masked raiders smash through the paper walls behind her. No readable text or logo.",
+        "A rickshaw driver in full lacquered armor waits patiently at a modern red light while a flying saucer lands in the middle of the intersection. No readable text or logo.",
       ],
     },
     'SP05-154': {
       briefs: [
-        'Clinical nocturne anime frame of a strategist in a pale uniform studying a glowing tactical table in a dark command room, precise edge separation, grouped shadows and a controlled cold palette around him. No readable text or logo.',
-        'Clinical nocturne anime frame of a sniper lying prone on a moonlit rooftop, measured shadow groups and precise edges on the rifle and coat. No readable text or logo.',
-        'Clinical nocturne anime frame of a chessboard in an empty hospital ward at night, one piece moved and a monitor glowing. No readable text or logo.',
+        "A strategist in a pale uniform moves one piece on a glowing tactical table, and every window in the city outside goes dark in the same pattern. No readable text or logo.",
+        "Two generals play a final game of chess in a bunker at 3 a.m., both knowing the board mirrors the real battle raging overhead. No readable text or logo.",
+        "A grave midnight war council grinds to a halt as the supreme tactician realizes she has been reading the map upside down the whole time. No readable text or logo.",
       ],
     },
     'SP05-156': {
       briefs: [
-        'Summer loop anime frame of a boy and girl sitting on a crosswalk railing in a blazing summer afternoon, cicadas loud, clear ink contours, soft compositing and painted background of an ordinary town that feels wrong. No readable text or logo.',
-        'Summer loop anime frame of the same park bench shown on the same afternoon with small details changed, a clean digital finish and painted background. No readable text or logo.',
-        'Summer loop anime frame of a girl on a rooftop holding a melting ice pop as a truck passes below, heat shimmer. No readable text or logo.',
+        "Two friends sit on a crosswalk railing on a blazing summer afternoon as the same truck passes for the fifteenth time, its driver waving exactly the same way. No readable text or logo.",
+        "A woman wakes on the same August morning again and finds her bedroom wall covered floor to ceiling in her own tally marks from earlier loops. No readable text or logo.",
+        "Fireworks hang frozen over a summer festival, and one visitor slowly notices that nobody in the crowd around her ever blinks. No readable text or logo.",
       ],
     },
     'SP05-157': {
       briefs: [
-        'Vertical speed rebellion anime frame of a skater gang launching off a rooftop ramp into the sky above the city on inline skates, directional contours, vertical lift and readable motion marks trailing their wheels. No readable text or logo.',
-        'Vertical speed anime frame of a girl wall-running up a skyscraper on air-powered skates, the street far below and motion marks tracing her path. No readable text or logo.',
-        'Vertical speed anime frame of a skater chase spiraling down a multi-level parking garage, riders dropping from level to level with directional motion marks and a helicopter searchlight sweeping through the gaps. No readable text or logo.',
+        "A skater gang launches off a rooftop ramp into the sky above the city on inline skates, spray-paint trails arcing behind them in candy colors. No readable text or logo.",
+        "A rebel courier skates straight up the glass face of a skyscraper while office workers press their faces to the windows as she passes. No readable text or logo.",
+        "An elderly man on roller skates leads a police chase down a spiral parking garage, his cane tucked under one arm like a jousting lance. No readable text or logo.",
       ],
     },
     'SP05-159': {
       briefs: [
-        'Punk melodrama anime frame of a singer with black lipstick and a spiked collar standing in a rainy phone booth, hard dark contours, irregular accents and roughened edges, city lights smeared behind the glass. No readable text or logo.',
-        'Punk melodrama anime frame of two roommates in a tiny apartment strewn with records and guitar cables, fighting and then collapsing into laughter on the floor, hard dark contours and roughened edges. No readable text or logo.',
-        'Punk melodrama anime frame of a band playing their hearts out to a nearly empty bar on a rainy Tuesday night, a single bartender nodding along and irregular accents on the stage lights. No readable text or logo.',
+        "A singer with black lipstick and a spiked collar stands in a rainy phone booth screaming a love song into a receiver whose cord has been cut. No readable text or logo.",
+        "Two punk roommates share one umbrella in a downpour, arguing furiously while each keeps tilting it over the other. No readable text or logo.",
+        "A bassist sleeps on a heap of amplifiers in a burned-out rehearsal room, a single white rose wedged under her guitar strings. No readable text or logo.",
       ],
     },
     'SP05-160': {
       briefs: [
-        'Rose elite comedy anime frame of a group of pampered rich students fainting dramatically as a scholarship girl beats them at a chess tournament, elastic reaction shapes, quick timing and refined clean linework. No readable text or logo.',
-        'Elite comedy anime frame of a white-gloved butler serving a lavish feast to a single bored heiress at a hundred-meter dining table, clean refined linework and a comic elastic yawn. No readable text or logo.',
-        'Elite comedy anime frame of a rose-filled white limousine stuck in a narrow village lane, farmers and goats staring as the rich students climb out through the sunroof. No readable text or logo.',
+        "A roomful of pampered heirs faint in a wave of rose petals as the scholarship student beats every one of them at chess in a single afternoon. No readable text or logo.",
+        "A host club of elegant young men compete to serve one bored customer, their teacups crowding the table like a porcelain army. No readable text or logo.",
+        "The heir to a vast fortune tries to buy an entire fish market to impress a woman, and the fishmongers cross their arms and refuse to be bought. No readable text or logo.",
       ],
     },
     'SP05-024': {
       briefs: [
-        'Alchemical moral geometry anime frame of two young alchemists kneeling inside a vast transmutation circle drawn on a stone floor, linework organized by repeated geometry, measured axes and controlled value contrast. No readable text or logo.',
-        'Alchemical geometry anime frame of a desert city rebuilt in a single burst of symmetrical light from a circle drawn in the sand. No readable text or logo.',
-        'Alchemical geometry anime frame of a teacher drawing a perfect circle on a chalkboard in an empty classroom at dusk, the chalk lines faintly glowing and measured geometric shadows falling across the desks. No readable text or logo.',
+        "An alchemist kneels at the center of a geometric circle etched across a frozen lake as the ice rises around her into a cathedral of crystal. No readable text or logo.",
+        "In an abandoned laboratory an alchemist faces the price of his experiment: his shadow, drawn in perfect geometry across the floor, is missing an arm. No readable text or logo.",
+        "An alchemist tries to transmute a better breakfast and instead folds the whole kitchen into flawless geometric origami, eggs included. No readable text or logo.",
       ],
     },
     'SP05-026': {
       briefs: [
-        'Operatic rebellion anime frame of a masked strategist raising his arm before a rebel army in a ruined cathedral, opposing visual masses, rising diagonals and clean digital linework under shafts of light. No readable text or logo.',
-        'Operatic rebellion anime frame of a chess game played on a rooftop between two rivals as the city burns below. No readable text or logo.',
-        'Operatic rebellion anime frame of a young emperor calmly signing a decree at a marble desk while soldiers break down the tall doors behind him, rising diagonals and clean digital linework. No readable text or logo.',
+        "A masked strategist raises his arm before a rebel army in a ruined opera house, the fallen chandelier lying at his feet like a broken crown. No readable text or logo.",
+        "An exiled prince plays chess alone on a moving train while, outside the window, his rebellion lights signal fires on every hill. No readable text or logo.",
+        "A cloaked rebel mastermind delivers a thunderous speech to his army, unaware that his cape is caught in the elevator doors behind him. No readable text or logo.",
       ],
     },
     'SP05-027': {
       briefs: [
-        'Spiral overdrive anime frame of a small drill-wielding boy and a giant robot bursting up through the surface of the earth into a blazing sky, upward thrust, exaggerated scale contrast and rhythmic shape hierarchy. No readable text or logo.',
-        'Spiral overdrive anime frame of a robot the size of a galaxy punching through a nebula, absurd scale and upward thrust. No readable text or logo.',
-        'Spiral overdrive anime frame of a crowd of villagers on a hilltop cheering as a tiny hero in goggles points at the sky, a drill-shaped ship rising behind them in exaggerated scale. No readable text or logo.',
+        "A tiny welder and her junkyard robot punch upward through a mountain in one spiral blow, boulders orbiting them like a galaxy. No readable text or logo.",
+        "A giant robot the size of a continent winds up to throw a moon like a baseball, its tiny pilot grinning through the cockpit glass. No readable text or logo.",
+        "A crew of reckless misfits strike heroic poses atop their battered robot in the pouring rain, capes streaming, having clearly forgotten what they were fighting. No readable text or logo.",
       ],
     },
     'SP05-030': {
       briefs: [
-        'Gothic soul-pop action anime frame of a scythe-wielding student leaping across moonlit rooftops after a shadow creature, ornamental shadow shapes, crisp graphic accents and clear motion contours. No readable text or logo.',
-        'Gothic soul-pop anime frame of a gunslinger girl firing two ornate pistols inside a cathedral full of floating candles, ornamental shadow shapes and crisp graphic muzzle flashes. No readable text or logo.',
-        'Gothic soul-pop anime frame of a skull-shaped academy at night under a grinning crescent moon, students in black uniforms walking up the long stairs with lanterns. No readable text or logo.',
+        "A scythe-wielding reaper leaps across moonlit rooftops after a shadow creature while a crooked clock tower below leans over to watch the chase. No readable text or logo.",
+        "A weapon master and her living-sword partner argue on a rooftop over who claims the captured soul, which floats awkwardly between them waiting. No readable text or logo.",
+        "In a reaper academy ballroom at midnight the band plays faster and faster as the dancers' shadows break away and start fighting on their own. No readable text or logo.",
       ],
     },
     'SP05-141': {
       briefs: [
-        'Gothic punk anime frame of a vampire girl with a guitar standing on a church roof in a thunderstorm, ornamental dark contours, rough ink texture and pulsing highlight accents on her strings. No readable text or logo.',
-        'Gothic punk anime frame of a band of monster teenagers playing a midnight show in a graveyard, a werewolf drummer and a ghost bassist, rough ink texture and pulsing highlights. No readable text or logo.',
-        'Gothic punk anime frame of a coffin-shaped tour bus parked outside a crumbling castle in the rain, band members unloading amps under ornamental dark contours. No readable text or logo.',
+        "A vampire guitarist plays on a church roof in a thunderstorm, and every lightning strike lands exactly on her downbeat. No readable text or logo.",
+        "A punk band of gargoyles wakes on a cathedral ledge at dawn, frantically trying to finish their song before the sunrise turns them back to stone. No readable text or logo.",
+        "In a crypt lit only by one amplifier's red glow, a musician tunes a bass guitar strung with glistening spider silk. No readable text or logo.",
       ],
     },
     'SP05-145': {
       briefs: [
-        'Sky-surf romance anime frame of a boy riding a surfboard-like hoverboard through clouds beside a girl on a small aircraft, fine contours, smooth transitions and integrated background paint of a bright summer sky. No readable text or logo.',
-        'Sky-surf anime frame of two riders resting on a floating rock island at sunset with their boards beside them, soft integrated background paint of pink clouds and fine contours. No readable text or logo.',
-        'Sky-surf anime frame of a crowd cheering on the cliffs as racers surf the wind above a bright ocean, smooth transitions and summer sky painting. No readable text or logo.',
+        "A courier rides a board on the wind through a canyon of clouds beside a girl in a tiny aircraft, both reaching for the same falling paper crane. No readable text or logo.",
+        "Two lovers surf a wave of cloud so tall it curls over an entire city, their boards leaving glowing trails through the sunset. No readable text or logo.",
+        "A retired sky surfer sits on a hilltop beside his cracked board, watching younger riders loop through the clouds he used to own. No readable text or logo.",
       ],
     },
     'SP05-146': {
       briefs: [
-        'Velvet covenant gothic anime frame of a pale young lord and his contracted guardian standing in a candlelit library, ornate shadow shapes, polished edge light and soft velvety dark values. No readable text or logo.',
-        'Velvet gothic anime frame of a ball in a haunted manor where every dancer is translucent except one living girl in red, ornate shadow shapes and polished edge light on the chandeliers. No readable text or logo.',
-        'Velvet gothic anime frame of a coffin slowly opening in a candlelit crypt as rose petals fall from the ceiling, soft velvety darks and polished silver highlights. No readable text or logo.',
+        "A pale young lord and his contracted guardian stand in a candlelit library, the guardian's shadow on the wall far larger and hungrier than he is. No readable text or logo.",
+        "Pouring a full tea service with one gloved hand, a guardian duels a masked intruder with the other and never spills a drop. No readable text or logo.",
+        "An aristocrat seals a covenant in black candle wax at midnight, and every portrait in the long gallery slowly turns its head to watch. No readable text or logo.",
       ],
     },
     'SP05-150': {
       briefs: [
-        'Crimson threshold anime frame of a swordsman standing in a doorway between a burning village and a dark forest, a clear division of value down the middle and embers drifting across the line. No readable text or logo.',
-        'Crimson threshold anime frame of a girl standing on a bridge half in sunset red and half in blue night. No readable text or logo.',
-        'Crimson threshold anime frame of a shrine gate glowing red at dusk with complete darkness on the far side, a girl in a school coat standing exactly at the line of divided value. No readable text or logo.',
+        "A swordsman stands in a doorway between a burning village and a dark forest, embers falling on one shoulder and snow on the other. No readable text or logo.",
+        "A shrine maiden holds a red gate shut against a wall of fire with her bare hands, embers swirling around her like moths. No readable text or logo.",
+        "A lantern seller at the edge of a scorched town trades glowing embers for memories, a queue of ash-covered customers waiting in silence. No readable text or logo.",
       ],
     },
     'SP05-153': {
       briefs: [
-        'Techno-gothic exorcism anime frame of a priest-hacker in a long coat banishing a digital demon inside a server room cathedral, luminous edges, fine scan-like marks and ornate dark shadow between the racks. No readable text or logo.',
-        'Techno-gothic anime frame of a nun with a glowing visor walking through a neon-lit cemetery at night, scan-like marks along the tombstones and ornate dark shadow under the trees. No readable text or logo.',
-        'Techno-gothic anime frame of a possessed android kneeling in a ruined chapel, luminous edges flickering along its cracked face and fine scan marks in the dusty air. No readable text or logo.',
+        "A priest-hacker in a long coat banishes a digital demon inside a server-room cathedral whose circuit boards glow like stained glass. No readable text or logo.",
+        "An exorcist performs last rites over a haunted smartphone as its screen cracks into the shape of a screaming face. No readable text or logo.",
+        "Nuns in data visors chant around a blinking mainframe while a pixelated ghost claws at the inside of its casing. No readable text or logo.",
       ],
     },
     'SP05-155': {
       briefs: [
-        'Noble arcane romcom anime frame of a flustered young sorcerer and an arrogant noble girl stuck together by a botched spell in an academy courtyard, upright contours, refined shape boundaries and measured luminous accents. No readable text or logo.',
-        'Arcane romcom anime frame of a familiar-summoning lesson going wrong in a crowded classroom, a giant fluffy creature filling the room and students squashed against the windows. No readable text or logo.',
-        'Arcane romcom anime frame of a moonlit academy ball with floating lanterns, a nervous sorcerer offering his hand to a proud noble girl, refined contours and measured luminous accents. No readable text or logo.',
+        "A flustered young sorcerer and an arrogant noblewoman are bound together at the wrist by a botched spell in the middle of a formal academy ball. No readable text or logo.",
+        "Summoning a legendary familiar, an aristocratic mage gets a sleepy commoner holding a mop while the whole academy courtyard gasps. No readable text or logo.",
+        "An enchanted love letter chases a mortified wizard through the academy halls, flapping and diving at him like an angry bird. No readable text or logo.",
       ],
     },
     'SP05-158': {
       briefs: [
-        'Ecological healing anime frame of a young healer walking through a forest recovering after a fire, softened edges, selective detail on new sprouts and gentle integration with the painted background. No readable text or logo.',
-        'Ecological healing anime frame of a small mushroom spirit guiding a lost traveler through a misty forest path, softened edges and gentle painted background integration. No readable text or logo.',
-        'Ecological healing anime frame of villagers planting saplings on a bare hillside at dawn, children carrying watering cans and selective detail on the fresh leaves. No readable text or logo.',
+        "A healer walks through a forest recovering from fire, and each step she takes sends green moss creeping outward over the charred trunks. No readable text or logo.",
+        "An old healer listens to a sick tree through a stethoscope while a family of owls peers down anxiously from the branches. No readable text or logo.",
+        "A giant sleeping stag made of ferns and moss breathes slowly beside a village as healers tend the saplings sprouting from its back. No readable text or logo.",
       ],
     },
   },

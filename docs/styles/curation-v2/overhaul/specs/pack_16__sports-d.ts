@@ -34,9 +34,9 @@ const spec: Spec = {
         key_features: 'mud; scrums; rain; final push',
       },
       [
-        'Rugby comeback anime ground-level frame inside a collapsing scrum in pouring rain, mud-caked faces straining, torn jerseys and steam rising off bodies, the final minute on a stormy afternoon. No readable text or logo.',
-        'Rugby anime frame of a battered winger breaking through a tackle and sprinting down the touchline in the rain, mud flying from her boots and the crowd rising behind the fence. No readable text or logo.',
-        'Rugby anime frame of a team huddled in a dripping locker room at halftime, bandaged hands stacked in the center and the captain shouting. No readable text or logo.',
+        "Inside a collapsing scrum in pouring rain, mud-caked faces strain as the ball squirts out of the pile like a seed from a fruit. No readable text or logo.",
+        "A tiny winger sprints the length of a flooded pitch while giant forwards splash comically behind him, one losing both boots. No readable text or logo.",
+        "At the final whistle both teams lie flat in the mud under the rain, laughing, too exhausted to stand up. No readable text or logo.",
       ],
     ),
     'SP05-359': u(
@@ -58,9 +58,9 @@ const spec: Spec = {
         key_features: 'spotlit ice; spin arcs; ice reflections; sequined costume',
       },
       [
-        'Figure skating anime frame of a skater mid-spin under a single spotlight, the arena dark, ice spraying from her blade in a glittering arc, her sequined violet costume and her reflection trembling on the ice. No readable text or logo.',
-        'Figure skating anime frame of a skater kneeling at the end of a program with tears in his eyes, flowers raining onto the ice. No readable text or logo.',
-        'Figure skating anime frame of a pair lift at dawn practice in an empty rink, breath and blade scratches. No readable text or logo.',
+        "A skater spins under a single spotlight, and the ice spraying from her blade freezes midair into a glittering crown around her. No readable text or logo.",
+        "A skater's costume tears mid-routine and she keeps going, turning the flapping fabric into part of the choreography. No readable text or logo.",
+        "An aging champion skates alone on a frozen lake at dusk, tracing the routine that won her gold decades ago. No readable text or logo.",
       ],
     ),
     'SP05-360': u(
@@ -81,9 +81,9 @@ const spec: Spec = {
         key_features: 'full draw; stillness; long range; fine line',
       },
       [
-        'Traditional archery anime frame of a young archer at full draw in profile on a wooden range, white and black dress, the long bow bent, a distant target glowing in soft garden light and petals hanging still in the air. No readable text or logo.',
-        'Archery anime frame of the instant after release, the string still vibrating and the arrow a thin line halfway to the target. No readable text or logo.',
-        'Archery anime frame of an old master watching a student from the veranda, tea steaming beside him. No readable text or logo.',
+        "An archer holds full draw in profile while a falling maple leaf stops midair right at the arrow tip, waiting for the release. No readable text or logo.",
+        "An arrow passes through a curtain of rain so cleanly that every drop parts around it, the archer's eyes still closed. No readable text or logo.",
+        "At dawn in a snowy hall an old archery master draws a bow with no arrow, and the distant target still shivers. No readable text or logo.",
       ],
     ),
     'SP05-361': u(
@@ -107,9 +107,9 @@ const spec: Spec = {
         key_features: 'repetition; sunrise runs; worn gear; small progress',
       },
       [
-        'Training montage anime frame of a boy doing sunrise sprints on a riverbank, his shadow long on the grass, a notebook of drills and times sitting on his bag with a cracked stopwatch. No readable text or logo.',
-        'Training anime frame of a girl practicing serves alone in a gym long after everyone left, balls scattered around her. No readable text or logo.',
-        "Training anime frame of a coach tapping a student's taped fingers and nodding, the first sign of approval. No readable text or logo.",
+        "A runner does sunrise sprints along a riverbank, and each lap leaves a slightly faster ghost of herself running ahead. No readable text or logo.",
+        "A clumsy trainee catches his thousandth ball of the day in a sunset field, the elderly coach finally lowering the bucket. No readable text or logo.",
+        "A weightlifter has added one grain of rice a day to a barbell in her tiny apartment, and after ten years the bar has finally begun to bend. No readable text or logo.",
       ],
     ),
     'SP05-362': u(
@@ -131,9 +131,9 @@ const spec: Spec = {
         key_features: 'white suits; mesh masks; blade glints; long piste',
       },
       [
-        'Fencing anime frame of two fencers lunging along a spotlit piste, white suits crisp against a navy arena, blades crossing in a bright glint and mesh masks reflecting each other. No readable text or logo.',
-        'Fencing anime close-up of a fencer removing her mask with a victorious smile, hair falling loose. No readable text or logo.',
-        'Fencing anime frame of a rival saluting before a bout, a single rose on the bench behind. No readable text or logo.',
+        "Two fencers lunge along a spotlit piste, blades crossing in a bright spark while their mirrored masks reflect each other endlessly. No readable text or logo.",
+        "A fencer duels her rival on the roof of a speeding night train, their white suits snapping in the wind. No readable text or logo.",
+        "A victorious fencer takes her bow, not yet aware that her rival pinned a red rose to her back with the final touch. No readable text or logo.",
       ],
     ),
     'SP05-363': u(
@@ -153,9 +153,9 @@ const spec: Spec = {
         key_features: 'unison; mirrored poses; aerial pyramid; symmetry',
       },
       [
-        'Synchronized team anime frame of a cheer squad throwing a flyer high above a human pyramid, every teammate mirrored perfectly, bright team colors against a clear blue sky. No readable text or logo.',
-        'Synchronized anime frame of two divers leaving the platform in perfect unison, mirrored bodies against the pool blue. No readable text or logo.',
-        'Synchronized anime overhead frame of eight swimmers forming a blooming flower pattern in a turquoise pool, legs rising in perfect unison, ripples spreading in rings and the audience reflected at the edges. No readable text or logo.',
+        "A cheer squad throws a flyer so high above a human pyramid that she passes a flock of very startled geese. No readable text or logo.",
+        "Ten divers leap from a sea cliff in perfect unison, their silhouettes forming one enormous bird against the sunset. No readable text or logo.",
+        "Legs rising together like lilies through still water, a swimming team performs its routine inside a flooded ruined chapel. No readable text or logo.",
       ],
     ),
     'SP05-364': u(
@@ -177,9 +177,9 @@ const spec: Spec = {
         key_features: 'work lights; tape marks; bare stage; repetition',
       },
       [
-        'Theater rehearsal anime frame of a lone actress on a bare black stage under a single work light, tape marks on the floor, repeating the same gesture for the twentieth time while a director watches from the dark seats. No readable text or logo.',
-        'Rehearsal anime close-up of an actor mid-line with tears and sweat on his face under a harsh work light, the rest of the black box empty and a roll of tape by his feet. No readable text or logo.',
-        'Rehearsal anime frame of a cast lying on the stage floor at 2 a.m., exhausted and laughing. No readable text or logo.',
+        "A lone actress repeats one gesture under a single work light until her shadow on the back wall starts doing it wrong on purpose. No readable text or logo.",
+        "A director makes the whole cast rehearse tumbling down a staircase for the hundredth time while the prop skeleton in the wings looks bored. No readable text or logo.",
+        "At 4 a.m. in a dark theater a stagehand watches an actor rehearse to an audience made of coats draped over the seats. No readable text or logo.",
       ],
     ),
   },

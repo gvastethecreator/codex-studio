@@ -8,107 +8,107 @@ const spec: Spec = {
   updates: {
     'SP05-001': {
       briefs: [
-        'Retro 70s anime frame of an original young hero in a red scarf standing on the hull of a battered sky-ship above the clouds, broad confident ink contours, two-step cel shadows and a painted sunset background with visible brush texture. No readable text or logo.',
-        'Retro 70s anime frame of a boy inventor and his round robot companion running across a harbor pier as a giant tidal wave rises behind them, sturdy silhouettes and emphatic held cel masses. No readable text or logo.',
-        'Retro 70s anime frame of a determined girl pilot saluting beside her small propeller plane on a windswept grass airfield, bold ink turns and flat sky color. No readable text or logo.',
+        "A scarf-wrapped sky pilot leaps from her burning biplane onto the back of a migrating whale the size of an island, clouds tearing past under a painted sunset. No readable text or logo.",
+        "An inventor's round tin robot proudly tows an entire fishing village behind it on a rope, having mistaken it for a boat, while the villagers wave from their rooftops. No readable text or logo.",
+        "At dawn a young mechanic finds her father's lost airship grounded in a wheat field, its hull crusted with barnacles as if it had spent twenty years underwater. No readable text or logo.",
       ],
     },
     'SP16-001': {
       briefs: [
-        'Limited-animation anime frame of a detective in a trench coat standing under a streetlamp while rain falls in a painted city background, economical ink contours, opaque cel shapes and a separately painted background plate visible behind him. No readable text or logo.',
-        'Limited-animation anime frame of a family eating dinner around a low table, only the mouths and chopsticks moving, flat cel colors over a painted room. No readable text or logo.',
-        'Limited-animation anime frame of a horse and rider galloping past a painted mountain background that slides by in a single long pan. No readable text or logo.',
+        "A trench-coated detective stands frozen mid-step under a streetlamp while only the rain moves around him, the painted city behind sliding past like a stage flat. No readable text or logo.",
+        "Six salarymen eat dinner in total silence around a low table, only their chopsticks moving, while a goldfish in a bowl watches them with enormous judgmental eyes. No readable text or logo.",
+        "A horseman races a thunderstorm across one endless painted mountain pan, lightning striking the same distant peak again and again as the background loops. No readable text or logo.",
       ],
     },
     'SP05-311': {
       briefs: [
-        'Retro eco-hope anime frame of a young girl planting a seedling in the cracked ruins of a rusted city, weathered dry-brush contours, softly worn pigment edges and a pale green sky opening over the wreckage. No readable text or logo.',
-        'Retro eco anime frame of a rusted giant robot lying in a meadow overgrown with flowers, children climbing on its hand, weathered edges and soft pigment. No readable text or logo.',
-        'Retro eco anime frame of a caravan of patched solar wagons crossing a cracked desert toward a small green oasis at dawn, children waving from the roofs, dry-brush contours and softly weathered pigment on every surface. No readable text or logo.',
+        "A retired war robot, rusted into lace, kneels in a flooded city square so a gardener can plant tomatoes in the crater of its open chest. No readable text or logo.",
+        "Wild goats have claimed the control deck of a stranded aircraft carrier, grazing on moss between the dials while a lone caretaker brews tea for them. No readable text or logo.",
+        "A caravan of patchwork solar wagons crosses a salt flat at dawn toward a single green tree, every wagon roof carrying a tiny garden planted in an old bathtub. No readable text or logo.",
       ],
     },
     'SP05-003': {
       briefs: [
-        'Jazzy heist anime frame of an original gentleman thief in a slim suit sliding down a museum banister at midnight with a jeweled egg under his arm, syncopated thick-and-hairline ink strokes, a laughing partner at the top of the stairs. No readable text or logo.',
-        'Jazzy heist anime frame of a getaway car drifting around a harbor corner with a lady thief firing a grappling hook from the window, clipped curves and bouncing rhythm. No readable text or logo.',
-        'Jazzy heist anime frame of a thief and a police inspector sharing a coffee on a rooftop at dawn, relaxed poses and sly smiles. No readable text or logo.',
+        "A gentleman thief slides down a museum banister at midnight balancing a jeweled egg on his hat, the night guards tangled in their own flashlight cords below. No readable text or logo.",
+        "A lady safecracker hangs upside down from a chandelier inside a grand casino vault, playing the lock tumblers with her fingertips like a jazz drummer on brushes. No readable text or logo.",
+        "On a wet rooftop at dawn, a thief and the inspector who hunted him for ten years share one umbrella and one thermos of coffee, neither willing to leave first. No readable text or logo.",
       ],
     },
     'SP05-004': {
       briefs: [
-        'Melancholy space opera anime frame of a lone woman in a long coat watching a derelict starship drift past a violet nebula from an observation window, sweeping contours, quiet edge weight and broad tonal pauses. No readable text or logo.',
-        'Melancholy space opera anime frame of a boy saying goodbye to a mysterious woman on a train platform floating in space. No readable text or logo.',
-        'Melancholy space opera anime frame of a captain playing an old piano alone in the ruined mess hall of his ship. No readable text or logo.',
+        "A woman in a long coat keeps a lighthouse on the rim of a violet nebula, waving her lantern at a derelict starship that has drifted past once a century for a thousand years. No readable text or logo.",
+        "A grieving captain plays a piano bolted to the outer hull of her ship, floating slowly through the wreckage of the fleet she lost, starlight pooling on the keys. No readable text or logo.",
+        "Two lovers part forever on a train platform floating in space while an elderly porter sweeps stardust between their feet, pointedly refusing to look up. No readable text or logo.",
       ],
     },
     'SP05-008': {
       briefs: [
-        'Retro anime frame with procedural irony: a bored office clerk stamping forms in a vast neon-lit bureau where every desk is identical, precise squared contours, abrupt accent strokes and flat hard-edged cel shadows. No readable text or logo.',
-        'Retro ironic anime frame of a robot waiter politely serving soup to a table of sleeping businessmen in a neon diner. No readable text or logo.',
-        'Retro ironic anime frame of a line of identical commuters waiting at a futuristic bus stop under a flickering sign. No readable text or logo.',
+        "A bureau clerk stamps forms in an endless neon office of identical desks, unaware that the clerk at the next desk is himself from ten years later. No readable text or logo.",
+        "A polite robot waiter serves soup to a diner full of businessmen who have been asleep for a week, cobwebs linking their neckties to the slow ceiling fans. No readable text or logo.",
+        "An entire commuter crowd waits at a neon bus stop in perfect rows with umbrellas open under the shelter, while the bus itself is visibly asleep at the curb. No readable text or logo.",
       ],
     },
     'SP05-009': {
       briefs: [
-        'Hyper-dense retro cyber anime frame of a courier on a motorbike weaving through a megacity canyon of stacked pipes, cables and blank billboards, dense nested contours and clusters of fine interior marks around a simple dominant silhouette. No readable text or logo.',
-        'Hyper-dense cyber anime frame of a lone maintenance worker inside a vast machine room of pipes, valves and gauges stacked to the ceiling, dense nested contours and fine interior marks around her simple silhouette. No readable text or logo.',
-        'Hyper-dense cyber anime frame of a tiny rooftop vegetable garden squeezed between towering vents, antennas and cooling fans, an old man watering tomatoes while drones pass overhead. No readable text or logo.',
+        "A courier on a motorbike threads a megacity canyon where pipes, cables and exhaust stacks have grown so thick they form a second sky above the streets. No readable text or logo.",
+        "A maintenance worker dangles in a harness inside the heart of a city-sized machine, tightening one bolt among ten million valves that all start hissing at once. No readable text or logo.",
+        "An old man tends a secret rooftop rice paddy squeezed between cooling fans and antenna forests, a white heron standing among delivery drones in the flooded terrace. No readable text or logo.",
       ],
     },
     'SP05-010': {
       briefs: [
-        'Round slapstick adventure anime frame of a chubby explorer and a tiny monkey companion fleeing a giant rolling boulder through a jungle temple, rounded continuous contours, softened corners and thick outline accents on their panicked faces. No readable text or logo.',
-        'Round slapstick adventure anime frame of a clumsy knight-errant tripping headfirst into a lily pond full of startled frogs, his helmet popping off and bouncing, rounded contours and thick outline accents on his shocked face. No readable text or logo.',
-        'Round slapstick anime frame of an entire pirate crew trying to squeeze through a tiny cabin door at once, faces squashed and hats flying, rounded contours and a parrot laughing from the doorframe. No readable text or logo.',
+        "A chubby explorer outruns a rolling temple boulder that has sprouted stone legs and is clearly enjoying the chase, his monkey companion riding on top of it. No readable text or logo.",
+        "An entire pirate crew tries to squeeze through a tiny cabin door at once, faces squashed flat, while the ship's parrot calmly steers the ship into a whirlpool. No readable text or logo.",
+        "A clumsy wandering swordsman trips into a lily pond and surfaces wearing a startled frog like a crown, the frog looking far more heroic than he does. No readable text or logo.",
       ],
     },
     'SP05-301': {
       briefs: [
-        'Analog space opera anime frame of a stern fleet commander standing on the bridge of a battleship as the viewport fills with enemy ships, confident weighty outlines, broad quiet value masses and crew at consoles below. No readable text or logo.',
-        'Analog space opera anime frame of a massive battleship lifting off from a dried ocean bed on a red planet, rust flaking off its hull, weighty outlines and broad quiet value masses in the dust clouds. No readable text or logo.',
-        'Analog space opera anime frame of two officers saluting over a flag-draped coffin in a dim hangar, rows of fighters behind them, confident outlines and heavy quiet shadows. No readable text or logo.',
+        "A fleet admiral refuses to leave her bridge as the viewport fills with a single enemy warship so large it eclipses the sun, the crew standing at attention behind her. No readable text or logo.",
+        "A rusted battleship tears itself free of a dried ocean bed on a red planet, sand pouring off its hull like a waterfall as it rises for one last war. No readable text or logo.",
+        "Two officers salute a draped coffin in a dim hangar, and the empty fighter parked behind them has fresh wildflowers taped along its cockpit glass. No readable text or logo.",
       ],
     },
     'SP05-302': {
       briefs: [
-        'Melancholic space corsair anime frame of a scarred pirate captain in a long black cape standing at the prow of a skull-flagged space galleon, tapered ink strokes, flowing silhouette lines and a vast starfield. No readable text or logo.',
-        'Space corsair anime frame of a pirate drinking alone in a quiet ship cabin, a portrait of a lost friend on the wall. No readable text or logo.',
-        'Space corsair anime frame of a skull-flagged pirate galleon emerging from a violet gas cloud behind a slow merchant convoy, cannons glinting, flowing silhouette lines and tapered ink on the swirling cloud edges. No readable text or logo.',
+        "A scarred corsair stands at the prow of her space galleon, cape snagging on a comet tail, as she steers into a storm no other ship has survived. No readable text or logo.",
+        "Each night a pirate captain pours two cups of wine in his quiet cabin, one for himself and one for the empty chair beneath a faded portrait. No readable text or logo.",
+        "A space galleon drifts through a field of frozen roses left floating by a dead empire, the crew silently fishing them out of the void with long nets. No readable text or logo.",
       ],
     },
     'SP05-303': {
       briefs: [
-        'Celestial journey anime frame of a boy and a pale woman in a fur hat riding a steam train across a starry sky, fine pencil-like ink edges softened by translucent color windows and a quiet melancholy glow. No readable text or logo.',
-        'Celestial journey anime frame of a steam train stopping at a lonely asteroid station lit by a single lamp, a conductor in a long coat stepping down, fine pencil-like contours and translucent color windows. No readable text or logo.',
-        'Celestial journey anime frame of a crowded dining car full of strange travelers in hats and masks as a ringed planet slides past the windows, soft translucent color and quiet melancholy. No readable text or logo.',
+        "A steam train crosses the Milky Way on rails of light, and a traveler in a fur hat leans out of the window to pick a star off the track like ripe fruit. No readable text or logo.",
+        "At a lonely asteroid station lit by one lamp, the conductor hands a traveler a ticket back to her own childhood while the train waits, steaming patiently. No readable text or logo.",
+        "The dining car is full of ghosts of trains that never arrived, all politely sharing tea while a ringed planet slides past the fogged windows. No readable text or logo.",
       ],
     },
     'SP05-304': {
       briefs: [
-        'Baroque insurgent melodrama anime frame of a young noblewoman tearing off her powdered wig as revolutionaries storm the palace hall, ornamental fine-line passages against firm silhouette ink and a sweeping chandelier overhead. No readable text or logo.',
-        'Baroque melodrama anime frame of two duelists facing off in a candlelit mirrored gallery, lace cuffs and drawn rapiers, ornamental fine-line passages on the mirrors against firm silhouette ink. No readable text or logo.',
-        'Baroque melodrama anime frame of a masked rebel escaping over palace rooftops at dawn, cape billowing, soldiers climbing behind her and ornamental ironwork drawn in fine line. No readable text or logo.',
+        "A noblewoman tears off her powdered wig and leads the revolutionaries into her own ballroom, the great chandelier crashing down behind her in a storm of crystal. No readable text or logo.",
+        "Two duelists in lace cuffs cross rapiers inside a mirrored gallery where every reflection has already chosen a different winner. No readable text or logo.",
+        "A masked rebel hides from the royal guard by posing among the palace marble statues, one of which is sweating nervously right beside her. No readable text or logo.",
       ],
     },
     'SP05-305': {
       briefs: [
-        'Sci-fi slapstick rom-com anime frame of an alien princess in a tiger-striped outfit zapping a flustered boy with lightning on a school rooftop, nimble rounded contours, quick expressive ticks and clean cel edges. No readable text or logo.',
-        'Sci-fi rom-com anime frame of a small flying saucer crashing into a town noodle shop, customers and bowls flying out the door, the alien pilot waving sheepishly from the wreck, nimble rounded contours. No readable text or logo.',
-        'Sci-fi rom-com anime frame of a panicking boy pedaling a bicycle down a hill chased by a crowd of jealous classmates on bicycles, an alien girl floating calmly above him. No readable text or logo.',
+        "A tiger-striped alien princess aims a love-struck lightning bolt at one flustered clerk and accidentally freezes an entire karaoke bar in mid-song. No readable text or logo.",
+        "A small flying saucer crash-lands into a ramen shop, and the unfazed cook simply keeps serving the three-eyed pilot now sitting at the counter. No readable text or logo.",
+        "A panicking office worker pedals downhill chased by a stampede of jealous suitors on scooters, while an alien woman floats serenely above him licking a popsicle. No readable text or logo.",
       ],
     },
     'SP05-306': {
       briefs: [
-        'Adult domestic warmth anime frame of a tired young couple sharing instant noodles on the floor of a tiny apartment at midnight, quiet fine-weight contours, emphasis on their small smiles and warm lamp light. No readable text or logo.',
-        'Domestic warmth anime frame of an old widower teaching a neighbor child to fold paper cranes at a kitchen table. No readable text or logo.',
-        'Domestic warmth anime frame of a young mother asleep on a late train with her baby asleep on her lap, an old woman across the aisle quietly draping her own shawl over them, quiet fine contours. No readable text or logo.',
+        "A tired couple shares instant noodles at midnight in their first empty apartment, sitting at a dining table they built from stacked moving boxes. No readable text or logo.",
+        "An elderly widower teaches his new neighbor to fold paper cranes at the kitchen table, a thousand finished cranes crowding every shelf around them. No readable text or logo.",
+        "On the last train home a stranger quietly drapes her shawl over an exhausted young father asleep with a sleeping baby on his chest, city lights streaking past. No readable text or logo.",
       ],
     },
     'SP05-307': {
       briefs: [
-        'Summer sports melodrama anime frame of a baseball pitcher collapsing to his knees on the mound after the final pitch, elastic action contours, narrow speed accents and teammates rushing in under a blazing sky. No readable text or logo.',
-        'Summer sports melodrama anime frame of a young boxer training alone on a riverbank under a railway bridge at sunset, sweat flying from his jabs and a train roaring overhead, elastic action contours. No readable text or logo.',
-        'Summer sports melodrama anime frame of a tennis player crying into a towel on a bench after losing the final, her rival standing awkwardly nearby holding two cans of soda. No readable text or logo.',
+        "A pitcher collapses on the mound after the final pitch of a sweltering summer tournament, and every cicada in the stadium trees falls silent at once. No readable text or logo.",
+        "A boxer trains alone under a railway bridge, punching so hard against the thunder of a passing train that the river beneath him ripples in perfect rings. No readable text or logo.",
+        "A tennis player sobs into a towel after losing the final while her rival stands awkwardly beside her holding two melting ice pops, unsure which one to offer. No readable text or logo.",
       ],
     },
   },

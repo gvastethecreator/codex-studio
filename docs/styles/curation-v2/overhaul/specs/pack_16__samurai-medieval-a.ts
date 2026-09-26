@@ -32,9 +32,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Prestige anime frame of two archers kneeling at opposite ends of a snow-covered temple courtyard, bows lowered, breath visible, the frame wide and silent, raking dawn light and long blue shadows before either moves. No readable text or logo.',
-        "Anime extreme close-up of a tea master's hands resting beside a whisk before a duel of ceremony, one drop of water trembling on the bamboo, faces unseen, crimson lacquer tray in the corner. No readable text or logo.",
-        'Anime frame of a lone spearwoman standing in a flooded rice field at dusk, her reflection perfectly still, a flock of herons frozen mid-rise behind her, the moment before the charge. No readable text or logo.',
+        "Two swordswomen kneel at opposite ends of a snowy courtyard, and a single snowflake drifting between them is the only thing allowed to move. No readable text or logo.",
+        "Two elderly rivals have held the same pre-duel stance for so long that a sparrow has built a nest on the brim of one of their hats. No readable text or logo.",
+        "A duelist waits in a silent bamboo grove as one drop of rain gathers at the tip of a leaf directly above her rival's head. No readable text or logo.",
       ],
     },
     'SP13-027': {
@@ -60,9 +60,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Epic anime frame of a crimson-armored cavalry charge sweeping diagonally across a golden plain, hundreds of repeated banners and spear points, dust glowing in low sun, the front rider screaming. No readable text or logo.',
-        'Anime frame of a shield wall of foot soldiers braced on a muddy hill as arrows rain down, repeated round shields in a curved line, grey sky and blocked cel shadows. No readable text or logo.',
-        'High wide anime frame of two armies meeting in a river valley, formations colliding like waves, tiny riders and a huge sky, speed lines along the clash. No readable text or logo.',
+        "Sweeping across a golden plain as one red wave, a cavalry charge in lacquered armor raises dust behind it like a second army of ghosts. No readable text or logo.",
+        "Every rider of the red army charges in perfect formation except one, whose horse has stopped to eat a flower. No readable text or logo.",
+        "From a hilltop a lone farmer watches the crimson host pour past his tiny rice field without trampling a single stalk. No readable text or logo.",
       ],
     },
     'SP13-028': {
@@ -88,9 +88,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Anime frame of a young squire kneeling alone in a vast stone hall at night, heraldic banners hanging on both sides, colored light from a rose window falling across her back, strict symmetry. No readable text or logo.',
-        "Anime frame of an old queen placing a hand on a child's head in a candlelit chapel, embroidered banners behind, colored light on the flagstones. No readable text or logo.",
-        'Anime frame of a guild of stonemasons swearing an oath around a carved cornerstone in an unfinished cathedral, scaffolding above, sunbeams through the open vaults. No readable text or logo.',
+        "A squire kneels alone in a vast stone hall at night as stained light from the windows lays a glowing mantle across her shoulders. No readable text or logo.",
+        "An aging lord solemnly swears fealty to the small goat that won the harvest fair, his whole court kneeling beneath the banners. No readable text or logo.",
+        "A knight renews her oath at her lord's grave in a storm, lightning briefly revealing a hundred banners on the hillside behind her. No readable text or logo.",
       ],
     },
     'SP13-029': {
@@ -115,9 +115,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Anime frame looking out through a freshly broken castle gate as a battering ram pulls back and fire pours in, splintered beams, embers swirling and silhouetted defenders bracing against the orange light. No readable text or logo.',
-        'Anime frame of a mountain fortress wall collapsing under catapult fire at night, ash clouds rolling, flying stones lit orange and tiny archers falling back from the crumbling parapet. No readable text or logo.',
-        'Anime frame of a burning town gate at night with townsfolk fleeing through the gap, a mother carrying a child through falling embers, carts overturned and smoke pouring over the wall. No readable text or logo.',
+        "A battering ram draws back from a freshly broken gate and fire pours through the gap like a river of embers. No readable text or logo.",
+        "The defenders pour cauldrons of soup on the attackers instead of boiling oil because the cook misunderstood the order, steam billowing everywhere. No readable text or logo.",
+        "After the breach a lone defender sits in the smoking gateway, sharing her last water with a wounded attacker. No readable text or logo.",
       ],
     },
     'SP13-030': {
@@ -143,9 +143,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Anime frame of a monk practicing staff forms alone on a moonlit mountain terrace, breath clouds, frost on the stones, a single lantern glowing at the edge of the frame. No readable text or logo.',
-        'Anime frame of a girl carrying two buckets of water up endless mossy stone steps at night under a full moon, sweat and breath clouds, her old teacher waiting at the top with a lantern. No readable text or logo.',
-        'Anime frame of an archer loosing arrow after arrow at a straw target in a moonlit courtyard, frost on the ground, the quiver nearly empty and her teacher watching silently from a veranda. No readable text or logo.',
+        "A monk practices staff forms on a frozen mountain terrace, and each strike shatters the moonlight on the ice into silver shards. No readable text or logo.",
+        "A novice warrior holds a bucket of water on each outstretched arm for so long that a crane lands on one of them. No readable text or logo.",
+        "An old ascetic meditates beneath a moonlit waterfall that has frozen solid around him during the night. No readable text or logo.",
       ],
     },
   },
@@ -173,9 +173,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Anime action frame of a spear fighter spinning through a bamboo grove, each strike bursting into black ink splatter and wide brush arcs across paper-white space, one red sash trailing. No readable text or logo.',
-        'Anime frame of two duelists passing each other in a leap, their paths drawn as sweeping dry-brush strokes, ink droplets hanging in the air. No readable text or logo.',
-        'Anime frame of a monk on a temple roof deflecting a volley of arrows with a spinning staff, each arrow shattering into black ink splatter and dry-brush flecks against white paper, his robe a single red stroke. No readable text or logo.',
+        "A spear fighter spins through a bamboo grove, and each strike bursts into black ink splatter that scatters into flying crows. No readable text or logo.",
+        "A swordsman slices a falling persimmon into eight pieces with one stroke, the ink arc of his blade still hanging in the air. No readable text or logo.",
+        "A brush-drawn warrior duels her own ink shadow across a blank white scroll, ink dripping from both of their blades. No readable text or logo.",
       ],
     },
     {
@@ -201,9 +201,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Period anime frame colored like a woodblock print: a ferryman poling a boat across a wide river at dusk, indigo water, vermilion bridge, a bokashi gradient sky and paper grain in every flat field. No readable text or logo.',
-        'Woodblock-palette anime frame of a courier running along a coastal cliff road with a huge wave curling behind her, flat indigo and cream foam shapes, a bokashi dawn band and fishing boats as tiny printed silhouettes. No readable text or logo.',
-        'Woodblock-palette anime frame of a night market street in slanting rain, oiled-paper umbrellas as flat vermilion and ochre shapes, a cropped lantern in the foreground and rain drawn as fine parallel lines. No readable text or logo.',
+        "A ferryman poles across a wide river at dusk as a giant carp beneath the boat lifts it gently out of the indigo water. No readable text or logo.",
+        "Fishermen haul in a net holding a sleeping sea god wrapped in indigo kelp, too afraid to wake it and too proud to let go. No readable text or logo.",
+        "A traveling tea seller crosses an arched bridge in a vermilion evening rain, the drops falling as straight indigo lines. No readable text or logo.",
       ],
     },
     {
@@ -230,9 +230,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Slow-motion anime frame of a courier leaping a puddle in heavy rain on a temple road, every raindrop frozen as a glowing bead, a crown of splash suspended under her foot, backlit by a lantern. No readable text or logo.',
-        'Slow-motion anime frame of a warrior shaking water from her hair in a downpour, droplets fanning out in an arc around her head. No readable text or logo.',
-        "Slow-motion anime frame of a grey horse and rider galloping across a flooded road in a storm, mud and water frozen mid-splash around the hooves, the rider's cloak suspended in a curve of droplets. No readable text or logo.",
+        "A courier leaps a puddle on a temple road in heavy rain, every drop frozen as a glowing bead around her flying sandals. No readable text or logo.",
+        "Two duelists draw at the same instant in a downpour, and every falling drop between them is split cleanly in two. No readable text or logo.",
+        "A samurai slips on wet stone mid-duel and hangs suspended in slow motion, one sandal sailing off through the frozen raindrops. No readable text or logo.",
       ],
     },
     {
@@ -258,9 +258,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Anime extreme wide frame of seven cloaked defenders on a snowy ridge facing an unseen army, dark silhouettes against white, falling snow, one red banner snapping in the wind. No readable text or logo.',
-        'Anime close-up of a young soldier with snow caught in her eyelashes and hood, breath freezing into white plumes, a red scarf the only color in a world of pale blue and grey. No readable text or logo.',
-        'Anime extreme wide frame of a lone rider and pack horse crossing an endless frozen lake at dusk, a thin line of hoofprints trailing behind them and a dark forest far away. No readable text or logo.',
+        "Seven cloaked defenders stand on a snowy ridge facing an army too large to see, their red scarves the only color in a white world. No readable text or logo.",
+        "The last defenders of a snowbound fort build an army of a hundred snow soldiers on the wall to fool the enemy at dawn. No readable text or logo.",
+        "After the battle, falling snow slowly covers a single banner still standing upright in the silent field. No readable text or logo.",
       ],
     },
     {
@@ -287,9 +287,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Ultra-wide anime panorama of a hilltop city under siege at sunset, colossal walls and towers casting long shadows, siege towers creeping forward, thousands of tiny soldiers and fires dotting the plain. No readable text or logo.',
-        'Anime panorama of a mountain pass fortress seen from far above, a thin dark line of an army winding up the switchbacks, clouds drifting between the towers and tiny signal fires lit along the walls. No readable text or logo.',
-        'Anime panorama of a walled harbor city besieged by a fleet at dusk, burning galleys drifting in the bay, tiny rowboats ferrying soldiers and smoke leaning across the painted sky. No readable text or logo.',
+        "A hilltop city under siege at sunset casts wall shadows so long they reach the enemy camp miles across the plain. No readable text or logo.",
+        "Siege towers crawl toward a city whose every rooftop has been planted with giant sunflowers to confuse the archers. No readable text or logo.",
+        "From the top of a colossal wall at night, the besieging army's campfires stretch to the horizon like a second starry sky. No readable text or logo.",
       ],
     },
   ] satisfies Create[],

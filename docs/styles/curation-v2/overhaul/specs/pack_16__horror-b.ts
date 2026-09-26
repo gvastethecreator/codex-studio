@@ -50,9 +50,9 @@ const spec: Spec = {
         key_features: 'ordinary scene; one wrong detail; mismatched shadow; lingering frame',
       },
       [
-        'Quiet horror anime frame of a mother washing dishes at a kitchen window in afternoon light, her shadow on the wall reaching with far too many arms, everything else calm and ordinary, a child at the table noticing. No readable text or logo.',
-        'Quiet horror anime frame of a classmate smiling at the camera in a group photo, her neck just slightly too long, nobody else reacting. No readable text or logo.',
-        'Quiet horror anime frame of an old man reading in his armchair by lamp light, his reflection in the dark window still looking at the viewer. No readable text or logo.',
+        "A mother washes dishes at a sunny kitchen window while her shadow on the wall reaches toward the glass with far too many fingers. No readable text or logo.",
+        "An office worker notices that his reflection in the elevator doors stands a few centimeters taller than him every morning. No readable text or logo.",
+        "An old couple sit on a porch at dusk, the husband's posture slowly curved into the shape of the tree beside him while his wife calmly knits. No readable text or logo.",
       ],
     ),
     create(
@@ -78,9 +78,9 @@ const spec: Spec = {
         key_features: 'bright daylight; flower crowns; straw figures; synchronized villagers',
       },
       [
-        'Folk horror anime frame of a midsummer village festival in blinding daylight, villagers in white linen and flower crowns dancing around a tall straw figure, every face smiling the same smile toward a lone visitor holding a camera. No readable text or logo.',
-        "Folk horror anime frame of children weaving a huge straw doll in a barn, the doll wearing the visitor's jacket. No readable text or logo.",
-        'Folk horror anime frame of a long outdoor feast table where every villager has stopped eating to stare at one empty chair. No readable text or logo.',
+        "Villagers in white linen and flower crowns dance around a maypole in blinding daylight, every one of them smiling straight at the visiting photographer. No readable text or logo.",
+        "The straw effigy at a harvest festival is wearing the missing hiker's boots, and everyone in the village insists it always has. No readable text or logo.",
+        "An old woman hands a visitor a flower crown at a midsummer feast, and the flowers woven into it are slowly closing. No readable text or logo.",
       ],
     ),
     create(
@@ -107,9 +107,9 @@ const spec: Spec = {
         key_features: 'empty classrooms; mirrors; flashlight beams; rumors',
       },
       [
-        'School ghost-story anime frame of three students with flashlights on a dark stairwell counting the steps aloud, one step more than yesterday, dusk fading in the window and a faint figure on the landing above. No readable text or logo.',
-        'School ghost-story anime frame of a girl washing her hands at a restroom mirror while her reflection is still drying its hands. No readable text or logo.',
-        'School ghost-story anime frame of a music room at dusk where the piano keys are pressed down with no one sitting there. No readable text or logo.',
+        "Three young teachers on night duty count the stairwell steps aloud by flashlight and find one step more than yesterday. No readable text or logo.",
+        "At midnight the restroom mirror of an empty school shows the room full of pupils in old-fashioned uniforms, all waiting quietly in line. No readable text or logo.",
+        "In an empty classroom at dusk the anatomy model has moved to the window seat and is gazing out at the sports field. No readable text or logo.",
       ],
     ),
     create(
@@ -136,9 +136,9 @@ const spec: Spec = {
         key_features: 'huge shadow below; tiny boat; bioluminescence; split surface view',
       },
       [
-        'Deep sea horror anime frame of a small fishing boat at night on a calm teal sea, its lamp the only light, while beneath the surface a shadow many times larger than the boat slowly passes, bioluminescent specks outlining one enormous eye. No readable text or logo.',
-        'Deep sea horror anime split view of a swimmer floating calmly at the surface above a drop-off where something huge rises from the dark. No readable text or logo.',
-        'Deep sea horror anime frame of a lighthouse keeper watching the whole sea bulge slowly under a full calm sky. No readable text or logo.',
+        "A small fishing boat drifts at night on a calm teal sea, its lamp the only light, while beneath the surface an eye larger than the boat slowly opens. No readable text or logo.",
+        "Her helmet lamp sweeping the dark, a diver on the ocean floor realizes the rock wall she has been climbing is slowly breathing. No readable text or logo.",
+        "A lighthouse keeper watches a shadow as long as the island circle it every night, one lap closer each time. No readable text or logo.",
       ],
     ),
     create(
@@ -165,9 +165,9 @@ const spec: Spec = {
         key_features: 'open dollhouse rooms; porcelain faces; tiny furniture; changed scenes',
       },
       [
-        'Dollhouse horror anime frame looking into an open dollhouse at night, each tiny room lit by a desk lamp from above, porcelain dolls seated at a miniature dinner table all turned toward a small girl peering in. No readable text or logo.',
-        'Dollhouse horror anime frame of a miniature bedroom whose tiny doll is now in the same pose as the sleeping girl beside it. No readable text or logo.',
-        'Dollhouse horror anime frame of a tiny window in the dollhouse attic with a light switched on. No readable text or logo.',
+        "Inside an open dollhouse at night, every porcelain doll has gathered in the attic around a tiny perfect miniature of the viewer's own bedroom. No readable text or logo.",
+        "A collector finds the dollhouse dining table set for dinner, with a crumb of real bread on every tiny plate. No readable text or logo.",
+        "From the dollhouse nursery window a tiny porcelain doll watches its giant owner sleeping in the real bed across the room. No readable text or logo.",
       ],
     ),
     create(
@@ -194,9 +194,9 @@ const spec: Spec = {
         key_features: 'green night-vision; glowing eyes; grain; handheld tilt',
       },
       [
-        "Found-footage anime frame through green night-vision in a forest cabin, a hiker's shaking camera catching two glowing eyes at the edge of the beam beyond the window, heavy grain and a dark vignette. No readable text or logo.",
-        'Found-footage anime frame through night-vision of a tent wall being pressed from outside by a hand. No readable text or logo.',
-        'Found-footage anime frame through green night-vision of a cramped attic crawlspace, the camera light catching dust and insulation while something pale shifts between the far beams. No readable text or logo.',
+        "A hiker's shaking camera in a forest cabin catches two glowing green eyes at the window, and then a third. No readable text or logo.",
+        "Grainy green footage of a campsite shows every tent unzipped from the outside while the campers still sleep inside. No readable text or logo.",
+        "A shaking handheld camera pans across a dark cornfield where a hundred pairs of glowing eyes blink in sequence like a wave. No readable text or logo.",
       ],
     ),
     create(
@@ -223,9 +223,9 @@ const spec: Spec = {
         key_features: 'impossible sky; vast shapes; directionless light; thin horizon',
       },
       [
-        'Cosmic horror anime worm-eye frame of a farmer standing in a cornfield at night looking up at a sky where the stars have rearranged into a vast geometric eye, violet and teal light falling without shadows. No readable text or logo.',
-        'Cosmic horror anime frame of a city skyline under clouds that part to reveal an endless spiral staircase leading up into the dark. No readable text or logo.',
-        'Cosmic horror anime frame of a beach at dusk where the horizon line bends upward like a wave that never falls. No readable text or logo.',
+        "A farmer in a cornfield at night looks up at a sky where the stars have rearranged themselves into a vast closed eye. No readable text or logo.",
+        "Commuters on a bridge stop and stare as the clouds part to reveal that the sky is only the underside of something enormous. No readable text or logo.",
+        "An astronomer at her telescope realizes the new star she discovered grows closer every night and is not a star at all. No readable text or logo.",
       ],
     ),
     create(
@@ -252,9 +252,9 @@ const spec: Spec = {
         key_features: 'creeping fungus; drifting spores; overgrown rooms; soft decay',
       },
       [
-        'Fungal horror anime frame of an old greenhouse where pale shelf fungus has grown over every pot and bench, glowing gold spores drifting in grey light, a gardener in a respirator standing very still among the growth. No readable text or logo.',
-        "Fungal horror anime frame of a child's bedroom where soft purple mushrooms sprout from the carpet in the shape of footprints leading to the bed. No readable text or logo.",
-        'Fungal horror anime frame of a village well ringed with luminous toadstools, a bucket rope covered in soft white mold and spores rising in the dusk air. No readable text or logo.',
+        "Pale shelf fungus has swallowed every pot and bench of an old greenhouse, glowing spores drifting in the sunbeams toward the sleeping gardener. No readable text or logo.",
+        "At a mansion dinner party the fungus climbing the walls has bloomed into delicate lace, and the guests politely admire it between courses. No readable text or logo.",
+        "A woman tends her garden in a beekeeper's veil while mushrooms sprout in perfect rings around each of her footprints. No readable text or logo.",
       ],
     ),
     create(
@@ -281,9 +281,9 @@ const spec: Spec = {
         key_features: 'curtained beds; monitor glow; long wards; silhouettes',
       },
       [
-        'Hospital horror anime frame of a night nurse walking a long dim ward past rows of curtained beds, monitor glows in blue-green, and behind one curtain a silhouette sitting up that should be sleeping. No readable text or logo.',
-        'Hospital horror anime frame of a nurses station at 4 a.m. where every call light on the panel switches on at once, the nurse frozen with a coffee cup halfway to her lips. No readable text or logo.',
-        'Hospital horror anime frame of an empty wheelchair rolling slowly down a polished corridor toward the elevator, its wheels squeaking in the silence. No readable text or logo.',
+        "Walking a long dim ward past rows of curtained beds, a nurse notices that behind each curtain a silhouette sits up as she passes. No readable text or logo.",
+        "Every heart monitor in an empty ward begins beeping in unison, slowly, in the rhythm of a lullaby. No readable text or logo.",
+        "A tired surgeon eats noodles in the break room while the elevator doors keep opening onto a dark floor the hospital does not have. No readable text or logo.",
       ],
     ),
     create(
@@ -309,9 +309,9 @@ const spec: Spec = {
         key_features: 'cast shadows; lit paper screen; mismatched silhouette; single lamp',
       },
       [
-        'Shadow horror anime frame of a paper screen lit amber from inside a room, the shadow of a woman combing her hair while her head tilts much further than a neck should allow, a guest frozen in the corridor outside. No readable text or logo.',
-        'Shadow horror anime frame of a child making hand-shadow animals on a bedroom wall with a flashlight, one shadow animal moving on its own. No readable text or logo.',
-        'Shadow horror anime frame of a tailor working late under one lamp, the huge shadow of his mannequin raising its arm on the wall behind him. No readable text or logo.',
+        "Amber light behind a paper screen shows a woman combing her hair while her shadow's head tilts sideways far past what a neck allows. No readable text or logo.",
+        "A puppet show behind a paper screen delights the villagers until the puppeteer steps out and the shadows keep performing. No readable text or logo.",
+        "A man under a streetlamp casts no shadow, while the wall beside him holds a shadow walking in the opposite direction. No readable text or logo.",
       ],
     ),
     create(
@@ -337,9 +337,9 @@ const spec: Spec = {
         key_features: 'lagging reflection; cold mirror world; split symmetry; wrong expression',
       },
       [
-        'Mirror horror anime frame of a student brushing her teeth at a bathroom mirror in the morning while her reflection has stopped brushing and is smiling, the reflection lit slightly colder and bluer than the room. No readable text or logo.',
-        'Mirror horror anime frame of a man at a night train window whose reflection is facing the opposite direction. No readable text or logo.',
-        'Mirror horror anime frame of twins standing on either side of a still pond where only one of them has a reflection. No readable text or logo.',
+        "A woman brushes her teeth at the bathroom mirror in the morning while her reflection has stopped brushing and is smiling. No readable text or logo.",
+        "A dance studio's wall of mirrors shows the class in perfect sync, except one reflection dancing an entirely different routine. No readable text or logo.",
+        "A man straightens his tie in a shop window and his reflection slowly shakes its head at him. No readable text or logo.",
       ],
     ),
     create(
@@ -364,9 +364,9 @@ const spec: Spec = {
         key_features: 'thick fog; rust; ash; figures at the edge of sight',
       },
       [
-        'Fog town horror anime frame of a woman with a flashlight walking down the middle of an empty main street swallowed by grey fog, rusted shop signs without letters, ash falling like snow and a tall shape barely visible at the end of the road. No readable text or logo.',
-        'Fog town horror anime frame of a playground where the swings creak in fog and a siren wails from somewhere far away. No readable text or logo.',
-        'Fog town horror anime frame of a rusted bridge disappearing into fog halfway across, a lone car stopped with its door open. No readable text or logo.',
+        "A woman with a flashlight walks down an empty main street swallowed by grey fog as a distant siren wails and the rusted walls begin to peel. No readable text or logo.",
+        "In a fog-bound town a mail carrier rings a doorbell, and fog pours out of the house when the door swings open by itself. No readable text or logo.",
+        "A traveler sits in a fog-shrouded diner where every other customer is only a grey silhouette sipping coffee. No readable text or logo.",
       ],
     ),
     create(
@@ -393,9 +393,9 @@ const spec: Spec = {
         key_features: 'night procession; lanterns; object spirits; hidden witnesses',
       },
       [
-        'Folklore horror anime frame of a night procession of strange spirits filing through a sleeping town: an umbrella hopping on one leg, a paper lantern with a long tongue, a walking straw sandal and a tall figure carrying a lantern, a boy watching through a crack in a wooden door. No readable text or logo.',
-        'Folklore horror anime frame of old kitchen tools sprouting arms and legs and marching out of an abandoned house under the moon. No readable text or logo.',
-        'Folklore horror anime frame of a mountain road at night where a line of floating foxfire lights leads toward a shrine gate. No readable text or logo.',
+        "Spirits file through a sleeping town in a silent procession, a one-legged umbrella leading the way and a paper lantern licking the mist. No readable text or logo.",
+        "An elderly noodle vendor stays open late to feed the spirit procession, taking payment in autumn leaves. No readable text or logo.",
+        "A drunk office worker accidentally joins the tail of the spirit procession, and nobody, spirit or human, notices. No readable text or logo.",
       ],
     ),
     create(
@@ -420,9 +420,9 @@ const spec: Spec = {
         key_features: 'slanted sets; painted shadows; stark contrast; film grain',
       },
       [
-        'Expressionist horror anime frame of a hunched sleepwalker moving down a crooked street of slanted houses, painted hard-edged shadows stretching across the walls, stark black and white with a faint green tint and film grain. No readable text or logo.',
-        'Expressionist horror anime frame of a doctor in a tall hat standing in an angular office with windows painted as jagged shapes. No readable text or logo.',
-        'Expressionist horror anime frame of a staircase twisting impossibly upward with a long clawed shadow climbing ahead of the figure. No readable text or logo.',
+        "A hunched sleepwalker moves down a crooked street of slanted houses while his painted shadow reaches the far end of the street long before he does. No readable text or logo.",
+        "A doctor's shadow towers across the tilted wall of his office while he himself sits small and hunched before his patient. No readable text or logo.",
+        "In a black-and-white carnival the carousel horses lean so far sideways that their riders cling on at impossible angles. No readable text or logo.",
       ],
     ),
   ],

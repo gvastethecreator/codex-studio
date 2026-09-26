@@ -34,9 +34,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Court intrigue anime frame seen through a half-open sliding screen: a young advisor whispering to a seated regent while a maid pours tea, black lacquer and gold leaf, candlelight glowing through paper panels. No readable text or logo.',
-        'Court intrigue anime frame of a masked envoy kneeling before a curtained dais, only the silhouette of the ruler visible behind silk, candle flames reflected in the lacquer floor. No readable text or logo.',
-        'Court intrigue anime frame of two consorts playing a board game in a garden pavilion, one smiling behind a fan, a folded letter hidden under the board. No readable text or logo.',
+        "Through a half-open screen a young advisor whispers to a seated regent, while the cup at his elbow reflects the face of the maid who poisoned it. No readable text or logo.",
+        "Hiding behind the same folding screen to eavesdrop, three nobles tangle their fans into a comic knot. No readable text or logo.",
+        "In a lacquered hall at midnight a regent plays a board game against an empty cushion, and the pieces keep moving on their own. No readable text or logo.",
       ],
     },
     {
@@ -63,9 +63,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Western-style period anime frame of a ronin in a torn straw hat walking into a dusty post town at noon, villagers peering from doorways, heat haze over the empty road and a tumbleweed of dry grass rolling past. No readable text or logo.',
-        'Extreme close-up anime frame of a drifter squinting under a hat brim, sweat on the brow, the reflection of three waiting figures in her eyes. No readable text or logo.',
-        'Wide anime frame of a lone wanderer on a dry hill watching a merchant caravan pass along the road below, dust rising from the wheels, a vulture circling in the white sky. No readable text or logo.',
+        "A ronin in a torn straw hat walks into a dusty post town at noon, and every villager slams their shutters at the same instant. No readable text or logo.",
+        "Two ronin face off in the main street, both distracted by a bundle of straw that refuses to finish rolling between them. No readable text or logo.",
+        "A lone swordsman slurps noodles in a silent roadside inn while twelve bandits wait patiently outside for him to finish. No readable text or logo.",
       ],
     },
     {
@@ -92,9 +92,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Tapestry-style anime frame of a young knight and a lady walking with a white hart through a millefleur meadow, flat stylized trees framing both sides, madder red and woad blue wool colors, visible weave texture. No readable text or logo.',
-        'Tapestry-style anime frame of a round feast table set in a forest clearing, stylized trees on both sides, hounds sleeping in a millefleur meadow and musicians playing, faded wool reds and greens with visible weave. No readable text or logo.',
-        'Tapestry-style anime frame of a sorceress standing on a lake barge surrounded by white swans, the water drawn as woven ripples, tall stylized birches framing the scene and small flowers scattered across the shore. No readable text or logo.',
+        "A lady walks with a white hart through a millefleur meadow as the hart's antlers slowly grow into a flowering tree. No readable text or logo.",
+        "A lady rides a unicorn straight out of a tapestry into the real banquet hall, spilling woven flowers across the table. No readable text or logo.",
+        "At the edge of a woven lake a hand rises from the water to offer a kneeling knight a warm loaf of bread instead of a sword. No readable text or logo.",
       ],
     },
     {
@@ -121,9 +121,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Desert glare anime frame of an exhausted column of armored pilgrims crossing white dunes at noon, blinding sun, heat shimmer bending the horizon, one squire offering a waterskin to an old soldier. No readable text or logo.',
-        'Desert glare anime close-up of a sunburnt warrior pouring the last of a waterskin over her head, droplets flashing white in the blinding light, armor too hot to touch and sand in her hair. No readable text or logo.',
-        'Desert glare anime frame of a walled desert city shimmering on the horizon like a mirage, a thirsty caravan halted on the dune ridge, camels kneeling and heat haze bending the towers. No readable text or logo.',
+        "An exhausted column of armored pilgrims crosses white dunes at noon while the heat shimmer turns the horizon into a false lake full of their reflections. No readable text or logo.",
+        "The only shade in the whole desert is the shadow of his own horse, and a knight in full plate shares it with a lizard. No readable text or logo.",
+        "At midday a lone rider finds that the oasis is real, but a caravan of merchants has already built a toll gate across it. No readable text or logo.",
       ],
     },
     {
@@ -150,9 +150,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Northern saga anime frame of a longship crashing through grey waves beneath towering fjord cliffs, rowers hauling in the spray, a boy at the prow gripping the carved serpent head, cold sun breaking through cloud. No readable text or logo.',
-        'Northern saga anime frame of an old shipwright tarring the hull of an unfinished longship on a black pebble beach in cold drizzle, children carrying planks, smoke from a fire pit and grey fjord water behind. No readable text or logo.',
-        'Northern saga anime frame of a winter feast in a smoky longhouse, a long central fire, firelight on fur cloaks and weathered faces, a skald standing on a bench to tell a story. No readable text or logo.',
+        "A longship crashes through grey waves beneath towering fjord cliffs as a sea serpent's spine breaks the water beside the oars. No readable text or logo.",
+        "Hulking raiders row their longship through a gale while one of them calmly knits a sweater at the stern. No readable text or logo.",
+        "An old shieldmaiden stands alone on a black beach at dusk, watching a burning funeral ship drift out to sea. No readable text or logo.",
       ],
     },
     {
@@ -180,9 +180,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'gore'],
       briefs: [
-        'Plague-year anime frame of a masked doctor in a wax-cloth coat walking an empty market street at dawn, shuttered stalls, a child watching from a high window, muted ash and mud colors with one candle burning in a doorway. No readable text or logo.',
-        'Plague-year anime frame of two nuns leaving baskets of bread at the chained gate of a quarantined village, villagers waiting at a distance on the far side, muted mud colors and a grey sky. No readable text or logo.',
-        'Plague-year anime frame of a candle vigil on church steps at night, townsfolk standing far apart with small flames, a bell rope hanging still and fog creeping along the square. No readable text or logo.',
+        "A masked doctor in a wax-cloth coat walks an empty market at dawn, a single candle burning on the sill of every shuttered stall. No readable text or logo.",
+        "During a rainy candlelight vigil, an off-duty plague doctor quietly shares his bread with a stray goose. No readable text or logo.",
+        "A lone bell ringer tolls in a silent plague town while crows gather on the rooftops in perfect rows to listen. No readable text or logo.",
       ],
     },
     {
@@ -210,9 +210,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Tournament pageantry anime frame of an archery contest at a summer fair, striped pavilions and banners snapping in the wind, a cheering crowd in the stands and a young archer drawing her bow under a bright blue sky. No readable text or logo.',
-        'Tournament pageantry anime frame of two riders thundering down the lists toward each other, lances lowered, the crowd on its feet and pennants streaming, polished armor flashing in the midday sun. No readable text or logo.',
-        'Tournament pageantry anime frame of a jester juggling torches for children between colorful tents, banners and bunting overhead, a squire polishing a helmet in the background. No readable text or logo.',
+        "At a summer tournament a champion archer splits her rival's arrow while the striped pavilions ripple like sails behind her. No readable text or logo.",
+        "A joust is halted by a flock of runaway geese crossing the lists, both armored riders reining in with lances raised. No readable text or logo.",
+        "At dusk after the tournament a tired squire folds banners alone in the empty field as fireworks burst over the pavilions. No readable text or logo.",
       ],
     },
     {
@@ -239,9 +239,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Stealth night anime frame of a figure crouched on a tiled castle rooftop under a thin crescent moon, only a silver rim of light on the hood and shoulders, a guard lantern moving in the courtyard far below. No readable text or logo.',
-        'Stealth night anime close-up of a pair of eyes watching from a dark storehouse doorway, a thin slice of moonlight across them, a guard lantern reflected as a tiny point in each pupil. No readable text or logo.',
-        'Stealth night anime frame of a thief sliding a paper screen open an inch in a sleeping mansion, warm lantern light spilling through the gap onto dark floorboards, a cat watching from the rafters. No readable text or logo.',
+        "A figure crouches on a tiled rooftop under a thin crescent moon, only a silver rim of light betraying her, while the guard directly below yawns into the dark. No readable text or logo.",
+        "A spy blends so perfectly into the shadows that a passing patrol hangs their lantern on her outstretched arm. No readable text or logo.",
+        "An assassin slips through a silent moonlit garden where every stepping stone turns out to be a sleeping frog. No readable text or logo.",
       ],
     },
     {
@@ -269,9 +269,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Heian court fantasy anime frame of a young diviner in layered plum robes raising a glowing paper talisman on a garden veranda at night, a pale fox spirit coiling in the mist, star diagram lines faint on the ground. No readable text or logo.',
-        'Heian court anime frame of court ladies playing zither and flute behind bamboo blinds at night while small lantern spirits drift above the lotus pond, layered robes spilling out beneath the blinds. No readable text or logo.',
-        'Heian court anime frame of an old diviner reading cracked tortoise shells by lamp light as rain falls on the palace garden, a nervous young courtier waiting for the answer on the veranda. No readable text or logo.',
+        "A diviner in layered plum robes raises a glowing talisman on a garden veranda as a hundred paper birds burst up out of the pond. No readable text or logo.",
+        "A court diviner seals a mischievous fox spirit inside a teapot, and the teapot keeps trying to waddle away. No readable text or logo.",
+        "Beneath a star diagram traced in silver across the night sky, a diviner and a demon share sake on a moonlit veranda. No readable text or logo.",
       ],
     },
     {
@@ -299,9 +299,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Craft anime frame of a swordsmith and apprentice hammering a glowing blade on an anvil in a dark forge, sparks streaking outward, the orange light on their sweat-streaked faces and a bucket of water waiting. No readable text or logo.',
-        "Craft anime close-up of a glowing blade plunged into a quench trough, a white cloud of steam bursting up around the smith's scarred hands and the water boiling at the surface. No readable text or logo.",
-        'Craft anime frame of an armorer riveting plates of a breastplate at a workbench by morning window light, tools laid out in neat rows, a finished gauntlet hanging on the wall and dust floating in the beam. No readable text or logo.',
+        "Sparks from the anvil hang in the air in the shape of a galloping horse as a smith and her apprentice hammer a glowing blade. No readable text or logo.",
+        "Quenched in the sea at dawn, a new blade sends up a column of steam so tall it becomes a cloud over the fishing village. No readable text or logo.",
+        "Using his finest blade to slice tofu for dinner, an elderly smith ignores the horrified stare of his apprentice. No readable text or logo.",
       ],
     },
   ] satisfies Create[],

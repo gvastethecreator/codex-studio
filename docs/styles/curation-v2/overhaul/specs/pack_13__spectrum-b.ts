@@ -83,6 +83,7 @@ const spec: Spec = {
       ],
     },
     'SP05-326': {
+      name: "Rubber Reality Sprint Style",
       briefs: [
         'Rubber-reality anime frame of a young fisher boy sprinting along a harbor as the whole street bends with his stride, loose fluctuating contours, elastic rhythm, bent planes and brushy push and pull of space, original character. No readable text or logo.',
         'Rubber-reality anime frame of a dance party in a tiny bar where walls and floor bend with the music, loose fluctuating contours, elastic drawing rhythm and brushy spatial push and pull. No readable text or logo.',

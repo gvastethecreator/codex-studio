@@ -33,9 +33,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Horror anime frame of a night janitor standing at the far end of a long one-point school corridor, every classroom door identical and slightly ajar, one fluorescent tube flickering, sickly green-white light and no one else in the building. No readable text or logo.',
-        'Horror anime frame of a hospital waiting room at 3 a.m. with rows of empty chairs facing a dark window, one chair turned the wrong way. No readable text or logo.',
-        'Horror anime frame of a girl pressing an elevator button in an office tower after hours, the doors opening onto a floor that should not exist. No readable text or logo.',
+        "A night janitor stands at the end of an endless school corridor of identical doors, and one of them is slowly opening toward him. No readable text or logo.",
+        "A security guard realizes the office tower's fluorescent lights now switch on one floor ahead of him, as if escorting him somewhere. No readable text or logo.",
+        "In a municipal pool at night every lane rope has rearranged itself into one straight line pointing at the empty lifeguard chair. No readable text or logo.",
       ],
     },
     'SP13-032': {
@@ -57,9 +57,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Omen anime frame of a fishing village at dusk where a vast crimson planet hangs just above the sea, villagers standing silent on the pier as black silhouettes, the water glowing red and gulls frozen in the sky. No readable text or logo.',
-        'Omen anime frame of a school rooftop where two students watch a black eclipse ringed in red fire. No readable text or logo.',
-        'Omen anime frame of a wheat field where every stalk leans toward a red light rising behind the hills. No readable text or logo.',
+        "Fishing villagers stand silent on the shore at dusk, their shadows pointing the wrong way, as an enormous red planet hangs just above the sea. No readable text or logo.",
+        "During a red eclipse every bird in the city lands on the same tower and stares upward in total silence. No readable text or logo.",
+        "A farmer waters her crops under two suns, one gold and one blood-red, the red one a little larger every morning. No readable text or logo.",
       ],
     },
     'SP13-033': {
@@ -85,9 +85,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Horror anime frame of an old puppet theater where a life-size marionette of a smiling ballerina dances alone in one hard spotlight, strings rising into darkness, rows of empty velvet seats and chipped paint on her cheeks. No readable text or logo.',
-        'Horror anime frame of a puppeteer backstage surrounded by hanging marionettes that all turn their heads toward the door. No readable text or logo.',
-        'Horror anime frame of a child alone in the front row applauding a puppet show with no puppeteer. No readable text or logo.',
+        "A life-size marionette ballerina dances alone in one hard spotlight of an abandoned puppet theater, her strings rising into total darkness. No readable text or logo.",
+        "A puppeteer takes his bow after the show and realizes the strings in his hands are tied to his own wrists. No readable text or logo.",
+        "A troupe of wooden marionettes sits in the front row applauding a human performer who is visibly trembling on stage. No readable text or logo.",
       ],
     },
     'SP13-034': {
@@ -112,9 +112,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Horror anime top-down frame of a small rowboat with a single lantern floating on perfectly still black water in an underground lake, the darkness around it enormous, faint shapes of stone pillars descending into the depths. No readable text or logo.',
-        'Horror anime frame looking down an ancient well where a tiny face looks back up from the dark water. No readable text or logo.',
-        'Horror anime frame of a diver hanging in deep dark ocean water with a weak torch, a huge shadow passing below. No readable text or logo.',
+        "A tiny rowboat with one lantern floats on perfectly still black water in an underground lake, and far below a second lantern is rising toward it. No readable text or logo.",
+        "A woman lowers a bucket into the village well and the rope keeps paying out for hours as the sky above her turns to night. No readable text or logo.",
+        "A diver hovers at the edge of an ocean trench so dark that her flashlight beam simply stops a meter from the lens. No readable text or logo.",
       ],
     },
     'SP13-035': {
@@ -139,9 +139,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Horror anime frame of a masked procession walking down a village road at night toward a bonfire, every mask carved with the same geometric pattern, strict symmetry, torches held low and a lone outsider watching from a hayloft. No readable text or logo.',
-        'Horror anime close-up of a mask with geometric cuts glowing in firelight, eyes behind it unblinking. No readable text or logo.',
-        'Horror anime frame of a circle of robed figures kneeling around a carved stone in a forest clearing. No readable text or logo.',
+        "A masked procession walks toward a bonfire on a village road, every mask carved with the same geometric face except the one worn by the visitor. No readable text or logo.",
+        "Villagers in perfectly symmetrical masks form a slow spiral around a sleeping stranger in a candlelit barn. No readable text or logo.",
+        "At dawn after the ritual a hundred identical masks hang drying on a clothesline, and one of them is still blinking. No readable text or logo.",
       ],
     },
   },
@@ -171,9 +171,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Analog horror anime frame from an old home videotape of a family birthday party, everyone singing around the cake, while in the dark hallway behind them a tall figure stands perfectly still, tracking noise rolling up the screen and colors bleeding. No readable text or logo.',
-        'Analog horror anime frame of a tape recording of an empty playground at dusk, a swing moving by itself and a dropout band crossing it. No readable text or logo.',
-        'Analog horror anime frame of a camcorder view of a bedroom at night, the closet door opening a little more in each frame. No readable text or logo.',
+        "An old home video of a birthday party shows everyone singing around the cake while a tall figure in the dark hallway behind them sings along. No readable text or logo.",
+        "A worn tape of a village play freezes on one frame in which every audience member has turned to face the camera. No readable text or logo.",
+        "Tracking noise rolls over a tape of an empty beach, and in the single clean frame a woman stands far out on the surface of the water. No readable text or logo.",
       ],
     },
   ] satisfies Create[],

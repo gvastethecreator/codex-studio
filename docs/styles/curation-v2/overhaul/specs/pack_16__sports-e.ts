@@ -33,9 +33,9 @@ const spec: Spec = {
         key_features: 'held frame; sweeping gowns; parquet reflections; partnership',
       },
       [
-        'Ballroom anime frame of a young couple in a sweeping turn across a glossy parquet floor, her emerald gown fanning out in a long arc, his tailcoat snapping, chandelier sparkle and judges watching from the edge. No readable text or logo.',
-        'Ballroom anime close-up of two hands meeting in a held frame, knuckles tense and posture perfect under hot spotlights. No readable text or logo.',
-        'Ballroom anime frame of a couple practicing alone in an empty studio at night, reflections in the mirror wall. No readable text or logo.',
+        "A couple spins across glossy parquet, her emerald gown fanning out so wide it sweeps the rival dancers right off the floor. No readable text or logo.",
+        "A couple dances a flawless waltz in a flooded ballroom, their reflections waltzing upside down beneath them. No readable text or logo.",
+        "An elderly couple outshines every young competitor at a dance contest, their shoes held together with tape. No readable text or logo.",
       ],
     ),
     'SP05-366': u(
@@ -58,9 +58,9 @@ const spec: Spec = {
         key_features: 'sound ripples; drum strikes; ensemble unison; warm stage light',
       },
       [
-        'Traditional ensemble anime frame of a taiko group striking giant drums in unison on a dark stage, sound drawn as visible ripples in the air, sweat flying, indigo costumes and warm gold spotlights. No readable text or logo.',
-        "Ensemble anime close-up of a koto player's fingers plucking silk strings on a lacquered instrument, the vibration shimmering in the air as a faint ripple and the stage light warm on her sleeves. No readable text or logo.",
-        'Ensemble anime frame of a flute player in a shrine courtyard at dusk, sound drifting like mist. No readable text or logo.',
+        "A taiko group strikes giant drums in unison on a dark stage, and the visible sound ripples make the moon above them tremble. No readable text or logo.",
+        "A shamisen player plays so fast in a tiny bar that the sake in every cup around her ripples in perfect rings. No readable text or logo.",
+        "A shrine flutist performs at dawn in a misty valley, the sound spreading in ripples that shake the dew from every leaf. No readable text or logo.",
       ],
     ),
     'SP05-367': u(
@@ -82,9 +82,9 @@ const spec: Spec = {
         key_features: 'brass reflections; practice room; sections; summer light',
       },
       [
-        'Brass band anime frame of a trumpet player on a school rooftop at sunset, the bell of her trumpet reflecting the whole orange sky, sections of the band practicing in open windows below. No readable text or logo.',
-        'Brass band anime close-up of fingers pressing trumpet valves, a bead of valve oil catching the light. No readable text or logo.',
-        'Brass band anime frame of a tuba player sitting on the steps after summer practice, sweaty and smiling, the huge polished bell reflecting the whole school courtyard and cicadas in the trees. No readable text or logo.',
+        "A trumpeter practices on a rooftop at sunset, her bell reflecting the whole orange sky while a row of crows on the railing listens intently. No readable text or logo.",
+        "A tuba player marches through a rainstorm, water gushing out of her instrument like a fountain every time she plays. No readable text or logo.",
+        "In a sweltering practice room twenty horn players draw breath at the exact same instant before the first note, sweat glinting on polished instruments. No readable text or logo.",
       ],
     ),
     'SP05-368': u(
@@ -106,9 +106,9 @@ const spec: Spec = {
         key_features: 'saxophone solo; smoke spotlight; flowing curves; midnight club',
       },
       [
-        'Jazz anime frame of a young saxophonist taking a midnight solo in a smoky basement club, notes drawn as rising golden curves in the spotlight, the pianist grinning and the audience leaning in from dark tables. No readable text or logo.',
-        'Jazz anime frame of a drummer brushing a snare with eyes closed in a dim club, smoke curling through a blue spotlight and the brushes leaving soft swirls of light in the air. No readable text or logo.',
-        'Jazz anime frame of a bassist walking home at dawn with the instrument case on her back. No readable text or logo.',
+        "A saxophonist takes a midnight solo in a smoky basement club, and the rising golden curves of her notes lift her feet off the floor. No readable text or logo.",
+        "A pianist and a drummer duel across a club stage while the audience's cocktails slowly levitate with the rising tempo. No readable text or logo.",
+        "At closing time a janitor improvises on the abandoned upright bass, and the chairs stacked on the tables begin swaying in time. No readable text or logo.",
       ],
     ),
     'SP05-369': u(
@@ -129,9 +129,9 @@ const spec: Spec = {
         key_features: 'jagged noise lines; crowd surfing; colored stage lights; cramped stage',
       },
       [
-        'Live-house punk anime frame of a screaming singer crowd-surfing over a packed tiny club, harsh red and green stage lights, jagged noise lines bursting from the amps and sweat flying off every head. No readable text or logo.',
-        "Live-house anime close-up of a guitarist's calloused fingers hammering the strings under a white strobe, sweat dripping onto the pickguard and jagged noise lines bursting from the amp behind. No readable text or logo.",
-        'Live-house anime frame of the band loading out through a back alley at 1 a.m., ears ringing. No readable text or logo.',
+        "A screaming singer crowd-surfs over a packed tiny club, and the jagged noise of the band splits the ceiling open to the night sky. No readable text or logo.",
+        "A punk band plays a furious gig inside a laundromat, every washing machine spinning in rhythm with the drums. No readable text or logo.",
+        "After the show a guitarist sits alone on the curb outside the live house, ears ringing, her snapped strings curled in her palm. No readable text or logo.",
       ],
     ),
     'SP05-370': u(
@@ -150,9 +150,9 @@ const spec: Spec = {
         key_features: 'lamp glow; acoustic guitar; close framing; single listener',
       },
       [
-        'Indie acoustic anime frame of a shy boy playing a guitar on the floor of a small bedroom for one friend sitting on the bed, a single warm lamp, knitted sweaters and records stacked against the wall. No readable text or logo.',
-        'Indie anime frame of a girl singing into a phone recorder on a balcony at night. No readable text or logo.',
-        'Indie anime frame of a busker playing an acoustic guitar to a single small child in a train station tunnel late at night, the case open with a few coins and warm light from one lamp. No readable text or logo.',
+        "A shy musician plays guitar on the floor of a tiny room for one friend on the bed, and the melody fills the air with floating paper stars. No readable text or logo.",
+        "A songwriter sings a confession at 2 a.m., curled against a humming fridge with her guitar in her lap and the phone face-down beside her. No readable text or logo.",
+        "A street busker in the rain plays for one old man sheltering under an awning, the open guitar case filling with raindrops instead of coins. No readable text or logo.",
       ],
     ),
     'SP05-371': u(
@@ -174,9 +174,9 @@ const spec: Spec = {
         key_features: 'swirling sound ribbons; conductor; massed strings; concert hall',
       },
       [
-        'Orchestra anime frame of a young violin soloist at the climax of a concerto, the full orchestra behind her, swirling ribbons of colored sound rising into the gilded concert hall and the conductor mid-leap. No readable text or logo.',
-        "Orchestra anime close-up of a cellist's bow flying across the strings, rosin dust in the light. No readable text or logo.",
-        'Orchestra anime frame of an empty concert hall after the show, one percussionist alone on stage packing a timpani mallet case while the house lights fade and programs lie on the red seats. No readable text or logo.',
+        "A violin soloist reaches the climax of a concerto as swirling ribbons of color from the orchestra lift the concert hall roof clean off. No readable text or logo.",
+        "A conductor's baton slips from his hand mid-crescendo, and the whole orchestra keeps following it as it flies around the hall. No readable text or logo.",
+        "An orchestra plays to rows of snow-covered seats in an outdoor amphitheater, breath and music swirling together into the falling snow. No readable text or logo.",
       ],
     ),
     'SP05-372': u(
@@ -197,9 +197,9 @@ const spec: Spec = {
         key_features: 'spotlight duel; giant shadows; symbolic prop; proscenium',
       },
       [
-        'Allegorical stage anime frame of two actresses facing each other under crossing spotlights, their giant shadows battling on the backdrop behind them, a single red rose lying center stage between them. No readable text or logo.',
-        'Allegorical stage anime frame of a masked king and a jester trading places in a spotlight. No readable text or logo.',
-        'Allegorical stage anime frame of a dancer bound by long red ribbons held by unseen hands in the wings, straining toward a spotlight at center stage, her shadow huge on the backdrop. No readable text or logo.',
+        "Two actresses face each other under crossing spotlights while their giant shadows fight on the backdrop as a lion and a crow. No readable text or logo.",
+        "Two rival stage stars duel with oversized paper swords while a stagehand winches a cardboard moon across the background. No readable text or logo.",
+        "An actress stands alone on a revolving stage as the spotlight splits her into three shadows, each wearing a different mask. No readable text or logo.",
       ],
     ),
   },

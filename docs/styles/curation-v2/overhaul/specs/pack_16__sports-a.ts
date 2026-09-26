@@ -35,9 +35,9 @@ const spec: Spec = {
         key_features: 'jump peak; low angle; net line; gym light rim',
       },
       [
-        'Volleyball anime frame of a small spiker frozen at the peak of an impossible jump above the net, arm cocked, the ball a white blur, teammates below shouting, low angle into bright gym ceiling lights. No readable text or logo.',
-        'Volleyball anime frame of a libero diving flat across the polished gym floor to dig a spike one centimeter above the wood, sweat flying off her hair, knee pads skidding and the whole bench on its feet. No readable text or logo.',
-        'Volleyball anime frame of a setter touching the ball at fingertip height in slow motion, eyes already on the hitter rising behind him, gym lights haloing both and the blockers a step too late. No readable text or logo.',
+        "A spiker hangs at the peak of a jump so impossibly high that the gym ceiling lights sit below her, the ball a white comet in her palm. No readable text or logo.",
+        "A volleyball team of grandmothers dives in unison for a ball in a rural gym, cardigans and knee braces flying while their young opponents stare. No readable text or logo.",
+        "In an empty gym at night a lone setter tosses the ball to a spiker who is only her own long shadow stretched across the wall. No readable text or logo.",
       ],
     ),
     'SP05-344': u(
@@ -59,9 +59,9 @@ const spec: Spec = {
         key_features: 'predatory eyes; fisheye distortion; goal as target; floodlights',
       },
       [
-        'Soccer anime frame of a striker bursting through two defenders in fisheye distortion, eyes glowing cyan with focus, the goal warped into a tiny target at the end of a tunnel of floodlight. No readable text or logo.',
-        'Soccer anime close-up of a goalkeeper and a striker locking eyes a meter apart before a penalty in a rain-soaked stadium, breath fogging, floodlights turning their irises into glowing rings. No readable text or logo.',
-        'Soccer anime frame of a boy alone on a muddy practice pitch at night firing shot after shot at an old tire hung in the goal, a single floodlight humming and a pile of balls at his feet. No readable text or logo.',
+        "A striker bursts through two defenders and sees the goal as a devouring beast's open mouth, her eyes blazing cyan with hunger. No readable text or logo.",
+        "Eleven strikers on the same team charge the ball at once, elbowing each other aside while their own goalkeeper calmly peels an orange. No readable text or logo.",
+        "Alone in a rain-flooded stadium, a benched striker takes shot after shot at a goal that keeps drifting farther away across the pitch. No readable text or logo.",
       ],
     ),
     'SP05-345': u(
@@ -83,9 +83,9 @@ const spec: Spec = {
         key_features: 'thick 90s line; muscle and sweat; face-offs; film grain',
       },
       [
-        'Nineties basketball anime frame of two rival centers colliding under the rim, thick ink lines, heavy muscles and sweat flying, saturated cel colors and light film grain, the crowd a blur of red. No readable text or logo.',
-        'Nineties basketball anime close-up of a delinquent-looking forward grinning with a split lip and a bandage on his cheek, ball on his hip, thick 90s ink line and warm film grain. No readable text or logo.',
-        'Nineties basketball anime frame of a lone practice at dawn on a cracked outdoor court, a chain net swaying after a shot, pink sky behind the fence and a dog watching from the bleachers. No readable text or logo.',
+        "Two rival centers collide under the rim so hard that the backboard glass bursts into a crown of shards around their heads. No readable text or logo.",
+        "A towering hothead benched for fouls sulks under a sweaty towel while his whole team performs a terrible dance to cheer him up. No readable text or logo.",
+        "Two exhausted rivals sit back to back on an outdoor court at midnight after a one-on-one, neither willing to admit who won. No readable text or logo.",
       ],
     ),
     'SP05-346': u(
@@ -109,9 +109,9 @@ const spec: Spec = {
         key_features: 'afterimages; misdirection; translucent trails; wrong-way defenders',
       },
       [
-        'Basketball anime frame of a quiet pale player passing the ball behind his back while three defenders stare at where he used to be, translucent afterimages trailing his motion, cool arena light. No readable text or logo.',
-        'Basketball anime frame of a steal where the defender seems to appear in three translucent positions at once around a startled dribbler, the ball already gone and the crowd a cool blue blur. No readable text or logo.',
-        'Basketball anime frame of a bench of teammates staring in disbelief as the ball suddenly appears in the hands of their wide-open shooter, the passer nowhere to be seen and a coach dropping his clipboard. No readable text or logo.',
+        "A pale, quiet player passes the ball behind his back while three defenders stare at the empty spot where he stood a heartbeat ago. No readable text or logo.",
+        "A player so easy to overlook that the arena spotlight sweeps the court searching for him while he dribbles directly beneath it. No readable text or logo.",
+        "In a dark empty gym a single ball bounces across the court, passing itself from player to player among teammates nobody can see. No readable text or logo.",
       ],
     ),
     'SP05-347': u(
@@ -133,9 +133,9 @@ const spec: Spec = {
         key_features: 'uphill gradient; gritted teeth; dappled sun; breakaway',
       },
       [
-        'Cycling anime frame of a skinny climber breaking away on a steep mountain switchback, teeth gritted, jersey soaked, dappled sun through pines, the peloton small and far below. No readable text or logo.',
-        'Cycling anime close-up of trembling calves pushing the pedals on a steep climb, sweat dripping onto the top tube, chain and cassette drawn precisely and the road tilting behind. No readable text or logo.',
-        'Cycling anime frame of two rival climbers side by side at the mountain summit, both screaming with effort, spectators leaning in from the roadside and clouds below the mountain. No readable text or logo.',
+        "A climber breaks away on a mountain switchback so steep that the road ahead curls up into the clouds like a ribbon. No readable text or logo.",
+        "A pro cyclist grinds up a brutal hill while a stubborn grandmother on a rusty shopping bike keeps pace beside him, knitting. No readable text or logo.",
+        "At dusk on a lonely pass a rider notices last year's champion pedaling silently beside her in the fog, even though he retired years ago. No readable text or logo.",
       ],
     ),
   },
