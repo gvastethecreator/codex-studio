@@ -182,7 +182,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Hiroyuki Okiura - Quiet Human Naturalism',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, distorted proportions obscuring observed weight, decorative effects concealing naturalistic contour, surface glare masking material cues",
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, distorted proportions obscuring observed weight, decorative effects concealing naturalistic contour, surface glare masking material cues, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
         'A drawing technique, not a copy of any work: observational naturalism, believable weight, quiet contour economy and environmental detail integrated into the same visual space.',
@@ -211,7 +211,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Haruko Ichikawa - Mineral Void Serenity',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, opaque highlights hiding mineral edge transmission, muddy values collapsing pale planes, ornament crowding negative space",
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, opaque highlights hiding mineral edge transmission, muddy values collapsing pale planes, ornament crowding negative space, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
         'A drawing technique, not a copy of any work: fine fragile contours, pale mineral planes, translucent edge values and large areas of deliberate void.',
@@ -240,7 +240,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Hiromu Arakawa - Mechanical Warmth Ensemble',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, unreadable joins on constructed parts, sterile plastic sheen obscuring drawn contour, structural detail invented on unconstructed forms",
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, unreadable joins on constructed parts, sterile plastic sheen obscuring drawn contour, structural detail invented on unconstructed forms, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
         'A drawing technique, not a copy of any work: sturdy, hand-drawn contours, clearly articulated joins and practical mechanical detail balanced by human warmth.',
@@ -327,7 +327,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Takeshi Koike - Razorline Velocity Poster',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, slashes misaligned with requested action direction, black cutouts erasing subject-defining detail, hard color blocks merging adjacent forms",
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, slashes misaligned with requested action direction, black cutouts erasing subject-defining detail, hard color blocks merging adjacent forms, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
         'A drawing technique, not a copy of any work: razor-edged silhouettes, long graphic slashes, dense black cutouts and a flat vermilion/cream/navy poster palette.',
@@ -472,7 +472,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Osamu Dezaki - Postcard Memory Freeze',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, muddy value blocks hiding the held silhouette, distant-plane detail competing with focal form, rim highlights clipping the contour",
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, muddy value blocks hiding the held silhouette, distant-plane detail competing with focal form, rim highlights clipping the contour, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
         'A drawing technique, not a copy of any work: hold the existing beat as a poster-like freeze with bold silhouette, grouped values, selective rim and light film grain.',
@@ -617,7 +617,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Masaaki Yuasa - Rubber Reality Sprint',
     category: '5. Anime Style Spectrum',
     negativePrompt:
-      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, elastic distortion changing identity or construction, bent planes breaking requested perspective, brush noise obscuring silhouette",
+      "photoreal cosplay rendering, 3D render look, plastic airbrush gloss obscuring the style's defining marks, undifferentiated anime filter erasing the preset's signature mechanics, unrequested default-image characters, costume details, props or setting, unrequested default-image framing, garbled pseudo-text, unrequested interface overlay, watermark, unrequested logo or signature artifact, elastic distortion changing identity or construction, bent planes breaking requested perspective, brush noise obscuring silhouette, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work",
     style: {
       aesthetic:
         "A drawing technique, not a copy of any work: loose, fluctuating contour, elastic drawing rhythm, bent planes and brushy spatial push/pull; preserve the subject's recognizable structure.",

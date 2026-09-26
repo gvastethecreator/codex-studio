@@ -134,7 +134,7 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Otomo Light-Trail Collapse Style'],
     category: '4. Studio Masterpieces',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Cut angular contour blocks through hard-edged cel planes; use short tapered directional marks only where existing edges support them.',
@@ -194,7 +194,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Children of the Sea – Cosmic Ocean Lyrical',
     category: '4. Studio Masterpieces',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Fluid contour flow, fine clear line islands, and broad translucent value layers that transition without hard seams.',

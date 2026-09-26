@@ -37,7 +37,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Sailor Moon - Moonlit Ribbon Justice',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Classic anime transformation-profile drawing uses fluid arcs, crisp cel panels, and jewel-bright accents; stages are conditional on an explicit sequence request.',
@@ -66,7 +66,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Neon Genesis Evangelion - Red Alert Psychological Collapse',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'High-contrast anime cel illustration cuts silhouettes sharply and uses sparse technical accents and controlled red marks.',
@@ -92,7 +92,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Slayers - Arcane Chaos Roadtrip',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Elastic anime contour swings between broad rounded strokes and quick tapered marks over compact cel shadows.',
@@ -120,7 +120,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'The Vision of Escaflowne - Tarot Mecha Fantasy',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Anime linework pairs fine engraved contours with crisp beveled planes and measured geometry.',
@@ -149,7 +149,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Magic Knight Rayearth - Jewel Armor Quest',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Bold anime contour surrounds polygonal cel facets, with jewel-like accents confined to existing forms.',
@@ -177,7 +177,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Martian Successor Nadesico - Cheerful Bridge-Deck Mecha',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Precise anime line uses crisp mechanical geometry where relevant and clean silhouette hierarchy.',
@@ -205,7 +205,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Blue Seed - Mythic Tokyo Purge',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Inked anime forms combine organic contour flow, abrupt cross-lines, and separated color shapes.',
@@ -290,7 +290,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Kimi ni Todoke - Shy Hallway Bloom',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Fine anime contour favors rounded transitions, restrained interior marks, and soft cel shading.',
@@ -318,7 +318,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Ao Haru Ride - Clean Uniform Reunion Ache',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Contemporary anime line is smooth and precise, with modest weight shifts and broad quiet values.',
@@ -344,7 +344,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Fruits Basket - Zodiac Warmth and Grief',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Gentle anime cel drawing uses rounded fine contours, understated shadows, and open focal detail.',
@@ -373,7 +373,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Nana - Black-Lace Apartment Heartbreak',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Expressive anime ink alternates dense black shapes with fine fashion-illustration strokes and edge accents.',
@@ -402,7 +402,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Ouran High School Host Club - Rose-Cloud Flirt Theater',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Refined anime outlines and polished cel planes use small ornamental accents and clean graphic timing.',
@@ -429,7 +429,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Paradise Kiss - Runway Heartbreak Chic',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Fashion-illustration anime line combines long angular strokes, crisp silhouette cuts, and narrow seam detail.',
@@ -458,7 +458,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Lovely Complex - Height-Gap Comedy Romance',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Comedic anime drawing varies contour weight and spacing for readable beats without changing scale.',
@@ -485,7 +485,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Skip Beat! - Revenge Idol Stardom Spark',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Performance-ready anime illustration sharpens contours and shadow cutouts, with precise glints on flat color.',
@@ -513,7 +513,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Boys Over Flowers - Elite Campus Melodrama',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Polished anime drawing contrasts precise straight edges with rounded contours and quiet cel shadow.',
@@ -539,7 +539,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Orange - Sunset Regret Letter Drama',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Anime cel and watercolor hybrid softens selected contours into translucent overlap while focal lines stay clear.',
@@ -565,7 +565,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Say I Love You - Night-Walk Intimacy',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Anime line combines rounded contours, selectively pooled dark shapes, and small reflective accents.',
@@ -594,7 +594,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Maid Sama! - Secret Uniform Double Life',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Precise anime contour contrasts straight structured edges with small ruffle-like rhythms and cel shadows.',
@@ -623,7 +623,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Rose of Versailles - Court Portrait Revolution',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Ornate anime ink layers fine engraved contours over broad black and pale cel planes.',
@@ -649,7 +649,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Neighborhood Story - Harajuku Handmade Romance',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Hand-drawn anime line uses elastic contours, hand-cut color blocks, and small pattern accents.',
@@ -677,7 +677,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Honey and Clover - Art-School Spring Ache',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Anime illustration combines visible pencil underdrawing, diluted gouache, and clear ink on warm paper.',
@@ -706,7 +706,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Kamisama Kiss - Shrine Romance and Fox Familiar',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Bold anime ink meets flat mineral color and small seal-like marks on restrained paper.',
@@ -733,7 +733,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Princess Jellyfish - Jelly-Color Otaku Makeover',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Anime cel drawing uses translucent contour layers, pearly transitions, and delicate filament marks.',
@@ -762,7 +762,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Sukitte Ii na yo - Rainy Umbrella Confession',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Anime linework layers smooth curved planes with refracted color accents and crisp cel edges.',
@@ -789,7 +789,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Snow White with the Red Hair - Herbal Courtship Fantasy',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Anime line blends clean tapered contours with fine botanical-style strokes and polished cel planes.',
@@ -817,7 +817,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Yona of the Dawn - Crimson Princess Resolve',
     category: '3. Shojo, Magical Girl & Visionary Classics',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, canon couple copy, readable magic text, title scene reproduction, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Anime drawing uses long tapered contours, weathered edge marks, and firm cel shadows for direction.',

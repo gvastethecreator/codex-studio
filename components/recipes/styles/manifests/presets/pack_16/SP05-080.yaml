@@ -75,7 +75,7 @@ attributes:
     realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg
     artifacts, watermark, signature, generic Ghibli knockoff, stock fantasy matte, overprocessed
     anime wallpaper, fixed canon character, literal title scene, required anime screenshot, generic
-    anime filter, prompt-literal card, muddy cel noise
+    anime filter, prompt-literal card, muddy cel noise, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_16
   packName: Anime Classics & Prestige

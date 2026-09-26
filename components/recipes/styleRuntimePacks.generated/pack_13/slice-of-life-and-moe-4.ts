@@ -8,7 +8,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'KyoAni Shared-Warmth Microacting',
     category: '4. Slice Of Life & Moe',
     negativePrompt:
-      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo',
+      'realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, generic moe wallpaper, infantilized styling, school only lock, canon character copy, title scene copy, literal sample card setup, fixed anime cast, generic anime filter, prompt literal card reuse, fake UI, photoreal cosplay, 3D render look, copied franchise costume, logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work',
     style: {
       aesthetic:
         'Rounded 2D animation contours taper to fine ends and settle into compact cel shadows; expression reads through precise facial marks rather than caricature.',
