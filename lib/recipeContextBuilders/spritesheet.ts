@@ -57,6 +57,9 @@ function buildSpritesheetContext(params: RecipeContextParams) {
         : 'Avoid visible grid lines or dividers.',
       'Keep clear separation and alignment for local asset review.',
       'Keep the background uniform and clean.',
+      bgDirective.startsWith('SOLID_GREEN_')
+        ? 'Chroma green is a key color for a later import, not transparent pixels.'
+        : 'Do not paint a green, blue, cyan, or magenta backdrop unless the background control asks for that key color.',
     ],
   };
 

@@ -48,7 +48,7 @@ export const CHARACTER_LAB_RECIPE_ALIASES: RecipeAlias[] = [
     targetRecipeId: 'character-lab',
     title: 'Character Sprites',
     subtitle: 'Sprite Actions',
-    description: 'Open Character Lab focused on animation strips and game-ready sprite states.',
+    description: 'Open Character Lab focused on one sprite-sheet image for a stated frame count.',
     tag: 'Sprites',
     buttonText: 'Open Sprites',
     accentColor: 'emerald',

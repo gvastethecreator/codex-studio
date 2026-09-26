@@ -304,6 +304,11 @@ export const SpritesheetRecipe: React.FC<SpritesheetRecipeProps> = ({
           options={CONTROL_OPTIONS.background}
           onSelect={(v) => setParams((p) => ({ ...p, background: v }))}
         />
+        {params.background.includes('Green') ? (
+          <p className="px-1 text-xs text-[color:var(--wb-muted)]">
+            Chroma green is a key color for a later import, not transparent pixels.
+          </p>
+        ) : null}
         {params.background === 'Custom' && (
           <div className="flex flex-col gap-1.5">
             <span className="text-[length:var(--wbp-label)] font-semibold text-[color:var(--wb-muted)] tracking-normal pl-1">

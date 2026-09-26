@@ -46,7 +46,7 @@ export const CHARACTER_LAB_MODES = [
     capability: 'ready',
     task: 'sprite_sheet',
     mediaType: 'spritesheet',
-    description: 'Animation strips and game-ready sprite states.',
+    description: 'One sprite-sheet image for a stated frame count. Not an extracted atlas.',
   },
   {
     id: 'scenes',

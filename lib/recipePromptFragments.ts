@@ -70,7 +70,9 @@ export function getSpritesheetDividerState(dividers: string) {
 }
 
 export function getSpritesheetBackgroundDirective(background: string, customColor: string) {
-  if (background.includes('Green')) return 'SOLID_GREEN_#00FF00';
+  if (background.includes('Green')) {
+    return 'SOLID_GREEN_#00FF00. This is a key color for a later import, not transparent pixels.';
+  }
   if (background === 'Custom') return `SOLID_COLOR_${customColor.toUpperCase()}`;
   if (background === 'Black') return 'SOLID_BLACK';
   return background.toUpperCase();

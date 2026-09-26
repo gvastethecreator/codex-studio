@@ -58,7 +58,9 @@ function buildCharacterLabContext(params: RecipeContextParams) {
     [
       'Target: Character production asset.',
       `Context: ${JSON.stringify(recipeSchema, null, 2)}`,
-      'Output: one catalog-ready asset unless the selected action is a sprite sheet.',
+      task === 'sprite_sheet'
+        ? `Output: one sprite-sheet image with ${frames > 0 ? frames : 'the requested'} frames. Keep the identity from the first attachment. Do not scale the character to fill the frame. This image is not an extracted atlas.`
+        : 'Output: one catalog-ready asset.',
       'Do not bypass the provider boundary. Treat video, live interview, and structured profile actions as gated capabilities until those tasks are implemented.',
     ].join('\n'),
   );

@@ -612,7 +612,7 @@ export const RECIPE_MODULES: Record<RegisteredRecipeId, RecipeModule> = {
   spritesheet: createRecipeModule({
     id: 'spritesheet',
     title: 'Sprite Sheet',
-    description: 'Generate game-ready sprite grids or strips from text and references.',
+    description: 'Generate one sprite-sheet image from text and references.',
     defaultTask: 'sprite_sheet',
     supportedTasks: ['sprite_sheet', 'image_generate', 'image_edit'],
     parameters: [
