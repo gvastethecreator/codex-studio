@@ -728,7 +728,7 @@ export const RECIPE_MODULES: Record<RegisteredRecipeId, RecipeModule> = {
         kind: 'enum',
         control: 'select',
         group: 'extraction',
-        defaultValue: 'chroma',
+        defaultValue: 'alpha',
         options: options(SPRITE_ATLAS_OPTIONS.backgroundRemoval),
       },
       {
@@ -1564,7 +1564,8 @@ export function buildGenerationTaskSpecFromRecipe({
                 : null,
       lighting: null,
       color:
-        config.recipeId === 'sprite-atlas' && spriteAtlasContract
+        config.recipeId === 'sprite-atlas' &&
+        spriteAtlasContract?.backgroundRemoval === 'chroma'
           ? spriteAtlasContract.chromaKey
           : typeof config.recipeParams?.colorTone === 'string'
             ? config.recipeParams.colorTone
@@ -1579,7 +1580,9 @@ export function buildGenerationTaskSpecFromRecipe({
       constraints: spriteAtlasContract
         ? [
             `Generate one row strip per state for ${spriteAtlasContract.presetId}.`,
-            `Use ${spriteAtlasContract.backgroundRemoval} background removal contract.`,
+            spriteAtlasContract.backgroundRemoval === 'chroma'
+              ? `Legacy key color ${spriteAtlasContract.chromaKey}. This is a key color for a later import, not transparent pixels.`
+              : 'Use native transparency. Do not paint a green, blue, cyan, or magenta backdrop.',
             'Do not create guide marks, labels, scene backgrounds, or merged atlas pages as row art.',
           ]
         : animationSequenceContract

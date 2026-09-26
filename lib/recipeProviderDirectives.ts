@@ -403,7 +403,9 @@ function buildSpriteAtlasProviderDirectives(module: RecipeModule, params: Record
           directive('Safe Margin Y', contract.cell.safeMarginY),
           directive('Transparent Output', contract.transparent ? 'yes' : 'no'),
           directive('Background Removal', contract.backgroundRemoval),
-          directive('Chroma Key', contract.chromaKey),
+          ...(contract.backgroundRemoval === 'chroma'
+            ? [directive('Chroma Key', contract.chromaKey)]
+            : []),
         ],
       },
       {

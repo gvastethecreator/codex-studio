@@ -21,7 +21,7 @@ describe('spriteAtlasContracts', () => {
       workflowLane: 'tileset',
       frameSemantics: 'tiles',
       stylePreset: 'illustration',
-      backgroundRemoval: 'auto',
+      backgroundRemoval: 'alpha',
       columns: 12,
       transparent: true,
     });
@@ -32,6 +32,25 @@ describe('spriteAtlasContracts', () => {
       'walls',
       'decor',
     ]);
+    expect(contract.rows.every((row) => row.repeatMode === null)).toBe(true);
+  });
+
+  it('assigns lanes from the preset instead of one shared sheet type', () => {
+    expect(createSpriteAtlasContract({ presetId: 'ui-avatar' })).toMatchObject({
+      workflowLane: 'animation',
+      frameSemantics: 'temporal',
+    });
+    expect(createSpriteAtlasContract({ presetId: 'asset-pack' })).toMatchObject({
+      workflowLane: 'true-grid',
+      frameSemantics: 'variants',
+    });
+    expect(createSpriteAtlasContract({ presetId: 'custom-atlas' })).toMatchObject({
+      workflowLane: 'static-items',
+      frameSemantics: 'items',
+    });
+    expect(createSpriteAtlasContract({ presetId: 'texture-pack' }).rows[0]).toMatchObject({
+      repeatMode: 'self',
+    });
   });
 
   it('falls back to safe defaults for unsupported enum params', () => {
@@ -44,10 +63,17 @@ describe('spriteAtlasContracts', () => {
 
     expect(contract.presetId).toBe('platformer-character');
     expect(contract.frameBudget).toBe('preset');
-    expect(contract.backgroundRemoval).toBe('chroma');
+    expect(contract.backgroundRemoval).toBe('alpha');
     expect(contract.qaMode).toBe('standard');
     expect(contract.workflowLane).toBe('animation');
     expect(contract.frameSemantics).toBe('temporal');
+    expect(createSpriteAtlasContract({}).backgroundRemoval).toBe('alpha');
+    expect(createSpriteAtlasContract({ backgroundRemoval: 'chroma' }).backgroundRemoval).toBe(
+      'chroma',
+    );
+    expect(createSpriteAtlasContract({ backgroundRemoval: 'rembg' }).backgroundRemoval).toBe(
+      'alpha',
+    );
   });
 
   it('exposes preset summaries for recipe and backend discovery', () => {

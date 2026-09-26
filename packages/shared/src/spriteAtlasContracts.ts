@@ -80,8 +80,14 @@ export const SPRITE_ATLAS_BLOCKED_REASON_KINDS = [
   'imagegen_unavailable',
   'runner_failed',
   'no_image_returned',
+  'path_rejected',
+  'geometry_mismatch',
   'unknown',
 ] as const;
+
+export const SPRITE_ATLAS_REPEAT_MODES = ['self', 'adjacency', 'overlay'] as const;
+
+export type SpriteAtlasRepeatMode = (typeof SPRITE_ATLAS_REPEAT_MODES)[number];
 
 export type SpriteAtlasBlockedReasonKind = (typeof SPRITE_ATLAS_BLOCKED_REASON_KINDS)[number];
 
@@ -99,6 +105,8 @@ export interface SpriteAtlasRowSpec {
   loop: boolean;
   action: string;
   mirrorPair?: string | null;
+  repeatMode: SpriteAtlasRepeatMode | null;
+  tileRole: string | null;
 }
 
 export interface SpriteAtlasContract {
@@ -152,17 +160,37 @@ export interface SpriteAtlasRowState {
   promptPath: string;
   layoutGuidePath: string;
   rawPath: string | null;
+  sourceSha256: string | null;
+  catalogImageId: string | null;
   jobId: string | null;
   blocked: SpriteAtlasBlockedReason | null;
   updatedAt: string;
 }
 
+export interface SpriteAtlasTechnicalCheck {
+  status: 'pass' | 'fail';
+  representative: boolean;
+  issues: string[];
+}
+
+export interface SpriteAtlasVisualReview {
+  status: 'pending' | 'accepted';
+  acceptedAt: string | null;
+}
+
+export interface SpriteAtlasAnchor {
+  rowId: string;
+  sha256: string;
+}
+
 export interface SpriteAtlasQaReport {
   ok: boolean;
+  filesReady: boolean;
   mode: 'fixture_smoke' | 'generated_art';
   checkedAt: string;
   issues: string[];
   summary: string;
+  technical: SpriteAtlasTechnicalCheck;
 }
 
 export interface SpriteAtlasRun {
@@ -175,6 +203,8 @@ export interface SpriteAtlasRun {
   paths: SpriteAtlasRunPaths;
   rows: SpriteAtlasRowState[];
   qa: SpriteAtlasQaReport | null;
+  visualReview: SpriteAtlasVisualReview;
+  anchor: SpriteAtlasAnchor | null;
 }
 
 export interface SpriteAtlasPresetSummary {
@@ -634,7 +664,17 @@ export interface SpriteAtlasRowPromptResponse {
 export interface ImportSpriteAtlasRowRequest {
   rowId: string;
   sourcePath?: string | null;
+  catalogImageId?: string | null;
   blocked?: SpriteAtlasBlockedReason | null;
+}
+
+export function isSpriteAtlasIdleRow(rowId: string) {
+  return rowId.startsWith('idle');
+}
+
+export function normalizeSpriteAtlasBackgroundRemoval(value: string): SpriteAtlasBackgroundRemoval {
+  if (value === 'chroma') return 'chroma';
+  return 'alpha';
 }
 
 export interface SpriteAtlasRowHandoffJob {
@@ -720,7 +760,7 @@ export function createSpriteAtlasContract(
     : 'platformer-character';
   const preset = SPRITE_ATLAS_PRESET_DEFINITIONS[presetId];
   const frameBudgetValue = readString(input, 'frameBudget', 'preset');
-  const backgroundRemovalValue = readString(input, 'backgroundRemoval', 'chroma');
+  const backgroundRemovalValue = readString(input, 'backgroundRemoval', 'alpha');
   const qaModeValue = readString(input, 'qaMode', 'standard');
   const stylePreset = readString(input, 'stylePreset', preset.style || 'pixel-art');
   const customStyle = readString(input, 'customStyle');
@@ -731,11 +771,12 @@ export function createSpriteAtlasContract(
   const workflowLane: SpriteAtlasWorkflowLane =
     preset.assetKind === 'tileset' || preset.assetKind === 'texture'
       ? 'tileset'
-      : preset.assetKind === 'sprite' && presetId !== 'ui-avatar'
+      : preset.assetKind === 'sprite'
         ? 'animation'
         : preset.extractionMode === 'slots'
           ? 'true-grid'
           : 'static-items';
+  const repeatMode: SpriteAtlasRepeatMode | null = preset.assetKind === 'texture' ? 'self' : null;
   const frameSemantics: SpriteAtlasFrameSemantics =
     workflowLane === 'animation'
       ? 'temporal'
@@ -754,9 +795,7 @@ export function createSpriteAtlasContract(
     stylePreset,
     customStyle: customStyle || null,
     frameBudget: isSpriteAtlasFrameBudget(frameBudgetValue) ? frameBudgetValue : 'preset',
-    backgroundRemoval: isSpriteAtlasBackgroundRemoval(backgroundRemovalValue)
-      ? backgroundRemovalValue
-      : 'chroma',
+    backgroundRemoval: normalizeSpriteAtlasBackgroundRemoval(backgroundRemovalValue),
     chromaKey: readString(input, 'chromaKey', '#00FF00'),
     camera: preset.camera,
     columns,
@@ -781,6 +820,8 @@ export function createSpriteAtlasContract(
       loop: presetRow.loop ?? true,
       action: presetRow.action ?? '',
       mirrorPair: presetRow.mirrorPair ?? null,
+      repeatMode,
+      tileRole: null,
     })),
     qaMode: isQaMode(qaModeValue) ? qaModeValue : 'standard',
   };
