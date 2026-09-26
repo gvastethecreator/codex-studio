@@ -12,7 +12,7 @@
     "validation": "Apply the treatment to a pitcher; only the document profile may enforce its crop.",
     "evidencePresetIds": ["SP01-001", "SP01-010"],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_01",
@@ -27,7 +27,7 @@
     "validation": "A requested midday interior must not acquire a sunset landscape.",
     "evidencePresetIds": ["SP01-031", "SP01-038"],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_01",
@@ -42,7 +42,7 @@
     "validation": "Compare the same subject and framing under each emulsion-like response.",
     "evidencePresetIds": ["SP01-011", "SP01-017"],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_01",
@@ -57,7 +57,7 @@
     "validation": "Street treatment must not turn an object request into a street scene.",
     "evidencePresetIds": ["SP01-023", "SP01-060"],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_01",
@@ -72,7 +72,7 @@
     "validation": "Preserve a supplied object; flat lay should change camera only when selected.",
     "evidencePresetIds": ["SP01-049", "SP01-071"],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_01",
@@ -87,7 +87,7 @@
     "validation": "An animal request must not become a mountain merely because landscape tone was selected.",
     "evidencePresetIds": ["SP01-047", "SP01-054"],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_01",
@@ -102,7 +102,7 @@
     "validation": "Thermal color may transfer; a CCTV overlay requires the capture profile.",
     "evidencePresetIds": ["SP01-025", "SP01-059"],
     "status": "text-reviewed",
-    "visualValidation": "pending"
+    "visualValidation": "passed"
   },
   {
     "packId": "pack_02",
