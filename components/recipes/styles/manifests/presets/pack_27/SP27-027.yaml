@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP27-027
+packId: pack_27
+name: Videodrome 1983 - Cronenberg Body Television
+styleAnchors:
+  - Videodrome 1983 - Cronenberg Body Television
+  - eighties body horror cinema
+  - Cronenberg organic tech
+displayName: Videodrome 1983 - Cronenberg Body Television
+category: 2. Horror Cinema 80s
+domain: eighties body horror cinema
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - horror-cinema-80s
+  - horror-80s
+  - horror-cinema
+  - videodrome
+  - reference-title
+visualDna:
+  aesthetic: 'David Cronenberg Videodrome (1983) look: grimy cathode-ray media, breathing television sets, organic technology, cold Toronto apartments and body-horror practical effects.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; stage the subject with organic breathing technology and grimy cathode-ray screens. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Cold grey, flesh pink and CRT blue, true to the Videodrome 1983 palette.
+  lighting_and_shadow: Cold apartment light and glowing CRT screens, lit the way Videodrome 1983 lights its scenes.
+  texture_and_material: Eighties 35mm film grain, diffusion glow on highlights and rich saturated print color.
+  camera_and_composition: Cold clinical framing of organic machines, framed the way Videodrome 1983 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with clinical body dread.
+  rendering_and_quality: Clinical eighties body horror frame, in the recognizable hand of Videodrome 1983.
+  creative_brief: 'David Cronenberg Videodrome (1983) look: grimy cathode-ray media, breathing television sets, organic technology, cold Toronto apartments and body-horror practical effects. Carry it through Cronenberg organic tech, breathing TV, body horror. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Cronenberg organic tech; breathing TV; body horror
+avoidRules:
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: horror-cinema-80s
+  categoryName: 2. Horror Cinema 80s
+  domain: eighties body horror cinema
+  tags:
+    - curation-v2
+    - horror-cinema-80s
+    - horror-80s
+    - horror-cinema
+    - videodrome
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

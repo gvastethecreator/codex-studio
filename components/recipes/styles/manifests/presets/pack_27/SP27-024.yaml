@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP27-024
+packId: pack_27
+name: A Nightmare on Elm Street 1984 - Dream Boiler Room
+styleAnchors:
+  - A Nightmare on Elm Street 1984 - Dream Boiler Room
+  - eighties horror cinema
+  - Elm Street dream boiler room
+displayName: A Nightmare on Elm Street 1984 - Dream Boiler Room
+category: 2. Horror Cinema 80s
+domain: eighties horror cinema
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - horror-cinema-80s
+  - horror-80s
+  - horror-cinema
+  - elm-street
+  - reference-title
+visualDna:
+  aesthetic: 'Wes Craven A Nightmare on Elm Street (1984) look: suburban bedrooms melting into steaming boiler rooms, dream logic transitions, red and green lighting and practical surreal effects.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; stage the subject where cozy suburban rooms melt into steaming industrial dream spaces. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Boiler-room red and green with suburban pastel, true to the A Nightmare on Elm Street 1984 palette.
+  lighting_and_shadow: Red and green industrial light and steam, lit the way A Nightmare on Elm Street 1984 lights its scenes.
+  texture_and_material: Eighties 35mm film grain, diffusion glow on highlights and rich saturated print color.
+  camera_and_composition: Dream transitions from bedrooms into boiler rooms, framed the way A Nightmare on Elm Street 1984 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with surreal dream dread.
+  rendering_and_quality: Surreal eighties dream horror frame, in the recognizable hand of A Nightmare on Elm Street 1984.
+  creative_brief: 'Wes Craven A Nightmare on Elm Street (1984) look: suburban bedrooms melting into steaming boiler rooms, dream logic transitions, red and green lighting and practical surreal effects. Carry it through Elm Street dream boiler room, red and green, melting rooms. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Elm Street dream boiler room; red and green; melting rooms
+avoidRules:
+  - a burned man in a striped sweater with a bladed glove
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a burned man in a striped sweater with a bladed glove, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: horror-cinema-80s
+  categoryName: 2. Horror Cinema 80s
+  domain: eighties horror cinema
+  tags:
+    - curation-v2
+    - horror-cinema-80s
+    - horror-80s
+    - horror-cinema
+    - elm-street
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

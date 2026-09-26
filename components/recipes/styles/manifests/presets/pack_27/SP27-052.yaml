@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP27-052
+packId: pack_27
+name: Sleepy Hollow 1999 - Burton Monochrome Gothic
+styleAnchors:
+  - Sleepy Hollow 1999 - Burton Monochrome Gothic
+  - nineties gothic horror cinema
+  - Burton desaturated gothic
+displayName: Sleepy Hollow 1999 - Burton Monochrome Gothic
+category: 3. Horror Cinema 90s
+domain: nineties gothic horror cinema
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - horror-cinema-90s
+  - horror-90s
+  - horror-cinema
+  - sleepy-hollow
+  - reference-title
+visualDna:
+  aesthetic: 'Tim Burton Sleepy Hollow (1999) look: near-monochrome desaturated gothic village, twisted trees, misty forests, blood-red accents and storybook horror.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; stage the subject in near-monochrome misty gothic villages with twisted trees. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Near-monochrome grey-blue with vivid red accents, true to the Sleepy Hollow 1999 palette.
+  lighting_and_shadow: Misty diffused light and lanterns, lit the way Sleepy Hollow 1999 lights its scenes.
+  texture_and_material: Nineties 35mm film grain, crisp contrast and slightly desaturated print color.
+  camera_and_composition: Storybook gothic compositions, framed the way Sleepy Hollow 1999 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with storybook gothic dread.
+  rendering_and_quality: Desaturated nineties gothic horror frame, in the recognizable hand of Sleepy Hollow 1999.
+  creative_brief: 'Tim Burton Sleepy Hollow (1999) look: near-monochrome desaturated gothic village, twisted trees, misty forests, blood-red accents and storybook horror. Carry it through Burton desaturated gothic, twisted trees, red accents. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Burton desaturated gothic; twisted trees; red accents
+avoidRules:
+  - a headless horseman on a black horse
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a headless horseman on a black horse, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: horror-cinema-90s
+  categoryName: 3. Horror Cinema 90s
+  domain: nineties gothic horror cinema
+  tags:
+    - curation-v2
+    - horror-cinema-90s
+    - horror-90s
+    - horror-cinema
+    - sleepy-hollow
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

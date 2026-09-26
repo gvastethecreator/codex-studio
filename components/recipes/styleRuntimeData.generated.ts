@@ -242,6 +242,16 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
       'Character design, movie posters and manga, book and comic covers named after their artists and eras.',
     presetCount: 106,
   },
+  {
+    id: 'pack_27',
+    name: 'Decade Screens',
+    description:
+      'Screen eras rebuilt from their real production looks: horror films by decade with their film stocks, lighting and effects, and video games by decade with their hardware, rendering and art direction. Requested subjects stay the subject; each style changes medium, era and finish.',
+    cardTitle: 'Decade Screens',
+    cardDescription:
+      'Horror cinema of the 70s, 80s and 90s and video games of the 80s, 90s and 2000s, named after their films, games and makers.',
+    presetCount: 120,
+  },
 ] as GeneratedStyleRuntimePackSummary[];
 
 const GENERATED_STYLE_RUNTIME_PACK_LOADERS: Record<string, () => Promise<StyleRuntimePack>> = {
@@ -343,6 +353,10 @@ const GENERATED_STYLE_RUNTIME_PACK_LOADERS: Record<string, () => Promise<StyleRu
     ),
   pack_26: () =>
     import('./styleRuntimePacks.generated/pack_26').then((module) =>
+      module.loadGeneratedStyleRuntimePack(),
+    ),
+  pack_27: () =>
+    import('./styleRuntimePacks.generated/pack_27').then((module) =>
       module.loadGeneratedStyleRuntimePack(),
     ),
 };

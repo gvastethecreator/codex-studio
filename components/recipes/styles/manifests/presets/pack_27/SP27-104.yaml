@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP27-104
+packId: pack_27
+name: Halo 2001 - Bungie Ringworld Sci-Fi
+styleAnchors:
+  - Halo 2001 - Bungie Ringworld Sci-Fi
+  - two-thousands console shooter
+  - Halo ringworld sky
+displayName: Halo 2001 - Bungie Ringworld Sci-Fi
+category: 6. Video Games 2000s
+domain: two-thousands console shooter
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - video-games-2000s
+  - games-2000s
+  - video-game-era
+  - halo-ce
+  - reference-title
+visualDna:
+  aesthetic: 'Bungie Halo: Combat Evolved (2001) look: vast ringworld skies, bright green alien grass fields, purple glossy alien architecture, chunky armored soldiers and a first-person weapon with ammo counter.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject in first-person or third-person across vast ringworld landscapes and glossy alien structures. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Ringworld sky blue, alien purple and grass green.
+  lighting_and_shadow: Bright open-sky daylight with glossy purple reflections, lit the way Halo 2001 lights its scenes.
+  texture_and_material: Early-2000s textures with glossy bump-mapped alien metal, with the surface finish of Halo 2001.
+  camera_and_composition: First-person view with a weapon at screen right.
+  atmosphere_and_mood: Keep the requested mood with epic alien frontier.
+  rendering_and_quality: Authentic Xbox first-person shooter screen, in the recognizable hand of Halo 2001.
+  creative_brief: 'Bungie Halo: Combat Evolved (2001) look: vast ringworld skies, bright green alien grass fields, purple glossy alien architecture, chunky armored soldiers and a first-person weapon with ammo counter. Carry it through Halo ringworld sky, purple alien structures, green fields. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Halo ringworld sky; purple alien structures; green fields
+avoidRules:
+  - a green armored super soldier with a gold visor
+  - existing alien species
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a green armored super soldier with a gold visor, existing alien species, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: video-games-2000s
+  categoryName: 6. Video Games 2000s
+  domain: two-thousands console shooter
+  tags:
+    - curation-v2
+    - video-games-2000s
+    - games-2000s
+    - video-game-era
+    - halo-ce
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

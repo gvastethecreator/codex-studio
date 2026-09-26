@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP27-016
+packId: pack_27
+name: Blood on Satan’s Claw 1971 - Rural Folk Occult
+styleAnchors:
+  - Blood on Satan’s Claw 1971 - Rural Folk Occult
+  - seventies folk horror cinema
+  - Folk horror fields
+displayName: Blood on Satan’s Claw 1971 - Rural Folk Occult
+category: 1. Horror Cinema 70s
+domain: seventies folk horror cinema
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - horror-cinema-70s
+  - horror-70s
+  - horror-cinema
+  - satans-claw
+  - reference-title
+visualDna:
+  aesthetic: 'Piers Haggard The Blood on Satan’s Claw (1971) look: seventeenth-century English countryside, muddy fields, pagan rituals in ruined churches and folk horror naturalism.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; stage the subject in muddy rural fields and ruined churches with folk ritual. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Earthy mud brown, grey sky and pale linen.
+  lighting_and_shadow: Overcast rural daylight and ritual firelight, lit the way Blood on Satan’s Claw 1971 lights its scenes.
+  texture_and_material: Seventies 35mm film grain, soft halation, slight gate weave and warm faded print color.
+  camera_and_composition: Low wide fields and intimate ritual close-ups, framed the way Blood on Satan’s Claw 1971 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with creeping rural corruption.
+  rendering_and_quality: Earthy seventies folk horror frame, in the recognizable hand of Blood on Satan’s Claw 1971.
+  creative_brief: 'Piers Haggard The Blood on Satan’s Claw (1971) look: seventeenth-century English countryside, muddy fields, pagan rituals in ruined churches and folk horror naturalism. Carry it through Folk horror fields, ruined church rituals, earthy palette. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Folk horror fields; ruined church rituals; earthy palette
+avoidRules:
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: horror-cinema-70s
+  categoryName: 1. Horror Cinema 70s
+  domain: seventies folk horror cinema
+  tags:
+    - curation-v2
+    - horror-cinema-70s
+    - horror-70s
+    - horror-cinema
+    - satans-claw
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

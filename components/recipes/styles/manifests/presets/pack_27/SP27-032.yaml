@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP27-032
+packId: pack_27
+name: Opera 1987 - Argento Theater Terror
+styleAnchors:
+  - Opera 1987 - Argento Theater Terror
+  - eighties Italian horror cinema
+  - Argento opera house
+displayName: Opera 1987 - Argento Theater Terror
+category: 2. Horror Cinema 80s
+domain: eighties Italian horror cinema
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - horror-cinema-80s
+  - horror-80s
+  - horror-cinema
+  - opera-87
+  - reference-title
+visualDna:
+  aesthetic: 'Dario Argento Opera (1987) look: grand opera house, swooping raven point-of-view camera, candlelit backstage, baroque staging and elegant terror.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; stage the subject in a grand opera house with swooping camera and candlelit backstage. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Opera red velvet, gold and deep shadow, true to the Opera 1987 palette.
+  lighting_and_shadow: Candlelit backstage and stage spotlights, lit the way Opera 1987 lights its scenes.
+  texture_and_material: Eighties 35mm film grain, diffusion glow on highlights and rich saturated print color.
+  camera_and_composition: Swooping bird’s-eye camera through the auditorium, framed the way Opera 1987 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with elegant operatic terror.
+  rendering_and_quality: Baroque eighties Italian horror frame, in the recognizable hand of Opera 1987.
+  creative_brief: 'Dario Argento Opera (1987) look: grand opera house, swooping raven point-of-view camera, candlelit backstage, baroque staging and elegant terror. Carry it through Argento opera house, swooping ravens, candlelight. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Argento opera house; swooping ravens; candlelight
+avoidRules:
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: horror-cinema-80s
+  categoryName: 2. Horror Cinema 80s
+  domain: eighties Italian horror cinema
+  tags:
+    - curation-v2
+    - horror-cinema-80s
+    - horror-80s
+    - horror-cinema
+    - opera-87
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

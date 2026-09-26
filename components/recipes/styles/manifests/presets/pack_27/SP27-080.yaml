@@ -1,0 +1,71 @@
+schemaVersion: 1
+id: SP27-080
+packId: pack_27
+name: Eighties Painted Game Box Art
+styleAnchors:
+  - Eighties Painted Game Box Art
+  - eighties game packaging art
+  - Eighties box art
+displayName: Eighties Painted Game Box Art
+category: 4. Video Games 80s
+domain: eighties game packaging art
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - video-games-80s
+  - games-80s
+  - video-game-era
+  - box-art-80s
+  - reference-title
+  - requested-text
+visualDna:
+  aesthetic: 'Eighties painted video game box art look: dramatic airbrushed fantasy and sci-fi paintings wildly more detailed than the game, heroic poses, explosions and bold era packaging.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; paint the subject as an overly dramatic airbrushed heroic scene for a game box. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Airbrushed sunset orange, electric blue and chrome, true to the Eighties Painted Game Box Art palette.
+  lighting_and_shadow: Dramatic backlit airbrush glow, lit the way Eighties Painted Game Box Art lights its scenes.
+  texture_and_material: Airbrushed painting on glossy cardboard box, with the surface finish of Eighties Painted Game Box Art.
+  camera_and_composition: Dramatic heroic box-front composition, framed the way Eighties Painted Game Box Art composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with overhyped heroic drama.
+  rendering_and_quality: Airbrushed eighties game box painting, in the recognizable hand of Eighties Painted Game Box Art.
+  creative_brief: 'Eighties painted video game box art look: dramatic airbrushed fantasy and sci-fi paintings wildly more detailed than the game, heroic poses, explosions and bold era packaging. Carry it through Eighties box art, airbrush, overhyped drama. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Eighties box art; airbrush; overhyped drama
+avoidRules:
+  - existing franchise characters
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: video-games-80s
+  categoryName: 4. Video Games 80s
+  domain: eighties game packaging art
+  tags:
+    - curation-v2
+    - video-games-80s
+    - games-80s
+    - video-game-era
+    - box-art-80s
+    - reference-title
+    - requested-text
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

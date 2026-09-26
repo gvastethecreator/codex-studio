@@ -309,6 +309,18 @@ export const STYLE_COLLECTIONS = [
     facets: { domain: ['cinema'], workflow: ['image', 'edit'] },
   },
   {
+    id: 'decade_screens',
+    title: 'Decade Screens',
+    familyId: 'screen_motion',
+    description:
+      'Horror cinema of the 70s, 80s and 90s and video games of the 80s, 90s and 2000s, named after their films, games and makers.',
+    icon: 'clapperboard',
+    order: 15,
+    sourcePackIds: ['pack_27'],
+    entries: [{ id: 'decade-screens-pack', kind: 'pack', packId: 'pack_27' }],
+    facets: { workflow: ['image', 'edit'] },
+  },
+  {
     id: 'tv_broadcast_analog_video',
     title: 'Broadcast & Video',
     familyId: 'screen_motion',

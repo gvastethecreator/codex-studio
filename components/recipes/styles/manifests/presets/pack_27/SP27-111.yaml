@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP27-111
+packId: pack_27
+name: World of Warcraft 2004 - Blizzard Painted Chunky Fantasy
+styleAnchors:
+  - World of Warcraft 2004 - Blizzard Painted Chunky Fantasy
+  - two-thousands PC online game
+  - WoW hand-painted
+displayName: World of Warcraft 2004 - Blizzard Painted Chunky Fantasy
+category: 6. Video Games 2000s
+domain: two-thousands PC online game
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - video-games-2000s
+  - games-2000s
+  - video-game-era
+  - wow-vanilla
+  - reference-title
+visualDna:
+  aesthetic: 'Blizzard World of Warcraft (2004) look: hand-painted low-poly textures, chunky oversized shoulder pads and hands, saturated fantasy zones, cartoon proportions and painted skyboxes.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject with chunky cartoon proportions and oversized gear painted in hand-painted textures. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Saturated forest green, twilight purple and gold, true to the World of Warcraft 2004 palette.
+  lighting_and_shadow: Painted skybox light and baked painted shadows, lit the way World of Warcraft 2004 lights its scenes.
+  texture_and_material: Hand-painted low-poly textures with no photo detail, with the surface finish of World of Warcraft 2004.
+  camera_and_composition: Third-person over-the-shoulder view, framed the way World of Warcraft 2004 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with cozy epic fantasy.
+  rendering_and_quality: Authentic mid-2000s online game screen, in the recognizable hand of World of Warcraft 2004.
+  creative_brief: 'Blizzard World of Warcraft (2004) look: hand-painted low-poly textures, chunky oversized shoulder pads and hands, saturated fantasy zones, cartoon proportions and painted skyboxes. Carry it through WoW hand-painted, chunky proportions, saturated zones. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: WoW hand-painted; chunky proportions; saturated zones
+avoidRules:
+  - existing races and faction crests
+  - orc warchiefs
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing races and faction crests, orc warchiefs, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: video-games-2000s
+  categoryName: 6. Video Games 2000s
+  domain: two-thousands PC online game
+  tags:
+    - curation-v2
+    - video-games-2000s
+    - games-2000s
+    - video-game-era
+    - wow-vanilla
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

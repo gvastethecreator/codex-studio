@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP27-092
+packId: pack_27
+name: StarCraft 1998 - Blizzard Sci-Fi RTS
+styleAnchors:
+  - StarCraft 1998 - Blizzard Sci-Fi RTS
+  - nineties strategy game
+  - StarCraft isometric units
+displayName: StarCraft 1998 - Blizzard Sci-Fi RTS
+category: 5. Video Games 90s
+domain: nineties strategy game
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - video-games-90s
+  - games-90s
+  - video-game-era
+  - starcraft
+  - reference-title
+visualDna:
+  aesthetic: 'Blizzard StarCraft (1998) look: isometric pre-rendered sci-fi units, alien creep, industrial space bases, dark space platforms and RTS interface.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as tiny pre-rendered isometric units on dark sci-fi terrain. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Dark space blue, alien purple and industrial grey.
+  lighting_and_shadow: Pre-rendered unit lighting and dark terrain, lit the way StarCraft 1998 lights its scenes.
+  texture_and_material: Pre-rendered isometric sprites, with the surface finish of StarCraft 1998.
+  camera_and_composition: Isometric RTS view with interface, framed the way StarCraft 1998 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with tense sci-fi warfare.
+  rendering_and_quality: Authentic late-nineties RTS screen, in the recognizable hand of StarCraft 1998.
+  creative_brief: 'Blizzard StarCraft (1998) look: isometric pre-rendered sci-fi units, alien creep, industrial space bases, dark space platforms and RTS interface. Carry it through StarCraft isometric units, alien creep, RTS interface. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: StarCraft isometric units; alien creep; RTS interface
+avoidRules:
+  - existing faction units
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing faction units, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: video-games-90s
+  categoryName: 5. Video Games 90s
+  domain: nineties strategy game
+  tags:
+    - curation-v2
+    - video-games-90s
+    - games-90s
+    - video-game-era
+    - starcraft
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

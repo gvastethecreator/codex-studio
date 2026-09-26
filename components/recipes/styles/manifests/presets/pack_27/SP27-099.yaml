@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP27-099
+packId: pack_27
+name: EarthBound 1994 - Ape Suburban Psychedelia
+styleAnchors:
+  - EarthBound 1994 - Ape Suburban Psychedelia
+  - nineties console role-playing game
+  - EarthBound suburban sprites
+displayName: EarthBound 1994 - Ape Suburban Psychedelia
+category: 5. Video Games 90s
+domain: nineties console role-playing game
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - video-games-90s
+  - games-90s
+  - video-game-era
+  - earthbound
+  - reference-title
+visualDna:
+  aesthetic: 'Ape and HAL EarthBound (1994) SNES look: small suburban sprite towns, oblique perspective, quirky everyday enemies and psychedelic swirling battle backgrounds.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as small quirky sprites in suburban towns with psychedelic battle backdrops. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Pastel suburban colors and psychedelic battle swirls, true to the EarthBound 1994 palette.
+  lighting_and_shadow: Flat SNES light, lit the way EarthBound 1994 lights its scenes.
+  texture_and_material: Crisp SNES sprites and animated psychedelic patterns, with the surface finish of EarthBound 1994.
+  camera_and_composition: Oblique top-down town view or battle screen, framed the way EarthBound 1994 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with quirky suburban surrealism.
+  rendering_and_quality: Authentic SNES quirky RPG screen, in the recognizable hand of EarthBound 1994.
+  creative_brief: 'Ape and HAL EarthBound (1994) SNES look: small suburban sprite towns, oblique perspective, quirky everyday enemies and psychedelic swirling battle backgrounds. Carry it through EarthBound suburban sprites, psychedelic battles, quirky enemies. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: EarthBound suburban sprites; psychedelic battles; quirky enemies
+avoidRules:
+  - a boy in a red cap with a baseball bat
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a boy in a red cap with a baseball bat, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: video-games-90s
+  categoryName: 5. Video Games 90s
+  domain: nineties console role-playing game
+  tags:
+    - curation-v2
+    - video-games-90s
+    - games-90s
+    - video-game-era
+    - earthbound
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

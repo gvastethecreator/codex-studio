@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP27-033
+packId: pack_27
+name: The Lost Boys 1987 - Neon Boardwalk Vampires
+styleAnchors:
+  - The Lost Boys 1987 - Neon Boardwalk Vampires
+  - eighties horror cinema
+  - Lost Boys neon boardwalk
+displayName: The Lost Boys 1987 - Neon Boardwalk Vampires
+category: 2. Horror Cinema 80s
+domain: eighties horror cinema
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - horror-cinema-80s
+  - horror-80s
+  - horror-cinema
+  - lost-boys
+  - reference-title
+visualDna:
+  aesthetic: 'Joel Schumacher The Lost Boys (1987) look: neon seaside boardwalk, bonfires on the beach, leather jackets, carnival lights and stylish MTV vampire glamour.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; stage the subject on neon boardwalks and bonfire beaches with stylish eighties glamour. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Neon pink, carnival gold and night blue, true to the The Lost Boys 1987 palette.
+  lighting_and_shadow: Neon and carnival lights with bonfire glow, lit the way The Lost Boys 1987 lights its scenes.
+  texture_and_material: Eighties 35mm film grain, diffusion glow on highlights and rich saturated print color.
+  camera_and_composition: Stylish MTV-era compositions and slow motion, framed the way The Lost Boys 1987 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with stylish neon menace.
+  rendering_and_quality: Stylish eighties vampire frame, in the recognizable hand of The Lost Boys 1987.
+  creative_brief: 'Joel Schumacher The Lost Boys (1987) look: neon seaside boardwalk, bonfires on the beach, leather jackets, carnival lights and stylish MTV vampire glamour. Carry it through Lost Boys neon boardwalk, bonfires, eighties glamour. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Lost Boys neon boardwalk; bonfires; eighties glamour
+avoidRules:
+  - a gang of leather-jacketed vampire bikers
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a gang of leather-jacketed vampire bikers, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: horror-cinema-80s
+  categoryName: 2. Horror Cinema 80s
+  domain: eighties horror cinema
+  tags:
+    - curation-v2
+    - horror-cinema-80s
+    - horror-80s
+    - horror-cinema
+    - lost-boys
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

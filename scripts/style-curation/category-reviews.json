@@ -2620,11 +2620,7 @@
     "preserve": "Every card invents an original adult character; the requested identity, pose and clothing stay the subject while the design language changes shapes, proportions and finish.",
     "proposedAction": "New category of 22 named design languages: JRPG, gothic, animation model sheets, punk cartoon, freehand ink, feature animation, kaiju and armor design, stop-motion puppets, mascots, portraits, fighting game and gacha splash art, and folk animation.",
     "validation": "Generate the card set; check that each card reads as its named designer's language and that no existing franchise character appears.",
-    "evidencePresetIds": [
-      "SP26-001",
-      "SP26-002",
-      "SP26-003"
-    ],
+    "evidencePresetIds": ["SP26-001", "SP26-002", "SP26-003"],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2639,11 +2635,7 @@
     "preserve": "Requested titles and credits stay exact; the requested subject stays the poster's subject while the style sets layout, medium and finish.",
     "proposedAction": "New category of 22 poster traditions from Saul Bass and Drew Struzan to the Polish school, Showa chirashi, Bollywood billboards, Hammer, Mondo, Soviet constructivism, giallo and Hong Kong action.",
     "validation": "Generate the card set; check each card reads as its tradition, shows the invented title correctly, and never reproduces a real poster or celebrity.",
-    "evidencePresetIds": [
-      "SP26-023",
-      "SP26-024",
-      "SP26-025"
-    ],
+    "evidencePresetIds": ["SP26-023", "SP26-024", "SP26-025"],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2658,11 +2650,7 @@
     "preserve": "Requested titles, volume numbers and cover lines stay exact; the requested subject stays the cover's subject.",
     "proposedAction": "New category of 22 manga cover formats: Jump tankobon, nineties shojo magazine, Garo, kashihon, light novel, doujinshi, kanzenban foil, gashu, yonkoma, horror pocket, webtoon, josei, sports, Tezuka complete works, seinen and kids magazines, retro space opera and cooking manga.",
     "validation": "Generate the card set; check the invented titles render correctly and no real series logo or character appears.",
-    "evidencePresetIds": [
-      "SP26-045",
-      "SP26-046",
-      "SP26-047"
-    ],
+    "evidencePresetIds": ["SP26-045", "SP26-046", "SP26-047"],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2677,11 +2665,7 @@
     "preserve": "Requested titles and author names stay exact; the requested subject stays the cover's subject.",
     "proposedAction": "New category of 20 book cover traditions: Penguin tricolour and Facetti grids, Chris Foss, Frazetta, Chip Kidd, Mendelsund, Folio Society, Victorian gilt, McGinnis noir, gothic romance, Lebedev, Gorey, Mary Blair, Richard Powers, Whelan, Insel, bunko, romance clinch, Pan horror and Tim Jacobus.",
     "validation": "Generate the card set; check invented titles and author names render correctly and no real publisher logo appears.",
-    "evidencePresetIds": [
-      "SP26-067",
-      "SP26-068",
-      "SP26-069"
-    ],
+    "evidencePresetIds": ["SP26-067", "SP26-068", "SP26-069"],
     "status": "text-authored",
     "visualValidation": "pending"
   },
@@ -2696,11 +2680,97 @@
     "preserve": "Requested titles, issue numbers and cover lines stay exact; the requested subject stays the cover's subject.",
     "proposedAction": "New category of 20 comic cover traditions: Golden Age, Kirby, EC horror, Silver Age romance, Frank Miller, Mignola, Alex Ross, Sienkiewicz, Druillet, 2000 AD, nineties foil, Franquin, Bonelli, Crumb, Chris Ware, McKean, Steranko, Wrightson, Darwyn Cooke and Mexican historieta.",
     "validation": "Generate the card set; check invented titles render correctly and no real hero, emblem or masthead appears.",
-    "evidencePresetIds": [
-      "SP26-087",
-      "SP26-088",
-      "SP26-089"
-    ],
+    "evidencePresetIds": ["SP26-087", "SP26-088", "SP26-089"],
+    "status": "text-authored",
+    "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_27",
+    "category": "1. Horror Cinema 70s",
+    "displayCategory": "Horror cinema 70s",
+    "kind": "style",
+    "expectedCount": 20,
+    "baselineHash": "77285fea8b999d6b238e810e371594fe336ddc7bb524ea6cf33d9d3a2217bd40",
+    "problem": "Seventies horror styles must reproduce each named film's production look (stock, lighting, lensing, effects) without copying its killers, monsters, masks or famous shots.",
+    "preserve": "The requested subject stays the subject; the film look sets grain, color, lighting and framing. Cards stage original adult horror moments.",
+    "proposedAction": "New category of 20 seventies horror looks: Suspiria, Texas Chain Saw, Halloween, The Exorcist, The Wicker Man, Don't Look Now, Carrie, Dawn of the Dead, Hausu, Eraserhead, Alien, The Omen, Picnic at Hanging Rock, Messiah of Evil, Fulci, Blood on Satan's Claw, Salem's Lot, Black Christmas, Tourist Trap and Jaws.",
+    "validation": "Generate the card set; check each card reads as its film's look and no signature killer, mask or monster appears.",
+    "evidencePresetIds": ["SP27-001", "SP27-002", "SP27-003"],
+    "status": "text-authored",
+    "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_27",
+    "category": "2. Horror Cinema 80s",
+    "displayCategory": "Horror cinema 80s",
+    "kind": "style",
+    "expectedCount": 20,
+    "baselineHash": "1bdfe17351a131a3ba2bf9173d3763a6c67f8b041f98ef5974e9af294694d8db",
+    "problem": "Eighties horror styles must reproduce each named film's production look (practical effects, lighting, lensing, color) without copying its killers, monsters, props or famous shots.",
+    "preserve": "The requested subject stays the subject; the film look sets grain, color, lighting and framing. Cards stage original adult horror moments.",
+    "proposedAction": "New category of 20 eighties horror looks: The Shining, The Thing, Evil Dead, Elm Street, Hellraiser, Poltergeist, Videodrome, American Werewolf, The Fly, Re-Animator, Possession, Opera, The Lost Boys, Near Dark, Return of the Living Dead, Tetsuo, Society, Prince of Darkness, Gremlins and Sweet Home.",
+    "validation": "Generate the card set; check each card reads as its film's look and no signature killer, mask, creature or prop appears.",
+    "evidencePresetIds": ["SP27-021", "SP27-022", "SP27-023"],
+    "status": "text-authored",
+    "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_27",
+    "category": "3. Horror Cinema 90s",
+    "displayCategory": "Horror cinema 90s",
+    "kind": "style",
+    "expectedCount": 20,
+    "baselineHash": "b249f5c3e29905942f255aafb30b3fe11c9299413e46b38f0fca0e88a66f4861",
+    "problem": "Nineties horror styles must reproduce each named film's production look without copying its killers, ghosts, masks or famous shots.",
+    "preserve": "The requested subject stays the subject; the film look sets grain, color, lighting and framing. Cards stage original adult horror moments.",
+    "proposedAction": "New category of 20 nineties horror looks: Scream, Ringu, Se7en, Silence of the Lambs, Cure, Audition, Candyman, In the Mouth of Madness, Event Horizon, Jacob's Ladder, The Sixth Sense, Sleepy Hollow, Cronos, Cemetery Man, Braindead, Bram Stoker's Dracula, The Craft, Blair Witch, Nadja and Misery.",
+    "validation": "Generate the card set; check each card reads as its film's look and no signature killer, ghost or mask appears.",
+    "evidencePresetIds": ["SP27-041", "SP27-042", "SP27-043"],
+    "status": "text-authored",
+    "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_27",
+    "category": "4. Video Games 80s",
+    "displayCategory": "Video games 80s",
+    "kind": "style",
+    "expectedCount": 20,
+    "baselineHash": "7f57606dca290011e56830129f0fbe443b03f07e4f2bba8922d9487e21df9190",
+    "problem": "Eighties game styles must reproduce each named game's real on-screen look (hardware resolution, palette, sprite rules, display) without copying its characters, enemies, logos or level layouts.",
+    "preserve": "The requested subject stays the subject, rebuilt as that game's sprites and screen rules; cards invent original characters and places.",
+    "proposedAction": "New category of 20 eighties game looks across arcade (Pac-Man, Tempest, Donkey Kong, Out Run, Gradius, Contra, Ghosts 'n Goblins), home computers (Knight Lore, Elite, King's Quest, Maniac Mansion, Impossible Mission, Shadow of the Beast, Prince of Persia), NES (Zelda, Metroid, Castlevania, Mega Man 2, Dragon Quest) and painted box art.",
+    "validation": "Generate the card set; check each card reads as its hardware and game, with no franchise character or logo.",
+    "evidencePresetIds": ["SP27-061", "SP27-062", "SP27-063"],
+    "status": "text-authored",
+    "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_27",
+    "category": "5. Video Games 90s",
+    "displayCategory": "Video games 90s",
+    "kind": "style",
+    "expectedCount": 20,
+    "baselineHash": "84729cab918271877e7bf6130198878ecca674692f81d88c0063f6644cc66868",
+    "problem": "Nineties game styles must reproduce each named game's real on-screen look (16-bit sprites, pre-rendered CGI, early low-poly 3D, hardware texture filtering) without copying its characters, logos or level layouts.",
+    "preserve": "The requested subject stays the subject, rebuilt as that game's sprites, polygons or pre-rendered scenes; cards invent original characters and places.",
+    "proposedAction": "New category of 20 nineties game looks across PC (Doom, Myst, Diablo, StarCraft, Half-Life, Monkey Island, Grim Fandango), SNES and Mega Drive (Chrono Trigger, Donkey Kong Country, EarthBound, Sonic, Ecco), arcade (Street Fighter II, Metal Slug) and PS1/N64 (Final Fantasy VII, Resident Evil, Crash, Mario 64, GoldenEye, PaRappa).",
+    "validation": "Generate the card set; check each card reads as its hardware and game, with no franchise character or logo.",
+    "evidencePresetIds": ["SP27-081", "SP27-082", "SP27-083"],
+    "status": "text-authored",
+    "visualValidation": "pending"
+  },
+  {
+    "packId": "pack_27",
+    "category": "6. Video Games 2000s",
+    "displayCategory": "Video games 2000s",
+    "kind": "style",
+    "expectedCount": 20,
+    "baselineHash": "a067c8b5e739837aa08c31c6d4d45edc131f482c209fb0b5a1f35e5f47703890",
+    "problem": "Two-thousands game styles must reproduce each named game's real rendering signature (cel shading, bloom, wireframe, flat shading, painterly shaders, ink hatching, Flash vectors) without copying its characters, logos or level layouts.",
+    "preserve": "The requested subject stays the subject, rebuilt in that game's rendering signature; cards invent original characters and places.",
+    "proposedAction": "New category of 20 two-thousands game looks: Wind Waker, Jet Set Radio, Rez, Halo, ICO, Metroid Prime, Viewtiful Joe, Prince of Persia Sands of Time, Katamari Damacy, Paper Mario TTYD, World of Warcraft, Psychonauts, Killer7, GTA San Andreas loading art, Gears of War, BioShock, Team Fortress 2, Borderlands, Braid and Alien Hominid. Existing Okami, Half-Life 2, Shadow of the Colossus, MGS3, Silent Hill 2 and Mirror's Edge presets are not duplicated.",
+    "validation": "Generate the card set; check each card reads as its game's rendering, with no franchise character or logo.",
+    "evidencePresetIds": ["SP27-101", "SP27-102", "SP27-103"],
     "status": "text-authored",
     "visualValidation": "pending"
   }

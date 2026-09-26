@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP27-020
+packId: pack_27
+name: Jaws 1975 - Sunlit Ocean Dread
+styleAnchors:
+  - Jaws 1975 - Sunlit Ocean Dread
+  - seventies thriller cinema
+  - Spielberg water-level
+displayName: Jaws 1975 - Sunlit Ocean Dread
+category: 1. Horror Cinema 70s
+domain: seventies thriller cinema
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - horror-cinema-70s
+  - horror-70s
+  - horror-cinema
+  - jaws
+  - reference-title
+visualDna:
+  aesthetic: 'Steven Spielberg Jaws (1975) look: bright summer beach resort, water-level camera, underwater point of view, sunny panic and unseen menace beneath.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; stage the subject in bright summer water seen from water level with unseen menace below. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Summer blue sea, sand beige and beach umbrella stripes.
+  lighting_and_shadow: Bright summer sun glittering on water, lit the way Jaws 1975 lights its scenes.
+  texture_and_material: Seventies 35mm film grain, soft halation, slight gate weave and warm faded print color.
+  camera_and_composition: Water-level shots and underwater point of view, framed the way Jaws 1975 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with sunny ocean dread.
+  rendering_and_quality: Bright seventies summer thriller frame, in the recognizable hand of Jaws 1975.
+  creative_brief: 'Steven Spielberg Jaws (1975) look: bright summer beach resort, water-level camera, underwater point of view, sunny panic and unseen menace beneath. Carry it through Spielberg water-level, underwater POV, sunny beach dread. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Spielberg water-level; underwater POV; sunny beach dread
+avoidRules:
+  - a great white shark
+  - a fishing boat named after a woman
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a great white shark, a fishing boat named after a woman, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: horror-cinema-70s
+  categoryName: 1. Horror Cinema 70s
+  domain: seventies thriller cinema
+  tags:
+    - curation-v2
+    - horror-cinema-70s
+    - horror-70s
+    - horror-cinema
+    - jaws
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

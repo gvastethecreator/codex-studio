@@ -1,0 +1,2168 @@
+{
+  "packs": [
+    {
+      "id": "pack_27",
+      "name": "Decade Screens",
+      "presetCount": 120
+    }
+  ],
+  "presets": [
+    {
+      "id": "SP27-001",
+      "name": "Suspiria 1977 - Technicolor Stained-Glass Terror",
+      "styleAnchors": [
+        "Suspiria 1977 - Technicolor Stained-Glass Terror",
+        "seventies horror cinema",
+        "Argento Technicolor"
+      ],
+      "ref": "pack_27/SP27-001.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-70s",
+      "categoryName": "1. Horror Cinema 70s",
+      "domain": "seventies horror cinema",
+      "tags": ["decade-screens", "horror-cinema-70s", "seventies-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-001 suspiria 1977 - technicolor stained-glass terror seventies horror cinema argento technicolor 1. horror cinema 70s horror cinema 70s seventies horror cinema pack_27 decade screens horror-cinema-70s decade-screens horror-cinema-70s seventies-horror-cinema"
+    },
+    {
+      "id": "SP27-002",
+      "name": "The Texas Chain Saw Massacre 1974 - Sunbaked 16mm Dread",
+      "styleAnchors": [
+        "The Texas Chain Saw Massacre 1974 - Sunbaked 16mm Dread",
+        "seventies horror cinema",
+        "Hooper 16mm grain"
+      ],
+      "ref": "pack_27/SP27-002.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-70s",
+      "categoryName": "1. Horror Cinema 70s",
+      "domain": "seventies horror cinema",
+      "tags": ["decade-screens", "horror-cinema-70s", "seventies-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-002 the texas chain saw massacre 1974 - sunbaked 16mm dread seventies horror cinema hooper 16mm grain 1. horror cinema 70s horror cinema 70s seventies horror cinema pack_27 decade screens horror-cinema-70s decade-screens horror-cinema-70s seventies-horror-cinema"
+    },
+    {
+      "id": "SP27-003",
+      "name": "Halloween 1978 - Suburban Steadicam Stalk",
+      "styleAnchors": [
+        "Halloween 1978 - Suburban Steadicam Stalk",
+        "seventies horror cinema",
+        "Carpenter anamorphic"
+      ],
+      "ref": "pack_27/SP27-003.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-70s",
+      "categoryName": "1. Horror Cinema 70s",
+      "domain": "seventies horror cinema",
+      "tags": ["decade-screens", "horror-cinema-70s", "seventies-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-003 halloween 1978 - suburban steadicam stalk seventies horror cinema carpenter anamorphic 1. horror cinema 70s horror cinema 70s seventies horror cinema pack_27 decade screens horror-cinema-70s decade-screens horror-cinema-70s seventies-horror-cinema"
+    },
+    {
+      "id": "SP27-004",
+      "name": "The Exorcist 1973 - Clinical Bedroom Dread",
+      "styleAnchors": [
+        "The Exorcist 1973 - Clinical Bedroom Dread",
+        "seventies horror cinema",
+        "Friedkin realism"
+      ],
+      "ref": "pack_27/SP27-004.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-70s",
+      "categoryName": "1. Horror Cinema 70s",
+      "domain": "seventies horror cinema",
+      "tags": ["decade-screens", "horror-cinema-70s", "seventies-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-004 the exorcist 1973 - clinical bedroom dread seventies horror cinema friedkin realism 1. horror cinema 70s horror cinema 70s seventies horror cinema pack_27 decade screens horror-cinema-70s decade-screens horror-cinema-70s seventies-horror-cinema"
+    },
+    {
+      "id": "SP27-005",
+      "name": "The Wicker Man 1973 - Folk Horror Maypole Daylight",
+      "styleAnchors": [
+        "The Wicker Man 1973 - Folk Horror Maypole Daylight",
+        "seventies folk horror cinema",
+        "Wicker Man daylight"
+      ],
+      "ref": "pack_27/SP27-005.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-70s",
+      "categoryName": "1. Horror Cinema 70s",
+      "domain": "seventies folk horror cinema",
+      "tags": ["decade-screens", "horror-cinema-70s", "seventies-folk-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-005 the wicker man 1973 - folk horror maypole daylight seventies folk horror cinema wicker man daylight 1. horror cinema 70s horror cinema 70s seventies folk horror cinema pack_27 decade screens horror-cinema-70s decade-screens horror-cinema-70s seventies-folk-horror-cinema"
+    },
+    {
+      "id": "SP27-006",
+      "name": "Don’t Look Now 1973 - Venice Red Coat Grief",
+      "styleAnchors": [
+        "Don’t Look Now 1973 - Venice Red Coat Grief",
+        "seventies psychological horror cinema",
+        "Roeg Venice"
+      ],
+      "ref": "pack_27/SP27-006.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-70s",
+      "categoryName": "1. Horror Cinema 70s",
+      "domain": "seventies psychological horror cinema",
+      "tags": ["decade-screens", "horror-cinema-70s", "seventies-psychological-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-006 don’t look now 1973 - venice red coat grief seventies psychological horror cinema roeg venice 1. horror cinema 70s horror cinema 70s seventies psychological horror cinema pack_27 decade screens horror-cinema-70s decade-screens horror-cinema-70s seventies-psychological-horror-cinema"
+    },
+    {
+      "id": "SP27-007",
+      "name": "Carrie 1976 - Split-Diopter Prom Nightmare",
+      "styleAnchors": [
+        "Carrie 1976 - Split-Diopter Prom Nightmare",
+        "seventies horror cinema",
+        "De Palma split diopter"
+      ],
+      "ref": "pack_27/SP27-007.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-70s",
+      "categoryName": "1. Horror Cinema 70s",
+      "domain": "seventies horror cinema",
+      "tags": ["decade-screens", "horror-cinema-70s", "seventies-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-007 carrie 1976 - split-diopter prom nightmare seventies horror cinema de palma split diopter 1. horror cinema 70s horror cinema 70s seventies horror cinema pack_27 decade screens horror-cinema-70s decade-screens horror-cinema-70s seventies-horror-cinema"
+    },
+    {
+      "id": "SP27-008",
+      "name": "Dawn of the Dead 1978 - Mall Zombie Satire",
+      "styleAnchors": [
+        "Dawn of the Dead 1978 - Mall Zombie Satire",
+        "seventies zombie cinema",
+        "Romero mall"
+      ],
+      "ref": "pack_27/SP27-008.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-70s",
+      "categoryName": "1. Horror Cinema 70s",
+      "domain": "seventies zombie cinema",
+      "tags": ["decade-screens", "horror-cinema-70s", "seventies-zombie-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-008 dawn of the dead 1978 - mall zombie satire seventies zombie cinema romero mall 1. horror cinema 70s horror cinema 70s seventies zombie cinema pack_27 decade screens horror-cinema-70s decade-screens horror-cinema-70s seventies-zombie-cinema"
+    },
+    {
+      "id": "SP27-009",
+      "name": "House 1977 - Obayashi Psychedelic Collage Horror",
+      "styleAnchors": [
+        "House 1977 - Obayashi Psychedelic Collage Horror",
+        "seventies Japanese horror cinema",
+        "Hausu collage"
+      ],
+      "ref": "pack_27/SP27-009.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-70s",
+      "categoryName": "1. Horror Cinema 70s",
+      "domain": "seventies Japanese horror cinema",
+      "tags": ["decade-screens", "horror-cinema-70s", "seventies-japanese-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-009 house 1977 - obayashi psychedelic collage horror seventies japanese horror cinema hausu collage 1. horror cinema 70s horror cinema 70s seventies japanese horror cinema pack_27 decade screens horror-cinema-70s decade-screens horror-cinema-70s seventies-japanese-horror-cinema"
+    },
+    {
+      "id": "SP27-010",
+      "name": "Eraserhead 1977 - Industrial Monochrome Dream",
+      "styleAnchors": [
+        "Eraserhead 1977 - Industrial Monochrome Dream",
+        "seventies surreal cinema",
+        "Lynch monochrome"
+      ],
+      "ref": "pack_27/SP27-010.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-70s",
+      "categoryName": "1. Horror Cinema 70s",
+      "domain": "seventies surreal cinema",
+      "tags": ["decade-screens", "horror-cinema-70s", "seventies-surreal-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-010 eraserhead 1977 - industrial monochrome dream seventies surreal cinema lynch monochrome 1. horror cinema 70s horror cinema 70s seventies surreal cinema pack_27 decade screens horror-cinema-70s decade-screens horror-cinema-70s seventies-surreal-cinema"
+    },
+    {
+      "id": "SP27-011",
+      "name": "Alien 1979 - Biomechanical Corridor Dread",
+      "styleAnchors": [
+        "Alien 1979 - Biomechanical Corridor Dread",
+        "seventies science fiction horror cinema",
+        "Alien used future"
+      ],
+      "ref": "pack_27/SP27-011.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-70s",
+      "categoryName": "1. Horror Cinema 70s",
+      "domain": "seventies science fiction horror cinema",
+      "tags": ["decade-screens", "horror-cinema-70s", "seventies-science-fiction-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-011 alien 1979 - biomechanical corridor dread seventies science fiction horror cinema alien used future 1. horror cinema 70s horror cinema 70s seventies science fiction horror cinema pack_27 decade screens horror-cinema-70s decade-screens horror-cinema-70s seventies-science-fiction-horror-cinema"
+    },
+    {
+      "id": "SP27-012",
+      "name": "The Omen 1976 - Gothic Diplomatic Doom",
+      "styleAnchors": [
+        "The Omen 1976 - Gothic Diplomatic Doom",
+        "seventies horror cinema",
+        "Omen elegance"
+      ],
+      "ref": "pack_27/SP27-012.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-70s",
+      "categoryName": "1. Horror Cinema 70s",
+      "domain": "seventies horror cinema",
+      "tags": ["decade-screens", "horror-cinema-70s", "seventies-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-012 the omen 1976 - gothic diplomatic doom seventies horror cinema omen elegance 1. horror cinema 70s horror cinema 70s seventies horror cinema pack_27 decade screens horror-cinema-70s decade-screens horror-cinema-70s seventies-horror-cinema"
+    },
+    {
+      "id": "SP27-013",
+      "name": "Picnic at Hanging Rock 1975 - Hazy Pastoral Unease",
+      "styleAnchors": [
+        "Picnic at Hanging Rock 1975 - Hazy Pastoral Unease",
+        "seventies mystery cinema",
+        "Weir gauzy haze"
+      ],
+      "ref": "pack_27/SP27-013.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-70s",
+      "categoryName": "1. Horror Cinema 70s",
+      "domain": "seventies mystery cinema",
+      "tags": ["decade-screens", "horror-cinema-70s", "seventies-mystery-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-013 picnic at hanging rock 1975 - hazy pastoral unease seventies mystery cinema weir gauzy haze 1. horror cinema 70s horror cinema 70s seventies mystery cinema pack_27 decade screens horror-cinema-70s decade-screens horror-cinema-70s seventies-mystery-cinema"
+    },
+    {
+      "id": "SP27-014",
+      "name": "Messiah of Evil 1973 - Pop-Art Coastal Nightmare",
+      "styleAnchors": [
+        "Messiah of Evil 1973 - Pop-Art Coastal Nightmare",
+        "seventies cult horror cinema",
+        "Messiah of Evil pop murals"
+      ],
+      "ref": "pack_27/SP27-014.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-70s",
+      "categoryName": "1. Horror Cinema 70s",
+      "domain": "seventies cult horror cinema",
+      "tags": ["decade-screens", "horror-cinema-70s", "seventies-cult-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-014 messiah of evil 1973 - pop-art coastal nightmare seventies cult horror cinema messiah of evil pop murals 1. horror cinema 70s horror cinema 70s seventies cult horror cinema pack_27 decade screens horror-cinema-70s decade-screens horror-cinema-70s seventies-cult-horror-cinema"
+    },
+    {
+      "id": "SP27-015",
+      "name": "Lucio Fulci 1979 - Tropical Rot Horror",
+      "styleAnchors": [
+        "Lucio Fulci 1979 - Tropical Rot Horror",
+        "seventies Italian zombie cinema",
+        "Fulci tropical rot"
+      ],
+      "ref": "pack_27/SP27-015.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-70s",
+      "categoryName": "1. Horror Cinema 70s",
+      "domain": "seventies Italian zombie cinema",
+      "tags": ["decade-screens", "horror-cinema-70s", "seventies-italian-zombie-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-015 lucio fulci 1979 - tropical rot horror seventies italian zombie cinema fulci tropical rot 1. horror cinema 70s horror cinema 70s seventies italian zombie cinema pack_27 decade screens horror-cinema-70s decade-screens horror-cinema-70s seventies-italian-zombie-cinema"
+    },
+    {
+      "id": "SP27-016",
+      "name": "Blood on Satan’s Claw 1971 - Rural Folk Occult",
+      "styleAnchors": [
+        "Blood on Satan’s Claw 1971 - Rural Folk Occult",
+        "seventies folk horror cinema",
+        "Folk horror fields"
+      ],
+      "ref": "pack_27/SP27-016.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-70s",
+      "categoryName": "1. Horror Cinema 70s",
+      "domain": "seventies folk horror cinema",
+      "tags": ["decade-screens", "horror-cinema-70s", "seventies-folk-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-016 blood on satan’s claw 1971 - rural folk occult seventies folk horror cinema folk horror fields 1. horror cinema 70s horror cinema 70s seventies folk horror cinema pack_27 decade screens horror-cinema-70s decade-screens horror-cinema-70s seventies-folk-horror-cinema"
+    },
+    {
+      "id": "SP27-017",
+      "name": "Salem’s Lot 1979 - TV Vampire Window Scratch",
+      "styleAnchors": [
+        "Salem’s Lot 1979 - TV Vampire Window Scratch",
+        "seventies TV horror",
+        "Salem’s Lot floating figures"
+      ],
+      "ref": "pack_27/SP27-017.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-70s",
+      "categoryName": "1. Horror Cinema 70s",
+      "domain": "seventies TV horror",
+      "tags": ["decade-screens", "horror-cinema-70s", "seventies-tv-horror"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-017 salem’s lot 1979 - tv vampire window scratch seventies tv horror salem’s lot floating figures 1. horror cinema 70s horror cinema 70s seventies tv horror pack_27 decade screens horror-cinema-70s decade-screens horror-cinema-70s seventies-tv-horror"
+    },
+    {
+      "id": "SP27-018",
+      "name": "Black Christmas 1974 - Sorority Holiday Dread",
+      "styleAnchors": [
+        "Black Christmas 1974 - Sorority Holiday Dread",
+        "seventies horror cinema",
+        "Black Christmas holiday lights"
+      ],
+      "ref": "pack_27/SP27-018.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-70s",
+      "categoryName": "1. Horror Cinema 70s",
+      "domain": "seventies horror cinema",
+      "tags": ["decade-screens", "horror-cinema-70s", "seventies-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-018 black christmas 1974 - sorority holiday dread seventies horror cinema black christmas holiday lights 1. horror cinema 70s horror cinema 70s seventies horror cinema pack_27 decade screens horror-cinema-70s decade-screens horror-cinema-70s seventies-horror-cinema"
+    },
+    {
+      "id": "SP27-019",
+      "name": "Tourist Trap 1979 - Mannequin Roadside Terror",
+      "styleAnchors": [
+        "Tourist Trap 1979 - Mannequin Roadside Terror",
+        "seventies cult horror cinema",
+        "Roadside mannequins"
+      ],
+      "ref": "pack_27/SP27-019.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-70s",
+      "categoryName": "1. Horror Cinema 70s",
+      "domain": "seventies cult horror cinema",
+      "tags": ["decade-screens", "horror-cinema-70s", "seventies-cult-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-019 tourist trap 1979 - mannequin roadside terror seventies cult horror cinema roadside mannequins 1. horror cinema 70s horror cinema 70s seventies cult horror cinema pack_27 decade screens horror-cinema-70s decade-screens horror-cinema-70s seventies-cult-horror-cinema"
+    },
+    {
+      "id": "SP27-020",
+      "name": "Jaws 1975 - Sunlit Ocean Dread",
+      "styleAnchors": [
+        "Jaws 1975 - Sunlit Ocean Dread",
+        "seventies thriller cinema",
+        "Spielberg water-level"
+      ],
+      "ref": "pack_27/SP27-020.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-70s",
+      "categoryName": "1. Horror Cinema 70s",
+      "domain": "seventies thriller cinema",
+      "tags": ["decade-screens", "horror-cinema-70s", "seventies-thriller-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-020 jaws 1975 - sunlit ocean dread seventies thriller cinema spielberg water-level 1. horror cinema 70s horror cinema 70s seventies thriller cinema pack_27 decade screens horror-cinema-70s decade-screens horror-cinema-70s seventies-thriller-cinema"
+    },
+    {
+      "id": "SP27-021",
+      "name": "The Shining 1980 - Symmetrical Hotel Dread",
+      "styleAnchors": [
+        "The Shining 1980 - Symmetrical Hotel Dread",
+        "eighties horror cinema",
+        "Kubrick symmetry"
+      ],
+      "ref": "pack_27/SP27-021.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-80s",
+      "categoryName": "2. Horror Cinema 80s",
+      "domain": "eighties horror cinema",
+      "tags": ["decade-screens", "horror-cinema-80s", "eighties-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-021 the shining 1980 - symmetrical hotel dread eighties horror cinema kubrick symmetry 2. horror cinema 80s horror cinema 80s eighties horror cinema pack_27 decade screens horror-cinema-80s decade-screens horror-cinema-80s eighties-horror-cinema"
+    },
+    {
+      "id": "SP27-022",
+      "name": "The Thing 1982 - Arctic Practical Effects Paranoia",
+      "styleAnchors": [
+        "The Thing 1982 - Arctic Practical Effects Paranoia",
+        "eighties horror cinema",
+        "The Thing arctic blue"
+      ],
+      "ref": "pack_27/SP27-022.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-80s",
+      "categoryName": "2. Horror Cinema 80s",
+      "domain": "eighties horror cinema",
+      "tags": ["decade-screens", "horror-cinema-80s", "eighties-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-022 the thing 1982 - arctic practical effects paranoia eighties horror cinema the thing arctic blue 2. horror cinema 80s horror cinema 80s eighties horror cinema pack_27 decade screens horror-cinema-80s decade-screens horror-cinema-80s eighties-horror-cinema"
+    },
+    {
+      "id": "SP27-023",
+      "name": "Evil Dead 1981 - Shaky-Cam Cabin Frenzy",
+      "styleAnchors": [
+        "Evil Dead 1981 - Shaky-Cam Cabin Frenzy",
+        "eighties horror cinema",
+        "Raimi shaky cam"
+      ],
+      "ref": "pack_27/SP27-023.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-80s",
+      "categoryName": "2. Horror Cinema 80s",
+      "domain": "eighties horror cinema",
+      "tags": ["decade-screens", "horror-cinema-80s", "eighties-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-023 evil dead 1981 - shaky-cam cabin frenzy eighties horror cinema raimi shaky cam 2. horror cinema 80s horror cinema 80s eighties horror cinema pack_27 decade screens horror-cinema-80s decade-screens horror-cinema-80s eighties-horror-cinema"
+    },
+    {
+      "id": "SP27-024",
+      "name": "A Nightmare on Elm Street 1984 - Dream Boiler Room",
+      "styleAnchors": [
+        "A Nightmare on Elm Street 1984 - Dream Boiler Room",
+        "eighties horror cinema",
+        "Elm Street dream boiler room"
+      ],
+      "ref": "pack_27/SP27-024.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-80s",
+      "categoryName": "2. Horror Cinema 80s",
+      "domain": "eighties horror cinema",
+      "tags": ["decade-screens", "horror-cinema-80s", "eighties-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-024 a nightmare on elm street 1984 - dream boiler room eighties horror cinema elm street dream boiler room 2. horror cinema 80s horror cinema 80s eighties horror cinema pack_27 decade screens horror-cinema-80s decade-screens horror-cinema-80s eighties-horror-cinema"
+    },
+    {
+      "id": "SP27-025",
+      "name": "Hellraiser 1987 - Blue Chains Sacrament",
+      "styleAnchors": [
+        "Hellraiser 1987 - Blue Chains Sacrament",
+        "eighties horror cinema",
+        "Hellraiser blue light"
+      ],
+      "ref": "pack_27/SP27-025.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-80s",
+      "categoryName": "2. Horror Cinema 80s",
+      "domain": "eighties horror cinema",
+      "tags": ["decade-screens", "horror-cinema-80s", "eighties-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-025 hellraiser 1987 - blue chains sacrament eighties horror cinema hellraiser blue light 2. horror cinema 80s horror cinema 80s eighties horror cinema pack_27 decade screens horror-cinema-80s decade-screens horror-cinema-80s eighties-horror-cinema"
+    },
+    {
+      "id": "SP27-026",
+      "name": "Poltergeist 1982 - TV Static Suburb",
+      "styleAnchors": [
+        "Poltergeist 1982 - TV Static Suburb",
+        "eighties horror cinema",
+        "Poltergeist TV static"
+      ],
+      "ref": "pack_27/SP27-026.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-80s",
+      "categoryName": "2. Horror Cinema 80s",
+      "domain": "eighties horror cinema",
+      "tags": ["decade-screens", "horror-cinema-80s", "eighties-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-026 poltergeist 1982 - tv static suburb eighties horror cinema poltergeist tv static 2. horror cinema 80s horror cinema 80s eighties horror cinema pack_27 decade screens horror-cinema-80s decade-screens horror-cinema-80s eighties-horror-cinema"
+    },
+    {
+      "id": "SP27-027",
+      "name": "Videodrome 1983 - Cronenberg Body Television",
+      "styleAnchors": [
+        "Videodrome 1983 - Cronenberg Body Television",
+        "eighties body horror cinema",
+        "Cronenberg organic tech"
+      ],
+      "ref": "pack_27/SP27-027.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-80s",
+      "categoryName": "2. Horror Cinema 80s",
+      "domain": "eighties body horror cinema",
+      "tags": ["decade-screens", "horror-cinema-80s", "eighties-body-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-027 videodrome 1983 - cronenberg body television eighties body horror cinema cronenberg organic tech 2. horror cinema 80s horror cinema 80s eighties body horror cinema pack_27 decade screens horror-cinema-80s decade-screens horror-cinema-80s eighties-body-horror-cinema"
+    },
+    {
+      "id": "SP27-028",
+      "name": "An American Werewolf in London 1981 - Moonlit Moor Transformation",
+      "styleAnchors": [
+        "An American Werewolf in London 1981 - Moonlit Moor Transformation",
+        "eighties horror cinema",
+        "Moors and pubs"
+      ],
+      "ref": "pack_27/SP27-028.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-80s",
+      "categoryName": "2. Horror Cinema 80s",
+      "domain": "eighties horror cinema",
+      "tags": ["decade-screens", "horror-cinema-80s", "eighties-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-028 an american werewolf in london 1981 - moonlit moor transformation eighties horror cinema moors and pubs 2. horror cinema 80s horror cinema 80s eighties horror cinema pack_27 decade screens horror-cinema-80s decade-screens horror-cinema-80s eighties-horror-cinema"
+    },
+    {
+      "id": "SP27-029",
+      "name": "The Fly 1986 - Telepod Laboratory Metamorphosis",
+      "styleAnchors": [
+        "The Fly 1986 - Telepod Laboratory Metamorphosis",
+        "eighties body horror cinema",
+        "Telepods"
+      ],
+      "ref": "pack_27/SP27-029.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-80s",
+      "categoryName": "2. Horror Cinema 80s",
+      "domain": "eighties body horror cinema",
+      "tags": ["decade-screens", "horror-cinema-80s", "eighties-body-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-029 the fly 1986 - telepod laboratory metamorphosis eighties body horror cinema telepods 2. horror cinema 80s horror cinema 80s eighties body horror cinema pack_27 decade screens horror-cinema-80s decade-screens horror-cinema-80s eighties-body-horror-cinema"
+    },
+    {
+      "id": "SP27-030",
+      "name": "Re-Animator 1985 - Glowing Green Serum",
+      "styleAnchors": [
+        "Re-Animator 1985 - Glowing Green Serum",
+        "eighties horror comedy cinema",
+        "Glowing green serum"
+      ],
+      "ref": "pack_27/SP27-030.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-80s",
+      "categoryName": "2. Horror Cinema 80s",
+      "domain": "eighties horror comedy cinema",
+      "tags": ["decade-screens", "horror-cinema-80s", "eighties-horror-comedy-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-030 re-animator 1985 - glowing green serum eighties horror comedy cinema glowing green serum 2. horror cinema 80s horror cinema 80s eighties horror comedy cinema pack_27 decade screens horror-cinema-80s decade-screens horror-cinema-80s eighties-horror-comedy-cinema"
+    },
+    {
+      "id": "SP27-031",
+      "name": "Possession 1981 - Żuławski Hysteria Berlin",
+      "styleAnchors": [
+        "Possession 1981 - Żuławski Hysteria Berlin",
+        "eighties art horror cinema",
+        "Żuławski blue-grey"
+      ],
+      "ref": "pack_27/SP27-031.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-80s",
+      "categoryName": "2. Horror Cinema 80s",
+      "domain": "eighties art horror cinema",
+      "tags": ["decade-screens", "horror-cinema-80s", "eighties-art-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-031 possession 1981 - żuławski hysteria berlin eighties art horror cinema żuławski blue-grey 2. horror cinema 80s horror cinema 80s eighties art horror cinema pack_27 decade screens horror-cinema-80s decade-screens horror-cinema-80s eighties-art-horror-cinema"
+    },
+    {
+      "id": "SP27-032",
+      "name": "Opera 1987 - Argento Theater Terror",
+      "styleAnchors": [
+        "Opera 1987 - Argento Theater Terror",
+        "eighties Italian horror cinema",
+        "Argento opera house"
+      ],
+      "ref": "pack_27/SP27-032.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-80s",
+      "categoryName": "2. Horror Cinema 80s",
+      "domain": "eighties Italian horror cinema",
+      "tags": ["decade-screens", "horror-cinema-80s", "eighties-italian-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-032 opera 1987 - argento theater terror eighties italian horror cinema argento opera house 2. horror cinema 80s horror cinema 80s eighties italian horror cinema pack_27 decade screens horror-cinema-80s decade-screens horror-cinema-80s eighties-italian-horror-cinema"
+    },
+    {
+      "id": "SP27-033",
+      "name": "The Lost Boys 1987 - Neon Boardwalk Vampires",
+      "styleAnchors": [
+        "The Lost Boys 1987 - Neon Boardwalk Vampires",
+        "eighties horror cinema",
+        "Lost Boys neon boardwalk"
+      ],
+      "ref": "pack_27/SP27-033.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-80s",
+      "categoryName": "2. Horror Cinema 80s",
+      "domain": "eighties horror cinema",
+      "tags": ["decade-screens", "horror-cinema-80s", "eighties-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-033 the lost boys 1987 - neon boardwalk vampires eighties horror cinema lost boys neon boardwalk 2. horror cinema 80s horror cinema 80s eighties horror cinema pack_27 decade screens horror-cinema-80s decade-screens horror-cinema-80s eighties-horror-cinema"
+    },
+    {
+      "id": "SP27-034",
+      "name": "Near Dark 1987 - Dusty Western Vampires",
+      "styleAnchors": [
+        "Near Dark 1987 - Dusty Western Vampires",
+        "eighties horror cinema",
+        "Near Dark dusty highways"
+      ],
+      "ref": "pack_27/SP27-034.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-80s",
+      "categoryName": "2. Horror Cinema 80s",
+      "domain": "eighties horror cinema",
+      "tags": ["decade-screens", "horror-cinema-80s", "eighties-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-034 near dark 1987 - dusty western vampires eighties horror cinema near dark dusty highways 2. horror cinema 80s horror cinema 80s eighties horror cinema pack_27 decade screens horror-cinema-80s decade-screens horror-cinema-80s eighties-horror-cinema"
+    },
+    {
+      "id": "SP27-035",
+      "name": "Return of the Living Dead 1985 - Punk Zombie Night",
+      "styleAnchors": [
+        "Return of the Living Dead 1985 - Punk Zombie Night",
+        "eighties horror comedy cinema",
+        "Punk graveyard"
+      ],
+      "ref": "pack_27/SP27-035.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-80s",
+      "categoryName": "2. Horror Cinema 80s",
+      "domain": "eighties horror comedy cinema",
+      "tags": ["decade-screens", "horror-cinema-80s", "eighties-horror-comedy-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-035 return of the living dead 1985 - punk zombie night eighties horror comedy cinema punk graveyard 2. horror cinema 80s horror cinema 80s eighties horror comedy cinema pack_27 decade screens horror-cinema-80s decade-screens horror-cinema-80s eighties-horror-comedy-cinema"
+    },
+    {
+      "id": "SP27-036",
+      "name": "Tetsuo the Iron Man 1989 - Metal Fetish Cyberpunk",
+      "styleAnchors": [
+        "Tetsuo the Iron Man 1989 - Metal Fetish Cyberpunk",
+        "eighties Japanese cyberpunk cinema",
+        "Tetsuo metal growth"
+      ],
+      "ref": "pack_27/SP27-036.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-80s",
+      "categoryName": "2. Horror Cinema 80s",
+      "domain": "eighties Japanese cyberpunk cinema",
+      "tags": ["decade-screens", "horror-cinema-80s", "eighties-japanese-cyberpunk-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-036 tetsuo the iron man 1989 - metal fetish cyberpunk eighties japanese cyberpunk cinema tetsuo metal growth 2. horror cinema 80s horror cinema 80s eighties japanese cyberpunk cinema pack_27 decade screens horror-cinema-80s decade-screens horror-cinema-80s eighties-japanese-cyberpunk-cinema"
+    },
+    {
+      "id": "SP27-037",
+      "name": "Society 1989 - Glossy Suburban Shunting",
+      "styleAnchors": [
+        "Society 1989 - Glossy Suburban Shunting",
+        "eighties satirical horror cinema",
+        "Society glossy wealth"
+      ],
+      "ref": "pack_27/SP27-037.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-80s",
+      "categoryName": "2. Horror Cinema 80s",
+      "domain": "eighties satirical horror cinema",
+      "tags": ["decade-screens", "horror-cinema-80s", "eighties-satirical-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-037 society 1989 - glossy suburban shunting eighties satirical horror cinema society glossy wealth 2. horror cinema 80s horror cinema 80s eighties satirical horror cinema pack_27 decade screens horror-cinema-80s decade-screens horror-cinema-80s eighties-satirical-horror-cinema"
+    },
+    {
+      "id": "SP27-038",
+      "name": "Prince of Darkness 1987 - Canister Church Dread",
+      "styleAnchors": [
+        "Prince of Darkness 1987 - Canister Church Dread",
+        "eighties horror cinema",
+        "Carpenter church"
+      ],
+      "ref": "pack_27/SP27-038.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-80s",
+      "categoryName": "2. Horror Cinema 80s",
+      "domain": "eighties horror cinema",
+      "tags": ["decade-screens", "horror-cinema-80s", "eighties-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-038 prince of darkness 1987 - canister church dread eighties horror cinema carpenter church 2. horror cinema 80s horror cinema 80s eighties horror cinema pack_27 decade screens horror-cinema-80s decade-screens horror-cinema-80s eighties-horror-cinema"
+    },
+    {
+      "id": "SP27-039",
+      "name": "Gremlins 1984 - Holiday Creature Chaos",
+      "styleAnchors": [
+        "Gremlins 1984 - Holiday Creature Chaos",
+        "eighties horror comedy cinema",
+        "Snowy Christmas Americana"
+      ],
+      "ref": "pack_27/SP27-039.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-80s",
+      "categoryName": "2. Horror Cinema 80s",
+      "domain": "eighties horror comedy cinema",
+      "tags": ["decade-screens", "horror-cinema-80s", "eighties-horror-comedy-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-039 gremlins 1984 - holiday creature chaos eighties horror comedy cinema snowy christmas americana 2. horror cinema 80s horror cinema 80s eighties horror comedy cinema pack_27 decade screens horror-cinema-80s decade-screens horror-cinema-80s eighties-horror-comedy-cinema"
+    },
+    {
+      "id": "SP27-040",
+      "name": "Sweet Home 1989 - Japanese Fresco Haunting",
+      "styleAnchors": [
+        "Sweet Home 1989 - Japanese Fresco Haunting",
+        "eighties Japanese horror cinema",
+        "Sweet Home frescoes"
+      ],
+      "ref": "pack_27/SP27-040.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-80s",
+      "categoryName": "2. Horror Cinema 80s",
+      "domain": "eighties Japanese horror cinema",
+      "tags": ["decade-screens", "horror-cinema-80s", "eighties-japanese-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-040 sweet home 1989 - japanese fresco haunting eighties japanese horror cinema sweet home frescoes 2. horror cinema 80s horror cinema 80s eighties japanese horror cinema pack_27 decade screens horror-cinema-80s decade-screens horror-cinema-80s eighties-japanese-horror-cinema"
+    },
+    {
+      "id": "SP27-041",
+      "name": "Scream 1996 - Suburban Meta Slasher",
+      "styleAnchors": [
+        "Scream 1996 - Suburban Meta Slasher",
+        "nineties horror cinema",
+        "Scream suburbia"
+      ],
+      "ref": "pack_27/SP27-041.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-90s",
+      "categoryName": "3. Horror Cinema 90s",
+      "domain": "nineties horror cinema",
+      "tags": ["decade-screens", "horror-cinema-90s", "nineties-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-041 scream 1996 - suburban meta slasher nineties horror cinema scream suburbia 3. horror cinema 90s horror cinema 90s nineties horror cinema pack_27 decade screens horror-cinema-90s decade-screens horror-cinema-90s nineties-horror-cinema"
+    },
+    {
+      "id": "SP27-042",
+      "name": "Ringu 1998 - Cursed Tape Well Dread",
+      "styleAnchors": [
+        "Ringu 1998 - Cursed Tape Well Dread",
+        "nineties Japanese horror cinema",
+        "Ringu static"
+      ],
+      "ref": "pack_27/SP27-042.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-90s",
+      "categoryName": "3. Horror Cinema 90s",
+      "domain": "nineties Japanese horror cinema",
+      "tags": ["decade-screens", "horror-cinema-90s", "nineties-japanese-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-042 ringu 1998 - cursed tape well dread nineties japanese horror cinema ringu static 3. horror cinema 90s horror cinema 90s nineties japanese horror cinema pack_27 decade screens horror-cinema-90s decade-screens horror-cinema-90s nineties-japanese-horror-cinema"
+    },
+    {
+      "id": "SP27-043",
+      "name": "Se7en 1995 - Rain-Soaked Grime Procedural",
+      "styleAnchors": [
+        "Se7en 1995 - Rain-Soaked Grime Procedural",
+        "nineties crime horror cinema",
+        "Fincher bleach bypass"
+      ],
+      "ref": "pack_27/SP27-043.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-90s",
+      "categoryName": "3. Horror Cinema 90s",
+      "domain": "nineties crime horror cinema",
+      "tags": ["decade-screens", "horror-cinema-90s", "nineties-crime-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-043 se7en 1995 - rain-soaked grime procedural nineties crime horror cinema fincher bleach bypass 3. horror cinema 90s horror cinema 90s nineties crime horror cinema pack_27 decade screens horror-cinema-90s decade-screens horror-cinema-90s nineties-crime-horror-cinema"
+    },
+    {
+      "id": "SP27-044",
+      "name": "The Silence of the Lambs 1991 - Direct-Gaze Interrogation",
+      "styleAnchors": [
+        "The Silence of the Lambs 1991 - Direct-Gaze Interrogation",
+        "nineties thriller cinema",
+        "Demme direct gaze"
+      ],
+      "ref": "pack_27/SP27-044.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-90s",
+      "categoryName": "3. Horror Cinema 90s",
+      "domain": "nineties thriller cinema",
+      "tags": ["decade-screens", "horror-cinema-90s", "nineties-thriller-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-044 the silence of the lambs 1991 - direct-gaze interrogation nineties thriller cinema demme direct gaze 3. horror cinema 90s horror cinema 90s nineties thriller cinema pack_27 decade screens horror-cinema-90s decade-screens horror-cinema-90s nineties-thriller-cinema"
+    },
+    {
+      "id": "SP27-045",
+      "name": "Cure 1997 - Kurosawa Clinical Stillness",
+      "styleAnchors": [
+        "Cure 1997 - Kurosawa Clinical Stillness",
+        "nineties Japanese horror cinema",
+        "Kurosawa long takes"
+      ],
+      "ref": "pack_27/SP27-045.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-90s",
+      "categoryName": "3. Horror Cinema 90s",
+      "domain": "nineties Japanese horror cinema",
+      "tags": ["decade-screens", "horror-cinema-90s", "nineties-japanese-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-045 cure 1997 - kurosawa clinical stillness nineties japanese horror cinema kurosawa long takes 3. horror cinema 90s horror cinema 90s nineties japanese horror cinema pack_27 decade screens horror-cinema-90s decade-screens horror-cinema-90s nineties-japanese-horror-cinema"
+    },
+    {
+      "id": "SP27-046",
+      "name": "Audition 1999 - Miike Quiet-to-Cruel",
+      "styleAnchors": [
+        "Audition 1999 - Miike Quiet-to-Cruel",
+        "nineties Japanese horror cinema",
+        "Miike quiet cruelty"
+      ],
+      "ref": "pack_27/SP27-046.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-90s",
+      "categoryName": "3. Horror Cinema 90s",
+      "domain": "nineties Japanese horror cinema",
+      "tags": ["decade-screens", "horror-cinema-90s", "nineties-japanese-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-046 audition 1999 - miike quiet-to-cruel nineties japanese horror cinema miike quiet cruelty 3. horror cinema 90s horror cinema 90s nineties japanese horror cinema pack_27 decade screens horror-cinema-90s decade-screens horror-cinema-90s nineties-japanese-horror-cinema"
+    },
+    {
+      "id": "SP27-047",
+      "name": "Candyman 1992 - Urban Legend Hive",
+      "styleAnchors": [
+        "Candyman 1992 - Urban Legend Hive",
+        "nineties horror cinema",
+        "Candyman murals"
+      ],
+      "ref": "pack_27/SP27-047.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-90s",
+      "categoryName": "3. Horror Cinema 90s",
+      "domain": "nineties horror cinema",
+      "tags": ["decade-screens", "horror-cinema-90s", "nineties-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-047 candyman 1992 - urban legend hive nineties horror cinema candyman murals 3. horror cinema 90s horror cinema 90s nineties horror cinema pack_27 decade screens horror-cinema-90s decade-screens horror-cinema-90s nineties-horror-cinema"
+    },
+    {
+      "id": "SP27-048",
+      "name": "In the Mouth of Madness 1994 - Lovecraftian Small Town",
+      "styleAnchors": [
+        "In the Mouth of Madness 1994 - Lovecraftian Small Town",
+        "nineties horror cinema",
+        "Mouth of Madness Lovecraftian town"
+      ],
+      "ref": "pack_27/SP27-048.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-90s",
+      "categoryName": "3. Horror Cinema 90s",
+      "domain": "nineties horror cinema",
+      "tags": ["decade-screens", "horror-cinema-90s", "nineties-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-048 in the mouth of madness 1994 - lovecraftian small town nineties horror cinema mouth of madness lovecraftian town 3. horror cinema 90s horror cinema 90s nineties horror cinema pack_27 decade screens horror-cinema-90s decade-screens horror-cinema-90s nineties-horror-cinema"
+    },
+    {
+      "id": "SP27-049",
+      "name": "Event Horizon 1997 - Gothic Starship Hell",
+      "styleAnchors": [
+        "Event Horizon 1997 - Gothic Starship Hell",
+        "nineties science fiction horror cinema",
+        "Gothic starship"
+      ],
+      "ref": "pack_27/SP27-049.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-90s",
+      "categoryName": "3. Horror Cinema 90s",
+      "domain": "nineties science fiction horror cinema",
+      "tags": ["decade-screens", "horror-cinema-90s", "nineties-science-fiction-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-049 event horizon 1997 - gothic starship hell nineties science fiction horror cinema gothic starship 3. horror cinema 90s horror cinema 90s nineties science fiction horror cinema pack_27 decade screens horror-cinema-90s decade-screens horror-cinema-90s nineties-science-fiction-horror-cinema"
+    },
+    {
+      "id": "SP27-050",
+      "name": "Jacob’s Ladder 1990 - Hallucinatory Subway Dread",
+      "styleAnchors": [
+        "Jacob’s Ladder 1990 - Hallucinatory Subway Dread",
+        "nineties psychological horror cinema",
+        "Jacob’s Ladder vibrating faces"
+      ],
+      "ref": "pack_27/SP27-050.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-90s",
+      "categoryName": "3. Horror Cinema 90s",
+      "domain": "nineties psychological horror cinema",
+      "tags": ["decade-screens", "horror-cinema-90s", "nineties-psychological-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-050 jacob’s ladder 1990 - hallucinatory subway dread nineties psychological horror cinema jacob’s ladder vibrating faces 3. horror cinema 90s horror cinema 90s nineties psychological horror cinema pack_27 decade screens horror-cinema-90s decade-screens horror-cinema-90s nineties-psychological-horror-cinema"
+    },
+    {
+      "id": "SP27-051",
+      "name": "The Sixth Sense 1999 - Cold Breath Red Accent",
+      "styleAnchors": [
+        "The Sixth Sense 1999 - Cold Breath Red Accent",
+        "nineties supernatural cinema",
+        "Sixth Sense red accent"
+      ],
+      "ref": "pack_27/SP27-051.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-90s",
+      "categoryName": "3. Horror Cinema 90s",
+      "domain": "nineties supernatural cinema",
+      "tags": ["decade-screens", "horror-cinema-90s", "nineties-supernatural-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-051 the sixth sense 1999 - cold breath red accent nineties supernatural cinema sixth sense red accent 3. horror cinema 90s horror cinema 90s nineties supernatural cinema pack_27 decade screens horror-cinema-90s decade-screens horror-cinema-90s nineties-supernatural-cinema"
+    },
+    {
+      "id": "SP27-052",
+      "name": "Sleepy Hollow 1999 - Burton Monochrome Gothic",
+      "styleAnchors": [
+        "Sleepy Hollow 1999 - Burton Monochrome Gothic",
+        "nineties gothic horror cinema",
+        "Burton desaturated gothic"
+      ],
+      "ref": "pack_27/SP27-052.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-90s",
+      "categoryName": "3. Horror Cinema 90s",
+      "domain": "nineties gothic horror cinema",
+      "tags": ["decade-screens", "horror-cinema-90s", "nineties-gothic-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-052 sleepy hollow 1999 - burton monochrome gothic nineties gothic horror cinema burton desaturated gothic 3. horror cinema 90s horror cinema 90s nineties gothic horror cinema pack_27 decade screens horror-cinema-90s decade-screens horror-cinema-90s nineties-gothic-horror-cinema"
+    },
+    {
+      "id": "SP27-053",
+      "name": "Cronos 1993 - Del Toro Clockwork Amber",
+      "styleAnchors": [
+        "Cronos 1993 - Del Toro Clockwork Amber",
+        "nineties Mexican horror cinema",
+        "Del Toro amber"
+      ],
+      "ref": "pack_27/SP27-053.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-90s",
+      "categoryName": "3. Horror Cinema 90s",
+      "domain": "nineties Mexican horror cinema",
+      "tags": ["decade-screens", "horror-cinema-90s", "nineties-mexican-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-053 cronos 1993 - del toro clockwork amber nineties mexican horror cinema del toro amber 3. horror cinema 90s horror cinema 90s nineties mexican horror cinema pack_27 decade screens horror-cinema-90s decade-screens horror-cinema-90s nineties-mexican-horror-cinema"
+    },
+    {
+      "id": "SP27-054",
+      "name": "Cemetery Man 1994 - Romantic Gothic Absurdity",
+      "styleAnchors": [
+        "Cemetery Man 1994 - Romantic Gothic Absurdity",
+        "nineties Italian horror cinema",
+        "Cemetery Man romance"
+      ],
+      "ref": "pack_27/SP27-054.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-90s",
+      "categoryName": "3. Horror Cinema 90s",
+      "domain": "nineties Italian horror cinema",
+      "tags": ["decade-screens", "horror-cinema-90s", "nineties-italian-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-054 cemetery man 1994 - romantic gothic absurdity nineties italian horror cinema cemetery man romance 3. horror cinema 90s horror cinema 90s nineties italian horror cinema pack_27 decade screens horror-cinema-90s decade-screens horror-cinema-90s nineties-italian-horror-cinema"
+    },
+    {
+      "id": "SP27-055",
+      "name": "Braindead 1992 - Splatstick Suburban Excess",
+      "styleAnchors": [
+        "Braindead 1992 - Splatstick Suburban Excess",
+        "nineties horror comedy cinema",
+        "Braindead splatstick"
+      ],
+      "ref": "pack_27/SP27-055.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-90s",
+      "categoryName": "3. Horror Cinema 90s",
+      "domain": "nineties horror comedy cinema",
+      "tags": ["decade-screens", "horror-cinema-90s", "nineties-horror-comedy-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-055 braindead 1992 - splatstick suburban excess nineties horror comedy cinema braindead splatstick 3. horror cinema 90s horror cinema 90s nineties horror comedy cinema pack_27 decade screens horror-cinema-90s decade-screens horror-cinema-90s nineties-horror-comedy-cinema"
+    },
+    {
+      "id": "SP27-056",
+      "name": "Bram Stoker’s Dracula 1992 - In-Camera Opulent Gothic",
+      "styleAnchors": [
+        "Bram Stoker’s Dracula 1992 - In-Camera Opulent Gothic",
+        "nineties gothic cinema",
+        "Coppola in-camera effects"
+      ],
+      "ref": "pack_27/SP27-056.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-90s",
+      "categoryName": "3. Horror Cinema 90s",
+      "domain": "nineties gothic cinema",
+      "tags": ["decade-screens", "horror-cinema-90s", "nineties-gothic-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-056 bram stoker’s dracula 1992 - in-camera opulent gothic nineties gothic cinema coppola in-camera effects 3. horror cinema 90s horror cinema 90s nineties gothic cinema pack_27 decade screens horror-cinema-90s decade-screens horror-cinema-90s nineties-gothic-cinema"
+    },
+    {
+      "id": "SP27-057",
+      "name": "The Craft 1996 - Nineties Teen Witchcraft",
+      "styleAnchors": [
+        "The Craft 1996 - Nineties Teen Witchcraft",
+        "nineties horror cinema",
+        "Grunge goth"
+      ],
+      "ref": "pack_27/SP27-057.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-90s",
+      "categoryName": "3. Horror Cinema 90s",
+      "domain": "nineties horror cinema",
+      "tags": ["decade-screens", "horror-cinema-90s", "nineties-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-057 the craft 1996 - nineties teen witchcraft nineties horror cinema grunge goth 3. horror cinema 90s horror cinema 90s nineties horror cinema pack_27 decade screens horror-cinema-90s decade-screens horror-cinema-90s nineties-horror-cinema"
+    },
+    {
+      "id": "SP27-058",
+      "name": "The Blair Witch Project 1999 - Lost Woods Footage",
+      "styleAnchors": [
+        "The Blair Witch Project 1999 - Lost Woods Footage",
+        "nineties found footage horror",
+        "Blair Witch Hi8"
+      ],
+      "ref": "pack_27/SP27-058.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-90s",
+      "categoryName": "3. Horror Cinema 90s",
+      "domain": "nineties found footage horror",
+      "tags": ["decade-screens", "horror-cinema-90s", "nineties-found-footage-horror"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-058 the blair witch project 1999 - lost woods footage nineties found footage horror blair witch hi8 3. horror cinema 90s horror cinema 90s nineties found footage horror pack_27 decade screens horror-cinema-90s decade-screens horror-cinema-90s nineties-found-footage-horror"
+    },
+    {
+      "id": "SP27-059",
+      "name": "Nadja 1994 - Pixelvision Vampire Noir",
+      "styleAnchors": [
+        "Nadja 1994 - Pixelvision Vampire Noir",
+        "nineties art horror cinema",
+        "Nadja Pixelvision"
+      ],
+      "ref": "pack_27/SP27-059.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-90s",
+      "categoryName": "3. Horror Cinema 90s",
+      "domain": "nineties art horror cinema",
+      "tags": ["decade-screens", "horror-cinema-90s", "nineties-art-horror-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-059 nadja 1994 - pixelvision vampire noir nineties art horror cinema nadja pixelvision 3. horror cinema 90s horror cinema 90s nineties art horror cinema pack_27 decade screens horror-cinema-90s decade-screens horror-cinema-90s nineties-art-horror-cinema"
+    },
+    {
+      "id": "SP27-060",
+      "name": "Misery 1990 - Snowbound Farmhouse Captivity",
+      "styleAnchors": [
+        "Misery 1990 - Snowbound Farmhouse Captivity",
+        "nineties thriller cinema",
+        "Misery snowbound farmhouse"
+      ],
+      "ref": "pack_27/SP27-060.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "horror-cinema-90s",
+      "categoryName": "3. Horror Cinema 90s",
+      "domain": "nineties thriller cinema",
+      "tags": ["decade-screens", "horror-cinema-90s", "nineties-thriller-cinema"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-060 misery 1990 - snowbound farmhouse captivity nineties thriller cinema misery snowbound farmhouse 3. horror cinema 90s horror cinema 90s nineties thriller cinema pack_27 decade screens horror-cinema-90s decade-screens horror-cinema-90s nineties-thriller-cinema"
+    },
+    {
+      "id": "SP27-061",
+      "name": "Pac-Man 1980 - Namco Maze Arcade Glow",
+      "styleAnchors": [
+        "Pac-Man 1980 - Namco Maze Arcade Glow",
+        "eighties arcade game",
+        "Pac-Man neon maze"
+      ],
+      "ref": "pack_27/SP27-061.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-80s",
+      "categoryName": "4. Video Games 80s",
+      "domain": "eighties arcade game",
+      "tags": ["decade-screens", "video-games-80s", "eighties-arcade-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-061 pac-man 1980 - namco maze arcade glow eighties arcade game pac-man neon maze 4. video games 80s video games 80s eighties arcade game pack_27 decade screens video-games-80s decade-screens video-games-80s eighties-arcade-game"
+    },
+    {
+      "id": "SP27-062",
+      "name": "Tempest 1981 - Atari Color Vector Tube",
+      "styleAnchors": [
+        "Tempest 1981 - Atari Color Vector Tube",
+        "eighties vector arcade game",
+        "Tempest color vector"
+      ],
+      "ref": "pack_27/SP27-062.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-80s",
+      "categoryName": "4. Video Games 80s",
+      "domain": "eighties vector arcade game",
+      "tags": ["decade-screens", "video-games-80s", "eighties-vector-arcade-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-062 tempest 1981 - atari color vector tube eighties vector arcade game tempest color vector 4. video games 80s video games 80s eighties vector arcade game pack_27 decade screens video-games-80s decade-screens video-games-80s eighties-vector-arcade-game"
+    },
+    {
+      "id": "SP27-063",
+      "name": "Donkey Kong 1981 - Nintendo Girder Arcade Sprites",
+      "styleAnchors": [
+        "Donkey Kong 1981 - Nintendo Girder Arcade Sprites",
+        "eighties arcade game",
+        "Donkey Kong girders"
+      ],
+      "ref": "pack_27/SP27-063.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-80s",
+      "categoryName": "4. Video Games 80s",
+      "domain": "eighties arcade game",
+      "tags": ["decade-screens", "video-games-80s", "eighties-arcade-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-063 donkey kong 1981 - nintendo girder arcade sprites eighties arcade game donkey kong girders 4. video games 80s video games 80s eighties arcade game pack_27 decade screens video-games-80s decade-screens video-games-80s eighties-arcade-game"
+    },
+    {
+      "id": "SP27-064",
+      "name": "Out Run 1986 - Sega Sprite-Scaling Sunset Drive",
+      "styleAnchors": [
+        "Out Run 1986 - Sega Sprite-Scaling Sunset Drive",
+        "eighties arcade racing game",
+        "Out Run sprite scaling"
+      ],
+      "ref": "pack_27/SP27-064.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-80s",
+      "categoryName": "4. Video Games 80s",
+      "domain": "eighties arcade racing game",
+      "tags": ["decade-screens", "video-games-80s", "eighties-arcade-racing-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-064 out run 1986 - sega sprite-scaling sunset drive eighties arcade racing game out run sprite scaling 4. video games 80s video games 80s eighties arcade racing game pack_27 decade screens video-games-80s decade-screens video-games-80s eighties-arcade-racing-game"
+    },
+    {
+      "id": "SP27-065",
+      "name": "Knight Lore 1984 - Ultimate Isometric Filmation",
+      "styleAnchors": [
+        "Knight Lore 1984 - Ultimate Isometric Filmation",
+        "eighties home computer game",
+        "Knight Lore isometric"
+      ],
+      "ref": "pack_27/SP27-065.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-80s",
+      "categoryName": "4. Video Games 80s",
+      "domain": "eighties home computer game",
+      "tags": ["decade-screens", "video-games-80s", "eighties-home-computer-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-065 knight lore 1984 - ultimate isometric filmation eighties home computer game knight lore isometric 4. video games 80s video games 80s eighties home computer game pack_27 decade screens video-games-80s decade-screens video-games-80s eighties-home-computer-game"
+    },
+    {
+      "id": "SP27-066",
+      "name": "Elite 1984 - Acornsoft Wireframe Space Trading",
+      "styleAnchors": [
+        "Elite 1984 - Acornsoft Wireframe Space Trading",
+        "eighties home computer game",
+        "Elite wireframe"
+      ],
+      "ref": "pack_27/SP27-066.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-80s",
+      "categoryName": "4. Video Games 80s",
+      "domain": "eighties home computer game",
+      "tags": ["decade-screens", "video-games-80s", "eighties-home-computer-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-066 elite 1984 - acornsoft wireframe space trading eighties home computer game elite wireframe 4. video games 80s video games 80s eighties home computer game pack_27 decade screens video-games-80s decade-screens video-games-80s eighties-home-computer-game"
+    },
+    {
+      "id": "SP27-067",
+      "name": "King’s Quest 1984 - Sierra EGA Storybook Adventure",
+      "styleAnchors": [
+        "King’s Quest 1984 - Sierra EGA Storybook Adventure",
+        "eighties adventure game",
+        "Sierra EGA"
+      ],
+      "ref": "pack_27/SP27-067.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-80s",
+      "categoryName": "4. Video Games 80s",
+      "domain": "eighties adventure game",
+      "tags": ["decade-screens", "video-games-80s", "eighties-adventure-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-067 king’s quest 1984 - sierra ega storybook adventure eighties adventure game sierra ega 4. video games 80s video games 80s eighties adventure game pack_27 decade screens video-games-80s decade-screens video-games-80s eighties-adventure-game"
+    },
+    {
+      "id": "SP27-068",
+      "name": "Maniac Mansion 1987 - LucasArts SCUMM Adventure",
+      "styleAnchors": [
+        "Maniac Mansion 1987 - LucasArts SCUMM Adventure",
+        "eighties adventure game",
+        "SCUMM verbs"
+      ],
+      "ref": "pack_27/SP27-068.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-80s",
+      "categoryName": "4. Video Games 80s",
+      "domain": "eighties adventure game",
+      "tags": ["decade-screens", "video-games-80s", "eighties-adventure-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-068 maniac mansion 1987 - lucasarts scumm adventure eighties adventure game scumm verbs 4. video games 80s video games 80s eighties adventure game pack_27 decade screens video-games-80s decade-screens video-games-80s eighties-adventure-game"
+    },
+    {
+      "id": "SP27-069",
+      "name": "The Legend of Zelda 1986 - NES Top-Down Overworld",
+      "styleAnchors": [
+        "The Legend of Zelda 1986 - NES Top-Down Overworld",
+        "eighties console game",
+        "NES top-down"
+      ],
+      "ref": "pack_27/SP27-069.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-80s",
+      "categoryName": "4. Video Games 80s",
+      "domain": "eighties console game",
+      "tags": ["decade-screens", "video-games-80s", "eighties-console-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-069 the legend of zelda 1986 - nes top-down overworld eighties console game nes top-down 4. video games 80s video games 80s eighties console game pack_27 decade screens video-games-80s decade-screens video-games-80s eighties-console-game"
+    },
+    {
+      "id": "SP27-070",
+      "name": "Metroid 1986 - NES Alien Cavern Silence",
+      "styleAnchors": [
+        "Metroid 1986 - NES Alien Cavern Silence",
+        "eighties console game",
+        "Metroid black caverns"
+      ],
+      "ref": "pack_27/SP27-070.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-80s",
+      "categoryName": "4. Video Games 80s",
+      "domain": "eighties console game",
+      "tags": ["decade-screens", "video-games-80s", "eighties-console-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-070 metroid 1986 - nes alien cavern silence eighties console game metroid black caverns 4. video games 80s video games 80s eighties console game pack_27 decade screens video-games-80s decade-screens video-games-80s eighties-console-game"
+    },
+    {
+      "id": "SP27-071",
+      "name": "Castlevania 1986 - Konami Gothic Stairway",
+      "styleAnchors": [
+        "Castlevania 1986 - Konami Gothic Stairway",
+        "eighties console game",
+        "Castlevania stairs"
+      ],
+      "ref": "pack_27/SP27-071.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-80s",
+      "categoryName": "4. Video Games 80s",
+      "domain": "eighties console game",
+      "tags": ["decade-screens", "video-games-80s", "eighties-console-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-071 castlevania 1986 - konami gothic stairway eighties console game castlevania stairs 4. video games 80s video games 80s eighties console game pack_27 decade screens video-games-80s decade-screens video-games-80s eighties-console-game"
+    },
+    {
+      "id": "SP27-072",
+      "name": "Mega Man 2 1988 - Capcom Robot Master Stage",
+      "styleAnchors": [
+        "Mega Man 2 1988 - Capcom Robot Master Stage",
+        "eighties console game",
+        "Mega Man stages"
+      ],
+      "ref": "pack_27/SP27-072.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-80s",
+      "categoryName": "4. Video Games 80s",
+      "domain": "eighties console game",
+      "tags": ["decade-screens", "video-games-80s", "eighties-console-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-072 mega man 2 1988 - capcom robot master stage eighties console game mega man stages 4. video games 80s video games 80s eighties console game pack_27 decade screens video-games-80s decade-screens video-games-80s eighties-console-game"
+    },
+    {
+      "id": "SP27-073",
+      "name": "Gradius 1985 - Konami Parallax Shooter",
+      "styleAnchors": [
+        "Gradius 1985 - Konami Parallax Shooter",
+        "eighties arcade shooter",
+        "Gradius parallax"
+      ],
+      "ref": "pack_27/SP27-073.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-80s",
+      "categoryName": "4. Video Games 80s",
+      "domain": "eighties arcade shooter",
+      "tags": ["decade-screens", "video-games-80s", "eighties-arcade-shooter"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-073 gradius 1985 - konami parallax shooter eighties arcade shooter gradius parallax 4. video games 80s video games 80s eighties arcade shooter pack_27 decade screens video-games-80s decade-screens video-games-80s eighties-arcade-shooter"
+    },
+    {
+      "id": "SP27-074",
+      "name": "Contra 1987 - Konami Jungle Run-and-Gun",
+      "styleAnchors": [
+        "Contra 1987 - Konami Jungle Run-and-Gun",
+        "eighties arcade action game",
+        "Contra jungle"
+      ],
+      "ref": "pack_27/SP27-074.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-80s",
+      "categoryName": "4. Video Games 80s",
+      "domain": "eighties arcade action game",
+      "tags": ["decade-screens", "video-games-80s", "eighties-arcade-action-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-074 contra 1987 - konami jungle run-and-gun eighties arcade action game contra jungle 4. video games 80s video games 80s eighties arcade action game pack_27 decade screens video-games-80s decade-screens video-games-80s eighties-arcade-action-game"
+    },
+    {
+      "id": "SP27-075",
+      "name": "Impossible Mission 1984 - Epyx Commodore 64 Lair",
+      "styleAnchors": [
+        "Impossible Mission 1984 - Epyx Commodore 64 Lair",
+        "eighties home computer game",
+        "C64 palette"
+      ],
+      "ref": "pack_27/SP27-075.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-80s",
+      "categoryName": "4. Video Games 80s",
+      "domain": "eighties home computer game",
+      "tags": ["decade-screens", "video-games-80s", "eighties-home-computer-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-075 impossible mission 1984 - epyx commodore 64 lair eighties home computer game c64 palette 4. video games 80s video games 80s eighties home computer game pack_27 decade screens video-games-80s decade-screens video-games-80s eighties-home-computer-game"
+    },
+    {
+      "id": "SP27-076",
+      "name": "Shadow of the Beast 1989 - Psygnosis Amiga Parallax",
+      "styleAnchors": [
+        "Shadow of the Beast 1989 - Psygnosis Amiga Parallax",
+        "eighties home computer game",
+        "Amiga parallax"
+      ],
+      "ref": "pack_27/SP27-076.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-80s",
+      "categoryName": "4. Video Games 80s",
+      "domain": "eighties home computer game",
+      "tags": ["decade-screens", "video-games-80s", "eighties-home-computer-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-076 shadow of the beast 1989 - psygnosis amiga parallax eighties home computer game amiga parallax 4. video games 80s video games 80s eighties home computer game pack_27 decade screens video-games-80s decade-screens video-games-80s eighties-home-computer-game"
+    },
+    {
+      "id": "SP27-077",
+      "name": "Prince of Persia 1989 - Mechner Rotoscoped Dungeon",
+      "styleAnchors": [
+        "Prince of Persia 1989 - Mechner Rotoscoped Dungeon",
+        "eighties computer game",
+        "Mechner rotoscoping"
+      ],
+      "ref": "pack_27/SP27-077.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-80s",
+      "categoryName": "4. Video Games 80s",
+      "domain": "eighties computer game",
+      "tags": ["decade-screens", "video-games-80s", "eighties-computer-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-077 prince of persia 1989 - mechner rotoscoped dungeon eighties computer game mechner rotoscoping 4. video games 80s video games 80s eighties computer game pack_27 decade screens video-games-80s decade-screens video-games-80s eighties-computer-game"
+    },
+    {
+      "id": "SP27-078",
+      "name": "Dragon Quest 1986 - Enix Slime JRPG",
+      "styleAnchors": [
+        "Dragon Quest 1986 - Enix Slime JRPG",
+        "eighties console role-playing game",
+        "Dragon Quest battle screen"
+      ],
+      "ref": "pack_27/SP27-078.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-80s",
+      "categoryName": "4. Video Games 80s",
+      "domain": "eighties console role-playing game",
+      "tags": ["decade-screens", "video-games-80s", "eighties-console-role-playing-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-078 dragon quest 1986 - enix slime jrpg eighties console role-playing game dragon quest battle screen 4. video games 80s video games 80s eighties console role-playing game pack_27 decade screens video-games-80s decade-screens video-games-80s eighties-console-role-playing-game"
+    },
+    {
+      "id": "SP27-079",
+      "name": "Ghosts ’n Goblins 1985 - Capcom Graveyard Arcade",
+      "styleAnchors": [
+        "Ghosts ’n Goblins 1985 - Capcom Graveyard Arcade",
+        "eighties arcade game",
+        "Ghosts ’n Goblins graveyard"
+      ],
+      "ref": "pack_27/SP27-079.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-80s",
+      "categoryName": "4. Video Games 80s",
+      "domain": "eighties arcade game",
+      "tags": ["decade-screens", "video-games-80s", "eighties-arcade-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-079 ghosts ’n goblins 1985 - capcom graveyard arcade eighties arcade game ghosts ’n goblins graveyard 4. video games 80s video games 80s eighties arcade game pack_27 decade screens video-games-80s decade-screens video-games-80s eighties-arcade-game"
+    },
+    {
+      "id": "SP27-080",
+      "name": "Eighties Painted Game Box Art",
+      "styleAnchors": [
+        "Eighties Painted Game Box Art",
+        "eighties game packaging art",
+        "Eighties box art"
+      ],
+      "ref": "pack_27/SP27-080.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-80s",
+      "categoryName": "4. Video Games 80s",
+      "domain": "eighties game packaging art",
+      "tags": ["decade-screens", "video-games-80s", "eighties-game-packaging-art"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-080 eighties painted game box art eighties game packaging art eighties box art 4. video games 80s video games 80s eighties game packaging art pack_27 decade screens video-games-80s decade-screens video-games-80s eighties-game-packaging-art"
+    },
+    {
+      "id": "SP27-081",
+      "name": "Doom 1993 - id Software Sprite Shooter",
+      "styleAnchors": ["Doom 1993 - id Software Sprite Shooter", "nineties PC game", "Doom 2.5D"],
+      "ref": "pack_27/SP27-081.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-90s",
+      "categoryName": "5. Video Games 90s",
+      "domain": "nineties PC game",
+      "tags": ["decade-screens", "video-games-90s", "nineties-pc-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-081 doom 1993 - id software sprite shooter nineties pc game doom 2.5d 5. video games 90s video games 90s nineties pc game pack_27 decade screens video-games-90s decade-screens video-games-90s nineties-pc-game"
+    },
+    {
+      "id": "SP27-082",
+      "name": "Myst 1993 - Cyan Pre-Rendered Island",
+      "styleAnchors": [
+        "Myst 1993 - Cyan Pre-Rendered Island",
+        "nineties adventure game",
+        "Myst pre-rendered"
+      ],
+      "ref": "pack_27/SP27-082.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-90s",
+      "categoryName": "5. Video Games 90s",
+      "domain": "nineties adventure game",
+      "tags": ["decade-screens", "video-games-90s", "nineties-adventure-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-082 myst 1993 - cyan pre-rendered island nineties adventure game myst pre-rendered 5. video games 90s video games 90s nineties adventure game pack_27 decade screens video-games-90s decade-screens video-games-90s nineties-adventure-game"
+    },
+    {
+      "id": "SP27-083",
+      "name": "Final Fantasy VII 1997 - Pre-Rendered Backdrop Polygons",
+      "styleAnchors": [
+        "Final Fantasy VII 1997 - Pre-Rendered Backdrop Polygons",
+        "nineties console role-playing game",
+        "FF7 pre-rendered backdrops"
+      ],
+      "ref": "pack_27/SP27-083.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-90s",
+      "categoryName": "5. Video Games 90s",
+      "domain": "nineties console role-playing game",
+      "tags": ["decade-screens", "video-games-90s", "nineties-console-role-playing-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-083 final fantasy vii 1997 - pre-rendered backdrop polygons nineties console role-playing game ff7 pre-rendered backdrops 5. video games 90s video games 90s nineties console role-playing game pack_27 decade screens video-games-90s decade-screens video-games-90s nineties-console-role-playing-game"
+    },
+    {
+      "id": "SP27-084",
+      "name": "Resident Evil 1996 - Fixed-Camera Mansion Dread",
+      "styleAnchors": [
+        "Resident Evil 1996 - Fixed-Camera Mansion Dread",
+        "nineties survival horror game",
+        "Fixed cameras"
+      ],
+      "ref": "pack_27/SP27-084.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-90s",
+      "categoryName": "5. Video Games 90s",
+      "domain": "nineties survival horror game",
+      "tags": ["decade-screens", "video-games-90s", "nineties-survival-horror-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-084 resident evil 1996 - fixed-camera mansion dread nineties survival horror game fixed cameras 5. video games 90s video games 90s nineties survival horror game pack_27 decade screens video-games-90s decade-screens video-games-90s nineties-survival-horror-game"
+    },
+    {
+      "id": "SP27-085",
+      "name": "Chrono Trigger 1995 - Toriyama Sixteen-Bit Time Travel",
+      "styleAnchors": [
+        "Chrono Trigger 1995 - Toriyama Sixteen-Bit Time Travel",
+        "nineties console role-playing game",
+        "Chrono Trigger 16-bit"
+      ],
+      "ref": "pack_27/SP27-085.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-90s",
+      "categoryName": "5. Video Games 90s",
+      "domain": "nineties console role-playing game",
+      "tags": ["decade-screens", "video-games-90s", "nineties-console-role-playing-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-085 chrono trigger 1995 - toriyama sixteen-bit time travel nineties console role-playing game chrono trigger 16-bit 5. video games 90s video games 90s nineties console role-playing game pack_27 decade screens video-games-90s decade-screens video-games-90s nineties-console-role-playing-game"
+    },
+    {
+      "id": "SP27-086",
+      "name": "Donkey Kong Country 1994 - Rare Pre-Rendered Sprites",
+      "styleAnchors": [
+        "Donkey Kong Country 1994 - Rare Pre-Rendered Sprites",
+        "nineties console platformer",
+        "DKC pre-rendered sprites"
+      ],
+      "ref": "pack_27/SP27-086.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-90s",
+      "categoryName": "5. Video Games 90s",
+      "domain": "nineties console platformer",
+      "tags": ["decade-screens", "video-games-90s", "nineties-console-platformer"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-086 donkey kong country 1994 - rare pre-rendered sprites nineties console platformer dkc pre-rendered sprites 5. video games 90s video games 90s nineties console platformer pack_27 decade screens video-games-90s decade-screens video-games-90s nineties-console-platformer"
+    },
+    {
+      "id": "SP27-087",
+      "name": "Sonic the Hedgehog 1991 - Sega Loop Zone Speed",
+      "styleAnchors": [
+        "Sonic the Hedgehog 1991 - Sega Loop Zone Speed",
+        "nineties console platformer",
+        "Sonic checkerboard hills"
+      ],
+      "ref": "pack_27/SP27-087.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-90s",
+      "categoryName": "5. Video Games 90s",
+      "domain": "nineties console platformer",
+      "tags": ["decade-screens", "video-games-90s", "nineties-console-platformer"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-087 sonic the hedgehog 1991 - sega loop zone speed nineties console platformer sonic checkerboard hills 5. video games 90s video games 90s nineties console platformer pack_27 decade screens video-games-90s decade-screens video-games-90s nineties-console-platformer"
+    },
+    {
+      "id": "SP27-088",
+      "name": "Street Fighter II 1991 - Capcom Sprite Versus",
+      "styleAnchors": [
+        "Street Fighter II 1991 - Capcom Sprite Versus",
+        "nineties fighting game",
+        "SF2 large sprites"
+      ],
+      "ref": "pack_27/SP27-088.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-90s",
+      "categoryName": "5. Video Games 90s",
+      "domain": "nineties fighting game",
+      "tags": ["decade-screens", "video-games-90s", "nineties-fighting-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-088 street fighter ii 1991 - capcom sprite versus nineties fighting game sf2 large sprites 5. video games 90s video games 90s nineties fighting game pack_27 decade screens video-games-90s decade-screens video-games-90s nineties-fighting-game"
+    },
+    {
+      "id": "SP27-089",
+      "name": "Metal Slug 1996 - Nazca SNK Pixel War",
+      "styleAnchors": [
+        "Metal Slug 1996 - Nazca SNK Pixel War",
+        "nineties arcade action game",
+        "Metal Slug detailed pixels"
+      ],
+      "ref": "pack_27/SP27-089.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-90s",
+      "categoryName": "5. Video Games 90s",
+      "domain": "nineties arcade action game",
+      "tags": ["decade-screens", "video-games-90s", "nineties-arcade-action-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-089 metal slug 1996 - nazca snk pixel war nineties arcade action game metal slug detailed pixels 5. video games 90s video games 90s nineties arcade action game pack_27 decade screens video-games-90s decade-screens video-games-90s nineties-arcade-action-game"
+    },
+    {
+      "id": "SP27-090",
+      "name": "The Secret of Monkey Island 1990 - LucasArts Painted Adventure",
+      "styleAnchors": [
+        "The Secret of Monkey Island 1990 - LucasArts Painted Adventure",
+        "nineties adventure game",
+        "Monkey Island moody pixels"
+      ],
+      "ref": "pack_27/SP27-090.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-90s",
+      "categoryName": "5. Video Games 90s",
+      "domain": "nineties adventure game",
+      "tags": ["decade-screens", "video-games-90s", "nineties-adventure-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-090 the secret of monkey island 1990 - lucasarts painted adventure nineties adventure game monkey island moody pixels 5. video games 90s video games 90s nineties adventure game pack_27 decade screens video-games-90s decade-screens video-games-90s nineties-adventure-game"
+    },
+    {
+      "id": "SP27-091",
+      "name": "Diablo 1996 - Blizzard Gothic Isometric",
+      "styleAnchors": [
+        "Diablo 1996 - Blizzard Gothic Isometric",
+        "nineties PC action role-playing game",
+        "Diablo isometric"
+      ],
+      "ref": "pack_27/SP27-091.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-90s",
+      "categoryName": "5. Video Games 90s",
+      "domain": "nineties PC action role-playing game",
+      "tags": ["decade-screens", "video-games-90s", "nineties-pc-action-role-playing-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-091 diablo 1996 - blizzard gothic isometric nineties pc action role-playing game diablo isometric 5. video games 90s video games 90s nineties pc action role-playing game pack_27 decade screens video-games-90s decade-screens video-games-90s nineties-pc-action-role-playing-game"
+    },
+    {
+      "id": "SP27-092",
+      "name": "StarCraft 1998 - Blizzard Sci-Fi RTS",
+      "styleAnchors": [
+        "StarCraft 1998 - Blizzard Sci-Fi RTS",
+        "nineties strategy game",
+        "StarCraft isometric units"
+      ],
+      "ref": "pack_27/SP27-092.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-90s",
+      "categoryName": "5. Video Games 90s",
+      "domain": "nineties strategy game",
+      "tags": ["decade-screens", "video-games-90s", "nineties-strategy-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-092 starcraft 1998 - blizzard sci-fi rts nineties strategy game starcraft isometric units 5. video games 90s video games 90s nineties strategy game pack_27 decade screens video-games-90s decade-screens video-games-90s nineties-strategy-game"
+    },
+    {
+      "id": "SP27-093",
+      "name": "Crash Bandicoot 1996 - Naughty Dog Cartoon 3D",
+      "styleAnchors": [
+        "Crash Bandicoot 1996 - Naughty Dog Cartoon 3D",
+        "nineties console platformer",
+        "Crash corridors"
+      ],
+      "ref": "pack_27/SP27-093.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-90s",
+      "categoryName": "5. Video Games 90s",
+      "domain": "nineties console platformer",
+      "tags": ["decade-screens", "video-games-90s", "nineties-console-platformer"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-093 crash bandicoot 1996 - naughty dog cartoon 3d nineties console platformer crash corridors 5. video games 90s video games 90s nineties console platformer pack_27 decade screens video-games-90s decade-screens video-games-90s nineties-console-platformer"
+    },
+    {
+      "id": "SP27-094",
+      "name": "Super Mario 64 1996 - N64 Blurry Texture Worlds",
+      "styleAnchors": [
+        "Super Mario 64 1996 - N64 Blurry Texture Worlds",
+        "nineties console platformer",
+        "N64 blurry textures"
+      ],
+      "ref": "pack_27/SP27-094.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-90s",
+      "categoryName": "5. Video Games 90s",
+      "domain": "nineties console platformer",
+      "tags": ["decade-screens", "video-games-90s", "nineties-console-platformer"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-094 super mario 64 1996 - n64 blurry texture worlds nineties console platformer n64 blurry textures 5. video games 90s video games 90s nineties console platformer pack_27 decade screens video-games-90s decade-screens video-games-90s nineties-console-platformer"
+    },
+    {
+      "id": "SP27-095",
+      "name": "GoldenEye 007 1997 - Rare N64 Fog Shooter",
+      "styleAnchors": [
+        "GoldenEye 007 1997 - Rare N64 Fog Shooter",
+        "nineties console shooter",
+        "GoldenEye fog"
+      ],
+      "ref": "pack_27/SP27-095.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-90s",
+      "categoryName": "5. Video Games 90s",
+      "domain": "nineties console shooter",
+      "tags": ["decade-screens", "video-games-90s", "nineties-console-shooter"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-095 goldeneye 007 1997 - rare n64 fog shooter nineties console shooter goldeneye fog 5. video games 90s video games 90s nineties console shooter pack_27 decade screens video-games-90s decade-screens video-games-90s nineties-console-shooter"
+    },
+    {
+      "id": "SP27-096",
+      "name": "PaRappa the Rapper 1996 - Paper-Flat Rhythm",
+      "styleAnchors": [
+        "PaRappa the Rapper 1996 - Paper-Flat Rhythm",
+        "nineties rhythm game",
+        "PaRappa paper-flat"
+      ],
+      "ref": "pack_27/SP27-096.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-90s",
+      "categoryName": "5. Video Games 90s",
+      "domain": "nineties rhythm game",
+      "tags": ["decade-screens", "video-games-90s", "nineties-rhythm-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-096 parappa the rapper 1996 - paper-flat rhythm nineties rhythm game parappa paper-flat 5. video games 90s video games 90s nineties rhythm game pack_27 decade screens video-games-90s decade-screens video-games-90s nineties-rhythm-game"
+    },
+    {
+      "id": "SP27-097",
+      "name": "Half-Life 1998 - Valve Black Mesa Facility",
+      "styleAnchors": [
+        "Half-Life 1998 - Valve Black Mesa Facility",
+        "nineties PC shooter",
+        "Half-Life facility"
+      ],
+      "ref": "pack_27/SP27-097.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-90s",
+      "categoryName": "5. Video Games 90s",
+      "domain": "nineties PC shooter",
+      "tags": ["decade-screens", "video-games-90s", "nineties-pc-shooter"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-097 half-life 1998 - valve black mesa facility nineties pc shooter half-life facility 5. video games 90s video games 90s nineties pc shooter pack_27 decade screens video-games-90s decade-screens video-games-90s nineties-pc-shooter"
+    },
+    {
+      "id": "SP27-098",
+      "name": "Grim Fandango 1998 - LucasArts Calavera Noir",
+      "styleAnchors": [
+        "Grim Fandango 1998 - LucasArts Calavera Noir",
+        "nineties adventure game",
+        "Grim Fandango calaveras"
+      ],
+      "ref": "pack_27/SP27-098.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-90s",
+      "categoryName": "5. Video Games 90s",
+      "domain": "nineties adventure game",
+      "tags": ["decade-screens", "video-games-90s", "nineties-adventure-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-098 grim fandango 1998 - lucasarts calavera noir nineties adventure game grim fandango calaveras 5. video games 90s video games 90s nineties adventure game pack_27 decade screens video-games-90s decade-screens video-games-90s nineties-adventure-game"
+    },
+    {
+      "id": "SP27-099",
+      "name": "EarthBound 1994 - Ape Suburban Psychedelia",
+      "styleAnchors": [
+        "EarthBound 1994 - Ape Suburban Psychedelia",
+        "nineties console role-playing game",
+        "EarthBound suburban sprites"
+      ],
+      "ref": "pack_27/SP27-099.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-90s",
+      "categoryName": "5. Video Games 90s",
+      "domain": "nineties console role-playing game",
+      "tags": ["decade-screens", "video-games-90s", "nineties-console-role-playing-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-099 earthbound 1994 - ape suburban psychedelia nineties console role-playing game earthbound suburban sprites 5. video games 90s video games 90s nineties console role-playing game pack_27 decade screens video-games-90s decade-screens video-games-90s nineties-console-role-playing-game"
+    },
+    {
+      "id": "SP27-100",
+      "name": "Ecco the Dolphin 1992 - Sega Alien Ocean",
+      "styleAnchors": [
+        "Ecco the Dolphin 1992 - Sega Alien Ocean",
+        "nineties console game",
+        "Ecco underwater pixels"
+      ],
+      "ref": "pack_27/SP27-100.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-90s",
+      "categoryName": "5. Video Games 90s",
+      "domain": "nineties console game",
+      "tags": ["decade-screens", "video-games-90s", "nineties-console-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-100 ecco the dolphin 1992 - sega alien ocean nineties console game ecco underwater pixels 5. video games 90s video games 90s nineties console game pack_27 decade screens video-games-90s decade-screens video-games-90s nineties-console-game"
+    },
+    {
+      "id": "SP27-101",
+      "name": "The Wind Waker 2002 - Nintendo Toon Cel Seas",
+      "styleAnchors": [
+        "The Wind Waker 2002 - Nintendo Toon Cel Seas",
+        "two-thousands console adventure game",
+        "Wind Waker toon shading"
+      ],
+      "ref": "pack_27/SP27-101.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2000s",
+      "categoryName": "6. Video Games 2000s",
+      "domain": "two-thousands console adventure game",
+      "tags": ["decade-screens", "video-games-2000s", "two-thousands-console-adventure-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-101 the wind waker 2002 - nintendo toon cel seas two-thousands console adventure game wind waker toon shading 6. video games 2000s video games 2000s two-thousands console adventure game pack_27 decade screens video-games-2000s decade-screens video-games-2000s two-thousands-console-adventure-game"
+    },
+    {
+      "id": "SP27-102",
+      "name": "Jet Set Radio 2000 - Smilebit Graffiti Cel",
+      "styleAnchors": [
+        "Jet Set Radio 2000 - Smilebit Graffiti Cel",
+        "two-thousands console action game",
+        "JSR thick outlines"
+      ],
+      "ref": "pack_27/SP27-102.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2000s",
+      "categoryName": "6. Video Games 2000s",
+      "domain": "two-thousands console action game",
+      "tags": ["decade-screens", "video-games-2000s", "two-thousands-console-action-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-102 jet set radio 2000 - smilebit graffiti cel two-thousands console action game jsr thick outlines 6. video games 2000s video games 2000s two-thousands console action game pack_27 decade screens video-games-2000s decade-screens video-games-2000s two-thousands-console-action-game"
+    },
+    {
+      "id": "SP27-103",
+      "name": "Rez 2001 - United Game Artists Wireframe Synesthesia",
+      "styleAnchors": [
+        "Rez 2001 - United Game Artists Wireframe Synesthesia",
+        "two-thousands rhythm shooter",
+        "Rez wireframe"
+      ],
+      "ref": "pack_27/SP27-103.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2000s",
+      "categoryName": "6. Video Games 2000s",
+      "domain": "two-thousands rhythm shooter",
+      "tags": ["decade-screens", "video-games-2000s", "two-thousands-rhythm-shooter"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-103 rez 2001 - united game artists wireframe synesthesia two-thousands rhythm shooter rez wireframe 6. video games 2000s video games 2000s two-thousands rhythm shooter pack_27 decade screens video-games-2000s decade-screens video-games-2000s two-thousands-rhythm-shooter"
+    },
+    {
+      "id": "SP27-104",
+      "name": "Halo 2001 - Bungie Ringworld Sci-Fi",
+      "styleAnchors": [
+        "Halo 2001 - Bungie Ringworld Sci-Fi",
+        "two-thousands console shooter",
+        "Halo ringworld sky"
+      ],
+      "ref": "pack_27/SP27-104.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2000s",
+      "categoryName": "6. Video Games 2000s",
+      "domain": "two-thousands console shooter",
+      "tags": ["decade-screens", "video-games-2000s", "two-thousands-console-shooter"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-104 halo 2001 - bungie ringworld sci-fi two-thousands console shooter halo ringworld sky 6. video games 2000s video games 2000s two-thousands console shooter pack_27 decade screens video-games-2000s decade-screens video-games-2000s two-thousands-console-shooter"
+    },
+    {
+      "id": "SP27-105",
+      "name": "ICO 2001 - Team Ico Bleached Castle",
+      "styleAnchors": [
+        "ICO 2001 - Team Ico Bleached Castle",
+        "two-thousands console adventure game",
+        "ICO bleached castle"
+      ],
+      "ref": "pack_27/SP27-105.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2000s",
+      "categoryName": "6. Video Games 2000s",
+      "domain": "two-thousands console adventure game",
+      "tags": ["decade-screens", "video-games-2000s", "two-thousands-console-adventure-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-105 ico 2001 - team ico bleached castle two-thousands console adventure game ico bleached castle 6. video games 2000s video games 2000s two-thousands console adventure game pack_27 decade screens video-games-2000s decade-screens video-games-2000s two-thousands-console-adventure-game"
+    },
+    {
+      "id": "SP27-106",
+      "name": "Metroid Prime 2002 - Retro Studios Visor Scan",
+      "styleAnchors": [
+        "Metroid Prime 2002 - Retro Studios Visor Scan",
+        "two-thousands console adventure game",
+        "Metroid Prime visor"
+      ],
+      "ref": "pack_27/SP27-106.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2000s",
+      "categoryName": "6. Video Games 2000s",
+      "domain": "two-thousands console adventure game",
+      "tags": ["decade-screens", "video-games-2000s", "two-thousands-console-adventure-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-106 metroid prime 2002 - retro studios visor scan two-thousands console adventure game metroid prime visor 6. video games 2000s video games 2000s two-thousands console adventure game pack_27 decade screens video-games-2000s decade-screens video-games-2000s two-thousands-console-adventure-game"
+    },
+    {
+      "id": "SP27-107",
+      "name": "Viewtiful Joe 2003 - Clover Tokusatsu Comic Cel",
+      "styleAnchors": [
+        "Viewtiful Joe 2003 - Clover Tokusatsu Comic Cel",
+        "two-thousands console action game",
+        "Viewtiful Joe comic cel"
+      ],
+      "ref": "pack_27/SP27-107.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2000s",
+      "categoryName": "6. Video Games 2000s",
+      "domain": "two-thousands console action game",
+      "tags": ["decade-screens", "video-games-2000s", "two-thousands-console-action-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-107 viewtiful joe 2003 - clover tokusatsu comic cel two-thousands console action game viewtiful joe comic cel 6. video games 2000s video games 2000s two-thousands console action game pack_27 decade screens video-games-2000s decade-screens video-games-2000s two-thousands-console-action-game"
+    },
+    {
+      "id": "SP27-108",
+      "name": "Prince of Persia Sands of Time 2003 - Ubisoft Golden Haze",
+      "styleAnchors": [
+        "Prince of Persia Sands of Time 2003 - Ubisoft Golden Haze",
+        "two-thousands console action game",
+        "Sands of Time golden haze"
+      ],
+      "ref": "pack_27/SP27-108.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2000s",
+      "categoryName": "6. Video Games 2000s",
+      "domain": "two-thousands console action game",
+      "tags": ["decade-screens", "video-games-2000s", "two-thousands-console-action-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-108 prince of persia sands of time 2003 - ubisoft golden haze two-thousands console action game sands of time golden haze 6. video games 2000s video games 2000s two-thousands console action game pack_27 decade screens video-games-2000s decade-screens video-games-2000s two-thousands-console-action-game"
+    },
+    {
+      "id": "SP27-109",
+      "name": "Katamari Damacy 2004 - Namco Rolling Toy World",
+      "styleAnchors": [
+        "Katamari Damacy 2004 - Namco Rolling Toy World",
+        "two-thousands console game",
+        "Katamari flat low-poly"
+      ],
+      "ref": "pack_27/SP27-109.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2000s",
+      "categoryName": "6. Video Games 2000s",
+      "domain": "two-thousands console game",
+      "tags": ["decade-screens", "video-games-2000s", "two-thousands-console-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-109 katamari damacy 2004 - namco rolling toy world two-thousands console game katamari flat low-poly 6. video games 2000s video games 2000s two-thousands console game pack_27 decade screens video-games-2000s decade-screens video-games-2000s two-thousands-console-game"
+    },
+    {
+      "id": "SP27-110",
+      "name": "Paper Mario TTYD 2004 - Intelligent Systems Papercraft Stage",
+      "styleAnchors": [
+        "Paper Mario TTYD 2004 - Intelligent Systems Papercraft Stage",
+        "two-thousands console role-playing game",
+        "Paper-flat figures"
+      ],
+      "ref": "pack_27/SP27-110.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2000s",
+      "categoryName": "6. Video Games 2000s",
+      "domain": "two-thousands console role-playing game",
+      "tags": ["decade-screens", "video-games-2000s", "two-thousands-console-role-playing-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-110 paper mario ttyd 2004 - intelligent systems papercraft stage two-thousands console role-playing game paper-flat figures 6. video games 2000s video games 2000s two-thousands console role-playing game pack_27 decade screens video-games-2000s decade-screens video-games-2000s two-thousands-console-role-playing-game"
+    },
+    {
+      "id": "SP27-111",
+      "name": "World of Warcraft 2004 - Blizzard Painted Chunky Fantasy",
+      "styleAnchors": [
+        "World of Warcraft 2004 - Blizzard Painted Chunky Fantasy",
+        "two-thousands PC online game",
+        "WoW hand-painted"
+      ],
+      "ref": "pack_27/SP27-111.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2000s",
+      "categoryName": "6. Video Games 2000s",
+      "domain": "two-thousands PC online game",
+      "tags": ["decade-screens", "video-games-2000s", "two-thousands-pc-online-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-111 world of warcraft 2004 - blizzard painted chunky fantasy two-thousands pc online game wow hand-painted 6. video games 2000s video games 2000s two-thousands pc online game pack_27 decade screens video-games-2000s decade-screens video-games-2000s two-thousands-pc-online-game"
+    },
+    {
+      "id": "SP27-112",
+      "name": "Psychonauts 2005 - Double Fine Warped Mindscape",
+      "styleAnchors": [
+        "Psychonauts 2005 - Double Fine Warped Mindscape",
+        "two-thousands console platformer",
+        "Psychonauts lopsided designs"
+      ],
+      "ref": "pack_27/SP27-112.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2000s",
+      "categoryName": "6. Video Games 2000s",
+      "domain": "two-thousands console platformer",
+      "tags": ["decade-screens", "video-games-2000s", "two-thousands-console-platformer"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-112 psychonauts 2005 - double fine warped mindscape two-thousands console platformer psychonauts lopsided designs 6. video games 2000s video games 2000s two-thousands console platformer pack_27 decade screens video-games-2000s decade-screens video-games-2000s two-thousands-console-platformer"
+    },
+    {
+      "id": "SP27-113",
+      "name": "Killer7 2005 - Grasshopper Flat-Shaded Noir",
+      "styleAnchors": [
+        "Killer7 2005 - Grasshopper Flat-Shaded Noir",
+        "two-thousands console action game",
+        "Killer7 flat shading"
+      ],
+      "ref": "pack_27/SP27-113.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2000s",
+      "categoryName": "6. Video Games 2000s",
+      "domain": "two-thousands console action game",
+      "tags": ["decade-screens", "video-games-2000s", "two-thousands-console-action-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-113 killer7 2005 - grasshopper flat-shaded noir two-thousands console action game killer7 flat shading 6. video games 2000s video games 2000s two-thousands console action game pack_27 decade screens video-games-2000s decade-screens video-games-2000s two-thousands-console-action-game"
+    },
+    {
+      "id": "SP27-114",
+      "name": "GTA San Andreas 2004 - Rockstar Loading Screen Art",
+      "styleAnchors": [
+        "GTA San Andreas 2004 - Rockstar Loading Screen Art",
+        "two-thousands game illustration",
+        "GTA SA loading art"
+      ],
+      "ref": "pack_27/SP27-114.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2000s",
+      "categoryName": "6. Video Games 2000s",
+      "domain": "two-thousands game illustration",
+      "tags": ["decade-screens", "video-games-2000s", "two-thousands-game-illustration"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-114 gta san andreas 2004 - rockstar loading screen art two-thousands game illustration gta sa loading art 6. video games 2000s video games 2000s two-thousands game illustration pack_27 decade screens video-games-2000s decade-screens video-games-2000s two-thousands-game-illustration"
+    },
+    {
+      "id": "SP27-115",
+      "name": "Gears of War 2006 - Epic Grey-Brown Grit",
+      "styleAnchors": [
+        "Gears of War 2006 - Epic Grey-Brown Grit",
+        "two-thousands console shooter",
+        "Gears grey-brown"
+      ],
+      "ref": "pack_27/SP27-115.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2000s",
+      "categoryName": "6. Video Games 2000s",
+      "domain": "two-thousands console shooter",
+      "tags": ["decade-screens", "video-games-2000s", "two-thousands-console-shooter"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-115 gears of war 2006 - epic grey-brown grit two-thousands console shooter gears grey-brown 6. video games 2000s video games 2000s two-thousands console shooter pack_27 decade screens video-games-2000s decade-screens video-games-2000s two-thousands-console-shooter"
+    },
+    {
+      "id": "SP27-116",
+      "name": "BioShock 2007 - Irrational Art Deco Undersea",
+      "styleAnchors": [
+        "BioShock 2007 - Irrational Art Deco Undersea",
+        "two-thousands PC shooter",
+        "BioShock deco"
+      ],
+      "ref": "pack_27/SP27-116.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2000s",
+      "categoryName": "6. Video Games 2000s",
+      "domain": "two-thousands PC shooter",
+      "tags": ["decade-screens", "video-games-2000s", "two-thousands-pc-shooter"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-116 bioshock 2007 - irrational art deco undersea two-thousands pc shooter bioshock deco 6. video games 2000s video games 2000s two-thousands pc shooter pack_27 decade screens video-games-2000s decade-screens video-games-2000s two-thousands-pc-shooter"
+    },
+    {
+      "id": "SP27-117",
+      "name": "Team Fortress 2 2007 - Valve Painterly Mercenaries",
+      "styleAnchors": [
+        "Team Fortress 2 2007 - Valve Painterly Mercenaries",
+        "two-thousands PC shooter",
+        "TF2 painterly"
+      ],
+      "ref": "pack_27/SP27-117.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2000s",
+      "categoryName": "6. Video Games 2000s",
+      "domain": "two-thousands PC shooter",
+      "tags": ["decade-screens", "video-games-2000s", "two-thousands-pc-shooter"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-117 team fortress 2 2007 - valve painterly mercenaries two-thousands pc shooter tf2 painterly 6. video games 2000s video games 2000s two-thousands pc shooter pack_27 decade screens video-games-2000s decade-screens video-games-2000s two-thousands-pc-shooter"
+    },
+    {
+      "id": "SP27-118",
+      "name": "Borderlands 2009 - Gearbox Ink-Hatched Wasteland",
+      "styleAnchors": [
+        "Borderlands 2009 - Gearbox Ink-Hatched Wasteland",
+        "two-thousands console shooter",
+        "Borderlands ink hatching"
+      ],
+      "ref": "pack_27/SP27-118.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2000s",
+      "categoryName": "6. Video Games 2000s",
+      "domain": "two-thousands console shooter",
+      "tags": ["decade-screens", "video-games-2000s", "two-thousands-console-shooter"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-118 borderlands 2009 - gearbox ink-hatched wasteland two-thousands console shooter borderlands ink hatching 6. video games 2000s video games 2000s two-thousands console shooter pack_27 decade screens video-games-2000s decade-screens video-games-2000s two-thousands-console-shooter"
+    },
+    {
+      "id": "SP27-119",
+      "name": "Braid 2008 - Number None Painted Time Puzzle",
+      "styleAnchors": [
+        "Braid 2008 - Number None Painted Time Puzzle",
+        "two-thousands indie puzzle platformer",
+        "Braid painted backgrounds"
+      ],
+      "ref": "pack_27/SP27-119.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2000s",
+      "categoryName": "6. Video Games 2000s",
+      "domain": "two-thousands indie puzzle platformer",
+      "tags": ["decade-screens", "video-games-2000s", "two-thousands-indie-puzzle-platformer"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-119 braid 2008 - number none painted time puzzle two-thousands indie puzzle platformer braid painted backgrounds 6. video games 2000s video games 2000s two-thousands indie puzzle platformer pack_27 decade screens video-games-2000s decade-screens video-games-2000s two-thousands-indie-puzzle-platformer"
+    },
+    {
+      "id": "SP27-120",
+      "name": "Alien Hominid 2002 - The Behemoth Flash Cartoon",
+      "styleAnchors": [
+        "Alien Hominid 2002 - The Behemoth Flash Cartoon",
+        "two-thousands indie action game",
+        "Newgrounds Flash"
+      ],
+      "ref": "pack_27/SP27-120.yaml",
+      "packId": "pack_27",
+      "packName": "Decade Screens",
+      "categoryId": "video-games-2000s",
+      "categoryName": "6. Video Games 2000s",
+      "domain": "two-thousands indie action game",
+      "tags": ["decade-screens", "video-games-2000s", "two-thousands-indie-action-game"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp27-120 alien hominid 2002 - the behemoth flash cartoon two-thousands indie action game newgrounds flash 6. video games 2000s video games 2000s two-thousands indie action game pack_27 decade screens video-games-2000s decade-screens video-games-2000s two-thousands-indie-action-game"
+    }
+  ],
+  "totalPresetCount": 120
+}

@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP27-101
+packId: pack_27
+name: The Wind Waker 2002 - Nintendo Toon Cel Seas
+styleAnchors:
+  - The Wind Waker 2002 - Nintendo Toon Cel Seas
+  - two-thousands console adventure game
+  - Wind Waker toon shading
+displayName: The Wind Waker 2002 - Nintendo Toon Cel Seas
+category: 6. Video Games 2000s
+domain: two-thousands console adventure game
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - video-games-2000s
+  - games-2000s
+  - video-game-era
+  - wind-waker
+  - reference-title
+visualDna:
+  aesthetic: 'Nintendo The Legend of Zelda: The Wind Waker (2002) look: bright toon cel-shaded 3D, huge expressive eyes, flat color with crisp two-tone shadows, swirling stylized wind, clouds and a sparkling open sea.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a toon cel-shaded 3D figure with huge expressive eyes and crisp two-tone shading. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Sparkling sea blue, grass green and warm sunset orange.
+  lighting_and_shadow: Bright sun with crisp two-tone cel shadows, lit the way The Wind Waker 2002 lights its scenes.
+  texture_and_material: Flat cel colors, swirl-shaped smoke and wind curls.
+  camera_and_composition: Wide third-person view over islands and sea, framed the way The Wind Waker 2002 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with bright seafaring wonder.
+  rendering_and_quality: Authentic GameCube cel-shaded screen, in the recognizable hand of The Wind Waker 2002.
+  creative_brief: 'Nintendo The Legend of Zelda: The Wind Waker (2002) look: bright toon cel-shaded 3D, huge expressive eyes, flat color with crisp two-tone shadows, swirling stylized wind, clouds and a sparkling open sea. Carry it through Wind Waker toon shading, huge eyes, swirl clouds, open sea. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Wind Waker toon shading; huge eyes; swirl clouds; open sea
+avoidRules:
+  - a green-tunic elf hero
+  - a talking red boat
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a green-tunic elf hero, a talking red boat, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: video-games-2000s
+  categoryName: 6. Video Games 2000s
+  domain: two-thousands console adventure game
+  tags:
+    - curation-v2
+    - video-games-2000s
+    - games-2000s
+    - video-game-era
+    - wind-waker
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

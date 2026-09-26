@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP27-061
+packId: pack_27
+name: Pac-Man 1980 - Namco Maze Arcade Glow
+styleAnchors:
+  - Pac-Man 1980 - Namco Maze Arcade Glow
+  - eighties arcade game
+  - Pac-Man neon maze
+displayName: Pac-Man 1980 - Namco Maze Arcade Glow
+category: 4. Video Games 80s
+domain: eighties arcade game
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - video-games-80s
+  - games-80s
+  - video-game-era
+  - pac-man
+  - reference-title
+visualDna:
+  aesthetic: 'Namco Pac-Man (1980) arcade look: glowing neon-blue maze walls on pure black, tiny round sprites, dotted paths, simple bright character colors and a glowing cabinet screen.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a tiny bright sprite inside a glowing neon-blue maze on black. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Neon maze blue, pure black, dot white and bright sprite colors.
+  lighting_and_shadow: Glowing screen light with phosphor bloom on black.
+  texture_and_material: Visible chunky pixels on a curved CRT with scanlines, slight bloom and phosphor glow.
+  camera_and_composition: Top-down maze view filling a vertical arcade screen.
+  atmosphere_and_mood: Keep the requested mood with bright arcade chase.
+  rendering_and_quality: Authentic early-eighties arcade screen capture, in the recognizable hand of Pac-Man 1980.
+  creative_brief: 'Namco Pac-Man (1980) arcade look: glowing neon-blue maze walls on pure black, tiny round sprites, dotted paths, simple bright character colors and a glowing cabinet screen. Carry it through Pac-Man neon maze, dots, tiny sprites, black background. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Pac-Man neon maze; dots; tiny sprites; black background
+avoidRules:
+  - a yellow wedge-mouthed circle
+  - four colorful ghosts with eyes
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a yellow wedge-mouthed circle, four colorful ghosts with eyes, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: video-games-80s
+  categoryName: 4. Video Games 80s
+  domain: eighties arcade game
+  tags:
+    - curation-v2
+    - video-games-80s
+    - games-80s
+    - video-game-era
+    - pac-man
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

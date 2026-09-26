@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP27-015
+packId: pack_27
+name: Lucio Fulci 1979 - Tropical Rot Horror
+styleAnchors:
+  - Lucio Fulci 1979 - Tropical Rot Horror
+  - seventies Italian zombie cinema
+  - Fulci tropical rot
+displayName: Lucio Fulci 1979 - Tropical Rot Horror
+category: 1. Horror Cinema 70s
+domain: seventies Italian zombie cinema
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - horror-cinema-70s
+  - horror-70s
+  - horror-cinema
+  - fulci
+  - reference-title
+visualDna:
+  aesthetic: 'Lucio Fulci Zombi 2 (1979) look: tropical island decay, crumbling conquistador graves, extreme close-ups of eyes, rotting makeup and humid Italian exploitation color.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; stage the subject in humid tropical decay with extreme close-ups of eyes. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Humid green, rot brown and sun-bleached white, true to the Lucio Fulci 1979 palette.
+  lighting_and_shadow: Harsh tropical sun and murky shade, lit the way Lucio Fulci 1979 lights its scenes.
+  texture_and_material: Seventies 35mm film grain, soft halation, slight gate weave and warm faded print color.
+  camera_and_composition: Extreme eye close-ups and crash zooms, framed the way Lucio Fulci 1979 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with humid rotting dread.
+  rendering_and_quality: Humid seventies Italian zombie frame, in the recognizable hand of Lucio Fulci 1979.
+  creative_brief: 'Lucio Fulci Zombi 2 (1979) look: tropical island decay, crumbling conquistador graves, extreme close-ups of eyes, rotting makeup and humid Italian exploitation color. Carry it through Fulci tropical rot, eye close-ups, crash zooms. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Fulci tropical rot; eye close-ups; crash zooms
+avoidRules:
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: horror-cinema-70s
+  categoryName: 1. Horror Cinema 70s
+  domain: seventies Italian zombie cinema
+  tags:
+    - curation-v2
+    - horror-cinema-70s
+    - horror-70s
+    - horror-cinema
+    - fulci
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

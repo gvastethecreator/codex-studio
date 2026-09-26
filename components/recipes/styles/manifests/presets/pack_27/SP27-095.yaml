@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP27-095
+packId: pack_27
+name: GoldenEye 007 1997 - Rare N64 Fog Shooter
+styleAnchors:
+  - GoldenEye 007 1997 - Rare N64 Fog Shooter
+  - nineties console shooter
+  - GoldenEye fog
+displayName: GoldenEye 007 1997 - Rare N64 Fog Shooter
+category: 5. Video Games 90s
+domain: nineties console shooter
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - video-games-90s
+  - games-90s
+  - video-game-era
+  - goldeneye
+  - reference-title
+visualDna:
+  aesthetic: 'Rare GoldenEye 007 (1997) N64 look: first-person corridors with blurry textures, heavy fog, low frame rate, stiff low-poly guards and Cold War facilities.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject in first-person foggy N64 corridors with stiff low-poly figures. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Military grey, snow white and fog, true to the GoldenEye 007 1997 palette.
+  lighting_and_shadow: Flat N64 light and heavy fog, lit the way GoldenEye 007 1997 lights its scenes.
+  texture_and_material: Blurry N64 textures and stiff low polygons, with the surface finish of GoldenEye 007 1997.
+  camera_and_composition: First-person view with a weapon model, framed the way GoldenEye 007 1997 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with tense spy infiltration.
+  rendering_and_quality: Authentic N64 first-person screen, in the recognizable hand of GoldenEye 007 1997.
+  creative_brief: 'Rare GoldenEye 007 (1997) N64 look: first-person corridors with blurry textures, heavy fog, low frame rate, stiff low-poly guards and Cold War facilities. Carry it through GoldenEye fog, blurry textures, stiff guards, facilities. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: GoldenEye fog; blurry textures; stiff guards; facilities
+avoidRules:
+  - a tuxedoed spy
+  - a gun barrel logo
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a tuxedoed spy, a gun barrel logo, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: video-games-90s
+  categoryName: 5. Video Games 90s
+  domain: nineties console shooter
+  tags:
+    - curation-v2
+    - video-games-90s
+    - games-90s
+    - video-game-era
+    - goldeneye
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

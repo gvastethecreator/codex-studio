@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP27-048
+packId: pack_27
+name: In the Mouth of Madness 1994 - Lovecraftian Small Town
+styleAnchors:
+  - In the Mouth of Madness 1994 - Lovecraftian Small Town
+  - nineties horror cinema
+  - Mouth of Madness Lovecraftian town
+displayName: In the Mouth of Madness 1994 - Lovecraftian Small Town
+category: 3. Horror Cinema 90s
+domain: nineties horror cinema
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - horror-cinema-90s
+  - horror-90s
+  - horror-cinema
+  - mouth-madness
+  - reference-title
+visualDna:
+  aesthetic: 'John Carpenter In the Mouth of Madness (1994) look: Lovecraftian New England small town, pulp horror novel covers, cosmic creatures in shadows and reality unraveling.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; stage the subject in an eerie New England small town where reality unravels. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Autumn New England tones and cosmic blue, true to the In the Mouth of Madness 1994 palette.
+  lighting_and_shadow: Eerie overcast and cosmic glows, lit the way In the Mouth of Madness 1994 lights its scenes.
+  texture_and_material: Nineties 35mm film grain, crisp contrast and slightly desaturated print color.
+  camera_and_composition: Anamorphic unraveling-reality compositions, framed the way In the Mouth of Madness 1994 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with cosmic unraveling dread.
+  rendering_and_quality: Anamorphic nineties cosmic horror frame, in the recognizable hand of In the Mouth of Madness 1994.
+  creative_brief: 'John Carpenter In the Mouth of Madness (1994) look: Lovecraftian New England small town, pulp horror novel covers, cosmic creatures in shadows and reality unraveling. Carry it through Mouth of Madness Lovecraftian town, unraveling reality. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Mouth of Madness Lovecraftian town; unraveling reality
+avoidRules:
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: horror-cinema-90s
+  categoryName: 3. Horror Cinema 90s
+  domain: nineties horror cinema
+  tags:
+    - curation-v2
+    - horror-cinema-90s
+    - horror-90s
+    - horror-cinema
+    - mouth-madness
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

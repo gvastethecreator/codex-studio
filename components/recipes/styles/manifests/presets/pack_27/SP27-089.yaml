@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP27-089
+packId: pack_27
+name: Metal Slug 1996 - Nazca SNK Pixel War
+styleAnchors:
+  - Metal Slug 1996 - Nazca SNK Pixel War
+  - nineties arcade action game
+  - Metal Slug detailed pixels
+displayName: Metal Slug 1996 - Nazca SNK Pixel War
+category: 5. Video Games 90s
+domain: nineties arcade action game
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - video-games-90s
+  - games-90s
+  - video-game-era
+  - metal-slug
+  - reference-title
+visualDna:
+  aesthetic: 'Nazca and SNK Metal Slug (1996) look: incredibly detailed hand-drawn pixel art, comedic soldiers, chunky tanks and explosions animated frame by frame.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as highly detailed comedic pixel art with chunky vehicles and explosions. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Desert tan, military green and explosion orange, true to the Metal Slug 1996 palette.
+  lighting_and_shadow: Bright pixel explosion light, lit the way Metal Slug 1996 lights its scenes.
+  texture_and_material: Dense hand-drawn pixel art, with the surface finish of Metal Slug 1996.
+  camera_and_composition: Side-scrolling war view, framed the way Metal Slug 1996 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with comedic explosive chaos.
+  rendering_and_quality: Authentic Neo Geo pixel art screen, in the recognizable hand of Metal Slug 1996.
+  creative_brief: 'Nazca and SNK Metal Slug (1996) look: incredibly detailed hand-drawn pixel art, comedic soldiers, chunky tanks and explosions animated frame by frame. Carry it through Metal Slug detailed pixels, comedic war, chunky tanks. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Metal Slug detailed pixels; comedic war; chunky tanks
+avoidRules:
+  - a tiny green tank with a cannon
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a tiny green tank with a cannon, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: video-games-90s
+  categoryName: 5. Video Games 90s
+  domain: nineties arcade action game
+  tags:
+    - curation-v2
+    - video-games-90s
+    - games-90s
+    - video-game-era
+    - metal-slug
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

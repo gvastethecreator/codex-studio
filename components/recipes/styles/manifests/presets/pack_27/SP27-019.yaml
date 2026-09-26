@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP27-019
+packId: pack_27
+name: Tourist Trap 1979 - Mannequin Roadside Terror
+styleAnchors:
+  - Tourist Trap 1979 - Mannequin Roadside Terror
+  - seventies cult horror cinema
+  - Roadside mannequins
+displayName: Tourist Trap 1979 - Mannequin Roadside Terror
+category: 1. Horror Cinema 70s
+domain: seventies cult horror cinema
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - horror-cinema-70s
+  - horror-70s
+  - horror-cinema
+  - tourist-trap
+  - reference-title
+visualDna:
+  aesthetic: 'Tourist Trap (1979) look: dusty roadside wax museum, uncanny mannequins with gaping mouths, telekinetic chaos and sunbleached cult horror.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; stage the subject among uncanny roadside mannequins with gaping mouths. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Sunbleached dust, faded pastel and waxy skin tones.
+  lighting_and_shadow: Dusty daylight shafts and dim museum light, lit the way Tourist Trap 1979 lights its scenes.
+  texture_and_material: Seventies 35mm film grain, soft halation, slight gate weave and warm faded print color.
+  camera_and_composition: Uncanny mannequin close-ups and dusty wides, framed the way Tourist Trap 1979 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with uncanny roadside terror.
+  rendering_and_quality: Dusty seventies cult horror frame, in the recognizable hand of Tourist Trap 1979.
+  creative_brief: 'Tourist Trap (1979) look: dusty roadside wax museum, uncanny mannequins with gaping mouths, telekinetic chaos and sunbleached cult horror. Carry it through Roadside mannequins, gaping mouths, dusty museum. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Roadside mannequins; gaping mouths; dusty museum
+avoidRules:
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: horror-cinema-70s
+  categoryName: 1. Horror Cinema 70s
+  domain: seventies cult horror cinema
+  tags:
+    - curation-v2
+    - horror-cinema-70s
+    - horror-70s
+    - horror-cinema
+    - tourist-trap
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

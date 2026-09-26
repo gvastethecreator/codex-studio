@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP27-007
+packId: pack_27
+name: Carrie 1976 - Split-Diopter Prom Nightmare
+styleAnchors:
+  - Carrie 1976 - Split-Diopter Prom Nightmare
+  - seventies horror cinema
+  - De Palma split diopter
+displayName: Carrie 1976 - Split-Diopter Prom Nightmare
+category: 1. Horror Cinema 70s
+domain: seventies horror cinema
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - horror-cinema-70s
+  - horror-70s
+  - horror-cinema
+  - carrie
+  - reference-title
+visualDna:
+  aesthetic: 'Brian De Palma Carrie (1976) look: split-diopter shots with two planes in focus, dreamy soft-focus romance turning into red-lit fury, slow motion and seventies high school gloss.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; stage the subject with a split-diopter frame keeping a near face and a distant event both sharp. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Soft pastel romance turning into saturated red, true to the Carrie 1976 palette.
+  lighting_and_shadow: Dreamy glowing soft focus then harsh red light.
+  texture_and_material: Seventies 35mm film grain, soft halation, slight gate weave and warm faded print color.
+  camera_and_composition: Split-diopter compositions and slow-motion dread, framed the way Carrie 1976 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with dreamy dread turning to fury.
+  rendering_and_quality: Stylized seventies De Palma horror frame, in the recognizable hand of Carrie 1976.
+  creative_brief: 'Brian De Palma Carrie (1976) look: split-diopter shots with two planes in focus, dreamy soft-focus romance turning into red-lit fury, slow motion and seventies high school gloss. Carry it through De Palma split diopter, soft-focus to red, slow motion. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: De Palma split diopter; soft-focus to red; slow motion
+avoidRules:
+  - a prom queen drenched in blood on stage
+  - existing film characters
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a prom queen drenched in blood on stage, existing film characters, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: horror-cinema-70s
+  categoryName: 1. Horror Cinema 70s
+  domain: seventies horror cinema
+  tags:
+    - curation-v2
+    - horror-cinema-70s
+    - horror-70s
+    - horror-cinema
+    - carrie
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

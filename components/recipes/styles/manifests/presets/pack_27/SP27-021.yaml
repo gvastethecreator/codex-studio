@@ -1,0 +1,78 @@
+schemaVersion: 1
+id: SP27-021
+packId: pack_27
+name: The Shining 1980 - Symmetrical Hotel Dread
+styleAnchors:
+  - The Shining 1980 - Symmetrical Hotel Dread
+  - eighties horror cinema
+  - Kubrick symmetry
+displayName: The Shining 1980 - Symmetrical Hotel Dread
+category: 2. Horror Cinema 80s
+domain: eighties horror cinema
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - horror-cinema-80s
+  - horror-80s
+  - horror-cinema
+  - shining
+  - reference-title
+visualDna:
+  aesthetic: 'Stanley Kubrick The Shining (1980) look: one-point perspective symmetry, gliding steadicam through vast empty hotel corridors, patterned carpets and cold overlit rooms.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; stage the subject in perfectly symmetrical one-point perspective corridors and vast empty rooms. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Hotel red, mustard, mint green and cold white overlight.
+  lighting_and_shadow: Flat cold overlighting with no hiding shadows, lit the way The Shining 1980 lights its scenes.
+  texture_and_material: Eighties 35mm film grain, diffusion glow on highlights and rich saturated print color.
+  camera_and_composition: Perfect one-point perspective symmetry and low gliding steadicam.
+  atmosphere_and_mood: Keep the requested mood with cold isolating dread.
+  rendering_and_quality: Precise symmetrical eighties horror film frame, in the recognizable hand of The Shining 1980.
+  creative_brief: 'Stanley Kubrick The Shining (1980) look: one-point perspective symmetry, gliding steadicam through vast empty hotel corridors, patterned carpets and cold overlit rooms. Carry it through Kubrick symmetry, one-point perspective, patterned carpet, steadicam. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Kubrick symmetry; one-point perspective; patterned carpet; steadicam
+avoidRules:
+  - twin girls in blue dresses
+  - a hexagon patterned carpet
+  - a man breaking through a door with an axe
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: twin girls in blue dresses, a hexagon patterned carpet, a man breaking through a door with an axe, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: horror-cinema-80s
+  categoryName: 2. Horror Cinema 80s
+  domain: eighties horror cinema
+  tags:
+    - curation-v2
+    - horror-cinema-80s
+    - horror-80s
+    - horror-cinema
+    - shining
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

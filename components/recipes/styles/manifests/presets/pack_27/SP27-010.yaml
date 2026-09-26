@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP27-010
+packId: pack_27
+name: Eraserhead 1977 - Industrial Monochrome Dream
+styleAnchors:
+  - Eraserhead 1977 - Industrial Monochrome Dream
+  - seventies surreal cinema
+  - Lynch monochrome
+displayName: Eraserhead 1977 - Industrial Monochrome Dream
+category: 1. Horror Cinema 70s
+domain: seventies surreal cinema
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - horror-cinema-70s
+  - horror-70s
+  - horror-cinema
+  - eraserhead
+  - reference-title
+visualDna:
+  aesthetic: 'David Lynch Eraserhead (1977) look: grainy high-contrast black and white, industrial wastelands, hissing radiators, cramped apartments and surreal dream logic.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; stage the subject in cramped industrial black-and-white dream spaces. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: High-contrast black and white only, true to the Eraserhead 1977 palette.
+  lighting_and_shadow: Harsh pools of light in deep black, lit the way Eraserhead 1977 lights its scenes.
+  texture_and_material: Grainy black-and-white film and industrial grime, with the surface finish of Eraserhead 1977.
+  camera_and_composition: Static uneasy compositions in cramped rooms, framed the way Eraserhead 1977 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with surreal industrial unease.
+  rendering_and_quality: Surreal black-and-white art horror frame, in the recognizable hand of Eraserhead 1977.
+  creative_brief: 'David Lynch Eraserhead (1977) look: grainy high-contrast black and white, industrial wastelands, hissing radiators, cramped apartments and surreal dream logic. Carry it through Lynch monochrome, industrial wasteland, surreal dream. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Lynch monochrome; industrial wasteland; surreal dream
+avoidRules:
+  - a man with towering upright hair holding a swaddled creature
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a man with towering upright hair holding a swaddled creature, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: horror-cinema-70s
+  categoryName: 1. Horror Cinema 70s
+  domain: seventies surreal cinema
+  tags:
+    - curation-v2
+    - horror-cinema-70s
+    - horror-70s
+    - horror-cinema
+    - eraserhead
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

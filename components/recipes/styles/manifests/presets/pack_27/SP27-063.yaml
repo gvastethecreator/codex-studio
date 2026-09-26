@@ -1,0 +1,77 @@
+schemaVersion: 1
+id: SP27-063
+packId: pack_27
+name: Donkey Kong 1981 - Nintendo Girder Arcade Sprites
+styleAnchors:
+  - Donkey Kong 1981 - Nintendo Girder Arcade Sprites
+  - eighties arcade game
+  - Donkey Kong girders
+displayName: Donkey Kong 1981 - Nintendo Girder Arcade Sprites
+category: 4. Video Games 80s
+domain: eighties arcade game
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - video-games-80s
+  - games-80s
+  - video-game-era
+  - donkey-kong
+  - reference-title
+visualDna:
+  aesthetic: 'Nintendo Donkey Kong (1981) arcade look: slanted red construction girders, blue ladders, rolling barrels, chunky low-resolution sprites and a black background.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as chunky low-resolution sprites on slanted red girders with ladders. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Girder red, ladder cyan, barrel brown and black.
+  lighting_and_shadow: Flat glowing arcade screen light, lit the way Donkey Kong 1981 lights its scenes.
+  texture_and_material: Visible chunky pixels on a curved CRT with scanlines, slight bloom and phosphor glow.
+  camera_and_composition: Single-screen side view of stacked girders, framed the way Donkey Kong 1981 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with frantic climbing peril.
+  rendering_and_quality: Authentic early-eighties arcade screen capture, in the recognizable hand of Donkey Kong 1981.
+  creative_brief: 'Nintendo Donkey Kong (1981) arcade look: slanted red construction girders, blue ladders, rolling barrels, chunky low-resolution sprites and a black background. Carry it through Donkey Kong girders, ladders, rolling barrels, chunky sprites. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Donkey Kong girders; ladders; rolling barrels; chunky sprites
+avoidRules:
+  - a big ape throwing barrels
+  - a mustached plumber jumping
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a big ape throwing barrels, a mustached plumber jumping, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: video-games-80s
+  categoryName: 4. Video Games 80s
+  domain: eighties arcade game
+  tags:
+    - curation-v2
+    - video-games-80s
+    - games-80s
+    - video-game-era
+    - donkey-kong
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

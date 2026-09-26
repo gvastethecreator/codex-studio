@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP27-045
+packId: pack_27
+name: Cure 1997 - Kurosawa Clinical Stillness
+styleAnchors:
+  - Cure 1997 - Kurosawa Clinical Stillness
+  - nineties Japanese horror cinema
+  - Kurosawa long takes
+displayName: Cure 1997 - Kurosawa Clinical Stillness
+category: 3. Horror Cinema 90s
+domain: nineties Japanese horror cinema
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - horror-cinema-90s
+  - horror-90s
+  - horror-cinema
+  - cure
+  - reference-title
+visualDna:
+  aesthetic: 'Kiyoshi Kurosawa Cure (1997) look: long static wide takes, empty institutional rooms, washed-out daylight, flickering fluorescents and quiet hypnotic menace.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; stage the subject in long static wide takes of empty washed-out rooms. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Washed-out grey-green and pale daylight, true to the Cure 1997 palette.
+  lighting_and_shadow: Flickering fluorescents and flat daylight, lit the way Cure 1997 lights its scenes.
+  texture_and_material: Nineties 35mm film grain, crisp contrast and slightly desaturated print color.
+  camera_and_composition: Long static wide takes with distant figures, framed the way Cure 1997 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with quiet hypnotic menace.
+  rendering_and_quality: Minimal nineties Japanese horror frame, in the recognizable hand of Cure 1997.
+  creative_brief: 'Kiyoshi Kurosawa Cure (1997) look: long static wide takes, empty institutional rooms, washed-out daylight, flickering fluorescents and quiet hypnotic menace. Carry it through Kurosawa long takes, empty rooms, hypnotic menace. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Kurosawa long takes; empty rooms; hypnotic menace
+avoidRules:
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: horror-cinema-90s
+  categoryName: 3. Horror Cinema 90s
+  domain: nineties Japanese horror cinema
+  tags:
+    - curation-v2
+    - horror-cinema-90s
+    - horror-90s
+    - horror-cinema
+    - cure
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

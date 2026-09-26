@@ -1,0 +1,269 @@
+schemaVersion: 1
+id: pack_27
+name: Decade Screens
+cardTitle: Decade Screens
+cardDescription: Horror cinema of the 70s, 80s and 90s and video games of the 80s, 90s and 2000s, named after their films, games and makers.
+description: >-
+  Screen eras rebuilt from their real production looks: horror films by decade with their film
+  stocks, lighting and effects, and video games by decade with their hardware, rendering and art
+  direction. Requested subjects stay the subject; each style changes medium, era and finish.
+categories:
+  - id: horror-cinema-70s
+    name: 1. Horror Cinema 70s
+    presetRefs:
+      - pack_27/SP27-001.yaml
+      - pack_27/SP27-002.yaml
+      - pack_27/SP27-003.yaml
+      - pack_27/SP27-004.yaml
+      - pack_27/SP27-005.yaml
+      - pack_27/SP27-006.yaml
+      - pack_27/SP27-007.yaml
+      - pack_27/SP27-008.yaml
+      - pack_27/SP27-009.yaml
+      - pack_27/SP27-010.yaml
+      - pack_27/SP27-011.yaml
+      - pack_27/SP27-012.yaml
+      - pack_27/SP27-013.yaml
+      - pack_27/SP27-014.yaml
+      - pack_27/SP27-015.yaml
+      - pack_27/SP27-016.yaml
+      - pack_27/SP27-017.yaml
+      - pack_27/SP27-018.yaml
+      - pack_27/SP27-019.yaml
+      - pack_27/SP27-020.yaml
+  - id: horror-cinema-80s
+    name: 2. Horror Cinema 80s
+    presetRefs:
+      - pack_27/SP27-021.yaml
+      - pack_27/SP27-022.yaml
+      - pack_27/SP27-023.yaml
+      - pack_27/SP27-024.yaml
+      - pack_27/SP27-025.yaml
+      - pack_27/SP27-026.yaml
+      - pack_27/SP27-027.yaml
+      - pack_27/SP27-028.yaml
+      - pack_27/SP27-029.yaml
+      - pack_27/SP27-030.yaml
+      - pack_27/SP27-031.yaml
+      - pack_27/SP27-032.yaml
+      - pack_27/SP27-033.yaml
+      - pack_27/SP27-034.yaml
+      - pack_27/SP27-035.yaml
+      - pack_27/SP27-036.yaml
+      - pack_27/SP27-037.yaml
+      - pack_27/SP27-038.yaml
+      - pack_27/SP27-039.yaml
+      - pack_27/SP27-040.yaml
+  - id: horror-cinema-90s
+    name: 3. Horror Cinema 90s
+    presetRefs:
+      - pack_27/SP27-041.yaml
+      - pack_27/SP27-042.yaml
+      - pack_27/SP27-043.yaml
+      - pack_27/SP27-044.yaml
+      - pack_27/SP27-045.yaml
+      - pack_27/SP27-046.yaml
+      - pack_27/SP27-047.yaml
+      - pack_27/SP27-048.yaml
+      - pack_27/SP27-049.yaml
+      - pack_27/SP27-050.yaml
+      - pack_27/SP27-051.yaml
+      - pack_27/SP27-052.yaml
+      - pack_27/SP27-053.yaml
+      - pack_27/SP27-054.yaml
+      - pack_27/SP27-055.yaml
+      - pack_27/SP27-056.yaml
+      - pack_27/SP27-057.yaml
+      - pack_27/SP27-058.yaml
+      - pack_27/SP27-059.yaml
+      - pack_27/SP27-060.yaml
+  - id: video-games-80s
+    name: 4. Video Games 80s
+    presetRefs:
+      - pack_27/SP27-061.yaml
+      - pack_27/SP27-062.yaml
+      - pack_27/SP27-063.yaml
+      - pack_27/SP27-064.yaml
+      - pack_27/SP27-065.yaml
+      - pack_27/SP27-066.yaml
+      - pack_27/SP27-067.yaml
+      - pack_27/SP27-068.yaml
+      - pack_27/SP27-069.yaml
+      - pack_27/SP27-070.yaml
+      - pack_27/SP27-071.yaml
+      - pack_27/SP27-072.yaml
+      - pack_27/SP27-073.yaml
+      - pack_27/SP27-074.yaml
+      - pack_27/SP27-075.yaml
+      - pack_27/SP27-076.yaml
+      - pack_27/SP27-077.yaml
+      - pack_27/SP27-078.yaml
+      - pack_27/SP27-079.yaml
+      - pack_27/SP27-080.yaml
+  - id: video-games-90s
+    name: 5. Video Games 90s
+    presetRefs:
+      - pack_27/SP27-081.yaml
+      - pack_27/SP27-082.yaml
+      - pack_27/SP27-083.yaml
+      - pack_27/SP27-084.yaml
+      - pack_27/SP27-085.yaml
+      - pack_27/SP27-086.yaml
+      - pack_27/SP27-087.yaml
+      - pack_27/SP27-088.yaml
+      - pack_27/SP27-089.yaml
+      - pack_27/SP27-090.yaml
+      - pack_27/SP27-091.yaml
+      - pack_27/SP27-092.yaml
+      - pack_27/SP27-093.yaml
+      - pack_27/SP27-094.yaml
+      - pack_27/SP27-095.yaml
+      - pack_27/SP27-096.yaml
+      - pack_27/SP27-097.yaml
+      - pack_27/SP27-098.yaml
+      - pack_27/SP27-099.yaml
+      - pack_27/SP27-100.yaml
+  - id: video-games-2000s
+    name: 6. Video Games 2000s
+    presetRefs:
+      - pack_27/SP27-101.yaml
+      - pack_27/SP27-102.yaml
+      - pack_27/SP27-103.yaml
+      - pack_27/SP27-104.yaml
+      - pack_27/SP27-105.yaml
+      - pack_27/SP27-106.yaml
+      - pack_27/SP27-107.yaml
+      - pack_27/SP27-108.yaml
+      - pack_27/SP27-109.yaml
+      - pack_27/SP27-110.yaml
+      - pack_27/SP27-111.yaml
+      - pack_27/SP27-112.yaml
+      - pack_27/SP27-113.yaml
+      - pack_27/SP27-114.yaml
+      - pack_27/SP27-115.yaml
+      - pack_27/SP27-116.yaml
+      - pack_27/SP27-117.yaml
+      - pack_27/SP27-118.yaml
+      - pack_27/SP27-119.yaml
+      - pack_27/SP27-120.yaml
+presetRefs:
+  - pack_27/SP27-001.yaml
+  - pack_27/SP27-002.yaml
+  - pack_27/SP27-003.yaml
+  - pack_27/SP27-004.yaml
+  - pack_27/SP27-005.yaml
+  - pack_27/SP27-006.yaml
+  - pack_27/SP27-007.yaml
+  - pack_27/SP27-008.yaml
+  - pack_27/SP27-009.yaml
+  - pack_27/SP27-010.yaml
+  - pack_27/SP27-011.yaml
+  - pack_27/SP27-012.yaml
+  - pack_27/SP27-013.yaml
+  - pack_27/SP27-014.yaml
+  - pack_27/SP27-015.yaml
+  - pack_27/SP27-016.yaml
+  - pack_27/SP27-017.yaml
+  - pack_27/SP27-018.yaml
+  - pack_27/SP27-019.yaml
+  - pack_27/SP27-020.yaml
+  - pack_27/SP27-021.yaml
+  - pack_27/SP27-022.yaml
+  - pack_27/SP27-023.yaml
+  - pack_27/SP27-024.yaml
+  - pack_27/SP27-025.yaml
+  - pack_27/SP27-026.yaml
+  - pack_27/SP27-027.yaml
+  - pack_27/SP27-028.yaml
+  - pack_27/SP27-029.yaml
+  - pack_27/SP27-030.yaml
+  - pack_27/SP27-031.yaml
+  - pack_27/SP27-032.yaml
+  - pack_27/SP27-033.yaml
+  - pack_27/SP27-034.yaml
+  - pack_27/SP27-035.yaml
+  - pack_27/SP27-036.yaml
+  - pack_27/SP27-037.yaml
+  - pack_27/SP27-038.yaml
+  - pack_27/SP27-039.yaml
+  - pack_27/SP27-040.yaml
+  - pack_27/SP27-041.yaml
+  - pack_27/SP27-042.yaml
+  - pack_27/SP27-043.yaml
+  - pack_27/SP27-044.yaml
+  - pack_27/SP27-045.yaml
+  - pack_27/SP27-046.yaml
+  - pack_27/SP27-047.yaml
+  - pack_27/SP27-048.yaml
+  - pack_27/SP27-049.yaml
+  - pack_27/SP27-050.yaml
+  - pack_27/SP27-051.yaml
+  - pack_27/SP27-052.yaml
+  - pack_27/SP27-053.yaml
+  - pack_27/SP27-054.yaml
+  - pack_27/SP27-055.yaml
+  - pack_27/SP27-056.yaml
+  - pack_27/SP27-057.yaml
+  - pack_27/SP27-058.yaml
+  - pack_27/SP27-059.yaml
+  - pack_27/SP27-060.yaml
+  - pack_27/SP27-061.yaml
+  - pack_27/SP27-062.yaml
+  - pack_27/SP27-063.yaml
+  - pack_27/SP27-064.yaml
+  - pack_27/SP27-065.yaml
+  - pack_27/SP27-066.yaml
+  - pack_27/SP27-067.yaml
+  - pack_27/SP27-068.yaml
+  - pack_27/SP27-069.yaml
+  - pack_27/SP27-070.yaml
+  - pack_27/SP27-071.yaml
+  - pack_27/SP27-072.yaml
+  - pack_27/SP27-073.yaml
+  - pack_27/SP27-074.yaml
+  - pack_27/SP27-075.yaml
+  - pack_27/SP27-076.yaml
+  - pack_27/SP27-077.yaml
+  - pack_27/SP27-078.yaml
+  - pack_27/SP27-079.yaml
+  - pack_27/SP27-080.yaml
+  - pack_27/SP27-081.yaml
+  - pack_27/SP27-082.yaml
+  - pack_27/SP27-083.yaml
+  - pack_27/SP27-084.yaml
+  - pack_27/SP27-085.yaml
+  - pack_27/SP27-086.yaml
+  - pack_27/SP27-087.yaml
+  - pack_27/SP27-088.yaml
+  - pack_27/SP27-089.yaml
+  - pack_27/SP27-090.yaml
+  - pack_27/SP27-091.yaml
+  - pack_27/SP27-092.yaml
+  - pack_27/SP27-093.yaml
+  - pack_27/SP27-094.yaml
+  - pack_27/SP27-095.yaml
+  - pack_27/SP27-096.yaml
+  - pack_27/SP27-097.yaml
+  - pack_27/SP27-098.yaml
+  - pack_27/SP27-099.yaml
+  - pack_27/SP27-100.yaml
+  - pack_27/SP27-101.yaml
+  - pack_27/SP27-102.yaml
+  - pack_27/SP27-103.yaml
+  - pack_27/SP27-104.yaml
+  - pack_27/SP27-105.yaml
+  - pack_27/SP27-106.yaml
+  - pack_27/SP27-107.yaml
+  - pack_27/SP27-108.yaml
+  - pack_27/SP27-109.yaml
+  - pack_27/SP27-110.yaml
+  - pack_27/SP27-111.yaml
+  - pack_27/SP27-112.yaml
+  - pack_27/SP27-113.yaml
+  - pack_27/SP27-114.yaml
+  - pack_27/SP27-115.yaml
+  - pack_27/SP27-116.yaml
+  - pack_27/SP27-117.yaml
+  - pack_27/SP27-118.yaml
+  - pack_27/SP27-119.yaml
+  - pack_27/SP27-120.yaml

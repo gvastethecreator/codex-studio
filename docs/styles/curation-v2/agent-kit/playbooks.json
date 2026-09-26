@@ -181,7 +181,13 @@
     "pack_26::2. Movie Posters": "applied-design",
     "pack_26::3. Manga Covers": "applied-design",
     "pack_26::4. Book Covers": "applied-design",
-    "pack_26::5. Comic Covers": "applied-design"
+    "pack_26::5. Comic Covers": "applied-design",
+    "pack_27::1. Horror Cinema 70s": "photo",
+    "pack_27::2. Horror Cinema 80s": "photo",
+    "pack_27::3. Horror Cinema 90s": "photo",
+    "pack_27::4. Video Games 80s": "pixel",
+    "pack_27::5. Video Games 90s": "pixel",
+    "pack_27::6. Video Games 2000s": "pixel"
   },
   "playbooks": {
     "photo": {

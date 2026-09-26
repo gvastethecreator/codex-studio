@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP27-117
+packId: pack_27
+name: Team Fortress 2 2007 - Valve Painterly Mercenaries
+styleAnchors:
+  - Team Fortress 2 2007 - Valve Painterly Mercenaries
+  - two-thousands PC shooter
+  - TF2 painterly
+displayName: Team Fortress 2 2007 - Valve Painterly Mercenaries
+category: 6. Video Games 2000s
+domain: two-thousands PC shooter
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - video-games-2000s
+  - games-2000s
+  - video-game-era
+  - tf2
+  - reference-title
+visualDna:
+  aesthetic: 'Valve Team Fortress 2 (2007) look: J.C. Leyendecker-inspired painterly shading, exaggerated silhouettes, rim-lit warm and cool team colors and 1960s spy-industrial architecture.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject with an exaggerated readable silhouette and Leyendecker-style painterly shading. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Warm team red, cool team blue and desert tan.
+  lighting_and_shadow: Warm rim light with soft painterly shading, lit the way Team Fortress 2 2007 lights its scenes.
+  texture_and_material: Painterly shading with soft gradients, with the surface finish of Team Fortress 2 2007.
+  camera_and_composition: Heroic low third-person or first-person view, framed the way Team Fortress 2 2007 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with comedic mercenary mayhem.
+  rendering_and_quality: Authentic late-2000s painterly shooter screen, in the recognizable hand of Team Fortress 2 2007.
+  creative_brief: 'Valve Team Fortress 2 (2007) look: J.C. Leyendecker-inspired painterly shading, exaggerated silhouettes, rim-lit warm and cool team colors and 1960s spy-industrial architecture. Carry it through TF2 painterly, Leyendecker shading, exaggerated silhouettes. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: TF2 painterly; Leyendecker shading; exaggerated silhouettes
+avoidRules:
+  - existing mercenary classes
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing mercenary classes, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: video-games-2000s
+  categoryName: 6. Video Games 2000s
+  domain: two-thousands PC shooter
+  tags:
+    - curation-v2
+    - video-games-2000s
+    - games-2000s
+    - video-game-era
+    - tf2
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

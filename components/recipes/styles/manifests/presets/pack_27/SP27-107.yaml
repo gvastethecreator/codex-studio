@@ -1,0 +1,76 @@
+schemaVersion: 1
+id: SP27-107
+packId: pack_27
+name: Viewtiful Joe 2003 - Clover Tokusatsu Comic Cel
+styleAnchors:
+  - Viewtiful Joe 2003 - Clover Tokusatsu Comic Cel
+  - two-thousands console action game
+  - Viewtiful Joe comic cel
+displayName: Viewtiful Joe 2003 - Clover Tokusatsu Comic Cel
+category: 6. Video Games 2000s
+domain: two-thousands console action game
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - video-games-2000s
+  - games-2000s
+  - video-game-era
+  - viewtiful-joe
+  - reference-title
+visualDna:
+  aesthetic: 'Clover Studio Viewtiful Joe (2003) look: bold comic-book cel shading, tokusatsu hero poses, 2.5D side-scrolling film sets, speed lines, slow-motion blur and pop-art color.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; render the subject as a bold cel-shaded tokusatsu hero on a 2.5D comic film set. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Pop-art red, yellow, pink and black, true to the Viewtiful Joe 2003 palette.
+  lighting_and_shadow: Flat comic light with dramatic slow-motion glow, lit the way Viewtiful Joe 2003 lights its scenes.
+  texture_and_material: Thick ink outlines, cel fills and speed lines.
+  camera_and_composition: 2.5D side-scrolling film set view, framed the way Viewtiful Joe 2003 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with outrageous heroic swagger.
+  rendering_and_quality: Authentic GameCube comic cel action screen, in the recognizable hand of Viewtiful Joe 2003.
+  creative_brief: 'Clover Studio Viewtiful Joe (2003) look: bold comic-book cel shading, tokusatsu hero poses, 2.5D side-scrolling film sets, speed lines, slow-motion blur and pop-art color. Carry it through Viewtiful Joe comic cel, tokusatsu poses, speed lines. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Viewtiful Joe comic cel; tokusatsu poses; speed lines
+avoidRules:
+  - a red hero with a V-shaped visor and scarf
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: a red hero with a V-shaped visor and scarf, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: video-games-2000s
+  categoryName: 6. Video Games 2000s
+  domain: two-thousands console action game
+  tags:
+    - curation-v2
+    - video-games-2000s
+    - games-2000s
+    - video-game-era
+    - viewtiful-joe
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false

@@ -1,0 +1,75 @@
+schemaVersion: 1
+id: SP27-028
+packId: pack_27
+name: An American Werewolf in London 1981 - Moonlit Moor Transformation
+styleAnchors:
+  - An American Werewolf in London 1981 - Moonlit Moor Transformation
+  - eighties horror cinema
+  - Moors and pubs
+displayName: An American Werewolf in London 1981 - Moonlit Moor Transformation
+category: 2. Horror Cinema 80s
+domain: eighties horror cinema
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - horror-cinema-80s
+  - horror-80s
+  - horror-cinema
+  - american-werewolf
+  - reference-title
+visualDna:
+  aesthetic: 'John Landis An American Werewolf in London (1981) look: foggy Yorkshire moors, cozy pubs, full moons, darkly comic tone and practical transformation effects under bright light.'
+  subject_treatment: Preserve the requested identity, count, pose, action and any requested clothing; stage the subject in foggy moors and cozy pubs under full moons with dark comedy. Wardrobe details apply only when the prompt leaves clothing open.
+  color_and_tone: Foggy moor grey, pub amber and moon silver.
+  lighting_and_shadow: Full moonlight and warm pub glow, lit the way An American Werewolf in London 1981 lights its scenes.
+  texture_and_material: Eighties 35mm film grain, diffusion glow on highlights and rich saturated print color.
+  camera_and_composition: Moor wides and brightly lit transformation close-ups, framed the way An American Werewolf in London 1981 composes its shots and pages.
+  atmosphere_and_mood: Keep the requested mood with darkly comic dread.
+  rendering_and_quality: Darkly comic eighties horror frame, in the recognizable hand of An American Werewolf in London 1981.
+  creative_brief: 'John Landis An American Werewolf in London (1981) look: foggy Yorkshire moors, cozy pubs, full moons, darkly comic tone and practical transformation effects under bright light. Carry it through Moors and pubs, full moon, comic dread, transformation. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
+  key_features: Moors and pubs; full moon; comic dread; transformation
+avoidRules:
+  - existing franchise characters
+  - series logo or title lettering
+  - signature costumes, emblems or props from the referenced work
+  - recreated scenes from the referenced work
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_27
+  packName: Decade Screens
+  categoryId: horror-cinema-80s
+  categoryName: 2. Horror Cinema 80s
+  domain: eighties horror cinema
+  tags:
+    - curation-v2
+    - horror-cinema-80s
+    - horror-80s
+    - horror-cinema
+    - american-werewolf
+    - reference-title
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
