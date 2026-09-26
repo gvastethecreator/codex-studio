@@ -28,16 +28,14 @@ visualDna:
   texture_and_material: Cast-iron galleries with lattice balustrades, safety netting between tiers, riveted cell doors with small hatches, whitewashed brick, stone floors worn by pacing.
   camera_and_composition: Keep the requested view; from the centre, radiating wings or rings of cells recede symmetrically; repetition of doors dominates.
   atmosphere_and_mood: Watched, cold and ordered, a building designed to be seen through.
-  rendering_and_quality: Sober photograph with exact repetition and ironwork detail, no violence or gore.
-  creative_brief: "Radial panopticon cell block: tiers of identical cells with iron galleries and stairs ringing a tall top-lit hall, all visible from a central observation point. Carry it through tiers of identical cells around a central void, iron lattice galleries, roof lantern top light, safety netting, central observation point. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  rendering_and_quality: Sober photograph with exact repetition and ironwork detail.
+  creative_brief: 'Radial panopticon cell block: tiers of identical cells with iron galleries and stairs ringing a tall top-lit hall, all visible from a central observation point. Carry it through tiers of identical cells around a central void, iron lattice galleries, roof lantern top light, safety netting, central observation point. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: tiers of identical cells around a central void; iron lattice galleries; roof lantern top light; safety netting; central observation point
 avoidRules:
   - one-point corridor perspective as default
   - wet mirror-gloss floor as default
   - turning the requested room into a station or library
   - readable signage or wayfinding text
-  - violence
-  - gore
   - riot scene
   - watermark
   - text
@@ -50,7 +48,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-098.webp
 attributes:
-  negativePrompt: one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, violence, gore, riot scene, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, riot scene, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

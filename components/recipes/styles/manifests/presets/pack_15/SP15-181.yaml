@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Close views of lichen patterns and wide views of ancient crusted places.
   atmosphere_and_mood: Patient and timeless, a world where nothing is ever in a hurry.
   rendering_and_quality: Finely textured illustration with rich lichen color patterns.
-  creative_brief: "Lichenpunk: a slow, patient culture living with lichen, where time is measured in crusts on stone and buildings are dated by their colors. Carry it through lichen crusts, ancient stone, slow time, colorful rosettes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Lichenpunk: a slow, patient culture living with lichen, where time is measured in crusts on stone and buildings are dated by their colors. Carry it through lichen crusts, ancient stone, slow time, colorful rosettes. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: lichen crusts; ancient stone; slow time; colorful rosettes
 avoidRules:
   - readable text
@@ -37,7 +37,6 @@ avoidRules:
   - real artist signature
   - copying a specific famous artwork
   - muddy noisy texture
-  - gore
   - graphic wounds
   - real brand or company logo
   - watermark
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

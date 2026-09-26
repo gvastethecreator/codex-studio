@@ -20,12 +20,11 @@ visualDna:
   lighting_and_shadow: Cool moon rim with small toxic glows and clean dark-green shadow separation.
   texture_and_material: Old glass, wax, herb stains, damp cloth, polished black wood, soft membrane sheen, and clean metal.
   camera_and_composition: Controlled object-body ambiguity, ritual still-life hierarchy, clinical spacing, and elegant negative space that adapts to figures, creatures, artifacts, or environments.
-  atmosphere_and_mood: 'Medicinal, erotic adjacent, uncanny, restrained, and non graphic; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness, at whatever intensity the requested scene sets.'
+  atmosphere_and_mood: Medicinal, erotic adjacent, uncanny, restrained, and non graphic; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness, at whatever intensity the requested scene sets.
   rendering_and_quality: Clean gothic apothecary illustration with smooth denoise, readable darks, and controlled wet highlights.
   creative_brief: 'Leech Moon Apothecary: Moonlit medieval apothecary fantasy with glass greens; waxy flesh tones; herbal darkness; clinical ritual elegance; medicinal gothic restraint.'
   key_features: Leech Moon Apothecary; Moonlit medieval apothecary fantasy with glass greens; waxy flesh tones; herbal darkness; clinical ritual elegance; medicinal gothic restraint
 avoidRules:
-  - gore
   - medical diagram
   - pharmacy shelf
   - jar inventory
@@ -42,7 +41,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-048.webp
 attributes:
-  negativePrompt: gore, medical diagram, pharmacy shelf, jar inventory, readable label, cute witch shop, watermark, text, generic royal portrait, romance novel cover, prompt literal medieval card, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
+  negativePrompt: medical diagram, pharmacy shelf, jar inventory, readable label, cute witch shop, watermark, text, generic royal portrait, romance novel cover, prompt literal medieval card, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

@@ -29,11 +29,10 @@ visualDna:
   camera_and_composition: Low close view of the item with a vertical beam.
   atmosphere_and_mood: Keep the requested mood with tempting treasure hunger.
   rendering_and_quality: Clear hero item with clean glow, kept consistent across the whole image.
-  creative_brief: "Grim loot rarity glow: a single dark fantasy item lying in the dirt, surrounded by a colored rarity aura of light beams and sparks rising into the dark. Carry it through single item, rarity light beam, dark ground, sparks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Grim loot rarity glow: a single dark fantasy item lying in the dirt, surrounded by a colored rarity aura of light beams and sparks rising into the dark. Carry it through single item, rarity light beam, dark ground, sparks. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: single item; rarity light beam; dark ground; sparks
 avoidRules:
   - item names or stats
-  - gore
   - interface text, menus or health bars
   - existing game characters or logos
   - readable text
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: item names or stats, gore, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: item names or stats, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

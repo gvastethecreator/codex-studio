@@ -65,7 +65,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Institutional Ruin Patina',
     category: '3. Civic Infrastructure And Specialty Spaces',
     negativePrompt:
-      'one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, fresh clean surfaces, gore, horror creatures, asylum horror staging, clean, new, hospital/asylum horror, long corridor, creature, readable signage, furniture focus, empty abstraction, readable map or sign, fixed building-only scene, corridor perspective, furniture showroom, market aisle, library aisle, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, fresh clean surfaces, horror creatures, asylum horror staging, clean, new, hospital/asylum horror, long corridor, creature, readable signage, furniture focus, empty abstraction, readable map or sign, fixed building-only scene, corridor perspective, furniture showroom, market aisle, library aisle, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Institutional ruin patina: an abandoned public building decaying in place, with paint peeling in curls, collapsed ceiling tiles, rust bleeding from fixtures and plants reclaiming the floor.',
@@ -177,7 +177,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Ossuary Subterranean',
     category: '3. Civic Infrastructure And Specialty Spaces',
     negativePrompt:
-      'one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, human remains, skulls, bones, gore, horror display, bone/remains language, exposed human remains, fresh remains, catacomb corridor, dungeon hall, fantasy tunnel, ritual scene, camera prop, empty abstraction, long corridor, readable map or sign, fixed building-only scene, corridor perspective, furniture showroom, market aisle, library aisle, prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, human remains, skulls, bones, horror display, bone/remains language, exposed human remains, fresh remains, catacomb corridor, dungeon hall, fantasy tunnel, ritual scene, camera prop, empty abstraction, long corridor, readable map or sign, fixed building-only scene, corridor perspective, furniture showroom, market aisle, library aisle, prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Ossuary subterranean architecture: chambers carved into chalk, tuff or limestone, with low compressed barrel vaults and walls of empty stacked niches, crusted with calcite.',
@@ -268,7 +268,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Civic Infrastructure And Specialty Spaces',
     domain: 'early modern anatomical theatre',
     negativePrompt:
-      'one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, gore, exposed organs, flat lecture hall seating, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, exposed organs, flat lecture hall seating, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Anatomical theatre: steep concentric oval tiers of carved timber balustrades rising around a small central table, lit from a lantern skylight, built so every spectator looks down.',
@@ -478,7 +478,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Civic Infrastructure And Specialty Spaces',
     domain: 'radial prison architecture',
     negativePrompt:
-      'one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, violence, gore, riot scene, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, riot scene, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Radial panopticon cell block: tiers of identical cells with iron galleries and stairs ringing a tall top-lit hall, all visible from a central observation point.',
@@ -493,8 +493,7 @@ export const GENERATED_STYLE_PRESETS = [
       camera_and_composition:
         'Keep the requested view; from the centre, radiating wings or rings of cells recede symmetrically; repetition of doors dominates.',
       atmosphere_and_mood: 'Watched, cold and ordered, a building designed to be seen through.',
-      rendering_and_quality:
-        'Sober photograph with exact repetition and ironwork detail, no violence or gore.',
+      rendering_and_quality: 'Sober photograph with exact repetition and ironwork detail.',
       creative_brief:
         "Radial panopticon cell block: tiers of identical cells with iron galleries and stairs ringing a tall top-lit hall, all visible from a central observation point. Carry it through tiers of identical cells around a central void, iron lattice galleries, roof lantern top light, safety netting, central observation point. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
       key_features:

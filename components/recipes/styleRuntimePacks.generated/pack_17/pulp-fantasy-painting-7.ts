@@ -73,7 +73,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Pulp Fantasy Painting',
     domain: 'muscular heroic fantasy oil cover',
     negativePrompt:
-      'gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Barbarian oil cover painting: dramatic seventies fantasy book-cover oils with muscular heroes, swirling dark skies, snarling beasts and thick expressive brushwork.',
@@ -109,7 +109,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Pulp Fantasy Painting',
     domain: 'black and one-color interior illustration',
     negativePrompt:
-      'gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Two-tone pulp interior plate: interior illustrations for pulp fantasy magazines, bold black brushwork with a single flat second color, dramatic and economical.',
@@ -140,7 +140,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Pulp Fantasy Painting',
     domain: 'fantasy on alien worlds',
     negativePrompt:
-      'gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Sword-and-planet painting: swashbuckling heroes with swords on alien desert worlds, twin moons, strange beasts and ancient ruined cities under a pink sky.',
@@ -172,7 +172,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Pulp Fantasy Painting',
     domain: 'loose cover sketch painting',
     negativePrompt:
-      'gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Cover comp color rough: small loose color sketches painted to plan a fantasy cover, quick gouache blocks, rough figures and bold value design.',
@@ -201,7 +201,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Pulp Fantasy Painting',
     domain: 'airbrushed van side mural',
     negativePrompt:
-      'brand logos, gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'brand logos, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Custom van mural fantasy: seventies airbrushed fantasy murals painted on the side of a van, wizards, dragons and sunsets on glossy curved metal with chrome trim.',
@@ -231,7 +231,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Pulp Fantasy Painting',
     domain: 'heavy metal fantasy album painting',
     negativePrompt:
-      'band logo, gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'band logo, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Metal album cover epic: square heavy-metal fantasy album paintings with skeletal kings, lightning, burning cities and apocalyptic grandeur.',
@@ -268,7 +268,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Pulp Fantasy Painting',
     domain: 'illustrated eighties fantasy movie poster',
     negativePrompt:
-      'title or credits, gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'title or credits, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Painted fantasy film poster: eighties illustrated movie posters with stacked hero portraits, a giant villain face in the sky, a castle below and glowing magical light.',
@@ -299,7 +299,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Pulp Fantasy Painting',
     domain: 'nocturnal lurid pulp painting',
     negativePrompt:
-      'gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Glowing-eyes night pulp: lurid nocturnal pulp paintings where darkness hides everything but glowing eyes, moonlit blades and one terrified or defiant face.',
@@ -334,7 +334,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Pulp Fantasy Painting',
     domain: 'hero silhouetted by bright light',
     negativePrompt:
-      'gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Backlit heroic oil study: heroes painted against a blazing light source, burning rim light on armor and hair, faces in warm shadow and dust in the air.',
@@ -371,7 +371,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Pulp Fantasy Painting',
     domain: 'loose muscular figure study in oil',
     negativePrompt:
-      'gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Heroic anatomy oil sketch: loose oil studies of powerful fantasy figures in action poses, exaggerated musculature, quick background and visible underdrawing.',
@@ -403,7 +403,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Pulp Fantasy Painting',
     domain: 'swamp creature pulp art',
     negativePrompt:
-      'gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Swamp monster pulp painting: lurid paintings of moss-covered creatures rising from swamp water, dripping weeds, cypress trees and moonlit fog.',
@@ -435,7 +435,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Pulp Fantasy Painting',
     domain: 'eerie two-tone magazine plate',
     negativePrompt:
-      'gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Weird-fiction duotone plate: eerie magazine illustrations in black and a single muted tone, cosmic horrors, ancient towns and wide-eyed scholars in dry brush.',
@@ -468,7 +468,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Pulp Fantasy Painting',
     domain: 'grand dark throne scene',
     negativePrompt:
-      'gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Throne-room tableau painting: grand dark fantasy throne rooms painted as dramatic tableaux, a ruler on a towering throne, courtiers and captives below, torchlight and banners.',
@@ -504,7 +504,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Pulp Fantasy Painting',
     domain: 'monochrome brown oil underlayer',
     negativePrompt:
-      'gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Burnt sienna underpainting: the first monochrome stage of a fantasy oil painting, warm brown values scrubbed onto canvas, wiped highlights and bold compositional masses.',
@@ -535,7 +535,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Pulp Fantasy Painting',
     domain: 'swords and ray guns neon painting',
     negativePrompt:
-      'gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Sci-fantasy neon pulp: paintings where sword-wielding warriors meet ray guns, neon auroras, chrome towers and ancient beasts in electric saturated color.',
@@ -571,7 +571,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Pulp Fantasy Painting',
     domain: 'wide double-page painted spread',
     negativePrompt:
-      'gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Pulp dungeon gatefold spread: wide double-page paintings with a center fold, a sprawling dungeon battle or treasure hall stretching across both panels.',
@@ -608,7 +608,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Pulp Fantasy Painting',
     domain: 'shiny airbrushed armored hero',
     negativePrompt:
-      'gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Chrome-armor airbrush hero: eighties airbrushed fantasy heroes in mirror-bright chrome armor reflecting sunsets and lightning, smooth and hyper-glossy.',
@@ -644,7 +644,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Pulp Fantasy Painting',
     domain: 'small spine or back-cover painting',
     negativePrompt:
-      'gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Small paperback vignette painting: tiny oval or round paintings from paperback back covers and spines, a single figure or object painted with jewel-like care.',

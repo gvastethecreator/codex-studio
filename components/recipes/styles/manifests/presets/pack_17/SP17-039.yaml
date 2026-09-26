@@ -23,7 +23,7 @@ visualDna:
   lighting_and_shadow: Flat manuscript light with simple object shadows only when useful.
   texture_and_material: Pen outlines, small flat color fills, smooth parchment, and sparse decorative marks.
   camera_and_composition: Asymmetrical manuscript margin crop, one large funny-strange creature, and small support motifs without words.
-  atmosphere_and_mood: 'Strange, witty, medieval, unsettling, and collectible; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint, at whatever intensity the requested scene sets.'
+  atmosphere_and_mood: Strange, witty, medieval, unsettling, and collectible; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint, at whatever intensity the requested scene sets.
   rendering_and_quality: Clean line illustration with low detail density and generous negative space.
   creative_brief: 'Scholastic Marginalia Beasts: Playful but eerie medieval marginalia with odd beasts; monkish diagrams; small grotesques; clean parchment space; Transform any subject with scholastic marginalia oddness.'
   key_features: Scholastic Marginalia Beasts; Playful but eerie medieval marginalia with odd beasts; monkish diagrams; small grotesques; clean parchment space; Transform any subject with scholastic marginalia oddness
@@ -32,7 +32,6 @@ avoidRules:
   - cluttered page full of drawings
   - dense hatch texture
   - modern cartoon look
-  - explicit gore
   - watermark
   - text
   - readable tarot labels
@@ -43,7 +42,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-039.webp
 attributes:
-  negativePrompt: readable manuscript text, cluttered page full of drawings, dense hatch texture, modern cartoon look, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture
+  negativePrompt: readable manuscript text, cluttered page full of drawings, dense hatch texture, modern cartoon look, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

@@ -20,7 +20,7 @@ visualDna:
   lighting_and_shadow: Clear holy key light and candle accents cut through large graphic shadow masses without losing architectural detail.
   texture_and_material: Carved stone, wax drips, oxidized metal, incense haze, cracked fresco, and embroidered cloth.
   camera_and_composition: Tall vertical framing, sacred axial symmetry, long shadow lanes, stained-pane contrast, and devotional silhouette pressure without requiring a nave or window set.
-  atmosphere_and_mood: 'Reverent, ominous, quiet, and ceremonial; ruined majesty, moral dread, sacred pressure, weathered myth, and restrained grimdark wonder without gore shortcuts, at whatever intensity the requested scene sets.'
+  atmosphere_and_mood: Reverent, ominous, quiet, and ceremonial; ruined majesty, moral dread, sacred pressure, weathered myth, and restrained grimdark wonder without gore shortcuts, at whatever intensity the requested scene sets.
   rendering_and_quality: Fine-art fantasy illustration with precise architecture, defined contours, clean contrast, and painterly atmosphere.
   creative_brief: 'Cathedral Chiaroscuro: Gothic cathedral fantasy with carved darkness; vaulted height; sacred chiaroscuro; slab like massing; devotional vertical emphasis.'
   key_features: Cathedral Chiaroscuro; Gothic cathedral fantasy with carved darkness; vaulted height; sacred chiaroscuro; slab like massing; devotional vertical emphasis
@@ -29,7 +29,6 @@ avoidRules:
   - modern church interior
   - clean museum look
   - cute fantasy
-  - explicit gore
   - watermark
   - text
   - generic fantasy splash art
@@ -41,7 +40,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-004.webp
 attributes:
-  negativePrompt: flat daylight, modern church interior, clean museum look, cute fantasy, explicit gore, watermark, text, generic fantasy splash art, quest party lock, gore only darkness, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
+  negativePrompt: flat daylight, modern church interior, clean museum look, cute fantasy, watermark, text, generic fantasy splash art, quest party lock, gore only darkness, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

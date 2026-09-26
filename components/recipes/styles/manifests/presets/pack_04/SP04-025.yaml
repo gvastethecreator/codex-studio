@@ -21,9 +21,8 @@ visualDna:
   atmosphere_and_mood: Casual, energetic and improvised, drawn fast at the kitchen table.
   rendering_and_quality: Visible hand-speed decisions and streaky fills; no paint, no smooth gradients.
   key_features: streaky marker fills; overlap darkening; bleed halos; black marker outlines; saturated hot palette
-  creative_brief: "Felt-tip marker drawing: broad water-based marker strokes that streak, overlap into darker mixes and bleed slightly into cheap paper. Carry it through streaky marker fills, overlap darkening, bleed halos, black marker outlines, saturated hot palette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Felt-tip marker drawing: broad water-based marker strokes that streak, overlap into darker mixes and bleed slightly into cheap paper. Carry it through streaky marker fills, overlap darkening, bleed halos, black marker outlines, saturated hot palette. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
-  - frightening gore
   - known picture-book characters
   - franchise mascot likeness
   - enlarged head
@@ -51,7 +50,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-025.webp
 attributes:
-  negativePrompt: frightening gore, known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, paint, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, paint, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

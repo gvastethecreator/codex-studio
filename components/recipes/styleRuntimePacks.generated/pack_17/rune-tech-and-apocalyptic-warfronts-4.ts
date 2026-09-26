@@ -9,7 +9,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Rune-Tech & Apocalyptic Warfronts',
     domain: 'futuristic medieval',
     negativePrompt:
-      'neon city cyberpunk, spaceship cockpit, glossy white sci fi, modern streetwear, explicit gore, watermark, text, generic cyberpunk city, chrome overload, readable rune text, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'neon city cyberpunk, spaceship cockpit, glossy white sci fi, modern streetwear, watermark, text, generic cyberpunk city, chrome overload, readable rune text, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Futuristic medieval citadel style merging castle massing, rune light, brutalist metal, and sacred technology.',
@@ -41,7 +41,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Rune-Tech & Apocalyptic Warfronts',
     domain: 'futuristic medieval',
     negativePrompt:
-      'generic space marine, smooth plastic suit, superhero spandex, bright fantasy paladin, explicit gore, watermark, text, generic cyberpunk city, chrome overload, readable rune text, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'generic space marine, smooth plastic suit, superhero spandex, bright fantasy paladin, watermark, text, generic cyberpunk city, chrome overload, readable rune text, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Futuristic crusader armor with medieval plate grammar, lit sigils, modular joints, and ritual tech.',
@@ -73,7 +73,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Rune-Tech & Apocalyptic Warfronts',
     domain: 'futuristic medieval',
     negativePrompt:
-      'cyberpunk city, chrome overload, flat vector poster, cute cartoon, explicit gore, watermark, text, generic cyberpunk city, readable rune text, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'cyberpunk city, chrome overload, flat vector poster, cute cartoon, watermark, text, generic cyberpunk city, readable rune text, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Dreamlike synth-medieval fantasy with castles, prophecy light, analog glow, and retro-future mysticism.',
@@ -105,7 +105,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Rune-Tech & Apocalyptic Warfronts',
     domain: 'futuristic medieval',
     negativePrompt:
-      'sleek anime robot, toy like plastic, spaceship cockpit, clean lab aesthetic, explicit gore, watermark, text, generic cyberpunk city, chrome overload, readable rune text, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'sleek anime robot, toy like plastic, spaceship cockpit, clean lab aesthetic, watermark, text, generic cyberpunk city, chrome overload, readable rune text, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Mecha-medieval reliquary style where knight forms become walking shrines of armor, machinery, and sacred cores.',
@@ -135,7 +135,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Rune-Tech & Apocalyptic Warfronts',
     domain: 'futuristic medieval',
     negativePrompt:
-      'clean sci fi lab, cute mushroom village, medical gore, bright garden fantasy, explicit gore, watermark, text, generic cyberpunk city, chrome overload, readable rune text, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'clean sci fi lab, cute mushroom village, bright garden fantasy, watermark, text, generic cyberpunk city, chrome overload, readable rune text, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Bio-arcane medieval future where catacombs, bone machinery, roots, and rune conduits grow into one system.',
@@ -165,7 +165,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Rune-Tech & Apocalyptic Warfronts',
     domain: 'futuristic medieval',
     negativePrompt:
-      'photorealism, soft oil painting, flat clip art, modern logo, explicit gore, watermark, text, generic cyberpunk city, chrome overload, readable rune text, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'photorealism, soft oil painting, flat clip art, modern logo, watermark, text, generic cyberpunk city, chrome overload, readable rune text, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Futuristic stained-glass medieval fantasy with starforged geometry, black lead lines, and radiant cosmic color.',
@@ -197,7 +197,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Rune-Tech & Apocalyptic Warfronts',
     domain: 'apocalyptic medieval',
     negativePrompt:
-      'copied franchise armor, readable insignia, modern guns as hero objects, excessive black noise, explicit gore, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'copied franchise armor, readable insignia, modern guns as hero objects, excessive black noise, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Apocalyptic medieval trench crusade with mud-choked cathedrals, black powder smoke, reliquary armor, and martyr banners.',
@@ -229,7 +229,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Rune-Tech & Apocalyptic Warfronts',
     domain: 'gothic wargame fantasy',
     negativePrompt:
-      'copied tabletop franchise designs, real world insignia, unreadable kitbash clutter, muddy black artifacts, explicit gore, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'copied tabletop franchise designs, real world insignia, unreadable kitbash clutter, muddy black artifacts, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Grim gothic tabletop warfront with cathedral armor, painted-miniature contrast, skull-shaped reliquaries, and oversized siege silhouettes.',
@@ -261,7 +261,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Rune-Tech & Apocalyptic Warfronts',
     domain: 'inked dungeon drama',
     negativePrompt:
-      'copied game characters, smooth fantasy realism, excessive noise, unreadable black crush, explicit gore, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'copied game characters, smooth fantasy realism, excessive noise, unreadable black crush, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Harsh ink dungeon crawl with angular heroes, torchlight panic, heavy black cuts, and exaggerated stress shadows.',
@@ -291,7 +291,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Rune-Tech & Apocalyptic Warfronts',
     domain: 'medieval engraving fantasy',
     negativePrompt:
-      'readable heraldic text, modern logos, gray noise mush, smooth digital painting, explicit gore, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'readable heraldic text, modern logos, gray noise mush, smooth digital painting, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Old-world sepulcher warband engraving with carved linework, funeral armor, heraldic masses, and siege-icon composition.',
@@ -321,7 +321,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Rune-Tech & Apocalyptic Warfronts',
     domain: 'apocalyptic reliquary fantasy',
     negativePrompt:
-      'copied faction designs, readable religious text, body horror focus, noisy dark compression, explicit gore, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'copied faction designs, readable religious text, body horror focus, noisy dark compression, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Apocalyptic iron reliquary fantasy with sacred-industrial mass, scorched liturgical metal, riveted devotional forms, and catastrophic medieval machinery.',
@@ -353,7 +353,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Rune-Tech & Apocalyptic Warfronts',
     domain: 'folk horror medieval',
     negativePrompt:
-      'generic witch hat cliche, cartoon Halloween look, unreadable forest noise, explicit gore, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'generic witch hat cliche, cartoon Halloween look, unreadable forest noise, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Folk-horror medieval covenant with witch-knights, thorn chapels, bone charms, black woods, and candlelit oath armor.',
@@ -385,7 +385,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Rune-Tech & Apocalyptic Warfronts',
     domain: 'siege monastery fantasy',
     negativePrompt:
-      'readable script, book stack default, library room cliche, muddy stone noise, explicit gore, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'readable script, book stack default, library room cliche, muddy stone noise, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Siege-monastery fantasy with bone-script ornament, barricaded cloisters, armored scribes, and ritual defense engines.',
@@ -417,7 +417,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Rune-Tech & Apocalyptic Warfronts',
     domain: 'astral medieval fantasy',
     negativePrompt:
-      'readable magic circles, generic wizard robe, noisy starfield, sci fi spaceship look, explicit gore, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'readable magic circles, generic wizard robe, noisy starfield, sci fi spaceship look, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Astral feudal exorcist fantasy with star-lit armor, monastery astronomers, demon-sealing geometry, and celestial battlefield calm.',
@@ -449,7 +449,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Rune-Tech & Apocalyptic Warfronts',
     domain: 'holy war airship fleet',
     negativePrompt:
-      'gore, readable runes or text, existing franchise armor or emblems, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable runes or text, existing franchise armor or emblems, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Relic airship armada: fleets of cathedral-shaped airships with stained sails, bell towers and censers, crossing smoky skies in medieval formation.',
@@ -478,7 +478,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Rune-Tech & Apocalyptic Warfronts',
     domain: 'forge of glowing rune metal',
     negativePrompt:
-      'gore, readable runes or text, existing franchise armor or emblems, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable runes or text, existing franchise armor or emblems, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Plasma rune forge: dark forges where metal is shaped with glowing plasma and runes that burn into the steel, sparks and white-hot light in a black workshop.',
@@ -509,7 +509,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Rune-Tech & Apocalyptic Warfronts',
     domain: 'sun-powered monastery machine',
     negativePrompt:
-      'gore, readable runes or text, existing franchise armor or emblems, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable runes or text, existing franchise armor or emblems, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Solar monastery engine: mountain monasteries built around vast golden mirror machines that gather sunlight, monks tending lenses, gears and prayer wheels.',
@@ -543,7 +543,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Rune-Tech & Apocalyptic Warfronts',
     domain: 'holy clockwork knight machine',
     negativePrompt:
-      'gore, readable runes or text, existing franchise armor or emblems, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable runes or text, existing franchise armor or emblems, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Clockwork paladin automaton: mechanical holy knights of brass and enamel with visible gears in their chests, wound by a key, marching with ceremonial precision.',
@@ -579,7 +579,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Rune-Tech & Apocalyptic Warfronts',
     domain: 'runes etched like circuit boards',
     negativePrompt:
-      'readable runes, gore, readable runes or text, existing franchise armor or emblems, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable runes, readable runes or text, existing franchise armor or emblems, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Rune-circuit engraving: stone and metal surfaces carved with glowing rune tracks laid out like circuit boards, ancient magic wired like electronics.',
@@ -615,7 +615,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Rune-Tech & Apocalyptic Warfronts',
     domain: 'night siege lit by neon sigils',
     negativePrompt:
-      'readable symbols, gore, readable runes or text, existing franchise armor or emblems, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable symbols, readable runes or text, existing franchise armor or emblems, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Neon sigil siege night: medieval sieges at night lit by floating neon sigils, glowing banners and electric wards over dark stone walls.',

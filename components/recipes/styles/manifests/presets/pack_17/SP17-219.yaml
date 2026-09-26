@@ -29,11 +29,10 @@ visualDna:
   camera_and_composition: Wide crowded battle panorama, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with breathless historical reportage.
   rendering_and_quality: Dense engraved detail without headlines, kept consistent across the whole image.
-  creative_brief: "Engraved broadside war direction: battles shown like early printed news broadsides, crowded engraved figures, smoke rendered in hatching and dramatic reportage. Carry it through engraved reportage, hatched smoke, crowded battle, aged paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Engraved broadside war direction: battles shown like early printed news broadsides, crowded engraved figures, smoke rendered in hatching and dramatic reportage. Carry it through engraved reportage, hatched smoke, crowded battle, aged paper. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: engraved reportage; hatched smoke; crowded battle; aged paper
 avoidRules:
   - headlines or text
-  - gore
   - interface or HUD
   - existing game or film characters, logos or clan crests
   - readable text
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: headlines or text, gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: headlines or text, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

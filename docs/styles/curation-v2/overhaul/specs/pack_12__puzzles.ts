@@ -40,13 +40,13 @@ const spec: Spec = {
       "Closing up a cozy pixel tavern for the night, the innkeeper finds a pair of tiny muddy footprints leading from the fireplace to the cider barrel. No readable text or logo.",
     ] },
     'SP12-036': { briefs: [
-      'Standing in a clean modular test chamber in first person, an original subject places a glowing gate on the ceiling as a giant robotic arm lowers a cube toward a laser. No readable text or logo.',
+      "Standing in a clean modular test chamber in first person, an original subject in a white jumpsuit balances on a floating panel as a giant robotic arm lowers a potted fern into the path of a laser. No readable text or logo.",
       'In a spotless white test chamber, a test subject solves the puzzle perfectly, and the testing machine plays a tiny, sarcastic celebration. No readable text or logo.',
       'In a clean white chamber, the exit door is open, but the observation window above is fogged from the inside by someone breathing. No readable text or logo.',
     ] },
     'SP12-037': { briefs: [
-      'Leaping across a toy-like floating island of candy-colored blocks, an original tiny hero in a striped cat costume dives onto a giant spiked tortoise boss. No readable text or logo.',
-      'In a bright toy-box platformer, a small hero triumphantly reaches the flagpole, and the flag is being held by a very proud caterpillar. No readable text or logo.',
+      "Leaping across a toy-like floating island of candy-colored blocks, an original tiny hero in a frog raincoat bounces onto a giant grumpy cactus boss whose flowers pop off with every hit. No readable text or logo.",
+      "In a bright toy-box platformer, a small hero triumphantly reaches the goal gate, and the ribbon is being held out by a very proud caterpillar. No readable text or logo.",
       'On a bright toy-like island, the level is complete, the music has stopped, and one block in the sky still flashes, waiting to be hit. No readable text or logo.',
     ] },
     'SP12-051': { briefs: [
@@ -55,7 +55,7 @@ const spec: Spec = {
       'On an empty bazaar card table, the enemy\'s hand is laid face down, and one card is slowly turning itself over. No readable text or logo.',
     ] },
     'SP12-058': { briefs: [
-      'Rotating a blocky pixel world in a single turn, an original tiny explorer in a fez reveals a hidden door as the whole echo cavern pivots around her in bright colors. No readable text or logo.',
+      "Rotating a blocky pixel world in a single turn, an original tiny explorer in a knitted beanie reveals a hidden door as the whole echo cavern pivots around her in bright pastel colors. No readable text or logo.",
       'In a rotating pixel puzzle world, a tiny explorer turns the whole level around and finds a small owl who has been standing there waiting for hours. No readable text or logo.',
       'In a blocky pixel cavern, rotating the world reveals a wall covered in the same symbol, and one of them is glowing. No readable text or logo.',
     ] },
@@ -65,12 +65,12 @@ const spec: Spec = {
       'In a vast desert at dusk, one set of tire tracks leads straight into a dune and disappears. No readable text or logo.',
     ] },
     'SP12-074': { briefs: [
-      'Seated at a candlelit table in a dark cabin, an original player places a squirrel card as the looming dealer across the table reveals a hand of carved bone creatures. No readable text or logo.',
+      "Seated at a candlelit table in a dark cabin, an original player places a moth card as the looming dealer across the table reveals a hand of carved bone creatures. No readable text or logo.",
       'Across a candlelit deck table, the ominous dealer is very upset because the player has just played a card of a cat that refuses to fight. No readable text or logo.',
       'On a dark card table lit by one candle, the dealer\'s chair is empty, and the cards are still being dealt. No readable text or logo.',
     ] },
     'SP12-077': { briefs: [
-      'Sneaking across a side-view industrial quarry, an original bug-eyed worker leads a line of fellow escapees past a sleeping guard creature as the smokestacks glow. No readable text or logo.',
+      "Sneaking across a side-view industrial quarry, an original lanky moth-winged worker leads a line of fellow escapees past a sleeping guard creature as the smokestacks glow. No readable text or logo.",
       'In a cinematic side-view factory escape, a brave worker leads his friends to freedom, and they all politely wait in line at the exit. No readable text or logo.',
       'In a side-view quarry at night, every worker has escaped, and the conveyor belt keeps carrying empty crates into the dark. No readable text or logo.',
     ] },
@@ -107,7 +107,7 @@ const spec: Spec = {
       rendering_and_quality: "Clean capture with no cursor or text, kept consistent across the whole image.",
       key_features: 'hand-drawn room; curious objects; small hero; stage view',
     }, ['cursor or verbs'], [
-      'Standing in a hand-drawn wizard\'s workshop full of bubbling flasks, an original young apprentice holds a rubber chicken with a pulley as a stuffed crocodile winks from the ceiling. No readable text or logo.',
+      "Standing in a painted wizard workshop full of bubbling flasks, an original young apprentice holds a rubber duck tied to a fishing line as a stuffed crocodile winks from the ceiling. No readable text or logo.",
       'In a cluttered hand-drawn room, a clever hero tries to use a banana on every object in sight, including the confused cat. No readable text or logo.',
       "Tucked into a lovingly drawn attic, one drawer in a tall cabinet is slightly open, and a thin line of light spills out of it. No readable text or logo.",
     ]),

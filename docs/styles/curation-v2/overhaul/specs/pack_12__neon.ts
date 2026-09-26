@@ -19,7 +19,7 @@ const capture = (
   domain,
   tags: [tag, 'game-capture', 'portable-style-study'],
   dna: dna(fields),
-  avoid: [...avoid, 'existing game characters, logos or levels', 'readable interface text', 'gore', ...STYLE_AVOID],
+  avoid: [...avoid, 'existing game characters, logos or levels', 'readable interface text',  ...STYLE_AVOID],
   briefs,
 });
 

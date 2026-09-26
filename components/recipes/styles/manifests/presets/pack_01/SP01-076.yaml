@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Detached and procedural, calm clarity about something that went wrong.
   rendering_and_quality: Documentation-grade sharpness; no gore, drama or readable case numbers.
   key_features: scale bar beside the object; even flash; camera square to the surface; neutral color; plain evidence markers
-  creative_brief: "Forensic evidence photography: a flat, objective record of an object or trace with a scale reference and even flash, meant for measurement, not emotion. Carry it through scale bar beside the object, even flash, camera square to the surface, neutral color, plain evidence markers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Forensic evidence photography: a flat, objective record of an object or trace with a scale reference and even flash, meant for measurement, not emotion. Carry it through scale bar beside the object, even flash, camera square to the surface, neutral color, plain evidence markers. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - fake UI text
   - readable timestamp
@@ -30,7 +30,6 @@ avoidRules:
   - generic stock-photo face
   - celebrity likeness
   - artistic
-  - gore
   - readable case numbers
   - emotional
   - illustration
@@ -58,7 +57,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-076.webp
 attributes:
-  negativePrompt: fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, artistic, gore, readable case numbers, emotional, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, artistic blur, wrong diagnostic palette, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, artistic, readable case numbers, emotional, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, artistic blur, wrong diagnostic palette, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

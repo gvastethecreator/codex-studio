@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Circular compositions with concentric rings and domes framing the sky.
   atmosphere_and_mood: Wondrous and precise, the universe measured by candlelight.
   rendering_and_quality: Crisp detailed illustration with fine engraved brass and starlight.
-  creative_brief: "Astrolabepunk: star-reading guilds with giant brass astrolabes, orreries, domed observatories and zodiac machines turning above candlelit scholars. Carry it through giant astrolabes, turning orreries, observatory domes, brass rings. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Astrolabepunk: star-reading guilds with giant brass astrolabes, orreries, domed observatories and zodiac machines turning above candlelit scholars. Carry it through giant astrolabes, turning orreries, observatory domes, brass rings. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: giant astrolabes; turning orreries; observatory domes; brass rings
 avoidRules:
   - readable text
@@ -37,7 +37,6 @@ avoidRules:
   - real artist signature
   - copying a specific famous artwork
   - muddy noisy texture
-  - gore
   - graphic wounds
   - real religious leader likeness
   - readable runes or scripture
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Towering chained shelves and books in flight across library halls.
   atmosphere_and_mood: Forbidden and alive, knowledge that wants to escape.
   rendering_and_quality: Detailed atmospheric illustration with glowing page light and aged textures.
-  creative_brief: "Grimoirepunk: living spellbooks that breathe, bite and fly, with chained libraries, glowing illuminated diagrams, leather covers with eyes and pages turning in the wind. Carry it through living books, chained shelves, glowing diagrams, flying pages. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Grimoirepunk: living spellbooks that breathe, bite and fly, with chained libraries, glowing illuminated diagrams, leather covers with eyes and pages turning in the wind. Carry it through living books, chained shelves, glowing diagrams, flying pages. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: living books; chained shelves; glowing diagrams; flying pages
 avoidRules:
   - readable text
@@ -37,7 +37,6 @@ avoidRules:
   - real artist signature
   - copying a specific famous artwork
   - muddy noisy texture
-  - gore
   - graphic wounds
   - real religious leader likeness
   - readable runes or scripture
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

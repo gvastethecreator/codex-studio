@@ -502,7 +502,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '9. Comic & Cartoon Illustration',
     domain: 'monster movie comic art',
     negativePrompt:
-      'gore, speech bubbles, lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'speech bubbles, lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Creature feature comic: classic monster-movie comic art with towering creatures, screaming crowds, dramatic low angles and lurid saturated color.',

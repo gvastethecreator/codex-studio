@@ -29,11 +29,10 @@ visualDna:
   camera_and_composition: Quiet interior framing with large expanses of wall around the subject.
   atmosphere_and_mood: Stale, suffocating and quietly alive, a house that breathes.
   rendering_and_quality: Detailed painterly realism with subtle pattern distortion in the stains.
-  creative_brief: "Breathing wallpaper damp: old rooms whose floral wallpaper is swollen with damp, stains spreading into shapes and the pattern seeming to shift when unobserved. Carry it through damp floral wallpaper, spreading stains, bubbling seams, subtly moving pattern. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Breathing wallpaper damp: old rooms whose floral wallpaper is swollen with damp, stains spreading into shapes and the pattern seeming to shift when unobserved. Carry it through damp floral wallpaper, spreading stains, bubbling seams, subtly moving pattern. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: damp floral wallpaper; spreading stains; bubbling seams; subtly moving pattern
 avoidRules:
   - bright clean walls
-  - gore
   - graphic wounds
   - jump-scare monster close-up
   - franchise creature design
@@ -51,7 +50,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: bright clean walls, gore, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: bright clean walls, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

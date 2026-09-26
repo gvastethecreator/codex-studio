@@ -470,7 +470,7 @@
         "field": "global"
       },
       {
-        "text": "unrequested gore, named religious props, copied meters or fabricated interface text",
+        "text": "unrequested named religious props, copied meters or fabricated interface text",
         "field": "global"
       },
       {
@@ -568,7 +568,7 @@
         "field": "global"
       },
       {
-        "text": "unrequested blood, objective markers, combat text or fabricated HUD",
+        "text": "unrequested objective markers, combat text or fabricated HUD",
         "field": "global"
       },
       {
@@ -617,7 +617,7 @@
         "field": "global"
       },
       {
-        "text": "unrequested gore, move names, round text or fabricated health bars",
+        "text": "unrequested move names, round text or fabricated health bars",
         "field": "global"
       },
       {
@@ -666,7 +666,7 @@
         "field": "global"
       },
       {
-        "text": "unrequested gore, stress symbols, torch icons or fabricated status text",
+        "text": "unrequested stress symbols, torch icons or fabricated status text",
         "field": "global"
       },
       {
@@ -1315,7 +1315,7 @@
         "field": "rendering_and_quality"
       },
       {
-        "text": "Do not force sacrifice, gore, a feathered warrior or a sun disk into every subject.",
+        "text": "Do not force sacrifice, a feathered warrior or a sun disk into every subject.",
         "field": "rendering_and_quality"
       },
       {
@@ -1686,7 +1686,7 @@
         "field": "rendering_and_quality"
       },
       {
-        "text": "Respect anatomy and material locks; do not add unrequested gore or anatomical change.",
+        "text": "Respect anatomy and material locks; do not add unrequested anatomical change.",
         "field": "rendering_and_quality"
       },
       {
@@ -1764,7 +1764,7 @@
         "field": "rendering_and_quality"
       },
       {
-        "text": "Respect anatomy locks; do not add unrequested grafts, exposed anatomy or gore.",
+        "text": "Respect anatomy locks; do not add unrequested grafts or exposed anatomy.",
         "field": "rendering_and_quality"
       },
       {
@@ -2518,7 +2518,7 @@
         "field": "rendering_and_quality"
       },
       {
-        "text": "unrequested gore or horror intensity",
+        "text": "unrequested horror intensity",
         "field": "rendering_and_quality"
       },
       {
@@ -5662,7 +5662,7 @@
         "field": "rendering_and_quality"
       },
       {
-        "text": "unrequested horror or violence",
+        "text": "unrequested horror",
         "field": "global"
       }
     ],
@@ -5705,7 +5705,7 @@
         "field": "global"
       },
       {
-        "text": "unrequested horror or violence",
+        "text": "unrequested horror",
         "field": "global"
       }
     ],
@@ -5744,7 +5744,7 @@
         "field": "global"
       },
       {
-        "text": "unrequested horror or violence",
+        "text": "unrequested horror",
         "field": "global"
       }
     ],
@@ -5787,7 +5787,7 @@
         "field": "rendering_and_quality"
       },
       {
-        "text": "unrequested horror or violence",
+        "text": "unrequested horror",
         "field": "global"
       }
     ],
@@ -5818,7 +5818,7 @@
     ],
     "avoidRules": [
       {
-        "text": "unrequested blood, torn clothing, or threatening subject matter",
+        "text": "unrequested torn clothing or threatening subject matter",
         "field": "global"
       },
       {
@@ -5830,7 +5830,7 @@
         "field": "rendering_and_quality"
       },
       {
-        "text": "unrequested horror or violence",
+        "text": "unrequested horror",
         "field": "global"
       }
     ],
@@ -5873,7 +5873,7 @@
         "field": "lighting_and_shadow"
       },
       {
-        "text": "unrequested horror or violence",
+        "text": "unrequested horror",
         "field": "global"
       }
     ],
@@ -5916,7 +5916,7 @@
         "field": "texture_and_material"
       },
       {
-        "text": "unrequested horror or violence",
+        "text": "unrequested horror",
         "field": "global"
       }
     ],
@@ -5959,7 +5959,7 @@
         "field": "global"
       },
       {
-        "text": "unrequested horror or violence",
+        "text": "unrequested horror",
         "field": "global"
       }
     ],
@@ -8143,11 +8143,7 @@
   "SP22-184": {
     "schemaVersion": 1,
     "kind": "modifier",
-    "defaultFields": [
-      "aesthetic",
-      "texture_and_material",
-      "rendering_and_quality"
-    ],
+    "defaultFields": ["aesthetic", "texture_and_material", "rendering_and_quality"],
     "requires": "accent",
     "medium": "ornamental-line-detail",
     "constraints": [
@@ -9732,11 +9728,7 @@
   "SP23-006": {
     "schemaVersion": 1,
     "kind": "representation_profile",
-    "defaultFields": [
-      "aesthetic",
-      "camera_and_composition",
-      "rendering_and_quality"
-    ],
+    "defaultFields": ["aesthetic", "camera_and_composition", "rendering_and_quality"],
     "requires": "structure",
     "medium": "representation",
     "constraints": [
@@ -9939,11 +9931,7 @@
   "SP23-012": {
     "schemaVersion": 1,
     "kind": "modifier",
-    "defaultFields": [
-      "aesthetic",
-      "color_and_tone",
-      "rendering_and_quality"
-    ],
+    "defaultFields": ["aesthetic", "color_and_tone", "rendering_and_quality"],
     "requires": "accent",
     "medium": "print-color-contrast",
     "constraints": [
@@ -10750,7 +10738,7 @@
         "field": "global"
       },
       {
-        "text": "unrequested characters, Lovecraftian creatures, gore or game narrative",
+        "text": "unrequested characters, Lovecraftian creatures or game narrative",
         "field": "global"
       },
       {
@@ -11491,11 +11479,7 @@
   "SP23-048": {
     "schemaVersion": 1,
     "kind": "representation_profile",
-    "defaultFields": [
-      "aesthetic",
-      "camera_and_composition",
-      "rendering_and_quality"
-    ],
+    "defaultFields": ["aesthetic", "camera_and_composition", "rendering_and_quality"],
     "requires": "structure",
     "medium": "representation",
     "constraints": [
@@ -11799,9 +11783,7 @@
   "SP23-056": {
     "schemaVersion": 1,
     "kind": "modifier",
-    "defaultFields": [
-      "texture_and_material"
-    ],
+    "defaultFields": ["texture_and_material"],
     "requires": "materialTarget",
     "medium": "fine-porous-pigment-surface-treatment",
     "constraints": [

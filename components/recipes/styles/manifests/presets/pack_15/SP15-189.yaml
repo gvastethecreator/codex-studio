@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Dark scenes where glowing organisms outline the shapes of everything.
   atmosphere_and_mood: Magical and quiet, a night that is never truly dark.
   rendering_and_quality: Luminous low-key illustration with soft living light glows.
-  creative_brief: "Glowpunk: a world lit by living light, with bioluminescent streetlights, glowing tattoos of algae, jellyfish lanterns and mushroom-lit homes. Carry it through living light, jellyfish lanterns, glowing fungi, dark night. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Glowpunk: a world lit by living light, with bioluminescent streetlights, glowing tattoos of algae, jellyfish lanterns and mushroom-lit homes. Carry it through living light, jellyfish lanterns, glowing fungi, dark night. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: living light; jellyfish lanterns; glowing fungi; dark night
 avoidRules:
   - readable text
@@ -37,7 +37,6 @@ avoidRules:
   - real artist signature
   - copying a specific famous artwork
   - muddy noisy texture
-  - gore
   - graphic wounds
   - real brand or company logo
   - watermark
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

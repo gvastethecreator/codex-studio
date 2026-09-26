@@ -29,12 +29,11 @@ visualDna:
   camera_and_composition: Horizon in the center, subject and reflection mirrored top and bottom.
   atmosphere_and_mood: Minimal, surreal and lonely, a signal sent into emptiness.
   rendering_and_quality: Clean minimal painting with precise mirror reflections and calm.
-  creative_brief: "Salt-flat signal post: a lonely antenna and caravan on mirror-flat white salt, painted in minimal pale tones where sky and ground reflect each other. Carry it through mirror salt flat, lone antenna, perfect reflection, hexagonal crust. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Salt-flat signal post: a lonely antenna and caravan on mirror-flat white salt, painted in minimal pale tones where sky and ground reflect each other. Carry it through mirror salt flat, lone antenna, perfect reflection, hexagonal crust. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: mirror salt flat; lone antenna; perfect reflection; hexagonal crust
 avoidRules:
   - crowds
   - dense forest
-  - gore
   - real military insignia
   - real brand or company logo
   - readable text
@@ -51,7 +50,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: crowds, dense forest, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: crowds, dense forest, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

@@ -21,7 +21,7 @@ const study = (
   domain,
   tags: [tag, 'pulp-fantasy', 'portable-style-study'],
   dna: dna(fields),
-  avoid: [...avoid, 'gore', 'title lettering', 'existing franchise heroes', ...STYLE_AVOID],
+  avoid: [...avoid,  'title lettering', 'existing franchise heroes', ...STYLE_AVOID],
   briefs,
 });
 

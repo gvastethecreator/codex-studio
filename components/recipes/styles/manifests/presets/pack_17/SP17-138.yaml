@@ -29,10 +29,9 @@ visualDna:
   camera_and_composition: Steep angled grid view with clear units, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with desperate calculation, kept consistent across the whole image.
   rendering_and_quality: Readable units with no interface, kept consistent across the whole image.
-  creative_brief: "Grim squad tactics grid: a top-down or angled grid battlefield where a small squad of dark fantasy units faces overwhelming odds in a ruined town. Carry it through faint grid, small squad, ruined town, overwhelming odds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Grim squad tactics grid: a top-down or angled grid battlefield where a small squad of dark fantasy units faces overwhelming odds in a ruined town. Carry it through faint grid, small squad, ruined town, overwhelming odds. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: faint grid; small squad; ruined town; overwhelming odds
 avoidRules:
-  - gore
   - interface text, menus or health bars
   - existing game characters or logos
   - readable text
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: gore, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

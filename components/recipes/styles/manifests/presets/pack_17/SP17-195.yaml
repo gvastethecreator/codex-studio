@@ -29,10 +29,9 @@ visualDna:
   camera_and_composition: Slightly low view down a manor room, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with eerie faded nostalgia.
   rendering_and_quality: Painterly detail with clean focal point, kept consistent across the whole image.
-  creative_brief: "Cracked-doll manor direction: painted art direction of a decaying manor full of porcelain dolls with cracked faces, faded wallpaper and dusty nursery light. Carry it through cracked dolls, faded wallpaper, dusty light, manor. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Cracked-doll manor direction: painted art direction of a decaying manor full of porcelain dolls with cracked faces, faded wallpaper and dusty nursery light. Carry it through cracked dolls, faded wallpaper, dusty light, manor. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: cracked dolls; faded wallpaper; dusty light; manor
 avoidRules:
-  - gore
   - interface or HUD
   - existing game characters, logos or locations
   - readable text
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Claustrophobic, uncanny and quietly escalating toward horror.
   rendering_and_quality: Precise fine-pen draftsmanship with realistic faces and relentless line density; no gore splash, no cute shapes.
   key_features: obsessive fine-line hatching; creeping spiral patterns; realistic unhatched faces; symmetrical calm staging; pitch-black voids
-  creative_brief: "Horror manga drawn with obsessive fine lines: thousands of parallel pen strokes accumulate into dread, and ordinary surfaces slowly turn into spirals, holes or patterns. Carry it through obsessive fine-line hatching, creeping spiral patterns, realistic unhatched faces, symmetrical calm staging, pitch-black voids. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Horror manga drawn with obsessive fine lines: thousands of parallel pen strokes accumulate into dread, and ordinary surfaces slowly turn into spirals, holes or patterns. Carry it through obsessive fine-line hatching, creeping spiral patterns, realistic unhatched faces, symmetrical calm staging, pitch-black voids. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - added panels or gutters
   - speech balloons
@@ -29,7 +29,6 @@ avoidRules:
   - franchise hero costume
   - chest emblem of a known hero
   - color
-  - splatter gore
   - cute
   - clean
   - official card scene
@@ -54,7 +53,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-011.webp
 attributes:
-  negativePrompt: added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, color, splatter gore, cute, clean, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, color, cute, clean, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

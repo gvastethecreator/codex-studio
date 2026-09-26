@@ -19,7 +19,7 @@ const capture = (
   domain,
   tags: [tag, 'game-capture', 'portable-style-study'],
   dna: dna(fields),
-  avoid: [...avoid, 'existing game characters, logos or levels', 'readable interface text', 'gore', ...STYLE_AVOID],
+  avoid: [...avoid, 'existing game characters, logos or levels', 'readable interface text',  ...STYLE_AVOID],
   briefs,
 });
 
@@ -60,7 +60,7 @@ const spec: Spec = {
       'In a red and black palace hallway, every portrait wears the same porcelain mask, and one mask is missing from its frame. No readable text or logo.',
     ] },
     'SP12-053': { briefs: [
-      'Wading through a misty bog at the edge of a wet village, an original monster hunter with twin silver blades confronts a coven of three witches who share one glowing eye. No readable text or logo.',
+      "Wading through a misty bog at the edge of a wet village, an original monster hunter with a lantern pole faces a drowned miller who has risen from the millpond as a shape of reeds, water and grinding stones. No readable text or logo.",
       'In a grim swamp village, a hardened monster hunter is hired for a terrifying contract that turns out to be finding a lost goat. No readable text or logo.',
       'Deep in a foggy swamp, a ring of hanging charms clinks in the wind, though the reeds all around are perfectly still. No readable text or logo.',
     ] },
@@ -70,14 +70,14 @@ const spec: Spec = {
       'From a first-person view in a silent garden, the shadows of three statues form a line that points directly back at the player. No readable text or logo.',
     ] },
     'SP12-061': { briefs: [
-      'Painting a stroke across the sky with a celestial brush, an original white wolf spirit makes the sun rise over a jade volcano shrine, ink-wash petals bursting from every step. No readable text or logo.',
-      'In an ink-wash painted village, a divine wolf tries to restore a withered tree with a brush stroke and accidentally paints a moustache on the moon. No readable text or logo.',
+      "Painting a stroke across the sky with a celestial brush, an original white hare spirit makes the sun rise over a jade volcano shrine, ink-wash petals bursting from every step it takes. No readable text or logo.",
+      "In an ink-wash painted village, a divine fox spirit tries to restore a withered tree with a brush stroke and accidentally paints a moustache on the moon. No readable text or logo.",
       'In a sumi-e shrine at night, a single ink stroke on the ground slowly spreads, drawing a path that leads into the volcano. No readable text or logo.',
     ] },
     'SP12-070': { briefs: [
-      'Drawing a bow in slow motion while leaping off a cliff shrine, an original ranger lines up a shot at a glowing guardian whose single eye is locking on in clean cel-shaded light. No readable text or logo.',
+      "Drawing a bow in slow motion while leaping off a cliff shrine, an original ranger lines up a shot at a giant stone boar whose moss-covered back is lined with glowing runes, all in soft painterly cel light. No readable text or logo.",
       'On a windy open plateau, a heroic adventurer finally solves an ancient shrine trial whose reward is a single roasted apple. No readable text or logo.',
-      'On a quiet open plain at dusk, an ancient guardian machine lies overgrown with moss, and its eye flickers once as the player passes. No readable text or logo.',
+      "On a quiet open plain at dusk, an ancient stone turtle the size of a hill lies overgrown with grass, and a small shrine door on its shell glows once as the player passes. No readable text or logo.",
     ] },
   },
   creates: [

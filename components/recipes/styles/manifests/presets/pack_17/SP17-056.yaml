@@ -29,14 +29,13 @@ visualDna:
   camera_and_composition: Vertical icon-card crop, centered or slightly top-heavy, with a single sacrilegious focal silhouette and no readable devotional text.
   atmosphere_and_mood: Blasphemous, mournful, devotional, low-rent, and threatening.
   rendering_and_quality: Cleanly reproduced scratchboard/ink-card finish with controlled ugliness and strong silhouette hierarchy.
-  creative_brief: "Devotional gutter-horror cards with black voids, damaged saint geometry, white scratch halos, ragged banners without writing, and cheap holy-object tension. Carry it through black devotional card, white scratch halo, damaged icon geometry, gutter holy-object mood, chalk and scrape marks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: Devotional gutter-horror cards with black voids, damaged saint geometry, white scratch halos, ragged banners without writing, and cheap holy-object tension. Carry it through black devotional card, white scratch halo, damaged icon geometry, gutter holy-object mood, chalk and scrape marks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.
   key_features: black devotional card; white scratch halo; damaged icon geometry; gutter holy-object mood; chalk and scrape marks; no text
 avoidRules:
   - clean church illustration
   - readable prayer text
   - cute saint card
   - golden religious poster
-  - literal martyr gore
   - stock angel wings
   - watermark
   - text
@@ -52,7 +51,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-056.webp
 attributes:
-  negativePrompt: clean church illustration, readable prayer text, cute saint card, golden religious poster, literal martyr gore, stock angel wings, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+  negativePrompt: clean church illustration, readable prayer text, cute saint card, golden religious poster, stock angel wings, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

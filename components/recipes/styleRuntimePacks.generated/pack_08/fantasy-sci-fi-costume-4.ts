@@ -336,7 +336,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Zombie Survivor',
     category: '4. Fantasy Sci-Fi Costume',
     negativePrompt:
-      'clean, gore, visible wound, weapon focus, zombie form, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
+      'clean, visible wound, weapon focus, zombie form, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text',
     style: {
       aesthetic:
         'Distressed utilitywear with patched layers, field-repair seams and practical bulk; damage is carried by the garments rather than the wearer or setting.',

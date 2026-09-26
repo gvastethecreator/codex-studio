@@ -21,9 +21,8 @@ visualDna:
   atmosphere_and_mood: Surprising and delightful, a world unfolding as the page opens.
   rendering_and_quality: Believable paper engineering with real depth; never a flat printed page.
   key_features: die-cut cardstock layers; v-fold hinges and pull tabs; open book gutter; real paper shadows; three-quarter view
-  creative_brief: "Pop-up book photograph: the subject engineered in folded, die-cut cardstock that rises out of the gutter of an open book. Carry it through die-cut cardstock layers, v-fold hinges and pull tabs, open book gutter, real paper shadows, three-quarter view. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Pop-up book photograph: the subject engineered in folded, die-cut cardstock that rises out of the gutter of an open book. Carry it through die-cut cardstock layers, v-fold hinges and pull tabs, open book gutter, real paper shadows, three-quarter view. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
-  - frightening gore
   - known picture-book characters
   - franchise mascot likeness
   - flat page
@@ -49,7 +48,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-026.webp
 attributes:
-  negativePrompt: frightening gore, known picture-book characters, franchise mascot likeness, flat page, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: known picture-book characters, franchise mascot likeness, flat page, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

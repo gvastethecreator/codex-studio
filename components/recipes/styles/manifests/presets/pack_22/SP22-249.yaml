@@ -28,11 +28,10 @@ visualDna:
   camera_and_composition: Preserve the requested framing with the blot as the central mass.
   atmosphere_and_mood: Keep the requested mood with playful uncanny invention.
   rendering_and_quality: Accidental blot shapes clarified by few deliberate lines.
-  creative_brief: "Blot-grown creatures: random ink blots developed into creatures by adding a few eyes, teeth, legs and lines, so every monster keeps its accidental shape. Carry it through ink blot bodies, few drawn details, splatter droplets, accidental shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Blot-grown creatures: random ink blots developed into creatures by adding a few eyes, teeth, legs and lines, so every monster keeps its accidental shape. Carry it through ink blot bodies, few drawn details, splatter droplets, accidental shapes. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: ink blot bodies; few drawn details; splatter droplets; accidental shapes
 avoidRules:
   - fully rendered painting
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -47,7 +46,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: fully rendered painting, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: fully rendered painting, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

@@ -29,13 +29,12 @@ visualDna:
   camera_and_composition: Dramatic close or looming composition with large dark mass and a single luminous shape.
   atmosphere_and_mood: Haunted, violent, feverish, and dark.
   rendering_and_quality: Painterly print quality with purposeful marks; dark but not muddy; subject readable.
-  creative_brief: "Dark painterly monotype: ink painted on a plate and printed once, with wiped-out lights, finger and rag marks, oxide red and black, and faded ghost second-pull areas. Carry it through single-pull monotype, wiped-out lights, rag and finger marks, oxide red and black, ghost second-pull haze. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Dark painterly monotype: ink painted on a plate and printed once, with wiped-out lights, finger and rag marks, oxide red and black, and faded ghost second-pull areas. Carry it through single-pull monotype, wiped-out lights, rag and finger marks, oxide red and black, ghost second-pull haze. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: single-pull monotype; wiped-out lights; rag and finger marks; oxide red and black; ghost second-pull haze
 avoidRules:
   - clean line art
   - bright color
   - digital paint texture
-  - gore detail
   - noisy speckle
   - watermark
   - text
@@ -51,7 +50,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-124.webp
 attributes:
-  negativePrompt: clean line art, bright color, digital paint texture, gore detail, noisy speckle, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
+  negativePrompt: clean line art, bright color, digital paint texture, noisy speckle, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

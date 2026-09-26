@@ -20,7 +20,7 @@ visualDna:
   lighting_and_shadow: Even backlit chapel glow, flat luminous color, and almost no cast shadow.
   texture_and_material: Large smooth glass panes, clean lead lines, subtle chips, denoised glow, and broad color blocks.
   camera_and_composition: Tall arched icon crop with centered luminous silhouette, broad pane rhythm, halo-like framing, and no inscriptions.
-  atmosphere_and_mood: 'Sacred, monstrous, luminous, and medieval; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint, at whatever intensity the requested scene sets.'
+  atmosphere_and_mood: Sacred, monstrous, luminous, and medieval; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint, at whatever intensity the requested scene sets.
   rendering_and_quality: Clean stained-glass illustration with broad panes, crisp contours, and no noisy dark lead buildup.
   creative_brief: 'Stained Glass Bestiary Icon: simplified beasts; chapel color; luminous flat panes; sacred contour grouping; halo like curve rhythm.'
   key_features: Stained Glass Bestiary Icon; simplified beasts; chapel color; luminous flat panes; sacred contour grouping; halo like curve rhythm
@@ -29,7 +29,6 @@ avoidRules:
   - kaleidoscope clutter
   - black lead noise
   - photoreal window glare
-  - explicit gore
   - watermark
   - text
   - readable tarot labels
@@ -41,7 +40,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-041.webp
 attributes:
-  negativePrompt: readable church text, kaleidoscope clutter, black lead noise, photoreal window glare, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
+  negativePrompt: readable church text, kaleidoscope clutter, black lead noise, photoreal window glare, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

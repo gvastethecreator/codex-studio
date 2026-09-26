@@ -23,7 +23,7 @@ visualDna:
   lighting_and_shadow: Hard rim light and simple seam glow define armor planes while keeping all major details visible.
   texture_and_material: Ceramic plating, scratched steel, woven tabards, rubberized joints, enamel symbols, and dusty circuitry.
   camera_and_composition: Three-quarter armor-design hierarchy, low heroic angle, optional helm or shield geometry, and strong heraldic symmetry without requiring a full suit showcase.
-  atmosphere_and_mood: 'Disciplined, militant, sacred, and technological; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness, at whatever intensity the requested scene sets.'
+  atmosphere_and_mood: Disciplined, militant, sacred, and technological; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness, at whatever intensity the requested scene sets.
   rendering_and_quality: Armored fantasy illustration with clean silhouette, defined linework, tactile materials, and limited VFX.
   creative_brief: 'Techno Crusader Armor: Futuristic crusader armor with medieval plate grammar; lit sigils; modular joints; ritual tech; servo joint rhythm.'
   key_features: Techno Crusader Armor; Futuristic crusader armor with medieval plate grammar; lit sigils; modular joints; ritual tech; servo joint rhythm
@@ -32,7 +32,6 @@ avoidRules:
   - smooth plastic suit
   - superhero spandex
   - bright fantasy paladin
-  - explicit gore
   - watermark
   - text
   - generic cyberpunk city
@@ -44,7 +43,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-020.webp
 attributes:
-  negativePrompt: generic space marine, smooth plastic suit, superhero spandex, bright fantasy paladin, explicit gore, watermark, text, generic cyberpunk city, chrome overload, readable rune text, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
+  negativePrompt: generic space marine, smooth plastic suit, superhero spandex, bright fantasy paladin, watermark, text, generic cyberpunk city, chrome overload, readable rune text, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

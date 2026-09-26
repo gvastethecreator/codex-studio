@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Hidden and busy, the secret underground half of an ordinary place.
   rendering_and_quality: Model-like cross-section with clean cut edges; no insects, larvae or creatures in the cavities.
   key_features: vertical earth cross-section; capillary root branching; layered soil strata; rounded cavities; amber gel pockets
-  creative_brief: "Sculpted earth cross-section: a handmade cutaway model sliced through soil, showing capillary root branching, layered strata and rounded cavities with amber gel pockets. Carry it through vertical earth cross-section, capillary root branching, layered soil strata, rounded cavities, amber gel pockets. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Sculpted earth cross-section: a handmade cutaway model sliced through soil, showing capillary root branching, layered strata and rounded cavities with amber gel pockets. Carry it through vertical earth cross-section, capillary root branching, layered soil strata, rounded cavities, amber gel pockets. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - brand logo on parts
   - readable text
@@ -37,7 +37,6 @@ avoidRules:
   - larvae/eggs
   - camera equipment
   - display case
-  - gore
   - body anatomy
   - flat exterior view
   - market aisle
@@ -67,7 +66,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-073.webp
 attributes:
-  negativePrompt: brand logo on parts, readable text, turning a requested object into a house or building, full-scale real construction, playroom or party scene, ant farm, insects, creature focus, flat exterior-only view, ants, insect colony, larvae/eggs, camera equipment, display case, gore, body anatomy, flat exterior view, market aisle, library aisle, corridor, empty abstraction, brand logo, product photo, child or person scene, full-scale realism, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: brand logo on parts, readable text, turning a requested object into a house or building, full-scale real construction, playroom or party scene, ant farm, insects, creature focus, flat exterior-only view, ants, insect colony, larvae/eggs, camera equipment, display case, body anatomy, flat exterior view, market aisle, library aisle, corridor, empty abstraction, brand logo, product photo, child or person scene, full-scale realism, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

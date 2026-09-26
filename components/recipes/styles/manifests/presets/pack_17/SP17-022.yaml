@@ -23,7 +23,7 @@ visualDna:
   lighting_and_shadow: Internal core glow lights armor seams while large external shadows keep the form monumental.
   texture_and_material: Riveted plates, cracked enamel, sacred glass, pistons, incense residue, wax seals, and scratched metal.
   camera_and_composition: Monumental sacred-tech framing, central reliquary hierarchy, bulky mass planes, and cathedral-scale negative space without requiring a chest, limbs, or humanoid machine body.
-  atmosphere_and_mood: 'Sacred, heavy, ancient future, and intimidating; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness, at whatever intensity the requested scene sets.'
+  atmosphere_and_mood: Sacred, heavy, ancient future, and intimidating; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness, at whatever intensity the requested scene sets.
   rendering_and_quality: Detailed digital illustration with readable mechanical joints, defined lines, and medieval reliquary ornament.
   creative_brief: 'Mecha Reliquary Knight: Mecha medieval reliquary style where knight forms become walking shrines of armor; machinery; sacred cores; Transform any subject with mecha reliquary logic; bulky ceremonial mass.'
   key_features: Mecha Reliquary Knight; Mecha medieval reliquary style where knight forms become walking shrines of armor; machinery; sacred cores; Transform any subject with mecha reliquary logic; bulky ceremonial mass
@@ -32,7 +32,6 @@ avoidRules:
   - toy like plastic
   - spaceship cockpit
   - clean lab aesthetic
-  - explicit gore
   - watermark
   - text
   - generic cyberpunk city
@@ -44,7 +43,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-022.webp
 attributes:
-  negativePrompt: sleek anime robot, toy like plastic, spaceship cockpit, clean lab aesthetic, explicit gore, watermark, text, generic cyberpunk city, chrome overload, readable rune text, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
+  negativePrompt: sleek anime robot, toy like plastic, spaceship cockpit, clean lab aesthetic, watermark, text, generic cyberpunk city, chrome overload, readable rune text, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

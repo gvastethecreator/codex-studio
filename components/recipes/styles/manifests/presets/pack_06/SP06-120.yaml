@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Ominous and awe-struck, the moment before an impossible fight.
   rendering_and_quality: Cinematic painterly finish, clear silhouettes at both scales; no health bars or titles.
   key_features: extreme scale contrast; low angle from behind the hero; boss rim light; drifting ash; one ominous color
-  creative_brief: "Boss encounter key art: a colossal threat towering over a tiny challenger, cinematic painterly rendering built on extreme scale contrast. Carry it through extreme scale contrast, low angle from behind the hero, boss rim light, drifting ash, one ominous color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Boss encounter key art: a colossal threat towering over a tiny challenger, cinematic painterly rendering built on extreme scale contrast. Carry it through extreme scale contrast, low angle from behind the hero, boss rim light, drifting ash, one ominous color. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - copied game characters
   - known game HUD layout
@@ -30,7 +30,6 @@ avoidRules:
   - publisher or studio logo
   - boss health bar
   - title lettering
-  - gore
   - watermark
   - text
   - monster requirement
@@ -56,7 +55,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-120.webp
 attributes:
-  negativePrompt: copied game characters, known game HUD layout, readable interface text, numbers and stat values, publisher or studio logo, boss health bar, title lettering, gore, watermark, text, monster requirement, combat scene, weapon requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: copied game characters, known game HUD layout, readable interface text, numbers and stat values, publisher or studio logo, boss health bar, title lettering, watermark, text, monster requirement, combat scene, weapon requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

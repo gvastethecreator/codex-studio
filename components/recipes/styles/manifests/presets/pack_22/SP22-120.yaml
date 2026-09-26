@@ -44,7 +44,7 @@ avoidRules:
   - unrequested exposed organs, injury, or anatomical alteration
   - unrequested labels, measurements, or diagram annotations
   - crosshatching that obscures the silhouette
-  - unrequested horror or violence
+  - unrequested horror
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP22-120.webp
 attributes:
@@ -76,7 +76,7 @@ attributes:
         field: rendering_and_quality
       - text: crosshatching that obscures the silhouette
         field: rendering_and_quality
-      - text: unrequested horror or violence
+      - text: unrequested horror
         field: global
   sourceMetadata:
     atlas: Codex Studio Atlas TCG v0.1

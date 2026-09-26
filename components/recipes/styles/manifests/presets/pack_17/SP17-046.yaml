@@ -23,7 +23,7 @@ visualDna:
   lighting_and_shadow: Thin candlelight and milky window glow flatten shadows into quiet planes.
   texture_and_material: Vellum skin, powdery dust, worn paper fibers, wax bloom, dry ink, and softened stone.
   camera_and_composition: Hushed vertical framing, fragile edge detail, broad pale voids, and devotional spacing that can wrap around characters, objects, creatures, or environments.
-  atmosphere_and_mood: 'Silent, fragile, haunted, devotional, and adult without shock imagery; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness, at whatever intensity the requested scene sets.'
+  atmosphere_and_mood: Silent, fragile, haunted, devotional, and adult without shock imagery; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness, at whatever intensity the requested scene sets.
   rendering_and_quality: Denoised parchment-gothic illustration with low detail chatter and clean pale value control.
   creative_brief: 'Moth Abbey Vellum Horror: Pale monastic weird fantasy built from vellum translucency; dusty wing shapes; candle ash; thin ink; silent abbey pressure.'
   key_features: Moth Abbey Vellum Horror; Pale monastic weird fantasy built from vellum translucency; dusty wing shapes; candle ash; thin ink; silent abbey pressure
@@ -33,7 +33,6 @@ avoidRules:
   - library room
   - readable manuscript
   - dusty noise field
-  - explicit gore
   - watermark
   - text
   - generic royal portrait
@@ -45,7 +44,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-046.webp
 attributes:
-  negativePrompt: literal moth swarm, monk portrait, library room, readable manuscript, dusty noise field, explicit gore, watermark, text, generic royal portrait, romance novel cover, prompt literal medieval card, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
+  negativePrompt: literal moth swarm, monk portrait, library room, readable manuscript, dusty noise field, watermark, text, generic royal portrait, romance novel cover, prompt literal medieval card, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

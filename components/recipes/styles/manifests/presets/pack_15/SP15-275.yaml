@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Close craft views and nomad camps with leather gear everywhere.
   atmosphere_and_mood: Rugged, proud and weathered, gear that lasts a lifetime.
   rendering_and_quality: Richly textured illustration with stitched and tooled leather detail.
-  creative_brief: "Leatherpunk: a nomadic culture of tanners and hide-workers, with stitched leather armor, hide tents, tooled saddles, drum skins and oiled straps. Carry it through stitched leather armor, tooled saddles, hide tents, drum skins. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Leatherpunk: a nomadic culture of tanners and hide-workers, with stitched leather armor, hide tents, tooled saddles, drum skins and oiled straps. Carry it through stitched leather armor, tooled saddles, hide tents, drum skins. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: stitched leather armor; tooled saddles; hide tents; drum skins
 avoidRules:
   - readable text
@@ -37,7 +37,6 @@ avoidRules:
   - real artist signature
   - copying a specific famous artwork
   - muddy noisy texture
-  - gore
   - sacred regalia of a specific living culture
   - real brand or company logo
   - watermark
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Close views of careful hands with creatures and shelves of glowing vials.
   atmosphere_and_mood: Tense and elegant, danger handled with total calm and precision.
   rendering_and_quality: Rich jewel-toned illustration with precise scale and glass detail.
-  creative_brief: "Venompunk: a culture of snake handlers, venom distillers and antidote alchemists, with glass fangs, milking tables and jewel-bright toxin vials. Carry it through venomous creatures, jewel vials, handling tools, lamplight glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Venompunk: a culture of snake handlers, venom distillers and antidote alchemists, with glass fangs, milking tables and jewel-bright toxin vials. Carry it through venomous creatures, jewel vials, handling tools, lamplight glow. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: venomous creatures; jewel vials; handling tools; lamplight glow
 avoidRules:
   - readable text
@@ -37,7 +37,6 @@ avoidRules:
   - real artist signature
   - copying a specific famous artwork
   - muddy noisy texture
-  - gore
   - graphic wounds
   - real brand or company logo
   - watermark
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

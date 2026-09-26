@@ -42,13 +42,13 @@ avoidRules:
   - turning a solid subject into a ghost
   - digital halo or continuous outer glow
   - highlights unrelated to the requested light
-  - unrequested horror or violence
+  - unrequested horror
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP22-122.webp
 attributes:
   negativePrompt: >-
     turning a solid subject into a ghost, digital halo or continuous outer glow, highlights unrelated
-    to the requested light, unrequested horror or violence
+    to the requested light, unrequested horror
   intentionalPolicy:
     schemaVersion: 1
     kind: full_style
@@ -73,7 +73,7 @@ attributes:
         field: rendering_and_quality
       - text: highlights unrelated to the requested light
         field: lighting_and_shadow
-      - text: unrequested horror or violence
+      - text: unrequested horror
         field: global
   sourceMetadata:
     atlas: Codex Studio Atlas TCG v0.1

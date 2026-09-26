@@ -8,7 +8,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Electron Microscope',
     category: '5. Micro Macro',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, medical gore, readable scale bar text, color, far away, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable scale bar text, color, far away, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Scanning electron micrograph: grey, razor-sharp microscopic landscape with deep focus and edge glow.',
@@ -36,7 +36,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Insect Eye',
     category: '5. Micro Macro',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, medical gore, readable scale bar text, human eye, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable scale bar text, human eye, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Insect compound eye macro: a curved dome of hexagonal ommatidia, iridescent and glassy.',
@@ -63,7 +63,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Cellular Life',
     category: '5. Micro Macro',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, medical gore, readable scale bar text, animal, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable scale bar text, animal, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Cellular life: stained microscope-slide cells with membranes, nuclei and organelles in vivid histology color.',
@@ -90,7 +90,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Snowflake',
     category: '5. Micro Macro',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, medical gore, readable scale bar text, melted, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable scale bar text, melted, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Snowflake macro: a single six-sided ice crystal with fractal dendrites on dark wool.',
@@ -118,7 +118,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Circuit Board Macro',
     category: '5. Micro Macro',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, medical gore, readable scale bar text, organic, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable scale bar text, organic, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Circuit macro: chip die and circuit board seen close like a glittering city of traces and components.',
@@ -145,7 +145,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Water Drop Reflection',
     category: '5. Micro Macro',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, medical gore, readable scale bar text, dry, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable scale bar text, dry, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Water drop macro: a clear droplet acting as a lens, holding an upside-down miniature world.',
@@ -172,7 +172,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Fiber/Fabric Macro',
     category: '5. Micro Macro',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, medical gore, readable scale bar text, smooth, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable scale bar text, smooth, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Fiber macro: fabric seen so close that threads become cables and weave becomes architecture.',
@@ -200,7 +200,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Rust/Decay Macro',
     category: '5. Micro Macro',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, medical gore, readable scale bar text, clean, eye, iris, pupil, lens, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable scale bar text, clean, eye, iris, pupil, lens, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Rust macro: corroded metal with flaking paint, blisters and orange oxide landscapes.',
@@ -228,7 +228,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Iris/Eye Macro',
     category: '5. Micro Macro',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, medical gore, readable scale bar text, skin, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable scale bar text, skin, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Iris macro: a human eye so close that the iris becomes a radial landscape of fibers and color.',
@@ -256,7 +256,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Soap Bubble',
     category: '5. Micro Macro',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, medical gore, readable scale bar text, popped, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable scale bar text, popped, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic: 'Soap bubble macro: swirling thin-film interference colors on a floating sphere.',
       subject_treatment:
@@ -283,7 +283,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Feather Macro',
     category: '5. Micro Macro',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, medical gore, readable scale bar text, blurry, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable scale bar text, blurry, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic: 'Feather macro: barbs and barbules in precise rows with iridescent sheen.',
       subject_treatment:
@@ -309,7 +309,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Leaf Veins',
     category: '5. Micro Macro',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, medical gore, readable scale bar text, dead, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable scale bar text, dead, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic: 'Leaf vein macro: backlit leaf showing a glowing network of veins and cells.',
       subject_treatment:
@@ -336,7 +336,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Skin Pores',
     category: '5. Micro Macro',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, medical gore, readable scale bar text, smooth plastic, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable scale bar text, smooth plastic, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic: 'Skin macro: human skin as a terrain of pores, fine lines and tiny hairs.',
       subject_treatment:
@@ -361,7 +361,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Ink in Water',
     category: '5. Micro Macro',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, medical gore, readable scale bar text, still, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable scale bar text, still, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic: 'Ink in water: dye clouds blooming and curling through clear water.',
       subject_treatment:
@@ -388,7 +388,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Fungi/Mold',
     category: '5. Micro Macro',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, medical gore, readable scale bar text, clean, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable scale bar text, clean, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic: 'Mold and fungi macro: fuzzy colonies, hyphae and spore heads in a petri dish.',
       subject_treatment:
@@ -414,7 +414,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Crystal Growth',
     category: '5. Micro Macro',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, medical gore, readable scale bar text, round, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable scale bar text, round, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Crystal growth macro: chemical garden crystals growing into sharp geometric forms.',
@@ -442,7 +442,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Vinyl Record Grooves',
     category: '5. Micro Macro',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, medical gore, readable scale bar text, smooth, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable scale bar text, smooth, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic: 'Vinyl groove macro: record grooves as wavy canyons of sound.',
       subject_treatment:
@@ -470,7 +470,7 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Hook-and-Loop Macro'],
     category: '5. Micro Macro',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, medical gore, readable scale bar text, smooth, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable scale bar text, smooth, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic: 'Hook-and-loop macro: plastic hooks and fiber loops like a strange forest.',
       subject_treatment:
@@ -495,7 +495,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Sponge',
     category: '5. Micro Macro',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, medical gore, readable scale bar text, solid, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable scale bar text, solid, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic: 'Sponge macro: open cells, holes and bubbles like a cave system.',
       subject_treatment:
@@ -519,7 +519,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Moss',
     category: '5. Micro Macro',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, medical gore, readable scale bar text, dry, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable scale bar text, dry, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic: 'Moss macro: a tiny forest of leaves and spore capsules.',
       subject_treatment:
@@ -544,7 +544,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Sandpaper Grit Macro',
     category: '5. Micro Macro',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, medical gore, readable scale bar text, smooth, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable scale bar text, smooth, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic: 'Sandpaper macro: sharp grains like a rocky mountain landscape.',
       subject_treatment:
@@ -569,7 +569,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Cork',
     category: '5. Micro Macro',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, medical gore, readable scale bar text, smooth, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable scale bar text, smooth, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic: 'Cork macro: honeycomb cells of cork bark.',
       subject_treatment:
@@ -596,7 +596,7 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Carbon Fiber Weave Macro'],
     category: '5. Micro Macro',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, medical gore, readable scale bar text, metal, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable scale bar text, metal, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic: 'Carbon fiber weave macro: twill weave of black fibers with glossy resin.',
       subject_treatment:
@@ -622,7 +622,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Dandelion Seed',
     category: '5. Micro Macro',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, medical gore, readable scale bar text, heavy, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable scale bar text, heavy, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic: 'Dandelion seed macro: fine pappus hairs and seeds.',
       subject_treatment:

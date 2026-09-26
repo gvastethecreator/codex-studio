@@ -313,7 +313,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Print & Engraving',
     domain: 'macabre danse macabre print',
     negativePrompt:
-      'gore, readable type or lettering, modern screen printing look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable type or lettering, modern screen printing look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Dance of death woodcut: grinning skeletons leading people of every station into a dance, lively macabre woodcut lines with dark humor.',
@@ -533,7 +533,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Print & Engraving',
     domain: 'layered paper anatomy print',
     negativePrompt:
-      'gore, readable labels, readable type or lettering, modern screen printing look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable labels, readable type or lettering, modern screen printing look, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Lift-flap anatomy sheet: early printed anatomical sheets with paper flaps that lift to reveal organs and skeleton beneath, woodcut figures standing calmly.',

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Scholarly and exact, the body opened for study.
   rendering_and_quality: Accurate layered anatomy with consistent proportion across layers; no gore beyond the dissection.
   key_features: surface, muscle and skeleton layers; madder red muscle; sepia engraving line; sectional insets; blank leader lines
-  creative_brief: "Anatomy reference plate: the subject shown as layered écorché studies, surface, muscle and skeleton, like a hand-colored medical engraving. Carry it through surface, muscle and skeleton layers, madder red muscle, sepia engraving line, sectional insets. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Anatomy reference plate: the subject shown as layered écorché studies, surface, muscle and skeleton, like a hand-colored medical engraving. Carry it through surface, muscle and skeleton layers, madder red muscle, sepia engraving line, sectional insets. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - placeholder gibberish text
   - invented numbers presented as data
@@ -29,7 +29,6 @@ avoidRules:
   - brand logo
   - franchise likeness
   - free painterly composition instead of a sheet
-  - gore
   - loose sketch
   - cartoon
   - simplified
@@ -58,7 +57,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-094.webp
 attributes:
-  negativePrompt: placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, gore, loose sketch, cartoon, simplified, abstract, loose, messy, inaccurate, guesswork, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, illegible labels, decorative clutter, shaded cinematic render, random UI text, text, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: placeholder gibberish text, invented numbers presented as data, readable labels, brand logo, franchise likeness, free painterly composition instead of a sheet, loose sketch, cartoon, simplified, abstract, loose, messy, inaccurate, guesswork, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, illegible labels, decorative clutter, shaded cinematic render, random UI text, text, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

@@ -22,14 +22,14 @@ tags:
   - sensor
 visualDna:
   aesthetic: 'H-alpha solar telescope: the sun in deep red-orange with prominences and filaments.'
-  subject_treatment: "Keep the prompt subject's geometry, pose and setting; replace only its appearance with what this instrument records: shown in H-alpha: red-orange disk, prominences, filaments and granular texture."
+  subject_treatment: 'Keep the prompt subject''s geometry, pose and setting; replace only its appearance with what this instrument records: shown in H-alpha: red-orange disk, prominences, filaments and granular texture.'
   color_and_tone: Red-orange on black, exactly as the instrument maps its signal.
   lighting_and_shadow: Solar glow, because the image shows signal, not ordinary light.
   texture_and_material: Granulation and filaments, as real instrument artifacts rather than decoration.
   camera_and_composition: Sun disk or limb, matching how this instrument actually frames data.
   atmosphere_and_mood: Fiery, vast, cosmic and dramatic, coming from seeing what eyes cannot.
   rendering_and_quality: Believable instrument output with correct signal logic, artifacts and resolution for that sensor.
-  creative_brief: "H-alpha solar telescope: the sun in deep red-orange with prominences and filaments. Carry it through prominences, filaments, red disk. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'H-alpha solar telescope: the sun in deep red-orange with prominences and filaments. Carry it through prominences, filaments, red disk. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: prominences; filaments; red disk
 avoidRules:
   - readable text
@@ -39,7 +39,6 @@ avoidRules:
   - muddy noisy texture
   - readable UI text
   - fake HUD clutter
-  - medical gore
   - watermark
   - text
   - readable labels
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, medical gore, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

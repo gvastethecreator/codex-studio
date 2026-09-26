@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Botanical scenes where every object turns out to be a plant.
   atmosphere_and_mood: Lush and playful, a civilization that grows its tools instead of building them.
   rendering_and_quality: Botanical illustration style with precise, believable plant anatomy.
-  creative_brief: "Botanipunk: technology grown from plants, with gourd lanterns, vine cables, leaf solar sails, carnivorous-plant security and seed-pod vehicles. Carry it through grown tools, vine cables, gourd lanterns, seed-pod vehicles. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Botanipunk: technology grown from plants, with gourd lanterns, vine cables, leaf solar sails, carnivorous-plant security and seed-pod vehicles. Carry it through grown tools, vine cables, gourd lanterns, seed-pod vehicles. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: grown tools; vine cables; gourd lanterns; seed-pod vehicles
 avoidRules:
   - readable text
@@ -37,7 +37,6 @@ avoidRules:
   - real artist signature
   - copying a specific famous artwork
   - muddy noisy texture
-  - gore
   - graphic wounds
   - real brand or company logo
   - watermark
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

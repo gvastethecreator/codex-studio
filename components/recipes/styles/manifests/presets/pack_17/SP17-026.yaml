@@ -23,7 +23,7 @@ visualDna:
   lighting_and_shadow: Display-plinth lighting and battlefield rim light make every silhouette readable at thumbnail scale.
   texture_and_material: Painted miniature brush texture, edge wear, drybrushed metal, cracked stone bases, parchment cloth, and matte armor.
   camera_and_composition: Heroic three-quarter miniature showcase, strong base plane, compact warfront depth, and clean object separation.
-  atmosphere_and_mood: 'Grandiose, martial, occult, heavy, and collectible; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline, at whatever intensity the requested scene sets.'
+  atmosphere_and_mood: Grandiose, martial, occult, heavy, and collectible; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline, at whatever intensity the requested scene sets.
   rendering_and_quality: Fantasy miniature illustration with crisp edge highlights, controlled darks, defined linework, and denoised brush texture.
   creative_brief: 'Gothic Miniature Warfront: Grim gothic tabletop warfront with cathedral armor; painted miniature contrast; skull shaped reliquaries; oversized siege silhouettes; chunky tabletop readability.'
   key_features: Gothic Miniature Warfront; Grim gothic tabletop warfront with cathedral armor; painted miniature contrast; skull shaped reliquaries; oversized siege silhouettes; chunky tabletop readability
@@ -32,7 +32,6 @@ avoidRules:
   - real world insignia
   - unreadable kitbash clutter
   - muddy black artifacts
-  - explicit gore
   - watermark
   - text
   - army lineup lock
@@ -44,7 +43,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-026.webp
 attributes:
-  negativePrompt: copied tabletop franchise designs, real world insignia, unreadable kitbash clutter, muddy black artifacts, explicit gore, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
+  negativePrompt: copied tabletop franchise designs, real world insignia, unreadable kitbash clutter, muddy black artifacts, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

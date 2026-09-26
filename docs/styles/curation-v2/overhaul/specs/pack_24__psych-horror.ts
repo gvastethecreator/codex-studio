@@ -5,7 +5,7 @@ import { dna } from './_strict';
 // Psychological horror art directions: the four referenced directions keep their DNA and get
 // original briefs that do not restage their games; sixteen new directions with original names
 // build dread from ordinary places, materials and light instead of monsters or gore.
-const HORROR_AVOID = ['gore', 'graphic wounds', 'jump-scare monster close-up', 'franchise creature design'];
+const HORROR_AVOID = [ 'graphic wounds', 'jump-scare monster close-up', 'franchise creature design'];
 const dir = (
   name: string,
   domain: string,
@@ -165,7 +165,7 @@ const spec: Spec = {
           'Careful academic portrait painting with smooth finish and subtle distortions.',
         key_features: 'formal posed portraits; subtly wrong faces; studio backdrop; stiff symmetry',
       },
-      ['gore', 'monster faces', 'cartoon exaggeration'],
+      [ 'monster faces', 'cartoon exaggeration'],
       [
         'A family of five poses in their Sunday best, and every member has exactly the same small smile, including the dog. No readable text or logo.',
         'A married couple sits for a portrait, the husband\'s eyes painted slightly too far apart as if the painter hesitated. No readable text or logo.',
@@ -281,7 +281,7 @@ const spec: Spec = {
           'Rich detailed painterly realism with precise reflections in the glass.',
         key_features: 'mounted animals; glass domes; watching glass eyes; dusty velvet parlor',
       },
-      ['gore', 'living animals moving', 'bright colors'],
+      [ 'living animals moving', 'bright colors'],
       [
         'A collector serves tea in a parlor where every stuffed fox, owl and deer has turned its head a few degrees toward the guest. No readable text or logo.',
         'A single empty glass dome sits among dozens of mounted birds, a small brass plaque beneath it blank and waiting. No readable text or logo.',
@@ -426,7 +426,7 @@ const spec: Spec = {
           'Soft grainy painterly darkness with subtle distortion and blur at the edges.',
         key_features: 'pillow-level view; heavy dark corners; shadowed presence; warped room',
       },
-      ['gore', 'monster close-up', 'bright light'],
+      [ 'monster close-up', 'bright light'],
       [
         'From the pillow a sleeper sees the bedroom door slowly opening onto a hallway that is far longer than the house. No readable text or logo.',
         'A dark shape sits at the foot of the bed, perfectly still, the moonlight passing through it onto the blanket. No readable text or logo.',
@@ -484,7 +484,7 @@ const spec: Spec = {
           'Soft hazy painterly realism with gentle falling particles.',
         key_features: 'ash falling like snow; muted orange sky; silent suburb; faded houses',
       },
-      ['active flames', 'gore', 'blue clear sky'],
+      ['active flames',  'blue clear sky'],
       [
         'A man waters his lawn as grey ash falls like snow over the whole silent street, the sprinkler making clean circles in it. No readable text or logo.',
         'A child\'s bicycle lies in a driveway slowly disappearing under drifting ash beneath a dull orange sky. No readable text or logo.',

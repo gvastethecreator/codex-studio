@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Webs spanning huge gaps with tiny figures crossing them.
   atmosphere_and_mood: Delicate and daring, strength hidden in threads finer than hair.
   rendering_and_quality: Luminous fine-line illustration with glinting silk and dew.
-  creative_brief: "Silkspinnerpunk: a civilization woven from spider silk, with silk bridges, glistening dew-lit webs, silk sails and spinner guilds farming giant spiders. Carry it through silk bridges, dew-lit webs, spinner guilds, glinting threads. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Silkspinnerpunk: a civilization woven from spider silk, with silk bridges, glistening dew-lit webs, silk sails and spinner guilds farming giant spiders. Carry it through silk bridges, dew-lit webs, spinner guilds, glinting threads. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: silk bridges; dew-lit webs; spinner guilds; glinting threads
 avoidRules:
   - readable text
@@ -37,7 +37,6 @@ avoidRules:
   - real artist signature
   - copying a specific famous artwork
   - muddy noisy texture
-  - gore
   - graphic wounds
   - real brand or company logo
   - watermark
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

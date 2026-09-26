@@ -23,7 +23,7 @@ visualDna:
   lighting_and_shadow: Bell-tower light, candle rows, and smoke beams keep stone planes readable without dark artifact buildup.
   texture_and_material: Chipped limestone, vellum-like cloth, bone inlay, hammered metal, wax, dust, and clean ink seams.
   camera_and_composition: Strong vertical rhythm, solemn central emphasis, smoke-beam separation, clean silhouette hierarchy, and crisp stone-like planes.
-  atmosphere_and_mood: 'Besieged, scholarly, sacred, tense, and stoic; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline, at whatever intensity the requested scene sets.'
+  atmosphere_and_mood: Besieged, scholarly, sacred, tense, and stoic; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline, at whatever intensity the requested scene sets.
   rendering_and_quality: Detailed medieval fantasy illustration card with denoised darks, defined linework, crisp stone detail, and non-readable decorative marks.
   creative_brief: 'Bone Script Monastery Siege: Siege monastery fantasy with bone script ornament; barricaded cloisters; armored scribes; ritual defense engines; carved non readable markings.'
   key_features: Bone Script Monastery Siege; Siege monastery fantasy with bone script ornament; barricaded cloisters; armored scribes; ritual defense engines; carved non readable markings
@@ -32,7 +32,6 @@ avoidRules:
   - book stack default
   - library room cliche
   - muddy stone noise
-  - explicit gore
   - watermark
   - text
   - army lineup lock
@@ -44,7 +43,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-031.webp
 attributes:
-  negativePrompt: readable script, book stack default, library room cliche, muddy stone noise, explicit gore, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
+  negativePrompt: readable script, book stack default, library room cliche, muddy stone noise, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

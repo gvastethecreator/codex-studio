@@ -69,7 +69,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Dungeon Zine & Risograph Prints',
     domain: 'dungeon zine',
     negativePrompt:
-      'full color realism, smooth airbrush, glossy 3d render, soft watercolor, explicit gore, watermark, text, readable zine typography, generic dungeon corridor, muddy photocopy noise, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'full color realism, smooth airbrush, glossy 3d render, soft watercolor, watermark, text, readable zine typography, generic dungeon corridor, muddy photocopy noise, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Two- or three-color risograph necromancy with medieval symbols, heavy ink, and fluorescent occult energy.',
@@ -99,7 +99,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Dungeon Zine & Risograph Prints',
     domain: 'dungeon zine',
     negativePrompt:
-      'realistic anatomy, medical gore, cute mascot, smooth fantasy painting, clean vector, watermark, text, readable zine typography, generic dungeon corridor, muddy photocopy noise, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'realistic anatomy, cute mascot, smooth fantasy painting, clean vector, watermark, text, readable zine typography, generic dungeon corridor, muddy photocopy noise, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Blacklight fantasy monster manual where creature anatomy becomes bold ink, neon organs, and weird page-icon energy.',
@@ -161,7 +161,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Dungeon Zine & Risograph Prints',
     domain: 'dungeon zine',
     negativePrompt:
-      'clean ebook cover, glossy digital painting, modern typography, photorealism, explicit gore, watermark, text, readable zine typography, generic dungeon corridor, muddy photocopy noise, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'clean ebook cover, glossy digital painting, modern typography, photorealism, watermark, text, readable zine typography, generic dungeon corridor, muddy photocopy noise, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Old sword-and-sorcery paperback art degraded through photocopy, tape scan, harsh ink, and lurid flat color.',

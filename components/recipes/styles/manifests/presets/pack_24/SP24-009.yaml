@@ -29,12 +29,11 @@ visualDna:
   camera_and_composition: Eye level near the waterline, room and reflection mirrored in the frame.
   atmosphere_and_mood: Silent, mournful and suffocating, a memory drowning slowly.
   rendering_and_quality: Painterly realism with precise reflections and soft underwater blur.
-  creative_brief: "Flooded memory rooms: familiar interiors half filled with still dark water, furniture drowning quietly while mirrors of the room float on the surface. Carry it through half-flooded interiors, mirrored waterline, floating objects, drowned lamplight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Flooded memory rooms: familiar interiors half filled with still dark water, furniture drowning quietly while mirrors of the room float on the surface. Carry it through half-flooded interiors, mirrored waterline, floating objects, drowned lamplight. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: half-flooded interiors; mirrored waterline; floating objects; drowned lamplight
 avoidRules:
   - splashing action
   - bright tropical water
-  - gore
   - graphic wounds
   - jump-scare monster close-up
   - franchise creature design
@@ -52,7 +51,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: splashing action, bright tropical water, gore, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: splashing action, bright tropical water, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

@@ -20,7 +20,7 @@ const study = (
   domain,
   tags: [tag, 'feudal-art-direction', 'portable-style-study'],
   dna: dna(fields),
-  avoid: [...avoid, 'gore', 'interface or HUD', 'existing game or film characters, logos or clan crests', ...STYLE_AVOID],
+  avoid: [...avoid,  'interface or HUD', 'existing game or film characters, logos or clan crests', ...STYLE_AVOID],
   briefs,
 });
 

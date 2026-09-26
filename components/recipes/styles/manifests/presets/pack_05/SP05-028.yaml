@@ -25,7 +25,7 @@ visualDna:
   atmosphere_and_mood: Keep the requested mood with free wandering grit.
   rendering_and_quality: Lo-fi grainy roadtrip frame with sunny outlaw energy.
   key_features: Sayo Yamamoto lo-fi; sun-bleached towns; roadtrip freedom; lanky designs
-  creative_brief: "Manglobe Michiko and Hatchin look (2008) by Sayo Yamamoto: sun-bleached South American roadtrips, lanky designs, lo-fi grainy textures, dusty towns and outlaw freedom. Carry it through Sayo Yamamoto lo-fi, sun-bleached towns, roadtrip freedom, lanky designs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Manglobe Michiko and Hatchin look (2008) by Sayo Yamamoto: sun-bleached South American roadtrips, lanky designs, lo-fi grainy textures, dusty towns and outlaw freedom. Carry it through Sayo Yamamoto lo-fi, sun-bleached towns, roadtrip freedom, lanky designs. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - franchise character likeness
   - copied franchise costume or emblem
@@ -48,7 +48,6 @@ avoidRules:
   - samurai-copy outfit
   - named-series roadtrip trio
   - hip-hop stereotype
-  - dead bodies
   - school-stair fight
   - photoreal cosplay
   - western superhero comic
@@ -74,7 +73,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-028.webp
 attributes:
-  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, katana-first pose, samurai-copy outfit, named-series roadtrip trio, hip-hop stereotype, dead bodies, school-stair fight, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, katana-first pose, samurai-copy outfit, named-series roadtrip trio, hip-hop stereotype, school-stair fight, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

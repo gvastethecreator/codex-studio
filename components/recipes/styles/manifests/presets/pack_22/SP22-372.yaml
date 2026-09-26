@@ -29,10 +29,9 @@ visualDna:
   camera_and_composition: Close portrait with a thick colored border around the image.
   atmosphere_and_mood: Keep the requested mood with silly gross-out fun.
   rendering_and_quality: Vivid painted card art without gore, crisp and funny.
-  creative_brief: "Retro gum-card monsters: wacky painted monster cards like old bubblegum trading cards, garish colors, gross-out humor without gore and bold painted borders. Carry it through wacky monster portrait, garish colors, bold border, gross-out humor. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Retro gum-card monsters: wacky painted monster cards like old bubblegum trading cards, garish colors, gross-out humor without gore and bold painted borders. Carry it through wacky monster portrait, garish colors, bold border, gross-out humor. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: wacky monster portrait; garish colors; bold border; gross-out humor
 avoidRules:
-  - gore
   - readable card text
   - readable lettering or numbers
   - real brand
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: gore, readable card text, readable lettering or numbers, real brand, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable card text, readable lettering or numbers, real brand, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

@@ -29,10 +29,9 @@ visualDna:
   camera_and_composition: Deep vertical descent with small figures, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with vertiginous sacred depth.
   rendering_and_quality: Painterly translucency and scale, kept consistent across the whole image.
-  creative_brief: "Salt-mine abyss direction: painted art direction of vast white salt mines descending into the dark, carved salt chapels, crystal walls and miners with lamps. Carry it through salt mine, carved crystal chapel, lamps, abyss. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Salt-mine abyss direction: painted art direction of vast white salt mines descending into the dark, carved salt chapels, crystal walls and miners with lamps. Carry it through salt mine, carved crystal chapel, lamps, abyss. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: salt mine; carved crystal chapel; lamps; abyss
 avoidRules:
-  - gore
   - interface or HUD
   - existing game characters, logos or locations
   - readable text
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

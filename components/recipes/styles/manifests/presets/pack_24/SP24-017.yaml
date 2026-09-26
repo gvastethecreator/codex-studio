@@ -29,12 +29,11 @@ visualDna:
   camera_and_composition: Repeating reflections receding into infinity, the real figure near center.
   atmosphere_and_mood: Disorienting, lonely and uncanny, not all reflections obey.
   rendering_and_quality: Precise reflective painting with subtle inconsistencies among copies.
-  creative_brief: "Mirror-maze identity: endless reflective corridors where a figure multiplies into countless copies, a few of them moving on their own. Carry it through infinite reflections, foxed mirror glass, disobedient copies, carnival bulbs. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Mirror-maze identity: endless reflective corridors where a figure multiplies into countless copies, a few of them moving on their own. Carry it through infinite reflections, foxed mirror glass, disobedient copies, carnival bulbs. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: infinite reflections; foxed mirror glass; disobedient copies; carnival bulbs
 avoidRules:
   - single clean mirror
   - bright daylight
-  - gore
   - graphic wounds
   - jump-scare monster close-up
   - franchise creature design
@@ -52,7 +51,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: single clean mirror, bright daylight, gore, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: single clean mirror, bright daylight, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

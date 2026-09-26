@@ -23,7 +23,7 @@ visualDna:
   lighting_and_shadow: Moonlight and candles make clean cutout silhouettes against dark woods without noisy black texture.
   texture_and_material: Bark, bone, wool, tarnished armor, wax, moss, thorn, and smooth denoised shadow planes.
   camera_and_composition: Tall icon-like framing with vertical pressure, thorn-arc rhythm, pale fog separation, and crisp silhouette against clean shadow.
-  atmosphere_and_mood: 'Ominous, folkloric, ritualistic, secretive, and elegant; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline, at whatever intensity the requested scene sets.'
+  atmosphere_and_mood: Ominous, folkloric, ritualistic, secretive, and elegant; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline, at whatever intensity the requested scene sets.
   rendering_and_quality: Clean dark folk-fantasy illustration with controlled texture, no mud, and readable card contrast.
   creative_brief: 'Hexenwood Witch Knight Covenant: Folk horror medieval covenant with witch knights; thorn chapels; bone charms; black woods; candlelit oath armor.'
   key_features: Hexenwood Witch Knight Covenant; Folk horror medieval covenant with witch knights; thorn chapels; bone charms; black woods; candlelit oath armor
@@ -31,7 +31,6 @@ avoidRules:
   - generic witch hat cliche
   - cartoon Halloween look
   - unreadable forest noise
-  - explicit gore
   - watermark
   - text
   - army lineup lock
@@ -43,7 +42,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-030.webp
 attributes:
-  negativePrompt: generic witch hat cliche, cartoon Halloween look, unreadable forest noise, explicit gore, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
+  negativePrompt: generic witch hat cliche, cartoon Halloween look, unreadable forest noise, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

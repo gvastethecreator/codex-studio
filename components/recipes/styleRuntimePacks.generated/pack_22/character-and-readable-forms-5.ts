@@ -341,7 +341,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Character & Readable Forms',
     domain: 'believable creature fusion design',
     negativePrompt:
-      'random collage parts, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'random collage parts, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Hybrid creature anatomy: creatures fused from two or more animals with believable joints, muscles and skin transitions, painted like convincing concept art.',
@@ -539,7 +539,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Character & Readable Forms',
     domain: 'gritty realistic character rendering',
     negativePrompt:
-      'clean shiny costume, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'clean shiny costume, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Weathered veteran rendering: realistic characters painted with every scar, wrinkle, stain and patch visible, their history written into skin and gear.',

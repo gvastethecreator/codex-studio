@@ -29,11 +29,10 @@ visualDna:
   camera_and_composition: Strong diagonal with raised tools or weapons, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with defiant collective energy.
   rendering_and_quality: Crisp graphic poster without slogans, kept consistent across the whole image.
-  creative_brief: "Stencil poster rebellion direction: peasant revolts depicted as bold stencil propaganda posters, flat two or three colors, raised pitchforks and heroic diagonals. Carry it through stencil poster, flat colors, heroic diagonal, raised pitchforks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Stencil poster rebellion direction: peasant revolts depicted as bold stencil propaganda posters, flat two or three colors, raised pitchforks and heroic diagonals. Carry it through stencil poster, flat colors, heroic diagonal, raised pitchforks. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: stencil poster; flat colors; heroic diagonal; raised pitchforks
 avoidRules:
   - slogans or text
-  - gore
   - interface or HUD
   - existing game or film characters, logos or clan crests
   - readable text
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: slogans or text, gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: slogans or text, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

@@ -18,7 +18,7 @@ const capture = (
   domain,
   tags: [tag, 'game-capture', 'portable-style-study'],
   dna: dna(fields),
-  avoid: [...avoid, 'existing game characters, logos or levels', 'readable interface text', 'gore', ...STYLE_AVOID],
+  avoid: [...avoid, 'existing game characters, logos or levels', 'readable interface text',  ...STYLE_AVOID],
   briefs,
 });
 
@@ -39,8 +39,8 @@ const spec: Spec = {
       'Down a first-person maintenance corridor lit by emergency red, a vent cover lies on the floor, and the grille bolts have been neatly placed beside it. No readable text or logo.',
     ] },
     'SP12-011': { briefs: [
-      'Wading through a flooded art-deco pressure hall in first person, an original diver raises a glowing hand as a hulking brass-suited guardian stomps through the leaking bulkhead. No readable text or logo.',
-      'In an undersea deco hall, a proud city founder\'s statue stands in grand pose while a small octopus has settled comfortably into its hat. No readable text or logo.',
+      "Wading through a flooded pressure hall of an abyssal research station in first person, an original diver raises a flashlight as a hulking machine wearing an empty human diving suit stomps through the leaking bulkhead. No readable text or logo.",
+      "In an undersea research station lobby, a proud founder bronze bust stands on its pedestal while a small octopus has settled comfortably on its head. No readable text or logo.",
       'Through a round brass window in a sunken deco corridor, a vast silhouette drifts past, larger than the building. No readable text or logo.',
     ] },
     'SP12-018': { briefs: [

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Top-down map-like views of networks and close macro views of pulsing fans.
   atmosphere_and_mood: Uncanny and clever, a brainless organism that plans better than any engineer.
   rendering_and_quality: Glossy organic illustration with intricate branching network detail.
-  creative_brief: "Slimepunk: slime molds as living computers and urban planners, with yellow veined networks spreading across maps, streets and machines. Carry it through yellow slime networks, map-like branching, wet sheen, pulsing fans. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Slimepunk: slime molds as living computers and urban planners, with yellow veined networks spreading across maps, streets and machines. Carry it through yellow slime networks, map-like branching, wet sheen, pulsing fans. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: yellow slime networks; map-like branching; wet sheen; pulsing fans
 avoidRules:
   - readable text
@@ -37,7 +37,6 @@ avoidRules:
   - real artist signature
   - copying a specific famous artwork
   - muddy noisy texture
-  - gore
   - graphic wounds
   - real brand or company logo
   - watermark
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

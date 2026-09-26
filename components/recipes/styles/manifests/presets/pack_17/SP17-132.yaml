@@ -29,11 +29,10 @@ visualDna:
   camera_and_composition: Centered action readable at small size, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with grim tactical punch.
   rendering_and_quality: Bold readable illustration with no card text, kept consistent across the whole image.
-  creative_brief: "Dark deckbuilder card art: small bold painted card illustrations for a grim card-battle game, one clear action or creature per card with a heavy dark vignette. Carry it through one action per card, heavy vignette, bold shapes, focal color. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Dark deckbuilder card art: small bold painted card illustrations for a grim card-battle game, one clear action or creature per card with a heavy dark vignette. Carry it through one action per card, heavy vignette, bold shapes, focal color. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: one action per card; heavy vignette; bold shapes; focal color
 avoidRules:
   - card text or numbers
-  - gore
   - interface text, menus or health bars
   - existing game characters or logos
   - readable text
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: card text or numbers, gore, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: card text or numbers, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

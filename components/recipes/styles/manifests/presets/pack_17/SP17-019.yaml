@@ -20,7 +20,7 @@ visualDna:
   lighting_and_shadow: Cool rune glow from shield and saddle plus soft daylight on armor plates; large simple shadow shapes keep tech readable.
   texture_and_material: Ceramic armor, brushed metal joints, carved stone saddle, illuminated glass runes, worn oath cloth, and matte banner fabric.
   camera_and_composition: Three-quarter heroic scale with clean negative planes, distant vertical accents, hovering lightness, and balanced future-feudal silhouette.
-  atmosphere_and_mood: 'Oath bound, severe, ceremonial, and futuristic without becoming sleek cyberpunk; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness, at whatever intensity the requested scene sets.'
+  atmosphere_and_mood: Oath bound, severe, ceremonial, and futuristic without becoming sleek cyberpunk; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness, at whatever intensity the requested scene sets.
   rendering_and_quality: Futuristic medieval digital illustration with crisp architecture, readable tech motifs, defined lines, and medieval silhouette logic.
   creative_brief: 'Futuristic Medieval Citadel: rune light; brutalist metal; sacred technology; Transform any subject with future feudal order; ceramic armor smoothness.'
   key_features: Futuristic Medieval Citadel; rune light; brutalist metal; sacred technology; Transform any subject with future feudal order; ceramic armor smoothness
@@ -29,7 +29,6 @@ avoidRules:
   - spaceship cockpit
   - glossy white sci fi
   - modern streetwear
-  - explicit gore
   - watermark
   - text
   - generic cyberpunk city
@@ -41,7 +40,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-019.webp
 attributes:
-  negativePrompt: neon city cyberpunk, spaceship cockpit, glossy white sci fi, modern streetwear, explicit gore, watermark, text, generic cyberpunk city, chrome overload, readable rune text, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
+  negativePrompt: neon city cyberpunk, spaceship cockpit, glossy white sci fi, modern streetwear, watermark, text, generic cyberpunk city, chrome overload, readable rune text, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

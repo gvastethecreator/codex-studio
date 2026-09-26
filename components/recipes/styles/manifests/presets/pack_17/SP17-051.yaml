@@ -20,7 +20,7 @@ visualDna:
   lighting_and_shadow: Soft nacre rim light over deep velvet shadow, with small crimson or silver focus accents.
   texture_and_material: Polished bone, nacre, velvet, old ribbon, ceramic glaze, candle wax, and smooth ink.
   camera_and_composition: Mask-like symmetry broken by one off-center threat cue, elegant negative space, and courtly distance applied to any subject type.
-  atmosphere_and_mood: 'Seductive, predatory, aristocratic, calm, and uncanny; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness, at whatever intensity the requested scene sets.'
+  atmosphere_and_mood: Seductive, predatory, aristocratic, calm, and uncanny; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness, at whatever intensity the requested scene sets.
   rendering_and_quality: Refined gothic editorial illustration with smooth values, crisp silhouettes, and restrained ornament.
   creative_brief: 'Opal Bone Masquerade: Opalescent bone court fantasy with masked elegance; nacre shimmer; black velvet depth; predatory etiquette; mask like contour discipline.'
   key_features: Opal Bone Masquerade; Opalescent bone court fantasy with masked elegance; nacre shimmer; black velvet depth; predatory etiquette; mask like contour discipline
@@ -30,7 +30,6 @@ avoidRules:
   - carnival clown
   - readable crest
   - explicit nudity
-  - explicit gore
   - watermark
   - text
   - generic royal portrait
@@ -42,7 +41,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-051.webp
 attributes:
-  negativePrompt: ballroom crowd, generic mask portrait, carnival clown, readable crest, explicit nudity, explicit gore, watermark, text, generic royal portrait, romance novel cover, prompt literal medieval card, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
+  negativePrompt: ballroom crowd, generic mask portrait, carnival clown, readable crest, explicit nudity, watermark, text, generic royal portrait, romance novel cover, prompt literal medieval card, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

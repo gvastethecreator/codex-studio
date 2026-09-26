@@ -29,10 +29,9 @@ visualDna:
   camera_and_composition: Crowded interiors with animals filling shelves and corners around the subject.
   atmosphere_and_mood: Silent, watchful and suffocating, a room holding its breath.
   rendering_and_quality: Rich detailed painterly realism with precise reflections in the glass.
-  creative_brief: "Taxidermy parlor stillness: cluttered old parlors crowded with mounted animals under glass domes, dozens of glass eyes watching in perfect silence. Carry it through mounted animals, glass domes, watching glass eyes, dusty velvet parlor. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Taxidermy parlor stillness: cluttered old parlors crowded with mounted animals under glass domes, dozens of glass eyes watching in perfect silence. Carry it through mounted animals, glass domes, watching glass eyes, dusty velvet parlor. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: mounted animals; glass domes; watching glass eyes; dusty velvet parlor
 avoidRules:
-  - gore
   - living animals moving
   - bright colors
   - graphic wounds
@@ -52,7 +51,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: gore, living animals moving, bright colors, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: living animals moving, bright colors, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

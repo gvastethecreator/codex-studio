@@ -21,9 +21,8 @@ visualDna:
   atmosphere_and_mood: Bright, bold and exploratory, a big shape a toddler can point at.
   rendering_and_quality: Handmade collage with real paper textures; no outlines and no digital gradients.
   key_features: hand-painted tissue papers; scissor-cut shapes; mottled brush texture inside shapes; white ground; overlapping layers
-  creative_brief: "Painted tissue collage: sheets of paper first painted with brushy textures, then cut and torn into shapes and layered into bold animals and landscapes. Carry it through hand-painted tissue papers, scissor-cut shapes, mottled brush texture inside shapes, white ground, overlapping layers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Painted tissue collage: sheets of paper first painted with brushy textures, then cut and torn into shapes and layered into bold animals and landscapes. Carry it through hand-painted tissue papers, scissor-cut shapes, mottled brush texture inside shapes, white ground, overlapping layers. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
-  - frightening gore
   - known picture-book characters
   - franchise mascot likeness
   - enlarged head
@@ -52,7 +51,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-018.webp
 attributes:
-  negativePrompt: frightening gore, known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, black outlines, drawn, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, black outlines, drawn, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

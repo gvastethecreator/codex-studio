@@ -20,7 +20,7 @@ const study = (
   domain,
   tags: [tag, 'gothic-art-direction', 'portable-style-study'],
   dna: dna(fields),
-  avoid: [...avoid, 'gore', 'interface or HUD', 'existing game characters, logos or locations', ...STYLE_AVOID],
+  avoid: [...avoid,  'interface or HUD', 'existing game characters, logos or locations', ...STYLE_AVOID],
   briefs,
 });
 

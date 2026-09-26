@@ -29,10 +29,9 @@ visualDna:
   camera_and_composition: Low pillow-level view with the ceiling and doorway looming, slightly distorted perspective.
   atmosphere_and_mood: Heavy, helpless and suffocating, awake but unable to move.
   rendering_and_quality: Soft grainy painterly darkness with subtle distortion and blur at the edges.
-  creative_brief: "Sleep-paralysis bedside: a dim bedroom seen from the pillow at night, the familiar room stretched and heavy while a shadowed presence waits at the edge of vision. Carry it through pillow-level view, heavy dark corners, shadowed presence, warped room. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Sleep-paralysis bedside: a dim bedroom seen from the pillow at night, the familiar room stretched and heavy while a shadowed presence waits at the edge of vision. Carry it through pillow-level view, heavy dark corners, shadowed presence, warped room. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: pillow-level view; heavy dark corners; shadowed presence; warped room
 avoidRules:
-  - gore
   - monster close-up
   - bright light
   - graphic wounds
@@ -52,7 +51,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: gore, monster close-up, bright light, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: monster close-up, bright light, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

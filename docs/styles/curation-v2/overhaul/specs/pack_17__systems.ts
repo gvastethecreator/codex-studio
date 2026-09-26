@@ -19,7 +19,7 @@ const study = (
   domain,
   tags: [tag, 'grimdark-game', 'portable-style-study'],
   dna: dna(fields),
-  avoid: [...avoid, 'gore', 'interface text, menus or health bars', 'existing game characters or logos', ...STYLE_AVOID],
+  avoid: [...avoid,  'interface text, menus or health bars', 'existing game characters or logos', ...STYLE_AVOID],
   briefs,
 });
 
@@ -101,7 +101,7 @@ const spec: Spec = {
       atmosphere_and_mood: 'Keep the requested mood with bleak restart melancholy.',
       rendering_and_quality: "Clear readable scene without gore or text, kept consistent across the whole image.",
       key_features: 'fallen hero gear; fading light; lingering monster; dungeon room',
-    }, ['gore', 'game over text'], [
+    }, [ 'game over text'], [
       'Lying scattered on a procedural dungeon floor, a fallen hero\'s helmet, sword and fading torch are guarded by the enormous slime that won, now wearing the helmet itself. No readable text or logo.',
       'Right after a hero falls, a tiny goblin who dealt the final blow looks at the camera in total disbelief. No readable text or logo.',
       'In a quiet dungeon room, a fallen adventurer\'s lantern is still glowing, and a new adventurer who looks exactly like him is walking in. No readable text or logo.',

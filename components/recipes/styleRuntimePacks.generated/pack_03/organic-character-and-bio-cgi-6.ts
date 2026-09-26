@@ -36,7 +36,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Medical Illustration 3D',
     category: '6. Organic Character And Bio CGI',
     negativePrompt:
-      'forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, labels, leader lines, wounds, gross, blood, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, melted anatomy, fake plastic skin, bad topology, rigging-breaking pose, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, labels, leader lines, gross, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, melted anatomy, fake plastic skin, bad topology, rigging-breaking pose, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         "Medical 3D illustration: the subject's body made partly translucent so organs, vessels, bones and muscles show in layered, color-coded depth.",
@@ -281,7 +281,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Organic Character And Bio CGI',
     domain: 'flayed anatomical sculpture',
     negativePrompt:
-      'forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, blood, gore, open wounds, exposed organs, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, open wounds, exposed organs, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Écorché muscle study: the subject shown as a flayed anatomical sculpture, each muscle a distinct striated form wrapping the bone like a classical art-school figure.',
@@ -317,7 +317,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Organic Character And Bio CGI',
     domain: 'natural-history skeleton mount',
     negativePrompt:
-      'forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, flesh, gore, cartoon skeleton, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, flesh, cartoon skeleton, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Natural-history skeleton mount: the subject reduced to its articulated bones, wired together in a lifelike pose on slender iron rods like a museum display.',

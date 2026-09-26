@@ -23,7 +23,7 @@ visualDna:
   lighting_and_shadow: Torches create simple halos and long silhouettes while keeping fog smooth and shadow edges readable.
   texture_and_material: Wet timber, rough rope, muddy ground, smoke, ash, hand-cut charms, and damp linen shapes.
   camera_and_composition: Circular accusation pressure, low fog bands, off-center moral tension, claustrophobic medieval spacing, and witness-like silhouettes only as optional depth shapes.
-  atmosphere_and_mood: 'Suspicious, cold, communal, and supernatural; nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony, at whatever intensity the requested scene sets.'
+  atmosphere_and_mood: Suspicious, cold, communal, and supernatural; nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony, at whatever intensity the requested scene sets.
   rendering_and_quality: Historical fantasy illustration with smooth atmospheric fog, tactile props, defined lines, and clean low light.
   creative_brief: 'Fogbound Witch Trial: Fogbound medieval accusation folklore with rough timber posts; low fog; torch halos; rope knots; occult uncertainty.'
   key_features: Fogbound Witch Trial; Fogbound medieval accusation folklore with rough timber posts; low fog; torch halos; rope knots; occult uncertainty
@@ -39,7 +39,6 @@ avoidRules:
   - near plane observers
   - robed witnesses
   - gallows scene
-  - explicit violence
   - watermark
   - text
   - vampire portrait default
@@ -51,7 +50,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-011.webp
 attributes:
-  negativePrompt: modern courtroom, clean costume pageant, bright magic effects, cartoon witch, central inquisitor, executioner figure, accused figure, visible crowd, near plane observers, robed witnesses, gallows scene, explicit violence, watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
+  negativePrompt: modern courtroom, clean costume pageant, bright magic effects, cartoon witch, central inquisitor, executioner figure, accused figure, visible crowd, near plane observers, robed witnesses, gallows scene, watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

@@ -369,7 +369,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Giallo Horror',
     category: '1. Film Genres',
     negativePrompt:
-      'watermark, readable fake text, logo clutter, franchise likeness, recognizable film character, real actor likeness, celebrity likeness, adding genre costumes or plot the prompt did not ask for, natural lighting, gore, official card scene, fixed thumbnail subject, prompt replaced by sample image, generic stock footage, uncontrolled noise, mandatory plot scene, franchise copy, fake caption text, generic movie poster, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'watermark, readable fake text, logo clutter, franchise likeness, recognizable film character, real actor likeness, celebrity likeness, adding genre costumes or plot the prompt did not ask for, natural lighting, official card scene, fixed thumbnail subject, prompt replaced by sample image, generic stock footage, uncontrolled noise, mandatory plot scene, franchise copy, fake caption text, generic movie poster, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Giallo: 1970s Italian thriller cinema of baroque interiors flooded with saturated colored gels and tense, stylized close-ups.',

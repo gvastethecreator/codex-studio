@@ -19,7 +19,7 @@ const capture = (
   domain,
   tags: [tag, 'game-capture', 'portable-style-study'],
   dna: dna(fields),
-  avoid: [...avoid, 'existing game characters, logos or levels', 'readable interface text', 'gore', ...STYLE_AVOID],
+  avoid: [...avoid, 'existing game characters, logos or levels', 'readable interface text',  ...STYLE_AVOID],
   briefs,
 });
 
@@ -47,7 +47,7 @@ const spec: Spec = {
     'SP12-027': { briefs: [
       'Descending a glowing basalt cavern on ropes in first person, an original crew of dwarven miners drills into a crystal vein as a giant burrowing bug cracks the wall beside them. No readable text or logo.',
       'In a co-op cave extraction, the whole team has lost the mine cart while one miner is very proudly holding a single tiny gem. No readable text or logo.',
-      'Deep in a dark mineral cave, a mining helmet lamp lies on the ground, still switched on and pointing at an unexplored tunnel. No readable text or logo.',
+      "At the bottom of a dark mineral cave, a mining helmet lamp lies on the ground, still switched on and pointing at an unexplored tunnel where something clicks. No readable text or logo.",
     ] },
     'SP12-029': { briefs: [
       'Gliding over an alien coral reef with a hand scanner, an original diver watches a leviathan the length of a ship pass silently beneath her small submarine. No readable text or logo.',

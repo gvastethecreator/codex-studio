@@ -4,7 +4,7 @@ import { dna } from './_strict';
 
 // Horror anime (part A): prestige horror looks defined by light, framing and texture. Dread comes
 // from staging and restraint; no gore. Strict DNA helper, no generic filler.
-const AVOID = [...ANIME_AVOID, 'gore', 'graphic wounds'];
+const AVOID = [...ANIME_AVOID,  'graphic wounds'];
 
 const spec: Spec = {
   pack: 'pack_16',

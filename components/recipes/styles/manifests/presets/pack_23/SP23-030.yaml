@@ -45,7 +45,7 @@ visualDna:
     legible at the intended output size without relying on blur, post-processing or arbitrary noise.
 avoidRules:
   - unrequested CRT filter, scanlines or game-screen frame
-  - unrequested characters, Lovecraftian creatures, gore or game narrative
+  - unrequested characters, Lovecraftian creatures or game narrative
   - fixed hardware palette or exact system emulation
   - continuous gradients, blur or uniform pixel noise replacing constructed clusters
 assets:
@@ -78,7 +78,7 @@ attributes:
     avoidRules:
       - text: unrequested CRT filter, scanlines or game-screen frame
         field: global
-      - text: unrequested characters, Lovecraftian creatures, gore or game narrative
+      - text: unrequested characters, Lovecraftian creatures or game narrative
         field: global
       - text: fixed hardware palette or exact system emulation
         field: color_and_tone

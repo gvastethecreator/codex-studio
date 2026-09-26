@@ -22,14 +22,14 @@ tags:
   - sensor
 visualDna:
   aesthetic: 'All-sky camera: a circular fisheye night sky with meteor streaks, horizon ring and trees.'
-  subject_treatment: "Keep the prompt subject's geometry, pose and setting; replace only its appearance with what this instrument records: seen from an all-sky camera: circular fisheye, horizon at the rim, meteors and stars."
+  subject_treatment: 'Keep the prompt subject''s geometry, pose and setting; replace only its appearance with what this instrument records: seen from an all-sky camera: circular fisheye, horizon at the rim, meteors and stars.'
   color_and_tone: Dark blue night with white streaks, exactly as the instrument maps its signal.
   lighting_and_shadow: Starlight, because the image shows signal, not ordinary light.
   texture_and_material: Noise, star trails, as real instrument artifacts rather than decoration.
   camera_and_composition: Circular fisheye, matching how this instrument actually frames data.
   atmosphere_and_mood: Vast, quiet, cosmic and watchful, coming from seeing what eyes cannot.
   rendering_and_quality: Believable instrument output with correct signal logic, artifacts and resolution for that sensor.
-  creative_brief: "All-sky camera: a circular fisheye night sky with meteor streaks, horizon ring and trees. Carry it through circular fisheye, meteor streaks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'All-sky camera: a circular fisheye night sky with meteor streaks, horizon ring and trees. Carry it through circular fisheye, meteor streaks. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: circular fisheye; meteor streaks
 avoidRules:
   - readable text
@@ -39,7 +39,6 @@ avoidRules:
   - muddy noisy texture
   - readable UI text
   - fake HUD clutter
-  - medical gore
   - watermark
   - text
   - readable labels
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, medical gore, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

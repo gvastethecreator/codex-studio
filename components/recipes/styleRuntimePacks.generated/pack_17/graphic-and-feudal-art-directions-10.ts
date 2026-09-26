@@ -189,7 +189,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Graphic & Feudal Art Directions',
     domain: 'woodblock-style supernatural battle art',
     negativePrompt:
-      'readable calligraphy, gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable calligraphy, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Woodblock spirit-war direction: battle scenes styled like Japanese woodblock prints, bold outlines, flat color, patterned robes and giant spirit creatures across triptych panels.',
@@ -226,7 +226,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Graphic & Feudal Art Directions',
     domain: 'sumi-ink duel art direction',
     negativePrompt:
-      'readable calligraphy, gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable calligraphy, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Wet-ink samurai duel direction: stark duels painted in splashing black ink on white, one drop of red, speed lines of brush and vast empty space.',
@@ -261,7 +261,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Graphic & Feudal Art Directions',
     domain: 'flat heraldic strategy art direction',
     negativePrompt:
-      'readable mottoes, gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable mottoes, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Heraldic flat-color tactics direction: strategy art where armies are rendered as flat heraldic colors and shapes on a map-like battlefield with clean banners.',
@@ -296,7 +296,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Graphic & Feudal Art Directions',
     domain: 'toon-shaded norse saga art',
     negativePrompt:
-      'gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Cel-shaded viking saga direction: bold toon-shaded Norse sagas with thick outlines, stylized beards and braids, longships and chunky stylized seas.',
@@ -326,7 +326,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Graphic & Feudal Art Directions',
     domain: 'comic-book siege art direction',
     negativePrompt:
-      'speech bubbles or lettering, gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'speech bubbles or lettering, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Comic-ink siege direction: medieval sieges drawn like bold graphic-novel splash pages, heavy blacks, speed lines, dramatic foreshortening and flat color.',
@@ -362,7 +362,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Graphic & Feudal Art Directions',
     domain: 'theatrical kabuki spirit art',
     negativePrompt:
-      'gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Kabuki mask supernatural direction: theatrical stage-lit scenes with bold kumadori face paint, dramatic frozen poses, flowing robes and spirit effects on a stage.',
@@ -392,7 +392,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Graphic & Feudal Art Directions',
     domain: 'battle scenes in tile mosaic',
     negativePrompt:
-      'gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Mosaic warfare direction: battles rendered as glittering tile mosaics, gold tesserae skies, stylized armies and heroic figures built from small stones and glass.',
@@ -426,7 +426,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Graphic & Feudal Art Directions',
     domain: 'court miniature style battle scene',
     negativePrompt:
-      'readable calligraphy, cultural stereotypes, gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable calligraphy, cultural stereotypes, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Miniature-painting battle direction: battles painted like court miniatures, high horizons, tiny precise figures, patterned tents and elephants and flat golden skies.',
@@ -462,7 +462,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Graphic & Feudal Art Directions',
     domain: 'two-color brush feudal art',
     negativePrompt:
-      'readable calligraphy, gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable calligraphy, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Red-and-black brush feudal direction: stark feudal warfare painted only in black and vermilion brush strokes on pale paper, bold gesture and silhouette.',
@@ -497,7 +497,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Graphic & Feudal Art Directions',
     domain: 'propaganda poster peasant revolt art',
     negativePrompt:
-      'slogans or text, gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'slogans or text, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Stencil poster rebellion direction: peasant revolts depicted as bold stencil propaganda posters, flat two or three colors, raised pitchforks and heroic diagonals.',
@@ -532,7 +532,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Graphic & Feudal Art Directions',
     domain: 'toy-like feudal war art',
     negativePrompt:
-      'gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Chunky toy-soldier feudal direction: feudal warfare rendered as chunky painted toy soldiers and wooden castles, glossy paint, peg bodies and tabletop scale.',
@@ -569,7 +569,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Graphic & Feudal Art Directions',
     domain: 'lantern-lit spirit festival art',
     negativePrompt:
-      'gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Paper-lantern ghost festival direction: night festivals of floating paper lanterns where the living and spirits mingle, warm glows, masks and rivers of light.',
@@ -604,7 +604,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Graphic & Feudal Art Directions',
     domain: 'woodcut news broadsheet of battles',
     negativePrompt:
-      'headlines or text, gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'headlines or text, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Engraved broadside war direction: battles shown like early printed news broadsides, crowded engraved figures, smoke rendered in hatching and dramatic reportage.',
@@ -636,7 +636,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Graphic & Feudal Art Directions',
     domain: 'neon-lit demon graphic art',
     negativePrompt:
-      'gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Neon oni graphic direction: bold graphic art of horned demons and warriors in neon magenta and cyan against black, flat shapes, sharp outlines and glowing tattoos.',

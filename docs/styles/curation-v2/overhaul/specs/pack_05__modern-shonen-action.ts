@@ -408,7 +408,7 @@ const spec: Spec = {
         key_features:
           'coarse dense crosshatching; extreme scale contrast; hatched dust plumes; olive and stone palette; grimacing faces',
       }),
-      avoid: [...AVOID, 'exposed-muscle giant', 'gore', 'eaten body'],
+      avoid: [...AVOID, 'exposed-muscle giant'],
       briefs: [
         "Villagers flee across a stone bridge as the grinning face of a colossal moss-covered statue rises from the river, its eyes blinking slowly. No readable text or logo.",
         "A fisherman in a small rowboat looks up at a lighthouse, and a giant hand with too many knuckles is gripping the top of it. No readable text or logo.",

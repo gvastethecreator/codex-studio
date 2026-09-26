@@ -13,7 +13,7 @@ tags:
   - micro-macro
 visualDna:
   aesthetic: 'Rust macro: corroded metal with flaking paint, blisters and orange oxide landscapes.'
-  subject_treatment: "Show the prompt's subject at this magnification, or let its shape and action emerge from this specimen texture while staying recognizable: formed from or shown on corroded metal: flaking paint, rust blisters, pitting and oxide stains."
+  subject_treatment: 'Show the prompt''s subject at this magnification, or let its shape and action emerge from this specimen texture while staying recognizable: formed from or shown on corroded metal: flaking paint, rust blisters, pitting and oxide stains.'
   color_and_tone: Rust orange, peeling paint colors and dark iron, as the instrument or lens would record it.
   lighting_and_shadow: Raking light across flakes, matching the real imaging setup at this scale.
   texture_and_material: Flaking paint, rust bloom and pitted steel, resolved in fine detail at extreme magnification.
@@ -21,14 +21,13 @@ visualDna:
   atmosphere_and_mood: Decaying, beautiful, patient and melancholic, from discovering a hidden world at tiny scale.
   rendering_and_quality: Scientific-grade macro or micrograph realism with crisp structure and believable optics.
   key_features: rust bloom; flaking paint; pitting
-  creative_brief: "Rust macro: corroded metal with flaking paint, blisters and orange oxide landscapes. Carry it through rust bloom, flaking paint, pitting. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Rust macro: corroded metal with flaking paint, blisters and orange oxide landscapes. Carry it through rust bloom, flaking paint, pitting. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - readable text
   - logo
   - real artist signature
   - copying a specific famous artwork
   - muddy noisy texture
-  - medical gore
   - readable scale bar text
   - clean
   - eye
@@ -52,7 +51,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP11-063.webp
 attributes:
-  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, medical gore, readable scale bar text, clean, eye, iris, pupil, lens, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable scale bar text, clean, eye, iris, pupil, lens, generic macro blur, muddy micro noise, classroom sample scene, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_11
   packName: Miscellaneous & Fun

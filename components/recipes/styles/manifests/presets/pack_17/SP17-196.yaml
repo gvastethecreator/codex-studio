@@ -29,10 +29,9 @@ visualDna:
   camera_and_composition: Wide desert vista with huge remains, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with desolate scavenger grit.
   rendering_and_quality: Painterly scale and dust, kept consistent across the whole image.
-  creative_brief: "Rust-and-bone waste direction: painted art direction of red deserts strewn with giant bones and rusted war machines, dust storms and scavenger silhouettes. Carry it through giant bones, rusted machines, red desert, dust storm. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Rust-and-bone waste direction: painted art direction of red deserts strewn with giant bones and rusted war machines, dust storms and scavenger silhouettes. Carry it through giant bones, rusted machines, red desert, dust storm. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: giant bones; rusted machines; red desert; dust storm
 avoidRules:
-  - gore
   - interface or HUD
   - existing game characters, logos or locations
   - readable text
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

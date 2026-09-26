@@ -40,16 +40,16 @@ visualDna:
     Establish the largest forms first and use few tonal groups. Keep the subject readable at a glance
     without filling quiet areas with microdetail.
 avoidRules:
-  - unrequested blood, torn clothing, or threatening subject matter
+  - unrequested torn clothing or threatening subject matter
   - forced monochrome when color is requested
   - detail that breaks broad value masses
-  - unrequested horror or violence
+  - unrequested horror
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP22-121.webp
 attributes:
   negativePrompt: >-
-    unrequested blood, torn clothing, or threatening subject matter, forced monochrome when color is
-    requested, detail that breaks broad value masses, unrequested horror or violence
+    unrequested torn clothing or threatening subject matter, forced monochrome when color is
+    requested, detail that breaks broad value masses, unrequested horror
   intentionalPolicy:
     schemaVersion: 1
     kind: full_style
@@ -68,13 +68,13 @@ attributes:
         group: medium
         value: gouache
     avoidRules:
-      - text: unrequested blood, torn clothing, or threatening subject matter
+      - text: unrequested torn clothing or threatening subject matter
         field: global
       - text: forced monochrome when color is requested
         field: color_and_tone
       - text: detail that breaks broad value masses
         field: rendering_and_quality
-      - text: unrequested horror or violence
+      - text: unrequested horror
         field: global
   sourceMetadata:
     atlas: Codex Studio Atlas TCG v0.1

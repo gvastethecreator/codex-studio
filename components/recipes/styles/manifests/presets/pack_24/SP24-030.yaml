@@ -29,11 +29,10 @@ visualDna:
   camera_and_composition: Small cabin in a wide snowy expanse, tracks leading the eye.
   atmosphere_and_mood: Self-reliant, quiet and cold, a life measured in firewood.
   rendering_and_quality: Muted oil painting with soft snow and textured brushwork.
-  creative_brief: "Tundra trapper cabin: a single log cabin on endless snowy tundra, painted in muted oil with smoke rising and snowshoe tracks leading away. Carry it through lone log cabin, snowy tundra, snowshoe tracks, woodsmoke. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Tundra trapper cabin: a single log cabin on endless snowy tundra, painted in muted oil with smoke rising and snowshoe tracks leading away. Carry it through lone log cabin, snowy tundra, snowshoe tracks, woodsmoke. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: lone log cabin; snowy tundra; snowshoe tracks; woodsmoke
 avoidRules:
   - summer
-  - gore
   - real military insignia
   - real brand or company logo
   - readable text
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: summer, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: summer, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

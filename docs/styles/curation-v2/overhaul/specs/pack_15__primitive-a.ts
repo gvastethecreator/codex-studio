@@ -6,7 +6,7 @@ import { dna } from './_strict';
 // Cultures are invented, not copies of a specific living people's sacred dress or ritual.
 const AVOID = [
   ...STYLE_AVOID,
-  'gore',
+  
   'sacred regalia of a specific living culture',
   'real brand or company logo',
 ];

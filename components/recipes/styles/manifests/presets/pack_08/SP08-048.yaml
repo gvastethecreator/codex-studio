@@ -21,10 +21,9 @@ visualDna:
   atmosphere_and_mood: Communicate improvised resilience through repairs and layered construction, without declaring an outbreak, survivor role or danger.
   rendering_and_quality: Vary scuffs, seams and patch edges with control; distinguish fabric wear from stains and keep the original subject readable.
   key_features: Patched denim and flannel; taped repair seams; wrapped cuffs; layered protective bulk.
-  creative_brief: 'Turn the requested clothing into repaired utilitywear with patched fabric, taped seams and wrapped cuffs. Preserve wearer, identity, anatomy, pose, role, scene and framing; add no wounds, weapons, zombies or outbreak setting. Use it as a reusable look on any subject.'
+  creative_brief: Turn the requested clothing into repaired utilitywear with patched fabric, taped seams and wrapped cuffs. Preserve wearer, identity, anatomy, pose, role, scene and framing; add no wounds, weapons, zombies or outbreak setting. Use it as a reusable look on any subject.
 avoidRules:
   - clean
-  - gore
   - visible wound
   - weapon focus
   - zombie form
@@ -41,7 +40,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP08-048.webp
 attributes:
-  negativePrompt: clean, gore, visible wound, weapon focus, zombie form, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text
+  negativePrompt: clean, visible wound, weapon focus, zombie form, generic cosplay, plastic toy armor, muddy fantasy outfit, fixed outfit, required body type, literal card scene, generic fashion catalog, muddy fabric noise, watermark, readable text
 taxonomy:
   packId: pack_08
   packName: Fashion & Costume

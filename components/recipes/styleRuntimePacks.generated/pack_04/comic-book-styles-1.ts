@@ -294,7 +294,7 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Obsessive Fine-Line Horror Manga', 'Junji Ito Horror Manga (Obsessive Ink)'],
     category: '1. Comic Book Styles',
     negativePrompt:
-      'added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, color, splatter gore, cute, clean, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'added panels or gutters, speech balloons, sound-effect lettering, franchise hero costume, chest emblem of a known hero, color, cute, clean, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, generic superhero costume, random speech text, fake lettering, photo-real costume render, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Horror manga drawn with obsessive fine lines: thousands of parallel pen strokes accumulate into dread, and ordinary surfaces slowly turn into spirals, holes or patterns.',

@@ -238,7 +238,7 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Flush-Seam Cyber Implant', 'Cybernetic Implant'],
     category: '5. Hard Surface And Product CGI',
     negativePrompt:
-      'multi-view asset sheet, fake labels, brand logo, readable text, franchise likeness, gore, open wounds, full robot body, flesh only, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, random greeble clutter, muddy grime, organic blob shape, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'multi-view asset sheet, fake labels, brand logo, readable text, franchise likeness, full robot body, flesh only, wrong medium, flat 2d paintover, muddy AI noise, uncontrolled texture chatter, watermark, signature, random greeble clutter, muddy grime, organic blob shape, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Cyber implant integration: machined chrome and white ceramic modules set flush into skin, with the seam between flesh and metal as the focal detail.',

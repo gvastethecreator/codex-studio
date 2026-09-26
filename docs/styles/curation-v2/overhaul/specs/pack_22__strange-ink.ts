@@ -18,7 +18,7 @@ const study = (
   domain,
   tags: [tag, 'portable-style-study'],
   dna: dna(fields),
-  avoid: [...avoid, 'gore', ...STYLE_AVOID],
+  avoid: [...avoid,  ...STYLE_AVOID],
   briefs,
 });
 

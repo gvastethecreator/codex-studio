@@ -11,7 +11,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Dark Fantasy & Gothic Courts',
     domain: 'medieval fantasy',
     negativePrompt:
-      'clean heroic fantasy, glossy plastic armor, cute cartoon, anime, explicit gore, gritty dark noise, scratchy black microtexture, dense soot speckle, crosshatch mesh, over cracked surfaces, watermark, text, generic fantasy splash art, quest party lock, gore only darkness, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'clean heroic fantasy, glossy plastic armor, cute cartoon, anime, gritty dark noise, scratchy black microtexture, dense soot speckle, crosshatch mesh, over cracked surfaces, watermark, text, generic fantasy splash art, quest party lock, gore only darkness, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Bleak ashen medieval fantasy style with clean soot-softened surfaces, sacred decay, heavy solemn material weight, and worn ceremonial darkness.',
@@ -73,7 +73,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Dark Fantasy & Gothic Courts',
     domain: 'medieval fantasy',
     negativePrompt:
-      'generic high fantasy, shiny new armor, cartoon magic, sci fi panels, explicit gore, watermark, text, generic fantasy splash art, quest party lock, gore only darkness, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'generic high fantasy, shiny new armor, cartoon magic, sci fi panels, watermark, text, generic fantasy splash art, quest party lock, gore only darkness, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Vast mythic medieval epic where gold sigils, ruined kingdoms, and divine weather dominate the frame.',
@@ -105,7 +105,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Dark Fantasy & Gothic Courts',
     domain: 'medieval fantasy',
     negativePrompt:
-      'clean costume drama, bright fairy tale, glossy armor, heroic poster pose, explicit gore, watermark, text, generic fantasy splash art, quest party lock, gore only darkness, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'clean costume drama, bright fairy tale, glossy armor, heroic poster pose, watermark, text, generic fantasy splash art, quest party lock, gore only darkness, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic: 'Muddy war-torn medieval fantasy staged like a brutal siege chronicle.',
       subject_treatment:
@@ -134,7 +134,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Dark Fantasy & Gothic Courts',
     domain: 'medieval fantasy',
     negativePrompt:
-      'flat daylight, modern church interior, clean museum look, cute fantasy, explicit gore, watermark, text, generic fantasy splash art, quest party lock, gore only darkness, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'flat daylight, modern church interior, clean museum look, cute fantasy, watermark, text, generic fantasy splash art, quest party lock, gore only darkness, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Gothic cathedral fantasy with carved darkness, vaulted height, and sacred chiaroscuro.',
@@ -166,7 +166,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Dark Fantasy & Gothic Courts',
     domain: 'medieval fantasy',
     negativePrompt:
-      'polished tournament armor, bright paladin glow, playful costume, sci fi soldier, explicit gore, watermark, text, generic fantasy splash art, quest party lock, gore only darkness, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'polished tournament armor, bright paladin glow, playful costume, sci fi soldier, watermark, text, generic fantasy splash art, quest party lock, gore only darkness, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Severe crusader fantasy built from black iron, devotional symbols, and battle-worn austerity.',
@@ -198,7 +198,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Dark Fantasy & Gothic Courts',
     domain: 'medieval fantasy',
     negativePrompt:
-      'photorealism, modern poster layout, smooth digital gradients, anime, explicit gore, watermark, text, generic fantasy splash art, quest party lock, gore only darkness, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'photorealism, modern poster layout, smooth digital gradients, anime, watermark, text, generic fantasy splash art, quest party lock, gore only darkness, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Medieval legend rendered like a damaged woven tapestry with mythic silhouettes and flat ceremonial space.',
@@ -228,7 +228,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Dark Fantasy & Gothic Courts',
     domain: 'gothic fantasy',
     negativePrompt:
-      'bright daylight, superhero costume, clean steampunk brass, cute horror, explicit gore, watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'bright daylight, superhero costume, clean steampunk brass, cute horror, watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Moonlit gothic hunter fantasy with long coats, sharp silhouettes, wet stone, and monstrous unease.',
@@ -258,7 +258,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Dark Fantasy & Gothic Courts',
     domain: 'gothic fantasy',
     negativePrompt:
-      'modern hospital, sci fi lab, cute plague mask, clean fashion shoot, explicit gore, watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'modern hospital, sci fi lab, cute plague mask, clean fashion shoot, watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Baroque plague-era fantasy with beaked masks, ornate decay, medicine cabinets, and candlelit dread.',
@@ -289,7 +289,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Dark Fantasy & Gothic Courts',
     domain: 'gothic fantasy',
     negativePrompt:
-      'neon cyberpunk, modern streetwear, clean daylight, cute cartoon, explicit gore, watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'neon cyberpunk, modern streetwear, clean daylight, cute cartoon, watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Gothic fantasy noir under a crimson moon, mixing medieval alleys, wrought iron, and supernatural fog.',
@@ -319,7 +319,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Dark Fantasy & Gothic Courts',
     domain: 'gothic fantasy',
     negativePrompt:
-      'graphic anatomy, modern operating room, sci fi machinery, plastic props, explicit gore, watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'graphic anatomy, modern operating room, sci fi machinery, plastic props, watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Gothic reliquary horror mixing surgical precision, saintly display cases, and medieval ritual equipment.',
@@ -351,7 +351,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Dark Fantasy & Gothic Courts',
     domain: 'gothic fantasy',
     negativePrompt:
-      'modern courtroom, clean costume pageant, bright magic effects, cartoon witch, central inquisitor, executioner figure, accused figure, visible crowd, near plane observers, robed witnesses, gallows scene, explicit violence, watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'modern courtroom, clean costume pageant, bright magic effects, cartoon witch, central inquisitor, executioner figure, accused figure, visible crowd, near plane observers, robed witnesses, gallows scene, watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Fogbound medieval accusation folklore with rough timber posts, low fog, torch halos, rope knots, and occult uncertainty.',
@@ -383,7 +383,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Dark Fantasy & Gothic Courts',
     domain: 'gothic fantasy',
     negativePrompt:
-      'modern ballroom, clean fantasy palace, cute animal mascot, flat lighting, explicit gore, watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'modern ballroom, clean fantasy palace, cute animal mascot, flat lighting, watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Gothic courtly fantasy where beasts, nobles, and scholars gather in candlelit bestiary drama.',
@@ -447,7 +447,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Dark Fantasy & Gothic Courts',
     domain: 'monastic gothic fantasy',
     negativePrompt:
-      'literal moth swarm, monk portrait, library room, readable manuscript, dusty noise field, explicit gore, watermark, text, generic royal portrait, romance novel cover, prompt literal medieval card, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'literal moth swarm, monk portrait, library room, readable manuscript, dusty noise field, watermark, text, generic royal portrait, romance novel cover, prompt literal medieval card, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Pale monastic weird-fantasy built from vellum translucency, dusty wing shapes, candle ash, thin ink, and silent abbey pressure.',
@@ -479,7 +479,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Dark Fantasy & Gothic Courts',
     domain: 'desert sacred fantasy',
     negativePrompt:
-      'desert postcard, oasis fantasy, generic robed traveler, readable map, dark dungeon, explicit gore, watermark, text, generic royal portrait, romance novel cover, prompt literal medieval card, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'desert postcard, oasis fantasy, generic robed traveler, readable map, dark dungeon, watermark, text, generic royal portrait, romance novel cover, prompt literal medieval card, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Bleached feudal pilgrimage fantasy where salt crust, sun-struck stone, dry cloth, and sacred glare turn the scene austere and ritualized.',
@@ -509,7 +509,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Dark Fantasy & Gothic Courts',
     domain: 'apothecary gothic fantasy',
     negativePrompt:
-      'gore, medical diagram, pharmacy shelf, jar inventory, readable label, cute witch shop, watermark, text, generic royal portrait, romance novel cover, prompt literal medieval card, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'medical diagram, pharmacy shelf, jar inventory, readable label, cute witch shop, watermark, text, generic royal portrait, romance novel cover, prompt literal medieval card, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Moonlit medieval apothecary fantasy with glass greens, waxy flesh tones, herbal darkness, and clinical ritual elegance.',
@@ -539,7 +539,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Dark Fantasy & Gothic Courts',
     domain: 'bureaucratic gothic fantasy',
     negativePrompt:
-      'readable writing, accountant portrait, office desk, legal courtroom, modern paperwork, explicit gore, watermark, text, generic royal portrait, romance novel cover, prompt literal medieval card, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'readable writing, accountant portrait, office desk, legal courtroom, modern paperwork, watermark, text, generic royal portrait, romance novel cover, prompt literal medieval card, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Medieval bureaucratic gothic where debt, oath, wax, iron, parchment, and moral pressure become a severe visual system.',
@@ -571,7 +571,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Dark Fantasy & Gothic Courts',
     domain: 'carnival gothic fantasy',
     negativePrompt:
-      'clown portrait, circus tent default, crowd scene, readable sign, cute festival, explicit gore, watermark, text, generic royal portrait, romance novel cover, prompt literal medieval card, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'clown portrait, circus tent default, crowd scene, readable sign, cute festival, watermark, text, generic royal portrait, romance novel cover, prompt literal medieval card, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Poisonous medieval carnival fantasy with crooked banner rhythm, wormwood green, cheap paint, ceremonial comedy, and uneasy spectacle.',
@@ -601,7 +601,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Dark Fantasy & Gothic Courts',
     domain: 'masquerade gothic fantasy',
     negativePrompt:
-      'ballroom crowd, generic mask portrait, carnival clown, readable crest, explicit nudity, explicit gore, watermark, text, generic royal portrait, romance novel cover, prompt literal medieval card, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'ballroom crowd, generic mask portrait, carnival clown, readable crest, explicit nudity, watermark, text, generic royal portrait, romance novel cover, prompt literal medieval card, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Opalescent bone-court fantasy with masked elegance, nacre shimmer, black velvet depth, and predatory etiquette.',
@@ -633,7 +633,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Dark Fantasy & Gothic Courts',
     domain: 'tactical omen fantasy',
     negativePrompt:
-      'readable map, labels, army panorama, UI markers, chessboard, explicit gore, watermark, text, generic royal portrait, romance novel cover, prompt literal medieval card, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'readable map, labels, army panorama, UI markers, chessboard, watermark, text, generic royal portrait, romance novel cover, prompt literal medieval card, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Black parchment medieval omen style where siege pressure becomes abstract cartography, burnt edges, bone markers, and tactical dread.',

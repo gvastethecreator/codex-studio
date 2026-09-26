@@ -29,11 +29,10 @@ visualDna:
   camera_and_composition: Side view of the van panel with the mural.
   atmosphere_and_mood: Keep the requested mood with groovy cosmic fantasy.
   rendering_and_quality: Convincing mural on a real vehicle, kept consistent across the whole image.
-  creative_brief: "Custom van mural fantasy: seventies airbrushed fantasy murals painted on the side of a van, wizards, dragons and sunsets on glossy curved metal with chrome trim. Carry it through van side mural, airbrush sunset, glossy metal, chrome trim. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Custom van mural fantasy: seventies airbrushed fantasy murals painted on the side of a van, wizards, dragons and sunsets on glossy curved metal with chrome trim. Carry it through van side mural, airbrush sunset, glossy metal, chrome trim. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: van side mural; airbrush sunset; glossy metal; chrome trim
 avoidRules:
   - brand logos
-  - gore
   - title lettering
   - existing franchise heroes
   - readable text
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: brand logos, gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: brand logos, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

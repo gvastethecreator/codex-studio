@@ -29,11 +29,10 @@ visualDna:
   camera_and_composition: Bold silhouette-driven composition, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with fierce martial intensity.
   rendering_and_quality: Expressive two-color brushwork, kept consistent across the whole image.
-  creative_brief: "Red-and-black brush feudal direction: stark feudal warfare painted only in black and vermilion brush strokes on pale paper, bold gesture and silhouette. Carry it through black and vermilion only, brush gesture, silhouettes, pale paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Red-and-black brush feudal direction: stark feudal warfare painted only in black and vermilion brush strokes on pale paper, bold gesture and silhouette. Carry it through black and vermilion only, brush gesture, silhouettes, pale paper. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: black and vermilion only; brush gesture; silhouettes; pale paper
 avoidRules:
   - readable calligraphy
-  - gore
   - interface or HUD
   - existing game or film characters, logos or clan crests
   - readable text
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable calligraphy, gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable calligraphy, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

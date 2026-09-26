@@ -29,11 +29,10 @@ visualDna:
   camera_and_composition: Tower on a rock with waves exploding around its base, beam across the sky.
   atmosphere_and_mood: Steadfast, lonely and romantic, keeping the light alive.
   rendering_and_quality: Classic maritime oil painting with dramatic spray and glow.
-  creative_brief: "Lighthouse relief keeper: a lone keeper on a wave-battered rock lighthouse, painted in maritime oils with rotating beam and heavy seas. Carry it through rock lighthouse, sweeping beam, exploding waves, lone keeper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Lighthouse relief keeper: a lone keeper on a wave-battered rock lighthouse, painted in maritime oils with rotating beam and heavy seas. Carry it through rock lighthouse, sweeping beam, exploding waves, lone keeper. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: rock lighthouse; sweeping beam; exploding waves; lone keeper
 avoidRules:
   - calm tropical beach
-  - gore
   - real military insignia
   - real brand or company logo
   - readable text
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: calm tropical beach, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: calm tropical beach, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

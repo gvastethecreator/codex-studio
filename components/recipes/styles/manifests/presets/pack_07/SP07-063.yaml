@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Solemn, bureaucratic and funereal, the state as a tomb.
   rendering_and_quality: Severe architectural render with crisp stone edges and restrained glow; no skulls, gore or cemetery props.
   key_features: black basalt colonnades; bone-marble inlay grids; oxidized bronze doors; endless repeated pilasters; cold raking overcast light
-  creative_brief: "Sepulchral civic monumentalism: public buildings designed as necropolis architecture, black basalt colonnades, bone-marble inlay grids and oxidized bronze doors at inhuman height. Carry it through black basalt colonnades, bone-marble inlay grids, oxidized bronze doors, endless repeated pilasters, cold raking overcast light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Sepulchral civic monumentalism: public buildings designed as necropolis architecture, black basalt colonnades, bone-marble inlay grids and oxidized bronze doors at inhuman height. Carry it through black basalt colonnades, bone-marble inlay grids, oxidized bronze doors, endless repeated pilasters, cold raking overcast light. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - licensed fantasy location
   - copy of a known film or game building
@@ -30,12 +30,10 @@ avoidRules:
   - decorative waterfall by default
   - swapping the requested structure for a castle or temple
   - skull decoration
-  - gore
   - cemetery headstones
   - lush garden
   - cozy living space
   - cemetery scene
-  - skull/gore
   - monster
   - person
   - cozy living interior zones
@@ -66,7 +64,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-063.webp
 attributes:
-  negativePrompt: licensed fantasy location, copy of a known film or game building, readable runes or inscriptions, glossy mirror floor by default, decorative waterfall by default, swapping the requested structure for a castle or temple, skull decoration, gore, cemetery headstones, lush garden, cozy living space, cemetery scene, skull/gore, monster, person, cozy living interior zones, market aisle, library aisle, corridor, empty abstraction, throne interior zones default, weapon prop, character hero, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: licensed fantasy location, copy of a known film or game building, readable runes or inscriptions, glossy mirror floor by default, decorative waterfall by default, swapping the requested structure for a castle or temple, skull decoration, cemetery headstones, lush garden, cozy living space, cemetery scene, monster, person, cozy living interior zones, market aisle, library aisle, corridor, empty abstraction, throne interior zones default, weapon prop, character hero, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

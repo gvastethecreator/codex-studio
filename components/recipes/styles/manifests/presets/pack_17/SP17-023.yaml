@@ -20,16 +20,14 @@ visualDna:
   lighting_and_shadow: Bioluminescent accents create simple pocket light inside clean catacomb shadow shapes.
   texture_and_material: Bone, root fiber, damp stone, etched copper, translucent membranes, crystals, and mineral growth.
   camera_and_composition: Riblike depth rhythm, organic arch pressure, centered bio-relic hierarchy, and damp symmetry without requiring a tunnel or fixed organism.
-  atmosphere_and_mood: 'Ancient, uncanny, subterranean, and sacred biological; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness, at whatever intensity the requested scene sets.'
+  atmosphere_and_mood: Ancient, uncanny, subterranean, and sacred biological; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness, at whatever intensity the requested scene sets.
   rendering_and_quality: Detailed dark-fantasy digital illustration with organic-mechanical clarity, defined contours, and restrained horror.
   creative_brief: 'Bio Arcane Catacomb: Bio arcane medieval future where catacombs; bone machinery; roots; rune conduits grow into one system; Transform any subject with bio arcane medieval biotech.'
   key_features: Bio Arcane Catacomb; Bio arcane medieval future where catacombs; bone machinery; roots; rune conduits grow into one system; Transform any subject with bio arcane medieval biotech
 avoidRules:
   - clean sci fi lab
   - cute mushroom village
-  - medical gore
   - bright garden fantasy
-  - explicit gore
   - watermark
   - text
   - generic cyberpunk city
@@ -41,7 +39,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-023.webp
 attributes:
-  negativePrompt: clean sci fi lab, cute mushroom village, medical gore, bright garden fantasy, explicit gore, watermark, text, generic cyberpunk city, chrome overload, readable rune text, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
+  negativePrompt: clean sci fi lab, cute mushroom village, bright garden fantasy, watermark, text, generic cyberpunk city, chrome overload, readable rune text, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

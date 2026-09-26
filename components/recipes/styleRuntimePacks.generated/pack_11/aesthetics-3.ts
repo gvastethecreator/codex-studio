@@ -252,7 +252,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Biopunk Flesh-Tech Aesthetic',
     category: '3. Aesthetics',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, metal, dry, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, metal, dry, generic aesthetic collage, random trend mix, style-board text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Biopunk: living technology grown from flesh, veins and tissue in wet labs and organic cities.',

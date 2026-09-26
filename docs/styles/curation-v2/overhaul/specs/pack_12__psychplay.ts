@@ -20,7 +20,7 @@ const play = (
   domain,
   tags: [tag, 'gameplay-capture', 'portable-style-study'],
   dna: dna(fields),
-  avoid: [...avoid, 'existing game characters, logos or levels', 'readable interface text', 'gore', ...STYLE_AVOID],
+  avoid: [...avoid, 'existing game characters, logos or levels', 'readable interface text',  ...STYLE_AVOID],
   briefs,
 });
 
@@ -73,7 +73,7 @@ const spec: Spec = {
       rendering_and_quality: "Clean capture with no readable signs, kept consistent across the whole image.",
       key_features: 'thick fog; lone figure; empty town; radio crackle',
     }, ['readable signs'], [
-      'Walking down a street swallowed by white fog, an original man clutches a crackling radio as a towering silhouette with a strange helmet drags something heavy just out of sight. No readable text or logo.',
+      "Walking down a street swallowed by white fog, an original man clutches a crackling radio as a towering silhouette on stilt-like legs drags a squeaking hospital gurney just out of sight. No readable text or logo.",
       'In a fog-drowned town, a nervous visitor reacts to his radio crackling and discovers it is only picking up a very enthusiastic cooking show. No readable text or logo.',
       'In a fog-filled town square, a phone booth rings, and the fog around it is shaped like someone waiting. No readable text or logo.',
     ]),

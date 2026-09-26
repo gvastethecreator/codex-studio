@@ -29,11 +29,10 @@ visualDna:
   camera_and_composition: Tower rising above forest, horizon high with distant smoke columns.
   atmosphere_and_mood: Watchful, peaceful and uneasy, beauty with danger far away.
   rendering_and_quality: Warm painterly gouache with soft atmospheric depth and haze.
-  creative_brief: "Fire-lookout tower vigil: a lone watcher in a glass cabin atop a tower above endless forest, painted in warm gouache with smoke columns on the horizon. Carry it through lookout tower above forest, distant smoke columns, glass cabin, long sunset. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Fire-lookout tower vigil: a lone watcher in a glass cabin atop a tower above endless forest, painted in warm gouache with smoke columns on the horizon. Carry it through lookout tower above forest, distant smoke columns, glass cabin, long sunset. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: lookout tower above forest; distant smoke columns; glass cabin; long sunset
 avoidRules:
   - close flames engulfing
-  - gore
   - real military insignia
   - real brand or company logo
   - readable text
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: close flames engulfing, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: close flames engulfing, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

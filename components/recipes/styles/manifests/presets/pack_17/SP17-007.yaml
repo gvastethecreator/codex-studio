@@ -20,7 +20,7 @@ visualDna:
   lighting_and_shadow: Moon rim light and simple lantern pools create high-contrast silhouettes with readable costume detail.
   texture_and_material: Oiled leather, wet cobblestone, tarnished buckles, wool, soot, fog, and scratched metal.
   camera_and_composition: Oblique gothic verticals, roofline-like diagonals, moonlit negative space, narrow pursuit lanes, and side-profile tension without naming a fixed urban set.
-  atmosphere_and_mood: 'Paranoid, nocturnal, elegant, and threatening without explicit gore; nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony, at whatever intensity the requested scene sets.'
+  atmosphere_and_mood: Paranoid, nocturnal, elegant, and threatening without explicit gore; nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony, at whatever intensity the requested scene sets.
   rendering_and_quality: Dark gothic digital illustration with refined costume detail, clean reflections, defined lines, and controlled haze.
   creative_brief: 'Moonlit Hunter Gothic: Moonlit gothic hunter fantasy with long coats; sharp silhouettes; wet stone; monstrous unease; high collar shape rhythm.'
   key_features: Moonlit Hunter Gothic; Moonlit gothic hunter fantasy with long coats; sharp silhouettes; wet stone; monstrous unease; high collar shape rhythm
@@ -29,7 +29,6 @@ avoidRules:
   - superhero costume
   - clean steampunk brass
   - cute horror
-  - explicit gore
   - watermark
   - text
   - vampire portrait default
@@ -41,7 +40,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-007.webp
 attributes:
-  negativePrompt: bright daylight, superhero costume, clean steampunk brass, cute horror, explicit gore, watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
+  negativePrompt: bright daylight, superhero costume, clean steampunk brass, cute horror, watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

@@ -43,13 +43,13 @@ avoidRules:
   - uniform wash laid over every shape
   - muddy darks that erase value separation
   - unrequested ghostly or fog effects
-  - unrequested horror or violence
+  - unrequested horror
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP22-118.webp
 attributes:
   negativePrompt: >-
     uniform wash laid over every shape, muddy darks that erase value separation, unrequested ghostly
-    or fog effects, unrequested horror or violence
+    or fog effects, unrequested horror
   intentionalPolicy:
     schemaVersion: 1
     kind: full_style
@@ -74,7 +74,7 @@ attributes:
         field: color_and_tone
       - text: unrequested ghostly or fog effects
         field: global
-      - text: unrequested horror or violence
+      - text: unrequested horror
         field: global
   sourceMetadata:
     atlas: Codex Studio Atlas TCG v0.1

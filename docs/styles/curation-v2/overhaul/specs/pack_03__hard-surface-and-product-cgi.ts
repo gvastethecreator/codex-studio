@@ -270,7 +270,7 @@ const spec: Spec = {
         key_features:
           'flush implant modules; skin-to-metal seam; chrome and white ceramic; small status light; subsurface skin with hard metal rim',
       }),
-      avoid: [...AVOID, 'gore', 'open wounds', 'full robot body'],
+      avoid: [...AVOID, 'full robot body'],
       briefs: [
         'Cyber implant render of an adult elven archer in profile, a white ceramic module set flush along her jaw and ear with a precise machined seam, pores and fine hair running right up to the metal, soft key on the skin and a hard rim on the chrome, one tiny amber status light. No text or logo.',
         "Cyber implant render of a middle-aged blacksmith's forearm gripping tongs over an anvil, chrome tendon plates set flush into the skin along the muscles, forge glow warming the skin and glinting on the seams. No text or logo.",

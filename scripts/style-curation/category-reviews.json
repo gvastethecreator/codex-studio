@@ -650,7 +650,7 @@
     "displayCategory": "Specialty spaces",
     "kind": "theme",
     "expectedCount": 20,
-    "baselineHash": "8946b6f9a5dc31a49e74b57df1dad0cdd36c8f0c18c1ea46b1cd5865fb89b1e1",
+    "baselineHash": "231f1ae26dbec72c2b5a966c2016e0c8214e5707fd9fbb6e09f7f8ff66426c43",
     "problem": "Transit, conservatory and library concepts force a place through euphemistic names.",
     "preserve": "Patina, circulation and domain-specific spatial organization.",
     "proposedAction": "Overhaul v2: 9 presets rewritten with concrete mechanisms; 11 new presets (pending cards); 3 card briefs per preset for all 20; details in overhaul/audits/pack_07__civic-infrastructure-and-specialty-spaces.md.",

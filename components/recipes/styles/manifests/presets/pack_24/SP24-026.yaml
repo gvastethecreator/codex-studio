@@ -29,12 +29,11 @@ visualDna:
   camera_and_composition: Figures roped in a line along a diagonal ridge, horizon lost in white.
   atmosphere_and_mood: Urgent, brave and disoriented, holding the rope in nothing.
   rendering_and_quality: Expressive charcoal and chalk drawing with strong wind direction.
-  creative_brief: "Whiteout mountain rescue: rescuers roped together on a storm-blasted ridge, painted in near-white charcoal and chalk where snow and sky merge. Carry it through whiteout blending snow and sky, roped rescuers, red accent, wind streaks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Whiteout mountain rescue: rescuers roped together on a storm-blasted ridge, painted in near-white charcoal and chalk where snow and sky merge. Carry it through whiteout blending snow and sky, roped rescuers, red accent, wind streaks. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: whiteout blending snow and sky; roped rescuers; red accent; wind streaks
 avoidRules:
   - clear blue sky
   - summer
-  - gore
   - real military insignia
   - real brand or company logo
   - readable text
@@ -51,7 +50,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: clear blue sky, summer, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: clear blue sky, summer, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

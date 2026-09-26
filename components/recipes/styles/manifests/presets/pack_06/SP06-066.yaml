@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Aggressive and chaotic, beauty and vandalism fighting on one surface.
   rendering_and_quality: Crisp contrast between photographic grey detail and raw red marks; no third color.
   key_features: black-grey realism; flat red brush swaths; splatter and drips; abstract bars; off-white ground
-  creative_brief: "Trash polka: realistic black-and-grey rendering violently interrupted by bold red brush swaths, smeared circles, bars and ink splatter. Carry it through black-grey realism, flat red brush swaths, splatter and drips, abstract bars, off-white ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Trash polka: realistic black-and-grey rendering violently interrupted by bold red brush swaths, smeared circles, bars and ink splatter. Carry it through black-grey realism, flat red brush swaths, splatter and drips, abstract bars, off-white ground. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - uniform beige torn-paper wash over every image
   - red tape strips added by default
@@ -30,7 +30,6 @@ avoidRules:
   - changing the requested camera view
   - additional colors
   - readable lettering
-  - gore
   - photo
   - realistic
   - photorealistic
@@ -68,7 +67,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-066.webp
 attributes:
-  negativePrompt: uniform beige torn-paper wash over every image, red tape strips added by default, material replacing clothing or skin, readable printed words, changing the requested camera view, additional colors, readable lettering, gore, photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, skin requirement, tattoo placement, blood literal, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: uniform beige torn-paper wash over every image, red tape strips added by default, material replacing clothing or skin, readable printed words, changing the requested camera view, additional colors, readable lettering, photo, realistic, photorealistic, 3d render, octane render, noise, blurry, deformed, ugly, bad anatomy, watermark, text, signature, frame, border, skin requirement, tattoo placement, blood literal, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, low resolution, single flat texture overlay, fake scrapbook text, craft-table default, clean vector render, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

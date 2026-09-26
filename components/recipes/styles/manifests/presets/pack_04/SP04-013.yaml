@@ -21,9 +21,8 @@ visualDna:
   atmosphere_and_mood: Playful, comic and huggable, every emotion shown as a big face.
   rendering_and_quality: Thick even outlines, simplified interiors and expression marks such as sweat drops and sparkles.
   key_features: two-heads-tall proportions; oversized round head; thick clean outline; blush ovals; oversized props
-  creative_brief: "Chibi super-deformed drawing: every character redrawn about two heads tall with a huge round head, tiny limbs and stubby mitten hands. Carry it through two-heads-tall proportions, oversized round head, thick clean outline, blush ovals, oversized props. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Chibi super-deformed drawing: every character redrawn about two heads tall with a huge round head, tiny limbs and stubby mitten hands. Carry it through two-heads-tall proportions, oversized round head, thick clean outline, blush ovals, oversized props. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
-  - frightening gore
   - known picture-book characters
   - franchise mascot likeness
   - tall
@@ -50,7 +49,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-013.webp
 attributes:
-  negativePrompt: frightening gore, known picture-book characters, franchise mascot likeness, tall, realistic, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: known picture-book characters, franchise mascot likeness, tall, realistic, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

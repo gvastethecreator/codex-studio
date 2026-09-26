@@ -56,7 +56,7 @@ visualDna:
 avoidRules:
   - unrequested use of The Penitent One, named bosses, exact room layouts or promotional key art
   - changing the side-scroll plane or inventing an alternate camera
-  - unrequested gore, named religious props, copied meters or fabricated interface text
+  - unrequested named religious props, copied meters or fabricated interface text
   - filtering non-pixel subjects with uniform scanlines or blur
   - existing franchise characters
   - series logo or title lettering
@@ -67,7 +67,7 @@ assets:
 attributes:
   negativePrompt: >-
     unrequested use of The Penitent One, named bosses, exact room layouts or promotional key art,
-    changing the side-scroll plane or inventing an alternate camera, unrequested gore, named
+    changing the side-scroll plane or inventing an alternate camera, unrequested named
     religious props, copied meters or fabricated interface text, filtering non-pixel subjects with
     uniform scanlines or blur, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Blasphemous (2019 base game by The Game Kitchen; Steam PC listing and Team17 publisher gallery)
@@ -110,7 +110,7 @@ attributes:
         field: global
       - text: changing the side-scroll plane or inventing an alternate camera
         field: global
-      - text: unrequested gore, named religious props, copied meters or fabricated interface text
+      - text: unrequested named religious props, copied meters or fabricated interface text
         field: global
       - text: filtering non-pixel subjects with uniform scanlines or blur
         field: global

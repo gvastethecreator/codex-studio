@@ -23,7 +23,7 @@ visualDna:
   lighting_and_shadow: Crimson moon backlight forms a clean halo, lantern glow opens the torso, and shadows stay broad instead of murky.
   texture_and_material: Wet brick, velvet cloak, moth-wing powder, iron keys, carved balcony stone, and smooth graphic fog.
   camera_and_composition: Upward gothic framing, crescent-moon negative space, winglike silhouette rhythm, and tiny-mask scale notes only when the subject supports them.
-  atmosphere_and_mood: 'Aristocratic, nocturnal, predatory, and gothic illustrative; nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony, at whatever intensity the requested scene sets.'
+  atmosphere_and_mood: Aristocratic, nocturnal, predatory, and gothic illustrative; nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony, at whatever intensity the requested scene sets.
   rendering_and_quality: Stylized gothic illustration with strong silhouettes, clean dark gradients, defined lines, and controlled red accents.
   creative_brief: 'Crimson Moon Alley Gothic: Gothic fantasy noir under a crimson moon; mixing medieval alleys; wrought iron; supernatural fog; Transform any subject with aristocratic gothic noir tension.'
   key_features: Crimson Moon Alley Gothic; Gothic fantasy noir under a crimson moon; mixing medieval alleys; wrought iron; supernatural fog; Transform any subject with aristocratic gothic noir tension
@@ -32,7 +32,6 @@ avoidRules:
   - modern streetwear
   - clean daylight
   - cute cartoon
-  - explicit gore
   - watermark
   - text
   - vampire portrait default
@@ -44,7 +43,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-009.webp
 attributes:
-  negativePrompt: neon cyberpunk, modern streetwear, clean daylight, cute cartoon, explicit gore, watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
+  negativePrompt: neon cyberpunk, modern streetwear, clean daylight, cute cartoon, watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

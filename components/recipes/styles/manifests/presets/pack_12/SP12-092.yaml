@@ -56,7 +56,7 @@ visualDna:
 avoidRules:
   - unrequested use of the named hero roster, exact enemy designs, hamlet or dungeon layout
   - changing the tactical side view to pixel-platformer or third-person 3D
-  - unrequested gore, stress symbols, torch icons or fabricated status text
+  - unrequested stress symbols, torch icons or fabricated status text
   - wide cinematic staging that makes units too small to read
   - existing franchise characters
   - series logo or title lettering
@@ -67,7 +67,7 @@ assets:
 attributes:
   negativePrompt: >-
     unrequested use of the named hero roster, exact enemy designs, hamlet or dungeon layout,
-    changing the tactical side view to pixel-platformer or third-person 3D, unrequested gore, stress
+    changing the tactical side view to pixel-platformer or third-person 3D, unrequested stress
     symbols, torch icons or fabricated status text, wide cinematic staging that makes units too
     small to read, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: Darkest Dungeon (2016 release by Red Hook Studios)
@@ -107,7 +107,7 @@ attributes:
         field: global
       - text: changing the tactical side view to pixel-platformer or third-person 3D
         field: global
-      - text: unrequested gore, stress symbols, torch icons or fabricated status text
+      - text: unrequested stress symbols, torch icons or fabricated status text
         field: global
       - text: wide cinematic staging that makes units too small to read
         field: global

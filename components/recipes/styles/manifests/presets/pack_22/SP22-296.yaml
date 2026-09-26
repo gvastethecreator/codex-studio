@@ -29,10 +29,9 @@ visualDna:
   camera_and_composition: Preserve the requested framing with the reaction face dominant.
   atmosphere_and_mood: Keep the requested mood with slapstick comedy energy.
   rendering_and_quality: Clean readable gag drawing with exaggerated timing, kept consistent across the whole image.
-  creative_brief: "Gag deformation ink: comedy manga where characters suddenly deform into simple squashed shapes, huge sweat drops and shocked white eyes. Carry it through super-deformed reactions, huge sweat drops, blank eyes, slapstick. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Gag deformation ink: comedy manga where characters suddenly deform into simple squashed shapes, huge sweat drops and shocked white eyes. Carry it through super-deformed reactions, huge sweat drops, blank eyes, slapstick. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: super-deformed reactions; huge sweat drops; blank eyes; slapstick
 avoidRules:
-  - realistic gore
   - speech bubbles
   - sound-effect lettering
   - franchise character likeness
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: realistic gore, speech bubbles, sound-effect lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: speech bubbles, sound-effect lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

@@ -23,7 +23,7 @@ visualDna:
   lighting_and_shadow: Holy rim light breaks through clouds, with long shadows and glowing inscriptions as secondary light sources.
   texture_and_material: Engraved metal, mossy stone, torn banners, ancient parchment, and luminous etched rune lines.
   camera_and_composition: Heroic scale through wide negative planes, centered relic hierarchy, gilded vertical accents, and mythic distance pressure that adapts to the prompt subject.
-  atmosphere_and_mood: 'Grand, elegiac, haunted, and ancient, with wonder balanced by ruin; ruined majesty, moral dread, sacred pressure, weathered myth, and restrained grimdark wonder without gore shortcuts, at whatever intensity the requested scene sets.'
+  atmosphere_and_mood: Grand, elegiac, haunted, and ancient, with wonder balanced by ruin; ruined majesty, moral dread, sacred pressure, weathered myth, and restrained grimdark wonder without gore shortcuts, at whatever intensity the requested scene sets.
   rendering_and_quality: High-detail fantasy illustration with painterly polish, ornate surfaces, and readable silhouettes.
   creative_brief: 'Gilded Rune Epic: Vast mythic medieval epic where gold sigils; ruined kingdoms; divine weather dominate the frame; antlered or halo like geometry as optional shape rhythm; legendary vertical elegance.'
   key_features: Gilded Rune Epic; Vast mythic medieval epic where gold sigils; ruined kingdoms; divine weather dominate the frame; antlered or halo like geometry as optional shape rhythm; legendary vertical elegance
@@ -32,7 +32,6 @@ avoidRules:
   - shiny new armor
   - cartoon magic
   - sci fi panels
-  - explicit gore
   - watermark
   - text
   - generic fantasy splash art
@@ -44,7 +43,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-002.webp
 attributes:
-  negativePrompt: generic high fantasy, shiny new armor, cartoon magic, sci fi panels, explicit gore, watermark, text, generic fantasy splash art, quest party lock, gore only darkness, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
+  negativePrompt: generic high fantasy, shiny new armor, cartoon magic, sci fi panels, watermark, text, generic fantasy splash art, quest party lock, gore only darkness, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

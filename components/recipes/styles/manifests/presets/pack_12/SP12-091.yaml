@@ -58,7 +58,7 @@ avoidRules:
     unrequested named roster characters, copied exact arenas or signature fatalities; retain the
     reference game costume and equipment design vocabulary
   - switching the match plane to third-person roaming or a 2D pixel treatment
-  - unrequested gore, move names, round text or fabricated health bars
+  - unrequested move names, round text or fabricated health bars
   - key-art posing that hides playable spacing
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-091.webp
@@ -66,7 +66,7 @@ attributes:
   negativePrompt: >-
     unrequested named roster characters, copied exact arenas or signature fatalities; retain the
     reference game costume and equipment design vocabulary, switching the match plane to
-    third-person roaming or a 2D pixel treatment, unrequested gore, move names, round text or
+    third-person roaming or a 2D pixel treatment, unrequested move names, round text or
     fabricated health bars, key-art posing that hides playable spacing, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: >-
     Mortal Kombat 1 (2023 initial release by NetherRealm Studios and QLOC; ignore later DLC-specific
@@ -109,7 +109,7 @@ attributes:
         field: global
       - text: switching the match plane to third-person roaming or a 2D pixel treatment
         field: global
-      - text: unrequested gore, move names, round text or fabricated health bars
+      - text: unrequested move names, round text or fabricated health bars
         field: global
       - text: key-art posing that hides playable spacing
         field: global

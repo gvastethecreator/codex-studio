@@ -38,7 +38,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Soot Wash',
     category: '3. Strange Ink & Paint',
     negativePrompt:
-      'uniform wash laid over every shape, muddy darks that erase value separation, unrequested ghostly or fog effects, unrequested horror or violence',
+      'uniform wash laid over every shape, muddy darks that erase value separation, unrequested ghostly or fog effects, unrequested horror',
     style: {
       aesthetic:
         'Let diluted ink washes build broad forms from transparent darks and clear reserves. Alternate softened wash edges with a few loaded brush marks so the wash itself describes the subject.',
@@ -68,7 +68,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Broken Fresco',
     category: '3. Strange Ink & Paint',
     negativePrompt:
-      'automatic cracks or widespread surface aging, unrequested walls, ruins, or historical setting, unrequested horror or violence',
+      'automatic cracks or widespread surface aging, unrequested walls, ruins, or historical setting, unrequested horror',
     style: {
       aesthetic:
         'Treat the requested image with matte mineral pigments, compact color planes and broad brush-defined contours. Use direct, flat paint handling as an illustration method while keeping the represented subject and setting unchanged.',
@@ -128,7 +128,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Black Mass Gouache',
     category: '3. Strange Ink & Paint',
     negativePrompt:
-      'unrequested blood, torn clothing, or threatening subject matter, forced monochrome when color is requested, detail that breaks broad value masses, unrequested horror or violence',
+      'unrequested torn clothing or threatening subject matter, forced monochrome when color is requested, detail that breaks broad value masses, unrequested horror',
     style: {
       aesthetic:
         'Build recognizable forms from a few large opaque gouache shapes and clear reserves. Use crisp edges and deliberate loss of small interior detail to make the broad masses carry the image.',
@@ -158,7 +158,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Spectral Scumble',
     category: '3. Strange Ink & Paint',
     negativePrompt:
-      'turning a solid subject into a ghost, digital halo or continuous outer glow, highlights unrelated to the requested light, unrequested horror or violence',
+      'turning a solid subject into a ghost, digital halo or continuous outer glow, highlights unrelated to the requested light, unrequested horror',
     style: {
       aesthetic:
         "Build local highlights and form with dry, broken scumbles over the image's existing deeper values. Let the brushed light emerge from pigment on the surface.",
@@ -188,7 +188,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Uneven Tempera',
     category: '3. Strange Ink & Paint',
     negativePrompt:
-      'unrequested body distortion or grotesque exaggeration, brush irregularity that damages the silhouette, uniform surface scuffing, unrequested horror or violence',
+      'unrequested body distortion or grotesque exaggeration, brush irregularity that damages the silhouette, uniform surface scuffing, unrequested horror',
     style: {
       aesthetic:
         'Use opaque tempera with a visible hand-painted contour, variable brush pressure and short matte marks. Let small stroke asymmetries make the surface feel made by hand.',
@@ -218,7 +218,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Occult Cutprint',
     category: '3. Strange Ink & Paint',
     negativePrompt:
-      'unrequested occult symbols, sigils, or lore, cut marks that close important negative spaces, unrequested text or lettering, unrequested horror or violence',
+      'unrequested occult symbols, sigils, or lore, cut marks that close important negative spaces, unrequested text or lettering, unrequested horror',
     style: {
       aesthetic:
         'Construct a relief-print image from broad positive shapes and incisive negative cuts. Vary the carved contour and direct cut marks along the form instead of using conventional soft shading.',
@@ -255,7 +255,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Strange Ink & Paint',
     domain: 'ink spreading like veins',
     negativePrompt:
-      'clean vector lines, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'clean vector lines, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Bleeding ink veins: dark ink drawn onto damp paper so every line spreads into branching vein-like tendrils, as if the drawing were alive.',
@@ -286,7 +286,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Strange Ink & Paint',
     domain: 'dark bitumen glaze painting',
     negativePrompt:
-      'bright daylight, clean white, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'bright daylight, clean white, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Bitumen glaze gloom: oil painting sunk under warm brown-black bitumen glazes, with forms emerging like relics from a deep amber darkness.',
@@ -314,7 +314,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Strange Ink & Paint',
     domain: 'nervous fine nib drawing',
     negativePrompt:
-      'clean thick outlines, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'clean thick outlines, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Spidery nib scrawl: frantic thin dip-pen lines scribbled and looped over each other, nervous and spindly, building forms out of tangled webs of ink.',
@@ -347,7 +347,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Strange Ink & Paint',
     domain: 'sickly bruise palette washes',
     negativePrompt:
-      'bright cheerful palette, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'bright cheerful palette, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Bruise-tone watercolor: transparent washes in the sickly purples, yellows and greens of fading bruises, soft and unsettling.',
@@ -376,7 +376,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Strange Ink & Paint',
     domain: 'creatures developed from ink blots',
     negativePrompt:
-      'fully rendered painting, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'fully rendered painting, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Blot-grown creatures: random ink blots developed into creatures by adding a few eyes, teeth, legs and lines, so every monster keeps its accidental shape.',
@@ -404,7 +404,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Strange Ink & Paint',
     domain: 'flicked ink spatter storms',
     negativePrompt:
-      'smooth gradients, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'smooth gradients, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Spatter storm ink: ink flicked from brushes and toothbrushes in dense spray storms, forming the subject from clouds of droplets and a few firm strokes.',
@@ -433,7 +433,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Strange Ink & Paint',
     domain: 'black and red lacquer painting',
     negativePrompt:
-      'matte chalky finish, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'matte chalky finish, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Red-accent black lacquer: glossy black painted surfaces with vivid red accents and fine gold lines, polished like old lacquer screens.',
@@ -466,7 +466,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Strange Ink & Paint',
     domain: 'metallic ink on dark paper',
     negativePrompt:
-      'glitter, bright white paper, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'glitter, bright white paper, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Tarnished metallic ink: silver, bronze and copper inks drawn on dark paper, their shine dulled and tarnished in places like old relics.',
@@ -496,7 +496,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Strange Ink & Paint',
     domain: 'flaking wall painting',
     negativePrompt:
-      'digital grunge overlay, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'digital grunge overlay, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Flaking mural paint: an image painted on an old plaster wall, with paint lifting and flaking away to reveal plaster and older layers beneath.',
@@ -526,7 +526,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Strange Ink & Paint',
     domain: 'copper-green oxidized washes',
     negativePrompt:
-      'bright neon colors, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'bright neon colors, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Verdigris wash: paintings washed in the blue-green of oxidized copper with streaked rust-brown accents, like weathered bronze turned into paint.',
@@ -555,7 +555,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Strange Ink & Paint',
     domain: 'warm smeared wax color',
     negativePrompt:
-      'flat digital fill, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'flat digital fill, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Smeared wax pigment: color laid in melted wax and smeared with palette knives and fingers, glossy, layered and translucent in thin spots.',
@@ -584,7 +584,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Strange Ink & Paint',
     domain: 'old varnish craquelure painting',
     negativePrompt:
-      'clean modern finish, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'clean modern finish, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Cracked varnish veil: an old painting seen through yellowed cracking varnish, with a fine craquelure web over every surface and warm aged tones.',

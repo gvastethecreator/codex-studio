@@ -23,7 +23,7 @@ visualDna:
   lighting_and_shadow: Candle groups create glowing faces, clean black corner shapes, and simple theatrical highlights.
   texture_and_material: Fur trims, vellum pages, carved wood, wax, brocade, feathers, claws, and old ink.
   camera_and_composition: Courtly grouping rhythm, council-like spacing, ornate frame pressure, and symbolic hierarchy without requiring banquet layout or clustered figures.
-  atmosphere_and_mood: 'Aristocratic, uncanny, theatrical, and secretive; nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony, at whatever intensity the requested scene sets.'
+  atmosphere_and_mood: Aristocratic, uncanny, theatrical, and secretive; nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony, at whatever intensity the requested scene sets.
   rendering_and_quality: Luxurious gothic illustration with sharp costume detail and candlelit material richness.
   creative_brief: 'Candlelit Bestiary Court: Gothic courtly fantasy where beasts; nobles; scholars gather in candlelit bestiary drama; Transform any subject with courtly gothic refinement; bestiary symbolism.'
   key_features: Candlelit Bestiary Court; Gothic courtly fantasy where beasts; nobles; scholars gather in candlelit bestiary drama; Transform any subject with courtly gothic refinement; bestiary symbolism
@@ -32,7 +32,6 @@ avoidRules:
   - clean fantasy palace
   - cute animal mascot
   - flat lighting
-  - explicit gore
   - watermark
   - text
   - vampire portrait default
@@ -44,7 +43,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-012.webp
 attributes:
-  negativePrompt: modern ballroom, clean fantasy palace, cute animal mascot, flat lighting, explicit gore, watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
+  negativePrompt: modern ballroom, clean fantasy palace, cute animal mascot, flat lighting, watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

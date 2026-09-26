@@ -227,7 +227,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Grimdark Game Systems & Tabletop',
     domain: 'biomechanical medieval reliquary',
     negativePrompt:
-      'explicit gore, exposed organs as shock focus, alien franchise likeness, slick sci-fi corridor, dense cable spaghetti, photoreal wet anatomy, pinup cyborg, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+      'exposed organs as shock focus, alien franchise likeness, slick sci-fi corridor, dense cable spaghetti, photoreal wet anatomy, pinup cyborg, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
     style: {
       aesthetic:
         'Biomechanical medieval reliquary style with tendon cables, black iron, bone housings, cathedral machinery, and organic-machine dread kept non-graphic.',
@@ -262,7 +262,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Grimdark Game Systems & Tabletop',
     domain: 'future apocalyptic horror machinery',
     negativePrompt:
-      'explicit torture, graphic injury focus, blood spray, real-world prison imagery, sci-fi UI screens, modern logo signage, shock gore poster, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+      'explicit torture, graphic injury focus, real-world prison imagery, sci-fi UI screens, modern logo signage, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
     style: {
       aesthetic:
         'Future-apocalyptic punishment-machine fantasy with restraint architecture, rusted exoskeletons, ritual machinery, black scaffolds, and implied suffering without graphic torture detail.',
@@ -298,7 +298,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Grimdark Game Systems & Tabletop',
     domain: 'modern endless war gothic fantasy',
     negativePrompt:
-      'real national flags, readable unit patches, modern propaganda poster, specific real war event, military UI, gun catalog pose, battlefield gore, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+      'real national flags, readable unit patches, modern propaganda poster, specific real war event, military UI, gun catalog pose, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
     style: {
       aesthetic:
         'Endless modern-war gothic where trench geometry, ruined cathedrals, drone silhouettes, gaslight, and medieval heraldic decay merge into permanent conflict without real-world flags.',
@@ -333,7 +333,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Grimdark Game Systems & Tabletop',
     domain: 'grim card-battle illustration',
     negativePrompt:
-      'card text or numbers, gore, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'card text or numbers, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Dark deckbuilder card art: small bold painted card illustrations for a grim card-battle game, one clear action or creature per card with a heavy dark vignette.',
@@ -365,7 +365,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Grimdark Game Systems & Tabletop',
     domain: 'roguelike defeat scene',
     negativePrompt:
-      'gore, game over text, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'game over text, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Permadeath roguelike tableau: the frozen moment after a hero falls in a procedural dungeon, fallen gear, lingering monsters and a quiet grim stillness.',
@@ -396,7 +396,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Grimdark Game Systems & Tabletop',
     domain: 'painted grim tabletop terrain',
     negativePrompt:
-      'gore, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Grimdark terrain diorama: a hand-built tabletop terrain piece of ruined chapels, barbed wire, skull piles and mud, painted and weathered like a hobby showpiece.',
@@ -427,7 +427,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Grimdark Game Systems & Tabletop',
     domain: 'grim boss battle arena',
     negativePrompt:
-      'gore, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Boss arena grim vista: a vast ruined arena where a small hero faces an enormous boss creature, fog, broken pillars and a single dramatic light.',
@@ -463,7 +463,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Grimdark Game Systems & Tabletop',
     domain: 'survival horror fixed camera frame',
     negativePrompt:
-      'gore, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Fixed-camera castle horror: survival-horror framing from a high static corner camera in a gloomy castle, pre-rendered backgrounds and a small vulnerable figure.',
@@ -497,7 +497,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Grimdark Game Systems & Tabletop',
     domain: 'dark item with rarity aura',
     negativePrompt:
-      'item names or stats, gore, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'item names or stats, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Grim loot rarity glow: a single dark fantasy item lying in the dirt, surrounded by a colored rarity aura of light beams and sparks rising into the dark.',
@@ -527,7 +527,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Grimdark Game Systems & Tabletop',
     domain: 'dark turn-based squad battle',
     negativePrompt:
-      'gore, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Grim squad tactics grid: a top-down or angled grid battlefield where a small squad of dark fantasy units faces overwhelming odds in a ruined town.',
@@ -564,7 +564,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Grimdark Game Systems & Tabletop',
     domain: 'hand-painted adventure game scene',
     negativePrompt:
-      'cursor or interface, gore, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cursor or interface, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Painted point-and-click crypt: a hand-painted adventure-game background of a crypt or gothic interior, full of clickable-looking curious objects, with a small character.',
@@ -599,7 +599,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Grimdark Game Systems & Tabletop',
     domain: 'miniature painting progression',
     negativePrompt:
-      'step numbers or labels, gore, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'step numbers or labels, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Army painting step guide: the same grim miniature shown in several stages from grey primer to basecoat, wash and highlights, lined up like a hobby tutorial.',
@@ -634,7 +634,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Grimdark Game Systems & Tabletop',
     domain: 'close-up tabletop miniature photograph',
     negativePrompt:
-      'gore, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Macro grim miniature photo: an extreme close-up photograph of a painted grimdark miniature on a battlefield table, shallow depth of field and dramatic hobby lighting.',
@@ -671,7 +671,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Grimdark Game Systems & Tabletop',
     domain: 'hero portrait under mental strain',
     negativePrompt:
-      'gore, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Stress-break hero portrait: a gritty close portrait of an adventurer at the breaking point, wide eyes, shaking hands, heavy ink shadows and a trembling torchlit glow.',

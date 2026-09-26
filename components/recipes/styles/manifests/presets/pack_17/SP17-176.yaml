@@ -29,10 +29,9 @@ visualDna:
   camera_and_composition: Low heroic angle against a big sky, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with glossy heroic spectacle.
   rendering_and_quality: Hyper-glossy airbrush finish, no text, kept consistent across the whole image.
-  creative_brief: "Chrome-armor airbrush hero: eighties airbrushed fantasy heroes in mirror-bright chrome armor reflecting sunsets and lightning, smooth and hyper-glossy. Carry it through mirror chrome armor, sky reflections, airbrush, low angle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Chrome-armor airbrush hero: eighties airbrushed fantasy heroes in mirror-bright chrome armor reflecting sunsets and lightning, smooth and hyper-glossy. Carry it through mirror chrome armor, sky reflections, airbrush, low angle. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: mirror chrome armor; sky reflections; airbrush; low angle
 avoidRules:
-  - gore
   - title lettering
   - existing franchise heroes
   - readable text
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

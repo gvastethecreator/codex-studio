@@ -26,7 +26,7 @@ visualDna:
   atmosphere_and_mood: Keep the requested mood with raw giant-scale panic.
   rendering_and_quality: Raw scratchy manga illustration with grotesque giant scale.
   key_features: Isayama scratch; grotesque giant faces; raw anatomy; panic crowds
-  creative_brief: "Hajime Isayama Attack on Titan manga look: rough scratchy crosshatching, awkward raw anatomy, grotesque giant faces with unsettling grins and panic-filled crowded panels. Carry it through Isayama scratch, grotesque giant faces, raw anatomy, panic crowds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Hajime Isayama Attack on Titan manga look: rough scratchy crosshatching, awkward raw anatomy, grotesque giant faces with unsettling grins and panic-filled crowded panels. Carry it through Isayama scratch, grotesque giant faces, raw anatomy, panic crowds. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - a skinless colossal titan face over a wall
   - existing franchise characters
@@ -37,7 +37,6 @@ avoidRules:
   - adding a fight or power effect to a quiet prompt
   - readable glyphs or sigils
   - exposed-muscle giant
-  - eaten body
   - realistic
   - 3d render
   - photo
@@ -72,7 +71,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-139.webp
 attributes:
-  negativePrompt: a skinless colossal titan face over a wall, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, exposed-muscle giant, eaten body, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
+  negativePrompt: a skinless colossal titan face over a wall, existing franchise characters, franchise character likeness, copied franchise costume or emblem, signature franchise weapon, generic spiky-haired teen protagonist, adding a fight or power effect to a quiet prompt, readable glyphs or sigils, exposed-muscle giant, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, photoreal cosplay, western superhero comic, generic shonen source-frame look, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work, noisy compression artifacts
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

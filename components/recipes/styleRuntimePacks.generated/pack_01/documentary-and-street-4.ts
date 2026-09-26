@@ -124,7 +124,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Documentary (War)',
     category: '4. Documentary And Street',
     negativePrompt:
-      'staged advertisement, stock-photo gloss, generic stock-photo face, celebrity likeness, inventing an event the prompt did not ask for, posed, heroic poster pose, gore, explosion not in the prompt, happy, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, fake smiles, tourist postcard polish, readable captions, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'staged advertisement, stock-photo gloss, generic stock-photo face, celebrity likeness, inventing an event the prompt did not ask for, posed, heroic poster pose, explosion not in the prompt, happy, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, fake smiles, tourist postcard polish, readable captions, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'War reportage: a 35 mm witness close to exhausted people in harsh conditions, shot fast, without heroics or staging.',

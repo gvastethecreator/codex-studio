@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Intimate close groupings and vast halls glittering with countless flames.
   atmosphere_and_mood: Warm, fragile and hushed, a world that could go dark with one breath.
   rendering_and_quality: Low-key warm illustration with soft flame glow and wax detail.
-  creative_brief: "Candlepunk: a world lit only by candles, with dripping wax cities, chandelier forests, candle-maker guilds and faces glowing in warm flickering pools. Carry it through candle-only light, dripping wax, chandelier halls, flickering pools. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Candlepunk: a world lit only by candles, with dripping wax cities, chandelier forests, candle-maker guilds and faces glowing in warm flickering pools. Carry it through candle-only light, dripping wax, chandelier halls, flickering pools. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: candle-only light; dripping wax; chandelier halls; flickering pools
 avoidRules:
   - readable text
@@ -37,7 +37,6 @@ avoidRules:
   - real artist signature
   - copying a specific famous artwork
   - muddy noisy texture
-  - gore
   - graphic wounds
   - real religious leader likeness
   - readable runes or scripture
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

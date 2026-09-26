@@ -29,10 +29,9 @@ visualDna:
   camera_and_composition: High mountain view with beams converging on a point.
   atmosphere_and_mood: Keep the requested mood with radiant ascetic devotion.
   rendering_and_quality: Clean luminous painting with strong beam geometry, kept consistent across the whole image.
-  creative_brief: "Solar monastery engine: mountain monasteries built around vast golden mirror machines that gather sunlight, monks tending lenses, gears and prayer wheels. Carry it through mirror machines, converging sunbeams, mountain monastery, brass. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Solar monastery engine: mountain monasteries built around vast golden mirror machines that gather sunlight, monks tending lenses, gears and prayer wheels. Carry it through mirror machines, converging sunbeams, mountain monastery, brass. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: mirror machines; converging sunbeams; mountain monastery; brass
 avoidRules:
-  - gore
   - readable runes or text
   - existing franchise armor or emblems
   - readable text
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: gore, readable runes or text, existing franchise armor or emblems, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable runes or text, existing franchise armor or emblems, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

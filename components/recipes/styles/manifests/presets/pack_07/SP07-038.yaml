@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Silent, buried and ancient, cool air far below ground.
   rendering_and_quality: Low-light photograph with carved tool marks and mineral crust detail, niches empty, no human remains or horror display.
   key_features: carved chalk and tuff chambers; low compressed barrel vaults; walls of empty stacked niches; calcite crust; lantern-only light
-  creative_brief: "Ossuary subterranean architecture: chambers carved into chalk, tuff or limestone, with low compressed barrel vaults and walls of empty stacked niches, crusted with calcite. Carry it through carved chalk and tuff chambers, low compressed barrel vaults, walls of empty stacked niches, calcite crust, lantern-only light. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Ossuary subterranean architecture: chambers carved into chalk, tuff or limestone, with low compressed barrel vaults and walls of empty stacked niches, crusted with calcite. Carry it through carved chalk and tuff chambers, low compressed barrel vaults, walls of empty stacked niches, calcite crust, lantern-only light. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - one-point corridor perspective as default
   - wet mirror-gloss floor as default
@@ -30,7 +30,6 @@ avoidRules:
   - human remains
   - skulls
   - bones
-  - gore
   - horror display
   - bone/remains language
   - exposed human remains
@@ -63,7 +62,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-038.webp
 attributes:
-  negativePrompt: one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, human remains, skulls, bones, gore, horror display, bone/remains language, exposed human remains, fresh remains, catacomb corridor, dungeon hall, fantasy tunnel, ritual scene, camera prop, empty abstraction, long corridor, readable map or sign, fixed building-only scene, corridor perspective, furniture showroom, market aisle, library aisle, prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, human remains, skulls, bones, horror display, bone/remains language, exposed human remains, fresh remains, catacomb corridor, dungeon hall, fantasy tunnel, ritual scene, camera prop, empty abstraction, long corridor, readable map or sign, fixed building-only scene, corridor perspective, furniture showroom, market aisle, library aisle, prompt-required card, readable text, logo, watermark, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

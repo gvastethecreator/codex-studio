@@ -4,7 +4,7 @@ import { dna } from './_strict';
 
 // Horror anime (part B): fourteen more horror looks. Dread comes from light, space, texture and
 // timing; no gore and no franchise monsters.
-const AVOID = [...ANIME_AVOID, 'gore', 'graphic wounds'];
+const AVOID = [...ANIME_AVOID,  'graphic wounds'];
 
 const create = (
   name: string,

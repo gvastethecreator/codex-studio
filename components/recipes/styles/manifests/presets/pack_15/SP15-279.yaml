@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Woven structures with patterned light and small figures inside.
   atmosphere_and_mood: Light, clever and cheerful, strength made from bending branches.
   rendering_and_quality: Detailed illustration with intricate weave patterns and dappled shadow.
-  creative_brief: "Wickerpunk: engineers who weave everything from willow and rattan, with basket balloons, woven bridges, wicker carriages and huge lattice structures. Carry it through basket balloons, woven bridges, wicker carriages, lattice shadows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Wickerpunk: engineers who weave everything from willow and rattan, with basket balloons, woven bridges, wicker carriages and huge lattice structures. Carry it through basket balloons, woven bridges, wicker carriages, lattice shadows. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: basket balloons; woven bridges; wicker carriages; lattice shadows
 avoidRules:
   - readable text
@@ -37,7 +37,6 @@ avoidRules:
   - real artist signature
   - copying a specific famous artwork
   - muddy noisy texture
-  - gore
   - sacred regalia of a specific living culture
   - real brand or company logo
   - watermark
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

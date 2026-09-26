@@ -28,11 +28,10 @@ visualDna:
   camera_and_composition: Preserve the requested framing with the full creature visible.
   atmosphere_and_mood: Keep the requested mood with a sense of real possible biology.
   rendering_and_quality: Convincing anatomical concept painting with clean transitions, kept consistent across the whole image.
-  creative_brief: "Hybrid creature anatomy: creatures fused from two or more animals with believable joints, muscles and skin transitions, painted like convincing concept art. Carry it through fused animal parts, believable joints, skin transitions, concept-art realism. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Hybrid creature anatomy: creatures fused from two or more animals with believable joints, muscles and skin transitions, painted like convincing concept art. Carry it through fused animal parts, believable joints, skin transitions, concept-art realism. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: fused animal parts; believable joints; skin transitions; concept-art realism
 avoidRules:
   - random collage parts
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -47,7 +46,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: random collage parts, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: random collage parts, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

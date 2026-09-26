@@ -20,13 +20,12 @@ visualDna:
   lighting_and_shadow: Graphic black masses and fluorescent fills create a glowing blacklight illusion.
   texture_and_material: Rough hatch marks, stippled membranes, controlled xerox texture, screenprint dots, and clean neon fill.
   camera_and_composition: Tight specimen hierarchy, centered eye or maw-like focal voids when compatible, border pressure, and minimal empty space without fixed anatomy.
-  atmosphere_and_mood: 'Weird, loud, gross funny, occult, and tabletop dungeon adjacent; abrasive underground humor, occult craft, lurid dungeon play, copier damage, and punk handmade danger, at whatever intensity the requested scene sets.'
+  atmosphere_and_mood: Weird, loud, gross funny, occult, and tabletop dungeon adjacent; abrasive underground humor, occult craft, lurid dungeon play, copier damage, and punk handmade danger, at whatever intensity the requested scene sets.
   rendering_and_quality: High-impact zine illustration with clean silhouette logic, heavy denoise, and controlled print reproduction.
   creative_brief: 'Blacklight Monster Manual: Blacklight fantasy monster manual where creature anatomy becomes bold ink; neon organs; weird page icon energy; maw like negative space; bulbous horn curves.'
   key_features: Blacklight Monster Manual; Blacklight fantasy monster manual where creature anatomy becomes bold ink; neon organs; weird page icon energy; maw like negative space; bulbous horn curves
 avoidRules:
   - realistic anatomy
-  - medical gore
   - cute mascot
   - smooth fantasy painting
   - clean vector
@@ -41,7 +40,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-016.webp
 attributes:
-  negativePrompt: realistic anatomy, medical gore, cute mascot, smooth fantasy painting, clean vector, watermark, text, readable zine typography, generic dungeon corridor, muddy photocopy noise, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
+  negativePrompt: realistic anatomy, cute mascot, smooth fantasy painting, clean vector, watermark, text, readable zine typography, generic dungeon corridor, muddy photocopy noise, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

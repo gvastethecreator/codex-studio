@@ -23,7 +23,7 @@ visualDna:
   lighting_and_shadow: Hard high sun, chalky bounce light, pale rim edges, and shallow dry shadows.
   texture_and_material: Salt crust, chalk stone, sun-bleached cloth, cracked ceramic, rope fiber, and powder dust.
   camera_and_composition: Sparse monumental framing, heat-haze compression, horizontal austerity, and one decisive ritual silhouette or material anchor adapted to the user's subject.
-  atmosphere_and_mood: 'Severe, devotional, exhausted, bright, and mythic; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness, at whatever intensity the requested scene sets.'
+  atmosphere_and_mood: Severe, devotional, exhausted, bright, and mythic; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness, at whatever intensity the requested scene sets.
   rendering_and_quality: Clean bleached fantasy illustration with controlled texture, readable pale values, and no muddy darkness.
   creative_brief: 'Salt Cathedral Pilgrimage: Bleached feudal pilgrimage fantasy where salt crust; sun struck stone; dry cloth; sacred glare turn the scene austere and ritualized; salt white material logic.'
   key_features: Salt Cathedral Pilgrimage; Bleached feudal pilgrimage fantasy where salt crust; sun struck stone; dry cloth; sacred glare turn the scene austere and ritualized; salt white material logic
@@ -33,7 +33,6 @@ avoidRules:
   - generic robed traveler
   - readable map
   - dark dungeon
-  - explicit gore
   - watermark
   - text
   - generic royal portrait
@@ -45,7 +44,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-047.webp
 attributes:
-  negativePrompt: desert postcard, oasis fantasy, generic robed traveler, readable map, dark dungeon, explicit gore, watermark, text, generic royal portrait, romance novel cover, prompt literal medieval card, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
+  negativePrompt: desert postcard, oasis fantasy, generic robed traveler, readable map, dark dungeon, watermark, text, generic royal portrait, romance novel cover, prompt literal medieval card, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

@@ -73,7 +73,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Tactical & Solitary Frontiers',
     domain: 'polar outpost solitude',
     negativePrompt:
-      'tropical scenery, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'tropical scenery, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Arctic weather-station solitude: a tiny research hut and instrument masts on endless white ice, painted in cold gouache with one warm window glowing.',
@@ -106,7 +106,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Tactical & Solitary Frontiers',
     domain: 'lone desert haulage',
     negativePrompt:
-      'lush greenery, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'lush greenery, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Desert long-haul courier: a single battered truck or walker crossing enormous dune seas, painted in heat-shimmer ochres with dust trailing for miles.',
@@ -141,7 +141,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Tactical & Solitary Frontiers',
     domain: 'solo orbital repair work',
     negativePrompt:
-      'atmospheric haze in space, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'atmospheric haze in space, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Orbital lone maintenance: a single technician tethered to a vast silent structure in orbit, rendered in crisp technical illustration with the planet turning below.',
@@ -178,7 +178,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Tactical & Solitary Frontiers',
     domain: 'alpine rescue in whiteout',
     negativePrompt:
-      'clear blue sky, summer, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'clear blue sky, summer, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Whiteout mountain rescue: rescuers roped together on a storm-blasted ridge, painted in near-white charcoal and chalk where snow and sky merge.',
@@ -213,7 +213,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Tactical & Solitary Frontiers',
     domain: 'wildfire lookout solitude',
     negativePrompt:
-      'close flames engulfing, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'close flames engulfing, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Fire-lookout tower vigil: a lone watcher in a glass cabin atop a tower above endless forest, painted in warm gouache with smoke columns on the horizon.',
@@ -241,7 +241,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Tactical & Solitary Frontiers',
     domain: 'lone cave surveying',
     negativePrompt:
-      'daylight, crowded tourists, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'daylight, crowded tourists, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Deep-cave survey lamp: a lone surveyor mapping enormous underground chambers by helmet lamp, painted in dense ink wash where light barely reaches.',
@@ -271,7 +271,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Tactical & Solitary Frontiers',
     domain: 'red-lit submarine watch',
     negativePrompt:
-      'daylight, spacious rooms, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'daylight, spacious rooms, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Submarine night watch: a single sailor on watch in a cramped red-lit control room, painted in tight chiaroscuro with gauges glowing in the gloom.',
@@ -300,7 +300,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Tactical & Solitary Frontiers',
     domain: 'lone northern cabin life',
     negativePrompt:
-      'summer, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'summer, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Tundra trapper cabin: a single log cabin on endless snowy tundra, painted in muted oil with smoke rising and snowshoe tracks leading away.',
@@ -329,7 +329,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Tactical & Solitary Frontiers',
     domain: 'lone salt flat outpost',
     negativePrompt:
-      'crowds, dense forest, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'crowds, dense forest, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Salt-flat signal post: a lonely antenna and caravan on mirror-flat white salt, painted in minimal pale tones where sky and ground reflect each other.',
@@ -359,7 +359,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Tactical & Solitary Frontiers',
     domain: 'offshore rig in storm',
     negativePrompt:
-      'calm sea, daylight, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'calm sea, daylight, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Storm-rig night shift: an offshore platform battered by black waves at night, painted in heavy wet oils with sodium floodlights and flying spray.',
@@ -389,7 +389,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Tactical & Solitary Frontiers',
     domain: 'remote border post at night',
     negativePrompt:
-      'national flags, readable signs, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'national flags, readable signs, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Cold checkpoint night: a small barrier post on an empty frozen road, painted in graphic ink and flat color with one lamp and long shadows.',
@@ -419,7 +419,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Tactical & Solitary Frontiers',
     domain: 'urban night recon',
     negativePrompt:
-      'daylight, readable signs, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'daylight, readable signs, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Rooftop surveillance night: a lone observer watching a rain-slick city from rooftops, painted in noir gouache with neon reflections and deep silhouettes.',
@@ -454,7 +454,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Tactical & Solitary Frontiers',
     domain: 'lone survey expedition art',
     negativePrompt:
-      'photographic realism, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'photographic realism, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Surveyor expedition plates: a lone surveyor mapping wild frontier land, rendered like hand-colored expedition plates with fine line and pale washes.',
@@ -484,7 +484,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Tactical & Solitary Frontiers',
     domain: 'lone salvage in drowned city',
     negativePrompt:
-      'readable signs, bright sunny tourism, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable signs, bright sunny tourism, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Flooded-city salvage rower: a lone rower gliding between drowned towers, painted in soft green-grey watercolor with reflections and floating debris.',
@@ -515,7 +515,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Tactical & Solitary Frontiers',
     domain: 'manhauling across ice',
     negativePrompt:
-      'color photography, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'color photography, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Polar sledge haul: a lone figure dragging a heavy sledge across endless pressure ice, rendered in stark black-and-white woodcut style with bold carved snow.',
@@ -546,7 +546,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Tactical & Solitary Frontiers',
     domain: 'lone volcano monitoring',
     negativePrompt:
-      'gore, daylight blue sky, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'daylight blue sky, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Volcano observatory vigil: a small monitoring station on the rim of an active volcano, painted in glowing oils with lava light and ash clouds.',
@@ -576,7 +576,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Tactical & Solitary Frontiers',
     domain: 'isolated lighthouse keeping',
     negativePrompt:
-      'calm tropical beach, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'calm tropical beach, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Lighthouse relief keeper: a lone keeper on a wave-battered rock lighthouse, painted in maritime oils with rotating beam and heavy seas.',
@@ -606,7 +606,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '2. Tactical & Solitary Frontiers',
     domain: 'lone steppe radio caravan',
     negativePrompt:
-      'city skyline, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'city skyline, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Nomad radio caravan: a lone traveler with a camel or horse carrying radio gear across a vast steppe, rendered in flat gouache with wide skies and tiny figures.',

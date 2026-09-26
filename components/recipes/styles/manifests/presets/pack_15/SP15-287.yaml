@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: High sky views with gliders and figures silhouetted against clouds.
   atmosphere_and_mood: Light, proud and soaring, a people who envy the birds.
   rendering_and_quality: Vivid detailed illustration with layered feather textures and bright sky.
-  creative_brief: "Featherpunk: an invented sky-loving culture of feather craft, with feather cloaks, fletched gliders, bird-rider scouts and towers crowned with plumes. Carry it through feather cloaks, fletched gliders, bird riders, plumed towers. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Featherpunk: an invented sky-loving culture of feather craft, with feather cloaks, fletched gliders, bird-rider scouts and towers crowned with plumes. Carry it through feather cloaks, fletched gliders, bird riders, plumed towers. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: feather cloaks; fletched gliders; bird riders; plumed towers
 avoidRules:
   - readable text
@@ -37,7 +37,6 @@ avoidRules:
   - real artist signature
   - copying a specific famous artwork
   - muddy noisy texture
-  - gore
   - sacred regalia of a specific living culture
   - real brand or company logo
   - watermark
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

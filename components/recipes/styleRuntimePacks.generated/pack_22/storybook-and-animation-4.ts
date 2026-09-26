@@ -594,7 +594,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Storybook & Animation',
     domain: 'gentle animal character watercolor',
     negativePrompt:
-      'aggressive predators, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'aggressive predators, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Woodland watercolor critters: gentle watercolor animal characters in little clothes, softly detailed fur and cozy woodland settings.',

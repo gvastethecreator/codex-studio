@@ -267,7 +267,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Haunted Toon Deformation',
     category: '5. Fantasy And Mythic Architecture',
     negativePrompt:
-      'licensed fantasy location, copy of a known film or game building, readable runes or inscriptions, glossy mirror floor by default, decorative waterfall by default, swapping the requested structure for a castle or temple, realistic horror, gore, monster, photoreal render, scary realistic, haunted mansion required, Halloween set, corridor, fantasy hall, chair, curtain, lamp, camera prop, empty abstraction, throne interior zones default, weapon prop, character hero, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, market aisle, library aisle, prompt-required card, readable text, logo, watermark, haunted mansion literal, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'licensed fantasy location, copy of a known film or game building, readable runes or inscriptions, glossy mirror floor by default, decorative waterfall by default, swapping the requested structure for a castle or temple, realistic horror, monster, photoreal render, scary realistic, haunted mansion required, Halloween set, corridor, fantasy hall, chair, curtain, lamp, camera prop, empty abstraction, throne interior zones default, weapon prop, character hero, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, market aisle, library aisle, prompt-required card, readable text, logo, watermark, haunted mansion literal, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Cartoon haunted architecture: rubbery crooked buildings that lean, bulge and twist, drawn with thick ink outlines and flat cel shading.',
@@ -352,7 +352,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Sepulchral Civic Monumentalism',
     category: '5. Fantasy And Mythic Architecture',
     negativePrompt:
-      'licensed fantasy location, copy of a known film or game building, readable runes or inscriptions, glossy mirror floor by default, decorative waterfall by default, swapping the requested structure for a castle or temple, skull decoration, gore, cemetery headstones, lush garden, cozy living space, cemetery scene, skull/gore, monster, person, cozy living interior zones, market aisle, library aisle, corridor, empty abstraction, throne interior zones default, weapon prop, character hero, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'licensed fantasy location, copy of a known film or game building, readable runes or inscriptions, glossy mirror floor by default, decorative waterfall by default, swapping the requested structure for a castle or temple, skull decoration, cemetery headstones, lush garden, cozy living space, cemetery scene, monster, person, cozy living interior zones, market aisle, library aisle, corridor, empty abstraction, throne interior zones default, weapon prop, character hero, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Sepulchral civic monumentalism: public buildings designed as necropolis architecture, black basalt colonnades, bone-marble inlay grids and oxidized bronze doors at inhuman height.',
@@ -528,7 +528,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '5. Fantasy And Mythic Architecture',
     domain: 'insect-shell organic architecture',
     negativePrompt:
-      'licensed fantasy location, copy of a known film or game building, readable runes or inscriptions, glossy mirror floor by default, decorative waterfall by default, swapping the requested structure for a castle or temple, insects, creature, gore, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'licensed fantasy location, copy of a known film or game building, readable runes or inscriptions, glossy mirror floor by default, decorative waterfall by default, swapping the requested structure for a castle or temple, insects, creature, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Carapace architecture: roofs and walls of overlapping iridescent shell plates on segmented ribs, jointed buttresses and amber resin membranes as windows.',

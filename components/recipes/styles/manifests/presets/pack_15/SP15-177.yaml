@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Close pairings of person and companion organism, with their bond central.
   atmosphere_and_mood: Gentle and strange, lives completely braided together with other species.
   rendering_and_quality: Delicate naturalist illustration with careful creature and plant detail.
-  creative_brief: "Symbiontpunk: humans living in partnership with other organisms, with moss coats, fish-cleaned wounds, bird-helpers and plant companions woven into daily life. Carry it through companion organisms, moss cloaks, living partnership, gentle glow. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Symbiontpunk: humans living in partnership with other organisms, with moss coats, fish-cleaned wounds, bird-helpers and plant companions woven into daily life. Carry it through companion organisms, moss cloaks, living partnership, gentle glow. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: companion organisms; moss cloaks; living partnership; gentle glow
 avoidRules:
   - readable text
@@ -37,7 +37,6 @@ avoidRules:
   - real artist signature
   - copying a specific famous artwork
   - muddy noisy texture
-  - gore
   - graphic wounds
   - real brand or company logo
   - watermark
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

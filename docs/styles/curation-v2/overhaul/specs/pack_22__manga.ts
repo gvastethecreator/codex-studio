@@ -110,7 +110,7 @@ const spec: Spec = {
       atmosphere_and_mood: 'Keep the requested mood tilted toward creeping dread.',
       rendering_and_quality: 'Meticulous fine hatching, never gore or cheap shock.',
       key_features: 'obsessive crosshatching; spiral lines; staring eyes; creeping dread',
-    }, ['gore', 'cute cheerful style'], [
+    }, [ 'cute cheerful style'], [
       'A salaryman notices that every face in the crowded train has turned toward him, drawn in dense hatching. No readable text or logo.',
       'A woman stares at a spiral pattern on her ceiling that seems to be slowly turning. No readable text or logo.',
       "In a quiet seaside town every house has the same crosshatched shadow standing in its window, all facing the same empty pier. No readable text or logo.",

@@ -17,7 +17,7 @@ const study = (
   domain,
   tags: [tag, 'rune-tech', 'portable-style-study'],
   dna: dna(fields),
-  avoid: [...avoid, 'gore', 'readable runes or text', 'existing franchise armor or emblems', ...STYLE_AVOID],
+  avoid: [...avoid,  'readable runes or text', 'existing franchise armor or emblems', ...STYLE_AVOID],
   briefs,
 });
 

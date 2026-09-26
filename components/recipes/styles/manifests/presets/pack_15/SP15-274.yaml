@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Wide flat marsh views with woven island towns reflected in water.
   atmosphere_and_mood: Calm, golden and resourceful, a home that floats.
   rendering_and_quality: Warm detailed illustration with woven fiber texture and reflections.
-  creative_brief: "Reedpunk: floating marsh cultures building from bundled reeds, with reed boats, woven island towns, reed arches and golden stalks against wide water. Carry it through bundled reed boats, woven islands, reed arches, still water. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Reedpunk: floating marsh cultures building from bundled reeds, with reed boats, woven island towns, reed arches and golden stalks against wide water. Carry it through bundled reed boats, woven islands, reed arches, still water. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: bundled reed boats; woven islands; reed arches; still water
 avoidRules:
   - readable text
@@ -37,7 +37,6 @@ avoidRules:
   - real artist signature
   - copying a specific famous artwork
   - muddy noisy texture
-  - gore
   - sacred regalia of a specific living culture
   - real brand or company logo
   - watermark
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

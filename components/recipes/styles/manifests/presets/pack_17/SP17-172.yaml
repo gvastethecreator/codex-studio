@@ -29,10 +29,9 @@ visualDna:
   camera_and_composition: Symmetrical composition rising to the throne, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with dark courtly power.
   rendering_and_quality: Detailed painterly tableau with no text, kept consistent across the whole image.
-  creative_brief: "Throne-room tableau painting: grand dark fantasy throne rooms painted as dramatic tableaux, a ruler on a towering throne, courtiers and captives below, torchlight and banners. Carry it through towering throne, hierarchy, torchlight, banners. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Throne-room tableau painting: grand dark fantasy throne rooms painted as dramatic tableaux, a ruler on a towering throne, courtiers and captives below, torchlight and banners. Carry it through towering throne, hierarchy, torchlight, banners. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: towering throne; hierarchy; torchlight; banners
 avoidRules:
-  - gore
   - title lettering
   - existing franchise heroes
   - readable text
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

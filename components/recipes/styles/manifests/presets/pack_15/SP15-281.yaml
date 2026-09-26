@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Wide steppe horizons with round tents and moving herds.
   atmosphere_and_mood: Free, windswept and hospitable, home wherever the herd goes.
   rendering_and_quality: Clear open illustration with felt texture and vast sky depth.
-  creative_brief: "Yurtpunk: steppe nomads living in round felt tents that pack onto carts, with lattice walls, painted roof rings, horse herds and endless grass seas. Carry it through round felt tents, lattice walls, horse herds, endless grass. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Yurtpunk: steppe nomads living in round felt tents that pack onto carts, with lattice walls, painted roof rings, horse herds and endless grass seas. Carry it through round felt tents, lattice walls, horse herds, endless grass. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: round felt tents; lattice walls; horse herds; endless grass
 avoidRules:
   - readable text
@@ -37,7 +37,6 @@ avoidRules:
   - real artist signature
   - copying a specific famous artwork
   - muddy noisy texture
-  - gore
   - sacred regalia of a specific living culture
   - real brand or company logo
   - watermark
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

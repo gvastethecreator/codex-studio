@@ -308,7 +308,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Manga Ink & Impact',
     domain: 'horror manga crosshatching',
     negativePrompt:
-      'gore, cute cheerful style, speech bubbles, sound-effect lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cute cheerful style, speech bubbles, sound-effect lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Dread hatch manga: horror manga drawing with obsessive fine crosshatching, spiraling lines and staring eyes that make ordinary scenes deeply unsettling.',
@@ -341,7 +341,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Manga Ink & Impact',
     domain: 'comedy manga super-deformed reactions',
     negativePrompt:
-      'realistic gore, speech bubbles, sound-effect lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'speech bubbles, sound-effect lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Gag deformation ink: comedy manga where characters suddenly deform into simple squashed shapes, huge sweat drops and shocked white eyes.',
@@ -433,7 +433,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Manga Ink & Impact',
     domain: 'dense realistic mature manga ink',
     negativePrompt:
-      'cute simplified style, gore, speech bubbles, sound-effect lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cute simplified style, speech bubbles, sound-effect lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Gritty seinen ink detail: mature realistic manga drawing with dense cross-contour detail, worn textures and heavy shadowed faces.',
@@ -520,7 +520,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '7. Manga Ink & Impact',
     domain: 'black and red print manga',
     negativePrompt:
-      'full color, gore, speech bubbles, sound-effect lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'full color, speech bubbles, sound-effect lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Red-black duotone manga: manga printed in only black and one red ink, with the red used for accents, warning signals, flames and focus.',

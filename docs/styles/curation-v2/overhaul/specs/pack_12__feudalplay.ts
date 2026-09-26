@@ -20,7 +20,7 @@ const play = (
   domain,
   tags: [tag, 'gameplay-capture', 'portable-style-study'],
   dna: dna(fields),
-  avoid: [...avoid, 'existing game characters, logos or levels', 'readable interface text', 'gore', ...STYLE_AVOID],
+  avoid: [...avoid, 'existing game characters, logos or levels', 'readable interface text',  ...STYLE_AVOID],
   briefs,
 });
 
@@ -31,9 +31,9 @@ const spec: Spec = {
   category: '10. Graphic & Feudal Gameplay',
   updates: {
     'SP12-087': { briefs: [
-      'Trailing an original hulking horseman of the apocalypse in third person, the camera catches him hurling a giant scythe through a ruined city as winged demons scatter. No readable text or logo.',
+      "Trailing an original hulking plague-doctor titan in third person, the camera catches him hurling a giant ship anchor through a ruined city as winged demons scatter from the rooftops. No readable text or logo.",
       'In a stylized third-person ruin, a massively muscled warrior tries to squeeze through a narrow doorway designed for normal people. No readable text or logo.',
-      'In a third-person view of a burned-out city, a colossal horse stands saddled in the rubble, its rider nowhere to be seen. No readable text or logo.',
+      "In a third-person view of a burned-out city, a colossal armored hound stands chained in the rubble, its handler nowhere to be seen. No readable text or logo.",
     ] },
     'SP12-088': { briefs: [
       'Leaping across a side-scrolling procession of penitents, an original hooded warrior slashes at a colossal weeping statue that lurches down the cathedral nave. No readable text or logo.',
@@ -56,8 +56,8 @@ const spec: Spec = {
       'On an empty 2.5D stage, the crowd in the background has frozen mid-cheer, all facing the camera. No readable text or logo.',
     ] },
     'SP12-092': { briefs: [
-      'Advancing through a torchlit crypt in side-view, an original band of four desperate adventurers faces a pale swine-headed abbot rising from a pool of black water. No readable text or logo.',
-      'In a side-view dungeon party, a heroic leper, a nervous jester and two others argue about who carries the torch. No readable text or logo.',
+      "Advancing through a torchlit crypt in side-view, an original band of four desperate adventurers faces a pale eel-headed abbot rising from a pool of black water. No readable text or logo.",
+      "In a side-view dungeon party, a heroic beekeeper, a nervous cartographer and two others argue about who has to carry the torch. No readable text or logo.",
       'In a side-view crypt corridor, the torch dims to its last flicker, and a fifth silhouette appears at the back of the party. No readable text or logo.',
     ] },
   },
@@ -103,7 +103,7 @@ const spec: Spec = {
       rendering_and_quality: "Clean capture with no combo text, kept consistent across the whole image.",
       key_features: 'air juggle; weapon trails; stylish hero; gothic arena',
     }, ['combo text'], [
-      'Juggling three demons mid-air with a greatsword and twin pistols, an original stylish hunter flips over a stained-glass window as it shatters around him. No readable text or logo.',
+      "Juggling three demons mid-air with a chainsaw umbrella and a flintlock, an original stylish hunter flips over a stained-glass window as it shatters around him. No readable text or logo.",
       'In a flashy combo arena, a hero performs an incredible string of attacks on an enemy that has already given up and is holding a white flag. No readable text or logo.',
       'In an empty gothic arena, the weapon trails of a battle still hang in the air, glowing, with no fighters left. No readable text or logo.',
     ]),

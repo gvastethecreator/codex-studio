@@ -19,7 +19,7 @@ const capture = (
   domain,
   tags: [tag, 'game-capture', 'portable-style-study'],
   dna: dna(fields),
-  avoid: [...avoid, 'existing game characters, logos or levels', 'readable interface text', 'gore', ...STYLE_AVOID],
+  avoid: [...avoid, 'existing game characters, logos or levels', 'readable interface text',  ...STYLE_AVOID],
   briefs,
 });
 
@@ -30,13 +30,13 @@ const spec: Spec = {
   category: '4. Sieges, Warfronts & Last Stands',
   updates: {
     'SP12-007': { briefs: [
-      'Holding a frozen bridge on a hand-painted tactical grid, an original band of horned giants and archers faces a column of stone-armored invaders marching out of a snowstorm. No readable text or logo.',
-      'On a painted snowy battlefield, a mighty horned giant waits for his turn while a tiny archer spends forever deciding where to move. No readable text or logo.',
+      "Holding a frozen bridge on a hand-painted tactical grid, an original band of towering bearded shieldbearers and archers faces a column of bark-armored raiders marching out of a snowstorm. No readable text or logo.",
+      "On a painted snowy battlefield, a towering bearded warrior waits for his turn while a tiny archer spends forever deciding where to move. No readable text or logo.",
       'Across a painted glacier at dusk, a caravan banner stands planted in the snow, and the caravan tracks behind it are already filling with fresh snow. No readable text or logo.',
     ] },
     'SP12-009': { briefs: [
-      'Storming a cartoon castle in thick outlines, four original knights in different colored armor bash through a gate as a giant armored barbarian chief throws a ram at them. No readable text or logo.',
-      'In a thick-outlined cartoon siege, a knight triumphantly rescues a princess who immediately rescues his pet owl from a tree. No readable text or logo.',
+      "Storming a cartoon castle in thick outlines, four original rescuers, a baker, a beekeeper, a lumberjack and a nun, bash through a gate as a giant barbarian chief throws a battering ram at them. No readable text or logo.",
+      "In a thick-outlined cartoon siege, a beekeeper triumphantly rescues a princess, who immediately rescues his pet owl from a tree. No readable text or logo.",
       'On a cartoon castle wall at night, a line of defenders all look outward, while behind them a small door in the tower slowly opens. No readable text or logo.',
     ] },
     'SP12-026': { briefs: [
@@ -182,7 +182,7 @@ const spec: Spec = {
       rendering_and_quality: "Clean readable capture with no UI text, kept consistent across the whole image.",
       key_features: 'opposing castles; horizontal lanes; marching units; clash',
     }, [], [
-      'Marching along three lanes between two castles, an original army of blue knights clashes with red skeletons as a giant catapult-turtle lumbers down the middle lane. No readable text or logo.',
+      "Marching along the lanes between two towers, an original army of blue gnome engineers clashes with red mushroom warriors as a giant catapult-turtle lumbers across the middle bridge. No readable text or logo.",
       "Meeting in the middle of the field between two castles, both marching armies stop and sit down together to share a picnic. No readable text or logo.",
       'Between two castles on a quiet lane, a single unit walks steadily toward the enemy gate, and no one on either side sent it. No readable text or logo.',
     ]),

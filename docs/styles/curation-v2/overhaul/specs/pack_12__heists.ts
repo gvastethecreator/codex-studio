@@ -19,7 +19,7 @@ const capture = (
   domain,
   tags: [tag, 'game-capture', 'portable-style-study'],
   dna: dna(fields),
-  avoid: [...avoid, 'existing game characters, logos or levels', 'readable interface text', 'gore', ...STYLE_AVOID],
+  avoid: [...avoid, 'existing game characters, logos or levels', 'readable interface text',  ...STYLE_AVOID],
   briefs,
 });
 
@@ -45,12 +45,12 @@ const spec: Spec = {
       'Deep in a tomb, the explorer\'s torch lights a wall carving that shows her own face, carved thousands of years ago. No readable text or logo.',
     ] },
     'SP12-030': { briefs: [
-      'Dodging bullets thrown by a giant rubber-hose carnival clown, an original teacup-headed hero runs and guns across a spinning carousel in hand-inked 1930s style. No readable text or logo.',
-      'In a hand-inked carnival boss fight, a towering cartoon devil pauses mid-attack because his top hat has fallen off. No readable text or logo.',
+      "Dodging bullets thrown by a giant rubber-hose carnival clown, an original matchbox-headed hero runs and guns across a spinning carousel in hand-inked 1930s style. No readable text or logo.",
+      "In a hand-inked carnival boss fight, a towering cartoon walrus ringmaster pauses mid-attack because his top hat has fallen off. No readable text or logo.",
       'On a grainy inked carnival stage after the fight, a single balloon floats up from the empty boss arena with a smiling face drawn on it. No readable text or logo.',
     ] },
     'SP12-049': { briefs: [
-      'Slashing through a moonlit gothic hall in 2D, an original half-vampire swordsman faces a gigantic skeleton made of stacked coffins rising from the castle floor. No readable text or logo.',
+      "Slashing through a moonlit gothic hall in 2D, an original vampire-hunting nun with a chained censer faces a gigantic skeleton made of stacked coffins rising from the castle floor. No readable text or logo.",
       'In a gothic side-scrolling castle, a noble vampire hunter finds a roast chicken hidden inside a castle wall and eats it with great ceremony. No readable text or logo.',
       'In a moonlit 2D castle corridor, a painting of the castle hangs on the wall, and a tiny light is on in one of its windows. No readable text or logo.',
     ] },
@@ -70,7 +70,7 @@ const spec: Spec = {
       'On a calm glowing sea at night, a ship drifts past with its lanterns lit, and its entire crew is playing instruments with no sound. No readable text or logo.',
     ] },
     'SP12-066': { briefs: [
-      'Riding a rusted tram through a derelict ship in third person, an original engineer in a heavy suit raises a plasma cutter as twisted creatures claw at the glass. No readable text or logo.',
+      "Riding a rusted tram through a derelict ship in third person, an original welder in a patched pressure suit raises a cutting torch as twisted creatures claw at the glass. No readable text or logo.",
       'Aboard a derelict mining ship, an engineer painstakingly repairs a door, which the creature on the other side politely holds open for him. No readable text or logo.',
       'On an abandoned ship\'s tram platform, the tram arrives with its doors open and its seats full of neatly folded work suits. No readable text or logo.',
     ] },

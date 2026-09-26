@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Low fast angles with horses and wheels racing through the frame.
   atmosphere_and_mood: Thunderous, reckless and glorious, a city that treats speed as religion.
   rendering_and_quality: Dynamic illustration with motion, dust clouds and powerful horses.
-  creative_brief: "Chariotpunk: a culture obsessed with chariot racing, with light spoked chariots, horse teams in bright colors, dusty hippodromes and roaring crowds. Carry it through spoked chariots, horse teams, dusty arenas, roaring crowds. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Chariotpunk: a culture obsessed with chariot racing, with light spoked chariots, horse teams in bright colors, dusty hippodromes and roaring crowds. Carry it through spoked chariots, horse teams, dusty arenas, roaring crowds. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: spoked chariots; horse teams; dusty arenas; roaring crowds
 avoidRules:
   - readable text
@@ -37,7 +37,6 @@ avoidRules:
   - real artist signature
   - copying a specific famous artwork
   - muddy noisy texture
-  - gore
   - sacred regalia of a specific living culture
   - real brand or company logo
   - watermark
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

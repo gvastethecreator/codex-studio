@@ -10,7 +10,7 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Dual-Energy Baggage X-Ray'],
     category: '6. Sensor And Technical Imaging',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, medical gore, skin, color, normal camera color, medical-only scene, fake UI text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, skin, color, normal camera color, medical-only scene, fake UI text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Security baggage X-ray: dual-energy scan where organic materials read orange, metals blue and mixed materials green.',
@@ -39,7 +39,7 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['White-Hot Thermal Imager'],
     category: '6. Sensor And Technical Imaging',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, medical gore, natural colors, normal camera color, medical-only scene, fake UI text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, natural colors, normal camera color, medical-only scene, fake UI text, fixed specimen, literal card scene, generic stock texture, muddy noise, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'White-hot thermal imager: greyscale heat image where warm bodies glow white through smoke and darkness, hottest spots flagged red.',
@@ -69,7 +69,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Sensor And Technical Imaging',
     domain: 'neutron imaging',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, medical gore, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Neutron radiography: an X-ray-like image with reversed logic, where metal turns see-through and organic or wet materials show dark.',
@@ -103,7 +103,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Sensor And Technical Imaging',
     domain: 'terahertz imaging',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, medical gore, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Terahertz scan: a soft, blurry, low-resolution image that sees through paper, cloth and plastic but not metal or water.',
@@ -137,7 +137,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Sensor And Technical Imaging',
     domain: 'neuromorphic event sensor',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, medical gore, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Event camera: only changing pixels appear, as scattered colored dots along moving edges on a black or grey field.',
@@ -170,7 +170,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Sensor And Technical Imaging',
     domain: 'sound spectrogram',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, medical gore, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Audio spectrogram: time runs left to right and frequency bottom to top, with sound energy as glowing color.',
@@ -204,7 +204,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Sensor And Technical Imaging',
     domain: 'art conservation imaging',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, medical gore, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Infrared reflectography: a grey image of a painting that shows the hidden underdrawing and changed mind beneath the paint.',
@@ -242,7 +242,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Sensor And Technical Imaging',
     domain: 'manuscript recovery imaging',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, medical gore, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Multispectral palimpsest: false-color processed manuscript where scraped-off earlier writing and drawings show in red over the later text.',
@@ -275,7 +275,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Sensor And Technical Imaging',
     domain: 'sound source localization',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, medical gore, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Acoustic camera: an ordinary photo overlaid with colored sound hotspots showing where noise comes from.',
@@ -313,7 +313,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Sensor And Technical Imaging',
     domain: 'diffusion MRI fiber tracking',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, medical gore, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Tractography: bundles of fiber pathways color-coded by direction, glowing like silk threads.',
@@ -347,7 +347,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Sensor And Technical Imaging',
     domain: 'crystal orientation mapping',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, medical gore, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'EBSD map: metal grains shown as a mosaic of flat colored patches by crystal orientation.',
@@ -383,7 +383,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Sensor And Technical Imaging',
     domain: 'nanoscale surface topography',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, medical gore, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'AFM topography: a nanoscale surface shown as a 3D height map with a gold-brown color ramp.',
@@ -415,7 +415,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Sensor And Technical Imaging',
     domain: 'live X-ray video',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, medical gore, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Fluoroscopy: live X-ray video frame, grainy greyscale with dark bones and a circular field.',
@@ -445,7 +445,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Sensor And Technical Imaging',
     domain: 'meteorological satellite',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, medical gore, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Water vapor satellite image: swirling moisture in the upper atmosphere shown in grey or blue-orange false color.',
@@ -481,7 +481,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Sensor And Technical Imaging',
     domain: 'molecular distribution map',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, medical gore, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Mass spectrometry imaging: pixelated maps of where molecules sit in a tissue slice, hot colors on black.',
@@ -511,7 +511,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Sensor And Technical Imaging',
     domain: 'ultrafast streak imaging',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, medical gore, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Streak camera: one line of space smeared across time into a glowing streak pattern.',
@@ -543,7 +543,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Sensor And Technical Imaging',
     domain: 'capsule camera',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, medical gore, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Capsule endoscopy: a fisheye camera view with ring light inside a wet tunnel, pink and glossy.',
@@ -575,7 +575,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Sensor And Technical Imaging',
     domain: 'radio astronomy',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, medical gore, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic: 'Radio telescope map: blurry false-color radio emission with lobes and jets.',
       subject_treatment:
@@ -605,7 +605,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Sensor And Technical Imaging',
     domain: 'solar telescope',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, medical gore, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'H-alpha solar telescope: the sun in deep red-orange with prominences and filaments.',
@@ -636,7 +636,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '6. Sensor And Technical Imaging',
     domain: 'fisheye night sky camera',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, medical gore, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'All-sky camera: a circular fisheye night sky with meteor streaks, horizon ring and trees.',

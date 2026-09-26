@@ -43,13 +43,13 @@ avoidRules:
   - unrequested occult symbols, sigils, or lore
   - cut marks that close important negative spaces
   - unrequested text or lettering
-  - unrequested horror or violence
+  - unrequested horror
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP22-124.webp
 attributes:
   negativePrompt: >-
     unrequested occult symbols, sigils, or lore, cut marks that close important negative spaces,
-    unrequested text or lettering, unrequested horror or violence
+    unrequested text or lettering, unrequested horror
   intentionalPolicy:
     schemaVersion: 1
     kind: full_style
@@ -74,7 +74,7 @@ attributes:
         field: rendering_and_quality
       - text: unrequested text or lettering
         field: global
-      - text: unrequested horror or violence
+      - text: unrequested horror
         field: global
   sourceMetadata:
     atlas: Codex Studio Atlas TCG v0.1

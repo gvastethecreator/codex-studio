@@ -20,7 +20,7 @@ visualDna:
   lighting_and_shadow: Backlit glass glow dominates, with black outlines creating graphic shadow and sacred separation.
   texture_and_material: Leaded glass, etched metal, prism bloom, tiny cracks, dust motes, and molten star-metal accents.
   camera_and_composition: Frontal icon layout, radial halos, symmetrical panels, and cathedral-window framing.
-  atmosphere_and_mood: 'Sacred, cosmic, triumphant, and strange; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness, at whatever intensity the requested scene sets.'
+  atmosphere_and_mood: Sacred, cosmic, triumphant, and strange; sacred futurism, oath-bound technology, analog prophecy, relic machinery, and luminous feudal strangeness, at whatever intensity the requested scene sets.
   rendering_and_quality: Clean stained-glass illustration with crisp leadwork, luminous color, and fantasy-tech ornament.
   creative_brief: 'Stained Glass Starforge: Futuristic stained glass medieval fantasy with starforged geometry; black lead lines; radiant cosmic color; symbolic forge gesture; halo geometry.'
   key_features: Stained Glass Starforge; Futuristic stained glass medieval fantasy with starforged geometry; black lead lines; radiant cosmic color; symbolic forge gesture; halo geometry
@@ -29,7 +29,6 @@ avoidRules:
   - soft oil painting
   - flat clip art
   - modern logo
-  - explicit gore
   - watermark
   - text
   - generic cyberpunk city
@@ -41,7 +40,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-024.webp
 attributes:
-  negativePrompt: photorealism, soft oil painting, flat clip art, modern logo, explicit gore, watermark, text, generic cyberpunk city, chrome overload, readable rune text, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
+  negativePrompt: photorealism, soft oil painting, flat clip art, modern logo, watermark, text, generic cyberpunk city, chrome overload, readable rune text, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Sterile and factual, careful attention without any emotion.
   rendering_and_quality: Clinical accuracy; no gore, no moody shadows, no readable labels.
   key_features: sterile blue drape; shadowless twin flash; standardized straight-on view; accurate color; plain scale
-  creative_brief: "Clinical medical photography: standardized documentation under bright even light against a sterile blue or neutral background. Carry it through sterile blue drape, shadowless twin flash, standardized straight-on view, accurate color, plain scale. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Clinical medical photography: standardized documentation under bright even light against a sterile blue or neutral background. Carry it through sterile blue drape, shadowless twin flash, standardized straight-on view, accurate color, plain scale. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - fake UI text
   - readable timestamp
@@ -29,7 +29,6 @@ avoidRules:
   - cinematic beauty lighting
   - generic stock-photo face
   - celebrity likeness
-  - gore
   - moody shadow
   - artistic
   - illustration
@@ -57,7 +56,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP01-077.webp
 attributes:
-  negativePrompt: fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, gore, moody shadow, artistic, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, artistic blur, wrong diagnostic palette, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, moody shadow, artistic, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, artistic blur, wrong diagnostic palette, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_01
   packName: Photography & Realism

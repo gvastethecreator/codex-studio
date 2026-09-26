@@ -28,11 +28,10 @@ visualDna:
   camera_and_composition: Preserve the requested framing with smears following movement.
   atmosphere_and_mood: Keep the requested mood with warm tactile intensity.
   rendering_and_quality: Tactile layered wax surfaces, never flat digital paint.
-  creative_brief: "Smeared wax pigment: color laid in melted wax and smeared with palette knives and fingers, glossy, layered and translucent in thin spots. Carry it through smeared melted wax, translucent layers, fingerprints, glossy ridges. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Smeared wax pigment: color laid in melted wax and smeared with palette knives and fingers, glossy, layered and translucent in thin spots. Carry it through smeared melted wax, translucent layers, fingerprints, glossy ridges. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: smeared melted wax; translucent layers; fingerprints; glossy ridges
 avoidRules:
   - flat digital fill
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -47,7 +46,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: flat digital fill, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: flat digital fill, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

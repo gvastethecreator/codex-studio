@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Infinite mirror corridors and figures facing reflections that differ.
   atmosphere_and_mood: Uncanny and hypnotic, the fear that your reflection has its own plans.
   rendering_and_quality: Precise reflective illustration with layered mirror depth and tarnish.
-  creative_brief: "Mirrorpunk: a culture obsessed with haunted mirrors, with silvered halls, cracked reflections, reflections that move on their own and doors into mirror worlds. Carry it through haunted mirrors, disagreeing reflections, infinite corridors, tarnished silver. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Mirrorpunk: a culture obsessed with haunted mirrors, with silvered halls, cracked reflections, reflections that move on their own and doors into mirror worlds. Carry it through haunted mirrors, disagreeing reflections, infinite corridors, tarnished silver. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: haunted mirrors; disagreeing reflections; infinite corridors; tarnished silver
 avoidRules:
   - readable text
@@ -37,7 +37,6 @@ avoidRules:
   - real artist signature
   - copying a specific famous artwork
   - muddy noisy texture
-  - gore
   - graphic wounds
   - real religious leader likeness
   - readable runes or scripture
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

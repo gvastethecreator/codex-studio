@@ -28,11 +28,10 @@ visualDna:
   camera_and_composition: Preserve the requested framing with red leading the eye.
   atmosphere_and_mood: Keep the requested mood with an elegant, quiet menace.
   rendering_and_quality: Precise glossy finish with restrained accents, never busy.
-  creative_brief: "Red-accent black lacquer: glossy black painted surfaces with vivid red accents and fine gold lines, polished like old lacquer screens. Carry it through glossy black, vermilion accents, fine gold lines, lacquer sheen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Red-accent black lacquer: glossy black painted surfaces with vivid red accents and fine gold lines, polished like old lacquer screens. Carry it through glossy black, vermilion accents, fine gold lines, lacquer sheen. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: glossy black; vermilion accents; fine gold lines; lacquer sheen
 avoidRules:
   - matte chalky finish
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -47,7 +46,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: matte chalky finish, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: matte chalky finish, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

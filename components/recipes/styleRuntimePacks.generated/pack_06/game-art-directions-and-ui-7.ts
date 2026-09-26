@@ -435,7 +435,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Survival Horror Save-Room Lighting',
     category: '7. Game Art Directions & UI',
     negativePrompt:
-      'copied game characters, known game HUD layout, readable interface text, numbers and stat values, publisher or studio logo, gore, monster requirement, typewriter save icon, watermark, text, literal room requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'copied game characters, known game HUD layout, readable interface text, numbers and stat values, publisher or studio logo, monster requirement, typewriter save icon, watermark, text, literal room requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Survival-horror safe room: a pre-rendered-looking interior lit by one warm lamp pool inside cold darkness, seen from a fixed high camera.',
@@ -584,7 +584,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Boss Encounter Key Art Tension',
     category: '7. Game Art Directions & UI',
     negativePrompt:
-      'copied game characters, known game HUD layout, readable interface text, numbers and stat values, publisher or studio logo, boss health bar, title lettering, gore, watermark, text, monster requirement, combat scene, weapon requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'copied game characters, known game HUD layout, readable interface text, numbers and stat values, publisher or studio logo, boss health bar, title lettering, watermark, text, monster requirement, combat scene, weapon requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Boss encounter key art: a colossal threat towering over a tiny challenger, cinematic painterly rendering built on extreme scale contrast.',

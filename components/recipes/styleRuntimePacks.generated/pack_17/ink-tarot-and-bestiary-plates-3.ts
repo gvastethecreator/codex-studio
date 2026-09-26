@@ -11,7 +11,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Ink, Tarot & Bestiary Plates',
     domain: 'monochrome medieval horror',
     negativePrompt:
-      'readable tarot labels, roman numerals, dense cross hatching, dirty photocopy grain, explicit gore, watermark, text, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'readable tarot labels, roman numerals, dense cross hatching, dirty photocopy grain, watermark, text, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Black and white horror tarot card language with medieval bones, veils, crowns, moons, and quiet omen symbols.',
@@ -41,7 +41,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Ink, Tarot & Bestiary Plates',
     domain: 'monochrome medieval fantasy',
     negativePrompt:
-      'photoreal grayscale, dense scratch shading, chainmail mesh, muddy charcoal fields, crusader figure, knight hero, sword pose, cross tabard, heraldic banner, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'photoreal grayscale, dense scratch shading, chainmail mesh, muddy charcoal fields, crusader figure, knight hero, sword pose, cross tabard, heraldic banner, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Clean black and white medieval fantasy sourcebook plate illustration with non-humanoid fantasy masses, fortress-like creatures, relic fragments, stone hands, and ancient contour authority.',
@@ -70,7 +70,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Ink, Tarot & Bestiary Plates',
     domain: 'penitential gothic fantasy',
     negativePrompt:
-      'copied game armor, readable scripture, excessive thorn detail, black on black costume, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'copied game armor, readable scripture, excessive thorn detail, black on black costume, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Penitential baroque medieval fantasy with tall devotional silhouettes, thorn crowns, reliquaries, veils, and severe sacred geometry.',
@@ -102,7 +102,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Ink, Tarot & Bestiary Plates',
     domain: 'survival dungeon fantasy',
     negativePrompt:
-      'shock gore, torture detail, photoreal misery, unreadable black rooms, dense scratch texture, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'torture detail, photoreal misery, unreadable black rooms, dense scratch texture, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Bleak survival dungeon illustration with gaunt pilgrims, broken cells, ritual doors, prison stone, and desperate candlelight.',
@@ -134,7 +134,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Ink, Tarot & Bestiary Plates',
     domain: 'medieval bestiary illustration',
     negativePrompt:
-      'tiny hatch carpets, dirty photocopy noise, readable captions, realistic creature skin, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'tiny hatch carpets, dirty photocopy noise, readable captions, realistic creature skin, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Medieval woodcut bestiary illustration with bold animal-monster silhouettes, carved line blocks, and simple old-paper fields.',
@@ -164,7 +164,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Ink, Tarot & Bestiary Plates',
     domain: 'illuminated medieval bestiary',
     negativePrompt:
-      'readable marginal text, over aged parchment grime, excessive filigree, photoreal vellum, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'readable marginal text, over aged parchment grime, excessive filigree, photoreal vellum, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Illuminated manuscript bestiary style with clean parchment, jewel-like flat accents, gold margins, and strange medieval beasts.',
@@ -196,7 +196,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Ink, Tarot & Bestiary Plates',
     domain: 'medieval marginalia fantasy',
     negativePrompt:
-      'readable manuscript text, cluttered page full of drawings, dense hatch texture, modern cartoon look, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture',
+      'readable manuscript text, cluttered page full of drawings, dense hatch texture, modern cartoon look, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Playful but eerie medieval marginalia with odd beasts, monkish diagrams, small grotesques, and clean parchment space.',
@@ -225,7 +225,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Ink, Tarot & Bestiary Plates',
     domain: 'heraldic medieval fantasy',
     negativePrompt:
-      'readable coats of arms, letters, tiny repeated scales, glossy vector flatness, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'readable coats of arms, letters, tiny repeated scales, glossy vector flatness, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Heraldic medieval fantasy plate with chimeras, shields without readable emblems, banners, crowns, and clean courtly geometry.',
@@ -254,7 +254,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Ink, Tarot & Bestiary Plates',
     domain: 'stained glass fantasy bestiary',
     negativePrompt:
-      'readable church text, kaleidoscope clutter, black lead noise, photoreal window glare, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'readable church text, kaleidoscope clutter, black lead noise, photoreal window glare, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Medieval stained glass bestiary icon with lead lines, simplified beasts, chapel color, and luminous flat panes.',
@@ -286,7 +286,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Ink, Tarot & Bestiary Plates',
     domain: 'medieval tapestry fantasy',
     negativePrompt:
-      'fuzzy textile noise, overcrowded floral carpet, readable border text, realistic forest depth, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'fuzzy textile noise, overcrowded floral carpet, readable border text, realistic forest depth, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Medieval tapestry creature legend with woven flat shapes, courtly beasts, decorative flora, and quiet narrative panels.',
@@ -315,7 +315,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Ink, Tarot & Bestiary Plates',
     domain: 'fantasy field guide illustration',
     negativePrompt:
-      'readable annotations, anatomical gore, dense scale texture, crowded diagram sheet, photoreal animal rendering, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'readable annotations, dense scale texture, crowded diagram sheet, photoreal animal rendering, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Medieval-naturalist field guide plate for wyverns, dungeon beasts, horns, wings, claws, eggs, and relic habitats.',
@@ -346,7 +346,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Ink, Tarot & Bestiary Plates',
     domain: 'oracle bestiary fantasy',
     negativePrompt:
-      'readable runes, astrology text, overpacked symbols, noisy night sky, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
+      'readable runes, astrology text, overpacked symbols, noisy night sky, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture',
     style: {
       aesthetic:
         'Moonlit parchment oracle-bestiary style with quiet symbolic forms, crescent geometry, clean ink, and pale mystical accents.',
@@ -381,7 +381,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Ink, Tarot & Bestiary Plates',
     domain: 'white ink occult anatomy',
     negativePrompt:
-      'readable tarot titles, roman numerals, white-on-parchment inversion, gray fog background, blood splatter, explicit gore, overcrowded anatomy diagram, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+      'readable tarot titles, roman numerals, white-on-parchment inversion, gray fog background, overcrowded anatomy diagram, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
     style: {
       aesthetic:
         'Absolute black-ground occult engraving with bone-white anatomical symbols, ritual limbs, radial saint halos, horizontal vignette logic, and surgical tarot severity.',
@@ -488,7 +488,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Ink, Tarot & Bestiary Plates',
     domain: 'devotional scratch horror',
     negativePrompt:
-      'clean church illustration, readable prayer text, cute saint card, golden religious poster, literal martyr gore, stock angel wings, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+      'clean church illustration, readable prayer text, cute saint card, golden religious poster, stock angel wings, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
     style: {
       aesthetic:
         'Devotional gutter-horror cards with black voids, damaged saint geometry, white scratch halos, ragged banners without writing, and cheap holy-object tension.',
@@ -1025,7 +1025,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '3. Ink, Tarot & Bestiary Plates',
     domain: 'dark monotype ghost print',
     negativePrompt:
-      'clean line art, bright color, digital paint texture, gore detail, noisy speckle, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
+      'clean line art, bright color, digital paint texture, noisy speckle, watermark, text, readable labels, readable runes, logo, UI overlay, franchise likeness, prompt literal card reuse, fixed medieval scene, generic fantasy card art, muddy noisy dark texture, anime, manga, photorealism, hyperreal 3D render, dark mush, noisy compression artifacts',
     style: {
       aesthetic:
         'Dark painterly monotype: ink painted on a plate and printed once, with wiped-out lights, finger and rag marks, oxide red and black, and faded ghost second-pull areas.',

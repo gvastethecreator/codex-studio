@@ -29,11 +29,10 @@ visualDna:
   camera_and_composition: Wide triptych-like composition with a giant creature, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with dramatic legendary battle.
   rendering_and_quality: Crisp woodblock look with rich pattern, kept consistent across the whole image.
-  creative_brief: "Woodblock spirit-war direction: battle scenes styled like Japanese woodblock prints, bold outlines, flat color, patterned robes and giant spirit creatures across triptych panels. Carry it through woodblock outlines, flat color, patterned robes, giant spirit. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Woodblock spirit-war direction: battle scenes styled like Japanese woodblock prints, bold outlines, flat color, patterned robes and giant spirit creatures across triptych panels. Carry it through woodblock outlines, flat color, patterned robes, giant spirit. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: woodblock outlines; flat color; patterned robes; giant spirit
 avoidRules:
   - readable calligraphy
-  - gore
   - interface or HUD
   - existing game or film characters, logos or clan crests
   - readable text
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable calligraphy, gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable calligraphy, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

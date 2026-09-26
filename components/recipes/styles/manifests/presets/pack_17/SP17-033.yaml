@@ -23,7 +23,7 @@ visualDna:
   lighting_and_shadow: Flat symbolic light, clean shadow blocks, and no realistic night lighting.
   texture_and_material: Smooth paper, crisp ink, simple engraving marks, and tidy white gaps instead of dirty xerox grain.
   camera_and_composition: Centered tarot-card symmetry, tall vertical frame, simple arch or moon shape, and no readable titles or numbers.
-  atmosphere_and_mood: 'Ominous, devotional, quiet, fatalistic, and non graphic; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint, at whatever intensity the requested scene sets.'
+  atmosphere_and_mood: Ominous, devotional, quiet, fatalistic, and non graphic; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint, at whatever intensity the requested scene sets.
   rendering_and_quality: Clean monochrome illustration with controlled line weight, large shapes, and limited mark density.
   creative_brief: 'Bone Tarot Horror Arcana: Black and white horror tarot card language with medieval bones; veils; crowns; moons; quiet omen symbols.'
   key_features: Bone Tarot Horror Arcana; Black and white horror tarot card language with medieval bones; veils; crowns; moons; quiet omen symbols
@@ -32,7 +32,6 @@ avoidRules:
   - roman numerals
   - dense cross hatching
   - dirty photocopy grain
-  - explicit gore
   - watermark
   - text
   - fake manuscript text
@@ -43,7 +42,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-033.webp
 attributes:
-  negativePrompt: readable tarot labels, roman numerals, dense cross hatching, dirty photocopy grain, explicit gore, watermark, text, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
+  negativePrompt: readable tarot labels, roman numerals, dense cross hatching, dirty photocopy grain, watermark, text, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

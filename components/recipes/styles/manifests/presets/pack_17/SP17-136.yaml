@@ -29,10 +29,9 @@ visualDna:
   camera_and_composition: Awkward high corner angle, off-center figure, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with claustrophobic suspense, kept consistent across the whole image.
   rendering_and_quality: Authentic static-camera horror frame, kept consistent across the whole image.
-  creative_brief: "Fixed-camera castle horror: survival-horror framing from a high static corner camera in a gloomy castle, pre-rendered backgrounds and a small vulnerable figure. Carry it through fixed corner camera, pre-rendered room, small figure, gloom. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Fixed-camera castle horror: survival-horror framing from a high static corner camera in a gloomy castle, pre-rendered backgrounds and a small vulnerable figure. Carry it through fixed corner camera, pre-rendered room, small figure, gloom. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: fixed corner camera; pre-rendered room; small figure; gloom
 avoidRules:
-  - gore
   - interface text, menus or health bars
   - existing game characters or logos
   - readable text
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: gore, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

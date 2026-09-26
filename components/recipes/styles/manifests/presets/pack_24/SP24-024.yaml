@@ -29,11 +29,10 @@ visualDna:
   camera_and_composition: Wide low horizons with the courier small and dust trails leading the eye.
   atmosphere_and_mood: Determined, parched and solitary, the delivery must arrive.
   rendering_and_quality: Sunbaked painterly realism with heat shimmer and fine dust.
-  creative_brief: "Desert long-haul courier: a single battered truck or walker crossing enormous dune seas, painted in heat-shimmer ochres with dust trailing for miles. Carry it through lone desert haul, heat shimmer, dust plumes, bleached sky. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Desert long-haul courier: a single battered truck or walker crossing enormous dune seas, painted in heat-shimmer ochres with dust trailing for miles. Carry it through lone desert haul, heat shimmer, dust plumes, bleached sky. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: lone desert haul; heat shimmer; dust plumes; bleached sky
 avoidRules:
   - lush greenery
-  - gore
   - real military insignia
   - real brand or company logo
   - readable text
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: lush greenery, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: lush greenery, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

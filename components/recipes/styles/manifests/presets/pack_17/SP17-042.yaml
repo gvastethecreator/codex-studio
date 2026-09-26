@@ -23,7 +23,7 @@ visualDna:
   lighting_and_shadow: No cinematic light; use flat woven value and color contrast.
   texture_and_material: Clean woven texture, broad thread-like color blocks, sparse floral details, and no fuzzy noise.
   camera_and_composition: Tapestry panel crop, side-view creature, patterned ground, and decorative border without words.
-  atmosphere_and_mood: 'Legendary, courtly, archaic, and quietly uncanny; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint, at whatever intensity the requested scene sets.'
+  atmosphere_and_mood: Legendary, courtly, archaic, and quietly uncanny; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint, at whatever intensity the requested scene sets.
   rendering_and_quality: Clean textile-inspired illustration with simplified forms and controlled fabric texture.
   creative_brief: 'Tapestry Creature Legend: courtly beasts; decorative flora; quiet narrative panels; woven legend logic with flat courtly silhouettes; thread block color.'
   key_features: Tapestry Creature Legend; courtly beasts; decorative flora; quiet narrative panels; woven legend logic with flat courtly silhouettes; thread block color
@@ -32,7 +32,6 @@ avoidRules:
   - overcrowded floral carpet
   - readable border text
   - realistic forest depth
-  - explicit gore
   - watermark
   - text
   - readable tarot labels
@@ -44,7 +43,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-042.webp
 attributes:
-  negativePrompt: fuzzy textile noise, overcrowded floral carpet, readable border text, realistic forest depth, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
+  negativePrompt: fuzzy textile noise, overcrowded floral carpet, readable border text, realistic forest depth, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

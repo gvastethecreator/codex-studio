@@ -29,10 +29,9 @@ visualDna:
   camera_and_composition: Preserve the requested framing with uncomfortable close-ups and stares.
   atmosphere_and_mood: Keep the requested mood tilted toward creeping dread.
   rendering_and_quality: Meticulous fine hatching, never gore or cheap shock.
-  creative_brief: "Dread hatch manga: horror manga drawing with obsessive fine crosshatching, spiraling lines and staring eyes that make ordinary scenes deeply unsettling. Carry it through obsessive crosshatching, spiral lines, staring eyes, creeping dread. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Dread hatch manga: horror manga drawing with obsessive fine crosshatching, spiraling lines and staring eyes that make ordinary scenes deeply unsettling. Carry it through obsessive crosshatching, spiral lines, staring eyes, creeping dread. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: obsessive crosshatching; spiral lines; staring eyes; creeping dread
 avoidRules:
-  - gore
   - cute cheerful style
   - speech bubbles
   - sound-effect lettering
@@ -51,7 +50,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: gore, cute cheerful style, speech bubbles, sound-effect lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: cute cheerful style, speech bubbles, sound-effect lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

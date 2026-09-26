@@ -68,7 +68,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Bonepunk',
     category: '8. Occult, Myth & Gothic Punks',
     negativePrompt:
-      'a compulsory signal horn, rigging scene, or anatomical skeleton subject, bone color used as a substitute for visible bone construction, gore where it is not requested, unrequested full-scene conversion into bone architecture or all-bone furniture',
+      'a compulsory signal horn, rigging scene, or anatomical skeleton subject, bone color used as a substitute for visible bone construction, unrequested full-scene conversion into bone architecture or all-bone furniture',
     style: {
       aesthetic:
         'Make bone an engineered material through a few articulated ivory plates, carved struts, marrow-like channels, or tendon and hide bindings integrated into compatible existing forms; keep bone construction distinctive without converting the whole scene.',
@@ -158,7 +158,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Folk Horror Punk',
     category: '8. Occult, Myth & Gothic Punks',
     negativePrompt:
-      'a compulsory forest, field, scarecrow, or ritual, unrequested gore or horror intensity, folk ornament or fiber texture overwhelming the subject, a new shrine, cottage, or ritual room replacing the requested environment, unrequested warning text, logos, or readable symbols',
+      'a compulsory forest, field, scarecrow, or ritual, unrequested horror intensity, folk ornament or fiber texture overwhelming the subject, a new shrine, cottage, or ritual room replacing the requested environment, unrequested warning text, logos, or readable symbols',
     style: {
       aesthetic:
         'Root the style in handmade rural folk-horror craft through effigy-like contours, knotted bindings, weathered ornament, and localized punk repairs on existing forms; evoke inherited tension without constructing a new ritual object or setting.',
@@ -191,7 +191,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Occult, Myth & Gothic Punks',
     domain: 'alchemical laboratory punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Alchemypunk: renegade alchemists in cluttered laboratories, with bubbling alembics, glowing transmutation circles, gold dust, sulfur smoke and brass instruments.',
@@ -221,7 +221,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Occult, Myth & Gothic Punks',
     domain: 'living spellbook punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Grimoirepunk: living spellbooks that breathe, bite and fly, with chained libraries, glowing illuminated diagrams, leather covers with eyes and pages turning in the wind.',
@@ -251,7 +251,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Occult, Myth & Gothic Punks',
     domain: 'gothic cathedral builder punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Cathedralpunk: rebel builders raising impossible gothic cathedrals from scrap, with flying buttresses of girders, stained glass from bottles and gargantuan spires.',
@@ -282,7 +282,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Occult, Myth & Gothic Punks',
     domain: 'victorian seance punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Seancepunk: underground seance parlors with spirit cabinets, floating ectoplasm, candlelit round tables, trembling hands and ghost-photography glow.',
@@ -313,7 +313,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Occult, Myth & Gothic Punks',
     domain: 'plague doctor culture punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Plaguepunk: beaked plague doctors turned into a secret order, with leather masks, herb-filled beaks, waxed coats, lanterns and foggy quarantined streets.',
@@ -344,7 +344,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Occult, Myth & Gothic Punks',
     domain: 'holy relic reliquary punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Relicpunk: relic hunters and reliquary makers, with jeweled glass caskets, gilded containers, pilgrim badges, tiny holy objects and crowds of devoted pilgrims.',
@@ -373,7 +373,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Occult, Myth & Gothic Punks',
     domain: 'candle-lit world punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Candlepunk: a world lit only by candles, with dripping wax cities, chandelier forests, candle-maker guilds and faces glowing in warm flickering pools.',
@@ -403,7 +403,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Occult, Myth & Gothic Punks',
     domain: 'prophecy machine oracle punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Oraclepunk: oracles who read the future through smoke, trance and strange machines, with vapor-filled temples, bronze tripods and seekers waiting in long lines.',
@@ -434,7 +434,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Occult, Myth & Gothic Punks',
     domain: 'clay golem workshop punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Golempunk: workshops where clay golems are sculpted and awakened, with giant clay bodies, glowing sigil hearts, potter wheels and river-mud foundries.',
@@ -465,7 +465,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Occult, Myth & Gothic Punks',
     domain: 'living gargoyle rooftop punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Gargoylepunk: stone gargoyles that wake at night and guard the city, with carved wings, rain-spout mouths, cathedral rooftops and moonlit patrols.',
@@ -495,7 +495,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Occult, Myth & Gothic Punks',
     domain: 'occult masquerade punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Masquepunk: secret masquerades of hidden identities, with ornate masks, candlelit ballrooms, occult societies, feathers and glances behind porcelain faces.',
@@ -526,7 +526,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Occult, Myth & Gothic Punks',
     domain: 'occult mirror world punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Mirrorpunk: a culture obsessed with haunted mirrors, with silvered halls, cracked reflections, reflections that move on their own and doors into mirror worlds.',
@@ -558,7 +558,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Occult, Myth & Gothic Punks',
     domain: 'occult astronomy instrument punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Astrolabepunk: star-reading guilds with giant brass astrolabes, orreries, domed observatories and zodiac machines turning above candlelit scholars.',
@@ -588,7 +588,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Occult, Myth & Gothic Punks',
     domain: 'smoke spirit bargain punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Djinnpunk: spirits of smoke and fire bound in brass lamps and bottles, with desert markets of sealed vessels, swirling smoke giants and dangerous bargains.',

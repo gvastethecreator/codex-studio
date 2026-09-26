@@ -23,12 +23,11 @@ visualDna:
   lighting_and_shadow: One simple candle or doorway light opens the scene and keeps silhouettes readable.
   texture_and_material: Dry stone, cloth, old rope, iron bars, parchment, and clean ink wash without dirty grain.
   camera_and_composition: Close editorial crop, shallow survival-icon depth, one clear focal hierarchy, and worn negative space without a doorway or inventory setup.
-  atmosphere_and_mood: 'Hungry, anxious, doomed, and intimate without graphic injury; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint, at whatever intensity the requested scene sets.'
+  atmosphere_and_mood: Hungry, anxious, doomed, and intimate without graphic injury; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint, at whatever intensity the requested scene sets.
   rendering_and_quality: Clean ink-and-wash fantasy illustration with limited detail and clear value control.
   creative_brief: 'Starved Dungeon Pilgrimage: Bleak survival dungeon illustration with gaunt pilgrims; broken cells; ritual doors; prison stone; desperate candlelight.'
   key_features: Starved Dungeon Pilgrimage; Bleak survival dungeon illustration with gaunt pilgrims; broken cells; ritual doors; prison stone; desperate candlelight
 avoidRules:
-  - shock gore
   - torture detail
   - photoreal misery
   - unreadable black rooms
@@ -44,7 +43,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-036.webp
 attributes:
-  negativePrompt: shock gore, torture detail, photoreal misery, unreadable black rooms, dense scratch texture, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
+  negativePrompt: torture detail, photoreal misery, unreadable black rooms, dense scratch texture, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

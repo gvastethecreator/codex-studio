@@ -71,7 +71,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Primitive, Stone & Salvage Punks',
     domain: 'bronze age engineering punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Bronzepunk: a bronze age that never ended, with cast bronze automatons, gleaming chariots, sun-disc mirrors and foundries pouring glowing metal into clay molds.',
@@ -102,7 +102,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Primitive, Stone & Salvage Punks',
     domain: 'iron age forge punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Ironagepunk: iron age hill forts turned into forge cities, with bloomery furnaces, iron wheels, horned helmets of invention and smoke over timber walls.',
@@ -132,7 +132,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Primitive, Stone & Salvage Punks',
     domain: 'carved timber engineering punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Woodpunk: a civilization built entirely of carved and joined wood, with wooden clockwork, timber airships, oak gears, pegged joints and carved everything.',
@@ -161,7 +161,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Primitive, Stone & Salvage Punks',
     domain: 'ceramic technology punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Potterypunk: a world where everything is fired clay, with ceramic machines, glazed armor, kiln cities, terracotta pipes and crackle-glaze surfaces.',
@@ -190,7 +190,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Primitive, Stone & Salvage Punks',
     domain: 'woven reed marsh punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Reedpunk: floating marsh cultures building from bundled reeds, with reed boats, woven island towns, reed arches and golden stalks against wide water.',
@@ -219,7 +219,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Primitive, Stone & Salvage Punks',
     domain: 'tanned hide craft punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Leatherpunk: a nomadic culture of tanners and hide-workers, with stitched leather armor, hide tents, tooled saddles, drum skins and oiled straps.',
@@ -250,7 +250,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Primitive, Stone & Salvage Punks',
     domain: 'volcanic glass blade punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Obsidianpunk: a civilization of volcanic glass, with razor obsidian blades, black mirror shields, knapped glass architecture and sun-temples reflecting fire.',
@@ -283,7 +283,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Primitive, Stone & Salvage Punks',
     domain: 'megalith builder punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Megalithpunk: builders of giant standing stones and dolmens, with log rollers, rope teams, lever frames and stone circles aligned with the sun.',
@@ -313,7 +313,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Primitive, Stone & Salvage Punks',
     domain: 'antler and horn craft punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Antlerpunk: a forest culture crafting everything from shed antlers and horn, with antler crowns, horn instruments, carved bone combs and deer-rider hunters.',
@@ -342,7 +342,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Primitive, Stone & Salvage Punks',
     domain: 'woven basketry engineering punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Wickerpunk: engineers who weave everything from willow and rattan, with basket balloons, woven bridges, wicker carriages and huge lattice structures.',
@@ -373,7 +373,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Primitive, Stone & Salvage Punks',
     domain: 'chariot racing culture punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Chariotpunk: a culture obsessed with chariot racing, with light spoked chariots, horse teams in bright colors, dusty hippodromes and roaring crowds.',
@@ -402,7 +402,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Primitive, Stone & Salvage Punks',
     domain: 'felt tent steppe punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Yurtpunk: steppe nomads living in round felt tents that pack onto carts, with lattice walls, painted roof rings, horse herds and endless grass seas.',
@@ -431,7 +431,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Primitive, Stone & Salvage Punks',
     domain: 'dugout canoe river punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Canoepunk: river and lake cultures centered on carved dugout canoes, with paddle crews, river markets on boats, carved prows and forest waterways.',
@@ -462,7 +462,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Primitive, Stone & Salvage Punks',
     domain: 'tree bark craft punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Barkpunk: forest peoples crafting from bark, with birchbark boats, bark-cloth garments, bark-shingle houses and peeled patterns across everything.',
@@ -492,7 +492,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Primitive, Stone & Salvage Punks',
     domain: 'seashell craft coast punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Shellpunk: coastal cultures building with seashells, with shell armor, conch horns, mother-of-pearl mosaics, cowrie trade and shell-paved beaches.',
@@ -523,7 +523,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Primitive, Stone & Salvage Punks',
     domain: 'fossil amber punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Amberpunk: a culture that treasures amber, with glowing amber windows, trapped ancient insects, resin-sealed relics and golden light through tree sap.',
@@ -553,7 +553,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Primitive, Stone & Salvage Punks',
     domain: 'ice age mammoth culture punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Mammothpunk: ice age hunters and herders living with woolly mammoths, with mammoth-bone houses, tusk arches, fur-clad riders and frozen steppe camps.',
@@ -581,7 +581,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '10. Primitive, Stone & Salvage Punks',
     domain: 'feather craft sky punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Featherpunk: an invented sky-loving culture of feather craft, with feather cloaks, fletched gliders, bird-rider scouts and towers crowned with plumes.',

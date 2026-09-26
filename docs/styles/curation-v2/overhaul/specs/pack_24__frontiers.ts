@@ -5,7 +5,7 @@ import { dna } from './_strict';
 // Tactical and solitary frontier art directions: the two referenced directions keep their DNA and
 // get original briefs; eighteen new directions with original names each pair one lonely frontier
 // (ice, desert, orbit, deep cave, storm rig...) with a distinct painting or drawing method.
-const FRONTIER_AVOID = ['gore', 'real military insignia', 'real brand or company logo'];
+const FRONTIER_AVOID = [ 'real military insignia', 'real brand or company logo'];
 const dir = (
   name: string,
   domain: string,
@@ -277,7 +277,7 @@ const spec: Spec = {
       atmosphere_and_mood: 'Awestruck, dangerous and devoted, watching the earth breathe.',
       rendering_and_quality: 'Glowing oil painting with rich warm light and smoky depth.',
       key_features: 'crater rim station; lava glow; ash clouds; rimmed silhouettes',
-    }, ['gore', 'daylight blue sky'], [
+    }, [ 'daylight blue sky'], [
       "Sipping coffee on the crater rim, a scientist watches the lava lake below glow like a sunset turned upside down. No readable text or logo.",
       'A tiny observatory hut sits on the edge of a crater as the ash cloud above it flickers with lightning. No readable text or logo.',
       'A scientist lowers a sensor on a long cable toward the lava, the cable glowing red where it nears the surface. No readable text or logo.',

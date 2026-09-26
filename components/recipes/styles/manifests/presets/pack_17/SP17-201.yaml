@@ -29,10 +29,9 @@ visualDna:
   camera_and_composition: Figure among tall charred trunks, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with smoldering folk menace.
   rendering_and_quality: Painterly haze with clean silhouettes, kept consistent across the whole image.
-  creative_brief: "Ashen forest witch direction: painted art direction of forests burned to grey ash and charcoal trunks, where witches in bone charms walk under an orange ember sky. Carry it through ashen forest, charred trunks, ember sky, bone charms. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Ashen forest witch direction: painted art direction of forests burned to grey ash and charcoal trunks, where witches in bone charms walk under an orange ember sky. Carry it through ashen forest, charred trunks, ember sky, bone charms. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: ashen forest; charred trunks; ember sky; bone charms
 avoidRules:
-  - gore
   - interface or HUD
   - existing game characters, logos or locations
   - readable text
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

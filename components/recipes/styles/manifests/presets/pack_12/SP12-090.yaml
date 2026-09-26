@@ -59,7 +59,7 @@ avoidRules:
     unrequested named heroes, copied emblems or live-service event scenes; retain characteristic
     base-game equipment construction
   - switching the third-person view to a side-on fighting-game plane
-  - unrequested blood, objective markers, combat text or fabricated HUD
+  - unrequested objective markers, combat text or fabricated HUD
   - cinematic blur that hides guard direction or combat spacing
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP12-090.webp
@@ -67,7 +67,7 @@ attributes:
   negativePrompt: >-
     unrequested named heroes, copied emblems or live-service event scenes; retain characteristic
     base-game equipment construction, switching the third-person view to a side-on fighting-game
-    plane, unrequested blood, objective markers, combat text or fabricated HUD, cinematic blur that
+    plane, unrequested objective markers, combat text or fabricated HUD, cinematic blur that
     hides guard direction or combat spacing, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
   referenceGame: >-
     For Honor (2017 original release; use base-game combat grammar and leave live-service cosmetics
@@ -110,7 +110,7 @@ attributes:
         field: global
       - text: switching the third-person view to a side-on fighting-game plane
         field: global
-      - text: unrequested blood, objective markers, combat text or fabricated HUD
+      - text: unrequested objective markers, combat text or fabricated HUD
         field: global
       - text: cinematic blur that hides guard direction or combat spacing
         field: global

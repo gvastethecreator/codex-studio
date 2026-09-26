@@ -29,10 +29,9 @@ visualDna:
   camera_and_composition: Centered frontal posed portrait with figures arranged stiffly in rows.
   atmosphere_and_mood: Polite, formal and deeply unnerving, a family that is not quite right.
   rendering_and_quality: Careful academic portrait painting with smooth finish and subtle distortions.
-  creative_brief: "Wrong-face family portraits: formal studio portraits painted with perfect poise, except that faces are subtly too smooth, too still or slightly misplaced. Carry it through formal posed portraits, subtly wrong faces, studio backdrop, stiff symmetry. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Wrong-face family portraits: formal studio portraits painted with perfect poise, except that faces are subtly too smooth, too still or slightly misplaced. Carry it through formal posed portraits, subtly wrong faces, studio backdrop, stiff symmetry. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: formal posed portraits; subtly wrong faces; studio backdrop; stiff symmetry
 avoidRules:
-  - gore
   - monster faces
   - cartoon exaggeration
   - graphic wounds
@@ -52,7 +51,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: gore, monster faces, cartoon exaggeration, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: monster faces, cartoon exaggeration, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

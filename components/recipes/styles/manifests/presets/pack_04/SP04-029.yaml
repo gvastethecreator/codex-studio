@@ -21,9 +21,8 @@ visualDna:
   atmosphere_and_mood: Playful and punchy, a collectible little treasure.
   rendering_and_quality: Crisp decal-ready shapes readable at small size; no background scene and no readable text.
   key_features: thick white die-cut border; flat saturated vector; laminate highlight streak; lifted corner; isolated silhouette
-  creative_brief: "Glossy die-cut sticker: the subject drawn as a bold simplified vinyl sticker with a thick white cut border and a laminate shine. Carry it through thick white die-cut border, flat saturated vector, laminate highlight streak, lifted corner, isolated silhouette. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Glossy die-cut sticker: the subject drawn as a bold simplified vinyl sticker with a thick white cut border and a laminate shine. Carry it through thick white die-cut border, flat saturated vector, laminate highlight streak, lifted corner, isolated silhouette. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
-  - frightening gore
   - known picture-book characters
   - franchise mascot likeness
   - background
@@ -49,7 +48,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-029.webp
 attributes:
-  negativePrompt: frightening gore, known picture-book characters, franchise mascot likeness, background, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: known picture-book characters, franchise mascot likeness, background, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

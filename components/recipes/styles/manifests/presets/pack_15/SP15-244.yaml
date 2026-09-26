@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Foggy narrow streets with lone masked figures or silent processions.
   atmosphere_and_mood: Eerie, solemn and protective, strangers who walk toward the danger.
   rendering_and_quality: Moody fog-layered illustration with lantern glow and leather sheen.
-  creative_brief: "Plaguepunk: beaked plague doctors turned into a secret order, with leather masks, herb-filled beaks, waxed coats, lanterns and foggy quarantined streets. Carry it through beaked masks, waxed coats, lanterns in fog, herb-filled beaks. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Plaguepunk: beaked plague doctors turned into a secret order, with leather masks, herb-filled beaks, waxed coats, lanterns and foggy quarantined streets. Carry it through beaked masks, waxed coats, lanterns in fog, herb-filled beaks. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: beaked masks; waxed coats; lanterns in fog; herb-filled beaks
 avoidRules:
   - readable text
@@ -37,7 +37,6 @@ avoidRules:
   - real artist signature
   - copying a specific famous artwork
   - muddy noisy texture
-  - gore
   - graphic wounds
   - real religious leader likeness
   - readable runes or scripture
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real religious leader likeness, readable runes or scripture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

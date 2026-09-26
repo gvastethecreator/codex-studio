@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; segmented ribs set a repeating arthropod rhythm along roofs and walls.
   atmosphere_and_mood: Alien, elegant and slightly unsettling, a building that could have molted.
   rendering_and_quality: Precise specular rendering of iridescent surfaces; architecture only, with no insects or creatures.
-  creative_brief: "Carapace architecture: roofs and walls of overlapping iridescent shell plates on segmented ribs, jointed buttresses and amber resin membranes as windows. Carry it through overlapping iridescent shell plates, segmented rib structure, jointed buttresses, amber resin membrane windows, oil-slick sheen. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Carapace architecture: roofs and walls of overlapping iridescent shell plates on segmented ribs, jointed buttresses and amber resin membranes as windows. Carry it through overlapping iridescent shell plates, segmented rib structure, jointed buttresses, amber resin membrane windows, oil-slick sheen. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: overlapping iridescent shell plates; segmented rib structure; jointed buttresses; amber resin membrane windows; oil-slick sheen
 avoidRules:
   - licensed fantasy location
@@ -40,7 +40,6 @@ avoidRules:
   - swapping the requested structure for a castle or temple
   - insects
   - creature
-  - gore
   - watermark
   - text
   - readable labels
@@ -52,7 +51,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-117.webp
 attributes:
-  negativePrompt: licensed fantasy location, copy of a known film or game building, readable runes or inscriptions, glossy mirror floor by default, decorative waterfall by default, swapping the requested structure for a castle or temple, insects, creature, gore, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: licensed fantasy location, copy of a known film or game building, readable runes or inscriptions, glossy mirror floor by default, decorative waterfall by default, swapping the requested structure for a castle or temple, insects, creature, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

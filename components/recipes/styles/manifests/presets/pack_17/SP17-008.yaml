@@ -20,7 +20,7 @@ visualDna:
   lighting_and_shadow: Simple candle key light, soft baroque shadow blocks, and clean glass highlights keep objects readable.
   texture_and_material: Velvet, cracked porcelain, parchment labels, cloudy glass, aged brass, wax, and dusty herbs.
   camera_and_composition: Formal cabinet hierarchy, controlled depth, candlelit object spacing as abstract rhythm, and theatrical drape-like planes without requiring clustered props or curtains.
-  atmosphere_and_mood: 'Elegant, morbid, clinical, and theatrical; nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony, at whatever intensity the requested scene sets.'
+  atmosphere_and_mood: Elegant, morbid, clinical, and theatrical; nocturnal aristocracy, clinical dread, hunter ritual, plague-court elegance, and suspicious candlelit ceremony, at whatever intensity the requested scene sets.
   rendering_and_quality: Painterly gothic illustration with ornate props, readable costume layers, defined edges, and restrained horror.
   creative_brief: 'Plague Doctor Baroque: Baroque plague era fantasy with beaked masks; ornate decay; medicine cabinets; candlelit dread; Transform any subject with plague baroque elegance.'
   key_features: Plague Doctor Baroque; Baroque plague era fantasy with beaked masks; ornate decay; medicine cabinets; candlelit dread; Transform any subject with plague baroque elegance
@@ -29,7 +29,6 @@ avoidRules:
   - sci fi lab
   - cute plague mask
   - clean fashion shoot
-  - explicit gore
   - watermark
   - text
   - vampire portrait default
@@ -41,7 +40,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-008.webp
 attributes:
-  negativePrompt: modern hospital, sci fi lab, cute plague mask, clean fashion shoot, explicit gore, watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
+  negativePrompt: modern hospital, sci fi lab, cute plague mask, clean fashion shoot, watermark, text, vampire portrait default, plague doctor prop lock, candle room dependency, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

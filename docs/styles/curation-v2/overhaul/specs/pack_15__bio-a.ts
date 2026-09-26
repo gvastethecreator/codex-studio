@@ -4,7 +4,7 @@ import { dna } from './_strict';
 
 // Bio, myco and body punks (part A): each new punk treats one living system as technology.
 // No gore: bodies and organisms are shown as crafted, strange and beautiful.
-const AVOID = [...STYLE_AVOID, 'gore', 'graphic wounds', 'real brand or company logo'];
+const AVOID = [...STYLE_AVOID,  'graphic wounds', 'real brand or company logo'];
 
 const punk = (
   name: string,

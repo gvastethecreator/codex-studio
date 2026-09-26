@@ -131,7 +131,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Psychological Horror Aesthetics',
     domain: 'sterile pastel institution dread',
     negativePrompt:
-      'warm cozy lighting, high contrast shadows, gore, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'warm cozy lighting, high contrast shadows, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Clinical pastel unease: soft mint, pale pink and hospital cream spaces lit by humming fluorescents, where calm institutional order hides something quietly wrong.',
@@ -169,7 +169,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Psychological Horror Aesthetics',
     domain: 'degraded home video dread',
     negativePrompt:
-      'clean digital sharpness, modern interior design, gore, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'clean digital sharpness, modern interior design, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Tape-worn living room: ordinary family interiors seen as if through a worn home videotape, with color bleed, soft smear and wrongness hiding in the noise.',
@@ -207,7 +207,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Psychological Horror Aesthetics',
     domain: 'half-submerged interior dread',
     negativePrompt:
-      'splashing action, bright tropical water, gore, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'splashing action, bright tropical water, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Flooded memory rooms: familiar interiors half filled with still dark water, furniture drowning quietly while mirrors of the room float on the surface.',
@@ -244,7 +244,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Psychological Horror Aesthetics',
     domain: 'uncanny formal portrait dread',
     negativePrompt:
-      'gore, monster faces, cartoon exaggeration, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'monster faces, cartoon exaggeration, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Wrong-face family portraits: formal studio portraits painted with perfect poise, except that faces are subtly too smooth, too still or slightly misplaced.',
@@ -276,7 +276,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Psychological Horror Aesthetics',
     domain: 'candle altar dread',
     negativePrompt:
-      'cold blue light, clean modern room, gore, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cold blue light, clean modern room, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Melting wax shrine: cramped altars heaped with candles that have burned for years, wax pouring over photographs, flowers and trinkets in frozen waterfalls.',
@@ -313,7 +313,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Psychological Horror Aesthetics',
     domain: 'damp wallpaper interior dread',
     negativePrompt:
-      'bright clean walls, gore, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'bright clean walls, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Breathing wallpaper damp: old rooms whose floral wallpaper is swollen with damp, stains spreading into shapes and the pattern seeming to shift when unobserved.',
@@ -347,7 +347,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Psychological Horror Aesthetics',
     domain: 'late-night transit dread',
     negativePrompt:
-      'daylight, crowded cheerful scenes, gore, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'daylight, crowded cheerful scenes, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Night-bus sodium limbo: empty late-night buses and stations under orange sodium light, passengers too still and routes that never seem to reach their stop.',
@@ -379,7 +379,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Psychological Horror Aesthetics',
     domain: 'glass-eyed parlor dread',
     negativePrompt:
-      'gore, living animals moving, bright colors, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'living animals moving, bright colors, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Taxidermy parlor stillness: cluttered old parlors crowded with mounted animals under glass domes, dozens of glass eyes watching in perfect silence.',
@@ -411,7 +411,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Psychological Horror Aesthetics',
     domain: 'isolated winter motel dread',
     negativePrompt:
-      'summer, crowded parking lot, gore, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'summer, crowded parking lot, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Snowbound motel hum: a roadside motel buried in snow, humming ice machines, blinking vacancy tubes and long exterior walkways where every door looks the same.',
@@ -443,7 +443,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Psychological Horror Aesthetics',
     domain: 'forgotten toy attic dread',
     negativePrompt:
-      'cheerful playroom, gore, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'cheerful playroom, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Attic toy menace: dusty attics of forgotten dolls, wind-up animals and rocking horses, arranged as if they have been waiting for someone to come back.',
@@ -475,7 +475,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Psychological Horror Aesthetics',
     domain: 'fragmented reflection dread',
     negativePrompt:
-      'single clean mirror, bright daylight, gore, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'single clean mirror, bright daylight, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Mirror-maze identity: endless reflective corridors where a figure multiplies into countless copies, a few of them moving on their own.',
@@ -508,7 +508,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Psychological Horror Aesthetics',
     domain: 'red safelight photo dread',
     negativePrompt:
-      'full color daylight, digital screens, gore, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'full color daylight, digital screens, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Darkroom safelight reveal: a photographic darkroom bathed in red safelight, prints slowly developing in trays to show things that were not there when the photo was taken.',
@@ -539,7 +539,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Psychological Horror Aesthetics',
     domain: 'bedroom night paralysis dread',
     negativePrompt:
-      'gore, monster close-up, bright light, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'monster close-up, bright light, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Sleep-paralysis bedside: a dim bedroom seen from the pillow at night, the familiar room stretched and heavy while a shadowed presence waits at the edge of vision.',
@@ -572,7 +572,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Psychological Horror Aesthetics',
     domain: 'deep sea interior dread',
     negativePrompt:
-      'bright tropical reef, gore, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'bright tropical reef, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Deep-sea pressure dread: cramped submersible interiors and black ocean depths, riveted hulls creaking while vast unseen shapes pass beyond tiny portholes.',
@@ -605,7 +605,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Psychological Horror Aesthetics',
     domain: 'burned suburb aftermath dread',
     negativePrompt:
-      'active flames, gore, blue clear sky, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'active flames, blue clear sky, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Ash-snow suburb: a quiet suburban street after a distant fire, grey ash falling like snow onto lawns, cars and swings, the sky a muted orange.',
@@ -639,7 +639,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '1. Psychological Horror Aesthetics',
     domain: 'television static dread',
     negativePrompt:
-      'bright daylight, readable screen content, gore, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'bright daylight, readable screen content, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Static-glow television room: a dark room lit only by an old television showing static, the grey light flickering over furniture and faces.',

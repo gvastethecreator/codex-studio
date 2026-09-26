@@ -5,7 +5,7 @@ import { dna } from './_strict';
 // Occult, myth and gothic punks (part B): oracle, golem, gargoyle, masque, mirror, astrolabe and djinn cultures.
 const AVOID = [
   ...STYLE_AVOID,
-  'gore',
+  
   'graphic wounds',
   'real religious leader likeness',
   'readable runes or scripture',

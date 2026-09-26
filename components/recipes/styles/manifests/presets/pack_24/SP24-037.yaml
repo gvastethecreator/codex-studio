@@ -29,11 +29,10 @@ visualDna:
   camera_and_composition: Low horizon with the hauler leaning into a diagonal against the wind.
   atmosphere_and_mood: Grueling, heroic and alone, every single step hard earned.
   rendering_and_quality: Bold woodcut-style rendering with strong carved lines and contrast.
-  creative_brief: "Polar sledge haul: a lone figure dragging a heavy sledge across endless pressure ice, rendered in stark black-and-white woodcut style with bold carved snow. Carry it through lone sledge hauler, pressure ice, woodcut contrast, diagonal struggle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Polar sledge haul: a lone figure dragging a heavy sledge across endless pressure ice, rendered in stark black-and-white woodcut style with bold carved snow. Carry it through lone sledge hauler, pressure ice, woodcut contrast, diagonal struggle. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: lone sledge hauler; pressure ice; woodcut contrast; diagonal struggle
 avoidRules:
   - color photography
-  - gore
   - real military insignia
   - real brand or company logo
   - readable text
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: color photography, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: color photography, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

@@ -29,11 +29,10 @@ visualDna:
   camera_and_composition: Two figures far apart with empty space, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with tense stillness before motion.
   rendering_and_quality: Expressive ink with strong negative space, kept consistent across the whole image.
-  creative_brief: "Wet-ink samurai duel direction: stark duels painted in splashing black ink on white, one drop of red, speed lines of brush and vast empty space. Carry it through splashing ink, vast white space, single red accent, duel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Wet-ink samurai duel direction: stark duels painted in splashing black ink on white, one drop of red, speed lines of brush and vast empty space. Carry it through splashing ink, vast white space, single red accent, duel. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: splashing ink; vast white space; single red accent; duel
 avoidRules:
   - readable calligraphy
-  - gore
   - interface or HUD
   - existing game or film characters, logos or clan crests
   - readable text
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable calligraphy, gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable calligraphy, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

@@ -22,14 +22,14 @@ tags:
   - sensor
 visualDna:
   aesthetic: 'Audio spectrogram: time runs left to right and frequency bottom to top, with sound energy as glowing color.'
-  subject_treatment: "Keep the prompt subject's geometry, pose and setting; replace only its appearance with what this instrument records: drawn as sound energy in a spectrogram: harmonics as stacked lines, noise as clouds, silence dark."
+  subject_treatment: 'Keep the prompt subject''s geometry, pose and setting; replace only its appearance with what this instrument records: drawn as sound energy in a spectrogram: harmonics as stacked lines, noise as clouds, silence dark.'
   color_and_tone: Magma or viridis color ramps on black, exactly as the instrument maps its signal.
   lighting_and_shadow: No light; brightness is sound energy, because the image shows signal, not ordinary light.
   texture_and_material: Harmonic stripes, noise clouds and pixel blocks, as real instrument artifacts rather than decoration.
   camera_and_composition: Wide horizontal time-frequency plot with no axis labels, matching how this instrument actually frames data.
   atmosphere_and_mood: Hidden, eerie, musical and precise, coming from seeing what eyes cannot.
   rendering_and_quality: Believable instrument output with correct signal logic, artifacts and resolution for that sensor.
-  creative_brief: "Audio spectrogram: time runs left to right and frequency bottom to top, with sound energy as glowing color. Carry it through harmonic stripes, time-frequency, energy colors. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Audio spectrogram: time runs left to right and frequency bottom to top, with sound energy as glowing color. Carry it through harmonic stripes, time-frequency, energy colors. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: harmonic stripes; time-frequency; energy colors
 avoidRules:
   - readable text
@@ -39,7 +39,6 @@ avoidRules:
   - muddy noisy texture
   - readable UI text
   - fake HUD clutter
-  - medical gore
   - watermark
   - text
   - readable labels
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, medical gore, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, readable UI text, fake HUD clutter, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

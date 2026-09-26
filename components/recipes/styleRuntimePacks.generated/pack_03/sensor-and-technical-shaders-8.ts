@@ -537,7 +537,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '8. Sensor And Technical Shaders',
     domain: 'game VFX dissolve shader',
     negativePrompt:
-      'sensor noise, camera lens optics, readable text, color legend or scale bar, software UI or viewport gizmos, franchise likeness, real burning paper, gore, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'sensor noise, camera lens optics, readable text, color legend or scale bar, software UI or viewport gizmos, franchise likeness, real burning paper, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Noise dissolve shader: the named subject disappearing along a threshold driven by procedural noise, leaving ragged holes with a thin glowing burn edge.',

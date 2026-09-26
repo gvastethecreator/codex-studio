@@ -20,7 +20,7 @@ visualDna:
   lighting_and_shadow: Desk-like candle logic abstracted into hard pools, thin rim glints, and severe shadow blocks.
   texture_and_material: Parchment grain, wax seals as abstract accents, iron staples, thread binding, soot, and dry ink.
   camera_and_composition: Ledger-like vertical ordering, ruled spacing without readable text, strict margins, and moral weight applied to the prompt subject's shape.
-  atmosphere_and_mood: 'Accusatory, bureaucratic, severe, dry, and strangely sacred; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness, at whatever intensity the requested scene sets.'
+  atmosphere_and_mood: Accusatory, bureaucratic, severe, dry, and strangely sacred; adult editorial tension, devotional sensuality, medicinal unease, feudal decadence, and symbolic medieval weirdness, at whatever intensity the requested scene sets.
   rendering_and_quality: Clean editorial gothic illustration with crisp hierarchy, denoised paper, and no legible writing.
   creative_brief: 'Debt Saint Ledger Gothic: Medieval bureaucratic gothic where debt; oath; iron; parchment; moral pressure become a severe visual system.'
   key_features: Debt Saint Ledger Gothic; Medieval bureaucratic gothic where debt; oath; iron; parchment; moral pressure become a severe visual system
@@ -30,7 +30,6 @@ avoidRules:
   - office desk
   - legal courtroom
   - modern paperwork
-  - explicit gore
   - watermark
   - text
   - generic royal portrait
@@ -42,7 +41,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-049.webp
 attributes:
-  negativePrompt: readable writing, accountant portrait, office desk, legal courtroom, modern paperwork, explicit gore, watermark, text, generic royal portrait, romance novel cover, prompt literal medieval card, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
+  negativePrompt: readable writing, accountant portrait, office desk, legal courtroom, modern paperwork, watermark, text, generic royal portrait, romance novel cover, prompt literal medieval card, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

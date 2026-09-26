@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested camera; the dissolve front sweeps across the subject in one direction.
   atmosphere_and_mood: Eerie and final, something being erased from the world.
   rendering_and_quality: Clean alpha-clip shader with a sharp emissive edge; no paper burn texture and no painted smoke.
-  creative_brief: "Noise dissolve shader: the named subject disappearing along a threshold driven by procedural noise, leaving ragged holes with a thin glowing burn edge. Carry it through noise-driven holes, thin emissive edge band, ember particles off the edge, one-direction dissolve front, background through holes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Noise dissolve shader: the named subject disappearing along a threshold driven by procedural noise, leaving ragged holes with a thin glowing burn edge. Carry it through noise-driven holes, thin emissive edge band, ember particles off the edge, one-direction dissolve front, background through holes. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: noise-driven holes; thin emissive edge band; ember particles off the edge; one-direction dissolve front; background through holes
 avoidRules:
   - sensor noise
@@ -39,7 +39,6 @@ avoidRules:
   - software UI or viewport gizmos
   - franchise likeness
   - real burning paper
-  - gore
   - watermark
   - text
   - readable labels
@@ -50,7 +49,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-157.webp
 attributes:
-  negativePrompt: sensor noise, camera lens optics, readable text, color legend or scale bar, software UI or viewport gizmos, franchise likeness, real burning paper, gore, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: sensor noise, camera lens optics, readable text, color legend or scale bar, software UI or viewport gizmos, franchise likeness, real burning paper, watermark, text, readable labels, logo, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

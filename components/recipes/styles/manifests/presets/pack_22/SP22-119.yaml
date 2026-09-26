@@ -43,13 +43,13 @@ visualDna:
 avoidRules:
   - automatic cracks or widespread surface aging
   - unrequested walls, ruins, or historical setting
-  - unrequested horror or violence
+  - unrequested horror
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP22-119.webp
 attributes:
   negativePrompt: >-
     automatic cracks or widespread surface aging, unrequested walls, ruins, or historical setting,
-    unrequested horror or violence
+    unrequested horror
   intentionalPolicy:
     schemaVersion: 1
     kind: full_style
@@ -72,7 +72,7 @@ attributes:
         field: texture_and_material
       - text: unrequested walls, ruins, or historical setting
         field: global
-      - text: unrequested horror or violence
+      - text: unrequested horror
         field: global
   sourceMetadata:
     atlas: Codex Studio Atlas TCG v0.1

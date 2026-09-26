@@ -20,7 +20,7 @@ visualDna:
   lighting_and_shadow: Icon-like frontal light, clean halo geometry, and simple shadow masses.
   texture_and_material: Smooth vellum, polished black ink, brushed gold-like planes, wax, cloth, and carved stone without gritty buildup.
   camera_and_composition: Tall devotional icon crop, strong vertical silhouette, symmetrical framing, and no readable scripture.
-  atmosphere_and_mood: 'Penitent, solemn, ceremonial, mournful, and sacred without copied game identities; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint, at whatever intensity the requested scene sets.'
+  atmosphere_and_mood: Penitent, solemn, ceremonial, mournful, and sacred without copied game identities; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint, at whatever intensity the requested scene sets.
   rendering_and_quality: Clean gothic illustration with elegant contour lines, broad values, and controlled ornament.
   creative_brief: 'Penitent Baroque Icon: Penitential baroque medieval fantasy with tall devotional silhouettes; thorn crowns; reliquaries; veils; severe sacred geometry.'
   key_features: Penitent Baroque Icon; Penitential baroque medieval fantasy with tall devotional silhouettes; thorn crowns; reliquaries; veils; severe sacred geometry
@@ -29,7 +29,6 @@ avoidRules:
   - readable scripture
   - excessive thorn detail
   - black on black costume
-  - explicit gore
   - watermark
   - text
   - readable tarot labels
@@ -41,7 +40,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-035.webp
 attributes:
-  negativePrompt: copied game armor, readable scripture, excessive thorn detail, black on black costume, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
+  negativePrompt: copied game armor, readable scripture, excessive thorn detail, black on black costume, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

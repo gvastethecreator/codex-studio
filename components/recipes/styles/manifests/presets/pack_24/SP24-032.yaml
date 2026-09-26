@@ -29,12 +29,11 @@ visualDna:
   camera_and_composition: Low angles on the rig with towering waves and dramatic diagonals.
   atmosphere_and_mood: Relentless, dangerous and defiant, the night shift continues regardless.
   rendering_and_quality: Heavy wet oil painting with bold light and spray effects.
-  creative_brief: "Storm-rig night shift: an offshore platform battered by black waves at night, painted in heavy wet oils with sodium floodlights and flying spray. Carry it through offshore rig, towering night waves, sodium floodlights, flying spray. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Storm-rig night shift: an offshore platform battered by black waves at night, painted in heavy wet oils with sodium floodlights and flying spray. Carry it through offshore rig, towering night waves, sodium floodlights, flying spray. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: offshore rig; towering night waves; sodium floodlights; flying spray
 avoidRules:
   - calm sea
   - daylight
-  - gore
   - real military insignia
   - real brand or company logo
   - readable text
@@ -51,7 +50,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: calm sea, daylight, gore, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: calm sea, daylight, real military insignia, real brand or company logo, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

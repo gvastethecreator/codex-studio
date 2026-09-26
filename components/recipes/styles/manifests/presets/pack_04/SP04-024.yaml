@@ -21,9 +21,8 @@ visualDna:
   atmosphere_and_mood: Gentle, handmade and funny, made for the very young.
   rendering_and_quality: Physical plasticine and craft materials with visible handling marks; never glossy plastic CG.
   key_features: chunky plasticine characters; felt and cardboard set; fingerprints and tool dents; bright even lamps; shallow tabletop depth
-  creative_brief: "Preschool stop-motion clay: chunky plasticine characters on a small tabletop set of felt, cardboard and wooden blocks, filmed under bright lamps. Carry it through chunky plasticine characters, felt and cardboard set, fingerprints and tool dents, bright even lamps, shallow tabletop depth. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Preschool stop-motion clay: chunky plasticine characters on a small tabletop set of felt, cardboard and wooden blocks, filmed under bright lamps. Carry it through chunky plasticine characters, felt and cardboard set, fingerprints and tool dents, bright even lamps, shallow tabletop depth. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
-  - frightening gore
   - known picture-book characters
   - franchise mascot likeness
   - enlarged head
@@ -53,7 +52,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-024.webp
 attributes:
-  negativePrompt: frightening gore, known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, glossy plastic CG, 2d, drawn, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, glossy plastic CG, 2d, drawn, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

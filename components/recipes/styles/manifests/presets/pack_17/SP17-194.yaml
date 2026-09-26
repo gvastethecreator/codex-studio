@@ -29,10 +29,9 @@ visualDna:
   camera_and_composition: Split view above and below the waterline, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with drowned sacred melancholy.
   rendering_and_quality: Painterly light and water detail, kept consistent across the whole image.
-  creative_brief: "Drowned cathedral direction: painted art direction of cathedrals half sunk in green water, light rays through broken glass, drifting candles and barnacled saints. Carry it through flooded cathedral, light rays, barnacled saints, waterline. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Drowned cathedral direction: painted art direction of cathedrals half sunk in green water, light rays through broken glass, drifting candles and barnacled saints. Carry it through flooded cathedral, light rays, barnacled saints, waterline. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: flooded cathedral; light rays; barnacled saints; waterline
 avoidRules:
-  - gore
   - interface or HUD
   - existing game characters, logos or locations
   - readable text
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

@@ -20,7 +20,7 @@ visualDna:
   lighting_and_shadow: Flat heraldic values, simple rim separation, and no murky atmosphere.
   texture_and_material: Smooth enamel-like color, crisp ink contours, simple cloth folds, and minimal weathering.
   camera_and_composition: Symmetrical crest layout, centered beast silhouette, clean shield or banner shapes with no letters.
-  atmosphere_and_mood: 'Noble, ominous, ceremonial, and antique; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint, at whatever intensity the requested scene sets.'
+  atmosphere_and_mood: Noble, ominous, ceremonial, and antique; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint, at whatever intensity the requested scene sets.
   rendering_and_quality: Graphic heraldic illustration with bold shapes, restrained detail, and denoised color fields.
   creative_brief: 'Heraldic Chimera Plate: Heraldic medieval fantasy plate with chimeras; shields; banners; crowns; clean courtly geometry.'
   key_features: Heraldic Chimera Plate; Heraldic medieval fantasy plate with chimeras; shields; banners; crowns; clean courtly geometry
@@ -29,7 +29,6 @@ avoidRules:
   - letters
   - tiny repeated scales
   - glossy vector flatness
-  - explicit gore
   - watermark
   - text
   - readable tarot labels
@@ -41,7 +40,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-040.webp
 attributes:
-  negativePrompt: readable coats of arms, letters, tiny repeated scales, glossy vector flatness, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
+  negativePrompt: readable coats of arms, letters, tiny repeated scales, glossy vector flatness, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

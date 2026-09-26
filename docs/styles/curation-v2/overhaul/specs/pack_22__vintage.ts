@@ -185,7 +185,7 @@ const spec: Spec = {
       atmosphere_and_mood: 'Keep the requested mood with silly gross-out fun.',
       rendering_and_quality: 'Vivid painted card art without gore, crisp and funny.',
       key_features: 'wacky monster portrait; garish colors; bold border; gross-out humor',
-    }, ['gore', 'readable card text'], [
+    }, [ 'readable card text'], [
       'A slimy green swamp monster grins while wearing a party hat, painted like an old bubblegum trading card with a thick purple border. No readable text or logo.',
       "Rising from a steaming plate, a monster made of spaghetti waves its noodle arms while its meatball eyes bulge and a single parmesan tooth drips sauce onto the tablecloth. No readable text or logo.",
       "Standing at a cracked bathroom mirror, a warty troll brushes his one enormous tooth with a toilet brush, foam dripping down his chin while a terrified rubber duck watches. No readable text or logo.",

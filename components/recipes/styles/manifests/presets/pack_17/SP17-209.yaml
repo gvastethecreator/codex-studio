@@ -29,11 +29,10 @@ visualDna:
   camera_and_composition: Top-down or angled field with banners, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with orderly strategic clarity.
   rendering_and_quality: Crisp graphic design with no text, kept consistent across the whole image.
-  creative_brief: "Heraldic flat-color tactics direction: strategy art where armies are rendered as flat heraldic colors and shapes on a map-like battlefield with clean banners. Carry it through flat heraldic color, banners, map-like field, clean shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Heraldic flat-color tactics direction: strategy art where armies are rendered as flat heraldic colors and shapes on a map-like battlefield with clean banners. Carry it through flat heraldic color, banners, map-like field, clean shapes. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: flat heraldic color; banners; map-like field; clean shapes
 avoidRules:
   - readable mottoes
-  - gore
   - interface or HUD
   - existing game or film characters, logos or clan crests
   - readable text
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable mottoes, gore, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable mottoes, interface or HUD, existing game or film characters, logos or clan crests, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

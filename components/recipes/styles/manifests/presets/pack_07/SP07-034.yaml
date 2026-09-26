@@ -21,14 +21,13 @@ visualDna:
   atmosphere_and_mood: Melancholic, quiet and abandoned, time settling in dust.
   rendering_and_quality: Urban-exploration photograph with precise decay detail, no gore, creatures or horror staging.
   key_features: curled delaminating paint; collapsed ceiling tiles; rust-bleed from fixtures; moss through cracked floor; dusty skylight shafts
-  creative_brief: "Institutional ruin patina: an abandoned public building decaying in place, with paint peeling in curls, collapsed ceiling tiles, rust bleeding from fixtures and plants reclaiming the floor. Carry it through curled delaminating paint, collapsed ceiling tiles, rust-bleed from fixtures, moss through cracked floor, dusty skylight shafts. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Institutional ruin patina: an abandoned public building decaying in place, with paint peeling in curls, collapsed ceiling tiles, rust bleeding from fixtures and plants reclaiming the floor. Carry it through curled delaminating paint, collapsed ceiling tiles, rust-bleed from fixtures, moss through cracked floor, dusty skylight shafts. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - one-point corridor perspective as default
   - wet mirror-gloss floor as default
   - turning the requested room into a station or library
   - readable signage or wayfinding text
   - fresh clean surfaces
-  - gore
   - horror creatures
   - asylum horror staging
   - clean
@@ -61,7 +60,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-034.webp
 attributes:
-  negativePrompt: one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, fresh clean surfaces, gore, horror creatures, asylum horror staging, clean, new, hospital/asylum horror, long corridor, creature, readable signage, furniture focus, empty abstraction, readable map or sign, fixed building-only scene, corridor perspective, furniture showroom, market aisle, library aisle, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: one-point corridor perspective as default, wet mirror-gloss floor as default, turning the requested room into a station or library, readable signage or wayfinding text, fresh clean surfaces, horror creatures, asylum horror staging, clean, new, hospital/asylum horror, long corridor, creature, readable signage, furniture focus, empty abstraction, readable map or sign, fixed building-only scene, corridor perspective, furniture showroom, market aisle, library aisle, prompt-required card, readable text, logo, watermark, camera prop, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

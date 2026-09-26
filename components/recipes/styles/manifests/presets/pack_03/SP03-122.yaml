@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Keep the requested view; the full skeleton reads as a silhouette of ribs and limb bones.
   atmosphere_and_mood: Solemn and scholarly, a life reconstructed from what remains.
   rendering_and_quality: Plausible bone count and joints for the species or invented creature, with no flesh and no gore.
-  creative_brief: "Natural-history skeleton mount: the subject reduced to its articulated bones, wired together in a lifelike pose on slender iron rods like a museum display. Carry it through articulated bones, iron armature rods, ivory to tea-brown bone, rib shadows from gallery spots, brass joint pins. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Natural-history skeleton mount: the subject reduced to its articulated bones, wired together in a lifelike pose on slender iron rods like a museum display. Carry it through articulated bones, iron armature rods, ivory to tea-brown bone, rib shadows from gallery spots, brass joint pins. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: articulated bones; iron armature rods; ivory to tea-brown bone; rib shadows from gallery spots; brass joint pins
 avoidRules:
   - forced T-pose
@@ -38,7 +38,6 @@ avoidRules:
   - readable text
   - logo
   - flesh
-  - gore
   - cartoon skeleton
   - watermark
   - text
@@ -49,7 +48,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP03-122.webp
 attributes:
-  negativePrompt: forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, flesh, gore, cartoon skeleton, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: forced T-pose, object turned into an avatar, franchise likeness, readable text, logo, flesh, cartoon skeleton, watermark, text, readable labels, UI overlay, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_03
   packName: 3D & CGI Rendering

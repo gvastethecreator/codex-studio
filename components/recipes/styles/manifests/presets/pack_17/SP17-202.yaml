@@ -29,10 +29,9 @@ visualDna:
   camera_and_composition: Long avenues of tombs and statues, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with serene eerie grief.
   rendering_and_quality: Painterly light with crisp marble, kept consistent across the whole image.
-  creative_brief: "Marble angel necropolis: painted art direction of vast white marble cities of the dead, weeping angel statues, cypress trees and pale sunlight. Carry it through marble tombs, weeping angels, cypress, pale sunlight. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Marble angel necropolis: painted art direction of vast white marble cities of the dead, weeping angel statues, cypress trees and pale sunlight. Carry it through marble tombs, weeping angels, cypress, pale sunlight. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: marble tombs; weeping angels; cypress; pale sunlight
 avoidRules:
-  - gore
   - interface or HUD
   - existing game characters, logos or locations
   - readable text
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

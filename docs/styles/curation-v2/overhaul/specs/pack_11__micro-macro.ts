@@ -4,7 +4,7 @@ import { STYLE_AVOID } from './_style';
 // Micro and macro: each preset is one magnification method plus the specimen texture it reveals.
 // The prompt subject is either shown at that scale or emerges from that texture (a creature formed
 // by frost dendrites, a scene inside a water drop). Cellular themes stay illustrative, not medical.
-const AVOID = [...STYLE_AVOID, 'medical gore', 'readable scale bar text'];
+const AVOID = [...STYLE_AVOID,  'readable scale bar text'];
 
 const words = (t: string) => t.split(/\s+/).filter(Boolean).length;
 const pad = (t: string, min: number, tail: string) =>

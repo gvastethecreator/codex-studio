@@ -8,7 +8,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Chibi Style',
     category: "2. Children's Illustration",
     negativePrompt:
-      'frightening gore, known picture-book characters, franchise mascot likeness, tall, realistic, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'known picture-book characters, franchise mascot likeness, tall, realistic, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Chibi super-deformed drawing: every character redrawn about two heads tall with a huge round head, tiny limbs and stubby mitten hands.',
@@ -36,7 +36,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Watercolor Storybook',
     category: "2. Children's Illustration",
     negativePrompt:
-      'frightening gore, known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, digital, sharp, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, digital, sharp, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Classic watercolor storybook: light pencil underdrawing tinted with transparent washes, small animals and cottages observed with naturalist care.',
@@ -64,7 +64,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Paper Cutout (Collage)',
     category: "2. Children's Illustration",
     negativePrompt:
-      'frightening gore, known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, black outlines, drawn, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, black outlines, drawn, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Painted tissue collage: sheets of paper first painted with brushy textures, then cut and torn into shapes and layered into bold animals and landscapes.',
@@ -92,7 +92,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Crayon Drawing',
     category: "2. Children's Illustration",
     negativePrompt:
-      'frightening gore, known picture-book characters, franchise mascot likeness, smooth blending, professional, smooth, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'known picture-book characters, franchise mascot likeness, smooth blending, professional, smooth, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Wax crayon drawing made the way a child draws: pressure-variable waxy strokes, directional scribble fill and happy disregard for staying inside lines.',
@@ -122,7 +122,7 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Rounded Vector Explainer', 'Kurzgesagt Vector Flat (Infographic)'],
     category: "2. Children's Illustration",
     negativePrompt:
-      'frightening gore, known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, UI panels, app icons, outline, texture, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, UI panels, app icons, outline, texture, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Flat educational vector illustration: subjects built from rounded geometric primitives with no outlines, arranged to explain how something works.',
@@ -150,7 +150,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Gouache Illustration',
     category: "2. Children's Illustration",
     negativePrompt:
-      'frightening gore, known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, transparent, watercolor, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, transparent, watercolor, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Mid-century gouache picture book: opaque matte paint in flat geometric shapes, stylized foliage and animals reduced to playful modernist forms.',
@@ -180,7 +180,7 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Storybook Colored Pencil', 'Colored Pencil'],
     category: "2. Children's Illustration",
     negativePrompt:
-      'frightening gore, known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, ink, paint, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, ink, paint, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Storybook colored pencil: soft layered wax pencil built up in directional strokes on toothy paper, cozy interiors and animals drawn with warmth.',
@@ -208,7 +208,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Claymation Style',
     category: "2. Children's Illustration",
     negativePrompt:
-      'frightening gore, known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, glossy plastic CG, 2d, drawn, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, glossy plastic CG, 2d, drawn, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Preschool stop-motion clay: chunky plasticine characters on a small tabletop set of felt, cardboard and wooden blocks, filmed under bright lamps.',
@@ -236,7 +236,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Felt Tip Marker',
     category: "2. Children's Illustration",
     negativePrompt:
-      'frightening gore, known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, paint, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, paint, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Felt-tip marker drawing: broad water-based marker strokes that streak, overlap into darker mixes and bleed slightly into cheap paper.',
@@ -263,7 +263,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Pop-Up Book',
     category: "2. Children's Illustration",
     negativePrompt:
-      'frightening gore, known picture-book characters, franchise mascot likeness, flat page, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'known picture-book characters, franchise mascot likeness, flat page, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Pop-up book photograph: the subject engineered in folded, die-cut cardstock that rises out of the gutter of an open book.',
@@ -291,7 +291,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Whimsical Ink',
     category: "2. Children's Illustration",
     negativePrompt:
-      'frightening gore, known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, heavy, dark, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, heavy, dark, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Whimsical scratchy ink: fast dip-pen lines that skip and splutter, loosely washed with a few watercolor splashes.',
@@ -319,7 +319,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Chalk Pastel',
     category: "2. Children's Illustration",
     negativePrompt:
-      'frightening gore, known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, sharp, pen, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, sharp, pen, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Soft chalk pastel: powdery pigment rubbed and smudged into toothy colored paper, forms dissolving into velvety glow.',
@@ -349,7 +349,7 @@ export const GENERATED_STYLE_PRESETS = [
     styleAnchors: ['Glossy Die-Cut Sticker', 'Sticker Art'],
     category: "2. Children's Illustration",
     negativePrompt:
-      'frightening gore, known picture-book characters, franchise mascot likeness, background, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'known picture-book characters, franchise mascot likeness, background, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Glossy die-cut sticker: the subject drawn as a bold simplified vinyl sticker with a thick white cut border and a laminate shine.',
@@ -377,7 +377,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Scientific Botanical',
     category: "2. Children's Illustration",
     negativePrompt:
-      'frightening gore, known picture-book characters, franchise mascot likeness, readable labels, Latin names, cartoon, messy, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'known picture-book characters, franchise mascot likeness, readable labels, Latin names, cartoon, messy, official card scene, fixed thumbnail subject, prompt replaced by sample image, readable fake text, watermark, logo clutter, muddy AI texture, generic fantasy slop, plastic toy render, generic stock children art, overly complex anatomy, fake readable labels, text, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Vintage scientific botanical plate: a specimen drawn in fine ink contour and tinted with muted watercolor, with dissected parts arranged around it.',
@@ -412,7 +412,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: "2. Children's Illustration",
     domain: 'infant board-book graphics',
     negativePrompt:
-      'frightening gore, known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, gradients, pastel colors, fine detail, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, gradients, pastel colors, fine detail, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Infant board book graphics: huge simple shapes in black, white and one red, with bold stripes, dots and spirals a baby can see.',
@@ -446,7 +446,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: "2. Children's Illustration",
     domain: 'fingerprint doodle illustration',
     negativePrompt:
-      'frightening gore, known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, painted fills, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, painted fills, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Thumbprint critters: oval fingerprints pressed from colored ink pads, turned into animals and bugs with a few fine pen lines.',
@@ -481,7 +481,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: "2. Children's Illustration",
     domain: 'flat plasticine relief illustration',
     negativePrompt:
-      'frightening gore, known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, deep 3D set, CG render, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, deep 3D set, CG render, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Plasticine relief picture: soft modeling clay pressed and smeared flat onto board as a shallow picture, photographed like a painting.',
@@ -516,7 +516,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: "2. Children's Illustration",
     domain: 'contemporary textured digital picture book',
     negativePrompt:
-      'frightening gore, known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, glossy 3D rendering, hard outlines, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, glossy 3D rendering, hard outlines, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Contemporary digital picture book: soft flat shapes painted with grainy texture brushes, limited palette and quiet storytelling spaces.',
@@ -551,7 +551,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: "2. Children's Illustration",
     domain: 'nineteenth-century fairy-tale book plate',
     negativePrompt:
-      'frightening gore, known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, flat digital color, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, flat digital color, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Victorian fairy-tale book plate: detailed pen drawing built from fine parallel hatching and crosshatching, lightly hand-tinted with a few watercolors.',
@@ -586,7 +586,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: "2. Children's Illustration",
     domain: 'busy seek-and-find picture book',
     negativePrompt:
-      'frightening gore, known picture-book characters, franchise mascot likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'known picture-book characters, franchise mascot likeness, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Seek-and-find busy panorama: a whole place drawn from high above and packed with dozens of tiny characters each doing something funny.',

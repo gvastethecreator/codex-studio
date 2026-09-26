@@ -29,12 +29,11 @@ visualDna:
   camera_and_composition: Close framing on trays and hanging prints, with the darkroom disappearing into black.
   atmosphere_and_mood: Tense, investigative and eerie, the truth slowly appearing.
   rendering_and_quality: Moody monochrome red painterly rendering with wet reflections.
-  creative_brief: "Darkroom safelight reveal: a photographic darkroom bathed in red safelight, prints slowly developing in trays to show things that were not there when the photo was taken. Carry it through red safelight, developing prints, hanging wet photos, black corners. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Darkroom safelight reveal: a photographic darkroom bathed in red safelight, prints slowly developing in trays to show things that were not there when the photo was taken. Carry it through red safelight, developing prints, hanging wet photos, black corners. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: red safelight; developing prints; hanging wet photos; black corners
 avoidRules:
   - full color daylight
   - digital screens
-  - gore
   - graphic wounds
   - jump-scare monster close-up
   - franchise creature design
@@ -52,7 +51,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: full color daylight, digital screens, gore, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: full color daylight, digital screens, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Beach and coastal scenes with shell-covered forms glinting.
   atmosphere_and_mood: Bright, salty and treasured, riches washed up by the tide.
   rendering_and_quality: Iridescent detailed illustration with shimmering nacre and shell forms.
-  creative_brief: "Shellpunk: coastal cultures building with seashells, with shell armor, conch horns, mother-of-pearl mosaics, cowrie trade and shell-paved beaches. Carry it through shell armor, conch horns, nacre mosaics, cowrie trade. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Shellpunk: coastal cultures building with seashells, with shell armor, conch horns, mother-of-pearl mosaics, cowrie trade and shell-paved beaches. Carry it through shell armor, conch horns, nacre mosaics, cowrie trade. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: shell armor; conch horns; nacre mosaics; cowrie trade
 avoidRules:
   - readable text
@@ -37,7 +37,6 @@ avoidRules:
   - real artist signature
   - copying a specific famous artwork
   - muddy noisy texture
-  - gore
   - sacred regalia of a specific living culture
   - real brand or company logo
   - watermark
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

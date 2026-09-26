@@ -21,7 +21,7 @@ visualDna:
   atmosphere_and_mood: Spooky-comic and mischievous, frightening only in the way a cartoon is.
   rendering_and_quality: Clean animation background finish with crisp ink and flat color; no realistic horror, gore or monsters.
   key_features: crooked rubbery silhouettes; thick ink outlines; flat two-tone cel shading; violet and toxic-lime palette; moon backlight rim
-  creative_brief: "Cartoon haunted architecture: rubbery crooked buildings that lean, bulge and twist, drawn with thick ink outlines and flat cel shading. Carry it through crooked rubbery silhouettes, thick ink outlines, flat two-tone cel shading, violet and toxic-lime palette, moon backlight rim. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Cartoon haunted architecture: rubbery crooked buildings that lean, bulge and twist, drawn with thick ink outlines and flat cel shading. Carry it through crooked rubbery silhouettes, thick ink outlines, flat two-tone cel shading, violet and toxic-lime palette, moon backlight rim. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - licensed fantasy location
   - copy of a known film or game building
@@ -30,7 +30,6 @@ avoidRules:
   - decorative waterfall by default
   - swapping the requested structure for a castle or temple
   - realistic horror
-  - gore
   - monster
   - photoreal render
   - scary realistic
@@ -68,7 +67,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP07-060.webp
 attributes:
-  negativePrompt: licensed fantasy location, copy of a known film or game building, readable runes or inscriptions, glossy mirror floor by default, decorative waterfall by default, swapping the requested structure for a castle or temple, realistic horror, gore, monster, photoreal render, scary realistic, haunted mansion required, Halloween set, corridor, fantasy hall, chair, curtain, lamp, camera prop, empty abstraction, throne interior zones default, weapon prop, character hero, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, market aisle, library aisle, prompt-required card, readable text, logo, watermark, haunted mansion literal, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: licensed fantasy location, copy of a known film or game building, readable runes or inscriptions, glossy mirror floor by default, decorative waterfall by default, swapping the requested structure for a castle or temple, realistic horror, monster, photoreal render, scary realistic, haunted mansion required, Halloween set, corridor, fantasy hall, chair, curtain, lamp, camera prop, empty abstraction, throne interior zones default, weapon prop, character hero, fixed building-only scene, mandatory interior interior zones, corridor perspective, furniture showroom, market aisle, library aisle, prompt-required card, readable text, logo, watermark, haunted mansion literal, mandatory interior set, prompt-literal card, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_07
   packName: Architecture & Interior

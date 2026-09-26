@@ -29,10 +29,9 @@ visualDna:
   camera_and_composition: Dramatic moment in a rectangular panel, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with lurid adventure, kept consistent across the whole image.
   rendering_and_quality: Economical dramatic illustration, kept consistent across the whole image.
-  creative_brief: "Two-tone pulp interior plate: interior illustrations for pulp fantasy magazines, bold black brushwork with a single flat second color, dramatic and economical. Carry it through black brushwork, one flat color, pulp paper, dramatic moment. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Two-tone pulp interior plate: interior illustrations for pulp fantasy magazines, bold black brushwork with a single flat second color, dramatic and economical. Carry it through black brushwork, one flat color, pulp paper, dramatic moment. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: black brushwork; one flat color; pulp paper; dramatic moment
 avoidRules:
-  - gore
   - title lettering
   - existing franchise heroes
   - readable text
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

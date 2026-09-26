@@ -459,7 +459,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '9. Painted RPG & Tactics',
     domain: 'loose oil battle sketch',
     negativePrompt:
-      'gore, interface, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'interface, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Diagonal skirmish oil sketch: a loose fast oil sketch of a fantasy clash, bodies and banners thrown along a strong diagonal, broken color and dust.',

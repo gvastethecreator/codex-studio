@@ -236,7 +236,7 @@ const spec: Spec = {
       atmosphere_and_mood: 'Keep the requested mood with curious scientific wonder.',
       rendering_and_quality: "Clear diagrammatic figure, no graphic gore, kept consistent across the whole image.",
       key_features: 'lifting flaps; standing figure; revealed layers; woodcut lines',
-    }, ['gore', 'readable labels'], [
+    }, [ 'readable labels'], [
       'Standing calmly on a woodcut sheet, a knight has his paper chest flap lifted to reveal that inside him is a small room where a tiny knight is steering. No readable text or logo.',
       'On an anatomy sheet with lifting flaps, a cat\'s belly flap opens to show it is entirely full of stolen fish. No readable text or logo.',
       'A calm woodcut figure stands with a paper flap lifted over her heart, revealing only a small closed door. No readable text or logo.',

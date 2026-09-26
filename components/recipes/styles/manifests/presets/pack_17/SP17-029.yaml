@@ -20,7 +20,7 @@ visualDna:
   lighting_and_shadow: Furnace underlight and shrine glow illuminate large armor planes while preserving denoised dark fields.
   texture_and_material: Riveted iron, scorched enamel, reliquary glass, cracked bone, chainmail, ash, and soot cleaned of ugly speckle.
   camera_and_composition: Monumental vertical framing with clear focal hierarchy, massive central forms, separated material planes, and readable sacred-industrial depth that adapts to the user's subject.
-  atmosphere_and_mood: 'Sacred, industrial, catastrophic, penitential, and mythic; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline, at whatever intensity the requested scene sets.'
+  atmosphere_and_mood: Sacred, industrial, catastrophic, penitential, and mythic; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline, at whatever intensity the requested scene sets.
   rendering_and_quality: Detailed dark fantasy digital illustration with clean black control, defined linework, polished material separation, and heavy denoise.
   creative_brief: 'Iron Reliquary Apocalypse: Apocalyptic iron reliquary fantasy with sacred industrial mass; scorched liturgical metal; riveted devotional forms; catastrophic medieval machinery.'
   key_features: Iron Reliquary Apocalypse; Apocalyptic iron reliquary fantasy with sacred industrial mass; scorched liturgical metal; riveted devotional forms; catastrophic medieval machinery; Transform any prompt subject into a heavy reliquary silhouette with riveted armor planes
@@ -29,7 +29,6 @@ avoidRules:
   - readable religious text
   - body horror focus
   - noisy dark compression
-  - explicit gore
   - watermark
   - text
   - army lineup lock
@@ -41,7 +40,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-029.webp
 attributes:
-  negativePrompt: copied faction designs, readable religious text, body horror focus, noisy dark compression, explicit gore, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
+  negativePrompt: copied faction designs, readable religious text, body horror focus, noisy dark compression, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

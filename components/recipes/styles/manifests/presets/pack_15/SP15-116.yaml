@@ -42,7 +42,7 @@ visualDna:
     detail with clear subject reading at thumbnail scale.
 avoidRules:
   - a compulsory forest, field, scarecrow, or ritual
-  - unrequested gore or horror intensity
+  - unrequested horror intensity
   - folk ornament or fiber texture overwhelming the subject
   - a new shrine, cottage, or ritual room replacing the requested environment
   - unrequested warning text, logos, or readable symbols
@@ -50,7 +50,7 @@ assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-116.webp
 attributes:
   negativePrompt:
-    a compulsory forest, field, scarecrow, or ritual, unrequested gore or horror intensity, folk
+    a compulsory forest, field, scarecrow, or ritual, unrequested horror intensity, folk
     ornament or fiber texture overwhelming the subject, a new shrine, cottage, or ritual room replacing
     the requested environment, unrequested warning text, logos, or readable symbols
   intentionalPolicy:
@@ -73,7 +73,7 @@ attributes:
     avoidRules:
       - text: a compulsory forest, field, scarecrow, or ritual
         field: rendering_and_quality
-      - text: unrequested gore or horror intensity
+      - text: unrequested horror intensity
         field: rendering_and_quality
       - text: folk ornament or fiber texture overwhelming the subject
         field: rendering_and_quality

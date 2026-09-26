@@ -29,11 +29,10 @@ visualDna:
   camera_and_composition: Wide night battle with glowing points of light.
   atmosphere_and_mood: Keep the requested mood with electric nocturnal tension.
   rendering_and_quality: Clean glow with readable silhouettes, kept consistent across the whole image.
-  creative_brief: "Neon sigil siege night: medieval sieges at night lit by floating neon sigils, glowing banners and electric wards over dark stone walls. Carry it through floating neon sigils, night siege, glowing wards, wet stone. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Neon sigil siege night: medieval sieges at night lit by floating neon sigils, glowing banners and electric wards over dark stone walls. Carry it through floating neon sigils, night siege, glowing wards, wet stone. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: floating neon sigils; night siege; glowing wards; wet stone
 avoidRules:
   - readable symbols
-  - gore
   - readable runes or text
   - existing franchise armor or emblems
   - readable text
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable symbols, gore, readable runes or text, existing franchise armor or emblems, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable symbols, readable runes or text, existing franchise armor or emblems, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

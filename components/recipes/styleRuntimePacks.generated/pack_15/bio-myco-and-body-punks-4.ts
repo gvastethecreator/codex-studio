@@ -8,7 +8,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Biopunk',
     category: '4. Bio, Myco & Body Punks',
     negativePrompt:
-      'Do not impose a lab, clinic, greenhouse, organism or body transformation as the default scene., Respect anatomy and material locks; do not add unrequested gore or anatomical change., Avoid uniform biological glow and circuitry unrelated to living function.',
+      'Do not impose a lab, clinic, greenhouse, organism or body transformation as the default scene., Respect anatomy and material locks; do not add unrequested anatomical change., Avoid uniform biological glow and circuitry unrelated to living function.',
     style: {
       aesthetic:
         'An engineered-living language where cell lattices, membrane structures, symbiotic components and precise bio-circuit traces interlock as intentional systems, not organic texture alone.',
@@ -68,7 +68,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Bodypunk',
     category: '4. Bio, Myco & Body Punks',
     negativePrompt:
-      'Do not impose a clinic, procedure, body modification or injury narrative., Respect anatomy locks; do not add unrequested grafts, exposed anatomy or gore., Avoid nerve wiring that obscures body structure.',
+      'Do not impose a clinic, procedure, body modification or injury narrative., Respect anatomy locks; do not add unrequested grafts or exposed anatomy., Avoid nerve wiring that obscures body structure.',
     style: {
       aesthetic:
         'Bodypunk illustration treats the body as the meeting point of agency and designed technology: fitted sensory wearables, tendon-like cable routes, second-skin panels and articulated external supports. Make a purposeful interface between living form and constructed design, not a layer of nerve-pattern texture.',
@@ -101,7 +101,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Bio, Myco & Body Punks',
     domain: 'slime mold network punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Slimepunk: slime molds as living computers and urban planners, with yellow veined networks spreading across maps, streets and machines.',
@@ -134,7 +134,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Bio, Myco & Body Punks',
     domain: 'insect shell technology punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Chitinpunk: architecture and armor grown like insect shells, with iridescent plates, segmented joints and beetle-wing canopies.',
@@ -166,7 +166,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Bio, Myco & Body Punks',
     domain: 'symbiotic partnership punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Symbiontpunk: humans living in partnership with other organisms, with moss coats, fish-cleaned wounds, bird-helpers and plant companions woven into daily life.',
@@ -197,7 +197,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Bio, Myco & Body Punks',
     domain: 'plant technology punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Botanipunk: technology grown from plants, with gourd lanterns, vine cables, leaf solar sails, carnivorous-plant security and seed-pod vehicles.',
@@ -227,7 +227,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Bio, Myco & Body Punks',
     domain: 'moth and nocturnal punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Mothpunk: a nocturnal culture drawn to light, with dusty moth-wing cloaks, lamp cults, night markets and delicate feathered antennae.',
@@ -256,7 +256,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Bio, Myco & Body Punks',
     domain: 'termite mound architecture punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Termitepunk: cities built like termite mounds, with towering earthen spires, natural ventilation shafts, tunnels and colony-scale cooperation.',
@@ -288,7 +288,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Bio, Myco & Body Punks',
     domain: 'lichen and slow growth punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Lichenpunk: a slow, patient culture living with lichen, where time is measured in crusts on stone and buildings are dated by their colors.',
@@ -317,7 +317,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Bio, Myco & Body Punks',
     domain: 'fermentation culture punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Brewpunk: fermentation as technology and religion, with bubbling vats, living yeast cultures, copper stills and cellar laboratories.',
@@ -345,7 +345,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Bio, Myco & Body Punks',
     domain: 'bioprinting workshop punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Bioprintpunk: backstreet workshops that print living things, from leaves and flowers to new skin and strange pets, layer by layer from glowing gel.',
@@ -375,7 +375,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Bio, Myco & Body Punks',
     domain: 'regeneration biology punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Regenpunk: a culture built on regeneration, where limbs regrow like salamanders, ruins heal like tissue and scars bloom into flowers.',
@@ -404,7 +404,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Bio, Myco & Body Punks',
     domain: 'spider silk technology punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Silkspinnerpunk: a civilization woven from spider silk, with silk bridges, glistening dew-lit webs, silk sails and spinner guilds farming giant spiders.',
@@ -433,7 +433,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Bio, Myco & Body Punks',
     domain: 'benign parasite punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Parasitepunk: strange organisms that ride their hosts, from clever hitchhiker creatures to crowns of living growth, shown as eerie partnerships rather than horror.',
@@ -465,7 +465,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Bio, Myco & Body Punks',
     domain: 'cellular scale punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Cellpunk: worlds shown at cellular scale, with membrane cities, organelle machinery and tiny travelers moving through living tissue landscapes.',
@@ -497,7 +497,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Bio, Myco & Body Punks',
     domain: 'venom and toxin craft punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Venompunk: a culture of snake handlers, venom distillers and antidote alchemists, with glass fangs, milking tables and jewel-bright toxin vials.',
@@ -527,7 +527,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Bio, Myco & Body Punks',
     domain: 'bioluminescence punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Glowpunk: a world lit by living light, with bioluminescent streetlights, glowing tattoos of algae, jellyfish lanterns and mushroom-lit homes.',
@@ -558,7 +558,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Bio, Myco & Body Punks',
     domain: 'living tattoo punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Inkbodypunk: living tattoos that move across the skin, crawl off arms, fight, dance and tell stories in bold ink.',
@@ -588,7 +588,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '4. Bio, Myco & Body Punks',
     domain: 'handmade prosthetics punk',
     negativePrompt:
-      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, graphic wounds, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Prosthetic craftpunk: artisans building beautiful handmade limbs from carved wood, brass, porcelain and leather, each one a personal work of art.',

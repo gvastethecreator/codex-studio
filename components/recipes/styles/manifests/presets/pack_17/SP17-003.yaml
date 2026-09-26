@@ -23,7 +23,7 @@ visualDna:
   lighting_and_shadow: Simplified smoky daylight and torch accents keep the image severe while preserving readable midtones and clean silhouettes.
   texture_and_material: Mud, chainmail, rough wool, chipped shields, wet timber, battered stone, and soot.
   camera_and_composition: Compressed siege-line rhythm, diagonal pressure lanes, smoke-flattened depth, documentary austerity, and crowded value grouping only when the prompt supports it.
-  atmosphere_and_mood: 'Harsh, political, desperate, and unsentimental while avoiding graphic injury; ruined majesty, moral dread, sacred pressure, weathered myth, and restrained grimdark wonder without gore shortcuts, at whatever intensity the requested scene sets.'
+  atmosphere_and_mood: Harsh, political, desperate, and unsentimental while avoiding graphic injury; ruined majesty, moral dread, sacred pressure, weathered myth, and restrained grimdark wonder without gore shortcuts, at whatever intensity the requested scene sets.
   rendering_and_quality: Gritty historical-fantasy illustration with controlled grime, sharp drawn armor detail, and clean atmospheric planes.
   creative_brief: 'Grimdark Siege Chronicle: Muddy war torn medieval fantasy staged like a brutal siege chronicle; Transform any subject with grim siege chronicle pressure; weather beaten surfaces; iron mass; mud logic.'
   key_features: Grimdark Siege Chronicle; Muddy war torn medieval fantasy staged like a brutal siege chronicle; Transform any subject with grim siege chronicle pressure; weather beaten surfaces; iron mass; mud logic
@@ -32,7 +32,6 @@ avoidRules:
   - bright fairy tale
   - glossy armor
   - heroic poster pose
-  - explicit gore
   - watermark
   - text
   - generic fantasy splash art
@@ -44,7 +43,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-003.webp
 attributes:
-  negativePrompt: clean costume drama, bright fairy tale, glossy armor, heroic poster pose, explicit gore, watermark, text, generic fantasy splash art, quest party lock, gore only darkness, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
+  negativePrompt: clean costume drama, bright fairy tale, glossy armor, heroic poster pose, watermark, text, generic fantasy splash art, quest party lock, gore only darkness, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

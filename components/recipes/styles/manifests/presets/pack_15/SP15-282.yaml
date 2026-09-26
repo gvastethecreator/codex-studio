@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Long canoes gliding through the frame with paddles in rhythm.
   atmosphere_and_mood: Rhythmic, communal and flowing, the river as a road.
   rendering_and_quality: Atmospheric illustration with water reflections and carved wood detail.
-  creative_brief: "Canoepunk: river and lake cultures centered on carved dugout canoes, with paddle crews, river markets on boats, carved prows and forest waterways. Carry it through carved dugout canoes, paddle crews, river markets, carved prows. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Canoepunk: river and lake cultures centered on carved dugout canoes, with paddle crews, river markets on boats, carved prows and forest waterways. Carry it through carved dugout canoes, paddle crews, river markets, carved prows. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: carved dugout canoes; paddle crews; river markets; carved prows
 avoidRules:
   - readable text
@@ -37,7 +37,6 @@ avoidRules:
   - real artist signature
   - copying a specific famous artwork
   - muddy noisy texture
-  - gore
   - sacred regalia of a specific living culture
   - real brand or company logo
   - watermark
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

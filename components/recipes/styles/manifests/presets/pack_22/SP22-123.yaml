@@ -43,13 +43,13 @@ avoidRules:
   - unrequested body distortion or grotesque exaggeration
   - brush irregularity that damages the silhouette
   - uniform surface scuffing
-  - unrequested horror or violence
+  - unrequested horror
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP22-123.webp
 attributes:
   negativePrompt: >-
     unrequested body distortion or grotesque exaggeration, brush irregularity that damages the
-    silhouette, uniform surface scuffing, unrequested horror or violence
+    silhouette, uniform surface scuffing, unrequested horror
   intentionalPolicy:
     schemaVersion: 1
     kind: full_style
@@ -74,7 +74,7 @@ attributes:
         field: rendering_and_quality
       - text: uniform surface scuffing
         field: texture_and_material
-      - text: unrequested horror or violence
+      - text: unrequested horror
         field: global
   sourceMetadata:
     atlas: Codex Studio Atlas TCG v0.1

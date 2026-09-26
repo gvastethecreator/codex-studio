@@ -29,10 +29,9 @@ visualDna:
   camera_and_composition: Figure in foreground with eyes in the dark behind.
   atmosphere_and_mood: Keep the requested mood with lurid nocturnal threat.
   rendering_and_quality: Dramatic contrast with no text, kept consistent across the whole image.
-  creative_brief: "Glowing-eyes night pulp: lurid nocturnal pulp paintings where darkness hides everything but glowing eyes, moonlit blades and one terrified or defiant face. Carry it through glowing eyes, darkness, moonlit blade, lurid pulp. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Glowing-eyes night pulp: lurid nocturnal pulp paintings where darkness hides everything but glowing eyes, moonlit blades and one terrified or defiant face. Carry it through glowing eyes, darkness, moonlit blade, lurid pulp. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: glowing eyes; darkness; moonlit blade; lurid pulp
 avoidRules:
-  - gore
   - title lettering
   - existing franchise heroes
   - readable text
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: gore, title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: title lettering, existing franchise heroes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

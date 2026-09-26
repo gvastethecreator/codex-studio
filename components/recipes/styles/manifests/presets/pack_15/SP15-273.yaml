@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Workshop and city views crowded with ceramic forms.
   atmosphere_and_mood: Earthy, delicate and ingenious, a civilization that could shatter.
   rendering_and_quality: Tactile illustration with glossy glaze highlights and clay texture.
-  creative_brief: "Potterypunk: a world where everything is fired clay, with ceramic machines, glazed armor, kiln cities, terracotta pipes and crackle-glaze surfaces. Carry it through ceramic machines, glazed armor, kiln cities, crackle glaze. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Potterypunk: a world where everything is fired clay, with ceramic machines, glazed armor, kiln cities, terracotta pipes and crackle-glaze surfaces. Carry it through ceramic machines, glazed armor, kiln cities, crackle glaze. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: ceramic machines; glazed armor; kiln cities; crackle glaze
 avoidRules:
   - readable text
@@ -37,7 +37,6 @@ avoidRules:
   - real artist signature
   - copying a specific famous artwork
   - muddy noisy texture
-  - gore
   - sacred regalia of a specific living culture
   - real brand or company logo
   - watermark
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

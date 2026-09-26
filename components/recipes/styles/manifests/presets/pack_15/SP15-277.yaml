@@ -29,7 +29,7 @@ visualDna:
   camera_and_composition: Huge stones with crowds pulling ropes, circles on open hills.
   atmosphere_and_mood: Monumental, collective and mysterious, a whole people moving a mountain.
   rendering_and_quality: Epic textured illustration with huge scale and dramatic light.
-  creative_brief: "Megalithpunk: builders of giant standing stones and dolmens, with log rollers, rope teams, lever frames and stone circles aligned with the sun. Carry it through standing stones, rope teams, log rollers, solstice alignment. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Megalithpunk: builders of giant standing stones and dolmens, with log rollers, rope teams, lever frames and stone circles aligned with the sun. Carry it through standing stones, rope teams, log rollers, solstice alignment. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: standing stones; rope teams; log rollers; solstice alignment
 avoidRules:
   - readable text
@@ -37,7 +37,6 @@ avoidRules:
   - real artist signature
   - copying a specific famous artwork
   - muddy noisy texture
-  - gore
   - sacred regalia of a specific living culture
   - real brand or company logo
   - watermark
@@ -49,7 +48,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, gore, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, sacred regalia of a specific living culture, real brand or company logo, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

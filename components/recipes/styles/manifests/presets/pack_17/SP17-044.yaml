@@ -23,7 +23,7 @@ visualDna:
   lighting_and_shadow: Simple moon-glow halo, open shadows, and smooth tonal fields.
   texture_and_material: Clean parchment, soft ink wash, smooth tonal stains, simplified surface groups, and restrained decorative marks.
   camera_and_composition: Centered oracle-plate hierarchy, circular moon geometry, generous breathing room, and sparse symbolic support marks that adapt to the user's subject without adding readable text.
-  atmosphere_and_mood: 'Quiet, magical, prophetic, eerie, and calm; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint, at whatever intensity the requested scene sets.'
+  atmosphere_and_mood: Quiet, magical, prophetic, eerie, and calm; fatalistic omen calm, scholastic weirdness, bestiary curiosity, devotional monochrome, and archaic symbolic restraint, at whatever intensity the requested scene sets.
   rendering_and_quality: Clean fantasy oracle illustration with low noise, broad shapes, and restrained decorative marks.
   creative_brief: 'Moon Parchment Oracle Beasts: Moonlit parchment oracle bestiary style with quiet symbolic forms; crescent geometry; clean ink; pale mystical accents.'
   key_features: Moon Parchment Oracle Beasts; Moonlit parchment oracle bestiary style with quiet symbolic forms; crescent geometry; clean ink; pale mystical accents; Transform any prompt subject into a calm oracle plate figure with simplified contours
@@ -32,7 +32,6 @@ avoidRules:
   - astrology text
   - overpacked symbols
   - noisy night sky
-  - explicit gore
   - watermark
   - text
   - readable tarot labels
@@ -44,7 +43,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-044.webp
 attributes:
-  negativePrompt: readable runes, astrology text, overpacked symbols, noisy night sky, explicit gore, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
+  negativePrompt: readable runes, astrology text, overpacked symbols, noisy night sky, watermark, text, readable tarot labels, fake manuscript text, dirty photocopy overload, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

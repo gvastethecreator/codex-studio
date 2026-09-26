@@ -20,7 +20,7 @@ visualDna:
   lighting_and_shadow: Value comes from engraved hatching and broad paper-negative space rather than noisy dark gradients.
   texture_and_material: Etched copperplate lines, dry paper, chipped marble, metal scratches, wax seals without readable marks, and clean ink edges.
   camera_and_composition: Frontal heraldic grouping logic, triangular mass arrangement, tall banner-like accents, and print-safe space without requiring a fixed warband.
-  atmosphere_and_mood: 'Funereal, disciplined, ancient, martial, and ceremonial; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline, at whatever intensity the requested scene sets.'
+  atmosphere_and_mood: Funereal, disciplined, ancient, martial, and ceremonial; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline, at whatever intensity the requested scene sets.
   rendering_and_quality: Crisp engraved fantasy print with heavy denoise, clean hatching, and no muddy texture chatter.
   creative_brief: 'Sepulcher Warband Engraving: funeral armor; heraldic masses; siege icon composition; Transform any subject with sepulcher engraving rhythm; bold cut lines.'
   key_features: Sepulcher Warband Engraving; funeral armor; heraldic masses; siege icon composition; Transform any subject with sepulcher engraving rhythm; bold cut lines
@@ -29,7 +29,6 @@ avoidRules:
   - modern logos
   - gray noise mush
   - smooth digital painting
-  - explicit gore
   - watermark
   - text
   - army lineup lock
@@ -41,7 +40,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-028.webp
 attributes:
-  negativePrompt: readable heraldic text, modern logos, gray noise mush, smooth digital painting, explicit gore, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
+  negativePrompt: readable heraldic text, modern logos, gray noise mush, smooth digital painting, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

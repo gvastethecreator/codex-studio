@@ -29,11 +29,10 @@ visualDna:
   camera_and_composition: Row of identical miniatures at different stages, kept consistent across the whole image.
   atmosphere_and_mood: Keep the requested mood with patient hobby craft.
   rendering_and_quality: Clear stage differences without numbers, kept consistent across the whole image.
-  creative_brief: "Army painting step guide: the same grim miniature shown in several stages from grey primer to basecoat, wash and highlights, lined up like a hobby tutorial. Carry it through stage progression, identical miniatures, primer to finish, hobby. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Army painting step guide: the same grim miniature shown in several stages from grey primer to basecoat, wash and highlights, lined up like a hobby tutorial. Carry it through stage progression, identical miniatures, primer to finish, hobby. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: stage progression; identical miniatures; primer to finish; hobby
 avoidRules:
   - step numbers or labels
-  - gore
   - interface text, menus or health bars
   - existing game characters or logos
   - readable text
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: step numbers or labels, gore, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: step numbers or labels, interface text, menus or health bars, existing game characters or logos, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

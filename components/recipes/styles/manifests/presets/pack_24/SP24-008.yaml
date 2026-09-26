@@ -29,12 +29,11 @@ visualDna:
   camera_and_composition: Handheld home-video framing, slightly tilted, with doorways and dark hallways at the edges.
   atmosphere_and_mood: Nostalgic and wrong, a family memory that should not exist.
   rendering_and_quality: Degraded analog video look with believable smear and noise, never clean digital.
-  creative_brief: "Tape-worn living room: ordinary family interiors seen as if through a worn home videotape, with color bleed, soft smear and wrongness hiding in the noise. Carry it through tape noise and tracking lines, chroma bleed, wood-paneled rooms, hidden wrongness. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Tape-worn living room: ordinary family interiors seen as if through a worn home videotape, with color bleed, soft smear and wrongness hiding in the noise. Carry it through tape noise and tracking lines, chroma bleed, wood-paneled rooms, hidden wrongness. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: tape noise and tracking lines; chroma bleed; wood-paneled rooms; hidden wrongness
 avoidRules:
   - clean digital sharpness
   - modern interior design
-  - gore
   - graphic wounds
   - jump-scare monster close-up
   - franchise creature design
@@ -52,7 +51,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: clean digital sharpness, modern interior design, gore, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: clean digital sharpness, modern interior design, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

@@ -23,7 +23,7 @@ visualDna:
   lighting_and_shadow: Simple candle slices, smoke-filtered daylight, and clean battlefield haze separate silhouettes without crushing the darks.
   texture_and_material: Mud, wet wool, tarnished brass, chipped enamel, soot, cracked stone, and controlled etched grime.
   camera_and_composition: Low vertical war-icon framing, shrine-like negative space, banner diagonals, and readable miniature-like silhouette hierarchy.
-  atmosphere_and_mood: 'Fanatical, mournful, siege bound, sacred, and brutal without gore; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline, at whatever intensity the requested scene sets.'
+  atmosphere_and_mood: Fanatical, mournful, siege bound, sacred, and brutal without gore; martial doom, penitential strategy, miniature-table grandeur, inked pressure, and siege-haunted ritual discipline, at whatever intensity the requested scene sets.
   rendering_and_quality: Painterly-ink hybrid with denoised darks, clean silhouette masses, and readable battlefield materials.
   creative_brief: 'Mud Cathedral Crusade: Apocalyptic medieval trench crusade with mud choked cathedrals; black powder smoke; reliquary armor; martyr banners; mud heavy mass.'
   key_features: Mud Cathedral Crusade; Apocalyptic medieval trench crusade with mud choked cathedrals; black powder smoke; reliquary armor; martyr banners; mud heavy mass
@@ -32,7 +32,6 @@ avoidRules:
   - readable insignia
   - modern guns as hero objects
   - excessive black noise
-  - explicit gore
   - watermark
   - text
   - army lineup lock
@@ -44,7 +43,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-025.webp
 attributes:
-  negativePrompt: copied franchise armor, readable insignia, modern guns as hero objects, excessive black noise, explicit gore, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
+  negativePrompt: copied franchise armor, readable insignia, modern guns as hero objects, excessive black noise, watermark, text, army lineup lock, tabletop product photo, generic battle splash, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

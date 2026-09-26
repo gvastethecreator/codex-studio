@@ -29,11 +29,10 @@ visualDna:
   camera_and_composition: Claustrophobic interiors or small lit figures against enormous black water.
   atmosphere_and_mood: Crushing, silent and immense, something large is passing.
   rendering_and_quality: Dark painterly realism with precise small highlights and heavy darkness.
-  creative_brief: "Deep-sea pressure dread: cramped submersible interiors and black ocean depths, riveted hulls creaking while vast unseen shapes pass beyond tiny portholes. Carry it through cramped submersible, tiny portholes, black depths, passing unseen shapes. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Deep-sea pressure dread: cramped submersible interiors and black ocean depths, riveted hulls creaking while vast unseen shapes pass beyond tiny portholes. Carry it through cramped submersible, tiny portholes, black depths, passing unseen shapes. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: cramped submersible; tiny portholes; black depths; passing unseen shapes
 avoidRules:
   - bright tropical reef
-  - gore
   - graphic wounds
   - jump-scare monster close-up
   - franchise creature design
@@ -51,7 +50,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: bright tropical reef, gore, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: bright tropical reef, graphic wounds, jump-scare monster close-up, franchise creature design, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

@@ -43,7 +43,7 @@ avoidRules:
   - unrequested thorn, monster, or vegetation motifs
   - internal branches that alter the subject's identity or function
   - hatch density that closes important light gaps
-  - unrequested horror or violence
+  - unrequested horror
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP22-117.webp
 attributes:
@@ -75,7 +75,7 @@ attributes:
         field: subject_treatment
       - text: hatch density that closes important light gaps
         field: rendering_and_quality
-      - text: unrequested horror or violence
+      - text: unrequested horror
         field: global
   sourceMetadata:
     atlas: Codex Studio Atlas TCG v0.1

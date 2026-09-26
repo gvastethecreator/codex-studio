@@ -21,14 +21,13 @@ visualDna:
   atmosphere_and_mood: Briefly safe yet uneasy, a held breath before going back out.
   rendering_and_quality: Soft pre-rendered look with fine grain; no monsters or gore unless the prompt asks.
   key_features: single warm lamp pool; fixed high-corner camera; green-grey darkness; damp worn surfaces; fine grain
-  creative_brief: "Survival-horror safe room: a pre-rendered-looking interior lit by one warm lamp pool inside cold darkness, seen from a fixed high camera. Carry it through single warm lamp pool, fixed high-corner camera, green-grey darkness, damp worn surfaces, fine grain. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Survival-horror safe room: a pre-rendered-looking interior lit by one warm lamp pool inside cold darkness, seen from a fixed high camera. Carry it through single warm lamp pool, fixed high-corner camera, green-grey darkness, damp worn surfaces, fine grain. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - copied game characters
   - known game HUD layout
   - readable interface text
   - numbers and stat values
   - publisher or studio logo
-  - gore
   - monster requirement
   - typewriter save icon
   - watermark
@@ -54,7 +53,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP06-115.webp
 attributes:
-  negativePrompt: copied game characters, known game HUD layout, readable interface text, numbers and stat values, publisher or studio logo, gore, monster requirement, typewriter save icon, watermark, text, literal room requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: copied game characters, known game HUD layout, readable interface text, numbers and stat values, publisher or studio logo, monster requirement, typewriter save icon, watermark, text, literal room requirement, wrong medium, generic AI gloss, muddy noise, uncontrolled texture chatter, readable text, signature, low resolution, readable UI text, logo clutter, generic screenshot, unplayable visual clutter, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_06
   packName: Essential Art Styles

@@ -22,7 +22,7 @@ visualDna:
   atmosphere_and_mood: Keep the requested mood with melancholy ornate dread.
   rendering_and_quality: Ornate fashion-illustration frame with gothic mecha and melancholy knights.
   key_features: Mamoru Nagano gothic mecha; fashion elegance; ornate armor; melancholy
-  creative_brief: "Mamoru Nagano look as in The Five Star Stories and Gothicmade: ornate gothic mecha with elegant armor plates, fashion-illustration elegance, and melancholy knights. Carry it through Mamoru Nagano gothic mecha, fashion elegance, ornate armor, melancholy. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Mamoru Nagano look as in The Five Star Stories and Gothicmade: ornate gothic mecha with elegant armor plates, fashion-illustration elegance, and melancholy knights. Carry it through Mamoru Nagano gothic mecha, fashion elegance, ornate armor, melancholy. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
 avoidRules:
   - named mecha or franchise robot likeness
   - fixed canon pilot character
@@ -43,7 +43,6 @@ avoidRules:
   - watermark
   - signature
   - crucifix pose
-  - exposed organs
   - hospital tube body
   - franchise robot silhouette
   - religious icon copy
@@ -71,7 +70,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP05-055.webp
 attributes:
-  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, purple horned giant copy, ornamental filigree, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, crucifix pose, exposed organs, hospital tube body, franchise robot silhouette, religious icon copy, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
+  negativePrompt: named mecha or franchise robot likeness, fixed canon pilot character, turning a non-mechanical subject into a robot, adding a hangar, cockpit or battle the prompt did not ask for, readable HUD or interface text, purple horned giant copy, ornamental filigree, realistic, 3d render, photo, live action, western comic, ugly, bad anatomy, low quality, jpeg artifacts, watermark, signature, crucifix pose, hospital tube body, franchise robot silhouette, religious icon copy, plastic 3d robot render, cockpit source-frame look, readable UI panel, fixed canon character, title scene replication, required source-frame look, cosplay, generic anime filter, prompt-required card, logo, muddy noisy darks, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts, existing franchise characters, series logo or title lettering, signature costumes, emblems or props from the referenced work, recreated scenes from the referenced work
 taxonomy:
   packId: pack_05
   packName: Anime Battle & Worlds

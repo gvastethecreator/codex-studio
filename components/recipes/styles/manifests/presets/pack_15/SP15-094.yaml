@@ -43,14 +43,14 @@ visualDna:
     detail at functional interfaces. Avoid random tendril or circuit clutter.
 avoidRules:
   - Do not impose a lab, clinic, greenhouse, organism or body transformation as the default scene.
-  - Respect anatomy and material locks; do not add unrequested gore or anatomical change.
+  - Respect anatomy and material locks; do not add unrequested anatomical change.
   - Avoid uniform biological glow and circuitry unrelated to living function.
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-094.webp
 attributes:
   negativePrompt:
     Do not impose a lab, clinic, greenhouse, organism or body transformation as the default scene.,
-    Respect anatomy and material locks; do not add unrequested gore or anatomical change., Avoid uniform biological
+    Respect anatomy and material locks; do not add unrequested anatomical change., Avoid uniform biological
     glow and circuitry unrelated to living function.
   intentionalPolicy:
     schemaVersion: 1
@@ -72,7 +72,7 @@ attributes:
     avoidRules:
       - text: Do not impose a lab, clinic, greenhouse, organism or body transformation as the default scene.
         field: rendering_and_quality
-      - text: Respect anatomy and material locks; do not add unrequested gore or anatomical change.
+      - text: Respect anatomy and material locks; do not add unrequested anatomical change.
         field: rendering_and_quality
       - text: Avoid uniform biological glow and circuitry unrelated to living function.
         field: rendering_and_quality

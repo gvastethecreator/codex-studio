@@ -274,7 +274,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Forensic Photography',
     category: '7. Technical And Specialist Imaging',
     negativePrompt:
-      'fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, artistic, gore, readable case numbers, emotional, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, artistic blur, wrong diagnostic palette, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, artistic, readable case numbers, emotional, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, artistic blur, wrong diagnostic palette, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Forensic evidence photography: a flat, objective record of an object or trace with a scale reference and even flash, meant for measurement, not emotion.',
@@ -300,7 +300,7 @@ export const GENERATED_STYLE_PRESETS = [
     name: 'Medical Photography',
     category: '7. Technical And Specialist Imaging',
     negativePrompt:
-      'fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, gore, moody shadow, artistic, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, artistic blur, wrong diagnostic palette, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'fake UI text, readable timestamp, random sci-fi overlay, cinematic beauty lighting, generic stock-photo face, celebrity likeness, moody shadow, artistic, illustration, painting, drawing, 3d render, cartoon, anime, sketch, synthetic CGI, plastic render, watermark, readable text, signature, low resolution, artistic blur, wrong diagnostic palette, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Clinical medical photography: standardized documentation under bright even light against a sterile blue or neutral background.',

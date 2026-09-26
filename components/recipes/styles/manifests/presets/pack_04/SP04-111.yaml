@@ -29,10 +29,9 @@ visualDna:
   camera_and_composition: Theatrical framed tableau, characters in period costume, detailed but clear foreground action.
   atmosphere_and_mood: Old-fashioned, curious and gently eerie, a tale told by candlelight.
   rendering_and_quality: Precise hatched pen detail with restrained tinting; no flat digital color and no outlines-only drawing.
-  creative_brief: "Victorian fairy-tale book plate: detailed pen drawing built from fine parallel hatching and crosshatching, lightly hand-tinted with a few watercolors. Carry it through fine parallel hatching, crosshatch shadows, sparing hand tints, cream foxed paper, theatrical tableau. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Victorian fairy-tale book plate: detailed pen drawing built from fine parallel hatching and crosshatching, lightly hand-tinted with a few watercolors. Carry it through fine parallel hatching, crosshatch shadows, sparing hand tints, cream foxed paper, theatrical tableau. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: fine parallel hatching; crosshatch shadows; sparing hand tints; cream foxed paper; theatrical tableau
 avoidRules:
-  - frightening gore
   - known picture-book characters
   - franchise mascot likeness
   - enlarged head
@@ -49,7 +48,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP04-111.webp
 attributes:
-  negativePrompt: frightening gore, known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, flat digital color, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: known picture-book characters, franchise mascot likeness, enlarged head, unrequested chibi proportions, flat digital color, watermark, text, readable labels, logo, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
 taxonomy:
   packId: pack_04
   packName: Illustration & Graphic Novel

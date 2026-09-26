@@ -46,14 +46,14 @@ visualDna:
     marks and anatomy. Use medical detail only when called for.
 avoidRules:
   - Do not impose a clinic, procedure, body modification or injury narrative.
-  - Respect anatomy locks; do not add unrequested grafts, exposed anatomy or gore.
+  - Respect anatomy locks; do not add unrequested grafts or exposed anatomy.
   - Avoid nerve wiring that obscures body structure.
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP15-096.webp
 attributes:
   negativePrompt:
     Do not impose a clinic, procedure, body modification or injury narrative., Respect anatomy
-    locks; do not add unrequested grafts, exposed anatomy or gore., Avoid nerve wiring that obscures body structure.
+    locks; do not add unrequested grafts or exposed anatomy., Avoid nerve wiring that obscures body structure.
   intentionalPolicy:
     schemaVersion: 1
     kind: full_style
@@ -74,7 +74,7 @@ attributes:
     avoidRules:
       - text: Do not impose a clinic, procedure, body modification or injury narrative.
         field: rendering_and_quality
-      - text: Respect anatomy locks; do not add unrequested grafts, exposed anatomy or gore.
+      - text: Respect anatomy locks; do not add unrequested grafts or exposed anatomy.
         field: rendering_and_quality
       - text: Avoid nerve wiring that obscures body structure.
         field: rendering_and_quality

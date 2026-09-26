@@ -28,11 +28,10 @@ visualDna:
   camera_and_composition: Preserve the requested framing with close detail on the face and gear.
   atmosphere_and_mood: Keep the requested mood with gritty lived-in authenticity.
   rendering_and_quality: Detailed realistic painting with believable wear, kept consistent across the whole image.
-  creative_brief: "Weathered veteran rendering: realistic characters painted with every scar, wrinkle, stain and patch visible, their history written into skin and gear. Carry it through visible scars and wrinkles, worn gear, hard side light, muted tones. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Weathered veteran rendering: realistic characters painted with every scar, wrinkle, stain and patch visible, their history written into skin and gear. Carry it through visible scars and wrinkles, worn gear, hard side light, muted tones. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: visible scars and wrinkles; worn gear; hard side light; muted tones
 avoidRules:
   - clean shiny costume
-  - gore
   - readable text
   - logo
   - real artist signature
@@ -47,7 +46,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: clean shiny costume, gore, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: clean shiny costume, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending

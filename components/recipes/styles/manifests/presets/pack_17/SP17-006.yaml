@@ -23,7 +23,7 @@ visualDna:
   lighting_and_shadow: Flat woven light with shadow described through thread density, border contrast, and dark pattern blocks.
   texture_and_material: Visible fibers, worn edges, stitched contours, frayed borders, thread gaps, and softened pigment.
   camera_and_composition: Frontal frieze layout, stacked scenes, ornamental borders, and iconic subject placement.
-  atmosphere_and_mood: 'Ancient, folkloric, mysterious, and ceremonial; ruined majesty, moral dread, sacred pressure, weathered myth, and restrained grimdark wonder without gore shortcuts, at whatever intensity the requested scene sets.'
+  atmosphere_and_mood: Ancient, folkloric, mysterious, and ceremonial; ruined majesty, moral dread, sacred pressure, weathered myth, and restrained grimdark wonder without gore shortcuts, at whatever intensity the requested scene sets.
   rendering_and_quality: High-resolution textile illustration preserving woven texture and crisp symbolic readability.
   creative_brief: 'Ruined Tapestry Legend: Medieval legend rendered like a damaged woven tapestry with mythic silhouettes and flat ceremonial; damaged medieval tapestry language with flattened ceremonial space; profile like simplification; heraldic outlines; faded wool color.'
   key_features: Ruined Tapestry Legend; Medieval legend rendered like a damaged woven tapestry with mythic silhouettes and flat ceremonial; damaged medieval tapestry language with flattened ceremonial space; profile like simplification; heraldic outlines; faded wool color
@@ -32,7 +32,6 @@ avoidRules:
   - modern poster layout
   - smooth digital gradients
   - anime
-  - explicit gore
   - watermark
   - text
   - generic fantasy splash art
@@ -44,7 +43,7 @@ avoidRules:
 assets:
   defaultImage: /assets/recipes/styles/defaults/SP17-006.webp
 attributes:
-  negativePrompt: photorealism, modern poster layout, smooth digital gradients, anime, explicit gore, watermark, text, generic fantasy splash art, quest party lock, gore only darkness, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
+  negativePrompt: photorealism, modern poster layout, smooth digital gradients, anime, watermark, text, generic fantasy splash art, quest party lock, gore only darkness, prompt literal card reuse, fixed medieval scene, readable manuscript text, generic fantasy card art, muddy noisy dark texture
 taxonomy:
   packId: pack_17
   packName: Medieval Fantasy & Dungeon Zine

@@ -185,7 +185,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '9. Gothic & Dungeon Art Directions',
     domain: 'frozen tomb game art direction',
     negativePrompt:
-      'gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Frostbitten crypt direction: painted game art direction of frozen tombs, ice-rimed stone, blue-white breath, pale ghost light and heavy fur-clad figures.',
@@ -221,7 +221,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '9. Gothic & Dungeon Art Directions',
     domain: 'flooded cathedral art direction',
     negativePrompt:
-      'gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Drowned cathedral direction: painted art direction of cathedrals half sunk in green water, light rays through broken glass, drifting candles and barnacled saints.',
@@ -257,7 +257,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '9. Gothic & Dungeon Art Directions',
     domain: 'haunted doll house art direction',
     negativePrompt:
-      'gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Cracked-doll manor direction: painted art direction of a decaying manor full of porcelain dolls with cracked faces, faded wallpaper and dusty nursery light.',
@@ -289,7 +289,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '9. Gothic & Dungeon Art Directions',
     domain: 'wasteland of rust and bones',
     negativePrompt:
-      'gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Rust-and-bone waste direction: painted art direction of red deserts strewn with giant bones and rusted war machines, dust storms and scavenger silhouettes.',
@@ -324,7 +324,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '9. Gothic & Dungeon Art Directions',
     domain: 'boss chamber lit by stained glass',
     negativePrompt:
-      'gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Stained-glass boss hall direction: vast boss chambers lit by colossal stained-glass windows, colored light pooling on the floor around a towering foe.',
@@ -359,7 +359,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '9. Gothic & Dungeon Art Directions',
     domain: 'glowing mushroom cave art direction',
     negativePrompt:
-      'gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Fungal underdark direction: painted art direction of vast underground caverns lit by giant bioluminescent mushrooms, spore clouds and pale cave-dwellers.',
@@ -391,7 +391,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '9. Gothic & Dungeon Art Directions',
     domain: 'old hospital ward art direction',
     negativePrompt:
-      'gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Infirmary sepia direction: painted art direction of candlelit medieval hospital wards, rows of cots, linen screens, medicine tables and sepia-toned calm dread.',
@@ -424,7 +424,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '9. Gothic & Dungeon Art Directions',
     domain: 'mechanical tomb art direction',
     negativePrompt:
-      'gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Clockwork tomb direction: painted art direction of tombs built as vast machines, brass gears turning behind stone walls, pendulum blades and ticking sarcophagi.',
@@ -460,7 +460,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '9. Gothic & Dungeon Art Directions',
     domain: 'burnt forest witch art direction',
     negativePrompt:
-      'gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Ashen forest witch direction: painted art direction of forests burned to grey ash and charcoal trunks, where witches in bone charms walk under an orange ember sky.',
@@ -493,7 +493,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '9. Gothic & Dungeon Art Directions',
     domain: 'white marble city of tombs',
     negativePrompt:
-      'gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Marble angel necropolis: painted art direction of vast white marble cities of the dead, weeping angel statues, cypress trees and pale sunlight.',
@@ -529,7 +529,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '9. Gothic & Dungeon Art Directions',
     domain: 'vampire opera house art direction',
     negativePrompt:
-      'gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Velvet opera vampire direction: painted art direction of crimson velvet opera houses, gilded boxes, chandeliers and aristocratic vampire audiences in shadow.',
@@ -561,7 +561,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '9. Gothic & Dungeon Art Directions',
     domain: 'deep salt mine art direction',
     negativePrompt:
-      'gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Salt-mine abyss direction: painted art direction of vast white salt mines descending into the dark, carved salt chapels, crystal walls and miners with lamps.',
@@ -597,7 +597,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '9. Gothic & Dungeon Art Directions',
     domain: 'foggy village night art direction',
     negativePrompt:
-      'gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Lantern-lit fog village direction: painted art direction of isolated villages drowned in fog, crooked houses, hanging lanterns and shapes moving between the lights.',
@@ -633,7 +633,7 @@ export const GENERATED_STYLE_PRESETS = [
     category: '9. Gothic & Dungeon Art Directions',
     domain: 'black stone sun temple art direction',
     negativePrompt:
-      'gore, interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+      'interface or HUD, existing game characters, logos or locations, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
     style: {
       aesthetic:
         'Obsidian sun temple direction: painted art direction of black obsidian step temples under a blazing eclipsed sun, gold inlay and ritual processions.',

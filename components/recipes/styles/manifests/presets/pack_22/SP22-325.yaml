@@ -29,10 +29,9 @@ visualDna:
   camera_and_composition: Low heroic angles with tiny fleeing figures and towering monsters.
   atmosphere_and_mood: Keep the requested mood with pulpy thrilling monster-movie fun.
   rendering_and_quality: Bold vivid comic rendering without gore, clear readable scale.
-  creative_brief: "Creature feature comic: classic monster-movie comic art with towering creatures, screaming crowds, dramatic low angles and lurid saturated color. Carry it through towering creature, fleeing crowds, lurid colors, dramatic low angle. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  creative_brief: 'Creature feature comic: classic monster-movie comic art with towering creatures, screaming crowds, dramatic low angles and lurid saturated color. Carry it through towering creature, fleeing crowds, lurid colors, dramatic low angle. Use it as a reusable look on any subject, keeping the prompt''s own subject, action, setting and mood.'
   key_features: towering creature; fleeing crowds; lurid colors; dramatic low angle
 avoidRules:
-  - gore
   - speech bubbles
   - lettering
   - franchise character likeness
@@ -50,7 +49,7 @@ avoidRules:
   - prompt literal card reuse
 assets: {}
 attributes:
-  negativePrompt: gore, speech bubbles, lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  negativePrompt: speech bubbles, lettering, franchise character likeness, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
   previewStatus: pending
   ui:
     previewStatus: pending
