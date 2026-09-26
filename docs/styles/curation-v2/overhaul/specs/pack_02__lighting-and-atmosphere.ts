@@ -41,9 +41,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Magic-hour film still of an adult rider leading a horse through tall wheat, the sun directly behind them rimming mane and hair in gold, faces filled by warm bounce, a veil of flare. No text or logo.',
-        'Magic-hour film still of an adult couple dancing slowly on a hilltop, backlit by a sun touching the horizon, dust glowing around their feet. No text or logo.',
-        'Magic-hour film still of an adult scarecrow-maker lifting a finished scarecrow onto its pole in a field, sun behind the straw hat, warm bounce on her face. No text or logo.',
+        "A rider leads a horse through tall wheat with the sun directly behind them, rimming mane and hair in gold while warm bounce fills their faces. No readable text or logo.",
+        "A couple dances slowly on a hilltop, backlit by a sun touching the horizon, dust glowing around their feet. No readable text or logo.",
+        "A scarecrow-maker lifts her finished scarecrow onto its pole in a field, the sun behind its straw hat and warm bounce on her face. No readable text or logo.",
       ],
     },
     'SP02-062': {
@@ -66,9 +66,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'tram', 'wet street'],
       briefs: [
-        'Blue-hour film still of an adult ferryman lighting a lantern on the deck of a river barge, cobalt sky over the water, the lantern the only warm light on his face. No text or logo.',
-        'Blue-hour film still of a mountain inn with glowing windows, an adult guest leaning on a wooden balcony, violet peaks behind. No text or logo.',
-        'Blue-hour film still of an adult woman walking home along a snowy village lane past lit windows, blue snow and warm doorways. No text or logo.',
+        "A ferryman lights a lantern on the deck of a river barge under a cobalt sky, the flame the only warm light on his face. No readable text or logo.",
+        "A mountain inn glows at dusk, a guest leaning on a wooden balcony as the peaks behind turn violet and then deep blue. No readable text or logo.",
+        "A woman walks home along a snowy village lane past lit windows, blue snow and warm doorways stretching into the dusk. No readable text or logo.",
       ],
     },
     'SP02-063': {
@@ -114,9 +114,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'readable neon sign', 'wet street reflections'],
       briefs: [
-        'Neon-practical film still of an adult bartender polishing glasses in a narrow bar lit only by red and blue tubes along the shelves, haze hanging in the air, no readable signs. No text or logo.',
-        'Neon-practical film still of an adult boxer taping her hands in a locker room under a buzzing magenta tube, chrome lockers catching the color. No text or logo.',
-        'Neon-practical film still of an adult tattooist bent over a client in a tiny parlor lit by cyan tubes and a red lamp. No readable signs or logo.',
+        "A bartender polishes glasses in a narrow bar lit only by red and blue tubes along the shelves, haze hanging in the air. No readable text or logo.",
+        "A boxer tapes her hands in a locker room under one buzzing magenta tube, chrome lockers catching the color. No readable text or logo.",
+        "A tattooist bends over a client in a tiny parlor lit by cyan tubes and a single red lamp. No readable text or logo.",
       ],
     },
     'SP02-065': {
@@ -139,9 +139,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Film still of an adult monk sweeping the floor of a hazy library as hard beams pour through tall windows, dust motes in the shafts, mullion shadows on the floorboards. No text or logo.',
-        'Film still of an adult couple dancing alone in an abandoned ballroom, beams through tall shutters crossing them in the haze. No text or logo.',
-        'Film still of an adult widow sitting beside a closed coffin in a hazy parlor, one beam from the curtain gap falling across her hands. No text or logo.',
+        "A monk sweeping the floor of a hazy library as hard beams pour through tall windows, dust motes in the shafts, mullion shadows on the floorboards. No text or logo.",
+        "A couple dancing alone in an abandoned ballroom, beams through tall shutters crossing them in the haze. No text or logo.",
+        "A widow sitting beside a closed coffin in a hazy parlor, one beam from the curtain gap falling across her hands. No text or logo.",
       ],
     },
     'SP02-066': {
@@ -163,9 +163,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'front-lit subject'],
       briefs: [
-        'Film still of two adult duelists facing each other on a ridge as black silhouettes against an enormous orange sunset sky, swords lowered, space between them. No text or logo.',
-        'Film still of an adult figure in a long coat standing in a doorway as a black shape against a blinding white corridor. No text or logo.',
-        'Film still of an adult rider on a camel crossing a dune as a crisp black silhouette against a white-hot desert sky. No text or logo.',
+        "Two adult duelists facing each other on a ridge as black silhouettes against an enormous orange sunset sky, swords lowered, space between them. No text or logo.",
+        "A figure in a long coat standing in a doorway as a black shape against a blinding white corridor. No text or logo.",
+        "A rider on a camel crossing a dune as a crisp black silhouette against a white-hot desert sky. No text or logo.",
       ],
     },
     'SP02-067': {
@@ -210,9 +210,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'deep focus', 'digital blur filter'],
       briefs: [
-        'Bokeh macro film still of a tiny snail on a red mushroom, a string of warm fairy lights behind it melting into large glowing discs. No text or logo.',
-        'Bokeh macro still of a glass marble resting on moss, colored city lights behind turning into swirling cat-eye bokeh. No text or logo.',
-        'Bokeh macro still of an adult hand holding a jar of fireflies, the fireflies inside sharp points and the ones outside soft glowing discs. No text or logo.',
+        "A tiny snail crosses a red mushroom while a string of warm fairy lights behind it melts into large glowing discs. No readable text or logo.",
+        "A glass marble rests on moss as colored city lights behind it swirl into cat-eye discs of blur. No readable text or logo.",
+        "A hand holds a jar of fireflies, the ones inside sharp points of light and the ones outside soft glowing discs. No readable text or logo.",
       ],
     },
     'SP02-069': {
@@ -305,9 +305,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'electric light'],
       briefs: [
-        'Candlelit film still of adult card players in an elegant salon lit only by dozens of candles, faces glowing amber, focus so shallow only one player is sharp. No text or logo.',
-        'Candlelit film still of an adult governess reading a sealed letter by a single candle at a writing desk, velvety darkness around her. No readable text or logo.',
-        'Candlelit film still of an adult composer playing a harpsichord in a candlelit music room, flames reflected in the lacquered lid. No text or logo.',
+        "Card players in an elegant salon are lit only by dozens of candles, faces glowing amber and focus so shallow that only one player is sharp. No readable text or logo.",
+        "A governess reads a sealed letter by a single candle at a writing desk, velvety darkness swallowing the room around her. No readable text or logo.",
+        "A composer plays a harpsichord in a music room of candles, every flame reflected in the lacquered lid. No readable text or logo.",
       ],
     },
     'SP02-073': {
@@ -331,9 +331,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Film still of an adult ranger walking through a night forest of glowing blue ferns and violet mushrooms, spores floating, her face lit cold from below. No text or logo.',
-        'Film still of a glowing translucent creature drifting over a still cave lake, its light rippling across the stalactites. No text or logo.',
-        'Film still of an adult healer kneeling in glowing moss, cyan light rising through her fingers. No text or logo.',
+        "A ranger walking through a night forest of glowing blue ferns and violet mushrooms, spores floating, her face lit cold from below. No text or logo.",
+        "A glowing translucent creature drifting over a still cave lake, its light rippling across the stalactites. No text or logo.",
+        "A healer kneels in a carpet of glowing moss in a midnight forest, cyan light rising between her fingers as the patch she touches brightens. No readable text or logo.",
       ],
     },
     'SP02-074': {
@@ -356,9 +356,9 @@ const spec: Spec = {
       }),
       avoid: AVOID,
       briefs: [
-        'Club-strobe film still of an adult dancer in a dark club caught in four frozen positions by repeated strobe bursts, cold white on black. No text or logo.',
-        'Club-strobe film still of a tavern brawl frozen three times in one frame, a thrown tankard stacked along its arc. No text or logo.',
-        'Club-strobe film still of an adult juggler of flaming clubs, each club frozen several times along its loop. No text or logo.',
+        "A dancer in a dark club is caught in four frozen positions at once by repeated bursts of cold white light on black. No readable text or logo.",
+        "A tavern brawl is frozen three times in one frame, a thrown tankard stacked along its arc. No readable text or logo.",
+        "A juggler's flaming clubs are frozen several times each along their loop by stuttering white bursts. No readable text or logo.",
       ],
     },
     'SP02-075': {
@@ -425,9 +425,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'dry studio light'],
       briefs: [
-        'Film still of an adult swimmer in a flowing dress suspended in a deep pool, caustic nets rippling across the dress and tiles, sunbeams slanting from above. No text or logo.',
-        'Film still of a sunken marble statue at the bottom of a flooded courtyard, caustics crawling over its face. No text or logo.',
-        'Film still of an adult man in a dark suit floating on his back underwater in a swimming pool, caustic light patterns across his face. No text or logo.',
+        "A swimmer in a flowing dress suspended in a deep pool, caustic nets rippling across the dress and tiles, sunbeams slanting from above. No text or logo.",
+        "A sunken marble statue at the bottom of a flooded courtyard, caustics crawling over its face. No text or logo.",
+        "A man in a dark suit floating on his back underwater in a swimming pool, caustic light patterns across his face. No text or logo.",
       ],
     },
     'SP02-078': {
@@ -475,9 +475,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'hard shadows'],
       briefs: [
-        "Softbox studio photograph of an ornate silver knight's helmet with a crest of long white feathers on a charcoal seamless, one big softbox wrapping smooth gradients along the polished steel and feathers, soft contact shadow. No text or logo.",
-        'Softbox studio portrait of an adult model holding a carved crystal skull, wraparound light on skin and crystal, clean white seamless. No text or logo.',
-        'Softbox studio photograph of a bouquet of dried thistles and roses on a pale seamless, soft even light and a gentle gradient. No text or logo.',
+        "An ornate silver helmet with a crest of long white feathers rests on a charcoal seamless, one big soft source wrapping smooth gradients along the steel. No readable text or logo.",
+        "A model holds a carved crystal skull on a clean white seamless, wraparound light glowing on skin and crystal alike. No readable text or logo.",
+        "A bouquet of dried thistles and roses stands on a pale seamless under soft even light and a gentle gradient. No readable text or logo.",
       ],
     },
     'SP02-080': {
@@ -500,9 +500,9 @@ const spec: Spec = {
       }),
       avoid: [...AVOID, 'real director reference'],
       briefs: [
-        'Anamorphic film still of an adult starship captain on a glossy bridge, long horizontal blue flares streaking from the consoles across the frame, oval highlights. No readable screens or logo.',
-        'Anamorphic film still of an adult knight raising a glowing sword in a dark cave, the blade throwing a horizontal cyan streak across the lens. No text or logo.',
-        'Anamorphic film still of a spaceport at night, searchlights sweeping into the lens and veiling the landing pads in blue streaks. No text or logo.',
+        "A starship captain stands on a glossy bridge as long horizontal blue flares streak from the consoles across the frame. No readable text or logo.",
+        "A knight raises a glowing sword in a dark cave, the blade throwing a horizontal cyan streak clean across the lens. No readable text or logo.",
+        "A spaceport at night is veiled in blue horizontal streaks as searchlights sweep straight into the lens. No readable text or logo.",
       ],
     },
   },
