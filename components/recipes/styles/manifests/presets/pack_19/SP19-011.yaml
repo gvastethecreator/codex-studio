@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP19-011
+packId: pack_19
+name: Split-Nib Swell
+styleAnchors:
+  - Split-Nib Swell
+  - flexible nib swelling line
+  - hairline-to-bold swell
+displayName: Split-Nib Swell
+category: 1. Ink Structures
+domain: flexible nib swelling line
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - ink-structures
+  - split-nib
+  - ink
+  - portable-study
+visualDna:
+  aesthetic: 'Split-nib swell: pointed dip-pen drawing where one flexible nib swings from hairline to bold in a single stroke, so every contour breathes with pressure.'
+  subject_treatment: Draw the prompt's subject with pressure-swelled nib lines, thick on the shadow side of each curve and hairline where light hits, keeping its form and pose.
+  color_and_tone: Black or sepia iron-gall ink on warm cream paper, with value made only by line weight and spacing.
+  lighting_and_shadow: Light is implied by thinning lines on lit edges and swelling, doubled strokes on the shadow side.
+  texture_and_material: Glossy ink ridges on smooth paper, tiny spatters where the nib caught and fine tapered stroke ends.
+  camera_and_composition: The prompt's framing with generous open paper, the main contour flowing unbroken across the page.
+  atmosphere_and_mood: Elegant, alert and alive, like a confident sketch made in one sitting.
+  rendering_and_quality: Crisp continuous nib lines with visible swell and taper, no hatching fill and no wash.
+  creative_brief: "Split-nib swell: pointed dip-pen drawing where one flexible nib swings from hairline to bold in a single stroke, so every contour breathes with pressure. Carry it through hairline-to-bold swell, pressure on shadow side, tapered ends, bare cream paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: hairline-to-bold swell; pressure on shadow side; tapered ends; bare cream paper
+avoidRules:
+  - uniform line weight
+  - digital vector outline
+  - grey wash fill
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: uniform line weight, digital vector outline, grey wash fill, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_19
+  packName: Ink Structures
+  categoryId: ink-structures
+  categoryName: 1. Ink Structures
+  tags:
+    - curation-v2
+    - ink-structures
+    - split-nib
+    - ink
+    - portable-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: flexible nib swelling line

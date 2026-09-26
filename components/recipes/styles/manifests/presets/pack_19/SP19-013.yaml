@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP19-013
+packId: pack_19
+name: Feathered Wet Bloom
+styleAnchors:
+  - Feathered Wet Bloom
+  - ink dropped into wet paper
+  - feathered halos
+displayName: Feathered Wet Bloom
+category: 1. Ink Structures
+domain: ink dropped into wet paper
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - ink-structures
+  - wet-bloom
+  - ink
+  - portable-study
+visualDna:
+  aesthetic: 'Feathered wet bloom: ink touched into soaked paper so it spreads in soft feathered halos, with forms emerging from the blooms rather than drawn outlines.'
+  subject_treatment: Suggest the prompt's subject through ink blooms spreading into wet paper, adding a few drier accents later so its shape and identity stay readable.
+  color_and_tone: Indigo, sepia or black ink blooming into pale tints, soft gradients from each drop point outward.
+  lighting_and_shadow: Light lives in the pale feathered edges of each bloom; shadow gathers where drops overlapped and darkened.
+  texture_and_material: Feathered halo edges, branching capillary tendrils and cauliflower backruns on heavy soaked paper.
+  camera_and_composition: Soft-edged masses floating in the frame, the subject centered in the densest bloom.
+  atmosphere_and_mood: Dreamy, damp and quiet, like a memory seeping into paper.
+  rendering_and_quality: Organic spreading blooms with a few crisp dry accents, never hard outlines everywhere.
+  creative_brief: "Feathered wet bloom: ink touched into soaked paper so it spreads in soft feathered halos, with forms emerging from the blooms rather than drawn outlines. Carry it through feathered halos, capillary tendrils, backruns, few dry accents. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: feathered halos; capillary tendrils; backruns; few dry accents
+avoidRules:
+  - hard outlines everywhere
+  - flat digital gradient
+  - dry opaque paint
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: hard outlines everywhere, flat digital gradient, dry opaque paint, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_19
+  packName: Ink Structures
+  categoryId: ink-structures
+  categoryName: 1. Ink Structures
+  tags:
+    - curation-v2
+    - ink-structures
+    - wet-bloom
+    - ink
+    - portable-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: ink dropped into wet paper

@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP19-020
+packId: pack_19
+name: Blotted Line Transfer
+styleAnchors:
+  - Blotted Line Transfer
+  - blotted ink line transfer drawing
+  - beaded broken lines
+displayName: Blotted Line Transfer
+category: 1. Ink Structures
+domain: blotted ink line transfer drawing
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - ink-structures
+  - blotted-line
+  - ink
+  - portable-study
+visualDna:
+  aesthetic: 'Blotted line transfer: lines drawn in wet ink on non-absorbent paper and pressed onto a second sheet, leaving broken, beaded and slightly doubled contours.'
+  subject_treatment: Render the prompt's subject as transferred ink lines that break into beads and gaps, then add flat color shapes so it stays recognizable.
+  color_and_tone: Black blotted lines with optional flat hand-applied color areas in slightly offset positions.
+  lighting_and_shadow: No modeled light; the broken line and flat color shapes carry the whole image.
+  texture_and_material: Beaded dotted contours, uneven ink pickup, faint doubled ghost lines and flat color fills off register.
+  camera_and_composition: Clear graphic placement of the subject on a pale ground, often centered and illustrative.
+  atmosphere_and_mood: Playful, stylish and slightly nostalgic, like a mid-century illustration.
+  rendering_and_quality: Authentic broken transfer lines, never clean continuous vector strokes.
+  creative_brief: "Blotted line transfer: lines drawn in wet ink on non-absorbent paper and pressed onto a second sheet, leaving broken, beaded and slightly doubled contours. Carry it through beaded broken lines, ghost doubles, offset flat color, pale ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: beaded broken lines; ghost doubles; offset flat color; pale ground
+avoidRules:
+  - clean continuous vector line
+  - photographic shading
+  - heavy brush strokes
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: clean continuous vector line, photographic shading, heavy brush strokes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_19
+  packName: Ink Structures
+  categoryId: ink-structures
+  categoryName: 1. Ink Structures
+  tags:
+    - curation-v2
+    - ink-structures
+    - blotted-line
+    - ink
+    - portable-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: blotted ink line transfer drawing

@@ -18,6 +18,16 @@ categories:
       - pack_19/SP19-008.yaml
       - pack_19/SP19-009.yaml
       - pack_19/SP19-010.yaml
+      - pack_19/SP19-011.yaml
+      - pack_19/SP19-012.yaml
+      - pack_19/SP19-013.yaml
+      - pack_19/SP19-014.yaml
+      - pack_19/SP19-015.yaml
+      - pack_19/SP19-016.yaml
+      - pack_19/SP19-017.yaml
+      - pack_19/SP19-018.yaml
+      - pack_19/SP19-019.yaml
+      - pack_19/SP19-020.yaml
 presetRefs:
   - pack_19/SP19-001.yaml
   - pack_19/SP19-002.yaml
@@ -29,3 +39,13 @@ presetRefs:
   - pack_19/SP19-008.yaml
   - pack_19/SP19-009.yaml
   - pack_19/SP19-010.yaml
+  - pack_19/SP19-011.yaml
+  - pack_19/SP19-012.yaml
+  - pack_19/SP19-013.yaml
+  - pack_19/SP19-014.yaml
+  - pack_19/SP19-015.yaml
+  - pack_19/SP19-016.yaml
+  - pack_19/SP19-017.yaml
+  - pack_19/SP19-018.yaml
+  - pack_19/SP19-019.yaml
+  - pack_19/SP19-020.yaml

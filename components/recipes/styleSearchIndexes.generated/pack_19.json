@@ -3,7 +3,7 @@
     {
       "id": "pack_19",
       "name": "Ink Structures",
-      "presetCount": 10
+      "presetCount": 20
     }
   ],
   "presets": [
@@ -126,7 +126,171 @@
       "tags": ["ink-structures", "ink-structures"],
       "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
       "searchableText": "sp19-010 aerosol tone 1. ink structures ink structures pack_19 ink structures ink-structures ink-structures ink-structures"
+    },
+    {
+      "id": "SP19-011",
+      "name": "Split-Nib Swell",
+      "styleAnchors": ["Split-Nib Swell", "flexible nib swelling line", "hairline-to-bold swell"],
+      "ref": "pack_19/SP19-011.yaml",
+      "packId": "pack_19",
+      "packName": "Ink Structures",
+      "categoryId": "ink-structures",
+      "categoryName": "1. Ink Structures",
+      "domain": "flexible nib swelling line",
+      "tags": ["ink-structures", "ink-structures", "flexible-nib-swelling-line"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp19-011 split-nib swell flexible nib swelling line hairline-to-bold swell 1. ink structures ink structures flexible nib swelling line pack_19 ink structures ink-structures ink-structures ink-structures flexible-nib-swelling-line"
+    },
+    {
+      "id": "SP19-012",
+      "name": "Flung-Ink Splash",
+      "styleAnchors": ["Flung-Ink Splash", "splashed ink landscape", "thrown ink bursts"],
+      "ref": "pack_19/SP19-012.yaml",
+      "packId": "pack_19",
+      "packName": "Ink Structures",
+      "categoryId": "ink-structures",
+      "categoryName": "1. Ink Structures",
+      "domain": "splashed ink landscape",
+      "tags": ["ink-structures", "ink-structures", "splashed-ink-landscape"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp19-012 flung-ink splash splashed ink landscape thrown ink bursts 1. ink structures ink structures splashed ink landscape pack_19 ink structures ink-structures ink-structures ink-structures splashed-ink-landscape"
+    },
+    {
+      "id": "SP19-013",
+      "name": "Feathered Wet Bloom",
+      "styleAnchors": ["Feathered Wet Bloom", "ink dropped into wet paper", "feathered halos"],
+      "ref": "pack_19/SP19-013.yaml",
+      "packId": "pack_19",
+      "packName": "Ink Structures",
+      "categoryId": "ink-structures",
+      "categoryName": "1. Ink Structures",
+      "domain": "ink dropped into wet paper",
+      "tags": ["ink-structures", "ink-structures", "ink-dropped-into-wet-paper"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp19-013 feathered wet bloom ink dropped into wet paper feathered halos 1. ink structures ink structures ink dropped into wet paper pack_19 ink structures ink-structures ink-structures ink-structures ink-dropped-into-wet-paper"
+    },
+    {
+      "id": "SP19-014",
+      "name": "Cross-Contour Belts",
+      "styleAnchors": [
+        "Cross-Contour Belts",
+        "form-wrapping contour lines",
+        "surface-wrapping lines"
+      ],
+      "ref": "pack_19/SP19-014.yaml",
+      "packId": "pack_19",
+      "packName": "Ink Structures",
+      "categoryId": "ink-structures",
+      "categoryName": "1. Ink Structures",
+      "domain": "form-wrapping contour lines",
+      "tags": ["ink-structures", "ink-structures", "form-wrapping-contour-lines"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp19-014 cross-contour belts form-wrapping contour lines surface-wrapping lines 1. ink structures ink structures form-wrapping contour lines pack_19 ink structures ink-structures ink-structures ink-structures form-wrapping-contour-lines"
+    },
+    {
+      "id": "SP19-015",
+      "name": "Ruled Line Scaffold",
+      "styleAnchors": [
+        "Ruled Line Scaffold",
+        "ruling pen structure drawing",
+        "ruled straight lines"
+      ],
+      "ref": "pack_19/SP19-015.yaml",
+      "packId": "pack_19",
+      "packName": "Ink Structures",
+      "categoryId": "ink-structures",
+      "categoryName": "1. Ink Structures",
+      "domain": "ruling pen structure drawing",
+      "tags": ["ink-structures", "ink-structures", "ruling-pen-structure-drawing"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp19-015 ruled line scaffold ruling pen structure drawing ruled straight lines 1. ink structures ink structures ruling pen structure drawing pack_19 ink structures ink-structures ink-structures ink-structures ruling-pen-structure-drawing"
+    },
+    {
+      "id": "SP19-016",
+      "name": "Reserved White Shapes",
+      "styleAnchors": [
+        "Reserved White Shapes",
+        "negative space ink reserve",
+        "subject left as bare paper"
+      ],
+      "ref": "pack_19/SP19-016.yaml",
+      "packId": "pack_19",
+      "packName": "Ink Structures",
+      "categoryId": "ink-structures",
+      "categoryName": "1. Ink Structures",
+      "domain": "negative space ink reserve",
+      "tags": ["ink-structures", "ink-structures", "negative-space-ink-reserve"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp19-016 reserved white shapes negative space ink reserve subject left as bare paper 1. ink structures ink structures negative space ink reserve pack_19 ink structures ink-structures ink-structures ink-structures negative-space-ink-reserve"
+    },
+    {
+      "id": "SP19-017",
+      "name": "Single-Stroke Figures",
+      "styleAnchors": ["Single-Stroke Figures", "one-stroke brush figures", "one stroke per form"],
+      "ref": "pack_19/SP19-017.yaml",
+      "packId": "pack_19",
+      "packName": "Ink Structures",
+      "categoryId": "ink-structures",
+      "categoryName": "1. Ink Structures",
+      "domain": "one-stroke brush figures",
+      "tags": ["ink-structures", "ink-structures", "one-stroke-brush-figures"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp19-017 single-stroke figures one-stroke brush figures one stroke per form 1. ink structures ink structures one-stroke brush figures pack_19 ink structures ink-structures ink-structures ink-structures one-stroke-brush-figures"
+    },
+    {
+      "id": "SP19-018",
+      "name": "Pulled-String Ink",
+      "styleAnchors": [
+        "Pulled-String Ink",
+        "ink-soaked string pulled between paper",
+        "mirrored strand trails"
+      ],
+      "ref": "pack_19/SP19-018.yaml",
+      "packId": "pack_19",
+      "packName": "Ink Structures",
+      "categoryId": "ink-structures",
+      "categoryName": "1. Ink Structures",
+      "domain": "ink-soaked string pulled between paper",
+      "tags": ["ink-structures", "ink-structures", "ink-soaked-string-pulled-between-paper"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp19-018 pulled-string ink ink-soaked string pulled between paper mirrored strand trails 1. ink structures ink structures ink-soaked string pulled between paper pack_19 ink structures ink-structures ink-structures ink-structures ink-soaked-string-pulled-between-paper"
+    },
+    {
+      "id": "SP19-019",
+      "name": "Stepped Dilution Wash",
+      "styleAnchors": [
+        "Stepped Dilution Wash",
+        "graded ink value ladder",
+        "four or five value steps"
+      ],
+      "ref": "pack_19/SP19-019.yaml",
+      "packId": "pack_19",
+      "packName": "Ink Structures",
+      "categoryId": "ink-structures",
+      "categoryName": "1. Ink Structures",
+      "domain": "graded ink value ladder",
+      "tags": ["ink-structures", "ink-structures", "graded-ink-value-ladder"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp19-019 stepped dilution wash graded ink value ladder four or five value steps 1. ink structures ink structures graded ink value ladder pack_19 ink structures ink-structures ink-structures ink-structures graded-ink-value-ladder"
+    },
+    {
+      "id": "SP19-020",
+      "name": "Blotted Line Transfer",
+      "styleAnchors": [
+        "Blotted Line Transfer",
+        "blotted ink line transfer drawing",
+        "beaded broken lines"
+      ],
+      "ref": "pack_19/SP19-020.yaml",
+      "packId": "pack_19",
+      "packName": "Ink Structures",
+      "categoryId": "ink-structures",
+      "categoryName": "1. Ink Structures",
+      "domain": "blotted ink line transfer drawing",
+      "tags": ["ink-structures", "ink-structures", "blotted-ink-line-transfer-drawing"],
+      "supportedTasks": ["image_generate", "image_edit", "style_preset_card"],
+      "searchableText": "sp19-020 blotted line transfer blotted ink line transfer drawing beaded broken lines 1. ink structures ink structures blotted ink line transfer drawing pack_19 ink structures ink-structures ink-structures ink-structures blotted-ink-line-transfer-drawing"
     }
   ],
-  "totalPresetCount": 10
+  "totalPresetCount": 20
 }

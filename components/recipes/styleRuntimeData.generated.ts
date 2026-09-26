@@ -171,7 +171,7 @@ export const GENERATED_STYLE_RUNTIME_PACK_SUMMARIES = [
     cardTitle: 'Ink Structures',
     cardDescription:
       'Portable visual studies with explicit rendering mechanics. New derivatives preserve legacy originals; existing representative previews remain available, while added previews and cross-subject visual evaluation are pending.',
-    presetCount: 10,
+    presetCount: 20,
   },
   {
     id: 'pack_20',

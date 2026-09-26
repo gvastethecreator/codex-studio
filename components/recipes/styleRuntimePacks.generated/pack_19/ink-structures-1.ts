@@ -300,4 +300,351 @@ export const GENERATED_STYLE_PRESETS = [
       visualEvaluation: 'pending',
     },
   },
+  {
+    id: 'SP19-011',
+    name: 'Split-Nib Swell',
+    displayName: 'Split-Nib Swell',
+    styleAnchors: ['Split-Nib Swell', 'flexible nib swelling line', 'hairline-to-bold swell'],
+    category: '1. Ink Structures',
+    domain: 'flexible nib swelling line',
+    negativePrompt:
+      'uniform line weight, digital vector outline, grey wash fill, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Split-nib swell: pointed dip-pen drawing where one flexible nib swings from hairline to bold in a single stroke, so every contour breathes with pressure.',
+      subject_treatment:
+        "Draw the prompt's subject with pressure-swelled nib lines, thick on the shadow side of each curve and hairline where light hits, keeping its form and pose.",
+      color_and_tone:
+        'Black or sepia iron-gall ink on warm cream paper, with value made only by line weight and spacing.',
+      lighting_and_shadow:
+        'Light is implied by thinning lines on lit edges and swelling, doubled strokes on the shadow side.',
+      texture_and_material:
+        'Glossy ink ridges on smooth paper, tiny spatters where the nib caught and fine tapered stroke ends.',
+      camera_and_composition:
+        "The prompt's framing with generous open paper, the main contour flowing unbroken across the page.",
+      atmosphere_and_mood: 'Elegant, alert and alive, like a confident sketch made in one sitting.',
+      rendering_and_quality:
+        'Crisp continuous nib lines with visible swell and taper, no hatching fill and no wash.',
+      creative_brief:
+        "Split-nib swell: pointed dip-pen drawing where one flexible nib swings from hairline to bold in a single stroke, so every contour breathes with pressure. Carry it through hairline-to-bold swell, pressure on shadow side, tapered ends, bare cream paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features:
+        'hairline-to-bold swell; pressure on shadow side; tapered ends; bare cream paper',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP19-012',
+    name: 'Flung-Ink Splash',
+    displayName: 'Flung-Ink Splash',
+    styleAnchors: ['Flung-Ink Splash', 'splashed ink landscape', 'thrown ink bursts'],
+    category: '1. Ink Structures',
+    domain: 'splashed ink landscape',
+    negativePrompt:
+      'neat outlined drawing, uniform flat fill, digital splatter brush pattern, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Flung-ink splash: ink thrown and splashed onto paper in bold bursts, then given just enough brush marks to become mountains, trees or creatures.',
+      subject_treatment:
+        "Build the prompt's subject from splashed and flung ink bursts, then clarify it with a few precise brush touches so it stays recognizable.",
+      color_and_tone:
+        'Black ink in every dilution from dense to watery grey on white paper, with at most one small color accent.',
+      lighting_and_shadow:
+        'Light comes from the white paper left between splashes; darkness comes from where the ink landed heaviest.',
+      texture_and_material:
+        'Radiating spatter, droplet trails, pooled splash centers and a few sharp brush accents on absorbent paper.',
+      camera_and_composition:
+        'Asymmetric composition with splash energy flowing diagonally and large areas of empty paper.',
+      atmosphere_and_mood: 'Explosive, spontaneous and poetic, a landscape born from an accident.',
+      rendering_and_quality:
+        'Bold uncontrolled splash forms tamed by few careful strokes, never a neat illustration.',
+      creative_brief:
+        "Flung-ink splash: ink thrown and splashed onto paper in bold bursts, then given just enough brush marks to become mountains, trees or creatures. Carry it through thrown ink bursts, droplet trails, few clarifying strokes, empty paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'thrown ink bursts; droplet trails; few clarifying strokes; empty paper',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP19-013',
+    name: 'Feathered Wet Bloom',
+    displayName: 'Feathered Wet Bloom',
+    styleAnchors: ['Feathered Wet Bloom', 'ink dropped into wet paper', 'feathered halos'],
+    category: '1. Ink Structures',
+    domain: 'ink dropped into wet paper',
+    negativePrompt:
+      'hard outlines everywhere, flat digital gradient, dry opaque paint, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Feathered wet bloom: ink touched into soaked paper so it spreads in soft feathered halos, with forms emerging from the blooms rather than drawn outlines.',
+      subject_treatment:
+        "Suggest the prompt's subject through ink blooms spreading into wet paper, adding a few drier accents later so its shape and identity stay readable.",
+      color_and_tone:
+        'Indigo, sepia or black ink blooming into pale tints, soft gradients from each drop point outward.',
+      lighting_and_shadow:
+        'Light lives in the pale feathered edges of each bloom; shadow gathers where drops overlapped and darkened.',
+      texture_and_material:
+        'Feathered halo edges, branching capillary tendrils and cauliflower backruns on heavy soaked paper.',
+      camera_and_composition:
+        'Soft-edged masses floating in the frame, the subject centered in the densest bloom.',
+      atmosphere_and_mood: 'Dreamy, damp and quiet, like a memory seeping into paper.',
+      rendering_and_quality:
+        'Organic spreading blooms with a few crisp dry accents, never hard outlines everywhere.',
+      creative_brief:
+        "Feathered wet bloom: ink touched into soaked paper so it spreads in soft feathered halos, with forms emerging from the blooms rather than drawn outlines. Carry it through feathered halos, capillary tendrils, backruns, few dry accents. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'feathered halos; capillary tendrils; backruns; few dry accents',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP19-014',
+    name: 'Cross-Contour Belts',
+    displayName: 'Cross-Contour Belts',
+    styleAnchors: ['Cross-Contour Belts', 'form-wrapping contour lines', 'surface-wrapping lines'],
+    category: '1. Ink Structures',
+    domain: 'form-wrapping contour lines',
+    negativePrompt:
+      'flat outline without interior lines, crosshatch shading, grey wash, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Cross-contour belts: every form described by parallel ink lines that wrap around its surface like belts or topographic rings, showing volume without shading.',
+      subject_treatment:
+        "Wrap the prompt's subject in evenly spaced lines that follow its surface across and around, so its volume and pose read from the line flow alone.",
+      color_and_tone:
+        'Black fineliner on white paper, occasionally one colored line set for a single important form.',
+      lighting_and_shadow:
+        'Tone comes from line spacing: belts crowd together on turning edges and open up on broad lit planes.',
+      texture_and_material:
+        'Clean even fineliner lines, slight tremor, and precise bends where belts cross ridges and hollows.',
+      camera_and_composition:
+        "The prompt's framing with the subject large, belts flowing across it like a body scan.",
+      atmosphere_and_mood: 'Analytical, calm and hypnotic, like watching a shape being measured.',
+      rendering_and_quality:
+        'Continuous parallel belts with no hatching, no fill and no outline-only shortcuts.',
+      creative_brief:
+        "Cross-contour belts: every form described by parallel ink lines that wrap around its surface like belts or topographic rings, showing volume without shading. Carry it through surface-wrapping lines, spacing as tone, no shading fill, body-scan feel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'surface-wrapping lines; spacing as tone; no shading fill; body-scan feel',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP19-015',
+    name: 'Ruled Line Scaffold',
+    displayName: 'Ruled Line Scaffold',
+    styleAnchors: ['Ruled Line Scaffold', 'ruling pen structure drawing', 'ruled straight lines'],
+    category: '1. Ink Structures',
+    domain: 'ruling pen structure drawing',
+    negativePrompt:
+      'sketchy loose lines everywhere, photographic shading, curved brush strokes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Ruled line scaffold: ink drawing built from ruler-straight pen lines and construction guides, with only a few freehand strokes where life breaks through.',
+      subject_treatment:
+        "Construct the prompt's subject from ruled straight segments and perspective guides, allowing freehand ink only on organic details so it stays recognizable.",
+      color_and_tone:
+        'Black ink with faint blue construction lines on bright white drafting paper.',
+      lighting_and_shadow:
+        'Shadow planes are filled with evenly ruled parallel lines rather than tone or wash.',
+      texture_and_material:
+        'Crisp ruling-pen lines with slightly bulbed ends, faint pencil guides and a few blots at line starts.',
+      camera_and_composition:
+        'Strong perspective with visible vanishing guides, the subject placed on the scaffold grid.',
+      atmosphere_and_mood: 'Rational, precise and slightly tense, order holding back chaos.',
+      rendering_and_quality:
+        'Exact ruled geometry with deliberate freehand contrast, no sketchy messiness in the ruled parts.',
+      creative_brief:
+        "Ruled line scaffold: ink drawing built from ruler-straight pen lines and construction guides, with only a few freehand strokes where life breaks through. Carry it through ruled straight lines, visible construction guides, ruled shadow fills, few freehand accents. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features:
+        'ruled straight lines; visible construction guides; ruled shadow fills; few freehand accents',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP19-016',
+    name: 'Reserved White Shapes',
+    displayName: 'Reserved White Shapes',
+    styleAnchors: [
+      'Reserved White Shapes',
+      'negative space ink reserve',
+      'subject left as bare paper',
+    ],
+    category: '1. Ink Structures',
+    domain: 'negative space ink reserve',
+    negativePrompt:
+      'outlined subject, subject painted dark, grey filled subject, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Reserved white shapes: the subject is never drawn; instead the dark ink surroundings are painted around it, leaving it as clean bare paper.',
+      subject_treatment:
+        "Leave the prompt's subject as untouched white paper and paint everything around it in ink, so its silhouette and key interior gaps define it.",
+      color_and_tone:
+        'Dense black or deep indigo ink fields surrounding pure white reserved shapes, with a few mid-grey transitions.',
+      lighting_and_shadow:
+        'The reserved subject reads as brightly lit; all shadow and atmosphere live in the painted surroundings.',
+      texture_and_material:
+        'Brushy ink edges hugging the reserve, dry-brush breaks and crisp paper borders around the subject.',
+      camera_and_composition:
+        'Strong silhouettes with clear readable outlines, the subject centered in a dark field.',
+      atmosphere_and_mood: 'Mysterious and luminous, the subject glowing because of its absence.',
+      rendering_and_quality:
+        'Precise reserve edges and confident ink fields, no outline drawn inside the white shapes.',
+      creative_brief:
+        "Reserved white shapes: the subject is never drawn; instead the dark ink surroundings are painted around it, leaving it as clean bare paper. Carry it through subject left as bare paper, ink painted around it, crisp reserve edges, dark field. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features:
+        'subject left as bare paper; ink painted around it; crisp reserve edges; dark field',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP19-017',
+    name: 'Single-Stroke Figures',
+    displayName: 'Single-Stroke Figures',
+    styleAnchors: ['Single-Stroke Figures', 'one-stroke brush figures', 'one stroke per form'],
+    category: '1. Ink Structures',
+    domain: 'one-stroke brush figures',
+    negativePrompt:
+      'overworked corrections, outline and fill, many small strokes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Single-stroke figures: each form painted in one uninterrupted brush stroke whose loading, twist and lift create body, limbs and shading at once.',
+      subject_treatment:
+        "Paint the prompt's subject with the fewest possible single brush strokes, each stroke forming a whole part of it while keeping pose and identity readable.",
+      color_and_tone:
+        'Black ink or one earthy color, the brush loaded dark at the tip and pale at the heel for built-in gradation.',
+      lighting_and_shadow:
+        'Each stroke carries its own light-to-dark shift from how the brush was loaded, with no added shading.',
+      texture_and_material:
+        'Wet stroke bodies, dry-brush tails where the ink runs out and soft paper absorption.',
+      camera_and_composition:
+        'Sparse composition with lots of empty paper, strokes arranged like a quick confident gesture.',
+      atmosphere_and_mood: 'Fast, playful and masterful, the joy of getting it right in one go.',
+      rendering_and_quality:
+        'Few decisive strokes, no corrections, no outlines and no filled areas beyond the strokes.',
+      creative_brief:
+        "Single-stroke figures: each form painted in one uninterrupted brush stroke whose loading, twist and lift create body, limbs and shading at once. Carry it through one stroke per form, loaded gradation, dry tails, empty paper. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'one stroke per form; loaded gradation; dry tails; empty paper',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP19-018',
+    name: 'Pulled-String Ink',
+    displayName: 'Pulled-String Ink',
+    styleAnchors: [
+      'Pulled-String Ink',
+      'ink-soaked string pulled between paper',
+      'mirrored strand trails',
+    ],
+    category: '1. Ink Structures',
+    domain: 'ink-soaked string pulled between paper',
+    negativePrompt:
+      'clean digital mirror copy, solid outlines, blot splat instead of strands, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Pulled-string ink: an ink-soaked string laid between folded paper and pulled out, leaving mirrored feathery trails that are then read as the subject.',
+      subject_treatment:
+        "Shape the prompt's subject from symmetrical string-pull trails, adding only minimal brush details so it becomes recognizable.",
+      color_and_tone:
+        'One or two ink colors, often black and one bright accent, with mirrored density on both sides of the fold.',
+      lighting_and_shadow:
+        'No modeled light; density of the dragged trails creates dark and pale zones.',
+      texture_and_material:
+        'Fine feathered strand marks, looping drag trails, a faint center fold crease and soft blotted edges.',
+      camera_and_composition:
+        'Mirror-symmetric composition around a central fold, the subject rising from the crease.',
+      atmosphere_and_mood: 'Uncanny, elegant and organic, like something grown rather than drawn.',
+      rendering_and_quality:
+        'Authentic dragged strand marks with minimal added strokes, never a clean digital mirror.',
+      creative_brief:
+        "Pulled-string ink: an ink-soaked string laid between folded paper and pulled out, leaving mirrored feathery trails that are then read as the subject. Carry it through mirrored strand trails, center fold crease, feathered drags, minimal added detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features:
+        'mirrored strand trails; center fold crease; feathered drags; minimal added detail',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP19-019',
+    name: 'Stepped Dilution Wash',
+    displayName: 'Stepped Dilution Wash',
+    styleAnchors: ['Stepped Dilution Wash', 'graded ink value ladder', 'four or five value steps'],
+    category: '1. Ink Structures',
+    domain: 'graded ink value ladder',
+    negativePrompt:
+      'smooth airbrushed gradient, line drawing only, full black silhouette only, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Stepped dilution wash: ink applied in four or five separate dilutions with clean dried edges, so values sit in distinct steps like a tonal ladder.',
+      subject_treatment:
+        "Divide the prompt's subject into a few flat value zones, each painted with one ink dilution and let dry, keeping its structure and identity clear.",
+      color_and_tone:
+        'Black ink in stepped dilutions from pale grey to dense black on white paper, no smooth gradients.',
+      lighting_and_shadow:
+        'Light and shadow read as clean stacked value shapes, each step darker than the one before.',
+      texture_and_material:
+        'Flat translucent wash layers with crisp dried edges and faint granulation inside each layer.',
+      camera_and_composition:
+        'Layered depth with pale distant planes and darker near planes stepping toward the viewer.',
+      atmosphere_and_mood: 'Calm, orderly and atmospheric, like mist separating hills into layers.',
+      rendering_and_quality:
+        'Precise stepped value shapes, clean dried edges and no blended gradients.',
+      creative_brief:
+        "Stepped dilution wash: ink applied in four or five separate dilutions with clean dried edges, so values sit in distinct steps like a tonal ladder. Carry it through four or five value steps, crisp dried edges, layered depth, no blending. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'four or five value steps; crisp dried edges; layered depth; no blending',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
+  {
+    id: 'SP19-020',
+    name: 'Blotted Line Transfer',
+    displayName: 'Blotted Line Transfer',
+    styleAnchors: [
+      'Blotted Line Transfer',
+      'blotted ink line transfer drawing',
+      'beaded broken lines',
+    ],
+    category: '1. Ink Structures',
+    domain: 'blotted ink line transfer drawing',
+    negativePrompt:
+      'clean continuous vector line, photographic shading, heavy brush strokes, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts',
+    style: {
+      aesthetic:
+        'Blotted line transfer: lines drawn in wet ink on non-absorbent paper and pressed onto a second sheet, leaving broken, beaded and slightly doubled contours.',
+      subject_treatment:
+        "Render the prompt's subject as transferred ink lines that break into beads and gaps, then add flat color shapes so it stays recognizable.",
+      color_and_tone:
+        'Black blotted lines with optional flat hand-applied color areas in slightly offset positions.',
+      lighting_and_shadow:
+        'No modeled light; the broken line and flat color shapes carry the whole image.',
+      texture_and_material:
+        'Beaded dotted contours, uneven ink pickup, faint doubled ghost lines and flat color fills off register.',
+      camera_and_composition:
+        'Clear graphic placement of the subject on a pale ground, often centered and illustrative.',
+      atmosphere_and_mood:
+        'Playful, stylish and slightly nostalgic, like a mid-century illustration.',
+      rendering_and_quality:
+        'Authentic broken transfer lines, never clean continuous vector strokes.',
+      creative_brief:
+        "Blotted line transfer: lines drawn in wet ink on non-absorbent paper and pressed onto a second sheet, leaving broken, beaded and slightly doubled contours. Carry it through beaded broken lines, ghost doubles, offset flat color, pale ground. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood.",
+      key_features: 'beaded broken lines; ghost doubles; offset flat color; pale ground',
+    },
+    ui: {
+      previewStatus: 'pending',
+    },
+  },
 ] as unknown as StyleRuntimePreset[];

@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP19-016
+packId: pack_19
+name: Reserved White Shapes
+styleAnchors:
+  - Reserved White Shapes
+  - negative space ink reserve
+  - subject left as bare paper
+displayName: Reserved White Shapes
+category: 1. Ink Structures
+domain: negative space ink reserve
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - ink-structures
+  - reserved-white
+  - ink
+  - portable-study
+visualDna:
+  aesthetic: 'Reserved white shapes: the subject is never drawn; instead the dark ink surroundings are painted around it, leaving it as clean bare paper.'
+  subject_treatment: Leave the prompt's subject as untouched white paper and paint everything around it in ink, so its silhouette and key interior gaps define it.
+  color_and_tone: Dense black or deep indigo ink fields surrounding pure white reserved shapes, with a few mid-grey transitions.
+  lighting_and_shadow: The reserved subject reads as brightly lit; all shadow and atmosphere live in the painted surroundings.
+  texture_and_material: Brushy ink edges hugging the reserve, dry-brush breaks and crisp paper borders around the subject.
+  camera_and_composition: Strong silhouettes with clear readable outlines, the subject centered in a dark field.
+  atmosphere_and_mood: Mysterious and luminous, the subject glowing because of its absence.
+  rendering_and_quality: Precise reserve edges and confident ink fields, no outline drawn inside the white shapes.
+  creative_brief: "Reserved white shapes: the subject is never drawn; instead the dark ink surroundings are painted around it, leaving it as clean bare paper. Carry it through subject left as bare paper, ink painted around it, crisp reserve edges, dark field. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: subject left as bare paper; ink painted around it; crisp reserve edges; dark field
+avoidRules:
+  - outlined subject
+  - subject painted dark
+  - grey filled subject
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: outlined subject, subject painted dark, grey filled subject, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_19
+  packName: Ink Structures
+  categoryId: ink-structures
+  categoryName: 1. Ink Structures
+  tags:
+    - curation-v2
+    - ink-structures
+    - reserved-white
+    - ink
+    - portable-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: negative space ink reserve

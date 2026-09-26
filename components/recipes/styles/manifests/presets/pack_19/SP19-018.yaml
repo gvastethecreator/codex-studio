@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP19-018
+packId: pack_19
+name: Pulled-String Ink
+styleAnchors:
+  - Pulled-String Ink
+  - ink-soaked string pulled between paper
+  - mirrored strand trails
+displayName: Pulled-String Ink
+category: 1. Ink Structures
+domain: ink-soaked string pulled between paper
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - ink-structures
+  - pulled-string
+  - ink
+  - portable-study
+visualDna:
+  aesthetic: 'Pulled-string ink: an ink-soaked string laid between folded paper and pulled out, leaving mirrored feathery trails that are then read as the subject.'
+  subject_treatment: Shape the prompt's subject from symmetrical string-pull trails, adding only minimal brush details so it becomes recognizable.
+  color_and_tone: One or two ink colors, often black and one bright accent, with mirrored density on both sides of the fold.
+  lighting_and_shadow: No modeled light; density of the dragged trails creates dark and pale zones.
+  texture_and_material: Fine feathered strand marks, looping drag trails, a faint center fold crease and soft blotted edges.
+  camera_and_composition: Mirror-symmetric composition around a central fold, the subject rising from the crease.
+  atmosphere_and_mood: Uncanny, elegant and organic, like something grown rather than drawn.
+  rendering_and_quality: Authentic dragged strand marks with minimal added strokes, never a clean digital mirror.
+  creative_brief: "Pulled-string ink: an ink-soaked string laid between folded paper and pulled out, leaving mirrored feathery trails that are then read as the subject. Carry it through mirrored strand trails, center fold crease, feathered drags, minimal added detail. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: mirrored strand trails; center fold crease; feathered drags; minimal added detail
+avoidRules:
+  - clean digital mirror copy
+  - solid outlines
+  - blot splat instead of strands
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: clean digital mirror copy, solid outlines, blot splat instead of strands, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_19
+  packName: Ink Structures
+  categoryId: ink-structures
+  categoryName: 1. Ink Structures
+  tags:
+    - curation-v2
+    - ink-structures
+    - pulled-string
+    - ink
+    - portable-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: ink-soaked string pulled between paper

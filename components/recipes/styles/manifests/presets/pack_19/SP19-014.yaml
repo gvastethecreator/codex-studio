@@ -1,0 +1,72 @@
+schemaVersion: 1
+id: SP19-014
+packId: pack_19
+name: Cross-Contour Belts
+styleAnchors:
+  - Cross-Contour Belts
+  - form-wrapping contour lines
+  - surface-wrapping lines
+displayName: Cross-Contour Belts
+category: 1. Ink Structures
+domain: form-wrapping contour lines
+version: 1
+supportedTasks:
+  - image_generate
+  - image_edit
+  - style_preset_card
+tags:
+  - curation-v2
+  - ink-structures
+  - cross-contour
+  - ink
+  - portable-study
+visualDna:
+  aesthetic: 'Cross-contour belts: every form described by parallel ink lines that wrap around its surface like belts or topographic rings, showing volume without shading.'
+  subject_treatment: Wrap the prompt's subject in evenly spaced lines that follow its surface across and around, so its volume and pose read from the line flow alone.
+  color_and_tone: Black fineliner on white paper, occasionally one colored line set for a single important form.
+  lighting_and_shadow: 'Tone comes from line spacing: belts crowd together on turning edges and open up on broad lit planes.'
+  texture_and_material: Clean even fineliner lines, slight tremor, and precise bends where belts cross ridges and hollows.
+  camera_and_composition: The prompt's framing with the subject large, belts flowing across it like a body scan.
+  atmosphere_and_mood: Analytical, calm and hypnotic, like watching a shape being measured.
+  rendering_and_quality: Continuous parallel belts with no hatching, no fill and no outline-only shortcuts.
+  creative_brief: "Cross-contour belts: every form described by parallel ink lines that wrap around its surface like belts or topographic rings, showing volume without shading. Carry it through surface-wrapping lines, spacing as tone, no shading fill, body-scan feel. Use it as a reusable look on any subject, keeping the prompt's own subject, action, setting and mood."
+  key_features: surface-wrapping lines; spacing as tone; no shading fill; body-scan feel
+avoidRules:
+  - flat outline without interior lines
+  - crosshatch shading
+  - grey wash
+  - readable text
+  - logo
+  - real artist signature
+  - copying a specific famous artwork
+  - muddy noisy texture
+  - watermark
+  - text
+  - readable labels
+  - UI overlay
+  - franchise likeness
+  - real person likeness
+  - prompt literal card reuse
+assets: {}
+attributes:
+  negativePrompt: flat outline without interior lines, crosshatch shading, grey wash, readable text, logo, real artist signature, copying a specific famous artwork, muddy noisy texture, watermark, text, readable labels, UI overlay, franchise likeness, real person likeness, prompt literal card reuse, noisy compression artifacts
+  previewStatus: pending
+  ui:
+    previewStatus: pending
+taxonomy:
+  packId: pack_19
+  packName: Ink Structures
+  categoryId: ink-structures
+  categoryName: 1. Ink Structures
+  tags:
+    - curation-v2
+    - ink-structures
+    - cross-contour
+    - ink
+    - portable-study
+  supportedTasks:
+    - image_generate
+    - image_edit
+    - style_preset_card
+  hasDefaultImage: false
+  domain: form-wrapping contour lines
