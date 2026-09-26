@@ -610,31 +610,36 @@ export function createSpriteAtlasService({
         );
       }
 
-      const mismatched: SpriteAtlasRowState[] = [];
-      for (const row of run.rows) {
-        const metadata = await authoringSharp(row.rawPath!).metadata();
-        const expectedWidth = run.contract.cell.width * row.frames;
-        const expectedHeight = run.contract.cell.height;
-        if (metadata.width !== expectedWidth || metadata.height !== expectedHeight) {
-          mismatched.push(row);
-        }
-      }
+      const measured = await Promise.all(
+        run.rows.map(async (row) => {
+          const metadata = await authoringSharp(row.rawPath!).metadata();
+          return {
+            row,
+            width: metadata.width ?? 0,
+            height: metadata.height ?? 0,
+          };
+        }),
+      );
+      const mismatched = measured.filter(
+        (item) =>
+          item.width !== run.contract.cell.width * item.row.frames ||
+          item.height !== run.contract.cell.height,
+      );
       if (mismatched.length > 0) {
         const timestamp = now();
-        for (const row of mismatched) {
-          const metadata = await authoringSharp(row.rawPath!).metadata();
-          row.status = 'blocked';
-          row.blocked = blockedReason(
+        for (const item of mismatched) {
+          item.row.status = 'blocked';
+          item.row.blocked = blockedReason(
             'geometry_mismatch',
-            `${row.id} is ${metadata.width ?? 0}×${metadata.height ?? 0}. The strip must be ${run.contract.cell.width * row.frames}×${run.contract.cell.height} with no resize.`,
+            `${item.row.id} is ${item.width}×${item.height}. The strip must be ${run.contract.cell.width * item.row.frames}×${run.contract.cell.height} with no resize.`,
             'Import a strip at the declared cell size. The previous atlas was left in place.',
           );
-          row.updatedAt = timestamp;
+          item.row.updatedAt = timestamp;
         }
         await saveRun(run);
         throw new SpriteAtlasActionError(
           'geometry_mismatch',
-          `Row strip size does not match the contract: ${mismatched.map((row) => row.id).join(', ')}.`,
+          `Row strip size does not match the contract: ${mismatched.map((item) => item.row.id).join(', ')}.`,
         );
       }
 
@@ -653,6 +658,7 @@ export function createSpriteAtlasService({
       const stagingFramesDir = path.join(stagingDir, 'frames');
       await rm(stagingDir, { recursive: true, force: true });
       await mkdir(stagingFramesDir, { recursive: true });
+      const rowSpecs = new Map(run.contract.rows.map((row) => [row.id, row]));
       const composites: Array<{ input: string; left: number; top: number }> = [];
       const frameLayout: Array<{
         id: string;
@@ -693,7 +699,7 @@ export function createSpriteAtlasService({
             origin: { x: Math.floor(cellWidth / 2), y: cellHeight },
           });
         }
-        const rowSpec = run.contract.rows.find((candidate) => candidate.id === row.id);
+        const rowSpec = rowSpecs.get(row.id);
         frameLayout.push({
           id: row.id,
           fps: rowSpec?.fps ?? 1,
