@@ -313,6 +313,7 @@ export async function createStudioApp(
     '/api/sprite-atlas',
     createSpriteAtlasRoutes({
       readLibraryDir: () => getDefaultLibrary().path,
+      getCatalogImage: (imageId) => catalogStore.getCatalogImage(imageId),
     }),
   );
 

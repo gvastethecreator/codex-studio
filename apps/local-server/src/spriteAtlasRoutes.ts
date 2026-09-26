@@ -1,14 +1,22 @@
 import { existsSync } from 'node:fs';
+import { readFile } from 'node:fs/promises';
 import { Hono, type Context } from 'hono';
 import type {
+  CatalogImage,
   CreateSpriteAtlasRowJobsRequest,
   CreateSpriteAtlasRunRequest,
   ImportSpriteAtlasRowRequest,
 } from '../../../packages/shared/src';
-import { createSpriteAtlasService, type SpriteAtlasService } from './spriteAtlasService';
+import {
+  createSpriteAtlasService,
+  spriteAtlasFramePath,
+  SpriteAtlasActionError,
+  type SpriteAtlasService,
+} from './spriteAtlasService';
 
 export interface SpriteAtlasRoutesDependencies {
   readLibraryDir: () => string;
+  getCatalogImage?: (imageId: string) => CatalogImage | null;
   service?: SpriteAtlasService;
 }
 
@@ -16,12 +24,21 @@ async function readJsonBody(c: Context) {
   return c.req.json().catch(() => ({ __invalidJson: true }) as { __invalidJson: true });
 }
 
+function actionError(error: unknown) {
+  if (error instanceof SpriteAtlasActionError) {
+    return { error: error.message, code: error.code };
+  }
+  return { error: error instanceof Error ? error.message : 'Sprite Atlas action failed' };
+}
+
 export function createSpriteAtlasRoutes({
   readLibraryDir,
+  getCatalogImage,
   service,
 }: SpriteAtlasRoutesDependencies) {
   const routes = new Hono();
-  const spriteAtlas = service ?? createSpriteAtlasService({ readLibraryDir });
+  const spriteAtlas =
+    service ?? createSpriteAtlasService({ readLibraryDir, getCatalogImage });
 
   routes.get('/presets', (c) => c.json({ presets: spriteAtlas.listPresets() }));
 
@@ -78,9 +95,13 @@ export function createSpriteAtlasRoutes({
     }
     const rowId = typeof body.rowId === 'string' ? body.rowId : '';
     if (!rowId) return c.json({ error: 'rowId is required', code: 'invalid_request_body' }, 400);
-    const job = await spriteAtlas.createRowJob(c.req.param('id'), rowId);
-    if (!job) return c.json({ error: 'Sprite Atlas row not found' }, 404);
-    return c.json(job, 201);
+    try {
+      const job = await spriteAtlas.createRowJob(c.req.param('id'), rowId);
+      if (!job) return c.json({ error: 'Sprite Atlas row not found' }, 404);
+      return c.json(job, 201);
+    } catch (error) {
+      return c.json(actionError(error), 409);
+    }
   });
 
   routes.post('/runs/:id/row-jobs/batch', async (c) => {
@@ -93,9 +114,13 @@ export function createSpriteAtlasRoutes({
       return c.json({ error: 'rowIds must be an array', code: 'invalid_request_body' }, 400);
     }
     const rowIds = input.rowIds?.filter((rowId) => typeof rowId === 'string' && rowId.trim());
-    const result = await spriteAtlas.createRowJobs(c.req.param('id'), rowIds);
-    if (!result) return c.json({ error: 'Sprite Atlas run not found' }, 404);
-    return c.json(result, 201);
+    try {
+      const result = await spriteAtlas.createRowJobs(c.req.param('id'), rowIds);
+      if (!result) return c.json({ error: 'Sprite Atlas run not found' }, 404);
+      return c.json(result, 201);
+    } catch (error) {
+      return c.json(actionError(error), 409);
+    }
   });
 
   routes.post('/runs/:id/import-row', async (c) => {
@@ -122,10 +147,7 @@ export function createSpriteAtlasRoutes({
       if (!run) return c.json({ error: 'Sprite Atlas run not found' }, 404);
       return c.json(run);
     } catch (error) {
-      return c.json(
-        { error: error instanceof Error ? error.message : 'Could not compose Sprite Atlas' },
-        409,
-      );
+      return c.json(actionError(error), 409);
     }
   });
 
@@ -133,6 +155,45 @@ export function createSpriteAtlasRoutes({
     const run = await spriteAtlas.runQa(c.req.param('id'));
     if (!run) return c.json({ error: 'Sprite Atlas run not found' }, 404);
     return c.json(run);
+  });
+
+  routes.post('/runs/:id/visual-review', async (c) => {
+    const run = await spriteAtlas.acceptVisualReview(c.req.param('id'));
+    if (!run) return c.json({ error: 'Sprite Atlas run not found' }, 404);
+    return c.json(run);
+  });
+
+  routes.post('/runs/:id/row-dispatch', async (c) => {
+    const body = await readJsonBody(c);
+    if ('__invalidJson' in body) {
+      return c.json({ error: 'Invalid request body', code: 'invalid_json' }, 400);
+    }
+    const rowId = typeof body.rowId === 'string' ? body.rowId : '';
+    const jobId = typeof body.jobId === 'string' ? body.jobId : '';
+    if (!rowId || !jobId) {
+      return c.json({ error: 'rowId and jobId are required', code: 'invalid_request_body' }, 400);
+    }
+    try {
+      const run = await spriteAtlas.recordRowDispatch(c.req.param('id'), rowId, jobId);
+      if (!run) return c.json({ error: 'Sprite Atlas row not found' }, 404);
+      return c.json(run);
+    } catch (error) {
+      return c.json(actionError(error), 409);
+    }
+  });
+
+  routes.get('/runs/:id/files/frame/:rowId/:frame', async (c) => {
+    const run = await spriteAtlas.getRun(c.req.param('id'));
+    const row = run?.rows.find((item) => item.id === c.req.param('rowId'));
+    const frameNumber = Number(c.req.param('frame'));
+    if (!run || !row || !Number.isInteger(frameNumber) || frameNumber < 1 || frameNumber > row.frames) {
+      return c.notFound();
+    }
+    const framePath = spriteAtlasFramePath(run, row.id, frameNumber);
+    if (!existsSync(framePath)) return c.notFound();
+    return new Response(await readFile(framePath), {
+      headers: { 'Content-Type': 'image/png', 'Cache-Control': 'no-store' },
+    });
   });
 
   return routes;
